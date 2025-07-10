@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.xml.holder.LimitedShopHolder;
 import l2s.gameserver.model.LimitedShopContainer;
@@ -15,7 +18,7 @@ import l2s.gameserver.templates.item.ItemTemplate;
 /**
  * @author nexvill
  */
-public class RequestExPurchaseLimitShopItemBuy extends L2GameClientPacket
+public class RequestExPurchaseLimitShopItemBuy implements IClientIncomingPacket
 {
 	private int _listId;
 	private int _itemIndex;
@@ -23,19 +26,19 @@ public class RequestExPurchaseLimitShopItemBuy extends L2GameClientPacket
 	private LimitedShopContainer _list;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_listId = readC();
-		_itemIndex = readD();
-		_itemCount = readD();
+		_listId = packet.readC();
+		_itemIndex = packet.readD();
+		_itemCount = packet.readD();
 		_list = LimitedShopHolder.getInstance().getList(_listId);
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

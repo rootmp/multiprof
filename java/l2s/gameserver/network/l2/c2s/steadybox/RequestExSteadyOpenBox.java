@@ -8,23 +8,23 @@ import l2s.gameserver.templates.item.ItemTemplate;
 /**
  * @author nexvill
  */
-public class RequestExSteadyOpenBox extends L2GameClientPacket
+public class RequestExSteadyOpenBox implements IClientIncomingPacket
 {
 	private int _slotId, _l2CoinCount;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_slotId = readD();
-		_l2CoinCount = readD();
-		readD();
+		_slotId = packet.readD();
+		_l2CoinCount = packet.readD();
+		packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

@@ -1,23 +1,26 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.ExGetBookMarkInfoPacket;
 
-public class RequestDeleteBookMarkSlot extends L2GameClientPacket
+public class RequestDeleteBookMarkSlot implements IClientIncomingPacket
 {
 	private int slot;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		slot = readD();
+		slot = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar != null)
 		{
 			// TODO Msg.THE_SAVED_TELEPORT_LOCATION_WILL_BE_DELETED_DO_YOU_WISH_TO_CONTINUE

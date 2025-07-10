@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 import java.util.Set;
@@ -12,7 +13,7 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class ExPvpRankingList extends L2GameServerPacket
+public class ExPvpRankingList implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _race;
@@ -36,12 +37,12 @@ public class ExPvpRankingList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_season);
-		writeC(_group);
-		writeC(_scope);
-		writeD(_race);
+		packetWriter.writeC(_season);
+		packetWriter.writeC(_group);
+		packetWriter.writeC(_scope);
+		packetWriter.writeD(_race);
 
 		Map<Integer, StatsSet> plrList;
 		if (_season == 1)
@@ -63,7 +64,7 @@ public class ExPvpRankingList extends L2GameServerPacket
 					{
 						final int count = plrList.size() > 150 ? 150 : plrList.size();
 
-						writeD(count);
+						packetWriter.writeD(count);
 
 						for (int id : plrList.keySet())
 						{
@@ -71,15 +72,15 @@ public class ExPvpRankingList extends L2GameServerPacket
 
 							writeString(player.getString("name"));
 							writeString(player.getString("clanName"));
-							writeD(player.getInteger("level"));
-							writeD(player.getInteger("race"));
-							writeD(player.getInteger("classId"));
-							writeD(player.getInteger("points"));
-							writeD(0); // unk
-							writeD(id); // server rank
-							writeD(0); // previous server rank, idk why 0
-							writeD(player.getInteger("kills"));
-							writeD(player.getInteger("deaths"));
+							packetWriter.writeD(player.getInteger("level"));
+							packetWriter.writeD(player.getInteger("race"));
+							packetWriter.writeD(player.getInteger("classId"));
+							packetWriter.writeD(player.getInteger("points"));
+							packetWriter.writeD(0); // unk
+							packetWriter.writeD(id); // server rank
+							packetWriter.writeD(0); // previous server rank, idk why 0
+							packetWriter.writeD(player.getInteger("kills"));
+							packetWriter.writeD(player.getInteger("deaths"));
 						}
 					}
 					else
@@ -94,20 +95,20 @@ public class ExPvpRankingList extends L2GameServerPacket
 								found = true;
 								writeString(player.getString("name"));
 								writeString(player.getString("clanName"));
-								writeD(player.getInteger("level"));
-								writeD(player.getInteger("race"));
-								writeD(player.getInteger("classId"));
-								writeD(player.getInteger("points"));
-								writeD(0); // unk
-								writeD(id); // server rank
-								writeD(0); // previous server rank, idk why 0
-								writeD(player.getInteger("kills"));
-								writeD(player.getInteger("deaths"));
+								packetWriter.writeD(player.getInteger("level"));
+								packetWriter.writeD(player.getInteger("race"));
+								packetWriter.writeD(player.getInteger("classId"));
+								packetWriter.writeD(player.getInteger("points"));
+								packetWriter.writeD(0); // unk
+								packetWriter.writeD(id); // server rank
+								packetWriter.writeD(0); // previous server rank, idk why 0
+								packetWriter.writeD(player.getInteger("kills"));
+								packetWriter.writeD(player.getInteger("deaths"));
 							}
 						}
 						if (!found)
 						{
-							writeD(0);
+							packetWriter.writeD(0);
 						}
 					}
 					break;
@@ -126,7 +127,7 @@ public class ExPvpRankingList extends L2GameServerPacket
 								count++;
 							}
 						}
-						writeD(count > 100 ? 100 : count);
+						packetWriter.writeD(count > 100 ? 100 : count);
 
 						int i = 1;
 						for (int id : plrList.keySet())
@@ -137,15 +138,15 @@ public class ExPvpRankingList extends L2GameServerPacket
 							{
 								writeString(player.getString("name"));
 								writeString(player.getString("clanName"));
-								writeD(player.getInteger("level"));
-								writeD(player.getInteger("race"));
-								writeD(player.getInteger("classId"));
-								writeD(player.getInteger("points"));
-								writeD(0); // unk
-								writeD(i); // server rank
-								writeD(0); // previous server rank, idk why 0
-								writeD(player.getInteger("kills"));
-								writeD(player.getInteger("deaths"));
+								packetWriter.writeD(player.getInteger("level"));
+								packetWriter.writeD(player.getInteger("race"));
+								packetWriter.writeD(player.getInteger("classId"));
+								packetWriter.writeD(player.getInteger("points"));
+								packetWriter.writeD(0); // unk
+								packetWriter.writeD(i); // server rank
+								packetWriter.writeD(0); // previous server rank, idk why 0
+								packetWriter.writeD(player.getInteger("kills"));
+								packetWriter.writeD(player.getInteger("deaths"));
 								i++;
 							}
 						}
@@ -176,20 +177,20 @@ public class ExPvpRankingList extends L2GameServerPacket
 								found = true;
 								writeString(player.getString("name"));
 								writeString(player.getString("clanName"));
-								writeD(player.getInteger("level"));
-								writeD(player.getInteger("race"));
-								writeD(player.getInteger("classId"));
-								writeD(player.getInteger("points"));
-								writeD(0); // unk
-								writeD(id); // server rank
-								writeD(0); // previous server rank, idk why 0
-								writeD(player.getInteger("kills"));
-								writeD(player.getInteger("deaths"));
+								packetWriter.writeD(player.getInteger("level"));
+								packetWriter.writeD(player.getInteger("race"));
+								packetWriter.writeD(player.getInteger("classId"));
+								packetWriter.writeD(player.getInteger("points"));
+								packetWriter.writeD(0); // unk
+								packetWriter.writeD(id); // server rank
+								packetWriter.writeD(0); // previous server rank, idk why 0
+								packetWriter.writeD(player.getInteger("kills"));
+								packetWriter.writeD(player.getInteger("deaths"));
 							}
 						}
 						if (!found)
 						{
-							writeD(0);
+							packetWriter.writeD(0);
 						}
 					}
 					break;
@@ -211,7 +212,7 @@ public class ExPvpRankingList extends L2GameServerPacket
 							}
 						}
 
-						writeD(clanList.size());
+						packetWriter.writeD(clanList.size());
 
 						for (int id : clanList.keySet())
 						{
@@ -219,20 +220,20 @@ public class ExPvpRankingList extends L2GameServerPacket
 
 							writeString(player.getString("name"));
 							writeString(player.getString("clanName"));
-							writeD(player.getInteger("level"));
-							writeD(player.getInteger("race"));
-							writeD(player.getInteger("classId"));
-							writeD(player.getInteger("points"));
-							writeD(0); // unk
-							writeD(id); // server rank
-							writeD(0); // previous server rank, idk why 0
-							writeD(player.getInteger("kills"));
-							writeD(player.getInteger("deaths"));
+							packetWriter.writeD(player.getInteger("level"));
+							packetWriter.writeD(player.getInteger("race"));
+							packetWriter.writeD(player.getInteger("classId"));
+							packetWriter.writeD(player.getInteger("points"));
+							packetWriter.writeD(0); // unk
+							packetWriter.writeD(id); // server rank
+							packetWriter.writeD(0); // previous server rank, idk why 0
+							packetWriter.writeD(player.getInteger("kills"));
+							packetWriter.writeD(player.getInteger("deaths"));
 						}
 					}
 					else
 					{
-						writeD(0);
+						packetWriter.writeD(0);
 					}
 
 					break;
@@ -257,7 +258,7 @@ public class ExPvpRankingList extends L2GameServerPacket
 						}
 						friendList.add(_player.getObjectId());
 
-						writeD(count);
+						packetWriter.writeD(count);
 
 						for (int id : plrList.keySet())
 						{
@@ -267,15 +268,15 @@ public class ExPvpRankingList extends L2GameServerPacket
 							{
 								writeString(player.getString("name"));
 								writeString(player.getString("clanName"));
-								writeD(player.getInteger("level"));
-								writeD(player.getInteger("race"));
-								writeD(player.getInteger("classId"));
-								writeD(player.getInteger("points"));
-								writeD(0); // unk
-								writeD(i); // server rank
-								writeD(0); // previous server rank, idk why 0
-								writeD(player.getInteger("kills"));
-								writeD(player.getInteger("deaths"));
+								packetWriter.writeD(player.getInteger("level"));
+								packetWriter.writeD(player.getInteger("race"));
+								packetWriter.writeD(player.getInteger("classId"));
+								packetWriter.writeD(player.getInteger("points"));
+								packetWriter.writeD(0); // unk
+								packetWriter.writeD(i); // server rank
+								packetWriter.writeD(0); // previous server rank, idk why 0
+								packetWriter.writeD(player.getInteger("kills"));
+								packetWriter.writeD(player.getInteger("deaths"));
 								i++;
 							}
 						}
@@ -289,24 +290,24 @@ public class ExPvpRankingList extends L2GameServerPacket
 								final StatsSet player = plrList.get(id);
 								if (_player.getObjectId() == player.getInteger("charId"))
 								{
-									writeD(1);
+									packetWriter.writeD(1);
 									writeString(player.getString("name"));
 									writeString(player.getString("clanName"));
-									writeD(player.getInteger("level"));
-									writeD(player.getInteger("race"));
-									writeD(player.getInteger("classId"));
-									writeD(player.getInteger("points"));
-									writeD(0); // unk
-									writeD(1); // server rank
-									writeD(0); // previous server rank, idk why 0
-									writeD(player.getInteger("kills"));
-									writeD(player.getInteger("deaths"));
+									packetWriter.writeD(player.getInteger("level"));
+									packetWriter.writeD(player.getInteger("race"));
+									packetWriter.writeD(player.getInteger("classId"));
+									packetWriter.writeD(player.getInteger("points"));
+									packetWriter.writeD(0); // unk
+									packetWriter.writeD(1); // server rank
+									packetWriter.writeD(0); // previous server rank, idk why 0
+									packetWriter.writeD(player.getInteger("kills"));
+									packetWriter.writeD(player.getInteger("deaths"));
 								}
 							}
 						}
 						else
 						{
-							writeD(0);
+							packetWriter.writeD(0);
 						}
 					}
 					break;
@@ -315,7 +316,7 @@ public class ExPvpRankingList extends L2GameServerPacket
 		}
 		else
 		{
-			writeD(0);
+			packetWriter.writeD(0);
 		}
 	}
 }

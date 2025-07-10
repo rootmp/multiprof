@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.entity.events.impl.DuelEvent;
 
-public class ExDuelStart extends L2GameServerPacket
+public class ExDuelStart implements IClientOutgoingPacket
 {
 	private int _duelType;
 
@@ -12,8 +13,8 @@ public class ExDuelStart extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_duelType);
+		packetWriter.writeD(_duelType);
 	}
 }

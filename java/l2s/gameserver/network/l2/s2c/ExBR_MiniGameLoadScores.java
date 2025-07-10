@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ import l2s.gameserver.model.Player;
  * @author VISTALL
  * @date 0:07:05/10.04.2010
  */
-public class ExBR_MiniGameLoadScores extends L2GameServerPacket
+public class ExBR_MiniGameLoadScores implements IClientOutgoingPacket
 {
 	private int _place;
 	private int _score;
@@ -58,18 +59,18 @@ public class ExBR_MiniGameLoadScores extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_place); // place of last big score of player
-		writeD(_score); // last big score of player
-		writeD(0x00); // ?
-		writeD(_lastScore); // last score of list
+		packetWriter.writeD(_place); // place of last big score of player
+		packetWriter.writeD(_score); // last big score of player
+		packetWriter.writeD(0x00); // ?
+		packetWriter.writeD(_lastScore); // last score of list
 		for (IntObjectPair<List<Map.Entry<String, Integer>>> entry : _entries.entrySet())
 			for (Map.Entry<String, Integer> scoreEntry : entry.getValue())
 			{
-				writeD(entry.getKey());
-				writeS(scoreEntry.getKey());
-				writeD(scoreEntry.getValue());
+				packetWriter.writeD(entry.getKey());
+				packetWriter.writeS(scoreEntry.getKey());
+				packetWriter.writeD(scoreEntry.getValue());
 			}
 	}
 }

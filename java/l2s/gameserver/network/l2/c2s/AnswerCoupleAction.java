@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.ai.PlayableAI;
 import l2s.gameserver.geodata.GeoEngine;
@@ -10,25 +13,25 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.utils.PositionUtils;
 
-public class AnswerCoupleAction extends L2GameClientPacket
+public class AnswerCoupleAction implements IClientIncomingPacket
 {
 	private int _charObjId;
 	private int _actionId;
 	private int _answer;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_actionId = readD();
-		_answer = readD();
-		_charObjId = readD();
+		_actionId = packet.readD();
+		_answer = packet.readD();
+		_charObjId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

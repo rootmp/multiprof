@@ -7,7 +7,7 @@ import l2s.gameserver.instancemanager.PrivateStoreHistoryManager;
 import l2s.gameserver.model.items.PrivateStoreHistoryItem;
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExPrivateStoreSearchStatistics extends L2GameServerPacket
+public class ExPrivateStoreSearchStatistics implements IClientOutgoingPacket
 {
 	private final List<PrivateStoreHistoryItem> mostItems;
 	private final List<PrivateStoreHistoryItem> highestItems;
@@ -19,21 +19,21 @@ public class ExPrivateStoreSearchStatistics extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(mostItems.size());
+		packetWriter.writeD(mostItems.size());
 		for (PrivateStoreHistoryItem item : mostItems)
 		{
-			writeD(item.getTradesCount());
+			packetWriter.writeD(item.getTradesCount());
 			writeItemInfo(item, true, 4);
-			writeD(item.getObjectId());
+			packetWriter.writeD(item.getObjectId());
 		}
-		writeD(highestItems.size());
+		packetWriter.writeD(highestItems.size());
 		for (PrivateStoreHistoryItem item : highestItems)
 		{
-			writeQ(item.getPrice());
+			packetWriter.writeQ(item.getPrice());
 			writeItemInfo(item, true, 4);
-			writeD(item.getObjectId());
+			packetWriter.writeD(item.getObjectId());
 		}
 	}
 }

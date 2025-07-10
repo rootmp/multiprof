@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExCleftState extends L2GameServerPacket
+public class ExCleftState implements IClientOutgoingPacket
 {
 	public static final int CleftState_Total = 0;
 	public static final int CleftState_TowerDestroy = 1;
@@ -11,9 +12,9 @@ public class ExCleftState extends L2GameServerPacket
 	private int CleftState = 0; // TODO
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(CleftState);
+		packetWriter.writeD(CleftState);
 		switch (CleftState)
 		{
 			case CleftState_Total:

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,7 +18,7 @@ import l2s.gameserver.network.l2.s2c.PrivateStoreBuyManageList;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.utils.TradeHelper;
 
-public class SetPrivateStoreBuyList extends L2GameClientPacket
+public class SetPrivateStoreBuyList implements IClientIncomingPacket
 {
 	private static class BuyItemInfo
 	{
@@ -28,9 +31,9 @@ public class SetPrivateStoreBuyList extends L2GameClientPacket
 	private List<BuyItemInfo> _items = Collections.emptyList();
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		final int count = readD();
+		final int count = packet.readD();
 		if (count * 40 > _buf.remaining() || count > Short.MAX_VALUE || count < 1)
 			return false;
 
@@ -39,16 +42,16 @@ public class SetPrivateStoreBuyList extends L2GameClientPacket
 		for (int i = 0; i < count; i++)
 		{
 			BuyItemInfo item = new BuyItemInfo();
-			item.id = readD();
-			item.enchant_level = readD();
-			item.count = readQ();
-			item.price = readQ();
+			item.id = packet.readD();
+			item.enchant_level = packet.readD();
+			item.count = packet.readQ();
+			item.price = packet.readQ();
 
 			if (item.count < 1 || item.price < 1)
 				break;
 
-			readD(); // Variation 1
-			readD(); // Variation 2
+			packet.readD(); // Variation 1
+			packet.readD(); // Variation 2
 
 			readH(); // Attack element
 			readH(); // Attack element power
@@ -58,15 +61,15 @@ public class SetPrivateStoreBuyList extends L2GameClientPacket
 			readH(); // Earth defense
 			readH(); // Holy defense
 			readH(); // Dark defense
-			readD(); // Visible ID
+			packet.readD(); // Visible ID
 
-			int saCount = readC();
+			int saCount = packet.readC();
 			for (int s = 0; s < saCount; s++)
-				readD(); // TODO[UNDERGROUND]: SA 1 Abnormal
+				packet.readD(); // TODO[UNDERGROUND]: SA 1 Abnormal
 
-			saCount = readC();
+			saCount = packet.readC();
 			for (int s = 0; s < saCount; s++)
-				readD(); // TODO[UNDERGROUND]: SA 2 Abnormal
+				packet.readD(); // TODO[UNDERGROUND]: SA 2 Abnormal
 
 			_items.add(item);
 		}
@@ -74,9 +77,9 @@ public class SetPrivateStoreBuyList extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player buyer = getClient().getActiveChar();
+		Player buyer = client.getActiveChar();
 		if (buyer == null || _items.isEmpty())
 			return;
 

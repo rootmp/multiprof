@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.concurrent.TimeUnit;
 
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.pledge.Clan;
 
-public class ExMercenaryCastlewarCastleInfo extends L2GameServerPacket
+public class ExMercenaryCastlewarCastleInfo implements IClientOutgoingPacket
 {
 	private final int castleId;
 	private final int ownerClanId;
@@ -43,16 +44,16 @@ public class ExMercenaryCastlewarCastleInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(castleId);
-		writeD(ownerClanId); // UNK
-		writeD(ownerClanCrestId); // UNK
+		packetWriter.writeD(castleId);
+		packetWriter.writeD(ownerClanId); // UNK
+		packetWriter.writeD(ownerClanCrestId); // UNK
 		writeString(ownerClanName);
 		writeString(ownerLeaderName);
-		writeD(taxRate); // UNK
-		writeQ(taxesAccumulated);
-		writeQ(unk4); // UNK
-		writeD(siegeDate);
+		packetWriter.writeD(taxRate); // UNK
+		packetWriter.writeQ(taxesAccumulated);
+		packetWriter.writeQ(unk4); // UNK
+		packetWriter.writeD(siegeDate);
 	}
 }

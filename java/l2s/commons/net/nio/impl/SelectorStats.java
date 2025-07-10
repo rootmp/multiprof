@@ -16,7 +16,7 @@ public class SelectorStats
 
 	public void increaseOpenedConnections()
 	{
-		if (_connectionsCurrent.incrementAndGet() > _connectionsMax.get())
+		if(_connectionsCurrent.incrementAndGet() > _connectionsMax.get())
 			_connectionsMax.incrementAndGet();
 		_connectionsTotal.incrementAndGet();
 	}

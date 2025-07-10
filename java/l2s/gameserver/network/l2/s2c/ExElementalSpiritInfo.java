@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -10,7 +11,7 @@ import l2s.gameserver.templates.elemental.ElementalLevelData;
 /**
  * @author Bonux
  **/
-public class ExElementalSpiritInfo extends L2GameServerPacket
+public class ExElementalSpiritInfo implements IClientOutgoingPacket
 {
 	private final int _unk, _activeElementId;
 	private final Collection<Elemental> _elementals;
@@ -28,47 +29,47 @@ public class ExElementalSpiritInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_unk); // Value received from client (RequestExElementalSpiritInfo) Maybe canOpen?
-		writeC(_activeElementId); // Active Element ID
-		writeC(_elementals.size()); // Elementals Count
+		packetWriter.writeC(_unk); // Value received from client (RequestExElementalSpiritInfo) Maybe canOpen?
+		packetWriter.writeC(_activeElementId); // Active Element ID
+		packetWriter.writeC(_elementals.size()); // Elementals Count
 		for (Elemental elemental : _elementals)
 		{
-			writeC(elemental.getElementId()); // Elemental ID
+			packetWriter.writeC(elemental.getElementId()); // Elemental ID
 
 			int evolutionLevel = elemental.getEvolutionLevel();
-			writeC(evolutionLevel > 0);
+			packetWriter.writeC(evolutionLevel > 0);
 			if (evolutionLevel > 0)
 			{
-				writeC(evolutionLevel); // Evolution Level (1-3)
-				writeD(elemental.getEvolution().getId()); // Evolution ID from client
-				writeQ(elemental.getExp()); // Current Exp
-				writeQ(elemental.getMaxExp()); // Max Exp for this level
-				writeQ(elemental.getEvolution().getMaxExp()); // Max Exp for this evolution
-				writeD(elemental.getLevel()); // Level 1-10
-				writeD(elemental.getEvolution().getMaxLevel()); // Max Level
-				writeD(elemental.getAvailablePoints()); // Available Points
-				writeD(elemental.getAttackPoints()); // Current Attack Points
-				writeD(elemental.getDefencePoints()); // Current Defence Points
-				writeD(elemental.getCritRatePoints()); // Current Crit Rate
-				writeD(elemental.getCritAttackPoints()); // Current Crit Damage
-				writeD(elemental.getEvolution().getMaxAttackPoints()); // Max Attack Points
-				writeD(elemental.getEvolution().getMaxDefencePoints()); // Max Defence Points
-				writeD(elemental.getEvolution().getMaxCritRatePoints()); // Max Crit Rate
-				writeD(elemental.getEvolution().getMaxCritAttackPoints()); // Max Crit Damage
+				packetWriter.writeC(evolutionLevel); // Evolution Level (1-3)
+				packetWriter.writeD(elemental.getEvolution().getId()); // Evolution ID from client
+				packetWriter.writeQ(elemental.getExp()); // Current Exp
+				packetWriter.writeQ(elemental.getMaxExp()); // Max Exp for this level
+				packetWriter.writeQ(elemental.getEvolution().getMaxExp()); // Max Exp for this evolution
+				packetWriter.writeD(elemental.getLevel()); // Level 1-10
+				packetWriter.writeD(elemental.getEvolution().getMaxLevel()); // Max Level
+				packetWriter.writeD(elemental.getAvailablePoints()); // Available Points
+				packetWriter.writeD(elemental.getAttackPoints()); // Current Attack Points
+				packetWriter.writeD(elemental.getDefencePoints()); // Current Defence Points
+				packetWriter.writeD(elemental.getCritRatePoints()); // Current Crit Rate
+				packetWriter.writeD(elemental.getCritAttackPoints()); // Current Crit Damage
+				packetWriter.writeD(elemental.getEvolution().getMaxAttackPoints()); // Max Attack Points
+				packetWriter.writeD(elemental.getEvolution().getMaxDefencePoints()); // Max Defence Points
+				packetWriter.writeD(elemental.getEvolution().getMaxCritRatePoints()); // Max Crit Rate
+				packetWriter.writeD(elemental.getEvolution().getMaxCritAttackPoints()); // Max Crit Damage
 
 				ElementalLevelData[] datas = elemental.getEvolution().getLevelDatas();
-				writeC(datas.length);
+				packetWriter.writeC(datas.length);
 				for (ElementalLevelData data : datas)
 				{
-					writeH(data.getLevel()); // Level
-					writeQ(data.getExp()); // EXP
+					packetWriter.writeH(data.getLevel()); // Level
+					packetWriter.writeQ(data.getExp()); // EXP
 				}
 			}
 		}
-		writeD(1); // UNK
-		writeD(Config.ELEMENTAL_RESET_POINTS_ITEM_ID); // Stats reset cost Item ID
-		writeQ(Config.ELEMENTAL_RESET_POINTS_ITEM_COUNT); // Stats reset cost
+		packetWriter.writeD(1); // UNK
+		packetWriter.writeD(Config.ELEMENTAL_RESET_POINTS_ITEM_ID); // Stats reset cost Item ID
+		packetWriter.writeQ(Config.ELEMENTAL_RESET_POINTS_ITEM_COUNT); // Stats reset cost
 	}
 }

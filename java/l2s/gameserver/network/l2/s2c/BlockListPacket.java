@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Block;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.actor.instances.player.Block;
 /**
  * @author Bonux
  */
-public class BlockListPacket extends L2GameServerPacket
+public class BlockListPacket implements IClientOutgoingPacket
 {
 	private Block[] _blockList;
 
@@ -16,13 +17,13 @@ public class BlockListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_blockList.length);
+		packetWriter.writeD(_blockList.length);
 		for (Block b : _blockList)
 		{
-			writeS(b.getName());
-			writeS(b.getMemo());
+			packetWriter.writeS(b.getName());
+			packetWriter.writeS(b.getMemo());
 		}
 	}
 }

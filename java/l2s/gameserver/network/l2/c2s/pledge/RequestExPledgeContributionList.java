@@ -7,19 +7,19 @@ import l2s.gameserver.network.l2.s2c.pledge.ExPledgeContributionList;
 /**
  * @author nexvill
  */
-public class RequestExPledgeContributionList extends L2GameClientPacket
+public class RequestExPledgeContributionList implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		readC(); // unk 0
+		packet.readC(); // unk 0
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

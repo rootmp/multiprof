@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.luckygame.LuckyGameData;
@@ -7,7 +8,7 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author Eanseen reworked by Bonux
  **/
-public class ExStartLuckyGame extends L2GameServerPacket
+public class ExStartLuckyGame implements IClientOutgoingPacket
 {
 	private final int _type;
 	private long _availableGamesCount;
@@ -30,9 +31,9 @@ public class ExStartLuckyGame extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type);
-		writeQ(_availableGamesCount);
+		packetWriter.writeD(_type);
+		packetWriter.writeQ(_availableGamesCount);
 	}
 }

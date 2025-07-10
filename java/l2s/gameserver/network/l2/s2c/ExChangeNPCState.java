@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExChangeNPCState extends L2GameServerPacket
+public class ExChangeNPCState implements IClientOutgoingPacket
 {
 	private int _objId;
 	private int _state;
@@ -12,9 +13,9 @@ public class ExChangeNPCState extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objId);
-		writeD(_state);
+		packetWriter.writeD(_objId);
+		packetWriter.writeD(_state);
 	}
 }

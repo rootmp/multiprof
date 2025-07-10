@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ import l2s.gameserver.network.l2.c2s.RequestExPostItemList;
  * {@link RequestExPostItemList} Содержит список вещей, которые можно приложить
  * к письму.
  */
-public class ExReplyPostItemList extends L2GameServerPacket
+public class ExReplyPostItemList implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final List<ItemInfo> _itemsList = new ArrayList<ItemInfo>();
@@ -31,13 +32,13 @@ public class ExReplyPostItemList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
-		writeD(_itemsList.size());
+		packetWriter.writeC(_type);
+		packetWriter.writeD(_itemsList.size());
 		if (_type == 2)
 		{
-			writeD(_itemsList.size());
+			packetWriter.writeD(_itemsList.size());
 			for (ItemInfo item : _itemsList)
 				writeItemInfo(item);
 		}

@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class ExUserInfoFishing extends L2GameServerPacket
+public class ExUserInfoFishing implements IClientOutgoingPacket
 {
 	private Player _activeChar;
 
@@ -12,17 +13,17 @@ public class ExUserInfoFishing extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_activeChar.getObjectId());
+		packetWriter.writeD(_activeChar.getObjectId());
 		if (_activeChar.getFishing().isInProcess())
 		{
-			writeC(1);
-			writeD(_activeChar.getFishing().getHookLocation().getX());
-			writeD(_activeChar.getFishing().getHookLocation().getY());
-			writeD(_activeChar.getFishing().getHookLocation().getZ());
+			packetWriter.writeC(1);
+			packetWriter.writeD(_activeChar.getFishing().getHookLocation().getX());
+			packetWriter.writeD(_activeChar.getFishing().getHookLocation().getY());
+			packetWriter.writeD(_activeChar.getFishing().getHookLocation().getZ());
 		}
 		else
-			writeC(0);
+			packetWriter.writeC(0);
 	}
 }

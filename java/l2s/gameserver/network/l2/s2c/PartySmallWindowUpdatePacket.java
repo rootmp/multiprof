@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.updatetype.PartySmallWindowUpdateType;
 
-public class PartySmallWindowUpdatePacket extends L2GameServerPacket
+public class PartySmallWindowUpdatePacket implements IClientOutgoingPacket
 {
 	private int obj_id, class_id, level;
 	private int curCp, maxCp, curHp, maxHp, curMp, maxMp, sayhas_grace_points;
@@ -42,35 +43,35 @@ public class PartySmallWindowUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(obj_id);
-		writeH(_flags);
+		packetWriter.writeD(obj_id);
+		packetWriter.writeH(_flags);
 		if (containsMask(_flags, PartySmallWindowUpdateType.CURRENT_CP))
-			writeD(curCp); // c4
+			packetWriter.writeD(curCp); // c4
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.MAX_CP))
-			writeD(maxCp); // c4
+			packetWriter.writeD(maxCp); // c4
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.CURRENT_HP))
-			writeD(curHp);
+			packetWriter.writeD(curHp);
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.MAX_HP))
-			writeD(maxHp);
+			packetWriter.writeD(maxHp);
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.CURRENT_MP))
-			writeD(curMp);
+			packetWriter.writeD(curMp);
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.MAX_MP))
-			writeD(maxMp);
+			packetWriter.writeD(maxMp);
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.LEVEL))
-			writeC(level);
+			packetWriter.writeC(level);
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.CLASS_ID))
-			writeH(class_id);
+			packetWriter.writeH(class_id);
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.SAYHAS_GRACE_POINTS))
-			writeD(sayhas_grace_points);
+			packetWriter.writeD(sayhas_grace_points);
 	}
 }

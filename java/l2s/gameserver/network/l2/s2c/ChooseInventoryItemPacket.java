@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ChooseInventoryItemPacket extends L2GameServerPacket
+public class ChooseInventoryItemPacket implements IClientOutgoingPacket
 {
 	private int ItemID;
 
@@ -10,8 +11,8 @@ public class ChooseInventoryItemPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(ItemID);
+		packetWriter.writeD(ItemID);
 	}
 }

@@ -9,7 +9,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPledgeRankingMyInfo extends L2GameServerPacket
+public class ExPledgeRankingMyInfo implements IClientOutgoingPacket
 {
 	private Player _player;
 	private final Map<Integer, Integer> _clanList;
@@ -23,13 +23,13 @@ public class ExPledgeRankingMyInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_player.getClan() == null)
 		{
-			writeD(0); // rank
-			writeD(0); // previous day rank
-			writeD(0); // points
+			packetWriter.writeD(0); // rank
+			packetWriter.writeD(0); // previous day rank
+			packetWriter.writeD(0); // points
 		}
 		else
 		{
@@ -64,9 +64,9 @@ public class ExPledgeRankingMyInfo extends L2GameServerPacket
 					}
 				}
 			}
-			writeD(clanRank);
-			writeD(clanPreviousRank);
-			writeD(points);
+			packetWriter.writeD(clanRank);
+			packetWriter.writeD(clanPreviousRank);
+			packetWriter.writeD(points);
 		}
 	}
 }

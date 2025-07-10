@@ -13,22 +13,22 @@ import gnu.trove.map.TIntObjectMap;
 /**
  * @author nexvill
  */
-public class RequestExUserWatcherAdd extends L2GameClientPacket
+public class RequestExUserWatcherAdd implements IClientIncomingPacket
 {
 	String _name;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_name = readString();
-		readD(); // 0
+		packet.readD(); // 0
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

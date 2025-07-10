@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExOlympiadMatchMakingResult extends L2GameServerPacket
+public class ExOlympiadMatchMakingResult implements IClientOutgoingPacket
 {
 	public final boolean join;
 	public final int type;
@@ -12,9 +13,9 @@ public class ExOlympiadMatchMakingResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(join);
-		writeC(type);
+		packetWriter.writeC(join);
+		packetWriter.writeC(type);
 	}
 }

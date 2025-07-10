@@ -8,7 +8,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExSubjugationList extends L2GameServerPacket
+public class ExSubjugationList implements IClientOutgoingPacket
 {
 	private Player _player;
 
@@ -18,7 +18,7 @@ public class ExSubjugationList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int count = 0;
 		if (_player.getLevel() > 84)
@@ -32,7 +32,7 @@ public class ExSubjugationList extends L2GameServerPacket
 		else if (_player.getLevel() > 64)
 			count = 1;
 
-		writeD(count);
+		packetWriter.writeD(count);
 		for (int i = 0; i < count; i++)
 		{
 			int zoneId = i + 1;
@@ -41,10 +41,10 @@ public class ExSubjugationList extends L2GameServerPacket
 			points %= 1_000_000;
 			int maximumKeys = SubjugationsHolder.getInstance().getFields().get(zoneId).getMaximumKeys() - keysHave;
 
-			writeD(zoneId);
-			writeD(points);
-			writeD(keysHave);
-			writeD(maximumKeys);
+			packetWriter.writeD(zoneId);
+			packetWriter.writeD(points);
+			packetWriter.writeD(keysHave);
+			packetWriter.writeD(maximumKeys);
 		}
 	}
 }

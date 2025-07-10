@@ -7,23 +7,23 @@ import l2s.gameserver.network.l2.s2c.magiclamp.ExMagicLampGameResult;
 /**
  * @author nexvill
  */
-public class RequestExMagicLampGameStart extends L2GameClientPacket
+public class RequestExMagicLampGameStart implements IClientIncomingPacket
 {
 	private int _gamesCount;
 	private int _gameType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_gamesCount = readD();
-		_gameType = readC();
+		_gamesCount = packet.readD();
+		_gameType = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

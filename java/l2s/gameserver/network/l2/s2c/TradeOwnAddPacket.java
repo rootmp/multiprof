@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.items.ItemInfo;
 
-public class TradeOwnAddPacket extends L2GameServerPacket
+public class TradeOwnAddPacket implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final ItemInfo _item;
@@ -16,15 +17,15 @@ public class TradeOwnAddPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
-		writeD(1); // Count
+		packetWriter.writeC(_type);
+		packetWriter.writeD(1); // Count
 		if (_type == 2)
 		{
-			writeH(1); // Count
-			writeC(0x00); // UNK 140
-			writeC(0x00); // UNK 140
+			packetWriter.writeH(1); // Count
+			packetWriter.writeC(0x00); // UNK 140
+			packetWriter.writeC(0x00); // UNK 140
 			writeItemInfo(_item, _amount);
 		}
 	}

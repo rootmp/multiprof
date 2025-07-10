@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
 /**
  * Format: ch ddd [ddd]
  */
-public class ExGetBossRecord extends L2GameServerPacket
+public class ExGetBossRecord implements IClientOutgoingPacket
 {
 	private List<BossRecordInfo> _bossRecordInfo;
 	private int _ranking;
@@ -19,17 +20,17 @@ public class ExGetBossRecord extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_ranking); // char ranking
-		writeD(_totalPoints); // char total points
+		packetWriter.writeD(_ranking); // char ranking
+		packetWriter.writeD(_totalPoints); // char total points
 
-		writeD(_bossRecordInfo.size()); // list size
+		packetWriter.writeD(_bossRecordInfo.size()); // list size
 		for (BossRecordInfo w : _bossRecordInfo)
 		{
-			writeD(w._bossId);
-			writeD(w._points);
-			writeD(w._unk1);// don`t know
+			packetWriter.writeD(w._bossId);
+			packetWriter.writeD(w._points);
+			packetWriter.writeD(w._unk1);// don`t know
 		}
 	}
 

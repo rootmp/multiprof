@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExDuelAskStart extends L2GameServerPacket
+public class ExDuelAskStart implements IClientOutgoingPacket
 {
 	String _requestor;
 	int _isPartyDuel;
@@ -12,9 +13,9 @@ public class ExDuelAskStart extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_requestor);
-		writeD(_isPartyDuel);
+		packetWriter.writeS(_requestor);
+		packetWriter.writeD(_isPartyDuel);
 	}
 }

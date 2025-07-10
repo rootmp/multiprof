@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.LuckyGameHolder;
@@ -10,7 +11,7 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author Bonux
  **/
-public class ReciveVipLuckyGameInfo extends L2GameServerPacket
+public class ReciveVipLuckyGameInfo implements IClientOutgoingPacket
 {
 	private final boolean _enabled;
 	private long _availableNormalGames = 0;
@@ -61,10 +62,10 @@ public class ReciveVipLuckyGameInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_enabled);
-		writeD((int) _availableNormalGames);
-		writeD((int) _availablePremiumGames);
+		packetWriter.writeC(_enabled);
+		packetWriter.writeD((int) _availableNormalGames);
+		packetWriter.writeD((int) _availablePremiumGames);
 	}
 }

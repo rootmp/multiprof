@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.skills.enums.SkillCastingType;
 
-public class MagicSkillLaunchedPacket extends L2GameServerPacket
+public class MagicSkillLaunchedPacket implements IClientOutgoingPacket
 {
 	private final int _casterId;
 	private final int _skillId;
@@ -48,7 +49,7 @@ public class MagicSkillLaunchedPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		/**
 		 * Casting bar type:
@@ -58,16 +59,16 @@ public class MagicSkillLaunchedPacket extends L2GameServerPacket
 		 * <li>3 - green,
 		 * <li>4 - red.
 		 **/
-		writeD(_castingType.getClientBarId());
-		writeD(_casterId);
-		writeD(_skillId);
-		writeD(_skillLevel);
-		writeD(_targets.size());
+		packetWriter.writeD(_castingType.getClientBarId());
+		packetWriter.writeD(_casterId);
+		packetWriter.writeD(_skillId);
+		packetWriter.writeD(_skillLevel);
+		packetWriter.writeD(_targets.size());
 		for (Creature target : _targets)
 		{
 			if (target != null)
 			{
-				writeD(target.getObjectId());
+				packetWriter.writeD(target.getObjectId());
 			}
 		}
 	}

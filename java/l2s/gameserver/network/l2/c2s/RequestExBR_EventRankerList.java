@@ -1,8 +1,11 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.network.l2.s2c.ExBR_LoadEventTopRankers;
 
-public class RequestExBR_EventRankerList extends L2GameClientPacket
+public class RequestExBR_EventRankerList implements IClientIncomingPacket
 {
 	private static final String _C__D0_7B_BREVENTRANKERLIST = "[C] D0:7B BrEventRankerList";
 
@@ -12,22 +15,22 @@ public class RequestExBR_EventRankerList extends L2GameClientPacket
 	private int _ranking;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_eventId = readD();
-		_day = readD(); // 0 - current, 1 - previous
-		_ranking = readD();
+		_eventId = packet.readD();
+		_day = packet.readD(); // 0 - current, 1 - previous
+		_ranking = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		// TODO count, bestScore, myScore
 		int count = 0;
 		int bestScore = 0;
 		int myScore = 0;
-		getClient().sendPacket(new ExBR_LoadEventTopRankers(_eventId, _day, count, bestScore, myScore));
+		client.sendPacket(new ExBR_LoadEventTopRankers(_eventId, _day, count, bestScore, myScore));
 	}
 
 	@Override

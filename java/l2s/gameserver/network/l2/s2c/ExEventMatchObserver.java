@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExEventMatchObserver extends L2GameServerPacket
+public class ExEventMatchObserver implements IClientOutgoingPacket
 {
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// TODO dccSS
 	}

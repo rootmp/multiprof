@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExMagicLampGameInfo extends L2GameServerPacket
+public class ExMagicLampGameInfo implements IClientOutgoingPacket
 {
 	private int _gameType;
 	private Player _player;
@@ -23,7 +23,7 @@ public class ExMagicLampGameInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int lampsExist = 0;
 		if ((_player.getMagicLampPoints() / MAX_LAMP_EXP) >= 1)
@@ -31,23 +31,23 @@ public class ExMagicLampGameInfo extends L2GameServerPacket
 			lampsExist = (int) (_player.getMagicLampPoints() / MAX_LAMP_EXP);
 		}
 
-		writeD(300); // max games
-		writeD(_gamesCount); // games count
-		writeD(_gameType == 1 ? Config.MAGIC_LAMP_GREATER_CONSUME_COUNT : Config.MAGIC_LAMP_CONSUME_COUNT); // lamps consumed per game
-		writeD(lampsExist); // existed lamps on player
-		writeC(_gameType); // game type (standard or extended)
-		writeD(_gameType == 1 ? 1 : 0); // if extended game, additional Sayha's Blessing used
+		packetWriter.writeD(300); // max games
+		packetWriter.writeD(_gamesCount); // games count
+		packetWriter.writeD(_gameType == 1 ? Config.MAGIC_LAMP_GREATER_CONSUME_COUNT : Config.MAGIC_LAMP_CONSUME_COUNT); // lamps consumed per game
+		packetWriter.writeD(lampsExist); // existed lamps on player
+		packetWriter.writeC(_gameType); // game type (standard or extended)
+		packetWriter.writeD(_gameType == 1 ? 1 : 0); // if extended game, additional Sayha's Blessing used
 
 		if (_gameType == 1) // if extended game selected
 		{
-			writeD(1); // items size for one game
-			writeD(SAYHAS_BLESSING); // item id
-			writeQ(5); // item count
-			writeQ(_player.getInventory().getItemByItemId(SAYHAS_BLESSING).getCount()); // items count in player inventory
+			packetWriter.writeD(1); // items size for one game
+			packetWriter.writeD(SAYHAS_BLESSING); // item id
+			packetWriter.writeQ(5); // item count
+			packetWriter.writeQ(_player.getInventory().getItemByItemId(SAYHAS_BLESSING).getCount()); // items count in player inventory
 		}
 		else
 		{
-			writeD(0); // items size for one game
+			packetWriter.writeD(0); // items size for one game
 		}
 	}
 }

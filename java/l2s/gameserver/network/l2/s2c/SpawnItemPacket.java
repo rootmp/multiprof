@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.model.items.ItemInstance;
  * 15 ee cc 11 43 object id 39 00 00 00 item id 8f 14 00 00 x b7 f1 00 00 y 60
  * f2 ff ff z 01 00 00 00 show item count 7a 00 00 00 count . format dddddddd
  */
-public class SpawnItemPacket extends L2GameServerPacket
+public class SpawnItemPacket implements IClientOutgoingPacket
 {
 	private int _objectId;
 	private int _itemId;
@@ -32,19 +33,19 @@ public class SpawnItemPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_itemId);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_itemId);
 
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(_stackable);
-		writeQ(_count);
-		writeD(0x00); // c2
-		writeC(_enchantLevel);
-		writeC(_augmented);
-		writeC(_ensoulCount);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
+		packetWriter.writeD(_z);
+		packetWriter.writeD(_stackable);
+		packetWriter.writeQ(_count);
+		packetWriter.writeD(0x00); // c2
+		packetWriter.writeC(_enchantLevel);
+		packetWriter.writeC(_augmented);
+		packetWriter.writeC(_ensoulCount);
 	}
 }

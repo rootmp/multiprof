@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * Пример пакета Kamael 828 протокол: 0000: fe 45 00 d9 9f 5e 8d 8b da 38 41 7a
@@ -7,7 +8,7 @@ package l2s.gameserver.network.l2.s2c;
  * ...;...ie.D.Olu. 0030: b5 6b e5 29 00 d8 7f f7 78 60 f1 b7 a1 17 f8 f9
  * .k.)...x`...... 0040: 12 eb 07 ...
  */
-public class ExSearchOrc extends L2GameServerPacket
+public class ExSearchOrc implements IClientOutgoingPacket
 {
 	// bchb
 	private final static byte[] _test =
@@ -80,7 +81,7 @@ public class ExSearchOrc extends L2GameServerPacket
 
 	// bchb
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		writeB(_test);
 	}

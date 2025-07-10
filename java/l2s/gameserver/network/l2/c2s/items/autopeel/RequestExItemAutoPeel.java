@@ -8,25 +8,25 @@ import l2s.gameserver.network.l2.s2c.items.autopeel.ExResultItemAutoPeel;
 /**
  * @author nexvill
  */
-public class RequestExItemAutoPeel extends L2GameClientPacket
+public class RequestExItemAutoPeel implements IClientIncomingPacket
 {
 	private int _itemObjId;
 	private long _totalCount;
 	private long _remainCount;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_itemObjId = readD();
-		_totalCount = readQ();
-		_remainCount = readQ();
+		_itemObjId = packet.readD();
+		_totalCount = packet.readQ();
+		_remainCount = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 		{
 			return;

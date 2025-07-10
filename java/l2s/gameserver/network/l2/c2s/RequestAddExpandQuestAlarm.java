@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.QuestHolder;
 import l2s.gameserver.model.Player;
@@ -10,21 +13,21 @@ import l2s.gameserver.network.l2.s2c.ExQuestNpcLogList;
  * @author VISTALL
  * @date 14:47/26.02.2011
  */
-public class RequestAddExpandQuestAlarm extends L2GameClientPacket
+public class RequestAddExpandQuestAlarm implements IClientIncomingPacket
 {
 	private int _questId;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_questId = readD();
+		_questId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

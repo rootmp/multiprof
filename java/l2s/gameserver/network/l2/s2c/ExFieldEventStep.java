@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExFieldEventStep extends L2GameServerPacket
+public class ExFieldEventStep implements IClientOutgoingPacket
 {
 	private final int _own;
 	private final int _cumulative;
@@ -17,10 +18,10 @@ public class ExFieldEventStep extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_own);
-		writeD(_cumulative);
-		writeD(_max);
+		packetWriter.writeD(_own);
+		packetWriter.writeD(_cumulative);
+		packetWriter.writeD(_max);
 	}
 }

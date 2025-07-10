@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExIsCharNameCreatable extends L2GameServerPacket
+public class ExIsCharNameCreatable implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket SUCCESS = new ExIsCharNameCreatable(-1); // Успешное создание чара.
 	public static final L2GameServerPacket UNABLE_TO_CREATE_A_CHARACTER = new ExIsCharNameCreatable(0x00); // Не удалось
@@ -48,8 +49,8 @@ public class ExIsCharNameCreatable extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_errorCode);
+		packetWriter.writeD(_errorCode);
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
@@ -9,7 +12,7 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.PledgeShowMemberListUpdatePacket;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
-public class RequestPledgeReorganizeMember extends L2GameClientPacket
+public class RequestPledgeReorganizeMember implements IClientIncomingPacket
 {
 	// format: (ch)dSdS
 	int _replace;
@@ -18,24 +21,24 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 	String _replaceName;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_replace = readD();
+		_replace = packet.readD();
 		_subjectName = readS(16);
-		_targetUnit = readD();
+		_targetUnit = packet.readD();
 		if (_replace > 0)
-			_replaceName = readS();
+			_replaceName = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		// _log.warn("Received
 		// RequestPledgeReorganizeMember("+_arg1+","+_arg2+","+_arg3+","+_arg4+") from
-		// player "+getClient().getActiveChar().getName());
+		// player "+client.getActiveChar().getName());
 
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

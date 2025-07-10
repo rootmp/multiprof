@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -6,7 +9,7 @@ import l2s.gameserver.model.Player;
 /**
  * @author VISTALL
  */
-public class RequestExBR_LectureMark extends L2GameClientPacket
+public class RequestExBR_LectureMark implements IClientIncomingPacket
 {
 	public static final int INITIAL_MARK = 1;
 	public static final int EVANGELIST_MARK = 2;
@@ -15,16 +18,16 @@ public class RequestExBR_LectureMark extends L2GameClientPacket
 	private int _mark;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_mark = readC();
+		_mark = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null || !Config.EX_LECTURE_MARK)
 			return;
 

@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author Bonux
  **/
-public class ExFishingEndPacket extends L2GameServerPacket
+public class ExFishingEndPacket implements IClientOutgoingPacket
 {
 	public static final int FAIL = 0;
 	public static final int WIN = 1;
@@ -21,9 +22,9 @@ public class ExFishingEndPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_charId);
-		writeC(_type);
+		packetWriter.writeD(_charId);
+		packetWriter.writeC(_type);
 	}
 }

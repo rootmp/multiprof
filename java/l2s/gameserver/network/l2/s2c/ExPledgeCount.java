@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExPledgeCount extends L2GameServerPacket
+public class ExPledgeCount implements IClientOutgoingPacket
 {
 	private final int _count;
 
@@ -13,8 +14,8 @@ public class ExPledgeCount extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_count);
+		packetWriter.writeD(_count);
 	}
 }

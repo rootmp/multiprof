@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExChangeNicknameNColor extends L2GameServerPacket
+public class ExChangeNicknameNColor implements IClientOutgoingPacket
 {
 	private int _itemObjId;
 
@@ -10,8 +11,8 @@ public class ExChangeNicknameNColor extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_itemObjId);
+		packetWriter.writeD(_itemObjId);
 	}
 }

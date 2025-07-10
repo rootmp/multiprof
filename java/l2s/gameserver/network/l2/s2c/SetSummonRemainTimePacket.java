@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Servitor;
 
-public class SetSummonRemainTimePacket extends L2GameServerPacket
+public class SetSummonRemainTimePacket implements IClientOutgoingPacket
 {
 	private final int _maxFed;
 	private final int _curFed;
@@ -14,9 +15,9 @@ public class SetSummonRemainTimePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_maxFed);
-		writeD(_curFed);
+		packetWriter.writeD(_maxFed);
+		packetWriter.writeD(_curFed);
 	}
 }

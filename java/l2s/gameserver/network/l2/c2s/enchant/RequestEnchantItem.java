@@ -29,7 +29,7 @@ import l2s.gameserver.utils.Log;
 /**
  * @author nexvill
  */
-public class RequestEnchantItem extends L2GameClientPacket
+public class RequestEnchantItem implements IClientIncomingPacket
 {
 	private static final int ENCHANT_DELAY = 1000;
 
@@ -41,17 +41,17 @@ public class RequestEnchantItem extends L2GameClientPacket
 	private int _objectId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
-		readC(); //
+		_objectId = packet.readD();
+		packet.readC(); //
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

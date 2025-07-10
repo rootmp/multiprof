@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.dao.SiegeClanDAO;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
@@ -12,25 +15,25 @@ import l2s.gameserver.network.l2.s2c.CastleSiegeDefenderListPacket;
 /**
  * @reworked VISTALL
  */
-public class RequestConfirmCastleSiegeWaitingList extends L2GameClientPacket
+public class RequestConfirmCastleSiegeWaitingList implements IClientIncomingPacket
 {
 	private boolean _approved;
 	private int _unitId;
 	private int _clanId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_unitId = readD();
-		_clanId = readD();
-		_approved = readD() == 1;
+		_unitId = packet.readD();
+		_clanId = packet.readD();
+		_approved = packet.readD() == 1;
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

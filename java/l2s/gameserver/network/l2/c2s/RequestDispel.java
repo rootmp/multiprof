@@ -1,26 +1,29 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 
-public class RequestDispel extends L2GameClientPacket
+public class RequestDispel implements IClientIncomingPacket
 {
 	private int _objectId, _id, _level;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
-		_id = readD();
-		_level = readD();
+		_objectId = packet.readD();
+		_id = packet.readD();
+		_level = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if ((activeChar == null) || (activeChar.getObjectId() != _objectId && !activeChar.isMyServitor(_objectId)))
 			return;
 

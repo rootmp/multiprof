@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.NpcHolder;
@@ -10,18 +13,18 @@ import l2s.gameserver.model.items.ItemInstance;
 /**
  * Written by Eden, on 24.02.2021
  */
-public class ExEvolvePet extends L2GameClientPacket
+public class ExEvolvePet implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

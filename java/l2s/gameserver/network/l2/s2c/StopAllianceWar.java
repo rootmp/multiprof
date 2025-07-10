@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class StopAllianceWar extends L2GameServerPacket
+public class StopAllianceWar implements IClientOutgoingPacket
 {
 	private String _allianceName;
 	private String _char;
@@ -12,9 +13,9 @@ public class StopAllianceWar extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_allianceName);
-		writeS(_char);
+		packetWriter.writeS(_allianceName);
+		packetWriter.writeS(_char);
 	}
 }

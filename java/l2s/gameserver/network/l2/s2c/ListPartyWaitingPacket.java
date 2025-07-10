@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,7 +9,7 @@ import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
 
-public class ListPartyWaitingPacket extends L2GameServerPacket
+public class ListPartyWaitingPacket implements IClientOutgoingPacket
 {
 	private static final int ITEMS_PER_PAGE = 16;
 	private final Collection<MatchingRoom> _rooms = new ArrayList<MatchingRoom>(ITEMS_PER_PAGE);
@@ -26,30 +27,30 @@ public class ListPartyWaitingPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_page);
-		writeD(_rooms.size());
+		packetWriter.writeD(_page);
+		packetWriter.writeD(_rooms.size());
 
 		for (MatchingRoom room : _rooms)
 		{
-			writeD(room.getId()); // room id
-			writeS(room.getTopic()); // room name
-			writeD(room.getLocationId());
-			writeD(room.getMinLevel()); // min level
-			writeD(room.getMaxLevel()); // max level
-			writeD(room.getMaxMembersSize()); // max members coun
-			writeS(room.getLeader() == null ? "None" : room.getLeader().getName());
+			packetWriter.writeD(room.getId()); // room id
+			packetWriter.writeS(room.getTopic()); // room name
+			packetWriter.writeD(room.getLocationId());
+			packetWriter.writeD(room.getMinLevel()); // min level
+			packetWriter.writeD(room.getMaxLevel()); // max level
+			packetWriter.writeD(room.getMaxMembersSize()); // max members coun
+			packetWriter.writeS(room.getLeader() == null ? "None" : room.getLeader().getName());
 
 			Collection<Player> players = room.getPlayers();
-			writeD(players.size()); // members count
+			packetWriter.writeD(players.size()); // members count
 			for (Player player : players)
 			{
-				writeD(player.getClassId().getId());
-				writeS(player.getName());
+				packetWriter.writeD(player.getClassId().getId());
+				packetWriter.writeS(player.getName());
 			}
 		}
-		writeD(0x00); // Total amount of parties
-		writeD(0x00); // Total amount of party members
+		packetWriter.writeD(0x00); // Total amount of parties
+		packetWriter.writeD(0x00); // Total amount of party members
 	}
 }

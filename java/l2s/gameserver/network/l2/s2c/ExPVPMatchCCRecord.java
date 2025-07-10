@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class ExPVPMatchCCRecord extends L2GameServerPacket
+public class ExPVPMatchCCRecord implements IClientOutgoingPacket
 {
 	private final Map<String, Integer> _scores;
 
@@ -14,12 +15,12 @@ public class ExPVPMatchCCRecord extends L2GameServerPacket
 
 	public void writeImpl()
 	{
-		writeD(0x00); // Open/Dont Open
-		writeD(_scores.size());
+		packetWriter.writeD(0x00); // Open/Dont Open
+		packetWriter.writeD(_scores.size());
 		for (Entry<String, Integer> p : _scores.entrySet())
 		{
-			writeS(p.getKey());
-			writeD(p.getValue());
+			packetWriter.writeS(p.getKey());
+			packetWriter.writeD(p.getValue());
 		}
 	}
 }

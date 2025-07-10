@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class EtcStatusUpdatePacket extends L2GameServerPacket
+public class EtcStatusUpdatePacket implements IClientOutgoingPacket
 {
 	private static final int NO_CHAT_FLAG = 1 << 0;
 	private static final int DANGER_AREA_FLAG = 1 << 1;
@@ -35,16 +36,16 @@ public class EtcStatusUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_increasedForce); // 1-7 increase force, level
-		writeD(_weightPenalty); // 1-4 weight penalty, level (1=50%, 2=66.6%, 3=80%, 4=100%)
-		writeC(0x00); // Weapon Grade Penalty [1-4]
-		writeC(0x00); // Armor Grade Penalty [1-4]
-		writeC(0x00); // Death Penalty [1-15, 0 = disabled)], not used anymore in Ertheia
-		writeC(0x00); // Old count for charged souls.
-		writeC(_flags);
-		writeC(_darkSouls); // Shadow souls
-		writeC(_lightSouls); // Light souls
+		packetWriter.writeC(_increasedForce); // 1-7 increase force, level
+		packetWriter.writeD(_weightPenalty); // 1-4 weight penalty, level (1=50%, 2=66.6%, 3=80%, 4=100%)
+		packetWriter.writeC(0x00); // Weapon Grade Penalty [1-4]
+		packetWriter.writeC(0x00); // Armor Grade Penalty [1-4]
+		packetWriter.writeC(0x00); // Death Penalty [1-15, 0 = disabled)], not used anymore in Ertheia
+		packetWriter.writeC(0x00); // Old count for charged souls.
+		packetWriter.writeC(_flags);
+		packetWriter.writeC(_darkSouls); // Shadow souls
+		packetWriter.writeC(_lightSouls); // Light souls
 	}
 }

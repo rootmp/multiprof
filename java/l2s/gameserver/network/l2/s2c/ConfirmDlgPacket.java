@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.network.l2.components.SystemMsg;
 
@@ -18,11 +19,11 @@ public class ConfirmDlgPacket extends SysMsgContainer<ConfirmDlgPacket>
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		writeElements();
-		writeD(_time);
-		writeD(_requestId);
+		packetWriter.writeD(_time);
+		packetWriter.writeD(_requestId);
 	}
 
 	public void setRequestId(int requestId)

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
@@ -12,7 +13,7 @@ import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.pledge.Alliance;
 import l2s.gameserver.model.pledge.Clan;
 
-public class ExMercenaryCastlewarCastleSiegeAttackerList extends L2GameServerPacket
+public class ExMercenaryCastlewarCastleSiegeAttackerList implements IClientOutgoingPacket
 {
 	private final int _id;
 	private final boolean _registrationValid;
@@ -36,41 +37,41 @@ public class ExMercenaryCastlewarCastleSiegeAttackerList extends L2GameServerPac
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// dddddd(dSSdddQddSSd)
-		writeD(_id);
-		writeD(0x00); // Owner's view
-		writeD(_registrationValid);
-		writeD(0x00); // Page number
-		writeD(_clans.size());
-		writeD(_clans.size());
+		packetWriter.writeD(_id);
+		packetWriter.writeD(0x00); // Owner's view
+		packetWriter.writeD(_registrationValid);
+		packetWriter.writeD(0x00); // Page number
+		packetWriter.writeD(_clans.size());
+		packetWriter.writeD(_clans.size());
 		for (SiegeClanObject siegeClan : _clans)
 		{
 			Clan clan = siegeClan.getClan();
-			writeD(clan.getClanId());
-			writeS(clan.getName());
-			writeS(clan.getLeaderName());
-			writeD(clan.getCrestId());
-			writeD((int) (siegeClan.getDate() / 1000L));
-			writeD(siegeClan.getParam() > 0); // Have mercenaries recruting
-			writeQ(siegeClan.getParam()); // Rawarding Rate %
-			writeD(0x00); // Mercenaries count
+			packetWriter.writeD(clan.getClanId());
+			packetWriter.writeS(clan.getName());
+			packetWriter.writeS(clan.getLeaderName());
+			packetWriter.writeD(clan.getCrestId());
+			packetWriter.writeD((int) (siegeClan.getDate() / 1000L));
+			packetWriter.writeD(siegeClan.getParam() > 0); // Have mercenaries recruting
+			packetWriter.writeQ(siegeClan.getParam()); // Rawarding Rate %
+			packetWriter.writeD(0x00); // Mercenaries count
 
 			Alliance alliance = clan.getAlliance();
 			if (alliance != null)
 			{
-				writeD(alliance.getAllyId());
-				writeS(alliance.getAllyName());
-				writeS(alliance.getAllyLeaderName());
-				writeD(alliance.getAllyCrestId());
+				packetWriter.writeD(alliance.getAllyId());
+				packetWriter.writeS(alliance.getAllyName());
+				packetWriter.writeS(alliance.getAllyLeaderName());
+				packetWriter.writeD(alliance.getAllyCrestId());
 			}
 			else
 			{
-				writeD(0x00);
-				writeS(StringUtils.EMPTY);
-				writeS(StringUtils.EMPTY);
-				writeD(0x00);
+				packetWriter.writeD(0x00);
+				packetWriter.writeS(StringUtils.EMPTY);
+				packetWriter.writeS(StringUtils.EMPTY);
+				packetWriter.writeD(0x00);
 			}
 		}
 	}

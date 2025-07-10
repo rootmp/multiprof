@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.pledge.Alliance;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.UnitMember;
 
-public class GMViewPledgeInfoPacket extends L2GameServerPacket
+public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 {
 	private final String _charName;
 	private int _clanObjectId, _clanCrestId, _level, _rank, _reputation, _allianceObjectId, _allianceCrestId;
@@ -65,55 +66,55 @@ public class GMViewPledgeInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0x00);
-		writeS(_charName);
-		writeD(_clanObjectId);
-		writeD(0x00);
-		writeS(_unitName);
-		writeS(_leaderName);
+		packetWriter.writeD(0x00);
+		packetWriter.writeS(_charName);
+		packetWriter.writeD(_clanObjectId);
+		packetWriter.writeD(0x00);
+		packetWriter.writeS(_unitName);
+		packetWriter.writeS(_leaderName);
 
-		writeD(_clanCrestId); // crest id .. is used again
-		writeD(_level);
-		writeD(_hasCastle);
+		packetWriter.writeD(_clanCrestId); // crest id .. is used again
+		packetWriter.writeD(_level);
+		packetWriter.writeD(_hasCastle);
 		if (_hasInstantClanHall > 0)
 		{
-			writeD(1);
-			writeD(_hasInstantClanHall);
+			packetWriter.writeD(1);
+			packetWriter.writeD(_hasInstantClanHall);
 		}
 		else if (_hasClanHall != 0)
 		{
-			writeD(0);
-			writeD(_hasClanHall);
+			packetWriter.writeD(0);
+			packetWriter.writeD(_hasClanHall);
 		}
 		else
 		{
-			writeD(0);
-			writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
 		}
-		writeD(0x00);
-		writeD(_rank);
-		writeD(_reputation);
-		writeD(_isDisbanded ? 3 : 0);
-		writeD(0x00);
-		writeD(_allianceObjectId);
-		writeS(_allianceName);
-		writeD(_allianceCrestId);
-		writeD(_atClanWar);
-		writeD(0x00);// territory Id
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(_rank);
+		packetWriter.writeD(_reputation);
+		packetWriter.writeD(_isDisbanded ? 3 : 0);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(_allianceObjectId);
+		packetWriter.writeS(_allianceName);
+		packetWriter.writeD(_allianceCrestId);
+		packetWriter.writeD(_atClanWar);
+		packetWriter.writeD(0x00);// territory Id
 
-		writeD(_members.size());
+		packetWriter.writeD(_members.size());
 		for (PledgePacketMember m : _members)
 		{
-			writeS(m._name);
-			writeD(m._level);
-			writeD(m._classId);
-			writeD(m._sex);
-			writeD(m._race);
-			writeD(m._online);
-			writeD(m._hasSponsor ? 1 : 0);
-			writeC(0x00); // TODO[UNDERGROUND]: Attendance bonus
+			packetWriter.writeS(m._name);
+			packetWriter.writeD(m._level);
+			packetWriter.writeD(m._classId);
+			packetWriter.writeD(m._sex);
+			packetWriter.writeD(m._race);
+			packetWriter.writeD(m._online);
+			packetWriter.writeD(m._hasSponsor ? 1 : 0);
+			packetWriter.writeC(0x00); // TODO[UNDERGROUND]: Attendance bonus
 		}
 	}
 

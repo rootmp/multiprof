@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.List;
 
@@ -17,25 +20,25 @@ import l2s.gameserver.utils.NpcUtils;
 /**
  * @author Bonux
  **/
-public class RequestTryEnSoulExtraction extends L2GameClientPacket
+public class RequestTryEnSoulExtraction implements IClientIncomingPacket
 {
 	private int _itemObjectId;
 	private int _ensoulType;
 	private int _ensoulId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_itemObjectId = readD();
-		_ensoulType = readC();
-		_ensoulId = readC();
+		_itemObjectId = packet.readD();
+		_ensoulType = packet.readC();
+		_ensoulId = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

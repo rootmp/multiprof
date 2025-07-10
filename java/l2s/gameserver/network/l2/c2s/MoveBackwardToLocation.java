@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.geometry.Location;
@@ -8,7 +11,7 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
 
 // cdddddd(d)
-public class MoveBackwardToLocation extends L2GameClientPacket
+public class MoveBackwardToLocation implements IClientIncomingPacket
 {
 	private Location _targetLoc = new Location();
 	private Location _originLoc = new Location();
@@ -19,23 +22,23 @@ public class MoveBackwardToLocation extends L2GameClientPacket
 	 * packet type id 0x0f
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_targetLoc.x = readD();
-		_targetLoc.y = readD();
-		_targetLoc.z = readD();
-		_originLoc.x = readD();
-		_originLoc.y = readD();
-		_originLoc.z = readD();
+		_targetLoc.x = packet.readD();
+		_targetLoc.y = packet.readD();
+		_targetLoc.z = packet.readD();
+		_originLoc.x = packet.readD();
+		_originLoc.y = packet.readD();
+		_originLoc.z = packet.readD();
 		if (_buf.hasRemaining())
 			_keyboardMovement = readD() == 0;
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

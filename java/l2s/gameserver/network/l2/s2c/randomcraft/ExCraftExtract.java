@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExCraftExtract extends L2GameServerPacket
+public class ExCraftExtract implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _count;
@@ -22,7 +22,7 @@ public class ExCraftExtract extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int points = 0;
 		int fee = 0;
@@ -50,7 +50,7 @@ public class ExCraftExtract extends L2GameServerPacket
 		}
 		_player.getInventory().destroyItemByItemId(57, fee);
 		_player.setCraftGaugePoints(_player.getCraftGaugePoints() + points, null);
-		writeC(0);
+		packetWriter.writeC(0);
 		_player.sendPacket(new ExCraftRandomInfo(_player));
 	}
 }

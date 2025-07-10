@@ -11,25 +11,25 @@ import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.templates.item.ItemTemplate;
 
-public class RequestExSharedPositionTeleport extends L2GameClientPacket
+public class RequestExSharedPositionTeleport implements IClientIncomingPacket
 {
 	private int _allow, _tpId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_allow = readC();
+		_allow = packet.readC();
 		_tpId = readH();
-		readC(); // ?
+		packet.readC(); // ?
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if (_allow == 1)
 		{
-			Player player = getClient().getActiveChar();
+			Player player = client.getActiveChar();
 
 			int previousRank = player.getPreviousPvpRank();
 			boolean allowFree = false;

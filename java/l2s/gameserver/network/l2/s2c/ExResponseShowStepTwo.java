@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -10,7 +11,7 @@ import l2s.gameserver.utils.Language;
 /**
  * @author VISTALL
  */
-public class ExResponseShowStepTwo extends L2GameServerPacket
+public class ExResponseShowStepTwo implements IClientOutgoingPacket
 {
 	private Language _language;
 	private PetitionMainGroup _petitionMainGroup;
@@ -22,15 +23,15 @@ public class ExResponseShowStepTwo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		Collection<PetitionSubGroup> subGroups = _petitionMainGroup.getSubGroups();
-		writeD(subGroups.size());
-		writeS(_petitionMainGroup.getDescription(_language));
+		packetWriter.writeD(subGroups.size());
+		packetWriter.writeS(_petitionMainGroup.getDescription(_language));
 		for (PetitionSubGroup g : subGroups)
 		{
-			writeC(g.getId());
-			writeS(g.getName(_language));
+			packetWriter.writeC(g.getId());
+			packetWriter.writeS(g.getName(_language));
 		}
 	}
 }

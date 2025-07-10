@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
  */
-public class ExUserBoostStat extends L2GameServerPacket
+public class ExUserBoostStat implements IClientOutgoingPacket
 {
 	private int _type;
 	private int _count;
@@ -17,10 +18,10 @@ public class ExUserBoostStat extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
-		writeC(_count);
-		writeH(_bonus);
+		packetWriter.writeC(_type);
+		packetWriter.writeC(_count);
+		packetWriter.writeH(_bonus);
 	}
 }

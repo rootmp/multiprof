@@ -1,11 +1,15 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class LogOutOkPacket extends L2GameServerPacket
+import l2s.commons.network.PacketWriter;
+
+public class LogOutOkPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new LogOutOkPacket();
+	public static final IClientOutgoingPacket STATIC = new LogOutOkPacket();
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
+		return true;
 	}
 }

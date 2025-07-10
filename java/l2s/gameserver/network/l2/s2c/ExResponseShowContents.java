@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author VISTALL
  */
-public class ExResponseShowContents extends L2GameServerPacket
+public class ExResponseShowContents implements IClientOutgoingPacket
 {
 	private final String _contents;
 
@@ -13,8 +14,8 @@ public class ExResponseShowContents extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_contents);
+		packetWriter.writeS(_contents);
 	}
 }

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class CharacterDeleteFailPacket extends L2GameServerPacket
+public class CharacterDeleteFailPacket implements IClientOutgoingPacket
 {
 	public static int REASON_DELETION_FAILED = 0x01;
 	public static int REASON_YOU_MAY_NOT_DELETE_CLAN_MEMBER = 0x02;
@@ -13,8 +14,8 @@ public class CharacterDeleteFailPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_error);
+		packetWriter.writeD(_error);
 	}
 }

@@ -6,7 +6,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExTeleportFavoritesList extends L2GameServerPacket
+public class ExTeleportFavoritesList implements IClientOutgoingPacket
 {
 	private final boolean _activate;
 	private int[] _teleportFavorites;
@@ -18,13 +18,13 @@ public class ExTeleportFavoritesList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_activate);
-		writeD(_teleportFavorites.length); // teleports size
+		packetWriter.writeC(_activate);
+		packetWriter.writeD(_teleportFavorites.length); // teleports size
 		for (int i = 0; i < _teleportFavorites.length; i++)
 		{
-			writeD(_teleportFavorites[i]); // teleport id
+			packetWriter.writeD(_teleportFavorites[i]); // teleport id
 		}
 	}
 }

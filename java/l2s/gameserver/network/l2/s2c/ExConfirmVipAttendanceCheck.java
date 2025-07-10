@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExConfirmVipAttendanceCheck extends L2GameServerPacket
+public class ExConfirmVipAttendanceCheck implements IClientOutgoingPacket
 {
 	private final boolean _success;
 	private final int _receivedIndex;
@@ -15,11 +16,11 @@ public class ExConfirmVipAttendanceCheck extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_success); // Result
-		writeC(_receivedIndex); // Received index
-		writeD(0x00); // UNK
-		writeD(0x00); // UNK
+		packetWriter.writeC(_success); // Result
+		packetWriter.writeC(_receivedIndex); // Received index
+		packetWriter.writeD(0x00); // UNK
+		packetWriter.writeD(0x00); // UNK
 	}
 }

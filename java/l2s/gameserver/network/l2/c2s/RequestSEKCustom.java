@@ -1,6 +1,9 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
 
-public class RequestSEKCustom extends L2GameClientPacket
+
+public class RequestSEKCustom implements IClientIncomingPacket
 {
 	private int SlotNum, Direction;
 
@@ -8,15 +11,15 @@ public class RequestSEKCustom extends L2GameClientPacket
 	 * format: dd
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		SlotNum = readD();
-		Direction = readD();
+		SlotNum = packet.readD();
+		Direction = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		// TODO not implemented
 	}

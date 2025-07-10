@@ -1,11 +1,14 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author Bonux
  **/
-public class RequestTodoListHTML extends L2GameClientPacket
+public class RequestTodoListHTML implements IClientIncomingPacket
 {
 	@SuppressWarnings("unused")
 	private int _tab;
@@ -13,17 +16,17 @@ public class RequestTodoListHTML extends L2GameClientPacket
 	private String _linkName;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_tab = readC();
-		_linkName = readS();
+		_tab = packet.readC();
+		_linkName = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

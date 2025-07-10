@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.Hero;
@@ -6,21 +9,21 @@ import l2s.gameserver.model.entity.Hero;
 /**
  * Format chS c (id) 0xD0 h (subid) 0x0C S the hero's words :)
  */
-public class RequestWriteHeroWords extends L2GameClientPacket
+public class RequestWriteHeroWords implements IClientIncomingPacket
 {
 	private String _heroWords;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_heroWords = readS();
+		_heroWords = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null || !player.isHero())
 			return;
 

@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPledgeDonationInfo extends L2GameServerPacket
+public class ExPledgeDonationInfo implements IClientOutgoingPacket
 {
 	private Player _player;
 
@@ -17,9 +17,9 @@ public class ExPledgeDonationInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_player.getVarInt(PlayerVariables.DONATIONS_AVAILABLE, 3)); // available donations today
-		writeC(0); // unk
+		packetWriter.writeD(_player.getVarInt(PlayerVariables.DONATIONS_AVAILABLE, 3)); // available donations today
+		packetWriter.writeC(0); // unk
 	}
 }

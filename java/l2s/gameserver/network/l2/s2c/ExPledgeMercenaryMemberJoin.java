@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExPledgeMercenaryMemberJoin extends L2GameServerPacket
+public class ExPledgeMercenaryMemberJoin implements IClientOutgoingPacket
 {
 	private final int type;
 	private final boolean join;
@@ -16,11 +17,11 @@ public class ExPledgeMercenaryMemberJoin extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(type); // type
-		writeD(join); // entered
-		writeD(playerObjectId);
-		writeD(clanObjectId);
+		packetWriter.writeD(type); // type
+		packetWriter.writeD(join); // entered
+		packetWriter.writeD(playerObjectId);
+		packetWriter.writeD(clanObjectId);
 	}
 }

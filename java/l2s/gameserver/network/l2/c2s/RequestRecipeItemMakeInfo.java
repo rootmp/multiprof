@@ -1,11 +1,14 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.xml.holder.RecipeHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.RecipeItemMakeInfoPacket;
 import l2s.gameserver.templates.item.RecipeTemplate;
 
-public class RequestRecipeItemMakeInfo extends L2GameClientPacket
+public class RequestRecipeItemMakeInfo implements IClientIncomingPacket
 {
 	private int _id;
 
@@ -13,16 +16,16 @@ public class RequestRecipeItemMakeInfo extends L2GameClientPacket
 	 * packet type id 0xB7 format: cd
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_id = readD();
+		_id = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

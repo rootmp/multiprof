@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.model.pledge.ClanWar;
  * @author GodWorld
  * @reworked by Bonux
  **/
-public class PledgeReceiveWarList extends L2GameServerPacket
+public class PledgeReceiveWarList implements IClientOutgoingPacket
 {
 	private Clan _clan;
 	private int _page;
@@ -21,21 +22,21 @@ public class PledgeReceiveWarList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_page);
+		packetWriter.writeD(_page);
 
 		Collection<ClanWar> wars = _clan.getWars().valueCollection();
 
-		writeD(wars.size());
+		packetWriter.writeD(wars.size());
 		for (ClanWar war : wars)
 		{
-			writeS(war.getOpposingClan(_clan).getName());
-			writeD(war.getClanWarState(_clan).ordinal());
-			writeD(0);
-			writeD(war.getPointDiff(_clan));
-			writeD(war.calculateWarProgress(_clan).ordinal());
-			writeD(0); // Friends to start war left
+			packetWriter.writeS(war.getOpposingClan(_clan).getName());
+			packetWriter.writeD(war.getClanWarState(_clan).ordinal());
+			packetWriter.writeD(0);
+			packetWriter.writeD(war.getPointDiff(_clan));
+			packetWriter.writeD(war.calculateWarProgress(_clan).ordinal());
+			packetWriter.writeD(0); // Friends to start war left
 		}
 	}
 }

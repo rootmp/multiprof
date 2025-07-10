@@ -6,7 +6,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPenaltyItemInfo extends L2GameServerPacket
+public class ExPenaltyItemInfo implements IClientOutgoingPacket
 {
 	private final Player _player;
 
@@ -16,9 +16,9 @@ public class ExPenaltyItemInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_player.getItemsToRestore().size()); // items to restore
-		writeD(50); // items max count
+		packetWriter.writeD(_player.getItemsToRestore().size()); // items to restore
+		packetWriter.writeD(50); // items max count
 	}
 }

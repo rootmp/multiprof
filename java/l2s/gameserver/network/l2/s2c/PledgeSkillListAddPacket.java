@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class PledgeSkillListAddPacket extends L2GameServerPacket
+public class PledgeSkillListAddPacket implements IClientOutgoingPacket
 {
 	private int _skillId;
 	private int _skillLevel;
@@ -12,9 +13,9 @@ public class PledgeSkillListAddPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_skillId);
-		writeD(_skillLevel);
+		packetWriter.writeD(_skillId);
+		packetWriter.writeD(_skillLevel);
 	}
 }

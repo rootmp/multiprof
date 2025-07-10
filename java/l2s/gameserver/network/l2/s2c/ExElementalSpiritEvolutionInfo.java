@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
@@ -10,7 +11,7 @@ import l2s.gameserver.templates.item.data.ItemData;
 /**
  * @author Bonux
  **/
-public class ExElementalSpiritEvolutionInfo extends L2GameServerPacket
+public class ExElementalSpiritEvolutionInfo implements IClientOutgoingPacket
 {
 	private final int _elementId;
 	private final Elemental _elemental;
@@ -47,22 +48,22 @@ public class ExElementalSpiritEvolutionInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_elementId);
-		writeD(_currentEvolutionId);
-		writeD(_canRise);
+		packetWriter.writeC(_elementId);
+		packetWriter.writeD(_currentEvolutionId);
+		packetWriter.writeD(_canRise);
 		if (_canRise)
 		{
-			writeD(_nextEvolutionId);
-			writeF(100); // Required percents?!?
+			packetWriter.writeD(_nextEvolutionId);
+			packetWriter.writeF(100); // Required percents?!?
 
 			List<ItemData> riseLevelCost = _elemental.getEvolution().getRiseLevelCost();
-			writeD(riseLevelCost.size()); // Elementals Count
+			packetWriter.writeD(riseLevelCost.size()); // Elementals Count
 			for (ItemData item : riseLevelCost)
 			{
-				writeD(item.getId()); // Item ID
-				writeQ(item.getCount()); // Item Count
+				packetWriter.writeD(item.getId()); // Item ID
+				packetWriter.writeQ(item.getCount()); // Item Count
 			}
 		}
 	}

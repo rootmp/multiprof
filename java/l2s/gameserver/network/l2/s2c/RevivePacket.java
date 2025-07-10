@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.GameObject;
 
 /**
  * sample 0000: 0c 9b da 12 40 ....@ format d
  */
-public class RevivePacket extends L2GameServerPacket
+public class RevivePacket implements IClientOutgoingPacket
 {
 	private int _objectId;
 
@@ -15,8 +16,8 @@ public class RevivePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
+		packetWriter.writeD(_objectId);
 	}
 }

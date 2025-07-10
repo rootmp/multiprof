@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExRegistPartySubstitute extends L2GameServerPacket
+public class ExRegistPartySubstitute implements IClientOutgoingPacket
 {
 	private final int _object;
 
@@ -10,9 +11,9 @@ public class ExRegistPartySubstitute extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_object);
-		writeD(0x01);
+		packetWriter.writeD(_object);
+		packetWriter.writeD(0x01);
 	}
 }

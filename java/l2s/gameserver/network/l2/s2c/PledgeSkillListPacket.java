@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,7 +13,7 @@ import l2s.gameserver.skills.SkillEntry;
 /**
  * Reworked: VISTALL
  */
-public class PledgeSkillListPacket extends L2GameServerPacket
+public class PledgeSkillListPacket implements IClientOutgoingPacket
 {
 	private List<SkillInfo> _allSkills = Collections.emptyList();
 	private List<UnitSkillInfo> _unitSkills = new ArrayList<UnitSkillInfo>();
@@ -33,22 +34,22 @@ public class PledgeSkillListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_allSkills.size());
-		writeD(_unitSkills.size());
+		packetWriter.writeD(_allSkills.size());
+		packetWriter.writeD(_unitSkills.size());
 
 		for (SkillInfo info : _allSkills)
 		{
-			writeD(info._id);
-			writeD(info._level);
+			packetWriter.writeD(info._id);
+			packetWriter.writeD(info._level);
 		}
 
 		for (UnitSkillInfo info : _unitSkills)
 		{
-			writeD(info._type);
-			writeD(info._id);
-			writeD(info._level);
+			packetWriter.writeD(info._type);
+			packetWriter.writeD(info._id);
+			packetWriter.writeD(info._level);
 		}
 	}
 

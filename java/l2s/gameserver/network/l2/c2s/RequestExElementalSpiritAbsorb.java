@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,31 +18,31 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author Bonux
  **/
-public class RequestExElementalSpiritAbsorb extends L2GameClientPacket
+public class RequestExElementalSpiritAbsorb implements IClientIncomingPacket
 {
 	private int _elementId;
 	private List<ItemData> _consumeItems;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_elementId = readC();
+		_elementId = packet.readC();
 
-		int itemsCount = readD();
+		int itemsCount = packet.readD();
 		_consumeItems = new ArrayList<ItemData>(itemsCount);
 		for (int i = 0; i < itemsCount; i++)
 		{
-			int itemId = readD();
-			long itemCount = readD();
+			int itemId = packet.readD();
+			long itemCount = packet.readD();
 			_consumeItems.add(new ItemData(itemId, itemCount));
 		}
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

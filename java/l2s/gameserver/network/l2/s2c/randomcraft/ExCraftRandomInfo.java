@@ -10,7 +10,7 @@ import l2s.gameserver.templates.RandomCraftInfo;
 /**
  * @author nexvill
  */
-public class ExCraftRandomInfo extends L2GameServerPacket
+public class ExCraftRandomInfo implements IClientOutgoingPacket
 {
 	private Player _player;
 	private Map<Integer, RandomCraftInfo> _randomCraftInfo = new HashMap<>();
@@ -21,7 +21,7 @@ public class ExCraftRandomInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_player.getRandomCraftList().size() == 0)
 		{
@@ -34,38 +34,38 @@ public class ExCraftRandomInfo extends L2GameServerPacket
 
 			if (_player.getVarBoolean("didCraft", true))
 			{
-				writeD(5);
+				packetWriter.writeD(5);
 				for (int i = 0; i < 5; i++)
 				{
-					writeC(0);
-					writeD(0);
-					writeD(0);
-					writeQ(0);
+					packetWriter.writeC(0);
+					packetWriter.writeD(0);
+					packetWriter.writeD(0);
+					packetWriter.writeQ(0);
 				}
 
 				return;
 			}
 
-			writeD(5);
+			packetWriter.writeD(5);
 			for (int i : _randomCraftInfo.keySet())
 			{
 				RandomCraftInfo info = _randomCraftInfo.get(i);
 
-				writeC(info.isLocked()); // locked slot or no
-				writeD(info.getRefreshToUnlockCount()); // refresh count to unlock slot (max 20)
-				writeD(info.getId()); // item id
-				writeQ(info.getCount()); // item count
+				packetWriter.writeC(info.isLocked()); // locked slot or no
+				packetWriter.writeD(info.getRefreshToUnlockCount()); // refresh count to unlock slot (max 20)
+				packetWriter.writeD(info.getId()); // item id
+				packetWriter.writeQ(info.getCount()); // item count
 			}
 		}
 		else
 		{
-			writeD(5);
+			packetWriter.writeD(5);
 			for (int i = 0; i < 5; i++)
 			{
-				writeC(0);
-				writeD(0);
-				writeD(0);
-				writeQ(0);
+				packetWriter.writeC(0);
+				packetWriter.writeD(0);
+				packetWriter.writeD(0);
+				packetWriter.writeQ(0);
 			}
 		}
 	}

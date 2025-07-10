@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExSetPledgeEmblemAck extends L2GameServerPacket
+public class ExSetPledgeEmblemAck implements IClientOutgoingPacket
 {
 	private final int _part;
 
@@ -13,8 +14,8 @@ public class ExSetPledgeEmblemAck extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_part);
+		packetWriter.writeD(_part);
 	}
 }

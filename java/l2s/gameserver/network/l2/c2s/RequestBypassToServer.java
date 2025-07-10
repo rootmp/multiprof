@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.lang.reflect.Method;
 import java.util.StringTokenizer;
@@ -37,23 +40,23 @@ import l2s.gameserver.utils.MulticlassUtils;
 import l2s.gameserver.utils.NpcUtils;
 import l2s.gameserver.utils.WarehouseFunctions;
 
-public class RequestBypassToServer extends L2GameClientPacket
+public class RequestBypassToServer implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(RequestBypassToServer.class);
 
 	private String _bypass = null;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_bypass = readS();
+		_bypass = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || _bypass.isEmpty())
 			return;
 

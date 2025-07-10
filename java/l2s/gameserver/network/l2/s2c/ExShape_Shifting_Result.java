@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExShape_Shifting_Result extends L2GameServerPacket
+public class ExShape_Shifting_Result implements IClientOutgoingPacket
 {
 	public static L2GameServerPacket FAIL = new ExShape_Shifting_Result(0x00, 0, 0, -1);
 	public static int SUCCESS_RESULT = 0x01;;
@@ -22,11 +23,11 @@ public class ExShape_Shifting_Result extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_result); // Result
-		writeD(_targetItemId);
-		writeD(_extractItemId);
-		writeD(_period);
+		packetWriter.writeD(_result); // Result
+		packetWriter.writeD(_targetItemId);
+		packetWriter.writeD(_extractItemId);
+		packetWriter.writeD(_period);
 	}
 }

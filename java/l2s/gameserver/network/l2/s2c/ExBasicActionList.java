@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class ExBasicActionList extends L2GameServerPacket
+public class ExBasicActionList implements IClientOutgoingPacket
 {
 	private static final int[] BASIC_ACTIONS =
 	{
@@ -282,13 +283,13 @@ public class ExBasicActionList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// Sync with Meow
-		writeD(_actions.length);
+		packetWriter.writeD(_actions.length);
 		for (int _actionId : _actions)
 		{
-			writeD(_actionId);
+			packetWriter.writeD(_actionId);
 		}
 	}
 }

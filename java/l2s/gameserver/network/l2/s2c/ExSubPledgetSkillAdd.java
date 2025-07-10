@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * Author: VISTALL
  */
-public class ExSubPledgetSkillAdd extends L2GameServerPacket
+public class ExSubPledgetSkillAdd implements IClientOutgoingPacket
 {
 	private int _type, _id, _level;
 
@@ -15,10 +16,10 @@ public class ExSubPledgetSkillAdd extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type);
-		writeD(_id);
-		writeD(_level);
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_id);
+		packetWriter.writeD(_level);
 	}
 }

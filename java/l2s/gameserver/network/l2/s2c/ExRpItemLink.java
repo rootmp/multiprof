@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.items.ItemInfo;
 
 /**
  * ddQhdhhhhhdhhhhhhhh - Gracia Final
  */
-public class ExRpItemLink extends L2GameServerPacket
+public class ExRpItemLink implements IClientOutgoingPacket
 {
 	private ItemInfo _item;
 
@@ -15,7 +16,7 @@ public class ExRpItemLink extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		writeItemInfo(_item);
 	}

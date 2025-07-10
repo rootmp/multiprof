@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
@@ -11,7 +12,7 @@ import l2s.gameserver.skills.enums.AbnormalEffect;
  * Eden 286 "cddddddddhhhhhhhhffffdddcdSdScdddddddQhQQQdddddddddddddddccccddcc"
  * "ddd"
  */
-public class MyPetSummonInfoPacket extends L2GameServerPacket
+public class MyPetSummonInfoPacket implements IClientOutgoingPacket
 {
 	private static final int IS_ATTACKABLE = 1 << 0; // 1
 	private static final int IS_UNK_FLAG_2 = 1 << 1; // 2
@@ -136,83 +137,83 @@ public class MyPetSummonInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
-		writeD(obj_id);
-		writeD(npc_id + 1000000);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_loc.h);
-		writeD(MAtkSpd);
-		writeD(PAtkSpd);
-		writeH(_runSpd);
-		writeH(_walkSpd);
-		writeH(_runSpd/* _swimRunSpd */);
-		writeH(_walkSpd/* _swimWalkSpd */);
-		writeH(_runSpd/* _flRunSpd */);
-		writeH(_walkSpd/* _flWalkSpd */);
-		writeH(_runSpd/* _flyRunSpd */);
-		writeH(_walkSpd/* _flyWalkSpd */);
-		writeF(_runSpdMul);
-		writeF(_atkSpdMul);
-		writeF(col_redius);
-		writeF(col_height);
-		writeD(_rhand); // right hand weapon
-		writeD(0);
-		writeD(_lhand); // left hand weapon
-		writeC(_showSpawnAnimation); // invisible ?? 0=false 1=true 2=summoned (only works if model has a summon
+		packetWriter.writeC(_type);
+		packetWriter.writeD(obj_id);
+		packetWriter.writeD(npc_id + 1000000);
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
+		packetWriter.writeD(_loc.h);
+		packetWriter.writeD(MAtkSpd);
+		packetWriter.writeD(PAtkSpd);
+		packetWriter.writeH(_runSpd);
+		packetWriter.writeH(_walkSpd);
+		packetWriter.writeH(_runSpd/* _swimRunSpd */);
+		packetWriter.writeH(_walkSpd/* _swimWalkSpd */);
+		packetWriter.writeH(_runSpd/* _flRunSpd */);
+		packetWriter.writeH(_walkSpd/* _flWalkSpd */);
+		packetWriter.writeH(_runSpd/* _flyRunSpd */);
+		packetWriter.writeH(_walkSpd/* _flyWalkSpd */);
+		packetWriter.writeF(_runSpdMul);
+		packetWriter.writeF(_atkSpdMul);
+		packetWriter.writeF(col_redius);
+		packetWriter.writeF(col_height);
+		packetWriter.writeD(_rhand); // right hand weapon
+		packetWriter.writeD(0);
+		packetWriter.writeD(_lhand); // left hand weapon
+		packetWriter.writeC(_showSpawnAnimation); // invisible ?? 0=false 1=true 2=summoned (only works if model has a summon
 										// animation)
-		writeD(-1);
-		writeS(_name);
-		writeD(-1);
-		writeS(title);
-		writeC(pvp_flag); // 0=white, 1=purple, 2=purpleblink, if its greater then karma = purple
-		writeD(karma); // hmm karma ??
-		writeD(curFed); // how fed it is
-		writeD(maxFed); // max fed it can be
-		writeD(curHp); // current hp
-		writeD(maxHp); // max hp
-		writeD(curMp); // current mp
-		writeD(maxMp); // max mp
-		writeQ(_sp); // sp
-		writeH(level);// lvl
-		writeQ(exp);
-		writeQ(exp_this_lvl); // 0% absolute value
-		writeQ(exp_next_lvl); // 100% absoulte value
-		writeD(curLoad); // weight
-		writeD(maxLoad); // max weight it can carry
-		writeD(PAtk);// patk
-		writeD(PDef);// pdef
-		writeD(_pAccuracy); // P. Accuracy
-		writeD(_pEvasion); // P. Evasion
-		writeD(_pCrit); // P. Critical
-		writeD(MAtk);// matk
-		writeD(MDef);// mdef
-		writeD(_mAccuracy); // M. Accuracy
-		writeD(_mEvasion); // M. Evasion
-		writeD(_mCrit); // M. Critical
-		writeD(_runSpd);// speed
-		writeD(PAtkSpd);// atkspeed
-		writeD(MAtkSpd);// casting speed
-		writeC(0);// unk
-		writeC(_team.ordinal()); // team aura (1 = blue, 2 = red)
-		writeC(ss);
-		writeC(sps);
-		writeD(_type);
-		writeD(_transformId); // transform id
-		writeC(1); // sum points
-		writeC(1); // max sum points
+		packetWriter.writeD(-1);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(-1);
+		packetWriter.writeS(title);
+		packetWriter.writeC(pvp_flag); // 0=white, 1=purple, 2=purpleblink, if its greater then karma = purple
+		packetWriter.writeD(karma); // hmm karma ??
+		packetWriter.writeD(curFed); // how fed it is
+		packetWriter.writeD(maxFed); // max fed it can be
+		packetWriter.writeD(curHp); // current hp
+		packetWriter.writeD(maxHp); // max hp
+		packetWriter.writeD(curMp); // current mp
+		packetWriter.writeD(maxMp); // max mp
+		packetWriter.writeQ(_sp); // sp
+		packetWriter.writeH(level);// lvl
+		packetWriter.writeQ(exp);
+		packetWriter.writeQ(exp_this_lvl); // 0% absolute value
+		packetWriter.writeQ(exp_next_lvl); // 100% absoulte value
+		packetWriter.writeD(curLoad); // weight
+		packetWriter.writeD(maxLoad); // max weight it can carry
+		packetWriter.writeD(PAtk);// patk
+		packetWriter.writeD(PDef);// pdef
+		packetWriter.writeD(_pAccuracy); // P. Accuracy
+		packetWriter.writeD(_pEvasion); // P. Evasion
+		packetWriter.writeD(_pCrit); // P. Critical
+		packetWriter.writeD(MAtk);// matk
+		packetWriter.writeD(MDef);// mdef
+		packetWriter.writeD(_mAccuracy); // M. Accuracy
+		packetWriter.writeD(_mEvasion); // M. Evasion
+		packetWriter.writeD(_mCrit); // M. Critical
+		packetWriter.writeD(_runSpd);// speed
+		packetWriter.writeD(PAtkSpd);// atkspeed
+		packetWriter.writeD(MAtkSpd);// casting speed
+		packetWriter.writeC(0);// unk
+		packetWriter.writeC(_team.ordinal()); // team aura (1 = blue, 2 = red)
+		packetWriter.writeC(ss);
+		packetWriter.writeC(sps);
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_transformId); // transform id
+		packetWriter.writeC(1); // sum points
+		packetWriter.writeC(1); // max sum points
 
-		writeH(_abnormalEffects.length);
+		packetWriter.writeH(_abnormalEffects.length);
 		for (AbnormalEffect abnormal : _abnormalEffects)
-			writeH(abnormal.getId());
+			packetWriter.writeH(abnormal.getId());
 
-		writeC(_flags);
-		writeD(petType);// pet type id
+		packetWriter.writeC(_flags);
+		packetWriter.writeD(petType);// pet type id
 
-		writeD(evolveLevel);
-		writeD(npc_id); // pet name from id. 0 evolve lvl without name,
+		packetWriter.writeD(evolveLevel);
+		packetWriter.writeD(npc_id); // pet name from id. 0 evolve lvl without name,
 	}
 }

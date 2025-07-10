@@ -7,21 +7,21 @@ import l2s.gameserver.network.l2.s2c.collection.ExCollectionList;
 /**
  * @author nexvill
  */
-public class RequestExCollectionList extends L2GameClientPacket
+public class RequestExCollectionList implements IClientIncomingPacket
 {
 	private int _tabId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_tabId = readC();
+		_tabId = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class SpecialCameraPacket extends L2GameServerPacket
+public class SpecialCameraPacket implements IClientOutgoingPacket
 {
 	private int _id;
 	private int _dist;
@@ -42,18 +43,18 @@ public class SpecialCameraPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// ddddddddddd
-		writeD(_id); // object id
-		writeD(_dist); // расстояние до объекта
-		writeD(_yaw); // North=90, south=270, east=0, west=180
-		writeD(_pitch); // > 0:looks up,pitch < 0:looks down (угол наклона)
-		writeD(_time); // faster that small value is
-		writeD(_duration); // время анимации
-		writeD(_turn);
-		writeD(_rise);
-		writeD(_widescreen);
-		writeD(_unknown);
+		packetWriter.writeD(_id); // object id
+		packetWriter.writeD(_dist); // расстояние до объекта
+		packetWriter.writeD(_yaw); // North=90, south=270, east=0, west=180
+		packetWriter.writeD(_pitch); // > 0:looks up,pitch < 0:looks down (угол наклона)
+		packetWriter.writeD(_time); // faster that small value is
+		packetWriter.writeD(_duration); // время анимации
+		packetWriter.writeD(_turn);
+		packetWriter.writeD(_rise);
+		packetWriter.writeD(_widescreen);
+		packetWriter.writeD(_unknown);
 	}
 }

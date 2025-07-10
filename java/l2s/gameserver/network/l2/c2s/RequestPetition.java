@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.instancemanager.PetitionManager;
@@ -6,23 +9,23 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.petition.PetitionMainGroup;
 import l2s.gameserver.model.petition.PetitionSubGroup;
 
-public final class RequestPetition extends L2GameClientPacket
+public final class RequestPetition implements IClientIncomingPacket
 {
 	private String _content;
 	private int _type;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_content = readS();
-		_type = readD();
+		_content = packet.readS();
+		_type = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

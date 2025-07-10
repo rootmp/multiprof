@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
@@ -8,7 +9,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.tables.FakePlayersTable;
 import l2s.gameserver.utils.BypassStorage.BypassType;
 
-public class ShowBoardPacket extends L2GameServerPacket
+public class ShowBoardPacket implements IClientOutgoingPacket
 {
 	public static L2GameServerPacket CLOSE = new ShowBoardPacket();
 
@@ -106,15 +107,15 @@ public class ShowBoardPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_show); // c4 1 to show community 00 to hide
+		packetWriter.writeC(_show); // c4 1 to show community 00 to hide
 		if (_show)
 		{
 			for (String bbsBypass : DIRECT_BYPASS)
-				writeS(bbsBypass);
-			writeS(_fav);
-			writeS(_html);
+				packetWriter.writeS(bbsBypass);
+			packetWriter.writeS(_fav);
+			packetWriter.writeS(_html);
 		}
 	}
 }

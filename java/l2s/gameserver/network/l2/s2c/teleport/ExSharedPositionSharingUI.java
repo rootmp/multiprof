@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExSharedPositionSharingUI extends L2GameServerPacket
+public class ExSharedPositionSharingUI implements IClientOutgoingPacket
 {
 	private Player _player;
 
@@ -17,11 +17,11 @@ public class ExSharedPositionSharingUI extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if ((_player.getPreviousPvpRank() > 0) && (_player.getPreviousPvpRank() < 4))
-			writeQ(0);
+			packetWriter.writeQ(0);
 		else
-			writeQ(Config.SHARE_POSITION_COST);
+			packetWriter.writeQ(Config.SHARE_POSITION_COST);
 	}
 }

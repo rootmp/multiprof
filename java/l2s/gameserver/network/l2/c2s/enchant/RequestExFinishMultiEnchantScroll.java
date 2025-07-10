@@ -6,19 +6,19 @@ import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
 /**
  * @author nexvill
  */
-public class RequestExFinishMultiEnchantScroll extends L2GameClientPacket
+public class RequestExFinishMultiEnchantScroll implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		readC();
+		packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author Eden
  */
-public class ExPledgeV3Info extends L2GameServerPacket
+public class ExPledgeV3Info implements IClientOutgoingPacket
 {
 	private final int points, rank;
 	private final String announce;
@@ -20,11 +20,11 @@ public class ExPledgeV3Info extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(points);
-		writeD(rank);
+		packetWriter.writeD(points);
+		packetWriter.writeD(rank);
 		writeString(announce);
-		writeC(isShowOnEnter);
+		packetWriter.writeC(isShowOnEnter);
 	}
 }

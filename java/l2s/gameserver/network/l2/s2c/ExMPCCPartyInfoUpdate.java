@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.Player;
 /**
  * ch Sddd
  */
-public class ExMPCCPartyInfoUpdate extends L2GameServerPacket
+public class ExMPCCPartyInfoUpdate implements IClientOutgoingPacket
 {
 	private Party _party;
 	Player _leader;
@@ -25,11 +26,11 @@ public class ExMPCCPartyInfoUpdate extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_leader.getName());
-		writeD(_leader.getObjectId());
-		writeD(_count);
-		writeD(_mode); // mode 0 = Remove Party, 1 = AddParty, maybe more...
+		packetWriter.writeS(_leader.getName());
+		packetWriter.writeD(_leader.getObjectId());
+		packetWriter.writeD(_count);
+		packetWriter.writeD(_mode); // mode 0 = Remove Party, 1 = AddParty, maybe more...
 	}
 }

@@ -2,12 +2,11 @@ package l2s.commons.net.nio.impl;
 
 import java.nio.ByteBuffer;
 
-@SuppressWarnings("rawtypes")
 public abstract class MMOClient<T extends MMOConnection<?>>
 {
 	private T _connection;
 	private boolean isAuthed;
-
+	
 	public MMOClient(T con)
 	{
 		_connection = con;
@@ -32,18 +31,18 @@ public abstract class MMOClient<T extends MMOConnection<?>>
 	{
 		this.isAuthed = isAuthed;
 	}
-
+	
 	public void closeNow(boolean error)
 	{
 		final T conn = _connection;
-		if (conn != null && !conn.isClosed())
+		if(conn != null && !conn.isClosed())
 			conn.closeNow();
 	}
 
 	public void closeLater()
 	{
 		final T conn = _connection;
-		if (conn != null && !conn.isClosed())
+		if(conn != null && !conn.isClosed())
 			conn.closeLater();
 	}
 
@@ -58,10 +57,8 @@ public abstract class MMOClient<T extends MMOConnection<?>>
 	public abstract boolean encrypt(ByteBuffer buf, int size);
 
 	protected void onDisconnection()
-	{
-	}
+	{}
 
 	protected void onForcedDisconnection()
-	{
-	}
+	{}
 }

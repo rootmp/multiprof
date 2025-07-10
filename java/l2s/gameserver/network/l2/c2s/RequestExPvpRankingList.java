@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.ExPvpRankingList;
@@ -6,24 +9,24 @@ import l2s.gameserver.network.l2.s2c.ExPvpRankingList;
 /**
  * @author nexvill
  */
-public class RequestExPvpRankingList extends L2GameClientPacket
+public class RequestExPvpRankingList implements IClientIncomingPacket
 {
 	int _season, _tabId, _type, _race;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_season = readC();
-		_tabId = readC();
-		_type = readC();
-		_race = readD();
+		_season = packet.readC();
+		_tabId = packet.readC();
+		_type = packet.readC();
+		_race = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 		activeChar.sendPacket(new ExPvpRankingList(activeChar, _season, _tabId, _type, _race));

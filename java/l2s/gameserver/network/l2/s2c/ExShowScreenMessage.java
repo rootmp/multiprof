@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.network.l2.components.NpcString;
 
@@ -76,19 +77,19 @@ public class ExShowScreenMessage extends NpcStringContainer
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type); // 0 - system messages, 1 - your defined text
-		writeD(_sysMessageId); // system message id (_type must be 0 otherwise no effect)
-		writeD(_text_align.ordinal() + 1); // размещение текста
-		writeD(0x00); // ?
-		writeD(_big_font ? 0 : 1); // размер текста
-		writeD(0x00); // ?
-		writeD(_unk); // ?
-		writeD(_effect ? 1 : 0); // upper effect (0 - disabled, 1 enabled) - _position must be 2 (center)
+		packetWriter.writeD(_type); // 0 - system messages, 1 - your defined text
+		packetWriter.writeD(_sysMessageId); // system message id (_type must be 0 otherwise no effect)
+		packetWriter.writeD(_text_align.ordinal() + 1); // размещение текста
+		packetWriter.writeD(0x00); // ?
+		packetWriter.writeD(_big_font ? 0 : 1); // размер текста
+		packetWriter.writeD(0x00); // ?
+		packetWriter.writeD(_unk); // ?
+		packetWriter.writeD(_effect ? 1 : 0); // upper effect (0 - disabled, 1 enabled) - _position must be 2 (center)
 									// otherwise no effect
-		writeD(_time); // время отображения сообщения в милисекундах
-		writeD(0x01); // Угасание
+		packetWriter.writeD(_time); // время отображения сообщения в милисекундах
+		packetWriter.writeD(0x01); // Угасание
 		writeElements();
 	}
 }

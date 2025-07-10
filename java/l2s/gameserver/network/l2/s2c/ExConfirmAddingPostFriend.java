@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author VISTALL
  * @date 23:13/21.03.2011
  */
-public class ExConfirmAddingPostFriend extends L2GameServerPacket
+public class ExConfirmAddingPostFriend implements IClientOutgoingPacket
 {
 	public static int NAME_IS_NOT_EXISTS = 0;
 	public static int SUCCESS = 1;
@@ -27,7 +28,7 @@ public class ExConfirmAddingPostFriend extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeS(_name);
-		writeD(_result);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(_result);
 	}
 }

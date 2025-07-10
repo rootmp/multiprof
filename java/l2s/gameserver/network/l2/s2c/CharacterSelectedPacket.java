@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.GameTimeController;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.ClassId;
 
-public class CharacterSelectedPacket extends L2GameServerPacket
+public class CharacterSelectedPacket implements IClientOutgoingPacket
 {
 	// SdSddddddddddffddddddddddddddddddddddddddddddddddddddddd d
 	private int _sessionId, char_id, clan_id, sex, race, _base_class_id, class_id;
@@ -38,40 +39,40 @@ public class CharacterSelectedPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_name);
-		writeD(char_id);
-		writeS(_title);
-		writeD(_sessionId);
-		writeD(clan_id);
-		writeD(0x00); // Builder Level
-		writeD(sex);
-		writeD(race);
-		writeD(_base_class_id); // base class_id
-		writeD(0x01); // active ??
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(char_id);
+		packetWriter.writeS(_title);
+		packetWriter.writeD(_sessionId);
+		packetWriter.writeD(clan_id);
+		packetWriter.writeD(0x00); // Builder Level
+		packetWriter.writeD(sex);
+		packetWriter.writeD(race);
+		packetWriter.writeD(_base_class_id); // base class_id
+		packetWriter.writeD(0x01); // active ??
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
 
-		writeF(curHp);
-		writeF(curMp);
-		writeQ(_sp);
-		writeQ(_exp);
-		writeD(level);
-		writeD(karma); // ?
-		writeD(_pk);
+		packetWriter.writeF(curHp);
+		packetWriter.writeF(curMp);
+		packetWriter.writeQ(_sp);
+		packetWriter.writeQ(_exp);
+		packetWriter.writeD(level);
+		packetWriter.writeD(karma); // ?
+		packetWriter.writeD(_pk);
 		// extra info
-		writeD(GameTimeController.getInstance().getGameTime()); // in-game time
-		writeD(0x00); //
-		writeD(class_id); // classId
+		packetWriter.writeD(GameTimeController.getInstance().getGameTime()); // in-game time
+		packetWriter.writeD(0x00); //
+		packetWriter.writeD(class_id); // classId
 
-		writeD(0);
-		writeD(0);
-		writeD(0);
-		writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
 
 		writeB(new byte[64]);
-		writeD(0);
+		packetWriter.writeD(0);
 	}
 }

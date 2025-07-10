@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,7 +12,7 @@ import l2s.gameserver.model.quest.QuestState;
  * @author VISTALL
  * @date 14:50/26.02.2011
  */
-public class ExQuestNpcLogList extends L2GameServerPacket
+public class ExQuestNpcLogList implements IClientOutgoingPacket
 {
 	private int _questId;
 	private List<int[]> _logList = Collections.emptyList();
@@ -91,16 +92,16 @@ public class ExQuestNpcLogList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_questId);
-		writeC(_logList.size());
+		packetWriter.writeD(_questId);
+		packetWriter.writeC(_logList.size());
 		for (int i = 0; i < _logList.size(); i++)
 		{
 			int[] values = _logList.get(i);
-			writeD(values[0]);
-			writeC(values[1]);
-			writeD(values[2]);
+			packetWriter.writeD(values[0]);
+			packetWriter.writeC(values[1]);
+			packetWriter.writeD(values[2]);
 		}
 	}
 }

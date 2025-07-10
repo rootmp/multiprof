@@ -3,48 +3,51 @@ package l2s.gameserver.network.l2.c2s;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.SendStatus;
 import l2s.gameserver.network.l2.s2c.VersionCheckPacket;
 
 /**
- * packet type id 0x0E format: cdbd
+ * packet type id 0x0E
+ * format:	cdbd
  */
-public class ProtocolVersion extends L2GameClientPacket
+public class ProtocolVersion implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(ProtocolVersion.class);
 
 	private int _version;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_version = readD();
+		_version = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		if (_version == -2)
+		if(_version == -2)
 		{
-			_client.closeNow(false);
+			client.closeNow();
 			return;
 		}
-		else if (_version == -3)
+		else if(_version == -3)
 		{
-			_log.info("Status request from IP : " + getClient().getIpAddr());
-			getClient().close(new SendStatus());
+			_log.info("Status request from IP : " + client.getIpAddr());
+			client.close(new SendStatus());
 			return;
 		}
-		else if (!Config.AVAILABLE_PROTOCOL_REVISIONS.contains(_version))
+		else if(!Config.AVAILABLE_PROTOCOL_REVISIONS.contains(_version))
 		{
-			_log.warn("Unknown protocol revision : " + _version + ", client : " + _client);
-			getClient().close(new VersionCheckPacket(null));
+			_log.warn("Unknown protocol revision : " + _version + ", client : " + client);
+			client.close(new VersionCheckPacket(null));
 			return;
 		}
 
-		getClient().setRevision(_version);
-		sendPacket(new VersionCheckPacket(_client.enableCrypt()));
+		client.setRevision(_version);
+		client.sendPacket(new VersionCheckPacket(client.enableCrypt()));
 	}
 }

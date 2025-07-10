@@ -11,7 +11,7 @@ import l2s.commons.net.utils.Net;
 
 /**
  * @author Bonux
- **/
+**/
 public class HostInfo
 {
 	private static final Logger _log = LoggerFactory.getLogger(HostInfo.class);
@@ -64,7 +64,7 @@ public class HostInfo
 		{
 			_subnets.put(Net.valueOf(subnet), address);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -76,7 +76,7 @@ public class HostInfo
 		{
 			_subnets.put(Net.valueOf(subnetAddress, subnetMask), address);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -89,9 +89,9 @@ public class HostInfo
 
 	public String checkAddress(String address)
 	{
-		for (Entry<Net, String> m : getSubnets().entrySet())
+		for(Entry<Net, String> m : getSubnets().entrySet())
 		{
-			if (m.getKey().matches(address))
+			if(m.getKey().matches(address))
 				return m.getValue();
 		}
 		return getAddress();

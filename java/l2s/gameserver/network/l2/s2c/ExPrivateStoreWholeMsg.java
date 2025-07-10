@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import org.apache.commons.lang3.StringUtils;
 
 import l2s.gameserver.model.Player;
 
-public class ExPrivateStoreWholeMsg extends L2GameServerPacket
+public class ExPrivateStoreWholeMsg implements IClientOutgoingPacket
 {
 	private final int _objId;
 	private final String _name;
@@ -21,9 +22,9 @@ public class ExPrivateStoreWholeMsg extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objId);
-		writeS(_name);
+		packetWriter.writeD(_objId);
+		packetWriter.writeS(_name);
 	}
 }

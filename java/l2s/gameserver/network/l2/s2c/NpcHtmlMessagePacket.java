@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * the HTML parser in the client knowns these standard and non-standard tags and
@@ -11,7 +12,7 @@ package l2s.gameserver.network.l2.s2c;
  * IMGSRC B FG SIZE FACE COLOR DEFFON DEFFIXEDFONT WIDTH VALUE TOOLTIP NAME MIN
  * MAX HEIGHT DISABLED ALIGN MSG LINK HREF ACTION ClassId fstring
  */
-public class NpcHtmlMessagePacket extends L2GameServerPacket
+public class NpcHtmlMessagePacket implements IClientOutgoingPacket
 {
 	private final int _npcObjId;
 	private final int _itemId;
@@ -27,12 +28,12 @@ public class NpcHtmlMessagePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_npcObjId);
-		writeS(_html);
-		writeD(_itemId);
-		writeC(0x00); // new 245
-		writeD(!_playVoice);
+		packetWriter.writeD(_npcObjId);
+		packetWriter.writeS(_html);
+		packetWriter.writeD(_itemId);
+		packetWriter.writeC(0x00); // new 245
+		packetWriter.writeD(!_playVoice);
 	}
 }

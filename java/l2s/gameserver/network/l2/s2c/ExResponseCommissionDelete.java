@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExResponseCommissionDelete extends L2GameServerPacket
+public class ExResponseCommissionDelete implements IClientOutgoingPacket
 {
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0x00);
-		writeD(0x00);
-		writeQ(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeQ(0x00);
 	}
 }

@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExMagicLampGameResult extends L2GameServerPacket
+public class ExMagicLampGameResult implements IClientOutgoingPacket
 {
 	private int _gamesCount, _gameType;
 	private Player _player;
@@ -20,7 +20,7 @@ public class ExMagicLampGameResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_gameType == 0)
 		{
@@ -58,7 +58,7 @@ public class ExMagicLampGameResult extends L2GameServerPacket
 				slot4wins++;
 		}
 
-		writeD(_gamesCount); // games count
+		packetWriter.writeD(_gamesCount); // games count
 
 		long exp = 0;
 		long sp = 0;
@@ -68,40 +68,40 @@ public class ExMagicLampGameResult extends L2GameServerPacket
 
 		if (slot1wins > 0)
 		{
-			writeC(1); // slot id
-			writeD(slot1wins); // count wins
-			writeQ(100_000_000 * x); // exp reward per 1 win
-			writeQ(2_700_000 * x); // sp reward per 1 win
+			packetWriter.writeC(1); // slot id
+			packetWriter.writeD(slot1wins); // count wins
+			packetWriter.writeQ(100_000_000 * x); // exp reward per 1 win
+			packetWriter.writeQ(2_700_000 * x); // sp reward per 1 win
 
 			exp += (100_000_000 * x * slot1wins);
 			sp += (2_700_000 * x * slot1wins);
 		}
 		if (slot2wins > 0)
 		{
-			writeC(2);
-			writeD(slot2wins);
-			writeQ(30_000_000 * x);
-			writeQ(810_000 * x);
+			packetWriter.writeC(2);
+			packetWriter.writeD(slot2wins);
+			packetWriter.writeQ(30_000_000 * x);
+			packetWriter.writeQ(810_000 * x);
 
 			exp += (30_000_000 * x * slot2wins);
 			sp += (810_000 * x * slot2wins);
 		}
 		if (slot3wins > 0)
 		{
-			writeC(3);
-			writeD(slot3wins);
-			writeQ(10_000_000 * x);
-			writeQ(270_000 * x);
+			packetWriter.writeC(3);
+			packetWriter.writeD(slot3wins);
+			packetWriter.writeQ(10_000_000 * x);
+			packetWriter.writeQ(270_000 * x);
 
 			exp += (10_000_000 * x * slot3wins);
 			sp += (270_000 * x * slot3wins);
 		}
 		if (slot4wins > 0)
 		{
-			writeC(4);
-			writeD(slot4wins);
-			writeQ(5_000_000 * x);
-			writeQ(135_000 * x);
+			packetWriter.writeC(4);
+			packetWriter.writeD(slot4wins);
+			packetWriter.writeQ(5_000_000 * x);
+			packetWriter.writeQ(135_000 * x);
 
 			exp += (5_000_000 * x * slot4wins);
 			sp += (135_000 * x * slot4wins);

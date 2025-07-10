@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.matching.MatchingRoom;
 /**
  * @author VISTALL
  */
-public class ExManageMpccRoomMember extends L2GameServerPacket
+public class ExManageMpccRoomMember implements IClientOutgoingPacket
 {
 	public static int ADD_MEMBER = 0;
 	public static int UPDATE_MEMBER = 1;
@@ -23,15 +24,15 @@ public class ExManageMpccRoomMember extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type);
-		writeD(_memberInfo.objectId);
-		writeS(_memberInfo.name);
-		writeD(_memberInfo.classId);
-		writeD(_memberInfo.level);
-		writeD(_memberInfo.location);
-		writeD(_memberInfo.memberType);
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_memberInfo.objectId);
+		packetWriter.writeS(_memberInfo.name);
+		packetWriter.writeD(_memberInfo.classId);
+		packetWriter.writeD(_memberInfo.level);
+		packetWriter.writeD(_memberInfo.location);
+		packetWriter.writeD(_memberInfo.memberType);
 	}
 
 	static class MpccRoomMemberInfo

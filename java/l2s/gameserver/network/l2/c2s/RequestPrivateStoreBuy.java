@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -16,7 +19,7 @@ import l2s.gameserver.network.l2.s2c.ExPrivateStoreSellingResult;
 import l2s.gameserver.utils.Log;
 import l2s.gameserver.utils.TradeHelper;
 
-public class RequestPrivateStoreBuy extends L2GameClientPacket
+public class RequestPrivateStoreBuy implements IClientIncomingPacket
 {
 	private int _sellerId;
 	private int _count;
@@ -25,10 +28,10 @@ public class RequestPrivateStoreBuy extends L2GameClientPacket
 	private long[] _itemP; // price
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_sellerId = readD();
-		_count = readD();
+		_sellerId = packet.readD();
+		_count = packet.readD();
 		if (_count * 20 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
@@ -41,9 +44,9 @@ public class RequestPrivateStoreBuy extends L2GameClientPacket
 
 		for (int i = 0; i < _count; i++)
 		{
-			_items[i] = readD();
-			_itemQ[i] = readQ();
-			_itemP[i] = readQ();
+			_items[i] = packet.readD();
+			_itemQ[i] = packet.readQ();
+			_itemP[i] = packet.readQ();
 
 			if (_itemQ[i] < 1 || _itemP[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
@@ -55,9 +58,9 @@ public class RequestPrivateStoreBuy extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player buyer = getClient().getActiveChar();
+		Player buyer = client.getActiveChar();
 		if (buyer == null || _count == 0)
 			return;
 

@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.skills.enums.SkillMagicType;
 
 /**
  * @author : Bonux
  */
-public class ExChangeMPCost extends L2GameServerPacket
+public class ExChangeMPCost implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final double _value;
@@ -17,9 +18,9 @@ public class ExChangeMPCost extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type);
-		writeF(_value);
+		packetWriter.writeD(_type);
+		packetWriter.writeF(_value);
 	}
 }

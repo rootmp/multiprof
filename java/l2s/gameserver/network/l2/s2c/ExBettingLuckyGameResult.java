@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
@@ -12,7 +13,7 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author Eanseen reworked by Bonux
  **/
-public class ExBettingLuckyGameResult extends L2GameServerPacket
+public class ExBettingLuckyGameResult implements IClientOutgoingPacket
 {
 	public static final int INVALID_CAPACITY = -2;
 	public static final int INVALID_ITEM_COUNT = -1;
@@ -53,17 +54,17 @@ public class ExBettingLuckyGameResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_result);
-		writeD(_type);
-		writeD((int) _availableGamesCount);
-		writeD(_items.size()); // кол-во
+		packetWriter.writeD(_result);
+		packetWriter.writeD(_type);
+		packetWriter.writeD((int) _availableGamesCount);
+		packetWriter.writeD(_items.size()); // кол-во
 		for (LuckyGameItem item : _items)
 		{
-			writeD(item.isFantastic() ? 2 : 0);
-			writeD(item.getId());
-			writeD((int) item.getCount());
+			packetWriter.writeD(item.isFantastic() ? 2 : 0);
+			packetWriter.writeD(item.getId());
+			packetWriter.writeD((int) item.getCount());
 		}
 	}
 }

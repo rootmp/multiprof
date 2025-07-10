@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.base.Element;
 import l2s.gameserver.model.items.ItemInstance;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.items.ItemInstance;
 /**
  * @author VISTALL
  */
-public class ExBaseAttributeCancelResult extends L2GameServerPacket
+public class ExBaseAttributeCancelResult implements IClientOutgoingPacket
 {
 	private boolean _result;
 	private int _objectId;
@@ -20,10 +21,10 @@ public class ExBaseAttributeCancelResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_result);
-		writeD(_objectId);
-		writeD(_element.getId());
+		packetWriter.writeD(_result);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_element.getId());
 	}
 }

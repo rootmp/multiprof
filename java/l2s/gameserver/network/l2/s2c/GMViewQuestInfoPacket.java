@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.quest.QuestState;
@@ -7,7 +8,7 @@ import gnu.trove.iterator.TIntIntIterator;
 import gnu.trove.map.TIntIntMap;
 import gnu.trove.map.hash.TIntIntHashMap;
 
-public class GMViewQuestInfoPacket extends L2GameServerPacket
+public class GMViewQuestInfoPacket implements IClientOutgoingPacket
 {
 	private final String _characterName;
 	private final TIntIntMap _quests = new TIntIntHashMap();
@@ -23,17 +24,17 @@ public class GMViewQuestInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_characterName);
-		writeH(_quests.size());
+		packetWriter.writeS(_characterName);
+		packetWriter.writeH(_quests.size());
 		for (TIntIntIterator iterator = _quests.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 
-			writeD(iterator.key());
-			writeD(iterator.value());
+			packetWriter.writeD(iterator.key());
+			packetWriter.writeD(iterator.value());
 		}
-		writeH(0); // количество элементов типа: ddQd , как-то связано с предметами
+		packetWriter.writeH(0); // количество элементов типа: ddQd , как-то связано с предметами
 	}
 }

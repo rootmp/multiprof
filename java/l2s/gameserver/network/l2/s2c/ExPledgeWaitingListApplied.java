@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.Player;
@@ -12,7 +13,7 @@ import l2s.gameserver.tables.ClanTable;
  * @author GodWorld
  * @reworked by Bonux
  **/
-public class ExPledgeWaitingListApplied extends L2GameServerPacket
+public class ExPledgeWaitingListApplied implements IClientOutgoingPacket
 {
 	private int _clanId = 0;
 	private String _clanName = "";
@@ -50,15 +51,15 @@ public class ExPledgeWaitingListApplied extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_clanId);
-		writeS(_clanName);
-		writeS(_leaderName);
-		writeD(_clanLevel);
-		writeD(_memberCount);
-		writeD(_searchType.ordinal());
-		writeS(""); // Title (deprecated)
-		writeS(_desc);
+		packetWriter.writeD(_clanId);
+		packetWriter.writeS(_clanName);
+		packetWriter.writeS(_leaderName);
+		packetWriter.writeD(_clanLevel);
+		packetWriter.writeD(_memberCount);
+		packetWriter.writeD(_searchType.ordinal());
+		packetWriter.writeS(""); // Title (deprecated)
+		packetWriter.writeS(_desc);
 	}
 }

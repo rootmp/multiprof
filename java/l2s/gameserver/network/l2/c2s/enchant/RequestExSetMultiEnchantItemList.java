@@ -11,15 +11,15 @@ import l2s.gameserver.network.l2.s2c.enchant.ExResultSetMultiEnchantItemList;
 /**
  * @author nexvill
  */
-public class RequestExSetMultiEnchantItemList extends L2GameClientPacket
+public class RequestExSetMultiEnchantItemList implements IClientIncomingPacket
 {
 	private int _slotId;
 	private final Map<Integer, Integer> _itemObjId = new HashMap<>();
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_slotId = readD();
+		_slotId = packet.readD();
 		for (int i = 1; getAvaliableBytes() != 0; i++)
 		{
 			_itemObjId.put(i, readD());
@@ -28,9 +28,9 @@ public class RequestExSetMultiEnchantItemList extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

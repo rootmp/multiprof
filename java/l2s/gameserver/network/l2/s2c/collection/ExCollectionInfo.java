@@ -16,7 +16,7 @@ import l2s.gameserver.templates.item.data.CollectionItemData;
 /**
  * @author nexvill
  */
-public class ExCollectionInfo extends L2GameServerPacket
+public class ExCollectionInfo implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _tabId;
@@ -28,7 +28,7 @@ public class ExCollectionInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		List<CollectionTemplate> list = CollectionsHolder.getInstance().getCollectionsByTabId(_tabId);
 		CollectionList collections = _player.getCollectionList();
@@ -62,23 +62,23 @@ public class ExCollectionInfo extends L2GameServerPacket
 			}
 		}
 
-		writeD(collection.size());
+		packetWriter.writeD(collection.size());
 		for (int id : collection.keySet())
 		{
-			writeD(collection.get(id).getItems().size()); // items added count
+			packetWriter.writeD(collection.get(id).getItems().size()); // items added count
 			for (CollectionItemData itemData : collection.get(id).getItems())
 			{
-				writeC(itemData.getSlotId());
-				writeD(itemData.getId());
-				writeC(0); // ??
-				writeH(0); // ??
-				writeD((int) itemData.getCount());
+				packetWriter.writeC(itemData.getSlotId());
+				packetWriter.writeD(itemData.getId());
+				packetWriter.writeC(0); // ??
+				packetWriter.writeH(0); // ??
+				packetWriter.writeD((int) itemData.getCount());
 			}
-			writeH(id); // collection id
+			packetWriter.writeH(id); // collection id
 		}
-		writeD(0); // ??
-		writeD(0); // ??
-		writeC(_tabId);
-		writeH(collection.size());
+		packetWriter.writeD(0); // ??
+		packetWriter.writeD(0); // ??
+		packetWriter.writeC(_tabId);
+		packetWriter.writeH(collection.size());
 	}
 }

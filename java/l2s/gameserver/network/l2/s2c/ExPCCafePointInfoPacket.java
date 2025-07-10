@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.model.Player;
  * Format: ch ddcdc Args: player, points to add, type of period (default 1),
  * type of points (1-double, 2-integer), time left to the end of period
  */
-public class ExPCCafePointInfoPacket extends L2GameServerPacket
+public class ExPCCafePointInfoPacket implements IClientOutgoingPacket
 {
 	private int _mAddPoint, _mPeriodType, _pointType, _pcBangPoints, _remainTime;
 
@@ -20,13 +21,13 @@ public class ExPCCafePointInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_pcBangPoints);
-		writeD(_mAddPoint);
-		writeC(_mPeriodType);
-		writeD(_remainTime);
-		writeC(_pointType);
-		writeD(0); // TODO: online time
+		packetWriter.writeD(_pcBangPoints);
+		packetWriter.writeD(_mAddPoint);
+		packetWriter.writeC(_mPeriodType);
+		packetWriter.writeD(_remainTime);
+		packetWriter.writeC(_pointType);
+		packetWriter.writeD(0); // TODO: online time
 	}
 }

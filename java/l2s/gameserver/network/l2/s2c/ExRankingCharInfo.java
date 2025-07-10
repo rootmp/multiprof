@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class ExRankingCharInfo extends L2GameServerPacket
+public class ExRankingCharInfo implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final Map<Integer, StatsSet> _playerList;
@@ -23,7 +24,7 @@ public class ExRankingCharInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_playerList.size() > 0)
 		{
@@ -32,38 +33,38 @@ public class ExRankingCharInfo extends L2GameServerPacket
 				final StatsSet player = _playerList.get(id);
 				if (player.getInteger("charId") == _player.getObjectId())
 				{
-					writeD(id); // server rank
-					writeD(player.getInteger("raceRank")); // race rank
+					packetWriter.writeD(id); // server rank
+					packetWriter.writeD(player.getInteger("raceRank")); // race rank
 
 					for (Integer id2 : _snapshotList.keySet())
 					{
 						final StatsSet snapshot = _snapshotList.get(id2);
 						if (player.getInteger("charId") == snapshot.getInteger("charId"))
 						{
-							writeD(id2); // server rank snapshot
-							writeD(snapshot.getInteger("raceRank")); // race rank snapshot
-							writeD(0); // class rank
-							writeD(0); // class rank snapshot
+							packetWriter.writeD(id2); // server rank snapshot
+							packetWriter.writeD(snapshot.getInteger("raceRank")); // race rank snapshot
+							packetWriter.writeD(0); // class rank
+							packetWriter.writeD(0); // class rank snapshot
 							return;
 						}
 					}
 				}
 			}
-			writeD(0); // server rank
-			writeD(0); // race rank
-			writeD(0); // server rank snapshot
-			writeD(0); // race rank snapshot
-			writeD(0); // class rank
-			writeD(0); // class rank snapshot
+			packetWriter.writeD(0); // server rank
+			packetWriter.writeD(0); // race rank
+			packetWriter.writeD(0); // server rank snapshot
+			packetWriter.writeD(0); // race rank snapshot
+			packetWriter.writeD(0); // class rank
+			packetWriter.writeD(0); // class rank snapshot
 		}
 		else
 		{
-			writeD(0); // server rank
-			writeD(0); // race rank
-			writeD(0); // server rank snapshot
-			writeD(0); // race rank snapshot
-			writeD(0); // class rank
-			writeD(0); // class rank snapshot
+			packetWriter.writeD(0); // server rank
+			packetWriter.writeD(0); // race rank
+			packetWriter.writeD(0); // server rank snapshot
+			packetWriter.writeD(0); // race rank snapshot
+			packetWriter.writeD(0); // class rank
+			packetWriter.writeD(0); // class rank snapshot
 		}
 	}
 }

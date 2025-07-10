@@ -6,7 +6,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPenaltyItemDrop extends L2GameServerPacket
+public class ExPenaltyItemDrop implements IClientOutgoingPacket
 {
 	private final Location _loc;
 	private final int _itemId;
@@ -18,11 +18,11 @@ public class ExPenaltyItemDrop extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_loc.getX()); // x
-		writeD(_loc.getY()); // y
-		writeD(_loc.getZ()); // z
-		writeD(_itemId);
+		packetWriter.writeD(_loc.getX()); // x
+		packetWriter.writeD(_loc.getY()); // y
+		packetWriter.writeD(_loc.getZ()); // z
+		packetWriter.writeD(_itemId);
 	}
 }

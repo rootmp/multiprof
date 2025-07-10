@@ -1,23 +1,26 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
-public final class RequestRegistWaitingSubstitute extends L2GameClientPacket
+public final class RequestRegistWaitingSubstitute implements IClientIncomingPacket
 {
 	private boolean _enable;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_enable = readD() == 1;
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

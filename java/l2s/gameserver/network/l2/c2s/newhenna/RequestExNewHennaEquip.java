@@ -10,23 +10,23 @@ import l2s.gameserver.network.l2.s2c.newhenna.ExNewHennaEquip;
 import l2s.gameserver.templates.henna.HennaTemplate;
 import l2s.gameserver.utils.ItemFunctions;
 
-public class RequestExNewHennaEquip extends L2GameClientPacket
+public class RequestExNewHennaEquip implements IClientIncomingPacket
 {
 	private int cSlotID;
 	private int nItemSid;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		cSlotID = readC();
-		nItemSid = readD();
+		cSlotID = packet.readC();
+		nItemSid = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

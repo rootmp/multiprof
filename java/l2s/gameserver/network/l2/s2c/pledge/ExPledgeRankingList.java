@@ -11,7 +11,7 @@ import l2s.gameserver.tables.ClanTable;
 /**
  * @author nexvill
  */
-public class ExPledgeRankingList extends L2GameServerPacket
+public class ExPledgeRankingList implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _tabId;
@@ -27,10 +27,10 @@ public class ExPledgeRankingList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int count = 0;
-		writeC(_tabId); // top 150 or my clan rating
+		packetWriter.writeC(_tabId); // top 150 or my clan rating
 
 		if (_clanList.size() > 0)
 		{
@@ -39,7 +39,7 @@ public class ExPledgeRankingList extends L2GameServerPacket
 				case 0: // all
 				{
 					count = _clanList.size() > 150 ? 150 : _clanList.size();
-					writeD(count); // clans size
+					packetWriter.writeD(count); // clans size
 
 					int i = 1;
 					for (int id : _clanList.keySet())
@@ -66,14 +66,14 @@ public class ExPledgeRankingList extends L2GameServerPacket
 						int clanMembers = clan.getAllMembers().size();
 						int points = clan.getPoints();
 
-						writeD(i); // rank
-						writeD(previousRank);
+						packetWriter.writeD(i); // rank
+						packetWriter.writeD(previousRank);
 						writeString(clanName);
-						writeD(clanLevel);
+						packetWriter.writeD(clanLevel);
 						writeString(leaderName);
-						writeD(leaderLevel);
-						writeD(clanMembers);
-						writeD(points);
+						packetWriter.writeD(leaderLevel);
+						packetWriter.writeD(clanMembers);
+						packetWriter.writeD(points);
 
 						if (i >= 150)
 							break;
@@ -86,7 +86,7 @@ public class ExPledgeRankingList extends L2GameServerPacket
 				{
 					if (_player.getClan() == null)
 					{
-						writeD(0);
+						packetWriter.writeD(0);
 						break;
 					}
 
@@ -101,9 +101,9 @@ public class ExPledgeRankingList extends L2GameServerPacket
 							int last = _clanList.size() >= (rank + 10) ? rank + 10 : rank + (_clanList.size() - rank);
 
 							if (first == 1)
-								writeD(last - (first - 1));
+								packetWriter.writeD(last - (first - 1));
 							else
-								writeD(last - first);
+								packetWriter.writeD(last - first);
 
 							int i = 1;
 							for (int id2 : _clanList.keySet())
@@ -132,14 +132,14 @@ public class ExPledgeRankingList extends L2GameServerPacket
 									int clanMembers = clan.getAllMembers().size();
 									int points = clan.getPoints();
 
-									writeD(i); // rank
-									writeD(previousRank);
+									packetWriter.writeD(i); // rank
+									packetWriter.writeD(previousRank);
 									writeString(clanName);
-									writeD(clanLevel);
+									packetWriter.writeD(clanLevel);
 									writeString(leaderName);
-									writeD(leaderLevel);
-									writeD(clanMembers);
-									writeD(points);
+									packetWriter.writeD(leaderLevel);
+									packetWriter.writeD(clanMembers);
+									packetWriter.writeD(points);
 								}
 								i++;
 							}
@@ -147,14 +147,14 @@ public class ExPledgeRankingList extends L2GameServerPacket
 						rank++;
 					}
 					if (!found)
-						writeD(0);
+						packetWriter.writeD(0);
 					break;
 				}
 			}
 		}
 		else
 		{
-			writeD(count); // clans size
+			packetWriter.writeD(count); // clans size
 		}
 	}
 }

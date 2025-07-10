@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.model.Player;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.actor.instances.player.Friend;
 /**
  * @author Bonux
  */
-public class ExFriendDetailInfo extends L2GameServerPacket
+public class ExFriendDetailInfo implements IClientOutgoingPacket
 {
 	private final int _objectId;
 	private final Friend _friend;
@@ -23,23 +24,23 @@ public class ExFriendDetailInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId); // Character ID
-		writeS(_friend.getName()); // Name
-		writeD(_friend.isOnline()); // Online
-		writeD(_friend.isOnline() ? _friend.getObjectId() : 0); // Friend OID
-		writeH(_friend.getLevel()); // Level
-		writeH(_friend.getClassId()); // Class
-		writeD(_friend.getClanId()); // Pledge ID
-		writeD(_clanCrestId); // Pledge crest ID
-		writeS(_friend.getClanName()); // Pledge name
-		writeD(_friend.getAllyId()); // Alliance ID
-		writeD(_allyCrestId); // Alliance crest ID
-		writeS(_friend.getAllyName()); // Alliance name
-		writeC(_friend.getCreationMonth() + 1); // Creation month
-		writeC(_friend.getCreationDay()); // Creation day
-		writeD(_friend.getLastAccessDelay()); // Last login
-		writeS(_friend.getMemo()); // Memo
+		packetWriter.writeD(_objectId); // Character ID
+		packetWriter.writeS(_friend.getName()); // Name
+		packetWriter.writeD(_friend.isOnline()); // Online
+		packetWriter.writeD(_friend.isOnline() ? _friend.getObjectId() : 0); // Friend OID
+		packetWriter.writeH(_friend.getLevel()); // Level
+		packetWriter.writeH(_friend.getClassId()); // Class
+		packetWriter.writeD(_friend.getClanId()); // Pledge ID
+		packetWriter.writeD(_clanCrestId); // Pledge crest ID
+		packetWriter.writeS(_friend.getClanName()); // Pledge name
+		packetWriter.writeD(_friend.getAllyId()); // Alliance ID
+		packetWriter.writeD(_allyCrestId); // Alliance crest ID
+		packetWriter.writeS(_friend.getAllyName()); // Alliance name
+		packetWriter.writeC(_friend.getCreationMonth() + 1); // Creation month
+		packetWriter.writeC(_friend.getCreationDay()); // Creation day
+		packetWriter.writeD(_friend.getLastAccessDelay()); // Last login
+		packetWriter.writeS(_friend.getMemo()); // Memo
 	}
 }

@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author GodWorld
  * @reworked by Bonux
  **/
-public class ExPledgeWaitingUser extends L2GameServerPacket
+public class ExPledgeWaitingUser implements IClientOutgoingPacket
 {
 	private final int _charId;
 	private final String _desc;
@@ -15,9 +16,9 @@ public class ExPledgeWaitingUser extends L2GameServerPacket
 		_desc = desc;
 	}
 
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_charId);
-		writeS(_desc);
+		packetWriter.writeD(_charId);
+		packetWriter.writeS(_desc);
 	}
 }

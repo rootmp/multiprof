@@ -3,23 +3,23 @@ package l2s.gameserver.network.l2.c2s.itemrestore;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
 
-public class RequestExItemRestore extends L2GameClientPacket
+public class RequestExItemRestore implements IClientIncomingPacket
 {
 	private int nBrokenItemClassID;
 	private int cEnchant;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		nBrokenItemClassID = readD();
-		cEnchant = readC();
+		nBrokenItemClassID = packet.readD();
+		cEnchant = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

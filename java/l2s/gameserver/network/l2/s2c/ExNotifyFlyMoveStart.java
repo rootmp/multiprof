@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public final class ExNotifyFlyMoveStart extends L2GameServerPacket
+public final class ExNotifyFlyMoveStart implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket STATIC = new ExNotifyFlyMoveStart();
 
@@ -10,7 +11,7 @@ public final class ExNotifyFlyMoveStart extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 	}
 }

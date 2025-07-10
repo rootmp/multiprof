@@ -1,24 +1,27 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 
-public class RequestEx2ndPasswordVerify extends L2GameClientPacket
+public class RequestEx2ndPasswordVerify implements IClientIncomingPacket
 {
 	private String _password;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_password = readS();
+		_password = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if (!Config.EX_SECOND_AUTH_ENABLED)
 			return;
 
-		getClient().getSecondaryAuth().checkPassword(_password, false);
+		client.getSecondaryAuth().checkPassword(_password, false);
 	}
 }

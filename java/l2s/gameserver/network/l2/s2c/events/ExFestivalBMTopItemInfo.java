@@ -11,7 +11,7 @@ import l2s.gameserver.templates.FestivalBMTemplate;
 /**
  * @author nexvill
  */
-public class ExFestivalBMTopItemInfo extends L2GameServerPacket
+public class ExFestivalBMTopItemInfo implements IClientOutgoingPacket
 {
 	private final int _timeToEnd;
 	private boolean _active;
@@ -25,12 +25,12 @@ public class ExFestivalBMTopItemInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_active); // is active
-		writeD((int) (System.currentTimeMillis() / 1000)); // current time
-		writeD(_timeToEnd); // end time
-		writeD(_items.size()); // 0 causes items none
+		packetWriter.writeC(_active); // is active
+		packetWriter.writeD((int) (System.currentTimeMillis() / 1000)); // current time
+		packetWriter.writeD(_timeToEnd); // end time
+		packetWriter.writeD(_items.size()); // 0 causes items none
 
 		if (_items.size() > 0)
 		{
@@ -38,10 +38,10 @@ public class ExFestivalBMTopItemInfo extends L2GameServerPacket
 			{
 				final FestivalBMTemplate item = _items.get(id);
 				int existingAmount = ServerVariables.getInt("FESTIVAL_BM_" + item.getItemId(), item.getItemCount());
-				writeC(item.getLocationId()); // grade
-				writeD(item.getItemId());
-				writeD(existingAmount);
-				writeD(item.getItemCount());
+				packetWriter.writeC(item.getLocationId()); // grade
+				packetWriter.writeD(item.getItemId());
+				packetWriter.writeD(existingAmount);
+				packetWriter.writeD(item.getItemCount());
 			}
 		}
 	}

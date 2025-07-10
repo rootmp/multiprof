@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExResultSetMultiEnchantItemList extends L2GameServerPacket
+public class ExResultSetMultiEnchantItemList implements IClientOutgoingPacket
 {
 	private final int _resultType;
 
@@ -15,8 +15,8 @@ public class ExResultSetMultiEnchantItemList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_resultType);
+		packetWriter.writeD(_resultType);
 	}
 }

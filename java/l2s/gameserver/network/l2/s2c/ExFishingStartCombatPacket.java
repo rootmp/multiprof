@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
 /**
  * Format (ch)dddcc
  */
-public class ExFishingStartCombatPacket extends L2GameServerPacket
+public class ExFishingStartCombatPacket implements IClientOutgoingPacket
 {
 	int _time, _hp;
 	int _lureType, _deceptiveMode, _mode;
@@ -22,13 +23,13 @@ public class ExFishingStartCombatPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(char_obj_id);
-		writeD(_time);
-		writeD(_hp);
-		writeC(_mode); // mode: 0 = resting, 1 = fighting
-		writeC(_lureType); // 0 = newbie lure, 1 = normal lure, 2 = night lure
-		writeC(_deceptiveMode); // Fish Deceptive Mode: 0 = no, 1 = yes
+		packetWriter.writeD(char_obj_id);
+		packetWriter.writeD(_time);
+		packetWriter.writeD(_hp);
+		packetWriter.writeC(_mode); // mode: 0 = resting, 1 = fighting
+		packetWriter.writeC(_lureType); // 0 = newbie lure, 1 = normal lure, 2 = night lure
+		packetWriter.writeC(_deceptiveMode); // Fish Deceptive Mode: 0 = no, 1 = yes
 	}
 }

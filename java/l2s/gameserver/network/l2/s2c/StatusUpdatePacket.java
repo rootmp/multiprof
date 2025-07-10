@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import l2s.gameserver.model.Creature;
 
-public class StatusUpdatePacket extends L2GameServerPacket
+public class StatusUpdatePacket implements IClientOutgoingPacket
 {
 	public static enum UpdateType
 	{
@@ -100,17 +101,17 @@ public class StatusUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_receiverId);
-		writeC(_updateType.ordinal());
-		writeC(_attributes.size());
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_receiverId);
+		packetWriter.writeC(_updateType.ordinal());
+		packetWriter.writeC(_attributes.size());
 
 		for (Attribute temp : _attributes)
 		{
-			writeC(temp.id);
-			writeD(temp.value);
+			packetWriter.writeC(temp.id);
+			packetWriter.writeD(temp.value);
 		}
 	}
 

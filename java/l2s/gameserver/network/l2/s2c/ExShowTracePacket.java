@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +7,7 @@ import java.util.List;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.GameObject;
 
-public class ExShowTracePacket extends L2GameServerPacket
+public class ExShowTracePacket implements IClientOutgoingPacket
 {
 	private final List<Trace> _traces = new ArrayList<Trace>();
 	private final int _time;
@@ -72,16 +73,16 @@ public class ExShowTracePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(0); // type broken in H5
-		writeD(0); // time broken in H5
-		writeH(_traces.size());
+		packetWriter.writeH(0); // type broken in H5
+		packetWriter.writeD(0); // time broken in H5
+		packetWriter.writeH(_traces.size());
 		for (Trace t : _traces)
 		{
-			writeD(t._x);
-			writeD(t._y);
-			writeD(t._z);
+			packetWriter.writeD(t._x);
+			packetWriter.writeD(t._y);
+			packetWriter.writeD(t._z);
 		}
 	}
 }

@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPenaltyItemRestore extends L2GameServerPacket
+public class ExPenaltyItemRestore implements IClientOutgoingPacket
 {
 	public ExPenaltyItemRestore()
 	{
@@ -13,8 +13,8 @@ public class ExPenaltyItemRestore extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(1);
+		packetWriter.writeC(1);
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Calendar;
 
@@ -29,7 +30,7 @@ import l2s.gameserver.model.pledge.Clan;
  *
  * @reworked VISTALL
  */
-public class CastleSiegeInfoPacket extends L2GameServerPacket
+public class CastleSiegeInfoPacket implements IClientOutgoingPacket
 {
 	private int _startTime;
 	private int _id, _ownerObjectId, _allyId;
@@ -59,17 +60,17 @@ public class CastleSiegeInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_id);
-		writeD(_isLeader ? 0x01 : 0x00);
-		writeD(_ownerObjectId);
-		writeS(_ownerName); // Clan Name
-		writeS(_leaderName); // Clan Leader Name
-		writeD(_allyId); // Ally ID
-		writeS(_allyName); // Ally Name
-		writeD((int) (Calendar.getInstance().getTimeInMillis() / 1000));
-		writeD(_startTime);
+		packetWriter.writeD(_id);
+		packetWriter.writeD(_isLeader ? 0x01 : 0x00);
+		packetWriter.writeD(_ownerObjectId);
+		packetWriter.writeS(_ownerName); // Clan Name
+		packetWriter.writeS(_leaderName); // Clan Leader Name
+		packetWriter.writeD(_allyId); // Ally ID
+		packetWriter.writeS(_allyName); // Ally Name
+		packetWriter.writeD((int) (Calendar.getInstance().getTimeInMillis() / 1000));
+		packetWriter.writeD(_startTime);
 		/*
 		 * if(_startTime == 0) //если ноль то идет цыкл writeDD(_nextTimeMillis, true);
 		 */

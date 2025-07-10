@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import l2s.gameserver.model.Player;
 
-public class ExOlympiadSpelledInfoPacket extends L2GameServerPacket
+public class ExOlympiadSpelledInfoPacket implements IClientOutgoingPacket
 {
 	// chdd(dhd)
 	private int char_obj_id = 0;
@@ -44,15 +45,15 @@ public class ExOlympiadSpelledInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(char_obj_id);
-		writeD(_effects.size());
+		packetWriter.writeD(char_obj_id);
+		packetWriter.writeD(_effects.size());
 		for (Abnormal temp : _effects)
 		{
-			writeD(temp.skillId);
-			writeH(temp.dat);
-			writeD(temp.abnormalType);
+			packetWriter.writeD(temp.skillId);
+			packetWriter.writeH(temp.dat);
+			packetWriter.writeD(temp.abnormalType);
 			writeOptionalD(temp.duration);
 		}
 	}

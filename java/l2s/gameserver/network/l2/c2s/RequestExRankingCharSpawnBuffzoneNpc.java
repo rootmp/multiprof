@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
@@ -25,22 +28,22 @@ import l2s.gameserver.templates.npc.NpcTemplate;
 /**
  * @author nexvill
  */
-public class RequestExRankingCharSpawnBuffzoneNpc extends L2GameClientPacket
+public class RequestExRankingCharSpawnBuffzoneNpc implements IClientIncomingPacket
 {
 	private ScheduledFuture<?> _taskBuff, _taskClear;
 	private NpcInstance _hiddenNpc;
 	private FakePlayer fp;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

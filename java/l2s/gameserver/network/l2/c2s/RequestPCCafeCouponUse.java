@@ -1,22 +1,25 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 /**
  * format: chS
  */
-public class RequestPCCafeCouponUse extends L2GameClientPacket
+public class RequestPCCafeCouponUse implements IClientIncomingPacket
 {
 	// format: (ch)S
 	private String _unknown;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_unknown = readS();
+		_unknown = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		// TODO not implemented
 	}

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
@@ -12,24 +15,24 @@ import l2s.gameserver.network.l2.s2c.GMViewQuestInfoPacket;
 import l2s.gameserver.network.l2.s2c.GMViewSkillInfoPacket;
 import l2s.gameserver.network.l2.s2c.GMViewWarehouseWithdrawListPacket;
 
-public class RequestGMCommand extends L2GameClientPacket
+public class RequestGMCommand implements IClientIncomingPacket
 {
 	private String _targetName;
 	private int _command;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_targetName = readS();
-		_command = readD();
-		// readD();
+		_targetName = packet.readS();
+		_command = packet.readD();
+		// packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		Player target = World.getPlayer(_targetName);
 		if (player == null || target == null)
 			return;

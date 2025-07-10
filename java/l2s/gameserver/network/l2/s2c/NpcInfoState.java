@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
 /**
  * @author Bonux
  **/
-public class NpcInfoState extends L2GameServerPacket
+public class NpcInfoState implements IClientOutgoingPacket
 {
 	private static final int IS_DEAD = 1 << 0;
 	private static final int IS_IN_COMBAT = 1 << 1;
@@ -29,9 +30,9 @@ public class NpcInfoState extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeC(_state);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeC(_state);
 	}
 }

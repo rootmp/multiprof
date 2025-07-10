@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExTryMixCube extends L2GameServerPacket
+public class ExTryMixCube implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket FAIL = new ExTryMixCube(6);
 
@@ -26,15 +27,15 @@ public class ExTryMixCube extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_result);
-		writeD(0x01); // UNK
+		packetWriter.writeC(_result);
+		packetWriter.writeD(0x01); // UNK
 		// for(int i = 0; i < count; i++)
 		// {
-		writeC(0x00);
-		writeD(_itemId);
-		writeQ(_itemCount);
+		packetWriter.writeC(0x00);
+		packetWriter.writeD(_itemId);
+		packetWriter.writeQ(_itemCount);
 		// }
 	}
 }

@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author VISTALL
  */
-public class ExShowUpgradeSystemNormal extends L2GameServerPacket
+public class ExShowUpgradeSystemNormal implements IClientOutgoingPacket
 {
 	private final int type;
 
@@ -13,12 +14,12 @@ public class ExShowUpgradeSystemNormal extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(0x01); // unk, maybe type
-		writeH(type); // unk, maybe type
-		writeH(100); // unk, maybe chance
-		writeD(0x00); // unk
-		writeD(0x00); // unk
+		packetWriter.writeH(0x01); // unk, maybe type
+		packetWriter.writeH(type); // unk, maybe type
+		packetWriter.writeH(100); // unk, maybe chance
+		packetWriter.writeD(0x00); // unk
+		packetWriter.writeD(0x00); // unk
 	}
 }

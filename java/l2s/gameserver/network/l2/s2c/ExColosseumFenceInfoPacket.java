@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.instances.FenceInstance;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.model.instances.FenceInstance;
  * @author HoridoJoho / FBIagent
  * @reworked by Bonux
  */
-public class ExColosseumFenceInfoPacket extends L2GameServerPacket
+public class ExColosseumFenceInfoPacket implements IClientOutgoingPacket
 {
 	private final int _objId;
 	private final int _x;
@@ -33,14 +34,14 @@ public class ExColosseumFenceInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objId);
-		writeD(_state);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(_width);
-		writeD(_length);
+		packetWriter.writeD(_objId);
+		packetWriter.writeD(_state);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
+		packetWriter.writeD(_z);
+		packetWriter.writeD(_width);
+		packetWriter.writeD(_length);
 	}
 }

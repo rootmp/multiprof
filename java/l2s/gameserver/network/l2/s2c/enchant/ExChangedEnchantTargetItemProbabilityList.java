@@ -14,7 +14,7 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author nexvill
  */
-public class ExChangedEnchantTargetItemProbabilityList extends L2GameServerPacket
+public class ExChangedEnchantTargetItemProbabilityList implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private boolean _isMultiEnchant;
@@ -26,7 +26,7 @@ public class ExChangedEnchantTargetItemProbabilityList extends L2GameServerPacke
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		double supportRate = 0;
 		if (!_isMultiEnchant && (_player.getSupportItem() != null))
@@ -49,7 +49,7 @@ public class ExChangedEnchantTargetItemProbabilityList extends L2GameServerPacke
 		{
 			count = _player.getMultiEnchantingItemsCount();
 		}
-		writeD(count);
+		packetWriter.writeD(count);
 		for (int i = 1; i <= count; i++)
 		{
 			double baseRate;
@@ -68,16 +68,16 @@ public class ExChangedEnchantTargetItemProbabilityList extends L2GameServerPacke
 			}
 			if (!_isMultiEnchant)
 			{
-				writeD(_player.getEnchantItem().getObjectId());
+				packetWriter.writeD(_player.getEnchantItem().getObjectId());
 			}
 			else
 			{
-				writeD(_player.getMultiEnchantingItemsBySlot(i));
+				packetWriter.writeD(_player.getMultiEnchantingItemsBySlot(i));
 			}
-			writeD((int) totalRate);
-			writeD((int) baseRate);
-			writeD((int) supportRate);
-			writeD((int) passiveRate);
+			packetWriter.writeD((int) totalRate);
+			packetWriter.writeD((int) baseRate);
+			packetWriter.writeD((int) supportRate);
+			packetWriter.writeD((int) passiveRate);
 		}
 	}
 

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExCuriousHouseState extends L2GameServerPacket
+public class ExCuriousHouseState implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket IDLE = new ExCuriousHouseState(0x00);
 	public static final L2GameServerPacket INVITE = new ExCuriousHouseState(0x01);
@@ -14,8 +15,8 @@ public class ExCuriousHouseState extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_state);
+		packetWriter.writeD(_state);
 	}
 }

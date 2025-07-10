@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author VISTALL
  * @date 20:34/01.09.2011
  */
-public class ExReplyHandOverPartyMaster extends L2GameServerPacket
+public class ExReplyHandOverPartyMaster implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket TRUE = new ExReplyHandOverPartyMaster(true);
 	public static final L2GameServerPacket FALSE = new ExReplyHandOverPartyMaster(false);
@@ -17,8 +18,8 @@ public class ExReplyHandOverPartyMaster extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_isLeader);
+		packetWriter.writeD(_isLeader);
 	}
 }

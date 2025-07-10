@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +29,7 @@ import l2s.gameserver.utils.PositionUtils;
  *       02 00 y 22 F2 FF FF z 90 05 00 00 skill id 00 00 00 00 ctrlPressed 00
  *       shiftPressed
  */
-public class RequestExMagicSkillUseGround extends L2GameClientPacket
+public class RequestExMagicSkillUseGround implements IClientIncomingPacket
 {
 	private Location _loc = new Location();
 	private int _skillId;
@@ -37,21 +40,21 @@ public class RequestExMagicSkillUseGround extends L2GameClientPacket
 	 * packet type id 0xd0
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_loc.x = readD();
-		_loc.y = readD();
-		_loc.z = readD();
-		_skillId = readD();
+		_loc.x = packet.readD();
+		_loc.y = packet.readD();
+		_loc.z = packet.readD();
+		_skillId = packet.readD();
 		_ctrlPressed = readD() != 0;
 		_shiftPressed = readC() != 0;
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws InterruptedException
+	public void run(GameClient client) throws InterruptedException
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

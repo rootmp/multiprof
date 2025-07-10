@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 
-public class ObserverStartPacket extends L2GameServerPacket
+public class ObserverStartPacket implements IClientOutgoingPacket
 {
 	// ddSS
 	private Location _loc;
@@ -13,12 +14,12 @@ public class ObserverStartPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(0x00); // YAW
-		writeD(0x00); // Pitch
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
+		packetWriter.writeD(0x00); // YAW
+		packetWriter.writeD(0x00); // Pitch
 	}
 }

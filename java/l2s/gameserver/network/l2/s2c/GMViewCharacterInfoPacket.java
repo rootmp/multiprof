@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
@@ -8,7 +9,7 @@ import l2s.gameserver.model.items.Inventory;
 import l2s.gameserver.model.pledge.Alliance;
 import l2s.gameserver.model.pledge.Clan;
 
-public class GMViewCharacterInfoPacket extends L2GameServerPacket
+public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 {
 	private Location _loc;
 	private int[][] _inv;
@@ -128,46 +129,46 @@ public class GMViewCharacterInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// dddddSddddQfddddddddddddQddd
 		// dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 		// ccdhdddddddddddddddddddddddffffddddSdddcccddhhddddccdccddhhhhhhhhdd
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_loc.h);
-		writeD(obj_id);
-		writeS(_name);
-		writeD(_race);
-		writeD(_sex);
-		writeD(class_id);
-		writeD(level);
-		writeQ(_exp);
-		writeF(_expPercent);
-		writeD(_str);
-		writeD(_dex);
-		writeD(_con);
-		writeD(_int);
-		writeD(_wit);
-		writeD(_men);
-		writeD(0x00);
-		writeD(0x00);
-		writeD(maxHp);
-		writeD(curHp);
-		writeD(maxMp);
-		writeD(curMp);
-		writeQ(_sp);
-		writeD(curLoad);
-		writeD(maxLoad);
-		writeD(pk_kills);
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
+		packetWriter.writeD(_loc.h);
+		packetWriter.writeD(obj_id);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(_race);
+		packetWriter.writeD(_sex);
+		packetWriter.writeD(class_id);
+		packetWriter.writeD(level);
+		packetWriter.writeQ(_exp);
+		packetWriter.writeF(_expPercent);
+		packetWriter.writeD(_str);
+		packetWriter.writeD(_dex);
+		packetWriter.writeD(_con);
+		packetWriter.writeD(_int);
+		packetWriter.writeD(_wit);
+		packetWriter.writeD(_men);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(maxHp);
+		packetWriter.writeD(curHp);
+		packetWriter.writeD(maxMp);
+		packetWriter.writeD(curMp);
+		packetWriter.writeQ(_sp);
+		packetWriter.writeD(curLoad);
+		packetWriter.writeD(maxLoad);
+		packetWriter.writeD(pk_kills);
 
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
 			if (PAPERDOLL_ID == Inventory.PAPERDOLL_ARTIFACT_BOOK)
 				break;
 
-			writeD(_inv[PAPERDOLL_ID][0]);
+			packetWriter.writeD(_inv[PAPERDOLL_ID][0]);
 		}
 
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
@@ -175,7 +176,7 @@ public class GMViewCharacterInfoPacket extends L2GameServerPacket
 			if (PAPERDOLL_ID == Inventory.PAPERDOLL_ARTIFACT_BOOK)
 				break;
 
-			writeD(_inv[PAPERDOLL_ID][1]);
+			packetWriter.writeD(_inv[PAPERDOLL_ID][1]);
 		}
 
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
@@ -183,92 +184,92 @@ public class GMViewCharacterInfoPacket extends L2GameServerPacket
 			if (PAPERDOLL_ID == Inventory.PAPERDOLL_AGATHION_MAIN)
 				break;
 
-			writeD(_inv[PAPERDOLL_ID][2]);
-			writeD(_inv[PAPERDOLL_ID][3]);
+			packetWriter.writeD(_inv[PAPERDOLL_ID][2]);
+			packetWriter.writeD(_inv[PAPERDOLL_ID][3]);
 		}
 
-		writeC(talismans);
-		writeC(_jewelsLimit);
-		writeD(0x00);
-		writeH(0x00);
-		writeD(_patk);
-		writeD(_patkspd);
-		writeD(_pdef);
-		writeD(evasion);
-		writeD(accuracy);
-		writeD(crit);
-		writeD(_matk);
+		packetWriter.writeC(talismans);
+		packetWriter.writeC(_jewelsLimit);
+		packetWriter.writeD(0x00);
+		packetWriter.writeH(0x00);
+		packetWriter.writeD(_patk);
+		packetWriter.writeD(_patkspd);
+		packetWriter.writeD(_pdef);
+		packetWriter.writeD(evasion);
+		packetWriter.writeD(accuracy);
+		packetWriter.writeD(crit);
+		packetWriter.writeD(_matk);
 
-		writeD(_matkspd);
-		writeD(_patkspd);
+		packetWriter.writeD(_matkspd);
+		packetWriter.writeD(_patkspd);
 
-		writeD(_mdef);
-		writeD(_mEvasion);
-		writeD(_mAccuracy);
-		writeD(_mCrit);
+		packetWriter.writeD(_mdef);
+		packetWriter.writeD(_mEvasion);
+		packetWriter.writeD(_mAccuracy);
+		packetWriter.writeD(_mCrit);
 
-		writeD(pvp_flag);
-		writeD(karma);
+		packetWriter.writeD(pvp_flag);
+		packetWriter.writeD(karma);
 
-		writeD(_runSpd);
-		writeD(_walkSpd);
-		writeD(_swimRunSpd); // swimspeed
-		writeD(_swimWalkSpd); // swimspeed
-		writeD(_runSpd);
-		writeD(_walkSpd);
-		writeD(_runSpd);
-		writeD(_walkSpd);
-		writeF(move_speed);
-		writeF(attack_speed);
-		writeF(col_radius);
-		writeF(col_height);
-		writeD(hair_style);
-		writeD(hair_color);
-		writeD(face);
-		writeD(gm_commands);
+		packetWriter.writeD(_runSpd);
+		packetWriter.writeD(_walkSpd);
+		packetWriter.writeD(_swimRunSpd); // swimspeed
+		packetWriter.writeD(_swimWalkSpd); // swimspeed
+		packetWriter.writeD(_runSpd);
+		packetWriter.writeD(_walkSpd);
+		packetWriter.writeD(_runSpd);
+		packetWriter.writeD(_walkSpd);
+		packetWriter.writeF(move_speed);
+		packetWriter.writeF(attack_speed);
+		packetWriter.writeF(col_radius);
+		packetWriter.writeF(col_height);
+		packetWriter.writeD(hair_style);
+		packetWriter.writeD(hair_color);
+		packetWriter.writeD(face);
+		packetWriter.writeD(gm_commands);
 
-		writeS(title);
-		writeD(clan_id);
-		writeD(clan_crest_id);
-		writeD(ally_id);
-		writeC(mount_type);
-		writeC(private_store);
-		writeC(DwarvenCraftLevel); // _cha.getDwarvenCraftLevel() > 0 ? 1 : 0
-		writeD(pk_kills);
-		writeD(pvp_kills);
+		packetWriter.writeS(title);
+		packetWriter.writeD(clan_id);
+		packetWriter.writeD(clan_crest_id);
+		packetWriter.writeD(ally_id);
+		packetWriter.writeC(mount_type);
+		packetWriter.writeC(private_store);
+		packetWriter.writeC(DwarvenCraftLevel); // _cha.getDwarvenCraftLevel() > 0 ? 1 : 0
+		packetWriter.writeD(pk_kills);
+		packetWriter.writeD(pvp_kills);
 
-		writeH(rec_left);
-		writeH(rec_have); // Blue value for name (0 = white, 255 = pure blue)
-		writeD(class_id);
-		writeD(0x00); // special effects? circles around player...
-		writeD(maxCp);
-		writeD(curCp);
+		packetWriter.writeH(rec_left);
+		packetWriter.writeH(rec_have); // Blue value for name (0 = white, 255 = pure blue)
+		packetWriter.writeD(class_id);
+		packetWriter.writeD(0x00); // special effects? circles around player...
+		packetWriter.writeD(maxCp);
+		packetWriter.writeD(curCp);
 
-		writeC(running); // changes the Speed display on Status Window
+		packetWriter.writeC(running); // changes the Speed display on Status Window
 
-		writeC(321);
+		packetWriter.writeC(321);
 
-		writeD(pledge_class); // changes the text above CP on Status Window
+		packetWriter.writeD(pledge_class); // changes the text above CP on Status Window
 
-		writeC(0x00); // noble
-		writeC(hero);
+		packetWriter.writeC(0x00); // noble
+		packetWriter.writeC(hero);
 
-		writeD(name_color);
-		writeD(title_color);
+		packetWriter.writeD(name_color);
+		packetWriter.writeD(title_color);
 
-		writeH(attackElement.getId());
-		writeH(attackElementValue);
-		writeH(defenceFire);
-		writeH(defenceWater);
-		writeH(defenceWind);
-		writeH(defenceEarth);
-		writeH(defenceHoly);
-		writeH(defenceUnholy);
+		packetWriter.writeH(attackElement.getId());
+		packetWriter.writeH(attackElementValue);
+		packetWriter.writeH(defenceFire);
+		packetWriter.writeH(defenceWater);
+		packetWriter.writeH(defenceWind);
+		packetWriter.writeH(defenceEarth);
+		packetWriter.writeH(defenceHoly);
+		packetWriter.writeH(defenceUnholy);
 
-		writeD(fame);
-		writeD(0x00);
+		packetWriter.writeD(fame);
+		packetWriter.writeD(0x00);
 
-		writeD(0x00);
-		writeD(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00);
 	}
 }

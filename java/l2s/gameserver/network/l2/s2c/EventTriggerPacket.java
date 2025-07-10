@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author SYS
  * @date 10/9/2007
  */
-public class EventTriggerPacket extends L2GameServerPacket
+public class EventTriggerPacket implements IClientOutgoingPacket
 {
 	private final int _trapId;
 	private final boolean _active;
@@ -16,9 +17,9 @@ public class EventTriggerPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_trapId); // trap object id
-		writeC(_active ? 1 : 0); // trap activity 1 or 0
+		packetWriter.writeD(_trapId); // trap object id
+		packetWriter.writeC(_active ? 1 : 0); // trap activity 1 or 0
 	}
 }

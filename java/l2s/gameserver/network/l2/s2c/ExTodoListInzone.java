@@ -1,26 +1,27 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExTodoListInzone extends L2GameServerPacket
+public class ExTodoListInzone implements IClientOutgoingPacket
 {
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int instancesCount = 0;
-		writeH(0x00); // TODO[UNDERGROUND]: Instances count
+		packetWriter.writeH(0x00); // TODO[UNDERGROUND]: Instances count
 		for (int i = 0; i < instancesCount; i++)
 		{
-			writeC(0x00); // TODO[UNDERGROUND]: Tab
-			writeS(""); // TODO[UNDERGROUND]: HTML name
-			writeS(""); // TODO[UNDERGROUND]: Zone name
-			writeH(0x00); // TODO[UNDERGROUND]: Min level
-			writeH(0x00); // TODO[UNDERGROUND]: Max level
-			writeH(0x00); // TODO[UNDERGROUND]: Min players
-			writeH(0x00); // TODO[UNDERGROUND]: Max players
-			writeC(0x00); // TODO[UNDERGROUND]: Entry info
-			writeC(0x00); // TODO[UNDERGROUND]: UNK
+			packetWriter.writeC(0x00); // TODO[UNDERGROUND]: Tab
+			packetWriter.writeS(""); // TODO[UNDERGROUND]: HTML name
+			packetWriter.writeS(""); // TODO[UNDERGROUND]: Zone name
+			packetWriter.writeH(0x00); // TODO[UNDERGROUND]: Min level
+			packetWriter.writeH(0x00); // TODO[UNDERGROUND]: Max level
+			packetWriter.writeH(0x00); // TODO[UNDERGROUND]: Min players
+			packetWriter.writeH(0x00); // TODO[UNDERGROUND]: Max players
+			packetWriter.writeC(0x00); // TODO[UNDERGROUND]: Entry info
+			packetWriter.writeC(0x00); // TODO[UNDERGROUND]: UNK
 		}
 	}
 }

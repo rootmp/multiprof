@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 
-public class PlaySoundPacket extends L2GameServerPacket
+public class PlaySoundPacket implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket SIEGE_VICTORY = new PlaySoundPacket("Siege_Victory");
 	public static final L2GameServerPacket B04_S01 = new PlaySoundPacket("B04_S01");
@@ -45,15 +46,15 @@ public class PlaySoundPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// dSdddddd
-		writeD(_type.ordinal()); // 0 for quest and ship, c4 toturial = 2
-		writeS(_soundFile);
-		writeD(_hasCenterObject); // 0 for quest; 1 for ship;
-		writeD(_objectId); // 0 for quest; objectId of ship
-		writeD(_x); // x
-		writeD(_y); // y
-		writeD(_z); // z
+		packetWriter.writeD(_type.ordinal()); // 0 for quest and ship, c4 toturial = 2
+		packetWriter.writeS(_soundFile);
+		packetWriter.writeD(_hasCenterObject); // 0 for quest; 1 for ship;
+		packetWriter.writeD(_objectId); // 0 for quest; objectId of ship
+		packetWriter.writeD(_x); // x
+		packetWriter.writeD(_y); // y
+		packetWriter.writeD(_z); // z
 	}
 }

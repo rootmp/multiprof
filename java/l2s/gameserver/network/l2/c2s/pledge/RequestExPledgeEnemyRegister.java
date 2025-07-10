@@ -12,21 +12,21 @@ import l2s.gameserver.tables.ClanTable;
 /**
  * Written by Eden, on 21.02.2021
  */
-public class RequestExPledgeEnemyRegister extends L2GameClientPacket
+public class RequestExPledgeEnemyRegister implements IClientIncomingPacket
 {
 	private String clanName;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		clanName = readString();
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

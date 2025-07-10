@@ -13,7 +13,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
  *           72 00 61 00 6E 00 67 00 65 00 50 00 6C 00 61 00 6E 00 65 00 74 00
  *           07 00 B5 30 CD 30 A2 30 C4 30 6F 52 39 82 77 95
  */
-public class ExPledgeEnemyInfoList extends L2GameServerPacket
+public class ExPledgeEnemyInfoList implements IClientOutgoingPacket
 {
 	private final Clan playerClan;
 
@@ -23,7 +23,7 @@ public class ExPledgeEnemyInfoList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int count = 0;
 		Map<Integer, Clan> attackedClans = new HashMap<>();
@@ -39,12 +39,12 @@ public class ExPledgeEnemyInfoList extends L2GameServerPacket
 			}
 		}
 
-		writeD(count);
+		packetWriter.writeD(count);
 		for (int i = 0; i < attackedClans.size(); i++)
 		{
-			writeD(pointDiff[i]); // point diff?
+			packetWriter.writeD(pointDiff[i]); // point diff?
 			final Clan clan = attackedClans.get(i);
-			writeD(clan.getClanId());
+			packetWriter.writeD(clan.getClanId());
 			writeString(clan.getName());
 			writeString(clan.getLeaderName());
 		}

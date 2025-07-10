@@ -7,19 +7,19 @@ import l2s.gameserver.network.l2.s2c.collection.ExCollectionCloseUI;
 /**
  * @author nexvill
  */
-public class RequestExCollectionCloseUI extends L2GameClientPacket
+public class RequestExCollectionCloseUI implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		readC(); // not used
+		packet.readC(); // not used
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.npc.BuyListTemplate;
 
-public class ShopPreviewListPacket extends L2GameServerPacket
+public class ShopPreviewListPacket implements IClientOutgoingPacket
 {
 	private final int _listId;
 	private final List<ItemInfo> _itemList;
@@ -31,20 +32,20 @@ public class ShopPreviewListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0x13c0); // ?
-		writeQ(_money);
-		writeD(_listId);
-		writeH(_itemList.size());
+		packetWriter.writeD(0x13c0); // ?
+		packetWriter.writeQ(_money);
+		packetWriter.writeD(_listId);
+		packetWriter.writeH(_itemList.size());
 
 		for (ItemInfo item : _itemList)
 			if (item.getItem().isEquipable())
 			{
-				writeD(item.getItemId());
-				writeH(item.getItem().getType2()); // item type2
-				writeQ(item.getItem().isEquipable() ? item.getItem().getBodyPart() : 0x00);
-				writeQ(getWearPrice(item.getItem()));
+				packetWriter.writeD(item.getItemId());
+				packetWriter.writeH(item.getItem().getType2()); // item type2
+				packetWriter.writeQ(item.getItem().isEquipable() ? item.getItem().getBodyPart() : 0x00);
+				packetWriter.writeQ(getWearPrice(item.getItem()));
 			}
 	}
 

@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.base.SoulShotType;
 
-public class ExAutoSoulShot extends L2GameServerPacket
+public class ExAutoSoulShot implements IClientOutgoingPacket
 {
 	private final int _itemId;
 	private final int _slotId;
@@ -16,10 +17,10 @@ public class ExAutoSoulShot extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_itemId);
-		writeD(_slotId);
-		writeD(_type);
+		packetWriter.writeD(_itemId);
+		packetWriter.writeD(_slotId);
+		packetWriter.writeD(_type);
 	}
 }

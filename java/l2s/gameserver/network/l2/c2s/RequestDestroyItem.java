@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.dao.PetDAO;
 import l2s.gameserver.data.xml.holder.PetDataHolder;
@@ -11,23 +14,23 @@ import l2s.gameserver.utils.Log;
 /**
  * format: cdd format: cdQ - Gracia Final
  */
-public class RequestDestroyItem extends L2GameClientPacket
+public class RequestDestroyItem implements IClientIncomingPacket
 {
 	private int _objectId;
 	private long _count;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
-		_count = readQ();
+		_objectId = packet.readD();
+		_count = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

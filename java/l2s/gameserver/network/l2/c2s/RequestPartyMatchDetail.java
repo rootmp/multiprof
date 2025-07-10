@@ -1,10 +1,13 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
 
-public class RequestPartyMatchDetail extends L2GameClientPacket
+public class RequestPartyMatchDetail implements IClientIncomingPacket
 {
 	private int _roomId;
 	private int _locations;
@@ -14,19 +17,19 @@ public class RequestPartyMatchDetail extends L2GameClientPacket
 	 * Format: dddd
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_roomId = readD(); // room id, если 0 то autojoin
-		_locations = readD(); // location
-		_level = readD(); // 1 - all, 0 - my level (только при autojoin)
-		// readD();
+		_roomId = packet.readD(); // room id, если 0 то autojoin
+		_locations = packet.readD(); // location
+		_level = packet.readD(); // 1 - all, 0 - my level (только при autojoin)
+		// packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

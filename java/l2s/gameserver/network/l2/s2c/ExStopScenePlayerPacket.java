@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  */
-public class ExStopScenePlayerPacket extends L2GameServerPacket
+public class ExStopScenePlayerPacket implements IClientOutgoingPacket
 {
 	private final int _movieId;
 
@@ -13,8 +14,8 @@ public class ExStopScenePlayerPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_movieId);
+		packetWriter.writeD(_movieId);
 	}
 }

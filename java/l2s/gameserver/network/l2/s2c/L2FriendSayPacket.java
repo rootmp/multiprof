@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * Send Private (Friend) Message Format: c dSSS d: Unknown S: Sending Player S:
  * Receiving Player S: Message
  */
-public class L2FriendSayPacket extends L2GameServerPacket
+public class L2FriendSayPacket implements IClientOutgoingPacket
 {
 	private String _sender, _receiver, _message;
 
@@ -16,11 +17,11 @@ public class L2FriendSayPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0);
-		writeS(_receiver);
-		writeS(_sender);
-		writeS(_message);
+		packetWriter.writeD(0);
+		packetWriter.writeS(_receiver);
+		packetWriter.writeS(_sender);
+		packetWriter.writeS(_message);
 	}
 }

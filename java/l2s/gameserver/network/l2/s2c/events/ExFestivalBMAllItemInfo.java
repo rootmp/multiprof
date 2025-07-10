@@ -11,7 +11,7 @@ import l2s.gameserver.templates.FestivalBMTemplate;
 /**
  * @author nexvill
  */
-public class ExFestivalBMAllItemInfo extends L2GameServerPacket
+public class ExFestivalBMAllItemInfo implements IClientOutgoingPacket
 {
 	private Map<Integer, FestivalBMTemplate> _items = new HashMap<>();
 
@@ -21,10 +21,10 @@ public class ExFestivalBMAllItemInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD((int) (System.currentTimeMillis() / 1000));
-		writeD(_items.size());
+		packetWriter.writeD((int) (System.currentTimeMillis() / 1000));
+		packetWriter.writeD(_items.size());
 
 		if (_items.size() > 0)
 		{
@@ -32,13 +32,13 @@ public class ExFestivalBMAllItemInfo extends L2GameServerPacket
 			{
 				final FestivalBMTemplate item = _items.get(id);
 
-				writeC(item.getLocationId());
-				writeD(item.getItemId());
+				packetWriter.writeC(item.getLocationId());
+				packetWriter.writeD(item.getItemId());
 
 				int existingAmount = ServerVariables.getInt("FESTIVAL_BM_" + item.getItemId(), item.getItemCount());
 
-				writeD(existingAmount);
-				writeD(item.getItemCount());
+				packetWriter.writeD(existingAmount);
+				packetWriter.writeD(item.getItemCount());
 			}
 		}
 	}

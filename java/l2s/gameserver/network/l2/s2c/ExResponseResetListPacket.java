@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.utils.ItemFunctions;
 
-public class ExResponseResetListPacket extends L2GameServerPacket
+public class ExResponseResetListPacket implements IClientOutgoingPacket
 {
 	private int _hairStyle;
 	private int _hairColor;
@@ -23,12 +24,12 @@ public class ExResponseResetListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeQ(_adena);
-		writeQ(_coins);
-		writeD(_hairStyle);
-		writeD(_face);
-		writeD(_hairColor);
+		packetWriter.writeQ(_adena);
+		packetWriter.writeQ(_coins);
+		packetWriter.writeD(_hairStyle);
+		packetWriter.writeD(_face);
+		packetWriter.writeD(_hairColor);
 	}
 }

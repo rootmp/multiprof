@@ -9,7 +9,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExSharedPositionTeleportUI extends L2GameServerPacket
+public class ExSharedPositionTeleportUI implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _tpId;
@@ -21,18 +21,18 @@ public class ExSharedPositionTeleportUI extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (ServerVariables.getString("tpId_" + _tpId + "_name") != null)
 		{
 			writeString(ServerVariables.getString("tpId_" + _tpId + "_name"));
-			writeD(_tpId);
-			writeD(_player.getVarInt(PlayerVariables.SHARED_POSITION_TELEPORTS, Config.SHARED_TELEPORTS_PER_DAY)); // exist
+			packetWriter.writeD(_tpId);
+			packetWriter.writeD(_player.getVarInt(PlayerVariables.SHARED_POSITION_TELEPORTS, Config.SHARED_TELEPORTS_PER_DAY)); // exist
 																													// teleports
-			writeH(150); // ?? also not work with low values like 0 or 1
-			writeD(ServerVariables.getInt("tpId_" + _tpId + "_x"));
-			writeD(ServerVariables.getInt("tpId_" + _tpId + "_y"));
-			writeD(ServerVariables.getInt("tpId_" + _tpId + "_z"));
+			packetWriter.writeH(150); // ?? also not work with low values like 0 or 1
+			packetWriter.writeD(ServerVariables.getInt("tpId_" + _tpId + "_x"));
+			packetWriter.writeD(ServerVariables.getInt("tpId_" + _tpId + "_y"));
+			packetWriter.writeD(ServerVariables.getInt("tpId_" + _tpId + "_z"));
 		}
 	}
 }

@@ -7,21 +7,21 @@ import l2s.gameserver.network.l2.s2c.randomcraft.ExCraftRandomLockSlot;
 /**
  * @author nexvill
  */
-public class RequestExCraftRandomLockSlot extends L2GameClientPacket
+public class RequestExCraftRandomLockSlot implements IClientIncomingPacket
 {
 	int _slot;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_slot = readD();
+		_slot = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
@@ -9,13 +12,13 @@ import l2s.gameserver.utils.Log;
 /**
  * Recieve Private (Friend) Message Format: c SS S: Message S: Receiving Player
  */
-public class RequestSendL2FriendSay extends L2GameClientPacket
+public class RequestSendL2FriendSay implements IClientIncomingPacket
 {
 	private String _message;
 	private String _reciever;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_message = readS(2048);
 		_reciever = readS(16);
@@ -23,9 +26,9 @@ public class RequestSendL2FriendSay extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

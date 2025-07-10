@@ -5,16 +5,16 @@ import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
 /**
  * @author nexvill
  */
-public class RequestExViewEnchantResult extends L2GameClientPacket
+public class RequestExViewEnchantResult implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		//
 	}

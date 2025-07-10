@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class ExCuriousHouseMemberUpdate extends L2GameServerPacket
+public class ExCuriousHouseMemberUpdate implements IClientOutgoingPacket
 {
 	private Player _player;
 
@@ -12,12 +13,12 @@ public class ExCuriousHouseMemberUpdate extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_player.getObjectId());
-		writeD(_player.getMaxHp());
-		writeD(_player.getMaxCp());
-		writeD((int) _player.getCurrentHp());
-		writeD((int) _player.getCurrentCp());
+		packetWriter.writeD(_player.getObjectId());
+		packetWriter.writeD(_player.getMaxHp());
+		packetWriter.writeD(_player.getMaxCp());
+		packetWriter.writeD((int) _player.getCurrentHp());
+		packetWriter.writeD((int) _player.getCurrentCp());
 	}
 }

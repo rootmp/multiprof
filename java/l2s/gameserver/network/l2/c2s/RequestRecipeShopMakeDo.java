@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.RecipeHolder;
@@ -17,25 +20,25 @@ import l2s.gameserver.templates.item.data.ItemData;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.TradeHelper;
 
-public class RequestRecipeShopMakeDo extends L2GameClientPacket
+public class RequestRecipeShopMakeDo implements IClientIncomingPacket
 {
 	private int _manufacturerId;
 	private int _recipeId;
 	private long _price;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_manufacturerId = readD();
-		_recipeId = readD();
-		_price = readQ();
+		_manufacturerId = packet.readD();
+		_recipeId = packet.readD();
+		_price = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player buyer = getClient().getActiveChar();
+		Player buyer = client.getActiveChar();
 		if (buyer == null)
 			return;
 

@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  */
-public class ExShowCommission extends L2GameServerPacket
+public class ExShowCommission implements IClientOutgoingPacket
 {
 	public ExShowCommission()
 	{
@@ -11,8 +12,8 @@ public class ExShowCommission extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0x01); // ??Open??
+		packetWriter.writeD(0x01); // ??Open??
 	}
 }

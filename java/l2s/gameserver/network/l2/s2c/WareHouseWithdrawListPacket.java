@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +12,7 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.Warehouse.ItemClassComparator;
 import l2s.gameserver.model.items.Warehouse.WarehouseType;
 
-public class WareHouseWithdrawListPacket extends L2GameServerPacket
+public class WareHouseWithdrawListPacket implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final long _adena;
@@ -50,36 +51,36 @@ public class WareHouseWithdrawListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
+		packetWriter.writeC(_type);
 		if (_type == 1)
 		{
 			if (_whType == WarehouseType.FREIGHT.ordinal())
-				writeH(1);
+				packetWriter.writeH(1);
 			else
-				writeH(_whType);
-			writeQ(_adena);
-			writeD(_inventoryUsedSlots); // Количество занятых ячеек в инвентаре.
-			writeD(_itemList.size());
+				packetWriter.writeH(_whType);
+			packetWriter.writeQ(_adena);
+			packetWriter.writeD(_inventoryUsedSlots); // Количество занятых ячеек в инвентаре.
+			packetWriter.writeD(_itemList.size());
 		}
 		else if (_type == 2)
 		{
-			writeH(0x00);
+			packetWriter.writeH(0x00);
 			/*
 			 * if(_whType == WarehouseType.PRIVATE.ordinal() || _whType ==
 			 * WarehouseType.CLAN.ordinal()) { if(_itemList.size() > 0)
-			 * writeD(_itemList.get(0).getItemId()); else writeD(0x00); } if(_whType ==
-			 * WarehouseType.CLAN.ordinal()) writeD(0x00);
+			 * packetWriter.writeD(_itemList.get(0).getItemId()); else packetWriter.writeD(0x00); } if(_whType ==
+			 * WarehouseType.CLAN.ordinal()) packetWriter.writeD(0x00);
 			 */
-			writeD(_itemList.size());
-			writeD(_itemList.size());
+			packetWriter.writeD(_itemList.size());
+			packetWriter.writeD(_itemList.size());
 			for (ItemInfo item : _itemList)
 			{
 				writeItemInfo(item);
-				writeD(item.getObjectId());
-				writeD(0);
-				writeD(0);
+				packetWriter.writeD(item.getObjectId());
+				packetWriter.writeD(0);
+				packetWriter.writeD(0);
 			}
 		}
 	}

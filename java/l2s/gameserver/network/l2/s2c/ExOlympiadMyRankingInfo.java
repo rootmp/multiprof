@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Calendar;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
 
-public class ExOlympiadMyRankingInfo extends L2GameServerPacket
+public class ExOlympiadMyRankingInfo implements IClientOutgoingPacket
 {
 	private final int cycleYear;
 	private final int cycleMonth;
@@ -22,21 +23,21 @@ public class ExOlympiadMyRankingInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(cycleYear);
-		writeD(cycleMonth);
-		writeD(cycle);
-		writeD(0x00); // Place on current cycle ?
-		writeD(0x00); // Wins
-		writeD(0x00); // Loses
-		writeD(points);
-		writeD(0x00); // Place on previous cycle
-		writeD(0x00); // win count & lose count previous cycle? lol
-		writeD(0x00); // ??
-		writeD(0x00); // Points on previous cycle
-		writeD(0x00); // Hero counts
-		writeD(0x00); // Legend counts
-		writeD(0x00); // change to 1 causes shows nothing
+		packetWriter.writeD(cycleYear);
+		packetWriter.writeD(cycleMonth);
+		packetWriter.writeD(cycle);
+		packetWriter.writeD(0x00); // Place on current cycle ?
+		packetWriter.writeD(0x00); // Wins
+		packetWriter.writeD(0x00); // Loses
+		packetWriter.writeD(points);
+		packetWriter.writeD(0x00); // Place on previous cycle
+		packetWriter.writeD(0x00); // win count & lose count previous cycle? lol
+		packetWriter.writeD(0x00); // ??
+		packetWriter.writeD(0x00); // Points on previous cycle
+		packetWriter.writeD(0x00); // Hero counts
+		packetWriter.writeD(0x00); // Legend counts
+		packetWriter.writeD(0x00); // change to 1 causes shows nothing
 	}
 }

@@ -11,21 +11,21 @@ import l2s.gameserver.tables.ClanTable;
 /**
  * Written by Eden, on 21.02.2021
  */
-public class RequestExPledgeEnemyDelete extends L2GameClientPacket
+public class RequestExPledgeEnemyDelete implements IClientIncomingPacket
 {
 	private int clanId;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		clanId = readD();
+		clanId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

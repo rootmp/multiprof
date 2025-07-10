@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +16,7 @@ import l2s.gameserver.utils.BypassStorage.ValidBypass;
 /**
  * Format SSSSSS
  */
-public class RequestBBSwrite extends L2GameClientPacket
+public class RequestBBSwrite implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(RequestBBSwrite.class);
 
@@ -27,19 +30,19 @@ public class RequestBBSwrite extends L2GameClientPacket
 	@Override
 	public boolean readImpl()
 	{
-		_url = readS();
-		_arg1 = readS();
-		_arg2 = readS();
-		_arg3 = readS();
-		_arg4 = readS();
-		_arg5 = readS();
+		_url = packet.readS();
+		_arg1 = packet.readS();
+		_arg2 = packet.readS();
+		_arg3 = packet.readS();
+		_arg4 = packet.readS();
+		_arg5 = packet.readS();
 		return true;
 	}
 
 	@Override
 	public void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.model.Creature;
  * Format (ch)dddcccd d: cahacter oid d: time left d: fish hp c: c: c: 00 if
  * fish gets damage 02 if fish regens d:
  */
-public class ExFishingHpRegenPacket extends L2GameServerPacket
+public class ExFishingHpRegenPacket implements IClientOutgoingPacket
 {
 	private int _time, _fishHP, _HPmode, _Anim, _GoodUse, _Penalty, _hpBarColor;
 	private int char_obj_id;
@@ -24,16 +25,16 @@ public class ExFishingHpRegenPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(char_obj_id);
-		writeD(_time);
-		writeD(_fishHP);
-		writeC(_HPmode); // 0 = HP stop, 1 = HP raise
-		writeC(_GoodUse); // 0 = none, 1 = success, 2 = failed
-		writeC(_Anim); // Anim: 0 = none, 1 = reeling, 2 = pumping
-		writeD(_Penalty); // Penalty
-		writeC(_hpBarColor); // 0 = normal hp bar, 1 = purple hp bar
+		packetWriter.writeD(char_obj_id);
+		packetWriter.writeD(_time);
+		packetWriter.writeD(_fishHP);
+		packetWriter.writeC(_HPmode); // 0 = HP stop, 1 = HP raise
+		packetWriter.writeC(_GoodUse); // 0 = none, 1 = success, 2 = failed
+		packetWriter.writeC(_Anim); // Anim: 0 = none, 1 = reeling, 2 = pumping
+		packetWriter.writeD(_Penalty); // Penalty
+		packetWriter.writeC(_hpBarColor); // 0 = normal hp bar, 1 = purple hp bar
 
 	}
 }

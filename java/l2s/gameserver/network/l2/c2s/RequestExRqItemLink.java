@@ -1,23 +1,26 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.cache.ItemInfoCache;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
 import l2s.gameserver.network.l2.s2c.ExRpItemLink;
 
-public class RequestExRqItemLink extends L2GameClientPacket
+public class RequestExRqItemLink implements IClientIncomingPacket
 {
 	private int _objectId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
+		_objectId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		ItemInfo item;
 		if ((item = ItemInfoCache.getInstance().get(_objectId)) == null)
@@ -27,7 +30,7 @@ public class RequestExRqItemLink extends L2GameClientPacket
 		else
 		{
 			sendPacket(new ExRpItemLink(item));
-			getClient().getActiveChar().getListeners().onQuestionMarkClicked(_objectId);
+			client.getActiveChar().getListeners().onQuestionMarkClicked(_objectId);
 		}
 	}
 }

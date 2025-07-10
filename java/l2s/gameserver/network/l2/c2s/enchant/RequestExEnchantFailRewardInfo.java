@@ -13,21 +13,21 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author nexvill
  */
-public class RequestExEnchantFailRewardInfo extends L2GameClientPacket
+public class RequestExEnchantFailRewardInfo implements IClientIncomingPacket
 {
 	private int _itemObjId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_itemObjId = readD();
+		_itemObjId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

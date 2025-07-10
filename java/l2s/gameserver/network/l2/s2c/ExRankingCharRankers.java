@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 import java.util.Set;
@@ -12,7 +13,7 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class ExRankingCharRankers extends L2GameServerPacket
+public class ExRankingCharRankers implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _race;
@@ -36,12 +37,12 @@ public class ExRankingCharRankers extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_group);
-		writeC(_scope);
-		writeD(_race);
-		writeD(_class);
+		packetWriter.writeC(_group);
+		packetWriter.writeC(_scope);
+		packetWriter.writeD(_race);
+		packetWriter.writeD(_class);
 
 		if (_playerList.size() > 0)
 		{
@@ -53,7 +54,7 @@ public class ExRankingCharRankers extends L2GameServerPacket
 					{
 						final int count = _playerList.size() > 150 ? 150 : _playerList.size();
 
-						writeD(count);
+						packetWriter.writeD(count);
 
 						for (int id : _playerList.keySet())
 						{
@@ -61,10 +62,10 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 							writeString(player.getString("name"));
 							writeString(player.getString("clanName"));
-							writeD(player.getInteger("level"));
-							writeD(player.getInteger("classId"));
-							writeD(player.getInteger("race"));
-							writeD(id); // server rank
+							packetWriter.writeD(player.getInteger("level"));
+							packetWriter.writeD(player.getInteger("classId"));
+							packetWriter.writeD(player.getInteger("race"));
+							packetWriter.writeD(id); // server rank
 							if (_snapshotList.size() > 0)
 							{
 								for (int id2 : _snapshotList.keySet())
@@ -73,17 +74,17 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 									if (player.getInteger("charId") == snapshot.getInteger("charId"))
 									{
-										writeD(id2); // server rank snapshot
-										writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
-										writeD(5316850); // unk, value from JP
+										packetWriter.writeD(id2); // server rank snapshot
+										packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
+										packetWriter.writeD(5316850); // unk, value from JP
 									}
 								}
 							}
 							else
 							{
-								writeD(id);
-								writeD(0);
-								writeD(5316850);
+								packetWriter.writeD(id);
+								packetWriter.writeD(0);
+								packetWriter.writeD(5316850);
 							}
 						}
 					}
@@ -101,11 +102,11 @@ public class ExRankingCharRankers extends L2GameServerPacket
 								final int last = _playerList.size() >= (id + 10) ? id + 10 : id + (_playerList.size() - id);
 								if (first == 1)
 								{
-									writeD(last - (first - 1));
+									packetWriter.writeD(last - (first - 1));
 								}
 								else
 								{
-									writeD(last - first);
+									packetWriter.writeD(last - first);
 								}
 								for (int id2 = first; id2 <= last; id2++)
 								{
@@ -113,27 +114,27 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 									writeString(plr.getString("name"));
 									writeString(plr.getString("clanName"));
-									writeD(plr.getInteger("level"));
-									writeD(plr.getInteger("classId"));
-									writeD(plr.getInteger("race"));
-									writeD(id2); // server rank
-									writeD(id2);
-									writeD(id2);
-									writeD(5316850);
+									packetWriter.writeD(plr.getInteger("level"));
+									packetWriter.writeD(plr.getInteger("classId"));
+									packetWriter.writeD(plr.getInteger("race"));
+									packetWriter.writeD(id2); // server rank
+									packetWriter.writeD(id2);
+									packetWriter.writeD(id2);
+									packetWriter.writeD(5316850);
 
 									/*
 									 * if (_snapshotList.size() > 0) { for (int id3 : _snapshotList.keySet()) {
 									 * final StatsSet snapshot = _snapshotList.get(id3); if
-									 * (player.getInteger("charId") == snapshot.getInteger("charId")) { writeD(id3);
-									 * // server rank snapshot writeD(snapshot.getInteger("raceRank", 0));
-									 * writeD(5316850); } } }
+									 * (player.getInteger("charId") == snapshot.getInteger("charId")) { packetWriter.writeD(id3);
+									 * // server rank snapshot packetWriter.writeD(snapshot.getInteger("raceRank", 0));
+									 * packetWriter.writeD(5316850); } } }
 									 */
 								}
 							}
 						}
 						if (!found)
 						{
-							writeD(0);
+							packetWriter.writeD(0);
 						}
 					}
 					break;
@@ -152,7 +153,7 @@ public class ExRankingCharRankers extends L2GameServerPacket
 								count++;
 							}
 						}
-						writeD(count > 100 ? 100 : count);
+						packetWriter.writeD(count > 100 ? 100 : count);
 
 						int i = 1;
 						for (int id : _playerList.keySet())
@@ -163,10 +164,10 @@ public class ExRankingCharRankers extends L2GameServerPacket
 							{
 								writeString(player.getString("name"));
 								writeString(player.getString("clanName"));
-								writeD(player.getInteger("level"));
-								writeD(player.getInteger("classId"));
-								writeD(player.getInteger("race"));
-								writeD(i); // server rank
+								packetWriter.writeD(player.getInteger("level"));
+								packetWriter.writeD(player.getInteger("classId"));
+								packetWriter.writeD(player.getInteger("race"));
+								packetWriter.writeD(i); // server rank
 								if (_snapshotList.size() > 0)
 								{
 									final Map<Integer, StatsSet> snapshotRaceList = new ConcurrentHashMap<>();
@@ -187,17 +188,17 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 										if (player.getInteger("charId") == snapshot.getInteger("charId"))
 										{
-											writeD(id2); // server rank snapshot
-											writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
-											writeD(5316850);
+											packetWriter.writeD(id2); // server rank snapshot
+											packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
+											packetWriter.writeD(5316850);
 										}
 									}
 								}
 								else
 								{
-									writeD(i);
-									writeD(i);
-									writeD(5316850);
+									packetWriter.writeD(i);
+									packetWriter.writeD(i);
+									packetWriter.writeD(5316850);
 								}
 								i++;
 							}
@@ -231,11 +232,11 @@ public class ExRankingCharRankers extends L2GameServerPacket
 								final int last = raceList.size() >= (id + 10) ? id + 10 : id + (raceList.size() - id);
 								if (first == 1)
 								{
-									writeD(last - (first - 1));
+									packetWriter.writeD(last - (first - 1));
 								}
 								else
 								{
-									writeD(last - first);
+									packetWriter.writeD(last - first);
 								}
 								for (int id2 = first; id2 <= last; id2++)
 								{
@@ -243,19 +244,19 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 									writeString(plr.getString("name"));
 									writeString(plr.getString("clanName"));
-									writeD(plr.getInteger("level"));
-									writeD(plr.getInteger("classId"));
-									writeD(plr.getInteger("race"));
-									writeD(id2); // server rank
-									writeD(id2);
-									writeD(id2);
-									writeD(id2);
+									packetWriter.writeD(plr.getInteger("level"));
+									packetWriter.writeD(plr.getInteger("classId"));
+									packetWriter.writeD(plr.getInteger("race"));
+									packetWriter.writeD(id2); // server rank
+									packetWriter.writeD(id2);
+									packetWriter.writeD(id2);
+									packetWriter.writeD(id2);
 								}
 							}
 						}
 						if (!found)
 						{
-							writeD(0);
+							packetWriter.writeD(0);
 						}
 					}
 					break;
@@ -277,7 +278,7 @@ public class ExRankingCharRankers extends L2GameServerPacket
 							}
 						}
 
-						writeD(clanList.size());
+						packetWriter.writeD(clanList.size());
 
 						for (int id : clanList.keySet())
 						{
@@ -285,10 +286,10 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 							writeString(player.getString("name"));
 							writeString(player.getString("clanName"));
-							writeD(player.getInteger("level"));
-							writeD(player.getInteger("classId"));
-							writeD(player.getInteger("race"));
-							writeD(id); // clan rank
+							packetWriter.writeD(player.getInteger("level"));
+							packetWriter.writeD(player.getInteger("classId"));
+							packetWriter.writeD(player.getInteger("race"));
+							packetWriter.writeD(id); // clan rank
 							if (_snapshotList.size() > 0)
 							{
 								for (int id2 : _snapshotList.keySet())
@@ -297,23 +298,23 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 									if (player.getInteger("charId") == snapshot.getInteger("charId"))
 									{
-										writeD(id2); // server rank snapshot
-										writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
-										writeD(5316850);
+										packetWriter.writeD(id2); // server rank snapshot
+										packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
+										packetWriter.writeD(5316850);
 									}
 								}
 							}
 							else
 							{
-								writeD(id);
-								writeD(0);
-								writeD(5316850);
+								packetWriter.writeD(id);
+								packetWriter.writeD(0);
+								packetWriter.writeD(5316850);
 							}
 						}
 					}
 					else
 					{
-						writeD(0);
+						packetWriter.writeD(0);
 					}
 
 					break;
@@ -338,7 +339,7 @@ public class ExRankingCharRankers extends L2GameServerPacket
 						}
 						friendList.add(_player.getObjectId());
 
-						writeD(count);
+						packetWriter.writeD(count);
 
 						for (int id : _playerList.keySet())
 						{
@@ -347,10 +348,10 @@ public class ExRankingCharRankers extends L2GameServerPacket
 							{
 								writeString(player.getString("name"));
 								writeString(player.getString("clanName"));
-								writeD(player.getInteger("level"));
-								writeD(player.getInteger("classId"));
-								writeD(player.getInteger("race"));
-								writeD(id); // friend rank
+								packetWriter.writeD(player.getInteger("level"));
+								packetWriter.writeD(player.getInteger("classId"));
+								packetWriter.writeD(player.getInteger("race"));
+								packetWriter.writeD(id); // friend rank
 								if (_snapshotList.size() > 0)
 								{
 									for (int id2 : _snapshotList.keySet())
@@ -359,24 +360,24 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 										if (player.getInteger("charId") == snapshot.getInteger("charId"))
 										{
-											writeD(id2); // server rank snapshot
-											writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
-											writeD(5316850);
+											packetWriter.writeD(id2); // server rank snapshot
+											packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
+											packetWriter.writeD(5316850);
 										}
 									}
 								}
 								else
 								{
-									writeD(id);
-									writeD(0);
-									writeD(5316850);
+									packetWriter.writeD(id);
+									packetWriter.writeD(0);
+									packetWriter.writeD(5316850);
 								}
 							}
 						}
 					}
 					else
 					{
-						writeD(1);
+						packetWriter.writeD(1);
 
 						writeString(_player.getName());
 						if (_player.getClan() != null)
@@ -387,10 +388,10 @@ public class ExRankingCharRankers extends L2GameServerPacket
 						{
 							writeString("");
 						}
-						writeD(_player.getBaseSubClass().getLevel()); // level
-						writeD(_player.getBaseSubClass().getClassId());
-						writeD(_player.getRace().ordinal());
-						writeD(1); // clan rank
+						packetWriter.writeD(_player.getBaseSubClass().getLevel()); // level
+						packetWriter.writeD(_player.getBaseSubClass().getClassId());
+						packetWriter.writeD(_player.getRace().ordinal());
+						packetWriter.writeD(1); // clan rank
 						if (_snapshotList.size() > 0)
 						{
 							for (Integer id : _snapshotList.keySet())
@@ -399,17 +400,17 @@ public class ExRankingCharRankers extends L2GameServerPacket
 
 								if (_player.getObjectId() == snapshot.getInteger("charId"))
 								{
-									writeD(id); // server rank snapshot
-									writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
-									writeD(5316850);
+									packetWriter.writeD(id); // server rank snapshot
+									packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
+									packetWriter.writeD(5316850);
 								}
 							}
 						}
 						else
 						{
-							writeD(0);
-							writeD(0);
-							writeD(5316850);
+							packetWriter.writeD(0);
+							packetWriter.writeD(0);
+							packetWriter.writeD(5316850);
 						}
 					}
 					break;
@@ -418,7 +419,7 @@ public class ExRankingCharRankers extends L2GameServerPacket
 		}
 		else
 		{
-			writeD(0);
+			packetWriter.writeD(0);
 		}
 	}
 }

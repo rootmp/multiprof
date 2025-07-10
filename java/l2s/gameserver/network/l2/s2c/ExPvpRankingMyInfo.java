@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class ExPvpRankingMyInfo extends L2GameServerPacket
+public class ExPvpRankingMyInfo implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final Map<Integer, StatsSet> _playerList;
@@ -21,7 +22,7 @@ public class ExPvpRankingMyInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_playerList.size() > 0)
 		{
@@ -32,29 +33,29 @@ public class ExPvpRankingMyInfo extends L2GameServerPacket
 				if (player.getInteger("charId") == _player.getObjectId())
 				{
 					found = true;
-					writeQ(player.getInteger("points")); // pvp points
-					writeD(id); // current rank
-					writeD(id); // ingame shown change in rank as this value - current rank value.
-					writeD(player.getInteger("kills")); // kills
-					writeD(player.getInteger("deaths")); // deaths
+					packetWriter.writeQ(player.getInteger("points")); // pvp points
+					packetWriter.writeD(id); // current rank
+					packetWriter.writeD(id); // ingame shown change in rank as this value - current rank value.
+					packetWriter.writeD(player.getInteger("kills")); // kills
+					packetWriter.writeD(player.getInteger("deaths")); // deaths
 				}
 			}
 			if (!found)
 			{
-				writeQ(0); // pvp points
-				writeD(0); // current rank
-				writeD(0); // ingame shown change in rank as this value - current rank value.
-				writeD(0); // kills
-				writeD(0); // deaths
+				packetWriter.writeQ(0); // pvp points
+				packetWriter.writeD(0); // current rank
+				packetWriter.writeD(0); // ingame shown change in rank as this value - current rank value.
+				packetWriter.writeD(0); // kills
+				packetWriter.writeD(0); // deaths
 			}
 		}
 		else
 		{
-			writeQ(0); // pvp points
-			writeD(0); // current rank
-			writeD(0); // ingame shown change in rank as this value - current rank value.
-			writeD(0); // kills
-			writeD(0); // deaths
+			packetWriter.writeQ(0); // pvp points
+			packetWriter.writeD(0); // current rank
+			packetWriter.writeD(0); // ingame shown change in rank as this value - current rank value.
+			packetWriter.writeD(0); // kills
+			packetWriter.writeD(0); // deaths
 		}
 	}
 }

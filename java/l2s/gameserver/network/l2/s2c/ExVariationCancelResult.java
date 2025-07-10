@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExVariationCancelResult extends L2GameServerPacket
+public class ExVariationCancelResult implements IClientOutgoingPacket
 {
 	private int _closeWindow;
 	private int _unk1;
@@ -12,9 +13,9 @@ public class ExVariationCancelResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_unk1);
-		writeD(_closeWindow);
+		packetWriter.writeD(_unk1);
+		packetWriter.writeD(_closeWindow);
 	}
 }

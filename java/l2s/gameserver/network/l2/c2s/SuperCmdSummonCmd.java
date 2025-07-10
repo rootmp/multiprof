@@ -1,10 +1,13 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 /**
  * Format chS c: (id) 0x39 h: (subid) 0x01 S: the summon name (or maybe cmd
  * string ?)
  */
-class SuperCmdSummonCmd extends L2GameClientPacket
+class SuperCmdSummonCmd implements IClientIncomingPacket
 {
 	@SuppressWarnings("unused")
 	private String _summonName;
@@ -14,14 +17,14 @@ class SuperCmdSummonCmd extends L2GameClientPacket
 	 * @param client
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_summonName = readS();
+		_summonName = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 	}
 }

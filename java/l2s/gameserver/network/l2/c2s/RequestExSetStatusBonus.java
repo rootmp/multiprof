@@ -1,18 +1,21 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author nexvill
  */
-public class RequestExSetStatusBonus extends L2GameClientPacket
+public class RequestExSetStatusBonus implements IClientIncomingPacket
 {
 	private int _str, _dex, _con, _int, _wit, _men;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		readD(); // total bytes
+		packet.readD(); // total bytes
 		_str = readH();
 		_dex = readH();
 		_con = readH();
@@ -23,9 +26,9 @@ public class RequestExSetStatusBonus extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

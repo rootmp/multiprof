@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.StaticObjectInstance;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.instances.StaticObjectInstance;
 /**
  * format: d
  */
-public class ChairSitPacket extends L2GameServerPacket
+public class ChairSitPacket implements IClientOutgoingPacket
 {
 	private int _objectId;
 	private int _staticObjectId;
@@ -18,9 +19,10 @@ public class ChairSitPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_staticObjectId);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_staticObjectId);
+		
 	}
 }

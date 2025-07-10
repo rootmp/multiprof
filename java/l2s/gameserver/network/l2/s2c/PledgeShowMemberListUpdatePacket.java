@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.SubUnit;
 import l2s.gameserver.model.pledge.UnitMember;
 
-public class PledgeShowMemberListUpdatePacket extends L2GameServerPacket
+public class PledgeShowMemberListUpdatePacket implements IClientOutgoingPacket
 {
 	private String _name;
 	private int _lvl;
@@ -48,16 +49,16 @@ public class PledgeShowMemberListUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_name);
-		writeD(_lvl);
-		writeD(_classId);
-		writeD(_sex);
-		writeD(_objectId);
-		writeD(_isOnline); // 1=online 0=offline
-		writeD(_pledgeType);
-		writeD(_isApprentice); // does a clan member have a sponsor
-		writeC(_attendance);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(_lvl);
+		packetWriter.writeD(_classId);
+		packetWriter.writeD(_sex);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_isOnline); // 1=online 0=offline
+		packetWriter.writeD(_pledgeType);
+		packetWriter.writeD(_isApprentice); // does a clan member have a sponsor
+		packetWriter.writeC(_attendance);
 	}
 }

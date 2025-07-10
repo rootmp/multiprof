@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2s.gameserver.data.xml.holder.SkillHolder;
@@ -13,30 +16,30 @@ import l2s.gameserver.network.l2.s2c.ExAcquireSkillInfo;
 /**
  * Reworked: VISTALL
  */
-public class RequestAcquireSkillInfo extends L2GameClientPacket
+public class RequestAcquireSkillInfo implements IClientIncomingPacket
 {
 	private int _id;
 	private int _level;
 	private AcquireType _type;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_id = readD();
-		_level = readD();
+		_id = packet.readD();
+		_level = packet.readD();
 		_type = AcquireType.getById(readD());
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if ((_id <= 0) || (_level <= 0))
 		{
 			return;
 		}
 
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null || player.isTransformed() || SkillHolder.getInstance().getSkill(_id, _level) == null || _type == null)
 		{
 			return;

@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author nexvill
  */
-public class ExRaidTeleportInfo extends L2GameServerPacket
+public class ExRaidTeleportInfo implements IClientOutgoingPacket
 {
 	Player _player;
 
@@ -17,6 +18,6 @@ public class ExRaidTeleportInfo extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(_player.getVarBoolean("freeRaidTeleport", true) ? 0 : 1);
+		packetWriter.writeD(_player.getVarBoolean("freeRaidTeleport", true) ? 0 : 1);
 	}
 }

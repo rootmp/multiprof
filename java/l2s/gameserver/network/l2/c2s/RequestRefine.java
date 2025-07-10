@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -8,26 +11,26 @@ import l2s.gameserver.network.l2.s2c.ExVariationResult;
 import l2s.gameserver.templates.item.support.variation.VariationFee;
 import l2s.gameserver.utils.VariationUtils;
 
-public final class RequestRefine extends L2GameClientPacket
+public final class RequestRefine implements IClientIncomingPacket
 {
 	// format: (ch)dddd
 	private int _targetItemObjId, _refinerItemObjId;
 	private long _feeItemCount;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_targetItemObjId = readD();
-		_refinerItemObjId = readD();
-		readD(); // now 0, QQ
-		_feeItemCount = readQ();
+		_targetItemObjId = packet.readD();
+		_refinerItemObjId = packet.readD();
+		packet.readD(); // now 0, QQ
+		_feeItemCount = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || _feeItemCount < 1)
 			return;
 

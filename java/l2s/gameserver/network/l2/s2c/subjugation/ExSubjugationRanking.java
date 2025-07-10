@@ -10,7 +10,7 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class ExSubjugationRanking extends L2GameServerPacket
+public class ExSubjugationRanking implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _zoneId;
@@ -24,12 +24,12 @@ public class ExSubjugationRanking extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_result.size() > 5)
-			writeD(5);
+			packetWriter.writeD(5);
 		else
-			writeD(_result.size());
+			packetWriter.writeD(_result.size());
 
 		int i = 0;
 		int points = 0;
@@ -48,12 +48,12 @@ public class ExSubjugationRanking extends L2GameServerPacket
 			if (id < 6)
 			{
 				writeString(player.getString("name"));
-				writeD(player.getInteger("points"));
-				writeD(id); // rank
+				packetWriter.writeD(player.getInteger("points"));
+				packetWriter.writeD(id); // rank
 			}
 		}
-		writeD(_zoneId);
-		writeD(points);
-		writeD(rank);
+		packetWriter.writeD(_zoneId);
+		packetWriter.writeD(points);
+		packetWriter.writeD(rank);
 	}
 }

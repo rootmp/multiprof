@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,7 +46,7 @@ import l2s.gameserver.utils.TradeHelper;
 /**
  * packet type id 0x56 format: cddc
  */
-public class RequestActionUse extends L2GameClientPacket
+public class RequestActionUse implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(RequestActionUse.class);
 
@@ -319,18 +322,18 @@ public class RequestActionUse extends L2GameClientPacket
 	}
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_actionId = readD();
+		_actionId = packet.readD();
 		_ctrlPressed = readD() == 1;
 		_shiftPressed = readC() == 1;
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

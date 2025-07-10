@@ -17,25 +17,25 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class RequestExPvpBookShareRevengeReqShareRevengeInfo extends L2GameClientPacket
+public class RequestExPvpBookShareRevengeReqShareRevengeInfo implements IClientIncomingPacket
 {
 	private String killedName;
 	private String killerName;
 	private int shareType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		killedName = readString();
 		killerName = readString();
-		shareType = readD();
+		shareType = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

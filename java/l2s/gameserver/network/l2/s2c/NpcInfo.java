@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
@@ -309,64 +310,64 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_npcObjId);
-		writeC(_showSpawnAnimation); // // 0=teleported 1=default 2=summoned
-		writeH(38); // mask_bits_38
+		packetWriter.writeD(_npcObjId);
+		packetWriter.writeC(_showSpawnAnimation); // // 0=teleported 1=default 2=summoned
+		packetWriter.writeH(38); // mask_bits_38
 		writeB(_masks);
 
 		// Block 1
-		writeC(_initSize);
+		packetWriter.writeC(_initSize);
 
 		if (containsMask(NpcInfoType.ATTACKABLE))
-			writeC(_isAttackable);
+			packetWriter.writeC(_isAttackable);
 
 		if (containsMask(NpcInfoType.RELATIONS))
 		{
-			writeQ(0x00);
+			packetWriter.writeQ(0x00);
 		}
 
 		if (containsMask(NpcInfoType.TITLE))
 		{
 			if (_clanId != 0)
 			{
-				writeS("  " + _title);
+				packetWriter.writeS("  " + _title);
 			}
 			else
 			{
-				writeS(_title);
+				packetWriter.writeS(_title);
 			}
 		}
 
 		// Block 2
-		writeH(_blockSize);
+		packetWriter.writeH(_blockSize);
 
 		if (containsMask(NpcInfoType.ID))
 		{
-			writeD(_npcId + 1000000);
+			packetWriter.writeD(_npcId + 1000000);
 		}
 		if (containsMask(NpcInfoType.POSITION))
 		{
-			writeD(_loc.x);
-			writeD(_loc.y);
-			writeD(_loc.z);
+			packetWriter.writeD(_loc.x);
+			packetWriter.writeD(_loc.y);
+			packetWriter.writeD(_loc.z);
 		}
 
 		if (containsMask(NpcInfoType.HEADING))
 		{
-			writeD(_loc.h);
+			packetWriter.writeD(_loc.h);
 		}
 
 		if (containsMask(NpcInfoType.UNKNOWN2))
 		{
-			writeD(0x00); // Unknown
+			packetWriter.writeD(0x00); // Unknown
 		}
 
 		if (containsMask(NpcInfoType.ATK_CAST_SPEED))
 		{
-			writeD(_pAtkSpd);
-			writeD(_mAtkSpd);
+			packetWriter.writeD(_pAtkSpd);
+			packetWriter.writeD(_mAtkSpd);
 		}
 
 		if (containsMask(NpcInfoType.SPEED_MULTIPLIER))
@@ -377,97 +378,97 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
 
 		if (containsMask(NpcInfoType.EQUIPPED))
 		{
-			writeD(_rHand);
-			writeD(0x00); // Armor id?
-			writeD(_lHand);
+			packetWriter.writeD(_rHand);
+			packetWriter.writeD(0x00); // Armor id?
+			packetWriter.writeD(_lHand);
 		}
 
 		if (containsMask(NpcInfoType.ALIVE))
-			writeC(_alive);
+			packetWriter.writeC(_alive);
 
 		if (containsMask(NpcInfoType.RUNNING))
-			writeC(_running);
+			packetWriter.writeC(_running);
 
 		if (containsMask(NpcInfoType.SWIM_OR_FLY))
-			writeC(_inWater ? 1 : _flying ? 2 : 0);
+			packetWriter.writeC(_inWater ? 1 : _flying ? 2 : 0);
 
 		if (containsMask(NpcInfoType.TEAM))
-			writeC(_team.ordinal());
+			packetWriter.writeC(_team.ordinal());
 
 		if (containsMask(NpcInfoType.ENCHANT))
-			writeD(_enchantEffect);
+			packetWriter.writeD(_enchantEffect);
 
 		if (containsMask(NpcInfoType.FLYING))
-			writeD(_flying);
+			packetWriter.writeD(_flying);
 
 		if (containsMask(NpcInfoType.CLONE))
-			writeD(0x00); // Player ObjectId with Decoy
+			packetWriter.writeD(0x00); // Player ObjectId with Decoy
 
 		if (containsMask(NpcInfoType.COLOR_EFFECT))
 		{
 			// No visual effect
-			writeD(0x00); // Unknown
+			packetWriter.writeD(0x00); // Unknown
 		}
 
 		if (containsMask(NpcInfoType.DISPLAY_EFFECT))
-			writeD(_state);
+			packetWriter.writeD(_state);
 
 		if (containsMask(NpcInfoType.TRANSFORMATION))
-			writeD(_transformId);
+			packetWriter.writeD(_transformId);
 
 		if (containsMask(NpcInfoType.CURRENT_HP))
-			writeD(_currentHP);
+			packetWriter.writeD(_currentHP);
 
 		if (containsMask(NpcInfoType.CURRENT_MP))
-			writeD(_currentMP);
+			packetWriter.writeD(_currentMP);
 
 		if (containsMask(NpcInfoType.MAX_HP))
-			writeD(_maxHP);
+			packetWriter.writeD(_maxHP);
 
 		if (containsMask(NpcInfoType.MAX_MP))
-			writeD(_maxMP);
+			packetWriter.writeD(_maxMP);
 
 		if (containsMask(NpcInfoType.SUMMONED))
-			writeC(0x00); // тип клона 1 == приманка, 2 = клон у ножа
+			packetWriter.writeC(0x00); // тип клона 1 == приманка, 2 = клон у ножа
 
 		if (containsMask(NpcInfoType.UNKNOWN12))
 		{
-			writeD(0x00);
-			writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
 		}
 
 		if (containsMask(NpcInfoType.NAME))
-			writeS(_name);
+			packetWriter.writeS(_name);
 
 		if (containsMask(NpcInfoType.NAME_NPCSTRINGID))
-			writeD(_nameNpcString.getId()); // NPCStringId for name
+			packetWriter.writeD(_nameNpcString.getId()); // NPCStringId for name
 
 		if (containsMask(NpcInfoType.TITLE_NPCSTRINGID))
-			writeD(_titleNpcString.getId()); // NPCStringId for title
+			packetWriter.writeD(_titleNpcString.getId()); // NPCStringId for title
 
 		if (containsMask(NpcInfoType.PVP_FLAG))
-			writeC(_pvpFlag); // PVP flag
+			packetWriter.writeC(_pvpFlag); // PVP flag
 
 		if (containsMask(NpcInfoType.REPUTATION))
-			writeD(_karma); // Karma
+			packetWriter.writeD(_karma); // Karma
 
 		if (containsMask(NpcInfoType.CLAN))
 		{
-			writeD(_clanId);
-			writeD(_clanCrestId);
-			writeD(_largeClanCrestId);
-			writeD(_allyId);
-			writeD(_allyCrestId);
+			packetWriter.writeD(_clanId);
+			packetWriter.writeD(_clanCrestId);
+			packetWriter.writeD(_largeClanCrestId);
+			packetWriter.writeD(_allyId);
+			packetWriter.writeD(_allyCrestId);
 		}
 
 		if (containsMask(NpcInfoType.VISUAL_STATE))
-			writeC(_statusMask);
+			packetWriter.writeC(_statusMask);
 
 		if (containsMask(NpcInfoType.ABNORMALS))
 		{
-			writeH(_abnormalEffects.length);
+			packetWriter.writeH(_abnormalEffects.length);
 			for (AbnormalEffect abnormal : _abnormalEffects)
-				writeH(abnormal.getId());
+				packetWriter.writeH(abnormal.getId());
 		}
 	}
 }

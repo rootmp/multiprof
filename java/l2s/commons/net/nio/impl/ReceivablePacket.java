@@ -29,6 +29,6 @@ public abstract class ReceivablePacket<T extends MMOClient> extends l2s.commons.
 	{
 		return _client;
 	}
-
+	
 	protected abstract boolean read();
 }

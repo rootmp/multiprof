@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,7 +12,7 @@ import l2s.gameserver.model.matching.MatchingRoom;
 /**
  * @author VISTALL
  */
-public class ExMpccRoomMember extends L2GameServerPacket
+public class ExMpccRoomMember implements IClientOutgoingPacket
 {
 	private int _type;
 	private List<MpccRoomMemberInfo> _members = Collections.emptyList();
@@ -28,16 +29,16 @@ public class ExMpccRoomMember extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(_type);
-		writeD(_members.size());
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_members.size());
 		for (MpccRoomMemberInfo member : _members)
 		{
-			writeD(member.objectId);
-			writeS(member.name);
-			writeD(member.classId);
-			writeD(member.level);
-			writeD(member.location);
-			writeD(member.memberType);
+			packetWriter.writeD(member.objectId);
+			packetWriter.writeS(member.name);
+			packetWriter.writeD(member.classId);
+			packetWriter.writeD(member.level);
+			packetWriter.writeD(member.location);
+			packetWriter.writeD(member.memberType);
 		}
 	}
 

@@ -12,18 +12,18 @@ import l2s.gameserver.network.l2.s2c.events.ExBalthusEvent;
 /**
  * @author nexvill
  */
-public class RequestExBalthusToken extends L2GameClientPacket
+public class RequestExBalthusToken implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 		{
 			return;

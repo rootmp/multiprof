@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.base.Element;
 import l2s.gameserver.model.items.ItemInstance;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.items.ItemInstance;
 /**
  * @author Bonux
  */
-public class ExChangeAttributeInfo extends L2GameServerPacket
+public class ExChangeAttributeInfo implements IClientOutgoingPacket
 {
 	private int _crystalItemId;
 	private int _attributes;
@@ -24,10 +25,10 @@ public class ExChangeAttributeInfo extends L2GameServerPacket
 		}
 	}
 
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_crystalItemId);// unk??
-		writeD(_attributes);
-		writeD(_itemObjId);// unk??
+		packetWriter.writeD(_crystalItemId);// unk??
+		packetWriter.writeD(_attributes);
+		packetWriter.writeD(_itemObjId);// unk??
 	}
 }

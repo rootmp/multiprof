@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,7 @@ import l2s.gameserver.templates.item.ItemTemplate;
 /**
  * @author SYS
  */
-public class ExShowBaseAttributeCancelWindow extends L2GameServerPacket
+public class ExShowBaseAttributeCancelWindow implements IClientOutgoingPacket
 {
 	private final List<ItemInstance> _items = new ArrayList<ItemInstance>();
 
@@ -26,13 +27,13 @@ public class ExShowBaseAttributeCancelWindow extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_items.size());
+		packetWriter.writeD(_items.size());
 		for (ItemInstance item : _items)
 		{
-			writeD(item.getObjectId());
-			writeQ(getAttributeRemovePrice(item));
+			packetWriter.writeD(item.getObjectId());
+			packetWriter.writeQ(getAttributeRemovePrice(item));
 		}
 	}
 

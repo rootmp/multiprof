@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class Ex2NDPasswordAckPacket extends L2GameServerPacket
+public class Ex2NDPasswordAckPacket implements IClientOutgoingPacket
 {
 	public static final int SUCCESS = 0x00;
 	public static final int WRONG_PATTERN = 0x01;
@@ -13,10 +14,10 @@ public class Ex2NDPasswordAckPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(0x00);
-		writeD(_response == WRONG_PATTERN ? 0x01 : 0x00);
-		writeD(0x00);
+		packetWriter.writeC(0x00);
+		packetWriter.writeD(_response == WRONG_PATTERN ? 0x01 : 0x00);
+		packetWriter.writeD(0x00);
 	}
 }

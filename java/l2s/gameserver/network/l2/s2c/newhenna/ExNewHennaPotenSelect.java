@@ -3,7 +3,7 @@ package l2s.gameserver.network.l2.s2c.newhenna;
 import l2s.gameserver.model.actor.instances.player.Henna;
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExNewHennaPotenSelect extends L2GameServerPacket
+public class ExNewHennaPotenSelect implements IClientOutgoingPacket
 {
 	private final int cSlotID;
 	private final int nPotenID;
@@ -19,11 +19,11 @@ public class ExNewHennaPotenSelect extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(cSlotID);
-		writeD(nPotenID);
-		writeH(nActiveStep);
-		writeC(cSuccess);
+		packetWriter.writeC(cSlotID);
+		packetWriter.writeD(nPotenID);
+		packetWriter.writeH(nActiveStep);
+		packetWriter.writeC(cSuccess);
 	}
 }

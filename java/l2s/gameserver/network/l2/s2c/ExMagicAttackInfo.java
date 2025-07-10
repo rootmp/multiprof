@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author monithly
  */
-public class ExMagicAttackInfo extends L2GameServerPacket
+public class ExMagicAttackInfo implements IClientOutgoingPacket
 {
 	public final static int CRITICAL = 1;
 	public final static int CRITICAL_HEAL = 2;
@@ -25,10 +26,10 @@ public class ExMagicAttackInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_attackerId);
-		writeD(_targetId);
-		writeD(_info);
+		packetWriter.writeD(_attackerId);
+		packetWriter.writeD(_targetId);
+		packetWriter.writeD(_info);
 	}
 }

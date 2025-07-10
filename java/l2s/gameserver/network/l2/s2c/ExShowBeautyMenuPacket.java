@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author Bonux
  **/
-public class ExShowBeautyMenuPacket extends L2GameServerPacket
+public class ExShowBeautyMenuPacket implements IClientOutgoingPacket
 {
 	public static final int CHANGE_STYLE = 0x00;
 	public static final int RESTORE_STYLE = 0x01;
@@ -24,11 +25,11 @@ public class ExShowBeautyMenuPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type); // 0x00 - изменение стиля, 0x01 отмена стиля
-		writeD(_hairStyle);
-		writeD(_hairColor);
-		writeD(_face);
+		packetWriter.writeD(_type); // 0x00 - изменение стиля, 0x01 отмена стиля
+		packetWriter.writeD(_hairStyle);
+		packetWriter.writeD(_hairColor);
+		packetWriter.writeD(_face);
 	}
 }

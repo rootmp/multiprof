@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.instances.NpcInstance;
 
-public class MonRaceInfoPacket extends L2GameServerPacket
+public class MonRaceInfoPacket implements IClientOutgoingPacket
 {
 	private int _unknown1;
 	private int _unknown2;
@@ -22,33 +23,33 @@ public class MonRaceInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_unknown1);
-		writeD(_unknown2);
-		writeD(8);
+		packetWriter.writeD(_unknown1);
+		packetWriter.writeD(_unknown2);
+		packetWriter.writeD(8);
 		for (int i = 0; i < 8; i++)
 		{
-			writeD(_monsters[i].getObjectId()); // npcObjectID
-			writeD(_monsters[i].getNpcId() + 1000000); // npcID
-			writeD(14107); // origin X
-			writeD(181875 + 58 * (7 - i)); // origin Y
-			writeD(-3566); // origin Z
-			writeD(12080); // end X
-			writeD(181875 + 58 * (7 - i)); // end Y
-			writeD(-3566); // end Z
-			writeF(_monsters[i].getCurrentCollisionHeight()); // coll. height
-			writeF(_monsters[i].getCurrentCollisionRadius()); // coll. radius
-			writeD(120); // ?? unknown
+			packetWriter.writeD(_monsters[i].getObjectId()); // npcObjectID
+			packetWriter.writeD(_monsters[i].getNpcId() + 1000000); // npcID
+			packetWriter.writeD(14107); // origin X
+			packetWriter.writeD(181875 + 58 * (7 - i)); // origin Y
+			packetWriter.writeD(-3566); // origin Z
+			packetWriter.writeD(12080); // end X
+			packetWriter.writeD(181875 + 58 * (7 - i)); // end Y
+			packetWriter.writeD(-3566); // end Z
+			packetWriter.writeF(_monsters[i].getCurrentCollisionHeight()); // coll. height
+			packetWriter.writeF(_monsters[i].getCurrentCollisionRadius()); // coll. radius
+			packetWriter.writeD(120); // ?? unknown
 			for (int j = 0; j < 20; j++)
 			{
 				if (_unknown1 == 0)
 				{
-					writeC(_speeds[i][j]);
+					packetWriter.writeC(_speeds[i][j]);
 				}
 				else
 				{
-					writeC(0);
+					packetWriter.writeC(0);
 				}
 			}
 		}

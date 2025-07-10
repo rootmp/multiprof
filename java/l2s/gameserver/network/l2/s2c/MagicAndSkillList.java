@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
@@ -7,7 +8,7 @@ import l2s.gameserver.model.Creature;
  * 
  * @author SYS
  */
-public class MagicAndSkillList extends L2GameServerPacket
+public class MagicAndSkillList implements IClientOutgoingPacket
 {
 	private int _chaId;
 	private int _unk1;
@@ -21,10 +22,10 @@ public class MagicAndSkillList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_chaId);
-		writeD(_unk1); // в снифе было 20670
-		writeD(_unk2); // в снифе было 730502
+		packetWriter.writeD(_chaId);
+		packetWriter.writeD(_unk1); // в снифе было 20670
+		packetWriter.writeD(_unk2); // в снифе было 730502
 	}
 }

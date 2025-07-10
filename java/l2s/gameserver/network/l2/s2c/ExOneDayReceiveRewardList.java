@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -15,7 +16,7 @@ import l2s.gameserver.templates.dailymissions.DailyMissionTemplate;
 /**
  * @author Bonux
  */
-public class ExOneDayReceiveRewardList extends L2GameServerPacket
+public class ExOneDayReceiveRewardList implements IClientOutgoingPacket
 {
 	private static final SchedulingPattern DAILY_REUSE_PATTERN = new SchedulingPattern("30 6 * * *");
 	private static final SchedulingPattern WEEKLY_REUSE_PATTERN = new SchedulingPattern("30 6 * * 1");
@@ -68,22 +69,22 @@ public class ExOneDayReceiveRewardList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_dayRemainTime); // DayRemainTime
-		writeD(_weekRemainTime); // WeekRemainTime
-		writeD(_monthRemainTime); // MonthRemainTime
-		writeC(0); //
-		writeD(_classId);
-		writeD(_dayOfWeek);
-		writeD(_missions.size());
+		packetWriter.writeD(_dayRemainTime); // DayRemainTime
+		packetWriter.writeD(_weekRemainTime); // WeekRemainTime
+		packetWriter.writeD(_monthRemainTime); // MonthRemainTime
+		packetWriter.writeC(0); //
+		packetWriter.writeD(_classId);
+		packetWriter.writeD(_dayOfWeek);
+		packetWriter.writeD(_missions.size());
 		for (DailyMission mission : _missions)
 		{
-			writeH(mission.getId()); // Reward
-			writeC(mission.getStatus().ordinal()); // 1 Available, 2 Not Available, 3 Complete
-			writeC(0x01); // Requires multiple completion - YesOrNo (Deprecated)
-			writeD(mission.getCurrentProgress()); // Current progress
-			writeD(mission.getRequiredProgress()); // Required total
+			packetWriter.writeH(mission.getId()); // Reward
+			packetWriter.writeC(mission.getStatus().ordinal()); // 1 Available, 2 Not Available, 3 Complete
+			packetWriter.writeC(0x01); // Requires multiple completion - YesOrNo (Deprecated)
+			packetWriter.writeD(mission.getCurrentProgress()); // Current progress
+			packetWriter.writeD(mission.getRequiredProgress()); // Required total
 		}
 	}
 }

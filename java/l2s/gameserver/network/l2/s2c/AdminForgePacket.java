@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdminForgePacket extends L2GameServerPacket
+public class AdminForgePacket implements IClientOutgoingPacket
 {
 	private List<Part> _parts = new ArrayList<Part>();
 
@@ -32,7 +33,7 @@ public class AdminForgePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		for (Part p : _parts)
 		{
@@ -45,27 +46,27 @@ public class AdminForgePacket extends L2GameServerPacket
 	{
 		if ((b == 'C') || (b == 'c'))
 		{
-			writeC(Integer.decode(string));
+			packetWriter.writeC(Integer.decode(string));
 			return true;
 		}
 		else if ((b == 'D') || (b == 'd'))
 		{
-			writeD(Integer.decode(string));
+			packetWriter.writeD(Integer.decode(string));
 			return true;
 		}
 		else if ((b == 'H') || (b == 'h'))
 		{
-			writeH(Integer.decode(string));
+			packetWriter.writeH(Integer.decode(string));
 			return true;
 		}
 		else if ((b == 'F') || (b == 'f'))
 		{
-			writeF(Double.parseDouble(string));
+			packetWriter.writeF(Double.parseDouble(string));
 			return true;
 		}
 		else if ((b == 'S') || (b == 's'))
 		{
-			writeS(string);
+			packetWriter.writeS(string);
 			return true;
 		}
 		else if ((b == 'T') || (b == 't'))
@@ -80,7 +81,7 @@ public class AdminForgePacket extends L2GameServerPacket
 		}
 		else if ((b == 'Q') || (b == 'q'))
 		{
-			writeQ(Long.decode(string));
+			packetWriter.writeQ(Long.decode(string));
 			return true;
 		}
 		return false;

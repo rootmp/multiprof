@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.model.items.Warehouse.ItemClassComparator;
 import l2s.gameserver.templates.item.ItemTemplate;
 
-public class PrivateStoreBuyManageList extends L2GameServerPacket
+public class PrivateStoreBuyManageList implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final int _buyerId;
@@ -43,31 +44,31 @@ public class PrivateStoreBuyManageList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
+		packetWriter.writeC(_type);
 		if (_type == 1)
 		{
-			writeD(_buyerId);
-			writeQ(_adena);
-			writeD(_buyList0.size());// count for any items already added for sell
+			packetWriter.writeD(_buyerId);
+			packetWriter.writeQ(_adena);
+			packetWriter.writeD(_buyList0.size());// count for any items already added for sell
 			for (TradeItem bi : _buyList0)
 			{
 				writeItemInfo(bi);
-				writeQ(bi.getOwnersPrice());
-				writeQ(bi.getStorePrice());
-				writeQ(bi.getCount());
+				packetWriter.writeQ(bi.getOwnersPrice());
+				packetWriter.writeQ(bi.getStorePrice());
+				packetWriter.writeQ(bi.getCount());
 			}
-			writeD(_buyList.size());
+			packetWriter.writeD(_buyList.size());
 		}
 		else if (_type == 2)
 		{
-			writeD(_buyList.size());
-			writeD(_buyList.size());// for potential sells
+			packetWriter.writeD(_buyList.size());
+			packetWriter.writeD(_buyList.size());// for potential sells
 			for (TradeItem bi : _buyList)
 			{
 				writeItemInfo(bi);
-				writeQ(bi.getStorePrice());
+				packetWriter.writeQ(bi.getStorePrice());
 			}
 		}
 	}

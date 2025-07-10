@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExTacticalSign extends L2GameServerPacket
+public class ExTacticalSign implements IClientOutgoingPacket
 {
 	public static final int STAR = 1;
 	public static final int HEART = 2;
@@ -17,9 +18,9 @@ public class ExTacticalSign extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_targetId);
-		writeD(_signId);
+		packetWriter.writeD(_targetId);
+		packetWriter.writeD(_signId);
 	}
 }

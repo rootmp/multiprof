@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author VISTALL
  */
-public class ExPVPMatchUserDie extends L2GameServerPacket
+public class ExPVPMatchUserDie implements IClientOutgoingPacket
 {
 	private int _blueKills, _redKills;
 
@@ -14,9 +15,9 @@ public class ExPVPMatchUserDie extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_blueKills);
-		writeD(_redKills);
+		packetWriter.writeD(_blueKills);
+		packetWriter.writeD(_redKills);
 	}
 }

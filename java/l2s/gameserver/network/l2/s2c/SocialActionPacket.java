@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class SocialActionPacket extends L2GameServerPacket
+public class SocialActionPacket implements IClientOutgoingPacket
 {
 	private int _playerId;
 	private int _actionId;
@@ -44,10 +45,10 @@ public class SocialActionPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_playerId);
-		writeD(_actionId);
-		writeD(0); // ??? 0
+		packetWriter.writeD(_playerId);
+		packetWriter.writeD(_actionId);
+		packetWriter.writeD(0); // ??? 0
 	}
 }

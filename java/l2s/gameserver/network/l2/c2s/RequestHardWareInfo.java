@@ -1,6 +1,9 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
 
-public class RequestHardWareInfo extends L2GameClientPacket
+
+public class RequestHardWareInfo implements IClientIncomingPacket
 {
 	private String _mac;
 	private String _cpu;
@@ -24,33 +27,33 @@ public class RequestHardWareInfo extends L2GameClientPacket
 	private int _vgaVersion;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_mac = readS();
-		_windowsPlatformId = readD();
-		_windowsMajorVersion = readD();
-		_windowsMinorVersion = readD();
-		_windowsBuildNumber = readD();
-		_DXVersion = readD();
-		_DXRevision = readD();
-		_cpu = readS();
-		_cpuSpeed = readD();
-		_cpuCoreCount = readD();
-		_unk8 = readD();
-		_unk9 = readD();
-		_PhysMemory1 = readD();
-		_PhysMemory2 = readD();
-		_unk12 = readD();
-		_videoMemory = readD();
-		_unk14 = readD();
-		_vgaVersion = readD();
-		_vgaName = readS();
-		_driverVersion = readS();
+		_mac = packet.readS();
+		_windowsPlatformId = packet.readD();
+		_windowsMajorVersion = packet.readD();
+		_windowsMinorVersion = packet.readD();
+		_windowsBuildNumber = packet.readD();
+		_DXVersion = packet.readD();
+		_DXRevision = packet.readD();
+		_cpu = packet.readS();
+		_cpuSpeed = packet.readD();
+		_cpuCoreCount = packet.readD();
+		_unk8 = packet.readD();
+		_unk9 = packet.readD();
+		_PhysMemory1 = packet.readD();
+		_PhysMemory2 = packet.readD();
+		_unk12 = packet.readD();
+		_videoMemory = packet.readD();
+		_unk14 = packet.readD();
+		_vgaVersion = packet.readD();
+		_vgaName = packet.readS();
+		_driverVersion = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 	}
 }

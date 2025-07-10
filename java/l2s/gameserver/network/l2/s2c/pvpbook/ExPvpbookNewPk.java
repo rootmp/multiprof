@@ -2,7 +2,7 @@ package l2s.gameserver.network.l2.s2c.pvpbook;
 
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExPvpbookNewPk extends L2GameServerPacket
+public class ExPvpbookNewPk implements IClientOutgoingPacket
 {
 	private final String killerName;
 

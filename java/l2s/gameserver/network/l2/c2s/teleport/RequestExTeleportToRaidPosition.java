@@ -17,21 +17,21 @@ import l2s.gameserver.utils.ChatUtils;
 /**
  * @author nexvill
  */
-public class RequestExTeleportToRaidPosition extends L2GameClientPacket
+public class RequestExTeleportToRaidPosition implements IClientIncomingPacket
 {
 	private int _raidId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_raidId = readD();
+		_raidId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExOlympiadModePacket extends L2GameServerPacket
+public class ExOlympiadModePacket implements IClientOutgoingPacket
 {
 	// chc
 	private int _mode;
@@ -14,8 +15,8 @@ public class ExOlympiadModePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_mode);
+		packetWriter.writeC(_mode);
 	}
 }

@@ -9,20 +9,20 @@ import l2s.gameserver.templates.CollectionTemplate;
 /**
  * @author nexvill
  */
-public class ExCollectionActiveEvent extends L2GameServerPacket
+public class ExCollectionActiveEvent implements IClientOutgoingPacket
 {
 	public ExCollectionActiveEvent()
 	{
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		List<CollectionTemplate> collections = CollectionsHolder.getInstance().getCollectionsByTabId(7);
-		writeD(collections.size());
+		packetWriter.writeD(collections.size());
 		for (int i = 0; i < collections.size(); i++)
 		{
-			writeH(collections.get(i).getId()); // event collection id
+			packetWriter.writeH(collections.get(i).getId()); // event collection id
 		}
 	}
 }

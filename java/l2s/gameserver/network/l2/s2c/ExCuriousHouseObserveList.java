@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +7,7 @@ import java.util.List;
 /**
  * @author Bonux
  **/
-public class ExCuriousHouseObserveList extends L2GameServerPacket
+public class ExCuriousHouseObserveList implements IClientOutgoingPacket
 {
 	private static class ArenaInfo
 	{
@@ -44,15 +45,15 @@ public class ExCuriousHouseObserveList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_arenas.size()); // Arena Count
+		packetWriter.writeD(_arenas.size()); // Arena Count
 		for (ArenaInfo arena : _arenas)
 		{
-			writeD(arena.id); // Arena
-			writeS(arena.unk); // UNK
-			writeH(arena.status); // Status
-			writeD(arena.participants); // Patricipants Count
+			packetWriter.writeD(arena.id); // Arena
+			packetWriter.writeS(arena.unk); // UNK
+			packetWriter.writeH(arena.status); // Status
+			packetWriter.writeD(arena.participants); // Patricipants Count
 		}
 	}
 }

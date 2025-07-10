@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -8,7 +9,7 @@ import l2s.gameserver.model.items.ItemInstance;
  * @author VISTALL
  * @date 4:20/06.05.2011
  */
-public class ExGMViewQuestItemListPacket extends L2GameServerPacket
+public class ExGMViewQuestItemListPacket implements IClientOutgoingPacket
 {
 	private final int _type;
 	private int _size;
@@ -27,19 +28,19 @@ public class ExGMViewQuestItemListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
+		packetWriter.writeC(_type);
 		if (_type == 1)
 		{
-			writeS(_name);
-			writeD(_limit);
-			writeD(_size);
+			packetWriter.writeS(_name);
+			packetWriter.writeD(_limit);
+			packetWriter.writeD(_size);
 		}
 		else if (_type == 2)
 		{
-			writeD(_size);
-			writeD(_size);
+			packetWriter.writeD(_size);
+			packetWriter.writeD(_size);
 			for (ItemInstance temp : _items)
 			{
 				if (temp.getTemplate().isQuest())

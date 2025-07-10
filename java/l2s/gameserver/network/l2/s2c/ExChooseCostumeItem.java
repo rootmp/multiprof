@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExChooseCostumeItem extends L2GameServerPacket
+public class ExChooseCostumeItem implements IClientOutgoingPacket
 {
 	private final int itemId;
 
@@ -10,8 +11,8 @@ public class ExChooseCostumeItem extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(itemId); // ItemClassID*/
+		packetWriter.writeD(itemId); // ItemClassID*/
 	}
 }

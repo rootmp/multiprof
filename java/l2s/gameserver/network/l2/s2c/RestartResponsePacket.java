@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class RestartResponsePacket extends L2GameServerPacket
+public class RestartResponsePacket implements IClientOutgoingPacket
 {
 	public static final RestartResponsePacket OK = new RestartResponsePacket(1), FAIL = new RestartResponsePacket(0);
 	private String _message;
@@ -13,9 +14,9 @@ public class RestartResponsePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_param); // 01-ok
-		writeS(_message);
+		packetWriter.writeD(_param); // 01-ok
+		packetWriter.writeS(_message);
 	}
 }

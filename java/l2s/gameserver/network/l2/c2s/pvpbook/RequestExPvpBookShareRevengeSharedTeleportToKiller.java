@@ -14,14 +14,14 @@ import l2s.gameserver.skills.skillclasses.Call;
 /**
  * @author nexvill
  */
-public class RequestExPvpBookShareRevengeSharedTeleportToKiller extends L2GameClientPacket
+public class RequestExPvpBookShareRevengeSharedTeleportToKiller implements IClientIncomingPacket
 {
 	private String killedName;
 	private String killerName;
 	private static final SkillEntry HIDE_SKILLENTRY = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 922, 1);
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		killedName = readString();
 		killerName = readString();
@@ -29,9 +29,9 @@ public class RequestExPvpBookShareRevengeSharedTeleportToKiller extends L2GameCl
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

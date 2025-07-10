@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
@@ -18,7 +19,7 @@ import l2s.gameserver.templates.item.ItemTemplate;
 /**
  * @author nexvill
  */
-public class ExPurchaseLimitShopItemBuy extends L2GameServerPacket
+public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _listId;
@@ -36,7 +37,7 @@ public class ExPurchaseLimitShopItemBuy extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		final PcInventory inventory = _player.getInventory();
 
@@ -273,14 +274,14 @@ public class ExPurchaseLimitShopItemBuy extends L2GameServerPacket
 					remainLimit = 999;
 				}
 
-				writeC(0);
-				writeC(_listId);
-				writeD(_itemIndex);
-				writeD(1);
-				writeC(craftedSlot); // crafted slot
-				writeD(resultProductId);
-				writeD(resultProductCount);
-				writeD(remainLimit); // remain limit
+				packetWriter.writeC(0);
+				packetWriter.writeC(_listId);
+				packetWriter.writeD(_itemIndex);
+				packetWriter.writeD(1);
+				packetWriter.writeC(craftedSlot); // crafted slot
+				packetWriter.writeD(resultProductId);
+				packetWriter.writeD(resultProductCount);
+				packetWriter.writeD(remainLimit); // remain limit
 				break;
 			}
 		}

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.network.l2.components.ChatType;
@@ -24,11 +25,11 @@ public class NSPacket extends NpcStringContainer
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objId);
-		writeD(_type);
-		writeD(1000000 + _id);
+		packetWriter.writeD(_objId);
+		packetWriter.writeD(_type);
+		packetWriter.writeD(1000000 + _id);
 		writeElements();
 	}
 }

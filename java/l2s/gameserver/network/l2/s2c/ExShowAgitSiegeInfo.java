@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ import l2s.gameserver.tables.ClanTable;
 /**
  * @author Bonux
  **/
-public class ExShowAgitSiegeInfo extends L2GameServerPacket
+public class ExShowAgitSiegeInfo implements IClientOutgoingPacket
 {
 	private final List<AgitInfo> _infos;
 
@@ -36,16 +37,16 @@ public class ExShowAgitSiegeInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_infos.size());
+		packetWriter.writeD(_infos.size());
 		_infos.forEach(info ->
 		{
-			writeD(info.ch_id);
-			writeD(info.siegeDate);
+			packetWriter.writeD(info.ch_id);
+			packetWriter.writeD(info.siegeDate);
 			writeString(info.clan_name);
 			writeString(info.leader_name);
-			writeH(info.getType);
+			packetWriter.writeH(info.getType);
 		});
 	}
 

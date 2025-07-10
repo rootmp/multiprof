@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.model.Creature;
  * 0000: 3f 2a 89 00 4c 01 00 00 00 0a 15 00 00 66 fe 00 ?*..L........f.. 0010:
  * 00 7c f1 ff ff .|... format dd ddd
  */
-public class ChangeWaitTypePacket extends L2GameServerPacket
+public class ChangeWaitTypePacket implements IClientOutgoingPacket
 {
 	private int _objectId;
 	private int _moveType;
@@ -27,12 +28,12 @@ public class ChangeWaitTypePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_moveType);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_moveType);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
+		packetWriter.writeD(_z);
 	}
 }

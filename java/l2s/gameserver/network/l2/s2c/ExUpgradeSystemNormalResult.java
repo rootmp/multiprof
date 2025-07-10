@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 import java.util.Collections;
 
 import l2s.gameserver.model.items.ItemInfo;
 
-public class ExUpgradeSystemNormalResult extends L2GameServerPacket
+public class ExUpgradeSystemNormalResult implements IClientOutgoingPacket
 {
 	public static final ExUpgradeSystemNormalResult FAIL = new ExUpgradeSystemNormalResult();
 
@@ -31,33 +32,33 @@ public class ExUpgradeSystemNormalResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(result); // Result
-		writeD(upgradeId); // ResultID
-		writeC(success); // IsSuccess
+		packetWriter.writeH(result); // Result
+		packetWriter.writeD(upgradeId); // ResultID
+		packetWriter.writeC(success); // IsSuccess
 		int unk = 0;
-		writeD(unk); // Count
+		packetWriter.writeD(unk); // Count
 		if (unk <= 0)
 		{
-			writeC(0); // IsBonus
-			writeD(items.size());
+			packetWriter.writeC(0); // IsBonus
+			packetWriter.writeD(items.size());
 			for (ItemInfo item : items)
 			{
-				writeD(item.getObjectId()); // ItemServerID
-				writeD(item.getItemId()); // ItemClassID
-				writeD(item.getEnchantLevel()); // ItemEnchant
-				writeD((int) item.getCount()); // ItemCount
+				packetWriter.writeD(item.getObjectId()); // ItemServerID
+				packetWriter.writeD(item.getItemId()); // ItemClassID
+				packetWriter.writeD(item.getEnchantLevel()); // ItemEnchant
+				packetWriter.writeD((int) item.getCount()); // ItemCount
 			}
 		}
 		else
 		{
 			for (ItemInfo item : items)
 			{
-				writeD(item.getObjectId()); // ItemServerID
-				writeD(item.getItemId()); // ItemClassID
-				writeD(item.getEnchantLevel()); // ItemEnchant
-				writeD((int) item.getCount()); // ItemCount
+				packetWriter.writeD(item.getObjectId()); // ItemServerID
+				packetWriter.writeD(item.getItemId()); // ItemClassID
+				packetWriter.writeD(item.getEnchantLevel()); // ItemEnchant
+				packetWriter.writeD((int) item.getCount()); // ItemCount
 			}
 		}
 	}

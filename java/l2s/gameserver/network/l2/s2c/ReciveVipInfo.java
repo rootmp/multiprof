@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.templates.VIPTemplate;
 /**
  * @author Bonux
  **/
-public class ReciveVipInfo extends L2GameServerPacket
+public class ReciveVipInfo implements IClientOutgoingPacket
 {
 	private final int _vipLevel;
 	private final long _vipPoints;
@@ -35,14 +36,14 @@ public class ReciveVipInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_vipLevel); // VIP Level
-		writeQ(_vipPoints); // VIP Points
-		writeD(_timeLeftForConsume); // Time left for consume VIP points
-		writeQ(_vipPointsForNextLevel); // VIP points for next level
-		writeQ(_pointsCountForConsume); // Points count for consume
-		writeC(_vipLevelAfterConsume); // VIP level after consume
-		writeQ(_totalConsumedPoints); // Total consumed points
+		packetWriter.writeC(_vipLevel); // VIP Level
+		packetWriter.writeQ(_vipPoints); // VIP Points
+		packetWriter.writeD(_timeLeftForConsume); // Time left for consume VIP points
+		packetWriter.writeQ(_vipPointsForNextLevel); // VIP points for next level
+		packetWriter.writeQ(_pointsCountForConsume); // Points count for consume
+		packetWriter.writeC(_vipLevelAfterConsume); // VIP level after consume
+		packetWriter.writeQ(_totalConsumedPoints); // Total consumed points
 	}
 }

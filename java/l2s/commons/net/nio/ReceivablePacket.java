@@ -46,17 +46,8 @@ public abstract class ReceivablePacket<T> extends AbstractPacket<T> implements R
 	{
 		StringBuilder sb = new StringBuilder();
 		char ch;
-		while ((ch = getByteBuffer().getChar()) != 0)
+		while((ch = getByteBuffer().getChar()) != 0)
 			sb.append(ch);
-		return sb.toString();
-	}
-
-	public String readString()
-	{
-		StringBuilder sb = new StringBuilder();
-		int stringLength = readH();
-		for (int i = 0; i < stringLength; i++)
-			sb.append(getByteBuffer().getChar());
 		return sb.toString();
 	}
 

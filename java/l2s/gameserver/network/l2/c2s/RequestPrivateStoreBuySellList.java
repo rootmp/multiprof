@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +22,7 @@ import l2s.gameserver.utils.TradeHelper;
 /**
  * Список продаваемого в приватный магазин покупки
  */
-public class RequestPrivateStoreBuySellList extends L2GameClientPacket
+public class RequestPrivateStoreBuySellList implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(RequestPrivateStoreBuySellList.class);
 
@@ -29,10 +32,10 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 	private long[] _itemP; // price
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_buyerId = readD();
-		_count = readD();
+		_buyerId = packet.readD();
+		_count = packet.readD();
 
 		if (_count * 28 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
 		{
@@ -46,12 +49,12 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 
 		for (int i = 0; i < _count; i++)
 		{
-			_items[i] = readD();
-			readD(); // itemId
+			_items[i] = packet.readD();
+			packet.readD(); // itemId
 			readH(); // Enchant Level
 			readH(); // Have Name
-			_itemQ[i] = readQ(); // Count
-			_itemP[i] = readQ(); // Price
+			_itemQ[i] = packet.readQ(); // Count
+			_itemP[i] = packet.readQ(); // Price
 
 			if (_itemQ[i] < 1 || _itemP[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
@@ -59,25 +62,25 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 				break;
 			}
 
-			readD(); // Variation ID 1
-			readD(); // Variation ID 2
-			readD(); // Visible ID
+			packet.readD(); // Variation ID 1
+			packet.readD(); // Variation ID 2
+			packet.readD(); // Visible ID
 
-			int saCount = readC();
+			int saCount = packet.readC();
 			for (int s = 0; s < saCount; s++)
-				readD(); // TODO[UNDERGROUND]: SA 1 Abnormal
+				packet.readD(); // TODO[UNDERGROUND]: SA 1 Abnormal
 
-			saCount = readC();
+			saCount = packet.readC();
 			for (int s = 0; s < saCount; s++)
-				readD(); // TODO[UNDERGROUND]: SA 2 Abnormal
+				packet.readD(); // TODO[UNDERGROUND]: SA 2 Abnormal
 		}
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player seller = getClient().getActiveChar();
+		Player seller = client.getActiveChar();
 		if (seller == null || _count == 0)
 			return;
 

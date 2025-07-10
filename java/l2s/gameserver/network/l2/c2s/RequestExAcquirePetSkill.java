@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.PetInstance;
@@ -11,22 +14,22 @@ import l2s.gameserver.skills.enums.SkillEntryType;
 /**
  * Written by Eden, on 25.02.2021
  */
-public class RequestExAcquirePetSkill extends L2GameClientPacket
+public class RequestExAcquirePetSkill implements IClientIncomingPacket
 {
 	private int skillId, skillLevel;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		skillId = readD();
-		skillLevel = readD();
+		skillId = packet.readD();
+		skillLevel = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 		{
 			return;

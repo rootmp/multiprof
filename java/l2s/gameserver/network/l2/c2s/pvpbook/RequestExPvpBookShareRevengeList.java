@@ -7,21 +7,21 @@ import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpBookShareRevengeList;
 /**
  * @author nexvill
  */
-public class RequestExPvpBookShareRevengeList extends L2GameClientPacket
+public class RequestExPvpBookShareRevengeList implements IClientIncomingPacket
 {
 	private int _userId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_userId = readD();
+		_userId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

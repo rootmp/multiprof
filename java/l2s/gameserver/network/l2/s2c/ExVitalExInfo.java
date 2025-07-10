@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author nexvill
  */
-public class ExVitalExInfo extends L2GameServerPacket
+public class ExVitalExInfo implements IClientOutgoingPacket
 {
 	private final int _vitalityBonus;
 	private final int _additionalBonus;
@@ -19,11 +20,11 @@ public class ExVitalExInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-	    writeD((int) (_player.getLimitedSayhaGraceEndTime() / 1000)); // currentmilis / 1000, when limited sayha ends
-	    writeD((int) (_player.getSayhaGraceSupportEndTime() / 1000)); // currentmilis / 1000, when sayha grace suport ends
-	    writeD(_vitalityBonus); // Limited sayha bonus
-	    writeD(_additionalBonus); // Limited sayha bonus adena (shown as 130%, actually 30%)
+	    packetWriter.writeD((int) (_player.getLimitedSayhaGraceEndTime() / 1000)); // currentmilis / 1000, when limited sayha ends
+	    packetWriter.writeD((int) (_player.getSayhaGraceSupportEndTime() / 1000)); // currentmilis / 1000, when sayha grace suport ends
+	    packetWriter.writeD(_vitalityBonus); // Limited sayha bonus
+	    packetWriter.writeD(_additionalBonus); // Limited sayha bonus adena (shown as 130%, actually 30%)
 	}
 }

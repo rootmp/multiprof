@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.napile.primitive.pair.IntObjectPair;
 
@@ -24,21 +27,21 @@ import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.TeleportUtils;
 
-public class RequestRestartPoint extends L2GameClientPacket
+public class RequestRestartPoint implements IClientIncomingPacket
 {
 	private RestartType _restartType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_restartType = ArrayUtils.valid(RestartType.VALUES, readD());
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 
 		if (_restartType == null || activeChar == null)
 			return;

@@ -2,7 +2,7 @@ package l2s.gameserver.network.l2.s2c.newhenna;
 
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExNewHennaUnequip extends L2GameServerPacket
+public class ExNewHennaUnequip implements IClientOutgoingPacket
 {
 	private final int cSlotID;
 	private final boolean cSuccess;
@@ -14,9 +14,9 @@ public class ExNewHennaUnequip extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(cSlotID);
-		writeC(cSuccess);
+		packetWriter.writeC(cSlotID);
+		packetWriter.writeC(cSuccess);
 	}
 }

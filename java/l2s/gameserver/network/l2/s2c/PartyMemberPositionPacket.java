@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +7,7 @@ import java.util.Map;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
 
-public class PartyMemberPositionPacket extends L2GameServerPacket
+public class PartyMemberPositionPacket implements IClientOutgoingPacket
 {
 	private final Map<Integer, Location> positions = new HashMap<Integer, Location>();
 
@@ -22,15 +23,15 @@ public class PartyMemberPositionPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(positions.size());
+		packetWriter.writeD(positions.size());
 		for (Map.Entry<Integer, Location> e : positions.entrySet())
 		{
-			writeD(e.getKey());
-			writeD(e.getValue().x);
-			writeD(e.getValue().y);
-			writeD(e.getValue().z);
+			packetWriter.writeD(e.getKey());
+			packetWriter.writeD(e.getValue().x);
+			packetWriter.writeD(e.getValue().y);
+			packetWriter.writeD(e.getValue().z);
 		}
 	}
 }

@@ -1,19 +1,22 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
 
-public class RequestChangeBookMarkSlot extends L2GameClientPacket
+
+public class RequestChangeBookMarkSlot implements IClientIncomingPacket
 {
 	private int slot_old, slot_new;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		slot_old = readD();
-		slot_new = readD();
+		slot_old = packet.readD();
+		slot_new = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		// TODO not implemented
 	}

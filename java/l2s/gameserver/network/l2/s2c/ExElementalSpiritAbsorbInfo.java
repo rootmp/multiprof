@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,7 +13,7 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author Bonux
  **/
-public class ExElementalSpiritAbsorbInfo extends L2GameServerPacket
+public class ExElementalSpiritAbsorbInfo implements IClientOutgoingPacket
 {
 	private final int _unk;
 	private final int _elementId;
@@ -38,36 +39,36 @@ public class ExElementalSpiritAbsorbInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_unk); // Value received from client (RequestExElementalSpiritAbsorbInfo)
-		writeC(_elementId); // Element ID
+		packetWriter.writeC(_unk); // Value received from client (RequestExElementalSpiritAbsorbInfo)
+		packetWriter.writeC(_elementId); // Element ID
 		if (_elemental != null)
 		{
-			writeC(_elemental.getEvolutionLevel()); // Unk
-			writeQ(_elemental.getExp()); // Current Exp
-			writeQ(_elemental.getMaxExp()); // Min Exp For Current Level
-			writeQ(_elemental.getEvolution().getMaxExp()); // Max Exp For Current Level
-			writeD(_elemental.getLevel()); // Level 1-10
-			writeD(_elemental.getEvolution().getMaxLevel()); // Max Level
+			packetWriter.writeC(_elemental.getEvolutionLevel()); // Unk
+			packetWriter.writeQ(_elemental.getExp()); // Current Exp
+			packetWriter.writeQ(_elemental.getMaxExp()); // Min Exp For Current Level
+			packetWriter.writeQ(_elemental.getEvolution().getMaxExp()); // Max Exp For Current Level
+			packetWriter.writeD(_elemental.getLevel()); // Level 1-10
+			packetWriter.writeD(_elemental.getEvolution().getMaxLevel()); // Max Level
 
-			writeD(_absorbItems.size()); // Elementals Count
+			packetWriter.writeD(_absorbItems.size()); // Elementals Count
 			for (ElementalAbsorbItem item : _absorbItems)
 			{
-				writeD(item.getId()); // Item ID
-				writeD((int) item.getCount()); // Item Count
-				writeD(item.getPower()); // Exp Per Item
+				packetWriter.writeD(item.getId()); // Item ID
+				packetWriter.writeD((int) item.getCount()); // Item Count
+				packetWriter.writeD(item.getPower()); // Exp Per Item
 			}
 		}
 		else
 		{
-			writeC(0); // Unk
-			writeQ(0); // Current Exp
-			writeQ(0); // Min Exp For Current Level
-			writeQ(0); // Max Exp For Current Level
-			writeD(0); // Level 1-10
-			writeD(0); // Max Level
-			writeD(0); // Elementals Count
+			packetWriter.writeC(0); // Unk
+			packetWriter.writeQ(0); // Current Exp
+			packetWriter.writeQ(0); // Min Exp For Current Level
+			packetWriter.writeQ(0); // Max Exp For Current Level
+			packetWriter.writeD(0); // Level 1-10
+			packetWriter.writeD(0); // Max Level
+			packetWriter.writeD(0); // Elementals Count
 		}
 	}
 }

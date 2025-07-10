@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.Set;
 
@@ -23,7 +26,7 @@ import l2s.gameserver.utils.Log;
  * Шлется клиентом при согласии принять письмо в {@link ExReplyReceivedPost}.
  * Если письмо с оплатой то создателю письма шлется запрошенная сумма.
  */
-public class RequestExReceivePost extends L2GameClientPacket
+public class RequestExReceivePost implements IClientIncomingPacket
 {
 	private int postId;
 
@@ -31,16 +34,16 @@ public class RequestExReceivePost extends L2GameClientPacket
 	 * format: d
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		postId = readD();
+		postId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

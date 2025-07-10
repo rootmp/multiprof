@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,7 +10,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.BlockListPacket;
 
-public class RequestBlock extends L2GameClientPacket
+public class RequestBlock implements IClientIncomingPacket
 {
 	// format: cd(S)
 	private static final Logger _log = LoggerFactory.getLogger(RequestBlock.class);
@@ -22,9 +25,9 @@ public class RequestBlock extends L2GameClientPacket
 	private String targetName = null;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_type = readD(); // 0x00 - block, 0x01 - unblock, 0x03 - allblock, 0x04 - allunblock
+		_type = packet.readD(); // 0x00 - block, 0x01 - unblock, 0x03 - allblock, 0x04 - allunblock
 
 		if (_type == BLOCK || _type == UNBLOCK)
 			targetName = readS(16);
@@ -32,9 +35,9 @@ public class RequestBlock extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

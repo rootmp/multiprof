@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.pair.IntObjectPair;
@@ -14,7 +15,7 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class ExOlympiadHeroAndLegendInfo extends L2GameServerPacket
+public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 {
 	private final IntObjectMap<StatsSet> heroes;
 
@@ -24,24 +25,24 @@ public class ExOlympiadHeroAndLegendInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(78); // unk, 78 on JP
-		writeC(0); // unk 0
+		packetWriter.writeC(78); // unk, 78 on JP
+		packetWriter.writeC(0); // unk 0
 		writeString(""); // legend name
 		writeString(""); // clan name
-		writeD(Config.REQUEST_ID); // server id
-		writeD(0); // race
-		writeD(0); // sex
-		writeD(0); // class id
-		writeD(0); // level
-		writeD(0); // legend times
-		writeD(0); // wins
-		writeD(0); // loses
-		writeD(0); // points
-		writeD(0); // clan level
+		packetWriter.writeD(Config.REQUEST_ID); // server id
+		packetWriter.writeD(0); // race
+		packetWriter.writeD(0); // sex
+		packetWriter.writeD(0); // class id
+		packetWriter.writeD(0); // level
+		packetWriter.writeD(0); // legend times
+		packetWriter.writeD(0); // wins
+		packetWriter.writeD(0); // loses
+		packetWriter.writeD(0); // points
+		packetWriter.writeD(0); // clan level
 
-		writeD(Hero.getInstance().getHeroes().size());
+		packetWriter.writeD(Hero.getInstance().getHeroes().size());
 		for (IntObjectPair<StatsSet> pair : heroes.entrySet())
 		{
 			StatsSet hero = pair.getValue();
@@ -68,25 +69,25 @@ public class ExOlympiadHeroAndLegendInfo extends L2GameServerPacket
 
 			writeString(hero.getString(Hero.CHAR_NAME));
 			writeString(hero.getString(Hero.CLAN_NAME));
-			writeD(Config.REQUEST_ID);
+			packetWriter.writeD(Config.REQUEST_ID);
 			ClassId classId = ClassId.valueOf(hero.getInteger(Hero.CLASS_ID));
-			writeD(classId.getRace().ordinal());
-			writeD(sex); // sex
-			writeD(classId.getId());
-			writeD(level); // level
-			writeD(hero.getInteger(Hero.COUNT));
-			writeD(wins);
-			writeD(loses);
-			writeD(points);
+			packetWriter.writeD(classId.getRace().ordinal());
+			packetWriter.writeD(sex); // sex
+			packetWriter.writeD(classId.getId());
+			packetWriter.writeD(level); // level
+			packetWriter.writeD(hero.getInteger(Hero.COUNT));
+			packetWriter.writeD(wins);
+			packetWriter.writeD(loses);
+			packetWriter.writeD(points);
 
 			Clan clan = ClanTable.getInstance().getClanByCharId(pair.getKey());
 			if (clan != null)
 			{
-				writeD(clan.getLevel());
+				packetWriter.writeD(clan.getLevel());
 			}
 			else
 			{
-				writeD(0);
+				packetWriter.writeD(0);
 			}
 		}
 	}

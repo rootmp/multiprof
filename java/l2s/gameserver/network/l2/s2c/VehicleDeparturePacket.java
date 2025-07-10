@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.entity.boat.Boat;
 
-public class VehicleDeparturePacket extends L2GameServerPacket
+public class VehicleDeparturePacket implements IClientOutgoingPacket
 {
 	private int _moveSpeed, _rotationSpeed;
 	private int _boatObjId;
@@ -18,13 +19,13 @@ public class VehicleDeparturePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_boatObjId);
-		writeD(_moveSpeed);
-		writeD(_rotationSpeed);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
+		packetWriter.writeD(_boatObjId);
+		packetWriter.writeD(_moveSpeed);
+		packetWriter.writeD(_rotationSpeed);
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
 	}
 }

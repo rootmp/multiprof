@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,7 +12,7 @@ import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.network.l2.ServerPacketOpcodes;
 import l2s.gameserver.templates.npc.BuyListTemplate;
 
-public abstract class ExBuySellListPacket extends L2GameServerPacket
+public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 {
 	@Override
 	protected ServerPacketOpcodes getOpcodes()
@@ -48,17 +49,17 @@ public abstract class ExBuySellListPacket extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0x00); // BUY LIST TYPE
-			writeQ(_adena); // current money
-			writeD(_listId);
-			writeD(_inventoryUsedSlots); // TODO [Bonux] Awakening
-			writeH(_buyList.size());
+			packetWriter.writeD(0x00); // BUY LIST TYPE
+			packetWriter.writeQ(_adena); // current money
+			packetWriter.writeD(_listId);
+			packetWriter.writeD(_inventoryUsedSlots); // TODO [Bonux] Awakening
+			packetWriter.writeH(_buyList.size());
 			for (TradeItem item : _buyList)
 			{
 				writeItemInfo(item, item.getCurrentValue());
-				writeQ((long) (item.getOwnersPrice() * (1. + _taxRate)));
+				packetWriter.writeQ((long) (item.getOwnersPrice() * (1. + _taxRate)));
 			}
 		}
 	}
@@ -102,30 +103,30 @@ public abstract class ExBuySellListPacket extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0x01); // SELL/REFUND LIST TYPE
-			writeD(_inventoryUsedSlots); // TODO [Bonux] Awakening
-			writeH(_sellList.size());
+			packetWriter.writeD(0x01); // SELL/REFUND LIST TYPE
+			packetWriter.writeD(_inventoryUsedSlots); // TODO [Bonux] Awakening
+			packetWriter.writeH(_sellList.size());
 			for (TradeItem item : _sellList)
 			{
 				writeItemInfo(item);
 				if (Config.ALT_SELL_ITEM_ONE_ADENA)
-					writeQ(1);
+					packetWriter.writeQ(1);
 				else
-					writeQ(item.getReferencePrice() / 2);
+					packetWriter.writeQ(item.getReferencePrice() / 2);
 			}
-			writeH(_refundList.size());
+			packetWriter.writeH(_refundList.size());
 			for (TradeItem item : _refundList)
 			{
 				writeItemInfo(item);
-				writeD(item.getObjectId());
+				packetWriter.writeD(item.getObjectId());
 				if (Config.ALT_SELL_ITEM_ONE_ADENA)
-					writeQ(item.getCount());
+					packetWriter.writeQ(item.getCount());
 				else
-					writeQ((long) ((item.getCount() * item.getReferencePrice() / 2) * (1. - _taxRate)));
+					packetWriter.writeQ((long) ((item.getCount() * item.getReferencePrice() / 2) * (1. - _taxRate)));
 			}
-			writeC(_done);
+			packetWriter.writeC(_done);
 		}
 	}
 }

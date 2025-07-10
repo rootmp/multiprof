@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExSteadyBoxReward extends L2GameServerPacket
+public class ExSteadyBoxReward implements IClientOutgoingPacket
 {
 	private int _slotId, _itemId, _itemCount;
 
@@ -17,12 +17,12 @@ public class ExSteadyBoxReward extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_slotId); // slot id
-		writeD(_itemId); // item id
-		writeD(_itemCount); // item count
-		writeD(0); // ?
-		writeD(0); // ?
+		packetWriter.writeD(_slotId); // slot id
+		packetWriter.writeD(_itemId); // item id
+		packetWriter.writeD(_itemCount); // item count
+		packetWriter.writeD(0); // ?
+		packetWriter.writeD(0); // ?
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Elemental;
@@ -7,15 +10,15 @@ import l2s.gameserver.network.l2.s2c.ExElementalSpiritSetTalent;
 /**
  * @author Bonux
  **/
-public class RequestExElementalSpiritSetTalent extends L2GameClientPacket
+public class RequestExElementalSpiritSetTalent implements IClientIncomingPacket
 {
 	private int _elementId;
 	private int[][] _talents;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_elementId = readC();
+		_elementId = packet.readC();
 		_talents = new int[readC()][];
 		for (int i = 0; i < _talents.length; i++)
 		{
@@ -29,9 +32,9 @@ public class RequestExElementalSpiritSetTalent extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.pledge.Clan;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.pledge.Clan;
  * sample 0000: cd b0 98 a0 48 1e 01 00 00 00 00 00 00 00 00 00 ....H...........
  * 0010: 00 00 00 00 00 ..... format ddddd
  */
-public class PledgeStatusChangedPacket extends L2GameServerPacket
+public class PledgeStatusChangedPacket implements IClientOutgoingPacket
 {
 	private final int leader_id;
 	private final int clan_id;
@@ -25,15 +26,15 @@ public class PledgeStatusChangedPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(Config.REQUEST_ID);
-		writeD(leader_id);
-		writeD(clan_id);
-		writeD(crestId);
-		writeD(allyId);
-		writeD(0);
-		writeD(0);
-		writeD(0);
+		packetWriter.writeD(Config.REQUEST_ID);
+		packetWriter.writeD(leader_id);
+		packetWriter.writeD(clan_id);
+		packetWriter.writeD(crestId);
+		packetWriter.writeD(allyId);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
 	}
 }

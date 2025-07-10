@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ServerCloseSocketPacket extends L2GameServerPacket
+public class ServerCloseSocketPacket implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket STATIC = new ServerCloseSocketPacket();
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 	}
 }

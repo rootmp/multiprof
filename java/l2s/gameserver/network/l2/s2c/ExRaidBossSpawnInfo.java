@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import org.napile.primitive.sets.IntSet;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.model.instances.NpcInstance;
 /**
  * @author Bonux
  **/
-public class ExRaidBossSpawnInfo extends L2GameServerPacket
+public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
 {
 	private final IntSet _aliveBosses;
 	private int _count;
@@ -23,9 +24,9 @@ public class ExRaidBossSpawnInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_count);
+		packetWriter.writeD(_count);
 		boolean baiumSpawned = false;
 		for (NpcInstance npc : GameObjectsStorage.getNpcs())
 		{
@@ -36,28 +37,28 @@ public class ExRaidBossSpawnInfo extends L2GameServerPacket
 		{
 			if (_aliveBosses.contains(_ids[i]))
 			{
-				writeD(_ids[i]); // boss id
+				packetWriter.writeD(_ids[i]); // boss id
 				if (GameObjectsStorage.getNpcs(true, _ids[i]).get(0).isInCombat())
 				{
-					writeD(2); // in combat
+					packetWriter.writeD(2); // in combat
 				}
 				else
 				{
-					writeD(1); // alive
+					packetWriter.writeD(1); // alive
 				}
-				writeD(0); // time after death
+				packetWriter.writeD(0); // time after death
 			}
 			else if ((_ids[i] == 29020) && baiumSpawned)
 			{
-				writeD(_ids[i]);
-				writeD(1);
-				writeD(0);
+				packetWriter.writeD(_ids[i]);
+				packetWriter.writeD(1);
+				packetWriter.writeD(0);
 			}
 			else
 			{
-				writeD(_ids[i]);
-				writeD(0);
-				writeD(0);
+				packetWriter.writeD(_ids[i]);
+				packetWriter.writeD(0);
+				packetWriter.writeD(0);
 			}
 		}
 	}

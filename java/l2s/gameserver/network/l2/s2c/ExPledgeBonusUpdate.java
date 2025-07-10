@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExPledgeBonusUpdate extends L2GameServerPacket
+public class ExPledgeBonusUpdate implements IClientOutgoingPacket
 {
 	public static enum BonusType
 	{
@@ -21,9 +22,9 @@ public class ExPledgeBonusUpdate extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type.ordinal()); // Bonus type
-		writeD(_value); // Progress amount
+		packetWriter.writeC(_type.ordinal()); // Bonus type
+		packetWriter.writeD(_value); // Progress amount
 	}
 }

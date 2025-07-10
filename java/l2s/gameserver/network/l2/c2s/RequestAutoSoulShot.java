@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.handler.items.IItemHandler;
@@ -12,25 +15,25 @@ import l2s.gameserver.network.l2.s2c.ExAutoSoulShot;
  * 
  * @param decrypt
  */
-public class RequestAutoSoulShot extends L2GameClientPacket
+public class RequestAutoSoulShot implements IClientIncomingPacket
 {
 	private int _itemId;
 	private int _action; // 3 = change, 2 = deactivate, 1 = on : 0 = off;
 	private SoulShotType _type;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_itemId = readD();
-		_action = readD();
+		_itemId = packet.readD();
+		_action = packet.readD();
 		_type = SoulShotType.VALUES[readD()];
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

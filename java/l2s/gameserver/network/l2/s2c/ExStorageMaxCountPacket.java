@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 
-public class ExStorageMaxCountPacket extends L2GameServerPacket
+public class ExStorageMaxCountPacket implements IClientOutgoingPacket
 {
 	private int _inventory;
 	private int _warehouse;
@@ -28,18 +29,18 @@ public class ExStorageMaxCountPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_inventory);
-		writeD(_warehouse);
-		writeD(_clan);
-		writeD(_privateSell);
-		writeD(_privateBuy);
-		writeD(_recipeDwarven);
-		writeD(_recipeCommon);
-		writeD(_inventoryExtraSlots); // belt inventory slots increase count
-		writeD(_questItemsLimit); // quests list by off 100 maximum
-		writeD(40); // ??? 40 slots
-		writeD(40); // ??? 40 slots
+		packetWriter.writeD(_inventory);
+		packetWriter.writeD(_warehouse);
+		packetWriter.writeD(_clan);
+		packetWriter.writeD(_privateSell);
+		packetWriter.writeD(_privateBuy);
+		packetWriter.writeD(_recipeDwarven);
+		packetWriter.writeD(_recipeCommon);
+		packetWriter.writeD(_inventoryExtraSlots); // belt inventory slots increase count
+		packetWriter.writeD(_questItemsLimit); // quests list by off 100 maximum
+		packetWriter.writeD(40); // ??? 40 slots
+		packetWriter.writeD(40); // ??? 40 slots
 	}
 }

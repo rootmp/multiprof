@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExSetPartyLooting extends L2GameServerPacket
+public class ExSetPartyLooting implements IClientOutgoingPacket
 {
 	private int _result;
 	private int _mode;
@@ -12,9 +13,9 @@ public class ExSetPartyLooting extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_result);
-		writeD(_mode);
+		packetWriter.writeD(_result);
+		packetWriter.writeD(_mode);
 	}
 }

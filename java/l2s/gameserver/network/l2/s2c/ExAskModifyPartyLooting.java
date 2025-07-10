@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExAskModifyPartyLooting extends L2GameServerPacket
+public class ExAskModifyPartyLooting implements IClientOutgoingPacket
 {
 	private String _requestor;
 	private int _mode;
@@ -12,9 +13,9 @@ public class ExAskModifyPartyLooting extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_requestor);
-		writeD(_mode);
+		packetWriter.writeS(_requestor);
+		packetWriter.writeD(_mode);
 	}
 }

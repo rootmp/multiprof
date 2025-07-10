@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExMultiSellResult extends L2GameServerPacket
+public class ExMultiSellResult implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket SUCCESS = new ExMultiSellResult();
 
@@ -26,10 +27,10 @@ public class ExMultiSellResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_success); // Success
-		writeD(_unk1); // Unk
-		writeD(_unk2); // Unk
+		packetWriter.writeC(_success); // Success
+		packetWriter.writeD(_unk1); // Unk
+		packetWriter.writeD(_unk2); // Unk
 	}
 }

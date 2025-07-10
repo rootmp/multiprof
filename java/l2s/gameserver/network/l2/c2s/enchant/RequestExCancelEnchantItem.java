@@ -4,18 +4,18 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
 import l2s.gameserver.network.l2.s2c.enchant.EnchantResult;
 
-public class RequestExCancelEnchantItem extends L2GameClientPacket
+public class RequestExCancelEnchantItem implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar != null)
 		{
 			activeChar.setEnchantScroll(null);

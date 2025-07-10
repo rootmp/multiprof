@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
@@ -6,21 +9,21 @@ import l2s.gameserver.model.matching.MatchingRoom;
 /**
  * Format (ch) dd
  */
-public class RequestWithdrawPartyRoom extends L2GameClientPacket
+public class RequestWithdrawPartyRoom implements IClientIncomingPacket
 {
 	private int _roomId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_roomId = readD();
+		_roomId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

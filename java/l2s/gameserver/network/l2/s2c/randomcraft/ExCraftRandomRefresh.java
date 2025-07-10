@@ -9,7 +9,7 @@ import l2s.gameserver.templates.RandomCraftInfo;
 /**
  * @author nexvill
  */
-public class ExCraftRandomRefresh extends L2GameServerPacket
+public class ExCraftRandomRefresh implements IClientOutgoingPacket
 {
 	private Player _player;
 
@@ -19,7 +19,7 @@ public class ExCraftRandomRefresh extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if ((_player.getCraftPoints() < 1) || (_player.getAdena() < 10_000))
 			return;
@@ -50,7 +50,7 @@ public class ExCraftRandomRefresh extends L2GameServerPacket
 			}
 			_player.setRandomCraftList(list);
 		}
-		writeC(0);
+		packetWriter.writeC(0);
 		_player.sendPacket(new ExCraftRandomInfo(_player));
 	}
 }

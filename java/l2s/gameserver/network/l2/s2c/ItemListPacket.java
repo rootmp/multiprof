@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.enums.LockType;
 import l2s.gameserver.model.items.ItemInstance;
 
-public class ItemListPacket extends L2GameServerPacket
+public class ItemListPacket implements IClientOutgoingPacket
 {
 	private Player _player;
 	private final int _type;
@@ -38,13 +39,13 @@ public class ItemListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_type == 2)
 		{
-			writeC(_type);
-			writeD(_size); // Total items
-			writeD(_size); // Items in this page
+			packetWriter.writeC(_type);
+			packetWriter.writeD(_size); // Total items
+			packetWriter.writeD(_size); // Items in this page
 			for (ItemInstance temp : _items)
 			{
 				if (temp.getTemplate().isQuest())
@@ -56,9 +57,9 @@ public class ItemListPacket extends L2GameServerPacket
 		}
 		else
 		{
-			writeH(0x01); // _showWindow ? 1 : 0
-			writeH(0x00);
-			writeD(_size); // Total items
+			packetWriter.writeH(0x01); // _showWindow ? 1 : 0
+			packetWriter.writeH(0x00);
+			packetWriter.writeD(_size); // Total items
 		}
 	}
 }

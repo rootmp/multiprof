@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.geometry.Location;
@@ -7,25 +10,25 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
-public class RequestDropItem extends L2GameClientPacket
+public class RequestDropItem implements IClientIncomingPacket
 {
 	private int _objectId;
 	private long _count;
 	private Location _loc;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
-		_count = readQ();
-		_loc = new Location(readD(), readD(), readD());
+		_objectId = packet.readD();
+		_count = packet.readQ();
+		_loc = new Location(packet.readD(), packet.readD(), packet.readD());
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

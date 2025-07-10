@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.actor.variables.PlayerVariables;
 /**
  * @author nexvill
  */
-public class ExRankingCharHistory extends L2GameServerPacket
+public class ExRankingCharHistory implements IClientOutgoingPacket
 {
 	private final Player _player;
 
@@ -16,7 +17,7 @@ public class ExRankingCharHistory extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int daysCount = 0;
 		for (int i = 1; i < 9; i++)
@@ -27,10 +28,10 @@ public class ExRankingCharHistory extends L2GameServerPacket
 			}
 		}
 
-		writeC(daysCount);
-		writeC(0);
-		writeC(0);
-		writeC(0);
+		packetWriter.writeC(daysCount);
+		packetWriter.writeC(0);
+		packetWriter.writeC(0);
+		packetWriter.writeC(0);
 
 		if (daysCount > 0)
 		{
@@ -47,9 +48,9 @@ public class ExRankingCharHistory extends L2GameServerPacket
 					exp2 = _player.getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_exp", 0);
 				}
 				long exp = exp1 - exp2;
-				writeD(date);
-				writeD(rank);
-				writeQ(exp);
+				packetWriter.writeD(date);
+				packetWriter.writeD(rank);
+				packetWriter.writeQ(exp);
 			}
 		}
 	}

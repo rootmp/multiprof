@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.GameObject;
 import l2s.gameserver.model.Player;
 
-public class MyTargetSelectedPacket extends L2GameServerPacket
+public class MyTargetSelectedPacket implements IClientOutgoingPacket
 {
 	private final boolean _success;
 	private int _objectId;
@@ -45,14 +46,14 @@ public class MyTargetSelectedPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_success ? 0x01 : 0x00);
+		packetWriter.writeD(_success ? 0x01 : 0x00);
 		if (_success)
 		{
-			writeD(_objectId);
-			writeH(_color);
-			writeD(_actionMenu ? 0x03 : 0x00); // TargetSelectionMode (0 - Standart, 3 - Context menu (With ALT))
+			packetWriter.writeD(_objectId);
+			packetWriter.writeH(_color);
+			packetWriter.writeD(_actionMenu ? 0x03 : 0x00); // TargetSelectionMode (0 - Standart, 3 - Context menu (With ALT))
 		}
 	}
 }

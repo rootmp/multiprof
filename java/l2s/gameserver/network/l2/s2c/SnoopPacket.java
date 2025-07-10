@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class SnoopPacket extends L2GameServerPacket
+public class SnoopPacket implements IClientOutgoingPacket
 {
 	private int _convoID;
 	private String _name;
@@ -30,17 +31,17 @@ public class SnoopPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_convoID);
-		writeS(_name);
-		writeD(0x00); // ??
-		writeD(_type);
-		writeS(_speaker);
-		// writeD(_fStringId);
+		packetWriter.writeD(_convoID);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(0x00); // ??
+		packetWriter.writeD(_type);
+		packetWriter.writeS(_speaker);
+		// packetWriter.writeD(_fStringId);
 		/*
-		 * for(String param : _params) writeS(param);
+		 * for(String param : _params) packetWriter.writeS(param);
 		 */
-		writeS(_msg);
+		packetWriter.writeS(_msg);
 	}
 }

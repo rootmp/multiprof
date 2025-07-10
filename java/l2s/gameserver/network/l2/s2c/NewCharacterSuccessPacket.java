@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ import l2s.gameserver.model.base.ClassLevel;
 import l2s.gameserver.model.base.Sex;
 import l2s.gameserver.templates.player.PlayerTemplate;
 
-public class NewCharacterSuccessPacket extends L2GameServerPacket
+public class NewCharacterSuccessPacket implements IClientOutgoingPacket
 {
 	private List<ClassId> _chars = new ArrayList<ClassId>();
 
@@ -23,34 +24,34 @@ public class NewCharacterSuccessPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_chars.size());
+		packetWriter.writeD(_chars.size());
 
 		for (ClassId temp : _chars)
 		{
 			/* На оффе статты атрибутов у М и Ж одинаковы. */
 			PlayerTemplate template = PlayerTemplateHolder.getInstance().getPlayerTemplate(temp.getRace(), temp, Sex.MALE);
-			writeD(temp.getRace().ordinal());
-			writeD(temp.getId());
-			writeD(0x46);
-			writeD(template.getBaseSTR());
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(template.getBaseDEX());
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(template.getBaseCON());
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(template.getBaseINT());
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(template.getBaseWIT());
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(template.getBaseMEN());
-			writeD(0x0a);
+			packetWriter.writeD(temp.getRace().ordinal());
+			packetWriter.writeD(temp.getId());
+			packetWriter.writeD(0x46);
+			packetWriter.writeD(template.getBaseSTR());
+			packetWriter.writeD(0x0a);
+			packetWriter.writeD(0x46);
+			packetWriter.writeD(template.getBaseDEX());
+			packetWriter.writeD(0x0a);
+			packetWriter.writeD(0x46);
+			packetWriter.writeD(template.getBaseCON());
+			packetWriter.writeD(0x0a);
+			packetWriter.writeD(0x46);
+			packetWriter.writeD(template.getBaseINT());
+			packetWriter.writeD(0x0a);
+			packetWriter.writeD(0x46);
+			packetWriter.writeD(template.getBaseWIT());
+			packetWriter.writeD(0x0a);
+			packetWriter.writeD(0x46);
+			packetWriter.writeD(template.getBaseMEN());
+			packetWriter.writeD(0x0a);
 		}
 	}
 }

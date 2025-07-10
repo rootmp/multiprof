@@ -13,21 +13,21 @@ import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.item.support.EnchantScroll;
 import l2s.gameserver.utils.Log;
 
-public class RequestExTryToPutEnchantTargetItem extends L2GameClientPacket
+public class RequestExTryToPutEnchantTargetItem implements IClientIncomingPacket
 {
 	private int _objectId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
+		_objectId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 		{
 			return;

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -35,23 +38,23 @@ import l2s.gameserver.utils.Language;
 //		msg_begin	id=4475	UNK_0=1	message=[Не хватает материалов. Улучшение не удалось.]	group=0	color=799BB0FF	sound=[None]	voice=[None]	win=0	font=0	lftime=0	bkg=0	anim=0	scrnmsg=[]	gfxscrnmsg=[Не хватает материалов. Улучшение не удалось.]	gfxscrnparam=[]	type=[none]	msg_end
 //		msg_begin	id=4476	UNK_0=1	message=[Не хватает аден. Улучшение не удалось.]	group=0	color=799BB0FF	sound=[None]	voice=[None]	win=0	font=0	lftime=0	bkg=0	anim=0	scrnmsg=[]	gfxscrnmsg=[Не хватает аден. Улучшение не удалось.]	gfxscrnparam=[]	type=[none]	msg_end
 //		msg_begin	id=5571	UNK_0=1	message=[Предмет $s1 улучшить не удалось. Ранг предмета остался прежним.]	group=0	color=799BB0FF	sound=[None]	voice=[None]	win=0	font=0	lftime=0	bkg=0	anim=0	scrnmsg=[]	gfxscrnmsg=[]	gfxscrnparam=[]	type=[none]	msg_end
-public class ExUpgradeSystemNormalRequest extends L2GameClientPacket
+public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 {
 	private int targetItemObjectId, upgradeType, upgradeId;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		targetItemObjectId = readD();
-		upgradeType = readD();
-		upgradeId = readD();
+		targetItemObjectId = packet.readD();
+		upgradeType = packet.readD();
+		upgradeId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

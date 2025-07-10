@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.instancemanager.ServerVariables;
@@ -10,25 +13,25 @@ import l2s.gameserver.network.l2.s2c.ExRankingCharRankers;
 /**
  * @author JoeAlisson
  */
-public class RequestRankingCharRankers extends L2GameClientPacket
+public class RequestRankingCharRankers implements IClientIncomingPacket
 {
 	private int _group;
 	private int _scope;
 	private int _race;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_group = readC(); // Tab Id
-		_scope = readC(); // All or personal
-		_race = readD();
+		_group = packet.readC(); // Tab Id
+		_scope = packet.readC(); // All or personal
+		_race = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 		activeChar.sendPacket(new ExRankingCharRankers(activeChar, _group, _scope, _race));

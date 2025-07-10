@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class DicePacket extends L2GameServerPacket
+public class DicePacket implements IClientOutgoingPacket
 {
 	private int _playerId;
 	private int _itemId;
@@ -25,13 +26,13 @@ public class DicePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_playerId); // object id of player
-		writeD(_itemId); // item id of dice (spade) 4625,4626,4627,4628
-		writeD(_number); // number rolled
-		writeD(_x); // x
-		writeD(_y); // y
-		writeD(_z); // z
+		packetWriter.writeD(_playerId); // object id of player
+		packetWriter.writeD(_itemId); // item id of dice (spade) 4625,4626,4627,4628
+		packetWriter.writeD(_number); // number rolled
+		packetWriter.writeD(_x); // x
+		packetWriter.writeD(_y); // y
+		packetWriter.writeD(_z); // z
 	}
 }

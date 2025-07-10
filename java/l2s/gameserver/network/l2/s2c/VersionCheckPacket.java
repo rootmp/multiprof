@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 
-public class VersionCheckPacket extends L2GameServerPacket
+public class VersionCheckPacket implements IClientOutgoingPacket
 {
 	private byte[] _key;
 
@@ -16,18 +17,18 @@ public class VersionCheckPacket extends L2GameServerPacket
 	{
 		if (_key == null || _key.length == 0)
 		{
-			writeC(0x00);
+			packetWriter.writeC(0x00);
 			return;
 		}
-		writeC(0x01);
+		packetWriter.writeC(0x01);
 		for (int i = 0; i < 8; i++)
-			writeC(_key[i]);
-		writeD(0x01);
-		writeD(Config.REQUEST_ID); // Server ID
-		writeC(0x00); // Merged Server
-		writeD(0x00); // Seed (obfuscation key)
-		writeC(0x04); // 0x00 - Main, 0x01 - Classic, 0x04 - Essence
-		writeC(0x00); // Arena
-		writeC(0x00); // Unk
+			packetWriter.writeC(_key[i]);
+		packetWriter.writeD(0x01);
+		packetWriter.writeD(Config.REQUEST_ID); // Server ID
+		packetWriter.writeC(0x00); // Merged Server
+		packetWriter.writeD(0x00); // Seed (obfuscation key)
+		packetWriter.writeC(0x04); // 0x00 - Main, 0x01 - Classic, 0x04 - Essence
+		packetWriter.writeC(0x00); // Arena
+		packetWriter.writeC(0x00); // Unk
 	}
 }

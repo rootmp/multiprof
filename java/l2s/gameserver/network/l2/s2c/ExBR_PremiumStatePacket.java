@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class ExBR_PremiumStatePacket extends L2GameServerPacket
+public class ExBR_PremiumStatePacket implements IClientOutgoingPacket
 {
 	private int _objectId;
 	private int _state;
@@ -14,9 +15,9 @@ public class ExBR_PremiumStatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeC(_state);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeC(_state);
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.apache.commons.lang3.ArrayUtils;
 
@@ -16,7 +19,7 @@ import l2s.gameserver.utils.Log;
  * @author VISTALL
  * @date 20:42/16.05.2011
  */
-public class RequestPackageSend extends L2GameClientPacket
+public class RequestPackageSend implements IClientIncomingPacket
 {
 	private static final long _FREIGHT_FEE = 1000; // TODO [VISTALL] hardcode price
 
@@ -26,10 +29,10 @@ public class RequestPackageSend extends L2GameClientPacket
 	private long[] _itemQ;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
-		_count = readD();
+		_objectId = packet.readD();
+		_count = packet.readD();
 		if (_count * 12 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
@@ -41,8 +44,8 @@ public class RequestPackageSend extends L2GameClientPacket
 
 		for (int i = 0; i < _count; i++)
 		{
-			_items[i] = readD();
-			_itemQ[i] = readQ();
+			_items[i] = packet.readD();
+			_itemQ[i] = packet.readQ();
 			if (_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
 				_count = 0;
@@ -53,9 +56,9 @@ public class RequestPackageSend extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null || _count == 0)
 			return;
 

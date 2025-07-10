@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.actor.instances.player.TrainingCamp;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.base.Experience;
 /**
  * @author Sdw
  */
-public class ExTrainingZone_Admission extends L2GameServerPacket
+public class ExTrainingZone_Admission implements IClientOutgoingPacket
 {
 	private final int _timeElapsed;
 	private final int _timeRemaining;
@@ -32,11 +33,11 @@ public class ExTrainingZone_Admission extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(_timeElapsed); // Training time elapsed in minutes, max : 600 - 10hr RU / 300 - 5hr NA
-		writeD(_timeRemaining); // Time remaining in seconds, max : 36000 - 10hr RU / 18000 - 5hr NA
-		writeF(_maxExp); // Training time elapsed in minutes * this value = acquired exp IN GAME DOESN'T
+		packetWriter.writeD(_timeElapsed); // Training time elapsed in minutes, max : 600 - 10hr RU / 300 - 5hr NA
+		packetWriter.writeD(_timeRemaining); // Time remaining in seconds, max : 36000 - 10hr RU / 18000 - 5hr NA
+		packetWriter.writeF(_maxExp); // Training time elapsed in minutes * this value = acquired exp IN GAME DOESN'T
 							// SEEM LIKE THE FIELD IS LIMITED
-		writeF(_maxSp); // Training time elapsed in minutes * this value = acquired sp IN GAME LIMITED
+		packetWriter.writeF(_maxSp); // Training time elapsed in minutes * this value = acquired sp IN GAME LIMITED
 						// TO INTEGER.MAX_VALUE SO THE MULTIPLY WITH REMAINING TIME CANT EXCEED IT (so
 						// field max value can't exceed 3579139.0 for 10hr) !! // Note real sp gain is
 						// exp gained / 250

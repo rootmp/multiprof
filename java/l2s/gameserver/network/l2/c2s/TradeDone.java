@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.List;
 
@@ -17,21 +20,21 @@ import l2s.gameserver.utils.Log;
 /**
  * Вызывается при нажатии кнопки OK в окне обмена.
  */
-public class TradeDone extends L2GameClientPacket
+public class TradeDone implements IClientIncomingPacket
 {
 	private int _response;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_response = readD();
+		_response = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player parthner1 = getClient().getActiveChar();
+		Player parthner1 = client.getActiveChar();
 		if (parthner1 == null)
 			return;
 

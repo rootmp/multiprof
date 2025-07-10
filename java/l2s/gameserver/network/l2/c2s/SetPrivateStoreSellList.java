@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -18,7 +21,7 @@ import l2s.gameserver.utils.TradeHelper;
  * Это список вещей которые игрок хочет продать в создаваемом им приватном
  * магазине
  */
-public class SetPrivateStoreSellList extends L2GameClientPacket
+public class SetPrivateStoreSellList implements IClientIncomingPacket
 {
 	private int _count;
 	private boolean _package;
@@ -27,10 +30,10 @@ public class SetPrivateStoreSellList extends L2GameClientPacket
 	private long[] _itemP; // price
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_package = readD() == 1;
-		_count = readD();
+		_count = packet.readD();
 		// Иначе нехватит памяти при создании массива.
 		if (_count * 20 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
 		{
@@ -44,10 +47,10 @@ public class SetPrivateStoreSellList extends L2GameClientPacket
 
 		for (int i = 0; i < _count; i++)
 		{
-			_items[i] = readD();
-			_itemQ[i] = readQ();
-			_itemP[i] = readQ();
-			readS(); // item Name;
+			_items[i] = packet.readD();
+			_itemQ[i] = packet.readQ();
+			_itemP[i] = packet.readQ();
+			packet.readS(); // item Name;
 			if (_itemQ[i] < 1 || _itemP[i] < 0 || ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
 				_count = 0;
@@ -58,9 +61,9 @@ public class SetPrivateStoreSellList extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player seller = getClient().getActiveChar();
+		Player seller = client.getActiveChar();
 		if (seller == null || _count == 0)
 			return;
 

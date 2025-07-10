@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExRotation extends L2GameServerPacket
+public class ExRotation implements IClientOutgoingPacket
 {
 	private int _charObjId, _degree;
 
@@ -11,9 +12,9 @@ public class ExRotation extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_charObjId);
-		writeD(_degree);
+		packetWriter.writeD(_charObjId);
+		packetWriter.writeD(_degree);
 	}
 }

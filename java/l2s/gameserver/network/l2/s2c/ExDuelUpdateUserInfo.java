@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
@@ -8,7 +9,7 @@ import l2s.gameserver.model.Player;
  * 00 01 00 00 cur_hp 00 01 00 00 max_hp 4B 00 00 00 cur_mp 4B 00 00 00 max_mp
  * 80 00 00 00 cur_cp 80 00 00 00 max_cp
  */
-public class ExDuelUpdateUserInfo extends L2GameServerPacket
+public class ExDuelUpdateUserInfo implements IClientOutgoingPacket
 {
 	private String _name;
 	private int obj_id, class_id, level, curHp, maxHp, curMp, maxMp, curCp, maxCp;
@@ -28,17 +29,17 @@ public class ExDuelUpdateUserInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_name);
-		writeD(obj_id);
-		writeD(class_id);
-		writeD(level);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curMp);
-		writeD(maxMp);
-		writeD(curCp);
-		writeD(maxCp);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(obj_id);
+		packetWriter.writeD(class_id);
+		packetWriter.writeD(level);
+		packetWriter.writeD(curHp);
+		packetWriter.writeD(maxHp);
+		packetWriter.writeD(curMp);
+		packetWriter.writeD(maxMp);
+		packetWriter.writeD(curCp);
+		packetWriter.writeD(maxCp);
 	}
 }

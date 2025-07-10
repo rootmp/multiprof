@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.data.xml.holder.InstantZoneHolder;
 import l2s.gameserver.model.Player;
@@ -10,7 +11,7 @@ import gnu.trove.map.hash.TIntIntHashMap;
 /**
  * @author Bonux
  **/
-public class ExInzoneWaitingInfo extends L2GameServerPacket
+public class ExInzoneWaitingInfo implements IClientOutgoingPacket
 {
 	private final boolean _openWindow;
 	private int _currentInzoneID = -1;
@@ -34,18 +35,18 @@ public class ExInzoneWaitingInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_openWindow);
-		writeD(_currentInzoneID);
-		writeD(_instanceTimes.size());
+		packetWriter.writeC(_openWindow);
+		packetWriter.writeD(_currentInzoneID);
+		packetWriter.writeD(_instanceTimes.size());
 
 		TIntIntIterator iterator = _instanceTimes.iterator();
 		while (iterator.hasNext())
 		{
 			iterator.advance();
-			writeD(iterator.key());
-			writeD(iterator.value());
+			packetWriter.writeD(iterator.key());
+			packetWriter.writeD(iterator.value());
 		}
 	}
 }

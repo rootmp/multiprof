@@ -12,25 +12,25 @@ import l2s.gameserver.templates.henna.HennaTemplate;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.utils.ItemFunctions;
 
-public class RequestExNewHennaCompose extends L2GameClientPacket
+public class RequestExNewHennaCompose implements IClientIncomingPacket
 {
 	private int nSlotOneIndex;
 	private int nSlotOneItemID;
 	private int nSlotTwoItemID;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		nSlotOneIndex = readD();
-		nSlotOneItemID = readD();
-		nSlotTwoItemID = readD();
+		nSlotOneIndex = packet.readD();
+		nSlotOneItemID = packet.readD();
+		nSlotTwoItemID = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

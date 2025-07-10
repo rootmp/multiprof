@@ -7,21 +7,21 @@ import l2s.gameserver.network.l2.s2c.subjugation.ExSubjugationGachaUI;
 /**
  * @author nexvill
  */
-public class RequestExSubjugationGachaUI extends L2GameClientPacket
+public class RequestExSubjugationGachaUI implements IClientIncomingPacket
 {
 	private int _zoneId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_zoneId = readD();
+		_zoneId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

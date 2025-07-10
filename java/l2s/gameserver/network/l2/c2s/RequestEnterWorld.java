@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.List;
 
@@ -113,17 +116,17 @@ import l2s.gameserver.utils.GameStats;
 import l2s.gameserver.utils.HtmlUtils;
 import l2s.gameserver.utils.TradeHelper;
 
-public class RequestEnterWorld extends L2GameClientPacket
+public class RequestEnterWorld implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		// readS(); - клиент всегда отправляет строку "narcasse"
+		// packet.readS(); - клиент всегда отправляет строку "narcasse"
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		GameClient client = getClient();
 		Player activeChar = client.getActiveChar();

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.List;
 
@@ -14,7 +17,7 @@ import l2s.gameserver.network.l2.s2c.TradeOtherAddPacket;
 import l2s.gameserver.network.l2.s2c.TradeOwnAddPacket;
 import l2s.gameserver.network.l2.s2c.TradeUpdatePacket;
 
-public class AddTradeItem extends L2GameClientPacket
+public class AddTradeItem implements IClientIncomingPacket
 {
 	@SuppressWarnings("unused")
 	private int _tradeId;
@@ -22,18 +25,18 @@ public class AddTradeItem extends L2GameClientPacket
 	private long _amount;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_tradeId = readD(); // 1 ?
-		_objectId = readD();
-		_amount = readQ();
+		_tradeId = packet.readD(); // 1 ?
+		_objectId = packet.readD();
+		_amount = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player parthner1 = getClient().getActiveChar();
+		Player parthner1 = client.getActiveChar();
 		if (parthner1 == null || _amount < 1)
 			return;
 

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * sample
@@ -7,7 +8,7 @@ package l2s.gameserver.network.l2.s2c;
  * <p>
  * format cdd
  */
-public class AskJoinAlliancePacket extends L2GameServerPacket
+public class AskJoinAlliancePacket implements IClientOutgoingPacket
 {
 	private String _requestorName;
 	private String _requestorAllyName;
@@ -21,11 +22,11 @@ public class AskJoinAlliancePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_requestorId);
-		writeS(_requestorName);
-		writeS("");
-		writeS(_requestorAllyName);
+		packetWriter.writeD(_requestorId);
+		packetWriter.writeS(_requestorName);
+		packetWriter.writeS("");
+		packetWriter.writeS(_requestorAllyName);
 	}
 }

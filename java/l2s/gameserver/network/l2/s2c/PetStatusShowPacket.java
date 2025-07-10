@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Servitor;
 
-public class PetStatusShowPacket extends L2GameServerPacket
+public class PetStatusShowPacket implements IClientOutgoingPacket
 {
 	private int _summonType, _summonObjId;
 
@@ -13,9 +14,9 @@ public class PetStatusShowPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_summonType);
-		writeD(_summonObjId);
+		packetWriter.writeD(_summonType);
+		packetWriter.writeD(_summonObjId);
 	}
 }

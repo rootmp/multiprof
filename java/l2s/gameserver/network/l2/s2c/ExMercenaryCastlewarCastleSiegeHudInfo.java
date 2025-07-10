@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.concurrent.TimeUnit;
 
 import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
 
-public class ExMercenaryCastlewarCastleSiegeHudInfo extends L2GameServerPacket
+public class ExMercenaryCastlewarCastleSiegeHudInfo implements IClientOutgoingPacket
 {
 	private static final int PREPARE_STATUS = 0;
 	private static final int IN_PROGRESS_STATUS = 1;
@@ -35,11 +36,11 @@ public class ExMercenaryCastlewarCastleSiegeHudInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(castleId);
-		writeD(status);
-		writeD(currentTime);
-		writeD(prepareLeftTime);
+		packetWriter.writeD(castleId);
+		packetWriter.writeD(status);
+		packetWriter.writeD(currentTime);
+		packetWriter.writeD(prepareLeftTime);
 	}
 }

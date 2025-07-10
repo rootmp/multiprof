@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.PcInventory;
@@ -49,22 +50,22 @@ public class ExUserInfoEquipSlot extends AbstractMaskPacket<InventorySlot>
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_player.getObjectId());
-		writeH(InventorySlot.VALUES.length);
+		packetWriter.writeD(_player.getObjectId());
+		packetWriter.writeH(InventorySlot.VALUES.length);
 		writeB(_masks);
 		final PcInventory inventory = _player.getInventory();
 		for (InventorySlot slot : InventorySlot.VALUES)
 		{
 			if (containsMask(slot))
 			{
-				writeH(22); // size
-				writeD(inventory.getPaperdollObjectId(slot.getSlot()));
-				writeD(inventory.getPaperdollItemId(slot.getSlot()));
-				writeD(inventory.getPaperdollVariation1Id(slot.getSlot()));
-				writeD(inventory.getPaperdollVariation2Id(slot.getSlot()));
-				writeD(inventory.getPaperdollItemId(slot.getSlot()));
+				packetWriter.writeH(22); // size
+				packetWriter.writeD(inventory.getPaperdollObjectId(slot.getSlot()));
+				packetWriter.writeD(inventory.getPaperdollItemId(slot.getSlot()));
+				packetWriter.writeD(inventory.getPaperdollVariation1Id(slot.getSlot()));
+				packetWriter.writeD(inventory.getPaperdollVariation2Id(slot.getSlot()));
+				packetWriter.writeD(inventory.getPaperdollItemId(slot.getSlot()));
 			}
 		}
 	}

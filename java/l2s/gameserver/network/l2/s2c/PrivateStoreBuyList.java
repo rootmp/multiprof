@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.TradeItem;
 
-public class PrivateStoreBuyList extends L2GameServerPacket
+public class PrivateStoreBuyList implements IClientOutgoingPacket
 {
 	private final int _buyerId;
 	private final long _adena;
@@ -65,19 +66,19 @@ public class PrivateStoreBuyList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_buyerId);
-		writeQ(_adena);
-		writeD(70);
-		writeD(_sellList.size());
+		packetWriter.writeD(_buyerId);
+		packetWriter.writeQ(_adena);
+		packetWriter.writeD(70);
+		packetWriter.writeD(_sellList.size());
 		for (TradeItem si : _sellList)
 		{
 			writeItemInfo(si, si.getCurrentValue());
-			writeD(si.getObjectId());
-			writeQ(si.getOwnersPrice());
-			writeQ(si.getStorePrice());
-			writeQ(si.getCount()); // maximum possible tradecount
+			packetWriter.writeD(si.getObjectId());
+			packetWriter.writeQ(si.getOwnersPrice());
+			packetWriter.writeQ(si.getStorePrice());
+			packetWriter.writeQ(si.getCount()); // maximum possible tradecount
 		}
 	}
 }

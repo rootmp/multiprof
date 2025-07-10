@@ -1,10 +1,14 @@
 package l2s.gameserver.model.items;
 
+import java.util.Collection;
+import java.util.Collections;
+
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.model.base.Element;
 import l2s.gameserver.model.enums.ItemLocation;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.item.support.Ensoul;
+import l2s.gameserver.templates.pet.PetParam;
 
 public class ItemInfo
 {
@@ -30,7 +34,9 @@ public class ItemInfo
 	private int[] _enchantOptions = ItemInstance.EMPTY_ENCHANT_OPTIONS;
 	private int _visualId;
 	private boolean _isBlessed;
-
+	private int _used_count;
+	private boolean _isLocked;
+	
 	// Attributes
 	private int _attrFire;
 	private int _attrWater;
@@ -40,10 +46,12 @@ public class ItemInfo
 	private int _attrUnholy;
 
 	private boolean _isBlocked;
+	
+	private Collection<Ensoul> _normalEnsouls = Collections.emptyList();
+	private Collection<Ensoul> _specialEnsouls = Collections.emptyList();
 
-	private Ensoul[] _normalEnsouls = ItemInstance.EMPTY_ENSOULS_ARRAY;
-	private Ensoul[] _specialEnsouls = ItemInstance.EMPTY_ENSOULS_ARRAY;
-
+	private PetParam _petParam = new PetParam();
+	
 	private ItemTemplate _item;
 
 	private PetItemInfo _petInfo;
@@ -529,24 +537,24 @@ public class ItemInfo
 		return getItem().isWeapon() ? 0 : _attrUnholy;
 	}
 
-	public Ensoul[] getNormalEnsouls()
+	public Collection<Ensoul> getNormalEnsouls()
 	{
 		return _normalEnsouls;
 	}
 
-	public void setNormalEnsouls(Ensoul[] ensouls)
+	public void setNormalEnsouls(Collection<Ensoul> collection)
 	{
-		_normalEnsouls = ensouls;
+		_normalEnsouls = collection;
 	}
 
-	public Ensoul[] getSpecialEnsouls()
+	public Collection<Ensoul> getSpecialEnsouls()
 	{
 		return _specialEnsouls;
 	}
 
-	public void setSpecialEnsouls(Ensoul[] ensouls)
+	public void setSpecialEnsouls(Collection<Ensoul> collection)
 	{
-		_specialEnsouls = ensouls;
+		_specialEnsouls = collection;
 	}
 
 	public PetItemInfo getPetInfo()
@@ -558,4 +566,31 @@ public class ItemInfo
 	{
 		_petInfo = petInfo;
 	}
+
+	public int getVariation3Id()
+	{
+		return 0;//TODO  
+	}
+
+	public int getUsedCount()
+	{
+		return _used_count;
+	}
+	
+	public boolean isLocked()
+	{
+		return _isLocked;
+	}
+
+	public int getReuseTime()
+	{
+		return 0;
+		    
+	}
+
+	public PetParam getPetParam()
+	{
+		return _petParam;
+	}
+
 }

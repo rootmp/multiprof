@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.awt.Color;
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.List;
  * <b>Note:</b> Names in points and lines are bugged they will appear even when
  * not looking at them.
  */
-public class ExServerPrimitivePacket extends L2GameServerPacket
+public class ExServerPrimitivePacket implements IClientOutgoingPacket
 {
 	private final String _name;
 	private final int _x;
@@ -158,31 +159,31 @@ public class ExServerPrimitivePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// System.out.println("name : "+_name+" x: "+_x+" y: "+_y+" z: "+_z+"");
-		writeS(_name);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(65535); // has to do something with display range and angle
-		writeD(65535); // has to do something with display range and angle
+		packetWriter.writeS(_name);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
+		packetWriter.writeD(_z);
+		packetWriter.writeD(65535); // has to do something with display range and angle
+		packetWriter.writeD(65535); // has to do something with display range and angle
 
-		writeD(_points.size() + _lines.size());
+		packetWriter.writeD(_points.size() + _lines.size());
 		// System.out.println("points size: " + _points.size());
 		// System.out.println("line size: " + _lines.size());
 		for (Point point : _points)
 		{
-			writeC(1); // Its the type in this case Point
-			writeS(point.getName());
+			packetWriter.writeC(1); // Its the type in this case Point
+			packetWriter.writeS(point.getName());
 			int color = point.getColor();
-			writeD((color >> 16) & 0xFF); // R
-			writeD((color >> 8) & 0xFF); // G
-			writeD(color & 0xFF); // B
-			writeD(point.isNameColored() ? 1 : 0);
-			writeD(point.getX());
-			writeD(point.getY());
-			writeD(point.getZ());
+			packetWriter.writeD((color >> 16) & 0xFF); // R
+			packetWriter.writeD((color >> 8) & 0xFF); // G
+			packetWriter.writeD(color & 0xFF); // B
+			packetWriter.writeD(point.isNameColored() ? 1 : 0);
+			packetWriter.writeD(point.getX());
+			packetWriter.writeD(point.getY());
+			packetWriter.writeD(point.getZ());
 			// System.out.println("point name: " + point.getName() + " point color:
 			// "+point.getColor()+" point colored: "+point.isNameColored()+" point x:
 			// "+point.getX()+" point y: "+point.getY()+" point z: "+point.getZ()+"");
@@ -190,19 +191,19 @@ public class ExServerPrimitivePacket extends L2GameServerPacket
 
 		for (Line line : _lines)
 		{
-			writeC(2); // Its the type in this case Line
-			writeS(line.getName());
+			packetWriter.writeC(2); // Its the type in this case Line
+			packetWriter.writeS(line.getName());
 			int color = line.getColor();
-			writeD((color >> 16) & 0xFF); // R
-			writeD((color >> 8) & 0xFF); // G
-			writeD(color & 0xFF); // B
-			writeD(line.isNameColored() ? 1 : 0);
-			writeD(line.getX());
-			writeD(line.getY());
-			writeD(line.getZ());
-			writeD(line.getX2());
-			writeD(line.getY2());
-			writeD(line.getZ2());
+			packetWriter.writeD((color >> 16) & 0xFF); // R
+			packetWriter.writeD((color >> 8) & 0xFF); // G
+			packetWriter.writeD(color & 0xFF); // B
+			packetWriter.writeD(line.isNameColored() ? 1 : 0);
+			packetWriter.writeD(line.getX());
+			packetWriter.writeD(line.getY());
+			packetWriter.writeD(line.getZ());
+			packetWriter.writeD(line.getX2());
+			packetWriter.writeD(line.getY2());
+			packetWriter.writeD(line.getZ2());
 			// System.out.println("line name: " + line.getName() + " line color:
 			// "+line.getColor()+" line colored: "+line.isNameColored()+" line x:
 			// "+line.getX()+" line y: "+line.getY()+" line z: "+line.getZ()+" line x2:

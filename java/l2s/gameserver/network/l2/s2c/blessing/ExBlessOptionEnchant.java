@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExBlessOptionEnchant extends L2GameServerPacket
+public class ExBlessOptionEnchant implements IClientOutgoingPacket
 {
 	private final boolean _success;
 
@@ -15,8 +15,8 @@ public class ExBlessOptionEnchant extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_success); // success or fail
+		packetWriter.writeC(_success); // success or fail
 	}
 }

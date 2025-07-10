@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +33,7 @@ import l2s.gameserver.templates.item.support.Ensoul;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.Log;
 
-public class RequestMultiSellChoose extends L2GameClientPacket
+public class RequestMultiSellChoose implements IClientIncomingPacket
 {
 	private static final int BUY_DELAY = 200;
 
@@ -90,18 +93,18 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 	}
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_listId = readD();
-		_entryId = readD();
-		_amount = readQ();
+		_listId = packet.readD();
+		_entryId = packet.readD();
+		_amount = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || _amount < 1)
 			return;
 

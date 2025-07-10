@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class CharacterCreateFailPacket extends L2GameServerPacket
+public class CharacterCreateFailPacket implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket REASON_CREATION_FAILED = new CharacterCreateFailPacket(0x00); // "Your
 																											// character
@@ -87,8 +88,8 @@ public class CharacterCreateFailPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_error);
+		packetWriter.writeD(_error);
 	}
 }

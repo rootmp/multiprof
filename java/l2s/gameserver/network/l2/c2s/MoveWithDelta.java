@@ -1,24 +1,27 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 /**
  * Format: (c) ddd d: dx d: dy d: dz
  */
-public class MoveWithDelta extends L2GameClientPacket
+public class MoveWithDelta implements IClientIncomingPacket
 {
 	@SuppressWarnings("unused")
 	private int _dx, _dy, _dz;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_dx = readD();
-		_dy = readD();
-		_dz = readD();
+		_dx = packet.readD();
+		_dy = packet.readD();
+		_dz = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		// TODO this
 	}

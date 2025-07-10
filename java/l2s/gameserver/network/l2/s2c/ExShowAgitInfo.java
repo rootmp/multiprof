@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.entity.residence.clanhall.NormalClanHall;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.tables.ClanTable;
 
-public class ExShowAgitInfo extends L2GameServerPacket
+public class ExShowAgitInfo implements IClientOutgoingPacket
 {
 	private final List<AgitInfo> _infos;
 
@@ -32,15 +33,15 @@ public class ExShowAgitInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_infos.size());
+		packetWriter.writeD(_infos.size());
 		_infos.forEach(info ->
 		{
-			writeD(info.ch_id);
-			writeS(info.clan_name);
-			writeS(info.leader_name);
-			writeD(info.getType);
+			packetWriter.writeD(info.ch_id);
+			packetWriter.writeS(info.clan_name);
+			packetWriter.writeS(info.leader_name);
+			packetWriter.writeD(info.getType);
 		});
 	}
 

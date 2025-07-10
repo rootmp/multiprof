@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExSubjugationGachaUI extends L2GameServerPacket
+public class ExSubjugationGachaUI implements IClientOutgoingPacket
 {
 	private int _zoneId;
 	private Player _player;
@@ -19,11 +19,11 @@ public class ExSubjugationGachaUI extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int points = _player.getVarInt(PlayerVariables.SUBJUGATION_ZONE_POINTS + "_" + _zoneId, 0);
 		int keysHave = points / 1_000_000;
 
-		writeD(keysHave); // keys
+		packetWriter.writeD(keysHave); // keys
 	}
 }

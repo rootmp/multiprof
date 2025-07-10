@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class Ex2NDPasswordVerifyPacket extends L2GameServerPacket
+public class Ex2NDPasswordVerifyPacket implements IClientOutgoingPacket
 {
 	public static final int PASSWORD_OK = 0x00;
 	public static final int PASSWORD_WRONG = 0x01;
@@ -15,9 +16,9 @@ public class Ex2NDPasswordVerifyPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_mode);
-		writeD(_wrongTentatives);
+		packetWriter.writeD(_mode);
+		packetWriter.writeD(_wrongTentatives);
 	}
 }

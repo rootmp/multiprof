@@ -10,7 +10,7 @@ import l2s.gameserver.templates.item.data.ItemData;
 /**
  * @author nexvill
  */
-public class ExResultMultiEnchantItemList extends L2GameServerPacket
+public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
 {
 	public static final int SUCCESS = 0;
 	public static final int FAIL = 1;
@@ -50,60 +50,60 @@ public class ExResultMultiEnchantItemList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_error)
 		{
-			writeC(0);
+			packetWriter.writeC(0);
 			return;
 		}
 
-		writeC(1);
+		packetWriter.writeC(1);
 
 		// EnchantSuccessItem
 		if (_failureReward.size() == 0)
 		{
-			writeD(_successEnchant.size());
+			packetWriter.writeD(_successEnchant.size());
 			if (_successEnchant.size() != 0)
 			{
 				for (int i : _successEnchant.keySet())
 				{
 					int[] intArray = _successEnchant.get(i);
-					writeD(intArray[0]);
-					writeD(intArray[1]);
+					packetWriter.writeD(intArray[0]);
+					packetWriter.writeD(intArray[1]);
 				}
 			}
 		}
 		else
 		{
-			writeD(0);
+			packetWriter.writeD(0);
 		}
 
 		// EnchantFailItem
-		writeD(_failureEnchant.size());
+		packetWriter.writeD(_failureEnchant.size());
 		if (_failureEnchant.size() != 0)
 		{
 			for (int i : _failureEnchant.keySet())
 			{
-				writeD(_failureEnchant.get(i));
-				writeD(0);
+				packetWriter.writeD(_failureEnchant.get(i));
+				packetWriter.writeD(0);
 			}
 		}
 		else
 		{
-			writeD(0);
+			packetWriter.writeD(0);
 		}
 
 		// EnchantFailRewardItem
 		if (((_successEnchant.size() == 0) && (_player.getMultiFailItemsCount() != 0)) || (_isResult && (_player.getMultiFailItemsCount() != 0)))
 		{
-			writeD(_player.getMultiFailItemsCount());
+			packetWriter.writeD(_player.getMultiFailItemsCount());
 			_failureReward = _player.getMultiEnchantFailItems();
 			for (int i : _failureReward.keySet())
 			{
 				ItemData item = _failureReward.get(i);
-				writeD(item.getId());
-				writeD((int) item.getCount());
+				packetWriter.writeD(item.getId());
+				packetWriter.writeD((int) item.getCount());
 			}
 			if (_isResult)
 			{
@@ -114,12 +114,12 @@ public class ExResultMultiEnchantItemList extends L2GameServerPacket
 		}
 		else
 		{
-			writeD(0);
+			packetWriter.writeD(0);
 		}
 
 		// EnchantFailChallengePointInfo
-		writeD(1);
-		writeD(0);
-		writeD(0);
+		packetWriter.writeD(1);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
 	}
 }

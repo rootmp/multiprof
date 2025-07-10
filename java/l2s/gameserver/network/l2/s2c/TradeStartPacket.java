@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.items.ItemInstance;
 /**
  * @reworked to Ertheia by Bonux
  **/
-public class TradeStartPacket extends L2GameServerPacket
+public class TradeStartPacket implements IClientOutgoingPacket
 {
 	private static final int IS_FRIEND = 1 << 0;
 	private static final int CLAN_MEMBER = 1 << 1;
@@ -45,24 +46,24 @@ public class TradeStartPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
+		packetWriter.writeC(_type);
 		if (_type == 1)
 		{
-			writeD(_targetId);
-			writeC(_flags);
-			writeC(_targetLevel);
-			writeC(0x00); // UNK 140
-			writeH(0x00); // UNK 140
-			writeC(0x00); // UNK 140
+			packetWriter.writeD(_targetId);
+			packetWriter.writeC(_flags);
+			packetWriter.writeC(_targetLevel);
+			packetWriter.writeC(0x00); // UNK 140
+			packetWriter.writeH(0x00); // UNK 140
+			packetWriter.writeC(0x00); // UNK 140
 		}
 		else if (_type == 2)
 		{
-			writeD(_tradelist.size());
-			writeH(_tradelist.size());
-			writeC(0x00); // UNK 140
-			writeC(0x00); // UNK 140
+			packetWriter.writeD(_tradelist.size());
+			packetWriter.writeH(_tradelist.size());
+			packetWriter.writeC(0x00); // UNK 140
+			packetWriter.writeC(0x00); // UNK 140
 			for (ItemInfo item : _tradelist)
 				writeItemInfo(item);
 		}

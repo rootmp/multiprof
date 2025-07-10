@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExOpenBlessOptionScroll extends L2GameServerPacket
+public class ExOpenBlessOptionScroll implements IClientOutgoingPacket
 {
 	private ItemInstance _scroll;
 	private Player _player;
@@ -19,9 +19,9 @@ public class ExOpenBlessOptionScroll extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		_player.setBlessingScroll(_scroll);
-		writeD(_scroll.getItemId()); // scroll id
+		packetWriter.writeD(_scroll.getItemId()); // scroll id
 	}
 }

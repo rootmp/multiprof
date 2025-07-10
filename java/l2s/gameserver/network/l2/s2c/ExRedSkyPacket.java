@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExRedSkyPacket extends L2GameServerPacket
+public class ExRedSkyPacket implements IClientOutgoingPacket
 {
 	private int _duration;
 
@@ -10,8 +11,8 @@ public class ExRedSkyPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_duration);
+		packetWriter.writeD(_duration);
 	}
 }

@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @reworked by nexvill
  */
-public class AllianceCrestPacket extends L2GameServerPacket
+public class AllianceCrestPacket implements IClientOutgoingPacket
 {
 	private int _crestId;
 	private int _clanId;
@@ -17,19 +18,19 @@ public class AllianceCrestPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_clanId);
-		writeD(_crestId);
+		packetWriter.writeD(_clanId);
+		packetWriter.writeD(_crestId);
 		if (_data.length > 0)
 		{
-			writeD(_data.length);
-			writeD(_data.length);
+			packetWriter.writeD(_data.length);
+			packetWriter.writeD(_data.length);
 			writeB(_data);
 		}
 		else
 		{
-			writeD(0);
+			packetWriter.writeD(0);
 		}
 	}
 }

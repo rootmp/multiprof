@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
@@ -10,7 +11,7 @@ import l2s.gameserver.skills.enums.SkillCastingType;
  * 08 00 00 01 00 00 00 00 00 00 00 00 00 00 00 F9 B5 FF FF 7D E0 01 00 68 F3 FF
  * FF 00 00 00 00
  */
-public class MagicSkillUse extends L2GameServerPacket
+public class MagicSkillUse implements IClientOutgoingPacket
 {
 	public static final int NONE = -1;
 
@@ -94,7 +95,7 @@ public class MagicSkillUse extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		/**
 		 * Casting bar type:
@@ -104,51 +105,51 @@ public class MagicSkillUse extends L2GameServerPacket
 		 * <li>3 - green,
 		 * <li>4 - red.
 		 **/
-		writeD(_castingType.getClientBarId());
-		writeD(_chaId);
-		writeD(_targetId);
-		writeD(_skillId);
-		writeD(_skillLevel);
-		writeD(_hitTime);
-		writeD(_reuseGroup);
-		writeD(_reuseDelay);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
+		packetWriter.writeD(_castingType.getClientBarId());
+		packetWriter.writeD(_chaId);
+		packetWriter.writeD(_targetId);
+		packetWriter.writeD(_skillId);
+		packetWriter.writeD(_skillLevel);
+		packetWriter.writeD(_hitTime);
+		packetWriter.writeD(_reuseGroup);
+		packetWriter.writeD(_reuseDelay);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
+		packetWriter.writeD(_z);
 
 		if (_criticalBlow) // TODO: Реализовать.
 		{
-			writeH(0x02);
+			packetWriter.writeH(0x02);
 			for (int i = 0; i < 2; i++)
 			{
-				writeH(0); // ???
+				packetWriter.writeH(0); // ???
 			}
 		}
 		else
 		{
-			writeH(0x00);
+			packetWriter.writeH(0x00);
 		}
 
 		if (_groundLoc != null)
 		{
-			writeH(0x01);
-			writeD(_groundLoc.x);
-			writeD(_groundLoc.y);
-			writeD(_groundLoc.z);
+			packetWriter.writeH(0x01);
+			packetWriter.writeD(_groundLoc.x);
+			packetWriter.writeD(_groundLoc.y);
+			packetWriter.writeD(_groundLoc.z);
 		}
 		else
 		{
-			writeH(0x00);
+			packetWriter.writeH(0x00);
 		}
 		
-		writeD(_tx);
-		writeD(_ty);
-		writeD(_tz);
-		writeD(_isServitorSkill ? 0x01 : 0x00); // is Pet Skill
-		writeD(_actionId); // Social Action ID
+		packetWriter.writeD(_tx);
+		packetWriter.writeD(_ty);
+		packetWriter.writeD(_tz);
+		packetWriter.writeD(_isServitorSkill ? 0x01 : 0x00); // is Pet Skill
+		packetWriter.writeD(_actionId); // Social Action ID
 		if (_skillId != 5103)
 		{
-			writeD(-1);
+			packetWriter.writeD(-1);
 		}
 	}
 

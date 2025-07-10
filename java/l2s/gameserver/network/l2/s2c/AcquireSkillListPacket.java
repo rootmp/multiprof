@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,13 +20,13 @@ import l2s.gameserver.templates.item.data.AlterItemData;
 /**
  * @author VISTAL, Hl4p3x
  */
-public class AcquireSkillList extends L2GameServerPacket
+public class AcquireSkillListPacket implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final Collection<SkillLearn> _skills;
 	private final Map<SkillLearn, List<Skill>> _blockedSkills = new HashMap<>();
 
-	public AcquireSkillList(Player player)
+	public AcquireSkillListPacket(Player player)
 	{
 		_player = player;
 		_skills = SkillAcquireHolder.getInstance().getAcquirableSkillListByClass(player);
@@ -44,44 +45,38 @@ public class AcquireSkillList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		if (_player == null)
-		{
-			return;
-		}
-
-		writeH(_skills.size());
+		packetWriter.writeH(_skills.size());
 		for (SkillLearn sk : _skills)
 		{
 			Skill skill = SkillHolder.getInstance().getSkill(sk.getId(), sk.getLevel());
 			if (skill == null)
-			{
 				continue;
-			}
 
-			writeD(sk.getId());
-			writeH(sk.getLevel()); // Main writeD, Essence writeH.
-			writeQ(sk.getCost());
-			writeC(sk.getMinLevel());
-			writeC(0x00); // Dual-class min level.
-			writeC(_player.getSkillLevel(sk.getId()) <= 0); // Belly - fix categories
+			packetWriter.writeD(sk.getId());
+			packetWriter.writeH(sk.getLevel()); // Main writeD, Essence writeH.
+			packetWriter.writeQ(sk.getCost());
+			packetWriter.writeC(sk.getMinLevel());
+			packetWriter.writeC(0x00); // Dual-class min level.
+			packetWriter.writeC(_player.getSkillLevel(sk.getId()) <= 0); // Belly - fix categories
 
 			List<AlterItemData> requiredItems = sk.getRequiredItemsForLearn(AcquireType.NORMAL);
-			writeC(requiredItems.size());
+			packetWriter.writeC(requiredItems.size());
 			for (AlterItemData item : requiredItems)
 			{
-				writeD(item.getId());
-				writeQ(item.getCount());
+				packetWriter.writeD(item.getId());
+				packetWriter.writeQ(item.getCount());
 			}
 
 			List<Skill> blocked = _blockedSkills.getOrDefault(sk, Collections.emptyList());
-			writeC(blocked.size());
+			packetWriter.writeC(blocked.size());
 			for (Skill s : blocked)
 			{
-				writeD(s.getId());
-				writeH(s.getLevel()); // Main writeD, Essence writeH.
+				packetWriter.writeD(s.getId());
+				packetWriter.writeH(s.getLevel()); // Main writeD, Essence writeH.
 			}
 		}
+		return true;
 	}
 }

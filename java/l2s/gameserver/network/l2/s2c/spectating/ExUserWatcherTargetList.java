@@ -8,7 +8,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExUserWatcherTargetList extends L2GameServerPacket
+public class ExUserWatcherTargetList implements IClientOutgoingPacket
 {
 	private Spectating[] _spectatings;
 
@@ -18,16 +18,16 @@ public class ExUserWatcherTargetList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_spectatings.length);
+		packetWriter.writeD(_spectatings.length);
 		for (Spectating s : _spectatings)
 		{
 			writeString(s.getName());
-			writeD(Config.REQUEST_ID); // server id
-			writeD(s.getLevel());
-			writeD(s.getClassId());
-			writeC(s.isOnline());
+			packetWriter.writeD(Config.REQUEST_ID); // server id
+			packetWriter.writeD(s.getLevel());
+			packetWriter.writeD(s.getClassId());
+			packetWriter.writeC(s.isOnline());
 		}
 	}
 }

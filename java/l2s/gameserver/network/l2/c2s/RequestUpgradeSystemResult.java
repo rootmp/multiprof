@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,22 +25,22 @@ import l2s.gameserver.utils.Language;
  * @author Bonux
  **/
 
-public class RequestUpgradeSystemResult extends L2GameClientPacket
+public class RequestUpgradeSystemResult implements IClientIncomingPacket
 {
 	private int targetItemObjectId, upgradeId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		targetItemObjectId = readD();
-		upgradeId = readD();
+		targetItemObjectId = packet.readD();
+		upgradeId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

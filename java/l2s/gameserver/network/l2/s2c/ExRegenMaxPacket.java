@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExRegenMaxPacket extends L2GameServerPacket
+public class ExRegenMaxPacket implements IClientOutgoingPacket
 {
 	private double _max;
 	private int _count;
@@ -27,11 +28,11 @@ public class ExRegenMaxPacket extends L2GameServerPacket
 	 * 00 00 00 - время? 00 00 00 00 00 00 38 40 - максимум?
 	 */
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(1);
-		writeD(_count);
-		writeD(_time);
-		writeF(_max);
+		packetWriter.writeD(1);
+		packetWriter.writeD(_count);
+		packetWriter.writeD(_time);
+		packetWriter.writeF(_max);
 	}
 }

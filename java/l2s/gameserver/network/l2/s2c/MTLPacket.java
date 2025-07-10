@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.utils.Log;
 
-public class MTLPacket extends L2GameServerPacket
+public class MTLPacket implements IClientOutgoingPacket
 {
 	private int _objectId;
 	private Location _current;
@@ -31,16 +32,16 @@ public class MTLPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
+		packetWriter.writeD(_objectId);
 
-		writeD(_destination.x);
-		writeD(_destination.y);
-		writeD(_destination.z);
+		packetWriter.writeD(_destination.x);
+		packetWriter.writeD(_destination.y);
+		packetWriter.writeD(_destination.z);
 
-		writeD(_current.x);
-		writeD(_current.y);
-		writeD(_current.z);
+		packetWriter.writeD(_current.x);
+		packetWriter.writeD(_current.y);
+		packetWriter.writeD(_current.z);
 	}
 }

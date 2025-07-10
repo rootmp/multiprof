@@ -1,23 +1,26 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.listener.actor.OnActorAct;
 import l2s.gameserver.model.Player;
 
-public class RequestExLetterCollectorTakeReward extends L2GameClientPacket
+public class RequestExLetterCollectorTakeReward implements IClientIncomingPacket
 {
 	private int letterSetId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		letterSetId = readD();
+		letterSetId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

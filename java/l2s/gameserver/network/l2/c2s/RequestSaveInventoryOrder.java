@@ -1,16 +1,19 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 
-public class RequestSaveInventoryOrder extends L2GameClientPacket
+public class RequestSaveInventoryOrder implements IClientIncomingPacket
 {
 	// format: (ch)db, b - array of (dd)
 	int[][] _items;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		int size = readD();
+		int size = packet.readD();
 		if (size > 125)
 			size = 125;
 		if (size * 8 > _buf.remaining() || size < 1)
@@ -21,18 +24,18 @@ public class RequestSaveInventoryOrder extends L2GameClientPacket
 		_items = new int[size][2];
 		for (int i = 0; i < size; i++)
 		{
-			_items[i][0] = readD(); // item id
-			_items[i][1] = readD(); // slot
+			_items[i][0] = packet.readD(); // item id
+			_items[i][1] = packet.readD(); // slot
 		}
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if (_items == null)
 			return;
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 		activeChar.getInventory().sort(_items);

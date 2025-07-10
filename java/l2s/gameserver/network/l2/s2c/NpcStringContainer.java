@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.network.l2.components.NpcString;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.network.l2.components.NpcString;
  * @author VISTALL
  * @date 16:43/25.03.2011
  */
-public abstract class NpcStringContainer extends L2GameServerPacket
+public abstract class NpcStringContainer implements IClientOutgoingPacket
 {
 	private final NpcString _npcString;
 	private final String[] _parameters;
@@ -19,8 +20,8 @@ public abstract class NpcStringContainer extends L2GameServerPacket
 
 	protected void writeElements()
 	{
-		writeD(_npcString.getId());
+		packetWriter.writeD(_npcString.getId());
 		for (String st : _parameters)
-			writeS(st);
+			packetWriter.writeS(st);
 	}
 }

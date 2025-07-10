@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.entity.boat.Shuttle;
 /**
  * @author Bonux
  **/
-public class ExMTLInSuttlePacket extends L2GameServerPacket
+public class ExMTLInSuttlePacket implements IClientOutgoingPacket
 {
 	private int _playableObjectId, _shuttleId;
 	private Location _origin, _destination;
@@ -21,15 +22,15 @@ public class ExMTLInSuttlePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_playableObjectId); // Player ObjID
-		writeD(_shuttleId); // Shuttle ObjID
-		writeD(_destination.x); // Destination X in shuttle
-		writeD(_destination.y); // Destination Y in shuttle
-		writeD(_destination.z); // Destination Z in shuttle
-		writeD(_origin.x); // X in shuttle
-		writeD(_origin.y); // Y in shuttle
-		writeD(_origin.z); // Z in shuttle
+		packetWriter.writeD(_playableObjectId); // Player ObjID
+		packetWriter.writeD(_shuttleId); // Shuttle ObjID
+		packetWriter.writeD(_destination.x); // Destination X in shuttle
+		packetWriter.writeD(_destination.y); // Destination Y in shuttle
+		packetWriter.writeD(_destination.z); // Destination Z in shuttle
+		packetWriter.writeD(_origin.x); // X in shuttle
+		packetWriter.writeD(_origin.y); // Y in shuttle
+		packetWriter.writeD(_origin.z); // Z in shuttle
 	}
 }

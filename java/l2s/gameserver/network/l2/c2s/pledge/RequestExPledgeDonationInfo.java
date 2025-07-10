@@ -9,19 +9,19 @@ import l2s.gameserver.network.l2.s2c.pledge.ExPledgeDonationInfo;
 /**
  * @author nexvill
  */
-public class RequestExPledgeDonationInfo extends L2GameClientPacket
+public class RequestExPledgeDonationInfo implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		readC(); // 0
+		packet.readC(); // 0
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

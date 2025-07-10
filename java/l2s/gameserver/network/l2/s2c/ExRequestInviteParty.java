@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.network.l2.components.ChatType;
 
-public class ExRequestInviteParty extends L2GameServerPacket
+public class ExRequestInviteParty implements IClientOutgoingPacket
 {
 	private final int reqType;
 	private final ChatType sayType;
@@ -50,13 +51,13 @@ public class ExRequestInviteParty extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		writeString(name);
-		writeC(reqType);
-		writeC(sayType.ordinal());
-		writeC(charRankGrade);
-		writeC(pledgeCastleDBID);
-		writeD(userSID);
+		packetWriter.writeC(reqType);
+		packetWriter.writeC(sayType.ordinal());
+		packetWriter.writeC(charRankGrade);
+		packetWriter.writeC(pledgeCastleDBID);
+		packetWriter.writeD(userSID);
 	}
 }

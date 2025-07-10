@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 import l2s.gameserver.instancemanager.RankManager;
@@ -88,31 +89,31 @@ public class SayPacket2 extends NpcStringContainer
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_type.ordinal());
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_type.ordinal());
 		switch (_type)
 		{
 			case SYSTEM_MESSAGE:
-				writeD(_sysString.getId());
-				writeD(_systemMsg.getId());
+				packetWriter.writeD(_sysString.getId());
+				packetWriter.writeD(_systemMsg.getId());
 				break;
 			case TELL:
-				writeS(_charName);
+				packetWriter.writeS(_charName);
 				writeElements();
-				writeC(_mask);
+				packetWriter.writeC(_mask);
 				if ((_mask & IS_GM) == 0)
-					writeH(_charLevel);
+					packetWriter.writeH(_charLevel);
 				break;
 			case CLAN:
 			case ALLIANCE:
-				writeS(_charName);
+				packetWriter.writeS(_charName);
 				writeElements();
-				writeC(0x00); // TODO[UNDERGROUND]: UNK
+				packetWriter.writeC(0x00); // TODO[UNDERGROUND]: UNK
 				break;
 			default:
-				writeS(_charName);
+				packetWriter.writeS(_charName);
 				writeElements();
 				break;
 		}
@@ -131,8 +132,8 @@ public class SayPacket2 extends NpcStringContainer
 			rank = 3;
 		}
 
-		writeC(rank); // Char global rank
-		writeC(castleId); // Castle ID
+		packetWriter.writeC(rank); // Char global rank
+		packetWriter.writeC(castleId); // Castle ID
 		Player player = GameObjectsStorage.getPlayer(_objectId);
 		if (_isLocSharing == 1)
 		{
@@ -164,8 +165,8 @@ public class SayPacket2 extends NpcStringContainer
 			ServerVariables.set("tpId_" + tpId + "_x", player.getX());
 			ServerVariables.set("tpId_" + tpId + "_y", player.getY());
 			ServerVariables.set("tpId_" + tpId + "_z", player.getZ());
-			writeC(1);
-			writeH(tpId);
+			packetWriter.writeC(1);
+			packetWriter.writeH(tpId);
 
 			if (!free)
 			{
@@ -175,8 +176,8 @@ public class SayPacket2 extends NpcStringContainer
 		else
 		{
 			int tpId = ServerVariables.getInt("last_tp_id", 0);
-			writeC(1);
-			writeH(tpId);
+			packetWriter.writeC(1);
+			packetWriter.writeH(tpId);
 		}
 	}
 }

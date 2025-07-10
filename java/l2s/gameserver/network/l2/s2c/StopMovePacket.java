@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
 /**
  * format ddddd
  */
-public class StopMovePacket extends L2GameServerPacket
+public class StopMovePacket implements IClientOutgoingPacket
 {
 	private final int _objectId;
 	private final int _x;
@@ -23,12 +24,12 @@ public class StopMovePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(_heading);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
+		packetWriter.writeD(_z);
+		packetWriter.writeD(_heading);
 	}
 }

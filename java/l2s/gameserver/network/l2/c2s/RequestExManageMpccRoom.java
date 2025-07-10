@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
@@ -7,7 +10,7 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 /**
  * @author VISTALL
  */
-public class RequestExManageMpccRoom extends L2GameClientPacket
+public class RequestExManageMpccRoom implements IClientIncomingPacket
 {
 	private int _id;
 	private int _memberSize;
@@ -16,21 +19,21 @@ public class RequestExManageMpccRoom extends L2GameClientPacket
 	private String _topic;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_id = readD(); // id
-		_memberSize = readD(); // member size
-		_minLevel = readD(); // min level
-		_maxLevel = readD(); // max level
-		readD(); // lootType
-		_topic = readS(); // topic
+		_id = packet.readD(); // id
+		_memberSize = packet.readD(); // member size
+		_minLevel = packet.readD(); // min level
+		_maxLevel = packet.readD(); // max level
+		packet.readD(); // lootType
+		_topic = packet.readS(); // topic
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

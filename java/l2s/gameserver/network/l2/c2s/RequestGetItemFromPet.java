@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +13,7 @@ import l2s.gameserver.model.items.PcInventory;
 import l2s.gameserver.model.items.PetInventory;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
-public class RequestGetItemFromPet extends L2GameClientPacket
+public class RequestGetItemFromPet implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(RequestGetItemFromPet.class);
 
@@ -20,18 +23,18 @@ public class RequestGetItemFromPet extends L2GameClientPacket
 	private int _unknown;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
-		_amount = readQ();
-		_unknown = readD(); // = 0 for most trades
+		_objectId = packet.readD();
+		_amount = packet.readQ();
+		_unknown = packet.readD(); // = 0 for most trades
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || _amount < 1)
 			return;
 

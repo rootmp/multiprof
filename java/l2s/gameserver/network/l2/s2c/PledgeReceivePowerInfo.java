@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.RankPrivs;
 import l2s.gameserver.model.pledge.UnitMember;
 
-public class PledgeReceivePowerInfo extends L2GameServerPacket
+public class PledgeReceivePowerInfo implements IClientOutgoingPacket
 {
 	private int PowerGrade, privs;
 	private String member_name;
@@ -26,10 +27,10 @@ public class PledgeReceivePowerInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(PowerGrade);
-		writeS(member_name);
-		writeD(privs);
+		packetWriter.writeD(PowerGrade);
+		packetWriter.writeS(member_name);
+		packetWriter.writeD(privs);
 	}
 }

@@ -44,22 +44,22 @@ public class MMOExecutableQueue<T extends MMOClient> implements Queue<Receivable
 	@Override
 	public void run()
 	{
-		while (_state.compareAndSet(QUEUED, RUNNING))
+		while(_state.compareAndSet(QUEUED, RUNNING))
 			try
-			{
-				for (;;)
+		{
+				for(;;)
 				{
 					final Runnable t = poll();
-					if (t == null)
+					if(t == null)
 						break;
 
 					t.run();
 				}
-			}
-			finally
-			{
-				_state.compareAndSet(RUNNING, NONE);
-			}
+		}
+		finally
+		{
+			_state.compareAndSet(RUNNING, NONE);
+		}
 	}
 
 	@Override
@@ -143,7 +143,7 @@ public class MMOExecutableQueue<T extends MMOClient> implements Queue<Receivable
 	{
 		lock();
 		{
-			if (!_queue.add(e))
+			if(!_queue.add(e))
 			{
 				unlock();
 				return false;
@@ -151,7 +151,7 @@ public class MMOExecutableQueue<T extends MMOClient> implements Queue<Receivable
 		}
 		unlock();
 
-		if (_state.getAndSet(QUEUED) == NONE)
+		if(_state.getAndSet(QUEUED) == NONE)
 			_executor.execute(this);
 
 		return true;

@@ -1,12 +1,13 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExNotifyBirthDay extends L2GameServerPacket
+public class ExNotifyBirthDay implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket STATIC = new ExNotifyBirthDay();
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0); // Actor OID
+		packetWriter.writeD(0); // Actor OID
 	}
 }

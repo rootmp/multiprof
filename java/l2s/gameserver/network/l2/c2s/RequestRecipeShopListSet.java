@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -9,16 +12,16 @@ import l2s.gameserver.model.items.ManufactureItem;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.utils.TradeHelper;
 
-public class RequestRecipeShopListSet extends L2GameClientPacket
+public class RequestRecipeShopListSet implements IClientIncomingPacket
 {
 	private int[] _recipes;
 	private long[] _prices;
 	private int _count;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_count = readD();
+		_count = packet.readD();
 		if (_count * 12 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
@@ -28,8 +31,8 @@ public class RequestRecipeShopListSet extends L2GameClientPacket
 		_prices = new long[_count];
 		for (int i = 0; i < _count; i++)
 		{
-			_recipes[i] = readD();
-			_prices[i] = readQ();
+			_recipes[i] = packet.readD();
+			_prices[i] = packet.readQ();
 			if (_prices[i] < 0)
 			{
 				_count = 0;
@@ -40,9 +43,9 @@ public class RequestRecipeShopListSet extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player manufacturer = getClient().getActiveChar();
+		Player manufacturer = client.getActiveChar();
 		if (manufacturer == null || _count == 0)
 			return;
 

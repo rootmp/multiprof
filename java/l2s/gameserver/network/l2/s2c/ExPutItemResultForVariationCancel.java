@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.utils.VariationUtils;
@@ -6,7 +7,7 @@ import l2s.gameserver.utils.VariationUtils;
 /**
  * @author VISTALL
  */
-public class ExPutItemResultForVariationCancel extends L2GameServerPacket
+public class ExPutItemResultForVariationCancel implements IClientOutgoingPacket
 {
 	private int _itemObjectId;
 	private int _itemId;
@@ -24,13 +25,13 @@ public class ExPutItemResultForVariationCancel extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_itemObjectId);
-		writeD(_itemId);
-		writeD(_aug1);
-		writeD(_aug2);
-		writeQ(_price);
-		writeD(0x01);
+		packetWriter.writeD(_itemObjectId);
+		packetWriter.writeD(_itemId);
+		packetWriter.writeD(_aug1);
+		packetWriter.writeD(_aug2);
+		packetWriter.writeQ(_price);
+		packetWriter.writeD(0x01);
 	}
 }

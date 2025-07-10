@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ import l2s.gameserver.model.matching.MatchingRoom;
 /**
  * @author VISTALL
  */
-public class ExListMpccWaiting extends L2GameServerPacket
+public class ExListMpccWaiting implements IClientOutgoingPacket
 {
 	private static final int ITEMS_PER_PAGE = 10;
 	private int _page;
@@ -39,21 +40,21 @@ public class ExListMpccWaiting extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(_page);
-		writeD(_list.size());
+		packetWriter.writeD(_page);
+		packetWriter.writeD(_list.size());
 		for (MatchingRoom room : _list)
 		{
-			writeD(room.getId());
+			packetWriter.writeD(room.getId());
 			Player leader = room.getLeader();
-			writeS(leader == null ? StringUtils.EMPTY : leader.getName());
-			writeD(room.getPlayers().size());
-			writeD(room.getMinLevel());
-			writeD(room.getMaxLevel());
-			writeD(1); // min group
-			writeD(room.getMaxMembersSize()); // max group
-			writeS(room.getTopic());
+			packetWriter.writeS(leader == null ? StringUtils.EMPTY : leader.getName());
+			packetWriter.writeD(room.getPlayers().size());
+			packetWriter.writeD(room.getMinLevel());
+			packetWriter.writeD(room.getMaxLevel());
+			packetWriter.writeD(1); // min group
+			packetWriter.writeD(room.getMaxMembersSize()); // max group
+			packetWriter.writeS(room.getTopic());
 		}
-		writeD(0x00); // Total amount of parties
-		writeD(0x00); // Total amount of party members
+		packetWriter.writeD(0x00); // Total amount of parties
+		packetWriter.writeD(0x00); // Total amount of party members
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.AppearanceStoneHolder;
@@ -17,23 +20,23 @@ import l2s.gameserver.templates.item.support.AppearanceStone.ShapeType;
 /**
  * @author Bonux
  **/
-public class RequestExTryToPutShapeShiftingEnchantSupportItem extends L2GameClientPacket
+public class RequestExTryToPutShapeShiftingEnchantSupportItem implements IClientIncomingPacket
 {
 	private int _targetItemObjId;
 	private int _extracItemObjId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_targetItemObjId = readD();
-		_extracItemObjId = readD();
+		_targetItemObjId = packet.readD();
+		_extracItemObjId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 		{
 			return;

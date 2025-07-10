@@ -13,7 +13,7 @@ import l2s.gameserver.templates.CollectionTemplate;
  * @author nexvill packet used show only active event collections, that player
  *         have otherwise just send tabId and count = 0
  */
-public class ExCollectionList extends L2GameServerPacket
+public class ExCollectionList implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _tabId;
@@ -25,12 +25,12 @@ public class ExCollectionList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_tabId); // tab id
+		packetWriter.writeC(_tabId); // tab id
 		if (_tabId != 7)
 		{
-			writeD(0);
+			packetWriter.writeD(0);
 		}
 		else
 		{
@@ -45,11 +45,11 @@ public class ExCollectionList extends L2GameServerPacket
 					collections.put(count, template.getId());
 				}
 			}
-			writeD(count);
+			packetWriter.writeD(count);
 			for (int id : collections.keySet())
 			{
-				writeH(collections.get(id)); // collection id
-				writeD(0); // expiration time in seconds
+				packetWriter.writeH(collections.get(id)); // collection id
+				packetWriter.writeD(0); // expiration time in seconds
 			}
 		}
 	}

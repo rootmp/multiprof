@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPledgeDonationRequest extends L2GameServerPacket
+public class ExPledgeDonationRequest implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _donationType;
@@ -19,16 +19,16 @@ public class ExPledgeDonationRequest extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_donationType); // donation type
-		writeD(1); // trying donation?
-		writeH(0); // unk
-		writeD(3); // maximum donations/day
-		writeD(14); // unk
-		writeD(0); // unk
-		writeD(0); // unk
-		writeH(0); // unk
-		writeD(_player.getVarInt(PlayerVariables.DONATIONS_AVAILABLE)); // existing donations
+		packetWriter.writeC(_donationType); // donation type
+		packetWriter.writeD(1); // trying donation?
+		packetWriter.writeH(0); // unk
+		packetWriter.writeD(3); // maximum donations/day
+		packetWriter.writeD(14); // unk
+		packetWriter.writeD(0); // unk
+		packetWriter.writeD(0); // unk
+		packetWriter.writeH(0); // unk
+		packetWriter.writeD(_player.getVarInt(PlayerVariables.DONATIONS_AVAILABLE)); // existing donations
 	}
 }

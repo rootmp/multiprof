@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExFestivalBMInfo extends L2GameServerPacket
+public class ExFestivalBMInfo implements IClientOutgoingPacket
 {
 	private final Player _player;
 
@@ -17,19 +17,19 @@ public class ExFestivalBMInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY);
+		packetWriter.writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY);
 
 		if (Config.BM_FESTIVAL_PLAY_LIMIT != -1)
 		{
-			writeQ(_player.getVarInt("FESTIVAL_BM_EXIST_GAMES", Config.BM_FESTIVAL_PLAY_LIMIT));
+			packetWriter.writeQ(_player.getVarInt("FESTIVAL_BM_EXIST_GAMES", Config.BM_FESTIVAL_PLAY_LIMIT));
 		}
 		else
 		{
-			writeQ(0);
+			packetWriter.writeQ(0);
 		}
 
-		writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY_COUNT);
+		packetWriter.writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY_COUNT);
 	}
 }

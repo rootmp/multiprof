@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2s.gameserver.model.entity.events.impl.SiegeEvent;
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.pledge.Clan;
 
-public class ExMercenaryCastlewarCastleSiegeInfo extends L2GameServerPacket
+public class ExMercenaryCastlewarCastleSiegeInfo implements IClientOutgoingPacket
 {
 	private static final int PREPARE_STATUS = 0;
 	private static final int IN_PROGRESS_STATUS = 1;
@@ -68,15 +69,15 @@ public class ExMercenaryCastlewarCastleSiegeInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(castleId);
-		writeD(ownerClanId); // UNK
-		writeD(ownerClanCrestId); // UNK
+		packetWriter.writeD(castleId);
+		packetWriter.writeD(ownerClanId); // UNK
+		packetWriter.writeD(ownerClanCrestId); // UNK
 		writeString(ownerClanName);
 		writeString(ownerLeaderName);
-		writeD(status);
-		writeD(attackersCount); // Castle Siege Camp
-		writeD(defendersCount); // Defenders' Camp
+		packetWriter.writeD(status);
+		packetWriter.writeD(attackersCount); // Castle Siege Camp
+		packetWriter.writeD(defendersCount); // Defenders' Camp
 	}
 }

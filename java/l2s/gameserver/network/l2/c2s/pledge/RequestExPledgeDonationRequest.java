@@ -14,21 +14,21 @@ import l2s.gameserver.templates.item.ItemTemplate;
 /**
  * @author nexvill
  */
-public class RequestExPledgeDonationRequest extends L2GameClientPacket
+public class RequestExPledgeDonationRequest implements IClientIncomingPacket
 {
 	private int _donateType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_donateType = readC();
+		_donateType = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

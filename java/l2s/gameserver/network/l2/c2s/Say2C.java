@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.List;
 import java.util.regex.Matcher;
@@ -45,7 +48,7 @@ import l2s.gameserver.utils.Strings;
 import l2s.gameserver.utils.TimeUtils;
 import l2s.gameserver.utils.Util;
 
-public class Say2C extends L2GameClientPacket
+public class Say2C implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(Say2C.class);
 
@@ -62,19 +65,19 @@ public class Say2C extends L2GameClientPacket
 	private String _target;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_text = readS(Config.CHAT_MESSAGE_MAX_LEN);
 		_type = l2s.commons.lang.ArrayUtils.valid(ChatType.VALUES, readD());
-		_isLocSharing = readC();
+		_isLocSharing = packet.readC();
 		_target = _type == ChatType.TELL ? readS(Config.CNAME_MAXLEN) : null;
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

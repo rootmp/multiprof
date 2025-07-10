@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ManufactureItem;
 import l2s.gameserver.stats.Stats;
 
-public class RecipeShopSellListPacket extends L2GameServerPacket
+public class RecipeShopSellListPacket implements IClientOutgoingPacket
 {
 	private int objId, curMp, maxMp;
 	private long adena;
@@ -26,21 +27,21 @@ public class RecipeShopSellListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(objId);
-		writeD(curMp);// Creator's MP
-		writeD(maxMp);// Creator's MP
-		writeQ(adena);
-		writeD(createList.size());
+		packetWriter.writeD(objId);
+		packetWriter.writeD(curMp);// Creator's MP
+		packetWriter.writeD(maxMp);// Creator's MP
+		packetWriter.writeQ(adena);
+		packetWriter.writeD(createList.size());
 		for (ManufactureItem mi : createList)
 		{
-			writeD(mi.getRecipeId());
-			writeD(0x00); // Can craft
-			writeQ(mi.getCost());
-			writeF(chanceBonus); // Craft chance bonus
-			writeC(critChance > 0 && mi.canCrit()); // Critical craft available
-			writeF(critChance); // Critical craft chance
+			packetWriter.writeD(mi.getRecipeId());
+			packetWriter.writeD(0x00); // Can craft
+			packetWriter.writeQ(mi.getCost());
+			packetWriter.writeF(chanceBonus); // Craft chance bonus
+			packetWriter.writeC(critChance > 0 && mi.canCrit()); // Critical craft available
+			packetWriter.writeF(critChance); // Critical craft chance
 		}
 	}
 }

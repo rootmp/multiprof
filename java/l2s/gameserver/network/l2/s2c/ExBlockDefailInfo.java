@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExBlockDefailInfo extends L2GameServerPacket
+public class ExBlockDefailInfo implements IClientOutgoingPacket
 {
 	private final String _blockName;
 	private final String _blockMemo;
@@ -16,9 +17,9 @@ public class ExBlockDefailInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_blockName);
-		writeS(_blockMemo);
+		packetWriter.writeS(_blockName);
+		packetWriter.writeS(_blockMemo);
 	}
 }

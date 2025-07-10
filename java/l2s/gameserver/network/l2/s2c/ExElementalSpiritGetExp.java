@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExElementalSpiritGetExp extends L2GameServerPacket
+public class ExElementalSpiritGetExp implements IClientOutgoingPacket
 {
 	private final int _elementId;
 	private final long _exp;
@@ -15,9 +16,9 @@ public class ExElementalSpiritGetExp extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_elementId);
-		writeQ(_exp);
+		packetWriter.writeC(_elementId);
+		packetWriter.writeQ(_exp);
 	}
 }

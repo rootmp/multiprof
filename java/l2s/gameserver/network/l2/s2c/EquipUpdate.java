@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
@@ -11,7 +12,7 @@ import l2s.gameserver.model.items.ItemInstance;
  * legs (squire pants) 000c feet 000d ?? back 000e lr.hand (bow) format ddd
  */
 //@Deprecated
-public class EquipUpdate extends L2GameServerPacket
+public class EquipUpdate implements IClientOutgoingPacket
 {
 	private ItemInfo _item;
 
@@ -22,10 +23,10 @@ public class EquipUpdate extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_item.getLastChange());
-		writeD(_item.getObjectId());
-		writeD(_item.getEquipSlot());
+		packetWriter.writeD(_item.getLastChange());
+		packetWriter.writeD(_item.getObjectId());
+		packetWriter.writeD(_item.getEquipSlot());
 	}
 }

@@ -7,19 +7,19 @@ import l2s.gameserver.network.l2.s2c.teleport.ExRaidTeleportInfo;
 /**
  * @author nexvill
  */
-public class RequestExRaidTeleportInfo extends L2GameClientPacket
+public class RequestExRaidTeleportInfo implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		readC(); // unused
+		packet.readC(); // unused
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

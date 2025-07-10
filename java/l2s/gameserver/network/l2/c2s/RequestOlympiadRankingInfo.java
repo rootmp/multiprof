@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.ExOlympiadRankingInfo;
@@ -6,7 +9,7 @@ import l2s.gameserver.network.l2.s2c.ExOlympiadRankingInfo;
 /**
  * @author NviX
  */
-public class RequestOlympiadRankingInfo extends L2GameClientPacket
+public class RequestOlympiadRankingInfo implements IClientIncomingPacket
 {
 	private int _tabId;
 	private int _rankingType;
@@ -15,20 +18,20 @@ public class RequestOlympiadRankingInfo extends L2GameClientPacket
 	private int _serverId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_tabId = readC();
-		_rankingType = readC();
-		_unk = readC();
-		_classId = readD();
-		_serverId = readD();
+		_tabId = packet.readC();
+		_rankingType = packet.readC();
+		_unk = packet.readC();
+		_classId = packet.readD();
+		_serverId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 		activeChar.sendPacket(new ExOlympiadRankingInfo(activeChar, _tabId, _rankingType, _unk, _classId, _serverId));

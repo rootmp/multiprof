@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
@@ -8,7 +11,7 @@ import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
-public class RequestExPledgeMercenaryRecruitInfoSet extends L2GameClientPacket
+public class RequestExPledgeMercenaryRecruitInfoSet implements IClientIncomingPacket
 {
 	private int castleId;
 	private int unk1;
@@ -16,19 +19,19 @@ public class RequestExPledgeMercenaryRecruitInfoSet extends L2GameClientPacket
 	private long rewardRate;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		castleId = readD();
-		unk1 = readD();
-		unk2 = readD();
-		rewardRate = readQ();
+		castleId = packet.readD();
+		unk1 = packet.readD();
+		unk2 = packet.readD();
+		rewardRate = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

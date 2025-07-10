@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Calendar;
 import java.util.Locale;
@@ -8,7 +9,7 @@ import l2s.gameserver.Config;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
 
-public final class SendStatus extends L2GameServerPacket
+public final class SendStatus implements IClientOutgoingPacket
 {
 	private static final long MIN_UPDATE_PERIOD = 30000;
 	private static int online_players = 0;
@@ -58,29 +59,29 @@ public final class SendStatus extends L2GameServerPacket
 	@Override
 	protected final boolean writeOpcodes()
 	{
-		writeC(0x00);
+		packetWriter.writeC(0x00);
 		return true;
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0x01); // World ID
-		writeD(max_online_players); // Max Online
-		writeD(online_players); // Current Online
-		writeD(online_players); // Current Online
-		writeD(online_priv_store); // Priv.Store Chars
+		packetWriter.writeD(0x01); // World ID
+		packetWriter.writeD(max_online_players); // Max Online
+		packetWriter.writeD(online_players); // Current Online
+		packetWriter.writeD(online_players); // Current Online
+		packetWriter.writeD(online_priv_store); // Priv.Store Chars
 
 		// SEND TRASH
-		writeD(0x002C0030);
+		packetWriter.writeD(0x002C0030);
 		for (int x = 0; x < 10; x++)
-			writeH(41 + Rnd.get(17));
-		writeD(43 + Rnd.get(17));
+			packetWriter.writeH(41 + Rnd.get(17));
+		packetWriter.writeD(43 + Rnd.get(17));
 		int z = 36219 + Rnd.get(1987);
-		writeD(z);
-		writeD(z);
-		writeD(37211 + Rnd.get(2397));
-		writeD(0x00);
-		writeD(0x02);
+		packetWriter.writeD(z);
+		packetWriter.writeD(z);
+		packetWriter.writeD(37211 + Rnd.get(2397));
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x02);
 	}
 }

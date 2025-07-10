@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Servitor;
 
-public class PetStatusUpdatePacket extends L2GameServerPacket
+public class PetStatusUpdatePacket implements IClientOutgoingPacket
 {
 	private int type, obj_id, level;
 	private int maxFed, curFed, maxHp, curHp, maxMp, curMp;
@@ -32,24 +33,24 @@ public class PetStatusUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(type);
-		writeD(obj_id);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeS(title);
-		writeD(curFed);
-		writeD(maxFed);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curMp);
-		writeD(maxMp);
-		writeD(level);
-		writeQ(exp);
-		writeQ(exp_this_lvl);// 0% absolute value
-		writeQ(exp_next_lvl);// 100% absolute value
-		writeD(1); // ???
+		packetWriter.writeD(type);
+		packetWriter.writeD(obj_id);
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
+		packetWriter.writeS(title);
+		packetWriter.writeD(curFed);
+		packetWriter.writeD(maxFed);
+		packetWriter.writeD(curHp);
+		packetWriter.writeD(maxHp);
+		packetWriter.writeD(curMp);
+		packetWriter.writeD(maxMp);
+		packetWriter.writeD(level);
+		packetWriter.writeQ(exp);
+		packetWriter.writeQ(exp_this_lvl);// 0% absolute value
+		packetWriter.writeQ(exp_next_lvl);// 100% absolute value
+		packetWriter.writeD(1); // ???
 	}
 }

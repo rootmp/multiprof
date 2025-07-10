@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.DoorInstance;
 import l2s.gameserver.model.instances.StaticObjectInstance;
 
-public class StaticObjectPacket extends L2GameServerPacket
+public class StaticObjectPacket implements IClientOutgoingPacket
 {
 	private final int _staticObjectId;
 	private final int _objectId;
@@ -49,18 +50,18 @@ public class StaticObjectPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_staticObjectId);
-		writeD(_objectId);
-		writeD(_type);
-		writeD(_isTargetable);
-		writeD(_meshIndex);
-		writeD(_isClosed);
-		writeD(_isEnemy);
-		writeD(_currentHp);
-		writeD(_maxHp);
-		writeD(_showHp);
-		writeD(_damageGrade);
+		packetWriter.writeD(_staticObjectId);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_isTargetable);
+		packetWriter.writeD(_meshIndex);
+		packetWriter.writeD(_isClosed);
+		packetWriter.writeD(_isEnemy);
+		packetWriter.writeD(_currentHp);
+		packetWriter.writeD(_maxHp);
+		packetWriter.writeD(_showHp);
+		packetWriter.writeD(_damageGrade);
 	}
 }

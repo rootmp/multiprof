@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.xml.holder.EventHolder;
 import l2s.gameserver.model.Player;
@@ -9,24 +12,24 @@ import l2s.gameserver.model.entity.events.impl.AbstractDuelEvent;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
-public class RequestDuelAnswerStart extends L2GameClientPacket
+public class RequestDuelAnswerStart implements IClientIncomingPacket
 {
 	private int _response;
 	private int _duelType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_duelType = readD();
-		readD(); // 1 посылается если ниже -1(при включеной опции клиента Отменять дуели)
-		_response = readD();
+		_duelType = packet.readD();
+		packet.readD(); // 1 посылается если ниже -1(при включеной опции клиента Отменять дуели)
+		_response = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

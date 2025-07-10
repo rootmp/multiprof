@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author Erlandys
  */
-public class ExDivideAdenaDone extends L2GameServerPacket
+public class ExDivideAdenaDone implements IClientOutgoingPacket
 {
 	private final int _friendsCount;
 	private final long _count, _dividedCount;
@@ -20,13 +20,13 @@ public class ExDivideAdenaDone extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(0x01); // Always 1
-		writeC(0x00); // Always 0
-		writeD(_friendsCount); // Friends count
-		writeQ(_dividedCount); // Divided count
-		writeQ(_count); // Whole count
-		writeS(_name); // Giver name
+		packetWriter.writeC(0x01); // Always 1
+		packetWriter.writeC(0x00); // Always 0
+		packetWriter.writeD(_friendsCount); // Friends count
+		packetWriter.writeQ(_dividedCount); // Divided count
+		packetWriter.writeQ(_count); // Whole count
+		packetWriter.writeS(_name); // Giver name
 	}
 }

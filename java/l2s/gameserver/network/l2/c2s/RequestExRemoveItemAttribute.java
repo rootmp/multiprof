@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.commons.dao.JdbcEntityState;
 import l2s.gameserver.model.Player;
@@ -15,24 +18,24 @@ import l2s.gameserver.network.l2.s2c.InventoryUpdatePacket;
 /**
  * @author SYS
  */
-public class RequestExRemoveItemAttribute extends L2GameClientPacket
+public class RequestExRemoveItemAttribute implements IClientIncomingPacket
 {
 	// Format: chd
 	private int _objectId;
 	private int _attributeId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
-		_attributeId = readD();
+		_objectId = packet.readD();
+		_attributeId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

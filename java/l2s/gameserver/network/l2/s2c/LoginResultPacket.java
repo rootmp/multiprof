@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class LoginResultPacket extends L2GameServerPacket
+public class LoginResultPacket implements IClientOutgoingPacket
 {
 	public static L2GameServerPacket SUCCESS = new LoginResultPacket(0xFFFFFFFF, 0);
 	public static L2GameServerPacket SYSTEM_ERROR_LOGIN_LATER = new LoginResultPacket(0, 1);
@@ -24,9 +25,9 @@ public class LoginResultPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_reason1);
-		writeD(_reason2);
+		packetWriter.writeD(_reason1);
+		packetWriter.writeD(_reason2);
 	}
 }

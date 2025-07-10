@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Set;
 
@@ -27,7 +28,7 @@ import l2s.gameserver.skills.enums.AbnormalEffect;
 /**
  * @author Bonux thx nexvill & artkill
  */
-public class ExCharInfo extends L2GameServerPacket
+public class ExCharInfo implements IClientOutgoingPacket
 {
 	public static final int[] PAPERDOLL_ORDER =
 	{
@@ -287,159 +288,159 @@ public class ExCharInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(347 + (2 + (title.length() * 2)) + (cubics.length * 2) + (abnormalEffects.size() * 2));
+		packetWriter.writeH(347 + (2 + (title.length() * 2)) + (cubics.length * 2) + (abnormalEffects.size() * 2));
 
-		writeD(objId);
-		writeH(race);
-		writeC(sex);
-		writeD(baseClass);
+		packetWriter.writeD(objId);
+		packetWriter.writeH(race);
+		packetWriter.writeC(sex);
+		packetWriter.writeD(baseClass);
 
-		writeH(CharInfoType.PAPERDOLL.getBlockLength()); // Paperdoll block size (2 + (4 * 12))
+		packetWriter.writeH(CharInfoType.PAPERDOLL.getBlockLength()); // Paperdoll block size (2 + (4 * 12))
 
 		for (int paperdollId : PAPERDOLL_ORDER)
 		{
-			writeD(paperdolls[paperdollId][0]);
+			packetWriter.writeD(paperdolls[paperdollId][0]);
 		}
-		writeH(CharInfoType.VARIATION.getBlockLength()); // Augmentation block size (2 + (4 * 6))
+		packetWriter.writeH(CharInfoType.VARIATION.getBlockLength()); // Augmentation block size (2 + (4 * 6))
 
-		writeD(paperdolls[Inventory.PAPERDOLL_RHAND][1]);
-		writeD(paperdolls[Inventory.PAPERDOLL_RHAND][2]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_RHAND][1]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_RHAND][2]);
 
-		writeD(paperdolls[Inventory.PAPERDOLL_LHAND][1]);
-		writeD(paperdolls[Inventory.PAPERDOLL_LHAND][2]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_LHAND][1]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_LHAND][2]);
 
-		writeD(paperdolls[Inventory.PAPERDOLL_LRHAND][1]);
-		writeD(paperdolls[Inventory.PAPERDOLL_LRHAND][2]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_LRHAND][1]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_LRHAND][2]);
 
-		writeC(armorSetEnchant); // Armor Enchant Abnormal
+		packetWriter.writeC(armorSetEnchant); // Armor Enchant Abnormal
 
-		writeH(CharInfoType.SHAPE_SHIFTING.getBlockLength()); // Shape shifting item block size (2 + (4 * 9))
+		packetWriter.writeH(CharInfoType.SHAPE_SHIFTING.getBlockLength()); // Shape shifting item block size (2 + (4 * 9))
 
-		writeD(paperdolls[Inventory.PAPERDOLL_RHAND][3]);
-		writeD(paperdolls[Inventory.PAPERDOLL_LHAND][3]);
-		writeD(paperdolls[Inventory.PAPERDOLL_LRHAND][3]);
-		writeD(paperdolls[Inventory.PAPERDOLL_GLOVES][3]);
-		writeD(paperdolls[Inventory.PAPERDOLL_CHEST][3]);
-		writeD(paperdolls[Inventory.PAPERDOLL_LEGS][3]);
-		writeD(paperdolls[Inventory.PAPERDOLL_FEET][3]);
-		writeD(paperdolls[Inventory.PAPERDOLL_HAIR][3]);
-		writeD(paperdolls[Inventory.PAPERDOLL_DHAIR][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_RHAND][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_LHAND][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_LRHAND][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_GLOVES][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_CHEST][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_LEGS][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_FEET][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_HAIR][3]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_DHAIR][3]);
 
-		writeC(pvpFlag);
-		writeD(karma);
+		packetWriter.writeC(pvpFlag);
+		packetWriter.writeD(karma);
 
-		writeD(mAtkSpd);
-		writeD(pAtkSpd);
+		packetWriter.writeD(mAtkSpd);
+		packetWriter.writeD(pAtkSpd);
 
-		writeD(runSpd);
-		writeD(walkSpd);
-		writeD(swimRunSpd);
-		writeD(swimWalkSpd);
-		writeD(flRunSpd);
-		writeD(flWalkSpd);
-		writeD(flyRunSpd);
-		writeD(flyWalkSpd);
+		packetWriter.writeD(runSpd);
+		packetWriter.writeD(walkSpd);
+		packetWriter.writeD(swimRunSpd);
+		packetWriter.writeD(swimWalkSpd);
+		packetWriter.writeD(flRunSpd);
+		packetWriter.writeD(flWalkSpd);
+		packetWriter.writeD(flyRunSpd);
+		packetWriter.writeD(flyWalkSpd);
 
 		writeCutF(speedMove);
 		writeCutF(speedAtack);
 		writeCutF(colRadius);
 		writeCutF(colHeight);
 
-		writeD(hairStyle);
-		writeD(hairColor);
-		writeD(face);
+		packetWriter.writeD(hairStyle);
+		packetWriter.writeD(hairColor);
+		packetWriter.writeD(face);
 
 		writeString(title);
-		writeD(clanId);
-		writeD(clanCrestId);
-		writeD(allyId);
-		writeD(allyCrestId);
+		packetWriter.writeD(clanId);
+		packetWriter.writeD(clanCrestId);
+		packetWriter.writeD(allyId);
+		packetWriter.writeD(allyCrestId);
 
-		writeC(sit);
-		writeC(run);
+		packetWriter.writeC(sit);
+		packetWriter.writeC(run);
 
-		writeC(combat);
+		packetWriter.writeC(combat);
 
-		writeC(mountType); // 1-on Strider, 2-on Wyvern, 3-on Great Wolf, 0-no mount
-		writeH(privateStore);
+		packetWriter.writeC(mountType); // 1-on Strider, 2-on Wyvern, 3-on Great Wolf, 0-no mount
+		packetWriter.writeH(privateStore);
 
-		writeD(cubics.length);
+		packetWriter.writeD(cubics.length);
 		for (Cubic cubic : cubics)
 		{
-			writeH(cubic == null ? 0 : cubic.getId());
+			packetWriter.writeH(cubic == null ? 0 : cubic.getId());
 		}
-		writeC(partyRoomLeader); // find party members
-		writeC(flying ? 0x02 : 0x00);
-		writeC(recHave);
-		writeD(mountId);
-		writeD(classId);
-		writeD(0); // Foot Effect
-		writeC(enchant);
-		writeC(0); // back enchant
-		writeC(teamType.ordinal()); // team circle around feet 1 = Blue, 2 = red
+		packetWriter.writeC(partyRoomLeader); // find party members
+		packetWriter.writeC(flying ? 0x02 : 0x00);
+		packetWriter.writeC(recHave);
+		packetWriter.writeD(mountId);
+		packetWriter.writeD(classId);
+		packetWriter.writeD(0); // Foot Effect
+		packetWriter.writeC(enchant);
+		packetWriter.writeC(0); // back enchant
+		packetWriter.writeC(teamType.ordinal()); // team circle around feet 1 = Blue, 2 = red
 
-		writeD(largeClanCrestId);
+		packetWriter.writeD(largeClanCrestId);
 
-		writeC(noble); // Is Noble
-		writeC(hero);
+		packetWriter.writeC(noble); // Is Noble
+		packetWriter.writeC(hero);
 
-		writeC(fishing);
-		writeD(fishLoc.x);
-		writeD(fishLoc.y);
-		writeD(fishLoc.z);
+		packetWriter.writeC(fishing);
+		packetWriter.writeD(fishLoc.x);
+		packetWriter.writeD(fishLoc.y);
+		packetWriter.writeD(fishLoc.z);
 
-		writeD(nameColor);
-		writeD(heading);
+		packetWriter.writeD(nameColor);
+		packetWriter.writeD(heading);
 
-		writeC(pledgeClass);
-		writeH(pledgeType);
+		packetWriter.writeC(pledgeClass);
+		packetWriter.writeH(pledgeType);
 
-		writeD(titleColor);
+		packetWriter.writeD(titleColor);
 
-		writeC(0); // Cursed Weapon Level
+		packetWriter.writeC(0); // Cursed Weapon Level
 
-		writeD(clanRepScore);
+		packetWriter.writeD(clanRepScore);
 
-		writeD(transformId);
-		writeD(agathionId);
-		writeC(1); // nPvPRestrainStatus
+		packetWriter.writeD(transformId);
+		packetWriter.writeD(agathionId);
+		packetWriter.writeC(1); // nPvPRestrainStatus
 
-		writeD(curCp);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curMp);
-		writeD(maxMp);
+		packetWriter.writeD(curCp);
+		packetWriter.writeD(curHp);
+		packetWriter.writeD(maxHp);
+		packetWriter.writeD(curMp);
+		packetWriter.writeD(maxMp);
 
-		writeC(1); // cBRLectureMark
+		packetWriter.writeC(1); // cBRLectureMark
 
-		writeD(abnormalEffects.size());
+		packetWriter.writeD(abnormalEffects.size());
 		for (AbnormalEffect abnormal : abnormalEffects)
 		{
-			writeH(abnormal.getId());
+			packetWriter.writeH(abnormal.getId());
 		}
-		writeC(0); // Chaos Festival Winner
-		writeC(showHeadAccessories);
-		writeC(0); // Used Abilities Points
-		writeD(0); // nCursedWeaponClassId: Меняет имя на название итема (Item ID)
-		writeD(-1); // nWaitActionId
-		writeD(ranking);
-		writeH(0); // hNotoriety
-		writeD(-1); // again class id
-		writeD(0); // character color index
-		writeD(Config.REQUEST_ID); // Server Id
+		packetWriter.writeC(0); // Chaos Festival Winner
+		packetWriter.writeC(showHeadAccessories);
+		packetWriter.writeC(0); // Used Abilities Points
+		packetWriter.writeD(0); // nCursedWeaponClassId: Меняет имя на название итема (Item ID)
+		packetWriter.writeD(-1); // nWaitActionId
+		packetWriter.writeD(ranking);
+		packetWriter.writeH(0); // hNotoriety
+		packetWriter.writeD(-1); // again class id
+		packetWriter.writeD(0); // character color index
+		packetWriter.writeD(Config.REQUEST_ID); // Server Id
 
-		writeH(CharInfoType.REALTIME_INFO.getBlockLength() + (2 + (name.length() * 2)));
+		packetWriter.writeH(CharInfoType.REALTIME_INFO.getBlockLength() + (2 + (name.length() * 2)));
 
-		writeC(0); // cCreateOrUpdate
-		writeC(0); // cShowSpawnEvent
-		writeD(x);
-		writeD(y);
-		writeD(z);
-		writeD(boatId); // nVehicleID
+		packetWriter.writeC(0); // cCreateOrUpdate
+		packetWriter.writeC(0); // cShowSpawnEvent
+		packetWriter.writeD(x);
+		packetWriter.writeD(y);
+		packetWriter.writeD(z);
+		packetWriter.writeD(boatId); // nVehicleID
 		writeString(name);
-		writeC(dead); // is player dead
-		writeC(_specialMountId);
+		packetWriter.writeC(dead); // is player dead
+		packetWriter.writeC(_specialMountId);
 	}
 }

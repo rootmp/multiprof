@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.ElementalElement;
@@ -7,23 +10,23 @@ import l2s.gameserver.network.l2.s2c.ExElementalSpiritInfo;
 /**
  * @author Bonux
  **/
-public class RequestExElementalSpiritChangeType extends L2GameClientPacket
+public class RequestExElementalSpiritChangeType implements IClientIncomingPacket
 {
 	private int _elementId;
 	private int _unk1;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_unk1 = readC(); // TODO: Приходит 2.
-		_elementId = readC();
+		_unk1 = packet.readC(); // TODO: Приходит 2.
+		_elementId = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

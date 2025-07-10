@@ -1,17 +1,20 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.AutoFarm;
 import l2s.gameserver.network.l2.s2c.ExAutoplaySetting;
 
-public class RequestExAutoplaySetting extends L2GameClientPacket
+public class RequestExAutoplaySetting implements IClientIncomingPacket
 {
 	private int _healPercent, _petHealPercent;
 	private boolean _farmActivate, _autoPickUpItems, _meleeAttackMode, _politeFarm;;
 	private AutoFarm.TargetType _targetType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		// cchcdch
 		int size = readH(); // 16 UNK
@@ -27,16 +30,16 @@ public class RequestExAutoplaySetting extends L2GameClientPacket
 			return false;
 		}
 		_meleeAttackMode = readC() > 0;
-		_healPercent = readD(); // Auto Heal Percent
-		_petHealPercent = readD();
+		_healPercent = packet.readD(); // Auto Heal Percent
+		_petHealPercent = packet.readD();
 		_politeFarm = readC() > 0;
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

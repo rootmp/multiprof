@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExStartScenePlayer extends L2GameServerPacket
+public class ExStartScenePlayer implements IClientOutgoingPacket
 {
 	private final int _sceneId;
 
@@ -10,9 +11,9 @@ public class ExStartScenePlayer extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_sceneId);
-		writeD(-1); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(_sceneId);
+		packetWriter.writeD(-1); // TODO[UNDERGROUND]: UNK
 	}
 }

@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 
-public class ShortBuffStatusUpdatePacket extends L2GameServerPacket
+public class ShortBuffStatusUpdatePacket implements IClientOutgoingPacket
 {
 	/**
 	 * This is client's row 2 buff packet. Example (C4): F4 CD 04 00 00 07 00 00 00
@@ -37,10 +38,10 @@ public class ShortBuffStatusUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_skillId); // skill id??? CD 04 00 00 = skill 1229, hex 4CD
-		writeD(_skillLevel); // Skill Level??? 07 00 00 00 = casted by heal 7 lvl.
-		writeD(_skillDuration); // DURATION???? 0F 00 00 00 = 15 sec = overlord's heal
+		packetWriter.writeD(_skillId); // skill id??? CD 04 00 00 = skill 1229, hex 4CD
+		packetWriter.writeD(_skillLevel); // Skill Level??? 07 00 00 00 = casted by heal 7 lvl.
+		packetWriter.writeD(_skillDuration); // DURATION???? 0F 00 00 00 = 15 sec = overlord's heal
 	}
 }

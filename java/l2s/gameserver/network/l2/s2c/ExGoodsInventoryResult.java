@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author VISTALL
  * @date 11:19/03.07.2011
  */
-public class ExGoodsInventoryResult extends L2GameServerPacket
+public class ExGoodsInventoryResult implements IClientOutgoingPacket
 {
 	public static L2GameServerPacket NOTHING = new ExGoodsInventoryResult(1);
 	public static L2GameServerPacket SUCCESS = new ExGoodsInventoryResult(2);
@@ -31,8 +32,8 @@ public class ExGoodsInventoryResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_result);
+		packetWriter.writeD(_result);
 	}
 }

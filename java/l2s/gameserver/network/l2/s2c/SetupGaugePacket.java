@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
-public class SetupGaugePacket extends L2GameServerPacket
+public class SetupGaugePacket implements IClientOutgoingPacket
 {
 	public static enum Colors
 	{
@@ -31,11 +32,11 @@ public class SetupGaugePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_charId);
-		writeD(_color);
-		writeD(_lostTime);
-		writeD(_time);
+		packetWriter.writeD(_charId);
+		packetWriter.writeD(_color);
+		packetWriter.writeD(_lostTime);
+		packetWriter.writeD(_time);
 	}
 }

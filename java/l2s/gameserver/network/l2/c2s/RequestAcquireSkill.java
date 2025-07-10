@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2s.gameserver.model.Player;
@@ -18,28 +21,28 @@ import l2s.gameserver.templates.item.data.AlterItemData;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.MulticlassUtils;
 
-public class RequestAcquireSkill extends L2GameClientPacket
+public class RequestAcquireSkill implements IClientIncomingPacket
 {
 	private AcquireType _type;
 	private int _id, _level, _subUnit;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_id = readD();
-		_level = readD();
+		_id = packet.readD();
+		_level = packet.readD();
 		_type = AcquireType.getById(readD());
 		if (_type == AcquireType.SUB_UNIT)
 		{
-			_subUnit = readD();
+			_subUnit = packet.readD();
 		}
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null || player.isTransformed() || _type == null)
 		{
 			return;

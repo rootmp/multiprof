@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,9 +22,9 @@ public class ShortCutInitPacket extends ShortCutPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_shortCuts.size());
+		packetWriter.writeD(_shortCuts.size());
 
 		for (final ShortcutInfo sc : _shortCuts)
 			sc.write(this);

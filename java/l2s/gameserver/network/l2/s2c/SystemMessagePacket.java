@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.items.ItemInstance;
@@ -74,7 +75,7 @@ public class SystemMessagePacket extends SysMsgContainer<SystemMessagePacket>
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		writeElements();
 	}

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ShowTutorialMarkPacket extends L2GameServerPacket
+public class ShowTutorialMarkPacket implements IClientOutgoingPacket
 {
 	/**
 	 * После клика по знаку вопроса клиент попросит html-ку с этим номером.
@@ -15,9 +16,9 @@ public class ShowTutorialMarkPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_quest);
-		writeD(_tutorialId);
+		packetWriter.writeC(_quest);
+		packetWriter.writeD(_tutorialId);
 	}
 }

@@ -8,13 +8,13 @@ import l2s.gameserver.network.l2.s2c.pledge.ExPledgeV3Info;
 /**
  * Written by Eden, on 20.02.2021
  */
-public class RequestExPledgeV3SetAnnounce extends L2GameClientPacket
+public class RequestExPledgeV3SetAnnounce implements IClientIncomingPacket
 {
 	private String announce;
 	private boolean enterWorldShow;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		announce = readString();
 		enterWorldShow = readC() == 1;
@@ -22,9 +22,9 @@ public class RequestExPledgeV3SetAnnounce extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

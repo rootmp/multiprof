@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
@@ -8,21 +11,21 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 /**
  * format (ch) d
  */
-public class RequestOustFromPartyRoom extends L2GameClientPacket
+public class RequestOustFromPartyRoom implements IClientIncomingPacket
 {
 	private int _objectId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
+		_objectId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 
 		final MatchingRoom room = player.getMatchingRoom();
 		if (room == null || room.getType() != MatchingRoom.PARTY_MATCHING)

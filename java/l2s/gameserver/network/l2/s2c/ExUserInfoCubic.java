@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Cubic;
 
-public class ExUserInfoCubic extends L2GameServerPacket
+public class ExUserInfoCubic implements IClientOutgoingPacket
 {
 	private final int _objectId, _agationId;
 	private final Cubic[] _cubics;
@@ -16,12 +17,12 @@ public class ExUserInfoCubic extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeH(_cubics.length);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeH(_cubics.length);
 		for (Cubic cubic : _cubics)
-			writeH(cubic == null ? 0 : cubic.getId());
-		writeD(_agationId);
+			packetWriter.writeH(cubic == null ? 0 : cubic.getId());
+		packetWriter.writeD(_agationId);
 	}
 }

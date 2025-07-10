@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,21 +20,21 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author Bonux
  **/
-public class RequestNewEnchantTry extends L2GameClientPacket
+public class RequestNewEnchantTry implements IClientIncomingPacket
 {
 	private static final Logger LOGGER = LoggerFactory.getLogger(RequestNewEnchantTry.class);
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		//
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

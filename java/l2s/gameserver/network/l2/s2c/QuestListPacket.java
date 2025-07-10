@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.quest.QuestRepeatType;
@@ -11,7 +12,7 @@ import gnu.trove.map.hash.TIntIntHashMap;
 /**
  * format: h[dd]b
  */
-public class QuestListPacket extends L2GameServerPacket
+public class QuestListPacket implements IClientOutgoingPacket
 {
 	/**
 	 * This text was wrote by XaKa QuestList packet structure: { 1 byte - 0x80 2
@@ -59,15 +60,15 @@ public class QuestListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(_quests.size());
+		packetWriter.writeH(_quests.size());
 		for (TIntIntIterator iterator = _quests.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 
-			writeD(iterator.key());
-			writeD(iterator.value());
+			packetWriter.writeD(iterator.key());
+			packetWriter.writeD(iterator.value());
 		}
 		writeB(_completedQuestsMask);
 		writeB(_unkMask);

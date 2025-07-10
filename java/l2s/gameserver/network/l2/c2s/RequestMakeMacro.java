@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Macro;
@@ -10,28 +13,28 @@ import l2s.gameserver.network.l2.components.SystemMsg;
  * unknown acronym c // icon c // count c // entry c // type d // skill id c //
  * shortcut id S // command name format: cdSSScc (ccdcS)
  */
-public class RequestMakeMacro extends L2GameClientPacket
+public class RequestMakeMacro implements IClientIncomingPacket
 {
 	private Macro _macro;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		int _id = readD();
+		int _id = packet.readD();
 		String _name = readS(32);
 		String _desc = readS(64);
 		String _acronym = readS(4);
-		int _icon = readD();
-		int _count = readC();
+		int _icon = packet.readD();
+		int _count = packet.readC();
 		if (_count > 12)
 			_count = 12;
 		L2MacroCmd[] commands = new L2MacroCmd[_count];
 		for (int i = 0; i < _count; i++)
 		{
-			int entry = readC();
-			int type = readC(); // 1 = skill, 3 = action, 4 = shortcut
-			int d1 = readD(); // skill or page number for shortcuts
-			int d2 = readC();
+			int entry = packet.readC();
+			int type = packet.readC(); // 1 = skill, 3 = action, 4 = shortcut
+			int d1 = packet.readD(); // skill or page number for shortcuts
+			int d2 = packet.readC();
 			String command = readS().replace(";", "").replace(",", "");
 			commands[i] = new L2MacroCmd(entry, type, d1, d2, command);
 		}
@@ -40,9 +43,9 @@ public class RequestMakeMacro extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

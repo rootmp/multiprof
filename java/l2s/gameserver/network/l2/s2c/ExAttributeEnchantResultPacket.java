@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.base.Element;
 
 /**
  * @author Bonux
  **/
-public class ExAttributeEnchantResultPacket extends L2GameServerPacket
+public class ExAttributeEnchantResultPacket implements IClientOutgoingPacket
 {
 	private final boolean _isWeapon;
 	private final Element _element;
@@ -25,15 +26,15 @@ public class ExAttributeEnchantResultPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(0x00); // TODO
-		writeH(0x00); // TODO
-		writeC(_isWeapon ? 0x01 : 0x00); // Armor - 0x00 / Weapon - 0x01
-		writeH(_element.getId()); // Element
-		writeH(_oldValue);
-		writeH(_newValue);
-		writeH(_usedStones);
-		writeH(_failedStones);
+		packetWriter.writeH(0x00); // TODO
+		packetWriter.writeH(0x00); // TODO
+		packetWriter.writeC(_isWeapon ? 0x01 : 0x00); // Armor - 0x00 / Weapon - 0x01
+		packetWriter.writeH(_element.getId()); // Element
+		packetWriter.writeH(_oldValue);
+		packetWriter.writeH(_newValue);
+		packetWriter.writeH(_usedStones);
+		packetWriter.writeH(_failedStones);
 	}
 }

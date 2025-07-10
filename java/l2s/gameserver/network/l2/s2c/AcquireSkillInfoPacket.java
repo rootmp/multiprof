@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +14,7 @@ import l2s.gameserver.templates.item.data.ItemData;
  * 
  * @author Zoey76
  */
-public class AcquireSkillInfoPacket extends L2GameServerPacket
+public class AcquireSkillInfoPacket implements IClientOutgoingPacket
 {
 	private SkillLearn _learn;
 	private AcquireType _type;
@@ -58,17 +59,17 @@ public class AcquireSkillInfoPacket extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(_learn.getId());
-		writeD(_learn.getLevel());
-		writeQ(_learn.getCost()); // sp/rep
-		writeD(_type.getId());
-		writeD(_reqs.size()); // requires size
+		packetWriter.writeD(_learn.getId());
+		packetWriter.writeD(_learn.getLevel());
+		packetWriter.writeQ(_learn.getCost()); // sp/rep
+		packetWriter.writeD(_type.getId());
+		packetWriter.writeD(_reqs.size()); // requires size
 		for (Require temp : _reqs)
 		{
-			writeD(temp.type);
-			writeD(temp.itemId);
-			writeQ(temp.count);
-			writeQ(temp.unk); // paperdoll slot for this item
+			packetWriter.writeD(temp.type);
+			packetWriter.writeD(temp.itemId);
+			packetWriter.writeQ(temp.count);
+			packetWriter.writeQ(temp.unk); // paperdoll slot for this item
 		}
 	}
 }

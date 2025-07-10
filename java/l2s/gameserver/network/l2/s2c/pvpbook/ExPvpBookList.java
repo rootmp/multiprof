@@ -8,7 +8,7 @@ import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
 import l2s.gameserver.model.base.ClassId;
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExPvpBookList extends L2GameServerPacket
+public class ExPvpBookList implements IClientOutgoingPacket
 {
 	private final int locationShowCount;
 	private final int teleportCount;
@@ -25,18 +25,18 @@ public class ExPvpBookList extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(locationShowCount); // Show locations count
-		writeD(teleportCount); // Teleports count
-		writeD(pvpbookInfos.size());
+		packetWriter.writeD(locationShowCount); // Show locations count
+		packetWriter.writeD(teleportCount); // Teleports count
+		packetWriter.writeD(pvpbookInfos.size());
 		for (PvpbookInfo pvpbookInfo : pvpbookInfos)
 		{
 			writeString(pvpbookInfo.getKillerName()); // Char name
 			writeString(pvpbookInfo.getKillerClanName()); // Clan name
-			writeD(pvpbookInfo.getKillerLevel()); // Level
-			writeD(ClassId.valueOf(pvpbookInfo.getKillerClassId()).getRace().ordinal()); // Race
-			writeD(pvpbookInfo.getKillerClassId()); // Class ID
-			writeD(pvpbookInfo.getDeathTime()); // Death time
-			writeC(pvpbookInfo.isOnline()); // Online
+			packetWriter.writeD(pvpbookInfo.getKillerLevel()); // Level
+			packetWriter.writeD(ClassId.valueOf(pvpbookInfo.getKillerClassId()).getRace().ordinal()); // Race
+			packetWriter.writeD(pvpbookInfo.getKillerClassId()); // Class ID
+			packetWriter.writeD(pvpbookInfo.getDeathTime()); // Death time
+			packetWriter.writeC(pvpbookInfo.isOnline()); // Online
 		}
 	}
 }

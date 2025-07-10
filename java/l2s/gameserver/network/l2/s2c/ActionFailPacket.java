@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ActionFailPacket extends L2GameServerPacket
+public class ActionFailPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ActionFailPacket();
+	public static final IClientOutgoingPacket STATIC = new ActionFailPacket();
 
 	private final int _castingType;
 
@@ -17,8 +18,9 @@ public class ActionFailPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_castingType); // MagicSkillUse castingType
+		packetWriter.writeD(_castingType); // MagicSkillUse castingType
+		return true;
 	}
 }

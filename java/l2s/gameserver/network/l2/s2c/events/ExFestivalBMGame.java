@@ -19,7 +19,7 @@ import l2s.gameserver.templates.FestivalBMTemplate;
 /**
  * @author nexvill
  */
-public class ExFestivalBMGame extends L2GameServerPacket
+public class ExFestivalBMGame implements IClientOutgoingPacket
 {
 	private Map<Integer, FestivalBMTemplate> _items = new HashMap<>();
 	private Map<Integer, FestivalBMTemplate> _itemsGrp = new HashMap<>();
@@ -32,22 +32,22 @@ public class ExFestivalBMGame extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		_itemsGrp.clear();
 
-		writeC(1); // result (0 - close window)
-		writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY); // item id to play
+		packetWriter.writeC(1); // result (0 - close window)
+		packetWriter.writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY); // item id to play
 		if (Config.BM_FESTIVAL_PLAY_LIMIT != -1)
 		{
-			writeQ(_player.getVarInt("FESTIVAL_BM_EXIST_GAMES", Config.BM_FESTIVAL_PLAY_LIMIT)); // tickets amount.. not
+			packetWriter.writeQ(_player.getVarInt("FESTIVAL_BM_EXIST_GAMES", Config.BM_FESTIVAL_PLAY_LIMIT)); // tickets amount.. not
 																									// used?
 		}
 		else
 		{
-			writeQ(0);
+			packetWriter.writeQ(0);
 		}
-		writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY_COUNT); // tickets used per game
+		packetWriter.writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY_COUNT); // tickets used per game
 
 		if (_items.size() > 0)
 		{
@@ -57,15 +57,15 @@ public class ExFestivalBMGame extends L2GameServerPacket
 				int resultItem = giveItem(3);
 				if (resultItem == 0)
 				{
-					writeC(3);
-					writeD(0);
-					writeD(0);
+					packetWriter.writeC(3);
+					packetWriter.writeD(0);
+					packetWriter.writeD(0);
 				}
 				else
 				{
-					writeC(3); // location id (grade)
-					writeD(resultItem); // item id
-					writeD(1); // item count
+					packetWriter.writeC(3); // location id (grade)
+					packetWriter.writeD(resultItem); // item id
+					packetWriter.writeD(1); // item count
 				}
 			}
 			else if (chance > 10)
@@ -73,15 +73,15 @@ public class ExFestivalBMGame extends L2GameServerPacket
 				int resultItem = giveItem(2);
 				if (resultItem == 0)
 				{
-					writeC(2);
-					writeD(0);
-					writeD(0);
+					packetWriter.writeC(2);
+					packetWriter.writeD(0);
+					packetWriter.writeD(0);
 				}
 				else
 				{
-					writeC(2);
-					writeD(resultItem);
-					writeD(1);
+					packetWriter.writeC(2);
+					packetWriter.writeD(resultItem);
+					packetWriter.writeD(1);
 				}
 			}
 			else
@@ -89,15 +89,15 @@ public class ExFestivalBMGame extends L2GameServerPacket
 				int resultItem = giveItem(1);
 				if (resultItem == 0)
 				{
-					writeC(1);
-					writeD(0);
-					writeD(0);
+					packetWriter.writeC(1);
+					packetWriter.writeD(0);
+					packetWriter.writeD(0);
 				}
 				else
 				{
-					writeC(1);
-					writeD(resultItem);
-					writeD(1);
+					packetWriter.writeC(1);
+					packetWriter.writeD(resultItem);
+					packetWriter.writeD(1);
 				}
 			}
 		}

@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExPrivateStoreBuyingResult extends L2GameServerPacket
+public class ExPrivateStoreBuyingResult implements IClientOutgoingPacket
 {
 	private final int _itemObjId;
 	private final long _itemCount;
@@ -17,10 +18,10 @@ public class ExPrivateStoreBuyingResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_itemObjId);
-		writeQ(_itemCount);
-		writeS(_sellerName);
+		packetWriter.writeD(_itemObjId);
+		packetWriter.writeQ(_itemCount);
+		packetWriter.writeS(_sellerName);
 	}
 }

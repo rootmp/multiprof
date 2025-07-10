@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
@@ -37,7 +38,7 @@ import l2s.gameserver.model.pledge.Clan;
  *
  * @reworked VISTALL
  */
-public class CastleSiegeAttackerListPacket extends L2GameServerPacket
+public class CastleSiegeAttackerListPacket implements IClientOutgoingPacket
 {
 	private int _id, _registrationValid;
 	private List<SiegeClanObject> _clans = Collections.emptyList();
@@ -55,40 +56,40 @@ public class CastleSiegeAttackerListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_id);
+		packetWriter.writeD(_id);
 
-		writeD(0x00); // Owner's view
-		writeD(_registrationValid);
-		writeD(0x00); // Page number
+		packetWriter.writeD(0x00); // Owner's view
+		packetWriter.writeD(_registrationValid);
+		packetWriter.writeD(0x00); // Page number
 
-		writeD(_clans.size());
-		writeD(_clans.size());
+		packetWriter.writeD(_clans.size());
+		packetWriter.writeD(_clans.size());
 
 		for (SiegeClanObject siegeClan : _clans)
 		{
 			Clan clan = siegeClan.getClan();
 
-			writeD(clan.getClanId());
-			writeS(clan.getName());
-			writeS(clan.getLeaderName());
-			writeD(clan.getCrestId());
-			writeD((int) (siegeClan.getDate() / 1000L));
+			packetWriter.writeD(clan.getClanId());
+			packetWriter.writeS(clan.getName());
+			packetWriter.writeS(clan.getLeaderName());
+			packetWriter.writeD(clan.getCrestId());
+			packetWriter.writeD((int) (siegeClan.getDate() / 1000L));
 
 			Alliance alliance = clan.getAlliance();
-			writeD(clan.getAllyId());
+			packetWriter.writeD(clan.getAllyId());
 			if (alliance != null)
 			{
-				writeS(alliance.getAllyName());
-				writeS(alliance.getAllyLeaderName());
-				writeD(alliance.getAllyCrestId());
+				packetWriter.writeS(alliance.getAllyName());
+				packetWriter.writeS(alliance.getAllyLeaderName());
+				packetWriter.writeD(alliance.getAllyCrestId());
 			}
 			else
 			{
-				writeS(StringUtils.EMPTY);
-				writeS(StringUtils.EMPTY);
-				writeD(0);
+				packetWriter.writeS(StringUtils.EMPTY);
+				packetWriter.writeS(StringUtils.EMPTY);
+				packetWriter.writeD(0);
 			}
 		}
 	}

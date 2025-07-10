@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.DoorInstance;
 
-public final class DoorStatusUpdatePacket extends L2GameServerPacket
+public final class DoorStatusUpdatePacket implements IClientOutgoingPacket
 {
 	private final int _staticObjectId;
 	private final int _objectId;
@@ -25,14 +26,14 @@ public final class DoorStatusUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_isClosed);
-		writeD(_damageGrade);
-		writeD(_isEnemy);
-		writeD(_staticObjectId);
-		writeD(_currentHp);
-		writeD(_maxHp);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_isClosed);
+		packetWriter.writeD(_damageGrade);
+		packetWriter.writeD(_isEnemy);
+		packetWriter.writeD(_staticObjectId);
+		packetWriter.writeD(_currentHp);
+		packetWriter.writeD(_maxHp);
 	}
 }

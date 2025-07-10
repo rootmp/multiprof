@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExAutoplayDoMacro extends L2GameServerPacket
+public class ExAutoplayDoMacro implements IClientOutgoingPacket
 {
 	public ExAutoplayDoMacro()
 	{
@@ -8,10 +9,10 @@ public class ExAutoplayDoMacro extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(20);
-		writeC(1);
-		writeH(0);
+		packetWriter.writeC(20);
+		packetWriter.writeC(1);
+		packetWriter.writeH(0);
 	}
 }

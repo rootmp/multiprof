@@ -9,23 +9,23 @@ import l2s.gameserver.network.l2.s2c.collection.ExCollectionRegister;
 /**
  * @author nexvill
  */
-public class RequestExCollectionRegister extends L2GameClientPacket
+public class RequestExCollectionRegister implements IClientIncomingPacket
 {
 	private int _collectionId, _slotId, _objectId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_collectionId = readH();
-		_slotId = readD();
-		_objectId = readD();
+		_slotId = packet.readD();
+		_objectId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

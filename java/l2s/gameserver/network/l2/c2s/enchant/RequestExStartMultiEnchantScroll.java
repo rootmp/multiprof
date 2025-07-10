@@ -10,21 +10,21 @@ import l2s.gameserver.templates.item.support.EnchantScroll;
 /**
  * @author nexvill
  */
-public class RequestExStartMultiEnchantScroll extends L2GameClientPacket
+public class RequestExStartMultiEnchantScroll implements IClientIncomingPacket
 {
 	private int _scrollObjId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_scrollObjId = readD();
+		_scrollObjId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

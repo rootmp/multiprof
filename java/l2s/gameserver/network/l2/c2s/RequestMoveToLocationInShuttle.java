@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.BoatHolder;
 import l2s.gameserver.geometry.Location;
@@ -8,29 +11,29 @@ import l2s.gameserver.model.entity.boat.Boat;
 /**
  * @author Bonux
  */
-public class RequestMoveToLocationInShuttle extends L2GameClientPacket
+public class RequestMoveToLocationInShuttle implements IClientIncomingPacket
 {
 	private Location _pos = new Location();
 	private Location _originPos = new Location();
 	private int _shuttleId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_shuttleId = readD();
-		_pos.x = readD();
-		_pos.y = readD();
-		_pos.z = readD();
-		_originPos.x = readD();
-		_originPos.y = readD();
-		_originPos.z = readD();
+		_shuttleId = packet.readD();
+		_pos.x = packet.readD();
+		_pos.y = packet.readD();
+		_pos.z = packet.readD();
+		_originPos.x = packet.readD();
+		_originPos.y = packet.readD();
+		_originPos.z = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

@@ -6,23 +6,23 @@ import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
 /**
  * @author nexvill
  */
-public class RequestExTeleportFavoritesAddDel extends L2GameClientPacket
+public class RequestExTeleportFavoritesAddDel implements IClientIncomingPacket
 {
 	private boolean _type;
 	private int _teleportId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_type = readC() == 1 ? true : false;
-		_teleportId = readD();
+		_teleportId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

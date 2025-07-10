@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExMagicLampExpInfo extends L2GameServerPacket
+public class ExMagicLampExpInfo implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int MAX_LAMP_EXP = Config.MAGIC_LAMP_MAX_LEVEL_EXP;
@@ -18,7 +18,7 @@ public class ExMagicLampExpInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int currentPoints = 0;
 		int lampsExist = 0;
@@ -30,9 +30,9 @@ public class ExMagicLampExpInfo extends L2GameServerPacket
 		{
 			lampsExist = (int) (_player.getMagicLampPoints() / MAX_LAMP_EXP);
 		}
-		writeD(Config.MAGIC_LAMP_ENABLED ? 1 : 0);
-		writeD(MAX_LAMP_EXP); // points to gain 1 lamp
-		writeD(currentPoints); // current points
-		writeD(lampsExist); // lamps exist
+		packetWriter.writeD(Config.MAGIC_LAMP_ENABLED ? 1 : 0);
+		packetWriter.writeD(MAX_LAMP_EXP); // points to gain 1 lamp
+		packetWriter.writeD(currentPoints); // current points
+		packetWriter.writeD(lampsExist); // lamps exist
 	}
 }

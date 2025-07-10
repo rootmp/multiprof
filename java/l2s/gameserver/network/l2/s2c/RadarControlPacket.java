@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 
@@ -7,7 +8,7 @@ import l2s.gameserver.geometry.Location;
  * 00 00 00 00 01 00 00 00 40 2B FF FF 8C 3C 02 00 A0 F6 FF FF Убирает флажок и
  * стрелку EB 02 00 00 00 02 00 00 00 40 2B FF FF 8C 3C 02 00 A0 F6 FF FF
  */
-public class RadarControlPacket extends L2GameServerPacket
+public class RadarControlPacket implements IClientOutgoingPacket
 {
 	private int _x, _y, _z, _type, _showRadar;
 
@@ -26,12 +27,12 @@ public class RadarControlPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_showRadar);
-		writeD(_type); // maybe type
-		writeD(_x); // x
-		writeD(_y); // y
-		writeD(_z); // z
+		packetWriter.writeD(_showRadar);
+		packetWriter.writeD(_type); // maybe type
+		packetWriter.writeD(_x); // x
+		packetWriter.writeD(_y); // y
+		packetWriter.writeD(_z); // z
 	}
 }

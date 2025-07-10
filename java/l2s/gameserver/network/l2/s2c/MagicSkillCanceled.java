@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class MagicSkillCanceled extends L2GameServerPacket
+public class MagicSkillCanceled implements IClientOutgoingPacket
 {
 	private int _objectId;
 
@@ -10,8 +11,8 @@ public class MagicSkillCanceled extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
+		packetWriter.writeD(_objectId);
 	}
 }

@@ -8,21 +8,21 @@ import l2s.gameserver.network.l2.s2c.events.ExFestivalBMInfo;
 /**
  * @author nexvill
  */
-public class RequestExFestivalBMInfo extends L2GameClientPacket
+public class RequestExFestivalBMInfo implements IClientIncomingPacket
 {
 	private int _openWindow;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_openWindow = readC();
+		_openWindow = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

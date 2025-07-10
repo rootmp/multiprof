@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.ShortCut;
@@ -9,7 +10,7 @@ import l2s.gameserver.skills.TimeStamp;
  * @author VISTALL
  * @date 7:48/29.03.2011
  */
-public abstract class ShortCutPacket extends L2GameServerPacket
+public abstract class ShortCutPacket implements IClientOutgoingPacket
 {
 	public static ShortcutInfo convert(Player player, ShortCut shortCut)
 	{
@@ -69,14 +70,14 @@ public abstract class ShortCutPacket extends L2GameServerPacket
 		@Override
 		protected void write0(ShortCutPacket p)
 		{
-			p.writeD(_id);
-			p.writeD(_characterType);
-			p.writeD(_reuseGroup);
-			p.writeD(_currentReuse);
-			p.writeD(_basicReuse);
-			p.writeD(_variation1Id);
-			p.writeD(_variation2Id);
-			p.writeD(0x00); // TODO: [Bonux] ??HARMONY??
+			p.packetWriter.writeD(_id);
+			p.packetWriter.writeD(_characterType);
+			p.packetWriter.writeD(_reuseGroup);
+			p.packetWriter.writeD(_currentReuse);
+			p.packetWriter.writeD(_basicReuse);
+			p.packetWriter.writeD(_variation1Id);
+			p.packetWriter.writeD(_variation2Id);
+			p.packetWriter.writeD(0x00); // TODO: [Bonux] ??HARMONY??
 		}
 	}
 
@@ -98,11 +99,11 @@ public abstract class ShortCutPacket extends L2GameServerPacket
 		@Override
 		protected void write0(ShortCutPacket p)
 		{
-			p.writeD(_id);
-			p.writeD(_level);
-			p.writeD(_id); // TODO [VISTALL] skill reuse group
-			p.writeC(0x00);
-			p.writeD(_characterType);
+			p.packetWriter.writeD(_id);
+			p.packetWriter.writeD(_level);
+			p.packetWriter.writeD(_id); // TODO [VISTALL] skill reuse group
+			p.packetWriter.writeC(0x00);
+			p.packetWriter.writeD(_characterType);
 		}
 	}
 
@@ -125,16 +126,16 @@ public abstract class ShortCutPacket extends L2GameServerPacket
 
 		protected void write(ShortCutPacket p)
 		{
-			p.writeD(_type.ordinal());
-			p.writeD(_page);
-			p.writeC(_autoUse); // is autouse
+			p.packetWriter.writeD(_type.ordinal());
+			p.packetWriter.writeD(_page);
+			p.packetWriter.writeC(_autoUse); // is autouse
 			write0(p);
 		}
 
 		protected void write0(ShortCutPacket p)
 		{
-			p.writeD(_id);
-			p.writeD(_characterType);
+			p.packetWriter.writeD(_id);
+			p.packetWriter.writeD(_characterType);
 		}
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.PremiumItem;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.actor.instances.player.PremiumItem;
 /**
  * @modify Eden 286 "QdQdS"
  **/
-public class ExGetPremiumItemListPacket extends L2GameServerPacket
+public class ExGetPremiumItemListPacket implements IClientOutgoingPacket
 {
 	private final int _objectId;
 	private final PremiumItem[] _list;
@@ -18,15 +19,15 @@ public class ExGetPremiumItemListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeQ(_list.length);
+		packetWriter.writeQ(_list.length);
 		for (PremiumItem premiumItem : _list)
 		{
-			writeD(_objectId);
-			writeQ(premiumItem.getItemCount());
-			writeD(premiumItem.getItemId());
-			writeS(premiumItem.getSender());
+			packetWriter.writeD(_objectId);
+			packetWriter.writeQ(premiumItem.getItemCount());
+			packetWriter.writeD(premiumItem.getItemId());
+			packetWriter.writeS(premiumItem.getSender());
 		}
 	}
 

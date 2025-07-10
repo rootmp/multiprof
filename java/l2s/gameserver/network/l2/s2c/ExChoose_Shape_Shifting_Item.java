@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.templates.item.support.AppearanceStone;
 
 /**
  * @author Bonux
  **/
-public class ExChoose_Shape_Shifting_Item extends L2GameServerPacket
+public class ExChoose_Shape_Shifting_Item implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final int _targetType;
@@ -19,10 +20,10 @@ public class ExChoose_Shape_Shifting_Item extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_targetType); // ShapeType
-		writeD(_type); // ShapeShiftingType
-		writeD(_itemId); // ItemID
+		packetWriter.writeD(_targetType); // ShapeType
+		packetWriter.writeD(_type); // ShapeShiftingType
+		packetWriter.writeD(_itemId); // ItemID
 	}
 }

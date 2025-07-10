@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class ExOlympiadUserInfoPacket extends L2GameServerPacket
+public class ExOlympiadUserInfoPacket implements IClientOutgoingPacket
 {
 	// cdSddddd
 	private int _side, class_id, curHp, maxHp, curCp, maxCp;
@@ -22,15 +23,15 @@ public class ExOlympiadUserInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_side);
-		writeD(obj_id);
-		writeS(_name);
-		writeD(class_id);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curCp);
-		writeD(maxCp);
+		packetWriter.writeC(_side);
+		packetWriter.writeD(obj_id);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(class_id);
+		packetWriter.writeD(curHp);
+		packetWriter.writeD(maxHp);
+		packetWriter.writeD(curCp);
+		packetWriter.writeD(maxCp);
 	}
 }

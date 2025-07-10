@@ -7,21 +7,21 @@ import l2s.gameserver.network.l2.s2c.pledge.ExPledgeRankingList;
 /**
  * @author nexvill
  */
-public class RequestExPledgeRankingList extends L2GameClientPacket
+public class RequestExPledgeRankingList implements IClientIncomingPacket
 {
 	private int _tabId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_tabId = readC(); // top150 or my clan
+		_tabId = packet.readC(); // top150 or my clan
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

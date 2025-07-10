@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExBlessOptionPutItem extends L2GameServerPacket
+public class ExBlessOptionPutItem implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _itemObjId;
@@ -19,21 +19,21 @@ public class ExBlessOptionPutItem extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		ItemInstance item = _player.getInventory().getItemByObjectId(_itemObjId);
 		if (item == null)
 		{
-			writeC(0);
+			packetWriter.writeC(0);
 			return;
 		}
 
 		if (item.isBlessed() || !item.getTemplate().isBlessable())
 		{
-			writeC(0);
+			packetWriter.writeC(0);
 			return;
 		}
 
-		writeC(1); // success put or no
+		packetWriter.writeC(1); // success put or no
 	}
 }

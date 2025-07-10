@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExBalthusEvent extends L2GameServerPacket
+public class ExBalthusEvent implements IClientOutgoingPacket
 {
 	private int _round;
 	private int _stage;
@@ -29,15 +29,15 @@ public class ExBalthusEvent extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_round); // round
-		writeD(_stage); // progress % (draw row)
-		writeD(_reward); // reward
-		writeD(_receivedAmount); // here should change if player win coins reward (and should be = amount)
-		writeD(_amount); // amount
-		writeD(_participate ? 1 : 0); // 0: not participate in event, 1: participate
-		writeC(_awarded ? 0 : 1); // pending award: 0- used, 1 - active now
-		writeD(_time); // time passed
+		packetWriter.writeD(_round); // round
+		packetWriter.writeD(_stage); // progress % (draw row)
+		packetWriter.writeD(_reward); // reward
+		packetWriter.writeD(_receivedAmount); // here should change if player win coins reward (and should be = amount)
+		packetWriter.writeD(_amount); // amount
+		packetWriter.writeD(_participate ? 1 : 0); // 0: not participate in event, 1: participate
+		packetWriter.writeC(_awarded ? 0 : 1); // pending award: 0- used, 1 - active now
+		packetWriter.writeD(_time); // time passed
 	}
 }

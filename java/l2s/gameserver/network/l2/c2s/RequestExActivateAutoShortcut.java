@@ -1,14 +1,17 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 
-public class RequestExActivateAutoShortcut extends L2GameClientPacket
+public class RequestExActivateAutoShortcut implements IClientIncomingPacket
 {
 	private int _slot;
 	private boolean _activate;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_slot = readH();
 		_activate = readC() > 0;
@@ -16,9 +19,9 @@ public class RequestExActivateAutoShortcut extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

@@ -6,7 +6,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExCraftInfo extends L2GameServerPacket
+public class ExCraftInfo implements IClientOutgoingPacket
 {
 	private Player _player;
 
@@ -16,10 +16,10 @@ public class ExCraftInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_player.getCraftPoints());
-		writeD(_player.getCraftGaugePoints());
-		writeC((_player.getCraftPoints() > 0) ? 1 : 0);// button color (think change if craft points > 0)
+		packetWriter.writeD(_player.getCraftPoints());
+		packetWriter.writeD(_player.getCraftGaugePoints());
+		packetWriter.writeC((_player.getCraftPoints() > 0) ? 1 : 0);// button color (think change if craft points > 0)
 	}
 }

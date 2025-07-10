@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
@@ -22,7 +23,7 @@ import l2s.gameserver.network.l2.c2s.RequestExRequestReceivedPostList;
  * 
  * @see ExShowSentPostList аналогичный список отправленной почты
  */
-public class ExShowReceivedPostList extends L2GameServerPacket
+public class ExShowReceivedPostList implements IClientOutgoingPacket
 {
 	private final Mail[] _mails;
 
@@ -35,29 +36,29 @@ public class ExShowReceivedPostList extends L2GameServerPacket
 
 	// d dx[dSSddddddd]
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD((int) (System.currentTimeMillis() / 1000L));
-		writeD(_mails.length); // количество писем
+		packetWriter.writeD((int) (System.currentTimeMillis() / 1000L));
+		packetWriter.writeD(_mails.length); // количество писем
 		for (Mail mail : _mails)
 		{
-			writeD(mail.getType().ordinal()); // тип письма
+			packetWriter.writeD(mail.getType().ordinal()); // тип письма
 
 			if (mail.getType() == Mail.SenderType.SYSTEM)
-				writeD(mail.getSystemTopic());
+				packetWriter.writeD(mail.getSystemTopic());
 
-			writeD(mail.getMessageId()); // уникальный id письма
-			writeS(mail.getTopic()); // топик
-			writeS(mail.getSenderName()); // отправитель
-			writeD(mail.isPayOnDelivery() ? 1 : 0); // если тут 1 то письмо требует оплаты
-			writeD(mail.getExpireTime()); // время действительности письма
-			writeD(mail.isUnread() ? 1 : 0); // письмо не прочитано - его нельзя удалить и оно выделяется ярким цветом
-			writeD(mail.isReturnable()); // returnable
-			writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
-			writeD(mail.isReturned() ? 1 : 0);
-			writeD(mail.getReceiverId());
+			packetWriter.writeD(mail.getMessageId()); // уникальный id письма
+			packetWriter.writeS(mail.getTopic()); // топик
+			packetWriter.writeS(mail.getSenderName()); // отправитель
+			packetWriter.writeD(mail.isPayOnDelivery() ? 1 : 0); // если тут 1 то письмо требует оплаты
+			packetWriter.writeD(mail.getExpireTime()); // время действительности письма
+			packetWriter.writeD(mail.isUnread() ? 1 : 0); // письмо не прочитано - его нельзя удалить и оно выделяется ярким цветом
+			packetWriter.writeD(mail.isReturnable()); // returnable
+			packetWriter.writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
+			packetWriter.writeD(mail.isReturned() ? 1 : 0);
+			packetWriter.writeD(mail.getReceiverId());
 		}
-		writeD(100);
-		writeD(1000);
+		packetWriter.writeD(100);
+		packetWriter.writeD(1000);
 	}
 }

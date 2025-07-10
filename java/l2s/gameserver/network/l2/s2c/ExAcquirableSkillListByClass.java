@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +9,7 @@ import l2s.gameserver.model.base.AcquireType;
 /**
  * Reworked: VISTALL
  */
-public class ExAcquirableSkillListByClass extends L2GameServerPacket
+public class ExAcquirableSkillListByClass implements IClientOutgoingPacket
 {
 	private AcquireType _type;
 	private final List<Skill> _skills;
@@ -50,21 +51,21 @@ public class ExAcquirableSkillListByClass extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(_type.getId());
-		writeH(_skills.size());
+		packetWriter.writeH(_type.getId());
+		packetWriter.writeH(_skills.size());
 
 		for (Skill temp : _skills)
 		{
-			writeD(temp.id);
-			writeH(temp.nextLevel);
-			writeH(temp.maxLevel);
-			writeC(temp.requirements);
-			writeQ(temp.cost);
-			writeC(0x01); // required items or no
+			packetWriter.writeD(temp.id);
+			packetWriter.writeH(temp.nextLevel);
+			packetWriter.writeH(temp.maxLevel);
+			packetWriter.writeC(temp.requirements);
+			packetWriter.writeQ(temp.cost);
+			packetWriter.writeC(0x01); // required items or no
 			if (_type == AcquireType.SUB_UNIT)
-				writeH(temp.subUnit);
+				packetWriter.writeH(temp.subUnit);
 		}
 	}
 }

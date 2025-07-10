@@ -1,14 +1,15 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExEnSoulExtractionShow extends L2GameServerPacket
+public class ExEnSoulExtractionShow implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket STATIC = new ExEnSoulExtractionShow();
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// STATIC
 	}

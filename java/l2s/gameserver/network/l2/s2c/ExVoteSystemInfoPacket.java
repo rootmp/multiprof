@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class ExVoteSystemInfoPacket extends L2GameServerPacket
+public class ExVoteSystemInfoPacket implements IClientOutgoingPacket
 {
 	private int _receivedRec, _givingRec, _time, _bonusPercent;
 	private boolean _showTimer;
@@ -17,12 +18,12 @@ public class ExVoteSystemInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_receivedRec); // полученые реки
-		writeD(_givingRec); // отданые реки
-		writeD(_time); // таймер скок секунд осталось
-		writeD(_bonusPercent); // процент бонуса
-		writeD(_showTimer ? 0x01 : 0x00); // если ноль то таймера нету 1 - пишет чтоли "Работает"
+		packetWriter.writeD(_receivedRec); // полученые реки
+		packetWriter.writeD(_givingRec); // отданые реки
+		packetWriter.writeD(_time); // таймер скок секунд осталось
+		packetWriter.writeD(_bonusPercent); // процент бонуса
+		packetWriter.writeD(_showTimer ? 0x01 : 0x00); // если ноль то таймера нету 1 - пишет чтоли "Работает"
 	}
 }

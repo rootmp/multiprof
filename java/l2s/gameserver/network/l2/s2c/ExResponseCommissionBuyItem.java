@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author : Ragnarok & Bonux
  * @date : 22.04.12 12:09
  */
-public class ExResponseCommissionBuyItem extends L2GameServerPacket
+public class ExResponseCommissionBuyItem implements IClientOutgoingPacket
 {
 	public static final ExResponseCommissionBuyItem FAILED = new ExResponseCommissionBuyItem();
 
@@ -25,14 +26,14 @@ public class ExResponseCommissionBuyItem extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_code);
+		packetWriter.writeD(_code);
 		if (_code == 0)
 			return;
 
-		writeD(0x00); // unk, maybe item object Id
-		writeD(_itemId);
-		writeQ(_count);
+		packetWriter.writeD(0x00); // unk, maybe item object Id
+		packetWriter.writeD(_itemId);
+		packetWriter.writeQ(_count);
 	}
 }

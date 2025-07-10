@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExWaitWaitingSubStituteInfo extends L2GameServerPacket
+public class ExWaitWaitingSubStituteInfo implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket OPEN = new ExWaitWaitingSubStituteInfo(true);
 	public static final L2GameServerPacket CLOSE = new ExWaitWaitingSubStituteInfo(false);
@@ -12,8 +13,8 @@ public class ExWaitWaitingSubStituteInfo extends L2GameServerPacket
 		_open = open;
 	}
 
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_open);
+		packetWriter.writeD(_open);
 	}
 }

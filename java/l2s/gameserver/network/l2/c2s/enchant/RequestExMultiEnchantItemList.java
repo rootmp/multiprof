@@ -35,7 +35,7 @@ import l2s.gameserver.utils.Log;
 /**
  * @author nexvill
  */
-public class RequestExMultiEnchantItemList extends L2GameClientPacket
+public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 {
 	private static final int ENCHANT_DELAY = 1000;
 
@@ -53,10 +53,10 @@ public class RequestExMultiEnchantItemList extends L2GameClientPacket
 	private final Map<Integer, ItemData> _failureReward = new HashMap<>();
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_useLateAnnounce = readC();
-		_slotId = readD();
+		_useLateAnnounce = packet.readC();
+		_slotId = packet.readD();
 		for (int i = 1; getAvaliableBytes() != 0; i++)
 		{
 			_itemObjectId.put(i, readD());
@@ -65,9 +65,9 @@ public class RequestExMultiEnchantItemList extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

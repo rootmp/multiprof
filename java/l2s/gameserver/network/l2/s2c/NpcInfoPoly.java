@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.data.xml.holder.NpcHolder;
 import l2s.gameserver.geometry.Location;
@@ -143,64 +144,64 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_npcObjId);
-		writeC(0x00); // // 0=teleported 1=default 2=summoned
-		writeH(38); // mask_bits_38
+		packetWriter.writeD(_npcObjId);
+		packetWriter.writeC(0x00); // // 0=teleported 1=default 2=summoned
+		packetWriter.writeH(38); // mask_bits_38
 		writeB(_masks);
 
 		// Block 1
-		writeC(_initSize);
-		writeC(_isAttackable);
-		writeD(0x00); // unknown
-		writeS(_title);
+		packetWriter.writeC(_initSize);
+		packetWriter.writeC(_isAttackable);
+		packetWriter.writeD(0x00); // unknown
+		packetWriter.writeS(_title);
 
 		// Block 2
-		writeH(_blockSize);
-		writeD(_npcId + 1000000); // npctype id
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_loc.h);
-		writeD(0x00);
-		writeD(_mAtkSpd);
-		writeD(_pAtkSpd);
+		packetWriter.writeH(_blockSize);
+		packetWriter.writeD(_npcId + 1000000); // npctype id
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
+		packetWriter.writeD(_loc.h);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(_mAtkSpd);
+		packetWriter.writeD(_pAtkSpd);
 		writeCutF(_runSpdMul);
 		writeCutF(_atkSpdMul);
-		writeD(_rHand); // right hand weapon
-		writeD(0);
-		writeD(_lHand); // left hand weapon
-		writeC(_alive);
-		writeC(_running);
-		writeC(_inWater ? 1 : _flying ? 2 : 0);
-		writeC(_team.ordinal());
-		writeD(_enchantEffect);
-		writeD(_flying);
-		writeD(0x00); // Player ObjectId with Decoy
-		writeD(0x00); // Unknown
-		writeD(0x00);
-		writeD(_transformId);
-		writeD(_currentHP);
-		writeD(_currentMP);
-		writeD(_maxHP);
-		writeD(_maxMP);
-		writeC(0x00); // тип клона 1 == приманка, 2 = клон у ножа
-		writeD(0x00);
-		writeD(0x00);
-		writeS(_name);
-		writeD(-1); // NPCStringId for name
-		writeD(-1); // NPCStringId for title
-		writeC(_pvpFlag); // PVP flag
-		writeD(_karma); // Karma
-		writeD(_clanId);
-		writeD(_clanCrestId);
-		writeD(_largeClanCrestId);
-		writeD(_allyId);
-		writeD(_allyCrestId);
-		writeC(_statusMask);
-		writeH(_abnormalEffects.length);
+		packetWriter.writeD(_rHand); // right hand weapon
+		packetWriter.writeD(0);
+		packetWriter.writeD(_lHand); // left hand weapon
+		packetWriter.writeC(_alive);
+		packetWriter.writeC(_running);
+		packetWriter.writeC(_inWater ? 1 : _flying ? 2 : 0);
+		packetWriter.writeC(_team.ordinal());
+		packetWriter.writeD(_enchantEffect);
+		packetWriter.writeD(_flying);
+		packetWriter.writeD(0x00); // Player ObjectId with Decoy
+		packetWriter.writeD(0x00); // Unknown
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(_transformId);
+		packetWriter.writeD(_currentHP);
+		packetWriter.writeD(_currentMP);
+		packetWriter.writeD(_maxHP);
+		packetWriter.writeD(_maxMP);
+		packetWriter.writeC(0x00); // тип клона 1 == приманка, 2 = клон у ножа
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeS(_name);
+		packetWriter.writeD(-1); // NPCStringId for name
+		packetWriter.writeD(-1); // NPCStringId for title
+		packetWriter.writeC(_pvpFlag); // PVP flag
+		packetWriter.writeD(_karma); // Karma
+		packetWriter.writeD(_clanId);
+		packetWriter.writeD(_clanCrestId);
+		packetWriter.writeD(_largeClanCrestId);
+		packetWriter.writeD(_allyId);
+		packetWriter.writeD(_allyCrestId);
+		packetWriter.writeC(_statusMask);
+		packetWriter.writeH(_abnormalEffects.length);
 		for (AbnormalEffect abnormal : _abnormalEffects)
-			writeH(abnormal.getId());
+			packetWriter.writeH(abnormal.getId());
 	}
 }

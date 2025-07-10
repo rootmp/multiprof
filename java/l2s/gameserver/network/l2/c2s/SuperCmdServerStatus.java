@@ -1,18 +1,21 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 /**
  * Format ch c: (id) 0x39 h: (subid) 0x02
  */
-class SuperCmdServerStatus extends L2GameClientPacket
+class SuperCmdServerStatus implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		//
 	}

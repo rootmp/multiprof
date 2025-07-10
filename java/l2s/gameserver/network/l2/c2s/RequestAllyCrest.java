@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.network.l2.s2c.AllianceCrestPacket;
@@ -6,7 +9,7 @@ import l2s.gameserver.network.l2.s2c.AllianceCrestPacket;
 /**
  * @reworked by nexvill
  */
-public class RequestAllyCrest extends L2GameClientPacket
+public class RequestAllyCrest implements IClientIncomingPacket
 {
 	// format: dddd
 
@@ -14,17 +17,17 @@ public class RequestAllyCrest extends L2GameClientPacket
 	private int _clanId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		readD(); // server ID
-		_crestId = readD();
-		readD(); // ally id
-		_clanId = readD();
+		packet.readD(); // server ID
+		_crestId = packet.readD();
+		packet.readD(); // ally id
+		_clanId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if (_crestId == 0)
 			return;

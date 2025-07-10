@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExSubjugationSidebar extends L2GameServerPacket
+public class ExSubjugationSidebar implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private int _zoneId;
@@ -25,7 +25,7 @@ public class ExSubjugationSidebar extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int points = 0;
 		if (_zoneId == 0)
@@ -52,8 +52,8 @@ public class ExSubjugationSidebar extends L2GameServerPacket
 		points = points % 1000000;
 		int keys = points / 1000000;
 
-		writeD(_zoneId);
-		writeD(points);
-		writeD(keys);
+		packetWriter.writeD(_zoneId);
+		packetWriter.writeD(points);
+		packetWriter.writeD(keys);
 	}
 }

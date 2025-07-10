@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.network.l2.s2c.updatetype.IUpdateTypeComponent;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.updatetype.IUpdateTypeComponent;
  * @author UnAfraid
  * @param <T>
  */
-public abstract class AbstractMaskPacket<T extends IUpdateTypeComponent> extends L2GameServerPacket
+public abstract class AbstractMaskPacket<T extends IUpdateTypeComponent> implements IClientOutgoingPacket
 {
 	protected static final byte[] DEFAULT_FLAG_ARRAY =
 	{

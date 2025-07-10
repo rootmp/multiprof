@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 
 /**
  * format dddddd
  */
-public class EarthQuakePacket extends L2GameServerPacket
+public class EarthQuakePacket implements IClientOutgoingPacket
 {
 	private Location _loc;
 	private int _intensity;
@@ -19,13 +20,13 @@ public class EarthQuakePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_intensity);
-		writeD(_duration);
-		writeD(0x00); // Unknown
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
+		packetWriter.writeD(_intensity);
+		packetWriter.writeD(_duration);
+		packetWriter.writeD(0x00); // Unknown
 	}
 }

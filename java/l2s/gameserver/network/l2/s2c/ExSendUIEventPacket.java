@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.NpcString;
@@ -54,9 +55,9 @@ public class ExSendUIEventPacket extends NpcStringContainer
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
+		packetWriter.writeD(_objectId);
 		// 0 - Timer: MM:SS (Description on bottom)
 		// 1 - Disable Timer
 		// 2 - Green Line with percents and timer
@@ -66,14 +67,14 @@ public class ExSendUIEventPacket extends NpcStringContainer
 		// 6 - Yellow Egg progress
 		// 7 - Red Egg progress
 		// 8 - Line with gears, percents and timer
-		writeD(_type);
-		writeD(0x00);// unknown
-		writeD(0x00);// unknown
-		writeS(String.valueOf(_countUp)); // 0 = count down, 1 = count up timer always disappears 10 seconds before end
-		writeS(String.valueOf(_startTime));
-		writeS(String.valueOf(_startTime2));
-		writeS(String.valueOf(_endTime));
-		writeS(String.valueOf(_endTime2));
+		packetWriter.writeD(_type);
+		packetWriter.writeD(0x00);// unknown
+		packetWriter.writeD(0x00);// unknown
+		packetWriter.writeS(String.valueOf(_countUp)); // 0 = count down, 1 = count up timer always disappears 10 seconds before end
+		packetWriter.writeS(String.valueOf(_startTime));
+		packetWriter.writeS(String.valueOf(_startTime2));
+		packetWriter.writeS(String.valueOf(_endTime));
+		packetWriter.writeS(String.valueOf(_endTime2));
 		writeElements();
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.function.Predicate;
 
@@ -21,7 +24,7 @@ import l2s.gameserver.network.l2.s2c.ExRequestInviteParty;
 import l2s.gameserver.utils.ChatUtils;
 import l2s.gameserver.utils.TimeUtils;
 
-public class RequestExRequestInviteParty extends L2GameClientPacket
+public class RequestExRequestInviteParty implements IClientIncomingPacket
 {
 	private static final Logger LOGGER = LoggerFactory.getLogger(RequestExRequestInviteParty.class);
 
@@ -29,17 +32,17 @@ public class RequestExRequestInviteParty extends L2GameClientPacket
 	private ChatType cSayType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		cReqType = readC(); // 0 - Party, 1 - CC
+		cReqType = packet.readC(); // 0 - Party, 1 - CC
 		cSayType = l2s.commons.lang.ArrayUtils.valid(ChatType.VALUES, readC());
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

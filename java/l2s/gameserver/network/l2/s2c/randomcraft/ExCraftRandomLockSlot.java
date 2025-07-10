@@ -9,7 +9,7 @@ import l2s.gameserver.templates.RandomCraftInfo;
 /**
  * @author nexvill
  */
-public class ExCraftRandomLockSlot extends L2GameServerPacket
+public class ExCraftRandomLockSlot implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _slot;
@@ -22,7 +22,7 @@ public class ExCraftRandomLockSlot extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int lockedCount = _player.getRandomCraftLockedSlots();
 
@@ -67,7 +67,7 @@ public class ExCraftRandomLockSlot extends L2GameServerPacket
 			return;
 		}
 
-		writeC(0);
+		packetWriter.writeC(0);
 		_player.sendPacket(new ExCraftRandomLockSlot(_player, lockedCount));//?
 		_player.sendPacket(new ExCraftRandomInfo(_player));
 	}

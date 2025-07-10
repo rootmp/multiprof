@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.commons.dao.JdbcEntityState;
 import l2s.gameserver.dao.MailDAO;
@@ -15,7 +18,7 @@ import l2s.gameserver.network.l2.s2c.ExUnReadMailCount;
  * 
  * @see RequestExRequestSentPost
  */
-public class RequestExRequestReceivedPost extends L2GameClientPacket
+public class RequestExRequestReceivedPost implements IClientIncomingPacket
 {
 	private int postId;
 
@@ -23,16 +26,16 @@ public class RequestExRequestReceivedPost extends L2GameClientPacket
 	 * format: d
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		postId = readD(); // id письма
+		postId = packet.readD(); // id письма
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

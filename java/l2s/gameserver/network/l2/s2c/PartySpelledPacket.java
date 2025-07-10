@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +8,7 @@ import java.util.List;
 import l2s.gameserver.model.Playable;
 import l2s.gameserver.utils.AbnormalsComparator;
 
-public class PartySpelledPacket extends L2GameServerPacket
+public class PartySpelledPacket implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final int _objId;
@@ -32,16 +33,16 @@ public class PartySpelledPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type);
-		writeD(_objId);
-		writeD(_effects.size());
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_objId);
+		packetWriter.writeD(_effects.size());
 		for (Abnormal temp : _effects)
 		{
-			writeD(temp._skillId);
-			writeH(temp._level);
-			writeD(temp._abnormalType);
+			packetWriter.writeD(temp._skillId);
+			packetWriter.writeH(temp._level);
+			packetWriter.writeD(temp._abnormalType);
 			writeOptionalD(temp._duration);
 		}
 	}

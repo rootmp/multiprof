@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
  */
-public class ExPremiumManagerShowHTML extends L2GameServerPacket
+public class ExPremiumManagerShowHTML implements IClientOutgoingPacket
 {
 	private final CharSequence _html;
 	private final boolean _isMain;
@@ -15,11 +16,11 @@ public class ExPremiumManagerShowHTML extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0);
-		writeS(_html);
-		writeD(-1);
-		writeD(_isMain ? 0 : 1);
+		packetWriter.writeD(0);
+		packetWriter.writeS(_html);
+		packetWriter.writeD(-1);
+		packetWriter.writeD(_isMain ? 0 : 1);
 	}
 }

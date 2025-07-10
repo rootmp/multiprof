@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.ILocation;
 import l2s.gameserver.model.Creature;
 
-public class FlyToLocationPacket extends L2GameServerPacket
+public class FlyToLocationPacket implements IClientOutgoingPacket
 {
 	private final int _chaObjId;
 	private final FlyType _type;
@@ -39,19 +40,19 @@ public class FlyToLocationPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_chaObjId);
-		writeD(_destLoc.getX());
-		writeD(_destLoc.getY());
-		writeD(_destLoc.getZ());
-		writeD(_loc.getX());
-		writeD(_loc.getY());
-		writeD(_loc.getZ());
-		writeD(_type.ordinal());
-		writeD(_flySpeed);
-		writeD(_flyDelay);
-		writeD(_animationSpeed);
-		writeD(0x00); // new 245
+		packetWriter.writeD(_chaObjId);
+		packetWriter.writeD(_destLoc.getX());
+		packetWriter.writeD(_destLoc.getY());
+		packetWriter.writeD(_destLoc.getZ());
+		packetWriter.writeD(_loc.getX());
+		packetWriter.writeD(_loc.getY());
+		packetWriter.writeD(_loc.getZ());
+		packetWriter.writeD(_type.ordinal());
+		packetWriter.writeD(_flySpeed);
+		packetWriter.writeD(_flyDelay);
+		packetWriter.writeD(_animationSpeed);
+		packetWriter.writeD(0x00); // new 245
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.instancemanager.games.MiniGameScoreManager;
@@ -8,21 +11,21 @@ import l2s.gameserver.model.Player;
  * @author VISTALL
  * @date 19:55:45/25.05.2010
  */
-public class RequestBR_MiniGameInsertScore extends L2GameClientPacket
+public class RequestBR_MiniGameInsertScore implements IClientIncomingPacket
 {
 	private int _score;
 
 	@Override
-	protected boolean readImpl() throws Exception
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_score = readD();
+		_score = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl() throws Exception
+	public void run(GameClient client) throws Exception
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null || !Config.EX_JAPAN_MINIGAME)
 			return;
 

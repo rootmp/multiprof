@@ -1,31 +1,34 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.ai.CtrlEvent;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.ObservePoint;
 import l2s.gameserver.model.Player;
 
-public class CannotMoveAnymore extends L2GameClientPacket
+public class CannotMoveAnymore implements IClientIncomingPacket
 {
 	private static abstract class Boat extends CannotMoveAnymore
 	{
 		protected int _boatId = -1;
 
 		@Override
-		protected boolean readImpl()
+		public boolean readImpl(GameClient client, PacketReader packet)
 		{
-			_boatId = readD();
-			_loc.x = readD();
-			_loc.y = readD();
-			_loc.z = readD();
-			_loc.h = readD();
+			_boatId = packet.readD();
+			_loc.x = packet.readD();
+			_loc.y = packet.readD();
+			_loc.z = packet.readD();
+			_loc.h = packet.readD();
 			return true;
 		}
 
 		@Override
-		protected void runImpl()
+		public void run(GameClient client)
 		{
-			Player activeChar = getClient().getActiveChar();
+			Player activeChar = client.getActiveChar();
 			if (activeChar == null)
 				return;
 
@@ -57,19 +60,19 @@ public class CannotMoveAnymore extends L2GameClientPacket
 	protected final Location _loc = new Location();
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_loc.x = readD();
-		_loc.y = readD();
-		_loc.z = readD();
-		_loc.h = readD();
+		_loc.x = packet.readD();
+		_loc.y = packet.readD();
+		_loc.z = packet.readD();
+		_loc.h = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

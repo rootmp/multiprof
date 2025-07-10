@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.model.Player;
 /**
  * @author nexvill
  */
-public class ExDieInfo extends L2GameServerPacket
+public class ExDieInfo implements IClientOutgoingPacket
 {
 	private final Map<Integer, DroppedItemsHolder> _droppedItemsInfo;
 	private final Map<Integer, DamageHolder> _damageInfo;
@@ -24,46 +25,46 @@ public class ExDieInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(_droppedItemsInfo.size());
+		packetWriter.writeH(_droppedItemsInfo.size());
 		if (_droppedItemsInfo.size() > 0)
 		{
 			for (DroppedItemsHolder drop : _droppedItemsInfo.values())
 			{
-				writeD(drop.getItemId());
-				writeD(drop.getEnchantLevel());
-				writeD(drop.getCount());
+				packetWriter.writeD(drop.getItemId());
+				packetWriter.writeD(drop.getEnchantLevel());
+				packetWriter.writeD(drop.getCount());
 			}
 		}
 		// -------------------------------------------------------------
-		writeH(_damageInfo.size());
+		packetWriter.writeH(_damageInfo.size());
 
 		for (DamageHolder dmg : _damageInfo.values())
 		{
 			if (dmg.getCreatureId() != 0)
 			{
 
-				writeH(1);
-				writeD(dmg.getCreatureId());
+				packetWriter.writeH(1);
+				packetWriter.writeD(dmg.getCreatureId());
 			}
 			else
 			{
-				writeH(0);
-				writeS(dmg.getName());
+				packetWriter.writeH(0);
+				packetWriter.writeS(dmg.getName());
 			}
-			writeS("");
+			packetWriter.writeS("");
 
 			if (dmg.getSkill() != null)
 			{
-				writeD(dmg.getSkill().getId());
+				packetWriter.writeD(dmg.getSkill().getId());
 			}
 			else
 			{
-				writeD(0);
+				packetWriter.writeD(0);
 			}
-			writeF(dmg.getDamage());
-			writeH(dmg.getType());
+			packetWriter.writeF(dmg.getDamage());
+			packetWriter.writeH(dmg.getType());
 		}
 		_player.resetDamageInfo();
 	}

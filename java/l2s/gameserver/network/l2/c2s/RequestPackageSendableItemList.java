@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.PackageSendableListPacket;
@@ -7,21 +10,21 @@ import l2s.gameserver.network.l2.s2c.PackageSendableListPacket;
  * @author VISTALL
  * @date 20:35/16.05.2011
  */
-public class RequestPackageSendableItemList extends L2GameClientPacket
+public class RequestPackageSendableItemList implements IClientIncomingPacket
 {
 	private int _objectId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
+		_objectId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

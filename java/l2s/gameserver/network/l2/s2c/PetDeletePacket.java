@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class PetDeletePacket extends L2GameServerPacket
+public class PetDeletePacket implements IClientOutgoingPacket
 {
 	private int _petId;
 	private int _petnum;
@@ -12,9 +13,9 @@ public class PetDeletePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_petnum);
-		writeD(_petId);
+		packetWriter.writeD(_petnum);
+		packetWriter.writeD(_petId);
 	}
 }

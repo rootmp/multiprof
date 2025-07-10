@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public final class ExEnchantOneRemoveFail extends L2GameServerPacket
+public final class ExEnchantOneRemoveFail implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket STATIC = new ExEnchantOneRemoveFail();
 
@@ -13,7 +14,7 @@ public final class ExEnchantOneRemoveFail extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		//
 	}

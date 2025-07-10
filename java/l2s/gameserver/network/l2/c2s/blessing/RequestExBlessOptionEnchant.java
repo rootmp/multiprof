@@ -13,7 +13,7 @@ import l2s.gameserver.network.l2.s2c.MagicSkillUse;
 import l2s.gameserver.network.l2.s2c.blessing.ExBlessOptionCancel;
 import l2s.gameserver.network.l2.s2c.blessing.ExBlessOptionEnchant;
 
-public class RequestExBlessOptionEnchant extends L2GameClientPacket
+public class RequestExBlessOptionEnchant implements IClientIncomingPacket
 {
 	private static final int BLESSING_DELAY = 1500;
 	private static final int SUCCESS_VISUAL_EFF_ID = 5965;
@@ -21,16 +21,16 @@ public class RequestExBlessOptionEnchant extends L2GameClientPacket
 	private int _itemObjId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_itemObjId = readD();
+		_itemObjId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

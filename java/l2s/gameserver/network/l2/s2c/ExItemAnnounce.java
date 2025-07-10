@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.items.ItemInstance;
 /**
  * @author NviX
  */
-public class ExItemAnnounce extends L2GameServerPacket
+public class ExItemAnnounce implements IClientOutgoingPacket
 {
 	public static final int ENCHANT = 0;
 	public static final int BOX = 1;
@@ -46,7 +47,7 @@ public class ExItemAnnounce extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// _type
 		// 0 - enchant
@@ -59,10 +60,10 @@ public class ExItemAnnounce extends L2GameServerPacket
 		// 7 - fire and item get from container
 		// 8 and others - null item name by item_id and icon from chest.
 		
-	    writeC(_type); // announce type
+	    packetWriter.writeC(_type); // announce type
 	    writeString(_name); // name of player
-	    writeD(_itemId); // item id
-	    writeC(_enchantLevel); // enchant level
-	    writeD(_misc); // chest item id
+	    packetWriter.writeD(_itemId); // item id
+	    packetWriter.writeC(_enchantLevel); // enchant level
+	    packetWriter.writeD(_misc); // chest item id
 	}
 }

@@ -7,23 +7,23 @@ import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
 import l2s.gameserver.network.l2.s2c.newhenna.ExNewHennaPotenSelect;
 import l2s.gameserver.templates.henna.PotentialEffect;
 
-public class RequestExNewHennaPotenSelect extends L2GameClientPacket
+public class RequestExNewHennaPotenSelect implements IClientIncomingPacket
 {
 	private int cSlotID;
 	private int nPotenID;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		cSlotID = readC();
-		nPotenID = readD();
+		cSlotID = packet.readC();
+		nPotenID = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

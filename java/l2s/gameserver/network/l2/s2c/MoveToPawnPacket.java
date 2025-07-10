@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
-public class MoveToPawnPacket extends L2GameServerPacket
+public class MoveToPawnPacket implements IClientOutgoingPacket
 {
 	private final int _objectId;
 	private final int _targetId;
@@ -28,16 +29,16 @@ public class MoveToPawnPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_targetId);
-		writeD(_distance);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(_tx);
-		writeD(_ty);
-		writeD(_tz);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_targetId);
+		packetWriter.writeD(_distance);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
+		packetWriter.writeD(_z);
+		packetWriter.writeD(_tx);
+		packetWriter.writeD(_ty);
+		packetWriter.writeD(_tz);
 	}
 }

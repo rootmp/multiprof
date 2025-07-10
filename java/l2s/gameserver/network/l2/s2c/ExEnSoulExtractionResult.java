@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.templates.item.support.Ensoul;
 
 /**
  * @author Bonux
  **/
-public class ExEnSoulExtractionResult extends L2GameServerPacket
+public class ExEnSoulExtractionResult implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket FAIL = new ExEnSoulExtractionResult();
 
@@ -28,18 +29,18 @@ public class ExEnSoulExtractionResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_success);
+		packetWriter.writeC(_success);
 		if (_success)
 		{
-			writeC(_normalEnsouls.length);
+			packetWriter.writeC(_normalEnsouls.length);
 			for (Ensoul ensoul : _normalEnsouls)
-				writeD(ensoul.getId());
+				packetWriter.writeD(ensoul.getId());
 
-			writeC(_specialEnsouls.length);
+			packetWriter.writeC(_specialEnsouls.length);
 			for (Ensoul ensoul : _specialEnsouls)
-				writeD(ensoul.getId());
+				packetWriter.writeD(ensoul.getId());
 		}
 	}
 }

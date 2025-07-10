@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.instancemanager.PetitionManager;
@@ -19,21 +22,21 @@ import l2s.gameserver.tables.GmListTable;
  *
  * @author n0nam3
  */
-public final class RequestPetitionCancel extends L2GameClientPacket
+public final class RequestPetitionCancel implements IClientIncomingPacket
 {
 	// private int _unknown;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		// _unknown = readD(); This is pretty much a trigger packet.
+		// _unknown = packet.readD(); This is pretty much a trigger packet.
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

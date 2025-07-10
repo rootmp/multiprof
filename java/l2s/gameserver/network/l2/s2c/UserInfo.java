@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.NpcHolder;
@@ -364,308 +365,308 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(obj_id);
-		writeD(_initSize);
-		writeH(29);
+		packetWriter.writeD(obj_id);
+		packetWriter.writeD(_initSize);
+		packetWriter.writeH(29);
 		writeB(_masks);
 
 		if (containsMask(UserInfoType.RELATION))
 		{
-			writeD(_relation);
+			packetWriter.writeD(_relation);
 		}
 
 		if (containsMask(UserInfoType.BASIC_INFO))
 		{
-			writeH(UserInfoType.BASIC_INFO.getBlockLength() + (_name.length() * 2));
+			packetWriter.writeH(UserInfoType.BASIC_INFO.getBlockLength() + (_name.length() * 2));
 			writeString(_name);
-			writeC(gm_commands);
-			writeC(_race);
-			writeC(sex);
-			writeD(base_class);
-			writeD(class_id);
-			writeH(level);
-			writeH(0x00); // unk 272
-			writeD(class_id); // 286 - again class
+			packetWriter.writeC(gm_commands);
+			packetWriter.writeC(_race);
+			packetWriter.writeC(sex);
+			packetWriter.writeD(base_class);
+			packetWriter.writeD(class_id);
+			packetWriter.writeH(level);
+			packetWriter.writeH(0x00); // unk 272
+			packetWriter.writeD(class_id); // 286 - again class
 		}
 
 		if (containsMask(UserInfoType.BASE_STATS))
 		{
-			writeH(UserInfoType.BASE_STATS.getBlockLength());
-			writeH(_str);
-			writeH(_dex);
-			writeH(_con);
-			writeH(_int);
-			writeH(_wit);
-			writeH(_men);
-			writeH(1); // LUC
-			writeH(1); // CHA
+			packetWriter.writeH(UserInfoType.BASE_STATS.getBlockLength());
+			packetWriter.writeH(_str);
+			packetWriter.writeH(_dex);
+			packetWriter.writeH(_con);
+			packetWriter.writeH(_int);
+			packetWriter.writeH(_wit);
+			packetWriter.writeH(_men);
+			packetWriter.writeH(1); // LUC
+			packetWriter.writeH(1); // CHA
 		}
 
 		if (containsMask(UserInfoType.MAX_HPCPMP))
 		{
-			writeH(UserInfoType.MAX_HPCPMP.getBlockLength());
-			writeD(maxHp);
-			writeD(maxMp);
-			writeD(maxCp);
+			packetWriter.writeH(UserInfoType.MAX_HPCPMP.getBlockLength());
+			packetWriter.writeD(maxHp);
+			packetWriter.writeD(maxMp);
+			packetWriter.writeD(maxCp);
 		}
 
 		if (containsMask(UserInfoType.CURRENT_HPMPCP_EXP_SP))
 		{
-			writeH(UserInfoType.CURRENT_HPMPCP_EXP_SP.getBlockLength());
-			writeD(curHp);
-			writeD(curMp);
-			writeD(curCp);
-			writeQ(_sp);
-			writeQ(_exp);
-			writeF(_expPercent);
+			packetWriter.writeH(UserInfoType.CURRENT_HPMPCP_EXP_SP.getBlockLength());
+			packetWriter.writeD(curHp);
+			packetWriter.writeD(curMp);
+			packetWriter.writeD(curCp);
+			packetWriter.writeQ(_sp);
+			packetWriter.writeQ(_exp);
+			packetWriter.writeF(_expPercent);
 		}
 
 		if (containsMask(UserInfoType.ENCHANTLEVEL))
 		{
-			writeH(UserInfoType.ENCHANTLEVEL.getBlockLength());
-			writeC(_weaponEnchant);
-			writeC(_armorSetEnchant);
-			writeC(0); // unk 338
+			packetWriter.writeH(UserInfoType.ENCHANTLEVEL.getBlockLength());
+			packetWriter.writeC(_weaponEnchant);
+			packetWriter.writeC(_armorSetEnchant);
+			packetWriter.writeC(0); // unk 338
 		}
 
 		if (containsMask(UserInfoType.APPAREANCE))
 		{
-			writeH(UserInfoType.APPAREANCE.getBlockLength());
-			writeD(hair_style);
-			writeD(hair_color);
-			writeD(face);
-			writeC(!_hideHeadAccessories);
-			writeD(0); // unk 338
+			packetWriter.writeH(UserInfoType.APPAREANCE.getBlockLength());
+			packetWriter.writeD(hair_style);
+			packetWriter.writeD(hair_color);
+			packetWriter.writeD(face);
+			packetWriter.writeC(!_hideHeadAccessories);
+			packetWriter.writeD(0); // unk 338
 		}
 
 		if (containsMask(UserInfoType.STATUS))
 		{
-			writeH(UserInfoType.STATUS.getBlockLength());
-			writeC(mount_type);
-			writeC(private_store);
-			writeC(can_crystalize);
-			writeC(0x00); // Used Abilities Points
+			packetWriter.writeH(UserInfoType.STATUS.getBlockLength());
+			packetWriter.writeC(mount_type);
+			packetWriter.writeC(private_store);
+			packetWriter.writeC(can_crystalize);
+			packetWriter.writeC(0x00); // Used Abilities Points
 		}
 
 		if (containsMask(UserInfoType.STATS))
 		{
-			writeH(UserInfoType.STATS.getBlockLength());
-			writeH(_weaponFlag);
-			writeD(_patk);
-			writeD(_patkspd);
-			writeD(_pdef);
-			writeD(_pEvasion);
-			writeD(_pAccuracy);
-			writeD(_pCrit);
-			writeD(_matk);
-			writeD(_matkspd);
-			writeD(_patkspd);
-			writeD(_mEvasion);
-			writeD(_mdef);
-			writeD(_mAccuracy);
-			writeD(_mCrit);
-			writeD(0x00); // unk 272
-			writeD(0x00); // unk 272
+			packetWriter.writeH(UserInfoType.STATS.getBlockLength());
+			packetWriter.writeH(_weaponFlag);
+			packetWriter.writeD(_patk);
+			packetWriter.writeD(_patkspd);
+			packetWriter.writeD(_pdef);
+			packetWriter.writeD(_pEvasion);
+			packetWriter.writeD(_pAccuracy);
+			packetWriter.writeD(_pCrit);
+			packetWriter.writeD(_matk);
+			packetWriter.writeD(_matkspd);
+			packetWriter.writeD(_patkspd);
+			packetWriter.writeD(_mEvasion);
+			packetWriter.writeD(_mdef);
+			packetWriter.writeD(_mAccuracy);
+			packetWriter.writeD(_mCrit);
+			packetWriter.writeD(0x00); // unk 272
+			packetWriter.writeD(0x00); // unk 272
 		}
 
 		if (containsMask(UserInfoType.ELEMENTALS))
 		{
-			writeH(UserInfoType.ELEMENTALS.getBlockLength());
-			writeH(defenceFire);
-			writeH(defenceWater);
-			writeH(defenceWind);
-			writeH(defenceEarth);
-			writeH(defenceHoly);
-			writeH(defenceUnholy);
+			packetWriter.writeH(UserInfoType.ELEMENTALS.getBlockLength());
+			packetWriter.writeH(defenceFire);
+			packetWriter.writeH(defenceWater);
+			packetWriter.writeH(defenceWind);
+			packetWriter.writeH(defenceEarth);
+			packetWriter.writeH(defenceHoly);
+			packetWriter.writeH(defenceUnholy);
 		}
 
 		if (containsMask(UserInfoType.POSITION))
 		{
-			writeH(UserInfoType.POSITION.getBlockLength());
-			writeD(_loc.x);
-			writeD(_loc.y);
-			writeD(_loc.z);
-			writeD(vehicle_obj_id);
+			packetWriter.writeH(UserInfoType.POSITION.getBlockLength());
+			packetWriter.writeD(_loc.x);
+			packetWriter.writeD(_loc.y);
+			packetWriter.writeD(_loc.z);
+			packetWriter.writeD(vehicle_obj_id);
 		}
 
 		if (containsMask(UserInfoType.SPEED))
 		{
-			writeH(UserInfoType.SPEED.getBlockLength());
-			writeH(_runSpd);
-			writeH(_walkSpd);
-			writeH(_swimRunSpd);
-			writeH(_swimWalkSpd);
-			writeH(_flRunSpd);
-			writeH(_flWalkSpd);
-			writeH(_flyRunSpd);
-			writeH(_flyWalkSpd);
+			packetWriter.writeH(UserInfoType.SPEED.getBlockLength());
+			packetWriter.writeH(_runSpd);
+			packetWriter.writeH(_walkSpd);
+			packetWriter.writeH(_swimRunSpd);
+			packetWriter.writeH(_swimWalkSpd);
+			packetWriter.writeH(_flRunSpd);
+			packetWriter.writeH(_flWalkSpd);
+			packetWriter.writeH(_flyRunSpd);
+			packetWriter.writeH(_flyWalkSpd);
 		}
 
 		if (containsMask(UserInfoType.MULTIPLIER))
 		{
-			writeH(UserInfoType.MULTIPLIER.getBlockLength());
-			writeF(move_speed);
-			writeF(attack_speed);
+			packetWriter.writeH(UserInfoType.MULTIPLIER.getBlockLength());
+			packetWriter.writeF(move_speed);
+			packetWriter.writeF(attack_speed);
 		}
 
 		if (containsMask(UserInfoType.COL_RADIUS_HEIGHT))
 		{
-			writeH(UserInfoType.COL_RADIUS_HEIGHT.getBlockLength());
-			writeF(col_radius);
-			writeF(col_height);
+			packetWriter.writeH(UserInfoType.COL_RADIUS_HEIGHT.getBlockLength());
+			packetWriter.writeF(col_radius);
+			packetWriter.writeF(col_height);
 		}
 
 		if (containsMask(UserInfoType.ATK_ELEMENTAL))
 		{
-			writeH(UserInfoType.ATK_ELEMENTAL.getBlockLength());
-			writeC(attackElement.getId());
-			writeH(attackElementValue);
+			packetWriter.writeH(UserInfoType.ATK_ELEMENTAL.getBlockLength());
+			packetWriter.writeC(attackElement.getId());
+			packetWriter.writeH(attackElementValue);
 		}
 
 		if (containsMask(UserInfoType.CLAN))
 		{
-			writeH(UserInfoType.CLAN.getBlockLength() + (_title.length() * 2));
+			packetWriter.writeH(UserInfoType.CLAN.getBlockLength() + (_title.length() * 2));
 			writeString(_title);
-			writeH(pledge_type);
-			writeD(clan_id);
-			writeD(large_clan_crest_id);
-			writeD(clan_crest_id);
-			writeD(ClanPrivs);
-			writeC(_isClanLeader);
-			writeD(ally_id);
-			writeD(ally_crest_id);
-			writeC(partyRoom ? 0x01 : 0x00);
+			packetWriter.writeH(pledge_type);
+			packetWriter.writeD(clan_id);
+			packetWriter.writeD(large_clan_crest_id);
+			packetWriter.writeD(clan_crest_id);
+			packetWriter.writeD(ClanPrivs);
+			packetWriter.writeC(_isClanLeader);
+			packetWriter.writeD(ally_id);
+			packetWriter.writeD(ally_crest_id);
+			packetWriter.writeC(partyRoom ? 0x01 : 0x00);
 		}
 
 		if (containsMask(UserInfoType.SOCIAL))
 		{
-			writeH(UserInfoType.SOCIAL.getBlockLength());
-			writeC(pvp_flag);
-			writeD(karma);
-			writeC(_noble); // Is Noble
-			writeC(hero);
-			writeC(pledge_class);
-			writeD(pk_kills);
-			writeD(pvp_kills);
-			writeH(rec_left);
-			writeH(rec_have);
-			writeD(0x00);
-			writeH(0x00); // Claim left
-			writeH(0x00); // Claim have
+			packetWriter.writeH(UserInfoType.SOCIAL.getBlockLength());
+			packetWriter.writeC(pvp_flag);
+			packetWriter.writeD(karma);
+			packetWriter.writeC(_noble); // Is Noble
+			packetWriter.writeC(hero);
+			packetWriter.writeC(pledge_class);
+			packetWriter.writeD(pk_kills);
+			packetWriter.writeD(pvp_kills);
+			packetWriter.writeH(rec_left);
+			packetWriter.writeH(rec_have);
+			packetWriter.writeD(0x00);
+			packetWriter.writeH(0x00); // Claim left
+			packetWriter.writeH(0x00); // Claim have
 		}
 
 		if (containsMask(UserInfoType.VITA_FAME))
 		{
-			writeH(UserInfoType.VITA_FAME.getBlockLength());
-			writeD(sayhas_grace_points);
-			writeC(0x00); // Vita Bonus
-			writeD(fame);
-			writeD(0x00); // Raid Points
-			writeC(0x00); // todo 196 protocol
-			writeH(0x00); // symbol seal points
-			writeC(0x00); // unk
+			packetWriter.writeH(UserInfoType.VITA_FAME.getBlockLength());
+			packetWriter.writeD(sayhas_grace_points);
+			packetWriter.writeC(0x00); // Vita Bonus
+			packetWriter.writeD(fame);
+			packetWriter.writeD(0x00); // Raid Points
+			packetWriter.writeC(0x00); // todo 196 protocol
+			packetWriter.writeH(0x00); // symbol seal points
+			packetWriter.writeC(0x00); // unk
 		}
 
 		if (containsMask(UserInfoType.SLOTS))
 		{
-			writeH(UserInfoType.SLOTS.getBlockLength());
-			writeC(talismans);
-			writeC(_jewelsLimit);
-			writeC(_team.ordinal());
-			writeC(0x00); // (1 = Red, 2 = White, 3 = White Pink) dotted ring on the floor
-			writeC(0x00);
-			writeC(0x00);
-			writeC(0x00);
-			writeC(_activeMainAgathionSlot); // 140 PROTOCOL
-			writeC(_subAgathionsLimit); // 140 PROTOCOL
-			writeC(0x00); // SEVEN SIGNS
+			packetWriter.writeH(UserInfoType.SLOTS.getBlockLength());
+			packetWriter.writeC(talismans);
+			packetWriter.writeC(_jewelsLimit);
+			packetWriter.writeC(_team.ordinal());
+			packetWriter.writeC(0x00); // (1 = Red, 2 = White, 3 = White Pink) dotted ring on the floor
+			packetWriter.writeC(0x00);
+			packetWriter.writeC(0x00);
+			packetWriter.writeC(0x00);
+			packetWriter.writeC(_activeMainAgathionSlot); // 140 PROTOCOL
+			packetWriter.writeC(_subAgathionsLimit); // 140 PROTOCOL
+			packetWriter.writeC(0x00); // SEVEN SIGNS
 		}
 
 		if (containsMask(UserInfoType.MOVEMENTS))
 		{
-			writeH(UserInfoType.MOVEMENTS.getBlockLength());
-			writeC(_moveType);
-			writeC(running);
+			packetWriter.writeH(UserInfoType.MOVEMENTS.getBlockLength());
+			packetWriter.writeC(_moveType);
+			packetWriter.writeC(running);
 		}
 
 		if (containsMask(UserInfoType.COLOR))
 		{
-			writeH(UserInfoType.COLOR.getBlockLength());
-			writeD(name_color);
-			writeD(title_color);
+			packetWriter.writeH(UserInfoType.COLOR.getBlockLength());
+			packetWriter.writeD(name_color);
+			packetWriter.writeD(title_color);
 		}
 
 		if (containsMask(UserInfoType.INVENTORY_LIMIT))
 		{
-			writeH(UserInfoType.INVENTORY_LIMIT.getBlockLength());
-			writeH(0x00);
-			writeH(0x00);
-			writeH(InventoryLimit);
-			writeC(0); // 1 - don't show title
-			writeD(0x00);
+			packetWriter.writeH(UserInfoType.INVENTORY_LIMIT.getBlockLength());
+			packetWriter.writeH(0x00);
+			packetWriter.writeH(0x00);
+			packetWriter.writeH(InventoryLimit);
+			packetWriter.writeC(0); // 1 - don't show title
+			packetWriter.writeD(0x00);
 		}
 
 		if (containsMask(UserInfoType.UNK_1))
 		{
-			writeH(UserInfoType.UNK_1.getBlockLength());
-			writeD(0x00);
-			writeH(0x00);
-			writeC(0x00); // Chaos Festival Winner
+			packetWriter.writeH(UserInfoType.UNK_1.getBlockLength());
+			packetWriter.writeD(0x00);
+			packetWriter.writeH(0x00);
+			packetWriter.writeC(0x00); // Chaos Festival Winner
 		}
 
 		if (containsMask(UserInfoType.ELEMENTAL))
 		{
-			writeH(UserInfoType.ELEMENTAL.getBlockLength());
-			writeD(_elementalAttackPower);
-			writeD(_elementalFireDefence);
-			writeD(_elementalWaterDefence);
-			writeD(_elementalWindDefence);
-			writeD(_elementalEarthDefence);
-			writeD(_activeElementId); // Active Element
+			packetWriter.writeH(UserInfoType.ELEMENTAL.getBlockLength());
+			packetWriter.writeD(_elementalAttackPower);
+			packetWriter.writeD(_elementalFireDefence);
+			packetWriter.writeD(_elementalWaterDefence);
+			packetWriter.writeD(_elementalWindDefence);
+			packetWriter.writeD(_elementalEarthDefence);
+			packetWriter.writeD(_activeElementId); // Active Element
 		}
 
 		if (containsMask(UserInfoType.RANKING))
 		{
-			writeH(UserInfoType.RANKING.getBlockLength());
-			writeD(_rank); // Rank
+			packetWriter.writeH(UserInfoType.RANKING.getBlockLength());
+			packetWriter.writeD(_rank); // Rank
 		}
 
 		if (containsMask(UserInfoType.STATS_INCREASE))
 		{
-			writeH(UserInfoType.STATS_INCREASE.getBlockLength());
-			writeH(_totalStatPoints); // Total Points
-			writeH(_bonusSTR); // STR additional points
-			writeH(_bonusDEX); // DEX additional points
-			writeH(_bonusCON); // CON additional points
-			writeH(_bonusINT); // INT additional points
-			writeH(_bonusWIT); // WIT additional points
-			writeH(_bonusMEN); // MEN additional points
+			packetWriter.writeH(UserInfoType.STATS_INCREASE.getBlockLength());
+			packetWriter.writeH(_totalStatPoints); // Total Points
+			packetWriter.writeH(_bonusSTR); // STR additional points
+			packetWriter.writeH(_bonusDEX); // DEX additional points
+			packetWriter.writeH(_bonusCON); // CON additional points
+			packetWriter.writeH(_bonusINT); // INT additional points
+			packetWriter.writeH(_bonusWIT); // WIT additional points
+			packetWriter.writeH(_bonusMEN); // MEN additional points
 		}
 
 		if (containsMask(UserInfoType.UNK_2))
 		{
-			writeH(UserInfoType.UNK_2.getBlockLength());
-			writeH(0x00); // UNK 235
-			writeH(0x00); // UNK 235
-			writeH(0x00); // UNK 235
-			writeH(0x00); // UNK 235
-			writeH(0x00); // UNK 235
-			writeH(0x00); // UNK 235
-			writeH(0x00); // UNK 235
-			writeH(0x00); // UNK 235
+			packetWriter.writeH(UserInfoType.UNK_2.getBlockLength());
+			packetWriter.writeH(0x00); // UNK 235
+			packetWriter.writeH(0x00); // UNK 235
+			packetWriter.writeH(0x00); // UNK 235
+			packetWriter.writeH(0x00); // UNK 235
+			packetWriter.writeH(0x00); // UNK 235
+			packetWriter.writeH(0x00); // UNK 235
+			packetWriter.writeH(0x00); // UNK 235
+			packetWriter.writeH(0x00); // UNK 235
 		}
 
 		if (containsMask(UserInfoType.UNK_3))
 		{
-			writeH(_elixirsUsed); // elixirs used
-			writeH(0); // unk 286
+			packetWriter.writeH(_elixirsUsed); // elixirs used
+			packetWriter.writeH(0); // unk 286
 		}
 
 		if (containsMask(UserInfoType.IS_RIDER) && (base_class == 217))
 		{
-			writeC(_specialMountId);
+			packetWriter.writeC(_specialMountId);
 		}
 	}
 }

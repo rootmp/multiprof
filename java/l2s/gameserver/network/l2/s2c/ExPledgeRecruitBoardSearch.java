@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import l2s.gameserver.tables.ClanTable;
  * @author GodWorld
  * @reworked by Bonux
  **/
-public class ExPledgeRecruitBoardSearch extends L2GameServerPacket
+public class ExPledgeRecruitBoardSearch implements IClientOutgoingPacket
 {
 	private static final int PAGINATION_LIMIT = 12;
 
@@ -26,37 +27,37 @@ public class ExPledgeRecruitBoardSearch extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_params.getCurrentPage());
-		writeD(ClanSearchManager.getInstance().getPageCount(PAGINATION_LIMIT));
+		packetWriter.writeD(_params.getCurrentPage());
+		packetWriter.writeD(ClanSearchManager.getInstance().getPageCount(PAGINATION_LIMIT));
 
-		writeD(_clans.size());
+		packetWriter.writeD(_clans.size());
 
 		for (ClanSearchClan clanHolder : _clans)
 		{
-			writeD(clanHolder.getClanId());
-			writeD(0); // Alliance
+			packetWriter.writeD(clanHolder.getClanId());
+			packetWriter.writeD(0); // Alliance
 		}
 
 		for (ClanSearchClan clanHolder : _clans)
 		{
 			Clan clan = ClanTable.getInstance().getClan(clanHolder.getClanId());
 
-			writeD(clan.getCrestId());
-			writeD(clan.getAlliance() == null ? 0 : clan.getAlliance().getAllyCrestId());
+			packetWriter.writeD(clan.getCrestId());
+			packetWriter.writeD(clan.getAlliance() == null ? 0 : clan.getAlliance().getAllyCrestId());
 
-			writeS(clan.getName());
-			writeS(clan.getLeaderName());
+			packetWriter.writeS(clan.getName());
+			packetWriter.writeS(clan.getLeaderName());
 
-			writeD(clan.getLevel());
-			writeD(clan.getAllSize());
-			writeD(clanHolder.getSearchType().ordinal());
+			packetWriter.writeD(clan.getLevel());
+			packetWriter.writeD(clan.getAllSize());
+			packetWriter.writeD(clanHolder.getSearchType().ordinal());
 
-			writeS(""); // Title (deprecated)
+			packetWriter.writeS(""); // Title (deprecated)
 
-			writeD(clanHolder.getApplication()); // Application
-			writeD(clanHolder.getSubUnit()); // Sub Unit Type
+			packetWriter.writeD(clanHolder.getApplication()); // Application
+			packetWriter.writeD(clanHolder.getSubUnit()); // Sub Unit Type
 		}
 	}
 }

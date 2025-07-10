@@ -2,7 +2,7 @@ package l2s.gameserver.network.l2.s2c.itemrestore;
 
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExItemRestore extends L2GameServerPacket
+public class ExItemRestore implements IClientOutgoingPacket
 {
 	public static ExItemRestore FAIL = new ExItemRestore(0);
 	public static ExItemRestore SUCCESS = new ExItemRestore(1);
@@ -15,8 +15,8 @@ public class ExItemRestore extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(cResult);
+		packetWriter.writeC(cResult);
 	}
 }

@@ -25,7 +25,7 @@ import l2s.gameserver.templates.item.ExItemType;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.utils.Language;
 
-public class RequestExPrivateStoreSearchList extends L2GameClientPacket
+public class RequestExPrivateStoreSearchList implements IClientIncomingPacket
 {
 	private String sSearchWord;
 	private int cStoreType;
@@ -34,20 +34,20 @@ public class RequestExPrivateStoreSearchList extends L2GameClientPacket
 	private boolean bSearchCollection;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		sSearchWord = readString();
-		cStoreType = readC(); // 0 - sell, 1 - buy, 3 - all
-		cItemType = readC(); // 0 - equip, 2 - gain, 4 - grocery, 255 - collection
-		cItemSubtype = readC();
+		cStoreType = packet.readC(); // 0 - sell, 1 - buy, 3 - all
+		cItemType = packet.readC(); // 0 - equip, 2 - gain, 4 - grocery, 255 - collection
+		cItemSubtype = packet.readC();
 		bSearchCollection = readC() > 0;
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

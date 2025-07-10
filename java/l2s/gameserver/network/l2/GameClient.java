@@ -1,22 +1,34 @@
 package l2s.gameserver.network.l2;
 
-import java.nio.ByteBuffer;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ScheduledFuture;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandlerContext;
 import l2s.commons.dbutils.DbUtils;
-import l2s.commons.net.nio.impl.MMOClient;
-import l2s.commons.net.nio.impl.MMOConnection;
+import l2s.commons.network.ChannelInboundHandler;
+import l2s.commons.network.IConnectionState;
+import l2s.commons.network.ICrypt;
+import l2s.commons.network.IIncomingPacket;
 import l2s.gameserver.Config;
+import l2s.gameserver.GameServer;
+import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.config.FloodProtectorConfig;
 import l2s.gameserver.config.FloodProtectorConfigs;
+import l2s.gameserver.config.xml.holder.HostsConfigHolder;
 import l2s.gameserver.dao.CharacterDAO;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.model.CharSelectInfoPackage;
@@ -26,31 +38,28 @@ import l2s.gameserver.network.authcomm.AuthServerCommunication;
 import l2s.gameserver.network.authcomm.SessionKey;
 import l2s.gameserver.network.authcomm.gs2as.PlayerLogout;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.components.hwid.HwidHolder;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.gameserver.network.l2.s2c.LogOutOkPacket;
+import l2s.gameserver.network.l2.s2c.NetPingPacket;
+import l2s.gameserver.network.l2.s2c.ServerClose;
 import l2s.gameserver.security.SecondaryPasswordAuth;
 import l2s.gameserver.utils.Language;
+
 
 /**
  * Represents a client connected on Game Server
  */
-public final class GameClient extends MMOClient<MMOConnection<GameClient>>
+public final class GameClient extends ChannelInboundHandler<GameClient>
 {
-	private static final Logger _log = LoggerFactory.getLogger(GameClient.class);
-	private static final String NO_IP = "?.?.?.?";
-
+	private static final Logger logger = LoggerFactory.getLogger(GameClient.class);
+	
+	private Channel _channel;
 	public GameCrypt _crypt = null;
-
-	public GameClientState _state;
 
 	private final Map<String, FloodProtector> _floodProtectors = new HashMap<String, FloodProtector>();
 
-	public static enum GameClientState
-	{
-		CONNECTED,
-		AUTHED,
-		IN_GAME,
-		DISCONNECTED
-	}
+	private InetAddress _addr;
 
 	/** Данные аккаунта */
 	private String _login;
@@ -62,46 +71,77 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 
 	private Player _activeChar;
 	private SessionKey _sessionKey;
-	private String _ip = NO_IP;
 	private int revision = 0;
 
 	private SecondaryPasswordAuth _secondaryAuth = null;
 
 	private List<Integer> _charSlotMapping = new ArrayList<Integer>();
-
-	private String _hwid = null;
-
-	public GameClient(MMOConnection<GameClient> con)
+	private HwidHolder hwidHolder = null;
+	
+	public static int DEFAULT_PAWN_CLIPPING_RANGE = 2048;
+	private int _pingTimestamp;
+	private int _ping;
+	private int _fps;
+	private int _pawnClippingRange;
+	private ScheduledFuture<?> _pingTaskFuture;
+	
+	private volatile boolean _isDetached = false;
+	private boolean isAuthed = false;
+	
+	public GameClient()
 	{
-		super(con);
-
-		_state = GameClientState.CONNECTED;
-		_ip = con.getSocket().getInetAddress().getHostAddress();
 		_crypt = new GameCrypt();
-
-		for (FloodProtectorConfig config : FloodProtectorConfigs.FLOOD_PROTECTORS)
+		for(FloodProtectorConfig config : FloodProtectorConfigs.FLOOD_PROTECTORS)
 			_floodProtectors.put(config.FLOOD_PROTECTOR_TYPE, new FloodProtector(this, config));
 	}
 
 	@Override
-	protected void onDisconnection()
+	public void channelActive(ChannelHandlerContext ctx)
 	{
-		final Player player;
+		super.channelActive(ctx);
 
-		setState(GameClientState.DISCONNECTED);
+		setConnectionState(ConnectionState.CONNECTED);
+		final InetSocketAddress address = (InetSocketAddress) ctx.channel().remoteAddress();
+		_addr = address.getAddress();
+		_channel = ctx.channel();
+
+		for(FloodProtectorConfig config : FloodProtectorConfigs.FLOOD_PROTECTORS)
+			_floodProtectors.put(config.FLOOD_PROTECTOR_TYPE, new FloodProtector(this, config));
+
+		logger.debug("Client Connected: {}", _channel);
+	}
+
+	@Override
+	public void channelInactive(ChannelHandlerContext ctx)
+	{
+		logger.debug("Client Disconnected: {}", _channel);
+
+		if(_pingTaskFuture != null)
+		{
+			_pingTaskFuture.cancel(true);
+			_pingTaskFuture = null;
+		}
+		
+		final Player player;
+		setConnectionState(ConnectionState.DISCONNECTED);
 		player = getActiveChar();
+		
+		if(player != null&& !isLogout() && player.getAutoFarm().isFarmActivate() && player.hasPremiumAccount() && !player.isInOfflineMode())
+		{
+			//player.offlineAF();
+		}
+		
 		setActiveChar(null);
 
-		if (player != null)
+		if(player != null)
 		{
-			player.stopTimedHuntingZoneTask(true, true);
 			player.setNetConnection(null);
 			player.scheduleDelete();
 		}
 
-		if (getSessionKey() != null)
+		if(getSessionKey() != null)
 		{
-			if (isAuthed())
+			if(isAuthed())
 			{
 				AuthServerCommunication.getInstance().removeAuthedClient(getLogin());
 				AuthServerCommunication.getInstance().sendPacket(new PlayerLogout(getLogin()));
@@ -114,19 +154,72 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 	}
 
 	@Override
-	protected void onForcedDisconnection()
+	protected void channelRead0(ChannelHandlerContext ctx, IIncomingPacket<GameClient> packet)
 	{
-		// TODO Auto-generated method stub
-
+		ThreadPoolManager.getInstance().execute(() -> {
+			try
+			{
+				packet.run(GameClient.this);
+			}
+			catch (Exception e)
+			{
+				logger.warn("Exception for: {} on packet.run: {}", toString(), packet.getClass().getSimpleName(), e);
+			}
+		});
 	}
 
+	@Override
+	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
+	{
+		if (cause instanceof IOException) 
+		{
+			if (cause.getMessage().equals("Connection reset by peer")) 
+			{
+				 logger.debug("Network exception caught for: {}", toString());
+				ctx.close();
+				return;
+			}
+
+			if (cause.getMessage().equals("An existing connection was forcibly closed by the remote host")) 
+			{
+				 logger.debug("Network exception caught for: {}", toString());
+				ctx.close();
+				return;
+			}
+		}
+
+		 logger.warn("Network exception caught for: {}", toString());
+	}
+	
+	public boolean isAuthed() 
+	{
+		return isAuthed;
+	}
+
+	public void setAuthed(boolean authed) 
+	{
+		isAuthed = authed;
+	}
+	
+	public ICrypt getCrypt()
+	{
+		return _crypt;
+	}
+	
+	public boolean isConnected()
+	{
+		final Channel conn = _channel;
+		return conn != null && conn.isActive();
+	}
+
+	
 	public void markRestoredChar(int charslot) throws Exception
 	{
 		int objid = getObjectIdForSlot(charslot);
-		if (objid < 0)
+		if(objid < 0)
 			return;
 
-		if (_activeChar != null && _activeChar.getObjectId() == objid)
+		if(_activeChar != null && _activeChar.getObjectId() == objid)
 			_activeChar.setDeleteTimer(0);
 
 		Connection con = null;
@@ -138,9 +231,9 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 			statement.setInt(1, objid);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
-			_log.error("", e);
+			logger.error("Exception while marking restored character for deletion", e);
 		}
 		finally
 		{
@@ -151,10 +244,10 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 	public void markToDeleteChar(int charslot) throws Exception
 	{
 		int objid = getObjectIdForSlot(charslot);
-		if (objid < 0)
+		if(objid < 0)
 			return;
 
-		if (_activeChar != null && _activeChar.getObjectId() == objid)
+		if(_activeChar != null && _activeChar.getObjectId() == objid)
 			_activeChar.setDeleteTimer((int) (System.currentTimeMillis() / 1000));
 
 		Connection con = null;
@@ -167,9 +260,9 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 			statement.setInt(2, objid);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
-			_log.error("data error on update deletime char:", e);
+			logger.error("Exception while marking character for deletion", e);
 		}
 		finally
 		{
@@ -179,12 +272,12 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 
 	public void deleteChar(int charslot) throws Exception
 	{
-		// have to make sure active character must be nulled
-		if (_activeChar != null)
+		//have to make sure active character must be nulled
+		if(_activeChar != null)
 			return;
 
 		int objid = getObjectIdForSlot(charslot);
-		if (objid == -1)
+		if(objid == -1)
 			return;
 
 		CharacterDAO.getInstance().deleteCharByObjId(objid);
@@ -193,15 +286,15 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 	public Player loadCharFromDisk(int charslot)
 	{
 		int objectId = getObjectIdForSlot(charslot);
-		if (objectId == -1)
+		if(objectId == -1)
 			return null;
 
 		Player character = null;
 		Player oldPlayer = GameObjectsStorage.getPlayer(objectId);
 
-		if (oldPlayer != null)
+		if(oldPlayer != null)
 		{
-			if (oldPlayer.isInOfflineMode() || oldPlayer.isLogoutStarted())
+			if(oldPlayer.isInOfflineMode() || oldPlayer.isLogoutStarted())
 			{
 				// оффтрейдового чара проще выбить чем восстанавливать
 				oldPlayer.kick();
@@ -211,32 +304,60 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 				oldPlayer.sendPacket(SystemMsg.ANOTHER_PERSON_HAS_LOGGED_IN_WITH_THE_SAME_ACCOUNT);
 
 				GameClient oldClient = oldPlayer.getNetConnection();
-				if (oldClient != null)
+				if(oldClient != null)
 				{
 					oldClient.setActiveChar(null);
-					oldClient.closeNow(false);
+					oldClient.closeNow();
 				}
 				oldPlayer.setNetConnection(this);
 				character = oldPlayer;
 			}
 		}
+		
+		if(getHwidHolder()!=null)
+		{
+			List<Player> adPlayers = GameObjectsStorage.getOfflinePlayers().stream().filter(p-> !p.getLastHwid().isEmpty()&& p.isInOfflineMode()&& p.getLastHwid().equalsIgnoreCase(getHwidHolder().asString())).collect(Collectors.toList());
+			for(Player p:adPlayers)
+			{
+				p.kick();
+			}
+		}
+		
+		if(character == null)
+			character = Player.restore(objectId, hwidHolder);
 
-		if (character == null)
-			character = Player.restore(objectId, false);
-
-		if (character != null)
+		if(character != null)
 			setActiveChar(character);
 		else
-			_log.warn("could not restore obj_id: " + objectId + " in slot:" + charslot);
+			logger.warn("Could not restore obj_id: {} in slot: {}", objectId, charslot);
 
 		return character;
 	}
 
+	public void closeNow()
+	{
+		if (_channel != null)
+		{
+			_channel.close();
+		}
+	}
+	
+	public void close(IClientOutgoingPacket packet)
+	{
+		sendPacket(packet);
+		closeNow();
+	}
+
+	public void close(boolean toLoginScreen)
+	{
+		close(toLoginScreen ? ServerClose.STATIC_PACKET : LogOutOkPacket.STATIC);
+	}
+	
 	public int getObjectIdForSlot(int charslot)
 	{
-		if (charslot < 0 || charslot >= _charSlotMapping.size())
+		if(charslot < 0 || charslot >= _charSlotMapping.size())
 		{
-			_log.warn(getLogin() + " tried to modify Character in slot " + charslot + " but no characters exits at that slot.");
+			logger.warn("{} tried to modify Character in slot {} but no characters exist at that slot.", getLogin(), charslot);
 			return -1;
 		}
 		return _charSlotMapping.get(charslot);
@@ -245,6 +366,21 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 	public Player getActiveChar()
 	{
 		return _activeChar;
+	}
+
+	public void setHwidHolder(HwidHolder hwidHolder)
+	{
+		this.hwidHolder = hwidHolder;
+	}
+
+	public HwidHolder getHwidHolder()
+	{
+		return hwidHolder;
+	}
+
+	public String getHwidString()
+	{
+		return hwidHolder.asString();
 	}
 
 	/**
@@ -264,14 +400,14 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 	{
 		_login = loginName;
 
-		if (Config.EX_SECOND_AUTH_ENABLED)
+		if(Config.EX_SECOND_AUTH_ENABLED)
 			_secondaryAuth = new SecondaryPasswordAuth(this);
 	}
 
 	public void setActiveChar(Player player)
 	{
 		_activeChar = player;
-		if (player != null)
+		if(player != null)
 			player.setNetConnection(this);
 	}
 
@@ -284,7 +420,7 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 	{
 		_charSlotMapping.clear();
 
-		for (CharSelectInfoPackage element : chars)
+		for(CharSelectInfoPackage element : chars)
 		{
 			int objectId = element.getObjectId();
 			_charSlotMapping.add(objectId);
@@ -313,51 +449,31 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 		return floodProtector == null || floodProtector.tryPerformAction(command);
 	}
 
-	@Override
-	public boolean encrypt(final ByteBuffer buf, final int size)
+	public void sendPacket(IClientOutgoingPacket packet)
 	{
-		_crypt.encrypt(buf.array(), buf.position(), size);
-		buf.position(buf.position() + size);
-		return true;
-	}
+		if (_isDetached || packet == null)
+		{
+			return;
+		}
 
-	@Override
-	public boolean decrypt(ByteBuffer buf, int size)
-	{
-		boolean ret = _crypt.decrypt(buf.array(), buf.position(), size);
+		// Write into the channel.
+		_channel.writeAndFlush(packet);
 
-		return ret;
-	}
-
-	public void sendPacket(L2GameServerPacket gsp)
-	{
-		if (isConnected())
-			getConnection().sendPacket(gsp);
-	}
-
-	public void sendPacket(L2GameServerPacket... gsp)
-	{
-		if (isConnected())
-			getConnection().sendPacket(gsp);
-	}
-
-	public void sendPackets(List<L2GameServerPacket> gsp)
-	{
-		if (isConnected())
-			getConnection().sendPackets(gsp);
-	}
-
-	public void close(L2GameServerPacket gsp)
-	{
-		if (isConnected())
-			getConnection().close(gsp);
+		// Run packet implementation.
+		packet.runImpl(getActiveChar());
 	}
 
 	public String getIpAddr()
 	{
-		return _ip;
+		return _addr.getHostAddress();
 	}
 
+	public int getServerId()
+	{
+		return HostsConfigHolder.getInstance().getServerId(getIpAddr());
+	}
+
+	
 	public byte[] enableCrypt()
 	{
 		byte[] key = BlowFishKeygen.getRandomKey();
@@ -420,63 +536,115 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>>
 		_phoneNumber = value;
 	}
 
-	public GameClientState getState()
-	{
-		return _state;
-	}
-
-	public void setState(GameClientState state)
-	{
-		_state = state;
-	}
-
 	public SecondaryPasswordAuth getSecondaryAuth()
 	{
 		return _secondaryAuth;
 	}
 
-	private int _failedPackets = 0;
-	private int _unknownPackets = 0;
-
-	public void onPacketReadFail()
-	{
-		if (_failedPackets++ >= 10)
-		{
-			_log.warn("Too many client packet fails, connection closed : " + this);
-			closeNow(true);
-		}
-	}
-
-	public void onUnknownPacket()
-	{
-		if (_unknownPackets++ >= 10)
-		{
-			_log.warn("Too many client unknown packets, connection closed : " + this);
-			closeNow(true);
-		}
-	}
-
 	@Override
 	public String toString()
 	{
-		return _state + " IP: " + getIpAddr() + (_login == null ? "" : " Account: " + _login) + (_activeChar == null ? "" : " Player : " + _activeChar);
+		try
+		{
+			final InetAddress address = _addr;
+			IConnectionState state = getConnectionState();
+			final Player player = getActiveChar();
+			if (ConnectionState.CONNECTED.equals(state)) {
+				return "[IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
+			} else if (ConnectionState.AUTHENTICATED.equals(state)) {
+				return "[Account: " + getLogin() + " - IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
+			} else if (ConnectionState.IN_GAME.equals(state) || ConnectionState.JOINING_GAME.equals(state)) {
+				return "[Character: " + (player == null ? "disconnected" : player)
+						+ " - Account: " + getLogin()
+						+ " - IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
+			}
+			throw new IllegalStateException("Missing state on switch: " + state);
+		}
+		catch (NullPointerException e)
+		{
+			return "[Character read failed due to disconnect]";
+		}
 	}
 
 	public boolean secondaryAuthed()
 	{
-		if (!Config.EX_SECOND_AUTH_ENABLED)
+		if(!Config.EX_SECOND_AUTH_ENABLED)
 			return true;
 
 		return getSecondaryAuth().isAuthed();
 	}
 
-	public String getHWID()
+	public int getSlotForObjectId(final int objectId)
 	{
-		return _hwid;
+		final List <Integer> charSlotMapping = _charSlotMapping;
+		return IntStream.range(0, charSlotMapping.size()).filter(slotIdx->Integer.valueOf(objectId).equals(charSlotMapping.get(slotIdx))).findFirst().orElse(-1);
 	}
 
-	public void setHWID(String hwid)
+	public void onPing(final int timestamp, final int fps, final int pawnClipRange)
 	{
-		_hwid = hwid;
+		if(_pingTimestamp == 0 || _pingTimestamp == timestamp)
+		{
+			final long nowMs = System.currentTimeMillis();
+			final long serverStartTimeMs = GameServer.getInstance().getServerStartTime();
+			_ping = ((_pingTimestamp > 0) ? ((int) (nowMs - serverStartTimeMs - timestamp)) : 0);
+			_fps = fps;
+			_pawnClippingRange = pawnClipRange;
+			_pingTaskFuture = ThreadPoolManager.getInstance().schedule(new PingTask(this), 30000L);
+		}
+	}
+	
+	private void doPing()
+	{
+		final long nowMs = System.currentTimeMillis();
+		final long serverStartTimeMs = GameServer.getInstance().getServerStartTime();
+		final int timestamp = (int) (nowMs - serverStartTimeMs);
+		_pingTimestamp = timestamp;
+		sendPacket(new NetPingPacket(timestamp));
+	}
+
+	public int getPing()
+	{
+		return _ping;
+	}
+
+	public int getFps()
+	{
+		return _fps;
+	}
+
+	
+	public int getPawnClippingRange()
+	{
+		return _pawnClippingRange;
+	}
+	
+	private static class PingTask implements Runnable
+	{
+		private final GameClient _client;
+
+		private PingTask(final GameClient client)
+		{
+			_client = client;
+		}
+
+		@Override
+		public void run()
+		{
+			if(_client == null || !_client.isConnected())
+			 return; 
+			_client.doPing();
+		}
+
+	}
+	
+	private boolean isLogout = false;
+	
+	public void setLogout(boolean b)
+	{
+		isLogout = b;
+	}
+	public boolean isLogout()
+	{
+		return isLogout;
 	}
 }

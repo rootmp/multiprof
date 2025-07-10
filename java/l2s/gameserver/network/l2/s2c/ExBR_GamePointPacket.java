@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class ExBR_GamePointPacket extends L2GameServerPacket
+public class ExBR_GamePointPacket implements IClientOutgoingPacket
 {
 	private int _objectId;
 	private long _points;
@@ -14,10 +15,10 @@ public class ExBR_GamePointPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeQ(_points);
-		writeD(0x00); // ??
+		packetWriter.writeD(_objectId);
+		packetWriter.writeQ(_points);
+		packetWriter.writeD(0x00); // ??
 	}
 }

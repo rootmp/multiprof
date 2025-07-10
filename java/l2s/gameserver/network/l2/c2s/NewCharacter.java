@@ -1,17 +1,20 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.network.l2.s2c.NewCharacterSuccessPacket;
 
-public class NewCharacter extends L2GameClientPacket
+public class NewCharacter implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		sendPacket(new NewCharacterSuccessPacket());
 	}

@@ -6,7 +6,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPvpBookShareRevengeKillerLocation extends L2GameServerPacket
+public class ExPvpBookShareRevengeKillerLocation implements IClientOutgoingPacket
 {
 	private final String killerName;
 	private final ILocation killerLoc;
@@ -21,8 +21,8 @@ public class ExPvpBookShareRevengeKillerLocation extends L2GameServerPacket
 	public void writeImpl()
 	{
 		writeString(killerName);
-		writeD(killerLoc.getX());
-		writeD(killerLoc.getY());
-		writeD(killerLoc.getZ());
+		packetWriter.writeD(killerLoc.getX());
+		packetWriter.writeD(killerLoc.getY());
+		packetWriter.writeD(killerLoc.getZ());
 	}
 }

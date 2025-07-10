@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2s.gameserver.model.entity.events.objects.SiegeClanObject;
 import l2s.gameserver.model.entity.residence.Castle;
 
-public class ExPledgeMercenaryMemberList extends L2GameServerPacket
+public class ExPledgeMercenaryMemberList implements IClientOutgoingPacket
 {
 	private final int receiverObjectId;
 	private final int castleId;
@@ -37,18 +38,18 @@ public class ExPledgeMercenaryMemberList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// stream(ddd(ddSd))
-		writeD(castleId);
-		writeD(clanId);
-		writeD(0);
+		packetWriter.writeD(castleId);
+		packetWriter.writeD(clanId);
+		packetWriter.writeD(0);
 		/*
 		 * for (CastleSiegeMercenaryObject mercenaryObject : mercenaries) {
-		 * writeD(receiverObjectId == mercenaryObject.getPlayerObjectId());
-		 * writeD(mercenaryObject.getPlayerObjectId()); // TODO: Check.
+		 * packetWriter.writeD(receiverObjectId == mercenaryObject.getPlayerObjectId());
+		 * packetWriter.writeD(mercenaryObject.getPlayerObjectId()); // TODO: Check.
 		 * writeString(mercenaryObject.getName());
-		 * writeD(mercenaryObject.getClassId().ordinal()); }
+		 * packetWriter.writeD(mercenaryObject.getClassId().ordinal()); }
 		 */
 	}
 }

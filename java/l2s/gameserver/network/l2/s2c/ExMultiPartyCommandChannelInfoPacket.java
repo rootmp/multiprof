@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.CommandChannel;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
 
-public class ExMultiPartyCommandChannelInfoPacket extends L2GameServerPacket
+public class ExMultiPartyCommandChannelInfoPacket implements IClientOutgoingPacket
 {
 	private String ChannelLeaderName;
 	private int MemberCount;
@@ -28,18 +29,18 @@ public class ExMultiPartyCommandChannelInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(ChannelLeaderName); // имя лидера CC
-		writeD(0); // Looting type?
-		writeD(MemberCount); // общее число человек в СС
-		writeD(parties.size()); // общее число партий в СС
+		packetWriter.writeS(ChannelLeaderName); // имя лидера CC
+		packetWriter.writeD(0); // Looting type?
+		packetWriter.writeD(MemberCount); // общее число человек в СС
+		packetWriter.writeD(parties.size()); // общее число партий в СС
 
 		for (ChannelPartyInfo party : parties)
 		{
-			writeS(party.Leader_name); // имя лидера партии
-			writeD(party.Leader_obj_id); // ObjId пати лидера
-			writeD(party.MemberCount); // количество мемберов в пати
+			packetWriter.writeS(party.Leader_name); // имя лидера партии
+			packetWriter.writeD(party.Leader_obj_id); // ObjId пати лидера
+			packetWriter.writeD(party.MemberCount); // количество мемберов в пати
 		}
 	}
 

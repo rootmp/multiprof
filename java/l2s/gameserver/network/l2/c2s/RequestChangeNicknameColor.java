@@ -1,11 +1,14 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.handler.items.impl.NameColorItemHandler;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.utils.GameStringUtils;
 
-public class RequestChangeNicknameColor extends L2GameClientPacket
+public class RequestChangeNicknameColor implements IClientIncomingPacket
 {
 	private static final int COLORS[] =
 	{
@@ -31,18 +34,18 @@ public class RequestChangeNicknameColor extends L2GameClientPacket
 	private String _title;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_colorNum = readD();
-		_title = readS();
-		_itemObjectId = readD();
+		_colorNum = packet.readD();
+		_title = packet.readS();
+		_itemObjectId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

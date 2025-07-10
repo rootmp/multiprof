@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExAskCoupleAction extends L2GameServerPacket
+public class ExAskCoupleAction implements IClientOutgoingPacket
 {
 	private int _objectId, _socialId;
 
@@ -11,9 +12,9 @@ public class ExAskCoupleAction extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_socialId);
-		writeD(_objectId);
+		packetWriter.writeD(_socialId);
+		packetWriter.writeD(_objectId);
 	}
 }

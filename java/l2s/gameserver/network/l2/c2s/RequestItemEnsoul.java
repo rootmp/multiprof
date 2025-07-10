@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +20,7 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author Bonux
  **/
-public class RequestItemEnsoul extends L2GameClientPacket
+public class RequestItemEnsoul implements IClientIncomingPacket
 {
 	private static class EnsoulInfo
 	{
@@ -31,27 +34,27 @@ public class RequestItemEnsoul extends L2GameClientPacket
 	private List<EnsoulInfo> _ensoulsInfo;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_itemObjectId = readD();
-		int changesCount = readC();
+		_itemObjectId = packet.readD();
+		int changesCount = packet.readC();
 		_ensoulsInfo = new ArrayList<EnsoulInfo>(changesCount);
 		for (int i = 0; i < changesCount; i++)
 		{
 			EnsoulInfo info = new EnsoulInfo();
-			info.type = readC();
-			info.id = readC();
-			info.itemObjectId = readD();
-			info.ensoulId = readD();
+			info.type = packet.readC();
+			info.id = packet.readC();
+			info.itemObjectId = packet.readD();
+			info.ensoulId = packet.readD();
 			_ensoulsInfo.add(info);
 		}
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

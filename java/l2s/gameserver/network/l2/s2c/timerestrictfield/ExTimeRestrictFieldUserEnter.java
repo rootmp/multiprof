@@ -22,7 +22,7 @@ import l2s.gameserver.utils.ReflectionUtils;
 /**
  * @author nexvill
  */
-public class ExTimeRestrictFieldUserEnter extends L2GameServerPacket
+public class ExTimeRestrictFieldUserEnter implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _fieldId;
@@ -36,7 +36,7 @@ public class ExTimeRestrictFieldUserEnter extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		TimeRestrictFieldInfo field = _fields.get(_fieldId);
 
@@ -91,10 +91,10 @@ public class ExTimeRestrictFieldUserEnter extends L2GameServerPacket
 						ReflectionUtils.enterReflection(_player, new TranscendentInstanceZone90(), izId);
 					}
 				}
-				writeC(1);
-				writeD(_fieldId);
-				writeD(0);
-				writeD(0);
+				packetWriter.writeC(1);
+				packetWriter.writeD(_fieldId);
+				packetWriter.writeD(0);
+				packetWriter.writeD(0);
 			}
 			return;
 		}
@@ -177,10 +177,10 @@ public class ExTimeRestrictFieldUserEnter extends L2GameServerPacket
 
 			_player.startTimeRestrictField();
 
-			writeC(1);
-			writeD(_fieldId);
-			writeD((int) (System.currentTimeMillis() / 1000));
-			writeD(remainTime);
+			packetWriter.writeC(1);
+			packetWriter.writeD(_fieldId);
+			packetWriter.writeD((int) (System.currentTimeMillis() / 1000));
+			packetWriter.writeD(remainTime);
 		}
 		else
 		{

@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * sample: d
  */
-public class ShowCalcPacket extends L2GameServerPacket
+public class ShowCalcPacket implements IClientOutgoingPacket
 {
 	private int _calculatorId;
 
@@ -13,8 +14,8 @@ public class ShowCalcPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_calculatorId);
+		packetWriter.writeD(_calculatorId);
 	}
 }

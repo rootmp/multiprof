@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.GameObject;
 
-public class AttackPacket extends L2GameServerPacket
+public class AttackPacket implements IClientOutgoingPacket
 {
 	public static final int HITFLAG_MISS = 0x01;
 	public static final int HITFLAG_SHLD = 0x02;
@@ -98,27 +99,27 @@ public class AttackPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_attackerId);
-		writeD(hits[0]._targetId);
-		writeD(_soulshot ? _addShotEffect : 0x00);
-		writeD(hits[0]._damage);
-		writeD(hits[0]._flags);
-		writeD(_soulshot ? _grade : 0x00);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeH(hits.length - 1);
+		packetWriter.writeD(_attackerId);
+		packetWriter.writeD(hits[0]._targetId);
+		packetWriter.writeD(_soulshot ? _addShotEffect : 0x00);
+		packetWriter.writeD(hits[0]._damage);
+		packetWriter.writeD(hits[0]._flags);
+		packetWriter.writeD(_soulshot ? _grade : 0x00);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
+		packetWriter.writeD(_z);
+		packetWriter.writeH(hits.length - 1);
 		for (int i = 1; i < hits.length; i++)
 		{
-			writeD(hits[i]._targetId);
-			writeD(hits[i]._damage);
-			writeD(hits[i]._flags);
-			writeD(_soulshot ? _grade : 0x00);
+			packetWriter.writeD(hits[i]._targetId);
+			packetWriter.writeD(hits[i]._damage);
+			packetWriter.writeD(hits[i]._flags);
+			packetWriter.writeD(_soulshot ? _grade : 0x00);
 		}
-		writeD(_tx);
-		writeD(_ty);
-		writeD(_tz);
+		packetWriter.writeD(_tx);
+		packetWriter.writeD(_ty);
+		packetWriter.writeD(_tz);
 	}
 }

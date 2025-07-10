@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author monithly TODO this
  */
-public class ExExchangeSubstitute extends L2GameServerPacket
+public class ExExchangeSubstitute implements IClientOutgoingPacket
 {
 	public ExExchangeSubstitute(Player pl, Player pl2)
 	{
@@ -13,10 +14,10 @@ public class ExExchangeSubstitute extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0x00);
-		writeQ(3000000L);
-		writeD(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeQ(3000000L);
+		packetWriter.writeD(0x00);
 	}
 }

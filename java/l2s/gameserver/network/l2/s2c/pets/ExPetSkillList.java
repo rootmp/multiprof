@@ -12,7 +12,7 @@ import l2s.gameserver.templates.pet.PetSkillData;
 /**
  * Written by Eden, on 02.03.2021
  */
-public class ExPetSkillList extends L2GameServerPacket
+public class ExPetSkillList implements IClientOutgoingPacket
 {
 	private final Map<Integer, SkillInfo> _skills = new HashMap<>();
 	boolean _acquireSkillByEnterWorld = false;
@@ -38,17 +38,17 @@ public class ExPetSkillList extends L2GameServerPacket
 		// TODO Implement for Passive Skills
 	}
 
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_acquireSkillByEnterWorld);
-		writeD(_skills.size());
+		packetWriter.writeC(_acquireSkillByEnterWorld);
+		packetWriter.writeD(_skills.size());
 		for (SkillInfo skill : _skills.values())
 		{
-			writeD(skill._id);
-			writeD(skill._level);
-			writeD(skill._reuseGroup);
-			writeC(skill._enchant);
-			writeC(skill._locked);
+			packetWriter.writeD(skill._id);
+			packetWriter.writeD(skill._level);
+			packetWriter.writeD(skill._reuseGroup);
+			packetWriter.writeC(skill._enchant);
+			packetWriter.writeC(skill._locked);
 		}
 	}
 

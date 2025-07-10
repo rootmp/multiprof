@@ -1,6 +1,9 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
 
-public class RequestTimeCheck extends L2GameClientPacket
+
+public class RequestTimeCheck implements IClientIncomingPacket
 {
 	private int unk, unk2;
 
@@ -8,15 +11,15 @@ public class RequestTimeCheck extends L2GameClientPacket
 	 * format: dd
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		unk = readD();
-		unk2 = readD();
+		unk = packet.readD();
+		unk2 = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		// System.out.println("Unk1: " + unk + ", unk2: " + unk2);
 		// TODO not implemented

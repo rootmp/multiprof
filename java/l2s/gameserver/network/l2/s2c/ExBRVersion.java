@@ -1,9 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
+
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
  */
-public class ExBRVersion extends L2GameServerPacket
+public class ExBRVersion implements IClientOutgoingPacket
 {
 	public ExBRVersion()
 	{
@@ -11,8 +14,9 @@ public class ExBRVersion extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(1);
+		packetWriter.writeC(1);
+		return true;
 	}
 }

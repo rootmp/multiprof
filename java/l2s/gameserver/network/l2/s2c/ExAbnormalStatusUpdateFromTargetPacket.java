@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExAbnormalStatusUpdateFromTargetPacket extends L2GameServerPacket
+public class ExAbnormalStatusUpdateFromTargetPacket implements IClientOutgoingPacket
 {
 	public static final int INFINITIVE_EFFECT = -1;
 
@@ -40,17 +41,17 @@ public class ExAbnormalStatusUpdateFromTargetPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeH(_effects.size());
+		packetWriter.writeD(_objectId);
+		packetWriter.writeH(_effects.size());
 		for (Abnormal temp : _effects)
 		{
-			writeD(temp.skillId);
-			writeH(temp.skillLvl);
-			writeH(temp.abnormalType);
+			packetWriter.writeD(temp.skillId);
+			packetWriter.writeH(temp.skillLvl);
+			packetWriter.writeH(temp.abnormalType);
 			writeOptionalD(temp.duration);
-			writeD(temp.effectorObjectId); // Buffer OID
+			packetWriter.writeD(temp.effectorObjectId); // Buffer OID
 		}
 	}
 }

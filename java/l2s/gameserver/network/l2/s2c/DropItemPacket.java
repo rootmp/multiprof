@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.items.ItemInstance;
 
-public class DropItemPacket extends L2GameServerPacket
+public class DropItemPacket implements IClientOutgoingPacket
 {
 	private final Location _loc;
 	private final int _playerId;
@@ -35,19 +36,19 @@ public class DropItemPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_playerId);
-		writeD(item_obj_id);
-		writeD(item_id);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeC(_stackable);
-		writeQ(_count);
-		writeC(1); // unknown
-		writeC(_enchantLevel);
-		writeC(_augmented);
-		writeC(_ensoulCount);
+		packetWriter.writeD(_playerId);
+		packetWriter.writeD(item_obj_id);
+		packetWriter.writeD(item_id);
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
+		packetWriter.writeC(_stackable);
+		packetWriter.writeQ(_count);
+		packetWriter.writeC(1); // unknown
+		packetWriter.writeC(_enchantLevel);
+		packetWriter.writeC(_augmented);
+		packetWriter.writeC(_ensoulCount);
 	}
 }

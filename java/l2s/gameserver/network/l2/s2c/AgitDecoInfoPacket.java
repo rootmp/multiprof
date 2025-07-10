@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.base.ResidenceFunctionType;
 import l2s.gameserver.model.entity.residence.ClanHall;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.entity.residence.ResidenceFunction;
 /**
  * @author Bonux
  **/
-public class AgitDecoInfoPacket extends L2GameServerPacket
+public class AgitDecoInfoPacket implements IClientOutgoingPacket
 {
 	private final ClanHall _clanHall;
 
@@ -18,23 +19,23 @@ public class AgitDecoInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_clanHall.getId());
+		packetWriter.writeD(_clanHall.getId());
 
 		for (ResidenceFunctionType type : ResidenceFunctionType.VALUES)
 		{
 			ResidenceFunction function = _clanHall.getActiveFunction(type);
 			if (function != null)
-				writeC(function.getTemplate().getDepth());
+				packetWriter.writeC(function.getTemplate().getDepth());
 			else
-				writeC(0x00);
+				packetWriter.writeC(0x00);
 		}
 
-		writeD(0);
-		writeD(0);
-		writeD(0);
-		writeD(0);
-		writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
 	}
 }

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class AutoAttackStopPacket extends L2GameServerPacket
+public class AutoAttackStopPacket implements IClientOutgoingPacket
 {
 	// dh
 	private int _targetId;
@@ -14,8 +15,8 @@ public class AutoAttackStopPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_targetId);
+		packetWriter.writeD(_targetId);
 	}
 }

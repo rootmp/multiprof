@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.DailyMission;
@@ -8,7 +9,7 @@ import l2s.gameserver.templates.dailymissions.DailyMissionTemplate;
 /**
  * @author Bonux
  **/
-public class ExConnectedTimeAndGettableReward extends L2GameServerPacket
+public class ExConnectedTimeAndGettableReward implements IClientOutgoingPacket
 {
 	private int _count = 0;
 
@@ -23,19 +24,19 @@ public class ExConnectedTimeAndGettableReward extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(_count); // Unclaimed rewards
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0x00); // TODO[UNDERGROUND]: UNK
-		writeD(0);
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(_count); // Unclaimed rewards
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0x00); // TODO[UNDERGROUND]: UNK
+		packetWriter.writeD(0);
 	}
 }

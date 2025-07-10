@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * Format: ch S
  */
-public class ExAskJoinPartyRoom extends L2GameServerPacket
+public class ExAskJoinPartyRoom implements IClientOutgoingPacket
 {
 	private String _charName;
 	private String _roomName;
@@ -15,9 +16,9 @@ public class ExAskJoinPartyRoom extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_charName);
-		writeS(_roomName);
+		packetWriter.writeS(_charName);
+		packetWriter.writeS(_roomName);
 	}
 }

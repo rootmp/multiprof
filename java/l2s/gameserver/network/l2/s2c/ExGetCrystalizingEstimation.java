@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.items.ItemInstance;
 
 /**
  * @author Bonux
  **/
-public class ExGetCrystalizingEstimation extends L2GameServerPacket
+public class ExGetCrystalizingEstimation implements IClientOutgoingPacket
 {
 	private final int _crystalId;
 	private final long _crystalCount;
@@ -17,16 +18,16 @@ public class ExGetCrystalizingEstimation extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_crystalId > 0 && _crystalCount > 0)
 		{
-			writeD(0x01);
-			writeD(_crystalId);
-			writeQ(_crystalCount);
-			writeF(100.);
+			packetWriter.writeD(0x01);
+			packetWriter.writeD(_crystalId);
+			packetWriter.writeQ(_crystalCount);
+			packetWriter.writeF(100.);
 		}
 		else
-			writeD(0x00);
+			packetWriter.writeD(0x00);
 	}
 }

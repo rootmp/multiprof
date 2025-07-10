@@ -10,7 +10,7 @@ import l2s.gameserver.templates.item.data.CollectionItemData;
 /**
  * @author nexvill
  */
-public class ExCollectionRegister extends L2GameServerPacket
+public class ExCollectionRegister implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _collectionId, _slotId;
@@ -25,7 +25,7 @@ public class ExCollectionRegister extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		CollectionTemplate collection = CollectionsHolder.getInstance().getCollection(_collectionId);
 		CollectionTemplate newCollection = new CollectionTemplate(_collectionId, collection.getTabId(), 0);
@@ -50,13 +50,13 @@ public class ExCollectionRegister extends L2GameServerPacket
 			return;
 		}
 
-		writeH(_collectionId); // collection id
-		writeC(1); // activate?
-		writeH(14); // unk, but with 0 - not register
-		writeC(_slotId);
-		writeD(_item.getItemId());
-		writeC(0);
-		writeH(_item.getEnchantLevel());
-		writeD((int) itemCount);
+		packetWriter.writeH(_collectionId); // collection id
+		packetWriter.writeC(1); // activate?
+		packetWriter.writeH(14); // unk, but with 0 - not register
+		packetWriter.writeC(_slotId);
+		packetWriter.writeD(_item.getItemId());
+		packetWriter.writeC(0);
+		packetWriter.writeH(_item.getEnchantLevel());
+		packetWriter.writeD((int) itemCount);
 	}
 }

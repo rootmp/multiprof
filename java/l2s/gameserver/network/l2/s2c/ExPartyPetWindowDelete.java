@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Servitor;
 
-public class ExPartyPetWindowDelete extends L2GameServerPacket
+public class ExPartyPetWindowDelete implements IClientOutgoingPacket
 {
 	private int _summonObjectId;
 	private int _ownerObjectId;
@@ -18,11 +19,11 @@ public class ExPartyPetWindowDelete extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_summonObjectId);
-		writeD(_type);
-		writeD(_ownerObjectId);
-		writeS(_summonName);
+		packetWriter.writeD(_summonObjectId);
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_ownerObjectId);
+		packetWriter.writeS(_summonName);
 	}
 }

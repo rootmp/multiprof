@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,7 +13,7 @@ import l2s.gameserver.model.matching.MatchingRoom;
 /**
  * Format:(ch) d d [dsdddd]
  */
-public class ExPartyRoomMemberPacket extends L2GameServerPacket
+public class ExPartyRoomMemberPacket implements IClientOutgoingPacket
 {
 	private int _type;
 	private List<PartyRoomMemberInfo> _members = Collections.emptyList();
@@ -26,21 +27,21 @@ public class ExPartyRoomMemberPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type);
-		writeD(_members.size());
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_members.size());
 		for (PartyRoomMemberInfo member_info : _members)
 		{
-			writeD(member_info.objectId);
-			writeS(member_info.name);
-			writeD(member_info.classId);
-			writeD(member_info.level);
-			writeD(member_info.location);
-			writeD(member_info.memberType);
-			writeD(member_info.instanceReuses.size());
+			packetWriter.writeD(member_info.objectId);
+			packetWriter.writeS(member_info.name);
+			packetWriter.writeD(member_info.classId);
+			packetWriter.writeD(member_info.level);
+			packetWriter.writeD(member_info.location);
+			packetWriter.writeD(member_info.memberType);
+			packetWriter.writeD(member_info.instanceReuses.size());
 			for (int i : member_info.instanceReuses)
-				writeD(i);
+				packetWriter.writeD(i);
 		}
 	}
 

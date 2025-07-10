@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
@@ -10,7 +11,7 @@ import l2s.gameserver.network.l2.ServerPacketOpcodes;
  * d: player object id S: player name ] d: blue players number [ d: player
  * object id S: player name ]
  */
-public abstract class ExBlockUpSetList extends L2GameServerPacket
+public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 {
 	@Override
 	protected ServerPacketOpcodes getOpcodes()
@@ -32,24 +33,24 @@ public abstract class ExBlockUpSetList extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0x00); // type
+			packetWriter.writeD(0x00); // type
 
-			writeD(_roomNumber);
-			writeD(0xffffffff);
+			packetWriter.writeD(_roomNumber);
+			packetWriter.writeD(0xffffffff);
 
-			writeD(_bluePlayers.size());
+			packetWriter.writeD(_bluePlayers.size());
 			for (Player player : _bluePlayers)
 			{
-				writeD(player.getObjectId());
-				writeS(player.getName());
+				packetWriter.writeD(player.getObjectId());
+				packetWriter.writeS(player.getName());
 			}
-			writeD(_redPlayers.size());
+			packetWriter.writeD(_redPlayers.size());
 			for (Player player : _redPlayers)
 			{
-				writeD(player.getObjectId());
-				writeS(player.getName());
+				packetWriter.writeD(player.getObjectId());
+				packetWriter.writeS(player.getName());
 			}
 		}
 	}
@@ -68,15 +69,15 @@ public abstract class ExBlockUpSetList extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0x01); // type
+			packetWriter.writeD(0x01); // type
 
-			writeD(0xffffffff);
+			packetWriter.writeD(0xffffffff);
 
-			writeD(_isRedTeam ? 0x01 : 0x00);
-			writeD(_objectId);
-			writeS(_name);
+			packetWriter.writeD(_isRedTeam ? 0x01 : 0x00);
+			packetWriter.writeD(_objectId);
+			packetWriter.writeS(_name);
 		}
 	}
 
@@ -92,14 +93,14 @@ public abstract class ExBlockUpSetList extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0x02); // type
+			packetWriter.writeD(0x02); // type
 
-			writeD(0xffffffff);
+			packetWriter.writeD(0xffffffff);
 
-			writeD(_isRedTeam ? 0x01 : 0x00);
-			writeD(_objectId);
+			packetWriter.writeD(_isRedTeam ? 0x01 : 0x00);
+			packetWriter.writeD(_objectId);
 		}
 	}
 
@@ -113,10 +114,10 @@ public abstract class ExBlockUpSetList extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0x03); // type
-			writeD(_seconds);
+			packetWriter.writeD(0x03); // type
+			packetWriter.writeD(_seconds);
 		}
 	}
 
@@ -125,9 +126,9 @@ public abstract class ExBlockUpSetList extends L2GameServerPacket
 		public static final RequestReady STATIC = new RequestReady();
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0x04); // type
+			packetWriter.writeD(0x04); // type
 		}
 	}
 
@@ -143,13 +144,13 @@ public abstract class ExBlockUpSetList extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0x05); // type
+			packetWriter.writeD(0x05); // type
 
-			writeD(_objectId);
-			writeD(_fromRedTeam ? 0x01 : 0x00);
-			writeD(_fromRedTeam ? 0x00 : 0x01);
+			packetWriter.writeD(_objectId);
+			packetWriter.writeD(_fromRedTeam ? 0x01 : 0x00);
+			packetWriter.writeD(_fromRedTeam ? 0x00 : 0x01);
 		}
 	}
 
@@ -158,9 +159,9 @@ public abstract class ExBlockUpSetList extends L2GameServerPacket
 		public static final CloseUI STATIC = new CloseUI();
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
-			writeD(0xffffffff); // type
+			packetWriter.writeD(0xffffffff); // type
 		}
 	}
 }

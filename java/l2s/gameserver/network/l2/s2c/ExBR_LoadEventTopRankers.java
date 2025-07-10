@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExBR_LoadEventTopRankers extends L2GameServerPacket
+public class ExBR_LoadEventTopRankers implements IClientOutgoingPacket
 {
 	private int _eventId;
 	private int _day;
@@ -18,12 +19,12 @@ public class ExBR_LoadEventTopRankers extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_eventId);
-		writeD(_day);
-		writeD(_count);
-		writeD(_bestScore);
-		writeD(_myScore);
+		packetWriter.writeD(_eventId);
+		packetWriter.writeD(_day);
+		packetWriter.writeD(_count);
+		packetWriter.writeD(_bestScore);
+		packetWriter.writeD(_myScore);
 	}
 }

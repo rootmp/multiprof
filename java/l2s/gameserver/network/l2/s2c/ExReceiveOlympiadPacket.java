@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,7 +17,7 @@ import l2s.gameserver.network.l2.ServerPacketOpcodes;
  * @author VISTALL
  * @date 0:50/09.04.2011
  */
-public abstract class ExReceiveOlympiadPacket extends L2GameServerPacket
+public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 {
 	public static class MatchList extends ExReceiveOlympiadPacket
 	{
@@ -44,18 +45,18 @@ public abstract class ExReceiveOlympiadPacket extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
 			super.writeImpl();
-			writeD(_arenaList.size());
-			writeD(0x00); // unknown
+			packetWriter.writeD(_arenaList.size());
+			packetWriter.writeD(0x00); // unknown
 			for (ArenaInfo arena : _arenaList)
 			{
-				writeD(arena._id);
-				writeD(arena._matchType);
-				writeD(arena._status);
-				writeS(arena._name1);
-				writeS(arena._name2);
+				packetWriter.writeD(arena._id);
+				packetWriter.writeD(arena._matchType);
+				packetWriter.writeD(arena._status);
+				packetWriter.writeS(arena._name1);
+				packetWriter.writeS(arena._name2);
 			}
 		}
 
@@ -104,36 +105,36 @@ public abstract class ExReceiveOlympiadPacket extends L2GameServerPacket
 		}
 
 		@Override
-		protected void writeImpl()
+		public boolean write(PacketWriter packetWriter)
 		{
 			super.writeImpl();
-			writeD(winnerTeam == TeamType.NONE);
-			writeS(winnerTopDamagerName);
-			writeD(1); // Team type
-			writeD(teamOne.size());
+			packetWriter.writeD(winnerTeam == TeamType.NONE);
+			packetWriter.writeS(winnerTopDamagerName);
+			packetWriter.writeD(1); // Team type
+			packetWriter.writeD(teamOne.size());
 			teamOne.forEach(p ->
 			{
-				writeS(p.name);
-				writeS(p.clanName);
-				writeD(p.pledgeId);
-				writeD(p.classId);
-				writeD(p.damage);
-				writeD(p.currentPoints);
-				writeD(p.gamePoints);
-				writeD(p.arenaIndex);
+				packetWriter.writeS(p.name);
+				packetWriter.writeS(p.clanName);
+				packetWriter.writeD(p.pledgeId);
+				packetWriter.writeD(p.classId);
+				packetWriter.writeD(p.damage);
+				packetWriter.writeD(p.currentPoints);
+				packetWriter.writeD(p.gamePoints);
+				packetWriter.writeD(p.arenaIndex);
 			});
-			writeD(2); // Team type
-			writeD(teamTwo.size());
+			packetWriter.writeD(2); // Team type
+			packetWriter.writeD(teamTwo.size());
 			teamTwo.forEach(p ->
 			{
-				writeS(p.name);
-				writeS(p.clanName);
-				writeD(p.pledgeId);
-				writeD(p.classId);
-				writeD(p.damage);
-				writeD(p.currentPoints);
-				writeD(p.gamePoints);
-				writeD(p.arenaIndex);
+				packetWriter.writeS(p.name);
+				packetWriter.writeS(p.clanName);
+				packetWriter.writeD(p.pledgeId);
+				packetWriter.writeD(p.classId);
+				packetWriter.writeD(p.damage);
+				packetWriter.writeD(p.currentPoints);
+				packetWriter.writeD(p.gamePoints);
+				packetWriter.writeD(p.arenaIndex);
 			});
 		}
 
@@ -170,8 +171,8 @@ public abstract class ExReceiveOlympiadPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type);
+		packetWriter.writeD(_type);
 	}
 }

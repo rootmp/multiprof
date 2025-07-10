@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExDominionWarStart extends L2GameServerPacket
+public class ExDominionWarStart implements IClientOutgoingPacket
 {
 	public ExDominionWarStart()
 	{
@@ -8,12 +9,12 @@ public class ExDominionWarStart extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0x00);
-		writeD(0x00);
-		writeD(0x00); // territory Id
-		writeD(0x00);
-		writeD(0x00); // territory Id
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00); // territory Id
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00); // territory Id
 	}
 }

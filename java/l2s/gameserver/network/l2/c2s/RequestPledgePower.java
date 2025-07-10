@@ -1,29 +1,32 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.s2c.ManagePledgePowerPacket;
 
-public class RequestPledgePower extends L2GameClientPacket
+public class RequestPledgePower implements IClientIncomingPacket
 {
 	private int _rank;
 	private int _action;
 	private int _privs;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_rank = readD();
-		_action = readD();
+		_rank = packet.readD();
+		_action = packet.readD();
 		if (_action == 2)
-			_privs = readD();
+			_privs = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 		if (_action == 2)

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.Collection;
 
@@ -16,7 +19,7 @@ import l2s.gameserver.network.l2.s2c.ExShowSentPostList;
  * @see ExShowSentPostList
  * @see RequestExDeleteReceivedPost
  */
-public class RequestExDeleteSentPost extends L2GameClientPacket
+public class RequestExDeleteSentPost implements IClientIncomingPacket
 {
 	private int _count;
 	private int[] _list;
@@ -25,9 +28,9 @@ public class RequestExDeleteSentPost extends L2GameClientPacket
 	 * format: dx[d]
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_count = readD(); // количество элементов для удаления
+		_count = packet.readD(); // количество элементов для удаления
 		if (_count * 4 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
@@ -35,14 +38,14 @@ public class RequestExDeleteSentPost extends L2GameClientPacket
 		}
 		_list = new int[_count];
 		for (int i = 0; i < _count; i++)
-			_list[i] = readD(); // уникальный номер письма
+			_list[i] = packet.readD(); // уникальный номер письма
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || _count == 0)
 			return;
 

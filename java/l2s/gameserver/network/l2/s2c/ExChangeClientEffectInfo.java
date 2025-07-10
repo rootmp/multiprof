@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExChangeClientEffectInfo extends L2GameServerPacket
+public class ExChangeClientEffectInfo implements IClientOutgoingPacket
 {
 	private int _unk1;
 	private int _unk2;
@@ -21,10 +22,10 @@ public class ExChangeClientEffectInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_unk1);
-		writeD(_unk2);
-		writeD(_state);
+		packetWriter.writeD(_unk1);
+		packetWriter.writeD(_unk2);
+		packetWriter.writeD(_state);
 	}
 }

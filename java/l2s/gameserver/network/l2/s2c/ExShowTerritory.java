@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.commons.geometry.Point2D;
 import l2s.commons.geometry.Shape;
@@ -6,7 +7,7 @@ import l2s.commons.geometry.Shape;
 /**
  * @author Bonux
  **/
-public class ExShowTerritory extends L2GameServerPacket
+public class ExShowTerritory implements IClientOutgoingPacket
 {
 	private final Shape _shape;
 
@@ -16,16 +17,16 @@ public class ExShowTerritory extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		final Point2D[] points = _shape.getPoints();
-		writeD(points.length);
-		writeD(_shape.getZmin());
-		writeD(_shape.getZmax());
+		packetWriter.writeD(points.length);
+		packetWriter.writeD(_shape.getZmin());
+		packetWriter.writeD(_shape.getZmax());
 		for (Point2D point : points)
 		{
-			writeD(point.getX());
-			writeD(point.getY());
+			packetWriter.writeD(point.getX());
+			packetWriter.writeD(point.getY());
 		}
 	}
 }

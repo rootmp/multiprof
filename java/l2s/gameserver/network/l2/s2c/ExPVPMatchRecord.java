@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
@@ -18,7 +19,7 @@ import l2s.gameserver.model.base.TeamType;
  *         <part name="name" type="S" /> <part name="kills" type="d" />
  *         <part name="deaths" type="d" /> </for> </packet>
  */
-public class ExPVPMatchRecord extends L2GameServerPacket
+public class ExPVPMatchRecord implements IClientOutgoingPacket
 {
 	public static class Member
 	{
@@ -57,26 +58,26 @@ public class ExPVPMatchRecord extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_type);
-		writeD(_winnerTeam.ordinal());
-		writeD(_winnerTeam.revert().ordinal());
-		writeD(_blueKills);
-		writeD(_redKills);
-		writeD(_blueList.size());
+		packetWriter.writeD(_type);
+		packetWriter.writeD(_winnerTeam.ordinal());
+		packetWriter.writeD(_winnerTeam.revert().ordinal());
+		packetWriter.writeD(_blueKills);
+		packetWriter.writeD(_redKills);
+		packetWriter.writeD(_blueList.size());
 		for (Member member : _blueList)
 		{
-			writeS(member.name);
-			writeD(member.kills);
-			writeD(member.deaths);
+			packetWriter.writeS(member.name);
+			packetWriter.writeD(member.kills);
+			packetWriter.writeD(member.deaths);
 		}
-		writeD(_redList.size());
+		packetWriter.writeD(_redList.size());
 		for (Member member : _redList)
 		{
-			writeS(member.name);
-			writeD(member.kills);
-			writeD(member.deaths);
+			packetWriter.writeS(member.name);
+			packetWriter.writeD(member.kills);
+			packetWriter.writeD(member.deaths);
 		}
 	}
 }

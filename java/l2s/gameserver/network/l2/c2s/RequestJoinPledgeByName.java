@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.commons.util.Rnd;
 import l2s.gameserver.ThreadPoolManager;
@@ -14,23 +17,23 @@ import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 /**
  * @author Bonux
  **/
-public class RequestJoinPledgeByName extends L2GameClientPacket
+public class RequestJoinPledgeByName implements IClientIncomingPacket
 {
 	private String _targetName;
 	private int _pledgeType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_targetName = readS();
-		_pledgeType = readD();
+		_targetName = packet.readS();
+		_pledgeType = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || activeChar.getClan() == null)
 			return;
 

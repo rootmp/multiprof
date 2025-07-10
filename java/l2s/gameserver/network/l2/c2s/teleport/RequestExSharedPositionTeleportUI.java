@@ -7,23 +7,23 @@ import l2s.gameserver.network.l2.s2c.teleport.ExSharedPositionTeleportUI;
 /**
  * @author nexvill
  */
-public class RequestExSharedPositionTeleportUI extends L2GameClientPacket
+public class RequestExSharedPositionTeleportUI implements IClientIncomingPacket
 {
 	private int _allow, _tpId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_allow = readC();
+		_allow = packet.readC();
 		_tpId = readH(); // tp id
-		readC(); // ??
+		packet.readC(); // ??
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 
 		if (_allow == 1)
 			player.sendPacket(new ExSharedPositionTeleportUI(player, _tpId));

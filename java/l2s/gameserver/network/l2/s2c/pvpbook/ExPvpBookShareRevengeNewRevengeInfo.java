@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPvpBookShareRevengeNewRevengeInfo extends L2GameServerPacket
+public class ExPvpBookShareRevengeNewRevengeInfo implements IClientOutgoingPacket
 {
 	private final String killerName, killedName;
 	private final int shareType;
@@ -20,7 +20,7 @@ public class ExPvpBookShareRevengeNewRevengeInfo extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(shareType); // share type
+		packetWriter.writeD(shareType); // share type
 		writeString(killedName);
 		writeString(killerName);
 	}

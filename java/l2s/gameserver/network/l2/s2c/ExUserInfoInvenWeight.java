@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 /**
  * @reworked by Bonux
  **/
-public class ExUserInfoInvenWeight extends L2GameServerPacket
+public class ExUserInfoInvenWeight implements IClientOutgoingPacket
 {
 	private final int _objectId;
 	private final int _currentLoad;
@@ -19,10 +20,10 @@ public class ExUserInfoInvenWeight extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_currentLoad);
-		writeD(_maxLoad);
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_currentLoad);
+		packetWriter.writeD(_maxLoad);
 	}
 }

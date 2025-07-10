@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExResetSelectMultiEnchantScroll extends L2GameServerPacket
+public class ExResetSelectMultiEnchantScroll implements IClientOutgoingPacket
 {
 	private final int _scrollObjId, _resultType;
 
@@ -16,9 +16,9 @@ public class ExResetSelectMultiEnchantScroll extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_scrollObjId);
-		writeD(_resultType);
+		packetWriter.writeD(_scrollObjId);
+		packetWriter.writeD(_resultType);
 	}
 }

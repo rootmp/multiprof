@@ -1,25 +1,28 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.s2c.PledgeInfoPacket;
 import l2s.gameserver.tables.ClanTable;
 
-public class RequestPledgeInfo extends L2GameClientPacket
+public class RequestPledgeInfo implements IClientIncomingPacket
 {
 	private int _clanId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_clanId = readD();
+		_clanId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 		if (_clanId < 10000000)
@@ -32,7 +35,7 @@ public class RequestPledgeInfo extends L2GameClientPacket
 		{
 			// Util.handleIllegalPlayerAction(activeChar, "RequestPledgeInfo[40]", "Clan
 			// data for clanId " + _clanId + " is missing", 1);
-			// _log.warn("Host " + getClient().getIpAddr() + " possibly sends fake packets.
+			// _log.warn("Host " + client.getIpAddr() + " possibly sends fake packets.
 			// activeChar: " + activeChar);
 			activeChar.sendActionFailed();
 			return;

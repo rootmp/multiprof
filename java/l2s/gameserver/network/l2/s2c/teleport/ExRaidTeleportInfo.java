@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExRaidTeleportInfo extends L2GameServerPacket
+public class ExRaidTeleportInfo implements IClientOutgoingPacket
 {
 	Player _player;
 
@@ -21,8 +21,8 @@ public class ExRaidTeleportInfo extends L2GameServerPacket
 	{
 		int usedFreeTeleports = _player.getVarInt(PlayerVariables.FREE_RAID_TELEPORTS_USED, 0);
 		if (usedFreeTeleports == 0)
-			writeD(0);
+			packetWriter.writeD(0);
 		else
-			writeD(1);
+			packetWriter.writeD(1);
 	}
 }

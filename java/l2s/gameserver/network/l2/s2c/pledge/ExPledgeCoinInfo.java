@@ -6,7 +6,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  **/
-public class ExPledgeCoinInfo extends L2GameServerPacket
+public class ExPledgeCoinInfo implements IClientOutgoingPacket
 {
 	private final Player _player;
 
@@ -16,8 +16,8 @@ public class ExPledgeCoinInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_player.getHonorCoins());
+		packetWriter.writeD(_player.getHonorCoins());
 	}
 }

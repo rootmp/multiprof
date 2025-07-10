@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.handler.bbs.BbsHandlerHolder;
@@ -7,7 +10,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
-public class RequestShowBoard extends L2GameClientPacket
+public class RequestShowBoard implements IClientIncomingPacket
 {
 	@SuppressWarnings("unused")
 	private int _unknown;
@@ -18,14 +21,14 @@ public class RequestShowBoard extends L2GameClientPacket
 	@Override
 	public boolean readImpl()
 	{
-		_unknown = readD();
+		_unknown = packet.readD();
 		return true;
 	}
 
 	@Override
 	public void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

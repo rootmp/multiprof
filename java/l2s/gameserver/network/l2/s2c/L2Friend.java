@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class L2Friend extends L2GameServerPacket
+public class L2Friend implements IClientOutgoingPacket
 {
 	private boolean _add, _online;
 	private String _name;
@@ -25,12 +26,12 @@ public class L2Friend extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_add ? 1 : 3); // 1 - добавить друга в спикок, 3 удалить друга со списка
-		writeD(0); // и снова тут идет ID персонажа в списке оффа, не object id
-		writeS(_name);
-		writeD(_online ? 1 : 0); // онлайн или оффлайн
-		writeD(_object_id); // object_id if online
+		packetWriter.writeD(_add ? 1 : 3); // 1 - добавить друга в спикок, 3 удалить друга со списка
+		packetWriter.writeD(0); // и снова тут идет ID персонажа в списке оффа, не object id
+		packetWriter.writeS(_name);
+		packetWriter.writeD(_online ? 1 : 0); // онлайн или оффлайн
+		packetWriter.writeD(_object_id); // object_id if online
 	}
 }

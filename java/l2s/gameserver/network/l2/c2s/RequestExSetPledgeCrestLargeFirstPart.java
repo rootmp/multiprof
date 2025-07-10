@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.model.Player;
@@ -9,7 +12,7 @@ import l2s.gameserver.network.l2.s2c.ExSetPledgeEmblemAck;
 /**
  * @author Bonux
  **/
-public class RequestExSetPledgeCrestLargeFirstPart extends L2GameClientPacket
+public class RequestExSetPledgeCrestLargeFirstPart implements IClientIncomingPacket
 {
 	private int _crestPart, _crestLeght, _length;
 	private byte[] _data;
@@ -18,11 +21,11 @@ public class RequestExSetPledgeCrestLargeFirstPart extends L2GameClientPacket
 	 * format: chd(b)
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_crestPart = readD();
-		_crestLeght = readD();
-		_length = readD();
+		_crestPart = packet.readD();
+		_crestLeght = packet.readD();
+		_length = packet.readD();
 		if (_length <= CrestCache.LARGE_CREST_PART_SIZE && _length == _buf.remaining())
 		{
 			_data = new byte[_length];
@@ -32,9 +35,9 @@ public class RequestExSetPledgeCrestLargeFirstPart extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

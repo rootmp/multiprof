@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -23,7 +24,7 @@ import l2s.gameserver.model.items.Inventory;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.utils.AutoBan;
 
-public class CharacterSelectionInfo extends L2GameServerPacket
+public class CharacterSelectionInfo implements IClientOutgoingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(CharacterSelectionInfo.class);
 
@@ -46,19 +47,19 @@ public class CharacterSelectionInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int size = _characterPackages != null ? _characterPackages.length : 0;
 
-		writeD(size);
-		writeD(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // Максимальное количество персонажей на сервере
-		writeC(size >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // 0x00 - Разрешить, 0x01 - запретить. Разрешает или
+		packetWriter.writeD(size);
+		packetWriter.writeD(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // Максимальное количество персонажей на сервере
+		packetWriter.writeC(size >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // 0x00 - Разрешить, 0x01 - запретить. Разрешает или
 																	// запрещает создание игроков
-		writeC(0x00);
-		writeD(0x02); // 0x01 - Выводит окно, что нужно купить игру, что создавать более 2х чаров.
+		packetWriter.writeC(0x00);
+		packetWriter.writeD(0x02); // 0x01 - Выводит окно, что нужно купить игру, что создавать более 2х чаров.
 						// 0х02 - обычное лобби.
-		writeC(0x00); // 0x01 - Предлогает купить ПА.
-		writeC(0x00); // Balthus Knights
+		packetWriter.writeC(0x00); // 0x01 - Предлогает купить ПА.
+		packetWriter.writeC(0x00); // Balthus Knights
 
 		long lastAccess = -1L;
 		int lastUsed = -1;
@@ -73,113 +74,113 @@ public class CharacterSelectionInfo extends L2GameServerPacket
 		{
 			CharSelectInfoPackage charInfoPackage = _characterPackages[i];
 
-			writeS(charInfoPackage.getName(false));
-			writeD(charInfoPackage.getCharId()); // ?
-			writeS(_loginName);
-			writeD(_sessionId);
-			writeD(charInfoPackage.getClanId());
-			writeD(0x00); // Builder level
+			packetWriter.writeS(charInfoPackage.getName(false));
+			packetWriter.writeD(charInfoPackage.getCharId()); // ?
+			packetWriter.writeS(_loginName);
+			packetWriter.writeD(_sessionId);
+			packetWriter.writeD(charInfoPackage.getClanId());
+			packetWriter.writeD(0x00); // Builder level
 
-			writeD(charInfoPackage.getSex());
-			writeD(charInfoPackage.getRace());
-			writeD(charInfoPackage.getBaseClassId());
+			packetWriter.writeD(charInfoPackage.getSex());
+			packetWriter.writeD(charInfoPackage.getRace());
+			packetWriter.writeD(charInfoPackage.getBaseClassId());
 
-			writeD(Config.REQUEST_ID);
+			packetWriter.writeD(Config.REQUEST_ID);
 
-			writeD(charInfoPackage.getX());
-			writeD(charInfoPackage.getY());
-			writeD(charInfoPackage.getZ());
+			packetWriter.writeD(charInfoPackage.getX());
+			packetWriter.writeD(charInfoPackage.getY());
+			packetWriter.writeD(charInfoPackage.getZ());
 
-			writeF(charInfoPackage.getCurrentHp());
-			writeF(charInfoPackage.getCurrentMp());
+			packetWriter.writeF(charInfoPackage.getCurrentHp());
+			packetWriter.writeF(charInfoPackage.getCurrentMp());
 
-			writeQ(charInfoPackage.getSp());
-			writeQ(charInfoPackage.getExp());
+			packetWriter.writeQ(charInfoPackage.getSp());
+			packetWriter.writeQ(charInfoPackage.getExp());
 			int lvl = Experience.getLevel(charInfoPackage.getExp());
-			writeF(Experience.getExpPercent(lvl, charInfoPackage.getExp()));
-			writeD(lvl);
+			packetWriter.writeF(Experience.getExpPercent(lvl, charInfoPackage.getExp()));
+			packetWriter.writeD(lvl);
 
-			writeD(charInfoPackage.getKarma());
-			writeD(charInfoPackage.getPk());
-			writeD(charInfoPackage.getPvP());
+			packetWriter.writeD(charInfoPackage.getKarma());
+			packetWriter.writeD(charInfoPackage.getPk());
+			packetWriter.writeD(charInfoPackage.getPvP());
 
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
 
-			writeD(0x00); // unk Ertheia
-			writeD(0x00); // unk Ertheia
+			packetWriter.writeD(0x00); // unk Ertheia
+			packetWriter.writeD(0x00); // unk Ertheia
 
 			for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
-				writeD(charInfoPackage.getPaperdollItemId(PAPERDOLL_ID));
+				packetWriter.writeD(charInfoPackage.getPaperdollItemId(PAPERDOLL_ID));
 
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_RHAND)); // Внешний вид оружия (ИД Итема).
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LHAND)); // Внешний вид щита (ИД Итема).
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_GLOVES)); // Внешний вид перчаток (ИД
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_RHAND)); // Внешний вид оружия (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LHAND)); // Внешний вид щита (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_GLOVES)); // Внешний вид перчаток (ИД
 																						// Итема).
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_CHEST)); // Внешний вид верха (ИД Итема).
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LEGS)); // Внешний вид низа (ИД Итема).
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_FEET)); // Внешний вид ботинок (ИД Итема).
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LRHAND)); // ???
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_HAIR)); // Внешний вид шляпы (ИД итема).
-			writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_DHAIR)); // Внешний вид маски (ИД итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_CHEST)); // Внешний вид верха (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LEGS)); // Внешний вид низа (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_FEET)); // Внешний вид ботинок (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LRHAND)); // ???
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_HAIR)); // Внешний вид шляпы (ИД итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_DHAIR)); // Внешний вид маски (ИД итема).
 
-			writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_CHEST));
-			writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_LEGS));
-			writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_HEAD));
-			writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_GLOVES));
-			writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_FEET));
+			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_CHEST));
+			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_LEGS));
+			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_HEAD));
+			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_GLOVES));
+			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_FEET));
 
-			writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? charInfoPackage.getSex() : charInfoPackage.getHairStyle());
-			writeD(charInfoPackage.getHairColor());
-			writeD(charInfoPackage.getFace());
+			packetWriter.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? charInfoPackage.getSex() : charInfoPackage.getHairStyle());
+			packetWriter.writeD(charInfoPackage.getHairColor());
+			packetWriter.writeD(charInfoPackage.getFace());
 
-			writeF(charInfoPackage.getMaxHp()); // hp max
-			writeF(charInfoPackage.getMaxMp()); // mp max
+			packetWriter.writeF(charInfoPackage.getMaxHp()); // hp max
+			packetWriter.writeF(charInfoPackage.getMaxMp()); // mp max
 
-			writeD(charInfoPackage.getAccessLevel() > -100 ? charInfoPackage.getDeleteTimer() : -1);
-			writeD(charInfoPackage.getClassId());
-			writeD(i == lastUsed ? 1 : 0);
+			packetWriter.writeD(charInfoPackage.getAccessLevel() > -100 ? charInfoPackage.getDeleteTimer() : -1);
+			packetWriter.writeD(charInfoPackage.getClassId());
+			packetWriter.writeD(i == lastUsed ? 1 : 0);
 
-			writeC(Math.min(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_RHAND), 127));
-			writeD(charInfoPackage.getPaperdollVariation1Id(Inventory.PAPERDOLL_RHAND));
-			writeD(charInfoPackage.getPaperdollVariation2Id(Inventory.PAPERDOLL_RHAND));
-			writeD(0x00); // Transform ID
+			packetWriter.writeC(Math.min(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_RHAND), 127));
+			packetWriter.writeD(charInfoPackage.getPaperdollVariation1Id(Inventory.PAPERDOLL_RHAND));
+			packetWriter.writeD(charInfoPackage.getPaperdollVariation2Id(Inventory.PAPERDOLL_RHAND));
+			packetWriter.writeD(0x00); // Transform ID
 
 			// TODO: Pet info?
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeF(0x00);
-			writeF(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
+			packetWriter.writeF(0x00);
+			packetWriter.writeF(0x00);
 
-			writeD(charInfoPackage.getSayhasGrace()); // Vitality Points
+			packetWriter.writeD(charInfoPackage.getSayhasGrace()); // Vitality Points
 			if (_hasPremiumAccount)
-				writeD(charInfoPackage.getSayhasGrace() > 0 ? (int) (100 * Config.ALT_SAYHAS_GRACE_PA_RATE) : 0);
+				packetWriter.writeD(charInfoPackage.getSayhasGrace() > 0 ? (int) (100 * Config.ALT_SAYHAS_GRACE_PA_RATE) : 0);
 			else
-				writeD(charInfoPackage.getSayhasGrace() > 0 ? (int) (100 * Config.ALT_SAYHAS_GRACE_RATE) : 0);
-			writeD(charInfoPackage.getVitalityItemsUsed()); // Use Vitality Potions Left
-			writeD(charInfoPackage.isAvailable());
-			writeC(0x00); // Chaos Festival Winner
-			writeC(charInfoPackage.isHero()); // hero glow
-			writeC(charInfoPackage.isHairAccessoryEnabled() ? 0x01 : 0x00); // show hair accessory if enabled
+				packetWriter.writeD(charInfoPackage.getSayhasGrace() > 0 ? (int) (100 * Config.ALT_SAYHAS_GRACE_RATE) : 0);
+			packetWriter.writeD(charInfoPackage.getVitalityItemsUsed()); // Use Vitality Potions Left
+			packetWriter.writeD(charInfoPackage.isAvailable());
+			packetWriter.writeC(0x00); // Chaos Festival Winner
+			packetWriter.writeC(charInfoPackage.isHero()); // hero glow
+			packetWriter.writeC(charInfoPackage.isHairAccessoryEnabled() ? 0x01 : 0x00); // show hair accessory if enabled
 			if (charInfoPackage.getAccessLevel() > -100)
 			{
-				writeD(0x00);
-				writeD((int) (charInfoPackage.getLastLoginTime() / 1000)); // last login time
+				packetWriter.writeD(0x00);
+				packetWriter.writeD((int) (charInfoPackage.getLastLoginTime() / 1000)); // last login time
 			}
 			else
 			{
-				writeD(0x01);
-				writeD(0x00); // TODO: unban time
+				packetWriter.writeD(0x01);
+				packetWriter.writeD(0x00); // TODO: unban time
 			}
-			writeD(0); // unk 338
-			writeC(0); // unk 338
+			packetWriter.writeD(0); // unk 338
+			packetWriter.writeC(0); // unk 338
 
 			int specialMountId = 0;
 			if (charInfoPackage.getBaseClassId() == 217)
@@ -201,8 +202,9 @@ public class CharacterSelectionInfo extends L2GameServerPacket
 					specialMountId = 3;
 				}
 			}
-			writeC(specialMountId); // special mount type for vanguard riders
+			packetWriter.writeC(specialMountId); // special mount type for vanguard riders
 		}
+		return true;
 	}
 
 	private boolean haveLearnedSkill(int charId, int skillId)

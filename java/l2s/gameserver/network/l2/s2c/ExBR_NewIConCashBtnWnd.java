@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author Bonux
  **/
-public class ExBR_NewIConCashBtnWnd extends L2GameServerPacket
+public class ExBR_NewIConCashBtnWnd implements IClientOutgoingPacket
 {
 	private final int _value;
 
@@ -15,8 +16,8 @@ public class ExBR_NewIConCashBtnWnd extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(_value); // Has Updates
+		packetWriter.writeH(_value); // Has Updates
 	}
 }

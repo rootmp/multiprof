@@ -6,22 +6,22 @@ import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
 /**
  * @author nexvill
  */
-public class RequestExTryPetExtractSystem extends L2GameClientPacket
+public class RequestExTryPetExtractSystem implements IClientIncomingPacket
 {
 	private int _petItemId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_petItemId = readD();
+		_petItemId = packet.readD();
 		System.out.print("received RequestExTryPetExtractSystem with data: " + _petItemId);
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 	}

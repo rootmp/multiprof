@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.Config;
 
-public class ExPledgeEmblem extends L2GameServerPacket
+public class ExPledgeEmblem implements IClientOutgoingPacket
 {
 	private int _clanId, _crestId, _crestPart, _totalSize;
 	private byte[] _data;
@@ -17,14 +18,14 @@ public class ExPledgeEmblem extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(Config.REQUEST_ID);
-		writeD(_clanId);
-		writeD(_crestId);
-		writeD(_crestPart);
-		writeD(_totalSize);
-		writeD(_data.length);
+		packetWriter.writeD(Config.REQUEST_ID);
+		packetWriter.writeD(_clanId);
+		packetWriter.writeD(_crestId);
+		packetWriter.writeD(_crestPart);
+		packetWriter.writeD(_totalSize);
+		packetWriter.writeD(_data.length);
 		writeB(_data);
 	}
 }

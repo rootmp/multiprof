@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExBlockRemoveResult extends L2GameServerPacket
+public class ExBlockRemoveResult implements IClientOutgoingPacket
 {
 	private final String _blockName;
 
@@ -13,9 +14,9 @@ public class ExBlockRemoveResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(1); // UNK
-		writeS(_blockName);
+		packetWriter.writeD(1); // UNK
+		packetWriter.writeS(_blockName);
 	}
 }

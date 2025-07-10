@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,23 +27,23 @@ import gnu.trove.map.hash.TIntLongHashMap;
 /**
  * @author Bonux
  **/
-public class RequestLuckyGamePlay extends L2GameClientPacket
+public class RequestLuckyGamePlay implements IClientIncomingPacket
 {
 	private int _typeId;
 	private int _gamesCount;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_typeId = readD();
+		_typeId = packet.readD();
 		_gamesCount = Math.min(readD(), 50);
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

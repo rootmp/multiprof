@@ -5,7 +5,7 @@ import java.util.List;
 import l2s.gameserver.model.items.PrivateStoreHistoryItem;
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExPrivateStoreSearchHistory extends L2GameServerPacket
+public class ExPrivateStoreSearchHistory implements IClientOutgoingPacket
 {
 	public static final int ITEMS_LIMIT_PER_PAGE = 100;
 
@@ -21,18 +21,18 @@ public class ExPrivateStoreSearchHistory extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(cCurrentPage);
-		writeC(cMaxPage);
-		writeD(items.size());
+		packetWriter.writeC(cCurrentPage);
+		packetWriter.writeC(cMaxPage);
+		packetWriter.writeD(items.size());
 		for (PrivateStoreHistoryItem item : items)
 		{
-			writeD(item.getItemId());
-			writeC(item.getStoreType());
-			writeC(item.getEnchantLevel());
-			writeQ(item.getPrice());
-			writeQ(item.getCount());
+			packetWriter.writeD(item.getItemId());
+			packetWriter.writeC(item.getStoreType());
+			packetWriter.writeC(item.getEnchantLevel());
+			packetWriter.writeQ(item.getPrice());
+			packetWriter.writeQ(item.getCount());
 		}
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.entity.residence.ResidenceSide;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.entity.residence.ResidenceSide;
 /**
  * @author Bonux
  */
-public class ExCastleState extends L2GameServerPacket
+public class ExCastleState implements IClientOutgoingPacket
 {
 	private final int _id;
 	private final ResidenceSide _side;
@@ -17,9 +18,9 @@ public class ExCastleState extends L2GameServerPacket
 		_side = castle.getResidenceSide();
 	}
 
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_id);
-		writeD(_side.ordinal());
+		packetWriter.writeD(_id);
+		packetWriter.writeD(_side.ordinal());
 	}
 }

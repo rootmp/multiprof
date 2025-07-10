@@ -9,8 +9,8 @@ public final class NetList extends ArrayList<Net>
 
 	public boolean matches(String address)
 	{
-		for (Net net : this)
-			if (net.matches(address))
+		for(Net net : this)
+			if(net.matches(address))
 				return true;
 		return false;
 	}
@@ -19,10 +19,10 @@ public final class NetList extends ArrayList<Net>
 	public String toString()
 	{
 		StringBuilder sb = new StringBuilder();
-		for (Iterator<Net> itr = this.iterator(); itr.hasNext();)
+		for(Iterator<Net> itr = this.iterator(); itr.hasNext();)
 		{
 			sb.append(itr.next());
-			if (itr.hasNext())
+			if(itr.hasNext())
 				sb.append(',');
 		}
 		return sb.toString();

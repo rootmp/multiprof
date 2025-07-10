@@ -1,17 +1,20 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.ShortCut;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.s2c.ShortCutRegisterPacket;
 
-public class RequestShortCutReg extends L2GameClientPacket
+public class RequestShortCutReg implements IClientIncomingPacket
 {
 	private ShortCut.ShortCutType _type;
 	private int _id, _slot, _page, _lvl, _characterType;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		try
 		{
@@ -21,14 +24,14 @@ public class RequestShortCutReg extends L2GameClientPacket
 		{
 			return false;
 		}
-		int slot = readD();
-		int unk0 = readC();
-		_id = readD();
-		_lvl = readD();
-		_characterType = readD();
+		int slot = packet.readD();
+		int unk0 = packet.readC();
+		_id = packet.readD();
+		_lvl = packet.readD();
+		_characterType = packet.readD();
 
-		int unk1 = readD(); // UNK
-		int unk2 = readD(); // UNK
+		int unk1 = packet.readD(); // UNK
+		int unk2 = packet.readD(); // UNK
 
 		_slot = slot % 12;
 		_page = slot / 12;
@@ -36,9 +39,9 @@ public class RequestShortCutReg extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

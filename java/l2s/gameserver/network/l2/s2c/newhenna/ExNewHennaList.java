@@ -6,7 +6,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Henna;
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExNewHennaList extends L2GameServerPacket
+public class ExNewHennaList implements IClientOutgoingPacket
 {
 	private final int nDailyStep;
 	private final int nDailyCount;
@@ -20,19 +20,19 @@ public class ExNewHennaList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(nDailyStep);
-		writeH(nDailyCount);
-		writeD(hennaInfoList.size());
+		packetWriter.writeH(nDailyStep);
+		packetWriter.writeH(nDailyCount);
+		packetWriter.writeD(hennaInfoList.size());
 		for (Henna info : hennaInfoList)
 		{
-			writeD(info.getId());
-			writeD(info.getPotentialId());
-			writeC(info.isActive());
-			writeH(info.getEnchantStep());
-			writeD(info.getCurrentEnchantExp());
-			writeH(info.getActiveStep());
+			packetWriter.writeD(info.getId());
+			packetWriter.writeD(info.getPotentialId());
+			packetWriter.writeC(info.isActive());
+			packetWriter.writeH(info.getEnchantStep());
+			packetWriter.writeD(info.getCurrentEnchantExp());
+			packetWriter.writeH(info.getActiveStep());
 		}
 	}
 }

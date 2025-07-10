@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -8,24 +11,24 @@ import l2s.gameserver.utils.PledgeBonusUtils;
 /**
  * Obi-Wan 12.08.2016
  */
-public class RequestPledgeBonusReward extends L2GameClientPacket
+public class RequestPledgeBonusReward implements IClientIncomingPacket
 {
 	private int _type;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_type = readC();
+		_type = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if (!Config.EX_USE_PLEDGE_BONUS)
 			return;
 
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

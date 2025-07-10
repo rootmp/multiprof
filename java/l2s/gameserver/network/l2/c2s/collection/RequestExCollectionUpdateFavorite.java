@@ -7,13 +7,13 @@ import l2s.gameserver.network.l2.s2c.collection.ExCollectionUpdateFavorite;
 /**
  * @author nexvill
  */
-public class RequestExCollectionUpdateFavorite extends L2GameClientPacket
+public class RequestExCollectionUpdateFavorite implements IClientIncomingPacket
 {
 	private boolean _add;
 	private int _collectionId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_add = readC() == 1 ? true : false;
 		_collectionId = readH();
@@ -21,9 +21,9 @@ public class RequestExCollectionUpdateFavorite extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

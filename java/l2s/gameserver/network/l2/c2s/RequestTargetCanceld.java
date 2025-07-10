@@ -1,10 +1,13 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillCastingType;
 
-public class RequestTargetCanceld extends L2GameClientPacket
+public class RequestTargetCanceld implements IClientIncomingPacket
 {
 	private int _unselect;
 
@@ -12,16 +15,16 @@ public class RequestTargetCanceld extends L2GameClientPacket
 	 * packet type id 0x48 format: ch
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_unselect = readH();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

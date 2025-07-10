@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExStopItemAutoPeel extends L2GameServerPacket
+public class ExStopItemAutoPeel implements IClientOutgoingPacket
 {
 	private static int _result;
 
@@ -15,8 +15,8 @@ public class ExStopItemAutoPeel extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_result); // result
+		packetWriter.writeC(_result); // result
 	}
 }

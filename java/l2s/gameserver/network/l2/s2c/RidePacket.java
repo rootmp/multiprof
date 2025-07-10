@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
 
-public class RidePacket extends L2GameServerPacket
+public class RidePacket implements IClientOutgoingPacket
 {
 	private int _mountType, _id, _rideClassID;
 	private Location _loc;
@@ -17,14 +18,14 @@ public class RidePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_id);
-		writeD(_mountType);
-		writeD(_mountType);
-		writeD(_rideClassID);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
+		packetWriter.writeD(_id);
+		packetWriter.writeD(_mountType);
+		packetWriter.writeD(_mountType);
+		packetWriter.writeD(_rideClassID);
+		packetWriter.writeD(_loc.x);
+		packetWriter.writeD(_loc.y);
+		packetWriter.writeD(_loc.z);
 	}
 }

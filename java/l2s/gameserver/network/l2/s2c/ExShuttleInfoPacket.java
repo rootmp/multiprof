@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.templates.ShuttleTemplate.ShuttleStop;
 /**
  * @author Bonux
  **/
-public class ExShuttleInfoPacket extends L2GameServerPacket
+public class ExShuttleInfoPacket implements IClientOutgoingPacket
 {
 	private final Shuttle _shuttle;
 	private final Collection<ShuttleStop> _stops;
@@ -21,35 +22,35 @@ public class ExShuttleInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_shuttle.getBoatId()); // Shuttle ObjID
-		writeD(_shuttle.getX()); // X
-		writeD(_shuttle.getY()); // Y
-		writeD(_shuttle.getZ()); // Z
-		writeD(_shuttle.getHeading()); // Maybe H
-		writeD(_shuttle.getBoatId()); // Shuttle ID (Arkan: 1,2; Cruma: 3)
-		writeD(_stops.size()); // doors_count
+		packetWriter.writeD(_shuttle.getBoatId()); // Shuttle ObjID
+		packetWriter.writeD(_shuttle.getX()); // X
+		packetWriter.writeD(_shuttle.getY()); // Y
+		packetWriter.writeD(_shuttle.getZ()); // Z
+		packetWriter.writeD(_shuttle.getHeading()); // Maybe H
+		packetWriter.writeD(_shuttle.getBoatId()); // Shuttle ID (Arkan: 1,2; Cruma: 3)
+		packetWriter.writeD(_stops.size()); // doors_count
 		for (ShuttleStop stop : _stops)
 		{
 			int stopId = stop.getId();
-			writeD(stopId); // Stop ID
+			packetWriter.writeD(stopId); // Stop ID
 			for (Location loc : stop.getDimensions())
 			{
-				writeD(loc.getX());
-				writeD(loc.getY());
-				writeD(loc.getZ());
+				packetWriter.writeD(loc.getX());
+				packetWriter.writeD(loc.getY());
+				packetWriter.writeD(loc.getZ());
 			}
 
 			if (_shuttle.getCurrentWayEvent().containsStop(stopId))
 			{
-				writeD(_shuttle.isDocked());
-				writeD(true);
+				packetWriter.writeD(_shuttle.isDocked());
+				packetWriter.writeD(true);
 			}
 			else
 			{
-				writeD(false);
-				writeD(false);
+				packetWriter.writeD(false);
+				packetWriter.writeD(false);
 			}
 		}
 	}

@@ -11,21 +11,21 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class RequestExSubjugationRanking extends L2GameClientPacket
+public class RequestExSubjugationRanking implements IClientIncomingPacket
 {
 	private int _zoneId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_zoneId = readD(); // zone id
+		_zoneId = packet.readD(); // zone id
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

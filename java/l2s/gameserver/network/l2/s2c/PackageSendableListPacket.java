@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +14,7 @@ import l2s.gameserver.model.items.Warehouse;
  * @author VISTALL
  * @date 20:46/16.05.2011
  */
-public class PackageSendableListPacket extends L2GameServerPacket
+public class PackageSendableListPacket implements IClientOutgoingPacket
 {
 	private final int _type;
 	private int _targetObjectId;
@@ -35,23 +36,23 @@ public class PackageSendableListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
+		packetWriter.writeC(_type);
 		if (_type == 1)
 		{
-			writeD(_targetObjectId);
-			writeQ(_adena);
-			writeD(_itemList.size());
+			packetWriter.writeD(_targetObjectId);
+			packetWriter.writeQ(_adena);
+			packetWriter.writeD(_itemList.size());
 		}
 		else if (_type == 2)
 		{
-			writeD(_itemList.size());
-			writeD(_itemList.size());
+			packetWriter.writeD(_itemList.size());
+			packetWriter.writeD(_itemList.size());
 			for (ItemInfo item : _itemList)
 			{
 				writeItemInfo(item);
-				writeD(item.getObjectId());
+				packetWriter.writeD(item.getObjectId());
 			}
 		}
 	}

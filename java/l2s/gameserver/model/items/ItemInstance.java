@@ -1,10 +1,10 @@
 package l2s.gameserver.model.items;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.Lock;
@@ -60,6 +60,7 @@ import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.item.ItemType;
 import l2s.gameserver.templates.item.support.AppearanceStone;
 import l2s.gameserver.templates.item.support.Ensoul;
+import l2s.gameserver.templates.pet.PetParam;
 import l2s.gameserver.utils.ItemFunctions;
 
 public final class ItemInstance extends GameObject implements JdbcEntity
@@ -132,8 +133,8 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	private int _appearanceStoneId = 0;
 	private List<SkillEntry> _appearanceStoneSkills = null;
 
-	private Map<Integer, Ensoul> _normalEnsouls = null;
-	private Map<Integer, Ensoul> _specialEnsouls = null;
+	private final Ensoul[] _ensoulOptions = new Ensoul[2];
+	private final Ensoul[] _ensoulSpecialOptions = new Ensoul[1];
 
 	private final Lock _onEquipUnequipLock = new ReentrantLock();
 
@@ -1287,7 +1288,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		try
 		{
 			_itemsDAO.delete(this);
-			ItemsEnsoulDAO.getInstance().delete(getObjectId(), false);
+			ItemsEnsoulDAO.getInstance().delete(getObjectId());
 			stopManaConsumeTask();
 		}
 		finally
@@ -1756,115 +1757,169 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		_chargedFishshotPower = val;
 	}
 
-	public Ensoul[] getNormalEnsouls()
+	public Collection<Ensoul> getSpecialAbilities()
 	{
-		if (_normalEnsouls == null)
+		final List<Ensoul> result = new ArrayList<>();
+		for (Ensoul ensoulOption : _ensoulOptions)
 		{
-			return EMPTY_ENSOULS_ARRAY;
+			if (ensoulOption != null)
+			{
+				result.add(ensoulOption);
+			}
 		}
+		return result;
+	}
+	
+	public Ensoul getEnsoul(int type, int index)
+	{
+		if(type==1)
+			return getSpecialAbility(index);
+		else if (type== 2)
+			return  getAdditionalSpecialAbility(index);
+		
+		return null;
+	}
+	
+	public Ensoul getSpecialAbility(int index)
+	{
+		return _ensoulOptions[index];
+	}
+	
+	public Collection<Ensoul> getAdditionalSpecialAbilities()
+	{
+		final List<Ensoul> result = new ArrayList<>();
+		for (Ensoul ensoulSpecialOption : _ensoulSpecialOptions)
+		{
+			if (ensoulSpecialOption != null)
+			{
+				result.add(ensoulSpecialOption);
+			}
+		}
+		return result;
+	}
+	
+	public Ensoul getAdditionalSpecialAbility(int index)
+	{
+		return _ensoulSpecialOptions[index];
+	}
+	
+	public void addSpecialAbility(Ensoul option, int position, int type, boolean updateInDB)
+	{
+		if ((type == 1) && ((position < 0) || (position > 1))) // two first slots
+			return;
 
-		return _normalEnsouls.values().toArray(new Ensoul[_normalEnsouls.size()]);
+		if ((type == 2) && (position != 0)) // third slot
+			return;
+
+		if (type == 1) // Adding regular ability
+		{
+			final Ensoul oldOption = _ensoulOptions[position];
+			if (oldOption != null)
+				ItemsEnsoulDAO.getInstance().delete(getOwnerId(), type, position);
+				//removeSpecialAbility(oldOption);
+			_ensoulOptions[position] = option;
+		}
+		else if (type == 2) // Adding special ability
+		{
+			final Ensoul oldOption = _ensoulSpecialOptions[position];
+			if (oldOption != null)
+				ItemsEnsoulDAO.getInstance().delete(getOwnerId(), type, position);
+				//removeSpecialAbility(oldOption);
+			_ensoulSpecialOptions[position] = option;
+		}
+		
+		if (updateInDB)
+			updateSpecialAbilities();
+	}
+	
+	public void removeSpecialAbility(int position, int type)
+	{
+		if (type == 1)
+		{
+			final Ensoul option = _ensoulOptions[position];
+			if (option != null)
+			{
+				ItemsEnsoulDAO.getInstance().delete(getObjectId(), type, position);
+				_ensoulOptions[position] = null;
+				if (position == 0)
+				{
+					final Ensoul secondEnsoul = _ensoulOptions[1];
+					if (secondEnsoul != null)
+					{
+						ItemsEnsoulDAO.getInstance().delete(getObjectId(), type, 1);
+						_ensoulOptions[1] = null;
+						addSpecialAbility(secondEnsoul, 0, type, true);
+					}
+				}
+			}
+		}
+		else if (type == 2)
+		{
+			final Ensoul option = _ensoulSpecialOptions[position];
+			if (option != null)
+			{
+				ItemsEnsoulDAO.getInstance().delete(getObjectId(), type, position);
+				_ensoulSpecialOptions[position] = null;
+			}
+		}
+	}
+	
+	public void updateSpecialAbilities()
+	{
+		ItemsEnsoulDAO.getInstance().insert(getObjectId(), _ensoulOptions, _ensoulSpecialOptions);
 	}
 
-	public Ensoul[] getSpecialEnsouls()
+	public int[] getEnsoulOptionsArray()
 	{
-		if (_specialEnsouls == null)
-		{
-			return EMPTY_ENSOULS_ARRAY;
-		}
+		int[] ids = new int[_ensoulOptions.length]; 
 
-		return _specialEnsouls.values().toArray(new Ensoul[_specialEnsouls.size()]);
+		for (int i = 0; i < _ensoulOptions.length; i++) 
+		{
+			if (_ensoulOptions[i] != null)
+				ids[i] = _ensoulOptions[i].getId(); 
+		}
+		return ids;
 	}
 
-	public void restoreEnsoul(boolean toRestore)
+	public int[] getEnsoulSpecialOptionsArray()
 	{
-		ItemsEnsoulDAO.getInstance().restore(this, toRestore);
+		int[] ids = new int[_ensoulSpecialOptions.length]; 
+
+		for (int i = 0; i < _ensoulSpecialOptions.length; i++) 
+		{
+			if (_ensoulSpecialOptions[i] != null)
+				ids[i] = _ensoulSpecialOptions[i].getId();
+		}
+		return ids;
+	}
+	
+	public  List<Ensoul> getNormalEnsouls()
+	{
+		final List<Ensoul> result = new ArrayList<>();
+		for (Ensoul ensoulOption : _ensoulOptions)
+		{
+			if (ensoulOption != null)
+				result.add(ensoulOption);
+		}
+		return result;
+	}
+	
+	public  List<Ensoul> getSpecialEnsouls()
+	{
+		final List<Ensoul> result = new ArrayList<>();
+		for (Ensoul ensoulSpecialOption : _ensoulSpecialOptions)
+		{
+			if (ensoulSpecialOption != null)
+				result.add(ensoulSpecialOption);
+		}
+		return result;
 	}
 
 	public boolean containsEnsoul(int type, int id)
 	{
-		return getEnsoul(type, id) != null;
+		return getEnsoul(type,id-1)!=null;
 	}
-
-	public Ensoul getEnsoul(int type, int id)
-	{
-		if (type == 1)
-		{
-			if (_normalEnsouls != null)
-			{
-				return _normalEnsouls.get(id);
-			}
-		}
-		else if (type == 2)
-		{
-			if (_specialEnsouls != null)
-			{
-				return _specialEnsouls.get(id);
-			}
-		}
-		return null;
-	}
-
-	public void addEnsoul(int type, int id, Ensoul ensoul, boolean store)
-	{
-		if (!canBeEnsoul(ensoul.getItemId()))
-		{
-			return;
-		}
-
-		if (type == 1)
-		{
-			if (_normalEnsouls == null)
-			{
-				_normalEnsouls = new TreeMap<Integer, Ensoul>();
-			}
-			_normalEnsouls.put(id, ensoul);
-		}
-		else if (type == 2)
-		{
-			if (_specialEnsouls == null)
-			{
-				_specialEnsouls = new TreeMap<Integer, Ensoul>();
-			}
-			_specialEnsouls.put(id, ensoul);
-		}
-		else
-		{
-			return;
-		}
-
-		if (store)
-		{
-			ItemsEnsoulDAO.getInstance().insert(getObjectId(), type, id, ensoul.getId(), false);
-		}
-	}
-
-	public Ensoul removeEnsoul(int type, int id, boolean store)
-	{
-		Ensoul ensoul = null;
-		if (type == 1)
-		{
-			if (_normalEnsouls != null)
-			{
-				ensoul = _normalEnsouls.remove(id);
-			}
-		}
-		else if (type == 2)
-		{
-			if (_specialEnsouls != null)
-			{
-				ensoul = _specialEnsouls.remove(id);
-			}
-		}
-
-		if (store && (ensoul != null))
-		{
-			ItemsEnsoulDAO.getInstance().delete(getObjectId(), type, id, false);
-		}
-
-		return ensoul;
-	}
-
+	
 	public boolean isFlagLifeTime()
 	{
 		return (_customFlags & FLAG_LIFE_TIME) == FLAG_LIFE_TIME;
@@ -2091,5 +2146,32 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	public void setPetInfo(PetItemInfo petInfo)
 	{
 		_petInfo = petInfo;
+	}
+
+	public int isLocked()
+	{
+		return 0;  
+	}
+
+	public int getVariation3Id()
+	{
+		return 0;
+	}
+
+	public int getUseCount()
+	{
+		return 0;
+	}
+
+	private PetParam _petParam = new PetParam();
+
+	public void setPet(PetParam petParam)
+	{
+		_petParam = petParam;
+	}
+
+	public PetParam getPetParam()
+	{
+		return _petParam;
 	}
 }

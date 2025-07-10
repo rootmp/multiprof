@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class PledgeShowMemberListDeletePacket extends L2GameServerPacket
+public class PledgeShowMemberListDeletePacket implements IClientOutgoingPacket
 {
 	private String _player;
 
@@ -10,8 +11,8 @@ public class PledgeShowMemberListDeletePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_player);
+		packetWriter.writeS(_player);
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +12,7 @@ import l2s.gameserver.model.entity.events.Event;
 import l2s.gameserver.model.instances.MonsterInstance;
 import l2s.gameserver.model.pledge.Clan;
 
-public class DiePacket extends L2GameServerPacket
+public class DiePacket implements IClientOutgoingPacket
 {
 	private final int objectId;
 	private final boolean hideDieAnimation;
@@ -76,22 +77,22 @@ public class DiePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(objectId);
-		writeD(flags); // 1 - to village, 2 - to CH, 4 - to castle, 8 - fortress, 16 - to Outpost, 32 -
+		packetWriter.writeD(objectId);
+		packetWriter.writeD(flags); // 1 - to village, 2 - to CH, 4 - to castle, 8 - fortress, 16 - to Outpost, 32 -
 						// fixed
-		writeD(0x00); // UNK 228
-		writeD(sweepable); // Spoiled virgin
-		writeD(blessingFeatherDelay); // Blessing feather delay
-		writeD(hideDieAnimation ? 0x01 : 0x02); // Die animation
-		writeD(0x00); // UNK 228
-		writeD(0x00); // UNK 228
+		packetWriter.writeD(0x00); // UNK 228
+		packetWriter.writeD(sweepable); // Spoiled virgin
+		packetWriter.writeD(blessingFeatherDelay); // Blessing feather delay
+		packetWriter.writeD(hideDieAnimation ? 0x01 : 0x02); // Die animation
+		packetWriter.writeD(0x00); // UNK 228
+		packetWriter.writeD(0x00); // UNK 228
 
 		// last must be byte instead int 286 Eden
 		int itemsCount = 0;
-		writeD(itemsCount);
+		packetWriter.writeD(itemsCount);
 		for (int i = 0; i < itemsCount; i++)
-			writeD(0x00); // item Id
+			packetWriter.writeD(0x00); // item Id
 	}
 }

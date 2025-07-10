@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExActivateAutoShortcut extends L2GameServerPacket
+public class ExActivateAutoShortcut implements IClientOutgoingPacket
 {
 	private final int _slot;
 	private final boolean _active;
@@ -12,9 +13,9 @@ public class ExActivateAutoShortcut extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(_slot);
-		writeC(_active);
+		packetWriter.writeH(_slot);
+		packetWriter.writeC(_active);
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,17 +19,17 @@ import l2s.gameserver.network.l2.s2c.ExBuySellListPacket;
 import l2s.gameserver.utils.Log;
 import l2s.gameserver.utils.NpcUtils;
 
-public class RequestExRefundItem extends L2GameClientPacket
+public class RequestExRefundItem implements IClientIncomingPacket
 {
 	private int _listId;
 	private int _count;
 	private int[] _items;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_listId = readD();
-		_count = readD();
+		_listId = packet.readD();
+		_count = packet.readD();
 		if (_count * 4 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
@@ -35,7 +38,7 @@ public class RequestExRefundItem extends L2GameClientPacket
 		_items = new int[_count];
 		for (int i = 0; i < _count; i++)
 		{
-			_items[i] = readD();
+			_items[i] = packet.readD();
 			if (ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
 				_count = 0;
@@ -46,9 +49,9 @@ public class RequestExRefundItem extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || _count == 0)
 			return;
 

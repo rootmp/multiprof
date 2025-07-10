@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author monithly
  */
-public class ExLightingCandleEvent extends L2GameServerPacket
+public class ExLightingCandleEvent implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket ENABLED = new ExLightingCandleEvent(1);
 	public static final L2GameServerPacket DISABLED = new ExLightingCandleEvent(0);
@@ -16,8 +17,8 @@ public class ExLightingCandleEvent extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(_value); // Available
+		packetWriter.writeH(_value); // Available
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.time.LocalDateTime;
 import java.time.Month;
@@ -14,7 +15,7 @@ import l2s.gameserver.templates.item.data.MissionLevelRewardData;
 /**
  * @author nexvill
  */
-public class ExMissionLevelRewardList extends L2GameServerPacket
+public class ExMissionLevelRewardList implements IClientOutgoingPacket
 {
 	private final Player _player;
 
@@ -24,7 +25,7 @@ public class ExMissionLevelRewardList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int month = Calendar.getInstance().get(Calendar.MONTH) + 1;
 		MissionLevelRewardTemplate template = MissionLevelRewardsHolder.getInstance().getRewardsInfo(month);
@@ -41,14 +42,14 @@ public class ExMissionLevelRewardList extends L2GameServerPacket
 		int totalAvailable = 0;
 		int extraAvailable = 0;
 
-		writeD(size); // rewards size
+		packetWriter.writeD(size); // rewards size
 
 		int i = 1;
 		while (i <= lastTakenBasic)
 		{
-			writeD(1); // type
-			writeD(i); // level
-			writeD(2); // state (0 - cannot received; 1 - can received; 2 - received)
+			packetWriter.writeD(1); // type
+			packetWriter.writeD(i); // level
+			packetWriter.writeD(2); // state (0 - cannot received; 1 - can received; 2 - received)
 
 			i++;
 		}
@@ -56,16 +57,16 @@ public class ExMissionLevelRewardList extends L2GameServerPacket
 		{
 			if (currentLvl >= i)
 			{
-				writeD(1);
-				writeD(i);
-				writeD(1);
+				packetWriter.writeD(1);
+				packetWriter.writeD(i);
+				packetWriter.writeD(1);
 				totalAvailable++;
 			}
 			else
 			{
-				writeD(1);
-				writeD(i);
-				writeD(0);
+				packetWriter.writeD(1);
+				packetWriter.writeD(i);
+				packetWriter.writeD(0);
 			}
 			i++;
 		}
@@ -76,9 +77,9 @@ public class ExMissionLevelRewardList extends L2GameServerPacket
 			MissionLevelRewardData data = template.getRewards().get(i - 1);
 			if (data.getAdditionalReward().getId() != 0)
 			{
-				writeD(2);
-				writeD(i);
-				writeD(2);
+				packetWriter.writeD(2);
+				packetWriter.writeD(i);
+				packetWriter.writeD(2);
 			}
 			i++;
 		}
@@ -89,9 +90,9 @@ public class ExMissionLevelRewardList extends L2GameServerPacket
 			{
 				if (data.getAdditionalReward().getId() != 0)
 				{
-					writeD(2);
-					writeD(i);
-					writeD(1);
+					packetWriter.writeD(2);
+					packetWriter.writeD(i);
+					packetWriter.writeD(1);
 					totalAvailable++;
 					extraAvailable++;
 				}
@@ -100,9 +101,9 @@ public class ExMissionLevelRewardList extends L2GameServerPacket
 			{
 				if (data.getAdditionalReward().getId() != 0)
 				{
-					writeD(2);
-					writeD(i);
-					writeD(0);
+					packetWriter.writeD(2);
+					packetWriter.writeD(i);
+					packetWriter.writeD(0);
 				}
 			}
 			i++;
@@ -110,51 +111,51 @@ public class ExMissionLevelRewardList extends L2GameServerPacket
 		// final reward
 		if (currentLvl < maxRewardLvl)
 		{
-			writeD(3);
-			writeD(20);
-			writeD(0);
+			packetWriter.writeD(3);
+			packetWriter.writeD(20);
+			packetWriter.writeD(0);
 		}
 		else
 		{
 			if (!takenFinal)
 			{
-				writeD(3);
-				writeD(20);
-				writeD(1);
+				packetWriter.writeD(3);
+				packetWriter.writeD(20);
+				packetWriter.writeD(1);
 				totalAvailable++;
 				extraAvailable++;
 			}
 			else
 			{
-				writeD(3);
-				writeD(20);
-				writeD(2);
+				packetWriter.writeD(3);
+				packetWriter.writeD(20);
+				packetWriter.writeD(2);
 			}
 		}
 		// bonus reward
 		i = 21;
 		while (i <= lastTakenBonus)
 		{
-			writeD(4);
-			writeD(i);
-			writeD(2);
+			packetWriter.writeD(4);
+			packetWriter.writeD(i);
+			packetWriter.writeD(2);
 			i++;
 		}
 		while (i <= 30)
 		{
 			if (currentLvl >= i)
 			{
-				writeD(4);
-				writeD(i);
-				writeD(1);
+				packetWriter.writeD(4);
+				packetWriter.writeD(i);
+				packetWriter.writeD(1);
 				totalAvailable++;
 				extraAvailable++;
 			}
 			else
 			{
-				writeD(4);
-				writeD(i);
-				writeD(0);
+				packetWriter.writeD(4);
+				packetWriter.writeD(i);
+				packetWriter.writeD(0);
 			}
 			i++;
 		}
@@ -174,12 +175,12 @@ public class ExMissionLevelRewardList extends L2GameServerPacket
 
 		seasonEnd = nextChange.atZone(ZoneId.systemDefault()).toEpochSecond() - (System.currentTimeMillis() / 1000);
 
-		writeD(currentLvl); // current level
-		writeD((int) percents); // current percents on level
-		writeD(Calendar.getInstance().get(Calendar.YEAR)); // season year
-		writeD(month); // season month
-		writeD(totalAvailable); // total rewards available
-		writeD(extraAvailable); // extra rewards available
-		writeD((int) seasonEnd); // remain season time
+		packetWriter.writeD(currentLvl); // current level
+		packetWriter.writeD((int) percents); // current percents on level
+		packetWriter.writeD(Calendar.getInstance().get(Calendar.YEAR)); // season year
+		packetWriter.writeD(month); // season month
+		packetWriter.writeD(totalAvailable); // total rewards available
+		packetWriter.writeD(extraAvailable); // extra rewards available
+		packetWriter.writeD((int) seasonEnd); // remain season time
 	}
 }

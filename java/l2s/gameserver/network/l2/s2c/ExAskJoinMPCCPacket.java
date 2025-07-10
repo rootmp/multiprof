@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * Asks the player to join a Command Channel
  */
-public class ExAskJoinMPCCPacket extends L2GameServerPacket
+public class ExAskJoinMPCCPacket implements IClientOutgoingPacket
 {
 	private String _requestorName;
 
@@ -16,9 +17,9 @@ public class ExAskJoinMPCCPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_requestorName); // лидер CC
-		writeD(0x00);
+		packetWriter.writeS(_requestorName); // лидер CC
+		packetWriter.writeD(0x00);
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
@@ -9,25 +12,25 @@ import l2s.gameserver.network.l2.s2c.PledgeReceiveMemberInfo;
 import l2s.gameserver.network.l2.s2c.PledgeShowMemberListUpdatePacket;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
-public class RequestPledgeSetAcademyMaster extends L2GameClientPacket
+public class RequestPledgeSetAcademyMaster implements IClientIncomingPacket
 {
 	private int _mode; // 1=set, 0=unset
 	private String _sponsorName;
 	private String _apprenticeName;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_mode = readD();
+		_mode = packet.readD();
 		_sponsorName = readS(16);
 		_apprenticeName = readS(16);
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

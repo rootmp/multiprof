@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 
 import l2s.gameserver.model.items.Inventory;
 
-public class ShopPreviewInfoPacket extends L2GameServerPacket
+public class ShopPreviewInfoPacket implements IClientOutgoingPacket
 {
 	private Map<Integer, Integer> _itemlist;
 
@@ -14,13 +15,13 @@ public class ShopPreviewInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(Inventory.PAPERDOLL_MAX);
+		packetWriter.writeD(Inventory.PAPERDOLL_MAX);
 
 		// Slots
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
-			writeD(getFromList(PAPERDOLL_ID));
+			packetWriter.writeD(getFromList(PAPERDOLL_ID));
 	}
 
 	private int getFromList(int key)

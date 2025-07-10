@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.matching.MatchingRoom;
 
-public class PartyRoomInfoPacket extends L2GameServerPacket
+public class PartyRoomInfoPacket implements IClientOutgoingPacket
 {
 	private int _id;
 	private int _minLevel;
@@ -24,14 +25,14 @@ public class PartyRoomInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_id); // room id
-		writeD(_maxMembers); // max members
-		writeD(_minLevel); // min level
-		writeD(_maxLevel); // max level
-		writeD(_lootDist); // loot distribution 1-Random 2-Random includ. etc
-		writeD(_location); // location
-		writeS(_title); // room name
+		packetWriter.writeD(_id); // room id
+		packetWriter.writeD(_maxMembers); // max members
+		packetWriter.writeD(_minLevel); // min level
+		packetWriter.writeD(_maxLevel); // max level
+		packetWriter.writeD(_lootDist); // loot distribution 1-Random 2-Random includ. etc
+		packetWriter.writeD(_location); // location
+		packetWriter.writeS(_title); // room name
 	}
 }

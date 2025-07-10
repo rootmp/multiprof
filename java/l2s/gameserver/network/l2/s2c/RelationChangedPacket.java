@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +7,7 @@ import java.util.List;
 import l2s.gameserver.model.Playable;
 import l2s.gameserver.model.Player;
 
-public class RelationChangedPacket extends L2GameServerPacket
+public class RelationChangedPacket implements IClientOutgoingPacket
 {
 	private class RelationChangedData
 	{
@@ -91,27 +92,27 @@ public class RelationChangedPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_mask);
+		packetWriter.writeC(_mask);
 		if ((_mask & SEND_MULTI) == SEND_MULTI)
 		{
-			writeH(_datas.size());
+			packetWriter.writeH(_datas.size());
 			for (RelationChangedData data : _datas)
 				writeRelation(data);
 		}
 		else if ((_mask & SEND_ONE) == SEND_ONE)
 			writeRelation(_datas.get(0));
 		else if ((_mask & SEND_DEFAULT) == SEND_DEFAULT)
-			writeD(_datas.get(0).objectId);
+			packetWriter.writeD(_datas.get(0).objectId);
 	}
 
 	private void writeRelation(RelationChangedData data)
 	{
-		writeD(data.objectId);
-		writeQ(data.relation);
-		writeC(data.isAutoAttackable);
-		writeD(data.karma);
-		writeC(data.pvpFlag);
+		packetWriter.writeD(data.objectId);
+		packetWriter.writeQ(data.relation);
+		packetWriter.writeC(data.isAutoAttackable);
+		packetWriter.writeD(data.karma);
+		packetWriter.writeC(data.pvpFlag);
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +28,7 @@ import l2s.gameserver.templates.player.PlayerTemplate;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.Util;
 
-public class CharacterCreate extends L2GameClientPacket
+public class CharacterCreate implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(CharacterCreate.class);
 
@@ -38,26 +41,26 @@ public class CharacterCreate extends L2GameClientPacket
 	private int _face;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_name = readS();
-		readD(); // race
-		_sex = readD();
-		_classId = readD();
-		readD(); // int
-		readD(); // str
-		readD(); // con
-		readD(); // men
-		readD(); // dex
-		readD(); // wit
-		_hairStyle = readD();
-		_hairColor = readD();
-		_face = readD();
+		_name = packet.readS();
+		packet.readD(); // race
+		_sex = packet.readD();
+		_classId = packet.readD();
+		packet.readD(); // int
+		packet.readD(); // str
+		packet.readD(); // con
+		packet.readD(); // men
+		packet.readD(); // dex
+		packet.readD(); // wit
+		_hairStyle = packet.readD();
+		_hairColor = packet.readD();
+		_face = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		ClassId cid = ClassId.valueOf(_classId);
 		if (cid == null || !cid.isOfLevel(ClassLevel.NONE))
@@ -69,31 +72,31 @@ public class CharacterCreate extends L2GameClientPacket
 		if (CharacterDAO.getInstance().getObjectIdByName(_name) > 0)
 			return;
 
-		if (Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT != 0 && CharacterDAO.getInstance().accountCharNumber(getClient().getLogin()) >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT)
+		if (Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT != 0 && CharacterDAO.getInstance().accountCharNumber(client.getLogin()) >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT)
 			return;
 
 		if (_face > 2 || _face < 0)
 		{
 			_log.warn("Character Creation Failure: Character face " + _face + " is invalid. Possible client hack. " + getClient());
-			sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
+			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
 		if (_hairStyle < 0 || (_sex == 0 && _hairStyle > 4) || (_sex != 0 && _hairStyle > 6))
 		{
 			_log.warn("Character Creation Failure: Character hair style " + _hairStyle + " is invalid. Possible client hack. " + getClient());
-			sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
+			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
 		if (_hairColor > 3 || _hairColor < 0)
 		{
 			_log.warn("Character Creation Failure: Character hair color " + _hairColor + " is invalid. Possible client hack. " + getClient());
-			sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
+			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
-		Player newChar = Player.create(_classId, _sex, getClient().getLogin(), _name, _hairStyle, _hairColor, _face);
+		Player newChar = Player.create(_classId, _sex, client.getLogin(), _name, _hairStyle, _hairColor, _face);
 		if (newChar == null)
 		{
 			_log.warn("Character Creation Failure: Player.create returned null. Possible client hack. " + getClient());
@@ -108,11 +111,11 @@ public class CharacterCreate extends L2GameClientPacket
 			return;
 		}
 
-		newChar.storeLastIpAndHWID(getClient().getIpAddr(), getClient().getHWID());
+		newChar.storeLastIpAndHWID(client.getIpAddr(), client.getHWID());
 
 		sendPacket(CharacterCreateSuccessPacket.STATIC);
 
-		getClient().setCharSelection(CharacterSelectionInfo.loadCharacterSelectInfo(getClient().getLogin()));
+		client.setCharSelection(CharacterSelectionInfo.loadCharacterSelectInfo(client.getLogin()));
 	}
 
 	public static boolean initNewChar(Player newChar)

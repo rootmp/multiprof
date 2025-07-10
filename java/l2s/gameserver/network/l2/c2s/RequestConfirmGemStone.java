@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -8,7 +11,7 @@ import l2s.gameserver.network.l2.s2c.ExPutCommissionResultForVariationMake;
 import l2s.gameserver.templates.item.support.variation.VariationFee;
 import l2s.gameserver.utils.VariationUtils;
 
-public class RequestConfirmGemStone extends L2GameClientPacket
+public class RequestConfirmGemStone implements IClientIncomingPacket
 {
 	// format: (ch)dddd
 	private int _targetItemObjId;
@@ -17,22 +20,22 @@ public class RequestConfirmGemStone extends L2GameClientPacket
 	private long _feeItemCount;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_targetItemObjId = readD();
-		_refinerItemObjId = readD();
-		_feeItemObjectId = readD();
-		_feeItemCount = readQ();
+		_targetItemObjId = packet.readD();
+		_refinerItemObjId = packet.readD();
+		_feeItemObjectId = packet.readD();
+		_feeItemCount = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if (_feeItemCount <= 0)
 			return;
 
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

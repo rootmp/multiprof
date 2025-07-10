@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.Warehouse.ItemClassComparator;
 import l2s.gameserver.model.items.Warehouse.WarehouseType;
 
-public class WareHouseDepositListPacket extends L2GameServerPacket
+public class WareHouseDepositListPacket implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final int _whtype;
@@ -50,25 +51,25 @@ public class WareHouseDepositListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
-		writeH(_whtype);
+		packetWriter.writeC(_type);
+		packetWriter.writeH(_whtype);
 		if (_type == 1)
 		{
-			writeQ(_adena);
-			writeH(_depositedItemsCount); // Количество вещей которые уже есть в банке.
-			writeD(0x00);
-			writeD(0x00);
+			packetWriter.writeQ(_adena);
+			packetWriter.writeH(_depositedItemsCount); // Количество вещей которые уже есть в банке.
+			packetWriter.writeD(0x00);
+			packetWriter.writeD(0x00);
 		}
 		else if (_type == 2)
 		{
-			writeH(0);// TODO [Bonux]
-			writeD(_itemList.size());
+			packetWriter.writeH(0);// TODO [Bonux]
+			packetWriter.writeD(_itemList.size());
 			for (ItemInfo item : _itemList)
 			{
 				writeItemInfo(item);
-				writeD(item.getObjectId());
+				packetWriter.writeD(item.getObjectId());
 			}
 		}
 	}

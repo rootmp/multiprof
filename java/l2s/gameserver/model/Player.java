@@ -259,6 +259,7 @@ import l2s.gameserver.model.quest.QuestState;
 import l2s.gameserver.network.authcomm.AuthServerCommunication;
 import l2s.gameserver.network.authcomm.gs2as.BonusRequest;
 import l2s.gameserver.network.authcomm.gs2as.ReduceAccountPoints;
+import l2s.gameserver.network.l2.FloodProtector;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.ChatType;
 import l2s.gameserver.network.l2.components.CustomMessage;
@@ -267,8 +268,9 @@ import l2s.gameserver.network.l2.components.NpcString;
 import l2s.gameserver.network.l2.components.SceneMovie;
 import l2s.gameserver.network.l2.components.StatusUpdate;
 import l2s.gameserver.network.l2.components.SystemMsg;
+import l2s.gameserver.network.l2.components.hwid.HwidHolder;
 import l2s.gameserver.network.l2.s2c.AbnormalStatusUpdatePacket;
-import l2s.gameserver.network.l2.s2c.AcquireSkillList;
+import l2s.gameserver.network.l2.s2c.AcquireSkillListPacket;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
 import l2s.gameserver.network.l2.s2c.AutoAttackStartPacket;
 import l2s.gameserver.network.l2.s2c.CameraModePacket;
@@ -856,7 +858,9 @@ public final class Player extends Playable implements PlayerGroup
 	public final long MAX_MAGIC_LAMP_POINTS = 3_000_000_000L;
 	public final int MAX_RANDOM_CRAFT_POINTS = 99_000_000;
 	private int _honorCoins;
-
+	
+	private final HwidHolder hwidHolder;
+	
 	private LimitedShopContainer _limitedShop = null;
 
 	private ScheduledFuture<?> _bowTask = null;
@@ -891,52 +895,19 @@ public final class Player extends Playable implements PlayerGroup
 	 * Конструктор для Player. Напрямую не вызывается, для создания игрока
 	 * используется PlayerManager.create
 	 */
-	public Player(final int objectId, final PlayerTemplate template, final String accountName)
+	public Player(final int objectId, final PlayerTemplate template, final String accountName, HwidHolder hwidHolder)
 	{
 		super(objectId, template);
-
-		if (!GameServer.DEVELOP)
-		{
-			if (CLIENTS_HASHCODE != CLIENTS.hashCode() || !CLIENTS.containsKey(GameServer.getInstance().getLicenseHost()))
-			{
-				return;
-			}
-		}
-
+		this.hwidHolder = hwidHolder;
 		_baseTemplate = template;
 		_login = accountName;
 		_lastNotAfkTime = 0L;
 	}
 
-	/**
-	 * Constructor<?> of Player (use L2Character constructor).<BR>
-	 * <BR>
-	 * <p/>
-	 * <B><U> Actions</U> :</B><BR>
-	 * <BR>
-	 * <li>Call the L2Character constructor to create an empty _skills slot and copy
-	 * basic Calculator set to this Player</li>
-	 * <li>Create a L2Radar object</li>
-	 * <li>Retrieve from the database all items of this Player and add them to
-	 * _inventory</li>
-	 * <p/>
-	 * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T SET the account
-	 * name of the Player</B></FONT><BR>
-	 * <BR>
-	 * 
-	 * @param objectId Identifier of the object to initialized
-	 * @param template The PlayerTemplate to apply to the Player
-	 */
-	private Player(final FakePlayerAITemplate fakeAiTemplate, final int objectId, final PlayerTemplate template)
-	{
-		this(objectId, template, null);
 
-		_ai = new FakeAI(this, fakeAiTemplate);
-	}
-
-	private Player(final int objectId, final PlayerTemplate template)
+	private Player(final int objectId, final PlayerTemplate template, HwidHolder hwidHolder)
 	{
-		this(objectId, template, null);
+		this(objectId, template, null, hwidHolder);
 
 		_ai = new PlayerAI(this);
 
@@ -3505,7 +3476,7 @@ public final class Player extends Playable implements PlayerGroup
 	public void sendSkillList(int learnedSkillId)
 	{
 		sendPacket(new SkillListPacket(this, learnedSkillId));
-		sendPacket(new AcquireSkillList(this));
+		sendPacket(new AcquireSkillListPacket(this));
 	}
 
 	public void sendSkillList()
@@ -5742,7 +5713,7 @@ public final class Player extends Playable implements PlayerGroup
 		}
 	}
 
-	public static Player create(int classId, int sex, String accountName, final String name, final int hairStyle, final int hairColor, final int face)
+	public static Player create(HwidHolder hwidHolder, int classId, int sex, String accountName, final String name, final int hairStyle, final int hairColor, final int face)
 	{
 		final ClassId classID = ClassId.valueOf(classId);
 		if (classID == null || classID.isDummy() || !classID.isOfLevel(ClassLevel.NONE))
@@ -5751,7 +5722,7 @@ public final class Player extends Playable implements PlayerGroup
 		final PlayerTemplate template = PlayerTemplateHolder.getInstance().getPlayerTemplate(classID.getRace(), classID, Sex.VALUES[sex]);
 
 		// Create a new Player with an account name
-		final Player player = new Player(IdFactory.getInstance().getNextId(), template, accountName);
+		final Player player = new Player(IdFactory.getInstance().getNextId(), template, accountName, hwidHolder);
 
 		player.setName(name);
 		player.setTitle("");
@@ -5823,7 +5794,7 @@ public final class Player extends Playable implements PlayerGroup
 		return player;
 	}
 
-	public static Player restore(final int objectId, boolean fake)
+	public static Player restore(final int objectId, HwidHolder hwidHolder)
 	{
 		if (GameObjectsStorage.getPlayers(false, false).size() >= GameServer.getInstance().getOnlineLimit())
 		{
@@ -5852,23 +5823,9 @@ public final class Player extends Playable implements PlayerGroup
 			{
 				final ClassId classId = ClassId.valueOf(rset2.getInt("class_id"));
 				final PlayerTemplate template = PlayerTemplateHolder.getInstance().getPlayerTemplate(classId.getRace(), classId, Sex.VALUES[rset.getInt("sex")]);
-				;
 
-				if (fake)
-				{
-					final FakePlayerAITemplate fakeAiTemplate = FakePlayersHolder.getInstance().getAITemplate(classId.getRace(), classId.getType());
-					if (fakeAiTemplate == null)
-					{
-						_log.warn("Player: Not found fake player AI template for class ID[" + classId.getId() + "] (default class ID[" + classId.getId() + "])!");
-						return null;
-					}
-
-					player = new Player(fakeAiTemplate, objectId, template);
-				}
-				else
-				{
-					player = new Player(objectId, template);
-				}
+				player = new Player(objectId, template, hwidHolder);
+				
 
 				if (!player.getSubClassList().restore())
 				{
@@ -6229,7 +6186,8 @@ public final class Player extends Playable implements PlayerGroup
 				player.checkMonthlyCounters();
 
 				player.setTeleportFavorites(CharacterTeleportsDAO.getInstance().restore(player.getObjectId()));
-
+				player.setVar("last_hwid", hwidHolder.asString());
+				
 				player.setRandomCraftList(CharacterRandomCraftDAO.getInstance().restore(player.getObjectId()));
 				player.setCollectionFavorites(CharacterCollectionFavoritesDAO.getInstance().restore(player.getObjectId()));
 
@@ -13477,10 +13435,6 @@ public final class Player extends Playable implements PlayerGroup
 		return null;
 	}
 
-	public String getHWID()
-	{
-		return getNetConnection().getHWID();
-	}
 
 	public boolean isInAwayingMode()
 	{
@@ -15475,5 +15429,10 @@ public final class Player extends Playable implements PlayerGroup
 	public Map<ItemHolder, Integer> getItems()
 	{
 		return _peelitems;
+	}
+
+	public String getLastHwid()
+	{
+		return getVar("last_hwid","");
 	}
 }

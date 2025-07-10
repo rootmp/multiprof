@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Henna;
 import l2s.gameserver.model.actor.instances.player.HennaList;
 import l2s.gameserver.templates.henna.HennaTemplate;
 
-public class HennaUnequipListPacket extends L2GameServerPacket
+public class HennaUnequipListPacket implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final long _adena;
@@ -19,19 +20,19 @@ public class HennaUnequipListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeQ(_adena);
-		writeD(_hennaList.getFreeSize());
-		writeD(_hennaList.size());
+		packetWriter.writeQ(_adena);
+		packetWriter.writeD(_hennaList.getFreeSize());
+		packetWriter.writeD(_hennaList.size());
 		for (Henna henna : _hennaList.values())
 		{
 			HennaTemplate template = henna.getTemplate();
-			writeD(template.getSymbolId()); // symbolid
-			writeD(template.getDyeId()); // itemid of dye
-			writeQ(template.getRemoveCount());
-			writeQ(template.getRemovePrice());
-			writeD(template.isForThisClass(_player) ? 0x01 : 0x00);
+			packetWriter.writeD(template.getSymbolId()); // symbolid
+			packetWriter.writeD(template.getDyeId()); // itemid of dye
+			packetWriter.writeQ(template.getRemoveCount());
+			packetWriter.writeQ(template.getRemovePrice());
+			packetWriter.writeD(template.isForThisClass(_player) ? 0x01 : 0x00);
 		}
 	}
 }

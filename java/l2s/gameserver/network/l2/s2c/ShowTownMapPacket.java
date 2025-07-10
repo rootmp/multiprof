@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ShowTownMapPacket extends L2GameServerPacket
+public class ShowTownMapPacket implements IClientOutgoingPacket
 {
 	/**
 	 * Format: csdd
@@ -18,10 +19,10 @@ public class ShowTownMapPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_texture);
-		writeD(_x);
-		writeD(_y);
+		packetWriter.writeS(_texture);
+		packetWriter.writeD(_x);
+		packetWriter.writeD(_y);
 	}
 }

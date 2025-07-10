@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.model.Player;
  * Created by IntelliJ IDEA. User: Cain Date: 25.05.12 Time: 21:05 запрос
  * выбранному чару на вступление в пати
  */
-public class ExRegistWaitingSubstituteOk extends L2GameServerPacket
+public class ExRegistWaitingSubstituteOk implements IClientOutgoingPacket
 {
 	private final Player _partyLeader;
 
@@ -16,7 +17,7 @@ public class ExRegistWaitingSubstituteOk extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		/*
 		 * TODO

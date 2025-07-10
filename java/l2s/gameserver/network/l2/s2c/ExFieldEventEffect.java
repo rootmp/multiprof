@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExFieldEventEffect extends L2GameServerPacket
+public class ExFieldEventEffect implements IClientOutgoingPacket
 {
 	private final int _unk;
 
@@ -13,8 +14,8 @@ public class ExFieldEventEffect extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_unk);
+		packetWriter.writeD(_unk);
 	}
 }

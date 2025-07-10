@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.ExBR_NewIConCashBtnWnd;
@@ -6,18 +9,18 @@ import l2s.gameserver.network.l2.s2c.ExBR_NewIConCashBtnWnd;
 /**
  * @author Bonux
  **/
-public class RequestBR_NewIConCashBtnWnd extends L2GameClientPacket
+public class RequestBR_NewIConCashBtnWnd implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

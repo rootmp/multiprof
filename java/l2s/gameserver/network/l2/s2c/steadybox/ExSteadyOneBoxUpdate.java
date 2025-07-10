@@ -9,7 +9,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExSteadyOneBoxUpdate extends L2GameServerPacket
+public class ExSteadyOneBoxUpdate implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _slotId;
@@ -24,7 +24,7 @@ public class ExSteadyOneBoxUpdate extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_reward)
 		{
@@ -40,25 +40,25 @@ public class ExSteadyOneBoxUpdate extends L2GameServerPacket
 				else
 					boxType = 3;
 				_player.setVar(PlayerVariables.SB_BOX_TYPE + "_" + _slotId, boxType);
-				writeD(_player.getVarInt(PlayerVariables.SB_KILLED_MOBS, 0));
-				writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0));
-				writeH(14);
-				writeD(_slotId);
-				writeD(2); // open type - 1 not available, 2- can start timer, 3 - timer going, 4 - can get
+				packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_MOBS, 0));
+				packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0));
+				packetWriter.writeH(14);
+				packetWriter.writeD(_slotId);
+				packetWriter.writeD(2); // open type - 1 not available, 2- can start timer, 3 - timer going, 4 - can get
 							// reward
-				writeD(boxType); // box type, 1 - basic, 2 - advanced, 3 - top
-				writeD(0); // timer in seconds to can get reward
+				packetWriter.writeD(boxType); // box type, 1 - basic, 2 - advanced, 3 - top
+				packetWriter.writeD(0); // timer in seconds to can get reward
 			}
 			else
 			{
 				_player.setVar(PlayerVariables.SB_REWARD_TIME + "_" + _slotId, -2);
-				writeD(_player.getVarInt(PlayerVariables.SB_KILLED_MOBS, 0));
-				writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0));
-				writeH(14);
-				writeD(_slotId);
-				writeD(1);
-				writeD(0);
-				writeD(0);
+				packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_MOBS, 0));
+				packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0));
+				packetWriter.writeH(14);
+				packetWriter.writeD(_slotId);
+				packetWriter.writeD(1);
+				packetWriter.writeD(0);
+				packetWriter.writeD(0);
 			}
 		}
 		else if (_reset)
@@ -66,13 +66,13 @@ public class ExSteadyOneBoxUpdate extends L2GameServerPacket
 			int boxType = _player.getVarInt(PlayerVariables.SB_BOX_TYPE + "_" + _slotId, 1);
 			_player.setVar(PlayerVariables.SB_REWARD_TIME + "_" + _slotId, 0);
 
-			writeD(_player.getVarInt(PlayerVariables.SB_KILLED_MOBS, 0));
-			writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0));
-			writeH(14);
-			writeD(_slotId);
-			writeD(4);
-			writeD(boxType);
-			writeD(0);
+			packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_MOBS, 0));
+			packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0));
+			packetWriter.writeH(14);
+			packetWriter.writeD(_slotId);
+			packetWriter.writeD(4);
+			packetWriter.writeD(boxType);
+			packetWriter.writeD(0);
 		}
 		else
 		{
@@ -92,13 +92,13 @@ public class ExSteadyOneBoxUpdate extends L2GameServerPacket
 
 			_player.setVar(PlayerVariables.SB_REWARD_TIME + "_" + _slotId, System.currentTimeMillis() + (timer * 1000));
 
-			writeD(_player.getVarInt(PlayerVariables.SB_KILLED_MOBS, 0));
-			writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0));
-			writeH(14);
-			writeD(_slotId);
-			writeD(3);
-			writeD(boxType);
-			writeD(timer);
+			packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_MOBS, 0));
+			packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0));
+			packetWriter.writeH(14);
+			packetWriter.writeD(_slotId);
+			packetWriter.writeD(3);
+			packetWriter.writeD(boxType);
+			packetWriter.writeD(timer);
 		}
 	}
 }

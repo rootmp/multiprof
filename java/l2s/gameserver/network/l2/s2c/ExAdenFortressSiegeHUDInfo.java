@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,7 +8,7 @@ import l2s.gameserver.model.entity.events.impl.FortressSiegeEvent;
 /**
  * @author nexvill
  */
-public class ExAdenFortressSiegeHUDInfo extends L2GameServerPacket
+public class ExAdenFortressSiegeHUDInfo implements IClientOutgoingPacket
 {
 	private static final int PREPARE_STATUS = 0;
 	private static final int IN_PROGRESS_STATUS = 1;
@@ -38,11 +39,11 @@ public class ExAdenFortressSiegeHUDInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(fortressId);
-		writeD(status);
-		writeD(currentTime);
-		writeD(prepareLeftTime);
+		packetWriter.writeD(fortressId);
+		packetWriter.writeD(status);
+		packetWriter.writeD(currentTime);
+		packetWriter.writeD(prepareLeftTime);
 	}
 }

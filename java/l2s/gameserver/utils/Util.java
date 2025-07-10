@@ -370,4 +370,9 @@ public class Util
 		eventName = eventName.substring(0, eventName.length() - 5);
 		return eventName;
 	}
+
+	public static boolean equalsIgnoreCase(String str1, String str2)
+	{
+		return str1 == null ? str2 == null : str1.equalsIgnoreCase(str2);
+	}
 }

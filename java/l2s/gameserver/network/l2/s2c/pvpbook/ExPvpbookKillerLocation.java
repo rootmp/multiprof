@@ -3,7 +3,7 @@ package l2s.gameserver.network.l2.s2c.pvpbook;
 import l2s.gameserver.geometry.ILocation;
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExPvpbookKillerLocation extends L2GameServerPacket
+public class ExPvpbookKillerLocation implements IClientOutgoingPacket
 {
 	private final String killerName;
 	private final ILocation killerLoc;
@@ -18,8 +18,8 @@ public class ExPvpbookKillerLocation extends L2GameServerPacket
 	public void writeImpl()
 	{
 		writeString(killerName);
-		writeD(killerLoc.getX());
-		writeD(killerLoc.getY());
-		writeD(killerLoc.getZ());
+		packetWriter.writeD(killerLoc.getX());
+		packetWriter.writeD(killerLoc.getY());
+		packetWriter.writeD(killerLoc.getZ());
 	}
 }

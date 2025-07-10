@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.List;
 
@@ -17,26 +20,26 @@ import l2s.gameserver.templates.item.product.ProductItemComponent;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.Log;
 
-public class RequestExBR_BuyProduct extends L2GameClientPacket
+public class RequestExBR_BuyProduct implements IClientIncomingPacket
 {
 	private int _productId;
 	private int _count;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_productId = readD();
-		_count = readD();
+		_productId = packet.readD();
+		_count = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if (!Config.EX_USE_PRIME_SHOP)
 			return;
 
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 
 		if (activeChar == null)
 			return;

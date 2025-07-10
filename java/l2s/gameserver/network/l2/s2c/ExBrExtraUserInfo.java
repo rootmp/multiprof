@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 //@Deprecated
-public class ExBrExtraUserInfo extends L2GameServerPacket
+public class ExBrExtraUserInfo implements IClientOutgoingPacket
 {
 	private int _objectId;
 	private int _effect3;
@@ -17,10 +18,10 @@ public class ExBrExtraUserInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId); // object id of player
-		writeD(_effect3); // event effect id
-		writeC(_lectureMark);
+		packetWriter.writeD(_objectId); // object id of player
+		packetWriter.writeD(_effect3); // event effect id
+		packetWriter.writeC(_lectureMark);
 	}
 }

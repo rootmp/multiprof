@@ -7,31 +7,31 @@ import l2s.gameserver.network.l2.s2c.randomcraft.ExCraftExtract;
 /**
  * @author nexvill
  */
-public class RequestExCraftExtract extends L2GameClientPacket
+public class RequestExCraftExtract implements IClientIncomingPacket
 {
 	private int _count;
 	private int[] _objectId = new int[128];
 	private int[] _itemCount = new int[128];
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_count = readD();
+		_count = packet.readD();
 		for (int i = 0; i < _count; i++)
 		{
-			int id = readD();
-			int cnt = readD();
+			int id = packet.readD();
+			int cnt = packet.readD();
 			_objectId[i] = id;
 			_itemCount[i] = cnt;
-			readD(); // 0
+			packet.readD(); // 0
 		}
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

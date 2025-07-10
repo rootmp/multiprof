@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.items.ItemInstance;
 /**
  * @author Hl4p3x
  */
-public class InventoryUpdatePacket extends L2GameServerPacket
+public class InventoryUpdatePacket implements IClientOutgoingPacket
 {
 	public static final int UNCHANGED = 0;
 	public static final int ADDED = 1;
@@ -44,15 +45,15 @@ public class InventoryUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// 140 PROTOCOL
-		writeC(0x00);
-		writeD(0x00);
-		writeD(_items.size());
+		packetWriter.writeC(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(_items.size());
 		for (ItemInfo item : _items)
 		{
-			writeH(item.getLastChange()); // Update type : 01-add, 02-modify, 03-remove
+			packetWriter.writeH(item.getLastChange()); // Update type : 01-add, 02-modify, 03-remove
 			writeItemInfo(item);
 		}
 	}

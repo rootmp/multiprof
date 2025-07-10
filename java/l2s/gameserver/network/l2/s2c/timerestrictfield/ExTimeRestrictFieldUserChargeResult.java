@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExTimeRestrictFieldUserChargeResult extends L2GameServerPacket
+public class ExTimeRestrictFieldUserChargeResult implements IClientOutgoingPacket
 {
 	private final int _fieldId;
 	private final int _remainTime;
@@ -19,10 +19,10 @@ public class ExTimeRestrictFieldUserChargeResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_fieldId);
-		writeD(_remainTime);
-		writeD(_remainTimeBase);
+		packetWriter.writeD(_fieldId);
+		packetWriter.writeD(_remainTime);
+		packetWriter.writeD(_remainTimeBase);
 	}
 }

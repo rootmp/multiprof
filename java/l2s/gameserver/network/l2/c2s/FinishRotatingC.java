@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.FinishRotatingPacket;
@@ -6,24 +9,24 @@ import l2s.gameserver.network.l2.s2c.FinishRotatingPacket;
 /**
  * format: cdd
  */
-public class FinishRotatingC extends L2GameClientPacket
+public class FinishRotatingC implements IClientIncomingPacket
 {
 	private int _degree;
 	@SuppressWarnings("unused")
 	private int _unknown;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_degree = readD();
-		_unknown = readD();
+		_degree = packet.readD();
+		_unknown = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 		activeChar.broadcastPacket(new FinishRotatingPacket(activeChar, _degree, 0));

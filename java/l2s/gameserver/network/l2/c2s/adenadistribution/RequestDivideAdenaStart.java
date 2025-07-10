@@ -12,18 +12,18 @@ import l2s.gameserver.network.l2.s2c.adenadistribution.ExDivideAdenaStart;
 /**
  * @author Sdw
  */
-public class RequestDivideAdenaStart extends L2GameClientPacket
+public class RequestDivideAdenaStart implements IClientIncomingPacket
 {
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 		{
 			return;

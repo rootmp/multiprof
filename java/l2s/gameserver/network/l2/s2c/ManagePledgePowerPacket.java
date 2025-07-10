@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.RankPrivs;
 
-public class ManagePledgePowerPacket extends L2GameServerPacket
+public class ManagePledgePowerPacket implements IClientOutgoingPacket
 {
 	private int _action, _clanId, privs;
 
@@ -17,10 +18,10 @@ public class ManagePledgePowerPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_clanId);
-		writeD(_action);
-		writeD(privs);
+		packetWriter.writeD(_clanId);
+		packetWriter.writeD(_action);
+		packetWriter.writeD(privs);
 	}
 }

@@ -9,7 +9,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPledgeContributionList extends L2GameServerPacket
+public class ExPledgeContributionList implements IClientOutgoingPacket
 {
 	private Clan _clan;
 
@@ -19,21 +19,21 @@ public class ExPledgeContributionList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_clan.getAllMembers().size());
+		packetWriter.writeD(_clan.getAllMembers().size());
 		for (UnitMember member : _clan.getAllMembers())
 		{
 			writeString(member.getName());
 			if (CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.WEEKLY_CONTRIBUTION) != null && CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.TOTAL_CONTRIBUTION) != null)
 			{
-				writeD(Integer.parseInt(CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.WEEKLY_CONTRIBUTION)));
-				writeD(Integer.parseInt(CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.TOTAL_CONTRIBUTION)));
+				packetWriter.writeD(Integer.parseInt(CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.WEEKLY_CONTRIBUTION)));
+				packetWriter.writeD(Integer.parseInt(CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.TOTAL_CONTRIBUTION)));
 			}
 			else
 			{
-				writeD(0);
-				writeD(0);
+				packetWriter.writeD(0);
+				packetWriter.writeD(0);
 			}
 		}
 	}

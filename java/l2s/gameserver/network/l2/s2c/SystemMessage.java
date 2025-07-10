@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.skills.SkillInfo;
 
 //@Deprecated
-public class SystemMessage extends L2GameServerPacket
+public class SystemMessage implements IClientOutgoingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(L2GameServerPacket.class);
 
@@ -14239,24 +14240,24 @@ public class SystemMessage extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		Player activeChar = getClient().getActiveChar();
 		if (activeChar == null)
 			return;
 
-		writeH(_messageId);
-		writeC(args.size());
+		packetWriter.writeH(_messageId);
+		packetWriter.writeC(args.size());
 		for (Arg e : args)
 		{
-			writeC(e.type);
+			packetWriter.writeC(e.type);
 
 			switch (e.type)
 			{
 				case TYPE_TEXT:
 				case TYPE_PLAYER_NAME:
 				{
-					writeS((String) e.obj);
+					packetWriter.writeS((String) e.obj);
 					break;
 				}
 				case TYPE_NUMBER:
@@ -14269,39 +14270,39 @@ public class SystemMessage extends L2GameServerPacket
 				case TYPE_DOOR_NAME:
 				case TYPE_CLASS_NAME:
 				{
-					writeD(((Number) e.obj).intValue());
+					packetWriter.writeD(((Number) e.obj).intValue());
 					break;
 				}
 				case TYPE_SKILL_NAME:
 				{
 					int[] skill = (int[]) e.obj;
-					writeD(skill[0]); // id
-					writeH(skill[1]);
+					packetWriter.writeD(skill[0]); // id
+					packetWriter.writeH(skill[1]);
 					break;
 				}
 				case TYPE_LONG:
 				{
-					writeQ((Long) e.obj);
+					packetWriter.writeQ((Long) e.obj);
 					break;
 				}
 				case TYPE_ZONE_NAME:
 				{
 					Location coord = (Location) e.obj;
-					writeD(coord.x);
-					writeD(coord.y);
-					writeD(coord.z);
+					packetWriter.writeD(coord.x);
+					packetWriter.writeD(coord.y);
+					packetWriter.writeD(coord.z);
 					break;
 				}
 				case TYPE_UNKNOWN_8:
 				{
-					writeD(0x00); // ?
-					writeH(0x00); // ?
-					writeH(0x00); // ?
+					packetWriter.writeD(0x00); // ?
+					packetWriter.writeH(0x00); // ?
+					packetWriter.writeH(0x00); // ?
 					break;
 				}
 				case TYPE_BYTE:
 				{
-					writeC(((Number) e.obj).byteValue());
+					packetWriter.writeC(((Number) e.obj).byteValue());
 					break;
 				}
 			}

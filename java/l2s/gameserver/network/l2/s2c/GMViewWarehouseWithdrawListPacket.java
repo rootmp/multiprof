@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 
-public class GMViewWarehouseWithdrawListPacket extends L2GameServerPacket
+public class GMViewWarehouseWithdrawListPacket implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final ItemInstance[] _items;
@@ -19,23 +20,23 @@ public class GMViewWarehouseWithdrawListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
+		packetWriter.writeC(_type);
 		if (_type == 1)
 		{
-			writeS(_charName);
-			writeQ(_charAdena);
-			writeD(_items.length);
+			packetWriter.writeS(_charName);
+			packetWriter.writeQ(_charAdena);
+			packetWriter.writeD(_items.length);
 		}
 		else if (_type == 2)
 		{
-			writeD(_items.length);
-			writeD(_items.length);
+			packetWriter.writeD(_items.length);
+			packetWriter.writeD(_items.length);
 			for (ItemInstance temp : _items)
 			{
 				writeItemInfo(temp);
-				writeD(temp.getObjectId());
+				packetWriter.writeD(temp.getObjectId());
 			}
 		}
 	}

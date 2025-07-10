@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * dd dd
  */
-public class JoinPartyPacket extends L2GameServerPacket
+public class JoinPartyPacket implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket SUCCESS = new JoinPartyPacket(1);
 	public static final L2GameServerPacket FAIL = new JoinPartyPacket(0);
@@ -16,8 +17,8 @@ public class JoinPartyPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_response);
+		packetWriter.writeD(_response);
 	}
 }

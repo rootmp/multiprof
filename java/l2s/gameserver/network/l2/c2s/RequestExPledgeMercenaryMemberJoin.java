@@ -1,11 +1,14 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
-public class RequestExPledgeMercenaryMemberJoin extends L2GameClientPacket
+public class RequestExPledgeMercenaryMemberJoin implements IClientIncomingPacket
 {
 	private int charObjectId;
 	private boolean join;
@@ -13,19 +16,19 @@ public class RequestExPledgeMercenaryMemberJoin extends L2GameClientPacket
 	private int clanId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		charObjectId = readD();
+		charObjectId = packet.readD();
 		join = readD() > 0;
-		castleId = readD();
-		clanId = readD();
+		castleId = packet.readD();
+		clanId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || activeChar.getObjectId() != charObjectId)
 			return;
 

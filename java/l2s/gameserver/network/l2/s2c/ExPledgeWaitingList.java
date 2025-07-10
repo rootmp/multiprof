@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.model.clansearch.ClanSearchPlayer;
  * @author GodWorld
  * @reworked by Bonux
  **/
-public class ExPledgeWaitingList extends L2GameServerPacket
+public class ExPledgeWaitingList implements IClientOutgoingPacket
 {
 	private final Collection<ClanSearchPlayer> _applicants;
 
@@ -19,15 +20,15 @@ public class ExPledgeWaitingList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_applicants.size());
+		packetWriter.writeD(_applicants.size());
 		for (ClanSearchPlayer applicant : _applicants)
 		{
-			writeD(applicant.getCharId());
-			writeS(applicant.getName());
-			writeD(applicant.getClassId());
-			writeD(applicant.getLevel());
+			packetWriter.writeD(applicant.getCharId());
+			packetWriter.writeS(applicant.getName());
+			packetWriter.writeD(applicant.getClassId());
+			packetWriter.writeD(applicant.getLevel());
 		}
 	}
 }

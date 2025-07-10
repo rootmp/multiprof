@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
-public class StartRotatingPacket extends L2GameServerPacket
+public class StartRotatingPacket implements IClientOutgoingPacket
 {
 	private int _charId, _degree, _side, _speed;
 
@@ -15,11 +16,11 @@ public class StartRotatingPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_charId);
-		writeD(_degree);
-		writeD(_side);
-		writeD(_speed);
+		packetWriter.writeD(_charId);
+		packetWriter.writeD(_degree);
+		packetWriter.writeD(_side);
+		packetWriter.writeD(_speed);
 	}
 }

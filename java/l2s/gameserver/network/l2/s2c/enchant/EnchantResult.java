@@ -2,7 +2,7 @@ package l2s.gameserver.network.l2.s2c.enchant;
 
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class EnchantResult extends L2GameServerPacket
+public class EnchantResult implements IClientOutgoingPacket
 {
 	private final int _resultId, _crystalId;
 	private final long _count;
@@ -47,17 +47,17 @@ public class EnchantResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_resultId);
-		writeD(_crystalId); // item id кристаллов
-		writeQ(_count); // количество кристаллов
-		writeD(_enchantLevel); // уровень заточки
-		writeD(0x00); // uNK
-		writeD(0x00); // uNK
-		writeD(_enchant2); // уровень заточки
-		writeD(0); // unk
-		writeD(0); // unk
-		writeD(0); // unk
+		packetWriter.writeD(_resultId);
+		packetWriter.writeD(_crystalId); // item id кристаллов
+		packetWriter.writeQ(_count); // количество кристаллов
+		packetWriter.writeD(_enchantLevel); // уровень заточки
+		packetWriter.writeD(0x00); // uNK
+		packetWriter.writeD(0x00); // uNK
+		packetWriter.writeD(_enchant2); // уровень заточки
+		packetWriter.writeD(0); // unk
+		packetWriter.writeD(0); // unk
+		packetWriter.writeD(0); // unk
 	}
 }

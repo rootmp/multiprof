@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
@@ -6,23 +9,23 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.Log;
 
-public class RequestCrystallizeItem extends L2GameClientPacket
+public class RequestCrystallizeItem implements IClientIncomingPacket
 {
 	private int _objectId;
 	private long _count;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_objectId = readD();
-		_count = readQ();
+		_objectId = packet.readD();
+		_count = packet.readQ();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 
 		if (activeChar == null)
 			return;

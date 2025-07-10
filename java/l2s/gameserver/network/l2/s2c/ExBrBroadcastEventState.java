@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExBrBroadcastEventState extends L2GameServerPacket
+public class ExBrBroadcastEventState implements IClientOutgoingPacket
 {
 	private int _eventId;
 	private int _eventState;
@@ -39,16 +40,16 @@ public class ExBrBroadcastEventState extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_eventId);
-		writeD(_eventState);
-		writeD(_param0);
-		writeD(_param1);
-		writeD(_param2);
-		writeD(_param3);
-		writeD(_param4);
-		writeS(_param5);
-		writeS(_param6);
+		packetWriter.writeD(_eventId);
+		packetWriter.writeD(_eventState);
+		packetWriter.writeD(_param0);
+		packetWriter.writeD(_param1);
+		packetWriter.writeD(_param2);
+		packetWriter.writeD(_param3);
+		packetWriter.writeD(_param4);
+		packetWriter.writeS(_param5);
+		packetWriter.writeS(_param6);
 	}
 }

@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
-public class NickNameChangedPacket extends L2GameServerPacket
+public class NickNameChangedPacket implements IClientOutgoingPacket
 {
 	private final int objectId;
 	private final String title;
@@ -14,9 +15,9 @@ public class NickNameChangedPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(objectId);
-		writeS(title);
+		packetWriter.writeD(objectId);
+		packetWriter.writeS(title);
 	}
 }

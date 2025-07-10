@@ -5,15 +5,15 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExCollectionCloseUI extends L2GameServerPacket
+public class ExCollectionCloseUI implements IClientOutgoingPacket
 {
 	public ExCollectionCloseUI()
 	{
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(-56); // unknown one byte
+		packetWriter.writeC(-56); // unknown one byte
 	}
 }

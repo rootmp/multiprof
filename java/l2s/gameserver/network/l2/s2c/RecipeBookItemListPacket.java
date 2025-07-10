@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.item.RecipeTemplate;
 
-public class RecipeBookItemListPacket extends L2GameServerPacket
+public class RecipeBookItemListPacket implements IClientOutgoingPacket
 {
 	private Collection<RecipeTemplate> _recipes;
 	private final boolean _isDwarvenCraft;
@@ -22,17 +23,17 @@ public class RecipeBookItemListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_isDwarvenCraft ? 0x00 : 0x01);
-		writeD(_currentMp);
+		packetWriter.writeD(_isDwarvenCraft ? 0x00 : 0x01);
+		packetWriter.writeD(_currentMp);
 
-		writeD(_recipes.size());
+		packetWriter.writeD(_recipes.size());
 
 		for (RecipeTemplate recipe : _recipes)
 		{
-			writeD(recipe.getId());
-			writeD(1); // ??
+			packetWriter.writeD(recipe.getId());
+			packetWriter.writeD(1); // ??
 		}
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.apache.commons.lang3.ArrayUtils;
 
@@ -17,7 +20,7 @@ import l2s.gameserver.utils.NpcUtils;
 /**
  * packet type id 0x37 format: cddb, b - array if(ddd)
  */
-public class RequestSellItem extends L2GameClientPacket
+public class RequestSellItem implements IClientIncomingPacket
 {
 	private int _listId;
 	private int _count;
@@ -25,10 +28,10 @@ public class RequestSellItem extends L2GameClientPacket
 	private long[] _itemQ; // count
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_listId = readD();
-		_count = readD();
+		_listId = packet.readD();
+		_count = packet.readD();
 		if (_count * 16 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
@@ -39,9 +42,9 @@ public class RequestSellItem extends L2GameClientPacket
 
 		for (int i = 0; i < _count; i++)
 		{
-			_items[i] = readD(); // object id
-			readD(); // item id
-			_itemQ[i] = readQ(); // count
+			_items[i] = packet.readD(); // object id
+			packet.readD(); // item id
+			_itemQ[i] = packet.readQ(); // count
 			if (_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
 				_count = 0;
@@ -52,9 +55,9 @@ public class RequestSellItem extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null || _count == 0)
 			return;
 

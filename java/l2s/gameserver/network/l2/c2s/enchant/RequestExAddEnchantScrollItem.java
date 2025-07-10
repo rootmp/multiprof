@@ -12,22 +12,22 @@ import l2s.gameserver.templates.item.support.EnchantScroll;
 /**
  * @author nexvill
  **/
-public class RequestExAddEnchantScrollItem extends L2GameClientPacket
+public class RequestExAddEnchantScrollItem implements IClientIncomingPacket
 {
 	private int _scrollObjectId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_scrollObjectId = readD();
-		readD();
+		_scrollObjectId = packet.readD();
+		packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +14,7 @@ import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.pledge.Alliance;
 import l2s.gameserver.model.pledge.Clan;
 
-public class ExMercenaryCastlewarCastleSiegeDefenderList extends L2GameServerPacket
+public class ExMercenaryCastlewarCastleSiegeDefenderList implements IClientOutgoingPacket
 {
 	private static class DefenderClan
 	{
@@ -70,42 +71,42 @@ public class ExMercenaryCastlewarCastleSiegeDefenderList extends L2GameServerPac
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// dddddd(dSSddddQddSSd)
-		writeD(_id);
-		writeD(0x00); // Owner's view
-		writeD(_registrationValid);
-		writeD(0x00); // Page number
-		writeD(_defenderClans.size());
-		writeD(_defenderClans.size());
+		packetWriter.writeD(_id);
+		packetWriter.writeD(0x00); // Owner's view
+		packetWriter.writeD(_registrationValid);
+		packetWriter.writeD(0x00); // Page number
+		packetWriter.writeD(_defenderClans.size());
+		packetWriter.writeD(_defenderClans.size());
 		for (DefenderClan defenderClan : _defenderClans)
 		{
 			Clan clan = defenderClan._clan;
-			writeD(clan.getClanId());
-			writeS(clan.getName());
-			writeS(clan.getLeaderName());
-			writeD(clan.getCrestId());
-			writeD(defenderClan._time);
-			writeD(defenderClan._type);
-			writeD(defenderClan._mercenaryReward > 0); // Have mercenaries recruting
-			writeQ(defenderClan._mercenaryReward); // Rawarding Rate %
-			writeD(defenderClan._mercenariesCount); // Mercenaries count
+			packetWriter.writeD(clan.getClanId());
+			packetWriter.writeS(clan.getName());
+			packetWriter.writeS(clan.getLeaderName());
+			packetWriter.writeD(clan.getCrestId());
+			packetWriter.writeD(defenderClan._time);
+			packetWriter.writeD(defenderClan._type);
+			packetWriter.writeD(defenderClan._mercenaryReward > 0); // Have mercenaries recruting
+			packetWriter.writeQ(defenderClan._mercenaryReward); // Rawarding Rate %
+			packetWriter.writeD(defenderClan._mercenariesCount); // Mercenaries count
 
 			Alliance alliance = clan.getAlliance();
 			if (alliance != null)
 			{
-				writeD(alliance.getAllyId());
-				writeS(alliance.getAllyName());
-				writeS(alliance.getAllyLeaderName());
-				writeD(alliance.getAllyCrestId());
+				packetWriter.writeD(alliance.getAllyId());
+				packetWriter.writeS(alliance.getAllyName());
+				packetWriter.writeS(alliance.getAllyLeaderName());
+				packetWriter.writeD(alliance.getAllyCrestId());
 			}
 			else
 			{
-				writeD(0x00);
-				writeS(StringUtils.EMPTY);
-				writeS(StringUtils.EMPTY);
-				writeD(0x00);
+				packetWriter.writeD(0x00);
+				packetWriter.writeS(StringUtils.EMPTY);
+				packetWriter.writeS(StringUtils.EMPTY);
+				packetWriter.writeD(0x00);
 			}
 		}
 	}

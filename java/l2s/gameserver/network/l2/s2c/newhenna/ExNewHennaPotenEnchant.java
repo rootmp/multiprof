@@ -4,7 +4,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Henna;
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExNewHennaPotenEnchant extends L2GameServerPacket
+public class ExNewHennaPotenEnchant implements IClientOutgoingPacket
 {
 	private final int cSlotID;
 	private final int nEnchantStep;
@@ -26,14 +26,14 @@ public class ExNewHennaPotenEnchant extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(cSlotID);
-		writeH(nEnchantStep);
-		writeD(nEnchantExp);
-		writeH(nDailyStep);
-		writeH(nDailyCount);
-		writeH(nActiveStep);
-		writeC(cSuccess);
+		packetWriter.writeC(cSlotID);
+		packetWriter.writeH(nEnchantStep);
+		packetWriter.writeD(nEnchantExp);
+		packetWriter.writeH(nDailyStep);
+		packetWriter.writeH(nDailyCount);
+		packetWriter.writeH(nActiveStep);
+		packetWriter.writeC(cSuccess);
 	}
 }

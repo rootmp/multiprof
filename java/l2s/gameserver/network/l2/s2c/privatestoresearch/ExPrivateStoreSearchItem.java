@@ -6,7 +6,7 @@ import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExPrivateStoreSearchItem extends L2GameServerPacket
+public class ExPrivateStoreSearchItem implements IClientOutgoingPacket
 {
 	public static class Item
 	{
@@ -58,22 +58,22 @@ public class ExPrivateStoreSearchItem extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(cCurrentPage);
-		writeC(cMaxPage);
-		writeD(items.size());
+		packetWriter.writeC(cCurrentPage);
+		packetWriter.writeC(cMaxPage);
+		packetWriter.writeD(items.size());
 		for (Item item : items)
 		{
 			writeString(item.getOwnerName());
-			writeC(item.getStoreType());
-			writeQ(item.getTradeItem().getOwnersPrice());
-			writeD(item.getLoc().getX());
-			writeD(item.getLoc().getY());
-			writeD(item.getLoc().getZ());
+			packetWriter.writeC(item.getStoreType());
+			packetWriter.writeQ(item.getTradeItem().getOwnersPrice());
+			packetWriter.writeD(item.getLoc().getX());
+			packetWriter.writeD(item.getLoc().getY());
+			packetWriter.writeD(item.getLoc().getZ());
 			// itemAssemble
 			writeItemInfo(item.getTradeItem(), true, 4);
-			writeD(item.getTradeItem().getObjectId());
+			packetWriter.writeD(item.getTradeItem().getObjectId());
 		}
 	}
 }

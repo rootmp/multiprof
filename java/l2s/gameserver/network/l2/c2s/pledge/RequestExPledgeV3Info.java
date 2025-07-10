@@ -9,21 +9,21 @@ import l2s.gameserver.network.l2.s2c.pledge.ExPledgeV3Info;
 /**
  * @author nexvill
  */
-public class RequestExPledgeV3Info extends L2GameClientPacket
+public class RequestExPledgeV3Info implements IClientIncomingPacket
 {
 	private int page;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		page = readC(); // unk 0
+		page = packet.readC(); // unk 0
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExItemAuctionStatus extends L2GameServerPacket
+public class ExItemAuctionStatus implements IClientOutgoingPacket
 {
 	public ExItemAuctionStatus()
 	{
@@ -11,15 +12,15 @@ public class ExItemAuctionStatus extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(0x00);
-		writeH(0x00);
-		writeH(0x00);
-		writeH(0x00);
-		writeH(0x00);
-		writeH(0x00);
-		writeD(0x00);
-		writeC(0x00);
+		packetWriter.writeH(0x00);
+		packetWriter.writeH(0x00);
+		packetWriter.writeH(0x00);
+		packetWriter.writeH(0x00);
+		packetWriter.writeH(0x00);
+		packetWriter.writeH(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeC(0x00);
 	}
 }

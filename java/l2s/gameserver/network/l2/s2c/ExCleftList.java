@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExCleftList extends L2GameServerPacket
+public class ExCleftList implements IClientOutgoingPacket
 {
 	public static final int CleftType_Close = -1;
 	public static final int CleftType_Total = 0;
@@ -11,9 +12,9 @@ public class ExCleftList extends L2GameServerPacket
 	private int CleftType = 0; // TODO
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(CleftType);
+		packetWriter.writeD(CleftType);
 		switch (CleftType)
 		{
 			case CleftType_Total:

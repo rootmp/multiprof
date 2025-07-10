@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class ShowMinimapPacket extends L2GameServerPacket
+public class ShowMinimapPacket implements IClientOutgoingPacket
 {
 	private int _mapId;
 
@@ -12,9 +13,9 @@ public class ShowMinimapPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_mapId);
-		writeC(0x00);
+		packetWriter.writeD(_mapId);
+		packetWriter.writeC(0x00);
 	}
 }

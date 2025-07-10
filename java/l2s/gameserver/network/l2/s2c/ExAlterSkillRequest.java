@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @autor Monithly
  */
-public class ExAlterSkillRequest extends L2GameServerPacket
+public class ExAlterSkillRequest implements IClientOutgoingPacket
 {
 	private final int _activeId, _requestId, _duration;
 
@@ -15,10 +16,10 @@ public class ExAlterSkillRequest extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_requestId);
-		writeD(_activeId);
-		writeD(_duration);
+		packetWriter.writeD(_requestId);
+		packetWriter.writeD(_activeId);
+		packetWriter.writeD(_duration);
 	}
 }

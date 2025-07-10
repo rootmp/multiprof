@@ -7,7 +7,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExUserWatcherTargetStatus extends L2GameServerPacket
+public class ExUserWatcherTargetStatus implements IClientOutgoingPacket
 {
 	private Spectating _player;
 	boolean _login;
@@ -19,10 +19,10 @@ public class ExUserWatcherTargetStatus extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		writeString(_player.getName()); // name
-		writeD(Config.REQUEST_ID);
-		writeC(_login); // is online?
+		packetWriter.writeD(Config.REQUEST_ID);
+		packetWriter.writeC(_login); // is online?
 	}
 }

@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
  **/
-public class ExUnionPoint extends L2GameServerPacket
+public class ExUnionPoint implements IClientOutgoingPacket
 {
 	private final int _clanId;
 
@@ -14,8 +15,8 @@ public class ExUnionPoint extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_clanId);
+		packetWriter.writeD(_clanId);
 	}
 }

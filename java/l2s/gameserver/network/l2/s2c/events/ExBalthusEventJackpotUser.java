@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExBalthusEventJackpotUser extends L2GameServerPacket
+public class ExBalthusEventJackpotUser implements IClientOutgoingPacket
 {
 	public ExBalthusEventJackpotUser()
 	{
@@ -13,8 +13,8 @@ public class ExBalthusEventJackpotUser extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(1);
+		packetWriter.writeC(1);
 	}
 }

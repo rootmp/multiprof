@@ -5,13 +5,13 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author Sdw
  */
-public class ExDivideAdenaCancel extends L2GameServerPacket
+public class ExDivideAdenaCancel implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket STATIC = new ExDivideAdenaCancel();
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(0x00);
+		packetWriter.writeC(0x00);
 	}
 }

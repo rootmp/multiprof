@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Servitor;
 
-public class ExPartyPetWindowAdd extends L2GameServerPacket
+public class ExPartyPetWindowAdd implements IClientOutgoingPacket
 {
 	private final int ownerId, npcId, type, curHp, maxHp, curMp, maxMp, level;
 	private final int summonId;
@@ -23,17 +24,17 @@ public class ExPartyPetWindowAdd extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(summonId);
-		writeD(npcId);
-		writeD(type);
-		writeD(ownerId);
-		writeS(name);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curMp);
-		writeD(maxMp);
-		writeD(level);
+		packetWriter.writeD(summonId);
+		packetWriter.writeD(npcId);
+		packetWriter.writeD(type);
+		packetWriter.writeD(ownerId);
+		packetWriter.writeS(name);
+		packetWriter.writeD(curHp);
+		packetWriter.writeD(maxHp);
+		packetWriter.writeD(curMp);
+		packetWriter.writeD(maxMp);
+		packetWriter.writeD(level);
 	}
 }

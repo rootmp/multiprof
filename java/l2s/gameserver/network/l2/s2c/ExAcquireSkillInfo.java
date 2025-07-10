@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,7 @@ import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.templates.item.data.AlterItemData;
 import l2s.gameserver.templates.item.data.ItemData;
 
-public class ExAcquireSkillInfo extends L2GameServerPacket
+public class ExAcquireSkillInfo implements IClientOutgoingPacket
 {
 	private final SkillLearn _learn;
 	private final List<AlterItemData> _requiredItems;
@@ -34,22 +35,22 @@ public class ExAcquireSkillInfo extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(_learn.getId());
-		writeD(_learn.getLevel());
-		writeQ(_learn.getCost());
-		writeH(_learn.getMinLevel());
-		writeH(0x00); // Dual-class min level.
-		writeD(_requiredItems.size());
+		packetWriter.writeD(_learn.getId());
+		packetWriter.writeD(_learn.getLevel());
+		packetWriter.writeQ(_learn.getCost());
+		packetWriter.writeH(_learn.getMinLevel());
+		packetWriter.writeH(0x00); // Dual-class min level.
+		packetWriter.writeD(_requiredItems.size());
 		for (ItemData item : _requiredItems)
 		{
-			writeD(item.getId());
-			writeQ(item.getCount());
+			packetWriter.writeD(item.getId());
+			packetWriter.writeQ(item.getCount());
 		}
-		writeD(_blockedSkills.size());
+		packetWriter.writeD(_blockedSkills.size());
 		for (Skill skill : _blockedSkills)
 		{
-			writeD(skill.getId());
-			writeD(skill.getLevel());
+			packetWriter.writeD(skill.getId());
+			packetWriter.writeD(skill.getLevel());
 		}
 	}
 }

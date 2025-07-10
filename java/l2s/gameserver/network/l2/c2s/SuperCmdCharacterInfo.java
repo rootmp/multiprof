@@ -1,23 +1,26 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 /**
  * Format chS c: (id) 0x39 h: (subid) 0x00 S: the character name (or maybe cmd
  * string ?)
  */
-class SuperCmdCharacterInfo extends L2GameClientPacket
+class SuperCmdCharacterInfo implements IClientIncomingPacket
 {
 	@SuppressWarnings("unused")
 	private String _characterName;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_characterName = readS();
+		_characterName = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 	}
 }

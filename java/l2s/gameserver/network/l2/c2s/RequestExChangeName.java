@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -15,25 +18,25 @@ import l2s.gameserver.utils.Util;
 /**
  * @author Bonux
  **/
-public class RequestExChangeName extends L2GameClientPacket
+public class RequestExChangeName implements IClientIncomingPacket
 {
 	private int _type;
 	private String _newName;
 	private int _charSlot;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_type = readD();
-		_newName = readS();
-		_charSlot = readD(); // Char slot
+		_type = packet.readD();
+		_newName = packet.readS();
+		_charSlot = packet.readD(); // Char slot
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 
@@ -43,7 +46,7 @@ public class RequestExChangeName extends L2GameClientPacket
 			if (changedOldName == null || StringUtils.isEmpty(changedOldName))
 			{
 				activeChar.unsetVar(Player.CHANGED_OLD_NAME);
-				sendPacket(new CharacterSelectedPacket(activeChar, getClient().getSessionKey().playOkID1));
+				sendPacket(new CharacterSelectedPacket(activeChar, client.getSessionKey().playOkID1));
 				return;
 			}
 			if (_newName == null || _newName.isEmpty())
@@ -65,7 +68,7 @@ public class RequestExChangeName extends L2GameClientPacket
 			activeChar.setName(_newName);
 			activeChar.saveNameToDB();
 			activeChar.unsetVar(Player.CHANGED_OLD_NAME);
-			sendPacket(new CharacterSelectedPacket(activeChar, getClient().getSessionKey().playOkID1));
+			sendPacket(new CharacterSelectedPacket(activeChar, client.getSessionKey().playOkID1));
 		}
 		else if (_type == ExNeedToChangeName.TYPE_PLEDGE)
 		{

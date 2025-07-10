@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExDominionChannelSet extends L2GameServerPacket
+public class ExDominionChannelSet implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket ACTIVE = new ExDominionChannelSet(1);
 	public static final L2GameServerPacket DEACTIVE = new ExDominionChannelSet(0);
@@ -13,8 +14,8 @@ public class ExDominionChannelSet extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_active);
+		packetWriter.writeD(_active);
 	}
 }

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class TutorialShowHtmlPacket extends L2GameServerPacket
+public class TutorialShowHtmlPacket implements IClientOutgoingPacket
 {
 	public static int NORMAL_WINDOW = 0x01;
 	public static int LARGE_WINDOW = 0x02;
@@ -15,9 +16,9 @@ public class TutorialShowHtmlPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_windowType);
-		writeS(_html);
+		packetWriter.writeD(_windowType);
+		packetWriter.writeS(_html);
 	}
 }

@@ -11,23 +11,23 @@ import l2s.gameserver.network.l2.s2c.itemrestore.ExPenaltyItemList;
 import l2s.gameserver.network.l2.s2c.itemrestore.ExPenaltyItemRestore;
 import l2s.gameserver.templates.item.ItemTemplate;
 
-public class RequestExPenaltyItemRestore extends L2GameClientPacket
+public class RequestExPenaltyItemRestore implements IClientIncomingPacket
 {
 	private int itemObjId;
 	private boolean isAdena;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		itemObjId = readD();
+		itemObjId = packet.readD();
 		isAdena = readC() == 1 ? true : false;
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

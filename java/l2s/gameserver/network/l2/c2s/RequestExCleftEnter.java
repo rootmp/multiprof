@@ -1,6 +1,9 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
 
-public class RequestExCleftEnter extends L2GameClientPacket
+
+public class RequestExCleftEnter implements IClientIncomingPacket
 {
 	private int unk;
 
@@ -8,14 +11,14 @@ public class RequestExCleftEnter extends L2GameClientPacket
 	 * format: d
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		unk = readD();
+		unk = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		// TODO not implemented
 	}

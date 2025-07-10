@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
@@ -8,7 +9,7 @@ import l2s.gameserver.model.Player;
  * 
  * @author SYS
  */
-public class ExSpawnEmitterPacket extends L2GameServerPacket
+public class ExSpawnEmitterPacket implements IClientOutgoingPacket
 {
 	private int _monsterObjId;
 	private int _playerObjId;
@@ -22,11 +23,11 @@ public class ExSpawnEmitterPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// ddd
-		writeD(_monsterObjId);
-		writeD(_playerObjId);
-		writeD(_type); // soul type
+		packetWriter.writeD(_monsterObjId);
+		packetWriter.writeD(_playerObjId);
+		packetWriter.writeD(_type); // soul type
 	}
 }

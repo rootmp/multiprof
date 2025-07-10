@@ -19,7 +19,7 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author nexvill
  */
-public class ExResultItemAutoPeel extends L2GameServerPacket
+public class ExResultItemAutoPeel implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final ItemInstance _item;
@@ -37,20 +37,20 @@ public class ExResultItemAutoPeel extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		final boolean result = getResultItems(_player, _item);
 
-		writeC(result);
-		writeQ(_totalPeelCount);
-		writeQ(_remainPeelCount);
-		writeD(_size); // TODO Wrong amount if items are isStackable()
+		packetWriter.writeC(result);
+		packetWriter.writeQ(_totalPeelCount);
+		packetWriter.writeQ(_remainPeelCount);
+		packetWriter.writeD(_size); // TODO Wrong amount if items are isStackable()
 
 		for (int i = 0; i < _size; i++)
 		{
-			writeD(_items.get(i).getItemId());
-			writeQ(_items.get(i).getCount());
-			writeD(0); // TODO Announce level
+			packetWriter.writeD(_items.get(i).getItemId());
+			packetWriter.writeQ(_items.get(i).getCount());
+			packetWriter.writeD(0); // TODO Announce level
 		}
 	}
 

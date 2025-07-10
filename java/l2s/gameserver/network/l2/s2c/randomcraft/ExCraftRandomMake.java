@@ -16,7 +16,7 @@ import l2s.gameserver.templates.RandomCraftItem;
 /**
  * @author nexvill
  */
-public class ExCraftRandomMake extends L2GameServerPacket
+public class ExCraftRandomMake implements IClientOutgoingPacket
 {
 	private Player _player;
 
@@ -26,7 +26,7 @@ public class ExCraftRandomMake extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// select random item
 		int _slot = Rnd.get(5);
@@ -35,11 +35,11 @@ public class ExCraftRandomMake extends L2GameServerPacket
 		int resultId = data.getResultId() == 0 ? data.getId() : data.getResultId();
 		ItemInstance item = _player.getInventory().addItem(data.getId(), data.getCount(), data.getEnchantLevel());
 
-		writeC(0); // 0 for open window
-		writeH(0x0F); // unk
-		writeD(resultId); // item id
-		writeQ(data.getCount()); // item count
-		writeC(data.getEnchantLevel()); // enchant Level
+		packetWriter.writeC(0); // 0 for open window
+		packetWriter.writeH(0x0F); // unk
+		packetWriter.writeD(resultId); // item id
+		packetWriter.writeQ(data.getCount()); // item count
+		packetWriter.writeC(data.getEnchantLevel()); // enchant Level
 
 		if (RandomCraftItem.isAnnounce(item.getItemId()))
 		{

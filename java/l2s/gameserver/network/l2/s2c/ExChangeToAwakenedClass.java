@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.NpcInstance;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.instances.NpcInstance;
 /**
  * @author Bonux
  */
-public class ExChangeToAwakenedClass extends L2GameServerPacket
+public class ExChangeToAwakenedClass implements IClientOutgoingPacket
 {
 	private int _classId;
 
@@ -17,8 +18,8 @@ public class ExChangeToAwakenedClass extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_classId);
+		packetWriter.writeD(_classId);
 	}
 }

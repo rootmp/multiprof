@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
@@ -18,7 +19,7 @@ import l2s.gameserver.network.l2.c2s.RequestExRequestSentPostList;
  * 
  * @see ExShowReceivedPostList аналогичный список принятой почты
  */
-public class ExShowSentPostList extends L2GameServerPacket
+public class ExShowSentPostList implements IClientOutgoingPacket
 {
 	private final List<Mail> mails;
 
@@ -30,21 +31,21 @@ public class ExShowSentPostList extends L2GameServerPacket
 
 	// d dx[dSSddddd]
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD((int) (System.currentTimeMillis() / 1000L));
-		writeD(mails.size()); // количество писем
+		packetWriter.writeD((int) (System.currentTimeMillis() / 1000L));
+		packetWriter.writeD(mails.size()); // количество писем
 		for (Mail mail : mails)
 		{
-			writeD(mail.getMessageId()); // уникальный id письма
-			writeS(mail.getTopic()); // топик
-			writeS(mail.getReceiverName()); // получатель
-			writeD(mail.isPayOnDelivery() ? 1 : 0); // если тут 1 то письмо требует оплаты
-			writeD(mail.getExpireTime()); // время действительности письма
-			writeD(mail.isUnread() ? 1 : 0); // ?
-			writeD(mail.isReturnable()); // returnable
-			writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
-			writeD(0x00); // ???
+			packetWriter.writeD(mail.getMessageId()); // уникальный id письма
+			packetWriter.writeS(mail.getTopic()); // топик
+			packetWriter.writeS(mail.getReceiverName()); // получатель
+			packetWriter.writeD(mail.isPayOnDelivery() ? 1 : 0); // если тут 1 то письмо требует оплаты
+			packetWriter.writeD(mail.getExpireTime()); // время действительности письма
+			packetWriter.writeD(mail.isUnread() ? 1 : 0); // ?
+			packetWriter.writeD(mail.isReturnable()); // returnable
+			packetWriter.writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
+			packetWriter.writeD(0x00); // ???
 		}
 	}
 }

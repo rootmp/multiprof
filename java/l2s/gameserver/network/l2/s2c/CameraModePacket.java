@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class CameraModePacket extends L2GameServerPacket
+public class CameraModePacket implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket EXIT = new CameraModePacket(0);
 	public static final L2GameServerPacket ENTER = new CameraModePacket(1);
@@ -18,8 +19,8 @@ public class CameraModePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(mode);
+		packetWriter.writeD(mode);
 	}
 }

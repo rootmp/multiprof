@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,7 +11,7 @@ import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.tables.ClanTable;
 
-public class ExShowCastleInfo extends L2GameServerPacket
+public class ExShowCastleInfo implements IClientOutgoingPacket
 {
 	private List<CastleInfo> _infos = Collections.emptyList();
 
@@ -43,38 +44,38 @@ public class ExShowCastleInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// temp fix for world map, while castle siege only giran
-		// writeD(_infos.size());
-		writeD(6);
+		// packetWriter.writeD(_infos.size());
+		packetWriter.writeD(6);
 		for (int i = 1; i < 3; i++)
 		{
-			writeD(i);
-			writeS(StringUtils.EMPTY);
-			writeD(0);
-			writeD(0);
-			writeC(0);
-			writeC(0);
+			packetWriter.writeD(i);
+			packetWriter.writeS(StringUtils.EMPTY);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeC(0);
+			packetWriter.writeC(0);
 		}
 		for (CastleInfo info : _infos)
 		{
-			writeD(info._id);
-			writeS(info._ownerName);
-			writeD(info._tax);
-			writeD(info._nextSiege);
-			writeC(info._inSiege);
-			writeC(info._side);
+			packetWriter.writeD(info._id);
+			packetWriter.writeS(info._ownerName);
+			packetWriter.writeD(info._tax);
+			packetWriter.writeD(info._nextSiege);
+			packetWriter.writeC(info._inSiege);
+			packetWriter.writeC(info._side);
 		}
 		_infos.clear();
 		for (int i = 4; i < 7; i++)
 		{
-			writeD(i);
-			writeS(StringUtils.EMPTY);
-			writeD(0);
-			writeD(0);
-			writeC(0);
-			writeC(0);
+			packetWriter.writeD(i);
+			packetWriter.writeS(StringUtils.EMPTY);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeC(0);
+			packetWriter.writeC(0);
 		}
 	}
 

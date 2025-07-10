@@ -6,7 +6,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExCollectionFavoriteList extends L2GameServerPacket
+public class ExCollectionFavoriteList implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int[] _collectionFavorites;
@@ -18,13 +18,13 @@ public class ExCollectionFavoriteList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_collectionFavorites.length);
+		packetWriter.writeD(_collectionFavorites.length);
 		for (int i = 0; i < _collectionFavorites.length; i++)
 		{
-			writeH(_collectionFavorites[i]); // collection id
-			writeD(0); // expiration time?
+			packetWriter.writeH(_collectionFavorites[i]); // collection id
+			packetWriter.writeD(0); // expiration time?
 		}
 	}
 }

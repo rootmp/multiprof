@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Set;
 
@@ -8,7 +9,7 @@ import l2s.gameserver.skills.enums.AbnormalEffect;
 /**
  * @reworked by Bonux
  **/
-public class ExUserInfoAbnormalVisualEffect extends L2GameServerPacket
+public class ExUserInfoAbnormalVisualEffect implements IClientOutgoingPacket
 {
 	private final int _objectId;
 	private final int _transformId;
@@ -22,12 +23,12 @@ public class ExUserInfoAbnormalVisualEffect extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_objectId);
-		writeD(_transformId);
-		writeD(_abnormalEffects.size());
+		packetWriter.writeD(_objectId);
+		packetWriter.writeD(_transformId);
+		packetWriter.writeD(_abnormalEffects.size());
 		for (AbnormalEffect abnormal : _abnormalEffects)
-			writeH(abnormal.getId());
+			packetWriter.writeH(abnormal.getId());
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.data.xml.holder.SynthesisDataHolder;
 import l2s.gameserver.model.Player;
@@ -11,21 +14,21 @@ import l2s.gameserver.templates.item.support.SynthesisData;
 /**
  * @author Bonux
  **/
-public class RequestNewEnchantPushTwo extends L2GameClientPacket
+public class RequestNewEnchantPushTwo implements IClientIncomingPacket
 {
 	private int _item2ObjectId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_item2ObjectId = readD();
+		_item2ObjectId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

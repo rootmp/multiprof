@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.StringTokenizer;
 
@@ -16,26 +19,26 @@ import l2s.gameserver.utils.BypassStorage.ValidBypass;
 import l2s.gameserver.utils.DimensionalMerchantUtils;
 import l2s.gameserver.utils.WarehouseFunctions;
 
-public class RequestExPremiumManagerPassCmdToServer extends L2GameClientPacket
+public class RequestExPremiumManagerPassCmdToServer implements IClientIncomingPacket
 {
 	private static final Logger LOGGER = LoggerFactory.getLogger(RequestExPremiumManagerPassCmdToServer.class);
 
 	private String _bypass = null;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_bypass = readS();
+		_bypass = packet.readS();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		if (_bypass.isEmpty())
 			return;
 
-		Player player = getClient().getActiveChar();
+		Player player = client.getActiveChar();
 		if (player == null)
 			return;
 

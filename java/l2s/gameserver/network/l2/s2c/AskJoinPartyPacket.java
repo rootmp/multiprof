@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * sample
@@ -9,7 +10,7 @@ package l2s.gameserver.network.l2.s2c;
  *
  * @version $Revision: 1.1.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class AskJoinPartyPacket extends L2GameServerPacket
+public class AskJoinPartyPacket implements IClientOutgoingPacket
 {
 	private String _requestorName;
 	private int _itemDistribution;
@@ -25,9 +26,9 @@ public class AskJoinPartyPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_requestorName);
-		writeD(_itemDistribution);
+		packetWriter.writeS(_requestorName);
+		packetWriter.writeD(_itemDistribution);
 	}
 }

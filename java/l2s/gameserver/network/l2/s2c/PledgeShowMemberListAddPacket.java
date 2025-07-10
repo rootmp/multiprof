@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.pledge.UnitMember;
 
-public class PledgeShowMemberListAddPacket extends L2GameServerPacket
+public class PledgeShowMemberListAddPacket implements IClientOutgoingPacket
 {
 	private PledgePacketMember _member;
 
@@ -12,16 +13,16 @@ public class PledgeShowMemberListAddPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_member._name);
-		writeD(_member._level);
-		writeD(_member._classId);
-		writeD(_member._sex);
-		writeD(_member._race);
-		writeD(_member._online);
-		writeD(_member._pledgeType);
-		writeC(_member._attendance);
+		packetWriter.writeS(_member._name);
+		packetWriter.writeD(_member._level);
+		packetWriter.writeD(_member._classId);
+		packetWriter.writeD(_member._sex);
+		packetWriter.writeD(_member._race);
+		packetWriter.writeD(_member._online);
+		packetWriter.writeD(_member._pledgeType);
+		packetWriter.writeC(_member._attendance);
 	}
 
 	private class PledgePacketMember

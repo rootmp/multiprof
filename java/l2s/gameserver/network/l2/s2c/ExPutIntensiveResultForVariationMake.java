@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExPutIntensiveResultForVariationMake extends L2GameServerPacket
+public class ExPutIntensiveResultForVariationMake implements IClientOutgoingPacket
 {
 	private int _refinerItemObjId, _lifestoneItemId, _gemstoneItemId, _unk;
 	private long _gemstoneCount;
@@ -15,12 +16,12 @@ public class ExPutIntensiveResultForVariationMake extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_refinerItemObjId);
-		writeD(_lifestoneItemId);
-		writeD(_gemstoneItemId);
-		writeQ(_gemstoneCount);
-		writeD(_unk);
+		packetWriter.writeD(_refinerItemObjId);
+		packetWriter.writeD(_lifestoneItemId);
+		packetWriter.writeD(_gemstoneItemId);
+		packetWriter.writeQ(_gemstoneCount);
+		packetWriter.writeD(_unk);
 	}
 }

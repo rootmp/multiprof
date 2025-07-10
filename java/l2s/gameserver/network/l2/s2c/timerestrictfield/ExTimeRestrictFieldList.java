@@ -13,7 +13,7 @@ import l2s.gameserver.templates.TimeRestrictFieldInfo;
 /**
  * @author nexvill
  */
-public class ExTimeRestrictFieldList extends L2GameServerPacket
+public class ExTimeRestrictFieldList implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private Map<Integer, TimeRestrictFieldInfo> _fields = new HashMap<>();
@@ -25,9 +25,9 @@ public class ExTimeRestrictFieldList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_fields.size());
+		packetWriter.writeD(_fields.size());
 
 		if (_fields.size() > 0)
 		{
@@ -35,13 +35,13 @@ public class ExTimeRestrictFieldList extends L2GameServerPacket
 			{
 				final TimeRestrictFieldInfo field = _fields.get(id);
 
-				writeD(1);
-				writeD(field.getItemId());
-				writeQ(field.getItemCount());
-				writeD(field.getResetCycle());
-				writeD(id);
-				writeD(field.getMinLevel());
-				writeD(field.getMaxLevel());
+				packetWriter.writeD(1);
+				packetWriter.writeD(field.getItemId());
+				packetWriter.writeQ(field.getItemCount());
+				packetWriter.writeD(field.getResetCycle());
+				packetWriter.writeD(id);
+				packetWriter.writeD(field.getMinLevel());
+				packetWriter.writeD(field.getMaxLevel());
 
 				int reflectionId = 0;
 				switch (id)
@@ -86,31 +86,31 @@ public class ExTimeRestrictFieldList extends L2GameServerPacket
 
 				boolean used = _player.getVarBoolean(PlayerVariables.RESTRICT_FIELD_USED, false);
 
-				writeD(field.getRemainTimeBase());
-				writeD(remainTime);
-				writeD(field.getRemainTimeMax());
-				writeD(remainTimeRefill);
-				writeD(field.getRemainTimeMax() - field.getRemainTimeBase());
+				packetWriter.writeD(field.getRemainTimeBase());
+				packetWriter.writeD(remainTime);
+				packetWriter.writeD(field.getRemainTimeMax());
+				packetWriter.writeD(remainTimeRefill);
+				packetWriter.writeD(field.getRemainTimeMax() - field.getRemainTimeBase());
 				if (((id == 18) && !ServerVariables.getBool("frost_lord_castle_open", false)) || ((id == 12) && !ServerVariables.getBool("antharas_lair_open", false)))
 				{
-					writeC(0);
+					packetWriter.writeC(0);
 				}
 				else
 				{
-					writeC(1); // is field active
+					packetWriter.writeC(1); // is field active
 				}
 				if (id > 100)
 				{
-					writeC(used ? 1 : 0);
+					packetWriter.writeC(used ? 1 : 0);
 				}
 				else
 				{
-					writeC(0);
+					packetWriter.writeC(0);
 				}
-				writeC(0); // can re-enter
-				writeC(0);
-				writeC(0);
-				writeC(field.isWorld()); // is cross-server field
+				packetWriter.writeC(0); // can re-enter
+				packetWriter.writeC(0);
+				packetWriter.writeC(0);
+				packetWriter.writeC(field.isWorld()); // is cross-server field
 			}
 		}
 	}

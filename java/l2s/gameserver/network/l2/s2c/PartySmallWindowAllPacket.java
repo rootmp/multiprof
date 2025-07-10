@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +8,7 @@ import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Servitor;
 
-public class PartySmallWindowAllPacket extends L2GameServerPacket
+public class PartySmallWindowAllPacket implements IClientOutgoingPacket
 {
 	private final int leaderId;
 	private final int loot;
@@ -24,39 +25,39 @@ public class PartySmallWindowAllPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(leaderId); // c3 party leader id
-		writeC(loot); // c3 party loot type (0,1,2,....)
-		writeC(members.size());
+		packetWriter.writeD(leaderId); // c3 party leader id
+		packetWriter.writeC(loot); // c3 party loot type (0,1,2,....)
+		packetWriter.writeC(members.size());
 		for (PartySmallWindowMemberInfo mi : members)
 		{
-			writeD(mi.member.objId);
-			writeS(mi.member.name);
-			writeD(mi.member.curCp);
-			writeD(mi.member.maxCp);
-			writeD(mi.member.curHp);
-			writeD(mi.member.maxHp);
-			writeD(mi.member.curMp);
-			writeD(mi.member.maxMp);
-			writeD(mi.member.sayhas_grace); // Sayha's Grace Points
-			writeC(mi.member.level);
-			writeH(mi.member.classId);
-			writeC(mi.member.sex);
-			writeH(mi.member.raceId);
-			writeD(0);
-			writeD(mi.m_servitors.size()); // Pet Count
+			packetWriter.writeD(mi.member.objId);
+			packetWriter.writeS(mi.member.name);
+			packetWriter.writeD(mi.member.curCp);
+			packetWriter.writeD(mi.member.maxCp);
+			packetWriter.writeD(mi.member.curHp);
+			packetWriter.writeD(mi.member.maxHp);
+			packetWriter.writeD(mi.member.curMp);
+			packetWriter.writeD(mi.member.maxMp);
+			packetWriter.writeD(mi.member.sayhas_grace); // Sayha's Grace Points
+			packetWriter.writeC(mi.member.level);
+			packetWriter.writeH(mi.member.classId);
+			packetWriter.writeC(mi.member.sex);
+			packetWriter.writeH(mi.member.raceId);
+			packetWriter.writeD(0);
+			packetWriter.writeD(mi.m_servitors.size()); // Pet Count
 			for (PartyMember servitor : mi.m_servitors)
 			{
-				writeD(servitor.objId);
-				writeD(servitor.npcId);
-				writeC(servitor.type);
-				writeS(servitor.name);
-				writeD(servitor.curHp);
-				writeD(servitor.maxHp);
-				writeD(servitor.curMp);
-				writeD(servitor.maxMp);
-				writeC(servitor.level);
+				packetWriter.writeD(servitor.objId);
+				packetWriter.writeD(servitor.npcId);
+				packetWriter.writeC(servitor.type);
+				packetWriter.writeS(servitor.name);
+				packetWriter.writeD(servitor.curHp);
+				packetWriter.writeD(servitor.maxHp);
+				packetWriter.writeD(servitor.curMp);
+				packetWriter.writeD(servitor.maxMp);
+				packetWriter.writeC(servitor.level);
 			}
 		}
 	}

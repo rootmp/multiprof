@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +8,7 @@ import l2s.gameserver.data.xml.holder.HennaHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.henna.HennaTemplate;
 
-public class HennaEquipListPacket extends L2GameServerPacket
+public class HennaEquipListPacket implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _emptySlots;
@@ -28,18 +29,18 @@ public class HennaEquipListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeQ(_adena);
-		writeD(_emptySlots);
-		writeD(_hennas.size());
+		packetWriter.writeQ(_adena);
+		packetWriter.writeD(_emptySlots);
+		packetWriter.writeD(_hennas.size());
 		for (HennaTemplate henna : _hennas)
 		{
-			writeD(henna.getSymbolId()); // symbolid
-			writeD(henna.getDyeId()); // itemid of dye
-			writeQ(henna.getDrawCount());
-			writeQ(henna.getDrawPrice());
-			writeD(henna.isForThisClass(_player) ? 0x01 : 0x00);
+			packetWriter.writeD(henna.getSymbolId()); // symbolid
+			packetWriter.writeD(henna.getDyeId()); // itemid of dye
+			packetWriter.writeQ(henna.getDrawCount());
+			packetWriter.writeQ(henna.getDrawPrice());
+			packetWriter.writeD(henna.isForThisClass(_player) ? 0x01 : 0x00);
 		}
 	}
 }

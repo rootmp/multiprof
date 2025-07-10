@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import l2s.gameserver.model.base.LimitedShopProduction;
 /**
  * @author nexvill
  */
-public class ExPurchaseLimitShopItemListNew extends L2GameServerPacket
+public class ExPurchaseLimitShopItemListNew implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _listId;
@@ -28,20 +29,20 @@ public class ExPurchaseLimitShopItemListNew extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_listId);
-		writeC(1); // page
-		writeC(1); // max page
-		writeD(_size);
+		packetWriter.writeC(_listId);
+		packetWriter.writeC(1); // page
+		packetWriter.writeC(1); // max page
+		packetWriter.writeD(_size);
 
 		for (int i = 0; i < _size; i++)
 		{
 			final LimitedShopEntry entry = _list.get(i);
 			LimitedShopProduction product = entry.getProduction().get(0);
 
-			writeD(product.getInfo().getInteger("index")); // item index
-			writeD(product.getInfo().getInteger("product1Id"));
+			packetWriter.writeD(product.getInfo().getInteger("index")); // item index
+			packetWriter.writeD(product.getInfo().getInteger("product1Id"));
 
 			int ingredientsSize = entry.getIngredients().size();
 			if ((ingredientsSize > 5) || (ingredientsSize == 0))
@@ -51,30 +52,30 @@ public class ExPurchaseLimitShopItemListNew extends L2GameServerPacket
 
 			for (LimitedShopIngredient ingredient : entry.getIngredients())
 			{
-				writeD(ingredient.getItemId());
+				packetWriter.writeD(ingredient.getItemId());
 			}
 			for (int j = 5; j > ingredientsSize; j--)
-				writeD(0);
+				packetWriter.writeD(0);
 
 			for (LimitedShopIngredient ingredient : entry.getIngredients())
 			{
-				writeQ(ingredient.getItemCount());
+				packetWriter.writeQ(ingredient.getItemCount());
 			}
 			for (int j = 5; j > ingredientsSize; j--)
-				writeQ(0);
+				packetWriter.writeQ(0);
 
 			for (LimitedShopIngredient ingredient : entry.getIngredients())
 			{
-				writeH(ingredient.getEnchantLevel());
+				packetWriter.writeH(ingredient.getEnchantLevel());
 			}
 			for (int j = 5; j > ingredientsSize; j--)
 			{
-				writeH(0); // sCostItemEnchantment
+				packetWriter.writeH(0); // sCostItemEnchantment
 			}
-			writeD(_player.getVarInt(PlayerVariables.LIMIT_ITEM_REMAIN + "_" + product.getInfo().getInteger("product1Id"), product.getInfo().getInteger("dailyLimit"))); // nRemainItemAmount
-			writeD(0); // nRemainSec
-			writeD(0); // remain server item amount
-			writeH(0); // circle num
+			packetWriter.writeD(_player.getVarInt(PlayerVariables.LIMIT_ITEM_REMAIN + "_" + product.getInfo().getInteger("product1Id"), product.getInfo().getInteger("dailyLimit"))); // nRemainItemAmount
+			packetWriter.writeD(0); // nRemainSec
+			packetWriter.writeD(0); // remain server item amount
+			packetWriter.writeH(0); // circle num
 		}
 	}
 }

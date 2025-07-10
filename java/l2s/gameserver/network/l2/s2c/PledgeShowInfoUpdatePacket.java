@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -8,7 +9,7 @@ import l2s.gameserver.model.entity.residence.ClanHall;
 import l2s.gameserver.model.pledge.Alliance;
 import l2s.gameserver.model.pledge.Clan;
 
-public class PledgeShowInfoUpdatePacket extends L2GameServerPacket
+public class PledgeShowInfoUpdatePacket implements IClientOutgoingPacket
 {
 	private int clan_id, clan_level, clan_rank, clan_rep, crest_id, ally_id, ally_crest;
 	private final boolean atwar;
@@ -50,42 +51,42 @@ public class PledgeShowInfoUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		// sending empty data so client will ask all the info in response ;)
-		writeD(clan_id);
-		writeD(Config.REQUEST_ID);
-		writeD(crest_id);
-		writeD(clan_level);
-		writeD(_hasCastle);
+		packetWriter.writeD(clan_id);
+		packetWriter.writeD(Config.REQUEST_ID);
+		packetWriter.writeD(crest_id);
+		packetWriter.writeD(clan_level);
+		packetWriter.writeD(_hasCastle);
 		if (_hasInstantClanHall > 0)
 		{
-			writeD(1);
-			writeD(_hasInstantClanHall);
+			packetWriter.writeD(1);
+			packetWriter.writeD(_hasInstantClanHall);
 		}
 		else if (_hasClanHall != 0)
 		{
-			writeD(0);
-			writeD(_hasClanHall);
+			packetWriter.writeD(0);
+			packetWriter.writeD(_hasClanHall);
 		}
 		else
 		{
-			writeD(0);
-			writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
 		}
-		writeD(0x00); // Has fortress
-		writeD(clan_rank);// displayed in the "tree" view (with the clan skills)
-		writeD(clan_rep);
-		writeD(_isDisbanded ? 3 : 0);
-		writeD(0);
-		writeD(ally_id); // c5
-		writeS(ally_name); // c5
-		writeD(ally_crest); // c5
-		writeD(atwar); // c5
-		writeD(0x00); // 286 unk
-		writeD(0x00); // 286 unk
+		packetWriter.writeD(0x00); // Has fortress
+		packetWriter.writeD(clan_rank);// displayed in the "tree" view (with the clan skills)
+		packetWriter.writeD(clan_rep);
+		packetWriter.writeD(_isDisbanded ? 3 : 0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(ally_id); // c5
+		packetWriter.writeS(ally_name); // c5
+		packetWriter.writeD(ally_crest); // c5
+		packetWriter.writeD(atwar); // c5
+		packetWriter.writeD(0x00); // 286 unk
+		packetWriter.writeD(0x00); // 286 unk
 
-		writeD(0x00);
-		writeD(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00);
 	}
 }

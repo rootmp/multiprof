@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExLetterCollectorUiLauncher extends L2GameServerPacket
+public class ExLetterCollectorUiLauncher implements IClientOutgoingPacket
 {
 	private final boolean activate;
 	private final int minLevel;
@@ -12,9 +13,9 @@ public class ExLetterCollectorUiLauncher extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(activate);
-		writeD(minLevel);
+		packetWriter.writeC(activate);
+		packetWriter.writeD(minLevel);
 	}
 }

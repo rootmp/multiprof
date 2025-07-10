@@ -5,7 +5,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExResultPetExtractSystem extends L2GameServerPacket
+public class ExResultPetExtractSystem implements IClientOutgoingPacket
 {
 
 	public ExResultPetExtractSystem()
@@ -14,8 +14,8 @@ public class ExResultPetExtractSystem extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(0);
+		packetWriter.writeC(0);
 	}
 }

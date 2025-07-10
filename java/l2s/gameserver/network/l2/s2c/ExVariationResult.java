@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExVariationResult extends L2GameServerPacket
+public class ExVariationResult implements IClientOutgoingPacket
 {
 	private int _stat12;
 	private int _stat34;
@@ -14,10 +15,10 @@ public class ExVariationResult extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_stat12);
-		writeD(_stat34);
-		writeD(_unk3);
+		packetWriter.writeD(_stat12);
+		packetWriter.writeD(_stat34);
+		packetWriter.writeD(_unk3);
 	}
 }

@@ -3,21 +3,21 @@ package l2s.gameserver.network.l2.c2s.itemrestore;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
 
-public class RequestExItemRestoreList extends L2GameClientPacket
+public class RequestExItemRestoreList implements IClientIncomingPacket
 {
 	private int cCategory;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		cCategory = readC();
+		cCategory = packet.readC();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

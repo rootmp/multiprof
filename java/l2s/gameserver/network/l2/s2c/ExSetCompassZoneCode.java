@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
@@ -7,7 +8,7 @@ import l2s.gameserver.model.Player;
  * EDGE_BUFFRED = 9; const EDGE_RED = 8; const EDGE_SSQGRAY = 12; const
  * EDGE_PVPGREEN = 14;
  */
-public class ExSetCompassZoneCode extends L2GameServerPacket
+public class ExSetCompassZoneCode implements IClientOutgoingPacket
 {
 	public static final int ZONE_ALTERED = 8;
 	public static final int ZONE_ALTERED2 = 9;
@@ -48,8 +49,8 @@ public class ExSetCompassZoneCode extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_zone);
+		packetWriter.writeD(_zone);
 	}
 }

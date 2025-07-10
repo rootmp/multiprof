@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
-public class L2FriendStatus extends L2GameServerPacket
+public class L2FriendStatus implements IClientOutgoingPacket
 {
 	private String _charName;
 	private boolean _login;
@@ -14,10 +15,10 @@ public class L2FriendStatus extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_login ? 1 : 0); // Logged in 1 logged off 0
-		writeS(_charName);
-		writeD(0); // id персонажа с базы оффа, не object_id
+		packetWriter.writeD(_login ? 1 : 0); // Logged in 1 logged off 0
+		packetWriter.writeS(_charName);
+		packetWriter.writeD(0); // id персонажа с базы оффа, не object_id
 	}
 }

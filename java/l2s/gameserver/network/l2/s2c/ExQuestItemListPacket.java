@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.enums.LockType;
 import l2s.gameserver.model.items.ItemInstance;
@@ -6,7 +7,7 @@ import l2s.gameserver.model.items.ItemInstance;
 /**
  * @author JIV
  */
-public class ExQuestItemListPacket extends L2GameServerPacket
+public class ExQuestItemListPacket implements IClientOutgoingPacket
 {
 	private int _size;
 	private ItemInstance[] _items;
@@ -19,18 +20,18 @@ public class ExQuestItemListPacket extends L2GameServerPacket
 		_items = items;
 	}
 
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_sendType);
+		packetWriter.writeC(_sendType);
 		if (_sendType == 1)
 		{
-			writeH(0x00); // UNK
-			writeD(_size);
+			packetWriter.writeH(0x00); // UNK
+			packetWriter.writeD(_size);
 		}
 		else if (_sendType == 2)
 		{
-			writeD(_size);
-			writeD(_size);
+			packetWriter.writeD(_size);
+			packetWriter.writeD(_size);
 			for (ItemInstance temp : _items)
 			{
 				if (!temp.getTemplate().isQuest())

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.skills.SkillEntry;
 /**
  * format d (dddc) d dddcc
  */
-public class SkillListPacket extends L2GameServerPacket
+public class SkillListPacket implements IClientOutgoingPacket
 {
 	private final Collection<SkillEntry> _skills;
 	private final Player _player;
@@ -30,9 +31,9 @@ public class SkillListPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_skills.size() - _player.getDisabledSkillsToReplace().size() - _player.getHiddenSkills().size());
+		packetWriter.writeD(_skills.size() - _player.getDisabledSkillsToReplace().size() - _player.getHiddenSkills().size());
 		for (SkillEntry skillEntry : _skills)
 		{
 			if (_player.isDisabledSkillToReplace(skillEntry.getId()))
@@ -42,13 +43,13 @@ public class SkillListPacket extends L2GameServerPacket
 				continue;
 
 			Skill temp = skillEntry.getTemplate();
-			writeD(temp.isActive() || temp.isToggle() ? 0 : 1); // deprecated? клиентом игнорируется
-			writeD(temp.getDisplayLevel());
-			writeD(temp.getDisplayId());
-			writeD(temp.getReuseSkillId());
-			writeC(_player.isUnActiveSkill(temp.getId()) ? 0x01 : 0x00); // иконка скилла серая если не 0
-			writeC(0x00); // для заточки: если 1 скилл можно точить
+			packetWriter.writeD(temp.isActive() || temp.isToggle() ? 0 : 1); // deprecated? клиентом игнорируется
+			packetWriter.writeD(temp.getDisplayLevel());
+			packetWriter.writeD(temp.getDisplayId());
+			packetWriter.writeD(temp.getReuseSkillId());
+			packetWriter.writeC(_player.isUnActiveSkill(temp.getId()) ? 0x01 : 0x00); // иконка скилла серая если не 0
+			packetWriter.writeC(0x00); // для заточки: если 1 скилл можно точить
 		}
-		writeD(_learnedSkillId);
+		packetWriter.writeD(_learnedSkillId);
 	}
 }

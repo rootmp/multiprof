@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Creature;
 
 /**
  * @author Bonux
  **/
-public class ExShowChannelingEffectPacket extends L2GameServerPacket
+public class ExShowChannelingEffectPacket implements IClientOutgoingPacket
 {
 	private final int _casterObjectId;
 	private final int _targetObjectId;
@@ -19,10 +20,10 @@ public class ExShowChannelingEffectPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_casterObjectId);
-		writeD(_targetObjectId);
-		writeD(_state);
+		packetWriter.writeD(_casterObjectId);
+		packetWriter.writeD(_targetObjectId);
+		packetWriter.writeD(_state);
 	}
 }

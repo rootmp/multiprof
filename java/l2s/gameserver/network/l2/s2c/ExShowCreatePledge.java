@@ -1,10 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux (bonuxq@gmail.com)
  * @date 25.09.2019
  **/
-public class ExShowCreatePledge extends L2GameServerPacket
+public class ExShowCreatePledge implements IClientOutgoingPacket
 {
 	public static final ExShowCreatePledge STATIC = new ExShowCreatePledge();
 
@@ -14,7 +15,7 @@ public class ExShowCreatePledge extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		//
 	}

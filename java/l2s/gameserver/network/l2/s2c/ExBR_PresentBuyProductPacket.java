@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExBR_PresentBuyProductPacket extends L2GameServerPacket
+public class ExBR_PresentBuyProductPacket implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket RESULT_OK = new ExBR_PresentBuyProductPacket(1); // ok
 	public static final L2GameServerPacket RESULT_NOT_ENOUGH_POINTS = new ExBR_PresentBuyProductPacket(-1);
@@ -45,8 +46,8 @@ public class ExBR_PresentBuyProductPacket extends L2GameServerPacket
 		_result = result;
 	}
 
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_result);
+		packetWriter.writeD(_result);
 	}
 }

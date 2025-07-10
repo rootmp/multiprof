@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
  */
-public class ExRankingCharBuffzoneNpcPosition extends L2GameServerPacket
+public class ExRankingCharBuffzoneNpcPosition implements IClientOutgoingPacket
 {
 	private byte _active;
 	private int _locX;
@@ -21,9 +22,9 @@ public class ExRankingCharBuffzoneNpcPosition extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeC(_active); // is active
-		writeD(_locX); // x
-		writeD(_locY); // y
-		writeD(_locZ); // z
+		packetWriter.writeC(_active); // is active
+		packetWriter.writeD(_locX); // x
+		packetWriter.writeD(_locY); // y
+		packetWriter.writeD(_locZ); // z
 	}
 }

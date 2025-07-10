@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.mail.Mail;
 
-public class ExChangePostState extends L2GameServerPacket
+public class ExChangePostState implements IClientOutgoingPacket
 {
 	private boolean _receivedBoard;
 	private Mail[] _mails;
@@ -16,14 +17,14 @@ public class ExChangePostState extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_receivedBoard ? 1 : 0);
-		writeD(_mails.length);
+		packetWriter.writeD(_receivedBoard ? 1 : 0);
+		packetWriter.writeD(_mails.length);
 		for (Mail mail : _mails)
 		{
-			writeD(mail.getMessageId()); // postId
-			writeD(_changeId); // state
+			packetWriter.writeD(mail.getMessageId()); // postId
+			packetWriter.writeD(_changeId); // state
 		}
 	}
 }

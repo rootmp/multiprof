@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExRemoveEnchantSupportItemResult extends L2GameServerPacket
+public class ExRemoveEnchantSupportItemResult implements IClientOutgoingPacket
 {
 	public static final L2GameServerPacket STATIC = new ExRemoveEnchantSupportItemResult();
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		//
 	}

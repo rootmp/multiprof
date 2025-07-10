@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.TradeItem;
 
-public class PrivateStoreList extends L2GameServerPacket
+public class PrivateStoreList implements IClientOutgoingPacket
 {
 	private int _sellerId;
 	private long _adena;
@@ -27,18 +28,18 @@ public class PrivateStoreList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_sellerId);
-		writeD(_package ? 1 : 0);
-		writeQ(_adena);
-		writeD(0x00); // TODO: [Bonux] Количество свободных ячеек в инвентаре.
-		writeD(_sellList.size());
+		packetWriter.writeD(_sellerId);
+		packetWriter.writeD(_package ? 1 : 0);
+		packetWriter.writeQ(_adena);
+		packetWriter.writeD(0x00); // TODO: [Bonux] Количество свободных ячеек в инвентаре.
+		packetWriter.writeD(_sellList.size());
 		for (TradeItem si : _sellList)
 		{
 			writeItemInfo(si);
-			writeQ(si.getOwnersPrice());
-			writeQ(si.getStorePrice());
+			packetWriter.writeQ(si.getOwnersPrice());
+			packetWriter.writeQ(si.getStorePrice());
 		}
 	}
 }

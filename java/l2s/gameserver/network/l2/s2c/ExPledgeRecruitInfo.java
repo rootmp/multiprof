@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.pledge.SubUnit;
  * @author GodWorld
  * @reworked by Bonux
  **/
-public class ExPledgeRecruitInfo extends L2GameServerPacket
+public class ExPledgeRecruitInfo implements IClientOutgoingPacket
 {
 	private final String _clanName;
 	private final String _leaderName;
@@ -34,17 +35,17 @@ public class ExPledgeRecruitInfo extends L2GameServerPacket
 		}
 	}
 
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_clanName);
-		writeS(_leaderName);
-		writeD(_clanLevel);
-		writeD(_clanMemberCount);
-		writeD(_subUnits.size());
+		packetWriter.writeS(_clanName);
+		packetWriter.writeS(_leaderName);
+		packetWriter.writeD(_clanLevel);
+		packetWriter.writeD(_clanMemberCount);
+		packetWriter.writeD(_subUnits.size());
 		for (SubUnit su : _subUnits)
 		{
-			writeD(su.getType());
-			writeS(su.getName());
+			packetWriter.writeD(su.getType());
+			packetWriter.writeS(su.getName());
 		}
 	}
 }

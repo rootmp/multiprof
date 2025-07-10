@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,7 +10,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.TimeStamp;
 
-public class SkillCoolTimePacket extends L2GameServerPacket
+public class SkillCoolTimePacket implements IClientOutgoingPacket
 {
 	private List<Skill> _list = Collections.emptyList();
 
@@ -39,16 +40,16 @@ public class SkillCoolTimePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_list.size()); // Size of list
+		packetWriter.writeD(_list.size()); // Size of list
 		for (int i = 0; i < _list.size(); i++)
 		{
 			Skill sk = _list.get(i);
-			writeD(sk._skillId); // Skill Id
-			writeD(sk._level); // Skill Level
-			writeD(sk._reuseBase); // Total reuse delay, seconds
-			writeD(sk._reuseCurrent); // Time remaining, seconds
+			packetWriter.writeD(sk._skillId); // Skill Id
+			packetWriter.writeD(sk._level); // Skill Level
+			packetWriter.writeD(sk._reuseBase); // Total reuse delay, seconds
+			packetWriter.writeD(sk._reuseCurrent); // Time remaining, seconds
 		}
 	}
 

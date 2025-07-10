@@ -11,23 +11,23 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author nexvill
  */
-public class RequestExTryToPutEnchantSupportItem extends L2GameClientPacket
+public class RequestExTryToPutEnchantSupportItem implements IClientIncomingPacket
 {
 	private int _itemId;
 	private int _catalystId;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_catalystId = readD();
-		_itemId = readD();
+		_catalystId = packet.readD();
+		_itemId = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

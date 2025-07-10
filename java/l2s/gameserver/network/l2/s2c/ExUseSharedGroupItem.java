@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.skills.TimeStamp;
 
-public class ExUseSharedGroupItem extends L2GameServerPacket
+public class ExUseSharedGroupItem implements IClientOutgoingPacket
 {
 	private int _itemId, _grpId, _remainedTime, _totalTime;
 
@@ -15,11 +16,11 @@ public class ExUseSharedGroupItem extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_itemId);
-		writeD(_grpId);
-		writeD(_remainedTime);
-		writeD(_totalTime);
+		packetWriter.writeD(_itemId);
+		packetWriter.writeD(_grpId);
+		packetWriter.writeD(_remainedTime);
+		packetWriter.writeD(_totalTime);
 	}
 }

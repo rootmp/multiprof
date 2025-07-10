@@ -1,15 +1,16 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExOlympiadMatchInfo extends L2GameServerPacket
+public class ExOlympiadMatchInfo implements IClientOutgoingPacket
 {
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS("Team 1");
-		writeD(100);
-		writeS("Team 2");
-		writeD(100);
-		writeD(1);
-		writeD(3600);
+		packetWriter.writeS("Team 1");
+		packetWriter.writeD(100);
+		packetWriter.writeS("Team 2");
+		packetWriter.writeD(100);
+		packetWriter.writeD(1);
+		packetWriter.writeD(3600);
 	}
 }

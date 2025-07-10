@@ -4,7 +4,7 @@ import java.util.List;
 
 import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 
-public class ExItemRestoreList extends L2GameServerPacket
+public class ExItemRestoreList implements IClientOutgoingPacket
 {
 	private final int cCategory;
 	private final List<PkItemRestoreNode> items;
@@ -16,16 +16,16 @@ public class ExItemRestoreList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(cCategory);
-		writeD(items.size());
+		packetWriter.writeC(cCategory);
+		packetWriter.writeD(items.size());
 		for (PkItemRestoreNode item : items)
 		{
-			writeD(item.nBrokenItemClassID);
-			writeD(item.nFixedItemClassID);
-			writeC(item.cEnchant);
-			writeC(item.cOrder);
+			packetWriter.writeD(item.nBrokenItemClassID);
+			packetWriter.writeD(item.nFixedItemClassID);
+			packetWriter.writeC(item.cEnchant);
+			packetWriter.writeC(item.cOrder);
 		}
 	}
 

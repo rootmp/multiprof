@@ -1,13 +1,14 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class ExTutorialList extends L2GameServerPacket
+public class ExTutorialList implements IClientOutgoingPacket
 {
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS("");
-		writeD(0x00);
-		writeD(0x00);
-		writeD(0x00);
+		packetWriter.writeS("");
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(0x00);
 	}
 }

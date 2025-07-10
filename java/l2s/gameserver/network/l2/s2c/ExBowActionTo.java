@@ -1,11 +1,12 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 
 /**
  * @author nexvill
  */
-public class ExBowActionTo extends L2GameServerPacket
+public class ExBowActionTo implements IClientOutgoingPacket
 {
 	private int obj_id;
 
@@ -15,8 +16,8 @@ public class ExBowActionTo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(obj_id);
+		packetWriter.writeD(obj_id);
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,7 +11,7 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.templates.item.ItemTemplate;
 
-public class PrivateStoreManageList extends L2GameServerPacket
+public class PrivateStoreManageList implements IClientOutgoingPacket
 {
 	private final int _type;
 	private final int _sellerId;
@@ -84,33 +85,33 @@ public class PrivateStoreManageList extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeC(_type);
+		packetWriter.writeC(_type);
 		if (_type == 1)
 		{
-			writeD(_sellerId);
-			writeD(_package ? 1 : 0);
-			writeQ(_adena);
-			writeD(_sellList0.size());
+			packetWriter.writeD(_sellerId);
+			packetWriter.writeD(_package ? 1 : 0);
+			packetWriter.writeQ(_adena);
+			packetWriter.writeD(_sellList0.size());
 			// Список вещей уже поставленых на продажу
 			for (TradeItem si : _sellList0.values())
 			{
 				writeItemInfo(si);
-				writeQ(si.getOwnersPrice());
-				writeQ(si.getStorePrice());
+				packetWriter.writeQ(si.getOwnersPrice());
+				packetWriter.writeQ(si.getStorePrice());
 			}
-			writeD(_sellList.size());
+			packetWriter.writeD(_sellList.size());
 		}
 		else if (_type == 2)
 		{
 			// Список имеющихся вещей
-			writeD(_sellList.size());
-			writeD(_sellList.size());
+			packetWriter.writeD(_sellList.size());
+			packetWriter.writeD(_sellList.size());
 			for (TradeItem si : _sellList)
 			{
 				writeItemInfo(si);
-				writeQ(si.getStorePrice());
+				packetWriter.writeQ(si.getStorePrice());
 			}
 		}
 	}

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
-public class AskJoinPledgePacket extends L2GameServerPacket
+public class AskJoinPledgePacket implements IClientOutgoingPacket
 {
 	private int _requestorId;
 	private String _pledgeName;
@@ -12,12 +13,12 @@ public class AskJoinPledgePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_requestorId);
-		writeS(""); // Invitor name
-		writeS(_pledgeName);
-		writeD(0x00); // Pledge type
-		writeS(""); // Pledge Unit name
+		packetWriter.writeD(_requestorId);
+		packetWriter.writeS(""); // Invitor name
+		packetWriter.writeS(_pledgeName);
+		packetWriter.writeD(0x00); // Pledge type
+		packetWriter.writeS(""); // Pledge Unit name
 	}
 }

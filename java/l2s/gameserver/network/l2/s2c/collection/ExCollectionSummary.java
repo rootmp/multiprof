@@ -5,22 +5,22 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExCollectionSummary extends L2GameServerPacket
+public class ExCollectionSummary implements IClientOutgoingPacket
 {
 	public ExCollectionSummary()
 	{
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(0);
+		packetWriter.writeD(0);
 		// int count = 0;
-		// writeD(count); // count
+		// packetWriter.writeD(count); // count
 		// for (int i = 0; i < count; i++)
 		// {
-		// writeH(0); // collection id
-		// writeD(0); // expiration time in seconds
+		// packetWriter.writeH(0); // collection id
+		// packetWriter.writeD(0); // expiration time in seconds
 		// }
 	}
 }

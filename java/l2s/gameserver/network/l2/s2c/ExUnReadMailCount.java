@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ import l2s.gameserver.model.mail.Mail;
 /**
  * @author Bonux
  **/
-public class ExUnReadMailCount extends L2GameServerPacket
+public class ExUnReadMailCount implements IClientOutgoingPacket
 {
 	private final int _count;
 
@@ -26,8 +27,8 @@ public class ExUnReadMailCount extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_count);
+		packetWriter.writeD(_count);
 	}
 }

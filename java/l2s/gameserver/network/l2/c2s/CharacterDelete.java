@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +14,7 @@ import l2s.gameserver.network.l2.s2c.CharacterDeleteFailPacket;
 import l2s.gameserver.network.l2.s2c.CharacterDeleteSuccessPacket;
 import l2s.gameserver.network.l2.s2c.CharacterSelectionInfo;
 
-public class CharacterDelete extends L2GameClientPacket
+public class CharacterDelete implements IClientIncomingPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(CharacterDelete.class);
 
@@ -19,14 +22,14 @@ public class CharacterDelete extends L2GameClientPacket
 	private int _charSlot;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_charSlot = readD();
+		_charSlot = packet.readD();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
 		int clan = clanStatus();
 		int online = onlineStatus();
@@ -67,7 +70,7 @@ public class CharacterDelete extends L2GameClientPacket
 
 	private int clanStatus()
 	{
-		int obj = getClient().getObjectIdForSlot(_charSlot);
+		int obj = client.getObjectIdForSlot(_charSlot);
 		if (obj == -1)
 			return 0;
 		if (MySqlDataInsert.simple_get_int("clanid", "characters", "obj_Id=" + obj) > 0)
@@ -81,7 +84,7 @@ public class CharacterDelete extends L2GameClientPacket
 
 	private int onlineStatus()
 	{
-		int obj = getClient().getObjectIdForSlot(_charSlot);
+		int obj = client.getObjectIdForSlot(_charSlot);
 		if (obj == -1)
 			return 0;
 		if (MySqlDataInsert.simple_get_int("online", "characters", "obj_Id=" + obj) > 0)

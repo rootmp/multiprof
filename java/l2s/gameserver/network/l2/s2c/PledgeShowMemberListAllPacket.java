@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ import l2s.gameserver.model.pledge.UnitMember;
 /**
  * @modify: Eden upd 286
  */
-public class PledgeShowMemberListAllPacket extends L2GameServerPacket
+public class PledgeShowMemberListAllPacket implements IClientOutgoingPacket
 {
 	private int _clanObjectId, _clanCrestId, _level, _rank, _reputation, _allianceObjectId, _allianceCrestId;
 	private int _hasCastle, _hasClanHall, _hasInstantClanHall;
@@ -66,55 +67,55 @@ public class PledgeShowMemberListAllPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_pledgeType == Clan.SUBUNIT_MAIN_CLAN ? 0 : 1);
-		writeD(_clanObjectId);
-		writeD(Config.REQUEST_ID);
-		writeD(_pledgeType);
-		writeS(_unitName);
-		writeS(_leaderName);
+		packetWriter.writeD(_pledgeType == Clan.SUBUNIT_MAIN_CLAN ? 0 : 1);
+		packetWriter.writeD(_clanObjectId);
+		packetWriter.writeD(Config.REQUEST_ID);
+		packetWriter.writeD(_pledgeType);
+		packetWriter.writeS(_unitName);
+		packetWriter.writeS(_leaderName);
 
-		writeD(_clanCrestId); // crest id .. is used again
-		writeD(_level);
-		writeD(_hasCastle);
+		packetWriter.writeD(_clanCrestId); // crest id .. is used again
+		packetWriter.writeD(_level);
+		packetWriter.writeD(_hasCastle);
 		if (_hasInstantClanHall > 0)
 		{
-			writeD(1);
-			writeD(_hasInstantClanHall);
+			packetWriter.writeD(1);
+			packetWriter.writeD(_hasInstantClanHall);
 		}
 		else if (_hasClanHall != 0)
 		{
-			writeD(0);
-			writeD(_hasClanHall);
+			packetWriter.writeD(0);
+			packetWriter.writeD(_hasClanHall);
 		}
 		else
 		{
-			writeD(0);
-			writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
 		}
-		writeD(0x00); // Has Fortress
-		writeD(_rank);
-		writeD(_reputation);
-		writeD(_isDisbanded ? 3 : 0);
-		writeD(0x00);
-		writeD(_allianceObjectId);
-		writeS(_allianceName);
-		writeD(_allianceCrestId);
-		writeD(_atClanWar);
-		writeD(0x00);// territory Id
+		packetWriter.writeD(0x00); // Has Fortress
+		packetWriter.writeD(_rank);
+		packetWriter.writeD(_reputation);
+		packetWriter.writeD(_isDisbanded ? 3 : 0);
+		packetWriter.writeD(0x00);
+		packetWriter.writeD(_allianceObjectId);
+		packetWriter.writeS(_allianceName);
+		packetWriter.writeD(_allianceCrestId);
+		packetWriter.writeD(_atClanWar);
+		packetWriter.writeD(0x00);// territory Id
 
-		writeD(_members.size());
+		packetWriter.writeD(_members.size());
 		for (PledgePacketMember m : _members)
 		{
-			writeS(m._name);
-			writeD(m._level);
-			writeD(m._classId);
-			writeD(m._sex);
-			writeD(m._race);
-			writeD(m._online);
-			writeD(m._hasSponsor ? 1 : 0);
-			writeC(m._attendance);
+			packetWriter.writeS(m._name);
+			packetWriter.writeD(m._level);
+			packetWriter.writeD(m._classId);
+			packetWriter.writeD(m._sex);
+			packetWriter.writeD(m._race);
+			packetWriter.writeD(m._online);
+			packetWriter.writeD(m._hasSponsor ? 1 : 0);
+			packetWriter.writeC(m._attendance);
 		}
 	}
 

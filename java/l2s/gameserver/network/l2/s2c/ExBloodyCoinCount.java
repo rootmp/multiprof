@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.item.ItemTemplate;
@@ -6,7 +7,7 @@ import l2s.gameserver.templates.item.ItemTemplate;
 /**
  * @author nexvill
  **/
-public class ExBloodyCoinCount extends L2GameServerPacket
+public class ExBloodyCoinCount implements IClientOutgoingPacket
 {
 	private final long _coins;
 
@@ -19,8 +20,8 @@ public class ExBloodyCoinCount extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeQ(_coins);
+		packetWriter.writeQ(_coins);
 	}
 }

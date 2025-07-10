@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -6,7 +7,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.skills.SkillEntry;
 
-public class GMViewSkillInfoPacket extends L2GameServerPacket
+public class GMViewSkillInfoPacket implements IClientOutgoingPacket
 {
 	private final String _charName;
 	private final Collection<SkillEntry> _skills;
@@ -20,20 +21,20 @@ public class GMViewSkillInfoPacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeS(_charName);
-		writeD(_skills.size());
+		packetWriter.writeS(_charName);
+		packetWriter.writeD(_skills.size());
 		for (SkillEntry skillEntry : _skills)
 		{
 			Skill temp = skillEntry.getTemplate();
-			writeD(temp.isActive() || temp.isToggle() ? 0 : 1); // deprecated? клиентом игнорируется
-			writeD(temp.getDisplayLevel());
-			writeD(temp.getDisplayId());
-			writeD(temp.getReuseSkillId());
-			writeC(_targetChar.isUnActiveSkill(temp.getId()) ? 0x01 : 0x00);
-			writeC(0x00); // Enchantable
+			packetWriter.writeD(temp.isActive() || temp.isToggle() ? 0 : 1); // deprecated? клиентом игнорируется
+			packetWriter.writeD(temp.getDisplayLevel());
+			packetWriter.writeD(temp.getDisplayId());
+			packetWriter.writeD(temp.getReuseSkillId());
+			packetWriter.writeC(_targetChar.isUnActiveSkill(temp.getId()) ? 0x01 : 0x00);
+			packetWriter.writeC(0x00); // Enchantable
 		}
-		writeD(0x00);
+		packetWriter.writeD(0x00);
 	}
 }

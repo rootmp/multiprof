@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Calendar;
 import java.util.Map;
@@ -11,7 +12,7 @@ import l2s.gameserver.templates.StatsSet;
 /**
  * @author nexvill
  */
-public class ExOlympiadRecord extends L2GameServerPacket
+public class ExOlympiadRecord implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final Map<Integer, StatsSet> _playerList;
@@ -47,7 +48,7 @@ public class ExOlympiadRecord extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int totalRank = 0;
 		int totalClassRankers = 0;
@@ -77,26 +78,26 @@ public class ExOlympiadRecord extends L2GameServerPacket
 			}
 		}
 
-		writeD(currCyclePoints);
-		writeD(currCycleWins); // Win Count
-		writeD(currCycleLosses); // Maybe?? loose count
-		writeD(todayFightsLeft);
-		writeD(_player.getClassId().getId()); // player class
-		writeD(totalRank); // previous cycle rank
-		writeD(totalRank > 0 ? _playerList.size() : 0); // previous cycle total rankers
-		writeD(totalRank > 0 ? classRank : 0); // total class rank previous cycle
-		writeD(totalRank > 0 ? totalClassRankers : 0); // total class rankers previous cycle
-		writeD(totalRank > 0 ? classRank : 0); // server class rank previous cycle
-		writeD(totalRank > 0 ? totalClassRankers : 0); // server class rankers previous cycle
-		writeD(points); // previous cycle points
-		writeD(wins); // previous cycle wins
-		writeD(loses); // previous cycle loses
-		writeD(Olympiad.getRank(_player));
-		writeD(cycleYear); // Cycle Year
-		writeD(cycleMonth); // Cycle Month
-		writeC(inProgress); // in progress
-		writeD(cycle);
-		writeC(registered); // is registered
-		writeC(Math.min(type, 1)); // 0 - 3x3 Battles, 1 - Olympiad
+		packetWriter.writeD(currCyclePoints);
+		packetWriter.writeD(currCycleWins); // Win Count
+		packetWriter.writeD(currCycleLosses); // Maybe?? loose count
+		packetWriter.writeD(todayFightsLeft);
+		packetWriter.writeD(_player.getClassId().getId()); // player class
+		packetWriter.writeD(totalRank); // previous cycle rank
+		packetWriter.writeD(totalRank > 0 ? _playerList.size() : 0); // previous cycle total rankers
+		packetWriter.writeD(totalRank > 0 ? classRank : 0); // total class rank previous cycle
+		packetWriter.writeD(totalRank > 0 ? totalClassRankers : 0); // total class rankers previous cycle
+		packetWriter.writeD(totalRank > 0 ? classRank : 0); // server class rank previous cycle
+		packetWriter.writeD(totalRank > 0 ? totalClassRankers : 0); // server class rankers previous cycle
+		packetWriter.writeD(points); // previous cycle points
+		packetWriter.writeD(wins); // previous cycle wins
+		packetWriter.writeD(loses); // previous cycle loses
+		packetWriter.writeD(Olympiad.getRank(_player));
+		packetWriter.writeD(cycleYear); // Cycle Year
+		packetWriter.writeD(cycleMonth); // Cycle Month
+		packetWriter.writeC(inProgress); // in progress
+		packetWriter.writeD(cycle);
+		packetWriter.writeC(registered); // is registered
+		packetWriter.writeC(Math.min(type, 1)); // 0 - 3x3 Battles, 1 - Olympiad
 	}
 }

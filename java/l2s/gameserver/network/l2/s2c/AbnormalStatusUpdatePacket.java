@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
  *
  * @version $Revision: 1.3.2.1.2.6 $ $Date: 2005/04/05 19:41:08 $
  */
-public class AbnormalStatusUpdatePacket extends L2GameServerPacket
+public class AbnormalStatusUpdatePacket implements IClientOutgoingPacket
 {
 	public static final int INFINITIVE_EFFECT = -1;
 	private List<Abnormal> _effects = new ArrayList<>();
@@ -41,15 +42,15 @@ public class AbnormalStatusUpdatePacket extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeH(_effects.size());
+		packetWriter.writeH(_effects.size());
 
 		for (Abnormal temp : _effects)
 		{
-			writeD(temp._skillId);
-			writeH(temp._dat);
-			writeD(temp._abnormalType);
+			packetWriter.writeD(temp._skillId);
+			packetWriter.writeH(temp._dat);
+			packetWriter.writeD(temp._abnormalType);
 			writeOptionalD(temp._duration);
 		}
 	}

@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.model.matching.MatchingRoom;
 
-public class ExMpccRoomInfo extends L2GameServerPacket
+public class ExMpccRoomInfo implements IClientOutgoingPacket
 {
 	private int _index;
 	private int _memberSize;
@@ -26,12 +27,12 @@ public class ExMpccRoomInfo extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeD(_index); // index
-		writeD(_memberSize); // member size 1-50
-		writeD(_minLevel); // min level
-		writeD(_maxLevel); // max level
-		writeD(_lootType); // loot type
-		writeD(_locationId); // location id as party room
-		writeS(_topic); // topic
+		packetWriter.writeD(_index); // index
+		packetWriter.writeD(_memberSize); // member size 1-50
+		packetWriter.writeD(_minLevel); // min level
+		packetWriter.writeD(_maxLevel); // max level
+		packetWriter.writeD(_lootType); // loot type
+		packetWriter.writeD(_locationId); // location id as party room
+		packetWriter.writeS(_topic); // topic
 	}
 }

@@ -1,4 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,7 +37,7 @@ import l2s.gameserver.utils.Util;
  * @see RequestExPostItemList
  * @see RequestExRequestReceivedPostList
  */
-public class RequestExSendPost extends L2GameClientPacket
+public class RequestExSendPost implements IClientIncomingPacket
 {
 	private int _messageType;
 	private String _recieverName, _topic, _body;
@@ -47,14 +50,14 @@ public class RequestExSendPost extends L2GameClientPacket
 	 * format: SdSS dx[dQ] Q
 	 */
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_recieverName = readS(35); // имя адресата
-		_messageType = readD(); // тип письма, 0 простое 1 с запросом оплаты
+		_messageType = packet.readD(); // тип письма, 0 простое 1 с запросом оплаты
 		_topic = readS(Byte.MAX_VALUE); // topic
 		_body = readS(Short.MAX_VALUE); // body
 
-		_count = readD(); // число прикрепленных вещей
+		_count = packet.readD(); // число прикрепленных вещей
 		if ((((_count * 12) + 4) > _buf.remaining()) || (_count > Short.MAX_VALUE) || (_count < 1)) // TODO [G1ta0]
 																									// audit
 		{
@@ -67,8 +70,8 @@ public class RequestExSendPost extends L2GameClientPacket
 
 		for (int i = 0; i < _count; i++)
 		{
-			_items[i] = readD(); // objectId
-			_itemQ[i] = readQ(); // количество
+			_items[i] = packet.readD(); // objectId
+			_itemQ[i] = packet.readQ(); // количество
 			if ((_itemQ[i] < 1) || (ArrayUtils.indexOf(_items, _items[i]) < i))
 			{
 				_count = 0;
@@ -76,7 +79,7 @@ public class RequestExSendPost extends L2GameClientPacket
 			}
 		}
 
-		_price = readQ(); // цена для писем с запросом оплаты
+		_price = packet.readQ(); // цена для писем с запросом оплаты
 
 		if (_price < 0)
 		{
@@ -87,9 +90,9 @@ public class RequestExSendPost extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 		{
 			return;

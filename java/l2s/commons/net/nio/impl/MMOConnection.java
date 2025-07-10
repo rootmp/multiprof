@@ -84,10 +84,10 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 
 	public void recvPacket(ReceivablePacket<T> rp)
 	{
-		if (rp == null)
+		if(rp == null)
 			return;
 
-		if (isClosed())
+		if(isClosed())
 			return;
 
 		_recvQueue.add(rp);
@@ -95,13 +95,13 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 
 	public void sendPacket(SendablePacket<T> sp)
 	{
-		if (sp == null)
+		if(sp == null)
 			return;
 
 		lock();
 		try
 		{
-			if (isClosed())
+			if(isClosed())
 				return;
 
 			_sendQueue.add(sp);
@@ -117,17 +117,17 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 	@SuppressWarnings("unchecked")
 	public void sendPacket(SendablePacket<T>... args)
 	{
-		if (args == null || args.length == 0)
+		if(args == null || args.length == 0)
 			return;
 
 		lock();
 		try
 		{
-			if (isClosed())
+			if(isClosed())
 				return;
 
-			for (SendablePacket<T> sp : args)
-				if (sp != null)
+			for(SendablePacket<T> sp : args)
+				if(sp != null)
 					_sendQueue.add(sp);
 		}
 		finally
@@ -140,7 +140,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 
 	public void sendPackets(List<? extends SendablePacket<T>> args)
 	{
-		if (args == null || args.isEmpty())
+		if(args == null || args.isEmpty())
 			return;
 
 		SendablePacket<T> sp;
@@ -148,11 +148,11 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 		lock();
 		try
 		{
-			if (isClosed())
+			if(isClosed())
 				return;
 
-			for (int i = 0; i < args.size(); i++)
-				if ((sp = args.get(i)) != null)
+			for(int i = 0; i < args.size(); i++)
+				if((sp = args.get(i)) != null)
 					_sendQueue.add(sp);
 		}
 		finally
@@ -177,7 +177,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 		{
 			_selectionKey.interestOps(_selectionKey.interestOps() & ~SelectionKey.OP_READ);
 		}
-		catch (CancelledKeyException e)
+		catch(CancelledKeyException e)
 		{
 			// ignore
 		}
@@ -199,10 +199,10 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 	{
 		try
 		{
-			if (_isPengingWrite.compareAndSet(true, false))
+			if(_isPengingWrite.compareAndSet(true, false))
 				_selectionKey.interestOps(_selectionKey.interestOps() | SelectionKey.OP_WRITE);
 		}
-		catch (CancelledKeyException e)
+		catch(CancelledKeyException e)
 		{
 			// ignore
 		}
@@ -217,7 +217,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 		{
 			_selectionKey.interestOps(_selectionKey.interestOps() & ~SelectionKey.OP_WRITE);
 		}
-		catch (CancelledKeyException e)
+		catch(CancelledKeyException e)
 		{
 			// ignore
 		}
@@ -260,7 +260,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 
 	protected void createWriteBuffer(ByteBuffer buf)
 	{
-		if (_primaryWriteBuffer == null)
+		if(_primaryWriteBuffer == null)
 		{
 			_primaryWriteBuffer = _selectorThread.getPooledBuffer();
 			_primaryWriteBuffer.put(buf);
@@ -274,7 +274,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 			_primaryWriteBuffer.flip();
 			int limit = _primaryWriteBuffer.limit();
 
-			if (remaining >= _primaryWriteBuffer.remaining())
+			if(remaining >= _primaryWriteBuffer.remaining())
 			{
 				temp.put(_primaryWriteBuffer);
 				_selectorThread.recycleBuffer(_primaryWriteBuffer);
@@ -342,7 +342,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 		lock();
 		try
 		{
-			if (isClosed())
+			if(isClosed())
 				return;
 
 			_sendQueue.clear();
@@ -364,7 +364,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 		lock();
 		try
 		{
-			if (isClosed())
+			if(isClosed())
 				return;
 
 			_sendQueue.clear();
@@ -387,7 +387,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 		lock();
 		try
 		{
-			if (isClosed())
+			if(isClosed())
 				return;
 
 			_pendingClose = true;
@@ -401,17 +401,17 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 
 	protected void releaseBuffers()
 	{
-		if (_primaryWriteBuffer != null)
+		if(_primaryWriteBuffer != null)
 		{
 			_selectorThread.recycleBuffer(_primaryWriteBuffer);
 			_primaryWriteBuffer = null;
-			if (_secondaryWriteBuffer != null)
+			if(_secondaryWriteBuffer != null)
 			{
 				_selectorThread.recycleBuffer(_secondaryWriteBuffer);
 				_secondaryWriteBuffer = null;
 			}
 		}
-		if (_readBuffer != null)
+		if(_readBuffer != null)
 		{
 			_selectorThread.recycleBuffer(_readBuffer);
 			_readBuffer = null;
@@ -423,8 +423,8 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 		lock();
 		try
 		{
-			_sendQueue.clear();
-			_recvQueue.clear();
+		_sendQueue.clear();
+		_recvQueue.clear();
 		}
 		finally
 		{

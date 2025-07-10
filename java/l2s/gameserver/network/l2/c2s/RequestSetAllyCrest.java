@@ -1,18 +1,21 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+
 
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Alliance;
 
-public class RequestSetAllyCrest extends L2GameClientPacket
+public class RequestSetAllyCrest implements IClientIncomingPacket
 {
 	private int _length;
 	private byte[] _data;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_length = readD();
+		_length = packet.readD();
 		if (_length == CrestCache.ALLY_CREST_SIZE && _length == _buf.remaining())
 		{
 			_data = new byte[_length];
@@ -22,9 +25,9 @@ public class RequestSetAllyCrest extends L2GameClientPacket
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

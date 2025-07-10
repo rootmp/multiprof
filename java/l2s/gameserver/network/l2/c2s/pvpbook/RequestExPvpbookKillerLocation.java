@@ -8,21 +8,21 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpBookList;
 import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpbookKillerLocation;
 
-public class RequestExPvpbookKillerLocation extends L2GameClientPacket
+public class RequestExPvpbookKillerLocation implements IClientIncomingPacket
 {
 	private String killerName;
 
 	@Override
-	protected boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		killerName = readString();
 		return true;
 	}
 
 	@Override
-	protected void runImpl()
+	public void run(GameClient client)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
 			return;
 

@@ -10,7 +10,7 @@ import l2s.gameserver.utils.ItemFunctions;
 /**
  * @author nexvill
  */
-public class ExSubjugationGacha extends L2GameServerPacket
+public class ExSubjugationGacha implements IClientOutgoingPacket
 {
 	int _zoneId, _count;
 	Player _player;
@@ -23,7 +23,7 @@ public class ExSubjugationGacha extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		_player.reduceAdena(20_000 * _count, true);
 		SubjugationTemplate temp = SubjugationsHolder.getInstance().getFields().get(_zoneId);
@@ -45,42 +45,42 @@ public class ExSubjugationGacha extends L2GameServerPacket
 				rewardCount[5]++;
 		}
 
-		writeD(_count);
+		packetWriter.writeD(_count);
 		if (rewardCount[0] > 0)
 		{
-			writeD(temp.getRewardItems()[0].getId());
-			writeD(rewardCount[0]);
+			packetWriter.writeD(temp.getRewardItems()[0].getId());
+			packetWriter.writeD(rewardCount[0]);
 			ItemFunctions.addItem(_player, temp.getRewardItems()[0].getId(), rewardCount[0], true);
 
 		}
 		if (rewardCount[1] > 0)
 		{
-			writeD(temp.getRewardItems()[1].getId());
-			writeD(rewardCount[1]);
+			packetWriter.writeD(temp.getRewardItems()[1].getId());
+			packetWriter.writeD(rewardCount[1]);
 			ItemFunctions.addItem(_player, temp.getRewardItems()[1].getId(), rewardCount[1], true);
 		}
 		if (rewardCount[2] > 0)
 		{
-			writeD(temp.getRewardItems()[2].getId());
-			writeD(rewardCount[2]);
+			packetWriter.writeD(temp.getRewardItems()[2].getId());
+			packetWriter.writeD(rewardCount[2]);
 			ItemFunctions.addItem(_player, temp.getRewardItems()[2].getId(), rewardCount[2], true);
 		}
 		if (rewardCount[3] > 0)
 		{
-			writeD(temp.getRewardItems()[3].getId());
-			writeD(rewardCount[3]);
+			packetWriter.writeD(temp.getRewardItems()[3].getId());
+			packetWriter.writeD(rewardCount[3]);
 			ItemFunctions.addItem(_player, temp.getRewardItems()[3].getId(), rewardCount[3], true);
 		}
 		if (rewardCount[4] > 0)
 		{
-			writeD(temp.getRewardItems()[4].getId());
-			writeD(rewardCount[4]);
+			packetWriter.writeD(temp.getRewardItems()[4].getId());
+			packetWriter.writeD(rewardCount[4]);
 			ItemFunctions.addItem(_player, temp.getRewardItems()[4].getId(), rewardCount[4], true);
 		}
 		if (rewardCount[5] > 0)
 		{
-			writeD(temp.getRewardItems()[5].getId());
-			writeD(rewardCount[5]);
+			packetWriter.writeD(temp.getRewardItems()[5].getId());
+			packetWriter.writeD(rewardCount[5]);
 			ItemFunctions.addItem(_player, temp.getRewardItems()[5].getId(), rewardCount[5], true);
 		}
 	}

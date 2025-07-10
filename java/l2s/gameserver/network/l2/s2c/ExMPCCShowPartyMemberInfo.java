@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,7 @@ import l2s.gameserver.model.Player;
  * 
  * @author SYS
  */
-public class ExMPCCShowPartyMemberInfo extends L2GameServerPacket
+public class ExMPCCShowPartyMemberInfo implements IClientOutgoingPacket
 {
 	private List<PartyMemberInfo> members;
 
@@ -23,15 +24,15 @@ public class ExMPCCShowPartyMemberInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(members.size()); // Количество членов в пати
+		packetWriter.writeD(members.size()); // Количество членов в пати
 
 		for (PartyMemberInfo member : members)
 		{
-			writeS(member.name); // Имя члена пати
-			writeD(member.object_id); // object Id члена пати
-			writeD(member.class_id); // id класса члена пати
+			packetWriter.writeS(member.name); // Имя члена пати
+			packetWriter.writeD(member.object_id); // object Id члена пати
+			packetWriter.writeD(member.class_id); // id класса члена пати
 		}
 
 		members.clear();

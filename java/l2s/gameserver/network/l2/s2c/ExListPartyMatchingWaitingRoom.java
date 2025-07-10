@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +8,7 @@ import l2s.gameserver.data.xml.holder.InstantZoneHolder;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
 
-public class ExListPartyMatchingWaitingRoom extends L2GameServerPacket
+public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 {
 	private static final int ITEMS_PER_PAGE = 64;
 	private final List<PartyMatchingWaitingInfo> _waitingList = new ArrayList<PartyMatchingWaitingInfo>(ITEMS_PER_PAGE);
@@ -25,19 +26,19 @@ public class ExListPartyMatchingWaitingRoom extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_fullSize);
-		writeD(_waitingList.size());
+		packetWriter.writeD(_fullSize);
+		packetWriter.writeD(_waitingList.size());
 		for (PartyMatchingWaitingInfo waitingInfo : _waitingList)
 		{
-			writeS(waitingInfo.name);
-			writeD(waitingInfo.classId);
-			writeD(waitingInfo.level);
-			writeD(waitingInfo.locationId);
-			writeD(waitingInfo.instanceReuses.size());
+			packetWriter.writeS(waitingInfo.name);
+			packetWriter.writeD(waitingInfo.classId);
+			packetWriter.writeD(waitingInfo.level);
+			packetWriter.writeD(waitingInfo.locationId);
+			packetWriter.writeD(waitingInfo.instanceReuses.size());
 			for (int i : waitingInfo.instanceReuses)
-				writeD(i);
+				packetWriter.writeD(i);
 		}
 	}
 

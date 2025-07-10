@@ -11,7 +11,7 @@ import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
 /**
  * @author nexvill
  */
-public class ExPvpBookShareRevengeList extends L2GameServerPacket
+public class ExPvpBookShareRevengeList implements IClientOutgoingPacket
 {
 	private final int locationShowCount;
 	private final int teleportCount;
@@ -30,9 +30,9 @@ public class ExPvpBookShareRevengeList extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeC(1); // current page
-		writeC(1); // max pages
-		writeD(pvpbookInfos.size()); // size
+		packetWriter.writeC(1); // current page
+		packetWriter.writeC(1); // max pages
+		packetWriter.writeD(pvpbookInfos.size()); // size
 
 		int shareType = 1;
 		for (PvpbookInfo pvpbookInfo : pvpbookInfos)
@@ -42,26 +42,26 @@ public class ExPvpBookShareRevengeList extends L2GameServerPacket
 				shareType = 2;
 			}
 
-			writeD(shareType); // share type
-			writeD(pvpbookInfo.getDeathTime()); // death time
-			writeD(locationShowCount); // nShowKillerCount
-			writeD(teleportCount); // nTeleportKillerCount
-			writeD(1); // nSharedTeleportKillerCount
-			writeD(pvpbookInfo.getKilledObjectId()); // killed user DBID
+			packetWriter.writeD(shareType); // share type
+			packetWriter.writeD(pvpbookInfo.getDeathTime()); // death time
+			packetWriter.writeD(locationShowCount); // nShowKillerCount
+			packetWriter.writeD(teleportCount); // nTeleportKillerCount
+			packetWriter.writeD(1); // nSharedTeleportKillerCount
+			packetWriter.writeD(pvpbookInfo.getKilledObjectId()); // killed user DBID
 			writeString(pvpbookInfo.getKilledName()); // killed user name
 			writeString(pvpbookInfo.getKilledClanName()); // killed user pledge name
-			writeD(pvpbookInfo.getKilledLevel()); // killed user level
-			writeD(ClassId.valueOf(pvpbookInfo.getKilledClassId()).getRace().ordinal()); // killed user race
-			writeD(pvpbookInfo.getKilledClassId()); // killed user class
-			writeD(pvpbookInfo.getKillerObjectId()); // killer id
+			packetWriter.writeD(pvpbookInfo.getKilledLevel()); // killed user level
+			packetWriter.writeD(ClassId.valueOf(pvpbookInfo.getKilledClassId()).getRace().ordinal()); // killed user race
+			packetWriter.writeD(pvpbookInfo.getKilledClassId()); // killed user class
+			packetWriter.writeD(pvpbookInfo.getKillerObjectId()); // killer id
 			writeString(pvpbookInfo.getKillerName()); // killer name
 			writeString(pvpbookInfo.getKillerClanName()); // killer clan name
-			writeD(pvpbookInfo.getKillerLevel()); // killer level
-			writeD(ClassId.valueOf(pvpbookInfo.getKillerClassId()).getRace().ordinal()); // race
-			writeD(pvpbookInfo.getKillerClassId()); // class id
-			writeD(pvpbookInfo.isOnline() ? 2 : 1); // is online
-			writeD(pvpbookInfo.getKarma()); // karma
-			writeD(shareType == 2 ? pvpbookInfo.getDeathTime() : 0); // shared time
+			packetWriter.writeD(pvpbookInfo.getKillerLevel()); // killer level
+			packetWriter.writeD(ClassId.valueOf(pvpbookInfo.getKillerClassId()).getRace().ordinal()); // race
+			packetWriter.writeD(pvpbookInfo.getKillerClassId()); // class id
+			packetWriter.writeD(pvpbookInfo.isOnline() ? 2 : 1); // is online
+			packetWriter.writeD(pvpbookInfo.getKarma()); // karma
+			packetWriter.writeD(shareType == 2 ? pvpbookInfo.getDeathTime() : 0); // shared time
 		}
 	}
 }

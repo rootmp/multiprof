@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.Set;
@@ -7,7 +8,7 @@ import java.util.Set;
  * @author VISTALL
  * @date 6:22/12.06.2011
  */
-public class ExMpccPartymasterList extends L2GameServerPacket
+public class ExMpccPartymasterList implements IClientOutgoingPacket
 {
 	private Set<String> _members = Collections.emptySet();
 
@@ -17,10 +18,10 @@ public class ExMpccPartymasterList extends L2GameServerPacket
 	}
 
 	@Override
-	protected void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_members.size());
+		packetWriter.writeD(_members.size());
 		for (String t : _members)
-			writeS(t);
+			packetWriter.writeS(t);
 	}
 }

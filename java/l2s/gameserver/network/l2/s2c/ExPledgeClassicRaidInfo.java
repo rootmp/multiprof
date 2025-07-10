@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,7 @@ import l2s.gameserver.model.pledge.Clan;
 /**
  * @author Bonux
  **/
-public class ExPledgeClassicRaidInfo extends L2GameServerPacket
+public class ExPledgeClassicRaidInfo implements IClientOutgoingPacket
 {
 	private final int _lastRaidPhase;
 	private final List<Skill> _skills;
@@ -29,14 +30,14 @@ public class ExPledgeClassicRaidInfo extends L2GameServerPacket
 	}
 
 	@Override
-	protected final void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
-		writeD(_lastRaidPhase);
-		writeD(_skills.size());
+		packetWriter.writeD(_lastRaidPhase);
+		packetWriter.writeD(_skills.size());
 		for (Skill skill : _skills)
 		{
-			writeD(skill.getId());
-			writeD(skill.getLevel());
+			packetWriter.writeD(skill.getId());
+			packetWriter.writeD(skill.getLevel());
 		}
 	}
 }
