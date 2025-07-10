@@ -2,7 +2,7 @@
 <list>
 	<!-- EVERYBODY_HAS_ADMIN_RIGHTS -->
 	<char>
-		<PlayerID set="268490070"/>
+		<PlayerID set="268490707"/>
 		<!-- Default is False for all players -->
 		<IsGM set="true"/>
 		<!-- Allows for GM Commands -->
