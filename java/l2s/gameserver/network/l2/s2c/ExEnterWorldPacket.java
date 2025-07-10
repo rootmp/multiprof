@@ -30,5 +30,6 @@ public class ExEnterWorldPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_utcTimeDiff); // Time diff in minutes to UTC
 		packetWriter.writeD(0x00); // UNK
 		packetWriter.writeD(Config.GATEKEEPER_FREE); // UNK
+		return true;
 	}
 }
