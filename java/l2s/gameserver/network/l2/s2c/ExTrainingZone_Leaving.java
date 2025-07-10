@@ -9,7 +9,7 @@ public class ExTrainingZone_Leaving implements IClientOutgoingPacket
 	public static ExTrainingZone_Leaving STATIC = new ExTrainingZone_Leaving();
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		//
 	}

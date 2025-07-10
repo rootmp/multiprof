@@ -16,7 +16,7 @@ public class ExRankingCharBuffzoneNpcInfo implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		long minsToReset = ServerVariables.getLong("buffNpcReset", 0);
 		long diff = minsToReset - System.currentTimeMillis();

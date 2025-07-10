@@ -6,7 +6,7 @@ public class ExPVPMatchCCRetire implements IClientOutgoingPacket
 	public static final L2GameServerPacket STATIC = new ExPVPMatchCCRetire();
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 	}
 }

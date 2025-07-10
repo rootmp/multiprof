@@ -19,7 +19,7 @@ public class ExReceiveShowPostFriend implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_list.size());
 		for (String t : _list.valueCollection())

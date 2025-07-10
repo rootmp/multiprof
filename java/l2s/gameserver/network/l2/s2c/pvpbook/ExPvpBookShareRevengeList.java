@@ -28,7 +28,7 @@ public class ExPvpBookShareRevengeList implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(1); // current page
 		packetWriter.writeC(1); // max pages

@@ -18,7 +18,7 @@ public class ExPkPenaltyListOnlyLoc implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD((int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
 		Collection<Player> players = GameObjectsStorage.getPlayers(false, false);

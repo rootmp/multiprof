@@ -20,7 +20,7 @@ public class ExRankingCharBuffzoneNpcPosition implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_active); // is active
 		packetWriter.writeD(_locX); // x

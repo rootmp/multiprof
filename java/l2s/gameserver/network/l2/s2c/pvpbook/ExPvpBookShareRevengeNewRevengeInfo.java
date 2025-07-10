@@ -18,7 +18,7 @@ public class ExPvpBookShareRevengeNewRevengeInfo implements IClientOutgoingPacke
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(shareType); // share type
 		writeString(killedName);

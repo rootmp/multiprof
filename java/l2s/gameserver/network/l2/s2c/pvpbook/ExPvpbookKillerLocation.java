@@ -15,7 +15,7 @@ public class ExPvpbookKillerLocation implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		writeString(killerName);
 		packetWriter.writeD(killerLoc.getX());

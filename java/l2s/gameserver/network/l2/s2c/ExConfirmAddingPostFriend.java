@@ -26,7 +26,7 @@ public class ExConfirmAddingPostFriend implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeS(_name);
 		packetWriter.writeD(_result);

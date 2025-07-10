@@ -31,7 +31,7 @@ public class ExTrainingZone_Admission implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_timeElapsed); // Training time elapsed in minutes, max : 600 - 10hr RU / 300 - 5hr NA
 		packetWriter.writeD(_timeRemaining); // Time remaining in seconds, max : 36000 - 10hr RU / 18000 - 5hr NA

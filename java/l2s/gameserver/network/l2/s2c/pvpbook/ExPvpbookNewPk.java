@@ -12,7 +12,7 @@ public class ExPvpbookNewPk implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		writeString(killerName);
 	}

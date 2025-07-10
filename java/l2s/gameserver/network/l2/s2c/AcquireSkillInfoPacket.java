@@ -57,7 +57,7 @@ public class AcquireSkillInfoPacket implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_learn.getId());
 		packetWriter.writeD(_learn.getLevel());

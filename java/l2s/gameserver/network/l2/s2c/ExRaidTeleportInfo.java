@@ -16,7 +16,7 @@ public class ExRaidTeleportInfo implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_player.getVarBoolean("freeRaidTeleport", true) ? 0 : 1);
 	}

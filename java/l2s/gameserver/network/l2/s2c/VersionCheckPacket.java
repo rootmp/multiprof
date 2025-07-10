@@ -13,7 +13,7 @@ public class VersionCheckPacket implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		if (_key == null || _key.length == 0)
 		{

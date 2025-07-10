@@ -17,7 +17,7 @@ public class ExRaidTeleportInfo implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		int usedFreeTeleports = _player.getVarInt(PlayerVariables.FREE_RAID_TELEPORTS_USED, 0);
 		if (usedFreeTeleports == 0)

@@ -38,7 +38,7 @@ public class ExListMpccWaiting implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_page);
 		packetWriter.writeD(_list.size());

@@ -23,7 +23,7 @@ public class ExPvpBookList implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(locationShowCount); // Show locations count
 		packetWriter.writeD(teleportCount); // Teleports count

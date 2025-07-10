@@ -13,7 +13,7 @@ public class ExPVPMatchCCRecord implements IClientOutgoingPacket
 		_scores = scores;
 	}
 
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(0x00); // Open/Dont Open
 		packetWriter.writeD(_scores.size());

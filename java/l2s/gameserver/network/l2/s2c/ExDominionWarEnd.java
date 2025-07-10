@@ -10,7 +10,7 @@ public class ExDominionWarEnd implements IClientOutgoingPacket
 	public static final L2GameServerPacket STATIC = new ExDominionWarEnd();
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 	}
 }

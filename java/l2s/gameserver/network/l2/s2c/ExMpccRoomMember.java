@@ -27,7 +27,7 @@ public class ExMpccRoomMember implements IClientOutgoingPacket
 	}
 
 	@Override
-	public void writeImpl()
+	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_type);
 		packetWriter.writeD(_members.size());
