@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2Scripts_Commons" default="jar" basedir=".">
+	<description>
+		This script will build the L2Scripts Server.
+
+		This program is free software; you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation; either version 3, or (at your option)
+		any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program; if not, write to the Free Software
+		Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+		02111-1307, USA.
+
+		http://www.gnu.org/copyleft/gpl.html
+	</description>
+
+	<property name="src" location="java" />
+	<property name="lib" location="dist/libs" />
+	<property name="build" location="build" />
+	<property name="build.classes" location="${build}/classes" />
+
+	<path id="classpath">
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<pathconvert property="jar.list" pathsep=" " refid="classpath">
+		<mapper type="flatten" />
+	</pathconvert>
+	
+	<property name="build.classpath" refid="classpath" />
+	<tstamp>
+		<format property="build.tstamp" pattern="yyyy.MM.dd HH:mm" />
+	</tstamp>
+	
+	<target name="clean" description="Remove the output directories.">
+		<delete dir="${build}" />
+	</target>
+	
+	<target name="init" depends="clean" description="Create the output directories.">
+		<mkdir dir="${build}" />
+	</target>
+
+	<!-- Build l2s-commons4.0.jar -->
+	<target name="compile-commons" depends="init" description="Compile commons source.">
+		<delete dir="${build.classes}" />
+		<mkdir dir="${build.classes}" />
+		<javac srcdir="${src}" destdir="${build.classes}" optimize="on" debug="true" debuglevel="lines,vars,source" source="17" target="17" includeantruntime="false" encoding="UTF-8" classpath="${build.classpath}">
+			<compilerarg value="-Xlint:-serial,-unchecked,-deprecation,-static" />
+		</javac>
+	</target>
+	<target name="commons-jar" depends="compile-commons" description="Compile commons source and make lib.">
+		<jar destfile="${build}/l2s-commons4.0.jar" level="9">
+			<fileset dir="${build.classes}">
+				<exclude name="**/gameserver/**" />
+				<exclude name="**/authserver/**" />
+			</fileset>
+			<!-- Create MMANIFEST.MF file -->
+			<manifest>
+				<attribute name="Class-Path" value="${jar.list} l2s-commons4.0.jar" />
+				<attribute name="Build-By" value="Hl4p3x-iPsicol" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+				<attribute name="Implementation-Build" value="L2Scripts" />
+				<attribute name="Implementation-Version" value="41784" />
+				<attribute name="Implementation-Vendor" value="L2STUDIO-GIT109"/>
+			</manifest>
+		</jar>
+	</target>
+	<target name="jar" depends="commons-jar" description="Compile all source and make jar libraries." />
+</project>

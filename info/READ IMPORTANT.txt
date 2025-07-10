@@ -1,0 +1,19 @@
+Dear clients, to your attention this brief information, it will help you to Orient faster at first in structure of work of our Studio, spend 2 minutes:
+
+1. Forum threads & bug report section (Before submitting a bug report, we recommend reading the next thread: https://mmore.club/threads/how-to-submit-a-new-bug-report-Как-правильно-оформить-баг-репорт.641/):
+- Interlude: https://mmore.club/forums/interlude.114/
+- High-Five: https://mmore.club/forums/high-five.115/
+- Essence: https://mmore.club/forums/essence.128/
+- Classic 2.5 - 4.5: https://mmore.club/forums/classic-2-0-2-8.112/
+- Grand Crusade/Salvation/Orfen/Fufarion/Prelude of war/Homunculus: https://mmore.club/forums/helios-grand-crusade-salvation-orfen.113/
+- Geodata: https://mmore.club/forums/technical-support-geodata.116/
+
+2. Technical support skypes:
+- Urchika (Yuri scripts): Head manager , Change IP binding, additional services request, technical support extension and other financial questions.
+- l2-scripts (Technical Support): Critical bug report and other questions regarding the work of the gameserver.
+
+3. Tarrifs:
+https://mmore.club/threads/technical-support-tarrifs-Тарифы-технической-поддержки.640/
+
+4. Game Clients & Patches:
+https://mmore.club/threads/archive-of-game-clients-Архив-игровых-клиентов.335/

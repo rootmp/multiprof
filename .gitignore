@@ -1,0 +1,5 @@
+dist/
+*.class
+.settings/
+.classpath
+.project
