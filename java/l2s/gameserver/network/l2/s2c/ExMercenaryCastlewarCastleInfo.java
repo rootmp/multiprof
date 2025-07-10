@@ -49,8 +49,8 @@ public class ExMercenaryCastlewarCastleInfo implements IClientOutgoingPacket
 		packetWriter.writeD(castleId);
 		packetWriter.writeD(ownerClanId); // UNK
 		packetWriter.writeD(ownerClanCrestId); // UNK
-		writeString(ownerClanName);
-		writeString(ownerLeaderName);
+		packetWriter.writeString(ownerClanName);
+		packetWriter.writeString(ownerLeaderName);
 		packetWriter.writeD(taxRate); // UNK
 		packetWriter.writeQ(taxesAccumulated);
 		packetWriter.writeQ(unk4); // UNK

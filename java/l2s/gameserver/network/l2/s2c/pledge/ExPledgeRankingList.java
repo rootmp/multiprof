@@ -68,9 +68,9 @@ public class ExPledgeRankingList implements IClientOutgoingPacket
 
 						packetWriter.writeD(i); // rank
 						packetWriter.writeD(previousRank);
-						writeString(clanName);
+						packetWriter.writeString(clanName);
 						packetWriter.writeD(clanLevel);
-						writeString(leaderName);
+						packetWriter.writeString(leaderName);
 						packetWriter.writeD(leaderLevel);
 						packetWriter.writeD(clanMembers);
 						packetWriter.writeD(points);
@@ -134,9 +134,9 @@ public class ExPledgeRankingList implements IClientOutgoingPacket
 
 									packetWriter.writeD(i); // rank
 									packetWriter.writeD(previousRank);
-									writeString(clanName);
+									packetWriter.writeString(clanName);
 									packetWriter.writeD(clanLevel);
-									writeString(leaderName);
+									packetWriter.writeString(leaderName);
 									packetWriter.writeD(leaderLevel);
 									packetWriter.writeD(clanMembers);
 									packetWriter.writeD(points);

@@ -71,7 +71,7 @@ public class AdminForgePacket implements IClientOutgoingPacket
 		}
 		else if ((b == 'T') || (b == 't'))
 		{
-			writeString(string);
+			packetWriter.writeString(string);
 			return true;
 		}
 		else if ((b == 'B') || (b == 'b') || (b == 'X') || (b == 'x'))

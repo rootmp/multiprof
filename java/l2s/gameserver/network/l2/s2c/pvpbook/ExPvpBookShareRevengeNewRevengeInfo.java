@@ -21,7 +21,7 @@ public class ExPvpBookShareRevengeNewRevengeInfo implements IClientOutgoingPacke
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(shareType); // share type
-		writeString(killedName);
-		writeString(killerName);
+		packetWriter.writeString(killedName);
+		packetWriter.writeString(killerName);
 	}
 }

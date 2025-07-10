@@ -380,7 +380,7 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 		if (containsMask(UserInfoType.BASIC_INFO))
 		{
 			packetWriter.writeH(UserInfoType.BASIC_INFO.getBlockLength() + (_name.length() * 2));
-			writeString(_name);
+			packetWriter.writeString(_name);
 			packetWriter.writeC(gm_commands);
 			packetWriter.writeC(_race);
 			packetWriter.writeC(sex);
@@ -528,7 +528,7 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 		if (containsMask(UserInfoType.CLAN))
 		{
 			packetWriter.writeH(UserInfoType.CLAN.getBlockLength() + (_title.length() * 2));
-			writeString(_title);
+			packetWriter.writeString(_title);
 			packetWriter.writeH(pledge_type);
 			packetWriter.writeD(clan_id);
 			packetWriter.writeD(large_clan_crest_id);

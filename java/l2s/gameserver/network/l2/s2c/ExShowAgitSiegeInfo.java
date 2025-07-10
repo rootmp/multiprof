@@ -44,8 +44,8 @@ public class ExShowAgitSiegeInfo implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(info.ch_id);
 			packetWriter.writeD(info.siegeDate);
-			writeString(info.clan_name);
-			writeString(info.leader_name);
+			packetWriter.writeString(info.clan_name);
+			packetWriter.writeString(info.leader_name);
 			packetWriter.writeH(info.getType);
 		});
 	}

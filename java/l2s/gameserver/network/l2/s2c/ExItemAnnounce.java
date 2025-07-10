@@ -61,7 +61,7 @@ public class ExItemAnnounce implements IClientOutgoingPacket
 		// 8 and others - null item name by item_id and icon from chest.
 		
 	    packetWriter.writeC(_type); // announce type
-	    writeString(_name); // name of player
+	    packetWriter.writeString(_name); // name of player
 	    packetWriter.writeD(_itemId); // item id
 	    packetWriter.writeC(_enchantLevel); // enchant level
 	    packetWriter.writeD(_misc); // chest item id

@@ -29,8 +29,8 @@ public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(78); // unk, 78 on JP
 		packetWriter.writeC(0); // unk 0
-		writeString(""); // legend name
-		writeString(""); // clan name
+		packetWriter.writeString(""); // legend name
+		packetWriter.writeString(""); // clan name
 		packetWriter.writeD(Config.REQUEST_ID); // server id
 		packetWriter.writeD(0); // race
 		packetWriter.writeD(0); // sex
@@ -67,8 +67,8 @@ public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 				}
 			}
 
-			writeString(hero.getString(Hero.CHAR_NAME));
-			writeString(hero.getString(Hero.CLAN_NAME));
+			packetWriter.writeString(hero.getString(Hero.CHAR_NAME));
+			packetWriter.writeString(hero.getString(Hero.CLAN_NAME));
 			packetWriter.writeD(Config.REQUEST_ID);
 			ClassId classId = ClassId.valueOf(hero.getInteger(Hero.CLASS_ID));
 			packetWriter.writeD(classId.getRace().ordinal());

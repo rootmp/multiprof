@@ -21,7 +21,7 @@ public class ExUserWatcherTargetStatus implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		writeString(_player.getName()); // name
+		packetWriter.writeString(_player.getName()); // name
 		packetWriter.writeD(Config.REQUEST_ID);
 		packetWriter.writeC(_login); // is online?
 	}

@@ -45,8 +45,8 @@ public class ExPledgeEnemyInfoList implements IClientOutgoingPacket
 			packetWriter.writeD(pointDiff[i]); // point diff?
 			final Clan clan = attackedClans.get(i);
 			packetWriter.writeD(clan.getClanId());
-			writeString(clan.getName());
-			writeString(clan.getLeaderName());
+			packetWriter.writeString(clan.getName());
+			packetWriter.writeString(clan.getLeaderName());
 		}
 	}
 }

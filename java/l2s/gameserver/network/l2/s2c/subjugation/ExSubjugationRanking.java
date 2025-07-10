@@ -47,7 +47,7 @@ public class ExSubjugationRanking implements IClientOutgoingPacket
 
 			if (id < 6)
 			{
-				writeString(player.getString("name"));
+				packetWriter.writeString(player.getString("name"));
 				packetWriter.writeD(player.getInteger("points"));
 				packetWriter.writeD(id); // rank
 			}

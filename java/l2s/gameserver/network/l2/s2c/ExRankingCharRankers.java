@@ -60,8 +60,8 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 						{
 							final StatsSet player = _playerList.get(id);
 
-							writeString(player.getString("name"));
-							writeString(player.getString("clanName"));
+							packetWriter.writeString(player.getString("name"));
+							packetWriter.writeString(player.getString("clanName"));
 							packetWriter.writeD(player.getInteger("level"));
 							packetWriter.writeD(player.getInteger("classId"));
 							packetWriter.writeD(player.getInteger("race"));
@@ -112,8 +112,8 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 								{
 									final StatsSet plr = _playerList.get(id2);
 
-									writeString(plr.getString("name"));
-									writeString(plr.getString("clanName"));
+									packetWriter.writeString(plr.getString("name"));
+									packetWriter.writeString(plr.getString("clanName"));
 									packetWriter.writeD(plr.getInteger("level"));
 									packetWriter.writeD(plr.getInteger("classId"));
 									packetWriter.writeD(plr.getInteger("race"));
@@ -162,8 +162,8 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 
 							if (_race == player.getInteger("race"))
 							{
-								writeString(player.getString("name"));
-								writeString(player.getString("clanName"));
+								packetWriter.writeString(player.getString("name"));
+								packetWriter.writeString(player.getString("clanName"));
 								packetWriter.writeD(player.getInteger("level"));
 								packetWriter.writeD(player.getInteger("classId"));
 								packetWriter.writeD(player.getInteger("race"));
@@ -242,8 +242,8 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 								{
 									final StatsSet plr = raceList.get(id2);
 
-									writeString(plr.getString("name"));
-									writeString(plr.getString("clanName"));
+									packetWriter.writeString(plr.getString("name"));
+									packetWriter.writeString(plr.getString("clanName"));
 									packetWriter.writeD(plr.getInteger("level"));
 									packetWriter.writeD(plr.getInteger("classId"));
 									packetWriter.writeD(plr.getInteger("race"));
@@ -284,8 +284,8 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 						{
 							final StatsSet player = clanList.get(id);
 
-							writeString(player.getString("name"));
-							writeString(player.getString("clanName"));
+							packetWriter.writeString(player.getString("name"));
+							packetWriter.writeString(player.getString("clanName"));
 							packetWriter.writeD(player.getInteger("level"));
 							packetWriter.writeD(player.getInteger("classId"));
 							packetWriter.writeD(player.getInteger("race"));
@@ -346,8 +346,8 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 							final StatsSet player = _playerList.get(id);
 							if (friendList.contains(player.getInteger("charId")))
 							{
-								writeString(player.getString("name"));
-								writeString(player.getString("clanName"));
+								packetWriter.writeString(player.getString("name"));
+								packetWriter.writeString(player.getString("clanName"));
 								packetWriter.writeD(player.getInteger("level"));
 								packetWriter.writeD(player.getInteger("classId"));
 								packetWriter.writeD(player.getInteger("race"));
@@ -379,14 +379,14 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 					{
 						packetWriter.writeD(1);
 
-						writeString(_player.getName());
+						packetWriter.writeString(_player.getName());
 						if (_player.getClan() != null)
 						{
-							writeString(_player.getClan().getName());
+							packetWriter.writeString(_player.getClan().getName());
 						}
 						else
 						{
-							writeString("");
+							packetWriter.writeString("");
 						}
 						packetWriter.writeD(_player.getBaseSubClass().getLevel()); // level
 						packetWriter.writeD(_player.getBaseSubClass().getClassId());

@@ -3,6 +3,9 @@ package l2s.gameserver.model;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.napile.primitive.maps.IntObjectMap;
@@ -13,6 +16,7 @@ import l2s.gameserver.GameServer;
 import l2s.gameserver.model.instances.FenceInstance;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.model.instances.StaticObjectInstance;
+import l2s.gameserver.templates.PlayerKiller;
 
 /**
  * @author VISTALL
@@ -258,5 +262,33 @@ public class GameObjectsStorage
 			return (IntObjectMap<T>) _players;
 		}
 		return null;
+	}
+	
+	public static Stream<Player> getPlayersStream(Predicate<Player> playerPredicate)
+	{
+		return _players.valueCollection().parallelStream().filter(playerPredicate);
+	}
+
+	private static long pk_refresh = 0;
+	private static List<PlayerKiller> pk_player = new ArrayList<>();
+
+	public static int getPkRefresh()
+	{
+		if(pk_refresh == 0)
+			return (int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis());
+		else
+			return (int) TimeUnit.MILLISECONDS.toSeconds(pk_refresh - 10000);
+	}
+
+	//TODO перенести в менеджер
+	public static List<PlayerKiller> getPkPlayers()
+	{
+		long now = System.currentTimeMillis();
+		if(now > pk_refresh)
+		{
+			pk_refresh = now + 30000;
+			pk_player = getPlayersStream(player -> player.isPK() && !player.isInPeaceZone() && player.getReflection().getId() == 0 /*&& player.m_SkillMod.p_show_pk_on_map*/).map(PlayerKiller::new).limit(30).toList();
+		}
+		return pk_player;
 	}
 }

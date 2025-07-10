@@ -23,7 +23,7 @@ public class ExUserWatcherTargetList implements IClientOutgoingPacket
 		packetWriter.writeD(_spectatings.length);
 		for (Spectating s : _spectatings)
 		{
-			writeString(s.getName());
+			packetWriter.writeString(s.getName());
 			packetWriter.writeD(Config.REQUEST_ID); // server id
 			packetWriter.writeD(s.getLevel());
 			packetWriter.writeD(s.getClassId());

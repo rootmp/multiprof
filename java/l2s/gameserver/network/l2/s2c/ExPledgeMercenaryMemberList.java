@@ -48,7 +48,7 @@ public class ExPledgeMercenaryMemberList implements IClientOutgoingPacket
 		 * for (CastleSiegeMercenaryObject mercenaryObject : mercenaries) {
 		 * packetWriter.writeD(receiverObjectId == mercenaryObject.getPlayerObjectId());
 		 * packetWriter.writeD(mercenaryObject.getPlayerObjectId()); // TODO: Check.
-		 * writeString(mercenaryObject.getName());
+		 * packetWriter.writeString(mercenaryObject.getName());
 		 * packetWriter.writeD(mercenaryObject.getClassId().ordinal()); }
 		 */
 	}

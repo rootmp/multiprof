@@ -53,7 +53,7 @@ public class ExRequestInviteParty implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		writeString(name);
+		packetWriter.writeString(name);
 		packetWriter.writeC(reqType);
 		packetWriter.writeC(sayType.ordinal());
 		packetWriter.writeC(charRankGrade);

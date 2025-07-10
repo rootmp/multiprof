@@ -74,8 +74,8 @@ public class ExMercenaryCastlewarCastleSiegeInfo implements IClientOutgoingPacke
 		packetWriter.writeD(castleId);
 		packetWriter.writeD(ownerClanId); // UNK
 		packetWriter.writeD(ownerClanCrestId); // UNK
-		writeString(ownerClanName);
-		writeString(ownerLeaderName);
+		packetWriter.writeString(ownerClanName);
+		packetWriter.writeString(ownerLeaderName);
 		packetWriter.writeD(status);
 		packetWriter.writeD(attackersCount); // Castle Siege Camp
 		packetWriter.writeD(defendersCount); // Defenders' Camp

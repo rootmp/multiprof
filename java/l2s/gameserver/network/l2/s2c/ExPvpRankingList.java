@@ -70,8 +70,8 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 						{
 							final StatsSet player = plrList.get(id);
 
-							writeString(player.getString("name"));
-							writeString(player.getString("clanName"));
+							packetWriter.writeString(player.getString("name"));
+							packetWriter.writeString(player.getString("clanName"));
 							packetWriter.writeD(player.getInteger("level"));
 							packetWriter.writeD(player.getInteger("race"));
 							packetWriter.writeD(player.getInteger("classId"));
@@ -93,8 +93,8 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 							if (player.getInteger("charId") == _player.getObjectId())
 							{
 								found = true;
-								writeString(player.getString("name"));
-								writeString(player.getString("clanName"));
+								packetWriter.writeString(player.getString("name"));
+								packetWriter.writeString(player.getString("clanName"));
 								packetWriter.writeD(player.getInteger("level"));
 								packetWriter.writeD(player.getInteger("race"));
 								packetWriter.writeD(player.getInteger("classId"));
@@ -136,8 +136,8 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 
 							if (_race == player.getInteger("race"))
 							{
-								writeString(player.getString("name"));
-								writeString(player.getString("clanName"));
+								packetWriter.writeString(player.getString("name"));
+								packetWriter.writeString(player.getString("clanName"));
 								packetWriter.writeD(player.getInteger("level"));
 								packetWriter.writeD(player.getInteger("race"));
 								packetWriter.writeD(player.getInteger("classId"));
@@ -175,8 +175,8 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 							if (player.getInteger("charId") == _player.getObjectId())
 							{
 								found = true;
-								writeString(player.getString("name"));
-								writeString(player.getString("clanName"));
+								packetWriter.writeString(player.getString("name"));
+								packetWriter.writeString(player.getString("clanName"));
 								packetWriter.writeD(player.getInteger("level"));
 								packetWriter.writeD(player.getInteger("race"));
 								packetWriter.writeD(player.getInteger("classId"));
@@ -218,8 +218,8 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 						{
 							final StatsSet player = clanList.get(id);
 
-							writeString(player.getString("name"));
-							writeString(player.getString("clanName"));
+							packetWriter.writeString(player.getString("name"));
+							packetWriter.writeString(player.getString("clanName"));
 							packetWriter.writeD(player.getInteger("level"));
 							packetWriter.writeD(player.getInteger("race"));
 							packetWriter.writeD(player.getInteger("classId"));
@@ -266,8 +266,8 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 							int i = 1;
 							if (friendList.contains(player.getInteger("charId")))
 							{
-								writeString(player.getString("name"));
-								writeString(player.getString("clanName"));
+								packetWriter.writeString(player.getString("name"));
+								packetWriter.writeString(player.getString("clanName"));
 								packetWriter.writeD(player.getInteger("level"));
 								packetWriter.writeD(player.getInteger("race"));
 								packetWriter.writeD(player.getInteger("classId"));
@@ -291,8 +291,8 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 								if (_player.getObjectId() == player.getInteger("charId"))
 								{
 									packetWriter.writeD(1);
-									writeString(player.getString("name"));
-									writeString(player.getString("clanName"));
+									packetWriter.writeString(player.getString("name"));
+									packetWriter.writeString(player.getString("clanName"));
 									packetWriter.writeD(player.getInteger("level"));
 									packetWriter.writeD(player.getInteger("race"));
 									packetWriter.writeD(player.getInteger("classId"));

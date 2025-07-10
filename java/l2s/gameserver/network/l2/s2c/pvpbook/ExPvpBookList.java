@@ -30,8 +30,8 @@ public class ExPvpBookList implements IClientOutgoingPacket
 		packetWriter.writeD(pvpbookInfos.size());
 		for (PvpbookInfo pvpbookInfo : pvpbookInfos)
 		{
-			writeString(pvpbookInfo.getKillerName()); // Char name
-			writeString(pvpbookInfo.getKillerClanName()); // Clan name
+			packetWriter.writeString(pvpbookInfo.getKillerName()); // Char name
+			packetWriter.writeString(pvpbookInfo.getKillerClanName()); // Clan name
 			packetWriter.writeD(pvpbookInfo.getKillerLevel()); // Level
 			packetWriter.writeD(ClassId.valueOf(pvpbookInfo.getKillerClassId()).getRace().ordinal()); // Race
 			packetWriter.writeD(pvpbookInfo.getKillerClassId()); // Class ID

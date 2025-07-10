@@ -24,7 +24,7 @@ public class ExPledgeContributionList implements IClientOutgoingPacket
 		packetWriter.writeD(_clan.getAllMembers().size());
 		for (UnitMember member : _clan.getAllMembers())
 		{
-			writeString(member.getName());
+			packetWriter.writeString(member.getName());
 			if (CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.WEEKLY_CONTRIBUTION) != null && CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.TOTAL_CONTRIBUTION) != null)
 			{
 				packetWriter.writeD(Integer.parseInt(CharacterVariablesDAO.getInstance().getVarFromPlayer(member.getObjectId(), PlayerVariables.WEEKLY_CONTRIBUTION)));

@@ -20,7 +20,7 @@ public class ExPvpBookShareRevengeKillerLocation implements IClientOutgoingPacke
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		writeString(killerName);
+		packetWriter.writeString(killerName);
 		packetWriter.writeD(killerLoc.getX());
 		packetWriter.writeD(killerLoc.getY());
 		packetWriter.writeD(killerLoc.getZ());

@@ -59,8 +59,8 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 						for (Integer id : _playerList.keySet())
 						{
 							final StatsSet player = _playerList.get(id);
-							writeString(player.getString("name")); // name
-							writeString(player.getString("clanName")); // clan name
+							packetWriter.writeString(player.getString("name")); // name
+							packetWriter.writeString(player.getString("clanName")); // clan name
 							packetWriter.writeD(id); // rank
 
 							if (_snapshotList.size() > 0)
@@ -114,8 +114,8 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 								for (int id2 = first; id2 <= last; id2++)
 								{
 									final StatsSet plr = _playerList.get(id2);
-									writeString(plr.getString("name"));
-									writeString(plr.getString("clanName"));
+									packetWriter.writeString(plr.getString("name"));
+									packetWriter.writeString(plr.getString("clanName"));
 									packetWriter.writeD(id2);
 									if (_snapshotList.size() > 0)
 									{
@@ -173,8 +173,8 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 							final StatsSet player = _playerList.get(id);
 							if (_classId == player.getInteger("classId"))
 							{
-								writeString(player.getString("name"));
-								writeString(player.getString("clanName"));
+								packetWriter.writeString(player.getString("name"));
+								packetWriter.writeString(player.getString("clanName"));
 								packetWriter.writeD(i); // class rank
 								if (_snapshotList.size() > 0)
 								{
@@ -250,8 +250,8 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 								for (int id2 = first; id2 <= last; id2++)
 								{
 									final StatsSet plr = classList.get(id2);
-									writeString(plr.getString("name"));
-									writeString(plr.getString("clanName"));
+									packetWriter.writeString(plr.getString("name"));
+									packetWriter.writeString(plr.getString("clanName"));
 									packetWriter.writeD(id2); // class rank
 									packetWriter.writeD(id2);
 									packetWriter.writeD(Config.REQUEST_ID);

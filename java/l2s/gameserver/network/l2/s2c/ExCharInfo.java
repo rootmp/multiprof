@@ -352,7 +352,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 		packetWriter.writeD(hairColor);
 		packetWriter.writeD(face);
 
-		writeString(title);
+		packetWriter.writeString(title);
 		packetWriter.writeD(clanId);
 		packetWriter.writeD(clanCrestId);
 		packetWriter.writeD(allyId);
@@ -439,7 +439,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 		packetWriter.writeD(y);
 		packetWriter.writeD(z);
 		packetWriter.writeD(boatId); // nVehicleID
-		writeString(name);
+		packetWriter.writeString(name);
 		packetWriter.writeC(dead); // is player dead
 		packetWriter.writeC(_specialMountId);
 	}

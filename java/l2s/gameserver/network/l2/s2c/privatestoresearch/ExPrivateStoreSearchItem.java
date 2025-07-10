@@ -65,7 +65,7 @@ public class ExPrivateStoreSearchItem implements IClientOutgoingPacket
 		packetWriter.writeD(items.size());
 		for (Item item : items)
 		{
-			writeString(item.getOwnerName());
+			packetWriter.writeString(item.getOwnerName());
 			packetWriter.writeC(item.getStoreType());
 			packetWriter.writeQ(item.getTradeItem().getOwnersPrice());
 			packetWriter.writeD(item.getLoc().getX());

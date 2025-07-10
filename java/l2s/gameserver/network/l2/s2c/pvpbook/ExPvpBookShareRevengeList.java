@@ -48,14 +48,14 @@ public class ExPvpBookShareRevengeList implements IClientOutgoingPacket
 			packetWriter.writeD(teleportCount); // nTeleportKillerCount
 			packetWriter.writeD(1); // nSharedTeleportKillerCount
 			packetWriter.writeD(pvpbookInfo.getKilledObjectId()); // killed user DBID
-			writeString(pvpbookInfo.getKilledName()); // killed user name
-			writeString(pvpbookInfo.getKilledClanName()); // killed user pledge name
+			packetWriter.writeString(pvpbookInfo.getKilledName()); // killed user name
+			packetWriter.writeString(pvpbookInfo.getKilledClanName()); // killed user pledge name
 			packetWriter.writeD(pvpbookInfo.getKilledLevel()); // killed user level
 			packetWriter.writeD(ClassId.valueOf(pvpbookInfo.getKilledClassId()).getRace().ordinal()); // killed user race
 			packetWriter.writeD(pvpbookInfo.getKilledClassId()); // killed user class
 			packetWriter.writeD(pvpbookInfo.getKillerObjectId()); // killer id
-			writeString(pvpbookInfo.getKillerName()); // killer name
-			writeString(pvpbookInfo.getKillerClanName()); // killer clan name
+			packetWriter.writeString(pvpbookInfo.getKillerName()); // killer name
+			packetWriter.writeString(pvpbookInfo.getKillerClanName()); // killer clan name
 			packetWriter.writeD(pvpbookInfo.getKillerLevel()); // killer level
 			packetWriter.writeD(ClassId.valueOf(pvpbookInfo.getKillerClassId()).getRace().ordinal()); // race
 			packetWriter.writeD(pvpbookInfo.getKillerClassId()); // class id
