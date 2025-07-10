@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="7"><!--Rogue-->
+		<skill id="4" level="1" min_level="20" cost="1000"/><!--Fast Run-->
+		<skill id="209" level="1" min_level="20" cost="1000"/><!--Dagger Mastery-->
+		<skill id="233" level="1" min_level="20" cost="1000"/><!--Light Armor Mastery-->
+		<skill id="233" level="2" min_level="20" cost="1000"/><!--Light Armor Mastery-->
+		<skill id="208" level="1" min_level="20" cost="1000"/><!--Bow Mastery-->
+		<skill id="208" level="2" min_level="20" cost="1000"/><!--Bow Mastery-->
+		<skill id="208" level="3" min_level="20" cost="1000"/><!--Bow Mastery-->
+		<skill id="45105" level="1" min_level="20" cost="1000"/><!--Empower-->
+		<skill id="45176" level="1" min_level="20" cost="1000"/><!--HP Recovery-->
+		<skill id="45177" level="1" min_level="20" cost="1000"/><!--MP Recovery-->
+		<skill id="45107" level="1" min_level="20" cost="1000"/><!--Wind Walk-->
+		<skill id="1068" level="2" min_level="20" cost="1000"/><!--Might-->
+		<skill id="56" level="10" min_level="20" cost="1000"/><!--Power Shot-->
+		<skill id="56" level="11" min_level="20" cost="1000"/><!--Power Shot-->
+		<skill id="56" level="12" min_level="20" cost="1000"/><!--Power Shot-->
+		<skill id="27" level="1" min_level="20" cost="1000"/><!--Unlock-->
+		<skill id="45104" level="1" min_level="20" cost="1000"/><!--Acumen-->
+		<skill id="16" level="10" min_level="20" cost="1000"/><!--Mortal Blow-->
+		<skill id="16" level="11" min_level="20" cost="1000"/><!--Mortal Blow-->
+		<skill id="16" level="12" min_level="20" cost="1000"/><!--Mortal Blow-->
+		<skill id="91" level="2" min_level="20" cost="1000"/><!--Ability to Protect-->
+		<skill id="45111" level="1" min_level="20" cost="1000"/><!--Haste-->
+		<skill id="45109" level="1" min_level="20" cost="1000"/><!--Focus-->
+		<skill id="45113" level="1" min_level="20" cost="1000"/><!--Clarity-->
+		<skill id="45110" level="1" min_level="20" cost="1000"/><!--Death Whisper-->
+		<skill id="1040" level="2" min_level="20" cost="1000"/><!--Shield-->
+		<skill id="233" level="3" min_level="22" cost="2800"/><!--Light Armor Mastery-->
+		<skill id="208" level="4" min_level="22" cost="2800"/><!--Bow Mastery-->
+		<skill id="56" level="13" min_level="22" cost="2800"/><!--Power Shot-->
+		<skill id="16" level="13" min_level="22" cost="2800"/><!--Mortal Blow-->
+		<skill id="208" level="5" min_level="23" cost="2800"/><!--Bow Mastery-->
+		<skill id="56" level="14" min_level="23" cost="2800"/><!--Power Shot-->
+		<skill id="16" level="14" min_level="23" cost="2800"/><!--Mortal Blow-->
+		<skill id="209" level="2" min_level="24" cost="2800"/><!--Dagger Mastery-->
+		<skill id="233" level="4" min_level="24" cost="2800"/><!--Light Armor Mastery-->
+		<skill id="208" level="6" min_level="24" cost="2800"/><!--Bow Mastery-->
+		<skill id="148" level="1" min_level="24" cost="2800"/><!--Vital Force-->
+		<skill id="193" level="1" min_level="24" cost="2800"/><!--Critical Damage-->
+		<skill id="56" level="15" min_level="24" cost="2800"/><!--Power Shot-->
+		<skill id="27" level="2" min_level="24" cost="2800"/><!--Unlock-->
+		<skill id="16" level="15" min_level="24" cost="2800"/><!--Mortal Blow-->
+		<skill id="256" level="1" min_level="24" cost="2800"/><!--Accuracy-->
+		<skill id="198" level="1" min_level="24" cost="2800"/><!--Boost Evasion-->
+		<skill id="77" level="2" min_level="25" cost="2800"/><!--Ability to Attack-->
+		<skill id="209" level="3" min_level="26" cost="5700"/><!--Dagger Mastery-->
+		<skill id="233" level="5" min_level="26" cost="5700"/><!--Light Armor Mastery-->
+		<skill id="208" level="7" min_level="26" cost="5700"/><!--Bow Mastery-->
+		<skill id="56" level="16" min_level="26" cost="5700"/><!--Power Shot-->
+		<skill id="16" level="16" min_level="26" cost="5700"/><!--Mortal Blow-->
+		<skill id="208" level="8" min_level="27" cost="5700"/><!--Bow Mastery-->
+		<skill id="56" level="17" min_level="27" cost="5700"/><!--Power Shot-->
+		<skill id="16" level="17" min_level="27" cost="5700"/><!--Mortal Blow-->
+		<skill id="111" level="1" min_level="28" cost="5700"/><!--Ultimate Evasion-->
+		<skill id="225" level="1" min_level="28" cost="5700"/><!--Acrobatic Move-->
+		<skill id="169" level="1" min_level="28" cost="5700"/><!--Quick Step-->
+		<skill id="209" level="4" min_level="28" cost="5700"/><!--Dagger Mastery-->
+		<skill id="233" level="6" min_level="28" cost="5700"/><!--Light Armor Mastery-->
+		<skill id="208" level="9" min_level="28" cost="5700"/><!--Bow Mastery-->
+		<skill id="56" level="18" min_level="28" cost="5700"/><!--Power Shot-->
+		<skill id="27" level="3" min_level="28" cost="5700"/><!--Unlock-->
+		<skill id="16" level="18" min_level="28" cost="5700"/><!--Mortal Blow-->
+		<skill id="137" level="1" min_level="28" cost="5700"/><!--Critical Rate-->
+		<skill id="209" level="5" min_level="30" cost="11000"/><!--Dagger Mastery-->
+		<skill id="233" level="7" min_level="30" cost="11000"/><!--Light Armor Mastery-->
+		<skill id="208" level="10" min_level="30" cost="11000"/><!--Bow Mastery-->
+		<skill id="45105" level="2" min_level="30" cost="11000"/><!--Empower-->
+		<skill id="45106" level="1" min_level="30" cost="11000"/><!--Wild Magic-->
+		<skill id="45112" level="1" min_level="30" cost="11000"/><!--Berserker Spirit-->
+		<skill id="45107" level="2" min_level="30" cost="11000"/><!--Wind Walk-->
+		<skill id="45108" level="1" min_level="30" cost="11000"/><!--Magic Barrier-->
+		<skill id="56" level="19" min_level="30" cost="11000"/><!--Power Shot-->
+		<skill id="45104" level="2" min_level="30" cost="11000"/><!--Acumen-->
+		<skill id="16" level="19" min_level="30" cost="11000"/><!--Mortal Blow-->
+		<skill id="45109" level="2" min_level="30" cost="11000"/><!--Focus-->
+		<skill id="45113" level="2" min_level="30" cost="11000"/><!--Clarity-->
+		<skill id="45110" level="2" min_level="30" cost="11000"/><!--Death Whisper-->
+		<skill id="208" level="11" min_level="31" cost="11000"/><!--Bow Mastery-->
+		<skill id="56" level="20" min_level="31" cost="11000"/><!--Power Shot-->
+		<skill id="16" level="20" min_level="31" cost="11000"/><!--Mortal Blow-->
+		<skill id="209" level="6" min_level="32" cost="11000"/><!--Dagger Mastery-->
+		<skill id="233" level="8" min_level="32" cost="11000"/><!--Light Armor Mastery-->
+		<skill id="208" level="12" min_level="32" cost="11000"/><!--Bow Mastery-->
+		<skill id="148" level="2" min_level="32" cost="11000"/><!--Vital Force-->
+		<skill id="193" level="2" min_level="32" cost="11000"/><!--Critical Damage-->
+		<skill id="56" level="21" min_level="32" cost="11000"/><!--Power Shot-->
+		<skill id="27" level="4" min_level="32" cost="11000"/><!--Unlock-->
+		<skill id="16" level="21" min_level="32" cost="11000"/><!--Mortal Blow-->
+		<skill id="209" level="7" min_level="34" cost="20000"/><!--Dagger Mastery-->
+		<skill id="233" level="9" min_level="34" cost="20000"/><!--Light Armor Mastery-->
+		<skill id="208" level="13" min_level="34" cost="20000"/><!--Bow Mastery-->
+		<skill id="56" level="22" min_level="34" cost="20000"/><!--Power Shot-->
+		<skill id="16" level="22" min_level="34" cost="20000"/><!--Mortal Blow-->
+		<skill id="208" level="14" min_level="35" cost="20000"/><!--Bow Mastery-->
+		<skill id="56" level="23" min_level="35" cost="20000"/><!--Power Shot-->
+		<skill id="16" level="23" min_level="35" cost="20000"/><!--Mortal Blow-->
+		<skill id="171" level="1" min_level="36" cost="20000"/><!--Esprit-->
+		<skill id="209" level="8" min_level="36" cost="20000"/><!--Dagger Mastery-->
+		<skill id="233" level="10" min_level="36" cost="20000"/><!--Light Armor Mastery-->
+		<skill id="208" level="15" min_level="36" cost="20000"/><!--Bow Mastery-->
+		<skill id="56" level="24" min_level="36" cost="20000"/><!--Power Shot-->
+		<skill id="27" level="5" min_level="36" cost="20000"/><!--Unlock-->
+		<skill id="16" level="24" min_level="36" cost="20000"/><!--Mortal Blow-->
+		<skill id="168" level="1" min_level="36" cost="20000"/><!--Attack Speed Boost-->
+		<skill id="47333" level="1" min_level="20" cost="1000"><!--Acrobatic Body-->
+			<blocked_skills>
+				<skill id="70"/> <!-- ??? -->
+			</blocked_skills>
+		</skill>
+		<skill id="47333" level="2" min_level="30" cost="11000"/><!--Acrobatic Body-->
+	</normal_skill_tree>
+</list>

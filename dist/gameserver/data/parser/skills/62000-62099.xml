@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="62001" levels="1" name="White Assassin Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.scroll_of_verification_i06"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="62002" levels="1" name="Mount Griffin">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.griffin_vehicle"/>
+		<set name="hitTime" value="1000"/>
+		<set name="irreplaceable_buff" value="true"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="transform"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSkillTimePermanent" value="true"/>
+		<set name="hitCancelTime" value="500"/>
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<cond>
+			<player can_transform="204"/>
+		</cond>
+		<for>
+			<effect name="Transformation" value="204"/>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="changebody"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="turn_stone"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="buff_special_multi"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+		</for>
+	</skill>
+</list>

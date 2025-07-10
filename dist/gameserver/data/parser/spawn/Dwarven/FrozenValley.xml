@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="114054" y="-173316" z="-608" h="19488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="114458" y="-173245" z="-656" h="459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="114703" y="-173053" z="-640" h="23521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116660" y="-176484" z="-888" h="51484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115441" y="-174377" z="-872" h="22516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116307" y="-174047" z="-848" h="6258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115924" y="-175106" z="-992" h="57022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115017" y="-174416" z="-896" h="7871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116489" y="-175688" z="-1064" h="25425" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116315" y="-175195" z="-1032" h="56370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116779" y="-174043" z="-840" h="18794" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115863" y="-174946" z="-984" h="50875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115795" y="-174031" z="-832" h="21687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="114933" y="-174600" z="-944" h="19121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115495" y="-174540" z="-896" h="30752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115632" y="-174051" z="-824" h="22210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116250" y="-174073" z="-848" h="27259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115102" y="-174044" z="-800" h="20685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116551" y="-174006" z="-832" h="19239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116803" y="-174065" z="-840" h="4178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116625" y="-174074" z="-856" h="2058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116456" y="-173997" z="-840" h="2527" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116629" y="-174078" z="-856" h="7540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115370" y="-174009" z="-808" h="12101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116133" y="-173836" z="-832" h="13883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116557" y="-174778" z="-1000" h="47094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116217" y="-174058" z="-848" h="19101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="114842" y="-174046" z="-856" h="15329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115975" y="-174026" z="-848" h="27435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115161" y="-173994" z="-800" h="5753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116313" y="-174078" z="-848" h="47999" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116578" y="-174059" z="-832" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116433" y="-174042" z="-840" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115010" y="-173941" z="-776" h="14213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116288" y="-174060" z="-848" h="37941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115201" y="-174080" z="-800" h="12813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115770" y="-174042" z="-832" h="6575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115315" y="-174708" z="-912" h="15030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="114931" y="-174008" z="-824" h="6984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116609" y="-173900" z="-816" h="37404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116488" y="-173717" z="-776" h="29305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115391" y="-173841" z="-792" h="6591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116628" y="-174059" z="-856" h="14907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116488" y="-173546" z="-728" h="8260" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115793" y="-173879" z="-824" h="19239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115470" y="-174064" z="-816" h="54142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116120" y="-174029" z="-848" h="40748" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115873" y="-173747" z="-808" h="41068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116298" y="-173565" z="-744" h="36339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115788" y="-173546" z="-760" h="53905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115992" y="-173402" z="-736" h="37200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115606" y="-172987" z="-688" h="49342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115676" y="-172293" z="-592" h="58320" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="114987" y="-172445" z="-560" h="55222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115113" y="-173091" z="-688" h="60497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115160" y="-172559" z="-624" h="46266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="114677" y="-172784" z="-584" h="4362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115157" y="-173209" z="-696" h="50077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115980" y="-173651" z="-784" h="48689" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116637" y="-173708" z="-760" h="2996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115626" y="-173615" z="-776" h="11080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116181" y="-173573" z="-776" h="7710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115442" y="-173781" z="-768" h="51301" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116437" y="-173566" z="-736" h="45269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116052" y="-173585" z="-784" h="4074" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116216" y="-173422" z="-728" h="44317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115917" y="-173454" z="-760" h="64612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116222" y="-173238" z="-704" h="14734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116165" y="-173324" z="-728" h="47931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115277" y="-172827" z="-672" h="8672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115134" y="-173149" z="-688" h="11446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115369" y="-173062" z="-704" h="21169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115754" y="-172452" z="-608" h="4074" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115172" y="-172300" z="-560" h="41121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115431" y="-172353" z="-592" h="13387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="115118" y="-173204" z="-696" h="45184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115131" y="-172334" z="-560" h="23726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115167" y="-173018" z="-680" h="1069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="115507" y="-172275" z="-568" h="30357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116737" y="-174325" z="-912" h="56302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116926" y="-174073" z="-816" h="16157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116542" y="-174036" z="-832" h="7654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117046" y="-174063" z="-792" h="5090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116984" y="-174062" z="-808" h="24814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="116676" y="-173993" z="-832" h="10669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="117014" y="-174078" z="-808" h="12668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="117172" y="-175116" z="-1000" h="24891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="117001" y="-174075" z="-808" h="6802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117035" y="-174031" z="-792" h="58096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116908" y="-173888" z="-776" h="23381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117104" y="-173745" z="-720" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116804" y="-173588" z="-720" h="39664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117639" y="-173024" z="-456" h="56910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117510" y="-173933" z="-672" h="58961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117864" y="-173004" z="-408" h="34344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118367" y="-172604" z="-224" h="51708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118834" y="-173480" z="-280" h="1069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118185" y="-173747" z="-504" h="60494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118100" y="-172287" z="-208" h="34122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118439" y="-172869" z="-248" h="27881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="118337" y="-172685" z="-256" h="686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118792" y="-173601" z="-320" h="54398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116950" y="-173053" z="-528" h="26634" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="117973" y="-172600" z="-304" h="41602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="118148" y="-172242" z="-168" h="61356" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="118069" y="-172339" z="-232" h="28132" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117360" y="-172927" z="-352" h="45749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117329" y="-172917" z="-344" h="25311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="117869" y="-172367" z="-240" h="64395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118423" y="-173688" z="-432" h="33898" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="118207" y="-172210" z="-168" h="13973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118626" y="-173516" z="-344" h="50223" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117469" y="-172576" z="-128" h="60136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="118083" y="-172395" z="-240" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117622" y="-172628" z="-272" h="32741" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117955" y="-172295" z="-240" h="35487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20539" /> <!-- Elder Longtail Keltir -->
+		<point x="117428" y="-172550" z="-120" h="2170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="117767" y="-172219" z="-208" h="26324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="117961" y="-172558" z="-296" h="63009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118819" y="-173140" z="-168" h="63657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="118309" y="-172383" z="-176" h="55542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20533" /> <!-- Longtail Keltir -->
+		<point x="116996" y="-172932" z="-456" h="62285" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30554" /> <!-- Bolter -->
+		<point x="112656" y="-174864" z="-608" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30601" /> <!-- Newbie Guide -->
+		<point x="115632" y="-177996" z="-896" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30518" /> <!-- Garita -->
+		<point x="115900" y="-177316" z="-880" h="50000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30650" /> <!-- Gerald -->
+		<point x="114990" y="-177294" z="-856" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30540" /> <!-- Wirphy -->
+		<point x="115072" y="-178176" z="-864" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30519" /> <!-- Mion -->
+		<point x="116268" y="-177524" z="-880" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30545" /> <!-- Proton -->
+		<point x="115183" y="-176728" z="-784" h="59228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30546" /> <!-- Dinkey -->
+		<point x="114969" y="-176752" z="-784" h="26232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31035" /> <!-- Protector -->
+		<point x="115910" y="-174036" z="-840" h="27513" />
+	</spawn>
+</list>

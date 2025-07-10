@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="52001" levels="1" name="Flag Display">
+		<set name="icon" value="icon.weapon_fort_flag_i00"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="castRange" value="85"/>
+		<set name="hitTime" value="15000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="80"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="FORTRESS_FLAGPOLE"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_FLAGPOLE"/>
+		<set name="skillType" value="TAKEFORTRESS"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true" />
+		<set name="isSkillTimePermanent" value="true" />
+	</skill>
+	<skill id="52002" levels="1" name="Flag Power - Warrior">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="icon" value="icon.skill1298"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52003" levels="1" name="Flag Power - Knight">
+		<set name="icon" value="icon.skill0110"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52004" levels="1" name="Flag Power - Rogue">
+		<set name="icon" value="icon.skill0111"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52005" levels="1" name="Flag Power - Archer">
+		<set name="icon" value="icon.skill0111"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52006" levels="1" name="Flag Power - Mage">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1072"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52007" levels="1" name="Flag Power - Summoner">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill0048"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52008" levels="1" name="Flag Power - Healer">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1072"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52009" levels="1" name="Flag Power - Enchanter">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1201"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52010" levels="1" name="Flag Power - Bard">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="icon" value="icon.skill0048"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52011" levels="1" name="Flag Power - Shaman">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1092"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52012" levels="1" name="Flag Power - Fast Run">
+		<set name="icon" value="icon.skill0004"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="52013" levels="1" name="Flag Carrier">
+		<set name="icon" value="icon.weapon_fort_flag_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="runSpd" value="0.5"/>
+		</for>
+	</skill>
+	<skill id="52014" levels="1" name="Get Combat Flag">
+		<set name="icon" value="icon.weapon_fort_flag_i00"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="abnormal_effect" value="BLUE_TALL_LIGHT"/>
+		<set name="abnormal_time" value="-1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<set name="display_id" value="-1"/>
+		<for>
+			<effect/>
+		</for>
+	</skill>
+	<skill id="52015" levels="1" name="Drop Combat Flag">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.weapon_fort_flag_i00"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_dispel_by_skill">
+				<def name="skill_id" value="52014"/>
+				<def name="skill_level" value="-1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="52016" levels="1" name="Orc Fortress Owner">
+		<set name="icon" value="icon.skill32121"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="exp_rate_multiplier" value="0.1"/>
+			<add stat="sp_rate_multiplier" value="0.1"/>
+		</for>
+	</skill>
+	<skill id="52017" levels="1" name="Remote Flag Display">
+		<set name="icon" value="icon.weapon_fort_flag_i00"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="castRange" value="1100"/>
+		<set name="hitTime" value="15000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="80"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="chance" value="60"/>
+		<set name="target_type" value="FORTRESS_FLAGPOLE"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_FLAGPOLE"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="TAKEFORTRESS"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true" />
+		<set name="isSkillTimePermanent" value="true" />
+	</skill>
+	<skill id="52018" levels="1" name="Leader Power">
+		<set name="icon" value="icon.1st_ranking_share_buff"/>
+		<set name="hitTime" value="1000"/>
+		<set name="abnormal_time" value="14400"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="POINT_BLANK"/>
+		<set name="affect_object" value="ALL"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="affect_range" value="300"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="STR" value="1"/>
+				<add stat="INT" value="1"/>
+				<add stat="pEvasRate" value="20"/>
+				<stat_effect name="potion_hp_heal_effect" value="10" type="DIFF"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="52019" levels="1" name="PvP Ranking">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.pvp_ranking"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="pAtk" value="0" />
+		</for>
+	</skill>
+	<skill id="52020" levels="1" name="PvP Ranking Effect">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="5000"/>
+		<set name="abnormal_time" value="1"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<add stat="pAtk" value="0" />
+		</for>
+	</skill>
+	<skill id="52021" levels="1" name="Clan's Vitality Bonus">
+		<!--Sayha's Grace charging rate $s1-->
+		<set name="icon" value="icon.skill19005"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="52022" levels="1" name="Sylph Blessing">
+		<!--Atk. Spd. $s1\nCasting Spd. $s1\nSpeed $s2\nSoulshot Damage $s3\nSpiritshot Damage $s3\nAcquired XP/ SP $s4-->
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.ev_sylph_bless"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="52023" levels="1" name="Giran Castle Owner">
+		<!--A special buff for members of the clan that owns the Giran Castle.\n\nAcquired XP/ SP $s1\nAcquired adena $s2-->
+		<set name="icon" value="icon.s_castle_winner_reward1"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="exp_rate_multiplier" value="0.2"/>
+			<add stat="sp_rate_multiplier" value="0.2"/>
+			<add stat="adena_rate_multiplier" value="0.1"/>
+		</for>
+	</skill>
+	<skill id="52024" levels="1" name="Goddard Castle Owner">
+		<!--A special buff for members of the clan that owns the Goddard Castle.\n\nAcquired XP/ SP $s1\nAcquired adena $s2-->
+		<set name="icon" value="icon.s_castle_winner_reward2"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="exp_rate_multiplier" value="0.2"/>
+			<add stat="sp_rate_multiplier" value="0.2"/>
+			<add stat="adena_rate_multiplier" value="0.1"/>
+		</for>
+	</skill>
+	<skill id="52025" levels="20" name="Siege Point Increase">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="52026" levels="10" name="Clan Members">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAcquired XP/ SP $s2-->
+		<table name="#atk">5 10 15 25 50 100 200 200 200 200</table>
+		<table name="#def">0 0 0 0 0 0 0 50 100 200</table>
+		<table name="#xpsp">0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.1</table>
+		<set name="icon" value="icon.skill15095"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="pAtk" value="#atk"/>
+			<add stat="mAtk" value="#atk"/>
+			<add stat="pDef" value="#def"/>
+			<add stat="mDef" value="#def"/>
+			<add stat="exp_rate_multiplier" value="#xpsp"/>
+			<add stat="sp_rate_multiplier" value="#xpsp"/>
+		</for>
+	</skill>
+	<skill id="52027" levels="1" name="Heroes' Power">
+		<!--P./ M. Def. $s1\nMax HP/ MP/ CP $s2\nWhen hit, the enemy's Skill Power $s3\nFor $s4, grants siege points every $s5 The longer you live, the more points you will get.\nThe effect is removed after death or logout.-->
+		<set name="icon" value="icon.olympiad_buff"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="52028" levels="1" name="New Adventure">
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="icon" value="icon.s_dormant_user_display"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="52029" levels="1" name="First to Maximum">
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="icon" value="icon.skill5762"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="52030" levels="1" name="Flag Power - Death Knight">
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="icon" value="icon.skill1298"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="52031" levels="1" name="Flag Power - Hunter">
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="-590"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1170"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="52032" levels="1" name="Special Growth Support">
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="icon" value="icon.skill11588"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+</list>

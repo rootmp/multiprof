@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!-- Author: nexvill -->
+<list>
+	<item>
+		<ingredient id="93449" count="2" />	<!-- A-grade Armor Coupon -->
+		<production id="92261" count="1" />	<!-- Tallum Plate Armor -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92301" count="1" />	<!-- Tallum Helmet (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92280" count="1" />	<!-- Tallum Gloves (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92292" count="1" />	<!-- Tallum Boots (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="2" />	<!-- A-grade Armor Coupon -->
+		<production id="92256" count="1" />	<!-- Armor of Nightmare -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92307" count="1" />	<!-- Helm of Nightmare (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92283" count="1" />	<!-- Gauntlets of Nightmare (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92295" count="1" />	<!-- Boots of Nightmare (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92255" count="1" />	<!-- Dark Crystal Breastplate -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92257" count="1" />	<!-- Dark Crystal Gaiters -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92304" count="1" />	<!-- Dark Crystal Helmet (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92277" count="1" />	<!-- Dark Crystal Gloves (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92289" count="1" />	<!-- Dark Crystal Boots (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="2" />	<!-- A-grade Armor Coupon -->
+		<production id="92262" count="1" />	<!-- Majestic Plate Armor -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92310" count="1" />	<!-- Majestic Circlet (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92286" count="1" />	<!-- Majestic Gauntlets (Heavy) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92298" count="1" />	<!-- Majestic Boots (Heavy) -->
+	</item>
+</list>

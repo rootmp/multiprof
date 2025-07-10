@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="34000">
+		<!--Casting Spd. +65-->
+	</option_data>
+	<option_data id="34001">
+		<!--Casting Spd. +70-->
+	</option_data>
+	<option_data id="34002">
+		<!--Casting Spd. +75-->
+	</option_data>
+	<option_data id="34003">
+		<!--Casting Spd. +80-->
+	</option_data>
+	<option_data id="34004">
+		<!--Casting Spd. +90-->
+	</option_data>
+	<option_data id="34005">
+		<!--Casting Spd. +100-->
+	</option_data>
+	<option_data id="34006">
+		<!--Casting Spd. +110-->
+	</option_data>
+	<option_data id="34007">
+		<!--Casting Spd. +120-->
+	</option_data>
+	<option_data id="34008">
+		<!--Casting Spd. +150-->
+	</option_data>
+	<option_data id="34009">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34010">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34011">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34012">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34013">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34014">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34015">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34016">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34017">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34018">
+		<!--P. Skill Power +1%-->
+	</option_data>
+	<option_data id="34019">
+		<!--P. Skill Power +2%-->
+	</option_data>
+	<option_data id="34020">
+		<!--P. Skill Power +2%-->
+	</option_data>
+	<option_data id="34021">
+		<!--P. Skill Power +2%-->
+	</option_data>
+	<option_data id="34022">
+		<!--P. Skill Power +2%-->
+	</option_data>
+	<option_data id="34023">
+		<!--P. Skill Power +2%-->
+	</option_data>
+	<option_data id="34024">
+		<!--P. Skill Power +2%-->
+	</option_data>
+	<option_data id="34025">
+		<!--P. Skill Power +3%-->
+	</option_data>
+	<option_data id="34026">
+		<!--P. Skill Power +3%-->
+	</option_data>
+	<option_data id="34027">
+		<!--P. Skill Power +4%-->
+	</option_data>
+	<option_data id="34028">
+		<!--P. Skill Power +5%-->
+	</option_data>
+	<option_data id="34029">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34030">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34031">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34032">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34033">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34034">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34035">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34036">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34037">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34038">
+		<!--M. Skill Power +1%-->
+	</option_data>
+	<option_data id="34039">
+		<!--M. Skill Power +2%-->
+	</option_data>
+	<option_data id="34040">
+		<!--M. Skill Power +2%-->
+	</option_data>
+	<option_data id="34041">
+		<!--M. Skill Power +2%-->
+	</option_data>
+	<option_data id="34042">
+		<!--M. Skill Power +2%-->
+	</option_data>
+	<option_data id="34043">
+		<!--M. Skill Power +2%-->
+	</option_data>
+	<option_data id="34044">
+		<!--M. Skill Power +2%-->
+	</option_data>
+	<option_data id="34045">
+		<!--M. Skill Power +3%-->
+	</option_data>
+	<option_data id="34046">
+		<!--M. Skill Power +3%-->
+	</option_data>
+	<option_data id="34047">
+		<!--M. Skill Power +4%-->
+	</option_data>
+	<option_data id="34048">
+		<!--M. Skill Power +5%-->
+	</option_data>
+	<option_data id="34049">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34050">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34051">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34052">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34053">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34054">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34055">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34056">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34057">
+		<!--MP Consumption -1%-->
+	</option_data>
+	<option_data id="34058">
+		<!--MP Consumption -2%-->
+	</option_data>
+	<option_data id="34059">
+		<!--MP Consumption -2%-->
+	</option_data>
+	<option_data id="34060">
+		<!--MP Consumption -2%-->
+	</option_data>
+	<option_data id="34061">
+		<!--MP Consumption -2%-->
+	</option_data>
+	<option_data id="34062">
+		<!--MP Consumption -2%-->
+	</option_data>
+	<option_data id="34063">
+		<!--MP Consumption -3%-->
+	</option_data>
+	<option_data id="34064">
+		<!--MP Consumption -3%-->
+	</option_data>
+	<option_data id="34065">
+		<!--MP Consumption -3%-->
+	</option_data>
+	<option_data id="34066">
+		<!--MP Consumption -4%-->
+	</option_data>
+	<option_data id="34067">
+		<!--MP Consumption -4%-->
+	</option_data>
+	<option_data id="34068">
+		<!--MP Consumption -5%-->
+	</option_data>
+	<option_data id="34069">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34070">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34071">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34072">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34073">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34074">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34075">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34076">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34077">
+		<!--Skill Power +1%-->
+	</option_data>
+	<option_data id="34078">
+		<!--Skill Power +2%-->
+	</option_data>
+	<option_data id="34079">
+		<!--Skill Power +2%-->
+	</option_data>
+	<option_data id="34080">
+		<!--Skill Power +2%-->
+	</option_data>
+	<option_data id="34081">
+		<!--Skill Power +2%-->
+	</option_data>
+	<option_data id="34082">
+		<!--Skill Power +2%-->
+	</option_data>
+	<option_data id="34083">
+		<!--Skill Power +3%-->
+	</option_data>
+	<option_data id="34084">
+		<!--Skill Power +3%-->
+	</option_data>
+	<option_data id="34085">
+		<!--Skill Power +3%-->
+	</option_data>
+	<option_data id="34086">
+		<!--Skill Power +4%-->
+	</option_data>
+	<option_data id="34087">
+		<!--Skill Power +4%-->
+	</option_data>
+	<option_data id="34088">
+		<!--Skill Power +5%-->
+	</option_data>
+	<option_data id="34089">
+		<!--P. Atk. +10-->
+	</option_data>
+	<option_data id="34090">
+		<!--P. Atk. +16-->
+	</option_data>
+	<option_data id="34091">
+		<!--P. Atk. +22-->
+	</option_data>
+	<option_data id="34092">
+		<!--P. Atk. +28-->
+	</option_data>
+	<option_data id="34093">
+		<!--P. Atk. +34-->
+	</option_data>
+	<option_data id="34094">
+		<!--P. Atk. +40-->
+	</option_data>
+	<option_data id="34095">
+		<!--P. Atk. +46-->
+	</option_data>
+	<option_data id="34096">
+		<!--P. Atk. +52-->
+	</option_data>
+	<option_data id="34097">
+		<!--P. Atk. +58-->
+	</option_data>
+	<option_data id="34098">
+		<!--P. Atk. +64-->
+	</option_data>
+	<option_data id="34099">
+		<!--P. Atk. +70-->
+	</option_data>
+</list>

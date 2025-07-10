@@ -1,0 +1,845 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "enchant_items.dtd">
+<!--AUTHOR: VISTALL && Bonux-->
+<list>
+	<chance_variations>
+		<variation id="1"><!--weapon_scroll-->
+			<enchant level="1-4" base_chance="100.0" magic_weapon_chance="100.0"/>
+			<enchant level="5-6" base_chance="70.0" magic_weapon_chance="50.0"/>
+			<enchant level="7" base_chance="50.0" magic_weapon_chance="30.0" success_visual_effect="true"/>
+			<enchant level="8-14" base_chance="10.0" magic_weapon_chance="5.0"/>
+			<enchant level="15" base_chance="10.0" magic_weapon_chance="5.0" success_visual_effect="true"/>
+			<enchant level="16-128" base_chance="3.5" magic_weapon_chance="3.0"/>
+		</variation>
+		<variation id="2"><!--armor_scroll-->
+			<enchant level="1-4" base_chance="100.0"/>
+			<enchant level="5" base_chance="12" full_body_armor_chance="8"/>
+			<enchant level="6" base_chance="8" full_body_armor_chance="6" success_visual_effect="true"/>
+			<enchant level="7" base_chance="6" full_body_armor_chance="4.5"/>
+			<enchant level="8" base_chance="4" full_body_armor_chance="3"/>
+			<enchant level="9" base_chance="3" full_body_armor_chance="2"/>
+			<enchant level="10-25" base_chance="2.5" full_body_armor_chance="1.4"/>
+			<enchant level="26-128" base_chance="0" full_body_armor_chance="0"/>
+		</variation>
+		<variation id="3"><!--cloak-->
+			<enchant level="1-10" base_chance="45.0"/>
+		</variation>
+		<variation id="4"><!--cloak-->
+			<enchant level="1-10" base_chance="55.0"/>
+		</variation>
+		<variation id="5"><!--pendant-->
+			<enchant level="1-5" base_chance="33.0"/>
+		</variation>
+		<variation id="6"><!--pendant-->
+			<enchant level="1-10" base_chance="33.0"/>
+		</variation>
+		<variation id="7">	<!-- Boss jewelry -->
+			<enchant level="1" base_chance="100" />
+			<enchant level="2" base_chance="50" />
+			<enchant level="3" base_chance="40" />
+			<enchant level="4" base_chance="30" />
+			<enchant level="5" base_chance="20" />
+		</variation>
+		<variation id="8"> <!-- Circlet of Hero & Dragon Belt  & Talisman of Authority & Talisman of Eva -->
+			<enchant level="1" base_chance="60.0"/>
+			<enchant level="2" base_chance="50.0"/>
+			<enchant level="3" base_chance="40.0"/>
+			<enchant level="4" base_chance="35.0"/>
+			<enchant level="5" base_chance="30.0"/>
+			<enchant level="6" base_chance="28.0"/>
+			<enchant level="7" base_chance="26.0"/>
+			<enchant level="8" base_chance="24.0"/>
+			<enchant level="9" base_chance="22.0"/>
+			<enchant level="10" base_chance="20.0"/>
+		</variation>
+		<variation id="9">	<!-- Clan Cloak & Clan Circlet & Cloak of Protection -->
+			<enchant level="1" base_chance="85.0"/>
+			<enchant level="2" base_chance="80.0"/>
+			<enchant level="3" base_chance="75.0"/>
+			<enchant level="4" base_chance="60.0"/>
+			<enchant level="5" base_chance="50.0"/>
+			<enchant level="6" base_chance="40.0"/>
+			<enchant level="7" base_chance="30.0"/>
+			<enchant level="8" base_chance="20.0"/>
+			<enchant level="9" base_chance="15.0"/>
+			<enchant level="10" base_chance="7.0"/>
+		</variation>
+		<variation id="10">	<!-- Sayha's Cloaks -->
+			<enchant level="1" base_chance="95.0"/>
+			<enchant level="2" base_chance="85.0"/>
+			<enchant level="3" base_chance="75.0"/>
+			<enchant level="4" base_chance="60.0"/>
+			<enchant level="5" base_chance="55.0"/>
+			<enchant level="6" base_chance="40.0"/>
+			<enchant level="7" base_chance="30.0"/>
+			<enchant level="8" base_chance="20.0"/>
+			<enchant level="9" base_chance="10.0"/>
+			<enchant level="10" base_chance="1.0"/>
+		</variation>
+		<variation id="11">	<!-- Adventurer's Equip -->
+			<enchant level="1" base_chance="100.0"/>
+		</variation>
+		<variation id="12">	<!-- Talisman of Aden -->
+			<enchant level="1" base_chance="100.0"/>
+			<enchant level="2" base_chance="80.0"/>
+			<enchant level="3" base_chance="70.0"/>
+			<enchant level="4" base_chance="60.0"/>
+			<enchant level="5" base_chance="40.0"/>
+			<enchant level="6" base_chance="30.0"/>
+			<enchant level="7" base_chance="24.0"/>
+			<enchant level="8" base_chance="16.0"/>
+			<enchant level="9" base_chance="10.0"/>
+			<enchant level="10" base_chance="10.0"/>
+		</variation>
+		<variation id="13">	<!-- Talisman of Baium -->
+			<enchant level="1" base_chance="90.0"/>
+			<enchant level="2" base_chance="80.0"/>
+			<enchant level="3" base_chance="70.0"/>
+			<enchant level="4" base_chance="30.0"/>
+			<enchant level="5" base_chance="5.0"/>
+		</variation>
+		<variation id="14">	<!-- Talisman of Speed -->
+			<enchant level="1" base_chance="60.0"/>
+			<enchant level="2" base_chance="50.0"/>
+			<enchant level="3" base_chance="45.0"/>
+			<enchant level="4" base_chance="40.0"/>
+			<enchant level="5" base_chance="35.0"/>
+			<enchant level="6" base_chance="30.0"/>
+			<enchant level="7" base_chance="25.0"/>
+			<enchant level="8" base_chance="20.0"/>
+			<enchant level="9" base_chance="10.0"/>
+			<enchant level="10" base_chance="5.0"/>
+		</variation>
+		<variation id="15"><!-- Scroll: Enchant Aden Weapon -->
+			<enchant level="1-4" base_chance="100.0"/>
+			<enchant level="5-6" base_chance="70.0"/>
+			<enchant level="7" base_chance="50.0"/>
+			<enchant level="8-16" base_chance="10.0"/>
+		</variation>
+	</chance_variations>
+
+	<!--Стандартные настройки для енчанта, -1 в макс , означает нелимитирова-->
+	<default max_enchant="10" show_fail_effect="false"/>
+
+	<!--Common Enchant Scrolls-->
+	<!--Scroll: Enchant Weapon (D-Grade)-->
+	<enchant_scroll id="955" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="D" max_enchant="10"/>
+	<!--Scroll: Enchant Weapon (D-Grade)-->
+	<enchant_scroll id="29015" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="D" max_enchant="10"/>
+
+	<!--Scroll: Enchant Armor (D-Grade)-->
+	<enchant_scroll id="956" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="D"/>
+	<!--Scroll: Enchant Armor (D-Grade)-->
+	<enchant_scroll id="29016" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="D"/>
+
+	<!--Scroll: Enchant Weapon (C-Grade)-->
+	<enchant_scroll id="951" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="C" max_enchant="10"/>
+	<!--Scroll: Enchant Weapon (C-Grade)-->
+	<enchant_scroll id="29017" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="C" max_enchant="10"/>
+
+	<!--Scroll: Enchant Armor (C-Grade)-->
+	<enchant_scroll id="952" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="C"/>
+	<!--Scroll: Enchant Armor (C-Grade)-->
+	<enchant_scroll id="29018" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="C"/>
+
+	<!--Scroll: Enchant Weapon (B-Grade)-->
+	<enchant_scroll id="947" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="B" max_enchant="10"/>
+
+	<!--Scroll: Enchant Armor (B-Grade)-->
+	<enchant_scroll id="948" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="B"/>
+
+	<!--Scroll: Enchant Weapon (A-Grade)-->
+	<enchant_scroll id="729" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="A" max_enchant="10"/>
+
+	<!--Scroll: Enchant Armor (A-Grade)-->
+	<enchant_scroll id="730" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="A"/>
+	
+	<!--Scroll: Enchant Weapon (S-Grade)-->
+	<enchant_scroll id="959" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="S" max_enchant="10"/>
+
+	<!--Scroll: Enchant Armor (S-Grade)-->
+	<enchant_scroll id="960" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="S"/>
+
+	<!--Blessed Enchant Scrolls-->
+	<!--Blessed Scroll: Enchant Weapon (D-Grade)-->
+	<enchant_scroll id="6575" on_fail="DROP_ENCHANT" type="WEAPON" variation="1" grade="D" max_enchant="10"/>
+	<!--Blessed Scroll: Enchant Weapon (D-Grade)-->
+	<enchant_scroll id="29019" on_fail="DROP_ENCHANT" type="WEAPON" variation="1" grade="D" max_enchant="10"/>
+
+	<!--Blessed Scroll: Enchant Armor (D-Grade)-->
+	<enchant_scroll id="6576" on_fail="DROP_ENCHANT" type="ARMOR" variation="2" grade="D"/>
+	<!--Blessed Scroll: Enchant Armor (D-Grade)-->
+	<enchant_scroll id="29020" on_fail="DROP_ENCHANT" type="ARMOR" variation="2" grade="D"/>
+
+	<!--Blessed Scroll: Enchant Weapon (C-Grade)-->
+	<enchant_scroll id="6573" on_fail="DROP_ENCHANT" type="WEAPON" variation="1" grade="C" max_enchant="10"/>
+	<!--Blessed Scroll: Enchant Weapon (C-Grade)-->
+	<enchant_scroll id="29021" on_fail="DROP_ENCHANT" type="WEAPON" variation="1" grade="C" max_enchant="10"/>
+
+	<!--Blessed Scroll: Enchant Armor (C-Grade)-->
+	<enchant_scroll id="6574" on_fail="DROP_ENCHANT" type="ARMOR" variation="2" grade="C"/>
+	<!--Blessed Scroll: Enchant Armor (C-Grade)-->
+	<enchant_scroll id="29022" on_fail="DROP_ENCHANT" type="ARMOR" variation="2" grade="C"/>
+
+	<!--Blessed Scroll: Enchant Weapon (B-Grade)-->
+	<enchant_scroll id="6571" on_fail="DROP_ENCHANT" type="WEAPON" variation="1" grade="B" max_enchant="10"/>
+
+	<!--Blessed Scroll: Enchant Armor (B-Grade)-->
+	<enchant_scroll id="6572" on_fail="DROP_ENCHANT" type="ARMOR" variation="2" grade="B"/>
+
+	<!--Blessed Scroll: Enchant Weapon (A-Grade)-->
+	<enchant_scroll id="6569" on_fail="DROP_ENCHANT" type="WEAPON" variation="1" grade="A" max_enchant="10"/>
+
+	<!--Blessed Scroll: Enchant Armor (A-Grade)-->
+	<enchant_scroll id="6570" on_fail="DROP_ENCHANT" type="ARMOR" variation="2" grade="A"/>
+	
+	<!--Blessed Scroll: Enchant Weapon (S-Grade)-->
+	<enchant_scroll id="6577" on_fail="DROP_ENCHANT" type="WEAPON" variation="1" grade="S" max_enchant="10"/>
+
+	<!--Blessed Scroll: Enchant Armor (S-Grade)-->
+	<enchant_scroll id="6578" on_fail="DROP_ENCHANT" type="ARMOR" variation="2" grade="S"/>
+
+	<!--Event Enchant Scrolls-->
+	<!--Scroll: Enchant Weapon (D-Grade)-->
+	<enchant_scroll id="34072" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="D" max_enchant="10"/>
+
+	<!--Scroll: Enchant Weapon (C-Grade)-->
+	<enchant_scroll id="34070" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="C" max_enchant="10"/>
+
+	<!--Improved Enchant Scrolls-->
+	<!--Improved Scroll: Enchant Weapon (D-grade)-->
+	<enchant_scroll id="33806" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="D" max_enchant="10" max_enchant_step="3"/>
+
+	<!--Improved Scroll: Enchant Weapon (C-grade)-->
+	<enchant_scroll id="33807" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="C" max_enchant="10" max_enchant_step="3"/>
+
+	<!--Improved Scroll: Enchant Weapon (B-grade)-->
+	<enchant_scroll id="33808" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="B" max_enchant="10" max_enchant_step="3"/>
+
+	<!--Improved Scroll: Enchant Weapon (A-grade)-->
+	<enchant_scroll id="33809" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="A" max_enchant="10" max_enchant_step="3"/>
+	
+	<!--Improved Scroll: Enchant Weapon (S-grade)-->
+	<enchant_scroll id="33810" on_fail="CRYSTALS" type="WEAPON" variation="1" grade="S" max_enchant="10" max_enchant_step="3"/>
+
+	<!--Improved Scroll: Enchant Armor (D-grade)-->
+	<enchant_scroll id="33812" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="D" max_enchant_step="3"/>
+
+	<!--Improved Scroll: Enchant Armor (C-grade)-->
+	<enchant_scroll id="33813" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="C" max_enchant_step="3"/>
+
+	<!--Improved Scroll: Enchant Armor (B-grade)-->
+	<enchant_scroll id="33814" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="B" max_enchant_step="3"/>
+
+	<!--Improved Scroll: Enchant Armor (A-grade)-->
+	<enchant_scroll id="33815" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="A" max_enchant_step="3"/>
+	
+	<!--Improved Scroll: Enchant Armor (S-grade)-->
+	<enchant_scroll id="33816" on_fail="CRYSTALS" type="ARMOR" variation="2" grade="S" max_enchant_step="3"/>
+	
+	<!--Стабильный Свиток: Модифицировать Оружие (A)-->
+	<enchant_scroll id="22223" on_fail="NOTHING" type="WEAPON" variation="1" grade="A" max_enchant="7"/>
+	
+	<!--Стабильный Свиток: Модифицировать Доспех (A)-->
+	<enchant_scroll id="22224" on_fail="NOTHING" type="ARMOR" variation="2" grade="A" max_enchant="6"/>
+
+	<!--Стабильный Свиток: Модифицировать Доспех (D)-->
+	<enchant_scroll id="49481" on_fail="NOTHING" type="ARMOR" variation="2" grade="D" max_enchant="6"/>
+	
+	<!--Стабильный Свиток: Модифицировать Оружие (D)-->
+	<enchant_scroll id="49482" on_fail="NOTHING" type="WEAPON" variation="2" grade="D" max_enchant="7"/>
+
+	<!--Стабильный Свиток: Модифицировать Доспех (C)-->
+	<enchant_scroll id="49483" on_fail="NOTHING" type="ARMOR" variation="2" grade="C" max_enchant="6"/>
+
+	<!--Стабильный Свиток: Модифицировать Оружие (C)-->
+	<enchant_scroll id="49484" on_fail="NOTHING" type="WEAPON" variation="2" grade="C" max_enchant="7"/>
+
+	<!--Стабильный Свиток: Модифицировать Доспех (B)-->
+	<enchant_scroll id="49485" on_fail="NOTHING" type="ARMOR" variation="2" grade="B" max_enchant="6"/>
+
+	<!--Стабильный Свиток: Модифицировать Оружие (B)-->
+	<enchant_scroll id="49486" on_fail="NOTHING" type="WEAPON" variation="2" grade="B" max_enchant="7"/>
+	
+	<!--Стабильный Свиток: Модифицировать Доспех (S)-->
+	<enchant_scroll id="22222" on_fail="NOTHING" type="ARMOR" variation="2" grade="S" max_enchant="6"/>
+
+	<!--Стабильный Свиток: Модифицировать Оружие (S)-->
+	<enchant_scroll id="22221" on_fail="NOTHING" type="WEAPON" variation="2" grade="S" max_enchant="7"/>
+	
+	<!--Лак Ордена Рыцарей Балтуса-->
+	<enchant_scroll id="90995" on_fail="CRYSTALS" variation="2" max_enchant="10">
+		<item_list>
+			<item id="91006"/> <!--Поврежденная Серьга Закена-->
+			<item id="90993"/> <!--Поврежденная Некля Антараса-->
+			<item id="90994"/> <!--Поврежденное кольцо баюма-->
+		</item_list>
+	</enchant_scroll>
+
+	<!--Глянцевый Лак Ордена Рыцарей Балтуса-->
+	<enchant_scroll id="90997" on_fail="DROP_ENCHANT" variation="2" max_enchant="8">
+		<item_list>
+			<item id="91006"/> <!--Поврежденная Серьга Закена-->
+			<item id="90993"/> <!--Поврежденная Некля Антараса-->
+			<item id="90994"/> <!--Поврежденное кольцо баюма-->
+		</item_list>
+	</enchant_scroll>
+
+	<!--Блестящий Лак Ордена Рыцарей Балтуса-->
+	<enchant_scroll id="90998" on_fail="DROP_ENCHANT" variation="2" max_enchant="9">
+		<item_list>
+			<item id="91006"/> <!--Поврежденная Серьга Закена-->
+			<item id="90993"/> <!--Поврежденная Некля Антараса-->
+			<item id="90994"/> <!--Поврежденное кольцо баюма-->
+		</item_list>
+	</enchant_scroll>
+
+	<!--Agathion Enchant Scroll-->
+	<enchant_scroll id="48046" on_fail="CRYSTALS" variation="2" max_enchant="10">
+		<item_list>
+			<item id="48048"/><!--Agathion Virgo-->
+			<item id="48049"/><!--Agathion Capricorn-->
+			<item id="48050"/><!--Agathion Libra-->
+			<item id="48052"/><!--Agathion Taurus-->
+			<item id="48053"/><!--Agathion Leo-->
+			<item id="48054"/><!--Agathion Gemini-->
+			<item id="48055"/><!--Agathion Scorpio-->
+			<item id="48056"/><!--Agathion Aquarius-->
+			<item id="48058"/><!--Agathion Sagittarius-->
+		</item_list>
+	</enchant_scroll>
+
+	<!--Quality Agathion Enchant Scroll-->
+	<enchant_scroll id="48047" on_fail="CRYSTALS" variation="2" max_enchant="8" max_enchant_step="3">
+		<item_list>
+			<item id="48048"/><!--Agathion Virgo-->
+			<item id="48049"/><!--Agathion Capricorn-->
+			<item id="48050"/><!--Agathion Libra-->
+			<item id="48052"/><!--Agathion Taurus-->
+			<item id="48053"/><!--Agathion Leo-->
+			<item id="48054"/><!--Agathion Gemini-->
+			<item id="48055"/><!--Agathion Scorpio-->
+			<item id="48056"/><!--Agathion Aquarius-->
+			<item id="48058"/><!--Agathion Sagittarius-->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Блестящий Лак Духов-->
+	<enchant_scroll id="91124" on_fail="NOTHING" variation="2" min_enchant="9">
+		<item_list>
+			<item id="91123"/><!--Petram-->
+			<item id="91119"/><!--Ignis-->
+			<item id="91121"/><!--Procella-->
+			<item id="91117"/><!--Nebula-->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Благословенный Лак Духов-->
+	<enchant_scroll id="91188" on_fail="DROP_ENCHANT" variation="2" max_enchant="10">
+		<item_list>
+			<item id="91123"/><!--Petram-->
+			<item id="91119"/><!--Ignis-->
+			<item id="91121"/><!--Procella-->
+			<item id="91117"/><!--Nebula-->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Лак Духов-->
+	<enchant_scroll id="91187" on_fail="CRYSTALS" variation="2" max_enchant="10">
+		<item_list>
+			<item id="91123"/><!--Petram-->
+			<item id="91119"/><!--Ignis-->
+			<item id="91121"/><!--Procella-->
+			<item id="91117"/><!--Nebula-->
+		</item_list>
+	</enchant_scroll>
+	
+		<!--Лак Дракона-->
+	<enchant_scroll id="91249" on_fail="DROP_ENCHANT" variation="5" max_enchant="5">
+		<item_list>
+			<item id="91244"/> <!---->
+			<item id="91245"/> <!---->
+			<item id="91246"/> <!---->
+			<item id="91247"/> <!---->
+			<item id="91248"/> <!---->
+			<item id="91414"/> <!---->
+			<item id="91436"/> <!---->
+			<item id="71691"/> <!---->
+			<item id="71692"/> <!---->
+			<item id="71693"/> <!---->
+			<item id="71694"/> <!---->
+			<item id="71695"/> <!---->
+			<item id="71696"/> <!---->
+			<item id="71697"/> <!---->
+			<item id="71698"/> <!---->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Блестящий Лак Дракона-->
+	<enchant_scroll id="91250" on_fail="DROP_ENCHANT" variation="5" max_enchant="5">
+		<item_list>
+			<item id="91244"/> <!---->
+			<item id="91245"/> <!---->
+			<item id="91246"/> <!---->
+			<item id="91247"/> <!---->
+			<item id="91248"/> <!---->
+			<item id="91414"/> <!---->
+			<item id="91436"/> <!---->
+			<item id="71691"/> <!---->
+			<item id="71692"/> <!---->
+			<item id="71693"/> <!---->
+			<item id="71694"/> <!---->
+			<item id="71695"/> <!---->
+			<item id="71696"/> <!---->
+			<item id="71697"/> <!---->
+			<item id="71698"/> <!---->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Лак Подвески-->
+	<enchant_scroll id="49469" on_fail="CRYSTALS" variation="6" max_enchant="10">
+		<item_list>
+			<item id="29704"/> <!---->
+			<item id="29705"/> <!---->
+			<item id="29706"/> <!---->
+			<item id="29707"/> <!---->
+			<item id="29708"/> <!---->
+			<item id="29709"/> <!---->
+			<item id="29710"/> <!---->
+			<item id="29711"/> <!---->
+			<item id="29712"/> <!---->
+			<item id="29713"/> <!---->
+			<item id="29714"/> <!---->
+			<item id="29715"/> <!---->
+			<item id="29716"/> <!---->
+			<item id="29717"/> <!---->
+			<item id="29718"/> <!---->
+			<item id="29719"/> <!---->
+			<item id="29720"/> <!---->
+			<item id="29721"/> <!---->
+			<item id="29722"/> <!---->
+			<item id="29723"/> <!---->
+			<item id="49467"/> <!---->
+			<item id="49468"/> <!---->
+			<item id="49801"/> <!---->
+			<item id="49802"/> <!---->
+			<item id="70108"/> <!---->
+			<item id="70109"/> <!---->
+			<item id="70771"/> <!---->
+			<item id="70772"/> <!---->
+			<item id="70913"/> <!---->
+			<item id="70914"/> <!---->
+			<item id="90158"/> <!---->
+			<item id="90190"/> <!---->
+			<item id="90191"/> <!---->
+			<item id="90196"/> <!---->
+			<item id="90197"/> <!---->
+			<item id="90969"/> <!---->
+			<item id="90970"/> <!---->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Сверкающий Лак Подвески-->
+	<enchant_scroll id="49470" on_fail="NOTHING" variation="6" max_enchant="8">
+		<item_list>
+			<item id="29704"/> <!---->
+			<item id="29705"/> <!---->
+			<item id="29706"/> <!---->
+			<item id="29707"/> <!---->
+			<item id="29708"/> <!---->
+			<item id="29709"/> <!---->
+			<item id="29710"/> <!---->
+			<item id="29711"/> <!---->
+			<item id="29712"/> <!---->
+			<item id="29713"/> <!---->
+			<item id="29714"/> <!---->
+			<item id="29715"/> <!---->
+			<item id="29716"/> <!---->
+			<item id="29717"/> <!---->
+			<item id="29718"/> <!---->
+			<item id="29719"/> <!---->
+			<item id="29720"/> <!---->
+			<item id="29721"/> <!---->
+			<item id="29722"/> <!---->
+			<item id="29723"/> <!---->
+			<item id="49467"/> <!---->
+			<item id="49468"/> <!---->
+			<item id="49801"/> <!---->
+			<item id="49802"/> <!---->
+			<item id="70108"/> <!---->
+			<item id="70109"/> <!---->
+			<item id="70771"/> <!---->
+			<item id="70772"/> <!---->
+			<item id="70913"/> <!---->
+			<item id="70914"/> <!---->
+			<item id="90158"/> <!---->
+			<item id="90190"/> <!---->
+			<item id="90191"/> <!---->
+			<item id="90196"/> <!---->
+			<item id="90197"/> <!---->
+			<item id="90969"/> <!---->
+			<item id="90970"/> <!---->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Сверкающий Лак Подвески Ивент-->
+	<enchant_scroll id="70765" on_fail="NOTHING" variation="6" max_enchant="8">
+		<item_list>
+			<item id="29704"/> <!---->
+			<item id="29705"/> <!---->
+			<item id="29706"/> <!---->
+			<item id="29707"/> <!---->
+			<item id="29708"/> <!---->
+			<item id="29709"/> <!---->
+			<item id="29710"/> <!---->
+			<item id="29711"/> <!---->
+			<item id="29712"/> <!---->
+			<item id="29713"/> <!---->
+			<item id="29714"/> <!---->
+			<item id="29715"/> <!---->
+			<item id="29716"/> <!---->
+			<item id="29717"/> <!---->
+			<item id="29718"/> <!---->
+			<item id="29719"/> <!---->
+			<item id="29720"/> <!---->
+			<item id="29721"/> <!---->
+			<item id="29722"/> <!---->
+			<item id="29723"/> <!---->
+			<item id="49467"/> <!---->
+			<item id="49468"/> <!---->
+			<item id="49801"/> <!---->
+			<item id="49802"/> <!---->
+			<item id="70108"/> <!---->
+			<item id="70109"/> <!---->
+			<item id="70771"/> <!---->
+			<item id="70772"/> <!---->
+			<item id="70913"/> <!---->
+			<item id="70914"/> <!---->
+			<item id="90158"/> <!---->
+			<item id="90190"/> <!---->
+			<item id="90191"/> <!---->
+			<item id="90196"/> <!---->
+			<item id="90197"/> <!---->
+			<item id="90969"/> <!---->
+			<item id="90970"/> <!---->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Матовый Лак Подвески-->
+	<enchant_scroll id="90137" on_fail="DROP_ENCHANT" variation="6" max_enchant="6">
+		<item_list>
+			<item id="29704"/> <!---->
+			<item id="29705"/> <!---->
+			<item id="29706"/> <!---->
+			<item id="29707"/> <!---->
+			<item id="29708"/> <!---->
+			<item id="29709"/> <!---->
+			<item id="29710"/> <!---->
+			<item id="29711"/> <!---->
+			<item id="29712"/> <!---->
+			<item id="29713"/> <!---->
+			<item id="29714"/> <!---->
+			<item id="29715"/> <!---->
+			<item id="29716"/> <!---->
+			<item id="29717"/> <!---->
+			<item id="29718"/> <!---->
+			<item id="29719"/> <!---->
+			<item id="29720"/> <!---->
+			<item id="29721"/> <!---->
+			<item id="29722"/> <!---->
+			<item id="29723"/> <!---->
+			<item id="49467"/> <!---->
+			<item id="49468"/> <!---->
+			<item id="49801"/> <!---->
+			<item id="49802"/> <!---->
+			<item id="70108"/> <!---->
+			<item id="70109"/> <!---->
+			<item id="70771"/> <!---->
+			<item id="70772"/> <!---->
+			<item id="70913"/> <!---->
+			<item id="70914"/> <!---->
+			<item id="90158"/> <!---->
+			<item id="90190"/> <!---->
+			<item id="90191"/> <!---->
+			<item id="90196"/> <!---->
+			<item id="90197"/> <!---->
+			<item id="90969"/> <!---->
+			<item id="90970"/> <!---->
+		</item_list>
+	</enchant_scroll>
+	
+	<!--Блестящий Лак Подвески-->
+	<enchant_scroll id="90138" on_fail="NOTHING" variation="6" max_enchant="9">
+		<item_list>
+			<item id="29704"/> <!---->
+			<item id="29705"/> <!---->
+			<item id="29706"/> <!---->
+			<item id="29707"/> <!---->
+			<item id="29708"/> <!---->
+			<item id="29709"/> <!---->
+			<item id="29710"/> <!---->
+			<item id="29711"/> <!---->
+			<item id="29712"/> <!---->
+			<item id="29713"/> <!---->
+			<item id="29714"/> <!---->
+			<item id="29715"/> <!---->
+			<item id="29716"/> <!---->
+			<item id="29717"/> <!---->
+			<item id="29718"/> <!---->
+			<item id="29719"/> <!---->
+			<item id="29720"/> <!---->
+			<item id="29721"/> <!---->
+			<item id="29722"/> <!---->
+			<item id="29723"/> <!---->
+			<item id="49467"/> <!---->
+			<item id="49468"/> <!---->
+			<item id="49801"/> <!---->
+			<item id="49802"/> <!---->
+			<item id="70108"/> <!---->
+			<item id="70109"/> <!---->
+			<item id="70771"/> <!---->
+			<item id="70772"/> <!---->
+			<item id="70913"/> <!---->
+			<item id="70914"/> <!---->
+			<item id="90158"/> <!---->
+			<item id="90190"/> <!---->
+			<item id="90191"/> <!---->
+			<item id="90196"/> <!---->
+			<item id="90197"/> <!---->
+			<item id="90969"/> <!---->
+			<item id="90970"/> <!---->
+		</item_list>
+	</enchant_scroll>
+	
+	<!-- High Quality Solid Scroll -->
+
+	<!--High Quality Solid Scroll: Enchant Weapon (D-grade)-->
+	<enchant_scroll id="91464" on_fail="NOTHING" type="WEAPON" variation="1" grade="D" min_enchant="7" max_enchant="10"/>
+	
+	<!--High Quality Solid Scroll: Enchant Armor (D-grade)-->
+	<enchant_scroll id="91465" on_fail="NOTHING" type="ARMOR" variation="2" grade="D" min_enchant="6" max_enchant="9"/>
+
+	<!--High Quality Solid Scroll: Enchant Weapon (C-grade)-->
+	<enchant_scroll id="91466" on_fail="NOTHING" type="WEAPON" variation="1" grade="C" min_enchant="7" max_enchant="10"/>
+
+	<!--High Quality Solid Scroll: Enchant Armor (C-grade)-->
+	<enchant_scroll id="91467" on_fail="NOTHING" type="ARMOR" variation="2" grade="C" min_enchant="6" max_enchant="9"/>
+
+	<!--High Quality Solid Scroll: Enchant Weapon (B-grade)-->
+	<enchant_scroll id="91468" on_fail="NOTHING" type="WEAPON" variation="1" grade="B" min_enchant="7" max_enchant="10"/>
+
+	<!--High Quality Solid Scroll: Enchant Armor (B-grade)-->
+	<enchant_scroll id="91469" on_fail="NOTHING" type="ARMOR" variation="2" grade="B" min_enchant="6" max_enchant="9"/>
+
+	<!--High Quality Solid Scroll: Enchant Weapon (A-grade)-->
+	<enchant_scroll id="91470" on_fail="NOTHING" type="WEAPON" variation="1" grade="A" min_enchant="7" max_enchant="10"/>
+
+	<!--High Quality Solid Scroll: Enchant Armor (A-grade)-->
+	<enchant_scroll id="91471" on_fail="NOTHING" type="ARMOR" variation="2" grade="A" min_enchant="6" max_enchant="9"/>
+
+	<enchant_scroll id="90494" on_fail="CRYSTALS" type="HAIR_ACCESSORY" variation="2" max_enchant="10"/>
+	<enchant_scroll id="90855" on_fail="NOTHING" type="HAIR_ACCESSORY" variation="2" min_enchant="6" max_enchant="10"/>
+	<enchant_scroll id="70753" on_fail="CRYSTALS" type="HAIR_ACCESSORY" variation="2" max_enchant="10"/>
+	<enchant_scroll id="70754" on_fail="NOTHING" type="HAIR_ACCESSORY" variation="2" min_enchant="6" max_enchant="10"/>
+	
+	<!-- Scroll: Enchant Rare Accessories -->
+	<enchant_scroll id="94383" on_fail="CRYSTALS" variation="7" max_enchant="5">
+		<item_list>
+			<item id="6660" />	<!-- Ring of Queen Ant -->
+			<item id="6661" />	<!-- Orfen's Earring -->
+			<item id="6662" />	<!-- Ring of Core -->
+			<item id="49580" />	<!-- Baium's Ring -->
+			<item id="90763" />	<!-- Zaken's Earring -->
+			<item id="90992" />	<!-- Antharas' Earring -->
+			<item id="91550" />	<!-- Frintezza's Necklace -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Rare Accessories (Sealed) -->
+	<enchant_scroll id="94384" on_fail="CRYSTALS" variation="7" max_enchant="5">
+		<item_list>
+			<item id="6660" />	<!-- Ring of Queen Ant -->
+			<item id="6661" />	<!-- Orfen's Earring -->
+			<item id="6662" />	<!-- Ring of Core -->
+			<item id="49580" />	<!-- Baium's Ring -->
+			<item id="90763" />	<!-- Zaken's Earring -->
+			<item id="90992" />	<!-- Antharas' Earring -->
+			<item id="91550" />	<!-- Frintezza's Necklace -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Improved Scroll: Enchant Rare Accessories -->
+	<enchant_scroll id="94385" on_fail="CRYSTALS" variation="7" max_enchant="3" max_enchant_step="2">
+		<item_list>
+			<item id="6660" />	<!-- Ring of Queen Ant -->
+			<item id="6661" />	<!-- Orfen's Earring -->
+			<item id="6662" />	<!-- Ring of Core -->
+			<item id="49580" />	<!-- Baium's Ring -->
+			<item id="90763" />	<!-- Zaken's Earring -->
+			<item id="90992" />	<!-- Antharas' Earring -->
+			<item id="91550" />	<!-- Frintezza's Necklace -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Improved Scroll: Enchant Rare Accessories (Sealed) -->
+	<enchant_scroll id="94386" on_fail="CRYSTALS" variation="7" max_enchant="3" max_enchant_step="2">
+		<item_list>
+			<item id="6660" />	<!-- Ring of Queen Ant -->
+			<item id="6661" />	<!-- Orfen's Earring -->
+			<item id="6662" />	<!-- Ring of Core -->
+			<item id="49580" />	<!-- Baium's Ring -->
+			<item id="90763" />	<!-- Zaken's Earring -->
+			<item id="90992" />	<!-- Antharas' Earring -->
+			<item id="91550" />	<!-- Frintezza's Necklace -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Circlet of Hero -->
+	<enchant_scroll id="94169" on_fail="CRYSTALS" variation="8" max_enchant="10">
+		<item_list>
+			<item id="94166" />	<!-- Circlet of Hero (Sealed) -->
+		</item_list>
+	</enchant_scroll>
+	<enchant_scroll id="95598" on_fail="NOTHING" variation="8" max_enchant="9">
+		<item_list>
+			<item id="94166" />	<!-- Circlet of Hero (Sealed) -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Dragon Belt -->
+	<enchant_scroll id="91863" on_fail="CRYSTALS" variation="8" max_enchant="10">
+		<item_list>
+			<item id="91862" />	<!-- Dragon Belt (Sealed) -->
+			<item id="94621" />	<!-- Blessed Dragon Belt (Sealed) -->
+			<item id="94621" />	<!-- Dragon Belt (time) (Sealed) -->
+		</item_list>
+	</enchant_scroll>
+	<enchant_scroll id="95596" on_fail="NOTHING" variation="8" max_enchant="9">
+		<item_list>
+			<item id="91862" />	<!-- Dragon Belt (Sealed) -->
+			<item id="94621" />	<!-- Blessed Dragon Belt (Sealed) -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Clan Equipment -->
+	<enchant_scroll id="95638" on_fail="CRYSTALS" variation="9" max_enchant="10">
+		<item_list>
+			<item id="95636" />	<!-- Clan Cloak (Sealed) -->
+			<item id="95637" />	<!-- Clan Circlet (Sealed) -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Sayha's Cloak Enchantment Scroll -->
+	<enchant_scroll id="91213" on_fail="CRYSTALS" variation="10" max_enchant="10">
+		<item_list>
+			<item id="91210" />	<!-- Black Sayha's Cloak -->
+			<item id="91211" />	<!-- White Sayha's Cloak -->
+			<item id="91212" />	<!-- Red Sayha's Cloak -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Radiant Sayha's Cloak Enchantment Scroll -->
+	<enchant_scroll id="91214" on_fail="NOTHING" variation="10" max_enchant="9">
+		<item_list>
+			<item id="91210" />	<!-- Black Sayha's Cloak -->
+			<item id="91211" />	<!-- White Sayha's Cloak -->
+			<item id="91212" />	<!-- Red Sayha's Cloak -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Shining Sayha's Cloak Enchantment Scroll -->
+	<enchant_scroll id="91215" on_fail="NOTHING" variation="10" max_enchant="7">
+		<item_list>
+			<item id="91210" />	<!-- Black Sayha's Cloak -->
+			<item id="91211" />	<!-- White Sayha's Cloak -->
+			<item id="91212" />	<!-- Red Sayha's Cloak -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Special Sayha's Cloak -->
+	<enchant_scroll id="91722" on_fail="NOTHING" variation="10" max_enchant="10">
+		<item_list>
+			<item id="91719" />	<!-- Special Black Sayha's Cloak -->
+			<item id="91720" />	<!-- Special White Sayha's Cloak -->
+			<item id="91721" />	<!-- Special Red Sayha's Cloak -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Cloak of Protection -->
+	<enchant_scroll id="93302" on_fail="CRYSTALS" variation="9" max_enchant="10">
+		<item_list>
+			<item id="93301" />	<!-- Cloak of Protection -->
+		</item_list>
+	</enchant_scroll>
+	<enchant_scroll id="95597" on_fail="NOTHING" variation="9" max_enchant="9">
+		<item_list>
+			<item id="93301" />	<!-- Cloak of Protection -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Adventurer's Talisman -->
+	<enchant_scroll id="95688" on_fail="NOTHING" variation="11" max_enchant="1">
+		<item_list>
+			<item id="91937"/>	<!-- Adventurer's Talisman -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Adventurer's Agathion Griffin -->
+	<enchant_scroll id="93040" on_fail="NOTHING" variation="11" max_enchant="1">
+		<item_list>
+			<item id="91935"/>	<!-- Adventurer's Agathion - Griffin -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Adventurer's Cloak -->
+	<enchant_scroll id="93045" on_fail="NOTHING" variation="11" max_enchant="1">
+		<item_list>
+			<item id="93041"/>	<!-- Adventurer's Cloak -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Adventurer's Belt -->
+	<enchant_scroll id="93046" on_fail="NOTHING" variation="11" max_enchant="1">
+		<item_list>
+			<item id="93042"/>	<!-- Adventurer's Belt -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Adventurer's Scroll: Enchant Hair Accessory -->
+	<enchant_scroll id="93043" on_fail="NOTHING" variation="11" max_enchant="1">
+		<item_list>
+			<item id="93044"/>	<!-- Adventurer's Sheep Hat -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Talisman of Aden -->
+	<enchant_scroll id="91756" on_fail="CRYSTALS" variation="12" max_enchant="10">
+		<item_list>
+			<item id="91745"/>	<!-- Talisman of Aden -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Enchant Scroll: Talisman of Baium -->
+	<enchant_scroll id="91951" on_fail="CRYSTALS" variation="13" max_enchant="5">
+		<item_list>
+			<item id="49683"/>	<!-- Talisman of Baium -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Enchant Scroll: Talisman of of Authority -->
+	<enchant_scroll id="93329" on_fail="CRYSTALS" variation="8" max_enchant="10">
+		<item_list>
+			<item id="91061"/>	<!-- Talisman of Authority -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Talisman of Speed -->
+	<enchant_scroll id="92402" on_fail="CRYSTALS" variation="14" max_enchant="10">
+		<item_list>
+			<item id="92403"/>	<!-- Talisman of Speed -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Talisman of Eva -->
+	<enchant_scroll id="92017" on_fail="CRYSTALS" variation="8" max_enchant="10">
+		<item_list>
+			<item id="92018"/>	<!-- Talisman of Eva -->
+		</item_list>
+	</enchant_scroll>
+	<!-- Scroll: Enchant Aden Weapon -->
+	<enchant_scroll id="93038" on_fail="NOTHING" variation="15" max_enchant="16">
+		<item_list>
+			<item id="93028"/>	<!-- Aden's Sword -->
+			<item id="93029"/>	<!-- Aden's Dagger -->
+			<item id="93030"/>	<!-- Aden's Bow -->
+			<item id="93031"/>	<!-- Aden's Club -->
+			<item id="93032"/>	<!-- Aden's Two Handed Sword -->
+			<item id="93033"/>	<!-- Aden's Two Handed Blunt -->
+			<item id="93034"/>	<!-- Aden's Spear -->
+			<item id="93035"/>	<!-- Aden's Fists -->
+			<item id="93036"/>	<!-- Aden's Rapier -->
+			<item id="93037"/>	<!-- Aden's Ancient Sword -->
+			<item id="94897"/>	<!-- Aden's Pistols -->
+			<item id="95691"/>	<!-- Aden's Dual Swords -->
+		</item_list>
+	</enchant_scroll>
+</list>

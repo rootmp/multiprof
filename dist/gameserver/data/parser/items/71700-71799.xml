@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="71713" name="+16 No-grade Weapon Coupon (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.rp_necklace_of_einhasad_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71714" name="+7 C-grade Weapon Coupon ">
+		<set name="icon" value="BranchIcon.Icon.rp_ring_of_maphr_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71715" name="Reinforced Compound Bow Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_composition_bow_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91680" min_count="1" max_count="1" chance="100" enchant="16"/><!--Reinforced Compound Bow-->
+			<capsuled_item id="32249" min_count="1" max_count="1" chance="100"/><!--Infinite Wooden Quiver-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="71716" name="+7 Eminence Bow">
+		<set name="icon" value="icon.weapon_eminence_bow_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="286" min_count="1" max_count="1" chance="100" enchant="7"/><!--Eminence Bow-->
+			<capsuled_item id="32251" min_count="1" max_count="1" chance="100"/><!--Infinite Steel Quiver-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="71717" name="ADEN Gatcha Ticket">
+		<set name="icon" value="icon.bm_jewel_ticket"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71738" name="+6 Fire Dragon Pendant Pack (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pendant_pve_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71754" name="Good Luck Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.event_six_party_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91641" min_count="1" max_count="1" chance="100"/><!--Sayha's Blessing-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="91216" count="1" chance="0.01"/><!--+16 B-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49790" count="1" chance="0.01"/><!--+16 C-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="90934" count="1" chance="0.01"/><!--Brooch Lv. 3--><!--TODO: Check chance-->
+			<create_item id="91031" count="1" chance="0.01"/><!--Water Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91033" count="1" chance="0.01"/><!--Wind Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91032" count="1" chance="0.01"/><!--Fire Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91034" count="1" chance="0.01"/><!--Earth Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="49664" count="1" chance="0.01"/><!--B-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49667" count="1" chance="0.01"/><!--C-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49665" count="1" chance="0.01"/><!--B-grade Armor Pack--><!--TODO: Check chance-->
+			<create_item id="947" count="1" chance="0.01"/><!--Scroll: Enchant B-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="951" count="1" chance="0.01"/><!--Scroll: Enchant C-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="948" count="1" chance="0.01"/><!--Scroll: Enchant B-grade Armor--><!--TODO: Check chance-->
+			<create_item id="91227" count="1" chance="0.01"/><!--Sayha's Cloak Coupon--><!--TODO: Check chance-->
+			<create_item id="91159" count="1" chance="0.01"/><!--Agathion Exchange Coupon--><!--TODO: Check chance-->
+			<create_item id="90859" count="1" chance="0.01"/><!--Eva's Hair Accessory Pack--><!--TODO: Check chance-->
+			<create_item id="92034" count="1" chance="0.01"/><!--Reinforced Jewelry Box--><!--TODO: Check chance-->
+			<create_item id="91767" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Aden--><!--TODO: Check chance-->
+			<create_item id="49674" count="1" chance="0.01"/><!--XP Growth Scroll--><!--TODO: Check chance-->
+			<create_item id="91780" count="1" chance="0.01"/><!--Battle Scroll--><!--TODO: Check chance-->
+			<create_item id="91781" count="1" chance="0.01"/><!--Sayha's Buff Scroll--><!--TODO: Check chance-->
+			<create_item id="91712" count="1" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90907" count="1" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="91641" count="1" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<weapon id="71755" name="Samurai Long Sword (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_samurai_old_longsword_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1380"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="156"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="71756" name="Mace of Underworld (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="20"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_mace_of_underworld_i00"/>
+		<set name="type" value="BOW"/>
+		<set name="weight" value="1090"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="111"/>
+			<add stat="mAtk" order="0x10" value="111"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="71757" name="Demon's Staff (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="20"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_demons_staff_i00"/>
+		<set name="type" value="ETC"/>
+		<set name="weight" value="990"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="152"/>
+			<add stat="mAtk" order="0x10" value="134"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="71758" name="Crystal Dagger (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_crystal_dagger_i00"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="1000"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="136"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="71759" name="Eminence Bow (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_eminence_bow_i00"/>
+		<set name="type" value="RAPIER"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="mp_consume" value="3"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="323"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="71760" name="Orcish Poleaxe (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_orcish_poleaxe_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1950"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="156"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="71761" name="Katana*Katana (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="2270"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="190"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="71762" name="Yaksa Mace (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="20"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_yaksa_mace_i00"/>
+		<set name="type" value="POLE"/>
+		<set name="weight" value="1640"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="156"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="71763" name="Berserker Blade (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_berserker_blade_i00"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="weight" value="1380"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="190"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="71764" name="Great Pata (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_great_pata_i00"/>
+		<set name="type" value="ROD"/>
+		<set name="weight" value="1460"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="190"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="71765" name="Admiral's Estoc (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="20"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_blink_slasher_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="149"/>
+			<add stat="mAtk" order="0x10" value="110"/>
+			<set stat="basePAtkSpd" order="0x08" value="406"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="71766" name="Saber Tooth (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="15"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_invincible_blade_i00"/>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="weight" value="1530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="15"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="172"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<add stat="pAccCombat" order="0x10" value="5"/>
+		</for>
+	</weapon>
+	<etcitem id="71774" name="Aden Supply Box">
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71775" name="Golden Ticket (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_royal_gold_ticket_all"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71776" name="Kamael's Gift">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.npoint_valakas_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71778" name="+4 Sealed Samurai Long Sword Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71779" name="+4 Sealed Mace of Underworld Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71780" name="+4 Sealed Demon's Staff Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="206" min_count="1" max_count="1" chance="100.0" enchant="4"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="71781" name="+4 Sealed Crystal Dagger Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71782" name="+4 Sealed Eminence Bow Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71783" name="+4 Sealed Orcish Poleaxe Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71784" name="+4 Sealed Katana*Katana Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71785" name="+4 Sealed Yaksa Mace Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71786" name="+4 Sealed Berserker Blade Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71787" name="+4 Sealed Great Pata Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71788" name="+4 Sealed Admiral's Estoc Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71789" name="+4 Sealed Saber Tooth Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71790" name="+7 Sealed Samurai Long Sword Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71791" name="+7 Sealed Mace of Underworld Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71792" name="+7 Sealed Demon's Staff Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71793" name="+7 Sealed Crystal Dagger Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71794" name="+7 Sealed Eminence Bow Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71795" name="+7 Sealed Orcish Poleaxe Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71796" name="+7 Sealed Katana*Katana Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71797" name="+7 Sealed Yaksa Mace Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71798" name="+7 Sealed Berserker Blade Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71799" name="+7 Sealed Great Pata Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+</list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="11786" levels="1" name="Debuff Immunity">
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="target_type" value="SELF"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1411"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

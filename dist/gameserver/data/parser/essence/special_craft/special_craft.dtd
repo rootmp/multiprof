@@ -1,0 +1,25 @@
+<!ELEMENT list (item)*>
+<!ELEMENT item (ingredient)*>
+<!ATTLIST item
+	product1Id CDATA #REQUIRED
+	product1Count CDATA #IMPLIED
+	product1Chance CDATA #IMPLIED
+	product2Id CDATA #IMPLIED
+	product2Count CDATA #IMPLIED
+	product2Chance CDATA #IMPLIED
+	product3Id CDATA #IMPLIED
+	product3Count CDATA #IMPLIED
+	product3Chance CDATA #IMPLIED
+	product4Id CDATA #IMPLIED
+	product4Count CDATA #IMPLIED
+	product4Chance CDATA #IMPLIED
+	product5Id CDATA #IMPLIED
+	product5Count CDATA #IMPLIED
+	product5Chance CDATA #IMPLIED
+	dailyLimit CDATA #IMPLIED
+	index CDATA #REQUIRED>
+<!ELEMENT ingredient (#PCDATA)>
+<!ATTLIST ingredient
+	count CDATA #REQUIRED
+	id CDATA #REQUIRED
+	enchantLevel CDATA #IMPLIED>

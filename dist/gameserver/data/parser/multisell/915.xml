@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: nexvill-->
+<list>
+	<item>
+		<ingredient id="-600" count="1"/>	<!--Craft points-->
+		<ingredient id="57" count="50000"/>	<!-- Adena-->
+		<production id="92476" count="1000"/>	<!--Metal Ingot-->
+	</item>
+	<item>
+		<ingredient id="-600" count="1"/>	<!--Craft points-->
+		<ingredient id="57" count="50000"/>	<!-- Adena-->
+		<production id="92477" count="1000"/>	<!--Wood-->
+	</item>
+	<item>
+		<ingredient id="-600" count="1"/>	<!--Craft points-->
+		<ingredient id="57" count="50000"/>	<!-- Adena-->
+		<production id="92478" count="1000"/>	<!--Varnish-->
+	</item>
+	<item>
+		<ingredient id="-600" count="1"/>	<!--Craft points-->
+		<ingredient id="57" count="50000"/>	<!-- Adena-->
+		<production id="92479" count="1000"/>	<!--Metallograph-->
+	</item>
+	<item>
+		<ingredient id="-600" count="1"/>	<!--Craft points-->
+		<ingredient id="57" count="50000"/>	<!-- Adena-->
+		<production id="92480" count="1000"/>	<!--Leather-->
+	</item>
+	<item>
+		<ingredient id="-600" count="1"/>	<!--Craft points-->
+		<ingredient id="57" count="50000"/>	<!-- Adena-->
+		<production id="92481" count="1000"/>	<!--Cloth-->
+	</item>
+</list>

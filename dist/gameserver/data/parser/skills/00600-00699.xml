@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="619" levels="2" name="Cancel Transformation">
+		<set name="effectPoint" value="10"/>
+		<set name="icon" value="icon.skilltransform2"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="622" levels="3" name="Ultimate Escape">
+		<table name="#effectPoint">200 300 300</table>
+		<table name="#pEvasRate">20 35 35</table>
+		<table name="#runSpd">30 40 40</table>
+		<table name="#SkillEvasion">20 30 30</table>
+		<table name="#abnormal_level">1 2 3</table>
+		<table name="#magicLevel">28 52 76</table>
+		<table name="#mp_consume">40 60 60</table>
+		<table name="#abnormal">0 0 20</table>
+		<table name="#reuseDelay">900000 900000 600000</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0622"/>
+		<set name="reuseDelay" value="#reuseDelay"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="avoid_up_special"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<for>
+			<effect>
+				<add order="0x60" stat="pEvasRate" value="#pEvasRate"/>
+				<add order="0x60" stat="mEvasRate" value="#pEvasRate"/>
+				<add order="0x60" stat="runSpd" value="#runSpd"/>
+				<add order="0x60" stat="pSkillEvasion" value="#SkillEvasion"/>
+				<add stat="resist_abnormal_debuff" value="#abnormal"/>
+				<mul stat="mEvasRate" value="#SkillEvasion"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="626" levels="5" name="Critical Sense">
+		<!--
+			Increase critical rate and critical attack power.
+			07/03/2008
+		-->
+		<table name="#p_critical_damage_diff">100 200 300 400 500</table>
+		<table name="#pCritRate">10 12 14 16 20</table>
+		<table name="#magicLevel">45 55 67 78 85</table>
+		<set name="icon" value="icon.skill10812"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_critical_damage value="#p_critical_damage_diff" type="DIFF"/>
+			<add stat="pCritRate" value="#pCritRate"/>
+		</for>
+	</skill>
+	<skill id="627" levels="10" name="Mental Panic Shot">
+		<!--
+			Need correct:	reuseDelay, PDAM
+			Last modify: 11.03.2022
+			Description: Attack the target with $s1 power. For 3 sec. inflicts Fear on the target.
+		-->
+		<table name="#TabactivateRate">40 42 44 45 50</table>
+		<table name="#magicLevel">76 78 80 82 84</table>
+		<table name="#abnormal_time">3</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<table name="#mp_consume">40 45 50 55 60 65 70 75 80 85</table>
+		<table name="#effectPoint">-460 -470 -480 -490 -500 -500 -500 -500 -500 -500</table>
+		<table name="#power">2651 2739 2827 2915 3005 7737 7964 8078 8192 8307</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill10771"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="300"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="TURN_FLEE"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="turn_flee"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="lv_bonus_rate" value="20"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="activateRate" value="#TabactivateRate"/>
+		<set name="operate_type" value="A2"/>
+		<set name="overHit" value="true"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="Fear"/>
+		</for>
+	</skill>
+</list>

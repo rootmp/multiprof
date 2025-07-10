@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="127"><!--Berserker-->
+		<skill id="472" level="3" min_level="40" cost="80000"/><!--Ancient Sword Mastery-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="465" level="3" min_level="40" cost="80000"/><!--Light Armor Mastery-->
+		<skill id="45179" level="1" min_level="40"/><!--Shadow Master-->
+		<skill id="399" level="3" min_level="40" cost="80000"/><!--Heavy Armor Mastery-->
+		<skill id="45147" level="3" min_level="40" cost="80000"/><!--Soul Empower-->
+		<skill id="45148" level="2" min_level="40" cost="80000"/><!--Soul Wild Magic-->
+		<skill id="45149" level="2" min_level="40" cost="80000"/><!--Soul Berserker Spirit-->
+		<skill id="466" level="2" min_level="40" cost="80000"/><!--Magic Immunity-->
+		<skill id="45155" level="1" min_level="40" cost="80000"/><!--Soul Impulse-->
+		<skill id="45143" level="2" min_level="40" cost="80000"/><!--Soul Magic Barrier-->
+		<skill id="45144" level="3" min_level="40" cost="80000"/><!--Soul Might-->
+		<skill id="394" level="1" min_level="40" cost="80000"/><!--Absorb Shadow Souls-->
+		<skill id="45146" level="3" min_level="40" cost="80000"/><!--Soul Acumen-->
+		<skill id="477" level="3" min_level="40" cost="80000"/><!--Soul Smash-->
+		<skill id="994" level="1" min_level="40" cost="80000"/><!--Rush-->
+		<skill id="45141" level="2" min_level="40" cost="80000"/><!--Soul Haste-->
+		<skill id="45139" level="3" min_level="40" cost="80000"/><!--Soul Focus-->
+		<skill id="45150" level="3" min_level="40" cost="80000"/><!--Soul Clarity-->
+		<skill id="45140" level="3" min_level="40" cost="80000"/><!--Soul Death Whisper-->
+		<skill id="45145" level="3" min_level="40" cost="80000"/><!--Soul Shield-->
+		<skill id="503" level="1" min_level="43" cost="80000"/><!--Scorn-->
+		<skill id="626" level="1" min_level="45" cost="120000"/><!--Critical Sense-->
+		<skill id="34" level="2" min_level="45" cost="120000"/><!--Bandage-->
+		<skill id="1441" level="2" min_level="48" cost="120000"/><!--Soul Roar-->
+		<skill id="472" level="4" min_level="50" cost="200000"/><!--Ancient Sword Mastery-->
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="465" level="4" min_level="50" cost="200000"/><!--Light Armor Mastery-->
+		<skill id="399" level="4" min_level="50" cost="200000"/><!--Heavy Armor Mastery-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45155" level="2" min_level="50" cost="200000"/><!--Soul Impulse-->
+		<skill id="499" level="2" min_level="50" cost="200000"/><!--Courage-->
+		<skill id="45151" level="1" min_level="50" cost="200000"/><!--Collect Light Souls-->
+		<skill id="45152" level="1" min_level="50" cost="200000"/><!--Collect Shadow Souls-->
+		<skill id="477" level="4" min_level="50" cost="200000"/><!--Soul Smash-->
+		<skill id="1432" level="2" min_level="50" cost="200000"/><!--Increase Power-->
+		<skill id="1405" level="1" min_level="52" cost="200000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="466" level="3" min_level="55" cost="450000"/><!--Magic Immunity-->
+		<skill id="626" level="2" min_level="55" cost="450000"/><!--Critical Sense-->
+		<skill id="1435" level="3" min_level="56" cost="500000"/><!--Death Mark-->
+		<skill id="503" level="2" min_level="56" cost="500000"/><!--Scorn-->
+		<skill id="1514" level="1" min_level="58" cost="600000"/><!--Soul Barrier-->
+		<skill id="472" level="5" min_level="60" cost="800000"/><!--Ancient Sword Mastery-->
+		<skill id="45184" level="3" min_level="60"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="465" level="5" min_level="60" cost="800000"/><!--Light Armor Mastery-->
+		<skill id="45178" level="2" min_level="60" cost="800000"><!--Light Master-->
+			<required_items>
+				<item id="91944;95500" count="1"/><!--Book of Light-->
+			</required_items>
+		</skill>
+		<skill id="399" level="5" min_level="60" cost="800000"/><!--Heavy Armor Mastery-->
+		<skill id="45155" level="3" min_level="60" cost="800000"/><!--Soul Impulse-->
+		<skill id="34" level="3" min_level="60" cost="800000"/><!--Bandage-->
+		<skill id="477" level="5" min_level="60" cost="800000"/><!--Soul Smash-->
+		<skill id="994" level="2" min_level="60" cost="800000"/><!--Rush-->
+		<skill id="45159" level="1" min_level="60" cost="800000"/><!--Rush Impact-->
+		<skill id="45157" level="1" min_level="60" cost="800000"/><!--Enuma Elish-->
+		<skill id="1405" level="2" min_level="61" cost="900000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="499" level="3" min_level="65" cost="1300000"/><!--Courage-->
+		<skill id="626" level="3" min_level="67" cost="1500000"/><!--Critical Sense-->
+		<skill id="472" level="6" min_level="70" cost="1800000"/><!--Ancient Sword Mastery-->
+		<skill id="465" level="6" min_level="70" cost="1800000"/><!--Light Armor Mastery-->
+		<skill id="45179" level="2" min_level="70" cost="1800000"><!--Shadow Master-->
+			<required_items>
+				<item id="91945;95501" count="1"/><!--Book of Shadows-->
+			</required_items>
+		</skill>
+		<skill id="399" level="6" min_level="70" cost="1800000"/><!--Heavy Armor Mastery-->
+		<skill id="45155" level="4" min_level="70" cost="1800000"/><!--Soul Impulse-->
+		<skill id="503" level="3" min_level="70" cost="1800000"/><!--Scorn-->
+		<skill id="1441" level="3" min_level="70" cost="1800000"/><!--Soul Roar-->
+		<skill id="477" level="6" min_level="70" cost="1800000"/><!--Soul Smash-->
+		<skill id="45159" level="2" min_level="70" cost="1800000"/><!--Rush Impact-->
+		<skill id="45157" level="2" min_level="70" cost="1800000"/><!--Enuma Elish-->
+		<skill id="472" level="7" min_level="75" cost="2300000"/><!--Ancient Sword Mastery-->
+		<skill id="465" level="7" min_level="75" cost="2300000"/><!--Light Armor Mastery-->
+		<skill id="399" level="7" min_level="75" cost="2300000"/><!--Heavy Armor Mastery-->
+		<skill id="45155" level="5" min_level="75" cost="2300000"/><!--Soul Impulse-->
+		<skill id="477" level="7" min_level="75" cost="2300000"/><!--Soul Smash-->
+		<skill id="45157" level="3" min_level="75" cost="2300000"/><!--Enuma Elish-->
+	</normal_skill_tree>
+</list>

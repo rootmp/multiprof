@@ -1,0 +1,119 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="215" name="Transcendent Instance Zone 90" maxChannels="100" collapseIfEmpty="1" timelimit="15" dispelBuffs="false">
+		<level min="90" max="99"/>
+		<party min="1" max="1"/>
+		<teleport loc="185992 58360 -4525"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+        <spawns>
+			<spawn mobId="34122" type="point" respawn="0"> <!-- Bunch -->
+				<coords loc="185928 58248 -4544 49208"/>
+			</spawn>
+			<group name="transcendent_90_variant_1_1" spawned="false"/>
+			<group name="transcendent_90_variant_1_2" spawned="false"/>
+			<group name="transcendent_90_variant_1_3" spawned="false"/>
+			<group name="transcendent_90_variant_1_4" spawned="false"/>
+			<group name="transcendent_90_variant_1_5" spawned="false"/>
+			<group name="transcendent_90_variant_1_6" spawned="false"/>
+			<group name="transcendent_90_variant_1_7" spawned="false"/>
+			<group name="transcendent_90_variant_1_8" spawned="false"/>
+			<group name="transcendent_90_variant_1_9" spawned="false"/>
+			<group name="transcendent_90_variant_1_10" spawned="false"/>
+			<group name="transcendent_90_variant_1_11" spawned="false"/>
+			<group name="transcendent_90_variant_1_12" spawned="false"/>
+			<group name="transcendent_90_variant_1_13" spawned="false"/>
+			<group name="transcendent_90_variant_1_14" spawned="false"/>
+			<group name="transcendent_90_variant_1_15" spawned="false"/>
+			<group name="transcendent_90_variant_2_1" spawned="false"/>
+			<group name="transcendent_90_variant_2_2" spawned="false"/>
+			<group name="transcendent_90_variant_2_3" spawned="false"/>
+			<group name="transcendent_90_variant_2_4" spawned="false"/>
+			<group name="transcendent_90_variant_2_5" spawned="false"/>
+			<group name="transcendent_90_variant_2_6" spawned="false"/>
+			<group name="transcendent_90_variant_2_7" spawned="false"/>
+			<group name="transcendent_90_variant_2_8" spawned="false"/>
+			<group name="transcendent_90_variant_2_9" spawned="false"/>
+			<group name="transcendent_90_variant_2_10" spawned="false"/>
+			<group name="transcendent_90_variant_2_11" spawned="false"/>
+			<group name="transcendent_90_variant_2_12" spawned="false"/>
+			<group name="transcendent_90_variant_2_13" spawned="false"/>
+			<group name="transcendent_90_variant_2_14" spawned="false"/>
+			<group name="transcendent_90_variant_2_15" spawned="false"/>
+			<group name="transcendent_90_variant_3_1" spawned="false"/>
+			<group name="transcendent_90_variant_3_2" spawned="false"/>
+			<group name="transcendent_90_variant_3_3" spawned="false"/>
+			<group name="transcendent_90_variant_3_4" spawned="false"/>
+			<group name="transcendent_90_variant_3_5" spawned="false"/>
+			<group name="transcendent_90_variant_3_6" spawned="false"/>
+			<group name="transcendent_90_variant_3_7" spawned="false"/>
+			<group name="transcendent_90_variant_3_8" spawned="false"/>
+			<group name="transcendent_90_variant_3_9" spawned="false"/>
+			<group name="transcendent_90_variant_3_10" spawned="false"/>
+			<group name="transcendent_90_variant_3_11" spawned="false"/>
+			<group name="transcendent_90_variant_3_12" spawned="false"/>
+			<group name="transcendent_90_variant_3_13" spawned="false"/>
+			<group name="transcendent_90_variant_3_14" spawned="false"/>
+			<group name="transcendent_90_variant_3_15" spawned="false"/>
+			<group name="transcendent_90_variant_4_1" spawned="false"/>
+			<group name="transcendent_90_variant_4_2" spawned="false"/>
+			<group name="transcendent_90_variant_4_3" spawned="false"/>
+			<group name="transcendent_90_variant_4_4" spawned="false"/>
+			<group name="transcendent_90_variant_4_5" spawned="false"/>
+			<group name="transcendent_90_variant_4_6" spawned="false"/>
+			<group name="transcendent_90_variant_4_7" spawned="false"/>
+			<group name="transcendent_90_variant_4_8" spawned="false"/>
+			<group name="transcendent_90_variant_4_9" spawned="false"/>
+			<group name="transcendent_90_variant_4_10" spawned="false"/>
+			<group name="transcendent_90_variant_4_11" spawned="false"/>
+			<group name="transcendent_90_variant_4_12" spawned="false"/>
+			<group name="transcendent_90_variant_4_13" spawned="false"/>
+			<group name="transcendent_90_variant_4_14" spawned="false"/>
+			<group name="transcendent_90_variant_4_15" spawned="false"/>
+			<group name="transcendent_90_variant_5_1" spawned="false"/>
+			<group name="transcendent_90_variant_5_2" spawned="false"/>
+			<group name="transcendent_90_variant_5_3" spawned="false"/>
+			<group name="transcendent_90_variant_5_4" spawned="false"/>
+			<group name="transcendent_90_variant_5_5" spawned="false"/>
+			<group name="transcendent_90_variant_5_6" spawned="false"/>
+			<group name="transcendent_90_variant_5_7" spawned="false"/>
+			<group name="transcendent_90_variant_5_8" spawned="false"/>
+			<group name="transcendent_90_variant_5_9" spawned="false"/>
+			<group name="transcendent_90_variant_5_10" spawned="false"/>
+			<group name="transcendent_90_variant_5_11" spawned="false"/>
+			<group name="transcendent_90_variant_5_12" spawned="false"/>
+			<group name="transcendent_90_variant_5_13" spawned="false"/>
+			<group name="transcendent_90_variant_5_14" spawned="false"/>
+			<group name="transcendent_90_variant_5_15" spawned="false"/>
+			<group name="transcendent_90_variant_6_1" spawned="false"/>
+			<group name="transcendent_90_variant_6_2" spawned="false"/>
+			<group name="transcendent_90_variant_6_3" spawned="false"/>
+			<group name="transcendent_90_variant_6_4" spawned="false"/>
+			<group name="transcendent_90_variant_6_5" spawned="false"/>
+			<group name="transcendent_90_variant_6_6" spawned="false"/>
+			<group name="transcendent_90_variant_6_7" spawned="false"/>
+			<group name="transcendent_90_variant_6_8" spawned="false"/>
+			<group name="transcendent_90_variant_6_9" spawned="false"/>
+			<group name="transcendent_90_variant_6_10" spawned="false"/>
+			<group name="transcendent_90_variant_6_11" spawned="false"/>
+			<group name="transcendent_90_variant_6_12" spawned="false"/>
+			<group name="transcendent_90_variant_6_13" spawned="false"/>
+			<group name="transcendent_90_variant_6_14" spawned="false"/>
+			<group name="transcendent_90_variant_6_15" spawned="false"/>
+			<group name="transcendent_90_box_1" spawned="false"/>
+			<group name="transcendent_90_box_2" spawned="false"/>
+			<group name="transcendent_90_box_3" spawned="false"/>
+			<group name="transcendent_90_box_4" spawned="false"/>
+			<group name="transcendent_90_box_5" spawned="false"/>
+			<group name="transcendent_90_box_6" spawned="false"/>
+			<group name="transcendent_90_box_7" spawned="false"/>
+			<group name="transcendent_90_box_8" spawned="false"/>
+			<group name="transcendent_90_box_9" spawned="false"/>
+			<group name="transcendent_90_box_10" spawned="false"/>
+			<group name="transcendent_90_box_11" spawned="false"/>
+			<group name="transcendent_90_box_12" spawned="false"/>
+		</spawns>
+		<zones>
+			<zone name="[transcendent_instance_zone_90]" active="true"/>
+		</zones>
+	</instance>
+</list>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "upgrade_system.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_upgrade id="1" type="1" item_id="6660" price="5000000">	<!--Queen Ant's Ring-->
+		<results>
+			<success chance="50">
+				<item id="94383" count="1"/>	<!--Scroll: Enchant Rare Accessories-->
+			</success>
+			<fail chance="50">
+				<item id="94208" count="1"/>	<!--Scroll of Blessing-->
+			</fail>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="2" type="1" item_id="6661" price="5000000">	<!--Orfen's Earring-->
+		<results>
+			<success chance="50">
+				<item id="94383" count="1"/>	<!--Scroll: Enchant Rare Accessories-->
+			</success>
+			<fail chance="50">
+				<item id="94208" count="1"/>	<!--Scroll of Blessing-->
+			</fail>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="3" type="1" item_id="6662" price="2000000">	<!--Ring of Core-->
+		<results>
+			<success chance="20">
+				<item id="94383" count="1"/>	<!--Scroll: Enchant Rare Accessories-->
+			</success>
+			<fail chance="80">
+				<item id="94208" count="1"/>	<!--Scroll of Blessing-->
+			</fail>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="4" type="1" item_id="49580" price="7500000">	<!--Baium's Ring-->
+		<results>
+			<success chance="23">
+				<item id="94385" count="1"/>	<!--Improved Scroll: Enchant Rare Accessories-->
+			</success>
+			<fail chance="77">
+				<item id="94383" count="1"/>	<!--Scroll: Enchant Rare Accessories-->
+			</fail>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="5" type="1" item_id="90763" price="7500000">	<!--Zaken's Earring-->
+		<results>
+			<success chance="80">
+				<item id="94383" count="1"/>	<!--Scroll: Enchant Rare Accessories-->
+			</success>
+			<fail chance="20">
+				<item id="94208" count="1"/>	<!--Scroll of Blessing-->
+			</fail>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="6" type="1" item_id="90992" price="10000000">	<!--Antharas' Earring-->
+		<results>
+			<success chance="40">
+				<item id="94385" count="1"/>	<!--Improved Scroll: Enchant Rare Accessories-->
+			</success>
+			<fail chance="60">
+				<item id="94383" count="2"/>	<!--Scroll: Enchant Rare Accessories-->
+			</fail>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="7" type="1" item_id="91550" price="10000000">	<!--Frintezza's Necklace-->
+		<results>
+			<success chance="40">
+				<item id="94385" count="1"/>	<!--Improved Scroll: Enchant Rare Accessories-->
+			</success>
+			<fail chance="60">
+				<item id="94383" count="1"/>	<!--Scroll: Enchant Rare Accessories-->
+			</fail>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="8" type="1" item_id="91046" price="50000">	<!--Ignis' Old Necklace Lv. 1-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="9" type="1" item_id="91047" price="50000">	<!--Ignis' Old Necklace Lv. 2-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="10" type="1" item_id="91048" price="50000">	<!--Ignis' Old Necklace Lv. 3-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="11" type="1" item_id="91118" price="100000">	<!--Ignis' Old Necklace Lv. 4-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="12" type="1" item_id="91119" price="200000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="2"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="13" type="1" item_id="91119" enchant_level="1" price="300000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="3"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="14" type="1" item_id="91119" enchant_level="2" price="500000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="4"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="15" type="1" item_id="91119" enchant_level="3" price="700000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="5"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="16" type="1" item_id="91119" enchant_level="4" price="1000000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="6"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="17" type="1" item_id="91119" enchant_level="5" price="2000000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="18" type="1" item_id="91119" enchant_level="6" price="2000000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="19" type="1" item_id="91119" enchant_level="7" price="2000000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="20" type="1" item_id="91119" enchant_level="8" price="5000000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="21" type="1" item_id="91119" enchant_level="9" price="5000000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="22" type="1" item_id="91119" enchant_level="10" price="5000000">	<!--Ignis' Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="23" type="1" item_id="91043" price="50000">	<!--Nebula's Old Necklace Lv. 1-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="24" type="1" item_id="91044" price="50000">	<!--Nebula's Old Necklace Lv. 2-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="25" type="1" item_id="91045" price="50000">	<!--Nebula's Old Necklace Lv. 3-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="26" type="1" item_id="91116" price="100000">	<!--Nebula's Old Necklace Lv. 4-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="27" type="1" item_id="91117" price="200000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="2"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="28" type="1" item_id="91117" enchant_level="1" price="300000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="3"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="29" type="1" item_id="91117" enchant_level="2" price="500000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="4"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="30" type="1" item_id="91117" enchant_level="3" price="700000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="5"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="31" type="1" item_id="91117" enchant_level="4" price="1000000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="6"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="32" type="1" item_id="91117" enchant_level="5" price="2000000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="33" type="1" item_id="91117" enchant_level="6" price="2000000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="34" type="1" item_id="91117" enchant_level="7" price="2000000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="35" type="1" item_id="91117" enchant_level="8" price="5000000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="36" type="1" item_id="91117" enchant_level="9" price="5000000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="37" type="1" item_id="91117" enchant_level="10" price="5000000">	<!--Nebula's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="38" type="1" item_id="91049" price="50000">	<!--Procella's Old Necklace Lv. 1-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="39" type="1" item_id="91050" price="50000">	<!--Procella's Old Necklace Lv. 2-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="40" type="1" item_id="91051" price="50000">	<!--Procella's Old Necklace Lv. 3-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="41" type="1" item_id="91120" price="100000">	<!--Procella's Old Necklace Lv. 4-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="42" type="1" item_id="91121" price="200000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="2"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="43" type="1" item_id="91121" enchant_level="1" price="300000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="3"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="44" type="1" item_id="91121" enchant_level="2" price="500000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="4"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="45" type="1" item_id="91121" enchant_level="3" price="700000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="5"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="46" type="1" item_id="91121" enchant_level="4" price="1000000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="6"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="47" type="1" item_id="91121" enchant_level="5" price="2000000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="48" type="1" item_id="91121" enchant_level="6" price="2000000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="49" type="1" item_id="91121" enchant_level="7" price="2000000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="50" type="1" item_id="91121" enchant_level="8" price="5000000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="51" type="1" item_id="91121" enchant_level="9" price="5000000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="52" type="1" item_id="91121" enchant_level="10" price="5000000">	<!--Procella's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="53" type="1" item_id="91052" price="50000">	<!--Petram's Old Necklace Lv. 1-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="54" type="1" item_id="91053" price="50000">	<!--Petram's Old Necklace Lv. 2-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="55" type="1" item_id="91054" price="50000">	<!--Petram's Old Necklace Lv. 3-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="56" type="1" item_id="91122" price="100000">	<!--Petram's Old Necklace Lv. 4-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="1"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="57" type="1" item_id="91123" price="200000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="2"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="58" type="1" item_id="91123" enchant_level="1" price="300000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="3"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="59" type="1" item_id="91123" enchant_level="2" price="500000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="4"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="60" type="1" item_id="91123" enchant_level="3" price="700000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="5"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="61" type="1" item_id="91123" enchant_level="4" price="1000000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="6"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="62" type="1" item_id="91123" enchant_level="5" price="2000000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="63" type="1" item_id="91123" enchant_level="6" price="2000000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="64" type="1" item_id="91123" enchant_level="7" price="2000000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="7"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="65" type="1" item_id="91123" enchant_level="8" price="5000000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="66" type="1" item_id="91123" enchant_level="9" price="5000000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="67" type="1" item_id="91123" enchant_level="10" price="5000000">	<!--Petram's Necklace-->
+		<results>
+			<success chance="100">
+				<item id="94682" count="1" enchant="8"/>	<!--Necklace of Spirits-->
+			</success>
+		</results>
+	</normal_upgrade>
+	<normal_upgrade id="68" type="1" item_id="96600" price="7500000">	<!--Beleth' Ring-->
+		<results>
+			<success chance="23">
+				<item id="94385" count="1"/>	<!--Improved Scroll: Enchant Rare Accessories-->
+			</success>
+			<fail chance="77">
+				<item id="94383" count="1"/>	<!--Scroll: Enchant Rare Accessories-->
+			</fail>
+		</results>
+	</normal_upgrade>
+</list>

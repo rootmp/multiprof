@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="55700" levels="1" name="Scroll: Dance of Fire">
+		<table name="#abnormal_time">120</table>
+		<table name="#magicLevel">40</table>
+		<set name="icon" value="icon.skill0274"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="dance_of_fire"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="magicType" value="MUSIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="affect_range" value="1000"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>		
+		<for>
+			<effect>
+				<p_critical_damage value="35" type="per"/>
+			</effect>
+		</for>
+	</skill>
+</list>

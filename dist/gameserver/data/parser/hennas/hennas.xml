@@ -1,0 +1,1900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "hennas.dtd">
+<list>
+	<potential>
+		<potential_effect id="1" slot_id="1" max_skill_level="20" skill_id="83001"/><!--Физ./ Маг. Атк.-->
+		<potential_effect id="2" slot_id="1" max_skill_level="20" skill_id="83002"/><!--Физ. Защ./ Маг. Защ.-->
+		<potential_effect id="3" slot_id="1" max_skill_level="20" skill_id="83003"/><!--Скор. Атк./ Скор. Маг-->
+		<potential_effect id="4" slot_id="2" max_skill_level="20" skill_id="83004"/><!--Бонус к урону от умений в PvE-->
+		<potential_effect id="5" slot_id="2" max_skill_level="20" skill_id="83005"/><!--Получаемый урон от умений в PvE-->
+		<potential_effect id="6" slot_id="2" max_skill_level="20" skill_id="83006"/><!--Бонус к урону от умений в PvP-->
+		<potential_effect id="7" slot_id="2" max_skill_level="20" skill_id="83007"/><!--Получаемый урон от умений в PvP-->
+		<potential_effect id="8" slot_id="3" max_skill_level="20" skill_id="83008"/><!--Шанс всех Крит. Атк.-->
+		<potential_effect id="9" slot_id="3" max_skill_level="20" skill_id="83009"/><!--Сила всех Крит. Атк.-->
+		<potential_effect id="10" slot_id="3" max_skill_level="20" skill_id="83010"/><!--Шанс получения крит. урона от всех атак-->
+		<potential_effect id="11" slot_id="3" max_skill_level="20" skill_id="83011"/><!--Получаемый крит. урон от всех атак-->
+		<potential_effect id="12" slot_id="4" max_skill_level="20" skill_id="83012"/><!--Урон от Зарядов Души/Зарядов Духа-->
+		<potential_effect id="13" slot_id="4" max_skill_level="20" skill_id="83013"/><!--Сопротивление урону от Зарядов Души/ Зарядов Духа-->
+		<potential_effect id="14" slot_id="4" max_skill_level="20" skill_id="83014"/><!--Увеличение всей мощности-->
+		<potential_effect id="15" slot_id="4" max_skill_level="20" skill_id="83015"/><!--Весь получаемый урон-->
+		<potential_effect id="16" slot_id="4" max_skill_level="20" skill_id="83016"/><!--Шанс обездвиживания-->
+
+		<potential_exp level="1" exp="20"/>
+		<potential_exp level="2" exp="30"/>
+		<potential_exp level="3" exp="40"/>
+		<potential_exp level="4" exp="50"/>
+		<potential_exp level="5" exp="100"/>
+		<potential_exp level="6" exp="110"/>
+		<potential_exp level="7" exp="120"/>
+		<potential_exp level="8" exp="130"/>
+		<potential_exp level="9" exp="140"/>
+		<potential_exp level="10" exp="150"/>
+		<potential_exp level="11" exp="170"/>
+		<potential_exp level="12" exp="190"/>
+		<potential_exp level="13" exp="210"/>
+		<potential_exp level="14" exp="230"/>
+		<potential_exp level="15" exp="250"/>
+		<potential_exp level="16" exp="300"/>
+		<potential_exp level="17" exp="350"/>
+		<potential_exp level="18" exp="400"/>
+		<potential_exp level="19" exp="450"/>
+		<potential_exp level="20" exp="500"/>
+
+		<potential_fee step="1" daily_count="5" item_id="57" item_count="500000">
+			<exp_count value="0" chance="50.0"/>
+			<exp_count value="1" chance="50.0"/>
+		</potential_fee>
+		<potential_fee step="2" daily_count="5" item_id="57" item_count="2000000">
+			<exp_count value="1" chance="70.0"/>
+			<exp_count value="2" chance="29.0"/>
+			<exp_count value="3" chance="1.0"/>
+		</potential_fee>
+		<potential_fee step="3" daily_count="10" item_id="96623" item_count="1">
+			<exp_count value="1" chance="10.0"/>
+			<exp_count value="2" chance="75.0"/>
+			<exp_count value="3" chance="12.0"/>
+			<exp_count value="4" chance="2.0"/>
+			<exp_count value="5" chance="1.0"/>
+		</potential_fee>
+	</potential>
+
+	<combinations>
+		<combination slot_one="96617" slot_two="96623" adena="300000" chance="50.0" result_dye_id="338"/>
+		<combination slot_one="96355" slot_two="96623" adena="300000" chance="25.0" result_dye_id="339"/>
+		<combination slot_one="96356" slot_two="96623" adena="300000" chance="20.0" result_dye_id="340"/>
+		<combination slot_one="96357" slot_two="96623" adena="300000" chance="15.0" result_dye_id="341"/>
+		<combination slot_one="96358" slot_two="96623" adena="300000" chance="10.0" result_dye_id="342"/>
+		<combination slot_one="96359" slot_two="96623" adena="300000" chance="8.0" result_dye_id="343"/>
+		<combination slot_one="96360" slot_two="96623" adena="300000" chance="6.0" result_dye_id="344"/>
+		<combination slot_one="96361" slot_two="96623" adena="300000" chance="5.0" result_dye_id="345"/>
+		<combination slot_one="96362" slot_two="96623" adena="300000" chance="5.0" result_dye_id="346"/>
+		<combination slot_one="96363" slot_two="96623" adena="300000" chance="5.0" result_dye_id="347"/>
+		<combination slot_one="96364" slot_two="96623" adena="300000" chance="5.0" result_dye_id="348"/>
+		<combination slot_one="96365" slot_two="96630" adena="500000" chance="10.0" result_dye_id="349"/>
+		<combination slot_one="96366" slot_two="96630" adena="500000" chance="8.0" result_dye_id="350"/>
+		<combination slot_one="96367" slot_two="96630" adena="500000" chance="6.0" result_dye_id="351"/>
+		<combination slot_one="96368" slot_two="96630" adena="500000" chance="5.0" result_dye_id="352"/>
+		<combination slot_one="96369" slot_two="96630" adena="500000" chance="4.0" result_dye_id="353"/>
+		<combination slot_one="96370" slot_two="96630" adena="500000" chance="3.0" result_dye_id="354"/>
+		<combination slot_one="96371" slot_two="96630" adena="500000" chance="2.0" result_dye_id="355"/>
+		<combination slot_one="96372" slot_two="96630" adena="500000" chance="1.5" result_dye_id="356"/>
+		<combination slot_one="96373" slot_two="96630" adena="500000" chance="0.5" result_dye_id="357"/>
+		<combination slot_one="96618" slot_two="96623" adena="300000" chance="50.0" result_dye_id="359"/>
+		<combination slot_one="96375" slot_two="96623" adena="300000" chance="25.0" result_dye_id="360"/>
+		<combination slot_one="96376" slot_two="96623" adena="300000" chance="20.0" result_dye_id="361"/>
+		<combination slot_one="96377" slot_two="96623" adena="300000" chance="15.0" result_dye_id="362"/>
+		<combination slot_one="96378" slot_two="96623" adena="300000" chance="10.0" result_dye_id="363"/>
+		<combination slot_one="96379" slot_two="96623" adena="300000" chance="8.0" result_dye_id="364"/>
+		<combination slot_one="96380" slot_two="96623" adena="300000" chance="6.0" result_dye_id="365"/>
+		<combination slot_one="96381" slot_two="96623" adena="300000" chance="5.0" result_dye_id="366"/>
+		<combination slot_one="96382" slot_two="96623" adena="300000" chance="5.0" result_dye_id="367"/>
+		<combination slot_one="96383" slot_two="96623" adena="300000" chance="5.0" result_dye_id="368"/>
+		<combination slot_one="96384" slot_two="96623" adena="300000" chance="5.0" result_dye_id="369"/>
+		<combination slot_one="96385" slot_two="96630" adena="500000" chance="10.0" result_dye_id="370"/>
+		<combination slot_one="96386" slot_two="96630" adena="500000" chance="8.0" result_dye_id="371"/>
+		<combination slot_one="96387" slot_two="96630" adena="500000" chance="6.0" result_dye_id="372"/>
+		<combination slot_one="96388" slot_two="96630" adena="500000" chance="5.0" result_dye_id="373"/>
+		<combination slot_one="96389" slot_two="96630" adena="500000" chance="4.0" result_dye_id="374"/>
+		<combination slot_one="96390" slot_two="96630" adena="500000" chance="3.0" result_dye_id="375"/>
+		<combination slot_one="96391" slot_two="96630" adena="500000" chance="2.0" result_dye_id="376"/>
+		<combination slot_one="96392" slot_two="96630" adena="500000" chance="1.5" result_dye_id="377"/>
+		<combination slot_one="96393" slot_two="96630" adena="500000" chance="0.5" result_dye_id="378"/>
+		<combination slot_one="96619" slot_two="96623" adena="300000" chance="50.0" result_dye_id="380"/>
+		<combination slot_one="96395" slot_two="96623" adena="300000" chance="25.0" result_dye_id="381"/>
+		<combination slot_one="96396" slot_two="96623" adena="300000" chance="20.0" result_dye_id="382"/>
+		<combination slot_one="96397" slot_two="96623" adena="300000" chance="15.0" result_dye_id="383"/>
+		<combination slot_one="96398" slot_two="96623" adena="300000" chance="10.0" result_dye_id="384"/>
+		<combination slot_one="96399" slot_two="96623" adena="300000" chance="8.0" result_dye_id="385"/>
+		<combination slot_one="96400" slot_two="96623" adena="300000" chance="6.0" result_dye_id="386"/>
+		<combination slot_one="96401" slot_two="96623" adena="300000" chance="5.0" result_dye_id="387"/>
+		<combination slot_one="96402" slot_two="96623" adena="300000" chance="5.0" result_dye_id="388"/>
+		<combination slot_one="96403" slot_two="96623" adena="300000" chance="5.0" result_dye_id="389"/>
+		<combination slot_one="96404" slot_two="96623" adena="300000" chance="5.0" result_dye_id="390"/>
+		<combination slot_one="96405" slot_two="96630" adena="500000" chance="10.0" result_dye_id="391"/>
+		<combination slot_one="96406" slot_two="96630" adena="500000" chance="8.0" result_dye_id="392"/>
+		<combination slot_one="96407" slot_two="96630" adena="500000" chance="6.0" result_dye_id="393"/>
+		<combination slot_one="96408" slot_two="96630" adena="500000" chance="5.0" result_dye_id="394"/>
+		<combination slot_one="96409" slot_two="96630" adena="500000" chance="4.0" result_dye_id="395"/>
+		<combination slot_one="96410" slot_two="96630" adena="500000" chance="3.0" result_dye_id="396"/>
+		<combination slot_one="96411" slot_two="96630" adena="500000" chance="2.0" result_dye_id="397"/>
+		<combination slot_one="96412" slot_two="96630" adena="500000" chance="1.5" result_dye_id="398"/>
+		<combination slot_one="96413" slot_two="96630" adena="500000" chance="0.5" result_dye_id="399"/>
+		<combination slot_one="96620" slot_two="96623" adena="300000" chance="50.0" result_dye_id="401"/>
+		<combination slot_one="96415" slot_two="96623" adena="300000" chance="25.0" result_dye_id="402"/>
+		<combination slot_one="96416" slot_two="96623" adena="300000" chance="20.0" result_dye_id="403"/>
+		<combination slot_one="96417" slot_two="96623" adena="300000" chance="15.0" result_dye_id="404"/>
+		<combination slot_one="96418" slot_two="96623" adena="300000" chance="10.0" result_dye_id="405"/>
+		<combination slot_one="96419" slot_two="96623" adena="300000" chance="8.0" result_dye_id="406"/>
+		<combination slot_one="96420" slot_two="96623" adena="300000" chance="6.0" result_dye_id="407"/>
+		<combination slot_one="96421" slot_two="96623" adena="300000" chance="5.0" result_dye_id="408"/>
+		<combination slot_one="96422" slot_two="96623" adena="300000" chance="5.0" result_dye_id="409"/>
+		<combination slot_one="96423" slot_two="96623" adena="300000" chance="5.0" result_dye_id="410"/>
+		<combination slot_one="96424" slot_two="96623" adena="300000" chance="5.0" result_dye_id="411"/>
+		<combination slot_one="96425" slot_two="96630" adena="500000" chance="10.0" result_dye_id="412"/>
+		<combination slot_one="96426" slot_two="96630" adena="500000" chance="8.0" result_dye_id="413"/>
+		<combination slot_one="96427" slot_two="96630" adena="500000" chance="6.0" result_dye_id="414"/>
+		<combination slot_one="96428" slot_two="96630" adena="500000" chance="5.0" result_dye_id="415"/>
+		<combination slot_one="96429" slot_two="96630" adena="500000" chance="4.0" result_dye_id="416"/>
+		<combination slot_one="96430" slot_two="96630" adena="500000" chance="3.0" result_dye_id="417"/>
+		<combination slot_one="96431" slot_two="96630" adena="500000" chance="2.0" result_dye_id="418"/>
+		<combination slot_one="96432" slot_two="96630" adena="500000" chance="1.5" result_dye_id="419"/>
+		<combination slot_one="96433" slot_two="96630" adena="500000" chance="0.5" result_dye_id="420"/>
+		<combination slot_one="96621" slot_two="96623" adena="300000" chance="50.0" result_dye_id="422"/>
+		<combination slot_one="96435" slot_two="96623" adena="300000" chance="25.0" result_dye_id="423"/>
+		<combination slot_one="96436" slot_two="96623" adena="300000" chance="20.0" result_dye_id="424"/>
+		<combination slot_one="96437" slot_two="96623" adena="300000" chance="15.0" result_dye_id="425"/>
+		<combination slot_one="96438" slot_two="96623" adena="300000" chance="10.0" result_dye_id="426"/>
+		<combination slot_one="96439" slot_two="96623" adena="300000" chance="8.0" result_dye_id="427"/>
+		<combination slot_one="96440" slot_two="96623" adena="300000" chance="6.0" result_dye_id="428"/>
+		<combination slot_one="96441" slot_two="96623" adena="300000" chance="5.0" result_dye_id="429"/>
+		<combination slot_one="96442" slot_two="96623" adena="300000" chance="5.0" result_dye_id="430"/>
+		<combination slot_one="96443" slot_two="96623" adena="300000" chance="5.0" result_dye_id="431"/>
+		<combination slot_one="96444" slot_two="96623" adena="300000" chance="5.0" result_dye_id="432"/>
+		<combination slot_one="96445" slot_two="96630" adena="500000" chance="10.0" result_dye_id="433"/>
+		<combination slot_one="96446" slot_two="96630" adena="500000" chance="8.0" result_dye_id="434"/>
+		<combination slot_one="96447" slot_two="96630" adena="500000" chance="6.0" result_dye_id="435"/>
+		<combination slot_one="96448" slot_two="96630" adena="500000" chance="5.0" result_dye_id="436"/>
+		<combination slot_one="96449" slot_two="96630" adena="500000" chance="4.0" result_dye_id="437"/>
+		<combination slot_one="96450" slot_two="96630" adena="500000" chance="3.0" result_dye_id="438"/>
+		<combination slot_one="96451" slot_two="96630" adena="500000" chance="2.0" result_dye_id="439"/>
+		<combination slot_one="96452" slot_two="96630" adena="500000" chance="1.5" result_dye_id="440"/>
+		<combination slot_one="96453" slot_two="96630" adena="500000" chance="0.5" result_dye_id="441"/>
+		<combination slot_one="96622" slot_two="96623" adena="300000" chance="50.0" result_dye_id="443"/>
+		<combination slot_one="96455" slot_two="96623" adena="300000" chance="25.0" result_dye_id="444"/>
+		<combination slot_one="96456" slot_two="96623" adena="300000" chance="20.0" result_dye_id="445"/>
+		<combination slot_one="96457" slot_two="96623" adena="300000" chance="15.0" result_dye_id="446"/>
+		<combination slot_one="96458" slot_two="96623" adena="300000" chance="10.0" result_dye_id="447"/>
+		<combination slot_one="96459" slot_two="96623" adena="300000" chance="8.0" result_dye_id="448"/>
+		<combination slot_one="96460" slot_two="96623" adena="300000" chance="6.0" result_dye_id="449"/>
+		<combination slot_one="96461" slot_two="96623" adena="300000" chance="5.0" result_dye_id="450"/>
+		<combination slot_one="96462" slot_two="96623" adena="300000" chance="5.0" result_dye_id="451"/>
+		<combination slot_one="96463" slot_two="96623" adena="300000" chance="5.0" result_dye_id="452"/>
+		<combination slot_one="96464" slot_two="96623" adena="300000" chance="5.0" result_dye_id="453"/>
+		<combination slot_one="96465" slot_two="96630" adena="500000" chance="10.0" result_dye_id="454"/>
+		<combination slot_one="96466" slot_two="96630" adena="500000" chance="8.0" result_dye_id="455"/>
+		<combination slot_one="96467" slot_two="96630" adena="500000" chance="6.0" result_dye_id="456"/>
+		<combination slot_one="96468" slot_two="96630" adena="500000" chance="5.0" result_dye_id="457"/>
+		<combination slot_one="96469" slot_two="96630" adena="500000" chance="4.0" result_dye_id="458"/>
+		<combination slot_one="96470" slot_two="96630" adena="500000" chance="3.0" result_dye_id="459"/>
+		<combination slot_one="96471" slot_two="96630" adena="500000" chance="2.0" result_dye_id="460"/>
+		<combination slot_one="96472" slot_two="96630" adena="500000" chance="1.5" result_dye_id="461"/>
+		<combination slot_one="96473" slot_two="96630" adena="500000" chance="0.5" result_dye_id="462"/>
+	</combinations>
+
+	<henna name="[Faded Best Dye of STR]" dye_id="181" dye_item_id="49863" dye_level="0" str="1" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="182" dye_item_id="49864" dye_level="0" str="1" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="183" dye_item_id="49865" dye_level="0" con="1" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="184" dye_item_id="49866" dye_level="0" con="1" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="185" dye_item_id="49867" dye_level="0" dex="1" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="186" dye_item_id="49868" dye_level="0" dex="1" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="187" dye_item_id="49869" dye_level="0" int="1" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="188" dye_item_id="49870" dye_level="0" int="1" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="189" dye_item_id="49871" dye_level="0" men="1" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="190" dye_item_id="49872" dye_level="0" men="1" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="191" dye_item_id="49873" dye_level="0" wit="1" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="192" dye_item_id="49874" dye_level="0" wit="1" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="193" dye_item_id="49875" dye_level="0" str="1" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="194" dye_item_id="49876" dye_level="0" str="1" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="195" dye_item_id="49877" dye_level="0" con="1" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="196" dye_item_id="49878" dye_level="0" con="1" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="197" dye_item_id="49879" dye_level="0" dex="1" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="198" dye_item_id="49880" dye_level="0" dex="1" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="199" dye_item_id="49881" dye_level="0" int="1" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="200" dye_item_id="49882" dye_level="0" int="1" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="201" dye_item_id="49883" dye_level="0" men="1" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="202" dye_item_id="49884" dye_level="0" men="1" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="203" dye_item_id="49885" dye_level="0" wit="1" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="204" dye_item_id="49886" dye_level="0" wit="1" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="205" dye_item_id="49887" dye_level="0" str="1" con="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="206" dye_item_id="49888" dye_level="0" str="1" dex="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="207" dye_item_id="49889" dye_level="0" con="1" str="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="208" dye_item_id="49890" dye_level="0" con="1" dex="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="209" dye_item_id="49891" dye_level="0" dex="1" str="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="210" dye_item_id="49892" dye_level="0" dex="1" con="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="211" dye_item_id="49893" dye_level="0" int="1" men="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="212" dye_item_id="49894" dye_level="0" int="1" wit="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="213" dye_item_id="49895" dye_level="0" men="1" int="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="214" dye_item_id="49896" dye_level="0" men="1" wit="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="215" dye_item_id="49897" dye_level="0" wit="1" int="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="216" dye_item_id="49898" dye_level="0" wit="1" men="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="217" dye_item_id="49899" dye_level="0" str="2" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="218" dye_item_id="49900" dye_level="0" str="2" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="219" dye_item_id="49901" dye_level="0" con="2" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="220" dye_item_id="49902" dye_level="0" con="2" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="221" dye_item_id="49903" dye_level="0" dex="2" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="222" dye_item_id="49904" dye_level="0" dex="2" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="223" dye_item_id="49905" dye_level="0" int="2" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="224" dye_item_id="49906" dye_level="0" int="2" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="225" dye_item_id="49907" dye_level="0" men="2" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="226" dye_item_id="49908" dye_level="0" men="2" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="227" dye_item_id="49909" dye_level="0" wit="2" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="228" dye_item_id="49910" dye_level="0" wit="2" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="229" dye_item_id="49911" dye_level="0" str="2" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="230" dye_item_id="49912" dye_level="0" str="2" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="231" dye_item_id="49913" dye_level="0" con="2" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="232" dye_item_id="49914" dye_level="0" con="2" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="233" dye_item_id="49915" dye_level="0" dex="2" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="234" dye_item_id="49916" dye_level="0" dex="2" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="235" dye_item_id="49917" dye_level="0" int="2" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="236" dye_item_id="49918" dye_level="0" int="2" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="237" dye_item_id="49919" dye_level="0" men="2" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="238" dye_item_id="49920" dye_level="0" men="2" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="239" dye_item_id="49921" dye_level="0" wit="2" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="240" dye_item_id="49922" dye_level="0" wit="2" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="241" dye_item_id="49923" dye_level="0" str="2" con="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="242" dye_item_id="49924" dye_level="0" str="2" dex="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="243" dye_item_id="49925" dye_level="0" con="2" str="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="244" dye_item_id="49926" dye_level="0" con="2" dex="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="245" dye_item_id="49927" dye_level="0" dex="2" str="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="246" dye_item_id="49928" dye_level="0" dex="2" con="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="247" dye_item_id="49929" dye_level="0" int="2" men="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="248" dye_item_id="49930" dye_level="0" int="2" wit="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="249" dye_item_id="49931" dye_level="0" men="2" int="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="250" dye_item_id="49932" dye_level="0" men="2" wit="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="251" dye_item_id="49933" dye_level="0" wit="2" int="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="252" dye_item_id="49934" dye_level="0" wit="2" men="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="253" dye_item_id="49935" dye_level="0" str="3" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="254" dye_item_id="49936" dye_level="0" str="3" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="255" dye_item_id="49937" dye_level="0" con="3" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="256" dye_item_id="49938" dye_level="0" con="3" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="257" dye_item_id="49939" dye_level="0" dex="3" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="258" dye_item_id="49940" dye_level="0" dex="3" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="259" dye_item_id="49941" dye_level="0" int="3" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="260" dye_item_id="49942" dye_level="0" int="3" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="261" dye_item_id="49943" dye_level="0" men="3" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="262" dye_item_id="49944" dye_level="0" men="3" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="263" dye_item_id="49945" dye_level="0" wit="3" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="264" dye_item_id="49946" dye_level="0" wit="3" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="265" dye_item_id="49947" dye_level="0" str="3" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="266" dye_item_id="49948" dye_level="0" str="3" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="267" dye_item_id="49949" dye_level="0" con="3" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="268" dye_item_id="49950" dye_level="0" con="3" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="269" dye_item_id="49951" dye_level="0" dex="3" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="270" dye_item_id="49952" dye_level="0" dex="3" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="271" dye_item_id="49953" dye_level="0" int="3" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="272" dye_item_id="49954" dye_level="0" int="3" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="273" dye_item_id="49955" dye_level="0" men="3" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="274" dye_item_id="49956" dye_level="0" men="3" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="275" dye_item_id="49957" dye_level="0" wit="3" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="276" dye_item_id="49958" dye_level="0" wit="3" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="277" dye_item_id="49959" dye_level="0" str="3" con="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="278" dye_item_id="49960" dye_level="0" str="3" dex="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="279" dye_item_id="49961" dye_level="0" con="3" str="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="280" dye_item_id="49962" dye_level="0" con="3" dex="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="281" dye_item_id="49963" dye_level="0" dex="3" str="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="282" dye_item_id="49964" dye_level="0" dex="3" con="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="283" dye_item_id="49965" dye_level="0" int="3" men="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="284" dye_item_id="49966" dye_level="0" int="3" wit="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="285" dye_item_id="49967" dye_level="0" men="3" int="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="286" dye_item_id="49968" dye_level="0" men="3" wit="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="287" dye_item_id="49969" dye_level="0" wit="3" int="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="288" dye_item_id="49970" dye_level="0" wit="3" men="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="289" dye_item_id="49971" dye_level="0" str="4" con="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="290" dye_item_id="49972" dye_level="0" str="4" dex="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="291" dye_item_id="49973" dye_level="0" con="4" str="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="292" dye_item_id="49974" dye_level="0" con="4" dex="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="293" dye_item_id="49975" dye_level="0" dex="4" str="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="294" dye_item_id="49976" dye_level="0" dex="4" con="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="295" dye_item_id="49977" dye_level="0" int="4" men="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="296" dye_item_id="49978" dye_level="0" int="4" wit="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="297" dye_item_id="49979" dye_level="0" men="4" int="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="298" dye_item_id="49980" dye_level="0" men="4" wit="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="299" dye_item_id="49981" dye_level="0" wit="4" int="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="300" dye_item_id="49982" dye_level="0" wit="4" men="-4" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="301" dye_item_id="49983" dye_level="0" str="4" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="302" dye_item_id="49984" dye_level="0" str="4" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="303" dye_item_id="49985" dye_level="0" con="4" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="304" dye_item_id="49986" dye_level="0" con="4" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="305" dye_item_id="49987" dye_level="0" dex="4" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="306" dye_item_id="49988" dye_level="0" dex="4" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="307" dye_item_id="49989" dye_level="0" int="4" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="308" dye_item_id="49990" dye_level="0" int="4" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="309" dye_item_id="49991" dye_level="0" men="4" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="310" dye_item_id="49992" dye_level="0" men="4" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="311" dye_item_id="49993" dye_level="0" wit="4" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="312" dye_item_id="49994" dye_level="0" wit="4" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="313" dye_item_id="49995" dye_level="0" str="4" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of STR]" dye_id="314" dye_item_id="49996" dye_level="0" str="4" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="315" dye_item_id="49997" dye_level="0" con="4" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of CON]" dye_id="316" dye_item_id="49998" dye_level="0" con="4" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="317" dye_item_id="49999" dye_level="0" dex="4" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of DEX]" dye_id="318" dye_item_id="90000" dye_level="0" dex="4" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="319" dye_item_id="90001" dye_level="0" int="4" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of INT]" dye_id="320" dye_item_id="90002" dye_level="0" int="4" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="321" dye_item_id="90003" dye_level="0" men="4" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of MEN]" dye_id="322" dye_item_id="90004" dye_level="0" men="4" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="323" dye_item_id="90005" dye_level="0" wit="4" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best Dye of WIT]" dye_id="324" dye_item_id="90006" dye_level="0" wit="4" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best STR Pattern STR +3]" dye_id="325" dye_item_id="93968" dye_level="0" str="3" need_count="10" wear_fee="15000000" cancel_count="5" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best CON Pattern CON +3]" dye_id="326" dye_item_id="93969" dye_level="0" con="3" need_count="10" wear_fee="15000000" cancel_count="5" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best DEX Pattern DEX +3]" dye_id="327" dye_item_id="93970" dye_level="0" dex="3" need_count="10" wear_fee="15000000" cancel_count="5" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best INT Pattern INT +3]" dye_id="328" dye_item_id="93971" dye_level="0" int="3" need_count="10" wear_fee="15000000" cancel_count="5" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best MEN Pattern MEN +3]" dye_id="329" dye_item_id="93972" dye_level="0" men="3" need_count="10" wear_fee="15000000" cancel_count="5" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Best WIT Pattern WIT +3]" dye_id="330" dye_item_id="93973" dye_level="0" wit="3" need_count="10" wear_fee="15000000" cancel_count="5" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Legendary STR Pattern STR +4]" dye_id="331" dye_item_id="94853" dye_level="0" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Legendary CON Pattern CON +4]" dye_id="332" dye_item_id="94854" dye_level="0" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Legendary DEX Pattern DEX +4]" dye_id="333" dye_item_id="94855" dye_level="0" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Legendary INT Pattern INT +4]" dye_id="334" dye_item_id="94856" dye_level="0" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Legendary MEN Pattern MEN +4]" dye_id="335" dye_item_id="94857" dye_level="0" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Faded Legendary WIT Pattern WIT +4]" dye_id="336" dye_item_id="94858" dye_level="0" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +1]" dye_id="337" dye_item_id="96617" dye_level="0" str="1" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="1"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +2]" dye_id="338" dye_item_id="96355" dye_level="1" str="2" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="2"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +3]" dye_id="339" dye_item_id="96356" dye_level="2" str="3" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="3"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +4]" dye_id="340" dye_item_id="96357" dye_level="3" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="4"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +4]" dye_id="341" dye_item_id="96358" dye_level="4" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="5"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +4]" dye_id="342" dye_item_id="96359" dye_level="5" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="6"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +4]" dye_id="343" dye_item_id="96360" dye_level="6" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="7"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +4]" dye_id="344" dye_item_id="96361" dye_level="7" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="8"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +4]" dye_id="345" dye_item_id="96362" dye_level="8" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="9"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +4]" dye_id="346" dye_item_id="96363" dye_level="9" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="10"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +4]" dye_id="347" dye_item_id="96364" dye_level="10" str="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="11"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="348" dye_item_id="96365" dye_level="11" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="12"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="349" dye_item_id="96366" dye_level="12" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="13"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="350" dye_item_id="96367" dye_level="13" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="14"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="351" dye_item_id="96368" dye_level="14" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="15"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="352" dye_item_id="96369" dye_level="15" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="16"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="353" dye_item_id="96370" dye_level="16" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="17"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="354" dye_item_id="96371" dye_level="17" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="18"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="355" dye_item_id="96372" dye_level="18" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="19"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="356" dye_item_id="96373" dye_level="19" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="20"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[STR Pattern STR +5]" dye_id="357" dye_item_id="96374" dye_level="20" str="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83017" level="21"/>	<!--Узор СИЛ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +1]" dye_id="358" dye_item_id="96618" dye_level="0" con="1" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="1"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +2]" dye_id="359" dye_item_id="96375" dye_level="1" con="2" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="2"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +3]" dye_id="360" dye_item_id="96376" dye_level="2" con="3" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="3"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +4]" dye_id="361" dye_item_id="96377" dye_level="3" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="4"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +4]" dye_id="362" dye_item_id="96378" dye_level="4" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="5"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +4]" dye_id="363" dye_item_id="96379" dye_level="5" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="6"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +4]" dye_id="364" dye_item_id="96380" dye_level="6" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="7"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +4]" dye_id="365" dye_item_id="96381" dye_level="7" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="8"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +4]" dye_id="366" dye_item_id="96382" dye_level="8" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="9"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +4]" dye_id="367" dye_item_id="96383" dye_level="9" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="10"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +4]" dye_id="368" dye_item_id="96384" dye_level="10" con="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="11"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="369" dye_item_id="96385" dye_level="11" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="12"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="370" dye_item_id="96386" dye_level="12" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="13"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="371" dye_item_id="96387" dye_level="13" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="14"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="372" dye_item_id="96388" dye_level="14" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="15"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="373" dye_item_id="96389" dye_level="15" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="16"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="374" dye_item_id="96390" dye_level="16" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="17"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="375" dye_item_id="96391" dye_level="17" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="18"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="376" dye_item_id="96392" dye_level="18" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="19"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="377" dye_item_id="96393" dye_level="19" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="20"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[CON Pattern CON +5]" dye_id="378" dye_item_id="96394" dye_level="20" con="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83018" level="21"/>	<!--Узор ВЫН-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +1]" dye_id="379" dye_item_id="96619" dye_level="0" dex="1" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="1"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +2]" dye_id="380" dye_item_id="96395" dye_level="1" dex="2" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="2"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +3]" dye_id="381" dye_item_id="96396" dye_level="2" dex="3" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="3"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +4]" dye_id="382" dye_item_id="96397" dye_level="3" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="4"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +4]" dye_id="383" dye_item_id="96398" dye_level="4" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="5"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +4]" dye_id="384" dye_item_id="96399" dye_level="5" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="6"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +4]" dye_id="385" dye_item_id="96400" dye_level="6" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="7"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +4]" dye_id="386" dye_item_id="96401" dye_level="7" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="8"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +4]" dye_id="387" dye_item_id="96402" dye_level="8" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="9"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +4]" dye_id="388" dye_item_id="96403" dye_level="9" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="10"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +4]" dye_id="389" dye_item_id="96404" dye_level="10" dex="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="11"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="390" dye_item_id="96405" dye_level="11" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="12"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="391" dye_item_id="96406" dye_level="12" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="13"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="392" dye_item_id="96407" dye_level="13" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="14"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="393" dye_item_id="96408" dye_level="14" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="15"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="394" dye_item_id="96409" dye_level="15" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="16"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="395" dye_item_id="96410" dye_level="16" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="17"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="396" dye_item_id="96411" dye_level="17" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="18"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="397" dye_item_id="96412" dye_level="18" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="19"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="398" dye_item_id="96413" dye_level="19" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="20"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[DEX Pattern DEX +5]" dye_id="399" dye_item_id="96414" dye_level="20" dex="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83019" level="21"/>	<!--Узор ЛВК-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +1]" dye_id="400" dye_item_id="96620" dye_level="0" int="1" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="1"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +2]" dye_id="401" dye_item_id="96415" dye_level="1" int="2" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="2"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +3]" dye_id="402" dye_item_id="96416" dye_level="2" int="3" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="3"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +4]" dye_id="403" dye_item_id="96417" dye_level="3" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="4"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +4]" dye_id="404" dye_item_id="96418" dye_level="4" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="5"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +4]" dye_id="405" dye_item_id="96419" dye_level="5" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="6"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +4]" dye_id="406" dye_item_id="96420" dye_level="6" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="7"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +4]" dye_id="407" dye_item_id="96421" dye_level="7" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="8"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +4]" dye_id="408" dye_item_id="96422" dye_level="8" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="9"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +4]" dye_id="409" dye_item_id="96423" dye_level="9" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="10"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +4]" dye_id="410" dye_item_id="96424" dye_level="10" int="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="11"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="411" dye_item_id="96425" dye_level="11" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="12"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="412" dye_item_id="96426" dye_level="12" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="13"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="413" dye_item_id="96427" dye_level="13" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="14"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="414" dye_item_id="96428" dye_level="14" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="15"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="415" dye_item_id="96429" dye_level="15" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="16"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="416" dye_item_id="96430" dye_level="16" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="17"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="417" dye_item_id="96431" dye_level="17" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="18"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="418" dye_item_id="96432" dye_level="18" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="19"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="419" dye_item_id="96433" dye_level="19" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="20"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[INT Pattern INT +5]" dye_id="420" dye_item_id="96434" dye_level="20" int="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83020" level="21"/>	<!--Узор ИНТ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +1]" dye_id="421" dye_item_id="96621" dye_level="0" men="1" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="1"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +2]" dye_id="422" dye_item_id="96435" dye_level="1" men="2" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="2"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +3]" dye_id="423" dye_item_id="96436" dye_level="2" men="3" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="3"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +4]" dye_id="424" dye_item_id="96437" dye_level="3" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="4"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +4]" dye_id="425" dye_item_id="96438" dye_level="4" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="5"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +4]" dye_id="426" dye_item_id="96439" dye_level="5" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="6"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +4]" dye_id="427" dye_item_id="96440" dye_level="6" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="7"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +4]" dye_id="428" dye_item_id="96441" dye_level="7" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="8"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +4]" dye_id="429" dye_item_id="96442" dye_level="8" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="9"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +4]" dye_id="430" dye_item_id="96443" dye_level="9" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="10"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +4]" dye_id="431" dye_item_id="96444" dye_level="10" men="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="11"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="432" dye_item_id="96445" dye_level="11" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="12"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="433" dye_item_id="96446" dye_level="12" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="13"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="434" dye_item_id="96447" dye_level="13" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="14"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="435" dye_item_id="96448" dye_level="14" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="15"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="436" dye_item_id="96449" dye_level="15" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="16"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="437" dye_item_id="96450" dye_level="16" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="17"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="438" dye_item_id="96451" dye_level="17" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="18"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="439" dye_item_id="96452" dye_level="18" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="19"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="440" dye_item_id="96453" dye_level="19" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="20"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[MEN Pattern MEN +5]" dye_id="441" dye_item_id="96454" dye_level="20" men="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83021" level="21"/>	<!--Узор ДУХ-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +1]" dye_id="442" dye_item_id="96622" dye_level="0" wit="1" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="1"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +2]" dye_id="443" dye_item_id="96455" dye_level="1" wit="2" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="2"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +3]" dye_id="444" dye_item_id="96456" dye_level="2" wit="3" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="3"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +4]" dye_id="445" dye_item_id="96457" dye_level="3" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="4"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +4]" dye_id="446" dye_item_id="96458" dye_level="4" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="5"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +4]" dye_id="447" dye_item_id="96459" dye_level="5" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="6"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +4]" dye_id="448" dye_item_id="96460" dye_level="6" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="7"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +4]" dye_id="449" dye_item_id="96461" dye_level="7" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="8"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +4]" dye_id="450" dye_item_id="96462" dye_level="8" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="9"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +4]" dye_id="451" dye_item_id="96463" dye_level="9" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="10"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +4]" dye_id="452" dye_item_id="96464" dye_level="10" wit="4" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="11"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="453" dye_item_id="96465" dye_level="11" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="12"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="454" dye_item_id="96466" dye_level="12" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="13"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="455" dye_item_id="96467" dye_level="13" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="14"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="456" dye_item_id="96468" dye_level="14" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="15"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="457" dye_item_id="96469" dye_level="15" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="16"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="458" dye_item_id="96470" dye_level="16" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="17"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="459" dye_item_id="96471" dye_level="17" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="18"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="460" dye_item_id="96472" dye_level="18" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="19"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="461" dye_item_id="96473" dye_level="19" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="20"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[WIT Pattern WIT +5]" dye_id="462" dye_item_id="96474" dye_level="20" wit="5" need_count="1" wear_fee="15000000" cancel_count="1" cancel_fee="5000000">
+		<skills>
+			<skill id="83022" level="21"/>	<!--Узор МДР-->
+		</skills>
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium STR Dye]" dye_id="600" dye_item_id="29081" dye_level="0" str="1" con="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium STR Dye]" dye_id="601" dye_item_id="29082" dye_level="0" str="1" dex="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium CON Dye]" dye_id="602" dye_item_id="29083" dye_level="0" con="1" str="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium CON Dye]" dye_id="603" dye_item_id="29084" dye_level="0" con="1" dex="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium DEX Dye]" dye_id="604" dye_item_id="29085" dye_level="0" dex="1" str="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium DEX Dye]" dye_id="605" dye_item_id="29086" dye_level="0" dex="1" con="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium INT Dye]" dye_id="606" dye_item_id="29087" dye_level="0" int="1" men="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium INT Dye]" dye_id="607" dye_item_id="29088" dye_level="0" int="1" wit="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium MEN Dye]" dye_id="608" dye_item_id="29089" dye_level="0" men="1" int="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium MEN Dye]" dye_id="609" dye_item_id="29090" dye_level="0" men="1" wit="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium WIT Dye]" dye_id="610" dye_item_id="29091" dye_level="0" wit="1" int="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium WIT Dye]" dye_id="611" dye_item_id="29092" dye_level="0" wit="1" men="-1" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium STR Dye]" dye_id="612" dye_item_id="29093" dye_level="0" str="2" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium STR Dye]" dye_id="613" dye_item_id="29094" dye_level="0" str="2" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium CON Dye]" dye_id="614" dye_item_id="29095" dye_level="0" con="2" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium CON Dye]" dye_id="615" dye_item_id="29096" dye_level="0" con="2" dex="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium DEX Dye]" dye_id="616" dye_item_id="29097" dye_level="0" dex="2" str="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium DEX Dye]" dye_id="617" dye_item_id="29098" dye_level="0" dex="2" con="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium INT Dye]" dye_id="618" dye_item_id="29099" dye_level="0" int="2" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium INT Dye]" dye_id="619" dye_item_id="29100" dye_level="0" int="2" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium MEN Dye]" dye_id="620" dye_item_id="29101" dye_level="0" men="2" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium MEN Dye]" dye_id="621" dye_item_id="29102" dye_level="0" men="2" wit="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium WIT Dye]" dye_id="622" dye_item_id="29103" dye_level="0" wit="2" int="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium WIT Dye]" dye_id="623" dye_item_id="29104" dye_level="0" wit="2" men="-2" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium STR Dye]" dye_id="624" dye_item_id="29105" dye_level="0" str="3" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium STR Dye]" dye_id="625" dye_item_id="29106" dye_level="0" str="3" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium CON Dye]" dye_id="626" dye_item_id="29107" dye_level="0" con="3" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium CON Dye]" dye_id="627" dye_item_id="29108" dye_level="0" con="3" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium DEX Dye]" dye_id="628" dye_item_id="29109" dye_level="0" dex="3" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium DEX Dye]" dye_id="629" dye_item_id="29110" dye_level="0" dex="3" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium INT Dye]" dye_id="630" dye_item_id="29111" dye_level="0" int="3" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium INT Dye]" dye_id="631" dye_item_id="29112" dye_level="0" int="3" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium MEN Dye]" dye_id="632" dye_item_id="29113" dye_level="0" men="3" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium MEN Dye]" dye_id="633" dye_item_id="29114" dye_level="0" men="3" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium WIT Dye]" dye_id="634" dye_item_id="29115" dye_level="0" wit="3" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium WIT Dye]" dye_id="635" dye_item_id="29116" dye_level="0" wit="3" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater STR Dye]" dye_id="636" dye_item_id="29117" dye_level="0" str="4" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater STR Dye]" dye_id="637" dye_item_id="29118" dye_level="0" str="4" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater CON Dye]" dye_id="638" dye_item_id="29119" dye_level="0" con="4" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater CON Dye]" dye_id="639" dye_item_id="29120" dye_level="0" con="4" dex="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater DEX Dye]" dye_id="640" dye_item_id="29121" dye_level="0" dex="4" str="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater DEX Dye]" dye_id="641" dye_item_id="29122" dye_level="0" dex="4" con="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater INT Dye]" dye_id="642" dye_item_id="29123" dye_level="0" int="4" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater INT Dye]" dye_id="643" dye_item_id="29124" dye_level="0" int="4" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater MEN Dye]" dye_id="644" dye_item_id="29125" dye_level="0" men="4" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater MEN Dye]" dye_id="645" dye_item_id="29126" dye_level="0" men="4" wit="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater WIT Dye]" dye_id="646" dye_item_id="29127" dye_level="0" wit="4" int="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+	<henna name="[Premium Greater WIT Dye]" dye_id="647" dye_item_id="29128" dye_level="0" wit="4" men="-3" need_count="10" wear_fee="628000" cancel_count="5" cancel_fee="125600">
+		<class level="FIRST"/>
+		<class level="SECOND"/>
+		<class level="THIRD"/>
+	</henna>
+</list>

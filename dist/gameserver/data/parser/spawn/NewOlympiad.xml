@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="0" group="olympiad_151_buffers">
+		<point x="17718" y="114164" z="4008" h="0"/>
+		<npc id="34132"/>
+	</spawn>
+	<spawn count="1" respawn="0" group="olympiad_152_buffers">
+		<point x="12504" y="183683" z="-3712" h="17078"/>
+		<npc id="34132"/>
+	</spawn>
+	<spawn count="1" respawn="0" group="olympiad_153_buffers">
+		<point x="113723" y="47010" z="-4608" h="8886"/>
+		<npc id="34132"/>
+	</spawn>
+</list>

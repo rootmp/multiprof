@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="34800">
+		<!--Max HP +130-->
+	</option_data>
+	<option_data id="34801">
+		<!--Max HP +180.-->
+	</option_data>
+	<option_data id="34802">
+		<!--Max HP +25-->
+	</option_data>
+	<option_data id="34803">
+		<!--Max HP +38-->
+	</option_data>
+	<option_data id="34804">
+		<!--Max HP +50-->
+	</option_data>
+	<option_data id="34805">
+		<!--Max HP +63-->
+	</option_data>
+	<option_data id="34806">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="34807">
+		<!--Max HP +88-->
+	</option_data>
+	<option_data id="34808">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="34809">
+		<!--Max HP +113-->
+	</option_data>
+	<option_data id="34810">
+		<!--Max HP +125-->
+	</option_data>
+	<option_data id="34811">
+		<!--Max HP +138-->
+	</option_data>
+	<option_data id="34812">
+		<!--Max HP +150-->
+	</option_data>
+	<option_data id="34813">
+		<!--Max HP +163-->
+	</option_data>
+	<option_data id="34814">
+		<!--Max HP +175-->
+	</option_data>
+	<option_data id="34815">
+		<!--Max HP +188-->
+	</option_data>
+	<option_data id="34816">
+		<!--Max HP +240-->
+	</option_data>
+	<option_data id="34817">
+		<!--Max HP +300-->
+	</option_data>
+	<option_data id="34818">
+		<!--Max HP +330-->
+	</option_data>
+	<option_data id="34819">
+		<!--Max HP +360-->
+	</option_data>
+	<option_data id="34820">
+		<!--Max HP +390-->
+	</option_data>
+	<option_data id="34821">
+		<!--Max HP +480-->
+	</option_data>
+	<option_data id="34822">
+		<!--Max MP +10-->
+	</option_data>
+	<option_data id="34823">
+		<!--Max MP +15-->
+	</option_data>
+	<option_data id="34824">
+		<!--Max MP +20-->
+	</option_data>
+	<option_data id="34825">
+		<!--Max MP +25-->
+	</option_data>
+	<option_data id="34826">
+		<!--Max MP +30-->
+	</option_data>
+	<option_data id="34827">
+		<!--Max MP +35-->
+	</option_data>
+	<option_data id="34828">
+		<!--Max MP +40-->
+	</option_data>
+	<option_data id="34829">
+		<!--Max MP +45-->
+	</option_data>
+	<option_data id="34830">
+		<!--Max MP +50-->
+	</option_data>
+	<option_data id="34831">
+		<!--Max MP +55-->
+	</option_data>
+	<option_data id="34832">
+		<!--Max MP +60-->
+	</option_data>
+	<option_data id="34833">
+		<!--Max MP +65-->
+	</option_data>
+	<option_data id="34834">
+		<!--Max MP +70-->
+	</option_data>
+	<option_data id="34835">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="34836">
+		<!--Max MP +80-->
+	</option_data>
+	<option_data id="34837">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="34838">
+		<!--Max MP +110-->
+	</option_data>
+	<option_data id="34839">
+		<!--Max MP +120-->
+	</option_data>
+	<option_data id="34840">
+		<!--Max MP +130-->
+	</option_data>
+	<option_data id="34841">
+		<!--Max MP +180.-->
+	</option_data>
+	<option_data id="34842">
+		<!--Max MP +25-->
+	</option_data>
+	<option_data id="34843">
+		<!--Max MP +38-->
+	</option_data>
+	<option_data id="34844">
+		<!--Max MP +50-->
+	</option_data>
+	<option_data id="34845">
+		<!--Max MP +63-->
+	</option_data>
+	<option_data id="34846">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="34847">
+		<!--Max MP +88-->
+	</option_data>
+	<option_data id="34848">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="34849">
+		<!--Max MP +113-->
+	</option_data>
+	<option_data id="34850">
+		<!--Max MP +125-->
+	</option_data>
+	<option_data id="34851">
+		<!--Max MP +138-->
+	</option_data>
+	<option_data id="34852">
+		<!--Max MP +150-->
+	</option_data>
+	<option_data id="34853">
+		<!--Max MP +163-->
+	</option_data>
+	<option_data id="34854">
+		<!--Max MP +175-->
+	</option_data>
+	<option_data id="34855">
+		<!--Max MP +188-->
+	</option_data>
+	<option_data id="34856">
+		<!--Max MP +200-->
+	</option_data>
+	<option_data id="34857">
+		<!--Max MP +300-->
+	</option_data>
+	<option_data id="34858">
+		<!--Max MP +330-->
+	</option_data>
+	<option_data id="34859">
+		<!--Max MP +360-->
+	</option_data>
+	<option_data id="34860">
+		<!--Max MP +390-->
+	</option_data>
+	<option_data id="34861">
+		<!--Max MP +480-->
+	</option_data>
+	<option_data id="34862">
+		<!--P. Def. +4-->
+	</option_data>
+	<option_data id="34863">
+		<!--P. Def. +7-->
+	</option_data>
+	<option_data id="34864">
+		<!--P. Def. +10.-->
+	</option_data>
+	<option_data id="34865">
+		<!--P. Def. +13-->
+	</option_data>
+	<option_data id="34866">
+		<!--P. Def. +16-->
+	</option_data>
+	<option_data id="34867">
+		<!--P. Def. +19-->
+	</option_data>
+	<option_data id="34868">
+		<!--P. Def. +22-->
+	</option_data>
+	<option_data id="34869">
+		<!--P. Def. +25-->
+	</option_data>
+	<option_data id="34870">
+		<!--P. Def. +28-->
+	</option_data>
+	<option_data id="34871">
+		<!--P. Def. +31-->
+	</option_data>
+	<option_data id="34872">
+		<!--P. Def. +34-->
+	</option_data>
+	<option_data id="34873">
+		<!--P. Def. +37-->
+	</option_data>
+	<option_data id="34874">
+		<!--P. Def. +40-->
+	</option_data>
+	<option_data id="34875">
+		<!--P. Def. +43-->
+	</option_data>
+	<option_data id="34876">
+		<!--P. Def. +46-->
+	</option_data>
+	<option_data id="34877">
+		<!--P. Def. +56-->
+	</option_data>
+	<option_data id="34878">
+		<!--P. Def. +66-->
+	</option_data>
+	<option_data id="34879">
+		<!--P. Def. +76-->
+	</option_data>
+	<option_data id="34880">
+		<!--P. Def. +86-->
+	</option_data>
+	<option_data id="34881">
+		<!--P. Def. +96-->
+	</option_data>
+	<option_data id="34882">
+		<!--P. Def. +8-->
+	</option_data>
+	<option_data id="34883">
+		<!--P. Def. +11-->
+	</option_data>
+	<option_data id="34884">
+		<!--P. Def. +14-->
+	</option_data>
+	<option_data id="34885">
+		<!--P. Def. +17-->
+	</option_data>
+	<option_data id="34886">
+		<!--P. Def. +20.-->
+	</option_data>
+	<option_data id="34887">
+		<!--P. Def. +23-->
+	</option_data>
+	<option_data id="34888">
+		<!--P. Def. +26-->
+	</option_data>
+	<option_data id="34889">
+		<!--P. Def. +29-->
+	</option_data>
+	<option_data id="34890">
+		<!--P. Def. +32-->
+	</option_data>
+	<option_data id="34891">
+		<!--P. Def. +35-->
+	</option_data>
+	<option_data id="34892">
+		<!--P. Def. +38-->
+	</option_data>
+	<option_data id="34893">
+		<!--P. Def. +41-->
+	</option_data>
+	<option_data id="34894">
+		<!--P. Def. +44-->
+	</option_data>
+	<option_data id="34895">
+		<!--P. Def. +47-->
+	</option_data>
+	<option_data id="34896">
+		<!--P. Def. +50-->
+	</option_data>
+	<option_data id="34897">
+		<!--P. Def. +60-->
+	</option_data>
+	<option_data id="34898">
+		<!--P. Def. +80-->
+	</option_data>
+	<option_data id="34899">
+		<!--P. Def. +90-->
+	</option_data>
+</list>

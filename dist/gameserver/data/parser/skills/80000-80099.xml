@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="80001" levels="1" name="Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80002" levels="1" name="Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80003" levels="1" name="Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80004" levels="1" name="Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80005" levels="1" name="Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80006" levels="1" name="Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80011" levels="1" name="Stun Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80012" levels="1" name="Stun Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80013" levels="1" name="Stun Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80014" levels="1" name="Stun Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80015" levels="1" name="Stun Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80016" levels="1" name="Stun Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80021" levels="1" name="Paralysis Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80022" levels="1" name="Paralysis Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80023" levels="1" name="Paralysis Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80024" levels="1" name="Paralysis Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80025" levels="1" name="Paralysis Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80026" levels="1" name="Paralysis Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80031" levels="1" name="Sleep Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80032" levels="1" name="Sleep Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80033" levels="1" name="Sleep Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80034" levels="1" name="Sleep Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80035" levels="1" name="Sleep Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80036" levels="1" name="Sleep Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80041" levels="1" name="Hold Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80042" levels="1" name="Hold Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80043" levels="1" name="Hold Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80044" levels="1" name="Hold Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80045" levels="1" name="Hold Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80046" levels="1" name="Hold Atk. Rate Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80051" levels="1" name="Bow Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80052" levels="1" name="Bow Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80053" levels="1" name="Bow Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80054" levels="1" name="Bow Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80055" levels="1" name="Bow Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80056" levels="1" name="Bow Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80061" levels="1" name="Drain Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80062" levels="1" name="Drain Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80063" levels="1" name="Drain Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80064" levels="1" name="Drain Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80065" levels="1" name="Drain Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80066" levels="1" name="Drain Resistance Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80071" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80072" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80073" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80074" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80075" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80076" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80077" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80078" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80079" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80080" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80081" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80082" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80083" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80084" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80085" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80086" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80087" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80088" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80089" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80090" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80091" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80092" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80093" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80094" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80095" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80096" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80097" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80098" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80099" levels="1" name="MP Consumption Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

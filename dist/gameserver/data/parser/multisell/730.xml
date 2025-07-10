@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="91927" count="500"/>	<!--Soulshot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot (No-grade) (Novice) (Not Available)-->
+	</item>
+	<item>
+		<production id="91928" count="334"/>	<!--SpiritShot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot (No-grade) (Novice) (Not Available)-->
+	</item>
+	<item>
+		<production id="91929" count="200"/>	<!--Blessed SoulShot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot (No-grade) (Novice) (Not Available)-->
+	</item>
+	<item>
+		<production id="91930" count="134"/>	<!--Blessed SpiritShot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot (No-grade) (Novice) (Not Available)-->
+	</item>
+	<item>
+		<production id="6645" count="500"/>	<!--BeastSoulShot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot (No-grade) (Novice) (Not Available)-->
+	</item>
+	<item>
+		<production id="6646" count="200"/>	<!--Best SpiritShot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot (No-grade) (Novice) (Not Available)-->
+	</item>
+</list>

@@ -1,0 +1,3612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50472" y="137619" z="-2872" h="57120" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50270" y="138111" z="-2872" h="19473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50824" y="139008" z="-2912" h="19053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50574" y="137466" z="-2864" h="29606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51107" y="138617" z="-2904" h="10628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49607" y="137703" z="-2880" h="38867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49866" y="137759" z="-2880" h="42621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51331" y="137495" z="-2856" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50363" y="137211" z="-2864" h="27705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50421" y="137415" z="-2864" h="62829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51181" y="138855" z="-2920" h="24128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50347" y="137756" z="-2872" h="16180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50899" y="138666" z="-2920" h="10900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50063" y="137644" z="-2864" h="62237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50807" y="137897" z="-2912" h="57377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49986" y="138062" z="-2864" h="2603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50911" y="138744" z="-2920" h="57296" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50666" y="138283" z="-2920" h="14317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51002" y="137862" z="-2896" h="8728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50561" y="139120" z="-2904" h="22967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50957" y="139097" z="-2920" h="16594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50348" y="138675" z="-2920" h="16882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50493" y="138548" z="-2920" h="41551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50535" y="138370" z="-2920" h="32420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49419" y="139040" z="-2888" h="63486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49368" y="138785" z="-2848" h="15727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49266" y="140179" z="-2888" h="14252" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50701" y="140367" z="-2888" h="44892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49164" y="140842" z="-2688" h="52464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49920" y="140576" z="-2912" h="18625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50242" y="140469" z="-2920" h="26402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50638" y="140388" z="-2896" h="11734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49757" y="140303" z="-2880" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49521" y="140638" z="-2888" h="29359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50235" y="139448" z="-2856" h="26345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49419" y="140026" z="-2904" h="2427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50765" y="139757" z="-2856" h="5104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50293" y="140367" z="-2904" h="64813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50376" y="139678" z="-2856" h="32104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50625" y="140653" z="-2880" h="16358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49470" y="140536" z="-2880" h="64752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50191" y="141183" z="-2880" h="44935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50718" y="140013" z="-2864" h="7343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49470" y="139499" z="-2912" h="52308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50647" y="140677" z="-2880" h="8363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50771" y="139752" z="-2856" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50446" y="141234" z="-2856" h="35516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50822" y="139409" z="-2872" h="57252" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49827" y="139448" z="-2856" h="35663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50314" y="140388" z="-2904" h="26353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50930" y="139836" z="-2856" h="7226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50549" y="139450" z="-2864" h="32844" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50104" y="139255" z="-2872" h="54074" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50994" y="140613" z="-2872" h="48493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49215" y="139924" z="-2912" h="34230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51099" y="140533" z="-2872" h="46189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49744" y="140177" z="-2880" h="41345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51105" y="140072" z="-2864" h="12209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49850" y="139265" z="-2880" h="39884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50370" y="137517" z="-2864" h="4294" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50172" y="139882" z="-2856" h="49170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49521" y="140332" z="-2872" h="35764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49623" y="140383" z="-2872" h="57529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50423" y="137907" z="-2880" h="28717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50217" y="138078" z="-2872" h="50249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50523" y="138078" z="-2904" h="52201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50580" y="139474" z="-2864" h="1062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51007" y="140928" z="-2856" h="1164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50803" y="140928" z="-2856" h="9354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50625" y="137976" z="-2904" h="63864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50529" y="139525" z="-2856" h="27841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50191" y="141030" z="-2888" h="57070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49964" y="138009" z="-2864" h="63684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50824" y="138855" z="-2920" h="45562" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49623" y="139244" z="-2920" h="5763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50518" y="139161" z="-2896" h="43977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50727" y="138180" z="-2912" h="55466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49368" y="139040" z="-2888" h="564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50631" y="139576" z="-2856" h="21156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50824" y="138396" z="-2912" h="17042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50031" y="140842" z="-2920" h="28828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50172" y="139474" z="-2856" h="49175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49674" y="139040" z="-2912" h="44822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50242" y="140775" z="-2920" h="35020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50977" y="138447" z="-2904" h="41641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50478" y="139474" z="-2856" h="47299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49964" y="137346" z="-2880" h="50619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50676" y="137262" z="-2864" h="377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49878" y="140842" z="-2920" h="18755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49607" y="137601" z="-2880" h="33395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50319" y="138180" z="-2896" h="35133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49623" y="140587" z="-2896" h="49391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50376" y="139525" z="-2856" h="61929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53223" y="137453" z="-2896" h="64167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52159" y="138390" z="-2920" h="34802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53172" y="137912" z="-2888" h="60773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52426" y="137370" z="-2920" h="21872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53019" y="138167" z="-2904" h="53918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52270" y="137852" z="-2920" h="17264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53132" y="138441" z="-2904" h="13690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52159" y="138951" z="-2936" h="11226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52764" y="138065" z="-2920" h="47875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51832" y="138855" z="-2912" h="38227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52611" y="137249" z="-2920" h="45778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51781" y="138787" z="-2912" h="28109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51823" y="138606" z="-2888" h="18684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52924" y="138870" z="-2920" h="16358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51754" y="139156" z="-2944" h="26884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52879" y="138943" z="-2920" h="37411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52950" y="138966" z="-2920" h="54603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52945" y="137533" z="-2920" h="8021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52886" y="138954" z="-2920" h="40208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51577" y="138120" z="-2872" h="27333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51291" y="138246" z="-2888" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52265" y="139053" z="-2952" h="25602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52607" y="138742" z="-2920" h="17908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53070" y="138167" z="-2904" h="24257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51403" y="137498" z="-2856" h="6085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52155" y="137861" z="-2920" h="27248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52572" y="138899" z="-2928" h="52158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52469" y="139002" z="-2928" h="33863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52875" y="138929" z="-2920" h="34310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51343" y="139002" z="-2920" h="7821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52908" y="137748" z="-2912" h="23916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51836" y="137774" z="-2864" h="9299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52038" y="137910" z="-2912" h="1719" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52032" y="137611" z="-2904" h="29317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52120" y="138061" z="-2920" h="42405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52022" y="137443" z="-2880" h="54960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52050" y="137614" z="-2904" h="30663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51970" y="137381" z="-2880" h="34138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51945" y="137312" z="-2856" h="39051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52895" y="140992" z="-2912" h="31179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53230" y="139624" z="-2904" h="4628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51643" y="140825" z="-2856" h="57420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52385" y="140329" z="-2920" h="33723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52946" y="140839" z="-2920" h="56879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52516" y="139369" z="-2944" h="20594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51573" y="140237" z="-2880" h="48374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51369" y="139268" z="-2912" h="29578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51409" y="140971" z="-2856" h="47697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52446" y="139789" z="-2936" h="43686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53179" y="139675" z="-2888" h="42298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53230" y="140083" z="-2856" h="13198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51796" y="140927" z="-2856" h="47583" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51828" y="140186" z="-2880" h="59150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52465" y="139930" z="-2936" h="34111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52000" y="140774" z="-2856" h="50400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53077" y="139318" z="-2920" h="19912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51420" y="140918" z="-2856" h="50308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51730" y="140046" z="-2888" h="5458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52705" y="140415" z="-2928" h="8957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51439" y="140801" z="-2856" h="49144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52748" y="140536" z="-2920" h="10900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51845" y="139551" z="-2920" h="42354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52678" y="139825" z="-2928" h="11191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51501" y="139494" z="-2904" h="55683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52618" y="139318" z="-2936" h="46152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52745" y="139939" z="-2920" h="20143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52124" y="140898" z="-2856" h="7757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51531" y="139446" z="-2904" h="38227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51949" y="140731" z="-2856" h="17937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52551" y="140594" z="-2920" h="8857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52068" y="139947" z="-2912" h="4081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53201" y="140992" z="-2904" h="59651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52415" y="141007" z="-2864" h="42661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53168" y="140592" z="-2888" h="18144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51930" y="140538" z="-2880" h="13281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51949" y="141182" z="-2856" h="36054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52232" y="141094" z="-2856" h="4300" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50395" y="140367" z="-2904" h="27860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51007" y="141132" z="-2856" h="37129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50523" y="138129" z="-2912" h="44409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52108" y="138798" z="-2920" h="47265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50066" y="137448" z="-2872" h="17926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49674" y="138938" z="-2912" h="44616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49266" y="140077" z="-2904" h="62494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51039" y="139984" z="-2864" h="26146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51624" y="139370" z="-2928" h="20353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50631" y="139729" z="-2856" h="5170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51292" y="138798" z="-2912" h="2534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51522" y="139727" z="-2864" h="1299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50525" y="137958" z="-2896" h="53570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52713" y="137657" z="-2912" h="3006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49827" y="140791" z="-2920" h="43251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52669" y="139318" z="-2936" h="31674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53048" y="140227" z="-2872" h="64351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51547" y="138951" z="-2920" h="2727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51186" y="137976" z="-2888" h="29446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53026" y="139828" z="-2888" h="59044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53099" y="140890" z="-2912" h="51975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52458" y="137504" z="-2920" h="47492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53121" y="138167" z="-2904" h="31094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49658" y="137244" z="-2872" h="50603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51796" y="140468" z="-2880" h="35843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50671" y="138498" z="-2920" h="31656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50319" y="137874" z="-2880" h="25023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52418" y="138594" z="-2920" h="5946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50956" y="140367" z="-2872" h="14383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52032" y="140237" z="-2912" h="7961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50752" y="141183" z="-2856" h="51578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50886" y="140035" z="-2872" h="54378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52057" y="139104" z="-2952" h="36953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52006" y="139053" z="-2952" h="36893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50472" y="137670" z="-2872" h="5182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52815" y="137708" z="-2920" h="16475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49623" y="140179" z="-2872" h="9188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49964" y="137244" z="-2880" h="44826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51592" y="140519" z="-2880" h="53401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51358" y="136540" z="-2896" h="30727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51079" y="137352" z="-2880" h="10900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51183" y="136691" z="-2888" h="22696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51712" y="136503" z="-2880" h="56174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51744" y="136598" z="-2872" h="10172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50219" y="137142" z="-2880" h="46460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50883" y="136651" z="-2880" h="42947" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50964" y="137085" z="-2888" h="19489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51083" y="136960" z="-2888" h="25912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52917" y="137657" z="-2920" h="25406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50523" y="137670" z="-2872" h="39498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51028" y="138702" z="-2912" h="63538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50854" y="140928" z="-2856" h="4589" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52567" y="140134" z="-2928" h="19537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52538" y="140992" z="-2872" h="62348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49419" y="139975" z="-2912" h="14467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52673" y="138492" z="-2920" h="51680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50223" y="139882" z="-2856" h="3453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51420" y="139421" z="-2888" h="18231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52611" y="137351" z="-2920" h="85" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51745" y="141233" z="-2856" h="54171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52618" y="140083" z="-2928" h="44729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49827" y="138938" z="-2912" h="24386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52185" y="139727" z="-2936" h="63732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51547" y="138543" z="-2888" h="36977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50117" y="137295" z="-2880" h="38357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51409" y="137407" z="-2864" h="30123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49776" y="140026" z="-2848" h="1335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50880" y="137976" z="-2904" h="44778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51847" y="140417" z="-2880" h="22217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50701" y="141183" z="-2856" h="6829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52815" y="137606" z="-2920" h="56884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49929" y="140638" z="-2920" h="63549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51522" y="139676" z="-2864" h="53701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50937" y="140188" z="-2880" h="46383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50212" y="139263" z="-2872" h="17477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50446" y="140520" z="-2904" h="54170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51900" y="137861" z="-2896" h="55872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53048" y="140839" z="-2912" h="36631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53172" y="137402" z="-2896" h="22780" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51337" y="141131" z="-2856" h="34618" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49368" y="139873" z="-2912" h="2550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53234" y="138339" z="-2888" h="60015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51751" y="138849" z="-2912" h="15102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49760" y="137499" z="-2880" h="6627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51930" y="139778" z="-2904" h="33381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50395" y="140673" z="-2904" h="9886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52815" y="137300" z="-2920" h="38011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52622" y="138390" z="-2920" h="29762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51664" y="137152" z="-2848" h="37584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50803" y="140979" z="-2856" h="59907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51084" y="137466" z="-2880" h="22605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53019" y="137555" z="-2912" h="62463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50701" y="140979" z="-2856" h="59204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53976" y="136425" z="-2752" h="55426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54384" y="136643" z="-2760" h="51897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-55126" y="136929" z="-2768" h="53378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54660" y="136468" z="-2744" h="4738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54040" y="136772" z="-2752" h="2390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54343" y="136952" z="-2768" h="65120" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53887" y="136802" z="-2752" h="50086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54588" y="136476" z="-2744" h="11619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54409" y="136214" z="-2744" h="4942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54333" y="137037" z="-2776" h="28926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55101" y="136175" z="-2680" h="36668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54451" y="137110" z="-2784" h="4997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-55257" y="136233" z="-2680" h="31222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54337" y="136234" z="-2752" h="13279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53311" y="138721" z="-2888" h="44182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53974" y="139180" z="-2888" h="58392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53719" y="138568" z="-2888" h="49391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54090" y="138005" z="-2888" h="26937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54611" y="138231" z="-2888" h="63405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54662" y="137313" z="-2848" h="20425" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53782" y="138870" z="-2904" h="17500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53496" y="138033" z="-2792" h="4801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53719" y="138313" z="-2856" h="55378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55223" y="138231" z="-2888" h="11015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55008" y="137148" z="-2800" h="46528" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54178" y="138721" z="-2864" h="42748" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53394" y="137370" z="-2864" h="32164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53598" y="137421" z="-2768" h="25176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53822" y="139131" z="-2904" h="54603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53882" y="138474" z="-2896" h="4005" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55119" y="137824" z="-2896" h="38797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54564" y="137536" z="-2872" h="58889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53676" y="137449" z="-2760" h="53293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53802" y="137574" z="-2760" h="27802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54305" y="137262" z="-2800" h="17364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54076" y="138674" z="-2880" h="20140" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53645" y="137355" z="-2760" h="51518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54254" y="137415" z="-2792" h="47341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53697" y="137678" z="-2768" h="20685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-55206" y="141229" z="-2616" h="8366" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55254" y="141235" z="-2616" h="3228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55259" y="140019" z="-2648" h="31550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-55304" y="140512" z="-2640" h="17678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55203" y="140483" z="-2640" h="24564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55265" y="140647" z="-2640" h="12447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-55108" y="140580" z="-2632" h="22284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-54849" y="140558" z="-2640" h="33556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55479" y="140342" z="-2640" h="62181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55356" y="140095" z="-2640" h="33469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-55253" y="140303" z="-2640" h="16932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55198" y="140196" z="-2640" h="20606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55285" y="140229" z="-2640" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55206" y="140553" z="-2640" h="28649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51541" y="140825" z="-2856" h="45305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50778" y="137823" z="-2904" h="6171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54458" y="138129" z="-2888" h="37789" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49572" y="140077" z="-2856" h="18254" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50270" y="137703" z="-2864" h="50982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51930" y="139931" z="-2904" h="1698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53445" y="137421" z="-2824" h="35647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52316" y="138390" z="-2920" h="23965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52538" y="141043" z="-2872" h="53846" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50217" y="138129" z="-2880" h="34395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53150" y="140992" z="-2904" h="43553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53904" y="137829" z="-2816" h="48350" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54713" y="137670" z="-2896" h="10351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53515" y="139027" z="-2912" h="26976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49674" y="140485" z="-2888" h="580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52407" y="137555" z="-2920" h="13953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49929" y="139295" z="-2856" h="60952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51802" y="139002" z="-2928" h="59565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52764" y="137300" z="-2920" h="44917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52185" y="140084" z="-2912" h="16744" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52414" y="139573" z="-2944" h="29249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51337" y="140366" z="-2872" h="5853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52436" y="140941" z="-2864" h="30151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50784" y="140086" z="-2880" h="50916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50773" y="138702" z="-2920" h="49085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54611" y="138078" z="-2904" h="10551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52968" y="137606" z="-2920" h="39295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50191" y="141132" z="-2880" h="6885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50421" y="138231" z="-2896" h="20671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49215" y="140536" z="-2880" h="54198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51853" y="138288" z="-2896" h="11736" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53183" y="138696" z="-2896" h="46752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50416" y="138498" z="-2912" h="49052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50599" y="140724" z="-2880" h="34300" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50576" y="137550" z="-2872" h="35234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51441" y="137657" z="-2856" h="51032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54180" y="136629" z="-2768" h="31175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50446" y="141081" z="-2856" h="49577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54458" y="138180" z="-2888" h="63518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49980" y="139397" z="-2856" h="39978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51288" y="138116" z="-2880" h="45896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50937" y="140086" z="-2872" h="6948" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-49266" y="140638" z="-2888" h="896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53026" y="139726" z="-2904" h="26735" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52458" y="137249" z="-2912" h="54426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54915" y="137182" z="-2800" h="47821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53223" y="137861" z="-2872" h="4996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54127" y="138619" z="-2896" h="36220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49929" y="140281" z="-2888" h="57086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50829" y="137670" z="-2896" h="54403" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50168" y="137193" z="-2888" h="2271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51700" y="139257" z="-2936" h="33385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53649" y="137268" z="-2760" h="48058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50931" y="137976" z="-2904" h="57145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51216" y="139880" z="-2856" h="63345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53019" y="138014" z="-2904" h="21375" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52057" y="138798" z="-2928" h="14284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51796" y="141233" z="-2856" h="52582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51181" y="139059" z="-2920" h="26545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50824" y="139212" z="-2896" h="13907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53751" y="137574" z="-2760" h="31858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51643" y="140774" z="-2856" h="63665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53223" y="138014" z="-2864" h="2862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51135" y="137517" z="-2880" h="59734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53823" y="136935" z="-2760" h="62995" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53201" y="140584" z="-2872" h="49493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54229" y="138364" z="-2904" h="358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52520" y="138441" z="-2920" h="4969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51307" y="137203" z="-2880" h="49773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54966" y="136417" z="-2696" h="18550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51949" y="140264" z="-2896" h="61779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50446" y="140469" z="-2904" h="20643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53617" y="139129" z="-2912" h="13161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51547" y="138594" z="-2888" h="11705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50274" y="140035" z="-2888" h="25146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51028" y="138345" z="-2896" h="477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53172" y="137249" z="-2912" h="31839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53128" y="139777" z="-2872" h="1487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50372" y="137958" z="-2880" h="59435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49164" y="140791" z="-2896" h="27861" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53751" y="137982" z="-2824" h="41015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51033" y="137823" z="-2888" h="28598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49164" y="140077" z="-2904" h="50954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50988" y="139525" z="-2864" h="63683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52844" y="140941" z="-2896" h="42652" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52210" y="138645" z="-2920" h="31727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52000" y="140519" z="-2880" h="46336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51369" y="139421" z="-2888" h="42494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-49709" y="137295" z="-2872" h="52976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50950" y="137356" z="-2888" h="32506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51394" y="138492" z="-2880" h="55352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50752" y="140877" z="-2872" h="52895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50905" y="140826" z="-2872" h="55912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52873" y="139369" z="-2928" h="8416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54915" y="137029" z="-2776" h="13275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54057" y="137370" z="-2776" h="32805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50931" y="137670" z="-2896" h="23233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52305" y="137861" z="-2920" h="14490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52775" y="139053" z="-2928" h="46936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53668" y="139129" z="-2920" h="29701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49862" y="138009" z="-2864" h="62734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50319" y="137670" z="-2864" h="6591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52673" y="138441" z="-2920" h="41093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51286" y="140825" z="-2856" h="11847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51981" y="140084" z="-2912" h="21580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49980" y="139244" z="-2888" h="17307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53121" y="138116" z="-2904" h="17504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54180" y="136221" z="-2752" h="2466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52895" y="140329" z="-2904" h="44343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52006" y="138900" z="-2944" h="3898" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52316" y="138747" z="-2920" h="17449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-49623" y="140638" z="-2896" h="60547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53566" y="138823" z="-2896" h="19975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51898" y="140621" z="-2864" h="60136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52356" y="137963" z="-2920" h="22902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51643" y="140876" z="-2856" h="48133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54711" y="136264" z="-2744" h="14198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50625" y="138231" z="-2920" h="40946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51802" y="138339" z="-2888" h="42107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51039" y="140188" z="-2872" h="25452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-50293" y="140928" z="-2888" h="8207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50467" y="138600" z="-2920" h="17949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53668" y="138364" z="-2856" h="32483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52571" y="138339" z="-2920" h="29856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50293" y="140877" z="-2912" h="27691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50778" y="137262" z="-2864" h="16688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51090" y="139678" z="-2856" h="7629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52917" y="138218" z="-2920" h="27168" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53394" y="137319" z="-2872" h="33417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52611" y="138218" z="-2920" h="45289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51573" y="139778" z="-2856" h="54213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50423" y="138009" z="-2880" h="14919" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53081" y="138900" z="-2912" h="689" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53874" y="137088" z="-2752" h="25316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52108" y="138288" z="-2920" h="12604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49623" y="140230" z="-2872" h="47221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-50671" y="138855" z="-2920" h="62409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52720" y="140083" z="-2928" h="64225" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50682" y="139984" z="-2872" h="7389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-55272" y="136213" z="-2680" h="23443" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52509" y="137300" z="-2920" h="43843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52844" y="141094" z="-2888" h="59198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51594" y="137249" z="-2848" h="39015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51847" y="140774" z="-2856" h="53259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50625" y="137313" z="-2864" h="9879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50548" y="140571" z="-2896" h="39608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50293" y="141234" z="-2864" h="12842" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-50727" y="137466" z="-2872" h="41888" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53070" y="138218" z="-2904" h="63205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51496" y="138339" z="-2872" h="3667" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52102" y="141029" z="-2856" h="51101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49521" y="140383" z="-2872" h="20026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51343" y="138339" z="-2880" h="57230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53260" y="138568" z="-2888" h="22898" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-50727" y="137517" z="-2888" h="58213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-49776" y="139346" z="-2896" h="39211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55399" y="136444" z="-2696" h="53510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55145" y="136731" z="-2744" h="11596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55629" y="137182" z="-2784" h="54773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55460" y="137835" z="-2888" h="23255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55886" y="138023" z="-2792" h="17132" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-55780" y="137409" z="-2816" h="34441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55493" y="137467" z="-2864" h="28941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-56025" y="138088" z="-2744" h="11351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-56081" y="137915" z="-2792" h="31877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55561" y="137601" z="-2880" h="31453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-55639" y="137635" z="-2880" h="28405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55917" y="138060" z="-2776" h="35030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55649" y="137427" z="-2840" h="34313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56042" y="141176" z="-2632" h="63409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56602" y="140630" z="-2632" h="44954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56428" y="141274" z="-2632" h="52925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56732" y="140790" z="-2632" h="33446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56442" y="140786" z="-2632" h="47968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-57476" y="141090" z="-2616" h="22516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55415" y="141468" z="-2616" h="18271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56282" y="140864" z="-2632" h="19793" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56437" y="140988" z="-2632" h="63553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55609" y="140655" z="-2632" h="5166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56705" y="140752" z="-2632" h="24216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56403" y="141145" z="-2632" h="22249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56755" y="140895" z="-2632" h="28219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56737" y="141063" z="-2632" h="29577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56922" y="140864" z="-2632" h="9387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56245" y="139579" z="-2624" h="61722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56010" y="139715" z="-2632" h="37547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55988" y="140173" z="-2632" h="63259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55523" y="140427" z="-2640" h="21217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-57278" y="140455" z="-2616" h="7086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56948" y="139689" z="-2600" h="28440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56576" y="140258" z="-2624" h="33207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-57189" y="140127" z="-2616" h="15695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55588" y="140317" z="-2640" h="43903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-55559" y="140344" z="-2640" h="21625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55497" y="139844" z="-2640" h="21791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-57014" y="140177" z="-2616" h="24217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56290" y="139943" z="-2624" h="57664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56115" y="139448" z="-2640" h="41172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-57078" y="139811" z="-2600" h="7636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56773" y="140082" z="-2616" h="31859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56256" y="140198" z="-2632" h="55228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56572" y="140044" z="-2616" h="34027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56466" y="140494" z="-2632" h="45907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56340" y="139923" z="-2616" h="40348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56422" y="139852" z="-2616" h="55813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55733" y="139676" z="-2640" h="7082" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56308" y="140304" z="-2632" h="61092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56992" y="140379" z="-2616" h="64497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56780" y="139800" z="-2616" h="32293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56330" y="140082" z="-2624" h="44728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-57181" y="139741" z="-2576" h="54997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56938" y="140125" z="-2616" h="40652" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56492" y="139780" z="-2616" h="22815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56636" y="139971" z="-2616" h="56099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56742" y="140224" z="-2616" h="8116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56422" y="140450" z="-2632" h="29681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55908" y="139854" z="-2640" h="40006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-57230" y="140368" z="-2616" h="48515" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56541" y="140494" z="-2632" h="49897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-55119" y="136519" z="-2720" h="7989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51751" y="138696" z="-2896" h="14193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52611" y="137759" z="-2920" h="53796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51675" y="140033" z="-2880" h="48086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53923" y="139180" z="-2896" h="46734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52051" y="140621" z="-2864" h="56022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52153" y="140468" z="-2896" h="52735" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52873" y="139930" z="-2896" h="20394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52979" y="138900" z="-2920" h="49612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52662" y="137708" z="-2912" h="20299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55476" y="137131" z="-2792" h="54352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51955" y="138951" z="-2936" h="40690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53048" y="140482" z="-2880" h="30663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53821" y="138517" z="-2896" h="16997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52866" y="138014" z="-2920" h="19975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51849" y="137555" z="-2872" h="20122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53955" y="137880" z="-2840" h="35409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52669" y="139930" z="-2928" h="42740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52917" y="137351" z="-2920" h="22220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54178" y="139180" z="-2768" h="18311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54537" y="136935" z="-2760" h="51942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52006" y="138492" z="-2912" h="7685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54813" y="137182" z="-2800" h="28648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55606" y="140995" z="-2632" h="57298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53904" y="138186" z="-2880" h="27640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53019" y="137861" z="-2904" h="30568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52469" y="138645" z="-2920" h="46992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51369" y="139676" z="-2856" h="17931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55374" y="136621" z="-2728" h="2983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51649" y="139104" z="-2936" h="18672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53150" y="140227" z="-2856" h="18274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53617" y="138364" z="-2880" h="36486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54076" y="139078" z="-2872" h="55019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51490" y="140366" z="-2880" h="16072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54076" y="138976" z="-2880" h="25452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52469" y="139104" z="-2944" h="56131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52589" y="141094" z="-2872" h="29856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52254" y="138014" z="-2920" h="5551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52204" y="140876" z="-2856" h="54597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52363" y="139828" z="-2936" h="42327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54537" y="137088" z="-2784" h="22358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53649" y="138237" z="-2848" h="17892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53721" y="136527" z="-2760" h="18873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52153" y="141080" z="-2856" h="35710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52210" y="138849" z="-2920" h="34866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51726" y="139880" z="-2888" h="3530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52968" y="137351" z="-2920" h="10917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53955" y="137625" z="-2768" h="43358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-55046" y="141307" z="-2616" h="42855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52567" y="139981" z="-2936" h="59170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52134" y="139727" z="-2936" h="9738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53260" y="138772" z="-2896" h="29357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51904" y="138645" z="-2912" h="45960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52305" y="137504" z="-2920" h="20133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52997" y="141094" z="-2904" h="50887" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54711" y="136876" z="-2752" h="23935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51624" y="140237" z="-2880" h="11348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53132" y="138543" z="-2896" h="47679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53128" y="139930" z="-2864" h="52895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52367" y="138288" z="-2920" h="51920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51439" y="141131" z="-2856" h="31565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53496" y="137880" z="-2784" h="20111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52611" y="137402" z="-2920" h="3678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-55527" y="137029" z="-2768" h="8526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51777" y="139880" z="-2888" h="56773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51477" y="140732" z="-2856" h="29563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51343" y="138696" z="-2904" h="38920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52407" y="138218" z="-2920" h="49518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54384" y="136425" z="-2752" h="3117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52265" y="138849" z="-2920" h="13233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55527" y="136672" z="-2728" h="54219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52560" y="137453" z="-2920" h="19344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52265" y="138594" z="-2920" h="53228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55846" y="141307" z="-2632" h="47606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52720" y="139675" z="-2928" h="53590" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53260" y="138415" z="-2880" h="43481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51388" y="140621" z="-2856" h="49865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52622" y="139053" z="-2936" h="26984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53223" y="138116" z="-2880" h="53916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51649" y="138288" z="-2872" h="26957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51471" y="139523" z="-2880" h="2703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52662" y="138065" z="-2920" h="58786" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53201" y="140482" z="-2856" h="50411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51318" y="139319" z="-2904" h="27096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55578" y="137080" z="-2760" h="703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52210" y="138492" z="-2920" h="19720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53070" y="137963" z="-2904" h="44328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53802" y="137319" z="-2752" h="18374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53464" y="139180" z="-2920" h="1188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51955" y="138390" z="-2904" h="30421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51490" y="140417" z="-2872" h="44763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52051" y="140366" z="-2904" h="10766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53230" y="139522" z="-2904" h="10221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53292" y="137319" z="-2880" h="22632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53132" y="138900" z="-2912" h="62472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52866" y="137657" z="-2920" h="43742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52006" y="139257" z="-2952" h="6441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52979" y="139002" z="-2920" h="51539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51849" y="137351" z="-2864" h="62865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54435" y="136374" z="-2752" h="36434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53172" y="138167" z="-2896" h="45210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51267" y="139370" z="-2904" h="64998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53230" y="139573" z="-2904" h="54298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52793" y="140227" z="-2912" h="44684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52210" y="138594" z="-2920" h="39660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52764" y="137555" z="-2920" h="22260" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51388" y="140264" z="-2872" h="22605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51981" y="140033" z="-2912" h="13659" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53230" y="139879" z="-2872" h="23393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51715" y="136693" z="-2872" h="41389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53598" y="138084" z="-2792" h="49184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51649" y="138390" z="-2880" h="39822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52713" y="137555" z="-2920" h="28424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52826" y="138900" z="-2928" h="25136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52414" y="139879" z="-2936" h="17137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55578" y="136825" z="-2736" h="5137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52997" y="140788" z="-2904" h="49969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54282" y="136935" z="-2768" h="60631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54762" y="136570" z="-2744" h="29317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51490" y="140927" z="-2856" h="8351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53292" y="137472" z="-2888" h="10281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52622" y="138339" z="-2920" h="15202" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53394" y="137421" z="-2856" h="12549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54210" y="137523" z="-2816" h="28114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55323" y="136825" z="-2744" h="50709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53070" y="138116" z="-2904" h="64482" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51745" y="140315" z="-2880" h="6765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51777" y="139982" z="-2888" h="30501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52691" y="140380" z="-2928" h="8124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53234" y="138900" z="-2912" h="23100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51981" y="139421" z="-2944" h="50900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52946" y="140278" z="-2896" h="5964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53823" y="136527" z="-2752" h="48765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52622" y="138492" z="-2920" h="20379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52611" y="137912" z="-2920" h="15516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52458" y="138116" z="-2920" h="16953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51643" y="140570" z="-2864" h="9111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55476" y="136978" z="-2768" h="5131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52924" y="139981" z="-2896" h="50623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52159" y="139002" z="-2936" h="31702" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51286" y="141131" z="-2856" h="1600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52108" y="139104" z="-2952" h="55705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52873" y="139267" z="-2928" h="51387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52083" y="139676" z="-2920" h="23816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52458" y="137657" z="-2920" h="18109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53070" y="137606" z="-2912" h="21444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55425" y="136213" z="-2680" h="12015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51751" y="138492" z="-2888" h="41446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52662" y="138014" z="-2920" h="35664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53445" y="138033" z="-2792" h="13813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52516" y="139675" z="-2936" h="7627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53772" y="136374" z="-2760" h="15440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52436" y="140176" z="-2928" h="26560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56263" y="141052" z="-2632" h="54128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51292" y="138696" z="-2904" h="21730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52000" y="140723" z="-2856" h="1816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51390" y="138116" z="-2872" h="2988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54210" y="138084" z="-2896" h="7408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55323" y="136978" z="-2776" h="53387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51343" y="138441" z="-2880" h="35659" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52204" y="140264" z="-2912" h="24639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51547" y="139104" z="-2936" h="35726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51904" y="138594" z="-2904" h="58191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52356" y="138167" z="-2920" h="43904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53547" y="137829" z="-2776" h="19693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51288" y="138167" z="-2880" h="55094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-55323" y="137131" z="-2800" h="49176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51471" y="139268" z="-2920" h="27820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53048" y="140584" z="-2896" h="58145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52826" y="138288" z="-2920" h="37998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51420" y="139625" z="-2864" h="23259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53179" y="139573" z="-2904" h="49429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52206" y="137810" z="-2920" h="17529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55527" y="137131" z="-2792" h="44816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52815" y="138116" z="-2920" h="10059" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53619" y="136527" z="-2768" h="4581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53445" y="137778" z="-2776" h="57714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51904" y="138849" z="-2920" h="46299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52979" y="138798" z="-2920" h="19409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52662" y="137963" z="-2920" h="28544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51286" y="140723" z="-2856" h="46600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54762" y="136672" z="-2744" h="51631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55686" y="140839" z="-2632" h="30710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52032" y="139778" z="-2912" h="27718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54282" y="136833" z="-2768" h="51941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52764" y="137351" z="-2920" h="58785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52793" y="140839" z="-2912" h="50182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52356" y="137300" z="-2912" h="52971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52204" y="141080" z="-2856" h="2166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52866" y="137402" z="-2920" h="51550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53183" y="138543" z="-2896" h="24143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52363" y="139624" z="-2944" h="45312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-55476" y="136315" z="-2680" h="10011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53802" y="137880" z="-2808" h="30811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53802" y="138186" z="-2872" h="59265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55686" y="141151" z="-2632" h="24658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51898" y="140825" z="-2856" h="6655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51288" y="137708" z="-2872" h="52761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52053" y="137963" z="-2912" h="50447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52877" y="138798" z="-2920" h="65103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52917" y="137555" z="-2920" h="37550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53445" y="137880" z="-2784" h="64461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51522" y="139982" z="-2856" h="45490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51471" y="139982" z="-2856" h="35363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55926" y="141307" z="-2632" h="47723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51394" y="139104" z="-2936" h="40156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51879" y="139931" z="-2904" h="5227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52560" y="137249" z="-2920" h="29321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53241" y="137727" z="-2872" h="45804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54966" y="137080" z="-2776" h="15516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52771" y="139726" z="-2920" h="51296" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51490" y="141182" z="-2856" h="21440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52104" y="137300" z="-2888" h="39065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52418" y="138849" z="-2920" h="55259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53132" y="139155" z="-2920" h="167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54180" y="136833" z="-2768" h="56891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-57278" y="141013" z="-2624" h="47051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53070" y="138014" z="-2904" h="10885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52844" y="140686" z="-2928" h="7779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51292" y="138390" z="-2888" h="26063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51460" y="137050" z="-2856" h="14065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54711" y="136621" z="-2744" h="8190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52571" y="138849" z="-2920" h="59690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53700" y="138135" z="-2840" h="53402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52057" y="139053" z="-2952" h="47762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51522" y="139370" z="-2920" h="56039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52509" y="138065" z="-2920" h="7966" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53150" y="140431" z="-2856" h="55856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52589" y="140737" z="-2904" h="7227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52210" y="138441" z="-2920" h="28975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-58177" y="141035" z="-2608" h="35761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-58257" y="140879" z="-2568" h="27932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-58018" y="141446" z="-2592" h="41687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-58177" y="141113" z="-2616" h="24380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-57377" y="140801" z="-2616" h="35144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-57532" y="141178" z="-2616" h="25678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-57715" y="140682" z="-2616" h="22045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-58417" y="141269" z="-2576" h="16720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-58148" y="141164" z="-2616" h="64154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-58262" y="141070" z="-2584" h="17768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-57315" y="141011" z="-2624" h="19390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-57312" y="141132" z="-2632" h="51336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55527" y="136519" z="-2712" h="38233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54762" y="137029" z="-2776" h="62197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-57697" y="140957" z="-2616" h="35957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-55374" y="136468" z="-2712" h="49599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54282" y="136272" z="-2752" h="57980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-55374" y="136570" z="-2712" h="50647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-57777" y="140879" z="-2616" h="30147" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-57137" y="141191" z="-2632" h="33234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53547" y="137982" z="-2784" h="20663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-54333" y="136935" z="-2768" h="2467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54864" y="136723" z="-2744" h="7128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53751" y="137370" z="-2760" h="57297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51589" y="137047" z="-2848" h="9135" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51464" y="136588" z="-2880" h="46623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52316" y="138594" z="-2920" h="17580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51802" y="139206" z="-2944" h="29062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52104" y="138167" z="-2920" h="29676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53172" y="137504" z="-2880" h="5792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52713" y="137249" z="-2920" h="60892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51798" y="137453" z="-2848" h="11534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52954" y="137768" z="-2912" h="7630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51413" y="138696" z="-2904" h="35746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51445" y="138288" z="-2880" h="1325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52765" y="137754" z="-2920" h="38227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52265" y="139206" z="-2952" h="51622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52199" y="138847" z="-2920" h="63979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52104" y="137453" z="-2904" h="59895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52809" y="137740" z="-2920" h="54397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51543" y="138116" z="-2872" h="23505" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51643" y="140468" z="-2880" h="36549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52618" y="139828" z="-2928" h="41402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51675" y="139829" z="-2872" h="15835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51828" y="139370" z="-2936" h="9115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52051" y="141233" z="-2856" h="11619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52873" y="139471" z="-2920" h="33480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52589" y="140584" z="-2920" h="33626" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52895" y="140380" z="-2904" h="12611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52951" y="139915" z="-2896" h="65286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-51655" y="140454" z="-2880" h="31753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51267" y="139727" z="-2856" h="41012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51898" y="140723" z="-2856" h="26487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-51853" y="138645" z="-2912" h="558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-54486" y="136221" z="-2744" h="33105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-55693" y="140497" z="-2632" h="29616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52155" y="137963" z="-2920" h="53306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-54966" y="136672" z="-2728" h="12314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53121" y="138065" z="-2904" h="34335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52771" y="140134" z="-2912" h="56627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52232" y="140125" z="-2920" h="30959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53802" y="138237" z="-2872" h="62615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-52102" y="140315" z="-2912" h="22347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51237" y="137657" z="-2872" h="41061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-52560" y="137504" z="-2920" h="43435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53751" y="138135" z="-2848" h="9900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56006" y="141463" z="-2624" h="22698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56411" y="142618" z="-2616" h="54205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-55822" y="141813" z="-2616" h="1741" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56620" y="142583" z="-2616" h="17545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56501" y="142612" z="-2616" h="4495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56491" y="143008" z="-2584" h="30212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56327" y="142975" z="-2592" h="42839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56119" y="142194" z="-2616" h="679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56006" y="141775" z="-2616" h="52341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55979" y="142491" z="-2592" h="44459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56063" y="141739" z="-2616" h="9816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56326" y="141979" z="-2616" h="49061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56140" y="141844" z="-2616" h="32879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56228" y="142828" z="-2592" h="40531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56988" y="141553" z="-2632" h="63476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56111" y="141399" z="-2632" h="11174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-57090" y="141572" z="-2632" h="35493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56560" y="142563" z="-2616" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56578" y="142622" z="-2616" h="44633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56981" y="141669" z="-2632" h="34386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-55884" y="142600" z="-2576" h="28058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56672" y="142679" z="-2616" h="13699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56997" y="142480" z="-2568" h="31435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56472" y="142592" z="-2616" h="58549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56131" y="142809" z="-2592" h="44074" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-51955" y="138645" z="-2912" h="31413" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55686" y="141307" z="-2624" h="45228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-55126" y="141385" z="-2616" h="30820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56246" y="141697" z="-2632" h="9420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55206" y="141697" z="-2592" h="36761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52465" y="139981" z="-2936" h="7103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-52102" y="140825" z="-2856" h="7494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52134" y="139931" z="-2912" h="29156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51949" y="140519" z="-2880" h="29123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53019" y="137300" z="-2920" h="9609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-51700" y="138543" z="-2888" h="10665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-52509" y="137504" z="-2920" h="42870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-57297" y="141191" z="-2632" h="50170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56091" y="142618" z="-2592" h="39687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53853" y="137574" z="-2760" h="25037" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53179" y="140134" z="-2856" h="48992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53292" y="137829" z="-2848" h="36108" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-57617" y="141113" z="-2616" h="58873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-57537" y="141581" z="-2624" h="7597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-58337" y="141113" z="-2584" h="4355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22240" /> <!-- Sel Mahum Mage -->
+		<point x="-53700" y="137829" z="-2776" h="4466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-57217" y="141269" z="-2632" h="14345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-58417" y="141191" z="-2576" h="60639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-54210" y="138033" z="-2896" h="44864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56522" y="140942" z="-2632" h="39016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56811" y="142384" z="-2616" h="5201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53700" y="137370" z="-2760" h="37638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56171" y="142384" z="-2616" h="55146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22238" /> <!-- Sel Mahum Raider -->
+		<point x="-53853" y="137676" z="-2768" h="16247" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22244" /> <!-- Sel Mahum Footman -->
+		<point x="-56362" y="141332" z="-2632" h="9859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-55931" y="142150" z="-2616" h="50756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56442" y="141020" z="-2632" h="30424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22237" /> <!-- Sel Mahum Sniper -->
+		<point x="-53751" y="137625" z="-2768" h="19349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56171" y="142462" z="-2616" h="24917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22239" /> <!-- Sel Mahum Berserker -->
+		<point x="-53464" y="138568" z="-2880" h="47357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22242" /> <!-- Sel Mahum Wizard -->
+		<point x="-56251" y="142228" z="-2616" h="17370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-57082" y="141644" z="-2632" h="5113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22245" /> <!-- Sel Mahum Bowman -->
+		<point x="-56971" y="142384" z="-2592" h="53656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22243" /> <!-- Sel Mahum Knight -->
+		<point x="-56411" y="142384" z="-2616" h="32002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="-56164" y="135701" z="-2712" h="64212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18475" /> <!-- Ol Mahum Base -->
+		<point x="-57260" y="142176" z="-2592" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34173" /> <!-- Khamin -->
+		<point x="-48564" y="140535" z="-2912" h="47754" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34175" /> <!-- Undercover Agent -->
+		<point x="-52026" y="136510" z="-2880" h="52315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34175" /> <!-- Undercover Agent -->
+		<point x="-56137" y="135790" z="-2712" h="8922" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34175" /> <!-- Undercover Agent -->
+		<point x="-57658" y="138553" z="-2760" h="8860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34175" /> <!-- Undercover Agent -->
+		<point x="-57444" y="139936" z="-2560" h="10249" />
+	</spawn>
+</list>

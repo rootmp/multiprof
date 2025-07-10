@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="81000" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81001" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81002" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81003" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81004" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81005" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81006" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81007" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81008" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81009" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81010" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81011" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81012" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81013" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81014" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81015" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81016" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81017" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81018" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81019" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81020" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81021" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81022" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81023" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81024" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81025" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81026" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81027" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81028" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81029" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81030" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81031" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81032" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81033" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81034" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81035" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81036" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81037" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81038" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81039" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81040" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81041" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81042" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81043" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81044" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81045" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81046" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81047" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81048" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81049" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81050" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81051" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81052" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81053" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81054" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81055" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81056" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81057" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81058" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81059" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81060" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81061" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81062" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81063" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81064" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81065" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81066" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81067" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81068" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81069" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81070" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81071" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81072" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81073" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81074" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81075" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81076" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81077" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81078" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81079" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81080" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81081" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81082" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81083" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81084" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81085" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81086" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81087" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81088" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81089" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81090" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81091" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81092" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81093" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81094" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81095" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81096" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81097" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81098" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81099" levels="1" name="Received Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

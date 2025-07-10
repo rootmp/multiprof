@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "timed_hunt_zone.dtd">
+<list>
+	<!--Primeval Isle-->
+	<field id="1" itemId="57" itemCount="10000" resetCycle="1" minLevel="76" maxLevel="999" remainTimeBase="7200" remainTimeMax="46800" enterX="6062" enterY="-2328" enterZ="-2960" exitX="146633" exitY="26977" exitZ="-2200" world="false" />
+	
+	<!-- Forgotten Primeval Garden -->
+	<field id="4" itemId="57" itemCount="200000" resetCycle="1" minLevel="76" maxLevel="999" remainTimeBase="3600" remainTimeMax="21600" enterX="-115041" enterY="215934" enterZ="-13216" exitX="146861" exitY="25798" exitZ="-2008" world="true" />
+	
+	<!--Alligator Island-->
+	<field id="11" itemId="91663" itemCount="200" resetCycle="1" minLevel="60" maxLevel="999" remainTimeBase="3600" remainTimeMax="10800" enterX="115583" enterY="192261" enterZ="-3488" exitX="83384" exitY="148152" exitZ="-3408" world="false" />
+	
+	<!-- Antharas' Lair -->
+	<field id="12" itemId="57" itemCount="1000000" resetCycle="0" minLevel="80" maxLevel="999" remainTimeBase="18000" remainTimeMax="64800" enterX="132280" enterY="114408" enterZ="-3728" exitX="146861" exitY="25798" exitZ="-2008" world="true" />
+	
+	<!-- Frost Lord's Castle -->
+	<field id="18" itemId="57" itemCount="1000000" resetCycle="0" minLevel="85" maxLevel="999" remainTimeBase="18000" remainTimeMax="64800" enterX="144536" enterY="147752" enterZ="-12136" exitX="146861" exitY="25798" exitZ="-2008" world="true" />
+	
+	<!-- Elmoreden Tower -->
+	<!-- <field id="23" itemId="57" itemCount="10000" resetCycle="1" minLevel="60" maxLevel="999" remainTimeBase="3600" remainTimeMax="10800" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="true" />	<Event> Elmoreden Tower -->
+	
+	<!-- Transcendent Instance Zone 40-49 9(SEA OF SPORES) -->
+	<field id="101" itemId="57" itemCount="1000" resetCycle="1" minLevel="40" maxLevel="49" remainTimeBase="0" remainTimeMax="0" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="false" />
+
+	<!-- Transcendent Instance Zone 50-59 (CEMETERY) -->
+	<field id="102" itemId="57" itemCount="10000" resetCycle="1" minLevel="50" maxLevel="59" remainTimeBase="0" remainTimeMax="0" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="false" />
+
+	<!-- Transcendent Instance Zone 60-69 (PLAINS OF GLORY) -->
+	<field id="103" itemId="57" itemCount="100000" resetCycle="1" minLevel="60" maxLevel="69" remainTimeBase="0" remainTimeMax="0" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="false" />
+
+	<!-- Transcendent Instance Zone 70-79 (WAR-TORN PLAINS) -->
+	<field id="104" itemId="57" itemCount="100000" resetCycle="1" minLevel="70" maxLevel="79" remainTimeBase="0" remainTimeMax="0" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="false" />
+
+	<!-- Transcendent Instance Zone 80+ (DRAGON VALLEY) -->
+	<field id="106" itemId="57" itemCount="200000" resetCycle="1" minLevel="80" maxLevel="89" remainTimeBase="0" remainTimeMax="0" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="false" />
+
+	<!-- Transcendent Instance Zone 85+ (SEL MAHUM BASE) -->
+	<field id="107" itemId="57" itemCount="500000" resetCycle="1" minLevel="85" maxLevel="999" remainTimeBase="0" remainTimeMax="0" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="false" />
+
+	<!-- <field id="108" itemId="57" itemCount="100000" resetCycle="1" minLevel="76" maxLevel="999" remainTimeBase="0" remainTimeMax="0" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="false" />	Training Zone -->
+
+	<!-- Transcendent Instance Zone 90+ (GIANT'S CAVE) -->
+	<field id="109" itemId="57" itemCount="3000000" resetCycle="1" minLevel="90" maxLevel="999" remainTimeBase="0" remainTimeMax="0" enterX="0" enterY="0" enterZ="0" exitX="0" exitY="0" exitZ="0" world="false" />
+</list>

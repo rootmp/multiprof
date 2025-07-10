@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-60302" y="79025" z="-3512" h="0"/>
+		<npc id="25004"/><!-- Turek Mercenary Captain -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="168471" y="-20282" z="-3664" h="0"/>
+		<npc id="25095"/><!-- Renoa -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="119877" y="13565" z="-5184" h="0"/>
+		<npc id="25152"/><!-- Cursed Shadir -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="95326" y="81541" z="-3704" h="0"/>
+		<npc id="25398"/><!-- Gaze of Abyss -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="115966" y="10530" z="-5136" h="0"/>
+		<npc id="25217"/><!-- Cursed Kele -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="91927" y="119536" z="-2912" h="0" />
+		<npc id="25176"/><!-- Black Lily -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="137572" y="78437" z="-3608" h="0"/>
+		<npc id="25026"/><!-- Atis -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-23802" y="74852" z="-3672" h="0"/>
+		<npc id="25102"/><!-- Shacram -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="135781" y="79536" z="-3576" h="0"/>
+		<npc id="25155"/><!-- Selu -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="157118" y="-14365" z="-2768" h="0" />
+		<npc id="25431"/><!-- Flamestone Golem -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="81073" y="109491" z="-3056" h="0" />
+		<npc id="25441"/><!-- Cyrion -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="119277" y="20219" z="-5168" h="0"/>
+		<npc id="25146"/><!-- Cursed Bifrons -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="83007" y="61463" z="-3496" h="0"/>
+		<npc id="25366"/><!-- Kuroboros' High Priest -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="110571" y="11967" z="-5152" h="0"/>
+		<npc id="25369"/><!-- Cursed Scavenger -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="166026" y="-21215" z="-3056" h="0"/>
+		<npc id="25044"/><!-- Barion -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="167465" y="-21253" z="-3560" h="0"/>
+		<npc id="25051"/><!-- Rahha -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="94717" y="83521" z="-3424" h="0"/>
+		<npc id="25057"/><!-- Beacon of Blue Sky -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="167511" y="-19390" z="-3072" h="0"/>
+		<npc id="25099"/><!-- Repiro -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-27920" y="79512" z="-3576" h="0"/>
+		<npc id="25122"/><!-- Refugee Applicant Leo -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="84625" y="88214" z="-3240" h="0"/>
+		<npc id="25159"/><!-- Paniel the Unicorn -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-27563" y="84155" z="-3464" h="0"/>
+		<npc id="25226"/><!-- Roaring Lord Kastor -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-58661" y="75271" z="-3176" h="0"/>
+		<npc id="25230"/><!-- Priest Ragoth -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="90776" y="69111" z="-3480" h="0"/>
+		<npc id="25241"/><!-- Hero Tamash -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="84989" y="119798" z="-2944" h="0" />
+		<npc id="25255"/><!-- Tiphon -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-54618" y="81591" z="-3480" h="0"/>
+		<npc id="25256"/><!-- High Prefect Arak -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="66811" y="31045" z="-3720" h="0"/>
+		<npc id="25420"/><!-- Orfen's Handmaiden -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-63957" y="82501" z="-3432" h="0"/>
+		<npc id="25463"/><!-- Guardian Garangky -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="91450" y="110356" z="-3800" h="0" />
+		<npc id="25478"/><!-- Shillien's Priest Hisilrome -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="87469" y="108030" z="-3088" h="0" />
+		<npc id="25163"/><!-- Roaring Skylancer -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="96618" y="110316" z="-3720" h="0" />
+		<npc id="25252"/><!-- Palibati Queen Themis -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="95713" y="28333" z="-3644" h="0"/>
+		<npc id="25738"/><!-- Queen Ant Drone Priest -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="108481" y="27188" z="-3480" h="0"/>
+		<npc id="25739"/><!-- Angel Priest of Baium -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="95668" y="20366" z="-3200" h="0"/>
+		<npc id="25742"/><!-- Priest of Core Decar -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="101758" y="26798" z="-3384" h="0"/>
+		<npc id="25743"/><!-- Orfen's Priest Lord Ipos -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="170982" y="-19962" z="-3440" h="0"/>
+		<npc id="25746"/><!-- Magikus -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="108214" y="80229" z="-2808" h="0"/>
+		<npc id="25747"/><!-- Rael Mahum Radium -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="107367" y="86692" z="-3144" h="0"/>
+		<npc id="25748"/><!-- Rael Mahum Supercium -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="132971" y="6562" z="-4344" h="0"/>
+		<npc id="25749"/><!-- Tayga Feron King -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="138720" y="3247" z="-4520" h="0"/>
+		<npc id="25750"/><!-- Tayga Marga Shaman -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="135174" y="11809" z="-4144" h="0"/>
+		<npc id="25751"/><!-- Tayga Septon Champion -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="154702" y="-19672" z="-1744" h="0" />
+		<npc id="25754"/><!-- Flamestone Giant -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="79669" y="85305" z="-3592" h="0"/>
+		<npc id="25757"/><!-- Grousse -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="-47333" y="141058" z="-2936" h="0"/>
+		<npc id="25766"/><!-- Monster Minotaur -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="-51520" y="135521" z="-2944" h="0"/>
+		<npc id="25767"/><!-- Monster Bulleroth -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="-90595" y="106072" z="-3672" h="0"/>
+		<npc id="25773"/><!-- Evil Orc Tabris -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<point x="-95162" y="110310" z="-3816" h="0"/>
+		<npc id="25775"/><!-- Evil Orc Dephracor -->
+	</spawn>
+	<spawn count="1" respawn="10800" respawn_random="0" period_of_day="none">
+		<point x="112600" y="16008" z="-4368" h="0" />
+		<npc id="25444"/><!-- Enmity Ghost Ramdal -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-88881" y="105145" z="-3342" h="0"/>
+		<npc id="25909"/><!-- Carcs -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-90563" y="115243" z="-3496" h="0"/>
+		<npc id="25910"/><!-- Drak -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-93339" y="119445" z="-3252" h="0"/>
+		<npc id="25911"/><!-- Ourick -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-60496" y="137347" z="-2392" h="0"/>
+		<npc id="25925"/><!-- Jisra -->
+	</spawn>
+	<spawn count="1" respawn_pattern="* 1,3,5,7,9,11,13,15,17,19,21,23 * * *">
+		<point x="-58974" y="135294" z="-2392" h="0"/>
+		<npc id="25926"/><!-- Kuka -->
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25932" /> <!-- Katuba -->
+		<point x="127444" y="114368" z="-3520" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25768" /> <!-- Dorcaus -->
+		<point x="177133" y="40782" z="-3728" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25769" /> <!-- Kerfaus -->
+		<point x="163993" y="43247" z="-3488" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25770" /> <!-- Milinaus -->
+		<point x="168472" y="47838" z="-3728" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25365" /> <!-- Patriarch Kuroboros -->
+		<point x="89856" y="66741" z="-3720" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25103" /> <!-- Wizard Isirr -->
+		<point x="86413" y="68566" z="-3440" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25437" /> <!-- Evil Orc Gosmos -->
+		<point x="181172" y="36619" z="-4784" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25745" /> <!-- Evil Orc Darphen -->
+		<point x="181176" y="42995" z="-3832" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25772" /> <!-- Evil Orc Zetahl -->
+		<point x="185884" y="36812" z="-4184" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25774" /> <!-- Evil Orc Ravolas -->
+		<point x="166598" y="38444" z="-3584" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25776" /> <!-- Evil Orc Turahot -->
+		<point x="175310" y="42442" z="-4840" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25777" /> <!-- Evil Orc Turation -->
+		<point x="178109" y="42181" z="-3864" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25780" /> <!-- Varbasion -->
+		<point x="144860" y="85857" z="-3632" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25781" /> <!-- Varmoni -->
+		<point x="146903" y="83324" z="-3688" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25782" /> <!-- Overlord Muscel -->
+		<point x="151563" y="83245" z="-3424" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25783" /> <!-- Bathus Elbogen -->
+		<point x="149281" y="82128" z="-3472" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25784" /> <!-- Daumen Kshana -->
+		<point x="154480" y="82356" z="-3144" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25385" /> <!-- Evil Spirit Tempest -->
+		<point x="114113" y="1839" z="-3720" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25758" /> <!-- Fiend Goblier -->
+		<point x="112098" y="-1204" z="-3888" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25759" /> <!-- Fiend Cherkia -->
+		<point x="118541" y="-1721" z="-3728" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25760" /> <!-- Fiend Harthemon -->
+		<point x="122764" y="-4019" z="-3304" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25761" /> <!-- Fiend Sarboth -->
+		<point x="120264" y="-8019" z="-3152" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25762" /> <!-- Demon Bedukel -->
+		<point x="118875" y="-2963" z="-3848" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25763" /> <!-- Bloody Witch Rumilla -->
+		<point x="115240" y="-5239" z="-3416" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25173" /> <!-- Tiger King Karu -->
+		<point x="134548" y="-14447" z="-2624" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25260" /> <!-- Iron Giant Totem -->
+		<point x="134559" y="-8377" z="-3304" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25158" /> <!-- King Tarlk -->
+		<point x="127344" y="-5197" z="-3208" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25125" /> <!-- Tiger King Kata -->
+		<point x="136419" y="-17157" z="-2608" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25755" /> <!-- Flame Salamander -->
+		<point x="129074" y="-9281" z="-3592" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25756" /> <!-- Fire Dre Vanul -->
+		<point x="128076" y="-11345" z="-3664" h="0" />
+	</spawn>
+	<spawn count="1" respawn="79200" respawn_random="0" period_of_day="none">
+		<npc id="25127" /> <!-- Chief Rashkos -->
+		<point x="88909" y="62800" z="-3680" h="0" />
+	</spawn>
+	<spawn name="QueenAnt" count="1" respawn="28800" respawn_random="3600">
+		<point x="93069" y="8925" z="-3904" h="0"/>
+		<npc id="29001"/><!--Королева Муравьев-->
+	</spawn>
+	<territory name="core_cube">
+		<add x="17066" y="108039" zmin="-6688" zmax="-6188"/>
+		<add x="18357" y="108039" zmin="-6688" zmax="-6188"/>
+		<add x="19223" y="108832" zmin="-6688" zmax="-6188"/>
+		<add x="19232" y="110389" zmin="-6688" zmax="-6188"/>
+		<add x="16203" y="110401" zmin="-6688" zmax="-6188"/>
+		<add x="16203" y="108861" zmin="-6688" zmax="-6188"/>
+	</territory>
+	<spawn territory="core_cube" count="1" respawn="28800" respawn_random="7200" period_of_day="none">
+		<point x="17726" y="108915" z="-6472" h="0"/>
+		<npc id="29006"><!--Ядро-->
+			<minions spawn_by_territory="core_cube">
+				<minion npc_id="29011" count="9" respawn="360"/>	<!--Susceptor-->
+				<minion npc_id="29008" count="3" respawn="360"/>	<!--Doom Wraith-->
+				<minion npc_id="29007" count="10" respawn="360"/>	<!--Death Knight-->
+			</minions>
+		</npc>
+	</spawn>
+	<spawn name="Orfen" count="1" respawn="28800" respawn_random="14400">
+		<point x="64418" y="29467" z="-3792" h="21344"/>
+		<npc id="29014"/><!-- Orfen -->
+	</spawn>
+	<spawn name="Zaken" count="1" respawn="28800" respawn_random="21600">
+		<point x="42681" y="207520" z="-3752" h="0"/>
+		<npc id="29022"/><!--Zaken-->
+	</spawn>
+	<spawn name="Anakim" count="1" respawn_pattern="00 19 * * mon,thu">
+		<point x="-6680" y="19112" z="-5495" h="21344"/>
+		<npc id="25286"/><!-- Anakim -->
+	</spawn>
+	<spawn name="Lilith" count="1" respawn_pattern="00 19 * * tue,fri">
+		<point x="185048" y="-8920" z="-5493" h="21344"/>
+		<npc id="25283"/><!-- Lilith -->
+	</spawn>
+	<spawn name="Antharas" count="1" respawn_pattern="00 23 * * wed">
+		<point x="125782" y="126717" z="-3952" h="48994" />
+		<npc id="29068"/><!--Antharas - (Land Dragon)-->
+	</spawn>
+</list>

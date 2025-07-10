@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "special_craft.dtd">
+<list>
+	<!-- Package: Sirra's Blade (Sealed) -->
+	<item product1Id="93801" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2000">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Sword of Ipos (Sealed) -->
+	<item product1Id="93802" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2001">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Barakiel's Axe (Sealed) -->
+	<item product1Id="93803" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2002">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Behemoth' Tuning Fork (Sealed) -->
+	<item product1Id="93804" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2003">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Naga's Storm (Sealed) -->
+	<item product1Id="93805" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2004">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Tiphon's Spear (Sealed) -->
+	<item product1Id="93806" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2005">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Shyeed's Bow (Sealed) -->
+	<item product1Id="93807" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2006">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Sobekk's Hurricane (Sealed) -->
+	<item product1Id="93808" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2007">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Themis' Tongue (Sealed) -->
+	<item product1Id="93809" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2008">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Cabrio's Hand (Sealed) -->
+	<item product1Id="93810" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2009">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Daimon Crystal (Sealed) -->
+	<item product1Id="93811" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2010">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Tallum Blade*Damascus (Sealed) -->
+	<item product1Id="93812" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2011">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: ?clair Bijou (Sealed) -->
+	<item product1Id="93813" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2012">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Durendal (Sealed) -->
+	<item product1Id="93814" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2013">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Zephyrus (Sealed) -->
+	<item product1Id="95760" product1Count="1" product1Chance="15.0" product2Id="92314" product2Count="10" product2Chance="85.0" index="2014">
+		<ingredient id="92314" count="63" />
+	</item>
+	<!-- Package: Excuro's Staff (Sealed) -->
+	<item product1Id="96735" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2015">
+		<ingredient id="95482" count="1" />	<!-- Recipe: Cruma Tower Purge Equipment -->
+		<ingredient id="92477" count="174" />	<!-- Wood -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Torfe's Claw (Sealed) -->
+	<item product1Id="96736" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2016">
+		<ingredient id="95482" count="1" />	<!-- Recipe: Cruma Tower Purge Equipment -->
+		<ingredient id="92479" count="174" />	<!-- Metallograph -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Giants' Club (Sealed) -->
+	<item product1Id="96737" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2017">
+		<ingredient id="95483" count="1" />	<!-- Recipe: Silent Valley Purge Equipment -->
+		<ingredient id="92477" count="174" />	<!-- Wood -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Ancient Rapier (Sealed) -->
+	<item product1Id="96738" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2018">
+		<ingredient id="95483" count="1" />	<!-- Recipe: Silent Valley Purge Equipment -->
+		<ingredient id="92476" count="174" />	<!-- Metal Ingot -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Guardian Messenger's Spear (Sealed) -->
+	<item product1Id="96739" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2019">
+		<ingredient id="95484" count="1" />	<!-- Recipe: Tower of Insolence Purge Equipment -->
+		<ingredient id="92477" count="174" />	<!-- Wood -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Sealed Angel's Hammer (Sealed) -->
+	<item product1Id="96740" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2020">
+		<ingredient id="95484" count="1" />	<!-- Recipe: Tower of Insolence Purge Equipment -->
+		<ingredient id="92476" count="174" />	<!-- Metal Ingot -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Lizardman Shaman's Staff (Sealed) -->
+	<item product1Id="96741" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2021">
+		<ingredient id="95485" count="1" />	<!-- Recipe: Plains of the Lizardmen Purge Equipment -->
+		<ingredient id="92477" count="174" />	<!-- Wood -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Lizard Slayer (Sealed) -->
+	<item product1Id="96742" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2022">
+		<ingredient id="95485" count="1" />	<!-- Recipe: Plains of the Lizardmen Purge Equipment -->
+		<ingredient id="92479" count="174" />	<!-- Metallograph -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Deadman's Dagger (Sealed) -->
+	<item product1Id="96743" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2023">
+		<ingredient id="95486" count="1" />	<!-- Recipe: Dragon Valley Purge Equipment -->
+		<ingredient id="92476" count="174" />	<!-- Metal Ingot -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Dragon Bone Blade (Sealed) -->
+	<item product1Id="96744" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2024">
+		<ingredient id="95486" count="1" />	<!-- Recipe: Dragon Valley Purge Equipment -->
+		<ingredient id="92479" count="174" />	<!-- Metallograph -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Berserker's Sword (Sealed) -->
+	<item product1Id="96745" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2025">
+		<ingredient id="95487" count="1" />	<!-- Recipe: Sel Mahum Base Purge Equipment -->
+		<ingredient id="92476" count="174" />	<!-- Metal Ingot -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Sel Mahum Sniper (Sealed) -->
+	<item product1Id="96746" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2026">
+		<ingredient id="95487" count="1" />	<!-- Recipe: Sel Mahum Base Purge Equipment -->
+		<ingredient id="92477" count="174" />	<!-- Wood -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Turek Orc Prefect's Dual Swords (Sealed) -->
+	<item product1Id="96747" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2027">
+		<ingredient id="95488" count="1" />	<!-- Recipe: Orc Barracks Purge Equipment -->
+		<ingredient id="92476" count="174" />	<!-- Metal Ingot -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Butcher's Long Sword (Sealed) -->
+	<item product1Id="96748" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2028">
+		<ingredient id="95488" count="1" />	<!-- Recipe: Orc Barracks Purge Equipment -->
+		<ingredient id="92479" count="174" />	<!-- Metallograph -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Giant's One-handed Axe (Sealed) -->
+	<item product1Id="96749" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2029">
+		<ingredient id="96727" count="1" />	<!-- Recipe: Giant's Cave Purge Equipment -->
+		<ingredient id="92476" count="174" />	<!-- Metal Ingot -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Giant's Two-handed Staff (Sealed) -->
+	<item product1Id="96750" product1Count="1" product1Chance="20.0" product2Id="90907" product2Count="44" product2Chance="80.0" index="2030">
+		<ingredient id="96727" count="1" />	<!-- Recipe: Giant's Cave Purge Equipment -->
+		<ingredient id="92477" count="174" />	<!-- Wood -->
+		<ingredient id="95481" count="1" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="1100000" />	<!-- Adena -->
+	</item>
+	<!-- Package: Frost Lord's Sword (Sealed) -->
+	<item product1Id="95823" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2031">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Two-handed Sword (Sealed) -->
+	<item product1Id="95824" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2032">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Axe (Sealed) -->
+	<item product1Id="95825" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2033">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Dagger (Sealed) -->
+	<item product1Id="95826" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2034">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Spear (Sealed) -->
+	<item product1Id="95827" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2035">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Bow (Sealed) -->
+	<item product1Id="95828" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2036">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Gloves (Sealed) -->
+	<item product1Id="95829" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2037">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Magic Blunt Weapon (Sealed) -->
+	<item product1Id="95830" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2038">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Staff (Sealed) -->
+	<item product1Id="95831" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2039">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Ancient Sword (Sealed) -->
+	<item product1Id="95832" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2040">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Rapier (Sealed) -->
+	<item product1Id="95833" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2041">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Gun (Sealed) -->
+	<item product1Id="95834" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2042">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Frost Lord's Dual Swords (Sealed) -->
+	<item product1Id="95835" product1Count="1" product1Chance="5.5" product2Id="95782" product2Count="85" product2Chance="94.5" index="2043">
+		<ingredient id="95781" count="1" />	<!-- Black Frozen Core -->
+		<ingredient id="57" count="60000000" />	<!-- Adena -->
+		<ingredient id="95782" count="1700" />	<!-- Frost Lord's Weapon Crystal -->
+	</item>
+	<!-- Package: Armor of Nightmare (Sealed) -->
+	<item product1Id="93815" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2044">
+		<ingredient id="92314" count="28" />	<!-- Giran Seal -->
+	</item>
+	<!-- Package: Helm of Nightmare (Heavy) (Sealed) -->
+	<item product1Id="93816" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2045">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Gauntlets of Nightmare (Heavy) (Sealed) -->
+	<item product1Id="93817" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2046">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Boots of Nightmare (Heavy) (Sealed) -->
+	<item product1Id="93818" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2047">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Plate Armor (Sealed) -->
+	<item product1Id="93819" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2048">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Circlet (Heavy) (Sealed) -->
+	<item product1Id="93820" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2049">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Gauntlets (Heavy) (Sealed) -->
+	<item product1Id="93821" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2050">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Boots (Heavy) (Sealed) -->
+	<item product1Id="93822" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2051">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Leather Armor of Nightmare (Sealed) -->
+	<item product1Id="93823" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2052">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Helm of Nightmare (Light) (Sealed) -->
+	<item product1Id="93824" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2053">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Gauntlets of Nightmare (Light) (Sealed) -->
+	<item product1Id="93825" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2054">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Boots of Nightmare (Light) (Sealed) -->
+	<item product1Id="93826" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2055">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Leather Armor (Sealed) -->
+	<item product1Id="93827" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2056">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Circlet (Light) (Sealed) -->
+	<item product1Id="93828" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2057">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Gauntlets (Light) (Sealed) -->
+	<item product1Id="93829" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2058">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Boots (Light) (Sealed) -->
+	<item product1Id="93830" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2059">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Robe of Nightmare (Sealed) -->
+	<item product1Id="93831" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2060">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Helm of Nightmare (Robe) (Sealed) -->
+	<item product1Id="93832" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2061">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Gauntlets of Nightmare (Robe) (Sealed) -->
+	<item product1Id="93833" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2062">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Boots of Nightmare (Robe) (Sealed) -->
+	<item product1Id="93834" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2063">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Robe (Sealed) -->
+	<item product1Id="93835" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2064">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Circlet (Robe) (Sealed) -->
+	<item product1Id="93836" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2065">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Gauntlets (Robe) (Sealed) -->
+	<item product1Id="93837" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2066">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Boots (Robe) (Sealed) -->
+	<item product1Id="93838" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2067">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Package: Majestic Sigil (Sealed) -->
+	<item product1Id="93947" product1Count="1" product1Chance="15" product2Id="92314" product2Count="5" product2Chance="85" index="2068">
+		<ingredient id="92314" count="28" />
+	</item>
+	<!-- Sealed Master's Book: Might -->
+	<item product1Id="95517" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2069">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Shield -->
+	<item product1Id="95518" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2070">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Empower -->
+	<item product1Id="95533" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2071">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Magic Barrier -->
+	<item product1Id="95534" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2072">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Focus -->
+	<item product1Id="95535" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2073">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Death Whisper -->
+	<item product1Id="95536" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2074">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Wind Walk -->
+	<item product1Id="95537" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2075">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Haste -->
+	<item product1Id="95538" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2076">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Acumen -->
+	<item product1Id="95539" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2077">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Berserker Spirit -->
+	<item product1Id="95769" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2078">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="5800000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Clarity -->
+	<item product1Id="95770" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2079">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Master's Book: Wild Magic -->
+	<item product1Id="95771" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2080">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Sealed Spellbook: Knight's Help -->
+	<item product1Id="95515" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2081">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Knight's Help -->
+	<item product1Id="93871" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2082">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Masterpiece Shield -->
+	<item product1Id="96274" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2083">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Masterpiece Shield -->
+	<item product1Id="96273" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2084">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Amazing Spike Thrust Mastery -->
+	<item product1Id="95516" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2085">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Amazing Spike Thrust Mastery -->
+	<item product1Id="94134" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2086">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Amazing Thunder Storm Mastery -->
+	<item product1Id="95512" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2087">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Amazing Thunder Storm Mastery -->
+	<item product1Id="93867" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2088">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Fast Run Lv. 3 -->
+	<item product1Id="96673" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2089">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Fast Run Lv. 3 -->
+	<item product1Id="96661" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2090">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Buff Thief -->
+	<item product1Id="95523" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2091">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Buff Thief -->
+	<item product1Id="94141" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2092">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Dark Sense -->
+	<item product1Id="95522" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2093">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Dark Sense -->
+	<item product1Id="94140" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2094">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Esprit -->
+	<item product1Id="95521" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2095">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Esprit -->
+	<item product1Id="94139" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2096">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Pain of Sagittarius -->
+	<item product1Id="95520" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2097">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Pain of Sagittarius -->
+	<item product1Id="94138" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2098">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Wild Beat -->
+	<item product1Id="95526" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2099">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Wild Beat -->
+	<item product1Id="94321" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2100">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Crazy Waltz -->
+	<item product1Id="95527" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2101">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Crazy Waltz -->
+	<item product1Id="94322" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2102">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Frantic Pace -->
+	<item product1Id="95528" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2103">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Frantic Pace -->
+	<item product1Id="94323" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2104">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Death Guard -->
+	<item product1Id="95508" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2105">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Death Guard -->
+	<item product1Id="93388" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2106">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Drain Magic Energy -->
+	<item product1Id="95511" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2107">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Drain Magic Energy -->
+	<item product1Id="93633" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2108">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Bone Cage -->
+	<item product1Id="95509" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2109">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Bone Cage -->
+	<item product1Id="93392" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2110">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Pa'agrio's Medicine -->
+	<item product1Id="95553" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2111">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Pa'agrio's Medicine -->
+	<item product1Id="94669" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2112">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Chant of Healing -->
+	<item product1Id="95560" product1Count="1" product1Chance="30" product2Id="90045" product2Count="2" product2Chance="70" index="2113">
+		<ingredient id="95583" count="1" />	<!-- Hardin's Notes - Page 1 -->
+		<ingredient id="92480" count="100" />	<!-- Leather -->
+		<ingredient id="95481" count="4" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="2900000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Chant of Healing -->
+	<item product1Id="94676" product1Count="1" product1Chance="50" product2Id="92314" product2Count="11" product2Chance="50" index="2114">
+		<ingredient id="92314" count="56" />
+	</item>
+	<!-- Sealed Spellbook: Knight Assault -->
+	<item product1Id="96278" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2115">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Knight Assault -->
+	<item product1Id="96277" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2116">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Knight Power -->
+	<item product1Id="96276" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2117">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Knight Power -->
+	<item product1Id="96275" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2118">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Shield Throwing -->
+	<item product1Id="96282" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2119">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Shield Throwing -->
+	<item product1Id="96281" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2120">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Chain Strike (Shock) -->
+	<item product1Id="96280" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2121">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Chain Strike (Shock) -->
+	<item product1Id="96279" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2122">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Golden Stone -->
+	<item product1Id="95865" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2123">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Golden Stone -->
+	<item product1Id="95857" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2124">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Life Gain -->
+	<item product1Id="95868" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2125">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Life Gain -->
+	<item product1Id="95860" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2126">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Crushing Leap -->
+	<item product1Id="95866" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2127">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Crushing Leap -->
+	<item product1Id="95858" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2128">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Adena Stun -->
+	<item product1Id="95867" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2129">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Adena Stun -->
+	<item product1Id="95859" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2130">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Advanced Cleanse -->
+	<item product1Id="96053" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2131">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Advanced Cleanse -->
+	<item product1Id="96039" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2132">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Book of Light -->
+	<item product1Id="95500" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2133">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Book of Light -->
+	<item product1Id="91944" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2134">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Book of Shadows -->
+	<item product1Id="95501" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2135">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Book of Shadows -->
+	<item product1Id="91945" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2136">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Crystal of Light -->
+	<item product1Id="95498" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2137">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Crystal of Light -->
+	<item product1Id="91942" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2138">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Crystal of Shadows -->
+	<item product1Id="95499" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2139">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Crystal of Shadows -->
+	<item product1Id="91943" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2140">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Rogue Mastery -->
+	<item product1Id="96676" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2141">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Rogue Mastery -->
+	<item product1Id="96664" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2142">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Shadow Assault -->
+	<item product1Id="96675" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2143">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Shadow Assault -->
+	<item product1Id="96663" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2144">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Fatal Accuracy -->
+	<item product1Id="96674" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2145">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Fatal Accuracy -->
+	<item product1Id="96662" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2146">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Flying Dagger -->
+	<item product1Id="95561" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2147">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Flying Dagger -->
+	<item product1Id="94806" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2148">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Sword Symphony -->
+	<item product1Id="95524" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2149">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Sword Symphony -->
+	<item product1Id="94319" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2150">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Intoxicating Dance -->
+	<item product1Id="95525" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2151">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Intoxicating Dance -->
+	<item product1Id="94320" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2152">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Time Burst Lv. 2 -->
+	<item product1Id="95358" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2153">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Time Burst Lv. 2 -->
+	<item product1Id="95357" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2154">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Elemental Spirit Lv. 3 -->
+	<item product1Id="95364" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2155">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Elemental Spirit Lv. 3 -->
+	<item product1Id="95363" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2156">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Elemental Care Lv. 2 -->
+	<item product1Id="95655" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2157">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Elemental Care Lv. 2 -->
+	<item product1Id="95654" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2158">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Elemental Wind Lv. 2 -->
+	<item product1Id="95360" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2159">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Elemental Wind Lv. 2 -->
+	<item product1Id="95359" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2160">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Sacred Power -->
+	<item product1Id="96061" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2161">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Sacred Power -->
+	<item product1Id="96047" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2162">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Divine Recovery -->
+	<item product1Id="96060" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2163">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Divine Recovery -->
+	<item product1Id="96046" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2164">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Unleashing -->
+	<item product1Id="96063" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2165">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Unleashing -->
+	<item product1Id="96050" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2166">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Eva's Power -->
+	<item product1Id="96056" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2167">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Eva's Power -->
+	<item product1Id="96042" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2168">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Shillien's Power -->
+	<item product1Id="96059" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2169">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Shillien's Power -->
+	<item product1Id="96045" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2170">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Improved Resilience -->
+	<item product1Id="96062" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2171">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Improved Resilience -->
+	<item product1Id="96048" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2172">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Holy Buster -->
+	<item product1Id="96064" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2173">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Holy Buster -->
+	<item product1Id="96049" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2174">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Burning Assault -->
+	<item product1Id="95549" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2175">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Burning Assault -->
+	<item product1Id="94506" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2176">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Seal of Infection -->
+	<item product1Id="95556" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2177">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Seal of Infection -->
+	<item product1Id="94672" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2178">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Cold Flames -->
+	<item product1Id="95559" product1Count="1" product1Chance="25" product2Id="90045" product2Count="8" product2Chance="75" index="2179">
+		<ingredient id="95584" count="1" />	<!-- Hardin's Notes - Page 2 -->
+		<ingredient id="92481" count="100" />	<!-- Cloth -->
+		<ingredient id="90045" count="10" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="12" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Cold Flames -->
+	<item product1Id="94675" product1Count="1" product1Chance="50" product2Id="92314" product2Count="22" product2Chance="50" index="2180">
+		<ingredient id="92314" count="111" />
+	</item>
+	<!-- Sealed Spellbook: Lunatic Crusher -->
+	<item product1Id="96608" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2181">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Lunatic Crusher -->
+	<item product1Id="96607" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2182">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Shield of Security -->
+	<item product1Id="96606" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2183">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Shield of Security -->
+	<item product1Id="96605" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2184">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Ultimate Defense Lv. 3 -->
+	<item product1Id="96288" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2185">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Ultimate Defense Lv. 3 -->
+	<item product1Id="96287" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2186">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Shillien's Curse -->
+	<item product1Id="96612" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2187">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Shillien's Curse -->
+	<item product1Id="96611" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2188">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Eva's Care -->
+	<item product1Id="96610" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2189">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Eva's Care -->
+	<item product1Id="96609" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2190">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Titanic Sweep -->
+	<item product1Id="95543" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2191">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Titanic Sweep -->
+	<item product1Id="94500" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2192">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Titanic Break -->
+	<item product1Id="95544" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2193">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Titanic Break -->
+	<item product1Id="94501" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2194">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Life Force Harmony -->
+	<item product1Id="95540" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2195">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Life Force Harmony -->
+	<item product1Id="94497" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2196">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Burning Strike -->
+	<item product1Id="95548" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2197">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Burning Strike -->
+	<item product1Id="94505" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2198">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Armor Break -->
+	<item product1Id="95550" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2199">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Armor Break -->
+	<item product1Id="94507" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2200">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Rabbit Spirit Totem -->
+	<item product1Id="95546" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2201">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Rabbit Spirit Totem -->
+	<item product1Id="94503" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2202">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Ogre Spirit Totem -->
+	<item product1Id="95545" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2203">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Ogre Spirit Totem -->
+	<item product1Id="94502" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2204">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Puma Spirit Totem -->
+	<item product1Id="95547" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2205">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Puma Spirit Totem -->
+	<item product1Id="94504" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2206">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Mechanical Masterpiece -->
+	<item product1Id="95870" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2207">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Mechanical Masterpiece -->
+	<item product1Id="95862" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2208">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Balanced Body -->
+	<item product1Id="96052" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2209">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Balanced Body -->
+	<item product1Id="96038" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2210">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Blacksmith's Attack -->
+	<item product1Id="95871" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2211">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Blacksmith's Attack -->
+	<item product1Id="95863" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2212">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Fortune Time -->
+	<item product1Id="95864" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2213">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Fortune Time -->
+	<item product1Id="95856" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2214">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Lightning Storm -->
+	<item product1Id="95506" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2215">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Lightning Storm -->
+	<item product1Id="93386" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2216">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Burning Field -->
+	<item product1Id="95504" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2217">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Burning Field -->
+	<item product1Id="93384" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2218">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Dark Blow -->
+	<item product1Id="96678" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2219">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Dark Blow -->
+	<item product1Id="96666" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2220">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Reversed Pull -->
+	<item product1Id="96679" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2221">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Reversed Pull -->
+	<item product1Id="96667" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2222">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Synchro Freedom -->
+	<item product1Id="96680" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2223">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Synchro Freedom -->
+	<item product1Id="96668" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2224">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Ethereal Blood -->
+	<item product1Id="96681" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2225">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Ethereal Blood -->
+	<item product1Id="96669" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2226">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Frozen Field -->
+	<item product1Id="95505" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2227">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Frozen Field -->
+	<item product1Id="93385" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2228">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Devour -->
+	<item product1Id="95519" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2229">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Devour -->
+	<item product1Id="94137" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2230">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Hellfire -->
+	<item product1Id="95510" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2231">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Hellfire -->
+	<item product1Id="93631" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2232">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Extra Hit -->
+	<item product1Id="95640" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2233">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Extra Hit -->
+	<item product1Id="95356" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2234">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Elemental Spirit Lv. 4 -->
+	<item product1Id="95366" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2235">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Elemental Spirit Lv. 4 -->
+	<item product1Id="95365" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2236">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Elemental Changing -->
+	<item product1Id="95353" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2237">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Elemental Changing -->
+	<item product1Id="95352" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2238">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Elemental Burst -->
+	<item product1Id="95513" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2239">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Elemental Burst -->
+	<item product1Id="93869" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2240">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Ethereal Strike -->
+	<item product1Id="95514" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2241">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Ethereal Strike -->
+	<item product1Id="93870" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2242">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Nemesis -->
+	<item product1Id="96058" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2243">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Nemesis -->
+	<item product1Id="96044" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2244">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Eva's Nocturne -->
+	<item product1Id="96055" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2245">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Eva's Nocturne -->
+	<item product1Id="96041" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2246">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Debuff Master -->
+	<item product1Id="95554" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2247">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Debuff Master -->
+	<item product1Id="94670" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2248">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Blood Bond -->
+	<item product1Id="95558" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2249">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Blood Bond -->
+	<item product1Id="94674" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2250">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Flame Burst -->
+	<item product1Id="95555" product1Count="1" product1Chance="20" product2Id="90045" product2Count="32" product2Chance="80" index="2251">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="40" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="18" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="26000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Flame Burst -->
+	<item product1Id="94671" product1Count="1" product1Chance="25" product2Id="92314" product2Count="58" product2Chance="75" index="2252">
+		<ingredient id="92314" count="294" />
+	</item>
+	<!-- Sealed Spellbook: Power of Life -->
+	<item product1Id="96284" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2253">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Power of Life -->
+	<item product1Id="96283" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2254">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Toughness -->
+	<item product1Id="96286" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2255">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Toughness -->
+	<item product1Id="96285" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2256">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Titanic Weapon -->
+	<item product1Id="95542" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2257">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Titanic Weapon -->
+	<item product1Id="94499" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2258">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Seclusion -->
+	<item product1Id="96677" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2259">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Seclusion -->
+	<item product1Id="96665" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2260">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Dance of Warrior -->
+	<item product1Id="95531" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2261">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Dance of Warrior -->
+	<item product1Id="94326" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2262">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Dance of Fire -->
+	<item product1Id="95532" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2263">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Dance of Fire -->
+	<item product1Id="94327" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2264">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Dance of Fury -->
+	<item product1Id="95568" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2265">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Dance of Fury -->
+	<item product1Id="95349" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2266">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Song of Earth -->
+	<item product1Id="95529" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2267">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Song of Earth -->
+	<item product1Id="94324" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2268">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Song of Wind -->
+	<item product1Id="95567" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2269">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Song of Wind -->
+	<item product1Id="95348" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2270">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Song of Hunter -->
+	<item product1Id="95530" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2271">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Song of Hunter -->
+	<item product1Id="94325" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2272">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Goring Charge -->
+	<item product1Id="95351" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2273">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Goring Charge -->
+	<item product1Id="95350" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2274">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Treatment -->
+	<item product1Id="96054" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2275">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Treatment -->
+	<item product1Id="96040" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2276">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Sensation -->
+	<item product1Id="96051" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2277">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Sensation -->
+	<item product1Id="96037" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2278">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Duress -->
+	<item product1Id="96057" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2279">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Duress -->
+	<item product1Id="96043" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2280">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Sealed Spellbook: Divine Beam -->
+	<item product1Id="95503" product1Count="1" product1Chance="15" product2Id="90045" product2Count="64" product2Chance="85" index="2281">
+		<ingredient id="95585" count="1" />	<!-- Hardin's Notes - Page 3 -->
+		<ingredient id="92478" count="100" />	<!-- Varnish -->
+		<ingredient id="90045" count="80" />	<!-- Magical Tablet -->
+		<ingredient id="95481" count="36" />	<!-- Aden Purge Crystal -->
+		<ingredient id="57" count="86000000" />	<!-- Adena -->
+	</item>
+	<!-- Spellbook: Divine Beam -->
+	<item product1Id="93103" product1Count="1" product1Chance="25" product2Id="92314" product2Count="88" product2Chance="75" index="2282">
+		<ingredient id="92314" count="441" />
+	</item>
+	<!-- Talisman of Hellbound Lv. 1 -->
+	<item product1Id="94706" product1Count="1" product1Chance="30" product2Id="94717" product2Count="20" product2Chance="70" index="2283">
+		<ingredient id="94717" count="100" />	<!-- Hellbound Energy -->
+		<ingredient id="57" count="10000000" />	<!-- Adena -->
+	</item>
+	<!-- Talisman of Hellbound Fragment -->
+	<item product1Id="94716" product1Count="1" product1Chance="20" product2Id="94717" product2Count="10" product2Chance="80" index="2284">
+		<ingredient id="94717" count="20" />	<!-- Hellbound Energy -->
+		<ingredient id="57" count="1000000" />	<!-- Adena -->
+	</item>
+	<!-- Talisman of Hellbound Fragment -->
+	<item product1Id="94716" product1Count="2" product1Chance="100" index="2285">
+		<ingredient id="94706" count="1" />	<!-- Talisman of Hellbound Lv. 1 -->
+	</item>
+	<!-- Venir's Talisman Lv. 1 (Sealed) -->
+	<item product1Id="91077" product1Count="1" product1Chance="100" index="2286">
+		<ingredient id="57" count="1500000" />	<!-- Adena -->
+	</item>
+	<!-- Scroll: Enchant Talisman of Speed (Sealed) -->
+	<item product1Id="92402" product1Count="1" product1Chance="100" index="2287">
+		<ingredient id="57" count="2000" />	<!-- Adena -->
+	</item>
+	<!-- Scroll: Enchant Talisman of Aden (Sealed) -->
+	<item product1Id="91756" product1Count="1" product1Chance="100" index="2288">
+		<ingredient id="57" count="2000" />	<!-- Adena -->
+	</item>
+	<!-- Scroll: Enchant Talisman of Eva (Sealed) -->
+	<item product1Id="92017" product1Count="1" product1Chance="100" index="2289">
+		<ingredient id="57" count="2000" />	<!-- Adena -->
+	</item>
+	<!-- Scroll: Enchant Talisman of Authority (Sealed) -->
+	<item product1Id="93329" product1Count="1" product1Chance="100" index="2290">
+		<ingredient id="57" count="2000" />	<!-- Adena -->
+	</item>
+	<!-- Scroll: Enchant Dragon Belt (Sealed) -->
+	<item product1Id="91863" product1Count="1" product1Chance="100" index="2291">
+		<ingredient id="57" count="2000" />	<!-- Adena -->
+	</item>
+	<!-- Scroll: Enchant Circlet of Hero (Sealed) -->
+	<item product1Id="94169" product1Count="1" product1Chance="100" index="2292">
+		<ingredient id="57" count="2000" />	<!-- Adena -->
+	</item>
+	<!-- Scroll: Enchant Agathion (Sealed) -->
+	<item product1Id="93133" product1Count="1" product1Chance="100" index="2293">
+		<ingredient id="57" count="2000" />	<!-- Adena -->
+	</item>
+	<!-- +4 Blessed Dragon Belt Pack (Sealed) -->
+	<item product1Id="94627" product1Count="1" product1Chance="100" index="2294">
+		<ingredient id="91862" count="2" enchantLevel="4" />	<!-- +4 Dragon Belt -->
+	</item>
+	<!-- +5 Blessed Dragon Belt Pack (Sealed) -->
+	<item product1Id="94628" product1Count="1" product1Chance="100" index="2295">
+		<ingredient id="91862" count="2" enchantLevel="5" />	<!-- +5 Dragon Belt -->
+	</item>
+	<!-- +6 Blessed Dragon Belt Pack (Sealed) -->
+	<item product1Id="94629" product1Count="1" product1Chance="100" index="2296">
+		<ingredient id="91862" count="2" enchantLevel="6" />	<!-- +6 Dragon Belt -->
+	</item>
+	<!-- +7 Blessed Dragon Belt Pack (Sealed) -->
+	<item product1Id="94630" product1Count="1" product1Chance="100" index="2297">
+		<ingredient id="91862" count="2" enchantLevel="7" />	<!-- +7 Dragon Belt -->
+	</item>
+	<!-- +8 Blessed Dragon Belt Pack (Sealed) -->
+	<item product1Id="94631" product1Count="1" product1Chance="100" index="2298">
+		<ingredient id="91862" count="2" enchantLevel="8" />	<!-- +8 Dragon Belt -->
+	</item>
+	<!-- +9 Blessed Dragon Belt Pack (Sealed) -->
+	<item product1Id="94632" product1Count="1" product1Chance="100" index="2299">
+		<ingredient id="91862" count="2" enchantLevel="9" />	<!-- +9 Dragon Belt -->
+	</item>
+	<!-- +10 Blessed Dragon Belt Pack (Sealed) -->
+	<item product1Id="94633" product1Count="1" product1Chance="100" index="2300">
+		<ingredient id="91862" count="2" enchantLevel="10" />	<!-- +10 Dragon Belt -->
+	</item>
+</list>

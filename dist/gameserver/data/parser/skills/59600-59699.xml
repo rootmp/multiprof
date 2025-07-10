@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="59633" levels="1" name="+6 Fire Dragon Pendant Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59638" levels="1" name="Blessing Chest">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59639" levels="1" name="Aden Supply Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59640" levels="1" name="Kamael's Gift">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59642" levels="1" name="Sealed Samurai Long Sword Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59643" levels="1" name="Sealed Mace of Underworld Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59644" levels="1" name="Sealed Demon's Staff Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59645" levels="1" name="Sealed Crystal Dagger Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59646" levels="1" name="Sealed Eminence Bow Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59647" levels="1" name="Sealed Orcish Poleaxe Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59648" levels="1" name="Sealed Katana*Katana Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59649" levels="1" name="Sealed Yaksa Mace Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59650" levels="1" name="Sealed Berserker Blade Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59651" levels="1" name="Sealed Great Pata Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59652" levels="1" name="Sealed Admiral's Estoc Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59653" levels="1" name="Sealed Saber Tooth Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59654" levels="1" name="Sealed Samurai Long Sword Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59655" levels="1" name="Sealed Mace of Underworld Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59656" levels="1" name="Sealed Demon's Staff Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59657" levels="1" name="Sealed Crystal Dagger Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59658" levels="1" name="Sealed Eminence Bow Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59659" levels="1" name="Sealed Orcish Poleaxe Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59660" levels="1" name="Sealed Katana*Katana Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59661" levels="1" name="Sealed Yaksa Mace Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59662" levels="1" name="Sealed Berserker Blade Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59663" levels="1" name="Sealed Great Pata Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59664" levels="1" name="Sealed Admiral's Estoc Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59665" levels="1" name="Sealed Saber Tooth Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59666" levels="1" name="Sealed Samurai Long Sword Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59667" levels="1" name="Sealed Mace of Underworld Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59668" levels="1" name="Sealed Demon's Staff Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59669" levels="1" name="Sealed Crystal Dagger Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59670" levels="1" name="Sealed Eminence Bow Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59671" levels="1" name="Sealed Orcish Poleaxe Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59672" levels="1" name="Sealed Katana*Katana Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59673" levels="1" name="Sealed Yaksa Mace Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59674" levels="1" name="Sealed Berserker Blade Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59675" levels="1" name="Sealed Great Pata Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59676" levels="1" name="Sealed Admiral's Estoc Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59677" levels="1" name="Sealed Saber Tooth Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="95687"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="100">
+				<item id="92990" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93141" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93142" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93317" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93318" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93735" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93736" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93268" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93269" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="91767" min_count="3" max_count="3"/> 
+			</group>
+			<group chance="100">
+				<item id="92020" min_count="3" max_count="3"/> 
+			</group>
+			<group chance="100">
+				<item id="93685" min_count="3" max_count="3"/> 
+			</group>
+			<group chance="100">
+				<item id="93259" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="94269" min_count="50" max_count="50"/> 
+			</group>
+			<group chance="100">
+				<item id="94271" min_count="50" max_count="50"/> 
+			</group>
+			<group chance="100">
+				<item id="91690" min_count="1500" max_count="1500"/> 
+			</group>
+		</restoration>
+	</skill>
+	<skill id="59678" levels="1" name="Chronicle Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="94826"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="100">
+				<item id="92990" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93141" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93142" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93317" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93318" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93735" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93736" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93268" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="93269" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="91767" min_count="3" max_count="3"/> 
+			</group>
+			<group chance="100">
+				<item id="92020" min_count="3" max_count="3"/> 
+			</group>
+			<group chance="100">
+				<item id="93685" min_count="3" max_count="3"/> 
+			</group>
+			<group chance="100">
+				<item id="93259" min_count="1" max_count="1"/> 
+			</group>
+			<group chance="100">
+				<item id="94269" min_count="50" max_count="50"/> 
+			</group>
+			<group chance="100">
+				<item id="94271" min_count="50" max_count="50"/> 
+			</group>
+			<group chance="100">
+				<item id="91690" min_count="1500" max_count="1500"/> 
+			</group>
+		</restoration>
+	</skill>
+</list>

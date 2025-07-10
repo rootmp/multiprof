@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="80300" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80301" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80302" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80303" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80304" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80305" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80306" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80307" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80308" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80309" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80310" levels="1" name="Long Range Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80311" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80312" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80313" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80314" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80315" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80316" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80317" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80318" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80319" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80320" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80321" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80322" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80323" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80324" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80325" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80326" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80327" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80328" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80329" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80330" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80331" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80332" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80333" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80334" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80335" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80336" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80337" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80338" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80339" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80340" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80341" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80342" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80343" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80344" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80345" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80346" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80347" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80348" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80349" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80350" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80351" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80352" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80353" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80354" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80355" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80356" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80357" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80358" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80359" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80360" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80361" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80362" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80363" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80364" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80365" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80366" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80367" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80368" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80369" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80370" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80371" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80372" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80373" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80374" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80375" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80376" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80377" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80378" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80379" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80380" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80381" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80382" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80383" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80384" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80385" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80386" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80387" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80388" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80389" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80390" levels="1" name="Melee Damage Resistance">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80391" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80392" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80393" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80394" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80395" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80396" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80397" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80398" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="80399" levels="1" name="Skill Evasion">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

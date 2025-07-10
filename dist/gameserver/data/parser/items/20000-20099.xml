@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="20020" name="Uniform Hat - Not Available" add_name="Not Available">
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="20021" name="Assassin's Bamboo Hat - Not Available" add_name="Not Available">
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="20022" name="Ruthless Tribe Mask - Not Available" add_name="Not Available">
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="FACE"/>
+		</equip>
+	</armor>
+	<armor id="20023" name="Ribbon Hairband - Not Available" add_name="Not Available">
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="FACE"/>
+		</equip>
+	</armor>
+	<etcitem id="20033" name="My Teleport Flag">
+		<set name="freightable" value="true"/>
+		<set name="icon" value="BranchSys.icon.br_flag_of_bookmark_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+</list>

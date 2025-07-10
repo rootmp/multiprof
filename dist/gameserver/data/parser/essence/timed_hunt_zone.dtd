@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT list (field)*>
+
+	<!ELEMENT field (#PCDATA)*>
+	<!ATTLIST field
+		id CDATA #REQUIRED
+		itemId CDATA #REQUIRED
+		itemCount CDATA #REQUIRED
+		resetCycle CDATA #REQUIRED
+		minLevel CDATA #REQUIRED
+		maxLevel CDATA #REQUIRED
+		remainTimeBase CDATA #REQUIRED
+		remainTimeMax CDATA #REQUIRED
+		enterX CDATA #REQUIRED
+		enterY CDATA #REQUIRED
+		enterZ CDATA #REQUIRED
+		exitX CDATA #REQUIRED
+		exitY CDATA #REQUIRED
+		exitZ CDATA #REQUIRED
+		world CDATA #REQUIRED>

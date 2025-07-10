@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!-- Author: nexvill -->
+<list>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_1">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130136" y="114488" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_2">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130136" y="114568" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_3">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130152" y="114200" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_4">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130152" y="114376" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_5">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130168" y="114280" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_6">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130264" y="114616" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_7">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130280" y="114520" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_8">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130296" y="114424" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_9">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130312" y="114328" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_10">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130328" y="114232" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_11">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130424" y="114568" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_12">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130424" y="114664" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_13">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130440" y="114472" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_14">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130456" y="114376" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_1_15">
+		<npc id="22147" /> <!-- Cave Maiden -->
+		<point x="130488" y="114280" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_1">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130136" y="114488" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_2">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130136" y="114568" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_3">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130152" y="114200" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_4">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130152" y="114376" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_5">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130168" y="114280" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_6">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130264" y="114616" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_7">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130280" y="114520" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_8">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130296" y="114424" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_9">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130312" y="114328" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_10">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130328" y="114232" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_11">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130424" y="114568" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_12">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130424" y="114664" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_13">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130440" y="114472" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_14">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130456" y="114376" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_2_15">
+		<npc id="22148" /> <!-- Cave Keeper -->
+		<point x="130488" y="114280" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_1">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130136" y="114488" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_2">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130136" y="114568" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_3">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130152" y="114200" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_4">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130152" y="114376" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_5">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130168" y="114280" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_6">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130264" y="114616" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_7">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130280" y="114520" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_8">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130296" y="114424" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_9">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130312" y="114328" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_10">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130328" y="114232" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_11">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130424" y="114568" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_12">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130424" y="114664" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_13">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130440" y="114472" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_14">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130456" y="114376" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_variant_3_15">
+		<npc id="22149" /> <!-- Headless Knight -->
+		<point x="130488" y="114280" z="-3749" h="33481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_1">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130232" y="114472" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_2">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130232" y="114536" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_3">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130232" y="114600" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_4">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130232" y="114664" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_5">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130296" y="114472" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_6">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130296" y="114536" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_7">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130296" y="114600" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_8">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130296" y="114664" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_9">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130392" y="114472" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_10">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130392" y="114536" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_11">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130392" y="114600" z="-3766" h="32821" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_80_box_12">
+		<npc id="22150" /> <!-- Transcendent Treasure Chest -->
+		<point x="130392" y="114664" z="-3766" h="32821" />
+	</spawn>
+</list>

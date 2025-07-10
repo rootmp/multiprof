@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT list (potential|combinations|henna)*>
+
+	<!ELEMENT potential (potential_effect|potential_fee|potential_exp)*>
+
+		<!ELEMENT potential_effect EMPTY>
+		<!ATTLIST potential_effect
+			id CDATA #REQUIRED
+			slot_id CDATA #REQUIRED
+			max_skill_level CDATA #REQUIRED
+			skill_id CDATA #REQUIRED>
+
+		<!ELEMENT potential_fee (exp_count)*>
+		<!ATTLIST potential_fee
+			step CDATA #REQUIRED
+			daily_count CDATA #REQUIRED
+			item_id CDATA #REQUIRED
+			item_count CDATA #REQUIRED>
+
+			<!ELEMENT exp_count EMPTY>
+			<!ATTLIST exp_count
+				value CDATA #REQUIRED
+				chance CDATA #REQUIRED>
+
+		<!ELEMENT potential_exp EMPTY>
+		<!ATTLIST potential_exp
+			level CDATA #REQUIRED
+			exp CDATA #REQUIRED>
+
+	<!ELEMENT combinations (combination)*>
+
+		<!ELEMENT combination EMPTY>
+		<!ATTLIST combination
+			slot_one CDATA #REQUIRED
+			slot_two CDATA #REQUIRED
+			adena CDATA #REQUIRED
+			chance CDATA #REQUIRED
+			result_dye_id CDATA #REQUIRED>
+
+	<!ELEMENT henna (class|skills)*>
+	<!ATTLIST henna
+		name CDATA #REQUIRED
+		dye_id CDATA #REQUIRED
+		dye_item_id CDATA #REQUIRED
+		dye_level CDATA #REQUIRED
+		need_count CDATA #REQUIRED
+		wear_fee CDATA #REQUIRED
+		cancel_count CDATA #REQUIRED
+		cancel_fee CDATA #REQUIRED
+		wit CDATA #IMPLIED
+		str CDATA #IMPLIED
+		int CDATA #IMPLIED
+		con CDATA #IMPLIED
+		dex CDATA #IMPLIED
+		men CDATA #IMPLIED>
+
+		<!ELEMENT class (#PCDATA)>
+		<!ATTLIST class
+			id CDATA #IMPLIED
+			level CDATA #IMPLIED>
+
+		<!ELEMENT skills (skill)*>
+
+			<!ELEMENT skill (#PCDATA)>
+			<!ATTLIST skill
+				id CDATA #REQUIRED
+				level CDATA #REQUIRED>

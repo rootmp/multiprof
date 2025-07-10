@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="23173" name="Alluring Swimsuit - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+</list>

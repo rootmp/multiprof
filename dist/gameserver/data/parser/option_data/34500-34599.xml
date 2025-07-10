@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="34500">
+		<!--All received Critical Damage -5%-->
+	</option_data>
+	<option_data id="34501">
+		<!--All received Critical Damage -6%-->
+	</option_data>
+	<option_data id="34502">
+		<!--All received Critical Damage -7%-->
+	</option_data>
+	<option_data id="34503">
+		<!--All received Critical Damage -8%-->
+	</option_data>
+	<option_data id="34504">
+		<!--All received Critical Damage -9%-->
+	</option_data>
+	<option_data id="34505">
+		<!--All received Critical Damage -10%-->
+	</option_data>
+	<option_data id="34506">
+		<!--All received Critical Damage -11%-->
+	</option_data>
+	<option_data id="34507">
+		<!--All received Critical Damage -12%-->
+	</option_data>
+	<option_data id="34508">
+		<!--All received Critical Damage -15%-->
+	</option_data>
+	<option_data id="34509">
+		<!--All received Critical Rate -1%-->
+	</option_data>
+	<option_data id="34510">
+		<!--All received Critical Rate -1%-->
+	</option_data>
+	<option_data id="34511">
+		<!--All received Critical Rate -1%-->
+	</option_data>
+	<option_data id="34512">
+		<!--All received Critical Rate -1%-->
+	</option_data>
+	<option_data id="34513">
+		<!--All received Critical Rate -1%-->
+	</option_data>
+	<option_data id="34514">
+		<!--All received Critical Rate -1%-->
+	</option_data>
+	<option_data id="34515">
+		<!--All received Critical Rate -1%-->
+	</option_data>
+	<option_data id="34516">
+		<!--All received Critical Rate -1%-->
+	</option_data>
+	<option_data id="34517">
+		<!--All received Critical Rate -2%-->
+	</option_data>
+	<option_data id="34518">
+		<!--All received Critical Rate -3%-->
+	</option_data>
+	<option_data id="34519">
+		<!--All received Critical Rate -4%-->
+	</option_data>
+	<option_data id="34520">
+		<!--All received Critical Rate -5%-->
+	</option_data>
+	<option_data id="34521">
+		<!--All received Critical Rate -6%-->
+	</option_data>
+	<option_data id="34522">
+		<!--All received Critical Rate -7%-->
+	</option_data>
+	<option_data id="34523">
+		<!--All received Critical Rate -8%-->
+	</option_data>
+	<option_data id="34524">
+		<!--All received Critical Rate -9%-->
+	</option_data>
+	<option_data id="34525">
+		<!--All received Critical Rate -10%-->
+	</option_data>
+	<option_data id="34526">
+		<!--All received Critical Rate -11%-->
+	</option_data>
+	<option_data id="34527">
+		<!--All received Critical Rate -12%-->
+	</option_data>
+	<option_data id="34528">
+		<!--All received Critical Rate -15%-->
+	</option_data>
+	<option_data id="34529">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34530">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34531">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34532">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34533">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34534">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34535">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34536">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34537">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34538">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34539">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34540">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34541">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34542">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34543">
+		<!--Speed +1-->
+	</option_data>
+	<option_data id="34544">
+		<!--Speed +2-->
+	</option_data>
+	<option_data id="34545">
+		<!--Speed +2-->
+	</option_data>
+	<option_data id="34546">
+		<!--Speed +3-->
+	</option_data>
+	<option_data id="34547">
+		<!--Speed +4-->
+	</option_data>
+	<option_data id="34548">
+		<!--Speed +5-->
+	</option_data>
+	<option_data id="34549">
+		<!--Max HP +25-->
+	</option_data>
+	<option_data id="34550">
+		<!--Max HP +38-->
+	</option_data>
+	<option_data id="34551">
+		<!--Max HP +50-->
+	</option_data>
+	<option_data id="34552">
+		<!--Max HP +63-->
+	</option_data>
+	<option_data id="34553">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="34554">
+		<!--Max HP +88-->
+	</option_data>
+	<option_data id="34555">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="34556">
+		<!--Max HP +113-->
+	</option_data>
+	<option_data id="34557">
+		<!--Max HP +125-->
+	</option_data>
+	<option_data id="34558">
+		<!--Max HP +138-->
+	</option_data>
+	<option_data id="34559">
+		<!--Max HP +150-->
+	</option_data>
+	<option_data id="34560">
+		<!--Max HP +163-->
+	</option_data>
+	<option_data id="34561">
+		<!--Max HP +175-->
+	</option_data>
+	<option_data id="34562">
+		<!--Max HP +188-->
+	</option_data>
+	<option_data id="34563">
+		<!--Max HP +240-->
+	</option_data>
+	<option_data id="34564">
+		<!--Max HP +300-->
+	</option_data>
+	<option_data id="34565">
+		<!--Max HP +330-->
+	</option_data>
+	<option_data id="34566">
+		<!--Max HP +360-->
+	</option_data>
+	<option_data id="34567">
+		<!--Max HP +400-->
+	</option_data>
+	<option_data id="34568">
+		<!--Max HP +500-->
+	</option_data>
+	<option_data id="34569">
+		<!--Max MP +25-->
+	</option_data>
+	<option_data id="34570">
+		<!--Max MP +38-->
+	</option_data>
+	<option_data id="34571">
+		<!--Max MP +50-->
+	</option_data>
+	<option_data id="34572">
+		<!--Max MP +63-->
+	</option_data>
+	<option_data id="34573">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="34574">
+		<!--Max MP +88-->
+	</option_data>
+	<option_data id="34575">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="34576">
+		<!--Max MP +113-->
+	</option_data>
+	<option_data id="34577">
+		<!--Max MP +125-->
+	</option_data>
+	<option_data id="34578">
+		<!--Max MP +138-->
+	</option_data>
+	<option_data id="34579">
+		<!--Max MP +150-->
+	</option_data>
+	<option_data id="34580">
+		<!--Max MP +163-->
+	</option_data>
+	<option_data id="34581">
+		<!--Max MP +175-->
+	</option_data>
+	<option_data id="34582">
+		<!--Max MP +188-->
+	</option_data>
+	<option_data id="34583">
+		<!--Max MP +200-->
+	</option_data>
+	<option_data id="34584">
+		<!--Max MP +300-->
+	</option_data>
+	<option_data id="34585">
+		<!--Max MP +330-->
+	</option_data>
+	<option_data id="34586">
+		<!--Max MP +360-->
+	</option_data>
+	<option_data id="34587">
+		<!--Max MP +400-->
+	</option_data>
+	<option_data id="34588">
+		<!--Max MP +500-->
+	</option_data>
+	<option_data id="34589">
+		<!--Max CP +25-->
+	</option_data>
+	<option_data id="34590">
+		<!--Max CP +38-->
+	</option_data>
+	<option_data id="34591">
+		<!--Max CP +50-->
+	</option_data>
+	<option_data id="34592">
+		<!--Max CP +63-->
+	</option_data>
+	<option_data id="34593">
+		<!--Max CP +75-->
+	</option_data>
+	<option_data id="34594">
+		<!--Max CP +88-->
+	</option_data>
+	<option_data id="34595">
+		<!--Max CP +100-->
+	</option_data>
+	<option_data id="34596">
+		<!--Max CP +113-->
+	</option_data>
+	<option_data id="34597">
+		<!--Max CP +125-->
+	</option_data>
+	<option_data id="34598">
+		<!--Max CP +138-->
+	</option_data>
+	<option_data id="34599">
+		<!--Max CP +150-->
+	</option_data>
+</list>

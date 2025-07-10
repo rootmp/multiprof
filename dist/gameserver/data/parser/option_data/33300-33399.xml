@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="33300">
+	</option_data>
+	<option_data id="33301">
+	</option_data>
+	<option_data id="33302">
+	</option_data>
+	<option_data id="33303">
+	</option_data>
+	<option_data id="33304">
+	</option_data>
+	<option_data id="33305">
+	</option_data>
+	<option_data id="33306">
+	</option_data>
+	<option_data id="33307">
+	</option_data>
+	<option_data id="33308">
+	</option_data>
+	<option_data id="33309">
+	</option_data>
+	<option_data id="33310">
+	</option_data>
+	<option_data id="33311">
+	</option_data>
+	<option_data id="33312">
+	</option_data>
+	<option_data id="33313">
+	</option_data>
+	<option_data id="33314">
+	</option_data>
+	<option_data id="33315">
+	</option_data>
+	<option_data id="33316">
+	</option_data>
+	<option_data id="33317">
+	</option_data>
+	<option_data id="33318">
+	</option_data>
+	<option_data id="33319">
+	</option_data>
+	<option_data id="33320">
+	</option_data>
+	<option_data id="33321">
+	</option_data>
+	<option_data id="33322">
+	</option_data>
+	<option_data id="33323">
+	</option_data>
+	<option_data id="33324">
+	</option_data>
+	<option_data id="33325">
+		<!--Max HP/ MP +15%, Acquired XP/ SP +30%, P. Def. +11%, P./ M. Critical Damage +15%, M. Def. +6%, Received Critical Damage -10%.-->
+		<skills>
+			<skill id="54044" level="1"/>	<!-- Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33326">
+		<!--Max HP/ MP +15%, Acquired XP/ SP +30%, P. Def. +12%, P. Critical Damage +15%, M. Critical Damage +16%, M. Def. +8%, Received Critical Damage -10%.-->
+		<skills>
+			<skill id="54045" level="1"/>	<!-- +1 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33327">
+		<!--Max HP/ MP +15%, Acquired XP/ SP +30%, P. Def. +13%, P. Critical Damage +15%, M. Critical Damage +16%, M. Def. +10%, Received Critical Damage -10%.-->
+		<skills>
+			<skill id="54045" level="2"/>	<!-- +2 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33328">
+		<!--Max HP/ MP +17%, Acquired XP/ SP +30%, P. Def. +14%, P. Critical Damage +15%, M. Critical Damage +17%, M. Def. +12%, Received Critical Damage -10%.-->
+		<skills>
+			<skill id="54045" level="3"/>	<!-- +3 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33329">
+		<!--Max HP/ MP +17%, Acquired XP/ SP +30%, P. Def. +15%, P. Critical Damage +16%, M. Critical Damage +17%, M. Def. +14%, Received Critical Damage -10%.-->
+		<skills>
+			<skill id="54045" level="4"/>	<!-- +4 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33330">
+		<!--Max HP/ MP +17%, Acquired XP/ SP +30%, P. Def. +16%, P. Critical Damage +16%, M. Critical Damage +18%, M. Def. +16%, Received Critical Damage -11%.-->
+		<skills>
+			<skill id="54045" level="5"/>	<!-- +5 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33331">
+		<!--Max HP/ MP +20%, Acquired XP/ SP +30%, P. Def. +17%, P. Critical Damage +16%, M. Critical Damage +18%, M. Def. +17%, Received Critical Damage -11%, PvE Damage +2%, PvP Damage +1%.-->
+		<skills>
+			<skill id="54045" level="6"/>	<!-- +6 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33332">
+		<!--Max HP/ MP +20%, Acquired XP/ SP +30%, P. Def. +18%, P. Critical Damage +17%, M. Critical Damage +19%, M. Def. +18%, Received Critical Damage -11%, PvE Damage +3%, PvP Damage +2%.-->
+		<skills>
+			<skill id="54045" level="7"/>	<!-- +7 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33333">
+		<!--Max HP/ MP +21%, Acquired XP/ SP +30%, P. Def. +19%, P. Critical Damage +17%, M. Critical Damage +20%, M. Def. +19%, Received Critical Damage -12%, PvE Damage +5%, PvP Damage +3%.-->
+		<skills>
+			<skill id="54045" level="8"/>	<!-- +8 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33334">
+		<!--Max HP/ MP +22%, Acquired XP/ SP +30%, P. Def. +20%, P. Critical Damage +18%, M. Critical Damage +21%, M. Def. +20%, Received Critical Damage -13%, PvE Damage +7%, PvP Damage +4%.-->
+		<skills>
+			<skill id="54045" level="9"/>	<!-- +9 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33335">
+		<!--Max HP/ MP +25%, Acquired XP/ SP +30%, P. Def. +25%, P. Critical Damage +20%, M. Critical Damage +25%, M. Def. +25%, Received Critical Damage -15%, PvE Damage +10%, PvP Damage +5%.-->
+		<skills>
+			<skill id="54045" level="10"/>	<!-- +10 Special Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33336">
+		<!--Sayha's Blink: Attacks enemies, inflicting Stun and canceling their targets. Teleports you to the back.-->
+	</option_data>
+	<option_data id="33337">
+		<!--Rapid Wind: P. Def. +1000, M. Def. +1000, Speed +50 for 5 sec.-->
+	</option_data>
+	<option_data id="33338">
+		<skills>
+			<skill id="54047" level="1"/>	<!-- Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33339">
+		<!--P. Def. +5, M. Def. +5, Atk. Spd. +10, Casting Spd. +10, Max HP +100, Max MP +30-->
+		<skills>
+			<skill id="54047" level="2"/>	<!-- +1 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33340">
+		<!--P. Def. +10, M. Def. +10, Atk. Spd. +12, Casting Spd. +12, Max HP +120, Max MP +50-->
+		<skills>
+			<skill id="54047" level="3"/>	<!-- +2 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33341">
+		<!--P. Def. +15, M. Def. +20, Atk. Spd. +15, Casting Spd. +15, Max HP +150, Max MP +70-->
+		<skills>
+			<skill id="54047" level="4"/>	<!-- +3 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33342">
+		<!--P. Def. +20, M. Def. +30, Atk. Spd. +20, Casting Spd. +20, Max HP +180, Max MP +100, Acquired XP/ SP +10%.-->
+		<skills>
+			<skill id="54047" level="5"/>	<!-- +4 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33343">
+		<!--P. Atk. +50, M. Atk. +100, P. Def. +30, M. Def. +40, Atk. Spd. +25, Casting Spd. +25, Max HP +220, Max MP +130, Acquired XP/ SP +15%.-->
+		<skills>
+			<skill id="54047" level="6"/>	<!-- +5 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33344">
+		<!--P. Atk. +80, M. Atk. +150, P. Def. +40, M. Def. +60, Atk. Spd. +40, Casting Spd. +45, Max HP +260, Max MP +160, Acquired XP/ SP +20%.-->
+		<skills>
+			<skill id="54047" level="7"/>	<!-- +6 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33345">
+		<!--P. Atk. +135, M. Atk. +250, P. Def. +60, M. Def. +80, Atk. Spd. +70, Casting Spd. +75, Max HP +520, Max MP +320, Acquired XP/ SP +50%.-->
+		<skills>
+			<skill id="54047" level="8"/>	<!-- +7 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33346">
+		<!--P. Atk. +180, M. Atk. +360, P. Def. +80, M. Def. +120, Atk. Spd. +80, Casting Spd. +95, Max HP +640, Max MP +360, Acquired XP/ SP +50%.-->
+		<skills>
+			<skill id="54047" level="9"/>	<!-- +8 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33347">
+		<!--P. Atk. +225, M. Atk. +420, P. Def. +120, M. Def. +160, Atk. Spd. +90, Casting Spd. +110, Max HP +910, Max MP +430, Acquired XP/ SP +50%.-->
+		<skills>
+			<skill id="54047" level="10"/>	<!-- +9 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33348">
+		<!--P. Atk. +270, M. Atk. +490, P. Def. +160, M. Def. +200, Atk. Spd. +100, Casting Spd. +125, Max HP +1120, Max MP +530, Acquired XP/ SP +50%.-->
+		<skills>
+			<skill id="54047" level="11"/>	<!-- +10 Talisman of Aden -->
+		</skills>
+	</option_data>
+	<option_data id="33349">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33350">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33351">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33352">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33353">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33354">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33355">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33356">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33357">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33358">
+		<!--Saiha's Grace is restored when using skills.-->
+	</option_data>
+	<option_data id="33359">
+		<!--Dragon Belt. Weight Limit +1000, DEX/ WIT +1.-->
+		<skills>
+			<skill id="54082" level="1"/>	<!-- Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33360">
+		<!--Dragon Belt. Weight Limit +2000, Inventory Slots +2, DEX/ WIT/ CON/ MEN +1-->
+		<skills>
+			<skill id="54082" level="2"/>	<!-- +1 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33361">
+		<!--Dragon Belt. Weight Limit +3000, Inventory Slots +4, DEX/ WIT/ CON/ MEN/ STR/ INT +1-->
+		<skills>
+			<skill id="54082" level="3"/>	<!-- +2 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33362">
+		<!--Dragon Belt. Weight Limit +4000, Inventory Slots +6, DEX/ WIT/ CON/ MEN/ STR/ INT +2.-->
+		<skills>
+			<skill id="54082" level="4"/>	<!-- +3 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33363">
+		<!--Dragon Belt. Weight Limit +5000, Inventory Slots +6, Max HP/ CP +100, Max MP +50, DEX/ WIT/ CON/ MEN/ STR/ INT +3-->
+		<skills>
+			<skill id="54082" level="5"/>	<!-- +4 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33364">
+		<!--Dragon Belt. Weight Limit +6000, Inventory Slots +6, Max HP +150, Max MP +100, Max CP +200, HP Recovery Potions' Effect +80, MP Recovery Potions' Effect +10, P. Def. +30, M. Def. +20, DEX/ WIT/ STR/ INT +3, CON/ MEN +4-->
+		<skills>
+			<skill id="54082" level="6"/>	<!-- +5 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33365">
+		<!--Dragon Belt. Weight Limit +7000, Inventory Slots +6, Max HP +200, Max MP +150, Max CP +300, HP Recovery Potions' Effect +100, MP Recovery Potions' Effect +20, P. Def. +40, M. Def. +30, DEX/ WIT/ CON/ MEN +4, STR/ INT +3.-->
+		<skills>
+			<skill id="54082" level="7"/>	<!-- +6 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33366">
+		<!--Dragon Belt. Weight Limit +8000, Inventory Slots +8, Max HP +300, Max MP +200, Max CP +500, HP Recovery Potions' Effect +120, MP Recovery Potions' Effect +30, P. Def. +50, M. Def. +40, Atk. Spd. +20, P./ M. Critical Rate +10, DEX/ WIT/ CON/ MEN/ STR/ INT +4-->
+		<skills>
+			<skill id="54082" level="8"/>	<!-- +7 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33367">
+		<!--Dragon Belt. Weight Limit +9000, Inventory Slots +8, Max HP +400, Max MP +250, Max CP +700, HP Recovery Potions' Effect +150, MP Recovery Potions' Effect +50, P. Def. +80, M. Def. +50, Atk. Spd. +30, P./ M. Critical Rate +20, Received Healing +5%, Received Damage -3%, DEX/ WIT/ STR/ INT +4, CON/ MEN +5-->
+		<skills>
+			<skill id="54082" level="9"/>	<!-- +8 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33368">
+		<!--Dragon Belt. Weight Limit +10,000, Inventory Slots +10, Max HP +600, Max MP +300, Max CP +1000, HP Recovery Potions' Effect +200, MP Recovery Potions' Effect +80, P. Def. +100, M. Def. +80, Atk. Spd. +50, P./ M. Critical Rate +30, Received Healing +10%, Received Damage -5%, DEX/ WIT/ CON/ MEN +5, STR/ INT +4-->
+		<skills>
+			<skill id="54082" level="10"/>	<!-- +9 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33369">
+		<!--Dragon Belt. Weight Limit +12,000, Inventory Slots +12, Max HP +1000, Max MP +500, Max CP +1500, HP Recovery Potions' Effect +300, MP Recovery Potions' Effect +100, P. Def. +150, M. Def. +120, Atk. Spd. +100, P./ M. Critical Rate +50, Received Healing +20%, Received Damage -10%, DEX/ WIT/ CON/ MEN/ STR/ INT +5-->
+		<skills>
+			<skill id="54082" level="11"/>	<!-- +10 Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="33370">
+		<!--P. Atk. +14, M. Atk. +22. Effects from two such Talismans do not stack.-->
+	</option_data>
+	<option_data id="33371">
+		<!--P. Atk. +27, M. Atk. +22, M. Def. +10. The effect doesn't stack if two identical talismans are equipped.-->
+	</option_data>
+	<option_data id="33372">
+		<!--P. Atk. +41, M. Atk. +66, M. Def. +20, P./ M. Skill Power +1%, Resistance to All Weapons +1%. The effect doesn't stack if two identical talismans are equipped.-->
+	</option_data>
+	<option_data id="33373">
+		<!--P. Atk. +68, M. Atk. +109, M. Def. +30, P./ M. Skill Power +2%, Resistance to All Weapons +2%, CON/ MEN +1. The effect doesn't stack if two identical talismans are equipped.-->
+	</option_data>
+	<option_data id="33374">
+		<!--P. Atk. +170, M. Atk. +235, M. Def. +40, P./ M. Skill Power +2%, Resistance to All Weapons +2%, CON/ MEN/ STR/ INT +1, Skill MP Consumption -2%. The effect doesn't stack if two identical talismans are equipped.-->
+	</option_data>
+	<option_data id="33375">
+		<!--P. Atk. +200, M. Atk. +275, M. Def. +60, P./ M. Skill Power +3%, Resistance to All Weapons +3%, CON/ MEN/ STR/ INT +1, P./ M. Critical Rate +10, Skill MP Consumption -4%. The effect doesn't stack if two identical talismans are equipped.-->
+	</option_data>
+	<option_data id="33376">
+		<!--Sleep Resistance +1%-->
+	</option_data>
+	<option_data id="33377">
+		<!--Sleep Resistance +2%\nMax HP +50-->
+	</option_data>
+	<option_data id="33378">
+		<!--Sleep Resistance +3%\nMax HP +100-->
+	</option_data>
+	<option_data id="33379">
+		<!--Sleep Resistance +4%\nMax HP +150\nP. Atk. +5\nM. Atk. +5-->
+	</option_data>
+	<option_data id="33380">
+		<!--Sleep Resistance +5%\nMax HP +200\nP. Atk. +10\nM. Atk. +10-->
+	</option_data>
+	<option_data id="33381">
+		<!--Sleep Resistance +10%\nMax HP +300\nP. Atk. +15\nM. Atk. +15-->
+	</option_data>
+	<option_data id="33382">
+		<!--Sleep Resistance +12%\nMax HP +400\nP. Atk. +30\nM. Atk. +30-->
+	</option_data>
+	<option_data id="33383">
+		<!--CON +1\nSleep Resistance +14%\nMax HP +500\nP. Atk. +45\nM. Atk. +45-->
+	</option_data>
+	<option_data id="33384">
+		<!--CON +1\nSleep Resistance +18%\nMax HP +600\nP. Atk. +90\nM. Atk. +90-->
+	</option_data>
+	<option_data id="33385">
+		<!--CON +2\nSleep Resistance +22%\nMax HP +800\nP. Atk. +180\nM. Atk. +180-->
+	</option_data>
+	<option_data id="33386">
+		<!--CON +5\nSTR +1\nINT +1\nSleep Resistance +30%\nMax HP +1000\nP. Atk. +300\nM. Atk. +300-->
+	</option_data>
+	<option_data id="33387">
+		<!--Shock Resistance +1%-->
+	</option_data>
+	<option_data id="33388">
+		<!--Shock Resistance +2%\nMax MP +50-->
+	</option_data>
+	<option_data id="33389">
+		<!--Shock Resistance +3%\nMax MP +100-->
+	</option_data>
+	<option_data id="33390">
+		<!--Shock Resistance +4%\nMax MP +150\nAtk. Spd. +5\nCasting Spd. +5-->
+	</option_data>
+	<option_data id="33391">
+		<!--Shock Resistance +5%\nMax MP +200\nAtk. Spd. +7\nCasting Spd. +7-->
+	</option_data>
+	<option_data id="33392">
+		<!--Shock Resistance +10%\nMax MP +300\nAtk. Spd. +10\nCasting Spd. +10-->
+	</option_data>
+	<option_data id="33393">
+		<!--Shock Resistance +12%\nMax MP +400\nAtk. Spd. +15\nCasting Spd. +15-->
+	</option_data>
+	<option_data id="33394">
+		<!--MEN +1\nShock Resistance +14%\nMax MP +500\nAtk. Spd. +30\nCasting Spd. +30-->
+	</option_data>
+	<option_data id="33395">
+		<!--MEN +1\nShock Resistance +18%\nMax MP +600\nAtk. Spd. +60\nCasting Spd. +60-->
+	</option_data>
+	<option_data id="33396">
+		<!--MEN +2\nShock Resistance +22%\nMax MP +800\nAtk. Spd. +90\nCasting Spd. +90-->
+	</option_data>
+	<option_data id="33397">
+		<!--MEN +5\nDEX +1\nWIT +1\nShock Resistance +30%\nMax MP +1000\nAtk. Spd. +150\nCasting Spd. +150-->
+	</option_data>
+	<option_data id="33398">
+	</option_data>
+	<option_data id="33399">
+		<!--P. Atk. +16, M. Atk. +23, CON/ MEN +1, Skill Cooldown -1%-->
+			<skills>
+			<skill id="50191" level="1"/>	<!-- Enchant Effect: +1 Talisman of Baium -->
+		</skills>
+	</option_data>
+</list>

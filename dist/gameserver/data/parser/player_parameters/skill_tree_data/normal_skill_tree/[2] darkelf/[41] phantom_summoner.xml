@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="41"><!--Phantom Summoner-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="1126" level="7" min_level="42" cost="140000"/><!--Servitor Recharge-->
+		<skill id="1126" level="8" min_level="42" cost="140000"/><!--Servitor Recharge-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="1300" level="1" min_level="40" cost="100000"/><!--Servitor Cure-->
+		<skill id="1127" level="13" min_level="43" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="14" min_level="43" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="15" min_level="43" cost="140000"/><!--Servitor Heal-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="11319" level="1" min_level="40" cost="100000"/><!--Mass Summon Spiritshots-->
+		<skill id="11317" level="1" min_level="40" cost="100000"/><!--Mass Summon Soulshots-->
+		<skill id="1831" level="1" min_level="40" auto_get="true"/><!--Spell Master-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="1206" level="6" min_level="40" cost="100000"/><!--Wind Shackle-->
+		<skill id="1262" level="1" min_level="40" cost="100000"/><!--Transfer Pain-->
+		<skill id="1228" level="5" min_level="44" cost="140000"/><!--Summon Silhouette-->
+		<skill id="1278" level="1" min_level="40" cost="100000"/><!--Summon Soulless-->
+		<skill id="1128" level="5" min_level="44" cost="140000"/><!--Summon Shadow-->
+		<skill id="11318" level="1" min_level="40" cost="100000"/><!--Summon Spiritshots-->
+		<skill id="11316" level="1" min_level="40" cost="100000"/><!--Summon Soulshots-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="1178" level="9" min_level="40" cost="100000"/><!--Twister-->
+		<skill id="45362" level="13" min_level="43" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="14" min_level="43" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="15" min_level="43" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="1126" level="9" min_level="42" cost="140000"/><!--Servitor Recharge-->
+		<skill id="1127" level="16" min_level="43" cost="140000"/><!--Servitor Heal-->
+		<skill id="1178" level="10" min_level="42" cost="140000"/><!--Twister-->
+		<skill id="45362" level="16" min_level="43" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="17" min_level="44" cost="140000"/><!--Servitor Heal-->
+		<skill id="45362" level="17" min_level="44" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="10" min_level="44" cost="140000"/><!--Servitor Recharge-->
+		<skill id="1127" level="18" min_level="44" cost="140000"/><!--Servitor Heal-->
+		<skill id="1206" level="7" min_level="44" cost="140000"/><!--Wind Shackle-->
+		<skill id="1228" level="6" min_level="44" cost="140000"/><!--Summon Silhouette-->
+		<skill id="1278" level="2" min_level="44" cost="140000"/><!--Summon Soulless-->
+		<skill id="1128" level="6" min_level="44" cost="140000"/><!--Summon Shadow-->
+		<skill id="1178" level="11" min_level="44" cost="140000"/><!--Twister-->
+		<skill id="45362" level="18" min_level="44" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="1126" level="11" min_level="46" cost="230000"/><!--Servitor Recharge-->
+		<skill id="1127" level="19" min_level="46" cost="230000"/><!--Servitor Heal-->
+		<skill id="1178" level="12" min_level="46" cost="230000"/><!--Twister-->
+		<skill id="45362" level="19" min_level="46" cost="230000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="20" min_level="47" cost="230000"/><!--Servitor Heal-->
+		<skill id="45362" level="20" min_level="47" cost="230000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="12" min_level="48" cost="230000"/><!--Servitor Recharge-->
+		<skill id="1300" level="2" min_level="48" cost="230000"/><!--Servitor Cure-->
+		<skill id="1127" level="21" min_level="48" cost="230000"/><!--Servitor Heal-->
+		<skill id="1146" level="2" min_level="48" cost="230000"/><!--Mighty Servitor-->
+		<skill id="1206" level="8" min_level="48" cost="230000"/><!--Wind Shackle-->
+		<skill id="1262" level="2" min_level="48" cost="230000"/><!--Transfer Pain-->
+		<skill id="1611" level="1" min_level="48" cost="230000"/><!--Power Supremacy-->
+		<skill id="1228" level="7" min_level="48" cost="230000"/><!--Summon Silhouette-->
+		<skill id="1278" level="3" min_level="48" cost="230000"/><!--Summon Soulless-->
+		<skill id="1128" level="7" min_level="48" cost="230000"/><!--Summon Shadow-->
+		<skill id="1178" level="13" min_level="48" cost="230000"/><!--Twister-->
+		<skill id="45362" level="21" min_level="48" cost="230000"/><!--Swift Servitor Heal-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1126" level="13" min_level="50" cost="370000"/><!--Servitor Recharge-->
+		<skill id="1127" level="22" min_level="50" cost="370000"/><!--Servitor Heal-->
+		<skill id="1178" level="14" min_level="50" cost="370000"/><!--Twister-->
+		<skill id="1073" level="2" min_level="50" cost="370000"/><!--Increased Power of Magic-->
+		<skill id="45362" level="22" min_level="50" cost="370000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="23" min_level="51" cost="370000"/><!--Servitor Heal-->
+		<skill id="45362" level="23" min_level="51" cost="370000"/><!--Swift Servitor Heal-->
+		<skill id="1299" level="1" min_level="52" cost="370000"/><!--Servitor Ultimate Defense-->
+		<skill id="1405" level="1" min_level="52" cost="370000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="1126" level="14" min_level="52" cost="370000"/><!--Servitor Recharge-->
+		<skill id="1127" level="24" min_level="52" cost="370000"/><!--Servitor Heal-->
+		<skill id="1206" level="9" min_level="52" cost="370000"/><!--Wind Shackle-->
+		<skill id="1228" level="8" min_level="52" cost="370000"/><!--Summon Silhouette-->
+		<skill id="1278" level="4" min_level="52" cost="370000"/><!--Summon Soulless-->
+		<skill id="1128" level="8" min_level="52" cost="370000"/><!--Summon Shadow-->
+		<skill id="1178" level="15" min_level="52" cost="370000"/><!--Twister-->
+		<skill id="45362" level="24" min_level="52" cost="370000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="15" min_level="54" cost="590000"/><!--Servitor Recharge-->
+		<skill id="1127" level="25" min_level="54" cost="590000"/><!--Servitor Heal-->
+		<skill id="1178" level="16" min_level="54" cost="590000"/><!--Twister-->
+		<skill id="45362" level="25" min_level="54" cost="590000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="26" min_level="55" cost="590000"/><!--Servitor Heal-->
+		<skill id="45362" level="26" min_level="55" cost="590000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="16" min_level="56" cost="590000"/><!--Servitor Recharge-->
+		<skill id="1127" level="27" min_level="56" cost="590000"/><!--Servitor Heal-->
+		<skill id="1146" level="3" min_level="56" cost="590000"/><!--Mighty Servitor-->
+		<skill id="1206" level="10" min_level="56" cost="590000"/><!--Wind Shackle-->
+		<skill id="1262" level="3" min_level="56" cost="590000"/><!--Transfer Pain-->
+		<skill id="1611" level="2" min_level="56" cost="590000"/><!--Power Supremacy-->
+		<skill id="1228" level="9" min_level="56" cost="590000"/><!--Summon Silhouette-->
+		<skill id="1403" level="1" min_level="56" cost="590000"/><!--Summon Your Spouse-->
+		<skill id="1278" level="5" min_level="56" cost="590000"/><!--Summon Soulless-->
+		<skill id="1128" level="9" min_level="56" cost="590000"/><!--Summon Shadow-->
+		<skill id="1178" level="17" min_level="56" cost="590000"/><!--Twister-->
+		<skill id="45362" level="27" min_level="56" cost="590000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="17" min_level="57" cost="600000"/><!--Servitor Recharge-->
+		<skill id="1127" level="28" min_level="57" cost="600000"/><!--Servitor Heal-->
+		<skill id="45362" level="28" min_level="57" cost="600000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="18" min_level="58" cost="600000"/><!--Servitor Recharge-->
+		<skill id="1127" level="29" min_level="58" cost="600000"/><!--Servitor Heal-->
+		<skill id="1206" level="11" min_level="58" cost="600000"/><!--Wind Shackle-->
+		<skill id="1262" level="4" min_level="58" cost="600000"/><!--Transfer Pain-->
+		<skill id="1228" level="10" min_level="58" cost="600000"/><!--Summon Silhouette-->
+		<skill id="1278" level="6" min_level="58" cost="600000"/><!--Summon Soulless-->
+		<skill id="1128" level="10" min_level="58" cost="600000"/><!--Summon Shadow-->
+		<skill id="1178" level="18" min_level="58" cost="600000"/><!--Twister-->
+		<skill id="45362" level="29" min_level="58" cost="600000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="19" min_level="59" cost="720000"/><!--Servitor Recharge-->
+		<skill id="1127" level="30" min_level="59" cost="720000"/><!--Servitor Heal-->
+		<skill id="45362" level="30" min_level="59" cost="720000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="20" min_level="60" cost="720000"/><!--Servitor Recharge-->
+		<skill id="1300" level="3" min_level="60" cost="720000"/><!--Servitor Cure-->
+		<skill id="1127" level="31" min_level="60" cost="720000"/><!--Servitor Heal-->
+		<skill id="1206" level="12" min_level="60" cost="720000"/><!--Wind Shackle-->
+		<skill id="1228" level="11" min_level="60" cost="720000"/><!--Summon Silhouette-->
+		<skill id="1278" level="7" min_level="60" cost="720000"/><!--Summon Soulless-->
+		<skill id="1128" level="11" min_level="60" cost="720000"/><!--Summon Shadow-->
+		<skill id="1178" level="19" min_level="60" cost="720000"/><!--Twister-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="45362" level="31" min_level="60" cost="720000"/><!--Swift Servitor Heal-->
+		<skill id="1405" level="2" min_level="61" cost="870000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="1126" level="21" min_level="61" cost="870000"/><!--Servitor Recharge-->
+		<skill id="1127" level="32" min_level="61" cost="870000"/><!--Servitor Heal-->
+		<skill id="45362" level="32" min_level="61" cost="870000"/><!--Swift Servitor Heal-->
+		<skill id="1301" level="1" min_level="62" cost="870000"/><!--Servitor Blessing-->
+		<skill id="1126" level="22" min_level="62" cost="870000"/><!--Servitor Recharge-->
+		<skill id="1127" level="33" min_level="62" cost="870000"/><!--Servitor Heal-->
+		<skill id="1206" level="13" min_level="62" cost="870000"/><!--Wind Shackle-->
+		<skill id="1228" level="12" min_level="62" cost="870000"/><!--Summon Silhouette-->
+		<skill id="1278" level="8" min_level="62" cost="870000"/><!--Summon Soulless-->
+		<skill id="1128" level="12" min_level="62" cost="870000"/><!--Summon Shadow-->
+		<skill id="1178" level="20" min_level="62" cost="870000"/><!--Twister-->
+		<skill id="45362" level="33" min_level="62" cost="870000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="23" min_level="63" cost="1100000"/><!--Servitor Recharge-->
+		<skill id="1127" level="34" min_level="63" cost="1100000"/><!--Servitor Heal-->
+		<skill id="45362" level="34" min_level="63" cost="1100000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="24" min_level="64" cost="1100000"/><!--Servitor Recharge-->
+		<skill id="1127" level="35" min_level="64" cost="1100000"/><!--Servitor Heal-->
+		<skill id="1206" level="14" min_level="64" cost="1100000"/><!--Wind Shackle-->
+		<skill id="1611" level="3" min_level="64" cost="1100000"/><!--Power Supremacy-->
+		<skill id="1228" level="13" min_level="64" cost="1100000"/><!--Summon Silhouette-->
+		<skill id="1278" level="9" min_level="64" cost="1100000"/><!--Summon Soulless-->
+		<skill id="1128" level="13" min_level="64" cost="1100000"/><!--Summon Shadow-->
+		<skill id="1178" level="21" min_level="64" cost="1100000"/><!--Twister-->
+		<skill id="45362" level="35" min_level="64" cost="1100000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="25" min_level="65" cost="1400000"/><!--Servitor Recharge-->
+		<skill id="1127" level="36" min_level="65" cost="1400000"/><!--Servitor Heal-->
+		<skill id="45362" level="36" min_level="65" cost="1400000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="26" min_level="66" cost="1400000"/><!--Servitor Recharge-->
+		<skill id="1127" level="37" min_level="66" cost="1400000"/><!--Servitor Heal-->
+		<skill id="1206" level="15" min_level="66" cost="1400000"/><!--Wind Shackle-->
+		<skill id="1228" level="14" min_level="66" cost="1400000"/><!--Summon Silhouette-->
+		<skill id="1278" level="10" min_level="66" cost="1400000"/><!--Summon Soulless-->
+		<skill id="1128" level="14" min_level="66" cost="1400000"/><!--Summon Shadow-->
+		<skill id="1178" level="22" min_level="66" cost="1400000"/><!--Twister-->
+		<skill id="45362" level="37" min_level="66" cost="1400000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="27" min_level="67" cost="1700000"/><!--Servitor Recharge-->
+		<skill id="1127" level="38" min_level="67" cost="1700000"/><!--Servitor Heal-->
+		<skill id="45362" level="38" min_level="67" cost="1700000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="28" min_level="68" cost="1700000"/><!--Servitor Recharge-->
+		<skill id="1127" level="39" min_level="68" cost="1700000"/><!--Servitor Heal-->
+		<skill id="1206" level="16" min_level="68" cost="1700000"/><!--Wind Shackle-->
+		<skill id="1228" level="15" min_level="68" cost="1700000"/><!--Summon Silhouette-->
+		<skill id="1278" level="11" min_level="68" cost="1700000"/><!--Summon Soulless-->
+		<skill id="1128" level="15" min_level="68" cost="1700000"/><!--Summon Shadow-->
+		<skill id="1178" level="23" min_level="68" cost="1700000"/><!--Twister-->
+		<skill id="45362" level="39" min_level="68" cost="1700000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="40" min_level="69" cost="2000000"/><!--Servitor Heal-->
+		<skill id="1126" level="29" min_level="69" cost="2000000"/><!--Servitor Recharge-->
+		<skill id="45362" level="40" min_level="69" cost="2000000"/><!--Swift Servitor Heal-->
+		<skill id="1299" level="2" min_level="70" cost="2000000"/><!--Servitor Ultimate Defense-->
+		<skill id="1127" level="41" min_level="70" cost="2000000"/><!--Servitor Heal-->
+		<skill id="1206" level="17" min_level="70" cost="2000000"/><!--Wind Shackle-->
+		<skill id="1262" level="5" min_level="70" cost="2000000"/><!--Transfer Pain-->
+		<skill id="1126" level="30" min_level="70" cost="2000000"/><!--Servitor Recharge-->
+		<skill id="1228" level="16" min_level="70" cost="2000000"/><!--Summon Silhouette-->
+		<skill id="1278" level="12" min_level="70" cost="2000000"/><!--Summon Soulless-->
+		<skill id="1128" level="16" min_level="70" cost="2000000"/><!--Summon Shadow-->
+		<skill id="1178" level="24" min_level="70" cost="2000000"/><!--Twister-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="45362" level="41" min_level="70" cost="2000000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="42" min_level="71" cost="2500000"/><!--Servitor Heal-->
+		<skill id="1126" level="31" min_level="71" cost="2500000"/><!--Servitor Recharge-->
+		<skill id="45362" level="42" min_level="71" cost="2500000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="43" min_level="72" cost="2500000"/><!--Servitor Heal-->
+		<skill id="1206" level="18" min_level="72" cost="2500000"/><!--Wind Shackle-->
+		<skill id="1126" level="32" min_level="72" cost="2500000"/><!--Servitor Recharge-->
+		<skill id="1611" level="4" min_level="72" cost="2500000"/><!--Power Supremacy-->
+		<skill id="1228" level="17" min_level="72" cost="2500000"/><!--Summon Silhouette-->
+		<skill id="1278" level="13" min_level="72" cost="2500000"/><!--Summon Soulless-->
+		<skill id="1128" level="17" min_level="72" cost="2500000"/><!--Summon Shadow-->
+		<skill id="1178" level="25" min_level="72" cost="2500000"/><!--Twister-->
+		<skill id="45362" level="43" min_level="72" cost="2500000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="44" min_level="73" cost="3000000"/><!--Servitor Heal-->
+		<skill id="1126" level="33" min_level="73" cost="3000000"/><!--Servitor Recharge-->
+		<skill id="45362" level="44" min_level="73" cost="3000000"/><!--Swift Servitor Heal-->
+		<skill id="1127" level="45" min_level="74" cost="3000000"/><!--Servitor Heal-->
+		<skill id="1206" level="19" min_level="74" cost="3000000"/><!--Wind Shackle-->
+		<skill id="1126" level="34" min_level="74" cost="3000000"/><!--Servitor Recharge-->
+		<skill id="1228" level="18" min_level="74" cost="3000000"/><!--Summon Silhouette-->
+		<skill id="1278" level="14" min_level="74" cost="3000000"/><!--Summon Soulless-->
+		<skill id="1128" level="18" min_level="74" cost="3000000"/><!--Summon Shadow-->
+		<skill id="1178" level="26" min_level="74" cost="3000000"/><!--Twister-->
+		<skill id="45362" level="45" min_level="74" cost="3000000"/><!--Swift Servitor Heal-->
+		<skill id="1126" level="1" min_level="40" cost="100000"/><!--Servitor Recharge-->
+		<skill id="1126" level="2" min_level="40" cost="100000"/><!--Servitor Recharge-->
+		<skill id="1126" level="3" min_level="40" cost="100000"/><!--Servitor Recharge-->
+		<skill id="1126" level="4" min_level="41" cost="140000"/><!--Servitor Recharge-->
+		<skill id="1126" level="5" min_level="41" cost="140000"/><!--Servitor Recharge-->
+		<skill id="1126" level="6" min_level="41" cost="140000"/><!--Servitor Recharge-->
+		<skill id="1127" level="1" min_level="40" cost="100000"/><!--Servitor Heal-->
+		<skill id="1127" level="2" min_level="40" cost="100000"/><!--Servitor Heal-->
+		<skill id="1127" level="3" min_level="40" cost="100000"/><!--Servitor Heal-->
+		<skill id="1127" level="4" min_level="40" cost="100000"/><!--Servitor Heal-->
+		<skill id="1127" level="5" min_level="41" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="6" min_level="41" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="7" min_level="41" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="8" min_level="41" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="9" min_level="42" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="10" min_level="42" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="11" min_level="42" cost="140000"/><!--Servitor Heal-->
+		<skill id="1127" level="12" min_level="42" cost="140000"/><!--Servitor Heal-->
+		<skill id="1128" level="1" min_level="40" cost="100000"/><!--Summon Shadow-->
+		<skill id="1128" level="2" min_level="40" cost="100000"/><!--Summon Shadow-->
+		<skill id="1128" level="3" min_level="40" cost="100000"/><!--Summon Shadow-->
+		<skill id="1128" level="4" min_level="44" cost="140000"/><!--Summon Shadow-->
+		<skill id="1146" level="1" min_level="48" cost="230000"/><!--Mighty Servitor-->
+		<skill id="1228" level="1" min_level="40" cost="100000"/><!--Summon Silhouette-->
+		<skill id="1228" level="2" min_level="40" cost="100000"/><!--Summon Silhouette-->
+		<skill id="1228" level="3" min_level="40" cost="100000"/><!--Summon Silhouette-->
+		<skill id="1228" level="4" min_level="44" cost="140000"/><!--Summon Silhouette-->
+		<skill id="45362" level="1" min_level="40" cost="100000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="2" min_level="40" cost="100000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="3" min_level="40" cost="100000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="4" min_level="40" cost="100000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="5" min_level="41" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="6" min_level="41" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="7" min_level="41" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="8" min_level="41" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="9" min_level="42" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="10" min_level="42" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="11" min_level="42" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="12" min_level="42" cost="140000"/><!--Swift Servitor Heal-->
+		<skill id="47466" level="2" min_level="40" cost="100000"/><!--Higher Mana Gain-->
+		<skill id="47466" level="3" min_level="60" cost="720000"/><!--Higher Mana Gain-->
+		<skill id="47918" level="1" min_level="40" cost="100000"><!--Summoner's Attack Mastery-->
+			<blocked_skills>
+				<skill id="228"/><!--???-->
+				<skill id="249"/><!--???-->
+				<skill id="1831"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47918" level="2" min_level="50" cost="370000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="3" min_level="60" cost="720000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="4" min_level="70" cost="2000000"/><!--Summoner's Attack Mastery-->
+		<skill id="47919" level="1" min_level="40" cost="100000"><!--Summoner's Armor Mastery-->
+			<blocked_skills>
+				<skill id="234"/><!--???-->
+				<skill id="47270"/><!--???-->
+				<skill id="244"/><!--???-->
+				<skill id="227"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47919" level="2" min_level="50" cost="370000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="3" min_level="60" cost="720000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="4" min_level="70" cost="2000000"/><!--Summoner's Armor Mastery-->
+		<skill id="47920" level="1" min_level="40" cost="100000"><!--Summoner's Recovery Mastery-->
+			<blocked_skills>
+				<skill id="164"/><!--???-->
+				<skill id="212"/><!--???-->
+				<skill id="213"/><!--???-->
+				<skill id="229"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47920" level="2" min_level="50" cost="370000"/><!--Summoner's Recovery Mastery-->
+		<skill id="47920" level="3" min_level="60" cost="720000"/><!--Summoner's Recovery Mastery-->
+		<skill id="47920" level="4" min_level="70" cost="2000000"/><!--Summoner's Recovery Mastery-->
+	</normal_skill_tree>
+</list>

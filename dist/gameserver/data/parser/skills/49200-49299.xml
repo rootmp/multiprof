@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="49200" levels="1" name="Latent Ability">
+		<set name="icon" value="icon.etc_men_symbol_i01"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49201" levels="3" name="STR +1">
+		<set name="icon" value="icon.statbonus_str"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49202" levels="3" name="DEX +1">
+		<set name="icon" value="icon.statbonus_dex"/>
+		<table name="#DEX">1 2 3</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add order="0x10" stat="DEX" value="#DEX"/>
+		</for>
+	</skill>
+	<skill id="49203" levels="3" name="CON +1">
+		<set name="icon" value="icon.statbonus_con"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49204" levels="3" name="INT +1">
+		<set name="icon" value="icon.statbonus_int"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49205" levels="3" name="WIT +1">
+		<set name="icon" value="icon.statbonus_wit"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49206" levels="3" name="MEN +1">
+		<set name="icon" value="icon.statbonus_men"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49207" levels="2" name="Steel Skin">
+		<set name="icon" value="icon.skill10017"/>
+		<table name="#mDef">15 20</table>
+		<table name="#pDef">20 25</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mDef" value="#mDef"/>
+			<add stat="pDef" value="#pDef"/>
+		</for>
+	</skill>
+</list>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30356" /> <!-- Altima -->
+		<point x="7496" y="17388" z="-4376" h="13384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30357" /> <!-- Kristin -->
+		<point x="7644" y="18048" z="-4376" h="47052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30134" /> <!-- Jasmine -->
+		<point x="9734" y="15511" z="-4552" h="5892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30358" /> <!-- Thifiell -->
+		<point x="10775" y="14190" z="-4240" h="14500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30305" /> <!-- Vellior -->
+		<point x="10315" y="14293" z="-4240" h="4096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30143" /> <!-- Trudy -->
+		<point x="11283" y="14226" z="-4240" h="31000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30359" /> <!-- Kaitar -->
+		<point x="11235" y="14078" z="-4240" h="24576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30141" /> <!-- Talos -->
+		<point x="11012" y="14128" z="-4240" h="14500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30145" /> <!-- Vlasty -->
+		<point x="11258" y="14431" z="-4240" h="46500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30360" /> <!-- Harant -->
+		<point x="10447" y="14620" z="-4240" h="46500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30144" /> <!-- Harne -->
+		<point x="10344" y="14445" z="-4240" h="63640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30138" /> <!-- Minaless -->
+		<point x="12009" y="15704" z="-4552" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30137" /> <!-- Vollodos -->
+		<point x="11951" y="15661" z="-4552" h="28672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30600" /> <!-- Newbie Guide -->
+		<point x="12111" y="16686" z="-4584" h="63240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30136" /> <!-- Payne -->
+		<point x="10823" y="18013" z="-4552" h="61440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30135" /> <!-- Iria -->
+		<point x="10761" y="17970" z="-4552" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30307" /> <!-- Karrod -->
+		<point x="10580" y="17574" z="-4552" h="14000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30346" /> <!-- Kayleen -->
+		<point x="6532" y="19903" z="-3688" h="30000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30347" /> <!-- Marion -->
+		<point x="6449" y="19619" z="-3688" h="30000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30352" /> <!-- Karina -->
+		<point x="10301" y="18870" z="-4568" h="55344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30351" /> <!-- Astaron -->
+		<point x="12328" y="14947" z="-4568" h="21000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="32478" /> <!-- Game Assistant -->
+		<point x="13436" y="17248" z="-4568" h="47500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30354" /> <!-- Jewel -->
+		<point x="12311" y="17470" z="-4568" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30139" /> <!-- Dorankus -->
+		<point x="13380" y="17430" z="-4536" h="14384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30140" /> <!-- Erviante -->
+		<point x="13464" y="17751" z="-4536" h="47000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30350" /> <!-- Carlon -->
+		<point x="13763" y="17501" z="-4536" h="30768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30353" /> <!-- Jughead -->
+		<point x="13081" y="18444" z="-4568" h="46152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30224" /> <!-- Rayla -->
+		<point x="15120" y="15656" z="-4376" h="14384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30355" /> <!-- Roselyn -->
+		<point x="15272" y="16310" z="-4376" h="47352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="17024" y="13296" z="-3744" h="62000"/>
+		<npc id="30600"/><!-- Newbie Guide -->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="17306" y="13592" z="-3720" h="0"/>
+		<npc id="30348"/><!-- Nelsya -->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="17102" y="13002" z="-3744" h="61440"/>
+		<npc id="30349"/><!-- Jenna -->
+	</spawn>
+</list>

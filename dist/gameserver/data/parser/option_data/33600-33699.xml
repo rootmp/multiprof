@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="33600">
+		<!--Bow Resistance +1.5%-->
+	</option_data>
+	<option_data id="33601">
+		<!--Bow Resistance +2.5%-->
+	</option_data>
+	<option_data id="33602">
+		<!--Bow Resistance +3%-->
+	</option_data>
+	<option_data id="33603">
+		<!--Bow Resistance +3.5%-->
+	</option_data>
+	<option_data id="33604">
+		<!--Drain Resistance +2.5%-->
+	</option_data>
+	<option_data id="33605">
+		<!--Drain Resistance +3.5%-->
+	</option_data>
+	<option_data id="33606">
+		<!--Drain Resistance +5%-->
+	</option_data>
+	<option_data id="33607">
+		<!--Drain Resistance +7.5%-->
+	</option_data>
+	<option_data id="33608">
+		<!--Drain Resistance +9%-->
+	</option_data>
+	<option_data id="33609">
+		<!--Drain Resistance +10%-->
+	</option_data>
+	<option_data id="33610">
+		<!--Max HP +10\nAll received Critical Rate -1%-->
+	</option_data>
+	<option_data id="33611">
+		<!--Shield Defense +10\nMax HP +20\nAll received Critical Rate -1%-->
+	</option_data>
+	<option_data id="33612">
+		<!--Shield Defense +20\nMax HP +30\nAll received Critical Rate -2%-->
+	</option_data>
+	<option_data id="33613">
+		<!--Shield Defense +50\nMax HP +40\nAll received Critical Rate -3%-->
+	</option_data>
+	<option_data id="33614">
+		<!--Shield Defense +80\nMax HP +50\nAll received Critical Rate -4%-->
+	</option_data>
+	<option_data id="33615">
+		<!--Shield Defense +160\nMax HP +100\nAll received Critical Rate -5%-->
+	</option_data>
+	<option_data id="33616">
+		<!--Shield Defense +320\nMax HP +150\nAll received Critical Rate -6%-->
+	</option_data>
+	<option_data id="33617">
+		<!--Shield Defense +640\nMax HP +200\nAll received Critical Rate -7%-->
+	</option_data>
+	<option_data id="33618">
+		<!--Shield Defense +960\nMax HP +250\nAll received Critical Rate -8%-->
+	</option_data>
+	<option_data id="33619">
+		<!--Shield Defense +1280\nMax HP +320\nAll received Critical Rate -9%-->
+	</option_data>
+	<option_data id="33620">
+		<!--Shield Defense +1600\nMax HP +500\nAll received Critical Rate -10%-->
+	</option_data>
+	<option_data id="33621">
+		<!--Atk. Spd. +2\nCasting Spd. +2\nMax MP +10\nAll Critical Rate +1%-->
+	</option_data>
+	<option_data id="33622">
+		<!--Atk. Spd. +4\nCasting Spd. +4\nMax MP +20\nAll Critical Rate +1%-->
+	</option_data>
+	<option_data id="33623">
+		<!--Atk. Spd. +8\nCasting Spd. +8\nMax MP +30\nAll Critical Rate +1%-->
+	</option_data>
+	<option_data id="33624">
+		<!--Atk. Spd. +16\nCasting Spd. +16\nMax MP +40\nAll Critical Rate +1%-->
+	</option_data>
+	<option_data id="33625">
+		<!--Atk. Spd. +26\nCasting Spd. +26\nMax MP +50\nAll Critical Rate +2%-->
+	</option_data>
+	<option_data id="33626">
+		<!--Atk. Spd. +38\nCasting Spd. +38\nMax MP +100\nAll Critical Rate +3%-->
+	</option_data>
+	<option_data id="33627">
+		<!--Atk. Spd. +52\nCasting Spd. +52\nMax MP +150\nAll Critical Rate +4%-->
+	</option_data>
+	<option_data id="33628">
+		<!--Atk. Spd. +70\nCasting Spd. +70\nMax MP +200\nAll Critical Rate +5%-->
+	</option_data>
+	<option_data id="33629">
+		<!--Atk. Spd. +90\nCasting Spd. +90\nMax MP +250\nAll Critical Rate +6%-->
+	</option_data>
+	<option_data id="33630">
+		<!--Atk. Spd. +140\nCasting Spd. +140\nMax MP +300\nAll Critical Rate +7%-->
+	</option_data>
+	<option_data id="33631">
+		<!--Atk. Spd. +200\nCasting Spd. +200\nMax MP +400\nAll Critical Rate +8%-->
+	</option_data>
+	<option_data id="33632" />
+	<option_data id="33633" />
+	<option_data id="33634" />
+	<option_data id="33635" />
+	<option_data id="33636" />
+	<option_data id="33637" />
+	<option_data id="33638" />
+	<option_data id="33639" />
+	<option_data id="33640" />
+	<option_data id="33641" />
+	<option_data id="33642" />
+	<option_data id="33643" />
+	<option_data id="33644" />
+	<option_data id="33645" />
+	<option_data id="33646" />
+	<option_data id="33647" />
+	<option_data id="33648" />
+	<option_data id="33649" />
+	<option_data id="33650" />
+	<option_data id="33651" />
+	<option_data id="33652" />
+	<option_data id="33653" />
+	<option_data id="33654" />
+	<option_data id="33655" />
+	<option_data id="33656" />
+	<option_data id="33657" />
+	<option_data id="33658" />
+	<option_data id="33659" />
+	<option_data id="33660" />
+	<option_data id="33661" />
+	<option_data id="33662" />
+	<option_data id="33663" />
+	<option_data id="33664" />
+	<option_data id="33665" />
+	<option_data id="33666" />
+	<option_data id="33667" />
+	<option_data id="33668" />
+	<option_data id="33669" />
+	<option_data id="33670" />
+	<option_data id="33671" />
+	<option_data id="33672" />
+	<option_data id="33673" />
+	<option_data id="33674" />
+	<option_data id="33675" />
+	<option_data id="33676" />
+	<option_data id="33677" />
+	<option_data id="33678" />
+	<option_data id="33679" />
+	<option_data id="33680" />
+	<option_data id="33681" />
+	<option_data id="33682" />
+	<option_data id="33683" />
+	<option_data id="33684" />
+	<option_data id="33685" />
+	<option_data id="33686" />
+	<option_data id="33687" />
+	<option_data id="33688" />
+	<option_data id="33689" />
+	<option_data id="33690" />
+	<option_data id="33691" />
+	<option_data id="33692" />
+	<option_data id="33693" />
+	<option_data id="33694" />
+	<option_data id="33695" />
+	<option_data id="33696" />
+	<option_data id="33697" />
+	<option_data id="33698" />
+	<option_data id="33699" />
+</list>

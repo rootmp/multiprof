@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="81900" levels="1" name="Skill Power">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81901" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81902" levels="1" name="Skill Power/ Max MP Increase">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81903" levels="1" name="Received Damage Decrease/ Max HP Increase">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81904" levels="1" name="P. Def./ M. Def./ HP Recovery Potions' Effect">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81905" levels="1" name="Mark of the King I">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81906" levels="1" name="Mark of the King II">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81907" levels="1" name="Mark of the King III">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81908" levels="1" name="Mark of the King IV">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81909" levels="1" name="Mark of the King V">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81910" levels="1" name="Damage Increase/ HP Recovery Potions' Effect">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81911" levels="1" name="White Valentine's Day">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81912" levels="1" name="Dark Valentine's Day">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81913" levels="1" name="Aden Power">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81914" levels="1" name="Aden Attack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81915" levels="1" name="Aden Defense">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81916" levels="1" name="Received Damage Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81917" levels="1" name="Acquired XP/ SP">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81918" levels="1" name="Sayha's Grace Charging Rate Increase">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81919" levels="1" name="Sayha's Grace Consumption Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81920" levels="1" name="Sayha's Grace Charging Rate Increase">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81921" levels="1" name="Sayha's Grace Consumption Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81922" levels="1" name="Skill Cooldown Decrease and HP/ MP/ CP Increase">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81923" levels="1" name="Magic Lamp Charging Rate">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81924" levels="1" name="CON/ MEN">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81925" levels="1" name="HP Recovery Potions' Effect">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81926" levels="1" name="HP Recovery Potions' Effect">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81927" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81928" levels="1" name="Received M. Skill Critical Rate Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81929" levels="1" name="Received M. Skill Critical Rate Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81930" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81931" levels="1" name="Received P. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81932" levels="1" name="Received P. Skill Critical Rate Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81933" levels="1" name="Received P. Skill Critical Rate Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81934" levels="1" name="Received M. Skill Critical Damage Decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81935" levels="1" name="Welcome Spring">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81936" levels="1" name="Bloomy Spring II">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81937" levels="1" name="Bloomy Spring I">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81938" levels="1" name="Growth Rune Collection Ⅲ">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81939" levels="1" name="Growth Rune Collection IV">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81940" levels="1" name="Battlefield Warrior">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81941" levels="1" name="Battlefield Hero">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="81942" levels="1" name="Joyful Harvest Festival">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81943" levels="1" name="Necklace of Spirits I">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81944" levels="1" name="Necklace of Spirits II">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81945" levels="1" name="Necklace of Spirits III">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81946" levels="1" name="Necklace of Spirits IV">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81947" levels="1" name="Lineage2 Re:Member I">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81948" levels="1" name="Lineage2 Re:Member II">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81949" levels="1" name="Anniversary Event Collection I">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81950" levels="1" name="Anniversary Event Collection II">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81951" levels="1" name="Anniversary Event Collection III">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81952" levels="1" name="Comic Event Collection">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81953" levels="1" name="Goddard Territory Purge I">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="81954" levels="1" name="Goddard Territory Purge II">
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

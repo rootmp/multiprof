@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="91927" count="1"/>	<!--Soulshot-->
+		<ingredient id="5789" count="3"/>	<!--Soulshot (No-grade) (Novice) (Not Available)-->
+	</item>
+</list>

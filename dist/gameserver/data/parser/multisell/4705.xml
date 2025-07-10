@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="71691" count="1"/>	<!--Dragon Pendant - Attack Lv. 1-->
+		<ingredient id="71699" count="1"/>	<!--Dragon Essence-->
+	</item>
+	<item>
+		<production id="71695" count="1"/>	<!--Dragon Pendant - Magic Power Lv. 1-->
+		<ingredient id="71699" count="1"/>	<!--Dragon Essence-->
+	</item>
+	<item>
+		<production id="91249" count="1"/>	<!--Dragon Varnish-->
+		<ingredient id="71699" count="1"/>	<!--Dragon Essence-->
+	</item>
+</list>

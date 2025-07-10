@@ -1,0 +1,12 @@
+<html><body>
+The current tax rate is %tax%.<br>
+Please enter tax amount you wish to set between 0% and 10%.<br>
+<center><br>
+<table height=27 width=290 bgColor="cccccc"><tbody><tr>
+<td align=middle width=50>Amount</td>
+<td align=left width=190><edit width="180" var="amount" type="number"></td>
+<td align=left width=40>Tax</td>
+</tr></tbody></table><br>
+<button value="Set" action="bypass -h npc_%objectId%_SetTaxRate $amount" width=90 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"><br>
+<button value="Cancel" action="bypass -h npc_%objectId%_default" width=90 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"><br>
+</body></html>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="37300">
+		<!--M. Damage Resistance +4%-->
+	</option_data>
+	<option_data id="37301">
+		<!--M. Damage Resistance +5%-->
+	</option_data>
+	<option_data id="37302">
+		<!--M. Damage Resistance +7%-->
+	</option_data>
+	<option_data id="37303">
+		<!--M. Damage Resistance +10%-->
+	</option_data>
+	<option_data id="37304">
+		<!--Max HP +5-->
+	</option_data>
+	<option_data id="37305">
+		<!--Max HP +8-->
+	</option_data>
+	<option_data id="37306">
+		<!--Max HP +11-->
+	</option_data>
+	<option_data id="37307">
+		<!--Max HP +14-->
+	</option_data>
+	<option_data id="37308">
+		<!--Max HP +17-->
+	</option_data>
+	<option_data id="37309">
+		<!--Max HP +20-->
+	</option_data>
+	<option_data id="37310">
+		<!--Max HP +23-->
+	</option_data>
+	<option_data id="37311">
+		<!--Max HP +26-->
+	</option_data>
+	<option_data id="37312">
+		<!--Max HP +30-->
+	</option_data>
+	<option_data id="37313">
+		<!--Max HP +33-->
+	</option_data>
+	<option_data id="37314">
+		<!--Max HP +36-->
+	</option_data>
+	<option_data id="37315">
+		<!--Max HP +39-->
+	</option_data>
+	<option_data id="37316">
+		<!--Max HP +42-->
+	</option_data>
+	<option_data id="37317">
+		<!--Max HP +45-->
+	</option_data>
+	<option_data id="37318">
+		<!--Max HP +48-->
+	</option_data>
+	<option_data id="37319">
+		<!--Max HP +60-->
+	</option_data>
+	<option_data id="37320">
+		<!--Max HP +70-->
+	</option_data>
+	<option_data id="37321">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="37322">
+		<!--Max HP +80-->
+	</option_data>
+	<option_data id="37323">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="37324">
+		<!--Max HP +5-->
+	</option_data>
+	<option_data id="37325">
+		<!--Max HP +8-->
+	</option_data>
+	<option_data id="37326">
+		<!--Max HP +11-->
+	</option_data>
+	<option_data id="37327">
+		<!--Max HP +14-->
+	</option_data>
+	<option_data id="37328">
+		<!--Max HP +17-->
+	</option_data>
+	<option_data id="37329">
+		<!--Max HP +20-->
+	</option_data>
+	<option_data id="37330">
+		<!--Max HP +23-->
+	</option_data>
+	<option_data id="37331">
+		<!--Max HP +26-->
+	</option_data>
+	<option_data id="37332">
+		<!--Max HP +30-->
+	</option_data>
+	<option_data id="37333">
+		<!--Max HP +33-->
+	</option_data>
+	<option_data id="37334">
+		<!--Max HP +36-->
+	</option_data>
+	<option_data id="37335">
+		<!--Max HP +39-->
+	</option_data>
+	<option_data id="37336">
+		<!--Max HP +42-->
+	</option_data>
+	<option_data id="37337">
+		<!--Max HP +45-->
+	</option_data>
+	<option_data id="37338">
+		<!--Max HP +48-->
+	</option_data>
+	<option_data id="37339">
+		<!--Max HP +60-->
+	</option_data>
+	<option_data id="37340">
+		<!--Max HP +70-->
+	</option_data>
+	<option_data id="37341">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="37342">
+		<!--Max HP +80-->
+	</option_data>
+	<option_data id="37343">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="37344">
+		<!--Max HP +5-->
+	</option_data>
+	<option_data id="37345">
+		<!--Max HP +8-->
+	</option_data>
+	<option_data id="37346">
+		<!--Max HP +11-->
+	</option_data>
+	<option_data id="37347">
+		<!--Max HP +14-->
+	</option_data>
+	<option_data id="37348">
+		<!--Max HP +17-->
+	</option_data>
+	<option_data id="37349">
+		<!--Max HP +20-->
+	</option_data>
+	<option_data id="37350">
+		<!--Max HP +23-->
+	</option_data>
+	<option_data id="37351">
+		<!--Max HP +26-->
+	</option_data>
+	<option_data id="37352">
+		<!--Max HP +30-->
+	</option_data>
+	<option_data id="37353">
+		<!--Max HP +33-->
+	</option_data>
+	<option_data id="37354">
+		<!--Max HP +36-->
+	</option_data>
+	<option_data id="37355">
+		<!--Max HP +39-->
+	</option_data>
+	<option_data id="37356">
+		<!--Max HP +42-->
+	</option_data>
+	<option_data id="37357">
+		<!--Max HP +45-->
+	</option_data>
+	<option_data id="37358">
+		<!--Max HP +48-->
+	</option_data>
+	<option_data id="37359">
+		<!--Max HP +60-->
+	</option_data>
+	<option_data id="37360">
+		<!--Max HP +70-->
+	</option_data>
+	<option_data id="37361">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="37362">
+		<!--Max HP +80-->
+	</option_data>
+	<option_data id="37363">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="37364">
+		<!--Max MP +5-->
+	</option_data>
+	<option_data id="37365">
+		<!--Max MP +8-->
+	</option_data>
+	<option_data id="37366">
+		<!--Max MP +11-->
+	</option_data>
+	<option_data id="37367">
+		<!--Max MP +14-->
+	</option_data>
+	<option_data id="37368">
+		<!--Max MP +17-->
+	</option_data>
+	<option_data id="37369">
+		<!--Max MP +20-->
+	</option_data>
+	<option_data id="37370">
+		<!--Max MP +23-->
+	</option_data>
+	<option_data id="37371">
+		<!--Max MP +26-->
+	</option_data>
+	<option_data id="37372">
+		<!--Max MP +30-->
+	</option_data>
+	<option_data id="37373">
+		<!--Max MP +33-->
+	</option_data>
+	<option_data id="37374">
+		<!--Max MP +36-->
+	</option_data>
+	<option_data id="37375">
+		<!--Max MP +39-->
+	</option_data>
+	<option_data id="37376">
+		<!--Max MP +42-->
+	</option_data>
+	<option_data id="37377">
+		<!--Max MP +45-->
+	</option_data>
+	<option_data id="37378">
+		<!--Max MP +48-->
+	</option_data>
+	<option_data id="37379">
+		<!--Max MP +60-->
+	</option_data>
+	<option_data id="37380">
+		<!--Max MP +70-->
+	</option_data>
+	<option_data id="37381">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="37382">
+		<!--Max MP +80-->
+	</option_data>
+	<option_data id="37383">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="37384">
+		<!--Max MP +5-->
+	</option_data>
+	<option_data id="37385">
+		<!--Max MP +8-->
+	</option_data>
+	<option_data id="37386">
+		<!--Max MP +11-->
+	</option_data>
+	<option_data id="37387">
+		<!--Max MP +14-->
+	</option_data>
+	<option_data id="37388">
+		<!--Max MP +17-->
+	</option_data>
+	<option_data id="37389">
+		<!--Max MP +20-->
+	</option_data>
+	<option_data id="37390">
+		<!--Max MP +23-->
+	</option_data>
+	<option_data id="37391">
+		<!--Max MP +26-->
+	</option_data>
+	<option_data id="37392">
+		<!--Max MP +30-->
+	</option_data>
+	<option_data id="37393">
+		<!--Max MP +33-->
+	</option_data>
+	<option_data id="37394">
+		<!--Max MP +36-->
+	</option_data>
+	<option_data id="37395">
+		<!--Max MP +39-->
+	</option_data>
+	<option_data id="37396">
+		<!--Max MP +42-->
+	</option_data>
+	<option_data id="37397">
+		<!--Max MP +45-->
+	</option_data>
+	<option_data id="37398">
+		<!--Max MP +48-->
+	</option_data>
+	<option_data id="37399">
+		<!--Max MP +60-->
+	</option_data>
+</list>

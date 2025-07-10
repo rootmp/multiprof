@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="48100" levels="1" name="Rat Focus">
+		<set name="effectPoint" value="-7000"/>
+		<set name="icon" value="icon.etc_mouse_i00"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="200"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48101" levels="1" name="Wind Rat Attack">
+		<set name="effectPoint" value="-7000"/>
+		<set name="icon" value="icon.etc_mouse_i00"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="300"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48102" levels="1" name="Stunning Rat Attack">
+		<set name="effectPoint" value="-7000"/>
+		<set name="icon" value="icon.etc_mouse_i00"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48103" levels="1" name="Queen Ant Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48104" levels="1" name="Orfen Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48105" levels="1" name="Baium Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48106" levels="1" name="Zaken Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48107" levels="1" name="Anakim Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48108" levels="1" name="Lilith Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48109" levels="1" name="Queen Ant's Earthquake">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1607"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48110" levels="1" name="Queen Ant's Rain of Stones">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill32050"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48111" levels="1" name="Orfen's Poisonous Sound">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1560"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48112" levels="1" name="Orfen's Ashen Strike">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill30016"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48113" levels="1" name="Baium's Earth Shaker">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill30003"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48114" levels="1" name="Baium's Lightning">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0048"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48115" levels="1" name="Zaken Dancing Swords">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill50005"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48116" levels="1" name="Zaken's Bloody Tornado">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill50006"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48117" levels="1" name="Anakim's Energy Attack">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1513"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48118" levels="1" name="Anakim's Holy Rain">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1516"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48119" levels="1" name="Lilith's Dark Bog">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill50003"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48120" levels="1" name="Lilith's Unholy Strike">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill50004"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48121" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48122" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48123" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48124" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48125" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48126" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48127" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48128" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48129" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48130" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48131" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48132" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48133" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48134" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48135" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48136" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48137" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48138" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48139" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48140" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48141" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48142" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48143" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48144" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48145" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48146" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48147" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48148" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48149" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48150" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48151" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48152" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48153" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48154" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48155" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48156" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48157" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48158" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48159" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48160" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48161" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48162" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48163" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48164" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48165" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48166" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48167" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48168" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48169" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48170" levels="1" name="Boss' Significant Damage">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48171" levels="3" name="Acumen">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1085"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48172" levels="3" name="Empower">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1059"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48173" levels="2" name="Wild Magic">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1303"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48174" levels="2" name="Wind Walk">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1204"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48175" levels="2" name="Magic Barrier">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1036"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48176" levels="3" name="Focus">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1077"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48177" levels="3" name="Death Whisper">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1242"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48178" levels="2" name="Haste">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1086"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48179" levels="2" name="Berserker Spirit">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1062"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48180" levels="3" name="Clarity">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1397"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48181" levels="2" name="HP Recovery">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="icon" value="icon.skill0211"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48182" levels="2" name="MP Recovery">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="icon" value="icon.skill0213"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48183" levels="25" name="Red's Luck Lv. 1">
+		<table name="#affect_scope">RANGE FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN</table>
+		<table name="#castRange">900 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1</table>
+		<set name="affect_scope" value="#affect_scope"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="icon" value="icon.etc_cross_of_einhasad_i00"/>
+		<set name="castRange" value="#castRange"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48184" levels="4" name="Red's Luck Reward Lv. 1">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48185" levels="1" name="Proof of Courage">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="castRange" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48186" levels="1" name="Aqua Tornado">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill32644"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="3000"/>
+		<set name="mp_consume" value="10"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48187" levels="1" name="Aqua Arrow">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="450"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48188" levels="1" name="Earth Invincibility">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48189" levels="1" name="Earth Invincibility">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48190" levels="3" name="Curse of Earth">
+		<table name="#icon">icon.desert_thirst_Lv1 icon.desert_thirst_Lv2 icon.desert_thirst_Lv3</table>
+		<table name="#hitTime">4000 0 0</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="#icon"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="#hitTime"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48191" levels="1" name="Curse of Stone">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-666"/>
+		<set name="icon" value="icon.skill11560"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="coolTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48192" levels="1" name="Blessing of Earth">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48193" levels="1" name="Pet Rescuer's Buff">
+		<set name="icon" value="icon.ev_10th_present1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48194" levels="1" name="Queen Ant Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48195" levels="1" name="Queen Ant's Earthquake">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1607"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48196" levels="1" name="Queen Ant's Rain of Stones">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill32050"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48197" levels="1" name="Pet Growth Effect">
+		<set name="icon" value="icon.skill0083"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48198" levels="1" name="Improved Pet Skills">
+		<set name="icon" value="BranchSys3.icon.skill22419"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48199" levels="1" name="Recovery">
+		<!--none-->
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

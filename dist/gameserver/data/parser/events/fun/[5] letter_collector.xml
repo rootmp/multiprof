@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<!--формат даты HH:mm dd.MM.yyyy-->
+	<event id="5" name="Letter Collector" impl="LetterCollector">
+		<parameter name="start_time_pattern" value="06:30 14.07.2019" />
+		<parameter name="stop_time_pattern" value="06:30 04.08.2019" />
+		<parameter name="min_level" value="40" />
+		<parameter name="remove_items_on_stop" value="event_items"/>
+		<on_start>
+			<global_add_reward name="droplist"/>
+		</on_start>
+		<on_time>
+			<on time="1209600">	<!--2 Weeks-->
+				<global_remove_reward name="droplist"/>
+			</on>
+		</on_time>
+		<on_stop>
+			<global_remove_reward name="droplist"/>
+		</on_stop>
+		<objects name="droplist">
+			<rewardlist type="EVENT_GROUPED">
+				<group chance="100">
+					<reward item_id="3875" min="1" max="1" chance="5"/>	<!--Letter A-->
+					<reward item_id="3877" min="1" max="1" chance="5"/>	<!--Letter E-->
+					<reward item_id="3879" min="1" max="1" chance="5"/>	<!--Letter G-->
+					<reward item_id="3881" min="1" max="1" chance="5"/>	<!--Letter I-->
+					<reward item_id="3882" min="1" max="1" chance="5"/>	<!--Letter L-->
+					<reward item_id="3883" min="1" max="1" chance="5"/>	<!--Letter N-->
+					<reward item_id="3885" min="1" max="1" chance="1"/>	<!--Letter R-->
+					<reward item_id="3886" min="1" max="1" chance="1"/>	<!--Letter S-->
+					<reward item_id="3888" min="1" max="1" chance="1"/>	<!--Number II-->
+					<reward item_id="92021" min="1" max="1" chance="5"/>	<!--Letter D-->
+					<reward item_id="92022" min="1" max="1" chance="1"/>	<!--Letter P-->
+				</group>
+			</rewardlist>
+		</objects>
+		<objects name="event_items">
+			<item id="3875"/>	<!--Letter A-->
+			<item id="3877"/>	<!--Letter E-->
+			<item id="3879"/>	<!--Letter G-->
+			<item id="3881"/>	<!--Letter I-->
+			<item id="3882"/>	<!--Letter L-->
+			<item id="3883"/>	<!--Letter N-->
+			<item id="3885"/>	<!--Letter R-->
+			<item id="3886"/>	<!--Letter S-->
+			<item id="3888"/>	<!--Number II-->
+			<item id="92021"/>	<!--Letter D-->
+			<item id="92022"/>	<!--Letter P-->
+		</objects>
+		<objects name="letters_set_0">
+			<item id="3882"/>	<!--Letter L-->
+			<item id="3881"/>	<!--Letter I-->
+			<item id="3883"/>	<!--Letter N-->
+			<item id="3877"/>	<!--Letter E-->
+			<item id="3875"/>	<!--Letter A-->
+			<item id="3879"/>	<!--Letter G-->
+			<item id="3877"/>	<!--Letter E-->
+			<item id="3888"/>	<!--Number II-->
+		</objects>
+		<objects name="letters_set_1">
+			<item id="3886"/>	<!--Letter S-->
+			<item id="92022"/>	<!--Letter P-->
+			<item id="3885"/>	<!--Letter R-->
+			<item id="3881"/>	<!--Letter I-->
+			<item id="3883"/>	<!--Letter N-->
+			<item id="3879"/>	<!--Letter G-->
+		</objects>
+		<objects name="letters_set_2">
+			<item id="3875"/>	<!--Letter A-->
+			<item id="92021"/>	<!--Letter D-->
+			<item id="3877"/>	<!--Letter E-->
+			<item id="3883"/>	<!--Letter N-->
+		</objects>
+		<objects name="rewards_set_0">
+			<reward item_id="90972" min="1" max="1" chance="0.01"/>	<!--Weapon Supply Box +8 (A-grade)-->
+			<reward item_id="49790" min="1" max="1" chance="0.03"/>	<!--+16 Enchanted Weapon Supply Box (C-grade)-->
+			<reward item_id="91471" min="1" max="1" chance="1.5"/>	<!--Advanced Stable Scroll: Enchant Armor (A-grade) - Exchangeable-->
+			<reward item_id="91470" min="1" max="1" chance="1.5"/>	<!--Advanced Stable Scroll: Enchant Weapon (A-grade) - Exchangeable-->
+			<reward item_id="91469" min="1" max="1" chance="3.5"/>	<!--Advanced Stable Scroll: Enchant Armor (B-grade) - Exchangeable-->
+			<reward item_id="91468" min="1" max="1" chance="3.5"/>	<!--Advanced Stable Scroll: Enchant Weapon (B-grade) - Exchangeable-->
+			<reward item_id="729" min="1" max="1" chance="3"/>	<!--Scroll: Enchant Weapon (A-grade) - Exchangeable-->
+			<reward item_id="947" min="1" max="1" chance="7"/>	<!--Scroll: Enchant Weapon (B-grade) - Exchangeable-->
+			<reward item_id="92010" min="1" max="1" chance="3"/>	<!--Majestic Robe Set-->
+			<reward item_id="92011" min="1" max="1" chance="3"/>	<!--Majestic Light Armor Set-->
+			<reward item_id="92014" min="1" max="1" chance="3"/>	<!--Nightmare Heavy Armor Set-->
+			<reward item_id="92026" min="1" max="1" chance="3"/>	<!--Majestic Heavy Armor Set-->
+			<reward item_id="93629" min="1" max="1" chance="0.05"/>	<!--8000 L2 Coins-->
+			<reward item_id="91754" min="1" max="1" chance="1"/>	<!--800 L2 Coin Box-->
+			<reward item_id="90963" min="1" max="1" chance="7"/>	<!--Solid Scroll: Enchant Agathion-->
+			<reward item_id="91250" min="1" max="1" chance="4"/>	<!--Brilliant Dragon Varnish-->
+			<reward item_id="71124" min="1" max="1" chance="7"/>	<!--Stable Cloak Enchantment Scroll - Legendary-->
+			<reward item_id="70906" min="1" max="1" chance="7"/>	<!--Stable Cloak Enchantment Scroll - Legendary-->
+			<reward item_id="49703" min="1" max="1" chance="0.8"/>	<!--Talisman Bracelet Lv. 4-->
+			<reward item_id="90014" min="1" max="1" chance="5"/>	<!--High-grade Life Stone-->
+			<reward item_id="70215" min="1" max="1" chance="4"/>	<!--XP Rune Box - 100%-->
+			<reward item_id="90949" min="1" max="1" chance="7"/>	<!--Transformation Scroll: White Knight-->
+			<reward item_id="29696" min="3" max="3" chance="15"/>	<!--Greater Quick Healing Potion-->
+			<reward item_id="70159" min="2" max="2" chance="15"/>	<!--Mana Recovery Potion-->
+		</objects>
+		<objects name="rewards_set_1">
+			<reward item_id="90763" min="1" max="1" chance="0.1"/>	<!--Zaken's Earring Lv. 1-->
+			<reward item_id="91216" min="1" max="1" chance="0.03"/>	<!--+16 B-grade Weapon Pack-->
+			<reward item_id="49785" min="1" max="1" chance="0.3"/>	<!--A-grade Weapon Pack-->
+			<reward item_id="93629" min="1" max="1" chance="0.05"/>	<!--8000 L2 Coins-->
+			<reward item_id="91754" min="1" max="1" chance="1"/>	<!--800 L2 Coin Box-->
+			<reward item_id="22224" min="1" max="1" chance="1.5"/>	<!--Stable Scroll: Enchant Armor (A-grade) - Exchangeable-->
+			<reward item_id="22223" min="1" max="1" chance="1.5"/>	<!--Stable Scroll: Enchant Weapon (A-grade) - Exchangeable-->
+			<reward item_id="49485" min="1" max="1" chance="3.5"/>	<!--Stable Armor Enchant Scroll (B-grade) - Exchangeable-->
+			<reward item_id="49486" min="1" max="1" chance="3.5"/>	<!--Stable Scroll: Enchant Weapon (B-grade) - Exchangeable-->
+			<reward item_id="730" min="1" max="1" chance="3"/>	<!--Scroll: Enchant Armor (A-grade) - Exchangeable-->
+			<reward item_id="948" min="1" max="1" chance="7"/>	<!--Scroll: Enchant Armor (B-grade) - Exchangeable-->
+			<reward item_id="92012" min="1" max="1" chance="3"/>	<!--Dark Crystal Robe Set-->
+			<reward item_id="92013" min="1" max="1" chance="3"/>	<!--Dark Crystal Light Armor Set-->
+			<reward item_id="92027" min="1" max="1" chance="3"/>	<!--Dark Crystal Heavy Armor Set-->
+			<reward item_id="71124" min="1" max="1" chance="7"/>	<!--Stable Cloak Enchantment Scroll - Legendary-->
+			<reward item_id="70906" min="1" max="1" chance="7"/>	<!--Stable Cloak Enchantment Scroll - Legendary-->
+			<reward item_id="90963" min="1" max="1" chance="7"/>	<!--Solid Scroll: Enchant Agathion-->
+			<reward item_id="91250" min="1" max="1" chance="4"/>	<!--Brilliant Dragon Varnish-->
+			<reward item_id="49703" min="1" max="1" chance="0.8"/>	<!--Talisman Bracelet Lv. 4-->
+			<reward item_id="90014" min="1" max="1" chance="5"/>	<!--High-grade Life Stone-->
+			<reward item_id="70215" min="1" max="1" chance="4"/>	<!--XP Rune Box - 100%-->
+			<reward item_id="90949" min="1" max="1" chance="7"/>	<!--Transformation Scroll: White Knight-->
+			<reward item_id="29696" min="3" max="3" chance="15"/>	<!--Greater Quick Healing Potion-->
+			<reward item_id="70159" min="2" max="2" chance="15"/>	<!--Mana Recovery Potion-->
+		</objects>
+		<objects name="rewards_set_2">
+			<reward item_id="6662" min="1" max="1" chance="0.1"/>	<!--Ring of Core Lv. 1-->
+			<reward item_id="6660" min="1" max="1" chance="0.1"/>	<!--Queen Ant's Ring Lv. 1-->
+			<reward item_id="93629" min="1" max="1" chance="0.05"/>	<!--8000 L2 Coins-->
+			<reward item_id="91754" min="1" max="1" chance="1"/>	<!--800 L2 Coin Box-->
+			<reward item_id="49789" min="1" max="1" chance="0.06"/>	<!--+8 Enchanted Weapon Supply Box (B-grade)-->
+			<reward item_id="49664" min="1" max="1" chance="0.06"/>	<!--Weapon Supply Box (B-grade)-->
+			<reward item_id="33815" min="1" max="1" chance="1.5"/>	<!--Improved Scroll: Enchant Armor (A-grade) - Exchangeable-->
+			<reward item_id="33809" min="1" max="1" chance="1.5"/>	<!--Improved Scroll: Enchant Weapon (A-grade) - Exchangeable-->
+			<reward item_id="33814" min="1" max="1" chance="3.5"/>	<!--Improved Scroll: Enchant Armor (B-grade) - Exchangeable-->
+			<reward item_id="33808" min="1" max="1" chance="3.5"/>	<!--Improved Scroll: Enchant Weapon (B-grade) - Exchangeable-->
+			<reward item_id="947" min="1" max="1" chance="7"/>	<!--Scroll: Enchant Weapon (B-grade) - Exchangeable-->
+			<reward item_id="948" min="1" max="1" chance="7"/>	<!--Scroll: Enchant Armor (B-grade) - Exchangeable-->
+			<reward item_id="71124" min="1" max="1" chance="7"/>	<!--Stable Cloak Enchantment Scroll - Legendary-->
+			<reward item_id="70906" min="1" max="1" chance="7"/>	<!--Stable Cloak Enchantment Scroll - Legendary-->
+			<reward item_id="90963" min="1" max="1" chance="7"/>	<!--Solid Scroll: Enchant Agathion-->
+			<reward item_id="91250" min="1" max="1" chance="4"/>	<!--Brilliant Dragon Varnish-->
+			<reward item_id="92015" min="1" max="1" chance="3"/>	<!--Tallum Heavy Armor Set-->
+			<reward item_id="92028" min="1" max="1" chance="3"/>	<!--Tallum Light Armor Set-->
+			<reward item_id="92029" min="1" max="1" chance="3"/>	<!--Tallum Robe Set-->
+			<reward item_id="49703" min="1" max="1" chance="0.08"/>	<!--Talisman Bracelet Lv. 4-->
+			<reward item_id="90014" min="1" max="1" chance="5"/>	<!--High-grade Life Stone-->
+			<reward item_id="70215" min="1" max="1" chance="4"/>	<!--XP Rune Box - 100%-->
+			<reward item_id="90949" min="1" max="1" chance="7"/>	<!--Transformation Scroll: White Knight-->
+			<reward item_id="90013" min="1" max="1" chance="10"/>	<!--Mid-grade Life Stone-->
+			<reward item_id="29696" min="3" max="3" chance="15"/>	<!--Greater Quick Healing Potion-->
+			<reward item_id="70159" min="2" max="2" chance="15"/>	<!--Mana Recovery Potion-->
+		</objects>
+	</event>
+</list>

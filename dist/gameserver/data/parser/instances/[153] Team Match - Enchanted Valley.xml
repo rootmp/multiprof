@@ -1,0 +1,16 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="153" name="Team Match" maxChannels="40" collapseIfEmpty="1" timelimit="60" dispelBuffs="true">
+		<level min="1"/>
+		<party min="1" max="3"/>
+		<teleport loc="113704 47368 -4656 0"/>
+		<teleport loc="113496 46904 -4657 0"/>
+		<teleport loc="113600 47120 -4640 0"/>
+		<spawns>
+			<group name="olympiad_153_buffers" spawned="false"/>
+		</spawns>
+		<zones>
+			<zone name="[enchanted_valley_battle]" active="true"/>
+		</zones>
+	</instance>
+</list>

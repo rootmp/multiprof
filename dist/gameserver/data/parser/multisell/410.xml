@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="49543" count="2"/>	<!--Elemental Stone-->
+		<ingredient id="1458" count="4"/>	<!--Crystal (D-grade)-->
+		<ingredient id="2130" count="2"/>	<!--Gemstone (D-grade)-->
+		<ingredient id="57" count="1000"/>	<!--Adena-->
+	</item>
+</list>

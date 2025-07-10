@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="49630" count="1"/>	<!--Blue Talisman Box - P. Crit. (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49631" count="1"/>	<!--Blue Talisman Box - P. Atk. (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49632" count="1"/>	<!--Blue Talisman Box - P. Def. (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49633" count="1"/>	<!--Blue Talisman Box - P. Skills Evasion (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49634" count="1"/>	<!--Blue Talisman Box - M. Crit. (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49635" count="1"/>	<!--Blue Talisman Box - M. Atk. (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49636" count="1"/>	<!--Blue Talisman Box - M. Def. (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49637" count="1"/>	<!--Blue Talisman Box - M. Skills Evasion (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49638" count="1"/>	<!--Blue Talisman Box - Max. HP (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49639" count="1"/>	<!--Blue Talisman Box - Max. MP (1 hour)-->
+		<ingredient id="57" count="42500"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49640" count="1"/>	<!--Grey Talisman Box - Guard (1 hour)-->
+		<ingredient id="57" count="125000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49641" count="1"/>	<!--Grey Talisman Box - Denial (1 hour)-->
+		<ingredient id="57" count="125000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49642" count="1"/>	<!--Grey Talisman Box - Benefaction (1 hour)-->
+		<ingredient id="57" count="125000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49643" count="1"/>	<!--Grey Talisman Box - Blocking (1 hour)-->
+		<ingredient id="57" count="125000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49644" count="1"/>	<!--Grey Talisman Box - Gravity (1 hour)-->
+		<ingredient id="57" count="125000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49645" count="1"/>	<!--Grey Talisman Box - Bond (1 hour)-->
+		<ingredient id="57" count="125000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49646" count="1"/>	<!--White Talisman Box - P. Crit. (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49647" count="1"/>	<!--White Talisman Box - P. Atk. (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49648" count="1"/>	<!--White Talisman Box - P. Def. (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49649" count="1"/>	<!--White Talisman Box - P. Skills Evasion (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49650" count="1"/>	<!--White Talisman Box - M. Crit. (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49651" count="1"/>	<!--White Talisman Box - M. Atk. (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49652" count="1"/>	<!--White Talisman Box - M. Def. (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49653" count="1"/>	<!--White Talisman Box - M. Skills Evasion (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49654" count="1"/>	<!--White Talisman Box - Max. HP (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49655" count="1"/>	<!--White Talisman Box - Max. MP (1 hour)-->
+		<ingredient id="57" count="85000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49656" count="1"/>	<!--Yellow Talisman Box - Guard (1 hour)-->
+		<ingredient id="57" count="287000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49657" count="1"/>	<!--Yellow Talisman Box - Denial (1 hour)-->
+		<ingredient id="57" count="287000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49658" count="1"/>	<!--Yellow Talisman Box - Benefaction (1 hour)-->
+		<ingredient id="57" count="287000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49659" count="1"/>	<!--Yellow Talisman Box - Blocking (1 hour)-->
+		<ingredient id="57" count="287000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49660" count="1"/>	<!--Yellow Talisman Box - Gravity (1 hour)-->
+		<ingredient id="57" count="287000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49661" count="1"/>	<!--Yellow Talisman Box - Bond (1 hour)-->
+		<ingredient id="57" count="287000"/>	<!--Adena-->
+	</item>
+</list>

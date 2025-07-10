@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="61400" levels="1" name="AoE Skill Damage 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61401" levels="1" name="AoE Damage Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61402" levels="1" name="AoE Damage Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61403" levels="1" name="AoE Damage Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61404" levels="1" name="AoE Damage Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61405" levels="1" name="AoE Damage Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61406" levels="1" name="AoE Damage Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61407" levels="1" name="AoE Damage Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61408" levels="1" name="AoE Damage Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61409" levels="1" name="AoE Damage Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61410" levels="1" name="AoE Damage Resistance 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61411" levels="1" name="P. Skill Damage Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61412" levels="1" name="P. Skill Damage Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61413" levels="1" name="P. Skill Damage Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61414" levels="1" name="P. Skill Damage Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61415" levels="1" name="P. Skill Damage Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61416" levels="1" name="P. Skill Damage Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61417" levels="1" name="P. Skill Damage Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61418" levels="1" name="P. Skill Damage Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61419" levels="1" name="P. Skill Damage Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61420" levels="1" name="P. Skill Damage Resistance 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61421" levels="1" name="M. Skill Damage Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61422" levels="1" name="M. Skill Damage Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61423" levels="1" name="M. Skill Damage Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61424" levels="1" name="M. Skill Damage Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61425" levels="1" name="M. Skill Damage Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61426" levels="1" name="M. Skill Damage Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61427" levels="1" name="M. Skill Damage Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61428" levels="1" name="M. Skill Damage Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61429" levels="1" name="M. Skill Damage Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61430" levels="1" name="M. Skill Damage Resistance 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61431" levels="1" name="Received AoE Skill Damage 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61432" levels="1" name="Received AoE Skill Damage 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61433" levels="1" name="Received AoE Skill Damage 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61434" levels="1" name="Received AoE Skill Damage 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61435" levels="1" name="Received AoE Skill Damage 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61436" levels="1" name="Received AoE Skill Damage 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61437" levels="1" name="Received AoE Skill Damage 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61438" levels="1" name="Received AoE Skill Damage 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61439" levels="1" name="Received AoE Skill Damage 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61440" levels="1" name="Received AoE Skill Damage 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61441" levels="1" name="Soulshot Damage 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61442" levels="1" name="Soulshot Damage 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61443" levels="1" name="Soulshot Damage 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61444" levels="1" name="Soulshot Damage 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61445" levels="1" name="Soulshot Damage 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61446" levels="1" name="Soulshot Damage 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61447" levels="1" name="Soulshot Damage 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61448" levels="1" name="Soulshot Damage 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61449" levels="1" name="Soulshot Damage 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61450" levels="1" name="Soulshot Damage 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61451" levels="1" name="Spiritshot Damage 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61452" levels="1" name="Spiritshot Damage 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61453" levels="1" name="Spiritshot Damage 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61454" levels="1" name="Spiritshot Damage 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61455" levels="1" name="Spiritshot Damage 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61456" levels="1" name="Spiritshot Damage 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61457" levels="1" name="Spiritshot Damage 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61458" levels="1" name="Spiritshot Damage 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61459" levels="1" name="Spiritshot Damage 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61460" levels="1" name="Spiritshot Damage 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61461" levels="1" name="Soulshot Damage Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61462" levels="1" name="Soulshot Damage Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61463" levels="1" name="Soulshot Damage Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61464" levels="1" name="Soulshot Damage Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61465" levels="1" name="Soulshot Damage Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61466" levels="1" name="Soulshot Damage Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61467" levels="1" name="Soulshot Damage Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61468" levels="1" name="Soulshot Damage Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61469" levels="1" name="Soulshot Damage Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61470" levels="1" name="Soulshot Damage Resistance 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61471" levels="1" name="Spiritshot Damage Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61472" levels="1" name="Spiritshot Damage Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61473" levels="1" name="Spiritshot Damage Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61474" levels="1" name="Spiritshot Damage Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61475" levels="1" name="Spiritshot Damage Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61476" levels="1" name="Spiritshot Damage Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61477" levels="1" name="Spiritshot Damage Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61478" levels="1" name="Spiritshot Damage Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61479" levels="1" name="Spiritshot Damage Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61480" levels="1" name="Spiritshot Damage Resistance 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61481" levels="1" name="dist_Buff Skill Activation">
+		<set name="icon" value="icon.skill0528"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61482" levels="1" name="dist_Planned Skill Activation">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61483" levels="10" name="Test Damage Reflection Resistance">
+		<set name="icon" value="icon.accessory_earring_of_antaras_i02"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61484" levels="10" name="Test Damage Reflection">
+		<set name="icon" value="icon.skill0086"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61485" levels="19" name="Magic Lamp Charge +10">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61486" levels="12" name="Magic Lamp Charge +0.1">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61487" levels="4" name="pk Shield - Common/ Purple/ Chaotic Level Not Important">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61488" levels="2" name="Buff Thief - 30-sec.">
+		<set name="effectPoint" value="-600"/>
+		<set name="icon" value="icon.skill1440"/>
+		<set name="coolTime" value="200"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1200"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61489" levels="1" name="Rare Item Challenge Point Effect Boost - 1 Charge">
+		<!--none-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="61490" levels="1" name="Rare Item Challenge Point Effect Boost - 2 Charges">
+		<!--none-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="61491" levels="1" name="Rare Item Challenge Points' Enhanced Charge">
+		<!--none-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="61492" levels="1" name="Rare Item Challenge Points' Charge Protection">
+		<!--none-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="61493" levels="1" name="Rare Item Challenge Points' Charge Decrease">
+		<!--none-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="61494" levels="1" name="Rare Item Challenge Points' Charge Stabilization">
+		<!--none-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

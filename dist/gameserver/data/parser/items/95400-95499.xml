@@ -1,0 +1,2303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="95400" name="Elven Necklace" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.accessary_elven_necklace_i00"/>
+		<set name="price" value="125000"/>
+		<set name="grind_point" value="12500"/>
+		<set name="grind_commission" value="250"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="45"/>
+		</for>
+	</armor>
+	<armor id="95401" name="Dark Necklace" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.accessary_necklace_of_darkness_i00"/>
+		<set name="price" value="162000"/>
+		<set name="grind_point" value="16200"/>
+		<set name="grind_commission" value="324"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="48"/>
+		</for>
+	</armor>
+	<armor id="95402" name="Aquastone Necklace" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.accessary_aquastone_necklace_i00"/>
+		<set name="price" value="207000"/>
+		<set name="grind_point" value="20700"/>
+		<set name="grind_commission" value="414"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="52"/>
+		</for>
+	</armor>
+	<armor id="95403" name="Necklace of Protection" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.accessary_necklace_of_protection_i00"/>
+		<set name="price" value="261000"/>
+		<set name="grind_point" value="26100"/>
+		<set name="grind_commission" value="522"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="56"/>
+		</for>
+	</armor>
+	<armor id="95404" name="Necklace of Mermaid" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.accessary_necklace_of_mermaid_i00"/>
+		<set name="price" value="393000"/>
+		<set name="grind_point" value="39300"/>
+		<set name="grind_commission" value="786"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="60"/>
+		</for>
+	</armor>
+	<armor id="95405" name="Adamantite Necklace" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.accessary_adamantite_necklace_i00"/>
+		<set name="price" value="808000"/>
+		<set name="grind_point" value="161600"/>
+		<set name="grind_commission" value="3232"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="76"/>
+		</for>
+	</armor>
+	<armor id="95406" name="Divine Necklace" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.accessary_blessed_necklace_i00"/>
+		<set name="price" value="565000"/>
+		<set name="grind_point" value="56500"/>
+		<set name="grind_commission" value="1130"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="64"/>
+		</for>
+	</armor>
+	<armor id="95407" name="Tateossian Necklace" add_name="Sealed">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.accessory_tateossian_necklace_i00"/>
+		<set name="price" value="4361000"/>
+		<set name="grind_point" value="872200"/>
+		<set name="grind_commission" value="17444"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="134"/>
+			<add stat="maxMp" order="0x60" value="42"/>
+		</for>
+	</armor>
+	<armor id="95408" name="Black Ore Necklace" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.accessary_necklace_of_black_ore_i00"/>
+		<set name="price" value="1230000"/>
+		<set name="grind_point" value="246000"/>
+		<set name="grind_commission" value="4920"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="81"/>
+		</for>
+	</armor>
+	<armor id="95409" name="Phoenix Necklace" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.accessary_phoenixs_necklace_i00"/>
+		<set name="price" value="1340000"/>
+		<set name="grind_point" value="268000"/>
+		<set name="grind_commission" value="5360"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="90"/>
+			<add stat="maxMp" order="0x60" value="26"/>
+		</for>
+	</armor>
+	<weapon id="95410" name="Young Knight's Pistols" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="244000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.shooter_none"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1560"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="16"/>
+			<add stat="mAtk" order="0x10" value="6"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<etcitem id="95411" name="Jewelry Box - Onyx" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_onyx_i00"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92068" count="1" chance="0.01"/><!--Onyx Lv. 3--><!--TODO: Check chance-->
+			<create_item id="92067" count="1" chance="0.01"/><!--Onyx Lv. 2--><!--TODO: Check chance-->
+			<create_item id="92066" count="1" chance="0.01"/><!--Onyx Lv. 1--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95412" name="Jewelry Box - Coral" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_coral_i00"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92058" count="1" chance="0.01"/><!--Coral Lv. 3--><!--TODO: Check chance-->
+			<create_item id="92057" count="1" chance="0.01"/><!--Coral Lv. 2--><!--TODO: Check chance-->
+			<create_item id="92056" count="1" chance="0.01"/><!--Coral Lv. 1--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95413" name="Jewelry Box - Spinel" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_garnet_i00"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92078" count="1" chance="0.01"/><!--Spinel Lv. 3--><!--TODO: Check chance-->
+			<create_item id="92077" count="1" chance="0.01"/><!--Spinel Lv. 2--><!--TODO: Check chance-->
+			<create_item id="92076" count="1" chance="0.01"/><!--Spinel Lv. 1--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<weapon id="95414" name="Wooden Pistols" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="488"/>
+		<set name="grind_point" value="24400"/>
+		<set name="price" value="244000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.shooter_none"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1870"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="64"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95415" name="Brass Pistols" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="3600"/>
+		<set name="grind_point" value="180000"/>
+		<set name="price" value="1800000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shooter_d"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1810"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="191"/>
+			<add stat="mAtk" order="0x10" value="54"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95416" name="Flint Pistols" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="price" value="6130000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.shooter_b_low"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1720"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="323"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95417" name="B-Class Firearms (Low-/ Mid-grade)" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="7200"/>
+		<set name="grind_point" value="360000"/>
+		<set name="price" value="1800000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.weapon_scallop_jamadhr_i00"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1520"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="397"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95418" name="Volcano" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="52400"/>
+		<set name="grind_point" value="2620000"/>
+		<set name="price" value="13100000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.shooter_b_high"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1700"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="400"/>
+			<add stat="mAtk" order="0x10" value="111"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95419" name="Scofield" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="82964"/>
+		<set name="grind_point" value="4148200"/>
+		<set name="price" value="20741000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shooter_a_low"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1660"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="528"/>
+			<add stat="mAtk" order="0x10" value="142"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95420" name="Zephyrus" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="107874"/>
+		<set name="grind_point" value="5393680"/>
+		<set name="price" value="26968400"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shooter_a_high"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1640"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="570"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95421" name="Boss' Firearms" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="107874"/>
+		<set name="grind_point" value="5393680"/>
+		<set name="price" value="26968400"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shooter_boss"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1330"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="610"/>
+			<add stat="mAtk" order="0x10" value="160"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95422" name="Anakim's Divine Pistols" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="107874"/>
+		<set name="grind_point" value="5393680"/>
+		<set name="price" value="26968400"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shooter_boss_anakim"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="2"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1640"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="610"/>
+			<add stat="mAtk" order="0x10" value="160"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+		<enchant_options>
+			<level value="0">
+				<option id="39200"/>
+			</level>
+			<level value="1">
+				<option id="39201"/>
+			</level>
+			<level value="2">
+				<option id="39202"/>
+			</level>
+			<level value="3">
+				<option id="39203"/>
+			</level>
+			<level value="4">
+				<option id="39204"/>
+			</level>
+			<level value="5">
+				<option id="39205"/>
+			</level>
+			<level value="6">
+				<option id="39206"/>
+			</level>
+			<level value="7">
+				<option id="39207"/>
+			</level>
+			<level value="8">
+				<option id="39208"/>
+			</level>
+			<level value="9">
+				<option id="39209"/>
+			</level>
+			<level value="10">
+				<option id="39210"/>
+			</level>
+		</enchant_options>
+	</weapon>
+	<weapon id="95423" name="Monster's Firearms (Low-grade)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.weapon_chakram_i00"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1440"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="397"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95424" name="Monster's Firearms (High-grade)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_bellion_cestus_i00"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1390"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="400"/>
+			<add stat="mAtk" order="0x10" value="111"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<armor id="95425" name="Majestic Earring" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.accessary_inferno_earing_i00"/>
+		<set name="price" value="1498000"/>
+		<set name="grind_point" value="299600"/>
+		<set name="grind_commission" value="5992"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="71"/>
+			<add stat="maxMp" order="0x60" value="25"/>
+		</for>
+	</armor>
+	<etcitem id="95426" name="Pure Flame Cube (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.ev_firewood_box"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94729" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94380" count="5" chance="0.01"/><!--Scroll: Boost Attack (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94381" count="5" chance="0.01"/><!--Scroll: Boost Defense (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="91032" count="1" chance="0.01"/><!--Fire Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91031" count="1" chance="0.01"/><!--Water Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91033" count="1" chance="0.01"/><!--Wind Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91034" count="1" chance="0.01"/><!--Earth Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="93904" count="1" chance="0.01"/><!--Antharas' Lair's Time Stone--><!--TODO: Check chance-->
+			<create_item id="90907" count="30" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="3031" count="500" chance="0.01"/><!--Spirit Ore--><!--TODO: Check chance-->
+			<create_item id="93848" count="10" chance="0.01"/><!--Sayha's Cookie (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94814" count="1" chance="0.01"/><!--Aden Random Transformation Scroll (Time-limited)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95427" name="Five-colored Sweets (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.ev_ricecake_potion"/>
+		<!--Applies the following effect when used.\n\n<Effect>\nAll stats +1\nWater Attack +40\n\nThe buff is renewed every hour. Maximum duration: 24 h. Grants various items with each buff renewal.\n\n<You cannot obtain a gift if you are dead.>-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95428" name="Luxury Festival Gift Pack (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.event_six_party_box_i00"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="95427" min_count="1" max_count="1" chance="100"/><!--Five-colored Sweets (Time-limited)-->
+			<capsuled_item id="93689" min_count="200" max_count="200" chance="100"/><!--Bean Sweets (Time-limited)-->
+			<capsuled_item id="90907" min_count="200" max_count="200" chance="100"/><!--Soulshot Ticket-->
+			<capsuled_item id="94835" min_count="200" max_count="200" chance="100"/><!--Flower Sweets (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<armor id="95429" name="Majestic Necklace" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.accessary_inferno_necklace_i00"/>
+		<set name="price" value="1998000"/>
+		<set name="grind_point" value="399600"/>
+		<set name="grind_commission" value="7992"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="95"/>
+			<add stat="maxMp" order="0x60" value="33"/>
+		</for>
+	</armor>
+	<weapon id="95430" name="Monster Only: Dragon Infantryman Sword - Not Available" add_name="Not Available">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_samurai_old_longsword_i00"/>
+		<set name="price" value="2290000"/>
+		<set name="grind_point" value="1145000"/>
+		<set name="grind_commission" value="22900"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1430"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="156"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95431" name="Monster Only: Sword of Corruption - Not Available" add_name="Not Available">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_samurai_old_longsword_i00"/>
+		<set name="price" value="4300000"/>
+		<set name="grind_point" value="2150000"/>
+		<set name="grind_commission" value="43000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1400"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="156"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95432" name="Excuro's Staff">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_staff_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1620"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="140"/>
+			<add stat="mAtk" order="0x10" value="137"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95433" name="Torfe's Claw">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_dualfist_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="DUALFIST"/>
+		<set name="weight" value="1420"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="213"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95434" name="Giants' Club">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_blunt_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1620"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="175"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95435" name="Ancient Rapier">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_rapier_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="RAPIER"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="167"/>
+			<add stat="mAtk" order="0x10" value="124"/>
+			<set stat="basePAtkSpd" order="0x08" value="406"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95436" name="Guardian Messenger's Spear">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_pole_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="POLE"/>
+		<set name="weight" value="1940"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3599" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="175"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95437" name="Sealed Angel's Hammer">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_twohandblunt_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="weight" value="1950"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="213"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95438" name="Lizardman Shaman's Staff">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_twohandstaff_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="weight" value="960"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="170"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95439" name="Lizard Slayer">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="price" value="5790000"/>
+		<set name="random_damage" value="5"/>
+		<!--<Equipping effect for pets>\nIncreases P./ M. Atk.\n\n<How to acquire>\nPlains of the Lizardmen Purge-->
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.shooter_monster_low"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1440"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="397"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95440" name="Deadman's Dagger">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_dagger_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="122"/>
+			<add stat="mAtk" order="0x10" value="137"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95441" name="Dragon Bone Blade">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_ancientsword_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="weight" value="1530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="15"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="193"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<add stat="pAccCombat" order="0x10" value="5"/>
+		</for>
+	</weapon>
+	<weapon id="95442" name="Berserker's Sword">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_sword_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1370"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="175"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95443" name="Sel Mahum Sniper">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_bow_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="BOW"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="5"/>
+		<set name="mp_consume" value="4"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="397"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95444" name="Turek Orc Prefect's Dual Swords">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_dual_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2140"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="213"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95445" name="Butcher's Long Sword">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_twohandsword_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="1447500"/>
+		<set name="grind_commission" value="38600"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1930"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="213"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95446" name="Excuro's Staff" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_staff_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1620"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="140"/>
+			<add stat="mAtk" order="0x10" value="137"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95447" name="Torfe's Claw" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_dualfist_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="DUALFIST"/>
+		<set name="weight" value="1420"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="213"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95448" name="Giants' Club" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_blunt_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1620"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="175"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95449" name="Ancient Rapier" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_rapier_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="RAPIER"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="167"/>
+			<add stat="mAtk" order="0x10" value="124"/>
+			<set stat="basePAtkSpd" order="0x08" value="406"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95450" name="Guardian Messenger's Spear" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_pole_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="POLE"/>
+		<set name="weight" value="1940"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3599" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="175"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95451" name="Sealed Angel's Hammer" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_twohandblunt_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="weight" value="1950"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="213"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95452" name="Lizardman Shaman's Staff" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_twohandstaff_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="weight" value="960"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="170"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95453" name="Lizard Slayer" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="grind_point" value="579000"/>
+		<set name="price" value="5790000"/>
+		<set name="random_damage" value="5"/>
+		<!--<Equipping effect for pets>\nIncreases P./ M. Atk.\n\n<How to acquire>\nPlains of the Lizardmen Purge-->
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.shooter_monster_low"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1440"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="397"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95454" name="Deadman's Dagger" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_dagger_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="122"/>
+			<add stat="mAtk" order="0x10" value="137"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95455" name="Dragon Bone Blade" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_ancientsword_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="weight" value="1530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="15"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="193"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<add stat="pAccCombat" order="0x10" value="5"/>
+		</for>
+	</weapon>
+	<weapon id="95456" name="Berserker's Sword" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_sword_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1370"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="175"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95457" name="Sel Mahum Sniper" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_bow_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="BOW"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="5"/>
+		<set name="mp_consume" value="4"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="397"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="95458" name="Turek Orc Prefect's Dual Swords" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_dual_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2140"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="213"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95459" name="Butcher's Long Sword" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.subjugation_wp_twohandsword_01"/>
+		<set name="price" value="5790000"/>
+		<set name="grind_point" value="579000"/>
+		<set name="grind_commission" value="15440"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1930"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="213"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<etcitem id="95460" name="Cruma Tower Purge Rank Reward Pack" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95433" count="1" chance="1"/><!--Torfe's Claw-->
+			<create_item id="95432" count="1" chance="1"/><!--Excuro's Staff-->
+			<create_item id="95447" count="1" chance="5"/><!--Torfe's Claw-->
+			<create_item id="95446" count="1" chance="5"/><!--Excuro's Staff-->
+			<create_item id="95482" count="1" chance="58"/><!--Recipe: Cruma Tower Purge Equipment-->
+			<create_item id="95481" count="3" chance="30"/><!--Aden Purge Crystal-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95461" name="Silent Valley Purge Rank Reward Pack" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95434" count="1" chance="1"/><!--Giants' Club-->
+			<create_item id="95435" count="1" chance="1"/><!--Ancient Rapier-->
+			<create_item id="95448" count="1" chance="5"/><!--Giants' Club-->
+			<create_item id="95449" count="1" chance="5"/><!--Ancient Rapier-->
+			<create_item id="95483" count="1" chance="58"/><!--Recipe: Silent Valley Purge Equipment-->
+			<create_item id="95481" count="3" chance="30"/><!--Aden Purge Crystal-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95462" name="Tower of Insolence Purge Rank Reward Pack" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i03"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95436" count="1" chance="1"/><!--Guardian Messenger's Spear-->
+			<create_item id="95437" count="1" chance="1"/><!--Sealed Angel's Hammer-->
+			<create_item id="95450" count="1" chance="5"/><!--Guardian Messenger's Spear-->
+			<create_item id="95451" count="1" chance="5"/><!--Sealed Angel's Hammer-->
+			<create_item id="95484" count="1" chance="58"/><!--Recipe: Tower of Insolence Purge Equipment-->
+			<create_item id="95481" count="5" chance="30"/><!--Aden Purge Crystal-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95463" name="Plains of the Lizardmen Purge Rank Reward Pack" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95438" count="1" chance="1"/><!--Lizardman Shaman's Staff-->
+			<create_item id="95439" count="1" chance="1"/><!--Lizard Slayer-->
+			<create_item id="95452" count="1" chance="5"/><!--Lizardman Shaman's Staff-->
+			<create_item id="95453" count="1" chance="5"/><!--Lizard Slayer-->
+			<create_item id="95485" count="1" chance="58"/><!--Recipe: Plains of the Lizardmen Purge Equipment-->
+			<create_item id="95481" count="3" chance="30"/><!--Aden Purge Crystal-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95464" name="Dragon Valley Purge Rank Reward Pack" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95440" count="1" chance="1"/><!--Deadman's Dagger-->
+			<create_item id="95441" count="1" chance="1"/><!--Dragon Bone Blade-->
+			<create_item id="95454" count="1" chance="5"/><!--Deadman's Dagger-->
+			<create_item id="95455" count="1" chance="5"/><!--Dragon Bone Blade-->
+			<create_item id="95486" count="1" chance="58"/><!--Recipe: Dragon Valley Purge Equipment-->
+			<create_item id="95481" count="5" chance="30"/><!--Aden Purge Crystal-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95465" name="Sel Mahum Base Purge Rank Reward Pack" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i06"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95442" count="1" chance="1"/><!--Berserker's Sword-->
+			<create_item id="95443" count="1" chance="1"/><!--Sel Mahum Sniper-->
+			<create_item id="95456" count="1" chance="5"/><!--Berserker's Sword-->
+			<create_item id="95457" count="1" chance="5"/><!--Sel Mahum Sniper-->
+			<create_item id="95487" count="1" chance="58"/><!--Recipe: Sel Mahum Base Purge Equipment-->
+			<create_item id="95481" count="5" chance="30"/><!--Aden Purge Crystal-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95466" name="Orc Barracks Purge Rank Reward Pack" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i07"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95444" count="1" chance="1"/><!--Turek Orc Prefect's Dual Swords-->
+			<create_item id="95445" count="1" chance="1"/><!--Butcher's Long Sword-->
+			<create_item id="95458" count="1" chance="5"/><!--Turek Orc Prefect's Dual Swords-->
+			<create_item id="95459" count="1" chance="5"/><!--Butcher's Long Sword-->
+			<create_item id="95488" count="1" chance="58"/><!--Recipe: Orc Barracks Purge Equipment-->
+			<create_item id="95481" count="5" chance="30"/><!--Aden Purge Crystal-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95467" name="Low-grade Supply Box - Cruma Tower Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_1_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="100" max_count="100" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="91912" min_count="700" max_count="700" chance="100"/><!--HP Potion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95468" name="Low-grade Supply Box - Silent Valley Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_1_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="150" max_count="150" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="91912" min_count="200" max_count="200" chance="100"/><!--HP Potion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95469" name="Low-grade Supply Box - Tower of Insolence Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_1_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="300" max_count="300" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="90907" min_count="3" max_count="3" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95470" name="Low-grade Supply Box - Plains of the Lizardmen Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_1_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="150" max_count="150" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="91912" min_count="200" max_count="200" chance="100"/><!--HP Potion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95471" name="Low-grade Supply Box - Dragon Valley Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_1_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="250" max_count="250" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="91912" min_count="1000" max_count="1000" chance="100"/><!--HP Potion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95472" name="Low-grade Supply Box - Sel Mahum Base Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_1_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91690" min_count="5" max_count="5" chance="100"/><!--Special HP Recovery Potion-->
+			<capsuled_item id="90907" min_count="7" max_count="7" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95473" name="Low-grade Supply Box - Orc Barracks Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_1_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="300" max_count="300" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="90907" min_count="10" max_count="10" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95474" name="High-grade Supply Box - Cruma Tower Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="200" max_count="200" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="90907" min_count="2" max_count="2" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95475" name="High-grade Supply Box - Silent Valley Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="300" max_count="300" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="90907" min_count="3" max_count="3" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95476" name="High-grade Supply Box - Tower of Insolence Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91690" min_count="10" max_count="10" chance="100"/><!--Special HP Recovery Potion-->
+			<capsuled_item id="90907" min_count="5" max_count="5" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95477" name="High-grade Supply Box - Plains of the Lizardmen Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="300" max_count="300" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="90907" min_count="3" max_count="3" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95478" name="High-grade Supply Box - Dragon Valley Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="400" max_count="400" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="90907" min_count="4" max_count="4" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95479" name="High-grade Supply Box - Sel Mahum Base Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91690" min_count="20" max_count="20" chance="100"/><!--Special HP Recovery Potion-->
+			<capsuled_item id="90907" min_count="10" max_count="10" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95480" name="High-grade Supply Box - Orc Barracks Purge" add_name="Sealed">
+		<!--Double-click to obtain the following items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91690" min_count="20" max_count="20" chance="100"/><!--Special HP Recovery Potion-->
+			<capsuled_item id="90907" min_count="10" max_count="10" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95481" name="Aden Purge Crystal" add_name="Sealed">
+		<!--A proof of defeating monsters in Aden.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.star_crystal_piece"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95482" name="Recipe: Cruma Tower Purge Equipment">
+		<!--A recipe for Excuro's Staff and Torfe's Claw.-->
+		<set name="price" value="1447500"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.change_restore_i06"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95483" name="Recipe: Silent Valley Purge Equipment">
+		<!--A recipe for Giants' Club and Ancient Rapier.-->
+		<set name="price" value="1447500"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.change_restore_i06"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95484" name="Recipe: Tower of Insolence Purge Equipment">
+		<!--A recipe for Guardian Messenger's Spear and Sealed Angel's Hammer.-->
+		<set name="price" value="1447500"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.change_restore_i06"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95485" name="Recipe: Plains of the Lizardmen Purge Equipment">
+		<!--A recipe for Lizardman Shaman's Staff and Lizard Slayer.-->
+		<set name="price" value="1447500"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.change_restore_i06"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95486" name="Recipe: Dragon Valley Purge Equipment">
+		<!--A recipe for Deadman's Dagger and Dragon Bone Blade.-->
+		<set name="price" value="1447500"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.change_restore_i06"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95487" name="Recipe: Sel Mahum Base Purge Equipment">
+		<!--A recipe for Berserker's Sword and Sel Mahum Sniper.-->
+		<set name="price" value="1447500"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.change_restore_i06"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95488" name="Recipe: Orc Barracks Purge Equipment">
+		<!--A recipe for Turek Orc Prefect's Dual Swords and Butcher's Long Sword.-->
+		<set name="price" value="1447500"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.change_restore_i06"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95489" name="2nd Class Change Gift Box" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i00"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="500" max_count="500" chance="100"/><!--Spirit Ore-->
+			<capsuled_item id="90907" min_count="10" max_count="10" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="95490" name="Infinite Wooden Quiver" add_name="Sealed">
+		<!--Quiver containing arrows made of wood. Used with a No-grade bow.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="50000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARROW_QUIVER"/>
+		<set name="icon" value="br_cashtex.item.br_cash_quiver_of_bone_arrows_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95491" name="Infinite Bone Quiver" add_name="Sealed">
+		<!--Quiver containing arrows made of sharply ground bone. Used with a D-grade bow.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="300000"/>
+		<set name="crystal_type" value="D"/>
+		<set name="type" value="ARROW_QUIVER"/>
+		<set name="icon" value="br_cashtex.item.br_cash_quiver_of_bone_arrows_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95492" name="Ivory Tower's Magic Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain Sayha's Blessing (3 pcs.), a random item from the list and another one of various items.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_sayha_blessed_box"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91641" min_count="3" max_count="3" chance="100"/><!--Sayha's Blessing-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="94840" count="1" chance="0.01"/><!--Breastplate of Protection--><!--TODO: Check chance-->
+			<create_item id="94841" count="1" chance="0.01"/><!--Gaiters of Protection--><!--TODO: Check chance-->
+			<create_item id="94844" count="1" chance="0.01"/><!--Leather Armor of Protection--><!--TODO: Check chance-->
+			<create_item id="94845" count="1" chance="0.01"/><!--Leather Leggings of Protection--><!--TODO: Check chance-->
+			<create_item id="94848" count="1" chance="0.01"/><!--Tunic of Protection--><!--TODO: Check chance-->
+			<create_item id="94849" count="1" chance="0.01"/><!--Stockings of Protection--><!--TODO: Check chance-->
+			<create_item id="94326" count="1" chance="0.01"/><!--Spellbook: Dance of Warrior--><!--TODO: Check chance-->
+			<create_item id="94327" count="1" chance="0.01"/><!--Spellbook: Dance of Fire--><!--TODO: Check chance-->
+			<create_item id="94325" count="1" chance="0.01"/><!--Spellbook: Song of Hunter--><!--TODO: Check chance-->
+			<create_item id="94324" count="1" chance="0.01"/><!--Spellbook: Song of Earth--><!--TODO: Check chance-->
+			<create_item id="93103" count="1" chance="0.01"/><!--Spellbook: Divine Beam--><!--TODO: Check chance-->
+			<create_item id="94499" count="1" chance="0.01"/><!--Spellbook: Titanic Weapon--><!--TODO: Check chance-->
+			<create_item id="94502" count="1" chance="0.01"/><!--Spellbook: Ogre Spirit Totem--><!--TODO: Check chance-->
+			<create_item id="94503" count="1" chance="0.01"/><!--Spellbook: Rabbit Spirit Totem--><!--TODO: Check chance-->
+			<create_item id="94504" count="1" chance="0.01"/><!--Spellbook: Puma Spirit Totem--><!--TODO: Check chance-->
+			<create_item id="94670" count="1" chance="0.01"/><!--Spellbook: Debuff Master--><!--TODO: Check chance-->
+			<create_item id="95349" count="1" chance="0.01"/><!--Spellbook: Dance of Fury--><!--TODO: Check chance-->
+			<create_item id="95348" count="1" chance="0.01"/><!--Spellbook: Song of Wind--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="96616" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94513" count="1" chance="0.01"/><!--Package: Frintezza Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94156" count="1" chance="0.01"/><!--Package: Baium Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94651" count="1" chance="0.01"/><!--Package: Zaken Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94159" count="1" chance="0.01"/><!--Package: Queen Ant Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94162" count="1" chance="0.01"/><!--Package: Orfen Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94654" count="1" chance="0.01"/><!--Package: Core Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="95743" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94729" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94186" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94188" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Armor--><!--TODO: Check chance-->
+			<create_item id="93100" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Shield/ Sigil--><!--TODO: Check chance-->
+			<create_item id="94423" count="1" chance="0.01"/><!--Life Stone - Accessories--><!--TODO: Check chance-->
+			<create_item id="94303" count="1" chance="0.01"/><!--Life Stone - Circlet--><!--TODO: Check chance-->
+			<create_item id="94269" count="2" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="2" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91712" count="2" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="91641" count="3" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="91690" count="20" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="95493" name="Infinite Silver Quiver" add_name="Sealed">
+		<!--Quiver containing steel arrows plated in silver. Used with a B-grade bow.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="5000000"/>
+		<set name="crystal_type" value="B"/>
+		<set name="type" value="ARROW_QUIVER"/>
+		<set name="icon" value="br_cashtex.item.br_cash_quiver_of_silver_arrows_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95494" name="Infinite Mithril Quiver" add_name="Sealed">
+		<!--Quiver with arrows coated by mithril. Used with an A-grade bow.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="20000000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="type" value="ARROW_QUIVER"/>
+		<set name="icon" value="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95495" name="Buff Expansion Book Lv. 1" add_name="Sealed">
+		<!--A book for learning the Divine Inspiration Lv. 1 skill.\n\n<Classes>\nAll classes after the 2nd class change\n\n<Skill effect>\nIncreases the number of buff slots.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="20000000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<set name="icon" value="icon.etc_add_buffslot_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95496" name="Buff Expansion Book Lv. 2" add_name="Sealed">
+		<!--A book for learning the Divine Inspiration Lv. 2 skill.\n\n<Classes>\nAll classes after the 2nd class change\n\n<Skill effect>\nIncreases the number of buff slots.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="20000000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<set name="icon" value="icon.etc_add_buffslot_i01"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95497" name="Infinite Steel Quiver" add_name="Sealed">
+		<!--Quiver containing arrows made of steel. Used with a C-grade bow.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="1000000"/>
+		<set name="crystal_type" value="C"/>
+		<set name="type" value="ARROW_QUIVER"/>
+		<set name="icon" value="br_cashtex.item.br_cash_quiver_of_fine_steel_arrows_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95498" name="Crystal of Light" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="120"/>
+		<set name="icon" value="icon.high_energy_condense_i00"/>
+		<!--A mysterious crystal that contains the light energy.\nRequired for learning Collect Light Souls Lv. 2.\n\n<Classes>\nAll Kamael classes after the 3rd class change\n\n<Skill effect>\nAllows to obtain Light Souls.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="95499" name="Crystal of Shadows" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="120"/>
+		<set name="icon" value="icon.high_energy_condense_i01"/>
+		<!--A mysterious crystal that contains the dark energy.\nRequired for learning Collect Shadow Souls Lv. 2.\n\n<Classes>\nAll Kamael classes after the 3rd class change\n\n<Skill effect>\nAllows to obtain Shadow Souls.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+</list>

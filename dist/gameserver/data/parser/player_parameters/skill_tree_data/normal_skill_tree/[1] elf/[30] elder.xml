@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="30"><!--Elven Elder-->
+		<skill id="1243" level="1" min_level="40" cost="83000"/><!--Blessed Shield-->
+		<skill id="228" level="2" min_level="40" cost="83000"/><!--Fast Spell Casting-->
+		<skill id="1218" level="1" min_level="40" cost="83000"/><!--Greater Battle Heal-->
+		<skill id="1218" level="2" min_level="40" cost="83000"/><!--Greater Battle Heal-->
+		<skill id="1218" level="3" min_level="40" cost="83000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="1" min_level="40" cost="83000"/><!--Greater Group Heal-->
+		<skill id="1219" level="2" min_level="40" cost="83000"/><!--Greater Group Heal-->
+		<skill id="1219" level="3" min_level="40" cost="83000"/><!--Greater Group Heal-->
+		<skill id="1217" level="1" min_level="40" cost="83000"/><!--Greater Heal-->
+		<skill id="1217" level="2" min_level="40" cost="83000"/><!--Greater Heal-->
+		<skill id="1217" level="3" min_level="40" cost="83000"/><!--Greater Heal-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="1016" level="3" min_level="40" cost="83000"/><!--Resurrection-->
+		<skill id="1303" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="1257" level="2" min_level="40" cost="83000"/><!--Decrease Weight-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="1830" level="1" min_level="40" auto_get="true"/><!--Spell Master-->
+		<skill id="1035" level="2" min_level="40" cost="83000"/><!--Mental Shield-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="1206" level="6" min_level="40" cost="83000"/><!--Wind Shackle-->
+		<skill id="1087" level="2" min_level="40" cost="83000"/><!--Agility-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="1028" level="1" min_level="40" cost="83000"/><!--Might of Heaven-->
+		<skill id="1028" level="2" min_level="40" cost="83000"/><!--Might of Heaven-->
+		<skill id="1164" level="6" min_level="40" cost="83000"/><!--Weakness-->
+		<skill id="1259" level="1" min_level="40" cost="83000"/><!--Resilience-->
+		<skill id="213" level="3" min_level="40" cost="83000"/><!--Mana Boost-->
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="1397" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="1201" level="11" min_level="41" cost="120000"/><!--Dryad Root-->
+		<skill id="1069" level="11" min_level="41" cost="120000"/><!--Sleep-->
+		<skill id="1218" level="4" min_level="42" cost="120000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="4" min_level="42" cost="120000"/><!--Greater Group Heal-->
+		<skill id="1217" level="4" min_level="42" cost="120000"/><!--Greater Heal-->
+		<skill id="1201" level="12" min_level="42" cost="120000"/><!--Dryad Root-->
+		<skill id="1028" level="3" min_level="42" cost="120000"/><!--Might of Heaven-->
+		<skill id="1304" level="1" min_level="42" cost="120000"/><!--Advanced Block-->
+		<skill id="1069" level="12" min_level="42" cost="120000"/><!--Sleep-->
+		<skill id="1218" level="5" min_level="43" cost="120000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="5" min_level="43" cost="120000"/><!--Greater Group Heal-->
+		<skill id="1217" level="5" min_level="43" cost="120000"/><!--Greater Heal-->
+		<skill id="1201" level="13" min_level="43" cost="120000"/><!--Dryad Root-->
+		<skill id="1069" level="13" min_level="43" cost="120000"/><!--Sleep-->
+		<skill id="1218" level="6" min_level="44" cost="120000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="6" min_level="44" cost="120000"/><!--Greater Group Heal-->
+		<skill id="1217" level="6" min_level="44" cost="120000"/><!--Greater Heal-->
+		<skill id="1050" level="1" min_level="44" cost="120000"/><!--Return-->
+		<skill id="1078" level="3" min_level="44" cost="120000"/><!--Concentration-->
+		<skill id="1201" level="14" min_level="44" cost="120000"/><!--Dryad Root-->
+		<skill id="1206" level="7" min_level="44" cost="120000"/><!--Wind Shackle-->
+		<skill id="1018" level="1" min_level="44" cost="120000"><!--Purify-->
+			<required_items>
+				<item id="90045" count="3"/><!--Magical Tablet-->
+			</required_items>
+		</skill>
+		<skill id="1273" level="1" min_level="44" cost="120000"/><!--Eva's Serenade-->
+		<skill id="1028" level="4" min_level="44" cost="120000"/><!--Might of Heaven-->
+		<skill id="1164" level="7" min_level="44" cost="120000"/><!--Weakness-->
+		<skill id="1069" level="14" min_level="44" cost="120000"/><!--Sleep-->
+		<skill id="1201" level="15" min_level="45" cost="120000"/><!--Dryad Root-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="1069" level="15" min_level="45" cost="120000"/><!--Sleep-->
+		<skill id="1218" level="7" min_level="46" cost="190000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="7" min_level="46" cost="190000"/><!--Greater Group Heal-->
+		<skill id="1217" level="7" min_level="46" cost="190000"/><!--Greater Heal-->
+		<skill id="1201" level="16" min_level="46" cost="190000"/><!--Dryad Root-->
+		<skill id="1020" level="1" min_level="46" cost="190000"/><!--Vitalize-->
+		<skill id="1028" level="5" min_level="46" cost="190000"/><!--Might of Heaven-->
+		<skill id="1069" level="16" min_level="46" cost="190000"/><!--Sleep-->
+		<skill id="1218" level="8" min_level="47" cost="190000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="8" min_level="47" cost="190000"/><!--Greater Group Heal-->
+		<skill id="1217" level="8" min_level="47" cost="190000"/><!--Greater Heal-->
+		<skill id="1201" level="17" min_level="47" cost="190000"/><!--Dryad Root-->
+		<skill id="1020" level="2" min_level="47" cost="190000"/><!--Vitalize-->
+		<skill id="1069" level="17" min_level="47" cost="190000"/><!--Sleep-->
+		<skill id="1243" level="2" min_level="48" cost="190000"/><!--Blessed Shield-->
+		<skill id="164" level="3" min_level="48" cost="190000"/><!--Quick Recovery-->
+		<skill id="1218" level="9" min_level="48" cost="190000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="9" min_level="48" cost="190000"/><!--Greater Group Heal-->
+		<skill id="1217" level="9" min_level="48" cost="190000"/><!--Greater Heal-->
+		<skill id="1255" level="1" min_level="48" cost="190000"/><!--Party Return-->
+		<skill id="1016" level="4" min_level="48" cost="190000"/><!--Resurrection-->
+		<skill id="1201" level="18" min_level="48" cost="190000"/><!--Dryad Root-->
+		<skill id="1035" level="3" min_level="48" cost="190000"/><!--Mental Shield-->
+		<skill id="1020" level="3" min_level="48" cost="190000"/><!--Vitalize-->
+		<skill id="1206" level="8" min_level="48" cost="190000"/><!--Wind Shackle-->
+		<skill id="1273" level="2" min_level="48" cost="190000"/><!--Eva's Serenade-->
+		<skill id="1028" level="6" min_level="48" cost="190000"/><!--Might of Heaven-->
+		<skill id="1164" level="8" min_level="48" cost="190000"/><!--Weakness-->
+		<skill id="213" level="4" min_level="48" cost="190000"/><!--Mana Boost-->
+		<skill id="1069" level="18" min_level="48" cost="190000"/><!--Sleep-->
+		<skill id="1201" level="19" min_level="49" cost="190000"/><!--Dryad Root-->
+		<skill id="1020" level="4" min_level="49" cost="190000"/><!--Vitalize-->
+		<skill id="1069" level="19" min_level="49" cost="190000"/><!--Sleep-->
+		<skill id="1218" level="10" min_level="50" cost="300000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="10" min_level="50" cost="300000"/><!--Greater Group Heal-->
+		<skill id="1217" level="10" min_level="50" cost="300000"/><!--Greater Heal-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1201" level="20" min_level="50" cost="300000"/><!--Dryad Root-->
+		<skill id="1257" level="3" min_level="50" cost="300000"/><!--Decrease Weight-->
+		<skill id="1020" level="5" min_level="50" cost="300000"/><!--Vitalize-->
+		<skill id="1087" level="3" min_level="50" cost="300000"/><!--Agility-->
+		<skill id="1028" level="7" min_level="50" cost="300000"/><!--Might of Heaven-->
+		<skill id="1073" level="2" min_level="50" cost="300000"/><!--Increased Power of Magic-->
+		<skill id="1304" level="2" min_level="50" cost="300000"/><!--Advanced Block-->
+		<skill id="1069" level="20" min_level="50" cost="300000"/><!--Sleep-->
+		<skill id="1218" level="11" min_level="51" cost="300000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="11" min_level="51" cost="300000"/><!--Greater Group Heal-->
+		<skill id="1217" level="11" min_level="51" cost="300000"/><!--Greater Heal-->
+		<skill id="1020" level="6" min_level="51" cost="300000"/><!--Vitalize-->
+		<skill id="1069" level="21" min_level="51" cost="300000"/><!--Sleep-->
+		<skill id="1405" level="1" min_level="52" cost="300000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="1218" level="12" min_level="52" cost="300000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="12" min_level="52" cost="300000"/><!--Greater Group Heal-->
+		<skill id="1217" level="12" min_level="52" cost="300000"/><!--Greater Heal-->
+		<skill id="1078" level="4" min_level="52" cost="300000"/><!--Concentration-->
+		<skill id="1201" level="21" min_level="52" cost="300000"/><!--Dryad Root-->
+		<skill id="1020" level="7" min_level="52" cost="300000"/><!--Vitalize-->
+		<skill id="1206" level="9" min_level="52" cost="300000"/><!--Wind Shackle-->
+		<skill id="1018" level="2" min_level="52" cost="300000"/><!--Purify-->
+		<skill id="1273" level="3" min_level="52" cost="300000"/><!--Eva's Serenade-->
+		<skill id="1028" level="8" min_level="52" cost="300000"/><!--Might of Heaven-->
+		<skill id="1164" level="9" min_level="52" cost="300000"/><!--Weakness-->
+		<skill id="1259" level="2" min_level="52" cost="300000"/><!--Resilience-->
+		<skill id="1069" level="22" min_level="52" cost="300000"/><!--Sleep-->
+		<skill id="1020" level="8" min_level="53" cost="300000"/><!--Vitalize-->
+		<skill id="1069" level="23" min_level="53" cost="300000"/><!--Sleep-->
+		<skill id="1218" level="13" min_level="54" cost="470000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="13" min_level="54" cost="470000"/><!--Greater Group Heal-->
+		<skill id="1217" level="13" min_level="54" cost="470000"/><!--Greater Heal-->
+		<skill id="1201" level="22" min_level="54" cost="470000"/><!--Dryad Root-->
+		<skill id="1020" level="9" min_level="54" cost="470000"/><!--Vitalize-->
+		<skill id="1028" level="9" min_level="54" cost="470000"/><!--Might of Heaven-->
+		<skill id="1069" level="24" min_level="54" cost="470000"/><!--Sleep-->
+		<skill id="1218" level="14" min_level="55" cost="470000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="14" min_level="55" cost="470000"/><!--Greater Group Heal-->
+		<skill id="1217" level="14" min_level="55" cost="470000"/><!--Greater Heal-->
+		<skill id="1020" level="10" min_level="55" cost="470000"/><!--Vitalize-->
+		<skill id="1069" level="25" min_level="55" cost="470000"/><!--Sleep-->
+		<skill id="1243" level="3" min_level="56" cost="470000"/><!--Blessed Shield-->
+		<skill id="228" level="3" min_level="56" cost="470000"/><!--Fast Spell Casting-->
+		<skill id="1218" level="15" min_level="56" cost="470000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="15" min_level="56" cost="470000"/><!--Greater Group Heal-->
+		<skill id="1217" level="15" min_level="56" cost="470000"/><!--Greater Heal-->
+		<skill id="1050" level="2" min_level="56" cost="470000"/><!--Return-->
+		<skill id="1255" level="2" min_level="56" cost="470000"/><!--Party Return-->
+		<skill id="1016" level="5" min_level="56" cost="470000"/><!--Resurrection-->
+		<skill id="1201" level="23" min_level="56" cost="470000"/><!--Dryad Root-->
+		<skill id="1035" level="4" min_level="56" cost="470000"/><!--Mental Shield-->
+		<skill id="1020" level="11" min_level="56" cost="470000"/><!--Vitalize-->
+		<skill id="1206" level="10" min_level="56" cost="470000"/><!--Wind Shackle-->
+		<skill id="1273" level="4" min_level="56" cost="470000"/><!--Eva's Serenade-->
+		<skill id="1028" level="10" min_level="56" cost="470000"/><!--Might of Heaven-->
+		<skill id="1164" level="10" min_level="56" cost="470000"/><!--Weakness-->
+		<skill id="213" level="5" min_level="56" cost="470000"/><!--Mana Boost-->
+		<skill id="1069" level="26" min_level="56" cost="470000"/><!--Sleep-->
+		<skill id="1218" level="16" min_level="57" cost="480000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="16" min_level="57" cost="480000"/><!--Greater Group Heal-->
+		<skill id="1217" level="16" min_level="57" cost="480000"/><!--Greater Heal-->
+		<skill id="1020" level="12" min_level="57" cost="480000"/><!--Vitalize-->
+		<skill id="1069" level="27" min_level="57" cost="480000"/><!--Sleep-->
+		<skill id="1218" level="17" min_level="58" cost="480000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="17" min_level="58" cost="480000"/><!--Greater Group Heal-->
+		<skill id="1217" level="17" min_level="58" cost="480000"/><!--Greater Heal-->
+		<skill id="1012" level="3" min_level="58" cost="480000"/><!--Cure-->
+		<skill id="1201" level="24" min_level="58" cost="480000"/><!--Dryad Root-->
+		<skill id="1020" level="13" min_level="58" cost="480000"/><!--Vitalize-->
+		<skill id="1206" level="11" min_level="58" cost="480000"/><!--Wind Shackle-->
+		<skill id="1273" level="5" min_level="58" cost="480000"/><!--Eva's Serenade-->
+		<skill id="1028" level="11" min_level="58" cost="480000"/><!--Might of Heaven-->
+		<skill id="1164" level="11" min_level="58" cost="480000"/><!--Weakness-->
+		<skill id="1304" level="3" min_level="58" cost="480000"/><!--Advanced Block-->
+		<skill id="1069" level="28" min_level="58" cost="480000"/><!--Sleep-->
+		<skill id="1218" level="18" min_level="59" cost="580000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="18" min_level="59" cost="580000"/><!--Greater Group Heal-->
+		<skill id="1217" level="18" min_level="59" cost="580000"/><!--Greater Heal-->
+		<skill id="1020" level="14" min_level="59" cost="580000"/><!--Vitalize-->
+		<skill id="1069" level="29" min_level="59" cost="580000"/><!--Sleep-->
+		<skill id="1218" level="19" min_level="60" cost="580000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="19" min_level="60" cost="580000"/><!--Greater Group Heal-->
+		<skill id="1217" level="19" min_level="60" cost="580000"/><!--Greater Heal-->
+		<skill id="1078" level="5" min_level="60" cost="580000"/><!--Concentration-->
+		<skill id="1201" level="25" min_level="60" cost="580000"/><!--Dryad Root-->
+		<skill id="1830" level="2" min_level="60" cost="500000"><!--Spell Master-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1020" level="15" min_level="60" cost="580000"/><!--Vitalize-->
+		<skill id="1206" level="12" min_level="60" cost="580000"/><!--Wind Shackle-->
+		<skill id="1273" level="6" min_level="60" cost="580000"/><!--Eva's Serenade-->
+		<skill id="1028" level="12" min_level="60" cost="580000"/><!--Might of Heaven-->
+		<skill id="1164" level="12" min_level="60" cost="580000"/><!--Weakness-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="213" level="6" min_level="60" cost="580000"/><!--Mana Boost-->
+		<skill id="1069" level="30" min_level="60" cost="580000"/><!--Sleep-->
+		<skill id="1405" level="2" min_level="61" cost="700000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="1218" level="20" min_level="61" cost="700000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="20" min_level="61" cost="700000"/><!--Greater Group Heal-->
+		<skill id="1217" level="20" min_level="61" cost="700000"/><!--Greater Heal-->
+		<skill id="1020" level="16" min_level="61" cost="700000"/><!--Vitalize-->
+		<skill id="1069" level="31" min_level="61" cost="700000"/><!--Sleep-->
+		<skill id="1243" level="4" min_level="62" cost="700000"/><!--Blessed Shield-->
+		<skill id="1218" level="21" min_level="62" cost="700000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="21" min_level="62" cost="700000"/><!--Greater Group Heal-->
+		<skill id="1217" level="21" min_level="62" cost="700000"/><!--Greater Heal-->
+		<skill id="1201" level="26" min_level="62" cost="700000"/><!--Dryad Root-->
+		<skill id="1020" level="17" min_level="62" cost="700000"/><!--Vitalize-->
+		<skill id="1206" level="13" min_level="62" cost="700000"/><!--Wind Shackle-->
+		<skill id="1018" level="3" min_level="62" cost="700000"/><!--Purify-->
+		<skill id="1273" level="7" min_level="62" cost="700000"/><!--Eva's Serenade-->
+		<skill id="1028" level="13" min_level="62" cost="700000"/><!--Might of Heaven-->
+		<skill id="1164" level="13" min_level="62" cost="700000"/><!--Weakness-->
+		<skill id="1069" level="32" min_level="62" cost="700000"/><!--Sleep-->
+		<skill id="1218" level="22" min_level="63" cost="880000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="22" min_level="63" cost="880000"/><!--Greater Group Heal-->
+		<skill id="1217" level="22" min_level="63" cost="880000"/><!--Greater Heal-->
+		<skill id="1020" level="18" min_level="63" cost="880000"/><!--Vitalize-->
+		<skill id="1069" level="33" min_level="63" cost="880000"/><!--Sleep-->
+		<skill id="1218" level="23" min_level="64" cost="880000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="23" min_level="64" cost="880000"/><!--Greater Group Heal-->
+		<skill id="1217" level="23" min_level="64" cost="880000"/><!--Greater Heal-->
+		<skill id="1016" level="6" min_level="64" cost="880000"/><!--Resurrection-->
+		<skill id="1201" level="27" min_level="64" cost="880000"/><!--Dryad Root-->
+		<skill id="1020" level="19" min_level="64" cost="880000"/><!--Vitalize-->
+		<skill id="1206" level="14" min_level="64" cost="880000"/><!--Wind Shackle-->
+		<skill id="1273" level="8" min_level="64" cost="880000"/><!--Eva's Serenade-->
+		<skill id="1028" level="14" min_level="64" cost="880000"/><!--Might of Heaven-->
+		<skill id="1164" level="14" min_level="64" cost="880000"/><!--Weakness-->
+		<skill id="1259" level="3" min_level="64" cost="880000"/><!--Resilience-->
+		<skill id="1069" level="34" min_level="64" cost="880000"/><!--Sleep-->
+		<skill id="1218" level="24" min_level="65" cost="1100000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="24" min_level="65" cost="1100000"/><!--Greater Group Heal-->
+		<skill id="1217" level="24" min_level="65" cost="1100000"/><!--Greater Heal-->
+		<skill id="1020" level="20" min_level="65" cost="1100000"/><!--Vitalize-->
+		<skill id="1069" level="35" min_level="65" cost="1100000"/><!--Sleep-->
+		<skill id="1243" level="5" min_level="66" cost="1100000"/><!--Blessed Shield-->
+		<skill id="1218" level="25" min_level="66" cost="1100000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="25" min_level="66" cost="1100000"/><!--Greater Group Heal-->
+		<skill id="1217" level="25" min_level="66" cost="1100000"/><!--Greater Heal-->
+		<skill id="1201" level="28" min_level="66" cost="1100000"/><!--Dryad Root-->
+		<skill id="1020" level="21" min_level="66" cost="1100000"/><!--Vitalize-->
+		<skill id="1206" level="15" min_level="66" cost="1100000"/><!--Wind Shackle-->
+		<skill id="1273" level="9" min_level="66" cost="1100000"/><!--Eva's Serenade-->
+		<skill id="1028" level="15" min_level="66" cost="1100000"/><!--Might of Heaven-->
+		<skill id="1164" level="15" min_level="66" cost="1100000"/><!--Weakness-->
+		<skill id="213" level="7" min_level="66" cost="1100000"/><!--Mana Boost-->
+		<skill id="1304" level="4" min_level="66" cost="1100000"/><!--Advanced Block-->
+		<skill id="1069" level="36" min_level="66" cost="1100000"/><!--Sleep-->
+		<skill id="1218" level="26" min_level="67" cost="1400000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="26" min_level="67" cost="1400000"/><!--Greater Group Heal-->
+		<skill id="1217" level="26" min_level="67" cost="1400000"/><!--Greater Heal-->
+		<skill id="1020" level="22" min_level="67" cost="1400000"/><!--Vitalize-->
+		<skill id="1069" level="37" min_level="67" cost="1400000"/><!--Sleep-->
+		<skill id="1218" level="27" min_level="68" cost="1400000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="27" min_level="68" cost="1400000"/><!--Greater Group Heal-->
+		<skill id="1217" level="27" min_level="68" cost="1400000"/><!--Greater Heal-->
+		<skill id="1078" level="6" min_level="68" cost="1400000"/><!--Concentration-->
+		<skill id="1201" level="29" min_level="68" cost="1400000"/><!--Dryad Root-->
+		<skill id="1020" level="23" min_level="68" cost="1400000"/><!--Vitalize-->
+		<skill id="1206" level="16" min_level="68" cost="1400000"/><!--Wind Shackle-->
+		<skill id="1273" level="10" min_level="68" cost="1400000"/><!--Eva's Serenade-->
+		<skill id="1028" level="16" min_level="68" cost="1400000"/><!--Might of Heaven-->
+		<skill id="1164" level="16" min_level="68" cost="1400000"/><!--Weakness-->
+		<skill id="1069" level="38" min_level="68" cost="1400000"/><!--Sleep-->
+		<skill id="1218" level="28" min_level="69" cost="1700000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="28" min_level="69" cost="1700000"/><!--Greater Group Heal-->
+		<skill id="1217" level="28" min_level="69" cost="1700000"/><!--Greater Heal-->
+		<skill id="1020" level="24" min_level="69" cost="1700000"/><!--Vitalize-->
+		<skill id="1069" level="39" min_level="69" cost="1700000"/><!--Sleep-->
+		<skill id="1243" level="6" min_level="70" cost="1700000"/><!--Blessed Shield-->
+		<skill id="1218" level="29" min_level="70" cost="1700000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="29" min_level="70" cost="1700000"/><!--Greater Group Heal-->
+		<skill id="1217" level="29" min_level="70" cost="1700000"/><!--Greater Heal-->
+		<skill id="1201" level="30" min_level="70" cost="1700000"/><!--Dryad Root-->
+		<skill id="1830" level="3" min_level="70" cost="1200000"><!--Spell Master-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1020" level="25" min_level="70" cost="1700000"/><!--Vitalize-->
+		<skill id="1206" level="17" min_level="70" cost="1700000"/><!--Wind Shackle-->
+		<skill id="1273" level="11" min_level="70" cost="1700000"/><!--Eva's Serenade-->
+		<skill id="1028" level="17" min_level="70" cost="1700000"/><!--Might of Heaven-->
+		<skill id="1164" level="17" min_level="70" cost="1700000"/><!--Weakness-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="1069" level="40" min_level="70" cost="1700000"/><!--Sleep-->
+		<skill id="1218" level="30" min_level="71" cost="2000000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="30" min_level="71" cost="2000000"/><!--Greater Group Heal-->
+		<skill id="1217" level="30" min_level="71" cost="2000000"/><!--Greater Heal-->
+		<skill id="1020" level="26" min_level="71" cost="2000000"/><!--Vitalize-->
+		<skill id="1069" level="41" min_level="71" cost="2000000"/><!--Sleep-->
+		<skill id="1218" level="31" min_level="72" cost="2000000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="31" min_level="72" cost="2000000"/><!--Greater Group Heal-->
+		<skill id="1217" level="31" min_level="72" cost="2000000"/><!--Greater Heal-->
+		<skill id="1201" level="31" min_level="72" cost="2000000"/><!--Dryad Root-->
+		<skill id="1020" level="27" min_level="72" cost="2000000"/><!--Vitalize-->
+		<skill id="1206" level="18" min_level="72" cost="2000000"/><!--Wind Shackle-->
+		<skill id="1273" level="12" min_level="72" cost="2000000"/><!--Eva's Serenade-->
+		<skill id="1028" level="18" min_level="72" cost="2000000"/><!--Might of Heaven-->
+		<skill id="1164" level="18" min_level="72" cost="2000000"/><!--Weakness-->
+		<skill id="1259" level="4" min_level="72" cost="2000000"/><!--Resilience-->
+		<skill id="213" level="8" min_level="72" cost="2000000"/><!--Mana Boost-->
+		<skill id="1304" level="5" min_level="72" cost="2000000"/><!--Advanced Block-->
+		<skill id="1069" level="42" min_level="72" cost="2000000"/><!--Sleep-->
+		<skill id="1218" level="32" min_level="73" cost="2400000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="32" min_level="73" cost="2400000"/><!--Greater Group Heal-->
+		<skill id="1217" level="32" min_level="73" cost="2400000"/><!--Greater Heal-->
+		<skill id="1020" level="28" min_level="73" cost="2400000"/><!--Vitalize-->
+		<skill id="1069" level="43" min_level="73" cost="2400000"/><!--Sleep-->
+		<skill id="1218" level="33" min_level="74" cost="2400000"/><!--Greater Battle Heal-->
+		<skill id="1219" level="33" min_level="74" cost="2400000"/><!--Greater Group Heal-->
+		<skill id="1217" level="33" min_level="74" cost="2400000"/><!--Greater Heal-->
+		<skill id="1016" level="7" min_level="74" cost="2400000"/><!--Resurrection-->
+		<skill id="1201" level="32" min_level="74" cost="2400000"/><!--Dryad Root-->
+		<skill id="1020" level="29" min_level="74" cost="2400000"/><!--Vitalize-->
+		<skill id="1206" level="19" min_level="74" cost="2400000"/><!--Wind Shackle-->
+		<skill id="1273" level="13" min_level="74" cost="2400000"/><!--Eva's Serenade-->
+		<skill id="1028" level="19" min_level="74" cost="2400000"/><!--Might of Heaven-->
+		<skill id="1164" level="19" min_level="74" cost="2400000"/><!--Weakness-->
+		<skill id="1069" level="44" min_level="74" cost="2400000"/><!--Sleep-->
+		<skill id="1020" level="30" min_level="75" cost="2400000"/><!--Vitalize-->
+		<skill id="1028" level="20" min_level="75" cost="2400000"/><!--Might of Heaven-->
+		<skill id="1069" level="45" min_level="75" cost="2400000"/><!--Sleep-->
+		<skill id="47266" level="1" min_level="58" cost="480000"/><!--Favorable Cover-->
+		<skill id="47266" level="2" min_level="66" cost="1100000"/><!--Favorable Cover-->
+		<skill id="47266" level="3" min_level="74" cost="2400000"/><!--Favorable Cover-->
+		<skill id="47267" level="2" min_level="40" cost="83000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="3" min_level="47" cost="190000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="4" min_level="53" cost="300000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="5" min_level="59" cost="580000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="6" min_level="65" cost="1100000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="7" min_level="71" cost="2000000"/><!--Priest's Armor Mastery-->
+		<skill id="47268" level="2" min_level="40" cost="83000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="3" min_level="47" cost="190000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="4" min_level="53" cost="300000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="5" min_level="59" cost="580000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="6" min_level="65" cost="1100000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="7" min_level="71" cost="2000000"/><!--Priest's Attack Mastery-->
+		<skill id="47271" level="2" min_level="43" cost="120000"/><!--Priest's Recovery Mastery-->
+		<skill id="47271" level="3" min_level="53" cost="300000"/><!--Priest's Recovery Mastery-->
+		<skill id="47271" level="4" min_level="61" cost="700000"/><!--Priest's Recovery Mastery-->
+		<skill id="47271" level="5" min_level="70" cost="1700000"/><!--Priest's Recovery Mastery-->
+		<skill id="47269" level="2" min_level="40" cost="83000"/><!--Mana Effect Boost-->
+		<skill id="47269" level="3" min_level="50" cost="300000"/><!--Mana Effect Boost-->
+		<skill id="47269" level="4" min_level="60" cost="580000"/><!--Mana Effect Boost-->
+		<skill id="47269" level="5" min_level="70" cost="1700000"/><!--Mana Effect Boost-->
+		<skill id="47270" level="2" min_level="41" cost="120000"/><!--Anti Magic-->
+		<skill id="47270" level="3" min_level="60" cost="580000"/><!--Anti Magic-->
+		<skill id="47270" level="4" min_level="72" cost="2000000"/><!--Anti Magic-->
+	</normal_skill_tree>
+</list>

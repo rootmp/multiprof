@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="21"><!--Swordsinger-->
+		<skill id="82" level="2" min_level="40" cost="120000"/><!--Majesty-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="217" level="9" min_level="40" cost="120000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="217" level="10" min_level="40" cost="120000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="217" level="11" min_level="40" cost="120000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="141" level="4" min_level="40" cost="120000"/><!--Weapon Mastery-->
+		<skill id="232" level="16" min_level="40" cost="120000"/><!--Heavy Armor Mastery-->
+		<skill id="232" level="17" min_level="40" cost="120000"/><!--Heavy Armor Mastery-->
+		<skill id="232" level="18" min_level="40" cost="120000"/><!--Heavy Armor Mastery-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="21" level="2" min_level="40" cost="120000"/><!--Recovery-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="196" level="1" min_level="40" cost="120000"/><!--Dignity-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="61" level="2" min_level="40" cost="120000"/><!--Elven Spirit-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="147" level="15" min_level="40" cost="120000"/><!--Magic Resistance-->
+		<skill id="147" level="16" min_level="40" cost="120000"/><!--Magic Resistance-->
+		<skill id="147" level="17" min_level="40" cost="120000"/><!--Magic Resistance-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="102" level="2" min_level="40" cost="120000"/><!--Entangle-->
+		<skill id="304" level="1" min_level="40" cost="120000"/><!--Song of Earth-->
+		<skill id="267" level="1" min_level="40" cost="120000"/><!--Song of Hunter-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="45187" level="1" min_level="40" cost="120000"/><!--Guard Crush-->
+		<skill id="123" level="1" min_level="40" cost="120000"/><!--Spirit Barrier-->
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="197" level="1" min_level="40" cost="120000"/><!--Honor-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="70" level="10" min_level="40" cost="120000"/><!--Emergency Rescue-->
+		<skill id="217" level="12" min_level="41" cost="140000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="19" min_level="41" cost="140000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="18" min_level="41" cost="140000"/><!--Magic Resistance-->
+		<skill id="70" level="11" min_level="41" cost="140000"/><!--Emergency Rescue-->
+		<skill id="217" level="13" min_level="42" cost="140000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="20" min_level="42" cost="140000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="19" min_level="42" cost="140000"/><!--Magic Resistance-->
+		<skill id="270" level="1" min_level="42" cost="140000"/><!--Song of Vengeance-->
+		<skill id="70" level="12" min_level="42" cost="140000"/><!--Emergency Rescue-->
+		<skill id="217" level="14" min_level="43" cost="140000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="21" min_level="43" cost="140000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="20" min_level="43" cost="140000"/><!--Magic Resistance-->
+		<skill id="102" level="3" min_level="43" cost="140000"/><!--Entangle-->
+		<skill id="191" level="2" min_level="43" cost="140000"/><!--Focus Mind-->
+		<skill id="70" level="13" min_level="43" cost="140000"/><!--Emergency Rescue-->
+		<skill id="217" level="15" min_level="44" cost="200000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="22" min_level="44" cost="200000"/><!--Heavy Armor Mastery-->
+		<skill id="268" level="1" min_level="44" cost="200000"/><!--Elven Guard's Protection-->
+		<skill id="147" level="21" min_level="44" cost="200000"/><!--Magic Resistance-->
+		<skill id="70" level="14" min_level="44" cost="200000"/><!--Emergency Rescue-->
+		<skill id="217" level="16" min_level="45" cost="200000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="23" min_level="45" cost="200000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="22" min_level="45" cost="200000"/><!--Magic Resistance-->
+		<skill id="123" level="2" min_level="45" cost="200000"/><!--Spirit Barrier-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="70" level="15" min_level="45" cost="200000"/><!--Emergency Rescue-->
+		<skill id="217" level="17" min_level="46" cost="200000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="24" min_level="46" cost="200000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="23" min_level="46" cost="200000"/><!--Magic Resistance-->
+		<skill id="102" level="4" min_level="46" cost="200000"/><!--Entangle-->
+		<skill id="70" level="16" min_level="46" cost="200000"/><!--Emergency Rescue-->
+		<skill id="217" level="18" min_level="47" cost="280000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="25" min_level="47" cost="280000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="24" min_level="47" cost="280000"/><!--Magic Resistance-->
+		<skill id="70" level="17" min_level="47" cost="280000"/><!--Emergency Rescue-->
+		<skill id="269" level="1" min_level="48" cost="280000"/><!--Elven Life Boost-->
+		<skill id="217" level="19" min_level="48" cost="280000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="26" min_level="48" cost="280000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="25" min_level="48" cost="280000"/><!--Magic Resistance-->
+		<skill id="70" level="18" min_level="48" cost="280000"/><!--Emergency Rescue-->
+		<skill id="217" level="20" min_level="49" cost="280000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="27" min_level="49" cost="280000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="26" min_level="49" cost="280000"/><!--Magic Resistance-->
+		<skill id="102" level="5" min_level="49" cost="280000"/><!--Entangle-->
+		<skill id="191" level="3" min_level="49" cost="280000"/><!--Focus Mind-->
+		<skill id="70" level="19" min_level="49" cost="280000"/><!--Emergency Rescue-->
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="217" level="21" min_level="50" cost="410000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="28" min_level="50" cost="410000"/><!--Heavy Armor Mastery-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="402" level="1" min_level="50" cost="410000"/><!--Shackle-->
+		<skill id="147" level="27" min_level="50" cost="410000"/><!--Magic Resistance-->
+		<skill id="45187" level="2" min_level="50" cost="410000"/><!--Guard Crush-->
+		<skill id="230" level="2" min_level="50" cost="410000"/><!--Sprint-->
+		<skill id="70" level="20" min_level="50" cost="410000"/><!--Emergency Rescue-->
+		<skill id="217" level="22" min_level="51" cost="410000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="29" min_level="51" cost="410000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="28" min_level="51" cost="410000"/><!--Magic Resistance-->
+		<skill id="70" level="21" min_level="51" cost="410000"/><!--Emergency Rescue-->
+		<skill id="1405" level="1" min_level="52" cost="410000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="217" level="23" min_level="52" cost="410000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="30" min_level="52" cost="410000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="29" min_level="52" cost="410000"/><!--Magic Resistance-->
+		<skill id="265" level="1" min_level="52" cost="410000"/><!--Elven Melody-->
+		<skill id="102" level="6" min_level="52" cost="410000"/><!--Entangle-->
+		<skill id="70" level="22" min_level="52" cost="410000"/><!--Emergency Rescue-->
+		<skill id="217" level="24" min_level="53" cost="570000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="31" min_level="53" cost="570000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="30" min_level="53" cost="570000"/><!--Magic Resistance-->
+		<skill id="70" level="23" min_level="53" cost="570000"/><!--Emergency Rescue-->
+		<skill id="217" level="25" min_level="54" cost="570000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="32" min_level="54" cost="570000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="31" min_level="54" cost="570000"/><!--Magic Resistance-->
+		<skill id="70" level="24" min_level="54" cost="570000"/><!--Emergency Rescue-->
+		<skill id="217" level="26" min_level="55" cost="570000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="33" min_level="55" cost="570000"/><!--Heavy Armor Mastery-->
+		<skill id="402" level="2" min_level="55" cost="570000"/><!--Shackle-->
+		<skill id="147" level="32" min_level="55" cost="570000"/><!--Magic Resistance-->
+		<skill id="102" level="7" min_level="55" cost="570000"/><!--Entangle-->
+		<skill id="98" level="1" min_level="55" cost="570000"/><!--Symphony-->
+		<skill id="264" level="1" min_level="55" cost="570000"/><!--Elven Magic Resistance-->
+		<skill id="123" level="3" min_level="55" cost="570000"/><!--Spirit Barrier-->
+		<skill id="191" level="4" min_level="55" cost="570000"/><!--Focus Mind-->
+		<skill id="70" level="25" min_level="55" cost="570000"/><!--Emergency Rescue-->
+		<skill id="217" level="27" min_level="56" cost="780000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="34" min_level="56" cost="780000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="33" min_level="56" cost="780000"/><!--Magic Resistance-->
+		<skill id="70" level="26" min_level="56" cost="780000"/><!--Emergency Rescue-->
+		<skill id="217" level="28" min_level="57" cost="780000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="35" min_level="57" cost="780000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="34" min_level="57" cost="780000"/><!--Magic Resistance-->
+		<skill id="70" level="27" min_level="57" cost="780000"/><!--Emergency Rescue-->
+		<skill id="82" level="3" min_level="58" cost="780000"/><!--Majesty-->
+		<skill id="217" level="29" min_level="58" cost="780000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="36" min_level="58" cost="780000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="35" min_level="58" cost="780000"/><!--Magic Resistance-->
+		<skill id="102" level="8" min_level="58" cost="780000"/><!--Entangle-->
+		<skill id="70" level="28" min_level="58" cost="780000"/><!--Emergency Rescue-->
+		<skill id="217" level="30" min_level="59" cost="1100000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="37" min_level="59" cost="1100000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="36" min_level="59" cost="1100000"/><!--Magic Resistance-->
+		<skill id="70" level="29" min_level="59" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="217" level="31" min_level="60" cost="1100000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="38" min_level="60" cost="1100000"/><!--Heavy Armor Mastery-->
+		<skill id="21" level="3" min_level="60" cost="1100000"/><!--Recovery-->
+		<skill id="61" level="3" min_level="60" cost="1100000"/><!--Elven Spirit-->
+		<skill id="402" level="3" min_level="60" cost="1100000"/><!--Shackle-->
+		<skill id="147" level="37" min_level="60" cost="1100000"/><!--Magic Resistance-->
+		<skill id="102" level="9" min_level="60" cost="1100000"/><!--Entangle-->
+		<skill id="98" level="2" min_level="60" cost="1100000"/><!--Symphony-->
+		<skill id="45187" level="3" min_level="60" cost="1100000"/><!--Guard Crush-->
+		<skill id="77" level="3" min_level="60" cost="1100000"/><!--Ability to Attack-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="70" level="30" min_level="60" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="1405" level="2" min_level="61" cost="1100000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="217" level="32" min_level="61" cost="1100000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="39" min_level="61" cost="1100000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="38" min_level="61" cost="1100000"/><!--Magic Resistance-->
+		<skill id="70" level="31" min_level="61" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="217" level="33" min_level="62" cost="1400000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="40" min_level="62" cost="1400000"/><!--Heavy Armor Mastery-->
+		<skill id="402" level="4" min_level="62" cost="1400000"/><!--Shackle-->
+		<skill id="147" level="39" min_level="62" cost="1400000"/><!--Magic Resistance-->
+		<skill id="102" level="10" min_level="62" cost="1400000"/><!--Entangle-->
+		<skill id="266" level="1" min_level="62" cost="1400000"/><!--Song of Water-->
+		<skill id="70" level="32" min_level="62" cost="1400000"/><!--Emergency Rescue-->
+		<skill id="217" level="34" min_level="63" cost="1400000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="41" min_level="63" cost="1400000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="40" min_level="63" cost="1400000"/><!--Magic Resistance-->
+		<skill id="70" level="33" min_level="63" cost="1400000"/><!--Emergency Rescue-->
+		<skill id="217" level="35" min_level="64" cost="1800000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="42" min_level="64" cost="1800000"/><!--Heavy Armor Mastery-->
+		<skill id="402" level="5" min_level="64" cost="1800000"/><!--Shackle-->
+		<skill id="147" level="41" min_level="64" cost="1800000"/><!--Magic Resistance-->
+		<skill id="102" level="11" min_level="64" cost="1800000"/><!--Entangle-->
+		<skill id="98" level="3" min_level="64" cost="1800000"/><!--Symphony-->
+		<skill id="191" level="5" min_level="64" cost="1800000"/><!--Focus Mind-->
+		<skill id="70" level="34" min_level="64" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="217" level="36" min_level="65" cost="1800000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="43" min_level="65" cost="1800000"/><!--Heavy Armor Mastery-->
+		<skill id="196" level="2" min_level="65" cost="1800000"/><!--Dignity-->
+		<skill id="147" level="42" min_level="65" cost="1800000"/><!--Magic Resistance-->
+		<skill id="305" level="1" min_level="40" cost="120000"/><!--Song of Wind-->
+		<skill id="197" level="2" min_level="65" cost="1800000"/><!--Honor-->
+		<skill id="70" level="35" min_level="65" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="217" level="37" min_level="66" cost="2000000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="44" min_level="66" cost="2000000"/><!--Heavy Armor Mastery-->
+		<skill id="402" level="6" min_level="66" cost="2000000"/><!--Shackle-->
+		<skill id="147" level="43" min_level="66" cost="2000000"/><!--Magic Resistance-->
+		<skill id="102" level="12" min_level="66" cost="2000000"/><!--Entangle-->
+		<skill id="70" level="36" min_level="66" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="217" level="38" min_level="67" cost="2000000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="45" min_level="67" cost="2000000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="44" min_level="67" cost="2000000"/><!--Magic Resistance-->
+		<skill id="70" level="37" min_level="67" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="217" level="39" min_level="68" cost="2700000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="46" min_level="68" cost="2700000"/><!--Heavy Armor Mastery-->
+		<skill id="402" level="7" min_level="68" cost="2700000"/><!--Shackle-->
+		<skill id="147" level="45" min_level="68" cost="2700000"/><!--Magic Resistance-->
+		<skill id="102" level="13" min_level="68" cost="2700000"/><!--Entangle-->
+		<skill id="349" level="1" min_level="68" cost="2700000"/><!--Song of Vitality-->
+		<skill id="98" level="4" min_level="68" cost="2700000"/><!--Symphony-->
+		<skill id="70" level="38" min_level="68" cost="2700000"/><!--Emergency Rescue-->
+		<skill id="217" level="40" min_level="69" cost="2700000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="47" min_level="69" cost="2700000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="46" min_level="69" cost="2700000"/><!--Magic Resistance-->
+		<skill id="70" level="39" min_level="69" cost="2700000"/><!--Emergency Rescue-->
+		<skill id="217" level="41" min_level="70" cost="3400000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="48" min_level="70" cost="3400000"/><!--Heavy Armor Mastery-->
+		<skill id="402" level="8" min_level="70" cost="3400000"/><!--Shackle-->
+		<skill id="147" level="47" min_level="70" cost="3400000"/><!--Magic Resistance-->
+		<skill id="102" level="14" min_level="70" cost="3400000"/><!--Entangle-->
+		<skill id="45187" level="4" min_level="70" cost="3400000"/><!--Guard Crush-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="70" level="40" min_level="70" cost="3400000"/><!--Emergency Rescue-->
+		<skill id="217" level="42" min_level="71" cost="3400000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="49" min_level="71" cost="3400000"/><!--Heavy Armor Mastery-->
+		<skill id="364" level="1" min_level="71" cost="3400000"/><!--Elven Revival-->
+		<skill id="147" level="48" min_level="71" cost="3400000"/><!--Magic Resistance-->
+		<skill id="70" level="41" min_level="71" cost="3400000"/><!--Emergency Rescue-->
+		<skill id="217" level="43" min_level="72" cost="3800000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="50" min_level="72" cost="3800000"/><!--Heavy Armor Mastery-->
+		<skill id="402" level="9" min_level="72" cost="3800000"/><!--Shackle-->
+		<skill id="147" level="49" min_level="72" cost="3800000"/><!--Magic Resistance-->
+		<skill id="102" level="15" min_level="72" cost="3800000"/><!--Entangle-->
+		<skill id="98" level="5" min_level="72" cost="3800000"/><!--Symphony-->
+		<skill id="191" level="6" min_level="72" cost="3800000"/><!--Focus Mind-->
+		<skill id="70" level="42" min_level="72" cost="3800000"/><!--Emergency Rescue-->
+		<skill id="217" level="44" min_level="73" cost="3800000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="51" min_level="73" cost="3800000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="50" min_level="73" cost="3800000"/><!--Magic Resistance-->
+		<skill id="70" level="43" min_level="73" cost="3800000"/><!--Emergency Rescue-->
+		<skill id="914" level="1" min_level="74" cost="3800000"/><!--Immunity Barrier-->
+		<skill id="217" level="45" min_level="74" cost="3800000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="232" level="52" min_level="74" cost="3800000"/><!--Heavy Armor Mastery-->
+		<skill id="402" level="10" min_level="74" cost="3800000"/><!--Shackle-->
+		<skill id="147" level="51" min_level="74" cost="3800000"/><!--Magic Resistance-->
+		<skill id="102" level="16" min_level="74" cost="3800000"/><!--Entangle-->
+		<skill id="70" level="44" min_level="74" cost="3800000"/><!--Emergency Rescue-->
+		<skill id="45187" level="5" min_level="75" cost="3800000"/><!--Guard Crush-->
+		<skill id="70" level="45" min_level="75" cost="3800000"/><!--Emergency Rescue-->
+		<skill id="267" level="2" min_level="40" cost="120000"><!--Song of Hunter-->
+			<required_items>
+				<item id="94325;95530" count="1"/><!--Spellbook: Song of Hunter-->
+			</required_items>
+		</skill>
+		<skill id="304" level="2" min_level="40" cost="120000"><!--Song of Earth-->
+			<required_items>
+				<item id="94324;95529" count="1"/><!--Spellbook: Song of Earth-->
+			</required_items>
+		</skill>
+		<skill id="305" level="2" min_level="40" cost="120000"><!--Song of Wind-->
+			<required_items>
+				<item id="95348;95567" count="1"/><!--Spellbook: Song of Wind-->
+			</required_items>
+		</skill>
+		<skill id="45391" level="1" min_level="40" cost="120000"><!--Sword Symphony-->
+			<required_items>
+				<item id="94319;95524" count="1"/><!--Spellbook: Sword Symphony-->
+			</required_items>
+			<blocked_skills>
+				<skill id="98"/><!--Symphony-->
+			</blocked_skills>
+		</skill>
+		<skill id="47284" level="2" min_level="40" cost="120000"/><!--Slowdown-->
+		<skill id="47284" level="3" min_level="60" cost="1100000"/><!--Slowdown-->
+	</normal_skill_tree>
+</list>

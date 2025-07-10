@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="117" name="Orc Fortress" impl="FortressSiege">
+		<parameter name="start_time" value="00 20 * * *"/>
+		<parameter name="duration" value="1800"/>
+		<parameter name="flag_display_reward" value="30000000"/>
+		<on_init>
+			<spawn name="peace_npcs_spawn"/>
+			<init name="enter_doors"/>
+			<init name="fortress_doors"/>
+			<init name="siege_zones"/>
+			<spawn name="flag_pole"/>
+		</on_init>
+		<on_start>
+			<refresh name="siege_prepare_spawn"/>
+			<spawn name="siege_main_spawn"/>
+			<refresh name="enter_doors"/>
+			<refresh name="fortress_doors"/>
+			<active name="siege_zones"/>
+			<teleport_players id="from_residence_to_town"/>
+		</on_start>
+		<on_stop>
+			<despawn name="siege_prepare_spawn"/>
+			<despawn name="siege_main_spawn"/>
+			<despawn name="siege_flag_owner_spawn"/>
+			<refresh name="enter_doors"/>
+			<refresh name="fortress_doors"/>
+			<teleport_players id="from_residence_to_town"/>
+			<deactive name="siege_zones"/>
+		</on_stop>
+		<on_act>
+			<on act="start_prepare">
+				<spawn name="siege_prepare_spawn"/>
+			</on>
+		</on_act>
+		<on_time>
+			<on time="-20" time_unit="MINUTES">
+				<start name="prepare"/>
+				<announce id="1" value="20"/>
+			</on>
+			<on time="-10" time_unit="MINUTES">
+				<announce id="1" value="10"/>
+			</on>
+			<on time="-5" time_unit="MINUTES">
+				<announce id="1" value="5"/>
+			</on>
+			<on time="-4" time_unit="MINUTES">
+				<announce id="1" value="4"/>
+			</on>
+			<on time="-3" time_unit="MINUTES">
+				<announce id="1" value="3"/>
+			</on>
+			<on time="-2" time_unit="MINUTES">
+				<announce id="1" value="2"/>
+			</on>
+			<on time="-1" time_unit="MINUTES">
+				<announce id="1" value="1"/>
+			</on>
+			<on time="0">
+				<start name="event"/>
+			</on>
+			<on time="5" time_unit="MINUTES">
+				<announce id="2" value="10"/>
+				<open name="enter_doors"/>
+				<spawn name="siege_flag_owner_spawn"/>
+				<announce id="3"/>
+			</on>
+			<on time="25" time_unit="MINUTES">
+				<announce id="2" value="5"/>
+			</on>
+			<on time="26" time_unit="MINUTES">
+				<announce id="2" value="4"/>
+			</on>
+			<on time="27" time_unit="MINUTES">
+				<announce id="2" value="3"/>
+			</on>
+			<on time="28" time_unit="MINUTES">
+				<announce id="2" value="2"/>
+			</on>
+			<on time="29" time_unit="MINUTES">
+				<announce id="2" value="1"/>
+			</on>
+			<on time="duration">
+				<stop name="event"/>
+			</on>
+		</on_time>
+		<objects name="flag_pole">
+			<static_object id="23170500"/>
+		</objects>
+		<objects name="peace_npcs_spawn">
+			<spawn name="fort_117"/>
+		</objects>
+		<objects name="siege_prepare_spawn">
+			<spawn_ex name="fort_117_prepare"/>
+		</objects>
+		<objects name="siege_main_spawn">
+			<spawn_ex name="fort_117_siege_main"/>
+		</objects>
+		<objects name="siege_flag_owner_spawn">
+			<spawn_ex name="fort_117_flag_owners"/>
+		</objects>
+		<objects name="enter_doors">
+			<door id="23170012"/>
+		</objects>
+		<objects name="fortress_doors">
+			<door id="23170001"/>
+			<door id="23170006"/>
+			<door id="23170007"/>
+			<door id="23170012"/>
+			<door id="23170010"/>
+			<door id="23170011"/>
+			<door id="23170008"/>
+			<door id="23170009"/>
+			<door id="23170005"/>
+			<door id="23170004"/>
+		</objects>
+		<objects name="siege_zones">
+			<zone name="[orc_fortress_117_siege]"/>
+		</objects>
+		<objects name="combat_flags">
+			<combat_flag x="111080" y="-8088" z="-2352"/>
+			<combat_flag x="111000" y="-8120" z="-2352"/>
+			<combat_flag x="111144" y="-8120" z="-2352"/>
+		</objects>
+	</event>
+</list>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<spawn name="oren07_npc2118_gd02" count="1" respawn="60">
+		<territory>
+			<add x="33004" y="12100" zmin="-3736" zmax="-3236"/>
+			<add x="36692" y="12040" zmin="-3736" zmax="-3236"/>
+			<add x="33488" y="19512" zmin="-3736" zmax="-3236"/>
+			<add x="33028" y="19508" zmin="-3736" zmax="-3236"/>
+		</territory>
+		<npc id="31845"/><!--Кровавая Фея-->
+	</spawn>
+	<spawn name="oren07_npc2118_gd01" count="1" respawn="60">
+		<territory>
+			<add x="32964" y="5608" zmin="-3732" zmax="-3082"/>
+			<add x="35748" y="5468" zmin="-3732" zmax="-3082"/>
+			<add x="40424" y="7828" zmin="-3732" zmax="-3082"/>
+			<add x="38372" y="11912" zmin="-3732" zmax="-3082"/>
+			<add x="33056" y="12080" zmin="-3732" zmax="-3082"/>
+		</territory>
+		<npc id="31845"/><!--Кровавая Фея-->
+	</spawn>
+	<spawn name="KPO" count="1" respawn="360" respawn_random="20">
+		<point x="65976" y="29864" z="-3744" h="0"/>
+		<npc id="31651"/><!--Камень Познания-->
+	</spawn>
+</list>

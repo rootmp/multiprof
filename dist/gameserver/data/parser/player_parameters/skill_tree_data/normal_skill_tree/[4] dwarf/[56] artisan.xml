@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="56"><!--Artisan-->
+		<skill id="100" level="1" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="100" level="2" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="100" level="3" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="100" level="4" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="100" level="5" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="45131" level="1" min_level="20" cost="1000"/><!--Maphr's Empower-->
+		<skill id="45176" level="1" min_level="20" cost="1000"/><!--HP Recovery-->
+		<skill id="45177" level="1" min_level="20" cost="1000"/><!--MP Recovery-->
+		<skill id="245" level="1" min_level="20" cost="1000"/><!--Wild Sweep-->
+		<skill id="245" level="2" min_level="20" cost="1000"/><!--Wild Sweep-->
+		<skill id="245" level="3" min_level="20" cost="1000"/><!--Wild Sweep-->
+		<skill id="248" level="1" min_level="20" cost="1000"/><!--Crystallize-->
+		<skill id="45117" level="1" min_level="20" cost="1000"/><!--Maphr's Wind Walk-->
+		<skill id="255" level="1" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="2" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="3" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="4" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="5" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="45119" level="2" min_level="20" cost="1000"/><!--Maphr's Might-->
+		<skill id="3" level="10" min_level="20" cost="1000"/><!--Power Strike-->
+		<skill id="3" level="11" min_level="20" cost="1000"/><!--Power Strike-->
+		<skill id="3" level="12" min_level="20" cost="1000"/><!--Power Strike-->
+		<skill id="34" level="1" min_level="20" cost="1000"/><!--Bandage-->
+		<skill id="45130" level="1" min_level="20" cost="1000"/><!--Maphr’s Acumen-->
+		<skill id="172" level="2" min_level="20" cost="1000"/><!--Create Item-->
+		<skill id="91" level="2" min_level="20" cost="1000"/><!--Ability to Protect-->
+		<skill id="211" level="1" min_level="20" cost="1000"/><!--Boost HP-->
+		<skill id="45116" level="1" min_level="20" cost="1000"/><!--Maphr's Haste-->
+		<skill id="45114" level="1" min_level="20" cost="1000"/><!--Maphr's Focus-->
+		<skill id="45134" level="1" min_level="20" cost="1000"/><!--Maphr's Clarity-->
+		<skill id="45115" level="1" min_level="20" cost="1000"/><!--Maphr's Death Whisper-->
+		<skill id="45120" level="2" min_level="20" cost="1000"/><!--Maphr's Shield-->
+		<skill id="100" level="6" min_level="21" cost="1000"/><!--Shock Mastery-->
+		<skill id="255" level="6" min_level="21" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="100" level="7" min_level="22" cost="2800"/><!--Shock Mastery-->
+		<skill id="245" level="4" min_level="22" cost="2800"/><!--Wild Sweep-->
+		<skill id="255" level="7" min_level="22" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="3" level="13" min_level="22" cost="2800"/><!--Power Strike-->
+		<skill id="100" level="8" min_level="23" cost="2800"/><!--Shock Mastery-->
+		<skill id="245" level="5" min_level="23" cost="2800"/><!--Wild Sweep-->
+		<skill id="255" level="8" min_level="23" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="3" level="14" min_level="23" cost="2800"/><!--Power Strike-->
+		<skill id="100" level="9" min_level="24" cost="2800"/><!--Shock Mastery-->
+		<skill id="245" level="6" min_level="24" cost="2800"/><!--Wild Sweep-->
+		<skill id="150" level="2" min_level="24" cost="2800"/><!--Weight Limit-->
+		<skill id="255" level="9" min_level="24" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="3" level="15" min_level="24" cost="2800"/><!--Power Strike-->
+		<skill id="100" level="10" min_level="25" cost="2800"/><!--Shock Mastery-->
+		<skill id="255" level="10" min_level="25" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="77" level="2" min_level="25" cost="2800"/><!--Ability to Attack-->
+		<skill id="100" level="11" min_level="26" cost="5700"/><!--Shock Mastery-->
+		<skill id="245" level="7" min_level="26" cost="5700"/><!--Wild Sweep-->
+		<skill id="255" level="11" min_level="26" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="3" level="16" min_level="26" cost="5700"/><!--Power Strike-->
+		<skill id="100" level="12" min_level="27" cost="5700"/><!--Shock Mastery-->
+		<skill id="245" level="8" min_level="27" cost="5700"/><!--Wild Sweep-->
+		<skill id="255" level="12" min_level="27" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="3" level="17" min_level="27" cost="5700"/><!--Power Strike-->
+		<skill id="100" level="13" min_level="28" cost="5700"/><!--Shock Mastery-->
+		<skill id="245" level="9" min_level="28" cost="5700"/><!--Wild Sweep-->
+		<skill id="255" level="13" min_level="28" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="3" level="18" min_level="28" cost="5700"/><!--Power Strike-->
+		<skill id="25" level="1" min_level="28" cost="5700"/><!--Summon Mechanic Golem-->
+		<skill id="172" level="3" min_level="28" cost="5700"/><!--Create Item-->
+		<skill id="211" level="2" min_level="28" cost="5700"/><!--Boost HP-->
+		<skill id="100" level="14" min_level="29" cost="11000"/><!--Shock Mastery-->
+		<skill id="255" level="14" min_level="29" cost="11000"/><!--Enhanced Weapon-->
+		<skill id="100" level="15" min_level="30" cost="11000"/><!--Shock Mastery-->
+		<skill id="45131" level="2" min_level="30" cost="11000"/><!--Maphr's Empower-->
+		<skill id="45132" level="1" min_level="30" cost="11000"/><!--Maphr's Wild Magic-->
+		<skill id="245" level="10" min_level="30" cost="11000"/><!--Wild Sweep-->
+		<skill id="45133" level="1" min_level="30" cost="11000"/><!--Maphr's Berserker Spirit-->
+		<skill id="45117" level="2" min_level="30" cost="11000"/><!--Maphr's Wind Walk-->
+		<skill id="45118" level="1" min_level="30" cost="11000"/><!--Maphr's Magic Barrier-->
+		<skill id="255" level="15" min_level="30" cost="11000"/><!--Enhanced Weapon-->
+		<skill id="3" level="19" min_level="30" cost="11000"/><!--Power Strike-->
+		<skill id="45130" level="2" min_level="30" cost="11000"/><!--Maphr’s Acumen-->
+		<skill id="45114" level="2" min_level="30" cost="11000"/><!--Maphr's Focus-->
+		<skill id="45134" level="2" min_level="30" cost="11000"/><!--Maphr's Clarity-->
+		<skill id="45115" level="2" min_level="30" cost="11000"/><!--Maphr's Death Whisper-->
+		<skill id="245" level="11" min_level="31" cost="11000"/><!--Wild Sweep-->
+		<skill id="3" level="20" min_level="31" cost="11000"/><!--Power Strike-->
+		<skill id="245" level="12" min_level="32" cost="11000"/><!--Wild Sweep-->
+		<skill id="3" level="21" min_level="32" cost="11000"/><!--Power Strike-->
+		<skill id="245" level="13" min_level="34" cost="20000"/><!--Wild Sweep-->
+		<skill id="3" level="22" min_level="34" cost="20000"/><!--Power Strike-->
+		<skill id="245" level="14" min_level="35" cost="20000"/><!--Wild Sweep-->
+		<skill id="3" level="23" min_level="35" cost="20000"/><!--Power Strike-->
+		<skill id="245" level="15" min_level="36" cost="20000"/><!--Wild Sweep-->
+		<skill id="287" level="1" min_level="36" cost="20000"/><!--Lionheart-->
+		<skill id="3" level="24" min_level="36" cost="20000"/><!--Power Strike-->
+		<skill id="25" level="2" min_level="36" cost="20000"/><!--Summon Mechanic Golem-->
+		<skill id="172" level="4" min_level="36" cost="20000"/><!--Create Item-->
+		<skill id="211" level="3" min_level="36" cost="20000"/><!--Boost HP-->
+		<skill id="47235" level="1" min_level="20" cost="1000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47236" level="1" min_level="20" cost="1000"/><!--Dwarven Armor Mastery-->
+	</normal_skill_tree>
+</list>

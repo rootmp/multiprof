@@ -1,0 +1,15 @@
+<!ELEMENT list (coupon)*>
+
+	<!ELEMENT coupon (restorable_items)*>
+	<!ATTLIST coupon
+		item_id CDATA #REQUIRED>
+
+		<!ELEMENT restorable_items (item)*>
+		<!ATTLIST restorable_items
+			lost_min_time CDATA #IMPLIED
+			lost_max_time CDATA #IMPLIED>
+		
+			<!ELEMENT item (#PCDATA)>
+			<!ATTLIST item
+				broken_id CDATA #REQUIRED
+				fixed_id CDATA #REQUIRED>

@@ -1,0 +1,18 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<!--AUTHOR: L2-scripts.com - (sSanyaDC)-->
+<list>
+	<instance id="203" name="Residence of King Procella Extreme" maxChannels="20" collapseIfEmpty="5" timelimit="20">
+		<level min="80" max="127"/>
+		<party min="27" max="100"/><!--27-100-->
+		<return loc="177976 172952 -2016"/> 
+		<teleport loc="212872 178520 -15488"/> 
+		<reuse resetReuse="30 6 * * 3" setUponEntry="false" sharedReuseGroup="0"/>
+		<zones>
+			<zone name="[king_procella_extreme]" active="true"/>
+		</zones>
+		<spawns>
+			<group name="king_procella_extreme_boss" spawned="true"/>
+		</spawns>
+	</instance>
+</list>
+

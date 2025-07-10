@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="33800">
+		<!--Sleep Atk. Rate +5%.-->
+	</option_data>
+	<option_data id="33801">
+		<!--Hold Atk. Rate +0.5%-->
+	</option_data>
+	<option_data id="33802">
+		<!--Hold Atk. Rate +1%-->
+	</option_data>
+	<option_data id="33803">
+		<!--Hold Atk. Rate +1.5%-->
+	</option_data>
+	<option_data id="33804">
+		<!--Hold Atk. Rate +3%.-->
+	</option_data>
+	<option_data id="33805">
+		<!--Hold Atk. Rate +3.5%-->
+	</option_data>
+	<option_data id="33806">
+		<!--Hold Atk. Rate +5%.-->
+	</option_data>
+	<option_data id="33807">
+		<!--Bow Resistance +0.5%-->
+	</option_data>
+	<option_data id="33808">
+		<!--Bow Resistance +1%-->
+	</option_data>
+	<option_data id="33809">
+		<!--Bow Resistance +1.5%-->
+	</option_data>
+	<option_data id="33810">
+		<!--Bow Resistance +2.5%-->
+	</option_data>
+	<option_data id="33811">
+		<!--Bow Resistance +3%-->
+	</option_data>
+	<option_data id="33812">
+		<!--Bow Resistance +3.5%-->
+	</option_data>
+	<option_data id="33813">
+		<!--Drain Resistance +2.5%-->
+	</option_data>
+	<option_data id="33814">
+		<!--Drain Resistance +3.5%-->
+	</option_data>
+	<option_data id="33815">
+		<!--Drain Resistance +5%-->
+	</option_data>
+	<option_data id="33816">
+		<!--Drain Resistance +7.5%-->
+	</option_data>
+	<option_data id="33817">
+		<!--Drain Resistance +9%-->
+	</option_data>
+	<option_data id="33818">
+		<!--Drain Resistance +10%-->
+	</option_data>
+	<option_data id="33819">
+		<!--Max HP +3%\nMax MP +3%\nBow Resistance +1%-->
+		<skills>
+			<skill id="50339" level="1"/>	<!-- Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33820">
+		<!--Max HP +4%\nMax MP +4%\nBow Resistance +1%-->
+		<skills>
+			<skill id="50340" level="1"/>	<!-- +1 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33821">
+		<!--Max HP +5%\nMax MP +5%\nBow Resistance +2%\nAcquired XP/ SP +3%-->
+		<skills>
+			<skill id="50340" level="2"/>	<!-- +2 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33822">
+		<!--Max HP +6%\nMax MP +6%\nBow Resistance +2%\nAcquired XP/ SP +5%-->
+		<skills>
+			<skill id="50340" level="3"/>	<!-- +3 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33823">
+		<!--Max HP +7%\nMax MP +7%\nBow Resistance +3%\nAcquired XP/ SP +7%\nP. Def. +2%\nM. Def. +2%-->
+		<skills>
+			<skill id="50340" level="4"/>	<!-- +4 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33824">
+		<!--Max HP +9%\nMax MP +9%\nBow Resistance +3%\nAcquired XP/ SP +10%\nP. Def. +4%\nM. Def. +4%-->
+		<skills>
+			<skill id="50340" level="5"/>	<!-- +5 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33825">
+		<!--Max HP +11%\nMax MP +11%\nBow Resistance +4%\nAcquired XP/ SP +15%\nP. Def. +6%\nM. Def. +6%-->
+		<skills>
+			<skill id="50340" level="6"/>	<!-- +6 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33826">
+		<!--Max HP +13%\nMax MP +13%\nBow Resistance +6%\nAcquired XP/ SP +20%\nP. Def. +8%\nM. Def. +8%\nAll Critical Damage +5%-->
+		<skills>
+			<skill id="50340" level="7"/>	<!-- +7 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33827">
+		<!--Max HP +15%\nMax MP +15%\nBow Resistance +9%\nAcquired XP/ SP +25%\nP. Def. +10%\nM. Def. +10%\nAll Critical Damage +7%\nAll received Critical Rate -3%\nAll received Critical Damage -3%-->
+		<skills>
+			<skill id="50340" level="8"/>	<!-- +8 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33828">
+		<!--Max HP +18%\nMax MP +18%\nBow Resistance +12%\nAcquired XP/ SP +30%\nP. Def. +12%\nM. Def. +12%\nAll Critical Damage +10%\nAll received Critical Rate -5%\nAll received Critical Damage -5%-->
+		<skills>
+			<skill id="50340" level="9"/>	<!-- +9 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33829">
+		<!--Max HP +20%\nMax MP +20%\nBow Resistance +15%\nAcquired XP/ SP +30%\nP. Def. +15%\nM. Def. +15%\nAll Critical Damage +15%\nAll received Critical Rate -10%\nAll received Critical Damage -10%-->
+		<skills>
+			<skill id="50340" level="10"/>	<!-- +10 Cloak of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="33830">
+	</option_data>
+	<option_data id="33831">
+	</option_data>
+	<option_data id="33832">
+	</option_data>
+	<option_data id="33833">
+	</option_data>
+	<option_data id="33834">
+	</option_data>
+	<option_data id="33835">
+	</option_data>
+	<option_data id="33836">
+	</option_data>
+	<option_data id="33837">
+	</option_data>
+	<option_data id="33838">
+	</option_data>
+	<option_data id="33839">
+	</option_data>
+	<option_data id="33840">
+	</option_data>
+	<option_data id="33841">
+	</option_data>
+	<option_data id="33842">
+	</option_data>
+	<option_data id="33843">
+	</option_data>
+	<option_data id="33844">
+	</option_data>
+	<option_data id="33845">
+	</option_data>
+	<option_data id="33846">
+	</option_data>
+	<option_data id="33847">
+	</option_data>
+	<option_data id="33848">
+	</option_data>
+	<option_data id="33849">
+	</option_data>
+	<option_data id="33850">
+	</option_data>
+	<option_data id="33851">
+	</option_data>
+	<option_data id="33852">
+		<!--P. Atk. +50\nM. Atk. +50\nP. Def. +10\nM. Def. +10\nMax HP +50\nMax MP +30-->
+		<skills>
+			<skill id="50352" level="1"/>	<!-- Talisman of Power -->
+		</skills>
+	</option_data>
+	<option_data id="33853">
+		<!--P. Atk. +80\nM. Atk. +80\nP. Def. +13\nM. Def. +13\nMax HP +100\nMax MP +80-->
+		<skills>
+			<skill id="50352" level="2"/>	<!-- +1 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33854">
+		<!--P. Atk. +110\nM. Atk. +110\nP. Def. +16\nM. Def. +16\nMax HP +150\nMax MP +130-->
+		<skills>
+			<skill id="50352" level="3"/>	<!-- +2 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33855">
+		<!--P. Atk. +160\nM. Atk. +160\nP. Def. +19\nM. Def. +19\nMax HP +200\nMax MP +180\nP. Skill Critical Damage +50\nM. Skill Critical Damage +50-->
+		<skills>
+			<skill id="50352" level="4"/>	<!-- +3 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33856">
+		<!--P. Atk. +210\nM. Atk. +210\nP. Def. +22\nM. Def. +22\nMax HP +300\n Max MP +280\nP. Skill Critical Damage +100\nM. Skill Critical Damage +100\nP. Skill Power +2%\nM. Skill Power +2%-->
+		<skills>
+			<skill id="50352" level="5"/>	<!-- +4 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33857">
+		<!--P. Atk. +290\nM. Atk. +290\nP. Def. +27\nM. Def. +27\nMax HP +400\nMax MP +380\nP. Skill Critical Damage +200\nM. Skill Critical Damage +200\nP. Skill Power +4%\nM. Skill Power +4%-->
+		<skills>
+			<skill id="50352" level="6"/>	<!-- +5 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33858">
+		<!--P. Atk. +370\nM. Atk. +370\nP. Def. +32\nM. Def. +32\nMax HP +500\nMax MP +480\nP. Skill Critical Damage +300\nM. Skill Critical Damage +300\nP. Skill Power +6%\nM. Skill Power +6%-->
+		<skills>
+			<skill id="50352" level="7"/>	<!-- +6 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33859">
+		<!--P. Atk. +470\nM. Atk. +470\nP. Def. +40\nM. Def. +40\nMax HP +1000\nMax MP +880\nP. Skill Critical Damage +400\nM. Skill Critical Damage +400\nP. Skill Power +8%\nM. Skill Power +8%-->
+		<skills>
+			<skill id="50352" level="8"/>	<!-- +7 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33860">
+		<!--P. Atk. +570\nM. Atk. +570\nP. Def. +48\nM. Def. +48\nMax HP +1500\nMax MP +1280\nP. Skill Critical Damage +500\nM. Skill Critical Damage +500\nP. Skill Power +10%\nM. Skill Power +10%-->
+		<skills>
+			<skill id="50352" level="9"/>	<!-- +8 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33861">
+		<!--P. Atk. +770\nM. Atk. +770\nP. Def. +56\nM. Def. +56\nMax HP +2500\nMax MP +1780\nP. Skill Critical Damage +700\nM. Skill Critical Damage +700\nP. Skill Power +12%\nM. Skill Power +12%-->
+		<skills>
+			<skill id="50352" level="10"/>	<!-- +9 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33862">
+		<!--P. Atk. +1000\nM. Atk. +1000\nP. Def. +70\nM. Def. +70\nMax HP +4000\nMax MP +2780\nP. Skill Critical Damage +1000\nM. Skill Critical Damage +1000\nP. Skill Power +15%\nM. Skill Power +15%-->
+		<skills>
+			<skill id="50352" level="11"/>	<!-- +10 Talisman of Authority -->
+		</skills>
+	</option_data>
+	<option_data id="33863">
+	</option_data>
+	<option_data id="33864">
+	</option_data>
+	<option_data id="33865">
+	</option_data>
+	<option_data id="33866">
+	</option_data>
+	<option_data id="33867">
+	</option_data>
+	<option_data id="33868">
+	</option_data>
+	<option_data id="33869">
+	</option_data>
+	<option_data id="33870">
+	</option_data>
+	<option_data id="33871">
+	</option_data>
+	<option_data id="33872">
+	</option_data>
+	<option_data id="33873">
+	</option_data>
+	<option_data id="33874">
+	</option_data>
+	<option_data id="33875">
+	</option_data>
+	<option_data id="33876">
+	</option_data>
+	<option_data id="33877">
+	</option_data>
+	<option_data id="33878">
+	</option_data>
+	<option_data id="33879">
+	</option_data>
+	<option_data id="33880">
+	</option_data>
+	<option_data id="33881">
+	</option_data>
+	<option_data id="33882">
+	</option_data>
+	<option_data id="33883">
+	</option_data>
+	<option_data id="33884">
+	</option_data>
+	<option_data id="33885">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 3%)\nDeath Fire (probability rate: 1%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +3\nMEN +3\nDEX +3\nWIT +3\nSTR +3\nINT +3-->
+	</option_data>
+	<option_data id="33886">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 6%)\nDeath Fire (probability rate: 2%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +5\nMEN +5\nDEX +5\nWIT +5\nSTR +5\nINT +5-->
+	</option_data>
+	<option_data id="33887">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 9%)\nDeath Fire (probability rate: 3%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +7\nMEN +7\nDEX +7\nWIT +7\nSTR +7\nINT +70-->
+	</option_data>
+	<option_data id="33888">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 12%)\nDeath Fire (probability rate: 4%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +9\nMEN +9\nDEX +9\nWIT +9\nSTR +9\nINT +9-->
+	</option_data>
+	<option_data id="33889">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 15%)\nDeath Fire (probability rate: 5%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +11\nMEN +11\nDEX +11\nWIT +11\nSTR +11\nINT +11-->
+	</option_data>
+	<option_data id="33890">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 19%)\nDeath Fire (probability rate: 7%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +13\nMEN +13\nDEX +13\nWIT +13\nSTR +13\nINT +13-->
+	</option_data>
+	<option_data id="33891">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 23%)\nDeath Fire (probability rate: 9%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +15\nMEN +15\nDEX +15\nWIT +15\nSTR +15\nINT +15-->
+	</option_data>
+	<option_data id="33892">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 27%)\nDeath Fire (probability rate: 11%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +17\nMEN +17\nDEX +17\nWIT +17\nSTR +17\nINT +17-->
+	</option_data>
+	<option_data id="33893">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 31%)\nDeath Fire (probability rate: 14%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +19\nMEN +19\nDEX +19\nWIT +19\nSTR +19\nINT +19-->
+	</option_data>
+	<option_data id="33894">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 35%)\nDeath Fire (probability rate: 17%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +21\nMEN +21\nDEX +21\nWIT +21\nSTR +21\nINT +21-->
+	</option_data>
+	<option_data id="33895">
+		<!--A Death Knight's flame sword cursed by Valakas.\n\n<When triggered>\nDeath Absorption: Absorbs the enemy's HP.\nFlame of Eternity (probability rate: 40%)\nDeath Fire (probability rate: 20%)\nStigma of Death: Casts a symbol that extends the enemy's debuffs' duration by 2 times.\n\n<Stat boost>\nCON +23\nMEN +23\nDEX +23\nWIT +23\nSTR +23\nINT +23-->
+	</option_data>
+	<option_data id="33896">
+	</option_data>
+	<option_data id="33897">
+	</option_data>
+	<option_data id="33898">
+	</option_data>
+	<option_data id="33899">
+	</option_data>
+</list>

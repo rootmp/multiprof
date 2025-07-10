@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="27"><!--Spellsinger-->
+		<skill id="1235" level="1" min_level="40" cost="75000"><!--Hydro Blast-->
+			<blocked_skills>
+				<skill id="1177"/><!--???-->
+				<skill id="1147"/><!--???-->
+				<skill id="1184"/><!--???-->
+				<skill id="1175"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="1235" level="2" min_level="40" cost="75000"/><!--Hydro Blast-->
+		<skill id="45105" level="3" min_level="40" cost="75000"/><!--Empower-->
+		<skill id="45106" level="2" min_level="40" cost="75000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="75000"/><!--Berserker Spirit-->
+		<skill id="1238" level="1" min_level="40" cost="75000"/><!--Freezing Skin-->
+		<skill id="45108" level="2" min_level="40" cost="75000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="75000"/><!--Might-->
+		<skill id="1206" level="6" min_level="40" cost="75000"/><!--Wind Shackle-->
+		<skill id="45104" level="3" min_level="40" cost="75000"/><!--Acumen-->
+		<skill id="1047" level="1" min_level="40" cost="75000"/><!--Mana Regeneration-->
+		<skill id="1157" level="2" min_level="40" cost="75000"/><!--Body to Mind-->
+		<skill id="1297" level="1" min_level="40" cost="75000"><!--Clear Mind-->
+			<required_items>
+				<item id="90045" count="3"/><!--Magical Tablet-->
+			</required_items>
+		</skill>
+		<skill id="1164" level="6" min_level="40" cost="75000"/><!--Weakness-->
+		<skill id="45111" level="2" min_level="40" cost="75000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="75000"/><!--Focus-->
+		<skill id="45113" level="3" min_level="40" cost="75000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="75000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="75000"/><!--Shield-->
+		<skill id="1235" level="3" min_level="42" cost="110000"/><!--Hydro Blast-->
+		<skill id="1235" level="4" min_level="44" cost="110000"/><!--Hydro Blast-->
+		<skill id="1206" level="7" min_level="44" cost="110000"/><!--Wind Shackle-->
+		<skill id="1164" level="7" min_level="44" cost="110000"/><!--Weakness-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="1235" level="5" min_level="46" cost="170000"/><!--Hydro Blast-->
+		<skill id="1235" level="6" min_level="48" cost="170000"/><!--Hydro Blast-->
+		<skill id="1238" level="2" min_level="48" cost="170000"/><!--Freezing Skin-->
+		<skill id="1206" level="8" min_level="48" cost="170000"/><!--Wind Shackle-->
+		<skill id="1047" level="2" min_level="48" cost="170000"/><!--Mana Regeneration-->
+		<skill id="1297" level="2" min_level="48" cost="170000"/><!--Clear Mind-->
+		<skill id="1164" level="8" min_level="48" cost="170000"/><!--Weakness-->
+		<skill id="1235" level="7" min_level="50" cost="270000"/><!--Hydro Blast-->
+		<skill id="45176" level="2" min_level="50" cost="270000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="270000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1073" level="2" min_level="50" cost="270000"/><!--Increased Power of Magic-->
+		<skill id="1405" level="1" min_level="52" cost="270000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="1235" level="8" min_level="52" cost="270000"/><!--Hydro Blast-->
+		<skill id="1206" level="9" min_level="52" cost="270000"/><!--Wind Shackle-->
+		<skill id="1157" level="3" min_level="52" cost="270000"/><!--Body to Mind-->
+		<skill id="1164" level="9" min_level="52" cost="270000"/><!--Weakness-->
+		<skill id="1235" level="9" min_level="54" cost="430000"/><!--Hydro Blast-->
+		<skill id="1235" level="10" min_level="55" cost="430000"/><!--Hydro Blast-->
+		<skill id="1235" level="11" min_level="56" cost="430000"/><!--Hydro Blast-->
+		<skill id="1238" level="3" min_level="56" cost="430000"/><!--Freezing Skin-->
+		<skill id="1206" level="10" min_level="56" cost="430000"/><!--Wind Shackle-->
+		<skill id="1297" level="3" min_level="56" cost="430000"/><!--Clear Mind-->
+		<skill id="1164" level="10" min_level="56" cost="430000"/><!--Weakness-->
+		<skill id="1235" level="12" min_level="57" cost="440000"/><!--Hydro Blast-->
+		<skill id="1295" level="1" min_level="58" cost="440000"/><!--Aqua Splash-->
+		<skill id="1235" level="13" min_level="58" cost="440000"/><!--Hydro Blast-->
+		<skill id="1206" level="11" min_level="58" cost="440000"/><!--Wind Shackle-->
+		<skill id="1157" level="4" min_level="58" cost="440000"/><!--Body to Mind-->
+		<skill id="1164" level="11" min_level="58" cost="440000"/><!--Weakness-->
+		<skill id="1235" level="14" min_level="59" cost="530000"/><!--Hydro Blast-->
+		<skill id="1295" level="2" min_level="60" cost="530000"/><!--Aqua Splash-->
+		<skill id="1235" level="15" min_level="60" cost="530000"/><!--Hydro Blast-->
+		<skill id="1206" level="12" min_level="60" cost="530000"/><!--Wind Shackle-->
+		<skill id="1047" level="3" min_level="60" cost="530000"/><!--Mana Regeneration-->
+		<skill id="1164" level="12" min_level="60" cost="530000"/><!--Weakness-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="1405" level="2" min_level="61" cost="640000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="1235" level="16" min_level="61" cost="640000"/><!--Hydro Blast-->
+		<skill id="1295" level="3" min_level="62" cost="640000"/><!--Aqua Splash-->
+		<skill id="1235" level="17" min_level="62" cost="640000"/><!--Hydro Blast-->
+		<skill id="1206" level="13" min_level="62" cost="640000"/><!--Wind Shackle-->
+		<skill id="1297" level="4" min_level="62" cost="640000"/><!--Clear Mind-->
+		<skill id="1164" level="13" min_level="62" cost="640000"/><!--Weakness-->
+		<skill id="1235" level="18" min_level="63" cost="800000"/><!--Hydro Blast-->
+		<skill id="1295" level="4" min_level="64" cost="800000"/><!--Aqua Splash-->
+		<skill id="1235" level="19" min_level="64" cost="800000"/><!--Hydro Blast-->
+		<skill id="1206" level="14" min_level="64" cost="800000"/><!--Wind Shackle-->
+		<skill id="1164" level="14" min_level="64" cost="800000"/><!--Weakness-->
+		<skill id="1235" level="20" min_level="65" cost="1000000"/><!--Hydro Blast-->
+		<skill id="1295" level="5" min_level="66" cost="1000000"/><!--Aqua Splash-->
+		<skill id="1235" level="21" min_level="66" cost="1000000"/><!--Hydro Blast-->
+		<skill id="1206" level="15" min_level="66" cost="1000000"/><!--Wind Shackle-->
+		<skill id="1157" level="5" min_level="66" cost="1000000"/><!--Body to Mind-->
+		<skill id="1164" level="15" min_level="66" cost="1000000"/><!--Weakness-->
+		<skill id="1235" level="22" min_level="67" cost="1200000"/><!--Hydro Blast-->
+		<skill id="1295" level="6" min_level="68" cost="1200000"/><!--Aqua Splash-->
+		<skill id="1235" level="23" min_level="68" cost="1200000"/><!--Hydro Blast-->
+		<skill id="1206" level="16" min_level="68" cost="1200000"/><!--Wind Shackle-->
+		<skill id="1297" level="5" min_level="68" cost="1200000"/><!--Clear Mind-->
+		<skill id="1164" level="16" min_level="68" cost="1200000"/><!--Weakness-->
+		<skill id="1235" level="24" min_level="69" cost="1500000"/><!--Hydro Blast-->
+		<skill id="1295" level="7" min_level="70" cost="1500000"/><!--Aqua Splash-->
+		<skill id="1235" level="25" min_level="70" cost="1500000"/><!--Hydro Blast-->
+		<skill id="1206" level="17" min_level="70" cost="1500000"/><!--Wind Shackle-->
+		<skill id="1047" level="4" min_level="70" cost="1500000"/><!--Mana Regeneration-->
+		<skill id="1164" level="17" min_level="70" cost="1500000"/><!--Weakness-->
+		<skill id="1290" level="1" min_level="70" cost="1500000"/><!--Blizzard-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="1235" level="26" min_level="71" cost="1800000"/><!--Hydro Blast-->
+		<skill id="1295" level="8" min_level="72" cost="1800000"/><!--Aqua Splash-->
+		<skill id="1235" level="27" min_level="72" cost="1800000"/><!--Hydro Blast-->
+		<skill id="1206" level="18" min_level="72" cost="1800000"/><!--Wind Shackle-->
+		<skill id="1164" level="18" min_level="72" cost="1800000"/><!--Weakness-->
+		<skill id="1235" level="28" min_level="73" cost="2200000"/><!--Hydro Blast-->
+		<skill id="1295" level="9" min_level="74" cost="2200000"/><!--Aqua Splash-->
+		<skill id="1235" level="29" min_level="74" cost="2200000"/><!--Hydro Blast-->
+		<skill id="1206" level="19" min_level="74" cost="2200000"/><!--Wind Shackle-->
+		<skill id="1297" level="6" min_level="74" cost="2200000"/><!--Clear Mind-->
+		<skill id="1164" level="19" min_level="74" cost="2200000"/><!--Weakness-->
+		<skill id="1235" level="30" min_level="75" cost="2200000"/><!--Hydro Blast-->
+		<skill id="1263" level="1" min_level="44" cost="110000"/><!--Magic Wound-->
+		<skill id="1263" level="2" min_level="48" cost="170000"/><!--Magic Wound-->
+		<skill id="1263" level="3" min_level="52" cost="270000"/><!--Magic Wound-->
+		<skill id="1263" level="4" min_level="56" cost="430000"/><!--Magic Wound-->
+		<skill id="1263" level="5" min_level="58" cost="440000"/><!--Magic Wound-->
+		<skill id="1263" level="6" min_level="60" cost="530000"/><!--Magic Wound-->
+		<skill id="1263" level="7" min_level="62" cost="640000"/><!--Magic Wound-->
+		<skill id="1263" level="8" min_level="64" cost="800000"/><!--Magic Wound-->
+		<skill id="1263" level="9" min_level="66" cost="1000000"/><!--Magic Wound-->
+		<skill id="1263" level="10" min_level="68" cost="1200000"/><!--Magic Wound-->
+		<skill id="1263" level="11" min_level="70" cost="1500000"/><!--Magic Wound-->
+		<skill id="1263" level="12" min_level="72" cost="1800000"/><!--Magic Wound-->
+		<skill id="1263" level="13" min_level="74" cost="2200000"/><!--Magic Wound-->
+		<skill id="47462" level="1" min_level="40" cost="75000"/><!--Sleep-->
+		<skill id="47462" level="2" min_level="40" cost="75000"/><!--Sleep-->
+		<skill id="47462" level="3" min_level="60" cost="530000"/><!--Sleep-->
+		<skill id="47463" level="1" min_level="40" cost="75000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="2" min_level="50" cost="270000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="3" min_level="60" cost="530000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="4" min_level="70" cost="1500000"/><!--Wizard's Attack Mastery-->
+		<skill id="47464" level="1" min_level="40" cost="75000"><!--Wizard's Armor Mastery-->
+			<blocked_skills>
+				<skill id="234"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47464" level="2" min_level="50" cost="270000"/><!--Wizard's Armor Mastery-->
+		<skill id="47464" level="3" min_level="60" cost="530000"/><!--Wizard's Armor Mastery-->
+		<skill id="47464" level="4" min_level="70" cost="1500000"/><!--Wizard's Armor Mastery-->
+		<skill id="47465" level="1" min_level="40" cost="75000"><!--Wizard's Recovery Mastery-->
+			<blocked_skills>
+				<skill id="164"/><!--???-->
+				<skill id="212"/><!--???-->
+				<skill id="229"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47465" level="2" min_level="50" cost="270000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47465" level="3" min_level="60" cost="530000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47465" level="4" min_level="70" cost="1500000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47466" level="2" min_level="40" cost="75000"/><!--Higher Mana Gain-->
+		<skill id="47466" level="3" min_level="60" cost="530000"/><!--Higher Mana Gain-->
+	</normal_skill_tree>
+</list>

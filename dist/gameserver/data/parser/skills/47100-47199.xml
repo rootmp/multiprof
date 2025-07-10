@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="47101" levels="4" name="Elemental Spirit">
+		<!--The spirit power runs through your body.\n\nAn incarnated Spirit Lv. 1 can be used.-->
+		<table name="#id">0 47048 47048 47053</table>
+		<table name="#level">0 1 1 1</table>
+		<set name="icon" value="icon.skill30401"/>
+		<set name="operate_type" value="P" />
+		<triggers>
+			<trigger id="#id" level="#level" type="RECEIVE_DAMAGE" chance="10"/>
+		</triggers>
+	</skill>
+	<skill id="47104" levels="5" name="Elemental Connection">
+		<!--The character has a strong connection with the spirits.\n\nSoulshot damage +$s1\nAll Critical Rate +$s2-->
+		<set name="icon" value="icon.skill30400"/>
+		<table name="#chance">1 1 2 2 3</table>
+		<table name="#power">101 102 103 105 110</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mCritRate" value="#chance"/>
+			<add stat="pCritRate" value="#chance"/>
+			<effect name="i_soul_shot">
+				<def name="power" value="#power"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="47105" levels="10" name="Elemental Recovery">
+		<!--The spirit power helps to regenerate faster.\n\nHP Recovery Rate +$s1\nMP Recovery Rate +$s2-->
+		<set name="icon" value="icon.skill30402"/>
+		<table name="#hpRegen">6 7 8 9 10 11 12 13 14 15</table>
+		<table name="#mpRegen">3 4 5 6 7 8 8 8 8 8</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="regHp" value="#hpRegen"/>
+			<add stat="regMp" value="#mpRegen"/>
+		</for>
+	</skill>
+</list>

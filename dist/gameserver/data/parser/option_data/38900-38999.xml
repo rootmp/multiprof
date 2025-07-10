@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="38900">
+		<!--P. Evasion +1.5-->
+	</option_data>
+	<option_data id="38901">
+		<!--P. Evasion +1.7-->
+	</option_data>
+	<option_data id="38902">
+		<!--P. Evasion +1.8-->
+	</option_data>
+	<option_data id="38903">
+		<!--P. Evasion +2.0-->
+	</option_data>
+	<option_data id="38904">
+		<!--P. Evasion +3.0-->
+	</option_data>
+	<option_data id="38905">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38906">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38907">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38908">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38909">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38910">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38911">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38912">
+		<!--M. Evasion +1.1-->
+	</option_data>
+	<option_data id="38913">
+		<!--M. Evasion +1.1-->
+	</option_data>
+	<option_data id="38914">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38915">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38916">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38917">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38918">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38919">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="38920">
+		<!--M. Evasion +1.5-->
+	</option_data>
+	<option_data id="38921">
+		<!--M. Evasion +1.7-->
+	</option_data>
+	<option_data id="38922">
+		<!--M. Evasion +1.8-->
+	</option_data>
+	<option_data id="38923">
+		<!--M. Evasion +2.0-->
+	</option_data>
+	<option_data id="38924">
+		<!--M. Evasion +3.0-->
+	</option_data>
+	<option_data id="38925">
+		<!--Received P. Skill Critical Damage -5-->
+	</option_data>
+	<option_data id="38926">
+		<!--Received P. Skill Critical Damage -8-->
+	</option_data>
+	<option_data id="38927">
+		<!--Received P. Skill Critical Damage -11-->
+	</option_data>
+	<option_data id="38928">
+		<!--Received P. Skill Critical Damage -14-->
+	</option_data>
+	<option_data id="38929">
+		<!--Received P. Skill Critical Damage -17-->
+	</option_data>
+	<option_data id="38930">
+		<!--Received P. Skill Critical Damage -20-->
+	</option_data>
+	<option_data id="38931">
+		<!--Received P. Skill Critical Damage -23-->
+	</option_data>
+	<option_data id="38932">
+		<!--Received P. Skill Critical Damage -26-->
+	</option_data>
+	<option_data id="38933">
+		<!--Received P. Skill Critical Damage -30-->
+	</option_data>
+	<option_data id="38934">
+		<!--Received P. Skill Critical Damage -33-->
+	</option_data>
+	<option_data id="38935">
+		<!--Received P. Skill Critical Damage -36-->
+	</option_data>
+	<option_data id="38936">
+		<!--Received P. Skill Critical Damage -39-->
+	</option_data>
+	<option_data id="38937">
+		<!--Received P. Skill Critical Damage -42-->
+	</option_data>
+	<option_data id="38938">
+		<!--Received P. Skill Critical Damage -45-->
+	</option_data>
+	<option_data id="38939">
+		<!--Received P. Skill Critical Damage -48-->
+	</option_data>
+	<option_data id="38940">
+		<!--Received P. Skill Critical Damage -55-->
+	</option_data>
+	<option_data id="38941">
+		<!--Received P. Skill Critical Damage -60-->
+	</option_data>
+	<option_data id="38942">
+		<!--Received P. Skill Critical Damage -65-->
+	</option_data>
+	<option_data id="38943">
+		<!--Received P. Skill Critical Damage -70-->
+	</option_data>
+	<option_data id="38944">
+		<!--Received P. Skill Critical Damage -100-->
+	</option_data>
+	<option_data id="38945">
+		<!--Received M. Skill Critical Damage -5-->
+	</option_data>
+	<option_data id="38946">
+		<!--Received M. Skill Critical Damage -8-->
+	</option_data>
+	<option_data id="38947">
+		<!--Received M. Skill Critical Damage -11-->
+	</option_data>
+	<option_data id="38948">
+		<!--Received M. Skill Critical Damage -14-->
+	</option_data>
+	<option_data id="38949">
+		<!--Received M. Skill Critical Damage -17-->
+	</option_data>
+	<option_data id="38950">
+		<!--Received M. Skill Critical Damage -20-->
+	</option_data>
+	<option_data id="38951">
+		<!--Received M. Skill Critical Damage -23-->
+	</option_data>
+	<option_data id="38952">
+		<!--Received M. Skill Critical Damage -26-->
+	</option_data>
+	<option_data id="38953">
+		<!--Received M. Skill Critical Damage -30-->
+	</option_data>
+	<option_data id="38954">
+		<!--Received M. Skill Critical Damage -33-->
+	</option_data>
+	<option_data id="38955">
+		<!--Received M. Skill Critical Damage -36-->
+	</option_data>
+	<option_data id="38956">
+		<!--Received M. Skill Critical Damage -39-->
+	</option_data>
+	<option_data id="38957">
+		<!--Received M. Skill Critical Damage -42-->
+	</option_data>
+	<option_data id="38958">
+		<!--Received M. Skill Critical Damage -45-->
+	</option_data>
+	<option_data id="38959">
+		<!--Received M. Skill Critical Damage -48-->
+	</option_data>
+	<option_data id="38960">
+		<!--Received M. Skill Critical Damage -55-->
+	</option_data>
+	<option_data id="38961">
+		<!--Received M. Skill Critical Damage -60-->
+	</option_data>
+	<option_data id="38962">
+		<!--Received M. Skill Critical Damage -65-->
+	</option_data>
+	<option_data id="38963">
+		<!--Received M. Skill Critical Damage -70-->
+	</option_data>
+	<option_data id="38964">
+		<!--Received M. Skill Critical Damage -100-->
+	</option_data>
+	<option_data id="38965" />
+	<option_data id="38966" />
+	<option_data id="38967" />
+	<option_data id="38968" />
+	<option_data id="38969" />
+	<option_data id="38970" />
+	<option_data id="38971" />
+	<option_data id="38972" />
+	<option_data id="38973" />
+	<option_data id="38974" />
+	<option_data id="38975" />
+	<option_data id="38976" />
+	<option_data id="38977" />
+	<option_data id="38978" />
+	<option_data id="38979" />
+	<option_data id="38980" />
+	<option_data id="38981" />
+	<option_data id="38982" />
+	<option_data id="38983" />
+	<option_data id="38984" />
+	<option_data id="38985" />
+	<option_data id="38986" />
+	<option_data id="38987" />
+	<option_data id="38988" />
+	<option_data id="38989" />
+	<option_data id="38990" />
+	<option_data id="38991" />
+	<option_data id="38992" />
+	<option_data id="38993" />
+	<option_data id="38994" />
+	<option_data id="38995" />
+	<option_data id="38996" />
+	<option_data id="38997" />
+	<option_data id="38998" />
+	<option_data id="38999" />
+</list>

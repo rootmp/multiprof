@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="48"><!--Tyrant-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="210" level="9" min_level="40" cost="70000"/><!--Fist Weapon Mastery-->
+		<skill id="210" level="10" min_level="40" cost="70000"/><!--Fist Weapon Mastery-->
+		<skill id="210" level="11" min_level="40" cost="70000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="11" min_level="40" cost="70000"/><!--Light Armor Mastery-->
+		<skill id="233" level="12" min_level="40" cost="70000"/><!--Light Armor Mastery-->
+		<skill id="233" level="13" min_level="40" cost="70000"/><!--Light Armor Mastery-->
+		<skill id="141" level="4" min_level="40" cost="70000"/><!--Weapon Mastery-->
+		<skill id="993" level="3" min_level="40" cost="70000"/><!--Force Mastery-->
+		<skill id="280" level="1" min_level="40" cost="70000"/><!--Burning Fist-->
+		<skill id="280" level="2" min_level="40" cost="70000"/><!--Burning Fist-->
+		<skill id="280" level="3" min_level="40" cost="70000"/><!--Burning Fist-->
+		<skill id="280" level="4" min_level="40" cost="70000"/><!--Burning Fist-->
+		<skill id="280" level="5" min_level="40" cost="70000"/><!--Burning Fist-->
+		<skill id="54" level="13" min_level="40" cost="70000"/><!--Force Blaster-->
+		<skill id="54" level="14" min_level="40" cost="70000"/><!--Force Blaster-->
+		<skill id="54" level="15" min_level="40" cost="70000"/><!--Force Blaster-->
+		<skill id="281" level="1" min_level="40" cost="70000"/><!--Iron Fist-->
+		<skill id="281" level="2" min_level="40" cost="70000"/><!--Iron Fist-->
+		<skill id="281" level="3" min_level="40" cost="70000"/><!--Iron Fist-->
+		<skill id="45136" level="3" min_level="40" cost="80000"/><!--Chant of Empower-->
+		<skill id="45137" level="2" min_level="40" cost="80000"/><!--Chant of Wild Magic-->
+		<skill id="45128" level="2" min_level="40" cost="80000"/><!--Chant of Berserker Spirit-->
+		<skill id="45125" level="2" min_level="40" cost="80000"/><!--Chant of Magic Barrier-->
+		<skill id="45126" level="3" min_level="40" cost="80000"/><!--Chant of Might-->
+		<skill id="45135" level="3" min_level="40" cost="80000"/><!--Chant of Acumen-->
+		<skill id="45123" level="2" min_level="40" cost="80000"/><!--Chant of Haste-->
+		<skill id="45121" level="3" min_level="40" cost="80000"/><!--Chant of Focus-->
+		<skill id="45129" level="3" min_level="40" cost="80000"/><!--Chant of Clarity-->
+		<skill id="45122" level="3" min_level="40" cost="80000"/><!--Chant of Death Whisper-->
+		<skill id="45127" level="3" min_level="40" cost="80000"/><!--Chant of Shield-->
+		<skill id="994" level="1" min_level="40" cost="70000"/><!--Rush-->
+		<skill id="282" level="1" min_level="40" cost="70000"/><!--Puma Spirit Totem-->
+		<skill id="284" level="6" min_level="40" cost="70000"/><!--Hurricane Assault-->
+		<skill id="284" level="7" min_level="40" cost="70000"/><!--Hurricane Assault-->
+		<skill id="284" level="8" min_level="40" cost="70000"/><!--Hurricane Assault-->
+		<skill id="284" level="9" min_level="40" cost="70000"/><!--Hurricane Assault-->
+		<skill id="284" level="10" min_level="40" cost="70000"/><!--Hurricane Assault-->
+		<skill id="50" level="3" min_level="40" cost="70000"/><!--Focus Force-->
+		<skill id="95" level="10" min_level="40" cost="70000"/><!--Cripple-->
+		<skill id="70" level="10" min_level="40" cost="70000"/><!--Emergency Rescue-->
+		<skill id="17" level="1" min_level="41" cost="82000"/><!--Force Burst-->
+		<skill id="210" level="12" min_level="41" cost="82000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="14" min_level="41" cost="82000"/><!--Light Armor Mastery-->
+		<skill id="280" level="6" min_level="41" cost="82000"/><!--Burning Fist-->
+		<skill id="54" level="16" min_level="41" cost="82000"/><!--Force Blaster-->
+		<skill id="281" level="4" min_level="41" cost="82000"/><!--Iron Fist-->
+		<skill id="284" level="11" min_level="41" cost="82000"/><!--Hurricane Assault-->
+		<skill id="70" level="11" min_level="41" cost="82000"/><!--Emergency Rescue-->
+		<skill id="17" level="2" min_level="42" cost="82000"/><!--Force Burst-->
+		<skill id="210" level="13" min_level="42" cost="82000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="15" min_level="42" cost="82000"/><!--Light Armor Mastery-->
+		<skill id="280" level="7" min_level="42" cost="82000"/><!--Burning Fist-->
+		<skill id="54" level="17" min_level="42" cost="82000"/><!--Force Blaster-->
+		<skill id="281" level="5" min_level="42" cost="82000"/><!--Iron Fist-->
+		<skill id="284" level="12" min_level="42" cost="82000"/><!--Hurricane Assault-->
+		<skill id="95" level="11" min_level="42" cost="82000"/><!--Cripple-->
+		<skill id="70" level="12" min_level="42" cost="82000"/><!--Emergency Rescue-->
+		<skill id="17" level="3" min_level="43" cost="82000"/><!--Force Burst-->
+		<skill id="210" level="14" min_level="43" cost="82000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="16" min_level="43" cost="82000"/><!--Light Armor Mastery-->
+		<skill id="280" level="8" min_level="43" cost="82000"/><!--Burning Fist-->
+		<skill id="54" level="18" min_level="43" cost="82000"/><!--Force Blaster-->
+		<skill id="281" level="6" min_level="43" cost="82000"/><!--Iron Fist-->
+		<skill id="284" level="13" min_level="43" cost="82000"/><!--Hurricane Assault-->
+		<skill id="70" level="13" min_level="43" cost="82000"/><!--Emergency Rescue-->
+		<skill id="222" level="1" min_level="43" cost="82000"/><!--Fury Fists-->
+		<skill id="17" level="4" min_level="44" cost="120000"/><!--Force Burst-->
+		<skill id="210" level="15" min_level="44" cost="120000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="17" min_level="44" cost="120000"/><!--Light Armor Mastery-->
+		<skill id="280" level="9" min_level="44" cost="120000"/><!--Burning Fist-->
+		<skill id="54" level="19" min_level="44" cost="120000"/><!--Force Blaster-->
+		<skill id="281" level="7" min_level="44" cost="120000"/><!--Iron Fist-->
+		<skill id="284" level="14" min_level="44" cost="120000"/><!--Hurricane Assault-->
+		<skill id="95" level="12" min_level="44" cost="120000"/><!--Cripple-->
+		<skill id="70" level="14" min_level="44" cost="120000"/><!--Emergency Rescue-->
+		<skill id="17" level="5" min_level="45" cost="120000"/><!--Force Burst-->
+		<skill id="210" level="16" min_level="45" cost="120000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="18" min_level="45" cost="120000"/><!--Light Armor Mastery-->
+		<skill id="280" level="10" min_level="45" cost="120000"/><!--Burning Fist-->
+		<skill id="54" level="20" min_level="45" cost="120000"/><!--Force Blaster-->
+		<skill id="281" level="8" min_level="45" cost="120000"/><!--Iron Fist-->
+		<skill id="34" level="2" min_level="45" cost="120000"/><!--Bandage-->
+		<skill id="109" level="1" min_level="45" cost="120000"/><!--Ogre Spirit Totem-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="284" level="15" min_level="45" cost="120000"/><!--Hurricane Assault-->
+		<skill id="70" level="15" min_level="45" cost="120000"/><!--Emergency Rescue-->
+		<skill id="17" level="6" min_level="46" cost="120000"/><!--Force Burst-->
+		<skill id="210" level="17" min_level="46" cost="120000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="19" min_level="46" cost="120000"/><!--Light Armor Mastery-->
+		<skill id="280" level="11" min_level="46" cost="120000"/><!--Burning Fist-->
+		<skill id="54" level="21" min_level="46" cost="120000"/><!--Force Blaster-->
+		<skill id="281" level="9" min_level="46" cost="120000"/><!--Iron Fist-->
+		<skill id="168" level="2" min_level="46" cost="120000"/><!--Attack Speed Boost-->
+		<skill id="284" level="16" min_level="46" cost="120000"/><!--Hurricane Assault-->
+		<skill id="95" level="13" min_level="46" cost="120000"/><!--Cripple-->
+		<skill id="70" level="16" min_level="46" cost="120000"/><!--Emergency Rescue-->
+		<skill id="17" level="7" min_level="47" cost="170000"/><!--Force Burst-->
+		<skill id="210" level="18" min_level="47" cost="170000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="20" min_level="47" cost="170000"/><!--Light Armor Mastery-->
+		<skill id="280" level="12" min_level="47" cost="170000"/><!--Burning Fist-->
+		<skill id="54" level="22" min_level="47" cost="170000"/><!--Force Blaster-->
+		<skill id="281" level="10" min_level="47" cost="170000"/><!--Iron Fist-->
+		<skill id="35" level="1" min_level="47" cost="170000"/><!--Force Storm-->
+		<skill id="284" level="17" min_level="47" cost="170000"/><!--Hurricane Assault-->
+		<skill id="70" level="17" min_level="47" cost="170000"/><!--Emergency Rescue-->
+		<skill id="17" level="8" min_level="48" cost="170000"/><!--Force Burst-->
+		<skill id="210" level="19" min_level="48" cost="170000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="21" min_level="48" cost="170000"/><!--Light Armor Mastery-->
+		<skill id="280" level="13" min_level="48" cost="170000"/><!--Burning Fist-->
+		<skill id="54" level="23" min_level="48" cost="170000"/><!--Force Blaster-->
+		<skill id="281" level="11" min_level="48" cost="170000"/><!--Iron Fist-->
+		<skill id="35" level="2" min_level="48" cost="170000"/><!--Force Storm-->
+		<skill id="284" level="18" min_level="48" cost="170000"/><!--Hurricane Assault-->
+		<skill id="95" level="14" min_level="48" cost="170000"/><!--Cripple-->
+		<skill id="70" level="18" min_level="48" cost="170000"/><!--Emergency Rescue-->
+		<skill id="17" level="9" min_level="49" cost="170000"/><!--Force Burst-->
+		<skill id="210" level="20" min_level="49" cost="170000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="22" min_level="49" cost="170000"/><!--Light Armor Mastery-->
+		<skill id="280" level="14" min_level="49" cost="170000"/><!--Burning Fist-->
+		<skill id="54" level="24" min_level="49" cost="170000"/><!--Force Blaster-->
+		<skill id="281" level="12" min_level="49" cost="170000"/><!--Iron Fist-->
+		<skill id="287" level="2" min_level="49" cost="170000"/><!--Lionheart-->
+		<skill id="35" level="3" min_level="49" cost="170000"/><!--Force Storm-->
+		<skill id="284" level="19" min_level="49" cost="170000"/><!--Hurricane Assault-->
+		<skill id="70" level="19" min_level="49" cost="170000"/><!--Emergency Rescue-->
+		<skill id="17" level="10" min_level="50" cost="240000"/><!--Force Burst-->
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="210" level="21" min_level="50" cost="240000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="23" min_level="50" cost="240000"/><!--Light Armor Mastery-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="280" level="15" min_level="50" cost="240000"/><!--Burning Fist-->
+		<skill id="54" level="25" min_level="50" cost="240000"/><!--Force Blaster-->
+		<skill id="281" level="13" min_level="50" cost="240000"/><!--Iron Fist-->
+		<skill id="35" level="4" min_level="50" cost="240000"/><!--Force Storm-->
+		<skill id="284" level="20" min_level="50" cost="240000"/><!--Hurricane Assault-->
+		<skill id="95" level="15" min_level="50" cost="240000"/><!--Cripple-->
+		<skill id="70" level="20" min_level="50" cost="240000"/><!--Emergency Rescue-->
+		<skill id="17" level="11" min_level="51" cost="240000"/><!--Force Burst-->
+		<skill id="210" level="22" min_level="51" cost="240000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="24" min_level="51" cost="240000"/><!--Light Armor Mastery-->
+		<skill id="280" level="16" min_level="51" cost="240000"/><!--Burning Fist-->
+		<skill id="54" level="26" min_level="51" cost="240000"/><!--Force Blaster-->
+		<skill id="281" level="14" min_level="51" cost="240000"/><!--Iron Fist-->
+		<skill id="35" level="5" min_level="51" cost="240000"/><!--Force Storm-->
+		<skill id="284" level="21" min_level="51" cost="240000"/><!--Hurricane Assault-->
+		<skill id="70" level="21" min_level="51" cost="240000"/><!--Emergency Rescue-->
+		<skill id="1405" level="1" min_level="52" cost="240000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="17" level="12" min_level="52" cost="240000"/><!--Force Burst-->
+		<skill id="210" level="23" min_level="52" cost="240000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="25" min_level="52" cost="240000"/><!--Light Armor Mastery-->
+		<skill id="993" level="4" min_level="52" cost="240000"/><!--Force Mastery-->
+		<skill id="280" level="17" min_level="52" cost="240000"/><!--Burning Fist-->
+		<skill id="54" level="27" min_level="52" cost="240000"/><!--Force Blaster-->
+		<skill id="281" level="15" min_level="52" cost="240000"/><!--Iron Fist-->
+		<skill id="461" level="1" min_level="52" cost="240000"/><!--Break Duress-->
+		<skill id="35" level="6" min_level="52" cost="240000"/><!--Force Storm-->
+		<skill id="284" level="22" min_level="52" cost="240000"/><!--Hurricane Assault-->
+		<skill id="50" level="4" min_level="52" cost="240000"/><!--Focus Force-->
+		<skill id="95" level="16" min_level="52" cost="240000"/><!--Cripple-->
+		<skill id="70" level="22" min_level="52" cost="240000"/><!--Emergency Rescue-->
+		<skill id="17" level="13" min_level="53" cost="340000"/><!--Force Burst-->
+		<skill id="210" level="24" min_level="53" cost="340000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="26" min_level="53" cost="340000"/><!--Light Armor Mastery-->
+		<skill id="280" level="18" min_level="53" cost="340000"/><!--Burning Fist-->
+		<skill id="54" level="28" min_level="53" cost="340000"/><!--Force Blaster-->
+		<skill id="281" level="16" min_level="53" cost="340000"/><!--Iron Fist-->
+		<skill id="35" level="7" min_level="53" cost="340000"/><!--Force Storm-->
+		<skill id="284" level="23" min_level="53" cost="340000"/><!--Hurricane Assault-->
+		<skill id="70" level="23" min_level="53" cost="340000"/><!--Emergency Rescue-->
+		<skill id="17" level="14" min_level="54" cost="340000"/><!--Force Burst-->
+		<skill id="210" level="25" min_level="54" cost="340000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="27" min_level="54" cost="340000"/><!--Light Armor Mastery-->
+		<skill id="280" level="19" min_level="54" cost="340000"/><!--Burning Fist-->
+		<skill id="54" level="29" min_level="54" cost="340000"/><!--Force Blaster-->
+		<skill id="281" level="17" min_level="54" cost="340000"/><!--Iron Fist-->
+		<skill id="35" level="8" min_level="54" cost="340000"/><!--Force Storm-->
+		<skill id="284" level="24" min_level="54" cost="340000"/><!--Hurricane Assault-->
+		<skill id="95" level="17" min_level="54" cost="340000"/><!--Cripple-->
+		<skill id="70" level="24" min_level="54" cost="340000"/><!--Emergency Rescue-->
+		<skill id="17" level="15" min_level="55" cost="340000"/><!--Force Burst-->
+		<skill id="210" level="26" min_level="55" cost="340000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="28" min_level="55" cost="340000"/><!--Light Armor Mastery-->
+		<skill id="280" level="20" min_level="55" cost="340000"/><!--Burning Fist-->
+		<skill id="54" level="30" min_level="55" cost="340000"/><!--Force Blaster-->
+		<skill id="281" level="18" min_level="55" cost="340000"/><!--Iron Fist-->
+		<skill id="35" level="9" min_level="55" cost="340000"/><!--Force Storm-->
+		<skill id="81" level="1" min_level="55" cost="340000"/><!--Punch of Doom-->
+		<skill id="284" level="25" min_level="55" cost="340000"/><!--Hurricane Assault-->
+		<skill id="70" level="25" min_level="55" cost="340000"/><!--Emergency Rescue-->
+		<skill id="17" level="16" min_level="56" cost="470000"/><!--Force Burst-->
+		<skill id="210" level="27" min_level="56" cost="470000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="29" min_level="56" cost="470000"/><!--Light Armor Mastery-->
+		<skill id="280" level="21" min_level="56" cost="470000"/><!--Burning Fist-->
+		<skill id="54" level="31" min_level="56" cost="470000"/><!--Force Blaster-->
+		<skill id="281" level="19" min_level="56" cost="470000"/><!--Iron Fist-->
+		<skill id="35" level="10" min_level="56" cost="470000"/><!--Force Storm-->
+		<skill id="284" level="26" min_level="56" cost="470000"/><!--Hurricane Assault-->
+		<skill id="95" level="18" min_level="56" cost="470000"/><!--Cripple-->
+		<skill id="70" level="26" min_level="56" cost="470000"/><!--Emergency Rescue-->
+		<skill id="17" level="17" min_level="57" cost="470000"/><!--Force Burst-->
+		<skill id="210" level="28" min_level="57" cost="470000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="30" min_level="57" cost="470000"/><!--Light Armor Mastery-->
+		<skill id="280" level="22" min_level="57" cost="470000"/><!--Burning Fist-->
+		<skill id="54" level="32" min_level="57" cost="470000"/><!--Force Blaster-->
+		<skill id="281" level="20" min_level="57" cost="470000"/><!--Iron Fist-->
+		<skill id="35" level="11" min_level="57" cost="470000"/><!--Force Storm-->
+		<skill id="284" level="27" min_level="57" cost="470000"/><!--Hurricane Assault-->
+		<skill id="70" level="27" min_level="57" cost="470000"/><!--Emergency Rescue-->
+		<skill id="17" level="18" min_level="58" cost="470000"/><!--Force Burst-->
+		<skill id="210" level="29" min_level="58" cost="470000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="31" min_level="58" cost="470000"/><!--Light Armor Mastery-->
+		<skill id="280" level="23" min_level="58" cost="470000"/><!--Burning Fist-->
+		<skill id="54" level="33" min_level="58" cost="470000"/><!--Force Blaster-->
+		<skill id="281" level="21" min_level="58" cost="470000"/><!--Iron Fist-->
+		<skill id="35" level="12" min_level="58" cost="470000"/><!--Force Storm-->
+		<skill id="168" level="3" min_level="58" cost="470000"/><!--Attack Speed Boost-->
+		<skill id="284" level="28" min_level="58" cost="470000"/><!--Hurricane Assault-->
+		<skill id="420" level="1" min_level="58" cost="470000"/><!--Zealot-->
+		<skill id="95" level="19" min_level="58" cost="470000"/><!--Cripple-->
+		<skill id="70" level="28" min_level="58" cost="470000"/><!--Emergency Rescue-->
+		<skill id="17" level="19" min_level="59" cost="680000"/><!--Force Burst-->
+		<skill id="210" level="30" min_level="59" cost="680000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="32" min_level="59" cost="680000"/><!--Light Armor Mastery-->
+		<skill id="280" level="24" min_level="59" cost="680000"/><!--Burning Fist-->
+		<skill id="54" level="34" min_level="59" cost="680000"/><!--Force Blaster-->
+		<skill id="281" level="22" min_level="59" cost="680000"/><!--Iron Fist-->
+		<skill id="35" level="13" min_level="59" cost="680000"/><!--Force Storm-->
+		<skill id="284" level="29" min_level="59" cost="680000"/><!--Hurricane Assault-->
+		<skill id="70" level="29" min_level="59" cost="680000"/><!--Emergency Rescue-->
+		<skill id="17" level="20" min_level="60" cost="680000"/><!--Force Burst-->
+		<skill id="45184" level="3" min_level="60"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="210" level="31" min_level="60" cost="680000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="33" min_level="60" cost="680000"/><!--Light Armor Mastery-->
+		<skill id="993" level="5" min_level="60" cost="680000"/><!--Force Mastery-->
+		<skill id="280" level="25" min_level="60" cost="680000"/><!--Burning Fist-->
+		<skill id="54" level="35" min_level="60" cost="680000"/><!--Force Blaster-->
+		<skill id="281" level="23" min_level="60" cost="680000"/><!--Iron Fist-->
+		<skill id="34" level="3" min_level="60" cost="680000"/><!--Bandage-->
+		<skill id="461" level="2" min_level="60" cost="680000"/><!--Break Duress-->
+		<skill id="35" level="14" min_level="60" cost="680000"/><!--Force Storm-->
+		<skill id="77" level="3" min_level="60" cost="680000"/><!--Ability to Attack-->
+		<skill id="994" level="2" min_level="60" cost="680000"/><!--Rush-->
+		<skill id="298" level="1" min_level="60" cost="680000"/><!--Rabbit Spirit Totem-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="284" level="30" min_level="60" cost="680000"/><!--Hurricane Assault-->
+		<skill id="50" level="5" min_level="60" cost="680000"/><!--Focus Force-->
+		<skill id="95" level="20" min_level="60" cost="680000"/><!--Cripple-->
+		<skill id="70" level="30" min_level="60" cost="680000"/><!--Emergency Rescue-->
+		<skill id="1405" level="2" min_level="61" cost="680000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="17" level="21" min_level="61" cost="680000"/><!--Force Burst-->
+		<skill id="210" level="32" min_level="61" cost="680000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="34" min_level="61" cost="680000"/><!--Light Armor Mastery-->
+		<skill id="280" level="26" min_level="61" cost="680000"/><!--Burning Fist-->
+		<skill id="54" level="36" min_level="61" cost="680000"/><!--Force Blaster-->
+		<skill id="281" level="24" min_level="61" cost="680000"/><!--Iron Fist-->
+		<skill id="35" level="15" min_level="61" cost="680000"/><!--Force Storm-->
+		<skill id="284" level="31" min_level="61" cost="680000"/><!--Hurricane Assault-->
+		<skill id="70" level="31" min_level="61" cost="680000"/><!--Emergency Rescue-->
+		<skill id="17" level="22" min_level="62" cost="840000"/><!--Force Burst-->
+		<skill id="210" level="33" min_level="62" cost="840000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="35" min_level="62" cost="840000"/><!--Light Armor Mastery-->
+		<skill id="280" level="27" min_level="62" cost="840000"/><!--Burning Fist-->
+		<skill id="54" level="37" min_level="62" cost="840000"/><!--Force Blaster-->
+		<skill id="281" level="25" min_level="62" cost="840000"/><!--Iron Fist-->
+		<skill id="287" level="3" min_level="62" cost="840000"/><!--Lionheart-->
+		<skill id="35" level="16" min_level="62" cost="840000"/><!--Force Storm-->
+		<skill id="284" level="32" min_level="62" cost="840000"/><!--Hurricane Assault-->
+		<skill id="95" level="21" min_level="62" cost="840000"/><!--Cripple-->
+		<skill id="70" level="32" min_level="62" cost="840000"/><!--Emergency Rescue-->
+		<skill id="17" level="23" min_level="63" cost="840000"/><!--Force Burst-->
+		<skill id="210" level="34" min_level="63" cost="840000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="36" min_level="63" cost="840000"/><!--Light Armor Mastery-->
+		<skill id="280" level="28" min_level="63" cost="840000"/><!--Burning Fist-->
+		<skill id="54" level="38" min_level="63" cost="840000"/><!--Force Blaster-->
+		<skill id="281" level="26" min_level="63" cost="840000"/><!--Iron Fist-->
+		<skill id="35" level="17" min_level="63" cost="840000"/><!--Force Storm-->
+		<skill id="284" level="33" min_level="63" cost="840000"/><!--Hurricane Assault-->
+		<skill id="70" level="33" min_level="63" cost="840000"/><!--Emergency Rescue-->
+		<skill id="17" level="24" min_level="64" cost="1100000"/><!--Force Burst-->
+		<skill id="210" level="35" min_level="64" cost="1100000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="37" min_level="64" cost="1100000"/><!--Light Armor Mastery-->
+		<skill id="280" level="29" min_level="64" cost="1100000"/><!--Burning Fist-->
+		<skill id="54" level="39" min_level="64" cost="1100000"/><!--Force Blaster-->
+		<skill id="281" level="27" min_level="64" cost="1100000"/><!--Iron Fist-->
+		<skill id="35" level="18" min_level="64" cost="1100000"/><!--Force Storm-->
+		<skill id="81" level="2" min_level="64" cost="1100000"/><!--Punch of Doom-->
+		<skill id="284" level="34" min_level="64" cost="1100000"/><!--Hurricane Assault-->
+		<skill id="95" level="22" min_level="64" cost="1100000"/><!--Cripple-->
+		<skill id="70" level="34" min_level="64" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="17" level="25" min_level="65" cost="1100000"/><!--Force Burst-->
+		<skill id="210" level="36" min_level="65" cost="1100000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="38" min_level="65" cost="1100000"/><!--Light Armor Mastery-->
+		<skill id="280" level="30" min_level="65" cost="1100000"/><!--Burning Fist-->
+		<skill id="54" level="40" min_level="65" cost="1100000"/><!--Force Blaster-->
+		<skill id="281" level="28" min_level="65" cost="1100000"/><!--Iron Fist-->
+		<skill id="35" level="19" min_level="65" cost="1100000"/><!--Force Storm-->
+		<skill id="284" level="35" min_level="65" cost="1100000"/><!--Hurricane Assault-->
+		<skill id="70" level="35" min_level="65" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="17" level="26" min_level="66" cost="1200000"/><!--Force Burst-->
+		<skill id="210" level="37" min_level="66" cost="1200000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="39" min_level="66" cost="1200000"/><!--Light Armor Mastery-->
+		<skill id="993" level="6" min_level="66" cost="1200000"/><!--Force Mastery-->
+		<skill id="280" level="31" min_level="66" cost="1200000"/><!--Burning Fist-->
+		<skill id="54" level="41" min_level="66" cost="1200000"/><!--Force Blaster-->
+		<skill id="281" level="29" min_level="66" cost="1200000"/><!--Iron Fist-->
+		<skill id="461" level="3" min_level="66" cost="1200000"/><!--Break Duress-->
+		<skill id="35" level="20" min_level="66" cost="1200000"/><!--Force Storm-->
+		<skill id="284" level="36" min_level="66" cost="1200000"/><!--Hurricane Assault-->
+		<skill id="420" level="2" min_level="66" cost="1200000"/><!--Zealot-->
+		<skill id="50" level="6" min_level="66" cost="1200000"/><!--Focus Force-->
+		<skill id="95" level="23" min_level="66" cost="1200000"/><!--Cripple-->
+		<skill id="70" level="36" min_level="66" cost="1200000"/><!--Emergency Rescue-->
+		<skill id="17" level="27" min_level="67" cost="1200000"/><!--Force Burst-->
+		<skill id="210" level="38" min_level="67" cost="1200000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="40" min_level="67" cost="1200000"/><!--Light Armor Mastery-->
+		<skill id="280" level="32" min_level="67" cost="1200000"/><!--Burning Fist-->
+		<skill id="54" level="42" min_level="67" cost="1200000"/><!--Force Blaster-->
+		<skill id="281" level="30" min_level="67" cost="1200000"/><!--Iron Fist-->
+		<skill id="35" level="21" min_level="67" cost="1200000"/><!--Force Storm-->
+		<skill id="284" level="37" min_level="67" cost="1200000"/><!--Hurricane Assault-->
+		<skill id="70" level="37" min_level="67" cost="1200000"/><!--Emergency Rescue-->
+		<skill id="17" level="28" min_level="68" cost="1600000"/><!--Force Burst-->
+		<skill id="210" level="39" min_level="68" cost="1600000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="41" min_level="68" cost="1600000"/><!--Light Armor Mastery-->
+		<skill id="280" level="33" min_level="68" cost="1600000"/><!--Burning Fist-->
+		<skill id="54" level="43" min_level="68" cost="1600000"/><!--Force Blaster-->
+		<skill id="281" level="31" min_level="68" cost="1600000"/><!--Iron Fist-->
+		<skill id="35" level="22" min_level="68" cost="1600000"/><!--Force Storm-->
+		<skill id="292" level="1" min_level="68" cost="1600000"/><!--Bison Spirit Totem-->
+		<skill id="284" level="38" min_level="68" cost="1600000"/><!--Hurricane Assault-->
+		<skill id="95" level="24" min_level="68" cost="1600000"/><!--Cripple-->
+		<skill id="70" level="38" min_level="68" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="17" level="29" min_level="69" cost="1600000"/><!--Force Burst-->
+		<skill id="210" level="40" min_level="69" cost="1600000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="42" min_level="69" cost="1600000"/><!--Light Armor Mastery-->
+		<skill id="280" level="34" min_level="69" cost="1600000"/><!--Burning Fist-->
+		<skill id="54" level="44" min_level="69" cost="1600000"/><!--Force Blaster-->
+		<skill id="281" level="32" min_level="69" cost="1600000"/><!--Iron Fist-->
+		<skill id="35" level="23" min_level="69" cost="1600000"/><!--Force Storm-->
+		<skill id="284" level="39" min_level="69" cost="1600000"/><!--Hurricane Assault-->
+		<skill id="70" level="39" min_level="69" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="17" level="30" min_level="70" cost="2000000"/><!--Force Burst-->
+		<skill id="210" level="41" min_level="70" cost="2000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="43" min_level="70" cost="2000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="35" min_level="70" cost="2000000"/><!--Burning Fist-->
+		<skill id="54" level="45" min_level="70" cost="2000000"/><!--Force Blaster-->
+		<skill id="281" level="33" min_level="70" cost="2000000"/><!--Iron Fist-->
+		<skill id="35" level="24" min_level="70" cost="2000000"/><!--Force Storm-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="284" level="40" min_level="70" cost="2000000"/><!--Hurricane Assault-->
+		<skill id="95" level="25" min_level="70" cost="2000000"/><!--Cripple-->
+		<skill id="70" level="40" min_level="70" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="17" level="31" min_level="71" cost="2000000"/><!--Force Burst-->
+		<skill id="210" level="42" min_level="71" cost="2000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="44" min_level="71" cost="2000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="36" min_level="71" cost="2000000"/><!--Burning Fist-->
+		<skill id="54" level="46" min_level="71" cost="2000000"/><!--Force Blaster-->
+		<skill id="281" level="34" min_level="71" cost="2000000"/><!--Iron Fist-->
+		<skill id="35" level="25" min_level="71" cost="2000000"/><!--Force Storm-->
+		<skill id="284" level="41" min_level="71" cost="2000000"/><!--Hurricane Assault-->
+		<skill id="70" level="41" min_level="71" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="17" level="32" min_level="72" cost="2300000"/><!--Force Burst-->
+		<skill id="210" level="43" min_level="72" cost="2300000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="45" min_level="72" cost="2300000"/><!--Light Armor Mastery-->
+		<skill id="993" level="7" min_level="72" cost="2300000"/><!--Force Mastery-->
+		<skill id="280" level="37" min_level="72" cost="2300000"/><!--Burning Fist-->
+		<skill id="54" level="47" min_level="72" cost="2300000"/><!--Force Blaster-->
+		<skill id="281" level="35" min_level="72" cost="2300000"/><!--Iron Fist-->
+		<skill id="35" level="26" min_level="72" cost="2300000"/><!--Force Storm-->
+		<skill id="81" level="3" min_level="72" cost="2300000"/><!--Punch of Doom-->
+		<skill id="284" level="42" min_level="72" cost="2300000"/><!--Hurricane Assault-->
+		<skill id="50" level="7" min_level="72" cost="2300000"/><!--Focus Force-->
+		<skill id="95" level="26" min_level="72" cost="2300000"/><!--Cripple-->
+		<skill id="70" level="42" min_level="72" cost="2300000"/><!--Emergency Rescue-->
+		<skill id="17" level="33" min_level="73" cost="2300000"/><!--Force Burst-->
+		<skill id="210" level="44" min_level="73" cost="2300000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="46" min_level="73" cost="2300000"/><!--Light Armor Mastery-->
+		<skill id="280" level="38" min_level="73" cost="2300000"/><!--Burning Fist-->
+		<skill id="54" level="48" min_level="73" cost="2300000"/><!--Force Blaster-->
+		<skill id="281" level="36" min_level="73" cost="2300000"/><!--Iron Fist-->
+		<skill id="35" level="27" min_level="73" cost="2300000"/><!--Force Storm-->
+		<skill id="284" level="43" min_level="73" cost="2300000"/><!--Hurricane Assault-->
+		<skill id="70" level="43" min_level="73" cost="2300000"/><!--Emergency Rescue-->
+		<skill id="17" level="34" min_level="74" cost="2300000"/><!--Force Burst-->
+		<skill id="210" level="45" min_level="74" cost="2300000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="47" min_level="74" cost="2300000"/><!--Light Armor Mastery-->
+		<skill id="280" level="39" min_level="74" cost="2300000"/><!--Burning Fist-->
+		<skill id="54" level="49" min_level="74" cost="2300000"/><!--Force Blaster-->
+		<skill id="281" level="37" min_level="74" cost="2300000"/><!--Iron Fist-->
+		<skill id="35" level="28" min_level="74" cost="2300000"/><!--Force Storm-->
+		<skill id="284" level="44" min_level="74" cost="2300000"/><!--Hurricane Assault-->
+		<skill id="420" level="3" min_level="74" cost="2300000"/><!--Zealot-->
+		<skill id="95" level="27" min_level="74" cost="2300000"/><!--Cripple-->
+		<skill id="70" level="44" min_level="74" cost="2300000"/><!--Emergency Rescue-->
+		<skill id="280" level="40" min_level="75" cost="2300000"/><!--Burning Fist-->
+		<skill id="284" level="45" min_level="75" cost="2300000"/><!--Hurricane Assault-->
+		<skill id="70" level="45" min_level="75" cost="2300000"/><!--Emergency Rescue-->
+		<skill id="76" level="2" min_level="45" cost="120000"/><!--Bear Nature-->
+		<skill id="83" level="2" min_level="40" cost="70000"/><!--Wolf Nature-->
+		<skill id="83" level="3" min_level="60" cost="680000"/><!--Wolf Nature-->
+	</normal_skill_tree>
+</list>

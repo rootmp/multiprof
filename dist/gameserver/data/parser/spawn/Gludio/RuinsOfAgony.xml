@@ -1,0 +1,3384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47448" y="106999" z="-3376" h="25049" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47418" y="107137" z="-3336" h="52754" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47691" y="107275" z="-3336" h="557" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47543" y="106987" z="-3360" h="40038" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47643" y="107294" z="-3336" h="59137" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47614" y="107116" z="-3352" h="43308" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47558" y="106873" z="-3368" h="17813" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47788" y="107171" z="-3336" h="26670" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47504" y="107019" z="-3352" h="19034" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47547" y="107161" z="-3336" h="31722" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47602" y="107226" z="-3336" h="34742" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47739" y="107156" z="-3336" h="29852" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48337" y="106361" z="-3336" h="58881" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48677" y="106433" z="-3328" h="34643" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48265" y="106346" z="-3336" h="34828" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48240" y="106363" z="-3336" h="58557" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48455" y="106410" z="-3328" h="40099" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47085" y="109112" z="-3784" h="5156" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47239" y="108902" z="-3720" h="50128" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47116" y="109135" z="-3784" h="31600" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47022" y="108955" z="-3768" h="15628" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47135" y="109075" z="-3776" h="41673" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48363" y="108566" z="-3720" h="5536" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48600" y="108488" z="-3720" h="36585" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48495" y="110167" z="-3568" h="42551" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48556" y="110421" z="-3568" h="20498" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48463" y="110066" z="-3568" h="5414" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48525" y="110299" z="-3568" h="18512" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48546" y="110057" z="-3560" h="23317" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48433" y="110218" z="-3568" h="10953" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48488" y="110176" z="-3568" h="268" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48479" y="110319" z="-3568" h="64308" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48306" y="110155" z="-3568" h="16109" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48418" y="110283" z="-3568" h="29025" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48394" y="110236" z="-3568" h="17034" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48679" y="110028" z="-3560" h="35878" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48305" y="109324" z="-3568" h="33409" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48101" y="109458" z="-3568" h="40372" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48085" y="109282" z="-3592" h="44142" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48016" y="109404" z="-3576" h="62400" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48451" y="109526" z="-3568" h="8495" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48165" y="109444" z="-3568" h="45756" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48442" y="109421" z="-3568" h="28712" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48319" y="109276" z="-3584" h="33691" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47987" y="109685" z="-3568" h="46071" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48322" y="109697" z="-3568" h="43150" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48391" y="109565" z="-3568" h="52511" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48381" y="109268" z="-3584" h="44990" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48601" y="108655" z="-3720" h="11228" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48318" y="108486" z="-3720" h="29456" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48555" y="108512" z="-3720" h="25442" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48265" y="108609" z="-3720" h="19286" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48276" y="108742" z="-3720" h="30117" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48370" y="108379" z="-3720" h="31212" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48394" y="108468" z="-3720" h="57528" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48498" y="108491" z="-3720" h="47587" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48281" y="108464" z="-3720" h="41269" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48391" y="108503" z="-3720" h="33277" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48565" y="111416" z="-3568" h="9752" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48398" y="111153" z="-3568" h="11984" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48549" y="111399" z="-3568" h="4952" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48388" y="111183" z="-3568" h="7252" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48759" y="111119" z="-3568" h="16361" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48628" y="111029" z="-3576" h="36883" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48684" y="111234" z="-3568" h="23585" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48501" y="111052" z="-3576" h="32257" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48554" y="111242" z="-3568" h="59546" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48628" y="110958" z="-3576" h="36318" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48566" y="111448" z="-3568" h="17740" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48484" y="110999" z="-3576" h="62177" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46966" y="108940" z="-3800" h="25565" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46926" y="109108" z="-3800" h="15426" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46992" y="108833" z="-3800" h="17697" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47173" y="108983" z="-3752" h="31762" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47026" y="108803" z="-3784" h="20514" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47015" y="109030" z="-3768" h="56372" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47055" y="108723" z="-3768" h="4870" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46178" y="110112" z="-3808" h="14921" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45996" y="110185" z="-3808" h="405" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46035" y="110208" z="-3808" h="20710" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45988" y="110054" z="-3808" h="28607" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46112" y="109808" z="-3808" h="36967" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46031" y="109978" z="-3808" h="3968" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45938" y="110002" z="-3808" h="1875" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46026" y="109934" z="-3808" h="63180" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45825" y="109824" z="-3808" h="50257" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46003" y="109859" z="-3808" h="57284" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45815" y="109962" z="-3808" h="6033" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45923" y="110037" z="-3808" h="26508" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46949" y="111895" z="-3792" h="54697" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46809" y="112069" z="-3776" h="40052" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46613" y="111866" z="-3808" h="53048" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46445" y="111837" z="-3808" h="58170" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46557" y="111837" z="-3808" h="11690" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46861" y="111896" z="-3800" h="31484" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46501" y="111982" z="-3808" h="30384" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46473" y="111808" z="-3808" h="47369" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46501" y="111953" z="-3808" h="11804" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46529" y="111924" z="-3808" h="22747" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46556" y="111983" z="-3808" h="25864" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46796" y="111866" z="-3808" h="6218" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46879" y="110872" z="-3800" h="58145" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45264" y="111874" z="-3808" h="3957" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45264" y="111737" z="-3808" h="17311" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44924" y="111547" z="-3808" h="23271" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47099" y="110531" z="-3808" h="32592" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45235" y="111856" z="-3808" h="51392" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45200" y="111740" z="-3808" h="8337" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46983" y="110445" z="-3808" h="554" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47024" y="110438" z="-3808" h="740" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-44993" y="111806" z="-3808" h="27381" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46297" y="111172" z="-3808" h="18854" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46105" y="110969" z="-3808" h="24189" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45905" y="111053" z="-3792" h="39209" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45867" y="111303" z="-3792" h="11782" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45950" y="111162" z="-3792" h="18442" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46221" y="111050" z="-3808" h="28068" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45993" y="111006" z="-3800" h="43326" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46071" y="111120" z="-3800" h="52100" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45802" y="110889" z="-3800" h="56150" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45893" y="111179" z="-3792" h="20816" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46114" y="111258" z="-3808" h="9767" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46143" y="111154" z="-3808" h="21892" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46921" y="110466" z="-3808" h="45977" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46681" y="110827" z="-3808" h="16819" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46789" y="110595" z="-3808" h="17219" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46692" y="110737" z="-3808" h="28710" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46670" y="110782" z="-3808" h="11225" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46920" y="110818" z="-3808" h="5993" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46993" y="110512" z="-3808" h="7776" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46633" y="110853" z="-3808" h="14813" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45270" y="111687" z="-3808" h="14989" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45211" y="111463" z="-3800" h="43527" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44992" y="111650" z="-3808" h="38902" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45195" y="111880" z="-3808" h="47718" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45006" y="111479" z="-3808" h="19221" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45141" y="111605" z="-3808" h="45421" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43782" y="108007" z="-3304" h="32368" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43621" y="107680" z="-3304" h="51100" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43641" y="107873" z="-3296" h="6250" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43804" y="107842" z="-3304" h="44232" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43918" y="107858" z="-3312" h="12274" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43784" y="107716" z="-3320" h="26102" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43652" y="107767" z="-3320" h="47101" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43642" y="107763" z="-3304" h="44714" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43831" y="107613" z="-3328" h="50063" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43830" y="107733" z="-3320" h="21754" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43754" y="107946" z="-3296" h="31953" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43611" y="108091" z="-3280" h="35426" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-44808" y="108322" z="-3392" h="28825" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44546" y="108258" z="-3360" h="40351" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44968" y="108361" z="-3416" h="23955" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-44834" y="108162" z="-3400" h="35924" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44760" y="108087" z="-3392" h="50077" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44644" y="108336" z="-3360" h="22274" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44831" y="108470" z="-3360" h="42583" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44694" y="108348" z="-3368" h="13163" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44788" y="108059" z="-3392" h="29608" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44840" y="108369" z="-3392" h="17250" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-44516" y="108335" z="-3360" h="23918" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-44737" y="108117" z="-3392" h="55917" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44856" y="110645" z="-3808" h="60545" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43390" y="109242" z="-3456" h="56869" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43357" y="109292" z="-3456" h="14632" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43345" y="109154" z="-3464" h="16903" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43474" y="109336" z="-3464" h="26705" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43292" y="109335" z="-3456" h="58906" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43174" y="109343" z="-3456" h="52029" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43248" y="109133" z="-3464" h="37429" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43394" y="109442" z="-3464" h="64625" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43527" y="109179" z="-3448" h="48762" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43333" y="109177" z="-3464" h="21218" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43375" y="109347" z="-3456" h="40965" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43333" y="109257" z="-3456" h="31845" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44988" y="110869" z="-3808" h="9880" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44864" y="110783" z="-3808" h="1173" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45245" y="110604" z="-3808" h="52266" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44857" y="110627" z="-3808" h="63885" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45079" y="110605" z="-3808" h="34126" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44901" y="110399" z="-3808" h="50543" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45165" y="110480" z="-3808" h="17675" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44836" y="110406" z="-3808" h="54105" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-44858" y="110724" z="-3808" h="31448" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45212" y="110399" z="-3808" h="31233" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44842" y="110816" z="-3808" h="3960" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47326" y="113814" z="-3672" h="50098" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47321" y="113683" z="-3656" h="52266" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47025" y="113784" z="-3624" h="41303" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47094" y="113463" z="-3576" h="24389" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47177" y="113463" z="-3592" h="61563" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46918" y="113538" z="-3576" h="26103" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48298" y="113977" z="-3608" h="49188" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48425" y="114087" z="-3600" h="25602" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48248" y="114128" z="-3664" h="43020" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48588" y="113978" z="-3568" h="33249" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48629" y="113875" z="-3568" h="55681" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48665" y="113817" z="-3568" h="24451" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48684" y="113812" z="-3568" h="10947" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48425" y="113879" z="-3568" h="13683" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48316" y="114012" z="-3616" h="12723" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48522" y="113737" z="-3568" h="14479" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48353" y="113805" z="-3592" h="7710" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48588" y="113739" z="-3568" h="35753" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46995" y="114730" z="-3672" h="8726" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46915" y="114719" z="-3672" h="14279" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48173" y="113244" z="-3600" h="13840" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48238" y="113145" z="-3584" h="25452" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47199" y="113837" z="-3648" h="30258" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47945" y="112968" z="-3576" h="48718" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48068" y="113091" z="-3584" h="48187" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48055" y="113027" z="-3584" h="44627" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47913" y="113226" z="-3616" h="43793" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48356" y="113121" z="-3576" h="49845" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48300" y="112983" z="-3576" h="22321" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48088" y="113180" z="-3608" h="20710" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47934" y="113347" z="-3648" h="7636" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48014" y="113209" z="-3608" h="35239" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48243" y="112976" z="-3576" h="23462" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47179" y="113614" z="-3624" h="30119" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47237" y="113872" z="-3672" h="11411" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47209" y="113779" z="-3664" h="18154" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47190" y="113488" z="-3608" h="25790" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47018" y="113590" z="-3584" h="36407" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47198" y="114432" z="-3672" h="40746" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45924" y="114695" z="-3672" h="31130" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45710" y="114847" z="-3672" h="16689" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45882" y="114771" z="-3672" h="10316" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45801" y="114705" z="-3672" h="8191" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47043" y="114758" z="-3672" h="10846" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47249" y="114521" z="-3672" h="43808" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47068" y="114737" z="-3672" h="29466" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47081" y="114729" z="-3672" h="19657" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47070" y="114732" z="-3672" h="9209" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47041" y="114799" z="-3672" h="6277" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47140" y="114731" z="-3672" h="27814" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46899" y="114799" z="-3672" h="8007" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45266" y="112911" z="-3808" h="8603" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45198" y="112789" z="-3808" h="36651" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45338" y="113157" z="-3808" h="27600" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45408" y="113075" z="-3808" h="31761" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45273" y="112739" z="-3808" h="4835" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45374" y="112942" z="-3808" h="64670" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45282" y="113120" z="-3808" h="1783" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45484" y="113033" z="-3808" h="32767" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45183" y="113168" z="-3808" h="37774" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45314" y="112939" z="-3808" h="54935" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45351" y="113040" z="-3808" h="54246" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45487" y="112906" z="-3808" h="33467" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45643" y="114742" z="-3672" h="12907" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45552" y="114789" z="-3672" h="12366" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45602" y="114767" z="-3672" h="15773" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46014" y="114741" z="-3672" h="20320" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45919" y="114757" z="-3672" h="11450" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45904" y="114741" z="-3672" h="22710" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42927" y="112739" z="-3504" h="63614" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42954" y="112636" z="-3488" h="61139" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43000" y="113018" z="-3520" h="379" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42869" y="112712" z="-3504" h="62491" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42960" y="112776" z="-3512" h="7535" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-42864" y="112802" z="-3512" h="61194" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42937" y="112941" z="-3520" h="1922" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-42919" y="112753" z="-3504" h="60089" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-44180" y="113843" z="-3792" h="28357" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44062" y="113529" z="-3808" h="4525" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-44101" y="113734" z="-3800" h="30630" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44291" y="113909" z="-3792" h="11314" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44448" y="113751" z="-3784" h="6209" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44146" y="113703" z="-3800" h="62895" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44104" y="113742" z="-3800" h="64842" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44303" y="113540" z="-3800" h="50364" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44154" y="113651" z="-3800" h="17250" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-44329" y="113540" z="-3800" h="36496" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44143" y="113728" z="-3800" h="41268" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-44286" y="113558" z="-3800" h="9114" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42882" y="113835" z="-3520" h="56766" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47424" y="116176" z="-3568" h="46483" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47075" y="116397" z="-3552" h="3711" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47180" y="116440" z="-3552" h="63312" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47069" y="116371" z="-3552" h="13744" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47348" y="116140" z="-3568" h="41043" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47370" y="116416" z="-3552" h="63050" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47095" y="116392" z="-3552" h="54324" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47398" y="116246" z="-3552" h="44782" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47069" y="116383" z="-3552" h="59275" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47072" y="116470" z="-3552" h="56610" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47072" y="116313" z="-3552" h="59275" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47158" y="116508" z="-3552" h="51787" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47849" y="115770" z="-3608" h="56891" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48099" y="115683" z="-3632" h="53259" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47727" y="115905" z="-3592" h="5203" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48136" y="115708" z="-3648" h="47394" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47955" y="115523" z="-3632" h="30127" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47789" y="115874" z="-3592" h="46071" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-47977" y="115475" z="-3632" h="31893" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47949" y="115533" z="-3632" h="18048" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47924" y="115622" z="-3624" h="54375" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47894" y="115491" z="-3632" h="34658" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-47973" y="115542" z="-3632" h="2316" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-47764" y="115594" z="-3624" h="6955" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45547" y="116618" z="-3552" h="19214" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46662" y="116662" z="-3560" h="25593" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46378" y="116668" z="-3552" h="55778" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46658" y="116595" z="-3560" h="36738" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45213" y="116667" z="-3552" h="56123" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46422" y="116592" z="-3552" h="51645" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45151" y="115447" z="-3624" h="18177" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45183" y="116550" z="-3552" h="42793" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46272" y="116606" z="-3544" h="38931" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45569" y="116667" z="-3544" h="5053" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45210" y="115583" z="-3624" h="48850" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45291" y="115185" z="-3632" h="33055" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45233" y="115603" z="-3592" h="2235" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45104" y="115523" z="-3624" h="47581" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45339" y="115311" z="-3624" h="4820" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45139" y="115261" z="-3624" h="27734" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45076" y="115516" z="-3624" h="45191" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45350" y="115242" z="-3624" h="18246" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45323" y="115245" z="-3624" h="51250" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45325" y="115437" z="-3624" h="61879" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45358" y="115234" z="-3624" h="39756" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46777" y="116710" z="-3552" h="36964" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46732" y="116727" z="-3552" h="36785" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46588" y="116613" z="-3568" h="38227" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46653" y="116663" z="-3560" h="18914" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46579" y="116676" z="-3568" h="46456" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46406" y="116554" z="-3552" h="52193" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46499" y="116620" z="-3568" h="57590" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46928" y="114737" z="-3672" h="4162" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45485" y="116633" z="-3552" h="51189" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45271" y="116532" z="-3552" h="45740" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45185" y="116608" z="-3552" h="23141" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45200" y="116552" z="-3552" h="49160" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45577" y="116466" z="-3552" h="15125" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45274" y="116430" z="-3552" h="24249" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45374" y="116523" z="-3552" h="14811" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45511" y="116679" z="-3552" h="55787" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-45918" y="114737" z="-3672" h="22339" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45822" y="114720" z="-3672" h="6241" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46177" y="115726" z="-3536" h="27046" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46335" y="115562" z="-3536" h="31131" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46041" y="115682" z="-3536" h="65195" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46060" y="115751" z="-3536" h="12319" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46027" y="115706" z="-3536" h="5411" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46104" y="115782" z="-3536" h="19830" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46301" y="115963" z="-3552" h="28750" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46034" y="115902" z="-3544" h="24884" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46241" y="115692" z="-3536" h="30056" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46086" y="115618" z="-3536" h="42583" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45974" y="115625" z="-3536" h="45563" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46152" y="115588" z="-3536" h="9986" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43147" y="114893" z="-3520" h="2532" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43243" y="114894" z="-3520" h="36451" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43136" y="114864" z="-3520" h="42298" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43055" y="115046" z="-3520" h="38243" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-42930" y="115168" z="-3520" h="23472" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43341" y="115016" z="-3520" h="38443" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43357" y="115091" z="-3520" h="48725" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42974" y="115025" z="-3520" h="26921" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43050" y="114880" z="-3520" h="25452" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43300" y="115098" z="-3520" h="18854" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42966" y="115213" z="-3520" h="57008" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43145" y="115030" z="-3520" h="24575" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44142" y="116598" z="-3568" h="22432" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-44270" y="116453" z="-3568" h="47164" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-44186" y="116239" z="-3584" h="5329" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44010" y="116346" z="-3592" h="28912" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-44179" y="116374" z="-3568" h="52293" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43985" y="116459" z="-3592" h="58997" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44338" y="116463" z="-3568" h="8849" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44358" y="116577" z="-3552" h="44449" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-44098" y="116561" z="-3568" h="48730" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44121" y="116305" z="-3600" h="56796" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44100" y="116443" z="-3584" h="31470" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-44366" y="116503" z="-3552" h="58592" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41861" y="111236" z="-3504" h="31098" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41973" y="111120" z="-3512" h="18838" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42253" y="111236" z="-3568" h="43108" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-42142" y="111284" z="-3536" h="56778" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41973" y="111091" z="-3504" h="59863" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42085" y="111323" z="-3536" h="19592" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-42393" y="111294" z="-3584" h="64359" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-42085" y="111178" z="-3536" h="11763" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41917" y="111439" z="-3472" h="48915" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42281" y="111091" z="-3560" h="41251" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42365" y="111207" z="-3568" h="63068" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41889" y="111091" z="-3504" h="47266" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41128" y="112323" z="-3016" h="30742" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41207" y="112005" z="-3008" h="40445" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-40983" y="112237" z="-3008" h="34173" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41095" y="111947" z="-3008" h="38090" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-40983" y="112063" z="-3000" h="23655" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41207" y="111976" z="-3008" h="40084" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41011" y="112266" z="-3008" h="14216" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41207" y="112092" z="-3008" h="15052" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41151" y="112063" z="-3008" h="63038" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-40983" y="112150" z="-3008" h="36677" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41235" y="112034" z="-3016" h="61" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41123" y="112150" z="-3008" h="42683" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42955" y="112964" z="-3520" h="13569" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-42899" y="112820" z="-3512" h="31586" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42843" y="112820" z="-3512" h="14419" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42899" y="112936" z="-3520" h="43345" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41372" y="114641" z="-3160" h="2027" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41611" y="113100" z="-3088" h="58041" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-41387" y="112868" z="-3040" h="23810" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41723" y="113216" z="-3080" h="48515" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-41443" y="113129" z="-3048" h="48752" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41443" y="112810" z="-3040" h="28309" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41611" y="112781" z="-3072" h="39268" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41555" y="112839" z="-3056" h="40061" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41471" y="112868" z="-3040" h="46184" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41495" y="112917" z="-3056" h="13381" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41387" y="113216" z="-3056" h="17140" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41695" y="113100" z="-3088" h="35848" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-42733" y="114218" z="-3520" h="43512" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-42777" y="114170" z="-3520" h="38378" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-42817" y="114015" z="-3520" h="25883" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42565" y="114189" z="-3520" h="12757" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42593" y="113812" z="-3520" h="34085" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42845" y="114015" z="-3520" h="61157" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42985" y="113841" z="-3520" h="61929" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42957" y="113957" z="-3520" h="9670" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-42761" y="114160" z="-3520" h="28941" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42593" y="114015" z="-3520" h="23812" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42728" y="114068" z="-3520" h="18567" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-41494" y="114646" z="-3160" h="39918" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41515" y="114612" z="-3160" h="43538" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41460" y="114609" z="-3160" h="41115" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41488" y="114636" z="-3160" h="59536" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-41459" y="114620" z="-3160" h="59748" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41548" y="114630" z="-3160" h="56332" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41514" y="114667" z="-3160" h="37702" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41405" y="114660" z="-3160" h="44667" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41313" y="114657" z="-3160" h="54453" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41341" y="114671" z="-3160" h="51065" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41466" y="114625" z="-3160" h="61632" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-41579" y="116182" z="-3136" h="1649" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41640" y="116216" z="-3136" h="21102" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41724" y="116364" z="-3152" h="26950" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-41761" y="116133" z="-3144" h="61462" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41374" y="116112" z="-3136" h="33725" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41593" y="116122" z="-3136" h="62364" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-41625" y="116052" z="-3136" h="22844" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41474" y="116254" z="-3136" h="28750" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41437" y="116352" z="-3136" h="33207" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-41677" y="116025" z="-3136" h="26388" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41507" y="116238" z="-3136" h="45214" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-41807" y="116227" z="-3152" h="42074" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-46196" y="118242" z="-3504" h="35139" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46187" y="118573" z="-3472" h="4805" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46175" y="118182" z="-3504" h="32244" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45861" y="118581" z="-3504" h="44652" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46088" y="118498" z="-3496" h="27797" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-45887" y="118143" z="-3536" h="59188" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46007" y="118410" z="-3504" h="47060" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46032" y="118553" z="-3488" h="17863" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46065" y="118619" z="-3488" h="48723" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46254" y="118453" z="-3480" h="51497" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-45869" y="118391" z="-3520" h="21727" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46160" y="118295" z="-3496" h="30135" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46067" y="117680" z="-3552" h="39355" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46280" y="117339" z="-3552" h="12333" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46196" y="117367" z="-3552" h="11295" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46285" y="117528" z="-3552" h="47411" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45982" y="117582" z="-3560" h="64716" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46269" y="117355" z="-3552" h="15019" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-45952" y="117585" z="-3560" h="33628" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46122" y="117598" z="-3552" h="32078" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-46251" y="117512" z="-3552" h="16077" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-46243" y="117529" z="-3552" h="2621" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46252" y="117638" z="-3552" h="24133" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-46176" y="117539" z="-3552" h="54686" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43727" y="117925" z="-3552" h="26152" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43848" y="117811" z="-3552" h="9326" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43623" y="117866" z="-3552" h="35122" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43939" y="117998" z="-3552" h="14598" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43687" y="118056" z="-3552" h="8934" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43815" y="118092" z="-3552" h="11505" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43768" y="117868" z="-3552" h="31363" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43285" y="116806" z="-3552" h="8006" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43399" y="116721" z="-3552" h="39264" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43407" y="116721" z="-3552" h="58543" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43460" y="116728" z="-3552" h="46290" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43567" y="116759" z="-3552" h="30273" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43558" y="116861" z="-3552" h="5875" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43515" y="116799" z="-3552" h="32070" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43592" y="116853" z="-3552" h="26151" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43506" y="116999" z="-3552" h="30648" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43423" y="116708" z="-3552" h="37007" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43358" y="116822" z="-3552" h="9863" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43397" y="116712" z="-3552" h="60701" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42976" y="118074" z="-3552" h="58760" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42888" y="117942" z="-3552" h="2452" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42788" y="118031" z="-3552" h="22589" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-42651" y="118159" z="-3552" h="16471" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-42912" y="117978" z="-3552" h="10250" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42665" y="118008" z="-3552" h="12468" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42878" y="118031" z="-3552" h="29397" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43056" y="118123" z="-3552" h="34195" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-42797" y="118232" z="-3552" h="48892" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42822" y="118067" z="-3552" h="52618" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-42960" y="117941" z="-3552" h="6132" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-42989" y="118295" z="-3552" h="61126" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43322" y="118904" z="-3552" h="45133" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-43294" y="118904" z="-3552" h="21192" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43098" y="119194" z="-3552" h="51530" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43378" y="118933" z="-3552" h="27728" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43322" y="119339" z="-3552" h="62455" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43378" y="119165" z="-3552" h="15970" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43406" y="119223" z="-3552" h="29942" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43210" y="118991" z="-3552" h="9797" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-43462" y="119194" z="-3552" h="8851" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43294" y="119368" z="-3552" h="3195" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-43322" y="119397" z="-3552" h="38209" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-43406" y="118962" z="-3552" h="62487" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48842" y="117011" z="-3416" h="20158" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48786" y="117451" z="-3328" h="21110" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49129" y="117368" z="-3320" h="23179" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48786" y="117891" z="-3184" h="17240" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47553" y="118276" z="-3152" h="33633" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47897" y="118385" z="-3160" h="18841" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47806" y="118441" z="-3160" h="32045" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-47806" y="118238" z="-3168" h="28408" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48819" y="118807" z="-3104" h="61318" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49680" y="114409" z="-3592" h="40593" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49623" y="114461" z="-3600" h="31431" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49464" y="114628" z="-3632" h="51895" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49476" y="114674" z="-3632" h="33424" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49758" y="114685" z="-3584" h="57186" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50591" y="113438" z="-3576" h="30223" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50269" y="113453" z="-3576" h="11512" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50217" y="113804" z="-3568" h="42790" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50519" y="113755" z="-3568" h="54568" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-50148" y="113581" z="-3576" h="48114" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50287" y="113451" z="-3576" h="43889" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50261" y="113635" z="-3576" h="16325" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50517" y="113463" z="-3576" h="2437" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-50367" y="113606" z="-3576" h="18664" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50611" y="113698" z="-3568" h="11692" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50474" y="113824" z="-3568" h="43297" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50516" y="113791" z="-3568" h="58537" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49438" y="114880" z="-3640" h="30436" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49812" y="114877" z="-3576" h="46627" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49644" y="114732" z="-3608" h="49251" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49364" y="114790" z="-3656" h="4535" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49587" y="114792" z="-3608" h="24692" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49695" y="114735" z="-3592" h="43679" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49694" y="114761" z="-3592" h="9053" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50312" y="116657" z="-3200" h="47391" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50399" y="117281" z="-3152" h="27296" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50896" y="117331" z="-3096" h="36366" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50922" y="118284" z="-2952" h="53992" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50697" y="116730" z="-3152" h="64492" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50335" y="118396" z="-3008" h="46113" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50002" y="117955" z="-3128" h="58234" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50391" y="118445" z="-2984" h="34679" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49165" y="111526" z="-3568" h="56406" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49403" y="111792" z="-3568" h="45443" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49212" y="111628" z="-3568" h="45426" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49255" y="111497" z="-3568" h="22244" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50395" y="112524" z="-3584" h="11248" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49218" y="111622" z="-3568" h="615" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49215" y="111603" z="-3568" h="41973" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49468" y="111553" z="-3568" h="61399" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49411" y="111768" z="-3568" h="57664" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49243" y="111656" z="-3568" h="49804" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49488" y="111555" z="-3568" h="55622" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49175" y="111557" z="-3568" h="28544" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49238" y="111622" z="-3568" h="14475" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50240" y="110968" z="-3568" h="64685" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50643" y="110946" z="-3568" h="31576" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50668" y="110903" z="-3568" h="29025" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50430" y="111078" z="-3568" h="52150" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50216" y="110846" z="-3568" h="54938" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50431" y="110654" z="-3568" h="54182" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50408" y="111080" z="-3568" h="57008" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50571" y="110812" z="-3568" h="21867" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50370" y="110787" z="-3568" h="15123" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50558" y="110870" z="-3568" h="17795" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-50193" y="110885" z="-3568" h="60990" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-50375" y="110792" z="-3568" h="521" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50510" y="112634" z="-3576" h="31980" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50163" y="112317" z="-3576" h="31849" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50468" y="112432" z="-3584" h="11762" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50418" y="112536" z="-3584" h="20538" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-50387" y="112490" z="-3584" h="61954" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50255" y="112384" z="-3584" h="43471" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-50282" y="112655" z="-3592" h="4564" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50487" y="112557" z="-3576" h="15335" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50368" y="112440" z="-3584" h="26343" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50461" y="112304" z="-3592" h="25575" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50291" y="112485" z="-3584" h="48979" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51401" y="112390" z="-3568" h="15593" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51588" y="112521" z="-3568" h="60128" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51569" y="112426" z="-3568" h="27795" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-51266" y="112677" z="-3568" h="41894" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51453" y="112446" z="-3568" h="28087" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52315" y="111232" z="-3576" h="17766" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-52614" y="111116" z="-3576" h="10673" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-52534" y="111075" z="-3576" h="39985" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52512" y="111372" z="-3576" h="29332" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52638" y="111229" z="-3576" h="62758" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52610" y="111221" z="-3576" h="21197" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52564" y="111001" z="-3576" h="9852" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52749" y="110994" z="-3576" h="29025" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52392" y="111043" z="-3576" h="13622" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52468" y="111226" z="-3576" h="35229" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-52368" y="111228" z="-3576" h="25181" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-52707" y="111294" z="-3576" h="16208" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51247" y="112594" z="-3568" h="52127" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51430" y="112447" z="-3568" h="23518" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51231" y="112386" z="-3568" h="61865" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51278" y="112368" z="-3568" h="41492" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-51223" y="112348" z="-3568" h="34455" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51745" y="111693" z="-3584" h="6663" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51384" y="112640" z="-3568" h="46872" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-51739" y="111676" z="-3584" h="52934" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51468" y="111754" z="-3592" h="23687" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-51736" y="111847" z="-3576" h="52071" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51497" y="111834" z="-3592" h="43084" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51594" y="111592" z="-3600" h="5120" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51768" y="111764" z="-3576" h="7550" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51335" y="111857" z="-3592" h="10724" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51459" y="111700" z="-3592" h="64972" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51508" y="111884" z="-3576" h="51029" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51456" y="111624" z="-3592" h="58790" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51691" y="111555" z="-3600" h="44278" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52585" y="112571" z="-3568" h="48085" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-52673" y="112173" z="-3576" h="16377" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52683" y="112475" z="-3576" h="25777" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-52573" y="112387" z="-3576" h="18892" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52827" y="112532" z="-3560" h="57342" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52864" y="112459" z="-3576" h="39168" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52452" y="112412" z="-3576" h="8274" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52710" y="112500" z="-3576" h="40542" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52489" y="112510" z="-3576" h="38781" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-52832" y="112250" z="-3576" h="24593" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52542" y="112468" z="-3576" h="47722" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-52707" y="112578" z="-3568" h="22042" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52014" y="113204" z="-3568" h="24390" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-52228" y="113114" z="-3560" h="15432" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52022" y="113225" z="-3568" h="17503" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52316" y="113127" z="-3560" h="6253" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-52026" y="113383" z="-3568" h="9198" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52203" y="113377" z="-3552" h="47873" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51964" y="113205" z="-3568" h="25458" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51986" y="113156" z="-3568" h="42804" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52219" y="113312" z="-3552" h="47060" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52326" y="113299" z="-3536" h="8409" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52061" y="113415" z="-3560" h="60091" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-52266" y="113226" z="-3536" h="6792" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51282" y="112489" z="-3568" h="16515" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-51213" y="115765" z="-3200" h="19253" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-52087" y="116253" z="-3144" h="39914" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-51843" y="116062" z="-3160" h="19123" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-51493" y="116574" z="-3112" h="3863" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53205" y="109573" z="-3568" h="63710" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53480" y="109740" z="-3568" h="36946" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53247" y="109864" z="-3568" h="20117" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53121" y="109892" z="-3568" h="43815" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51839" y="108755" z="-3720" h="58968" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52035" y="108987" z="-3720" h="52494" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52091" y="108755" z="-3720" h="17697" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52119" y="108610" z="-3720" h="17691" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-52007" y="108610" z="-3720" h="53919" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-52119" y="108697" z="-3720" h="3634" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-51727" y="108871" z="-3720" h="12431" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51867" y="108726" z="-3720" h="5699" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-51895" y="108900" z="-3720" h="35367" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-52063" y="108552" z="-3720" h="24396" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51811" y="108842" z="-3720" h="11613" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51811" y="108726" z="-3720" h="46664" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50752" y="109732" z="-3712" h="63795" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51085" y="110010" z="-3664" h="18700" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50641" y="110088" z="-3608" h="42638" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50635" y="109998" z="-3664" h="17276" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50705" y="109790" z="-3712" h="33810" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50844" y="109730" z="-3704" h="28970" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50973" y="109933" z="-3672" h="6375" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51009" y="110067" z="-3656" h="64591" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50981" y="109934" z="-3672" h="53003" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50846" y="109906" z="-3672" h="2034" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-50978" y="110048" z="-3656" h="57787" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50662" y="109797" z="-3712" h="57771" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49474" y="109690" z="-3560" h="27357" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49505" y="109811" z="-3568" h="44216" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49260" y="109802" z="-3560" h="43775" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49597" y="109576" z="-3560" h="62073" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49284" y="109721" z="-3560" h="63681" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49473" y="109591" z="-3560" h="15756" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49456" y="109779" z="-3568" h="60542" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49615" y="109606" z="-3560" h="47145" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49433" y="109541" z="-3560" h="1697" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49554" y="109882" z="-3568" h="48566" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49393" y="109513" z="-3560" h="63193" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49566" y="109515" z="-3560" h="55994" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-51023" y="108438" z="-3720" h="45632" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-51019" y="108481" z="-3720" h="64183" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50855" y="108642" z="-3720" h="37179" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50156" y="108755" z="-3720" h="21519" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50101" y="108856" z="-3720" h="59379" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49929" y="108994" z="-3712" h="41655" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49903" y="108816" z="-3712" h="14935" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50343" y="108862" z="-3720" h="9094" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50084" y="109016" z="-3712" h="36954" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50242" y="109117" z="-3720" h="33553" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50245" y="108782" z="-3720" h="36878" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50296" y="109052" z="-3720" h="8793" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49997" y="109015" z="-3712" h="54309" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50158" y="109060" z="-3712" h="39238" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49946" y="109190" z="-3672" h="20710" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54106" y="110096" z="-3568" h="30021" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54195" y="110187" z="-3568" h="31882" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-54056" y="110406" z="-3568" h="40500" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53877" y="110268" z="-3584" h="42875" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54152" y="110461" z="-3568" h="31448" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54116" y="110292" z="-3576" h="57040" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54045" y="110153" z="-3568" h="1295" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54086" y="110479" z="-3568" h="60701" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-53856" y="110408" z="-3584" h="13822" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54182" y="110166" z="-3568" h="12231" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54227" y="110371" z="-3568" h="22548" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54096" y="110311" z="-3576" h="7969" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53851" y="108403" z="-3728" h="45385" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53758" y="108309" z="-3728" h="2980" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53886" y="108512" z="-3736" h="43722" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53451" y="108674" z="-3720" h="25326" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-53803" y="108314" z="-3728" h="37488" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53760" y="108369" z="-3728" h="41483" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53573" y="108306" z="-3720" h="48066" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53772" y="108417" z="-3736" h="50982" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53177" y="109859" z="-3568" h="6004" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53075" y="109543" z="-3568" h="23817" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53124" y="109735" z="-3568" h="1716" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53167" y="109728" z="-3568" h="61375" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-53203" y="109666" z="-3568" h="18854" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-53043" y="109679" z="-3568" h="5234" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53040" y="109646" z="-3568" h="61489" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54789" y="111636" z="-3216" h="17329" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54574" y="111926" z="-3248" h="11377" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-55036" y="111335" z="-3200" h="21333" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54397" y="111810" z="-3296" h="41858" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53369" y="111293" z="-3576" h="30650" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53688" y="111334" z="-3576" h="3666" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53500" y="111566" z="-3576" h="46498" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53612" y="111226" z="-3576" h="37267" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53362" y="111383" z="-3576" h="55430" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53650" y="111596" z="-3576" h="8191" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53619" y="111664" z="-3576" h="63649" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53355" y="111474" z="-3576" h="41271" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53589" y="111226" z="-3576" h="52672" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53571" y="111582" z="-3576" h="16904" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-53528" y="111633" z="-3576" h="16383" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-53684" y="111482" z="-3576" h="50885" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53542" y="113682" z="-3288" h="54552" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53979" y="113947" z="-3272" h="42725" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53480" y="113533" z="-3312" h="52665" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54363" y="113312" z="-3256" h="3780" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-53664" y="114904" z="-3240" h="7492" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-55093" y="114751" z="-3184" h="22639" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54685" y="108535" z="-3720" h="5766" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54691" y="108501" z="-3720" h="61468" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54657" y="108351" z="-3720" h="63971" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54545" y="108474" z="-3720" h="56516" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-54753" y="108278" z="-3720" h="9070" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54780" y="108454" z="-3720" h="44278" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-54871" y="108255" z="-3720" h="55776" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54640" y="108501" z="-3720" h="62235" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54607" y="108211" z="-3728" h="48755" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54649" y="108222" z="-3728" h="24792" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54677" y="108378" z="-3720" h="36682" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54719" y="108356" z="-3720" h="27394" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53589" y="108414" z="-3720" h="53756" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54142" y="107769" z="-3720" h="50543" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-53581" y="108459" z="-3728" h="34759" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53713" y="108403" z="-3728" h="60048" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-53501" y="108729" z="-3720" h="25504" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-54027" y="107587" z="-3720" h="40220" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54208" y="107561" z="-3720" h="32449" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54153" y="107608" z="-3720" h="6836" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54111" y="107808" z="-3728" h="18896" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53971" y="107964" z="-3728" h="6408" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54163" y="107879" z="-3736" h="25275" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54064" y="107610" z="-3720" h="55679" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-54083" y="107906" z="-3752" h="50261" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54027" y="107616" z="-3720" h="13315" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54155" y="107764" z="-3720" h="36878" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-53947" y="107589" z="-3720" h="61936" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-55181" y="107594" z="-3728" h="17863" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-55290" y="107495" z="-3728" h="64341" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-55429" y="107662" z="-3720" h="42875" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-55166" y="107700" z="-3736" h="19829" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54818" y="107427" z="-3720" h="55539" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54757" y="107159" z="-3720" h="48486" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54868" y="107165" z="-3720" h="28923" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54818" y="107096" z="-3720" h="33336" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54739" y="107013" z="-3720" h="22505" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54770" y="107232" z="-3720" h="36565" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-54636" y="107251" z="-3720" h="3875" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54595" y="107005" z="-3720" h="46208" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-54455" y="107199" z="-3720" h="3960" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-54822" y="107135" z="-3720" h="36665" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-54813" y="107246" z="-3720" h="2896" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-54561" y="107006" z="-3720" h="65239" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50977" y="108417" z="-3720" h="61120" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49651" y="108481" z="-3720" h="7658" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49685" y="108385" z="-3720" h="48242" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49373" y="108425" z="-3720" h="43538" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50939" y="108442" z="-3720" h="9366" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49181" y="108487" z="-3720" h="56055" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50735" y="108458" z="-3720" h="48546" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49394" y="106445" z="-3328" h="51161" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49466" y="106440" z="-3328" h="49847" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49578" y="106366" z="-3328" h="48872" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49761" y="106406" z="-3328" h="38516" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50803" y="108451" z="-3720" h="48632" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50696" y="108379" z="-3720" h="44990" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49337" y="106410" z="-3328" h="46392" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-50857" y="108489" z="-3720" h="43128" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49563" y="106404" z="-3328" h="50063" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-50715" y="108437" z="-3720" h="2980" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49260" y="106421" z="-3328" h="61016" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49270" y="106430" z="-3328" h="60186" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49562" y="106456" z="-3328" h="53528" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-50990" y="108646" z="-3720" h="2875" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-50670" y="108453" z="-3720" h="49066" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49571" y="108288" z="-3720" h="44162" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49255" y="108460" z="-3720" h="50932" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49635" y="108456" z="-3720" h="14008" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-49283" y="108504" z="-3720" h="46735" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49310" y="108428" z="-3720" h="60292" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49617" y="108361" z="-3720" h="30122" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-49337" y="108703" z="-3712" h="33011" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49218" y="108477" z="-3720" h="53989" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-49403" y="106452" z="-3328" h="62785" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49431" y="106336" z="-3328" h="53373" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-49683" y="106452" z="-3328" h="4525" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20064" /> <!-- Tumran Bugbear Warrior -->
+    <point x="-48684" y="106305" z="-3328" h="8670" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48320" y="106334" z="-3336" h="35372" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48320" y="106421" z="-3336" h="38840" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20051" /> <!-- Skeleton Bowman -->
+    <point x="-48589" y="106452" z="-3328" h="27990" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48460" y="106392" z="-3328" h="10944" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20060" /> <!-- Raging Spartoi -->
+    <point x="-48454" y="106370" z="-3328" h="5949" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="20054" /> <!-- Ruin Spartoi -->
+    <point x="-48419" y="106478" z="-3328" h="41032" />
+  </spawn>
+  <spawn count="1" respawn="30" respawn_random="0" period_of_day="none">
+    <npc id="30409" /> <!-- Earth Snake -->
+    <point x="-53760" y="110720" z="-3584" h="0" />
+  </spawn>
+</list>

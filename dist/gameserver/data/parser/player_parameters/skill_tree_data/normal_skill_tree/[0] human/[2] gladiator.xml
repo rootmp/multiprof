@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="2"><!--Gladiator-->
+		<skill id="312" level="6" min_level="40" cost="55000"/><!--Vicious Stance-->
+		<skill id="212" level="3" min_level="40" cost="55000"/><!--Fast HP Recovery-->
+		<skill id="992" level="1" min_level="40" cost="55000"/><!--Sonic Mastery-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="227" level="14" min_level="40" cost="55000"/><!--Light Armor Mastery-->
+		<skill id="227" level="15" min_level="40" cost="55000"/><!--Light Armor Mastery-->
+		<skill id="227" level="16" min_level="40" cost="55000"/><!--Light Armor Mastery-->
+		<skill id="257" level="9" min_level="40" cost="55000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="257" level="10" min_level="40" cost="55000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="257" level="11" min_level="40" cost="55000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="141" level="4" min_level="40" cost="55000"/><!--Weapon Mastery-->
+		<skill id="144" level="1" min_level="40" cost="55000"/><!--Dual Sword Mastery-->
+		<skill id="144" level="2" min_level="40" cost="55000"/><!--Dual Sword Mastery-->
+		<skill id="144" level="3" min_level="40" cost="55000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="14" min_level="40" cost="55000"/><!--Heavy Armor Mastery-->
+		<skill id="231" level="15" min_level="40" cost="55000"/><!--Heavy Armor Mastery-->
+		<skill id="231" level="16" min_level="40" cost="55000"/><!--Heavy Armor Mastery-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="1" level="1" min_level="40" cost="55000"/><!--Rising Attack-->
+		<skill id="1" level="2" min_level="40" cost="55000"/><!--Rising Attack-->
+		<skill id="1" level="3" min_level="40" cost="55000"/><!--Rising Attack-->
+		<skill id="1" level="4" min_level="40" cost="55000"/><!--Rising Attack-->
+		<skill id="1" level="5" min_level="40" cost="55000"/><!--Rising Attack-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="6" level="1" min_level="40" cost="55000"/><!--Sonic Blaster-->
+		<skill id="6" level="2" min_level="40" cost="55000"/><!--Sonic Blaster-->
+		<skill id="6" level="3" min_level="40" cost="55000"/><!--Sonic Blaster-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="88" level="1" min_level="40" cost="55000"/><!--Purify-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="260" level="1" min_level="40" cost="55000"/><!--Power Break-->
+		<skill id="260" level="2" min_level="40" cost="55000"/><!--Power Break-->
+		<skill id="260" level="3" min_level="40" cost="55000"/><!--Power Break-->
+		<skill id="994" level="1" min_level="40" cost="55000"/><!--Rush-->
+		<skill id="256" level="2" min_level="40" cost="55000"><!--Accuracy-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="190" level="1" min_level="40" cost="55000"/><!--Fatal Strike-->
+		<skill id="190" level="2" min_level="40" cost="55000"/><!--Fatal Strike-->
+		<skill id="190" level="3" min_level="40" cost="55000"/><!--Fatal Strike-->
+		<skill id="190" level="4" min_level="40" cost="55000"/><!--Fatal Strike-->
+		<skill id="190" level="5" min_level="40" cost="55000"/><!--Fatal Strike-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="8" level="1" min_level="40" cost="55000"/><!--Sonic Focus-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="70" level="10" min_level="40" cost="55000"/><!--Emergency Rescue-->
+		<skill id="227" level="17" min_level="41" cost="65000"/><!--Light Armor Mastery-->
+		<skill id="257" level="12" min_level="41" cost="65000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="4" min_level="41" cost="65000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="17" min_level="41" cost="65000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="6" min_level="41" cost="65000"/><!--Rising Attack-->
+		<skill id="5" level="1" min_level="41" cost="65000"/><!--Double Sonic Slash-->
+		<skill id="1605" level="1" min_level="41" cost="65000"/><!--Dual Weapon Defense-->
+		<skill id="9" level="1" min_level="41" cost="65000"/><!--Sonic Buster-->
+		<skill id="6" level="4" min_level="41" cost="65000"/><!--Sonic Blaster-->
+		<skill id="260" level="4" min_level="41" cost="65000"/><!--Power Break-->
+		<skill id="190" level="6" min_level="41" cost="65000"/><!--Fatal Strike-->
+		<skill id="70" level="11" min_level="41" cost="65000"/><!--Emergency Rescue-->
+		<skill id="227" level="18" min_level="42" cost="65000"/><!--Light Armor Mastery-->
+		<skill id="257" level="13" min_level="42" cost="65000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="5" min_level="42" cost="65000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="18" min_level="42" cost="65000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="7" min_level="42" cost="65000"/><!--Rising Attack-->
+		<skill id="5" level="2" min_level="42" cost="65000"/><!--Double Sonic Slash-->
+		<skill id="9" level="2" min_level="42" cost="65000"/><!--Sonic Buster-->
+		<skill id="6" level="5" min_level="42" cost="65000"/><!--Sonic Blaster-->
+		<skill id="260" level="5" min_level="42" cost="65000"/><!--Power Break-->
+		<skill id="190" level="7" min_level="42" cost="65000"/><!--Fatal Strike-->
+		<skill id="70" level="12" min_level="42" cost="65000"/><!--Emergency Rescue-->
+		<skill id="312" level="7" min_level="43" cost="65000"/><!--Vicious Stance-->
+		<skill id="992" level="2" min_level="43" cost="65000"/><!--Sonic Mastery-->
+		<skill id="227" level="19" min_level="43" cost="65000"/><!--Light Armor Mastery-->
+		<skill id="257" level="14" min_level="43" cost="65000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="6" min_level="43" cost="65000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="19" min_level="43" cost="65000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="8" min_level="43" cost="65000"/><!--Rising Attack-->
+		<skill id="5" level="3" min_level="43" cost="65000"/><!--Double Sonic Slash-->
+		<skill id="9" level="3" min_level="43" cost="65000"/><!--Sonic Buster-->
+		<skill id="6" level="6" min_level="43" cost="65000"/><!--Sonic Blaster-->
+		<skill id="78" level="2" min_level="43" cost="65000"/><!--War Cry-->
+		<skill id="290" level="1" min_level="43" cost="65000"/><!--Final Frenzy-->
+		<skill id="260" level="6" min_level="43" cost="65000"/><!--Power Break-->
+		<skill id="190" level="8" min_level="43" cost="65000"/><!--Fatal Strike-->
+		<skill id="8" level="2" min_level="43" cost="65000"/><!--Sonic Focus-->
+		<skill id="70" level="13" min_level="43" cost="65000"/><!--Emergency Rescue-->
+		<skill id="227" level="20" min_level="44" cost="97000"/><!--Light Armor Mastery-->
+		<skill id="257" level="15" min_level="44" cost="97000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="7" min_level="44" cost="97000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="20" min_level="44" cost="97000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="9" min_level="44" cost="97000"/><!--Rising Attack-->
+		<skill id="5" level="4" min_level="44" cost="97000"/><!--Double Sonic Slash-->
+		<skill id="9" level="4" min_level="44" cost="97000"/><!--Sonic Buster-->
+		<skill id="6" level="7" min_level="44" cost="97000"/><!--Sonic Blaster-->
+		<skill id="260" level="7" min_level="44" cost="97000"/><!--Power Break-->
+		<skill id="190" level="9" min_level="44" cost="97000"/><!--Fatal Strike-->
+		<skill id="70" level="14" min_level="44" cost="97000"/><!--Emergency Rescue-->
+		<skill id="227" level="21" min_level="45" cost="97000"/><!--Light Armor Mastery-->
+		<skill id="257" level="16" min_level="45" cost="97000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="8" min_level="45" cost="97000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="21" min_level="45" cost="97000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="10" min_level="45" cost="97000"/><!--Rising Attack-->
+		<skill id="5" level="5" min_level="45" cost="97000"/><!--Double Sonic Slash-->
+		<skill id="9" level="5" min_level="45" cost="97000"/><!--Sonic Buster-->
+		<skill id="6" level="8" min_level="45" cost="97000"/><!--Sonic Blaster-->
+		<skill id="34" level="2" min_level="45" cost="97000"/><!--Bandage-->
+		<skill id="260" level="8" min_level="45" cost="97000"/><!--Power Break-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="261" level="1" min_level="45" cost="97000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="10" min_level="45" cost="97000"/><!--Fatal Strike-->
+		<skill id="70" level="15" min_level="45" cost="97000"/><!--Emergency Rescue-->
+		<skill id="312" level="8" min_level="46" cost="97000"/><!--Vicious Stance-->
+		<skill id="212" level="4" min_level="46" cost="97000"/><!--Fast HP Recovery-->
+		<skill id="227" level="22" min_level="46" cost="97000"/><!--Light Armor Mastery-->
+		<skill id="257" level="17" min_level="46" cost="97000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="9" min_level="46" cost="97000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="22" min_level="46" cost="97000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="11" min_level="46" cost="97000"/><!--Rising Attack-->
+		<skill id="5" level="6" min_level="46" cost="97000"/><!--Double Sonic Slash-->
+		<skill id="9" level="6" min_level="46" cost="97000"/><!--Sonic Buster-->
+		<skill id="6" level="9" min_level="46" cost="97000"/><!--Sonic Blaster-->
+		<skill id="290" level="2" min_level="46" cost="97000"/><!--Final Frenzy-->
+		<skill id="260" level="9" min_level="46" cost="97000"/><!--Power Break-->
+		<skill id="190" level="11" min_level="46" cost="97000"/><!--Fatal Strike-->
+		<skill id="70" level="16" min_level="46" cost="97000"/><!--Emergency Rescue-->
+		<skill id="227" level="23" min_level="47" cost="130000"/><!--Light Armor Mastery-->
+		<skill id="257" level="18" min_level="47" cost="130000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="10" min_level="47" cost="130000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="23" min_level="47" cost="130000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="12" min_level="47" cost="130000"/><!--Rising Attack-->
+		<skill id="5" level="7" min_level="47" cost="130000"/><!--Double Sonic Slash-->
+		<skill id="9" level="7" min_level="47" cost="130000"/><!--Sonic Buster-->
+		<skill id="6" level="10" min_level="47" cost="130000"/><!--Sonic Blaster-->
+		<skill id="7" level="1" min_level="47" cost="130000"/><!--Sonic Storm-->
+		<skill id="260" level="10" min_level="47" cost="130000"/><!--Power Break-->
+		<skill id="261" level="2" min_level="47" cost="130000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="12" min_level="47" cost="130000"/><!--Fatal Strike-->
+		<skill id="70" level="17" min_level="47" cost="130000"/><!--Emergency Rescue-->
+		<skill id="227" level="24" min_level="48" cost="130000"/><!--Light Armor Mastery-->
+		<skill id="257" level="19" min_level="48" cost="130000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="11" min_level="48" cost="130000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="24" min_level="48" cost="130000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="13" min_level="48" cost="130000"/><!--Rising Attack-->
+		<skill id="5" level="8" min_level="48" cost="130000"/><!--Double Sonic Slash-->
+		<skill id="9" level="8" min_level="48" cost="130000"/><!--Sonic Buster-->
+		<skill id="6" level="11" min_level="48" cost="130000"/><!--Sonic Blaster-->
+		<skill id="7" level="2" min_level="48" cost="130000"/><!--Sonic Storm-->
+		<skill id="260" level="11" min_level="48" cost="130000"/><!--Power Break-->
+		<skill id="190" level="13" min_level="48" cost="130000"/><!--Fatal Strike-->
+		<skill id="70" level="18" min_level="48" cost="130000"/><!--Emergency Rescue-->
+		<skill id="312" level="9" min_level="49" cost="130000"/><!--Vicious Stance-->
+		<skill id="992" level="3" min_level="49" cost="130000"/><!--Sonic Mastery-->
+		<skill id="227" level="25" min_level="49" cost="130000"/><!--Light Armor Mastery-->
+		<skill id="257" level="20" min_level="49" cost="130000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="12" min_level="49" cost="130000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="25" min_level="49" cost="130000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="14" min_level="49" cost="130000"/><!--Rising Attack-->
+		<skill id="5" level="9" min_level="49" cost="130000"/><!--Double Sonic Slash-->
+		<skill id="9" level="9" min_level="49" cost="130000"/><!--Sonic Buster-->
+		<skill id="6" level="12" min_level="49" cost="130000"/><!--Sonic Blaster-->
+		<skill id="7" level="3" min_level="49" cost="130000"/><!--Sonic Storm-->
+		<skill id="287" level="2" min_level="49" cost="130000"/><!--Lionheart-->
+		<skill id="290" level="3" min_level="49" cost="130000"/><!--Final Frenzy-->
+		<skill id="260" level="12" min_level="49" cost="130000"/><!--Power Break-->
+		<skill id="261" level="3" min_level="49" cost="130000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="14" min_level="49" cost="130000"/><!--Fatal Strike-->
+		<skill id="8" level="3" min_level="49" cost="130000"/><!--Sonic Focus-->
+		<skill id="70" level="19" min_level="49" cost="130000"/><!--Emergency Rescue-->
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="227" level="26" min_level="50" cost="190000"/><!--Light Armor Mastery-->
+		<skill id="257" level="21" min_level="50" cost="190000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="13" min_level="50" cost="190000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="26" min_level="50" cost="190000"/><!--Heavy Armor Mastery-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1" level="15" min_level="50" cost="190000"/><!--Rising Attack-->
+		<skill id="5" level="10" min_level="50" cost="190000"/><!--Double Sonic Slash-->
+		<skill id="9" level="10" min_level="50" cost="190000"/><!--Sonic Buster-->
+		<skill id="6" level="13" min_level="50" cost="190000"/><!--Sonic Blaster-->
+		<skill id="7" level="4" min_level="50" cost="190000"/><!--Sonic Storm-->
+		<skill id="260" level="13" min_level="50" cost="190000"/><!--Power Break-->
+		<skill id="190" level="15" min_level="50" cost="190000"/><!--Fatal Strike-->
+		<skill id="70" level="20" min_level="50" cost="190000"/><!--Emergency Rescue-->
+		<skill id="227" level="27" min_level="51" cost="190000"/><!--Light Armor Mastery-->
+		<skill id="257" level="22" min_level="51" cost="190000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="14" min_level="51" cost="190000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="27" min_level="51" cost="190000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="16" min_level="51" cost="190000"/><!--Rising Attack-->
+		<skill id="5" level="11" min_level="51" cost="190000"/><!--Double Sonic Slash-->
+		<skill id="9" level="11" min_level="51" cost="190000"/><!--Sonic Buster-->
+		<skill id="6" level="14" min_level="51" cost="190000"/><!--Sonic Blaster-->
+		<skill id="7" level="5" min_level="51" cost="190000"/><!--Sonic Storm-->
+		<skill id="260" level="14" min_level="51" cost="190000"/><!--Power Break-->
+		<skill id="190" level="16" min_level="51" cost="190000"/><!--Fatal Strike-->
+		<skill id="70" level="21" min_level="51" cost="190000"/><!--Emergency Rescue-->
+		<skill id="312" level="10" min_level="52" cost="190000"/><!--Vicious Stance-->
+		<skill id="1405" level="1" min_level="52" cost="190000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="212" level="5" min_level="52" cost="190000"/><!--Fast HP Recovery-->
+		<skill id="227" level="28" min_level="52" cost="190000"/><!--Light Armor Mastery-->
+		<skill id="257" level="23" min_level="52" cost="190000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="15" min_level="52" cost="190000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="28" min_level="52" cost="190000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="17" min_level="52" cost="190000"/><!--Rising Attack-->
+		<skill id="5" level="12" min_level="52" cost="190000"/><!--Double Sonic Slash-->
+		<skill id="9" level="12" min_level="52" cost="190000"/><!--Sonic Buster-->
+		<skill id="6" level="15" min_level="52" cost="190000"/><!--Sonic Blaster-->
+		<skill id="7" level="6" min_level="52" cost="190000"/><!--Sonic Storm-->
+		<skill id="290" level="4" min_level="52" cost="190000"/><!--Final Frenzy-->
+		<skill id="260" level="15" min_level="52" cost="190000"/><!--Power Break-->
+		<skill id="261" level="4" min_level="52" cost="190000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="17" min_level="52" cost="190000"/><!--Fatal Strike-->
+		<skill id="70" level="22" min_level="52" cost="190000"/><!--Emergency Rescue-->
+		<skill id="227" level="29" min_level="53" cost="270000"/><!--Light Armor Mastery-->
+		<skill id="257" level="24" min_level="53" cost="270000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="16" min_level="53" cost="270000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="29" min_level="53" cost="270000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="18" min_level="53" cost="270000"/><!--Rising Attack-->
+		<skill id="5" level="13" min_level="53" cost="270000"/><!--Double Sonic Slash-->
+		<skill id="9" level="13" min_level="53" cost="270000"/><!--Sonic Buster-->
+		<skill id="6" level="16" min_level="53" cost="270000"/><!--Sonic Blaster-->
+		<skill id="7" level="7" min_level="53" cost="270000"/><!--Sonic Storm-->
+		<skill id="260" level="16" min_level="53" cost="270000"/><!--Power Break-->
+		<skill id="190" level="18" min_level="53" cost="270000"/><!--Fatal Strike-->
+		<skill id="70" level="23" min_level="53" cost="270000"/><!--Emergency Rescue-->
+		<skill id="227" level="30" min_level="54" cost="270000"/><!--Light Armor Mastery-->
+		<skill id="257" level="25" min_level="54" cost="270000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="17" min_level="54" cost="270000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="30" min_level="54" cost="270000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="19" min_level="54" cost="270000"/><!--Rising Attack-->
+		<skill id="5" level="14" min_level="54" cost="270000"/><!--Double Sonic Slash-->
+		<skill id="1605" level="2" min_level="54" cost="270000"/><!--Dual Weapon Defense-->
+		<skill id="9" level="14" min_level="54" cost="270000"/><!--Sonic Buster-->
+		<skill id="6" level="17" min_level="54" cost="270000"/><!--Sonic Blaster-->
+		<skill id="7" level="8" min_level="54" cost="270000"/><!--Sonic Storm-->
+		<skill id="260" level="17" min_level="54" cost="270000"/><!--Power Break-->
+		<skill id="190" level="19" min_level="54" cost="270000"/><!--Fatal Strike-->
+		<skill id="70" level="24" min_level="54" cost="270000"/><!--Emergency Rescue-->
+		<skill id="312" level="11" min_level="55" cost="270000"/><!--Vicious Stance-->
+		<skill id="992" level="4" min_level="55" cost="270000"/><!--Sonic Mastery-->
+		<skill id="227" level="31" min_level="55" cost="270000"/><!--Light Armor Mastery-->
+		<skill id="257" level="26" min_level="55" cost="270000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="18" min_level="55" cost="270000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="31" min_level="55" cost="270000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="20" min_level="55" cost="270000"/><!--Rising Attack-->
+		<skill id="5" level="15" min_level="55" cost="270000"/><!--Double Sonic Slash-->
+		<skill id="9" level="15" min_level="55" cost="270000"/><!--Sonic Buster-->
+		<skill id="6" level="18" min_level="55" cost="270000"/><!--Sonic Blaster-->
+		<skill id="6" level="19" min_level="55" cost="270000"/><!--Sonic Blaster-->
+		<skill id="7" level="9" min_level="55" cost="270000"/><!--Sonic Storm-->
+		<skill id="290" level="5" min_level="55" cost="270000"/><!--Final Frenzy-->
+		<skill id="260" level="18" min_level="55" cost="270000"/><!--Power Break-->
+		<skill id="261" level="5" min_level="55" cost="270000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="20" min_level="55" cost="270000"/><!--Fatal Strike-->
+		<skill id="8" level="4" min_level="55" cost="270000"/><!--Sonic Focus-->
+		<skill id="70" level="25" min_level="55" cost="270000"/><!--Emergency Rescue-->
+		<skill id="227" level="32" min_level="56" cost="370000"/><!--Light Armor Mastery-->
+		<skill id="257" level="27" min_level="56" cost="370000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="19" min_level="56" cost="370000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="32" min_level="56" cost="370000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="21" min_level="56" cost="370000"/><!--Rising Attack-->
+		<skill id="5" level="16" min_level="56" cost="370000"/><!--Double Sonic Slash-->
+		<skill id="9" level="16" min_level="56" cost="370000"/><!--Sonic Buster-->
+		<skill id="451" level="1" min_level="56" cost="370000"/><!--Sonic Move-->
+		<skill id="7" level="10" min_level="56" cost="370000"/><!--Sonic Storm-->
+		<skill id="260" level="19" min_level="56" cost="370000"/><!--Power Break-->
+		<skill id="261" level="6" min_level="56" cost="370000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="21" min_level="56" cost="370000"/><!--Fatal Strike-->
+		<skill id="70" level="26" min_level="56" cost="370000"/><!--Emergency Rescue-->
+		<skill id="227" level="33" min_level="57" cost="370000"/><!--Light Armor Mastery-->
+		<skill id="257" level="28" min_level="57" cost="370000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="20" min_level="57" cost="370000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="33" min_level="57" cost="370000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="22" min_level="57" cost="370000"/><!--Rising Attack-->
+		<skill id="5" level="17" min_level="57" cost="370000"/><!--Double Sonic Slash-->
+		<skill id="9" level="17" min_level="57" cost="370000"/><!--Sonic Buster-->
+		<skill id="6" level="20" min_level="57" cost="370000"/><!--Sonic Blaster-->
+		<skill id="7" level="11" min_level="57" cost="370000"/><!--Sonic Storm-->
+		<skill id="260" level="20" min_level="57" cost="370000"/><!--Power Break-->
+		<skill id="261" level="7" min_level="57" cost="370000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="22" min_level="57" cost="370000"/><!--Fatal Strike-->
+		<skill id="70" level="27" min_level="57" cost="370000"/><!--Emergency Rescue-->
+		<skill id="312" level="12" min_level="58" cost="370000"/><!--Vicious Stance-->
+		<skill id="212" level="6" min_level="58" cost="370000"/><!--Fast HP Recovery-->
+		<skill id="227" level="34" min_level="58" cost="370000"/><!--Light Armor Mastery-->
+		<skill id="257" level="29" min_level="58" cost="370000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="21" min_level="58" cost="370000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="34" min_level="58" cost="370000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="23" min_level="58" cost="370000"/><!--Rising Attack-->
+		<skill id="5" level="18" min_level="58" cost="370000"/><!--Double Sonic Slash-->
+		<skill id="9" level="18" min_level="58" cost="370000"/><!--Sonic Buster-->
+		<skill id="6" level="21" min_level="58" cost="370000"/><!--Sonic Blaster-->
+		<skill id="7" level="12" min_level="58" cost="370000"/><!--Sonic Storm-->
+		<skill id="290" level="6" min_level="58" cost="370000"/><!--Final Frenzy-->
+		<skill id="260" level="21" min_level="58" cost="370000"/><!--Power Break-->
+		<skill id="261" level="8" min_level="58" cost="370000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="23" min_level="58" cost="370000"/><!--Fatal Strike-->
+		<skill id="70" level="28" min_level="58" cost="370000"/><!--Emergency Rescue-->
+		<skill id="227" level="35" min_level="59" cost="540000"/><!--Light Armor Mastery-->
+		<skill id="257" level="30" min_level="59" cost="540000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="22" min_level="59" cost="540000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="35" min_level="59" cost="540000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="24" min_level="59" cost="540000"/><!--Rising Attack-->
+		<skill id="5" level="19" min_level="59" cost="540000"/><!--Double Sonic Slash-->
+		<skill id="9" level="19" min_level="59" cost="540000"/><!--Sonic Buster-->
+		<skill id="6" level="22" min_level="59" cost="540000"/><!--Sonic Blaster-->
+		<skill id="7" level="13" min_level="59" cost="540000"/><!--Sonic Storm-->
+		<skill id="260" level="22" min_level="59" cost="540000"/><!--Power Break-->
+		<skill id="261" level="9" min_level="59" cost="540000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="24" min_level="59" cost="540000"/><!--Fatal Strike-->
+		<skill id="70" level="29" min_level="59" cost="540000"/><!--Emergency Rescue-->
+		<skill id="312" level="13" min_level="60" cost="540000"/><!--Vicious Stance-->
+		<skill id="992" level="5" min_level="60" cost="540000"/><!--Sonic Mastery-->
+		<skill id="45184" level="3" min_level="60"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="227" level="36" min_level="60" cost="540000"/><!--Light Armor Mastery-->
+		<skill id="257" level="31" min_level="60" cost="540000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="23" min_level="60" cost="540000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="36" min_level="60" cost="540000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="25" min_level="60" cost="540000"/><!--Rising Attack-->
+		<skill id="5" level="20" min_level="60" cost="540000"/><!--Double Sonic Slash-->
+		<skill id="9" level="20" min_level="60" cost="540000"/><!--Sonic Buster-->
+		<skill id="6" level="23" min_level="60" cost="540000"/><!--Sonic Blaster-->
+		<skill id="7" level="14" min_level="60" cost="540000"/><!--Sonic Storm-->
+		<skill id="34" level="3" min_level="60" cost="540000"/><!--Bandage-->
+		<skill id="290" level="7" min_level="60" cost="540000"/><!--Final Frenzy-->
+		<skill id="260" level="23" min_level="60" cost="540000"/><!--Power Break-->
+		<skill id="77" level="3" min_level="60" cost="540000"/><!--Ability to Attack-->
+		<skill id="994" level="2" min_level="60" cost="540000"/><!--Rush-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="261" level="10" min_level="60" cost="540000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="25" min_level="60" cost="540000"/><!--Fatal Strike-->
+		<skill id="8" level="5" min_level="60" cost="540000"/><!--Sonic Focus-->
+		<skill id="70" level="30" min_level="60" cost="540000"/><!--Emergency Rescue-->
+		<skill id="1405" level="2" min_level="61" cost="540000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="227" level="37" min_level="61" cost="540000"/><!--Light Armor Mastery-->
+		<skill id="257" level="32" min_level="61" cost="540000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="24" min_level="61" cost="540000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="37" min_level="61" cost="540000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="26" min_level="61" cost="540000"/><!--Rising Attack-->
+		<skill id="5" level="21" min_level="61" cost="540000"/><!--Double Sonic Slash-->
+		<skill id="9" level="21" min_level="61" cost="540000"/><!--Sonic Buster-->
+		<skill id="6" level="24" min_level="61" cost="540000"/><!--Sonic Blaster-->
+		<skill id="7" level="15" min_level="61" cost="540000"/><!--Sonic Storm-->
+		<skill id="260" level="24" min_level="61" cost="540000"/><!--Power Break-->
+		<skill id="261" level="11" min_level="61" cost="540000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="26" min_level="61" cost="540000"/><!--Fatal Strike-->
+		<skill id="70" level="31" min_level="61" cost="540000"/><!--Emergency Rescue-->
+		<skill id="312" level="14" min_level="62" cost="670000"/><!--Vicious Stance-->
+		<skill id="227" level="38" min_level="62" cost="670000"/><!--Light Armor Mastery-->
+		<skill id="257" level="33" min_level="62" cost="670000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="25" min_level="62" cost="670000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="38" min_level="62" cost="670000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="27" min_level="62" cost="670000"/><!--Rising Attack-->
+		<skill id="5" level="22" min_level="62" cost="670000"/><!--Double Sonic Slash-->
+		<skill id="9" level="22" min_level="62" cost="670000"/><!--Sonic Buster-->
+		<skill id="451" level="2" min_level="62" cost="670000"/><!--Sonic Move-->
+		<skill id="6" level="25" min_level="62" cost="670000"/><!--Sonic Blaster-->
+		<skill id="7" level="16" min_level="62" cost="670000"/><!--Sonic Storm-->
+		<skill id="287" level="3" min_level="62" cost="670000"/><!--Lionheart-->
+		<skill id="290" level="8" min_level="62" cost="670000"/><!--Final Frenzy-->
+		<skill id="260" level="25" min_level="62" cost="670000"/><!--Power Break-->
+		<skill id="261" level="12" min_level="62" cost="670000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="27" min_level="62" cost="670000"/><!--Fatal Strike-->
+		<skill id="70" level="32" min_level="62" cost="670000"/><!--Emergency Rescue-->
+		<skill id="227" level="39" min_level="63" cost="670000"/><!--Light Armor Mastery-->
+		<skill id="257" level="34" min_level="63" cost="670000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="26" min_level="63" cost="670000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="39" min_level="63" cost="670000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="28" min_level="63" cost="670000"/><!--Rising Attack-->
+		<skill id="5" level="23" min_level="63" cost="670000"/><!--Double Sonic Slash-->
+		<skill id="9" level="23" min_level="63" cost="670000"/><!--Sonic Buster-->
+		<skill id="6" level="26" min_level="63" cost="670000"/><!--Sonic Blaster-->
+		<skill id="7" level="17" min_level="63" cost="670000"/><!--Sonic Storm-->
+		<skill id="260" level="26" min_level="63" cost="670000"/><!--Power Break-->
+		<skill id="261" level="13" min_level="63" cost="670000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="28" min_level="63" cost="670000"/><!--Fatal Strike-->
+		<skill id="70" level="33" min_level="63" cost="670000"/><!--Emergency Rescue-->
+		<skill id="312" level="15" min_level="64" cost="840000"/><!--Vicious Stance-->
+		<skill id="227" level="40" min_level="64" cost="840000"/><!--Light Armor Mastery-->
+		<skill id="257" level="35" min_level="64" cost="840000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="27" min_level="64" cost="840000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="40" min_level="64" cost="840000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="29" min_level="64" cost="840000"/><!--Rising Attack-->
+		<skill id="5" level="24" min_level="64" cost="840000"/><!--Double Sonic Slash-->
+		<skill id="297" level="1" min_level="64" cost="840000"/><!--Duelist Spirit-->
+		<skill id="9" level="24" min_level="64" cost="840000"/><!--Sonic Buster-->
+		<skill id="6" level="27" min_level="64" cost="840000"/><!--Sonic Blaster-->
+		<skill id="7" level="18" min_level="64" cost="840000"/><!--Sonic Storm-->
+		<skill id="290" level="9" min_level="64" cost="840000"/><!--Final Frenzy-->
+		<skill id="260" level="27" min_level="64" cost="840000"/><!--Power Break-->
+		<skill id="261" level="14" min_level="64" cost="840000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="29" min_level="64" cost="840000"/><!--Fatal Strike-->
+		<skill id="70" level="34" min_level="64" cost="840000"/><!--Emergency Rescue-->
+		<skill id="227" level="41" min_level="65" cost="840000"/><!--Light Armor Mastery-->
+		<skill id="257" level="36" min_level="65" cost="840000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="28" min_level="65" cost="840000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="41" min_level="65" cost="840000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="30" min_level="65" cost="840000"/><!--Rising Attack-->
+		<skill id="5" level="25" min_level="65" cost="840000"/><!--Double Sonic Slash-->
+		<skill id="9" level="25" min_level="65" cost="840000"/><!--Sonic Buster-->
+		<skill id="6" level="28" min_level="65" cost="840000"/><!--Sonic Blaster-->
+		<skill id="7" level="19" min_level="65" cost="840000"/><!--Sonic Storm-->
+		<skill id="260" level="28" min_level="65" cost="840000"/><!--Power Break-->
+		<skill id="261" level="15" min_level="65" cost="840000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="30" min_level="65" cost="840000"/><!--Fatal Strike-->
+		<skill id="70" level="35" min_level="65" cost="840000"/><!--Emergency Rescue-->
+		<skill id="312" level="16" min_level="66" cost="950000"/><!--Vicious Stance-->
+		<skill id="992" level="6" min_level="66" cost="950000"/><!--Sonic Mastery-->
+		<skill id="227" level="42" min_level="66" cost="950000"/><!--Light Armor Mastery-->
+		<skill id="257" level="37" min_level="66" cost="950000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="29" min_level="66" cost="950000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="42" min_level="66" cost="950000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="31" min_level="66" cost="950000"/><!--Rising Attack-->
+		<skill id="5" level="26" min_level="66" cost="950000"/><!--Double Sonic Slash-->
+		<skill id="9" level="26" min_level="66" cost="950000"/><!--Sonic Buster-->
+		<skill id="6" level="29" min_level="66" cost="950000"/><!--Sonic Blaster-->
+		<skill id="7" level="20" min_level="66" cost="950000"/><!--Sonic Storm-->
+		<skill id="290" level="10" min_level="66" cost="950000"/><!--Final Frenzy-->
+		<skill id="260" level="29" min_level="66" cost="950000"/><!--Power Break-->
+		<skill id="261" level="16" min_level="66" cost="950000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="31" min_level="66" cost="950000"/><!--Fatal Strike-->
+		<skill id="8" level="6" min_level="66" cost="950000"/><!--Sonic Focus-->
+		<skill id="70" level="36" min_level="66" cost="950000"/><!--Emergency Rescue-->
+		<skill id="227" level="43" min_level="67" cost="950000"/><!--Light Armor Mastery-->
+		<skill id="257" level="38" min_level="67" cost="950000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="30" min_level="67" cost="950000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="43" min_level="67" cost="950000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="32" min_level="67" cost="950000"/><!--Rising Attack-->
+		<skill id="5" level="27" min_level="67" cost="950000"/><!--Double Sonic Slash-->
+		<skill id="1605" level="3" min_level="67" cost="950000"/><!--Dual Weapon Defense-->
+		<skill id="9" level="27" min_level="67" cost="950000"/><!--Sonic Buster-->
+		<skill id="6" level="30" min_level="67" cost="950000"/><!--Sonic Blaster-->
+		<skill id="7" level="21" min_level="67" cost="950000"/><!--Sonic Storm-->
+		<skill id="260" level="30" min_level="67" cost="950000"/><!--Power Break-->
+		<skill id="261" level="17" min_level="67" cost="950000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="32" min_level="67" cost="950000"/><!--Fatal Strike-->
+		<skill id="70" level="37" min_level="67" cost="950000"/><!--Emergency Rescue-->
+		<skill id="312" level="17" min_level="68" cost="1300000"/><!--Vicious Stance-->
+		<skill id="212" level="7" min_level="68" cost="1300000"/><!--Fast HP Recovery-->
+		<skill id="227" level="44" min_level="68" cost="1300000"/><!--Light Armor Mastery-->
+		<skill id="257" level="39" min_level="68" cost="1300000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="31" min_level="68" cost="1300000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="44" min_level="68" cost="1300000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="33" min_level="68" cost="1300000"/><!--Rising Attack-->
+		<skill id="5" level="28" min_level="68" cost="1300000"/><!--Double Sonic Slash-->
+		<skill id="9" level="28" min_level="68" cost="1300000"/><!--Sonic Buster-->
+		<skill id="451" level="3" min_level="68" cost="1300000"/><!--Sonic Move-->
+		<skill id="6" level="31" min_level="68" cost="1300000"/><!--Sonic Blaster-->
+		<skill id="7" level="22" min_level="68" cost="1300000"/><!--Sonic Storm-->
+		<skill id="290" level="11" min_level="68" cost="1300000"/><!--Final Frenzy-->
+		<skill id="260" level="31" min_level="68" cost="1300000"/><!--Power Break-->
+		<skill id="261" level="18" min_level="68" cost="1300000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="33" min_level="68" cost="1300000"/><!--Fatal Strike-->
+		<skill id="70" level="38" min_level="68" cost="1300000"/><!--Emergency Rescue-->
+		<skill id="227" level="45" min_level="69" cost="1300000"/><!--Light Armor Mastery-->
+		<skill id="257" level="40" min_level="69" cost="1300000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="32" min_level="69" cost="1300000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="45" min_level="69" cost="1300000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="34" min_level="69" cost="1300000"/><!--Rising Attack-->
+		<skill id="5" level="29" min_level="69" cost="1300000"/><!--Double Sonic Slash-->
+		<skill id="9" level="29" min_level="69" cost="1300000"/><!--Sonic Buster-->
+		<skill id="6" level="32" min_level="69" cost="1300000"/><!--Sonic Blaster-->
+		<skill id="7" level="23" min_level="69" cost="1300000"/><!--Sonic Storm-->
+		<skill id="260" level="32" min_level="69" cost="1300000"/><!--Power Break-->
+		<skill id="261" level="19" min_level="69" cost="1300000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="34" min_level="69" cost="1300000"/><!--Fatal Strike-->
+		<skill id="70" level="39" min_level="69" cost="1300000"/><!--Emergency Rescue-->
+		<skill id="312" level="18" min_level="70" cost="1600000"/><!--Vicious Stance-->
+		<skill id="992" level="7" min_level="70" cost="1600000"/><!--Sonic Mastery-->
+		<skill id="227" level="46" min_level="70" cost="1600000"/><!--Light Armor Mastery-->
+		<skill id="257" level="41" min_level="70" cost="1600000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="33" min_level="70" cost="1600000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="46" min_level="70" cost="1600000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="35" min_level="70" cost="1600000"/><!--Rising Attack-->
+		<skill id="5" level="30" min_level="70" cost="1600000"/><!--Double Sonic Slash-->
+		<skill id="9" level="30" min_level="70" cost="1600000"/><!--Sonic Buster-->
+		<skill id="6" level="33" min_level="70" cost="1600000"/><!--Sonic Blaster-->
+		<skill id="7" level="24" min_level="70" cost="1600000"/><!--Sonic Storm-->
+		<skill id="290" level="12" min_level="70" cost="1600000"/><!--Final Frenzy-->
+		<skill id="260" level="33" min_level="70" cost="1600000"/><!--Power Break-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="261" level="20" min_level="70" cost="1600000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="35" min_level="70" cost="1600000"/><!--Fatal Strike-->
+		<skill id="8" level="7" min_level="70" cost="1600000"/><!--Sonic Focus-->
+		<skill id="70" level="40" min_level="70" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="227" level="47" min_level="71" cost="1600000"/><!--Light Armor Mastery-->
+		<skill id="257" level="42" min_level="71" cost="1600000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="34" min_level="71" cost="1600000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="47" min_level="71" cost="1600000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="36" min_level="71" cost="1600000"/><!--Rising Attack-->
+		<skill id="5" level="31" min_level="71" cost="1600000"/><!--Double Sonic Slash-->
+		<skill id="9" level="31" min_level="71" cost="1600000"/><!--Sonic Buster-->
+		<skill id="6" level="34" min_level="71" cost="1600000"/><!--Sonic Blaster-->
+		<skill id="7" level="25" min_level="71" cost="1600000"/><!--Sonic Storm-->
+		<skill id="260" level="34" min_level="71" cost="1600000"/><!--Power Break-->
+		<skill id="261" level="21" min_level="71" cost="1600000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="36" min_level="71" cost="1600000"/><!--Fatal Strike-->
+		<skill id="70" level="41" min_level="71" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="312" level="19" min_level="72" cost="1800000"/><!--Vicious Stance-->
+		<skill id="227" level="48" min_level="72" cost="1800000"/><!--Light Armor Mastery-->
+		<skill id="257" level="43" min_level="72" cost="1800000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="35" min_level="72" cost="1800000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="48" min_level="72" cost="1800000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="37" min_level="72" cost="1800000"/><!--Rising Attack-->
+		<skill id="5" level="32" min_level="72" cost="1800000"/><!--Double Sonic Slash-->
+		<skill id="297" level="2" min_level="72" cost="1800000"/><!--Duelist Spirit-->
+		<skill id="9" level="32" min_level="72" cost="1800000"/><!--Sonic Buster-->
+		<skill id="6" level="35" min_level="72" cost="1800000"/><!--Sonic Blaster-->
+		<skill id="7" level="26" min_level="72" cost="1800000"/><!--Sonic Storm-->
+		<skill id="290" level="13" min_level="72" cost="1800000"/><!--Final Frenzy-->
+		<skill id="260" level="35" min_level="72" cost="1800000"/><!--Power Break-->
+		<skill id="261" level="22" min_level="72" cost="1800000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="37" min_level="72" cost="1800000"/><!--Fatal Strike-->
+		<skill id="70" level="42" min_level="72" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="227" level="49" min_level="73" cost="1800000"/><!--Light Armor Mastery-->
+		<skill id="257" level="44" min_level="73" cost="1800000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="36" min_level="73" cost="1800000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="49" min_level="73" cost="1800000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="38" min_level="73" cost="1800000"/><!--Rising Attack-->
+		<skill id="5" level="33" min_level="73" cost="1800000"/><!--Double Sonic Slash-->
+		<skill id="9" level="33" min_level="73" cost="1800000"/><!--Sonic Buster-->
+		<skill id="6" level="36" min_level="73" cost="1800000"/><!--Sonic Blaster-->
+		<skill id="7" level="27" min_level="73" cost="1800000"/><!--Sonic Storm-->
+		<skill id="260" level="36" min_level="73" cost="1800000"/><!--Power Break-->
+		<skill id="261" level="23" min_level="73" cost="1800000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="38" min_level="73" cost="1800000"/><!--Fatal Strike-->
+		<skill id="70" level="43" min_level="73" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="312" level="20" min_level="74" cost="1800000"/><!--Vicious Stance-->
+		<skill id="212" level="8" min_level="74" cost="1800000"/><!--Fast HP Recovery-->
+		<skill id="227" level="50" min_level="74" cost="1800000"/><!--Light Armor Mastery-->
+		<skill id="257" level="45" min_level="74" cost="1800000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="144" level="37" min_level="74" cost="1800000"/><!--Dual Sword Mastery-->
+		<skill id="231" level="50" min_level="74" cost="1800000"/><!--Heavy Armor Mastery-->
+		<skill id="1" level="39" min_level="74" cost="1800000"/><!--Rising Attack-->
+		<skill id="5" level="34" min_level="74" cost="1800000"/><!--Double Sonic Slash-->
+		<skill id="9" level="34" min_level="74" cost="1800000"/><!--Sonic Buster-->
+		<skill id="6" level="37" min_level="74" cost="1800000"/><!--Sonic Blaster-->
+		<skill id="7" level="28" min_level="74" cost="1800000"/><!--Sonic Storm-->
+		<skill id="290" level="14" min_level="74" cost="1800000"/><!--Final Frenzy-->
+		<skill id="260" level="37" min_level="74" cost="1800000"/><!--Power Break-->
+		<skill id="261" level="24" min_level="74" cost="1800000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="39" min_level="74" cost="1800000"/><!--Fatal Strike-->
+		<skill id="70" level="44" min_level="74" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="1" level="40" min_level="75" cost="1800000"/><!--Rising Attack-->
+		<skill id="5" level="35" min_level="75" cost="1800000"/><!--Double Sonic Slash-->
+		<skill id="261" level="25" min_level="75" cost="1800000"/><!--Triple Sonic Slash-->
+		<skill id="190" level="40" min_level="75" cost="1800000"/><!--Fatal Strike-->
+		<skill id="70" level="45" min_level="75" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="104" level="1" min_level="40" cost="55000"/><!--Acumen-->
+	</normal_skill_tree>
+</list>

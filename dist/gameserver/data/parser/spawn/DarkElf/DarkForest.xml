@@ -1,0 +1,2316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1800" y="16691" z="-3040" h="52128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1230" y="16922" z="-3200" h="21441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="318" y="17615" z="-3288" h="12429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1572" y="16873" z="-3080" h="28856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="470" y="17629" z="-3296" h="50961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="870" y="17122" z="-3288" h="64800" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="487" y="17658" z="-3296" h="64803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1356" y="16836" z="-3160" h="9940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1176" y="17129" z="-3232" h="32813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1599" y="21804" z="-3312" h="23607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="772" y="22712" z="-3328" h="49459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="1195" y="21600" z="-3312" h="17797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="813" y="22396" z="-3344" h="57774" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1256" y="22047" z="-3328" h="7332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1845" y="22005" z="-3328" h="8569" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1572" y="22730" z="-3376" h="56388" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="871" y="22504" z="-3344" h="18601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="601" y="21892" z="-3288" h="6405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="415" y="22777" z="-3256" h="20255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2073" y="22304" z="-3344" h="54266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2168" y="22137" z="-3344" h="14644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="660" y="15305" z="-3240" h="41587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1800" y="15767" z="-3120" h="14555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1344" y="14381" z="-3216" h="37658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1458" y="14843" z="-3216" h="12066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2028" y="15998" z="-3048" h="31927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="432" y="15767" z="-3248" h="36924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="774" y="15536" z="-3248" h="43955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1344" y="15998" z="-3176" h="32018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="432" y="14612" z="-3208" h="19445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="888" y="15305" z="-3240" h="58089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1686" y="14843" z="-3200" h="63865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="546" y="15767" z="-3248" h="36124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1002" y="15998" z="-3240" h="2024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="546" y="15074" z="-3216" h="4871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="888" y="16229" z="-3256" h="38943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1230" y="15305" z="-3224" h="63381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2142" y="14843" z="-3160" h="61653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="525" y="12492" z="-3240" h="29994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="814" y="12492" z="-3256" h="46992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1681" y="13010" z="-3144" h="59696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1681" y="12492" z="-3152" h="18859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1103" y="12492" z="-3248" h="51319" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1392" y="12492" z="-3216" h="22086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="814" y="13010" z="-3264" h="19134" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="546" y="14150" z="-3192" h="44925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2259" y="12492" z="-3064" h="63961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2548" y="12492" z="-3032" h="14837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2837" y="12492" z="-2984" h="5949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2256" y="13919" z="-3120" h="53451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2370" y="13919" z="-3104" h="58204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1103" y="11974" z="-3224" h="33416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1392" y="10420" z="-3216" h="30017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1103" y="10420" z="-3216" h="54015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1392" y="10938" z="-3200" h="8475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1103" y="10938" z="-3184" h="13360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="814" y="10420" z="-3192" h="39114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1103" y="11456" z="-3184" h="32604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1681" y="10938" z="-3144" h="264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1970" y="10420" z="-3128" h="7857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1392" y="11456" z="-3192" h="1401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1681" y="10420" z="-3160" h="40442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1681" y="11974" z="-3152" h="64075" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1970" y="11974" z="-3120" h="28736" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1681" y="11456" z="-3136" h="2107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="814" y="10938" z="-3168" h="33311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="814" y="11456" z="-3176" h="31140" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="814" y="11974" z="-3200" h="59381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="525" y="10938" z="-3168" h="37812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1970" y="10938" z="-3120" h="24096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="991" y="11360" z="-3176" h="41888" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1746" y="10520" z="-3152" h="22922" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1142" y="11024" z="-3184" h="27503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2837" y="10420" z="-3048" h="47874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3415" y="10938" z="-2944" h="9751" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="3415" y="11456" z="-2952" h="88" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2837" y="11974" z="-3016" h="19070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3704" y="10420" z="-2920" h="18918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3993" y="10420" z="-2896" h="36713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3993" y="10938" z="-2896" h="37239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2548" y="11974" z="-3080" h="14724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3126" y="11974" z="-2976" h="1654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3126" y="11456" z="-3000" h="43009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="3704" y="10938" z="-2912" h="64564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2259" y="11456" z="-3112" h="47269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2048" y="11024" z="-3120" h="64815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1392" y="8348" z="-3304" h="20648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1392" y="9902" z="-3248" h="22207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="525" y="8348" z="-3288" h="34918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1970" y="9384" z="-3200" h="6603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1970" y="8866" z="-3240" h="29328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1681" y="8348" z="-3296" h="64874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1103" y="9384" z="-3280" h="51511" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1681" y="9384" z="-3232" h="31411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="814" y="8348" z="-3288" h="3321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1103" y="8866" z="-3288" h="25257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="1681" y="9902" z="-3200" h="54790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2259" y="9902" z="-3128" h="27621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3415" y="9384" z="-3016" h="10357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2548" y="9902" z="-3112" h="49547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3167" y="8250" z="-3096" h="45469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2548" y="8348" z="-3184" h="56329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2548" y="9384" z="-3128" h="2868" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3126" y="8866" z="-3064" h="46388" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3704" y="8348" z="-3032" h="10919" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2837" y="9384" z="-3080" h="37774" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3415" y="8866" z="-3032" h="37063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3704" y="8866" z="-3008" h="51176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3126" y="9902" z="-3040" h="30725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3704" y="9902" z="-2944" h="32631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3993" y="8348" z="-3008" h="43221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2259" y="9384" z="-3152" h="50237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2259" y="8866" z="-3200" h="44138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="3993" y="9384" z="-2936" h="37859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2837" y="8866" z="-3096" h="29955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2837" y="9902" z="-3072" h="40495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="3558" y="9512" z="-2992" h="22577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4532" y="8842" z="-2928" h="32338" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="4438" y="9508" z="-2904" h="53597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4607" y="9212" z="-2920" h="45019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4565" y="8125" z="-2992" h="21851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4730" y="8693" z="-2944" h="52234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4511" y="9448" z="-2904" h="48718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4532" y="9392" z="-2904" h="38243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4455" y="8553" z="-2968" h="38644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5044" y="8803" z="-2912" h="797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1811" y="7796" z="-3296" h="1867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="933" y="6590" z="-3232" h="6945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1588" y="6410" z="-3232" h="10446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1252" y="6197" z="-3224" h="14373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1466" y="7971" z="-3288" h="44168" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="615" y="8013" z="-3272" h="41261" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="964" y="6217" z="-3224" h="29022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="1241" y="6356" z="-3224" h="38249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1321" y="7204" z="-3240" h="25566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="704" y="7936" z="-3288" h="10638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="525" y="7312" z="-3256" h="58914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2065" y="6780" z="-3240" h="46345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1377" y="7464" z="-3248" h="37902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="1144" y="7264" z="-3240" h="55419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="851" y="6821" z="-3240" h="28153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2046" y="6761" z="-3240" h="44124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="832" y="7130" z="-3240" h="23630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2263" y="6347" z="-3240" h="61973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="693" y="6857" z="-3248" h="52892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3820" y="6175" z="-3072" h="27175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2837" y="7830" z="-3144" h="62224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3959" y="7333" z="-3040" h="29124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2235" y="7802" z="-3248" h="18115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2406" y="7789" z="-3224" h="13133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2489" y="8149" z="-3200" h="13433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3583" y="6846" z="-3072" h="33738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3357" y="7929" z="-3080" h="19160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4043" y="7871" z="-3032" h="62346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3905" y="6205" z="-3064" h="7123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2984" y="6272" z="-3144" h="17034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2567" y="7009" z="-3184" h="56113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2053" y="6264" z="-3248" h="63053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2269" y="6217" z="-3240" h="37802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2289" y="6817" z="-3232" h="65211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2309" y="6237" z="-3232" h="16471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3759" y="6415" z="-3064" h="63235" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3263" y="6180" z="-3128" h="23646" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2085" y="7928" z="-3264" h="16401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3455" y="7628" z="-3080" h="9812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2567" y="8098" z="-3184" h="21802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="4070" y="6898" z="-3032" h="38184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2970" y="6434" z="-3144" h="29138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2632" y="7785" z="-3192" h="27056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="3103" y="6223" z="-3136" h="1459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2479" y="7122" z="-3200" h="44317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="3820" y="6353" z="-3072" h="51465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="3142" y="7818" z="-3112" h="11254" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="3246" y="7691" z="-3096" h="62455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5996" y="6796" z="-2920" h="25013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5578" y="6508" z="-2944" h="37967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5996" y="7372" z="-2928" h="63995" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5379" y="6457" z="-2952" h="51385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4940" y="7936" z="-2968" h="56732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4784" y="7775" z="-2992" h="56558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="6355" y="6412" z="-2888" h="16041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5705" y="6236" z="-2920" h="3208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4790" y="6456" z="-2992" h="64591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5944" y="7190" z="-2928" h="53603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6263" y="6764" z="-2904" h="65274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6010" y="6552" z="-2920" h="2343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6016" y="6521" z="-2904" h="53689" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4469" y="7402" z="-3024" h="4432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4254" y="7008" z="-3024" h="31023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5386" y="7752" z="-2952" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5060" y="7185" z="-2992" h="27368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4046" y="7693" z="-3032" h="35085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4963" y="7469" z="-2992" h="63032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4026" y="6566" z="-3040" h="3425" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5158" y="7172" z="-2976" h="27962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5176" y="7011" z="-2984" h="32637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4902" y="6996" z="-3008" h="20797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4589" y="6974" z="-3024" h="9162" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="4816" y="7239" z="-3008" h="10169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="4407" y="7187" z="-3024" h="58795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5712" y="7602" z="-2936" h="50128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5427" y="6316" z="-2944" h="5826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="4371" y="6536" z="-3016" h="55807" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5496" y="7285" z="-2960" h="28343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5942" y="6185" z="-2904" h="55622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5724" y="6379" z="-2920" h="11895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="6226" y="6300" z="-2888" h="22210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5654" y="6635" z="-2936" h="17034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8086" y="6508" z="-2736" h="30256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="6832" y="6508" z="-2848" h="16650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7465" y="6717" z="-2792" h="6118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7402" y="6844" z="-2800" h="49841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7866" y="7217" z="-2784" h="34534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8148" y="7692" z="-2808" h="60328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7869" y="7949" z="-2824" h="12893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8023" y="6896" z="-2760" h="33290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6575" y="7730" z="-2896" h="43258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6832" y="6220" z="-2800" h="42757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="7499" y="7835" z="-2840" h="43738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6580" y="6428" z="-2864" h="43206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6191" y="7352" z="-2904" h="48718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5985" y="6748" z="-2920" h="17925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="7734" y="6679" z="-2768" h="22020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8139" y="6819" z="-2752" h="39213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6244" y="7094" z="-2904" h="18357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6323" y="6683" z="-2888" h="15718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="7564" y="7648" z="-2816" h="1025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="8178" y="6724" z="-2744" h="40915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="6882" y="7676" z="-2872" h="4406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="8439" y="8031" z="-2808" h="43338" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6235" y="7089" z="-2904" h="2753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6438" y="7535" z="-2896" h="57957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7298" y="8135" z="-2856" h="19429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7109" y="7884" z="-2864" h="42216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="7728" y="7182" z="-2792" h="51960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8067" y="6898" z="-2752" h="60273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6440" y="7916" z="-2904" h="25498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6393" y="7586" z="-2904" h="21829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6239" y="7507" z="-2912" h="4822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="7707" y="7395" z="-2800" h="12560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="6144" y="7009" z="-2904" h="33355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7748" y="7940" z="-2832" h="64615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7734" y="6996" z="-2776" h="9427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6341" y="7617" z="-2904" h="26664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8011" y="7904" z="-2816" h="33636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="7625" y="7121" z="-2792" h="46545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6664" y="7995" z="-2896" h="14841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6107" y="7234" z="-2912" h="18570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3415" y="5240" z="-3144" h="48199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="2837" y="5758" z="-3192" h="59715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2204" y="5394" z="-3280" h="52319" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="3705" y="6038" z="-3096" h="19286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="3021" y="4809" z="-3216" h="38014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2979" y="5338" z="-3192" h="16733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="2205" y="4545" z="-3320" h="25498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="2209" y="5762" z="-3256" h="65174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5160" y="4780" z="-2920" h="43059" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5578" y="5932" z="-2912" h="57154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="6005" y="5418" z="-2856" h="58825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5267" y="4602" z="-2888" h="22220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5504" y="5853" z="-2904" h="3106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="4852" y="4473" z="-2984" h="20535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5964" y="4836" z="-2816" h="38277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5942" y="5283" z="-2848" h="48502" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4812" y="4189" z="-2984" h="37038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5727" y="5539" z="-2888" h="57099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5943" y="5842" z="-2880" h="51518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5213" y="3899" z="-2928" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5525" y="5501" z="-2896" h="19045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5952" y="6100" z="-2896" h="15086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4714" y="4342" z="-3008" h="28944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="4904" y="4600" z="-2952" h="19832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5598" y="6184" z="-2928" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="5363" y="4476" z="-2888" h="1004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5875" y="5692" z="-2880" h="8246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="4778" y="4478" z="-2984" h="8633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5124" y="3939" z="-2928" h="23897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="5227" y="4166" z="-2928" h="26253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="5859" y="5282" z="-2856" h="1202" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6414" y="4204" z="-2728" h="19648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8086" y="5644" z="-2680" h="39092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6446" y="4335" z="-2736" h="44030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="8188" y="5090" z="-2616" h="38272" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7839" y="5790" z="-2720" h="3937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="6520" y="6133" z="-2856" h="57758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="6647" y="5969" z="-2832" h="58351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="7299" y="5733" z="-2744" h="64024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="7221" y="5392" z="-2720" h="51364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6588" y="5549" z="-2792" h="63994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="6270" y="5808" z="-2856" h="15086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6120" y="5778" z="-2864" h="11938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="6542" y="5887" z="-2824" h="5146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9001" y="5242" z="-2560" h="44844" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9071" y="5738" z="-2592" h="29608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8471" y="5483" z="-2608" h="40428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="9911" y="4513" z="-2528" h="54275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="9137" y="5861" z="-2608" h="33895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="10243" y="6066" z="-2704" h="43541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9196" y="5897" z="-2632" h="44059" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="10192" y="6652" z="-2744" h="62321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="8212" y="6558" z="-2728" h="34470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9429" y="7057" z="-2760" h="47856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="10453" y="7774" z="-2880" h="25968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10142" y="6592" z="-2744" h="36739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9442" y="6318" z="-2672" h="61619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9844" y="6307" z="-2696" h="62875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="9509" y="7849" z="-2832" h="37999" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8669" y="6552" z="-2704" h="62273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="9187" y="6562" z="-2696" h="19519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="10080" y="7120" z="-2800" h="63785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9818" y="7896" z="-2848" h="62077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9641" y="6295" z="-2688" h="53603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="8169" y="6674" z="-2744" h="34993" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8216" y="6762" z="-2736" h="62650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="10326" y="7192" z="-2840" h="4251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="9105" y="7829" z="-2808" h="57301" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9358" y="7210" z="-2776" h="53115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="8926" y="7419" z="-2776" h="48632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="9152" y="7025" z="-2736" h="54592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8405" y="7496" z="-2784" h="55411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9594" y="6158" z="-2664" h="3895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8688" y="7035" z="-2736" h="440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8558" y="7325" z="-2776" h="14468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8802" y="7908" z="-2800" h="54135" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8791" y="7343" z="-2776" h="58336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="8528" y="7061" z="-2752" h="22938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8857" y="7683" z="-2800" h="57549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9330" y="7816" z="-2808" h="20635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9489" y="7223" z="-2784" h="19753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9632" y="6127" z="-2656" h="36451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="9728" y="6081" z="-2672" h="9177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8919" y="7808" z="-2800" h="62758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9871" y="7795" z="-2848" h="59193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9709" y="6710" z="-2728" h="3046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9020" y="7906" z="-2800" h="42900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9184" y="6665" z="-2712" h="53984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9281" y="6569" z="-2696" h="56497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="10109" y="6179" z="-2696" h="26882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9310" y="6361" z="-2672" h="30580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9539" y="7579" z="-2816" h="62734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9209" y="7487" z="-2792" h="51237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9439" y="7478" z="-2800" h="14632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8155" y="6479" z="-2736" h="5397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8549" y="7044" z="-2752" h="31161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="8874" y="6655" z="-2696" h="26144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="9697" y="6992" z="-2760" h="22623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9757" y="7258" z="-2800" h="3106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10012" y="7189" z="-2816" h="43649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9902" y="7746" z="-2848" h="44023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="9320" y="7264" z="-2776" h="40955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8715" y="6089" z="-2648" h="30212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8751" y="7660" z="-2792" h="40144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="9007" y="7158" z="-2752" h="1025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8390" y="7311" z="-2776" h="24882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="8974" y="6147" z="-2656" h="14625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="11736" y="4190" z="-2584" h="864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="11557" y="4393" z="-2600" h="50706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="12272" y="4495" z="-2680" h="4449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="10472" y="6042" z="-2712" h="14625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="11930" y="4174" z="-2600" h="18143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="12117" y="4223" z="-2616" h="2944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="11394" y="5981" z="-2776" h="20609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="12357" y="4435" z="-2680" h="40015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="10489" y="6194" z="-2728" h="27752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="11844" y="4861" z="-2664" h="11704" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="11804" y="4392" z="-2616" h="60124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="12316" y="4814" z="-2728" h="46787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="12355" y="4878" z="-2744" h="51111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="12230" y="4377" z="-2664" h="59344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10959" y="5455" z="-2680" h="45304" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="11854" y="5649" z="-2776" h="4188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10492" y="6435" z="-2752" h="17201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10269" y="7641" z="-2864" h="29685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="10594" y="7372" z="-2712" h="52078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10607" y="6567" z="-2776" h="30584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="11386" y="6538" z="-2856" h="10067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="11477" y="6076" z="-2792" h="13400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="10818" y="6110" z="-2744" h="13611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="11383" y="6539" z="-2856" h="43666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="10478" y="7107" z="-2832" h="44986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10394" y="6395" z="-2736" h="5805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="10942" y="6557" z="-2824" h="24641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="11227" y="6247" z="-2792" h="22468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="10963" y="6548" z="-2824" h="63609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="11034" y="7182" z="-2896" h="20495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="11029" y="6804" z="-2856" h="33715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="10598" y="6966" z="-2832" h="41467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="10394" y="6783" z="-2784" h="55977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="11281" y="6126" z="-2784" h="62361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10742" y="7353" z="-2888" h="20826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="11790" y="6943" z="-2936" h="49348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="10518" y="7763" z="-2896" h="6102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="12142" y="5923" z="-2832" h="9407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="12900" y="5296" z="-2824" h="31792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14007" y="6255" z="-3032" h="8145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="12854" y="5289" z="-2824" h="15718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="13935" y="6006" z="-2992" h="12805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="12899" y="5483" z="-2840" h="61087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="13075" y="5249" z="-2864" h="10250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14365" y="4987" z="-2984" h="53021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="12659" y="5017" z="-2792" h="20692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="13866" y="7454" z="-3200" h="2555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="13785" y="6068" z="-2984" h="14602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14336" y="7072" z="-3184" h="5625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="12510" y="6859" z="-2968" h="64131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14250" y="6656" z="-3112" h="24121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="13823" y="6168" z="-3000" h="31385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="12576" y="6966" z="-2992" h="16779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="13187" y="6202" z="-2960" h="21471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14372" y="6233" z="-3056" h="60935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="13544" y="6166" z="-2976" h="51324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15391" y="6062" z="-3104" h="4102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14476" y="6054" z="-3048" h="59927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15003" y="5437" z="-3032" h="60380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14869" y="5985" z="-3048" h="28076" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14574" y="5031" z="-2992" h="52199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14924" y="5195" z="-3016" h="5306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16133" y="5849" z="-3128" h="37283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14922" y="5082" z="-3008" h="13131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14489" y="5797" z="-3024" h="58476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15098" y="5238" z="-3024" h="2561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15493" y="5059" z="-3032" h="33937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15781" y="5524" z="-3080" h="7078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16314" y="5382" z="-3112" h="31269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14538" y="4842" z="-2992" h="9542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14995" y="5624" z="-3032" h="16164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="15310" y="5883" z="-3064" h="43349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="15959" y="5600" z="-3096" h="3845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="15727" y="5422" z="-3056" h="26113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14731" y="5610" z="-3016" h="53603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14408" y="6351" z="-3072" h="28317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14639" y="6795" z="-3160" h="45168" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15150" y="6501" z="-3128" h="30904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16173" y="7319" z="-3336" h="43738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="15156" y="7696" z="-3344" h="50734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14586" y="6995" z="-3184" h="38198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="15816" y="6608" z="-3208" h="31792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15605" y="6097" z="-3112" h="20433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16172" y="7470" z="-3368" h="53057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14706" y="7019" z="-3200" h="64497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14924" y="6964" z="-3192" h="48632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14470" y="7079" z="-3192" h="13998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14888" y="7091" z="-3216" h="59670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15091" y="6084" z="-3064" h="24667" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="15798" y="6499" z="-3184" h="56348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="15994" y="6328" z="-3160" h="22843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14755" y="7269" z="-3232" h="28906" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="15748" y="7527" z="-3352" h="48863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14662" y="6355" z="-3088" h="1866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="14624" y="6618" z="-3120" h="43620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15520" y="6626" z="-3168" h="11469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="15431" y="6537" z="-3160" h="55310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="14352" y="6483" z="-3088" h="38664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18081" y="6052" z="-3344" h="53639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="17584" y="5971" z="-3288" h="12281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="18433" y="5887" z="-3376" h="50020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="17260" y="5527" z="-3216" h="4554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18243" y="5749" z="-3336" h="29124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16327" y="5506" z="-3120" h="36536" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16358" y="6005" z="-3144" h="52920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16263" y="5614" z="-3120" h="64651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="17651" y="6022" z="-3296" h="57651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16306" y="6307" z="-3192" h="25912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16357" y="5782" z="-3136" h="31556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16715" y="6106" z="-3192" h="32441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16357" y="6101" z="-3160" h="26113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16346" y="6063" z="-3160" h="64751" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="17845" y="7572" z="-3528" h="33963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18361" y="6280" z="-3384" h="57100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="17569" y="7465" z="-3488" h="20937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16360" y="6444" z="-3208" h="26803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18226" y="7059" z="-3448" h="14661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="17927" y="7615" z="-3536" h="12175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16967" y="6778" z="-3280" h="3637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16827" y="7522" z="-3448" h="7949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="17265" y="5989" z="-3240" h="49998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16831" y="7578" z="-3464" h="6897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16924" y="6419" z="-3248" h="8927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16344" y="7787" z="-3416" h="37892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="17225" y="6559" z="-3280" h="26574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16358" y="7652" z="-3400" h="26237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="16275" y="6520" z="-3208" h="33203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16384" y="6475" z="-3216" h="50679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16310" y="7240" z="-3336" h="5420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16364" y="6675" z="-3248" h="25392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16993" y="7313" z="-3432" h="26113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="16649" y="6527" z="-3232" h="13237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="17389" y="6437" z="-3296" h="29140" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="17651" y="6584" z="-3328" h="6315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="17640" y="7180" z="-3376" h="29769" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="17569" y="7257" z="-3376" h="12528" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="20036" y="6052" z="-3472" h="56931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="20184" y="6084" z="-3472" h="36599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="19421" y="6320" z="-3456" h="34123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="20165" y="5913" z="-3472" h="12212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="20246" y="5879" z="-3464" h="34220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18796" y="6015" z="-3400" h="61310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="18715" y="6284" z="-3416" h="38715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18765" y="7308" z="-3504" h="58243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="20358" y="8146" z="-3624" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="20046" y="7953" z="-3592" h="59572" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="19036" y="7077" z="-3488" h="3742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="19945" y="6742" z="-3488" h="29365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="18965" y="7836" z="-3584" h="21798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="19651" y="6356" z="-3464" h="24426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="20373" y="8103" z="-3624" h="13606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="19550" y="6550" z="-3472" h="37312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="20316" y="6486" z="-3496" h="35852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="20430" y="8148" z="-3624" h="56732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="19061" y="6047" z="-3432" h="10372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="20258" y="7877" z="-3592" h="33949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="19135" y="7010" z="-3480" h="34208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="19882" y="6812" z="-3496" h="25009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="19835" y="7137" z="-3520" h="65508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="19957" y="6383" z="-3472" h="421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="20385" y="6981" z="-3536" h="19614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="19873" y="7936" z="-3592" h="14811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="19069" y="7174" z="-3504" h="22539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="19800" y="7400" z="-3536" h="37605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="20041" y="6135" z="-3472" h="56931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="19584" y="8271" z="-3640" h="22588" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18566" y="6336" z="-3408" h="32156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="19752" y="7149" z="-3520" h="37219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="19567" y="7703" z="-3560" h="43399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="19348" y="7924" z="-3584" h="65207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="19125" y="6875" z="-3472" h="2802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="19866" y="7437" z="-3552" h="63088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="18337" y="6837" z="-3416" h="1758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="19512" y="8468" z="-3688" h="35137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18700" y="8278" z="-3656" h="6096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="18980" y="8725" z="-3712" h="28551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="18918" y="8110" z="-3632" h="43308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="18704" y="8206" z="-3656" h="9907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="18588" y="8340" z="-3672" h="19946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="19935" y="8898" z="-3680" h="23962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="21922" y="5995" z="-3496" h="30212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="20767" y="5632" z="-3472" h="17781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="21620" y="5637" z="-3480" h="8377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="21635" y="5992" z="-3488" h="10162" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="22437" y="6108" z="-3512" h="28363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="21675" y="5347" z="-3464" h="9671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="21881" y="4940" z="-3456" h="10991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="22287" y="5398" z="-3472" h="11365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="21982" y="4905" z="-3448" h="58911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="21285" y="5596" z="-3464" h="2904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="20381" y="5782" z="-3472" h="42250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="21181" y="5465" z="-3456" h="30142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="20912" y="6036" z="-3496" h="62734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="20658" y="5722" z="-3464" h="58458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="21518" y="5894" z="-3488" h="55496" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="22156" y="7489" z="-3624" h="24600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="22013" y="6677" z="-3568" h="24698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="20797" y="7937" z="-3616" h="31053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="21257" y="6194" z="-3512" h="33210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="21299" y="8339" z="-3616" h="45614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="20686" y="6472" z="-3512" h="19361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20005" /> <!-- Imp Elder -->
+		<point x="22612" y="7117" z="-3616" h="2639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="20709" y="7168" z="-3560" h="16474" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="22530" y="7261" z="-3616" h="61026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="22042" y="6576" z="-3552" h="14324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="21258" y="6167" z="-3512" h="27657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="22644" y="7336" z="-3616" h="59922" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="22057" y="7544" z="-3624" h="63790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="21169" y="7040" z="-3568" h="46039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="20969" y="6467" z="-3520" h="8181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="21766" y="6634" z="-3552" h="6845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="20977" y="7305" z="-3584" h="21596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20003" /> <!-- Goblin -->
+		<point x="21578" y="6102" z="-3504" h="50804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="21446" y="6321" z="-3520" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="21394" y="6106" z="-3504" h="48178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="21848" y="9074" z="-3608" h="4050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="22687" y="8109" z="-3584" h="10495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20456" /> <!-- Ashen Wolf -->
+		<point x="21737" y="8613" z="-3616" h="39942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="21095" y="9942" z="-3624" h="33648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="22633" y="9535" z="-3552" h="63306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="22032" y="9631" z="-3568" h="4089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20004" /> <!-- Imp -->
+		<point x="22676" y="8538" z="-3560" h="3782" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31034" /> <!-- Sentry -->
+		<point x="15704" y="6552" z="-3184" h="39065" />
+	</spawn>
+</list>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="39200">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast-->
+		<skills>
+			<skill id="50500" level="1"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39201">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast-->
+		<skills>
+			<skill id="50500" level="1"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39202">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast-->
+		<skills>
+			<skill id="50500" level="2"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39203">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast-->
+		<skills>
+			<skill id="50500" level="3"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39204">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast-->
+		<skills>
+			<skill id="50500" level="4"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39205">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast\nAnakim's Enhanced Holy Blast\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50500" level="5"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39206">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast\nAnakim's Enhanced Holy Blast\n\n<Stat bonus>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50500" level="6"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39207">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast\nAnakim's Enhanced Holy Blast\n\n<Stat bonus>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50500" level="7"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39208">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast\nAnakim's Enhanced Holy Blast\n\n<Stat bonus>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50500" level="8"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39209">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast\nAnakim's Enhanced Holy Blast\n\n<Stat bonus>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50500" level="9"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39210">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast\nAnakim's Enhanced Holy Blast\n\n<Stat bonus>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50500" level="10"/>	<!-- Пистолеты Анаким -->
+		</skills>
+	</option_data>
+	<option_data id="39211" />
+	<option_data id="39212" />
+	<option_data id="39213" />
+	<option_data id="39214" />
+	<option_data id="39215" />
+	<option_data id="39216" />
+	<option_data id="39217" />
+	<option_data id="39218" />
+	<option_data id="39219" />
+	<option_data id="39220" />
+	<option_data id="39221" />
+	<option_data id="39222">
+		<!--Max HP/ MP +2%-->
+		<skills>
+			<skill id="50504" level="1"/>	<!-- Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39223">
+		<!--Max HP/ MP +3%-->
+		<skills>
+			<skill id="50504" level="2"/>	<!-- +1 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39224">
+		<!--Max HP/ MP +4%\nP./ M. Def. +2%-->
+		<skills>
+			<skill id="50504" level="3"/>	<!-- +2 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39225">
+		<!--Max HP/ MP +5%\nP./ M. Def. +3%-->
+		<skills>
+			<skill id="50504" level="4"/>	<!-- +3 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39226">
+		<!--Max HP/ MP +6%\nP./ M. Def. +4%-->
+		<skills>
+			<skill id="50504" level="5"/>	<!-- +4 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39227">
+		<!--Max HP/ MP +7%\nP./ M. Def. +5%-->
+		<skills>
+			<skill id="50504" level="6"/>	<!-- +5 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39228">
+		<!--Max HP/ MP +8%\nP./ M. Def. +6%-->
+		<skills>
+			<skill id="50504" level="7"/>	<!-- +6 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39229">
+		<!--Max HP/ MP +9%\nP./ M. Def. +7%-->
+		<skills>
+			<skill id="50504" level="8"/>	<!-- +7 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39230">
+		<!--Max HP/ MP +10%\nP./ M. Def. +8%\n\n<Active skill>\nPet's acquired XP +10%-->
+		<skills>
+			<skill id="50504" level="9"/>	<!-- +8 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39231">
+		<!--Max HP/ MP +10%\nP./ M. Def. +9%\n\n<Active skill>\nPet's acquired XP +20%-->
+		<skills>
+			<skill id="50504" level="10"/>	<!-- +9 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39232">
+		<!--Max HP/ MP +10%\nP./ M. Def. +10%\n\n<Active skill>\nPet's acquired XP +30%-->
+		<skills>
+			<skill id="50504" level="11"/>	<!-- +10 Clan Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="39233" />
+	<option_data id="39234" />
+	<option_data id="39235" />
+	<option_data id="39236">
+		<!--Max HP/ MP +50-->
+		<skills>
+			<skill id="50506" level="1"/>	<!-- Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39237">
+		<!--Max HP/ MP +100-->
+		<skills>
+			<skill id="50506" level="2"/>	<!-- +1 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39238">
+		<!--Max HP/ MP +150\n-->
+		<skills>
+			<skill id="50506" level="3"/>	<!-- +2 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39239">
+		<!--Max HP/ MP +200\nP./ M. Def. +1%-->
+		<skills>
+			<skill id="50506" level="4"/>	<!-- +3 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39240">
+		<!--Max HP/ MP +250\nP./ M. Def. +2%-->
+		<skills>
+			<skill id="50506" level="5"/>	<!-- +4 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39241">
+		<!--Max HP/ MP +300\nP./ M. Def. +3%-->
+		<skills>
+			<skill id="50506" level="6"/>	<!-- +5 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39242">
+		<!--Max HP/ MP +350\nP./ M. Def. +4%\nAcquired XP/ SP +3%-->
+		<skills>
+			<skill id="50506" level="7"/>	<!-- +6 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39243">
+		<!--Max HP/ MP +400\nP./ M. Def. +5%\nAcquired XP/ SP +4%-->
+		<skills>
+			<skill id="50506" level="8"/>	<!-- +7 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39244">
+		<!--Max HP/ MP +450\nP./ M. Def. +6%\nAcquired XP/ SP +6%-->
+		<skills>
+			<skill id="50506" level="9"/>	<!-- +8 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39245">
+		<!--Max HP/ MP +500\nP./ M. Def. +7%\nAcquired XP/ SP +10%-->
+		<skills>
+			<skill id="50506" level="10"/>	<!-- +9 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39246">
+		<!--Max HP/ MP +1000\nP./ M. Def. +8%\nAcquired XP/ SP +20%-->
+		<skills>
+			<skill id="50506" level="11"/>	<!-- +10 Clan Circlet -->
+		</skills>
+	</option_data>
+	<option_data id="39247" />
+	<option_data id="39248" />
+	<option_data id="39249" />
+	<option_data id="39250" />
+	<option_data id="39251" />
+	<option_data id="39252" />
+	<option_data id="39253" />
+	<option_data id="39254" />
+	<option_data id="39255" />
+	<option_data id="39256" />
+	<option_data id="39257" />
+	<option_data id="39258" />
+	<option_data id="39259" />
+	<option_data id="39260" />
+	<option_data id="39261" />
+	<option_data id="39262" />
+	<option_data id="39263" />
+	<option_data id="39264" />
+	<option_data id="39265" />
+	<option_data id="39266" />
+	<option_data id="39267" />
+	<option_data id="39268" />
+	<option_data id="39269">
+		<!--P. Skill Critical Rate +1%-->
+		<for>
+			<mul order="0x60" stat="p_skill_critical_rate" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39270">
+		<!--P./ M. Atk. +70-->
+		<for>
+			<add order="0x60" stat="pAtk" value="70"/>
+			<add order="0x60" stat="mAtk" value="70"/>
+		</for>
+	</option_data>
+	<option_data id="39271">
+		<!--Received P. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39272">
+		<!--P./ M. Def. +100-->
+		<for>
+			<add order="0x60" stat="pDef" value="100"/>
+			<add order="0x60" stat="mDef" value="100"/>
+		</for>
+	</option_data>
+	<option_data id="39273">
+		<!--Received M. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39274">
+		<!--M. Skill Critical Rate +1%-->
+		<for>
+			<add order="0x60" stat="mCritRate" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39275">
+		<!--M. Skill Critical Damage +55-->
+		<for>
+			<p_magic_critical_dmg value="55" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39276">
+		<!--Received P. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39277">
+		<!--Received M. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39278">
+		<skills>
+			<skill id="50188" level="1" />	<!-- Adventurer's Talisman -->
+		</skills>
+	</option_data>
+	<option_data id="39279">
+		<!--P. Def. +5\nM. Def. +5\nAtk. Spd. +10\nCasting Spd. +10\nMax HP +100\nMax MP +30-->
+		<skills>
+			<skill id="50188" level="2" />	<!-- Adventurer's Talisman -->
+		</skills>
+	</option_data>
+	<option_data id="39280" />
+	<option_data id="39281">
+		<!--P. Def. +6-->
+		<for>
+			<add order="0x60" stat="pDef" value="6"/>
+		</for>
+	</option_data>
+	<option_data id="39282">
+		<!--M. Def. +6-->
+		<for>
+			<add order="0x60" stat="mDef" value="6"/>
+		</for>
+	</option_data>
+	<option_data id="39283">
+		<!--P. Atk. +5.-->
+		<for>
+			<add order="0x60" stat="pAtk" value="5"/>
+		</for>
+	</option_data>
+	<option_data id="39284">
+		<!--M. Atk. +5.-->
+		<for>
+			<add order="0x60" stat="mAtk" value="5"/>
+		</for>
+	</option_data>
+	<option_data id="39285">
+		<!--HP/ MP/ CP Recovery Rate +1-->
+		<for>
+			<add order="0x60" stat="regHp" value="1"/>
+			<add order="0x60" stat="regMp" value="1"/>
+			<add order="0x60" stat="regCp" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39286">
+		<!--Sayha's Grace Consumption -1%-->
+	</option_data>
+	<option_data id="39287">
+		<!--Sayha's Grace charging rate +1%-->
+	</option_data>
+	<option_data id="39288">
+		<!--Max CP +25-->
+		<for>
+			<add order="0x60" stat="maxCp" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39289">
+		<!--Max MP +25-->
+		<for>
+			<add order="0x60" stat="maxMp" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39290">
+		<!--Max HP +25-->
+		<for>
+			<add order="0x60" stat="maxHp" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39291">
+		<!--Sayha's Grace Consumption -1%-->
+	</option_data>
+	<option_data id="39292">
+		<!--Sayha's Grace charging rate +1%-->
+	</option_data>
+	<option_data id="39293">
+		<!--Max CP +35-->
+		<for>
+			<add order="0x60" stat="maxCp" value="35"/>
+		</for>
+	</option_data>
+	<option_data id="39294">
+		<!--Max MP +35-->
+		<for>
+			<add order="0x60" stat="maxMp" value="35"/>
+		</for>
+	</option_data>
+	<option_data id="39295">
+		<!--Max HP +35-->
+		<for>
+			<add order="0x60" stat="maxHp" value="35"/>
+		</for>
+	</option_data>
+	<option_data id="39296">
+		<!--Weight limit +250-->
+		<for>
+			<add order="0x60" stat="maxLoad" value="250"/>
+		</for>
+	</option_data>
+	<option_data id="39297">
+		<!--Acquired XP/ SP +1%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.01"/>
+		</for>
+	</option_data>
+	<option_data id="39298">
+		<!--P. Atk. +15.-->
+		<for>
+			<add order="0x60" stat="pAtk" value="15"/>
+		</for>
+	</option_data>
+	<option_data id="39299">
+		<!--M. Atk. +15-->
+		<for>
+			<add order="0x60" stat="mAtk" value="15"/>
+		</for>
+	</option_data>
+</list>

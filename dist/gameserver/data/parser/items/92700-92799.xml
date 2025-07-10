@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="92700" name="Brigandine Helmet Design">
+		<set name="grind_commission" value="374"/>
+		<set name="grind_point" value="18667"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="37334"/>
+	</etcitem>
+	<etcitem id="92701" name="Manticore Skin Boot Lining">
+		<set name="grind_commission" value="249"/>
+		<set name="grind_point" value="12450"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="24900"/>
+	</etcitem>
+	<etcitem id="92702" name="Brigandine Boot Design">
+		<set name="grind_commission" value="249"/>
+		<set name="grind_point" value="12450"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="24900"/>
+	</etcitem>
+	<etcitem id="92703" name="Elven Mithril Boot Design">
+		<set name="grind_commission" value="249"/>
+		<set name="grind_point" value="12450"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="24900"/>
+	</etcitem>
+	<etcitem id="92704" name="Manticore Skin Glove Lining">
+		<set name="grind_commission" value="249"/>
+		<set name="grind_point" value="12450"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="24900"/>
+	</etcitem>
+	<etcitem id="92705" name="Brigandine Gauntlet Pattern">
+		<set name="grind_commission" value="249"/>
+		<set name="grind_point" value="12450"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="24900"/>
+	</etcitem>
+	<etcitem id="92706" name="Elven Mithril Glove Design">
+		<set name="grind_commission" value="249"/>
+		<set name="grind_point" value="12450"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="24900"/>
+	</etcitem>
+	<etcitem id="92707" name="Brigandine Shield Fragment">
+		<set name="grind_commission" value="262"/>
+		<set name="grind_point" value="13067"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="26134"/>
+	</etcitem>
+	<etcitem id="92708" name="Plate Helmet Design">
+		<set name="grind_commission" value="490"/>
+		<set name="grind_point" value="24500"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="49000"/>
+	</etcitem>
+	<etcitem id="92709" name="Salamander Skin Boot Lining">
+		<set name="grind_commission" value="326"/>
+		<set name="grind_point" value="16300"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="32600"/>
+	</etcitem>
+	<etcitem id="92710" name="Plate Boot Design">
+		<set name="grind_commission" value="326"/>
+		<set name="grind_point" value="16300"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="32600"/>
+	</etcitem>
+	<etcitem id="92711" name="Sage's Worn Glove Lining">
+		<set name="grind_commission" value="326"/>
+		<set name="grind_point" value="16300"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="32600"/>
+	</etcitem>
+	<etcitem id="92712" name="Plate Shield Fragment">
+		<set name="grind_commission" value="344"/>
+		<set name="grind_point" value="17167"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="34334"/>
+	</etcitem>
+	<etcitem id="92713" name="Reinforced Mithril Gaiter Fragment">
+		<set name="grind_commission" value="474"/>
+		<set name="grind_point" value="23700"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="47400"/>
+	</etcitem>
+	<etcitem id="92714" name="Chain Hood Pattern">
+		<set name="grind_commission" value="378"/>
+		<set name="grind_point" value="18900"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="37800"/>
+	</etcitem>
+	<etcitem id="92715" name="Chain Boot Fragment">
+		<set name="grind_commission" value="252"/>
+		<set name="grind_point" value="12600"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="25200"/>
+	</etcitem>
+	<etcitem id="92716" name="Karmian Boot Fabric">
+		<set name="grind_commission" value="252"/>
+		<set name="grind_point" value="12600"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="25200"/>
+	</etcitem>
+	<etcitem id="92717" name="Plated Leather Boot Lining">
+		<set name="grind_commission" value="252"/>
+		<set name="grind_point" value="12600"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="25200"/>
+	</etcitem>
+	<etcitem id="92718" name="Dwarven Chain Boot Fragment">
+		<set name="grind_commission" value="252"/>
+		<set name="grind_point" value="12600"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="25200"/>
+	</etcitem>
+	<etcitem id="92719" name="Boot of Seal Pattern">
+		<set name="grind_commission" value="252"/>
+		<set name="grind_point" value="12600"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="25200"/>
+	</etcitem>
+	<etcitem id="92720" name="Reinforced Mithril Glove Design">
+		<set name="grind_commission" value="252"/>
+		<set name="grind_point" value="12600"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="25200"/>
+	</etcitem>
+	<etcitem id="92721" name="Chain Glove Design">
+		<set name="grind_commission" value="252"/>
+		<set name="grind_point" value="12600"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="25200"/>
+	</etcitem>
+	<etcitem id="92722" name="Karmian Glove Fabric">
+		<set name="grind_commission" value="252"/>
+		<set name="grind_point" value="12600"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="25200"/>
+	</etcitem>
+	<etcitem id="92723" name="Chain Shield Fragment">
+		<set name="grind_commission" value="266"/>
+		<set name="grind_point" value="13300"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="26600"/>
+	</etcitem>
+	<etcitem id="92724" name="Plated Leather Glove Design">
+		<set name="grind_commission" value="298"/>
+		<set name="grind_point" value="14900"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="29800"/>
+	</etcitem>
+	<etcitem id="92725" name="Dwarven Chain Shield Fragment">
+		<set name="grind_commission" value="312"/>
+		<set name="grind_point" value="15600"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="31200"/>
+	</etcitem>
+	<etcitem id="92726" name="Rind Leather Boot Lining">
+		<set name="grind_commission" value="322"/>
+		<set name="grind_point" value="16100"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="32200"/>
+	</etcitem>
+	<etcitem id="92727" name="Dwarven Chain Glove Design">
+		<set name="grind_commission" value="322"/>
+		<set name="grind_point" value="16100"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="32200"/>
+	</etcitem>
+	<etcitem id="92728" name="Gloves of Seal Pattern">
+		<set name="grind_commission" value="322"/>
+		<set name="grind_point" value="16100"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="32200"/>
+	</etcitem>
+	<etcitem id="92729" name="Rind Leather Glove Design">
+		<set name="grind_commission" value="322"/>
+		<set name="grind_point" value="16100"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="32200"/>
+	</etcitem>
+	<etcitem id="92730" name="Demon's Boot Fabric">
+		<set name="grind_commission" value="490"/>
+		<set name="grind_point" value="24500"/>
+		<set name="icon" value="icon.etc_piece_of_cloth_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="49000"/>
+	</etcitem>
+	<etcitem id="92731" name="Demon's Glove Fabric">
+		<set name="grind_commission" value="490"/>
+		<set name="grind_point" value="24500"/>
+		<set name="icon" value="icon.etc_piece_of_cloth_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="49000"/>
+	</etcitem>
+	<etcitem id="92732" name="Theca Leather Boot Texture">
+		<set name="grind_commission" value="550"/>
+		<set name="grind_point" value="27500"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="55000"/>
+	</etcitem>
+	<etcitem id="92733" name="Theca Leather Glove Texture">
+		<set name="grind_commission" value="550"/>
+		<set name="grind_point" value="27500"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="55000"/>
+	</etcitem>
+	<etcitem id="92734" name="Compound Boot Fragment">
+		<set name="grind_commission" value="490"/>
+		<set name="grind_point" value="24500"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="49000"/>
+	</etcitem>
+	<etcitem id="92735" name="Compound Helmet Design">
+		<set name="grind_commission" value="736"/>
+		<set name="grind_point" value="36800"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="73600"/>
+	</etcitem>
+	<etcitem id="92736" name="Divine Boot Fabric">
+		<set name="grind_commission" value="716"/>
+		<set name="grind_point" value="35800"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="71600"/>
+	</etcitem>
+	<etcitem id="92737" name="Full Plate Helmet Design">
+		<set name="grind_commission" value="1072"/>
+		<set name="grind_point" value="53600"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="107200"/>
+	</etcitem>
+	<etcitem id="92738" name="Drake Leather Boot Design">
+		<set name="grind_commission" value="716"/>
+		<set name="grind_point" value="35800"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="71600"/>
+	</etcitem>
+	<etcitem id="92739" name="Full Plate Boot Fragment">
+		<set name="grind_commission" value="716"/>
+		<set name="grind_point" value="35800"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="71600"/>
+	</etcitem>
+	<etcitem id="92740" name="Drake Leather Glove Design">
+		<set name="grind_commission" value="716"/>
+		<set name="grind_point" value="35800"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="71600"/>
+	</etcitem>
+	<etcitem id="92741" name="Full Plate Gauntlet Fragment">
+		<set name="grind_commission" value="716"/>
+		<set name="grind_point" value="35800"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="71600"/>
+	</etcitem>
+	<etcitem id="92742" name="Divine Glove Pattern">
+		<set name="grind_commission" value="716"/>
+		<set name="grind_point" value="35800"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="71600"/>
+	</etcitem>
+	<etcitem id="92743" name="Blessed Glove Design">
+		<set name="grind_commission" value="716"/>
+		<set name="grind_point" value="35800"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="71600"/>
+	</etcitem>
+	<etcitem id="92744" name="Full Plate Shield Fragment">
+		<set name="grind_commission" value="750"/>
+		<set name="grind_point" value="37500"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="75000"/>
+	</etcitem>
+	<etcitem id="92745" name="Elven Long Sword Blade">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92746" name="Dwarven War Hammer Head">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92747" name="Yaksa Mace Head">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92748" name="Adamantite Earring Gemstone">
+		<set name="grind_commission" value="866"/>
+		<set name="grind_point" value="43286"/>
+		<set name="icon" value="icon.etc_crystal_ball_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="86572"/>
+	</etcitem>
+	<etcitem id="92749" name="Adamantite Ring Wire">
+		<set name="grind_commission" value="578"/>
+		<set name="grind_point" value="28857"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="57715"/>
+	</etcitem>
+	<etcitem id="92750" name="Adamantite Necklace Chain">
+		<set name="grind_commission" value="1155"/>
+		<set name="grind_point" value="57714"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="115429"/>
+	</etcitem>
+	<etcitem id="92751" name="Black Ore Earring Piece">
+		<set name="grind_commission" value="1320"/>
+		<set name="grind_point" value="66000"/>
+		<set name="icon" value="icon.etc_broken_crystal_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="132000"/>
+	</etcitem>
+	<etcitem id="92752" name="Black Ore Ring Gemstone">
+		<set name="grind_commission" value="880"/>
+		<set name="grind_point" value="44000"/>
+		<set name="icon" value="icon.etc_gem_black_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="88000"/>
+	</etcitem>
+	<etcitem id="92753" name="Black Ore Necklace Beads">
+		<set name="grind_commission" value="1758"/>
+		<set name="grind_point" value="87857"/>
+		<set name="icon" value="BranchSys2.icon.etc_blackorenecklace_beads_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="175715"/>
+	</etcitem>
+	<etcitem id="92754" name="Compound Shield Fragment">
+		<set name="grind_commission" value="516"/>
+		<set name="grind_point" value="25800"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="51600"/>
+	</etcitem>
+	<etcitem id="92755" name="Zubei's Breastplate Part">
+		<set name="grind_commission" value="2972"/>
+		<set name="grind_point" value="148571"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="297143"/>
+	</etcitem>
+	<etcitem id="92756" name="Zubei's Gaiters Material">
+		<set name="grind_commission" value="1858"/>
+		<set name="grind_point" value="92857"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="185715"/>
+	</etcitem>
+	<etcitem id="92757" name="Avadon Breastplate Part">
+		<set name="grind_commission" value="2972"/>
+		<set name="grind_point" value="148571"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="297143"/>
+	</etcitem>
+	<etcitem id="92758" name="Avadon Gaiters Material">
+		<set name="grind_commission" value="1858"/>
+		<set name="grind_point" value="92857"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="185715"/>
+	</etcitem>
+	<etcitem id="92759" name="Zubei's Leather Shirt Fabric">
+		<set name="grind_commission" value="2229"/>
+		<set name="grind_point" value="111429"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="222858"/>
+	</etcitem>
+	<etcitem id="92760" name="Zubei's Leather Gaiters Texture">
+		<set name="grind_commission" value="1390"/>
+		<set name="grind_point" value="69500"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="139000"/>
+	</etcitem>
+	<etcitem id="92761" name="Avadon Leather Armor Lining">
+		<set name="grind_commission" value="3258"/>
+		<set name="grind_point" value="162857"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="325715"/>
+	</etcitem>
+	<etcitem id="92762" name="Zubei's Tunic Fabric">
+		<set name="grind_commission" value="2229"/>
+		<set name="grind_point" value="111429"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="222858"/>
+	</etcitem>
+	<etcitem id="92763" name="Zubei's Stockings Fabric">
+		<set name="grind_commission" value="1390"/>
+		<set name="grind_point" value="69500"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="139000"/>
+	</etcitem>
+	<etcitem id="92764" name="Avadon Robe Fabric">
+		<set name="grind_commission" value="3258"/>
+		<set name="grind_point" value="162857"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="325715"/>
+	</etcitem>
+	<etcitem id="92765" name="Sealed Avadon Circlet Pattern">
+		<set name="grind_commission" value="1112"/>
+		<set name="grind_point" value="55571"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="111143"/>
+	</etcitem>
+	<etcitem id="92766" name="Sealed Avadon Glove Fragment">
+		<set name="grind_commission" value="742"/>
+		<set name="grind_point" value="37071"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="74143"/>
+	</etcitem>
+	<etcitem id="92767" name="Doom Shield Fragment">
+		<set name="grind_commission" value="1208"/>
+		<set name="grind_point" value="60357"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="120715"/>
+	</etcitem>
+	<etcitem id="92768" name="Blue Wolf Breastplate Part">
+		<set name="grind_commission" value="4600"/>
+		<set name="grind_point" value="230000"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="460000"/>
+	</etcitem>
+	<etcitem id="92769" name="Blue Wolf Gaiter Material">
+		<set name="grind_commission" value="2872"/>
+		<set name="grind_point" value="143571"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="287143"/>
+	</etcitem>
+	<etcitem id="92770" name="Doom Plate Armor Temper">
+		<set name="grind_commission" value="6729"/>
+		<set name="grind_point" value="336429"/>
+		<set name="icon" value="icon.etc_lump_white_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="672858"/>
+	</etcitem>
+	<etcitem id="92771" name="Blue Wolf Leather Armor Texture">
+		<set name="grind_commission" value="5043"/>
+		<set name="grind_point" value="252143"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="504286"/>
+	</etcitem>
+	<etcitem id="92772" name="Doom Leather Armor Design">
+		<set name="grind_commission" value="5043"/>
+		<set name="grind_point" value="252143"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="504286"/>
+	</etcitem>
+	<etcitem id="92773" name="Blue Wolf Tunic Fabric">
+		<set name="grind_commission" value="3443"/>
+		<set name="grind_point" value="172143"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="344286"/>
+	</etcitem>
+	<etcitem id="92774" name="Doom Tunic Pattern">
+		<set name="grind_commission" value="3443"/>
+		<set name="grind_point" value="172143"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="344286"/>
+	</etcitem>
+	<etcitem id="92775" name="Blue Wolf Stocking Pattern">
+		<set name="grind_commission" value="2158"/>
+		<set name="grind_point" value="107857"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="215715"/>
+	</etcitem>
+	<etcitem id="92776" name="Doom Stockings Pattern">
+		<set name="grind_commission" value="2158"/>
+		<set name="grind_point" value="107857"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="215715"/>
+	</etcitem>
+	<etcitem id="92777" name="Sealed Blue Wolf Helmet Design">
+		<set name="grind_commission" value="1729"/>
+		<set name="grind_point" value="86429"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="172858"/>
+	</etcitem>
+	<etcitem id="92778" name="Sealed Doom Helmet Pattern">
+		<set name="grind_commission" value="1729"/>
+		<set name="grind_point" value="86429"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="172858"/>
+	</etcitem>
+	<etcitem id="92779" name="Sealed Blue Wolf Boot Design">
+		<set name="grind_commission" value="1149"/>
+		<set name="grind_point" value="57429"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="114858"/>
+	</etcitem>
+	<etcitem id="92780" name="Sealed Doom Glove Fragment">
+		<set name="grind_commission" value="1149"/>
+		<set name="grind_point" value="57429"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="114858"/>
+	</etcitem>
+	<etcitem id="92781" name="Sealed Blue Wolf Glove Fabric">
+		<set name="grind_commission" value="1149"/>
+		<set name="grind_point" value="57429"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="114858"/>
+	</etcitem>
+	<etcitem id="92782" name="Sealed Zubei's Boot Design">
+		<set name="grind_commission" value="742"/>
+		<set name="grind_point" value="37071"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="74143"/>
+	</etcitem>
+	<etcitem id="92783" name="Sealed Avadon Boot Design">
+		<set name="grind_commission" value="742"/>
+		<set name="grind_point" value="37071"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="74143"/>
+	</etcitem>
+	<etcitem id="92784" name="Sealed Doom Boot Fragment">
+		<set name="grind_commission" value="1149"/>
+		<set name="grind_point" value="57429"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="114858"/>
+	</etcitem>
+	<etcitem id="92785" name="Sealed Zubei's Gauntlet Fragment">
+		<set name="grind_commission" value="742"/>
+		<set name="grind_point" value="37071"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="74143"/>
+	</etcitem>
+	<etcitem id="92786" name="Zubei's Shield Fragment">
+		<set name="grind_commission" value="779"/>
+		<set name="grind_point" value="38929"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="77858"/>
+	</etcitem>
+	<etcitem id="92787" name="Sealed Zubei's Helmet Design">
+		<set name="grind_commission" value="1112"/>
+		<set name="grind_point" value="55571"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="111143"/>
+	</etcitem>
+	<etcitem id="92788" name="Pata Blade">
+		<set name="grind_commission" value="11186"/>
+		<set name="grind_point" value="559286"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1118572"/>
+	</etcitem>
+	<etcitem id="92789" name="Great Sword Blade">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92790" name="Heavy War Axe Head">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92791" name="Spirit's Staff Head">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92792" name="Keshanberk Blade">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92793" name="Sword of Valhalla Blade">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92794" name="Kris Edge">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92795" name="Twilight Knife Edge">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92796" name="Arthro Nail Blade">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92797" name="Dark Elven Longbow Shaft">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92798" name="Great Axe Head">
+		<set name="grind_commission" value="12400"/>
+		<set name="grind_point" value="620000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1240000"/>
+	</etcitem>
+	<etcitem id="92799" name="Damascus Sword Blade">
+		<set name="grind_commission" value="18715"/>
+		<set name="grind_point" value="935714"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1871429"/>
+	</etcitem>
+</list>

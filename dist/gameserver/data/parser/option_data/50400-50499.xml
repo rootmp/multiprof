@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="50400">
+		<!--M. Def. +25, Received Damage -15%, Atk. Spd./ Casting Spd. +3%, P./ M. Critical Damage +5%-->
+		<!--Acquired XP/ SP +20%.-->
+	</option_data>
+	<option_data id="50401">
+		<!--M. Def. +26, Received Damage -15%, Atk. Spd./ Casting Spd. +3%, P./ M. Critical Damage +5%-->
+		<!--Acquired XP/ SP +25%.-->
+	</option_data>
+	<option_data id="50402">
+		<!--M. Def. +27, Received Damage -15%, Atk. Spd./ Casting Spd. +3%, P./ M. Critical Damage +6%-->
+		<!--Acquired XP/ SP +25%.-->
+	</option_data>
+	<option_data id="50403">
+		<!--M. Def. +28, Received Damage -15%, Atk. Spd./ Casting Spd. +4%, P./ M. Critical Damage +6%-->
+		<!--Acquired XP/ SP +25%.-->
+	</option_data>
+	<option_data id="50404">
+		<!--M. Def. +29, Received Damage -15%, Atk. Spd./ Casting Spd. +4%, P./ M. Critical Damage +7%, P./ M. Atk. +5%-->
+		<!--Acquired XP/ SP +25%.-->
+	</option_data>
+	<option_data id="50405">
+		<!--M. Def. +30, Received Damage -20%, Atk. Spd./ Casting Spd. +4%, P./ M. Critical Damage +7%, P./ M. Atk. +5%-->
+		<!--Acquired XP/ SP +25%.-->
+	</option_data>
+	<option_data id="50406">
+		<!--M. Def. +31, Received Damage -20%, Atk. Spd./ Casting Spd. +4%, P./ M. Critical Damage +8%, P./ M. Atk. +5%-->
+		<!--Acquired XP/ SP +25%.-->
+	</option_data>
+	<option_data id="50407">
+		<!--M. Def. +33, Received Damage -20%, Atk. Spd./ Casting Spd. +5%, P./ M. Critical Damage +8%, P./ M. Atk. +10%-->
+		<!--Acquired XP/ SP +30%.-->
+	</option_data>
+	<option_data id="50408">
+		<!--M. Def. +35, Received Damage -20%, Atk. Spd./ Casting Spd. +5%, P./ M. Critical Damage +9%, P./ M. Atk. +10%-->
+		<!--Acquired XP/ SP +30%.-->
+	</option_data>
+	<option_data id="50409">
+		<!--M. Def. +37, Received Damage -25%, Atk. Spd./ Casting Spd. +5%, P./ M. Critical Damage +9%, P./ M. Atk. +10%-->
+		<!--Acquired XP/ SP +30%.-->
+	</option_data>
+	<option_data id="50410">
+		<!--M. Def. +39, Received Damage -25%, Atk. Spd./ Casting Spd. +5%, P./ M. Critical Damage +10%, P./ M. Atk. +10%, Damage Reflection Resistance +10%-->
+		<!--Acquired XP/ SP +30%.-->
+	</option_data>
+	<option_data id="50411">
+		<!--M. Def. +41, Received Damage -25%, Atk. Spd./ Casting Spd. +5%, P./ M. Critical Damage +10%, P./ M. Atk. +15%, Damage Reflection Resistance +12%-->
+		<!--Acquired XP/ SP +30%.-->
+	</option_data>
+	<option_data id="50412">
+		<!--M. Def. +43, Received Damage -25%, Atk. Spd./ Casting Spd. +10%, P./ M. Critical Damage +12%, P./ M. Atk. +15%, Damage Reflection Resistance +15%-->
+		<!--Acquired XP/ SP +30%.-->
+	</option_data>
+	<option_data id="50413">
+		<!--Active: Dragon Invocation-->
+	</option_data>
+	<option_data id="50414">
+		<!--Active: Dragon Barrier-->
+	</option_data>
+</list>

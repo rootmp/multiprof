@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="91111" count="1"/>	<!--Agathion Pisces (30 days)-->
+		<ingredient id="45473" count="20769"/>	<!--Blue Mackerel-->
+		<ingredient id="45481" count="13500"/>	<!--Fresh Blue Mackerel-->
+		<ingredient id="57" count="300000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91112" count="1"/>	<!--Agathion Cancer (30 days)-->
+		<ingredient id="45473" count="20769"/>	<!--Blue Mackerel-->
+		<ingredient id="45481" count="13500"/>	<!--Fresh Blue Mackerel-->
+		<ingredient id="57" count="300000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="49502" count="1"/>	<!--Scroll of Escape: Giran Harbor-->
+		<ingredient id="45473" count="50"/>	<!--Blue Mackerel-->
+	</item>
+	<item>
+		<production id="49503" count="1"/>	<!--Scroll of Escape: Gludin Harbor-->
+		<ingredient id="45473" count="50"/>	<!--Blue Mackerel-->
+	</item>
+	<item>
+		<production id="70070" count="1"/>	<!--Scroll: Intense Slasher Lv. 2-->
+		<ingredient id="70069" count="2"/>	<!--Scroll: Intense Slasher Lv. 1-->
+	</item>
+	<item>
+		<production id="70071" count="1"/>	<!--Scroll: Intense Slasher Lv. 3-->
+		<ingredient id="70069" count="3"/>	<!--Scroll: Intense Slasher Lv. 1-->
+	</item>
+	<item>
+		<production id="70072" count="1"/>	<!--Scroll: Intense Slasher Lv. 4-->
+		<ingredient id="70069" count="4"/>	<!--Scroll: Intense Slasher Lv. 1-->
+	</item>
+	<item>
+		<production id="70073" count="1"/>	<!--Scroll: Intense Slasher Lv. 5-->
+		<ingredient id="70069" count="5"/>	<!--Scroll: Intense Slasher Lv. 1-->
+	</item>
+	<item>
+		<production id="70076" count="1"/>	<!--Purity Blast Scroll Lv. 2-->
+		<ingredient id="70075" count="2"/>	<!--Purity Blast Scroll Lv. 1-->
+	</item>
+	<item>
+		<production id="70077" count="1"/>	<!--Purity Blast Scroll Lv. 3-->
+		<ingredient id="70075" count="3"/>	<!--Purity Blast Scroll Lv. 1-->
+	</item>
+	<item>
+		<production id="70078" count="1"/>	<!--Purity Blast Scroll Lv. 4-->
+		<ingredient id="70075" count="4"/>	<!--Purity Blast Scroll Lv. 1-->
+	</item>
+	<item>
+		<production id="70079" count="1"/>	<!--Purity Blast Scroll Lv. 5-->
+		<ingredient id="70075" count="5"/>	<!--Purity Blast Scroll Lv. 1-->
+	</item>
+	<item>
+		<production id="70082" count="1"/>	<!--Grey Explosion Scroll Lv. 2-->
+		<ingredient id="70081" count="2"/>	<!--Grey Explosion Scroll Lv. 1-->
+	</item>
+	<item>
+		<production id="70083" count="1"/>	<!--Grey Explosion Scroll Lv. 3-->
+		<ingredient id="70081" count="3"/>	<!--Grey Explosion Scroll Lv. 1-->
+	</item>
+	<item>
+		<production id="70084" count="1"/>	<!--Grey Explosion Scroll Lv. 4-->
+		<ingredient id="70081" count="4"/>	<!--Grey Explosion Scroll Lv. 1-->
+	</item>
+	<item>
+		<production id="70085" count="1"/>	<!--Grey Explosion Scroll Lv. 5-->
+		<ingredient id="70081" count="5"/>	<!--Grey Explosion Scroll Lv. 1-->
+	</item>
+	<item>
+		<production id="70088" count="1"/>	<!--Scroll of Platonic Tempest Lv. 2-->
+		<ingredient id="70087" count="2"/>	<!--Scroll of Platonic Tempest Lv. 1-->
+	</item>
+	<item>
+		<production id="70089" count="1"/>	<!--Scroll of Platonic Tempest Lv. 3-->
+		<ingredient id="70087" count="3"/>	<!--Scroll of Platonic Tempest Lv. 1-->
+	</item>
+	<item>
+		<production id="70090" count="1"/>	<!--Scroll of Platonic Tempest Lv. 4-->
+		<ingredient id="70087" count="4"/>	<!--Scroll of Platonic Tempest Lv. 1-->
+	</item>
+	<item>
+		<production id="70091" count="1"/>	<!--Scroll of Platonic Tempest Lv. 5-->
+		<ingredient id="70087" count="5"/>	<!--Scroll of Platonic Tempest Lv. 1-->
+	</item>
+</list>

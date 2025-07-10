@@ -1,0 +1,2668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="29200" name="Saber - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="40"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29201" name="Spinebone Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1510"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="32"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29202" name="Artisan's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1500"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="32"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29203" name="Crimson Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="967000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1490"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="64"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29204" name="Knight's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1500"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="32"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29205" name="Sword of Revolution - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1450"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="79"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29206" name="Elven Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="967000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="64"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29207" name="Sword of Mystic - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="716000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="980"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29208" name="Sword of Occult - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="716000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="970"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29209" name="Branch of Life - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="620"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29210" name="Temptation of Abyss - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="610"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29211" name="Proof of Revenge - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29212" name="Divine Rod - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="570"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29213" name="Sage's Blood - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="967000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="580"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29214" name="Tome of Blood - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="967000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="570"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29215" name="Crucifix of Blood - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="540"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29216" name="Eye of Infinity - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29217" name="Blue Crystal Skull - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1520000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="67"/>
+			<add stat="mAtk" order="0x10" value="66"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29218" name="Demon's Fangs - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1520000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="67"/>
+			<add stat="mAtk" order="0x10" value="66"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29219" name="Vajra Wand - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1800000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29220" name="Ancient Reagent - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1800000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29221" name="Elven Long Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1800000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1440"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="92"/>
+			<add stat="mAtk" order="0x10" value="54"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29222" name="Priest Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29223" name="Sword of Magic Fog - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1450"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29224" name="Red Sunset Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="25500"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="16"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29225" name="Brandish - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="54100"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2250"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="21"/>
+			<add stat="mAtk" order="0x10" value="12"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29226" name="Zweihander - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="244000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="38"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29227" name="Claymore - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1800000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2090"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="112"/>
+			<add stat="mAtk" order="0x10" value="54"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29228" name="Two-handed Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="967000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2180"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="78"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29229" name="Heavy Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="49"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29230" name="Steel Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="49"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29231" name="Lesser Giant's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2020"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29232" name="Saber*Saber - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="877000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="37"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29233" name="Saber*Bastard Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1060000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="83"/>
+			<add stat="mAtk" order="0x10" value="41"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29234" name="Saber*Spinebone Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1060000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="83"/>
+			<add stat="mAtk" order="0x10" value="41"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29235" name="Saber*Artisan's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1060000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="83"/>
+			<add stat="mAtk" order="0x10" value="41"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29236" name="Saber*Knight's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1060000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2510"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="83"/>
+			<add stat="mAtk" order="0x10" value="41"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29237" name="Saber*Crimson Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29238" name="Saber*Elven Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2510"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29239" name="Bastard Sword*Bastard Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29240" name="Bastard Sword*Spinebone Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29241" name="Bastard Sword*Artisan's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2480"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29242" name="Bastard Sword*Knight's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2500"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29243" name="Bastard Sword*Crimson Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1660000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="107"/>
+			<add stat="mAtk" order="0x10" value="51"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29244" name="Bastard Sword*Elven Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1660000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2460"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="107"/>
+			<add stat="mAtk" order="0x10" value="51"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29245" name="Spinebone Sword*Spinebone Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29246" name="Spinebone Sword*Artisan's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2460"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29247" name="Spinebone Sword*Knight's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29248" name="Spinebone Sword*Crimson Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1660000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="107"/>
+			<add stat="mAtk" order="0x10" value="51"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29249" name="Spinebone Sword*Elven Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1660000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2460"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="107"/>
+			<add stat="mAtk" order="0x10" value="51"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29250" name="Artisan's Sword*Artisan's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2480"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29251" name="Artisan's Sword*Knight's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29252" name="Artisan's Sword*Crimson Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1660000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2450"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="107"/>
+			<add stat="mAtk" order="0x10" value="51"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29253" name="Artisan's Sword*Elven Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1660000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="107"/>
+			<add stat="mAtk" order="0x10" value="51"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29254" name="Knight's Sword*Knight's Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2460"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29255" name="Knight's Sword*Crimson Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1660000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2460"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="107"/>
+			<add stat="mAtk" order="0x10" value="51"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29256" name="Knight's Sword*Elven Sword - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="price" value="1660000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2450"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="107"/>
+			<add stat="mAtk" order="0x10" value="51"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="29257" name="Club - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="768"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1870"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="8"/>
+			<add stat="mAtk" order="0x10" value="6"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29258" name="Mace - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="12500"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1880"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="11"/>
+			<add stat="mAtk" order="0x10" value="9"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29259" name="Apprentice's Rod - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="768"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1330"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="6"/>
+			<add stat="mAtk" order="0x10" value="8"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29260" name="Iron Hammer - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="244000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1850"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29261" name="Heavy Chisel - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="8070"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1890"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="10"/>
+			<add stat="mAtk" order="0x10" value="8"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29262" name="Sickle - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="18500"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1850"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="12"/>
+			<add stat="mAtk" order="0x10" value="9"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29263" name="Dwarven Mace - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="54100"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1860"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="17"/>
+			<add stat="mAtk" order="0x10" value="12"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29264" name="Flanged Mace - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="244000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1800"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29265" name="Wand of Adept - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="25500"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="11"/>
+			<add stat="mAtk" order="0x10" value="13"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29266" name="Silversmith Hammer - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="25500"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1860"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="13"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29267" name="Bone Club - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="136000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1850"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="24"/>
+			<add stat="mAtk" order="0x10" value="17"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29268" name="Tomahawk - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1780"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="32"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29269" name="Morning Star - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="79"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29270" name="Hand Axe - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1820"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="40"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29271" name="Spiked Club - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="967000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="64"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29272" name="Tarbar - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1730"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="79"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29273" name="Bonebreaker - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1800000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="92"/>
+			<add stat="mAtk" order="0x10" value="54"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29274" name="Heavy Mace - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1800"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="40"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29275" name="Scalpel - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1810"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="40"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29276" name="Work Hammer - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1790"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="40"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29277" name="Skull Breaker - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="79"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29278" name="Heavy Bone Club - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1730"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="79"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29279" name="Mace of Prayer - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29280" name="Mace of Judgment - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1280"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29281" name="Mace of Miracle - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1250"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29282" name="Doom Hammer - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1200"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29283" name="Staff of Life - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1800000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1180"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29284" name="Priest Mace - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29285" name="Willow Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="12500"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1080"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="11"/>
+			<add stat="mAtk" order="0x10" value="13"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29286" name="Cedar Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="54100"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1090"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="16"/>
+			<add stat="mAtk" order="0x10" value="18"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29287" name="Apprentice's Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="136000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1070"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="23"/>
+			<add stat="mAtk" order="0x10" value="24"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29288" name="Mage Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="244000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1050"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="30"/>
+			<add stat="mAtk" order="0x10" value="31"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29289" name="Staff of Sentinel - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="33600"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1800"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="13"/>
+			<add stat="mAtk" order="0x10" value="15"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29290" name="Red Sunset Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="25500"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1700"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="13"/>
+			<add stat="mAtk" order="0x10" value="14"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29291" name="Eldritch Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="25500"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1050"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="13"/>
+			<add stat="mAtk" order="0x10" value="13"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29292" name="Goat Head Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1400000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1000"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="77"/>
+			<add stat="mAtk" order="0x10" value="69"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29293" name="Bone Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="409000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1060"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="39"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29294" name="Mystic Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1040"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="50"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29295" name="Conjuror's Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1030"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="50"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29296" name="Staff of Mana - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="644000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1040"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="50"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29297" name="Staff of Magic - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="967000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1020"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="62"/>
+			<add stat="mAtk" order="0x10" value="57"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29298" name="Atuba Hammer - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1800000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1010"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="90"/>
+			<add stat="mAtk" order="0x10" value="79"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="29299" name="Ghost Staff - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="price" value="1800000"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1000"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="90"/>
+			<add stat="mAtk" order="0x10" value="79"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+</list>

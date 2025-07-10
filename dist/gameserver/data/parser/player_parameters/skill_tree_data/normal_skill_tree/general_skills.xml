@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--REWORKER: MORSE-->
+<list>
+	<normal_skill_tree class_level="FIRST">
+		<!--  Expand Inventory (Расширенный Инвентарь) -->
+		<skill id="1372" level="1" min_level="1" auto_get="false"> <!--Expand Inventory-->
+			<required_items>
+				<item id="92004" count="1"/><!--Inventory Expansion Ticket Lv. 1 (Sealed)-->
+			</required_items>
+		</skill>
+		<skill id="1372" level="2" min_level="1" auto_get="false"> <!--Expand Inventory-->
+			<required_items>
+				<item id="92005" count="1"/><!--Inventory Expansion Ticket Lv. 2 (Sealed)-->
+			</required_items>
+		</skill>
+		<skill id="1372" level="3" min_level="1" auto_get="false"> <!--Expand Inventory-->
+			<required_items>
+				<item id="92006" count="1"/><!--Inventory Expansion Ticket Lv. 3 (Sealed)-->
+			</required_items>
+		</skill>
+		<skill id="1372" level="4" min_level="1" auto_get="false"> <!--Expand Inventory-->
+			<required_items>
+				<item id="92007" count="1"/><!--Inventory Expansion Ticket Lv. 4 (Sealed)-->
+			</required_items>
+		</skill>
+		<skill id="1372" level="5" min_level="1" auto_get="false"> <!--Expand Inventory-->
+			<required_items>
+				<item id="92008" count="1"/><!--Inventory Expansion Ticket Lv. 5 (Sealed)-->
+			</required_items>
+		</skill>
+	</normal_skill_tree>
+	<normal_skill_tree class_level="THIRD">
+		<!-- Expanded Potential of Dyes (Расширенный Потенциал Красок) -->
+		<skill id="45269" level="1" min_level="76" auto_get="false"> <!-- Expanded Potential of Dyes -->
+			<required_items>
+				<item id="96613;96614" count="1"/> <!-- Pattern Slot Expansion Ticket -->
+			</required_items>
+		</skill>
+		<!-- Blessed by Sayha (Благословение от Сайхи) -->
+		<skill id="45408" level="1" min_level="76" auto_get="false"> <!--Sayha's Grace charging rate +5% -->
+			<required_items>
+				<item id="57" count="10000000"/> <!-- Adena -->
+			</required_items>
+		</skill>
+		<skill id="45408" level="2" min_level="80" auto_get="false"> <!--Sayha's Grace charging rate +20% -->
+			<required_items>
+				<item id="57" count="40000000"/> <!-- Adena -->
+			</required_items>
+		</skill>
+		<skill id="45408" level="3" min_level="85" auto_get="false"> <!--Sayha's Grace charging rate +50% -->
+			<required_items>
+				<item id="57" count="100000000"/> <!-- Adena -->
+			</required_items>
+		</skill>
+		<skill id="45408" level="4" min_level="90" auto_get="false"> <!--Sayha's Grace charging rate +100% -->
+			<required_items>
+				<item id="57" count="20000000"/> <!-- Adena -->
+			</required_items>
+		</skill>
+		<!-- MORSE: New Passive skills (Новые пассивные скилы) 338 Battle Chronicle -->
+		<skill id="45471" level="1" min_level="88" auto_get="true"/><!--Glorious Warrior's Elixir Upgrade-->
+		<skill id="45471" level="2" min_level="91" auto_get="true"/><!--Glorious Warrior's Elixir Upgrade-->
+		<skill id="45471" level="3" min_level="92" auto_get="true"/><!--Glorious Warrior's Elixir Upgrade-->
+		<skill id="45471" level="4" min_level="93" auto_get="true"/><!--Glorious Warrior's Elixir Upgrade-->
+		<skill id="45471" level="5" min_level="94" auto_get="true"/><!--Glorious Warrior's Elixir Upgrade-->
+		<skill id="45471" level="6" min_level="95" auto_get="true"/><!--Glorious Warrior's Elixir Upgrade-->
+		
+		<skill id="45472" level="1" min_level="88" auto_get="true"/><!--Glorious Warrior's Special Teleport-->
+		
+		<skill id="45473" level="1" min_level="89" auto_get="true"/><!--Expand Glorious Warrior's Special Teleports-->
+		
+		<skill id="45474" level="1" min_level="90" auto_get="true"/><!--Glorious Warrior's Unique Title Color-->
+		
+		<skill id="45475" level="1" min_level="90" auto_get="true"/><!--Expand Glorious Warrior's Hair Accessory Slots-->
+		
+		<skill id="45483" level="1" min_level="88" auto_get="true"/><!--Expand Glorious Warrior's Magic Lamp-->
+		<skill id="45483" level="2" min_level="91" auto_get="true"/><!--Expand Glorious Warrior's Magic Lamp-->
+		<skill id="45483" level="3" min_level="92" auto_get="true"/><!--Expand Glorious Warrior's Magic Lamp-->
+		<skill id="45483" level="4" min_level="93" auto_get="true"/><!--Expand Glorious Warrior's Magic Lamp-->
+		<skill id="45483" level="5" min_level="94" auto_get="true"/><!--Expand Glorious Warrior's Magic Lamp-->
+		<skill id="45483" level="6" min_level="95" auto_get="true"/><!--Expand Glorious Warrior's Magic Lamp-->
+		<skill id="45483" level="7" min_level="96" auto_get="true"/><!--Expand Glorious Warrior's Magic Lamp-->
+		
+		<skill id="47240" level="1" min_level="91" auto_get="true"/><!--Glorious Warrior's Resurrection Cost Decrease-->
+	</normal_skill_tree>
+</list>

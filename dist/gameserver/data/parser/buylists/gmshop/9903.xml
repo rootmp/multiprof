@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "buylist.dtd">
+<list>
+	<npc id="-1">
+		<buylist id="9903">
+			<item id="48048"/>
+			<item id="48049"/>
+			<item id="48050"/>
+			<item id="48052"/>
+			<item id="48053"/>
+			<item id="48054"/>
+			<item id="48055"/>
+			<item id="48056"/>
+			<item id="48058"/>
+		</buylist>
+	</npc>
+</list>

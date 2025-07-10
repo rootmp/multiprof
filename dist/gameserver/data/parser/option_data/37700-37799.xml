@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="37700">
+		<!--Received Skill Critical Damage -130-->
+	</option_data>
+	<option_data id="37701">
+		<!--Received Skill Critical Damage -150-->
+	</option_data>
+	<option_data id="37702">
+		<!--Received Skill Critical Damage -200-->
+	</option_data>
+	<option_data id="37703">
+		<!--Received Skill Critical Damage -300-->
+	</option_data>
+	<option_data id="37704">
+		<!--Received Skill Critical Damage -10-->
+	</option_data>
+	<option_data id="37705">
+		<!--Received Skill Critical Damage -15-->
+	</option_data>
+	<option_data id="37706">
+		<!--Received Skill Critical Damage -20-->
+	</option_data>
+	<option_data id="37707">
+		<!--Received Skill Critical Damage -25-->
+	</option_data>
+	<option_data id="37708">
+		<!--Received Skill Critical Damage -30-->
+	</option_data>
+	<option_data id="37709">
+		<!--Received Skill Critical Damage -35-->
+	</option_data>
+	<option_data id="37710">
+		<!--Received Skill Critical Damage -40-->
+	</option_data>
+	<option_data id="37711">
+		<!--Received Skill Critical Damage -45-->
+	</option_data>
+	<option_data id="37712">
+		<!--Received Skill Critical Damage -50-->
+	</option_data>
+	<option_data id="37713">
+		<!--Received Skill Critical Damage -60-->
+	</option_data>
+	<option_data id="37714">
+		<!--Received Skill Critical Damage -70-->
+	</option_data>
+	<option_data id="37715">
+		<!--Received Skill Critical Damage -80-->
+	</option_data>
+	<option_data id="37716">
+		<!--Received Skill Critical Damage -90-->
+	</option_data>
+	<option_data id="37717">
+		<!--Received Skill Critical Damage -100-->
+	</option_data>
+	<option_data id="37718">
+		<!--Received Skill Critical Damage -110-->
+	</option_data>
+	<option_data id="37719">
+		<!--Received Skill Critical Damage -120-->
+	</option_data>
+	<option_data id="37720">
+		<!--Received Skill Critical Damage -130-->
+	</option_data>
+	<option_data id="37721">
+		<!--Received Skill Critical Damage -150-->
+	</option_data>
+	<option_data id="37722">
+		<!--Received Skill Critical Damage -200-->
+	</option_data>
+	<option_data id="37723">
+		<!--Received Skill Critical Damage -300-->
+	</option_data>
+	<option_data id="37724">
+		<!--P. Def. +10.-->
+	</option_data>
+	<option_data id="37725">
+		<!--P. Def. +16-->
+	</option_data>
+	<option_data id="37726">
+		<!--P. Def. +22-->
+	</option_data>
+	<option_data id="37727">
+		<!--P. Def. +28-->
+	</option_data>
+	<option_data id="37728">
+		<!--P. Def. +34-->
+	</option_data>
+	<option_data id="37729">
+		<!--P. Def. +40-->
+	</option_data>
+	<option_data id="37730">
+		<!--P. Def. +46-->
+	</option_data>
+	<option_data id="37731">
+		<!--P. Def. +52-->
+	</option_data>
+	<option_data id="37732">
+		<!--P. Def. +58-->
+	</option_data>
+	<option_data id="37733">
+		<!--P. Def. +64-->
+	</option_data>
+	<option_data id="37734">
+		<!--P. Def. +70-->
+	</option_data>
+	<option_data id="37735">
+		<!--P. Def. +76-->
+	</option_data>
+	<option_data id="37736">
+		<!--P. Def. +82-->
+	</option_data>
+	<option_data id="37737">
+		<!--P. Def. +88-->
+	</option_data>
+	<option_data id="37738">
+		<!--P. Def. +94-->
+	</option_data>
+	<option_data id="37739">
+		<!--P. Def. +100-->
+	</option_data>
+	<option_data id="37740">
+		<!--P. Def. +110-->
+	</option_data>
+	<option_data id="37741">
+		<!--P. Def. +120-->
+	</option_data>
+	<option_data id="37742">
+		<!--P. Def. +150-->
+	</option_data>
+	<option_data id="37743">
+		<!--P. Def. +200-->
+	</option_data>
+	<option_data id="37744">
+		<!--P. Def. +10.-->
+	</option_data>
+	<option_data id="37745">
+		<!--P. Def. +16-->
+	</option_data>
+	<option_data id="37746">
+		<!--P. Def. +22-->
+	</option_data>
+	<option_data id="37747">
+		<!--P. Def. +28-->
+	</option_data>
+	<option_data id="37748">
+		<!--P. Def. +34-->
+	</option_data>
+	<option_data id="37749">
+		<!--P. Def. +40-->
+	</option_data>
+	<option_data id="37750">
+		<!--P. Def. +46-->
+	</option_data>
+	<option_data id="37751">
+		<!--P. Def. +52-->
+	</option_data>
+	<option_data id="37752">
+		<!--P. Def. +58-->
+	</option_data>
+	<option_data id="37753">
+		<!--P. Def. +64-->
+	</option_data>
+	<option_data id="37754">
+		<!--P. Def. +70-->
+	</option_data>
+	<option_data id="37755">
+		<!--P. Def. +76-->
+	</option_data>
+	<option_data id="37756">
+		<!--P. Def. +82-->
+	</option_data>
+	<option_data id="37757">
+		<!--P. Def. +88-->
+	</option_data>
+	<option_data id="37758">
+		<!--P. Def. +94-->
+	</option_data>
+	<option_data id="37759">
+		<!--P. Def. +100-->
+	</option_data>
+	<option_data id="37760">
+		<!--P. Def. +110-->
+	</option_data>
+	<option_data id="37761">
+		<!--P. Def. +120-->
+	</option_data>
+	<option_data id="37762">
+		<!--P. Def. +150-->
+	</option_data>
+	<option_data id="37763">
+		<!--P. Def. +200-->
+	</option_data>
+	<option_data id="37764">
+		<!--P. Def. +10.-->
+	</option_data>
+	<option_data id="37765">
+		<!--P. Def. +16-->
+	</option_data>
+	<option_data id="37766">
+		<!--P. Def. +22-->
+	</option_data>
+	<option_data id="37767">
+		<!--P. Def. +28-->
+	</option_data>
+	<option_data id="37768">
+		<!--P. Def. +34-->
+	</option_data>
+	<option_data id="37769">
+		<!--P. Def. +40-->
+	</option_data>
+	<option_data id="37770">
+		<!--P. Def. +46-->
+	</option_data>
+	<option_data id="37771">
+		<!--P. Def. +52-->
+	</option_data>
+	<option_data id="37772">
+		<!--P. Def. +58-->
+	</option_data>
+	<option_data id="37773">
+		<!--P. Def. +64-->
+	</option_data>
+	<option_data id="37774">
+		<!--P. Def. +70-->
+	</option_data>
+	<option_data id="37775">
+		<!--P. Def. +76-->
+	</option_data>
+	<option_data id="37776">
+		<!--P. Def. +82-->
+	</option_data>
+	<option_data id="37777">
+		<!--P. Def. +88-->
+	</option_data>
+	<option_data id="37778">
+		<!--P. Def. +94-->
+	</option_data>
+	<option_data id="37779">
+		<!--P. Def. +100-->
+	</option_data>
+	<option_data id="37780">
+		<!--P. Def. +110-->
+	</option_data>
+	<option_data id="37781">
+		<!--P. Def. +120-->
+	</option_data>
+	<option_data id="37782">
+		<!--P. Def. +150-->
+	</option_data>
+	<option_data id="37783">
+		<!--P. Def. +200-->
+	</option_data>
+	<option_data id="37784">
+		<!--M. Def. +10-->
+	</option_data>
+	<option_data id="37785">
+		<!--M. Def. +16-->
+	</option_data>
+	<option_data id="37786">
+		<!--M. Def. +22-->
+	</option_data>
+	<option_data id="37787">
+		<!--M. Def. +28-->
+	</option_data>
+	<option_data id="37788">
+		<!--M. Def. +34-->
+	</option_data>
+	<option_data id="37789">
+		<!--M. Def. +40-->
+	</option_data>
+	<option_data id="37790">
+		<!--M. Def. +46-->
+	</option_data>
+	<option_data id="37791">
+		<!--M. Def. +52-->
+	</option_data>
+	<option_data id="37792">
+		<!--M. Def. +58-->
+	</option_data>
+	<option_data id="37793">
+		<!--M. Def. +64-->
+	</option_data>
+	<option_data id="37794">
+		<!--M. Def. +70-->
+	</option_data>
+	<option_data id="37795">
+		<!--M. Def. +76-->
+	</option_data>
+	<option_data id="37796">
+		<!--M. Def. +82-->
+	</option_data>
+	<option_data id="37797">
+		<!--M. Def. +88-->
+	</option_data>
+	<option_data id="37798">
+		<!--M. Def. +94-->
+	</option_data>
+	<option_data id="37799">
+		<!--M. Def. +100-->
+	</option_data>
+</list>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="35400">
+		<!--M. Def. +86-->
+	</option_data>
+	<option_data id="35401">
+		<!--M. Def. +96-->
+	</option_data>
+	<option_data id="35402">
+		<!--M. Def. +8-->
+	</option_data>
+	<option_data id="35403">
+		<!--M. Def. +11-->
+	</option_data>
+	<option_data id="35404">
+		<!--M. Def. +14-->
+	</option_data>
+	<option_data id="35405">
+		<!--M. Def. +17-->
+	</option_data>
+	<option_data id="35406">
+		<!--M. Def. +20-->
+	</option_data>
+	<option_data id="35407">
+		<!--M. Def. +23-->
+	</option_data>
+	<option_data id="35408">
+		<!--M. Def. +26-->
+	</option_data>
+	<option_data id="35409">
+		<!--M. Def. +29-->
+	</option_data>
+	<option_data id="35410">
+		<!--M. Def. +32-->
+	</option_data>
+	<option_data id="35411">
+		<!--M. Def. +35-->
+	</option_data>
+	<option_data id="35412">
+		<!--M. Def. +38-->
+	</option_data>
+	<option_data id="35413">
+		<!--M. Def. +41-->
+	</option_data>
+	<option_data id="35414">
+		<!--M. Def. +44-->
+	</option_data>
+	<option_data id="35415">
+		<!--M. Def. +47-->
+	</option_data>
+	<option_data id="35416">
+		<!--M. Def. +50-->
+	</option_data>
+	<option_data id="35417">
+		<!--M. Def. +60-->
+	</option_data>
+	<option_data id="35418">
+		<!--M. Def. +80-->
+	</option_data>
+	<option_data id="35419">
+		<!--M. Def. +90-->
+	</option_data>
+	<option_data id="35420">
+		<!--M. Def. +100-->
+	</option_data>
+	<option_data id="35421">
+		<!--M. Def. +120-->
+	</option_data>
+	<option_data id="35422">
+		<!--MP +9\nP. Atk. +4%\nM. Atk. +4%\nP. Accuracy +1\nM. Accuracy +1\nInfection Atk. Rate and Resistance +10%-->
+	</option_data>
+	<option_data id="35423">
+		<!--MP +15\nP. Atk. +6%\nM. Atk. +6%\nP. Accuracy +2\nM. Accuracy +2\nInfection Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35424">
+		<!--MP +21\nP. Atk. +7%\nM. Atk. +7%\nP. Def. +35\nM. Def. +35\nP. Critical Damage +10%\nM. Critical Damage +5%\nP. Accuracy +3\nM. Accuracy +3\nInfection Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35425">
+		<!--MP +30\nP. Atk. +9%\nM. Atk. +9%\nP. Def. +65\nM. Def. +65\nAll Critical Damage +10%\nP. Accuracy +4\nM. Accuracy +4\nInfection Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35426">
+		<!--MP +40\nP. Atk. +11%\nM. Atk. +11%\nP. Def. +95\nM. Def. +95\nAll Critical Damage +15%\nP. Accuracy +6\nM. Accuracy +6\nInfection Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35427">
+		<!--MP +50\nP. Atk. +15%\nM. Atk. +15%\nP. Def. +125\nM. Def. +125\nAll Critical Damage +20%\nP. Accuracy +10\nM. Accuracy +10\nInfection Atk. Rate and Resistance +20%\nA chance to apply the Queen Ant Power buff when hit-->
+	</option_data>
+	<option_data id="35428">
+		<!--MP +9\nP. Def. +2%\nM. Def. +2%\nReceived damage -2%\nP. Evasion +1\nM. Evasion +1\nSilence Atk. Rate and Resistance +10%\nFear Atk. Rate and Resistance +10%-->
+	</option_data>
+	<option_data id="35429">
+		<!--MP +15\nP. Def. +4%\nM. Def. +4%\nReceived damage -4%\nP. Evasion +2\nM. Evasion +2\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35430">
+		<!--MP +21\nP. Atk. +20\nM. Atk. +20\nP. Def. +6%\nM. Def. +6%\nReceived damage -6%\nP. Evasion +4\nM. Evasion +4\nSilence Atk. Rate and Resistance +20%\nFear Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35431">
+		<!--MP +30\nP. Atk. +50\nM. Atk. +50\nP. Def. +8%\nM. Def. +8%\nReceived damage -8%\nP. Evasion +6\nM. Evasion +6\nSilence Atk. Rate and Resistance +20%\nFear Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35432">
+		<!--MP +40\nP. Atk. +100\nM. Atk. +100\nP. Def. +10%\nM. Def. +10%\nReceived damage -10%\nP. Evasion +8\nM. Evasion +8\nSilence Atk. Rate and Resistance +20%\nFear Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35433">
+		<!--MP +50\nP. Atk. +200\nM. Atk. +200\nP. Def. +15%\nM. Def. +15%\nReceived damage -15%\nP. Evasion +10\nM. Evasion +10\nSilence Resistance and Atk. Rate +20%\nFear Resistance and Atk. Rate +20%\nA chance to apply the Core Power buff when hit-->
+	</option_data>
+	<option_data id="35434">
+		<!--MP +15\nSkill Power +3%\nAtk. Spd. +3%\nCasting Spd. +3%\nP. Accuracy +2\nM. Accuracy +2\nShock Atk. Rate and Resistance +10%\nInfection Atk. Rate and Resistance +5%-->
+	</option_data>
+	<option_data id="35435">
+		<!--MP +21\nSkill Power +6%\nAtk. Spd. +4%\nCasting Spd. +4%\nP. Accuracy +3\nM. Accuracy +3\nShock Atk. Rate and Resistance +15%\nInfection Atk. Rate and Resistance +10%-->
+	</option_data>
+	<option_data id="35436">
+		<!--MP +27\nP. Def. +35\nM. Def. +35\nSkill Power +10%\nAtk. Spd. +5%\nCasting Spd. +5%\nP. Accuracy +4\nM. Accuracy +4\nP. Critical Damage +15%\nM. Skill Critical Damage +10%\nShock Atk. Rate and Resistance +20%\nInfection Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35437">
+		<!--MP +40\nP. Def. +65\nM. Def. +65\nSkill Power +12%\nAtk. Spd. +7%\nCasting Spd. +7%\nP. Accuracy +6\nM. Accuracy +6\nAll Critical Damage +15%\nShock Atk. Rate and Resistance +20%\nInfection Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35438">
+		<!--MP +55\nP. Def. +95\nM. Def. +95\nSkill Power +15%\nAtk. Spd. +9%\nCasting Spd. +9%\nP. Accuracy +8\nM. Accuracy +8\nAll Critical Damage +18%\nShock Atk. Rate and Resistance +20%\nInfection Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35439">
+		<!--MP +70\nP. Def. +125\nM. Def. +125\nSkill Power +20%\nAtk. Spd. +12%\nCasting Spd. +12%\nP. Accuracy +10\nM. Accuracy +10\nAll Critical Damage +23%\nShock Atk. Rate and Resistance +20%\nInfection Atk. Rate and Resistance +15%\nA chance to apply the Baium Power buff after an attack-->
+	</option_data>
+	<option_data id="35440">
+		<!--MP +19\nMP Consumption -2%\nReceived Healing +2%\nHold Resistance and Atk. Rate +10%\nSilence Resistance and Atk. Rate +5%\nFear Resistance and Atk. Rate +5%-->
+	</option_data>
+	<option_data id="35441">
+		<!--MP +25\nMP Consumption -3%\nReceived Healing +4%\nHold Resistance and Atk. Rate +15%\nSilence Resistance and Atk. Rate +10%\nFear Resistance and Atk. Rate +10%-->
+	</option_data>
+	<option_data id="35442">
+		<!--MP +31\nMP Consumption -5%\nReceived Healing +6%\nA chance to absorb 3% of the inflicted damage as MP\n\nHold Atk. Rate and Resistance +20%\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35443">
+		<!--MP +40\nP. Atk. +50\nM. Atk. +50\nMP Consumption -6%\nReceived Healing +8%\nA chance to absorb 3% of the inflicted damage as MP\nMP Recovery Rate +2\n\nHold Atk. Rate and Resistance +20%\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35444">
+		<!--MP +50\nP. Atk. +100\nM. Atk. +100\nMP Consumption -7%\nReceived Healing +10%\nA chance to absorb 3% of the inflicted damage as MP\nMP Recovery Rate +3\nM. Damage Resistance +3%\n\nHold Atk. Rate and Resistance +20%\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35445">
+		<!--MP +60\nP. Atk. +200\nM. Atk. +200\nMP Consumption -10%\nReceived Healing +15%\nA chance to absorb 3% of the inflicted damage as MP\nMP Recovery Rate +5\nM. Damage Resistance +5%\n\nHold Atk. Rate and Resistance +20%\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%\nA chance to apply the Orfen Power buff after an attack-->
+	</option_data>
+	<option_data id="35446">
+		<!--MP +22\nMP Consumption -2%\nReceived Healing +4%\nHP Recovery Rate +10%\nInfection Atk. Rate and Resistance +10%\nShock Atk. Rate and Resistance +5%\nSilence Atk. Rate and Resistance +5%\nFear Atk. Rate and Resistance +5%-->
+	</option_data>
+	<option_data id="35447">
+		<!--MP +28\nMP Consumption -3%\nReceived Healing +6%\nHP Recovery Rate +15%\nInfection Atk. Rate and Resistance +15%\nShock Atk. Rate and Resistance +10%\nSilence Atk. Rate and Resistance +10%\nFear Atk. Rate and Resistance +10%-->
+	</option_data>
+	<option_data id="35448">
+		<!--MP +34\nMP Consumption -4%\nReceived Healing +10%\nHP Recovery Rate +20%\nA chance to absorb 8% of the inflicted damage as HP\n\nInfection Atk. Rate and Resistance +20%\nShock Atk. Rate and Resistance +15%\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35449">
+		<!--MP +45\nP. Atk. +50\nM. Atk. +50\nP. Def. +150\nM. Def. +150\nMP Consumption -5%\nReceived Healing +12%\nHP Recovery Rate +20%\nA chance to absorb 8% of the inflicted damage as HP\n\nHP Recovery Potions' Effect +50\nInfection Atk. Rate and Resistance +20%\nShock Atk. Rate and Resistance +15%\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35450">
+		<!--MP +60\nP. Atk. +100\nM. Atk. +100\nP. Def. +250\nM. Def. +250\nMP Consumption -6%\nReceived Healing +15%\nHP Recovery Rate +20%\nA chance to absorb 8% of the inflicted damage as HP\n\nHP Recovery Potions' Effect +100\nInfection Atk. Rate and Resistance +20%\nShock Atk. Rate and Resistance +15%\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%-->
+	</option_data>
+	<option_data id="35451">
+		<!--MP +90\nP. Atk. +200\nM. Atk. +200\nP. Def. +350\nM. Def. +350\nMP Consumption -8%\nReceived Healing +20%\nHP Recovery Rate +20%\nA chance to absorb 8% of the inflicted damage as HP\n\nHP Recovery Potions' Effect +200\nInfection Atk. Rate and Resistance +20%\nShock Atk. Rate and Resistance +15%\nSilence Atk. Rate and Resistance +15%\nFear Atk. Rate and Resistance +15%\nA chance to apply the Zaken Power buff after an attack-->
+	</option_data>
+	<option_data id="35452">
+		<!--HP +28\nMP Consumption -3%\nReceived Healing +6%\nA chance to absorb 3% of the inflicted damage as HP\n\nInfection Atk. Rate and Resistance +10%\nShock Atk. Rate and Resistance +5%\nSilence Atk. Rate and Resistance +5%\nFear Atk. Rate and Resistance +5%-->
+	</option_data>
+	<option_data id="35453">
+		<!--MP +34\nMP Consumption -5%\nReceived Healing +10%\nA chance to absorb 4% of the inflicted damage as HP\n\nDamage Reflection Resistance +7%\nCON +1\nInfection Atk. Rate and Resistance +20%\nShock Atk. Rate and Resistance +10%\nSilence Atk. Rate and Resistance +10%\nFear Atk. Rate and Resistance +10%-->
+	</option_data>
+	<option_data id="35454">
+		<!--MP +40\nMP Consumption -6%\nReceived Healing +15%\nA chance to absorb 8% of the inflicted damage as HP\n\nDamage Reflection Resistance +15%\nCON +1\nMEN +1\nInfection Atk. Rate and Resistance +30%\nShock Atk. Rate and Resistance +20%\nSilence Atk. Rate and Resistance +20%\nFear Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35455">
+		<!--MP +50\nP. Atk. +50\nM. Atk. +50\nP. Def. +200\nM. Def. +200\nMP Consumption -7%\nReceived Healing +17%\nA chance to absorb 8% of the inflicted damage as HP\n\nDamage Reflection Resistance +20%\nCON +2\nMEN +1\nInfection Atk. Rate and Resistance +30%\nShock Atk. Rate and Resistance +20%\nSilence Atk. Rate and Resistance +20%\nFear Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35456">
+		<!--MP +70\nP. Atk. +150\nM. Atk. +150\nP. Def. +350\nM. Def. +350\nMP Consumption -8%\nReceived Healing +20%\nA chance to absorb 8% of the inflicted damage as HP\n\nDamage Reflection Resistance +25%\nCON +2\nMEN +2\nInfection Atk. Rate and Resistance +30%\nShock Atk. Rate and Resistance +20%\nSilence Atk. Rate and Resistance +20%\nFear Atk. Rate and Resistance +20%-->
+	</option_data>
+	<option_data id="35457">
+		<!--MP +100\nP. Atk. +300\nM. Atk. +300\nP. Def. +500\nM. Def. +500\nMP Consumption -10%\nReceived Healing +30%\nA chance to absorb 10% of the inflicted damage as HP\n\nDamage Reflection Resistance +30%\nCON +3\nMEN +3\nInfection Atk. Rate and Resistance +30%\nShock Atk. Rate and Resistance +20%\nSilence Atk. Rate and Resistance +20%\nFear Atk. Rate and Resistance +20%\nA chance to apply the Antharas Power buff after an attack-->
+	</option_data>
+	<option_data id="35458">
+		<!--Max MP +22\nSleep Atk. Rate +15%\nSleep Resistance +15%\nHold Atk. Rate +15%\nHold Resistance +15%\nParalysis Atk. Rate +10%\nParalysis Resistance +10%\nHP Recovery Rate +1\nMP Recovery Rate +1\nSoulshot damage +2%\nSpiritshot damage +2%-->
+	</option_data>
+	<option_data id="35459">
+		<!--Max MP +32\nSleep Atk. Rate +20%\nSleep Resistance +20%\nHold Atk. Rate +20%\nHold Resistance +20%\nParalysis Atk. Rate +15%\nParalysis Resistance +15%\nHP Recovery Rate +1\nMP Recovery Rate +1\nSoulshot damage +3%\nSpiritshot damage +3%-->
+	</option_data>
+	<option_data id="35460">
+		<!--MP +50\nSkill Power +15%\nAll Critical Rate +5%\nAll Critical Damage +100\nSkill Cooldown -8%\nDamage Reflection +5%\nSleep Resistance and Atk. Rate +20%-->
+	</option_data>
+	<option_data id="35461">
+		<!--MP +65\nSkill Power +18%\nAll Critical Rate +6%\nAll Critical Damage +150\nSkill Cooldown -10%\nDamage Reflection +6%\nSleep Resistance and Atk. Rate +20%-->
+	</option_data>
+	<option_data id="35462">
+		<!--MP +90\nSkill Power +23%\nAll Critical Rate +7%\nAll Critical Damage +200\nSkill Cooldown -12%\nDamage Reflection +10%\nSleep Resistance and Atk. Rate +20%-->
+	</option_data>
+	<option_data id="35463">
+		<!--MP +120\nSkill Power +25%\nAll Critical Rate +10%\nAll Critical Damage +300\nSkill Cooldown -15%\nDamage Reflection +15%\nSleep Resistance and Atk. Rate +20%\nA chance to apply the Frintezza Power buff when hit-->
+	</option_data>
+	<option_data id="35464">
+		<!--P. Atk. +10-->
+	</option_data>
+	<option_data id="35465">
+		<!--P. Atk. +16-->
+	</option_data>
+	<option_data id="35466">
+		<!--P. Atk. +22-->
+	</option_data>
+	<option_data id="35467">
+		<!--P. Atk. +28-->
+	</option_data>
+	<option_data id="35468">
+		<!--P. Atk. +34-->
+	</option_data>
+	<option_data id="35469">
+		<!--P. Atk. +40-->
+	</option_data>
+	<option_data id="35470">
+		<!--P. Atk. +46-->
+	</option_data>
+	<option_data id="35471">
+		<!--P. Atk. +52-->
+	</option_data>
+	<option_data id="35472">
+		<!--P. Atk. +58-->
+	</option_data>
+	<option_data id="35473">
+		<!--P. Atk. +64-->
+	</option_data>
+	<option_data id="35474">
+		<!--P. Atk. +70-->
+	</option_data>
+	<option_data id="35475">
+		<!--P. Atk. +76-->
+	</option_data>
+	<option_data id="35476">
+		<!--P. Atk. +82-->
+	</option_data>
+	<option_data id="35477">
+		<!--P. Atk. +88-->
+	</option_data>
+	<option_data id="35478">
+		<!--P. Atk. +94-->
+	</option_data>
+	<option_data id="35479">
+		<!--P. Atk. +100-->
+	</option_data>
+	<option_data id="35480">
+		<!--P. Atk. +110-->
+	</option_data>
+	<option_data id="35481">
+		<!--P. Atk. +120-->
+	</option_data>
+	<option_data id="35482">
+		<!--P. Atk. +150-->
+	</option_data>
+	<option_data id="35483">
+		<!--P. Atk. +200-->
+	</option_data>
+	<option_data id="35484">
+		<!--P. Atk. +10-->
+	</option_data>
+	<option_data id="35485">
+		<!--P. Atk. +16-->
+	</option_data>
+	<option_data id="35486">
+		<!--P. Atk. +22-->
+	</option_data>
+	<option_data id="35487">
+		<!--P. Atk. +28-->
+	</option_data>
+	<option_data id="35488">
+		<!--P. Atk. +34-->
+	</option_data>
+	<option_data id="35489">
+		<!--P. Atk. +40-->
+	</option_data>
+	<option_data id="35490">
+		<!--P. Atk. +46-->
+	</option_data>
+	<option_data id="35491">
+		<!--P. Atk. +52-->
+	</option_data>
+	<option_data id="35492">
+		<!--P. Atk. +58-->
+	</option_data>
+	<option_data id="35493">
+		<!--P. Atk. +64-->
+	</option_data>
+	<option_data id="35494">
+		<!--P. Atk. +70-->
+	</option_data>
+	<option_data id="35495">
+		<!--P. Atk. +76-->
+	</option_data>
+	<option_data id="35496">
+		<!--P. Atk. +82-->
+	</option_data>
+	<option_data id="35497">
+		<!--P. Atk. +88-->
+	</option_data>
+	<option_data id="35498">
+		<!--P. Atk. +94-->
+	</option_data>
+	<option_data id="35499">
+		<!--P. Atk. +100-->
+	</option_data>
+</list>

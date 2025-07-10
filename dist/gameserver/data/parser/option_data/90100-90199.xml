@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="90100">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="90101">
+		<!--Max MP +80-->
+	</option_data>
+	<option_data id="90102">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="90103">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="90104">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="90105">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="90106">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="90107">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="90108">
+		<!--P. Evasion +1.1-->
+	</option_data>
+	<option_data id="90109">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="90110">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="90111">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="90112">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="90113">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="90114">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="90115">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="90116">
+		<!--P. Evasion +1.6-->
+	</option_data>
+	<option_data id="90117">
+		<!--P. Evasion +1.8-->
+	</option_data>
+	<option_data id="90118">
+		<!--P. Evasion +2.0-->
+	</option_data>
+	<option_data id="90119">
+		<!--P. Evasion +2.5-->
+	</option_data>
+	<option_data id="90120">
+		<!--P. Evasion +3.0-->
+	</option_data>
+	<option_data id="90121">
+		<!--P. Evasion +3.5-->
+	</option_data>
+	<option_data id="90122">
+		<!--P. Evasion +5.0-->
+	</option_data>
+	<option_data id="90123">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="90124">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="90125">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="90126">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="90127">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="90128">
+		<!--M. Evasion +1.1-->
+	</option_data>
+	<option_data id="90129">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="90130">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="90131">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="90132">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="90133">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="90134">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="90135">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="90136">
+		<!--M. Evasion +1.6-->
+	</option_data>
+	<option_data id="90137">
+		<!--M. Evasion +1.8-->
+	</option_data>
+	<option_data id="90138">
+		<!--M. Evasion +2.0-->
+	</option_data>
+	<option_data id="90139">
+		<!--M. Evasion +2.5-->
+	</option_data>
+	<option_data id="90140">
+		<!--M. Evasion +3.0-->
+	</option_data>
+	<option_data id="90141">
+		<!--M. Evasion +3.5-->
+	</option_data>
+	<option_data id="90142">
+		<!--M. Evasion +5.0-->
+	</option_data>
+	<option_data id="90143">
+		<!--Received P. Skill Critical Damage -10-->
+	</option_data>
+	<option_data id="90144">
+		<!--Received P. Skill Critical Damage -15-->
+	</option_data>
+	<option_data id="90145">
+		<!--Received P. Skill Critical Damage -20-->
+	</option_data>
+	<option_data id="90146">
+		<!--Received P. Skill Critical Damage -25-->
+	</option_data>
+	<option_data id="90147">
+		<!--Received P. Skill Critical Damage -30-->
+	</option_data>
+	<option_data id="90148">
+		<!--Received P. Skill Critical Damage -35-->
+	</option_data>
+	<option_data id="90149">
+		<!--Received P. Skill Critical Damage -40-->
+	</option_data>
+	<option_data id="90150">
+		<!--Received P. Skill Critical Damage -45-->
+	</option_data>
+	<option_data id="90151">
+		<!--Received P. Skill Critical Damage -50-->
+	</option_data>
+	<option_data id="90152">
+		<!--Received P. Skill Critical Damage -60-->
+	</option_data>
+	<option_data id="90153">
+		<!--Received P. Skill Critical Damage -70-->
+	</option_data>
+	<option_data id="90154">
+		<!--Received P. Skill Critical Damage -80-->
+	</option_data>
+	<option_data id="90155">
+		<!--Received P. Skill Critical Damage -90-->
+	</option_data>
+	<option_data id="90156">
+		<!--Received P. Skill Critical Damage -100-->
+	</option_data>
+	<option_data id="90157">
+		<!--Received P. Skill Critical Damage -110-->
+	</option_data>
+	<option_data id="90158">
+		<!--Received P. Skill Critical Damage -120-->
+	</option_data>
+	<option_data id="90159">
+		<!--Received P. Skill Critical Damage -130-->
+	</option_data>
+	<option_data id="90160">
+		<!--Received P. Skill Critical Damage -150-->
+	</option_data>
+	<option_data id="90161">
+		<!--Received P. Skill Critical Damage -200-->
+	</option_data>
+	<option_data id="90162">
+		<!--Received P. Skill Critical Damage -300-->
+	</option_data>
+	<option_data id="90163">
+		<!--Received M. Skill Critical Damage -10-->
+	</option_data>
+	<option_data id="90164">
+		<!--Received M. Skill Critical Damage -15-->
+	</option_data>
+	<option_data id="90165">
+		<!--Received M. Skill Critical Damage -20-->
+	</option_data>
+	<option_data id="90166">
+		<!--Received M. Skill Critical Damage -25-->
+	</option_data>
+	<option_data id="90167">
+		<!--Received M. Skill Critical Damage -30-->
+	</option_data>
+	<option_data id="90168">
+		<!--Received M. Skill Critical Damage -35-->
+	</option_data>
+	<option_data id="90169">
+		<!--Received M. Skill Critical Damage -40-->
+	</option_data>
+	<option_data id="90170">
+		<!--Received M. Skill Critical Damage -45-->
+	</option_data>
+	<option_data id="90171">
+		<!--Received M. Skill Critical Damage -50-->
+	</option_data>
+	<option_data id="90172">
+		<!--Received M. Skill Critical Damage -60-->
+	</option_data>
+	<option_data id="90173">
+		<!--Received M. Skill Critical Damage -70-->
+	</option_data>
+	<option_data id="90174">
+		<!--Received M. Skill Critical Damage -80-->
+	</option_data>
+	<option_data id="90175">
+		<!--Received M. Skill Critical Damage -90-->
+	</option_data>
+	<option_data id="90176">
+		<!--Received M. Skill Critical Damage -100-->
+	</option_data>
+	<option_data id="90177">
+		<!--Received M. Skill Critical Damage -110-->
+	</option_data>
+	<option_data id="90178">
+		<!--Received M. Skill Critical Damage -120-->
+	</option_data>
+	<option_data id="90179">
+		<!--Received M. Skill Critical Damage -130-->
+	</option_data>
+	<option_data id="90180">
+		<!--Received M. Skill Critical Damage -150-->
+	</option_data>
+	<option_data id="90181">
+		<!--Received M. Skill Critical Damage -200-->
+	</option_data>
+	<option_data id="90182">
+		<!--Received M. Skill Critical Damage -300-->
+	</option_data>
+	<option_data id="90183">
+		<!--Received Skill Critical Damage -10-->
+	</option_data>
+	<option_data id="90184">
+		<!--Received Skill Critical Damage -15-->
+	</option_data>
+	<option_data id="90185">
+		<!--Received Skill Critical Damage -20-->
+	</option_data>
+	<option_data id="90186">
+		<!--Received Skill Critical Damage -25-->
+	</option_data>
+	<option_data id="90187">
+		<!--Received Skill Critical Damage -30-->
+	</option_data>
+	<option_data id="90188">
+		<!--Received Skill Critical Damage -35-->
+	</option_data>
+	<option_data id="90189">
+		<!--Received Skill Critical Damage -40-->
+	</option_data>
+	<option_data id="90190">
+		<!--Received Skill Critical Damage -45-->
+	</option_data>
+	<option_data id="90191">
+		<!--Received Skill Critical Damage -50-->
+	</option_data>
+	<option_data id="90192">
+		<!--Received Skill Critical Damage -60-->
+	</option_data>
+	<option_data id="90193">
+		<!--Received Skill Critical Damage -70-->
+	</option_data>
+	<option_data id="90194">
+		<!--Received Skill Critical Damage -80-->
+	</option_data>
+	<option_data id="90195">
+		<!--Received Skill Critical Damage -90-->
+	</option_data>
+	<option_data id="90196">
+		<!--Received Skill Critical Damage -100-->
+	</option_data>
+	<option_data id="90197">
+		<!--Received Skill Critical Damage -110-->
+	</option_data>
+	<option_data id="90198">
+		<!--Received Skill Critical Damage -120-->
+	</option_data>
+	<option_data id="90199">
+		<!--Received Skill Critical Damage -130-->
+	</option_data>
+</list>

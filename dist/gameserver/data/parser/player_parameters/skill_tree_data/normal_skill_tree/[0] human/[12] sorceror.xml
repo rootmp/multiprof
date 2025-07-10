@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="12"><!--Sorcerer-->
+		<skill id="45105" level="3" min_level="40" cost="84000"/><!--Empower-->
+		<skill id="45106" level="2" min_level="40" cost="84000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="84000"/><!--Berserker Spirit-->
+		<skill id="45108" level="2" min_level="40" cost="84000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="84000"/><!--Might-->
+		<skill id="45104" level="3" min_level="40" cost="84000"/><!--Acumen-->
+		<skill id="1230" level="1" min_level="40" cost="84000"><!--Prominence-->
+			<blocked_skills>
+				<skill id="1177"/><!--???-->
+				<skill id="1147"/><!--???-->
+				<skill id="1184"/><!--???-->
+				<skill id="1220"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="1230" level="2" min_level="40" cost="84000"/><!--Prominence-->
+		<skill id="1232" level="1" min_level="40" cost="84000"/><!--Blazing Skin-->
+		<skill id="1047" level="1" min_level="40" cost="84000"/><!--Mana Regeneration-->
+		<skill id="1157" level="2" min_level="40" cost="84000"/><!--Body to Mind-->
+		<skill id="1297" level="1" min_level="40" cost="84000"><!--Clear Mind-->
+			<required_items>
+				<item id="90045" count="3"/><!--Magical Tablet-->
+			</required_items>
+		</skill>
+		<skill id="1164" level="6" min_level="40" cost="84000"/><!--Weakness-->
+		<skill id="45111" level="2" min_level="40" cost="84000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="84000"/><!--Focus-->
+		<skill id="45113" level="3" min_level="40" cost="84000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="84000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="84000"/><!--Shield-->
+		<skill id="1230" level="3" min_level="42" cost="120000"/><!--Prominence-->
+		<skill id="1078" level="3" min_level="44" cost="120000"/><!--Concentration-->
+		<skill id="1230" level="4" min_level="44" cost="120000"/><!--Prominence-->
+		<skill id="1164" level="7" min_level="44" cost="120000"/><!--Weakness-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="1230" level="5" min_level="46" cost="190000"/><!--Prominence-->
+		<skill id="1230" level="6" min_level="48" cost="190000"/><!--Prominence-->
+		<skill id="1232" level="2" min_level="48" cost="190000"/><!--Blazing Skin-->
+		<skill id="1047" level="2" min_level="48" cost="190000"/><!--Mana Regeneration-->
+		<skill id="1297" level="2" min_level="48" cost="190000"/><!--Clear Mind-->
+		<skill id="1164" level="8" min_level="48" cost="190000"/><!--Weakness-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1230" level="7" min_level="50" cost="300000"/><!--Prominence-->
+		<skill id="1073" level="2" min_level="50" cost="300000"/><!--Increased Power of Magic-->
+		<skill id="1405" level="1" min_level="52" cost="300000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="1078" level="4" min_level="52" cost="300000"/><!--Concentration-->
+		<skill id="1230" level="8" min_level="52" cost="300000"/><!--Prominence-->
+		<skill id="1157" level="3" min_level="52" cost="300000"/><!--Body to Mind-->
+		<skill id="1164" level="9" min_level="52" cost="300000"/><!--Weakness-->
+		<skill id="1230" level="9" min_level="54" cost="480000"/><!--Prominence-->
+		<skill id="1230" level="10" min_level="55" cost="480000"/><!--Prominence-->
+		<skill id="1230" level="11" min_level="56" cost="480000"/><!--Prominence-->
+		<skill id="1232" level="3" min_level="56" cost="480000"/><!--Blazing Skin-->
+		<skill id="1297" level="3" min_level="56" cost="480000"/><!--Clear Mind-->
+		<skill id="1164" level="10" min_level="56" cost="480000"/><!--Weakness-->
+		<skill id="1230" level="12" min_level="57" cost="490000"/><!--Prominence-->
+		<skill id="1296" level="1" min_level="58" cost="490000"/><!--Rain of Fire-->
+		<skill id="1230" level="13" min_level="58" cost="490000"/><!--Prominence-->
+		<skill id="1157" level="4" min_level="58" cost="490000"/><!--Body to Mind-->
+		<skill id="1164" level="11" min_level="58" cost="490000"/><!--Weakness-->
+		<skill id="1230" level="14" min_level="59" cost="590000"/><!--Prominence-->
+		<skill id="1078" level="5" min_level="60" cost="590000"/><!--Concentration-->
+		<skill id="1296" level="2" min_level="60" cost="590000"/><!--Rain of Fire-->
+		<skill id="1230" level="15" min_level="60" cost="590000"/><!--Prominence-->
+		<skill id="1047" level="3" min_level="60" cost="590000"/><!--Mana Regeneration-->
+		<skill id="1164" level="12" min_level="60" cost="590000"/><!--Weakness-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="1405" level="2" min_level="61" cost="710000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="1230" level="16" min_level="61" cost="710000"/><!--Prominence-->
+		<skill id="1296" level="3" min_level="62" cost="710000"/><!--Rain of Fire-->
+		<skill id="1230" level="17" min_level="62" cost="710000"/><!--Prominence-->
+		<skill id="1297" level="4" min_level="62" cost="710000"/><!--Clear Mind-->
+		<skill id="1164" level="13" min_level="62" cost="710000"/><!--Weakness-->
+		<skill id="1230" level="18" min_level="63" cost="900000"/><!--Prominence-->
+		<skill id="1296" level="4" min_level="64" cost="900000"/><!--Rain of Fire-->
+		<skill id="1230" level="19" min_level="64" cost="900000"/><!--Prominence-->
+		<skill id="1164" level="14" min_level="64" cost="900000"/><!--Weakness-->
+		<skill id="1230" level="20" min_level="65" cost="1100000"/><!--Prominence-->
+		<skill id="1296" level="5" min_level="66" cost="1100000"/><!--Rain of Fire-->
+		<skill id="1230" level="21" min_level="66" cost="1100000"/><!--Prominence-->
+		<skill id="1157" level="5" min_level="66" cost="1100000"/><!--Body to Mind-->
+		<skill id="1164" level="15" min_level="66" cost="1100000"/><!--Weakness-->
+		<skill id="1230" level="22" min_level="67" cost="1400000"/><!--Prominence-->
+		<skill id="1078" level="6" min_level="68" cost="1400000"/><!--Concentration-->
+		<skill id="1296" level="6" min_level="68" cost="1400000"/><!--Rain of Fire-->
+		<skill id="1230" level="23" min_level="68" cost="1400000"/><!--Prominence-->
+		<skill id="1297" level="5" min_level="68" cost="1400000"/><!--Clear Mind-->
+		<skill id="1164" level="16" min_level="68" cost="1400000"/><!--Weakness-->
+		<skill id="1230" level="24" min_level="69" cost="1700000"/><!--Prominence-->
+		<skill id="1289" level="1" min_level="70" cost="1700000"/><!--Inferno-->
+		<skill id="1296" level="7" min_level="70" cost="1700000"/><!--Rain of Fire-->
+		<skill id="1230" level="25" min_level="70" cost="1700000"/><!--Prominence-->
+		<skill id="1047" level="4" min_level="70" cost="1700000"/><!--Mana Regeneration-->
+		<skill id="1164" level="17" min_level="70" cost="1700000"/><!--Weakness-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="1230" level="26" min_level="71" cost="2100000"/><!--Prominence-->
+		<skill id="1296" level="8" min_level="72" cost="2100000"/><!--Rain of Fire-->
+		<skill id="1230" level="27" min_level="72" cost="2100000"/><!--Prominence-->
+		<skill id="1164" level="18" min_level="72" cost="2100000"/><!--Weakness-->
+		<skill id="1230" level="28" min_level="73" cost="2500000"/><!--Prominence-->
+		<skill id="1296" level="9" min_level="74" cost="2500000"/><!--Rain of Fire-->
+		<skill id="1230" level="29" min_level="74" cost="2500000"/><!--Prominence-->
+		<skill id="1297" level="6" min_level="74" cost="2500000"/><!--Clear Mind-->
+		<skill id="1164" level="19" min_level="74" cost="2500000"/><!--Weakness-->
+		<skill id="1230" level="30" min_level="75" cost="2500000"/><!--Prominence-->
+		<skill id="1263" level="1" min_level="44" cost="120000"/><!--Magic Wound-->
+		<skill id="1263" level="2" min_level="48" cost="190000"/><!--Magic Wound-->
+		<skill id="1263" level="3" min_level="52" cost="300000"/><!--Magic Wound-->
+		<skill id="1263" level="4" min_level="56" cost="480000"/><!--Magic Wound-->
+		<skill id="1263" level="5" min_level="58" cost="490000"/><!--Magic Wound-->
+		<skill id="1263" level="6" min_level="60" cost="590000"/><!--Magic Wound-->
+		<skill id="1263" level="7" min_level="62" cost="710000"/><!--Magic Wound-->
+		<skill id="1263" level="8" min_level="64" cost="900000"/><!--Magic Wound-->
+		<skill id="1263" level="9" min_level="66" cost="1100000"/><!--Magic Wound-->
+		<skill id="1263" level="10" min_level="68" cost="1400000"/><!--Magic Wound-->
+		<skill id="1263" level="11" min_level="70" cost="1700000"/><!--Magic Wound-->
+		<skill id="1263" level="12" min_level="72" cost="2100000"/><!--Magic Wound-->
+		<skill id="1263" level="13" min_level="74" cost="2500000"/><!--Magic Wound-->
+		<skill id="47462" level="1" min_level="40" cost="84000"/><!--Sleep-->
+		<skill id="47462" level="2" min_level="40" cost="84000"/><!--Sleep-->
+		<skill id="47462" level="3" min_level="60" cost="590000"/><!--Sleep-->
+		<skill id="47463" level="1" min_level="40" cost="84000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="2" min_level="50" cost="300000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="3" min_level="60" cost="590000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="4" min_level="70" cost="1700000"/><!--Wizard's Attack Mastery-->
+		<skill id="47464" level="1" min_level="40" cost="84000"><!--Wizard's Armor Mastery-->
+			<blocked_skills>
+				<skill id="234"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47464" level="2" min_level="50" cost="300000"/><!--Wizard's Armor Mastery-->
+		<skill id="47464" level="3" min_level="60" cost="590000"/><!--Wizard's Armor Mastery-->
+		<skill id="47464" level="4" min_level="70" cost="1700000"/><!--Wizard's Armor Mastery-->
+		<skill id="47465" level="1" min_level="40" cost="84000"><!--Wizard's Recovery Mastery-->
+			<blocked_skills>
+				<skill id="164"/><!--???-->
+				<skill id="212"/><!--???-->
+				<skill id="229"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47465" level="2" min_level="50" cost="300000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47465" level="3" min_level="60" cost="590000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47465" level="4" min_level="70" cost="1700000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47466" level="2" min_level="40" cost="84000"/><!--Higher Mana Gain-->
+		<skill id="47466" level="3" min_level="60" cost="590000"/><!--Higher Mana Gain-->
+	</normal_skill_tree>
+</list>

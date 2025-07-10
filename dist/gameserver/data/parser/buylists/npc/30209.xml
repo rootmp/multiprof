@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "buylist.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<npc id="30209">	<!--Colleen (Dye Merchant)-->
+		<buylist id="1" base_markup="20">
+			<item id="4445"/>	<!--Dye of STR <STR +1 CON -3> (1st Class Transfer)-->
+			<item id="4446"/>	<!--Dye of STR <STR +1 DEX -3> (1st Class Transfer)-->
+			<item id="4447"/>	<!--Dye of CON <Con +1 Str -3> (1st Class Transfer)-->
+			<item id="4448"/>	<!--Dye of CON <Con +1 DEX -3> (1st Class Transfer)-->
+			<item id="4449"/>	<!--Dye of DEX <Dex +1 Str -3> (1st Class Transfer)-->
+			<item id="4450"/>	<!--Dye of DEX <Dex +1 CON -3> (1st Class Transfer)-->
+			<item id="4451"/>	<!--Dye of INT <Int +1 Men -3> (1st Class Transfer)-->
+			<item id="4452"/>	<!--Dye of INT <Int +1 Wit -3> (1st Class Transfer)-->
+			<item id="4453"/>	<!--Dye of MEN <Men +1 Int -3> (1st Class Transfer)-->
+			<item id="4454"/>	<!--Dye of MEN <Men +1 Wit -3> (1st Class Transfer)-->
+			<item id="4455"/>	<!--Dye of WIT <Wit +1 Int -3> (1st Class Transfer)-->
+			<item id="4456"/>	<!--Dye of WIT <Wit +1 Men -3> (1st Class Transfer)-->
+			<item id="4457"/>	<!--Dye of STR <STR +1 CON -2> (1st Class Transfer)-->
+			<item id="4458"/>	<!--Dye of STR <STR +1 DEX -2> (1st Class Transfer)-->
+			<item id="4459"/>	<!--Dye of CON <Con +1 Str -2> (1st Class Transfer)-->
+			<item id="4460"/>	<!--Dye of CON <Con +1 DEX -2> (1st Class Transfer)-->
+			<item id="4461"/>	<!--Dye of DEX <Dex +1 Str -2> (1st Class Transfer)-->
+			<item id="4462"/>	<!--Dye of DEX <Dex +1 CON -2> (1st Class Transfer)-->
+			<item id="4463"/>	<!--Dye of INT <Int +1 Men -2> (1st Class Transfer)-->
+			<item id="4464"/>	<!--Dye of INT <Int +1 Wit -2> (1st Class Transfer)-->
+			<item id="4465"/>	<!--Dye of MEN <Men +1 Int -2> (1st Class Transfer)-->
+			<item id="4466"/>	<!--Dye of MEN <Men +1 Wit -2> (1st Class Transfer)-->
+			<item id="4467"/>	<!--Dye of WIT <Wit +1 Int -2> (1st Class Transfer)-->
+			<item id="4468"/>	<!--Dye of WIT <Wit +1 Men -2> (1st Class Transfer)-->
+		</buylist>
+	</npc>
+</list>

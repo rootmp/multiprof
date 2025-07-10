@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="32203" levels="1" name="Limit Barrier">
+		<set name="icon" value="icon.skill11621"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="abnormal_time" value="15"/>
+		<set name="abnormal_type" value="BOSSSHIELD"/>
+		<set name="abnormal_effect" value="ULTIMATE_DEFENCE"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="Invulnerable"/>
+		</for>
+	</skill>
+</list>

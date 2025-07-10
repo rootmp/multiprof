@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="8203" name="Monster Only (Venom Sword) - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="1560"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="8204" name="Monster Only (Follower of Frintezza Calibur)">
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_monster_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1560"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="8222" name="Monster Only (Follower of Frintezza Tran Calibur)">
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_monster_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1560"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<etcitem id="8294" name="Recipe: Steel Sword (100%)">
+		<set name="grind_commission" value="103"/>
+		<set name="grind_point" value="5112"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_blue_i00"/>
+		<set name="price" value="102250"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="8299" name="Recipe: Infernal Master (100%)">
+		<set name="grind_commission" value="3525"/>
+		<set name="grind_point" value="176225"/>
+		<set name="price" value="3524500"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+</list>

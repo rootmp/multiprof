@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--REWORKED: MORSE-->
+<list>
+	<normal_skill_tree class_id="10"><!--Mystic-->
+		<skill id="45240" level="1" min_level="1"/><!--Einhasad's Blessing-->
+		<skill id="244" level="1" min_level="1"/><!--Armor Mastery-->
+		<skill id="249" level="1" min_level="1"/><!--Weapon Mastery-->
+		<skill id="118" level="1" min_level="1"/><!--Magician's Curiosity-->
+		<skill id="1184" level="1" min_level="1"/><!--Ice Bolt-->
+		<skill id="1147" level="1" min_level="1"/><!--Fireball-->
+		<skill id="1216" level="1" min_level="1"/><!--Self Heal-->
+		<skill id="1177" level="1" min_level="1"/><!--Wind Strike-->
+		<skill id="1040" level="1" min_level="2" cost="5"/><!--Shield-->
+		<skill id="1068" level="1" min_level="3" cost="10"/><!--Might-->
+		<skill id="1184" level="2" min_level="4" cost="15"/><!--Ice Bolt-->
+		<skill id="1177" level="2" min_level="4" cost="15"/><!--Wind Strike-->
+		<skill id="1216" level="2" min_level="5" cost="20"/><!--Self Heal-->
+		<skill id="1184" level="3" min_level="7" cost="25"/><!--Ice Bolt-->
+		<skill id="1177" level="3" min_level="7" cost="25"/><!--Wind Strike-->
+		<skill id="1015" level="1" min_level="10" cost="160"/><!--Battle Heal-->
+		<skill id="1147" level="2" min_level="10" cost="160"/><!--Fireball-->
+		<skill id="1164" level="1" min_level="10" cost="160"/><!--Weakness-->
+		<skill id="244" level="2" min_level="11" cost="160"/><!--Armor Mastery-->
+		<skill id="1184" level="4" min_level="11" cost="160"/><!--Ice Bolt-->
+		<skill id="1177" level="4" min_level="11" cost="160"/><!--Wind Strike-->
+		<skill id="1015" level="2" min_level="12" cost="190"/><!--Battle Heal-->
+		<skill id="1015" level="3" min_level="14" cost="190"/><!--Battle Heal-->
+		<skill id="244" level="3" min_level="14" cost="190"/><!--Armor Mastery-->
+		<skill id="249" level="2" min_level="14" cost="190"/><!--Weapon Mastery-->
+		<skill id="1184" level="5" min_level="14" cost="190"/><!--Ice Bolt-->
+		<skill id="1177" level="5" min_level="14" cost="190"/><!--Wind Strike-->
+		<skill id="1147" level="3" min_level="15" cost="250"/><!--Fireball-->
+		<skill id="1216" level="3" min_level="15" cost="250"/><!--Self Heal-->
+	</normal_skill_tree>
+</list>

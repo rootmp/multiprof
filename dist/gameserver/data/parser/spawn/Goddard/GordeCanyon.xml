@@ -1,0 +1,3536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="167253" y="-49264" z="-3584" h="50715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="167611" y="-49405" z="-3568" h="44025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="167594" y="-49701" z="-3568" h="13562" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="167525" y="-49508" z="-3576" h="544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="167317" y="-49101" z="-3576" h="62981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="166932" y="-49667" z="-3560" h="7879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="166971" y="-49684" z="-3560" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="167629" y="-49768" z="-3568" h="14902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="167473" y="-50020" z="-3544" h="39374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="167452" y="-50036" z="-3544" h="6604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="166959" y="-49184" z="-3568" h="42115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="167579" y="-48664" z="-3544" h="42811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="167860" y="-48635" z="-3520" h="56848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="167145" y="-49022" z="-3568" h="4680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="166297" y="-46868" z="-3560" h="54570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="166528" y="-46691" z="-3568" h="43990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="166220" y="-46596" z="-3552" h="65520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="165977" y="-46348" z="-3552" h="18448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="166417" y="-46948" z="-3552" h="47646" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="166292" y="-46642" z="-3560" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="166657" y="-46588" z="-3552" h="40601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="166223" y="-46652" z="-3552" h="11653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="167507" y="-45845" z="-3544" h="38406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="167287" y="-45820" z="-3536" h="1806" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="167370" y="-45897" z="-3552" h="31244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="167191" y="-45803" z="-3536" h="33507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="167087" y="-46096" z="-3552" h="43242" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="167182" y="-46193" z="-3544" h="1167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="167431" y="-45902" z="-3544" h="58872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="167323" y="-46123" z="-3544" h="653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="167065" y="-45702" z="-3528" h="29941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="166801" y="-45943" z="-3544" h="10900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="166831" y="-45893" z="-3544" h="43669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="166417" y="-46308" z="-3552" h="50980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="165937" y="-46828" z="-3552" h="28234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="166497" y="-46388" z="-3544" h="24043" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="168101" y="-49696" z="-3512" h="20379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="167861" y="-49408" z="-3544" h="57139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="167781" y="-49444" z="-3560" h="31986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="168157" y="-49080" z="-3496" h="43466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="168323" y="-49029" z="-3480" h="36953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="166097" y="-46748" z="-3560" h="17169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="166537" y="-46588" z="-3552" h="40553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="166377" y="-46228" z="-3560" h="57424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="166497" y="-46668" z="-3568" h="12263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="169020" y="-52554" z="-3416" h="49284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="169643" y="-52735" z="-3424" h="60050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="169549" y="-52497" z="-3432" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="169343" y="-52579" z="-3416" h="29862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="169646" y="-52384" z="-3448" h="32745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="169081" y="-52381" z="-3416" h="51792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="169216" y="-52542" z="-3416" h="34478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="169215" y="-52321" z="-3416" h="45360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="169506" y="-52756" z="-3432" h="33462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="171241" y="-49323" z="-3536" h="34473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="171305" y="-48713" z="-3536" h="523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="170805" y="-48915" z="-3536" h="49006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="170984" y="-49209" z="-3552" h="8274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="171077" y="-48984" z="-3544" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="171365" y="-49147" z="-3520" h="523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="171485" y="-48928" z="-3520" h="51020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="171189" y="-48989" z="-3544" h="60900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="170898" y="-48928" z="-3544" h="1194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="172092" y="-47345" z="-3512" h="52414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="171717" y="-47599" z="-3520" h="64485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="171628" y="-47279" z="-3528" h="49036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="172059" y="-47701" z="-3520" h="6189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="172016" y="-47466" z="-3512" h="44272" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="171624" y="-47434" z="-3528" h="61568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="171601" y="-47687" z="-3528" h="39681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="171629" y="-47845" z="-3536" h="31021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="171972" y="-47413" z="-3512" h="53593" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="170229" y="-53798" z="-3432" h="54902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="170074" y="-53486" z="-3408" h="41414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="169903" y="-53749" z="-3440" h="17642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="169907" y="-53836" z="-3432" h="8294" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="170043" y="-53988" z="-3432" h="58222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="170135" y="-53974" z="-3432" h="32346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="170079" y="-53972" z="-3432" h="65115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="169831" y="-53836" z="-3432" h="19516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="170203" y="-54017" z="-3448" h="14708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="170074" y="-53897" z="-3432" h="13777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="170118" y="-54151" z="-3464" h="14665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="170331" y="-55299" z="-3480" h="60230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="170264" y="-55027" z="-3480" h="13321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="170598" y="-55160" z="-3496" h="9009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="170556" y="-55454" z="-3512" h="11871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="170676" y="-55334" z="-3512" h="11399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="170696" y="-55265" z="-3504" h="12227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="170626" y="-55125" z="-3488" h="10443" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="170099" y="-55338" z="-3488" h="47230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="170663" y="-55427" z="-3520" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="168683" y="-58166" z="-3840" h="458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="169163" y="-58351" z="-3824" h="53364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="168670" y="-58058" z="-3832" h="39096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="169205" y="-58027" z="-3784" h="53639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="168880" y="-58239" z="-3824" h="11964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="169230" y="-58125" z="-3792" h="25963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="168714" y="-58206" z="-3832" h="23899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="169143" y="-58395" z="-3840" h="40387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="169059" y="-57899" z="-3792" h="63180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="167744" y="-58683" z="-3864" h="45428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="167749" y="-58276" z="-3872" h="39630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="167642" y="-58636" z="-3856" h="58284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="167491" y="-58781" z="-3856" h="51878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="167546" y="-58331" z="-3864" h="17929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="167711" y="-58684" z="-3864" h="51205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="167894" y="-58764" z="-3864" h="1645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="167816" y="-58787" z="-3864" h="55164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="167775" y="-58392" z="-3864" h="1154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="169541" y="-61152" z="-3856" h="39803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="169061" y="-60552" z="-3880" h="32615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="169478" y="-60818" z="-3856" h="39293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="169341" y="-60472" z="-3880" h="48983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="169141" y="-60672" z="-3880" h="54091" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="169560" y="-60571" z="-3872" h="21426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="169577" y="-60726" z="-3872" h="437" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="169684" y="-60582" z="-3864" h="37181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="169287" y="-60483" z="-3880" h="58171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="169140" y="-59637" z="-3864" h="113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="169198" y="-59637" z="-3864" h="32883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="168472" y="-59393" z="-3896" h="62513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="168103" y="-59897" z="-3872" h="11703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="168454" y="-59392" z="-3896" h="33168" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="168408" y="-60043" z="-3880" h="54067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="168310" y="-61035" z="-3896" h="62033" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="167935" y="-61095" z="-3872" h="43622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="168055" y="-61292" z="-3864" h="12065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="168057" y="-61187" z="-3864" h="6011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="168057" y="-61096" z="-3872" h="35750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="168358" y="-60700" z="-3888" h="26124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="168168" y="-60930" z="-3888" h="3217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="168163" y="-60920" z="-3888" h="11030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="168002" y="-61344" z="-3864" h="63256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="168375" y="-59886" z="-3880" h="9645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="168432" y="-59484" z="-3888" h="1436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="168307" y="-59857" z="-3872" h="7097" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="168578" y="-59418" z="-3888" h="57207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="168364" y="-59886" z="-3880" h="42886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="172954" y="-61376" z="-3256" h="36726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="172667" y="-61541" z="-3224" h="47201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="173063" y="-61392" z="-3272" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="175358" y="-55279" z="-3368" h="30731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="175511" y="-55268" z="-3384" h="18938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="175591" y="-55233" z="-3384" h="13632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="175346" y="-55236" z="-3368" h="24125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="175472" y="-55273" z="-3384" h="28760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="175551" y="-55274" z="-3384" h="27415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="175284" y="-55233" z="-3368" h="35100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="175234" y="-55283" z="-3368" h="1660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="175366" y="-55295" z="-3384" h="14268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="173588" y="-62076" z="-3216" h="49284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="172527" y="-61459" z="-3224" h="33242" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="172645" y="-62099" z="-3272" h="113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="173148" y="-61644" z="-3264" h="52426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="172672" y="-61868" z="-3248" h="23623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="173317" y="-62173" z="-3240" h="59177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="173176" y="-62496" z="-3272" h="40283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="173700" y="-62037" z="-3192" h="20466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="172846" y="-61520" z="-3240" h="25302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="173207" y="-62511" z="-3256" h="56796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="173065" y="-61455" z="-3264" h="51459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="173116" y="-61929" z="-3256" h="61797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="172979" y="-62136" z="-3264" h="9691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="173284" y="-61668" z="-3264" h="45661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="173480" y="-61634" z="-3240" h="45428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="172703" y="-62099" z="-3280" h="32883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="177894" y="-62367" z="-3064" h="42859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="176738" y="-61926" z="-3080" h="36642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="177077" y="-62287" z="-3064" h="48502" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="177307" y="-62314" z="-3056" h="22036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="177044" y="-62135" z="-3064" h="49717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="177632" y="-62286" z="-3056" h="45686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="177551" y="-61654" z="-3040" h="38563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="176806" y="-62260" z="-3096" h="31134" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="176706" y="-62040" z="-3088" h="45797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="177069" y="-62298" z="-3064" h="1552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="176616" y="-62034" z="-3072" h="53489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="176584" y="-62245" z="-3088" h="32284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="177543" y="-62721" z="-3064" h="6637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="177134" y="-62572" z="-3080" h="37092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="177246" y="-62294" z="-3064" h="44252" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="177597" y="-61889" z="-3064" h="50713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="176808" y="-62784" z="-3072" h="33203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="176318" y="-62272" z="-3072" h="32346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="176262" y="-62270" z="-3072" h="65115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="177934" y="-58419" z="-3160" h="32697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="177974" y="-58579" z="-3144" h="42382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="178067" y="-58133" z="-3112" h="17193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="176769" y="-57389" z="-3240" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="176820" y="-57361" z="-3240" h="38211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="176941" y="-57680" z="-3216" h="15920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="177096" y="-58121" z="-3200" h="7770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="176631" y="-58145" z="-3168" h="55223" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="177000" y="-58303" z="-3176" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="176784" y="-58157" z="-3192" h="56128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="177261" y="-58056" z="-3216" h="30498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="177197" y="-58073" z="-3216" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="176927" y="-57819" z="-3216" h="63814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="176923" y="-57892" z="-3208" h="22772" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="181682" y="-59562" z="-3056" h="51660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182140" y="-60283" z="-3064" h="38468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="181769" y="-59469" z="-3064" h="46935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="182481" y="-60349" z="-3032" h="60622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182020" y="-59547" z="-3072" h="42683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182531" y="-59337" z="-3104" h="46977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182825" y="-59912" z="-3016" h="27923" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182782" y="-60021" z="-3024" h="13439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182494" y="-59240" z="-3096" h="49965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182640" y="-60098" z="-3024" h="65362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182778" y="-59952" z="-3024" h="7566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182515" y="-59517" z="-3096" h="7357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="183085" y="-59921" z="-3064" h="61849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="182370" y="-59734" z="-3120" h="6469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182604" y="-60121" z="-3032" h="59161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186029" y="-62581" z="-2960" h="24561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="185908" y="-62413" z="-2968" h="50574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186364" y="-63055" z="-2920" h="31706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186171" y="-61524" z="-2952" h="42651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="186312" y="-62415" z="-2944" h="57539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186006" y="-61761" z="-2960" h="7448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186345" y="-61676" z="-2960" h="44472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="185951" y="-63127" z="-2912" h="59526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="185973" y="-63141" z="-2912" h="26757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186299" y="-62548" z="-2936" h="33377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186318" y="-62630" z="-2928" h="28242" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186207" y="-62687" z="-2944" h="32376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186803" y="-62259" z="-2904" h="58592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186335" y="-63088" z="-2920" h="33463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186489" y="-61949" z="-2952" h="46282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186431" y="-62383" z="-2928" h="5457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186317" y="-62380" z="-2944" h="25002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186292" y="-62851" z="-2928" h="44472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186273" y="-62595" z="-2928" h="9464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="190021" y="-63534" z="-2832" h="21626" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189661" y="-63254" z="-2808" h="12564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189781" y="-63214" z="-2816" h="36390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189541" y="-63174" z="-2792" h="21554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="190261" y="-63174" z="-2864" h="27032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189702" y="-63218" z="-2816" h="3124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189606" y="-63118" z="-2808" h="13632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189541" y="-63094" z="-2792" h="13314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="189541" y="-63054" z="-2792" h="17757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="190360" y="-62131" z="-2944" h="18714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="190137" y="-62431" z="-2912" h="4424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="189910" y="-61928" z="-2896" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="189859" y="-61899" z="-2896" h="60045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="190148" y="-62281" z="-2920" h="19488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="190260" y="-61815" z="-2944" h="26514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="190488" y="-62004" z="-2952" h="31384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="190364" y="-62208" z="-2944" h="8697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="190291" y="-62089" z="-2936" h="42795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189985" y="-62039" z="-2912" h="52067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189955" y="-62037" z="-2912" h="15041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189451" y="-59396" z="-2992" h="56099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="189822" y="-59407" z="-3000" h="58088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189519" y="-59321" z="-3000" h="41153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189709" y="-59562" z="-2992" h="4898" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189950" y="-59499" z="-3008" h="50027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189670" y="-59403" z="-3000" h="53008" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189780" y="-59403" z="-3000" h="57365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189890" y="-59502" z="-3008" h="52895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189922" y="-59393" z="-3008" h="34022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189256" y="-57865" z="-2832" h="54378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="188994" y="-58061" z="-2856" h="47230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189210" y="-57641" z="-2832" h="16415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189433" y="-57859" z="-2824" h="49269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="188801" y="-57754" z="-2856" h="23762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="188874" y="-57773" z="-2856" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189330" y="-57951" z="-2824" h="48629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189173" y="-57902" z="-2840" h="2302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189424" y="-57728" z="-2816" h="50128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="188860" y="-58521" z="-2880" h="16358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="188861" y="-58463" z="-2880" h="49128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="188041" y="-56829" z="-3128" h="6267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="187565" y="-56661" z="-3120" h="5734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="187681" y="-57109" z="-3128" h="18460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187687" y="-57148" z="-3128" h="2684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187674" y="-57224" z="-3120" h="28866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="187721" y="-57189" z="-3128" h="7922" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="187795" y="-57134" z="-3136" h="3706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="187524" y="-57124" z="-3120" h="56663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="187521" y="-56629" z="-3120" h="15824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="187281" y="-57109" z="-3136" h="10694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="187681" y="-56669" z="-3112" h="12591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="187281" y="-56869" z="-3160" h="33246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182409" y="-57395" z="-3112" h="1729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182474" y="-57699" z="-3136" h="33801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="183049" y="-57715" z="-3112" h="15352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182677" y="-57809" z="-3136" h="19522" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182557" y="-57838" z="-3128" h="63605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="182397" y="-57533" z="-3120" h="10560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182399" y="-57495" z="-3120" h="4313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182521" y="-58938" z="-3120" h="37019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182808" y="-57755" z="-3128" h="8041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182710" y="-59311" z="-3104" h="34105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182489" y="-57235" z="-3112" h="5383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="187641" y="-56909" z="-3152" h="55711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="178294" y="-58539" z="-3096" h="54489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="178534" y="-58139" z="-3080" h="44731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="178004" y="-58133" z="-3128" h="2805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="178310" y="-58498" z="-3096" h="14879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="178258" y="-57841" z="-3144" h="61648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="178406" y="-58141" z="-3080" h="41218" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="178378" y="-56945" z="-3232" h="42360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="178752" y="-56908" z="-3176" h="54854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="178786" y="-57324" z="-3144" h="46951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="178923" y="-56712" z="-3152" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="178491" y="-57267" z="-3232" h="9048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="179023" y="-56900" z="-3088" h="35742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="178358" y="-57157" z="-3240" h="49387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="178633" y="-57306" z="-3184" h="53530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="178871" y="-56676" z="-3176" h="52171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="176859" y="-56732" z="-3264" h="61130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="177632" y="-55238" z="-3512" h="6549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="177533" y="-55261" z="-3512" h="58887" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="177403" y="-55180" z="-3504" h="33303" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="177257" y="-55240" z="-3504" h="39524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="177353" y="-55201" z="-3504" h="44472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="177456" y="-55138" z="-3536" h="58795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="177449" y="-55261" z="-3512" h="5964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="176466" y="-56561" z="-3240" h="35744" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="176485" y="-56411" z="-3248" h="5765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="176774" y="-56747" z="-3264" h="28826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="176642" y="-56852" z="-3240" h="13235" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="176379" y="-56917" z="-3192" h="28015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="176719" y="-56540" z="-3272" h="6946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="176288" y="-56871" z="-3192" h="60385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="176252" y="-56925" z="-3192" h="4895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="177400" y="-55054" z="-3568" h="36192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="177193" y="-55285" z="-3488" h="17012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="181298" y="-51972" z="-3344" h="26713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="180928" y="-51211" z="-3368" h="29603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="181042" y="-52637" z="-3288" h="9140" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="181546" y="-51870" z="-3320" h="52711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="181404" y="-51624" z="-3360" h="37886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180804" y="-51392" z="-3368" h="41411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180643" y="-52444" z="-3320" h="8714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="180984" y="-51902" z="-3384" h="25002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180826" y="-52355" z="-3328" h="1722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="181486" y="-52081" z="-3336" h="28867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="181386" y="-51644" z="-3360" h="13933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="181184" y="-52627" z="-3288" h="40907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="180833" y="-52485" z="-3312" h="3355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="181259" y="-52106" z="-3336" h="30049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="180741" y="-52467" z="-3328" h="49683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="181283" y="-50780" z="-3296" h="13095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="181180" y="-51250" z="-3336" h="56115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="180890" y="-51118" z="-3368" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="180942" y="-51089" z="-3368" h="38211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="184007" y="-49372" z="-3128" h="16904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="184145" y="-49284" z="-3112" h="8714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="183714" y="-49538" z="-3136" h="61694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182614" y="-49619" z="-3232" h="39771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="183226" y="-49442" z="-3168" h="63308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="183434" y="-49420" z="-3152" h="495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="183968" y="-49758" z="-3144" h="39359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="183698" y="-49710" z="-3144" h="21857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="184153" y="-49612" z="-3120" h="21336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="183644" y="-49817" z="-3168" h="47759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="184111" y="-49861" z="-3144" h="58965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="182891" y="-49432" z="-3224" h="39168" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="183064" y="-49284" z="-3208" h="62162" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182712" y="-49115" z="-3240" h="12115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182583" y="-49105" z="-3232" h="5549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="183491" y="-49418" z="-3152" h="33265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="184038" y="-49844" z="-3152" h="36084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180223" y="-47198" z="-3272" h="24231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="180042" y="-47162" z="-3296" h="16441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="179796" y="-47584" z="-3304" h="35409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="179465" y="-47570" z="-3304" h="40635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182780" y="-48975" z="-3240" h="31641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="183480" y="-48033" z="-3144" h="62172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="183815" y="-48579" z="-3112" h="30696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="183874" y="-48193" z="-3112" h="40750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="183959" y="-48195" z="-3104" h="23359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="183688" y="-48380" z="-3120" h="24794" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="183616" y="-47952" z="-3120" h="52740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="183598" y="-48168" z="-3128" h="4947" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="183867" y="-48505" z="-3112" h="19463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="183788" y="-47878" z="-3112" h="23924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182852" y="-49184" z="-3240" h="11175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182683" y="-48949" z="-3240" h="42175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="185989" y="-51357" z="-2992" h="63584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186279" y="-51139" z="-2992" h="39942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186317" y="-51437" z="-2984" h="20802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186229" y="-51285" z="-2992" h="14324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186068" y="-51219" z="-2992" h="38377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="184726" y="-50713" z="-3056" h="33814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186087" y="-51278" z="-2992" h="12519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="184966" y="-50233" z="-3096" h="30542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186523" y="-50971" z="-3024" h="47538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186196" y="-51172" z="-2992" h="39725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="185953" y="-51184" z="-3008" h="57992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="184789" y="-50626" z="-3088" h="26755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="185033" y="-50850" z="-3016" h="25872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="184825" y="-50268" z="-3104" h="58039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="184998" y="-50512" z="-3088" h="28355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="184687" y="-50506" z="-3096" h="8215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="184890" y="-50258" z="-3096" h="45599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="184830" y="-50589" z="-3088" h="16387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="187516" y="-51532" z="-3024" h="43830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187564" y="-51398" z="-3008" h="7709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="187627" y="-51236" z="-3008" h="13193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="187386" y="-51471" z="-3016" h="38230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187890" y="-51289" z="-2960" h="15459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="187604" y="-51383" z="-3008" h="33232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="187544" y="-51408" z="-3008" h="2025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="187872" y="-51311" z="-2960" h="44070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="187614" y="-51192" z="-3000" h="57756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="187871" y="-49837" z="-2992" h="44531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="187691" y="-49412" z="-3000" h="12519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="187539" y="-49482" z="-2984" h="20833" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187483" y="-49510" z="-2968" h="16847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="187303" y="-49797" z="-2984" h="63407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="187916" y="-49391" z="-2976" h="52701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="187823" y="-50111" z="-3032" h="16358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="187824" y="-50053" z="-3032" h="49128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187496" y="-49900" z="-2984" h="35783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="187673" y="-49692" z="-2992" h="2934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="187496" y="-49241" z="-2928" h="1405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="187554" y="-49818" z="-2992" h="46123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="187589" y="-49268" z="-2936" h="41539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187793" y="-50496" z="-3032" h="42258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187578" y="-49239" z="-2936" h="22866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="187642" y="-49207" z="-2936" h="36319" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="188233" y="-50843" z="-2944" h="32266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="188177" y="-50841" z="-2944" h="65036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="188166" y="-49045" z="-2976" h="31226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="188231" y="-50385" z="-3000" h="8426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="188370" y="-49891" z="-2992" h="45783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="192439" y="-51252" z="-2944" h="10835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="192226" y="-51424" z="-2968" h="13048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="192545" y="-51114" z="-2936" h="34763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="192649" y="-51525" z="-2976" h="60166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191222" y="-50271" z="-2944" h="47582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191342" y="-50671" z="-2936" h="36022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191022" y="-50871" z="-2928" h="16698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191142" y="-50991" z="-2912" h="22593" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191217" y="-50667" z="-2944" h="49144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191582" y="-50551" z="-2896" h="16260" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191272" y="-50636" z="-2936" h="54603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="190939" y="-50684" z="-2944" h="50035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191182" y="-50311" z="-2952" h="32289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="192369" y="-51099" z="-2936" h="53375" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="192057" y="-49000" z="-3032" h="33463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191939" y="-49523" z="-3040" h="24145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192033" y="-49462" z="-3040" h="52024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191913" y="-49242" z="-3040" h="53958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191686" y="-49343" z="-3008" h="5875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192038" y="-49040" z="-3040" h="26979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="192470" y="-49275" z="-3032" h="63749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192213" y="-49200" z="-3040" h="58084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192021" y="-49015" z="-3032" h="2679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191982" y="-49124" z="-3024" h="35288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="192511" y="-49283" z="-3016" h="30980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191502" y="-50391" z="-2904" h="49933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192732" y="-51525" z="-2976" h="57056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192623" y="-51346" z="-2952" h="14150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192473" y="-51263" z="-2944" h="25278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="194405" y="-49469" z="-2824" h="40227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192768" y="-51212" z="-2936" h="37193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="194028" y="-48927" z="-2936" h="10089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="194237" y="-49160" z="-2856" h="651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="193438" y="-50184" z="-2872" h="60035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="193653" y="-49994" z="-2872" h="46063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="193081" y="-50065" z="-2888" h="10385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="193595" y="-49854" z="-2872" h="1221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="193298" y="-50052" z="-2888" h="41564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193477" y="-50043" z="-2872" h="39578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="193122" y="-49970" z="-2896" h="55712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193263" y="-49870" z="-2896" h="32246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="193320" y="-49917" z="-2880" h="28339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="194267" y="-48831" z="-2896" h="54263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="194390" y="-48966" z="-2848" h="51899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="194415" y="-49069" z="-2840" h="9897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="194490" y="-49368" z="-2832" h="19879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="194034" y="-49140" z="-2920" h="4240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193541" y="-47074" z="-2944" h="16904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193442" y="-48486" z="-2992" h="23972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193286" y="-48383" z="-3000" h="56335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193683" y="-47083" z="-2952" h="29876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="194179" y="-49045" z="-2856" h="55728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="194086" y="-47086" z="-2928" h="16731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="193909" y="-47103" z="-2944" h="16152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="193779" y="-46936" z="-2944" h="19135" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="193848" y="-47059" z="-2944" h="17777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="193877" y="-46986" z="-2944" h="17659" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="193734" y="-47060" z="-2952" h="20225" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="193151" y="-48103" z="-3016" h="55710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="193012" y="-48238" z="-3032" h="50210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="193395" y="-48550" z="-3008" h="31685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="193298" y="-48141" z="-3000" h="46458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="193218" y="-48460" z="-3016" h="17020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="193041" y="-48526" z="-3024" h="29335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="193133" y="-48442" z="-3024" h="48918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191302" y="-50271" z="-2936" h="47739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191142" y="-50431" z="-2952" h="18568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="193616" y="-47024" z="-2944" h="25188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191102" y="-50951" z="-2912" h="20000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="190961" y="-43491" z="-2784" h="34916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="190838" y="-43711" z="-2776" h="45962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191079" y="-43971" z="-2744" h="13481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191020" y="-43541" z="-2760" h="33341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="190471" y="-43679" z="-2768" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="190916" y="-43805" z="-2752" h="28161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="190711" y="-43572" z="-2800" h="41295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="190672" y="-43679" z="-2776" h="57354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="190488" y="-43821" z="-2752" h="28164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191908" y="-42483" z="-2904" h="14418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191948" y="-42563" z="-2880" h="7129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="192235" y="-41552" z="-3016" h="7967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191395" y="-42406" z="-2832" h="42453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191371" y="-42391" z="-2832" h="48805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191908" y="-42763" z="-2832" h="36579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191988" y="-42683" z="-2848" h="15442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191947" y="-42703" z="-2848" h="51009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191948" y="-42803" z="-2832" h="26862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="190756" y="-42201" z="-2808" h="19734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191988" y="-42483" z="-2904" h="13661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="190592" y="-41654" z="-2864" h="37991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="192297" y="-41748" z="-3024" h="38614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191025" y="-41851" z="-2832" h="59525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="190553" y="-41657" z="-2864" h="7598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="190723" y="-41781" z="-2840" h="18139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="190726" y="-42051" z="-2816" h="11184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="190587" y="-41676" z="-2864" h="2917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="190724" y="-42028" z="-2816" h="1559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="192445" y="-41967" z="-3000" h="881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192577" y="-41438" z="-3040" h="35085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="191877" y="-40966" z="-2880" h="38760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="191856" y="-40980" z="-2888" h="5991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192362" y="-41705" z="-3024" h="51704" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192621" y="-41448" z="-3040" h="38902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192703" y="-41710" z="-3048" h="262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="192839" y="-41680" z="-3032" h="46224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="192431" y="-41522" z="-3048" h="5696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191428" y="-42603" z="-2832" h="46711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191628" y="-42243" z="-2872" h="35352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191077" y="-40913" z="-2960" h="19162" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191609" y="-40795" z="-2952" h="43646" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191118" y="-40496" z="-3016" h="49763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191500" y="-40753" z="-2952" h="23963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191193" y="-40700" z="-3000" h="26205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191571" y="-40885" z="-2952" h="20937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191490" y="-40444" z="-3008" h="60003" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191662" y="-40772" z="-2952" h="59174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191320" y="-40330" z="-3024" h="4641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191868" y="-42403" z="-2880" h="40389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="190445" y="-42200" z="-2808" h="38742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191748" y="-42523" z="-2872" h="60461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191628" y="-42443" z="-2864" h="10849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186723" y="-45015" z="-3136" h="36191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="187009" y="-45260" z="-3136" h="30326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="186925" y="-45060" z="-3112" h="1307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186885" y="-44993" z="-3112" h="17879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186689" y="-44915" z="-3136" h="35250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186794" y="-45593" z="-3136" h="47445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186593" y="-45022" z="-3144" h="36802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186715" y="-45031" z="-3136" h="57013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186709" y="-45435" z="-3144" h="17691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186364" y="-43791" z="-3160" h="18100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186261" y="-43656" z="-3184" h="31201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="186561" y="-43826" z="-3152" h="7910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186610" y="-43545" z="-3192" h="36592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186706" y="-43725" z="-3160" h="16746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191908" y="-42803" z="-2832" h="40207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191628" y="-42643" z="-2840" h="24248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="186162" y="-43170" z="-3176" h="38760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="186141" y="-43184" z="-3176" h="5991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186151" y="-43232" z="-3176" h="38182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="185813" y="-43246" z="-3200" h="51991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="185868" y="-43328" z="-3216" h="64131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="186122" y="-43096" z="-3160" h="59633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="185756" y="-44281" z="-3184" h="63019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="185624" y="-43502" z="-3216" h="14122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186530" y="-43499" z="-3200" h="49557" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="185534" y="-43405" z="-3208" h="39759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="186008" y="-42983" z="-3168" h="4475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="185689" y="-43144" z="-3200" h="23268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="186158" y="-42938" z="-3152" h="62044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="185939" y="-42939" z="-3176" h="11083" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191419" y="-42441" z="-2832" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191384" y="-42454" z="-2832" h="25019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="192028" y="-42643" z="-2880" h="2498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191468" y="-42883" z="-2792" h="49081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191668" y="-42643" z="-2840" h="12160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191668" y="-42243" z="-2872" h="10601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="190902" y="-50431" z="-2944" h="20695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191192" y="-50826" z="-2920" h="54603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191218" y="-50828" z="-2920" h="49144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191177" y="-50895" z="-2920" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="190989" y="-50544" z="-2952" h="17025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191545" y="-50631" z="-2896" h="26158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191154" y="-50903" z="-2920" h="4757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191142" y="-50406" z="-2952" h="29137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191062" y="-50511" z="-2952" h="64836" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191302" y="-50871" z="-2912" h="57829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191262" y="-50951" z="-2912" h="63726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191022" y="-51031" z="-2912" h="45693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191062" y="-50471" z="-2952" h="11828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="176382" y="-51132" z="-3416" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="176433" y="-51104" z="-3400" h="38211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="177528" y="-45438" z="-3408" h="42151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="177495" y="-45342" z="-3408" h="46206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="177774" y="-45239" z="-3416" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="177613" y="-45094" z="-3408" h="64402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="177665" y="-45173" z="-3408" h="45296" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="177360" y="-45244" z="-3400" h="13940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="177654" y="-45461" z="-3376" h="22758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="178379" y="-45706" z="-3440" h="28349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="178463" y="-45406" z="-3400" h="22424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="178215" y="-45981" z="-3448" h="31025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="179954" y="-46962" z="-3320" h="14970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="180015" y="-46373" z="-3320" h="45720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="179548" y="-46941" z="-3344" h="13688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="179742" y="-46552" z="-3328" h="25269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="179993" y="-46554" z="-3336" h="16358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="179994" y="-46496" z="-3336" h="49128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="178335" y="-46046" z="-3456" h="12641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="178683" y="-45653" z="-3432" h="63598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="178260" y="-46007" z="-3448" h="24239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="178480" y="-46054" z="-3464" h="57510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="178079" y="-45981" z="-3440" h="23354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="179374" y="-46517" z="-3352" h="16876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="180112" y="-46244" z="-3320" h="36239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="179660" y="-46453" z="-3328" h="47042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="179575" y="-46287" z="-3352" h="63155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="180242" y="-46570" z="-3312" h="7065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="180199" y="-46765" z="-3320" h="24152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="179356" y="-46874" z="-3344" h="18833" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="179827" y="-46166" z="-3312" h="20895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="179890" y="-46475" z="-3328" h="10835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="178092" y="-44997" z="-3392" h="21988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="177305" y="-45158" z="-3416" h="39852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="177696" y="-44940" z="-3400" h="55599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="175582" y="-41686" z="-3312" h="48069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="175624" y="-43030" z="-3360" h="39698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="175915" y="-41775" z="-3288" h="13449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="175597" y="-41910" z="-3312" h="34862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="175760" y="-41651" z="-3304" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="175812" y="-41622" z="-3304" h="38211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="175411" y="-41835" z="-3312" h="18827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="175989" y="-42673" z="-3328" h="24277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="175212" y="-41651" z="-3312" h="907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="175265" y="-42661" z="-3360" h="37938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="175315" y="-42554" z="-3368" h="62770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="176015" y="-42309" z="-3304" h="38406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="175126" y="-42180" z="-3344" h="63256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="175931" y="-41789" z="-3288" h="9671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="175587" y="-42685" z="-3368" h="8829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="175918" y="-42015" z="-3296" h="2326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="175324" y="-42138" z="-3328" h="13481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="175315" y="-42647" z="-3360" h="26922" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="175468" y="-41503" z="-3312" h="36091" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="179891" y="-41305" z="-3200" h="36867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="179839" y="-40946" z="-3168" h="22040" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="179893" y="-41156" z="-3200" h="7" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="180276" y="-41300" z="-3200" h="61682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="180051" y="-41912" z="-3232" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="179871" y="-41261" z="-3200" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="180000" y="-41883" z="-3232" h="60045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="179820" y="-41232" z="-3208" h="60045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180039" y="-41400" z="-3200" h="4017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180189" y="-41584" z="-3200" h="262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="180549" y="-41213" z="-3200" h="1875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="180816" y="-41278" z="-3192" h="1282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="180313" y="-41812" z="-3208" h="61978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="180706" y="-41616" z="-3208" h="33913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="180641" y="-41251" z="-3192" h="17250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="180327" y="-41432" z="-3200" h="18250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="176461" y="-39066" z="-3368" h="26228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="176676" y="-39078" z="-3336" h="35933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="176541" y="-39164" z="-3352" h="1415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="176841" y="-38674" z="-3360" h="40517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="176733" y="-38776" z="-3368" h="18352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="176999" y="-39009" z="-3336" h="44538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="176627" y="-39250" z="-3352" h="883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="176508" y="-38800" z="-3384" h="21192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="179827" y="-40470" z="-3200" h="14052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="179774" y="-39492" z="-3192" h="49937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="179766" y="-39065" z="-3176" h="43698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="179626" y="-39390" z="-3192" h="8036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="180102" y="-41106" z="-3200" h="27815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180095" y="-39437" z="-3184" h="9671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="180219" y="-39037" z="-3120" h="64007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="179837" y="-39372" z="-3184" h="24087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="179589" y="-39428" z="-3200" h="55091" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="180190" y="-39043" z="-3152" h="46058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="180138" y="-39370" z="-3176" h="42719" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="180851" y="-40989" z="-3192" h="48513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180857" y="-40965" z="-3192" h="27004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="180402" y="-40995" z="-3224" h="61405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="176811" y="-38652" z="-3376" h="8641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="176335" y="-37883" z="-3416" h="8886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="176610" y="-37251" z="-3360" h="28895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="176380" y="-37031" z="-3352" h="27427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="175965" y="-36850" z="-3384" h="15383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="176177" y="-37885" z="-3408" h="54849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="176091" y="-37509" z="-3384" h="4223" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="176295" y="-36818" z="-3360" h="9833" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="176316" y="-37634" z="-3392" h="5959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="176738" y="-37375" z="-3360" h="48470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="176882" y="-37854" z="-3360" h="18106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="176317" y="-38691" z="-3408" h="59526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="176339" y="-38705" z="-3408" h="26757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="176459" y="-36491" z="-3352" h="15042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="176738" y="-36510" z="-3360" h="525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="176531" y="-36519" z="-3352" h="4017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="176959" y="-36649" z="-3352" h="27815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="177185" y="-37025" z="-3336" h="20848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="181492" y="-36550" z="-3120" h="23146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="181482" y="-36487" z="-3120" h="54263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="181503" y="-36604" z="-3120" h="35864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="181648" y="-36263" z="-3128" h="56429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="181767" y="-36301" z="-3144" h="30423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="181385" y="-36462" z="-3120" h="23026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="181590" y="-36781" z="-3080" h="41329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="181437" y="-36711" z="-3112" h="10261" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="181352" y="-36746" z="-3056" h="29343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="183370" y="-37650" z="-3008" h="25558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="183888" y="-37800" z="-3056" h="24138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="183728" y="-37920" z="-3056" h="37228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="183888" y="-37320" z="-3064" h="26570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="183928" y="-37680" z="-3048" h="10958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="183648" y="-37240" z="-3080" h="50970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182851" y="-37227" z="-3024" h="38555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="183817" y="-37429" z="-3064" h="63579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="183969" y="-37538" z="-3064" h="28856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="183872" y="-37613" z="-3048" h="14508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182827" y="-37242" z="-3024" h="29885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182724" y="-37328" z="-3008" h="43864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="182682" y="-37321" z="-3008" h="3904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182295" y="-37469" z="-3016" h="17329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182578" y="-37192" z="-3024" h="63066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182195" y="-37194" z="-3000" h="31727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182389" y="-37468" z="-3016" h="61896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182289" y="-37303" z="-3008" h="31023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182596" y="-35878" z="-3168" h="13048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="182459" y="-35944" z="-3160" h="63756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182404" y="-35604" z="-3136" h="62636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182579" y="-36004" z="-3152" h="1052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182337" y="-35538" z="-3128" h="57579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="182348" y="-36198" z="-3128" h="20433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="182241" y="-35763" z="-3128" h="16731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="182192" y="-35904" z="-3160" h="5357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="182519" y="-36193" z="-3128" h="63151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="183160" y="-36497" z="-3184" h="17917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="183500" y="-36191" z="-3152" h="65420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="183280" y="-36277" z="-3192" h="7817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="183376" y="-36732" z="-3144" h="7565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="183568" y="-36266" z="-3144" h="48447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="183213" y="-36604" z="-3152" h="34692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="183368" y="-36380" z="-3176" h="7193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="183691" y="-36347" z="-3120" h="55523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="183230" y="-36159" z="-3192" h="55444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="183144" y="-36297" z="-3184" h="495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="183201" y="-36295" z="-3192" h="33265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="188536" y="-36932" z="-3112" h="38591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="188062" y="-37123" z="-3080" h="11449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="188122" y="-36961" z="-3104" h="18938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="188298" y="-37096" z="-3112" h="51018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="188287" y="-37163" z="-3088" h="57437" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="188431" y="-36731" z="-3096" h="44019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="188430" y="-36893" z="-3112" h="58499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="188171" y="-36759" z="-3112" h="10106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="188528" y="-36760" z="-3104" h="59524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189470" y="-37850" z="-3120" h="45563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189562" y="-38009" z="-3104" h="65289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189508" y="-37513" z="-3112" h="53375" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189893" y="-37504" z="-3080" h="12973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189751" y="-37529" z="-3112" h="7815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189958" y="-37691" z="-3120" h="60370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189658" y="-37965" z="-3128" h="31464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="189552" y="-37327" z="-3056" h="26298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189563" y="-37459" z="-3104" h="50363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="188853" y="-36392" z="-3048" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189963" y="-35483" z="-2888" h="31637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="190172" y="-35281" z="-2912" h="2470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="190227" y="-35420" z="-2912" h="7829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189679" y="-35270" z="-2904" h="7914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189967" y="-35594" z="-2872" h="24141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="190022" y="-35476" z="-2888" h="40331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="190009" y="-35530" z="-2888" h="6392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="189853" y="-35433" z="-2896" h="2024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="189913" y="-35633" z="-2872" h="43009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="188885" y="-36420" z="-3048" h="7594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="188756" y="-36182" z="-3048" h="3466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189156" y="-35998" z="-2976" h="45994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="188613" y="-36032" z="-3056" h="27858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="189134" y="-35846" z="-2976" h="39698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="188937" y="-36125" z="-3008" h="25049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="188928" y="-36038" z="-2992" h="20288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="189047" y="-35883" z="-2992" h="31050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="192649" y="-37049" z="-3008" h="14461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="190917" y="-37685" z="-3032" h="7087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="192143" y="-37104" z="-2952" h="6005" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="190912" y="-37143" z="-2904" h="21817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22444" /> <!-- Bandersnatch -->
+		<point x="190883" y="-37092" z="-2904" h="54586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191524" y="-37907" z="-3008" h="29479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191316" y="-37998" z="-3016" h="61600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191371" y="-38081" z="-3016" h="4200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191281" y="-37658" z="-2984" h="46853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="191596" y="-37698" z="-2984" h="32764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191160" y="-37577" z="-2992" h="16470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191137" y="-37924" z="-3048" h="44715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191373" y="-38026" z="-3016" h="48096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192231" y="-36888" z="-2952" h="63958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="192300" y="-37118" z="-2968" h="64655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192361" y="-37082" z="-2968" h="61622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192291" y="-37037" z="-2968" h="35083" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="192260" y="-37283" z="-2976" h="45184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="192520" y="-36988" z="-2984" h="7391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192327" y="-37175" z="-2976" h="11978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="190815" y="-36435" z="-2856" h="28241" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="191013" y="-35987" z="-2904" h="38400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="190874" y="-36429" z="-2856" h="18004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191269" y="-36476" z="-2888" h="31817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="190677" y="-36406" z="-2856" h="13724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="191043" y="-36477" z="-2864" h="56716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="191005" y="-35984" z="-2904" h="63573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="190753" y="-36518" z="-2848" h="7617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="191238" y="-36302" z="-2904" h="4952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="193684" y="-37212" z="-2928" h="65263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193851" y="-36900" z="-2896" h="9277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="193588" y="-36815" z="-2904" h="4839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="193702" y="-36806" z="-2896" h="58088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="193797" y="-37204" z="-2928" h="2204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="193864" y="-37195" z="-2928" h="19877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="193976" y="-36928" z="-2896" h="48679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192989" y="-36242" z="-2896" h="3554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="193094" y="-36032" z="-2864" h="47073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22443" /> <!-- Eye of Watchman -->
+		<point x="192869" y="-35802" z="-2880" h="35950" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192669" y="-36162" z="-2872" h="22285" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22439" /> <!-- Gorde Warrior -->
+		<point x="192789" y="-35731" z="-2880" h="14046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193097" y="-36262" z="-2872" h="25786" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22440" /> <!-- Gorde Soldier	-->
+		<point x="192664" y="-35953" z="-2880" h="16469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="192738" y="-36081" z="-2872" h="59596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="193057" y="-36329" z="-2872" h="63249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="194044" y="-36988" z="-2896" h="30486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="194133" y="-36849" z="-2880" h="21353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22441" /> <!-- Gorde Hunter -->
+		<point x="175878" y="-37622" z="-3384" h="58643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22442" /> <!-- Gorde Wizard -->
+		<point x="176154" y="-37223" z="-3360" h="18213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="172661" y="-48931" z="-3472" h="17166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="172546" y="-48631" z="-3448" h="10630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="172106" y="-48876" z="-3512" h="5270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="172364" y="-49069" z="-3512" h="34511" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="172340" y="-48582" z="-3464" h="63360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="172533" y="-49110" z="-3504" h="54785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="172057" y="-48754" z="-3488" h="10908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="172096" y="-48997" z="-3536" h="64497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22445" /> <!-- Morgos' Canyon Hunter -->
+		<point x="172375" y="-47671" z="-3480" h="32346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="173787" y="-48110" z="-3408" h="41218" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="173205" y="-48085" z="-3384" h="38842" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="173584" y="-47841" z="-3384" h="17777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="173342" y="-47855" z="-3352" h="32188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="173314" y="-48055" z="-3384" h="3742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="173392" y="-48071" z="-3384" h="45521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="173616" y="-48331" z="-3392" h="13100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="173424" y="-48247" z="-3392" h="56829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="173396" y="-47892" z="-3368" h="61014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22438" /> <!-- Antelope -->
+		<point x="172319" y="-47669" z="-3480" h="65115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="172432" y="-49016" z="-3488" h="45645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="172706" y="-50064" z="-3488" h="10311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="172390" y="-50321" z="-3480" h="18" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="172536" y="-49855" z="-3528" h="52366" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="172578" y="-50310" z="-3432" h="10250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="172399" y="-50419" z="-3464" h="7945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="172214" y="-50172" z="-3520" h="59840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="172380" y="-49948" z="-3528" h="37190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="172363" y="-50544" z="-3440" h="11039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="172228" y="-50314" z="-3472" h="18711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="166217" y="-46668" z="-3552" h="39089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22435" /> <!-- Gorde Bandersnatch -->
+		<point x="166657" y="-46468" z="-3552" h="43639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="166284" y="-46424" z="-3544" h="54603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="166057" y="-46828" z="-3560" h="7102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="166486" y="-46609" z="-3568" h="27653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="166577" y="-46788" z="-3568" h="33582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22433" /> <!-- Gorde Grendel -->
+		<point x="166046" y="-46892" z="-3560" h="52109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22436" /> <!-- Gorde Buffalo -->
+		<point x="166356" y="-46879" z="-3560" h="36468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22437" /> <!-- Eye of Restrainer -->
+		<point x="166057" y="-46268" z="-3560" h="61691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22434" /> <!-- Gorde Antelope -->
+		<point x="166097" y="-46708" z="-3552" h="44387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34321" /> <!-- Crigon -->
+		<point x="164383" y="-47810" z="-3520" h="48286" />
+	</spawn>
+</list>

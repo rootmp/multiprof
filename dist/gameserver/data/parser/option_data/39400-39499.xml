@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="39400">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50532" level="1"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39401">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50532" level="2"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39402">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50532" level="3"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39403">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50532" level="4"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39404">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50532" level="5"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39405">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50532" level="6"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39406">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50532" level="7"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39407">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50532" level="8"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39408">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50532" level="9"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39409">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50532" level="10"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39410">
+		<!--A two-handed sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +7\nDEX +7-->
+		<skills>
+			<skill id="50532" level="11"/>	<!-- Frost Lord's Two-handed Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39411">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nMEN +1-->
+		<skills>
+			<skill id="50533" level="1"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39412">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nMEN +1-->
+		<skills>
+			<skill id="50533" level="2"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39413">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nMEN +1-->
+		<skills>
+			<skill id="50533" level="3"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39414">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nMEN +1-->
+		<skills>
+			<skill id="50533" level="4"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39415">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nMEN +1-->
+		<skills>
+			<skill id="50533" level="5"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39416">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +2\nMEN +2-->
+		<skills>
+			<skill id="50533" level="6"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39417">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +3\nMEN +3-->
+		<skills>
+			<skill id="50533" level="7"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39418">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +4\nMEN +4-->
+		<skills>
+			<skill id="50533" level="8"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39419">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +5\nMEN +5-->
+		<skills>
+			<skill id="50533" level="9"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39420">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +6\nMEN +6-->
+		<skills>
+			<skill id="50533" level="10"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39421">
+		<!--A staff imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +7\nMEN +7-->
+		<skills>
+			<skill id="50533" level="11"/>	<!-- Frost Lord's Staff -->
+		</skills>
+	</option_data>
+	<option_data id="39422">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50534" level="1"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39423">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50534" level="2"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39424">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50534" level="3"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39425">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50534" level="4"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39426">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50534" level="5"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39427">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50534" level="6"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39428">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50534" level="7"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39429">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50534" level="8"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39430">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50534" level="9"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39431">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50534" level="10"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39432">
+		<!--Dual swords imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +7\nDEX +7-->
+		<skills>
+			<skill id="50534" level="11"/>	<!-- Frost Lord's Dual Swords -->
+		</skills>
+	</option_data>
+	<option_data id="39433">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50535" level="1"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39434">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50535" level="2"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39435">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50535" level="3"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39436">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50535" level="4"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39437">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50535" level="5"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39438">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50535" level="6"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39439">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50535" level="7"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39440">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50535" level="8"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39441">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50535" level="9"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39442">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50535" level="10"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39443">
+		<!--Gloves imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +7\nDEX +7-->
+		<skills>
+			<skill id="50535" level="11"/>	<!-- Frost Lord's Blade Fists -->
+		</skills>
+	</option_data>
+	<option_data id="39444">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50536" level="1"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39445">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50536" level="2"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39446">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50536" level="3"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39447">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50536" level="4"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39448">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50536" level="5"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39449">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50536" level="6"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39450">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50536" level="7"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39451">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50536" level="8"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39452">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50536" level="9"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39453">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50536" level="10"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39454">
+		<!--A bow imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +7\nDEX +7-->
+		<skills>
+			<skill id="50536" level="11"/>	<!-- Frost Lord's Bow -->
+		</skills>
+	</option_data>
+	<option_data id="39455">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50537" level="1"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39456">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50537" level="2"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39457">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50537" level="3"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39458">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50537" level="4"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39459">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50537" level="5"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39460">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50537" level="6"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39461">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50537" level="7"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39462">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50537" level="8"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39463">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50537" level="9"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39464">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50537" level="10"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39465">
+		<!--A gun imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nSTR +7\nDEX +7-->
+		<skills>
+			<skill id="50537" level="11"/>	<!-- Frost Lord's Pistols -->
+		</skills>
+	</option_data>
+	<option_data id="39466">
+		<!--Acquired XP/ SP +5%, P./ M. Def. +50, Atk. Spd./ Casting Spd. +10-->
+	</option_data>
+	<option_data id="39467">
+		<!--Acquired XP/ SP +10%, P./ M. Def. +50, Atk. Spd./ Casting Spd. +15, P./ M. Atk. +50-->
+	</option_data>
+	<option_data id="39468">
+		<!--P. Def. +33-->
+		<for>
+			<add order="0x60" stat="pDef" value="33"/>
+		</for>
+	</option_data>
+	<option_data id="39469">
+		<!--M. Def. +35-->
+		<for>
+			<add order="0x60" stat="mDef" value="35"/>
+		</for>
+	</option_data>
+	<option_data id="39470">
+		<!--M. Def. +33-->
+		<for>
+			<add order="0x60" stat="mDef" value="33"/>
+		</for>
+	</option_data>
+	<option_data id="39471">
+		<!--Acquired XP/ SP +1%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.01"/>
+		</for>
+	</option_data>
+	<option_data id="39472">
+		<!--Casting Spd. +14-->
+		<for>
+			<add order="0x60" stat="mAtkSpd" value="14"/>
+		</for>
+	</option_data>
+	<option_data id="39473">
+		<!--Received P. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39474">
+		<!--Sayha's Grace charging rate +1%-->
+		<for>
+			<mul order="0x60" stat="sayhas_grace_charging_rate_multiplier" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39475">
+		<!--Atk. Spd. +15-->
+		<for>
+			<add order="0x60" stat="pAtkSpd" value="15"/>
+		</for>
+	</option_data>
+	<option_data id="39476">
+		<!--Sayha's Grace charging rate +1%-->
+		<for>
+			<mul order="0x60" stat="sayhas_grace_charging_rate_multiplier" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39477">
+		<!--Speed +1-->
+		<for>
+			<add order="0x60" stat="runSpd" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39478">
+		<!--M. Def. +31-->
+		<for>
+			<add order="0x60" stat="mDef" value="31"/>
+		</for>
+	</option_data>
+	<option_data id="39479">
+		<!--Received M. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39480">
+		<!--P. Def. +29-->
+		<for>
+			<add order="0x60" stat="pDef" value="29"/>
+		</for>
+	</option_data>
+	<option_data id="39481">
+		<!--Inventory slots +1-->
+		<for>
+			<add order="0x60" stat="inventoryLimit" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39482">
+		<!--M. Def. +25-->
+		<for>
+			<add order="0x60" stat="mDef" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39483">
+		<!--M. Atk. +15-->
+		<for>
+			<add order="0x60" stat="mAtk" value="15"/>
+		</for>
+	</option_data>
+	<option_data id="39484">
+		<!--M. Atk. +25-->
+		<for>
+			<add order="0x60" stat="mAtk" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39485">
+		<!--P. Atk. +25-->
+		<for>
+			<add order="0x60" stat="pAtk" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39486">
+		<!--P. Def. +31-->
+		<for>
+			<add order="0x60" stat="pDef" value="31"/>
+		</for>
+	</option_data>
+	<option_data id="39487">
+		<!--P. Def. +27-->
+		<for>
+			<add order="0x60" stat="pDef" value="27"/>
+		</for>
+	</option_data>
+	<option_data id="39488">
+		<!--M. Def. +27-->
+		<for>
+			<add order="0x60" stat="mDef" value="27"/>
+		</for>
+	</option_data>
+	<option_data id="39489">
+		<!--Atk. Spd. +14-->
+		<for>
+			<add order="0x60" stat="pAtkSpd" value="14"/>
+		</for>
+	</option_data>
+	<option_data id="39490">
+		<!--M. Def. +29-->
+		<for>
+			<add order="0x60" stat="mDef" value="29"/>
+		</for>
+	</option_data>
+	<option_data id="39491">
+		<!--Acquired XP/ SP +1%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.01"/>
+		</for>
+	</option_data>
+	<option_data id="39492">
+		<!--P. Atk. +15.-->
+		<for>
+			<add order="0x60" stat="pAtk" value="15"/>
+		</for>
+	</option_data>
+	<option_data id="39493">
+		<!--P. Def. +25-->
+		<for>
+			<add order="0x60" stat="pDef" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39494">
+		<!--Max MP +55-->
+		<for>
+			<add order="0x60" stat="maxMp" value="55"/>
+		</for>
+	</option_data>
+	<option_data id="39495">
+		<!--Max CP +65-->
+		<for>
+			<add order="0x60" stat="maxCp" value="65"/>
+		</for>
+	</option_data>
+	<option_data id="39496">
+		<!--Sayha's Grace Consumption -1%-->
+		<for>
+			<mul order="0x60" stat="sayhas_grace_consume" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39497">
+		<!--Sayha's Grace Consumption -1%-->
+		<for>
+			<mul order="0x60" stat="sayhas_grace_consume" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39498">
+		<!--Weight limit +500-->
+		<for>
+			<add order="0x60" stat="maxLoad" value="500"/>
+		</for>
+	</option_data>
+	<option_data id="39499">
+		<!--Casting Spd. +15-->
+		<for>
+			<add order="0x60" stat="mAtkSpd" value="15"/>
+		</for>
+	</option_data>
+</list>

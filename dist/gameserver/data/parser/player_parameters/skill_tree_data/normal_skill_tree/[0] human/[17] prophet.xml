@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--REWORKED: MORSE-->
+<list>
+	<normal_skill_tree class_id="17"><!--Prophet-->
+		<skill id="1243" level="1" min_level="40" cost="97000"/><!--Blessed Shield-->
+		<skill id="45237" level="1" min_level="40" cost="97000"/><!--Swap Attack-->
+		<skill id="228" level="2" min_level="40" cost="97000"/><!--Fast Spell Casting-->
+		<skill id="259" level="1" min_level="40" cost="97000"/><!--Heavy Armor Mastery-->
+		<skill id="259" level="2" min_level="40" cost="97000"/><!--Heavy Armor Mastery-->
+		<skill id="259" level="3" min_level="40" cost="97000"/><!--Heavy Armor Mastery-->
+		<skill id="1050" level="1" min_level="40" cost="97000"/><!--Return-->
+		<skill id="1059" level="3" min_level="40" cost="97000"/><!--Empower-->
+		<skill id="1303" level="2" min_level="40" cost="97000"/><!--Wild Magic-->
+		<skill id="1062" level="2" min_level="40" cost="97000"/><!--Berserker Spirit-->
+		<skill id="1392" level="1" min_level="40" cost="97000"/><!--Swap Defense-->
+		<skill id="1257" level="1" min_level="40" cost="97000"/><!--Decrease Weight-->
+		<skill id="1036" level="2" min_level="40" cost="97000"/><!--Magic Barrier-->
+		<skill id="1829" level="1" min_level="40" auto_get="true"/><!--Spell Master-->
+		<skill id="1035" level="2" min_level="40" cost="97000"/><!--Mental Shield-->
+		<skill id="1068" level="3" min_level="40" cost="97000"/><!--Might-->
+		<skill id="1240" level="1" min_level="40" cost="97000"/><!--Guidance-->
+		<skill id="1393" level="1" min_level="40" cost="97000"/><!--Convert-->
+		<skill id="1087" level="1" min_level="40" cost="97000"/><!--Agility-->
+		<skill id="1085" level="3" min_level="40" cost="97000"/><!--Acumen-->
+		<skill id="1028" level="1" min_level="40" cost="97000"/><!--Might of Heaven-->
+		<skill id="1028" level="2" min_level="40" cost="97000"/><!--Might of Heaven-->
+		<skill id="1164" level="6" min_level="40" cost="97000"/><!--Weakness-->
+		<skill id="1259" level="1" min_level="40" cost="97000"/><!--Resilience-->
+		<skill id="211" level="1" min_level="40" cost="97000"/><!--Boost HP-->
+		<skill id="213" level="3" min_level="40" cost="97000"/><!--Mana Boost-->
+		<skill id="1086" level="2" min_level="40" cost="97000"/><!--Haste-->
+		<skill id="190" level="1" min_level="40" cost="97000"/><!--Fatal Strike-->
+		<skill id="190" level="2" min_level="40" cost="97000"/><!--Fatal Strike-->
+		<skill id="190" level="3" min_level="40" cost="97000"/><!--Fatal Strike-->
+		<skill id="1077" level="3" min_level="40" cost="97000"/><!--Focus-->
+		<skill id="45113" level="3" min_level="40" cost="97000"/><!--Clarity-->
+		<skill id="1242" level="3" min_level="40" cost="97000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="97000"/><!--Shield-->
+		<skill id="1032" level="1" min_level="40" cost="97000"/><!--Magic Evasion-->
+		<skill id="1201" level="11" min_level="41" cost="140000"/><!--Dryad Root-->
+		<skill id="1069" level="11" min_level="41" cost="140000"/><!--Sleep-->
+		<skill id="190" level="4" min_level="41" cost="140000"/><!--Fatal Strike-->
+		<skill id="259" level="4" min_level="42" cost="140000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="12" min_level="42" cost="140000"/><!--Dryad Root-->
+		<skill id="1028" level="3" min_level="42" cost="140000"/><!--Might of Heaven-->
+		<skill id="1304" level="1" min_level="42" cost="140000"/><!--Advanced Block-->
+		<skill id="1069" level="12" min_level="42" cost="140000"/><!--Sleep-->
+		<skill id="190" level="5" min_level="42" cost="140000"/><!--Fatal Strike-->
+		<skill id="259" level="5" min_level="43" cost="140000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="13" min_level="43" cost="140000"/><!--Dryad Root-->
+		<skill id="1069" level="13" min_level="43" cost="140000"/><!--Sleep-->
+		<skill id="190" level="6" min_level="43" cost="140000"/><!--Fatal Strike-->
+		<skill id="1048" level="1" min_level="44" cost="140000"/><!--Blessed Soul-->
+		<skill id="1045" level="1" min_level="44" cost="140000"/><!--Blessed Body-->
+		<skill id="259" level="6" min_level="44" cost="140000"/><!--Heavy Armor Mastery-->
+		<skill id="1078" level="3" min_level="44" cost="140000"/><!--Concentration-->
+		<skill id="1201" level="14" min_level="44" cost="140000"/><!--Dryad Root-->
+		<skill id="1028" level="4" min_level="44" cost="140000"/><!--Might of Heaven-->
+		<skill id="1164" level="7" min_level="44" cost="140000"/><!--Weakness-->
+		<skill id="1272" level="1" min_level="44" cost="140000"/><!--Word of Fear-->
+		<skill id="211" level="2" min_level="44" cost="140000"/><!--Boost HP-->
+		<skill id="1069" level="14" min_level="44" cost="140000"/><!--Sleep-->
+		<skill id="190" level="7" min_level="44" cost="140000"/><!--Fatal Strike-->
+		<skill id="1201" level="15" min_level="45" cost="140000"/><!--Dryad Root-->
+		<skill id="1257" level="2" min_level="45" cost="140000"/><!--Decrease Weight-->
+		<skill id="1087" level="2" min_level="45" cost="140000"/><!--Agility-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="1069" level="15" min_level="45" cost="140000"/><!--Sleep-->
+		<skill id="190" level="8" min_level="45" cost="140000"/><!--Fatal Strike-->
+		<skill id="259" level="7" min_level="46" cost="220000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="16" min_level="46" cost="220000"/><!--Dryad Root-->
+		<skill id="1028" level="5" min_level="46" cost="220000"/><!--Might of Heaven-->
+		<skill id="1069" level="16" min_level="46" cost="220000"/><!--Sleep-->
+		<skill id="190" level="9" min_level="46" cost="220000"/><!--Fatal Strike-->
+		<skill id="259" level="8" min_level="47" cost="220000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="17" min_level="47" cost="220000"/><!--Dryad Root-->
+		<skill id="1069" level="17" min_level="47" cost="220000"/><!--Sleep-->
+		<skill id="190" level="10" min_level="47" cost="220000"/><!--Fatal Strike-->
+		<skill id="1048" level="2" min_level="48" cost="220000"/><!--Blessed Soul-->
+		<skill id="1045" level="2" min_level="48" cost="220000"/><!--Blessed Body-->
+		<skill id="1243" level="2" min_level="48" cost="220000"/><!--Blessed Shield-->
+		<skill id="164" level="3" min_level="48" cost="220000"/><!--Quick Recovery-->
+		<skill id="259" level="9" min_level="48" cost="220000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="18" min_level="48" cost="220000"/><!--Dryad Root-->
+		<skill id="1035" level="3" min_level="48" cost="220000"/><!--Mental Shield-->
+		<skill id="1240" level="2" min_level="48" cost="220000"/><!--Guidance-->
+		<skill id="1028" level="6" min_level="48" cost="220000"/><!--Might of Heaven-->
+		<skill id="1164" level="8" min_level="48" cost="220000"/><!--Weakness-->
+		<skill id="1272" level="2" min_level="48" cost="220000"/><!--Word of Fear-->
+		<skill id="211" level="3" min_level="48" cost="220000"/><!--Boost HP-->
+		<skill id="213" level="4" min_level="48" cost="220000"/><!--Mana Boost-->
+		<skill id="1069" level="18" min_level="48" cost="220000"/><!--Sleep-->
+		<skill id="190" level="11" min_level="48" cost="220000"/><!--Fatal Strike-->
+		<skill id="1032" level="2" min_level="48" cost="220000"/><!--Magic Evasion-->
+		<skill id="1201" level="19" min_level="49" cost="220000"/><!--Dryad Root-->
+		<skill id="1069" level="19" min_level="49" cost="220000"/><!--Sleep-->
+		<skill id="190" level="12" min_level="49" cost="220000"/><!--Fatal Strike-->
+		<skill id="259" level="10" min_level="50" cost="350000"/><!--Heavy Armor Mastery-->
+		<skill id="45176" level="2" min_level="50" cost="350000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="350000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1201" level="20" min_level="50" cost="350000"/><!--Dryad Root-->
+		<skill id="1257" level="3" min_level="50" cost="350000"/><!--Decrease Weight-->
+		<skill id="1028" level="7" min_level="50" cost="350000"/><!--Might of Heaven-->
+		<skill id="1073" level="2" min_level="50" cost="350000"/><!--Increased Power of Magic-->
+		<skill id="1304" level="2" min_level="50" cost="350000"/><!--Advanced Block-->
+		<skill id="1069" level="20" min_level="50" cost="350000"/><!--Sleep-->
+		<skill id="190" level="13" min_level="50" cost="350000"/><!--Fatal Strike-->
+		<skill id="259" level="11" min_level="51" cost="350000"/><!--Heavy Armor Mastery-->
+		<skill id="1411" level="1" min_level="51" cost="350000"><!--Mystic Immunity-->
+			<required_items>
+				<item id="90045" count="3"/><!--Magical Tablet-->
+			</required_items>
+		</skill>
+		<skill id="1069" level="21" min_level="51" cost="350000"/><!--Sleep-->
+		<skill id="190" level="14" min_level="51" cost="350000"/><!--Fatal Strike-->
+		<skill id="1048" level="3" min_level="52" cost="350000"/><!--Blessed Soul-->
+		<skill id="1045" level="3" min_level="52" cost="350000"/><!--Blessed Body-->
+		<skill id="1405" level="1" min_level="52" cost="350000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="259" level="12" min_level="52" cost="350000"/><!--Heavy Armor Mastery-->
+		<skill id="1078" level="4" min_level="52" cost="350000"/><!--Concentration-->
+		<skill id="1201" level="21" min_level="52" cost="350000"/><!--Dryad Root-->
+		<skill id="1028" level="8" min_level="52" cost="350000"/><!--Might of Heaven-->
+		<skill id="1164" level="9" min_level="52" cost="350000"/><!--Weakness-->
+		<skill id="1272" level="3" min_level="52" cost="350000"/><!--Word of Fear-->
+		<skill id="1259" level="2" min_level="52" cost="350000"/><!--Resilience-->
+		<skill id="211" level="4" min_level="52" cost="350000"/><!--Boost HP-->
+		<skill id="1069" level="22" min_level="52" cost="350000"/><!--Sleep-->
+		<skill id="190" level="15" min_level="52" cost="350000"/><!--Fatal Strike-->
+		<skill id="1069" level="23" min_level="53" cost="350000"/><!--Sleep-->
+		<skill id="190" level="16" min_level="53" cost="350000"/><!--Fatal Strike-->
+		<skill id="259" level="13" min_level="54" cost="550000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="22" min_level="54" cost="550000"/><!--Dryad Root-->
+		<skill id="1028" level="9" min_level="54" cost="550000"/><!--Might of Heaven-->
+		<skill id="1069" level="24" min_level="54" cost="550000"/><!--Sleep-->
+		<skill id="190" level="17" min_level="54" cost="550000"/><!--Fatal Strike-->
+		<skill id="259" level="14" min_level="55" cost="550000"/><!--Heavy Armor Mastery-->
+		<skill id="1087" level="3" min_level="55" cost="550000"/><!--Agility-->
+		<skill id="1069" level="25" min_level="55" cost="550000"/><!--Sleep-->
+		<skill id="190" level="18" min_level="55" cost="550000"/><!--Fatal Strike-->
+		<skill id="1048" level="4" min_level="56" cost="550000"/><!--Blessed Soul-->
+		<skill id="1045" level="4" min_level="56" cost="550000"/><!--Blessed Body-->
+		<skill id="1243" level="3" min_level="56" cost="550000"/><!--Blessed Shield-->
+		<skill id="228" level="3" min_level="56" cost="550000"/><!--Fast Spell Casting-->
+		<skill id="259" level="15" min_level="56" cost="550000"/><!--Heavy Armor Mastery-->
+		<skill id="1050" level="2" min_level="56" cost="550000"/><!--Return-->
+		<skill id="1201" level="23" min_level="56" cost="550000"/><!--Dryad Root-->
+		<skill id="1035" level="4" min_level="56" cost="550000"/><!--Mental Shield-->
+		<skill id="1240" level="3" min_level="56" cost="550000"/><!--Guidance-->
+		<skill id="1028" level="10" min_level="56" cost="550000"/><!--Might of Heaven-->
+		<skill id="1164" level="10" min_level="56" cost="550000"/><!--Weakness-->
+		<skill id="1272" level="4" min_level="56" cost="550000"/><!--Word of Fear-->
+		<skill id="211" level="5" min_level="56" cost="550000"/><!--Boost HP-->
+		<skill id="213" level="5" min_level="56" cost="550000"/><!--Mana Boost-->
+		<skill id="1069" level="26" min_level="56" cost="550000"/><!--Sleep-->
+		<skill id="190" level="19" min_level="56" cost="550000"/><!--Fatal Strike-->
+		<skill id="1032" level="3" min_level="56" cost="550000"/><!--Magic Evasion-->
+		<skill id="259" level="16" min_level="57" cost="560000"/><!--Heavy Armor Mastery-->
+		<skill id="1069" level="27" min_level="57" cost="560000"/><!--Sleep-->
+		<skill id="190" level="20" min_level="57" cost="560000"/><!--Fatal Strike-->
+		<skill id="259" level="17" min_level="58" cost="560000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="24" min_level="58" cost="560000"/><!--Dryad Root-->
+		<skill id="1028" level="11" min_level="58" cost="560000"/><!--Might of Heaven-->
+		<skill id="1164" level="11" min_level="58" cost="560000"/><!--Weakness-->
+		<skill id="1272" level="5" min_level="58" cost="560000"/><!--Word of Fear-->
+		<skill id="1388" level="1" min_level="58" cost="560000"><!--Attack Prowess-->
+			<required_items>
+				<item id="90045" count="3"/><!--Magical Tablet-->
+			</required_items>
+		</skill>
+		<skill id="1389" level="1" min_level="58" cost="560000"><!--Defense Prowess-->
+			<required_items>
+				<item id="90045" count="3"/><!--Magical Tablet-->
+			</required_items>
+		</skill>
+		<skill id="1304" level="3" min_level="58" cost="560000"/><!--Advanced Block-->
+		<skill id="1069" level="28" min_level="58" cost="560000"/><!--Sleep-->
+		<skill id="190" level="21" min_level="58" cost="560000"/><!--Fatal Strike-->
+		<skill id="259" level="18" min_level="59" cost="680000"/><!--Heavy Armor Mastery-->
+		<skill id="1069" level="29" min_level="59" cost="680000"/><!--Sleep-->
+		<skill id="190" level="22" min_level="59" cost="680000"/><!--Fatal Strike-->
+		<skill id="45237" level="2" min_level="60" cost="680000"/><!--Swap Attack-->
+		<skill id="259" level="19" min_level="60" cost="680000"/><!--Heavy Armor Mastery-->
+		<skill id="1392" level="2" min_level="60" cost="680000"/><!--Swap Defense-->
+		<skill id="1078" level="5" min_level="60" cost="680000"/><!--Concentration-->
+		<skill id="1201" level="25" min_level="60" cost="680000"/><!--Dryad Root-->
+		<skill id="1829" level="2" min_level="60" cost="500000"><!--Spell Master-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1411" level="2" min_level="60" cost="680000"/><!--Mystic Immunity-->
+		<skill id="1393" level="2" min_level="60" cost="680000"/><!--Convert-->
+		<skill id="1028" level="12" min_level="60" cost="680000"/><!--Might of Heaven-->
+		<skill id="1164" level="12" min_level="60" cost="680000"/><!--Weakness-->
+		<skill id="1272" level="6" min_level="60" cost="680000"/><!--Word of Fear-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="213" level="6" min_level="60" cost="680000"/><!--Mana Boost-->
+		<skill id="1069" level="30" min_level="60" cost="680000"/><!--Sleep-->
+		<skill id="190" level="23" min_level="60" cost="680000"/><!--Fatal Strike-->
+		<skill id="1405" level="2" min_level="61" cost="830000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="259" level="20" min_level="61" cost="830000"/><!--Heavy Armor Mastery-->
+		<skill id="1069" level="31" min_level="61" cost="830000"/><!--Sleep-->
+		<skill id="190" level="24" min_level="61" cost="830000"/><!--Fatal Strike-->
+		<skill id="1048" level="5" min_level="62" cost="830000"/><!--Blessed Soul-->
+		<skill id="259" level="21" min_level="62" cost="830000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="26" min_level="62" cost="830000"/><!--Dryad Root-->
+		<skill id="1028" level="13" min_level="62" cost="830000"/><!--Might of Heaven-->
+		<skill id="1164" level="13" min_level="62" cost="830000"/><!--Weakness-->
+		<skill id="1272" level="7" min_level="62" cost="830000"/><!--Word of Fear-->
+		<skill id="211" level="6" min_level="62" cost="830000"/><!--Boost HP-->
+		<skill id="1069" level="32" min_level="62" cost="830000"/><!--Sleep-->
+		<skill id="190" level="25" min_level="62" cost="830000"/><!--Fatal Strike-->
+		<skill id="259" level="22" min_level="63" cost="1000000"/><!--Heavy Armor Mastery-->
+		<skill id="1069" level="33" min_level="63" cost="1000000"/><!--Sleep-->
+		<skill id="190" level="26" min_level="63" cost="1000000"/><!--Fatal Strike-->
+		<skill id="1045" level="5" min_level="64" cost="1000000"/><!--Blessed Body-->
+		<skill id="259" level="23" min_level="64" cost="1000000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="27" min_level="64" cost="1000000"/><!--Dryad Root-->
+		<skill id="1028" level="14" min_level="64" cost="1000000"/><!--Might of Heaven-->
+		<skill id="1164" level="14" min_level="64" cost="1000000"/><!--Weakness-->
+		<skill id="1272" level="8" min_level="64" cost="1000000"/><!--Word of Fear-->
+		<skill id="1259" level="3" min_level="64" cost="1000000"/><!--Resilience-->
+		<skill id="1069" level="34" min_level="64" cost="1000000"/><!--Sleep-->
+		<skill id="190" level="27" min_level="64" cost="1000000"/><!--Fatal Strike-->
+		<skill id="259" level="24" min_level="65" cost="1300000"/><!--Heavy Armor Mastery-->
+		<skill id="1069" level="35" min_level="65" cost="1300000"/><!--Sleep-->
+		<skill id="190" level="28" min_level="65" cost="1300000"/><!--Fatal Strike-->
+		<skill id="259" level="25" min_level="66" cost="1300000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="28" min_level="66" cost="1300000"/><!--Dryad Root-->
+		<skill id="1028" level="15" min_level="66" cost="1300000"/><!--Might of Heaven-->
+		<skill id="1164" level="15" min_level="66" cost="1300000"/><!--Weakness-->
+		<skill id="1272" level="9" min_level="66" cost="1300000"/><!--Word of Fear-->
+		<skill id="1388" level="2" min_level="66" cost="1300000"/><!--Attack Prowess-->
+		<skill id="1389" level="2" min_level="66" cost="1300000"/><!--Defense Prowess-->
+		<skill id="213" level="7" min_level="66" cost="1300000"/><!--Mana Boost-->
+		<skill id="1304" level="4" min_level="66" cost="1300000"/><!--Advanced Block-->
+		<skill id="1069" level="36" min_level="66" cost="1300000"/><!--Sleep-->
+		<skill id="190" level="29" min_level="66" cost="1300000"/><!--Fatal Strike-->
+		<skill id="259" level="26" min_level="67" cost="1600000"/><!--Heavy Armor Mastery-->
+		<skill id="1069" level="37" min_level="67" cost="1600000"/><!--Sleep-->
+		<skill id="190" level="30" min_level="67" cost="1600000"/><!--Fatal Strike-->
+		<skill id="259" level="27" min_level="68" cost="1600000"/><!--Heavy Armor Mastery-->
+		<skill id="1078" level="6" min_level="68" cost="1600000"/><!--Concentration-->
+		<skill id="1201" level="29" min_level="68" cost="1600000"/><!--Dryad Root-->
+		<skill id="1028" level="16" min_level="68" cost="1600000"/><!--Might of Heaven-->
+		<skill id="1164" level="16" min_level="68" cost="1600000"/><!--Weakness-->
+		<skill id="1272" level="10" min_level="68" cost="1600000"/><!--Word of Fear-->
+		<skill id="1069" level="38" min_level="68" cost="1600000"/><!--Sleep-->
+		<skill id="190" level="31" min_level="68" cost="1600000"/><!--Fatal Strike-->
+		<skill id="259" level="28" min_level="69" cost="1900000"/><!--Heavy Armor Mastery-->
+		<skill id="1411" level="3" min_level="69" cost="1900000"/><!--Mystic Immunity-->
+		<skill id="1069" level="39" min_level="69" cost="1900000"/><!--Sleep-->
+		<skill id="190" level="32" min_level="69" cost="1900000"/><!--Fatal Strike-->
+		<skill id="1048" level="6" min_level="70" cost="1900000"/><!--Blessed Soul-->
+		<skill id="1045" level="6" min_level="70" cost="1900000"/><!--Blessed Body-->
+		<skill id="45237" level="3" min_level="70" cost="1900000"/><!--Swap Attack-->
+		<skill id="259" level="29" min_level="70" cost="1900000"/><!--Heavy Armor Mastery-->
+		<skill id="1392" level="3" min_level="70" cost="1900000"/><!--Swap Defense-->
+		<skill id="1201" level="30" min_level="70" cost="1900000"/><!--Dryad Root-->
+		<skill id="1829" level="3" min_level="70" cost="1200000"><!--Spell Master-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1393" level="3" min_level="70" cost="1900000"/><!--Convert-->
+		<skill id="1028" level="17" min_level="70" cost="1900000"/><!--Might of Heaven-->
+		<skill id="1164" level="17" min_level="70" cost="1900000"/><!--Weakness-->
+		<skill id="1272" level="11" min_level="70" cost="1900000"/><!--Word of Fear-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="211" level="7" min_level="70" cost="1900000"/><!--Boost HP-->
+		<skill id="1069" level="40" min_level="70" cost="1900000"/><!--Sleep-->
+		<skill id="190" level="33" min_level="70" cost="1900000"/><!--Fatal Strike-->
+		<skill id="259" level="30" min_level="71" cost="2400000"/><!--Heavy Armor Mastery-->
+		<skill id="1069" level="41" min_level="71" cost="2400000"/><!--Sleep-->
+		<skill id="190" level="34" min_level="71" cost="2400000"/><!--Fatal Strike-->
+		<skill id="259" level="31" min_level="72" cost="2400000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="31" min_level="72" cost="2400000"/><!--Dryad Root-->
+		<skill id="1028" level="18" min_level="72" cost="2400000"/><!--Might of Heaven-->
+		<skill id="1164" level="18" min_level="72" cost="2400000"/><!--Weakness-->
+		<skill id="1272" level="12" min_level="72" cost="2400000"/><!--Word of Fear-->
+		<skill id="1259" level="4" min_level="72" cost="2400000"/><!--Resilience-->
+		<skill id="213" level="8" min_level="72" cost="2400000"/><!--Mana Boost-->
+		<skill id="1304" level="5" min_level="72" cost="2400000"/><!--Advanced Block-->
+		<skill id="1069" level="42" min_level="72" cost="2400000"/><!--Sleep-->
+		<skill id="190" level="35" min_level="72" cost="2400000"/><!--Fatal Strike-->
+		<skill id="259" level="32" min_level="73" cost="2800000"/><!--Heavy Armor Mastery-->
+		<skill id="1069" level="43" min_level="73" cost="2800000"/><!--Sleep-->
+		<skill id="190" level="36" min_level="73" cost="2800000"/><!--Fatal Strike-->
+		<skill id="259" level="33" min_level="74" cost="2800000"/><!--Heavy Armor Mastery-->
+		<skill id="1201" level="32" min_level="74" cost="2800000"/><!--Dryad Root-->
+		<skill id="1028" level="19" min_level="74" cost="2800000"/><!--Might of Heaven-->
+		<skill id="1164" level="19" min_level="74" cost="2800000"/><!--Weakness-->
+		<skill id="1272" level="13" min_level="74" cost="2800000"/><!--Word of Fear-->
+		<skill id="1388" level="3" min_level="74" cost="2800000"/><!--Attack Prowess-->
+		<skill id="1389" level="3" min_level="74" cost="2800000"/><!--Defense Prowess-->
+		<skill id="1069" level="44" min_level="74" cost="2800000"/><!--Sleep-->
+		<skill id="190" level="37" min_level="74" cost="2800000"/><!--Fatal Strike-->
+		<skill id="1028" level="20" min_level="75" cost="2800000"/><!--Might of Heaven-->
+		<skill id="1069" level="45" min_level="75" cost="2800000"/><!--Sleep-->
+		<skill id="47267" level="2" min_level="40" cost="97000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="3" min_level="47" cost="220000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="4" min_level="53" cost="350000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="5" min_level="59" cost="680000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="6" min_level="65" cost="1300000"/><!--Priest's Armor Mastery-->
+		<skill id="47267" level="7" min_level="71" cost="2400000"/><!--Priest's Armor Mastery-->
+		<skill id="47268" level="3" min_level="47" cost="220000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="4" min_level="53" cost="350000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="5" min_level="59" cost="680000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="6" min_level="65" cost="1300000"/><!--Priest's Attack Mastery-->
+		<skill id="47268" level="7" min_level="71" cost="2400000"/><!--Priest's Attack Mastery-->
+		<skill id="47271" level="2" min_level="43" cost="140000"/><!--Priest's Recovery Mastery-->
+		<skill id="47271" level="3" min_level="53" cost="350000"/><!--Priest's Recovery Mastery-->
+		<skill id="47271" level="4" min_level="61" cost="830000"/><!--Priest's Recovery Mastery-->
+		<skill id="47271" level="5" min_level="70" cost="1900000"/><!--Priest's Recovery Mastery-->
+		<skill id="47268" level="2" min_level="40" cost="97000"/><!--Priest's Attack Mastery-->
+		<skill id="47270" level="2" min_level="41" cost="140000"/><!--Anti Magic-->
+		<skill id="47270" level="3" min_level="60" cost="680000"/><!--Anti Magic-->
+		<skill id="47270" level="4" min_level="72" cost="2400000"/><!--Anti Magic-->
+	</normal_skill_tree>
+</list>

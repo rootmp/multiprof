@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "teleport_list.dtd">
+<!-- AUTHOR: nexvill -->
+<list>
+	<teleport id="5" itemId="57" price="3600"> <!-- Cruma Tower -->
+		<coords>
+			<coord x="17146" y="114176" z="-3440" />
+		</coords>
+	</teleport>
+	<teleport id="7" itemId="57" price="1000"> <!-- Dion -->
+		<coords>
+			<coord x="15689" y="142953" z="-2696" />
+		</coords>
+	</teleport>
+	<teleport id="11" itemId="57" price="15300"> <!-- Bee Hive -->
+		<coords>
+			<coord x="26861" y="185229" z="-3472" />
+		</coords>
+	</teleport>
+	<teleport id="21" itemId="57" price="770"> <!-- Death Pass -->
+		<coords>
+			<coord x="67018" y="108177" z="-3680" />
+			<coord x="67882" y="99782" z="-3712" />
+			<coord x="70610" y="118363" z="-3664" />
+			<coord x="70576" y="128047" z="-3752" />
+		</coords>
+	</teleport>
+	<teleport id="23" itemId="57" price="15000"> <!-- Devil's Isle -->
+		<coords>
+			<coord x="43408" y="206881" z="-3752" />
+		</coords>
+	</teleport>
+	<teleport id="24" itemId="57" price="2000"> <!-- Giran Harbor -->
+		<coords>
+			<coord x="47935" y="186810" z="-3480" />
+		</coords>
+	</teleport>
+	<teleport id="25" itemId="57" price="1000"> <!-- Giran -->
+		<coords>
+			<coord x="83386" y="148014" z="-3400" />
+		</coords>
+	</teleport>
+	<teleport id="29" itemId="57" price="770"> <!-- Gorgon Flower Garden -->
+		<coords>
+			<coord x="119184" y="135484" z="-3544" />
+			<coord x="102369" y="137818" z="-3328" />
+			<coord x="106615" y="138612" z="-3536" />
+		</coords>
+	</teleport>
+	<teleport id="32" itemId="57" price="200"> <!-- Ruins of Agony -->
+		<coords>
+			<coord x="-42307" y="120810" z="-3368" />
+			<coord x="-53117" y="119693" z="-2968" />
+			<coord x="-57040" y="112462" z="-3064" />
+			<coord x="-46166" y="108893" z="-3792" />
+		</coords>
+	</teleport>
+	<teleport id="34" itemId="57" price="770"> <!-- Ant Nest -->
+		<coords>
+			<coord x="-9970" y="175793" z="-4128" />
+		</coords>
+	</teleport>
+	<teleport id="35" itemId="57" price="1000"> <!-- Gludin -->
+		<coords>
+			<coord x="-80684" y="149770" z="-3040" />
+		</coords>
+	</teleport>
+	<teleport id="36" itemId="57" price="2000"> <!-- Gludin Harbor -->
+		<coords>
+			<coord x="-91080" y="149860" z="-3624" />
+		</coords>
+	</teleport>
+	<teleport id="37" itemId="57" price="1000"> <!-- Gludio -->
+		<coords>
+			<coord x="-14424" y="123972" z="-3120" />
+		</coords>
+	</teleport>
+	<teleport id="38" itemId="57" price="770"> <!-- Abandoned Camp -->
+		<coords>
+			<coord x="-46427" y="147921" z="-2960" />
+		</coords>
+	</teleport>
+	<teleport id="39" itemId="57" price="24000"> <!-- Orc Barracks -->
+		<coords>
+			<coord x="-91509" y="107149" z="-3688" />
+		</coords>
+	</teleport>
+	<teleport id="49" itemId="57" price="1000"> <!-- Talking Island Village -->
+		<coords>
+			<coord x="-84191" y="244531" z="-3728" />
+		</coords>
+	</teleport>
+	<teleport id="55" itemId="57" price="200"> <!-- Talking Island, Western Territory -->
+		<coords>
+			<coord x="-106696" y="214691" z="-3424" />
+		</coords>
+	</teleport>
+	<teleport id="56" itemId="57" price="200"> <!-- Talking Island, Eastern Territory -->
+		<coords>
+			<coord x="-95336" y="240478" z="-3264" />
+		</coords>
+	</teleport>
+	<teleport id="68" itemId="57" price="200"> <!-- Elven Forest -->
+		<coords>
+			<coord x="21362" y="51122" z="-3688" />
+		</coords>
+	</teleport>
+	<teleport id="70" itemId="57" price="1000"> <!-- Elven Village -->
+		<coords>
+			<coord x="46916" y="51420" z="-2976" />
+		</coords>
+	</teleport>
+	<teleport id="75" itemId="57" price="1000"> <!-- Dark Elf Village -->
+		<coords>
+			<coord x="9800" y="15596" z="-4568" />
+		</coords>
+	</teleport>
+	<teleport id="77" itemId="57" price="200"> <!-- Swampland -->
+		<coords>
+			<coord x="-21966" y="40544" z="-3192" />
+		</coords>
+	</teleport>
+	<teleport id="78" itemId="57" price="200"> <!-- Altar of Rites -->
+		<coords>
+			<coord x="-55262" y="77036" z="-3160" />
+		</coords>
+	</teleport>
+	<teleport id="79" itemId="57" price="770"> <!-- Sea of Spores -->
+		<coords>
+			<coord x="64328" y="26803" z="-3768" />
+		</coords>
+	</teleport>
+	<teleport id="82" itemId="57" price="1000"> <!-- Oren -->
+		<coords>
+			<coord x="82927" y="53255" z="-1488" />
+		</coords>
+	</teleport>
+	<teleport id="84" itemId="57" price="9000"> <!-- Plains of the Lizardmen -->
+		<coords>
+			<coord x="82911" y="92847" z="-3328" />
+			<coord x="95198" y="76261" z="-3480" />
+			<coord x="87252" y="85514" z="-3056" />
+			<coord x="81160" y="75068" z="-3592" />
+			<coord x="95842" y="89089" z="-3472" />
+		</coords>
+	</teleport>
+	<teleport id="98" itemId="57" price="15000"> <!-- Tower of Insolence -->
+		<coords>
+			<coord x="114649" y="11115" z="-5120" />
+		</coords>
+	</teleport>
+	<teleport id="99" itemId="57" price="6750"> <!--Blazing Swamp-->
+		<coords>
+			<coord x="147510" y="-19139" z="-3320" />
+		</coords>
+	</teleport>
+	<teleport id="101" itemId="57" price="2000"> <!--Seal of Shillien-->
+		<coords>
+			<coord x="187383" y="20498" z="-3584" />
+		</coords>
+	</teleport>
+	<teleport id="102" itemId="57" price="24000"> <!-- The Giant's Cave -->
+		<coords>
+			<coord x="178024" y="52164" z="-3984" />
+		</coords>
+	</teleport>
+	<teleport id="104" itemId="57" price="1500"> <!-- Cemetery -->
+		<coords>
+			<coord x="172204" y="20322" z="-3328" />
+			<coord x="173668" y="9235" z="-2736" />
+			<coord x="178863" y="20306" z="-3168" />
+		</coords>
+	</teleport>
+	<teleport id="105" itemId="57" price="1800"> <!-- Forest of Mirrors -->
+		<coords>
+			<coord x="138012" y="81947" z="-3104" />
+		</coords>
+	</teleport>
+	<teleport id="108" itemId="57" price="1000"> <!--Hunters' Village-->
+		<coords>
+			<coord x="116852" y="76480" z="-2728" />
+		</coords>
+	</teleport>
+	<teleport id="115" itemId="57" price="3000"> <!-- Silent Valley -->
+		<coords>
+			<coord x="184222" y="46666" z="-5864" />
+			<coord x="171827" y="56589" z="-5624" />
+		</coords>
+	</teleport>
+	<teleport id="116" itemId="57" price="8000"> <!--Hunters' Valley-->
+		<coords>
+			<coord x="113937" y="83180" z="-3112" />
+		</coords>
+	</teleport>
+	<teleport id="117" itemId="57" price="2000"> <!-- Plains of Glory -->
+		<coords>
+			<coord x="132390" y="12644" z="-4040" />
+			<coord x="139353" y="-904" z="-4136" />
+			<coord x="138989" y="19915" z="-3592" />
+			<coord x="131435" y="24184" z="-3728" />
+		</coords>
+	</teleport>
+	<teleport id="118" itemId="57" price="1800"> <!-- Fields of Massacre -->
+		<coords>
+			<coord x="179446" y="-7811" z="-3528" />
+			<coord x="183543" y="-14974" z="-2768" />
+			<coord x="188259" y="-25385" z="-1456" />
+			<coord x="163928" y="-10188" z="-3440" />
+		</coords>
+	</teleport>
+	<teleport id="119" itemId="57" price="2500"> <!-- War-Torn Plains -->
+		<coords>
+			<coord x="159795" y="21131" z="-3696" />
+			<coord x="162595" y="27467" z="-3728" />
+			<coord x="153025" y="10061" z="-3928" />
+			<coord x="164262" y="1849" z="-3480" />
+		</coords>
+	</teleport>
+	<teleport id="131" itemId="57" price="1000"> <!-- Orc Village -->
+		<coords>
+			<coord x="-45158" y="-112583" z="-240" />
+		</coords>
+	</teleport>
+	<teleport id="135" itemId="57" price="200">	<!-- Valley of Heroes -->
+		<coords>
+			<coord x="-39025" y="-120555" z="-1688" />
+			<coord x="-39162" y="-116687" z="-1800" />
+			<coord x="-40877" y="-118814" z="-1912" />
+		</coords>
+	</teleport>
+	<teleport id="136" itemId="57" price="200"> <!-- Immortal Plateau, Northern Region -->
+		<coords>
+			<coord x="-10983" y="-117484" z="-2464" />
+		</coords>
+	</teleport>
+	<teleport id="137" itemId="57" price="200"> <!--Immortal Plateau, Southern Region-->
+		<coords>
+			<coord x="-3269" y="-93279" z="-2368" />
+		</coords>
+	</teleport>
+	<teleport id="140" itemId="57" price="1000"> <!-- Dwarven Village -->
+		<coords>
+			<coord x="115190" y="-178176" z="-896" />
+		</coords>
+	</teleport>
+	<teleport id="145" itemId="57" price="200"> <!-- Western Mining Zone -->
+		<coords>
+			<coord x="124054" y="-200170" z="-3704" />
+		</coords>
+	</teleport>
+	<teleport id="146" itemId="57" price="200"> <!--Eastern Mining Zone-->
+		<coords>
+			<coord x="179684" y="-205789" z="-3384" />
+		</coords>
+	</teleport>
+	<teleport id="181" itemId="57" price="1000"> <!-- Goddard -->
+		<coords>
+			<coord x="147961" y="-55309" z="-2728" />
+		</coords>
+	</teleport>
+	<teleport id="184" itemId="57" price="24000">	<!-- Hot Springs -->
+		<coords>
+			<coord x="149370" y="-112869" z="-2064" />
+		</coords>
+	</teleport>
+	<teleport id="189" itemId="57" price="48000">	<!-- Morgos' Military Base -->
+		<coords>
+			<coord x="146782" y="-68944" z="-3656" />
+		</coords>
+	</teleport>
+	<teleport id="193" itemId="57" price="24000">	<!-- Gorde Canyon -->
+		<coords>
+			<coord x="164389" y="-47956" z="-3528" />
+		</coords>
+	</teleport>
+	<teleport id="195" itemId="57" price="48000">	<!-- Xilenos Fortress -->
+		<coords>
+			<coord x="127226" y="-40970" z="-3584" />
+		</coords>
+	</teleport>
+	<teleport id="316" itemId="57" price="200"> <!-- Obelisk of Victory -->
+		<coords>
+			<coord x="-99843" y="237583" z="-3568" />
+		</coords>
+	</teleport>
+	<teleport id="318" itemId="57" price="200"> <!-- Dark Forest -->
+		<coords>
+			<coord x="-22224" y="14168" z="-3232" />
+		</coords>
+	</teleport>
+	<teleport id="321" itemId="57" price="1000"> <!-- Aden -->
+		<coords>
+			<coord x="146856" y="25803" z="-2008" />
+		</coords>
+	</teleport>
+	<teleport id="324" itemId="57" price="2000"> <!-- Coliseum -->
+		<coords>
+			<coord x="146440" y="46723" z="-3432" />
+		</coords>
+	</teleport>
+	<teleport id="411" itemId="57" price="770"> <!--Southern Part of the Enchanted Valley-->
+		<coords>
+			<coord x="124904" y="61992" z="-3973" />
+		</coords>
+	</teleport>
+	<teleport id="412" itemId="57" price="770"> <!--Northern Part of the Enchanted Valley-->
+		<coords>
+			<coord x="116220" y="41380" z="-3880" />
+		</coords>
+	</teleport>
+	<teleport id="415" itemId="57" price="1000"> <!-- Kamael Village -->
+		<coords>
+			<coord x="-116686" y="46482" z="360" />
+		</coords>
+	</teleport>
+	<teleport id="415" itemId="57" price="1000"> <!-- Kamael Village -->
+		<coords>
+			<coord x="-116686" y="46482" z="360" />
+		</coords>
+	</teleport>
+	<teleport id="417" itemId="57" price="200"> <!-- Hill of Hope -->
+		<coords>
+			<coord x="-119618" y="51994" z="-832" />
+		</coords>
+	</teleport>
+	<teleport id="418" itemId="57" price="200"> <!-- Golden Hills -->
+		<coords>
+			<coord x="-109670" y="45283" z="-1344" />
+		</coords>
+	</teleport>
+	<teleport id="419" itemId="57" price="50000"> <!-- Right Side of the Giran Castle -->
+		<coords>
+			<coord x="111541" y="139977" z="-3480" />
+		</coords>
+	</teleport>
+	<teleport id="420" itemId="57" price="50000"> <!-- Front Side of the Giran Castle -->
+		<coords>
+			<coord x="107386" y="145807" z="-3296" />
+		</coords>
+	</teleport>
+	<teleport id="421" itemId="57" price="50000"> <!-- Left Side of the Giran Castle -->
+		<coords>
+			<coord x="111003" y="148054" z="-3184" />
+		</coords>
+	</teleport>
+	<teleport id="422" itemId="57" price="770"> <!-- Giran Castle's Warcamp -->
+		<coords>
+			<coord x="107698" y="143854" z="-3440" />
+		</coords>
+	</teleport>
+	<teleport id="423" itemId="57" price="200"> <!-- Forest of Sacrifice -->
+		<coords>
+			<coord x="-27322" y="78056" z="-3536" />
+		</coords>
+	</teleport>
+	<teleport id="424" itemId="57" price="770"> <!-- Goddard Castle's Warcamp -->
+		<coords>
+			<coord x="147932" y="-39016" z="-1984" />
+		</coords>
+	</teleport>
+	<teleport id="425" itemId="57" price="50000"> <!-- Right Side of the Goddard Castle -->
+		<coords>
+			<coord x="144785" y="-46353" z="-2528" />
+		</coords>
+	</teleport>
+	<teleport id="426" itemId="57" price="50000"> <!-- Front Side of the Goddard Castle -->
+		<coords>
+			<coord x="150191" y="-42551" z="-2248" />
+		</coords>
+	</teleport>
+	<teleport id="427" itemId="57" price="50000"> <!-- Left Side of the Goddard Castle -->
+		<coords>
+			<coord x="147434" y="-46433" z="-2528" />
+		</coords>
+	</teleport>
+	<teleport id="429" itemId="57" price="1000"> <!-- Death Knight Base -->
+		<coords>
+			<coord x="46225" y="152900" z="-2736" />
+		</coords>
+	</teleport>
+	<teleport id="430" itemId="57" price="200"> <!-- Training Grounds - 1 -->
+		<coords>
+			<coord x="45753" y="147564" z="-3680" />
+		</coords>
+	</teleport>
+	<teleport id="431" itemId="57" price="200"> <!-- Training Grounds - 2 -->
+		<coords>
+			<coord x="52642" y="148105" z="-2424" />
+		</coords>
+	</teleport>
+	<teleport id="432" itemId="57" price="50000"> <!-- Orc Fortress -->
+		<coords>
+			<coord x="106472" y="-2920" z="-3440" />
+		</coords>
+	</teleport>
+	<teleport id="433" itemId="57" price="1000"> <!-- Road to Orc Fortress -->
+		<coords>
+			<coord x="106472" y="-2920" z="-3440" />
+		</coords>
+	</teleport>
+	<teleport id="434" itemId="57" price="18000"> <!-- Sel Mahum Base -->
+		<coords>
+			<coord x="-48363" y="140230" z="-2944" />
+		</coords>
+	</teleport>
+	<teleport id="435" itemId="57" price="15000"><!-- Dragon Valley (west) -->
+		<coords>
+			<coord x="93983" y="113863" z="-3120" />
+			<coord x="85021" y="109046" z="-3200" />
+			<coord x="82103" y="114066" z="-3144" />
+			<coord x="87890" y="121193" z="-3056" />
+			<coord x="75886" y="117511" z="-3752" />
+		</coords>
+	</teleport>
+	<teleport id="436" itemId="57" price="18000"> <!-- Dragon Valley (east) -->
+		<coords>
+			<coord x="101676" y="113865" z="-3696" />
+			<coord x="119029" y="116799" z="-3728" />
+			<coord x="124836" y="109958" z="-3096" />
+			<coord x="116098" y="119102" z="-3720" />
+			<coord x="127474" y="116503" z="-3736" />
+		</coords>
+	</teleport>
+	<teleport id="437" itemId="57" price="2000"> <!-- Outskirts of the Ivory Tower -->
+		<coords>
+			<coord x="92821" y="18847" z="-3608" />
+		</coords>
+	</teleport>
+	<teleport id="442" itemId="57" price="2000"> <!-- Ivory Tower - Hellbound Portal -->
+		<coords>
+			<coord x="86610" y="16921" z="-3512" />
+			<coord x="84030" y="16956" z="-3512" />
+			<coord x="86596" y="15447" z="-3512" />
+			<coord x="83980" y="15422" z="-3512" />
+		</coords>
+	</teleport>
+	<teleport id="443" itemId="91663" price="100"> <!-- Tower of Insolence (To the 7th Floor) -->
+		<coords>
+			<coord x="116887" y="16064" z="2952" />
+		</coords>
+	</teleport>
+	<teleport id="444" itemId="91663" price="100"> <!-- Tower of Insolence (From the 7th Floor) -->
+		<coords>
+			<coord x="112196" y="16076" z="2952" />
+		</coords>
+	</teleport>
+	<teleport id="445" itemId="91663" price="100"> <!-- Tower of Insolence (To the 8th Floor) -->
+		<coords>
+			<coord x="114628" y="18594" z="3960" />
+		</coords>
+	</teleport>
+	<teleport id="446" itemId="91663" price="100"> <!-- Tower of Insolence (From the 8th Floor) -->
+		<coords>
+			<coord x="116320" y="14249" z="3960" />
+		</coords>
+	</teleport>
+	<teleport id="447" itemId="91663" price="100"> <!-- Tower of Insolence (To the 9th Floor) -->
+		<coords>
+			<coord x="114843" y="18674" z="4976" />
+		</coords>
+	</teleport>
+	<teleport id="448" itemId="91663" price="100"> <!-- Tower of Insolence (From the 9th Floor) -->
+		<coords>
+			<coord x="114643" y="13704" z="4976" />
+		</coords>
+	</teleport>
+	<teleport id="449" itemId="91663" price="150"> <!-- Tower of Insolence (To the 10th Floor) -->
+		<coords>
+			<coord x="112866" y="14337" z="5984" />
+		</coords>
+	</teleport>
+	<teleport id="450" itemId="91663" price="150"> <!-- Tower of Insolence (Left Exit from the 10th Floor) -->
+		<coords>
+			<coord x="115380" y="14423" z="6136" />
+		</coords>
+	</teleport>
+	<teleport id="451" itemId="91663" price="150"> <!-- Tower of Insolence (Right Exit from the 10th Floor) -->
+		<coords>
+			<coord x="112964" y="16764" z="6136" />
+		</coords>
+	</teleport>
+	<teleport id="452" itemId="91663" price="150"> <!-- Tower of Insolence (Left Exit from the 11th Floor) -->
+		<coords>
+			<coord x="114901" y="13343" z="6992" />
+		</coords>
+	</teleport>
+	<teleport id="453" itemId="91663" price="150"> <!-- Tower of Insolence (Right Exit from the 11th Floor) -->
+		<coords>
+			<coord x="111917" y="16297" z="6992" />
+		</coords>
+	</teleport>
+	<teleport id="454" itemId="91663" price="300"> <!-- Tower of Insolence (Left Exit from the 12th Floor) -->
+		<coords>
+			<coord x="115282" y="14377" z="8112" />
+		</coords>
+	</teleport>
+	<teleport id="455" itemId="91663" price="300"> <!-- Tower of Insolence (Right Exit from the 12th Floor) -->
+		<coords>
+			<coord x="112922" y="16665" z="8112" />
+		</coords>
+	</teleport>
+	<teleport id="456" itemId="57" price="1000"> <!-- Wind Village -->
+		<coords>
+			<coord x="104819" y="58097" z="-3936" />
+		</coords>
+	</teleport>
+	<teleport id="457" itemId="57" price="200"> <!-- Quiet Plain -->
+		<coords>
+			<coord x="104348" y="43601" z="-4656" />
+			<coord x="106518" y="49141" z="-4760" />
+			<coord x="106025" y="53773" z="-4576" />
+		</coords>
+	</teleport>
+	<teleport id="458" itemId="57" price="200"> <!-- Whispering Woods -->
+		<coords>
+			<coord x="117678" y="55348" z="-4560" />
+			<coord x="108036" y="59797" z="-4376" />
+			<coord x="125682" y="52756" z="-4576" />
+			<coord x="114421" y="61532" z="-4592" />
+		</coords>
+	</teleport>
+	<teleport id="462" itemId="57" price="50000">	<!-- Right Side of the Aden Castle -->
+		<coords>
+			<coord x="151963" y="5508" z="-584" />
+		</coords>
+	</teleport>
+	<teleport id="463" itemId="57" price="50000">	<!-- Front Side of the Aden Castle -->
+		<coords>
+			<coord x="147469" y="11386" z="-760" />
+		</coords>
+	</teleport>
+	<teleport id="464" itemId="57" price="50000">	<!-- Left Side of the Aden Castle -->
+		<coords>
+			<coord x="143070" y="5588" z="-592" />
+		</coords>
+	</teleport>
+	<teleport id="466" itemId="91663" price="100">	<!-- Giant's Inner Cave -->
+		<coords>
+			<coord x="187557" y="58771" z="-4784" />
+		</coords>
+	</teleport>
+	<teleport id="472" itemId="57" price="50000">	<!-- Balok Battleground Camp -->
+		<coords>
+			<coord x="-12496" y="169822" z="-3960" />
+		</coords>
+	</teleport>
+	<teleport id="473" itemId="57" price="1000">	<!-- Road to Balok Battleground -->
+		<coords>
+			<coord x="-18407" y="181070" z="-3840" />
+		</coords>
+	</teleport>
+
+	<!-- ТЕЛЕПОРТ К РБ (Для КАРТЫ) TODO: Может вынести в отдельный файл? -->
+	<!-- ЭПИКИ -->
+	<teleport id="29001" itemId="57" price="0"> <!-- Queen Ant -->
+		<coords>
+			<coord x="93001" y="7913" z="-3904" />
+		</coords>
+	</teleport>
+	<teleport id="29006" itemId="57" price="0"> <!-- Core -->
+		<coords>
+			<coord x="17756" y="110388" z="-6648" />
+		</coords>
+	</teleport>
+	<teleport id="29014" itemId="57" price="0"> <!-- Orfen -->
+		<coords>
+			<coord x="67180" y="28562" z="-3744" />
+		</coords>
+	</teleport>
+	<teleport id="29068" itemId="57" price="0"> <!-- Antharas -->
+		<coords>
+			<coord x="125833" y="123041" z="-3952" />
+		</coords>
+	</teleport>
+	<teleport id="29022" itemId="57" price="0"> <!-- Zaken -->
+		<coords>
+			<coord x="43403" y="208710" z="-3752" />
+		</coords>
+	</teleport>
+	<teleport id="29170" itemId="57" price="0"> <!-- Chaotic Core -->
+		<coords>
+			<coord x="191512" y="21855" z="-3680" />
+		</coords>
+	</teleport>
+	<teleport id="29171" itemId="57" price="0"> <!-- Chaotic Orfen -->
+		<coords>
+			<coord x="191512" y="21855" z="-3680" />
+		</coords>
+	</teleport>
+	<teleport id="29172" itemId="57" price="0"> <!-- Chaotic Queen Ant -->
+		<coords>
+			<coord x="191512" y="21855" z="-3680" />
+		</coords>
+	</teleport>
+	<teleport id="29173" itemId="57" price="0"> <!-- Chaotic Zaken -->
+		<coords>
+			<coord x="191512" y="21855" z="-3680" />
+		</coords>
+	</teleport>
+	<!-- Обычные -->
+	<teleport id="25007" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="167696" y="23977" z="-3320"/>
+		</coords>
+	</teleport>
+	<teleport id="25010" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="118744" y="39194" z="-3472"/>
+		</coords>
+	</teleport>
+	<teleport id="25020" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="175517" y="25880" z="-3296"/>
+		</coords>
+	</teleport>
+	<teleport id="25026" itemId="57" price="0"> <!-- Atis -->
+		<coords>
+			<coord x="137772" y="78637" z="-3608" />
+		</coords>
+	</teleport>
+	<teleport id="25044" itemId="57" price="0"> <!-- Barion -->
+		<coords>
+			<coord x="165646" y="-20861" z="-2912" />
+		</coords>
+	</teleport>
+	<teleport id="25051" itemId="57" price="0"> <!-- Rahha -->
+		<coords>
+			<coord x="166972" y="-21210" z="-3416" />
+		</coords>
+	</teleport>
+	<teleport id="25057" itemId="57" price="0"> <!-- Beacon of Blue Sky -->
+		<coords>
+			<coord x="94373" y="83153" z="-3560" />
+		</coords>
+	</teleport>
+	<teleport id="25063" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="183744" y="20362" z="-3168"/>
+		</coords>
+	</teleport>
+	<teleport id="25067" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="95882" y="2510" z="-3720"/>
+		</coords>
+	</teleport>
+	<teleport id="25070" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="108392" y="45205" z="-3720"/>
+		</coords>
+	</teleport>
+	<teleport id="25076" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="49081" y="-65326" z="-3056"/>
+		</coords>
+	</teleport>
+	<teleport id="25079" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="65919" y="120106" z="-3712"/>
+		</coords>
+	</teleport>
+	<teleport id="25085" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="175899" y="20469" z="-3240"/>
+		</coords>
+	</teleport>
+	<teleport id="25095" itemId="57" price="0"> <!-- Renoa -->
+		<coords>
+			<coord x="168148" y="-20504" z="-3680" />
+		</coords>
+	</teleport>
+	<teleport id="25098" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="184574" y="-5945" z="-2824"/>
+		</coords>
+	</teleport>
+	<teleport id="25099" itemId="57" price="0"> <!-- Repiro -->
+		<coords>
+			<coord x="167711" y="-19190" z="-3072" />
+		</coords>
+	</teleport>
+	<teleport id="25102" itemId="57" price="0"> <!-- Shacram -->
+		<coords>
+			<coord x="-23702" y="74952" z="-3672" />
+		</coords>
+	</teleport>
+	<teleport id="25103" itemId="57" price="0"> <!-- Wizard Isirr -->
+		<coords>
+			<coord x="86092" y="67675" z="-3328"/>
+		</coords>
+	</teleport>
+	<teleport id="25118" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="64853" y="125691" z="-3576"/>
+		</coords>
+	</teleport>
+	<teleport id="25122" itemId="57" price="0"> <!-- Refugee Applicant Leo -->
+		<coords>
+			<coord x="-27820" y="79612" z="-3576" />
+		</coords>
+	</teleport>
+	<teleport id="25125" itemId="57" price="0"> <!-- Tiger King Kata -->
+		<coords>
+			<coord x="135519" y="-17294" z="-2576" />
+		</coords>
+	</teleport>
+	<teleport id="25127" itemId="57" price="0"> <!-- Chief Rashkos -->
+		<coords>
+			<coord x="89085" y="61867" z="-3688" />
+		</coords>
+	</teleport>
+	<teleport id="25128" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="173382" y="25984" z="-3328"/>
+		</coords>
+	</teleport>
+	<teleport id="25131" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="77303" y="-2408" z="-3576"/>
+		</coords>
+	</teleport>
+	<teleport id="25134" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="49081" y="15245" z="-5152"/>
+		</coords>
+	</teleport>
+	<teleport id="25146" itemId="57" price="0"> <!-- Cursed Bifrons -->
+		<coords>
+			<coord x="119277" y="20219" z="-5168" />
+		</coords>
+	</teleport>
+	<teleport id="25152" itemId="57" price="0"> <!-- Cursed Shadir -->
+		<coords>
+			<coord x="119877" y="13565" z="-5184" />
+		</coords>
+	</teleport>
+	<teleport id="25155" itemId="57" price="0"> <!-- Selu -->
+		<coords>
+			<coord x="135981" y="79736" z="-3576" />
+		</coords>
+	</teleport>
+	<teleport id="25158" itemId="57" price="0"> <!-- King Tarlk -->
+		<coords>
+			<coord x="128048" y="-5376" z="-3280" />
+		</coords>
+	</teleport>
+	<teleport id="25159" itemId="57" price="0"> <!-- Paniel the Unicorn -->
+		<coords>
+			<coord x="85179" y="87669" z="-3152" />
+		</coords>
+	</teleport>
+	<teleport id="25163" itemId="57" price="0"> <!-- Roaring Skylancer -->
+		<coords>
+			<coord x="87669" y="108230" z="-3088" />
+		</coords>
+	</teleport>
+	<teleport id="25169" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="67214" y="104712" z="-3600"/>
+		</coords>
+	</teleport>
+	<teleport id="25173" itemId="57" price="0"> <!-- Tiger King Karu -->
+		<coords>
+			<coord x="133703" y="-14093" z="-2656" />
+		</coords>
+	</teleport>
+	<teleport id="25176" itemId="57" price="0"> <!-- Black Lily -->
+		<coords>
+			<coord x="92127" y="119736" z="-2912" />
+		</coords>
+	</teleport>
+	<teleport id="25192" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="59153" y="8566" z="-3680"/>
+		</coords>
+	</teleport>
+	<teleport id="25217" itemId="57" price="0"> <!-- Cursed Kele -->
+		<coords>
+			<coord x="115966" y="10530" z="-5136" />
+		</coords>
+	</teleport>
+	<teleport id="25226" itemId="57" price="0"> <!-- Roaring Lord Kastor -->
+		<coords>
+			<coord x="-27463" y="84255" z="-3464" />
+		</coords>
+	</teleport>
+	<teleport id="25230" itemId="57" price="0"> <!-- Priest Ragoth -->
+		<coords>
+			<coord x="-58461" y="75471" z="-3176" />
+		</coords>
+	</teleport>
+	<teleport id="25241" itemId="57" price="0"> <!-- Hero Tamash -->
+		<coords>
+			<coord x="91330" y="69898" z="-3464" />
+		</coords>
+	</teleport>
+	<teleport id="25252" itemId="57" price="0"> <!-- Palibati Queen Themis -->
+		<coords>
+			<coord x="96835" y="109953" z="-3712" />
+		</coords>
+	</teleport>
+	<teleport id="25255" itemId="57" price="0"> <!-- Tiphon -->
+		<coords>
+			<coord x="85189" y="119998" z="-2944" />
+		</coords>
+	</teleport>
+	<teleport id="25256" itemId="57" price="0"> <!-- High Prefect Arak -->
+		<coords>
+			<coord x="-54418" y="81791" z="-3480" />
+		</coords>
+	</teleport>
+	<teleport id="25260" itemId="57" price="0"> <!-- Iron Giant Totem -->
+		<coords>
+			<coord x="133853" y="-8115" z="-3384" />
+		</coords>
+	</teleport>
+	<teleport id="25283" itemId="57" price="0"> <!-- Lilith -->
+		<coords>
+			<coord x="185059" y="-9610" z="-5488" />
+		</coords>
+	</teleport>
+	<teleport id="25286" itemId="57" price="0"> <!-- Anakim -->
+		<coords>
+			<coord x="-6675" y="18505" z="-5488" />
+		</coords>
+	</teleport>
+	<teleport id="25366" itemId="57" price="0"> <!-- Kuroboros' High Priest -->
+		<coords>
+			<coord x="82341" y="60738" z="-3496" />
+		</coords>
+	</teleport>
+	<teleport id="25369" itemId="57" price="0"> <!-- Cursed Scavenger -->
+		<coords>
+			<coord x="110571" y="11967" z="-5152" />
+		</coords>
+	</teleport>
+	<teleport id="25385" itemId="57" price="0"> <!-- Evil Spirit Tempest -->
+		<coords>
+			<coord x="114815" y="1744" z="-3720" />
+		</coords>
+	</teleport>
+	<teleport id="25388" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="81825" y="-5643" z="-3040" />
+		</coords>
+	</teleport>
+	<teleport id="25392" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="69383" y="127214" z="-3712"/>
+		</coords>
+	</teleport>
+	<teleport id="25398" itemId="57" price="0"> <!-- Gaze of Abyss -->
+		<coords>
+			<coord x="94774" y="81548" z="-3680" />
+		</coords>
+	</teleport>
+	<teleport id="25418" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="81273" y="109691" z="-3056"/>
+		</coords>
+	</teleport>
+	<teleport id="25420" itemId="57" price="0"> <!-- Orfen's Handmaiden -->
+		<coords>
+			<coord x="66911" y="31145" z="-3720" />
+		</coords>
+	</teleport>
+	<teleport id="25423" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="113700" y="47220" z="-4640"/>
+		</coords>
+	</teleport>
+	<teleport id="25431" itemId="57" price="0"> <!-- Flamestone Golem -->
+		<coords>
+			<coord x="158212" y="-13096" z="-2816" />
+		</coords>
+	</teleport>
+	<teleport id="25434" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="90010" y="-6316" z="-3080"/>
+		</coords>
+	</teleport>
+	<teleport id="25441" itemId="57" price="0"> <!-- Cyrion -->
+		<coords>
+			<coord x="81273" y="109691" z="-3056" />
+		</coords>
+	</teleport>
+	<teleport id="25456" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="178254" y="25565" z="-3240"/>
+		</coords>
+	</teleport>
+	<teleport id="25463" itemId="57" price="0"> <!-- Guardian Garangky -->
+		<coords>
+			<coord x="-63757" y="82701" z="-3432" />
+		</coords>
+	</teleport>
+	<teleport id="25473" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="167647" y="20403" z="-3320"/>
+		</coords>
+	</teleport>
+	<teleport id="25475" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="87669" y="108230" z="-3088"/>
+		</coords>
+	</teleport>
+	<teleport id="25478" itemId="57" price="0"> <!-- Shillien's Priest Hisilrome -->
+		<coords>
+			<coord x="91189" y="110550" z="-3808" />
+		</coords>
+	</teleport>
+	<teleport id="25498" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="62534" y="15653" z="-3552"/>
+		</coords>
+	</teleport>
+	<teleport id="25738" itemId="57" price="0"> <!-- Queen Ant Drone Priest -->
+		<coords>
+			<coord x="96002" y="27789" z="-3640" />
+		</coords>
+	</teleport>
+	<teleport id="25739" itemId="57" price="0"> <!-- Angel Priest of Baium -->
+		<coords>
+			<coord x="108543" y="27676" z="-3480" />
+		</coords>
+	</teleport>
+	<teleport id="25742" itemId="57" price="0"> <!-- Priest of Core Decar -->
+		<coords>
+			<coord x="95285" y="20886" z="-3120" />
+		</coords>
+	</teleport>
+	<teleport id="25743" itemId="57" price="0"> <!-- Orfen's Priest Lord Ipos -->
+		<coords>
+			<coord x="102675" y="26799" z="-3376" />
+		</coords>
+	</teleport>
+	<teleport id="25744" itemId="57" price="0"> <!--  -->
+		<coords>
+			<coord x="189534" y="-19018" z="-1080"/>
+		</coords>
+	</teleport>
+	<teleport id="25746" itemId="57" price="0"> <!-- Magikus -->
+		<coords>
+			<coord x="170376" y="-19957" z="-3504" />
+		</coords>
+	</teleport>
+	<teleport id="25747" itemId="57" price="0"> <!-- Rael Mahum Radium -->
+		<coords>
+			<coord x="108414" y="80429" z="-2808" />
+		</coords>
+	</teleport>
+	<teleport id="25748" itemId="57" price="0"> <!-- Rael Mahum Supercium -->
+		<coords>
+			<coord x="107567" y="86892" z="-3144" />
+		</coords>
+	</teleport>
+	<teleport id="25749" itemId="57" price="0"> <!-- Tayga Feron King -->
+		<coords>
+			<coord x="133071" y="6662" z="-4344" />
+		</coords>
+	</teleport>
+	<teleport id="25750" itemId="57" price="0"> <!-- Tayga Marga Shaman -->
+		<coords>
+			<coord x="138820" y="3347" z="-4520" />
+		</coords>
+	</teleport>
+	<teleport id="25751" itemId="57" price="0"> <!-- Tayga Septon Champion -->
+		<coords>
+			<coord x="135274" y="11909" z="-4144" />
+		</coords>
+	</teleport>
+	<teleport id="25754" itemId="57" price="0"> <!-- Flamestone Giant -->
+		<coords>
+			<coord x="155519" y="-20579" z="-1776" />
+		</coords>
+	</teleport>
+	<teleport id="25757" itemId="57" price="0"> <!-- Grousse -->
+		<coords>
+			<coord x="80223" y="85605" z="-3528" />
+		</coords>
+	</teleport>
+	<teleport id="25766" itemId="57" price="0"> <!-- Monster Minotaur -->
+		<coords>
+			<coord x="-47586" y="141472" z="-2920" />
+		</coords>
+	</teleport>
+	<teleport id="25767" itemId="57" price="0"> <!-- Monster Bulleroth -->
+		<coords>
+			<coord x="-51042" y="135662" z="-2920" />
+		</coords>
+	</teleport>
+	<teleport id="25773" itemId="57" price="0"> <!-- Evil Orc Tabris -->
+		<coords>
+			<coord x="-89953" y="105548" z="-3576" />
+		</coords>
+	</teleport>
+	<teleport id="25775" itemId="57" price="0"> <!-- Evil Orc Dephracor -->
+		<coords>
+			<coord x="-94488" y="109525" z="-3784" />
+		</coords>
+	</teleport>
+	<teleport id="25768" itemId="57" price="0"> <!-- Dorcaus -->
+		<coords>
+			<coord x="176307" y="40572" z="-3824" />
+		</coords>
+	</teleport>
+	<teleport id="25769" itemId="57" price="0"> <!-- Kerfaus -->
+		<coords>
+			<coord x="163749" y="42252" z="-3352" />
+		</coords>
+	</teleport>
+	<teleport id="25770" itemId="57" price="0"> <!-- Milinaus -->
+		<coords>
+			<coord x="168081" y="46863" z="-3672" />
+		</coords>
+	</teleport>
+	<teleport id="25365" itemId="57" price="0"> <!-- Patriarch Kuroboros -->
+		<coords>
+			<coord x="89837" y="67707" z="-3664" />
+		</coords>
+	</teleport>
+	<teleport id="25437" itemId="57" price="0"> <!-- Evil Orc Gosmos -->
+		<coords>
+			<coord x="180790" y="37516" z="-4792" />
+		</coords>
+	</teleport>
+	<teleport id="25745" itemId="57" price="0"> <!-- Evil Orc Darphen -->
+		<coords>
+			<coord x="180326" y="43505" z="-3840" />
+		</coords>
+	</teleport>
+	<teleport id="25755" itemId="57" price="0"> <!-- Flame Salamander -->
+		<coords>
+			<coord x="129750" y="-9334" z="-3600" />
+		</coords>
+	</teleport>
+	<teleport id="25756" itemId="57" price="0"> <!-- Fire Dre Vanul -->
+		<coords>
+			<coord x="128767" y="-11501" z="-3664" />
+		</coords>
+	</teleport>
+	<teleport id="25758" itemId="57" price="0"> <!-- Fiend Goblier -->
+		<coords>
+			<coord x="112793" y="-987" z="-3904" />
+		</coords>
+	</teleport>
+	<teleport id="25759" itemId="57" price="0"> <!-- Fiend Cherkia -->
+		<coords>
+			<coord x="119294" y="-1929" z="-3720" />
+		</coords>
+	</teleport>
+	<teleport id="25760" itemId="57" price="0"> <!-- Fiend Harthemon -->
+		<coords>
+			<coord x="123636" y="-4094" z="-3304" />
+		</coords>
+	</teleport>
+	<teleport id="25761" itemId="57" price="0"> <!-- Fiend Sarboth -->
+		<coords>
+			<coord x="120924" y="-7493" z="-3152" />
+		</coords>
+	</teleport>
+	<teleport id="25762" itemId="57" price="0"> <!-- Demon Bedukel -->
+		<coords>
+			<coord x="119518" y="-2860" z="-3760" />
+		</coords>
+	</teleport>
+	<teleport id="25763" itemId="57" price="0"> <!-- Bloody Witch Rumilla -->
+		<coords>
+			<coord x="115975" y="-5424" z="-3416" />
+		</coords>
+	</teleport>
+	<teleport id="25772" itemId="57" price="0"> <!-- Evil Orc Zetahl -->
+		<coords>
+			<coord x="185073" y="36926" z="-4176" />
+		</coords>
+	</teleport>
+	<teleport id="25774" itemId="57" price="0"> <!-- Evil Orc Ravolas -->
+		<coords>
+			<coord x="166837" y="39190" z="-3616" />
+		</coords>
+	</teleport>
+	<teleport id="25776" itemId="57" price="0"> <!-- Evil Orc Turahot -->
+		<coords>
+			<coord x="174507" y="42098" z="-4872" />
+		</coords>
+	</teleport>
+	<teleport id="25777" itemId="57" price="0"> <!-- Evil Orc Turation -->
+		<coords>
+			<coord x="178757" y="41533" z="-3688" />
+		</coords>
+	</teleport>
+	<teleport id="25780" itemId="57" price="0"> <!-- Varbasion -->
+		<coords>
+			<coord x="145002" y="86608" z="-3600" />
+		</coords>
+	</teleport>
+	<teleport id="25781" itemId="57" price="0"> <!-- Varmoni -->
+		<coords>
+			<coord x="147320" y="83986" z="-3624" />
+		</coords>
+	</teleport>
+	<teleport id="25782" itemId="57" price="0"> <!-- Overlord Muscel -->
+		<coords>
+			<coord x="151096" y="83959" z="-3432" />
+		</coords>
+	</teleport>
+	<teleport id="25783" itemId="57" price="0"> <!-- Bathus Elbogen -->
+		<coords>
+			<coord x="148726" y="82720" z="-3264" />
+		</coords>
+	</teleport>
+	<teleport id="25784" itemId="57" price="0"> <!-- Daumen Kshana -->
+		<coords>
+			<coord x="154506" y="81675" z="-3160" />
+		</coords>
+	</teleport>
+	<teleport id="25909" itemId="57" price="0"> <!-- Carcs -->
+		<coords>
+			<coord x="-89105" y="104554" z="-3312" />
+		</coords>
+	</teleport>
+	<teleport id="25910" itemId="57" price="0"> <!-- Drak -->
+		<coords>
+			<coord x="-89635" y="115127" z="-3400" />
+		</coords>
+	</teleport>
+	<teleport id="25911" itemId="57" price="0"> <!-- Ourick -->
+		<coords>
+			<coord x="-92358" y="119334" z="-3488" />
+		</coords>
+	</teleport>
+	<teleport id="25932" itemId="57" price="0"> <!-- Katuba -->
+		<coords>
+			<coord x="130217" y="114691" z="-3768" />
+		</coords>
+	</teleport>
+	<teleport id="25948" itemId="57" price="0"> <!-- Beoro -->
+		<coords>
+			<coord x="26819" y="184028" z="-3416" />
+		</coords>
+	</teleport>
+</list>

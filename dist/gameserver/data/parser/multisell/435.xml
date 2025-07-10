@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="92004" count="1"/>	<!--Inventory Expansion Ticket Lv. 1-->
+		<ingredient id="91113" count="1"/>	<!--Old Inventory Expansion Ticket Lv. 1-->
+	</item>
+	<item>
+		<production id="92005" count="1"/>	<!--Inventory Expansion Ticket Lv. 2-->
+		<ingredient id="91114" count="1"/>	<!--Old Inventory Expansion Ticket Lv. 2-->
+	</item>
+	<item>
+		<production id="92006" count="1"/>	<!--Inventory Expansion Ticket Lv. 3-->
+		<ingredient id="91115" count="1"/>	<!--Old Inventory Expansion Ticket Lv. 3-->
+	</item>
+	<item>
+		<production id="92007" count="1"/>	<!--Inventory Expansion Ticket Lv. 4-->
+		<ingredient id="91296" count="1"/>	<!--Old Inventory Expansion Ticket Lv. 4-->
+	</item>
+	<item>
+		<production id="92008" count="1"/>	<!--Inventory Expansion Ticket Lv. 5-->
+		<ingredient id="91297" count="1"/>	<!--Old Inventory Expansion Ticket Lv. 5-->
+	</item>
+</list>

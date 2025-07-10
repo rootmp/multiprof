@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="38500">
+		<!--P. Accuracy +2.5-->
+	</option_data>
+	<option_data id="38501">
+		<!--P. Accuracy +3.0-->
+	</option_data>
+	<option_data id="38502">
+		<!--P. Accuracy +3.5-->
+	</option_data>
+	<option_data id="38503">
+		<!--P. Accuracy +5.0-->
+	</option_data>
+	<option_data id="38504">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38505">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38506">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38507">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38508">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38509">
+		<!--M. Accuracy +1.1-->
+	</option_data>
+	<option_data id="38510">
+		<!--M. Accuracy +1.2-->
+	</option_data>
+	<option_data id="38511">
+		<!--M. Accuracy +1.2-->
+	</option_data>
+	<option_data id="38512">
+		<!--M. Accuracy +1.3-->
+	</option_data>
+	<option_data id="38513">
+		<!--M. Accuracy +1.3-->
+	</option_data>
+	<option_data id="38514">
+		<!--M. Accuracy +1.3-->
+	</option_data>
+	<option_data id="38515">
+		<!--M. Accuracy +1.4-->
+	</option_data>
+	<option_data id="38516">
+		<!--M. Accuracy +1.4-->
+	</option_data>
+	<option_data id="38517">
+		<!--M. Accuracy +1.6-->
+	</option_data>
+	<option_data id="38518">
+		<!--M. Accuracy +1.8-->
+	</option_data>
+	<option_data id="38519">
+		<!--M. Accuracy +2.0-->
+	</option_data>
+	<option_data id="38520">
+		<!--M. Accuracy +2.5-->
+	</option_data>
+	<option_data id="38521">
+		<!--M. Accuracy +3.0-->
+	</option_data>
+	<option_data id="38522">
+		<!--M. Accuracy +3.5-->
+	</option_data>
+	<option_data id="38523">
+		<!--M. Accuracy +5.0-->
+	</option_data>
+	<option_data id="38524">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38525">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38526">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38527">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38528">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38529">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38530">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38531">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38532">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38533">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38534">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38535">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38536">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38537">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="38538">
+		<!--Melee Weapon Resistance +3%-->
+	</option_data>
+	<option_data id="38539">
+		<!--Melee Weapon Resistance +3%-->
+	</option_data>
+	<option_data id="38540">
+		<!--Melee Weapon Resistance +4%-->
+	</option_data>
+	<option_data id="38541">
+		<!--Melee Weapon Resistance +5%-->
+	</option_data>
+	<option_data id="38542">
+		<!--Melee Weapon Resistance +7%-->
+	</option_data>
+	<option_data id="38543">
+		<!--Melee Weapon Resistance +10%-->
+	</option_data>
+	<option_data id="38544">
+		<!--Max HP +5-->
+	</option_data>
+	<option_data id="38545">
+		<!--Max HP +8-->
+	</option_data>
+	<option_data id="38546">
+		<!--Max HP +11-->
+	</option_data>
+	<option_data id="38547">
+		<!--Max HP +14-->
+	</option_data>
+	<option_data id="38548">
+		<!--Max HP +17-->
+	</option_data>
+	<option_data id="38549">
+		<!--Max HP +20-->
+	</option_data>
+	<option_data id="38550">
+		<!--Max HP +23-->
+	</option_data>
+	<option_data id="38551">
+		<!--Max HP +26-->
+	</option_data>
+	<option_data id="38552">
+		<!--Max HP +30-->
+	</option_data>
+	<option_data id="38553">
+		<!--Max HP +33-->
+	</option_data>
+	<option_data id="38554">
+		<!--Max HP +36-->
+	</option_data>
+	<option_data id="38555">
+		<!--Max HP +39-->
+	</option_data>
+	<option_data id="38556">
+		<!--Max HP +42-->
+	</option_data>
+	<option_data id="38557">
+		<!--Max HP +45-->
+	</option_data>
+	<option_data id="38558">
+		<!--Max HP +48-->
+	</option_data>
+	<option_data id="38559">
+		<!--Max HP +60-->
+	</option_data>
+	<option_data id="38560">
+		<!--Max HP +70-->
+	</option_data>
+	<option_data id="38561">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="38562">
+		<!--Max HP +80-->
+	</option_data>
+	<option_data id="38563">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="38564">
+		<!--Max MP +5-->
+	</option_data>
+	<option_data id="38565">
+		<!--Max MP +8-->
+	</option_data>
+	<option_data id="38566">
+		<!--Max MP +11-->
+	</option_data>
+	<option_data id="38567">
+		<!--Max MP +14-->
+	</option_data>
+	<option_data id="38568">
+		<!--Max MP +17-->
+	</option_data>
+	<option_data id="38569">
+		<!--Max MP +20-->
+	</option_data>
+	<option_data id="38570">
+		<!--Max MP +23-->
+	</option_data>
+	<option_data id="38571">
+		<!--Max MP +26-->
+	</option_data>
+	<option_data id="38572">
+		<!--Max MP +30-->
+	</option_data>
+	<option_data id="38573">
+		<!--Max MP +33-->
+	</option_data>
+	<option_data id="38574">
+		<!--Max MP +36-->
+	</option_data>
+	<option_data id="38575">
+		<!--Max MP +39-->
+	</option_data>
+	<option_data id="38576">
+		<!--Max MP +42-->
+	</option_data>
+	<option_data id="38577">
+		<!--Max MP +45-->
+	</option_data>
+	<option_data id="38578">
+		<!--Max MP +48-->
+	</option_data>
+	<option_data id="38579">
+		<!--Max MP +60-->
+	</option_data>
+	<option_data id="38580">
+		<!--Max MP +70-->
+	</option_data>
+	<option_data id="38581">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="38582">
+		<!--Max MP +80-->
+	</option_data>
+	<option_data id="38583">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="38584">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="38585">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="38586">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="38587">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="38588">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="38589">
+		<!--P. Evasion +1.1-->
+	</option_data>
+	<option_data id="38590">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="38591">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="38592">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="38593">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="38594">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="38595">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="38596">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="38597">
+		<!--P. Evasion +1.6-->
+	</option_data>
+	<option_data id="38598">
+		<!--P. Evasion +1.8-->
+	</option_data>
+	<option_data id="38599">
+		<!--P. Evasion +2.0-->
+	</option_data>
+</list>

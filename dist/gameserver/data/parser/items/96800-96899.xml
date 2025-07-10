@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="96800" name="+0 ~ +5 Talisman of Eva Pack" add_name="Sealed">
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92018" count="1" chance="0.01"/><!--Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="92018" count="1" chance="0.01" enchant="1"/><!--Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="92018" count="1" chance="0.01" enchant="2"/><!--Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="92018" count="1" chance="0.01" enchant="3"/><!--Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="92018" count="1" chance="0.01" enchant="4"/><!--Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="92018" count="1" chance="0.01" enchant="5"/><!--Talisman of Eva--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96801" name="100,000 Adena Pack" add_name="Sealed">
+		<set name="icon" value="icon.event_hero_treasure_box_blue"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="57" min_count="100000" max_count="100000" chance="100"/><!-- adena -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96802" name="500,000 Adena Pack" add_name="Sealed">
+		<set name="icon" value="icon.event_hero_treasure_box_silver"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="57" min_count="500000" max_count="500000" chance="100"/><!-- adena -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96803" name="5 Million Adena Pack" add_name="Sealed">
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="57" min_count="5000000" max_count="5000000" chance="100"/><!-- adena -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96804" name="Package: Full Plate Boots' Hassle Collection (Exchangeable)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t62_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="2438" count="1" chance="0.01" enchant="8"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="2438" count="1" chance="0.01" enchant="7"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="2438" count="1" chance="0.01" enchant="6"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="2438" count="1" chance="0.01" enchant="5"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="2438" count="1" chance="0.01" enchant="4"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="2438" count="1" chance="0.01"/><!--Full Plate Boots--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96805" name="Package: Full Plate Boots' Hassle Collection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t62_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93640" count="1" chance="0.01" enchant="8"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="93640" count="1" chance="0.01" enchant="7"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="93640" count="1" chance="0.01" enchant="6"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="93640" count="1" chance="0.01" enchant="5"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="93640" count="1" chance="0.01" enchant="4"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="93640" count="1" chance="0.01"/><!--Full Plate Boots--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96806" name="Ancient Coin (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_coins_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<armor id="96807" name="High-grade Ancient Armor - A-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="100"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="96808" name="Ancient Armor - A-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="100"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="96809" name="High-grade Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="100"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="96810" name="Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="100"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="96811" name="High-grade Ancient Armor - C-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="100"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="96812" name="Ancient Armor - C-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="100"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="96813" name="Ancient Armor - D-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="100"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<weapon id="96814" name="Ancient Weapon - A-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="10"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="96815" name="Ancient Weapon - B-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="10"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="96816" name="High-grade Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="10"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="96817" name="Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="10"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="96818" name="Ancient Weapon - D-grade (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="10"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<etcitem id="96819" name="Extra Pass: Ancient Pirates' Tomb" add_name="Sealed">
+		<set name="icon" value="icon.etc_ticket_red_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96820" name="Pack of Seals (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bm_jewelbox_main_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92314" min_count="1" max_count="1" chance="100"/><!--Giran Seal-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94861" count="1" chance="0.01"/><!--Spellbook: Tranquillity--><!--TODO: Check chance-->
+			<create_item id="96670" count="1" chance="0.01"/><!--Spellbook: Critical Assault--><!--TODO: Check chance-->
+			<create_item id="96671" count="1" chance="0.01"/><!--Spellbook: Fury Blade--><!--TODO: Check chance-->
+			<create_item id="96672" count="1" chance="0.01"/><!--Spellbook: Mortal Piercing--><!--TODO: Check chance-->
+			<create_item id="95354" count="1" chance="0.01"/><!--Spellbook: Dragon Strike--><!--TODO: Check chance-->
+			<create_item id="95347" count="1" chance="0.01"/><!--Spellbook: Rolling Dice--><!--TODO: Check chance-->
+			<create_item id="95861" count="1" chance="0.01"/><!--Spellbook: Mechanical Hero--><!--TODO: Check chance-->
+			<create_item id="95346" count="1" chance="0.01"/><!--Spellbook: Meteor--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94862" count="1" chance="0.01"/><!--Spellbook: Exclusion--><!--TODO: Check chance-->
+			<create_item id="94863" count="1" chance="0.01"/><!--Spellbook: Dark Disruption--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="96297" count="1" chance="0.01"/><!--Frost Lord's Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="96650" count="1" chance="0.01"/><!--Armor of Protection Pack--><!--TODO: Check chance-->
+			<create_item id="96616" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="90992" count="1" chance="0.01"/><!--Antharas' Earring--><!--TODO: Check chance-->
+			<create_item id="96600" count="1" chance="0.01"/><!--Beleth' Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="96357" count="1" chance="0.01"/><!--STR Dye--><!--TODO: Check chance-->
+			<create_item id="96377" count="1" chance="0.01"/><!--CON Dye--><!--TODO: Check chance-->
+			<create_item id="96417" count="1" chance="0.01"/><!--INT Dye--><!--TODO: Check chance-->
+			<create_item id="96397" count="1" chance="0.01"/><!--DEX Dye--><!--TODO: Check chance-->
+			<create_item id="96437" count="1" chance="0.01"/><!--MEN Dye--><!--TODO: Check chance-->
+			<create_item id="96457" count="1" chance="0.01"/><!--WIT Dye--><!--TODO: Check chance-->
+			<create_item id="93739" count="1" chance="0.01"/><!--Package: Giran Seal (1000 pcs.)--><!--TODO: Check chance-->
+			<create_item id="95773" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="92034" count="1" chance="0.01"/><!--Reinforced Jewelry Box--><!--TODO: Check chance-->
+			<create_item id="94269" count="5" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="5" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="49674" count="5" chance="0.01"/><!--XP Growth Scroll--><!--TODO: Check chance-->
+			<create_item id="96623" count="1" chance="0.01"/><!--Dye Powder--><!--TODO: Check chance-->
+			<create_item id="91641" count="10" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="91690" count="50" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96821" name="Kit: Pack of Seals (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96820" min_count="100" max_count="100" chance="100"/><!--Pack of Seals (Time-limited)-->
+			<capsuled_item id="96729" min_count="100" max_count="100" chance="100"/><!--Einhasad's Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96822" name="Package: +5 High-grade Ancient Armor - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96807" min_count="1" max_count="1" chance="100" enchant="5"/><!--High-grade Ancient Armor - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96823" name="Package: +4 High-grade Ancient Armor - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96807" min_count="1" max_count="1" chance="100" enchant="4"/><!--High-grade Ancient Armor - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96824" name="Package: High-grade Ancient Armor - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96807" min_count="1" max_count="1" chance="100"/><!--High-grade Ancient Armor - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96825" name="Package: +5 Ancient Armor - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96808" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ancient Armor - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96826" name="Package: +4 Ancient Armor - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96808" min_count="1" max_count="1" chance="100" enchant="4"/><!--Ancient Armor - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96827" name="Package: Ancient Armor - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96808" min_count="1" max_count="1" chance="100"/><!--Ancient Armor - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96828" name="Package: +6 High-grade Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96809" min_count="1" max_count="1" chance="100" enchant="6"/><!--High-grade Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96829" name="Package: +5 High-grade Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96809" min_count="1" max_count="1" chance="100" enchant="5"/><!--High-grade Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96830" name="Package: +4 High-grade Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96809" min_count="1" max_count="1" chance="100" enchant="4"/><!--High-grade Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96831" name="Package: High-grade Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96809" min_count="1" max_count="1" chance="100"/><!--High-grade Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96832" name="Package: +6 Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96810" min_count="1" max_count="1" chance="100" enchant="6"/><!--Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96833" name="Package: +5 Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96810" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96834" name="Package: +4 Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96810" min_count="1" max_count="1" chance="100" enchant="4"/><!--Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96835" name="Package: +3 Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96810" min_count="1" max_count="1" chance="100" enchant="3"/><!--Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96836" name="Package: Ancient Armor - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96810" min_count="1" max_count="1" chance="100"/><!--Ancient Armor - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96837" name="Package: +6 High-grade Ancient Armor - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96811" min_count="1" max_count="1" chance="100" enchant="6"/><!--High-grade Ancient Armor - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96838" name="Package: +4 High-grade Ancient Armor - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96811" min_count="1" max_count="1" chance="100" enchant="4"/><!--High-grade Ancient Armor - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96839" name="High-grade Ancient Armor - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96811" min_count="1" max_count="1" chance="100"/><!--High-grade Ancient Armor - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96840" name="Package: +4 Ancient Armor - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96812" min_count="1" max_count="1" chance="100" enchant="4"/><!--Ancient Armor - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96841" name="Package: Ancient Armor - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96812" min_count="1" max_count="1" chance="100"/><!--Ancient Armor - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96842" name="Package: +5 Ancient Armor - D-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96813" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ancient Armor - D-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96843" name="Package: +4 Ancient Armor - D-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96813" min_count="1" max_count="1" chance="100" enchant="4"/><!--Ancient Armor - D-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96844" name="Package: Ancient Armor - D-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pirate_crew_change"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96813" min_count="1" max_count="1" chance="100"/><!--Ancient Armor - D-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96845" name="Package: +5 Ancient Weapon - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96814" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ancient Weapon - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96846" name="Package: +4 Ancient Weapon - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96814" min_count="1" max_count="1" chance="100" enchant="4"/><!--Ancient Weapon - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96847" name="Package Ancient Weapon - A-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96814" min_count="1" max_count="1" chance="100"/><!--Ancient Weapon - A-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96848" name="Package: +9 Ancient Weapon - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96815" min_count="1" max_count="1" chance="100" enchant="9"/><!--Ancient Weapon - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96849" name="Package: +4 Ancient Weapon - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96815" min_count="1" max_count="1" chance="100" enchant="4"/><!--Ancient Weapon - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96850" name="Package: Ancient Weapon - B-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96815" min_count="1" max_count="1" chance="100"/><!--Ancient Weapon - B-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96851" name="Package: +12 High-grade Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96816" min_count="1" max_count="1" chance="100" enchant="12"/><!--High-grade Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96852" name="Package: +10 High-grade Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96816" min_count="1" max_count="1" chance="100" enchant="10"/><!--High-grade Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96853" name="Package: +5 High-grade Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96816" min_count="1" max_count="1" chance="100" enchant="5"/><!--High-grade Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96854" name="Package: +4 High-grade Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96816" min_count="1" max_count="1" chance="100" enchant="4"/><!--High-grade Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96855" name="Package: High-grade Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96816" min_count="1" max_count="1" chance="100"/><!--High-grade Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96856" name="Package: +9 Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96817" min_count="1" max_count="1" chance="100" enchant="9"/><!--Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96857" name="Package: +7 Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96817" min_count="1" max_count="1" chance="100" enchant="7"/><!--Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96858" name="Package: +5 Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96817" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96859" name="Package: +4 Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96817" min_count="1" max_count="1" chance="100" enchant="4"/><!--Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96860" name="Package: Ancient Weapon - C-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96817" min_count="1" max_count="1" chance="100"/><!--Ancient Weapon - C-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96861" name="Package: +9 Ancient Weapon - D-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96818" min_count="1" max_count="1" chance="100" enchant="9"/><!--Ancient Weapon - D-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96862" name="Package: +7 Ancient Weapon - D-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96818" min_count="1" max_count="1" chance="100" enchant="7"/><!--Ancient Weapon - D-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96863" name="Package: +4 Ancient Weapon - D-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96818" min_count="1" max_count="1" chance="100" enchant="4"/><!--Ancient Weapon - D-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96864" name="Package: Ancient Weapon - D-grade (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96818" min_count="1" max_count="1" chance="100"/><!--Ancient Weapon - D-grade (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96865" name="Cloak of Archer Appearance" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96866" name="For monsters_Dream Dungeon_Staff - Not Available">
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96867" name="For monsters_Dream Dungeon_Two-handed Sword - Not Available">
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96868" name="Ancient Supplies (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96869" name="Package: +1 Beleth' Ring" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96870" name="Package: +2 Beleth' Ring" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96871" name="Package: +3 Beleth' Ring" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96872" name="Package: Talisman of Hellbound Lv. 5" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96873" name="Spellbook: Legendary Archer">
+		<!--A spellbook for learning the Legendary Archer skill.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\nTrickster\n\n<Skill effect>\n- Grants a new appearance unique for each race.\n- Increases P. Atk.\n- Increases P. Skill Critical Rate.\n- Increases P. Skill Critical Damage.\n- Increases Max HP.\n- Increases Melee Weapon Resistance.\n- Temporarily increases the Lethal Shot and Twin Shot skills.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96874" name="Spellbook: True Aim">
+		<!--A spellbook for learning the True Aim skill.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\n\n<Skill effect>\n- Increases P. Atk. when using a bow.\n- Increases Shock/ Suppression Atk. Rate.\n- With a certain chance after an attack, applies a debuff that decreases Bow Resistance and Shock Resistance.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96875" name="Spellbook: Deadly Shooter">
+		<!--A spellbook for learning the Deadly Shooter skill.\n\n<Class>\nTrickster\n\n<Skill effect>\n- Increases P. Atk. when using a bow.\n- Increases P. Skill Power.\n- Increases Fear/ Hold Atk. Rate.\n- Increases Atk. Spd./ P. Accuracy when using a bow.\n- With a certain chance after an attack, applies a debuff that decreases Bow Resistance.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96876" name="Spellbook: Thorn Shot">
+		<!--A spellbook for learning the Thorn Shot skill.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\n\n<Skill effect>\nShoots the target's leg nailing them to the ground.\nDecreases the target's Speed and makes them unable to use gap-closing skills.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96877" name="Spellbook: Chain Arrest">
+		<!--A spellbook for learning the Chain Arrest skill.\n\n<Class>\nTrickster\n\n<Skill effect>\nAttacks the target and enemies around them inflicting Hold on them.\nThe skill affects enemies one by one, starting from the nearest to the target.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96878" name="Spellbook: Flame Arrow">
+		<!--A spellbook for learning the Flame Arrow skill.\n\n<Class>\nSagittarius\n\n<Skill effect>\nAttacks enemies at the front.\nConstantly decreases the target's HP.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96879" name="Spellbook: Arrow Shower">
+		<!--A spellbook for learning the Arrow Shower skill.\n\n<Class>\nMoonlight Sentinel\n\n<Skill effect>\nAttacks the target and enemies around them, decreasing their Atk. Spd./ Casting Spd./ Speed.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96880" name="Spellbook: Piercing Arrow">
+		<!--A spellbook for learning the Piercing Arrow skill.\n\n<Class>\nGhost Sentinel\n\n<Skill effect>\nAttacks enemies in line, decreasing their P. Atk./ M. Atk./ P. Def./ M. Def.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96881" name="Spellbook: Devious Shot">
+		<!--A spellbook for learning the Devious Shot skill.\n\n<Class>\nTrickster\n\n<Skill effect>\nAttacks the target and enemies around them.\nThe skill affects enemies one by one, starting from the nearest to the target.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96882" name="Spellbook: Steady Aim">
+		<!--A spellbook for learning the Steady Aim skill.\n\n<Class>\nSagittarius\n\n<Skill effect>\nIncreases P. Atk./ Critical Rate for basic attacks/ P. Skill Critical Rate/ P. Accuracy.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96883" name="Spellbook: Alacrity">
+		<!--A spellbook for learning the Alacrity skill.\n\n<Class>\nMoonlight Sentinel\n\n<Skill effect>\nIncreases P. Atk./ Atk. Spd./ Speed.\nDecreases P. Skill Cooldown.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96884" name="Spellbook: Eagle Eye">
+		<!--A spellbook for learning the Eagle Eye skill.\n\n<Class>\nGhost Sentinel\n\n<Skill effect>\n\nIncreases P. Atk./ P. Critical Damage/ P. Skill Critical Damage/ P. Accuracy.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96885" name="Spellbook: Dexterous Body">
+		<!--A spellbook for learning the Dexterous Body skill.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\nTrickster\n\n<Skill effect>\nThe skill effect depends on your DEX.\n- Increases P. Atk. when using a bow.\n- Enhances the Stun Shot and Mental Panic Shot skills.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96886" name="Spellbook: Perfect Mastery">
+		<!--A spellbook for learning the Ultimate Evasion Lv. 3/ Ultimate Escape Lv. 3.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\nTrickster\n\n<Skill effect>\nAdds new effects to learnt skills.\n- Decreases Skill Cooldown.\n- Adds the Debuff/ Anomaly Resistance effect.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96887" name="Spellbook: Legendary Archer" add_name="Sealed">
+		<!--A spellbook for learning the Legendary Archer skill.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\nTrickster\n\n<Skill effect>\n- Grants a new appearance unique for each race.\n- Increases P. Atk.\n- Increases P. Skill Critical Rate.\n- Increases P. Skill Critical Damage.\n- Increases Max HP.\n- Increases Melee Weapon Resistance.\n- Temporarily increases the Lethal Shot and Twin Shot skills.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96888" name="Spellbook: True Aim" add_name="Sealed">
+		<!--A spellbook for learning the True Aim skill.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\n\n<Skill effect>\n- Increases P. Atk. when using a bow.\n- Increases Shock/ Suppression Atk. Rate.\n- With a certain chance after an attack, applies a debuff that decreases Bow Resistance and Shock Resistance.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96889" name="Spellbook: Deadly Shooter" add_name="Sealed">
+		<!--A spellbook for learning the Deadly Shooter skill.\n\n<Class>\nTrickster\n\n<Skill effect>\n- Increases P. Atk. when using a bow.\n- Increases P. Skill Power.\n- Increases Fear/ Hold Atk. Rate.\n- Increases Atk. Spd./ P. Accuracy when using a bow.\n- With a certain chance after an attack, applies a debuff that decreases Bow Resistance.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96890" name="Spellbook: Thorn Shot" add_name="Sealed">
+		<!--A spellbook for learning the Thorn Shot skill.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\n\n<Skill effect>\nShoots the target's leg nailing them to the ground.\nDecreases the target's Speed and makes them unable to use gap-closing skills.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96891" name="Spellbook: Chain Arrest" add_name="Sealed">
+		<!--A spellbook for learning the Chain Arrest skill.\n\n<Class>\nTrickster\n\n<Skill effect>\nAttacks the target and enemies around them inflicting Hold on them.\nThe skill affects enemies one by one, starting from the nearest to the target.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96892" name="Spellbook: Flame Arrow" add_name="Sealed">
+		<!--A spellbook for learning the Flame Arrow skill.\n\n<Class>\nSagittarius\n\n<Skill effect>\nAttacks enemies at the front.\nConstantly decreases the target's HP.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96893" name="Spellbook: Arrow Shower" add_name="Sealed">
+		<!--A spellbook for learning the Arrow Shower skill.\n\n<Class>\nMoonlight Sentinel\n\n<Skill effect>\nAttacks the target and enemies around them, decreasing their Atk. Spd./ Casting Spd./ Speed.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96894" name="Spellbook: Piercing Arrow" add_name="Sealed">
+		<!--A spellbook for learning the Piercing Arrow skill.\n\n<Class>\nGhost Sentinel\n\n<Skill effect>\nAttacks enemies in line, decreasing their P. Atk./ M. Atk./ P. Def./ M. Def.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96895" name="Spellbook: Devious Shot" add_name="Sealed">
+		<!--A spellbook for learning the Devious Shot skill.\n\n<Class>\nTrickster\n\n<Skill effect>\nAttacks the target and enemies around them.\nThe skill affects enemies one by one, starting from the nearest to the target.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96896" name="Spellbook: Steady Aim" add_name="Sealed">
+		<!--A spellbook for learning the Steady Aim skill.\n\n<Class>\nSagittarius\n\n<Skill effect>\nIncreases P. Atk./ Critical Rate for basic attacks/ P. Skill Critical Rate/ P. Accuracy.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96897" name="Spellbook: Alacrity" add_name="Sealed">
+		<!--A spellbook for learning the Alacrity skill.\n\n<Class>\nMoonlight Sentinel\n\n<Skill effect>\nIncreases P. Atk./ Atk. Spd./ Speed.\nDecreases P. Skill Cooldown.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96898" name="Spellbook: Eagle Eye" add_name="Sealed">
+		<!--A spellbook for learning the Eagle Eye skill.\n\n<Class>\nGhost Sentinel\n\n<Skill effect>\n\nIncreases P. Atk./ P. Critical Damage/ P. Skill Critical Damage/ P. Accuracy.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96899" name="Spellbook: Dexterous Body" add_name="Sealed">
+		<!--A spellbook for learning the Dexterous Body skill.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\nTrickster\n\n<Skill effect>\nThe skill effect depends on your DEX.\n- Increases P. Atk. when using a bow.\n- Enhances the Stun Shot and Mental Panic Shot skills.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+</list>

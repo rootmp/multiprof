@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="115"><!--Dominator-->
+		<skill id="1405" level="3" min_level="76" cost="4500000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8620;96093" count="1"/><!--Buff Expansion Book Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="4" min_level="76" cost="4500000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8621;96094" count="1"/><!--Buff Expansion Book Lv. 4-->
+			</required_items>
+		</skill>
+		<skill id="252" level="46" min_level="76" cost="4500000"/><!--Light Armor Mastery-->
+		<skill id="251" level="46" min_level="76" cost="4500000"/><!--Robe Mastery-->
+		<skill id="250" level="43" min_level="76" cost="4500000"/><!--Weapon Mastery-->
+		<skill id="253" level="44" min_level="76" cost="4500000"/><!--Heavy Armor Mastery-->
+		<skill id="45188" level="1" min_level="76"><!--Evolution Defense-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1245" level="15" min_level="76" cost="4500000"/><!--Steal Essence-->
+		<skill id="1007" level="4" min_level="76" cost="4500000"><!--Chant of Might-->
+			<required_items>
+				<item id="94135;95517" count="1"/><!--Master's Book: Might-->
+			</required_items>
+		</skill>
+		<skill id="1009" level="4" min_level="76" cost="4500000"><!--Chant of Shield-->
+			<required_items>
+				<item id="94136;95518" count="1"/><!--Master's Book: Shield-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="1" min_level="76" cost="4500000"><!--Detection-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1837" level="1" min_level="76" cost="4500000"/><!--Mount Black Bear-->
+		<skill id="1246" level="13" min_level="76" cost="4500000"/><!--Seal of Silence-->
+		<skill id="1099" level="16" min_level="76" cost="4500000"/><!--Seal of Slow-->
+		<skill id="1104" level="15" min_level="76" cost="4500000"/><!--Seal of Winter-->
+		<skill id="1247" level="15" min_level="76" cost="4500000"/><!--Seal of Scourge-->
+		<skill id="1208" level="18" min_level="76" cost="4500000"/><!--Seal of Binding-->
+		<skill id="1248" level="13" min_level="76" cost="4500000"/><!--Seal of Suspension-->
+		<skill id="1096" level="17" min_level="76" cost="4500000"/><!--Seal of Chaos-->
+		<skill id="1460" level="1" min_level="76" cost="4500000"><!--Mana Gain-->
+			<required_items>
+				<item id="90106" count="1"/><!--Scroll: Mana Gain-->
+			</required_items>
+		</skill>
+		<skill id="1414" level="1" min_level="76" cost="4500000"><!--Prophecy of Pa'agrio-->
+			<required_items>
+				<item id="90117" count="1"/><!--Scroll: Prophecy of Pa'agrio-->
+			</required_items>
+		</skill>
+		<skill id="1306" level="11" min_level="76" cost="4500000"/><!--Ritual of Life-->
+		<skill id="1256" level="14" min_level="76" cost="4500000"/><!--Pa'agrio's Heart-->
+		<skill id="260" level="38" min_level="76" cost="4500000"/><!--Power Break-->
+		<skill id="1097" level="21" min_level="76" cost="4500000"/><!--Dreaming Spirit-->
+		<skill id="1610" level="21" min_level="76" cost="4500000"/><!--Life Rescue-->
+		<skill id="1092" level="20" min_level="76" cost="4500000"/><!--Fear-->
+		<skill id="190" level="38" min_level="76" cost="4500000"/><!--Fatal Strike-->
+		<skill id="1305" level="11" min_level="76" cost="4500000"/><!--Pa'agrio's Honor-->
+		<skill id="252" level="47" min_level="77" cost="4500000"/><!--Light Armor Mastery-->
+		<skill id="251" level="47" min_level="77" cost="4500000"/><!--Robe Mastery-->
+		<skill id="250" level="44" min_level="77" cost="4500000"/><!--Weapon Mastery-->
+		<skill id="253" level="45" min_level="77" cost="4500000"/><!--Heavy Armor Mastery-->
+		<skill id="1367" level="1" min_level="77" cost="4500000"><!--Seal of Disease-->
+			<required_items>
+				<item id="90118" count="1"/><!--Scroll: Seal of Disease-->
+			</required_items>
+		</skill>
+		<skill id="1460" level="2" min_level="77" cost="4500000"/><!--Mana Gain-->
+		<skill id="260" level="39" min_level="77" cost="4500000"/><!--Power Break-->
+		<skill id="1610" level="22" min_level="77" cost="4500000"/><!--Life Rescue-->
+		<skill id="190" level="39" min_level="77" cost="4500000"/><!--Fatal Strike-->
+		<skill id="252" level="48" min_level="78" cost="9800000"/><!--Light Armor Mastery-->
+		<skill id="251" level="48" min_level="78" cost="9800000"/><!--Robe Mastery-->
+		<skill id="250" level="45" min_level="78" cost="9800000"/><!--Weapon Mastery-->
+		<skill id="253" level="46" min_level="78" cost="9800000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="16" min_level="78" cost="9800000"/><!--Steal Essence-->
+		<skill id="1416" level="1" min_level="78" cost="9800000"><!--Pa'agrio's Fist-->
+			<required_items>
+				<item id="90119" count="1"/><!--Scroll: Pa'agrio's Fist-->
+			</required_items>
+		</skill>
+		<skill id="1246" level="14" min_level="78" cost="9800000"/><!--Seal of Silence-->
+		<skill id="1099" level="17" min_level="78" cost="9800000"/><!--Seal of Slow-->
+		<skill id="1104" level="16" min_level="78" cost="9800000"/><!--Seal of Winter-->
+		<skill id="1247" level="16" min_level="78" cost="9800000"/><!--Seal of Scourge-->
+		<skill id="1208" level="19" min_level="78" cost="9800000"/><!--Seal of Binding-->
+		<skill id="1248" level="14" min_level="78" cost="9800000"/><!--Seal of Suspension-->
+		<skill id="1096" level="18" min_level="78" cost="9800000"/><!--Seal of Chaos-->
+		<skill id="1460" level="3" min_level="78" cost="9800000"/><!--Mana Gain-->
+		<skill id="1306" level="12" min_level="78" cost="9800000"/><!--Ritual of Life-->
+		<skill id="1256" level="15" min_level="78" cost="9800000"/><!--Pa'agrio's Heart-->
+		<skill id="260" level="40" min_level="78" cost="9800000"/><!--Power Break-->
+		<skill id="1097" level="22" min_level="78" cost="9800000"/><!--Dreaming Spirit-->
+		<skill id="1610" level="23" min_level="78" cost="9800000"/><!--Life Rescue-->
+		<skill id="1092" level="21" min_level="78" cost="9800000"/><!--Fear-->
+		<skill id="190" level="40" min_level="78" cost="9800000"/><!--Fatal Strike-->
+		<skill id="1305" level="12" min_level="78" cost="9800000"/><!--Pa'agrio's Honor-->
+		<skill id="1246" level="15" min_level="79" cost="9800000"/><!--Seal of Silence-->
+		<skill id="1462" level="1" min_level="79" cost="9800000"><!--Seal of Blockade-->
+			<required_items>
+				<item id="91487" count="1"/><!--Scroll: Seal of Blockade-->
+			</required_items>
+		</skill>
+		<skill id="1099" level="18" min_level="79" cost="9800000"/><!--Seal of Slow-->
+		<skill id="1104" level="17" min_level="79" cost="9800000"/><!--Seal of Winter-->
+		<skill id="1208" level="20" min_level="79" cost="9800000"/><!--Seal of Binding-->
+		<skill id="1248" level="15" min_level="79" cost="9800000"/><!--Seal of Suspension-->
+		<skill id="1366" level="1" min_level="79" cost="9800000"><!--Seal of Despair-->
+			<required_items>
+				<item id="90120" count="1"/><!--Scroll: Seal of Despair-->
+			</required_items>
+		</skill>
+		<skill id="1460" level="4" min_level="79" cost="9800000"/><!--Mana Gain-->
+		<skill id="1306" level="13" min_level="79" cost="9800000"/><!--Ritual of Life-->
+		<skill id="1610" level="24" min_level="79" cost="9800000"/><!--Life Rescue-->
+		<skill id="1305" level="13" min_level="79" cost="9800000"/><!--Pa'agrio's Honor-->
+		<skill id="252" level="49" min_level="80" cost="9800000"/><!--Light Armor Mastery-->
+		<skill id="251" level="49" min_level="80" cost="9800000"/><!--Robe Mastery-->
+		<skill id="250" level="46" min_level="80" cost="9800000"/><!--Weapon Mastery-->
+		<skill id="253" level="47" min_level="80" cost="9800000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="17" min_level="80" cost="9800000"/><!--Steal Essence-->
+		<skill id="1832" level="4" min_level="80" cost="2400000"><!--Spell Master-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45189" level="1" min_level="80"><!--Evolution Power-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1246" level="16" min_level="80" cost="9800000"/><!--Seal of Silence-->
+		<skill id="1099" level="19" min_level="80" cost="9800000"/><!--Seal of Slow-->
+		<skill id="1104" level="18" min_level="80" cost="9800000"/><!--Seal of Winter-->
+		<skill id="1208" level="21" min_level="80" cost="9800000"/><!--Seal of Binding-->
+		<skill id="1248" level="16" min_level="80" cost="9800000"/><!--Seal of Suspension-->
+		<skill id="1366" level="2" min_level="80" cost="9800000"/><!--Seal of Despair-->
+		<skill id="1460" level="5" min_level="80" cost="9800000"/><!--Mana Gain-->
+		<skill id="1306" level="14" min_level="80" cost="9800000"/><!--Ritual of Life-->
+		<skill id="1256" level="16" min_level="80" cost="9800000"/><!--Pa'agrio's Heart-->
+		<skill id="1097" level="23" min_level="80" cost="9800000"/><!--Dreaming Spirit-->
+		<skill id="1610" level="25" min_level="80" cost="9800000"/><!--Life Rescue-->
+		<skill id="54102" level="1" min_level="80"><!--White Guardian Transformation-->
+			<required_items>
+				<item id="92401;95502" count="1"/><!--Spellbook: White Guardian-->
+			</required_items>
+		</skill>
+		<skill id="190" level="41" min_level="80" cost="9800000"/><!--Fatal Strike-->
+		<skill id="1305" level="14" min_level="80" cost="9800000"/><!--Pa'agrio's Honor-->
+		<skill id="252" level="50" min_level="81" cost="160000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="50" min_level="81" cost="160000000"/><!--Robe Mastery-->
+		<skill id="250" level="47" min_level="81" cost="160000000"/><!--Weapon Mastery-->
+		<skill id="253" level="48" min_level="81" cost="160000000"/><!--Heavy Armor Mastery-->
+		<skill id="1246" level="17" min_level="81" cost="160000000"/><!--Seal of Silence-->
+		<skill id="1462" level="2" min_level="81" cost="160000000"/><!--Seal of Blockade-->
+		<skill id="1099" level="20" min_level="81" cost="160000000"/><!--Seal of Slow-->
+		<skill id="1104" level="19" min_level="81" cost="160000000"/><!--Seal of Winter-->
+		<skill id="1208" level="22" min_level="81" cost="160000000"/><!--Seal of Binding-->
+		<skill id="1248" level="17" min_level="81" cost="160000000"/><!--Seal of Suspension-->
+		<skill id="1366" level="3" min_level="81" cost="160000000"/><!--Seal of Despair-->
+		<skill id="1460" level="6" min_level="81" cost="160000000"/><!--Mana Gain-->
+		<skill id="1306" level="15" min_level="81" cost="160000000"/><!--Ritual of Life-->
+		<skill id="1610" level="26" min_level="81" cost="160000000"/><!--Life Rescue-->
+		<skill id="190" level="42" min_level="81" cost="160000000"/><!--Fatal Strike-->
+		<skill id="1305" level="15" min_level="81" cost="160000000"/><!--Pa'agrio's Honor-->
+		<skill id="252" level="51" min_level="82" cost="170000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="51" min_level="82" cost="170000000"/><!--Robe Mastery-->
+		<skill id="250" level="48" min_level="82" cost="170000000"/><!--Weapon Mastery-->
+		<skill id="253" level="49" min_level="82" cost="170000000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="18" min_level="82" cost="170000000"/><!--Steal Essence-->
+		<skill id="1246" level="18" min_level="82" cost="170000000"/><!--Seal of Silence-->
+		<skill id="1099" level="21" min_level="82" cost="170000000"/><!--Seal of Slow-->
+		<skill id="1104" level="20" min_level="82" cost="170000000"/><!--Seal of Winter-->
+		<skill id="1208" level="23" min_level="82" cost="170000000"/><!--Seal of Binding-->
+		<skill id="1248" level="18" min_level="82" cost="170000000"/><!--Seal of Suspension-->
+		<skill id="1366" level="4" min_level="82" cost="170000000"/><!--Seal of Despair-->
+		<skill id="1460" level="7" min_level="82" cost="170000000"/><!--Mana Gain-->
+		<skill id="1414" level="2" min_level="82" cost="170000000"/><!--Prophecy of Pa'agrio-->
+		<skill id="1306" level="16" min_level="82" cost="170000000"/><!--Ritual of Life-->
+		<skill id="1256" level="17" min_level="82" cost="170000000"/><!--Pa'agrio's Heart-->
+		<skill id="1097" level="24" min_level="82" cost="170000000"/><!--Dreaming Spirit-->
+		<skill id="1610" level="27" min_level="82" cost="170000000"/><!--Life Rescue-->
+		<skill id="190" level="43" min_level="82" cost="170000000"/><!--Fatal Strike-->
+		<skill id="1305" level="16" min_level="82" cost="170000000"/><!--Pa'agrio's Honor-->
+		<skill id="252" level="52" min_level="83" cost="240000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="52" min_level="83" cost="240000000"/><!--Robe Mastery-->
+		<skill id="250" level="49" min_level="83" cost="240000000"/><!--Weapon Mastery-->
+		<skill id="253" level="50" min_level="83" cost="240000000"/><!--Heavy Armor Mastery-->
+		<skill id="1246" level="19" min_level="83" cost="240000000"/><!--Seal of Silence-->
+		<skill id="1462" level="3" min_level="83" cost="240000000"/><!--Seal of Blockade-->
+		<skill id="1099" level="22" min_level="83" cost="240000000"/><!--Seal of Slow-->
+		<skill id="1104" level="21" min_level="83" cost="240000000"/><!--Seal of Winter-->
+		<skill id="1208" level="24" min_level="83" cost="240000000"/><!--Seal of Binding-->
+		<skill id="1248" level="19" min_level="83" cost="240000000"/><!--Seal of Suspension-->
+		<skill id="1366" level="5" min_level="83" cost="240000000"/><!--Seal of Despair-->
+		<skill id="1460" level="8" min_level="83" cost="240000000"/><!--Mana Gain-->
+		<skill id="1306" level="17" min_level="83" cost="240000000"/><!--Ritual of Life-->
+		<skill id="1610" level="28" min_level="83" cost="240000000"/><!--Life Rescue-->
+		<skill id="190" level="44" min_level="83" cost="240000000"/><!--Fatal Strike-->
+		<skill id="1305" level="17" min_level="83" cost="240000000"/><!--Pa'agrio's Honor-->
+		<skill id="252" level="53" min_level="84" cost="240000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="53" min_level="84" cost="240000000"/><!--Robe Mastery-->
+		<skill id="250" level="50" min_level="84" cost="240000000"/><!--Weapon Mastery-->
+		<skill id="253" level="51" min_level="84" cost="240000000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="19" min_level="84" cost="240000000"/><!--Steal Essence-->
+		<skill id="1246" level="20" min_level="84" cost="240000000"/><!--Seal of Silence-->
+		<skill id="1099" level="23" min_level="84" cost="240000000"/><!--Seal of Slow-->
+		<skill id="1104" level="22" min_level="84" cost="240000000"/><!--Seal of Winter-->
+		<skill id="1208" level="25" min_level="84" cost="240000000"/><!--Seal of Binding-->
+		<skill id="1248" level="20" min_level="84" cost="240000000"/><!--Seal of Suspension-->
+		<skill id="1366" level="6" min_level="84" cost="240000000"/><!--Seal of Despair-->
+		<skill id="1460" level="9" min_level="84" cost="240000000"/><!--Mana Gain-->
+		<skill id="1306" level="18" min_level="84" cost="240000000"/><!--Ritual of Life-->
+		<skill id="1256" level="18" min_level="84" cost="240000000"/><!--Pa'agrio's Heart-->
+		<skill id="1097" level="25" min_level="84" cost="240000000"/><!--Dreaming Spirit-->
+		<skill id="1610" level="29" min_level="84" cost="240000000"/><!--Life Rescue-->
+		<skill id="190" level="45" min_level="84" cost="240000000"/><!--Fatal Strike-->
+		<skill id="1305" level="18" min_level="84" cost="240000000"/><!--Pa'agrio's Honor-->
+		<skill id="252" level="54" min_level="85" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="54" min_level="85" cost="840000000"/><!--Robe Mastery-->
+		<skill id="250" level="51" min_level="85" cost="840000000"/><!--Weapon Mastery-->
+		<skill id="253" level="52" min_level="85" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="20" min_level="85" cost="840000000"/><!--Steal Essence-->
+		<skill id="1460" level="10" min_level="85" cost="840000000"/><!--Mana Gain-->
+		<skill id="252" level="55" min_level="86" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="55" min_level="86" cost="840000000"/><!--Robe Mastery-->
+		<skill id="250" level="52" min_level="86" cost="840000000"/><!--Weapon Mastery-->
+		<skill id="253" level="53" min_level="86" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="21" min_level="86" cost="840000000"/><!--Steal Essence-->
+		<skill id="252" level="56" min_level="87" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="56" min_level="87" cost="840000000"/><!--Robe Mastery-->
+		<skill id="250" level="53" min_level="87" cost="840000000"/><!--Weapon Mastery-->
+		<skill id="253" level="54" min_level="87" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="22" min_level="87" cost="840000000"/><!--Steal Essence-->
+		<skill id="252" level="57" min_level="88" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="57" min_level="88" cost="840000000"/><!--Robe Mastery-->
+		<skill id="250" level="54" min_level="88" cost="840000000"/><!--Weapon Mastery-->
+		<skill id="253" level="55" min_level="88" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="23" min_level="88" cost="840000000"/><!--Steal Essence-->
+		<skill id="252" level="58" min_level="89" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="58" min_level="89" cost="840000000"/><!--Robe Mastery-->
+		<skill id="250" level="55" min_level="89" cost="840000000"/><!--Weapon Mastery-->
+		<skill id="253" level="56" min_level="89" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="24" min_level="89" cost="840000000"/><!--Steal Essence-->
+		<skill id="252" level="59" min_level="90" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="251" level="59" min_level="90" cost="840000000"/><!--Robe Mastery-->
+		<skill id="250" level="56" min_level="90" cost="840000000"/><!--Weapon Mastery-->
+		<skill id="253" level="57" min_level="90" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="1245" level="25" min_level="90" cost="840000000"/><!--Steal Essence-->
+		<skill id="1096" level="19" min_level="81" cost="160000000"/><!--Seal of Chaos-->
+		<skill id="1096" level="20" min_level="84" cost="240000000"/><!--Seal of Chaos-->
+		<skill id="1002" level="4" min_level="76" cost="4500000"><!--Chant of Acumen-->
+			<required_items>
+				<item id="94370;95539" count="1"/><!--Master's Book: Acumen-->
+			</required_items>
+		</skill>
+		<skill id="1006" level="4" min_level="76" cost="4500000"><!--Chant of Empower-->
+			<required_items>
+				<item id="94361;95533" count="1"/><!--Master's Book: Empower-->
+			</required_items>
+		</skill>
+		<skill id="1251" level="3" min_level="76" cost="4500000"><!--Chant of Haste-->
+			<required_items>
+				<item id="94369;95538" count="1"/><!--Master's Book: Haste-->
+			</required_items>
+		</skill>
+		<skill id="1253" level="4" min_level="76" cost="4500000"><!--Chant of Death Whisper-->
+			<required_items>
+				<item id="94364;95536" count="1"/><!--Master's Book: Death Whisper-->
+			</required_items>
+		</skill>
+		<skill id="1261" level="3" min_level="76" cost="4500000"><!--Chant of Berserker Spirit-->
+			<required_items>
+				<item id="94366;95769" count="1"/><!--Master's Book: Berserker Spirit-->
+			</required_items>
+		</skill>
+		<skill id="1308" level="4" min_level="76" cost="4500000"><!--Chant of Focus-->
+			<required_items>
+				<item id="94363;95535" count="1"/><!--Master's Book: Focus-->
+			</required_items>
+		</skill>
+		<skill id="1413" level="3" min_level="76" cost="4500000"><!--Chant of Wild Magic-->
+			<required_items>
+				<item id="94368;95771" count="1"/><!--Master's Book: Wild Magic-->
+			</required_items>
+		</skill>
+		<skill id="1535" level="3" min_level="76" cost="4500000"><!--Chant of Wind Walk-->
+			<required_items>
+				<item id="94365;95537" count="1"/><!--Master's Book: Wind Walk-->
+			</required_items>
+		</skill>
+		<skill id="1549" level="3" min_level="76" cost="4500000"><!--Chant of Magic Barrier-->
+			<required_items>
+				<item id="94362;95534" count="1"/><!--Master's Book: Magic Barrier-->
+			</required_items>
+		</skill>
+		<skill id="45138" level="4" min_level="76" cost="4500000"><!--Chant of Clarity-->
+			<required_items>
+				<item id="94367;95770" count="1"/><!--Master's Book: Clarity-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="2" min_level="85" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45446" level="1" min_level="76" cost="4500000"><!--Pa'agrio's Touch-->
+			<required_items>
+				<item id="94668;95552" count="1"/><!--Spellbook: Pa'agrio's Touch-->
+			</required_items>
+		</skill>
+		<skill id="45448" level="1" min_level="80" cost="9800000"><!--Pa'agrio's Cure-->
+			<required_items>
+				<item id="94669;95553" count="1"/><!--Spellbook: Pa'agrio's Medicine-->
+			</required_items>
+		</skill>
+		<skill id="45449" level="1" min_level="80" cost="9800000"><!--Debuff Master-->
+			<required_items>
+				<item id="94670;95554" count="1"/><!--Spellbook: Debuff Master-->
+			</required_items>
+		</skill>
+		<skill id="45453" level="1" min_level="80" cost="9800000"><!--Flame Burst-->
+			<required_items>
+				<item id="94671;95555" count="1"/><!--Spellbook: Flame Burst-->
+			</required_items>
+		</skill>
+		<skill id="45468" level="1" min_level="84" cost="240000000"><!--Seal of Infection-->
+			<required_items>
+				<item id="94672;95556" count="1"/><!--Spellbook: Seal of Infection-->
+			</required_items>
+		</skill>
+		<skill id="54231" level="1" min_level="82"><!--Dragon Slayer Appearance-->
+			<required_items>
+				<item id="96300;96780" count="1"/><!--Spellbook: Dragon Slayer-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="3" min_level="88" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="30000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45269" level="1" min_level="76"><!--Expanded Potential of Dyes-->
+			<required_items>
+				<item id="96613;96614" count="1"/><!--Spellbook: Expanded Potential of Dyes-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="1" min_level="76"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="2" min_level="80"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="40000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="3" min_level="85"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="100000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="4" min_level="90"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="200000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47270" level="5" min_level="77" cost="4500000"/><!--Anti Magic-->
+		<skill id="47270" level="6" min_level="80" cost="9800000"/><!--Anti Magic-->
+		<skill id="47270" level="7" min_level="82" cost="170000000"/><!--Anti Magic-->
+		<skill id="47270" level="8" min_level="84" cost="240000000"/><!--Anti Magic-->
+		<skill id="47270" level="9" min_level="86" cost="840000000"/><!--Anti Magic-->
+		<skill id="47270" level="10" min_level="88" cost="840000000"/><!--Anti Magic-->
+		<skill id="47270" level="11" min_level="90" cost="840000000"/><!--Anti Magic-->
+	</normal_skill_tree>
+</list>

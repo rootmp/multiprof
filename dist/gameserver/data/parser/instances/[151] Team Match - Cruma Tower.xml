@@ -1,0 +1,16 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="151" name="Team Match" maxChannels="40" collapseIfEmpty="1" timelimit="60" dispelBuffs="true">
+		<level min="1"/>
+		<party min="1" max="3"/>
+		<teleport loc="17992 114072 4008 0"/>
+		<teleport loc="17464 114280 4008 0"/>
+		<teleport loc="17720 114168 4008 0"/>
+		<spawns>
+			<group name="olympiad_151_buffers" spawned="false"/>
+		</spawns>
+		<zones>
+			<zone name="[cruma_tower_roof_battle]" active="true"/>
+		</zones>
+	</instance>
+</list>

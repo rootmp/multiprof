@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="48301" levels="3" name="Test Skill - Vulnerability: Ancient Sword">
+		<!--Vulnerable to ancient sword attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48302" levels="3" name="Test Skill - Vulnerability: Blunt">
+		<!--Vulnerable to blunt weapon attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48303" levels="3" name="Test Skill - Vulnerability: Bow">
+		<!--Vulnerable to bow attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48304" levels="3" name="Test Skill - Vulnerability: Dagger">
+		<!--Vulnerable to dagger attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48305" levels="3" name="Test Skill - Vulnerability: Dual Swords">
+		<!--Vulnerable to dual swords attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48306" levels="3" name="Test Skill - Vulnerability: Fist Weapon">
+		<!--Vulnerable to fist weapon attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48307" levels="3" name="Test Skill - Vulnerability: Other">
+		<!--Vulnerable to other weapon attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48308" levels="3" name="Test Skill - Vulnerability: Gloves">
+		<!--Vulnerable to glove attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48309" levels="3" name="Test Skill - Vulnerability: Spear">
+		<!--Vulnerable to spear attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48310" levels="3" name="Test Skill - Vulnerability: Rapier">
+		<!--Vulnerable to rapier attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48311" levels="3" name="Test Skill - Vulnerability: Sword">
+		<!--Vulnerable to sword attacks.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48312" levels="21" name="Increase Damage to Undead">
+		<table name="#icon">icon.skill4290 icon.skill4291 icon.skill4292 icon.skill4293 icon.skill4294 icon.skill4295 icon.skill4296 icon.skill4297 icon.skill4298 icon.skill4299 icon.skill4300 icon.skill4301 icon.skill4302 icon.skill4416_human icon.skill4416_elf icon.skill4416_darkelf icon.skill4416_orc icon.skill4416_dwarf icon.skill4416_none icon.skill4416_kamael icon.skill_4416_ertheia</table>
+		<!--Increases damage dealt to undead enemies.-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48313" levels="22" name="Physical Skill - Undead">
+		<table name="#effectPoint">-35 -40 -45 -60 -65 -70 -85 -90 -95 -110 -115 -120 -130 -135 -140 -150 -155 -160 -170 -175 -180 -180</table>
+		<!--Increases damage dealt to undead enemies.-->
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48314" levels="22" name="Magic Skill - Undead">
+		<table name="#effectPoint">-35 -40 -45 -60 -65 -70 -85 -90 -95 -110 -115 -120 -130 -135 -140 -150 -155 -160 -170 -175 -180 -180</table>
+		<!--Increases damage dealt to undead enemies.-->
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill1177"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48315" levels="5" name="Silence Attack Resistance">
+		<!--Resistant to Silence attacks.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48316" levels="5" name="Greater Silence Attack Resistance">
+		<!--Highly resistant to Silence.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48317" levels="5" name="Silence Vulnerability">
+		<!--Vulnerable to Silence.-->
+		<set name="icon" value="icon.skill30887"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48318" levels="5" name="Suppression Attack Resistance">
+		<!--Resistant to Suppression attacks.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48319" levels="5" name="Greater Suppression Attack Resistance">
+		<!--Highly resistant to Suppression.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48320" levels="5" name="Suppression Vulnerability">
+		<!--Vulnerable to Suppression.-->
+		<set name="icon" value="icon.skill30887"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48321" levels="5" name="Imprisonment Attack Resistance">
+		<!--Resistant to Imprisonment attacks.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48322" levels="5" name="Greater Imprisonment Attack Resistance">
+		<!--Highly resistant to Imprisonment.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48323" levels="5" name="Imprisonment Vulnerability">
+		<!--Vulnerable to Imprisonment.-->
+		<set name="icon" value="icon.skill30887"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48324" levels="5" name="Pull Attack Resistance">
+		<!--Resistant to Pull attacks.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48325" levels="5" name="Greater Pull Attack Resistance">
+		<!--Highly resistant to Pull.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48326" levels="5" name="Pull Vulnerability">
+		<!--Vulnerable to Pull.-->
+		<set name="icon" value="icon.skill30887"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48327" levels="1" name="Ultimate Behemoth Roar">
+		<!--Ultimate Behemoth Roar immobilizes the enemy.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-137"/>
+		<set name="icon" value="icon.skill1481"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48328" levels="1" name="Ultimate Behemoth Curse">
+		<!--The Ultimate Behemoth curses the enemy.\nSpeed -30\nAtk. Spd. -30\nCasting Spd. -30\nReceived damage +10%%-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0046"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="300"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48329" levels="1" name="Ultimate Behemoth Range Attack">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48330" levels="1" name="Ultimate Behemoth Range Fear">
+		<!--Afflicted with Fear and moving against own will.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48331" levels="1" name="Nephenthes' Scent">
+		<!--Nephenthes's scent poisons the character.\n\nPvP Damage +15%%-->
+		<set name="icon" value="icon.skill19014"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48332" levels="5" name="Knockback Attack Resistance">
+		<!--Resistant to Knockback attacks.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48333" levels="5" name="Greater Knockback Attack Resistance">
+		<!--Highly resistant to Knockback.-->
+		<set name="icon" value="icon.skill30888"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48334" levels="5" name="Knockback Vulnerability">
+		<!--Vulnerable to Knockback.-->
+		<set name="icon" value="icon.skill30887"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48335" levels="1" name="Suicide Flare">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48336" levels="1" name="Lavasaurus Attack">
+		<!--none-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="1200"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="83"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48337" levels="1" name="Lavasaurus Petrification">
+		<!--Makes the target's body as hard as stone for 3 sec.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill4111"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48338" levels="1" name="Lavasaurus Horror">
+		<!--Afflicted with Fear and moving against own will.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill1092"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48339" levels="1" name="Fire Rage">
+		<!--Blaze's fire attack constantly decreases HP.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0514"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48340" levels="1" name="Fire Breath">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48341" levels="1" name="Lunatic's Rage">
+		<!--Lunatic's rage makes the enemy's soul leave their body.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0774"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48342" levels="12" name="Stun">
+		<table name="#effectPoint">-100 -200 -300 -400 -500 -600 -700 -800 -900 -1000 -1100 -1200</table>
+		<!--Immobilizes and stuns target.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="reuseDelay" value="6000"/>
+		<set name="coolTime" value="800"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48343" levels="12" name="Silence">
+		<table name="#effectPoint">-100 -200 -300 -400 -500 -600 -700 -800 -900 -1000 -1100 -1200</table>
+		<!--Physical and magic skills are all blocked.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill1064"/>
+		<set name="reuseDelay" value="6000"/>
+		<set name="coolTime" value="800"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48344" levels="1" name="Ryuminir's Attack">
+		<set name="effectPoint" value="-1200"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="800"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48345" levels="1" name="Ryuminir's Range Attack">
+		<!--Ryuminir's powerful strike stuns the character and renders them immobile.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1200"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="coolTime" value="800"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48346" levels="1" name="Aizen's Attack">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1200"/>
+		<set name="icon" value="icon.skill1170"/>
+		<set name="coolTime" value="800"/>
+		<set name="castRange" value="300"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48347" levels="1" name="Aizen's Throw">
+		<set name="effectPoint" value="-1200"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="800"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="100"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48348" levels="1" name="Aizen's Throw">
+		<!--Aizen's powerful attack stuns the character and renders them immobile.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1200"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="castRange" value="600"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48349" levels="10" name="Long Range Blood Spear">
+		<table name="#effectPoint">-100 -200 -300 -400 -500 -600 -700 -800 -900 -1000</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48350" levels="10" name="Short Range Blood Spear">
+		<table name="#effectPoint">-100 -200 -300 -400 -500 -600 -700 -800 -900 -1000</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="150"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48351" levels="1" name="Tanas' Stun">
+		<!--Unable to move for $s1 due to Stun.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48352" levels="1" name="Infuse with Vitality">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48353" levels="5" name="Tanas' Poison">
+		<!--Max HP $s1.\nApplies Poison.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill6815"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48354" levels="3" name="Ice Vicious Strike">
+		<table name="#power">8000 9000 10000</table>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="criticalRate" value="10"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48355" levels="3" name="Ice Arrow">
+		<table name="#power">8000 9000 10000</table>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="power" value="#power"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="criticalRate" value="10"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48356" levels="3" name="Ice Shot">
+		<table name="#power">8000 9000 10000</table>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="criticalRate" value="10"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48357" levels="3" name="Ice Curse">
+		<!--Ice energy slows the character down and deals them damage.\n\nAtk. Spd. $s1\nCasting Spd. $s1\nSpeed $s2-->
+		<table name="#atkcast">0.8 0.7 0.6</table>
+		<table name="#speed">-20 -30 -35</table>
+		<table name="#power">180 190 200</table>
+		<set name="debuff" value="true"/>
+		<set name="icon" value="icon.skill4280_new"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="3"/>
+		<set name="abnormal_type" value="speed_down"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="activateRate" value="60"/>
+		<set name="lv_bonus_rate" value="20"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="criticalRate" value="10"/>
+		<set name="skillType" value="MDAM"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtkSpd" value="#atkcast"/>
+				<mul stat="mAtkSpd" value="#atkcast"/>
+				<add stat="runSpd" value="#speed"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="48358" levels="1" name="Rasygies' Freezing Attack">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill4280_new"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48359" levels="1" name="Ice Curse">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill4280_new"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48360" levels="1" name="Lacigies' Enhancement">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48361" levels="1" name="Reggiesys' Freezing Attack">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill4280_new"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48362" levels="1" name="Ice Curse">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill4280_new"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48363" levels="1" name="Reggiesys Enhancement">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48364" levels="1" name="Ice Crystal">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48365" levels="1" name="Tiron's Freezing Attack">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill4280_new"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48366" levels="1" name="Freezing Curse">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill4280_new"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48367" levels="1" name="Ice Crystal">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48368" levels="1" name="Tiron's Knockback">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48369" levels="1" name="Knock back.">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48370" levels="1" name="Tiron's Enhancement">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48371" levels="1" name="Frozen Crystal">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48372" levels="2" name="Glakias' Enhancement">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48373" levels="1" name="Glakias' Summon">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48374" levels="2" name="Ice Emperor's Chain">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48375" levels="3" name="Freezing Curse">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48376" levels="2" name="Ice Emperor's Sweep">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48377" levels="2" name="Ice Emperor's Smash">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48378" levels="2" name="Ice Emperor's Thunder">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48379" levels="2" name="Ice Emperor's Chain">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48380" levels="1" name="Ice Chain">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48381" levels="2" name="Ice Emperor's Storm">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48382" levels="2" name="Ice Emperor's Tornado">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48383" levels="2" name="Ice Emperor's Crystal">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48384" levels="3" name="Frozen Crystal">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48385" levels="1" name="Knock back.">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48386" levels="1" name="Chills">
+		<set name="debuff" value="true"/>
+		<set name="icon" value="icon.skill1174"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="300"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48387" levels="1" name="Eternal Blizzard">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="reuseDelay" value="7000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="7000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48388" levels="1" name="Attack Nearby Range">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="5000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48389" levels="1" name="Ice Ball">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="800"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48390" levels="1" name="Ice Crystal">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48391" levels="1" name="Self-destruction">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="5000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48392" levels="1" name="Ice Storm">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="1100"/>
+		<set name="hitTime" value="3500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48393" levels="1" name="Eskimo Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.eskimo_suit"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48394" levels="1" name="Eskimo Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.eskimo_suit"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48395" levels="1" name="Freezing Stone Demonstration">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48396" levels="1" name="Icy Breath - Ice Storm">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-689"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48397" levels="1" name="Freya's Random Transformation Effect">
+		<set name="icon" value="icon.random_transform_00"/>
+		<set name="castRange" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48398" levels="1" name="Fortune Time Resistance">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48399" levels="1" name="Bull's Gratitude">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

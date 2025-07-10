@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="37800">
+		<!--M. Def. +110-->
+	</option_data>
+	<option_data id="37801">
+		<!--M. Def. +120-->
+	</option_data>
+	<option_data id="37802">
+		<!--M. Def. +150-->
+	</option_data>
+	<option_data id="37803">
+		<!--M. Def. +200-->
+	</option_data>
+	<option_data id="37804">
+		<!--M. Def. +10-->
+	</option_data>
+	<option_data id="37805">
+		<!--M. Def. +16-->
+	</option_data>
+	<option_data id="37806">
+		<!--M. Def. +22-->
+	</option_data>
+	<option_data id="37807">
+		<!--M. Def. +28-->
+	</option_data>
+	<option_data id="37808">
+		<!--M. Def. +34-->
+	</option_data>
+	<option_data id="37809">
+		<!--M. Def. +40-->
+	</option_data>
+	<option_data id="37810">
+		<!--M. Def. +46-->
+	</option_data>
+	<option_data id="37811">
+		<!--M. Def. +52-->
+	</option_data>
+	<option_data id="37812">
+		<!--M. Def. +58-->
+	</option_data>
+	<option_data id="37813">
+		<!--M. Def. +64-->
+	</option_data>
+	<option_data id="37814">
+		<!--M. Def. +70-->
+	</option_data>
+	<option_data id="37815">
+		<!--M. Def. +76-->
+	</option_data>
+	<option_data id="37816">
+		<!--M. Def. +82-->
+	</option_data>
+	<option_data id="37817">
+		<!--M. Def. +88-->
+	</option_data>
+	<option_data id="37818">
+		<!--M. Def. +94-->
+	</option_data>
+	<option_data id="37819">
+		<!--M. Def. +100-->
+	</option_data>
+	<option_data id="37820">
+		<!--M. Def. +110-->
+	</option_data>
+	<option_data id="37821">
+		<!--M. Def. +120-->
+	</option_data>
+	<option_data id="37822">
+		<!--M. Def. +150-->
+	</option_data>
+	<option_data id="37823">
+		<!--M. Def. +200-->
+	</option_data>
+	<option_data id="37824">
+		<!--M. Def. +10-->
+	</option_data>
+	<option_data id="37825">
+		<!--M. Def. +16-->
+	</option_data>
+	<option_data id="37826">
+		<!--M. Def. +22-->
+	</option_data>
+	<option_data id="37827">
+		<!--M. Def. +28-->
+	</option_data>
+	<option_data id="37828">
+		<!--M. Def. +34-->
+	</option_data>
+	<option_data id="37829">
+		<!--M. Def. +40-->
+	</option_data>
+	<option_data id="37830">
+		<!--M. Def. +46-->
+	</option_data>
+	<option_data id="37831">
+		<!--M. Def. +52-->
+	</option_data>
+	<option_data id="37832">
+		<!--M. Def. +58-->
+	</option_data>
+	<option_data id="37833">
+		<!--M. Def. +64-->
+	</option_data>
+	<option_data id="37834">
+		<!--M. Def. +70-->
+	</option_data>
+	<option_data id="37835">
+		<!--M. Def. +76-->
+	</option_data>
+	<option_data id="37836">
+		<!--M. Def. +82-->
+	</option_data>
+	<option_data id="37837">
+		<!--M. Def. +88-->
+	</option_data>
+	<option_data id="37838">
+		<!--M. Def. +94-->
+	</option_data>
+	<option_data id="37839">
+		<!--M. Def. +100-->
+	</option_data>
+	<option_data id="37840">
+		<!--M. Def. +110-->
+	</option_data>
+	<option_data id="37841">
+		<!--M. Def. +120-->
+	</option_data>
+	<option_data id="37842">
+		<!--M. Def. +150-->
+	</option_data>
+	<option_data id="37843">
+		<!--M. Def. +200-->
+	</option_data>
+	<option_data id="37844">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37845">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37846">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37847">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37848">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37849">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="37850">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="37851">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="37852">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37853">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37854">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37855">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="37856">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="37857">
+		<!--P. Accuracy +1.6-->
+	</option_data>
+	<option_data id="37858">
+		<!--P. Accuracy +1.8-->
+	</option_data>
+	<option_data id="37859">
+		<!--P. Accuracy +2.0-->
+	</option_data>
+	<option_data id="37860">
+		<!--P. Accuracy +2.5-->
+	</option_data>
+	<option_data id="37861">
+		<!--P. Accuracy +3.0-->
+	</option_data>
+	<option_data id="37862">
+		<!--P. Accuracy +3.5-->
+	</option_data>
+	<option_data id="37863">
+		<!--P. Accuracy +5.0-->
+	</option_data>
+	<option_data id="37864">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37865">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37866">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37867">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37868">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37869">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="37870">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="37871">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="37872">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37873">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37874">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37875">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="37876">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="37877">
+		<!--P. Accuracy +1.6-->
+	</option_data>
+	<option_data id="37878">
+		<!--P. Accuracy +1.8-->
+	</option_data>
+	<option_data id="37879">
+		<!--P. Accuracy +2.0-->
+	</option_data>
+	<option_data id="37880">
+		<!--P. Accuracy +2.5-->
+	</option_data>
+	<option_data id="37881">
+		<!--P. Accuracy +3.0-->
+	</option_data>
+	<option_data id="37882">
+		<!--P. Accuracy +3.5-->
+	</option_data>
+	<option_data id="37883">
+		<!--P. Accuracy +5.0-->
+	</option_data>
+	<option_data id="37884">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37885">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37886">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37887">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37888">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="37889">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="37890">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="37891">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="37892">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37893">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37894">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="37895">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="37896">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="37897">
+		<!--P. Accuracy +1.6-->
+	</option_data>
+	<option_data id="37898">
+		<!--P. Accuracy +1.8-->
+	</option_data>
+	<option_data id="37899">
+		<!--P. Accuracy +2.0-->
+	</option_data>
+</list>

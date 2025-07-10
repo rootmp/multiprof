@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="39934">
+		<!--Acquired XP/ SP +5%, Max HP/ MP/ CP +35, P./ M. Def. +30, XP recovery fee -25%-->
+	</option_data>
+	<option_data id="39935">
+		<!--Max HP/ MP/ CP +15, P./ M. Def. +20, XP recovery fee -15%-->
+	</option_data>
+	<option_data id="39936">
+		<!--Acquired XP/ SP +1%, P./ M. Def. +20-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="pDef" value="20"/>
+			<add order="0x60" stat="mDef" value="20"/>
+		</for>
+	</option_data>
+	<option_data id="39937">
+		<!--Acquired XP/ SP +1%, P./ M. Def. +40, Magic Lamp charging rate +1%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="pDef" value="40"/>
+			<add order="0x60" stat="mDef" value="40"/>
+			<mul order="0x60" stat="magic_lamp_charging_rate_multiplier" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39938">
+		<!--Acquired XP/ SP +5%, Max HP/MP/CP +100, P./ M. Atk. +50, P./ M. Def. +100-->
+	</option_data>
+	<option_data id="39939">
+		<!--Acquired XP/ SP +10%, Max HP/MP/CP +200, P./ M. Atk. +100, P./ M. Def. +200-->
+	</option_data>
+	<option_data id="39940">
+		<!--Max HP +20%\nMax MP +20%\nBow Resistance +10%\nFirearms Resistance +10%\nAcquired XP +30%\nAcquired SP +30%\nP. Atk. +3%\nM. Atk. +3%\nAll Critical Rate +2%\nAll Critical Damage +10%-->
+	</option_data>
+	<option_data id="39941">
+		<!--Max HP +22%\nMax MP +22%\nBow Resistance +12%\nFirearms Resistance +12%\nAcquired XP +30%\nAcquired SP +30%\nP. Atk. +5%\nM. Atk. +5%\nAll Critical Rate +4%\nAll Critical Damage +10%\nDamage +3%-->
+	</option_data>
+	<option_data id="39942">
+		<!--Max HP +24%\nMax MP +24%\nBow Resistance +15%\nFirearms Resistance +15%\nAcquired XP +30%\nAcquired SP +30%\nP. Atk. +7%\nM. Atk. +7%\nAll Critical Rate +6%\nAll Critical Damage +15%\nDamage +4%-->
+	</option_data>
+	<option_data id="39943">
+		<!--Max HP +26%\nMax MP +26%\nBow Resistance +15%\nFirearms Resistance +15%\nAcquired XP +30%\nAcquired SP +30%\nP. Atk. +10%\nM. Atk. +10%\nAll Critical Rate +9%\nAll Critical Damage +15%\nDamage +5%-->
+	</option_data>
+	<option_data id="39944">
+		<!--Max HP +28%\nMax MP +28%\nBow Resistance +15%\nFirearms Resistance +15%\nAcquired XP +30%\nAcquired SP +30%\nP. Atk. +15%\nM. Atk. +15%\nAll Critical Rate +12%\nAll Critical Damage +15%\nDamage +7%-->
+	</option_data>
+	<option_data id="39945">
+		<!--Max HP +30%\nMax MP +30%\nBow Resistance +15%\nFirearms Resistance +15%\nAcquired XP +30%\nAcquired SP +30%\nP. Atk. +20%\nM. Atk. +20%\nAll Critical Rate +15%\nAll Critical Damage +15%\nDamage +10%-->
+	</option_data>
+	<option_data id="39946">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 1%)-->
+	</option_data>
+	<option_data id="39947">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 1%)-->
+	</option_data>
+	<option_data id="39948">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 1%)-->
+	</option_data>
+	<option_data id="39949">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 1%)-->
+	</option_data>
+	<option_data id="39950">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 1%)-->
+	</option_data>
+	<option_data id="39951">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 4%)\nBeleth' Mighty Killing Thunder (trigger rate: 1%)\n\n<Stat bonus>\nINT +1\nMEN +1-->
+	</option_data>
+	<option_data id="39952">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 7%)\nBeleth' Mighty Killing Thunder (trigger rate: 1%)\n\n<Stat bonus>\nINT +2\nMEN +2-->
+	</option_data>
+	<option_data id="39953">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 10%)\nBeleth' Mighty Killing Thunder (trigger rate: 2%)\n\n<Stat bonus>\nINT +3\nMEN +3-->
+	</option_data>
+	<option_data id="39954">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 13%)\nBeleth' Mighty Killing Thunder (trigger rate: 3%)\n\n<Stat bonus>\nINT +4\nMEN +4-->
+	</option_data>
+	<option_data id="39955">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 16%)\nBeleth' Mighty Killing Thunder (trigger rate: 4%)\n\n<Stat bonus>\nINT +5\nMEN +5-->
+	</option_data>
+	<option_data id="39956">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder (trigger rate: 20%)\nBeleth' Mighty Killing Thunder (trigger rate: 5%)\n\n<Stat bonus>\nINT +6\nMEN +6-->
+	</option_data>
+	<option_data id="39957">
+		<!--A ring imbued with Beleth' power.\n\nMax MP +22\nSleep Atk. Rate +15%\nSleep Resistance +15%\nHold Atk. Rate +15%\nHold Resistance +15%\nParalysis Atk. Rate +10%\nParalysis Resistance +10%\nHP Recovery Rate +1\nMP Recovery Rate +1\nSoulshot damage +2%\nSpiritshot damage +2%-->
+	</option_data>
+	<option_data id="39958">
+		<!--A ring imbued with Beleth' power.\n\nMax MP +32\nSleep Atk. Rate +20%\nSleep Resistance +20%\nHold Atk. Rate +20%\nHold Resistance +20%\nParalysis Atk. Rate +15%\nParalysis Resistance +15%\nHP Recovery Rate +1\nMP Recovery Rate +1\nSoulshot damage +3%\nSpiritshot damage +3%-->
+	</option_data>
+	<option_data id="39959">
+		<!--P. Atk. +20\nM. Atk. +20\nMax MP +40\nSleep Atk. Rate +25%\nSleep Resistance +25%\nHold Atk. Rate +25%\nHold Resistance +25%\nParalysis Atk. Rate +20%\nParalysis Resistance +20%\nHP Recovery Rate +1\nMP Recovery Rate +1\nSoulshot damage +6%\nSpiritshot damage +6%\nAll received Critical Damage -10%-->
+	</option_data>
+	<option_data id="39960">
+		<!--P. Atk. +50\nM. Atk. +50\nMax MP +60\nSleep Atk. Rate +25%\nSleep Resistance +25%\nHold Atk. Rate +25%\nHold Resistance +25%\nParalysis Atk. Rate +20%\nParalysis Resistance +20%\nHP Recovery Rate +2\nMP Recovery Rate +2\nSoulshot damage +12%\nSpiritshot damage +12%\nAll received Critical Damage -13%\nSkill Cooldown -3%-->
+	</option_data>
+	<option_data id="39961">
+		<!--P. Atk. +100\nM. Atk. +100\nMax MP +85\nSleep Atk. Rate +25%\nSleep Resistance +25%\nHold Atk. Rate +25%\nHold Resistance +25%\nParalysis Atk. Rate +20%\nParalysis Resistance +20%\nHP Recovery Rate +2\nMP Recovery Rate +2\nSoulshot damage +15%\nSpiritshot damage +15%\nAll received Critical Damage -16%\nSkill Cooldown -5%-->
+	</option_data>
+	<option_data id="39962">
+		<!--P. Atk. +200\nM. Atk. +200\nMax MP +100\nSleep Atk. Rate +25%\nSleep Resistance +25%\nHold Atk. Rate +25%\nHold Resistance +25%\nParalysis Atk. Rate +20%\nParalysis Resistance +20%\nHP Recovery Rate +3\nMP Recovery Rate +3\nSoulshot damage +20%\nSpiritshot damage +20%\nAll received Critical Damage -20%\nSkill Cooldown -10%\nA chance to apply the Beleth Power buff when hit-->
+	</option_data>
+	<option_data id="39963">
+		<!--P. Def. +10.-->
+	</option_data>
+	<option_data id="39964">
+		<!--P. Def. +16-->
+	</option_data>
+	<option_data id="39965">
+		<!--P. Def. +22-->
+	</option_data>
+	<option_data id="39966">
+		<!--P. Def. +28-->
+	</option_data>
+	<option_data id="39967">
+		<!--P. Def. +34-->
+	</option_data>
+	<option_data id="39968">
+		<!--P. Def. +40-->
+	</option_data>
+	<option_data id="39969">
+		<!--P. Def. +46-->
+	</option_data>
+	<option_data id="39970">
+		<!--P. Def. +52-->
+	</option_data>
+	<option_data id="39971">
+		<!--P. Def. +58-->
+	</option_data>
+	<option_data id="39972">
+		<!--P. Def. +64-->
+	</option_data>
+	<option_data id="39973">
+		<!--P. Def. +70-->
+	</option_data>
+	<option_data id="39974">
+		<!--P. Def. +76-->
+	</option_data>
+	<option_data id="39975">
+		<!--P. Def. +82-->
+	</option_data>
+	<option_data id="39976">
+		<!--P. Def. +88-->
+	</option_data>
+	<option_data id="39977">
+		<!--P. Def. +94-->
+	</option_data>
+	<option_data id="39978">
+		<!--P. Def. +100-->
+	</option_data>
+	<option_data id="39979">
+		<!--P. Def. +110-->
+	</option_data>
+	<option_data id="39980">
+		<!--P. Def. +120-->
+	</option_data>
+	<option_data id="39981">
+		<!--P. Def. +150-->
+	</option_data>
+	<option_data id="39982">
+		<!--P. Def. +200-->
+	</option_data>
+	<option_data id="39983">
+		<!--M. Def. +10-->
+	</option_data>
+	<option_data id="39984">
+		<!--M. Def. +16-->
+	</option_data>
+	<option_data id="39985">
+		<!--M. Def. +22-->
+	</option_data>
+	<option_data id="39986">
+		<!--M. Def. +28-->
+	</option_data>
+	<option_data id="39987">
+		<!--M. Def. +34-->
+	</option_data>
+	<option_data id="39988">
+		<!--M. Def. +40-->
+	</option_data>
+	<option_data id="39989">
+		<!--M. Def. +46-->
+	</option_data>
+	<option_data id="39990">
+		<!--M. Def. +52-->
+	</option_data>
+	<option_data id="39991">
+		<!--M. Def. +58-->
+	</option_data>
+	<option_data id="39992">
+		<!--M. Def. +64-->
+	</option_data>
+	<option_data id="39993">
+		<!--M. Def. +70-->
+	</option_data>
+	<option_data id="39994">
+		<!--M. Def. +76-->
+	</option_data>
+	<option_data id="39995">
+		<!--M. Def. +82-->
+	</option_data>
+	<option_data id="39996">
+		<!--M. Def. +88-->
+	</option_data>
+	<option_data id="39997">
+		<!--M. Def. +94-->
+	</option_data>
+	<option_data id="39998">
+		<!--M. Def. +100-->
+	</option_data>
+	<option_data id="39999">
+		<!--M. Def. +110-->
+	</option_data>
+</list>

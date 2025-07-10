@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="400" levels="30" name="Tribunal">
+		<table name="#pCritRate">20 20 20 20 20 30 30 30 30 30 40 40 40 40 50 50 50 55 55 55 55 55 55 55 55 55 55 55 55 55</table>
+		<table name="#power">619 800 983 1167 1353 1540 1728 1855 1982 2109 2237 2366 2495 2625 2755 4103 4160 4217 4273 4330 4387 4444 4500 4557 4614 4671 4728 4785 4842 4898</table>
+		<table name="#magicLevel">40 43 46 49 52 55 58 60 62 64 66 68 70 72 74 76 78 80 82 84</table>
+		<table name="#abnormal_level">1 1 1 1 1 2 2 2 2 2 3 3 3 3 4 4 4 5</table>
+		<table name="#mp_consume">33 35 37 39 42 44 46 48 49 51 52 54 55 57 58 60 60 61 62 63 63 64 65 66 66 67 68 69 69 70</table>
+		<table name="#effectPoint">-2200 -2350 -2500 -2650 -2800 -2950 -3100 -3200 -3300 -3400 -3500 -3600 -3700 -3800 -3900 -4000 -4050 -4100 -4150 -4200 -4250 -4300 -4350 -4400 -4450 -4500 -4550 -4600 -4650 -4700</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0400"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="critical_prob_down"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="element" value="holy"/>
+		<set name="activateRate" value="80"/>
+		<set name="overHit" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<set name="shieldignore" value="true"/>
+		<cond msgId="113">
+			<using kind="Sword, Blunt, Big Sword, Big Blunt"/>
+		</cond>
+		<for>
+			<effect>
+				<sub stat="pCritRate" value="#pCritRate"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="401" levels="30" name="Judgment">
+		<table name="#p_critical_damage_per">-20 -20 -20 -20 -20 -25 -25 -25 -25 -25 -30 -30 -30 -30 -35 -35 -35 -40 -40 -40 -40 -40 -40 -40 -40 -40 -40 -40 -40 -40</table>
+		<table name="#power">619 800 983 1167 1353 1540 1728 1855 1982 2109 2237 2366 2495 2625 2755 4103 4160 4217 4273 4330 4387 4444 4500 4557 4614 4671 4728 4785 4842 4898</table>
+		<table name="#magicLevel">40 43 46 49 52 55 58 60 62 64 66 68 70 72 74 76 78 80 82 84</table>
+		<table name="#abnormal_level">1 1 1 1 1 2 2 2 2 2 3 3 3 3 4 4 4</table>
+		<table name="#mp_consume">33 35 37 39 42 44 46 48 49 51 52 54 55 57 58 60 60 61 62 63 63 64 65 66 66 67 68 69 69 70</table>
+		<table name="#effectPoint">-2200 -2350 -2500 -2650 -2800 -2950 -3100 -3200 -3300 -3400 -3500 -3600 -3700 -3800 -3900 -4000 -4050 -4100 -4150 -4200 -4250 -4300 -4350 -4400 -4450 -4500 -4550 -4600 -4650 -4700</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0401"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="critical_dmg_down"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="element" value="unholy"/>
+		<set name="activateRate" value="80"/>
+		<set name="overHit" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<set name="shieldignore" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="113">
+			<using kind="Sword, Blunt, Big Sword, Big Blunt, Dual Sword"/>
+		</cond>
+		<for>
+			<effect>
+				<p_critical_damage value="#p_critical_damage_per" type="PER"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="402" levels="25" name="Shackle">
+		<table name="#magicLevel">55 58 60 62 64 66 68 70 72 74 76 78</table>
+		<table name="#mp_consume">17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65</table>
+		<table name="#effectPoint">-2500 -2750 -3000 -3100 -3200 -3300 -3400 -3500 -3600 -3700 -3800 -3850 -3900 -3950 -4000 -4050 -4100 -4150 -4200 -4250 -4300 -4350 -4400 -4450 -4500</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0403"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="ROOT"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="root_physically"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="activateRate" value="80"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="ROOT"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="HOLD"/>
+		<for>
+			<effect name="p_block_move">
+				<p_defence_trait name="hold" value="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="403" levels="10" name="Shackle">
+		<table name="#activaRate">80</table>
+		<table name="#magicLevel">55 58 60 62 64 66 68 70 72 74</table>
+		<table name="#mp_consume">25 27 28 29 30 31 32 33 34 34</table>
+		<table name="#effectPoint">-1046 -1098 -1132 -1163 -1193 -1221 -1247 -1270 -1291 -1309</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0403"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="ROOT"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="root_physically"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="activateRate" value="#activaRate"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="ROOT"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="HOLD"/>
+		<for>
+			<effect name="p_block_move">
+				<p_defence_trait name="hold" value="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="404" levels="20" name="Mass Shackling">
+		<table name="#magicLevel">58 62 66 70 74 76 77 78 79 80 80 80 80 80</table>
+		<table name="#mp_consume">20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115</table>
+		<table name="#effectPoint">-5500 -6000 -6500 -7000 -7300 -7600 -7700 -7800 -7900 -8000 -8100 -8200 -8300 -8400 -8500 -8600 -8700 -8800 -8900 -9000</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0404"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="ROOT"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="root_physically"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="activateRate" value="50"/>
+		<set name="lv_bonus_rate" value="20"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="POINT_BLANK"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="10;10"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="affect_range" value="200"/>
+		<set name="skillType" value="ROOT"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="HOLD"/>
+		<for>
+			<effect name="p_block_move">
+				<p_defence_trait name="hold" value="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="406" levels="3" name="Angelic Archon">
+		<table name="#resist_abnormal_debuff">-20 -30 -40</table>
+		<table name="#pDef">1.2 1.3 1.4</table>
+		<table name="#mDef">1.2 1.3 1.4</table>
+		<table name="#pAccCombat">4 5 6</table>
+		<table name="#runSpd">6 8 10</table>
+		<table name="#pAtkSpd">1.1 1.15 1.2</table>
+		<table name="#basePCritRate">20 30 40</table>
+		<table name="#p_critical_damage_per">10 15 20</table>
+		<table name="#cancelResist">1.2 1.3 1.4</table>
+		<table name="#p_heal_effect_per">-40 -50 -60</table>
+		<table name="#magicLevel">58 66 74</table>
+		<table name="#abnormal_level">1 2 3</table>
+		<table name="#mp_consume">133 153 170</table>
+		<set name="icon" value="icon.skill0406"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="60"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="possession"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="resist_abnormal_debuff" value="#resist_abnormal_debuff"/>
+				<mul stat="pDef" value="#pDef"/>
+				<mul stat="mDef" value="#mDef"/>
+				<add stat="pAccCombat" value="#pAccCombat">
+					<using kind="Sword, Big Sword, Blunt, Big Blunt"/>
+				</add>
+				<add stat="runSpd" value="#runSpd">
+					<using kind="Sword, Big Sword, Blunt, Big Blunt"/>
+				</add>
+				<mul stat="pAtkSpd" value="#pAtkSpd">
+					<using kind="Sword, Big Sword, Blunt, Big Blunt"/>
+				</mul>
+				<add stat="basePCritRate" value="#basePCritRate">
+					<using kind="Sword, Big Sword"/>
+				</add>
+				<p_critical_damage value="#p_critical_damage_per" type="PER">
+					<using kind="Blunt, Big Blunt"/>
+				</p_critical_damage>
+				<add stat="cancelResist" value="#cancelResist"/>
+				<p_heal_effect value="#p_heal_effect_per" type="PER"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="412" levels="11" name="Sand Bomb">
+		<table name="#pAccCombat">4 4 4 4 4 7 7 7 7 10 12</table>
+		<table name="#mAccCombat">4 4 4 4 4 7 7 7 7 10 12</table>
+		<table name="#magicLevel">55 58 60 62 64 66 68 70 72 74 78</table>
+		<table name="#abnormal_level">1 1 1 1 1 2 2 2 2 3 4</table>
+		<table name="#mp_consume">25 27 28 29 30 31 32 33 34 35 37</table>
+		<table name="#effectPoint">-523 -549 -566 -582 -597 -611 -624 -635 -646 -655 -662</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0412"/>
+		<set name="reuseDelay" value="4000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="hit_down"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="activateRate" value="80"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<sub stat="pAccCombat" value="#pAccCombat"/>
+				<sub stat="mAccCombat" value="#mAccCombat"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="413" levels="10" name="Rapid Fire">
+		<table name="#pAtk">140 150 160 170 180 190 200 220 250 300</table>
+		<table name="#abnormal_time">1200</table>
+		<table name="#magicLevel">60 62 64 66 68 70 72 74 80</table>
+		<table name="#abnormal_level">1 2 3 4 5 6 7 8 9</table>
+		<table name="#mp_consume">60 62 64 66 68 70 72 74 80 85</table>
+		<set name="icon" value="icon.skill0413"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="snipe"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="113">
+			<using kind="Bow"/>
+		</cond>
+		<for>
+			<effect>
+				<add order="0x60" stat="pAtk" value="#pAtk">
+					<using kind="Bow"/>
+				</add>
+				<mul order="0x50" stat="basePAtkSpd" value="1.20">
+					<using kind="Bow"/>
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="414" levels="10" name="Dead Eye">
+		<table name="#pAtk">140 150 160 170 180 190 200 220 250 300</table>
+		<table name="#pAccCombat">1 1 2 2 2 3 3 3 3 3</table>
+		<table name="#magicLevel">60 62 64 66 68 70 72 74</table>
+		<table name="#abnormal_level">1 2 3 4 5 6 7 8</table>
+		<table name="#mp_consume">60 62 64 66 68 70 72 74 80 85</table>
+		<set name="icon" value="icon.skill0414"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="snipe"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="113">
+			<using kind="Bow"/>
+		</cond>
+		<for>
+			<effect>
+				<p_critical_damage value="20" type="PER">
+					<using kind="Bow"/>
+				</p_critical_damage>
+				<add stat="pAtk" value="#pAtk">
+					<using kind="Bow"/>
+				</add>
+				<mul stat="pAtkSpd" value="0.95">
+					<using kind="Bow"/>
+				</mul>
+				<add stat="pAccCombat" value="#pAccCombat">
+					<using kind="Bow"/>
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="415" levels="3" name="Spirit of Sagittarius">
+		<table name="#mpConsumePhysical">0.9 0.8 0.7</table>
+		<table name="#abnormal_level">2 4 6</table>
+		<set name="icon" value="icon.skill0415"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="mp_cost_down"/>
+		<set name="magicLevel" value="76"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="mpConsumePhysical" value="#mpConsumePhysical"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="417" levels="8" name="Pain of Sagittarius">
+		<table name="#power">120 140 160 180 200 220 240 325</table>
+		<table name="#magicLevel">58 62 66 70 74 78 82</table>
+		<table name="#hpConsume">300 350 400 450 500 550 600 650</table>
+		<table name="#effectPoint">549 582 611 635 655 676 700 700</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0417"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="hpConsume" value="#hpConsume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect instant="true" name="RestoreMP" value="#power"/>
+		</for>
+	</skill>
+	<skill id="418" levels="3" name="Quiver of Holding">
+		<table name="#maxLoad">1.3 1.4 1.5</table>
+		<set name="icon" value="icon.skill0418"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="maxLoad" value="#maxLoad"/>
+		</for>
+	</skill>
+	<skill id="420" levels="3" name="Zealot">
+		<table name="#reuseDelay">300000 300000 180000</table>
+		<table name="#hpConsume">300 400 500</table>
+		<table name="#pAtkSpd">1.1 1.2 1.3</table>
+		<table name="#basePCritRate">22 44 67</table>
+		<table name="#p_critical_damage_per">22 44 67</table>
+		<table name="#p_skill_critical_rate">1.11 1.22 1.33</table>
+		<table name="#pAccCombat">6 6 6</table>
+		<table name="#runSpd">10 10 10</table>
+		<table name="#magicLevel">58 66 74</table>
+		<table name="#abnormal_level">1 2 3</table>
+		<table name="#abnormal_time">60</table>
+		<set name="icon" value="icon.skill0420"/>
+		<set name="reuseDelay" value="#reuseDelay"/>
+		<set name="hitTime" value="2000"/>
+		<set name="hpConsume" value="#hpConsume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="pd_up_special"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtkSpd" value="#pAtkSpd"/>
+				<add order="0x60" stat="basePCritRate" value="#basePCritRate"/>
+				<p_critical_damage value="#p_critical_damage_per" type="PER"/>
+				<mul stat="p_skill_critical_rate" value="#p_skill_critical_rate"/>
+				<add stat="pAccCombat" value="#pAccCombat"/>
+				<add stat="runSpd" value="#runSpd"/>
+				<mul stat="mpConsumePhysical" value="0.5"/>
+				<add stat="resist_abnormal_debuff" value="-80"/>
+				<add stat="cancelResist" value="40"/>
+				<p_heal_effect value="-50" type="PER"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="421" levels="5" name="Fell Swoop">
+		<table name="#TabTargetCount">1 2 3 4 5</table>
+		<table name="#magicLevel">51 55 59 63 67</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<table name="#mp_consume">81 87 93 99 102</table>
+		<set name="icon" value="icon.skill0421"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="polearm_attack"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+		<for>
+			<effect>
+				<add stat="poleTargetCount" value="#TabTargetCount"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="425" levels="1" name="Hawk Nature">
+		<set name="icon" value="icon.skill10295"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="300"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="possession"/>
+		<set name="magicLevel" value="74"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<add stat="basePCritRate" value="100">
+					<using kind="Fist, Dual Fist"/>
+				</add>
+				<p_critical_damage value="30" type="PER">
+					<using kind="Fist, Dual Fist"/>
+				</p_critical_damage>
+				<add stat="pAccCombat" value="6">
+					<using kind="Fist, Dual Fist"/>
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="429" levels="13" name="Knighthood">
+		<table name="#magicLevel">78 79 80 81 82 83 84</table>
+		<table name="#pdef">87.1 90 93 96 99 102 105 108 112 116 120 125 130</table>
+		<set name="icon" value="icon.skill0429"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pDef" value="#pdef">
+				<using armor="Heavy"/>
+			</add>
+			<mul stat="sDef" value="1.1">
+				<using armor="Heavy"/>
+			</mul>
+			<p_defence_trait name="bow" value="10">
+				<using armor="Heavy"/>
+			</p_defence_trait>
+		</for>
+	</skill>
+	<skill id="430" levels="3" name="Master of Combat">
+		<table name="#critDamRcpt">0.95 0.9 0.9</table>
+		<table name="#pSkillCritDamRcpt"> 1 1 0.9 </table>
+		<table name="#maxCP">200 500 1000</table>
+		<table name="#maxHP">200 500 1000</table>
+		<set name="icon" value="icon.skill0430"/>
+		<set name="magicLevel" value="78"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="pCritDamRcpt" value="#critDamRcpt"/>
+			<mul stat="pSkillCritDamRcpt" value="#pSkillCritDamRcpt" />
+			<mul stat="mCritDamRcpt" value="#critDamRcpt"/>
+			<add stat="maxCp" value="#maxCP"/>
+			<add stat="maxHp" value="#maxHP"/>
+		</for>
+	</skill>
+	<skill id="437" levels="3" name="Song of Silence">
+		<table name="#mp_consume">50 75 90</table>
+		<table name="#hitTime">2500 2400 2300</table>
+		<table name="#effectPoint">-507 -510 -515</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0437"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="#hitTime"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="SILENCE"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="silence_all"/>
+		<set name="magicLevel" value="79"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="affect_range" value="150"/>
+		<set name="lv_bonus_rate" value="20"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="POINT_BLANK"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="10;10"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="skillType" value="MUTE"/>
+		<set name="activateRate" value="60"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="MuteAll"/>
+		</for>
+	</skill>
+	<skill id="440" levels="1" name="Braveheart">
+		<set name="effectPoint" value="669"/>
+		<set name="icon" value="icon.skill0440"/>
+		<set name="reuseDelay" value="150000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="57"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="78"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect instant="true" name="RestoreCP" value="1000"/>
+		</for>
+	</skill>
+	<skill id="442" levels="1" name="Sonic Barrier">
+		<set name="consume_etc" value="3;0;0"/>
+		<set name="icon" value="icon.skill0442"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="50"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="INVINCIBILITY"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="invincibility"/>
+		<set name="abnormal_cancel_on_action" value="true"/>
+		<set name="magicLevel" value="77"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="num_charges" value="3"/>
+		<cond msgId="113">
+			<using kind="Dual Sword"/>
+		</cond>
+		<for>
+			<effect name="Invulnerable"/>
+			<effect name="p_block_debuff"/>
+		</for>
+	</skill>
+	<skill id="443" levels="1" name="Force Barrier">
+		<set name="consume_etc" value="3;0;0"/>
+		<set name="icon" value="icon.skill0443"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="50"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="INVINCIBILITY"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="invincibility"/>
+		<set name="abnormal_cancel_on_action" value="true"/>
+		<set name="magicLevel" value="77"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="num_charges" value="4"/>
+		<cond msgId="113">
+			<using kind="Dual Fist"/>
+		</cond>
+		<for>
+			<effect name="Invulnerable"/>
+			<effect name="p_block_debuff"/>
+		</for>
+	</skill>
+	<skill id="444" levels="1" name="Sweeper Festival">
+		<set name="icon" value="BranchSys2.icon.br_skill0444_a"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="12"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="28"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="POINT_BLANK"/>
+		<set name="affect_object" value="OBJECT_DEAD_NPC_BODY"/>
+		<set name="affect_limit" value="9;10"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="corpse" value="true"/>
+		<set name="affect_range" value="350"/>
+		<set name="skillType" value="SWEEP"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="445" levels="2" name="Mirage">
+		<table name="#pmCritDamRcpt">0.9 0.85</table>
+		<table name="#blowRate">1.15 1.2</table>
+		<set name="icon" value="icon.skill0445"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="40"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="120"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="mirage"/>
+		<set name="magicLevel" value="79"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="blowRate" value="#blowRate"/>
+				<mul stat="pCritDamRcpt" value="#pmCritDamRcpt"/>
+				<mul stat="mCritDamRcpt" value="#pmCritDamRcpt"/>
+				<triggers>
+					<trigger id="5144" level="1" type="RECEIVE_DAMAGE" chance="80">
+						<player damage="1;0"/>
+					</trigger>
+				</triggers>
+			</effect>
+		</for>
+	</skill>
+	<skill id="446" levels="2" name="Evasion">
+		<table name="#pSkillEvasion">50 70</table>
+		<table name="#mEvasRate">50 70</table>
+		<table name="#itemConsumeCount">0 2</table>
+		<set name="icon" value="icon.skill0446"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="40"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="avoid_skill"/>
+		<set name="magicLevel" value="79"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="itemConsumeCount" value="#itemConsumeCount"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pSkillEvasion" value="#pSkillEvasion"/>
+				<add stat="mEvasRate" value="#mEvasRate"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="447" levels="2" name="Counterattack">
+		<table name="#abnormal_time">40 50</table>
+		<table name="#itemConsumeCount">0 2</table>
+		<set name="icon" value="icon.skill0447"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="40"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="counter_skill"/>
+		<set name="magicLevel" value="79"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="itemConsumeCount" value="#itemConsumeCount"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="reflectDam" value="10"/>
+				<add stat="reflectBowDam" value="10"/>
+				<add stat="reflectPSkillDam" value="10"/>
+				<add stat="reflectMSkillDam" value="10"/>
+				<triggers>
+					<trigger id="47358" level="1" type="RECEIVE_DAMAGE" chance="30"/>
+				</triggers>
+			</effect>
+		</for>
+	</skill>
+	<skill id="449" levels="9" name="Summon Attractive Cubic">
+		<!--Last edit: 23.12.2010-->
+		<table name="#cubicLevel">1 2 3 4 5 6 7 8 9</table>
+		<table name="#itemConsumeCount">5 5 5 5 5 6 6 6 6</table>
+		<table name="#magicLevel">62 66 70 74 76 78 80 82 84</table>
+		<table name="#mp_consume">58 62 65 69 73 77 81 85 89</table>
+		<set name="icon" value="icon.skill0449"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="hitTime" value="6000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="itemConsumeCount" value="#itemConsumeCount"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_summon_cubic">
+				<def name="id" value="9"/>
+				<def name="level" value="#cubicLevel"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="451" levels="5" name="Sonic Move">
+		<table name="#consume_etc">1;0;0 2;0;0 2;0;0 2;0;0 2;0;0</table>
+		<table name="#num_charges">1 2 2 2 2</table>
+		<table name="#runSpd">20 30 40 45 50</table>
+		<table name="#magicLevel">52 62 68 79 81</table>
+		<table name="#mp_consume">26 29 32 35 38</table>
+		<set name="consume_etc" value="#consume_etc"/>
+		<set name="icon" value="icon.skill0451"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="speed_up_special"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="num_charges" value="#num_charges"/>
+		<cond msgId="113">
+			<using kind="Dual Sword"/>
+		</cond>
+		<for>
+			<effect>
+				<add stat="runSpd" value="#runSpd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="461" levels="3" name="Break Duress">
+		<table name="#num_charges">2 3</table>
+		<table name="#PARALYZE">10</table>
+		<table name="#root_magically">0 0 10</table>
+		<table name="#dispel_sd_max_abnormal_lvl">0 10</table>
+		<table name="#mp_consume">29 33 37</table>
+		<table name="#reuseDelay">600000 420000 300000</table>
+		<set name="consume_etc" value="2;0;0"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0461"/>
+		<set name="reuseDelay" value="#reuseDelay"/>
+		<set name="hitTime" value="3000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="num_charges" value="#num_charges"/>
+		<set name="skillType" value="BUFF"/>
+		<for>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="speed_down"/>
+				<def name="max_abnormal_level" value="#dispel_sd_max_abnormal_lvl"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="root_magically"/>
+				<def name="max_abnormal_level" value="#root_magically"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="PARALYZE"/>
+				<def name="max_abnormal_level" value="#PARALYZE"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="SLEEP"/>
+				<def name="max_abnormal_level" value="#PARALYZE"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="STUN"/>
+				<def name="max_abnormal_level" value="#PARALYZE"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="463" levels="5" name="Weapon Mastery">
+		<table name="#pAtk">30 50 70 130 200</table>
+		<table name="#pAtkSpd">20 30 40 80 100</table>
+		<table name="#magicLevel">1 20 40 76 85</table>
+		<set name="icon" value="icon.skill0816"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="#pAtk"/>
+			<add stat="pAtkSpd" value="#pAtkSpd"/>
+		</for>
+	</skill>
+	<skill id="464" levels="5" name="Armor Mastery">
+		<table name="#pDef">20 40 60 120 200</table>
+		<table name="#mDef">10 20 40 60 100</table>
+		<table name="#magicLevel">1 20 40 76 85</table>
+		<set name="icon" value="icon.skill10097"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pDef" value="#pDef"/>
+			<add stat="mDef" value="#mDef"/>
+		</for>
+	</skill>
+	<skill id="465" levels="10" name="Light Armor Mastery">
+		<table name="#pDef">70 75 85 100 115 130 145 160 180 210</table>
+		<table name="#mDef">20 20 40 40 40 40 60 60 100 100</table>
+		<table name="#pEvasRate">3 3 3 3 3 3 3 3 4 5</table>
+		<table name="#pCritDamRcpt">0.95 0.95 0.9 0.9 0.9 0.85 0.85 0.85 0.8 0.75</table>
+		<table name="#magicLevel">20 30 40 50 60 70 75 80 85</table>
+		<set name="icon" value="icon.skill0465"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pDef" value="#pDef">
+				<using armor="Light"/>
+			</add>
+			<add stat="mDef" value="#mDef">
+				<using armor="Light"/>
+			</add>
+			<add stat="pEvasRate" value="#pEvasRate">
+				<using armor="Light"/>
+			</add>
+			<mul stat="pCritChanceRcpt" value="#pCritDamRcpt">
+				<using armor="Light"/>
+			</mul>
+			<mul stat="pCritDamRcpt" value="#pCritDamRcpt">
+				<using armor="Light"/>
+			</mul>
+		</for>
+	</skill>
+	<skill id="466" levels="3" name="Magic Immunity">
+		<!--
+			Enchant #1: +M. Def
+			Description: Increases M. Def.
+		-->
+		<table name="#mDef">120 200 300</table>
+		<table name="#magicLevel">25 40 55</table>
+		<set name="icon" value="icon.skill0466"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mDef" value="#mDef"/>
+		</for>
+	</skill>
+	<skill id="472" levels="10" name="Ancient Sword Mastery">
+		<table name="#pAtk">90 140 180 200 320 340 370 460 565 600</table>
+		<table name="#pAtkSpd">30 30 40 40 40 40 40 80 100 100</table>
+		<table name="#magicLevel">20 30 40 50 60 70 75 80 85 90</table>
+		<set name="icon" value="icon.skill0472"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="#pAtk">
+				<using kind="Ancient Sword"/>
+			</add>
+			<add stat="pAtkSpd" value="#pAtkSpd">
+				<using kind="Ancient Sword"/>
+			</add>
+		</for>
+	</skill>
+	<skill id="474" levels="10" name="Rapier Mastery">
+		<table name="#pAtk">15 30 50 70 90 110 130 160 190 220</table>
+		<table name="#magicLevel">20 30 40 50 60 70 75 80 85 90</table>
+		<set name="icon" value="icon.skill0474"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="#pAtk">
+				<using kind="Rapier"/>
+			</add>
+		</for>
+	</skill>
+	<skill id="477" levels="10" name="Soul Smash">
+		<table name="#power">140 266 478 813 1302 1953 2734 3555 4266 4693</table>
+		<table name="#magicLevel">20 30 40 50 60 70 75 80 85</table>
+		<table name="#mp_consume">18 25 33 40 48 55 59 63 66 70</table>
+		<table name="#effectPoint">-120 -170 -220 -270 -320 -370 -395 -420 -445 -470</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0495"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1300"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="overHit" value="true"/>
+		<set name="nextAction" value="attack"/>
+		<set name="shieldignore" value="true"/>
+		<cond msgId="113">
+			<using kind="Ancient Sword, Big Sword"/>
+		</cond>
+	</skill>
+	<skill id="485" levels="5" name="Disarm">
+		<!--
+			Last modify:	15.01.2009
+			Description:
+			Disarms a target. Weapons cannot be re-equipped while the effect lasts.
+		-->
+		<table name="#activateRate">70</table>
+		<table name="#magicLevel">76 78 80 82 84</table>
+		<table name="#abnormal_time">3</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<table name="#mp_consume">100 110 120 130 140</table>
+		<table name="#effectPoint">-460 -470 -480 -490 -500</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0485"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="150"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="DOT_BLEEDING"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="disarm"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="activateRate" value="#activateRate"/>
+		<set name="lv_bonus_rate" value="20"/>
+		<set name="basic_property" value="physical_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="Disarm">
+				<mul order="0x90" stat="pAtk" value="0.6"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="499" levels="3" name="Courage">
+		<!--
+			Last modify:	13.06.2009
+			Description: Increases resistance to altered state mind attacks by 40,60,100 for 1 minute.
+		-->
+		<table name="#p_defence_trait_derangement">20 40 50</table>
+		<table name="#magicLevel">36 49 62</table>
+		<table name="#abnormal_level">1 2 3</table>
+		<table name="#mp_consume">20 40 60</table>
+		<set name="icon" value="icon.skill0499"/>
+		<set name="reuseDelay" value="150000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="60"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="resist_spiritless"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<p_defence_trait name="derangement" value="#p_defence_trait_derangement"/>
+			</effect>
+		</for>
+	</skill>
+</list>

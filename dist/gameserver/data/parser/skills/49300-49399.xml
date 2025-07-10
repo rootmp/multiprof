@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="49300" levels="10" name="Pet Death Penalty">
+		<set name="debuff" value="true"/>
+		<set name="icon" value="icon.skll10091"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="49301" levels="5" name="Rump Stun">
+		<table name="#effectPoint">-400 -600 -760 -760 -760</table>
+		<!--Cannot move due to shock.-->
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_butt_shock"/>
+		<set name="castRange" value="700"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="49302" levels="5" name="Scout's Strike">
+		<table name="#effectPoint">-760 -780 -800 -820 -850</table>
+		<!--Cannot move due to shock.-->
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill10787"/>
+		<set name="castRange" value="400"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="49303" levels="20" name="Crippling Bite">
+		<table name="#effectPoint">-100 -250 -400 -500 -600 -700 -750 -800 -850 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900</table>
+		<!--Pulls the enemy to your character.-->
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_bite_crush"/>
+		<set name="castRange" value="80"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="49304" levels="20" name="Double Crippling Bite">
+		<table name="#effectPoint">-100 -250 -400 -500 -600 -700 -750 -800 -850 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900</table>
+		<!--Pulls the enemy to your character.-->
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_bite_crush"/>
+		<set name="castRange" value="80"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="49305" levels="15" name="Feather Storm">
+		<table name="#effectPoint">-1520 -1540 -1560 -1580 -1600 -1620 -1640 -1660 -1680 -1700 -1720 -1740 -1760 -1780 -1800</table>
+		<!--Speed -50%%-->
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_feather_trap"/>
+		<set name="castRange" value="700"/>
+		<set name="mp_consume" value="80"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="49306" levels="15" name="Feather Storm - Explosion">
+		<table name="#effectPoint">-1520 -1540 -1560 -1580 -1600 -1620 -1640 -1660 -1680 -1700 -1720 -1740 -1760 -1780 -1800</table>
+		<!--Attacks with feathers.\nDecreases Speed.\nPower: $s1-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_feather_trap"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="80"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

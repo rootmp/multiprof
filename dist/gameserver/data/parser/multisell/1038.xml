@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!-- Author: nexvill -->
+<list>
+	<item>
+		<ingredient id="94732" count="1" />	<!-- Agathion Spirit Exchange Coupon -->
+		<production id="93134" count="1" />	<!-- Package: Agathion Ignis -->
+	</item>
+	<item>
+		<ingredient id="94732" count="1" />	<!-- Agathion Spirit Exchange Coupon -->
+		<production id="93135" count="1" />	<!-- Package: Agathion Nebula -->
+	</item>
+	<item>
+		<ingredient id="94732" count="1" />	<!-- Agathion Spirit Exchange Coupon -->
+		<production id="93136" count="1" />	<!-- Package: Agathion Procella -->
+	</item>
+	<item>
+		<ingredient id="94732" count="1" />	<!-- Agathion Spirit Exchange Coupon -->
+		<production id="93137" count="1" />	<!-- Package: Agathion Petram -->
+	</item>
+	<item>
+		<ingredient id="94732" count="1" />	<!-- Agathion Spirit Exchange Coupon -->
+		<production id="93138" count="1" />	<!-- Package: Agathion Joy -->
+	</item>
+</list>

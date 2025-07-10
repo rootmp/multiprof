@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30414" /> <!-- Rosella -->
+		<point x="43673" y="49683" z="-3048" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30154" /> <!-- Asterios -->
+		<point x="44692" y="52261" z="-2792" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30156" /> <!-- Cobendell -->
+		<point x="44823" y="52414" z="-2792" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30157" /> <!-- Greenis -->
+		<point x="45000" y="52101" z="-2792" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30285" /> <!-- Gartrandell -->
+		<point x="44995" y="51706" z="-2800" h="49352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30362" /> <!-- Andellia -->
+		<point x="46475" y="50495" z="-3056" h="61440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30222" /> <!-- Alshupes -->
+		<point x="45859" y="50827" z="-3056" h="45056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30155" /> <!-- Ellenia -->
+		<point x="45725" y="52105" z="-2792" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30158" /> <!-- Esrandell -->
+		<point x="45919" y="52414" z="-2792" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30146" /> <!-- Mint -->
+		<point x="46926" y="51511" z="-2952" h="43000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30284" /> <!-- Alberius -->
+		<point x="45727" y="51721" z="-2800" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="32478" /> <!-- Game Assistant -->
+		<point x="47600" y="49920" z="-2992" h="33500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30153" /> <!-- Markius -->
+		<point x="47780" y="49568" z="-2984" h="4096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30152" /> <!-- Julia -->
+		<point x="47912" y="50170" z="-2984" h="50000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30151" /> <!-- Chad -->
+		<point x="47868" y="50167" z="-2984" h="50000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30218" /> <!-- Kendell -->
+		<point x="47595" y="51569" z="-2992" h="33781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30219" /> <!-- Veltress -->
+		<point x="47401" y="51764" z="-2992" h="15769" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31853" /> <!-- Treant Bremec -->
+		<point x="50589" y="54974" z="-3368" h="1352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31852" /> <!-- Pixy Murika -->
+		<point x="49262" y="53607" z="-3216" h="53248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30361" /> <!-- Rizraell -->
+		<point x="45610" y="49008" z="-3056" h="53248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30599" /> <!-- Newbie Guide -->
+		<point x="45475" y="48359" z="-3056" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30216" /> <!-- Wheeler -->
+		<point x="45778" y="46534" z="-2992" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30217" /> <!-- Berros -->
+		<point x="45487" y="46511" z="-2992" h="57344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30147" /> <!-- Unoren -->
+		<point x="44667" y="46896" z="-2982" h="31000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30148" /> <!-- Ariel -->
+		<point x="44683" y="46952" z="-2981" h="28672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30363" /> <!-- Aios -->
+		<point x="44476" y="47153" z="-2984" h="46000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30223" /> <!-- Arujien -->
+		<point x="42978" y="49115" z="-2992" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30221" /> <!-- Rayen -->
+		<point x="42812" y="51138" z="-2992" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30149" /> <!-- Creamees -->
+		<point x="42700" y="50057" z="-2984" h="14500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30150" /> <!-- Herbiel -->
+		<point x="42766" y="50037" z="-2984" h="11500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30220" /> <!-- Starden -->
+		<point x="42971" y="51372" z="-2992" h="32768" />
+	</spawn>
+</list>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="37000">
+		<!--Received M. Skill Critical Rate -1%-->
+	</option_data>
+	<option_data id="37001">
+		<!--Received M. Skill Critical Rate -1%-->
+	</option_data>
+	<option_data id="37002">
+		<!--Received M. Skill Critical Rate -2%-->
+	</option_data>
+	<option_data id="37003">
+		<!--Received M. Skill Critical Rate -2%-->
+	</option_data>
+	<option_data id="37004">
+		<!--P. Def. +10.-->
+	</option_data>
+	<option_data id="37005">
+		<!--P. Def. +16-->
+	</option_data>
+	<option_data id="37006">
+		<!--P. Def. +22-->
+	</option_data>
+	<option_data id="37007">
+		<!--P. Def. +28-->
+	</option_data>
+	<option_data id="37008">
+		<!--P. Def. +34-->
+	</option_data>
+	<option_data id="37009">
+		<!--P. Def. +40-->
+	</option_data>
+	<option_data id="37010">
+		<!--P. Def. +46-->
+	</option_data>
+	<option_data id="37011">
+		<!--P. Def. +52-->
+	</option_data>
+	<option_data id="37012">
+		<!--P. Def. +58-->
+	</option_data>
+	<option_data id="37013">
+		<!--P. Def. +64-->
+	</option_data>
+	<option_data id="37014">
+		<!--P. Def. +70-->
+	</option_data>
+	<option_data id="37015">
+		<!--P. Def. +76-->
+	</option_data>
+	<option_data id="37016">
+		<!--P. Def. +82-->
+	</option_data>
+	<option_data id="37017">
+		<!--P. Def. +88-->
+	</option_data>
+	<option_data id="37018">
+		<!--P. Def. +94-->
+	</option_data>
+	<option_data id="37019">
+		<!--P. Def. +100-->
+	</option_data>
+	<option_data id="37020">
+		<!--P. Def. +110-->
+	</option_data>
+	<option_data id="37021">
+		<!--P. Def. +120-->
+	</option_data>
+	<option_data id="37022">
+		<!--P. Def. +150-->
+	</option_data>
+	<option_data id="37023">
+		<!--P. Def. +200-->
+	</option_data>
+	<option_data id="37024">
+		<!--P. Def. +10.-->
+	</option_data>
+	<option_data id="37025">
+		<!--P. Def. +16-->
+	</option_data>
+	<option_data id="37026">
+		<!--P. Def. +22-->
+	</option_data>
+	<option_data id="37027">
+		<!--P. Def. +28-->
+	</option_data>
+	<option_data id="37028">
+		<!--P. Def. +34-->
+	</option_data>
+	<option_data id="37029">
+		<!--P. Def. +40-->
+	</option_data>
+	<option_data id="37030">
+		<!--P. Def. +46-->
+	</option_data>
+	<option_data id="37031">
+		<!--P. Def. +52-->
+	</option_data>
+	<option_data id="37032">
+		<!--P. Def. +58-->
+	</option_data>
+	<option_data id="37033">
+		<!--P. Def. +64-->
+	</option_data>
+	<option_data id="37034">
+		<!--P. Def. +70-->
+	</option_data>
+	<option_data id="37035">
+		<!--P. Def. +76-->
+	</option_data>
+	<option_data id="37036">
+		<!--P. Def. +82-->
+	</option_data>
+	<option_data id="37037">
+		<!--P. Def. +88-->
+	</option_data>
+	<option_data id="37038">
+		<!--P. Def. +94-->
+	</option_data>
+	<option_data id="37039">
+		<!--P. Def. +100-->
+	</option_data>
+	<option_data id="37040">
+		<!--P. Def. +110-->
+	</option_data>
+	<option_data id="37041">
+		<!--P. Def. +120-->
+	</option_data>
+	<option_data id="37042">
+		<!--P. Def. +150-->
+	</option_data>
+	<option_data id="37043">
+		<!--P. Def. +200-->
+	</option_data>
+	<option_data id="37044">
+		<!--P. Def. +10.-->
+	</option_data>
+	<option_data id="37045">
+		<!--P. Def. +16-->
+	</option_data>
+	<option_data id="37046">
+		<!--P. Def. +22-->
+	</option_data>
+	<option_data id="37047">
+		<!--P. Def. +28-->
+	</option_data>
+	<option_data id="37048">
+		<!--P. Def. +34-->
+	</option_data>
+	<option_data id="37049">
+		<!--P. Def. +40-->
+	</option_data>
+	<option_data id="37050">
+		<!--P. Def. +46-->
+	</option_data>
+	<option_data id="37051">
+		<!--P. Def. +52-->
+	</option_data>
+	<option_data id="37052">
+		<!--P. Def. +58-->
+	</option_data>
+	<option_data id="37053">
+		<!--P. Def. +64-->
+	</option_data>
+	<option_data id="37054">
+		<!--P. Def. +70-->
+	</option_data>
+	<option_data id="37055">
+		<!--P. Def. +76-->
+	</option_data>
+	<option_data id="37056">
+		<!--P. Def. +82-->
+	</option_data>
+	<option_data id="37057">
+		<!--P. Def. +88-->
+	</option_data>
+	<option_data id="37058">
+		<!--P. Def. +94-->
+	</option_data>
+	<option_data id="37059">
+		<!--P. Def. +100-->
+	</option_data>
+	<option_data id="37060">
+		<!--P. Def. +110-->
+	</option_data>
+	<option_data id="37061">
+		<!--P. Def. +120-->
+	</option_data>
+	<option_data id="37062">
+		<!--P. Def. +150-->
+	</option_data>
+	<option_data id="37063">
+		<!--P. Def. +200-->
+	</option_data>
+	<option_data id="37064">
+		<!--M. Def. +10-->
+	</option_data>
+	<option_data id="37065">
+		<!--M. Def. +16-->
+	</option_data>
+	<option_data id="37066">
+		<!--M. Def. +22-->
+	</option_data>
+	<option_data id="37067">
+		<!--M. Def. +28-->
+	</option_data>
+	<option_data id="37068">
+		<!--M. Def. +34-->
+	</option_data>
+	<option_data id="37069">
+		<!--M. Def. +40-->
+	</option_data>
+	<option_data id="37070">
+		<!--M. Def. +46-->
+	</option_data>
+	<option_data id="37071">
+		<!--M. Def. +52-->
+	</option_data>
+	<option_data id="37072">
+		<!--M. Def. +58-->
+	</option_data>
+	<option_data id="37073">
+		<!--M. Def. +64-->
+	</option_data>
+	<option_data id="37074">
+		<!--M. Def. +70-->
+	</option_data>
+	<option_data id="37075">
+		<!--M. Def. +76-->
+	</option_data>
+	<option_data id="37076">
+		<!--M. Def. +82-->
+	</option_data>
+	<option_data id="37077">
+		<!--M. Def. +88-->
+	</option_data>
+	<option_data id="37078">
+		<!--M. Def. +94-->
+	</option_data>
+	<option_data id="37079">
+		<!--M. Def. +100-->
+	</option_data>
+	<option_data id="37080">
+		<!--M. Def. +110-->
+	</option_data>
+	<option_data id="37081">
+		<!--M. Def. +120-->
+	</option_data>
+	<option_data id="37082">
+		<!--M. Def. +150-->
+	</option_data>
+	<option_data id="37083">
+		<!--M. Def. +200-->
+	</option_data>
+	<option_data id="37084">
+		<!--M. Def. +10-->
+	</option_data>
+	<option_data id="37085">
+		<!--M. Def. +16-->
+	</option_data>
+	<option_data id="37086">
+		<!--M. Def. +22-->
+	</option_data>
+	<option_data id="37087">
+		<!--M. Def. +28-->
+	</option_data>
+	<option_data id="37088">
+		<!--M. Def. +34-->
+	</option_data>
+	<option_data id="37089">
+		<!--M. Def. +40-->
+	</option_data>
+	<option_data id="37090">
+		<!--M. Def. +46-->
+	</option_data>
+	<option_data id="37091">
+		<!--M. Def. +52-->
+	</option_data>
+	<option_data id="37092">
+		<!--M. Def. +58-->
+	</option_data>
+	<option_data id="37093">
+		<!--M. Def. +64-->
+	</option_data>
+	<option_data id="37094">
+		<!--M. Def. +70-->
+	</option_data>
+	<option_data id="37095">
+		<!--M. Def. +76-->
+	</option_data>
+	<option_data id="37096">
+		<!--M. Def. +82-->
+	</option_data>
+	<option_data id="37097">
+		<!--M. Def. +88-->
+	</option_data>
+	<option_data id="37098">
+		<!--M. Def. +94-->
+	</option_data>
+	<option_data id="37099">
+		<!--M. Def. +100-->
+	</option_data>
+</list>

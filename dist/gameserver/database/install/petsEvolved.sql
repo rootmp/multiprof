@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS `petsEvolved`;
+CREATE TABLE `petsEvolved` (
+	`hashId` bigint NOT NULL DEFAULT '0',
+	`level` TINYINT UNSIGNED NOT NULL DEFAULT '0',
+	`petId` INT NOT NULL DEFAULT '0',
+	PRIMARY KEY  (`hashId`)
+) ENGINE=MyISAM;

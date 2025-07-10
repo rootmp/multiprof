@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="34200">
+		<!--Skill Critical Damage +80-->
+	</option_data>
+	<option_data id="34201">
+		<!--Skill Critical Damage +90-->
+	</option_data>
+	<option_data id="34202">
+		<!--Skill Critical Damage +100-->
+	</option_data>
+	<option_data id="34203">
+		<!--Skill Critical Damage +110-->
+	</option_data>
+	<option_data id="34204">
+		<!--Skill Critical Damage +120-->
+	</option_data>
+	<option_data id="34205">
+		<!--Skill Critical Damage +130-->
+	</option_data>
+	<option_data id="34206">
+		<!--Skill Critical Damage +150-->
+	</option_data>
+	<option_data id="34207">
+		<!--Skill Critical Damage +200-->
+	</option_data>
+	<option_data id="34208">
+		<!--Skill Critical Damage +300-->
+	</option_data>
+	<option_data id="34209">
+		<!--Soulshot/ Spiritshot damage +1%-->
+	</option_data>
+	<option_data id="34210">
+		<!--Soulshot/ Spiritshot damage +1%-->
+	</option_data>
+	<option_data id="34211">
+		<!--Soulshot/ Spiritshot damage +1%-->
+	</option_data>
+	<option_data id="34212">
+		<!--Soulshot/ Spiritshot damage +1%-->
+	</option_data>
+	<option_data id="34213">
+		<!--Soulshot/ Spiritshot damage +1%-->
+	</option_data>
+	<option_data id="34214">
+		<!--Soulshot/ Spiritshot damage +1%-->
+	</option_data>
+	<option_data id="34215">
+		<!--Soulshot/ Spiritshot damage +1%-->
+	</option_data>
+	<option_data id="34216">
+		<!--Soulshot/ Spiritshot damage +1%-->
+	</option_data>
+	<option_data id="34217">
+		<!--Soulshot/ Spiritshot damage +2%-->
+	</option_data>
+	<option_data id="34218">
+		<!--Soulshot/ Spiritshot damage +2%-->
+	</option_data>
+	<option_data id="34219">
+		<!--Soulshot/ Spiritshot damage +2%-->
+	</option_data>
+	<option_data id="34220">
+		<!--Soulshot/ Spiritshot damage +2%-->
+	</option_data>
+	<option_data id="34221">
+		<!--Soulshot/ Spiritshot damage +2%-->
+	</option_data>
+	<option_data id="34222">
+		<!--Soulshot/ Spiritshot damage +2%-->
+	</option_data>
+	<option_data id="34223">
+		<!--Soulshot/ Spiritshot damage +2%-->
+	</option_data>
+	<option_data id="34224">
+		<!--Soulshot/ Spiritshot damage +3%-->
+	</option_data>
+	<option_data id="34225">
+		<!--Soulshot/ Spiritshot damage +3%-->
+	</option_data>
+	<option_data id="34226">
+		<!--Soulshot/ Spiritshot damage +3%-->
+	</option_data>
+	<option_data id="34227">
+		<!--Soulshot/ Spiritshot damage +4%-->
+	</option_data>
+	<option_data id="34228">
+		<!--Soulshot/ Spiritshot damage +5%-->
+	</option_data>
+	<option_data id="34229">
+		<!--Max HP +10-->
+	</option_data>
+	<option_data id="34230">
+		<!--Max HP +15-->
+	</option_data>
+	<option_data id="34231">
+		<!--Max HP +20-->
+	</option_data>
+	<option_data id="34232">
+		<!--Max HP +25-->
+	</option_data>
+	<option_data id="34233">
+		<!--Max HP +30-->
+	</option_data>
+	<option_data id="34234">
+		<!--Max HP +35-->
+	</option_data>
+	<option_data id="34235">
+		<!--Max HP +40-->
+	</option_data>
+	<option_data id="34236">
+		<!--Max HP +45-->
+	</option_data>
+	<option_data id="34237">
+		<!--Max HP +50-->
+	</option_data>
+	<option_data id="34238">
+		<!--Max HP +55-->
+	</option_data>
+	<option_data id="34239">
+		<!--Max HP +60-->
+	</option_data>
+	<option_data id="34240">
+		<!--Max HP +65-->
+	</option_data>
+	<option_data id="34241">
+		<!--Max HP +70-->
+	</option_data>
+	<option_data id="34242">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="34243">
+		<!--Max HP +80-->
+	</option_data>
+	<option_data id="34244">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="34245">
+		<!--Max HP +110-->
+	</option_data>
+	<option_data id="34246">
+		<!--Max HP +120-->
+	</option_data>
+	<option_data id="34247">
+		<!--Max HP +130-->
+	</option_data>
+	<option_data id="34248">
+		<!--Max HP +180.-->
+	</option_data>
+	<option_data id="34249">
+		<!--Max HP +25-->
+	</option_data>
+	<option_data id="34250">
+		<!--Max HP +38-->
+	</option_data>
+	<option_data id="34251">
+		<!--Max HP +50-->
+	</option_data>
+	<option_data id="34252">
+		<!--Max HP +63-->
+	</option_data>
+	<option_data id="34253">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="34254">
+		<!--Max HP +88-->
+	</option_data>
+	<option_data id="34255">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="34256">
+		<!--Max HP +113-->
+	</option_data>
+	<option_data id="34257">
+		<!--Max HP +125-->
+	</option_data>
+	<option_data id="34258">
+		<!--Max HP +138-->
+	</option_data>
+	<option_data id="34259">
+		<!--Max HP +150-->
+	</option_data>
+	<option_data id="34260">
+		<!--Max HP +163-->
+	</option_data>
+	<option_data id="34261">
+		<!--Max HP +175-->
+	</option_data>
+	<option_data id="34262">
+		<!--Max HP +188-->
+	</option_data>
+	<option_data id="34263">
+		<!--Max HP +240-->
+	</option_data>
+	<option_data id="34264">
+		<!--Max HP +300-->
+	</option_data>
+	<option_data id="34265">
+		<!--Max HP +330-->
+	</option_data>
+	<option_data id="34266">
+		<!--Max HP +360-->
+	</option_data>
+	<option_data id="34267">
+		<!--Max HP +390-->
+	</option_data>
+	<option_data id="34268">
+		<!--Max HP +480-->
+	</option_data>
+	<option_data id="34269">
+		<!--Max MP +10-->
+	</option_data>
+	<option_data id="34270">
+		<!--Max MP +15-->
+	</option_data>
+	<option_data id="34271">
+		<!--Max MP +20-->
+	</option_data>
+	<option_data id="34272">
+		<!--Max MP +25-->
+	</option_data>
+	<option_data id="34273">
+		<!--Max MP +30-->
+	</option_data>
+	<option_data id="34274">
+		<!--Max MP +35-->
+	</option_data>
+	<option_data id="34275">
+		<!--Max MP +40-->
+	</option_data>
+	<option_data id="34276">
+		<!--Max MP +45-->
+	</option_data>
+	<option_data id="34277">
+		<!--Max MP +50-->
+	</option_data>
+	<option_data id="34278">
+		<!--Max MP +55-->
+	</option_data>
+	<option_data id="34279">
+		<!--Max MP +60-->
+	</option_data>
+	<option_data id="34280">
+		<!--Max MP +65-->
+	</option_data>
+	<option_data id="34281">
+		<!--Max MP +70-->
+	</option_data>
+	<option_data id="34282">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="34283">
+		<!--Max MP +80-->
+	</option_data>
+	<option_data id="34284">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="34285">
+		<!--Max MP +110-->
+	</option_data>
+	<option_data id="34286">
+		<!--Max MP +120-->
+	</option_data>
+	<option_data id="34287">
+		<!--Max MP +130-->
+	</option_data>
+	<option_data id="34288">
+		<!--Max MP +180.-->
+	</option_data>
+	<option_data id="34289">
+		<!--Max MP +25-->
+	</option_data>
+	<option_data id="34290">
+		<!--Max MP +38-->
+	</option_data>
+	<option_data id="34291">
+		<!--Max MP +50-->
+	</option_data>
+	<option_data id="34292">
+		<!--Max MP +63-->
+	</option_data>
+	<option_data id="34293">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="34294">
+		<!--Max MP +88-->
+	</option_data>
+	<option_data id="34295">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="34296">
+		<!--Max MP +113-->
+	</option_data>
+	<option_data id="34297">
+		<!--Max MP +125-->
+	</option_data>
+	<option_data id="34298">
+		<!--Max MP +138-->
+	</option_data>
+	<option_data id="34299">
+		<!--Max MP +150-->
+	</option_data>
+</list>

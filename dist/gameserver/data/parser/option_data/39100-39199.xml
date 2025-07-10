@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="39100">
+		<!--Suppression Resistance +1%-->
+		<for>
+			<p_defence_trait name="derangement" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39101">
+		<!--Knockback Resistance +1%-->
+		<for>
+			<p_defence_trait name="knockback" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39102">
+		<!--Suppression Resistance +1%-->
+		<for>
+			<p_defence_trait name="derangement" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39103">
+		<!--Private store slots +1-->
+		<for>
+			<add order="0x60" stat="tradeLimit" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39104">
+		<!--Private warehouse slots +6-->
+		<for>
+			<add order="0x60" stat="storageLimit" value="6"/>
+		</for>
+	</option_data>
+	<option_data id="39105">
+		<!--M. Skill Critical Damage +20-->
+		<for>
+			<p_magic_critical_dmg value="20" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39106">
+		<!--P. Skill Critical Damage +20-->
+		<for>
+			<p_skill_critical_damage value="20" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39107">
+		<!--Soulshot/ Spiritshot damage +1%-->
+		<for>
+			<mul order="0x60" stat="soulshot_power" value="1.01"/>
+			<mul order="0x60" stat="spiritshot_power" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39108">
+		<!--P. Skill Critical Rate +1%-->
+		<for>
+			<mul order="0x60" stat="p_skill_critical_rate" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39109">
+		<!--Chance of dropping items -1%-->
+	</option_data>
+	<option_data id="39110">
+		<!--Cost of restoring dropped items -1%-->
+	</option_data>
+	<option_data id="39111">
+		<!--Death XP Penalty -1%-->
+	</option_data>
+	<option_data id="39112">
+		<!--Knockback Resistance +1%-->
+		<for>
+			<p_defence_trait name="knockback" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39113">
+		<!--P. Atk. +40-->
+		<for>
+			<add order="0x60" stat="pAtk" value="40"/>
+		</for>
+	</option_data>
+	<option_data id="39114">
+		<!--M. Atk. +44-->
+		<for>
+			<add order="0x60" stat="mAtk" value="44"/>
+		</for>
+	</option_data>
+	<option_data id="39115">
+		<!--Cooldown -1%-->
+		<for>
+			<mul order="0x60" stat="mReuse" value="0.99"/>
+			<mul order="0x60" stat="pReuse" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39116">
+		<!--Max CP +150-->
+		<for>
+			<add order="0x60" stat="maxCp" value="150"/>
+		</for>
+	</option_data>
+	<option_data id="39117">
+		<!--Pull Resistance +1%-->
+		<for>
+			<p_defence_trait name="pull" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39118">
+		<!--Inventory slots +1-->
+		<for>
+			<add order="0x60" stat="inventoryLimit" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39119">
+		<!--P. Atk. +80-->
+		<for>
+			<add order="0x60" stat="pAtk" value="80"/>
+		</for>
+	</option_data>
+	<option_data id="39120">
+		<!--M. Atk. +60-->
+		<for>
+			<add order="0x60" stat="mAtk" value="60"/>
+		</for>
+	</option_data>
+	<option_data id="39121">
+		<!--Received P. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39122">
+		<!--Received M. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39123">
+		<!--Skill Critical Damage +250-->
+		<for>
+			<p_skill_critical_damage value="250" type="DIFF"/>
+			<p_magic_critical_dmg value="250" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39124">
+		<!--Max CP +175-->
+		<for>
+			<add order="0x60" stat="maxCp" value="175"/>
+		</for>
+	</option_data>
+	<option_data id="39125">
+		<!--Speed +1-->
+		<for>
+			<add order="0x60" stat="runSpd" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39126">
+		<!--Soulshot/ Spiritshot damage +2%-->
+		<for>
+			<mul order="0x60" stat="soulshot_power" value="1.02"/>
+			<mul order="0x60" stat="spiritshot_power" value="1.02"/>
+		</for>
+	</option_data>
+	<option_data id="39127">
+		<!--CON/ MEN +1-->
+		<for>
+			<add order="0x60" stat="CON" value="1.0"/>
+			<add order="0x60" stat="MEN" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39128">
+		<!--Inventory slots +1-->
+		<for>
+			<add order="0x60" stat="inventoryLimit" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39129">
+		<!--Skill MP Consumption -2%-->
+		<for>
+			<mul order="0x60" stat="mpConsum" value="0.98"/>
+			<mul order="0x60" stat="mpConsumePhysical" value="0.98"/>
+			<mul order="0x60" stat="mpDanceConsume" value="0.98"/>
+		</for>
+	</option_data>
+	<option_data id="39130">
+		<!--Acquired XP/ SP +2%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.02"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.02"/>
+		</for>
+	</option_data>
+	<option_data id="39131">
+		<!--Hellfire Resistance +2%-->
+	</option_data>
+	<option_data id="39132">
+		<!--Skill Power +2%-->
+		<for>
+			<mul order="0x60" stat="p_skill_power" value="1.02"/>
+			<mul order="0x60" stat="mSkillPower" value="1.02"/>
+		</for>
+	</option_data>
+	<option_data id="39133">
+		<!--Skill Power +1%-->
+		<for>
+			<mul order="0x60" stat="p_skill_power" value="1.01"/>
+			<mul order="0x60" stat="mSkillPower" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39134">
+		<!--MEN +1-->
+		<for>
+			<add order="0x60" stat="MEN" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39135">
+		<!--MEN +1-->
+		<for>
+			<add order="0x60" stat="MEN" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39136">
+		<!--Cooldown -3%-->
+		<for>
+			<mul order="0x60" stat="mReuse" value="0.97"/>
+			<mul order="0x60" stat="pReuse" value="0.97"/>
+		</for>
+	</option_data>
+	<option_data id="39137">
+		<!--CON +1-->
+		<for>
+			<add order="0x60" stat="CON" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39138">
+		<!--CON +1-->
+		<for>
+			<add order="0x60" stat="CON" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39139">
+		<!--DEX/ WIT +1-->
+		<for>
+			<add order="0x60" stat="DEX" value="1.0"/>
+			<add order="0x60" stat="WIT" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39140">
+		<!--Received damage -3%-->
+		<for>
+				<mul order="0x60" stat="pvpPhysDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pvpPhysSkillDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pvpMagicSkillDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pvePhysDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pvePhysSkillDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pveMagicSkillDefenceBonus" value="1.03"/>
+		</for>
+	</option_data>
+	<option_data id="39141">
+		<!--Resistance to All Weapons +2%-->
+		<for>
+			<p_defence_trait name="sword" value="2"/>
+			<p_defence_trait name="blunt" value="2"/>
+			<p_defence_trait name="dagger" value="2"/>
+			<p_defence_trait name="pole" value="2"/>
+			<p_defence_trait name="fist" value="2"/>
+			<p_defence_trait name="bow" value="2"/>
+			<p_defence_trait name="etc" value="2"/>
+			<p_defence_trait name="dual" value="2"/>
+			<p_defence_trait name="dualfist" value="2"/>
+			<p_defence_trait name="rapier" value="2"/>
+			<p_defence_trait name="crossbow" value="2"/>
+			<p_defence_trait name="ancientsword" value="2"/>
+			<p_defence_trait name="firearms" value="2"/>
+		</for>
+	</option_data>
+	<option_data id="39142">
+		<!--Suppression Resistance +2%-->
+		<for>
+			<p_defence_trait name="derangement" value="2"/>
+		</for>
+	</option_data>
+	<option_data id="39143">
+		<!--M. Def. +120-->
+		<for>
+			<add order="0x60" stat="mDef" value="120"/>
+		</for>
+	</option_data>
+	<option_data id="39144">
+		<!--P. Def. +100-->
+		<for>
+			<add order="0x60" stat="pDef" value="100"/>
+		</for>
+	</option_data>
+	<option_data id="39145">
+		<!--M. Def. +110-->
+		<for>
+			<add order="0x60" stat="mDef" value="110"/>
+		</for>
+	</option_data>
+	<option_data id="39146">
+		<!--P. Def. +100-->
+		<for>
+			<add order="0x60" stat="pDef" value="100"/>
+		</for>
+	</option_data>
+	<option_data id="39147">
+		<!--Max MP +150-->
+		<for>
+			<add order="0x60" stat="maxMp" value="150"/>
+		</for>
+	</option_data>
+	<option_data id="39148">
+		<!--M. Def. +100-->
+		<for>
+			<add order="0x60" stat="mDef" value="100"/>
+		</for>
+	</option_data>
+	<option_data id="39149">
+		<!--Received M. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39150">
+		<!--Skill Critical Damage +100-->
+		<for>
+			<p_skill_critical_damage value="100" type="DIFF"/>
+			<p_magic_critical_dmg value="100" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39151">
+		<!--P. Skill Critical Damage +61-->
+		<for>
+			<p_skill_critical_damage value="61" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39152">
+		<!--M. Skill Critical Damage +61-->
+		<for>
+			<p_magic_critical_dmg value="61" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39153">
+		<!--P. Atk. +85-->
+		<for>
+			<add order="0x60" stat="pAtk" value="85"/>
+		</for>
+	</option_data>
+	<option_data id="39154">
+		<!--Max HP +185-->
+		<for>
+			<add order="0x60" stat="maxHp" value="185"/>
+		</for>
+	</option_data>
+	<option_data id="39155">
+		<!--M. Atk. +85-->
+		<for>
+			<add order="0x60" stat="mAtk" value="85"/>
+		</for>
+	</option_data>
+	<option_data id="39156">
+		<!--M. Skill Critical Rate +2%-->
+		<for>
+			<add order="0x60" stat="mCritRate" value="2"/>
+		</for>
+	</option_data>
+	<option_data id="39157">
+		<!--M. Def. +150-->
+		<for>
+			<add order="0x60" stat="mDef" value="150"/>
+		</for>
+	</option_data>
+	<option_data id="39158">
+		<!--P. Def. +120-->
+		<for>
+			<add order="0x60" stat="pDef" value="120"/>
+		</for>
+	</option_data>
+	<option_data id="39159">
+		<!--Received Skill Critical Damage -2%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.98"/>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.98"/>
+		</for>
+	</option_data>
+	<option_data id="39160">
+		<!--MEN +1-->
+		<for>
+			<add order="0x60" stat="MEN" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39161">
+		<!--MEN +1-->
+		<for>
+			<add order="0x60" stat="MEN" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39162">
+		<!--CON +1-->
+		<for>
+			<add order="0x60" stat="CON" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39163">
+		<!--STR +1/ INT +1-->
+		<for>
+			<add order="0x60" stat="STR" value="1.0"/>
+			<add order="0x60" stat="INT" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39164">
+		<!--CON +1-->
+		<for>
+			<add order="0x60" stat="CON" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39165">
+		<!--M. Skill Critical Damage +52-->
+		<for>
+			<p_magic_critical_dmg value="52" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39166">
+		<!--P. Skill Critical Damage +42-->
+		<for>
+			<p_skill_critical_damage value="42" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39167">
+		<!--P. Def. +80-->
+		<for>
+			<add order="0x60" stat="pDef" value="80"/>
+		</for>
+	</option_data>
+	<option_data id="39168">
+		<!--Received M. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39169">
+		<!--Received Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.99"/>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39170">
+		<!--Received damage -3%-->
+		<for>
+				<mul order="0x60" stat="pvpPhysDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pvpPhysSkillDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pvpMagicSkillDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pvePhysDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pvePhysSkillDefenceBonus" value="1.03"/>
+				<mul order="0x60" stat="pveMagicSkillDefenceBonus" value="1.03"/>
+		</for>
+	</option_data>
+	<option_data id="39171">
+		<!--P./ M. Atk. +100-->
+		<for>
+			<add order="0x60" stat="pAtk" value="100"/>
+			<add order="0x60" stat="mAtk" value="100"/>
+		</for>
+	</option_data>
+	<option_data id="39172">
+		<!--P./ M. Def. +100-->
+		<for>
+			<add order="0x60" stat="pDef" value="100"/>
+			<add order="0x60" stat="mDef" value="100"/>
+		</for>
+	</option_data>
+	<option_data id="39173">
+		<!--Max HP/ MP/ CP +200-->
+		<for>
+			<add order="0x60" stat="maxHp" value="200"/>
+			<add order="0x60" stat="maxMp" value="200"/>
+			<add order="0x60" stat="maxCp" value="200"/>
+		</for>
+	</option_data>
+	<option_data id="39174">
+		<!--Magic Lamp charging rate +2%-->
+	</option_data>
+	<option_data id="39175">
+		<!--Acquired XP/ SP +1%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.01"/>
+		</for>
+	</option_data>
+	<option_data id="39176">
+		<!--Acquired XP/ SP +2%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.02"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.02"/>
+		</for>
+	</option_data>
+	<option_data id="39177">
+		<!--P./ M. Atk. +51-->
+		<for>
+			<add order="0x60" stat="pAtk" value="51"/>
+			<add order="0x60" stat="mAtk" value="51"/>
+		</for>
+	</option_data>
+	<option_data id="39178">
+		<!--P./ M. Def. +72-->
+		<for>
+			<add order="0x60" stat="pDef" value="72"/>
+			<add order="0x60" stat="mDef" value="72"/>
+		</for>
+	</option_data>
+	<option_data id="39179">
+		<!--P. Skill Critical Rate +1%-->
+		<for>
+			<mul order="0x60" stat="p_skill_critical_rate" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39180">
+		<!--M. Skill Critical Rate +1%-->
+		<for>
+			<add order="0x60" stat="mCritRate" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39181">
+		<!--P. Skill Critical Damage +49-->
+		<for>
+			<p_skill_critical_damage value="49" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39182">
+		<!--Received P. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39183">
+		<!--Max HP +150-->
+		<for>
+			<add order="0x60" stat="maxHp" value="150"/>
+		</for>
+	</option_data>
+	<option_data id="39184">
+		<!--Max MP +150-->
+		<for>
+			<add order="0x60" stat="maxMp" value="150"/>
+		</for>
+	</option_data>
+	<option_data id="39185">
+		<!--Skill MP Consumption -1%-->
+		<for>
+			<mul order="0x60" stat="mpConsum" value="0.99"/>
+			<mul order="0x60" stat="mpConsumePhysical" value="0.99"/>
+			<mul order="0x60" stat="mpDanceConsume" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39186">
+		<!--Received P. Skill Critical Damage -2%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.98"/>
+		</for>
+	</option_data>
+	<option_data id="39187">
+		<!--Knockback Resistance +2%-->
+		<for>
+			<p_defence_trait name="knockback" value="2"/>
+		</for>
+	</option_data>
+	<option_data id="39188">
+		<!--Received Healing +2%-->
+		<for>
+			<p_heal_effect value="2" type="PER"/>
+		</for>
+	</option_data>
+	<option_data id="39189">
+		<!--Pull Resistance +2%-->
+		<for>
+			<p_defence_trait name="pull" value="2"/>
+		</for>
+	</option_data>
+	<option_data id="39190">
+		<!--P./ M. Atk. +53-->
+		<for>
+			<add order="0x60" stat="pAtk" value="53"/>
+			<add order="0x60" stat="mAtk" value="53"/>
+		</for>
+	</option_data>
+	<option_data id="39191">
+		<!--P./ M. Atk. +64-->
+		<for>
+			<add order="0x60" stat="pAtk" value="64"/>
+			<add order="0x60" stat="mAtk" value="64"/>
+		</for>
+	</option_data>
+	<option_data id="39192">
+		<!--P./ M. Def. +95-->
+		<for>
+			<add order="0x60" stat="pDef" value="95"/>
+			<add order="0x60" stat="mDef" value="95"/>
+		</for>
+	</option_data>
+	<option_data id="39193">
+		<!--P./ M. Def. +95-->
+		<for>
+			<add order="0x60" stat="pDef" value="95"/>
+			<add order="0x60" stat="mDef" value="95"/>
+		</for>
+	</option_data>
+	<option_data id="39194">
+		<!--Received M. Skill Critical Rate -2%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.98"/>
+		</for>
+	</option_data>
+	<option_data id="39195">
+		<!--Received P. Skill Critical Rate -2%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.98"/>
+		</for>
+	</option_data>
+	<option_data id="39196">
+		<!--Hellfire Resistance +3%-->
+	</option_data>
+	<option_data id="39197">
+		<!--Acquired XP/ SP +15%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.15"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.15"/>
+		</for>
+	</option_data>
+	<option_data id="39198">
+		<!--Atk. Spd./ Casting Spd. +50-->
+		<for>
+			<add order="0x60" stat="pAtkSpd" value="50"/>
+			<add order="0x60" stat="mAtkSpd" value="50"/>
+		</for>
+	</option_data>
+	<option_data id="39199">
+		<!--P./ M. Atk. +100, All Critical Rate +10%-->
+		<for>
+			<add order="0x60" stat="pAtk" value="100"/>
+			<add order="0x60" stat="mAtk" value="100"/>
+			<add order="0x60" stat="pCritRate" value="10"/>
+			<add order="0x60" stat="mCritRate" value="10"/>
+		</for>
+	</option_data>
+</list>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30002" /> <!-- Jackson -->
+		<point x="-86733" y="242918" z="-3720" h="61440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30001" /> <!-- Lector -->
+		<point x="-86385" y="243267" z="-3720" h="52000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30044" /> <!-- Chiperan -->
+		<point x="-86328" y="244448" z="-3720" h="31496" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30050" /> <!-- Elias -->
+		<point x="-84057" y="242832" z="-3728" h="59000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30048" /> <!-- Darin -->
+		<point x="-84436" y="242793" z="-3712" h="42000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30283" /> <!-- Altran -->
+		<point x="-85026" y="242689" z="-3720" h="57344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30598" /> <!-- Newbie Guide -->
+		<point x="-84081" y="243227" z="-3728" h="9000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30036" /> <!-- Petron -->
+		<point x="-85186" y="245001" z="-3720" h="57000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30033" /> <!-- Baulro -->
+		<point x="-84729" y="245001" z="-3720" h="24576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30006" /> <!-- Roxxy -->
+		<point x="-84108" y="244604" z="-3704" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30032" /> <!-- Yohanes -->
+		<point x="-84981" y="244764" z="-3720" h="24576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30035" /> <!-- Harrys -->
+		<point x="-84965" y="245222" z="-3720" h="57000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30031" /> <!-- Biotin -->
+		<point x="-84516" y="245449" z="-3712" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30368" /> <!-- Lilith -->
+		<point x="-85301" y="244587" z="-3720" h="24576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30049" /> <!-- Bonnie -->
+		<point x="-83163" y="243560" z="-3728" h="20480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30051" /> <!-- Cristel -->
+		<point x="-82041" y="242718" z="-3720" h="20480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30029" /> <!-- Minia -->
+		<point x="-83175" y="243065" z="-3720" h="45956" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30027" /> <!-- Gwinter -->
+		<point x="-83020" y="242553" z="-3720" h="11200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30028" /> <!-- Pintage -->
+		<point x="-82809" y="242751" z="-3720" h="36864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30026" /> <!-- Bitz -->
+		<point x="-83326" y="242964" z="-3720" h="55344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30042" /> <!-- Abellos -->
+		<point x="-82659" y="244992" z="-3712" h="27559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30041" /> <!-- Arnold -->
+		<point x="-82319" y="244709" z="-3728" h="30422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30045" /> <!-- Kenyos -->
+		<point x="-86322" y="241215" z="-3728" h="42500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30046" /> <!-- Hanks -->
+		<point x="-85964" y="240947" z="-3728" h="42500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30004" /> <!-- Katerina -->
+		<point x="-84204" y="240403" z="-3720" h="14000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30003" /> <!-- Silvia -->
+		<point x="-83789" y="240799" z="-3720" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30040" /> <!-- Leon -->
+		<point x="-82515" y="241221" z="-3728" h="58500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30039" /> <!-- Gilbert -->
+		<point x="-82236" y="241573" z="-3728" h="58500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30055" /> <!-- Rolfe -->
+		<point x="-81840" y="243534" z="-3712" h="5000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30005" /> <!-- Wilford -->
+		<point x="-81512" y="243424" z="-3712" h="38000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="32478" /> <!-- Game Assistant -->
+		<point x="-81920" y="243360" z="-3728" h="40000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30054" /> <!-- Rant -->
+		<point x="-81895" y="243917" z="-3712" h="41500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="-86114" y="244682" z="-3728" h="7211"/>
+		<npc id="30043"/><!-- Johnstone -->
+	</spawn>
+</list>

@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="1900" name="Necklace  of Magic Chain">
+		<set name="grind_commission" value="19"/>
+		<set name="grind_point" value="182"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1828"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1901" name="Tiger's Eye Stone">
+		<set name="grind_commission" value="15"/>
+		<set name="grind_point" value="144"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1448"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1902" name="Elven Earring Beads">
+		<set name="grind_commission" value="20"/>
+		<set name="grind_point" value="197"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1974"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1903" name="Elven Ring Piece">
+		<set name="grind_commission" value="12"/>
+		<set name="grind_point" value="119"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1199"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1904" name="Elven Necklace Beads">
+		<set name="grind_commission" value="22"/>
+		<set name="grind_point" value="214"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2143"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1905" name="Onyx Beast's Eye Earring Gemstone">
+		<set name="grind_commission" value="21"/>
+		<set name="grind_point" value="205"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2056"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1906" name="Mithril Ring Wire">
+		<set name="grind_commission" value="15"/>
+		<set name="grind_point" value="145"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1455"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1907" name="Dark Necklace Gem">
+		<set name="grind_commission" value="29"/>
+		<set name="grind_point" value="287"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2875"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1908" name="Moonstone Earring Wire">
+		<set name="grind_commission" value="22"/>
+		<set name="grind_point" value="211"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2112"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1909" name="Aquastone Ring Wire">
+		<set name="grind_commission" value="15"/>
+		<set name="grind_point" value="148"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1481"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1910" name="Aquastone Necklace Chain">
+		<set name="grind_commission" value="27"/>
+		<set name="grind_point" value="265"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2656"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1911" name="Earring of Protection Gemstone">
+		<set name="grind_commission" value="27"/>
+		<set name="grind_point" value="268"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2689"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1912" name="Ring of Protection Gemstone">
+		<set name="grind_commission" value="19"/>
+		<set name="grind_point" value="185"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1856"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1913" name="Necklace of Protection Gemstone">
+		<set name="grind_commission" value="33"/>
+		<set name="grind_point" value="328"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3289"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1914" name="Earring of Seal Gemstone">
+		<set name="grind_commission" value="36"/>
+		<set name="grind_point" value="356"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3560"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1915" name="Ring of Ages Gemstone">
+		<set name="grind_commission" value="23"/>
+		<set name="grind_point" value="227"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2270"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1916" name="Necklace of Mermaid Teardrop">
+		<set name="grind_commission" value="47"/>
+		<set name="grind_point" value="470"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="4700"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1917" name="Sage's Necklace Chain">
+		<set name="grind_commission" value="59"/>
+		<set name="grind_point" value="584"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="5845"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1918" name="Nassen's Earring Gemstone">
+		<set name="grind_commission" value="47"/>
+		<set name="grind_point" value="461"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="4618"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1919" name="Sage's Ring Gemstone">
+		<set name="grind_commission" value="35"/>
+		<set name="grind_point" value="348"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3482"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1920" name="Necklace of Seal Chain">
+		<set name="grind_commission" value="59"/>
+		<set name="grind_point" value="584"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="5845"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1921" name="Leather Shoe Texture">
+		<set name="grind_commission" value="4"/>
+		<set name="grind_point" value="31"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="310"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1922" name="Leather Tunic Pattern">
+		<set name="grind_commission" value="8"/>
+		<set name="grind_point" value="78"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="784"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1923" name="Leather Stocking Pattern">
+		<set name="grind_commission" value="5"/>
+		<set name="grind_point" value="48"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="488"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1924" name="Leather Helmet Design">
+		<set name="grind_commission" value="7"/>
+		<set name="grind_point" value="62"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="620"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1925" name="Leather Glove Lining">
+		<set name="grind_commission" value="4"/>
+		<set name="grind_point" value="30"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="305"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1926" name="Piece Bone Breastplate Fragment">
+		<set name="grind_commission" value="20"/>
+		<set name="grind_point" value="198"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1980"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1927" name="Durable Leather Shirt Pattern">
+		<set name="grind_commission" value="26"/>
+		<set name="grind_point" value="250"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2507"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1928" name="Piece Bone Gaiter Fragment">
+		<set name="grind_commission" value="14"/>
+		<set name="grind_point" value="137"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1373"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1929" name="Durable Leather Gaiter Material">
+		<set name="grind_commission" value="16"/>
+		<set name="grind_point" value="155"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1550"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1930" name="Boot Lining">
+		<set name="grind_commission" value="8"/>
+		<set name="grind_point" value="78"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="780"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1931" name="Leather Boot Lining">
+		<set name="grind_commission" value="16"/>
+		<set name="grind_point" value="153"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1530"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1932" name="Bone Helmet Design">
+		<set name="grind_commission" value="13"/>
+		<set name="grind_point" value="126"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1260"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1933" name="Dark Stocking Fabric">
+		<set name="grind_commission" value="17"/>
+		<set name="grind_point" value="170"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1700"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1934" name="Quality Leather Glove Lining">
+		<set name="grind_commission" value="16"/>
+		<set name="grind_point" value="153"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1530"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1935" name="Scale Mail Fragment">
+		<set name="grind_commission" value="36"/>
+		<set name="grind_point" value="358"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3580"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1936" name="White Tunic Pattern">
+		<set name="grind_commission" value="25"/>
+		<set name="grind_point" value="244"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2444"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1937" name="Scale Gaiter Fragment">
+		<set name="grind_commission" value="24"/>
+		<set name="grind_point" value="232"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2328"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1938" name="Mithril Banded Mail Material">
+		<set name="grind_commission" value="30"/>
+		<set name="grind_point" value="297"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2975"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1939" name="Mithril Banded Gaiters Material">
+		<set name="grind_commission" value="23"/>
+		<set name="grind_point" value="227"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2277"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1940" name="Iron Boot Design">
+		<set name="grind_commission" value="14"/>
+		<set name="grind_point" value="134"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1340"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1941" name="Brigandine Temper">
+		<set name="grind_commission" value="51"/>
+		<set name="grind_point" value="502"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="5029"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1942" name="Manticore Skin Shirt Texture">
+		<set name="grind_commission" value="40"/>
+		<set name="grind_point" value="392"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3921"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1943" name="Manticore Skin Gaiter Pattern">
+		<set name="grind_commission" value="26"/>
+		<set name="grind_point" value="251"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2518"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1944" name="Mithril Tunic Fabric">
+		<set name="grind_commission" value="40"/>
+		<set name="grind_point" value="392"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3921"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1945" name="Mithril Stocking Design">
+		<set name="grind_commission" value="26"/>
+		<set name="grind_point" value="251"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2518"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1946" name="Rip Gauntlet Pattern">
+		<set name="grind_commission" value="15"/>
+		<set name="grind_point" value="148"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1480"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1947" name="Kite Shield Fragment">
+		<set name="grind_commission" value="14"/>
+		<set name="grind_point" value="138"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1389"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1948" name="Boot of Strength Pattern">
+		<set name="grind_commission" value="15"/>
+		<set name="grind_point" value="148"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1480"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1949" name="Mithril Glove Design">
+		<set name="grind_commission" value="18"/>
+		<set name="grind_point" value="179"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1792"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1950" name="Half Plate Temper">
+		<set name="grind_commission" value="62"/>
+		<set name="grind_point" value="616"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="6162"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1951" name="Plate Gaiter Fragment">
+		<set name="grind_commission" value="40"/>
+		<set name="grind_point" value="396"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3962"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1952" name="Salamander Skin Mail Texture">
+		<set name="grind_commission" value="63"/>
+		<set name="grind_point" value="624"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="6244"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1953" name="Sage's Rag Lining">
+		<set name="grind_commission" value="63"/>
+		<set name="grind_point" value="624"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="6244"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1954" name="Karmian Stocking Design">
+		<set name="grind_commission" value="38"/>
+		<set name="grind_point" value="376"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3762"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1955" name="Chain Helmet Design">
+		<set name="grind_commission" value="25"/>
+		<set name="grind_point" value="248"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2481"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1956" name="Square Shield Fragment">
+		<set name="grind_commission" value="18"/>
+		<set name="grind_point" value="176"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1762"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1957" name="Assault Boot Fragment">
+		<set name="grind_commission" value="18"/>
+		<set name="grind_point" value="179"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1792"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1958" name="Reinforced Mithril Boot Design">
+		<set name="grind_commission" value="23"/>
+		<set name="grind_point" value="222"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2225"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1959" name="Chain Mail Shirt Material">
+		<set name="grind_commission" value="75"/>
+		<set name="grind_point" value="742"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="7425"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1960" name="Chain Gaiter Fragment">
+		<set name="grind_commission" value="37"/>
+		<set name="grind_point" value="365"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3650"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1961" name="Reinforced Mithril Shirt Fabric">
+		<set name="grind_commission" value="63"/>
+		<set name="grind_point" value="625"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="6250"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1962" name="Karmian Tunic Pattern">
+		<set name="grind_commission" value="63"/>
+		<set name="grind_point" value="625"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="6250"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1963" name="Ogre Power Gauntlet Fragment">
+		<set name="grind_commission" value="18"/>
+		<set name="grind_point" value="179"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="1792"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1964" name="Eldarake Temper">
+		<set name="grind_commission" value="25"/>
+		<set name="grind_point" value="247"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2475"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1965" name="Steel Plate Helmet Material">
+		<set name="grind_commission" value="30"/>
+		<set name="grind_point" value="296"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2967"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1966" name="Plated Leather Armor Fragment">
+		<set name="grind_commission" value="55"/>
+		<set name="grind_point" value="547"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="5478"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1967" name="Plated Leather Gaiters Material">
+		<set name="grind_commission" value="37"/>
+		<set name="grind_point" value="366"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3667"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1968" name="Dwarven Chain Mail Shirt Material">
+		<set name="grind_commission" value="83"/>
+		<set name="grind_point" value="830"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="8300"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1969" name="Dwarven Chain Gaiter Material">
+		<set name="grind_commission" value="53"/>
+		<set name="grind_point" value="523"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="5233"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1970" name="Robe of Seal Fabric">
+		<set name="grind_commission" value="90"/>
+		<set name="grind_point" value="895"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="8956"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1971" name="Great Helmet Material">
+		<set name="grind_commission" value="33"/>
+		<set name="grind_point" value="326"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3267"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1972" name="Knight's Shield Fragment">
+		<set name="grind_commission" value="25"/>
+		<set name="grind_point" value="250"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2500"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1973" name="Pa'agrio Hand Design">
+		<set name="grind_commission" value="24"/>
+		<set name="grind_point" value="237"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2378"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1974" name="Crimson Boot Fabric">
+		<set name="grind_commission" value="24"/>
+		<set name="grind_point" value="237"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="2378"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1975" name="Rind Leather Armor Design">
+		<set name="grind_commission" value="61"/>
+		<set name="grind_point" value="608"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="6089"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1976" name="Rind Leather Gaiter Material">
+		<set name="grind_commission" value="33"/>
+		<set name="grind_point" value="328"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3289"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1977" name="Compound Armor Temper">
+		<set name="grind_commission" value="136"/>
+		<set name="grind_point" value="1352"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="13520"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1978" name="Tower Shield Fragment">
+		<set name="grind_commission" value="32"/>
+		<set name="grind_point" value="312"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3120"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1979" name="Demon's Tunic Fabric">
+		<set name="grind_commission" value="83"/>
+		<set name="grind_point" value="824"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="8240"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1980" name="Demon's Stocking Pattern">
+		<set name="grind_commission" value="47"/>
+		<set name="grind_point" value="470"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="4700"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1981" name="Mithril Gauntlet Design">
+		<set name="grind_commission" value="34"/>
+		<set name="grind_point" value="340"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3400"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1982" name="Forgotten Boot Pattern">
+		<set name="grind_commission" value="34"/>
+		<set name="grind_point" value="340"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="3400"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1983" name="Shining Circlet Pattern">
+		<set name="grind_commission" value="46"/>
+		<set name="grind_point" value="456"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="4560"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1984" name="Theca Leather Armor Pattern">
+		<set name="grind_commission" value="94"/>
+		<set name="grind_point" value="933"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="9330"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1985" name="Theca Leather Gaiter Fragment">
+		<set name="grind_commission" value="58"/>
+		<set name="grind_point" value="580"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="5800"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1986" name="Full Plate Armor Temper">
+		<set name="grind_commission" value="190"/>
+		<set name="grind_point" value="1892"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="18927"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1987" name="Drake Leather Armor Texture">
+		<set name="grind_commission" value="132"/>
+		<set name="grind_point" value="1310"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="13109"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1988" name="Divine Tunic Fabric">
+		<set name="grind_commission" value="105"/>
+		<set name="grind_point" value="1040"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="10409"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1989" name="Divine Stocking Pattern">
+		<set name="grind_commission" value="67"/>
+		<set name="grind_point" value="663"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="6636"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="1990" name="Mithril Helmet Design">
+		<set name="grind_commission" value="58"/>
+		<set name="grind_point" value="578"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="price" value="5782"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+</list>

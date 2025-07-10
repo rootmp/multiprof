@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="59817" levels="1" name="Returning Hero's Symbol">
+		<!--STR/ DEX/ CON/ INT/ WIT/ MEN +1 -->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="CON" value="1"/>
+			<add stat="DEX" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="WIT" value="1"/>
+			<add stat="MEN" value="1"/>
+		</for>
+	</skill>
+	<skill id="59819" levels="1" name="Sayha's Grace Sustain Rune">
+		<!--Sayha's Grace Sustain-->
+		<set name="icon" value="icon.ev_charge_run"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="59820" levels="1" name="Anniversary Firecracker NCJ 20">
+		<!--none-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59821" levels="1" name="Blue Firecracker">
+		<!--none-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59822" levels="1" name="Red Firecracker">
+		<!--none-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59823" levels="1" name="Green Firecracker">
+		<!--none-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59824" levels="1" name="NCJ 20 Anniversary Gift">
+		<!--A gift for the NCJ 20 Anniversary.\n\nP. Atk. +250\nM. Atk. +250\nP. Def. +150\nM. Def. +150\nMax HP +300\nMax MP +250\nAcquired XP +10%%\nAcquired SP +10%%\nThe effect remains after death.-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="BranchIcon.icon.ev_ncjapan_20th_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59825" levels="6" name="L2M Blessing - Lv. 1">
+		<!--A buff for commemorating the L2M launch. A reward is given once per hour. For 1 h., Atk. Spd./ Casting Spd. $s1, Speed $s2, all stats +1.\n\nNote!\nYou cannot get a reward if your character is dead.-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="BranchIcon.icon.g_ev_l2m_blessing_ncw_00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59826" levels="1" name="L2M Blessing Reward">
+		<!--none-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59827" levels="1" name="Happy New Year!">
+		<!--We wish you luck in all your endeavors!\n\nP. Atk. +200\nM. Atk. +200\nP. Def. +200\nM. Def. +200\nMax HP +200\nMax MP +200\nAcquired XP +10%%\nAcquired SP +10%%-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59828" levels="1" name="Red Lantern">
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.etc_holy_grail_i00"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59829" levels="1" name="Transcendent Prophecy">
+		<!--Урон в PvE +5%. Бонус опыта и SP +50%. Поддержание Покровительства Сайхи. Действует только в невероятных временных зонах-->
+		<set name="icon" value="icon.skill10318"/>
+		<set name="abnormal_time" value="1"/>
+		<set name="castRange" value="700"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pvePhysSkillDmgBonus" value="1.05"/>
+				<mul stat="pveMagicSkillDmgBonus" value="1.05"/>
+				<mul stat="exp_rate_multiplier" value="1.5"/>
+				<mul stat="sp_rate_multiplier" value="1.5"/>
+				<mul stat="sayhas_grace_consume" value="0"/>
+			</effect>
+		</for>
+	</skill>
+</list>

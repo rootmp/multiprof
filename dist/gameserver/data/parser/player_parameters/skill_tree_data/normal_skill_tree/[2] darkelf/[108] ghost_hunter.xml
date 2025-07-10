@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="108"><!--Ghost Hunter-->
+		<skill id="358" level="1" min_level="76" cost="5700000"><!--Bluff-->
+			<required_items>
+				<item id="91294" count="1"/><!--Scroll: Bluff-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="3" min_level="76" cost="5700000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8620;96093" count="1"/><!--Buff Expansion Book Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="4" min_level="76" cost="5700000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8621;96094" count="1"/><!--Buff Expansion Book Lv. 4-->
+			</required_items>
+		</skill>
+		<skill id="1630" level="1" min_level="76" cost="5700000"/><!--Throwing Blood Dagger-->
+		<skill id="141" level="5" min_level="76" cost="5700000"/><!--Weapon Mastery-->
+		<skill id="45188" level="1" min_level="76"><!--Evolution Defense-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="96" level="7" min_level="76" cost="5700000"/><!--Bleed-->
+		<skill id="1068" level="4" min_level="76" cost="5700000"><!--Might-->
+			<required_items>
+				<item id="94135;95517" count="1"/><!--Master's Book: Might-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="1" min_level="76" cost="5700000"><!--Detection-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1835" level="1" min_level="76" cost="5700000"/><!--Mount Saber-toothed Cougar-->
+		<skill id="122" level="16" min_level="76" cost="5700000"/><!--Hex-->
+		<skill id="263" level="41" min_level="76" cost="5700000"/><!--Deadly Blow-->
+		<skill id="344" level="1" min_level="76" cost="5700000"/><!--Lethal Blow-->
+		<skill id="1040" level="4" min_level="76" cost="5700000"><!--Shield-->
+			<required_items>
+				<item id="94136;95518" count="1"/><!--Master's Book: Shield-->
+			</required_items>
+		</skill>
+		<skill id="358" level="2" min_level="77" cost="5700000"/><!--Bluff-->
+		<skill id="531" level="1" min_level="76" cost="5700000"><!--Critical Wound-->
+			<required_items>
+				<item id="90055" count="1"/><!--Scroll: Critical Wound-->
+			</required_items>
+		</skill>
+		<skill id="96" level="8" min_level="77" cost="5700000"/><!--Bleed-->
+		<skill id="1631" level="1" min_level="77" cost="5700000"><!--Clear Movements-->
+			<required_items>
+				<item id="90054" count="1"/><!--Scroll: Clear Movements-->
+			</required_items>
+		</skill>
+		<skill id="122" level="17" min_level="77" cost="5700000"/><!--Hex-->
+		<skill id="263" level="42" min_level="77" cost="5700000"/><!--Deadly Blow-->
+		<skill id="344" level="2" min_level="77" cost="5700000"/><!--Lethal Blow-->
+		<skill id="358" level="3" min_level="78" cost="13300000"/><!--Bluff-->
+		<skill id="96" level="9" min_level="78" cost="13300000"/><!--Bleed-->
+		<skill id="412" level="11" min_level="78" cost="13300000"/><!--Sand Bomb-->
+		<skill id="122" level="18" min_level="78" cost="13300000"/><!--Hex-->
+		<skill id="263" level="43" min_level="78" cost="13300000"/><!--Deadly Blow-->
+		<skill id="344" level="3" min_level="78" cost="13300000"/><!--Lethal Blow-->
+		<skill id="357" level="1" min_level="78" cost="13300000"><!--Focus Power-->
+			<required_items>
+				<item id="90056" count="1"/><!--Scroll: Focus Power-->
+			</required_items>
+		</skill>
+		<skill id="355" level="1" min_level="78" cost="13300000"><!--Focus Death-->
+			<required_items>
+				<item id="90058" count="1"/><!--Scroll: Focus Death-->
+			</required_items>
+		</skill>
+		<skill id="821" level="8" min_level="78" cost="13300000"/><!--Shadow Step-->
+		<skill id="358" level="4" min_level="79" cost="13300000"/><!--Bluff-->
+		<skill id="447" level="1" min_level="79" cost="13300000"><!--Counterattack-->
+			<required_items>
+				<item id="90061" count="1"/><!--Scroll: Counterattack-->
+			</required_items>
+		</skill>
+		<skill id="96" level="10" min_level="79" cost="13300000"/><!--Bleed-->
+		<skill id="122" level="19" min_level="79" cost="13300000"/><!--Hex-->
+		<skill id="263" level="44" min_level="79" cost="13300000"/><!--Deadly Blow-->
+		<skill id="344" level="4" min_level="79" cost="13300000"/><!--Lethal Blow-->
+		<skill id="358" level="5" min_level="80" cost="13300000"/><!--Bluff-->
+		<skill id="96" level="11" min_level="80" cost="13300000"/><!--Bleed-->
+		<skill id="45189" level="1" min_level="80"><!--Evolution Power-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="770" level="1" min_level="80" cost="13300000"><!--Ghost Walking-->
+			<required_items>
+				<item id="90135" count="1"/><!--Scroll: Ghost Walking-->
+			</required_items>
+		</skill>
+		<skill id="122" level="20" min_level="80" cost="13300000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="45" min_level="80" cost="13300000"/><!--Deadly Blow-->
+		<skill id="344" level="5" min_level="80" cost="13300000"/><!--Lethal Blow-->
+		<skill id="54102" level="1" min_level="80"><!--White Guardian Transformation-->
+			<required_items>
+				<item id="92401;95502" count="1"/><!--Spellbook: White Guardian-->
+			</required_items>
+		</skill>
+		<skill id="358" level="6" min_level="81" cost="160000000"/><!--Bluff-->
+		<skill id="531" level="2" min_level="80" cost="13300000"/><!--Critical Wound-->
+		<skill id="96" level="12" min_level="81" cost="160000000"/><!--Bleed-->
+		<skill id="1631" level="2" min_level="81" cost="160000000"/><!--Clear Movements-->
+		<skill id="122" level="21" min_level="81" cost="160000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="46" min_level="81" cost="160000000"/><!--Deadly Blow-->
+		<skill id="344" level="6" min_level="81" cost="160000000"/><!--Lethal Blow-->
+		<skill id="358" level="7" min_level="82" cost="170000000"/><!--Bluff-->
+		<skill id="96" level="13" min_level="82" cost="170000000"/><!--Bleed-->
+		<skill id="122" level="22" min_level="82" cost="170000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="47" min_level="82" cost="170000000"/><!--Deadly Blow-->
+		<skill id="344" level="7" min_level="82" cost="170000000"/><!--Lethal Blow-->
+		<skill id="358" level="8" min_level="83" cost="240000000"/><!--Bluff-->
+		<skill id="96" level="14" min_level="83" cost="240000000"/><!--Bleed-->
+		<skill id="122" level="23" min_level="83" cost="240000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="48" min_level="83" cost="240000000"/><!--Deadly Blow-->
+		<skill id="344" level="8" min_level="83" cost="240000000"/><!--Lethal Blow-->
+		<skill id="358" level="9" min_level="84" cost="240000000"/><!--Bluff-->
+		<skill id="96" level="15" min_level="84" cost="240000000"/><!--Bleed-->
+		<skill id="122" level="24" min_level="84" cost="240000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="49" min_level="84" cost="240000000"/><!--Deadly Blow-->
+		<skill id="344" level="9" min_level="84" cost="240000000"/><!--Lethal Blow-->
+		<skill id="122" level="25" min_level="85" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="50" min_level="85" cost="840000000"/><!--Deadly Blow-->
+		<skill id="344" level="10" min_level="85" cost="840000000"/><!--Lethal Blow-->
+		<skill id="122" level="26" min_level="86" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="51" min_level="86" cost="840000000"/><!--Deadly Blow-->
+		<skill id="344" level="11" min_level="86" cost="840000000"/><!--Lethal Blow-->
+		<skill id="122" level="27" min_level="87" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="52" min_level="87" cost="840000000"/><!--Deadly Blow-->
+		<skill id="344" level="12" min_level="87" cost="840000000"/><!--Lethal Blow-->
+		<skill id="122" level="28" min_level="88" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="53" min_level="88" cost="840000000"/><!--Deadly Blow-->
+		<skill id="344" level="13" min_level="88" cost="840000000"/><!--Lethal Blow-->
+		<skill id="122" level="29" min_level="89" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="54" min_level="89" cost="840000000"/><!--Deadly Blow-->
+		<skill id="344" level="14" min_level="89" cost="840000000"/><!--Lethal Blow-->
+		<skill id="122" level="30" min_level="90" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="263" level="55" min_level="90" cost="840000000"/><!--Deadly Blow-->
+		<skill id="344" level="15" min_level="90" cost="840000000"/><!--Lethal Blow-->
+		<skill id="4" level="3" min_level="82" cost="170000000"><!--Fast Run-->
+			<required_items>
+				<item id="96661;96673" count="1"/><!--Spellbook: Fast Run Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="45104" level="4" min_level="76" cost="5700000"><!--Acumen-->
+			<required_items>
+				<item id="94370;95539" count="1"/><!--Master's Book: Acumen-->
+			</required_items>
+		</skill>
+		<skill id="356" level="1" min_level="78" cost="13300000"><!--Focus Chance-->
+			<required_items>
+				<item id="90057" count="1"/><!--Scroll: Focus Chance-->
+			</required_items>
+		</skill>
+		<skill id="358" level="10" min_level="86" cost="840000000"><!--Bluff-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="358" level="11" min_level="88" cost="840000000"><!--Bluff-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="358" level="12" min_level="90" cost="840000000"><!--Bluff-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="447" level="2" min_level="82" cost="170000000"><!--Counterattack-->
+			<required_items>
+				<item id="57" count="50000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="531" level="3" min_level="83" cost="240000000"><!--Critical Wound-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="531" level="4" min_level="86" cost="840000000"><!--Critical Wound-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="531" level="5" min_level="90" cost="840000000"><!--Critical Wound-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="821" level="9" min_level="82" cost="170000000"><!--Shadow Step-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="821" level="10" min_level="86" cost="840000000"><!--Shadow Step-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="821" level="11" min_level="88" cost="840000000"><!--Shadow Step-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="821" level="12" min_level="90" cost="840000000"><!--Shadow Step-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45108" level="3" min_level="76" cost="5700000"><!--Magic Barrier-->
+			<required_items>
+				<item id="94362;95534" count="1"/><!--Master's Book: Magic Barrier-->
+			</required_items>
+		</skill>
+		<skill id="45105" level="4" min_level="76" cost="5700000"><!--Empower-->
+			<required_items>
+				<item id="94361;95533" count="1"/><!--Master's Book: Empower-->
+			</required_items>
+		</skill>
+		<skill id="45112" level="3" min_level="76" cost="5700000"><!--Berserker Spirit-->
+			<required_items>
+				<item id="94366;95769" count="1"/><!--Master's Book: Berserker Spirit-->
+			</required_items>
+		</skill>
+		<skill id="45109" level="4" min_level="76" cost="5700000"><!--Focus-->
+			<required_items>
+				<item id="94363;95535" count="1"/><!--Master's Book: Focus-->
+			</required_items>
+		</skill>
+		<skill id="45111" level="3" min_level="76" cost="5700000"><!--Haste-->
+			<required_items>
+				<item id="94369;95538" count="1"/><!--Master's Book: Haste-->
+			</required_items>
+		</skill>
+		<skill id="45107" level="3" min_level="76" cost="5700000"><!--Wind Walk-->
+			<required_items>
+				<item id="94365;95537" count="1"/><!--Master's Book: Wind Walk-->
+			</required_items>
+		</skill>
+		<skill id="45110" level="4" min_level="76" cost="5700000"><!--Death Whisper-->
+			<required_items>
+				<item id="94364;95536" count="1"/><!--Master's Book: Death Whisper-->
+			</required_items>
+		</skill>
+		<skill id="45106" level="3" min_level="76" cost="5700000"><!--Wild Magic-->
+			<required_items>
+				<item id="94368;95771" count="1"/><!--Master's Book: Wild Magic-->
+			</required_items>
+		</skill>
+		<skill id="45113" level="4" min_level="76" cost="5700000"><!--Clarity-->
+			<required_items>
+				<item id="94367;95770" count="1"/><!--Master's Book: Clarity-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="2" min_level="85" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45477" level="1" min_level="80" cost="13300000"><!--Flying Dagger-->
+			<required_items>
+				<item id="94806;95561" count="1"/><!--Spellbook: Flying Dagger-->
+			</required_items>
+		</skill>
+		<skill id="45477" level="2" min_level="85" cost="840000000"><!--Flying Dagger-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47331" level="5" min_level="76" cost="5700000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="6" min_level="78" cost="13300000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="7" min_level="80" cost="13300000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="8" min_level="82" cost="170000000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="9" min_level="84" cost="240000000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="10" min_level="86" cost="840000000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="11" min_level="88" cost="840000000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="12" min_level="90" cost="840000000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47332" level="5" min_level="76" cost="5700000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="6" min_level="78" cost="13300000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="7" min_level="80" cost="13300000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="8" min_level="82" cost="170000000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="9" min_level="84" cost="240000000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="10" min_level="86" cost="840000000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="11" min_level="88" cost="840000000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="12" min_level="90" cost="840000000"/><!--Rogue's Armor Mastery-->
+		<skill id="47333" level="8" min_level="80" cost="13300000"/><!--Acrobatic Body-->
+		<skill id="47333" level="9" min_level="85" cost="840000000"/><!--Acrobatic Body-->
+		<skill id="47333" level="10" min_level="90" cost="840000000"/><!--Acrobatic Body-->
+		<skill id="47339" level="1" min_level="76" cost="5700000"><!--Seclusion-->
+			<required_items>
+				<item id="96665;96677" count="1"/><!--Spellbook: Seclusion-->
+			</required_items>
+		</skill>
+		<skill id="47341" level="1" min_level="76" cost="5700000"><!--Dark Blow-->
+			<required_items>
+				<item id="96666;96678" count="1"/><!--Spellbook: Dark Blow-->
+			</required_items>
+			<blocked_skills>
+				<skill id="3"/><!--???-->
+				<skill id="16"/><!--???-->
+				<skill id="56"/><!--???-->
+				<!--<skill id="47422"/>TODO Проверить!!!-->
+			</blocked_skills>
+		</skill>
+		<skill id="47341" level="2" min_level="83" cost="240000000"><!--Dark Blow-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47341" level="3" min_level="86" cost="840000000"><!--Dark Blow-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47341" level="4" min_level="88" cost="840000000"><!--Dark Blow-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47341" level="5" min_level="90" cost="840000000"><!--Dark Blow-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47347" level="1" min_level="76" cost="5700000"><!--Backstab Mastery-->
+			<required_items>
+				<item id="96664;96676" count="1"/><!--Spellbook: Rogue Mastery-->
+			</required_items>
+		</skill>
+		<skill id="47351" level="1" min_level="76" cost="5700000"><!--Ethereal Blood-->
+			<required_items>
+				<item id="96669;96681" count="1"/><!--Spellbook: Ethereal Blood-->
+			</required_items>
+			<blocked_skills>
+				<skill id="2"/><!--???-->
+				<skill id="45250"/><!--TODO Проверить!!!-->
+			</blocked_skills>
+		</skill>
+		<skill id="47357" level="1" min_level="76" cost="5700000"><!--Mortal Piercing-->
+			<required_items>
+				<item id="96672;96684" count="1"/><!--Spellbook: Mortal Piercing-->
+			</required_items>
+		</skill>
+		<skill id="47362" level="1" min_level="76" cost="5700000"><!--Shadow Assault-->
+			<required_items>
+				<item id="96663;96675" count="1"/><!--Spellbook: Shadow Assault-->
+			</required_items>
+		</skill>
+		<skill id="47365" level="1" min_level="76" cost="5700000"><!--Fatal Accuracy-->
+			<required_items>
+				<item id="96662;96674" count="1"/><!--Spellbook: Fatal Accuracy-->
+			</required_items>
+		</skill>
+		<skill id="47365" level="2" min_level="80" cost="13300000"><!--Fatal Accuracy-->
+			<required_items>
+				<item id="57" count="20000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47367" level="1" min_level="76" auto_get="true"/><!--Rogue Agility-->
+		<skill id="54231" level="1" min_level="82"><!--Dragon Slayer Appearance-->
+			<required_items>
+				<item id="96300;96780" count="1"/><!--Spellbook: Dragon Slayer-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="3" min_level="88" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="30000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45269" level="1" min_level="76"><!--Expanded Potential of Dyes-->
+			<required_items>
+				<item id="96613;96614" count="1"/><!--Spellbook: Expanded Potential of Dyes-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="1" min_level="76"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="2" min_level="80"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="40000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="3" min_level="85"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="100000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="4" min_level="90"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="200000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47334" level="5" min_level="76" cost="5700000"/><!--Backstab-->
+		<skill id="47334" level="6" min_level="78" cost="13300000"/><!--Backstab-->
+		<skill id="47334" level="7" min_level="80" cost="13300000"/><!--Backstab-->
+		<skill id="47334" level="8" min_level="82" cost="170000000"/><!--Backstab-->
+		<skill id="47334" level="9" min_level="84" cost="240000000"/><!--Backstab-->
+		<skill id="47334" level="10" min_level="86" cost="840000000"/><!--Backstab-->
+		<skill id="47334" level="11" min_level="88" cost="840000000"/><!--Backstab-->
+		<skill id="47334" level="12" min_level="90" cost="840000000"/><!--Backstab-->
+	</normal_skill_tree>
+</list>

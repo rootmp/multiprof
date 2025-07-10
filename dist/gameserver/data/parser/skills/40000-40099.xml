@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="40000" levels="1" name="Tune of Might">
+		<set name="icon" value="icon.skill1068"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40001" levels="1" name="Tune of Shield">
+		<set name="icon" value="icon.skill1040"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40002" levels="1" name="Tune of Focus">
+		<set name="icon" value="icon.skill1077"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40003" levels="1" name="Tune of Haste">
+		<set name="icon" value="icon.skill1086"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40004" levels="1" name="Tune of Acumen">
+		<set name="icon" value="icon.skill1085"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40005" levels="1" name="Tune of Empower">
+		<set name="icon" value="icon.skill1059"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40006" levels="1" name="Tune of Wind Walk">
+		<set name="icon" value="icon.skill1204"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40007" levels="1" name="Tune of Death Whisper">
+		<set name="icon" value="icon.skill1242"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40008" levels="1" name="Tune of Vampiric Rage">
+		<set name="icon" value="icon.skill1268"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40009" levels="1" name="Tune of Wild Magic">
+		<set name="icon" value="icon.skill1303"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40010" levels="1" name="Tune of Guidance">
+		<set name="icon" value="icon.skill1240"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40011" levels="1" name="Tune of Clarity">
+		<set name="icon" value="icon.skill1397"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40012" levels="1" name="Tune of Berserker Spirit">
+		<set name="icon" value="icon.skill1062"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40013" levels="1" name="Tune of Concentration">
+		<set name="icon" value="icon.skill1078"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40014" levels="1" name="Tune of Might">
+		<set name="icon" value="icon.skill1068"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40015" levels="1" name="Tune of Shield">
+		<set name="icon" value="icon.skill1040"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40016" levels="1" name="Tune of Focus">
+		<set name="icon" value="icon.skill1077"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40017" levels="1" name="Tune of Haste">
+		<set name="icon" value="icon.skill1086"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40018" levels="1" name="Tune of Acumen">
+		<set name="icon" value="icon.skill1085"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40019" levels="1" name="Tune of Empower">
+		<set name="icon" value="icon.skill1059"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40020" levels="1" name="Tune of Wind Walk">
+		<set name="icon" value="icon.skill1204"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40021" levels="1" name="Tune of Death Whisper">
+		<set name="icon" value="icon.skill1242"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40022" levels="1" name="Tune of Vampiric Rage">
+		<set name="icon" value="icon.skill1268"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40023" levels="1" name="Tune of Wild Magic">
+		<set name="icon" value="icon.skill1303"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40024" levels="1" name="Tune of Guidance">
+		<set name="icon" value="icon.skill1240"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40025" levels="1" name="Tune of Clarity">
+		<set name="icon" value="icon.skill1397"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40026" levels="1" name="Tune of Berserker Spirit">
+		<set name="icon" value="icon.skill1062"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40027" levels="1" name="Tune of Concentration">
+		<set name="icon" value="icon.skill1078"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40028" levels="1" name="Tune of Might">
+		<set name="icon" value="icon.skill1068"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40029" levels="1" name="Tune of Shield">
+		<set name="icon" value="icon.skill1040"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40030" levels="1" name="Tune of Focus">
+		<set name="icon" value="icon.skill1077"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40031" levels="1" name="Tune of Haste">
+		<set name="icon" value="icon.skill1086"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40032" levels="1" name="Tune of Acumen">
+		<set name="icon" value="icon.skill1085"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40033" levels="1" name="Tune of Empower">
+		<set name="icon" value="icon.skill1059"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40034" levels="1" name="Tune of Wind Walk">
+		<set name="icon" value="icon.skill1204"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40035" levels="1" name="Tune of Death Whisper">
+		<set name="icon" value="icon.skill1242"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40036" levels="1" name="Tune of Vampiric Rage">
+		<set name="icon" value="icon.skill1268"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40037" levels="1" name="Tune of Wild Magic">
+		<set name="icon" value="icon.skill1303"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40038" levels="1" name="Tune of Guidance">
+		<set name="icon" value="icon.skill1240"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40039" levels="1" name="Tune of Clarity">
+		<set name="icon" value="icon.skill1397"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40040" levels="1" name="Tune of Berserker Spirit">
+		<set name="icon" value="icon.skill1062"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40041" levels="1" name="Tune of Concentration">
+		<set name="icon" value="icon.skill1078"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40042" levels="1" name="Tune of Might">
+		<set name="icon" value="icon.skill1068"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40043" levels="1" name="Tune of Shield">
+		<set name="icon" value="icon.skill1040"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40044" levels="1" name="Tune of Focus">
+		<set name="icon" value="icon.skill1077"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40045" levels="1" name="Tune of Haste">
+		<set name="icon" value="icon.skill1086"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40046" levels="1" name="Tune of Acumen">
+		<set name="icon" value="icon.skill1085"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40047" levels="1" name="Tune of Empower">
+		<set name="icon" value="icon.skill1059"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40048" levels="1" name="Tune of Wind Walk">
+		<set name="icon" value="icon.skill1204"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40049" levels="1" name="Tune of Death Whisper">
+		<set name="icon" value="icon.skill1242"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40050" levels="1" name="Tune of Vampiric Rage">
+		<set name="icon" value="icon.skill1268"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40051" levels="1" name="Tune of Wild Magic">
+		<set name="icon" value="icon.skill1303"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40052" levels="1" name="Tune of Guidance">
+		<set name="icon" value="icon.skill1240"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40053" levels="1" name="Tune of Clarity">
+		<set name="icon" value="icon.skill1397"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40054" levels="1" name="Tune of Berserker Spirit">
+		<set name="icon" value="icon.skill1062"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40055" levels="1" name="Tune of Concentration">
+		<set name="icon" value="icon.skill1078"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40056" levels="1" name="Scroll: Enchant Talisman of Eva">
+		<set name="icon" value="icon.bm_eva_talisman_scroll"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40057" levels="1" name="Magic Fire (Event)">
+		<set name="icon" value="icon.bm_soul_of_shilen"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="2"/>
+		<set name="abnormal_type" value="magic_lamp_charging"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="magic_lamp_charging_rate_multiplier" value="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="40058" levels="1" name="Giran Seal">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.etc_royal_seal_of_lord_i04"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="olympiad_use" value="false"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="SAYHAS_STORM"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<for>
+			<mul stat="exp_rate_multiplier" value="1.2"/>
+			<mul stat="sp_rate_multiplier" value="1.2"/>
+		</for>
+	</skill>
+	<skill id="40059" levels="1" name="Sayha's Grace">
+		<set name="icon" value="icon.high_stone_i01"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="olympiad_use" value="false"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="SAYHAS_GRACE_COST_REDUCE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<for>
+			<effect>
+				<mul stat="sayhas_grace_consume" value="0.9"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="40060" levels="1" name="Primeval Garden's Time Stone">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="target_type" value="SELF" />
+		<set name="affect_scope" value="SINGLE" />
+		<set name="affect_object" value="FRIEND" />
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_restore_time_restrict_field" value="4" />
+		</for>
+	</skill>
+	<skill id="40061" levels="1" name="Primeval Garden's Time Stone">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="target_type" value="SELF" />
+		<set name="affect_scope" value="SINGLE" />
+		<set name="affect_object" value="FRIEND" />
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_restore_time_restrict_field" value="4" />
+		</for>
+	</skill>
+	<skill id="40062" levels="1" name="Scroll: Enchant Talisman of Speed">
+		<set name="icon" value="icon.tallisman_rapid_scrl"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40063" levels="1" name="Tower of Insolence (1st Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40064" levels="1" name="Tower of Insolence (2nd Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40065" levels="1" name="Tower of Insolence (3rd Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40066" levels="1" name="Tower of Insolence (4th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40067" levels="1" name="Tower of Insolence (5th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40068" levels="1" name="Tower of Insolence (6th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40069" levels="1" name="Tower of Insolence (7th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40070" levels="1" name="Tower of Insolence (8th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40071" levels="1" name="Tower of Insolence (9th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40072" levels="1" name="Tower of Insolence (10th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40073" levels="1" name="Tower of Insolence (11th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40074" levels="1" name="Tower of Insolence (12th Floor) Stone of Memory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40075" levels="1" name="Craft Points +100">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="100" />
+		</for>
+	</skill>
+	<skill id="40076" levels="1" name="Craft Points +500">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="500" />
+		</for>
+	</skill>
+	<skill id="40077" levels="1" name="Craft Points +1,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="1000" />
+		</for>
+	</skill>
+	<skill id="40078" levels="1" name="Craft Points +3,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="3000" />
+		</for>
+	</skill>
+	<skill id="40079" levels="1" name="Craft Points +5,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="5000" />
+		</for>
+	</skill>
+	<skill id="40080" levels="1" name="Craft Points +10,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="10000" />
+		</for>
+	</skill>
+	<skill id="40081" levels="1" name="Craft Points +30,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="30000" />
+		</for>
+	</skill>
+	<skill id="40082" levels="1" name="Craft Points +50,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="50000" />
+		</for>
+	</skill>
+	<skill id="40083" levels="1" name="Craft Points +100,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="100000" />
+		</for>
+	</skill>
+	<skill id="40084" levels="1" name="Craft Points +300,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="300000" />
+		</for>
+	</skill>
+	<skill id="40085" levels="1" name="Craft Points +500,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="500000" />
+		</for>
+	</skill>
+	<skill id="40086" levels="1" name="Craft Points +1,000,000">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="1000000" />
+		</for>
+	</skill>
+	<skill id="40087" levels="1" name="Einhasad's Blessing Scroll">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.exp_bottle_scroll"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40088" levels="1" name="Scroll: Enchant Aden's Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40089" levels="1" name="Scroll: Enchant Adventurer's Agathion Griffin">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40090" levels="1" name="Scroll: Enchant Adventurer's Cloak">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40091" levels="1" name="Adventurer's Scroll: Enchant Hair Accessory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40092" levels="1" name="Scroll: Enchant Adventurer's Belt">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40093" levels="1" name="Inventory Expansion Ticket of Glory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="93063"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="45234"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="45234"/> <!--Expand Inventory of Glory-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="40094" levels="1" name="Weight Limit Ticket of Glory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="93064"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="45235"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="45235"/> <!--Increased Weight Limit of Glory-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="40095" levels="1" name="Spellbook: Mount Glory of Champion">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40096" levels="1" name="Spellbook: Mount White Wing">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40097" levels="1" name="Spellbook: Mount Shining Lady">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40098" levels="1" name="Sayha's Grace">
+		<set name="icon" value="icon.high_stone_i01"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="olympiad_use" value="false"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="SAYHAS_GRACE_COST_REDUCE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<for>
+			<effect>
+				<mul stat="sayhas_grace_consume" value="0.9"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="40099" levels="1" name="Red Lantern - 1st Place">
+		<set name="icon" value="icon.etc_holy_grail_i00"/>
+		<set name="itemConsumeId" value="91668"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="100000000"/>
+			</effect>
+			<effect name="i_sp" value="2700000"/>
+		</for>
+	</skill>
+</list>

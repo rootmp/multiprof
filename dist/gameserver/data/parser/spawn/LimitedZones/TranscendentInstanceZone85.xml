@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!-- Author: nexvill -->
+<list>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_1">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-49000" y="139912" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_2">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48968" y="139864" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_3">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48952" y="139944" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_4">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48936" y="139816" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_5">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48920" y="139896" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_6">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48904" y="139768" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_7">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48904" y="139960" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_8">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48888" y="139848" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_9">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48872" y="139736" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_10">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48872" y="139928" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_11">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48840" y="139800" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_12">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48840" y="139896" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_13">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48808" y="139768" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_14">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48792" y="139848" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_1_15">
+		<npc id="22275" /> <!-- Sel Mahum Raider -->
+		<point x="-48760" y="139800" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_1">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-49000" y="139912" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_2">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48968" y="139864" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_3">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48952" y="139944" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_4">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48936" y="139816" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_5">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48920" y="139896" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_6">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48904" y="139768" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_7">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48904" y="139960" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_8">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48888" y="139848" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_9">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48872" y="139736" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_10">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48872" y="139928" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_11">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48840" y="139800" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_12">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48840" y="139896" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_13">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48808" y="139768" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_14">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48792" y="139848" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_2_15">
+		<npc id="22276" /> <!-- Sel Mahum Footman -->
+		<point x="-48760" y="139800" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_1">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-49000" y="139912" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_2">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48968" y="139864" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_3">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48952" y="139944" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_4">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48936" y="139816" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_5">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48920" y="139896" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_6">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48904" y="139768" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_7">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48904" y="139960" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_8">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48888" y="139848" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_9">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48872" y="139736" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_10">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48872" y="139928" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_11">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48840" y="139800" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_12">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48840" y="139896" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_13">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48808" y="139768" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_14">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48792" y="139848" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_variant_3_15">
+		<npc id="22277" /> <!-- Sel Mahum Knight -->
+		<point x="-48760" y="139800" z="-2926" h="5579" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_1">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49160" y="139832" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_2">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49128" y="139784" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_3">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49096" y="139736" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_4">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49096" y="139848" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_5">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49080" y="139672" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_6">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49080" y="139800" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_7">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49048" y="139752" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_8">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49048" y="139864" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_9">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49032" y="139688" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_10">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49032" y="139816" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_11">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-49000" y="139768" z="-2924" h="3913" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_85_box_12">
+		<npc id="22278" /> <!-- Transcendent Treasure Chest -->
+		<point x="-48984" y="139720" z="-2924" h="3913" />
+	</spawn>
+</list>

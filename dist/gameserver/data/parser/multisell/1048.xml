@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<config show_all="true" no_tax="true"/>
+	<item>
+		<production id="95596" count="1"/><!--Special Scroll: Enchant Dragon Belt (Time-limited)-->
+		<ingredient id="94852" count="1"/><!--Black Coupon (Time-limited)-->
+	</item>
+	<item>
+		<production id="95597" count="1"/><!--Special Scroll: Enchant Cloak of Protection (Time-limited)-->
+		<ingredient id="94852" count="1"/><!--Black Coupon (Time-limited)-->
+	</item>
+	<item>
+		<production id="95598" count="1"/><!--Special Scroll: Enchant Circlet of Hero (Time-limited)-->
+		<ingredient id="94852" count="1"/><!--Black Coupon (Time-limited)-->
+	</item>
+</list>

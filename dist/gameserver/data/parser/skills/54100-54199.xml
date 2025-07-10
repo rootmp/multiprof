@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="54100" levels="1" name="Sayha's Shield">
+		<set name="icon" value="icon.skill1040"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pd_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pDef" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54101" levels="1" name="Sayha's Magic Barrier">
+		<set name="icon" value="icon.skill1036"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="md_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="mDef" value="350"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54102" levels="1" name="White Guardian Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.white_knight_suit"/>
+		<set name="reuseDelay" value="3600000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="itemConsumeCount" value="100"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_effect" value="WHITE_KNIGHT"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="4"/>
+		<set name="abnormal_type" value="buff_special_aura"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="buff_slot_type" value="-1"/>
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="1.03"/>
+				<mul stat="mAtk" value="1.03"/>
+				<mul stat="pAtkSpd" value="1.05"/>
+				<mul stat="pDef" value="1.03"/>
+				<mul stat="mDef" value="1.03"/>
+				<add stat="pAccCombat" value="2"/>
+				<add stat="mAccCombat" value="2"/>
+				<add stat="runSpd" value="5"/>
+				<mul stat="maxHp" value="1.15"/>
+				<mul stat="maxMp" value="1.15"/>
+				<add stat="baseMCritRate" value="20"/>
+				<p_skill_critical_damage value="200" type="DIFF"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54103" levels="1" name="Sayha's Decrease Weight">
+		<set name="icon" value="icon.skill1257"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="decrease_weight_penalty"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="maxNoPenaltyLoad" value="9000"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54104" levels="1" name="Sayha's Berserker Spirit">
+		<set name="icon" value="icon.skill1062"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="berserker"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_PARTY_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="maxHp" value="0.85"/>
+				<mul stat="maxMp" value="0.85"/>
+				<mul stat="mAtk" value="1.2"/>
+				<mul stat="pAtk" value="1.1"/>
+				<mul stat="mAtkSpd" value="1.08"/>
+				<mul stat="pAtkSpd" value="1.08"/>
+				<add stat="runSpd" value="8"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54105" levels="1" name="Sayha's Wind Walk">
+		<set name="icon" value="icon.skill1204"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="speed_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="runSpd" value="33"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54106" levels="1" name="Sayha's Might">
+		<set name="icon" value="icon.skill1068"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pa_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pAtk" value="230"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54108" levels="1" name="Sayha's Focus">
+		<set name="icon" value="icon.skill1077"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="critical_prob_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pCritRate" value="40"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54109" levels="1" name="Sayha's Haste">
+		<set name="icon" value="icon.skill1086"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="attack_time_down"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtkSpd" value="1.33"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54110" levels="1" name="Sayha's Death Whisper">
+		<set name="icon" value="icon.skill1242"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="critical_dmg_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<p_critical_damage value="35" type="PER"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54111" levels="1" name="Sayha's Empower">
+		<set name="icon" value="icon.skill1059"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="ma_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="mAtk" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54112" levels="1" name="Sayha's Clarity">
+		<set name="icon" value="icon.skill1397"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="cheap_magic"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET_SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="mpConsum" value="0.8"/>
+				<mul stat="mpConsumePhysical" value="0.9"/>
+				<mul stat="mpDanceConsume" value="0.8"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54113" levels="1" name="Sayha's Wild Magic">
+		<set name="icon" value="icon.skill1303"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="magic_critical_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="baseMCritRate" value="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54114" levels="1" name="Sayha's Acumen">
+		<set name="icon" value="icon.skill1085"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="casting_time_down"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="mAtkSpd" value="1.3"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54115" levels="1" name="Sayha's Concentration">
+		<set name="icon" value="icon.skill1078"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="cancel_prob_down"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="concentration" value="0.47"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54116" levels="1" name="Sayha's Victory">
+		<set name="icon" value="icon.skill5074"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="multi_buff"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="TARGET"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="maxCp" value="300"/>
+				<add stat="maxHp" value="300"/>
+				<add stat="maxMp" value="300"/>
+				<add stat="pAtk" value="200"/>
+				<add stat="mAtk" value="200"/>
+				<add stat="pAtkSpd" value="60"/>
+				<add stat="mAtkSpd" value="60"/>
+				<add stat="pCritRate" value="20"/>
+				<add stat="mCritRate" value="20"/>
+				<p_critical_damage value="10" type="per"/>
+				<p_magic_critical_dmg value="10" type="per"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54117" levels="1" name="Sayha's Recover HP">
+		<set name="icon" value="icon.skill0211"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="hp_regen_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="regHp" value="1.1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54118" levels="1" name="Sayha's Recover MP">
+		<set name="icon" value="icon.skill0213"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="mp_regen_up"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="regMp" value="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54119" levels="1" name="Chef's Fish Stew - Victory">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.fish_stew_residence_cha"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54120" levels="1" name="Adventurer's Chest: High Priest Transformation">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54121" levels="1" name="Adventurer's Chest: Valkyrie Transformation">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54122" levels="1" name="Improved Fire Attack Potion">
+		<set name="icon" value="icon.etc_fire_potion_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54123" levels="1" name="Improved Water Attack Potion">
+		<set name="icon" value="icon.etc_water_potion_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54124" levels="1" name="Improved Wind Attack Potion">
+		<set name="icon" value="icon.etc_wind_potion_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54125" levels="1" name="Improved Earth Attack Potion">
+		<set name="icon" value="icon.etc_earth_potion_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54126" levels="3" name="Sayha's Grace Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

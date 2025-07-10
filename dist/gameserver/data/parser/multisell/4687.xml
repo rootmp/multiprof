@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="71438" count="1"/>	<!--Jewel Coin-->
+		<ingredient id="70441" count="1"/>	<!--Garnet Lv. 1-->
+		<ingredient id="70441" count="1"/>	<!--Garnet Lv. 1-->
+	</item>
+	<item>
+		<production id="71438" count="1"/>	<!--Jewel Coin-->
+		<ingredient id="70446" count="1"/>	<!--Jade Lv. 1-->
+		<ingredient id="70446" count="1"/>	<!--Jade Lv. 1-->
+	</item>
+	<item>
+		<production id="71438" count="1"/>	<!--Jewel Coin-->
+		<ingredient id="70451" count="1"/>	<!--Ruby Lv. 1-->
+		<ingredient id="70451" count="1"/>	<!--Ruby Lv. 1-->
+	</item>
+	<item>
+		<production id="71438" count="1"/>	<!--Jewel Coin-->
+		<ingredient id="70456" count="1"/>	<!--Sapphire Lv. 1-->
+		<ingredient id="70456" count="1"/>	<!--Sapphire Lv. 1-->
+	</item>
+	<item>
+		<production id="71438" count="1"/>	<!--Jewel Coin-->
+		<ingredient id="70461" count="1"/>	<!--Diamond Lv. 1-->
+		<ingredient id="70461" count="1"/>	<!--Diamond Lv. 1-->
+	</item>
+	<item>
+		<production id="71438" count="1"/>	<!--Jewel Coin-->
+		<ingredient id="70466" count="1"/>	<!--Pearl Lv. 1-->
+		<ingredient id="70466" count="1"/>	<!--Pearl Lv. 1-->
+	</item>
+	<item>
+		<production id="71438" count="1"/>	<!--Jewel Coin-->
+		<ingredient id="70471" count="1"/>	<!--Vital Stone Lv. 1-->
+		<ingredient id="70471" count="1"/>	<!--Vital Stone Lv. 1-->
+	</item>
+</list>

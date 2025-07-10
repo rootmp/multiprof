@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="39300" levels="1" name="Gracia's Rice Cake">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_sayha_grace_points" value="105000" />
+		</for>
+	</skill>
+	<skill id="39301" levels="1" name="My Teleport Book">
+		<set name="icon" value="icon.bookmark_book_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39302" levels="5" name="Baium Doll's Sorcery">
+		<table name="#icon">icon.bm_baium_doll_30d icon.bm_baium_doll_30d icon.bm_baium_doll_30d icon.bm_baium_doll_30d_00 icon.bm_baium_doll_30d_01</table>
+		<table name="#reuse">0.98 0.97 0.96 0.96 0.96</table>
+		<table name="#def">1.05 1.12 1.15 1.18 1.21</table>
+		<table name="#derangement">10 40 45</table>
+		<table name="#p_defence_trait">5 20 25 25 25</table>
+		<table name="#knockdown">5 20 25 27 30</table>
+		<table name="#shock">0 0 0 10 15</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_defence_trait name="derangement" value="#derangement"/>
+			<p_defence_trait name="paralyze" value="#p_defence_trait"/>
+			<p_defence_trait name="pull" value="#p_defence_trait"/>
+			<p_defence_trait name="knockdown" value="#knockdown"/>
+			<p_defence_trait name="shock" value="#shock"/>
+			<mul stat="mDef" value="#def"/>
+			<mul stat="pDef" value="#def"/>
+			<mul stat="mReuse" value="#reuse"/>
+			<mul stat="pReuse" value="#reuse"/>
+			<mul stat="musicReuse" value="#reuse"/>
+		</for>
+	</skill>
+	<skill id="39303" levels="5" name="Queen Ant Doll's Sorcery">
+		<table name="#icon">icon.bm_queen_ant_doll_30d icon.bm_queen_ant_doll_30d icon.bm_queen_ant_doll_30d icon.bm_queen_ant_doll_30d_00 icon.bm_queen_ant_doll_30d_01</table>
+		<table name="#pAtk">1.02 1.08 1.12 1.15 1.18</table>
+		<table name="#p_critical_damage">3 8 10 12 15</table>
+		<table name="#p_skill_critical_damage">3 8 10 12 15</table>
+		<table name="#maxHp">1.04 1.12 1.15 1.17 1.2</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="pAtk" value="#pAtk"/>
+			<p_critical_damage value="#p_critical_damage" type="PER"/>
+			<p_skill_critical_damage value="#p_skill_critical_damage" type="PER"/>
+			<mul stat="maxHp" value="#maxHp"/>
+		</for>
+	</skill>
+	<skill id="39304" levels="5" name="Orfen Doll's Sorcery">
+		<table name="#icon">icon.bm_orfen_doll_30d icon.bm_orfen_doll_30d icon.bm_orfen_doll_30d icon.bm_orfen_doll_30d_00 icon.bm_orfen_doll_30d_01</table>
+		<table name="#mAtk">1.02 1.08 1.15 1.2 1.25</table>
+		<table name="#p_magic_critical_dmg_per">3 8 10 12 15</table>
+		<table name="#maxMp">1.04 1.12 1.15 1.17 1.2</table>
+		<table name="#defence_trait">1 1 1 1.01 1.02</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="defence_trait_sword" value="#defence_trait"/>
+			<mul stat="defence_trait_dagger" value="#defence_trait"/>
+			<mul stat="defence_trait_blunt" value="#defence_trait"/>
+			<mul stat="defence_trait_pole" value="#defence_trait"/>
+			<mul stat="defence_trait_fist" value="#defence_trait"/>
+			<mul stat="defence_trait_dual" value="#defence_trait"/>
+			<mul stat="defence_trait_dualfist" value="#defence_trait"/>
+			<mul stat="defence_trait_rapier" value="#defence_trait"/>
+			<mul stat="defence_trait_ancientsword" value="#defence_trait"/>
+			<mul stat="defence_trait_dualdagger" value="#defence_trait"/>
+			<mul stat="defence_trait_dualblunt" value="#defence_trait"/>
+			<mul stat="mAtk" value="#mAtk"/>
+			<p_magic_critical_dmg value="#p_magic_critical_dmg_per" type="PER"/>
+			<mul stat="maxMp" value="#maxMp"/>
+		</for>
+	</skill>
+	<skill id="39305" levels="3" name="Dark Knight Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.etc_charm_of_courage_i05"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39306" levels="1" name="White Assassin Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.scroll_of_verification_i06"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39307" levels="1" name="Warrior Experience Amulet">
+		<set name="icon" value="icon.skill_exp_sp_up"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="exp_rate_multiplier" value="0.5"/>
+			<add stat="sp_rate_multiplier" value="0.5"/>
+		</for>
+	</skill>
+	<skill id="39308" levels="1" name="Life Control Tower's Scroll of Blessing">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.etc_aidcharm_cancel_valbreath_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39309" levels="1" name="Eva's Stable Scroll: Enchant Hair Accessory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39310" levels="1" name="Eva's Enhancement Pack - Hair Accessory">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39311" levels="1" name="Eva's Hair Accessory Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39312" levels="1" name="Enchant Effect: Hair Accessory">
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<mul order="0x30" stat="maxHp" value="1.2"/>
+		</for>
+	</skill>
+	<skill id="39313" levels="1" name="Enchant Effect: Hair Accessory">
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<mul order="0x30" stat="maxHp" value="1.04"/>
+		</for>
+	</skill>
+	<skill id="39314" levels="1" name="Enchant Effect: Hair Accessory">
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<mul order="0x30" stat="maxHp" value="1.08"/>
+				<mul order="0x30" stat="maxMp" value="1.02"/>
+		</for>
+	</skill>
+	<skill id="39315" levels="1" name="Enchant Effect: Hair Accessory">
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<mul order="0x30" stat="maxHp" value="1.12"/>
+				<mul order="0x30" stat="maxMp" value="1.06"/>
+				<mul order="0x30" stat="maxCp" value="1.06"/>
+		</for>
+	</skill>
+	<skill id="39316" levels="1" name="Enchant Effect: Hair Accessory">
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<mul order="0x30" stat="maxHp" value="1.16"/>
+				<mul order="0x30" stat="maxMp" value="1.1"/>
+				<mul order="0x30" stat="maxCp" value="1.1"/>
+		</for>
+	</skill>
+	<skill id="39317" levels="1" name="Enchant Effect: Hair Accessory">
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<mul order="0x30" stat="maxHp" value="1.20"/>
+				<mul order="0x30" stat="maxMp" value="1.14"/>
+				<mul order="0x30" stat="maxCp" value="1.14"/>
+				<mul stat="pveMagicSkillDefenceBonus" value="1.04"/>
+				<mul stat="pvpMagicSkillDefenceBonus" value="1.04"/>
+		</for>
+	</skill>
+	<skill id="39318" levels="3" name="Item Skill: Fear Resistance">
+		<table name="#p_defence_trait_derangement">5 10 20</table>
+		<set name="icon" value="icon.skill11825"/>
+		<set name="operate_type" value="P"/>
+		<for>			
+				<p_defence_trait name="derangement" value="#p_defence_trait_derangement"/>		
+		</for>
+	</skill>
+	<skill id="39319" levels="3" name="Item Skill: Shock Resistance">
+		<table name="#p_defence_trait_shock">5 10 20</table>
+		<set name="icon" value="icon.skill11825"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<p_defence_trait name="shock" value="#p_defence_trait_shock"/>	
+		</for>
+	</skill>
+	<skill id="39320" levels="3" name="Item Skill: Paralysis Resistance">
+		<table name="#p_defence_trait_paralyze">5 10 20</table>
+		<set name="icon" value="icon.skill11825"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<p_defence_trait name="paralyze" value="#p_defence_trait_paralyze"/>
+		</for>
+	</skill>
+	<skill id="39321" levels="3" name="Item Skill: Infection Resistance">
+		<table name="#p_defence_trait_bleed">5 10 20</table>
+		<set name="icon" value="icon.skill11825"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<p_defence_trait name="bleed" value="#p_defence_trait_bleed"/>		
+		</for>
+	</skill>
+	<skill id="39322" levels="3" name="Item Skill: Silence Resistance">
+		<table name="#p_defence_trait_poison">5 10 20</table>
+		<set name="icon" value="icon.skill11825"/>
+		<set name="operate_type" value="P"/>
+		<for>
+				<p_defence_trait name="poison" value="#p_defence_trait_poison"/>
+		</for>
+	</skill>
+	<skill id="39323" levels="3" name="Item Skill: Hold Resistance">
+		<table name="#p_defence_trait_hold">5 10 20</table>
+		<set name="icon" value="icon.skill11825"/>
+		<set name="operate_type" value="P"/>
+		<for>			
+				<p_defence_trait name="hold" value="#p_defence_trait_hold"/>
+		</for>
+	</skill>
+	<skill id="39324" levels="3" name="Item Skill: Acquired XP">
+		<table name="#exp">0.05 0.1 0.2</table>
+		<set name="icon" value="icon.skill11825"/>
+		<set name="magicLevel" value="80"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="exp_rate_multiplier" value="#exp"/>
+		</for>
+	</skill>
+	<skill id="39325" levels="1" name="Arcane Deliverance">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="15"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="abnormal_item"/>
+		<set name="magicLevel" value="76"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<add stat="regHp" value="5000"/>
+				<add stat="regMp" value="2000"/>
+				<add stat="regCp" value="3000"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="39326" levels="1" name="Arcane Speed">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="120"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="abnormal_item"/>
+		<set name="magicLevel" value="76"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="pAtkSpd" value="1.08"/>
+				<mul stat="mAtkSpd" value="1.08"/>
+				<add stat="runSpd" value="8"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="39327" levels="1" name="Arcane Barrier">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="abnormal_item"/>
+		<set name="abnormal_effect" value="INVINCIBILITY"/>
+		<set name="magicLevel" value="76"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect name="Invulnerable"/>
+		</for>
+	</skill>
+	<skill id="39328" levels="1" name="Arcane Immunity">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="abnormal_item"/>
+		<set name="magicLevel" value="76"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect name="p_block_debuff"/>
+		</for>
+	</skill>
+	<skill id="39329" levels="1" name="Arcane Protection">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="abnormal_item"/>
+		<set name="magicLevel" value="76"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<add stat="pDef" value="3000"/>
+				<add stat="mDef" value="2100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="39330" levels="1" name="Arcane Paralysis">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_effect" value="SLEEP"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="sleep"/>
+		<set name="magicLevel" value="80"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="activateRate" value="80"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="SLEEP"/>
+		<set name="operate_type" value="P"/>
+		<set name="trait" value="SLEEP"/>
+		<cond msgId="113">
+			<target type="PLAYABLE"/>
+		</cond>		
+		<for>
+			<effect name="Sleep">
+				<p_defence_trait name="sleep" value="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="39331" levels="1" name="Arcane Silence">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="SILENCE"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="silence"/>
+		<set name="magicLevel" value="80"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="lv_bonus_rate" value="3"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="activateRate" value="80"/>
+		<set name="operate_type" value="P"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="Mute"/>
+		</for>
+		<cond msgId="113">
+			<target type="PLAYABLE"/>
+		</cond>				
+	</skill>
+	<skill id="39332" levels="1" name="Arcane Critical Sense">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="mp_consume" value="43"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="abnormal_item"/>
+		<set name="magicLevel" value="76"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="pCritRate" value="1.5"/>
+				<p_critical_damage value="50" type="PER"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="39333" levels="1" name="Arcane Power">
+		<set name="icon" value="icon.etc_wit_symbol_i01"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="300"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="abnormal_item"/>
+		<set name="magicLevel" value="76"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="pvePhysDmgBonus" value="1.1"/>
+				<mul stat="pveMagicSkillDmgBonus" value="1.1"/>
+				<mul stat="pvePhysSkillDmgBonus" value="1.1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="39334" levels="1" name="Lucky Fortune">
+		<set name="effectPoint" value="669"/>
+		<set name="icon" value="icon.Accessary_middle_ages_i00"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39335" levels="2" name="Lucky Fortune">
+		<set name="effectPoint" value="669"/>
+		<set name="icon" value="icon.Accessary_middle_ages_i00"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39336" levels="1" name="Focus - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1077"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39337" levels="1" name="Death Whisper - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1242"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39338" levels="1" name="Haste - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1086"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="itemConsumeId" value="48875"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="33">
+				<item id="48876" min_count="1" max_count="1"/>
+			</group>
+			<group chance="33">
+				<item id="48877" min_count="1" max_count="1"/>
+			</group>
+			<group chance="34">
+				<item id="48878" min_count="1" max_count="1"/>
+			</group>
+		</restoration>
+	</skill>
+	<skill id="39339" levels="1" name="Guidance - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1240"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39340" levels="1" name="Noble Blessed Body - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1045"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39341" levels="1" name="Noble Blessed Soul - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1048"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39342" levels="1" name="Agility - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1087"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39343" levels="1" name="Acumen - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1085"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39344" levels="1" name="Decrease Weight - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1257"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39345" levels="1" name="Might - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1068"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39346" levels="1" name="Shield - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1040"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39347" levels="1" name="Magic Barrier - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1036"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39348" levels="1" name="Vampiric Rage - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1268"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39349" levels="1" name="Empower - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1059"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39350" levels="1" name="Wind Walk - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1204"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39351" levels="1" name="Berserker Spirit - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1062"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39352" levels="1" name="Greater Might - Anniversary">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1388"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39353" levels="1" name="Greater Shield - Anniversary">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1389"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39354" levels="1" name="Wild Magic - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1303"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39355" levels="1" name="Clarity - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1397"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39356" levels="1" name="Prophecy of Water - Anniversary">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1355"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39357" levels="1" name="Prophecy of Fire - Anniversary">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1356"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39358" levels="1" name="Prophecy of Wind - Anniversary">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1357"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39359" levels="1" name="Shining Jewelry Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39360" levels="1" name="Greater Jewel Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39361" levels="3" name="Master Fisherman's Blessing">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.fishing_zone_ticket"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39362" levels="1" name="Master Fisherman's Fishing Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39363" levels="1" name="Angler's Silver Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39364" levels="1" name="Master Fisherman's Golden Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39365" levels="1" name="Scroll: Enchant Fishing Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39366" levels="1" name="Improved Scroll: Enchant Fishing Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39367" levels="1" name="Teddy Bear Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.gomdori_chest_change"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39368" levels="1" name="+15 A-grade Weapon Pack">
+		<set name="icon" value="icon.etc_treasure_box_i07"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39369" levels="1" name="White Knight Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.etc_charm_of_courage_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39370" levels="1" name="Lucky Charm">
+		<set name="icon" value="icon.bm_freya_rune"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

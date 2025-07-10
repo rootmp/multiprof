@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: SanyaDC-->
+<list>
+	<config type="CHANCED"/>
+	<item>
+		<production id="70687" count="1"/>	<!--Artisan's Goggles <STR+1 INT+1>-->
+		<production id="70687" count="1" chance="33"/>	<!--Artisan's Goggles <STR+1 INT+1>-->
+		<production id="70688" count="1" chance="33"/>	<!--Artisan's Goggles <DEX+1 WIT+1>-->
+		<production id="70689" count="1" chance="33"/>	<!--Artisan's Goggles <CON+1 MEN+1>-->
+		<ingredient id="8186" count="1"/>	<!--Artisan's Goggles-->
+	</item>
+	<item>
+		<production id="70690" count="1"/>	<!--Uniform Hat <STR+1 INT+1>-->
+		<production id="70690" count="1" chance="33"/>	<!--Uniform Hat <STR+1 INT+1>-->
+		<production id="70691" count="1" chance="33"/>	<!--Uniform Hat <DEX+1 WIT+1>-->
+		<production id="70692" count="1" chance="33"/>	<!--Uniform Hat <CON+1 MEN+1>-->
+		<ingredient id="20020" count="1"/>	<!--Uniform Hat-->
+	</item>
+	<item>
+		<production id="70693" count="1"/>	<!--Assassin's Bamboo Hat <STR+1 INT+1>-->
+		<production id="70693" count="1" chance="33"/>	<!--Assassin's Bamboo Hat <STR+1 INT+1>-->
+		<production id="70694" count="1" chance="33"/>	<!--Assassin's Bamboo Hat <DEX+1 WIT+1>-->
+		<production id="70695" count="1" chance="33"/>	<!--Assassin's Bamboo Hat <CON+1 MEN+1>-->
+		<ingredient id="20021" count="1"/>	<!--Assassin's Bamboo Hat-->
+	</item>
+	<item>
+		<production id="70696" count="1"/>	<!--Valkyrie Hat <STR+1 INT+1>-->
+		<production id="70696" count="1" chance="33"/>	<!--Valkyrie Hat <STR+1 INT+1>-->
+		<production id="70697" count="1" chance="33"/>	<!--Valkyrie Hat <DEX+1 WIT+1>-->
+		<production id="70698" count="1" chance="33"/>	<!--Valkyrie Hat <CON+1 MEN+1>-->
+		<ingredient id="20666" count="1"/>	<!--Valkyrie Hat-->
+	</item>
+	<item>
+		<production id="70699" count="1"/>	<!--Gatekeeper Hat <STR+1 INT+1>-->
+		<production id="70699" count="1" chance="33"/>	<!--Gatekeeper Hat <STR+1 INT+1>-->
+		<production id="70700" count="1" chance="33"/>	<!--Gatekeeper Hat <DEX+1 WIT+1>-->
+		<production id="70701" count="1" chance="33"/>	<!--Gatekeeper Hat <CON+1 MEN+1>-->
+		<ingredient id="20678" count="1"/>	<!--Gatekeeper Hat-->
+	</item>
+	<item>
+		<production id="70702" count="1"/>	<!--Wedding Veil <STR+1 INT+1>-->
+		<production id="70702" count="1" chance="33"/>	<!--Wedding Veil <STR+1 INT+1>-->
+		<production id="70703" count="1" chance="33"/>	<!--Wedding Veil <DEX+1 WIT+1>-->
+		<production id="70704" count="1" chance="33"/>	<!--Wedding Veil <CON+1 MEN+1>-->
+		<ingredient id="21162" count="1"/>	<!--Wedding Veil-->
+	</item>
+	<item>
+		<production id="70705" count="1"/>	<!--Maid Hair Accessory <STR+1 INT+1>-->
+		<production id="70705" count="1" chance="33"/>	<!--Maid Hair Accessory <STR+1 INT+1>-->
+		<production id="70706" count="1" chance="33"/>	<!--Maid Hair Accessory <DEX+1 WIT+1>-->
+		<production id="70707" count="1" chance="33"/>	<!--Maid Hair Accessory <CON+1 MEN+1>-->
+		<ingredient id="23459" count="1"/>	<!--Maid Hair Accessory-->
+	</item>
+	<item>
+		<production id="70708" count="1"/>	<!--Refined Romantic Chapeau: Red <STR+1 INT+1>-->
+		<production id="70708" count="1" chance="33"/>	<!--Refined Romantic Chapeau: Red <STR+1 INT+1>-->
+		<production id="70709" count="1" chance="33"/>	<!--Refined Romantic Chapeau: Red <DEX+1 WIT+1>-->
+		<production id="70710" count="1" chance="33"/>	<!--Refined Romantic Chapeau: Red <CON+1 MEN+1>-->
+		<ingredient id="29036" count="1"/>	<!--Fancy Red Romantic Chapeau-->
+	</item>
+	<item>
+		<production id="70711" count="1"/>	<!--Refined Angel Ring <STR+1 INT+1>-->
+		<production id="70711" count="1" chance="33"/>	<!--Refined Angel Ring <STR+1 INT+1>-->
+		<production id="70712" count="1" chance="33"/>	<!--Refined Angel Ring <DEX+1 WIT+1>-->
+		<production id="70713" count="1" chance="33"/>	<!--Refined Angel Ring <CON+1 MEN+1>-->
+		<ingredient id="29037" count="1"/>	<!--Refined Angel Ring-->
+	</item>
+	<item>
+		<production id="70720" count="1"/>	<!--Top Hat <STR+1 INT+1>-->
+		<production id="70720" count="1" chance="33"/>	<!--Top Hat <STR+1 INT+1>-->
+		<production id="70721" count="1" chance="33"/>	<!--Top Hat <DEX+1 WIT+1>-->
+		<production id="70722" count="1" chance="33"/>	<!--Top Hat <CON+1 MEN+1>-->
+		<ingredient id="29040" count="1"/>	<!--Top Hat-->
+	</item>
+	<item>
+		<production id="70723" count="1"/>	<!--Vigilante Hat <STR+1 INT+1>-->
+		<production id="70723" count="1" chance="33"/>	<!--Vigilante Hat <STR+1 INT+1>-->
+		<production id="70724" count="1" chance="33"/>	<!--Vigilante Hat <DEX+1 WIT+1>-->
+		<production id="70725" count="1" chance="33"/>	<!--Vigilante Hat <CON+1 MEN+1>-->
+		<ingredient id="29041" count="1"/>	<!--Vigilante Hat-->
+	</item>
+</list>

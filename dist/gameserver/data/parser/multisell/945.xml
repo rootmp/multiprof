@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!-- Author: nexvill -->
+<list>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93463" count="1" />	<!-- +4 ~ +15 Weapon Pack - Damascus Sword -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93464" count="1" />	<!-- +4 ~ +15 Weapon Pack - Wizard's Tear -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93465" count="1" />	<!-- +4 ~ +15 Weapon Pack - Guardian's Sword -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93466" count="1" />	<!-- +4 ~ +15 Weapon Pack - Bellion Cestus -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93467" count="1" />	<!-- +4 ~ +15 Weapon Pack - Bow of Peril -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93468" count="1" />	<!-- +4 ~ +15 Weapon Pack - Lance -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93469" count="1" />	<!-- +4 ~ +15 Weapon Pack - Staff of Evil Spirits -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93470" count="1" />	<!-- +4 ~ +15 Weapon Pack - Deadman's Glory -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93471" count="1" />	<!-- +4 ~ +15 Weapon Pack - Art of Battle Axe -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93472" count="1" />	<!-- +4 ~ +15 Weapon Pack - Samurai Long Sword*Samurai Long Sword -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93473" count="1" />	<!-- +4 ~ +15 Weapon Pack - Demon's Dagger -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93474" count="1" />	<!-- +4 ~ +15 Weapon Pack - Colichemarde -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93475" count="1" />	<!-- +4 ~ +15 Weapon Pack - Dismantler -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="93476" count="1" />	<!-- +4 ~ +15 Weapon Pack - Star Buster -->
+	</item>
+	<item>
+		<ingredient id="93499" count="1" />	<!-- Enchanted B-grade Weapon Coupon -->
+		<production id="95659" count="1" />	<!-- +4 ~ +15 Weapon Pack - Volcano -->
+	</item>
+</list>

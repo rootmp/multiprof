@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="9504" levels="1" name="Scroll: PK">
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="target_type" value="SELF"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="200"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTDONE"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="9505" levels="1" name="Mid-grade Scroll: PK">
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="target_type" value="SELF"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="200"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTDONE"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="9506" levels="1" name="High-grade Scroll: PK">
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="target_type" value="SELF"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="200"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTDONE"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="9507" levels="1" name="Top-grade Scroll: PK">
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="target_type" value="SELF"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="200"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTDONE"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+</list>

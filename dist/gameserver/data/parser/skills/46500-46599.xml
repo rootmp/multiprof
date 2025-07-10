@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="46571" levels="20" name="Test - 5% chance to remove P. Def. decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="46572" levels="1" name="Test - 50% chance to remove P. Def. decrease">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="46573" levels="4" name="Test - i_p_attack;1000;0;0;0">
+		<set name="effectPoint" value="-200"/>
+		<set name="icon" value="icon.skill0190"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="46574" levels="4" name="Test - i_energy_attack;1000;0;0;0;0">
+		<set name="effectPoint" value="-200"/>
+		<set name="icon" value="icon.skill0190"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="46575" levels="4" name="Test - i_physical_attack_hp_link;1000;0;0;0">
+		<set name="effectPoint" value="-200"/>
+		<set name="icon" value="icon.skill0190"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="46576" levels="20" name="Test - 5% Chance to Remove Shield Defense Debuff">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="46577" levels="1" name="Test - 50% Chance to Remove Shield Defense Debuff">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

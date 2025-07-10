@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!-- Author: nexvill -->
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_1">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185672" y="57400" z="-4577" h="41" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_2">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185768" y="57400" z="-4577" h="70" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_3">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185768" y="57464" z="-4577" h="63973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_4">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185672" y="57480" z="-4577" h="72" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_5">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185576" y="57480" z="-4577" h="571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_6">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185576" y="57400" z="-4577" h="66" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_7">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185768" y="57544" z="-4577" h="65474" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_8">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185656" y="57544" z="-4577" h="65480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_9">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185576" y="57544" z="-4577" h="65458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_10">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185768" y="57624" z="-4577" h="67" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_11">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185656" y="57624" z="-4577" h="161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_12">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185576" y="57624" z="-4577" h="1654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_13">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185768" y="57720" z="-4577" h="63" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_14">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185656" y="57720" z="-4577" h="54" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_1_15">
+		<npc id="22418" /> <!-- Lesser Warrior -->
+		<point x="185576" y="57720" z="-4577" h="16" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_1">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="185992" y="57160" z="-4577" h="16408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_2">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="186088" y="57352" z="-4577" h="16311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_3">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="186088" y="57256" z="-4577" h="16324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_4">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="186088" y="57160" z="-4577" h="15932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_5">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="186056" y="57352" z="-4577" h="14818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_6">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="186040" y="57256" z="-4577" h="16448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_7">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="186040" y="57160" z="-4577" h="16936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_8">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="186008" y="57352" z="-4577" h="14917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_9">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="185992" y="57256" z="-4577" h="16724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_10">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="185928" y="57352" z="-4577" h="16457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_11">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="185928" y="57256" z="-4577" h="16464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_12">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="185928" y="57160" z="-4577" h="17104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_13">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="185864" y="57352" z="-4577" h="16311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_14">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="185864" y="57256" z="-4577" h="16311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_2_15">
+		<npc id="22419" /> <!-- Lesser Hunter -->
+		<point x="185864" y="57160" z="-4577" h="15747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_1">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186152" y="57688" z="-4577" h="32863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_2">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186232" y="57688" z="-4577" h="32862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_3">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186312" y="57688" z="-4577" h="33529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_4">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186152" y="57624" z="-4577" h="32873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_5">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186232" y="57624" z="-4577" h="32839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_6">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186312" y="57624" z="-4577" h="33076" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_7">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186152" y="57560" z="-4577" h="32868" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_8">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186232" y="57560" z="-4577" h="32928" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_9">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186312" y="57560" z="-4577" h="34611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_10">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186152" y="57416" z="-4577" h="32655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_11">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186312" y="57496" z="-4577" h="32800" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_12">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186232" y="57496" z="-4577" h="32826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_13">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186152" y="57496" z="-4577" h="32869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_14">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186232" y="57416" z="-4577" h="32665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_3_15">
+		<npc id="22420" /> <!-- Baron's Warrior -->
+		<point x="186312" y="57416" z="-4577" h="32179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_1">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185672" y="57400" z="-4577" h="41" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_2">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185768" y="57400" z="-4577" h="70" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_3">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185768" y="57464" z="-4577" h="63973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_4">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185672" y="57480" z="-4577" h="72" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_5">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185576" y="57480" z="-4577" h="571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_6">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185576" y="57400" z="-4577" h="66" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_7">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185768" y="57544" z="-4577" h="65474" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_8">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185656" y="57544" z="-4577" h="65480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_9">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185576" y="57544" z="-4577" h="65458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_10">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185768" y="57624" z="-4577" h="67" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_11">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185656" y="57624" z="-4577" h="161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_12">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185576" y="57624" z="-4577" h="1654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_13">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185768" y="57720" z="-4577" h="63" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_14">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185656" y="57720" z="-4577" h="54" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_4_15">
+		<npc id="22421" /> <!-- Baron's Puncher -->
+		<point x="185576" y="57720" z="-4577" h="16" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_1">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="185992" y="57160" z="-4577" h="16408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_2">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="186088" y="57352" z="-4577" h="16311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_3">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="186088" y="57256" z="-4577" h="16324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_4">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="186088" y="57160" z="-4577" h="15932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_5">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="186056" y="57352" z="-4577" h="14818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_6">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="186040" y="57256" z="-4577" h="16448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_7">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="186040" y="57160" z="-4577" h="16936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_8">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="186008" y="57352" z="-4577" h="14917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_9">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="185992" y="57256" z="-4577" h="16724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_10">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="185928" y="57352" z="-4577" h="16457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_11">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="185928" y="57256" z="-4577" h="16464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_12">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="185928" y="57160" z="-4577" h="17104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_13">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="185864" y="57352" z="-4577" h="16311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_14">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="185864" y="57256" z="-4577" h="16311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_5_15">
+		<npc id="22422" /> <!-- Baron's Overlord -->
+		<point x="185864" y="57160" z="-4577" h="15747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_1">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186152" y="57688" z="-4577" h="32863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_2">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186232" y="57688" z="-4577" h="32862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_3">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186312" y="57688" z="-4577" h="33529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_4">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186152" y="57624" z="-4577" h="32873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_5">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186232" y="57624" z="-4577" h="32839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_6">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186312" y="57624" z="-4577" h="33076" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_7">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186152" y="57560" z="-4577" h="32868" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_8">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186232" y="57560" z="-4577" h="32928" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_9">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186312" y="57560" z="-4577" h="34611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_10">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186152" y="57416" z="-4577" h="32655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_11">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186312" y="57496" z="-4577" h="32800" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_12">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186232" y="57496" z="-4577" h="32826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_13">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186152" y="57496" z="-4577" h="32869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_14">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186232" y="57416" z="-4577" h="32665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_variant_6_15">
+		<npc id="22423" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="186312" y="57416" z="-4577" h="32179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_1">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="185960" y="57320" z="-4577" h="16208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_2">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="186040" y="57320" z="-4577" h="15589" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_3">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="186088" y="57400" z="-4577" h="31675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_4">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="186072" y="57704" z="-4577" h="32445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_5">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="186072" y="57608" z="-4577" h="32451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_6">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="186088" y="57512" z="-4577" h="32588" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_7">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="185880" y="57320" z="-4577" h="16266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_8">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="185784" y="57320" z="-4577" h="16795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_9">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="185704" y="57320" z="-4577" h="65035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_10">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="185704" y="57400" z="-4577" h="64851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_11">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="185704" y="57528" z="-4577" h="447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="transcendent_90_box_12">
+		<npc id="22425" /> <!-- Transcendent Treasure Chest -->
+		<point x="185704" y="57656" z="-4579" h="34501" />
+	</spawn>
+</list>

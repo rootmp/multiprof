@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="91464" count="1"/>	<!--High Quality Stable Scroll: Enchant Weapon (D-grade)-->
+		<ingredient id="91462" count="20"/>	<!--Weapon Enhancement Stone-->
+		<ingredient id="57" count="4500000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91466" count="1"/>	<!--High Quality Stable Scroll: Enchant Weapon (C-grade)-->
+		<ingredient id="91462" count="32"/>	<!--Weapon Enhancement Stone-->
+		<ingredient id="57" count="20000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91468" count="1"/>	<!--High Quality Stable Scroll: Enchant Weapon (B-grade)-->
+		<ingredient id="91462" count="36"/>	<!--Weapon Enhancement Stone-->
+		<ingredient id="57" count="59000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91470" count="1"/>	<!--High Quality Stable Scroll: Enchant Weapon (A-grade)-->
+		<ingredient id="91462" count="52"/>	<!--Weapon Enhancement Stone-->
+		<ingredient id="57" count="95000000"/>	<!--Adena-->
+	</item>
+</list>

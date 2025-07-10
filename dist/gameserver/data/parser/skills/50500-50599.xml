@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="50500" levels="10" name="+1 Anakim's Divine Pistols">
+		<set name="icon" value="icon.skill1516"/>
+		<table name="#STR">0 0 0 0 1 2 3 4 5 6</table>
+		<table name="#triglev">1 2 3 4 5 6 7 8 9 10</table>
+		<table name="#chance">1 1 1 1 2 4 6 8 10 12</table>
+		<table name="#chance2">0 0 0 0 1 1 1 2 2 3</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50501" level="#triglev" type="ATTACK" chance="#chance"/>
+			<trigger id="50501" level="#triglev" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance"/>
+			<trigger id="50501" level="#triglev" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance"/>
+			<trigger id="50502" level="#triglev" type="ATTACK" chance="#chance2"/>
+			<trigger id="50502" level="#triglev" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50502" level="#triglev" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="STR" value="#STR"/>
+			<add order="0x10" stat="DEX" value="#STR"/>
+		</for>
+	</skill>
+	<skill id="50501" levels="22" name="Anakim's Holy Blast">
+		<!--Inflicts magic damage on the enemy with $s1 power.-->
+		<set name="effectPoint" value="-300"/>
+		<set name="icon" value="icon.skill1516"/>
+		<set name="castRange" value="900"/>
+		<table name="#power">72 73 74 76 78 81 84 86 89 92 95 43 44 44 45 47 48 50 52 53 55 57</table>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="MDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50502" levels="20" name="Anakim's Enhanced Holy Blast">
+		<set name="effectPoint" value="-300"/>
+		<set name="icon" value="icon.skill1516"/>
+		<set name="castRange" value="900"/>
+		<table name="#power">0 0 0 0 121 126 130 134 138 142 0 0 0 0 73 75 78 80 83 85</table>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="MDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50503" levels="1" name="Sylphen Ring">
+		<!--P. Atk. $s1\nM. Atk. $s1\nP. Def. $s1\nM. Def. $s1\nMP Recovery Rate $s2-->
+		<set name="icon" value="icon.ring_of_sylph_01"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50504" levels="11" name="Clan Cloak">
+		<set name="icon" value="icon.alliance_cloak_pvp04"/>
+		<table name="#maxHp">1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1 1.1 1.1</table>
+		<table name="#pDef">1 1 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="maxHp" value="#maxHp"/>
+			<mul stat="maxMp" value="#maxHp"/>
+			<mul stat="pDef" value="#pDef"/>
+			<mul stat="mDef" value="#pDef"/>
+		</for>
+	</skill>
+	<skill id="50505" levels="3" name="Clan Cloak Progression Support">
+		<!--When used, for $s1\nPet XP $s2\n\nRemoved when your pet is dead or recalled.-->
+		<set name="autouse_type" value="BUFF"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.alliance_cloak_pvp04"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="castRange" value="-2"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50506" levels="11" name="Clan Circlet">
+		<set name="icon" value="icon.accessory_flame_circlet_i00"/>
+		<table name="#maxHp">50 100 150 200 250 300 350 400 450 500 1000</table>
+		<table name="#pDef">1 1 1 1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08</table>
+		<table name="#power">0 0 0 0 0 0 0.03 0.04 0.06 0.1 0.2</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxHp" value="#maxHp"/>
+			<add stat="maxMp" value="#maxHp"/>
+			<mul stat="pDef" value="#pDef"/>
+			<mul stat="mDef" value="#pDef"/>
+			<add stat="exp_rate_multiplier" value="#power"/>
+			<add stat="sp_rate_multiplier" value="#power"/>
+		</for>
+	</skill>
+	<skill id="50507" levels="1" name="Shield of Protection">
+		<set name="icon" value="icon.shield_of_protection"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxMp" value="1000"/>
+			<add stat="maxHp" value="1000"/>
+			<add stat="maxCp" value="1000"/>
+			<mul stat="pCritChanceRcpt" value="0.9"/>
+			<mul stat="mCritChanceRcpt" value="0.9"/>
+		</for>
+	</skill>
+	<skill id="50508" levels="1" name="Shield of Protection">
+		<set name="icon" value="icon.shield_of_protection"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50510" level="1" type="RECEIVE_DAMAGE" chance="3"/>
+		</triggers>
+	</skill>
+	<skill id="50509" levels="10" name="+1 Shield of Protection">
+		<set name="icon" value="icon.shield_of_protection"/>
+		<table name="#Def">1.03 1.04 1.05 1.06 1.08 1.1 1.12 1.14 1.17 1.2</table>
+		<table name="#level">2 3 4 5 6 7 8 9 10 11</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50510" level="#level" type="RECEIVE_DAMAGE" chance="3"/>
+		</triggers>
+		<for>
+			<mul stat="pDef" value="#Def"/>
+			<mul stat="mDef" value="#Def"/>
+			<mul stat="sDef" value="#Def"/>
+		</for>
+	</skill>
+	<skill id="50510" levels="11" name="Defense Mode">
+		<table name="#TabmaxHp">1.05 1.08 1.11 1.14 1.17 1.2 1.25 1.3 1.35 1.4 1.5</table>
+		<table name="#TabmaxHpPercent">5 8 11 14 17 20 25 30 35 40 50</table>
+		<table name="#t_hp">100 200 300 400 500 650 800 950 1100 1250 1400</table>
+		<set name="icon" value="icon.shield_of_protection"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="2"/>
+		<set name="abnormal_type" value="max_hp_up"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="maxHp" value="#TabmaxHp"/>
+			</effect>
+			<effect instant="true" name="RestoreHP" value="#TabmaxHpPercent">
+				<def name="percent" value="true"/>
+			</effect>
+			<effect name="t_hp" interval="2" value="#t_hp"/>
+		</for>
+	</skill>
+	<skill id="50511" levels="1" name="Sigil of Protection">
+		<set name="icon" value="icon.sigil_of_protection"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxMp" value="500"/>
+			<add stat="maxHp" value="500"/>
+			<add stat="maxCp" value="500"/>
+			<mul stat="pCritChanceRcpt" value="0.9"/>
+			<mul stat="mCritChanceRcpt" value="0.9"/>
+		</for>
+	</skill>
+	<skill id="50512" levels="1" name="Sigil of Protection">
+		<set name="icon" value="icon.sigil_of_protection"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50514" level="1" type="RECEIVE_DAMAGE" chance="3"/>
+		</triggers>
+	</skill>
+	<skill id="50513" levels="10" name="+1 Sigil of Protection">
+		<set name="icon" value="icon.sigil_of_protection"/>
+		<table name="#pDef">1.03 1.04 1.05 1.06 1.08 1.10 1.12 1.14 1.17 1.20</table>
+		<table name="#level">2 3 4 5 6 7 8 9 10 11</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50514" level="#level" type="RECEIVE_DAMAGE" chance="3"/>
+		</triggers>
+		<for>
+			<mul stat="pDef" value="#pDef"/>
+			<mul stat="mDef" value="#pDef"/>
+		</for>
+	</skill>
+	<skill id="50514" levels="11" name="Defense Curse">
+		<table name="#pAtk">0.95 0.93 0.91 0.89 0.87 0.85 0.82 0.79 0.76 0.73 0.7</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.sigil_of_protection"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="3"/>
+		<set name="abnormal_type" value="pa_down"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="activateRate" value="80"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="#pAtk"/>
+				<mul stat="mAtk" value="#pAtk"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50515" levels="1" name="Anakim's Divine Pistols">
+		<!--A fire gun containing Anakim's Soul.\nAllows to use Anakim's power.-->
+		<set name="icon" value="icon.shooter_boss_anakim"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50516" levels="1" name="Adventurer's Pendant">
+		<!--M. Def. +$s1-->
+		<set name="icon" value="icon.etc_resonance_amulet_i00"/>
+		<set name="operate_type" value="A2" />
+		<for>
+			<add stat="mDef" value="9" />
+		</for>
+	</skill>
+	<skill id="50517" levels="1" name="Aden's Dual Swords">
+		<!--<Level Bonus Effect>\nP./ M. Atk. are increased depending on level.\n\n<Lv. 40-49>\nP. Atk. +21\nM. Atk. +10\n<Lv. 50-59>\nP. Atk. +41\nM. Atk. +20\n<Lv. 60-64>\nP. Atk. +62\nM. Atk. +31\n<Lv. 65-69>\nP. Atk. +83\nM. Atk. +41\n<Lv. 70-74>\nP. Atk. +103\nM. Atk. +51\n<Lv. 75+>\nP. Atk. +124\nM. Atk. +61-->
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="pAtk" value="21">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="41">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="20">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="62">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="31">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="83">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="103">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="51">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="124">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="61">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50518" levels="22" name="Furious Frost">
+		<table name="#power">130 133 135 137 142 147 152 157 161 167 172 78 80 81 82 84 88 91 94 97 101 103</table>
+		<set name="effectPoint" value="-900"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill10103"/>
+		<set name="castRange" value="900"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="MDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50519" levels="22" name="Absolute Zero">
+		<table name="#power">130 133 135 137 142 147 152 157 161 167 172 78 80 81 82 84 88 91 94 97 101 103</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="castRange" value="900"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="nextAction" value="attack"/>
+		<set name="abnormal_effect" value="STUN"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="activateRate" value="100"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="PercentPatk" value="10"/>
+			<effect name="Stun"/>
+		</for>
+	</skill>
+	<skill id="50520" levels="22" name="Stay Frozen">
+		<table name="#power">130 133 135 137 142 147 152 157 161 167 172 78 80 81 82 84 88 91 94 97 101 103</table>
+		<set name="effectPoint" value="-900"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill10103"/>
+		<set name="castRange" value="900"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="MDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50521" levels="22" name="Furious Frost">	<!-- Fixed Mystogan -->
+		<table name="#Atk">0.8 0.8 0.8 0.8 0.8 0.75 0.75 0.75 0.7 0.7 0.7 0.8 0.8 0.8 0.8 0.8 0.75 0.75 0.75 0.7 0.7 0.7</table>
+		<table name="#AtkSpd">0.7 0.7 0.7 0.7 0.7 0.6 0.6 0.6 0.5 0.5 0.5 0.7 0.7 0.7 0.7 0.7 0.6 0.6 0.6 0.5 0.5 0.5</table>
+		<table name="#level">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill19554"/>
+		<set name="castRange" value="900"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="5"/>
+		<set name="abnormal_type" value="all_speed_down"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="#Atk"/>
+				<mul stat="mAtk" value="#Atk"/>
+				<mul stat="pAtkSpd" value="#AtkSpd"/>
+				<mul stat="mAtkSpd" value="#AtkSpd"/>
+				<mul stat="mReuse" value="1.10"/>
+				<mul stat="pReuse" value="1.10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50522" levels="22" name="Absolute Zero">	<!-- Fixed Mystogan -->
+		<!--<Hold skill>\n\nThe bitter cold hinders the character's movements.\nDelivers a powerful attack when the effect disappears.-->
+		<table name="#p_defence_trait_blunt">-20 -20 -20 -20 -20 -25 -25 -25 -30 -30 -30 -20 -20 -20 -20 -20 -25 -25 -25 -30 -30 -30</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="castRange" value="900"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="ENEMY"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="nextAction" value="attack"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="activateRate" value="100"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<p_defence_trait name="bow" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="crossbow" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="rapier" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="dualdagger" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="dagger" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="pole" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="dual" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="sword" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="ancientsword" value="#p_defence_trait_blunt"/>
+			<p_defence_trait name="blunt" value="#p_defence_trait_blunt"/>
+		</for>
+	</skill>
+	<skill id="50523" levels="1" name="Beleth's Soul Eater">	<!-- Fixed Mystogan -->
+		<!--A two-handed magic blunt weapon containing Beleth' soul.\nAllows to use Beleth' power.\n\n<Level bonus effect>\nP./ M. Atk. are increased depending on your level.\n\n<Lv. 60-69>\nP. Atk. +1\nM. Atk. +4\n<Lv. 70-79>\nP. Atk. +2\nM. Atk. +10\n<Lv. 80-89>\nP. Atk. +4 ~ +14\nM. Atk. +20 ~ +49\n<Lv. 90+>\nP. Atk. +16 and higher\nM. Atk. +57 and higher-->
+		<set name="icon" value="icon.staff_of_bereth"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50524" levels="22" name="Stay Frozen">	<!-- Fixed Mystogan -->
+		<table name="#level">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22</table>
+		<table name="#Def">0.80 0.80 0.80 0.80 0.80 0.80 0.75 0.75 0.75 0.70 0.70 0.70 0.80 0.80 0.80 0.80 0.80 0.80 0.75 0.75 0.75 0.70 0.70 0.70</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="castRange" value="900"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="ENEMY"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="nextAction" value="attack"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="activateRate" value="100"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pDef" value="#Def"/>
+				<mul stat="mDef" value="#Def"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50525" levels="11" name="Frost Lord's Sword">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50521" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50521" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50521" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="CON" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50526" levels="11" name="Frost Lord's Axe">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50521" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50521" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50521" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="CON" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50527" levels="11" name="Frost Lord's Dagger">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50521" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50521" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50521" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="DEX" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50528" levels="11" name="Frost Lord's Rapier">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50521" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50521" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50521" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="MEN" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50529" levels="11" name="Frost Lord's Magic Blunt Weapon">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50524" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="WIT" value="#CON"/>
+			<add order="0x10" stat="INT" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50530" levels="11" name="Frost Lord's Spear">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50522" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50522" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50522" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="CON" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50531" levels="11" name="Frost Lord's Ancient Sword">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50522" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50522" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50522" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="DEX" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50532" levels="11" name="Frost Lord's Two-handed Sword">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50522" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50522" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50522" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="DEX" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50533" levels="11" name="Frost Lord's Staff">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50524" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="MEN" value="#CON"/>
+			<add order="0x10" stat="INT" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50534" levels="11" name="Frost Lord's Dual Swords">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50524" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="DEX" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50535" levels="11" name="Frost Lord's Blade Fists">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50522" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50522" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50522" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="DEX" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50536" levels="11" name="Frost Lord's Bow">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50524" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="STR" value="#CON"/>
+			<add order="0x10" stat="DEX" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50537" levels="11" name="Frost Lord's Pistols">	<!-- Fixed Mystogan -->
+		<table name="#CON">1 1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#level">1 1 1 1 1 6 7 8 9 10 11</table>
+		<table name="#chance">1 1 1 1 1 2 5 7 10 12 15</table>
+		<table name="#chance2">1 1 1 1 1 5 10 15 20 25 30</table>
+		<table name="#triglvl">1 2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.frozen_weapon_ancientsword"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50524" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50524" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="DEX" value="#CON"/>
+			<add order="0x10" stat="STR" value="#CON"/>
+		</for>
+	</skill>
+	<skill id="50538" levels="1" name="Hair Accessory of Willpower (V1)">
+		<!--STR +1, DEX +1, CON +1\nINT +1, WIT +1, MEN +1-->
+		<set name="icon" value="icon.ev_dinos_baseball_cap"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50539" levels="1" name="ALL FOR ONE">
+		<!--Sayha's Grace Sustain-->
+		<set name="icon" value="icon.2020_ev_baseboll_victory"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50540" levels="1" name="Freya's Necklace">
+		<!--Max MP $s1\nP. Def. $s2\nM. Def. $s2\nReceived Skill Damage $s3\nAll received Critical Rate $s3\nCON $s4\nMEN $s4-->
+		<set name="icon" value="icon.accessary_blessed_queen_of_ice_necklace_i00"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50541" levels="1" name="Helmet of Protection">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="MEN" value="1"/>
+			<add stat="pAtk" value="1.1"/>
+			<add stat="mAtk" value="1.1"/>
+			<mul stat="regHp" value="1.1"/>
+			<mul stat="regMp" value="1.1"/>
+			<add stat="maxLoad" value="1500"/>
+		</for>
+	</skill>
+	<skill id="50542" levels="1" name="Helmet of Protection">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50544" level="1" type="RECEIVE_DAMAGE" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50543" levels="10" name="+1 Helmet of Protection">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<table name="#CON">0 0 0 0 1 1 1 2 2 3</table>
+		<table name="#MEN">0 0 0 0 1 1 1 2 2 3</table>
+		<table name="#WIT">0 0 0 0 0 1 1 1 2 3</table>
+		<table name="#DEX">0 0 0 0 0 1 1 1 2 3</table>
+		<table name="#INT">0 0 0 0 0 0 1 1 1 2</table>
+		<table name="#STR">0 0 0 0 0 0 1 1 1 2</table>
+		<table name="#pCritDamRcpt">0.99 0.98 0.97 0.96 0.95 0.94 0.93 0.92 0.91 0.9</table>
+		<table name="#level">1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#chance">3 3 3 3 3 5 7 8 9 10</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50544" level="#level" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="MEN" value="#MEN"/>
+			<add order="0x10" stat="CON" value="#CON"/>
+			<add order="0x10" stat="WIT" value="#WIT"/>
+			<add order="0x10" stat="DEX" value="#DEX"/>
+			<add order="0x10" stat="INT" value="#INT"/>
+			<add order="0x10" stat="STR" value="#STR"/>
+			<mul stat="pCritDamRcpt" value="#pCritDamRcpt"/>
+			<mul stat="mCritDamRcpt" value="#pCritDamRcpt"/>
+		</for>
+	</skill>
+	<skill id="50544" levels="7" name="Critical Rate Defense">
+		<table name="#pCritDamRcpt">0.97 0.95 0.94 0.9 0.87 0.85 0.84 0.8</table>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pd_up"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pCritChanceRcpt" value="#pCritDamRcpt"/>
+				<mul stat="mCritChanceRcpt" value="#pCritDamRcpt"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50545" levels="1" name="Gauntlets of Protection">
+		<set name="icon" value="icon.armor_t901_g_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="CON" value="1"/>
+			<mul stat="pAtkSpd" value="1.18"/>
+			<mul stat="mAtkSpd" value="1.18"/>
+			<add stat="maxLoad" value="1000"/>
+			<add stat="maxHp" value="250"/>
+		</for>
+	</skill>
+	<skill id="50546" levels="1" name="Gauntlets of Protection">
+		<set name="icon" value="icon.armor_t901_g_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+				<trigger id="50548" level="1" type="RECEIVE_DAMAGE" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50547" levels="10" name="+1 Gauntlets of Protection">
+		<set name="icon" value="icon.armor_t901_g_i00"/>
+		<table name="#def">1 1 1 1 1.02 1.03 1.05 1.06 1.08 1.1</table>
+		<table name="#level">1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#chance">3 3 3 3 3 5 7 8 9 10</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+				<trigger id="50548" level="1" type="RECEIVE_DAMAGE" chance="1"/>
+		</triggers>
+		<for>
+			<add stat="pDef" value="#def"/>
+			<add stat="mDef" value="#def"/>
+		</for>
+	</skill>
+	<skill id="50548" levels="7" name="Power Defense">
+		<table name="#mSkillPower">0.97 0.95 0.94 0.93 0.92 0.91 0.9</table>
+		<set name="icon" value="icon.armor_t901_g_i00"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pd_up"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="p_skill_power" value="#mSkillPower"/>
+				<mul stat="mSkillPower" value="#mSkillPower"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50549" levels="1" name="Boots of Protection">
+		<set name="icon" value="icon.armor_t901_b_i00"/>
+			<set name="operate_type" value="P"/>
+			<for>
+				<add stat="STR" value="1"/>
+				<add stat="INT" value="1"/>
+				<add stat="CON" value="1"/>
+				<add stat="runSpd" value="9"/>
+				<add stat="maxLoad" value="1000"/>
+				<add stat="maxHp" value="250"/>
+			</for>
+	</skill>
+	<skill id="50550" levels="1" name="Boots of Protection">
+		<!--P. Def. $s4\nM. Def. $s4\n\n<Debuff Defense>\nWith a $s1 chance, removes debuffs and anomalies when hit.\nFor $s2, Debuff/ Anomaly Resistance $s3.\n(Cooldown: 30 sec.)-->
+		<set name="icon" value="icon.armor_t901_b_i00"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50551" levels="10" name="+1 Boots of Protection">
+		<!--P. Def. $s4\nM. Def. $s4\n\n<Debuff Defense>\nWith a $s1 chance, removes debuffs and anomalies when hit.\nFor $s2, Debuff/ Anomaly Resistance $s3.\n(Cooldown: 30 sec.)-->
+		<set name="icon" value="icon.armor_t901_b_i00"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50552" levels="1" name="Debuff Defense">
+		<!--Removes debuffs and anomalies.\nDebuff/ Anomaly Resistance $s1-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.armor_t901_b_i00"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50553" levels="6" name="Aden Cloak">
+		<!--A cloak for true heroes who fought for peace in Aden.\nMax HP $s1\nMax MP $s1\nBow Resistance $s2\nFirearms Resistance $s2\nAcquired XP $s3\nAcquired SP $s3\nP. Atk. $s4\nM. Atk. $s4\nAll Critical Rate $s5\nAll Critical Damage $s6-->
+		<set name="icon" value="BranchSys2.Icon.7anni_cloack_i01"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50554" levels="5" name="Antharas Doll's Sorcery">
+		<table name="#icon">icon.bm_antaras_doll_30d icon.bm_antaras_doll_30d icon.bm_antaras_doll_30d icon.bm_antaras_doll_30d_00 icon.bm_antaras_doll_30d_01</table>
+		<set name="icon" value="#icon"/>
+		<!--Кукла с силой Антараса.\n\n<Эффект>\nВЫН $s1\nДУХ $s1\nВесь получаемый урон $s2
+				\nСопротивление отталкиванию $s3\nСопротивление шоку $s3\nСопротивление подтаскиванию $s3\nСопротивление урону от Зарядов Души $s4
+				\nСопротивление урону от Зарядов Духа $s4
+				+1;-2%;+5%;+2%-->
+		<table name="#soulshot">1.02 1.03 1.1 1.12 1.15</table>
+		<table name="#defence">1.05 1.1 1.2 1.25 1.25</table>
+		<table name="#receive">0.98 0.95 0.9 0.88 0.85</table>
+		<!--<table name="#imprisonment">1 1 1 1.1 1.2</table>	TODO: Сюда надо добавить заточение -->
+		<table name="#STR">1 2 3 4 5</table>
+		<table name="#MEN">1 2 3 4 5</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<!--<mul stat="imprisonment" value="#imprisonment"/>-->
+			<mul stat="receive_p_damage_power" value="#receive"/>
+			<mul stat="receive_p_damage_power" value="#receive"/>
+			<mul stat="receive_m_damage_power" value="#receive"/>
+			<mul stat="defence_trait_knockback" value="#defence"/>
+			<mul stat="defence_trait_knockdown" value="#defence"/>
+			<mul stat="defence_trait_shock" value="#defence"/>
+			<mul stat="soulshot_power" value="#soulshot"/>
+			<mul stat="spiritshot_power" value="#soulshot"/>
+			<add order="0x10" stat="MEN" value="#MEN"/>
+			<add order="0x10" stat="STR" value="#STR"/>
+		</for>
+	</skill>
+	<skill id="50555" levels="6" name="Beleth' Ring">
+		<table name="#icon">icon.accessary_dynasty_ring_i03 icon.accessary_dynasty_ring_i03 icon.accessary_dynasty_ring_i03 icon.accessary_dynasty_ring_i03 icon.accessary_dynasty_ring_i04 icon.accessary_dynasty_ring_i05</table>
+		<!--A ring imbued with Beleth' power.\n\nMax MP $s1\nSleep Atk. Rate $s2\nSleep Resistance $s2\nHold Atk. Rate $s3\nHold Resistance $s3\nParalysis Atk. Rate $s4\nParalysis Resistance $s4\nHP Recovery Rate $s5\nMP Recovery Rate $s5\nSoulshot damage $s6\nSpiritshot damage $s6-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50556" levels="1" name="Beleth' Power">
+		<!--Target's Skill Power $s1 when hit-->
+		<set name="affect_scope" value="FAN"/>
+		<!--<set name="magicType" value="PHYSIC_TRIGGER"/>-->
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.accessary_dynasty_ring_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50557" levels="1" name="Beleth's Soul Eater">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder-->
+		<set name="icon" value="icon.staff_of_bereth"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50558" levels="10" name="+1 Beleth' Soul Eater">
+		<!--A weapon imbued with Beleth' soul.\nEnables Beleth' power.\n\n<When triggered>\nBeleth' Killing Thunder-->
+		<set name="icon" value="icon.staff_of_bereth"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50559" levels="22" name="Beleth' Killing Thunder">
+		<!--Inflicts magic damage on the enemy with $s1 power.-->
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.staff_of_bereth"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50560" levels="20" name="Beleth' Mighty Killing Thunder">
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.staff_of_bereth"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50561" levels="8" name="Beryl">
+		<table name="#Atk">30 100 175 250 330 410 490 570</table>
+		<table name="#Def">50 125 245 365 495 625 765 905</table>
+		<table name="#level">0 0 0 0 0 1 2 3</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="#Atk"/>
+			<add stat="mAtk" value="#Atk"/>
+			<add stat="pDef" value="#Def"/>
+			<add stat="mDef" value="#Def"/>
+		</for>
+		<triggers>
+			<trigger id="50562" level="#level" type="RECEIVE_DAMAGE" chance="10"/>
+		</triggers>
+	</skill>
+	<skill id="50562" levels="3" name="Beryl - Barrier">
+		<table name="#damage">3000 4000 5000</table>
+		<table name="#abnormal_level">1 2 3</table>
+		<set name="effectPoint" value="100"/>
+		<set name="hitTime" value="500"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_effect" value="U_AVE_ABSORB_SHIELD"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_type" value="barrier"/>
+		<set name="isTrigger" value="true"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="target" value="TARGET_SELF"/>
+		<for>
+			<effect name="DamageBlockCount">
+				<def name="block_count" value="#damage"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50563" levels="1" name="Growth Support Rune">
+		<!--Soulshot damage $s1\nSpiritshot damage $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nSpeed $s3\nAcquired XP/ SP $s4\nMagic Lamp charging rate $s5-->
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50564" levels="11" name="Hair Accessory: Enchant Effect">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50565" levels="8" name="Agathion Bracelet Lv. 1">
+		<!--Agathion slots $s1-->
+		<table name="#icon">icon.agathion_magmeld_teleport icon.bracelet_tersi_agathion icon.high_agathion_bracelet_i00 icon.high_agathion_bracelet_i01 icon.pi_high_agathion_bracelet_i00 icon.pi_high_agathion_bracelet_i00 icon.pi_high_agathion_bracelet_i00 icon.pi_high_agathion_bracelet_i00</table>
+		<table name="#agathions_limit">4 4 4 5 5 5 5 5</table>
+		<table name="#STR">0 0 0 1 1 1 2 3</table>
+		<table name="#DEX">0 0 0 0 1 2 2 3</table>
+		<table name="#CON">0 0 0 1 1 2 3 3</table>
+		<table name="#INT">0 0 0 1 1 1 2 3</table>
+		<table name="#WIT">0 0 0 0 1 2 2 3</table>
+		<table name="#MEN">0 0 0 1 1 2 3 3</table>
+		<table name="#res">0 2 3 5 8 10 12 15</table>
+		<table name="#res1">0 0 0 0 0 0 5 10</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="agathions_limit" value="#agathions_limit"/>
+			<add order="0x40" stat="STR" value="#STR" />
+			<add order="0x40" stat="DEX" value="#DEX" />
+			<add order="0x40" stat="CON" value="#CON" />
+			<add order="0x40" stat="INT" value="#INT" />
+			<add order="0x40" stat="WIT" value="#WIT" />
+			<add order="0x40" stat="MEN" value="#MEN" />	
+			<p_defence_trait name="paralyze" value="#res"/>
+			<p_defence_trait name="shock" value="#res"/> 
+			<p_defence_trait name="hold" value="#res"/>
+			<p_defence_trait name="derangement" value="#res"/> 
+			<p_defence_trait name="sleep" value="#res"/>
+			<p_defence_trait name="pull" value="#res1"/>
+			<p_defence_trait name="knockback" value="#res1"/>
+		</for>
+	</skill>
+	<skill id="50566" levels="1" name="Adventurer's Talisman Bracelet">
+		<!--Talisman slots +4-->
+		<set name="icon" value="icon.etc_rbracelet_c_i00"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="talismansLimit" value="4"/>
+		</for>
+	</skill>
+	<skill id="50567" levels="1" name="Orc's Ring">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s1\nCasting Spd. $s1\nSoulshot damage $s2\nSpiritshot damage $s2-->
+		<set name="icon" value="icon.accessary_cerberuss_ring_i00"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50568" levels="11" name="Ignore Decrease Mask">	<!-- Working Mystogan (wait Damage Decrease Ignore) -->
+		<!--Max HP $s1\nMax MP $s1\nP. Atk. $s2\nM. Atk. $s2-->
+		<set name="icon" value="icon.accessory_black_half_face_i00"/>
+		<table name="#Hp">100 200 400 600 800 1000 1200 1400 1600 1800 2000</table>
+		<table name="#Atk">100 200 300 400 600 800 1000 1200 1400 1700 2000</table>
+		<table name="#Ignore">0 0 50 100 150 200 300 400 500 500 500</table>
+		<table name="#SkillPower">1.00 1.00 1.00 1.00 1.01 1.02 1.03 1.04 1.05 1.06 1.07</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxHp" value="#Hp"/>
+			<add stat="maxMp" value="#Hp"/>
+			<add stat="pAtk" value="#Atk"/>
+			<add stat="mAtk" value="#Atk"/>
+			
+			<mul stat="p_skill_power" value="#SkillPower"/>
+			<mul stat="mSkillPower" value="#SkillPower"/>
+		</for>
+	</skill>
+</list>

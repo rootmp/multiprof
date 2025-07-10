@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="97357" name="+2 ~ +5 Dragon Belt Pack" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+</list>

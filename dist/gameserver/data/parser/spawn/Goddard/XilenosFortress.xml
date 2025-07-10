@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="122985" y="-42623" z="-3248" h="10981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="122988" y="-41973" z="-3216" h="10758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="122773" y="-42547" z="-3240" h="447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="122523" y="-42147" z="-3216" h="25206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="122217" y="-42234" z="-3216" h="16129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="121321" y="-42890" z="-3200" h="12522" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="121243" y="-42566" z="-3200" h="58590" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="121328" y="-42071" z="-3176" h="19569" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="120714" y="-42137" z="-3184" h="34050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="121343" y="-42275" z="-3192" h="146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="122630" y="-43692" z="-3200" h="34492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="120845" y="-43201" z="-3192" h="2343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="121091" y="-43133" z="-3200" h="7177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="121283" y="-43516" z="-3176" h="47550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="122019" y="-43371" z="-3224" h="44662" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="122456" y="-43632" z="-3184" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="122388" y="-43111" z="-3224" h="45098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="122389" y="-43220" z="-3216" h="38240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="120812" y="-42955" z="-3192" h="41951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="118723" y="-43474" z="-3208" h="35878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="118750" y="-43091" z="-3216" h="27032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="120769" y="-41937" z="-3184" h="57096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="120334" y="-42636" z="-3192" h="35672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="119941" y="-42646" z="-3200" h="64479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="119935" y="-42869" z="-3192" h="49506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="120210" y="-42360" z="-3216" h="55792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="120222" y="-42397" z="-3208" h="22596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="118329" y="-43130" z="-3184" h="206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="118529" y="-43180" z="-3208" h="10649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="118579" y="-42980" z="-3208" h="23939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="119442" y="-46285" z="-2792" h="9137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="120474" y="-47347" z="-2792" h="47457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="118933" y="-46293" z="-2704" h="47660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="118688" y="-46329" z="-2648" h="45694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="119023" y="-46033" z="-2720" h="25797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="119317" y="-46574" z="-2768" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="120919" y="-46787" z="-2856" h="40199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="120816" y="-46122" z="-2864" h="38805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="119892" y="-45872" z="-2800" h="58590" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="121319" y="-45322" z="-2832" h="50981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="121459" y="-45293" z="-2832" h="6664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="120913" y="-45604" z="-2840" h="60543" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="121275" y="-45651" z="-2848" h="31328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="121281" y="-46828" z="-2864" h="5263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="120893" y="-46805" z="-2856" h="3724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="121326" y="-46172" z="-2880" h="21176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="119659" y="-47320" z="-2776" h="25370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="119659" y="-47566" z="-2760" h="1530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="119299" y="-47361" z="-2760" h="13827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="120583" y="-47199" z="-2808" h="47640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="119839" y="-47648" z="-2720" h="20520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="119359" y="-47402" z="-2760" h="5593" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="121023" y="-47512" z="-2792" h="43938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="121119" y="-47523" z="-2792" h="56976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="120918" y="-47631" z="-2776" h="35094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="124330" y="-49514" z="-2528" h="22981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="123484" y="-50494" z="-2456" h="16962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="124936" y="-49751" z="-2496" h="28370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="124636" y="-49364" z="-2568" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="124784" y="-49665" z="-2528" h="3968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="124751" y="-50698" z="-2464" h="19351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="124133" y="-50576" z="-2480" h="55889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="123900" y="-50519" z="-2472" h="63607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="124207" y="-50707" z="-2472" h="39319" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="124060" y="-50652" z="-2480" h="867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="124911" y="-50282" z="-2480" h="39002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="125435" y="-50541" z="-2448" h="51402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="124762" y="-50861" z="-2456" h="54796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="125059" y="-49957" z="-2464" h="44230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="125551" y="-50799" z="-2448" h="28881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="122941" y="-52417" z="-2448" h="42672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="123392" y="-52691" z="-2464" h="22676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="123558" y="-53032" z="-2440" h="3355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="124406" y="-52987" z="-2416" h="23526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="124461" y="-52416" z="-2432" h="40267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="123396" y="-52966" z="-2456" h="47094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="123783" y="-53106" z="-2432" h="14624" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="124914" y="-52403" z="-2416" h="20512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22477" /> <!-- Xilenos Wizard -->
+		<point x="125720" y="-51371" z="-2440" h="5777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="125666" y="-51371" z="-2440" h="33227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="125126" y="-52073" z="-2424" h="50300" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="125301" y="-51716" z="-2432" h="14274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="125450" y="-52033" z="-2416" h="3319" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22474" /> <!-- Xilenos Soldier -->
+		<point x="125050" y="-53187" z="-2384" h="53901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22476" /> <!-- Xilenos Archer -->
+		<point x="124707" y="-52379" z="-2416" h="7121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="121326" y="-54352" z="-2376" h="64360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="121609" y="-54493" z="-2384" h="31124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="121015" y="-54652" z="-2344" h="44290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="121718" y="-54988" z="-2336" h="26118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="118753" y="-54581" z="-2320" h="22276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="120258" y="-54431" z="-2304" h="40826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="118918" y="-54315" z="-2328" h="4697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="119801" y="-54761" z="-2288" h="49299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="119862" y="-54788" z="-2280" h="56519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="119981" y="-54764" z="-2280" h="14635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="118761" y="-55716" z="-2264" h="29685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="118782" y="-55809" z="-2264" h="22347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="119538" y="-56703" z="-2192" h="15042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="120086" y="-57302" z="-2144" h="47037" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="120073" y="-57235" z="-2144" h="32593" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="119304" y="-56774" z="-2184" h="20929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="119618" y="-56400" z="-2208" h="13922" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="120362" y="-57084" z="-2152" h="54631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="121455" y="-55491" z="-2280" h="3053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="121235" y="-56228" z="-2232" h="24743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="121549" y="-55823" z="-2256" h="40959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="121465" y="-55513" z="-2280" h="57905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="121110" y="-57254" z="-2152" h="35324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="121683" y="-55531" z="-2280" h="54568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="121550" y="-56684" z="-2216" h="14721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="120217" y="-57433" z="-2136" h="10629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="121325" y="-57444" z="-2152" h="9166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="119050" y="-56355" z="-2224" h="7757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="118480" y="-55568" z="-2272" h="29669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="118558" y="-55987" z="-2264" h="30899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="118343" y="-54722" z="-2320" h="51200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="118585" y="-54558" z="-2320" h="4449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="114603" y="-49289" z="-2592" h="24637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114653" y="-49239" z="-2600" h="24529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="114553" y="-49139" z="-2600" h="24746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113290" y="-54919" z="-2752" h="4694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113135" y="-55394" z="-2792" h="52949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113430" y="-55316" z="-2760" h="38155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113137" y="-55330" z="-2792" h="58330" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22484" /> <!-- Xilenos Summoner -->
+		<point x="113191" y="-54957" z="-2760" h="22512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22484" /> <!-- Xilenos Summoner -->
+		<point x="113008" y="-55147" z="-2800" h="48574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22482" /> <!-- Xilenos Pikeman -->
+		<point x="113158" y="-54635" z="-2736" h="23050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="112703" y="-54539" z="-2808" h="29160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="112837" y="-54673" z="-2800" h="17537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22482" /> <!-- Xilenos Pikeman -->
+		<point x="112817" y="-54761" z="-2800" h="58961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="112857" y="-54593" z="-2792" h="38926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22482" /> <!-- Xilenos Pikeman -->
+		<point x="112733" y="-54778" z="-2808" h="31320" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="113063" y="-54970" z="-2784" h="38380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="112806" y="-54764" z="-2800" h="18827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113661" y="-48892" z="-2616" h="23874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="113327" y="-48849" z="-2600" h="55489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="113350" y="-48600" z="-2608" h="15001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="113680" y="-48579" z="-2624" h="48799" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="113892" y="-48299" z="-2624" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="113831" y="-47999" z="-2608" h="9760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113829" y="-47912" z="-2608" h="24468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="114170" y="-47717" z="-2592" h="31470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="114903" y="-48639" z="-2616" h="22432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="115164" y="-48403" z="-2608" h="5455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="114712" y="-47683" z="-2584" h="38282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="115271" y="-48066" z="-2576" h="55164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114703" y="-47753" z="-2584" h="6161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114581" y="-45173" z="-2616" h="6588" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114600" y="-45851" z="-2584" h="12745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="114047" y="-45333" z="-2624" h="50439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="114577" y="-45712" z="-2592" h="1981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="114520" y="-44997" z="-2648" h="13481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="114689" y="-46928" z="-2576" h="15438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114764" y="-47019" z="-2576" h="37879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114715" y="-46287" z="-2560" h="64405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="114703" y="-46317" z="-2560" h="4576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="114608" y="-46307" z="-2560" h="57782" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="113407" y="-43460" z="-2760" h="31287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114005" y="-42925" z="-2696" h="48221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113709" y="-43533" z="-2736" h="52119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113351" y="-44760" z="-2728" h="40094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="113830" y="-44578" z="-2720" h="40961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="113713" y="-44479" z="-2744" h="18767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="113606" y="-42991" z="-2720" h="37323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="114173" y="-42962" z="-2680" h="45017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="113598" y="-44399" z="-2760" h="19876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="113717" y="-44680" z="-2736" h="56043" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114400" y="-42139" z="-2616" h="5452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="114143" y="-42562" z="-2664" h="31265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114260" y="-42409" z="-2640" h="1722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114317" y="-41597" z="-2592" h="33382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="114165" y="-41888" z="-2616" h="6946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="114233" y="-42398" z="-2640" h="59920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="114170" y="-40937" z="-2536" h="8935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="114230" y="-41640" z="-2600" h="9527" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="114724" y="-41150" z="-2576" h="11371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="114194" y="-39116" z="-2456" h="28073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="113909" y="-39536" z="-2424" h="17297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="114023" y="-39704" z="-2424" h="17642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114635" y="-40933" z="-2560" h="36027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="115844" y="-39402" z="-2440" h="15564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="115118" y="-39198" z="-2488" h="22057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="114920" y="-39810" z="-2488" h="43265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="115448" y="-39249" z="-2480" h="26878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="115120" y="-38739" z="-2440" h="5637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="115568" y="-38621" z="-2424" h="54347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="115504" y="-38031" z="-2408" h="51865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114992" y="-37913" z="-2416" h="43388" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="114707" y="-38864" z="-2456" h="13212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22482" /> <!-- Xilenos Pikeman -->
+		<point x="108468" y="-46931" z="-2120" h="64131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="108720" y="-47035" z="-2160" h="46358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="108530" y="-47219" z="-2128" h="6881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22482" /> <!-- Xilenos Pikeman -->
+		<point x="108603" y="-47318" z="-2144" h="64729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22484" /> <!-- Xilenos Summoner -->
+		<point x="108793" y="-47147" z="-2168" h="1795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="106620" y="-41185" z="-1760" h="14117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="107170" y="-41285" z="-1856" h="3131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="106820" y="-41285" z="-1800" h="58295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="107120" y="-41535" z="-1832" h="25221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="106104" y="-42183" z="-1784" h="8009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="105854" y="-42033" z="-1776" h="39210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="106104" y="-42533" z="-1736" h="47736" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="106354" y="-42383" z="-1744" h="59053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="105642" y="-42906" z="-1712" h="9164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="105832" y="-41286" z="-1760" h="39579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="104977" y="-41036" z="-1744" h="34133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="104477" y="-41686" z="-1768" h="37256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="105682" y="-40986" z="-1712" h="59508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="105532" y="-41836" z="-1776" h="11384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="104992" y="-42556" z="-1728" h="269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="105632" y="-41336" z="-1760" h="12183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="105392" y="-42456" z="-1752" h="41612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="104977" y="-41086" z="-1744" h="38163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="105192" y="-42706" z="-1728" h="8644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="104277" y="-41086" z="-1808" h="58115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="104230" y="-37235" z="-1200" h="12148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="103572" y="-37235" z="-1320" h="2499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="103478" y="-37359" z="-1312" h="36419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="104888" y="-37173" z="-1120" h="63025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="109791" y="-37852" z="-1328" h="55437" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="109681" y="-38220" z="-1408" h="50331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="109406" y="-37116" z="-1104" h="15614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="109406" y="-38220" z="-1224" h="4850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22479" /> <!-- Xilenos Warrior -->
+		<point x="108483" y="-35991" z="-784" h="38674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22481" /> <!-- Xilenos Shooter -->
+		<point x="108983" y="-36541" z="-920" h="3327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22485" /> <!-- Xilenos Scout -->
+		<point x="108883" y="-35691" z="-832" h="56064" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22483" /> <!-- Xilenos Elder -->
+		<point x="108833" y="-35941" z="-856" h="10580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="125823" y="-40764" z="-3744" h="3118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="125813" y="-40721" z="-3744" h="53029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="125856" y="-40710" z="-3744" h="44093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="125853" y="-40687" z="-3744" h="45902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="125762" y="-40759" z="-3744" h="64990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18723" /> <!-- Morgos' Soldier -->
+		<point x="125829" y="-40762" z="-3744" h="11324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18723" /> <!-- Morgos' Soldier -->
+		<point x="125927" y="-40666" z="-3744" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="126027" y="-40566" z="-3728" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="125827" y="-40766" z="-3744" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="125977" y="-40716" z="-3736" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="121030" y="-43576" z="-3160" h="19096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="121010" y="-43516" z="-3176" h="53231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18723" /> <!-- Morgos' Soldier -->
+		<point x="121019" y="-43538" z="-3160" h="51865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="121072" y="-43507" z="-3176" h="38227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="118169" y="-52272" z="-2504" h="49704" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="118159" y="-52244" z="-2504" h="51147" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="118203" y="-52307" z="-2504" h="31042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18723" /> <!-- Morgos' Soldier -->
+		<point x="118170" y="-52302" z="-2504" h="16935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="112212" y="-44136" z="-2696" h="32612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="112140" y="-44128" z="-2696" h="61314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="112102" y="-44165" z="-2696" h="5441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18723" /> <!-- Morgos' Soldier -->
+		<point x="112155" y="-44135" z="-2696" h="65381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="103410" y="-40439" z="-1784" h="30873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="103351" y="-40365" z="-1784" h="52442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18723" /> <!-- Morgos' Soldier -->
+		<point x="103373" y="-40432" z="-1784" h="19673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="112075" y="-44093" z="-2688" h="61629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="112086" y="-44067" z="-2688" h="51572" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18722" /> <!-- Xilenos Warrior -->
+		<point x="112094" y="-44039" z="-2688" h="49144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18723" /> <!-- Morgos' Soldier -->
+		<point x="112094" y="-44100" z="-2688" h="16375" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34322" /> <!-- Ashin -->
+		<point x="127383" y="-40936" z="-3568" h="34856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34323" /> <!-- Bolk -->
+		<point x="117707" y="-56090" z="-2312" h="945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34326" /> <!-- Sidon -->
+		<point x="110776" y="-44833" z="-2504" h="9137" />
+	</spawn>
+</list>

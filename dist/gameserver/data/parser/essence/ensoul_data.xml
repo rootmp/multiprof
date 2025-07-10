@@ -1,0 +1,3731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "ensoul_data.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<ensoul_fee_data>
+		<ensoul_fee grade="D">
+			<ensoul_fee_info type="1">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="7"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="14"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="18"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="24"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="2"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="4"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="20"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="29"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="36"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="48"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="62"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="6"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="8"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="13"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="30"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="3"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="6"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="30"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="41"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="51"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="64"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="75"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="100"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="17"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="26"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="33"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="40"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="49"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="128"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+			<ensoul_fee_info type="2">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="121"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="120"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="40"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="80"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="140"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="210"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="380"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="530"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="600"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="710"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="980"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="1210"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="89"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="100"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="119"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="137"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="161"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="183"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="209"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="222"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="242"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="655"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+		</ensoul_fee>
+		<ensoul_fee grade="C">
+			<ensoul_fee_info type="1">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="7"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="14"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="18"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="24"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="2"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="4"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="20"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="29"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="36"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="48"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="62"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="6"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="8"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="13"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="30"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="3"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="6"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="30"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="41"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="51"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="64"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="75"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="100"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="17"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="26"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="33"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="40"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="49"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="128"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+			<ensoul_fee_info type="2">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="121"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="120"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="40"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="80"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="140"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="210"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="380"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="530"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="600"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="710"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="980"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="1210"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="89"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="100"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="119"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="137"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="161"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="183"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="209"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="222"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="242"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="655"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+		</ensoul_fee>
+		<ensoul_fee grade="B">
+			<ensoul_fee_info type="1">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="7"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="14"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="18"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="24"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="2"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="4"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="20"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="29"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="36"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="48"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="62"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="6"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="8"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="13"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="30"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="3"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="6"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="30"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="41"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="51"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="64"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="75"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="100"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="17"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="26"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="33"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="40"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="49"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="128"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+			<ensoul_fee_info type="2">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="121"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="120"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="40"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="80"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="140"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="210"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="380"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="530"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="600"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="710"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="980"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="1210"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="89"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="100"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="119"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="137"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="161"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="183"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="209"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="222"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="242"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="655"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+		</ensoul_fee>
+		<ensoul_fee grade="A">
+			<ensoul_fee_info type="1">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="7"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="14"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="18"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="24"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="2"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="4"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="20"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="29"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="36"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="48"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="62"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="6"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="8"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="13"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="30"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="3"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="6"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="30"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="41"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="51"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="64"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="75"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="100"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="17"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="26"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="33"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="40"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="49"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="128"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+			<ensoul_fee_info type="2">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="121"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="120"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="40"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="80"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="140"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="210"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="380"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="530"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="600"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="710"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="980"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="1210"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="89"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="100"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="119"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="137"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="161"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="183"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="209"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="222"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="242"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="655"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+		</ensoul_fee>
+		<ensoul_fee grade="S">
+			<ensoul_fee_info type="1">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="7"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="14"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="18"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="24"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="2"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="3"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="4"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="4"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="10"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="20"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="29"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="31"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="36"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="48"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="62"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="5"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="6"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="7"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="8"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="11"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="13"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="30"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="1"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="3"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="6"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="15"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="30"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="41"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="51"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="64"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="75"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="100"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="15"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="17"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="26"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="33"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="40"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="49"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="128"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>
+			<ensoul_fee_info type="2">
+				<ensoul_fee_items id="1">
+					<insert>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="121"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</insert>
+					<change>
+						<item level="1" id="2132" count="2"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="5"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="12"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="16"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="25"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="33"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="37"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="45"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="59"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="120"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="9"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="10"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="12"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="14"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="16"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="19"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="21"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="22"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="24"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="65"/>	<!-- Gemstone: A-grade -->
+					</change>
+					<remove>
+						<item level="1" id="2132" count="40"/>	<!-- Gemstone: B-grade -->
+						<item level="2" id="2132" count="80"/>	<!-- Gemstone: B-grade -->
+						<item level="3" id="2132" count="140"/>	<!-- Gemstone: B-grade -->
+						<item level="4" id="2132" count="210"/>	<!-- Gemstone: B-grade -->
+						<item level="5" id="2132" count="380"/>	<!-- Gemstone: B-grade -->
+						<item level="6" id="2132" count="530"/>	<!-- Gemstone: B-grade -->
+						<item level="7" id="2132" count="600"/>	<!-- Gemstone: B-grade -->
+						<item level="8" id="2132" count="710"/>	<!-- Gemstone: B-grade -->
+						<item level="9" id="2132" count="980"/>	<!-- Gemstone: B-grade -->
+						<item level="10" id="2132" count="1210"/>	<!-- Gemstone: B-grade -->
+						<item level="11" id="2133" count="89"/>	<!-- Gemstone: A-grade -->
+						<item level="12" id="2133" count="100"/>	<!-- Gemstone: A-grade -->
+						<item level="13" id="2133" count="119"/>	<!-- Gemstone: A-grade -->
+						<item level="14" id="2133" count="137"/>	<!-- Gemstone: A-grade -->
+						<item level="15" id="2133" count="161"/>	<!-- Gemstone: A-grade -->
+						<item level="16" id="2133" count="183"/>	<!-- Gemstone: A-grade -->
+						<item level="17" id="2133" count="209"/>	<!-- Gemstone: A-grade -->
+						<item level="18" id="2133" count="222"/>	<!-- Gemstone: A-grade -->
+						<item level="19" id="2133" count="242"/>	<!-- Gemstone: A-grade -->
+						<item level="20" id="2133" count="655"/>	<!-- Gemstone: A-grade -->
+					</remove>
+				</ensoul_fee_items>
+			</ensoul_fee_info>			
+		</ensoul_fee>
+	</ensoul_fee_data>
+	<ensoul_data>
+		<ensoul id="1" level="1" item_id="29818" extraction_item_id="29818">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="1"/>
+		</ensoul>
+		<ensoul id="2" level="2" item_id="29819" extraction_item_id="29819">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="2"/>
+		</ensoul>
+		<ensoul id="3" level="3" item_id="29820" extraction_item_id="29820">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="3"/>
+		</ensoul>
+		<ensoul id="4" level="4" item_id="29821" extraction_item_id="29821">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="4"/>
+		</ensoul>
+		<ensoul id="5" level="5" item_id="29822" extraction_item_id="29822">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="5"/>
+		</ensoul>
+		<ensoul id="6" level="6" item_id="29823" extraction_item_id="29823">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="6"/>
+		</ensoul>
+		<ensoul id="7" level="7" item_id="29824" extraction_item_id="29824">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="7"/>
+		</ensoul>
+		<ensoul id="8" level="8" item_id="29825" extraction_item_id="29825">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="8"/>
+		</ensoul>
+		<ensoul id="9" level="9" item_id="29826" extraction_item_id="29826">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="9"/>
+		</ensoul>
+		<ensoul id="10" level="10" item_id="29827" extraction_item_id="29827">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="10"/>
+		</ensoul>
+		<ensoul id="11" level="11" item_id="29828" extraction_item_id="29828">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="11"/>
+		</ensoul>
+		<ensoul id="12" level="12" item_id="29829" extraction_item_id="29829">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="12"/>
+		</ensoul>
+		<ensoul id="13" level="13" item_id="29830" extraction_item_id="29830">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="13"/>
+		</ensoul>
+		<ensoul id="14" level="14" item_id="29831" extraction_item_id="29831">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="14"/>
+		</ensoul>
+		<ensoul id="15" level="15" item_id="29832" extraction_item_id="29832">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="15"/>
+		</ensoul>
+		<ensoul id="16" level="16" item_id="29833" extraction_item_id="29833">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="16"/>
+		</ensoul>
+		<ensoul id="17" level="17" item_id="29834" extraction_item_id="29834">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="17"/>
+		</ensoul>
+		<ensoul id="18" level="18" item_id="29835" extraction_item_id="29835">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="18"/>
+		</ensoul>
+		<ensoul id="19" level="19" item_id="29836" extraction_item_id="29836">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="19"/>
+		</ensoul>
+		<ensoul id="20" level="20" item_id="29837" extraction_item_id="29837">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="55253" level="20"/>
+		</ensoul>
+		<ensoul id="21" level="1" item_id="29818" extraction_item_id="29818">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="1"/>
+		</ensoul>
+		<ensoul id="22" level="2" item_id="29819" extraction_item_id="29819">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="2"/>
+		</ensoul>
+		<ensoul id="23" level="3" item_id="29820" extraction_item_id="29820">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="3"/>
+		</ensoul>
+		<ensoul id="24" level="4" item_id="29821" extraction_item_id="29821">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="4"/>
+		</ensoul>
+		<ensoul id="25" level="5" item_id="29822" extraction_item_id="29822">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="5"/>
+		</ensoul>
+		<ensoul id="26" level="6" item_id="29823" extraction_item_id="29823">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="6"/>
+		</ensoul>
+		<ensoul id="27" level="7" item_id="29824" extraction_item_id="29824">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="7"/>
+		</ensoul>
+		<ensoul id="28" level="8" item_id="29825" extraction_item_id="29825">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="8"/>
+		</ensoul>
+		<ensoul id="29" level="9" item_id="29826" extraction_item_id="29826">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="9"/>
+		</ensoul>
+		<ensoul id="30" level="10" item_id="29827" extraction_item_id="29827">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="10"/>
+		</ensoul>
+		<ensoul id="31" level="11" item_id="29828" extraction_item_id="29828">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="11"/>
+		</ensoul>
+		<ensoul id="32" level="12" item_id="29829" extraction_item_id="29829">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="12"/>
+		</ensoul>
+		<ensoul id="33" level="13" item_id="29830" extraction_item_id="29830">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="13"/>
+		</ensoul>
+		<ensoul id="34" level="14" item_id="29831" extraction_item_id="29831">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="14"/>
+		</ensoul>
+		<ensoul id="35" level="15" item_id="29832" extraction_item_id="29832">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="15"/>
+		</ensoul>
+		<ensoul id="36" level="16" item_id="29833" extraction_item_id="29833">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="16"/>
+		</ensoul>
+		<ensoul id="37" level="17" item_id="29834" extraction_item_id="29834">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="17"/>
+		</ensoul>
+		<ensoul id="38" level="18" item_id="29835" extraction_item_id="29835">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="18"/>
+		</ensoul>
+		<ensoul id="39" level="19" item_id="29836" extraction_item_id="29836">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="19"/>
+		</ensoul>
+		<ensoul id="40" level="20" item_id="29837" extraction_item_id="29837">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="55254" level="20"/>
+		</ensoul>
+		<ensoul id="41" level="1" item_id="29838" extraction_item_id="29838">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="1"/>
+		</ensoul>
+		<ensoul id="42" level="2" item_id="29839" extraction_item_id="29839">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="2"/>
+		</ensoul>
+		<ensoul id="43" level="3" item_id="29840" extraction_item_id="29840">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="3"/>
+		</ensoul>
+		<ensoul id="44" level="4" item_id="29841" extraction_item_id="29841">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="4"/>
+		</ensoul>
+		<ensoul id="45" level="5" item_id="29842" extraction_item_id="29842">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="5"/>
+		</ensoul>
+		<ensoul id="46" level="6" item_id="29843" extraction_item_id="29843">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="6"/>
+		</ensoul>
+		<ensoul id="47" level="7" item_id="29844" extraction_item_id="29844">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="7"/>
+		</ensoul>
+		<ensoul id="48" level="8" item_id="29845" extraction_item_id="29845">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="8"/>
+		</ensoul>
+		<ensoul id="49" level="9" item_id="29846" extraction_item_id="29846">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="9"/>
+		</ensoul>
+		<ensoul id="50" level="10" item_id="29847" extraction_item_id="29847">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="10"/>
+		</ensoul>
+		<ensoul id="51" level="11" item_id="29848" extraction_item_id="29848">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="11"/>
+		</ensoul>
+		<ensoul id="52" level="12" item_id="29849" extraction_item_id="29849">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="12"/>
+		</ensoul>
+		<ensoul id="53" level="13" item_id="29850" extraction_item_id="29850">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="13"/>
+		</ensoul>
+		<ensoul id="54" level="14" item_id="29851" extraction_item_id="29851">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="14"/>
+		</ensoul>
+		<ensoul id="55" level="15" item_id="29852" extraction_item_id="29852">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="15"/>
+		</ensoul>
+		<ensoul id="56" level="16" item_id="29853" extraction_item_id="29853">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="16"/>
+		</ensoul>
+		<ensoul id="57" level="17" item_id="29854" extraction_item_id="29854">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="17"/>
+		</ensoul>
+		<ensoul id="58" level="18" item_id="29855" extraction_item_id="29855">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="18"/>
+		</ensoul>
+		<ensoul id="59" level="19" item_id="29856" extraction_item_id="29856">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="19"/>
+		</ensoul>
+		<ensoul id="60" level="20" item_id="29857" extraction_item_id="29857">	<!--Могущество Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="55255" level="20"/>
+		</ensoul>
+		<ensoul id="61" level="1" item_id="29838" extraction_item_id="29838">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="1"/>
+		</ensoul>
+		<ensoul id="62" level="2" item_id="29839" extraction_item_id="29839">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="2"/>
+		</ensoul>
+		<ensoul id="63" level="3" item_id="29840" extraction_item_id="29840">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="3"/>
+		</ensoul>
+		<ensoul id="64" level="4" item_id="29841" extraction_item_id="29841">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="4"/>
+		</ensoul>
+		<ensoul id="65" level="5" item_id="29842" extraction_item_id="29842">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="5"/>
+		</ensoul>
+		<ensoul id="66" level="6" item_id="29843" extraction_item_id="29843">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="6"/>
+		</ensoul>
+		<ensoul id="67" level="7" item_id="29844" extraction_item_id="29844">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="7"/>
+		</ensoul>
+		<ensoul id="68" level="8" item_id="29845" extraction_item_id="29845">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="8"/>
+		</ensoul>
+		<ensoul id="69" level="9" item_id="29846" extraction_item_id="29846">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="9"/>
+		</ensoul>
+		<ensoul id="70" level="10" item_id="29847" extraction_item_id="29847">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="10"/>
+		</ensoul>
+		<ensoul id="71" level="11" item_id="29848" extraction_item_id="29848">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="11"/>
+		</ensoul>
+		<ensoul id="72" level="12" item_id="29849" extraction_item_id="29849">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="12"/>
+		</ensoul>
+		<ensoul id="73" level="13" item_id="29850" extraction_item_id="29850">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="13"/>
+		</ensoul>
+		<ensoul id="74" level="14" item_id="29851" extraction_item_id="29851">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="14"/>
+		</ensoul>
+		<ensoul id="75" level="15" item_id="29852" extraction_item_id="29852">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="15"/>
+		</ensoul>
+		<ensoul id="76" level="16" item_id="29853" extraction_item_id="29853">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="16"/>
+		</ensoul>
+		<ensoul id="77" level="17" item_id="29854" extraction_item_id="29854">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="17"/>
+		</ensoul>
+		<ensoul id="78" level="18" item_id="29855" extraction_item_id="29855">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="18"/>
+		</ensoul>
+		<ensoul id="79" level="19" item_id="29856" extraction_item_id="29856">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="19"/>
+		</ensoul>
+		<ensoul id="80" level="20" item_id="29857" extraction_item_id="29857">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="55256" level="20"/>
+		</ensoul>
+		<ensoul id="81" level="1" item_id="29858" extraction_item_id="29858">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="1"/>
+		</ensoul>
+		<ensoul id="82" level="2" item_id="29859" extraction_item_id="29859">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="2"/>
+		</ensoul>
+		<ensoul id="83" level="3" item_id="29860" extraction_item_id="29860">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="3"/>
+		</ensoul>
+		<ensoul id="84" level="4" item_id="29861" extraction_item_id="29861">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="4"/>
+		</ensoul>
+		<ensoul id="85" level="5" item_id="29862" extraction_item_id="29862">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="5"/>
+		</ensoul>
+		<ensoul id="86" level="6" item_id="29863" extraction_item_id="29863">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="6"/>
+		</ensoul>
+		<ensoul id="87" level="7" item_id="29864" extraction_item_id="29864">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="7"/>
+		</ensoul>
+		<ensoul id="88" level="8" item_id="29865" extraction_item_id="29865">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="8"/>
+		</ensoul>
+		<ensoul id="89" level="9" item_id="29866" extraction_item_id="29866">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="9"/>
+		</ensoul>
+		<ensoul id="90" level="10" item_id="29867" extraction_item_id="29867">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="10"/>
+		</ensoul>
+		<ensoul id="91" level="11" item_id="29868" extraction_item_id="29868">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="11"/>
+		</ensoul>
+		<ensoul id="92" level="12" item_id="29869" extraction_item_id="29869">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="12"/>
+		</ensoul>
+		<ensoul id="93" level="13" item_id="29870" extraction_item_id="29870">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="13"/>
+		</ensoul>
+		<ensoul id="94" level="14" item_id="29871" extraction_item_id="29871">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="14"/>
+		</ensoul>
+		<ensoul id="95" level="15" item_id="29872" extraction_item_id="29872">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="15"/>
+		</ensoul>
+		<ensoul id="96" level="16" item_id="29873" extraction_item_id="29873">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="16"/>
+		</ensoul>
+		<ensoul id="97" level="17" item_id="29874" extraction_item_id="29874">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="17"/>
+		</ensoul>
+		<ensoul id="98" level="18" item_id="29875" extraction_item_id="29875">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="18"/>
+		</ensoul>
+		<ensoul id="99" level="19" item_id="29876" extraction_item_id="29876">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="19"/>
+		</ensoul>
+		<ensoul id="100" level="20" item_id="29877" extraction_item_id="29877">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="55257" level="20"/>
+		</ensoul>
+		<ensoul id="101" level="1" item_id="29858" extraction_item_id="29858">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="1"/>
+		</ensoul>
+		<ensoul id="102" level="2" item_id="29859" extraction_item_id="29859">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="2"/>
+		</ensoul>
+		<ensoul id="103" level="3" item_id="29860" extraction_item_id="29860">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="3"/>
+		</ensoul>
+		<ensoul id="104" level="4" item_id="29861" extraction_item_id="29861">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="4"/>
+		</ensoul>
+		<ensoul id="105" level="5" item_id="29862" extraction_item_id="29862">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="5"/>
+		</ensoul>
+		<ensoul id="106" level="6" item_id="29863" extraction_item_id="29863">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="6"/>
+		</ensoul>
+		<ensoul id="107" level="7" item_id="29864" extraction_item_id="29864">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="7"/>
+		</ensoul>
+		<ensoul id="108" level="8" item_id="29865" extraction_item_id="29865">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="8"/>
+		</ensoul>
+		<ensoul id="109" level="9" item_id="29866" extraction_item_id="29866">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="9"/>
+		</ensoul>
+		<ensoul id="110" level="10" item_id="29867" extraction_item_id="29867">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="10"/>
+		</ensoul>
+		<ensoul id="111" level="11" item_id="29868" extraction_item_id="29868">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="11"/>
+		</ensoul>
+		<ensoul id="112" level="12" item_id="29869" extraction_item_id="29869">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="12"/>
+		</ensoul>
+		<ensoul id="113" level="13" item_id="29870" extraction_item_id="29870">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="13"/>
+		</ensoul>
+		<ensoul id="114" level="14" item_id="29871" extraction_item_id="29871">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="14"/>
+		</ensoul>
+		<ensoul id="115" level="15" item_id="29872" extraction_item_id="29872">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="15"/>
+		</ensoul>
+		<ensoul id="116" level="16" item_id="29873" extraction_item_id="29873">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="16"/>
+		</ensoul>
+		<ensoul id="117" level="17" item_id="29874" extraction_item_id="29874">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="17"/>
+		</ensoul>
+		<ensoul id="118" level="18" item_id="29875" extraction_item_id="29875">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="18"/>
+		</ensoul>
+		<ensoul id="119" level="19" item_id="29876" extraction_item_id="29876">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="19"/>
+		</ensoul>
+		<ensoul id="120" level="20" item_id="29877" extraction_item_id="29877">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="55258" level="20"/>
+		</ensoul>
+		<ensoul id="121" level="1" item_id="29878" extraction_item_id="29878">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="1"/>
+		</ensoul>
+		<ensoul id="122" level="2" item_id="29879" extraction_item_id="29879">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="2"/>
+		</ensoul>
+		<ensoul id="123" level="3" item_id="29880" extraction_item_id="29880">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="3"/>
+		</ensoul>
+		<ensoul id="124" level="4" item_id="29881" extraction_item_id="29881">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="4"/>
+		</ensoul>
+		<ensoul id="125" level="5" item_id="29882" extraction_item_id="29882">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="5"/>
+		</ensoul>
+		<ensoul id="126" level="6" item_id="29883" extraction_item_id="29883">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="6"/>
+		</ensoul>
+		<ensoul id="127" level="7" item_id="29884" extraction_item_id="29884">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="7"/>
+		</ensoul>
+		<ensoul id="128" level="8" item_id="29885" extraction_item_id="29885">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="8"/>
+		</ensoul>
+		<ensoul id="129" level="9" item_id="29886" extraction_item_id="29886">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="9"/>
+		</ensoul>
+		<ensoul id="130" level="10" item_id="29887" extraction_item_id="29887">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="10"/>
+		</ensoul>
+		<ensoul id="131" level="11" item_id="29888" extraction_item_id="29888">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="11"/>
+		</ensoul>
+		<ensoul id="132" level="12" item_id="29889" extraction_item_id="29889">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="12"/>
+		</ensoul>
+		<ensoul id="133" level="13" item_id="29890" extraction_item_id="29890">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="13"/>
+		</ensoul>
+		<ensoul id="134" level="14" item_id="29891" extraction_item_id="29891">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="14"/>
+		</ensoul>
+		<ensoul id="135" level="15" item_id="29892" extraction_item_id="29892">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="15"/>
+		</ensoul>
+		<ensoul id="136" level="16" item_id="29893" extraction_item_id="29893">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="16"/>
+		</ensoul>
+		<ensoul id="137" level="17" item_id="29894" extraction_item_id="29894">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="17"/>
+		</ensoul>
+		<ensoul id="138" level="18" item_id="29895" extraction_item_id="29895">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="18"/>
+		</ensoul>
+		<ensoul id="139" level="19" item_id="29896" extraction_item_id="29896">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="19"/>
+		</ensoul>
+		<ensoul id="140" level="20" item_id="29897" extraction_item_id="29897">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="55259" level="20"/>
+		</ensoul>
+		<ensoul id="141" level="1" item_id="29878" extraction_item_id="29878">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="1"/>
+		</ensoul>
+		<ensoul id="142" level="2" item_id="29879" extraction_item_id="29879">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="2"/>
+		</ensoul>
+		<ensoul id="143" level="3" item_id="29880" extraction_item_id="29880">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="3"/>
+		</ensoul>
+		<ensoul id="144" level="4" item_id="29881" extraction_item_id="29881">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="4"/>
+		</ensoul>
+		<ensoul id="145" level="5" item_id="29882" extraction_item_id="29882">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="5"/>
+		</ensoul>
+		<ensoul id="146" level="6" item_id="29883" extraction_item_id="29883">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="6"/>
+		</ensoul>
+		<ensoul id="147" level="7" item_id="29884" extraction_item_id="29884">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="7"/>
+		</ensoul>
+		<ensoul id="148" level="8" item_id="29885" extraction_item_id="29885">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="8"/>
+		</ensoul>
+		<ensoul id="149" level="9" item_id="29886" extraction_item_id="29886">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="9"/>
+		</ensoul>
+		<ensoul id="150" level="10" item_id="29887" extraction_item_id="29887">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="10"/>
+		</ensoul>
+		<ensoul id="151" level="11" item_id="29888" extraction_item_id="29888">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="11"/>
+		</ensoul>
+		<ensoul id="152" level="12" item_id="29889" extraction_item_id="29889">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="12"/>
+		</ensoul>
+		<ensoul id="153" level="13" item_id="29890" extraction_item_id="29890">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="13"/>
+		</ensoul>
+		<ensoul id="154" level="14" item_id="29891" extraction_item_id="29891">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="14"/>
+		</ensoul>
+		<ensoul id="155" level="15" item_id="29892" extraction_item_id="29892">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="15"/>
+		</ensoul>
+		<ensoul id="156" level="16" item_id="29893" extraction_item_id="29893">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="16"/>
+		</ensoul>
+		<ensoul id="157" level="17" item_id="29894" extraction_item_id="29894">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="17"/>
+		</ensoul>
+		<ensoul id="158" level="18" item_id="29895" extraction_item_id="29895">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="18"/>
+		</ensoul>
+		<ensoul id="159" level="19" item_id="29896" extraction_item_id="29896">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="19"/>
+		</ensoul>
+		<ensoul id="160" level="20" item_id="29897" extraction_item_id="29897">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="55260" level="20"/>
+		</ensoul>
+		<ensoul id="161" level="1" item_id="29898" extraction_item_id="29898">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="1"/>
+		</ensoul>
+		<ensoul id="162" level="2" item_id="29899" extraction_item_id="29899">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="2"/>
+		</ensoul>
+		<ensoul id="163" level="3" item_id="29900" extraction_item_id="29900">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="3"/>
+		</ensoul>
+		<ensoul id="164" level="4" item_id="29901" extraction_item_id="29901">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="4"/>
+		</ensoul>
+		<ensoul id="165" level="5" item_id="29902" extraction_item_id="29902">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="5"/>
+		</ensoul>
+		<ensoul id="166" level="6" item_id="29903" extraction_item_id="29903">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="6"/>
+		</ensoul>
+		<ensoul id="167" level="7" item_id="29904" extraction_item_id="29904">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="7"/>
+		</ensoul>
+		<ensoul id="168" level="8" item_id="29905" extraction_item_id="29905">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="8"/>
+		</ensoul>
+		<ensoul id="169" level="9" item_id="29906" extraction_item_id="29906">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="9"/>
+		</ensoul>
+		<ensoul id="170" level="10" item_id="29907" extraction_item_id="29907">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="10"/>
+		</ensoul>
+		<ensoul id="171" level="11" item_id="29908" extraction_item_id="29908">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="11"/>
+		</ensoul>
+		<ensoul id="172" level="12" item_id="29909" extraction_item_id="29909">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="12"/>
+		</ensoul>
+		<ensoul id="173" level="13" item_id="29910" extraction_item_id="29910">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="13"/>
+		</ensoul>
+		<ensoul id="174" level="14" item_id="29911" extraction_item_id="29911">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="14"/>
+		</ensoul>
+		<ensoul id="175" level="15" item_id="29912" extraction_item_id="29912">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="15"/>
+		</ensoul>
+		<ensoul id="176" level="16" item_id="29913" extraction_item_id="29913">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="16"/>
+		</ensoul>
+		<ensoul id="177" level="17" item_id="29914" extraction_item_id="29914">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="17"/>
+		</ensoul>
+		<ensoul id="178" level="18" item_id="29915" extraction_item_id="29915">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="18"/>
+		</ensoul>
+		<ensoul id="179" level="19" item_id="29916" extraction_item_id="29916">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="19"/>
+		</ensoul>
+		<ensoul id="180" level="20" item_id="29917" extraction_item_id="29917">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="55261" level="20"/>
+		</ensoul>
+		<ensoul id="181" level="1" item_id="29898" extraction_item_id="29898">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="1"/>
+		</ensoul>
+		<ensoul id="182" level="2" item_id="29899" extraction_item_id="29899">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="2"/>
+		</ensoul>
+		<ensoul id="183" level="3" item_id="29900" extraction_item_id="29900">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="3"/>
+		</ensoul>
+		<ensoul id="184" level="4" item_id="29901" extraction_item_id="29901">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="4"/>
+		</ensoul>
+		<ensoul id="185" level="5" item_id="29902" extraction_item_id="29902">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="5"/>
+		</ensoul>
+		<ensoul id="186" level="6" item_id="29903" extraction_item_id="29903">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="6"/>
+		</ensoul>
+		<ensoul id="187" level="7" item_id="29904" extraction_item_id="29904">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="7"/>
+		</ensoul>
+		<ensoul id="188" level="8" item_id="29905" extraction_item_id="29905">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="8"/>
+		</ensoul>
+		<ensoul id="189" level="9" item_id="29906" extraction_item_id="29906">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="9"/>
+		</ensoul>
+		<ensoul id="190" level="10" item_id="29907" extraction_item_id="29907">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="10"/>
+		</ensoul>
+		<ensoul id="191" level="11" item_id="29908" extraction_item_id="29908">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="11"/>
+		</ensoul>
+		<ensoul id="192" level="12" item_id="29909" extraction_item_id="29909">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="12"/>
+		</ensoul>
+		<ensoul id="193" level="13" item_id="29910" extraction_item_id="29910">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="13"/>
+		</ensoul>
+		<ensoul id="194" level="14" item_id="29911" extraction_item_id="29911">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="14"/>
+		</ensoul>
+		<ensoul id="195" level="15" item_id="29912" extraction_item_id="29912">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="15"/>
+		</ensoul>
+		<ensoul id="196" level="16" item_id="29913" extraction_item_id="29913">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="16"/>
+		</ensoul>
+		<ensoul id="197" level="17" item_id="29914" extraction_item_id="29914">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="17"/>
+		</ensoul>
+		<ensoul id="198" level="18" item_id="29915" extraction_item_id="29915">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="18"/>
+		</ensoul>
+		<ensoul id="199" level="19" item_id="29916" extraction_item_id="29916">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="19"/>
+		</ensoul>
+		<ensoul id="200" level="20" item_id="29917" extraction_item_id="29917">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="55262" level="20"/>
+		</ensoul>
+		<ensoul id="201" level="1" item_id="29918" extraction_item_id="29918">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="1"/>
+		</ensoul>
+		<ensoul id="202" level="2" item_id="29919" extraction_item_id="29919">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="2"/>
+		</ensoul>
+		<ensoul id="203" level="3" item_id="29920" extraction_item_id="29920">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="3"/>
+		</ensoul>
+		<ensoul id="204" level="4" item_id="29921" extraction_item_id="29921">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="4"/>
+		</ensoul>
+		<ensoul id="205" level="5" item_id="29922" extraction_item_id="29922">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="5"/>
+		</ensoul>
+		<ensoul id="206" level="6" item_id="29923" extraction_item_id="29923">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="6"/>
+		</ensoul>
+		<ensoul id="207" level="7" item_id="29924" extraction_item_id="29924">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="7"/>
+		</ensoul>
+		<ensoul id="208" level="8" item_id="29925" extraction_item_id="29925">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="8"/>
+		</ensoul>
+		<ensoul id="209" level="9" item_id="29926" extraction_item_id="29926">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="9"/>
+		</ensoul>
+		<ensoul id="210" level="10" item_id="29927" extraction_item_id="29927">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="10"/>
+		</ensoul>
+		<ensoul id="211" level="11" item_id="29928" extraction_item_id="29928">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="11"/>
+		</ensoul>
+		<ensoul id="212" level="12" item_id="29929" extraction_item_id="29929">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="12"/>
+		</ensoul>
+		<ensoul id="213" level="13" item_id="29930" extraction_item_id="29930">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="13"/>
+		</ensoul>
+		<ensoul id="214" level="14" item_id="29931" extraction_item_id="29931">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="14"/>
+		</ensoul>
+		<ensoul id="215" level="15" item_id="29932" extraction_item_id="29932">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="15"/>
+		</ensoul>
+		<ensoul id="216" level="16" item_id="29933" extraction_item_id="29933">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="16"/>
+		</ensoul>
+		<ensoul id="217" level="17" item_id="29934" extraction_item_id="29934">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="17"/>
+		</ensoul>
+		<ensoul id="218" level="18" item_id="29935" extraction_item_id="29935">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="18"/>
+		</ensoul>
+		<ensoul id="219" level="19" item_id="29936" extraction_item_id="29936">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="19"/>
+		</ensoul>
+		<ensoul id="220" level="20" item_id="29937" extraction_item_id="29937">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="55263" level="20"/>
+		</ensoul>
+		<ensoul id="221" level="1" item_id="29918" extraction_item_id="29918">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="1"/>
+		</ensoul>
+		<ensoul id="222" level="2" item_id="29919" extraction_item_id="29919">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="2"/>
+		</ensoul>
+		<ensoul id="223" level="3" item_id="29920" extraction_item_id="29920">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="3"/>
+		</ensoul>
+		<ensoul id="224" level="4" item_id="29921" extraction_item_id="29921">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="4"/>
+		</ensoul>
+		<ensoul id="225" level="5" item_id="29922" extraction_item_id="29922">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="5"/>
+		</ensoul>
+		<ensoul id="226" level="6" item_id="29923" extraction_item_id="29923">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="6"/>
+		</ensoul>
+		<ensoul id="227" level="7" item_id="29924" extraction_item_id="29924">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="7"/>
+		</ensoul>
+		<ensoul id="228" level="8" item_id="29925" extraction_item_id="29925">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="8"/>
+		</ensoul>
+		<ensoul id="229" level="9" item_id="29926" extraction_item_id="29926">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="9"/>
+		</ensoul>
+		<ensoul id="230" level="10" item_id="29927" extraction_item_id="29927">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="10"/>
+		</ensoul>
+		<ensoul id="231" level="11" item_id="29928" extraction_item_id="29928">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="11"/>
+		</ensoul>
+		<ensoul id="232" level="12" item_id="29929" extraction_item_id="29929">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="12"/>
+		</ensoul>
+		<ensoul id="233" level="13" item_id="29930" extraction_item_id="29930">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="13"/>
+		</ensoul>
+		<ensoul id="234" level="14" item_id="29931" extraction_item_id="29931">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="14"/>
+		</ensoul>
+		<ensoul id="235" level="15" item_id="29932" extraction_item_id="29932">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="15"/>
+		</ensoul>
+		<ensoul id="236" level="16" item_id="29933" extraction_item_id="29933">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="16"/>
+		</ensoul>
+		<ensoul id="237" level="17" item_id="29934" extraction_item_id="29934">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="17"/>
+		</ensoul>
+		<ensoul id="238" level="18" item_id="29935" extraction_item_id="29935">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="18"/>
+		</ensoul>
+		<ensoul id="239" level="19" item_id="29936" extraction_item_id="29936">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="19"/>
+		</ensoul>
+		<ensoul id="240" level="20" item_id="29937" extraction_item_id="29937">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="55264" level="20"/>
+		</ensoul>
+		<ensoul id="241" level="1" item_id="29938" extraction_item_id="29938">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="1"/>
+		</ensoul>
+		<ensoul id="242" level="2" item_id="29939" extraction_item_id="29939">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="2"/>
+		</ensoul>
+		<ensoul id="243" level="3" item_id="29940" extraction_item_id="29940">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="3"/>
+		</ensoul>
+		<ensoul id="244" level="4" item_id="29941" extraction_item_id="29941">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="4"/>
+		</ensoul>
+		<ensoul id="245" level="5" item_id="29942" extraction_item_id="29942">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="5"/>
+		</ensoul>
+		<ensoul id="246" level="6" item_id="29943" extraction_item_id="29943">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="6"/>
+		</ensoul>
+		<ensoul id="247" level="7" item_id="29944" extraction_item_id="29944">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="7"/>
+		</ensoul>
+		<ensoul id="248" level="8" item_id="29945" extraction_item_id="29945">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="8"/>
+		</ensoul>
+		<ensoul id="249" level="9" item_id="29946" extraction_item_id="29946">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="9"/>
+		</ensoul>
+		<ensoul id="250" level="10" item_id="29947" extraction_item_id="29947">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="10"/>
+		</ensoul>
+		<ensoul id="251" level="11" item_id="29948" extraction_item_id="29948">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="11"/>
+		</ensoul>
+		<ensoul id="252" level="12" item_id="29949" extraction_item_id="29949">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="12"/>
+		</ensoul>
+		<ensoul id="253" level="13" item_id="29950" extraction_item_id="29950">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="13"/>
+		</ensoul>
+		<ensoul id="254" level="14" item_id="29951" extraction_item_id="29951">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="14"/>
+		</ensoul>
+		<ensoul id="255" level="15" item_id="29952" extraction_item_id="29952">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="15"/>
+		</ensoul>
+		<ensoul id="256" level="16" item_id="29953" extraction_item_id="29953">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="16"/>
+		</ensoul>
+		<ensoul id="257" level="17" item_id="29954" extraction_item_id="29954">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="17"/>
+		</ensoul>
+		<ensoul id="258" level="18" item_id="29955" extraction_item_id="29955">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="18"/>
+		</ensoul>
+		<ensoul id="259" level="19" item_id="29956" extraction_item_id="29956">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="19"/>
+		</ensoul>
+		<ensoul id="260" level="20" item_id="29957" extraction_item_id="29957">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="55265" level="20"/>
+		</ensoul>
+		<ensoul id="261" level="1" item_id="29938" extraction_item_id="29938">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="1"/>
+		</ensoul>
+		<ensoul id="262" level="2" item_id="29939" extraction_item_id="29939">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="2"/>
+		</ensoul>
+		<ensoul id="263" level="3" item_id="29940" extraction_item_id="29940">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="3"/>
+		</ensoul>
+		<ensoul id="264" level="4" item_id="29941" extraction_item_id="29941">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="4"/>
+		</ensoul>
+		<ensoul id="265" level="5" item_id="29942" extraction_item_id="29942">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="5"/>
+		</ensoul>
+		<ensoul id="266" level="6" item_id="29943" extraction_item_id="29943">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="6"/>
+		</ensoul>
+		<ensoul id="267" level="7" item_id="29944" extraction_item_id="29944">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="7"/>
+		</ensoul>
+		<ensoul id="268" level="8" item_id="29945" extraction_item_id="29945">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="8"/>
+		</ensoul>
+		<ensoul id="269" level="9" item_id="29946" extraction_item_id="29946">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="9"/>
+		</ensoul>
+		<ensoul id="270" level="10" item_id="29947" extraction_item_id="29947">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="10"/>
+		</ensoul>
+		<ensoul id="271" level="11" item_id="29948" extraction_item_id="29948">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="11"/>
+		</ensoul>
+		<ensoul id="272" level="12" item_id="29949" extraction_item_id="29949">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="12"/>
+		</ensoul>
+		<ensoul id="273" level="13" item_id="29950" extraction_item_id="29950">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="13"/>
+		</ensoul>
+		<ensoul id="274" level="14" item_id="29951" extraction_item_id="29951">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="14"/>
+		</ensoul>
+		<ensoul id="275" level="15" item_id="29952" extraction_item_id="29952">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="15"/>
+		</ensoul>
+		<ensoul id="276" level="16" item_id="29953" extraction_item_id="29953">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="16"/>
+		</ensoul>
+		<ensoul id="277" level="17" item_id="29954" extraction_item_id="29954">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="17"/>
+		</ensoul>
+		<ensoul id="278" level="18" item_id="29955" extraction_item_id="29955">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="18"/>
+		</ensoul>
+		<ensoul id="279" level="19" item_id="29956" extraction_item_id="29956">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="19"/>
+		</ensoul>
+		<ensoul id="280" level="20" item_id="29957" extraction_item_id="29957">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="55266" level="20"/>
+		</ensoul>
+		<ensoul id="281" level="1" item_id="29958" extraction_item_id="29958">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="1"/>
+		</ensoul>
+		<ensoul id="282" level="2" item_id="29959" extraction_item_id="29959">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="2"/>
+		</ensoul>
+		<ensoul id="283" level="3" item_id="29960" extraction_item_id="29960">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="3"/>
+		</ensoul>
+		<ensoul id="284" level="4" item_id="29961" extraction_item_id="29961">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="4"/>
+		</ensoul>
+		<ensoul id="285" level="5" item_id="29962" extraction_item_id="29962">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="5"/>
+		</ensoul>
+		<ensoul id="286" level="6" item_id="29963" extraction_item_id="29963">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="6"/>
+		</ensoul>
+		<ensoul id="287" level="7" item_id="29964" extraction_item_id="29964">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="7"/>
+		</ensoul>
+		<ensoul id="288" level="8" item_id="29965" extraction_item_id="29965">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="8"/>
+		</ensoul>
+		<ensoul id="289" level="9" item_id="29966" extraction_item_id="29966">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="9"/>
+		</ensoul>
+		<ensoul id="290" level="10" item_id="29967" extraction_item_id="29967">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="10"/>
+		</ensoul>
+		<ensoul id="291" level="11" item_id="29968" extraction_item_id="29968">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="11"/>
+		</ensoul>
+		<ensoul id="292" level="12" item_id="29969" extraction_item_id="29969">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="12"/>
+		</ensoul>
+		<ensoul id="293" level="13" item_id="29970" extraction_item_id="29970">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="13"/>
+		</ensoul>
+		<ensoul id="294" level="14" item_id="29971" extraction_item_id="29971">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="14"/>
+		</ensoul>
+		<ensoul id="295" level="15" item_id="29972" extraction_item_id="29972">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="15"/>
+		</ensoul>
+		<ensoul id="296" level="16" item_id="29973" extraction_item_id="29973">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="16"/>
+		</ensoul>
+		<ensoul id="297" level="17" item_id="29974" extraction_item_id="29974">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="17"/>
+		</ensoul>
+		<ensoul id="298" level="18" item_id="29975" extraction_item_id="29975">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="18"/>
+		</ensoul>
+		<ensoul id="299" level="19" item_id="29976" extraction_item_id="29976">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="19"/>
+		</ensoul>
+		<ensoul id="300" level="20" item_id="29977" extraction_item_id="29977">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="55267" level="20"/>
+		</ensoul>
+		<ensoul id="301" level="1" item_id="29958" extraction_item_id="29958">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="1"/>
+		</ensoul>
+		<ensoul id="302" level="2" item_id="29959" extraction_item_id="29959">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="2"/>
+		</ensoul>
+		<ensoul id="303" level="3" item_id="29960" extraction_item_id="29960">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="3"/>
+		</ensoul>
+		<ensoul id="304" level="4" item_id="29961" extraction_item_id="29961">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="4"/>
+		</ensoul>
+		<ensoul id="305" level="5" item_id="29962" extraction_item_id="29962">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="5"/>
+		</ensoul>
+		<ensoul id="306" level="6" item_id="29963" extraction_item_id="29963">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="6"/>
+		</ensoul>
+		<ensoul id="307" level="7" item_id="29964" extraction_item_id="29964">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="7"/>
+		</ensoul>
+		<ensoul id="308" level="8" item_id="29965" extraction_item_id="29965">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="8"/>
+		</ensoul>
+		<ensoul id="309" level="9" item_id="29966" extraction_item_id="29966">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="9"/>
+		</ensoul>
+		<ensoul id="310" level="10" item_id="29967" extraction_item_id="29967">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="10"/>
+		</ensoul>
+		<ensoul id="311" level="11" item_id="29968" extraction_item_id="29968">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="11"/>
+		</ensoul>
+		<ensoul id="312" level="12" item_id="29969" extraction_item_id="29969">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="12"/>
+		</ensoul>
+		<ensoul id="313" level="13" item_id="29970" extraction_item_id="29970">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="13"/>
+		</ensoul>
+		<ensoul id="314" level="14" item_id="29971" extraction_item_id="29971">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="14"/>
+		</ensoul>
+		<ensoul id="315" level="15" item_id="29972" extraction_item_id="29972">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="15"/>
+		</ensoul>
+		<ensoul id="316" level="16" item_id="29973" extraction_item_id="29973">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="16"/>
+		</ensoul>
+		<ensoul id="317" level="17" item_id="29974" extraction_item_id="29974">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="17"/>
+		</ensoul>
+		<ensoul id="318" level="18" item_id="29975" extraction_item_id="29975">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="18"/>
+		</ensoul>
+		<ensoul id="319" level="19" item_id="29976" extraction_item_id="29976">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="19"/>
+		</ensoul>
+		<ensoul id="320" level="20" item_id="29977" extraction_item_id="29977">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="55268" level="20"/>
+		</ensoul>
+
+		<!--супер руны-->
+		<ensoul id="407" level="8" item_id="90541" extraction_item_id="90541">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="45002" level="8"/>
+		</ensoul>
+		<ensoul id="408" level="9" item_id="90542" extraction_item_id="90542">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="45002" level="9"/>
+		</ensoul>
+		<ensoul id="409" level="10" item_id="90543" extraction_item_id="90543">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="45002" level="10"/>
+		</ensoul>
+		<ensoul id="410" level="11" item_id="90544" extraction_item_id="90544">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="45002" level="11"/>
+		</ensoul>
+		<ensoul id="411" level="12" item_id="90545" extraction_item_id="90545">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="45002" level="12"/>
+		</ensoul>
+		<ensoul id="412" level="13" item_id="90546" extraction_item_id="90546">	<!--Защита Сигеля-->
+			<!--Увеличивает Физ. Защ.-->
+			<skill id="45002" level="13"/>
+		</ensoul>
+		<ensoul id="427" level="8" item_id="90541" extraction_item_id="90541">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="45003" level="8"/>
+		</ensoul>
+		<ensoul id="428" level="9" item_id="90542" extraction_item_id="90542">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="45003" level="9"/>
+		</ensoul>
+		<ensoul id="429" level="10" item_id="90543" extraction_item_id="90543">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="45003" level="10"/>
+		</ensoul>
+		<ensoul id="430" level="11" item_id="90544" extraction_item_id="90544">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="45003" level="11"/>
+		</ensoul>
+		<ensoul id="431" level="12" item_id="90545" extraction_item_id="90545">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="45003" level="12"/>
+		</ensoul>
+		<ensoul id="432" level="13" item_id="90546" extraction_item_id="90546">	<!--Здоровье Сигеля-->
+			<!--Увеличивает Макс. HP.-->
+			<skill id="45003" level="13"/>
+		</ensoul>
+		
+		<!--Тир-->
+
+		<ensoul id="447" level="8" item_id="90561" extraction_item_id="90561">	<!--Стан Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="45001" level="8"/>
+		</ensoul>
+		<ensoul id="448" level="9" item_id="90562" extraction_item_id="90562">	<!--Стан Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="45001" level="9"/>
+		</ensoul>
+		<ensoul id="449" level="10" item_id="90563" extraction_item_id="90563">	<!--Стан Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="45001" level="10"/>
+		</ensoul>
+		<ensoul id="450" level="11" item_id="90564" extraction_item_id="90564">	<!--Стан Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="45001" level="11"/>
+		</ensoul>
+		<ensoul id="451" level="12" item_id="90565" extraction_item_id="90565">	<!--Стан Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="45001" level="12"/>
+		</ensoul>
+		<ensoul id="452" level="13" item_id="90566" extraction_item_id="90566">	<!--Стан Тира-->
+			<!--Увеличивает Физ. Атк.-->
+			<skill id="45001" level="13"/>
+		</ensoul>
+		<ensoul id="467" level="8" item_id="90561" extraction_item_id="90561">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="45004" level="8"/>
+		</ensoul>
+		<ensoul id="468" level="9" item_id="90562" extraction_item_id="90562">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="45004" level="9"/>
+		</ensoul>
+		<ensoul id="469" level="10" item_id="90563" extraction_item_id="90563">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="45004" level="10"/>
+		</ensoul>
+		<ensoul id="470" level="11" item_id="90564" extraction_item_id="90564">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="45004" level="11"/>
+		</ensoul>
+		<ensoul id="471" level="12" item_id="90565" extraction_item_id="90565">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="45004" level="12"/>
+		</ensoul>
+		<ensoul id="472" level="13" item_id="90566" extraction_item_id="90566">	<!--Ускорение Тира-->
+			<!--Увеличивает Скор. Атк.-->
+			<skill id="45004" level="13"/>
+		</ensoul>
+
+		<!--Одал-->
+
+		<ensoul id="487" level="8" item_id="90581" extraction_item_id="90581">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="45005" level="8"/>
+		</ensoul>
+		<ensoul id="488" level="9" item_id="90582" extraction_item_id="90582">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="45005" level="9"/>
+		</ensoul>
+		<ensoul id="489" level="10" item_id="90583" extraction_item_id="90583">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="45005" level="10"/>
+		</ensoul>
+		<ensoul id="490" level="11" item_id="90584" extraction_item_id="90584">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="45005" level="11"/>
+		</ensoul>
+		<ensoul id="491" level="12" item_id="90585" extraction_item_id="90585">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="45005" level="12"/>
+		</ensoul>
+		<ensoul id="492" level="13" item_id="90586" extraction_item_id="90586">	<!--Фокусировка Одала-->
+			<!--Увеличивает Шанс Физ. Крит. Атк.-->
+			<skill id="45005" level="13"/>
+		</ensoul>
+		<ensoul id="507" level="8" item_id="90581" extraction_item_id="90581">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="45006" level="8"/>
+		</ensoul>
+		<ensoul id="508" level="9" item_id="90582" extraction_item_id="90582">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="45006" level="9"/>
+		</ensoul>
+		<ensoul id="509" level="10" item_id="90583" extraction_item_id="90583">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="45006" level="10"/>
+		</ensoul>
+		<ensoul id="510" level="11" item_id="90584" extraction_item_id="90584">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="45006" level="11"/>
+		</ensoul>
+		<ensoul id="511" level="12" item_id="90585" extraction_item_id="90585">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="45006" level="12"/>
+		</ensoul>
+		<ensoul id="512" level="13" item_id="90586" extraction_item_id="90586">	<!--Крит. Урон Одала-->
+			<!--Увеличивает Силу Крит. Атк. -->
+			<skill id="45006" level="13"/>
+		</ensoul>
+
+		<!--Эура-->
+
+		<ensoul id="527" level="8" item_id="90601" extraction_item_id="90601">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="45007" level="8"/>
+		</ensoul>
+		<ensoul id="528" level="9" item_id="90602" extraction_item_id="90602">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="45007" level="9"/>
+		</ensoul>
+		<ensoul id="529" level="10" item_id="90603" extraction_item_id="90603">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="45007" level="10"/>
+		</ensoul>
+		<ensoul id="530" level="11" item_id="90604" extraction_item_id="90604">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="45007" level="11"/>
+		</ensoul>
+		<ensoul id="531" level="12" item_id="90605" extraction_item_id="90605">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="45007" level="12"/>
+		</ensoul>
+		<ensoul id="532" level="13" item_id="90606" extraction_item_id="90606">	<!--Легкая походка Эура-->
+			<!--Увеличивает Скорость.-->
+			<skill id="45007" level="13"/>
+		</ensoul>
+		<ensoul id="547" level="8" item_id="90601" extraction_item_id="90601">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="45008" level="8"/>
+		</ensoul>
+		<ensoul id="548" level="9" item_id="90602" extraction_item_id="90602">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="45008" level="9"/>
+		</ensoul>
+		<ensoul id="549" level="10" item_id="90603" extraction_item_id="90603">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="45008" level="10"/>
+		</ensoul>
+		<ensoul id="550" level="11" item_id="90604" extraction_item_id="90604">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="45008" level="11"/>
+		</ensoul>
+		<ensoul id="551" level="12" item_id="90605" extraction_item_id="90605">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="45008" level="12"/>
+		</ensoul>
+		<ensoul id="552" level="13" item_id="90606" extraction_item_id="90606">	<!--Наведение Эура-->
+			<!--Увеличивает Точность.-->
+			<skill id="45008" level="13"/>
+		</ensoul>
+
+		<!--Фео-->
+
+		<ensoul id="567" level="8" item_id="90621" extraction_item_id="90621">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="45009" level="8"/>
+		</ensoul>
+		<ensoul id="568" level="9" item_id="90622" extraction_item_id="90622">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="45009" level="9"/>
+		</ensoul>
+		<ensoul id="569" level="10" item_id="90623" extraction_item_id="90623">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="45009" level="10"/>
+		</ensoul>
+		<ensoul id="570" level="11" item_id="90624" extraction_item_id="90624">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="45009" level="11"/>
+		</ensoul>
+		<ensoul id="571" level="12" item_id="90625" extraction_item_id="90625">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="45009" level="12"/>
+		</ensoul>
+		<ensoul id="572" level="13" item_id="90626" extraction_item_id="90626">	<!--Маг. Сила Фео-->
+			<!--Увеличивает Маг. Атк. и расход MP.-->
+			<skill id="45009" level="13"/>
+		</ensoul>
+		<ensoul id="587" level="8" item_id="90621" extraction_item_id="90621">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="45010" level="8"/>
+		</ensoul>
+		<ensoul id="588" level="9" item_id="90622" extraction_item_id="90622">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="45010" level="9"/>
+		</ensoul>
+		<ensoul id="589" level="10" item_id="90623" extraction_item_id="90623">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="45010" level="10"/>
+		</ensoul>
+		<ensoul id="590" level="11" item_id="90624" extraction_item_id="90624">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="45010" level="11"/>
+		</ensoul>
+		<ensoul id="591" level="12" item_id="90625" extraction_item_id="90625">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="45010" level="12"/>
+		</ensoul>
+		<ensoul id="592" level="13" item_id="90626" extraction_item_id="90626">	<!--Воодушевление Фео-->
+			<!--Увеличивает Маг. Атк.-->
+			<skill id="45010" level="13"/>
+		</ensoul>
+
+		<!--Иса-->
+
+		<ensoul id="607" level="8" item_id="90641" extraction_item_id="90641">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="45011" level="8"/>
+		</ensoul>
+		<ensoul id="608" level="9" item_id="90642" extraction_item_id="90642">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="45011" level="9"/>
+		</ensoul>
+		<ensoul id="609" level="10" item_id="90643" extraction_item_id="90643">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="45011" level="10"/>
+		</ensoul>
+		<ensoul id="610" level="11" item_id="90644" extraction_item_id="90644">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="45011" level="11"/>
+		</ensoul>
+		<ensoul id="611" level="12" item_id="90645" extraction_item_id="90645">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="45011" level="12"/>
+		</ensoul>
+		<ensoul id="612" level="13" item_id="90646" extraction_item_id="90646">	<!--Магическая Регенерация Иса-->
+			<!--Увеличивает Бонус восстановления MP.-->
+			<skill id="45011" level="13"/>
+		</ensoul>
+
+		<ensoul id="627" level="8" item_id="90641" extraction_item_id="90641">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="45012" level="8"/>
+		</ensoul>
+		<ensoul id="628" level="9" item_id="90642" extraction_item_id="90642">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="45012" level="9"/>
+		</ensoul>
+		<ensoul id="629" level="10" item_id="90643" extraction_item_id="90643">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="45012" level="10"/>
+		</ensoul>
+		<ensoul id="630" level="11" item_id="90644" extraction_item_id="90644">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="45012" level="11"/>
+		</ensoul>
+		<ensoul id="631" level="12" item_id="90645" extraction_item_id="90645">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="45012" level="12"/>
+		</ensoul>
+		<ensoul id="632" level="13" item_id="90646" extraction_item_id="90646">	<!--Увеличение Маны Иса-->
+			<!--Увеличивает Макс. MP.-->
+			<skill id="45012" level="13"/>
+		</ensoul>
+
+		<!--Венью-->
+
+		<ensoul id="647" level="8" item_id="90661" extraction_item_id="90661">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="45013" level="8"/>
+		</ensoul>
+		<ensoul id="648" level="9" item_id="90662" extraction_item_id="90662">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="45013" level="9"/>
+		</ensoul>
+		<ensoul id="649" level="10" item_id="90663" extraction_item_id="90663">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="45013" level="10"/>
+		</ensoul>
+		<ensoul id="650" level="11" item_id="90664" extraction_item_id="90664">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="45013" level="11"/>
+		</ensoul>
+		<ensoul id="651" level="12" item_id="90665" extraction_item_id="90665">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="45013" level="12"/>
+		</ensoul>
+		<ensoul id="652" level="13" item_id="90666" extraction_item_id="90666">	<!--Проницательность Веньо-->
+			<!--Увеличивает Скор. Маг.-->
+			<skill id="45013" level="13"/>
+		</ensoul>
+
+		<ensoul id="667" level="8" item_id="90661" extraction_item_id="90661">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="45014" level="8"/>
+		</ensoul>
+		<ensoul id="668" level="9" item_id="90662" extraction_item_id="90662">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="45014" level="9"/>
+		</ensoul>
+		<ensoul id="669" level="10" item_id="90663" extraction_item_id="90663">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="45014" level="10"/>
+		</ensoul>
+		<ensoul id="670" level="11" item_id="90664" extraction_item_id="90664">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="45014" level="11"/>
+		</ensoul>
+		<ensoul id="671" level="12" item_id="90665" extraction_item_id="90665">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="45014" level="12"/>
+		</ensoul>
+		<ensoul id="672" level="13" item_id="90666" extraction_item_id="90666">	<!--Легкость Веньо-->
+			<!--Увеличивает Лимит Веса.-->
+			<skill id="45014" level="13"/>
+		</ensoul>
+		
+		<!--Альгиз-->
+
+
+		<ensoul id="687" level="8" item_id="90681" extraction_item_id="90681">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="45015" level="8"/>
+		</ensoul>
+		<ensoul id="688" level="9" item_id="90682" extraction_item_id="90682">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="45015" level="9"/>
+		</ensoul>
+		<ensoul id="689" level="10" item_id="90683" extraction_item_id="90683">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="45015" level="10"/>
+		</ensoul>
+		<ensoul id="690" level="11" item_id="90684" extraction_item_id="90684">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="45015" level="11"/>
+		</ensoul>
+		<ensoul id="691" level="12" item_id="90685" extraction_item_id="90685">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="45015" level="12"/>
+		</ensoul>
+		<ensoul id="692" level="13" item_id="90686" extraction_item_id="90686">	<!--Восстановление Альгиза-->
+			<!--Увеличивает Бонус восстановления HP.-->
+			<skill id="45015" level="13"/>
+		</ensoul>
+
+		<ensoul id="707" level="8" item_id="90681" extraction_item_id="90681">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="45016" level="8"/>
+		</ensoul>
+		<ensoul id="708" level="9" item_id="90682" extraction_item_id="90682">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="45016" level="9"/>
+		</ensoul>
+		<ensoul id="709" level="10" item_id="90683" extraction_item_id="90683">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="45016" level="10"/>
+		</ensoul>
+		<ensoul id="710" level="11" item_id="90684" extraction_item_id="90684">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="45016" level="11"/>
+		</ensoul>
+		<ensoul id="711" level="12" item_id="90685" extraction_item_id="90685">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="45016" level="12"/>
+		</ensoul>
+		<ensoul id="712" level="13" item_id="90686" extraction_item_id="90686">	<!--Целительство Альгиза-->
+			<!--Увеличивает получаемое лечение.-->
+			<skill id="45016" level="13"/>
+		</ensoul>
+		<ensoul id="1001" level="1" item_id="91163" extraction_item_id="95803">	<!--Руна Анаким 1 -->
+			<!---->
+			<skill id="54034" level="1"/>
+		</ensoul>
+		<ensoul id="1002" level="2" item_id="91164" extraction_item_id="95804">	<!--Руна Анаким 2 -->
+			<!---->
+			<skill id="54034" level="2"/>
+		</ensoul>
+		<ensoul id="1003" level="3" item_id="91165" extraction_item_id="95805">	<!--Руна Анаким 3 -->
+			<!---->
+			<skill id="54034" level="3"/>
+		</ensoul>
+		<ensoul id="1004" level="4" item_id="91166" extraction_item_id="95806">	<!--Руна Анаким 4 -->
+			<!---->
+			<skill id="54034" level="4"/>
+		</ensoul>
+		<ensoul id="1005" level="5" item_id="91167" extraction_item_id="95807">	<!--Руна Анаким 5 -->
+			<!---->
+			<skill id="54034" level="5"/>
+		</ensoul>
+		<ensoul id="1006" level="6" item_id="91168" extraction_item_id="95808">	<!--Руна Анаким 6 -->
+			<!---->
+			<skill id="54034" level="6"/>
+		</ensoul>
+		<ensoul id="1007" level="7" item_id="91169" extraction_item_id="95809">	<!--Руна Анаким 7 -->
+			<!---->
+			<skill id="54034" level="7"/>
+		</ensoul>
+		<ensoul id="1008" level="8" item_id="91170" extraction_item_id="95810">	<!--Руна Анаким 8 -->
+			<!---->
+			<skill id="54034" level="8"/>
+		</ensoul>
+		<ensoul id="1009" level="9" item_id="91171" extraction_item_id="95811">	<!--Руна Анаким 9 -->
+			<!---->
+			<skill id="54034" level="9"/>
+		</ensoul>
+		<ensoul id="1010" level="10" item_id="91172" extraction_item_id="95812">	<!--Руна Анаким 10 -->
+			<!---->
+			<skill id="54034" level="10"/>
+		</ensoul>
+		<ensoul id="1011" level="1" item_id="91173" extraction_item_id="95803">	<!-- Руна Лилит 1 -->
+			<!---->
+			<skill id="54035" level="1"/>
+		</ensoul>
+		<ensoul id="1012" level="2" item_id="91174" extraction_item_id="95804">	<!--Руна Лилит 2 -->
+			<!---->
+			<skill id="54035" level="2"/>
+		</ensoul>
+		<ensoul id="1013" level="3" item_id="91175" extraction_item_id="95805">	<!--Руна Лилит 3 -->
+			<!---->
+			<skill id="54035" level="3"/>
+		</ensoul>
+		<ensoul id="1014" level="4" item_id="91176" extraction_item_id="95806">	<!--Руна Лилит 4 -->
+			<!---->
+			<skill id="54035" level="4"/>
+		</ensoul>
+		<ensoul id="1015" level="5" item_id="91177" extraction_item_id="95807">	<!--Руна Лилит 5 -->
+			<!---->
+			<skill id="54035" level="5"/>
+		</ensoul>
+		<ensoul id="1016" level="6" item_id="91178" extraction_item_id="95808">	<!--Руна Лилит 6 -->
+			<!---->
+			<skill id="54035" level="6"/>
+		</ensoul>
+		<ensoul id="1017" level="7" item_id="91179" extraction_item_id="95809">	<!--Руна Лилит 7 -->
+			<!---->
+			<skill id="54035" level="7"/>
+		</ensoul>
+		<ensoul id="1018" level="8" item_id="91180" extraction_item_id="95810">	<!--Руна Лилит 8 -->
+			<!---->
+			<skill id="54035" level="8"/>
+		</ensoul>
+		<ensoul id="1019" level="9" item_id="91181" extraction_item_id="95811">	<!--Руна Лилит 9 -->
+			<!---->
+			<skill id="54035" level="9"/>
+		</ensoul>
+		<ensoul id="1020" level="10" item_id="91182" extraction_item_id="95812">	<!--Руна Лилит 10-->
+			<!---->
+			<skill id="54035" level="10"/>
+		</ensoul>
+		<ensoul id="1021" level="11" item_id="92920" extraction_item_id="95813">	<!--Lilith's Soul Crystal Lv. 11-->
+			<!---->
+			<skill id="54035" level="11"/>
+		</ensoul>
+		<ensoul id="1022" level="12" item_id="92921" extraction_item_id="95814">	<!--Lilith's Soul Crystal Lv. 12-->
+			<!---->
+			<skill id="54035" level="12"/>
+		</ensoul>
+		<ensoul id="1023" level="13" item_id="92922" extraction_item_id="95815">	<!--Lilith's Soul Crystal Lv. 13-->
+			<!---->
+			<skill id="54035" level="13"/>
+		</ensoul>
+		<ensoul id="1024" level="14" item_id="92923" extraction_item_id="95816">	<!--Lilith's Soul Crystal Lv. 14-->
+			<!---->
+			<skill id="54035" level="14"/>
+		</ensoul>
+		<ensoul id="1025" level="15" item_id="92924" extraction_item_id="95817">	<!--Lilith's Soul Crystal Lv. 15-->
+			<!---->
+			<skill id="54035" level="15"/>
+		</ensoul>
+		<ensoul id="1026" level="11" item_id="92925" extraction_item_id="95813">	<!--Anakim's Soul Crystal Lv. 11-->
+			<!---->
+			<skill id="54034" level="11"/>
+		</ensoul>
+		<ensoul id="1027" level="12" item_id="92926" extraction_item_id="95814">	<!--Anakim's Soul Crystal Lv. 12-->
+			<!---->
+			<skill id="54034" level="12"/>
+		</ensoul>
+		<ensoul id="1028" level="13" item_id="92927" extraction_item_id="95815">	<!--Anakim's Soul Crystal Lv. 13-->
+			<!---->
+			<skill id="54034" level="13"/>
+		</ensoul>
+		<ensoul id="1029" level="14" item_id="92928" extraction_item_id="95816">	<!--Anakim's Soul Crystal Lv. 14-->
+			<!---->
+			<skill id="54034" level="14"/>
+		</ensoul>
+		<ensoul id="1030" level="15" item_id="92929" extraction_item_id="95817">	<!--Anakim's Soul Crystal Lv. 15-->
+			<!---->
+			<skill id="54034" level="15"/>
+		</ensoul>
+		<!-- Aden's Soul Crystals -->
+		<ensoul id="1101" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Health Increase-->
+			<skill id="82000" level="1"/>
+		</ensoul>
+		<ensoul id="1102" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Health Increase-->
+			<skill id="82000" level="2"/>
+		</ensoul>
+		<ensoul id="1103" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Health Increase-->
+			<skill id="82000" level="3"/>
+		</ensoul>
+		<ensoul id="1104" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Health Increase-->
+			<skill id="82000" level="4"/>
+		</ensoul>
+		<ensoul id="1105" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Health Increase-->
+			<skill id="82000" level="5"/>
+		</ensoul>
+		<ensoul id="1106" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Health Increase-->
+			<skill id="82000" level="6"/>
+		</ensoul>
+		<ensoul id="1107" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Health Increase-->
+			<skill id="82000" level="7"/>
+		</ensoul>
+		<ensoul id="1108" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Health Increase-->
+			<skill id="82000" level="8"/>
+		</ensoul>
+		<ensoul id="1109" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Health Increase-->
+			<skill id="82000" level="9"/>
+		</ensoul>
+		<ensoul id="1110" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Health Increase-->
+			<skill id="82000" level="10"/>
+		</ensoul>
+		<ensoul id="1111" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Health Increase-->
+			<skill id="82000" level="11"/>
+		</ensoul>
+		<ensoul id="1112" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Health Increase-->
+			<skill id="82000" level="12"/>
+		</ensoul>
+		<ensoul id="1113" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Health Increase-->
+			<skill id="82000" level="13"/>
+		</ensoul>
+		<ensoul id="1114" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Health Increase-->
+			<skill id="82000" level="14"/>
+		</ensoul>
+		<ensoul id="1115" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Health Increase-->
+			<skill id="82000" level="15"/>
+		</ensoul>
+		<ensoul id="1116" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Health Increase-->
+			<skill id="82000" level="16"/>
+		</ensoul>
+		<ensoul id="1117" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Health Increase-->
+			<skill id="82000" level="17"/>
+		</ensoul>
+		<ensoul id="1118" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Health Increase-->
+			<skill id="82000" level="18"/>
+		</ensoul>
+		<ensoul id="1119" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Health Increase-->
+			<skill id="82000" level="19"/>
+		</ensoul>
+		<ensoul id="1120" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Health Increase-->
+			<skill id="82000" level="20"/>
+		</ensoul>
+		<ensoul id="1151" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Mana Boost-->
+			<skill id="82001" level="1"/>
+		</ensoul>
+		<ensoul id="1152" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Mana Boost-->
+			<skill id="82001" level="2"/>
+		</ensoul>
+		<ensoul id="1153" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Mana Boost-->
+			<skill id="82001" level="3"/>
+		</ensoul>
+		<ensoul id="1154" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Mana Boost-->
+			<skill id="82001" level="4"/>
+		</ensoul>
+		<ensoul id="1155" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Mana Boost-->
+			<skill id="82001" level="5"/>
+		</ensoul>
+		<ensoul id="1156" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Mana Boost-->
+			<skill id="82001" level="6"/>
+		</ensoul>
+		<ensoul id="1157" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Mana Boost-->
+			<skill id="82001" level="7"/>
+		</ensoul>
+		<ensoul id="1158" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Mana Boost-->
+			<skill id="82001" level="8"/>
+		</ensoul>
+		<ensoul id="1159" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Mana Boost-->
+			<skill id="82001" level="9"/>
+		</ensoul>
+		<ensoul id="1160" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Mana Boost-->
+			<skill id="82001" level="10"/>
+		</ensoul>
+		<ensoul id="1161" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Mana Boost-->
+			<skill id="82001" level="11"/>
+		</ensoul>
+		<ensoul id="1162" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Mana Boost-->
+			<skill id="82001" level="12"/>
+		</ensoul>
+		<ensoul id="1163" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Mana Boost-->
+			<skill id="82001" level="13"/>
+		</ensoul>
+		<ensoul id="1164" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Mana Boost-->
+			<skill id="82001" level="14"/>
+		</ensoul>
+		<ensoul id="1165" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Mana Boost-->
+			<skill id="82001" level="15"/>
+		</ensoul>
+		<ensoul id="1166" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Mana Boost-->
+			<skill id="82001" level="16"/>
+		</ensoul>
+		<ensoul id="1167" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Mana Boost-->
+			<skill id="82001" level="17"/>
+		</ensoul>
+		<ensoul id="1168" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Mana Boost-->
+			<skill id="82001" level="18"/>
+		</ensoul>
+		<ensoul id="1169" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Mana Boost-->
+			<skill id="82001" level="19"/>
+		</ensoul>
+		<ensoul id="1170" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Mana Boost-->
+			<skill id="82001" level="20"/>
+		</ensoul>
+		<ensoul id="1201" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Physical Attack-->
+			<skill id="82002" level="1"/>
+		</ensoul>
+		<ensoul id="1202" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Physical Attack-->
+			<skill id="82002" level="2"/>
+		</ensoul>
+		<ensoul id="1203" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Physical Attack-->
+			<skill id="82002" level="3"/>
+		</ensoul>
+		<ensoul id="1204" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Physical Attack-->
+			<skill id="82002" level="4"/>
+		</ensoul>
+		<ensoul id="1205" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Physical Attack-->
+			<skill id="82002" level="5"/>
+		</ensoul>
+		<ensoul id="1206" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Physical Attack-->
+			<skill id="82002" level="6"/>
+		</ensoul>
+		<ensoul id="1207" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Physical Attack-->
+			<skill id="82002" level="7"/>
+		</ensoul>
+		<ensoul id="1208" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Physical Attack-->
+			<skill id="82002" level="8"/>
+		</ensoul>
+		<ensoul id="1209" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Physical Attack-->
+			<skill id="82002" level="9"/>
+		</ensoul>
+		<ensoul id="1210" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Physical Attack-->
+			<skill id="82002" level="10"/>
+		</ensoul>
+		<ensoul id="1211" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Physical Attack-->
+			<skill id="82002" level="11"/>
+		</ensoul>
+		<ensoul id="1212" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Physical Attack-->
+			<skill id="82002" level="12"/>
+		</ensoul>
+		<ensoul id="1213" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Physical Attack-->
+			<skill id="82002" level="13"/>
+		</ensoul>
+		<ensoul id="1214" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Physical Attack-->
+			<skill id="82002" level="14"/>
+		</ensoul>
+		<ensoul id="1215" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Physical Attack-->
+			<skill id="82002" level="15"/>
+		</ensoul>
+		<ensoul id="1216" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Physical Attack-->
+			<skill id="82002" level="16"/>
+		</ensoul>
+		<ensoul id="1217" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Physical Attack-->
+			<skill id="82002" level="17"/>
+		</ensoul>
+		<ensoul id="1218" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Physical Attack-->
+			<skill id="82002" level="18"/>
+		</ensoul>
+		<ensoul id="1219" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Physical Attack-->
+			<skill id="82002" level="19"/>
+		</ensoul>
+		<ensoul id="1220" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Physical Attack-->
+			<skill id="82002" level="20"/>
+		</ensoul>
+		<ensoul id="1251" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Magic Attack-->
+			<skill id="82003" level="1"/>
+		</ensoul>
+		<ensoul id="1252" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Magic Attack-->
+			<skill id="82003" level="2"/>
+		</ensoul>
+		<ensoul id="1253" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Magic Attack-->
+			<skill id="82003" level="3"/>
+		</ensoul>
+		<ensoul id="1254" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Magic Attack-->
+			<skill id="82003" level="4"/>
+		</ensoul>
+		<ensoul id="1255" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Magic Attack-->
+			<skill id="82003" level="5"/>
+		</ensoul>
+		<ensoul id="1256" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Magic Attack-->
+			<skill id="82003" level="6"/>
+		</ensoul>
+		<ensoul id="1257" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Magic Attack-->
+			<skill id="82003" level="7"/>
+		</ensoul>
+		<ensoul id="1258" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Magic Attack-->
+			<skill id="82003" level="8"/>
+		</ensoul>
+		<ensoul id="1259" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Magic Attack-->
+			<skill id="82003" level="9"/>
+		</ensoul>
+		<ensoul id="1260" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Magic Attack-->
+			<skill id="82003" level="10"/>
+		</ensoul>
+		<ensoul id="1261" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Magic Attack-->
+			<skill id="82003" level="11"/>
+		</ensoul>
+		<ensoul id="1262" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Magic Attack-->
+			<skill id="82003" level="12"/>
+		</ensoul>
+		<ensoul id="1263" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Magic Attack-->
+			<skill id="82003" level="13"/>
+		</ensoul>
+		<ensoul id="1264" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Magic Attack-->
+			<skill id="82003" level="14"/>
+		</ensoul>
+		<ensoul id="1265" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Magic Attack-->
+			<skill id="82003" level="15"/>
+		</ensoul>
+		<ensoul id="1266" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Magic Attack-->
+			<skill id="82003" level="16"/>
+		</ensoul>
+		<ensoul id="1267" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Magic Attack-->
+			<skill id="82003" level="17"/>
+		</ensoul>
+		<ensoul id="1268" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Magic Attack-->
+			<skill id="82003" level="18"/>
+		</ensoul>
+		<ensoul id="1269" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Magic Attack-->
+			<skill id="82003" level="19"/>
+		</ensoul>
+		<ensoul id="1270" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Magic Attack-->
+			<skill id="82003" level="20"/>
+		</ensoul>
+		<ensoul id="1301" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Physical Speed-->
+			<skill id="82004" level="1"/>
+		</ensoul>
+		<ensoul id="1302" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Physical Speed-->
+			<skill id="82004" level="2"/>
+		</ensoul>
+		<ensoul id="1303" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Physical Speed-->
+			<skill id="82004" level="3"/>
+		</ensoul>
+		<ensoul id="1304" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Physical Speed-->
+			<skill id="82004" level="4"/>
+		</ensoul>
+		<ensoul id="1305" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Physical Speed-->
+			<skill id="82004" level="5"/>
+		</ensoul>
+		<ensoul id="1306" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Physical Speed-->
+			<skill id="82004" level="6"/>
+		</ensoul>
+		<ensoul id="1307" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Physical Speed-->
+			<skill id="82004" level="7"/>
+		</ensoul>
+		<ensoul id="1308" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Physical Speed-->
+			<skill id="82004" level="8"/>
+		</ensoul>
+		<ensoul id="1309" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Physical Speed-->
+			<skill id="82004" level="9"/>
+		</ensoul>
+		<ensoul id="1310" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Physical Speed-->
+			<skill id="82004" level="10"/>
+		</ensoul>
+		<ensoul id="1311" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Physical Speed-->
+			<skill id="82004" level="11"/>
+		</ensoul>
+		<ensoul id="1312" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Physical Speed-->
+			<skill id="82004" level="12"/>
+		</ensoul>
+		<ensoul id="1313" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Physical Speed-->
+			<skill id="82004" level="13"/>
+		</ensoul>
+		<ensoul id="1314" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Physical Speed-->
+			<skill id="82004" level="14"/>
+		</ensoul>
+		<ensoul id="1315" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Physical Speed-->
+			<skill id="82004" level="15"/>
+		</ensoul>
+		<ensoul id="1316" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Physical Speed-->
+			<skill id="82004" level="16"/>
+		</ensoul>
+		<ensoul id="1317" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Physical Speed-->
+			<skill id="82004" level="17"/>
+		</ensoul>
+		<ensoul id="1318" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Physical Speed-->
+			<skill id="82004" level="18"/>
+		</ensoul>
+		<ensoul id="1319" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Physical Speed-->
+			<skill id="82004" level="19"/>
+		</ensoul>
+		<ensoul id="1320" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Physical Speed-->
+			<skill id="82004" level="20"/>
+		</ensoul>
+		<ensoul id="1351" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Magical Speed-->
+			<skill id="82005" level="1"/>
+		</ensoul>
+		<ensoul id="1352" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Magical Speed-->
+			<skill id="82005" level="2"/>
+		</ensoul>
+		<ensoul id="1353" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Magical Speed-->
+			<skill id="82005" level="3"/>
+		</ensoul>
+		<ensoul id="1354" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Magical Speed-->
+			<skill id="82005" level="4"/>
+		</ensoul>
+		<ensoul id="1355" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Magical Speed-->
+			<skill id="82005" level="5"/>
+		</ensoul>
+		<ensoul id="1356" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Magical Speed-->
+			<skill id="82005" level="6"/>
+		</ensoul>
+		<ensoul id="1357" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Magical Speed-->
+			<skill id="82005" level="7"/>
+		</ensoul>
+		<ensoul id="1358" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Magical Speed-->
+			<skill id="82005" level="8"/>
+		</ensoul>
+		<ensoul id="1359" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Magical Speed-->
+			<skill id="82005" level="9"/>
+		</ensoul>
+		<ensoul id="1360" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Magical Speed-->
+			<skill id="82005" level="10"/>
+		</ensoul>
+		<ensoul id="1361" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Magical Speed-->
+			<skill id="82005" level="11"/>
+		</ensoul>
+		<ensoul id="1362" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Magical Speed-->
+			<skill id="82005" level="12"/>
+		</ensoul>
+		<ensoul id="1363" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Magical Speed-->
+			<skill id="82005" level="13"/>
+		</ensoul>
+		<ensoul id="1364" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Magical Speed-->
+			<skill id="82005" level="14"/>
+		</ensoul>
+		<ensoul id="1365" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Magical Speed-->
+			<skill id="82005" level="15"/>
+		</ensoul>
+		<ensoul id="1366" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Magical Speed-->
+			<skill id="82005" level="16"/>
+		</ensoul>
+		<ensoul id="1367" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Magical Speed-->
+			<skill id="82005" level="17"/>
+		</ensoul>
+		<ensoul id="1368" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Magical Speed-->
+			<skill id="82005" level="18"/>
+		</ensoul>
+		<ensoul id="1369" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Magical Speed-->
+			<skill id="82005" level="19"/>
+		</ensoul>
+		<ensoul id="1370" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Magical Speed-->
+			<skill id="82005" level="20"/>
+		</ensoul>
+		<ensoul id="1401" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Movement Speed-->
+			<skill id="82006" level="1"/>
+		</ensoul>
+		<ensoul id="1402" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Movement Speed-->
+			<skill id="82006" level="2"/>
+		</ensoul>
+		<ensoul id="1403" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Movement Speed-->
+			<skill id="82006" level="3"/>
+		</ensoul>
+		<ensoul id="1404" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Movement Speed-->
+			<skill id="82006" level="4"/>
+		</ensoul>
+		<ensoul id="1405" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Movement Speed-->
+			<skill id="82006" level="5"/>
+		</ensoul>
+		<ensoul id="1406" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Movement Speed-->
+			<skill id="82006" level="6"/>
+		</ensoul>
+		<ensoul id="1407" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Movement Speed-->
+			<skill id="82006" level="7"/>
+		</ensoul>
+		<ensoul id="1408" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Movement Speed-->
+			<skill id="82006" level="8"/>
+		</ensoul>
+		<ensoul id="1409" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Movement Speed-->
+			<skill id="82006" level="9"/>
+		</ensoul>
+		<ensoul id="1410" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Movement Speed-->
+			<skill id="82006" level="10"/>
+		</ensoul>
+		<ensoul id="1411" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Movement Speed-->
+			<skill id="82006" level="11"/>
+		</ensoul>
+		<ensoul id="1412" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Movement Speed-->
+			<skill id="82006" level="12"/>
+		</ensoul>
+		<ensoul id="1413" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Movement Speed-->
+			<skill id="82006" level="13"/>
+		</ensoul>
+		<ensoul id="1414" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Movement Speed-->
+			<skill id="82006" level="14"/>
+		</ensoul>
+		<ensoul id="1415" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Movement Speed-->
+			<skill id="82006" level="15"/>
+		</ensoul>
+		<ensoul id="1416" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Movement Speed-->
+			<skill id="82006" level="16"/>
+		</ensoul>
+		<ensoul id="1417" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Movement Speed-->
+			<skill id="82006" level="17"/>
+		</ensoul>
+		<ensoul id="1418" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Movement Speed-->
+			<skill id="82006" level="18"/>
+		</ensoul>
+		<ensoul id="1419" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Movement Speed-->
+			<skill id="82006" level="19"/>
+		</ensoul>
+		<ensoul id="1420" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Movement Speed-->
+			<skill id="82006" level="20"/>
+		</ensoul>
+		<ensoul id="1451" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="1"/>
+		</ensoul>
+		<ensoul id="1452" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="2"/>
+		</ensoul>
+		<ensoul id="1453" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="3"/>
+		</ensoul>
+		<ensoul id="1454" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="4"/>
+		</ensoul>
+		<ensoul id="1455" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="5"/>
+		</ensoul>
+		<ensoul id="1456" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="6"/>
+		</ensoul>
+		<ensoul id="1457" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="7"/>
+		</ensoul>
+		<ensoul id="1458" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="8"/>
+		</ensoul>
+		<ensoul id="1459" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="9"/>
+		</ensoul>
+		<ensoul id="1460" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="10"/>
+		</ensoul>
+		<ensoul id="1461" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="11"/>
+		</ensoul>
+		<ensoul id="1462" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="12"/>
+		</ensoul>
+		<ensoul id="1463" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="13"/>
+		</ensoul>
+		<ensoul id="1464" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="14"/>
+		</ensoul>
+		<ensoul id="1465" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="15"/>
+		</ensoul>
+		<ensoul id="1466" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="16"/>
+		</ensoul>
+		<ensoul id="1467" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="17"/>
+		</ensoul>
+		<ensoul id="1468" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="18"/>
+		</ensoul>
+		<ensoul id="1469" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="19"/>
+		</ensoul>
+		<ensoul id="1470" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Physical Critical Rate-->
+			<skill id="82007" level="20"/>
+		</ensoul>
+		<ensoul id="1501" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="1"/>
+		</ensoul>
+		<ensoul id="1502" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="2"/>
+		</ensoul>
+		<ensoul id="1503" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="3"/>
+		</ensoul>
+		<ensoul id="1504" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="4"/>
+		</ensoul>
+		<ensoul id="1505" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="5"/>
+		</ensoul>
+		<ensoul id="1506" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="6"/>
+		</ensoul>
+		<ensoul id="1507" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="7"/>
+		</ensoul>
+		<ensoul id="1508" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="8"/>
+		</ensoul>
+		<ensoul id="1509" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="9"/>
+		</ensoul>
+		<ensoul id="1510" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="10"/>
+		</ensoul>
+		<ensoul id="1511" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="11"/>
+		</ensoul>
+		<ensoul id="1512" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="12"/>
+		</ensoul>
+		<ensoul id="1513" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="13"/>
+		</ensoul>
+		<ensoul id="1514" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="14"/>
+		</ensoul>
+		<ensoul id="1515" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="15"/>
+		</ensoul>
+		<ensoul id="1516" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="16"/>
+		</ensoul>
+		<ensoul id="1517" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="17"/>
+		</ensoul>
+		<ensoul id="1518" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="18"/>
+		</ensoul>
+		<ensoul id="1519" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="19"/>
+		</ensoul>
+		<ensoul id="1520" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Physical Skill Critical Rate-->
+			<skill id="82008" level="20"/>
+		</ensoul>
+		<ensoul id="1551" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="1"/>
+		</ensoul>
+		<ensoul id="1552" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="2"/>
+		</ensoul>
+		<ensoul id="1553" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="3"/>
+		</ensoul>
+		<ensoul id="1554" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="4"/>
+		</ensoul>
+		<ensoul id="1555" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="5"/>
+		</ensoul>
+		<ensoul id="1556" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="6"/>
+		</ensoul>
+		<ensoul id="1557" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="7"/>
+		</ensoul>
+		<ensoul id="1558" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="8"/>
+		</ensoul>
+		<ensoul id="1559" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="9"/>
+		</ensoul>
+		<ensoul id="1560" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="10"/>
+		</ensoul>
+		<ensoul id="1561" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="11"/>
+		</ensoul>
+		<ensoul id="1562" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="12"/>
+		</ensoul>
+		<ensoul id="1563" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="13"/>
+		</ensoul>
+		<ensoul id="1564" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="14"/>
+		</ensoul>
+		<ensoul id="1565" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="15"/>
+		</ensoul>
+		<ensoul id="1566" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="16"/>
+		</ensoul>
+		<ensoul id="1567" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="17"/>
+		</ensoul>
+		<ensoul id="1568" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="18"/>
+		</ensoul>
+		<ensoul id="1569" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="19"/>
+		</ensoul>
+		<ensoul id="1570" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Magical Skill Critical Rate-->
+			<skill id="82009" level="20"/>
+		</ensoul>
+		<ensoul id="1601" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="1"/>
+		</ensoul>
+		<ensoul id="1602" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="2"/>
+		</ensoul>
+		<ensoul id="1603" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="3"/>
+		</ensoul>
+		<ensoul id="1604" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="4"/>
+		</ensoul>
+		<ensoul id="1605" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="5"/>
+		</ensoul>
+		<ensoul id="1606" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="6"/>
+		</ensoul>
+		<ensoul id="1607" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="7"/>
+		</ensoul>
+		<ensoul id="1608" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="8"/>
+		</ensoul>
+		<ensoul id="1609" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="9"/>
+		</ensoul>
+		<ensoul id="1610" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="10"/>
+		</ensoul>
+		<ensoul id="1611" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="11"/>
+		</ensoul>
+		<ensoul id="1612" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="12"/>
+		</ensoul>
+		<ensoul id="1613" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="13"/>
+		</ensoul>
+		<ensoul id="1614" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="14"/>
+		</ensoul>
+		<ensoul id="1615" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="15"/>
+		</ensoul>
+		<ensoul id="1616" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="16"/>
+		</ensoul>
+		<ensoul id="1617" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="17"/>
+		</ensoul>
+		<ensoul id="1618" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="18"/>
+		</ensoul>
+		<ensoul id="1619" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="19"/>
+		</ensoul>
+		<ensoul id="1620" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Physical Critical Damage-->
+			<skill id="82010" level="20"/>
+		</ensoul>
+		<ensoul id="1651" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="1"/>
+		</ensoul>
+		<ensoul id="1652" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="2"/>
+		</ensoul>
+		<ensoul id="1653" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="3"/>
+		</ensoul>
+		<ensoul id="1654" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="4"/>
+		</ensoul>
+		<ensoul id="1655" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="5"/>
+		</ensoul>
+		<ensoul id="1656" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="6"/>
+		</ensoul>
+		<ensoul id="1657" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="7"/>
+		</ensoul>
+		<ensoul id="1658" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="8"/>
+		</ensoul>
+		<ensoul id="1659" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="9"/>
+		</ensoul>
+		<ensoul id="1660" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="10"/>
+		</ensoul>
+		<ensoul id="1661" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="11"/>
+		</ensoul>
+		<ensoul id="1662" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="12"/>
+		</ensoul>
+		<ensoul id="1663" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="13"/>
+		</ensoul>
+		<ensoul id="1664" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="14"/>
+		</ensoul>
+		<ensoul id="1665" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="15"/>
+		</ensoul>
+		<ensoul id="1666" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="16"/>
+		</ensoul>
+		<ensoul id="1667" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="17"/>
+		</ensoul>
+		<ensoul id="1668" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="18"/>
+		</ensoul>
+		<ensoul id="1669" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="19"/>
+		</ensoul>
+		<ensoul id="1670" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Physical Skill Critical Damage-->
+			<skill id="82011" level="20"/>
+		</ensoul>
+		<ensoul id="1701" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="1"/>
+		</ensoul>
+		<ensoul id="1702" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="2"/>
+		</ensoul>
+		<ensoul id="1703" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="3"/>
+		</ensoul>
+		<ensoul id="1704" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="4"/>
+		</ensoul>
+		<ensoul id="1705" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="5"/>
+		</ensoul>
+		<ensoul id="1706" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="6"/>
+		</ensoul>
+		<ensoul id="1707" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="7"/>
+		</ensoul>
+		<ensoul id="1708" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="8"/>
+		</ensoul>
+		<ensoul id="1709" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="9"/>
+		</ensoul>
+		<ensoul id="1710" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="10"/>
+		</ensoul>
+		<ensoul id="1711" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="11"/>
+		</ensoul>
+		<ensoul id="1712" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="12"/>
+		</ensoul>
+		<ensoul id="1713" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="13"/>
+		</ensoul>
+		<ensoul id="1714" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="14"/>
+		</ensoul>
+		<ensoul id="1715" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="15"/>
+		</ensoul>
+		<ensoul id="1716" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="16"/>
+		</ensoul>
+		<ensoul id="1717" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="17"/>
+		</ensoul>
+		<ensoul id="1718" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="18"/>
+		</ensoul>
+		<ensoul id="1719" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="19"/>
+		</ensoul>
+		<ensoul id="1720" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Magical Skill Critical Damage-->
+			<skill id="82012" level="20"/>
+		</ensoul>
+		<ensoul id="1751" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Shock Attack-->
+			<skill id="82013" level="1"/>
+		</ensoul>
+		<ensoul id="1752" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Shock Attack-->
+			<skill id="82013" level="2"/>
+		</ensoul>
+		<ensoul id="1753" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Shock Attack-->
+			<skill id="82013" level="3"/>
+		</ensoul>
+		<ensoul id="1754" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Shock Attack-->
+			<skill id="82013" level="4"/>
+		</ensoul>
+		<ensoul id="1755" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Shock Attack-->
+			<skill id="82013" level="5"/>
+		</ensoul>
+		<ensoul id="1756" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Shock Attack-->
+			<skill id="82013" level="6"/>
+		</ensoul>
+		<ensoul id="1757" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Shock Attack-->
+			<skill id="82013" level="7"/>
+		</ensoul>
+		<ensoul id="1758" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Shock Attack-->
+			<skill id="82013" level="8"/>
+		</ensoul>
+		<ensoul id="1759" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Shock Attack-->
+			<skill id="82013" level="9"/>
+		</ensoul>
+		<ensoul id="1760" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Shock Attack-->
+			<skill id="82013" level="10"/>
+		</ensoul>
+		<ensoul id="1761" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Shock Attack-->
+			<skill id="82013" level="11"/>
+		</ensoul>
+		<ensoul id="1762" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Shock Attack-->
+			<skill id="82013" level="12"/>
+		</ensoul>
+		<ensoul id="1763" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Shock Attack-->
+			<skill id="82013" level="13"/>
+		</ensoul>
+		<ensoul id="1764" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Shock Attack-->
+			<skill id="82013" level="14"/>
+		</ensoul>
+		<ensoul id="1765" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Shock Attack-->
+			<skill id="82013" level="15"/>
+		</ensoul>
+		<ensoul id="1766" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Shock Attack-->
+			<skill id="82013" level="16"/>
+		</ensoul>
+		<ensoul id="1767" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Shock Attack-->
+			<skill id="82013" level="17"/>
+		</ensoul>
+		<ensoul id="1768" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Shock Attack-->
+			<skill id="82013" level="18"/>
+		</ensoul>
+		<ensoul id="1769" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Shock Attack-->
+			<skill id="82013" level="19"/>
+		</ensoul>
+		<ensoul id="1770" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Shock Attack-->
+			<skill id="82013" level="20"/>
+		</ensoul>
+		<ensoul id="1801" level="1" item_id="95783" extraction_item_id="95783">	<!--Aden's Soul Crystal Lv. 1-->
+			<!--Silence Attack-->
+			<skill id="82015" level="1"/>
+		</ensoul>
+		<ensoul id="1802" level="2" item_id="95784" extraction_item_id="95784">	<!--Aden's Soul Crystal Lv. 2-->
+			<!--Silence Attack-->
+			<skill id="82015" level="2"/>
+		</ensoul>
+		<ensoul id="1803" level="3" item_id="95785" extraction_item_id="95785">	<!--Aden's Soul Crystal Lv. 3-->
+			<!--Silence Attack-->
+			<skill id="82015" level="3"/>
+		</ensoul>
+		<ensoul id="1804" level="4" item_id="95786" extraction_item_id="95786">	<!--Aden's Soul Crystal Lv. 4-->
+			<!--Silence Attack-->
+			<skill id="82015" level="4"/>
+		</ensoul>
+		<ensoul id="1805" level="5" item_id="95787" extraction_item_id="95787">	<!--Aden's Soul Crystal Lv. 5-->
+			<!--Silence Attack-->
+			<skill id="82015" level="5"/>
+		</ensoul>
+		<ensoul id="1806" level="6" item_id="95788" extraction_item_id="95788">	<!--Aden's Soul Crystal Lv. 6-->
+			<!--Silence Attack-->
+			<skill id="82015" level="6"/>
+		</ensoul>
+		<ensoul id="1807" level="7" item_id="95789" extraction_item_id="95789">	<!--Aden's Soul Crystal Lv. 7-->
+			<!--Silence Attack-->
+			<skill id="82015" level="7"/>
+		</ensoul>
+		<ensoul id="1808" level="8" item_id="95790" extraction_item_id="95790">	<!--Aden's Soul Crystal Lv. 8-->
+			<!--Silence Attack-->
+			<skill id="82015" level="8"/>
+		</ensoul>
+		<ensoul id="1809" level="9" item_id="95791" extraction_item_id="95791">	<!--Aden's Soul Crystal Lv. 9-->
+			<!--Silence Attack-->
+			<skill id="82015" level="9"/>
+		</ensoul>
+		<ensoul id="1810" level="10" item_id="95792" extraction_item_id="95792">	<!--Aden's Soul Crystal Lv. 10-->
+			<!--Silence Attack-->
+			<skill id="82015" level="10"/>
+		</ensoul>
+		<ensoul id="1811" level="11" item_id="95793" extraction_item_id="95793">	<!--Aden's Soul Crystal Lv. 11-->
+			<!--Silence Attack-->
+			<skill id="82015" level="11"/>
+		</ensoul>
+		<ensoul id="1812" level="12" item_id="95794" extraction_item_id="95794">	<!--Aden's Soul Crystal Lv. 12-->
+			<!--Silence Attack-->
+			<skill id="82015" level="12"/>
+		</ensoul>
+		<ensoul id="1813" level="13" item_id="95795" extraction_item_id="95795">	<!--Aden's Soul Crystal Lv. 13-->
+			<!--Silence Attack-->
+			<skill id="82015" level="13"/>
+		</ensoul>
+		<ensoul id="1814" level="14" item_id="95796" extraction_item_id="95796">	<!--Aden's Soul Crystal Lv. 14-->
+			<!--Silence Attack-->
+			<skill id="82015" level="14"/>
+		</ensoul>
+		<ensoul id="1815" level="15" item_id="95797" extraction_item_id="95797">	<!--Aden's Soul Crystal Lv. 15-->
+			<!--Silence Attack-->
+			<skill id="82015" level="15"/>
+		</ensoul>
+		<ensoul id="1816" level="16" item_id="95798" extraction_item_id="95798">	<!--Aden's Soul Crystal Lv. 16-->
+			<!--Silence Attack-->
+			<skill id="82015" level="16"/>
+		</ensoul>
+		<ensoul id="1817" level="17" item_id="95799" extraction_item_id="95799">	<!--Aden's Soul Crystal Lv. 17-->
+			<!--Silence Attack-->
+			<skill id="82015" level="17"/>
+		</ensoul>
+		<ensoul id="1818" level="18" item_id="95800" extraction_item_id="95800">	<!--Aden's Soul Crystal Lv. 18-->
+			<!--Silence Attack-->
+			<skill id="82015" level="18"/>
+		</ensoul>
+		<ensoul id="1819" level="19" item_id="95801" extraction_item_id="95801">	<!--Aden's Soul Crystal Lv. 19-->
+			<!--Silence Attack-->
+			<skill id="82015" level="19"/>
+		</ensoul>
+		<ensoul id="1820" level="20" item_id="95802" extraction_item_id="95802">	<!--Aden's Soul Crystal Lv. 20-->
+			<!--Silence Attack-->
+			<skill id="82015" level="20"/>
+		</ensoul>
+	</ensoul_data>
+</list>

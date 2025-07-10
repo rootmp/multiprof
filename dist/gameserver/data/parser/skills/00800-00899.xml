@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="814" levels="9" name="Full Swing">
+		<!--
+		      Description: Attacks nearby enemies by widely swinging a two-handed weapon. Requires a two-handed weapon. Ignores Shield Defense. Over-hit is possible. Power 744-3480.
+		-->
+		<table name="#power">893 945 998 1054 1112 1172 1234 1298 1365 1433 1503 1575 1649 1725 1803 1882 1963 2045 2129 2214 2301 2388 2476 2565 2655 2745 2836 2927 3018 3108 3198 3288 3376 3464 3551 3636 3720 3801 3881 3959 4034 4107 4176</table>
+		<table name="#magicLevel">43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85</table>
+		<table name="#mp_consume">85 86 87 88 89 91 92 93 94</table>
+		<table name="#effectPoint">-1160 -1175 -1190 -1205 -1220 -1235 -1250 -1265 -1280</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0814"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="733"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="POINT_BLANK"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="6;12"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="affect_range" value="100"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="shieldignore" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<set name="overHit" value="true"/>
+		<cond msgId="113">
+			<using kind="Big Sword, Big Blunt, Pole"/>
+		</cond>
+	</skill>
+	<skill id="821" levels="12" name="Shadow Step">
+		<table name="#effectPoint">-500 -540 -580 -620 -660 -700 -740 -780 -820 -860 -880 -900</table>
+		<table name="#mp_consume">37 41 45 48 52 56 60 63 67 71 75 80</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0821"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="activateRate" value="70"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_effect" value="STUN"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="40"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="fly_type" value="DUMMY"/>
+		<set name="fly_radius" value="600"/>
+		<set name="fly_position_degree" value="180"/>
+		<set name="fly_depends_on_heading" value="true"/>
+		<set name="nextAction" value="none"/>
+		<set name="upgradeControllerSkillId" value="47362" />
+		<set name="upgradedSkillId" value="47340" />
+		<for>
+			<effect name="i_target_cancel">
+				<def name="stop_target" value="true"/>
+			</effect>
+			<effect>
+				<mul stat="runSpd" value="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="822" levels="3" name="Repair Golem">
+		<!--
+		      Last modify: 23.08.2008
+		      Description: Repairs a summoned golem.
+		-->
+		<table name="#power">8 12 15</table>
+		<table name="#magicLevel">40 49 55</table>
+		<table name="#mp_consume">61 78 88</table>
+		<table name="#effectPoint">362 481 562</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0822"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="2500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SUMMON"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SUMMON"/>
+		<set name="skillType" value="HEAL_PERCENT"/>
+		<set name="operate_type" value="A1"/>
+		<cond msgId="144">
+			<target race="MagicCreatures"/>
+		</cond>
+		<for>
+			<effect instant="true" name="RestoreHP" value="#power">
+				<def name="percent" value="true"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="823" levels="3" name="Strengthen Golem">
+		<!--
+		      Last modify: 23.08.2008
+		      Description: Temporarily increases a summoned golem's attack power and Atk. Spd. Effect 1,2,3.
+		-->
+		<table name="#TabpAtk">1.08 1.12 1.15</table>
+		<table name="#TabpAtkSpd">1.03 1.06 1.09</table>
+		<table name="#magicLevel">43 52 58</table>
+		<table name="#mp_consume">24 36 42</table>
+		<set name="icon" value="icon.skill0823"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="2500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="4"/>
+		<set name="abnormal_type" value="pa_up"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SUMMON"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SUMMON"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="144">
+			<target race="MagicCreatures"/>
+		</cond>
+		<for>
+			<effect>
+				<mul stat="pAtkSpd" value="#TabpAtkSpd"/>
+				<mul stat="pAtk" value="#TabpAtk"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="824" levels="3" name="Golem Reinforcement">
+		<!--
+		      Last modify: 23.08.2008
+		      Description: Temporarily equips a summoned golem with an additional armor plate to increase P. Def. and maximum HP. Effect 1,2,3.
+		-->
+		<table name="#TabpDef">1.08 1.12 1.15</table>
+		<table name="#TabmaxHp">1.05 1.08 1.1</table>
+		<table name="#magicLevel">40 49 55</table>
+		<table name="#mp_consume">35 44 44</table>
+		<set name="icon" value="icon.skill0824"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="2500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="4"/>
+		<set name="abnormal_type" value="pd_up"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SUMMON"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SUMMON"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="144">
+			<target race="MagicCreatures"/>
+		</cond>
+		<for>
+			<effect>
+				<mul stat="maxHp" value="#TabmaxHp"/>
+				<mul stat="pDef" value="#TabpDef"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="826" levels="2" name="Spike">
+		<table name="#mAtkPer">1.1 1.15</table>
+		<table name="#pAtk">120 200</table>
+		<table name="#shock">15 20</table>
+		<set name="icon" value="icon.skill0826"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="mAtk" value="#mAtkPer"/>
+			<add stat="pAtk" value="#pAtk"/>
+			<p_attack_trait name="shock" value="#shock" type="PER"/>
+		</for>
+	</skill>
+	<skill id="828" levels="2" name="Encase Armor">
+		<table name="#pDef">100 200</table>
+		<set name="icon" value="icon.skill0828"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pDef" value="#pDef"/>
+		</for>
+	</skill>
+	<skill id="839" levels="1" name="Dismount">
+		<!--  Automatically generated from The Gracia Final client files.
+		      Description: Dismounts from a ridable mount.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-4-2009  22:35
+		-->
+		<set name="effectPoint" value="10"/>
+		<set name="icon" value="icon.skilltransform2"/>
+		<set name="hitTime" value="2500"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="56"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="useSS" value="false"/>
+		<for>
+			<effect instant="true" name="Transformation"/>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="transform"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="844" levels="1" name="Outpost Construction">
+		<!--
+			Last modify:	06.11.2009
+			Description:	Constructs an outpost that assists clan member recovery and reinforcement during territory battles. Territory ward capture is possible. Consumes 120 B-Grade Gemstones.
+		-->
+		<set name="icon" value="icon.skill0247"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="mp_consume" value="30"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="4000"/>
+		<set name="itemConsumeId" value="2132"/>
+		<set name="itemConsumeCount" value="120"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="SUMMON_FLAG"/>
+		<set name="flagType" value="OUTPOST"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSkillTimePermanent" value="true"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+	</skill>
+	<skill id="845" levels="1" name="Outpost Demolition">
+		<!--
+			Last modify:	06.11.2009
+			Description:	Demolishes an outpost. After demolition, a new outpost can be constructed.
+		-->
+		<set name="icon" value="icon.skill0247"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="mp_consume" value="30"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="4000"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="SUMMON_FLAG"/>
+		<set name="flagType" value="DESTROY"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSkillTimePermanent" value="true"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+	</skill>
+	<skill id="846" levels="1" name="Possess Ward">
+		<!--
+			Last modify:	13.11.2009
+			Description: Possesses the territory ward, decreasing various battle abilities.
+		-->
+		<set name="icon" value="icon.weapon_fort_flag_i00"/>
+		<set name="magicLevel" value="1"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="runSpd" value="0.7"/>
+			<mul stat="mDef" value="0.7"/>
+			<mul stat="pDef" value="0.7"/>
+		</for>
+	</skill>
+	<skill id="847" levels="1" name="Ward Transport">
+		<!--
+			Last modify:	13.11.2009
+			Description:	With an opposing ward in hand, go back to your outpost and use this skill to move the ward back to your castle.
+		-->
+		<set name="icon" value="icon.weapon_fort_flag_i00"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="85"/>
+		<set name="hitTime" value="180000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="80"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ADVANCE_BASE"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSkillTimePermanent" value="true"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+	</skill>
+</list>

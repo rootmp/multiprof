@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "buylist.dtd">
+<list>
+	<npc id="30869">	<!-- Lemper -->
+		<buylist id="1" base_markup="10">
+			<item id="6645" /> <!-- Beast Soulshot -->
+			<item id="6646" /> <!-- Beast Spiritshot -->
+			<item id="93966" /> <!-- Pet Food -->
+			<item id="93967" /> <!-- Pet's HP Recovery Potion -->
+		</buylist>
+	</npc>
+</list>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="18024" levels="30" name="Venir's Talisman">
+		<table name="#icon">icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i00 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01 icon.benir_talisman_i01</table>
+		<set name="icon" value="#icon"/>
+		<table name="#CON">1 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 4 4 4 5 5 5 6 7 7 7 7 7</table>
+		<table name="#MEN">0 1 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 4 4 4 5 5 5 6 6 7 7 7 7</table>
+		<table name="#DEX">0 0 1 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 4 4 4 5 5 6 6 6 7 7 7</table>
+		<table name="#WIT">0 0 0 1 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 4 4 4 5 5 6 6 6 6 7 7</table>
+		<table name="#STR">0 0 0 0 1 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 4 4 4 5 6 6 6 6 6 7</table>
+		<table name="#INT">0 0 0 0 0 1 1 1 1 1 1 2 2 2 2 2 2 3 3 3 4 4 4 5 6 6 6 6 6 7</table>
+		<table name="#maxHp">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600 1800 2000</table>
+		<table name="#pCritChanceRcpt">1 1 1 1 1 1 1 1 1 1 1 0.98 0.96 0.94 0.92 0.9 0.9 0.88 0.88 0.86 0.86 0.84 0.84 0.82 0.82 0.82 0.82 0.82 0.82 0.82</table>
+		<table name="#pReuse">1 1 1 1 1 1 1 1 1 1 1 0.99 0.97 0.95 0.93 0.93 0.91 0.91 0.89 0.89 0.87 0.87 0.85 0.85 0.83 0.83 0.83 0.82 0.82 0.82</table>
+		<table name="#pSkillPower">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1.01 1.02 1.03 1.04 1.05</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add order="0x10" stat="MEN" value="#MEN"/>
+			<add order="0x10" stat="CON" value="#CON"/>
+			<add order="0x10" stat="WIT" value="#WIT"/>
+			<add order="0x10" stat="DEX" value="#DEX"/>
+			<add order="0x10" stat="INT" value="#INT"/>
+			<add order="0x10" stat="STR" value="#STR"/>
+			<mul stat="pCritChanceRcpt" value="#pCritChanceRcpt"/>
+			<mul stat="mCritChanceRcpt" value="#pCritChanceRcpt"/>
+			<mul stat="mReuse" value="#pReuse"/>
+			<mul stat="pReuse" value="#pReuse"/>
+			<add stat="maxHp" value="#maxHp"/>
+			<add stat="maxMp" value="#maxHp"/>
+			<add stat="MaxCp" value="#maxHp"/>
+			<mul stat="p_skill_power" value="#pSkillPower"/>
+			<mul stat="mSkillPower" value="#pSkillPower"/>
+		</for>
+	</skill>
+</list>

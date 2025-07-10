@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="218"><!--Rider-->
+		<skill id="34" level="1" min_level="20" cost="1000"/><!--Bandage-->
+		<skill id="91" level="2" min_level="20" cost="1000"/><!--Ability to Protect-->
+		<skill id="45127" level="2" min_level="20" cost="1000"/><!--Chant of Shield-->
+		<skill id="45126" level="2" min_level="20" cost="1000"/><!--Chant of Might-->
+		<skill id="45123" level="1" min_level="20" cost="1000"/><!--Chant of Haste-->
+		<skill id="45121" level="1" min_level="20" cost="1000"/><!--Chant of Focus-->
+		<skill id="45129" level="1" min_level="20" cost="1000"/><!--Chant of Clarity-->
+		<skill id="45124" level="1" min_level="20" cost="1000"/><!--Chant of Wind Walk-->
+		<skill id="45136" level="1" min_level="20" cost="1000"/><!--Chant of Empower-->
+		<skill id="45135" level="1" min_level="20" cost="1000"/><!--Chant of Acumen-->
+		<skill id="45122" level="1" min_level="20" cost="1000"/><!--Chant of Death Whisper-->
+		<skill id="45176" level="1" min_level="20" cost="1000"/><!--HP Recovery-->
+		<skill id="45177" level="1" min_level="20" cost="1000"/><!--MP Recovery-->
+		<skill id="47801" level="1" min_level="20" cost="1000"/><!--Piercing-->
+		<skill id="47861" level="1" min_level="20" cost="1000"/><!--Wild Weapon Mastery-->
+		<skill id="47862" level="1" min_level="20" cost="1000"/><!--Wild Armor Mastery-->
+		<skill id="47822" level="1" min_level="20" auto_get="true"/><!--Wild Rush-->
+		<skill id="77" level="2" min_level="25" cost="2800"/><!--Ability to Attack-->
+		<skill id="47801" level="2" min_level="30" cost="11000"/><!--Piercing-->
+		<skill id="45121" level="2" min_level="30" cost="11000"/><!--Chant of Focus-->
+		<skill id="45129" level="2" min_level="30" cost="11000"/><!--Chant of Clarity-->
+		<skill id="45124" level="2" min_level="30" cost="11000"/><!--Chant of Wind Walk-->
+		<skill id="45136" level="2" min_level="30" cost="11000"/><!--Chant of Empower-->
+		<skill id="45135" level="2" min_level="30" cost="11000"/><!--Chant of Acumen-->
+		<skill id="45122" level="2" min_level="30" cost="11000"/><!--Chant of Death Whisper-->
+		<skill id="45137" level="1" min_level="30" cost="11000"/><!--Chant of Wild Magic-->
+		<skill id="45128" level="1" min_level="30" cost="11000"/><!--Chant of Berserker Spirit-->
+		<skill id="45125" level="1" min_level="30" cost="11000"/><!--Chant of Magic Barrier-->
+	</normal_skill_tree>
+</list>

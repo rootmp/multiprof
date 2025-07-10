@@ -1,0 +1,3470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="180063" y="59299" z="-3992" h="40476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="179841" y="59633" z="-3992" h="39481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="179925" y="59328" z="-3992" h="59137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="179896" y="60000" z="-3992" h="1372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="179564" y="59774" z="-3992" h="2058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="179926" y="60098" z="-3992" h="11541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="180077" y="59800" z="-3992" h="24698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="179670" y="60250" z="-3992" h="31470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="180165" y="60068" z="-3992" h="31807" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="179550" y="59897" z="-3992" h="56083" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="179516" y="59955" z="-3992" h="46594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="179595" y="59702" z="-3992" h="36407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="179660" y="59655" z="-3992" h="5098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="180374" y="59805" z="-3992" h="1562" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="182306" y="60240" z="-3992" h="24164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="181807" y="60190" z="-3992" h="49490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="181216" y="59641" z="-3992" h="6571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="181599" y="59975" z="-3992" h="19399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="181124" y="60278" z="-3992" h="25149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="181601" y="60135" z="-3992" h="21910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="181566" y="60163" z="-3992" h="14219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="182331" y="59714" z="-3992" h="36416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="181024" y="59686" z="-3992" h="4361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="182010" y="59884" z="-3992" h="22419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="182276" y="59944" z="-3992" h="40310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="181995" y="59812" z="-3992" h="10615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="181721" y="61519" z="-3992" h="65519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="182173" y="62403" z="-3992" h="36286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="181798" y="61936" z="-3992" h="46891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="181790" y="62209" z="-3992" h="26634" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="181884" y="62398" z="-3992" h="51415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="182333" y="62116" z="-3992" h="50535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="181790" y="61944" z="-3992" h="8811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="182073" y="62055" z="-3992" h="57801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="181863" y="62467" z="-3992" h="22955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="181687" y="62452" z="-3992" h="60873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="184269" y="61399" z="-3992" h="58377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="184187" y="61285" z="-3992" h="25821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="184063" y="61202" z="-3992" h="30478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="183864" y="61251" z="-3992" h="26298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="183933" y="60958" z="-3992" h="15326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="183636" y="60939" z="-3992" h="19424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183650" y="61538" z="-3992" h="31986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183440" y="61229" z="-3992" h="1327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="183437" y="61159" z="-3992" h="1529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="183370" y="61450" z="-3992" h="53660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="182569" y="62239" z="-3992" h="40234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="182517" y="62075" z="-3992" h="51008" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="182553" y="61636" z="-3992" h="15862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="182155" y="61894" z="-3992" h="44930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="182470" y="62047" z="-3992" h="21798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="184295" y="62258" z="-3992" h="6520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="183590" y="62405" z="-3992" h="18854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183999" y="61727" z="-3992" h="46621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="184156" y="62179" z="-3992" h="39874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183511" y="61908" z="-3992" h="3976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183424" y="61962" z="-3992" h="8918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="184070" y="62171" z="-3992" h="42007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="183869" y="61820" z="-3992" h="50176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="183514" y="62483" z="-3992" h="37629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="183382" y="62266" z="-3992" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="186520" y="62807" z="-4976" h="3245" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="186410" y="62380" z="-4976" h="55117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186379" y="62340" z="-4976" h="62897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186424" y="62746" z="-4976" h="59840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186424" y="62519" z="-4976" h="59810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186420" y="62562" z="-4976" h="1627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22412" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="187205" y="61312" z="-4984" h="39883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="187081" y="61312" z="-4984" h="1829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="187267" y="61174" z="-4984" h="2439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22412" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="187733" y="61119" z="-4984" h="59725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186957" y="60944" z="-4976" h="26345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22412" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="188144" y="60307" z="-4976" h="11465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187741" y="60675" z="-4984" h="38976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187950" y="61395" z="-4976" h="1897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22412" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="187710" y="60813" z="-4984" h="9747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="187834" y="60031" z="-4976" h="47617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="188136" y="61073" z="-4976" h="54620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186926" y="60990" z="-4976" h="32195" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187019" y="61312" z="-4984" h="7548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="188144" y="60491" z="-4976" h="18633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187958" y="60629" z="-4984" h="20189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187640" y="61119" z="-4984" h="20462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22412" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="187059" y="60685" z="-4984" h="40775" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22412" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="187245" y="60731" z="-4984" h="53206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="187245" y="60455" z="-4984" h="17007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="187462" y="60225" z="-4984" h="17019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186935" y="60317" z="-4976" h="14849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187400" y="60225" z="-4984" h="3997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22412" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="187298" y="61588" z="-4976" h="12343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22412" /> <!-- Evolved Lesser Giant Lord -->
+		<point x="187857" y="61625" z="-4976" h="56116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="187578" y="61671" z="-4976" h="21994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="186513" y="62775" z="-4976" h="25349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186647" y="62567" z="-4976" h="40952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186379" y="62619" z="-4976" h="45333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="184094" y="59289" z="-3992" h="23095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="184206" y="59071" z="-3992" h="12696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="183789" y="59207" z="-3992" h="56601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="183760" y="59298" z="-3992" h="9812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183406" y="59340" z="-3992" h="42115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183669" y="59438" z="-3992" h="7502" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="183958" y="58575" z="-3992" h="16909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="183416" y="59385" z="-3992" h="14333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="183563" y="58493" z="-3992" h="11273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="183958" y="59367" z="-3992" h="15770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="184066" y="58325" z="-3992" h="42187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183429" y="58061" z="-3992" h="44870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="184109" y="59229" z="-3992" h="15516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="184050" y="58981" z="-3992" h="34206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="184195" y="58501" z="-3992" h="50854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="183691" y="58528" z="-3992" h="47912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="184291" y="58106" z="-3992" h="20180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="184086" y="58141" z="-3992" h="58864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="183534" y="58455" z="-3992" h="26643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="183625" y="58262" z="-3992" h="64497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186393" y="57515" z="-4568" h="11665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186429" y="57223" z="-4568" h="61568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="186496" y="57392" z="-4568" h="60817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="186439" y="57620" z="-4568" h="5516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186512" y="57628" z="-4568" h="5350" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186804" y="57358" z="-4568" h="64724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="186390" y="57467" z="-4568" h="35824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="187313" y="57468" z="-4568" h="31918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187018" y="57672" z="-4568" h="59985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187667" y="57536" z="-4568" h="54373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187077" y="57604" z="-4568" h="32078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187431" y="57604" z="-4568" h="4313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="188139" y="57672" z="-4568" h="24293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186824" y="57534" z="-4568" h="10876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186638" y="57400" z="-4568" h="57630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186638" y="57668" z="-4568" h="23544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186415" y="55358" z="-4568" h="61115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186488" y="57192" z="-4568" h="4149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="186538" y="55369" z="-4568" h="61737" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186393" y="55502" z="-4568" h="9979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186438" y="57125" z="-4568" h="57567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186407" y="55457" z="-4568" h="64024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186380" y="55319" z="-4568" h="61959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="186463" y="57180" z="-4568" h="63567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="186436" y="55340" z="-4568" h="62586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186409" y="57455" z="-4568" h="5096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186396" y="55461" z="-4568" h="61917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186426" y="57201" z="-4568" h="48372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187988" y="55625" z="-4568" h="19684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186762" y="57333" z="-4568" h="53968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="187313" y="57332" z="-4568" h="26750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="187962" y="56992" z="-4568" h="58185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="187856" y="55751" z="-4568" h="58781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="187608" y="56924" z="-4568" h="51377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="187916" y="56177" z="-4568" h="42386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="187616" y="55325" z="-4568" h="41249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="188036" y="56248" z="-4568" h="37973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187856" y="55893" z="-4568" h="36231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187726" y="56788" z="-4568" h="40779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="188139" y="56516" z="-4568" h="12532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187856" y="55964" z="-4568" h="57392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187844" y="57332" z="-4568" h="19089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187844" y="56652" z="-4568" h="1953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="186700" y="57333" z="-4568" h="64546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="187916" y="55822" z="-4568" h="61352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="188139" y="56924" z="-4568" h="43730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187916" y="56035" z="-4568" h="64072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187736" y="55680" z="-4568" h="53564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187676" y="55609" z="-4568" h="44523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187016" y="55325" z="-4568" h="34232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187903" y="56584" z="-4568" h="6299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187962" y="56856" z="-4568" h="19805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187616" y="55538" z="-4568" h="25290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="186638" y="55309" z="-4568" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190445" y="59474" z="-4976" h="31638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="190273" y="61120" z="-4976" h="37363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190365" y="61390" z="-4976" h="55538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="190195" y="59826" z="-4976" h="23143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190319" y="61012" z="-4976" h="23465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190365" y="60742" z="-4976" h="50813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190395" y="59694" z="-4976" h="37514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="187779" y="55598" z="-4568" h="12220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="187669" y="55575" z="-4568" h="24378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="186318" y="55560" z="-4568" h="9525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="188943" y="62484" z="-4976" h="8946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="189047" y="62359" z="-4976" h="55831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="188943" y="62709" z="-4976" h="61393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="188943" y="62559" z="-4976" h="36872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="189515" y="62559" z="-4976" h="7276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="188787" y="62384" z="-4976" h="49128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="189099" y="62584" z="-4976" h="36734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190003" y="62012" z="-4976" h="59886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190187" y="62552" z="-4976" h="45613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190463" y="62768" z="-4976" h="45552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190463" y="62552" z="-4976" h="44219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="191422" y="61386" z="-4984" h="55510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="191560" y="61386" z="-4984" h="23153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="191238" y="60792" z="-4976" h="25955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190870" y="61386" z="-4984" h="58193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="191514" y="60738" z="-4976" h="16881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="191008" y="61224" z="-4984" h="20787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190641" y="60850" z="-4976" h="8433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="191330" y="60630" z="-4976" h="1628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="191744" y="61170" z="-4976" h="12603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190825" y="61390" z="-4984" h="35801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190779" y="60688" z="-4976" h="18559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="190645" y="59650" z="-4976" h="40479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190695" y="59870" z="-4976" h="51096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190495" y="59430" z="-4976" h="13253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="190509" y="62498" z="-4976" h="25685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="190647" y="62336" z="-4976" h="16961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="192391" y="61894" z="-4976" h="30439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="190647" y="62498" z="-4976" h="45355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="192348" y="61840" z="-4976" h="26194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190877" y="62066" z="-4984" h="2341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190693" y="62282" z="-4976" h="14997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="191658" y="61792" z="-4984" h="35379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="191336" y="62764" z="-4976" h="51979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="191336" y="62062" z="-4984" h="56902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="191560" y="61440" z="-4984" h="53177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190876" y="62656" z="-4976" h="22457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="191244" y="62224" z="-4984" h="19720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="191566" y="61738" z="-4984" h="1688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="191106" y="62386" z="-4976" h="6451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190922" y="62170" z="-4984" h="45831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="191566" y="62764" z="-4976" h="2930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="190825" y="61660" z="-4984" h="51825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="190795" y="59254" z="-4976" h="34439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="190795" y="59298" z="-4976" h="4004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="193152" y="59352" z="-4976" h="19432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="193752" y="59132" z="-4976" h="43364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193702" y="59088" z="-4976" h="29325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193902" y="59220" z="-4976" h="3314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="192953" y="61017" z="-4976" h="31457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="192781" y="61395" z="-4984" h="62136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="192566" y="60855" z="-4976" h="56103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="193658" y="60682" z="-4976" h="36932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="193744" y="60844" z="-4976" h="54873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="193443" y="61330" z="-4976" h="57641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="193873" y="60844" z="-4976" h="30129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="193615" y="61384" z="-4976" h="59940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193486" y="60844" z="-4976" h="60764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193228" y="60952" z="-4976" h="17881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="192867" y="60963" z="-4976" h="53119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="192781" y="60639" z="-4976" h="20204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193228" y="60736" z="-4976" h="14553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="192996" y="60801" z="-4976" h="34840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="192566" y="61341" z="-4984" h="45967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="193502" y="59748" z="-4976" h="15259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="193802" y="59704" z="-4976" h="15164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193852" y="59484" z="-4976" h="63416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="193698" y="61937" z="-4976" h="25175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="193440" y="62153" z="-4976" h="17552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="193311" y="61991" z="-4984" h="12365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="192778" y="62326" z="-4976" h="49016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="193397" y="62099" z="-4976" h="57190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="192907" y="62380" z="-4976" h="64469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="193698" y="62423" z="-4976" h="53544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22386" /> <!-- Evolved Lesser Giant Shooter -->
+		<point x="193787" y="61600" z="-4976" h="36666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="193569" y="62747" z="-4976" h="58791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22385" /> <!-- Evolved Lesser Giant Elder -->
+		<point x="193036" y="61894" z="-4984" h="48378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193096" y="62207" z="-4976" h="12542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193354" y="62099" z="-4976" h="22349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193225" y="61883" z="-4984" h="30264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22384" /> <!-- Evolved Lesser Giant Commander -->
+		<point x="192692" y="62326" z="-4976" h="29053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="192907" y="62110" z="-4984" h="37967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="192821" y="62596" z="-4976" h="26934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="192735" y="61840" z="-4984" h="54682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22383" /> <!-- Evolved Lesser Giant Mercenary -->
+		<point x="193082" y="61503" z="-4984" h="38410" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="190028" y="54189" z="-4368" h="40798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="189645" y="53687" z="-4368" h="51234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="190031" y="54165" z="-4368" h="5845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190293" y="54269" z="-4368" h="50183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190166" y="54109" z="-4368" h="12328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190522" y="54435" z="-4368" h="3418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190489" y="54413" z="-4368" h="10578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190235" y="53745" z="-4368" h="22210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="193572" y="54157" z="-4368" h="35693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="193872" y="53849" z="-4368" h="39510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="193572" y="53805" z="-4368" h="42826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="194077" y="54206" z="-4368" h="55934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="193718" y="54428" z="-4368" h="65365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="194120" y="54173" z="-4368" h="26352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="194111" y="54149" z="-4368" h="21817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="194252" y="54154" z="-4368" h="30072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="193522" y="54377" z="-4368" h="8057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="189918" y="52312" z="-4368" h="44558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190213" y="52751" z="-4368" h="21540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="190023" y="52534" z="-4368" h="10394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="190195" y="51932" z="-4368" h="27382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190273" y="52191" z="-4368" h="50963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="190013" y="52150" z="-4368" h="16154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190325" y="52502" z="-4368" h="64610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190263" y="51836" z="-4368" h="48805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="189857" y="52792" z="-4368" h="47657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190179" y="51806" z="-4368" h="8206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190143" y="52614" z="-4368" h="25288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="189996" y="52160" z="-4368" h="57549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="189732" y="51947" z="-4368" h="62762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190180" y="52466" z="-4368" h="35974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="189764" y="52296" z="-4368" h="6622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190329" y="53033" z="-4368" h="18595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190930" y="52097" z="-4368" h="6571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190931" y="52022" z="-4368" h="40053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="192110" y="51686" z="-4368" h="24329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="191794" y="51796" z="-4368" h="26243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="191733" y="51624" z="-4368" h="47941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="192249" y="52294" z="-4368" h="23884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190883" y="51787" z="-4368" h="13232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="191938" y="52432" z="-4368" h="45980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="191590" y="52119" z="-4368" h="51960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="191554" y="51741" z="-4368" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="192123" y="52825" z="-4368" h="45311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="191788" y="52392" z="-4368" h="45715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="192362" y="52194" z="-4368" h="7418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="191983" y="51933" z="-4368" h="30478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="191678" y="52035" z="-4368" h="17649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="192055" y="52753" z="-4368" h="35248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="191984" y="52490" z="-4368" h="3243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="191902" y="52862" z="-4368" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="191949" y="52284" z="-4368" h="36345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="192442" y="52206" z="-4368" h="50116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="194106" y="52958" z="-4368" h="47079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="194325" y="53125" z="-4368" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="193204" y="52173" z="-4368" h="17766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="193706" y="52637" z="-4368" h="61560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="193395" y="52902" z="-4368" h="20352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="194156" y="52293" z="-4368" h="5190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="193881" y="52704" z="-4368" h="61568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="193682" y="52603" z="-4368" h="33811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="194247" y="52210" z="-4368" h="54161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="193888" y="51760" z="-4368" h="2502" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="193573" y="51797" z="-4368" h="63694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="193452" y="52586" z="-4368" h="62586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="193430" y="51947" z="-4368" h="16030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="194125" y="51979" z="-4368" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="193774" y="52956" z="-4368" h="39955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="194277" y="52788" z="-4368" h="63478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="193325" y="52596" z="-4368" h="37503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="193589" y="51858" z="-4368" h="29603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="193489" y="53065" z="-4368" h="55244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="193872" y="54377" z="-4368" h="43158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="194072" y="54421" z="-4368" h="17864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="194122" y="54333" z="-4368" h="7412" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="193422" y="54201" z="-4368" h="59858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="191646" y="50031" z="-4368" h="56067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="191496" y="50124" z="-4368" h="9155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="191677" y="50906" z="-4368" h="64142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190836" y="50134" z="-4368" h="51876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="190791" y="49873" z="-4368" h="39982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="191253" y="49655" z="-4368" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="191489" y="49733" z="-4368" h="14914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="192043" y="50844" z="-4368" h="34733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="191380" y="50369" z="-4368" h="36809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="191805" y="50154" z="-4368" h="18144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="191456" y="50723" z="-4368" h="16032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="191815" y="50088" z="-4368" h="49847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="190832" y="49346" z="-4368" h="40348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="191009" y="49963" z="-4368" h="50421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22378" /> <!-- Lesser Giant Wizard -->
+		<point x="191119" y="49603" z="-4368" h="7530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="191563" y="49556" z="-4368" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="191049" y="50452" z="-4368" h="27642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="192279" y="49919" z="-4368" h="41148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22377" /> <!-- Lesser Giant Archer -->
+		<point x="191461" y="50735" z="-4368" h="15694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="191127" y="49464" z="-4368" h="7530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="191449" y="50366" z="-4368" h="57004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="191404" y="49511" z="-4368" h="48609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="191480" y="49922" z="-4368" h="51203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="192155" y="49445" z="-4368" h="44488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="190945" y="49622" z="-4368" h="20606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22375" /> <!-- Giant Aggregation -->
+		<point x="193522" y="54421" z="-4368" h="31837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22376" /> <!-- Lesser Giant Soldier -->
+		<point x="193422" y="54421" z="-4368" h="50480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22369" /> <!-- Giant Mercenary -->
+		<point x="186662" y="48236" z="-4352" h="13380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22369" /> <!-- Giant Mercenary -->
+		<point x="186500" y="48525" z="-4360" h="28671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_giants">
+		<npc id="22369" /> <!-- Giant Mercenary -->
+		<point x="186392" y="49094" z="-4344" h="61721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="180063" y="59299" z="-3992" h="40476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="179841" y="59633" z="-3992" h="39481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="179925" y="59328" z="-3992" h="59137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="179896" y="60000" z="-3992" h="1372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="179564" y="59774" z="-3992" h="2058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="179926" y="60098" z="-3992" h="11541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="180077" y="59800" z="-3992" h="24698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="179670" y="60250" z="-3992" h="31470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="180165" y="60068" z="-3992" h="31807" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="179550" y="59897" z="-3992" h="56083" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="179516" y="59955" z="-3992" h="46594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="179595" y="59702" z="-3992" h="36407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="179660" y="59655" z="-3992" h="5098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="180374" y="59805" z="-3992" h="1562" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="182306" y="60240" z="-3992" h="24164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="181807" y="60190" z="-3992" h="49490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="181216" y="59641" z="-3992" h="6571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="181599" y="59975" z="-3992" h="19399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="181124" y="60278" z="-3992" h="25149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="181601" y="60135" z="-3992" h="21910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="181566" y="60163" z="-3992" h="14219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="182331" y="59714" z="-3992" h="36416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="181024" y="59686" z="-3992" h="4361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="182010" y="59884" z="-3992" h="22419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="182276" y="59944" z="-3992" h="40310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="181995" y="59812" z="-3992" h="10615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="181721" y="61519" z="-3992" h="65519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="182173" y="62403" z="-3992" h="36286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="181798" y="61936" z="-3992" h="46891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="181790" y="62209" z="-3992" h="26634" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="181884" y="62398" z="-3992" h="51415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="182333" y="62116" z="-3992" h="50535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="181790" y="61944" z="-3992" h="8811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="182073" y="62055" z="-3992" h="57801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="181863" y="62467" z="-3992" h="22955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="181687" y="62452" z="-3992" h="60873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="184269" y="61399" z="-3992" h="58377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="184187" y="61285" z="-3992" h="25821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="184063" y="61202" z="-3992" h="30478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="183864" y="61251" z="-3992" h="26298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="183933" y="60958" z="-3992" h="15326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="183636" y="60939" z="-3992" h="19424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183650" y="61538" z="-3992" h="31986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183440" y="61229" z="-3992" h="1327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="183437" y="61159" z="-3992" h="1529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="183370" y="61450" z="-3992" h="53660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="182569" y="62239" z="-3992" h="40234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="182517" y="62075" z="-3992" h="51008" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="182553" y="61636" z="-3992" h="15862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="182155" y="61894" z="-3992" h="44930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="182470" y="62047" z="-3992" h="21798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="184295" y="62258" z="-3992" h="6520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="183590" y="62405" z="-3992" h="18854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183999" y="61727" z="-3992" h="46621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="184156" y="62179" z="-3992" h="39874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183511" y="61908" z="-3992" h="3976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183424" y="61962" z="-3992" h="8918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="184070" y="62171" z="-3992" h="42007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="183869" y="61820" z="-3992" h="50176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="183514" y="62483" z="-3992" h="37629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="183382" y="62266" z="-3992" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="186520" y="62807" z="-4976" h="3245" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="186410" y="62380" z="-4976" h="55117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186379" y="62340" z="-4976" h="62897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186424" y="62746" z="-4976" h="59840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186424" y="62519" z="-4976" h="59810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186420" y="62562" z="-4976" h="1627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22411" /> <!-- Baron's Overlord -->
+		<point x="187205" y="61312" z="-4984" h="39883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="187081" y="61312" z="-4984" h="1829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="187267" y="61174" z="-4984" h="2439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22411" /> <!-- Baron's Overlord -->
+		<point x="187733" y="61119" z="-4984" h="59725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186957" y="60944" z="-4976" h="26345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22411" /> <!-- Baron's Overlord -->
+		<point x="188144" y="60307" z="-4976" h="11465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187741" y="60675" z="-4984" h="38976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187950" y="61395" z="-4976" h="1897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22411" /> <!-- Baron's Overlord -->
+		<point x="187710" y="60813" z="-4984" h="9747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="187834" y="60031" z="-4976" h="47617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="188136" y="61073" z="-4976" h="54620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186926" y="60990" z="-4976" h="32195" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187019" y="61312" z="-4984" h="7548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="188144" y="60491" z="-4976" h="18633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187958" y="60629" z="-4984" h="20189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187640" y="61119" z="-4984" h="20462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22411" /> <!-- Baron's Overlord -->
+		<point x="187059" y="60685" z="-4984" h="40775" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22411" /> <!-- Baron's Overlord -->
+		<point x="187245" y="60731" z="-4984" h="53206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="187245" y="60455" z="-4984" h="17007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="187462" y="60225" z="-4984" h="17019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186935" y="60317" z="-4976" h="14849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187400" y="60225" z="-4984" h="3997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22411" /> <!-- Baron's Overlord -->
+		<point x="187298" y="61588" z="-4976" h="12343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22411" /> <!-- Baron's Overlord -->
+		<point x="187857" y="61625" z="-4976" h="56116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="187578" y="61671" z="-4976" h="21994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="186513" y="62775" z="-4976" h="25349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186647" y="62567" z="-4976" h="40952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186379" y="62619" z="-4976" h="45333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="184094" y="59289" z="-3992" h="23095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="184206" y="59071" z="-3992" h="12696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="183789" y="59207" z="-3992" h="56601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="183760" y="59298" z="-3992" h="9812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183406" y="59340" z="-3992" h="42115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183669" y="59438" z="-3992" h="7502" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="183958" y="58575" z="-3992" h="16909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="183416" y="59385" z="-3992" h="14333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="183563" y="58493" z="-3992" h="11273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="183958" y="59367" z="-3992" h="15770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="184066" y="58325" z="-3992" h="42187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183429" y="58061" z="-3992" h="44870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="184109" y="59229" z="-3992" h="15516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="184050" y="58981" z="-3992" h="34206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="184195" y="58501" z="-3992" h="50854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="183691" y="58528" z="-3992" h="47912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="184291" y="58106" z="-3992" h="20180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="184086" y="58141" z="-3992" h="58864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="183534" y="58455" z="-3992" h="26643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="183625" y="58262" z="-3992" h="64497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186393" y="57515" z="-4568" h="11665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186429" y="57223" z="-4568" h="61568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="186496" y="57392" z="-4568" h="60817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="186439" y="57620" z="-4568" h="5516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186512" y="57628" z="-4568" h="5350" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186804" y="57358" z="-4568" h="64724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="186390" y="57467" z="-4568" h="35824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="187313" y="57468" z="-4568" h="31918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187018" y="57672" z="-4568" h="59985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187667" y="57536" z="-4568" h="54373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187077" y="57604" z="-4568" h="32078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187431" y="57604" z="-4568" h="4313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="188139" y="57672" z="-4568" h="24293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186824" y="57534" z="-4568" h="10876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186638" y="57400" z="-4568" h="57630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186638" y="57668" z="-4568" h="23544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186415" y="55358" z="-4568" h="61115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186488" y="57192" z="-4568" h="4149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="186538" y="55369" z="-4568" h="61737" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186393" y="55502" z="-4568" h="9979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186438" y="57125" z="-4568" h="57567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186407" y="55457" z="-4568" h="64024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186380" y="55319" z="-4568" h="61959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="186463" y="57180" z="-4568" h="63567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="186436" y="55340" z="-4568" h="62586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186409" y="57455" z="-4568" h="5096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186396" y="55461" z="-4568" h="61917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186426" y="57201" z="-4568" h="48372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187988" y="55625" z="-4568" h="19684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186762" y="57333" z="-4568" h="53968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="187313" y="57332" z="-4568" h="26750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="187962" y="56992" z="-4568" h="58185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="187856" y="55751" z="-4568" h="58781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="187608" y="56924" z="-4568" h="51377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="187916" y="56177" z="-4568" h="42386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="187616" y="55325" z="-4568" h="41249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="188036" y="56248" z="-4568" h="37973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187856" y="55893" z="-4568" h="36231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187726" y="56788" z="-4568" h="40779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="188139" y="56516" z="-4568" h="12532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187856" y="55964" z="-4568" h="57392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187844" y="57332" z="-4568" h="19089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187844" y="56652" z="-4568" h="1953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="186700" y="57333" z="-4568" h="64546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="187916" y="55822" z="-4568" h="61352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="188139" y="56924" z="-4568" h="43730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187916" y="56035" z="-4568" h="64072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187736" y="55680" z="-4568" h="53564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187676" y="55609" z="-4568" h="44523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187016" y="55325" z="-4568" h="34232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187903" y="56584" z="-4568" h="6299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187962" y="56856" z="-4568" h="19805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187616" y="55538" z="-4568" h="25290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="186638" y="55309" z="-4568" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190445" y="59474" z="-4976" h="31638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="190273" y="61120" z="-4976" h="37363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190365" y="61390" z="-4976" h="55538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="190195" y="59826" z="-4976" h="23143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190319" y="61012" z="-4976" h="23465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190365" y="60742" z="-4976" h="50813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190395" y="59694" z="-4976" h="37514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="187779" y="55598" z="-4568" h="12220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="187669" y="55575" z="-4568" h="24378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="186318" y="55560" z="-4568" h="9525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="188943" y="62484" z="-4976" h="8946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="189047" y="62359" z="-4976" h="55831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="188943" y="62709" z="-4976" h="61393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="188943" y="62559" z="-4976" h="36872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="189515" y="62559" z="-4976" h="7276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="188787" y="62384" z="-4976" h="49128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="189099" y="62584" z="-4976" h="36734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190003" y="62012" z="-4976" h="59886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190187" y="62552" z="-4976" h="45613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190463" y="62768" z="-4976" h="45552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190463" y="62552" z="-4976" h="44219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="191422" y="61386" z="-4984" h="55510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="191560" y="61386" z="-4984" h="23153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="191238" y="60792" z="-4976" h="25955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190870" y="61386" z="-4984" h="58193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="191514" y="60738" z="-4976" h="16881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="191008" y="61224" z="-4984" h="20787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190641" y="60850" z="-4976" h="8433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="191330" y="60630" z="-4976" h="1628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="191744" y="61170" z="-4976" h="12603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190825" y="61390" z="-4984" h="35801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190779" y="60688" z="-4976" h="18559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="190645" y="59650" z="-4976" h="40479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190695" y="59870" z="-4976" h="51096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190495" y="59430" z="-4976" h="13253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="190509" y="62498" z="-4976" h="25685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="190647" y="62336" z="-4976" h="16961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="192391" y="61894" z="-4976" h="30439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="190647" y="62498" z="-4976" h="45355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="192348" y="61840" z="-4976" h="26194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190877" y="62066" z="-4984" h="2341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190693" y="62282" z="-4976" h="14997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="191658" y="61792" z="-4984" h="35379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="191336" y="62764" z="-4976" h="51979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="191336" y="62062" z="-4984" h="56902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="191560" y="61440" z="-4984" h="53177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190876" y="62656" z="-4976" h="22457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="191244" y="62224" z="-4984" h="19720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="191566" y="61738" z="-4984" h="1688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="191106" y="62386" z="-4976" h="6451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190922" y="62170" z="-4984" h="45831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="191566" y="62764" z="-4976" h="2930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="190825" y="61660" z="-4984" h="51825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="190795" y="59254" z="-4976" h="34439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="190795" y="59298" z="-4976" h="4004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="193152" y="59352" z="-4976" h="19432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="193752" y="59132" z="-4976" h="43364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193702" y="59088" z="-4976" h="29325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193902" y="59220" z="-4976" h="3314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="192953" y="61017" z="-4976" h="31457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="192781" y="61395" z="-4984" h="62136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="192566" y="60855" z="-4976" h="56103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="193658" y="60682" z="-4976" h="36932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="193744" y="60844" z="-4976" h="54873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="193443" y="61330" z="-4976" h="57641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="193873" y="60844" z="-4976" h="30129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="193615" y="61384" z="-4976" h="59940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193486" y="60844" z="-4976" h="60764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193228" y="60952" z="-4976" h="17881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="192867" y="60963" z="-4976" h="53119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="192781" y="60639" z="-4976" h="20204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193228" y="60736" z="-4976" h="14553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="192996" y="60801" z="-4976" h="34840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="192566" y="61341" z="-4984" h="45967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="193502" y="59748" z="-4976" h="15259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="193802" y="59704" z="-4976" h="15164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193852" y="59484" z="-4976" h="63416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="193698" y="61937" z="-4976" h="25175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="193440" y="62153" z="-4976" h="17552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="193311" y="61991" z="-4984" h="12365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="192778" y="62326" z="-4976" h="49016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="193397" y="62099" z="-4976" h="57190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="192907" y="62380" z="-4976" h="64469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="193698" y="62423" z="-4976" h="53544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22389" /> <!-- Baron's Ranger -->
+		<point x="193787" y="61600" z="-4976" h="36666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="193569" y="62747" z="-4976" h="58791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22390" /> <!-- Baron's Puncher -->
+		<point x="193036" y="61894" z="-4984" h="48378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193096" y="62207" z="-4976" h="12542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193354" y="62099" z="-4976" h="22349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193225" y="61883" z="-4984" h="30264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22388" /> <!-- Baron's Templar -->
+		<point x="192692" y="62326" z="-4976" h="29053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="192907" y="62110" z="-4984" h="37967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="192821" y="62596" z="-4976" h="26934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="192735" y="61840" z="-4984" h="54682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22387" /> <!-- Baron's Warrior -->
+		<point x="193082" y="61503" z="-4984" h="38410" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="190028" y="54189" z="-4368" h="40798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="189645" y="53687" z="-4368" h="51234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="190031" y="54165" z="-4368" h="5845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190293" y="54269" z="-4368" h="50183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190166" y="54109" z="-4368" h="12328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190522" y="54435" z="-4368" h="3418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190489" y="54413" z="-4368" h="10578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190235" y="53745" z="-4368" h="22210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="193572" y="54157" z="-4368" h="35693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="193872" y="53849" z="-4368" h="39510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="193572" y="53805" z="-4368" h="42826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="194077" y="54206" z="-4368" h="55934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="193718" y="54428" z="-4368" h="65365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="194120" y="54173" z="-4368" h="26352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="194111" y="54149" z="-4368" h="21817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="194252" y="54154" z="-4368" h="30072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="193522" y="54377" z="-4368" h="8057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="189918" y="52312" z="-4368" h="44558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190213" y="52751" z="-4368" h="21540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="190023" y="52534" z="-4368" h="10394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="190195" y="51932" z="-4368" h="27382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190273" y="52191" z="-4368" h="50963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="190013" y="52150" z="-4368" h="16154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190325" y="52502" z="-4368" h="64610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190263" y="51836" z="-4368" h="48805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="189857" y="52792" z="-4368" h="47657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190179" y="51806" z="-4368" h="8206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190143" y="52614" z="-4368" h="25288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="189996" y="52160" z="-4368" h="57549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="189732" y="51947" z="-4368" h="62762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190180" y="52466" z="-4368" h="35974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="189764" y="52296" z="-4368" h="6622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190329" y="53033" z="-4368" h="18595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190930" y="52097" z="-4368" h="6571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190931" y="52022" z="-4368" h="40053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="192110" y="51686" z="-4368" h="24329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="191794" y="51796" z="-4368" h="26243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="191733" y="51624" z="-4368" h="47941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="192249" y="52294" z="-4368" h="23884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190883" y="51787" z="-4368" h="13232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="191938" y="52432" z="-4368" h="45980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="191590" y="52119" z="-4368" h="51960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="191554" y="51741" z="-4368" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="192123" y="52825" z="-4368" h="45311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="191788" y="52392" z="-4368" h="45715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="192362" y="52194" z="-4368" h="7418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="191983" y="51933" z="-4368" h="30478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="191678" y="52035" z="-4368" h="17649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="192055" y="52753" z="-4368" h="35248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="191984" y="52490" z="-4368" h="3243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="191902" y="52862" z="-4368" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="191949" y="52284" z="-4368" h="36345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="192442" y="52206" z="-4368" h="50116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="194106" y="52958" z="-4368" h="47079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="194325" y="53125" z="-4368" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="193204" y="52173" z="-4368" h="17766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="193706" y="52637" z="-4368" h="61560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="193395" y="52902" z="-4368" h="20352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="194156" y="52293" z="-4368" h="5190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="193881" y="52704" z="-4368" h="61568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="193682" y="52603" z="-4368" h="33811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="194247" y="52210" z="-4368" h="54161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="193888" y="51760" z="-4368" h="2502" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="193573" y="51797" z="-4368" h="63694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="193452" y="52586" z="-4368" h="62586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="193430" y="51947" z="-4368" h="16030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="194125" y="51979" z="-4368" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="193774" y="52956" z="-4368" h="39955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="194277" y="52788" z="-4368" h="63478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="193325" y="52596" z="-4368" h="37503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="193589" y="51858" z="-4368" h="29603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="193489" y="53065" z="-4368" h="55244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="193872" y="54377" z="-4368" h="43158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="194072" y="54421" z="-4368" h="17864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="194122" y="54333" z="-4368" h="7412" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="193422" y="54201" z="-4368" h="59858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="191646" y="50031" z="-4368" h="56067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="191496" y="50124" z="-4368" h="9155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="191677" y="50906" z="-4368" h="64142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190836" y="50134" z="-4368" h="51876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="190791" y="49873" z="-4368" h="39982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="191253" y="49655" z="-4368" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="191489" y="49733" z="-4368" h="14914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="192043" y="50844" z="-4368" h="34733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="191380" y="50369" z="-4368" h="36809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="191805" y="50154" z="-4368" h="18144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="191456" y="50723" z="-4368" h="16032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="191815" y="50088" z="-4368" h="49847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="190832" y="49346" z="-4368" h="40348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="191009" y="49963" z="-4368" h="50421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22381" /> <!-- Lesser Wizard -->
+		<point x="191119" y="49603" z="-4368" h="7530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="191563" y="49556" z="-4368" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="191049" y="50452" z="-4368" h="27642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="192279" y="49919" z="-4368" h="41148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22380" /> <!-- Lesser Archer -->
+		<point x="191461" y="50735" z="-4368" h="15694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="191127" y="49464" z="-4368" h="7530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="191449" y="50366" z="-4368" h="57004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="191404" y="49511" z="-4368" h="48609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="191480" y="49922" z="-4368" h="51203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="192155" y="49445" z="-4368" h="44488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="190945" y="49622" z="-4368" h="20606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22382" /> <!-- Lesser Hunter -->
+		<point x="193522" y="54421" z="-4368" h="31837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22379" /> <!-- Lesser Warrior -->
+		<point x="193422" y="54421" z="-4368" h="50480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22369" /> <!-- Giant Mercenary -->
+		<point x="186662" y="48236" z="-4352" h="13380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22369" /> <!-- Giant Mercenary -->
+		<point x="186500" y="48525" z="-4360" h="28671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giants_cave_humans">
+		<npc id="22369" /> <!-- Giant Mercenary -->
+		<point x="186392" y="49094" z="-4344" h="61721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="174152" y="54801" z="-4352" h="34904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="173826" y="55494" z="-4368" h="6236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="173626" y="54810" z="-4352" h="47526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="173599" y="54884" z="-4360" h="6476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="173352" y="54715" z="-4344" h="28099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="173687" y="54775" z="-4344" h="49595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="173327" y="54792" z="-4344" h="13479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="173441" y="54622" z="-4344" h="65533" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="173371" y="55664" z="-4344" h="12257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="173413" y="56075" z="-4344" h="4854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="175067" y="54870" z="-4352" h="312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="175158" y="55186" z="-4368" h="40625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="174933" y="54770" z="-4344" h="10240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="174633" y="54951" z="-4360" h="18144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="175007" y="54914" z="-4360" h="35121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="174644" y="54939" z="-4360" h="19344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="173901" y="55476" z="-4368" h="19009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="174551" y="54677" z="-4344" h="48718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="173968" y="54741" z="-4344" h="58556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="174220" y="54796" z="-4352" h="60696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="174425" y="55340" z="-4368" h="48642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="174984" y="55680" z="-4368" h="23487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="175439" y="56166" z="-4344" h="57670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="174856" y="56068" z="-4344" h="60755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="175134" y="56114" z="-4344" h="64746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="175117" y="55489" z="-4368" h="23206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="175548" y="55911" z="-4344" h="21928" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="175464" y="55464" z="-4344" h="19784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="177840" y="54283" z="-3968" h="58937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="178210" y="54217" z="-3976" h="11400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="177736" y="54658" z="-3968" h="11359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="177815" y="54286" z="-3968" h="6017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="177705" y="54422" z="-3968" h="7313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="177816" y="54496" z="-3968" h="62497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="177851" y="54377" z="-3976" h="65528" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="178085" y="55396" z="-3968" h="18433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="173247" y="54692" z="-4344" h="17776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="175501" y="55437" z="-4344" h="56306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="177815" y="54658" z="-3968" h="3346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="174819" y="55356" z="-4368" h="38359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="174633" y="56085" z="-4344" h="42402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="174943" y="56166" z="-4344" h="33220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="178289" y="55681" z="-3968" h="756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="179423" y="55183" z="-3968" h="62622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="178259" y="55576" z="-3968" h="20461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="178704" y="55502" z="-3968" h="13606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="178605" y="55402" z="-3968" h="33706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="179346" y="54912" z="-3984" h="28109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178306" y="54654" z="-3992" h="2339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="179268" y="55280" z="-3968" h="10547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="179341" y="54017" z="-3992" h="15582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178862" y="54076" z="-3984" h="38449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179740" y="54214" z="-3976" h="48925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179681" y="53771" z="-3968" h="37617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="179346" y="53907" z="-3984" h="21712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="179908" y="54548" z="-3976" h="16427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="179617" y="53944" z="-3976" h="49327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="179340" y="55171" z="-3968" h="1840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179326" y="53991" z="-3984" h="28124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179469" y="53752" z="-3968" h="395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="182266" y="53400" z="-4344" h="8626" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="182356" y="53090" z="-4360" h="28218" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="182296" y="53368" z="-4344" h="4804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="182684" y="53302" z="-4344" h="50719" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="179268" y="54084" z="-3992" h="64748" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="180048" y="54636" z="-3968" h="15364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178526" y="55588" z="-3968" h="22878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="182545" y="52056" z="-4368" h="5192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="183678" y="52286" z="-4360" h="37100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="182545" y="53112" z="-4368" h="39075" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="183232" y="51437" z="-4360" h="62077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="183362" y="52448" z="-4368" h="44605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="182629" y="53169" z="-4360" h="2029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="183418" y="51642" z="-4360" h="45494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="182522" y="52410" z="-4368" h="50483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="182830" y="52939" z="-4360" h="59404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="182832" y="52879" z="-4368" h="56788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="182997" y="52905" z="-4360" h="22455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="183812" y="52303" z="-4352" h="36089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="183994" y="52146" z="-4352" h="15702" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="182820" y="53006" z="-4360" h="62139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="183229" y="51255" z="-4352" h="22985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="182688" y="51681" z="-4352" h="9222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="182460" y="53303" z="-4352" h="59895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="182579" y="52551" z="-4368" h="15859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="184077" y="52100" z="-4344" h="37013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="183891" y="51867" z="-4344" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="183957" y="52140" z="-4352" h="21824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="183113" y="51352" z="-4352" h="33248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178684" y="54472" z="-3992" h="58470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178255" y="55032" z="-3992" h="55644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="179502" y="53992" z="-3992" h="37089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="183362" y="51392" z="-4352" h="14757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178184" y="54196" z="-3968" h="26945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="177975" y="54196" z="-3968" h="29208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="178131" y="55588" z="-3968" h="17400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="179580" y="54636" z="-3992" h="52267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178447" y="55402" z="-3976" h="37707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179424" y="55280" z="-3968" h="22754" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178289" y="55030" z="-3992" h="60919" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="179736" y="55004" z="-3968" h="42289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="179000" y="55216" z="-3968" h="56509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="178710" y="55374" z="-3968" h="24517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178763" y="55495" z="-3968" h="9441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="182266" y="53496" z="-4344" h="47869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179424" y="54636" z="-3992" h="37126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179346" y="53808" z="-3976" h="51448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178526" y="55309" z="-3976" h="30684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="179346" y="53992" z="-3992" h="64200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178842" y="54937" z="-3992" h="55429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179502" y="54728" z="-3992" h="33468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="182173" y="53304" z="-4344" h="61989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178368" y="55402" z="-3976" h="30875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178210" y="55402" z="-3976" h="1843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22372" /> <!-- Mutated Archer -->
+		<point x="178921" y="55309" z="-3968" h="53350" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178289" y="55588" z="-3968" h="3206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="179000" y="55402" z="-3968" h="46357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22370" /> <!-- Mutated Warrior -->
+		<point x="178763" y="55402" z="-3968" h="65383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22371" /> <!-- Mutated Tracker -->
+		<point x="178842" y="55495" z="-3968" h="11812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34301" /> <!-- Cave Control Device -->
+		<point x="187537" y="60793" z="-4976" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="178066" y="52268" z="-3984" h="13085" />
+		<npc id="18017" /><!--Teleport-->
+	</spawn>
+	<territory name="southern_interior">
+		<add x="176233" y="60859" zmin="-4370" zmax="-4370"/>
+		<add x="173263" y="60840" zmin="-4370" zmax="-4370"/>
+		<add x="173258" y="62947" zmin="-4370" zmax="-4370"/>
+		<add x="176272" y="62951" zmin="-4370" zmax="-4370"/>
+	</territory>
+	<spawn name="southern_interior_warior" count="10" respawn="60">
+		<territory name="southern_interior"/>
+		<npc id="22418"/>
+	</spawn>
+	<spawn name="southern_interior_warior" count="10" respawn="60">
+		<territory name="southern_interior"/>
+		<npc id="22379"/>
+	</spawn>
+	<spawn name="southern_interior_mag" count="10" respawn="60">
+		<territory name="southern_interior"/>
+		<npc id="22381"/>
+	</spawn>
+	<spawn name="southern_interior_hanter" count="15" respawn="60">
+		<territory name="southern_interior"/>
+		<npc id="22419"/>
+	</spawn>
+</list>

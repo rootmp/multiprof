@@ -1,0 +1,3552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn group="fort_117" count="1" respawn="60">
+		<point x="111781" y="-14738" z="-992" h="16383"/>
+		<npc id="34146"><!--Gatekeeper-->
+			<set name="doors" value="23170004;23170005"/>
+		</npc>
+	</spawn>
+	<spawn group="fort_117" count="1" respawn="60">
+		<point x="111778" y="-15969" z="-992" h="16383"/>
+		<npc id="34146"><!--Gatekeeper-->
+			<set name="doors" value="23170008;23170009"/>
+		</npc>
+	</spawn>
+	<spawn group="fort_117" count="1" respawn="60">
+		<point x="112036" y="-14941" z="-992" h="49103"/>
+		<npc id="34146"><!--Gatekeeper-->
+			<set name="doors" value="23170004;23170005"/>
+		</npc>
+	</spawn>
+	<spawn group="fort_117" count="1" respawn="60">
+		<point x="112038" y="-16142" z="-992" h="49103"/>
+		<npc id="34146"><!--Gatekeeper-->
+			<set name="doors" value="23170008;23170009"/>
+		</npc>
+	</spawn>
+	<spawn group="fort_117" count="1" respawn="60">
+		<point x="112326" y="-15873" z="-992" h="32554"/>
+		<npc id="34148"/><!--Logistics Officer-->
+	</spawn>
+	<spawn group="fort_117" count="1" respawn="60">
+		<point x="111912" y="-14978" z="-840" h="48409"/>
+		<npc id="34145"/><!--Fortress Manager-->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="111075" y="-8184" z="-2344" h="16316"/>
+		<npc id="18397"/><!--Flag of Aden-->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="111391" y="-6804" z="-2336" h="44575"/>
+		<npc id="34137"/><!--Eins (Deputy Captain)-->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="111466" y="-6951" z="-2336" h="44575"/>
+		<npc id="34136"/><!--Artheo Ken Sider (Military Association Leader)-->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="108390" y="-7910" z="-2576" h="7370"/>
+		<npc id="18399"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="107986" y="-8073" z="-2528" h="7370"/>
+		<npc id="18398"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="107690" y="-7788" z="-2576" h="7370"/>
+		<npc id="18398"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="108033" y="-6063" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109528" y="-6187" z="-2584" h="51336"/>
+		<npc id="18401"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109722" y="-6201" z="-2584" h="51336"/>
+		<npc id="18401"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109630" y="-6233" z="-2584" h="51336"/>
+		<npc id="18401"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109405" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109455" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109505" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109555" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109605" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109655" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109705" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109755" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-5744" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109805" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-5694" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-5794" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-5894" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-5844" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="108834" y="-5868" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-5944" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-5994" z="-2395" h="51336"/>
+		<npc id="18403"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="108654" y="-5868" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-6094" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-6044" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109855" y="-6144" z="-2395" h="51336"/>
+		<npc id="18402"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="108654" y="-6038" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="108834" y="-6038" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109014" y="-5868" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109194" y="-5868" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109014" y="-6038" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_prepare" count="1" respawn="60">
+		<point x="109194" y="-6038" z="-2584" h="54568"/>
+		<npc id="18400"/><!---->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110251" y="-11255" z="-936" h="9931"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="300">
+		<point x="112274" y="-13178" z="-992" h="16466"/>
+		<npc id="22159"/><!--Jeras (Castle Wall Guard)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110059" y="-11485" z="-936" h="9931"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="300">
+		<point x="110474" y="-13178" z="-992" h="16466"/>
+		<npc id="22159"/><!--Jeras (Castle Wall Guard)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110155" y="-11370" z="-936" h="9931"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="300">
+		<point x="109274" y="-13178" z="-992" h="16466"/>
+		<npc id="22159"/><!--Jeras (Castle Wall Guard)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109962" y="-11599" z="-936" h="9931"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109480" y="-12174" z="-936" h="9931"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109384" y="-12289" z="-936" h="9931"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109673" y="-11944" z="-936" h="9931"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109769" y="-11829" z="-936" h="9931"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109576" y="-12059" z="-936" h="9931"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109866" y="-11714" z="-936" h="9931"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109287" y="-12404" z="-936" h="9931"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109193" y="-12519" z="-936" h="9931"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109081" y="-12652" z="-936" h="9931"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108980" y="-12774" z="-936" h="9931"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112599" y="-10903" z="-936" h="23751"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112888" y="-11224" z="-1510" h="23751"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112712" y="-11016" z="-1586" h="23751"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112808" y="-11128" z="-1544" h="23751"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112984" y="-11336" z="-1474" h="23751"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113080" y="-11448" z="-1440" h="23751"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113176" y="-11560" z="-1408" h="23751"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113288" y="-11688" z="-1372" h="23751"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113416" y="-11832" z="-1330" h="23751"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113528" y="-11960" z="-1301" h="23751"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113656" y="-12104" z="-1278" h="23751"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113784" y="-12264" z="-1242" h="23751"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113912" y="-12424" z="-1189" h="23751"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114040" y="-12584" z="-1123" h="23751"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112503" y="-10788" z="-936" h="23751"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-13178" z="-992" h="16466"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111285" y="-13178" z="-992" h="16466"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111447" y="-13178" z="-992" h="16466"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110252" y="-13178" z="-992" h="16466"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110698" y="-13178" z="-992" h="16466"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109668" y="-13178" z="-992" h="16466"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109496" y="-13178" z="-992" h="16466"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111898" y="-13178" z="-992" h="16466"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110862" y="-13178" z="-992" h="16466"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109041" y="-13178" z="-992" h="16466"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="300">
+		<point x="111674" y="-13178" z="-992" h="16466"/>
+		<npc id="22159"/><!--Jeras (Castle Wall Guard)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112510" y="-13178" z="-992" h="16466"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110205" y="-15991" z="-992" h="15602"/>
+		<npc id="22162"/><!--Thesakar (Grand Warchief)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110562" y="-15991" z="-992" h="15602"/>
+		<npc id="22161"/><!--Tegaffe (Grand Warchief)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110726" y="-15991" z="-992" h="15602"/>
+		<npc id="22160"/><!--Tebot (Grand Warchief)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110131" y="-14573" z="-984" h="15602"/>
+		<npc id="22164"/><!--Laokan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110131" y="-14873" z="-992" h="15602"/>
+		<npc id="22164"/><!--Laokan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110131" y="-14723" z="-992" h="15602"/>
+		<npc id="22164"/><!--Laokan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109986" y="-15991" z="-992" h="15602"/>
+		<npc id="22163"/><!--Theor (Grand Warchief)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110251" y="-14573" z="-984" h="15602"/>
+		<npc id="22165"/><!--Taklacan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110131" y="-15323" z="-992" h="15602"/>
+		<npc id="22164"/><!--Laokan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110131" y="-15023" z="-992" h="15602"/>
+		<npc id="22164"/><!--Laokan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110251" y="-15173" z="-984" h="15602"/>
+		<npc id="22165"/><!--Taklacan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110131" y="-15173" z="-992" h="15602"/>
+		<npc id="22164"/><!--Laokan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110251" y="-15323" z="-984" h="15602"/>
+		<npc id="22165"/><!--Taklacan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110491" y="-14573" z="-984" h="15602"/>
+		<npc id="22166"/><!--Vulcan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110251" y="-14873" z="-984" h="15602"/>
+		<npc id="22165"/><!--Taklacan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110251" y="-15023" z="-984" h="15602"/>
+		<npc id="22165"/><!--Taklacan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110251" y="-14723" z="-984" h="15602"/>
+		<npc id="22165"/><!--Taklacan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110491" y="-14723" z="-992" h="15602"/>
+		<npc id="22166"/><!--Vulcan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110491" y="-14873" z="-992" h="15602"/>
+		<npc id="22166"/><!--Vulcan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110491" y="-15023" z="-992" h="15602"/>
+		<npc id="22166"/><!--Vulcan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110491" y="-15173" z="-992" h="15602"/>
+		<npc id="22166"/><!--Vulcan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110491" y="-15323" z="-992" h="15602"/>
+		<npc id="22166"/><!--Vulcan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110611" y="-14873" z="-992" h="15602"/>
+		<npc id="22167"/><!--Zakan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110611" y="-14573" z="-984" h="15602"/>
+		<npc id="22167"/><!--Zakan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110611" y="-15023" z="-992" h="15602"/>
+		<npc id="22167"/><!--Zakan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110611" y="-15173" z="-992" h="15602"/>
+		<npc id="22167"/><!--Zakan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110611" y="-15323" z="-992" h="15602"/>
+		<npc id="22167"/><!--Zakan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111576" y="-14413" z="-992" h="32767"/>
+		<npc id="22157"/><!--Gilatu (Tame)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110611" y="-14723" z="-992" h="15602"/>
+		<npc id="22167"/><!--Zakan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111828" y="-14701" z="-992" h="32767"/>
+		<npc id="22164"/><!--Laokan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111828" y="-14145" z="-992" h="32767"/>
+		<npc id="22165"/><!--Taklacan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108910" y="-15396" z="-992" h="0"/>
+		<npc id="22166"/><!--Vulcan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111989" y="-16264" z="-992" h="32767"/>
+		<npc id="22166"/><!--Vulcan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="109113" y="-15622" z="-992" h="0"/>
+		<npc id="22158"/><!--Ogre (Tame)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108912" y="-15851" z="-992" h="0"/>
+		<npc id="22167"/><!--Zakan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="300">
+		<point x="111074" y="-13178" z="-992" h="16466"/>
+		<npc id="22159"/><!--Jeras (Castle Wall Guard)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108879" y="-12894" z="-1000" h="9931"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="300">
+		<point x="109874" y="-13178" z="-992" h="16466"/>
+		<npc id="22159"/><!--Jeras (Castle Wall Guard)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113160" y="-13176" z="-992" h="16047"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113336" y="-13176" z="-992" h="16293"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113560" y="-13176" z="-992" h="16166"/>
+		<npc id="22159"/><!--Jeras (Castle Wall Guard)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="113800" y="-13176" z="-992" h="16082"/>
+		<npc id="22181"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112696" y="-13176" z="-992" h="16383"/>
+		<npc id="22180"/><!--Orc Archer-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111992" y="-16616" z="-992" h="31941"/>
+		<npc id="22167"/><!--Zakan (General)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112920" y="-13176" z="-992" h="16924"/>
+		<npc id="22159"/><!--Jeras (Castle Wall Guard)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111560" y="-16424" z="-992" h="32741"/>
+		<npc id="22157"/><!--Gilatu (Tame)-->
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-12203" z="-1752" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-12353" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-12303" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-12403" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-12353" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-12453" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-12553" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-12503" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-12453" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-12553" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-12203" z="-1744" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-12503" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-12403" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-12203" z="-1744" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-12553" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-12403" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-12203" z="-1744" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-12453" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-12303" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-12403" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-12353" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-12453" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-12403" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-12353" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-12303" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-12353" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-12553" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-12453" z="-1744" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-12503" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-12203" z="-1736" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-12203" z="-1736" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-12503" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-12403" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-12503" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-12303" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-12353" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-12303" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-12553" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-12113" z="-1744" h="16466"/>
+		<npc id="22164"><!--Laokan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-12206" z="-1720" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-12356" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-12306" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-12456" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-12406" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-12506" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-12113" z="-1744" h="16466"/>
+		<npc id="22165"><!--Taklacan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-12556" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-12553" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110692" y="-12673" z="-1752" h="16466"/>
+		<npc id="22158"><!--Ogre (Tame)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-12306" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-12406" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-12456" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-12356" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-12206" z="-1720" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-12506" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-12556" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-12306" z="-1712" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-12356" z="-1712" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-12456" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-12556" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-12506" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-12406" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-12206" z="-1720" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-12506" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-12456" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-12356" z="-1712" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-12306" z="-1712" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-12556" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-12406" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-12406" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-12356" z="-1712" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-12306" z="-1712" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-12556" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-12206" z="-1720" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-12506" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-12456" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-12206" z="-1728" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-12306" z="-1712" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-12356" z="-1712" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-12456" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-12506" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-12556" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-12116" z="-1736" h="16466"/>
+		<npc id="22166"><!--Vulcan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-12304" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111168" y="-12731" z="-1704" h="16466"/>
+		<npc id="22157"><!--Gilatu (Tame)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-12204" z="-1728" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-12116" z="-1736" h="16466"/>
+		<npc id="22167"><!--Zakan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-12404" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-12354" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-12454" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-12504" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-12554" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-12304" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-12204" z="-1736" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-12404" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-12354" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-12504" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-12454" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-12406" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-12204" z="-1736" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-12354" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-12554" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-12304" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-12404" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-12504" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-12554" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-12454" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-12304" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-12204" z="-1736" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-12206" z="-1720" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-12503" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-12204" z="-1736" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-12554" z="-1704" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-12504" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-12304" z="-1728" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-12354" z="-1728" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-12454" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-12404" z="-1728" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-12554" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-12504" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-12204" z="-1736" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-12304" z="-1728" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-12404" z="-1728" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-12354" z="-1728" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-12454" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-12354" z="-1720" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111585" y="-12731" z="-1704" h="16466"/>
+		<npc id="22157"><!--Gilatu (Tame)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-12504" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-12554" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-12114" z="-1744" h="16466"/>
+		<npc id="22164"><!--Laokan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-12114" z="-1744" h="16466"/>
+		<npc id="22165"><!--Taklacan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-12207" z="-1744" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-12407" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-12357" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-12307" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-12357" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-12207" z="-1744" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-12407" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-12557" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-12307" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-12457" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-12404" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-12507" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-12357" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-12207" z="-1744" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-12307" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-12457" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-12407" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-12557" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-12507" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-12457" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-12507" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-12307" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-12207" z="-1744" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-12357" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-12457" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-12407" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-12557" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-12207" z="-1744" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-12407" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-12357" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-12307" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-12457" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-12507" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-12557" z="-1712" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-12557" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-12307" z="-1728" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-12207" z="-1744" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-12357" z="-1728" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-12457" z="-1720" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-12407" z="-1728" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-12507" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-12507" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-12557" z="-1720" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111996" y="-12659" z="-1712" h="16466"/>
+		<npc id="22158"><!--Ogre (Tame)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-12117" z="-1752" h="16466"/>
+		<npc id="22166"><!--Vulcan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-12117" z="-1752" h="16466"/>
+		<npc id="22167"><!--Zakan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-11603" z="-1728" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-11703" z="-1728" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-11803" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-11753" z="-1728" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-11903" z="-1736" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-11853" z="-1736" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-11703" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110567" y="-11953" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-11753" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-11803" z="-1744" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-11853" z="-1744" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-11953" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-11903" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-11603" z="-1736" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-11703" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-11803" z="-1744" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-11903" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-11753" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-11953" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-11853" z="-1744" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-11603" z="-1736" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-11603" z="-1736" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-11703" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-11753" z="-1736" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-11853" z="-1744" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-11803" z="-1744" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-11903" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-11953" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-11603" z="-1760" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-11753" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-11803" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-11703" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-11853" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-11903" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-11603" z="-1760" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-11703" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-11803" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-11753" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-11853" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-11706" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110717" y="-11513" z="-1744" h="16466"/>
+		<npc id="22167"><!--Zakan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-11953" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-11756" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-11903" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110617" y="-11513" z="-1744" h="16466"/>
+		<npc id="22166"><!--Vulcan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-11606" z="-1768" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-11856" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-11806" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-11906" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111009" y="-11956" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110767" y="-11953" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-11606" z="-1768" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-11756" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-11706" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-11806" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-11856" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-11906" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-11606" z="-1776" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-11956" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-11706" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-11756" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-11856" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-11906" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-11606" z="-1776" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-11956" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-11756" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-12454" z="-1712" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-11906" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-11706" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-11956" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-11856" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-11756" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-11706" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-11606" z="-1776" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-11806" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-11856" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-11906" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-11606" z="-1784" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-11706" z="-1768" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-11806" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-11756" z="-1768" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-11906" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111159" y="-11516" z="-1792" h="16466"/>
+		<npc id="22165"><!--Taklacan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-11806" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111109" y="-11806" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-11956" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111059" y="-11516" z="-1784" h="16466"/>
+		<npc id="22164"><!--Laokan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111259" y="-11856" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-11604" z="-1784" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-11704" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-11754" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-11804" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-11904" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-11854" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111457" y="-11954" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-11604" z="-1792" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-11754" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-11804" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-11704" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-11854" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-11954" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-11604" z="-1792" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-11754" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-11804" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-11704" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-11854" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-11904" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111557" y="-11954" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-11604" z="-1792" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-11704" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-11754" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-11904" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-11804" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-11854" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-11704" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-11954" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111209" y="-11956" z="-1744" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-11754" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-11804" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-11904" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-11854" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-11604" z="-1792" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-11854" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-11804" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111507" y="-11514" z="-1696" h="16466"/>
+		<npc id="22166"><!--Vulcan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-11754" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-11954" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-11904" z="-1768" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111707" y="-11704" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-11954" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-11607" z="-1784" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111607" y="-11514" z="-1696" h="16466"/>
+		<npc id="22167"><!--Zakan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-11757" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-11707" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-11857" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-11807" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-11907" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111899" y="-11957" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-11607" z="-1784" h="16466"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-11757" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-11707" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-11807" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-11904" z="-1768" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111657" y="-11604" z="-1792" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-11907" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-11957" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-11607" z="-1784" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-11707" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-11757" z="-1776" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-11857" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-11807" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-11907" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-11757" z="-1768" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111999" y="-11957" z="-1760" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-11607" z="-1776" h="16466"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-11857" z="-1768" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-11907" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-11857" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-11607" z="-1776" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-11957" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-11707" z="-1768" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-11807" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-11857" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-11907" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-11957" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-11757" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-11707" z="-1760" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112099" y="-11757" z="-1768" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-11807" z="-1760" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-11807" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-11857" z="-1752" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-11907" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="111949" y="-11517" z="-1792" h="16466"/>
+		<npc id="22164"><!--Laokan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-11957" z="-1752" h="16466"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-11517" z="-1784" h="16466"/>
+		<npc id="22165"><!--Taklacan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112049" y="-11707" z="-1768" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108734" y="-12454" z="-936" h="9931"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108677" y="-12536" z="-936" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108648" y="-12577" z="-1032" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108619" y="-12618" z="-1024" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108562" y="-12700" z="-1000" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108533" y="-12741" z="-968" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="112149" y="-11607" z="-1760" h="16466"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108718" y="-12565" z="-1032" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108775" y="-12483" z="-936" h="9931"/>
+		<npc id="22172"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108689" y="-12606" z="-1032" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108660" y="-12646" z="-1024" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108632" y="-12687" z="-1016" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108603" y="-12728" z="-1000" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108574" y="-12769" z="-984" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108816" y="-12511" z="-936" h="9931"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108759" y="-12593" z="-1032" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108730" y="-12634" z="-1032" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108673" y="-12716" z="-1016" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108644" y="-12757" z="-1000" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108701" y="-12675" z="-1024" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108615" y="-12798" z="-984" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108857" y="-12540" z="-936" h="9931"/>
+		<npc id="22173"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108771" y="-12663" z="-1032" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108713" y="-12745" z="-1008" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108742" y="-12704" z="-1032" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108799" y="-12622" z="-1032" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108685" y="-12786" z="-992" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108656" y="-12827" z="-960" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108898" y="-12569" z="-936" h="9931"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108840" y="-12651" z="-936" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108812" y="-12692" z="-1032" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108783" y="-12732" z="-1024" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108754" y="-12773" z="-1008" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108726" y="-12814" z="-1000" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108881" y="-12679" z="-936" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108697" y="-12855" z="-984" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108939" y="-12597" z="-936" h="9931"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108853" y="-12720" z="-936" h="9931"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108824" y="-12761" z="-1024" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108795" y="-12802" z="-1008" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108738" y="-12884" z="-984" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108767" y="-12843" z="-992" h="9931"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108953" y="-12458" z="-936" h="9931"/>
+		<npc id="22167"><!--Zakan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108861" y="-12412" z="-936" h="9931"/>
+		<npc id="22166"><!--Vulcan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108530" y="-12954" z="-944" h="9931"/>
+		<npc id="22157"><!--Gilatu (Tame)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="108591" y="-12659" z="-1008" h="9931"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110667" y="-12303" z="-1752" h="16466"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="110817" y="-12453" z="-1744" h="16466"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114472" y="-12760" z="-1008" h="23566"/>
+		<npc id="22157"><!--Gilatu (Tame)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114248" y="-12680" z="-1040" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114289" y="-12648" z="-1043" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114330" y="-12616" z="-1046" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114371" y="-12584" z="-1049" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114412" y="-12552" z="-1052" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114456" y="-12520" z="-1056" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114216" y="-12642" z="-1056" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114257" y="-12610" z="-1056" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114298" y="-12578" z="-1056" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114339" y="-12546" z="-1056" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114380" y="-12514" z="-1056" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114421" y="-12482" z="-1056" h="23566"/>
+		<npc id="22175"><!--Orc Soldier-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114184" y="-12604" z="-1056" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114224" y="-12572" z="-1056" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114264" y="-12540" z="-1056" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114304" y="-12508" z="-1056" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114344" y="-12476" z="-1056" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114386" y="-12444" z="-1056" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114152" y="-12566" z="-1096" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114191" y="-12534" z="-1092" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114230" y="-12502" z="-1088" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114269" y="-12470" z="-1084" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114308" y="-12438" z="-1080" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114351" y="-12406" z="-1076" h="23566"/>
+		<npc id="22176"><!--Orc Warrior-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114120" y="-12528" z="-1108" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114159" y="-12496" z="-1105" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114198" y="-12464" z="-1102" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114237" y="-12432" z="-1099" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114276" y="-12400" z="-1096" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114316" y="-12368" z="-1092" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114088" y="-12488" z="-1128" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114126" y="-12456" z="-1124" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114164" y="-12424" z="-1120" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114202" y="-12392" z="-1116" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114240" y="-12360" z="-1112" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114280" y="-12328" z="-1104" h="23566"/>
+		<npc id="22177"><!--Orc Prefect-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114024" y="-12408" z="-1160" h="23566"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114062" y="-12376" z="-1152" h="23566"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114100" y="-12344" z="-1144" h="23566"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114138" y="-12312" z="-1136" h="23566"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114176" y="-12280" z="-1128" h="23566"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114216" y="-12248" z="-1120" h="23566"/>
+		<npc id="22174"><!--Centurion-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114024" y="-12296" z="-1176" h="23566"/>
+		<npc id="22164"><!--Laokan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_siege_main" count="1" respawn="120">
+		<point x="114104" y="-12216" z="-1152" h="23566"/>
+		<npc id="22165"><!--Taklacan (General)-->
+			<set name="attack_npc_id" value="18397"/><!--Flag of Aden-->
+		</npc>
+	</spawn>
+	<spawn group="fort_117_flag_owners" count="1" respawn="0">
+		<point x="111360" y="-13070" z="-1696" h="16383"/>
+		<npc id="22156"/><!--Greg (Flag Sentry)-->
+	</spawn>
+	<spawn group="fort_117_flag_owners" count="1" respawn="0">
+		<point x="112366" y="-12387" z="-1728" h="16383"/>
+		<npc id="22156"/><!--Greg (Flag Sentry)-->
+	</spawn>
+</list>

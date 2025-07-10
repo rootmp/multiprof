@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--Древо скиллов используется для верификации умений с забытых книг и т.д.-->
+<list>
+	<general_skill_tree>
+		<skill id="51247" level="1" min_level="80"/><!--Disarm-->
+		<skill id="51248" level="1" min_level="80"/><!--Armor Break-->
+		<skill id="51249" level="1" min_level="80"/><!--Spell Break-->
+		<skill id="51250" level="1" min_level="80"/><!--Jump-->
+		<skill id="51251" level="1" min_level="80"/><!--Blaze-->
+		<skill id="51252" level="1" min_level="80"/><!--Berserker Mode-->
+		<skill id="45234" level="1" min_level="1"/><!--Expand Inventory of Glory-->
+		<skill id="45235" level="1" min_level="1"/><!--Increased Weight Limit of Glory-->
+		<skill id="45361" level="1" min_level="90"/><!--Glorious Warrior's Ability Lv. 1-->
+		<skill id="45361" level="2" min_level="91"/><!--Glorious Warrior's Ability Lv. 1-->
+		<skill id="45361" level="3" min_level="92"/><!--Glorious Warrior's Ability Lv. 1-->
+	</general_skill_tree>
+</list>

@@ -1,0 +1,18 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<!--AUTHOR: L2-scripts.com - (sSanyaDC)-->
+<list>
+	<instance id="202" name="Residence of King Nebula Extreme" maxChannels="20" collapseIfEmpty="5" timelimit="20">
+		<level min="80" max="127"/>
+		<party min="27" max="100"/><!--27-100-->
+		<return loc="82152 252296 -10592"/> 
+		<teleport loc="222152 167864 -15488"/> 
+		<reuse resetReuse="30 6 * * 3" setUponEntry="false" sharedReuseGroup="0"/>
+		<zones>
+			<zone name="[king_nebula_extreme]" active="true"/>
+		</zones>
+		<spawns>
+			<group name="king_nebula_extreme_boss" spawned="true"/>
+		</spawns>
+	</instance>
+</list>
+

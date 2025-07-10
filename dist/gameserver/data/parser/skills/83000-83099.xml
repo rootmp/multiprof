@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="83001" levels="20" name="P./ M. Atk.">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83002" levels="20" name="P./ M. Def.">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83003" levels="20" name="Atk. Spd./ Casting Spd.">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83004" levels="20" name="Skill damage bonus in PvE">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83005" levels="20" name="Received skill damage in PvE">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83006" levels="20" name="Skill Damage Bonus in PvP">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83007" levels="20" name="Received skill damage in PvP">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83008" levels="20" name="Skill Critical Damage">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83009" levels="20" name="Skill Critical Rate">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83010" levels="20" name="Received Skill Critical Damage">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83011" levels="20" name="Received Skill Critical Rate">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83012" levels="20" name="Soulshot/ Spiritshot damage">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83013" levels="20" name="Soulshot/ Spiritshot Damage Resistance">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83014" levels="20" name="Damage Decrease">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83015" levels="20" name="Damage decrease ignore">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83016" levels="20" name="Anomaly Atk. Rate">
+		<table name="#icon">icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3080 icon.skill3081 icon.skill3082 icon.skill3083 icon.skill3084 icon.skill3085</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83017" levels="21" name="Pattern &lt;STR&gt; Lv. 0">
+		<table name="#icon">icon.dye_str_step_00 icon.dye_str_step_01 icon.dye_str_step_02 icon.dye_str_step_03 icon.dye_str_step_04 icon.dye_str_step_05 icon.dye_str_step_06 icon.dye_str_step_07 icon.dye_str_step_08 icon.dye_str_step_09 icon.dye_str_step_10 icon.dye_str_step_11 icon.dye_str_step_12 icon.dye_str_step_13 icon.dye_str_step_14 icon.dye_str_step_15 icon.dye_str_step_16 icon.dye_str_step_17 icon.dye_str_step_18 icon.dye_str_step_19 icon.dye_str_step_20</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83018" levels="21" name="Pattern &lt;CON&gt; Lv. 0">
+		<table name="#icon">icon.dye_con_step_00 icon.dye_con_step_01 icon.dye_con_step_02 icon.dye_con_step_03 icon.dye_con_step_04 icon.dye_con_step_05 icon.dye_con_step_06 icon.dye_con_step_07 icon.dye_con_step_08 icon.dye_con_step_09 icon.dye_con_step_10 icon.dye_con_step_11 icon.dye_con_step_12 icon.dye_con_step_13 icon.dye_con_step_14 icon.dye_con_step_15 icon.dye_con_step_16 icon.dye_con_step_17 icon.dye_con_step_18 icon.dye_con_step_19 icon.dye_con_step_20</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83019" levels="21" name="Pattern &lt;DEX&gt; Lv. 0">
+		<table name="#icon">icon.dye_dex_step_00 icon.dye_dex_step_01 icon.dye_dex_step_02 icon.dye_dex_step_03 icon.dye_dex_step_04 icon.dye_dex_step_05 icon.dye_dex_step_06 icon.dye_dex_step_07 icon.dye_dex_step_08 icon.dye_dex_step_09 icon.dye_dex_step_10 icon.dye_dex_step_11 icon.dye_dex_step_12 icon.dye_dex_step_13 icon.dye_dex_step_14 icon.dye_dex_step_15 icon.dye_dex_step_16 icon.dye_dex_step_17 icon.dye_dex_step_18 icon.dye_dex_step_19 icon.dye_dex_step_20</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83020" levels="21" name="Pattern &lt;INT&gt; Lv. 0">
+		<table name="#icon">icon.dye_int_step_00 icon.dye_int_step_01 icon.dye_int_step_02 icon.dye_int_step_03 icon.dye_int_step_04 icon.dye_int_step_05 icon.dye_int_step_06 icon.dye_int_step_07 icon.dye_int_step_08 icon.dye_int_step_09 icon.dye_int_step_10 icon.dye_int_step_11 icon.dye_int_step_12 icon.dye_int_step_13 icon.dye_int_step_14 icon.dye_int_step_15 icon.dye_int_step_16 icon.dye_int_step_17 icon.dye_int_step_18 icon.dye_int_step_19 icon.dye_int_step_20</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83021" levels="21" name="Pattern &lt;MEN&gt; Lv. 0">
+		<table name="#icon">icon.dye_men_step_00 icon.dye_men_step_01 icon.dye_men_step_02 icon.dye_men_step_03 icon.dye_men_step_04 icon.dye_men_step_05 icon.dye_men_step_06 icon.dye_men_step_07 icon.dye_men_step_08 icon.dye_men_step_09 icon.dye_men_step_10 icon.dye_men_step_11 icon.dye_men_step_12 icon.dye_men_step_13 icon.dye_men_step_14 icon.dye_men_step_15 icon.dye_men_step_16 icon.dye_men_step_17 icon.dye_men_step_18 icon.dye_men_step_19 icon.dye_men_step_20</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="83022" levels="21" name="Pattern &lt;WIT&gt; Lv. 0">
+		<table name="#icon">icon.dye_wit_step_00 icon.dye_wit_step_01 icon.dye_wit_step_02 icon.dye_wit_step_03 icon.dye_wit_step_04 icon.dye_wit_step_05 icon.dye_wit_step_06 icon.dye_wit_step_07 icon.dye_wit_step_08 icon.dye_wit_step_09 icon.dye_wit_step_10 icon.dye_wit_step_11 icon.dye_wit_step_12 icon.dye_wit_step_13 icon.dye_wit_step_14 icon.dye_wit_step_15 icon.dye_wit_step_16 icon.dye_wit_step_17 icon.dye_wit_step_18 icon.dye_wit_step_19 icon.dye_wit_step_20</table>
+		<set name="icon" value="#icon"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

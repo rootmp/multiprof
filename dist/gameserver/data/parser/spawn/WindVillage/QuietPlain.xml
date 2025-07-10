@@ -1,0 +1,2688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104346" y="54636" z="-4488" h="52138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104577" y="53706" z="-4504" h="48621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104559" y="53780" z="-4512" h="22219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104519" y="54144" z="-4504" h="11024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104520" y="53776" z="-4512" h="15935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105384" y="54595" z="-4472" h="52070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104728" y="54399" z="-4496" h="6596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105626" y="54054" z="-4536" h="41229" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105391" y="54532" z="-4472" h="54610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104820" y="54062" z="-4504" h="47673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104623" y="53909" z="-4512" h="59992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105570" y="54625" z="-4472" h="46378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104827" y="54392" z="-4496" h="54598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105166" y="54631" z="-4472" h="13531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105371" y="54396" z="-4496" h="14473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106159" y="54085" z="-4560" h="17127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106339" y="54692" z="-4528" h="19526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104674" y="53902" z="-4512" h="13828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104311" y="54630" z="-4488" h="1480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105216" y="53887" z="-4528" h="54963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104585" y="53927" z="-4512" h="60130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104598" y="54383" z="-4496" h="12263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104738" y="53659" z="-4512" h="62633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106622" y="54544" z="-4544" h="39604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106196" y="54789" z="-4512" h="10882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105352" y="54307" z="-4496" h="52874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106546" y="54883" z="-4544" h="64323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106006" y="54654" z="-4520" h="25615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106550" y="54547" z="-4544" h="45323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105932" y="54328" z="-4536" h="12907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106501" y="54252" z="-4568" h="58485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104528" y="54418" z="-4488" h="16654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106551" y="54219" z="-4568" h="22665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104863" y="53622" z="-4512" h="62311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104913" y="54648" z="-4472" h="46471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104654" y="54465" z="-4488" h="28938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104432" y="54000" z="-4512" h="10559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104966" y="54571" z="-4472" h="39786" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106531" y="55072" z="-4528" h="3271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105143" y="53916" z="-4520" h="47068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104758" y="53565" z="-4504" h="49242" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106816" y="54936" z="-4552" h="32027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107075" y="54326" z="-4600" h="26952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106768" y="54855" z="-4552" h="53663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106695" y="53150" z="-4648" h="50307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107064" y="53660" z="-4648" h="35790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106960" y="53679" z="-4632" h="58710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107106" y="54863" z="-4576" h="50622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106951" y="53681" z="-4632" h="1347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106619" y="55020" z="-4536" h="35893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107024" y="53583" z="-4656" h="11330" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106669" y="54368" z="-4568" h="37307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106721" y="55066" z="-4544" h="63517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106916" y="54164" z="-4600" h="21438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107057" y="54900" z="-4576" h="30421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107037" y="54550" z="-4592" h="62818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106747" y="54579" z="-4552" h="28051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106663" y="54678" z="-4552" h="14324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106770" y="54925" z="-4552" h="9521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106574" y="54312" z="-4560" h="20978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106730" y="54631" z="-4552" h="712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106984" y="54524" z="-4584" h="30820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106839" y="54540" z="-4560" h="63329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106941" y="54103" z="-4608" h="23818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107108" y="54271" z="-4608" h="7107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106041" y="52927" z="-4584" h="33513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106053" y="52966" z="-4584" h="10870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106475" y="52540" z="-4632" h="3343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106058" y="52660" z="-4576" h="63504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106509" y="52598" z="-4656" h="15412" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106024" y="52710" z="-4576" h="23710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106511" y="52875" z="-4640" h="17323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106403" y="53193" z="-4616" h="54546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106207" y="52917" z="-4592" h="39710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106979" y="53022" z="-4688" h="54206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108623" y="52438" z="-4704" h="35672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107944" y="52329" z="-4776" h="5513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107482" y="51854" z="-4808" h="12204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107006" y="52647" z="-4712" h="12942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106444" y="53078" z="-4624" h="55995" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106970" y="52959" z="-4696" h="58415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106576" y="53075" z="-4640" h="49519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107046" y="53130" z="-4688" h="47600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106858" y="52531" z="-4704" h="63583" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106842" y="53157" z="-4664" h="12799" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108200" y="51267" z="-4760" h="13389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107559" y="51820" z="-4800" h="33760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107708" y="52742" z="-4752" h="18601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107916" y="51977" z="-4776" h="56781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108382" y="53057" z="-4760" h="64046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107215" y="51023" z="-4824" h="23038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106687" y="52624" z="-4672" h="57251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107065" y="51391" z="-4800" h="6345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107950" y="51153" z="-4792" h="47911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107101" y="52669" z="-4728" h="53989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107530" y="51735" z="-4800" h="475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107122" y="51528" z="-4784" h="51303" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106672" y="52969" z="-4664" h="56966" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106989" y="53200" z="-4680" h="55838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106406" y="52856" z="-4632" h="29654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106757" y="52807" z="-4688" h="59224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107945" y="53005" z="-4736" h="3342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106705" y="52889" z="-4664" h="5501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108696" y="53129" z="-4744" h="20739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106881" y="53223" z="-4680" h="57609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108215" y="52989" z="-4760" h="8992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108744" y="53052" z="-4736" h="11367" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107258" y="51665" z="-4800" h="19930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107422" y="51454" z="-4824" h="47823" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107753" y="51750" z="-4800" h="60970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107033" y="51003" z="-4800" h="63967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108571" y="52897" z="-4744" h="28001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107964" y="52892" z="-4752" h="47619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108355" y="52975" z="-4760" h="12693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108627" y="52428" z="-4704" h="11871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107806" y="53088" z="-4736" h="57641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108546" y="52880" z="-4744" h="62265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108553" y="53220" z="-4752" h="10244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108612" y="52548" z="-4712" h="23560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108597" y="53211" z="-4752" h="59945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108596" y="52389" z="-4704" h="14182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108693" y="53406" z="-4744" h="7573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107666" y="52688" z="-4760" h="42798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108601" y="52550" z="-4712" h="7142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107688" y="53052" z="-4728" h="32090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108167" y="53168" z="-4744" h="11704" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107756" y="53206" z="-4712" h="40117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108624" y="52924" z="-4744" h="10271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108594" y="52969" z="-4744" h="21460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107291" y="51170" z="-4840" h="39068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107582" y="51887" z="-4800" h="28596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107088" y="51611" z="-4776" h="15845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107160" y="51965" z="-4784" h="64760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107354" y="51442" z="-4832" h="59801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107976" y="51887" z="-4776" h="49107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105702" y="49763" z="-4672" h="28257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106660" y="50279" z="-4784" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106542" y="49837" z="-4776" h="61784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105640" y="49065" z="-4656" h="58360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105470" y="49127" z="-4632" h="58338" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105076" y="49653" z="-4592" h="6281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106685" y="50339" z="-4776" h="24576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106355" y="50512" z="-4720" h="25802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105937" y="50160" z="-4680" h="46213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105829" y="50248" z="-4640" h="16391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106087" y="49567" z="-4728" h="22124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106186" y="50261" z="-4704" h="55618" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106494" y="50563" z="-4736" h="32060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105771" y="49858" z="-4680" h="17518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105554" y="50053" z="-4624" h="49077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105896" y="50590" z="-4616" h="16293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106708" y="49867" z="-4792" h="18349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105951" y="50242" z="-4664" h="59553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106236" y="50443" z="-4704" h="43125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104288" y="49576" z="-4536" h="10393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105801" y="50526" z="-4616" h="33570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105956" y="50412" z="-4648" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106115" y="50123" z="-4720" h="39834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105908" y="49582" z="-4712" h="31799" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106146" y="50135" z="-4720" h="60640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105750" y="50251" z="-4640" h="46250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106570" y="50407" z="-4752" h="62720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105983" y="49845" z="-4704" h="27563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105628" y="50476" z="-4584" h="4115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105030" y="49751" z="-4592" h="17154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104416" y="49672" z="-4544" h="1418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105801" y="49996" z="-4672" h="5826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106133" y="50458" z="-4688" h="7668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105899" y="50293" z="-4664" h="47284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104540" y="49637" z="-4552" h="9725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104896" y="50011" z="-4560" h="7648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104668" y="49542" z="-4560" h="51837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104397" y="49022" z="-4528" h="11131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105686" y="50378" z="-4624" h="54279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104349" y="49271" z="-4544" h="51021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104943" y="50006" z="-4560" h="1455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105090" y="49716" z="-4608" h="17395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107025" y="51032" z="-4800" h="41762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108116" y="49370" z="-4792" h="5869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107677" y="49896" z="-4824" h="5721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107788" y="49472" z="-4800" h="55545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107855" y="49624" z="-4808" h="37963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107420" y="50197" z="-4832" h="55527" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107695" y="49387" z="-4792" h="60038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108189" y="49191" z="-4784" h="33143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108451" y="50123" z="-4784" h="12900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108320" y="49541" z="-4800" h="47673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107781" y="49219" z="-4784" h="2902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108025" y="50243" z="-4816" h="12812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108133" y="49186" z="-4784" h="11206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108325" y="49938" z="-4800" h="27259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107712" y="49481" z="-4808" h="3057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108156" y="49527" z="-4800" h="12116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107429" y="50814" z="-4840" h="13745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107628" y="50916" z="-4840" h="46872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106953" y="51146" z="-4776" h="53097" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106261" y="50610" z="-4688" h="24386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107657" y="50201" z="-4824" h="59356" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108043" y="49929" z="-4808" h="23442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107888" y="50927" z="-4816" h="16402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108321" y="50065" z="-4792" h="46149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108178" y="49818" z="-4808" h="17219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107568" y="49554" z="-4816" h="25077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108216" y="49295" z="-4792" h="31287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107133" y="50898" z="-4792" h="17886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107851" y="50880" z="-4816" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107433" y="51092" z="-4840" h="61707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107623" y="49529" z="-4808" h="30534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108433" y="50265" z="-4776" h="45323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108280" y="49531" z="-4800" h="58196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108399" y="49695" z="-4808" h="51777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108169" y="49436" z="-4800" h="7194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107971" y="50269" z="-4816" h="43342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108226" y="49691" z="-4808" h="52193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108314" y="49917" z="-4800" h="63517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108053" y="49670" z="-4808" h="16203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107551" y="50888" z="-4840" h="50127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108005" y="51066" z="-4800" h="29257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106937" y="50935" z="-4776" h="8904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108574" y="53323" z="-4744" h="34637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108686" y="52364" z="-4680" h="29797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108753" y="53080" z="-4736" h="31777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108706" y="52990" z="-4728" h="17797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104711" y="49175" z="-4568" h="63990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106113" y="47177" z="-4640" h="15651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105461" y="47358" z="-4544" h="48087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105881" y="48352" z="-4640" h="23184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106103" y="48409" z="-4672" h="37984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105599" y="48094" z="-4592" h="17458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105652" y="48449" z="-4616" h="38277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105708" y="48691" z="-4632" h="9332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105492" y="47926" z="-4584" h="52205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105435" y="48412" z="-4584" h="15913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105655" y="48270" z="-4608" h="6358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106006" y="48305" z="-4672" h="35599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105743" y="49099" z="-4672" h="3014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105479" y="48963" z="-4640" h="20641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105543" y="48980" z="-4640" h="6926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105549" y="48667" z="-4616" h="11127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105559" y="48834" z="-4632" h="65497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105716" y="48641" z="-4632" h="34703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106032" y="48455" z="-4672" h="34776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105783" y="47473" z="-4592" h="9522" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106331" y="47490" z="-4680" h="31297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105430" y="47411" z="-4544" h="56253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106175" y="46871" z="-4632" h="8886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106164" y="47472" z="-4656" h="63681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106067" y="47399" z="-4632" h="43649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105429" y="47205" z="-4536" h="8715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105606" y="47011" z="-4544" h="39321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105856" y="46919" z="-4592" h="19424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105629" y="47136" z="-4544" h="29657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105432" y="48004" z="-4584" h="46079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106074" y="48656" z="-4688" h="32776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105361" y="48793" z="-4608" h="37963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105421" y="48247" z="-4584" h="63286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105619" y="47133" z="-4544" h="14307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105759" y="48911" z="-4664" h="22819" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105769" y="48478" z="-4632" h="23500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106288" y="48261" z="-4712" h="50624" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106238" y="48216" z="-4696" h="9914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105607" y="49066" z="-4656" h="52397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105382" y="48995" z="-4616" h="19937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105607" y="49131" z="-4656" h="39734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106284" y="48022" z="-4704" h="25653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105853" y="47577" z="-4608" h="20290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105885" y="47156" z="-4592" h="15170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106030" y="47512" z="-4640" h="23818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108147" y="48345" z="-4736" h="8551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108308" y="48322" z="-4736" h="11873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107518" y="47573" z="-4720" h="63625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108117" y="47918" z="-4728" h="20587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107411" y="47403" z="-4720" h="19654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108332" y="48246" z="-4736" h="62265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108320" y="47250" z="-4720" h="33570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107660" y="47519" z="-4728" h="40634" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107811" y="48573" z="-4744" h="61543" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107648" y="47285" z="-4720" h="34745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107104" y="48373" z="-4728" h="20418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107054" y="48155" z="-4720" h="42614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107486" y="48811" z="-4760" h="16248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107800" y="48088" z="-4736" h="19423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106740" y="48134" z="-4720" h="5723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107622" y="47887" z="-4728" h="20219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106640" y="48046" z="-4712" h="10623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107132" y="48304" z="-4728" h="21636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107037" y="48229" z="-4720" h="22879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107496" y="47339" z="-4720" h="15672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107615" y="48540" z="-4744" h="60125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107693" y="47041" z="-4720" h="54148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107286" y="47207" z="-4720" h="23514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106951" y="47254" z="-4688" h="18850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108641" y="48507" z="-4736" h="59441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107749" y="47895" z="-4728" h="6859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107232" y="47956" z="-4720" h="12390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108778" y="48914" z="-4752" h="6926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106777" y="48097" z="-4712" h="179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107666" y="47421" z="-4728" h="19803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107632" y="48127" z="-4728" h="61990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106641" y="48111" z="-4712" h="53820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108438" y="47830" z="-4728" h="54925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107545" y="48051" z="-4728" h="26680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107387" y="48029" z="-4720" h="64051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107561" y="48751" z="-4752" h="52147" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106955" y="47248" z="-4688" h="8870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108515" y="48140" z="-4736" h="63565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107267" y="48053" z="-4720" h="23060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106960" y="48415" z="-4736" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108073" y="48750" z="-4752" h="686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107474" y="48748" z="-4752" h="51708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107177" y="48158" z="-4720" h="29655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107425" y="47833" z="-4728" h="8877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107180" y="48086" z="-4720" h="49897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106980" y="48875" z="-4760" h="34513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107464" y="48563" z="-4744" h="12641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107299" y="48733" z="-4752" h="32299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107445" y="47979" z="-4728" h="26523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107571" y="47975" z="-4728" h="14911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107773" y="47182" z="-4720" h="34767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107055" y="47121" z="-4696" h="10358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107293" y="47484" z="-4720" h="2347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108176" y="47812" z="-4728" h="19497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108848" y="47287" z="-4720" h="30862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108791" y="47949" z="-4728" h="20377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108710" y="48722" z="-4736" h="27484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108983" y="48443" z="-4720" h="47408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108875" y="48424" z="-4728" h="11305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108566" y="48121" z="-4728" h="58102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108927" y="47036" z="-4720" h="4594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108844" y="48043" z="-4720" h="43573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108949" y="47253" z="-4712" h="14483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109004" y="48312" z="-4720" h="29654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109026" y="47668" z="-4720" h="27783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="109146" y="48242" z="-4712" h="13828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108882" y="48770" z="-4736" h="29046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="109132" y="48619" z="-4720" h="48087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108823" y="48595" z="-4728" h="15681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108654" y="47188" z="-4720" h="31287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108852" y="48722" z="-4736" h="57295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108704" y="48639" z="-4736" h="29855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108907" y="47884" z="-4720" h="47673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="109173" y="48424" z="-4712" h="60099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108474" y="48694" z="-4752" h="44001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108721" y="48791" z="-4744" h="2229" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108620" y="48451" z="-4736" h="36599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108744" y="48101" z="-4728" h="29738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104738" y="45266" z="-4608" h="52383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105707" y="46770" z="-4552" h="33862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105714" y="46568" z="-4568" h="19497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105818" y="46719" z="-4568" h="18547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104855" y="45952" z="-4584" h="16057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105452" y="47212" z="-4536" h="28229" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105651" y="47270" z="-4552" h="896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104748" y="45967" z="-4584" h="5507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104810" y="45664" z="-4592" h="30423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106015" y="45037" z="-4648" h="27786" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105855" y="45178" z="-4672" h="35959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106079" y="46049" z="-4632" h="19043" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105138" y="46014" z="-4592" h="21399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106098" y="46149" z="-4624" h="9346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105601" y="46945" z="-4544" h="10623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106235" y="46630" z="-4624" h="24373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105352" y="46421" z="-4576" h="14182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105918" y="46725" z="-4592" h="8334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105805" y="46936" z="-4560" h="54418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104872" y="45062" z="-4640" h="28451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104519" y="45986" z="-4584" h="60022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105474" y="46956" z="-4544" h="57203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104583" y="45561" z="-4576" h="939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105930" y="46761" z="-4592" h="49509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104708" y="45111" z="-4616" h="29654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104378" y="45467" z="-4560" h="1480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104305" y="45296" z="-4560" h="8381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104849" y="45025" z="-4656" h="17938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104682" y="45822" z="-4576" h="20141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104644" y="45551" z="-4576" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104590" y="45714" z="-4576" h="1164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104696" y="45244" z="-4592" h="53596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104788" y="45377" z="-4600" h="59390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104789" y="45202" z="-4608" h="1473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105799" y="47274" z="-4568" h="44106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105469" y="45965" z="-4600" h="18121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104699" y="45050" z="-4616" h="47955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105425" y="46397" z="-4576" h="33570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105380" y="45696" z="-4624" h="7680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105350" y="45167" z="-4680" h="33764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106335" y="45270" z="-4640" h="39921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106060" y="45553" z="-4664" h="31291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105407" y="45694" z="-4632" h="23060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105952" y="45333" z="-4672" h="55562" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105789" y="45383" z="-4672" h="43645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106090" y="45225" z="-4664" h="7920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105898" y="45871" z="-4632" h="60820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106016" y="45052" z="-4648" h="64195" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105521" y="45925" z="-4616" h="5487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105106" y="45027" z="-4672" h="12566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105591" y="45142" z="-4680" h="51173" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105206" y="46000" z="-4592" h="15643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105740" y="45280" z="-4672" h="59386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105495" y="45186" z="-4672" h="25650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105456" y="45133" z="-4680" h="61688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106273" y="45063" z="-4632" h="61331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105976" y="45085" z="-4664" h="20900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106304" y="45029" z="-4624" h="21475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105678" y="46194" z="-4600" h="13240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105345" y="45735" z="-4624" h="52613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106264" y="45120" z="-4632" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108051" y="47078" z="-4720" h="20589" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106871" y="46719" z="-4648" h="31777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108457" y="46981" z="-4720" h="40261" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106684" y="46683" z="-4648" h="41805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107612" y="47043" z="-4720" h="63335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108497" y="45628" z="-4592" h="10008" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107114" y="47100" z="-4688" h="34099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106967" y="46872" z="-4664" h="11939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107330" y="46943" z="-4704" h="3041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108599" y="47130" z="-4720" h="6469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108046" y="46412" z="-4672" h="57816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107403" y="44941" z="-4544" h="32947" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107202" y="46573" z="-4640" h="20271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107483" y="46666" z="-4672" h="62965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107550" y="45117" z="-4552" h="55731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108473" y="46602" z="-4720" h="26223" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107349" y="45089" z="-4544" h="21499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108175" y="46183" z="-4640" h="4667" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107778" y="46600" z="-4688" h="46872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107133" y="46466" z="-4640" h="20262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108288" y="44993" z="-4584" h="57893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108184" y="46477" z="-4704" h="24857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108670" y="45092" z="-4584" h="10213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108647" y="46747" z="-4720" h="55476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106786" y="46447" z="-4632" h="38277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107401" y="46890" z="-4712" h="3036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107360" y="47158" z="-4720" h="14022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106787" y="47016" z="-4664" h="25633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107302" y="46578" z="-4648" h="53636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106741" y="46508" z="-4640" h="11186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107373" y="46897" z="-4704" h="49619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106846" y="44943" z="-4560" h="29855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107850" y="45295" z="-4576" h="52266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107290" y="44967" z="-4536" h="10885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107438" y="45820" z="-4592" h="22615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107601" y="45029" z="-4552" h="20800" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107521" y="46097" z="-4616" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107142" y="45341" z="-4576" h="64018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107318" y="44869" z="-4528" h="64597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106847" y="45295" z="-4592" h="60504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106690" y="45551" z="-4616" h="49645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106891" y="45753" z="-4608" h="52312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107253" y="44997" z="-4536" h="28153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107877" y="44961" z="-4568" h="45635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107664" y="45077" z="-4568" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="107488" y="44997" z="-4544" h="48409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107778" y="45135" z="-4576" h="31287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107123" y="45872" z="-4608" h="3100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107352" y="45668" z="-4592" h="21549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107882" y="45046" z="-4568" h="15665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106686" y="45958" z="-4632" h="14903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106789" y="45641" z="-4616" h="743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107091" y="44893" z="-4528" h="47277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108744" y="45438" z="-4584" h="5696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108763" y="45471" z="-4584" h="23818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109156" y="46452" z="-4704" h="65267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108489" y="46945" z="-4720" h="2073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108600" y="46233" z="-4680" h="9618" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108793" y="46204" z="-4656" h="39516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108502" y="45117" z="-4584" h="41212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108960" y="46542" z="-4712" h="1164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108812" y="45236" z="-4576" h="47277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="109206" y="45086" z="-4576" h="16181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="109135" y="46960" z="-4712" h="55007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108673" y="45093" z="-4576" h="12240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108468" y="46962" z="-4720" h="31613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109021" y="46632" z="-4712" h="29306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108645" y="47297" z="-4720" h="19803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109230" y="45473" z="-4584" h="1755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108790" y="46430" z="-4704" h="11094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="109157" y="45877" z="-4624" h="8185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="109320" y="45079" z="-4576" h="51354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108799" y="46878" z="-4720" h="3441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108683" y="45316" z="-4584" h="41216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108912" y="44950" z="-4576" h="39408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="109294" y="45771" z="-4616" h="6024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="109029" y="44829" z="-4576" h="20224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109382" y="45794" z="-4624" h="28937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108976" y="45032" z="-4576" h="50619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109329" y="44962" z="-4576" h="26429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109119" y="45594" z="-4592" h="40348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109297" y="45834" z="-4632" h="734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="109164" y="47295" z="-4704" h="20978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108550" y="46767" z="-4720" h="43607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108907" y="46622" z="-4720" h="42594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="109153" y="46415" z="-4704" h="2902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="109052" y="47015" z="-4712" h="56305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="108963" y="47018" z="-4712" h="16203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104470" y="43936" z="-4664" h="42088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104340" y="43022" z="-4672" h="62935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104258" y="43163" z="-4648" h="11873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104067" y="43067" z="-4640" h="40688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103794" y="43460" z="-4592" h="451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103611" y="43872" z="-4584" h="5648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103699" y="44706" z="-4584" h="57301" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103714" y="43871" z="-4592" h="17280" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103650" y="44778" z="-4584" h="17055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104070" y="44541" z="-4608" h="30935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104437" y="44561" z="-4624" h="63248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104360" y="44406" z="-4640" h="56965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103904" y="44407" z="-4600" h="1441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103760" y="43795" z="-4592" h="63769" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103625" y="43968" z="-4584" h="59772" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103751" y="44470" z="-4592" h="64284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103491" y="44323" z="-4584" h="411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104505" y="44635" z="-4640" h="11577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103475" y="44252" z="-4576" h="14903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103634" y="44632" z="-4584" h="38812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103539" y="44117" z="-4576" h="3039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104198" y="44086" z="-4640" h="5705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103986" y="44625" z="-4600" h="3441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103977" y="44688" z="-4592" h="46709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104298" y="44636" z="-4616" h="27039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103816" y="44324" z="-4600" h="9023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104007" y="44536" z="-4600" h="23629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103841" y="44720" z="-4584" h="64056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103541" y="43883" z="-4576" h="18233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103764" y="43862" z="-4592" h="37824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103487" y="44079" z="-4576" h="17128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103852" y="44161" z="-4600" h="26209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103914" y="45624" z="-4568" h="53271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103775" y="45741" z="-4576" h="3800" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103873" y="45786" z="-4576" h="42848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104617" y="45678" z="-4576" h="9051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103883" y="45974" z="-4584" h="38068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104011" y="45934" z="-4576" h="5279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103958" y="45166" z="-4568" h="4992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103757" y="45419" z="-4576" h="63614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103835" y="45735" z="-4576" h="45323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104477" y="46041" z="-4584" h="36451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103766" y="46062" z="-4560" h="57316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103744" y="45521" z="-4576" h="54661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104471" y="42940" z="-4680" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104445" y="43087" z="-4672" h="25673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104708" y="43386" z="-4696" h="44109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104677" y="43096" z="-4688" h="55962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105999" y="43147" z="-4584" h="15642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105128" y="43310" z="-4688" h="49897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105791" y="43261" z="-4616" h="43645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105951" y="43049" z="-4592" h="22105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105251" y="43940" z="-4688" h="52144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105852" y="44070" z="-4640" h="59068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105282" y="44597" z="-4696" h="12211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106192" y="44645" z="-4624" h="5271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106168" y="44033" z="-4584" h="12239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105600" y="44387" z="-4672" h="3992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105885" y="44306" z="-4640" h="17127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104634" y="44503" z="-4664" h="48656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105489" y="44982" z="-4680" h="12238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104623" y="44751" z="-4640" h="65530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106196" y="44722" z="-4632" h="18749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105926" y="43631" z="-4608" h="30617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105912" y="44656" z="-4656" h="33141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105549" y="44384" z="-4680" h="19308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105687" y="44155" z="-4656" h="1252" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105413" y="43874" z="-4672" h="6701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105587" y="44248" z="-4680" h="8191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106211" y="43920" z="-4568" h="30128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105954" y="43968" z="-4616" h="29259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105391" y="44401" z="-4696" h="59900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106250" y="44511" z="-4584" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106117" y="43910" z="-4568" h="3494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105997" y="44123" z="-4600" h="36596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106030" y="44052" z="-4600" h="1900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105902" y="44592" z="-4656" h="21729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105486" y="44322" z="-4680" h="51029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106160" y="43749" z="-4568" h="58255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105879" y="44622" z="-4656" h="50047" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105820" y="44756" z="-4664" h="45184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105662" y="44259" z="-4664" h="64725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105841" y="44212" z="-4648" h="36927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105821" y="44136" z="-4640" h="13369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105808" y="44479" z="-4664" h="12878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108385" y="44834" z="-4576" h="62916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108322" y="44932" z="-4584" h="26228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108390" y="45007" z="-4584" h="58420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="108581" y="44872" z="-4576" h="40977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107612" y="45113" z="-4552" h="32903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="107182" y="45082" z="-4544" h="8886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107091" y="45061" z="-4552" h="32903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107721" y="45023" z="-4560" h="34741" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="107501" y="45097" z="-4552" h="19506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103623" y="43696" z="-4584" h="65296" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104203" y="42566" z="-4664" h="18617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104351" y="42513" z="-4680" h="25376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103790" y="42907" z="-4608" h="65401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104178" y="42387" z="-4664" h="52664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103958" y="42581" z="-4656" h="24086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103686" y="42502" z="-4640" h="39627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103768" y="42420" z="-4640" h="25143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103759" y="42452" z="-4640" h="42045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104563" y="42382" z="-4696" h="41147" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104389" y="42411" z="-4680" h="22020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104377" y="42389" z="-4680" h="59130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103683" y="42418" z="-4640" h="1072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103969" y="42501" z="-4656" h="59802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="103586" y="42292" z="-4616" h="1382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103621" y="42346" z="-4616" h="9556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="103657" y="42398" z="-4624" h="49872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104681" y="42673" z="-4696" h="51018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105956" y="42696" z="-4600" h="22811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104657" y="42392" z="-4704" h="51744" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104493" y="42456" z="-4696" h="17127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105084" y="42618" z="-4712" h="48529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105011" y="42521" z="-4712" h="46101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105926" y="43177" z="-4600" h="8669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105077" y="43033" z="-4704" h="16316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105673" y="42413" z="-4688" h="57326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105474" y="42835" z="-4672" h="53636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105917" y="42610" z="-4624" h="51518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106011" y="42974" z="-4584" h="17664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105517" y="42502" z="-4688" h="7074" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105042" y="42815" z="-4712" h="30419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105843" y="42277" z="-4672" h="28621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104980" y="42563" z="-4712" h="8184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105603" y="42279" z="-4696" h="5453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104633" y="42449" z="-4704" h="17497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105244" y="42570" z="-4704" h="58007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104499" y="42347" z="-4696" h="34971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104675" y="42708" z="-4696" h="14628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105760" y="42759" z="-4624" h="50619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105958" y="42267" z="-4648" h="24642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105069" y="42465" z="-4720" h="18205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105855" y="42893" z="-4616" h="15237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105087" y="42927" z="-4704" h="56985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105435" y="42361" z="-4712" h="13343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105903" y="42675" z="-4624" h="31795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106007" y="42826" z="-4584" h="17725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105848" y="42295" z="-4672" h="16397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105722" y="42393" z="-4688" h="33437" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105531" y="42589" z="-4688" h="53814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105743" y="41407" z="-4696" h="26856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105089" y="41794" z="-4728" h="63389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104892" y="41821" z="-4696" h="34679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105168" y="41568" z="-4704" h="40941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105147" y="41747" z="-4728" h="46916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104944" y="41867" z="-4712" h="41459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105044" y="41967" z="-4720" h="30551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104975" y="41014" z="-4640" h="22942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105465" y="41331" z="-4680" h="40362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105705" y="41341" z="-4688" h="6125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="105570" y="41573" z="-4720" h="38932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106171" y="41786" z="-4640" h="10946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105231" y="41811" z="-4736" h="29361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="106061" y="42008" z="-4640" h="44019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105305" y="41917" z="-4744" h="41233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105395" y="41694" z="-4736" h="16293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106037" y="41106" z="-4648" h="45272" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="106042" y="41241" z="-4656" h="40267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="104738" y="41929" z="-4696" h="44643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105535" y="41004" z="-4648" h="11905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105708" y="42120" z="-4704" h="39221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106146" y="41898" z="-4632" h="43130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105074" y="41264" z="-4664" h="33883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22326" /> <!-- Apis -->
+		<point x="105819" y="41768" z="-4712" h="35843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="106029" y="42098" z="-4640" h="45552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105592" y="41940" z="-4728" h="61548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105012" y="41879" z="-4720" h="21712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="104856" y="41610" z="-4688" h="64766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105027" y="41067" z="-4640" h="21076" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="105675" y="41617" z="-4728" h="61302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22325" /> <!-- Diffloe -->
+		<point x="103674" y="42326" z="-4616" h="19948" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="104694" y="43082" z="-4688" h="47616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22327" /> <!-- Echinu -->
+		<point x="108700" y="45322" z="-4584" h="23767" />
+	</spawn>
+</list>

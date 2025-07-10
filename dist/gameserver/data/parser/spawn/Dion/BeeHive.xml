@@ -1,0 +1,1488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25920" y="186335" z="-3464" h="1145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24451" y="185829" z="-3480" h="17374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24523" y="185943" z="-3480" h="61471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24867" y="186237" z="-3464" h="38976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25104" y="186073" z="-3464" h="47432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24841" y="186248" z="-3464" h="58937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25611" y="186187" z="-3464" h="38277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25414" y="185921" z="-3464" h="31670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25469" y="185891" z="-3464" h="2944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25856" y="186094" z="-3464" h="61956" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25897" y="186345" z="-3464" h="37383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25712" y="185472" z="-3472" h="45107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25673" y="185661" z="-3464" h="25487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25671" y="185898" z="-3464" h="65401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25000" y="185518" z="-3464" h="14071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24931" y="185716" z="-3464" h="12195" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25239" y="185598" z="-3472" h="46250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26365" y="186620" z="-3472" h="15969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26555" y="186972" z="-3464" h="16987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25597" y="186888" z="-3480" h="23059" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26398" y="186710" z="-3472" h="38227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25468" y="187216" z="-3512" h="18794" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25996" y="186764" z="-3472" h="31206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25634" y="187112" z="-3488" h="43088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25267" y="186683" z="-3456" h="55270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24858" y="187068" z="-3520" h="50406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25815" y="186808" z="-3472" h="34741" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25915" y="186822" z="-3472" h="45981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25310" y="186361" z="-3464" h="5481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26002" y="187382" z="-3480" h="33143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26428" y="188021" z="-3464" h="65425" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26495" y="188291" z="-3480" h="1297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26136" y="187512" z="-3472" h="20546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26231" y="187424" z="-3472" h="43645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25964" y="187636" z="-3496" h="61873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26272" y="187511" z="-3456" h="33835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26293" y="187340" z="-3464" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26173" y="187806" z="-3480" h="20817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25994" y="188047" z="-3488" h="62025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26358" y="188121" z="-3472" h="28294" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25979" y="188372" z="-3488" h="29905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26410" y="187276" z="-3456" h="52436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26635" y="187766" z="-3448" h="23500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24904" y="188352" z="-3568" h="37849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25081" y="188128" z="-3552" h="39493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26360" y="188185" z="-3480" h="13270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25650" y="186643" z="-3464" h="14262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24800" y="188125" z="-3552" h="14902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25547" y="188040" z="-3512" h="33636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25615" y="188393" z="-3520" h="61198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26122" y="188274" z="-3488" h="45592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25302" y="188249" z="-3544" h="3829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25145" y="186448" z="-3464" h="17784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24788" y="186485" z="-3472" h="46593" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24773" y="186402" z="-3472" h="48805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25906" y="188315" z="-3488" h="10274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24759" y="187006" z="-3512" h="60846" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24817" y="187023" z="-3520" h="17226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25431" y="187818" z="-3504" h="61338" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25542" y="187656" z="-3504" h="55091" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25230" y="187717" z="-3520" h="50157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24890" y="187577" z="-3528" h="25708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24769" y="187796" z="-3560" h="53613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24970" y="187676" z="-3536" h="55244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="28713" y="183957" z="-3680" h="60790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="28695" y="184263" z="-3688" h="9392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="28735" y="184236" z="-3688" h="59368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="28502" y="183881" z="-3696" h="12886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="28796" y="183499" z="-3680" h="56650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="28828" y="183529" z="-3672" h="64877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="28501" y="184611" z="-3696" h="57820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="28845" y="184540" z="-3696" h="35809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="28742" y="184807" z="-3704" h="53271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26691" y="187638" z="-3440" h="3355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="27102" y="188352" z="-3472" h="60883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="27049" y="188518" z="-3472" h="53911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26877" y="187754" z="-3448" h="60642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26921" y="187714" z="-3448" h="6236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26936" y="187842" z="-3448" h="24599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26884" y="188245" z="-3472" h="37664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="27347" y="187081" z="-3464" h="20676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="27296" y="187225" z="-3448" h="54305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="27178" y="187334" z="-3440" h="59577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30768" y="184258" z="-3688" h="21040" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30788" y="183190" z="-3720" h="35468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30748" y="183573" z="-3728" h="20457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30745" y="183876" z="-3736" h="61565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30949" y="183636" z="-3712" h="6859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30787" y="183153" z="-3720" h="2820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30324" y="184197" z="-3720" h="44675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30122" y="183213" z="-3696" h="23390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30290" y="182925" z="-3680" h="6868" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30204" y="183259" z="-3696" h="8793" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30175" y="183602" z="-3680" h="41794" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30339" y="183516" z="-3680" h="41212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30231" y="183633" z="-3688" h="55431" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30131" y="184240" z="-3704" h="61707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30227" y="184085" z="-3712" h="59676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29135" y="183992" z="-3672" h="60834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29270" y="184258" z="-3688" h="24613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29495" y="184220" z="-3696" h="44466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29434" y="184110" z="-3672" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29498" y="184190" z="-3672" h="27503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29216" y="183969" z="-3672" h="48087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29612" y="183504" z="-3704" h="39169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29652" y="183782" z="-3688" h="31986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29651" y="183063" z="-3728" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29656" y="183447" z="-3704" h="10373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29616" y="183156" z="-3728" h="55070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29643" y="183167" z="-3728" h="53122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29494" y="182826" z="-3720" h="16533" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29877" y="182472" z="-3696" h="7048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29526" y="182747" z="-3712" h="32376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29014" y="182725" z="-3728" h="64924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29031" y="182585" z="-3720" h="54637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29268" y="182415" z="-3704" h="51368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29089" y="183022" z="-3720" h="30476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29058" y="183201" z="-3712" h="60514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29368" y="183364" z="-3720" h="14088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="28975" y="183683" z="-3672" h="42594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29067" y="183583" z="-3696" h="28295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29282" y="183670" z="-3696" h="18416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30915" y="182743" z="-3720" h="18663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30737" y="182752" z="-3712" h="13860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30722" y="182571" z="-3712" h="4024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30190" y="182546" z="-3688" h="7166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30298" y="182602" z="-3688" h="29608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30170" y="182384" z="-3696" h="44007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29138" y="186100" z="-3688" h="36734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="28960" y="186450" z="-3696" h="49712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30874" y="186249" z="-3608" h="30131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30754" y="186184" z="-3624" h="15859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30738" y="186038" z="-3624" h="15991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30639" y="185806" z="-3640" h="51979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30715" y="185689" z="-3640" h="38596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30798" y="185542" z="-3640" h="19421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30189" y="185538" z="-3664" h="63125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30092" y="185917" z="-3680" h="18188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30238" y="185738" z="-3664" h="15113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30005" y="186279" z="-3672" h="20078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30195" y="186154" z="-3664" h="16857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30279" y="186319" z="-3648" h="53590" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29789" y="186357" z="-3688" h="12396" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29568" y="186125" z="-3696" h="54195" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29707" y="186241" z="-3688" h="13302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29759" y="185921" z="-3696" h="65236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29841" y="185809" z="-3696" h="11367" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29874" y="185809" z="-3696" h="24607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29212" y="185640" z="-3688" h="43122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29231" y="185651" z="-3688" h="38202" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29280" y="185483" z="-3672" h="684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29006" y="185049" z="-3672" h="23514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29227" y="185309" z="-3664" h="2882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29366" y="185079" z="-3656" h="24321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29667" y="184959" z="-3640" h="8713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29700" y="185168" z="-3656" h="13547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29795" y="185199" z="-3656" h="33636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30050" y="185415" z="-3664" h="37196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30224" y="185240" z="-3648" h="9011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29734" y="184873" z="-3640" h="5739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29872" y="184881" z="-3648" h="65361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29791" y="184736" z="-3640" h="11371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29266" y="186317" z="-3696" h="60151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30156" y="184611" z="-3688" h="57297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30275" y="184752" z="-3688" h="57450" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30164" y="184518" z="-3704" h="25188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30761" y="184498" z="-3688" h="7832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30930" y="184651" z="-3688" h="20213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30200" y="185233" z="-3664" h="27958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29380" y="184841" z="-3664" h="25692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29247" y="184574" z="-3688" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="29186" y="184524" z="-3696" h="1535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30767" y="185069" z="-3696" h="23442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30900" y="185241" z="-3664" h="44955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30903" y="185295" z="-3664" h="5842" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30490" y="184453" z="-3728" h="3844" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29569" y="186571" z="-3688" h="32311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29278" y="186743" z="-3672" h="16358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29569" y="186521" z="-3688" h="41620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30340" y="186586" z="-3624" h="4460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29953" y="186867" z="-3656" h="61762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30034" y="186720" z="-3656" h="38650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="29927" y="186700" z="-3672" h="50340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30485" y="186856" z="-3584" h="2903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30270" y="186926" z="-3616" h="60778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25422" y="187278" z="-3520" h="41137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26530" y="186672" z="-3472" h="53954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29319" y="186546" z="-3688" h="7653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26480" y="186697" z="-3472" h="14290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24338" y="185619" z="-3480" h="51569" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24453" y="185901" z="-3480" h="61857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24302" y="185900" z="-3512" h="16429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24311" y="186241" z="-3528" h="56998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24494" y="188031" z="-3560" h="62230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24587" y="188036" z="-3568" h="3014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24276" y="188306" z="-3568" h="61423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24617" y="187534" z="-3528" h="27559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24359" y="186408" z="-3512" h="12565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24381" y="186391" z="-3512" h="28257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24395" y="187888" z="-3560" h="33419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23867" y="188135" z="-3576" h="11934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24065" y="187658" z="-3584" h="10101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="23961" y="188221" z="-3568" h="26941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24561" y="187054" z="-3520" h="41265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24319" y="186999" z="-3560" h="13759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24496" y="187588" z="-3552" h="22417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24039" y="188008" z="-3576" h="21742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24056" y="187722" z="-3592" h="19932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24245" y="187017" z="-3560" h="62634" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24298" y="186360" z="-3528" h="24127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="23805" y="186429" z="-3576" h="56247" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="23887" y="186360" z="-3560" h="18723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="23895" y="187014" z="-3584" h="26235" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23749" y="187032" z="-3576" h="63571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="23452" y="186450" z="-3576" h="61087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="23611" y="186809" z="-3576" h="34501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24019" y="186940" z="-3576" h="45299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23722" y="186844" z="-3576" h="7276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24024" y="186531" z="-3568" h="29102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="23397" y="186891" z="-3584" h="41970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="23710" y="186564" z="-3584" h="22982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="22951" y="186444" z="-3576" h="28317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="22827" y="186601" z="-3576" h="13292" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23104" y="186759" z="-3576" h="16402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23323" y="186913" z="-3576" h="26720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23518" y="188185" z="-3576" h="49151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="23690" y="188203" z="-3568" h="4882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="23438" y="187892" z="-3584" h="7697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="23626" y="187761" z="-3568" h="14704" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23926" y="187703" z="-3584" h="18431" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23377" y="187665" z="-3568" h="49144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="23515" y="187384" z="-3584" h="58877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25672" y="186966" z="-3472" h="19035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26755" y="186597" z="-3472" h="23617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24411" y="189862" z="-3576" h="32553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24287" y="189922" z="-3568" h="57593" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24331" y="188700" z="-3584" h="41805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24369" y="188549" z="-3584" h="42594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="23745" y="188620" z="-3592" h="57138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23937" y="188645" z="-3592" h="60658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24085" y="188677" z="-3592" h="48107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24252" y="189052" z="-3584" h="58825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24625" y="188789" z="-3544" h="27952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23937" y="189011" z="-3592" h="3834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="23857" y="189009" z="-3592" h="25650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24121" y="189511" z="-3584" h="23816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24135" y="189835" z="-3568" h="15945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="23684" y="189186" z="-3600" h="22167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="23300" y="189374" z="-3600" h="52340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23522" y="189525" z="-3600" h="45011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="23426" y="189825" z="-3584" h="23630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="23414" y="189579" z="-3584" h="2959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="23231" y="189902" z="-3584" h="62888" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="23976" y="189074" z="-3592" h="47424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24048" y="189817" z="-3568" h="15444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24333" y="189340" z="-3560" h="1389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24493" y="189077" z="-3560" h="18030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24676" y="189718" z="-3544" h="36867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25055" y="188723" z="-3520" h="28805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24988" y="188502" z="-3552" h="60616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25564" y="189143" z="-3472" h="18246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25282" y="188638" z="-3528" h="16401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25379" y="189362" z="-3488" h="60191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26014" y="188885" z="-3496" h="38320" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26197" y="188971" z="-3480" h="28863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25952" y="188823" z="-3504" h="3056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25448" y="188494" z="-3536" h="3699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24793" y="189506" z="-3512" h="11570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25350" y="188637" z="-3536" h="60692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="24840" y="189617" z="-3488" h="23943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26362" y="188878" z="-3480" h="18055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25072" y="189691" z="-3488" h="26209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25032" y="188623" z="-3544" h="16654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25064" y="189001" z="-3504" h="53625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24842" y="189115" z="-3504" h="12581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25129" y="189072" z="-3488" h="2758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25429" y="189681" z="-3504" h="55802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25650" y="189479" z="-3480" h="19423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26594" y="188678" z="-3480" h="19419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26663" y="189524" z="-3464" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26394" y="189349" z="-3464" h="50403" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26578" y="188786" z="-3480" h="5070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25883" y="189180" z="-3488" h="23022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26123" y="189181" z="-3480" h="26240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25963" y="189543" z="-3480" h="40026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25250" y="189690" z="-3496" h="11417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25837" y="189789" z="-3472" h="17885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25456" y="189231" z="-3480" h="25284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26002" y="189842" z="-3472" h="48044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25954" y="189991" z="-3472" h="45641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26710" y="189922" z="-3480" h="37603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26323" y="189316" z="-3464" h="53767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26454" y="189871" z="-3472" h="14745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26492" y="189872" z="-3472" h="41206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25322" y="187018" z="-3512" h="35604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26605" y="186622" z="-3472" h="54837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24963" y="188802" z="-3512" h="38580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="24838" y="188877" z="-3528" h="23623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26380" y="186897" z="-3472" h="62318" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25572" y="187304" z="-3520" h="42288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="27742" y="188611" z="-3480" h="46456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="27466" y="188527" z="-3464" h="10877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="27393" y="188499" z="-3464" h="6353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="27221" y="188672" z="-3472" h="25669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26833" y="188865" z="-3472" h="8457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26964" y="188815" z="-3472" h="40470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26880" y="189570" z="-3472" h="56647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="27043" y="189174" z="-3480" h="16599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="27233" y="189230" z="-3480" h="21316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="27629" y="188887" z="-3480" h="28352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="27473" y="189025" z="-3480" h="15297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="27877" y="188832" z="-3488" h="34565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="27801" y="188689" z="-3480" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="27878" y="188971" z="-3480" h="64932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="27606" y="189252" z="-3480" h="37279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="27179" y="189763" z="-3480" h="38793" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="26891" y="189862" z="-3480" h="11488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="27117" y="189648" z="-3472" h="4153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="27744" y="189813" z="-3472" h="18488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="27656" y="189843" z="-3480" h="18506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="27745" y="189779" z="-3472" h="24698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="27653" y="189728" z="-3472" h="61707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="27725" y="190012" z="-3480" h="43837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="27491" y="189782" z="-3480" h="8233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25063" y="188502" z="-3552" h="6159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26355" y="186772" z="-3472" h="37728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25722" y="186940" z="-3472" h="52264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="24501" y="189593" z="-3568" h="896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="24913" y="188677" z="-3536" h="43674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="26730" y="186797" z="-3464" h="4262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29419" y="186746" z="-3680" h="15973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="29511" y="186895" z="-3680" h="35540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="25038" y="188677" z="-3520" h="25931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25672" y="187200" z="-3504" h="5211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="26505" y="186597" z="-3472" h="62878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22298" /> <!-- Mighty Bear -->
+		<point x="25497" y="187044" z="-3496" h="34484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22300" /> <!-- Strong Kima -->
+		<point x="25522" y="187304" z="-3520" h="43538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22301" /> <!-- Big Honeybee -->
+		<point x="26380" y="186922" z="-3472" h="14972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22299" /> <!-- Stubborn Hog -->
+		<point x="25297" y="187278" z="-3520" h="55115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="31189" y="186104" z="-3632" h="65510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="31324" y="186452" z="-3592" h="41984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="31406" y="186154" z="-3600" h="38277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="31587" y="186238" z="-3592" h="1195" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="31891" y="186039" z="-3584" h="58452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="31865" y="186262" z="-3576" h="26077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="31618" y="185795" z="-3600" h="1535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="31765" y="185879" z="-3592" h="22887" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="31351" y="185573" z="-3632" h="11766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="31247" y="185732" z="-3640" h="20072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="31114" y="185893" z="-3640" h="37802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="31331" y="184739" z="-3672" h="23687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="31414" y="184513" z="-3672" h="22656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="31219" y="184526" z="-3688" h="28344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="31239" y="185319" z="-3632" h="62061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="31496" y="185065" z="-3624" h="40015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="31208" y="185345" z="-3664" h="44924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="31463" y="185737" z="-3616" h="55681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="30971" y="183176" z="-3712" h="45304" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="31335" y="182890" z="-3696" h="44486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="30991" y="182969" z="-3704" h="20021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="31164" y="183408" z="-3688" h="49674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="31122" y="183583" z="-3696" h="3100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="31087" y="183593" z="-3696" h="30971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30773" y="182955" z="-3720" h="53931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22293" /> <!-- Bear -->
+		<point x="30906" y="183987" z="-3688" h="21857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="30531" y="184026" z="-3736" h="52721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22295" /> <!-- Kima -->
+		<point x="31451" y="184015" z="-3680" h="65336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22294" /> <!-- Hog -->
+		<point x="31128" y="184032" z="-3696" h="62325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="31262" y="184300" z="-3688" h="14970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22296" /> <!-- Honeybee -->
+		<point x="29619" y="186971" z="-3680" h="27637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34181" /> <!-- Caro -->
+		<point x="26681" y="185143" z="-3472" h="0" />
+	</spawn>
+</list>

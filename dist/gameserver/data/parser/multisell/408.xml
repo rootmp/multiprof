@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: SanyaDC-->
+<list>
+	<item>
+		<production id="91927" count="500"/>	<!--Soulshot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot Ticket-->
+	</item>
+	<item>
+		<production id="91930" count="134"/>	<!--Blessed Spiritshot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot Ticket-->
+	</item>
+	<item>
+		<production id="6645" count="500"/>	<!--Beast Soulshot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot Ticket-->
+	</item>
+	<item>
+		<production id="6646" count="200"/>	<!--Beast Spiritshot-->
+		<ingredient id="90907" count="1"/>	<!--Soulshot Ticket-->
+	</item>
+	<item>
+		<production id="91927" count="500"/>	<!--Soulshot-->
+		<ingredient id="49487" count="1"/>	<!--Soulshot Ticket-->
+	</item>
+	<item>
+		<production id="91930" count="134"/>	<!--Blessed Spiritshot-->
+		<ingredient id="49487" count="1"/>	<!--Soulshot Ticket-->
+	</item>
+	<item>
+		<production id="6645" count="500"/>	<!--Beast Soulshot-->
+		<ingredient id="49487" count="1"/>	<!--Soulshot Ticket-->
+	</item>
+	<item>
+		<production id="6646" count="200"/>	<!--Beast Spiritshot-->
+		<ingredient id="49487" count="1"/>	<!--Soulshot Ticket-->
+	</item>
+	<item>
+		<production id="91927" count="7"/>	<!--Soulshot-->
+		<ingredient id="91930" count="2"/>	<!--Blessed Spiritshot-->
+	</item>
+	<item>
+		<production id="91930" count="1"/>	<!--Blessed Spiritshot-->
+		<ingredient id="91927" count="4"/>	<!--Soulshot-->
+	</item>
+	<item>
+		<production id="6645" count="5"/>	<!--Beast Soulshot-->
+		<ingredient id="6646" count="2"/>	<!--Beast Spiritshot-->
+	</item>
+	<item>
+		<production id="6646" count="2"/>	<!--Beast Spiritshot-->
+		<ingredient id="6645" count="5"/>	<!--Beast Soulshot-->
+	</item>
+</list>

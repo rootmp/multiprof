@@ -1,0 +1,14 @@
+<!ELEMENT list (category)*>
+
+	<!ELEMENT category (item)*>
+	<!ATTLIST category
+		probability CDATA #REQUIRED>
+		
+		<!ELEMENT item (#PCDATA)>
+		<!ATTLIST item
+			id CDATA #REQUIRED
+			resultId CDATA #IMPLIED
+			count CDATA #REQUIRED
+			enchantLevel CDATA #IMPLIED
+			chance CDATA #REQUIRED
+			announce CDATA #IMPLIED>

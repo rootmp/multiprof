@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="60001" levels="1" name="Siege Spectator Mode">
+		<set name="effectPoint" value="5000"/>
+		<set name="icon" value="icon.skill0922"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60002" levels="10" name="Einhasad Overseeing">
+		<table name="#spd">0 0 0.9 0.8 0.7</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.karma"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<mul stat="runSpd" value="#spd"/>
+		</for>
+	</skill>
+	<skill id="60003" levels="1" name="Server Level Ranking I">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.server_ranking_1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="CON" value="1"/>
+			<add stat="DEX" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="WIT" value="1"/>
+			<add stat="MEN" value="1"/>
+			<add stat="regHp" value="50"/>
+			<add stat="maxLoad" value="100000"/>
+			<add stat="pEvasRate" value="20"/>
+		</for>
+	</skill>
+	<skill id="60004" levels="1" name="Server Level Ranking II">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.server_ranking_2"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="CON" value="1"/>
+			<add stat="DEX" value="1"/>
+			<add stat="WIT" value="1"/>
+			<add stat="MEN" value="1"/>
+			<add stat="maxLoad" value="10000"/>
+		</for>
+	</skill>
+	<skill id="60005" levels="1" name="Server Level Ranking III">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.server_ranking_3"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="CON" value="1"/>
+			<add stat="MEN" value="1"/>
+			<add stat="maxLoad" value="5000"/>
+		</for>
+	</skill>
+	<skill id="60006" levels="1" name="Human Level Ranking - 1st Place">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.race_ranking_1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<p_critical_damage value="300" type="DIFF"/>
+			<p_magic_critical_dmg value="300" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="60007" levels="1" name="Elf Level Ranking - 1st Place">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.race_ranking_1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="pAtk" value="300"/>
+			<add stat="mAtk" value="300"/>
+		</for>
+	</skill>
+	<skill id="60008" levels="1" name="Dark Elf Level Ranking - 1st Place">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.race_ranking_1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="pAtkSpd" value="200"/>
+			<add stat="mAtkSpd" value="200"/>
+		</for>
+	</skill>
+	<skill id="60009" levels="1" name="Orc Level Ranking - 1st Place">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.race_ranking_1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="pCritRate" value="20"/>
+			<add stat="mCritRate" value="20"/>
+		</for>
+	</skill>
+	<skill id="60010" levels="1" name="Dwarf Level Ranking - 1st Place">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.race_ranking_1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="pAtk" value="100"/>
+			<add stat="MaxHp" value="500"/>
+			<!--TODO: Enchant success rate.-->
+		</for>
+	</skill>
+	<skill id="60011" levels="1" name="Kamael Level Ranking - 1st Place">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.race_ranking_1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<add stat="pAccCombat" value="5"/>
+			<add stat="mAccCombat" value="5"/>
+			<add stat="pEvasRate" value="5"/>
+			<add stat="mEvasRate" value="5"/>
+		</for>
+	</skill>
+	<skill id="60012" levels="1" name="Server Level Ranking Effect I">
+		<set name="icon" value="icon.UI_server_ranking_1"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60013" levels="1" name="Server Level Ranking Effect II">
+		<set name="icon" value="icon.UI_server_ranking_2"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60014" levels="1" name="Server Level Ranking Effect III">
+		<set name="icon" value="icon.UI_server_ranking_3"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60015" levels="1" name="Race Ranking Effect">
+		<set name="icon" value="icon.UI_race_ranking_1"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60016" levels="1" name="Effect of Holy Relic 1">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="3500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="60017" levels="1" name="Effect of Holy Relic 2">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="3500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="60018" levels="2" name="Teleport">
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="isSkillTimePermanent" value="true"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="target_type" value="SELF"/>
+		<set name="target" value="TARGET_SELF" />
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="skillType" value="RECALL" />
+		<set name="to_flag" value="true"/>
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="60019" levels="5" name="Jaban's Blessing">
+		<set name="icon" value="icon.skill30518"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

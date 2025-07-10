@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="37400">
+		<!--Max MP +70-->
+	</option_data>
+	<option_data id="37401">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="37402">
+		<!--Max MP +80-->
+	</option_data>
+	<option_data id="37403">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="37404">
+		<!--Max MP +5-->
+	</option_data>
+	<option_data id="37405">
+		<!--Max MP +8-->
+	</option_data>
+	<option_data id="37406">
+		<!--Max MP +11-->
+	</option_data>
+	<option_data id="37407">
+		<!--Max MP +14-->
+	</option_data>
+	<option_data id="37408">
+		<!--Max MP +17-->
+	</option_data>
+	<option_data id="37409">
+		<!--Max MP +20-->
+	</option_data>
+	<option_data id="37410">
+		<!--Max MP +23-->
+	</option_data>
+	<option_data id="37411">
+		<!--Max MP +26-->
+	</option_data>
+	<option_data id="37412">
+		<!--Max MP +30-->
+	</option_data>
+	<option_data id="37413">
+		<!--Max MP +33-->
+	</option_data>
+	<option_data id="37414">
+		<!--Max MP +36-->
+	</option_data>
+	<option_data id="37415">
+		<!--Max MP +39-->
+	</option_data>
+	<option_data id="37416">
+		<!--Max MP +42-->
+	</option_data>
+	<option_data id="37417">
+		<!--Max MP +45-->
+	</option_data>
+	<option_data id="37418">
+		<!--Max MP +48-->
+	</option_data>
+	<option_data id="37419">
+		<!--Max MP +60-->
+	</option_data>
+	<option_data id="37420">
+		<!--Max MP +70-->
+	</option_data>
+	<option_data id="37421">
+		<!--Max MP +75-->
+	</option_data>
+	<option_data id="37422">
+		<!--Max MP +80-->
+	</option_data>
+	<option_data id="37423">
+		<!--Max MP +100-->
+	</option_data>
+	<option_data id="37424">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37425">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37426">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37427">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37428">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37429">
+		<!--P. Evasion +1.1-->
+	</option_data>
+	<option_data id="37430">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="37431">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="37432">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37433">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37434">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37435">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="37436">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="37437">
+		<!--P. Evasion +1.6-->
+	</option_data>
+	<option_data id="37438">
+		<!--P. Evasion +1.8-->
+	</option_data>
+	<option_data id="37439">
+		<!--P. Evasion +2.0-->
+	</option_data>
+	<option_data id="37440">
+		<!--P. Evasion +2.5-->
+	</option_data>
+	<option_data id="37441">
+		<!--P. Evasion +3.0-->
+	</option_data>
+	<option_data id="37442">
+		<!--P. Evasion +3.5-->
+	</option_data>
+	<option_data id="37443">
+		<!--P. Evasion +5.0-->
+	</option_data>
+	<option_data id="37444">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37445">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37446">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37447">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37448">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37449">
+		<!--P. Evasion +1.1-->
+	</option_data>
+	<option_data id="37450">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="37451">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="37452">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37453">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37454">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37455">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="37456">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="37457">
+		<!--P. Evasion +1.6-->
+	</option_data>
+	<option_data id="37458">
+		<!--P. Evasion +1.8-->
+	</option_data>
+	<option_data id="37459">
+		<!--P. Evasion +2.0-->
+	</option_data>
+	<option_data id="37460">
+		<!--P. Evasion +2.5-->
+	</option_data>
+	<option_data id="37461">
+		<!--P. Evasion +3.0-->
+	</option_data>
+	<option_data id="37462">
+		<!--P. Evasion +3.5-->
+	</option_data>
+	<option_data id="37463">
+		<!--P. Evasion +5.0-->
+	</option_data>
+	<option_data id="37464">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37465">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37466">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37467">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37468">
+		<!--P. Evasion +1.0-->
+	</option_data>
+	<option_data id="37469">
+		<!--P. Evasion +1.1-->
+	</option_data>
+	<option_data id="37470">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="37471">
+		<!--P. Evasion +1.2-->
+	</option_data>
+	<option_data id="37472">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37473">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37474">
+		<!--P. Evasion +1.3-->
+	</option_data>
+	<option_data id="37475">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="37476">
+		<!--P. Evasion +1.4-->
+	</option_data>
+	<option_data id="37477">
+		<!--P. Evasion +1.6-->
+	</option_data>
+	<option_data id="37478">
+		<!--P. Evasion +1.8-->
+	</option_data>
+	<option_data id="37479">
+		<!--P. Evasion +2.0-->
+	</option_data>
+	<option_data id="37480">
+		<!--P. Evasion +2.5-->
+	</option_data>
+	<option_data id="37481">
+		<!--P. Evasion +3.0-->
+	</option_data>
+	<option_data id="37482">
+		<!--P. Evasion +3.5-->
+	</option_data>
+	<option_data id="37483">
+		<!--P. Evasion +5.0-->
+	</option_data>
+	<option_data id="37484">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="37485">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="37486">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="37487">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="37488">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="37489">
+		<!--M. Evasion +1.1-->
+	</option_data>
+	<option_data id="37490">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="37491">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="37492">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="37493">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="37494">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="37495">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="37496">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="37497">
+		<!--M. Evasion +1.6-->
+	</option_data>
+	<option_data id="37498">
+		<!--M. Evasion +1.8-->
+	</option_data>
+	<option_data id="37499">
+		<!--M. Evasion +2.0-->
+	</option_data>
+</list>

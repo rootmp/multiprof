@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: SanyaDC-->
+<list>
+	<item>
+		<production id="70218" count="1"/>	<!--Chronicle Chest (Not Available)-->
+		<ingredient id="70217" count="4"/>	<!--Rare Accessory Lv. 3 Coupon (Not Available)-->
+	</item>
+	<item>
+		<production id="70227" count="1"/>	<!--Queen Ant's Ring Lv. 3 Box-->
+		<ingredient id="70217" count="500"/>	<!--Rare Accessory Lv. 3 Coupon (Not Available)-->
+	</item>
+	<item>
+		<production id="70228" count="1"/>	<!--Orfen's Earring Lv. 3 Box-->
+		<ingredient id="70217" count="500"/>	<!--Rare Accessory Lv. 3 Coupon (Not Available)-->
+	</item>
+	<item>
+		<production id="70229" count="1"/>	<!--Ring of Core Lv 3 Box-->
+		<ingredient id="70217" count="500"/>	<!--Rare Accessory Lv. 3 Coupon (Not Available)-->
+	</item>
+	<item>
+		<production id="70227" count="1"/>	<!--Queen Ant's Ring Lv. 3 Box-->
+		<ingredient id="70230" count="1"/>	<!--Rare Accessory Lv. 3 Exchange Ticket (Not Available)-->
+	</item>
+	<item>
+		<production id="70228" count="1"/>	<!--Orfen's Earring Lv. 3 Box-->
+		<ingredient id="70230" count="1"/>	<!--Rare Accessory Lv. 3 Exchange Ticket (Not Available)-->
+	</item>
+	<item>
+		<production id="70229" count="1"/>	<!--Ring of Core Lv 3 Box-->
+		<ingredient id="70230" count="1"/>	<!--Rare Accessory Lv. 3 Exchange Ticket (Not Available)-->
+	</item>
+	<item>
+		<production id="29620" count="1"/>	<!--Saber*Elven Sword (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29621" count="1"/>	<!--Sword of Revolution (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29622" count="1"/>	<!--Maingauche (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29623" count="1"/>	<!--Reinforced Longbow (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29624" count="1"/>	<!--Tarbar Head (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29625" count="1"/>	<!--Lesser Giant's Sword (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29626" count="1"/>	<!--Lesser Giant's Hammer (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29627" count="1"/>	<!--Winged Spear (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29628" count="1"/>	<!--Bich'Hwa (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29629" count="1"/>	<!--Sword of Magic Fog (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29630" count="1"/>	<!--Priest Mace (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="29631" count="1"/>	<!--Goat Head Staff (30-day)-->
+		<ingredient id="29608" count="1"/>	<!--Timed Weapon Exchange Coupon (D-grade)-->
+	</item>
+	<item>
+		<production id="49773" count="1"/>	<!--Fighter Pirate Fruit - Attack-->
+		<ingredient id="29745" count="2"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49774" count="1"/>	<!--Fighter Pirate Fruit - Defense-->
+		<ingredient id="29745" count="2"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49791" count="1"/>	<!--Cadmus Transformation Bracelet - Prophet (1-day)-->
+		<ingredient id="29745" count="40"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49792" count="1"/>	<!--Cadmus Transformation Bracelet - Shillien Elder (1-day)-->
+		<ingredient id="29745" count="40"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49793" count="1"/>	<!--Cadmus Transformation Bracelet - Elven Elder (1-day)-->
+		<ingredient id="29745" count="40"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="70106" count="1"/>	<!--Rune of Boost (7-day)-->
+		<ingredient id="29745" count="130"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="90157" count="1"/>	<!--Warrior’s Talisman - Attack (7-day)-->
+		<ingredient id="29745" count="120"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="90160" count="1"/>	<!--Warrior’s Talisman - Defense (7-day)-->
+		<ingredient id="29745" count="120"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="70615" count="1"/>	<!--Mount - Gold Maned Lion (Not Available)-->
+		<ingredient id="29745" count="80"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="70643" count="1"/>	<!--Golden Mermaid's Scale (7-day)-->
+		<ingredient id="29745" count="80"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49707" count="1"/>	<!--Talisman of Darkness - P. Atk. (1 hour)-->
+		<ingredient id="29745" count="40"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49708" count="1"/>	<!--Talisman of Darkness - M. Atk. (1 hour)-->
+		<ingredient id="29745" count="40"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49709" count="1"/>	<!--Talisman of Darkness - P. Def. (1 hour)-->
+		<ingredient id="29745" count="30"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49710" count="1"/>	<!--Talisman of Darkness - M. Def. (1 hour)-->
+		<ingredient id="29745" count="30"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49711" count="1"/>	<!--Talisman of Darkness - P. Skills Evasion (1 hour)-->
+		<ingredient id="29745" count="30"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49712" count="1"/>	<!--Talisman of Darkness - M. Skills Evasion (1 hour)-->
+		<ingredient id="29745" count="30"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49713" count="1"/>	<!--Talisman of Darkness - HP (1 hour)-->
+		<ingredient id="29745" count="30"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49714" count="1"/>	<!--Talisman of Darkness - MP (1 hour)-->
+		<ingredient id="29745" count="30"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49715" count="1"/>	<!--Talisman of Darkness - Healing Power (1 hour)-->
+		<ingredient id="29745" count="30"/>	<!--Premium Coin-->
+	</item>
+	<item>
+		<production id="49716" count="1"/>	<!--Talisman of Darkness - Power of Healing Magic (1 hour)-->
+		<ingredient id="29745" count="30"/>	<!--Premium Coin-->
+	</item>
+</list>

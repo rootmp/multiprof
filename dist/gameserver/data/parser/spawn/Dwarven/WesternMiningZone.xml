@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="124758" y="-199700" z="-3608" h="37262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="123377" y="-199054" z="-3704" h="18864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="123463" y="-198904" z="-3696" h="44479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="126267" y="-200680" z="-3720" h="33982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="126001" y="-201872" z="-3584" h="38835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="126966" y="-202718" z="-3576" h="24680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="126850" y="-202416" z="-3616" h="39078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127153" y="-202875" z="-3568" h="54477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="126784" y="-201169" z="-3720" h="64374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="126161" y="-199937" z="-3720" h="36171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="125772" y="-199780" z="-3712" h="33131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="126157" y="-200198" z="-3720" h="31900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="125828" y="-199937" z="-3712" h="31463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127050" y="-202709" z="-3592" h="64796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127507" y="-202971" z="-3584" h="63146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="128139" y="-202642" z="-3632" h="8157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127309" y="-204261" z="-3248" h="33131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127480" y="-204197" z="-3280" h="43973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127756" y="-204271" z="-3344" h="9524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127404" y="-202331" z="-3704" h="20633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="127294" y="-201539" z="-3720" h="30345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127692" y="-201985" z="-3720" h="44316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127384" y="-202606" z="-3616" h="23217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="127742" y="-201637" z="-3720" h="12387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127216" y="-201434" z="-3720" h="41832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="126967" y="-200518" z="-3720" h="48409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="127788" y="-200801" z="-3720" h="48668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20521" /> <!-- Whinstone Golem -->
+		<point x="128978" y="-198729" z="-3496" h="20021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20521" /> <!-- Whinstone Golem -->
+		<point x="128776" y="-198770" z="-3488" h="36196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="130042" y="-203445" z="-3392" h="21693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="130217" y="-204700" z="-3568" h="61189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="130637" y="-203707" z="-3416" h="44048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="130001" y="-199173" z="-3456" h="10573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="125708" y="-205506" z="-3136" h="34215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="125708" y="-205169" z="-3104" h="32400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="125986" y="-204832" z="-3072" h="59382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="125986" y="-205506" z="-3168" h="52358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="125986" y="-205169" z="-3136" h="10103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="126264" y="-205169" z="-3200" h="46964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="128766" y="-205843" z="-3720" h="41894" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127932" y="-205843" z="-3632" h="6325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="128210" y="-205169" z="-3568" h="23696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127932" y="-205169" z="-3560" h="60941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="128766" y="-205169" z="-3616" h="4509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="128488" y="-206517" z="-3680" h="5099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="127932" y="-206180" z="-3640" h="11962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="129415" y="-205690" z="-3712" h="19459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="129324" y="-205690" z="-3712" h="27935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="129506" y="-206558" z="-3616" h="40993" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="130052" y="-206558" z="-3600" h="64338" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="129779" y="-205039" z="-3616" h="33624" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="132204" y="-204971" z="-3512" h="10666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="131804" y="-206765" z="-3584" h="8397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="131604" y="-205270" z="-3488" h="17789" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="132604" y="-205569" z="-3544" h="58884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="132771" y="-204452" z="-3560" h="50554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="132103" y="-203050" z="-3544" h="56096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="132647" y="-204454" z="-3536" h="47049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="132537" y="-203380" z="-3576" h="39224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="132480" y="-203507" z="-3568" h="31474" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="132331" y="-203971" z="-3520" h="39566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="132611" y="-203701" z="-3576" h="36088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="132688" y="-202596" z="-3624" h="21338" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="132800" y="-201878" z="-3560" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="131518" y="-202099" z="-3432" h="58670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="130492" y="-208826" z="-3560" h="46119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="130326" y="-208576" z="-3584" h="46490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="132264" y="-207895" z="-3624" h="59537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="131472" y="-208693" z="-3568" h="2632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="132440" y="-208427" z="-3624" h="65504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="133127" y="-204773" z="-3616" h="27674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="134423" y="-205228" z="-3688" h="34222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="134204" y="-204373" z="-3720" h="43193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="134004" y="-203177" z="-3720" h="58581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="133404" y="-203177" z="-3704" h="37878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="134204" y="-204074" z="-3720" h="7468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="133804" y="-204672" z="-3720" h="49950" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="134204" y="-203775" z="-3720" h="45939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="131912" y="-209491" z="-3584" h="23449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="132088" y="-209358" z="-3592" h="56035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="131824" y="-209358" z="-3560" h="2586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136292" y="-210972" z="-3480" h="62249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136017" y="-209757" z="-3512" h="15639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136253" y="-210372" z="-3488" h="46889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137271" y="-210784" z="-3720" h="25456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136016" y="-210674" z="-3496" h="45316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136131" y="-210974" z="-3488" h="4195" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137091" y="-210827" z="-3696" h="20359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136824" y="-209913" z="-3560" h="3915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136900" y="-207832" z="-3552" h="59377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="136862" y="-207260" z="-3528" h="51655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136725" y="-207013" z="-3552" h="9473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="138806" y="-210495" z="-3160" h="53283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138771" y="-207017" z="-3648" h="31600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139099" y="-207283" z="-3648" h="16668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139096" y="-207418" z="-3640" h="37625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137496" y="-207331" z="-3512" h="23893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="138763" y="-208302" z="-3464" h="13203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139017" y="-206864" z="-3656" h="59525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="138575" y="-208270" z="-3432" h="1061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138952" y="-207231" z="-3648" h="23145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="137859" y="-207305" z="-3536" h="5384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139176" y="-207855" z="-3592" h="24188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="138337" y="-208371" z="-3416" h="65290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138909" y="-207659" z="-3592" h="1119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139290" y="-207610" z="-3640" h="18624" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139096" y="-205555" z="-3552" h="56834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137632" y="-206176" z="-3536" h="9435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138320" y="-206181" z="-3592" h="28236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137388" y="-206797" z="-3544" h="28788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="138542" y="-206118" z="-3592" h="52972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138437" y="-206380" z="-3600" h="37154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136808" y="-211096" z="-3472" h="26662" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136245" y="-211398" z="-3448" h="62327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136178" y="-211605" z="-3440" h="36455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136355" y="-211354" z="-3440" h="43262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136914" y="-211246" z="-3520" h="63269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136924" y="-211163" z="-3536" h="41993" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136230" y="-211561" z="-3432" h="8396" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136268" y="-211514" z="-3432" h="46130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="136969" y="-211761" z="-3496" h="36237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137283" y="-211222" z="-3720" h="25227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="137336" y="-211853" z="-3576" h="22548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138376" y="-212706" z="-3528" h="49889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137473" y="-211770" z="-3640" h="26227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="137719" y="-212170" z="-3600" h="46131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137611" y="-212320" z="-3528" h="36935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137869" y="-212896" z="-3480" h="9980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138134" y="-212588" z="-3512" h="21385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137631" y="-212577" z="-3504" h="41974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137118" y="-211692" z="-3552" h="945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="138949" y="-212244" z="-3664" h="33244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139203" y="-212861" z="-3544" h="1481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140954" y="-211009" z="-3176" h="49259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139571" y="-212584" z="-3536" h="26427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139510" y="-212224" z="-3640" h="46143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139596" y="-212895" z="-3536" h="13664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139509" y="-212111" z="-3720" h="31041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139846" y="-212057" z="-3712" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="140637" y="-210954" z="-3184" h="52583" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140685" y="-210972" z="-3184" h="62068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140435" y="-213133" z="-3552" h="58272" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140089" y="-212608" z="-3568" h="46456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139309" y="-212065" z="-3720" h="40775" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139365" y="-212565" z="-3536" h="58673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141043" y="-212656" z="-3688" h="41730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139985" y="-212560" z="-3560" h="47965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141053" y="-212400" z="-3720" h="3401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139512" y="-212266" z="-3624" h="64983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140376" y="-213044" z="-3544" h="2831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141116" y="-212663" z="-3696" h="54216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139714" y="-212541" z="-3552" h="16389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140390" y="-212519" z="-3640" h="20162" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139254" y="-212966" z="-3552" h="31825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139078" y="-212051" z="-3696" h="59363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139961" y="-212239" z="-3656" h="56803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139715" y="-212131" z="-3696" h="14935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141412" y="-211157" z="-3208" h="54658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140140" y="-211053" z="-3184" h="20708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140585" y="-211203" z="-3200" h="2826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139282" y="-209827" z="-3192" h="24473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140665" y="-209392" z="-3328" h="40778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140763" y="-210077" z="-3184" h="44280" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140314" y="-210662" z="-3176" h="43469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140562" y="-211146" z="-3192" h="774" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140162" y="-210766" z="-3160" h="6777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141311" y="-211131" z="-3208" h="7874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="140851" y="-210073" z="-3176" h="15371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="140757" y="-210123" z="-3184" h="47806" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="140159" y="-210798" z="-3152" h="51434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140338" y="-210023" z="-3184" h="3347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140534" y="-210410" z="-3192" h="43326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139565" y="-207295" z="-3688" h="12657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139304" y="-208293" z="-3536" h="11086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139493" y="-208090" z="-3576" h="65291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139470" y="-208170" z="-3560" h="50869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139235" y="-208052" z="-3552" h="42813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139956" y="-206689" z="-3704" h="1489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139296" y="-207035" z="-3680" h="65216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139698" y="-206841" z="-3704" h="52436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="139485" y="-207672" z="-3632" h="47322" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="136608" y="-213050" z="-3504" h="19876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138262" y="-213285" z="-3624" h="54303" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="137376" y="-213494" z="-3544" h="9469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137425" y="-213402" z="-3520" h="26004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137760" y="-213494" z="-3520" h="10535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138085" y="-213155" z="-3528" h="59804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="138363" y="-213099" z="-3608" h="51567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="137336" y="-213570" z="-3576" h="32000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="138142" y="-213350" z="-3584" h="28700" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="140976" y="-213101" z="-3600" h="51347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141303" y="-213489" z="-3568" h="31623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141360" y="-213504" z="-3576" h="63527" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139808" y="-213105" z="-3544" h="63841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="140711" y="-213476" z="-3560" h="5001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140362" y="-213431" z="-3584" h="16767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140368" y="-213194" z="-3544" h="2896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140169" y="-213197" z="-3536" h="64047" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="140804" y="-213059" z="-3592" h="35851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="139843" y="-212853" z="-3536" h="61514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140704" y="-213210" z="-3568" h="54820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140711" y="-213536" z="-3568" h="27928" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141144" y="-213322" z="-3568" h="53013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="140305" y="-212997" z="-3544" h="3079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141272" y="-213411" z="-3568" h="40333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141260" y="-213509" z="-3576" h="21332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="140893" y="-213255" z="-3568" h="46866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141532" y="-211156" z="-3224" h="483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141470" y="-212629" z="-3672" h="10771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142837" y="-211531" z="-3536" h="5648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142399" y="-211597" z="-3424" h="42328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142110" y="-211597" z="-3352" h="47032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142255" y="-211325" z="-3344" h="9281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142688" y="-211156" z="-3424" h="42748" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141821" y="-209833" z="-3240" h="28823" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142399" y="-210274" z="-3360" h="61041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141495" y="-210410" z="-3152" h="51420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142256" y="-210697" z="-3312" h="41295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142755" y="-210189" z="-3512" h="19860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141706" y="-209951" z="-3200" h="23129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142945" y="-209321" z="-3640" h="13346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="143396" y="-208990" z="-3688" h="10009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142974" y="-209646" z="-3656" h="19408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142626" y="-209123" z="-3520" h="19499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142946" y="-208712" z="-3640" h="44278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="143115" y="-209670" z="-3688" h="44440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="143409" y="-209315" z="-3688" h="60290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="143221" y="-208929" z="-3688" h="46318" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142806" y="-209436" z="-3584" h="11327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142284" y="-210609" z="-3320" h="28415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141441" y="-210994" z="-3208" h="12616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142283" y="-210585" z="-3320" h="52946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142798" y="-210142" z="-3528" h="58838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141871" y="-210689" z="-3224" h="31765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="141615" y="-210226" z="-3160" h="14516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142380" y="-210610" z="-3352" h="38565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142110" y="-210421" z="-3240" h="2639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142399" y="-210127" z="-3368" h="22058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142940" y="-210733" z="-3528" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141543" y="-209792" z="-3200" h="22094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="141749" y="-210142" z="-3176" h="22518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142705" y="-208948" z="-3552" h="52325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142806" y="-208105" z="-3560" h="50182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142779" y="-208565" z="-3560" h="15255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142514" y="-208305" z="-3464" h="52248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142467" y="-208560" z="-3472" h="10728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142268" y="-208231" z="-3464" h="13420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="143048" y="-208420" z="-3608" h="10877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142501" y="-208135" z="-3472" h="43164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142475" y="-208431" z="-3464" h="47423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20508" /> <!-- Plunder Tarantula -->
+		<point x="142176" y="-208963" z="-3384" h="48826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142034" y="-207127" z="-3552" h="42138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20403" /> <!-- Hunter Tarantula -->
+		<point x="142543" y="-207057" z="-3560" h="32565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31035" /> <!-- Protector -->
+		<point x="126672" y="-206624" z="-3440" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31035" /> <!-- Protector -->
+		<point x="132345" y="-204471" z="-3504" h="24054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31035" /> <!-- Protector -->
+		<point x="141871" y="-208976" z="-3352" h="9032" />
+	</spawn>
+</list>

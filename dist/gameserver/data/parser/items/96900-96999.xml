@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="96900" name="Spellbook: Perfect Mastery" add_name="Sealed">
+		<!--A spellbook for learning the Ultimate Evasion Lv. 3/ Ultimate Escape Lv. 3.\n\n<Classes>\nSagittarius\nMoonlight Sentinel\nGhost Sentinel\nTrickster\n\n<Skill effect>\nAdds new effects to learnt skills.\n- Decreases Skill Cooldown.\n- Adds the Debuff/ Anomaly Resistance effect.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96901" name="Aden's Soul Crystal Lv. 1 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96902" name="Aden's Soul Crystal Lv. 2 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 1 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96903" name="Aden's Soul Crystal Lv. 3 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 1 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96904" name="Aden's Soul Crystal Lv. 4 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 1 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96905" name="Aden's Soul Crystal Lv. 5 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 1 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96906" name="Aden's Soul Crystal Lv. 6 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 6 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96907" name="Aden's Soul Crystal Lv. 7 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 6 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96908" name="Aden's Soul Crystal Lv. 8 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 6 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96909" name="Aden's Soul Crystal Lv. 9 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 6 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96910" name="Aden's Soul Crystal Lv. 10 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 6 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96911" name="Aden's Soul Crystal Lv. 11 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 11 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96912" name="Aden's Soul Crystal Lv. 12 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 11 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96913" name="Aden's Soul Crystal Lv. 13 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 11 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96914" name="Aden's Soul Crystal Lv. 14 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 11 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96915" name="Aden's Soul Crystal Lv. 15 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 11 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96916" name="Aden's Soul Crystal Lv. 16 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 16 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96917" name="Aden's Soul Crystal Lv. 17 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 16 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96918" name="Aden's Soul Crystal Lv. 18 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 16 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96919" name="Aden's Soul Crystal Lv. 19 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\nCan be upgraded through compounding with Aden's Soul Crystal Lv. 1 - Armor.\n\n<font color=ff6666>Note!</font>\nIn case of compound failure, Aden's Soul Crystal Lv. 16 - Armor is obtained.\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96920" name="Aden's Soul Crystal Lv. 20 - Armor">
+		<!--Double-click to imbue <font color=eeaa22>armor</font> with the <font color=eeaa22>Defense Property</font> effect (increases P./ M. Def.).\n\n<font color=ff6666>Cannot be used for enhancing sigils/ shields/ sealed equipment.</font>-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96921" name="Hero's Treasure Chest (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain Hero's Mark, a random item from the list or one of various items.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96922" name="Hero's Mark (Time-limited)" add_name="Sealed">
+		<!--A material for creating various items through the Special Craft.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96923" name="Kit: Hero's Treasure Chest (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96924" name="Sayha's Grace Scroll" add_name="Sealed">
+		<!--Applies a buff when used.\n\n<Buff>\nTemporarily maintains Sayha's Grace.\n\nDuration: 60 min.\nCooldown: 1 min.\nThe effect remains after death.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96925" name="Dream Orb" add_name="Sealed">
+		<!--Can be obtained for completing quests in the Dream Dungeon.\n\n<How to use>\nSpecial Craft - Dream Dungeon-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96926" name="Package: +6 Circlet of Hero" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96927" name="Demon King's Great Axe" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96928" name="Demon King's Ancient Sword" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96929" name="Demon King's Magic Blunt Weapon" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96930" name="Demon King's Fire Gloves" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96931" name="Demon King's Pistols" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96932" name="Demon King's Rapier" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96933" name="Demon King's Staff" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96934" name="Demon King's Crossbow" add_name="In development">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96935" name="Demon King's Dagger" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96936" name="Demon King's Shield" add_name="In development">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96937" name="Demon King's Sigil" add_name="In development">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96938" name="Demon King's Two-handed Sword" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96939" name="Demon King's Spear" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96940" name="Demon King's Bow" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="96941" name="Extra Pass: Training Zone" add_name="Sealed">
+		<!--Double-click to get an extra pass to the Training Zone.\n\nNote!\nCan be used once a day outside of instance zones.\nCan only be used when the Training Zone is on cooldown.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96942" name="Kit: Hero's Mark (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96943" name="Rare Item Challenge Point Effect Boost - 1 Charge" add_name="Sealed">
+		<!--Double-click to increase rare item's challenge point effect by 1.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96944" name="Rare Item Challenge Point Effect Boost - 2 Charges" add_name="Sealed">
+		<!--Double-click to increase rare item's challenge point effect by 2.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96945" name="Rare Item Challenge Points' Enhanced Charge" add_name="Sealed">
+		<!--Double-click to obtain an enhanced charge of rare item's challenge points.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96946" name="Rare Item Challenge Points' Charge Protection" add_name="Sealed">
+		<!--Double-click to protect a charge of rare item's challenge points.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96947" name="Rare Item Challenge Points' Charge Decrease" add_name="Sealed">
+		<!--Double-click to decrease a charge of rare item's challenge points.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96948" name="Rare Item Challenge Points' Charge Stabilization" add_name="Sealed">
+		<!--Double-click to stabilize a charge of rare item's challenge points.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96949" name="Rare Accessory Challenge Points">
+		<!--<font color=EEAA22>In case of failure while enchanting to +2, you can get the following items:</font>\nRing of Core\nQueen Ant's Ring\nOrfen's Earring\n\n<font color=EEAA22>In case of failure while enchanting to +1, you can get the following items:</font>\nZaken's Earring\nBaium's Ring\nFrintezza's Necklace\nAntharas' Earring\nBeleth' Ring-->
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96950" name="Talisman Challenge Points">
+		<!--<font color=EEAA22>In case of failure while enchanting to +6, you can get the following items:</font>\nTalisman of Aden\n\n<font color=EEAA22>In case of failure while enchanting to +5, you can get the following items:</font>\nTalisman of Authority\nTalisman of Eva\nTalisman of Speed-->
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96951" name="Special Equipment Challenge Points">
+		<!--<font color=EEAA22>In case of failure while enchanting to +7, you can get the following items:</font>\nCloak of Protection\n\n<font color=EEAA22>In case of failure while enchanting to +5, you can get the following items:</font>\nCirclet of Hero\nIgnore Decrease Mask\nDragon Belt\n\n<font color=EEAA22>In case of failure while enchanting to +4, you can get the following items:</font>\nBlessed Dragon Belt-->
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96952" name="Prime Watermelon's Seed (Time-limited)" add_name="Sealed">
+		<!--Double-click to grow Prime Watermelon.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96953" name="Large Prime Watermelon's Seed (Time-limited)" add_name="Sealed">
+		<!--Double-click to grow Large Prime Watermelon.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96954" name="Sealed Spellbook Coupon - 1 Star (Time-limited)">
+		<!--Can be exchanged for a sealed spellbook (1 star) through the Game Assistant.-->
+		<set name="freightable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96955" name="Sealed Spellbook Coupon - 2 Stars (Time-limited)">
+		<!--Can be exchanged for a sealed spellbook (2 stars) through the Game Assistant.-->
+		<set name="freightable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="96956" name="Watermelon Seed (Time-limited)" add_name="Sealed">
+		<!--Required for creating an item from the list through the Special Craft.\n\n<font color=eeaa22><Items to obtain></font>\n- Ice Box\n- Prime Watermelon's Seed\n- Large Prime Watermelon's Seed-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96957" name="Ice Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96958" name="Time-limited Challenge Points - 1">
+		<!--For future use, after the challenge point system is introduced.-->
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96959" name="Time-limited Challenge Points - 2">
+		<!--For future use, after the challenge point system is introduced.-->
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<armor id="96960" name="Brooch Lv. 6">
+		<!--Jewel slots +6\nInventory slots +18\nP. Def. +300\nM. Def. +300-->
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="BROOCH"/>
+		</equip>
+		<skills>
+			<skill id="13660" level="2"/>
+			<skill id="13661" level="6"/>	<!--Lv. 6 Brooch - Additional Effect-->
+		</skills>
+	</armor>
+	<armor id="96961" name="Brooch Lv. 7">
+		<!--Jewel slots +6\nInventory slots +20\nP. Def. +500\nM. Def. +500\nMax HP +500\nMax MP +500\n\nCan be compounded with two other Brooches of the same level.-->
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="BROOCH"/>
+		</equip>
+		<skills>
+			<skill id="13660" level="3"/>
+			<skill id="13661" level="7"/>	<!--Lv. 7 Brooch - Additional Effect-->
+		</skills>
+	</armor>
+	<armor id="96962" name="Brooch Lv. 8">
+		<!--Jewel slots +6\nInventory slots +25\nP. Def. +700\nM. Def. +700\nMax HP +1000\nMax MP +1000-->
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="BROOCH"/>
+		</equip>
+		<skills>
+			<skill id="13660" level="4"/>
+			<skill id="13661" level="8"/>	<!--Lv. 8 Brooch - Additional Effect-->
+		</skills>
+	</armor>
+	<armor id="96963" name="Talisman Bracelet Lv. 7">
+		<!--Talisman slots +6\nP. Atk. +500\nM. Atk. +500\nSkill Power +1%\n\nCan be compounded with two other Talisman Bracelets of the same level.-->
+		<set name="freightable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="RIGHT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="50192" level="7"/>	<!--Talisman Bracelet Lv. 7-->
+		</skills>
+	</armor>
+	<armor id="96964" name="Talisman Bracelet Lv. 8">
+		<!--Talisman slots +6\nP. Atk. +700\nM. Atk. +700\nSkill Power +2%-->
+		<set name="freightable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="RIGHT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="50192" level="8"/>	<!--Talisman Bracelet Lv. 8-->
+		</skills>
+	</armor>
+	<armor id="96965" name="Agathion Bracelet Lv. 6">
+		<!--Agathion slots +5\nParalysis Resistance +10%\nShock Resistance +10%\nSleep Resistance +10%\nSilence Resistance +10%\nFear Resistance +10%\nSTR +1\nINT +1\nDEX +2\nWIT +2\nCON +2\nMEN +2-->
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.pi_high_agathion_bracelet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="100"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<!--<skill id="51025" level="4"/>	Expand Primary and Secondary Agathion Slots-->
+			<skill id="50565" level="6"/>	<!-- Agathion Bracelet Lv. 8 -->
+		</skills>
+	</armor>
+	<armor id="96966" name="Agathion Bracelet Lv. 7">
+		<!--Agathion slots +5\nParalysis Resistance +12%\nShock Resistance +12%\nSleep Resistance +12%\nSilence Resistance +12%\nFear Resistance +12%\nHold Resistance +5%\nImprisonment Resistance +5%\nPull Resistance +5%\nKnockback Resistance +5%\nSuppression Resistance +5%\nSTR +2\nINT +2\nDEX +2\nWIT +2\nCON +3\nMEN +3\n\nCan be compounded with two other Agathion Bracelets of the same level.-->
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.pi_high_agathion_bracelet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="100"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<!--<skill id="51025" level="4"/>	Expand Primary and Secondary Agathion Slots-->
+			<skill id="50565" level="7"/>	<!-- Agathion Bracelet Lv. 8 -->
+		</skills>
+	</armor>
+	<armor id="96967" name="Agathion Bracelet Lv. 8">
+		<!--Agathion slots +5\nParalysis Resistance +15%\nShock Resistance +15%\nSleep Resistance +15%\nSilence Resistance +15%\nFear Resistance +15%\nHold Resistance +10%\nImprisonment Resistance +10%\nPull Resistance +10%\nKnockback Resistance +10%\nSuppression Resistance +10%\nSTR +3\nINT +3\nDEX +3\nWIT +3\nCON +3\nMEN +3-->
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.pi_high_agathion_bracelet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="100"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<!--<skill id="51025" level="4"/>	Expand Primary and Secondary Agathion Slots-->
+			<skill id="50565" level="8"/>	<!-- Agathion Bracelet Lv. 8 -->
+		</skills>
+	</armor>
+	<etcitem id="96968" name="Aden Starter Kit" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96969" name="Equipment Pack: Talisman - Lv. 40+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96970" name="Jewel Box - Lv. 50+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96971" name="Agathion Pack - Lv. 60+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96972" name="Growth Support Box - Lv. 1+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96973" name="Growth Support Box - Lv. 50+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96974" name="Growth Support Box - Lv. 60+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96975" name="Growth Support Box - Lv. 70+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96976" name="Growth Support Box - Lv. 76+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96977" name="Growth Support Box - Lv. 80+" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96978" name="Aden's Treasure Chest (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96979" name="Aden Treasure Kit (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96980" name="Piggie's Enchant Scroll Pack Lv. 1" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96981" name="Piggie's Enchant Scroll Pack Lv. 2" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96982" name="Kit: Giran Seals (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96983" name="Package: Agathion Bracelet Lv. 3" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90890" min_count="1" max_count="1" chance="100"/><!--Agathion Bracelet Lv. 5-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96984" name="Package: Talisman Bracelet Lv. 3" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91161" min_count="1" max_count="1" chance="100"/><!-- Talisman Bracelet Lv. 3 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96985" name="Package: Brooch Lv. 3" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90934" min_count="1" max_count="1" chance="100"/><!--Brooch Lv. 3-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96986" name="Aden Adventure Reward (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96987" name="Mini-game's Treasure Chest - Defeat (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96988" name="Mini-game's Treasure Chest - Victory (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96989" name="Mini-game's Treasure Chest - Draw (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96990" name="Artisan Black's Weapon Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96991" name="Artisan Black's Armor Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96992" name="Artisan Black's Weapon Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96993" name="Artisan Black's Armor Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96994" name="Artisan Black's Weapon Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96995" name="Artisan Black's Armor Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96996" name="Artisan Black's Weapon Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96997" name="Artisan Black's Armor Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96998" name="Artisan Black's Weapon Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="96999" name="Artisan Black's Armor Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+</list>

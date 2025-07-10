@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="97100" name="Squire's Spear" add_name="Sealed">
+		<set name="random_damage" value="10"/>
+		<set name="damage_range" value="0;0;66;120"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="POLE"/>
+		<set name="weight" value="2140"/>
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3599" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="18"/>
+			<add stat="mAtk" order="0x10" value="17"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<etcitem id="97101" name="Scroll: Wild Growl Lv. 1">
+		<!--A scroll for learning the Wild Growl Lv. 1 skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nSlows nearby enemies down.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97102" name="Spellbook: Giant's Stomp">
+		<!--A spellbook for learning the Giant's Stomp skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nKnocks nearby enemies down.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97103" name="Scroll: Amazing Piercing">
+		<!--A scroll for learning the Amazing Piercing skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nAttacks the target with a spear.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97104" name="Spellbook: Master of Combat Lv. 3">
+		<!--A book for learning Master of Combat Lv. 3 skill.\n\n<Classes>\nWarriors after the 3rd class change\n\n<Skill effect>\nIncreases Max HP/ Max CP and decreases Received P. Critical Damage.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97105" name="Spellbook: Final Secret Lv. 2">
+		<!--A spellbook for learning the Final Secret Lv. 2 skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nReleases hidden spirit powers.\nIncreases P. Skill Power/ PvP damage bonus/ Ranged Weapon Resistance/ M. Def.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97106" name="Spellbook: Wild Charge">
+		<!--A spellbook for learning the Wild Charge skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nSummons a copy of the beast that attacks enemies in the front.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97107" name="Spellbook: Threatening Swing">
+		<!--A spellbook for learning the Threatening Swing skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nAttacks nearby enemies with a spear.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97108" name="Spellbook: Wild Growl Lv. 2">
+		<!--A book for learning Wild Growl Lv. 2 skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nSlows nearby enemies down.\nOnce the slowing effect disappears, inflicts Hold.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97109" name="Spellbook: Darkness Unleashing">
+		<!--A spellbook for learning the Darkness Unleashing skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nReleased dark power covers the beast to enhance it.\nWild Scratch ? Shadow Scratch: increases power and makes an additional attack.\nWild Charge ? Spectral Charge: increases the number of attacks.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97110" name="Spellbook: Wild Assault">
+		<!--A book for learning Wild Assault skill.\n\n<Class>\nDragoon\n\n<Skill effect>\nCharges using the beast power.\nUse the skill and then double-click on an area to move there.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97111" name="Spellbook: Wild Evolution">
+		<!--A spellbook for learning Wild Evolution skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nReveals the beast true form.\nIncreases Max BP/ P. Atk./ P. Critical Damage/ P. Skill Critical Damage/ Speed.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97112" name="Spellbook: Master of Combat Lv. 3" add_name="Sealed">
+		<!--A book for learning Master of Combat Lv. 3 skill.\n\n<Classes>\nWarriors after the 3rd class change\n\n<Skill effect>\nIncreases Max HP/ Max CP and decreases Received P. Critical Damage.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97113" name="Spellbook: Final Secret Lv. 2" add_name="Sealed">
+		<!--A spellbook for learning the Final Secret Lv. 2 skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nReleases hidden spirit powers.\nIncreases P. Skill Power/ PvP damage bonus/ Ranged Weapon Resistance/ M. Def.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97114" name="Spellbook: Wild Charge" add_name="Sealed">
+		<!--A spellbook for learning the Wild Charge skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nSummons a copy of the beast that attacks enemies in the front.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97115" name="Spellbook: Threatening Swing" add_name="Sealed">
+		<!--A spellbook for learning the Threatening Swing skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nAttacks nearby enemies with a spear.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97116" name="Spellbook: Wild Growl Lv. 2" add_name="Sealed">
+		<!--A book for learning Wild Growl Lv. 2 skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nSlows nearby enemies down.\nOnce the slowing effect disappears, inflicts Hold.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97117" name="Spellbook: Darkness Unleashing" add_name="Sealed">
+		<!--A spellbook for learning the Darkness Unleashing skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nReleased dark power covers the beast to enhance it.\nWild Scratch ? Shadow Scratch: increases power and makes an additional attack.\nWild Charge ? Spectral Charge: increases the number of attacks.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97118" name="Spellbook: Wild Assault" add_name="Sealed">
+		<!--A book for learning Wild Assault skill.\n\n<Class>\nDragoon\n\n<Skill effect>\nCharges using the beast power.\nUse the skill and then double-click on an area to move there.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97119" name="Spellbook: Wild Evolution" add_name="Sealed">
+		<!--A spellbook for learning Wild Evolution skill.\n\n<Class>\nVanguard Rider\n\n<Skill effect>\nReveals the beast true form.\nIncreases Max BP/ P. Atk./ P. Critical Damage/ P. Skill Critical Damage/ Speed.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97120" name="A-grade Weapon Transformation Coupon (Time-limited)" add_name="Sealed">
+		<!--Allows to change A-grade weapon type through Game Assistant.\n\n<How to use>\nGame Assistant - Event\n\n\n<font color=ff6666>Note!</font>\nWhen weapon type is changed, <font color=eeaa22>exchangeable weapon becomes unexchangeable and marked as 'Sealed'</font>.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97121" name="Spellbook Coupon (Sealed) - 1 Star (Time-limited)" add_name="Sealed">
+		<!--Not used.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97122" name="Spellbook Coupon (Sealed) - 2 Stars (Time-limited)" add_name="Sealed">
+		<!--Not used.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97123" name="Spellbook Coupon (Sealed) - 3 Stars (Time-limited)" add_name="Sealed">
+		<!--Not used.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97124" name="Spellbook Coupon (Sealed) - 4 Stars (Time-limited)" add_name="Sealed">
+		<!--Not used.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97125" name="Rare Accessory Challenge Points +50 (Time-limited)" add_name="Sealed">
+		<!--Use to gain 50 challenge points to enchant rare accessories.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97126" name="Talisman Challenge Points +50 (Time-limited)" add_name="Sealed">
+		<!--Use to gain 50 challenge points to enchant rare talismans.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97127" name="Special Equipment Challenge Points +50 (Time-limited)" add_name="Sealed">
+		<!--Use to gain 50 challenge points to enchant special equipment.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97128" name="Collection Replacement Items - Common (Time-limited)" add_name="Sealed">
+		<!--Can be used as replacements for items of the corresponded category.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97129" name="Collection Replacement Items - Improved (Time-limited)" add_name="Sealed">
+		<!--Can be used as replacements for items of the corresponded category.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97130" name="Active Skill Armor Coupon (Time-limited)" add_name="Sealed">
+		<!--Can be exchanged for a sealed active skill armor through the Game Assistant.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97131" name="Field Boss' Weapon Coupon (Time-limited)" add_name="Sealed">
+		<!--Not used.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97132" name="Armor of Protection Coupon (Time-limited)" add_name="Sealed">
+		<!--Not used.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97133" name="Frost Lord's Weapon Coupon (Time-limited)" add_name="Sealed">
+		<!--Not used.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97134" name="Rare Accessory Pack (Time-limited)" add_name="Sealed">
+		<!--Not used.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97135" name="Anniversary Chrono Cithara (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\n<font color=ff6666>A collection item that cannot be equipped.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97136" name="Anniversary Chrono Unitus (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\n<font color=ff6666>A collection item that cannot be equipped.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97137" name="Anniversary Chrono Campana (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\n<font color=ff6666>A collection item that cannot be equipped.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97138" name="Anniversary Chrono Darbuka (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\n<font color=ff6666>A collection item that cannot be equipped.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97139" name="Anniversary Chrono Maracas (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\n<font color=ff6666>A collection item that cannot be equipped.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97140" name="Anniversary Squeaking Shoes (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\nA collection item that cannot be equipped.\n<font color=ff6666>Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97141" name="Anniversary Cupid's Bow (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\nA collection item that cannot be equipped.\n<font color=ff6666>Sylphs/ Vanguard Riders cannot equip it.\nCannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97142" name="Anniversary Formal Wear (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\nA collection item that cannot be equipped.\n<font color=ff6666>Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97143" name="Anniversary Death Knight's Flame Sword (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\nA collection item that cannot be equipped.\n<font color=ff6666>Sylphs/ Vanguard Riders cannot equip it.\nCannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97144" name="Anniversary Vanguard Rider's Spear (Time-limited)" add_name="Sealed">
+		<!--A souvenir in honor of the anniversary.\n\nA collection item that cannot be equipped.\n<font color=ff6666>Sylphs cannot equip it.\nCannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97145" name="Ancient Adena">
+		<!--Can be used to buy various items in L-Coin Store.-->
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97146" name="Orcish Ring (Time-limited)" add_name="Sealed">
+		<!--<Properties>\nP. Atk. +100\nM. Atk. +100\nAtk. Spd. +100\nCasting Spd. +100\nSoulshot damage +10%\nSpiritshot damage +10%\n\n<font color=ff6666>Cannot be enchanted or augmented. Cannot be equipped on a pet.</font>\n<font color=ff6666>Effects of two identical rings do not stack.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97147" name="Dye Powder" add_name="Sealed">
+		<!--Material used to enhance hidden power.\n\n<font color=EEAA22>It may make your hidden power stronger.</font>\n<font color=ff6666>Dyes cannot be enhanced.</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97148" name="Akira (Time-limited)" add_name="Sealed">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97149" name="Fortunes of Battle (Time-limited)" add_name="Sealed">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97150" name="Darkness (Time-limited)" add_name="Sealed">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97151" name="Special Black Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97152" name="Anniversary Cake (Time-limited)" add_name="Sealed">
+		<!--Applies a buff when used.\n\n<Buff effect>\nP./ M. Atk. +50\nP./ M. Def. +50\nHP/ MP Recovery Rate +5\n\n- Duration: 60 min.\n- Cooldown: 10 min.\n\nNote!\nOnce the effect disappears, the character gets an Anniversary Box.\nThe effect remains after death.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97153" name="Anniversary Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97154" name="Relic of Protection Pouch (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97155" name="Kit: Relic of Protection Pouch (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97156" name="Monster's Weapon: Silenos Recruit's One-handed Axe - Not Available">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97157" name="Monster's Weapon: Silenos Mage's Staff - Not Available">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97158" name="Monster's Weapon: One-handed Blunt Weapon of Silenos Infantryman - Not Available">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97159" name="Monster's Weapon: Silenos Infantryman's Shield - Not Available">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97160" name="Monster's Weapon: Silenos Pikeman's Two-handed Spear - Not Available">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97161" name="Monster's Weapon: Silenos Sergeant's Club - Not Available">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97162" name="Monster's Weapon: Silenos Shaman's Staff - Not Available">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97163" name="Daily Life Stone Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97164" name="VIP Coin (Time-limited)" add_name="Sealed">
+		<!--A material for creating items through the Special Craft.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97165" name="VIP Token - Bronze (Time-limited)" add_name="Sealed">
+		<!--Grants various effects and items when added to collection.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97166" name="VIP Token - Silver (Time-limited)" add_name="Sealed">
+		<!--Grants various effects and items when added to collection.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97167" name="VIP Token - Gold (Time-limited)" add_name="Sealed">
+		<!--Grants various effects and items when added to collection.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97168" name="Energy Rune (Time-limited)" add_name="7-day">
+		<!--Available for 7 d. When in inventory, recovers Sayha's Grace points.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97169" name="Package: Energy Rune (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97170" name="Lv. 1 Doll Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97171" name="Diamond Box Lv. 5 (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97172" name="Spellbook Coupon (Sealed) - 3 Stars (Time-limited)">
+		<!--Can be exchanged for Spellbook - 3 Stars.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="freightable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97173" name="Purge Weapon Coupon (Time-limited)">
+		<!--Can be exchanged for sealed purge weapon.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="freightable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97174" name="+6 Special Equipment Coupon" add_name="Sealed">
+		<!--Can be exchanged for the following items through Game Assistant.\n\n+6 Talisman of Eva\n+6 Talisman of Authority\n+6 Circlet of Hero\n+6 Dragon Belt\n+6 Cloak of Protection-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97175" name="Spellbook Coupon - 1 Star" add_name="Sealed">
+		<!--Can be exchanged for Spellbook (Sealed) - 1 Star.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97176" name="Spellbook Coupon - 2 Stars" add_name="Sealed">
+		<!--Can be exchanged for Spellbook (Sealed) - 2 Stars.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97177" name="Spellbook Coupon - 3 Stars" add_name="Sealed">
+		<!--Can be exchanged for Spellbook (Sealed) - 3 Stars.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97178" name="Spellbook Coupon - 4 Stars" add_name="Sealed">
+		<!--Can be exchanged for Spellbook (Sealed) - 4 Stars.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97179" name="VIP Collection Reward - Gold (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97180" name="VIP Collection Reward - Silver (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97181" name="VIP Collection Reward - Bronze (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97182" name="Spellbook: Cat Emperor">
+		<!--A spellbook for learning Summon Cat Emperor skill.\n\n<Class>\nArcana Lord\n\n<Skill effect>\nSummons Cat Emperor.\n\nCat Emperor:\n- Enhances the summoner's attack skills.\n- Recovers the summoner's MP.\n- Attacks the target and enemies around it.\n- With a certain chance, inflicts Hold on the target after a basic attack.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97183" name="Spellbook: Unicorn Guard">
+		<!--A spellbook for learning Summon Unicorn Guard skill.\n\n<Class>\nElemental Master\n\n<Skill effect>\nSummons Unicorn Guard.\n\nUnicorn Guard:\n- Enhances the summoner's attack skills.\n- Recovers the summoner's MP.\n- Attacks the target and enemies around it.\n- With a certain chance, inflicts Stun on the target after a basic attack.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97184" name="Spellbook: Lord Raise">
+		<!--A spellbook for learning Summon Lord Raise skill.\n\n<Class>\nSpectral Master\n\n<Skill effect>\nSummons Lord Raise.\n\nLord Raise:\n- Enhances the summoner's attack skills.\n- Recovers the summoner's MP.\n- Attacks the target and enemies around it.\n- With a certain chance, decreases the target's resistance after a basic attack.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97185" name="Spellbook: Cubic of Secrets Lv. 2">
+		<!--A spellbook for learning Cubic of Secrets Lv. 2 skill.\n\n<Class>\nArcana Lord\n\n<Skill effect>\nSummons Cubic of Secrets.\n- Increases M. Atk.\n- Increases Sword Resistance.\n- Delivers an additional attack when magic skills are used.\n(Trigger cooldown: 8 sec.)-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97186" name="Spellbook: Elemental Cubic Lv. 2">
+		<!--A spellbook for learning Elemental Cubic Lv. 2 skill.\n\n<Class>\nElemental Master\n\n<Skill effect>\nSummons Elemental Cubic.\n- Increases M. Atk.\n- Increases Bow/ Firearms Resistance.\n- Delivers an additional attack when magic skills are used.\n(Trigger cooldown: 8 sec.)-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97187" name="Spellbook: Phantom Cubic Lv. 2">
+		<!--A spellbook for learning Phantom Cubic Lv. 2 skill.\n\n<Class>\nSpectral Master\n\n<Skill effect>\nSummons Phantom Cubic.\n- Increases M. Atk.\n- Increases Dagger Resistance.\n- Delivers an additional attack when magic skills are used.\n(Trigger cooldown: 8 sec.)-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97188" name="Spellbook: Ray of Light">
+		<!--A spellbook for learning Ray of Light skill.\n\n<Class>\nArcana Lord\nElemental Master\nSpectral Master\n\n<Skill effect>\nCasts a powerful ray of light on a single target.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97189" name="Spellbook: Chains of Pain">
+		<!--A spellbook for learning Chains of Pain Lv. 1/ Lv. 2 skill.\n\n<Class>\nArcana Lord\nElemental Master\nSpectral Master\n\n<Skill effect>\n- Increases Max HP.\n- Redirects a part of summoner's received damage to their servitor.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97190" name="Spellbook: Servitor Ultimate Defense Lv. 3">
+		<!--A spellbook for learning Servitor Ultimate Defense Lv. 3 skill.\n\n<Class>\nArcana Lord\nElemental Master\nSpectral Master\n\n<Skill effect>\n- Increases servitor's Max HP, P./ M. Def., Buff Cancel Resistance.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97191" name="Spellbook: Cat Emperor" add_name="Sealed">
+		<!--A spellbook for learning Summon Cat Emperor skill.\n\n<Class>\nArcana Lord\n\n<Skill effect>\nSummons Cat Emperor.\n\nCat Emperor:\n- Enhances the summoner's attack skills.\n- Recovers the summoner's MP.\n- Attacks the target and enemies around it.\n- With a certain chance, inflicts Hold on the target after a basic attack.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97192" name="Spellbook: Unicorn Guard" add_name="Sealed">
+		<!--A spellbook for learning Summon Unicorn Guard skill.\n\n<Class>\nElemental Master\n\n<Skill effect>\nSummons Unicorn Guard.\n\nUnicorn Guard:\n- Enhances the summoner's attack skills.\n- Recovers the summoner's MP.\n- Attacks the target and enemies around it.\n- With a certain chance, inflicts Stun on the target after a basic attack.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97193" name="Spellbook: Lord Raise" add_name="Sealed">
+		<!--A spellbook for learning Summon Lord Raise skill.\n\n<Class>\nSpectral Master\n\n<Skill effect>\nSummons Lord Raise.\n\nLord Raise:\n- Enhances the summoner's attack skills.\n- Recovers the summoner's MP.\n- Attacks the target and enemies around it.\n- With a certain chance, decreases the target's resistance after a basic attack.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97194" name="Spellbook: Cubic of Secrets Lv. 2" add_name="Sealed">
+		<!--A spellbook for learning Cubic of Secrets Lv. 2 skill.\n\n<Class>\nArcana Lord\n\n<Skill effect>\nSummons Cubic of Secrets.\n- Increases M. Atk.\n- Increases Sword Resistance.\n- Delivers an additional attack when magic skills are used.\n(Trigger cooldown: 8 sec.)-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97195" name="Spellbook: Elemental Cubic Lv. 2" add_name="Sealed">
+		<!--A spellbook for learning Elemental Cubic Lv. 2 skill.\n\n<Class>\nElemental Master\n\n<Skill effect>\nSummons Elemental Cubic.\n- Increases M. Atk.\n- Increases Bow/ Firearms Resistance.\n- Delivers an additional attack when magic skills are used.\n(Trigger cooldown: 8 sec.)-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97196" name="Spellbook: Phantom Cubic Lv. 2" add_name="Sealed">
+		<!--A spellbook for learning Phantom Cubic Lv. 2 skill.\n\n<Class>\nSpectral Master\n\n<Skill effect>\nSummons Phantom Cubic.\n- Increases M. Atk.\n- Increases Dagger Resistance.\n- Delivers an additional attack when magic skills are used.\n(Trigger cooldown: 8 sec.)-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97197" name="Spellbook: Ray of Light" add_name="Sealed">
+		<!--A spellbook for learning Ray of Light skill.\n\n<Class>\nArcana Lord\nElemental Master\nSpectral Master\n\n<Skill effect>\nCasts a powerful ray of light on a single target.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97198" name="Spellbook: Chains of Pain" add_name="Sealed">
+		<!--A spellbook for learning Chains of Pain Lv. 1/ Lv. 2 skill.\n\n<Class>\nArcana Lord\nElemental Master\nSpectral Master\n\n<Skill effect>\n- Increases Max HP.\n- Redirects a part of summoner's received damage to their servitor.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97199" name="Spellbook: Servitor Ultimate Defense Lv. 3" add_name="Sealed">
+		<!--A spellbook for learning Servitor Ultimate Defense Lv. 3 skill.\n\n<Class>\nArcana Lord\nElemental Master\nSpectral Master\n\n<Skill effect>\n- Increases servitor's Max HP, P./ M. Def., Buff Cancel Resistance.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+</list>

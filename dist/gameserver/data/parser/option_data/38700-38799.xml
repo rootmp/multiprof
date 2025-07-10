@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="38700">
+		<!--Received damage -1%-->
+	</option_data>
+	<option_data id="38701">
+		<!--Received damage -1%-->
+	</option_data>
+	<option_data id="38702">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38703">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38704">
+		<!--Received damage -3%-->
+	</option_data>
+	<option_data id="38705">
+		<!--Received damage -4%-->
+	</option_data>
+	<option_data id="38706">
+		<!--Received damage -5%-->
+	</option_data>
+	<option_data id="38707">
+		<!--Received damage -6%-->
+	</option_data>
+	<option_data id="38708">
+		<!--Received damage -7%-->
+	</option_data>
+	<option_data id="38709">
+		<!--Received damage -8%-->
+	</option_data>
+	<option_data id="38710">
+		<!--Received damage -9%-->
+	</option_data>
+	<option_data id="38711">
+		<!--Received damage -10%-->
+	</option_data>
+	<option_data id="38712">
+		<!--Weight limit +1000\nMax HP +20\nMax MP +10\nMax CP +20\nP. Def. +10\nM. Def. +10\nDEX/ WIT +1-->
+		<skills>
+			<skill id="50459" level="1"/>	<!-- Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38713">
+		<!--Weight limit +2000\nInventory slots +2\nMax HP +30\nMax MP +20\nMax CP +30\nP. Def. +15\nM. Def. +15\nDEX/ WIT +1\nCON/ MEN +1-->
+		<skills>
+			<skill id="50459" level="2"/>	<!-- +1 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38714">
+		<!--Weight limit +3000\nInventory slots +4\nMax HP +40\nMax MP +25\nMax CP +40\nP. Def. +20\nM. Def. +20\nSTR/ INT +1\nDEX/ WIT +1\nCON/ MEN +1-->
+		<skills>
+			<skill id="50459" level="3"/>	<!-- +2 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38715">
+		<!--Weight limit +4000\nInventory slots +6\nMax HP +50\nMax MP +30\nMax CP +50\nP. Def. +25\nM. Def. +25\nSTR/ INT +2\nDEX/ WIT +2\nCON/ MEN +2-->
+		<skills>
+			<skill id="50459" level="4"/>	<!-- +3 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38716">
+		<!--Weight limit +5000\nInventory slots +6\nMax HP +150\nMax MP +100\nMax CP +200\nHP Recovery Potions' Effect +80\nMP Recovery Potions' Effect +10\nP. Def. +30\nM. Def. +30\nAtk. Spd. +5\nCasting Spd. +10\nSTR/ INT +3\nDEX/ WIT +3\nCON/ MEN +3\n<Active skill: Dragon's Protection Lv. 1>-->
+		<skills>
+			<skill id="50459" level="5"/>	<!-- +4 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38717">
+		<!--Weight limit +6000\nInventory slots +6\nMax HP +200\nMax MP +150\nMax CP +300\nHP Recovery Potions' Effect +100\nMP Recovery Potions' Effect +20\nP. Def. +40\nM. Def. +40\nAtk. Spd. +10\nCasting Spd. +20\nSTR/ INT +3\nDEX/ WIT +3\nCON/ MEN +4\n<Active skill: Dragon's Protection Lv. 2>-->
+		<skills>
+			<skill id="50459" level="6"/>	<!-- +5 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38718">
+		<!--Weight limit +7000\nInventory slots +6\nMax HP +300\nMax MP +200\nMax CP +500\nHP Recovery Potions' Effect +120\nMP Recovery Potions' Effect +30\nP. Def. +50\nM. Def. +50\nAtk. Spd. +20\nCasting Spd. +30\nP. Critical Rate/ M. Skill Critical Rate +10\nReceived damage -2%\nSTR/ INT +3\nDEX/ WIT +4\nCON/ MEN +4\n<Active skill: Dragon's Protection Lv. 3>-->
+		<skills>
+			<skill id="50459" level="7"/>	<!-- +6 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38719">
+		<!--Weight limit +8000\nInventory slots +8\nMax HP +350\nMax MP +250\nMax CP +600\nHP Recovery Potions' Effect +135\nMP Recovery Potions' Effect +40\nP. Def. +65\nM. Def. +65\nAtk. Spd. +30\nCasting Spd. +40\nP. Critical Rate/ M. Skill Critical Rate +20\nReceived damage -3%\nSTR/ INT +4\nDEX/ WIT +4\nCON/ MEN +4\n<Active skill: Dragon's Protection Lv. 4>-->
+		<skills>
+			<skill id="50459" level="8"/>	<!-- +7 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38720">
+		<!--Weight limit +9000\nInventory slots +8\nMax HP +500\nMax MP +300\nMax CP +800\nHP Recovery Potions' Effect +175\nMP Recovery Potions' Effect +65\nP. Def. +90\nM. Def. +90\nAtk. Spd. +50\nCasting Spd. +50\nP. Critical Rate/ M. Skill Critical Rate +30\nReceived Healing +5%\nReceived damage -4%\nSTR/ INT +4\nDEX/ WIT +4\nCON/ MEN +5\n<Active skill: Dragon's Protection Lv. 5>-->
+		<skills>
+			<skill id="50459" level="9"/>	<!-- +8 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38721">
+		<!--Weight limit +10,000\nInventory slots +10\nMax HP +800\nMax MP +400\nMax CP +1200\nHP Recovery Potions' Effect +250\nMP Recovery Potions' Effect +90\nP. Def. +125\nM. Def. +125\nAtk. Spd. +100\nCasting Spd. +100\nP. Critical Rate/ M. Skill Critical Rate +40\nReceived Healing +10%\nReceived damage -7%\nSTR/ INT +4\nDEX/ WIT +5\nCON/ MEN +5\n<Active skill: Dragon's Protection Lv. 6>-->
+		<skills>
+			<skill id="50459" level="10"/>	<!-- +9 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38722">
+		<!--Weight limit +12,000\nInventory slots +12\nMax HP +1500\nMax MP +800\nMax CP +1500\nHP Recovery Potions' Effect +400\nMP Recovery Potions' Effect +120\nP. Def. +300\nM. Def. +300\nAtk. Spd. +200\nCasting Spd. +200\nP. Critical Rate/ M. Skill Critical Rate +70\nReceived Healing +20%\nReceived damage -12%\nSTR/ INT +6\nDEX/ WIT +6\nCON/ MEN +6\n<Active skill: Dragon's Protection Lv. 7>-->
+		<skills>
+			<skill id="50459" level="11"/>	<!-- +10 Blessed Dragon Belt -->
+		</skills>
+	</option_data>
+	<option_data id="38723">
+		<!--MP +50\nP. Atk. +5\nM. Atk. +5\nP. Def. +5\nM. Def. +5\nAtk. Spd. +2\nCasting Spd. +2-->
+	</option_data>
+	<option_data id="38724">
+		<!--MP +50\nP. Atk. +7\nM. Atk. +7\nP. Def. +7\nM. Def. +7\nAtk. Spd. +4\nCasting Spd. +4-->
+	</option_data>
+	<option_data id="38725">
+		<!--MP +50\nP. Atk. +10\nM. Atk. +10\nP. Def. +10\nM. Def. +10\nAtk. Spd. +6\nCasting Spd. +6-->
+	</option_data>
+	<option_data id="38726">
+		<!--MP +50\nP. Atk. +15\nM. Atk. +15\nP. Def. +15\nM. Def. +15\nAtk. Spd. +8\nCasting Spd. +8-->
+	</option_data>
+	<option_data id="38727">
+		<!--MP +50\nP. Atk. +20\nM. Atk. +20\nP. Def. +20\nM. Def. +20\nAtk. Spd. +10\nCasting Spd. +10-->
+	</option_data>
+	<option_data id="38728">
+		<!--MP +50\nP. Atk. +30\nM. Atk. +30\nP. Def. +25\nM. Def. +25\nAtk. Spd. +12\nCasting Spd. +12-->
+	</option_data>
+	<option_data id="38729">
+		<!--MP +50\nP. Atk. +50\nM. Atk. +50\nP. Def. +30\nM. Def. +30\nAtk. Spd. +15\nCasting Spd. +15\nAll Critical Damage +10-->
+	</option_data>
+	<option_data id="38730">
+		<!--MP +50\nP. Atk. +100\nM. Atk. +100\nP. Def. +50\nM. Def. +50\nAtk. Spd. +20\nCasting Spd. +20\nAll Critical Damage +20-->
+	</option_data>
+	<option_data id="38731">
+		<!--MP +50\nP. Atk. +300\nM. Atk. +300\nP. Def. +70\nM. Def. +70\nAtk. Spd. +30\nCasting Spd. +30\nAll Critical Damage +50\nSTR +1\nINT +1-->
+	</option_data>
+	<option_data id="38732">
+		<!--MP +50\nP. Atk. +500\nM. Atk. +500\nP. Def. +100\nM. Def. +100\nAtk. Spd. +40\nCasting Spd. +40\nAll Critical Damage +100\nSTR +2\nINT +2-->
+	</option_data>
+	<option_data id="38733">
+		<!--MP +50\nP. Atk. +800\nM. Atk. +800\nP. Def. +150\nM. Def. +150\nAtk. Spd. +50\nCasting Spd. +50\nAll Critical Damage +300\nSTR +3\nINT +3-->
+	</option_data>
+	<option_data id="38734">
+		<!--Paralysis Resistance +1%-->
+	</option_data>
+	<option_data id="38735">
+		<!--Max HP +50\nParalysis Resistance +2%-->
+	</option_data>
+	<option_data id="38736">
+		<!--Max HP +100\nParalysis Resistance +3%-->
+	</option_data>
+	<option_data id="38737">
+		<!--P. Atk. +5\nM. Atk. +5\nMax HP +150\nParalysis Resistance +4%-->
+	</option_data>
+	<option_data id="38738">
+		<!--P. Atk. +10\nM. Atk. +10\nMax HP +200\nParalysis Resistance +5%-->
+	</option_data>
+	<option_data id="38739">
+		<!--P. Atk. +15\nM. Atk. +15\nMax HP +300\nParalysis Resistance +10%-->
+	</option_data>
+	<option_data id="38740">
+		<!--P. Atk. +30\nM. Atk. +30\nMax HP +400\nParalysis Resistance +12%-->
+	</option_data>
+	<option_data id="38741">
+		<!--DEX +1\nWIT +1\nP. Atk. +45\nM. Atk. +45\nMax HP +500\nParalysis Resistance +14%-->
+	</option_data>
+	<option_data id="38742">
+		<!--DEX +1\nWIT +1\nP. Atk. +90\nM. Atk. +90\nMax HP +600\nParalysis Resistance +18%-->
+	</option_data>
+	<option_data id="38743">
+		<!--DEX +2\nWIT +2\nP. Atk. +180\nM. Atk. +180\nMax HP +800\nParalysis Resistance +22%-->
+	</option_data>
+	<option_data id="38744">
+		<!--DEX +5\nWIT +5\nP. Atk. +300\nM. Atk. +300\nMax HP +1000\nParalysis Resistance +30%-->
+	</option_data>
+	<option_data id="38745">
+		<!--P. Atk. +10-->
+	</option_data>
+	<option_data id="38746">
+		<!--P. Atk. +16-->
+	</option_data>
+	<option_data id="38747">
+		<!--P. Atk. +22-->
+	</option_data>
+	<option_data id="38748">
+		<!--P. Atk. +28-->
+	</option_data>
+	<option_data id="38749">
+		<!--P. Atk. +34-->
+	</option_data>
+	<option_data id="38750">
+		<!--P. Atk. +40-->
+	</option_data>
+	<option_data id="38751">
+		<!--P. Atk. +46-->
+	</option_data>
+	<option_data id="38752">
+		<!--P. Atk. +52-->
+	</option_data>
+	<option_data id="38753">
+		<!--P. Atk. +58-->
+	</option_data>
+	<option_data id="38754">
+		<!--P. Atk. +64-->
+	</option_data>
+	<option_data id="38755">
+		<!--P. Atk. +70-->
+	</option_data>
+	<option_data id="38756">
+		<!--P. Atk. +76-->
+	</option_data>
+	<option_data id="38757">
+		<!--P. Atk. +82-->
+	</option_data>
+	<option_data id="38758">
+		<!--P. Atk. +88-->
+	</option_data>
+	<option_data id="38759">
+		<!--P. Atk. +94-->
+	</option_data>
+	<option_data id="38760">
+		<!--P. Atk. +100-->
+	</option_data>
+	<option_data id="38761">
+		<!--P. Atk. +110-->
+	</option_data>
+	<option_data id="38762">
+		<!--P. Atk. +120-->
+	</option_data>
+	<option_data id="38763">
+		<!--P. Atk. +150-->
+	</option_data>
+	<option_data id="38764">
+		<!--P. Atk. +200-->
+	</option_data>
+	<option_data id="38765">
+		<!--M. Atk. +10.-->
+	</option_data>
+	<option_data id="38766">
+		<!--M. Atk. +16.-->
+	</option_data>
+	<option_data id="38767">
+		<!--M. Atk. +22-->
+	</option_data>
+	<option_data id="38768">
+		<!--M. Atk. +28-->
+	</option_data>
+	<option_data id="38769">
+		<!--M. Atk. +34-->
+	</option_data>
+	<option_data id="38770">
+		<!--M. Atk. +40-->
+	</option_data>
+	<option_data id="38771">
+		<!--M. Atk. +46-->
+	</option_data>
+	<option_data id="38772">
+		<!--M. Atk. +52-->
+	</option_data>
+	<option_data id="38773">
+		<!--M. Atk. +58-->
+	</option_data>
+	<option_data id="38774">
+		<!--M. Atk. +64-->
+	</option_data>
+	<option_data id="38775">
+		<!--M. Atk. +70-->
+	</option_data>
+	<option_data id="38776">
+		<!--M. Atk. +76-->
+	</option_data>
+	<option_data id="38777">
+		<!--M. Atk. +82-->
+	</option_data>
+	<option_data id="38778">
+		<!--M. Atk. +88-->
+	</option_data>
+	<option_data id="38779">
+		<!--M. Atk. +94-->
+	</option_data>
+	<option_data id="38780">
+		<!--M. Atk. +100-->
+	</option_data>
+	<option_data id="38781">
+		<!--M. Atk. +110-->
+	</option_data>
+	<option_data id="38782">
+		<!--M. Atk. +120-->
+	</option_data>
+	<option_data id="38783">
+		<!--M. Atk. +150-->
+	</option_data>
+	<option_data id="38784">
+		<!--M. Atk. +200-->
+	</option_data>
+	<option_data id="38785">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38786">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38787">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38788">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38789">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38790">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38791">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="38792">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="38793">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="38794">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="38795">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="38796">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="38797">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="38798">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="38799">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+</list>

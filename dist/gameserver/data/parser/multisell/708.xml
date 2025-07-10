@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="48046" count="4"/>	<!--Agathion Enchant Scroll-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="91160" count="1"/>	<!--Agathion Enchant Scroll Pack-->
+		<ingredient id="91159" count="2"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71303" count="1"/>	<!--Agathion Virgo-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71304" count="1"/>	<!--Agathion Capricorn-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71305" count="1"/>	<!--Agathion Libra-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71306" count="1"/>	<!--Agathion Taurus-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71307" count="1"/>	<!--Agathion Leo-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71308" count="1"/>	<!--Agathion Gemini-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71309" count="1"/>	<!--Agathion Scorpio-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71310" count="1"/>	<!--Agathion Aquarius-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+	<item>
+		<production id="71311" count="1"/>	<!--Agathion Sagittarius-->
+		<ingredient id="91159" count="1"/>	<!--Agathion Coupon-->
+	</item>
+</list>

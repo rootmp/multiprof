@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="91927" count="100"/>	<!--Soulshot-->
+		<ingredient id="29564" count="15"/>	<!--Attendance Coin-->
+	</item>
+	<item>
+		<production id="91928" count="100"/>	<!--Spiritshot-->
+		<ingredient id="29564" count="90"/>	<!--Attendance Coin-->
+	</item>
+	<item>
+		<production id="6394" count="1"/>	<!--Red Party Mask-->
+		<ingredient id="29564" count="600"/>	<!--Attendance Coin-->
+	</item>
+	<item>
+		<production id="29040" count="1"/>	<!--Top Hat-->
+		<ingredient id="29564" count="600"/>	<!--Attendance Coin-->
+	</item>
+	<item>
+		<production id="8562" count="1"/>	<!--Jester Hat-->
+		<ingredient id="29564" count="600"/>	<!--Attendance Coin-->
+	</item>
+	<item>
+		<production id="8563" count="1"/>	<!--Wizard Hat-->
+		<ingredient id="29564" count="600"/>	<!--Attendance Coin-->
+	</item>
+	<item>
+		<production id="8564" count="1"/>	<!--Dapper Cap-->
+		<ingredient id="29564" count="600"/>	<!--Attendance Coin-->
+	</item>
+	<item>
+		<production id="6843" count="1"/>	<!--Cat Ears-->
+		<ingredient id="29564" count="600"/>	<!--Attendance Coin-->
+	</item>
+</list>

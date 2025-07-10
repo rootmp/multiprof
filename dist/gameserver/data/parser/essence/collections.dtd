@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT list (collection)*>
+
+	<!ELEMENT collection (item)*>
+	<!ATTLIST collection
+		id CDATA #REQUIRED
+		tab_id CDATA #REQUIRED
+		option_id CDATA #REQUIRED>
+
+		<!ELEMENT item (#PCDATA)*>
+		<!ATTLIST item
+			id CDATA #REQUIRED
+			count CDATA #REQUIRED
+			enchant CDATA #IMPLIED
+			alternative_id CDATA #IMPLIED
+			slot_id CDATA #REQUIRED>

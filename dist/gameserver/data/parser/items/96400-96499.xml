@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="96400" name="DEX Dye" add_name="Lv. 6">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96401" name="DEX Dye" add_name="Lv. 7">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96402" name="DEX Dye" add_name="Lv. 8">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96403" name="DEX Dye" add_name="Lv. 9">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96404" name="DEX Dye" add_name="Lv. 10">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96405" name="DEX Dye" add_name="Lv. 11">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96406" name="DEX Dye" add_name="Lv. 12">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96407" name="DEX Dye" add_name="Lv. 13">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96408" name="DEX Dye" add_name="Lv. 14">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96409" name="DEX Dye" add_name="Lv. 15">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96410" name="DEX Dye" add_name="Lv. 16">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96411" name="DEX Dye" add_name="Lv. 17">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96412" name="DEX Dye" add_name="Lv. 18">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96413" name="DEX Dye" add_name="Lv. 19">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96414" name="DEX Dye" add_name="Lv. 20">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96415" name="INT Dye" add_name="Lv. 1">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96416" name="INT Dye" add_name="Lv. 2">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96417" name="INT Dye" add_name="Lv. 3">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96418" name="INT Dye" add_name="Lv. 4">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96419" name="INT Dye" add_name="Lv. 5">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96420" name="INT Dye" add_name="Lv. 6">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96421" name="INT Dye" add_name="Lv. 7">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96422" name="INT Dye" add_name="Lv. 8">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96423" name="INT Dye" add_name="Lv. 9">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96424" name="INT Dye" add_name="Lv. 10">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96425" name="INT Dye" add_name="Lv. 11">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96426" name="INT Dye" add_name="Lv. 12">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96427" name="INT Dye" add_name="Lv. 13">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96428" name="INT Dye" add_name="Lv. 14">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96429" name="INT Dye" add_name="Lv. 15">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96430" name="INT Dye" add_name="Lv. 16">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96431" name="INT Dye" add_name="Lv. 17">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96432" name="INT Dye" add_name="Lv. 18">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96433" name="INT Dye" add_name="Lv. 19">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96434" name="INT Dye" add_name="Lv. 20">
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96435" name="MEN Dye" add_name="Lv. 1">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96436" name="MEN Dye" add_name="Lv. 2">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96437" name="MEN Dye" add_name="Lv. 3">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96438" name="MEN Dye" add_name="Lv. 4">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96439" name="MEN Dye" add_name="Lv. 5">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96440" name="MEN Dye" add_name="Lv. 6">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96441" name="MEN Dye" add_name="Lv. 7">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96442" name="MEN Dye" add_name="Lv. 8">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96443" name="MEN Dye" add_name="Lv. 9">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96444" name="MEN Dye" add_name="Lv. 10">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96445" name="MEN Dye" add_name="Lv. 11">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96446" name="MEN Dye" add_name="Lv. 12">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96447" name="MEN Dye" add_name="Lv. 13">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96448" name="MEN Dye" add_name="Lv. 14">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96449" name="MEN Dye" add_name="Lv. 15">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96450" name="MEN Dye" add_name="Lv. 16">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96451" name="MEN Dye" add_name="Lv. 17">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96452" name="MEN Dye" add_name="Lv. 18">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96453" name="MEN Dye" add_name="Lv. 19">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96454" name="MEN Dye" add_name="Lv. 20">
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96455" name="WIT Dye" add_name="Lv. 1">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96456" name="WIT Dye" add_name="Lv. 2">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96457" name="WIT Dye" add_name="Lv. 3">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96458" name="WIT Dye" add_name="Lv. 4">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96459" name="WIT Dye" add_name="Lv. 5">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96460" name="WIT Dye" add_name="Lv. 6">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96461" name="WIT Dye" add_name="Lv. 7">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96462" name="WIT Dye" add_name="Lv. 8">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96463" name="WIT Dye" add_name="Lv. 9">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96464" name="WIT Dye" add_name="Lv. 10">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96465" name="WIT Dye" add_name="Lv. 11">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96466" name="WIT Dye" add_name="Lv. 12">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96467" name="WIT Dye" add_name="Lv. 13">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96468" name="WIT Dye" add_name="Lv. 14">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96469" name="WIT Dye" add_name="Lv. 15">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96470" name="WIT Dye" add_name="Lv. 16">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96471" name="WIT Dye" add_name="Lv. 17">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96472" name="WIT Dye" add_name="Lv. 18">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96473" name="WIT Dye" add_name="Lv. 19">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96474" name="WIT Dye" add_name="Lv. 20">
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96475" name="Coupon: Time-limited A-grade Armor (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.bm_armor_ticket_a"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96476" name="Coupon: Time-limited A-grade Accessories (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.bm_accessory_ticket_a"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<armor id="96477" name="Dark Crystal Breastplate (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t74_u_i00"/>
+		<set name="price" value="3562000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7700"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50221" level="1"/>	<!-- A-grade: Dark Crystal Breastplate -->
+			<enchant_skill id="50261" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="171"/>
+		</for>
+	</armor>
+	<armor id="96478" name="Armor of Nightmare (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t80_ul_i00"/>
+		<set name="price" value="8804000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="9580"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50231" level="1"/>	<!-- A-grade: Armor of Nightmare -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="293"/>
+		</for>
+	</armor>
+	<armor id="96479" name="Dark Crystal Gaiters (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t74_l_i00"/>
+		<set name="price" value="2226000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3320"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50224" level="1"/>	<!-- A-grade: Dark Crystal Gaiters -->
+			<enchant_skill id="50262" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="107"/>
+		</for>
+	</armor>
+	<armor id="96480" name="Dark Crystal Helmet (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="1336000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="570"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+		</for>
+	</armor>
+	<armor id="96481" name="Tallum Helmet (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="1336000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="570"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+		</for>
+	</armor>
+	<weapon id="96482" name="Dark Crystal Shield (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shield_dark_crystal_shield_i00"/>
+		<set name="price" value="935000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1190"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="256"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<armor id="96483" name="Tallum Plate Armor (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t77_ul_i00"/>
+		<set name="price" value="5788000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="9780"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50234" level="1"/>	<!-- A-grade: Tallum Plate Armor -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="278"/>
+		</for>
+	</armor>
+	<armor id="96484" name="Majestic Plate Armor (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t83_ul_i00"/>
+		<set name="price" value="8804000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="9200"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50228" level="1"/>	<!-- A-grade: Majestic Plate Armor -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="293"/>
+		</for>
+	</armor>
+	<armor id="96485" name="Dark Crystal Leather Armor (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t75_u_i00"/>
+		<set name="price" value="2671000"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4300"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50222" level="1"/>	<!-- A-grade: Dark Crystal Leather Armor -->
+			<enchant_skill id="50261" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="128"/>
+		</for>
+	</armor>
+	<armor id="96486" name="Dark Crystal Leggings (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t75_l_i00"/>
+		<set name="price" value="1670000"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="1480"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50225" level="1"/>	<!-- A-grade: Dark Crystal Leggings -->
+			<enchant_skill id="50262" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+		</for>
+	</armor>
+	<armor id="96487" name="Tallum Leather Armor (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t78_ul_i00"/>
+		<set name="price" value="4341000"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="5400"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50235" level="1"/>	<!-- A-grade: Tallum Leather Armor -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="209"/>
+		</for>
+	</armor>
+	<armor id="96488" name="Leather Armor of Nightmare (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t81_ul_i00"/>
+		<set name="price" value="6603000"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="5300"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50233" level="1"/>	<!-- A-grade: Leather Armor of Nightmare -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="220"/>
+		</for>
+	</armor>
+	<armor id="96489" name="Majestic Leather Armor (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t84_ul_i00"/>
+		<set name="price" value="6603000"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="5350"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50230" level="1"/>	<!-- A-grade: Majestic Leather Armor -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="220"/>
+		</for>
+	</armor>
+	<armor id="96490" name="Tallum Tunic (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t79_u_i00"/>
+		<set name="price" value="2671000"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1860"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50223" level="1"/>	<!-- A-grade: Tallum Tunic -->
+			<enchant_skill id="50261" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top Armor -->
+			<enchant_skill id="50261" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="86"/>
+			<add stat="maxMp" order="0x60" value="409"/>
+		</for>
+	</armor>
+	<armor id="96491" name="Tallum Stockings (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t79_l_i00"/>
+		<set name="price" value="1670000"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="920"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50226" level="1"/>	<!-- A-grade: Tallum Stockings -->
+			<enchant_skill id="50262" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+			<enchant_skill id="50262" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="53"/>
+			<add stat="maxMp" order="0x60" value="256"/>
+		</for>
+	</armor>
+	<armor id="96492" name="Dark Crystal Robe (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t76_ul_i00"/>
+		<set name="price" value="4341000"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="2450"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50227" level="1"/>	<!-- A-grade: Dark Crystal Robe -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="139"/>
+			<add stat="maxMp" order="0x60" value="665"/>
+		</for>
+	</armor>
+	<armor id="96493" name="Robe of Nightmare (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t82_ul_i00"/>
+		<set name="price" value="6603000"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="2300"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50232" level="1"/>	<!-- A-grade: Robe of Nightmare -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="147"/>
+			<add stat="maxMp" order="0x60" value="718"/>
+		</for>
+	</armor>
+	<armor id="96494" name="Majestic Robe (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t85_ul_i00"/>
+		<set name="price" value="6603000"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="2330"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<skills>
+			<skill id="50229" level="1"/>	<!-- A-grade: Majestic Robe -->
+			<enchant_skill id="50260" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+			<enchant_skill id="50260" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Top/ Bottom Armor -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="147"/>
+			<add stat="maxMp" order="0x60" value="718"/>
+		</for>
+	</armor>
+	<armor id="96495" name="Helm of Nightmare (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="2032000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="560"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="73"/>
+		</for>
+	</armor>
+	<armor id="96496" name="Majestic Circlet (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="2032000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="550"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="73"/>
+		</for>
+	</armor>
+	<armor id="96497" name="Dark Crystal Gloves (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t15_g_i00"/>
+		<set name="price" value="890000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="580"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="45"/>
+		</for>
+	</armor>
+	<weapon id="96498" name="Shield of Nightmare (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shield_shield_of_nightmare_i00"/>
+		<set name="price" value="1422000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1180"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="282"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<armor id="96499" name="Dark Crystal Gloves (Heavy) (Time-limited)" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t74_g_i00"/>
+		<set name="price" value="890000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="580"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<skills>
+			<skill id="50236" level="1"/>	<!-- A-grade: Dark Crystal Gloves (Heavy) -->
+			<enchant_skill id="50263" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Gloves (Physical) -->
+			<enchant_skill id="50263" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Gloves (Physical) -->
+			<enchant_skill id="50263" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Gloves (Physical) -->
+			<enchant_skill id="50263" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Gloves (Physical) -->
+			<enchant_skill id="50263" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Gloves (Physical) -->
+			<enchant_skill id="50263" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Gloves (Physical) -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="46"/>
+		</for>
+	</armor>
+</list>

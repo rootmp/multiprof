@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="193"><!--Soul Finder-->
+		<skill id="465" level="1" min_level="20" cost="1000"/><!--Light Armor Mastery-->
+		<skill id="474" level="1" min_level="20" cost="1000"/><!--Rapier Mastery-->
+		<skill id="45178" level="1" min_level="20"/><!--Light Master-->
+		<skill id="45147" level="1" min_level="20" cost="1000"/><!--Soul Empower-->
+		<skill id="45176" level="1" min_level="20" cost="1000"/><!--HP Recovery-->
+		<skill id="45177" level="1" min_level="20" cost="1000"/><!--MP Recovery-->
+		<skill id="45142" level="1" min_level="20" cost="1000"/><!--Soul Wind Walk-->
+		<skill id="255" level="1" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="2" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="3" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="4" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="5" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="45144" level="2" min_level="20" cost="1000"/><!--Soul Might-->
+		<skill id="34" level="1" min_level="20" cost="1000"/><!--Bandage-->
+		<skill id="393" level="1" min_level="20" cost="1000"/><!--Absorb Light Souls-->
+		<skill id="45146" level="1" min_level="20" cost="1000"/><!--Soul Acumen-->
+		<skill id="45160" level="1" min_level="20" cost="1000"/><!--Soul Slash-->
+		<skill id="1378" level="1" min_level="20" cost="1000"/><!--Soul Link-->
+		<skill id="1516" level="1" min_level="20" cost="1000"/><!--Soul Strike-->
+		<skill id="45141" level="1" min_level="20" cost="1000"/><!--Soul Haste-->
+		<skill id="45139" level="1" min_level="20" cost="1000"/><!--Soul Focus-->
+		<skill id="45150" level="1" min_level="20" cost="1000"/><!--Soul Clarity-->
+		<skill id="1379" level="1" min_level="20" cost="1000"/><!--Soul Sense-->
+		<skill id="45140" level="1" min_level="20" cost="1000"/><!--Soul Death Whisper-->
+		<skill id="45145" level="2" min_level="20" cost="1000"/><!--Soul Shield-->
+		<skill id="255" level="6" min_level="21" cost="2500"/><!--Enhanced Weapon-->
+		<skill id="255" level="7" min_level="22" cost="2500"/><!--Enhanced Weapon-->
+		<skill id="255" level="8" min_level="23" cost="2500"/><!--Enhanced Weapon-->
+		<skill id="255" level="9" min_level="24" cost="2500"/><!--Enhanced Weapon-->
+		<skill id="466" level="1" min_level="25" cost="5500"/><!--Magic Immunity-->
+		<skill id="255" level="10" min_level="25" cost="5500"/><!--Enhanced Weapon-->
+		<skill id="255" level="11" min_level="26" cost="5500"/><!--Enhanced Weapon-->
+		<skill id="255" level="12" min_level="27" cost="5500"/><!--Enhanced Weapon-->
+		<skill id="255" level="13" min_level="28" cost="5500"/><!--Enhanced Weapon-->
+		<skill id="255" level="14" min_level="29" cost="10000"/><!--Enhanced Weapon-->
+		<skill id="465" level="2" min_level="30" cost="10000"/><!--Light Armor Mastery-->
+		<skill id="474" level="2" min_level="30" cost="10000"/><!--Rapier Mastery-->
+		<skill id="45147" level="2" min_level="30" cost="10000"/><!--Soul Empower-->
+		<skill id="45148" level="1" min_level="30" cost="10000"/><!--Soul Wild Magic-->
+		<skill id="45149" level="1" min_level="30" cost="10000"/><!--Soul Berserker Spirit-->
+		<skill id="45142" level="2" min_level="30" cost="10000"/><!--Soul Wind Walk-->
+		<skill id="45143" level="1" min_level="30" cost="10000"/><!--Soul Magic Barrier-->
+		<skill id="255" level="15" min_level="30" cost="10000"/><!--Enhanced Weapon-->
+		<skill id="45146" level="2" min_level="30" cost="10000"/><!--Soul Acumen-->
+		<skill id="45160" level="2" min_level="30" cost="10000"/><!--Soul Slash-->
+		<skill id="1516" level="2" min_level="30" cost="10000"/><!--Soul Strike-->
+		<skill id="45139" level="2" min_level="30" cost="10000"/><!--Soul Focus-->
+		<skill id="45150" level="2" min_level="30" cost="10000"/><!--Soul Clarity-->
+		<skill id="45140" level="2" min_level="30" cost="10000"/><!--Soul Death Whisper-->
+		<skill id="1435" level="2" min_level="32" cost="10000"/><!--Death Mark-->
+	</normal_skill_tree>
+</list>

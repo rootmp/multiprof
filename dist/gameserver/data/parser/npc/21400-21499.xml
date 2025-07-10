@@ -1,0 +1,2629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="21400" name="Hexa Beetle" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="54.5;67"/>
+		<set name="collision_radius" value="25.0;30"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="14908"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.585"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.03"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1105.3157"/>
+		<set name="basePDef" value="425.55097"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="762.33521"/>
+		<set name="baseMDef" value="283.33664"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="145"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="5.75"/>
+		<set name="basePAvoidModify" value="1"/>
+		<set name="baseHitTimeFactor" value="0.59"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4573" level="9" use_type="PhysicalSpecial"/>	<!--NPC Sonic Blaster-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="554" min="1" max="1" chance="0.005"/>	<!--Sealed Zubei's Boots (Запечатанные Сапоги Зубея)-->
+			<reward item_id="600" min="1" max="1" chance="0.005"/>	<!--Sealed Avadon Boots (Запечатанные Сапоги Авадона)-->
+			<reward item_id="601" min="1" max="1" chance="0.0009"/>	<!--Sealed Doom Boots (Запечатанные Сапоги Рока)-->
+			<reward item_id="2439" min="1" max="1" chance="0.0009"/>	<!--Sealed Blue Wolf Boots (Запечатанные Сапоги Синего Волка)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="4.861"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="4.843"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92779" min="1" max="1" chance="0.05"/>	<!--Sealed Blue Wolf Boot Design (Модель Запечатанных Сапог Синего Волка)-->
+			<reward item_id="92782" min="1" max="1" chance="0.05"/>	<!--Sealed Zubei's Boot Design (Модель Запечатанных Сапог Зубея)-->
+			<reward item_id="92783" min="1" max="1" chance="0.05"/>	<!--Sealed Avadon Boot Design (Модель Запечатанных Сапог Авадона)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92784" min="1" max="1" chance="0.05"/>	<!--Sealed Doom Boot Fragment (Часть Запечатанных Сапог Рока)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21401" name="Hexa Beetle" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="54.5;67"/>
+		<set name="collision_radius" value="25.0;30"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="29149"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.585"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.03"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1105.3157"/>
+		<set name="basePDef" value="425.55097"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="762.33521"/>
+		<set name="baseMDef" value="283.33664"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="145"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="5.75"/>
+		<set name="basePAvoidModify" value="1"/>
+		<set name="baseHitTimeFactor" value="0.59"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4573" level="9" use_type="W_LongRangeDDMagic"/>	<!--NPC Sonic Blaster-->
+			<skill id="4072" level="9" use_type="SelfRangeDDMagic"/>	<!--Stun-->
+		</skills>
+	</npc>
+	<npc id="21402" name="Katraxith" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="52.8"/>
+		<set name="collision_radius" value="24"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="14908"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.585"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.03"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="80"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1105.3157"/>
+		<set name="basePDef" value="425.55097"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="762.33521"/>
+		<set name="baseMDef" value="283.33664"/>
+		<set name="baseWalkSpd" value="37"/>
+		<set name="baseRunSpd" value="165"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="DAGGER"/>
+		<set name="basePHitModify" value="1"/>
+		<set name="basePAvoidModify" value="1"/>
+		<set name="baseHitTimeFactor" value="0.54"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="7"/>	<!--Daggers-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4072" level="9" use_type="SelfRangeDDMagic"/>	<!--Stun-->
+			<skill id="4090" level="1" use_type="SelfBuff"/>	<!--NPC Wolf Spirit Totem-->
+			<skill id="4032" level="9" use_type="PhysicalSpecial"/>	<!--NPC Strike-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="612" min="1" max="1" chance="0.005"/>	<!--Sealed Zubei's Gauntlets (Запечатанные Рукавицы Зубея)-->
+			<reward item_id="2464" min="1" max="1" chance="0.005"/>	<!--Sealed Avadon Gloves (Запечатанные Перчатки Авадона)-->
+			<reward item_id="2475" min="1" max="1" chance="0.0009"/>	<!--Sealed Doom Gloves (Запечатанные Перчатки Рока)-->
+			<reward item_id="2487" min="1" max="1" chance="0.0009"/>	<!--Sealed Blue Wolf Gloves (Запечатанные Перчатки Синего Волка)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="4.858"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.797"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92766" min="1" max="1" chance="0.05"/>	<!--Sealed Avadon Glove Fragment (Часть Запечатанных Перчаток Авадона)-->
+			<reward item_id="92780" min="1" max="1" chance="0.05"/>	<!--Sealed Doom Glove Fragment (Часть Запечатанных Перчаток Рока)-->
+			<reward item_id="92781" min="1" max="1" chance="0.05"/>	<!--Sealed Blue Wolf Glove Fabric (Материя Запечатанных Перчаток Синего Волка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92785" min="1" max="1" chance="0.05"/>	<!--Sealed Zubei's Gauntlet Fragment (Часть Запечатанных Рукавиц Зубея)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21403" name="Katraxith" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="52.8"/>
+		<set name="collision_radius" value="24"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="29708"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.585"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.03"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="80"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1105.3157"/>
+		<set name="basePDef" value="425.55097"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="762.33521"/>
+		<set name="baseMDef" value="283.33664"/>
+		<set name="baseWalkSpd" value="37"/>
+		<set name="baseRunSpd" value="165"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="DAGGER"/>
+		<set name="basePHitModify" value="1"/>
+		<set name="basePAvoidModify" value="1"/>
+		<set name="baseHitTimeFactor" value="0.54"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="7"/>	<!--Daggers-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4643" level="9" use_type="PhysicalSpecial"/>	<!--Decrease Speed-->
+		</skills>
+	</npc>
+	<npc id="21404" name="Tera Beetle" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="54.5;67"/>
+		<set name="collision_radius" value="25.0;30"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="14908"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="185"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.59"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4157" level="9" use_type="W_LongRangeDDMagic"/>	<!--NPC Blaze - Magic-->
+			<skill id="4561" level="9" use_type="W_ShortRangeDDMagic"/>	<!--NPC Fire Burn - Magic-->
+			<skill id="4576" level="3" use_type="W_ClanBuff"/>	<!--NPC Clan Buff - Damage Shield-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="229" min="1" max="1" chance="0.0009"/>	<!--Kris (Крис)-->
+			<reward item_id="243" min="1" max="1" chance="0.0009"/>	<!--Twilight Knife (Нож Ада)-->
+			<reward item_id="2392" min="1" max="1" chance="0.0009"/>	<!--Doom Leather Armor (Кожаный Доспех Рока)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="4.877"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.842"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92772" min="1" max="1" chance="0.01"/>	<!--Doom Leather Armor Design (Модель Кожаного Доспеха Рока)-->
+			<reward item_id="92795" min="1" max="1" chance="0.005"/>	<!--Twilight Knife Edge (Лезвие Ножа Ада)-->
+			<reward item_id="92794" min="1" max="1" chance="0.005"/>	<!--Kris Edge (Лезвие Криса)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21405" name="Tera Beetle" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="54.5;67"/>
+		<set name="collision_radius" value="25.0;30"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="29708"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="185"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.59"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4001" level="9" use_type="DDMagic"/>	<!--NPC Windstrike-->
+			<skill id="4029" level="3" use_type="SelfBuff"/>	<!--NPC Shield-->
+		</skills>
+	</npc>
+	<npc id="21406" name="Imperial Knight" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="25"/>
+		<set name="collision_radius" value="10"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="10374"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="40"/>
+		<set name="baseRunSpd" value="145"/>
+		<set name="baseShldDef" value="170.6875"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.17"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<equip>
+			<rhand item_id="150"/>	<!--Меч Стихий-->
+			<lhand item_id="103"/>	<!--Башенный Щит-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4157" level="9" use_type="W_LongRangeDDMagic"/>	<!--NPC Blaze - Magic-->
+			<skill id="4561" level="9" use_type="W_ShortRangeDDMagic"/>	<!--NPC Fire Burn - Magic-->
+			<skill id="4117" level="9" use_type="DeBuff"/>	<!--Paralysis-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="110" min="1" max="1" chance="0.0009"/>	<!--Doom Shield (Щит Рока)-->
+			<reward item_id="2384" min="1" max="1" chance="0.0009"/>	<!--Zubei's Leather Shirt (Кожаная Рубаха Зубея)-->
+			<reward item_id="2388" min="1" max="1" chance="0.0009"/>	<!--Zubei's Leather Gaiters (Кожаные Набедренники Зубея)-->
+			<reward item_id="2390" min="1" max="1" chance="0.0009"/>	<!--Avadon Leather Armor (Кожаный Доспех Авадона)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="4.848"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.789"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92759" min="1" max="1" chance="0.05"/>	<!--Zubei's Leather Shirt Fabric (Материя Кожаной Рубахи Зубея)-->
+			<reward item_id="92760" min="1" max="1" chance="0.05"/>	<!--Zubei's Leather Gaiter Texture (Материал Кожаных Набедренников Зубея)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92767" min="1" max="1" chance="0.05"/>	<!--Doom Shield Fragment (Часть Щита Рока)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92761" min="1" max="1" chance="0.01"/>	<!--Avadon Leather Armor Lining (Подкладка Кожаного Доспеха Авадона)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21407" name="Imperial Knight" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="25"/>
+		<set name="collision_radius" value="10"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="20639"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="40"/>
+		<set name="baseRunSpd" value="145"/>
+		<set name="baseShldDef" value="170.6875"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.17"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<equip>
+			<rhand item_id="150"/>	<!--Меч Стихий-->
+			<lhand item_id="103"/>	<!--Башенный Щит-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4032" level="9" use_type="PhysicalSpecial"/>	<!--NPC Strike-->
+			<skill id="4663" level="1" use_type="DeBuff"/>	<!--NPC Hate-->
+		</skills>
+	</npc>
+	<npc id="21408" name="Imperial Guard" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="28.0;33"/>
+		<set name="collision_radius" value="10.0;12"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="10628"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="baseRunSpd" value="190"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.21"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<equip>
+			<rhand item_id="98"/>	<!--Алебарда-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+			<skill id="4438" level="2"/>	<!--Greater Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4579" level="9" use_type="PhysicalSpecial"/>	<!--Bleed-->
+			<skill id="4036" level="9" use_type="SelfRangeDeBuff"/>	<!--Poison-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="673" min="1" max="1" chance="0.005"/>	<!--Avadon Shield (Щит Авадона)-->
+			<reward item_id="2397" min="1" max="1" chance="0.0009"/>	<!--Tunic of Zubei (Туника Зубея)-->
+			<reward item_id="2402" min="1" max="1" chance="0.0009"/>	<!--Stockings of Zubei (Штаны Зубея)-->
+			<reward item_id="2406" min="1" max="1" chance="0.0009"/>	<!--Avadon Robe (Мантия Авадона)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="4.805"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.795"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92762" min="1" max="1" chance="0.05"/>	<!--Tunic of Zubei Fabric (Материя Туники Зубея)-->
+			<reward item_id="92763" min="1" max="1" chance="0.05"/>	<!--Stockings of Zubei Fabric (Материя Штанов Зубея)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92808" min="1" max="1" chance="0.05"/>	<!--Avadon Shield Fragment (Часть Щита Авадона)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92764" min="1" max="1" chance="0.01"/>	<!--Avadon Robe Fabric (Материя Мантии Авадона)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21409" name="Imperial Guard" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="28.0;33"/>
+		<set name="collision_radius" value="10.0;12"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="20808"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="baseRunSpd" value="190"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.21"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<equip>
+			<rhand item_id="304"/>	<!--Orcish Halberd-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4592" level="9" use_type="DDMagic"/>	<!--Decrease P. Def.-->
+			<skill id="4036" level="9" use_type="SelfRangeDeBuff"/>	<!--Poison-->
+		</skills>
+	</npc>
+	<npc id="21410" name="Guardian Scarab" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="26.5"/>
+		<set name="collision_radius" value="17"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="15162"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.721"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.0804"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1172.76001"/>
+		<set name="basePDef" value="443.52293"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="820.83297"/>
+		<set name="baseMDef" value="298.97615"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="195"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="7.75"/>
+		<set name="basePAvoidModify" value="3"/>
+		<set name="baseHitTimeFactor" value="0.52"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4317" level="1" use_type="Fury"/>	<!--Increase Rage Might-->
+			<skill id="4599" level="9" use_type="SelfRangePhysicalSpecial"/>	<!--Decrease Speed-->
+			<skill id="4073" level="9" use_type="PhysicalSpecial"/>	<!--Stun-->
+			<skill id="4047" level="9" use_type="DeBuff"/>	<!--Hold-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="110" min="1" max="1" chance="0.005"/>	<!--Doom Shield (Щит Рока)-->
+			<reward item_id="284" min="1" max="1" chance="0.0009"/>	<!--Dark Elven Longbow (Длинный Лук Темных Эльфов)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="4.473"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="4.468"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92767" min="1" max="1" chance="0.05"/>	<!--Doom Shield Fragment (Часть Щита Рока)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92797" min="1" max="1" chance="0.005"/>	<!--Dark Elven Longbow Shaft (Рукоять Длинного Лука Темных Эльфов)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21411" name="Guardian Scarab" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="26.5"/>
+		<set name="collision_radius" value="17"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="29876"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.721"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.0804"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1172.76001"/>
+		<set name="basePDef" value="443.52293"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="820.83297"/>
+		<set name="baseMDef" value="298.97615"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="195"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="7.75"/>
+		<set name="basePAvoidModify" value="3"/>
+		<set name="baseHitTimeFactor" value="0.52"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4077" level="9" use_type="PhysicalSpecial"/>	<!--NPC Aura Burn-->
+		</skills>
+	</npc>
+	<npc id="21412" name="Ustralith" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="66"/>
+		<set name="collision_radius" value="28"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="14908"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="37"/>
+		<set name="baseRunSpd" value="130"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<database_rewardlist>
+			<reward item_id="554" min="1" max="1" chance="0.005"/>	<!--Sealed Zubei's Boots (Запечатанные Сапоги Зубея)-->
+			<reward item_id="600" min="1" max="1" chance="0.005"/>	<!--Sealed Avadon Boots (Запечатанные Сапоги Авадона)-->
+			<reward item_id="601" min="1" max="1" chance="0.0009"/>	<!--Sealed Doom Boots (Запечатанные Сапоги Рока)-->
+			<reward item_id="2439" min="1" max="1" chance="0.0009"/>	<!--Sealed Blue Wolf Boots (Запечатанные Сапоги Синего Волка)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="4.814"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="4.761"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92779" min="1" max="1" chance="0.05"/>	<!--Sealed Blue Wolf Boot Design (Модель Запечатанных Сапог Синего Волка)-->
+			<reward item_id="92782" min="1" max="1" chance="0.05"/>	<!--Sealed Zubei's Boot Design (Модель Запечатанных Сапог Зубея)-->
+			<reward item_id="92783" min="1" max="1" chance="0.05"/>	<!--Sealed Avadon Boot Design (Модель Запечатанных Сапог Авадона)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92784" min="1" max="1" chance="0.05"/>	<!--Sealed Doom Boot Fragment (Часть Запечатанных Сапог Рока)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21413" name="Ustralith" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="66"/>
+		<set name="collision_radius" value="28"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="29708"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="37"/>
+		<set name="baseRunSpd" value="130"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+	</npc>
+	<npc id="21414" name="Imperial Assassin" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="28.5"/>
+		<set name="collision_radius" value="11"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="11374"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="baseRunSpd" value="175"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<database_rewardlist>
+			<reward item_id="358" min="1" max="1" chance="0.0009"/>	<!--Blue Wolf Breastplate (Кираса Синего Волка)-->
+			<reward item_id="2380" min="1" max="1" chance="0.0009"/>	<!--Blue Wolf Gaiters (Набедренники Синего Волка)-->
+			<reward item_id="2381" min="1" max="1" chance="0.0009"/>	<!--Doom Plate Armor (Латный Доспех Рока)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="4.889"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.849"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92769" min="1" max="1" chance="0.05"/>	<!--Blue Wolf Gaiter Material (Материал Набедренников Синего Волка)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92768" min="1" max="1" chance="0.01"/>	<!--Blue Wolf Breastplate Part (Часть Кирасы Синего Волка)-->
+			<reward item_id="92770" min="1" max="1" chance="0.005"/>	<!--Doom Plate Armor Temper (Заготовка Латного Доспеха Рока)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21415" name="Imperial Assassin" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="28.5"/>
+		<set name="collision_radius" value="11"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="20970"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="baseRunSpd" value="175"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+	</npc>
+	<npc id="21416" name="Imperial Commander" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="30.0;36"/>
+		<set name="collision_radius" value="7.0;8"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="11850"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.721"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.0804"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1172.76001"/>
+		<set name="basePDef" value="443.52293"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="820.83297"/>
+		<set name="baseMDef" value="298.97615"/>
+		<set name="baseWalkSpd" value="39"/>
+		<set name="baseRunSpd" value="140"/>
+		<set name="baseShldDef" value="172.805635"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="7.75"/>
+		<set name="basePAvoidModify" value="3"/>
+		<set name="baseHitTimeFactor" value="0.48"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<equip>
+			<rhand item_id="134"/>	<!--Меч Кошмаров-->
+			<lhand item_id="6721"/>	<!--Только для Монстров (Щит Имперского Вождя Зомби)-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4665" level="9" use_type="W_LongRangeDDMagic"/>	<!--NPC 100% HP Drain - Magic-->
+			<skill id="4160" level="9" use_type="W_ShortRangeDDMagic"/>	<!--NPC Aura Burn - Magic-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="91" min="1" max="1" chance="0.0009"/>	<!--Heavy War Axe (Тяжелый Топор Войны)-->
+			<reward item_id="92" min="1" max="1" chance="0.0009"/>	<!--Spirit's Staff (Посох Духа)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="4.886"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.775"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92791" min="1" max="1" chance="0.005"/>	<!--Spirit's Staff Head (Навершие Посоха Духа)-->
+			<reward item_id="92790" min="1" max="1" chance="0.005"/>	<!--Heavy War Axe Head (Навершие Тяжелого Топора Войны)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21417" name="Imperial Commander" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="30.0;36"/>
+		<set name="collision_radius" value="7.0;8"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="21639"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.721"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.0804"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1172.76001"/>
+		<set name="basePDef" value="443.52293"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="820.83297"/>
+		<set name="baseMDef" value="298.97615"/>
+		<set name="baseWalkSpd" value="39"/>
+		<set name="baseRunSpd" value="140"/>
+		<set name="baseShldDef" value="172.805635"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="7.75"/>
+		<set name="basePAvoidModify" value="3"/>
+		<set name="baseHitTimeFactor" value="0.48"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<equip>
+			<rhand item_id="134"/>	<!--Меч Кошмаров-->
+			<lhand item_id="6721"/>	<!--Только для Монстров (Щит Имперского Вождя Зомби)-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4002" level="9" use_type="DDMagic"/>	<!--NPC HP Drain-->
+		</skills>
+	</npc>
+	<npc id="21418" name="Imperial Guard" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="29.0;36"/>
+		<set name="collision_radius" value="12.0;14.5"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="10580"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.772"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3.1008"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1202.42126"/>
+		<set name="basePDef" value="451.35749"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="847.05513"/>
+		<set name="baseMDef" value="307.91339"/>
+		<set name="baseWalkSpd" value="27"/>
+		<set name="baseRunSpd" value="160"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="8.75"/>
+		<set name="basePAvoidModify" value="4"/>
+		<set name="baseHitTimeFactor" value="0.71"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<equip>
+			<rhand item_id="142"/>	<!--Кешанберк-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4572" level="9" use_type="PhysicalSpecial"/>	<!--NPC Triple Sonic Slash-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="633" min="1" max="1" chance="0.005"/>	<!--Zubei's Shield (Щит Зубея)-->
+			<reward item_id="357" min="1" max="1" chance="0.0009"/>	<!--Zubei's Breastplate (Кираса Зубея)-->
+			<reward item_id="383" min="1" max="1" chance="0.0009"/>	<!--Zubei's Gaiters (Набедренники Зубея)-->
+			<reward item_id="2379" min="1" max="1" chance="0.0009"/>	<!--Avadon Gaiters (Набедренники Авадона)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="4.788"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.782"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92756" min="1" max="1" chance="0.05"/>	<!--Zubei's Gaiter Material (Материал Набедренников Зубея)-->
+			<reward item_id="92758" min="1" max="1" chance="0.05"/>	<!--Avadon Gaiter Material (Материал Набедренников Авадона)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92786" min="1" max="1" chance="0.05"/>	<!--Zubei's Shield Fragment (Часть Щита Зубея)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92755" min="1" max="1" chance="0.01"/>	<!--Zubei's Breastplate Part (Часть Кирасы Зубея)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21419" name="Imperial Guard" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="29.0;36"/>
+		<set name="collision_radius" value="12.0;14.5"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="20830"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="27"/>
+		<set name="baseRunSpd" value="160"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+	</npc>
+	<npc id="21420" name="Ashuras" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="37.5"/>
+		<set name="collision_radius" value="13"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="19953"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="4"/>
+		<set name="baseHpReg" value="8.772"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.1008"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1202.42126"/>
+		<set name="basePDef" value="451.35749"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="847.05513"/>
+		<set name="baseMDef" value="307.91339"/>
+		<set name="baseWalkSpd" value="41"/>
+		<set name="baseRunSpd" value="200"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="8.75"/>
+		<set name="basePAvoidModify" value="4"/>
+		<set name="baseHitTimeFactor" value="0.5"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4317" level="1" use_type="Fury"/>	<!--Increase Rage Might-->
+			<skill id="4072" level="7" use_type="SelfRangePhysicalSpecial"/>	<!--Stun-->
+			<skill id="4572" level="7" use_type="PhysicalSpecial"/>	<!--NPC Triple Sonic Slash-->
+			<skill id="4076" level="3" use_type="DeBuff"/>	<!--Decrease Speed-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="97" min="1" max="1" chance="0.0009"/>	<!--Lance (Пика)-->
+			<reward item_id="268" min="1" max="1" chance="0.0009"/>	<!--Bellion Cestus (Цестус Беллиона)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="5.418"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="5.387"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92805" min="1" max="1" chance="0.005"/>	<!--Bellion Cestus Edge (Лезвие Цестуса Беллиона)-->
+			<reward item_id="92800" min="1" max="1" chance="0.005"/>	<!--Lance Blade (Клинок Пики)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21421" name="Ashuras" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="37.5"/>
+		<set name="collision_radius" value="13"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="39614"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="4"/>
+		<set name="baseHpReg" value="8.772"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.1008"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1202.42126"/>
+		<set name="basePDef" value="451.35749"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="847.05513"/>
+		<set name="baseMDef" value="307.91339"/>
+		<set name="baseWalkSpd" value="41"/>
+		<set name="baseRunSpd" value="200"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="8.75"/>
+		<set name="basePAvoidModify" value="4"/>
+		<set name="baseHitTimeFactor" value="0.5"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4592" level="9" use_type="DDMagic"/>	<!--Decrease P. Def.-->
+		</skills>
+	</npc>
+	<npc id="21422" name="Imperial Dancer" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="23"/>
+		<set name="collision_radius" value="9"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="11520"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+			<skill id="4233" level="1"/>	<!--Vampiric Attack-->
+		</client_skills>
+		<database_rewardlist>
+			<reward item_id="78" min="1" max="1" chance="0.0009"/>	<!--Great Sword (Большой Меч)-->
+			<reward item_id="142" min="1" max="1" chance="0.0009"/>	<!--Keshanberk (Кешанберк)-->
+			<reward item_id="2381" min="1" max="1" chance="0.0009"/>	<!--Doom Plate Armor (Латный Доспех Рока)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="5.411"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="5.406"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92770" min="1" max="1" chance="0.01"/>	<!--Doom Plate Armor Temper (Заготовка Латного Доспеха Рока)-->
+			<reward item_id="92792" min="1" max="1" chance="0.005"/>	<!--Keshanberk Blade (Клинок Кешанберка)-->
+			<reward item_id="92789" min="1" max="1" chance="0.005"/>	<!--Great Sword Blade (Клинок Большого Меча)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21423" name="Imperial Dancer" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="23"/>
+		<set name="collision_radius" value="9"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="21465"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+			<skill id="4233" level="1"/>	<!--Vampiric Attack-->
+		</client_skills>
+	</npc>
+	<npc id="21424" name="Ashikenas" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="37.5"/>
+		<set name="collision_radius" value="13"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="15893"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.772"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.1008"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1202.42126"/>
+		<set name="basePDef" value="451.35749"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="847.05513"/>
+		<set name="baseMDef" value="307.91339"/>
+		<set name="baseWalkSpd" value="41"/>
+		<set name="baseRunSpd" value="190"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="8.75"/>
+		<set name="basePAvoidModify" value="4"/>
+		<set name="baseHitTimeFactor" value="0.5"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4077" level="9" use_type="PhysicalSpecial"/>	<!--NPC Aura Burn-->
+			<skill id="4596" level="9" use_type="DDMagic1"/>	<!--Bleed-->
+			<skill id="4076" level="3" use_type="DeBuff"/>	<!--Decrease Speed-->
+			<skill id="4633" level="3" use_type="SelfBuff"/>	<!--NPC Buff - Acumen Empower Berserk-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="110" min="1" max="1" chance="0.005"/>	<!--Doom Shield (Щит Рока)-->
+			<reward item_id="284" min="1" max="1" chance="0.0009"/>	<!--Dark Elven Longbow (Длинный Лук Темных Эльфов)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="5.045"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.976"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92767" min="1" max="1" chance="0.05"/>	<!--Doom Shield Fragment (Часть Щита Рока)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92797" min="1" max="1" chance="0.005"/>	<!--Dark Elven Longbow Shaft (Рукоять Длинного Лука Темных Эльфов)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21425" name="Ashikenas" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="37.5"/>
+		<set name="collision_radius" value="13"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="31147"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.772"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.1008"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1202.42126"/>
+		<set name="basePDef" value="451.35749"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="847.05513"/>
+		<set name="baseMDef" value="307.91339"/>
+		<set name="baseWalkSpd" value="41"/>
+		<set name="baseRunSpd" value="190"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="8.75"/>
+		<set name="basePAvoidModify" value="4"/>
+		<set name="baseHitTimeFactor" value="0.5"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4584" level="9" use_type="PhysicalSpecial"/>	<!--Reducing P. Def Stun-->
+			<skill id="4565" level="9" use_type="DDMagic1"/>	<!--NPC Eruption-->
+			<skill id="4098" level="9" use_type="DeBuff"/>	<!--Silence-->
+			<skill id="4632" level="3" use_type="SelfBuff"/>	<!--NPC Buff - Acumen Empower WildMagic-->
+		</skills>
+	</npc>
+	<npc id="21426" name="Abraxian" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="50.0;60"/>
+		<set name="collision_radius" value="21.0;24"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="15893"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="3"/>
+		<set name="baseHpReg" value="8.823"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.111"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="10"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1232.0825"/>
+		<set name="basePDef" value="459.19204"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="874.0719"/>
+		<set name="baseMDef" value="316.91808"/>
+		<set name="baseWalkSpd" value="31"/>
+		<set name="baseRunSpd" value="130"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="50"/>
+		<set name="baseAttackType" value="BLUNT"/>
+		<set name="basePHitModify" value="14"/>
+		<set name="basePAvoidModify" value="5"/>
+		<set name="baseHitTimeFactor" value="0.48"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="6"/>	<!--Blunt Weapons-->
+			<skill id="4789" level="9"/>	<!--NPC High Level-->
+			<skill id="4576" level="3" use_type="SelfBuff1"/>	<!--NPC Clan Buff - Damage Shield-->
+			<skill id="4585" level="3" use_type="SelfBuff2"/>	<!--NPC Clan Buff - Berserk Might-->
+			<skill id="4595" level="3" use_type="SelfBuff3"/>	<!--NPC Clan Buff - Acumen Shield-->
+			<skill id="4609" level="4" use_type="SelfBuff4"/>	<!--NPC Clan Buff - Vampiric Rage-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="91" min="1" max="1" chance="0.0009"/>	<!--Heavy War Axe (Тяжелый Топор Войны)-->
+			<reward item_id="92" min="1" max="1" chance="0.0009"/>	<!--Spirit's Staff (Посох Духа)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="5.425"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="5.344"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92791" min="1" max="1" chance="0.005"/>	<!--Spirit's Staff Head (Навершие Посоха Духа)-->
+			<reward item_id="92790" min="1" max="1" chance="0.005"/>	<!--Heavy War Axe Head (Навершие Тяжелого Топора Войны)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21427" name="Abraxian" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="50.0;60"/>
+		<set name="collision_radius" value="21.0;24"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="31147"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="4"/>
+		<set name="baseHpReg" value="8.823"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.111"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="10"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1232.0825"/>
+		<set name="basePDef" value="459.19204"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="874.0719"/>
+		<set name="baseMDef" value="316.91808"/>
+		<set name="baseWalkSpd" value="31"/>
+		<set name="baseRunSpd" value="130"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="50"/>
+		<set name="baseAttackType" value="BLUNT"/>
+		<set name="basePHitModify" value="14"/>
+		<set name="basePAvoidModify" value="5"/>
+		<set name="baseHitTimeFactor" value="0.48"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="6"/>	<!--Blunt Weapons-->
+			<skill id="4789" level="9"/>	<!--NPC High Level-->
+			<skill id="4560" level="9" use_type="PhysicalSpecial"/>	<!--NPC Fire Burn-->
+		</skills>
+	</npc>
+	<npc id="21428" name="Hasturan" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="50.0;60"/>
+		<set name="collision_radius" value="21.0;24"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="20370"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="31"/>
+		<set name="baseRunSpd" value="150"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+			<skill id="4233" level="1"/>	<!--Vampiric Attack-->
+		</client_skills>
+		<database_rewardlist>
+			<reward item_id="229" min="1" max="1" chance="0.0009"/>	<!--Kris (Крис)-->
+			<reward item_id="243" min="1" max="1" chance="0.0009"/>	<!--Twilight Knife (Нож Ада)-->
+			<reward item_id="2392" min="1" max="1" chance="0.0009"/>	<!--Doom Leather Armor (Кожаный Доспех Рока)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="5.363"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="5.353"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92772" min="1" max="1" chance="0.01"/>	<!--Doom Leather Armor Design (Модель Кожаного Доспеха Рока)-->
+			<reward item_id="92795" min="1" max="1" chance="0.005"/>	<!--Twilight Knife Edge (Лезвие Ножа Ада)-->
+			<reward item_id="92794" min="1" max="1" chance="0.005"/>	<!--Kris Edge (Лезвие Криса)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21429" name="Hasturan" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="50.0;60"/>
+		<set name="collision_radius" value="21.0;24"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="40101"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="31"/>
+		<set name="baseRunSpd" value="150"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+			<skill id="4233" level="1"/>	<!--Vampiric Attack-->
+		</client_skills>
+	</npc>
+	<npc id="21430" name="Ahrimanes" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="57.75;69"/>
+		<set name="collision_radius" value="14.0;17"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="21790"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="35"/>
+		<set name="baseRunSpd" value="210"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+		<database_rewardlist>
+			<reward item_id="234" min="1" max="1" chance="0.0009"/>	<!--Demon's Dagger (Кинжал Демона)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="5.356"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="5.327"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92804" min="1" max="1" chance="0.01"/>	<!--Demon's Dagger Edge (Лезвие Кинжала Демона)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21431" name="Ahrimanes" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="57.75;69"/>
+		<set name="collision_radius" value="14.0;17"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="40466"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="35"/>
+		<set name="baseRunSpd" value="210"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+	</npc>
+	<npc id="21432" name="Chakram Beetle" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="54.5"/>
+		<set name="collision_radius" value="19"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="43180"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="4"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="170"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.59"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4040" level="9" use_type="PhysicalSpecial"/>	<!--NPC Bow Attack-->
+			<skill id="4065" level="9" use_type="MagicHeal"/>	<!--NPC Heal-->
+			<skill id="4341" level="1" use_type="SelfBuff"/>	<!--Ultimate Buff, 3rd-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="175" min="1" max="1" chance="0.0009"/>	<!--Art of Battle Axe (Топор Искусства Войны)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="5.318"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="5.309"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92802" min="1" max="1" chance="0.01"/>	<!--Art of Battle Axe Blade (Клинок Топора Искусства Войны)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21433" name="Jamadhr Beetle" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="43.6;52.5"/>
+		<set name="collision_radius" value="20.0;25"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="40040"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="4"/>
+		<set name="baseHpReg" value="8.585"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.03"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1105.3157"/>
+		<set name="basePDef" value="425.55097"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="762.33521"/>
+		<set name="baseMDef" value="283.33664"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="175"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="5.75"/>
+		<set name="basePAvoidModify" value="1"/>
+		<set name="baseHitTimeFactor" value="0.59"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4579" level="9" use_type="PhysicalSpecial"/>	<!--Bleed-->
+			<skill id="4065" level="7" use_type="MagicHeal"/>	<!--NPC Heal-->
+			<skill id="4340" level="1" use_type="SelfBuff"/>	<!--Ultimate Buff, 2nd-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="97" min="1" max="1" chance="0.0009"/>	<!--Lance (Пика)-->
+			<reward item_id="268" min="1" max="1" chance="0.0009"/>	<!--Bellion Cestus (Цестус Беллиона)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="5.433"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="5.415"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92805" min="1" max="1" chance="0.005"/>	<!--Bellion Cestus Edge (Лезвие Цестуса Беллиона)-->
+			<reward item_id="92800" min="1" max="1" chance="0.005"/>	<!--Lance Blade (Клинок Пики)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21434" name="Blood Priest" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="50.0;60"/>
+		<set name="collision_radius" value="21.0;24"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="56881"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="5"/>
+		<set name="baseHpReg" value="8.772"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.1008"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="10"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1202.42126"/>
+		<set name="basePDef" value="451.35749"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="847.05513"/>
+		<set name="baseMDef" value="307.91339"/>
+		<set name="baseWalkSpd" value="31"/>
+		<set name="baseRunSpd" value="150"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="50"/>
+		<set name="baseAttackType" value="BLUNT"/>
+		<set name="basePHitModify" value="13"/>
+		<set name="basePAvoidModify" value="4"/>
+		<set name="baseHitTimeFactor" value="0.48"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="4285" level="3"/>	<!--Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="6"/>	<!--Blunt Weapons-->
+			<skill id="4789" level="7"/>	<!--NPC High Level-->
+			<skill id="4605" level="9" use_type="PhysicalSpecial1"/>	<!--Surrender To Fire-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="97" min="1" max="1" chance="0.0009"/>	<!--Lance (Пика)-->
+			<reward item_id="268" min="1" max="1" chance="0.0009"/>	<!--Bellion Cestus (Цестус Беллиона)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="5.364"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="5.32"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92805" min="1" max="1" chance="0.005"/>	<!--Bellion Cestus Edge (Лезвие Цестуса Беллиона)-->
+			<reward item_id="92800" min="1" max="1" chance="0.005"/>	<!--Lance Blade (Клинок Пики)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21435" name="Sacrifice Guide" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="30.0;36"/>
+		<set name="collision_radius" value="7.0;8"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="25529"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="39"/>
+		<set name="baseRunSpd" value="150"/>
+		<set name="baseShldDef" value="170.6875"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.48"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<equip>
+			<rhand item_id="134"/>	<!--Меч Кошмаров-->
+			<lhand item_id="6721"/>	<!--Только для Монстров (Щит Имперского Вождя Зомби)-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4663" level="1" use_type="MobHate"/>	<!--NPC Hate-->
+			<skill id="4091" level="1" use_type="SelfBuff"/>	<!--NPC Ogre Spirit Totem-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="78" min="1" max="1" chance="0.0009"/>	<!--Great Sword (Большой Меч)-->
+			<reward item_id="142" min="1" max="1" chance="0.0009"/>	<!--Keshanberk (Кешанберк)-->
+			<reward item_id="2381" min="1" max="1" chance="0.0009"/>	<!--Doom Plate Armor (Латный Доспех Рока)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="5.394"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="5.368"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92770" min="1" max="1" chance="0.01"/>	<!--Doom Plate Armor Temper (Заготовка Латного Доспеха Рока)-->
+			<reward item_id="92792" min="1" max="1" chance="0.005"/>	<!--Keshanberk Blade (Клинок Кешанберка)-->
+			<reward item_id="92789" min="1" max="1" chance="0.005"/>	<!--Great Sword Blade (Клинок Большого Меча)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21436" name="Sacrifice Leader" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="30.0;36"/>
+		<set name="collision_radius" value="7.0;8"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="25529"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.67"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.06"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1140.81713"/>
+		<set name="basePDef" value="435.25312"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="794.61081"/>
+		<set name="baseMDef" value="289.79644"/>
+		<set name="baseWalkSpd" value="39"/>
+		<set name="baseRunSpd" value="150"/>
+		<set name="baseShldDef" value="170.6875"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="6.75"/>
+		<set name="basePAvoidModify" value="2"/>
+		<set name="baseHitTimeFactor" value="0.48"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<equip>
+			<rhand item_id="134"/>	<!--Меч Кошмаров-->
+			<lhand item_id="6721"/>	<!--Только для Монстров (Щит Имперского Вождя Зомби)-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4605" level="9" use_type="PhysicalSpecial"/>	<!--Surrender To Fire-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="110" min="1" max="1" chance="0.005"/>	<!--Doom Shield (Щит Рока)-->
+			<reward item_id="284" min="1" max="1" chance="0.0009"/>	<!--Dark Elven Longbow (Длинный Лук Темных Эльфов)-->
+			<reward item_id="57" min="684" max="1596" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="5.037"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="5.016"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92767" min="1" max="1" chance="0.05"/>	<!--Doom Shield Fragment (Часть Щита Рока)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92797" min="1" max="1" chance="0.005"/>	<!--Dark Elven Longbow Shaft (Рукоять Длинного Лука Темных Эльфов)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21437" name="Sacrifice Insect" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="22"/>
+		<set name="collision_radius" value="14"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="5564"/>
+		<set name="rewardSp" value="30842"/>
+		<set name="baseHpMax" value="44350.854"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.585"/>
+		<set name="baseMpMax" value="2770.2"/>
+		<set name="baseMpReg" value="3.03"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1105.3157"/>
+		<set name="basePDef" value="425.55097"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="762.33521"/>
+		<set name="baseMDef" value="283.33664"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="180"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="5.75"/>
+		<set name="basePAvoidModify" value="1"/>
+		<set name="baseHitTimeFactor" value="0.52"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4605" level="9" use_type="PhysicalSpecial1"/>	<!--Surrender To Fire-->
+			<skill id="4613" level="9" use_type="MagicHeal"/>	<!--NPC Clan Heal-->
+			<skill id="4614" level="9" use_type="Bomb"/>	<!--NPC Death Bomb-->
+		</skills>
+	</npc>
+	<npc id="21438" name="Ghost of Gatekeeper" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="25"/>
+		<set name="collision_radius" value="10"/>
+		<set name="level" value="83"/>
+		<set name="rewardExp" value="5505"/>
+		<set name="rewardSp" value="10541"/>
+		<set name="baseHpMax" value="43455.234"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseMpMax" value="2666.1"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1019.21431"/>
+		<set name="basePDef" value="404.73068"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="695.99125"/>
+		<set name="baseMDef" value="269.47426"/>
+		<set name="baseWalkSpd" value="40"/>
+		<set name="baseRunSpd" value="165"/>
+		<set name="baseShldDef" value="161.892275"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.17"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<equip>
+			<rhand item_id="150"/>	<!--Меч Стихий-->
+			<lhand item_id="103"/>	<!--Башенный Щит-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="4"/>	<!--NPC High Level-->
+			<skill id="4073" level="9" use_type="PhysicalSpecial"/>	<!--Stun-->
+		</skills>
+	</npc>
+	<npc id="21439" name="Ghost of Gatekeeper" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="25"/>
+		<set name="collision_radius" value="10"/>
+		<set name="level" value="83"/>
+		<set name="rewardExp" value="5505"/>
+		<set name="rewardSp" value="10541"/>
+		<set name="baseHpMax" value="43455.234"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseMpMax" value="2666.1"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1019.21431"/>
+		<set name="basePDef" value="404.73068"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="695.99125"/>
+		<set name="baseMDef" value="269.47426"/>
+		<set name="baseWalkSpd" value="40"/>
+		<set name="baseRunSpd" value="165"/>
+		<set name="baseShldDef" value="161.892275"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.17"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<equip>
+			<rhand item_id="150"/>	<!--Меч Стихий-->
+			<lhand item_id="103"/>	<!--Башенный Щит-->
+		</equip>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="4"/>	<!--NPC High Level-->
+			<skill id="4631" level="3" use_type="SelfBuff"/>	<!--NPC Buff - Acumen Shield WildMagic-->
+			<skill id="4571" level="9" use_type="SelfRangeDDMagic"/>	<!--NPC Blazing Circle-->
+			<skill id="4032" level="9" use_type="PhysicalSpecial"/>	<!--NPC Strike-->
+		</skills>
+	</npc>
+	<npc id="21440" name="Ghost of Vassal" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Mystic"/>
+		<set name="collision_height" value="21"/>
+		<set name="collision_radius" value="13"/>
+		<set name="level" value="83"/>
+		<set name="rewardExp" value="5505"/>
+		<set name="rewardSp" value="10541"/>
+		<set name="baseHpMax" value="43455.234"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseMpMax" value="2666.1"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1044.69466"/>
+		<set name="basePDef" value="410.33841"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="713.39103"/>
+		<set name="baseMDef" value="273.20793"/>
+		<set name="baseWalkSpd" value="15"/>
+		<set name="baseRunSpd" value="15"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.43"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="1"/>	<!--Undead-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4789" level="5"/>	<!--NPC High Level-->
+			<skill id="4567" level="9" use_type="DDMagicSlow"/>	<!--NPC Eruption - Slow-->
+		</skills>
+	</npc>
+</list>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="4411" count="1"/>	<!--Echo Crystal - Theme of Journey-->
+		<ingredient id="57" count="700"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="4412" count="1"/>	<!--Echo Crystal - Theme of Battle-->
+		<ingredient id="57" count="700"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="4413" count="1"/>	<!--Echo Crystal - Theme of Love-->
+		<ingredient id="57" count="700"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="4414" count="1"/>	<!--Echo Crystal - Theme of Solitude-->
+		<ingredient id="57" count="700"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="4415" count="1"/>	<!--Echo Crystal - Theme of Festival-->
+		<ingredient id="57" count="700"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="4416" count="1"/>	<!--Echo Crystal - Theme of Celebration-->
+		<ingredient id="57" count="700"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="4417" count="1"/>	<!--Echo Crystal - Theme of Comedy-->
+		<ingredient id="57" count="700"/>	<!--Adena-->
+	</item>
+</list>

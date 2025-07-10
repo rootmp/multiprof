@@ -1,0 +1,18 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<!--AUTHOR: L2-scripts.com - (sSanyaDC)-->
+<list>
+	<instance id="201" name="Residence of King Ignis Extreme" maxChannels="20" collapseIfEmpty="5" timelimit="20">
+		<level min="80" max="127"/>
+		<party min="27" max="100"/><!--27-100-->
+		<return loc="173384 -115528 -3760"/> 
+		<teleport loc="202344 170456 -15488"/> 
+		<reuse resetReuse="30 6 * * 3" setUponEntry="false" sharedReuseGroup="0"/>
+		<zones>
+			<zone name="[king_ignis_extreme]" active="true"/>
+		</zones>
+		<spawns>
+			<group name="king_ignis_extreme_boss" spawned="true"/>
+		</spawns>
+	</instance>
+</list>
+

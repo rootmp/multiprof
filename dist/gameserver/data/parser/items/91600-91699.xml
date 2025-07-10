@@ -1,0 +1,2408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="91600" name="Dimensional Talisman Lv. 9">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_dimension_tallisman"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35024" level="20"/>	<!--Talisman-->
+		</skills>
+	</armor>
+	<armor id="91601" name="Dimensional Talisman Lv. 10">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_dimension_tallisman"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35024" level="21"/>	<!--Talisman-->
+		</skills>
+	</armor>
+	<etcitem id="91602" name="Sealed Doll of Border - Frintezza" add_name="30-day">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91603" min_count="1" max_count="1" chance="100" /> <!-- Doll of Border - Frintezza (30-day) -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="91603" name="Doll of Border - Frintezza" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<set name="type" value="RUNE"/>
+		<skills>
+			<skill id="51297" level="1"/>	<!-- Frintezza Doll's Sorcery -->
+		</skills>
+	</etcitem>
+	<etcitem id="91604" name="Frintezza Doll Lv. 2">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="RUNE"/>
+		<skills>
+			<skill id="51297" level="2"/>	<!-- Frintezza Doll's Sorcery -->
+		</skills>
+	</etcitem>
+	<etcitem id="91605" name="Frintezza Doll Lv. 3">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="RUNE"/>
+		<skills>
+			<skill id="51297" level="3"/>	<!-- Frintezza Doll's Sorcery -->
+		</skills>
+	</etcitem>
+	<armor id="91606" name="High-grade Agathion Virgo (Fire Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_virgo_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54004" level="12"/><!--High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54004" level="13"/><!--+1 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54004" level="14"/><!--+2 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54004" level="15"/><!--+3 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54004" level="16"/><!--+4 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54004" level="17"/><!--+5 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54004" level="18"/><!--+6 High-grade Agathion Virgo-->
+					<skill id="51346" level="1"/><!--Fire Dragon Power: Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54004" level="19"/><!--+7 High-grade Agathion Virgo-->
+					<skill id="51346" level="2"/><!--Fire Dragon Power: Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54004" level="20"/><!--+8 High-grade Agathion Virgo-->
+					<skill id="51346" level="3"/><!--Fire Dragon Power: Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54004" level="21"/><!--+9 High-grade Agathion Virgo-->
+					<skill id="51346" level="4"/><!--Fire Dragon Power: Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54004" level="22"/><!--+10 High-grade Agathion Virgo-->
+					<skill id="51346" level="5"/><!--Fire Dragon Power: Virgo-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91607" name="High-grade Agathion Capricorn (Fire Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_capr_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54006" level="12"/><!--High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54006" level="13"/><!--+1 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54006" level="14"/><!--+2 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54006" level="15"/><!--+3 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54006" level="16"/><!--+4 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54006" level="17"/><!--+5 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54006" level="18"/><!--+6 High-grade Agathion Capricorn-->
+					<skill id="51347" level="1"/><!--Fire Dragon Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54006" level="19"/><!--+7 High-grade Agathion Capricorn-->
+					<skill id="51347" level="2"/><!--Fire Dragon Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54006" level="20"/><!--+8 High-grade Agathion Capricorn-->
+					<skill id="51347" level="3"/><!--Fire Dragon Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54006" level="21"/><!--+9 High-grade Agathion Capricorn-->
+					<skill id="51347" level="4"/><!--Fire Dragon Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54006" level="22"/><!--+10 High-grade Agathion Capricorn-->
+					<skill id="51347" level="5"/><!--Fire Dragon Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91608" name="High-grade Agathion Libra (Fire Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_lib_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54007" level="12"/><!--High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54007" level="13"/><!--+1 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54007" level="14"/><!--+2 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54007" level="15"/><!--+3 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54007" level="16"/><!--+4 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54007" level="17"/><!--+5 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54007" level="18"/><!--+6 High-grade Agathion Libra-->
+					<skill id="51348" level="1"/><!--Fire Dragon Power: Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54007" level="19"/><!--+7 High-grade Agathion Libra-->
+					<skill id="51348" level="2"/><!--Fire Dragon Power: Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54007" level="20"/><!--+8 High-grade Agathion Libra-->
+					<skill id="51348" level="3"/><!--Fire Dragon Power: Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54007" level="21"/><!--+9 High-grade Agathion Libra-->
+					<skill id="51348" level="4"/><!--Fire Dragon Power: Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54007" level="22"/><!--+10 High-grade Agathion Libra-->
+					<skill id="51348" level="5"/><!--Fire Dragon Power: Libra-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91609" name="High-grade Agathion Taurus (Fire Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_tau_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54000" level="12"/><!--High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54000" level="13"/><!--+1 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54000" level="14"/><!--+2 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54000" level="15"/><!--+3 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54000" level="16"/><!--+4 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54000" level="17"/><!--+5 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54000" level="18"/><!--+6 High-grade Agathion Taurus-->
+					<skill id="51349" level="1"/><!--Fire Dragon Power: Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54000" level="19"/><!--+7 High-grade Agathion Taurus-->
+					<skill id="51349" level="2"/><!--Fire Dragon Power: Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54000" level="20"/><!--+8 High-grade Agathion Taurus-->
+					<skill id="51349" level="3"/><!--Fire Dragon Power: Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54000" level="21"/><!--+9 High-grade Agathion Taurus-->
+					<skill id="51349" level="4"/><!--Fire Dragon Power: Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54000" level="22"/><!--+10 High-grade Agathion Taurus-->
+					<skill id="51349" level="5"/><!--Fire Dragon Power: Taurus-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91610" name="High-grade Agathion Leo (Fire Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_leo_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54001" level="12"/><!--High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54001" level="13"/><!--+1 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54001" level="14"/><!--+2 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54001" level="15"/><!--+3 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54001" level="16"/><!--+4 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54001" level="17"/><!--+5 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54001" level="18"/><!--+6 High-grade Agathion Leo-->
+					<skill id="51350" level="1"/><!--Fire Dragon Power: Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54001" level="19"/><!--+7 High-grade Agathion Leo-->
+					<skill id="51350" level="2"/><!--Fire Dragon Power: Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54001" level="20"/><!--+8 High-grade Agathion Leo-->
+					<skill id="51350" level="3"/><!--Fire Dragon Power: Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54001" level="21"/><!--+9 High-grade Agathion Leo-->
+					<skill id="51350" level="4"/><!--Fire Dragon Power: Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54001" level="22"/><!--+10 High-grade Agathion Leo-->
+					<skill id="51350" level="5"/><!--Fire Dragon Power: Leo-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91611" name="High-grade Agathion Scorpio (Fire Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_sco_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54002" level="12"/><!--High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54002" level="13"/><!--+1 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54002" level="14"/><!--+2 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54002" level="15"/><!--+3 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54002" level="16"/><!--+4 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54002" level="17"/><!--+5 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54002" level="18"/><!--+6 High-grade Agathion Scorpio-->
+					<skill id="51351" level="1"/><!--Fire Dragon Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54002" level="19"/><!--+7 High-grade Agathion Scorpio-->
+					<skill id="51351" level="2"/><!--Fire Dragon Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54002" level="20"/><!--+8 High-grade Agathion Scorpio-->
+					<skill id="51351" level="3"/><!--Fire Dragon Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54002" level="21"/><!--+9 High-grade Agathion Scorpio-->
+					<skill id="51351" level="4"/><!--Fire Dragon Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54002" level="22"/><!--+10 High-grade Agathion Scorpio-->
+					<skill id="51351" level="5"/><!--Fire Dragon Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91612" name="High-grade Agathion Aquarius (Fire Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_aqu_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54005" level="12"/><!--High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54005" level="13"/><!--+1 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54005" level="14"/><!--+2 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54005" level="15"/><!--+3 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54005" level="16"/><!--+4 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54005" level="17"/><!--+5 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54005" level="18"/><!--+6 High-grade Agathion Aquarius-->
+					<skill id="51352" level="1"/><!--Fire Dragon Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54005" level="19"/><!--+7 High-grade Agathion Aquarius-->
+					<skill id="51352" level="2"/><!--Fire Dragon Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54005" level="20"/><!--+8 High-grade Agathion Aquarius-->
+					<skill id="51352" level="3"/><!--Fire Dragon Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54005" level="21"/><!--+9 High-grade Agathion Aquarius-->
+					<skill id="51352" level="4"/><!--Fire Dragon Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54005" level="22"/><!--+10 High-grade Agathion Aquarius-->
+					<skill id="51352" level="5"/><!--Fire Dragon Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91613" name="High-grade Agathion Sagittarius (Fire Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_sag_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54003" level="12"/><!--High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54003" level="13"/><!--+1 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54003" level="14"/><!--+2 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54003" level="15"/><!--+3 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54003" level="16"/><!--+4 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54003" level="17"/><!--+5 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54003" level="18"/><!--+6 High-grade Agathion Sagittarius-->
+					<skill id="51353" level="1"/><!--Fire Dragon Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54003" level="19"/><!--+7 High-grade Agathion Sagittarius-->
+					<skill id="51353" level="2"/><!--Fire Dragon Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54003" level="20"/><!--+8 High-grade Agathion Sagittarius-->
+					<skill id="51353" level="3"/><!--Fire Dragon Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54003" level="21"/><!--+9 High-grade Agathion Sagittarius-->
+					<skill id="51353" level="4"/><!--Fire Dragon Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54003" level="22"/><!--+10 High-grade Agathion Sagittarius-->
+					<skill id="51353" level="5"/><!--Fire Dragon Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91614" name="High-grade Agathion Virgo (Earth Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_virgo_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54004" level="12"/><!--High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54004" level="13"/><!--+1 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54004" level="14"/><!--+2 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54004" level="15"/><!--+3 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54004" level="16"/><!--+4 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54004" level="17"/><!--+5 High-grade Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54004" level="18"/><!--+6 High-grade Agathion Virgo-->
+					<skill id="51354" level="1"/><!--Earth Dragon's Power: Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54004" level="19"/><!--+7 High-grade Agathion Virgo-->
+					<skill id="51354" level="2"/><!--Earth Dragon's Power: Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54004" level="20"/><!--+8 High-grade Agathion Virgo-->
+					<skill id="51354" level="3"/><!--Earth Dragon's Power: Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54004" level="21"/><!--+9 High-grade Agathion Virgo-->
+					<skill id="51354" level="4"/><!--Earth Dragon's Power: Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54004" level="22"/><!--+10 High-grade Agathion Virgo-->
+					<skill id="51354" level="5"/><!--Earth Dragon's Power: Virgo-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91615" name="High-grade Agathion Capricorn (Earth Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_capr_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54006" level="12"/><!--High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54006" level="13"/><!--+1 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54006" level="14"/><!--+2 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54006" level="15"/><!--+3 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54006" level="16"/><!--+4 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54006" level="17"/><!--+5 High-grade Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54006" level="18"/><!--+6 High-grade Agathion Capricorn-->
+					<skill id="51355" level="1"/><!--Earth Dragon's Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54006" level="19"/><!--+7 High-grade Agathion Capricorn-->
+					<skill id="51355" level="2"/><!--Earth Dragon's Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54006" level="20"/><!--+8 High-grade Agathion Capricorn-->
+					<skill id="51355" level="3"/><!--Earth Dragon's Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54006" level="21"/><!--+9 High-grade Agathion Capricorn-->
+					<skill id="51355" level="4"/><!--Earth Dragon's Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54006" level="22"/><!--+10 High-grade Agathion Capricorn-->
+					<skill id="51355" level="5"/><!--Earth Dragon's Power: Capricorn-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91616" name="High-grade Agathion Libra (Earth Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_lib_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54007" level="12"/><!--High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54007" level="13"/><!--+1 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54007" level="14"/><!--+2 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54007" level="15"/><!--+3 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54007" level="16"/><!--+4 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54007" level="17"/><!--+5 High-grade Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54007" level="18"/><!--+6 High-grade Agathion Libra-->
+					<skill id="51356" level="1"/><!--Earth Dragon's Power: Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54007" level="19"/><!--+7 High-grade Agathion Libra-->
+					<skill id="51356" level="2"/><!--Earth Dragon's Power: Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54007" level="20"/><!--+8 High-grade Agathion Libra-->
+					<skill id="51356" level="3"/><!--Earth Dragon's Power: Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54007" level="21"/><!--+9 High-grade Agathion Libra-->
+					<skill id="51356" level="4"/><!--Earth Dragon's Power: Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54007" level="22"/><!--+10 High-grade Agathion Libra-->
+					<skill id="51356" level="5"/><!--Earth Dragon's Power: Libra-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91617" name="High-grade Agathion Taurus (Earth Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_tau_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54000" level="12"/><!--High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54000" level="13"/><!--+1 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54000" level="14"/><!--+2 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54000" level="15"/><!--+3 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54000" level="16"/><!--+4 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54000" level="17"/><!--+5 High-grade Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54000" level="18"/><!--+6 High-grade Agathion Taurus-->
+					<skill id="51357" level="1"/><!--Earth Dragon's Power: Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54000" level="19"/><!--+7 High-grade Agathion Taurus-->
+					<skill id="51357" level="2"/><!--Earth Dragon's Power: Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54000" level="20"/><!--+8 High-grade Agathion Taurus-->
+					<skill id="51357" level="3"/><!--Earth Dragon's Power: Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54000" level="21"/><!--+9 High-grade Agathion Taurus-->
+					<skill id="51357" level="4"/><!--Earth Dragon's Power: Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54000" level="22"/><!--+10 High-grade Agathion Taurus-->
+					<skill id="51357" level="5"/><!--Earth Dragon's Power: Taurus-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91618" name="High-grade Agathion Leo (Earth Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_leo_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54001" level="12"/><!--High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54001" level="13"/><!--+1 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54001" level="14"/><!--+2 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54001" level="15"/><!--+3 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54001" level="16"/><!--+4 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54001" level="17"/><!--+5 High-grade Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54001" level="18"/><!--+6 High-grade Agathion Leo-->
+					<skill id="51358" level="1"/><!--Earth Dragon's Power: Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54001" level="19"/><!--+7 High-grade Agathion Leo-->
+					<skill id="51358" level="2"/><!--Earth Dragon's Power: Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54001" level="20"/><!--+8 High-grade Agathion Leo-->
+					<skill id="51358" level="3"/><!--Earth Dragon's Power: Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54001" level="21"/><!--+9 High-grade Agathion Leo-->
+					<skill id="51358" level="4"/><!--Earth Dragon's Power: Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54001" level="22"/><!--+10 High-grade Agathion Leo-->
+					<skill id="51358" level="5"/><!--Earth Dragon's Power: Leo-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91619" name="High-grade Agathion Scorpio (Earth Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_sco_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54002" level="12"/><!--High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54002" level="13"/><!--+1 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54002" level="14"/><!--+2 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54002" level="15"/><!--+3 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54002" level="16"/><!--+4 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54002" level="17"/><!--+5 High-grade Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54002" level="18"/><!--+6 High-grade Agathion Scorpio-->
+					<skill id="51359" level="1"/><!--Earth Dragon's Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54002" level="19"/><!--+7 High-grade Agathion Scorpio-->
+					<skill id="51359" level="2"/><!--Earth Dragon's Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54002" level="20"/><!--+8 High-grade Agathion Scorpio-->
+					<skill id="51359" level="3"/><!--Earth Dragon's Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54002" level="21"/><!--+9 High-grade Agathion Scorpio-->
+					<skill id="51359" level="4"/><!--Earth Dragon's Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54002" level="22"/><!--+10 High-grade Agathion Scorpio-->
+					<skill id="51359" level="5"/><!--Earth Dragon's Power: Scorpio-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91620" name="High-grade Agathion Aquarius (Earth Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_aqu_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54005" level="12"/><!--High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54005" level="13"/><!--+1 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54005" level="14"/><!--+2 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54005" level="15"/><!--+3 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54005" level="16"/><!--+4 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54005" level="17"/><!--+5 High-grade Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54005" level="18"/><!--+6 High-grade Agathion Aquarius-->
+					<skill id="51360" level="1"/><!--Earth Dragon's Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54005" level="19"/><!--+7 High-grade Agathion Aquarius-->
+					<skill id="51360" level="2"/><!--Earth Dragon's Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54005" level="20"/><!--+8 High-grade Agathion Aquarius-->
+					<skill id="51360" level="3"/><!--Earth Dragon's Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54005" level="21"/><!--+9 High-grade Agathion Aquarius-->
+					<skill id="51360" level="4"/><!--Earth Dragon's Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54005" level="22"/><!--+10 High-grade Agathion Aquarius-->
+					<skill id="51360" level="5"/><!--Earth Dragon's Power: Aquarius-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91621" name="High-grade Agathion Sagittarius (Earth Dragon)">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_sag_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54003" level="12"/><!--High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54003" level="13"/><!--+1 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54003" level="14"/><!--+2 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54003" level="15"/><!--+3 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54003" level="16"/><!--+4 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54003" level="17"/><!--+5 High-grade Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54003" level="18"/><!--+6 High-grade Agathion Sagittarius-->
+					<skill id="51361" level="1"/><!--Earth Dragon's Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54003" level="19"/><!--+7 High-grade Agathion Sagittarius-->
+					<skill id="51361" level="2"/><!--Earth Dragon's Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54003" level="20"/><!--+8 High-grade Agathion Sagittarius-->
+					<skill id="51361" level="3"/><!--Earth Dragon's Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54003" level="21"/><!--+9 High-grade Agathion Sagittarius-->
+					<skill id="51361" level="4"/><!--Earth Dragon's Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54003" level="22"/><!--+10 High-grade Agathion Sagittarius-->
+					<skill id="51361" level="5"/><!--Earth Dragon's Power: Sagittarius-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91622" name="High-grade Agathion Gemini">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_gem_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54008" level="12"/><!--High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54008" level="13"/><!--+1 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54008" level="14"/><!--+2 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54008" level="15"/><!--+3 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54008" level="16"/><!--+4 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54008" level="17"/><!--+5 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54008" level="18"/><!--+6 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54008" level="19"/><!--+7 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54008" level="20"/><!--+8 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54008" level="21"/><!--+9 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54008" level="22"/><!--+10 High-grade Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<etcitem id="91623" name="Stable Scroll: Enchant High-grade Agathion">
+		<set name="icon" value="icon.guard_giantscrl_of_ench_ag"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91624" name="Agathion Gift Box">
+		<set name="icon" value="icon.bm_gold_relic_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91625" name="S-grade Weapon Pack">
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="6364" count="1" chance="0.01"/><!--Forgotten Blade--><!--TODO: Check chance-->
+			<create_item id="6365" count="1" chance="0.01"/><!--Basalt Battlehammer--><!--TODO: Check chance-->
+			<create_item id="6366" count="1" chance="0.01"/><!--Imperial Staff--><!--TODO: Check chance-->
+			<create_item id="6367" count="1" chance="0.01"/><!--Angel Slayer--><!--TODO: Check chance-->
+			<create_item id="6369" count="1" chance="0.01"/><!--Dragon Hunter Axe--><!--TODO: Check chance-->
+			<create_item id="6370" count="1" chance="0.01"/><!--Saint Spear--><!--TODO: Check chance-->
+			<create_item id="6371" count="1" chance="0.01"/><!--Demon Splinter--><!--TODO: Check chance-->
+			<create_item id="6372" count="1" chance="0.01"/><!--Heaven's Divider--><!--TODO: Check chance-->
+			<create_item id="6579" count="1" chance="0.01"/><!--Arcana Mace--><!--TODO: Check chance-->
+			<create_item id="6580" count="1" chance="0.01"/><!--Tallum Blade*Dark Legion's Edge--><!--TODO: Check chance-->
+			<create_item id="7575" count="1" chance="0.01"/><!--Draconic Bow--><!--TODO: Check chance-->
+			<create_item id="91905" count="1" chance="0.01"/><!--Laevateinn--><!--TODO: Check chance-->
+			<create_item id="91890" count="1" chance="0.01"/><!--Gram--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="91626" name="S-grade Armor Pack">
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="6674" count="1" chance="0.01"/><!--Sealed Imperial Crusader Breastplate--><!--TODO: Check chance-->
+			<create_item id="6675" count="1" chance="0.01"/><!--Sealed Imperial Crusader Gaiters--><!--TODO: Check chance-->
+			<create_item id="6676" count="1" chance="0.01"/><!--Sealed Imperial Crusader Gauntlets--><!--TODO: Check chance-->
+			<create_item id="6677" count="1" chance="0.01"/><!--Sealed Imperial Crusader Boots--><!--TODO: Check chance-->
+			<create_item id="6678" count="1" chance="0.01"/><!--Sealed Imperial Crusader Shield--><!--TODO: Check chance-->
+			<create_item id="6679" count="1" chance="0.01"/><!--Sealed Imperial Crusader Helmet--><!--TODO: Check chance-->
+			<create_item id="6680" count="1" chance="0.01"/><!--Sealed Draconic Leather Armor--><!--TODO: Check chance-->
+			<create_item id="6681" count="1" chance="0.01"/><!--Sealed Draconic Leather Gloves--><!--TODO: Check chance-->
+			<create_item id="6682" count="1" chance="0.01"/><!--Sealed Draconic Leather Boots--><!--TODO: Check chance-->
+			<create_item id="6683" count="1" chance="0.01"/><!--Sealed Draconic Leather Helmet--><!--TODO: Check chance-->
+			<create_item id="6684" count="1" chance="0.01"/><!--Sealed Major Arcana Robe--><!--TODO: Check chance-->
+			<create_item id="6685" count="1" chance="0.01"/><!--Sealed Major Arcana Gloves--><!--TODO: Check chance-->
+			<create_item id="6686" count="1" chance="0.01"/><!--Sealed Major Arcana Boots--><!--TODO: Check chance-->
+			<create_item id="6687" count="1" chance="0.01"/><!--Sealed Major Arcana Circlet--><!--TODO: Check chance-->
+			<create_item id="6724" count="1" chance="0.01"/><!--Sealed Tateossian Earring--><!--TODO: Check chance-->
+			<create_item id="6725" count="1" chance="0.01"/><!--Sealed Tateossian Ring--><!--TODO: Check chance-->
+			<create_item id="6726" count="1" chance="0.01"/><!--Sealed Tateossian Necklace--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="91627" name="+10 A-grade Armor Pack">
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91628" name="+10 B-grade Armor Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91629" name="+10 A-grade Accessory Pack">
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91630" name="+10 B-grade Accessory Pack">
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91631" name="Crafting Supplies Coupon">
+		<set name="icon" value="icon.etc_exchange_ticket_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91632" name="Fire Dragon's Soulstone">
+		<set name="icon" value="icon.r99_soul_stone_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91633" name="Earth Dragon's Soulstone">
+		<set name="icon" value="icon.r99_soul_stone_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91634" name="Agathion's Soulstone">
+		<set name="icon" value="icon.r99_soul_stone_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91635" name="Master Fisherman's Treasure Chest">
+		<set name="icon" value="icon.etc_treasure_box_i08"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="38154" count="50" chance="0.01"/><!--Fishing Shot--><!--TODO: Check chance-->
+			<create_item id="38154" count="100" chance="0.01"/><!--Fishing Shot--><!--TODO: Check chance-->
+			<create_item id="90907" count="1" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="90181" count="1" chance="0.01"/><!--Shiny Coin--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="91636" name="Goldberg's Room Key">
+		<set name="icon" value="icon.etc_old_key_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="91637" name="Anniversary Talisman" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.ev_L2_soul_ore"/>
+		<set name="type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<etcitem id="91638" name="Chronicle Cube" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.ev_15th_cube"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91639" name="Rare Accessory Pack Lv. 3" add_name="30-day">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<armor id="91640" name="Refined Romantic Chapeau: Gold" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_romantic_chaperon_gold"/>
+		<set name="type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<etcitem id="91641" name="Sayha's Blessing" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_wind_potion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="type" value="POTION"/>
+		<cond>
+			<and>
+				<player maximum_sayhas_grace="3465000" />
+				<player maximum_magic_lamp_points="2999900000" />
+				<player maximum_random_craft_points="98993500" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="50149" level="3"/>	<!-- Sayha's Blessing -->
+		</skills>
+	</etcitem>
+	<etcitem id="91642" name="Anniversary Gift Box" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.event_six_party_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91643" name="Chronicle Pack" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.new_user_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90794" count="2" chance="0.01"/><!--Shining Scroll of Mood Melody--><!--TODO: Check chance-->
+			<create_item id="49674" count="1" chance="0.01"/><!--XP Growth Scroll--><!--TODO: Check chance-->
+			<create_item id="90793" count="1" chance="0.01"/><!--Chef's Fish Stew Box--><!--TODO: Check chance-->
+			<create_item id="90835" count="1" chance="0.01"/><!--Life Control Tower's Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="90831" count="1" chance="0.01"/><!--Transformation Scroll: White Assassin--><!--TODO: Check chance-->
+			<create_item id="91639" count="1" chance="0.01"/><!--Rare Accessory Pack Lv. 3--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="91644" name="Chronicle Cube Gift" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i11"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="46254" min_count="1" max_count="1" chance="100"/><!--Dandy's Home Run Ball-->
+			<capsuled_item id="91643" min_count="1" max_count="1" chance="100"/><!--Chronicle Pack-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="91645" name="Wondrous Anniversary Fork" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.ev_15th_foke"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91646" name="Scroll of Escape: Unbearable Wolves' Howling" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<skills>
+			<skill id="51381" level="1" />	<!-- Scroll of Escape: Unbearable Wolves' Howling -->
+		</skills>
+	</etcitem>
+	<etcitem id="91647" name="Scroll of Escape: Troubled Forest" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<skills>
+			<skill id="51382" level="1" />	<!-- Scroll of Escape: Troubled Forest -->
+		</skills>
+	</etcitem>
+	<etcitem id="91648" name="Scroll of Escape: Cleaning-up the Grounds" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<skills>
+			<skill id="51383" level="1" />	<!-- Scroll of Escape: Cleaning-up the Grounds -->
+		</skills>
+	</etcitem>
+	<etcitem id="91649" name="Scroll of Escape: Plundered Graves" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<skills>
+			<skill id="51384" level="1" />	<!-- Scroll of Escape: Plundered Graves -->
+		</skills>
+	</etcitem>
+	<etcitem id="91650" name="Scroll of Escape: Dangerous Predators" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<skills>
+			<skill id="51385" level="1" />	<!-- Scroll of Escape: Dangerous Predators -->
+		</skills>
+	</etcitem>
+	<etcitem id="91651" name="Scroll of Escape: Captain Bathis" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<skills>
+			<skill id="50153" level="1" />	<!-- Scroll of Escape: Captain Bathis -->
+		</skills>
+	</etcitem>
+	<etcitem id="91652" name="Giant Cobweb">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_cobweb_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91653" name="Tarantula's Venom Sac">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_poison_pouch_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91654" name="Adventurer's Mark Lv. 1" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_crest_blue_i00"/>
+		<set name="weight" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="type" value="RUNE"/>
+		<set name="handler" value="AdventurerMarks"/>
+		<skills>
+			<skill id="51387" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91655" name="Adventurer's Mark Lv. 2" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_crest_blue_i00"/>
+		<set name="weight" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="type" value="RUNE"/>
+		<set name="handler" value="AdventurerMarks"/>
+		<skills>
+			<skill id="51387" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91656" name="Adventurer's Mark Lv. 3" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_crest_blue_i00"/>
+		<set name="weight" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="type" value="RUNE"/>
+		<set name="handler" value="AdventurerMarks"/>
+		<skills>
+			<skill id="51387" level="3"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91657" name="Adventurer's Mark Lv. 4" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_crest_blue_i00"/>
+		<set name="weight" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="type" value="RUNE"/>
+		<set name="handler" value="AdventurerMarks"/>
+		<skills>
+			<skill id="51387" level="4"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91658" name="Chicken Box" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.ev_chicken_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91659" name="Yummy Chicken">
+		<set name="icon" value="icon.ev_chicken_ticket_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+		<set name="dropable" value="false"/>
+	</etcitem>
+	<etcitem id="91660" name="Shining Scroll of Mood Melody (1-hour)">
+		<set name="icon" value="icon.bm_magmeld"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+	</etcitem>
+	<etcitem id="91661" name="Shining Scroll of Mood Melody (4-hour)">
+		<set name="icon" value="icon.bm_magmeld"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+	</etcitem>
+	<etcitem id="91662" name="Shining Scroll of Mood Melody (8-hour)">
+		<set name="icon" value="icon.bm_magmeld"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+	</etcitem>
+	<etcitem id="91663" name="L-Coin">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_lcoin_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91664" name="Scroll: 10,000 SP" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_sp_scroll2_i00"/>
+		<set name="type" value="SCROLL"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<skills>
+			<skill id="51396" level="1"/>	<!-- Scroll: 10,000 SP -->
+		</skills>
+	</etcitem>
+	<etcitem id="91665" name="Scroll: 100,000 SP" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_sp_scroll3_i00"/>
+		<set name="type" value="SCROLL"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<skills>
+			<skill id="51397" level="1"/>	<!-- Scroll: 100,000 SP -->
+		</skills>
+	</etcitem>
+	<etcitem id="91666" name="Sayha's Storm Lv. 1" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sayha_storm"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="handler" value="SkillsReduce"/>
+		<cond>
+			<player minimum_sayhas_grace="35000"/>
+		</cond>
+		<skills>
+			<skill id="51398" level="1"/> <!-- Sayha's Storm Lv. 1 - Event -->
+		</skills>
+	</etcitem>
+	<armor id="91667" name="+7 White Sayha's Cloak" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.sayha2017_back_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+	</armor>
+	<etcitem id="91668" name="Red Lantern (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.r99_soul_stone_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="40099" level="1"/>	<!-- Red Lantern - 1st place -->
+		</skills>
+	</etcitem>
+	<etcitem id="91669" name="Purple Lantern (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.r99_soul_stone_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="40100" level="1"/>	<!-- Purple Lantern - 2nd place -->
+		</skills>
+	</etcitem>
+	<etcitem id="91670" name="Blue Lantern (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.r99_soul_stone_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="40101" level="1"/>	<!-- Blue Lantern - 3rd place -->
+		</skills>
+	</etcitem>
+	<etcitem id="91671" name="Green Lantern (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.r99_soul_stone_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="40102" level="1"/>	<!-- Green Lantern - 4th place -->
+		</skills>
+	</etcitem>
+	<etcitem id="91672" name="Adena Fortune Box" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_nebit_present"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<weapon id="91673" name="Reinforced Spear" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_long_spear_i00"/>
+		<set name="type" value="POLE"/>
+		<set name="weight" value="2120"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="91674" name="Reinforced Falchion" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_falchion_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="91675" name="Reinforced Iron Hammer" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_iron_hammer_i00"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1850"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="91676" name="Reinforced Voodoo Doll" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_voodoo_doll_i00"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="630"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="25"/>
+			<add stat="mAtk" order="0x10" value="28"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="91677" name="Reinforced Flanged Mace" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_buzdygan_i00"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1800"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="91678" name="Reinforced Sword Breaker" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_sword_breaker_i00"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="1110"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="27"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="91679" name="Reinforced Viper Fang" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_vipers_canine_i00"/>
+		<set name="type" value="DUALFIST"/>
+		<set name="weight" value="1560"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="38"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="91680" name="Reinforced Compound Bow" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_composition_bow_i00"/>
+		<set name="type" value="BOW"/>
+		<set name="weight" value="1880"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="mp_consume" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="64"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<etcitem id="91681" name="Spear Amulet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91682" name="Falchion Amulet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91683" name="Iron Hammer Amulet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91684" name="Voodoo Doll Amulet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91685" name="Flanged Mace Amulet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91686" name="Sword Breaker Amulet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91687" name="Viper Fang Amulet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91688" name="Compound Bow Amulet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_bloody_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91689" name="Blessed Scroll of Escape" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="grind_commission" value="4"/>
+		<set name="grind_point" value="200"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="price" value="15000"/>
+		<set name="weight" value="120"/>
+		<skills>
+			<skill id="2013" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91690" name="Special HP Recovery Potion" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="autouse_type" value="HEAL"/>
+		<set name="icon" value="BranchSys.icon.br_vitality_potion_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="51161" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91691" name="Maliss' MP Replenishing Potion" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.freya_potion"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="91692" name="Blessing of Plenty - 100%" add_name="3-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.aden_bless_rune_i01"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="4320"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91693" name="Blessing of Plenty - 100%" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.aden_bless_rune_i02"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91694" name="Blessing of Plenty - 100%" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.aden_bless_rune_i02"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91695" name="Mark of Aden's Braveheart">
+		<set name="icon" value="icon.bm_royal_gold_ticket_all"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1000000"/>
+		<set name="dropable" value="false"/>
+	</etcitem>
+	<etcitem id="91696" name="Growth Treasure Chest">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.bm_gold_lure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+	</etcitem>
+	<etcitem id="91697" name="Package: +7 Samurai Long Sword">
+		<set name="icon" value="icon.weapon_samurai_old_longsword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="135" min_count="1" max_count="1" chance="100" enchant="7"/><!--Samurai Long Sword-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="91698" name="Package: +7 Demon's Staff">
+		<set name="icon" value="icon.weapon_demons_staff_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="206" min_count="1" max_count="1" chance="100" enchant="7"/><!--Demon's Staff-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="91699" name="Package: +7 Mace of Underworld">
+		<set name="icon" value="icon.weapon_mace_of_underworld_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="202" min_count="1" max_count="1" enchant="7" chance="100" /> <!-- +7 Mace of Underworld -->
+		</capsuled_items>
+	</etcitem>
+</list>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<territory name="gludio_t19_23_0005">
+		<add x="-21768" y="163996" zmin="-3284" zmax="-2284"/>
+		<add x="-16244" y="163928" zmin="-3284" zmax="-2284"/>
+		<add x="-17944" y="166108" zmin="-3284" zmax="-2284"/>
+		<add x="-20232" y="165688" zmin="-3284" zmax="-2284"/>
+	</territory>
+	<territory name="gludio_t19_23_0004">
+		<add x="-20176" y="168484" zmin="-3548" zmax="-2748"/>
+		<add x="-18048" y="168908" zmin="-3548" zmax="-2748"/>
+		<add x="-17504" y="169468" zmin="-3548" zmax="-2748"/>
+		<add x="-17820" y="171296" zmin="-3548" zmax="-2748"/>
+		<add x="-19032" y="172704" zmin="-3548" zmax="-2748"/>
+		<add x="-21200" y="172152" zmin="-3548" zmax="-2748"/>
+		<add x="-22024" y="169452" zmin="-3548" zmax="-2748"/>
+	</territory>
+	<spawn name="gludio_t19_23_0004" count="3" respawn="35">
+		<territory name="gludio_t19_23_0004"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0003">
+		<add x="-22456" y="167356" zmin="-3236" zmax="-2836"/>
+		<add x="-21468" y="167168" zmin="-3236" zmax="-2836"/>
+		<add x="-20600" y="168036" zmin="-3236" zmax="-2836"/>
+		<add x="-22324" y="169628" zmin="-3236" zmax="-2836"/>
+	</territory>
+	<spawn name="gludio_t19_23_0003" count="1" respawn="35">
+		<territory name="gludio_t19_23_0003"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0002">
+		<add x="-25108" y="165576" zmin="-3344" zmax="-2844"/>
+		<add x="-23072" y="167256" zmin="-3344" zmax="-2844"/>
+		<add x="-24752" y="168768" zmin="-3344" zmax="-2844"/>
+		<add x="-25920" y="168440" zmin="-3344" zmax="-2844"/>
+		<add x="-27432" y="167076" zmin="-3344" zmax="-2844"/>
+	</territory>
+	<spawn name="gludio_t19_23_0002" count="1" respawn="35">
+		<territory name="gludio_t19_23_0002"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0009">
+		<add x="-10568" y="165172" zmin="-3264" zmax="-2064"/>
+		<add x="-10012" y="165040" zmin="-3264" zmax="-2064"/>
+		<add x="-7592" y="167704" zmin="-3264" zmax="-2064"/>
+		<add x="-9472" y="168532" zmin="-3264" zmax="-2064"/>
+	</territory>
+	<spawn name="gludio_t19_23_0009" count="1" respawn="35">
+		<territory name="gludio_t19_23_0009"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0006">
+		<add x="-16136" y="163964" zmin="-2816" zmax="-1966"/>
+		<add x="-12576" y="163944" zmin="-2816" zmax="-1966"/>
+		<add x="-13668" y="166824" zmin="-2816" zmax="-1966"/>
+		<add x="-16712" y="166920" zmin="-2816" zmax="-1966"/>
+		<add x="-17852" y="166080" zmin="-2816" zmax="-1966"/>
+	</territory>
+	<territory name="gludio_t19_23_0001">
+		<add x="-32528" y="163992" zmin="-3428" zmax="-2728"/>
+		<add x="-26020" y="163996" zmin="-3428" zmax="-2728"/>
+		<add x="-25104" y="165448" zmin="-3428" zmax="-2728"/>
+		<add x="-27572" y="167024" zmin="-3428" zmax="-2728"/>
+		<add x="-32456" y="166300" zmin="-3428" zmax="-2728"/>
+	</territory>
+	<spawn name="gludio_t19_23_0001" count="4" respawn="35">
+		<territory name="gludio_t19_23_0001"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0016">
+		<add x="-3664" y="184444" zmin="-3784" zmax="-2684"/>
+		<add x="-272" y="185328" zmin="-3784" zmax="-2684"/>
+		<add x="-312" y="191048" zmin="-3784" zmax="-2684"/>
+		<add x="-3320" y="190952" zmin="-3784" zmax="-2684"/>
+		<add x="-4680" y="187328" zmin="-3784" zmax="-2684"/>
+	</territory>
+	<spawn name="gludio_t19_23_0016" count="3" respawn="35">
+		<territory name="gludio_t19_23_0016"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0015">
+		<add x="-3916" y="180236" zmin="-3872" zmax="-2872"/>
+		<add x="-352" y="180716" zmin="-3872" zmax="-2872"/>
+		<add x="-316" y="185172" zmin="-3872" zmax="-2872"/>
+		<add x="-3524" y="184420" zmin="-3872" zmax="-2872"/>
+	</territory>
+	<spawn name="gludio_t19_23_0015" count="3" respawn="35">
+		<territory name="gludio_t19_23_0015"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0014">
+		<add x="-5436" y="172772" zmin="-3824" zmax="-2574"/>
+		<add x="-276" y="174128" zmin="-3824" zmax="-2574"/>
+		<add x="-464" y="180636" zmin="-3824" zmax="-2574"/>
+		<add x="-5660" y="180000" zmin="-3824" zmax="-2574"/>
+		<add x="-7052" y="179068" zmin="-3824" zmax="-2574"/>
+		<add x="-7132" y="177236" zmin="-3824" zmax="-2574"/>
+		<add x="-6552" y="174456" zmin="-3824" zmax="-2574"/>
+	</territory>
+	<spawn name="gludio_t19_23_0014" count="5" respawn="35">
+		<territory name="gludio_t19_23_0014"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0013">
+		<add x="-4820" y="167236" zmin="-3608" zmax="-2408"/>
+		<add x="-324" y="167312" zmin="-3608" zmax="-2408"/>
+		<add x="-300" y="174072" zmin="-3608" zmax="-2408"/>
+		<add x="-5128" y="172788" zmin="-3608" zmax="-2408"/>
+	</territory>
+	<territory name="gludio_t19_23_0017">
+		<add x="-3356" y="191048" zmin="-3804" zmax="-2804"/>
+		<add x="-348" y="191208" zmin="-3804" zmax="-2804"/>
+		<add x="-376" y="195376" zmin="-3804" zmax="-2804"/>
+		<add x="-1280" y="196184" zmin="-3804" zmax="-2804"/>
+		<add x="-3416" y="196312" zmin="-3804" zmax="-2804"/>
+	</territory>
+	<spawn name="gludio_t19_23_0017" count="4" respawn="35">
+		<territory name="gludio_t19_23_0017"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_0012">
+		<add x="-7692" y="164028" zmin="-3556" zmax="-2156"/>
+		<add x="-468" y="164116" zmin="-3556" zmax="-2156"/>
+		<add x="-540" y="167224" zmin="-3556" zmax="-2156"/>
+		<add x="-5080" y="167180" zmin="-3556" zmax="-2156"/>
+		<add x="-7240" y="165200" zmin="-3556" zmax="-2156"/>
+	</territory>
+	<territory name="gludio_t19_23_0010">
+		<add x="-11192" y="172444" zmin="-3432" zmax="-2432"/>
+		<add x="-11360" y="169244" zmin="-3432" zmax="-2432"/>
+		<add x="-7660" y="167852" zmin="-3432" zmax="-2432"/>
+		<add x="-7480" y="169100" zmin="-3432" zmax="-2432"/>
+		<add x="-7852" y="172452" zmin="-3432" zmax="-2432"/>
+	</territory>
+	<spawn name="gludio_t19_23_0010" count="3" respawn="35">
+		<territory name="gludio_t19_23_0010"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<spawn name="gludio_t19_23_017_02" count="2" respawn="35">
+		<territory>
+			<add x="-17724" y="165268" zmin="-2912" zmax="-2312"/>
+			<add x="-15640" y="164384" zmin="-2912" zmax="-2312"/>
+			<add x="-14832" y="165564" zmin="-2912" zmax="-2312"/>
+			<add x="-16716" y="166284" zmin="-2912" zmax="-2312"/>
+		</territory>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<spawn name="dg_19_23_031" count="1" respawn="180" respawn_random="120">
+		<point x="-19274" y="188705" z="-5541" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_031" count="1" respawn="180" respawn_random="120">
+		<point x="-19091" y="189066" z="-5541" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_031" count="1" respawn="180" respawn_random="120">
+		<point x="-18905" y="189368" z="-5541" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_039" count="1" respawn="180" respawn_random="120">
+		<point x="-23752" y="187430" z="-5424" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_039" count="1" respawn="180" respawn_random="120">
+		<point x="-24320" y="187195" z="-5424" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_039" count="1" respawn="180" respawn_random="120">
+		<point x="-24575" y="187135" z="-5424" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_039" count="1" respawn="180" respawn_random="120">
+		<point x="-24921" y="187143" z="-5424" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_037" count="1" respawn="180" respawn_random="120">
+		<point x="-24174" y="188861" z="-5456" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_037" count="1" respawn="180" respawn_random="120">
+		<point x="-23883" y="189610" z="-5456" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_037" count="1" respawn="180" respawn_random="120">
+		<point x="-24419" y="189259" z="-5456" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_006" count="1" respawn="180" respawn_random="120">
+		<point x="-25088" y="177120" z="-5328" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_006" count="1" respawn="180" respawn_random="120">
+		<point x="-25056" y="177516" z="-5328" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_006" count="1" respawn="180" respawn_random="120">
+		<point x="-24708" y="177516" z="-5328" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_006" count="1" respawn="180" respawn_random="120">
+		<point x="-24311" y="177402" z="-5328" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_053" count="1" respawn="180" respawn_random="120">
+		<point x="-18519" y="178232" z="-5398" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_054" count="1" respawn="180" respawn_random="120">
+		<point x="-15864" y="181531" z="-5398" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="dg_19_23_054" count="1" respawn="180" respawn_random="120">
+		<point x="-14918" y="182086" z="-5398" h="0"/>
+		<npc id="20082"/><!--Муравей Рекрут-->
+	</spawn>
+	<spawn name="NPC_t19_23_030917_01" count="1" respawn="60">
+		<point x="-671" y="179051" z="-3708" h="32768"/>
+		<npc id="30666"/><!--Сла-->
+	</spawn>
+	<spawn name="gludio_t19_23_027" count="2" respawn="35">
+		<territory>
+			<add x="-6548" y="168036" zmin="-3976" zmax="-3576"/>
+			<add x="-6148" y="167916" zmin="-3976" zmax="-3576"/>
+			<add x="-6300" y="170008" zmin="-3976" zmax="-3576"/>
+			<add x="-6660" y="170112" zmin="-3976" zmax="-3576"/>
+		</territory>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_026">
+		<add x="-7672" y="166712" zmin="-4056" zmax="-3656"/>
+		<add x="-7272" y="166580" zmin="-4056" zmax="-3656"/>
+		<add x="-6140" y="167472" zmin="-4056" zmax="-3656"/>
+		<add x="-6384" y="167936" zmin="-4056" zmax="-3656"/>
+	</territory>
+	<spawn name="gludio_t19_23_025" count="2" respawn="35">
+		<territory>
+			<add x="-17796" y="167456" zmin="-4044" zmax="-3444"/>
+			<add x="-16400" y="168424" zmin="-4044" zmax="-3444"/>
+			<add x="-16708" y="168952" zmin="-4044" zmax="-3444"/>
+			<add x="-17848" y="168032" zmin="-4044" zmax="-3444"/>
+		</territory>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_23_024">
+		<add x="-21512" y="165924" zmin="-4036" zmax="-3636"/>
+		<add x="-20124" y="166904" zmin="-4036" zmax="-3636"/>
+		<add x="-20568" y="167028" zmin="-4036" zmax="-3636"/>
+		<add x="-22072" y="166244" zmin="-4036" zmax="-3636"/>
+	</territory>
+	<territory name="gludio_t19_23_008">
+		<add x="-12904" y="164856" zmin="-3108" zmax="-2108"/>
+		<add x="-11076" y="165504" zmin="-3108" zmax="-2108"/>
+		<add x="-9620" y="168724" zmin="-3108" zmax="-2108"/>
+		<add x="-11420" y="169208" zmin="-3108" zmax="-2108"/>
+		<add x="-13644" y="166828" zmin="-3108" zmax="-2108"/>
+	</territory>
+	<spawn name="gludio_t19_23_008" count="2" respawn="35">
+		<territory name="gludio_t19_23_008"/>
+		<npc id="20066"/><!--Офицер Гноллов-->
+	</spawn>
+	<territory name="gludio_t19_22_007">
+		<add x="-12532" y="163960" zmin="-2756" zmax="-2156"/>
+		<add x="-10364" y="163884" zmin="-2756" zmax="-2156"/>
+		<add x="-10268" y="164732" zmin="-2756" zmax="-2156"/>
+		<add x="-12828" y="164676" zmin="-2756" zmax="-2156"/>
+	</territory>
+	<spawn name="gludio_t19_22_007" count="1" respawn="35">
+		<territory name="gludio_t19_22_007"/>
+		<npc id="20310"/><!--Бурый Медведь-->
+	</spawn>
+</list>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<territory name="gludio20_1720_03">
+		<add x="-84976" y="83589" zmin="-3628" zmax="-2928"/>
+		<add x="-81851" y="81857" zmin="-3628" zmax="-2928"/>
+		<add x="-81074" y="86217" zmin="-3628" zmax="-2928"/>
+		<add x="-83806" y="85813" zmin="-3628" zmax="-2928"/>
+	</territory>
+	<territory name="gludio20_1720_02">
+		<add x="-86565" y="80140" zmin="-3404" zmax="-2604"/>
+		<add x="-84055" y="80386" zmin="-3404" zmax="-2604"/>
+		<add x="-84969" y="83450" zmin="-3404" zmax="-2604"/>
+		<add x="-88451" y="82848" zmin="-3404" zmax="-2604"/>
+	</territory>
+	<territory name="gludio20_1720_01">
+		<add x="-85396" y="77059" zmin="-3468" zmax="-2768"/>
+		<add x="-82576" y="78607" zmin="-3468" zmax="-2768"/>
+		<add x="-83388" y="80324" zmin="-3468" zmax="-2768"/>
+		<add x="-86504" y="79992" zmin="-3468" zmax="-2768"/>
+	</territory>
+	<territory name="gludio20_1720_07">
+		<add x="-92087" y="87486" zmin="-3649" zmax="-2849"/>
+		<add x="-89632" y="87343" zmin="-3649" zmax="-2849"/>
+		<add x="-89042" y="91007" zmin="-3649" zmax="-2849"/>
+		<add x="-90577" y="92038" zmin="-3649" zmax="-2849"/>
+		<add x="-93832" y="90666" zmin="-3649" zmax="-2849"/>
+	</territory>
+	<territory name="gludio20_1720_06">
+		<add x="-89487" y="87115" zmin="-3649" zmax="-2849"/>
+		<add x="-84093" y="87998" zmin="-3649" zmax="-2849"/>
+		<add x="-85804" y="91641" zmin="-3649" zmax="-2849"/>
+		<add x="-88922" y="90976" zmin="-3649" zmax="-2849"/>
+	</territory>
+	<territory name="gludio20_1720_05">
+		<add x="-87819" y="83186" zmin="-3578" zmax="-2678"/>
+		<add x="-84760" y="84250" zmin="-3578" zmax="-2678"/>
+		<add x="-86230" y="87531" zmin="-3578" zmax="-2678"/>
+		<add x="-89355" y="87040" zmin="-3578" zmax="-2678"/>
+	</territory>
+	<territory name="gludio20_1720_04">
+		<add x="-83120" y="86429" zmin="-3807" zmax="-3107"/>
+		<add x="-80061" y="87494" zmin="-3807" zmax="-3107"/>
+		<add x="-81537" y="90996" zmin="-3807" zmax="-3107"/>
+		<add x="-84655" y="90284" zmin="-3807" zmax="-3107"/>
+	</territory>
+	<territory name="gludio20_1720_09">
+		<add x="-80102" y="88181" zmin="-3806" zmax="-3006"/>
+		<add x="-72603" y="93682" zmin="-3806" zmax="-3006"/>
+		<add x="-75304" y="96574" zmin="-3806" zmax="-3006"/>
+		<add x="-81886" y="92024" zmin="-3806" zmax="-3006"/>
+	</territory>
+	<territory name="gludio20_1720_08">
+		<add x="-93901" y="90791" zmin="-3664" zmax="-2864"/>
+		<add x="-90477" y="92238" zmin="-3664" zmax="-2864"/>
+		<add x="-90431" y="94766" zmin="-3664" zmax="-2864"/>
+		<add x="-95690" y="94435" zmin="-3664" zmax="-2864"/>
+	</territory>
+	<territory name="gludio20_1720_10">
+		<add x="-72256" y="93591" zmin="-3817" zmax="-3217"/>
+		<add x="-65929" y="97881" zmin="-3817" zmax="-3217"/>
+		<add x="-72692" y="97934" zmin="-3817" zmax="-3217"/>
+		<add x="-75142" y="96677" zmin="-3817" zmax="-3217"/>
+	</territory>
+	<territory name="oren25_1720_05">
+		<add x="-73697" y="77167" zmin="-3513" zmax="-2913"/>
+		<add x="-71857" y="79229" zmin="-3513" zmax="-2913"/>
+		<add x="-72692" y="85348" zmin="-3513" zmax="-2913"/>
+		<add x="-74863" y="85288" zmin="-3513" zmax="-2913"/>
+		<add x="-76517" y="80940" zmin="-3513" zmax="-2913"/>
+	</territory>
+	<territory name="oren25_1720_06">
+		<add x="-67433" y="78941" zmin="-3748" zmax="-3048"/>
+		<add x="-65769" y="78980" zmin="-3748" zmax="-3048"/>
+		<add x="-65913" y="89361" zmin="-3748" zmax="-3048"/>
+		<add x="-72360" y="85233" zmin="-3748" zmax="-3048"/>
+		<add x="-72167" y="83048" zmin="-3748" zmax="-3048"/>
+	</territory>
+	<territory name="oren25_1720_01">
+		<add x="-72971" y="71980" zmin="-3449" zmax="-2749"/>
+		<add x="-69433" y="72769" zmin="-3449" zmax="-2749"/>
+		<add x="-70125" y="76142" zmin="-3449" zmax="-2749"/>
+		<add x="-73499" y="77040" zmin="-3449" zmax="-2749"/>
+		<add x="-74798" y="73431" zmin="-3449" zmax="-2749"/>
+	</territory>
+	<territory name="oren25_1720_04">
+		<add x="-69594" y="76157" zmin="-3513" zmax="-2913"/>
+		<add x="-67479" y="78773" zmin="-3513" zmax="-2913"/>
+		<add x="-69026" y="80106" zmin="-3513" zmax="-2913"/>
+		<add x="-71771" y="79065" zmin="-3513" zmax="-2913"/>
+		<add x="-73314" y="77222" zmin="-3513" zmax="-2913"/>
+	</territory>
+	<territory name="gludio20_1720_11s">
+		<add x="-77642" y="90973" zmin="-3807" zmax="-3307"/>
+		<add x="-74177" y="93006" zmin="-3807" zmax="-3307"/>
+		<add x="-76129" y="95443" zmin="-3807" zmax="-3307"/>
+		<add x="-78664" y="93630" zmin="-3807" zmax="-3307"/>
+	</territory>
+</list>

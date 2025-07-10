@@ -1,0 +1,20 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="152" name="Team Match" maxChannels="40" collapseIfEmpty="1" timelimit="60" dispelBuffs="true">
+		<level min="1"/>
+		<party min="1" max="3"/>
+		<teleport loc="12792 183704 -3717 0"/>
+		<teleport loc="12312 183720 -3717 0"/>
+		<teleport loc="12552 183704 -3717 0"/>
+		<doors>
+			<door id="20230201"/>
+			<door id="20230202"/>
+		</doors>
+		<spawns>
+			<group name="olympiad_152_buffers" spawned="false"/>
+		</spawns>
+		<zones>
+			<zone name="[monster_battle_pvp]" active="true"/>
+		</zones>
+	</instance>
+</list>

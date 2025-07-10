@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<config no_tax="true"/>
+	<item>
+		<production id="71" count="1"/>	<!--Flamberge-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="7882" count="1"/>	<!--Pa'agrian Sword-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="72" count="1"/>	<!--Stormbringer-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="76" count="1"/>	<!--Sword of Delusion-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="161" count="1"/>	<!--Silver Axe-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="162" count="1"/>	<!--War Axe-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="192" count="1"/>	<!--Crystal Staff-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="200" count="1"/>	<!--Sage's Staff-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="226" count="1"/>	<!--Cursed Dagger-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="233" count="1"/>	<!--Dark Screamer-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="263" count="1"/>	<!--Chakram-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="265" count="1"/>	<!--Fisted Blade-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="281" count="1"/>	<!--Crystallized Ice Bow-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="283" count="1"/>	<!--Akat Longbow-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="298" count="1"/>	<!--Orcish Glaive-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="95" count="1"/>	<!--Poleaxe-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="91884" count="1"/>	<!--Schlager-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="91883" count="1"/>	<!--Immortal Edge-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="91899" count="1"/>	<!--Soldat Estoc-->
+		<ingredient id="1459" count="573"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="2865"/>	<!--Crystal (D-grade)-->
+	</item>
+	<item>
+		<production id="91897" count="1"/>	<!--Blinzlasher-->
+		<ingredient id="1459" count="1075"/>	<!--Crystal (C-grade)-->
+		<ingredient id="1458" count="5375"/>	<!--Crystal (D-grade)-->
+	</item>
+</list>

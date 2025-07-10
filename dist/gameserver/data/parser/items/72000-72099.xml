@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="72007" name="Dragon's Treasure Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_dragon_present"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<skills>
+			<skill id="39270" level="1" /> <!-- Dragon's Treasure Chest -->
+		</skills>
+	</etcitem>
+	<etcitem id="72015" name="Special Kit: Adena">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i09"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91641" min_count="200" max_count="200" chance="100"/><!--Sayha's Blessing-->
+			<capsuled_item id="91690" min_count="500" max_count="500" chance="100"/><!--Special HP Recovery Potion-->
+			<capsuled_item id="94269" min_count="200" max_count="200" chance="100"/><!--Scroll: Boost Attack-->
+			<capsuled_item id="91076" min_count="30" max_count="30" chance="100"/><!--Venir's Talisman Fragment-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72016" name="Giran Treasure Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92314" min_count="1" max_count="1" chance="50.0" /> <!-- Giran Seal - Sealed -->
+			<capsuled_item id="91641" min_count="3" max_count="3" chance="3.586" /> <!-- Sayha's Blessing - Sealed -->
+			<capsuled_item id="91690" min_count="5" max_count="5" chance="3.57" /> <!-- Special HP Recovery Potion - Sealed -->
+			<capsuled_item id="91712" min_count="5" max_count="5" chance="3.57" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
+			<capsuled_item id="91780" min_count="5" max_count="5" chance="3.57" /> <!-- Battle Scroll - Sealed -->
+			<capsuled_item id="93486" min_count="5" max_count="5" chance="3.57" /> <!-- Combat Scroll - Sealed -->
+			<capsuled_item id="92314" min_count="10" max_count="10" chance="3.57" /> <!-- Giran Seal - Sealed -->
+			<capsuled_item id="92314" min_count="5" max_count="5" chance="3.57" /> <!-- Giran Seal - Sealed -->
+			<capsuled_item id="92314" min_count="2" max_count="2" chance="3.57" /> <!-- Giran Seal - Sealed -->
+			<capsuled_item id="92314" min_count="1" max_count="1" chance="3.57" /> <!-- Giran Seal - Sealed -->
+			<capsuled_item id="90934" min_count="1" max_count="1" chance="3.0" /> <!-- Brooch Lv. 3 -->
+			<capsuled_item id="9591" min_count="1" max_count="1" chance="3.0" /> <!-- Talisman Bracelet Lv. 3 -->
+			<capsuled_item id="90890" min_count="1" max_count="1" chance="3.0" /> <!-- Agathion Bracelet Lv. 3 -->
+			<capsuled_item id="93304" min_count="1" max_count="1" chance="3.0" /> <!-- Package: Einhasad's Pendant Lv. 1 - Sealed -->
+			<capsuled_item id="91031" min_count="1" max_count="1" chance="1.0" /> <!-- Water Spirit Evolution Stone -->
+			<capsuled_item id="91032" min_count="1" max_count="1" chance="1.0" /> <!-- Fire Spirit Evolution Stone -->
+			<capsuled_item id="91033" min_count="1" max_count="1" chance="1.0" /> <!-- Wind Spirit Evolution Stone -->
+			<capsuled_item id="91034" min_count="1" max_count="1" chance="1.0" /> <!-- Earth Spirit Evolution Stone -->
+			<capsuled_item id="91076" min_count="1" max_count="1" chance="1.0" /> <!-- Venir's Talisman Fragment -->
+			<capsuled_item id="92401" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook: White Guardian -->
+			<capsuled_item id="93103" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook: Divine Beam -->
+			<capsuled_item id="93330" min_count="1" max_count="1" chance="0.1" /> <!-- Enchant Kit: Talisman of Authority - Sealed -->
+			<capsuled_item id="93387" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
+			<capsuled_item id="93930" min_count="1" max_count="1" chance="0.1" /> <!-- Special Armor Coupon - Sealed -->
+			<capsuled_item id="94156" min_count="1" max_count="1" chance="0.1" /> <!-- Package: Baium Doll Lv. 1 - Sealed -->
+			<capsuled_item id="94159" min_count="1" max_count="1" chance="0.1" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
+			<capsuled_item id="94162" min_count="1" max_count="1" chance="0.1" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
+			<capsuled_item id="93268" min_count="1" max_count="1" chance="0.01" /> <!-- Improved Scroll: Enchant A-grade Weapon - Sealed -->
+			<capsuled_item id="93269" min_count="1" max_count="1" chance="0.01" /> <!-- Improved Scroll: Enchant A-grade Armor - Sealed -->
+			<capsuled_item id="93926" min_count="1" max_count="1" chance="0.01" /> <!-- Enchant Package: Ring of Insolence -->
+			<capsuled_item id="93927" min_count="1" max_count="1" chance="0.01" /> <!-- Enchant Package: Dragon Valley's Earring -->
+			<capsuled_item id="6660" min_count="1" max_count="1" chance="0.001" /> <!-- Queen Ant's Ring -->
+			<capsuled_item id="6661" min_count="1" max_count="1" chance="0.001" /> <!-- Orfen's Earring -->
+			<capsuled_item id="6662" min_count="1" max_count="1" chance="0.001" /> <!-- Ring of Core -->
+			<capsuled_item id="91163" min_count="1" max_count="1" chance="0.001" /> <!-- Anakim's Soul Crystal Lv. 1 - Rare -->
+			<capsuled_item id="91173" min_count="1" max_count="1" chance="0.001" /> <!-- Lilith' Soul Crystal Lv. 1 - Rare -->
+			<capsuled_item id="92990" min_count="1" max_count="1" chance="0.001" /> <!-- Boss' Weapon Pack - Sealed -->
+			<capsuled_item id="93139" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Breastplate -->
+			<capsuled_item id="93140" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Gaiters -->
+			<capsuled_item id="93315" min_count="1" max_count="1" chance="0.001" /> <!-- Leather Armor of Lightning -->
+			<capsuled_item id="93316" min_count="1" max_count="1" chance="0.001" /> <!-- Leather Leggings of Lightning -->
+			<capsuled_item id="93733" min_count="1" max_count="1" chance="0.001" /> <!-- Flaming Tunic -->
+			<capsuled_item id="93734" min_count="1" max_count="1" chance="0.001" /> <!-- Flaming Stockings -->
+			<capsuled_item id="94083" min_count="1" max_count="1" chance="0.001" /> <!-- Helmet of Mana -->
+			<capsuled_item id="94085" min_count="1" max_count="1" chance="0.001" /> <!-- Boots of Evasion -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72018" name="Special Kit: Adena">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i09"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91076" min_count="30" max_count="30" chance="100" /> <!-- Venir's Talisman Fragment -->
+			<capsuled_item id="91641" min_count="200" max_count="200" chance="100" /> <!-- Sayha's Blessing - Sealed -->
+			<capsuled_item id="91690" min_count="500" max_count="500" chance="100" /> <!-- Special HP Recovery Potion - Sealed -->
+			<capsuled_item id="91712" min_count="50" max_count="50" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
+			<capsuled_item id="93704" min_count="7" max_count="7" chance="100" /> <!-- Alligator Island's Time Stone - Sealed -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72021" name="Package: Shield of Nightmare">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.shield_shield_of_nightmare_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="2498" min_count="1" max_count="1" chance="100"/><!--Shield of Nightmare-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72022" name="Package: Shield of Nightmare" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.shield_shield_of_nightmare_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92276" min_count="1" max_count="1" chance="100"/><!--Shield of Nightmare-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72023" name="Growth Supply Pack - Lv. 60">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_golden_spice_comp_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72024" name="Growth Supply Pack - Lv. 65">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_golden_spice_comp_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72025" name="Growth Supply Pack - Lv. 68">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_golden_spice_comp_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72026" name="Growth Supply Pack - Lv. 71">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_golden_spice_comp_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72027" name="Growth Supply Pack - Lv. 74">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_golden_spice_comp_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72028" name="Growth Supply Pack - Lv. 76">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_golden_spice_comp_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72029" name="Growth Supply Pack - Lv. 79">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_golden_spice_comp_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72040" name="Festival Gift Box">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchSys.br_gold_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="95660" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="93930" count="1" chance="0.01"/><!--Special Armor Coupon--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="93268" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93269" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93270" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93271" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94210" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94212" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Armor--><!--TODO: Check chance-->
+			<create_item id="95803" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94168" count="1" chance="0.01"/><!--Enchant Kit: Circlet of Hero--><!--TODO: Check chance-->
+			<create_item id="93304" count="1" chance="0.01"/><!--Package: Einhasad's Pendant Lv. 1--><!--TODO: Check chance-->
+			<create_item id="93330" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Authority--><!--TODO: Check chance-->
+			<create_item id="91864" count="1" chance="0.01"/><!--Dragon Belt Pack--><!--TODO: Check chance-->
+			<create_item id="91690" count="50" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+			<create_item id="94269" count="3" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="3" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="49674" count="5" chance="0.01"/><!--XP Growth Scroll--><!--TODO: Check chance-->
+			<create_item id="90835" count="3" chance="0.01"/><!--Life Control Tower's Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="91641" count="5" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="72041" name="Festival Coin">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.g_bm_premium_coin_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72042" name="Special Festival Spellbook Chest">
+		<set name="icon" value="icon.sayha2017_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="95356" count="1" chance="0.01"/><!--Spellbook: Extra Hit--><!--TODO: Check chance-->
+			<create_item id="93103" count="1" chance="0.01"/><!--Spellbook: Divine Beam--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="72043" name="Sparkling Accessory Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchSys3.icon.g_cash_fortuna_box_r"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="91690" count="100" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="72044" name="Boss' Accessory Fragment">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.icon_material_renewal_mineral"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="72067" name="Jewelry Box Lv. 5">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_main_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94518" min_count="1" max_count="1" chance="14.32" /> <!-- Amber Lv. 5 - Sealed -->
+			<capsuled_item id="94519" min_count="1" max_count="1" chance="14.28" /> <!-- Opal Lv. 5 - Sealed -->
+			<capsuled_item id="94520" min_count="1" max_count="1" chance="14.28" /> <!-- Coral Lv. 5 - Sealed -->
+			<capsuled_item id="94521" min_count="1" max_count="1" chance="14.28" /> <!-- Onyx Lv. 5 - Sealed -->
+			<capsuled_item id="94522" min_count="1" max_count="1" chance="14.28" /> <!-- Spinel Lv. 5 - Sealed -->
+			<capsuled_item id="94523" min_count="1" max_count="1" chance="14.28" /> <!-- Zircon Lv. 5 - Sealed -->
+			<capsuled_item id="94524" min_count="1" max_count="1" chance="14.28" /> <!-- Moonstone Lv. 5 - Sealed -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72073" name="Pack of Seals">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_main_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92314" min_count="1" max_count="1" chance="100"/><!--Giran Seal-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="93268" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93269" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93270" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93271" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94210" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94212" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Armor--><!--TODO: Check chance-->
+			<create_item id="94304" count="1" chance="0.01"/><!--Life Stone - Circlet--><!--TODO: Check chance-->
+			<create_item id="94168" count="1" chance="0.01"/><!--Enchant Kit: Circlet of Hero--><!--TODO: Check chance-->
+			<create_item id="93304" count="1" chance="0.01"/><!--Package: Einhasad's Pendant Lv. 1--><!--TODO: Check chance-->
+			<create_item id="93330" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Authority--><!--TODO: Check chance-->
+			<create_item id="94269" count="5" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="5" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91641" count="5" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="72074" name="Halloween Kit">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.event_halloween_king_pumpkini00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93848" min_count="50" max_count="50" chance="100"/><!--Sayha's Cookie (Time-limited)-->
+			<capsuled_item id="49674" min_count="10" max_count="10" chance="100"/><!--XP Growth Scroll-->
+			<capsuled_item id="94269" min_count="5" max_count="5" chance="100"/><!--Scroll: Boost Attack-->
+			<capsuled_item id="94271" min_count="5" max_count="5" chance="100"/><!--Scroll: Boost Defense-->
+			<capsuled_item id="90907" min_count="200" max_count="200" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72075" name="Special Box of Seals">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_ensoulbox_PvE"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94326" count="1" chance="0.01"/><!--Spellbook: Dance of Warrior--><!--TODO: Check chance-->
+			<create_item id="94327" count="1" chance="0.01"/><!--Spellbook: Dance of Fire--><!--TODO: Check chance-->
+			<create_item id="94324" count="1" chance="0.01"/><!--Spellbook: Song of Earth--><!--TODO: Check chance-->
+			<create_item id="94325" count="1" chance="0.01"/><!--Spellbook: Song of Hunter--><!--TODO: Check chance-->
+			<create_item id="93103" count="1" chance="0.01"/><!--Spellbook: Divine Beam--><!--TODO: Check chance-->
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="95803" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+			<create_item id="95783" count="1" chance="0.01"/><!--Aden's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+			<create_item id="93330" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Authority--><!--TODO: Check chance-->
+			<create_item id="91864" count="1" chance="0.01"/><!--Dragon Belt Pack--><!--TODO: Check chance-->
+			<create_item id="91690" count="50" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+			<create_item id="94269" count="2" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="2" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91712" count="5" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="91641" count="10" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="3" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="30" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="100" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="200" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="500" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="93739" count="1" chance="0.01"/><!--Package: Giran Seal (1000 pcs.)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="72078" name="Anniversary Gift Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ev_draco_gift_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91983" min_count="11" max_count="11" chance="100"/><!--Primeval Isle's Time Stone-->
+			<capsuled_item id="92400" min_count="11" max_count="11" chance="100"/><!--Forgotten Primeval Garden's Time Stone-->
+			<capsuled_item id="94380" min_count="20" max_count="20" chance="100"/><!--Scroll: Boost Attack (Time-limited)-->
+			<capsuled_item id="94381" min_count="20" max_count="20" chance="100"/><!--Scroll: Boost Defense (Time-limited)-->
+			<capsuled_item id="93998" min_count="1" max_count="1" chance="100"/><!--Anniversary Cake (Time-limited)-->
+			<capsuled_item id="93997" min_count="1" max_count="1" chance="100"/><!--Spellbook: Air Bike-->
+			<capsuled_item id="93421" min_count="1" max_count="1" chance="100"/><!--Valakas' Necklace-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72080" name="Pearly Joy Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchSys.icon.br_ghost_magicalbox_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="93268" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93269" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93270" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93271" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93274" count="10" chance="0.01"/><!--Sayha's Cookie--><!--TODO: Check chance-->
+			<create_item id="94271" count="2" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="94269" count="3" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="91690" count="10" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+			<create_item id="90907" count="10" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="3031" count="300" chance="0.01"/><!--Spirit Ore--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<armor id="72084" name="Devoted Hero's Circlet" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_barka_karm_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+		<skills>
+			<skill id="50390" level="5" />	<!-- +5 Circlet of Hero -->
+		</skills>
+	</armor>
+	<armor id="72085" name="Devoted Hero's Helmet" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="560"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50380" level="1" />	<!-- A-grade: Helmet of Mana -->
+			<skill id="50382" level="5" />	<!-- +5 Helmet of Mana -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="88"/>
+		</for>
+	</armor>
+	<armor id="72086" name="Devoted Hero's Gauntlets" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t96_g_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="540"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<skills>
+			<skill id="50428" level="1" />	<!-- A-grade: Stun Gauntlets -->
+			<skill id="50430" level="5" />	<!-- +5 Stun Gauntlets -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="65"/>
+		</for>
+	</armor>
+	<armor id="72087" name="Devoted Hero's Gloves" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t94_g_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="540"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<skills>
+			<skill id="50305" level="1" />	<!-- A-grade: Gloves of Silence -->
+			<skill id="50307" level="5" />	<!-- +5 Gloves of Silence -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="49"/>
+		</for>
+	</armor>
+	<armor id="72088" name="Devoted Hero's Boots" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t100_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<skills>
+			<skill id="50384" level="1" />	<!-- A-grade: Boots of Evasion -->
+			<skill id="50386" level="5" />	<!-- +5 Boots of Evasion -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="59"/>
+		</for>
+	</armor>
+	<armor id="72089" name="Devoted Hero's Pendant" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchIcon.Icon.bm_pendant_pve_white"/>
+		<set name="type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="PENDANT"/>
+		</equip>
+		<skills>
+			<skill id="50341" level="4" />	<!-- Einhasad's Pendant -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="66"/>
+		</for>
+	</armor>
+	<armor id="72090" name="Devoted Hero's Ring - Queen Ant" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_queen_ant_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="50444" level="3" />	<!-- Queen Ant's Ring -->
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="63"/>
+			<add stat="maxMp" order="0x60" value="21"/>
+		</for>
+	</armor>
+	<armor id="72091" name="Devoted Hero's Necklace - Frintezza" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_necklace_of_frintessa_i04"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<skills>
+			<skill id="50450" level="3" />	<!-- Frintezza's Necklace -->
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="109"/>
+			<add stat="maxMp" order="0x60" value="50"/>
+		</for>
+	</armor>
+	<armor id="72092" name="Devoted Hero's Earring - Zaken" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_earring_of_zaken_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<skills>
+			<skill id="50448" level="3" />	<!-- Zaken's Earring -->
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="109"/>
+			<add stat="maxMp" order="0x60" value="34"/>
+		</for>
+	</armor>
+	<armor id="72093" name="Devoted Hero's Ring - Baium" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_baium_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="50446" level="3" />	<!-- Baium's Ring -->
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="75"/>
+			<add stat="maxMp" order="0x60" value="27"/>
+		</for>
+	</armor>
+	<armor id="72094" name="Devoted Hero's Earring - Orfen" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_earring_of_orfen_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<skills>
+			<skill id="50447" level="3" />	<!-- Orfen's Earring -->
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="91"/>
+			<add stat="maxMp" order="0x60" value="31"/>
+		</for>
+	</armor>
+	<armor id="72095" name="Devoted Hero's Ring - Core" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_core_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="50445" level="3" />	<!-- Ring of Core -->
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="63"/>
+			<add stat="maxMp" order="0x60" value="21"/>
+		</for>
+	</armor>
+	<armor id="72096" name="Devoted Hero's Belt" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.dragon_belt_2"/>
+		<set name="type" value="LIGHT"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="BELT"/>
+		</equip>
+		<skills>
+			<skill id="50459" level="9" />	<!-- Blessed Dragon Belt -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="14"/>
+		</for>
+	</armor>
+	<weapon id="72097" name="Devoted Hero's Shield" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.shield_of_revenge"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1180"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="50437" level="5"/>	<!-- +5 Shield of Vengeance -->
+		</skills>
+		<for>
+			<add stat="sDef" order="0x10" value="282"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<armor id="72098" name="Devoted Hero's Sigil" add_name="1-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elos_i00"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1200"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="50433" level="5"/>	<!-- +5 Sigil of Inevitability -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="56"/>
+		</for>
+	</armor>
+	<etcitem id="72099" name="Devoted Hero's Doll - Queen Ant" add_name="1-day">
+		<!--<Queen Ant Doll's Sorcery Lv. 3>\nP. Atk. +12%\nP. Critical Damage +10%\nP. Skill Critical Damage +10%\nMax HP +15%.\n\nBoosts parameters when in inventory.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_queen_ant_doll_30d"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="RUNE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="1440" />
+		<set name="temporal" value="true"/>
+		<skills>
+			<skill id="39303" level="2"/>	<!-- Queen Ant Doll's Sorcery -->
+		</skills>
+	</etcitem>
+</list>

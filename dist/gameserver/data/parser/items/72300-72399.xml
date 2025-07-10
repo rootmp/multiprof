@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="72303" name="Hunt Pass - Additional Rewards">
+		<set name="icon" value="BranchIcon.icon.g_pass_hunting_premium_00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="72305" name="Sparkling Accessory Pack (Time-limited)" add_name="Sealed">
+		<set name="icon" value="BranchSys3.icon.g_cash_fortuna_box_r"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="91690" count="100" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="72314" name="Mark of Olympiad Master (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_ev_kalie_token"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+	</etcitem>
+	<etcitem id="72315" name="Olympiad Treasure Chest" add_name="Sealed">
+		<set name="icon" value="icon.etc_treasure_box_i11"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="72314" min_count="1" max_count="1" chance="100"/><!--Mark of Olympiad Master (Time-limited)-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="91767" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Aden--><!--TODO: Check chance-->
+			<create_item id="92020" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="93685" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Speed--><!--TODO: Check chance-->
+			<create_item id="92035" count="1" chance="0.01"/><!--Shiny Jewelry Box--><!--TODO: Check chance-->
+			<create_item id="94269" count="10" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="10" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="500" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="72316" name="Kit: Olympiad Survival (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94269" min_count="20" max_count="20" chance="100"/><!--Scroll: Boost Attack-->
+			<capsuled_item id="94271" min_count="20" max_count="20" chance="100"/><!--Scroll: Boost Defense-->
+			<capsuled_item id="94777" min_count="3" max_count="3" chance="100"/><!--Berserker's Scroll-->
+			<capsuled_item id="49674" min_count="10" max_count="10" chance="100"/><!--XP Growth Scroll-->
+			<capsuled_item id="91690" min_count="100" max_count="100" chance="100"/><!--Special HP Recovery Potion-->
+			<capsuled_item id="3031" min_count="500" max_count="500" chance="100"/><!--Spirit Ore-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72317" name="Kit: Pet Survival" add_name="Sealed">
+		<set name="icon" value="icon.bm_pirate_battle_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94636" min_count="10" max_count="10" chance="100"/><!--Pet's XP Growth Scroll-->
+			<capsuled_item id="93966" min_count="1000" max_count="1000" chance="100"/><!--Pet Food-->
+			<capsuled_item id="93967" min_count="5000" max_count="5000" chance="100"/><!--Pet's HP Recovery Potion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="72333" name="Anniversary Firecracker NCJ 20" add_name="Sealed">
+		<!--A large firecracker for the NCJ 20 Anniversary that illuminates the sky with colorful lights.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72334" name="Blue Firecracker" add_name="Sealed">
+		<!--A large firecracker that illuminates the sky with blue lights.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72335" name="Red Firecracker" add_name="Sealed">
+		<!--A large firecracker that illuminates the sky with red lights.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72336" name="Green Firecracker" add_name="Sealed">
+		<!--A large firecracker that illuminates the sky with green lights.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72337" name="Package: Queen Ant Doll Lv. 3 (Time-limited)" add_name="7-day">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72338" name="Package: Baium Doll Lv. 3 (Time-limited)" add_name="7-day">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72339" name="Package: Orfen Doll Lv. 3 (Time-limited)" add_name="7-day">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72340" name="Queen Ant Doll Lv. 3" add_name="7-day">
+		<!--<Queen Ant Doll's Sorcery Lv. 3>\nP. Atk. +12%\nP. Critical Damage +10%\nP. Skill Critical Damage +10%\nMax HP +15%\n\nBoosts stats when in inventory.\nCannot be upgraded.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72341" name="Baium Doll Lv. 3" add_name="7-day">
+		<!--<Baium Doll's Sorcery Lv. 3>\nSkill Cooldown -4%\nP. Def. +15%\nM. Def. +15%\nSilence Resistance +45%\nFear Resistance +45%\nParalysis Resistance +25%\nKnockback Resistance +25%\nPull Resistance +25%\n\nBoosts stats when in inventory.\nCannot be upgraded.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72342" name="Orfen Doll Lv. 3" add_name="7-day">
+		<!--<Orfen Doll's Sorcery Lv. 3>\nM. Atk. +15%\nM. Skill Critical Damage +10%\nMax MP +15%\n\nBoosts stats when in inventory.\nCannot be upgraded.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72343" name="Letter J" add_name="Sealed">
+		<!--Combine with other letters to create a special word and get a reward!-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72344" name="Numbers 20" add_name="Sealed">
+		<!--Combine with other letters to create a special word and get a reward!-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72345" name="NCJ 20 Anniversary Gift (Time-limited)" add_name="Sealed">
+		<!--A gift for the NCJ 20 Anniversary.\n\n<Buff effect>\nP. Atk. +250\nM. Atk. +250\nP. Def. +150\nM. Def. +150\nMax HP +300\nMax MP +250\nAcquired XP +10%\nAcquired SP +10%\n\nDuration: 20 min.\nCooldown: 1 min.\nThe effect remains after death.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72346" name="Aden's 2nd Anniversary Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72347" name="Music Spirit Kit (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72348" name="L2M Launch Commemoration Coin (Time-limited)" add_name="Sealed">
+		<!--A coin for commemorating the L2M launch. Can be exchanged for various items through the Game Assistant.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72349" name="L2M Gift Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72350" name="Black Friday Kit (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72351" name="L2M Blessing Buff (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the L2M Blessing buff.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72352" name="2022 Christmas Gift (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72353" name="Christmas Gift Kit I (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72354" name="Christmas Gift Kit II (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72355" name="Christmas Gift Kit III (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72359" name="New Year Gift Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72360" name="Lucky Pouch (Time-limited)" add_name="Sealed">
+		<!--A Lucky Pouch to celebrate the New Year. Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72361" name="Golden Lucky Pouch (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72362" name="Special Festival Spellbook Chest (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72363" name="100,000 Adena Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain 100,000 adena.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72364" name="Red Lantern" add_name="Sealed">
+		<!--XP +100,000,000, SP +2,700,000. Cannot be exchanged for the lit lantern. Required level: 85+.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72365" name="Great Hunter's Reward (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72366" name="Aden Love Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain a random item from the list or one of various items.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72367" name="Update Supplies" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72368" name="Eva�s Treasure Chest (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain a random item from the list or one of various items.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72369" name="Package: Eva's Coupon (1,000 pcs.) (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72370" name="Eva's Coupon (Time-limited)" add_name="Sealed">
+		<!--Can be used in the special creation system or via Game Assistant.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="72371" name="Vanguard Support Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+</list>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="13"><!--Necromancer-->
+		<skill id="45105" level="3" min_level="40" cost="55000"/><!--Empower-->
+		<skill id="45106" level="2" min_level="40" cost="55000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="55000"/><!--Berserker Spirit-->
+		<skill id="45108" level="2" min_level="40" cost="55000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="55000"/><!--Might-->
+		<skill id="1262" level="1" min_level="40" cost="55000"/><!--Transfer Pain-->
+		<skill id="1154" level="1" min_level="40" cost="55000"/><!--Summon Corrupted Man-->
+		<skill id="1169" level="1" min_level="40" cost="55000"/><!--Curse Fear-->
+		<skill id="45104" level="3" min_level="40" cost="55000"/><!--Acumen-->
+		<skill id="1047" level="1" min_level="40" cost="55000"/><!--Mana Regeneration-->
+		<skill id="1157" level="2" min_level="40" cost="55000"/><!--Body to Mind-->
+		<skill id="1164" level="6" min_level="40" cost="55000"/><!--Weakness-->
+		<skill id="45111" level="2" min_level="40" cost="55000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="55000"/><!--Focus-->
+		<skill id="45113" level="3" min_level="40" cost="55000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="55000"/><!--Death Whisper-->
+		<skill id="1148" level="1" min_level="40" cost="55000"><!--Death Spike-->
+			<blocked_skills>
+				<skill id="1177"/><!--???-->
+				<skill id="1147"/><!--???-->
+				<skill id="1184"/><!--???-->
+				<skill id="1220"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="1040" level="3" min_level="40" cost="55000"/><!--Shield-->
+		<skill id="1170" level="1" min_level="40" cost="55000"/><!--Anchor-->
+		<skill id="1148" level="2" min_level="43" cost="77000"/><!--Death Spike-->
+		<skill id="1129" level="1" min_level="44" cost="77000"/><!--Summon Reanimated Man-->
+		<skill id="1263" level="1" min_level="44" cost="77000"/><!--Magic Wound-->
+		<skill id="1169" level="2" min_level="44" cost="77000"/><!--Curse Fear-->
+		<skill id="1164" level="7" min_level="44" cost="77000"/><!--Weakness-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="1155" level="1" min_level="46" cost="120000"/><!--Dark Burst-->
+		<skill id="1148" level="3" min_level="46" cost="120000"/><!--Death Spike-->
+		<skill id="1155" level="2" min_level="48" cost="120000"/><!--Dark Burst-->
+		<skill id="1262" level="2" min_level="48" cost="120000"/><!--Transfer Pain-->
+		<skill id="1154" level="2" min_level="48" cost="120000"/><!--Summon Corrupted Man-->
+		<skill id="1263" level="2" min_level="48" cost="120000"/><!--Magic Wound-->
+		<skill id="1169" level="3" min_level="48" cost="120000"/><!--Curse Fear-->
+		<skill id="1047" level="2" min_level="48" cost="120000"/><!--Mana Regeneration-->
+		<skill id="1164" level="8" min_level="48" cost="120000"/><!--Weakness-->
+		<skill id="1170" level="2" min_level="48" cost="120000"/><!--Anchor-->
+		<skill id="1148" level="4" min_level="49" cost="120000"/><!--Death Spike-->
+		<skill id="1155" level="3" min_level="50" cost="200000"/><!--Dark Burst-->
+		<skill id="45176" level="2" min_level="50" cost="200000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="200000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1073" level="2" min_level="50" cost="200000"/><!--Increased Power of Magic-->
+		<skill id="1405" level="1" min_level="52" cost="200000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="1155" level="4" min_level="52" cost="200000"/><!--Dark Burst-->
+		<skill id="1129" level="2" min_level="52" cost="200000"/><!--Summon Reanimated Man-->
+		<skill id="1263" level="3" min_level="52" cost="200000"/><!--Magic Wound-->
+		<skill id="1169" level="4" min_level="52" cost="200000"/><!--Curse Fear-->
+		<skill id="1157" level="3" min_level="52" cost="200000"/><!--Body to Mind-->
+		<skill id="1164" level="9" min_level="52" cost="200000"/><!--Weakness-->
+		<skill id="1148" level="5" min_level="52" cost="200000"/><!--Death Spike-->
+		<skill id="1170" level="3" min_level="52" cost="200000"/><!--Anchor-->
+		<skill id="1155" level="5" min_level="54" cost="310000"/><!--Dark Burst-->
+		<skill id="1148" level="6" min_level="55" cost="310000"/><!--Death Spike-->
+		<skill id="1155" level="6" min_level="56" cost="310000"/><!--Dark Burst-->
+		<skill id="1262" level="3" min_level="56" cost="310000"/><!--Transfer Pain-->
+		<skill id="1154" level="3" min_level="56" cost="310000"/><!--Summon Corrupted Man-->
+		<skill id="1263" level="4" min_level="56" cost="310000"/><!--Magic Wound-->
+		<skill id="1169" level="5" min_level="56" cost="310000"/><!--Curse Fear-->
+		<skill id="1164" level="10" min_level="56" cost="310000"/><!--Weakness-->
+		<skill id="1170" level="4" min_level="56" cost="310000"/><!--Anchor-->
+		<skill id="1155" level="7" min_level="58" cost="320000"/><!--Dark Burst-->
+		<skill id="1262" level="4" min_level="58" cost="320000"/><!--Transfer Pain-->
+		<skill id="1263" level="5" min_level="58" cost="320000"/><!--Magic Wound-->
+		<skill id="1169" level="6" min_level="58" cost="320000"/><!--Curse Fear-->
+		<skill id="1157" level="4" min_level="58" cost="320000"/><!--Body to Mind-->
+		<skill id="1164" level="11" min_level="58" cost="320000"/><!--Weakness-->
+		<skill id="1148" level="7" min_level="58" cost="320000"/><!--Death Spike-->
+		<skill id="1170" level="5" min_level="58" cost="320000"/><!--Anchor-->
+		<skill id="1155" level="8" min_level="60" cost="380000"/><!--Dark Burst-->
+		<skill id="1129" level="3" min_level="60" cost="380000"/><!--Summon Reanimated Man-->
+		<skill id="1263" level="6" min_level="60" cost="380000"/><!--Magic Wound-->
+		<skill id="1169" level="7" min_level="60" cost="380000"/><!--Curse Fear-->
+		<skill id="1047" level="3" min_level="60" cost="380000"/><!--Mana Regeneration-->
+		<skill id="1164" level="12" min_level="60" cost="380000"/><!--Weakness-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="1148" level="8" min_level="60" cost="380000"/><!--Death Spike-->
+		<skill id="1170" level="6" min_level="60" cost="380000"/><!--Anchor-->
+		<skill id="1405" level="2" min_level="61" cost="460000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="1155" level="9" min_level="62" cost="460000"/><!--Dark Burst-->
+		<skill id="1154" level="4" min_level="62" cost="460000"/><!--Summon Corrupted Man-->
+		<skill id="1263" level="7" min_level="62" cost="460000"/><!--Magic Wound-->
+		<skill id="1169" level="8" min_level="62" cost="460000"/><!--Curse Fear-->
+		<skill id="1164" level="13" min_level="62" cost="460000"/><!--Weakness-->
+		<skill id="1148" level="9" min_level="62" cost="460000"/><!--Death Spike-->
+		<skill id="1170" level="7" min_level="62" cost="460000"/><!--Anchor-->
+		<skill id="1155" level="10" min_level="64" cost="580000"/><!--Dark Burst-->
+		<skill id="1129" level="4" min_level="64" cost="580000"/><!--Summon Reanimated Man-->
+		<skill id="1263" level="8" min_level="64" cost="580000"/><!--Magic Wound-->
+		<skill id="1169" level="9" min_level="64" cost="580000"/><!--Curse Fear-->
+		<skill id="1164" level="14" min_level="64" cost="580000"/><!--Weakness-->
+		<skill id="1148" level="10" min_level="64" cost="580000"/><!--Death Spike-->
+		<skill id="1170" level="8" min_level="64" cost="580000"/><!--Anchor-->
+		<skill id="1155" level="11" min_level="66" cost="730000"/><!--Dark Burst-->
+		<skill id="1154" level="5" min_level="66" cost="730000"/><!--Summon Corrupted Man-->
+		<skill id="1263" level="9" min_level="66" cost="730000"/><!--Magic Wound-->
+		<skill id="1169" level="10" min_level="66" cost="730000"/><!--Curse Fear-->
+		<skill id="1157" level="5" min_level="66" cost="730000"/><!--Body to Mind-->
+		<skill id="1164" level="15" min_level="66" cost="730000"/><!--Weakness-->
+		<skill id="1148" level="11" min_level="66" cost="730000"/><!--Death Spike-->
+		<skill id="1170" level="9" min_level="66" cost="730000"/><!--Anchor-->
+		<skill id="1155" level="12" min_level="68" cost="900000"/><!--Dark Burst-->
+		<skill id="1129" level="5" min_level="68" cost="900000"/><!--Summon Reanimated Man-->
+		<skill id="1263" level="10" min_level="68" cost="900000"/><!--Magic Wound-->
+		<skill id="1169" level="11" min_level="68" cost="900000"/><!--Curse Fear-->
+		<skill id="1164" level="16" min_level="68" cost="900000"/><!--Weakness-->
+		<skill id="1148" level="12" min_level="68" cost="900000"/><!--Death Spike-->
+		<skill id="1170" level="10" min_level="68" cost="900000"/><!--Anchor-->
+		<skill id="1155" level="13" min_level="70" cost="1100000"/><!--Dark Burst-->
+		<skill id="1262" level="5" min_level="70" cost="1100000"/><!--Transfer Pain-->
+		<skill id="1154" level="6" min_level="70" cost="1100000"/><!--Summon Corrupted Man-->
+		<skill id="1263" level="11" min_level="70" cost="1100000"/><!--Magic Wound-->
+		<skill id="1169" level="12" min_level="70" cost="1100000"/><!--Curse Fear-->
+		<skill id="1047" level="4" min_level="70" cost="1100000"/><!--Mana Regeneration-->
+		<skill id="1164" level="17" min_level="70" cost="1100000"/><!--Weakness-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="1148" level="13" min_level="70" cost="1100000"/><!--Death Spike-->
+		<skill id="1170" level="11" min_level="70" cost="1100000"/><!--Anchor-->
+		<skill id="1155" level="14" min_level="72" cost="1300000"/><!--Dark Burst-->
+		<skill id="1129" level="6" min_level="72" cost="1300000"/><!--Summon Reanimated Man-->
+		<skill id="1263" level="12" min_level="72" cost="1300000"/><!--Magic Wound-->
+		<skill id="1169" level="13" min_level="72" cost="1300000"/><!--Curse Fear-->
+		<skill id="1164" level="18" min_level="72" cost="1300000"/><!--Weakness-->
+		<skill id="1148" level="14" min_level="72" cost="1300000"/><!--Death Spike-->
+		<skill id="1170" level="12" min_level="72" cost="1300000"/><!--Anchor-->
+		<skill id="1155" level="15" min_level="74" cost="1600000"/><!--Dark Burst-->
+		<skill id="1129" level="7" min_level="74" cost="1600000"/><!--Summon Reanimated Man-->
+		<skill id="1263" level="13" min_level="74" cost="1600000"/><!--Magic Wound-->
+		<skill id="1169" level="14" min_level="74" cost="1600000"/><!--Curse Fear-->
+		<skill id="1164" level="19" min_level="74" cost="1600000"/><!--Weakness-->
+		<skill id="1148" level="15" min_level="74" cost="1600000"/><!--Death Spike-->
+		<skill id="1170" level="13" min_level="74" cost="1600000"/><!--Anchor-->
+		<skill id="1126" level="1" min_level="40" cost="55000"/><!--Servitor Recharge-->
+		<skill id="1126" level="2" min_level="40" cost="55000"/><!--Servitor Recharge-->
+		<skill id="1126" level="3" min_level="40" cost="55000"/><!--Servitor Recharge-->
+		<skill id="1126" level="4" min_level="41" cost="77000"/><!--Servitor Recharge-->
+		<skill id="1126" level="5" min_level="41" cost="77000"/><!--Servitor Recharge-->
+		<skill id="1126" level="6" min_level="41" cost="77000"/><!--Servitor Recharge-->
+		<skill id="1126" level="7" min_level="42" cost="77000"/><!--Servitor Recharge-->
+		<skill id="1127" level="1" min_level="40" cost="55000"/><!--Servitor Heal-->
+		<skill id="1127" level="2" min_level="40" cost="55000"/><!--Servitor Heal-->
+		<skill id="1127" level="3" min_level="40" cost="55000"/><!--Servitor Heal-->
+		<skill id="1127" level="4" min_level="40" cost="55000"/><!--Servitor Heal-->
+		<skill id="1127" level="5" min_level="41" cost="77000"/><!--Servitor Heal-->
+		<skill id="1127" level="6" min_level="41" cost="77000"/><!--Servitor Heal-->
+		<skill id="1127" level="7" min_level="41" cost="77000"/><!--Servitor Heal-->
+		<skill id="1127" level="8" min_level="41" cost="77000"/><!--Servitor Heal-->
+		<skill id="1127" level="9" min_level="42" cost="77000"/><!--Servitor Heal-->
+		<skill id="1127" level="10" min_level="42" cost="77000"/><!--Servitor Heal-->
+		<skill id="1127" level="11" min_level="42" cost="77000"/><!--Servitor Heal-->
+		<skill id="1127" level="12" min_level="42" cost="77000"/><!--Servitor Heal-->
+		<skill id="45362" level="1" min_level="40" cost="55000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="2" min_level="40" cost="55000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="3" min_level="40" cost="55000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="4" min_level="40" cost="55000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="5" min_level="41" cost="77000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="6" min_level="41" cost="77000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="7" min_level="41" cost="77000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="8" min_level="41" cost="77000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="9" min_level="42" cost="77000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="10" min_level="42" cost="77000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="11" min_level="42" cost="77000"/><!--Swift Servitor Heal-->
+		<skill id="45362" level="12" min_level="42" cost="77000"/><!--Swift Servitor Heal-->
+		<skill id="47462" level="1" min_level="40" cost="55000"/><!--Sleep-->
+		<skill id="47462" level="2" min_level="40" cost="55000"/><!--Sleep-->
+		<skill id="47462" level="3" min_level="60" cost="380000"/><!--Sleep-->
+		<skill id="47463" level="1" min_level="40" cost="55000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="2" min_level="50" cost="200000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="3" min_level="60" cost="380000"/><!--Wizard's Attack Mastery-->
+		<skill id="47463" level="4" min_level="70" cost="1100000"/><!--Wizard's Attack Mastery-->
+		<skill id="47464" level="1" min_level="40" cost="55000"><!--Wizard's Armor Mastery-->
+			<blocked_skills>
+				<skill id="234"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47464" level="2" min_level="50" cost="200000"/><!--Wizard's Armor Mastery-->
+		<skill id="47464" level="3" min_level="60" cost="380000"/><!--Wizard's Armor Mastery-->
+		<skill id="47464" level="4" min_level="70" cost="1100000"/><!--Wizard's Armor Mastery-->
+		<skill id="47465" level="1" min_level="40" cost="55000"><!--Wizard's Recovery Mastery-->
+			<blocked_skills>
+				<skill id="164"/><!--???-->
+				<skill id="212"/><!--???-->
+				<skill id="229"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47465" level="2" min_level="50" cost="200000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47465" level="3" min_level="60" cost="380000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47465" level="4" min_level="70" cost="1100000"/><!--Wizard's Recovery Mastery-->
+		<skill id="47466" level="2" min_level="40" cost="55000"/><!--Higher Mana Gain-->
+		<skill id="47466" level="3" min_level="60" cost="380000"/><!--Higher Mana Gain-->
+	</normal_skill_tree>
+</list>

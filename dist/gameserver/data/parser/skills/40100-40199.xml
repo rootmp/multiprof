@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="40100" levels="1" name="Purple Lantern - 2nd Place">
+		<set name="icon" value="icon.etc_holy_grail_i01"/>
+		<set name="itemConsumeId" value="91669"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="30000000"/>
+			</effect>
+			<effect name="i_sp" value="810000"/>
+		</for>
+	</skill>
+	<skill id="40101" levels="1" name="Blue Lantern - 3rd Place">
+		<set name="icon" value="icon.etc_holy_grail_i02"/>
+		<set name="itemConsumeId" value="91670"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="10000000"/>
+			</effect>
+			<effect name="i_sp" value="270000"/>
+		</for>
+	</skill>
+	<skill id="40102" levels="1" name="Green Lantern - 4th Place">
+		<set name="icon" value="icon.etc_holy_grail_i03"/>
+		<set name="itemConsumeId" value="91671"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="5000000"/>
+			</effect>
+			<effect name="i_sp" value="135000"/>
+		</for>
+	</skill>
+	<skill id="40103" levels="1" name="Star Candy">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<effect name="i_add_sayha_grace_points" value="10000" />
+			<effect name="i_add_magic_lamp_points" value="50000" />
+			<effect name="i_add_random_craft_points" value="3250" />
+		</for>
+	</skill>
+	<skill id="40104" levels="1" name="Sayha's Storm Lv. 3 (Event)">
+		<set name="icon" value="icon.bm_sayha_storm"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="olympiad_use" value="false"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="3"/>
+		<set name="abnormal_type" value="SAYHAS_STORM"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+		<set name="isHandler" value="true"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<for>
+			<effect>
+				<add stat="exp_rate_multiplier" value="2"/>
+				<add stat="sp_rate_multiplier" value="2"/>
+				<mul stat="sayhas_grace_consume" value="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="40105" levels="1" name="Blue Lantern - 3rd Place">
+		<set name="icon" value="icon.etc_holy_grail_i02"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40106" levels="1" name="Battle Scroll (Event)">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.ev_charge_scroll"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="EVENT_BUF1"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="isHandler" value="true"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<for>
+			<effect>
+				<add stat="pAtk" value="150"/>
+				<add stat="mAtk" value="150"/>
+				<add stat="pDef" value="200"/>
+				<add stat="mDef" value="200"/>
+				<add stat="maxHp" value="500"/>
+				<add stat="maxMp" value="500"/>
+				<add stat="maxCp" value="500"/>
+				<add stat="pAtkSpd" value="50"/>
+				<add stat="mAtkSpd" value="50"/>
+				<add stat="baseMCritRate" value="30"/>
+				<add stat="basePCritRate" value="30"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="40107" levels="1" name="Extra Pass: Transcendent Instance Zone">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="86400000"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="isHandler" value="true"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<effect name="i_refresh_instance_group" value="1"/>
+		</for>
+	</skill>
+	<skill id="40108" levels="1" name="Extra Pass: Transcendent Instance Zone (Event)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="86400000"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="isHandler" value="true"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<effect name="i_refresh_instance_group" value="1"/>
+		</for>
+	</skill>
+	<skill id="40109" levels="1" name="Blessed Scroll: Enchant A-grade Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40110" levels="1" name="Blessed Scroll: Enchant A-grade Armor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40111" levels="1" name="Cursed Scroll: Enchant A-grade Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40112" levels="1" name="Cursed Scroll: Enchant A-grade Armor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40113" levels="1" name="Sayha's Cookie">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<effect name="i_add_sayha_grace_points" value="35000" />
+			<effect name="i_add_magic_lamp_points" value="50000" />
+			<effect name="i_add_random_craft_points" value="3250" />
+		</for>
+	</skill>
+	<skill id="40114" levels="1" name="Scroll: Enchant Cloak of Protection">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40115" levels="1" name="Scroll of Escape: Quartermaster Mathorn">
+		<set name="icon" value="icon.skill0000"/>
+		<table name="#loc">
+			46120;152616;-2752
+		</table>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="hitTime" value="20000"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="loc" value="#loc"/>
+		<set name="isHandler" value="true"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RECALL"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40116" levels="1" name="Scroll: Enchant Talisman of Authority">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40117" levels="1" name="Summon Deton">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40118" levels="1" name="Scroll of Escape: Antharas' Lair Interior">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40119" levels="7" name="Scroll of Escape: Antharas' Lair Interior">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40120" levels="1" name="Special Scroll of Escape: Orc Barracks">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40121" levels="1" name="High-grade Red Lantern">
+		<set name="icon" value="icon.etc_holy_grail_i00"/>
+		<set name="itemConsumeId" value="93338"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="1200000000"/>
+			</effect>
+			<effect name="i_sp" value="32400000"/>
+		</for>
+	</skill>
+	<skill id="40122" levels="1" name="High-grade Purple Lantern">
+		<set name="icon" value="icon.etc_holy_grail_i01"/>
+		<set name="itemConsumeId" value="93339"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="360000000"/>
+			</effect>
+			<effect name="i_sp" value="9720000"/>
+		</for>
+	</skill>
+	<skill id="40123" levels="1" name="High-grade Blue Lantern">
+		<set name="icon" value="icon.etc_holy_grail_i02"/>
+		<set name="itemConsumeId" value="93340"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="120000000"/>
+			</effect>
+			<effect name="i_sp" value="3240000"/>
+		</for>
+	</skill>
+	<skill id="40124" levels="1" name="High-grade Green Lantern">
+		<set name="icon" value="icon.etc_holy_grail_i03"/>
+		<set name="itemConsumeId" value="93341"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="60000000"/>
+			</effect>
+			<effect name="i_sp" value="1620000"/>
+		</for>
+	</skill>
+	<skill id="40125" levels="1" name="High-grade Lit Red Lantern">
+		<set name="icon" value="icon.etc_holy_grail_i00"/>
+		<set name="itemConsumeId" value="93342"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="1200000000"/>
+			</effect>
+			<effect name="i_sp" value="32400000"/>
+		</for>
+	</skill>
+	<skill id="40126" levels="1" name="High-grade Lit Purple Lantern">
+		<set name="icon" value="icon.etc_holy_grail_i01"/>
+		<set name="itemConsumeId" value="93343"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="360000000"/>
+			</effect>
+			<effect name="i_sp" value="9720000"/>
+		</for>
+	</skill>
+	<skill id="40127" levels="1" name="High-grade Lit Blue Lantern">
+		<set name="icon" value="icon.etc_holy_grail_i02"/>
+		<set name="itemConsumeId" value="93344"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="120000000"/>
+			</effect>
+			<effect name="i_sp" value="3240000"/>
+		</for>
+	</skill>
+	<skill id="40128" levels="1" name="High-grade Lit Green Lantern">
+		<set name="icon" value="icon.etc_holy_grail_i03"/>
+		<set name="itemConsumeId" value="93345"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="60000000"/>
+			</effect>
+			<effect name="i_sp" value="1620000"/>
+		</for>
+	</skill>
+	<skill id="40129" levels="1" name="Stone: Enchant A-grade Weapon - Event">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40130" levels="1" name="Stone: Enchant A-grade Armor - Event">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40131" levels="1" name="Einhasad's Blessing Scroll - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.exp_bottle_scroll"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40132" levels="1" name="Improved Stone: Enchant A-grade Weapon - Event">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40133" levels="1" name="Improved Stone: Enchant A-grade Armor - Event">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40134" levels="1" name="Test - More Adena 1">
+		<set name="icon" value="icon.skill1551"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40135" levels="1" name="Test - More Adena 2">
+		<set name="icon" value="icon.buff_inc_adena"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40136" levels="1" name="Scroll of Escape: Fortress">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="8000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40137" levels="1" name="Improved Scroll of Escape: Fortress">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="200"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40138" levels="1" name="Magic Lamp Charging Potion - Event">
+		<set name="icon" value="icon.etc_recall_potion2"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="magic_lamp_charging"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="magic_lamp_charging_rate_multiplier" value="1.2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="40139" levels="1" name="Spellbook: Mount Wyvern">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40140" levels="1" name="Mount Wyvern">
+		<set name="icon" value="icon.skill0327"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40141" levels="1" name="Combat Scroll">
+		<set name="icon" value="icon.etc_ssq_i00"/>
+		<set name="effectPoint" value="1"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="EVENT_BUF2"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="isHandler" value="true"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pAtk" value="200"/>
+				<add stat="mAtk" value="200"/>
+				<add stat="pAtkSpd" value="60"/>
+				<add stat="mAtkSpd" value="60"/>
+				<add stat="maxHp" value="300"/>
+				<add stat="maxMp" value="300"/>
+				<add stat="maxCp" value="300"/>
+				<mul stat="magic_critical_dmg" value="10"/>
+				<mul stat="critical_damage" value="10"/>
+				<add stat="baseMCritRate" value="20"/>
+				<add stat="basePCritRate" value="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="40142" levels="1" name="Whale">
+		<set name="icon" value="icon.fish_huge_i15"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40143" levels="3" name="SP Scroll">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40144" levels="1" name="Scroll: 2000 SP">
+		<set name="icon" value="icon.etc_sp_scroll1_i00"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40145" levels="1" name="Scroll of Escape: Gludin Harbor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40146" levels="3" name="Fish Stew - Vampiric Rage">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40147" levels="3" name="Fish Stew - Empower">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40148" levels="1" name="Fish Stew - Greater Might">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40149" levels="1" name="Fish Stew - Greater Shield">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40150" levels="1" name="Fish Stew - Wild Magic">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40151" levels="2" name="Fish Stew - Berserker Spirit">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40152" levels="3" name="Fish Stew - Decrease Weight">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40153" levels="2" name="Fish Stew - Guild's Gratitude">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.ev_invasion_buff_box"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40154" levels="25" name="Full Moon Blessing (Event)">
+		<set name="icon" value="BranchSys2.icon.g_illumination_yellow"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40155" levels="1" name="Full Moon Blessing (Reward)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40156" levels="1" name="Honey Rice Cakes (Event)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40157" levels="1" name="Honey Bean Cakes (Event)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_sayha_grace_points" value="35000" />
+			<effect name="i_add_magic_lamp_points" value="50000" />
+			<effect name="i_add_random_craft_points" value="3250" />
+		</for>
+	</skill>
+	<skill id="40158" levels="1" name="Honey Sesame Cakes - Event">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.ev_sesame_songpyeon_00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40159" levels="1" name="Letter of Congratulation - Event">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40160" levels="1" name="Scroll: Restore Equipment">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40161" levels="1" name="(Test) Appearance Stone: Emerald Weapon - One-handed Sword">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40162" levels="1" name="Appearance Stone: Emerald Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40163" levels="1" name="Appearance Stone: Dark Assassin Suit">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40164" levels="3" name="Spellbook: Glorious Warrior's Ability Lv. 1">
+		<table name="#itemConsumeId">94046 95890 95891</table>
+		<table name="#skill">45361-1 45361-2 45361-3</table>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="itemConsumeId" value="#itemConsumeId"/>	<!--Spellbook: Dignity of the Exalted-->
+		<set name="itemConsumeCount" value="1"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="#skill"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="#skill"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="40165" levels="1" name="Alligator Island's Time Stone">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="target_type" value="SELF" />
+		<set name="affect_scope" value="SINGLE" />
+		<set name="affect_object" value="FRIEND" />
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_restore_time_restrict_field" value="11" />
+		</for>
+	</skill>
+	<skill id="40166" levels="1" name="Mid-grade HP Recovery Potion - Event">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40170" levels="1" name="Reanimated Corpse Mask">
+		<set name="icon" value="BranchSys.icon.br_frankenstein_mask_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40171" levels="1" name="Shriek Mask">
+		<set name="icon" value="icon.ev_scream_mask_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40172" levels="1" name="Red Devil Mask">
+		<set name="icon" value="icon.ev_doccabi_mask_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40173" levels="1" name="Mummy Mask">
+		<set name="icon" value="icon.ev_mummy_mask_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40174" levels="1" name="Alien Mask">
+		<set name="icon" value="icon.ev_alien_mask_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40175" levels="1" name="Jack O'Lantern's Golden Mask">
+		<set name="icon" value="icon.ev_golden_jack0_mask_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40176" levels="25" name="Pumpkin Ghost's Noble Candy - Event">
+		<table name="#abnormal_time">3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 3600 1</table>
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="icon" value="icon.ev_jack_ghost_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40177" levels="1" name="Pumpkin Ghost's Noble Candy - Reward">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40178" levels="1" name="Halloween Mask">
+		<set name="icon" value="icon.ev_golden_jack0_mask_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40179" levels="1" name="Halloween Candy - Event">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40180" levels="1" name="Sayha's Cookie - Event">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_sayha_grace_points" value="35000" />
+			<effect name="i_add_magic_lamp_points" value="50000" />
+			<effect name="i_add_random_craft_points" value="3250" />
+		</for>
+	</skill>
+	<skill id="40181" levels="1" name="Antharas' Lair's Time Stone">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="target_type" value="SELF" />
+		<set name="affect_scope" value="SINGLE" />
+		<set name="affect_object" value="FRIEND" />
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_restore_time_restrict_field" value="12" />
+		</for>
+	</skill>
+	<skill id="40182" levels="1" name="Lucky Energy Card">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40183" levels="1" name="Lucky Energy Card - STR/INT +1">
+		<set name="icon" value="icon.card_devil_black"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40184" levels="1" name="Lucky Energy Card - DEX/WIT +1">
+		<set name="icon" value="icon.card_devil_black"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40185" levels="1" name="Lucky Energy Card - CON/MEN +1">
+		<set name="icon" value="icon.card_devil_black"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40186" levels="1" name="Lucky Energy Card - XP">
+		<set name="icon" value="icon.card_devil_black"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40187" levels="1" name="Lucky Energy Card - All Stats +1">
+		<set name="icon" value="icon.card_dragon_gold"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40188" levels="1" name="Lucky Energy Card - EXP/All Stats +1">
+		<set name="icon" value="icon.card_hero_red"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40189" levels="1" name="Lucky Energy Card - EXP/All Stats +2">
+		<set name="icon" value="icon.card_hidden"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40190" levels="1" name="Antharas' Lair's Time Stone">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="target_type" value="SELF" />
+		<set name="affect_scope" value="SINGLE" />
+		<set name="affect_object" value="FRIEND" />
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_restore_time_restrict_field" value="12" />
+		</for>
+	</skill>
+	<skill id="40191" levels="6" name="Harvesting Basics">
+		<table name="#reuseDelay">60000 0 0 0 0 0</table>
+		<set name="icon" value="icon.etc_ssq_scroll_i00"/>
+		<set name="reuseDelay" value="#reuseDelay"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40192" levels="1" name="Scroll: Enchant Death Knight's Flame Sword (Exchangeable)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40193" levels="1" name="Scroll: Enchant Death Knight's Flame Sword (Unexchangeable)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40194" levels="1" name="Extra Pass: Transcendent Instance Zone">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40195" levels="1" name="Extra Pass: Transcendent Instance Zone (Event)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40196" levels="1" name="Scroll of Escape: Antharas' Lair">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40197" levels="5" name="Mark of Examinee">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="castRange" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="40198" levels="1" name="Star Energy">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

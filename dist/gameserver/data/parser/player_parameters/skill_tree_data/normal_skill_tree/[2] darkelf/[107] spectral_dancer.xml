@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="107"><!--Spectral Dancer-->
+		<skill id="1405" level="3" min_level="76" cost="7600000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8620;96093" count="1"/><!--Buff Expansion Book Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="4" min_level="76" cost="7600000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8621;96094" count="1"/><!--Buff Expansion Book Lv. 4-->
+			</required_items>
+		</skill>
+		<skill id="141" level="5" min_level="76" cost="7600000"/><!--Weapon Mastery-->
+		<skill id="144" level="38" min_level="76" cost="7600000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="53" min_level="76" cost="7600000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="21" min_level="76" cost="7600000"/><!--Confusion-->
+		<skill id="45188" level="1" min_level="76"><!--Evolution Defense-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="402" level="11" min_level="76" cost="7600000"/><!--Shackle-->
+		<skill id="45250" level="26" min_level="76" cost="7600000"/><!--Drain HP-->
+		<skill id="147" level="52" min_level="76" cost="7600000"/><!--Magic Resistance-->
+		<skill id="1068" level="4" min_level="76" cost="7600000"><!--Might-->
+			<required_items>
+				<item id="94135;95517" count="1"/><!--Master's Book: Might-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="1" min_level="76" cost="7600000"><!--Detection-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1835" level="1" min_level="76" cost="7600000"/><!--Mount Saber-toothed Cougar-->
+		<skill id="122" level="16" min_level="76" cost="7600000"/><!--Hex-->
+		<skill id="115" level="18" min_level="76" cost="7600000"/><!--Power Break-->
+		<skill id="1632" level="1" min_level="76" cost="7600000"/><!--Deadly Strike-->
+		<skill id="1040" level="4" min_level="76" cost="7600000"><!--Shield-->
+			<required_items>
+				<item id="94136;95518" count="1"/><!--Master's Book: Shield-->
+			</required_items>
+		</skill>
+		<skill id="70" level="46" min_level="76" cost="7600000"/><!--Emergency Rescue-->
+		<skill id="144" level="39" min_level="77" cost="7600000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="54" min_level="77" cost="7600000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="22" min_level="77" cost="7600000"/><!--Confusion-->
+		<skill id="402" level="12" min_level="77" cost="7600000"/><!--Shackle-->
+		<skill id="45250" level="27" min_level="77" cost="7600000"/><!--Drain HP-->
+		<skill id="147" level="53" min_level="77" cost="7600000"/><!--Magic Resistance-->
+		<skill id="122" level="17" min_level="77" cost="7600000"/><!--Hex-->
+		<skill id="1632" level="2" min_level="77" cost="7600000"/><!--Deadly Strike-->
+		<skill id="70" level="47" min_level="77" cost="7600000"/><!--Emergency Rescue-->
+		<skill id="144" level="40" min_level="78" cost="17800000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="55" min_level="78" cost="17800000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="23" min_level="78" cost="17800000"/><!--Confusion-->
+		<skill id="402" level="13" min_level="78" cost="17800000"/><!--Shackle-->
+		<skill id="45250" level="28" min_level="78" cost="17800000"/><!--Drain HP-->
+		<skill id="147" level="54" min_level="78" cost="17800000"/><!--Magic Resistance-->
+		<skill id="122" level="18" min_level="78" cost="17800000"/><!--Hex-->
+		<skill id="115" level="19" min_level="78" cost="17800000"/><!--Power Break-->
+		<skill id="1632" level="3" min_level="78" cost="17800000"/><!--Deadly Strike-->
+		<skill id="84" level="4" min_level="78" cost="17800000"/><!--Poison Blade Dance-->
+		<skill id="70" level="48" min_level="78" cost="17800000"/><!--Emergency Rescue-->
+		<skill id="2" level="24" min_level="79" cost="17800000"/><!--Confusion-->
+		<skill id="402" level="14" min_level="79" cost="17800000"/><!--Shackle-->
+		<skill id="45250" level="29" min_level="79" cost="17800000"/><!--Drain HP-->
+		<skill id="122" level="19" min_level="79" cost="17800000"/><!--Hex-->
+		<skill id="367" level="1" min_level="79" cost="17800000"/><!--Dance of Medusa-->
+		<skill id="70" level="49" min_level="79" cost="17800000"/><!--Emergency Rescue-->
+		<skill id="144" level="41" min_level="80" cost="17800000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="56" min_level="80" cost="17800000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="25" min_level="80" cost="17800000"/><!--Confusion-->
+		<skill id="402" level="15" min_level="80" cost="17800000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="30" min_level="80" cost="17800000"/><!--Drain HP-->
+		<skill id="147" level="55" min_level="80" cost="17800000"/><!--Magic Resistance-->
+		<skill id="45189" level="1" min_level="80"><!--Evolution Power-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="122" level="20" min_level="80" cost="17800000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="20" min_level="80" cost="17800000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1632" level="4" min_level="80" cost="17800000"/><!--Deadly Strike-->
+		<skill id="54102" level="1" min_level="80"><!--White Guardian Transformation-->
+			<required_items>
+				<item id="92401;95502" count="1"/><!--Spellbook: White Guardian-->
+			</required_items>
+		</skill>
+		<skill id="70" level="50" min_level="80" cost="17800000"/><!--Emergency Rescue-->
+		<skill id="144" level="42" min_level="81" cost="160000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="57" min_level="81" cost="160000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="26" min_level="81" cost="160000000"/><!--Confusion-->
+		<skill id="402" level="16" min_level="81" cost="160000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="31" min_level="81" cost="160000000"/><!--Drain HP-->
+		<skill id="147" level="56" min_level="81" cost="160000000"/><!--Magic Resistance-->
+		<skill id="122" level="21" min_level="81" cost="160000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="21" min_level="81" cost="160000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1632" level="5" min_level="81" cost="160000000"/><!--Deadly Strike-->
+		<skill id="367" level="2" min_level="81" cost="160000000"/><!--Dance of Medusa-->
+		<skill id="70" level="51" min_level="81" cost="160000000"/><!--Emergency Rescue-->
+		<skill id="144" level="43" min_level="82" cost="170000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="58" min_level="82" cost="170000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="27" min_level="82" cost="170000000"/><!--Confusion-->
+		<skill id="402" level="17" min_level="82" cost="170000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="32" min_level="82" cost="170000000"/><!--Drain HP-->
+		<skill id="147" level="57" min_level="82" cost="170000000"/><!--Magic Resistance-->
+		<skill id="122" level="22" min_level="82" cost="170000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="22" min_level="82" cost="170000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1632" level="6" min_level="82" cost="170000000"/><!--Deadly Strike-->
+		<skill id="70" level="52" min_level="82" cost="170000000"/><!--Emergency Rescue-->
+		<skill id="144" level="44" min_level="83" cost="240000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="59" min_level="83" cost="240000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="28" min_level="83" cost="240000000"/><!--Confusion-->
+		<skill id="402" level="18" min_level="83" cost="240000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="33" min_level="83" cost="240000000"/><!--Drain HP-->
+		<skill id="147" level="58" min_level="83" cost="240000000"/><!--Magic Resistance-->
+		<skill id="122" level="23" min_level="83" cost="240000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="23" min_level="83" cost="240000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1632" level="7" min_level="83" cost="240000000"/><!--Deadly Strike-->
+		<skill id="367" level="3" min_level="83" cost="240000000"/><!--Dance of Medusa-->
+		<skill id="70" level="53" min_level="83" cost="240000000"/><!--Emergency Rescue-->
+		<skill id="144" level="45" min_level="84" cost="240000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="60" min_level="84" cost="240000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="29" min_level="84" cost="240000000"/><!--Confusion-->
+		<skill id="402" level="19" min_level="84" cost="240000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="34" min_level="84" cost="240000000"/><!--Drain HP-->
+		<skill id="147" level="59" min_level="84" cost="240000000"/><!--Magic Resistance-->
+		<skill id="122" level="24" min_level="84" cost="240000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="24" min_level="84" cost="240000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1632" level="8" min_level="84" cost="240000000"/><!--Deadly Strike-->
+		<skill id="84" level="5" min_level="84" cost="240000000"/><!--Poison Blade Dance-->
+		<skill id="70" level="54" min_level="84" cost="240000000"/><!--Emergency Rescue-->
+		<skill id="144" level="46" min_level="85" cost="840000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="61" min_level="85" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="30" min_level="85" cost="840000000"/><!--Confusion-->
+		<skill id="402" level="20" min_level="85" cost="840000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="35" min_level="85" cost="840000000"/><!--Drain HP-->
+		<skill id="147" level="60" min_level="85" cost="840000000"/><!--Magic Resistance-->
+		<skill id="122" level="25" min_level="85" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="25" min_level="85" cost="840000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="55" min_level="85" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="144" level="47" min_level="86" cost="840000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="62" min_level="86" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="31" min_level="86" cost="840000000"/><!--Confusion-->
+		<skill id="402" level="21" min_level="86" cost="840000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="36" min_level="86" cost="840000000"/><!--Drain HP-->
+		<skill id="147" level="61" min_level="86" cost="840000000"/><!--Magic Resistance-->
+		<skill id="122" level="26" min_level="86" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="26" min_level="86" cost="840000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="56" min_level="86" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="144" level="48" min_level="87" cost="840000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="63" min_level="87" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="32" min_level="87" cost="840000000"/><!--Confusion-->
+		<skill id="402" level="22" min_level="87" cost="840000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="37" min_level="87" cost="840000000"/><!--Drain HP-->
+		<skill id="147" level="62" min_level="87" cost="840000000"/><!--Magic Resistance-->
+		<skill id="122" level="27" min_level="87" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="27" min_level="87" cost="840000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="57" min_level="87" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="144" level="49" min_level="88" cost="840000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="64" min_level="88" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="33" min_level="88" cost="840000000"/><!--Confusion-->
+		<skill id="402" level="23" min_level="88" cost="840000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="38" min_level="88" cost="840000000"/><!--Drain HP-->
+		<skill id="147" level="63" min_level="88" cost="840000000"/><!--Magic Resistance-->
+		<skill id="122" level="28" min_level="88" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="28" min_level="88" cost="840000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="58" min_level="88" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="144" level="50" min_level="89" cost="840000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="65" min_level="89" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="34" min_level="89" cost="840000000"/><!--Confusion-->
+		<skill id="402" level="24" min_level="89" cost="840000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="39" min_level="89" cost="840000000"/><!--Drain HP-->
+		<skill id="147" level="64" min_level="89" cost="840000000"/><!--Magic Resistance-->
+		<skill id="122" level="29" min_level="89" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="29" min_level="89" cost="840000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="59" min_level="89" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="144" level="51" min_level="90" cost="840000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="66" min_level="90" cost="840000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="35" min_level="90" cost="840000000"/><!--Confusion-->
+		<skill id="402" level="25" min_level="90" cost="840000000"><!--Shackle-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45250" level="40" min_level="90" cost="840000000"/><!--Drain HP-->
+		<skill id="147" level="65" min_level="90" cost="840000000"/><!--Magic Resistance-->
+		<skill id="122" level="30" min_level="90" cost="840000000"><!--Hex-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="115" level="30" min_level="90" cost="840000000"><!--Power Break-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="60" min_level="90" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="45104" level="4" min_level="76" cost="7600000"><!--Acumen-->
+			<required_items>
+				<item id="94370;95539" count="1"/><!--Master's Book: Acumen-->
+			</required_items>
+		</skill>
+		<skill id="45108" level="3" min_level="76" cost="7600000"><!--Magic Barrier-->
+			<required_items>
+				<item id="94362;95534" count="1"/><!--Master's Book: Magic Barrier-->
+			</required_items>
+		</skill>
+		<skill id="45105" level="4" min_level="76" cost="7600000"><!--Empower-->
+			<required_items>
+				<item id="94361;95533" count="1"/><!--Master's Book: Empower-->
+			</required_items>
+		</skill>
+		<skill id="45112" level="3" min_level="76" cost="7600000"><!--Berserker Spirit-->
+			<required_items>
+				<item id="94366;95769" count="1"/><!--Master's Book: Berserker Spirit-->
+			</required_items>
+		</skill>
+		<skill id="45109" level="4" min_level="76" cost="7600000"><!--Focus-->
+			<required_items>
+				<item id="94363;95535" count="1"/><!--Master's Book: Focus-->
+			</required_items>
+		</skill>
+		<skill id="45111" level="3" min_level="76" cost="7600000"><!--Haste-->
+			<required_items>
+				<item id="94369;95538" count="1"/><!--Master's Book: Haste-->
+			</required_items>
+		</skill>
+		<skill id="45107" level="3" min_level="76" cost="7600000"><!--Wind Walk-->
+			<required_items>
+				<item id="94365;95537" count="1"/><!--Master's Book: Wind Walk-->
+			</required_items>
+		</skill>
+		<skill id="45110" level="4" min_level="76" cost="7600000"><!--Death Whisper-->
+			<required_items>
+				<item id="94364;95536" count="1"/><!--Master's Book: Death Whisper-->
+			</required_items>
+		</skill>
+		<skill id="45106" level="3" min_level="76" cost="7600000"><!--Wild Magic-->
+			<required_items>
+				<item id="94368;95771" count="1"/><!--Master's Book: Wild Magic-->
+			</required_items>
+		</skill>
+		<skill id="45113" level="4" min_level="76" cost="7600000"><!--Clarity-->
+			<required_items>
+				<item id="94367;95770" count="1"/><!--Master's Book: Clarity-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="2" min_level="85" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45401" level="1" min_level="85" cost="840000000"><!--Crazy Waltz-->
+			<required_items>
+				<item id="94322;95527" count="1"/><!--Spellbook: Crazy Waltz-->
+			</required_items>
+		</skill>
+		<skill id="45402" level="1" min_level="82" cost="170000000"><!--Frantic Pace-->
+			<required_items>
+				<item id="94323;95528" count="1"/><!--Spellbook: Frantic Pace-->
+			</required_items>
+			<blocked_skills>
+				<skill id="3"/><!--Power Strike-->
+				<skill id="16"/><!--Mortal Blow-->
+				<skill id="56"/><!--Power Shot-->
+				<skill id="45187"/><!--Guard Crush-->
+			</blocked_skills>
+		</skill>
+		<skill id="45402" level="2" min_level="84" cost="240000000"><!--Frantic Pace-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45402" level="3" min_level="86" cost="840000000"><!--Frantic Pace-->
+			<required_items>
+				<item id="57" count="3500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45402" level="4" min_level="88" cost="840000000"><!--Frantic Pace-->
+			<required_items>
+				<item id="57" count="4000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45402" level="5" min_level="90" cost="840000000"><!--Frantic Pace-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="54231" level="1" min_level="82"><!--Dragon Slayer Appearance-->
+			<required_items>
+				<item id="96300;96780" count="1"/><!--Spellbook: Dragon Slayer-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="3" min_level="88" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="30000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45269" level="1" min_level="76"><!--Expanded Potential of Dyes-->
+			<required_items>
+				<item id="96613;96614" count="1"/><!--Spellbook: Expanded Potential of Dyes-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="1" min_level="76"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="2" min_level="80"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="40000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="3" min_level="85"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="100000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="4" min_level="90"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="200000000"/><!--Adena-->
+			</required_items>
+		</skill>
+	</normal_skill_tree>
+</list>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--REWORKED: MORSE-->
+<list>
+	<normal_skill_tree class_id="49"><!--Orc Mystic-->
+		<skill id="1001" level="1" min_level="1"/><!--Battle Cry-->
+		<skill id="250" level="1" min_level="1"/><!--Weapon Mastery-->
+		<skill id="118" level="1" min_level="1"/><!--Magician's Curiosity-->
+		<skill id="1090" level="1" min_level="1"/><!--Life Drain-->
+		<skill id="1009" level="1" min_level="2" cost="5"/><!--Chant of Shield-->
+		<skill id="1007" level="1" min_level="3" cost="5"/><!--Chant of Might-->
+		<skill id="252" level="1" min_level="4" cost="15"/><!--Light Armor Mastery-->
+		<skill id="251" level="1" min_level="4" cost="15"/><!--Robe Mastery-->
+		<skill id="1090" level="2" min_level="5" cost="20"/><!--Life Drain-->
+		<skill id="252" level="2" min_level="7" cost="25"/><!--Light Armor Mastery-->
+		<skill id="251" level="2" min_level="7" cost="25"/><!--Robe Mastery-->
+		<skill id="1010" level="1" min_level="7" cost="25"/><!--Spirit Shield-->
+		<skill id="1100" level="1" min_level="7" cost="25"/><!--Chill Flame-->
+		<skill id="1095" level="1" min_level="7" cost="25"/><!--Venom-->
+		<skill id="1097" level="1" min_level="7" cost="25"/><!--Dreaming Spirit-->
+		<skill id="1090" level="3" min_level="8" cost="25"/><!--Life Drain-->
+		<skill id="1003" level="1" min_level="10" cost="100"/><!--Eagle Spirit-->
+		<skill id="1005" level="1" min_level="10" cost="100"/><!--Soul Evasion-->
+		<skill id="252" level="3" min_level="11" cost="160"/><!--Light Armor Mastery-->
+		<skill id="251" level="3" min_level="11" cost="160"/><!--Robe Mastery-->
+		<skill id="253" level="1" min_level="11" cost="160"/><!--Heavy Armor Mastery-->
+		<skill id="1090" level="4" min_level="12" cost="190"/><!--Life Drain-->
+		<skill id="1001" level="2" min_level="14" cost="190"/><!--Battle Cry-->
+		<skill id="252" level="4" min_level="14" cost="190"/><!--Light Armor Mastery-->
+		<skill id="251" level="4" min_level="14" cost="190"/><!--Robe Mastery-->
+		<skill id="250" level="2" min_level="14" cost="190"/><!--Weapon Mastery-->
+		<skill id="253" level="2" min_level="14" cost="190"/><!--Heavy Armor Mastery-->
+		<skill id="1100" level="2" min_level="14" cost="190"/><!--Chill Flame-->
+		<skill id="1095" level="2" min_level="14" cost="190"/><!--Venom-->
+		<skill id="1097" level="2" min_level="14" cost="190"/><!--Dreaming Spirit-->
+		<skill id="1092" level="1" min_level="14" cost="190"/><!--Fear-->
+		<skill id="1090" level="5" min_level="16" cost="250"/><!--Life Drain-->
+	</normal_skill_tree>
+</list>

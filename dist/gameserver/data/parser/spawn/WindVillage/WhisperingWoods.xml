@@ -1,0 +1,3236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107816" y="58046" z="-4392" h="35339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107826" y="58266" z="-4400" h="61850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107430" y="58064" z="-4408" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107736" y="58118" z="-4392" h="57834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107879" y="58316" z="-4400" h="28592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107839" y="58530" z="-4400" h="15793" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107395" y="57745" z="-4400" h="65006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107566" y="58049" z="-4392" h="10665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107958" y="57975" z="-4384" h="30472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107445" y="58113" z="-4408" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107707" y="58260" z="-4400" h="63460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107507" y="58380" z="-4416" h="3109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107655" y="58739" z="-4408" h="10875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107295" y="58414" z="-4424" h="8740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107490" y="58469" z="-4416" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108110" y="58494" z="-4392" h="20926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107754" y="57876" z="-4384" h="51578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107491" y="58494" z="-4416" h="21535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107570" y="58572" z="-4408" h="17933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107560" y="58222" z="-4400" h="29221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107946" y="58051" z="-4392" h="62873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107903" y="58551" z="-4400" h="7832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107542" y="58585" z="-4408" h="1471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107909" y="57993" z="-4392" h="56012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107726" y="58751" z="-4408" h="57991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107668" y="58376" z="-4408" h="2295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108201" y="58280" z="-4384" h="46951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107352" y="58712" z="-4416" h="476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107915" y="58496" z="-4400" h="2164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107473" y="57905" z="-4400" h="17930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109288" y="57284" z="-4376" h="62414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110344" y="56162" z="-4392" h="37605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110209" y="55901" z="-4376" h="18679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110722" y="56642" z="-4456" h="59855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110739" y="55696" z="-4408" h="2019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110190" y="56242" z="-4376" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110226" y="55834" z="-4376" h="52982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110126" y="56260" z="-4376" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110089" y="56021" z="-4360" h="10250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110169" y="55827" z="-4360" h="10250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110649" y="55685" z="-4400" h="62095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110029" y="56138" z="-4352" h="60026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110179" y="56345" z="-4376" h="33760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110594" y="56522" z="-4432" h="7749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110103" y="55931" z="-4360" h="22146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110235" y="56261" z="-4392" h="19389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110536" y="56076" z="-4400" h="31287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110620" y="56205" z="-4416" h="1887" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110660" y="56332" z="-4424" h="6006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110165" y="56547" z="-4384" h="53120" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110378" y="56417" z="-4408" h="58165" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110600" y="56015" z="-4408" h="51492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110333" y="56496" z="-4400" h="45629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108842" y="59401" z="-4384" h="55494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108790" y="59357" z="-4376" h="3509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108961" y="59510" z="-4376" h="42000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109175" y="59407" z="-4376" h="16519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108851" y="59544" z="-4392" h="35035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108629" y="58894" z="-4384" h="35389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108775" y="59151" z="-4376" h="29306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108661" y="59205" z="-4384" h="62423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108790" y="59076" z="-4376" h="52976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109108" y="59169" z="-4344" h="36936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108576" y="59153" z="-4384" h="63105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109008" y="58990" z="-4336" h="54078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108932" y="59111" z="-4344" h="38798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108770" y="59099" z="-4376" h="3028" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108863" y="58956" z="-4360" h="3831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108789" y="59011" z="-4376" h="31656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109020" y="59057" z="-4344" h="57251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109213" y="59279" z="-4344" h="10643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109477" y="57731" z="-4344" h="11189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108859" y="57799" z="-4384" h="11769" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109313" y="57303" z="-4376" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109285" y="58083" z="-4344" h="56583" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109369" y="57268" z="-4376" h="13850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109142" y="57266" z="-4376" h="47911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109250" y="57600" z="-4376" h="41998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109110" y="57265" z="-4376" h="30406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109599" y="57662" z="-4352" h="31362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109480" y="57178" z="-4376" h="25921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109513" y="57571" z="-4376" h="44872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108821" y="58145" z="-4376" h="51837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109530" y="57203" z="-4376" h="43645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109442" y="57192" z="-4376" h="28610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109579" y="57327" z="-4384" h="49953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108914" y="57714" z="-4384" h="39177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109181" y="57316" z="-4384" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108818" y="57641" z="-4384" h="7643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109813" y="57617" z="-4336" h="52791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109429" y="57281" z="-4376" h="31654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109487" y="57265" z="-4384" h="61026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109046" y="57395" z="-4376" h="22479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109098" y="57956" z="-4368" h="10258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109532" y="57336" z="-4384" h="3506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109163" y="57296" z="-4384" h="9752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109116" y="57455" z="-4384" h="18547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109620" y="57869" z="-4328" h="33541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109271" y="57416" z="-4384" h="44973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108678" y="57467" z="-4376" h="31561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107481" y="59457" z="-4392" h="58932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107121" y="59476" z="-4384" h="18668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107293" y="60182" z="-4336" h="48409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107298" y="60179" z="-4336" h="54989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107184" y="60164" z="-4336" h="14190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107191" y="60214" z="-4336" h="58705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="106791" y="59914" z="-4368" h="25116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107416" y="60331" z="-4336" h="10885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107599" y="59864" z="-4368" h="5267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107249" y="60053" z="-4344" h="20239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107561" y="60131" z="-4344" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107233" y="59423" z="-4384" h="26430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107345" y="60220" z="-4336" h="42177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107527" y="59867" z="-4368" h="64421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107658" y="60168" z="-4344" h="49896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="106956" y="59830" z="-4368" h="60022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108595" y="59391" z="-4384" h="17989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107276" y="60010" z="-4344" h="11999" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="106916" y="60007" z="-4368" h="15657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107418" y="59602" z="-4384" h="52266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107612" y="60065" z="-4344" h="64022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107170" y="60059" z="-4344" h="63514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107298" y="59820" z="-4360" h="52129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107136" y="59722" z="-4368" h="40955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107059" y="59697" z="-4376" h="62174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107446" y="59946" z="-4344" h="22213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107089" y="59643" z="-4376" h="12631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="107387" y="59591" z="-4376" h="50264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="107195" y="59680" z="-4368" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="107152" y="59667" z="-4368" h="36146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="106687" y="60071" z="-4368" h="61380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108905" y="59755" z="-4400" h="38068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108974" y="59647" z="-4384" h="1113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108922" y="59666" z="-4400" h="23095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108777" y="59794" z="-4400" h="12390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109257" y="59392" z="-4256" h="21239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="108626" y="59777" z="-4392" h="65029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="108550" y="59496" z="-4392" h="46951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109128" y="59598" z="-4384" h="28937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="108591" y="59897" z="-4392" h="52081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109676" y="60713" z="-4472" h="44151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110351" y="60948" z="-4520" h="42291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110582" y="61038" z="-4520" h="3952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110288" y="60603" z="-4480" h="61784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110482" y="60879" z="-4504" h="26430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110421" y="60982" z="-4520" h="43645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110528" y="60853" z="-4504" h="35453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110306" y="60757" z="-4496" h="11911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109897" y="60562" z="-4488" h="10667" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110721" y="60750" z="-4488" h="35415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109762" y="60457" z="-4480" h="18749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109874" y="60742" z="-4496" h="31023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110171" y="60637" z="-4488" h="59533" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110584" y="60909" z="-4504" h="270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110507" y="60900" z="-4504" h="29046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110629" y="60993" z="-4520" h="47653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110361" y="60468" z="-4448" h="21009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="109639" y="60337" z="-4464" h="19231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109800" y="60940" z="-4224" h="4507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110083" y="60557" z="-4488" h="6123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110123" y="60657" z="-4488" h="52619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110012" y="60702" z="-4504" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="109803" y="60913" z="-4272" h="47628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110422" y="60540" z="-4448" h="2867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110414" y="60388" z="-4448" h="25686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110519" y="60645" z="-4472" h="42467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110334" y="60836" z="-4512" h="48162" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="109918" y="60643" z="-4488" h="17870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110439" y="60854" z="-4512" h="32433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110550" y="60728" z="-4488" h="36125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111656" y="57213" z="-4512" h="48819" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111839" y="57270" z="-4512" h="51578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112043" y="57260" z="-4528" h="53271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111605" y="57182" z="-4504" h="35733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112203" y="61159" z="-4584" h="39619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112564" y="61054" z="-4584" h="27819" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112548" y="61168" z="-4592" h="54617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112116" y="61080" z="-4584" h="34199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112414" y="60990" z="-4584" h="23184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112465" y="60883" z="-4584" h="63335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112362" y="61091" z="-4584" h="6098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112213" y="60738" z="-4584" h="11105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112362" y="61039" z="-4584" h="1532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112577" y="61598" z="-4592" h="7832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112715" y="60873" z="-4584" h="12554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112169" y="60738" z="-4576" h="20899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112541" y="61089" z="-4584" h="9275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112304" y="60953" z="-4584" h="18613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111861" y="60865" z="-4568" h="7141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112436" y="61566" z="-4592" h="63333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112061" y="60968" z="-4576" h="13283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112562" y="60958" z="-4584" h="38277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112097" y="61098" z="-4584" h="22294" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112071" y="60863" z="-4576" h="56774" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112154" y="60924" z="-4584" h="34099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112159" y="61451" z="-4584" h="15103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112626" y="61513" z="-4592" h="44912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112073" y="61784" z="-4584" h="59404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112332" y="61439" z="-4592" h="48552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112495" y="61623" z="-4592" h="48763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112201" y="61504" z="-4584" h="52029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112171" y="61725" z="-4584" h="64423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111774" y="61448" z="-4576" h="17458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112086" y="61771" z="-4584" h="40148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114486" y="61009" z="-4600" h="27615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114452" y="61033" z="-4600" h="57093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114372" y="60900" z="-4600" h="370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114186" y="61307" z="-4592" h="54329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114355" y="60581" z="-4600" h="49879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="114079" y="60636" z="-4592" h="13364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113705" y="60660" z="-4584" h="60029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113933" y="60486" z="-4576" h="19768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113700" y="61167" z="-4584" h="15845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113480" y="60715" z="-4584" h="57866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113944" y="60707" z="-4592" h="10547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113682" y="60470" z="-4576" h="10907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114462" y="60610" z="-4608" h="60820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113510" y="60766" z="-4584" h="18985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113924" y="60653" z="-4584" h="16499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113671" y="61083" z="-4584" h="49286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113860" y="61112" z="-4584" h="2164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113761" y="61080" z="-4584" h="43322" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114077" y="60503" z="-4584" h="63329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113755" y="60798" z="-4584" h="33513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113728" y="60653" z="-4584" h="58413" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113682" y="60749" z="-4584" h="56650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113621" y="60520" z="-4584" h="30169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113653" y="60589" z="-4584" h="32803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113608" y="60473" z="-4584" h="2510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113750" y="61006" z="-4584" h="45641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113498" y="60708" z="-4584" h="2186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113940" y="60337" z="-4568" h="21234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114000" y="60674" z="-4592" h="10493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="114112" y="60566" z="-4592" h="20926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113671" y="62864" z="-4496" h="19372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114041" y="62821" z="-4488" h="53610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113563" y="62815" z="-4496" h="14483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113150" y="62442" z="-4544" h="8551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113892" y="62736" z="-4488" h="64056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113614" y="62732" z="-4496" h="34268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113888" y="62700" z="-4488" h="29369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113207" y="62298" z="-4544" h="29764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113299" y="62988" z="-4520" h="19286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113215" y="62272" z="-4544" h="17197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113598" y="62882" z="-4496" h="5197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113411" y="62488" z="-4520" h="17882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113535" y="62820" z="-4504" h="39159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113901" y="62915" z="-4496" h="2296" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114043" y="62673" z="-4488" h="28153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113614" y="62800" z="-4496" h="49509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113848" y="62654" z="-4488" h="23500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113387" y="63011" z="-4512" h="26282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114045" y="62756" z="-4488" h="16925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113508" y="62773" z="-4504" h="49865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113396" y="62891" z="-4512" h="31023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113353" y="62780" z="-4512" h="6531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113190" y="62605" z="-4520" h="13399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114159" y="62522" z="-4504" h="62916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113831" y="62977" z="-4496" h="2019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113412" y="63074" z="-4512" h="25463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113563" y="62747" z="-4496" h="4487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113226" y="62891" z="-4504" h="56781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113632" y="63103" z="-4504" h="44317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113676" y="63011" z="-4496" h="24670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115843" y="61259" z="-4600" h="52255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115603" y="60934" z="-4608" h="53551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115744" y="60702" z="-4608" h="11098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115734" y="60879" z="-4608" h="12227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115589" y="61383" z="-4600" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115576" y="60654" z="-4600" h="44912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115768" y="60995" z="-4608" h="3346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116043" y="60999" z="-4608" h="8740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115621" y="61044" z="-4608" h="59120" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115360" y="61251" z="-4608" h="8735" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116040" y="61221" z="-4600" h="56305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115356" y="61070" z="-4616" h="19506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115491" y="61307" z="-4608" h="60022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115564" y="60798" z="-4608" h="45641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115435" y="60827" z="-4616" h="18283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116070" y="61072" z="-4608" h="61707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115864" y="61072" z="-4608" h="65535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115573" y="60628" z="-4600" h="2843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115544" y="61218" z="-4608" h="8191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115337" y="61249" z="-4608" h="40411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115311" y="61336" z="-4608" h="12209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115197" y="61546" z="-4608" h="49148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115369" y="61570" z="-4600" h="2259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115310" y="60792" z="-4616" h="743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115439" y="61616" z="-4600" h="29673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115270" y="61561" z="-4608" h="16884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115662" y="61448" z="-4600" h="60027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115783" y="61660" z="-4600" h="33142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115894" y="61443" z="-4592" h="42467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115706" y="61424" z="-4600" h="22136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114840" y="62361" z="-4576" h="3831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115071" y="62845" z="-4560" h="14137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115310" y="62790" z="-4560" h="13748" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115651" y="62709" z="-4560" h="35021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114917" y="62750" z="-4552" h="2811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115450" y="62669" z="-4576" h="48087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115182" y="62224" z="-4592" h="19859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115359" y="62356" z="-4600" h="38436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115441" y="62845" z="-4552" h="6479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115415" y="62364" z="-4600" h="4390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115176" y="62775" z="-4560" h="63568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115502" y="62125" z="-4600" h="47723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115212" y="62590" z="-4592" h="17871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115760" y="62585" z="-4576" h="19498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114795" y="62516" z="-4552" h="10717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115127" y="62230" z="-4592" h="2930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115444" y="62781" z="-4552" h="5277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115273" y="62625" z="-4576" h="46781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="114739" y="62783" z="-4544" h="4994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115714" y="62514" z="-4584" h="18909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115155" y="63073" z="-4512" h="57341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115260" y="62078" z="-4600" h="40459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="114696" y="62672" z="-4544" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115126" y="62893" z="-4544" h="11334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115606" y="62348" z="-4592" h="26077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115507" y="62316" z="-4600" h="29411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115344" y="63062" z="-4512" h="62936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115264" y="61971" z="-4600" h="58039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115104" y="62551" z="-4584" h="7391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114729" y="62372" z="-4560" h="56011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117329" y="58505" z="-4544" h="35682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117613" y="58144" z="-4544" h="26375" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117010" y="58863" z="-4544" h="54661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117020" y="58489" z="-4544" h="4516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117500" y="58517" z="-4552" h="34249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117647" y="58354" z="-4544" h="40931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117256" y="58560" z="-4544" h="7389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117404" y="58999" z="-4552" h="48819" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117305" y="59096" z="-4552" h="25238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117830" y="58796" z="-4552" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117681" y="58930" z="-4552" h="53764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117519" y="59019" z="-4552" h="12916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117157" y="58470" z="-4544" h="52424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117304" y="58960" z="-4552" h="52973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117085" y="59046" z="-4552" h="720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117664" y="58908" z="-4552" h="15244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117790" y="58943" z="-4552" h="62067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117700" y="58852" z="-4552" h="15707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117325" y="58154" z="-4544" h="9273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117142" y="58374" z="-4544" h="977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117266" y="58326" z="-4544" h="21179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117303" y="58849" z="-4552" h="2456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117209" y="58916" z="-4552" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117679" y="58716" z="-4552" h="17101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117833" y="58436" z="-4544" h="25181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117366" y="58526" z="-4544" h="61707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117787" y="58166" z="-4536" h="5279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117730" y="58421" z="-4544" h="52129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117410" y="58733" z="-4552" h="8525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117597" y="58833" z="-4552" h="44536" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117373" y="60194" z="-4600" h="15086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117390" y="59978" z="-4592" h="13326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117197" y="60702" z="-4600" h="39119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117394" y="60310" z="-4600" h="28500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116875" y="60545" z="-4608" h="38532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117500" y="59703" z="-4576" h="15649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117141" y="60605" z="-4600" h="16653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117308" y="60016" z="-4600" h="41430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117509" y="59849" z="-4584" h="5499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117112" y="60076" z="-4600" h="40961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117747" y="59803" z="-4584" h="18819" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117010" y="60033" z="-4592" h="51029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116997" y="60370" z="-4600" h="6116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116859" y="60307" z="-4600" h="46113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117601" y="59897" z="-4584" h="32023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117055" y="60583" z="-4608" h="2201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117194" y="60442" z="-4600" h="61968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117541" y="60614" z="-4592" h="12089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116989" y="60293" z="-4600" h="41273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117110" y="59751" z="-4584" h="54915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117497" y="60083" z="-4600" h="23818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116860" y="60398" z="-4608" h="26856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117773" y="60280" z="-4600" h="40601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117379" y="59846" z="-4584" h="48263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117266" y="60443" z="-4600" h="56920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117522" y="60168" z="-4600" h="18955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117365" y="60561" z="-4600" h="57470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117330" y="60551" z="-4600" h="44151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="116884" y="59725" z="-4576" h="17418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117197" y="60484" z="-4600" h="23055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117583" y="55748" z="-4568" h="1897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117111" y="55636" z="-4560" h="63000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117996" y="55300" z="-4568" h="18881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117132" y="55511" z="-4552" h="51418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117040" y="56984" z="-4560" h="28937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117363" y="55822" z="-4568" h="64279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117294" y="55710" z="-4560" h="14137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117373" y="55754" z="-4560" h="38682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117416" y="55750" z="-4568" h="64056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117074" y="55632" z="-4560" h="2246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116941" y="55577" z="-4560" h="39001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="116903" y="55535" z="-4560" h="34361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117361" y="55519" z="-4552" h="33265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117102" y="55531" z="-4552" h="48035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117145" y="55796" z="-4560" h="28290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117215" y="55445" z="-4552" h="54138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117084" y="55475" z="-4552" h="62055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117115" y="57408" z="-4544" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116918" y="57094" z="-4544" h="40584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="116488" y="56935" z="-4560" h="47459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116711" y="57314" z="-4544" h="10361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117172" y="57423" z="-4544" h="38054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117359" y="57176" z="-4544" h="54866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117422" y="57215" z="-4544" h="49242" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117160" y="57474" z="-4544" h="21848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116620" y="57002" z="-4552" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117275" y="57141" z="-4552" h="62265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116707" y="57141" z="-4552" h="52629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117506" y="57012" z="-4552" h="13833" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117239" y="57337" z="-4544" h="7332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116793" y="56816" z="-4568" h="16833" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117320" y="57193" z="-4544" h="48021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117321" y="56598" z="-4568" h="44643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117010" y="57040" z="-4560" h="19442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117028" y="56676" z="-4568" h="56544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116660" y="56760" z="-4568" h="12116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117150" y="57037" z="-4560" h="24723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117016" y="56395" z="-4568" h="1434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117416" y="56866" z="-4560" h="7107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117023" y="56718" z="-4568" h="5493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116843" y="56808" z="-4568" h="16385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117334" y="57043" z="-4552" h="38278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117374" y="56531" z="-4568" h="24059" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117013" y="57291" z="-4544" h="7856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117474" y="57135" z="-4552" h="16451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117565" y="56892" z="-4560" h="51298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116780" y="53794" z="-4528" h="26638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115361" y="54005" z="-4512" h="42594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115531" y="53780" z="-4504" h="25322" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115551" y="53652" z="-4512" h="53434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114953" y="53940" z="-4536" h="10426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115889" y="53697" z="-4512" h="697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115659" y="53564" z="-4504" h="52340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115162" y="53916" z="-4528" h="8191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115114" y="53675" z="-4512" h="57650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115194" y="53828" z="-4520" h="62720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115263" y="53585" z="-4496" h="62917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115218" y="54191" z="-4528" h="46115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115783" y="53486" z="-4488" h="33894" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115871" y="53667" z="-4512" h="52664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115399" y="53661" z="-4512" h="29255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="115448" y="53549" z="-4496" h="31617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115358" y="53696" z="-4512" h="60371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115363" y="53718" z="-4512" h="351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115884" y="53607" z="-4504" h="17877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115223" y="53989" z="-4512" h="6358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115278" y="54096" z="-4512" h="27312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115324" y="54112" z="-4512" h="537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="115022" y="53885" z="-4528" h="43925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115351" y="54090" z="-4512" h="52179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115581" y="53790" z="-4504" h="36601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115208" y="53770" z="-4512" h="42946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115362" y="53479" z="-4472" h="7833" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115498" y="53796" z="-4504" h="27733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115006" y="54004" z="-4536" h="5721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115581" y="53236" z="-4464" h="61269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="115761" y="53418" z="-4488" h="63172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117583" y="55188" z="-4552" h="25366" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117583" y="54908" z="-4544" h="51808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117288" y="55076" z="-4544" h="18948" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117288" y="54908" z="-4528" h="24609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117294" y="54847" z="-4528" h="40066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117626" y="54912" z="-4544" h="57885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118588" y="54615" z="-4576" h="30565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117109" y="54239" z="-4520" h="9051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117342" y="54951" z="-4536" h="22105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117542" y="54936" z="-4544" h="60521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117791" y="54960" z="-4560" h="60611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117231" y="54882" z="-4536" h="7852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117145" y="53545" z="-4536" h="34323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117433" y="53656" z="-4560" h="743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="116573" y="53706" z="-4504" h="22988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118636" y="54643" z="-4576" h="7632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117410" y="55026" z="-4544" h="37288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117576" y="54900" z="-4544" h="65133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118471" y="54010" z="-4560" h="14764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118764" y="53796" z="-4544" h="12554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117449" y="54876" z="-4536" h="24668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118524" y="54443" z="-4576" h="10233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118850" y="54786" z="-4576" h="40692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118926" y="54680" z="-4576" h="17518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117230" y="53535" z="-4536" h="23193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118656" y="54593" z="-4576" h="18598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118744" y="53997" z="-4552" h="28594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117398" y="54894" z="-4536" h="15640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116600" y="53897" z="-4504" h="16720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="116817" y="53611" z="-4520" h="53820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118770" y="53782" z="-4544" h="41855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117630" y="53715" z="-4560" h="5381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117233" y="53675" z="-4552" h="63984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118922" y="54278" z="-4568" h="3781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117444" y="53367" z="-4512" h="9825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117479" y="53347" z="-4512" h="64046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117612" y="53986" z="-4560" h="60887" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117568" y="53992" z="-4560" h="7855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116748" y="53552" z="-4520" h="23881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117644" y="54115" z="-4560" h="21891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="116860" y="54139" z="-4520" h="60521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="117378" y="53429" z="-4528" h="23621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117478" y="53214" z="-4536" h="58958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116893" y="53464" z="-4512" h="3107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117467" y="53358" z="-4512" h="53989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117364" y="54217" z="-4544" h="2273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="116649" y="53565" z="-4520" h="5648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117061" y="53891" z="-4544" h="7114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117171" y="53317" z="-4480" h="5830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117538" y="53331" z="-4544" h="55545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117615" y="53997" z="-4560" h="31271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117376" y="53224" z="-4512" h="53353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="116988" y="53997" z="-4536" h="48551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="117195" y="53900" z="-4552" h="56251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118315" y="54559" z="-4576" h="19952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118378" y="53896" z="-4560" h="2365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118567" y="54646" z="-4576" h="22984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118400" y="54619" z="-4576" h="43333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="119046" y="54391" z="-4576" h="9820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118893" y="53894" z="-4544" h="41055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="119308" y="54347" z="-4576" h="61243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="119066" y="54385" z="-4576" h="62974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118807" y="54577" z="-4576" h="43163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="119111" y="54109" z="-4560" h="14903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="119131" y="54678" z="-4576" h="13354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118839" y="53887" z="-4544" h="15438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="119335" y="54217" z="-4576" h="59255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="119185" y="54215" z="-4568" h="26287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="119125" y="54566" z="-4576" h="37773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="119208" y="54746" z="-4568" h="61302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="119517" y="53151" z="-4560" h="52791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118700" y="54842" z="-4576" h="3868" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118867" y="53879" z="-4544" h="59404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="120152" y="53462" z="-4576" h="9946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="120216" y="53096" z="-4576" h="58808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118781" y="54035" z="-4552" h="20352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="120245" y="53144" z="-4576" h="54675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="119807" y="53206" z="-4576" h="34550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="120273" y="53185" z="-4576" h="60521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="120127" y="53098" z="-4576" h="46039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118599" y="52587" z="-4568" h="57392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118435" y="52677" z="-4568" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118920" y="52744" z="-4552" h="54435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118620" y="52852" z="-4560" h="7116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118157" y="52573" z="-4576" h="64542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118858" y="52933" z="-4552" h="39923" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118691" y="52585" z="-4568" h="17127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118345" y="53095" z="-4560" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118711" y="52557" z="-4568" h="33967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118051" y="52763" z="-4576" h="25177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118043" y="53025" z="-4576" h="9579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118581" y="52314" z="-4568" h="60820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118541" y="52240" z="-4568" h="8381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118091" y="52745" z="-4576" h="59404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118108" y="52966" z="-4576" h="58754" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="117939" y="53031" z="-4576" h="47654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118368" y="52860" z="-4568" h="55281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118903" y="52620" z="-4560" h="49895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118182" y="52499" z="-4576" h="22961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118542" y="52656" z="-4568" h="1522" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118487" y="53088" z="-4560" h="51113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118794" y="52274" z="-4568" h="24060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="118673" y="53091" z="-4552" h="4035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118340" y="52562" z="-4576" h="58165" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118017" y="52965" z="-4576" h="22567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118333" y="52782" z="-4568" h="13359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118251" y="52662" z="-4576" h="56902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="118536" y="52283" z="-4568" h="65402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="119560" y="53131" z="-4560" h="11218" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="120240" y="53122" z="-4576" h="19090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="120188" y="53117" z="-4576" h="54647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="120413" y="53010" z="-4576" h="6326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="120099" y="52859" z="-4576" h="3465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="120402" y="52807" z="-4576" h="17870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="120163" y="52736" z="-4576" h="24891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="120056" y="52620" z="-4584" h="49953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="119758" y="52638" z="-4576" h="25071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118915" y="52559" z="-4560" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="118778" y="52948" z="-4560" h="44467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="119743" y="53207" z="-4568" h="40304" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="119743" y="52588" z="-4576" h="60022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="119522" y="52995" z="-4560" h="59514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="119988" y="52790" z="-4576" h="58347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="120148" y="53215" z="-4576" h="41243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="120179" y="52664" z="-4576" h="46951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="120340" y="52701" z="-4576" h="8717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="119667" y="52849" z="-4568" h="56966" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="120273" y="52817" z="-4576" h="1418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="120393" y="53068" z="-4576" h="25615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="119831" y="52563" z="-4584" h="54989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="119640" y="53141" z="-4568" h="45061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="120066" y="53169" z="-4576" h="49953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="119873" y="53204" z="-4576" h="57297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122446" y="53037" z="-4560" h="22143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122646" y="53237" z="-4552" h="46598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122532" y="52981" z="-4552" h="21099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122707" y="53224" z="-4552" h="43928" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122594" y="53106" z="-4560" h="29255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122494" y="52966" z="-4560" h="15707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122760" y="53170" z="-4552" h="53122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122580" y="52859" z="-4552" h="35733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122755" y="53564" z="-4576" h="4505" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122632" y="53149" z="-4552" h="46727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122535" y="53531" z="-4576" h="58727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122499" y="53619" z="-4576" h="52976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122490" y="53211" z="-4568" h="57439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122478" y="53457" z="-4576" h="10255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122819" y="53050" z="-4544" h="32858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122573" y="53461" z="-4576" h="5381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122878" y="53626" z="-4576" h="16921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122460" y="53080" z="-4560" h="28263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122492" y="53238" z="-4568" h="16789" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122847" y="53717" z="-4576" h="17127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121236" y="53786" z="-4576" h="30617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121416" y="53884" z="-4576" h="11883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121251" y="53526" z="-4576" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121163" y="53585" z="-4576" h="44539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121065" y="53567" z="-4576" h="25948" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121519" y="53657" z="-4576" h="14750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121337" y="53870" z="-4576" h="31161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121309" y="53577" z="-4576" h="34732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121618" y="53911" z="-4568" h="64461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121169" y="53634" z="-4576" h="7051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121081" y="53654" z="-4576" h="20501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121093" y="53733" z="-4576" h="53314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121019" y="53797" z="-4576" h="11348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121616" y="53752" z="-4576" h="15083" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121306" y="53617" z="-4576" h="43881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121276" y="53518" z="-4576" h="30565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121139" y="53771" z="-4576" h="4444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="121584" y="53949" z="-4576" h="51354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121333" y="53502" z="-4576" h="4841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121361" y="53830" z="-4576" h="43607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121160" y="53862" z="-4576" h="19739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121390" y="54088" z="-4568" h="30804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="121044" y="53715" z="-4576" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121074" y="54116" z="-4576" h="56305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121230" y="53764" z="-4576" h="13937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121194" y="53714" z="-4576" h="10556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121765" y="53551" z="-4576" h="52614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121592" y="53842" z="-4576" h="37813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121494" y="53987" z="-4576" h="64640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="121568" y="53648" z="-4576" h="6926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122849" y="52970" z="-4536" h="51854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124670" y="52919" z="-4592" h="5678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124405" y="52864" z="-4584" h="47723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124255" y="53010" z="-4584" h="18661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124415" y="52710" z="-4584" h="6095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="123920" y="53026" z="-4576" h="52982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124440" y="52585" z="-4584" h="29654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124869" y="52848" z="-4592" h="13324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124504" y="52630" z="-4584" h="34250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124598" y="53297" z="-4584" h="17523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124038" y="53384" z="-4584" h="9154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124559" y="52679" z="-4592" h="58381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124194" y="52886" z="-4584" h="18370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124270" y="53175" z="-4584" h="11186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124314" y="52923" z="-4584" h="27589" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124010" y="52965" z="-4576" h="52664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="123120" y="53256" z="-4552" h="56305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124698" y="53348" z="-4584" h="44636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122847" y="52839" z="-4536" h="32633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124304" y="52911" z="-4584" h="25158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122793" y="53166" z="-4552" h="15649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122835" y="52808" z="-4536" h="38588" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124322" y="53510" z="-4584" h="57302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124181" y="53636" z="-4584" h="15397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124478" y="53609" z="-4584" h="2351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124061" y="53373" z="-4584" h="1422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124392" y="53241" z="-4584" h="25615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124160" y="53074" z="-4584" h="37903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124169" y="53580" z="-4584" h="45670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="124376" y="53195" z="-4584" h="11872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124752" y="53255" z="-4584" h="61243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124670" y="53601" z="-4584" h="34828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124372" y="53187" z="-4584" h="48796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="123176" y="53320" z="-4552" h="40584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="124362" y="53564" z="-4584" h="41055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122894" y="53786" z="-4568" h="14587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="122756" y="53200" z="-4552" h="44675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="124463" y="53630" z="-4584" h="57304" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="122925" y="53612" z="-4568" h="3868" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="122809" y="53763" z="-4576" h="35115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="125850" y="51985" z="-4576" h="32834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126415" y="52020" z="-4584" h="1586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="126334" y="51873" z="-4584" h="61138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="126141" y="51964" z="-4584" h="11749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="125791" y="51670" z="-4592" h="59502" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="125803" y="51857" z="-4584" h="33767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="126319" y="51805" z="-4584" h="42373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126001" y="51787" z="-4576" h="32678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="126093" y="51807" z="-4576" h="35208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="125906" y="51932" z="-4576" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126415" y="51818" z="-4584" h="16386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="125668" y="52062" z="-4584" h="33620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="126666" y="51954" z="-4592" h="11146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126632" y="52095" z="-4584" h="16024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="126412" y="51920" z="-4584" h="64002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126017" y="51611" z="-4576" h="36230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="126128" y="51605" z="-4576" h="21891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="126083" y="51808" z="-4576" h="11871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="126578" y="51987" z="-4584" h="16886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="125634" y="51864" z="-4592" h="14938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="125863" y="51769" z="-4584" h="15707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="126187" y="51590" z="-4576" h="16385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="126565" y="51776" z="-4592" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="126130" y="51599" z="-4576" h="10895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126152" y="51855" z="-4584" h="28592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="126395" y="51783" z="-4584" h="39332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126364" y="51806" z="-4584" h="57824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126146" y="51608" z="-4576" h="42739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="126257" y="51635" z="-4584" h="29321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="125973" y="51670" z="-4576" h="36230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112797" y="55087" z="-4552" h="5236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112558" y="55204" z="-4544" h="26189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113948" y="54751" z="-4568" h="45086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114051" y="54539" z="-4560" h="6981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114097" y="54749" z="-4568" h="3143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113786" y="54345" z="-4528" h="52802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114002" y="54088" z="-4512" h="28636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="114085" y="54574" z="-4560" h="31429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113976" y="54821" z="-4576" h="17428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113739" y="54281" z="-4520" h="56932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113961" y="54936" z="-4568" h="63321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113822" y="54057" z="-4480" h="65005" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113911" y="53988" z="-4472" h="37234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114324" y="54588" z="-4560" h="14877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="114395" y="54397" z="-4560" h="6953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113929" y="54527" z="-4552" h="8478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="114201" y="54090" z="-4536" h="59774" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113712" y="54553" z="-4552" h="24622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="113773" y="54632" z="-4568" h="13795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113970" y="53988" z="-4488" h="19685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113677" y="54194" z="-4496" h="41149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113677" y="54202" z="-4496" h="26931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113621" y="54619" z="-4560" h="41045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113532" y="54385" z="-4528" h="30399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114216" y="54202" z="-4544" h="269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114274" y="54416" z="-4560" h="22968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113487" y="54558" z="-4552" h="9267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113485" y="54216" z="-4496" h="33036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114078" y="54525" z="-4560" h="63285" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="114188" y="54571" z="-4560" h="17012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="113728" y="54031" z="-4472" h="54347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="113454" y="54652" z="-4568" h="359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112760" y="55702" z="-4568" h="16925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112686" y="55368" z="-4560" h="2534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112515" y="55907" z="-4568" h="23395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112504" y="55470" z="-4552" h="26806" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112849" y="55307" z="-4560" h="2301" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112206" y="55195" z="-4520" h="63441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112854" y="55185" z="-4560" h="6568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112475" y="55116" z="-4528" h="37901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112177" y="54915" z="-4496" h="22947" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112210" y="55122" z="-4504" h="5733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112328" y="54994" z="-4512" h="28979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112624" y="55426" z="-4552" h="9523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112332" y="54974" z="-4512" h="18224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112141" y="55197" z="-4520" h="11196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112468" y="55067" z="-4528" h="64365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112006" y="54877" z="-4456" h="27009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111950" y="55267" z="-4496" h="52678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112242" y="54997" z="-4496" h="6419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112342" y="55766" z="-4552" h="35096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112008" y="57051" z="-4552" h="55971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111965" y="56881" z="-4552" h="54667" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112146" y="55627" z="-4544" h="52877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112158" y="55111" z="-4504" h="56299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112537" y="55777" z="-4568" h="4971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112265" y="55668" z="-4544" h="55149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="112197" y="55692" z="-4552" h="11381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112002" y="55294" z="-4504" h="32899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112205" y="55599" z="-4544" h="64997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112178" y="55465" z="-4536" h="8686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="112242" y="55837" z="-4552" h="6476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110642" y="55904" z="-4400" h="53691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110736" y="55859" z="-4408" h="51673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110703" y="56725" z="-4448" h="10320" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="110901" y="55891" z="-4424" h="47231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110680" y="56389" z="-4424" h="2782" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110762" y="55955" z="-4416" h="4161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="110612" y="56262" z="-4416" h="13283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="110782" y="56513" z="-4448" h="1885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="111359" y="56980" z="-4496" h="65066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111767" y="57018" z="-4536" h="55534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111935" y="57151" z="-4536" h="53996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111874" y="56515" z="-4568" h="6327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111672" y="57113" z="-4512" h="38829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111960" y="56765" z="-4560" h="8723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111351" y="56978" z="-4496" h="11673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111920" y="56764" z="-4560" h="37573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="111574" y="57206" z="-4504" h="25686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22330" /> <!-- Ales -->
+		<point x="111409" y="57232" z="-4480" h="1060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="111820" y="57099" z="-4520" h="26893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="111839" y="57303" z="-4512" h="53420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="111731" y="57310" z="-4504" h="53271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111466" y="56922" z="-4512" h="47041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="111283" y="57066" z="-4496" h="12327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="111526" y="57007" z="-4512" h="39994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22329" /> <!-- Photoroni -->
+		<point x="112100" y="56588" z="-4568" h="42677" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111864" y="56468" z="-4560" h="54015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111468" y="56855" z="-4512" h="63440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111697" y="56511" z="-4552" h="61419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111699" y="56911" z="-4528" h="54257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111738" y="57238" z="-4504" h="49064" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111955" y="57157" z="-4536" h="20387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22328" /> <!-- Volatu -->
+		<point x="111807" y="56537" z="-4560" h="7801" />
+	</spawn>
+</list>

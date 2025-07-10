@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "additional_drop.dtd">
+<!--monster_type:
+0 - All monsters/raid's
+1 - All monsters
+2 - All raid's
+3 - Monsters/raid's in main world
+4 - Monsters in main world
+5 - Raid's in main world
+6 - Monsters/raid's in instance world
+7 - Monsters in instance world
+8 - Raid's in instance world
+-->
+<list>
+	<!--<drop min_level="" max_level="" level_penalty="" monster_type="">
+		<npcs>
+			<npc id=""/>
+		</npcs>
+		<reward item_id="" min="" max="" chance=""/>
+	</drop>-->
+</list>

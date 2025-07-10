@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!-- Author: nexvill -->
+<list>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_1">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="167784" y="28104" z="-3644" h="25" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_2">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="167784" y="28312" z="-3634" h="1870" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_3">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="167784" y="28504" z="-3617" h="1105" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_4">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="167928" y="28104" z="-3641" h="44" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_5">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="167944" y="28312" z="-3628" h="1057" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_6">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="167944" y="28504" z="-3614" h="72" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_7">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168104" y="28120" z="-3642" h="49142" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_8">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168232" y="28104" z="-3644" h="48133" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_9">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168328" y="28088" z="-3647" h="48196" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_10">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168552" y="28104" z="-3645" h="31536" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_11">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168552" y="28296" z="-3626" h="32834" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_12">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168552" y="28488" z="-3612" h="32840" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_13">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168696" y="28104" z="-3644" h="33700" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_14">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168712" y="28296" z="-3628" h="33763" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_1_15">
+		<npc id="22116" /> <!-- Farcran -->
+		<point x="168712" y="28488" z="-3616" h="32771" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_1">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="167784" y="28104" z="-3644" h="25" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_2">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="167784" y="28312" z="-3634" h="1870" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_3">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="167784" y="28504" z="-3617" h="1105" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_4">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="167928" y="28104" z="-3641" h="44" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_5">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="167944" y="28312" z="-3628" h="1057" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_6">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="167944" y="28504" z="-3614" h="72" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_7">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168104" y="28120" z="-3642" h="49142" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_8">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168232" y="28104" z="-3644" h="48133" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_9">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168328" y="28088" z="-3647" h="48196" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_10">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168552" y="28104" z="-3645" h="31536" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_11">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168552" y="28296" z="-3626" h="32834" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_12">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168552" y="28488" z="-3612" h="32840" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_13">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168696" y="28104" z="-3644" h="33700" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_14">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168712" y="28296" z="-3628" h="33763" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_2_15">
+		<npc id="22117" /> <!-- Deprive -->
+		<point x="168712" y="28488" z="-3616" h="32771" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_1">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="167784" y="28104" z="-3644" h="25" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_2">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="167784" y="28312" z="-3634" h="1870" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_3">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="167784" y="28504" z="-3617" h="1105" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_4">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="167928" y="28104" z="-3641" h="44" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_5">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="167944" y="28312" z="-3628" h="1057" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_6">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="167944" y="28504" z="-3614" h="72" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_7">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168104" y="28120" z="-3642" h="49142" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_8">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168232" y="28104" z="-3644" h="48133" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_9">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168328" y="28088" z="-3647" h="48196" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_10">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168552" y="28104" z="-3645" h="31536" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_11">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168552" y="28296" z="-3626" h="32834" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_12">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168552" y="28488" z="-3612" h="32840" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_13">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168696" y="28104" z="-3644" h="33700" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_14">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168712" y="28296" z="-3628" h="33763" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_variant_3_15">
+		<npc id="22118" /> <!-- Hatar Ratman Boss -->
+		<point x="168712" y="28488" z="-3616" h="32771" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_1">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168120" y="28232" z="-3624" h="47669" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_2">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168120" y="28296" z="-3624" h="47917" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_3">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168120" y="28360" z="-3624" h="47745" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_4">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168184" y="28232" z="-3624" h="47663" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_5">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168184" y="28296" z="-3624" h="47225" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_6">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168184" y="28360" z="-3624" h="49558" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_7">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168264" y="28216" z="-3624" h="49792" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_8">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168264" y="28280" z="-3624" h="50187" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_9">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168264" y="28360" z="-3624" h="50812" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_10">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168344" y="28216" z="-3624" h="49824" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_11">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168344" y="28280" z="-3624" h="50843" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_70_box_12">
+		<npc id="22125" /> <!-- Transcendent Treasure Chest -->
+		<point x="168344" y="28344" z="-3624" h="47335" />
+	</spawn>
+</list>

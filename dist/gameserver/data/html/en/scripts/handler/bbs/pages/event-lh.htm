@@ -1,0 +1,107 @@
+<html><body>
+<title>Сообщество | Ивенты</title>
+<table width=755 height=400 border=0 cellpadding=0 cellspacing=-11>
+	<tr>
+		<td width=135 valign="top" align="left">
+			<!-- Menu classic -->
+			<table cellpadding=0 cellspacing=0>
+				<tr><td>
+				<br><br><br>
+				</td></tr>
+				<tr><td><font color=FFFFFF>
+				<button value="Главная" action="bypass _bbspage:index" width=135 height=47 fore="OMGzButtons.btnOFF" back="OMGzButtons.btnOFF_down">
+				</font></td></tr>
+				<tr><td><font color=LEVEL>
+				<button value="Ивенты" action="bypass _bbspage:events" width=135 height=47 fore="OMGzButtons.btnON" back="OMGzButtons.btnON">
+				</font></td></tr>
+				<tr><td><font color=FFFFFF>
+				<button value="Магазин" action="bypass _bbspage:shop" width=135 height=47 fore="OMGzButtons.btnOFF" back="OMGzButtons.btnOFF_down">
+				</font></td></tr>
+				<tr><td><font color=FFFFFF>
+				<button value="Кузница" action="bypass _bbspage:forges" width=135 height=47 fore="OMGzButtons.btnOFF" back="OMGzButtons.btnOFF_down">
+				</font></td></tr>
+				<tr><td><font color=FFFFFF>
+				<button value="Баффер" action="bypass _cbbsbuffer 0" width=135 height=47 fore="OMGzButtons.btnOFF" back="OMGzButtons.btnOFF_down">
+				</font></td></tr>
+				<tr><td><font color=FFFFFF>
+				<button value="Телепорт" action="bypass _cbbsteleport" width=135 height=47 fore="OMGzButtons.btnOFF" back="OMGzButtons.btnOFF_down">
+				</font></td></tr>
+				<tr><td><font color=FFFFFF>
+				<button value="Карьера" action="bypass _bbspage:career" width=135 height=47 fore="OMGzButtons.btnOFF" back="OMGzButtons.btnOFF_down">
+				</font></td></tr>
+				<tr><td><font color=FFFFFF>
+				<button value="Сервисы" action="bypass _bbspage:services" width=135 height=47 fore="OMGzButtons.btnOFF" back="OMGzButtons.btnOFF_down">
+				</font></td></tr>
+				<tr><td><font color=FFFFFF>
+				<button value="Кабинет" action="bypass _cbbsservices_cabinet" width=135 height=47 fore="OMGzButtons.btnOFF" back="OMGzButtons.btnOFF_down">
+				</font></td></tr>
+				<tr><td align="center"><br><br><br>
+				</td></tr>
+				<tr><td align="center"><font color="655C4D"><?copyright?></font>
+				</td></tr>
+				<tr><td align="center"><font color="655C4D">Server Version: </font><font color="LEVEL"><?version?></font>
+				</td></tr>
+			</table>
+		</td>
+		<td width=700 height=400 background="L2UI_CT1.Windows_DF_Drawer_Bg" cellpadding=0 cellspacing=0>
+			<!-- Затычка для правого бара -->
+			<table>
+				<tr><td width=660 height=19></td></tr>
+			</table>
+			<table background="L2UI_CT1.Windows_DF_Drawer_Bg">
+				<tr><td width=680 height=2></td></tr>
+			</table>
+			<table width=660 height=480 border=0 cellpadding=0 cellspacing=0>
+				<!-- Верхняя Навигация начало-->
+				<tr>
+					<td align=center>
+						<table width=620 background="L2UI_CT1.Windows_DF_Drawer_Bg" border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td width=25 height=40></td>
+								<td width=310>
+									<font color=DDD3B6><a action="bypass _bbspage:events">Ивенты</a>&nbsp;->&nbsp;Last Hero</font>
+								</td>
+								<td align=right width=260><font color=DDD3B6>Текущий онлайн: <?total_online?></font></td>
+								<td width=25 height=40></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- Верхняя Навигация Конец-->				
+				<!-- Основная полка Начало-->
+				<tr>
+					<td align=center>
+						<table width=600 height=478 border=0 cellpadding=0 cellspacing=0>
+						<tr>
+							<td valign="top" align="center">
+								<br><br><br>
+								<table width=600>
+									<tr>
+										<td width=600><font color=DDD3B6>Описание ивента:</font><br></td>
+									</tr>
+									<tr><td width=600>Ивент проводится в колизее. Цель - убить как можно больше противников.</td></tr>
+									<tr><td width=600>За каждого убитого противника вам дают награду. Награда не выдается за убийство слишком <br1>слабых противников.</td></tr>
+									<tr><td width=600>Разрешается использовать любые предметы. Бафы перед боем не снимаются.</td></tr>
+									<tr><td width=600>Дается 3 минуты на регистрацию, 1 минута на телепортацию, 5 минут на бой.</td></tr>
+									<tr><td width=600>Если победитель определится раньше, бой автоматически заканчивается.</td></tr>
+									<tr><td width=600>В конце ивента, все участники воскрешаются, вылечиваются, и телепортируются обратно.</td></tr>
+									<tr><td width=600>В случае смерти, опыт не теряется.<br></td></tr>
+									<tr><td width=600>Для регистрации в ивенте, можно воспользоваться ссылкой (ивент должен быть активен):<br></td></tr>
+									<tr><td width=600><a action="bypass _bbsscripts:events.lastHero.LastHero:addPlayer;_bbspage:event-lh"><font color="aadd77">Регистрация в ивенте</font></a><br></td></tr>
+									<tr><td width=600>Ваш уровень должен соответствовать указанной в анонсе категории.<br></td></tr>
+									<tr><td width=600>Если вы не хотите участвовать, но хотите понаблюдать за боем - можете воспользоваться<br1>обзорными кристаллами, либо купить места на трибунах у Arena Director.</td></tr>
+								</table>
+								<br>
+								<button value="В меню" action="bypass _bbspage:events" width=100 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- Основная полка Конец-->
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="53100" levels="1" name="Heroic Miracle">
+		<set name="icon" value="icon.skill0912"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="850"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="53101" levels="1" name="Heroic Miracle">
+		<set name="icon" value="icon.skill0912"/>
+		<set name="reuseDelay" value="100000"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect instant="true" name="RestoreMP" value="1"/> <!-- TODO check power -->
+			<effect>
+				<add stat="runSpd" value="20"/>
+				<add stat="pAtkSpd" value="100"/>
+				<add stat="mAtkSpd" value="100"/>
+			</effect>
+		</for>
+	</skill>
+</list>

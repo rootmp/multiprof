@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!-- Author: nexvill -->
+<list>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_1">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177848" y="20184" z="-3250" h="62245" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_2">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177848" y="20248" z="-3250" h="64582" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_3">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177848" y="20312" z="-3250" h="750" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_4">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177848" y="20376" z="-3250" h="766" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_5">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177848" y="20440" z="-3250" h="763" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_6">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177912" y="20184" z="-3250" h="64794" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_7">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177912" y="20248" z="-3250" h="681" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_8">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177912" y="20312" z="-3250" h="692" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_9">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177912" y="20376" z="-3250" h="64950" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_10">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177912" y="20440" z="-3250" h="461" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_11">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177976" y="20184" z="-3250" h="65166" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_12">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177976" y="20248" z="-3250" h="65239" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_13">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177976" y="20312" z="-3250" h="482" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_14">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177976" y="20376" z="-3250" h="362" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_1_15">
+		<npc id="22110" /> <!-- Taik Orc Supply Officer -->
+		<point x="177976" y="20440" z="-3250" h="382" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_1">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177848" y="20184" z="-3250" h="62245" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_2">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177848" y="20248" z="-3250" h="64582" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_3">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177848" y="20312" z="-3250" h="750" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_4">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177848" y="20376" z="-3250" h="766" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_5">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177848" y="20440" z="-3250" h="763" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_6">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177912" y="20184" z="-3250" h="64794" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_7">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177912" y="20248" z="-3250" h="681" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_8">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177912" y="20312" z="-3250" h="692" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_9">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177912" y="20376" z="-3250" h="64950" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_10">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177912" y="20440" z="-3250" h="461" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_11">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177976" y="20184" z="-3250" h="65166" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_12">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177976" y="20248" z="-3250" h="65239" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_13">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177976" y="20312" z="-3250" h="482" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_14">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177976" y="20376" z="-3250" h="362" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_2_15">
+		<npc id="22111" /> <!-- Tortured Undead -->
+		<point x="177976" y="20440" z="-3250" h="382" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_1">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177848" y="20184" z="-3250" h="62245" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_2">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177848" y="20248" z="-3250" h="64582" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_3">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177848" y="20312" z="-3250" h="750" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_4">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177848" y="20376" z="-3250" h="766" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_5">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177848" y="20440" z="-3250" h="763" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_6">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177912" y="20184" z="-3250" h="64794" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_7">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177912" y="20248" z="-3250" h="681" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_8">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177912" y="20312" z="-3250" h="692" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_9">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177912" y="20376" z="-3250" h="64950" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_10">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177912" y="20440" z="-3250" h="461" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_11">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177976" y="20184" z="-3250" h="65166" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_12">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177976" y="20248" z="-3250" h="65239" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_13">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177976" y="20312" z="-3250" h="482" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_14">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177976" y="20376" z="-3250" h="362" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_variant_3_15">
+		<npc id="22112" /> <!-- Soul of Ruins -->
+		<point x="177976" y="20440" z="-3250" h="382" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_1">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178024" y="20328" z="-3250" h="421" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_2">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178024" y="20392" z="-3250" h="341" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_3">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178088" y="20216" z="-3250" h="64768" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_4">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178088" y="20280" z="-3250" h="159" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_5">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178088" y="20344" z="-3250" h="350" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_6">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178088" y="20392" z="-3250" h="64597" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_7">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178088" y="20456" z="-3250" h="402" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_8">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178136" y="20200" z="-3250" h="58499" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_9">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178136" y="20408" z="-3250" h="0" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_10">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178136" y="20472" z="-3250" h="1961" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_11">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178152" y="20280" z="-3250" h="661" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_50_box_12">
+		<npc id="22123" /> <!-- Transcendent Treasure Chest -->
+		<point x="178152" y="20344" z="-3250" h="1260" />
+	</spawn>
+</list>

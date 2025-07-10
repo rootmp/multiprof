@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="90200">
+		<!--Received Skill Critical Damage -150-->
+	</option_data>
+	<option_data id="90201">
+		<!--Received Skill Critical Damage -200-->
+	</option_data>
+	<option_data id="90202">
+		<!--Received Skill Critical Damage -300-->
+	</option_data>
+	<option_data id="90203">
+		<!--P./ M. Def. +30-->
+		<for>
+			<add order="0x60" stat="pDef" value="30"/>
+			<add order="0x60" stat="mDef" value="30"/>
+		</for>
+	</option_data>
+	<option_data id="90204">
+		<!--Debuff/ Anomaly Resistance +2%-->
+	</option_data>
+	<option_data id="90205">
+		<!--P./ M. Def. +100-->
+		<for>
+			<add order="0x60" stat="pDef" value="100"/>
+			<add order="0x60" stat="mDef" value="100"/>
+		</for>
+	</option_data>
+	<option_data id="90206">
+		<!--Knockback/ Suppression/ Hold Resistance +1%-->
+	</option_data>
+	<option_data id="90207">
+		<!--Max HP/ MP +200, acquired XP/ SP +20%, XP recovery fee -10%-->
+	</option_data>
+	<option_data id="90208">
+		<!--Knockback Resistance +1%, received P. Skill Critical Damage -0.2%-->
+		<for>
+			<p_defence_trait name="knockback" value="1"/>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.998"/>
+		</for>
+	</option_data>
+	<option_data id="90209">
+		<!--Dagger Resistance +2%, received P. Skill Critical Damage -0.4%-->
+		<for>
+			<p_defence_trait name="dagger" value="2"/>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.996"/>
+		</for>
+	</option_data>
+	<option_data id="90210">
+		<!--Sword Resistance +2%, received P. Skill Critical Damage -0.6%-->
+		<for>
+			<p_defence_trait name="sword" value="2"/>
+			<p_defence_trait name="ancientsword" value="2"/>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.994"/>
+		</for>
+	</option_data>
+	<option_data id="90211">
+		<!--Bow Resistance +2%, Firearms Resistance +2%, received P. Skill Critical Damage -0.8%-->
+		<for>
+			<p_defence_trait name="bow" value="2"/>
+			<p_defence_trait name="firearms" value="2"/>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.998"/>
+		</for>
+	</option_data>
+	<option_data id="90212">
+		<!--P./ M. Atk. +5, P./ M. Def. +10, acquired XP/ SP +2%-->
+	</option_data>
+	<option_data id="90213">
+		<!--P./ M. Atk. +10, P./ M. Def. +20, acquired XP/ SP +3%-->
+	</option_data>
+	<option_data id="90214">
+		<!--P./ M. Atk. +30, P./ M. Def. +60, acquired XP/ SP +7%-->
+	</option_data>
+	<option_data id="90215">
+		<!--P./ M. Atk. +40, P./ M. Def. +80, PvE damage +3%, received PvE damage -3%-->
+	</option_data>
+	<option_data id="90216">
+		<!--P./ M. Atk. +50, P./ M. Def. +100, Debuff/ Anomaly Resistance +3%-->
+	</option_data>
+	<option_data id="90217">
+		<!--P./ M. Atk. +20, P./ M. Def. +40, acquired XP/ SP +10%-->
+	</option_data>
+	<option_data id="90218">
+		<!--P./ M. Atk. +50, P./ M. Def. +100-->
+	</option_data>
+	<option_data id="90219">
+		<!--Damage Decrease Ignore +2-->
+	</option_data>
+	<option_data id="90220">
+		<!--Damage Decrease Ignore +8-->
+	</option_data>
+	<option_data id="90221">
+		<!--Basic Critical Damage and P./ M. Skill Critical Damage +100-->
+		<for>
+			<p_critical_damage value="100" type="DIFF"/>
+			<p_skill_critical_damage value="100" type="DIFF"/>
+			<p_magic_critical_dmg value="100" type="DIFF"/>
+		</for>
+	</option_data>
+</list>

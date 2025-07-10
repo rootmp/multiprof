@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="96300" name="Spellbook: Dragon Slayer">
+		<set name="icon" value="icon.si_phanteon_book"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="9300000"/>
+		<set name="grind_point" value="4650000"/>
+		<set name="grind_commission" value="93000"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96301" name="Package: +5 Breastplate of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t901_u_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94842" min_count="1" max_count="1" chance="100" enchant="5"/><!--Breastplate of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96302" name="Package: +5 Gaiters of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t901_l_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94843" min_count="1" max_count="1" chance="100" enchant="5"/><!--Gaiters of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96303" name="Package: +5 Leather Armor of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t902_u_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94846" min_count="1" max_count="1" chance="100" enchant="5"/><!--Leather Armor of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96304" name="Package: +5 Leather Leggings of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t902_l_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94847" min_count="1" max_count="1" chance="100" enchant="5"/><!--Leather Leggings of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96305" name="Package: +5 Tunic of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t903_u_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94850" min_count="1" max_count="1" chance="100" enchant="5"/><!--Tunic of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96306" name="Package: +5 Stockings of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t903_l_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94851" min_count="1" max_count="1" chance="100" enchant="5"/><!--Stockings of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96307" name="Package: +5 Leather Armor of Lightning" add_name="Sealed">
+		<set name="icon" value="icon.armor_t101_u_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93317" min_count="1" max_count="1" chance="100" enchant="5"/><!--Leather Armor of Lightning-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96308" name="Package: +5 Leather Leggings of Lightning" add_name="Sealed">
+		<set name="icon" value="icon.armor_t102_l_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93318" min_count="1" max_count="1" chance="100" enchant="5"/><!--Leather Leggings of Lightning-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96309" name="Package: +5 Ice Crystal Breastplate" add_name="Sealed">
+		<set name="icon" value="icon.armor_t94_u_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93141" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ice Crystal Breastplate-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96310" name="Package: +5 Ice Crystal Gaiters" add_name="Sealed">
+		<set name="icon" value="icon.armor_t94_l_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93142" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ice Crystal Gaiters-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96311" name="Package: +5 Flaming Tunic" add_name="Sealed">
+		<set name="icon" value="icon.armor_t96_u_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93735" min_count="1" max_count="1" chance="100" enchant="5"/><!--Flaming Tunic-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96312" name="Package: +5 Flaming Stockings" add_name="Sealed">
+		<set name="icon" value="icon.armor_t96_l_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93736" min_count="1" max_count="1" chance="100" enchant="5"/><!--Flaming Stockings-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96313" name="Package: +5 Helmet of Mana" add_name="Sealed">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94084" min_count="1" max_count="1" chance="100" enchant="5"/><!--Helmet of Mana-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96314" name="Package: +5 Boots of Evasion" add_name="Sealed">
+		<set name="icon" value="icon.armor_t100_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94086" min_count="1" max_count="1" chance="100" enchant="5"/><!--Boots of Evasion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96315" name="Package: +5 Stun Gauntlets" add_name="Sealed">
+		<set name="icon" value="icon.armor_t96_g_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94264" min_count="1" max_count="1" chance="100" enchant="5"/><!--Stun Gauntlets-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96316" name="Package: +5 Sigil of Inevitability" add_name="Sealed">
+		<set name="icon" value="icon.elos_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94300" min_count="1" max_count="1" chance="100" enchant="5"/><!--Sigil of Inevitability-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96317" name="Package: +5 Shield of Vengeance" add_name="Sealed">
+		<set name="icon" value="icon.shield_of_revenge"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94302" min_count="1" max_count="1" chance="100" enchant="5"/><!--Shield of Vengeance-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96318" name="Package: +5 Helmet of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="95935" min_count="1" max_count="1" chance="100" enchant="5"/><!--Helmet of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96319" name="Package: +5 Gauntlets of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t901_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="95936" min_count="1" max_count="1" chance="100" enchant="5"/><!--Gauntlets of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96320" name="Package: +5 Boots of Protection" add_name="Sealed">
+		<set name="icon" value="icon.armor_t901_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="95937" min_count="1" max_count="1" chance="100" enchant="5"/><!--Boots of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96321" name="Package: +5 Sigil of Protection" add_name="Sealed">
+		<set name="icon" value="icon.sigil_of_protection"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="95664" min_count="1" max_count="1" chance="100" enchant="5"/><!--Sigil of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96322" name="Package: +5 Shield of Protection" add_name="Sealed">
+		<set name="icon" value="icon.shield_of_protection"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="95666" min_count="1" max_count="1" chance="100" enchant="5"/><!--Shield of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96323" name="Package: Scroll: Boost Attack (1000 pcs.)" add_name="Sealed">
+		<set name="icon" value="icon.scrl_of_ladies_silver_knife_01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94269" min_count="1000" max_count="1000" chance="100"/><!--Scroll: Boost Attack-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96324" name="Package: Scroll: Boost Defense (1000 pcs.)" add_name="Sealed">
+		<set name="icon" value="icon.scrl_of_ench_bracelet_lucien_01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94271" min_count="1000" max_count="1000" chance="100"/><!--Scroll: Boost Defense-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96325" name="Package: XP Growth Scroll (1000 pcs.)" add_name="Sealed">
+		<set name="icon" value="icon.etc_recall_exp_scroll"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49674" min_count="1000" max_count="1000" chance="100"/><!--XP Growth Scroll-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96326" name="Package: Soulshot Ticket (5000 pcs.)" add_name="Sealed">
+		<set name="icon" value="icon.etc_exchange_ticket_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90907" min_count="5000" max_count="5000" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96327" name="Package: Special HP Recovery Potion (1000 pcs.)" add_name="Sealed">
+		<set name="icon" value="BranchSys.icon.br_vitality_potion_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91690" min_count="10000" max_count="10000" chance="100"/><!--Special HP Recovery Potion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96328" name="Support Box: +4 Talisman of Eva (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain the following.-->
+		<set name="icon" value="icon.bm_eva_talisman"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96172" min_count="1" max_count="1" chance="100" enchant="4"/><!--Talisman of Eva (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96329" name="Support Box: +4 Dragon Belt (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.r2_belt_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96173" min_count="1" max_count="1" chance="100" enchant="4"/><!--Dragon Belt (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96330" name="Support Box: +4 Cloak of Protection (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.bm_2018_sayha_cloak_back_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96174" min_count="1" max_count="1" chance="100" enchant="4"/><!--Cloak of Protection (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96331" name="Support Box: +4 Talisman of Authority (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.sayhas_talisman_new"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96175" min_count="1" max_count="1" chance="100" enchant="4"/><!--Talisman of Authority (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96332" name="Support Box: Einhasad's Pendant Lv. 2 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="BranchIcon.Icon.bm_pendant_pve_white"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96176" min_count="1" max_count="1" chance="100"/><!--Einhasad's Pendant Lv. 2 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96333" name="Support Box: +4 Circlet of Hero (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.accessory_barka_karm_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96177" min_count="1" max_count="1" chance="100" enchant="4"/><!--Circlet of Hero (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96334" name="Support Box: Brooch Lv. 5 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i06"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96182" min_count="1" max_count="1" chance="100"/><!--Brooch Lv. 5 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96335" name="Support Box: Opal Lv. 4 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bm_jewel_opal_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96183" min_count="1" max_count="1" chance="100"/><!--Opal Lv. 4 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96336" name="Support Box: Coral Lv. 4 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bm_jewel_coral_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96184" min_count="1" max_count="1" chance="100"/><!--Coral Lv. 4 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96337" name="Support Box: Onyx Lv. 4 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bm_jewel_onyx_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96185" min_count="1" max_count="1" chance="100"/><!--Onyx Lv. 4 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96338" name="Support Box: Spinel Lv. 4 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bm_jewel_garnet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96186" min_count="1" max_count="1" chance="100"/><!--Spinel Lv. 4 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96339" name="Support Box: Zircon Lv. 4 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bm_jewel_bloodstone_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96187" min_count="1" max_count="1" chance="100"/><!--Zircon Lv. 4 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96340" name="Support Box: Moonstone Lv. 4 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bm_jewel_moonstone_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96188" min_count="1" max_count="1" chance="100"/><!--Moonstone Lv. 4 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96341" name="Support Box: Agathion Lv. 5 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pi_high_agathion_bracelet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96189" min_count="1" max_count="1" chance="100"/><!--Agathion Lv. 5 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96342" name="Support Box: +5 Agathion Ignis (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96190" min_count="1" max_count="1" chance="100" enchant="5"/><!--Agathion Ignis (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96343" name="Support Box: +5 Agathion Nebula (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.agathion_water_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96191" min_count="1" max_count="1" chance="100" enchant="5"/><!--Agathion Nebula (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96344" name="Support Box: +5 Agathion Procella (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.agathion_wind_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96192" min_count="1" max_count="1" chance="100" enchant="5"/><!--Agathion Procella (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96345" name="Support Box: +5 Agathion Petram (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.agathion_earth_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96193" min_count="1" max_count="1" chance="100" enchant="5"/><!--Agathion Petram (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96346" name="Support Box: +5 Agathion Joy (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.pleasure_agathion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96194" min_count="1" max_count="1" chance="100" enchant="5"/><!--Agathion Joy (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96347" name="Support Box: Talisman Bracelet Lv. 5 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.dimension_bracelet_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96195" min_count="1" max_count="1" chance="100"/><!--Talisman Bracelet Lv. 5 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96348" name="Support Box: Venir's Talisman Lv. 12 (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.benir_talisman_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96196" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 12 (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96349" name="Test Period 3" add_name="2 min.">
+		<set name="icon" value="icon.sa_cube"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96350" name="Antharas Expedition Mark" add_name="Sealed">
+		<set name="icon" value="icon.etc_kyles_blood_dragon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96351" name="Faded Antharas' Earring">
+		<set name="icon" value="icon.earring_of_antaras_essence_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96352" name="Beleth' Treasure Chest Key" add_name="Sealed">
+		<set name="icon" value="icon.bereth_reward_box_key"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96353" name="Package: Sayha's Storm (1000 pcs.)" add_name="Sealed">
+		<set name="icon" value="icon.bm_sayha_storm"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91712" min_count="1000" max_count="1000" chance="100"/><!--Sayha's Storm Lv. 3-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96354" name="Scroll: Enchant Aden Cloak">
+		<set name="icon" value="icon.sayha2017_scrl"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="96355" name="STR Dye" add_name="Lv. 1">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96356" name="STR Dye" add_name="Lv. 2">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96357" name="STR Dye" add_name="Lv. 3">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96358" name="STR Dye" add_name="Lv. 4">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96359" name="STR Dye" add_name="Lv. 5">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96360" name="STR Dye" add_name="Lv. 6">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96361" name="STR Dye" add_name="Lv. 7">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96362" name="STR Dye" add_name="Lv. 8">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96363" name="STR Dye" add_name="Lv. 9">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96364" name="STR Dye" add_name="Lv. 10">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96365" name="STR Dye" add_name="Lv. 11">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96366" name="STR Dye" add_name="Lv. 12">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96367" name="STR Dye" add_name="Lv. 13">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96368" name="STR Dye" add_name="Lv. 14">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96369" name="STR Dye" add_name="Lv. 15">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96370" name="STR Dye" add_name="Lv. 16">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96371" name="STR Dye" add_name="Lv. 17">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96372" name="STR Dye" add_name="Lv. 18">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96373" name="STR Dye" add_name="Lv. 19">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96374" name="STR Dye" add_name="Lv. 20">
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96375" name="CON Dye" add_name="Lv. 1">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96376" name="CON Dye" add_name="Lv. 2">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96377" name="CON Dye" add_name="Lv. 3">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96378" name="CON Dye" add_name="Lv. 4">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96379" name="CON Dye" add_name="Lv. 5">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96380" name="CON Dye" add_name="Lv. 6">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96381" name="CON Dye" add_name="Lv. 7">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96382" name="CON Dye" add_name="Lv. 8">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96383" name="CON Dye" add_name="Lv. 9">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96384" name="CON Dye" add_name="Lv. 10">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96385" name="CON Dye" add_name="Lv. 11">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96386" name="CON Dye" add_name="Lv. 12">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96387" name="CON Dye" add_name="Lv. 13">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96388" name="CON Dye" add_name="Lv. 14">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96389" name="CON Dye" add_name="Lv. 15">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96390" name="CON Dye" add_name="Lv. 16">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96391" name="CON Dye" add_name="Lv. 17">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96392" name="CON Dye" add_name="Lv. 18">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96393" name="CON Dye" add_name="Lv. 19">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96394" name="CON Dye" add_name="Lv. 20">
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96395" name="DEX Dye" add_name="Lv. 1">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96396" name="DEX Dye" add_name="Lv. 2">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96397" name="DEX Dye" add_name="Lv. 3">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96398" name="DEX Dye" add_name="Lv. 4">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96399" name="DEX Dye" add_name="Lv. 5">
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="240000"/>
+		<set name="grind_point" value="120000"/>
+		<set name="grind_commission" value="2400"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+</list>

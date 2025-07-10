@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="36800">
+		<!--P. Atk. +110-->
+	</option_data>
+	<option_data id="36801">
+		<!--P. Atk. +120-->
+	</option_data>
+	<option_data id="36802">
+		<!--P. Atk. +150-->
+	</option_data>
+	<option_data id="36803">
+		<!--P. Atk. +200-->
+	</option_data>
+	<option_data id="36804">
+		<!--M. Atk. +10.-->
+	</option_data>
+	<option_data id="36805">
+		<!--M. Atk. +16.-->
+	</option_data>
+	<option_data id="36806">
+		<!--M. Atk. +22-->
+	</option_data>
+	<option_data id="36807">
+		<!--M. Atk. +28-->
+	</option_data>
+	<option_data id="36808">
+		<!--M. Atk. +34-->
+	</option_data>
+	<option_data id="36809">
+		<!--M. Atk. +40-->
+	</option_data>
+	<option_data id="36810">
+		<!--M. Atk. +46-->
+	</option_data>
+	<option_data id="36811">
+		<!--M. Atk. +52-->
+	</option_data>
+	<option_data id="36812">
+		<!--M. Atk. +58-->
+	</option_data>
+	<option_data id="36813">
+		<!--M. Atk. +64-->
+	</option_data>
+	<option_data id="36814">
+		<!--M. Atk. +70-->
+	</option_data>
+	<option_data id="36815">
+		<!--M. Atk. +76-->
+	</option_data>
+	<option_data id="36816">
+		<!--M. Atk. +82-->
+	</option_data>
+	<option_data id="36817">
+		<!--M. Atk. +88-->
+	</option_data>
+	<option_data id="36818">
+		<!--M. Atk. +94-->
+	</option_data>
+	<option_data id="36819">
+		<!--M. Atk. +100-->
+	</option_data>
+	<option_data id="36820">
+		<!--M. Atk. +110-->
+	</option_data>
+	<option_data id="36821">
+		<!--M. Atk. +120-->
+	</option_data>
+	<option_data id="36822">
+		<!--M. Atk. +150-->
+	</option_data>
+	<option_data id="36823">
+		<!--M. Atk. +200-->
+	</option_data>
+	<option_data id="36824">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36825">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36826">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36827">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36828">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36829">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36830">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36831">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36832">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36833">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36834">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36835">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36836">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36837">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="36838">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="36839">
+		<!--P. Accuracy +1.5-->
+	</option_data>
+	<option_data id="36840">
+		<!--P. Accuracy +1.7-->
+	</option_data>
+	<option_data id="36841">
+		<!--P. Accuracy +1.8-->
+	</option_data>
+	<option_data id="36842">
+		<!--P. Accuracy +2.0-->
+	</option_data>
+	<option_data id="36843">
+		<!--P. Accuracy +3.0-->
+	</option_data>
+	<option_data id="36844">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36845">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36846">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36847">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36848">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36849">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36850">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36851">
+		<!--M. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36852">
+		<!--M. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36853">
+		<!--M. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36854">
+		<!--M. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36855">
+		<!--M. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36856">
+		<!--M. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36857">
+		<!--M. Accuracy +1.3-->
+	</option_data>
+	<option_data id="36858">
+		<!--M. Accuracy +1.4-->
+	</option_data>
+	<option_data id="36859">
+		<!--M. Accuracy +1.5-->
+	</option_data>
+	<option_data id="36860">
+		<!--M. Accuracy +1.7-->
+	</option_data>
+	<option_data id="36861">
+		<!--M. Accuracy +1.8-->
+	</option_data>
+	<option_data id="36862">
+		<!--M. Accuracy +2.0-->
+	</option_data>
+	<option_data id="36863">
+		<!--M. Accuracy +3.0-->
+	</option_data>
+	<option_data id="36864">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36865">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36866">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36867">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36868">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36869">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36870">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36871">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36872">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36873">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36874">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36875">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36876">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36877">
+		<!--Melee Weapon Resistance +1%-->
+	</option_data>
+	<option_data id="36878">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="36879">
+		<!--Melee Weapon Resistance +2%-->
+	</option_data>
+	<option_data id="36880">
+		<!--Melee Weapon Resistance +3%-->
+	</option_data>
+	<option_data id="36881">
+		<!--Melee Weapon Resistance +3%-->
+	</option_data>
+	<option_data id="36882">
+		<!--Melee Weapon Resistance +4%-->
+	</option_data>
+	<option_data id="36883">
+		<!--Melee Weapon Resistance +5%-->
+	</option_data>
+	<option_data id="36884">
+		<!--Max HP +5-->
+	</option_data>
+	<option_data id="36885">
+		<!--Max HP +6-->
+	</option_data>
+	<option_data id="36886">
+		<!--Max HP +7-->
+	</option_data>
+	<option_data id="36887">
+		<!--Max HP +8-->
+	</option_data>
+	<option_data id="36888">
+		<!--Max HP +9-->
+	</option_data>
+	<option_data id="36889">
+		<!--Max HP +10-->
+	</option_data>
+	<option_data id="36890">
+		<!--Max HP +12-->
+	</option_data>
+	<option_data id="36891">
+		<!--Max HP +14-->
+	</option_data>
+	<option_data id="36892">
+		<!--Max HP +16-->
+	</option_data>
+	<option_data id="36893">
+		<!--Max HP +18-->
+	</option_data>
+	<option_data id="36894">
+		<!--Max HP +20-->
+	</option_data>
+	<option_data id="36895">
+		<!--Max HP +22-->
+	</option_data>
+	<option_data id="36896">
+		<!--Max HP +24-->
+	</option_data>
+	<option_data id="36897">
+		<!--Max HP +26-->
+	</option_data>
+	<option_data id="36898">
+		<!--Max HP +28-->
+	</option_data>
+	<option_data id="36899">
+		<!--Max HP +30-->
+	</option_data>
+</list>

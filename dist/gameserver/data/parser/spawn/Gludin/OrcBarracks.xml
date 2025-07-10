@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22137" /> <!-- Turek Orc Marksman -->
+		<point x="-93588" y="105411" z="-3480" h="1376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22137" /> <!-- Turek Orc Marksman -->
+		<point x="-93713" y="105779" z="-3480" h="13328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-93712" y="105629" z="-3480" h="17956" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-93524" y="105449" z="-3480" h="31044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93100" y="105620" z="-3480" h="58357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93892" y="105784" z="-3480" h="48443" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-93522" y="105446" z="-3480" h="24079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-94147" y="105717" z="-3472" h="36166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-93470" y="105379" z="-3480" h="9671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93224" y="105452" z="-3472" h="48404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93687" y="105236" z="-3480" h="53418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93208" y="105534" z="-3480" h="47678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-93713" y="105549" z="-3480" h="61940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93928" y="105364" z="-3480" h="16731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-94029" y="105673" z="-3480" h="46373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93477" y="105311" z="-3472" h="18558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93576" y="105971" z="-3472" h="37931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-93817" y="105487" z="-3480" h="16317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92468" y="107741" z="-3688" h="24315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-93362" y="107743" z="-3688" h="7493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22144" /> <!-- Turek Orc Prefect -->
+		<point x="-92919" y="108032" z="-3696" h="19885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92939" y="108229" z="-3704" h="52042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92883" y="108174" z="-3704" h="31825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92889" y="108157" z="-3696" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92840" y="107718" z="-3688" h="12388" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92565" y="107880" z="-3688" h="5198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92400" y="108325" z="-3688" h="115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22143" /> <!-- Turek Orc Sniper -->
+		<point x="-92944" y="108400" z="-3704" h="50040" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92480" y="108035" z="-3688" h="42780" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92785" y="107873" z="-3688" h="20056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92552" y="108624" z="-3696" h="23251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22145" /> <!-- Turek Orc Elder -->
+		<point x="-92694" y="108331" z="-3696" h="38857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-93276" y="108575" z="-3688" h="56883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92401" y="108704" z="-3696" h="41523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92601" y="110039" z="-3664" h="57967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92575" y="109280" z="-3696" h="7987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92252" y="109109" z="-3696" h="48986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92417" y="110027" z="-3704" h="11590" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92143" y="109637" z="-3712" h="17947" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92196" y="109629" z="-3712" h="4561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92776" y="108650" z="-3688" h="64614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92449" y="109358" z="-3704" h="54367" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92488" y="109706" z="-3704" h="45948" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92598" y="109394" z="-3704" h="10123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22137" /> <!-- Turek Orc Marksman -->
+		<point x="-90124" y="108449" z="-3528" h="54890" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-90303" y="108625" z="-3528" h="49977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-90231" y="108183" z="-3520" h="41422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-91700" y="109962" z="-3696" h="39160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-91697" y="109104" z="-3688" h="28798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-91977" y="109379" z="-3704" h="50756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22144" /> <!-- Turek Orc Prefect -->
+		<point x="-92163" y="109648" z="-3712" h="2781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92121" y="109707" z="-3704" h="44776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-90155" y="108859" z="-3528" h="42573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-90156" y="108386" z="-3520" h="26873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89606" y="108307" z="-3512" h="5996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89757" y="108164" z="-3512" h="34345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89823" y="108300" z="-3520" h="36318" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89708" y="108989" z="-3512" h="36430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89814" y="108859" z="-3520" h="1004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89892" y="108870" z="-3528" h="35096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-90031" y="108606" z="-3528" h="12498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-90100" y="108520" z="-3528" h="5738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-89924" y="108587" z="-3520" h="6701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-89899" y="108564" z="-3520" h="23143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-89870" y="108559" z="-3520" h="34215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-89804" y="108728" z="-3520" h="41777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92675" y="107772" z="-3688" h="55898" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92785" y="107988" z="-3688" h="33025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22144" /> <!-- Turek Orc Prefect -->
+		<point x="-92018" y="109675" z="-3704" h="2377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22144" /> <!-- Turek Orc Prefect -->
+		<point x="-93119" y="108170" z="-3696" h="56216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92472" y="109433" z="-3704" h="62407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-91777" y="109082" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-91724" y="109932" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92459" y="109932" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92467" y="109275" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-91867" y="109217" z="-3696" h="62139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-93335" y="108150" z="-3696" h="15789" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22144" /> <!-- Turek Orc Prefect -->
+		<point x="-91943" y="109698" z="-3704" h="15839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-93031" y="112290" z="-3712" h="18656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92299" y="112542" z="-3720" h="49869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92957" y="112458" z="-3712" h="43702" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92738" y="112214" z="-3712" h="59415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92163" y="112756" z="-3720" h="51791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92421" y="112144" z="-3712" h="49088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92395" y="112113" z="-3712" h="24740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-92739" y="112564" z="-3720" h="61472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92972" y="112487" z="-3712" h="9424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-92731" y="112701" z="-3720" h="47103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-92545" y="112644" z="-3720" h="25205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-92671" y="112514" z="-3720" h="28234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-92386" y="112544" z="-3720" h="59788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-92664" y="112595" z="-3720" h="62628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-88535" y="112389" z="-3416" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22137" /> <!-- Turek Orc Marksman -->
+		<point x="-88998" y="112513" z="-3400" h="13545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-88552" y="112331" z="-3416" h="12087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89255" y="112269" z="-3424" h="24742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-88654" y="112238" z="-3432" h="42237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-88526" y="112450" z="-3416" h="45365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89119" y="112125" z="-3440" h="3421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89088" y="112168" z="-3424" h="44473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89267" y="112224" z="-3432" h="62158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89165" y="112083" z="-3440" h="2853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-88915" y="112356" z="-3416" h="18606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-88830" y="112444" z="-3408" h="20707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-89042" y="112357" z="-3416" h="17027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-89010" y="112506" z="-3408" h="57940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-88989" y="112348" z="-3416" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-88752" y="112371" z="-3416" h="15045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92451" y="108625" z="-3688" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-93208" y="108572" z="-3688" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92474" y="107862" z="-3688" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-93187" y="107865" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92472" y="109703" z="-3704" h="14536" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-92087" y="110081" z="-3704" h="50845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22144" /> <!-- Turek Orc Prefect -->
+		<point x="-93019" y="108170" z="-3704" h="13993" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-91728" y="110042" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92451" y="109226" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-91669" y="109239" z="-3688" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92529" y="109914" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92354" y="112645" z="-3712" h="16041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-92724" y="112978" z="-3712" h="12160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-89038" y="112946" z="-3392" h="62181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92406" y="108654" z="-3688" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-93278" y="108654" z="-3688" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22143" /> <!-- Turek Orc Sniper -->
+		<point x="-92218" y="109767" z="-3704" h="10616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22145" /> <!-- Turek Orc Elder -->
+		<point x="-92143" y="109514" z="-3712" h="14503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22141" /> <!-- Turek Orc Elite -->
+		<point x="-91702" y="109433" z="-3688" h="27415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22137" /> <!-- Turek Orc Marksman -->
+		<point x="-92739" y="112480" z="-3720" h="8111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22144" /> <!-- Turek Orc Prefect -->
+		<point x="-92268" y="109376" z="-3704" h="28378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92571" y="109156" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-91809" y="109245" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-92545" y="109936" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22142" /> <!-- Turek Orc Skirmisher -->
+		<point x="-91650" y="109969" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22137" /> <!-- Turek Orc Marksman -->
+		<point x="-92689" y="112411" z="-3720" h="57616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96710" y="107086" z="-3728" h="13685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-96387" y="106947" z="-3728" h="27130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96765" y="106654" z="-3728" h="35788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22137" /> <!-- Turek Orc Marksman -->
+		<point x="-96412" y="107016" z="-3728" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96930" y="106924" z="-3728" h="25819" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96783" y="106992" z="-3728" h="65520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96705" y="107013" z="-3728" h="38227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96762" y="107028" z="-3728" h="54603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96683" y="106984" z="-3728" h="31441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96721" y="107026" z="-3728" h="43686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96721" y="106957" z="-3728" h="21817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96838" y="106612" z="-3728" h="30703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96727" y="107027" z="-3728" h="45089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96703" y="106993" z="-3728" h="33008" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96187" y="107028" z="-3728" h="36438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-97040" y="106816" z="-3728" h="25643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96135" y="107243" z="-3728" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96968" y="107223" z="-3728" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96851" y="106767" z="-3728" h="11761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96553" y="106788" z="-3728" h="23239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22139" /> <!-- Turek Orc Shaman -->
+		<point x="-96712" y="106993" z="-3728" h="18269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-97095" y="106870" z="-3728" h="4215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96655" y="107356" z="-3728" h="55196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22138" /> <!-- Turek Orc Warrior -->
+		<point x="-96787" y="106786" z="-3728" h="61479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96490" y="107248" z="-3728" h="18924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-97001" y="106388" z="-3672" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-97087" y="107337" z="-3720" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96263" y="107292" z="-3728" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96435" y="107140" z="-3728" h="55256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96634" y="106614" z="-3728" h="28206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22136" /> <!-- Turek Orc Footman -->
+		<point x="-96244" y="106352" z="-3696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22135" /> <!-- Turek Orc -->
+		<point x="-96380" y="106492" z="-3720" h="26990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34134" /> <!-- Tarba -->
+		<point x="-91591" y="107277" z="-3696" h="51554" />
+	</spawn>
+</list>

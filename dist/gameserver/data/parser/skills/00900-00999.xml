@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="913" levels="1" name="Deflect Magic">
+		<set name="icon" value="icon.skill0913"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="magicResist" value="1.6"/>
+		</for>
+	</skill>
+	<skill id="914" levels="1" name="Immunity Barrier">
+		<set name="icon" value="icon.skill0305"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="50"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="song_of_purification"/>
+		<set name="magicLevel" value="81"/>
+		<set name="magicType" value="MUSIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="affect_range" value="1000"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="p_block_debuff">
+				<def name="max_disabled_debuffs" value="5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="915" levels="1" name="Moving Shadows">
+		<set name="icon" value="icon.skill0366"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="300"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="dance_of_shadow"/>
+		<set name="abnormal_effect" value="STEALTH"/>
+		<set name="magicLevel" value="81"/>
+		<set name="magicType" value="MUSIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_PARTY"/>
+		<set name="affect_range" value="1000"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="T"/>
+		<for>
+			<effect name="SilentMove">
+				<mul stat="pAtk" value="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="916" levels="4" name="Shield Deflect Magic">
+		<!--
+			Description: For 8 seconds, transfers magical damage back to the enemy caster.
+		-->
+		<table name="#power">20 30 40 50</table>
+		<table name="#magicLevel">60 64 68 72</table>
+		<table name="#mp_consume">28 30 32 34</table>
+		<set name="icon" value="icon.skill0916"/>
+		<set name="reuseDelay" value="45000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="reflect_magic_dd"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="113">
+			<using kind="Shield"/>
+		</cond>
+		<for>
+			<effect>
+				<add stat="reflectAndBlockMSkillDam" value="#power"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="917" levels="1" name="Final Secret">
+		<set name="icon" value="icon.skill0917"/>
+		<set name="reuseDelay" value="150000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="41"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="final_secret"/>
+		<set name="magicLevel" value="79"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pvpPhysDmgBonus" value="1.15"/>
+				<mul stat="p_skill_power" value="1.1"/>
+				<p_defence_trait name="bow" value="60"/>
+				<mul stat="magicResist" value="1.6"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="918" levels="1" name="Maximum Force Focus">
+		<set name="effectPoint" value="150"/>
+		<set name="icon" value="icon.skill0918"/>
+		<set name="reuseDelay" value="75000"/>
+		<set name="hitTime" value="900"/>
+		<set name="mp_consume" value="20"/>
+		<set name="hpConsume" value="80"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="81"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="CHARGE"/>
+		<set name="operate_type" value="A2"/>
+		<set name="fullCharge" value="true"/>
+		<set name="charges" value="8"/>
+		<cond msgId="113">
+			<using kind="Dual Fist"/>
+		</cond>
+	</skill>
+	<skill id="919" levels="1" name="Maximum Sonic Focus">
+		<set name="effectPoint" value="150"/>
+		<set name="icon" value="icon.skill0919"/>
+		<set name="reuseDelay" value="75000"/>
+		<set name="hitTime" value="900"/>
+		<set name="mp_consume" value="20"/>
+		<set name="hpConsume" value="80"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="81"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="CHARGE"/>
+		<set name="operate_type" value="A2"/>
+		<set name="fullCharge" value="true"/>
+		<set name="charges" value="8"/>
+		<cond msgId="113">
+			<using kind="Dual Sword"/>
+		</cond>
+	</skill>
+	<skill id="921" levels="15" name="Spike Thrust">
+		<table name="#power">4907 4976 5046 5117 5186 5256 5327 5397 5468 5538 5608 5679 5749 5821 5891</table>
+		<table name="#effectPoint">-400 -405 -410 -415 -420 -425 -430 -435 -440 -445 -450 -455 -460 -465 -470</table>
+		<table name="#mp_consume">60 60 61 62 63 63 64 65 66 66 67 68 69 69 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0921"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="76"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="criticalRate" value="30"/>
+		<set name="overHit" value="true"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="shieldignore" value="true"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="upgradeControllerSkillId" value="45383" />
+		<set name="upgradedSkillId" value="45384" />
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="922" levels="3" name="Hide">
+		<table name="#effectPoint">500 600 700</table>
+		<table name="#abnormal_time">15 20 25</table>
+		<table name="#magicLevel">51 61 71 74</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0922"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="mp_consume" value="30"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_effect" value="STEALTH"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="hide"/>
+		<set name="abnormal_cancel_on_action" value="true"/>
+		<set name="doNotDispelOnSelfBuff" value="true"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="apply_effects_on_pet" value="true"/>
+		<for>
+			<effect name="Invisible"/>			
+		</for>
+	</skill>
+	<skill id="964" levels="1" name="Children of Shillien">
+		<set name="icon" value="icon.skill1910"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="regMp" value="1.05"/>
+			<add stat="mAtk" value="20"/>
+		</for>
+	</skill>
+	<skill id="984" levels="30" name="Shield Strike">
+		<table name="#power">619 800 983 1167 1353 1540 1728 1855 1982 2109 2237 2366 2495 2625 2755 4226 4285 4344 4401 4460 4519 4577 4635 4694 4752 4811 4870 4929 4987 5045</table>
+		<table name="#magicLevel">40 43 46 49 52 55 58 60 62 64 66 68 70 72 74 76 77 78 79 80 81 82 83 84 85</table>
+		<table name="#mp_consume">33 35 37 39 42 44 46 48 49 51 52 54 55 57 58 60 60 61 62 63 63 64 65 66 66 67 68 69 69 70</table>
+		<table name="#effectPoint">-2200 -2350 -2500 -2650 -2800 -2950 -3100 -3200 -3300 -3400 -3500 -3600 -3700 -3800 -3900 -4000 -4050 -4100 -4200 -4250 -4300 -4350 -4400 -4400 -4400 -4400 -4400 -4400 -4400 -4400</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0984"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="power" value="#power"/>
+		<set name="hitCancelTime" value="580"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<set name="shieldignore" value="true"/>
+		<cond msgId="113">
+			<using kind="Shield"/>
+		</cond>
+		<for>
+			<effect instant="true" name="Hate" value="#power"/>
+		</for>
+	</skill>
+	<skill id="990" levels="1" name="Death Sting">
+		<set name="effectPoint" value="-415"/>
+		<set name="icon" value="icon.skill0990"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="3000"/>
+		<set name="mp_consume" value="97"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="abnormal_effect" value="SILENCE"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="silence"/>
+		<set name="magicLevel" value="83"/>
+		<set name="power" value="13006"/>
+		<set name="hitCancelTime" value="400"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="activateRate" value="70"/>
+		<set name="overHit" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<cond msgId="113">
+			<using kind="Bow"/>
+		</cond>
+		<triggers>
+			<trigger id="45503" level="1" type="CRIT" chance="100">
+				<using kind="Bow"/>
+			</trigger>
+		</triggers>
+	</skill>
+	<skill id="992" levels="8" name="Sonic Mastery">
+		<!-- Absorbs the target's energy. Energy can be absorbed with a 15% chance for regular physical attacks and 30% during a critical attack. Applies when a sword, blunt weapon, or dualsword is equipped. Up to 1 stage of energy can be absorbed. -->
+		<table name="#power">1 2 3 4 5 6 7 8</table>
+		<table name="#magicLevel">40 43 49 55 60 66 70 79</table>
+		<set name="icon" value="icon.skill0992"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="6813" level="#power" type="ATTACK" chance="30">
+				<using kind="Sword, Blunt, Big Blunt, Dual Sword"/>
+			</trigger>
+			<trigger id="6813" level="#power" type="CRIT" chance="50">
+				<using kind="Sword, Blunt, Big Blunt, Dual Sword"/>
+			</trigger>
+		</triggers>
+	</skill>
+	<skill id="993" levels="8" name="Force Mastery">
+		<!-- Absorbs the target's energy. Energy can be absorbed with a 15% chance for regular physical attacks and 30% during a critical attack. Applies when a hand-to-hand combat weapon is equipped. Up to 1 stage of energy can be absorbed. -->
+		<table name="#power">1 2 3 4 5 6 7 8</table>
+		<table name="#magicLevel">24 32 40 52 60 66 72 79</table>
+		<set name="icon" value="icon.skill10335"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="6814" level="#power" type="ATTACK" chance="30">
+				<using kind="Fist, Dual Fist"/>
+			</trigger>
+			<trigger id="6814" level="#power" type="CRIT" chance="50">
+				<using kind="Fist, Dual Fist"/>
+			</trigger>
+			<trigger id="6814" level="#power" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="25">
+				<using kind="Fist, Dual Fist"/>
+			</trigger>
+		</triggers>
+	</skill>
+	<skill id="994" levels="3" name="Rush">
+		<table name="#effectPoint">-300 -400 -500</table>
+		<table name="#castRange">400 450 500</table>
+		<table name="#mp_consume">35 40 45</table>
+		<table name="#min_distance">150 120 100</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0493"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="200"/>
+		<set name="castRange" value="#castRange"/>
+		<set name="hitTime" value="800"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="magicLevel" value="40"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="fly_type" value="CHARGE"/>
+		<set name="fly_radius" value="400"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_charges" value="1"/>
+		<cond msgId="113">
+			<target min_distance="#min_distance"/>
+		</cond>
+	</skill>
+</list>

@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42746" y="-121201" z="-232" h="64756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41868" y="-121760" z="-232" h="39321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41824" y="-122484" z="-320" h="45818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41816" y="-121836" z="-240" h="50114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41883" y="-121855" z="-232" h="28653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-43007" y="-121174" z="-240" h="1297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41953" y="-122112" z="-272" h="32916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42480" y="-121862" z="-272" h="27070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42642" y="-122277" z="-288" h="47096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-43101" y="-121228" z="-240" h="40713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42516" y="-122234" z="-288" h="52539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42813" y="-121315" z="-240" h="42438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42343" y="-122122" z="-304" h="348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42367" y="-121618" z="-240" h="28859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42262" y="-121998" z="-280" h="21609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42518" y="-121620" z="-248" h="51339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42863" y="-121880" z="-280" h="64669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42790" y="-121328" z="-240" h="53042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42772" y="-121722" z="-256" h="10765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41977" y="-122746" z="-304" h="12653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41452" y="-119066" z="-1920" h="30580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41034" y="-120103" z="-1912" h="37138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41382" y="-118747" z="-1920" h="20493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41436" y="-119424" z="-1920" h="2905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42058" y="-118915" z="-1920" h="29595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41519" y="-118752" z="-1920" h="4197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40794" y="-120105" z="-1888" h="30114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41345" y="-118727" z="-1920" h="21798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41929" y="-118642" z="-1920" h="40217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-41046" y="-118446" z="-1920" h="40910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-41182" y="-118737" z="-1920" h="39215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40909" y="-118369" z="-1920" h="1434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42337" y="-117994" z="-1920" h="41378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41516" y="-118193" z="-1920" h="55559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-41283" y="-118231" z="-1920" h="10836" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40819" y="-118102" z="-1920" h="27216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-40945" y="-117974" z="-1920" h="13481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41464" y="-118398" z="-1920" h="35546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41891" y="-118346" z="-1920" h="46169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42202" y="-117542" z="-1920" h="40233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41899" y="-117583" z="-1920" h="33155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-41463" y="-117819" z="-1920" h="34965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-41008" y="-118882" z="-1920" h="43516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-41333" y="-117930" z="-1920" h="19286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42471" y="-118018" z="-1920" h="57621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-42493" y="-118758" z="-1920" h="46088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-42302" y="-118309" z="-1920" h="36125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39436" y="-121215" z="-1704" h="46100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-39280" y="-122275" z="-1592" h="61590" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-39768" y="-120993" z="-1728" h="21841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38863" y="-122379" z="-1648" h="4952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-39822" y="-121128" z="-1736" h="490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-38957" y="-122453" z="-1608" h="61427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-38892" y="-121923" z="-1672" h="10875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39258" y="-121463" z="-1688" h="35723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39065" y="-121105" z="-1688" h="47247" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39008" y="-121295" z="-1680" h="20714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39364" y="-121022" z="-1704" h="33715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40798" y="-122673" z="-376" h="38135" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40887" y="-122670" z="-368" h="40311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-39142" y="-120399" z="-1704" h="40412" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-39644" y="-119231" z="-1824" h="12100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40879" y="-119072" z="-1904" h="46167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40012" y="-118995" z="-1848" h="39664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40921" y="-119246" z="-1904" h="14172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40920" y="-118603" z="-1920" h="48657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40049" y="-119086" z="-1840" h="647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40179" y="-119341" z="-1848" h="32746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40324" y="-118809" z="-1880" h="44224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20311" /> <!-- Rakeclaw Imp -->
+		<point x="-40691" y="-120537" z="-1832" h="45152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40952" y="-118706" z="-1920" h="32762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-40489" y="-119712" z="-1880" h="25576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-39806" y="-120954" z="-1720" h="17761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-39471" y="-120416" z="-1736" h="23182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-39168" y="-120181" z="-1720" h="30423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39041" y="-120128" z="-1720" h="31871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39170" y="-120536" z="-1704" h="52215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39434" y="-120800" z="-1704" h="13100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39347" y="-120675" z="-1704" h="54730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39484" y="-120701" z="-1712" h="56735" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40004" y="-119994" z="-1808" h="21975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40701" y="-119602" z="-1888" h="8173" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40751" y="-119642" z="-1904" h="44317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-40312" y="-120030" z="-1840" h="64066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-40615" y="-120051" z="-1880" h="60122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-39778" y="-119195" z="-1832" h="11803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-40790" y="-118811" z="-1904" h="9413" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40667" y="-118287" z="-1920" h="64038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39834" y="-118374" z="-1888" h="49777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-40160" y="-118323" z="-1904" h="9413" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39975" y="-117191" z="-1896" h="38489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40488" y="-117885" z="-1920" h="60704" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40769" y="-117940" z="-1920" h="56967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40865" y="-117660" z="-1920" h="9325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40000" y="-117705" z="-1896" h="51814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39752" y="-117870" z="-1864" h="47741" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39981" y="-118076" z="-1896" h="55237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40616" y="-118596" z="-1912" h="49677" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40492" y="-118640" z="-1912" h="64194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40805" y="-118492" z="-1920" h="44785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40863" y="-118048" z="-1920" h="39578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-40479" y="-118468" z="-1920" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37081" y="-121070" z="-1688" h="17250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38038" y="-122496" z="-1672" h="55581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37182" y="-121199" z="-1680" h="21430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20311" /> <!-- Rakeclaw Imp -->
+		<point x="-38204" y="-121083" z="-1672" h="20240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37820" y="-120873" z="-1696" h="63715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38201" y="-121839" z="-1664" h="21529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38380" y="-121527" z="-1656" h="60063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37768" y="-121846" z="-1672" h="51640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37370" y="-122296" z="-1656" h="40729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38818" y="-122372" z="-1648" h="39725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37028" y="-121297" z="-1680" h="5916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-37412" y="-122759" z="-1608" h="38585" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-38182" y="-121634" z="-1672" h="55061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-37613" y="-121532" z="-1688" h="7478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-38167" y="-121981" z="-1664" h="16991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-38343" y="-121521" z="-1656" h="43927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-39106" y="-120777" z="-1696" h="59075" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38724" y="-121377" z="-1680" h="60972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38645" y="-121014" z="-1688" h="10859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37326" y="-119075" z="-1696" h="64255" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37477" y="-118831" z="-1680" h="15862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-36849" y="-120003" z="-1784" h="58346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37333" y="-118820" z="-1696" h="3228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38452" y="-120905" z="-1688" h="50288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37665" y="-118873" z="-1672" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37225" y="-118848" z="-1728" h="3538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38444" y="-119370" z="-1704" h="33510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38629" y="-120282" z="-1696" h="694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37703" y="-119957" z="-1648" h="49680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38864" y="-119597" z="-1696" h="49208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37872" y="-120369" z="-1664" h="28575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37337" y="-120263" z="-1672" h="39880" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-39091" y="-120888" z="-1696" h="60122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38166" y="-120097" z="-1680" h="56174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-36850" y="-120459" z="-1752" h="10821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-39113" y="-120707" z="-1696" h="29228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38899" y="-120145" z="-1704" h="50101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37530" y="-119500" z="-1664" h="38101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38517" y="-119399" z="-1704" h="30794" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38653" y="-118885" z="-1704" h="4211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38231" y="-119343" z="-1672" h="56732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36849" y="-118982" z="-1784" h="4580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37803" y="-119394" z="-1648" h="17358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37629" y="-118850" z="-1672" h="11595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38352" y="-119431" z="-1696" h="14453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38700" y="-118860" z="-1720" h="10890" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37792" y="-118427" z="-1688" h="25837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38081" y="-118761" z="-1664" h="63349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38538" y="-118234" z="-1728" h="7888" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37235" y="-117839" z="-1704" h="50414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37570" y="-118069" z="-1696" h="35915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38855" y="-117765" z="-1760" h="20058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38161" y="-118403" z="-1688" h="26114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37746" y="-118186" z="-1704" h="51983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-36826" y="-117832" z="-1728" h="43851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-36807" y="-117898" z="-1752" h="8559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37458" y="-118841" z="-1680" h="47667" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37721" y="-117708" z="-1672" h="27921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37639" y="-118296" z="-1696" h="34755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38008" y="-118111" z="-1696" h="57034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38087" y="-118605" z="-1680" h="59790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-36773" y="-118139" z="-1768" h="52509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38103" y="-118901" z="-1664" h="50633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38071" y="-118267" z="-1696" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37570" y="-118091" z="-1696" h="17573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38459" y="-118334" z="-1704" h="45403" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36950" y="-118096" z="-1752" h="25188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38226" y="-118792" z="-1664" h="22699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37214" y="-117730" z="-1704" h="24986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37904" y="-117314" z="-1680" h="23421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-36820" y="-122624" z="-1656" h="30109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36593" y="-122822" z="-1640" h="45440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-36593" y="-121040" z="-1760" h="37436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-36820" y="-122030" z="-1672" h="51642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36593" y="-122030" z="-1688" h="13311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-36139" y="-122624" z="-1760" h="10691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36820" y="-120050" z="-1784" h="59653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36817" y="-120342" z="-1760" h="62813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36679" y="-119033" z="-1808" h="31782" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-36602" y="-118308" z="-1808" h="4525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36818" y="-117673" z="-1712" h="7783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36801" y="-118454" z="-1784" h="5881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-36636" y="-118040" z="-1776" h="35349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36674" y="-118308" z="-1792" h="56732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36827" y="-118871" z="-1792" h="1933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36832" y="-118439" z="-1784" h="22836" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36064" y="-118015" z="-1856" h="2321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36755" y="-117096" z="-1648" h="11553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36348" y="-116683" z="-1672" h="9395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-39719" y="-116263" z="-1856" h="10190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40357" y="-116565" z="-1912" h="2683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40348" y="-115817" z="-1904" h="27815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-39669" y="-116297" z="-1856" h="35530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40383" y="-115099" z="-1800" h="13623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40415" y="-115499" z="-1864" h="64626" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-40191" y="-115938" z="-1912" h="43965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20475" /> <!-- Kasha Wolf -->
+		<point x="-40923" y="-116383" z="-1912" h="55647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38135" y="-116529" z="-1728" h="8374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38105" y="-115906" z="-1808" h="24419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37864" y="-116320" z="-1696" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37719" y="-115522" z="-1728" h="37310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36922" y="-116239" z="-1648" h="47856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37970" y="-115462" z="-1792" h="52340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37107" y="-115679" z="-1680" h="18017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37830" y="-116988" z="-1688" h="780" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20311" /> <!-- Rakeclaw Imp -->
+		<point x="-38204" y="-116124" z="-1832" h="44525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37864" y="-115518" z="-1800" h="35777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37522" y="-116104" z="-1680" h="64583" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37918" y="-115982" z="-1712" h="28717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36864" y="-115831" z="-1672" h="12360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36836" y="-116154" z="-1664" h="28143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36833" y="-116255" z="-1656" h="4109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36829" y="-115914" z="-1664" h="61087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38525" y="-113801" z="-1984" h="37517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37007" y="-113078" z="-1824" h="24455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-36883" y="-113201" z="-1840" h="5917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37895" y="-112735" z="-1832" h="26763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38641" y="-112895" z="-1856" h="41581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-37863" y="-113488" z="-1936" h="40359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37542" y="-113015" z="-1840" h="48419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-38123" y="-113387" z="-1928" h="55622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-37489" y="-113356" z="-1920" h="53694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38039" y="-113533" z="-1936" h="28808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37160" y="-113155" z="-1848" h="17946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38783" y="-113516" z="-1968" h="33228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38489" y="-113832" z="-1984" h="57684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38542" y="-113584" z="-1968" h="59259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38434" y="-114086" z="-1976" h="25442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-37999" y="-114035" z="-1968" h="20521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-34914" y="-112573" z="-2096" h="6664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-36046" y="-113879" z="-1960" h="4209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20477" /> <!-- Kasha Forest Wolf -->
+		<point x="-35243" y="-112689" z="-1984" h="47832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-36065" y="-113302" z="-1912" h="63111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-35987" y="-113470" z="-1928" h="52970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20312" /> <!-- Rakeclaw Imp Hunter -->
+		<point x="-38654" y="-113399" z="-1944" h="1039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20319" /> <!-- Goblin Tomb Raider -->
+		<point x="-38631" y="-113765" z="-1984" h="3582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31036" /> <!-- Centurion -->
+		<point x="-42593" y="-122097" z="-296" h="27731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31036" /> <!-- Centurion -->
+		<point x="-37105" y="-121207" z="-1688" h="10355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31036" /> <!-- Centurion -->
+		<point x="-35984" y="-115754" z="-1760" h="1563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31036" /> <!-- Centurion -->
+		<point x="-34192" y="-117504" z="-2040" h="0" />
+	</spawn>
+</list>

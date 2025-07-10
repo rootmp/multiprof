@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="96000" name="Random Craft: Create +0 ~ +7 Dragon Valley's Earring" add_name="Sealed">
+		<set name="icon" value="icon.accessary_catseye_earing_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="91953" count="1" chance="0.01" enchant="7"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="95719" count="1" chance="0.01" enchant="7"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="91953" count="1" chance="0.01" enchant="6"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="95719" count="1" chance="0.01" enchant="6"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="91953" count="1" chance="0.01" enchant="5"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="95719" count="1" chance="0.01" enchant="5"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="91953" count="1" chance="0.01" enchant="4"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="95719" count="1" chance="0.01" enchant="4"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="91953" count="1" chance="0.01" enchant="3"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="95719" count="1" chance="0.01" enchant="3"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="91953" count="1" chance="0.01" enchant="2"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="95719" count="1" chance="0.01" enchant="2"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="91953" count="1" chance="0.01" enchant="1"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="95719" count="1" chance="0.01" enchant="1"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="91953" count="1" chance="0.01"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+			<create_item id="95719" count="1" chance="0.01"/><!--Dragon Valley's Earring--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96001" name="Aden Coin (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_coin_gold_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96002" name="Aden Scroll (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.bm_challenger_scroll"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+	</etcitem>
+	<etcitem id="96003" name="Random Craft: Spirit Ore (1000 pcs.)" add_name="Sealed">
+		<set name="icon" value="icon.etc_stone_gray_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3031" min_count="1000" max_count="1000" chance="100"/><!--Spirit Ore-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96004" name="Random Craft: HP Recovery Potion (10,000 pcs.)" add_name="Sealed">
+		<set name="icon" value="icon.etc_lesser_potion_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91912" min_count="10000" max_count="10000" chance="100"/><!--HP Potion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96005" name="Random Craft: Soulshot Ticket (50 pcs.)" add_name="Sealed">
+		<set name="icon" value="icon.etc_exchange_ticket_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90907" min_count="50" max_count="50" chance="100"/><!--Soulshot Ticket-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96006" name="+5 Top-grade A-grade Weapon Pack" add_name="Sealed">
+		<set name="icon" value="icon.weapon_sirr_blade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="8678" count="1" chance="0.01" enchant="5"/><!--Sirra's Blade--><!--TODO: Check chance-->
+			<create_item id="94886" count="1" chance="0.01" enchant="5"/><!--Zephyrus--><!--TODO: Check chance-->
+			<create_item id="8679" count="1" chance="0.01" enchant="5"/><!--Sword of Ipos--><!--TODO: Check chance-->
+			<create_item id="8680" count="1" chance="0.01" enchant="5"/><!--Barakiel's Axe--><!--TODO: Check chance-->
+			<create_item id="8681" count="1" chance="0.01" enchant="5"/><!--Behemoth' Tuning Fork--><!--TODO: Check chance-->
+			<create_item id="8682" count="1" chance="0.01" enchant="5"/><!--Naga's Storm--><!--TODO: Check chance-->
+			<create_item id="8683" count="1" chance="0.01" enchant="5"/><!--Tiphon's Spear--><!--TODO: Check chance-->
+			<create_item id="8684" count="1" chance="0.01" enchant="5"/><!--Shyeed's Bow--><!--TODO: Check chance-->
+			<create_item id="8685" count="1" chance="0.01" enchant="5"/><!--Sobekk's Hurricane--><!--TODO: Check chance-->
+			<create_item id="8686" count="1" chance="0.01" enchant="5"/><!--Themis' Tongue--><!--TODO: Check chance-->
+			<create_item id="8687" count="1" chance="0.01" enchant="5"/><!--Cabrio's Hand--><!--TODO: Check chance-->
+			<create_item id="8688" count="1" chance="0.01" enchant="5"/><!--Daimon Crystal--><!--TODO: Check chance-->
+			<create_item id="8938" count="1" chance="0.01" enchant="5"/><!--Tallum Blade*Damascus Sword--><!--TODO: Check chance-->
+			<create_item id="91887" count="1" chance="0.01" enchant="5"/><!--Durendal--><!--TODO: Check chance-->
+			<create_item id="91902" count="1" chance="0.01" enchant="5"/><!--Éclair Bijou--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96007" name="Package: +5 Armor of Nightmare" add_name="Sealed">
+		<set name="icon" value="icon.armor_t80_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="374" min_count="1" max_count="1" chance="100" enchant="5"/><!--Armor of Nightmare-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96008" name="Package: +5 Helm of Nightmare (Heavy)" add_name="Sealed">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90473" min_count="1" max_count="1" chance="100" enchant="5"/><!--Helm of Nightmare (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96009" name="Package: +5 Gauntlets of Nightmare (Heavy)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t80_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5771" min_count="1" max_count="1" chance="100" enchant="5"/><!--Gauntlets of Nightmare (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96010" name="Package: +5 Boots of Nightmare (Heavy)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t80_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5783" min_count="1" max_count="1" chance="100" enchant="5"/><!--Boots of Nightmare (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96011" name="Package: +5 Majestic Plate Armor" add_name="Sealed">
+		<set name="icon" value="icon.armor_t83_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="2383" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Plate Armor-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96012" name="Package: +5 Majestic Circlet (Heavy)" add_name="Sealed">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90476" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Circlet (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96013" name="Package: +5 Majestic Gauntlets (Heavy)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t83_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5774" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Gauntlets (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96014" name="Package: +5 Majestic Boots (Heavy)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t83_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5786" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Boots (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96015" name="Package: +5 Leather Armor of Nightmare" add_name="Sealed">
+		<set name="icon" value="icon.armor_t81_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="2394" min_count="1" max_count="1" chance="100" enchant="5"/><!--Leather Armor of Nightmare-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96016" name="Package: +5 Helm of Nightmare (Light)" add_name="Sealed">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90474" min_count="1" max_count="1" chance="100" enchant="5"/><!--Helm of Nightmare (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96017" name="Package: +5 Gauntlets of Nightmare (Light)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t81_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5772" min_count="1" max_count="1" chance="100" enchant="5"/><!--Gauntlets of Nightmare (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96018" name="Package: +5 Boots of Nightmare (Light)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t81_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5784" min_count="1" max_count="1" chance="100" enchant="5"/><!--Boots of Nightmare (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96019" name="Package: +5 Majestic Leather Armor" add_name="Sealed">
+		<set name="icon" value="icon.armor_t84_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="2395" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Leather Armor-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96020" name="Package: +5 Majestic Circlet (Light)" add_name="Sealed">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90477" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Circlet (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96021" name="Package: +5 Majestic Gauntlets (Light)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t84_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5775" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Gauntlets (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96022" name="Package: +5 Majestic Boots (Light)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t84_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5787" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Boots (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96023" name="Package: +5 Robe of Nightmare" add_name="Sealed">
+		<set name="icon" value="icon.armor_t82_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="2408" min_count="1" max_count="1" chance="100" enchant="5"/><!--Robe of Nightmare-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96024" name="Package: +5 Helm of Nightmare (Robe)" add_name="Sealed">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90475" min_count="1" max_count="1" chance="100" enchant="5"/><!--Helm of Nightmare (Robe)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96025" name="Package: +5 Gauntlets of Nightmare (Robe)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t82_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5773" min_count="1" max_count="1" chance="100" enchant="5"/><!--Gauntlets of Nightmare (Robe)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96026" name="Package: +5 Boots of Nightmare (Robe)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t82_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5785" min_count="1" max_count="1" chance="100" enchant="5"/><!--Boots of Nightmare (Robe)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96027" name="Package: +5 Majestic Robe" add_name="Sealed">
+		<set name="icon" value="icon.armor_t85_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="2409" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Robe-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96028" name="Package: +5 Majestic Circlet (Robe)" add_name="Sealed">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90478" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Circlet (Robe)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96029" name="Package: +5 Majestic Gauntlets (Robe)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t85_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5776" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Gauntlets (Robe)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96030" name="Package: +5 Majestic Boots (Robe)" add_name="Sealed">
+		<set name="icon" value="icon.armor_t85_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="5788" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Boots (Robe)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96031" name="Package: +5 Leather Armor of Lightning" add_name="Sealed">
+		<set name="icon" value="icon.armor_t101_u_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93315" min_count="1" max_count="1" chance="100" enchant="5"/><!--Leather Armor of Lightning-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96032" name="Package: +5 Leather Leggings of Lightning" add_name="Sealed">
+		<set name="icon" value="icon.armor_t102_l_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93316" min_count="1" max_count="1" chance="100" enchant="5"/><!--Leather Leggings of Lightning-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96033" name="Package: +5 Ice Crystal Breastplate" add_name="Sealed">
+		<set name="icon" value="icon.armor_t94_u_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93139" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ice Crystal Breastplate-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96034" name="Package: +5 Ice Crystal Gaiters" add_name="Sealed">
+		<set name="icon" value="icon.armor_t94_l_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93140" min_count="1" max_count="1" chance="100" enchant="5"/><!--Ice Crystal Gaiters-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96035" name="Package: +5 Flaming Tunic" add_name="Sealed">
+		<set name="icon" value="icon.armor_t96_u_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93733" min_count="1" max_count="1" chance="100" enchant="5"/><!--Flaming Tunic-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96036" name="Package: +5 Flaming Stockings" add_name="Sealed">
+		<set name="icon" value="icon.armor_t96_l_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93734" min_count="1" max_count="1" chance="100" enchant="5"/><!--Flaming Stockings-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96037" name="Spellbook: Sensation">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96038" name="Spellbook: Balanced Body">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96039" name="Spellbook: Advanced Cleanse">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96040" name="Spellbook: Treatment">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96041" name="Spellbook: Eva's Nocturne">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96042" name="Spellbook: Eva's Power">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96043" name="Spellbook: Duress">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96044" name="Spellbook: Nemesis">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96045" name="Spellbook: Shillien's Power">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96046" name="Spellbook: Divine Recovery">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96047" name="Spellbook: Sacred Power">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96048" name="Spellbook: Improved Resilience">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96049" name="Spellbook: Holy Buster">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96050" name="Spellbook: Unleashing">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96051" name="Spellbook: Sensation" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96052" name="Spellbook: Balanced Body" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96053" name="Spellbook: Advanced Cleanse" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96054" name="Spellbook: Treatment" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96055" name="Spellbook: Eva's Nocturne" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96056" name="Spellbook: Eva's Power" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96057" name="Spellbook: Duress" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96058" name="Spellbook: Nemesis" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96059" name="Spellbook: Shillien's Power" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96060" name="Spellbook: Divine Recovery" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96061" name="Spellbook: Sacred Power" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96062" name="Spellbook: Improved Resilience" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96063" name="Spellbook: Unleashing" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96064" name="Spellbook: Holy Buster" add_name="Sealed">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<weapon id="96065" name="Emerald Weapon - Ancient Sword">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="BranchSys3.Icon.g_beam_twohand_sword"/>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="weight" value="209"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+	</weapon>
+	<etcitem id="96066" name="Elder Green's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_treasure_box_i07"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92450" count="1" chance="0.01"/><!--+8 Talisman of Aden Pack--><!--TODO: Check chance-->
+			<create_item id="92458" count="1" chance="0.01"/><!--+8 Talisman of Eva Pack--><!--TODO: Check chance-->
+			<create_item id="92467" count="1" chance="0.01"/><!--+8 Talisman of Speed Pack--><!--TODO: Check chance-->
+			<create_item id="91767" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Aden--><!--TODO: Check chance-->
+			<create_item id="92020" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="93685" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Speed--><!--TODO: Check chance-->
+			<create_item id="94210" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94212" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Armor--><!--TODO: Check chance-->
+			<create_item id="94209" count="1" chance="0.01"/><!--Life Stone Lv. 1 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94211" count="1" chance="0.01"/><!--Life Stone Lv. 1 - Armor--><!--TODO: Check chance-->
+			<create_item id="90907" count="5" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="3031" count="20" chance="0.01"/><!--Spirit Ore--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96067" name="White Day's Star Candy (Time-limited)" add_name="Sealed">
+		<set name="icon" value="BranchSys.br_rudolf_food_orange_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+	</etcitem>
+	<etcitem id="96068" name="White Day's Deluxe Candy Basket (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_whiteday_candy"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95908" count="1" chance="0.01"/><!--Jewelry Box Lv. 5 (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94435" count="1" chance="0.01"/><!--Jewelry Box Lv. 4 (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="95909" count="1" chance="0.01"/><!--Jewelry Box Lv. 3 (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94215" count="1" chance="0.01"/><!--Jewelry Box Lv. 1 (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94380" count="9" chance="0.01"/><!--Scroll: Boost Attack (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94381" count="9" chance="0.01"/><!--Scroll: Boost Defense (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="90907" count="20" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="3031" count="500" chance="0.01"/><!--Spirit Ore--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96069" name="White Day's Candy Basket (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_candy_basket_i04_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94380" count="1" chance="0.01"/><!--Scroll: Boost Attack (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94381" count="1" chance="0.01"/><!--Scroll: Boost Defense (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="90907" count="5" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="3031" count="100" chance="0.01"/><!--Spirit Ore--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96070" name="Hero's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="95354" count="1" chance="0.01"/><!--Spellbook: Dragon Strike--><!--TODO: Check chance-->
+			<create_item id="94861" count="1" chance="0.01"/><!--Spellbook: Tranquillity--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="95347" count="1" chance="0.01"/><!--Spellbook: Rolling Dice--><!--TODO: Check chance-->
+			<create_item id="95861" count="1" chance="0.01"/><!--Spellbook: Mechanical Hero--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94862" count="1" chance="0.01"/><!--Spellbook: Exclusion--><!--TODO: Check chance-->
+			<create_item id="94863" count="1" chance="0.01"/><!--Spellbook: Dark Disruption--><!--TODO: Check chance-->
+			<create_item id="95346" count="1" chance="0.01"/><!--Spellbook: Meteor--><!--TODO: Check chance-->
+			<create_item id="95933" count="1" chance="0.01"/><!--Gauntlets of Protection--><!--TODO: Check chance-->
+			<create_item id="95932" count="1" chance="0.01"/><!--Helmet of Protection--><!--TODO: Check chance-->
+			<create_item id="95934" count="1" chance="0.01"/><!--Boots of Protection--><!--TODO: Check chance-->
+			<create_item id="95660" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="93739" count="1" chance="0.01"/><!--Package: Giran Seal (1000 pcs.)--><!--TODO: Check chance-->
+			<create_item id="95773" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94168" count="1" chance="0.01"/><!--Enchant Kit: Circlet of Hero--><!--TODO: Check chance-->
+			<create_item id="93330" count="1" chance="0.01"/><!--Enchant Kit: Talisman of Authority--><!--TODO: Check chance-->
+			<create_item id="95783" count="1" chance="0.01"/><!--Aden's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+			<create_item id="95803" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+			<create_item id="729" count="1" chance="0.01"/><!--Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="730" count="1" chance="0.01"/><!--Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94269" count="2" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="2" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="30" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="91641" count="5" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96071" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96072" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96073" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96074" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96075" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96076" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96077" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96078" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96079" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96080" name="Red Libra's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96081" name="Red Libra's Coupon (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.red_save_ticket"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96082" name="Daily Kit: Equipment (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.freya_box_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93303" min_count="5" max_count="5" chance="100"/><!--Package: Cloak of Protection-->
+			<capsuled_item id="94732" min_count="5" max_count="5" chance="100"/><!--Agathion Spirit Exchange Coupon-->
+			<capsuled_item id="92020" min_count="5" max_count="5" chance="100"/><!--Enchant Kit: Talisman of Eva-->
+			<capsuled_item id="91864" min_count="5" max_count="5" chance="100"/><!--Dragon Belt Pack-->
+			<capsuled_item id="93304" min_count="5" max_count="5" chance="100"/><!--Package: Einhasad's Pendant Lv. 1-->
+			<capsuled_item id="94328" min_count="3" max_count="3" chance="100"/><!--Elixir Powder-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="96083" name="Garden of Genesis' Time Stone (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.bm_timezone_refill_pccafe_a_60"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96084" name="Treasure Chest of Genesis (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.new_user_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95772" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="93268" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93269" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="93976" count="1" chance="0.01"/><!--Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93977" count="1" chance="0.01"/><!--Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93406" count="1" chance="0.01"/><!--Scroll: Enchant B-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93407" count="1" chance="0.01"/><!--Scroll: Enchant B-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94304" count="1" chance="0.01"/><!--Life Stone - Circlet--><!--TODO: Check chance-->
+			<create_item id="94424" count="1" chance="0.01"/><!--Life Stone - Accessories--><!--TODO: Check chance-->
+			<create_item id="94210" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94209" count="1" chance="0.01"/><!--Life Stone Lv. 1 - Weapon--><!--TODO: Check chance-->
+			<create_item id="93122" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Shield/ Sigil--><!--TODO: Check chance-->
+			<create_item id="93121" count="1" chance="0.01"/><!--Life Stone Lv. 1 - Shield/ Sigil--><!--TODO: Check chance-->
+			<create_item id="94212" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Armor--><!--TODO: Check chance-->
+			<create_item id="94211" count="1" chance="0.01"/><!--Life Stone Lv. 1 - Armor--><!--TODO: Check chance-->
+			<create_item id="93848" count="2" chance="0.01"/><!--Sayha's Cookie (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="90907" count="3" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="3031" count="30" chance="0.01"/><!--Spirit Ore--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96085" name="Spring Energy (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_flower_i07"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="10000"/>
+		<set name="grind_point" value="5000"/>
+		<set name="grind_commission" value="100"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+	</etcitem>
+	<etcitem id="96086" name="Invigorating Spring Energy (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_flower_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="20000"/>
+		<set name="grind_point" value="10000"/>
+		<set name="grind_commission" value="200"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="autouse_type" value="HEAL"/>
+	</etcitem>
+	<etcitem id="96087" name="Spring Crystal Shard (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_jewel_piece"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96088" name="Spring Crystal (Time-limited)">
+		<set name="icon" value="icon.rare_acc_smith_piece"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="2000000"/>
+		<set name="grind_point" value="1000010"/>
+		<set name="grind_commission" value="20000"/>
+		<set name="sellable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<armor id="96089" name="Aden Cloak" add_name="Sealed">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.Icon.7anni_cloack_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+	</armor>
+	<armor id="96090" name="World Siege Reward Cloak - Not Available" add_name="Not Available">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+	</armor>
+	<etcitem id="96091" name="Scroll: 100,000,000 SP" add_name="Sealed">
+		<set name="icon" value="icon.etc_sp_scroll3_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96092" name="Protection Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.bm_dragon_present_5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="95354" count="1" chance="0.01"/><!--Spellbook: Dragon Strike--><!--TODO: Check chance-->
+			<create_item id="95347" count="1" chance="0.01"/><!--Spellbook: Rolling Dice--><!--TODO: Check chance-->
+			<create_item id="95861" count="1" chance="0.01"/><!--Spellbook: Mechanical Hero--><!--TODO: Check chance-->
+			<create_item id="95346" count="1" chance="0.01"/><!--Spellbook: Meteor--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94862" count="1" chance="0.01"/><!--Spellbook: Exclusion--><!--TODO: Check chance-->
+			<create_item id="94863" count="1" chance="0.01"/><!--Spellbook: Dark Disruption--><!--TODO: Check chance-->
+			<create_item id="94861" count="1" chance="0.01"/><!--Spellbook: Tranquillity--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="94840" count="1" chance="0.01"/><!--Breastplate of Protection--><!--TODO: Check chance-->
+			<create_item id="94841" count="1" chance="0.01"/><!--Gaiters of Protection--><!--TODO: Check chance-->
+			<create_item id="94844" count="1" chance="0.01"/><!--Leather Armor of Protection--><!--TODO: Check chance-->
+			<create_item id="94845" count="1" chance="0.01"/><!--Leather Leggings of Protection--><!--TODO: Check chance-->
+			<create_item id="94848" count="1" chance="0.01"/><!--Tunic of Protection--><!--TODO: Check chance-->
+			<create_item id="94849" count="1" chance="0.01"/><!--Stockings of Protection--><!--TODO: Check chance-->
+			<create_item id="95665" count="1" chance="0.01"/><!--Shield of Protection--><!--TODO: Check chance-->
+			<create_item id="95663" count="1" chance="0.01"/><!--Sigil of Protection--><!--TODO: Check chance-->
+			<create_item id="95933" count="1" chance="0.01"/><!--Gauntlets of Protection--><!--TODO: Check chance-->
+			<create_item id="95932" count="1" chance="0.01"/><!--Helmet of Protection--><!--TODO: Check chance-->
+			<create_item id="95934" count="1" chance="0.01"/><!--Boots of Protection--><!--TODO: Check chance-->
+			<create_item id="95660" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="92401" count="1" chance="0.01"/><!--Spellbook: White Guardian--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93739" count="1" chance="0.01"/><!--Package: Giran Seal (1000 pcs.)--><!--TODO: Check chance-->
+			<create_item id="95773" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="94156" count="1" chance="0.01"/><!--Package: Baium Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94513" count="1" chance="0.01"/><!--Package: Frintezza Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94651" count="1" chance="0.01"/><!--Package: Zaken Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94654" count="1" chance="0.01"/><!--Package: Core Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94159" count="1" chance="0.01"/><!--Package: Queen Ant Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94162" count="1" chance="0.01"/><!--Package: Orfen Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="91032" count="1" chance="0.01"/><!--Fire Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91031" count="1" chance="0.01"/><!--Water Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91033" count="1" chance="0.01"/><!--Wind Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91034" count="1" chance="0.01"/><!--Earth Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="92034" count="1" chance="0.01"/><!--Reinforced Jewelry Box--><!--TODO: Check chance-->
+			<create_item id="94269" count="5" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="5" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91641" count="10" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="91690" count="30" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="96093" name="Buff Expansion Book Lv. 3" add_name="Sealed">
+		<set name="icon" value="icon.etc_add_buffslot_i02"/>
+		<set name="weight" value="120"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96094" name="Buff Expansion Book Lv. 4" add_name="Sealed">
+		<set name="icon" value="icon.etc_add_buffslot_i03"/>
+		<set name="weight" value="120"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96095" name="Herphah's Mark (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_bereths_gold_dragon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="grind_point" value="100000"/>
+		<set name="grind_commission" value="2000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96096" name="Mark of Combat (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.shield_bread_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96097" name="Shining Mark of Combat (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.shield_bread_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96098" name="Battle Support Mark (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.etc_battle_support_coin_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+	</etcitem>
+	<etcitem id="96099" name="Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="icon" value="icon.sayha2017_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="96096" min_count="1" max_count="1" chance="100"/><!--Mark of Combat (Time-limited)-->
+			<capsuled_item id="93848" min_count="30" max_count="30" chance="100"/><!--Sayha's Cookie (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+</list>

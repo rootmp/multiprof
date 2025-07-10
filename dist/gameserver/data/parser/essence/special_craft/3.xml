@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "special_craft.dtd">
+<!-- Author: nexvill -->
+<!-- NOTE: client controls what items shown, you can only remove/ comment some items to be don't shown in game, NOT add new -->
+<list>
+	<item product1Id="96651" index="305">	<!-- Einhasad's Blessing Pack (Time-limited) -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="96113" index="304">	<!-- Sayha's Grace Scroll (Time-limited) -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="93073" index="303">	<!-- Sayha's Storm Lv. 3 (Time-limited) -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="94380" index="302">	<!-- Scroll: Boost Attack (Time-limited) -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="94381" index="301">	<!-- Scroll: Boost Defense (Time-limited) -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="92096" index="296">	<!-- Moonstone Lv. 1 -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="96615" index="295">	<!-- Aden's Treasure Chest (Time-limited) -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="96082" index="294">	<!-- Daily Kit: Equipment (Time-limited) -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="96604" index="293">	<!-- Pack of Seals (Time-limited) -->
+		<ingredient id="57" count="10000" />
+	</item>
+	<item product1Id="96124" dailyLimit="1" index="292">	<!-- Elmoreden Tower's Time Stone -->
+		<ingredient id="91663" count="300" />
+	</item>
+	<item product1Id="95681" dailyLimit="1" index="210">	<!-- Premium Growth Kit -->
+		<ingredient id="91663" count="5000" />
+	</item>
+	<item product1Id="93740" index="211">	<!-- Giran Seal Pack -->
+		<ingredient id="91663" count="200" />
+	</item>
+	<item product1Id="94735" dailyLimit="1" index="212">	<!-- Starter Kit -->
+		<ingredient id="91663" count="4000" />
+	</item>
+	<item product1Id="94736" dailyLimit="3" index="213">	<!-- Settling Kit: Jewel -->
+		<ingredient id="91663" count="6000" />
+	</item>
+	<item product1Id="94737" dailyLimit="3" index="214">	<!-- Settling Kit: Agathion -->
+		<ingredient id="91663" count="6000" />
+	</item>
+	<item product1Id="94738" dailyLimit="3" index="215">	<!-- Settling Kit: Upgrading -->
+		<ingredient id="91663" count="5000" />
+	</item>
+	<item product1Id="9589" index="216">	<!-- Talisman Bracelet Lv. 1 -->
+		<ingredient id="91663" count="200" />
+	</item>
+	<item product1Id="90311" index="217">	<!-- Brooch Lv. 1 -->
+		<ingredient id="91663" count="200" />
+	</item>
+	<item product1Id="90888" index="218">	<!-- Agathion Bracelet Lv. 1 -->
+		<ingredient id="91663" count="200" />
+	</item>
+	<item product1Id="729" index="219">	<!-- Scroll: Enchant A-grade Weapon -->
+		<ingredient id="91663" count="1500" />
+	</item>
+	<item product1Id="947" index="220">	<!-- Scroll: Enchant B-grade Weapon -->
+		<ingredient id="91663" count="600" />
+	</item>
+	<item product1Id="951" index="221">	<!-- Scroll: Enchant C-grade Weapon -->
+		<ingredient id="91663" count="200" />
+	</item>
+	<item product1Id="730" index="222">	<!-- Scroll: Enchant A-grade Armor -->
+		<ingredient id="91663" count="350" />
+	</item>
+	<item product1Id="948" index="223">	<!-- Scroll: Enchant B-grade Armor -->
+		<ingredient id="91663" count="100" />
+	</item>
+	<item product1Id="952" index="224">	<!-- Scroll: Enchant C-grade Armor -->
+		<ingredient id="91663" count="50" />
+	</item>
+	<item product1Id="71900" index="225">	<!-- Limited Sayha's Blessing (1-day) -->
+		<ingredient id="91663" count="120" />
+	</item>
+	<item product1Id="71899" index="226">	<!-- Limited Sayha's Blessing (30-day) -->
+		<ingredient id="91663" count="2000" />
+	</item>
+	<item product1Id="91641" index="227">	<!-- Sayha's Blessing -->
+		<ingredient id="91663" count="20" />
+	</item>
+	<item product1Id="90907" index="228">	<!-- Soulshot Ticket -->
+		<ingredient id="91663" count="6" />
+	</item>
+	<item product1Id="49674" index="229">	<!-- XP Growth Scroll -->
+		<ingredient id="91663" count="20" />
+	</item>
+	<item product1Id="91690" index="230">	<!-- Special HP Recovery Potion -->
+		<ingredient id="91663" count="6" />
+	</item>
+	<item product1Id="90404" index="231">	<!-- My Teleport Book -->
+		<ingredient id="91663" count="300" />
+	</item>
+	<item product1Id="90405" index="232">	<!-- My Teleport Scroll -->
+		<ingredient id="91663" count="20" />
+	</item>
+	<item product1Id="91996" index="233">	<!-- Scroll of Escape Pack: Tower of Insolence (Floors 1-7) -->
+		<ingredient id="91663" count="50" />
+	</item>
+	<item product1Id="92973" index="234">	<!-- Scroll of Escape Pack: Tower of Insolence (Floors 8-12) -->
+		<ingredient id="91663" count="100" />
+	</item>
+	<item product1Id="92400" dailyLimit="1" index="235">	<!-- Forgotten Primeval Garden's Time Stone -->
+		<ingredient id="91663" count="300" />
+	</item>
+	<item product1Id="91983" dailyLimit="1" index="236">	<!-- Primeval Isle's Time Stone -->
+		<ingredient id="91663" count="200" />
+	</item>
+	<item product1Id="93948" dailyLimit="1" index="238">	<!-- Extra Pass: Transcendent Instance Zone -->
+		<ingredient id="91663" count="600" />
+	</item>
+	<item product1Id="91641" dailyLimit="30" index="239">	<!-- Sayha's Blessing -->
+		<ingredient id="57" count="50000" />
+	</item>
+	<item product1Id="91690" dailyLimit="100" index="240">	<!-- Special HP Recovery Potion -->
+		<ingredient id="57" count="30000" />
+	</item>
+	<item product1Id="94208" dailyLimit="1" index="241">	<!-- Scroll of Blessing -->
+		<ingredient id="57" count="30000000" />
+	</item>
+	<item product1Id="94377" dailyLimit="10" index="242">	<!-- Supply Pouch -->
+		<ingredient id="57" count="150000" />
+	</item>
+	<item product1Id="94781" index="243">	<!-- Growth Rune Lv. 1 -->
+		<ingredient id="57" count="5000000" />
+	</item>
+	<item product1Id="94780" dailyLimit="2" index="244">	<!-- Growth Rune Fragment -->
+		<ingredient id="57" count="1000000" />
+	</item>
+	<item product1Id="94690" dailyLimit="3" index="245">	<!-- Package: Scroll: Boost Attack (10 pcs.) -->
+		<ingredient id="57" count="1000000" />
+	</item>
+	<item product1Id="94691" dailyLimit="3" index="246">	<!-- Package: Scroll: Boost Defense (10 pcs.) -->
+		<ingredient id="57" count="1000000" />
+	</item>
+	<item product1Id="94777" dailyLimit="6" index="247">	<!-- Berserker's Scroll -->
+		<ingredient id="57" count="500000" />
+	</item>
+	<item product1Id="95749" dailyLimit="20" index="251">	<!-- Daily Enchant Scroll Pack -->
+		<ingredient id="57" count="100000" />
+	</item>
+	<item product1Id="95746" dailyLimit="1" index="252">	<!-- Enchant Package: Talisman of Aden -->
+		<ingredient id="57" count="2000000" />
+	</item>
+	<item product1Id="95747" dailyLimit="1" index="253">	<!-- Enchant Package: Ring of Insolence -->
+		<ingredient id="57" count="2000000" />
+	</item>
+	<item product1Id="95748" dailyLimit="1" index="254">	<!-- Enchant Package: Dragon Valley's Earring -->
+		<ingredient id="57" count="2000000" />
+	</item>
+</list>

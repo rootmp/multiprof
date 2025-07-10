@@ -1,0 +1,155 @@
+<!--AUTHOR: Bonux&MORSE-->
+<html>
+<body>
+<title>Сообщество  | Сервисы</title>
+<center>
+	<table width=755 height=375 border=0 cellpadding=0 cellspacing=0>
+		<tr>
+			<td valign="top">
+				<br>
+				<table border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td width=155 align="left" valign="top">
+<%?menu_all?%>
+						</td>
+						<td align="right" valign="top">
+							<table width=620 height=498 background="L2UI_CT1.Tab_DF_bg" border=0 cellpadding=0 cellspacing=0>
+								<tr>
+									<td align=center>
+										<table width=610 background="L2UI_CT1.Windows_DF_Drawer_Bg" border=0 cellpadding=0 cellspacing=0>
+			<!-- Верхняя Навигация Начало-->
+											<tr>
+												<td height=40 width=25></td>
+												<td width=320>
+							<font color=DDD3B6>&nbsp;&nbsp;&nbsp;<a action="bypass _bbspage:services">Сервисы</a>&nbsp;->&nbsp;Изменение Вида Брони</font>
+												</td>
+												<td align=right width=260><font color=DDD3B6>Текущий онлайн: <?total_online?></font></td>
+												<td height=40 width=25></td>
+											</tr>
+			<!-- Верхняя Навигация Конец-->
+										</table>
+									</td>
+								</tr>
+<!-- Основная полка Начало-->	<tr>
+									<td align=center>
+
+		<!-- Основная полка размеры -->	<table width=580 height=375 border=0 cellpadding=0 cellspacing=0>
+			<!-- Основная полка -->
+		<tr>
+			<td align=center>
+				<table width=750 height=375 border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td valign="top" align="center">
+							<!-- Grand Olympiad Emblem -->
+							<!--<table border=0 cellpadding=0 cellspacing=0>
+								<tr><td width=256 height=185 background="L2UI_CT1.OlympiadWnd_DF_GrandTexture"></td></tr>
+							</table>-->
+							<br><br>
+							<?content?>
+							<!--TEMPLATE1
+							Стоимость изменения внешнего вида брони: <font color="LEVEL"><?fee_item_count?> <?fee_item_name?></font><br1>
+							TEMPLATE-->
+							<!--TEMPLATE2
+							Изменение внешнего вида брони производится <font color="LEVEL">бесплатно</font>!<br1>
+							TEMPLATE-->
+							<!--TEMPLATE3
+							<font color="FF0000">ВНИМАНИЕ! Изменение применяется на одетую верхнюю или цельную броню персонажа. Старый внешний вид удаляется.</font><br1>
+							<table width=700 border=0>
+								<?rows?>
+							</table>
+							<button value="Сбросить внешний вид" action="bypass _cbbschangevisual_buy_0" width=200 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+							TEMPLATE-->
+							<!--TEMPLATE4
+							<tr>
+								<?cols?>
+							</tr>
+							<tr><td align=center>&nbsp;</td></tr>
+							TEMPLATE-->
+							<!--TEMPLATE5
+							<td align=center>
+								<table>
+									<tr><td align=center><font color=LEVEL><?visual_item_name?></font></td></tr>
+									<tr>
+										<td align=center>
+											<table width=200 border=0 background="L2UI_CT1.editbox_df_bg">
+												<tr>
+													<td align=center width=40 height=38><img src="<?icon?>" width=32 height=32></td>
+													<td align=center width=140 height=38><?button?></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+							TEMPLATE-->
+							<!--TEMPLATE51
+							<button value="Купить" action="bypass _cbbschangevisual_buy_<?visual_item_id?>" back="l2ui_ct1.Button_DF_Msn_down" width=120 height=30 fore="l2ui_ct1.Button_DF_Msn"/>
+							TEMPLATE-->
+							<!--TEMPLATE52
+							<button value="Применить" action="bypass _cbbschangevisual_buy_<?visual_item_id?>" back="l2ui_ct1.Button_DF_Msn_down" width=120 height=30 fore="l2ui_ct1.Button_DF_Msn"/>
+							TEMPLATE-->
+							<!--TEMPLATE6
+							У Вас не хватает предметов для оплаты. Необходимо: <font color="LEVEL"><?fee_item_count?> <?fee_item_name?></font><br>
+							<button value="Назад" action="bypass _cbbschangevisual" width=100 height=30 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+							TEMPLATE-->
+							<!--TEMPLATE7
+							У Вас не надета броня!<br1>
+							Оденьте на персонажа броню, и попробуйте повторно воспользоваться сервисом.<br>
+							<button value="Назад" action="bypass _cbbschangevisual" width=100 height=30 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+							TEMPLATE-->
+							<!--TEMPLATE8
+							У Вашей брони уже установлен такой же внешний вид!<br1>
+							Выберите другой внешний вид, и попробуйте повторно воспользоваться сервисом.<br>
+							<button value="Назад" action="bypass _cbbschangevisual" width=100 height=30 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+							TEMPLATE-->
+							<!--TEMPLATE9
+							У Вашей брони не установлен внешний вид!<br1>
+							Удаление внешнего вида брони невозможно.<br>
+							<button value="Назад" action="bypass _cbbschangevisual" width=100 height=30 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+							TEMPLATE-->
+							<!--TEMPLATE10
+							Поздравляем! Вы успешно приобрели изменение внешнего вида брони "<?chest_item_name?>" на <font color="LEVEL">"<?visual_item_name?>"</font>.
+							TEMPLATE-->
+							<!--TEMPLATE11
+							Поздравляем! Вы успешно сбросили внешний вид брони "<?chest_item_name?>" на стандартный.
+							TEMPLATE-->
+							<!--TEMPLATE12
+							Поздравляем! Вы успешно приобрели изменение внешнего вида брони <font color="LEVEL">"<?visual_item_name?>"</font> вашему персонажу.
+							TEMPLATE-->
+							<!--TEMPLATE13
+							Поздравляем! Вы успешно изменили внешний вид брони <font color="LEVEL">"<?visual_item_name?>"</font> вашего персонажа.
+							TEMPLATE-->
+							<!--TEMPLATE14
+							Поздравляем! Вы успешно сбросили внешний вид брони вашего персонажа на стандартный.
+							TEMPLATE-->
+							<!--TEMPLATE15
+							У Вашего персонажа уже установлен такой же внешний вид!<br1>
+							Выберите другой внешний вид, и попробуйте повторно воспользоваться сервисом.<br>
+							<button value="Назад" action="bypass _cbbschangevisual" width=100 height=30 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+							TEMPLATE-->
+							<!--TEMPLATE16
+							У Вашего персонажа не установлен внешний вид!<br1>
+							Удаление внешнего вида персонажа невозможно.<br>
+							<button value="Назад" action="bypass _cbbschangevisual" width=100 height=30 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+							TEMPLATE-->
+							<br>
+							<button value="В меню" action="bypass _bbspage:services" width=100 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+			<!-- Основная полка -->
+										</table>
+									</td>
+<!-- Основная полка Конец-->	</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>

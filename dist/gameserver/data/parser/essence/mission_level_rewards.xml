@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "mission_level_rewards.dtd">
+<!-- AUTHOR: nexvill -->
+<!-- items data passed in client, this file contains just server side support for client requests -->
+<!-- You can only change points, that needs to N level -->
+<list>
+	<date_info month="9" year="2022" max_reward_lvl="20" final_reward_id="97233" final_reward_count="1">
+		<points level="1" value="40" base_reward_id="3031" base_reward_count="100" />
+		<points level="2" value="50" base_reward_id="90907" base_reward_count="10" />
+		<points level="3" value="60" base_reward_id="94271" base_reward_count="5" additional_reward_id="94777" additional_reward_count="3" />
+		<points level="4" value="70" base_reward_id="94269" base_reward_count="5" />
+		<points level="5" value="80" base_reward_id="91641" base_reward_count="20" />
+		<points level="6" value="90" base_reward_id="3031" base_reward_count="200" additional_reward_id="95747" additional_reward_count="1" />
+		<points level="7" value="100" base_reward_id="90907" base_reward_count="20" />
+		<points level="8" value="110" base_reward_id="94271" base_reward_count="10" />
+		<points level="9" value="120" base_reward_id="94269" base_reward_count="10" additional_reward_id="95748" additional_reward_count="1" />
+		<points level="10" value="130" base_reward_id="91641" base_reward_count="30" />
+		<points level="11" value="140" base_reward_id="3031" base_reward_count="300" />
+		<points level="12" value="150" base_reward_id="90907" base_reward_count="30" additional_reward_id="95746" additional_reward_count="2" />
+		<points level="13" value="160" base_reward_id="94271" base_reward_count="15" />
+		<points level="14" value="170" base_reward_id="94269" base_reward_count="15" />
+		<points level="15" value="180" base_reward_id="91641" base_reward_count="50" additional_reward_id="94212" additional_reward_count="1" />
+		<points level="16" value="190" base_reward_id="3031" base_reward_count="500" />
+		<points level="17" value="200" base_reward_id="90907" base_reward_count="50" />
+		<points level="18" value="210" base_reward_id="94271" base_reward_count="20" additional_reward_id="94210" additional_reward_count="1" />
+		<points level="19" value="220" base_reward_id="94269" base_reward_count="20" />
+		<points level="20" value="230" base_reward_id="91641" base_reward_count="100" />
+		<points level="21" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="22" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="23" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="24" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="25" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="26" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="27" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="28" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="29" value="250" base_reward_id="91641" base_reward_count="20" />
+		<points level="30" value="250" base_reward_id="91641" base_reward_count="20" />
+	</date_info>
+</list>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<config type="CHANCED"/>
+	<item>
+		<production id="49677" count="1"/>	<!--Talisman of Insolence Lv. 2-->
+		<production id="49677" count="1" chance="80"/>	<!--Talisman of Insolence Lv. 2-->
+		<production id="49676" count="1" chance="20"/>	<!--Talisman of Insolence Lv. 1-->
+		<ingredient id="49676" count="1"/>	<!--Talisman of Insolence Lv. 1-->
+		<ingredient id="49684" count="30"/>	<!--Talisman Crystal-->
+		<ingredient id="49543" count="40"/>	<!--Elemental Stone-->
+		<ingredient id="49685" count="2"/>	<!--Energy of Insolence-->
+	</item>
+	<item>
+		<production id="49678" count="1"/>	<!--Talisman of Insolence Lv. 3-->
+		<production id="49678" count="1" chance="60"/>	<!--Talisman of Insolence Lv. 3-->
+		<production id="49677" count="1" chance="40"/>	<!--Talisman of Insolence Lv. 2-->
+		<ingredient id="49677" count="1"/>	<!--Talisman of Insolence Lv. 2-->
+		<ingredient id="49684" count="45"/>	<!--Talisman Crystal-->
+		<ingredient id="49543" count="100"/>	<!--Elemental Stone-->
+		<ingredient id="49685" count="3"/>	<!--Energy of Insolence-->
+	</item>
+	<item>
+		<production id="49679" count="1"/>	<!--Talisman of Insolence Lv. 4-->
+		<production id="49679" count="1" chance="40"/>	<!--Talisman of Insolence Lv. 4-->
+		<production id="49678" count="1" chance="50"/>	<!--Talisman of Insolence Lv. 3-->
+		<production id="49677" count="1" chance="10"/>	<!--Talisman of Insolence Lv. 2-->
+		<ingredient id="49678" count="1"/>	<!--Talisman of Insolence Lv. 3-->
+		<ingredient id="49684" count="70"/>	<!--Talisman Crystal-->
+		<ingredient id="49543" count="100"/>	<!--Elemental Stone-->
+		<ingredient id="49685" count="4"/>	<!--Energy of Insolence-->
+	</item>
+	<item>
+		<production id="49680" count="1"/>	<!--Talisman of Insolence Lv. 5-->
+		<production id="49680" count="1" chance="10"/>	<!--Talisman of Insolence Lv. 5-->
+		<production id="49679" count="1" chance="50"/>	<!--Talisman of Insolence Lv. 4-->
+		<production id="49678" count="1" chance="40"/>	<!--Talisman of Insolence Lv. 3-->
+		<ingredient id="49679" count="1"/>	<!--Talisman of Insolence Lv. 4-->
+		<ingredient id="49684" count="100"/>	<!--Talisman Crystal-->
+		<ingredient id="49543" count="200"/>	<!--Elemental Stone-->
+		<ingredient id="49685" count="5"/>	<!--Energy of Insolence-->
+	</item>
+	<item>
+		<production id="49681" count="1" chance="100"/>	<!--Talisman of Insolence Lv. 6-->
+		<ingredient id="49680" count="1"/>	<!--Talisman of Insolence Lv. 5-->
+		<ingredient id="1460" count="5000"/>	<!--Crystal (B-grade)-->
+	</item>
+</list>

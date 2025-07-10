@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="24"><!--Silver Ranger-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="21" level="2" min_level="40" cost="85000"/><!--Recovery-->
+		<skill id="19" level="1" min_level="40" cost="85000"><!--Double Shot-->
+			<blocked_skills>
+				<skill id="3"/> <!-- ??? -->
+				<skill id="16"/> <!-- ??? -->
+				<skill id="56"/> <!-- ??? -->
+			</blocked_skills>
+		</skill>
+		<skill id="19" level="2" min_level="40" cost="85000"/><!--Double Shot-->
+		<skill id="19" level="3" min_level="40" cost="85000"/><!--Double Shot-->
+		<skill id="19" level="4" min_level="40" cost="85000"/><!--Double Shot-->
+		<skill id="19" level="5" min_level="40" cost="85000"/><!--Double Shot-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="61" level="2" min_level="40" cost="85000"/><!--Elven Spirit-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="123" level="1" min_level="40" cost="85000"/><!--Spirit Barrier-->
+		<skill id="256" level="2" min_level="40" cost="85000"><!--Accuracy-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="19" level="6" min_level="41" cost="100000"/><!--Double Shot-->
+		<skill id="19" level="7" min_level="42" cost="100000"/><!--Double Shot-->
+		<skill id="225" level="2" min_level="43" cost="100000"/><!--Acrobatic Move-->
+		<skill id="171" level="2" min_level="43" cost="100000"/><!--Esprit-->
+		<skill id="169" level="2" min_level="43" cost="100000"/><!--Quick Step-->
+		<skill id="19" level="8" min_level="43" cost="100000"/><!--Double Shot-->
+		<skill id="24" level="1" min_level="44" cost="150000"/><!--Burst Shot-->
+		<skill id="19" level="9" min_level="44" cost="150000"/><!--Double Shot-->
+		<skill id="24" level="2" min_level="45" cost="150000"/><!--Burst Shot-->
+		<skill id="19" level="10" min_level="45" cost="150000"/><!--Double Shot-->
+		<skill id="123" level="2" min_level="45" cost="150000"/><!--Spirit Barrier-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="171" level="3" min_level="46" cost="150000"/><!--Esprit-->
+		<skill id="24" level="3" min_level="46" cost="150000"/><!--Burst Shot-->
+		<skill id="19" level="11" min_level="46" cost="150000"/><!--Double Shot-->
+		<skill id="24" level="4" min_level="47" cost="200000"/><!--Burst Shot-->
+		<skill id="19" level="12" min_level="47" cost="200000"/><!--Double Shot-->
+		<skill id="24" level="5" min_level="48" cost="200000"/><!--Burst Shot-->
+		<skill id="19" level="13" min_level="48" cost="200000"/><!--Double Shot-->
+		<skill id="171" level="4" min_level="49" cost="200000"/><!--Esprit-->
+		<skill id="24" level="6" min_level="49" cost="200000"/><!--Burst Shot-->
+		<skill id="19" level="14" min_level="49" cost="200000"/><!--Double Shot-->
+		<skill id="24" level="7" min_level="50" cost="300000"/><!--Burst Shot-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="19" level="15" min_level="50" cost="300000"/><!--Double Shot-->
+		<skill id="230" level="2" min_level="50" cost="300000"/><!--Sprint-->
+		<skill id="24" level="8" min_level="51" cost="300000"/><!--Burst Shot-->
+		<skill id="19" level="16" min_level="51" cost="300000"/><!--Double Shot-->
+		<skill id="171" level="5" min_level="52" cost="300000"/><!--Esprit-->
+		<skill id="1405" level="1" min_level="52" cost="300000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="24" level="9" min_level="52" cost="300000"/><!--Burst Shot-->
+		<skill id="19" level="17" min_level="52" cost="300000"/><!--Double Shot-->
+		<skill id="24" level="10" min_level="53" cost="410000"/><!--Burst Shot-->
+		<skill id="19" level="18" min_level="53" cost="410000"/><!--Double Shot-->
+		<skill id="24" level="11" min_level="54" cost="410000"/><!--Burst Shot-->
+		<skill id="19" level="19" min_level="54" cost="410000"/><!--Double Shot-->
+		<skill id="111" level="2" min_level="55" cost="410000"/><!--Ultimate Evasion-->
+		<skill id="225" level="3" min_level="55" cost="410000"/><!--Acrobatic Move-->
+		<skill id="24" level="12" min_level="55" cost="410000"/><!--Burst Shot-->
+		<skill id="19" level="20" min_level="55" cost="410000"/><!--Double Shot-->
+		<skill id="123" level="3" min_level="55" cost="410000"/><!--Spirit Barrier-->
+		<skill id="24" level="13" min_level="56" cost="570000"/><!--Burst Shot-->
+		<skill id="19" level="21" min_level="56" cost="570000"/><!--Double Shot-->
+		<skill id="24" level="14" min_level="57" cost="570000"/><!--Burst Shot-->
+		<skill id="19" level="22" min_level="57" cost="570000"/><!--Double Shot-->
+		<skill id="24" level="15" min_level="58" cost="570000"/><!--Burst Shot-->
+		<skill id="19" level="23" min_level="58" cost="570000"/><!--Double Shot-->
+		<skill id="24" level="16" min_level="59" cost="830000"/><!--Burst Shot-->
+		<skill id="19" level="24" min_level="59" cost="830000"/><!--Double Shot-->
+		<skill id="413" level="1" min_level="60" cost="830000"/><!--Rapid Fire-->
+		<skill id="24" level="17" min_level="60" cost="830000"/><!--Burst Shot-->
+		<skill id="21" level="3" min_level="60" cost="830000"/><!--Recovery-->
+		<skill id="19" level="25" min_level="60" cost="830000"/><!--Double Shot-->
+		<skill id="61" level="3" min_level="60" cost="830000"/><!--Elven Spirit-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="1405" level="2" min_level="61" cost="830000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="24" level="18" min_level="61" cost="830000"/><!--Burst Shot-->
+		<skill id="19" level="26" min_level="61" cost="830000"/><!--Double Shot-->
+		<skill id="413" level="2" min_level="62" cost="1000000"/><!--Rapid Fire-->
+		<skill id="171" level="6" min_level="62" cost="1000000"/><!--Esprit-->
+		<skill id="24" level="19" min_level="62" cost="1000000"/><!--Burst Shot-->
+		<skill id="19" level="27" min_level="62" cost="1000000"/><!--Double Shot-->
+		<skill id="24" level="20" min_level="63" cost="1000000"/><!--Burst Shot-->
+		<skill id="19" level="28" min_level="63" cost="1000000"/><!--Double Shot-->
+		<skill id="413" level="3" min_level="64" cost="1300000"/><!--Rapid Fire-->
+		<skill id="24" level="21" min_level="64" cost="1300000"/><!--Burst Shot-->
+		<skill id="19" level="29" min_level="64" cost="1300000"/><!--Double Shot-->
+		<skill id="24" level="22" min_level="65" cost="1300000"/><!--Burst Shot-->
+		<skill id="19" level="30" min_level="65" cost="1300000"/><!--Double Shot-->
+		<skill id="413" level="4" min_level="66" cost="1500000"/><!--Rapid Fire-->
+		<skill id="24" level="23" min_level="66" cost="1500000"/><!--Burst Shot-->
+		<skill id="19" level="31" min_level="66" cost="1500000"/><!--Double Shot-->
+		<skill id="24" level="24" min_level="67" cost="1500000"/><!--Burst Shot-->
+		<skill id="19" level="32" min_level="67" cost="1500000"/><!--Double Shot-->
+		<skill id="413" level="5" min_level="68" cost="2000000"/><!--Rapid Fire-->
+		<skill id="171" level="7" min_level="68" cost="2000000"/><!--Esprit-->
+		<skill id="24" level="25" min_level="68" cost="2000000"/><!--Burst Shot-->
+		<skill id="19" level="33" min_level="68" cost="2000000"/><!--Double Shot-->
+		<skill id="24" level="26" min_level="69" cost="2000000"/><!--Burst Shot-->
+		<skill id="19" level="34" min_level="69" cost="2000000"/><!--Double Shot-->
+		<skill id="413" level="6" min_level="70" cost="2500000"/><!--Rapid Fire-->
+		<skill id="24" level="27" min_level="70" cost="2500000"/><!--Burst Shot-->
+		<skill id="19" level="35" min_level="70" cost="2500000"/><!--Double Shot-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="24" level="28" min_level="71" cost="2500000"/><!--Burst Shot-->
+		<skill id="19" level="36" min_level="71" cost="2500000"/><!--Double Shot-->
+		<skill id="413" level="7" min_level="72" cost="2800000"/><!--Rapid Fire-->
+		<skill id="24" level="29" min_level="72" cost="2800000"/><!--Burst Shot-->
+		<skill id="19" level="37" min_level="72" cost="2800000"/><!--Double Shot-->
+		<skill id="24" level="30" min_level="73" cost="2800000"/><!--Burst Shot-->
+		<skill id="19" level="38" min_level="73" cost="2800000"/><!--Double Shot-->
+		<skill id="413" level="8" min_level="74" cost="2800000"/><!--Rapid Fire-->
+		<skill id="171" level="8" min_level="74" cost="2800000"/><!--Esprit-->
+		<skill id="24" level="31" min_level="74" cost="2800000"/><!--Burst Shot-->
+		<skill id="19" level="39" min_level="74" cost="2800000"/><!--Double Shot-->
+		<skill id="19" level="40" min_level="75" cost="2800000"/><!--Double Shot-->
+		<skill id="47333" level="3" min_level="40" cost="85000"/><!--Acrobatic Body-->
+		<skill id="47333" level="4" min_level="50" cost="300000"/><!--Acrobatic Body-->
+		<skill id="47333" level="5" min_level="60" cost="830000"/><!--Acrobatic Body-->
+		<skill id="47333" level="6" min_level="70" cost="2500000"/><!--Acrobatic Body-->
+		<skill id="47333" level="7" min_level="75" cost="2800000"/><!--Acrobatic Body-->
+		<skill id="47414" level="1" min_level="40" cost="85000"><!--Archer's Weapon Mastery-->
+			<blocked_skills>
+				<skill id="141"/> <!-- ??? -->
+				<skill id="208"/> <!-- ??? -->
+				<skill id="209"/> <!-- ??? -->
+			</blocked_skills>
+		</skill>
+		<skill id="47414" level="2" min_level="50" cost="300000"/><!--Archer's Weapon Mastery-->
+		<skill id="47414" level="3" min_level="60" cost="830000"/><!--Archer's Weapon Mastery-->
+		<skill id="47414" level="4" min_level="70" cost="2500000"/><!--Archer's Weapon Mastery-->
+		<skill id="47415" level="1" min_level="40" cost="85000"><!--Archer's Armor Mastery-->
+			<blocked_skills>
+				<skill id="91"/> <!-- ??? -->
+				<skill id="142"/> <!-- ??? -->
+				<skill id="233"/> <!-- ??? -->
+			</blocked_skills>
+		</skill>
+		<skill id="47415" level="2" min_level="50" cost="300000"/><!--Archer's Armor Mastery-->
+		<skill id="47415" level="3" min_level="60" cost="830000"/><!--Archer's Armor Mastery-->
+		<skill id="47415" level="4" min_level="70" cost="2500000"/><!--Archer's Armor Mastery-->
+		<skill id="47422" level="1" min_level="40" cost="85000"/><!--Stun Shot-->
+		<skill id="47422" level="2" min_level="60" cost="830000"/><!--Stun Shot-->
+	</normal_skill_tree>
+</list>

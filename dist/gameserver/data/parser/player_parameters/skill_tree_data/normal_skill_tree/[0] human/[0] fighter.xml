@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--REWORKED: MORSE-->
+<list>
+	<normal_skill_tree class_id="0"><!--Fighter-->
+		<skill id="142" level="1" min_level="1"/><!--Armor Mastery-->
+		<skill id="141" level="1" min_level="1"/><!--Weapon Mastery-->
+		<skill id="1040" level="1" min_level="2" cost="5"/><!--Shield-->
+		<skill id="1068" level="1" min_level="3" cost="5"/><!--Might-->
+		<skill id="56" level="1" min_level="3" cost="5"/><!--Power Shot-->
+		<skill id="3" level="1" min_level="3" cost="5"/><!--Power Strike-->
+		<skill id="16" level="1" min_level="3" cost="5"/><!--Mortal Blow-->
+		<skill id="56" level="2" min_level="4" cost="10"/><!--Power Shot-->
+		<skill id="3" level="2" min_level="4" cost="10"/><!--Power Strike-->
+		<skill id="16" level="2" min_level="4" cost="10"/><!--Mortal Blow-->
+		<skill id="56" level="3" min_level="5" cost="15"/><!--Power Shot-->
+		<skill id="3" level="3" min_level="5" cost="15"/><!--Power Strike-->
+		<skill id="16" level="3" min_level="5" cost="15"/><!--Mortal Blow-->
+		<skill id="91" level="1" min_level="5" cost="15"/><!--Ability to Protect-->
+		<skill id="142" level="2" min_level="8" cost="100"/><!--Armor Mastery-->
+		<skill id="56" level="4" min_level="8" cost="100"/><!--Power Shot-->
+		<skill id="3" level="4" min_level="8" cost="100"/><!--Power Strike-->
+		<skill id="16" level="4" min_level="8" cost="100"/><!--Mortal Blow-->
+		<skill id="56" level="5" min_level="9" cost="100"/><!--Power Shot-->
+		<skill id="3" level="5" min_level="9" cost="100"/><!--Power Strike-->
+		<skill id="16" level="5" min_level="9" cost="100"/><!--Mortal Blow-->
+		<skill id="142" level="3" min_level="10" cost="100"/><!--Armor Mastery-->
+		<skill id="141" level="2" min_level="10" cost="100"/><!--Weapon Mastery-->
+		<skill id="56" level="6" min_level="10" cost="100"/><!--Power Shot-->
+		<skill id="3" level="6" min_level="10" cost="100"/><!--Power Strike-->
+		<skill id="16" level="6" min_level="10" cost="100"/><!--Mortal Blow-->
+		<skill id="77" level="1" min_level="10" cost="100"/><!--Ability to Attack-->
+		<skill id="70" level="1" min_level="10" cost="100"/><!--Emergency Rescue-->
+		<skill id="142" level="4" min_level="13" cost="400"/><!--Armor Mastery-->
+		<skill id="56" level="7" min_level="13" cost="400"/><!--Power Shot-->
+		<skill id="3" level="7" min_level="13" cost="400"/><!--Power Strike-->
+		<skill id="16" level="7" min_level="13" cost="400"/><!--Mortal Blow-->
+		<skill id="56" level="8" min_level="14" cost="400"/><!--Power Shot-->
+		<skill id="3" level="8" min_level="14" cost="400"/><!--Power Strike-->
+		<skill id="16" level="8" min_level="14" cost="400"/><!--Mortal Blow-->
+		<skill id="142" level="5" min_level="15" cost="400"/><!--Armor Mastery-->
+		<skill id="141" level="3" min_level="15" cost="400"/><!--Weapon Mastery-->
+		<skill id="56" level="9" min_level="15" cost="400"/><!--Power Shot-->
+		<skill id="3" level="9" min_level="15" cost="400"/><!--Power Strike-->
+		<skill id="16" level="9" min_level="15" cost="400"/><!--Mortal Blow-->
+		<skill id="70" level="2" min_level="15" cost="400"/><!--Emergency Rescue-->
+	</normal_skill_tree>
+</list>

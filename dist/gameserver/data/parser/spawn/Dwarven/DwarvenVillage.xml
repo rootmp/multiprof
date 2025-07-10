@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30539" /> <!-- Chichirin -->
+		<point x="114409" y="-178415" z="-808" h="57344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30537" /> <!-- Daichir -->
+		<point x="114348" y="-178537" z="-808" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30538" /> <!-- Zimenf -->
+		<point x="114426" y="-178672" z="-808" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30554" /> <!-- Bolter -->
+		<point x="112656" y="-174864" z="-608" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="32478" /> <!-- Game Assistant -->
+		<point x="115020" y="-179728" z="-880" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30520" /> <!-- Reed -->
+		<point x="115205" y="-180024" z="-872" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30533" /> <!-- Balanki -->
+		<point x="116016" y="-178615" z="-944" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30536" /> <!-- Arin -->
+		<point x="116103" y="-178653" z="-944" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30535" /> <!-- Filaur -->
+		<point x="116103" y="-178407" z="-944" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30531" /> <!-- Lockirin -->
+		<point x="116226" y="-178529" z="-944" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30534" /> <!-- Keef -->
+		<point x="116190" y="-178615" z="-944" h="24576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30532" /> <!-- Spiron -->
+		<point x="116190" y="-178441" z="-944" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30521" /> <!-- Murdoc -->
+		<point x="114716" y="-180018" z="-872" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30522" /> <!-- Airy -->
+		<point x="114832" y="-179520" z="-856" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30518" /> <!-- Garita -->
+		<point x="115900" y="-177316" z="-880" h="50000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30650" /> <!-- Gerald -->
+		<point x="114990" y="-177294" z="-856" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30601" /> <!-- Newbie Guide -->
+		<point x="115632" y="-177996" z="-896" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30540" /> <!-- Wirphy -->
+		<point x="115072" y="-178176" z="-864" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30519" /> <!-- Mion -->
+		<point x="116268" y="-177524" z="-880" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30545" /> <!-- Proton -->
+		<point x="115183" y="-176728" z="-784" h="20480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30546" /> <!-- Dinkey -->
+		<point x="114969" y="-176752" z="-784" h="15384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30547" /> <!-- Tardyon -->
+		<point x="117366" y="-178725" z="-1112" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30548" /> <!-- Nathan -->
+		<point x="117378" y="-178914" z="-1120" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30517" /> <!-- Shari -->
+		<point x="116192" y="-181072" z="-1336" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30555" /> <!-- Torocco -->
+		<point x="114866" y="-180328" z="-880" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30516" /> <!-- Reep -->
+		<point x="115741" y="-181645" z="-1320" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30526" /> <!-- Brunon -->
+		<point x="115315" y="-182155" z="-1440" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30671" /> <!-- Croto -->
+		<point x="117061" y="-181867" z="-1408" h="36864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30525" /> <!-- Bronk -->
+		<point x="115468" y="-182446" z="-1440" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30651" /> <!-- Dorf -->
+		<point x="116164" y="-184029" z="-1488" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30527" /> <!-- Silvera -->
+		<point x="115271" y="-182692" z="-1440" h="4096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30542" /> <!-- Runant -->
+		<point x="116617" y="-184308" z="-1560" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30544" /> <!-- Cromwell -->
+		<point x="116378" y="-184308" z="-1568" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30523" /> <!-- Gouph -->
+		<point x="115717" y="-183488" z="-1472" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30524" /> <!-- Pippi -->
+		<point x="115618" y="-183265" z="-1472" h="55000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30550" /> <!-- Gauri Twinklerock -->
+		<point x="115563" y="-182923" z="-1448" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30543" /> <!-- Ethan -->
+		<point x="117826" y="-182576" z="-1528" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30541" /> <!-- Paion -->
+		<point x="117847" y="-182339" z="-1528" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30553" /> <!-- Maryse Redbonnet -->
+		<point x="116852" y="-183595" z="-1568" h="32768" />
+	</spawn>
+</list>

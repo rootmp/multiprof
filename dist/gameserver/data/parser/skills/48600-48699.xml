@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="48632" levels="1" name="Skill Block Area">
+		<!--Blocks all skills.-->
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="-6666"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill1336"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

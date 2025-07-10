@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "special_craft.dtd">
+<!-- Author: nexvill -->
+<!-- NOTE: client controls what items shown, you can only remove/ comment some items to be don't shown in game, NOT add new -->
+<list>
+	<!-- Sayha's Blessing -->
+	<item product1Id="91641" product1Count="1" product1Chance="100.0" dailyLimit="15" index="300">
+		<ingredient id="-700" count="2" />
+	</item>
+	<!-- Special HP Recovery Potion -->
+	<item product1Id="91690" product1Count="1" product1Chance="100.0" dailyLimit="200" index="400">
+		<ingredient id="-700" count="1" />
+	</item>
+	<!-- Hardin's Notes - Page 1 -->
+	<item product1Id="95583" product1Count="1" product1Chance="100.0" dailyLimit="1" index="500">
+		<ingredient id="-700" count="250" />
+	</item>
+	<!-- Clan Cloak -->
+	<item product1Id="95636" product1Count="1" product1Chance="100.0" dailyLimit="4" index="501">
+		<ingredient id="-700" count="200" />
+	</item>
+	<!-- Scroll: Enchant Clan Equipment -->
+	<item product1Id="95638" product1Count="1" product1Chance="100.0" dailyLimit="10" index="502">
+		<ingredient id="-700" count="2" />
+	</item>
+	<!-- Hardin's Notes - Page 2 -->
+	<item product1Id="95584" product1Count="1" product1Chance="100.0" dailyLimit="1" index="600">
+		<ingredient id="-700" count="500" />
+	</item>
+	<!-- Clan Circlet -->
+	<item product1Id="95637" product1Count="1" product1Chance="100.0" dailyLimit="4" index="601">
+		<ingredient id="-700" count="200" />
+	</item>
+	<!-- Hardin's Notes - Page 3 -->
+	<item product1Id="95585" product1Count="1" product1Chance="100.0" dailyLimit="1" index="700">
+		<ingredient id="-700" count="2000" />
+	</item>
+	<!-- XP Restoration Discount Scroll Lv. 1 -->
+	<item product1Id="96696" product1Count="1" product1Chance="100.0" dailyLimit="3" index="703">
+		<ingredient id="-700" count="20" />
+	</item>
+	<!-- Scroll of Escape Box: Tower of Insolence (1st Floor to 7th Floor) -->
+	<item product1Id="91996" product1Count="1" product1Chance="100.0" dailyLimit="10" index="701">
+		<ingredient id="-700" count="25" />
+	</item>
+	<!-- Scroll of Escape Box: Tower of Insolence (8th Floor to 12th Floor) -->
+	<item product1Id="92973" product1Count="1" product1Chance="100.0" dailyLimit="10" index="702">
+		<ingredient id="-700" count="50" />
+	</item>
+</list>

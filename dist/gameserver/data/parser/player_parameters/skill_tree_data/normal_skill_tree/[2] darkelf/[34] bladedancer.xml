@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="34"><!--Bladedancer-->
+		<skill id="82" level="2" min_level="40" cost="87000"/><!--Majesty-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="141" level="4" min_level="40" cost="87000"/><!--Weapon Mastery-->
+		<skill id="144" level="1" min_level="40" cost="87000"/><!--Dual Sword Mastery-->
+		<skill id="144" level="2" min_level="40" cost="87000"/><!--Dual Sword Mastery-->
+		<skill id="144" level="3" min_level="40" cost="87000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="16" min_level="40" cost="87000"/><!--Heavy Armor Mastery-->
+		<skill id="232" level="17" min_level="40" cost="87000"/><!--Heavy Armor Mastery-->
+		<skill id="232" level="18" min_level="40" cost="87000"/><!--Heavy Armor Mastery-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="196" level="1" min_level="40" cost="87000"/><!--Dignity-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="2" level="5" min_level="40" cost="87000"/><!--Confusion-->
+		<skill id="45250" level="6" min_level="40" cost="87000"/><!--Drain HP-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="147" level="15" min_level="40" cost="87000"/><!--Magic Resistance-->
+		<skill id="147" level="16" min_level="40" cost="87000"/><!--Magic Resistance-->
+		<skill id="147" level="17" min_level="40" cost="87000"/><!--Magic Resistance-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="122" level="1" min_level="40" cost="87000"/><!--Hex-->
+		<skill id="115" level="3" min_level="40" cost="87000"/><!--Power Break-->
+		<skill id="45187" level="1" min_level="40" cost="87000"/><!--Guard Crush-->
+		<skill id="274" level="1" min_level="40" cost="87000"/><!--Dance of Warrior-->
+		<skill id="271" level="1" min_level="40" cost="87000"/><!--Dance of Fire-->
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45185" level="1" min_level="40" cost="87000"/><!--Fatal Slasher-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="197" level="1" min_level="40" cost="87000"/><!--Honor-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="70" level="10" min_level="40" cost="87000"/><!--Emergency Rescue-->
+		<skill id="144" level="4" min_level="41" cost="100000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="19" min_level="41" cost="100000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="18" min_level="41" cost="100000"/><!--Magic Resistance-->
+		<skill id="70" level="11" min_level="41" cost="100000"/><!--Emergency Rescue-->
+		<skill id="144" level="5" min_level="42" cost="100000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="20" min_level="42" cost="100000"/><!--Heavy Armor Mastery-->
+		<skill id="45250" level="7" min_level="42" cost="100000"/><!--Drain HP-->
+		<skill id="147" level="19" min_level="42" cost="100000"/><!--Magic Resistance-->
+		<skill id="277" level="1" min_level="42" cost="100000"/><!--Dance of Protection-->
+		<skill id="70" level="12" min_level="42" cost="100000"/><!--Emergency Rescue-->
+		<skill id="144" level="6" min_level="43" cost="100000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="21" min_level="43" cost="100000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="6" min_level="43" cost="100000"/><!--Confusion-->
+		<skill id="147" level="20" min_level="43" cost="100000"/><!--Magic Resistance-->
+		<skill id="122" level="2" min_level="43" cost="100000"/><!--Hex-->
+		<skill id="115" level="4" min_level="43" cost="100000"/><!--Power Break-->
+		<skill id="191" level="2" min_level="43" cost="100000"/><!--Focus Mind-->
+		<skill id="70" level="13" min_level="43" cost="100000"/><!--Emergency Rescue-->
+		<skill id="144" level="7" min_level="44" cost="150000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="22" min_level="44" cost="150000"/><!--Heavy Armor Mastery-->
+		<skill id="45250" level="8" min_level="44" cost="150000"/><!--Drain HP-->
+		<skill id="147" level="21" min_level="44" cost="150000"/><!--Magic Resistance-->
+		<skill id="311" level="1" min_level="44" cost="150000"/><!--Dark Elven Buff Cancel Resistance-->
+		<skill id="70" level="14" min_level="44" cost="150000"/><!--Emergency Rescue-->
+		<skill id="144" level="8" min_level="45" cost="150000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="23" min_level="45" cost="150000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="22" min_level="45" cost="150000"/><!--Magic Resistance-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="70" level="15" min_level="45" cost="150000"/><!--Emergency Rescue-->
+		<skill id="144" level="9" min_level="46" cost="150000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="24" min_level="46" cost="150000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="7" min_level="46" cost="150000"/><!--Confusion-->
+		<skill id="45250" level="9" min_level="46" cost="150000"/><!--Drain HP-->
+		<skill id="147" level="23" min_level="46" cost="150000"/><!--Magic Resistance-->
+		<skill id="122" level="3" min_level="46" cost="150000"/><!--Hex-->
+		<skill id="115" level="5" min_level="46" cost="150000"/><!--Power Break-->
+		<skill id="70" level="16" min_level="46" cost="150000"/><!--Emergency Rescue-->
+		<skill id="144" level="10" min_level="47" cost="210000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="25" min_level="47" cost="210000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="24" min_level="47" cost="210000"/><!--Magic Resistance-->
+		<skill id="70" level="17" min_level="47" cost="210000"/><!--Emergency Rescue-->
+		<skill id="272" level="1" min_level="48" cost="210000"/><!--Dark Elven Absorption-->
+		<skill id="144" level="11" min_level="48" cost="210000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="26" min_level="48" cost="210000"/><!--Heavy Armor Mastery-->
+		<skill id="45250" level="10" min_level="48" cost="210000"/><!--Drain HP-->
+		<skill id="147" level="25" min_level="48" cost="210000"/><!--Magic Resistance-->
+		<skill id="70" level="18" min_level="48" cost="210000"/><!--Emergency Rescue-->
+		<skill id="144" level="12" min_level="49" cost="210000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="27" min_level="49" cost="210000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="8" min_level="49" cost="210000"/><!--Confusion-->
+		<skill id="147" level="26" min_level="49" cost="210000"/><!--Magic Resistance-->
+		<skill id="122" level="4" min_level="49" cost="210000"/><!--Hex-->
+		<skill id="115" level="6" min_level="49" cost="210000"/><!--Power Break-->
+		<skill id="191" level="3" min_level="49" cost="210000"/><!--Focus Mind-->
+		<skill id="70" level="19" min_level="49" cost="210000"/><!--Emergency Rescue-->
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="144" level="13" min_level="50" cost="300000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="28" min_level="50" cost="300000"/><!--Heavy Armor Mastery-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="129" level="3" min_level="50" cost="300000"/><!--Dark Elven Spirit-->
+		<skill id="402" level="1" min_level="50" cost="300000"/><!--Shackle-->
+		<skill id="45250" level="11" min_level="50" cost="300000"/><!--Drain HP-->
+		<skill id="147" level="27" min_level="50" cost="300000"/><!--Magic Resistance-->
+		<skill id="45187" level="2" min_level="50" cost="300000"/><!--Guard Crush-->
+		<skill id="70" level="20" min_level="50" cost="300000"/><!--Emergency Rescue-->
+		<skill id="144" level="14" min_level="51" cost="300000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="29" min_level="51" cost="300000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="28" min_level="51" cost="300000"/><!--Magic Resistance-->
+		<skill id="70" level="21" min_level="51" cost="300000"/><!--Emergency Rescue-->
+		<skill id="1405" level="1" min_level="52" cost="300000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="144" level="15" min_level="52" cost="300000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="30" min_level="52" cost="300000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="9" min_level="52" cost="300000"/><!--Confusion-->
+		<skill id="45250" level="12" min_level="52" cost="300000"/><!--Drain HP-->
+		<skill id="147" level="29" min_level="52" cost="300000"/><!--Magic Resistance-->
+		<skill id="122" level="5" min_level="52" cost="300000"/><!--Hex-->
+		<skill id="115" level="7" min_level="52" cost="300000"/><!--Power Break-->
+		<skill id="273" level="1" min_level="52" cost="300000"/><!--Dark Elven Damage Decrease-->
+		<skill id="70" level="22" min_level="52" cost="300000"/><!--Emergency Rescue-->
+		<skill id="144" level="16" min_level="53" cost="420000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="31" min_level="53" cost="420000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="30" min_level="53" cost="420000"/><!--Magic Resistance-->
+		<skill id="70" level="23" min_level="53" cost="420000"/><!--Emergency Rescue-->
+		<skill id="144" level="17" min_level="54" cost="420000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="32" min_level="54" cost="420000"/><!--Heavy Armor Mastery-->
+		<skill id="45250" level="13" min_level="54" cost="420000"/><!--Drain HP-->
+		<skill id="147" level="31" min_level="54" cost="420000"/><!--Magic Resistance-->
+		<skill id="70" level="24" min_level="54" cost="420000"/><!--Emergency Rescue-->
+		<skill id="144" level="18" min_level="55" cost="420000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="33" min_level="55" cost="420000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="10" min_level="55" cost="420000"/><!--Confusion-->
+		<skill id="402" level="2" min_level="55" cost="420000"/><!--Shackle-->
+		<skill id="147" level="32" min_level="55" cost="420000"/><!--Magic Resistance-->
+		<skill id="122" level="6" min_level="55" cost="420000"/><!--Hex-->
+		<skill id="115" level="8" min_level="55" cost="420000"/><!--Power Break-->
+		<skill id="276" level="1" min_level="55" cost="420000"/><!--Dark Elven Magic Resistance-->
+		<skill id="84" level="1" min_level="55" cost="420000"/><!--Poison Blade Dance-->
+		<skill id="191" level="4" min_level="55" cost="420000"/><!--Focus Mind-->
+		<skill id="70" level="25" min_level="55" cost="420000"/><!--Emergency Rescue-->
+		<skill id="144" level="19" min_level="56" cost="580000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="34" min_level="56" cost="580000"/><!--Heavy Armor Mastery-->
+		<skill id="45250" level="14" min_level="56" cost="580000"/><!--Drain HP-->
+		<skill id="147" level="33" min_level="56" cost="580000"/><!--Magic Resistance-->
+		<skill id="70" level="26" min_level="56" cost="580000"/><!--Emergency Rescue-->
+		<skill id="144" level="20" min_level="57" cost="580000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="35" min_level="57" cost="580000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="34" min_level="57" cost="580000"/><!--Magic Resistance-->
+		<skill id="70" level="27" min_level="57" cost="580000"/><!--Emergency Rescue-->
+		<skill id="82" level="3" min_level="58" cost="580000"/><!--Majesty-->
+		<skill id="144" level="21" min_level="58" cost="580000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="36" min_level="58" cost="580000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="11" min_level="58" cost="580000"/><!--Confusion-->
+		<skill id="45250" level="15" min_level="58" cost="580000"/><!--Drain HP-->
+		<skill id="147" level="35" min_level="58" cost="580000"/><!--Magic Resistance-->
+		<skill id="122" level="7" min_level="58" cost="580000"/><!--Hex-->
+		<skill id="115" level="9" min_level="58" cost="580000"/><!--Power Break-->
+		<skill id="70" level="28" min_level="58" cost="580000"/><!--Emergency Rescue-->
+		<skill id="144" level="22" min_level="59" cost="850000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="37" min_level="59" cost="850000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="36" min_level="59" cost="850000"/><!--Magic Resistance-->
+		<skill id="70" level="29" min_level="59" cost="850000"/><!--Emergency Rescue-->
+		<skill id="144" level="23" min_level="60" cost="850000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="38" min_level="60" cost="850000"/><!--Heavy Armor Mastery-->
+		<skill id="129" level="4" min_level="60" cost="850000"/><!--Dark Elven Spirit-->
+		<skill id="2" level="12" min_level="60" cost="850000"/><!--Confusion-->
+		<skill id="402" level="3" min_level="60" cost="850000"/><!--Shackle-->
+		<skill id="45250" level="16" min_level="60" cost="850000"/><!--Drain HP-->
+		<skill id="147" level="37" min_level="60" cost="850000"/><!--Magic Resistance-->
+		<skill id="122" level="8" min_level="60" cost="850000"/><!--Hex-->
+		<skill id="115" level="10" min_level="60" cost="850000"/><!--Power Break-->
+		<skill id="45187" level="3" min_level="60" cost="850000"/><!--Guard Crush-->
+		<skill id="77" level="3" min_level="60" cost="850000"/><!--Ability to Attack-->
+		<skill id="84" level="2" min_level="60" cost="850000"/><!--Poison Blade Dance-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="70" level="30" min_level="60" cost="850000"/><!--Emergency Rescue-->
+		<skill id="1405" level="2" min_level="61" cost="850000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="144" level="24" min_level="61" cost="850000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="39" min_level="61" cost="850000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="38" min_level="61" cost="850000"/><!--Magic Resistance-->
+		<skill id="70" level="31" min_level="61" cost="850000"/><!--Emergency Rescue-->
+		<skill id="144" level="25" min_level="62" cost="1100000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="40" min_level="62" cost="1100000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="13" min_level="62" cost="1100000"/><!--Confusion-->
+		<skill id="402" level="4" min_level="62" cost="1100000"/><!--Shackle-->
+		<skill id="45250" level="17" min_level="62" cost="1100000"/><!--Drain HP-->
+		<skill id="147" level="39" min_level="62" cost="1100000"/><!--Magic Resistance-->
+		<skill id="122" level="9" min_level="62" cost="1100000"/><!--Hex-->
+		<skill id="115" level="11" min_level="62" cost="1100000"/><!--Power Break-->
+		<skill id="275" level="1" min_level="74" cost="2800000"/><!--Dance of the Mystic-->
+		<skill id="70" level="32" min_level="62" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="144" level="26" min_level="63" cost="1100000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="41" min_level="63" cost="1100000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="40" min_level="63" cost="1100000"/><!--Magic Resistance-->
+		<skill id="70" level="33" min_level="63" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="144" level="27" min_level="64" cost="1300000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="42" min_level="64" cost="1300000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="14" min_level="64" cost="1300000"/><!--Confusion-->
+		<skill id="402" level="5" min_level="64" cost="1300000"/><!--Shackle-->
+		<skill id="45250" level="18" min_level="64" cost="1300000"/><!--Drain HP-->
+		<skill id="147" level="41" min_level="64" cost="1300000"/><!--Magic Resistance-->
+		<skill id="122" level="10" min_level="64" cost="1300000"/><!--Hex-->
+		<skill id="115" level="12" min_level="64" cost="1300000"/><!--Power Break-->
+		<skill id="191" level="5" min_level="64" cost="1300000"/><!--Focus Mind-->
+		<skill id="70" level="34" min_level="64" cost="1300000"/><!--Emergency Rescue-->
+		<skill id="144" level="28" min_level="65" cost="1300000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="43" min_level="65" cost="1300000"/><!--Heavy Armor Mastery-->
+		<skill id="196" level="2" min_level="65" cost="1300000"/><!--Dignity-->
+		<skill id="147" level="42" min_level="65" cost="1300000"/><!--Magic Resistance-->
+		<skill id="310" level="1" min_level="40" cost="87000"/><!--Dance of Fury-->
+		<skill id="197" level="2" min_level="65" cost="1300000"/><!--Honor-->
+		<skill id="70" level="35" min_level="65" cost="1300000"/><!--Emergency Rescue-->
+		<skill id="144" level="29" min_level="66" cost="1500000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="44" min_level="66" cost="1500000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="15" min_level="66" cost="1500000"/><!--Confusion-->
+		<skill id="402" level="6" min_level="66" cost="1500000"/><!--Shackle-->
+		<skill id="45250" level="19" min_level="66" cost="1500000"/><!--Drain HP-->
+		<skill id="147" level="43" min_level="66" cost="1500000"/><!--Magic Resistance-->
+		<skill id="122" level="11" min_level="66" cost="1500000"/><!--Hex-->
+		<skill id="115" level="13" min_level="66" cost="1500000"/><!--Power Break-->
+		<skill id="70" level="36" min_level="66" cost="1500000"/><!--Emergency Rescue-->
+		<skill id="144" level="30" min_level="67" cost="1500000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="45" min_level="67" cost="1500000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="44" min_level="67" cost="1500000"/><!--Magic Resistance-->
+		<skill id="70" level="37" min_level="67" cost="1500000"/><!--Emergency Rescue-->
+		<skill id="144" level="31" min_level="68" cost="2000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="46" min_level="68" cost="2000000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="16" min_level="68" cost="2000000"/><!--Confusion-->
+		<skill id="402" level="7" min_level="68" cost="2000000"/><!--Shackle-->
+		<skill id="45250" level="20" min_level="68" cost="2000000"/><!--Drain HP-->
+		<skill id="147" level="45" min_level="68" cost="2000000"/><!--Magic Resistance-->
+		<skill id="122" level="12" min_level="68" cost="2000000"/><!--Hex-->
+		<skill id="115" level="14" min_level="68" cost="2000000"/><!--Power Break-->
+		<skill id="366" level="1" min_level="68" cost="2000000"/><!--Dance of Berserker-->
+		<skill id="70" level="38" min_level="68" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="144" level="32" min_level="69" cost="2000000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="47" min_level="69" cost="2000000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="46" min_level="69" cost="2000000"/><!--Magic Resistance-->
+		<skill id="70" level="39" min_level="69" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="144" level="33" min_level="70" cost="2500000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="48" min_level="70" cost="2500000"/><!--Heavy Armor Mastery-->
+		<skill id="129" level="5" min_level="70" cost="2500000"/><!--Dark Elven Spirit-->
+		<skill id="2" level="17" min_level="70" cost="2500000"/><!--Confusion-->
+		<skill id="402" level="8" min_level="70" cost="2500000"/><!--Shackle-->
+		<skill id="45250" level="21" min_level="70" cost="2500000"/><!--Drain HP-->
+		<skill id="147" level="47" min_level="70" cost="2500000"/><!--Magic Resistance-->
+		<skill id="122" level="13" min_level="70" cost="2500000"/><!--Hex-->
+		<skill id="115" level="15" min_level="70" cost="2500000"/><!--Power Break-->
+		<skill id="45187" level="4" min_level="70" cost="2500000"/><!--Guard Crush-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="70" level="40" min_level="70" cost="2500000"/><!--Emergency Rescue-->
+		<skill id="144" level="34" min_level="71" cost="2500000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="49" min_level="71" cost="2500000"/><!--Heavy Armor Mastery-->
+		<skill id="147" level="48" min_level="71" cost="2500000"/><!--Magic Resistance-->
+		<skill id="365" level="1" min_level="71" cost="2500000"/><!--Dark Elven Magic Affinity-->
+		<skill id="70" level="41" min_level="71" cost="2500000"/><!--Emergency Rescue-->
+		<skill id="144" level="35" min_level="72" cost="2800000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="50" min_level="72" cost="2800000"/><!--Heavy Armor Mastery-->
+		<skill id="2" level="18" min_level="72" cost="2800000"/><!--Confusion-->
+		<skill id="402" level="9" min_level="72" cost="2800000"/><!--Shackle-->
+		<skill id="45250" level="22" min_level="72" cost="2800000"/><!--Drain HP-->
+		<skill id="147" level="49" min_level="72" cost="2800000"/><!--Magic Resistance-->
+		<skill id="122" level="14" min_level="72" cost="2800000"/><!--Hex-->
+		<skill id="115" level="16" min_level="72" cost="2800000"/><!--Power Break-->
+		<skill id="84" level="3" min_level="72" cost="2800000"/><!--Poison Blade Dance-->
+		<skill id="191" level="6" min_level="72" cost="2800000"/><!--Focus Mind-->
+		<skill id="70" level="42" min_level="72" cost="2800000"/><!--Emergency Rescue-->
+		<skill id="144" level="36" min_level="73" cost="2800000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="51" min_level="73" cost="2800000"/><!--Heavy Armor Mastery-->
+		<skill id="45250" level="23" min_level="73" cost="2800000"/><!--Drain HP-->
+		<skill id="147" level="50" min_level="73" cost="2800000"/><!--Magic Resistance-->
+		<skill id="70" level="43" min_level="73" cost="2800000"/><!--Emergency Rescue-->
+		<skill id="144" level="37" min_level="74" cost="2800000"/><!--Dual Sword Mastery-->
+		<skill id="232" level="52" min_level="74" cost="2800000"/><!--Heavy Armor Mastery-->
+		<skill id="915" level="1" min_level="62" cost="1100000"/><!--Moving Shadows-->
+		<skill id="2" level="19" min_level="74" cost="2800000"/><!--Confusion-->
+		<skill id="402" level="10" min_level="74" cost="2800000"/><!--Shackle-->
+		<skill id="45250" level="24" min_level="74" cost="2800000"/><!--Drain HP-->
+		<skill id="147" level="51" min_level="74" cost="2800000"/><!--Magic Resistance-->
+		<skill id="122" level="15" min_level="74" cost="2800000"/><!--Hex-->
+		<skill id="115" level="17" min_level="74" cost="2800000"/><!--Power Break-->
+		<skill id="70" level="44" min_level="74" cost="2800000"/><!--Emergency Rescue-->
+		<skill id="2" level="20" min_level="75" cost="2800000"/><!--Confusion-->
+		<skill id="45250" level="25" min_level="75" cost="2800000"/><!--Drain HP-->
+		<skill id="45187" level="5" min_level="75" cost="2800000"/><!--Guard Crush-->
+		<skill id="70" level="45" min_level="75" cost="2800000"/><!--Emergency Rescue-->
+		<skill id="271" level="2" min_level="40" cost="87000"><!--Dance of Fire-->
+			<required_items>
+				<item id="94327;95532" count="1"/><!--Spellbook: Dance of Fire-->
+			</required_items>
+		</skill>
+		<skill id="274" level="2" min_level="40" cost="87000"><!--Dance of Warrior-->
+			<required_items>
+				<item id="94326;95531" count="1"/><!--Spellbook: Dance of Warrior-->
+			</required_items>
+		</skill>
+		<skill id="310" level="2" min_level="40" cost="87000"><!--Dance of Fury-->
+			<required_items>
+				<item id="95349;95568" count="1"/><!--Spellbook: Dance of Fury-->
+			</required_items>
+		</skill>
+		<skill id="45395" level="1" min_level="40" cost="87000"><!--Intoxicating Dance-->
+			<required_items>
+				<item id="94320;95525" count="1"/><!--Spellbook: Intoxicating Dance-->
+			</required_items>
+			<blocked_skills>
+				<skill id="84"/><!--Poison Blade Dance-->
+			</blocked_skills>
+		</skill>
+	</normal_skill_tree>
+</list>

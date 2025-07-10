@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107087" y="229844" z="-3552" h="62239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107152" y="230024" z="-3600" h="64245" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-106876" y="230865" z="-3728" h="1770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107370" y="230391" z="-3648" h="8493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20342" /> <!-- Werewolf Chieftain -->
+		<point x="-105121" y="225735" z="-3608" h="27479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20093" /> <!-- Orc Warrior -->
+		<point x="-106017" y="225532" z="-3664" h="4111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-105192" y="225561" z="-3608" h="1630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104481" y="227333" z="-3648" h="45157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104266" y="227205" z="-3640" h="37002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-106213" y="230252" z="-3712" h="30033" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-106357" y="230311" z="-3712" h="25259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20342" /> <!-- Werewolf Chieftain -->
+		<point x="-105716" y="230126" z="-3736" h="38764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-103973" y="226819" z="-3632" h="3514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-103762" y="227177" z="-3648" h="30924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-103358" y="226523" z="-3664" h="11034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-102733" y="227299" z="-3688" h="61945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-102652" y="227618" z="-3680" h="31551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-102321" y="230416" z="-3696" h="9954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107246" y="224594" z="-3600" h="61755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104776" y="225145" z="-3608" h="12369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-105031" y="223729" z="-3608" h="24161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-105948" y="224845" z="-3648" h="8126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-106143" y="224616" z="-3632" h="4773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-105090" y="224190" z="-3632" h="51994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104425" y="225024" z="-3608" h="35620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104978" y="224472" z="-3640" h="29419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-105650" y="223772" z="-3632" h="42200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104253" y="224494" z="-3616" h="193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-105817" y="224349" z="-3640" h="5886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104683" y="224565" z="-3632" h="38702" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104665" y="224355" z="-3624" h="12333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-100843" y="223438" z="-3416" h="62473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-102190" y="226534" z="-3664" h="12522" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20342" /> <!-- Werewolf Chieftain -->
+		<point x="-104482" y="222638" z="-3440" h="42762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-104176" y="217232" z="-3200" h="50277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-103294" y="217901" z="-3096" h="42450" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-100588" y="216795" z="-3368" h="16633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107168" y="215896" z="-3264" h="20539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107710" y="217025" z="-3296" h="49908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108245" y="215621" z="-3272" h="8363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-106762" y="215962" z="-3248" h="44080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-106908" y="215805" z="-3264" h="12547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107974" y="216185" z="-3264" h="9729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107606" y="216706" z="-3280" h="42680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107978" y="216118" z="-3264" h="13256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107898" y="215951" z="-3264" h="13343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107955" y="216997" z="-3296" h="43852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108088" y="216923" z="-3304" h="238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108145" y="216773" z="-3000" h="43031" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108153" y="217207" z="-3264" h="25821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108066" y="216950" z="-3304" h="35482" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108677" y="217211" z="-3216" h="54660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-107752" y="216954" z="-3296" h="37186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108804" y="215488" z="-3248" h="2219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108665" y="216761" z="-3280" h="41910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108632" y="215722" z="-3256" h="59226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108569" y="216896" z="-3272" h="40183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109359" y="216050" z="-3224" h="7542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108791" y="215892" z="-3256" h="34300" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109162" y="216647" z="-3232" h="20997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109154" y="215411" z="-3256" h="54204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108777" y="215499" z="-3256" h="29293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109283" y="215428" z="-3240" h="35406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109507" y="215894" z="-3224" h="22503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109049" y="216214" z="-3248" h="33743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109236" y="215286" z="-3272" h="61762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109516" y="216072" z="-3216" h="3733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109599" y="216381" z="-3192" h="20397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109291" y="216667" z="-3216" h="34616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109222" y="215619" z="-3240" h="50689" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109057" y="215758" z="-3240" h="61845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109884" y="216633" z="-3160" h="21385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109871" y="216454" z="-3168" h="21394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109863" y="216634" z="-3160" h="48041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110608" y="216967" z="-3088" h="61648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110962" y="216818" z="-3168" h="63845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110966" y="216858" z="-3160" h="53765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111217" y="216488" z="-3176" h="52745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110889" y="216702" z="-3176" h="42886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111228" y="216455" z="-3176" h="19647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110949" y="216505" z="-3184" h="25390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110783" y="216899" z="-3136" h="18281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111117" y="216307" z="-3192" h="3829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110860" y="216635" z="-3176" h="12913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111656" y="216505" z="-3160" h="4174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111268" y="216472" z="-3168" h="24923" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112191" y="217914" z="-3032" h="44978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110562" y="216974" z="-3088" h="39250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111794" y="218500" z="-3000" h="42578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111353" y="218604" z="-2936" h="59197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112325" y="219260" z="-2936" h="9391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111100" y="217862" z="-2968" h="651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112020" y="217625" z="-3040" h="52509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110970" y="217448" z="-3000" h="63577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112114" y="218226" z="-3008" h="39365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112184" y="219243" z="-2888" h="24917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-111848" y="217745" z="-3000" h="8288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112350" y="217892" z="-3048" h="2186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109285" y="217378" z="-3096" h="6127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110513" y="217550" z="-2976" h="32331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-108526" y="217143" z="-3248" h="12867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109260" y="217272" z="-3136" h="540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110727" y="218411" z="-2912" h="26985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110203" y="217274" z="-3056" h="14497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-110350" y="217437" z="-3000" h="30529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-109761" y="217750" z="-2952" h="45655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112724" y="216834" z="-3120" h="55014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114353" y="219215" z="-3128" h="24113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112741" y="217960" z="-3096" h="24966" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114062" y="218847" z="-3120" h="32287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114063" y="218901" z="-3136" h="46629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114696" y="218643" z="-3072" h="28272" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114485" y="218173" z="-3072" h="59048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114777" y="218637" z="-3072" h="64789" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113128" y="218025" z="-3112" h="5354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113211" y="217744" z="-3096" h="58441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114009" y="217802" z="-3072" h="19024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113779" y="217989" z="-3088" h="26889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112613" y="219230" z="-3008" h="4525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113497" y="217580" z="-3064" h="22407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-112972" y="217075" z="-3112" h="13572" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113796" y="218032" z="-3088" h="60697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113267" y="217509" z="-3096" h="38857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114488" y="219421" z="-3136" h="2645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113988" y="220886" z="-2840" h="1297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114427" y="220018" z="-3072" h="5130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114228" y="219254" z="-3144" h="32397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114046" y="221135" z="-2800" h="15264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113811" y="219205" z="-3144" h="20937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114532" y="219842" z="-3096" h="31452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113931" y="219299" z="-3128" h="13095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114459" y="219192" z="-3120" h="41812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113749" y="220191" z="-2968" h="48142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113935" y="219906" z="-3040" h="23693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114190" y="218944" z="-3112" h="21869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114356" y="219154" z="-3128" h="52860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114771" y="220367" z="-3056" h="23716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114285" y="219787" z="-3072" h="15123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-113511" y="220663" z="-2856" h="59197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114887" y="218891" z="-3080" h="21384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114617" y="219089" z="-3104" h="17329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115102" y="218939" z="-3064" h="56339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114681" y="218726" z="-3080" h="31164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114540" y="220690" z="-2984" h="21048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115054" y="219050" z="-3080" h="29258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114776" y="220740" z="-2984" h="48094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114650" y="220825" z="-2968" h="53673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115879" y="220522" z="-3080" h="36675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116526" y="221279" z="-3064" h="51810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115279" y="220854" z="-3024" h="39635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115528" y="220381" z="-3088" h="26361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115382" y="219507" z="-3080" h="15823" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115019" y="219034" z="-3080" h="57625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115774" y="220264" z="-3080" h="43747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116087" y="223229" z="-2936" h="23204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116130" y="222923" z="-2936" h="62455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116932" y="223220" z="-3056" h="1479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116366" y="222951" z="-3016" h="1082" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116411" y="223044" z="-3024" h="28982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115132" y="221320" z="-2944" h="4832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116256" y="222804" z="-2984" h="18251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116294" y="223078" z="-2992" h="36969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115017" y="221144" z="-2960" h="46554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-114250" y="221381" z="-2840" h="6958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117323" y="222987" z="-3016" h="24188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116738" y="222316" z="-3056" h="43681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116764" y="222700" z="-3056" h="25764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116950" y="222791" z="-3048" h="62185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118123" y="224888" z="-2928" h="29671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117043" y="224176" z="-3040" h="55081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117857" y="224582" z="-2960" h="29369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117634" y="224790" z="-2960" h="44874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117742" y="224419" z="-2976" h="44161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117569" y="223145" z="-2992" h="47605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117598" y="223753" z="-3000" h="38289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116607" y="224874" z="-2992" h="716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115589" y="224020" z="-2864" h="37605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116262" y="224319" z="-2944" h="54668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115668" y="223681" z="-2888" h="37284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115384" y="224453" z="-2808" h="26214" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115845" y="223716" z="-2896" h="46670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-115622" y="225092" z="-2784" h="15103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116059" y="223451" z="-2928" h="35933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116140" y="223324" z="-2952" h="8359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116390" y="224433" z="-2960" h="21545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115686" y="224855" z="-2840" h="14039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116232" y="224395" z="-2936" h="10964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116408" y="223530" z="-3008" h="1104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115886" y="223973" z="-2888" h="33514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116371" y="224881" z="-2944" h="55566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118197" y="226118" z="-2856" h="2374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116744" y="226813" z="-2952" h="32606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116746" y="226379" z="-2952" h="35183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116814" y="226569" z="-2952" h="27510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116740" y="226249" z="-2952" h="18295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117299" y="226707" z="-2912" h="64054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117328" y="225204" z="-2968" h="35417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116846" y="226139" z="-2952" h="51719" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116937" y="226934" z="-2952" h="55229" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117686" y="226953" z="-2880" h="4060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117545" y="226368" z="-2896" h="19973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117201" y="226650" z="-2920" h="7670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117080" y="226935" z="-2944" h="46694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117895" y="226827" z="-2872" h="45454" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117532" y="226445" z="-2896" h="3039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117548" y="227075" z="-2888" h="44765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117232" y="226397" z="-2928" h="59473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117167" y="227269" z="-2928" h="12414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118159" y="226709" z="-2856" h="49696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-115740" y="226171" z="-2768" h="14251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-115837" y="226528" z="-2744" h="17329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116148" y="226333" z="-2848" h="26237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116148" y="227143" z="-2416" h="30930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116708" y="226660" z="-2952" h="8376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116323" y="226552" z="-2864" h="8439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115944" y="226171" z="-2800" h="32150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115823" y="226453" z="-2744" h="12186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-115766" y="226274" z="-2768" h="15102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116593" y="226994" z="-2920" h="34783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116654" y="226878" z="-2936" h="557" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116936" y="226057" z="-2952" h="28649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-115558" y="225353" z="-2720" h="17098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118679" y="228461" z="-2864" h="5246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119412" y="228763" z="-2864" h="8305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117780" y="228925" z="-2864" h="58128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117328" y="228299" z="-2864" h="63931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118032" y="228872" z="-2864" h="13942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117770" y="227414" z="-2872" h="30387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116943" y="227471" z="-2920" h="13176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117261" y="227199" z="-2920" h="2643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118484" y="228390" z="-2864" h="54102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118392" y="229087" z="-2864" h="45937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118091" y="227905" z="-2856" h="28519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118145" y="228371" z="-2864" h="9862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117061" y="228737" z="-2856" h="58521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117061" y="228900" z="-2864" h="59267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117891" y="228687" z="-2864" h="63615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117734" y="228131" z="-2864" h="19209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117806" y="227865" z="-2864" h="43645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117127" y="228577" z="-2856" h="51799" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117064" y="228912" z="-2864" h="62792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117992" y="227613" z="-2856" h="15325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116665" y="228965" z="-2864" h="8414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116572" y="228528" z="-2856" h="19586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116525" y="228042" z="-2816" h="44987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116787" y="227491" z="-2880" h="47847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116706" y="227306" z="-2920" h="8284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116324" y="228125" z="-2832" h="28734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116238" y="228108" z="-2832" h="51113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116664" y="227842" z="-2808" h="7786" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-116374" y="227462" z="-2816" h="17470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119726" y="231582" z="-2840" h="8390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119673" y="231127" z="-2864" h="10510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-119043" y="230093" z="-2888" h="27597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-119010" y="230636" z="-2904" h="63637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-119190" y="231181" z="-2888" h="61366" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118746" y="230193" z="-2872" h="33886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119925" y="231679" z="-2832" h="18991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118418" y="230674" z="-2872" h="1488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-117870" y="230272" z="-2896" h="40003" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118336" y="230395" z="-2840" h="36448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118722" y="231614" z="-2880" h="6856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118843" y="231316" z="-2880" h="4510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118314" y="230170" z="-2840" h="35191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119628" y="231872" z="-2856" h="16663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119489" y="231554" z="-2864" h="49268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-119640" y="231930" z="-2856" h="25813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119701" y="231885" z="-2840" h="37369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119705" y="231790" z="-2840" h="22740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119275" y="231956" z="-2888" h="60151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119169" y="232177" z="-2888" h="42816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119316" y="232086" z="-2880" h="48783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119489" y="231955" z="-2864" h="22710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119013" y="232087" z="-2888" h="1909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119654" y="232134" z="-2848" h="7119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119767" y="231713" z="-2840" h="62142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118301" y="231469" z="-2904" h="40192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118502" y="231724" z="-2904" h="52179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118128" y="231499" z="-2928" h="20406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118453" y="231885" z="-2904" h="33838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118244" y="231853" z="-2928" h="23096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119743" y="235111" z="-2880" h="18028" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-119083" y="234091" z="-2904" h="16052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119866" y="235257" z="-2864" h="7161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119927" y="235006" z="-2880" h="14039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118908" y="235286" z="-2888" h="19117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119878" y="234181" z="-2856" h="1076" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-120007" y="234856" z="-2864" h="65157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119332" y="234016" z="-2896" h="35607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118963" y="234506" z="-2904" h="57168" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119792" y="234368" z="-2888" h="52532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119841" y="235129" z="-2872" h="5450" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119505" y="235403" z="-2880" h="50687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-119375" y="235620" z="-2872" h="5678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119622" y="233873" z="-2880" h="44857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118946" y="234814" z="-2896" h="34254" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118608" y="234558" z="-2904" h="52983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118501" y="234631" z="-2880" h="32065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119089" y="235653" z="-2888" h="1287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119053" y="237419" z="-2880" h="33646" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119698" y="236215" z="-2832" h="6623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119467" y="237335" z="-2832" h="55234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119091" y="235558" z="-2888" h="2191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119308" y="235404" z="-2880" h="18049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-120007" y="236131" z="-2816" h="8040" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-119347" y="237151" z="-2856" h="65526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119083" y="236386" z="-2872" h="54628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119543" y="235919" z="-2856" h="19395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119773" y="236838" z="-2808" h="44407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119250" y="235757" z="-2880" h="38561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119463" y="236015" z="-2856" h="7743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118027" y="236896" z="-3040" h="3390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20103" /> <!-- Giant Spider -->
+		<point x="-118517" y="236947" z="-2968" h="61494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118686" y="235987" z="-2936" h="51001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117763" y="237406" z="-3024" h="4219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118107" y="236498" z="-3040" h="10787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118043" y="236754" z="-3040" h="41208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118159" y="237406" z="-2976" h="17436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118506" y="237560" z="-2936" h="46178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118501" y="236180" z="-2992" h="12463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119332" y="238107" z="-2840" h="16923" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119332" y="238361" z="-2840" h="21700" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119129" y="239123" z="-2904" h="28703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-119738" y="238107" z="-2840" h="62927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119535" y="238615" z="-2848" h="10716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119535" y="238107" z="-2840" h="47355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-119129" y="238869" z="-2872" h="3354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118723" y="239123" z="-2920" h="7419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117505" y="239377" z="-2984" h="19654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117099" y="239377" z="-2960" h="29474" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117302" y="238615" z="-2920" h="52210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118723" y="238361" z="-2920" h="48695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117708" y="238107" z="-2976" h="41973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118317" y="238107" z="-2920" h="40470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117099" y="238615" z="-2864" h="42935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118114" y="238107" z="-2936" h="48052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118114" y="238869" z="-2936" h="34507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117302" y="238361" z="-2904" h="53670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117895" y="237661" z="-2984" h="25085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118687" y="237661" z="-2920" h="39955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117302" y="239885" z="-3048" h="29823" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-116896" y="239885" z="-3048" h="23054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118723" y="240901" z="-3256" h="65450" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117099" y="240393" z="-3096" h="5208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117099" y="241155" z="-3112" h="43711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117099" y="240647" z="-3104" h="62054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117099" y="240139" z="-3080" h="47815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117505" y="239631" z="-3016" h="13739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-117911" y="239631" z="-3040" h="26428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118114" y="240139" z="-3080" h="32635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118317" y="240901" z="-3208" h="63092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118520" y="240139" z="-3112" h="19606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-116896" y="240393" z="-3104" h="54557" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-118317" y="239885" z="-3032" h="5816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117505" y="241155" z="-3168" h="2157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117911" y="239885" z="-3072" h="21390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117911" y="241663" z="-3208" h="62921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118723" y="241155" z="-3272" h="46190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118114" y="239631" z="-3032" h="61920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117505" y="240139" z="-3104" h="49468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-118317" y="240393" z="-3136" h="33270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117708" y="240139" z="-3112" h="31086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-116896" y="240901" z="-3104" h="65045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20106" /> <!-- Giant Fang Spider -->
+		<point x="-117505" y="240393" z="-3128" h="6373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-116693" y="240647" z="-3112" h="58381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-116490" y="241409" z="-3080" h="63921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-116287" y="241409" z="-3088" h="65212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20108" /> <!-- Giant Blade Spider -->
+		<point x="-116693" y="240393" z="-3080" h="56315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="27102" /> <!-- Pako the Cat -->
+		<point x="-118569" y="233239" z="-2912" h="37645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-106149" y="227606" z="-3544" h="17851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-105707" y="227104" z="-3640" h="24378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-103139" y="227257" z="-3680" h="33658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-100384" y="223997" z="-3440" h="1465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30407" /> <!-- Mesella -->
+		<point x="-104240" y="222064" z="-3440" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-103371" y="213660" z="-3184" h="27650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-102576" y="214458" z="-3224" h="32243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-101644" y="214542" z="-3216" h="39278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31654" /> <!-- Tablet Of Vision -->
+		<point x="-106588" y="217140" z="-3240" h="48604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-113103" y="218607" z="-3120" h="19539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-112985" y="218959" z="-3064" h="24962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30405" /> <!-- Marius -->
+		<point x="-115080" y="222168" z="-2928" h="42000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30497" /> <!-- Edmond -->
+		<point x="-114685" y="222291" z="-2928" h="44000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-119441" y="232179" z="-2864" h="61174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30635" /> <!-- Almors -->
+		<point x="-118618" y="233239" z="-2912" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-119319" y="236033" z="-2864" h="14217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30429" /> <!-- Tiramisa -->
+		<point x="-115744" y="235924" z="-4032" h="16384" />
+	</spawn>
+</list>

@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="54200" levels="1" name="Mount Glory of Champion">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.warhorse_vehicle"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54201" levels="1" name="Mount White Wing">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill8605"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54202" levels="1" name="Mount Shining Lady">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill8607"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54203" levels="1" name="Silent Ride">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0221"/>
+		<set name="reuseDelay" value="45000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54204" levels="1" name="Worthy Warrior Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill5661"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="abnormal_effect" value="RANKER_HUMAN"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="EVENT_BUF7"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54205" levels="1" name="Worthy Warrior Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1926"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="abnormal_effect" value="RANKER_KAMAEL"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="EVENT_BUF7"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54206" levels="1" name="Ultimate Death Knight Transformation">
+		<set name="abnormal_effect" value="DEATH_KNIGHT_FLAME"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.death_knight_transform"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="1.4"/>
+				<p_critical_damage value="40" type="PER"/>
+				<p_skill_critical_damage value="40" type="PER"/>
+				<mul stat="pAtkSpd" value="1.5"/>
+				<add stat="runSpd" value="5"/>
+				<p_heal_effect value="8" type="DIFF"/>
+				<add stat="defenceHoly" value="50"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54207" levels="1" name="Mount Night Mare">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.riding_knightmare"/>
+		<set name="hitTime" value="1000"/>
+		<set name="irreplaceable_buff" value="true"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="transform"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSkillTimePermanent" value="true"/>
+		<set name="hitCancelTime" value="500"/>
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<cond>
+			<player can_transform="208"/>
+		</cond>
+		<for>
+			<effect name="Transformation" value="208"/>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="changebody"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="turn_stone"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="buff_special_multi"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54208" levels="1" name="Worthy Warrior Bonus">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill5661"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54209" levels="1" name="Worthy Warrior Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill5661"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_effect" value="RANKER_ORC"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="EVENT_BUF7"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54210" levels="1" name="Worthy Warrior Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill5661"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_effect" value="RANKER_ORC"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="EVENT_BUF7"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54211" levels="1" name="Worthy Warrior Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill5661"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_effect" value="RANKER_DARK_ELF"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="transform"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54212" levels="1" name="Worthy Warrior Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill5661"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_effect" value="RANKER_DWARF"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="transform"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54213" levels="1" name="Mount Air Bike">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.etc_dwarf_craft_vehicle"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="54214" levels="1" name="Dragon Berserker Evolver">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6\n\n-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.bm2018_dragon_i01"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54215" levels="1" name="High Priest Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6\n\n-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.bm2018_healer_i01"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54216" levels="1" name="Baby Shark Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6\n\n-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.shark_suit"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54217" levels="1" name="Panda Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\n\n-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.sayha2017_panda"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54218" levels="1" name="Cat Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\n\n-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.sayha2017_cat"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54219" levels="1" name="Teddy Bear Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\n\n-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.gomdori_chest_change"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54220" levels="1" name="Dragon Berserker Evolver">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.bm2018_dragon_i01"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54221" levels="1" name="Wild Wolf Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.bm2018_barbarian_i01"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54222" levels="1" name="Valentine Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.whiteday_suit"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54223" levels="1" name="Transform: Kat the Cat">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.cat_the_cat_change_0"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54224" levels="1" name="Hanbok Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6\n\n-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.ev_kr_traditional_dress"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54225" levels="1" name="Mount Elemental Lyn Draco">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.etc_lind_vehicle"/>
+		<set name="hitTime" value="1000"/>
+		<set name="irreplaceable_buff" value="true"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="transform"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isSkillTimePermanent" value="true"/>
+		<set name="hitCancelTime" value="500"/>
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<cond>
+			<player can_transform="220"/>
+		</cond>
+		<for>
+			<effect name="Transformation" value="220"/>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="changebody"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="turn_stone"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="buff_special_multi"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54226" levels="1" name="Worthy Warrior Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill5661"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_effect" value="RANKER_SYLPH"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="EVENT_BUF7"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54227" levels="1" name="Mount Black Wyvern">
+		<!--Allows to mount Black Wyvern.\nWhen the character is riding Wyvern, weapon/ sigil is unequipped.\nOnly select Buff skills are available while riding the Wyvern.-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.s_wyvern_black"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54228" levels="1" name="Eskimo Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.eskimo_suit"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54229" levels="1" name="Santa Claus Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.armor_ev_santas_clothes"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54230" levels="1" name="Castle Guardian Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nP. Def. $s2\nM. Def. $s2\nAtk. Spd. $s3\nCasting Spd. $s3\nMax HP $s4\nMax MP $s4\nPvP damage $s5\n\nNote!\nThe effect is removed when you leave the world server.\nDoes not stack with Dragon Slayer Appearance.-->
+		<set name="autouse_type" value="BUFF"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.lionelhunter_dress"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54231" levels="1" name="Dragon Slayer Appearance">
+		<!--P. Atk. $s1\nM. Atk. $s1\nP. Def. $s2\nM. Def. $s2\nAtk. Spd. $s3\nCasting Spd. $s3\nMax HP $s4\nMax MP $s4\n\nNote!\nDoes not stack with Castle Guardian Transformation.-->
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.dragon_slayer_suit"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_effect" value="S_DRAGON_SLAYER_AVE"/> <!--TODO: Check.-->
+		<set name="abnormal_time" value="300"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="buff_special_aura"/>	<!--TODO: Check.-->
+		<set name="magicType" value="MAGIC"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isReuseDelayPermanent" value="true"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="itemConsumeCount" value="20"/>
+		<set name="buff_slot_type" value="-1"/>
+		<for>
+			<effect>
+				<add stat="maxHp" value="500"/>
+				<add stat="maxMp" value="500"/>
+				<add stat="pAtkSpd" value="30"/>
+				<add stat="mAtkSpd" value="30"/>
+				<add stat="pAtk" value="200"/>
+				<add stat="mAtk" value="200"/>
+				<add stat="pDef" value="300"/>
+				<add stat="mDef" value="300"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="54232" levels="1" name="Dizzy Lv. 1">
+		<!--You feel dizzy from cold.\n\nPvE damage $s1\nSustains Sayha's Grace.\n\nThe effect remains after death.\nYou can cancel the effect by yourself.-->
+		<set name="affect_scope" value="RANGE"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="Icon.ev_2020_summer1"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54233" levels="1" name="Dizzy Lv. 1">
+		<!--You feel dizzy from cold.\n\nReceived PvE damage $s1\nSustains Sayha's Grace.\n\nThe effect remains after death.\nYou can cancel the effect by yourself.-->
+		<set name="affect_scope" value="RANGE"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="Icon.ev_2020_summer1"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54234" levels="1" name="Dizzy Lv. 1">
+		<!--You feel dizzy from cold.\n\nAtk. Spd. $s1\nCasting Spd. $s1\nSustains Sayha's Grace.\n\nThe effect remains after death.\nYou can cancel the effect by yourself.-->
+		<set name="affect_scope" value="RANGE"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="Icon.ev_2020_summer1"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54235" levels="1" name="Dizzy Lv. 2">
+		<!--You feel dizzy from cold.\n\nPvE damage $s1\nSustains Sayha's Grace.\n\nThe effect remains after death.\nYou can cancel the effect by yourself.-->
+		<set name="affect_scope" value="RANGE"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="Icon.ev_2020_summer1"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54236" levels="1" name="Dizzy Lv. 2">
+		<!--You feel dizzy from cold.\n\nReceived PvE damage $s1\nSustains Sayha's Grace.\n\nThe effect remains after death.\nYou can cancel the effect by yourself.-->
+		<set name="affect_scope" value="RANGE"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="Icon.ev_2020_summer1"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54237" levels="1" name="Dizzy Lv. 2">
+		<!--You feel dizzy from cold.\n\nAtk. Spd. $s1\nCasting Spd. $s1\nSustains Sayha's Grace.\n\nThe effect remains after death.\nYou can cancel the effect by yourself.-->
+		<set name="affect_scope" value="RANGE"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="Icon.ev_2020_summer1"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54238" levels="1" name="Swimsuit Transformation">
+		<!--P. Atk. $s1\nM. Atk. $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nP. Critical Rate $s3\nSkill Critical Rate $s4\nAcquired XP/ SP $s5\nSayha's Grace Consumption $s6\nXP recovery fee $s7-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="BranchSys3.icon1.g_co_swimsuit_event_02"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54239" levels="1" name="Worthy Warrior Transformation">
+		<!--For adventurers who have taken the 1st-3rd places in rankings among their race.\n\nThe Vanguard Rider power grants you a unique appearance.\n\nMax HP +300-->
+		<set name="autouse_type" value="BUFF"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill5661"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="54240" levels="1" name="Mount Red Wyvern">
+		<!--Allows to mount Red Wyvern.\nWhen mounting a Wyvern, your weapon and shield/ sigil are unequipped.\nOnly several buff skills can be used while riding a Wyvern.-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.s_wyvern_red"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

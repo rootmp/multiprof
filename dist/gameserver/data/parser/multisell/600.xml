@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="91494" count="1"/>	<!--Scroll: Critical Creation (Lv. 3)-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91495" count="1"/>	<!--Scroll: Master of Creation (Lv. 2)-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91496" count="1"/>	<!--Scroll: Master of Creation (Lv. 3)-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91482" count="1"/>	<!--Scroll: Detect Darkness-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91483" count="1"/>	<!--Scroll: Bind-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91484" count="1"/>	<!--Scroll: Mass Chain Strike-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91485" count="1"/>	<!--Scroll: Critical Vulnerability Decrease-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91486" count="1"/>	<!--Scroll: Full Swing-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91487" count="1"/>	<!--Scroll: Seal of Blockade-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91290" count="1"/>	<!--Scroll: Critical Creation (Lv. 1)-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91291" count="1"/>	<!--Scroll: Critical Creation (Lv. 2)-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91292" count="1"/>	<!--Scroll: Master of Creation (Lv. 1)-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91293" count="1"/>	<!--Scroll: Mana Burn-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91294" count="1"/>	<!--Scroll: Bluff-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91295" count="1"/>	<!--Scroll: Hawk Spirit Totem-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90046" count="1"/>	<!--Scroll: Vengeance-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90047" count="1"/>	<!--Scroll: Touch of Life -->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90048" count="1"/>	<!--Scroll: Touch of Death-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90049" count="1"/>	<!--Scroll: Shield of Faith-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90050" count="1"/>	<!--Scroll: Shield of Sacrifice-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90051" count="1"/>	<!--Scroll: Insane Crusher-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90052" count="1"/>	<!--Scroll: Eva’s Protection-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90053" count="1"/>	<!--Scroll: Mass Lightning Strike-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90054" count="1"/>	<!--Scroll: Clear Movements-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90055" count="1"/>	<!--Scroll: Critical Wound-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90056" count="1"/>	<!--Scroll: Focus Power-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90057" count="1"/>	<!--Scroll: Focus Chance-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90058" count="1"/>	<!--Scroll: Focus Death-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90059" count="1"/>	<!--Scroll: Mirage-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90060" count="1"/>	<!--Scroll: Evasion-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90061" count="1"/>	<!--Scroll: Counterattack-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90062" count="1"/>	<!--Scroll: Real Target-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90063" count="1"/>	<!--Scroll: Death Sting-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90064" count="1"/>	<!--Scroll: Flame Hawk-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90065" count="1"/>	<!--Scroll: Arrow Rain-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90066" count="1"/>	<!--Scroll: Ghost Piercing-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90067" count="1"/>	<!--Scroll: Sonic Barrier-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90068" count="1"/>	<!--Scroll: Indestructible Sound-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90069" count="1"/>	<!--Scroll: Maximum Sonic Focus-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90070" count="1"/>	<!--Scroll: Force Barrier-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90071" count="1"/>	<!--Scroll: Rush-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90072" count="1"/>	<!--Scroll: Maximum Force Focus-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90073" count="1"/>	<!--Scroll: Destroyer’s Roar-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90074" count="1"/>	<!--Scroll: Over the Body-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90075" count="1"/>	<!--Scroll: Demolition Impact-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90076" count="1"/>	<!--Scroll: Stun Burst-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90077" count="1"/>	<!--Scroll: Spear Howl-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90078" count="1"/>	<!--Scroll: Armor Crush-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90079" count="1"/>	<!--Scroll: Spoil Crush-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90080" count="1"/>	<!--Scroll: Final Secret-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90081" count="1"/>	<!--Scroll: Arcane Power-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90082" count="1"/>	<!--Scroll: Fire Vortex Buster-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90083" count="1"/>	<!--Scroll: Ice Vortex Crusher-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90084" count="1"/>	<!--Scroll: Wind Vortex Slug-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90085" count="1"/>	<!--Scroll: Arcane Chaos-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90086" count="1"/>	<!--Scroll: Arcane Shield-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90087" count="1"/>	<!--Scroll: Curse of Doom-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90088" count="1"/>	<!--Scroll: Curse of Abyss-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90089" count="1"/>	<!--Scroll: Vampiric Mist-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90090" count="1"/>	<!--Scroll: Song of Renewal-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90091" count="1"/>	<!--Scroll: Champion Song-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90092" count="1"/>	<!--Scroll: Song of Silence-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90093" count="1"/>	<!--Scroll: Song of Purification-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90094" count="1"/>	<!--Scroll: Dance of Shadows-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90095" count="1"/>	<!--Scroll: Dance of Siren-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90096" count="1"/>	<!--Scroll: Dance of Medusa-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90097" count="1"/>	<!--Scroll: Dance of Berserker-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90098" count="1"/>	<!--Scroll: Prophecy of Fire-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90099" count="1"/>	<!--Scroll: Block Shield-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90100" count="1"/>	<!--Scroll: Block Wind Walk-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90101" count="1"/>	<!--Scroll: Turn to Stone-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90102" count="1"/>	<!--Scroll: Counter Critical-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90103" count="1"/>	<!--Scroll: Prophecy of Water-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90104" count="1"/>	<!--Scroll: Mass Cure Poison-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90105" count="1"/>	<!--Scroll: Mass Vitalize-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90106" count="1"/>	<!--Scroll: Mana Gain-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90107" count="1"/>	<!--Scroll: Blessing of Eva-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90108" count="1"/>	<!--Scroll: Prophecy of Wind-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90109" count="1"/>	<!--Scroll: Mass Purify-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90110" count="1"/>	<!--Scroll: Lord of Vampires-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90111" count="1"/>	<!--Scroll: Enlightenment-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90112" count="1"/>	<!--Scroll: Chant of Victory-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90113" count="1"/>	<!--Scroll: Chant of Spirit-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90114" count="1"/>	<!--Scroll: Chant of Gate-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90115" count="1"/>	<!--Scroll: Chant of Protection-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90116" count="1"/>	<!--Scroll: Great Fury-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90117" count="1"/>	<!--Scroll: Victories of Pa'agrio-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90118" count="1"/>	<!--Scroll: Seal of Disease-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90119" count="1"/>	<!--Scroll: Pa'agrio's Fist-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90120" count="1"/>	<!--Scroll: Seal of Despair-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90121" count="1"/>	<!--Scroll: Flames of Invincibility-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90122" count="1"/>	<!--Scroll: Balance Life-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90123" count="1"/>	<!--Scroll: Cleanse-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90124" count="1"/>	<!--Scroll: Chain Heal-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90125" count="1"/>	<!--Scroll: Salvation-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90126" count="1"/>	<!--Scroll: Miracle-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90127" count="1"/>	<!--Scroll: Warrior Servitor-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90128" count="1"/>	<!--Scroll: Wizard Servitor-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90129" count="1"/>	<!--Scroll: Assassin Servitor-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90130" count="1"/>	<!--Scroll: Final Servitor-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90131" count="1"/>	<!--Scroll: Servitor Share-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90133" count="1"/>	<!--Scroll: Exciting Adventure-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90134" count="1"/>	<!--Scroll: Wind Riding-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90135" count="1"/>	<!--Scroll: Ghost Walking-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91201" count="1"/>	<!--Scroll: Full Knockdown-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91202" count="1"/>	<!--Scroll: Sublime Self-Sacrifice-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91203" count="1"/>	<!--Scroll: Summon Feline Queen-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91204" count="1"/>	<!--Scroll: Summon Seraphim the Unicorn-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91205" count="1"/>	<!--Scroll: Summon Nightshade-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91920" count="1"/>	<!--Scroll: Magic Break-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91921" count="1"/>	<!--Scroll: Disarm-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91922" count="1"/>	<!--Scroll: Lightning Barrier-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91923" count="1"/>	<!--Scroll: Lightning-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91924" count="1"/>	<!--Scroll: Mental Panic-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91925" count="1"/>	<!--Scroll: Soul Stigma-->
+		<ingredient id="90045" count="31"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="100000"/>	<!--Adena-->
+	</item>
+</list>

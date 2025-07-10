@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="4500" name="Faded Greater INT Dye &lt;INT +1 WIT -2&gt;">
+		<set name="grind_commission" value="210"/>
+		<set name="grind_point" value="10500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="21000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4501" name="Faded Greater MEN Dye &lt;MEN +1 INT -2&gt;">
+		<set name="grind_commission" value="210"/>
+		<set name="grind_point" value="10500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="21000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4502" name="Faded Greater MEN Dye &lt;MEN +1 WIT -2&gt;">
+		<set name="grind_commission" value="210"/>
+		<set name="grind_point" value="10500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="21000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4503" name="Faded Greater WIT Dye &lt;WIT +1 INT -2&gt;">
+		<set name="grind_commission" value="210"/>
+		<set name="grind_point" value="10500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="21000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4504" name="Faded Greater WIT Dye &lt;WIT +1 MEN -2&gt;">
+		<set name="grind_commission" value="210"/>
+		<set name="grind_point" value="10500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="21000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4505" name="Faded Greater STR Dye &lt;STR +2 CON -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4506" name="Faded Greater STR Dye &lt;STR +2 DEX -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4507" name="Faded Greater CON Dye &lt;CON +2 STR -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4508" name="Faded Greater CON Dye &lt;CON +2 DEX -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4509" name="Faded Greater DEX Dye &lt;DEX +2 STR -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4510" name="Faded Greater DEX Dye &lt;DEX +2 CON -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4511" name="Faded Greater INT Dye &lt;INT +2 MEN -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4512" name="Faded Greater INT Dye &lt;INT +2 WIT -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4513" name="Faded Greater MEN Dye &lt;MEN +2 INT -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4514" name="Faded Greater MEN Dye &lt;MEN +2 WIT -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4515" name="Faded Greater WIT Dye &lt;WIT +2 INT -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4516" name="Faded Greater WIT Dye &lt;WIT +2 MEN -4&gt;">
+		<set name="grind_commission" value="246"/>
+		<set name="grind_point" value="12300"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="24600"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4517" name="Faded Greater STR Dye &lt;STR +2 CON -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4518" name="Faded Greater STR Dye &lt;STR +2 DEX -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4519" name="Faded Greater CON Dye &lt;CON +2 STR -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4520" name="Faded Greater CON Dye &lt;CON +2 DEX -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4521" name="Faded Greater DEX Dye &lt;DEX +2 STR -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4522" name="Faded Greater DEX Dye &lt;DEX +2 CON -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4523" name="Faded Greater INT Dye &lt;INT +2 MEN -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4524" name="Faded Greater INT Dye &lt;INT +2 WIT -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4525" name="Faded Greater MEN Dye &lt;MEN +2 INT -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4526" name="Faded Greater MEN Dye &lt;MEN +2 WIT -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4527" name="Faded Greater WIT Dye &lt;WIT +2 INT -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4528" name="Faded Greater WIT Dye &lt;WIT +2 MEN -3&gt;">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13500"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="27000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4529" name="Faded Greater STR Dye &lt;STR +3 CON -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4530" name="Faded Greater STR Dye &lt;STR +3 DEX -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4531" name="Faded Greater CON Dye &lt;CON +3 STR -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4532" name="Faded Greater CON Dye &lt;CON +3 DEX -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4533" name="Faded Greater DEX Dye &lt;DEX +3 STR -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4534" name="Faded Greater DEX Dye &lt;DEX +3 CON -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4535" name="Faded Greater INT Dye &lt;INT +3 MEN -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4536" name="Faded Greater INT Dye &lt;INT +3 WIT -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4537" name="Faded Greater MEN Dye &lt;MEN +3 INT -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4538" name="Faded Greater MEN Dye &lt;MEN +3 WIT -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4539" name="Faded Greater WIT Dye &lt;WIT +3 INT -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4540" name="Faded Greater WIT Dye &lt;WIT +3 MEN -5&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4541" name="Faded Greater STR Dye &lt;STR +3 CON -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4542" name="Faded Greater STR Dye &lt;STR +3 DEX -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4543" name="Faded Greater CON Dye &lt;CON +3 STR -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4544" name="Faded Greater CON Dye &lt;CON +3 DEX -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4545" name="Faded Greater DEX Dye &lt;DEX +3 STR -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4546" name="Faded Greater DEX Dye &lt;DEX +3 CON -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4547" name="Faded Greater INT Dye &lt;INT +3 MEN -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4548" name="Faded Greater INT Dye &lt;INT +3 WIT -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4549" name="Faded Greater MEN Dye &lt;MEN +3 INT -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4550" name="Faded Greater MEN Dye &lt;MEN +3 WIT -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4551" name="Faded Greater WIT Dye &lt;WIT +3 INT -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4552" name="Faded Greater WIT Dye &lt;WIT +3 MEN -4&gt;">
+		<set name="grind_commission" value="300"/>
+		<set name="grind_point" value="15000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4553" name="Faded Greater STR Dye &lt;STR +1 CON -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4554" name="Faded Greater STR Dye &lt;STR +1 DEX -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4555" name="Faded Greater CON Dye &lt;CON +1 STR -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4556" name="Faded Greater CON Dye &lt;CON +1 DEX -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4557" name="Faded Greater DEX Dye &lt;DEX +1 STR -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4558" name="Faded Greater DEX Dye &lt;DEX +1 CON -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4559" name="Faded Greater INT Dye &lt;INT +1 MEN -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4560" name="Faded Greater INT Dye &lt;INT +1 WIT -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4561" name="Faded Greater MEN Dye &lt;MEN +1 INT -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4562" name="Faded Greater MEN Dye &lt;MEN +1 WIT -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4563" name="Faded Greater WIT Dye &lt;WIT +1 INT -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4564" name="Faded Greater WIT Dye &lt;WIT +1 MEN -1&gt;">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i02"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4565" name="Faded Greater STR Dye &lt;STR +4 CON -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4566" name="Faded Greater STR Dye &lt;STR +4 DEX -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4567" name="Faded Greater CON Dye &lt;CON +4 STR -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4568" name="Faded Greater CON Dye &lt;CON +4 DEX -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4569" name="Faded Greater DEX Dye &lt;DEX +4 STR -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4570" name="Faded Greater DEX Dye &lt;DEX +4 CON -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4571" name="Faded Greater INT Dye &lt;INT +4 MEN -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4572" name="Faded Greater INT Dye &lt;INT +4 WIT -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4573" name="Faded Greater MEN Dye &lt;MEN +4 INT -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4574" name="Faded Greater MEN Dye &lt;MEN +4 WIT -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4575" name="Faded Greater WIT Dye &lt;WIT +4 INT -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4576" name="Faded Greater WIT Dye &lt;WIT +4 MEN -6&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4577" name="Faded Greater STR Dye &lt;STR +4 CON -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4578" name="Faded Greater STR Dye &lt;STR +4 DEX -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4579" name="Faded Greater CON Dye &lt;CON +4 STR -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4580" name="Faded Greater CON Dye &lt;CON +4 DEX -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4581" name="Faded Greater DEX Dye &lt;DEX +4 STR -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4582" name="Faded Greater DEX Dye &lt;DEX +4 CON -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4583" name="Faded Greater INT Dye &lt;INT +4 MEN -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4584" name="Faded Greater INT Dye &lt;INT +4 WIT -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4585" name="Faded Greater MEN Dye &lt;MEN +4 INT -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4586" name="Faded Greater MEN Dye &lt;MEN +4 WIT -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4587" name="Faded Greater WIT Dye &lt;WIT +4 INT -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4588" name="Faded Greater WIT Dye &lt;WIT +4 MEN -5&gt;">
+		<set name="grind_commission" value="360"/>
+		<set name="grind_point" value="18000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i01"/>
+		<set name="price" value="36000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4589" name="Faded Greater STR Dye &lt;STR +2 CON -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4590" name="Faded Greater STR Dye &lt;STR +2 DEX -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_str_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4591" name="Faded Greater CON Dye &lt;CON +2 STR -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4592" name="Faded Greater CON Dye &lt;CON +2 DEX -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_con_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4593" name="Faded Greater DEX Dye &lt;DEX +2 STR -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4594" name="Faded Greater DEX Dye &lt;DEX +2 CON -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_dex_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4595" name="Faded Greater INT Dye &lt;INT +2 MEN -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4596" name="Faded Greater INT Dye &lt;INT +2 WIT -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_int_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4597" name="Faded Greater MEN Dye &lt;MEN +2 INT -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4598" name="Faded Greater MEN Dye &lt;MEN +2 WIT -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_men_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+	<etcitem id="4599" name="Faded Greater WIT Dye &lt;WIT +2 INT -2&gt;">
+		<set name="grind_commission" value="600"/>
+		<set name="grind_point" value="30000"/>
+		<set name="type" value="DYE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wit_hena_i02"/>
+		<set name="price" value="60000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+	</etcitem>
+</list>

@@ -1,0 +1,2567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="94500" name="Spellbook: Titanic Sweep">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94501" name="Spellbook: Titanic Break">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94502" name="Spellbook: Ogre Spirit Totem">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94503" name="Spellbook: Rabbit Spirit Totem">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94504" name="Spellbook: Puma Spirit Totem">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94505" name="Spellbook: Burning Strike">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94506" name="Spellbook: Burning Assault">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94507" name="Spellbook: Armor Break">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94508" name="Spellbook: Cacophony of War">
+		<set name="icon" value="icon.etc_spell_books_hfighter_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94509" name="Frintezza Doll Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="RUNE"/>
+		<skills>
+			<skill id="51297" level="1"/>	<!-- Frintezza Doll's Sorcery -->
+		</skills>
+	</etcitem>
+	<etcitem id="94510" name="Daily Kit: Supplies (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.freya_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91641" min_count="100" max_count="100" chance="100"/><!--Sayha's Blessing-->
+			<capsuled_item id="94269" min_count="30" max_count="30" chance="100"/><!--Scroll: Boost Attack-->
+			<capsuled_item id="94271" min_count="30" max_count="30" chance="100"/><!--Scroll: Boost Defense-->
+			<capsuled_item id="91712" min_count="20" max_count="20" chance="100"/><!--Sayha's Storm Lv. 3-->
+			<capsuled_item id="90907" min_count="100" max_count="100" chance="100"/><!--Soulshot Ticket-->
+			<capsuled_item id="92400" min_count="2" max_count="2" chance="100"/><!--Forgotten Primeval Garden's Time Stone-->
+			<capsuled_item id="91983" min_count="2" max_count="2" chance="100"/><!--Primeval Isle's Time Stone-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94511" name="Package: Frintezza Doll (Time-limited)" add_name="7-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94512" min_count="1" max_count="1" chance="100" /> <!-- Frintezza Doll - 7-day -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94512" name="Frintezza Doll" add_name="7-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="durability" value="10080"/>
+		<set name="temporal" value="true"/>
+		<set name="type" value="RUNE"/>
+		<skills>
+			<skill id="51297" level="2"/>	<!-- Frintezza Doll's Sorcery -->
+		</skills>
+	</etcitem>
+	<etcitem id="94513" name="Package: Frintezza Doll Lv. 1" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94509" min_count="1" max_count="1" chance="100"/><!--Frintezza Doll Lv. 1-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94514" name="Package: Frintezza Doll Lv. 2" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91604" min_count="1" max_count="1" chance="100"/><!--Frintezza Doll Lv. 2-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94515" name="Package: Frintezza Doll Lv. 3" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_doll_frintessa_30d"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91605" min_count="1" max_count="1" chance="100"/><!--Frintezza Doll Lv. 3-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94516" name="Pet Rescuer's Gift (Time-limited)">
+		<set name="icon" value="icon.etc_marguene_collection_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94517" name="Improved Pet XP Crystal" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.r99_soul_stone_piece_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<armor id="94518" name="Amber Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_amber_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="50194" level="5"/>
+		</skills>
+	</armor>
+	<armor id="94519" name="Opal Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_opal_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="50195" level="5"/>
+			<skill id="50196" level="5"/>
+		</skills>
+	</armor>
+	<armor id="94520" name="Coral Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_coral_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="50197" level="5"/>
+		</skills>
+	</armor>
+	<armor id="94521" name="Onyx Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_onyx_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="50204" level="5"/>
+		</skills>
+	</armor>
+	<armor id="94522" name="Spinel Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_garnet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="50206" level="5"/>
+		</skills>
+	</armor>
+	<armor id="94523" name="Zircon Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_bloodstone_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="50207" level="5"/>
+		</skills>
+	</armor>
+	<armor id="94524" name="Moonstone Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_moonstone_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="50208" level="5"/>
+		</skills>
+	</armor>
+	<etcitem id="94525" name="Kit: Reinforced Jewelry Boxes (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_main_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92034" min_count="10" max_count="10" chance="100"/><!--Reinforced Jewelry Box-->
+			<capsuled_item id="94526" min_count="2" max_count="2" chance="100"/><!--Jewel Powder (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94526" name="Jewel Powder (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_powder_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94527" name="Package: Random Jewel Lv. 1-6 (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_main_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92036" min_count="1" max_count="1" chance="3.533" /> <!-- Amber Lv. 1 - Sealed -->
+			<capsuled_item id="92046" min_count="1" max_count="1" chance="3.521" /> <!-- Opal Lv. 1 - Sealed -->
+			<capsuled_item id="92056" min_count="1" max_count="1" chance="3.521" /> <!-- Coral Lv. 1 - Sealed -->
+			<capsuled_item id="92066" min_count="1" max_count="1" chance="3.521" /> <!-- Onyx Lv. 1 - Sealed -->
+			<capsuled_item id="92076" min_count="1" max_count="1" chance="3.521" /> <!-- Spinel Lv. 1 - Sealed -->
+			<capsuled_item id="92086" min_count="1" max_count="1" chance="3.521" /> <!-- Zircon Lv. 1 - Sealed -->
+			<capsuled_item id="92096" min_count="1" max_count="1" chance="3.521" /> <!-- Moonstone Lv. 1 - Sealed -->
+			<capsuled_item id="92037" min_count="1" max_count="1" chance="3.521" /> <!-- Amber Lv. 2 - Sealed -->
+			<capsuled_item id="92047" min_count="1" max_count="1" chance="3.521" /> <!-- Opal Lv. 2 - Sealed -->
+			<capsuled_item id="92057" min_count="1" max_count="1" chance="3.521" /> <!-- Coral Lv. 2 - Sealed -->
+			<capsuled_item id="92067" min_count="1" max_count="1" chance="3.521" /> <!-- Onyx Lv. 2 - Sealed -->
+			<capsuled_item id="92077" min_count="1" max_count="1" chance="3.521" /> <!-- Spinel Lv. 2 - Sealed -->
+			<capsuled_item id="92087" min_count="1" max_count="1" chance="3.521" /> <!-- Zircon Lv. 2 - Sealed -->
+			<capsuled_item id="92097" min_count="1" max_count="1" chance="3.521" /> <!-- Moonstone Lv. 2 - Sealed -->
+			<capsuled_item id="92038" min_count="1" max_count="1" chance="3.521" /> <!-- Amber Lv. 3 - Sealed -->
+			<capsuled_item id="92048" min_count="1" max_count="1" chance="3.521" /> <!-- Opal Lv. 3 - Sealed -->
+			<capsuled_item id="92058" min_count="1" max_count="1" chance="3.521" /> <!-- Coral Lv. 3 - Sealed -->
+			<capsuled_item id="92068" min_count="1" max_count="1" chance="3.521" /> <!-- Onyx Lv. 3 - Sealed -->
+			<capsuled_item id="92078" min_count="1" max_count="1" chance="3.521" /> <!-- Spinel Lv. 3 - Sealed -->
+			<capsuled_item id="92088" min_count="1" max_count="1" chance="3.521" /> <!-- Zircon Lv. 3 - Sealed -->
+			<capsuled_item id="92098" min_count="1" max_count="1" chance="3.521" /> <!-- Moonstone Lv. 3 - Sealed -->
+			<capsuled_item id="92039" min_count="1" max_count="1" chance="3.521" /> <!-- Amber Lv. 4 - Sealed -->
+			<capsuled_item id="92049" min_count="1" max_count="1" chance="3.521" /> <!-- Opal Lv. 4 - Sealed -->
+			<capsuled_item id="92059" min_count="1" max_count="1" chance="3.521" /> <!-- Coral Lv. 4 - Sealed -->
+			<capsuled_item id="92069" min_count="1" max_count="1" chance="3.521" /> <!-- Onyx Lv. 4 - Sealed -->
+			<capsuled_item id="92079" min_count="1" max_count="1" chance="3.521" /> <!-- Spinel Lv. 4 - Sealed -->
+			<capsuled_item id="92089" min_count="1" max_count="1" chance="3.521" /> <!-- Zircon Lv. 4 - Sealed -->
+			<capsuled_item id="92099" min_count="1" max_count="1" chance="3.521" /> <!-- Moonstone Lv. 4 - Sealed -->
+			<capsuled_item id="94518" min_count="1" max_count="1" chance="0.1" /> <!-- Amber Lv. 5 - Sealed -->
+			<capsuled_item id="94519" min_count="1" max_count="1" chance="0.1" /> <!-- Opal Lv. 5 - Sealed -->
+			<capsuled_item id="94520" min_count="1" max_count="1" chance="0.1" /> <!-- Coral Lv. 5 - Sealed -->
+			<capsuled_item id="94521" min_count="1" max_count="1" chance="0.1" /> <!-- Onyx Lv. 5 - Sealed -->
+			<capsuled_item id="94522" min_count="1" max_count="1" chance="0.1" /> <!-- Spinel Lv. 5 - Sealed -->
+			<capsuled_item id="94523" min_count="1" max_count="1" chance="0.1" /> <!-- Zircon Lv. 5 - Sealed -->
+			<capsuled_item id="94524" min_count="1" max_count="1" chance="0.1" /> <!-- Moonstone Lv. 5 - Sealed -->
+			<capsuled_item id="92040" min_count="1" max_count="1" chance="0.01" /> <!-- Amber Lv. 6 - Sealed -->
+			<capsuled_item id="92050" min_count="1" max_count="1" chance="0.01" /> <!-- Opal Lv. 6 - Sealed -->
+			<capsuled_item id="92060" min_count="1" max_count="1" chance="0.01" /> <!-- Coral Lv. 6 - Sealed -->
+			<capsuled_item id="92070" min_count="1" max_count="1" chance="0.01" /> <!-- Onyx Lv. 6 - Sealed -->
+			<capsuled_item id="92080" min_count="1" max_count="1" chance="0.01" /> <!-- Spinel Lv. 6 - Sealed -->
+			<capsuled_item id="92090" min_count="1" max_count="1" chance="0.01" /> <!-- Zircon Lv. 6 - Sealed -->
+			<capsuled_item id="92100" min_count="1" max_count="1" chance="0.01" /> <!-- Moonstone Lv. 6 - Sealed -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94528" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94529" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94530" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94531" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94532" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94533" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94534" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94535" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94536" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94537" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94538" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94539" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94540" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94541" name="Iron Gate Guild Secret Box" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94542" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94543" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94544" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94545" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94546" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94547" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94548" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94549" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94550" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94551" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94552" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94553" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94554" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94555" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94556" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94557" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94558" name="Iron Gate's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="92405" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="92407" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="92421" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94084" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94086" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94302" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94300" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="93076" count="1" chance="0.01"/><!--Gloves of Silence--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94529" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94528" count="1" chance="0.01"/><!--Iron Gate's Mysterious Box (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="2" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="94269" count="100" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="100" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="300" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94559" name="Sayha's Blessing Scroll (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_freya_storm_scroll"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<skills>
+			<skill id="40242" level="1" /> <!-- Sayha's Blessing Scroll -->
+		</skills>
+	</etcitem>
+	<etcitem id="94560" name="Iron Gate Guild's Bronze Key (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.aphros_key"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94561" name="Iron Gate Guild's Bronze Key Fragment (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.festival_key_piece"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94562" name="Transformation Scroll: Queen Ant (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.scroll_of_verification_i09"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+	</etcitem>
+	<etcitem id="94563" name="Pa'agrio's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.event_mahum_coinbox"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94326" count="1" chance="0.01"/><!--Spellbook: Dance of Warrior--><!--TODO: Check chance-->
+			<create_item id="94499" count="1" chance="0.01"/><!--Spellbook: Titanic Weapon--><!--TODO: Check chance-->
+			<create_item id="94502" count="1" chance="0.01"/><!--Spellbook: Ogre Spirit Totem--><!--TODO: Check chance-->
+			<create_item id="94503" count="1" chance="0.01"/><!--Spellbook: Rabbit Spirit Totem--><!--TODO: Check chance-->
+			<create_item id="94504" count="1" chance="0.01"/><!--Spellbook: Puma Spirit Totem--><!--TODO: Check chance-->
+			<create_item id="94501" count="1" chance="0.01"/><!--Spellbook: Titanic Break--><!--TODO: Check chance-->
+			<create_item id="94506" count="1" chance="0.01"/><!--Spellbook: Burning Assault--><!--TODO: Check chance-->
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="90934" count="1" chance="0.01"/><!--Brooch Lv. 3--><!--TODO: Check chance-->
+			<create_item id="9591" count="1" chance="0.01"/><!--Talisman Bracelet Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90890" count="1" chance="0.01"/><!--Agathion Bracelet Lv. 3--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94564" name="+9 Talisman of Aden Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="9"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94565" name="+10 Talisman of Aden Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="10"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94566" name="Unknown Coupon (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_lottery_card_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94567" name="Zaken's Headquarters Pass (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.ticket_of_zaken"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="94568" name="Pirate's Crate (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_golden_spice_comp_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94569" min_count="1" max_count="1" chance="100"/><!--Zaken's Treasure Chest (Time-limited)-->
+			<capsuled_item id="93848" min_count="10" max_count="10" chance="100"/><!--Sayha's Cookie (Time-limited)-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="94614" count="1" chance="0.01"/><!--Pirate's Earring (Time-limited)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94569" name="Zaken's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_marguene_collection_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92404" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="94614" count="1" chance="0.01"/><!--Pirate's Earring (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94615" count="1" chance="0.01"/><!--Forgotten Primeval Garden's Time Stone (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94620" count="1" chance="0.01"/><!--Primeval Isle's Time Stone (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="93448" count="1" chance="0.01"/><!--A-grade Weapon Coupon--><!--TODO: Check chance-->
+			<create_item id="93449" count="1" chance="0.01"/><!--A-grade Armor Coupon--><!--TODO: Check chance-->
+			<create_item id="94380" count="3" chance="0.01"/><!--Scroll: Boost Attack (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94381" count="3" chance="0.01"/><!--Scroll: Boost Defense (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="93848" count="10" chance="0.01"/><!--Sayha's Cookie (Time-limited)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94570" name="Daily Kit: Blessing (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_ensoulbox_soul_of_undead"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91641" min_count="200" max_count="200" chance="100"/><!--Sayha's Blessing-->
+			<capsuled_item id="91712" min_count="30" max_count="30" chance="100"/><!--Sayha's Storm Lv. 3-->
+			<capsuled_item id="94269" min_count="30" max_count="30" chance="100"/><!--Scroll: Boost Attack-->
+			<capsuled_item id="94271" min_count="30" max_count="30" chance="100"/><!--Scroll: Boost Defense-->
+			<capsuled_item id="90907" min_count="100" max_count="100" chance="100"/><!--Soulshot Ticket-->
+			<capsuled_item id="91690" min_count="200" max_count="200" chance="100"/><!--Special HP Recovery Potion-->
+			<capsuled_item id="92400" min_count="1" max_count="1" chance="100"/><!--Forgotten Primeval Garden's Time Stone-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94571" name="Improved/ Cursed Scroll: Enchant Weapon Pack (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94210" min_count="3" max_count="3" chance="100"/><!--Life Stone Lv. 2 - Weapon-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="93268" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93270" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94572" name="Blessed/ Cursed Scroll: Enchant Armor Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94212" min_count="3" max_count="3" chance="100"/><!--Life Stone Lv. 2 - Armor-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="93269" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93271" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94573" name="Package: +5 Sirra's Blade" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_sirr_blade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92955" min_count="1" max_count="1" chance="100" enchant="5"/><!--Sirra's Blade-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94574" name="Package: +5 Sword of Ipos" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_sword_of_ipos_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92956" min_count="1" max_count="1" chance="100" enchant="5"/><!--Sword of Ipos-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94575" name="Package: +5 Barakiel's Axe" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_barakiel_axe_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92957" min_count="1" max_count="1" chance="100" enchant="5"/><!--Barakiel's Axe-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94576" name="Package: +5 Behemoth' Tuning Fork" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_tuning_fork_of_behemoth_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92958" min_count="1" max_count="1" chance="100" enchant="5"/><!--Behemoth' Tuning Fork-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94577" name="Package: +5 Naga's Storm" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_naga_storm_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92959" min_count="1" max_count="1" chance="100" enchant="5"/><!--Naga's Storm-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94578" name="Package: +5 Tiphon's Spear" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_tiphon_spear_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92960" min_count="1" max_count="1" chance="100" enchant="5"/><!--Tiphon's Spear-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94579" name="Package: +5 Shyeed's Bow" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_shyid_bow_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92961" min_count="1" max_count="1" chance="100" enchant="5"/><!--Shyeed's Bow-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94580" name="Package: +5 Sobekk's Hurricane" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_sobekk_hurricane_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92962" min_count="1" max_count="1" chance="100" enchant="5"/><!--Sobekk's Hurricane-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94581" name="Package: +5 Themis' Tongue" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_tongue_of_themis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92963" min_count="1" max_count="1" chance="100" enchant="5"/><!--Themis' Tongue-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94582" name="Package: +5 Cabrio's Hand" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_hand_of_cabrio_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92964" min_count="1" max_count="1" chance="100" enchant="5"/><!--Cabrio's Hand-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94583" name="Package: +5 Daimon Crystal" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_crystal_of_deamon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92965" min_count="1" max_count="1" chance="100" enchant="5"/><!--Daimon Crystal-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94584" name="Package: +5 Tallum Blade*Damascus Sword" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92966" min_count="1" max_count="1" chance="100" enchant="5"/><!--Tallum Blade*Damascus Sword-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94585" name="Package: +5 Éclair Bijou" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_greed_stinger_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92970" min_count="1" max_count="1" chance="100" enchant="5"/><!--Éclair Bijou-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94586" name="Package: +5 Durendal" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_death_bringer_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92967" min_count="1" max_count="1" chance="100" enchant="5"/><!--Durendal-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94587" name="Package: +5 Armor of Nightmare" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t80_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92256" min_count="1" max_count="1" chance="100" enchant="5"/><!--Armor of Nightmare-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94588" name="Package: +5 Helm of Nightmare (Heavy)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92307" min_count="1" max_count="1" chance="100" enchant="5"/><!--Helm of Nightmare (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94589" name="Package: +5 Gauntlets of Nightmare (Heavy)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t80_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92283" min_count="1" max_count="1" chance="100" enchant="5"/><!--Gauntlets of Nightmare (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94590" name="Package: +5 Boots of Nightmare (Heavy)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t80_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92295" min_count="1" max_count="1" chance="100" enchant="5"/><!--Boots of Nightmare (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94591" name="Package: +5 Majestic Plate Armor" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t83_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92262" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Plate Armor-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94592" name="Package: +5 Majestic Circlet (Heavy)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92310" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Circlet (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94593" name="Package: +5 Majestic Gauntlets (Heavy)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t83_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92286" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Gauntlets (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94594" name="Package: +5 Majestic Boots (Heavy)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t83_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92298" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Boots (Heavy)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94595" name="Package: +5 Leather Armor of Nightmare" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t81_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92266" min_count="1" max_count="1" chance="100" enchant="5"/><!--Leather Armor of Nightmare-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94596" name="Package: +5 Helm of Nightmare (Light)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92308" min_count="1" max_count="1" chance="100" enchant="5"/><!--Helm of Nightmare (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94597" name="Package: +5 Gauntlets of Nightmare (Light)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t81_g_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92284" min_count="1" max_count="1" chance="100" enchant="5"/><!--Gauntlets of Nightmare (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94598" name="Package: +5 Boots of Nightmare (Light)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t81_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92296" min_count="1" max_count="1" chance="100" enchant="5"/><!--Boots of Nightmare (Light)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94599" name="Package: +5 Majestic Leather Armor" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t84_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92267" min_count="1" max_count="1" chance="100" enchant="5"/><!--Majestic Leather Armor-->
+		</capsuled_items>
+	</etcitem>
+</list>

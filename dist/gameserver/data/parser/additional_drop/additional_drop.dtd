@@ -1,0 +1,22 @@
+<!ELEMENT list (drop)*>
+
+		<!ELEMENT drop (npcs|reward)*>
+		<!ATTLIST drop
+				min_level CDATA #IMPLIED
+				max_level CDATA #IMPLIED
+				level_penalty CDATA #IMPLIED
+				monster_type CDATA #IMPLIED>
+
+
+		<!ELEMENT npcs (npc)*>
+
+		<!ELEMENT npc EMPTY>
+		<!ATTLIST npc
+				id CDATA #REQUIRED>
+
+		<!ELEMENT reward EMPTY>
+		<!ATTLIST reward
+				item_id CDATA #REQUIRED
+				min CDATA #REQUIRED
+				max CDATA #REQUIRED
+				chance CDATA #REQUIRED>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="90045" count="1"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="200000"/>	<!--Adena-->
+		<ingredient id="91040" count="20"/>	<!--Fire Attribute Fragment-->
+	</item>
+	<item>
+		<production id="90045" count="1"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="200000"/>	<!--Adena-->
+		<ingredient id="91039" count="20"/>	<!--Water Attribute Fragment-->
+	</item>
+	<item>
+		<production id="90045" count="1"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="200000"/>	<!--Adena-->
+		<ingredient id="91041" count="20"/>	<!--Wind Attribute Fragment-->
+	</item>
+	<item>
+		<production id="90045" count="1"/>	<!--Magical Tablet-->
+		<ingredient id="57" count="200000"/>	<!--Adena-->
+		<ingredient id="91042" count="20"/>	<!--Earth Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91035" count="5"/>	<!--Water Spirit Ore-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91035" count="5"/>	<!--Water Spirit Ore-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91035" count="5"/>	<!--Water Spirit Ore-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91035" count="5"/>	<!--Water Spirit Ore-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91036" count="5"/>	<!--Fire Spirit Ore-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91036" count="5"/>	<!--Fire Spirit Ore-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91036" count="5"/>	<!--Fire Spirit Ore-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91036" count="5"/>	<!--Fire Spirit Ore-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91037" count="5"/>	<!--Wind Spirit Ore-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91037" count="5"/>	<!--Wind Spirit Ore-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91037" count="5"/>	<!--Wind Spirit Ore-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91037" count="5"/>	<!--Wind Spirit Ore-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91038" count="5"/>	<!--Earth Spirit Ore-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91038" count="5"/>	<!--Earth Spirit Ore-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91038" count="5"/>	<!--Earth Spirit Ore-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91038" count="5"/>	<!--Earth Spirit Ore-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91185" count="3"/>	<!--Intermediate Spirit's Blessing-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91185" count="3"/>	<!--Intermediate Spirit's Blessing-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91185" count="3"/>	<!--Intermediate Spirit's Blessing-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91185" count="3"/>	<!--Intermediate Spirit's Blessing-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91186" count="1"/>	<!--Advanced Spirit's Blessing-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91186" count="1"/>	<!--Advanced Spirit's Blessing-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91186" count="1"/>	<!--Advanced Spirit's Blessing-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91186" count="1"/>	<!--Advanced Spirit's Blessing-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91187" count="2"/>	<!--Spirit's Varnish-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91187" count="2"/>	<!--Spirit's Varnish-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91187" count="2"/>	<!--Spirit's Varnish-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91187" count="2"/>	<!--Spirit's Varnish-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+	</item>
+	<item>
+		<production id="91188" count="1"/>	<!--Blessed Spirit's Varnish-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="250000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91188" count="1"/>	<!--Blessed Spirit's Varnish-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="250000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91188" count="1"/>	<!--Blessed Spirit's Varnish-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="250000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91188" count="1"/>	<!--Blessed Spirit's Varnish-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="250000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91189" count="5"/>	<!--Fire Attack Potion-->
+		<ingredient id="91040" count="1"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="30000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91190" count="5"/>	<!--Water Attack Potion-->
+		<ingredient id="91039" count="1"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="30000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91191" count="5"/>	<!--Wind Attack Potion-->
+		<ingredient id="91041" count="1"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="30000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91192" count="5"/>	<!--Earth Attack Potion-->
+		<ingredient id="91042" count="1"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="30000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91830" count="1"/>	<!--Improved Fire Attack Potion-->
+		<ingredient id="91040" count="5"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91831" count="1"/>	<!--Improved Water Attack Potion-->
+		<ingredient id="91039" count="5"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91832" count="1"/>	<!--Improved Wind Attack Potion-->
+		<ingredient id="91041" count="5"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91833" count="1"/>	<!--Improved Earth Attack Potion-->
+		<ingredient id="91042" count="5"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="8618" count="1"/>	<!--Ancient Book: Divine Inspiration (Modern Language)-->
+		<ingredient id="91040" count="7000"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="5000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="8618" count="1"/>	<!--Ancient Book: Divine Inspiration (Modern Language)-->
+		<ingredient id="91039" count="7000"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="5000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="8618" count="1"/>	<!--Ancient Book: Divine Inspiration (Modern Language)-->
+		<ingredient id="91041" count="7000"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="5000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="8618" count="1"/>	<!--Ancient Book: Divine Inspiration (Modern Language)-->
+		<ingredient id="91042" count="7000"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="5000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="8619" count="1"/>	<!--Ancient Book: Divine Inspiration (Original Language)-->
+		<ingredient id="91040" count="10000"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="10000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="8619" count="1"/>	<!--Ancient Book: Divine Inspiration (Original Language)-->
+		<ingredient id="91039" count="10000"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="10000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="8619" count="1"/>	<!--Ancient Book: Divine Inspiration (Original Language)-->
+		<ingredient id="91041" count="10000"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="10000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="8619" count="1"/>	<!--Ancient Book: Divine Inspiration (Original Language)-->
+		<ingredient id="91042" count="10000"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="10000000"/>	<!--Adena-->
+	</item>
+</list>

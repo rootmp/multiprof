@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30578" /> <!-- Nakusin -->
+		<point x="-47360" y="-113791" z="-224" h="19834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30579" /> <!-- Tamai -->
+		<point x="-47360" y="-113424" z="-224" h="45163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30567" /> <!-- Tantus -->
+		<point x="-46247" y="-113866" z="-16" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30583" /> <!-- Petukai -->
+		<point x="-45731" y="-113844" z="-240" h="33268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30565" /> <!-- Kakai -->
+		<point x="-46768" y="-113610" z="-3" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30568" /> <!-- Hatos -->
+		<point x="-46808" y="-113184" z="-112" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30584" /> <!-- Vapook -->
+		<point x="-45728" y="-113360" z="-240" h="32528" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30570" /> <!-- Karukia -->
+		<point x="-45952" y="-114496" z="-200" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30566" /> <!-- Varkees -->
+		<point x="-46802" y="-114011" z="-112" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30576" /> <!-- Tamil -->
+		<point x="-45264" y="-112512" z="-216" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30571" /> <!-- Tanapi -->
+		<point x="-45863" y="-112621" z="-200" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30572" /> <!-- Livina -->
+		<point x="-45864" y="-112540" z="-200" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30581" /> <!-- Orinak -->
+		<point x="-46528" y="-109968" z="-248" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30582" /> <!-- Tiku -->
+		<point x="-45808" y="-110055" z="-256" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="32478" /> <!-- Game Assistant -->
+		<point x="-43728" y="-113472" z="-240" h="33000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30602" /> <!-- Tanai -->
+		<point x="-45032" y="-113598" z="-192" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30563" /> <!-- Imantu -->
+		<point x="-43114" y="-113404" z="-216" h="38000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30562" /> <!-- Grookin -->
+		<point x="-43109" y="-113770" z="-216" h="24576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30564" /> <!-- Sumari -->
+		<point x="-43264" y="-112532" z="-216" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30559" /> <!-- Kunai -->
+		<point x="-43926" y="-111794" z="-216" h="28672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30558" /> <!-- Jakal -->
+		<point x="-44416" y="-111486" z="-216" h="57600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30587" /> <!-- Gantaki Zu Urutu -->
+		<point x="-44624" y="-111873" z="-240" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30585" /> <!-- Tataru Zu Hestui -->
+		<point x="-45328" y="-114736" z="-240" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30569" /> <!-- Brukurse -->
+		<point x="-45952" y="-114784" z="-200" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30561" /> <!-- Papuma -->
+		<point x="-43950" y="-115457" z="-192" h="39000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30560" /> <!-- Uska -->
+		<point x="-43910" y="-115518" z="-192" h="39000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30580" /> <!-- Parugon -->
+		<point x="-45744" y="-117165" z="-240" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30577" /> <!-- Rukain -->
+		<point x="-46576" y="-117311" z="-240" h="49152" />
+	</spawn>
+</list>

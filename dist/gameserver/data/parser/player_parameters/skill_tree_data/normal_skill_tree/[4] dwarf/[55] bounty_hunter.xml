@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="55"><!--Bounty Hunter-->
+		<skill id="36" level="1" min_level="40" cost="82000"/><!--Vortex-->
+		<skill id="36" level="2" min_level="40" cost="82000"/><!--Vortex-->
+		<skill id="36" level="3" min_level="40" cost="82000"/><!--Vortex-->
+		<skill id="36" level="4" min_level="40" cost="82000"/><!--Vortex-->
+		<skill id="36" level="5" min_level="40" cost="82000"/><!--Vortex-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="141" level="4" min_level="40" cost="82000"/><!--Weapon Mastery-->
+		<skill id="45248" level="1" min_level="40" cost="82000"/><!--Collecting Mastery-->
+		<skill id="45131" level="3" min_level="40" cost="80000"/><!--Maphr's Empower-->
+		<skill id="45132" level="2" min_level="40" cost="80000"/><!--Maphr's Wild Magic-->
+		<skill id="45133" level="2" min_level="40" cost="80000"/><!--Maphr's Berserker Spirit-->
+		<skill id="45118" level="2" min_level="40" cost="80000"/><!--Maphr's Magic Barrier-->
+		<skill id="45119" level="3" min_level="40" cost="80000"/><!--Maphr's Might-->
+		<skill id="60" level="1" min_level="40" cost="82000"/><!--Fake Death-->
+		<skill id="45130" level="3" min_level="40" cost="80000"/><!--Maphr’s Acumen-->
+		<skill id="260" level="1" min_level="40" cost="82000"/><!--Power Break-->
+		<skill id="260" level="2" min_level="40" cost="82000"/><!--Power Break-->
+		<skill id="260" level="3" min_level="40" cost="82000"/><!--Power Break-->
+		<skill id="994" level="1" min_level="40" cost="82000"/><!--Rush-->
+		<skill id="45116" level="2" min_level="40" cost="80000"/><!--Maphr's Haste-->
+		<skill id="190" level="1" min_level="40" cost="82000"/><!--Fatal Strike-->
+		<skill id="190" level="2" min_level="40" cost="82000"/><!--Fatal Strike-->
+		<skill id="190" level="3" min_level="40" cost="82000"/><!--Fatal Strike-->
+		<skill id="190" level="4" min_level="40" cost="82000"/><!--Fatal Strike-->
+		<skill id="190" level="5" min_level="40" cost="82000"/><!--Fatal Strike-->
+		<skill id="45114" level="3" min_level="40" cost="80000"/><!--Maphr's Focus-->
+		<skill id="45134" level="3" min_level="40" cost="80000"/><!--Maphr's Clarity-->
+		<skill id="45115" level="3" min_level="40" cost="80000"/><!--Maphr's Death Whisper-->
+		<skill id="45120" level="3" min_level="40" cost="80000"/><!--Maphr's Shield-->
+		<skill id="36" level="6" min_level="41" cost="96000"/><!--Vortex-->
+		<skill id="260" level="4" min_level="41" cost="96000"/><!--Power Break-->
+		<skill id="190" level="6" min_level="41" cost="96000"/><!--Fatal Strike-->
+		<skill id="36" level="7" min_level="42" cost="96000"/><!--Vortex-->
+		<skill id="260" level="5" min_level="42" cost="96000"/><!--Power Break-->
+		<skill id="1613" level="1" min_level="42" cost="96000"/><!--Body Crush-->
+		<skill id="1615" level="1" min_level="42" cost="96000"/><!--Weapon Reinforcement-->
+		<skill id="190" level="7" min_level="42" cost="96000"/><!--Fatal Strike-->
+		<skill id="36" level="8" min_level="43" cost="96000"/><!--Vortex-->
+		<skill id="302" level="3" min_level="43" cost="96000"/><!--Spoil Festival-->
+		<skill id="254" level="5" min_level="43" cost="96000"/><!--Spoil-->
+		<skill id="290" level="1" min_level="43" cost="96000"/><!--Final Frenzy-->
+		<skill id="286" level="1" min_level="43" cost="96000"/><!--Provoke-->
+		<skill id="260" level="6" min_level="43" cost="96000"/><!--Power Break-->
+		<skill id="211" level="4" min_level="43" cost="96000"/><!--Boost HP-->
+		<skill id="190" level="8" min_level="43" cost="96000"/><!--Fatal Strike-->
+		<skill id="36" level="9" min_level="44" cost="140000"/><!--Vortex-->
+		<skill id="1617" level="1" min_level="44" cost="140000"/><!--Tenacity-->
+		<skill id="260" level="7" min_level="44" cost="140000"/><!--Power Break-->
+		<skill id="190" level="9" min_level="44" cost="140000"/><!--Fatal Strike-->
+		<skill id="36" level="10" min_level="45" cost="140000"/><!--Vortex-->
+		<skill id="34" level="2" min_level="45" cost="140000"/><!--Bandage-->
+		<skill id="260" level="8" min_level="45" cost="140000"/><!--Power Break-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="190" level="10" min_level="45" cost="140000"/><!--Fatal Strike-->
+		<skill id="36" level="11" min_level="46" cost="140000"/><!--Vortex-->
+		<skill id="828" level="1" min_level="46" cost="140000"/><!--Encase Armor-->
+		<skill id="150" level="3" min_level="46" cost="140000"/><!--Weight Limit-->
+		<skill id="290" level="2" min_level="46" cost="140000"/><!--Final Frenzy-->
+		<skill id="260" level="9" min_level="46" cost="140000"/><!--Power Break-->
+		<skill id="1613" level="2" min_level="46" cost="140000"/><!--Body Crush-->
+		<skill id="190" level="11" min_level="46" cost="140000"/><!--Fatal Strike-->
+		<skill id="36" level="12" min_level="47" cost="200000"/><!--Vortex-->
+		<skill id="260" level="10" min_level="47" cost="200000"/><!--Power Break-->
+		<skill id="190" level="12" min_level="47" cost="200000"/><!--Fatal Strike-->
+		<skill id="36" level="13" min_level="48" cost="200000"/><!--Vortex-->
+		<skill id="260" level="11" min_level="48" cost="200000"/><!--Power Break-->
+		<skill id="190" level="13" min_level="48" cost="200000"/><!--Fatal Strike-->
+		<skill id="36" level="14" min_level="49" cost="200000"/><!--Vortex-->
+		<skill id="287" level="2" min_level="49" cost="200000"/><!--Lionheart-->
+		<skill id="302" level="4" min_level="49" cost="200000"/><!--Spoil Festival-->
+		<skill id="254" level="6" min_level="49" cost="200000"/><!--Spoil-->
+		<skill id="290" level="3" min_level="49" cost="200000"/><!--Final Frenzy-->
+		<skill id="260" level="12" min_level="49" cost="200000"/><!--Power Break-->
+		<skill id="211" level="5" min_level="49" cost="200000"/><!--Boost HP-->
+		<skill id="190" level="14" min_level="49" cost="200000"/><!--Fatal Strike-->
+		<skill id="826" level="1" min_level="49" cost="200000"/><!--Spike-->
+		<skill id="36" level="15" min_level="50" cost="290000"/><!--Vortex-->
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="260" level="13" min_level="50" cost="290000"/><!--Power Break-->
+		<skill id="1613" level="3" min_level="50" cost="290000"/><!--Body Crush-->
+		<skill id="190" level="15" min_level="50" cost="290000"/><!--Fatal Strike-->
+		<skill id="36" level="16" min_level="51" cost="290000"/><!--Vortex-->
+		<skill id="260" level="14" min_level="51" cost="290000"/><!--Power Break-->
+		<skill id="190" level="16" min_level="51" cost="290000"/><!--Fatal Strike-->
+		<skill id="1405" level="1" min_level="52" cost="290000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="36" level="17" min_level="52" cost="290000"/><!--Vortex-->
+		<skill id="290" level="4" min_level="52" cost="290000"/><!--Final Frenzy-->
+		<skill id="260" level="15" min_level="52" cost="290000"/><!--Power Break-->
+		<skill id="1615" level="2" min_level="52" cost="290000"/><!--Weapon Reinforcement-->
+		<skill id="190" level="17" min_level="52" cost="290000"/><!--Fatal Strike-->
+		<skill id="36" level="18" min_level="53" cost="400000"/><!--Vortex-->
+		<skill id="260" level="16" min_level="53" cost="400000"/><!--Power Break-->
+		<skill id="190" level="18" min_level="53" cost="400000"/><!--Fatal Strike-->
+		<skill id="36" level="19" min_level="54" cost="400000"/><!--Vortex-->
+		<skill id="260" level="17" min_level="54" cost="400000"/><!--Power Break-->
+		<skill id="1613" level="4" min_level="54" cost="400000"/><!--Body Crush-->
+		<skill id="190" level="19" min_level="54" cost="400000"/><!--Fatal Strike-->
+		<skill id="36" level="20" min_level="55" cost="400000"/><!--Vortex-->
+		<skill id="302" level="5" min_level="55" cost="400000"/><!--Spoil Festival-->
+		<skill id="254" level="7" min_level="55" cost="400000"/><!--Spoil-->
+		<skill id="290" level="5" min_level="55" cost="400000"/><!--Final Frenzy-->
+		<skill id="286" level="2" min_level="55" cost="400000"/><!--Provoke-->
+		<skill id="260" level="18" min_level="55" cost="400000"/><!--Power Break-->
+		<skill id="211" level="6" min_level="55" cost="400000"/><!--Boost HP-->
+		<skill id="190" level="20" min_level="55" cost="400000"/><!--Fatal Strike-->
+		<skill id="36" level="21" min_level="56" cost="550000"/><!--Vortex-->
+		<skill id="1617" level="2" min_level="56" cost="550000"/><!--Tenacity-->
+		<skill id="260" level="19" min_level="56" cost="550000"/><!--Power Break-->
+		<skill id="190" level="21" min_level="56" cost="550000"/><!--Fatal Strike-->
+		<skill id="36" level="22" min_level="57" cost="550000"/><!--Vortex-->
+		<skill id="260" level="20" min_level="57" cost="550000"/><!--Power Break-->
+		<skill id="190" level="22" min_level="57" cost="550000"/><!--Fatal Strike-->
+		<skill id="36" level="23" min_level="58" cost="550000"/><!--Vortex-->
+		<skill id="290" level="6" min_level="58" cost="550000"/><!--Final Frenzy-->
+		<skill id="260" level="21" min_level="58" cost="550000"/><!--Power Break-->
+		<skill id="1613" level="5" min_level="58" cost="550000"/><!--Body Crush-->
+		<skill id="190" level="23" min_level="58" cost="550000"/><!--Fatal Strike-->
+		<skill id="36" level="24" min_level="59" cost="800000"/><!--Vortex-->
+		<skill id="260" level="22" min_level="59" cost="800000"/><!--Power Break-->
+		<skill id="190" level="24" min_level="59" cost="800000"/><!--Fatal Strike-->
+		<skill id="36" level="25" min_level="60" cost="800000"/><!--Vortex-->
+		<skill id="45184" level="3" min_level="60"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="254" level="8" min_level="60" cost="800000"/><!--Spoil-->
+		<skill id="34" level="3" min_level="60" cost="800000"/><!--Bandage-->
+		<skill id="290" level="7" min_level="60" cost="800000"/><!--Final Frenzy-->
+		<skill id="286" level="3" min_level="60" cost="800000"/><!--Provoke-->
+		<skill id="260" level="23" min_level="60" cost="800000"/><!--Power Break-->
+		<skill id="77" level="3" min_level="60" cost="800000"/><!--Ability to Attack-->
+		<skill id="994" level="2" min_level="60" cost="800000"/><!--Rush-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="190" level="25" min_level="60" cost="800000"/><!--Fatal Strike-->
+		<skill id="1405" level="2" min_level="61" cost="800000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="36" level="26" min_level="61" cost="800000"/><!--Vortex-->
+		<skill id="260" level="24" min_level="61" cost="800000"/><!--Power Break-->
+		<skill id="190" level="26" min_level="61" cost="800000"/><!--Fatal Strike-->
+		<skill id="36" level="27" min_level="62" cost="1000000"/><!--Vortex-->
+		<skill id="287" level="3" min_level="62" cost="1000000"/><!--Lionheart-->
+		<skill id="302" level="6" min_level="62" cost="1000000"/><!--Spoil Festival-->
+		<skill id="290" level="8" min_level="62" cost="1000000"/><!--Final Frenzy-->
+		<skill id="260" level="25" min_level="62" cost="1000000"/><!--Power Break-->
+		<skill id="1613" level="6" min_level="62" cost="1000000"/><!--Body Crush-->
+		<skill id="211" level="7" min_level="62" cost="1000000"/><!--Boost HP-->
+		<skill id="1615" level="3" min_level="62" cost="1000000"/><!--Weapon Reinforcement-->
+		<skill id="190" level="27" min_level="62" cost="1000000"/><!--Fatal Strike-->
+		<skill id="36" level="28" min_level="63" cost="1000000"/><!--Vortex-->
+		<skill id="260" level="26" min_level="63" cost="1000000"/><!--Power Break-->
+		<skill id="190" level="28" min_level="63" cost="1000000"/><!--Fatal Strike-->
+		<skill id="36" level="29" min_level="64" cost="1200000"/><!--Vortex-->
+		<skill id="1617" level="3" min_level="64" cost="1200000"/><!--Tenacity-->
+		<skill id="254" level="9" min_level="64" cost="1200000"/><!--Spoil-->
+		<skill id="290" level="9" min_level="64" cost="1200000"/><!--Final Frenzy-->
+		<skill id="286" level="4" min_level="64" cost="1200000"/><!--Provoke-->
+		<skill id="260" level="27" min_level="64" cost="1200000"/><!--Power Break-->
+		<skill id="190" level="29" min_level="64" cost="1200000"/><!--Fatal Strike-->
+		<skill id="36" level="30" min_level="65" cost="1200000"/><!--Vortex-->
+		<skill id="260" level="28" min_level="65" cost="1200000"/><!--Power Break-->
+		<skill id="190" level="30" min_level="65" cost="1200000"/><!--Fatal Strike-->
+		<skill id="36" level="31" min_level="66" cost="1400000"/><!--Vortex-->
+		<skill id="302" level="7" min_level="66" cost="1400000"/><!--Spoil Festival-->
+		<skill id="290" level="10" min_level="66" cost="1400000"/><!--Final Frenzy-->
+		<skill id="260" level="29" min_level="66" cost="1400000"/><!--Power Break-->
+		<skill id="1613" level="7" min_level="66" cost="1400000"/><!--Body Crush-->
+		<skill id="211" level="8" min_level="66" cost="1400000"/><!--Boost HP-->
+		<skill id="190" level="31" min_level="66" cost="1400000"/><!--Fatal Strike-->
+		<skill id="36" level="32" min_level="67" cost="1400000"/><!--Vortex-->
+		<skill id="260" level="30" min_level="67" cost="1400000"/><!--Power Break-->
+		<skill id="190" level="32" min_level="67" cost="1400000"/><!--Fatal Strike-->
+		<skill id="36" level="33" min_level="68" cost="1900000"/><!--Vortex-->
+		<skill id="254" level="10" min_level="68" cost="1900000"/><!--Spoil-->
+		<skill id="290" level="11" min_level="68" cost="1900000"/><!--Final Frenzy-->
+		<skill id="286" level="5" min_level="68" cost="1900000"/><!--Provoke-->
+		<skill id="260" level="31" min_level="68" cost="1900000"/><!--Power Break-->
+		<skill id="190" level="33" min_level="68" cost="1900000"/><!--Fatal Strike-->
+		<skill id="36" level="34" min_level="69" cost="1900000"/><!--Vortex-->
+		<skill id="260" level="32" min_level="69" cost="1900000"/><!--Power Break-->
+		<skill id="190" level="34" min_level="69" cost="1900000"/><!--Fatal Strike-->
+		<skill id="36" level="35" min_level="70" cost="2400000"/><!--Vortex-->
+		<skill id="302" level="8" min_level="70" cost="2400000"/><!--Spoil Festival-->
+		<skill id="290" level="12" min_level="70" cost="2400000"/><!--Final Frenzy-->
+		<skill id="260" level="33" min_level="70" cost="2400000"/><!--Power Break-->
+		<skill id="1613" level="8" min_level="70" cost="2400000"/><!--Body Crush-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="211" level="9" min_level="70" cost="2400000"/><!--Boost HP-->
+		<skill id="190" level="35" min_level="70" cost="2400000"/><!--Fatal Strike-->
+		<skill id="36" level="36" min_level="71" cost="2400000"/><!--Vortex-->
+		<skill id="260" level="34" min_level="71" cost="2400000"/><!--Power Break-->
+		<skill id="190" level="36" min_level="71" cost="2400000"/><!--Fatal Strike-->
+		<skill id="36" level="37" min_level="72" cost="2700000"/><!--Vortex-->
+		<skill id="254" level="11" min_level="72" cost="2700000"/><!--Spoil-->
+		<skill id="290" level="13" min_level="72" cost="2700000"/><!--Final Frenzy-->
+		<skill id="286" level="6" min_level="72" cost="2700000"/><!--Provoke-->
+		<skill id="260" level="35" min_level="72" cost="2700000"/><!--Power Break-->
+		<skill id="190" level="37" min_level="72" cost="2700000"/><!--Fatal Strike-->
+		<skill id="36" level="38" min_level="73" cost="2700000"/><!--Vortex-->
+		<skill id="260" level="36" min_level="73" cost="2700000"/><!--Power Break-->
+		<skill id="190" level="38" min_level="73" cost="2700000"/><!--Fatal Strike-->
+		<skill id="36" level="39" min_level="74" cost="2700000"/><!--Vortex-->
+		<skill id="302" level="9" min_level="74" cost="2700000"/><!--Spoil Festival-->
+		<skill id="254" level="12" min_level="74" cost="2700000"/><!--Spoil-->
+		<skill id="290" level="14" min_level="74" cost="2700000"/><!--Final Frenzy-->
+		<skill id="286" level="7" min_level="74" cost="2700000"/><!--Provoke-->
+		<skill id="260" level="37" min_level="74" cost="2700000"/><!--Power Break-->
+		<skill id="1613" level="9" min_level="74" cost="2700000"/><!--Body Crush-->
+		<skill id="211" level="10" min_level="74" cost="2700000"/><!--Boost HP-->
+		<skill id="190" level="39" min_level="74" cost="2700000"/><!--Fatal Strike-->
+		<skill id="36" level="40" min_level="75" cost="2700000"/><!--Vortex-->
+		<skill id="190" level="40" min_level="75" cost="2700000"/><!--Fatal Strike-->
+		<skill id="47235" level="2" min_level="40" cost="82000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="3" min_level="48" cost="200000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="4" min_level="54" cost="400000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="5" min_level="60" cost="800000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="6" min_level="66" cost="1400000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="7" min_level="72" cost="2700000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47236" level="2" min_level="40" cost="82000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="3" min_level="47" cost="200000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="4" min_level="53" cost="400000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="5" min_level="59" cost="800000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="6" min_level="65" cost="1200000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="7" min_level="71" cost="2400000"/><!--Dwarven Armor Mastery-->
+		<skill id="47237" level="1" min_level="40" cost="82000"/><!--Dwarven Recovery Mastery-->
+		<skill id="47237" level="2" min_level="52" cost="290000"/><!--Dwarven Recovery Mastery-->
+		<skill id="47237" level="3" min_level="64" cost="1200000"/><!--Dwarven Recovery Mastery-->
+		<skill id="47237" level="4" min_level="70" cost="2400000"/><!--Dwarven Recovery Mastery-->
+	</normal_skill_tree>
+</list>

@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--Author: nexvill-->
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116264" y="188552" z="-3760" h="50875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="116301" y="188987" z="-3760" h="19078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116107" y="188683" z="-3760" h="5231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="115128" y="189033" z="-3760" h="28638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116433" y="189139" z="-3760" h="57619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="115783" y="189455" z="-3760" h="5231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="115456" y="189732" z="-3752" h="34263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116141" y="189569" z="-3760" h="47808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116626" y="189756" z="-3760" h="37669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="116823" y="188884" z="-3752" h="10889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116889" y="190198" z="-3752" h="13864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="116915" y="189258" z="-3728" h="38802" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="117141" y="190105" z="-3752" h="55605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="117933" y="189219" z="-3736" h="42700" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="118302" y="190611" z="-3720" h="59465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="113733" y="186566" z="-3760" h="14326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="112964" y="187261" z="-3760" h="31288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="114699" y="187326" z="-3712" h="898" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="115676" y="187712" z="-3712" h="3355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="115767" y="187566" z="-3712" h="55795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="116633" y="187528" z="-3384" h="43843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116245" y="186883" z="-3440" h="46830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116743" y="187632" z="-3384" h="9981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116602" y="188417" z="-3760" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="117285" y="187622" z="-3536" h="49637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116965" y="187450" z="-3440" h="54964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="117038" y="187607" z="-3408" h="21357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116972" y="187121" z="-3664" h="49587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="117004" y="187676" z="-3400" h="4377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="118176" y="186433" z="-3696" h="6297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="114702" y="185755" z="-3528" h="18154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="113498" y="185174" z="-3432" h="18130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="114478" y="185442" z="-3512" h="63193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="112759" y="184889" z="-3352" h="58166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="113062" y="185464" z="-3368" h="22118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="116248" y="184815" z="-3600" h="51533" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="115462" y="185222" z="-3360" h="35463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="114899" y="185620" z="-3440" h="62135" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="115977" y="185175" z="-3480" h="63790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="116177" y="185832" z="-3496" h="49732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="115751" y="185795" z="-3368" h="56251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="116359" y="185625" z="-3560" h="51042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="115659" y="185222" z="-3408" h="17117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="116502" y="185087" z="-3600" h="8404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="116528" y="185202" z="-3592" h="29228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="117448" y="185133" z="-3744" h="5436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="117039" y="185822" z="-3704" h="43418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="118383" y="185935" z="-3744" h="32622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="117099" y="185384" z="-3696" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="117405" y="185097" z="-3744" h="5703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="116888" y="185077" z="-3680" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="118292" y="185350" z="-3752" h="52448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="118322" y="185221" z="-3744" h="29092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="117141" y="185028" z="-3736" h="35945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="117194" y="184876" z="-3744" h="29228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="112629" y="184886" z="-3352" h="50944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="112261" y="185096" z="-3432" h="40490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="111964" y="185632" z="-3520" h="23211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110724" y="185330" z="-3712" h="27801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="111946" y="188446" z="-3760" h="54926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="111036" y="189469" z="-3496" h="13506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="112311" y="189943" z="-3584" h="53983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="112226" y="189221" z="-3680" h="37785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="111026" y="190363" z="-3368" h="60967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="111733" y="188939" z="-3760" h="33710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110878" y="190092" z="-3376" h="48286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="112436" y="189780" z="-3560" h="62594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110409" y="190188" z="-3432" h="34772" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="109091" y="186354" z="-3760" h="25124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="110197" y="184622" z="-3648" h="57753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="109431" y="187772" z="-3720" h="20539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108772" y="187349" z="-3736" h="5636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110016" y="188521" z="-3736" h="24760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="109107" y="189800" z="-3528" h="31044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="109351" y="188999" z="-3736" h="32188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="110385" y="188980" z="-3632" h="22752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="109123" y="189366" z="-3664" h="53425" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="109539" y="188950" z="-3736" h="26475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="109430" y="188940" z="-3736" h="54591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="109174" y="189560" z="-3616" h="47264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="109781" y="189251" z="-3688" h="34658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108747" y="189813" z="-3520" h="10334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="110371" y="190382" z="-3472" h="15086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108596" y="189680" z="-3568" h="25188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108976" y="189288" z="-3696" h="8608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="109802" y="189681" z="-3528" h="27826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110443" y="189930" z="-3432" h="16970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="108431" y="185273" z="-3712" h="48988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="107076" y="188013" z="-3728" h="39080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="108353" y="186526" z="-3760" h="32717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="106534" y="187739" z="-3584" h="22608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="108129" y="187642" z="-3760" h="60066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108011" y="187134" z="-3760" h="31996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="107318" y="187080" z="-3760" h="30258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108083" y="186717" z="-3760" h="4969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="107714" y="187839" z="-3752" h="5888" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="107148" y="188008" z="-3736" h="21654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="106845" y="186279" z="-3712" h="1562" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108513" y="187117" z="-3768" h="51475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="108079" y="187339" z="-3760" h="57201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="107548" y="188448" z="-3720" h="26696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108160" y="189109" z="-3736" h="21225" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="107618" y="189383" z="-3672" h="22903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108431" y="189383" z="-3696" h="54963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="107618" y="189109" z="-3704" h="9511" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="107618" y="188835" z="-3720" h="59333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108116" y="189047" z="-3744" h="65243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="108431" y="189657" z="-3608" h="2248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="108397" y="189578" z="-3640" h="5231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22196" /> <!-- Nos Lad -->
+		<point x="108266" y="183478" z="-3352" h="15788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22195" /> <!-- Farhite Lad -->
+		<point x="107573" y="183188" z="-3360" h="31016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22196" /> <!-- Nos Lad -->
+		<point x="106934" y="182993" z="-3376" h="28017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22196" /> <!-- Nos Lad -->
+		<point x="108608" y="182221" z="-3304" h="41980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="108430" y="183629" z="-3352" h="18727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22195" /> <!-- Farhite Lad -->
+		<point x="108519" y="183407" z="-3344" h="26055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="111157" y="183206" z="-3752" h="6444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="111882" y="183131" z="-3760" h="16580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="112321" y="182714" z="-3760" h="35672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="112542" y="182991" z="-3760" h="37092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="112139" y="183716" z="-3760" h="16681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="110575" y="184198" z="-3752" h="30142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="112509" y="182911" z="-3760" h="35646" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="112165" y="182834" z="-3760" h="20297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="111905" y="183111" z="-3760" h="43549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="114011" y="183100" z="-3760" h="63193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="112644" y="183443" z="-3760" h="13212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22196" /> <!-- Nos Lad -->
+		<point x="108534" y="182077" z="-3312" h="37219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="111147" y="181416" z="-3736" h="51156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110757" y="180210" z="-3688" h="23481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="111969" y="180102" z="-3728" h="34903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="111336" y="181220" z="-3752" h="3637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="111625" y="180932" z="-3760" h="55605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="111318" y="181354" z="-3752" h="55286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="111249" y="180254" z="-3712" h="48574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="110544" y="180708" z="-3712" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="112013" y="180219" z="-3728" h="47856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="111193" y="181433" z="-3736" h="6946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="110942" y="181000" z="-3712" h="2365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="113824" y="181453" z="-3760" h="18298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="113301" y="180267" z="-3688" h="54497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110154" y="179844" z="-3632" h="56936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110408" y="179972" z="-3640" h="6418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="110610" y="179984" z="-3672" h="38745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="116722" y="182716" z="-3760" h="17946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22194" /> <!-- Crokian Lad Warrior -->
+		<point x="116705" y="182402" z="-3760" h="53300" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="117727" y="183700" z="-3760" h="58364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="117700" y="183286" z="-3760" h="34492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="118648" y="184815" z="-3728" h="34256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="118648" y="185451" z="-3760" h="47235" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="117448" y="184497" z="-3760" h="42463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22195" /> <!-- Farhite Lad -->
+		<point x="120381" y="180956" z="-3304" h="44282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22196" /> <!-- Nos Lad -->
+		<point x="120879" y="180661" z="-3312" h="28317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22195" /> <!-- Farhite Lad -->
+		<point x="120362" y="180606" z="-3304" h="50563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22192" /> <!-- Crokian Warrior -->
+		<point x="120085" y="181090" z="-3280" h="18722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22192" /> <!-- Crokian Warrior -->
+		<point x="119872" y="180878" z="-3272" h="18722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22192" /> <!-- Crokian Warrior -->
+		<point x="119978" y="180834" z="-3280" h="14738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22197" /> <!-- Swamp Tribe -->
+		<point x="119938" y="180954" z="-3280" h="6727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22195" /> <!-- Farhite Lad -->
+		<point x="120255" y="180973" z="-3304" h="56137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22192" /> <!-- Crokian Warrior -->
+		<point x="120410" y="183735" z="-3304" h="43399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22192" /> <!-- Crokian Warrior -->
+		<point x="120452" y="183577" z="-3328" h="26891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22192" /> <!-- Crokian Warrior -->
+		<point x="120346" y="183534" z="-3312" h="26538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22197" /> <!-- Swamp Tribe -->
+		<point x="120347" y="183684" z="-3304" h="26538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22195" /> <!-- Farhite Lad -->
+		<point x="120380" y="184001" z="-3288" h="44163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="119201" y="184410" z="-3760" h="4739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="119740" y="186399" z="-3744" h="11113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="118878" y="185627" z="-3760" h="61568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="120425" y="185684" z="-3680" h="41265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="119407" y="186376" z="-3720" h="6537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="119114" y="185594" z="-3760" h="49346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="120537" y="186368" z="-3664" h="27801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120360" y="186010" z="-3680" h="13120" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120421" y="187500" z="-3696" h="16973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="119905" y="188062" z="-3760" h="37862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="119415" y="187677" z="-3752" h="48767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120202" y="187187" z="-3736" h="393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="119516" y="187734" z="-3752" h="63193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120198" y="187153" z="-3736" h="30822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="120912" y="190481" z="-3760" h="17153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22193" /> <!-- Dailaon -->
+		<point x="120281" y="188261" z="-3728" h="56325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="119360" y="189203" z="-3760" h="28058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120729" y="189971" z="-3760" h="6537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120087" y="189926" z="-3760" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120412" y="189491" z="-3760" h="57241" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="120098" y="190466" z="-3760" h="49880" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120876" y="190901" z="-3760" h="1175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120553" y="191038" z="-3744" h="60098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="119235" y="190620" z="-3760" h="60521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="121376" y="189933" z="-3736" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="121070" y="190678" z="-3760" h="58101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="121165" y="190108" z="-3760" h="5470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22189" /> <!-- Alligator -->
+		<point x="121411" y="189907" z="-3736" h="43941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22190" /> <!-- Crokian -->
+		<point x="120807" y="190903" z="-3760" h="35533" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22195" /> <!-- Farhite Lad -->
+		<point x="124792" y="190229" z="-3288" h="46014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22196" /> <!-- Nos Lad -->
+		<point x="124743" y="191056" z="-3280" h="56325" />
+	</spawn>
+	<territory name="innadril08_2323_09">
+		<add x="113588" y="186881" zmin="-3860" zmax="-3160"/>
+		<add x="113215" y="189814" zmin="-3860" zmax="-3160"/>
+		<add x="111062" y="190668" zmin="-3860" zmax="-3160"/>
+		<add x="108486" y="189788" zmin="-3860" zmax="-3160"/>
+		<add x="111497" y="185914" zmin="-3860" zmax="-3160"/>
+	</territory>
+	<spawn name="innadril08_2323_09" count="2" respawn="60">
+		<territory name="innadril08_2323_09"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_05">
+		<add x="112481" y="166383" zmin="-3574" zmax="-3074"/>
+		<add x="114906" y="167428" zmin="-3574" zmax="-3074"/>
+		<add x="113704" y="170001" zmin="-3574" zmax="-3074"/>
+		<add x="111381" y="170249" zmin="-3574" zmax="-3074"/>
+		<add x="110057" y="167640" zmin="-3574" zmax="-3074"/>
+	</territory>
+	<spawn name="innadril08_2323_05" count="2" respawn="60">
+		<territory name="innadril08_2323_05"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_06">
+		<add x="117691" y="166776" zmin="-3574" zmax="-2874"/>
+		<add x="118605" y="169886" zmin="-3574" zmax="-2874"/>
+		<add x="115890" y="170365" zmin="-3574" zmax="-2874"/>
+		<add x="114133" y="169338" zmin="-3574" zmax="-2874"/>
+		<add x="115022" y="167441" zmin="-3574" zmax="-2874"/>
+	</territory>
+	<spawn name="innadril08_2323_06" count="2" respawn="60">
+		<territory name="innadril08_2323_06"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_07">
+		<add x="119100" y="166684" zmin="-3549" zmax="-3149"/>
+		<add x="121510" y="167963" zmin="-3549" zmax="-3149"/>
+		<add x="121892" y="168991" zmin="-3549" zmax="-3149"/>
+		<add x="118673" y="169794" zmin="-3549" zmax="-3149"/>
+		<add x="117749" y="166749" zmin="-3549" zmax="-3149"/>
+	</territory>
+	<spawn name="innadril08_2323_07" count="2" respawn="60">
+		<territory name="innadril08_2323_07"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_08">
+		<add x="109547" y="185085" zmin="-3840" zmax="-3240"/>
+		<add x="111425" y="185885" zmin="-3840" zmax="-3240"/>
+		<add x="108076" y="190208" zmin="-3840" zmax="-3240"/>
+		<add x="105992" y="187035" zmin="-3840" zmax="-3240"/>
+		<add x="108123" y="184725" zmin="-3840" zmax="-3240"/>
+	</territory>
+	<spawn name="innadril08_2323_08" count="2" respawn="60">
+		<territory name="innadril08_2323_08"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_01">
+		<add x="104628" y="176783" zmin="-3837" zmax="-3237"/>
+		<add x="107993" y="178074" zmin="-3837" zmax="-3237"/>
+		<add x="106605" y="179551" zmin="-3837" zmax="-3237"/>
+		<add x="104967" y="180118" zmin="-3837" zmax="-3237"/>
+		<add x="103399" y="178771" zmin="-3837" zmax="-3237"/>
+	</territory>
+	<spawn name="innadril08_2323_01" count="2" respawn="60">
+		<territory name="innadril08_2323_01"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_02">
+		<add x="105994" y="174722" zmin="-3822" zmax="-3122"/>
+		<add x="109279" y="177098" zmin="-3822" zmax="-3122"/>
+		<add x="108259" y="178061" zmin="-3822" zmax="-3122"/>
+		<add x="104674" y="176632" zmin="-3822" zmax="-3122"/>
+		<add x="104234" y="175221" zmin="-3822" zmax="-3122"/>
+	</territory>
+	<spawn name="innadril08_2323_02" count="2" respawn="60">
+		<territory name="innadril08_2323_02"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_03">
+		<add x="108003" y="169603" zmin="-3845" zmax="-3145"/>
+		<add x="111108" y="170278" zmin="-3845" zmax="-3145"/>
+		<add x="109603" y="172721" zmin="-3845" zmax="-3145"/>
+		<add x="107839" y="171463" zmin="-3845" zmax="-3145"/>
+	</territory>
+	<spawn name="innadril08_2323_03" count="2" respawn="60">
+		<territory name="innadril08_2323_03"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_04">
+		<add x="108366" y="167487" zmin="-3607" zmax="-3107"/>
+		<add x="109865" y="167556" zmin="-3607" zmax="-3107"/>
+		<add x="111170" y="170215" zmin="-3607" zmax="-3107"/>
+		<add x="108069" y="169469" zmin="-3607" zmax="-3107"/>
+	</territory>
+	<spawn name="innadril08_2323_04" count="2" respawn="60">
+		<territory name="innadril08_2323_04"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_16">
+		<add x="119201" y="182015" zmin="-3864" zmax="-3064"/>
+		<add x="119966" y="179871" zmin="-3864" zmax="-3064"/>
+		<add x="122699" y="179881" zmin="-3864" zmax="-3064"/>
+		<add x="124635" y="183126" zmin="-3864" zmax="-3064"/>
+		<add x="122261" y="184514" zmin="-3864" zmax="-3064"/>
+		<add x="120465" y="184416" zmin="-3864" zmax="-3064"/>
+	</territory>
+	<spawn name="innadril08_2323_16" count="2" respawn="60">
+		<territory name="innadril08_2323_16"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_17">
+		<add x="117595" y="179184" zmin="-3864" zmax="-3164"/>
+		<add x="119428" y="176130" zmin="-3864" zmax="-3164"/>
+		<add x="122423" y="177663" zmin="-3864" zmax="-3164"/>
+		<add x="122645" y="179567" zmin="-3864" zmax="-3164"/>
+		<add x="119181" y="179822" zmin="-3864" zmax="-3164"/>
+	</territory>
+	<spawn name="innadril08_2323_17" count="2" respawn="60">
+		<territory name="innadril08_2323_17"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_18">
+		<add x="119441" y="176035" zmin="-3864" zmax="-3364"/>
+		<add x="120774" y="173343" zmin="-3864" zmax="-3364"/>
+		<add x="122784" y="174524" zmin="-3864" zmax="-3364"/>
+		<add x="123900" y="175774" zmin="-3864" zmax="-3364"/>
+		<add x="122192" y="177364" zmin="-3864" zmax="-3364"/>
+	</territory>
+	<spawn name="innadril08_2323_18" count="2" respawn="60">
+		<territory name="innadril08_2323_18"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_19">
+		<add x="117710" y="174418" zmin="-3864" zmax="-3364"/>
+		<add x="118189" y="171450" zmin="-3864" zmax="-3364"/>
+		<add x="120324" y="170244" zmin="-3864" zmax="-3364"/>
+		<add x="120615" y="173433" zmin="-3864" zmax="-3364"/>
+		<add x="119224" y="175813" zmin="-3864" zmax="-3364"/>
+	</territory>
+	<spawn name="innadril08_2323_19" count="2" respawn="60">
+		<territory name="innadril08_2323_19"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_12">
+		<add x="117629" y="188365" zmin="-3844" zmax="-3344"/>
+		<add x="117105" y="186532" zmin="-3844" zmax="-3344"/>
+		<add x="119683" y="185071" zmin="-3844" zmax="-3344"/>
+		<add x="120727" y="185790" zmin="-3844" zmax="-3344"/>
+		<add x="120445" y="188822" zmin="-3844" zmax="-3344"/>
+	</territory>
+	<spawn name="innadril08_2323_12" count="2" respawn="60">
+		<territory name="innadril08_2323_12"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_13">
+		<add x="117128" y="186410" zmin="-3844" zmax="-3344"/>
+		<add x="114808" y="182865" zmin="-3844" zmax="-3344"/>
+		<add x="116367" y="181630" zmin="-3844" zmax="-3344"/>
+		<add x="118263" y="182457" zmin="-3844" zmax="-3344"/>
+		<add x="119626" y="184946" zmin="-3844" zmax="-3344"/>
+	</territory>
+	<spawn name="innadril08_2323_13" count="2" respawn="60">
+		<territory name="innadril08_2323_13"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_14">
+		<add x="117055" y="186454" zmin="-3859" zmax="-3159"/>
+		<add x="113657" y="186777" zmin="-3859" zmax="-3159"/>
+		<add x="109685" y="184974" zmin="-3859" zmax="-3159"/>
+		<add x="111297" y="182576" zmin="-3859" zmax="-3159"/>
+		<add x="114607" y="182717" zmin="-3859" zmax="-3159"/>
+	</territory>
+	<spawn name="innadril08_2323_14" count="2" respawn="60">
+		<territory name="innadril08_2323_14"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_15">
+		<add x="114465" y="182577" zmin="-3844" zmax="-3144"/>
+		<add x="111626" y="182457" zmin="-3844" zmax="-3144"/>
+		<add x="109676" y="179701" zmin="-3844" zmax="-3144"/>
+		<add x="113393" y="179860" zmin="-3844" zmax="-3144"/>
+	</territory>
+	<spawn name="innadril08_2323_15" count="2" respawn="60">
+		<territory name="innadril08_2323_15"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_10">
+		<add x="117007" y="186532" zmin="-3848" zmax="-3148"/>
+		<add x="117511" y="188443" zmin="-3848" zmax="-3148"/>
+		<add x="116997" y="190909" zmin="-3848" zmax="-3148"/>
+		<add x="113295" y="189840" zmin="-3848" zmax="-3148"/>
+		<add x="113656" y="186898" zmin="-3848" zmax="-3148"/>
+	</territory>
+	<spawn name="innadril08_2323_05" count="2" respawn="60">
+		<territory name="innadril08_2323_05"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_11">
+		<add x="120460" y="188982" zmin="-3833" zmax="-3433"/>
+		<add x="119556" y="191947" zmin="-3833" zmax="-3433"/>
+		<add x="117140" y="190802" zmin="-3833" zmax="-3433"/>
+		<add x="117565" y="188450" zmin="-3833" zmax="-3433"/>
+	</territory>
+	<spawn name="innadril08_2323_11" count="2" respawn="60">
+		<territory name="innadril08_2323_11"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_23">
+		<add x="124934" y="184723" zmin="-3057" zmax="-2257"/>
+		<add x="125973" y="181959" zmin="-3057" zmax="-2257"/>
+		<add x="127077" y="181975" zmin="-3057" zmax="-2257"/>
+		<add x="128031" y="183416" zmin="-3057" zmax="-2257"/>
+		<add x="128049" y="184233" zmin="-3057" zmax="-2257"/>
+		<add x="126636" y="185303" zmin="-3057" zmax="-2257"/>
+	</territory>
+	<spawn name="innadril08_2323_23" count="2" respawn="60">
+		<territory name="innadril08_2323_23"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_20">
+		<add x="114292" y="176728" zmin="-3864" zmax="-3264"/>
+		<add x="116023" y="173783" zmin="-3864" zmax="-3264"/>
+		<add x="117354" y="174178" zmin="-3864" zmax="-3264"/>
+		<add x="119342" y="176103" zmin="-3864" zmax="-3264"/>
+		<add x="117517" y="178950" zmin="-3864" zmax="-3264"/>
+	</territory>
+	<spawn name="innadril08_2323_20" count="2" respawn="60">
+		<territory name="innadril08_2323_20"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_21">
+		<add x="112204" y="174708" zmin="-3836" zmax="-3336"/>
+		<add x="114008" y="171445" zmin="-3836" zmax="-3336"/>
+		<add x="115215" y="171237" zmin="-3836" zmax="-3336"/>
+		<add x="116757" y="172286" zmin="-3836" zmax="-3336"/>
+		<add x="114547" y="176088" zmin="-3836" zmax="-3336"/>
+	</territory>
+	<spawn name="innadril08_2323_21" count="2" respawn="60">
+		<territory name="innadril08_2323_21"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<territory name="innadril08_2323_22">
+		<add x="110438" y="173445" zmin="-3844" zmax="-3344"/>
+		<add x="111512" y="171004" zmin="-3844" zmax="-3344"/>
+		<add x="113550" y="172111" zmin="-3844" zmax="-3344"/>
+		<add x="112446" y="174137" zmin="-3844" zmax="-3344"/>
+	</territory>
+	<spawn name="innadril08_2323_22" count="2" respawn="60">
+		<territory name="innadril08_2323_22"/>
+		<npc id="22191"/><!-- Nos -->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34143" /> <!-- Deton -->
+		<point x="115644" y="191546" z="-3360" h="26339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34143" /> <!-- Deton -->
+		<point x="101304" y="177320" z="-3103" h="26339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34143" /> <!-- Deton -->
+		<point x="120488" y="166744" z="-3112" h="26339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34143" /> <!-- Deton -->
+		<point x="126744" y="174616" z="-3118" h="26339" />
+	</spawn>
+</list>

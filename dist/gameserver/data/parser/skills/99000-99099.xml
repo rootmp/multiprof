@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="99001" levels="10" name="Wild Assault - Power">
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.s_brandish_wave"/>
+		<set name="reuseDelay" value="100"/>
+		<set name="removeReuseOnActiveEffect" value="47855"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="15000"/>
+		<set name="coolTime" value="5"/>
+		<set name="hitTime" value="5"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="5;12"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="affect_range" value="200"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="shieldignore" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="99002" levels="1" name="Final Frenzy - Break">
+		<set name="reuseDelay" value="0"/>
+		<set name="castRange" value="-1"/>
+		<set name="hitTime" value="1"/>
+		<set name="mp_consume" value="1"/>
+		<set name="abnormal_time" value="-1"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="magicLevel" value="76"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_type" value="FORCE_HP_UP"/>
+		<set name="abnormal_effect" value="NONE"/>
+		<set name="useSS" value="false"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A5"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="canBeStolen" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="cancelable" value="true"/>
+		<for>
+			<add stat="pAtk" value="1">
+				<and>
+					<player percentHP="60"/>
+				</and>
+			</add>
+		</for>
+	</skill>
+</list>

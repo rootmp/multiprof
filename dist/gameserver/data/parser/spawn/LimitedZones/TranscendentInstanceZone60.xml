@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!-- Author: nexvill -->
+<list>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_1">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="132968" y="8648" z="-4253" h="14890" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_2">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="132984" y="8600" z="-4253" h="19596" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_3">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133000" y="8552" z="-4253" h="17701" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_4">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133016" y="8664" z="-4253" h="17753" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_5">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133032" y="8632" z="-4253" h="18791" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_6">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133048" y="8568" z="-4253" h="20133" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_7">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133064" y="8680" z="-4253" h="17497" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_8">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133080" y="8648" z="-4253" h="18722" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_9">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133096" y="8600" z="-4253" h="20394" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_10">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133112" y="8696" z="-4253" h="17488" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_11">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133128" y="8664" z="-4253" h="19938" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_12">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133144" y="8616" z="-4253" h="21176" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_13">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133144" y="8728" z="-4253" h="19940" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_14">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133160" y="8696" z="-4253" h="21426" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_1_15">
+		<npc id="22113" /> <!-- Vanor Silenos Chieftain -->
+		<point x="133176" y="8648" z="-4253" h="12127" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_1">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="132968" y="8648" z="-4253" h="14890" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_2">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="132984" y="8600" z="-4253" h="19596" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_3">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133000" y="8552" z="-4253" h="17701" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_4">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133016" y="8664" z="-4253" h="17753" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_5">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133032" y="8632" z="-4253" h="18791" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_6">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133048" y="8568" z="-4253" h="20133" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_7">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133064" y="8680" z="-4253" h="17497" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_8">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133080" y="8648" z="-4253" h="18722" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_9">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133096" y="8600" z="-4253" h="20394" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_10">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133112" y="8696" z="-4253" h="17488" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_11">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133128" y="8664" z="-4253" h="19938" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_12">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133144" y="8616" z="-4253" h="21176" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_13">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133144" y="8728" z="-4253" h="19940" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_14">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133160" y="8696" z="-4253" h="21426" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_2_15">
+		<npc id="22114" /> <!-- Vanor -->
+		<point x="133176" y="8648" z="-4253" h="12127" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_1">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="132968" y="8648" z="-4253" h="14890" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_2">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="132984" y="8600" z="-4253" h="19596" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_3">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133000" y="8552" z="-4253" h="17701" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_4">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133016" y="8664" z="-4253" h="17753" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_5">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133032" y="8632" z="-4253" h="18791" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_6">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133048" y="8568" z="-4253" h="20133" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_7">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133064" y="8680" z="-4253" h="17497" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_8">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133080" y="8648" z="-4253" h="18722" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_9">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133096" y="8600" z="-4253" h="20394" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_10">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133112" y="8696" z="-4253" h="17488" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_11">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133128" y="8664" z="-4253" h="19938" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_12">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133144" y="8616" z="-4253" h="21176" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_13">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133144" y="8728" z="-4253" h="19940" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_14">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133160" y="8696" z="-4253" h="21426" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_variant_3_15">
+		<npc id="22115" /> <!-- Vanor Silenos Shaman -->
+		<point x="133176" y="8648" z="-4253" h="12127" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_1">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="132888" y="8888" z="-4238" h="16409" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_2">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="132904" y="8936" z="-4238" h="15382" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_3">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="132904" y="8984" z="-4238" h="15201" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_4">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="132968" y="8888" z="-4238" h="13584" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_5">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="132968" y="8936" z="-4238" h="15286" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_6">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="132968" y="8984" z="-4238" h="15248" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_7">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="133032" y="8888" z="-4238" h="14238" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_8">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="133032" y="8936" z="-4238" h="15436" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_9">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="133032" y="8984" z="-4238" h="16865" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_10">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="133096" y="8888" z="-4238" h="14971" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_11">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="133096" y="8936" z="-4238" h="17545" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_60_box_12">
+		<npc id="22124" /> <!-- Transcendent Treasure Chest -->
+		<point x="133096" y="8984" z="-4238" h="17087" />
+	</spawn>
+</list>

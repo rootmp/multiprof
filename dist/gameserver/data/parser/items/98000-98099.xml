@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="98000" name="Sayha's Storm Lv. 3 - Not Available" add_name="Not Available">
+		<!--Applies a buff when used.\n\n<Buff effect>\nSayha's Grace Consumption +100%\nAcquired XP +250%\nAcquired SP +250%\n\nDuration: 20 min.\nCooldown: 1 min.\nThe effect remains after death.\n<font color=eeaa22>(Requires 35,000+ Sayha's Grace points.)</font>-->
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false" />
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+	</etcitem>
+	<etcitem id="98001" name="Sayha's Fortune Box - Not Available" add_name="Not Available">
+		<!--Double-click to obtain <font color=bbaa88>3 items</font>: <font color=bbaa88>Sayha's Storm Lv. 4</font>, <font color=bbaa88>Special Dragon's Miracle Potion Lv. 3 or Special Dragon Fruit Lv. 3</font>, and <font color=bbaa88>Sayha's Treasure Chest or Sayha's Special Treasure Chest</font>. -->
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false" />
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95660" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="95743" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49786" count="1" chance="0.01"/><!--A-grade Armor Pack--><!--TODO: Check chance-->
+			<create_item id="93739" count="1" chance="0.01"/><!--Package: Giran Seal (1000 pcs.)--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="91864" count="1" chance="0.01"/><!--Dragon Belt Pack--><!--TODO: Check chance-->
+			<create_item id="92035" count="1" chance="0.01"/><!--Shiny Jewelry Box--><!--TODO: Check chance-->
+			<create_item id="94269" count="5" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="5" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91712" count="5" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="98002" name="Sayha's Treasure Chest - Not Available" add_name="Not Available">
+		<!--Double-click to obtain a random item from the list and another one of various items.-->
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false" />
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95660" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="95743" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49786" count="1" chance="0.01"/><!--A-grade Armor Pack--><!--TODO: Check chance-->
+			<create_item id="93739" count="1" chance="0.01"/><!--Package: Giran Seal (1000 pcs.)--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="91864" count="1" chance="0.01"/><!--Dragon Belt Pack--><!--TODO: Check chance-->
+			<create_item id="92035" count="1" chance="0.01"/><!--Shiny Jewelry Box--><!--TODO: Check chance-->
+			<create_item id="94269" count="5" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="5" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91712" count="5" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="98003" name="Sayha's Special Treasure Chest - Not Available" add_name="Not Available">
+		<!--Double-click to obtain a random item from the list and another one of various items.-->
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false" />
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="95660" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="95743" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="49786" count="1" chance="0.01"/><!--A-grade Armor Pack--><!--TODO: Check chance-->
+			<create_item id="93739" count="1" chance="0.01"/><!--Package: Giran Seal (1000 pcs.)--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="91864" count="1" chance="0.01"/><!--Dragon Belt Pack--><!--TODO: Check chance-->
+			<create_item id="92035" count="1" chance="0.01"/><!--Shiny Jewelry Box--><!--TODO: Check chance-->
+			<create_item id="94269" count="5" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="5" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91712" count="5" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+</list>

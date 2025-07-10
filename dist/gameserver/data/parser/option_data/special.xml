@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<!-- nexill: Find correct options for this skills (if they exist), then move skills to that options and remove this file -->
+<list>
+	<option_data id="110000">
+		<!-- A 1% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50381" level="1"/>	<!-- Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110001">
+		<!-- A 1% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="1"/>	<!-- +1 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110002">
+		<!-- A 1% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="2"/>	<!-- +2 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110003">
+		<!-- A 1% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="3"/>	<!-- +3 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110004">
+		<!-- A 1% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="4"/>	<!-- +4 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110005">
+		<!-- CON +1/ MEN +1, All received Critical Rate -2% -->
+		<!-- A 3% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="5"/>	<!-- +5 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110006">
+		<!-- CON + 1/ MEN +1/ DEX +1/ WIT +1, All received Critical Rate -3% -->
+		<!-- A 5% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="6"/>	<!-- +6 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110007">
+		<!-- CON +1/ MEN +1/ DEX +1/ WIT +1/ STR +1/ INT +1, All received Critical Rate -4% -->
+		<!-- A 7% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="7"/>	<!-- +7 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110008">
+		<!-- CON/ MEN +2/ DEX/ WIT/ STR/ INT +1, All received Critical Rate -5% -->
+		<!-- A 8% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="8"/>	<!-- +8 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110009">
+		<!-- CON/ MEN/ DEX/ WIT +2 / STR/ INT +1, All received Critical Rate -6% -->
+		<!-- A 9% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="9"/>	<!-- +9 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110010">
+		<!-- CON/ MEN/ DEX/ WIT +3 / STR/ INT +2, All received Critical Rate -8% -->
+		<!-- A 10% chance to recover 100 MP after an attack -->
+		<skills>
+			<skill id="50382" level="10"/>	<!-- +10 Helmet of Mana -->
+		</skills>
+	</option_data>
+	<option_data id="110011">
+		<!--With a 1% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50385" level="1"/>	<!-- Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110012">
+		<!--With a 1% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="1"/>	<!-- +1 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110013">
+		<!--With a 1% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="2"/>	<!-- +2 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110014">
+		<!--With a 1% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="3"/>	<!-- +3 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110015">
+		<!--With a 1% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="4"/>	<!-- +4 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110016">
+		<!-- Increases P./ M. Def. depending on Max HP. Skill Cooldown -1% -->
+		<!--With a 3% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="5"/>	<!-- +5 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110017">
+		<!-- Increases P./ M. Def. depending on Max HP. Skill Cooldown -2% -->
+		<!--With a 5% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="6"/>	<!-- +6 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110018">
+		<!-- Increases P./ M. Def. depending on Max HP. Skill Cooldown -3% -->
+		<!--With a 7% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="7"/>	<!-- +7 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110019">
+		<!-- Increases P./ M. Def. depending on Max HP. Skill Cooldown -5% -->
+		<!--With a 8% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="8"/>	<!-- +8 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110020">
+		<!-- Increases P./ M. Def. depending on Max HP. Skill Cooldown -7% -->
+		<!--With a 9% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="9"/>	<!-- +9 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110021">
+		<!-- Increases P./ M. Def. depending on Max HP. Skill Cooldown -10% -->
+		<!--With a 10% chance when hit, P./ M. Skill Evasion +70%, P./ M. Evasion +45 for 30 sec. (active for 5 hits) -->
+		<skills>
+			<skill id="50386" level="10"/>	<!-- +10 Boots of Evasion -->
+		</skills>
+	</option_data>
+	<option_data id="110022">
+		<!-- Attack with fists dealing additional damage equal to 3% of P. Atk. and stuns the enemy for 3 sec. with a 1% chance -->
+		<skills>
+			<skill id="50429" level="1"/>	<!-- Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110023">
+		<!-- Attack with fists dealing additional damage equal to 5% of P. Atk. and stuns the enemy for 3 sec. with a 1% chance -->
+		<skills>
+			<skill id="50430" level="1"/>	<!-- +1 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110024">
+		<!-- Attack with fists dealing additional damage equal to 7% of P. Atk. and stuns the enemy for 3 sec. with a 1% chance -->
+		<skills>
+			<skill id="50430" level="2"/>	<!-- +2 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110025">
+		<!-- Attack with fists dealing additional damage equal to 9% of P. Atk. and stuns the enemy for 3 sec. with a 1% chance -->
+		<skills>
+			<skill id="50430" level="3"/>	<!-- +3 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110026">
+		<!-- Attack with fists dealing additional damage equal to 12% of P. Atk. and stuns the enemy for 3 sec. with a 1% chance -->
+		<skills>
+			<skill id="50430" level="4"/>	<!-- +4 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110027">
+		<!-- Skill Critical Damage +50 -->
+		<!-- Attack with fists dealing additional damage equal to 15% of P. Atk. and stuns the enemy for 3 sec. with a 2% chance -->
+		<skills>
+			<skill id="50430" level="5"/>	<!-- +5 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110028">
+		<!-- Skill Critical Damage +100 -->
+		<!-- Attack with fists dealing additional damage equal to 20% of P. Atk. and stuns the enemy for 3 sec. with a 3% chance -->
+		<skills>
+			<skill id="50430" level="6"/>	<!-- +6 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110029">
+		<!-- Skill Critical Damage +200 -->
+		<!-- Attack with fists dealing additional damage equal to 25% of P. Atk. and stuns the enemy for 3 sec. with a 4% chance -->
+		<skills>
+			<skill id="50430" level="7"/>	<!-- +7 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110030">
+		<!-- Skill Critical Damage +300 -->
+		<!-- Attack with fists dealing additional damage equal to 30% of P. Atk. and stuns the enemy for 3 sec. with a 6% chance -->
+		<skills>
+			<skill id="50430" level="8"/>	<!-- +8 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110031">
+		<!-- Skill Critical Damage +400 -->
+		<!-- Attack with fists dealing additional damage equal to 40% of P. Atk. and stuns the enemy for 3 sec. with a 8% chance -->
+		<skills>
+			<skill id="50430" level="9"/>	<!-- +9 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110032">
+		<!-- Skill Critical Damage +500 -->
+		<!-- Attack with fists dealing additional damage equal to 50% of P. Atk. and stuns the enemy for 3 sec. with a 10% chance -->
+		<skills>
+			<skill id="50430" level="10"/>	<!-- +10 Stun Gauntlets -->
+		</skills>
+	</option_data>
+	<option_data id="110033">
+		<!-- Atk. Spd. +5, Casting Spd. +5, All Critical Rate +1%, Max MP + 20 -->
+		<!-- A 1% chance of killng the enemy instantly after an attack, Skill Power +1% for 3 sec. -->
+		<skills>
+			<skill id="50432" level="1"/>	<!-- A-grade: Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110034">
+		<!-- Atk. Spd. +10, Casting Spd. +10, All Critical Rate +1%, Max MP + 30 -->
+		<!-- A 1% chance of killng the enemy instantly after an attack, Skill Power +1% for 3 sec. -->
+		<skills>
+			<skill id="50433" level="1"/>	<!-- +1 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110035">
+		<!-- Atk. Spd. +15, Casting Spd. +15, All Critical Rate +1%, Max MP + 40 -->
+		<!-- A 1% chance of killng the enemy instantly after an attack, Skill Power +1% for 3 sec. -->
+		<skills>
+			<skill id="50433" level="2"/>	<!-- +2 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110036">
+		<!-- Atk. Spd. +25, Casting Spd. +25, All Critical Rate +1%, Max MP + 50 -->
+		<!-- A 1% chance of killng the enemy instantly after an attack, Skill Power +1% for 3 sec. -->
+		<skills>
+			<skill id="50433" level="3"/>	<!-- +3 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110037">
+		<!-- Atk. Spd. +30, Casting Spd. +30, All Critical Rate +2%, Max MP + 80 -->
+		<!-- A 1% chance of killng the enemy instantly after an attack, Skill Power +2% for 3 sec. -->
+		<skills>
+			<skill id="50433" level="4"/>	<!-- +4 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110038">
+		<!-- Atk. Spd. +45, Casting Spd. +45, All Critical Rate +4%, Max MP + 150 -->
+		<!-- A 2% chance of killng the enemy instantly after an attack, Skill Power +3% for 3 sec. -->
+		<!-- With a 1% chance, All Critical Damage +50 for 3 sec. after an attack -->
+		<skills>
+			<skill id="50433" level="5"/>	<!-- +5 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110039">
+		<!-- Atk. Spd. +60, Casting Spd. +60, All Critical Rate +5%, Max MP + 180 -->
+		<!-- A 3% chance of killng the enemy instantly after an attack, Skill Power +4% for 3 sec. -->
+		<!-- With a 1% chance, All Critical Damage +100 for 3 sec. after an attack -->
+		<skills>
+			<skill id="50433" level="6"/>	<!-- +6 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110040">
+		<!-- Atk. Spd. +100, Casting Spd. +100, All Critical Rate +6%, Max MP + 250 -->
+		<!-- A 5% chance of killng the enemy instantly after an attack, Skill Power +5% for 3 sec. -->
+		<!-- With a 1% chance, All Critical Damage +200 for 3 sec. after an attack -->
+		<skills>
+			<skill id="50433" level="7"/>	<!-- +7 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110041">
+		<!-- Atk. Spd. +120, Casting Spd. +120, All Critical Rate +8%, Max MP + 300 -->
+		<!-- A 7% chance of killng the enemy instantly after an attack, Skill Power +8% for 3 sec. -->
+		<!-- With a 2% chance, All Critical Damage +300 for 3 sec. after an attack -->
+		<skills>
+			<skill id="50433" level="8"/>	<!-- +8 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110042">
+		<!-- Atk. Spd. +160, Casting Spd. +160, All Critical Rate +9%, Max MP + 400 -->
+		<!-- A 9% chance of killng the enemy instantly after an attack, Skill Power +9% for 3 sec. -->
+		<!-- With a 3% chance, All Critical Damage +400 for 3 sec. after an attack -->
+		<skills>
+			<skill id="50433" level="9"/>	<!-- +9 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110043">
+		<!-- Atk. Spd. +250, Casting Spd. +250, All Critical Rate +10%, Max MP + 500 -->
+		<!-- A 10% chance of killng the enemy instantly after an attack, Skill Power +10% for 3 sec. -->
+		<!-- With a 5% chance, All Critical Damage +500 for 3 sec. after an attack -->
+		<skills>
+			<skill id="50433" level="10"/>	<!-- +10 Sigil of Inevitability -->
+		</skills>
+	</option_data>
+	<option_data id="110044">
+		<!-- All received Critical Rate -1%, Max HP +20 -->
+		<!-- With a 1% chance, Shield Defense Rate and P./ M. Def +5% for 5 sec. when hit. -->
+		<skills>
+			<skill id="50436" level="1"/>	<!-- A-grade: Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110045">
+		<!-- All received Critical Rate -2%, Max HP +30, Shield Defense +20 -->
+		<!-- With a 1% chance, Shield Defense Rate and P./ M. Def +5% for 5 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="1"/>	<!-- +1 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110046">
+		<!-- All received Critical Rate -3%, Max HP +40, Shield Defense +30 -->
+		<!-- With a 1% chance, Shield Defense Rate and P./ M. Def +5% for 5 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="2"/>	<!-- +2 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110047">
+		<!-- All received Critical Rate -4%, Max HP +60, Shield Defense +60 -->
+		<!-- With a 1% chance, Shield Defense Rate and P./ M. Def +10% for 5 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="3"/>	<!-- +3 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110048">
+		<!-- All received Critical Rate -5%, Max HP +80, Shield Defense +100 -->
+		<!-- With a 1% chance, Shield Defense Rate and P./ M. Def +15% for 5 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="4"/>	<!-- +4 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110049">
+		<!-- All received Critical Rate -8%, Max HP +200, Shield Defense +200 -->
+		<!-- With a 2% chance, Shield Defense Rate and P./ M. Def +20% for 5 sec. when hit. -->
+		<!-- Reflects 5% of received damage back to the enemy for 3 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="5"/>	<!-- +5 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110050">
+		<!-- All received Critical Rate -9%, Max HP +250, Shield Defense +400 -->
+		<!-- With a 3% chance, Shield Defense Rate and P./ M. Def +30% for 5 sec. when hit. -->
+		<!-- Reflects 15% of received damage back to the enemy for 3 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="6"/>	<!-- +6 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110051">
+		<!-- All received Critical Rate -10%, Max HP +300, Shield Defense +700 -->
+		<!-- With a 6% chance, Shield Defense Rate and P./ M. Def +40% for 5 sec. when hit. -->
+		<!-- Reflects 30% of received damage back to the enemy for 3 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="7"/>	<!-- +7 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110052">
+		<!-- All received Critical Rate -11%, Max HP +400, Shield Defense +1000 -->
+		<!-- With a 8% chance, Shield Defense Rate and P./ M. Def +60% for 5 sec. when hit. -->
+		<!-- Reflects 60% of received damage back to the enemy for 3 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="8"/>	<!-- +8 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110053">
+		<!-- All received Critical Rate -12%, Max HP +450, Shield Defense +1500 -->
+		<!-- With a 9% chance, Shield Defense Rate and P./ M. Def +80% for 5 sec. when hit. -->
+		<!-- Reflects 100% of received damage back to the enemy for 3 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="9"/>	<!-- +9 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110054">
+		<!-- All received Critical Rate -15%, Max HP +800, Shield Defense +2000 -->
+		<!-- With a 10% chance, Shield Defense Rate and P./ M. Def +100% for 5 sec. when hit. -->
+		<!-- Reflects 150% of received damage back to the enemy for 3 sec. when hit. -->
+		<skills>
+			<skill id="50437" level="10"/>	<!-- +10 Shield of Vengeance -->
+		</skills>
+	</option_data>
+	<option_data id="110055">
+		<!-- Shield Defense +100 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50476" level="1"/>	<!-- Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110056">
+		<!-- Shield Defense +150 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50477" level="1"/>	<!-- +1 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110057">
+		<!-- Shield Defense +200 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50477" level="2"/>	<!-- +2 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110058">
+		<!-- Shield Defense +250 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50477" level="3"/>	<!-- +3 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110059">
+		<!-- Shield Defense +300 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50477" level="4"/>	<!-- +4 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110060">
+		<!-- Shield Defense +400, Received AoE skill damage -5% -->
+		<!-- With a 4% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50477" level="5"/>	<!-- +5 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110061">
+		<!-- Shield Defense +500, Received AoE skill damage -6% -->
+		<!-- With a 6% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50477" level="6"/>	<!-- +6 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110062">
+		<!-- Shield Defense +600, Received AoE skill damage -7% -->
+		<!-- With a 8% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50477" level="7"/>	<!-- +7 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110063">
+		<!-- Shield Defense +700, Received AoE skill damage -8% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50477" level="8"/>	<!-- +8 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110064">
+		<!-- Shield Defense +800, Received AoE skill damage -9% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 4 sec. -->
+		<skills>
+			<skill id="50477" level="9"/>	<!-- +9 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110065">
+		<!-- Shield Defense +1000, Received AoE skill damage -10% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 5 sec. -->
+		<skills>
+			<skill id="50477" level="10"/>	<!-- +10 Breastplate of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110066">
+		<!-- With a 2% chance, limits received damage to 5000 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50479" level="1"/>	<!-- Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110067">
+		<!-- With a 2% chance, limits received damage to 4800 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="1"/>	<!-- +1 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110068">
+		<!-- With a 2% chance, limits received damage to 4600 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="2"/>	<!-- +2 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110069">
+		<!-- With a 2% chance, limits received damage to 4400 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="3"/>	<!-- +3 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110070">
+		<!-- With a 2% chance, limits received damage to 4200 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="4"/>	<!-- +4 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110071">
+		<!-- Received AoE skill damage -5% -->
+		<!-- With a 4% chance, limits received damage to 4000 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="5"/>	<!-- +5 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110072">
+		<!-- Received AoE skill damage -6% -->
+		<!-- With a 6% chance, limits received damage to 3600 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="6"/>	<!-- +6 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110073">
+		<!-- Received AoE skill damage -7% -->
+		<!-- With a 8% chance, limits received damage to 3200 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="7"/>	<!-- +7 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110074">
+		<!-- Received AoE skill damage -8% -->
+		<!-- With a 10% chance, limits received damage to 2800 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="8"/>	<!-- +8 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110075">
+		<!-- Received AoE skill damage -9% -->
+		<!-- With a 10% chance, limits received damage to 2400 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="9"/>	<!-- +9 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110076">
+		<!-- Received AoE skill damage -10% -->
+		<!-- With a 10% chance, limits received damage to 2000 for 5 sec. when hit. -->
+		<skills>
+			<skill id="50480" level="10"/>	<!-- +10 Gaiters of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110077">
+		<!-- P. Evasion +1, M. Evasion +1, All Skill Evasion +1% -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50484" level="1"/>	<!-- Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110078">
+		<!-- P. Evasion +2, M. Evasion +2, All Skill Evasion +2% -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50485" level="1"/>	<!-- +1 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110079">
+		<!-- P. Evasion +3, M. Evasion +3, All Skill Evasion +3% -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50485" level="2"/>	<!-- +2 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110080">
+		<!-- P. Evasion +4, M. Evasion +4, All Skill Evasion +4% -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50485" level="3"/>	<!-- +3 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110081">
+		<!-- P. Evasion +5, M. Evasion +5, All Skill Evasion +5% -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50485" level="4"/>	<!-- +4 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110082">
+		<!-- P. Evasion +6, M. Evasion +6, All Skill Evasion +6%, Received AoE skill damage -5% -->
+		<!-- With a 4% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50485" level="5"/>	<!-- +5 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110083">
+		<!-- P. Evasion +7, M. Evasion +7, All Skill Evasion +7%, Received AoE skill damage -6% -->
+		<!-- With a 6% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50485" level="6"/>	<!-- +6 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110084">
+		<!-- P. Evasion +9, M. Evasion +9, All Skill Evasion +9%, Received AoE skill damage -7% -->
+		<!-- With a 8% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50485" level="7"/>	<!-- +7 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110085">
+		<!-- P. Evasion +11, M. Evasion +11, All Skill Evasion +11%, Received AoE skill damage -8% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50485" level="8"/>	<!-- +8 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110086">
+		<!-- P. Evasion +13, M. Evasion +13, All Skill Evasion +13%, Received AoE skill damage -9% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 4 sec. -->
+		<skills>
+			<skill id="50485" level="9"/>	<!-- +9 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110087">
+		<!-- P. Evasion +15, M. Evasion +15, All Skill Evasion +15%, Received AoE skill damage -10% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 5 sec. -->
+		<skills>
+			<skill id="50485" level="10"/>	<!-- +10 Leather Armor of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110088">
+		<!-- With a 2% chance for 5 sec., when hit: All received Critical Rate -10%, All received Critical Damage -10% -->
+		<skills>
+			<skill id="50487" level="1"/>	<!-- Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110089">
+		<!-- With a 2% chance for 5 sec., when hit: All received Critical Rate -12%, All received Critical Damage -12% -->
+		<skills>
+			<skill id="50488" level="1"/>	<!-- +1 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110090">
+		<!-- With a 2% chance for 5 sec., when hit: All received Critical Rate -14%, All received Critical Damage -14% -->
+		<skills>
+			<skill id="50488" level="2"/>	<!-- +2 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110091">
+		<!-- With a 2% chance for 5 sec., when hit: All received Critical Rate -16%, All received Critical Damage -16% -->
+		<skills>
+			<skill id="50488" level="3"/>	<!-- +3 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110092">
+		<!-- With a 2% chance for 5 sec., when hit: All received Critical Rate -18%, All received Critical Damage -18% -->
+		<skills>
+			<skill id="50488" level="4"/>	<!-- +4 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110093">
+		<!-- Received AoE skill damage -5% -->
+		<!-- With a 4% chance for 5 sec., when hit: All received Critical Rate -20%, All received Critical Damage -20% -->
+		<skills>
+			<skill id="50488" level="5"/>	<!-- +5 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110094">
+		<!-- Received AoE skill damage -6% -->
+		<!-- With a 6% chance for 5 sec., when hit: All received Critical Rate -25%, All received Critical Damage -25% -->
+		<skills>
+			<skill id="50488" level="6"/>	<!-- +6 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110095">
+		<!-- Received AoE skill damage -7% -->
+		<!-- With a 8% chance for 5 sec., when hit: All received Critical Rate -30%, All received Critical Damage -30% -->
+		<skills>
+			<skill id="50488" level="7"/>	<!-- +7 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110096">
+		<!-- Received AoE skill damage -8% -->
+		<!-- With a 10% chance for 5 sec., when hit: All received Critical Rate -35%, All received Critical Damage -35% -->
+		<skills>
+			<skill id="50488" level="8"/>	<!-- +8 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110097">
+		<!-- Received AoE skill damage -9% -->
+		<!-- With a 10% chance for 5 sec., when hit: All received Critical Rate -40%, All received Critical Damage -40% -->
+		<skills>
+			<skill id="50488" level="9"/>	<!-- +9 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110098">
+		<!-- Received AoE skill damage -10% -->
+		<!-- With a 10% chance for 5 sec., when hit: All received Critical Rate -45%, All received Critical Damage -45% -->
+		<skills>
+			<skill id="50488" level="10"/>	<!-- +10 Leather Leggings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110099">
+		<!-- Max MP +500 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50491" level="1"/>	<!-- Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110100">
+		<!-- Max MP +600 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50492" level="1"/>	<!-- +1 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110101">
+		<!-- Max MP +700 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50492" level="2"/>	<!-- +2 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110102">
+		<!-- Max MP +800 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50492" level="3"/>	<!-- +3 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110103">
+		<!-- Max MP +900 -->
+		<!-- With a 2% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50492" level="4"/>	<!-- +4 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110104">
+		<!-- Max MP +1000, Received AoE skill damage -5% -->
+		<!-- With a 4% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50492" level="5"/>	<!-- +5 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110105">
+		<!-- Max MP +1400, Received AoE skill damage -6% -->
+		<!-- With a 6% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50492" level="6"/>	<!-- +6 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110106">
+		<!-- Max Mp +1800, Received AoE skill damage -7% -->
+		<!-- With a 8% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50492" level="7"/>	<!-- +7 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110107">
+		<!-- Max MP +2200, Received AoE skill damage -8% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 3 sec. -->
+		<skills>
+			<skill id="50492" level="8"/>	<!-- +8 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110108">
+		<!-- Max MP +2600, Received AoE skill damage -9% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 4 sec. -->
+		<skills>
+			<skill id="50492" level="9"/>	<!-- +9 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110109">
+		<!-- Max MP +3000, Received AoE skill damage -10% -->
+		<!-- With a 10% chance when hit, paralyzes the enemy for 5 sec. -->
+		<skills>
+			<skill id="50492" level="10"/>	<!-- +10 Tunic of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110110">
+		<!-- For 5 sec. when hit: Received damage -40%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50494" level="1"/>	<!-- Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110111">
+		<!-- For 5 sec. when hit: Received damage -40%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="1"/>	<!-- +1 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110112">
+		<!-- For 5 sec. when hit: Received damage -40%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="2"/>	<!-- +2 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110113">
+		<!-- For 5 sec. when hit: Received damage -40%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="3"/>	<!-- +3 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110114">
+		<!-- For 5 sec. when hit: Received damage -40%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="4"/>	<!-- +4 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110115">
+		<!-- Received AoE skill damage -5% -->
+		<!-- For 10 sec. when hit: Received damage -40%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="5"/>	<!-- +5 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110116">
+		<!-- Received AoE skill damage -6% -->
+		<!-- For 10 sec. when hit: Received damage -42%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="6"/>	<!-- +6 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110117">
+		<!-- Received AoE skill damage -7% -->
+		<!-- For 10 sec. when hit: Received damage -44%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="7"/>	<!-- +7 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110118">
+		<!-- Received AoE skill damage -8% -->
+		<!-- For 10 sec. when hit: Received damage -46%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="8"/>	<!-- +8 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110119">
+		<!-- Received AoE skill damage -9% -->
+		<!-- For 10 sec. when hit: Received damage -48%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="9"/>	<!-- +9 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110120">
+		<!-- Received AoE skill damage -10% -->
+		<!-- For 10 sec. when hit: Received damage -50%, The rest of the damage is blocked by consumed MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Sield. (Activated only if Max HP < 60%) -->
+		<skills>
+			<skill id="50495" level="10"/>	<!-- +10 Stockings of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110121">
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -5% -->
+		<skills>
+			<skill id="50512" level="1"/>	<!-- Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110122">
+		<!-- P. Def./ M. Def. +3% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -7% -->
+		<skills>
+			<skill id="50513" level="1"/>	<!-- +1 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110123">
+		<!-- P. Def./ M. Def. +4% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -9% -->
+		<skills>
+			<skill id="50513" level="2"/>	<!-- +2 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110124">
+		<!-- P. Def./ M. Def. +5% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -11% -->
+		<skills>
+			<skill id="50513" level="3"/>	<!-- +3 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110125">
+		<!-- P. Def./ M. Def. +6% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -13% -->
+		<skills>
+			<skill id="50513" level="4"/>	<!-- +4 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110126">
+		<!-- P. Def./ M. Def. +8% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -15% -->
+		<skills>
+			<skill id="50513" level="5"/>	<!-- +5 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110127">
+		<!-- P. Def./ M. Def. +10% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -18% -->
+		<skills>
+			<skill id="50513" level="6"/>	<!-- +6 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110128">
+		<!-- P. Def./ M. Def. +12% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -21% -->
+		<skills>
+			<skill id="50513" level="7"/>	<!-- +7 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110129">
+		<!-- P. Def./ M. Def. +14% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -24% -->
+		<skills>
+			<skill id="50513" level="8"/>	<!-- +8 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110130">
+		<!-- P. Def./ M. Def. +17% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -27% -->
+		<skills>
+			<skill id="50513" level="9"/>	<!-- +9 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110131">
+		<!-- P. Def./ M. Def. +20% -->
+		<!-- With a 3% chance for 5 sec. after an attack: Enemy's P. Atk./ M. Atk. -30% -->
+		<skills>
+			<skill id="50513" level="10"/>	<!-- +10 Sigil of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110132">
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +5%, instantly recovers HP bonus. HP +100 per sec. -->
+		<skills>
+			<skill id="50508" level="1"/>	<!-- Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110133">
+		<!-- P. Def./ M. Def./ Shield Defense +3% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +8%, instantly recovers HP bonus. HP +200 per sec. -->
+		<skills>
+			<skill id="50509" level="1"/>	<!-- +1 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110134">
+		<!-- P. Def./ M. Def./ Shield Defense +4% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +11%, instantly recovers HP bonus. HP +300 per sec. -->
+		<skills>
+			<skill id="50509" level="2"/>	<!-- +2 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110135">
+		<!-- P. Def./ M. Def./ Shield Defense +5% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +14%, instantly recovers HP bonus. HP +400 per sec. -->
+		<skills>
+			<skill id="50509" level="3"/>	<!-- +3 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110136">
+		<!-- P. Def./ M. Def./ Shield Defense +6% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +17%, instantly recovers HP bonus. HP +500 per sec. -->
+		<skills>
+			<skill id="50509" level="4"/>	<!-- +4 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110137">
+		<!-- P. Def./ M. Def./ Shield Defense +8% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +20%, instantly recovers HP bonus. HP +650 per sec. -->
+		<skills>
+			<skill id="50509" level="5"/>	<!-- +5 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110138">
+		<!-- P. Def./ M. Def./ Shield Defense +10% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +25%, instantly recovers HP bonus. HP +800 per sec. -->
+		<skills>
+			<skill id="50509" level="6"/>	<!-- +6 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110139">
+		<!-- P. Def./ M. Def./ Shield Defense +12% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +30%, instantly recovers HP bonus. HP +950 per sec. -->
+		<skills>
+			<skill id="50509" level="7"/>	<!-- +7 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110140">
+		<!-- P. Def./ M. Def./ Shield Defense +14% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +35%, instantly recovers HP bonus. HP +1100 per sec. -->
+		<skills>
+			<skill id="50509" level="8"/>	<!-- +8 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110141">
+		<!-- P. Def./ M. Def./ Shield Defense +17% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +40%, instantly recovers HP bonus. HP +1250 per sec. -->
+		<skills>
+			<skill id="50509" level="9"/>	<!-- +9 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110142">
+		<!-- P. Def./ M. Def./ Shield Defense +20% -->
+		<!-- With a 3% chance for 10 sec., when hit: Max HP +50%, instantly recovers HP bonus. HP +1400 per sec. -->
+		<skills>
+			<skill id="50509" level="10"/>	<!-- +10 Shield of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110143">
+		<!-- With a 1% chance for 5 sec., when damage taken: All received Critical Rate -3% -->
+		<skills>
+			<skill id="50542" level="1"/>	<!-- Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110144">
+		<!-- Received Skill Critical Damage -1% -->
+		<!-- With a 1% chance for 5 sec., when damage taken: All received Critical Rate -3% -->
+		<skills>
+			<skill id="50543" level="1"/>	<!-- +1 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110145">
+		<!-- Received Skill Critical Damage -2% -->
+		<!-- With a 1% chance for 5 sec., when damage taken: All received Critical Rate -3% -->
+		<skills>
+			<skill id="50543" level="2"/>	<!-- +2 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110146">
+		<!-- Received Skill Critical Damage -3% -->
+		<!-- With a 1% chance for 5 sec., when damage taken: All received Critical Rate -3% -->
+		<skills>
+			<skill id="50543" level="3"/>	<!-- +3 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110147">
+		<!-- Received Skill Critical Damage -4% -->
+		<!-- With a 1% chance for 5 sec., when damage taken: All received Critical Rate -3% -->
+		<skills>
+			<skill id="50543" level="4"/>	<!-- +4 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110148">
+		<!-- CON/ MEN +1, Received Skill Critical Damage -5% -->
+		<!-- With a 3% chance for 5 sec., when damage taken: All received Critical Rate -5% -->
+		<skills>
+			<skill id="50543" level="5"/>	<!-- +5 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110149">
+		<!-- CON/ MEN/ DEX/ WIT +1, Received Skill Critical Damage -6% -->
+		<!-- With a 5% chance for 5 sec., when damage taken: All received Critical Rate -6% -->
+		<skills>
+			<skill id="50543" level="6"/>	<!-- +6 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110150">
+		<!-- CON/ MEN/ DEX/ WIT/ STR/ INT +1, Received Skill Critical Damage -7% -->
+		<!-- With a 7% chance for 5 sec., when damage taken: All received Critical Rate -10% -->
+		<skills>
+			<skill id="50543" level="7"/>	<!-- +7 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110151">
+		<!-- CON/ MEN +2, DEX/ WIT/ STR/ INT +1, Received Skill Critical Damage -8% -->
+		<!-- With a 8% chance for 5 sec., when damage taken: All received Critical Rate -13% -->
+		<skills>
+			<skill id="50543" level="8"/>	<!-- +8 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110152">
+		<!-- CON/ MEN/ DEX/ WIT +2, STR/ INT +1, Received Skill Critical Damage -9% -->
+		<!-- With a 9% chance for 5 sec., when damage taken: All received Critical Rate -16% -->
+		<skills>
+			<skill id="50543" level="9"/>	<!-- +9 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110153">
+		<!-- CON/ MEN/ DEX/ WIT +3, STR/ INT +2, Received Skill Critical Damage -10% -->
+		<!-- With a 10% chance for 5 sec., when damage taken: All received Critical Rate -20% -->
+		<skills>
+			<skill id="50543" level="10"/>	<!-- +10 Helmet of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110154">
+		<!-- With a 1% chance for 5 sec., when damage taken: Enemy's Skill Power -3% -->
+		<skills>
+			<skill id="50546" level="1"/>	<!-- Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110155">
+		<!-- With a 1% chance for 5 sec., when damage taken: Enemy's Skill Power -3% -->
+		<skills>
+			<skill id="50547" level="1"/>	<!-- +1 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110156">
+		<!-- With a 1% chance for 5 sec., when damage taken: Enemy's Skill Power -3% -->
+		<skills>
+			<skill id="50547" level="2"/>	<!-- +2 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110157">
+		<!-- With a 1% chance for 5 sec., when damage taken: Enemy's Skill Power -3% -->
+		<skills>
+			<skill id="50547" level="3"/>	<!-- +3 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110158">
+		<!-- With a 1% chance for 5 sec., when damage taken: Enemy's Skill Power -3% -->
+		<skills>
+			<skill id="50547" level="4"/>	<!-- +4 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110159">
+		<!-- P. Def./ M. Def. +2% -->
+		<!-- With a 2% chance for 5 sec., when damage taken: Enemy's Skill Power -5% -->
+		<skills>
+			<skill id="50547" level="5"/>	<!-- +5 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110160">
+		<!-- P. Def./ M. Def. +3% -->
+		<!-- With a 3% chance for 5 sec., when damage taken: Enemy's Skill Power -6% -->
+		<skills>
+			<skill id="50547" level="6"/>	<!-- +6 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110161">
+		<!-- P. Def./ M. Def. +5% -->
+		<!-- With a 4% chance for 5 sec., when damage taken: Enemy's Skill Power -7% -->
+		<skills>
+			<skill id="50547" level="7"/>	<!-- +7 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110162">
+		<!-- P. Def./ M. Def. +6% -->
+		<!-- With a 6% chance for 5 sec., when damage taken: Enemy's Skill Power -8% -->
+		<skills>
+			<skill id="50547" level="8"/>	<!-- +8 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110163">
+		<!-- P. Def./ M. Def. +8% -->
+		<!-- With a 8% chance for 5 sec., when damage taken: Enemy's Skill Power -9% -->
+		<skills>
+			<skill id="50547" level="9"/>	<!-- +9 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110164">
+		<!-- P. Def./ M. Def. +10% -->
+		<!-- With a 10% chance for 5 sec., when damage taken: Enemy's Skill Power -10% -->
+		<skills>
+			<skill id="50547" level="10"/>	<!-- +10 Gauntlets of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110165">
+		<!-- P. Def./ M. Def. +10 -->
+		<!-- With a 1% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50546" level="1"/>	<!-- Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110166">
+		<!-- P. Def./ M. Def. +30 -->
+		<!-- With a 1% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="1"/>	<!-- +1 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110167">
+		<!-- P. Def./ M. Def. +50 -->
+		<!-- With a 1% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="2"/>	<!-- +2 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110168">
+		<!-- P. Def./ M. Def. +70 -->
+		<!-- With a 1% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="3"/>	<!-- +3 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110169">
+		<!-- P. Def./ M. Def. +100 -->
+		<!-- With a 1% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="4"/>	<!-- +4 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110170">
+		<!-- P. Def./ M. Def. +150, Resistance to All Weapons/ M. Damage Resistance +2% -->
+		<!-- With a 2% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="5"/>	<!-- +5 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110171">
+		<!-- P. Def./ M. Def. +200, Resistance to All Weapons/ M. Damage Resistance +3% -->
+		<!-- With a 3% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="6"/>	<!-- +6 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110172">
+		<!-- P. Def./ M. Def. +250, Resistance to All Weapons/ M. Damage Resistance +4% -->
+		<!-- With a 4% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="7"/>	<!-- +7 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110173">
+		<!-- P. Def./ M. Def. +320, Resistance to All Weapons/ M. Damage Resistance +6% -->
+		<!-- With a 6% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="8"/>	<!-- +8 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110174">
+		<!-- P. Def./ M. Def. +400, Resistance to All Weapons/ M. Damage Resistance +8% -->
+		<!-- With a 8% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="9"/>	<!-- +9 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110175">
+		<!-- P. Def./ M. Def. +500, Resistance to All Weapons/ M. Damage Resistance +10% -->
+		<!-- With a 10% chance removes debuffs and anomalies when damage taken. For 5 sec., Debuff/ Anomaly Resistance +90% -->
+		<skills>
+			<skill id="50547" level="10"/>	<!-- +10 Boots of Protection -->
+		</skills>
+	</option_data>
+	<option_data id="110176">
+		<!-- With a 1% chance, inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50306" level="1"/>	<!-- Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110177">
+		<!-- With a 1% chance, inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="1"/>	<!-- +1 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110178">
+		<!-- With a 1% chance, inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="2"/>	<!-- +2 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110179">
+		<!-- With a 1% chance, inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="3"/>	<!-- +3 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110180">
+		<!-- With a 1% chance, inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="4"/>	<!-- +4 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110181">
+		<!-- P./ M. Skill Power +2% -->
+		<!-- With a 2% chance, deals magic damage with 50 power, decreasing the target's MP. Inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="5"/>	<!-- +5 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110182">
+		<!-- P./ M. Skill Power +3% -->
+		<!-- With a 3% chance, deals magic damage with 70 power, decreasing the target's MP. Inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="6"/>	<!-- +6 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110183">
+		<!-- P./ M. Skill Power +5% -->
+		<!-- With a 4% chance, deals magic damage with 90 power, decreasing the target's MP. Inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="7"/>	<!-- +7 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110184">
+		<!-- P./ M. Skill Power +7% -->
+		<!-- With a 6% chance, deals magic damage with 110 power, decreasing the target's MP. Inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="8"/>	<!-- +8 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110185">
+		<!-- P./ M. Skill Power +10% -->
+		<!-- With a 8% chance, deals magic damage with 130 power, decreasing the target's MP. Inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="9"/>	<!-- +9 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110186">
+		<!-- P./ M. Skill Power +15% -->
+		<!-- With a 10% chance, deals magic damage with 165 power, decreasing the target's MP. Inflicts Silence on the target making them unable to use skills for 4 sec. -->
+		<skills>
+			<skill id="50307" level="10"/>	<!-- +10 Gloves of Silence -->
+		</skills>
+	</option_data>
+	<option_data id="110187">
+		<!-- With a 3% chance when hit, reflects 5% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 1% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50331" level="1"/>	<!-- Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110188">
+		<!-- With a 3% chance when hit, reflects 5% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 1% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="1"/>	<!-- +1 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110189">
+		<!-- With a 3% chance when hit, reflects 5% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 1% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="2"/>	<!-- +2 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110190">
+		<!-- With a 3% chance when hit, reflects 5% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 1% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="3"/>	<!-- +3 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110191">
+		<!-- With a 3% chance when hit, reflects 5% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 1% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="4"/>	<!-- +4 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110192">
+		<!-- Max HP/ MP + 100, Received P. Critical Damage/ P. Skill Critical Damage -1% -->
+		<!-- With a 5% chance when hit, reflects 10% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 3% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="5"/>	<!-- +5 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110193">
+		<!-- Max HP/ MP + 120, Received P. Critical Damage/ P. Skill Critical Damage -2% -->
+		<!-- With a 6% chance when hit, reflects 12% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 5% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="6"/>	<!-- +6 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110194">
+		<!-- Max HP/ MP + 150, Received P. Critical Damage/ P. Skill Critical Damage -4% -->
+		<!-- With a 7% chance when hit, reflects 15% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 7% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="7"/>	<!-- +7 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110195">
+		<!-- Max HP/ MP + 200, Received P. Critical Damage/ P. Skill Critical Damage -8% -->
+		<!-- With a 8% chance when hit, reflects 16% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 8% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="8"/>	<!-- +8 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110196">
+		<!-- Max HP/ MP + 250, Received P. Critical Damage/ P. Skill Critical Damage -9% -->
+		<!-- With a 9% chance when hit, reflects 17% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 9% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="9"/>	<!-- +9 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110197">
+		<!-- Max HP/ MP + 300, Received P. Critical Damage/ P. Skill Critical Damage -10% -->
+		<!-- With a 10% chance when hit, reflects 20% of the received damage back to the enemy for 30 sec. -->
+		<!-- With a 10% chance when hit, freezes and paralyzes the enemy for 2 sec. -->
+		<skills>
+			<skill id="50332" level="10"/>	<!-- +10 Ice Crystal Breastplate -->
+		</skills>
+	</option_data>
+	<option_data id="110198">
+		<!-- With a 1% chance after an attack, the enemy's Speed -10%, Atk. Spd./ Casting Spd. -3%, P./ M. Def -2% for 10 sec. -->
+		<skills>
+			<skill id="50334" level="1"/>	<!-- Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110199">
+		<!-- With a 1% chance after an attack, the enemy's Speed -10%, Atk. Spd./ Casting Spd. -3%, P./ M. Def -2% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="1"/>	<!-- +1 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110200">
+		<!-- With a 1% chance after an attack, the enemy's Speed -10%, Atk. Spd./ Casting Spd. -3%, P./ M. Def -2% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="2"/>	<!-- +2 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110201">
+		<!-- With a 1% chance after an attack, the enemy's Speed -10%, Atk. Spd./ Casting Spd. -3%, P./ M. Def -2% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="3"/>	<!-- +3 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110202">
+		<!-- With a 1% chance after an attack, the enemy's Speed -10%, Atk. Spd./ Casting Spd. -3%, P./ M. Def -2% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="4"/>	<!-- +4 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110203">
+		<!-- Max HP/ MP + 100, Received M. Skill Critical Damage -1% -->
+		<!-- With a 3% chance after an attack, the enemy's Speed -15%, Atk. Spd./ Casting Spd. -7%, P./ M. Def -5% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="5"/>	<!-- +5 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110204">
+		<!-- Max HP/ MP + 120, Received M. Skill Critical Damage -2% -->
+		<!-- With a 5% chance after an attack, the enemy's Speed -17%, Atk. Spd./ Casting Spd. -9%, P./ M. Def -7% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="6"/>	<!-- +6 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110205">
+		<!-- Max HP/ MP + 150, Received M. Skill Critical Damage -4% -->
+		<!-- With a 7% chance after an attack, the enemy's Speed -20%, Atk. Spd./ Casting Spd. -12%, P./ M. Def -10% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="7"/>	<!-- +7 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110206">
+		<!-- Max HP/ MP + 200, Received M. Skill Critical Damage -8% -->
+		<!-- With a 8% chance after an attack, the enemy's Speed -22%, Atk. Spd./ Casting Spd. -13%, P./ M. Def -12% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="8"/>	<!-- +8 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110207">
+		<!-- Max HP/ MP + 250, Received M. Skill Critical Damage -9% -->
+		<!-- With a 9% chance after an attack, the enemy's Speed -25%, Atk. Spd./ Casting Spd. -14%, P./ M. Def -14% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="9"/>	<!-- +9 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110208">
+		<!-- Max HP/ MP + 300, Received M. Skill Critical Damage -10% -->
+		<!-- With a 10% chance after an attack, the enemy's Speed -30%, Atk. Spd./ Casting Spd. -15%, P./ M. Def -15% for 10 sec. -->
+		<skills>
+			<skill id="50335" level="10"/>	<!-- +10 Ice Crystal Gaiters -->
+		</skills>
+	</option_data>
+	<option_data id="110209">
+		<!-- With a 1% chance, P./ M. Def. +100 for 10 sec., when hit. -->
+		<!-- With a 1% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50344" level="1"/>	<!-- Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110210">
+		<!-- With a 1% chance, P./ M. Def. +100 for 10 sec., when hit. -->
+		<!-- With a 1% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="1"/>	<!-- +1 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110211">
+		<!-- With a 1% chance, P./ M. Def. +100 for 10 sec., when hit. -->
+		<!-- With a 1% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="2"/>	<!-- +2 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110212">
+		<!-- With a 1% chance, P./ M. Def. +100 for 10 sec., when hit. -->
+		<!-- With a 1% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="3"/>	<!-- +3 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110213">
+		<!-- With a 1% chance, P./ M. Def. +100 for 10 sec., when hit. -->
+		<!-- With a 1% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="4"/>	<!-- +4 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110214">
+		<!-- MP Consumption -2% -->
+		<!-- With a 3% chance, P./ M. Def. +350 for 10 sec., when hit. -->
+		<!-- With a 3% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="5"/>	<!-- +5 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110215">
+		<!-- MP Consumption -4% -->
+		<!-- With a 5% chance, P./ M. Def. +600 for 10 sec., when hit. -->
+		<!-- With a 5% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="6"/>	<!-- +6 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110216">
+		<!-- MP Consumption -6% -->
+		<!-- With a 7% chance, P./ M. Def. +850 for 10 sec., when hit. -->
+		<!-- With a 7% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="7"/>	<!-- +7 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110217">
+		<!-- MP Consumption -7% -->
+		<!-- With a 8% chance, P./ M. Def. +1050 for 10 sec., when hit. -->
+		<!-- With a 8% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="8"/>	<!-- +8 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110218">
+		<!-- MP Consumption -8% -->
+		<!-- With a 9% chance, P./ M. Def. +1250 for 10 sec., when hit. -->
+		<!-- With a 9% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="9"/>	<!-- +9 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110219">
+		<!-- MP Consumption -10% -->
+		<!-- With a 10% chance, P./ M. Def. +1500 for 10 sec., when hit. -->
+		<!-- With a 10% chance, strikes the enemy with electricity and paralyzes them for 2 sec., when hit -->
+		<skills>
+			<skill id="50345" level="10"/>	<!-- +10 Leather Armor of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110220">
+		<!-- With a 1% chance after an attack, the target's all received Critical Damage +1%, all received Critical Rate +3% for 10 sec. -->
+		<skills>
+			<skill id="50347" level="1"/>	<!-- Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110221">
+		<!-- With a 1% chance after an attack, the target's all received Critical Damage +1%, all received Critical Rate +3% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="1"/>	<!-- +1 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110222">
+		<!-- With a 1% chance after an attack, the target's all received Critical Damage +1%, all received Critical Rate +3% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="2"/>	<!-- +2 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110223">
+		<!-- With a 1% chance after an attack, the target's all received Critical Damage +1%, all received Critical Rate +3% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="3"/>	<!-- +3 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110224">
+		<!-- With a 1% chance after an attack, the target's all received Critical Damage +1%, all received Critical Rate +3% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="4"/>	<!-- +4 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110225">
+		<!-- MP Consumption -2% -->
+		<!-- With a 3% chance after an attack, the target's all received Critical Damage +3%, all received Critical Rate +6% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="5"/>	<!-- +5 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110226">
+		<!-- MP Consumption -3% -->
+		<!-- With a 5% chance after an attack, the target's all received Critical Damage +5%, all received Critical Rate +9% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="6"/>	<!-- +6 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110227">
+		<!-- MP Consumption -4% -->
+		<!-- With a 7% chance after an attack, the target's all received Critical Damage +7%, all received Critical Rate +12% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="7"/>	<!-- +7 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110228">
+		<!-- MP Consumption -6% -->
+		<!-- With a 8% chance after an attack, the target's all received Critical Damage +8%, all received Critical Rate +13% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="8"/>	<!-- +8 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110229">
+		<!-- MP Consumption -8% -->
+		<!-- With a 9% chance after an attack, the target's all received Critical Damage +9%, all received Critical Rate +14% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="9"/>	<!-- +9 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110230">
+		<!-- MP Consumption -10% -->
+		<!-- With a 10% chance after an attack, the target's all received Critical Damage +10%, all received Critical Rate +15% for 10 sec. -->
+		<skills>
+			<skill id="50348" level="10"/>	<!-- +10 Leather Leggings of Lightning -->
+		</skills>
+	</option_data>
+	<option_data id="110231">
+		<!-- With a 1% chance, creates a shield that absorbs 1500 damage for 10 sec., when hit. -->
+		<!-- With a 1% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50355" level="1"/>	<!-- Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110232">
+		<!-- With a 1% chance, creates a shield that absorbs 1500 damage for 10 sec., when hit. -->
+		<!-- With a 1% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="1"/>	<!-- +1 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110233">
+		<!-- With a 1% chance, creates a shield that absorbs 1500 damage for 10 sec., when hit. -->
+		<!-- With a 1% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="2"/>	<!-- +2 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110234">
+		<!-- With a 1% chance, creates a shield that absorbs 1500 damage for 10 sec., when hit. -->
+		<!-- With a 1% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="3"/>	<!-- +3 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110235">
+		<!-- With a 1% chance, creates a shield that absorbs 1500 damage for 10 sec., when hit. -->
+		<!-- With a 1% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="4"/>	<!-- +4 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110236">
+		<!-- Max HP +60, M. Skill MP Consumption -1% -->
+		<!-- With a 3% chance, creates a shield that absorbs 2000 damage for 10 sec., when hit. -->
+		<!-- With a 3% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="5"/>	<!-- +5 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110237">
+		<!-- Max HP +120, M. Skill MP Consumption -2% -->
+		<!-- With a 5% chance, creates a shield that absorbs 2500 damage for 10 sec., when hit. -->
+		<!-- With a 5% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="6"/>	<!-- +6 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110238">
+		<!-- Max HP +180, M. Skill MP Consumption -3% -->
+		<!-- With a 7% chance, creates a shield that absorbs 3000 damage for 10 sec., when hit. -->
+		<!-- With a 7% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="7"/>	<!-- +7 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110239">
+		<!-- Max HP +240, M. Skill MP Consumption -4% -->
+		<!-- With a 8% chance, creates a shield that absorbs 3500 damage for 10 sec., when hit. -->
+		<!-- With a 8% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="8"/>	<!-- +8 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110240">
+		<!-- Max HP +300, M. Skill MP Consumption -5% -->
+		<!-- With a 9% chance, creates a shield that absorbs 4000 damage for 10 sec., when hit. -->
+		<!-- With a 9% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="9"/>	<!-- +9 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110241">
+		<!-- Max HP +400, M. Skill MP Consumption -6% -->
+		<!-- With a 10% chance, creates a shield that absorbs 4500 damage for 10 sec., when hit. -->
+		<!-- With a 10% chance, burns the enemy for 2 sec., when hit, making them unable to attack. -->
+		<skills>
+			<skill id="50356" level="10"/>	<!-- +10 Flaming Tunic -->
+		</skills>
+	</option_data>
+	<option_data id="110242">
+		<!-- With a 1% chance after an attack, the enemy's P./ M. Atk. -10%, P./ M. Accuracy -5 for 10 sec. -->
+		<skills>
+			<skill id="50358" level="1"/>	<!-- Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110243">
+		<!-- With a 1% chance after an attack, the enemy's P./ M. Atk. -10%, P./ M. Accuracy -5 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="1"/>	<!-- +1 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110244">
+		<!-- With a 1% chance after an attack, the enemy's P./ M. Atk. -10%, P./ M. Accuracy -5 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="2"/>	<!-- +2 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110245">
+		<!-- With a 1% chance after an attack, the enemy's P./ M. Atk. -10%, P./ M. Accuracy -5 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="3"/>	<!-- +3 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110246">
+		<!-- With a 1% chance after an attack, the enemy's P./ M. Atk. -10%, P./ M. Accuracy -5 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="4"/>	<!-- +4 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110247">
+		<!-- Max HP +30, M. Skill Cooldown -1% -->
+		<!-- With a 3% chance after an attack, the enemy's P./ M. Atk. -12%, P./ M. Accuracy -6 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="5"/>	<!-- +5 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110248">
+		<!-- Max HP +60, M. Skill Cooldown -2% -->
+		<!-- With a 5% chance after an attack, the enemy's P./ M. Atk. -14%, P./ M. Accuracy -7 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="6"/>	<!-- +6 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110249">
+		<!-- Max HP +90, M. Skill Cooldown -3% -->
+		<!-- With a 7% chance after an attack, the enemy's P./ M. Atk. -16%, P./ M. Accuracy -8 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="7"/>	<!-- +7 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110250">
+		<!-- Max HP +120, M. Skill Cooldown -4% -->
+		<!-- With a 8% chance after an attack, the enemy's P./ M. Atk. -18%, P./ M. Accuracy -9 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="8"/>	<!-- +8 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110251">
+		<!-- Max HP +150, M. Skill Cooldown -5% -->
+		<!-- With a 9% chance after an attack, the enemy's P./ M. Atk. -20%, P./ M. Accuracy -10 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="9"/>	<!-- +9 Flaming Stockings -->
+		</skills>
+	</option_data>
+	<option_data id="110252">
+		<!-- Max HP +200, M. Skill Cooldown -6% -->
+		<!-- With a 10% chance after an attack, the enemy's P./ M. Atk. -22%, P./ M. Accuracy -11 for 10 sec. -->
+		<skills>
+			<skill id="50359" level="10"/>	<!-- +10 Flaming Stockings -->
+		</skills>
+	</option_data>
+</list>

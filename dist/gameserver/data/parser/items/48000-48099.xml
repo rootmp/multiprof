@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="48016" name="White Knight Suit" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.white_knight_suit"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="48017" name="High Priest Costume">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm2018_healer_i01"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="400"/>
+		</for>
+	</armor>
+	<armor id="48018" name="Chevalier Garment">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.chevalier_chest_change"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="48019" name="Kat the Cat Costume">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.cat_the_cat_change_0"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="48020" name="Wild Wolf Costume">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm2018_barbarian_i01"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="400"/>
+		</for>
+	</armor>
+	<armor id="48021" name="Valkyrie Costume">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm2018_valkyrie_i01"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="400"/>
+		</for>
+	</armor>
+	<armor id="48022" name="Teddy Bear Wear">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.gomdori_chest_change"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<etcitem id="48046" name="Scroll: Enchant Agathion">
+		<set name="icon" value="icon.star_scrl_of_ench_ag"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="48047" name="Scroll: Enchant High-grade Agathion">
+		<set name="icon" value="icon.star_giantscrl_of_ench_ag"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<armor id="48048" name="Agathion Virgo">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_virgo_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54004" level="1"/><!--Agathion: Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54004" level="2"/><!--Agathion: +1 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54004" level="3"/><!--Agathion: +2 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54004" level="4"/><!--Agathion: +3 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54004" level="5"/><!--Agathion: +4 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54004" level="6"/><!--Agathion: +5 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54004" level="7"/><!--Agathion: +6 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54004" level="8"/><!--Agathion: +7 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54004" level="9"/><!--Agathion: +8 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54004" level="10"/><!--Agathion: +9 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54004" level="11"/><!--Agathion: +10 Agathion Virgo-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="48049" name="Agathion Capricorn">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_capr_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54006" level="1"/><!--Agathion: Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54006" level="2"/><!--Agathion: +1 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54006" level="3"/><!--Agathion: +2 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54006" level="4"/><!--Agathion: +3 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54006" level="5"/><!--Agathion: +4 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54006" level="6"/><!--Agathion: +5 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54006" level="7"/><!--Agathion: +6 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54006" level="8"/><!--Agathion: +7 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54006" level="9"/><!--Agathion: +8 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54006" level="10"/><!--Agathion: +9 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54006" level="11"/><!--Agathion: +10 Agathion Capricorn-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="48050" name="Agathion Libra">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_lib_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54007" level="1"/><!--Agathion: Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54007" level="2"/><!--Agathion: +1 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54007" level="3"/><!--Agathion: +2 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54007" level="4"/><!--Agathion: +3 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54007" level="5"/><!--Agathion: +4 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54007" level="6"/><!--Agathion: +5 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54007" level="7"/><!--Agathion: +6 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54007" level="8"/><!--Agathion: +7 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54007" level="9"/><!--Agathion: +8 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54007" level="10"/><!--Agathion: +9 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54007" level="11"/><!--Agathion: +10 Agathion Libra-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="48052" name="Agathion Taurus">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_tau_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54000" level="1"/><!--Agathion: Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54000" level="2"/><!--Agathion: +1 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54000" level="3"/><!--Agathion: +2 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54000" level="4"/><!--Agathion: +3 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54000" level="5"/><!--Agathion: +4 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54000" level="6"/><!--Agathion: +5 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54000" level="7"/><!--Agathion: +6 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54000" level="8"/><!--Agathion: +7 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54000" level="9"/><!--Agathion: +8 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54000" level="10"/><!--Agathion: +9 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54000" level="11"/><!--Agathion: +10 Agathion Taurus-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="48053" name="Agathion Leo">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_leo_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54001" level="1"/><!--Agathion: Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54001" level="2"/><!--Agathion: +1 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54001" level="3"/><!--Agathion: +2 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54001" level="4"/><!--Agathion: +3 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54001" level="5"/><!--Agathion: +4 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54001" level="6"/><!--Agathion: +5 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54001" level="7"/><!--Agathion: +6 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54001" level="8"/><!--Agathion: +7 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54001" level="9"/><!--Agathion: +8 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54001" level="10"/><!--Agathion: +9 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54001" level="11"/><!--Agathion: +10 Agathion Leo-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="48054" name="Agathion Gemini">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_gem_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54008" level="1"/><!--Agathion: Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54008" level="2"/><!--Agathion: +1 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54008" level="3"/><!--Agathion: +2 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54008" level="4"/><!--Agathion: +3 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54008" level="5"/><!--Agathion: +4 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54008" level="6"/><!--Agathion: +5 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54008" level="7"/><!--Agathion: +6 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54008" level="8"/><!--Agathion: +7 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54008" level="9"/><!--Agathion: +8 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54008" level="10"/><!--Agathion: +9 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54008" level="11"/><!--Agathion: +10 Agathion Gemini-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="48055" name="Agathion Scorpio">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_sco_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54002" level="1"/><!--Agathion: Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54002" level="2"/><!--Agathion: +1 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54002" level="3"/><!--Agathion: +2 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54002" level="4"/><!--Agathion: +3 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54002" level="5"/><!--Agathion: +4 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54002" level="6"/><!--Agathion: +5 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54002" level="7"/><!--Agathion: +6 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54002" level="8"/><!--Agathion: +7 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54002" level="9"/><!--Agathion: +8 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54002" level="10"/><!--Agathion: +9 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54002" level="11"/><!--Agathion: +10 Agathion Scorpio-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="48056" name="Agathion Aquarius">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_aqu_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54005" level="1"/><!--Agathion: Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54005" level="2"/><!--Agathion: +1 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54005" level="3"/><!--Agathion: +2 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54005" level="4"/><!--Agathion: +3 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54005" level="5"/><!--Agathion: +4 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54005" level="6"/><!--Agathion: +5 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54005" level="7"/><!--Agathion: +6 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54005" level="8"/><!--Agathion: +7 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54005" level="9"/><!--Agathion: +8 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54005" level="10"/><!--Agathion: +9 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54005" level="11"/><!--Agathion: +10 Agathion Aquarius-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="48058" name="Agathion Sagittarius">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_sag_star_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="54003" level="1"/><!--Agathion: Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="54003" level="2"/><!--Agathion: +1 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="54003" level="3"/><!--Agathion: +2 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="54003" level="4"/><!--Agathion: +3 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="54003" level="5"/><!--Agathion: +4 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="54003" level="6"/><!--Agathion: +5 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="54003" level="7"/><!--Agathion: +6 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="54003" level="8"/><!--Agathion: +7 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="54003" level="9"/><!--Agathion: +8 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="54003" level="10"/><!--Agathion: +9 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="54003" level="11"/><!--Agathion: +10 Agathion Sagittarius-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<etcitem id="48066" name="Zodiac Agathion Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.star_agathion_cube"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="48056" count="1" chance="0.01"/><!--Agathion Aquarius--><!--TODO: Check chance-->
+			<create_item id="48050" count="1" chance="0.01"/><!--Agathion Libra--><!--TODO: Check chance-->
+			<create_item id="48052" count="1" chance="0.01"/><!--Agathion Taurus--><!--TODO: Check chance-->
+			<create_item id="48054" count="1" chance="0.01"/><!--Agathion Gemini--><!--TODO: Check chance-->
+			<create_item id="48053" count="1" chance="0.01"/><!--Agathion Leo--><!--TODO: Check chance-->
+			<create_item id="48048" count="1" chance="0.01"/><!--Agathion Virgo--><!--TODO: Check chance-->
+			<create_item id="48055" count="1" chance="0.01"/><!--Agathion Scorpio--><!--TODO: Check chance-->
+			<create_item id="48058" count="1" chance="0.01"/><!--Agathion Sagittarius--><!--TODO: Check chance-->
+			<create_item id="48049" count="1" chance="0.01"/><!--Agathion Capricorn--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+</list>

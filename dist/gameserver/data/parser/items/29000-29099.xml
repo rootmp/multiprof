@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="29001" name="Daily Present - VIP 1 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="736" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Телепорта-->
+			<capsuled_item id="1060" min_count="3" max_count="3" chance="100.0"/>	<!--Зелье Исцеления-->
+			<capsuled_item id="29520" min_count="5" max_count="5" chance="100.0"/>	<!--Монета VIP-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="29002" name="Daily Present - VIP 2 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="737" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Воскрешения-->
+			<capsuled_item id="1060" min_count="3" max_count="3" chance="100.0"/>	<!--Зелье Исцеления-->
+			<capsuled_item id="29520" min_count="10" max_count="10" chance="100.0"/>	<!--Монета VIP-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="29003" name="Daily Present - VIP 3 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="736" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Телепорта-->
+			<capsuled_item id="737" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Воскрешения-->
+			<capsuled_item id="1060" min_count="5" max_count="5" chance="100.0"/>	<!--Зелье Исцеления-->
+			<capsuled_item id="29520" min_count="15" max_count="15" chance="100.0"/>	<!--Монета VIP-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="29004" name="Daily Present - VIP 4 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="736" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Телепорта-->
+			<capsuled_item id="737" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Воскрешения-->
+			<capsuled_item id="1061" min_count="3" max_count="3" chance="100.0"/>	<!--Большое Зелье Исцеления-->
+			<capsuled_item id="29520" min_count="25" max_count="25" chance="100.0"/>	<!--Монета VIP-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="29005" name="Daily Present - VIP 5 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="1538" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Благ. Телепорта-->
+			<capsuled_item id="1061" min_count="3" max_count="3" chance="100.0"/>	<!--Большое Зелье Исцеления-->
+			<capsuled_item id="29520" min_count="40" max_count="40" chance="100.0"/>	<!--Монета VIP-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="29006" name="Daily Present - VIP 6 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="3936" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Благ. Воскрешения-->
+			<capsuled_item id="1061" min_count="3" max_count="3" chance="100.0"/>	<!--Большое Зелье Исцеления-->
+			<capsuled_item id="29520" min_count="100" max_count="100" chance="100.0"/>	<!--Монета VIP-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="29007" name="Daily Present - VIP 1 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="1538" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Благ. Телепорта-->
+			<capsuled_item id="3936" min_count="1" max_count="1" chance="100.0"/>	<!--Свиток Благ. Воскрешения-->
+			<capsuled_item id="1061" min_count="3" max_count="3" chance="100.0"/>	<!--Большое Зелье Исцеления-->
+			<capsuled_item id="29520" min_count="150" max_count="150" chance="100.0"/>	<!--Монета VIP-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="29008" name="XP/ SP Scroll - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="55051" level="1"/>	<!--XP/SP Scroll-->
+		</skills>
+	</etcitem>
+	<etcitem id="29009" name="XP/SP Scroll - Normal - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="55051" level="2"/>	<!--XP/SP Scroll - Normal-->
+		</skills>
+	</etcitem>
+	<etcitem id="29010" name="XP/SP Scroll - High - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="55051" level="4"/>	<!--XP/SP Scroll - High-->
+		</skills>
+	</etcitem>
+	<etcitem id="29011" name="1st Class Buff Scroll - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="55003" level="1"/>	<!--Свиток Эффектов 1-й Профессии-->
+		</skills>
+	</etcitem>
+	<etcitem id="29012" name="2nd Class Buff Scroll - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="55004" level="2"/>	<!--Свиток Эффектов 2-й Профессии-->
+		</skills>
+	</etcitem>
+	<etcitem id="29013" name="Scroll: Song of Hunter - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="55699" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="29014" name="Scroll: Dance of Fire - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="274" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="29015" name="Scroll: Enchant D-grade Weapon - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_WEAPON"/>
+	</etcitem>
+	<etcitem id="29016" name="Scroll: Enchant D-grade Armor - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="29017" name="Scroll: Enchant C-grade Weapon - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_WEAPON"/>
+	</etcitem>
+	<etcitem id="29018" name="Scroll: Enchant C-grade Armor - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="29019" name="Scroll: Enchant D-grade Weapon - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_WEAPON"/>
+	</etcitem>
+	<etcitem id="29020" name="Scroll: Enchant D-grade Armor - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="29021" name="Scroll: Enchant C-grade Weapon - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_WEAPON"/>
+	</etcitem>
+	<etcitem id="29022" name="Scroll: Enchant C-grade Armor - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="29023" name="Mysterious No-grade Soulshot - Not Available" add_name="Not Available">
+		<set name="type" value="SOULSHOT"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<skills>
+			<skill id="9293" level="1"/>	<!--Чудесный Заряд Души (Без ранга)-->
+		</skills>
+	</etcitem>
+	<etcitem id="29024" name="Mysterious Blessed No-grade Spiritshot - Not Available" add_name="Not Available">
+		<set name="type" value="BLESSED_SPIRITSHOT"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<skills>
+			<skill id="9300" level="1"/>	<!--Чудесный Благ. Заряд Духа (Без ранга)-->
+		</skills>
+	</etcitem>
+	<etcitem id="29025" name="Mysterious D-grade Soulshot - Not Available" add_name="Not Available">
+		<set name="type" value="SOULSHOT"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="D"/>
+		<skills>
+			<skill id="9294" level="1"/>	<!--Чудесный Заряд Души - Ранг D-->
+		</skills>
+	</etcitem>
+	<etcitem id="29026" name="Mysterious Blessed D-grade Spiritshot - Not Available" add_name="Not Available">
+		<set name="type" value="BLESSED_SPIRITSHOT"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="D"/>
+		<skills>
+			<skill id="9301" level="1"/>	<!--Чудесный Благ. Заряд Духа - Ранг D-->
+		</skills>
+	</etcitem>
+	<etcitem id="29027" name="Mysterious C-grade Soulshot - Not Available" add_name="Not Available">
+		<set name="type" value="SOULSHOT"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="C"/>
+		<skills>
+			<skill id="9295" level="1"/>	<!--Чудесный Заряд Души - Ранг C-->
+		</skills>
+	</etcitem>
+	<etcitem id="29028" name="Mysterious Blessed C-grade Spiritshot - Not Available" add_name="Not Available">
+		<set name="type" value="BLESSED_SPIRITSHOT"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="C"/>
+		<skills>
+			<skill id="9302" level="1"/>	<!--Чудесный Благ. Заряд Духа - Ранг C-->
+		</skills>
+	</etcitem>
+	<etcitem id="29029" name="Improved Scroll of Escape - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="55001" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="29030" name="Blessed Resurrection Scroll - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="55002" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="29031" name="Quick Healing Potion - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="55015" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="29032" name="Major Quick Healing Potion - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="55016" level="1"/>
+		</skills>
+	</etcitem>
+	<armor id="29033" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29034" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29035" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29036" name="Refined Romantic Chapeau: Red - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29037" name="Refined Angel Ring - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29038" name="Refined Wizard Hat - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29039" name="Laborer Hat - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="FACE"/>
+		</equip>
+	</armor>
+	<armor id="29040" name="Top Hat - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29041" name="Vigilante Hat - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29042" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29043" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29044" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29045" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29046" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29047" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29048" name="Refined Romantic Chapeau: Red - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29049" name="Refined Angel Ring - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29050" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29051" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29052" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29053" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29054" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29055" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29056" name="Adventurer's Hat (Event) - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="29057" name="Agathion Virgo - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29058" name="Agathion Virgo - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29059" name="Agathion Capricorn - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29060" name="Agathion Capricorn - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29061" name="Agathion Libra - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29062" name="Agathion Libra - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29063" name="Agathion Aries - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="17613" level="1"/>
+			<skill id="3267" level="1"/>
+			<skill id="17625" level="1"/>
+		</skills>
+	</armor>
+	<armor id="29064" name="Agathion Aries - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="43200"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="17613" level="1"/>
+			<skill id="3267" level="1"/>
+			<skill id="17625" level="1"/>
+		
+		</skills>
+	</armor>
+	<armor id="29065" name="Agathion Taurus - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29066" name="Agathion Taurus - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29067" name="Agathion Leo - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29068" name="Agathion Leo - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29069" name="Agathion Gemini - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29070" name="Agathion Gemini - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29071" name="Agathion Scorpio - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29072" name="Agathion Scorpio - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29073" name="Agathion Aquarius - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29074" name="Agathion Aquarius - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29075" name="Agathion Pisces - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29076" name="Agathion Pisces - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29077" name="Agathion Sagittarius - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29078" name="Agathion Sagittarius - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29079" name="Agathion Cancer - Not Available" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="29080" name="Agathion Cancer - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<etcitem id="29081" name="Premium STR Dye &lt;STR +1 CON -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29082" name="Premium STR Dye &lt;STR +1 DEX -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29083" name="Premium CON Dye &lt;CON +1 STR -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29084" name="Premium CON Dye &lt;CON +1 DEX -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29085" name="Premium DEX Dye &lt;DEX +1 STR -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29086" name="Premium DEX Dye &lt;DEX +1 CON -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29087" name="Premium INT Dye &lt;INT +1 MEN -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29088" name="Premium INT Dye &lt;INT +1 WIT -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29089" name="Premium MEN Dye &lt;MEN +1 INT -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29090" name="Premium MEN Dye &lt;MEN +1 WIT -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29091" name="Premium WIT Dye &lt;WIT +1 INT -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29092" name="Premium WIT Dye &lt;WIT +1 MEN -1&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29093" name="Premium STR Dye &lt;STR +2 CON -2&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29094" name="Premium STR Dye &lt;STR +2 DEX -2&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29095" name="Premium CON Dye &lt;CON +2 STR -2&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29096" name="Premium CON Dye &lt;CON +2 DEX -2&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29097" name="Premium DEX Dye &lt;DEX +2 STR -2&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29098" name="Premium DEX Dye &lt;DEX +2 CON -2&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+	<etcitem id="29099" name="Premium INT Dye &lt;INT +2 MEN -2&gt; - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="DYE"/>
+	</etcitem>
+</list>

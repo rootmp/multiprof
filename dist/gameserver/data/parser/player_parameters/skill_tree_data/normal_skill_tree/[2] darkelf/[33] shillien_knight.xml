@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="33"><!--Shillien Knight-->
+		<skill id="28" level="13" min_level="40" cost="56000"/><!--Aggression-->
+		<skill id="28" level="14" min_level="40" cost="56000"/><!--Aggression-->
+		<skill id="28" level="15" min_level="40" cost="56000"/><!--Aggression-->
+		<skill id="18" level="1" min_level="40" cost="56000"/><!--Aggression Aura-->
+		<skill id="18" level="2" min_level="40" cost="56000"/><!--Aggression Aura-->
+		<skill id="18" level="3" min_level="40" cost="56000"/><!--Aggression Aura-->
+		<skill id="82" level="2" min_level="40" cost="56000"/><!--Majesty-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="141" level="4" min_level="40" cost="56000"/><!--Weapon Mastery-->
+		<skill id="153" level="3" min_level="40" cost="56000"/><!--Shield Mastery-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="196" level="1" min_level="40" cost="56000"/><!--Dignity-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="2" level="5" min_level="40" cost="56000"/><!--Confusion-->
+		<skill id="45250" level="6" min_level="40" cost="56000"/><!--Drain HP-->
+		<skill id="289" level="1" min_level="40" cost="56000"/><!--Life Leech-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="401" level="1" min_level="40" cost="56000"><!--Judgment-->
+			<blocked_skills>
+				<skill id="3"/><!--???-->
+				<skill id="56"/><!--???-->
+				<skill id="16"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="122" level="1" min_level="40" cost="56000"/><!--Hex-->
+		<skill id="115" level="3" min_level="40" cost="56000"/><!--Power Break-->
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="197" level="1" min_level="40" cost="56000"/><!--Honor-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="70" level="10" min_level="40" cost="56000"/><!--Emergency Rescue-->
+		<skill id="28" level="16" min_level="41" cost="66000"/><!--Aggression-->
+		<skill id="18" level="4" min_level="41" cost="66000"/><!--Aggression Aura-->
+		<skill id="70" level="11" min_level="41" cost="66000"/><!--Emergency Rescue-->
+		<skill id="28" level="17" min_level="42" cost="66000"/><!--Aggression-->
+		<skill id="18" level="5" min_level="42" cost="66000"/><!--Aggression Aura-->
+		<skill id="45250" level="7" min_level="42" cost="66000"/><!--Drain HP-->
+		<skill id="70" level="12" min_level="42" cost="66000"/><!--Emergency Rescue-->
+		<skill id="28" level="18" min_level="43" cost="66000"/><!--Aggression-->
+		<skill id="18" level="6" min_level="43" cost="66000"/><!--Aggression Aura-->
+		<skill id="2" level="6" min_level="43" cost="66000"/><!--Confusion-->
+		<skill id="289" level="2" min_level="43" cost="66000"/><!--Life Leech-->
+		<skill id="401" level="2" min_level="43" cost="66000"/><!--Judgment-->
+		<skill id="122" level="2" min_level="43" cost="66000"/><!--Hex-->
+		<skill id="115" level="4" min_level="43" cost="66000"/><!--Power Break-->
+		<skill id="191" level="2" min_level="43" cost="66000"/><!--Focus Mind-->
+		<skill id="70" level="13" min_level="43" cost="66000"/><!--Emergency Rescue-->
+		<skill id="28" level="19" min_level="44" cost="100000"/><!--Aggression-->
+		<skill id="18" level="7" min_level="44" cost="100000"/><!--Aggression Aura-->
+		<skill id="45250" level="8" min_level="44" cost="100000"/><!--Drain HP-->
+		<skill id="70" level="14" min_level="44" cost="100000"/><!--Emergency Rescue-->
+		<skill id="28" level="20" min_level="45" cost="100000"/><!--Aggression-->
+		<skill id="18" level="8" min_level="45" cost="100000"/><!--Aggression Aura-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="70" level="15" min_level="45" cost="100000"/><!--Emergency Rescue-->
+		<skill id="110" level="2" min_level="46" cost="100000"/><!--Ultimate Defense-->
+		<skill id="28" level="21" min_level="46" cost="100000"/><!--Aggression-->
+		<skill id="18" level="9" min_level="46" cost="100000"/><!--Aggression Aura-->
+		<skill id="2" level="7" min_level="46" cost="100000"/><!--Confusion-->
+		<skill id="45250" level="9" min_level="46" cost="100000"/><!--Drain HP-->
+		<skill id="289" level="3" min_level="46" cost="100000"/><!--Life Leech-->
+		<skill id="401" level="3" min_level="46" cost="100000"/><!--Judgment-->
+		<skill id="122" level="3" min_level="46" cost="100000"/><!--Hex-->
+		<skill id="115" level="5" min_level="46" cost="100000"/><!--Power Break-->
+		<skill id="103" level="1" min_level="46" cost="100000"/><!--Slaughter-->
+		<skill id="70" level="16" min_level="46" cost="100000"/><!--Emergency Rescue-->
+		<skill id="28" level="22" min_level="47" cost="130000"/><!--Aggression-->
+		<skill id="18" level="10" min_level="47" cost="130000"/><!--Aggression Aura-->
+		<skill id="70" level="17" min_level="47" cost="130000"/><!--Emergency Rescue-->
+		<skill id="28" level="23" min_level="48" cost="130000"/><!--Aggression-->
+		<skill id="18" level="11" min_level="48" cost="130000"/><!--Aggression Aura-->
+		<skill id="45250" level="10" min_level="48" cost="130000"/><!--Drain HP-->
+		<skill id="70" level="18" min_level="48" cost="130000"/><!--Emergency Rescue-->
+		<skill id="28" level="24" min_level="49" cost="130000"/><!--Aggression-->
+		<skill id="18" level="12" min_level="49" cost="130000"/><!--Aggression Aura-->
+		<skill id="2" level="8" min_level="49" cost="130000"/><!--Confusion-->
+		<skill id="289" level="4" min_level="49" cost="130000"/><!--Life Leech-->
+		<skill id="401" level="4" min_level="49" cost="130000"/><!--Judgment-->
+		<skill id="122" level="4" min_level="49" cost="130000"/><!--Hex-->
+		<skill id="115" level="6" min_level="49" cost="130000"/><!--Power Break-->
+		<skill id="191" level="3" min_level="49" cost="130000"/><!--Focus Mind-->
+		<skill id="70" level="19" min_level="49" cost="130000"/><!--Emergency Rescue-->
+		<skill id="28" level="25" min_level="50" cost="200000"/><!--Aggression-->
+		<skill id="18" level="13" min_level="50" cost="200000"/><!--Aggression Aura-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="129" level="3" min_level="50" cost="200000"/><!--Dark Elven Spirit-->
+		<skill id="53010" level="1" min_level="50" cost="200000"/><!--Knight's Protection-->
+		<skill id="45250" level="11" min_level="50" cost="200000"/><!--Drain HP-->
+		<skill id="70" level="20" min_level="50" cost="200000"/><!--Emergency Rescue-->
+		<skill id="28" level="26" min_level="51" cost="200000"/><!--Aggression-->
+		<skill id="18" level="14" min_level="51" cost="200000"/><!--Aggression Aura-->
+		<skill id="70" level="21" min_level="51" cost="200000"/><!--Emergency Rescue-->
+		<skill id="28" level="27" min_level="52" cost="200000"/><!--Aggression-->
+		<skill id="18" level="15" min_level="52" cost="200000"/><!--Aggression Aura-->
+		<skill id="1405" level="1" min_level="52" cost="200000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="153" level="4" min_level="52" cost="200000"/><!--Shield Mastery-->
+		<skill id="2" level="9" min_level="52" cost="200000"/><!--Confusion-->
+		<skill id="45250" level="12" min_level="52" cost="200000"/><!--Drain HP-->
+		<skill id="289" level="5" min_level="52" cost="200000"/><!--Life Leech-->
+		<skill id="291" level="1" min_level="52" cost="200000"/><!--Final Fortress-->
+		<skill id="401" level="5" min_level="52" cost="200000"/><!--Judgment-->
+		<skill id="122" level="5" min_level="52" cost="200000"/><!--Hex-->
+		<skill id="115" level="7" min_level="52" cost="200000"/><!--Power Break-->
+		<skill id="316" level="1" min_level="52" cost="200000"/><!--Aegis-->
+		<skill id="70" level="22" min_level="52" cost="200000"/><!--Emergency Rescue-->
+		<skill id="28" level="28" min_level="53" cost="270000"/><!--Aggression-->
+		<skill id="18" level="16" min_level="53" cost="270000"/><!--Aggression Aura-->
+		<skill id="70" level="23" min_level="53" cost="270000"/><!--Emergency Rescue-->
+		<skill id="28" level="29" min_level="54" cost="270000"/><!--Aggression-->
+		<skill id="18" level="17" min_level="54" cost="270000"/><!--Aggression Aura-->
+		<skill id="45250" level="13" min_level="54" cost="270000"/><!--Drain HP-->
+		<skill id="70" level="24" min_level="54" cost="270000"/><!--Emergency Rescue-->
+		<skill id="28" level="30" min_level="55" cost="270000"/><!--Aggression-->
+		<skill id="18" level="18" min_level="55" cost="270000"/><!--Aggression Aura-->
+		<skill id="2" level="10" min_level="55" cost="270000"/><!--Confusion-->
+		<skill id="289" level="6" min_level="55" cost="270000"/><!--Life Leech-->
+		<skill id="291" level="2" min_level="55" cost="270000"/><!--Final Fortress-->
+		<skill id="401" level="6" min_level="55" cost="270000"/><!--Judgment-->
+		<skill id="122" level="6" min_level="55" cost="270000"/><!--Hex-->
+		<skill id="115" level="8" min_level="55" cost="270000"/><!--Power Break-->
+		<skill id="191" level="4" min_level="55" cost="270000"/><!--Focus Mind-->
+		<skill id="70" level="25" min_level="55" cost="270000"/><!--Emergency Rescue-->
+		<skill id="28" level="31" min_level="56" cost="380000"/><!--Aggression-->
+		<skill id="18" level="19" min_level="56" cost="380000"/><!--Aggression Aura-->
+		<skill id="45250" level="14" min_level="56" cost="380000"/><!--Drain HP-->
+		<skill id="70" level="26" min_level="56" cost="380000"/><!--Emergency Rescue-->
+		<skill id="28" level="32" min_level="57" cost="380000"/><!--Aggression-->
+		<skill id="18" level="20" min_level="57" cost="380000"/><!--Aggression Aura-->
+		<skill id="70" level="27" min_level="57" cost="380000"/><!--Emergency Rescue-->
+		<skill id="28" level="33" min_level="58" cost="380000"/><!--Aggression-->
+		<skill id="18" level="21" min_level="58" cost="380000"/><!--Aggression Aura-->
+		<skill id="82" level="3" min_level="58" cost="380000"/><!--Majesty-->
+		<skill id="2" level="11" min_level="58" cost="380000"/><!--Confusion-->
+		<skill id="45250" level="15" min_level="58" cost="380000"/><!--Drain HP-->
+		<skill id="289" level="7" min_level="58" cost="380000"/><!--Life Leech-->
+		<skill id="291" level="3" min_level="58" cost="380000"/><!--Final Fortress-->
+		<skill id="401" level="7" min_level="58" cost="380000"/><!--Judgment-->
+		<skill id="122" level="7" min_level="58" cost="380000"/><!--Hex-->
+		<skill id="115" level="9" min_level="58" cost="380000"/><!--Power Break-->
+		<skill id="103" level="2" min_level="58" cost="380000"/><!--Slaughter-->
+		<skill id="279" level="1" min_level="58" cost="380000"/><!--Lightning Strike-->
+		<skill id="70" level="28" min_level="58" cost="380000"/><!--Emergency Rescue-->
+		<skill id="28" level="34" min_level="59" cost="550000"/><!--Aggression-->
+		<skill id="18" level="22" min_level="59" cost="550000"/><!--Aggression Aura-->
+		<skill id="70" level="29" min_level="59" cost="550000"/><!--Emergency Rescue-->
+		<skill id="28" level="35" min_level="60" cost="550000"/><!--Aggression-->
+		<skill id="18" level="23" min_level="60" cost="550000"/><!--Aggression Aura-->
+		<skill id="129" level="4" min_level="60" cost="550000"/><!--Dark Elven Spirit-->
+		<skill id="2" level="12" min_level="60" cost="550000"/><!--Confusion-->
+		<skill id="53010" level="2" min_level="60" cost="550000"/><!--Knight's Protection-->
+		<skill id="45250" level="16" min_level="60" cost="550000"/><!--Drain HP-->
+		<skill id="289" level="8" min_level="60" cost="550000"/><!--Life Leech-->
+		<skill id="291" level="4" min_level="60" cost="550000"/><!--Final Fortress-->
+		<skill id="401" level="8" min_level="60" cost="550000"/><!--Judgment-->
+		<skill id="122" level="8" min_level="60" cost="550000"/><!--Hex-->
+		<skill id="115" level="10" min_level="60" cost="550000"/><!--Power Break-->
+		<skill id="77" level="3" min_level="60" cost="550000"/><!--Ability to Attack-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="916" level="1" min_level="60" cost="550000"/><!--Shield Deflect Magic-->
+		<skill id="70" level="30" min_level="60" cost="550000"/><!--Emergency Rescue-->
+		<skill id="28" level="36" min_level="61" cost="550000"/><!--Aggression-->
+		<skill id="18" level="24" min_level="61" cost="550000"/><!--Aggression Aura-->
+		<skill id="1405" level="2" min_level="61" cost="550000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="70" level="31" min_level="61" cost="550000"/><!--Emergency Rescue-->
+		<skill id="28" level="37" min_level="62" cost="680000"/><!--Aggression-->
+		<skill id="18" level="25" min_level="62" cost="680000"/><!--Aggression Aura-->
+		<skill id="2" level="13" min_level="62" cost="680000"/><!--Confusion-->
+		<skill id="45250" level="17" min_level="62" cost="680000"/><!--Drain HP-->
+		<skill id="289" level="9" min_level="62" cost="680000"/><!--Life Leech-->
+		<skill id="291" level="5" min_level="62" cost="680000"/><!--Final Fortress-->
+		<skill id="401" level="9" min_level="62" cost="680000"/><!--Judgment-->
+		<skill id="122" level="9" min_level="62" cost="680000"/><!--Hex-->
+		<skill id="115" level="11" min_level="62" cost="680000"/><!--Power Break-->
+		<skill id="103" level="3" min_level="62" cost="680000"/><!--Slaughter-->
+		<skill id="279" level="2" min_level="62" cost="680000"/><!--Lightning Strike-->
+		<skill id="70" level="32" min_level="62" cost="680000"/><!--Emergency Rescue-->
+		<skill id="28" level="38" min_level="63" cost="680000"/><!--Aggression-->
+		<skill id="18" level="26" min_level="63" cost="680000"/><!--Aggression Aura-->
+		<skill id="70" level="33" min_level="63" cost="680000"/><!--Emergency Rescue-->
+		<skill id="28" level="39" min_level="64" cost="850000"/><!--Aggression-->
+		<skill id="18" level="27" min_level="64" cost="850000"/><!--Aggression Aura-->
+		<skill id="2" level="14" min_level="64" cost="850000"/><!--Confusion-->
+		<skill id="45250" level="18" min_level="64" cost="850000"/><!--Drain HP-->
+		<skill id="289" level="10" min_level="64" cost="850000"/><!--Life Leech-->
+		<skill id="291" level="6" min_level="64" cost="850000"/><!--Final Fortress-->
+		<skill id="401" level="10" min_level="64" cost="850000"/><!--Judgment-->
+		<skill id="122" level="10" min_level="64" cost="850000"/><!--Hex-->
+		<skill id="115" level="12" min_level="64" cost="850000"/><!--Power Break-->
+		<skill id="191" level="5" min_level="64" cost="850000"/><!--Focus Mind-->
+		<skill id="916" level="2" min_level="64" cost="850000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="1" min_level="64" cost="850000"/><!--Ultimate Shield-->
+		<skill id="70" level="34" min_level="64" cost="850000"/><!--Emergency Rescue-->
+		<skill id="28" level="40" min_level="65" cost="850000"/><!--Aggression-->
+		<skill id="18" level="28" min_level="65" cost="850000"/><!--Aggression Aura-->
+		<skill id="53010" level="3" min_level="65" cost="850000"/><!--Knight's Protection-->
+		<skill id="70" level="35" min_level="65" cost="850000"/><!--Emergency Rescue-->
+		<skill id="28" level="41" min_level="66" cost="1000000"/><!--Aggression-->
+		<skill id="18" level="29" min_level="66" cost="1000000"/><!--Aggression Aura-->
+		<skill id="2" level="15" min_level="66" cost="1000000"/><!--Confusion-->
+		<skill id="45250" level="19" min_level="66" cost="1000000"/><!--Drain HP-->
+		<skill id="289" level="11" min_level="66" cost="1000000"/><!--Life Leech-->
+		<skill id="291" level="7" min_level="66" cost="1000000"/><!--Final Fortress-->
+		<skill id="401" level="11" min_level="66" cost="1000000"/><!--Judgment-->
+		<skill id="122" level="11" min_level="66" cost="1000000"/><!--Hex-->
+		<skill id="115" level="13" min_level="66" cost="1000000"/><!--Power Break-->
+		<skill id="279" level="3" min_level="66" cost="1000000"/><!--Lightning Strike-->
+		<skill id="322" level="2" min_level="66" cost="1000000"/><!--Ultimate Shield-->
+		<skill id="70" level="36" min_level="66" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="28" level="42" min_level="67" cost="1000000"/><!--Aggression-->
+		<skill id="18" level="30" min_level="67" cost="1000000"/><!--Aggression Aura-->
+		<skill id="70" level="37" min_level="67" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="28" level="43" min_level="68" cost="1300000"/><!--Aggression-->
+		<skill id="18" level="31" min_level="68" cost="1300000"/><!--Aggression Aura-->
+		<skill id="2" level="16" min_level="68" cost="1300000"/><!--Confusion-->
+		<skill id="45250" level="20" min_level="68" cost="1300000"/><!--Drain HP-->
+		<skill id="289" level="12" min_level="68" cost="1300000"/><!--Life Leech-->
+		<skill id="291" level="8" min_level="68" cost="1300000"/><!--Final Fortress-->
+		<skill id="401" level="12" min_level="68" cost="1300000"/><!--Judgment-->
+		<skill id="122" level="12" min_level="68" cost="1300000"/><!--Hex-->
+		<skill id="115" level="14" min_level="68" cost="1300000"/><!--Power Break-->
+		<skill id="916" level="3" min_level="68" cost="1300000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="3" min_level="68" cost="1300000"/><!--Ultimate Shield-->
+		<skill id="70" level="38" min_level="68" cost="1300000"/><!--Emergency Rescue-->
+		<skill id="28" level="44" min_level="69" cost="1300000"/><!--Aggression-->
+		<skill id="18" level="32" min_level="69" cost="1300000"/><!--Aggression Aura-->
+		<skill id="70" level="39" min_level="69" cost="1300000"/><!--Emergency Rescue-->
+		<skill id="28" level="45" min_level="70" cost="1600000"/><!--Aggression-->
+		<skill id="18" level="33" min_level="70" cost="1600000"/><!--Aggression Aura-->
+		<skill id="129" level="5" min_level="70" cost="1600000"/><!--Dark Elven Spirit-->
+		<skill id="2" level="17" min_level="70" cost="1600000"/><!--Confusion-->
+		<skill id="53010" level="4" min_level="70" cost="1600000"/><!--Knight's Protection-->
+		<skill id="45250" level="21" min_level="70" cost="1600000"/><!--Drain HP-->
+		<skill id="289" level="13" min_level="70" cost="1600000"/><!--Life Leech-->
+		<skill id="291" level="9" min_level="70" cost="1600000"/><!--Final Fortress-->
+		<skill id="401" level="13" min_level="70" cost="1600000"/><!--Judgment-->
+		<skill id="122" level="13" min_level="70" cost="1600000"/><!--Hex-->
+		<skill id="115" level="15" min_level="70" cost="1600000"/><!--Power Break-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="103" level="4" min_level="70" cost="1600000"/><!--Slaughter-->
+		<skill id="279" level="4" min_level="70" cost="1600000"/><!--Lightning Strike-->
+		<skill id="322" level="4" min_level="70" cost="1600000"/><!--Ultimate Shield-->
+		<skill id="70" level="40" min_level="70" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="28" level="46" min_level="71" cost="1600000"/><!--Aggression-->
+		<skill id="18" level="34" min_level="71" cost="1600000"/><!--Aggression Aura-->
+		<skill id="70" level="41" min_level="71" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="28" level="47" min_level="72" cost="1800000"/><!--Aggression-->
+		<skill id="18" level="35" min_level="72" cost="1800000"/><!--Aggression Aura-->
+		<skill id="2" level="18" min_level="72" cost="1800000"/><!--Confusion-->
+		<skill id="45250" level="22" min_level="72" cost="1800000"/><!--Drain HP-->
+		<skill id="289" level="14" min_level="72" cost="1800000"/><!--Life Leech-->
+		<skill id="291" level="10" min_level="72" cost="1800000"/><!--Final Fortress-->
+		<skill id="401" level="14" min_level="72" cost="1800000"/><!--Judgment-->
+		<skill id="122" level="14" min_level="72" cost="1800000"/><!--Hex-->
+		<skill id="115" level="16" min_level="72" cost="1800000"/><!--Power Break-->
+		<skill id="191" level="6" min_level="72" cost="1800000"/><!--Focus Mind-->
+		<skill id="916" level="4" min_level="72" cost="1800000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="5" min_level="72" cost="1800000"/><!--Ultimate Shield-->
+		<skill id="70" level="42" min_level="72" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="28" level="48" min_level="73" cost="1800000"/><!--Aggression-->
+		<skill id="18" level="36" min_level="73" cost="1800000"/><!--Aggression Aura-->
+		<skill id="45250" level="23" min_level="73" cost="1800000"/><!--Drain HP-->
+		<skill id="70" level="43" min_level="73" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="28" level="49" min_level="74" cost="1800000"/><!--Aggression-->
+		<skill id="18" level="37" min_level="74" cost="1800000"/><!--Aggression Aura-->
+		<skill id="2" level="19" min_level="74" cost="1800000"/><!--Confusion-->
+		<skill id="45250" level="24" min_level="74" cost="1800000"/><!--Drain HP-->
+		<skill id="289" level="15" min_level="74" cost="1800000"/><!--Life Leech-->
+		<skill id="291" level="11" min_level="74" cost="1800000"/><!--Final Fortress-->
+		<skill id="401" level="15" min_level="74" cost="1800000"/><!--Judgment-->
+		<skill id="122" level="15" min_level="74" cost="1800000"/><!--Hex-->
+		<skill id="115" level="17" min_level="74" cost="1800000"/><!--Power Break-->
+		<skill id="279" level="5" min_level="74" cost="1800000"/><!--Lightning Strike-->
+		<skill id="322" level="6" min_level="74" cost="1800000"/><!--Ultimate Shield-->
+		<skill id="70" level="44" min_level="74" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="2" level="20" min_level="75" cost="1800000"/><!--Confusion-->
+		<skill id="53010" level="5" min_level="75" cost="1800000"/><!--Knight's Protection-->
+		<skill id="45250" level="25" min_level="75" cost="1800000"/><!--Drain HP-->
+		<skill id="70" level="45" min_level="75" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="335" level="1" min_level="41" cost="66000"/><!--Fortitude-->
+		<skill id="335" level="2" min_level="65" cost="850000"/><!--Fortitude-->
+		<skill id="47294" level="1" min_level="42" cost="66000"/><!--Life Steal-->
+		<skill id="47296" level="1" min_level="40" cost="56000"/><!--Knight's Magic Resistance-->
+		<skill id="47296" level="2" min_level="60" cost="550000"/><!--Knight's Magic Resistance-->
+		<skill id="47297" level="1" min_level="40" cost="56000"><!--Knight's Armor Mastery-->
+			<blocked_skills>
+				<skill id="232"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47297" level="2" min_level="50" cost="200000"/><!--Knight's Armor Mastery-->
+		<skill id="47297" level="3" min_level="60" cost="550000"/><!--Knight's Armor Mastery-->
+		<skill id="47297" level="4" min_level="70" cost="1600000"/><!--Knight's Armor Mastery-->
+		<skill id="47298" level="1" min_level="40" cost="56000"><!--Knight's Weapon Mastery-->
+			<blocked_skills>
+				<skill id="217"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47298" level="2" min_level="50" cost="200000"/><!--Knight's Weapon Mastery-->
+		<skill id="47298" level="3" min_level="60" cost="550000"/><!--Knight's Weapon Mastery-->
+		<skill id="47298" level="4" min_level="70" cost="1600000"/><!--Knight's Weapon Mastery-->
+	</normal_skill_tree>
+</list>

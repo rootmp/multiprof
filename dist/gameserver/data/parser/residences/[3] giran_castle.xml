@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "residence.dtd">
+<list>
+	<residence id="3" name="Giran" impl="Castle">
+		<available_functions>
+			<function type="RESTORE_HP" level="25"/>
+			<function type="RESTORE_HP" level="30"/>
+			<function type="RESTORE_MP" level="18"/>
+			<function type="RESTORE_MP" level="20"/>
+			<function type="RESTORE_EXP" level="19"/>
+			<function type="RESTORE_EXP" level="20"/>
+			<function type="TELEPORT" level="11"/>
+			<function type="TELEPORT" level="12"/>
+			<function type="SUPPORT" level="15"/>
+			<function type="SUPPORT" level="18"/>
+		</available_functions>
+		<banish_points>
+			<point x="107715" y="143852" z="-3472"/>
+			<point x="107864" y="142920" z="-3472"/>
+		</banish_points>
+		<owner_restart_points>
+			<point x="116540" y="146655" z="-1866"/>
+			<point x="116547" y="146340" z="-1866"/>
+			<point x="116661" y="146550" z="-1866"/>
+			<point x="116437" y="146591" z="-1866"/>
+		</owner_restart_points>
+		<other_restart_points>
+			<point x="107715" y="143852" z="-3472"/>
+			<point x="107864" y="142920" z="-3472"/>
+		</other_restart_points>
+		<chaos_restart_points>
+			<point x="107715" y="143852" z="-3472"/>
+			<point x="107864" y="142920" z="-3472"/>
+		</chaos_restart_points>
+		<merchant_guards>
+			<merchant_guard item_id="6064" npc_id="35030" max="2"/>
+			<merchant_guard item_id="6065" npc_id="35031" max="2"/>
+			<merchant_guard item_id="6066" npc_id="35032" max="5"/>
+			<merchant_guard item_id="6067" npc_id="35033" max="1"/>
+			<merchant_guard item_id="6068" npc_id="35034" max="1"/>
+			<merchant_guard item_id="6069" npc_id="35035" max="2"/>
+			<merchant_guard item_id="6070" npc_id="35036" max="2"/>
+			<merchant_guard item_id="6071" npc_id="35037" max="5"/>
+			<merchant_guard item_id="6072" npc_id="35038" max="1"/>
+			<merchant_guard item_id="6073" npc_id="35039" max="1"/>
+			<merchant_guard item_id="6135" npc_id="35020" max="5"/>
+			<merchant_guard item_id="6136" npc_id="35021" max="2"/>
+			<merchant_guard item_id="6137" npc_id="35022" max="10"/>
+			<merchant_guard item_id="6138" npc_id="35023" max="2"/>
+			<merchant_guard item_id="6139" npc_id="35024" max="2"/>
+			<merchant_guard item_id="6140" npc_id="35025" max="5"/>
+			<merchant_guard item_id="6141" npc_id="35026" max="2"/>
+			<merchant_guard item_id="6142" npc_id="35027" max="10"/>
+			<merchant_guard item_id="6143" npc_id="35028" max="2"/>
+			<merchant_guard item_id="6144" npc_id="35029" max="2"/>
+			<merchant_guard item_id="6195" npc_id="35040" max="2"/>
+			<merchant_guard item_id="6196" npc_id="35041" max="2"/>
+			<merchant_guard item_id="6197" npc_id="35042" max="5"/>
+			<merchant_guard item_id="6198" npc_id="35043" max="1"/>
+			<merchant_guard item_id="6199" npc_id="35044" max="1"/>
+			<merchant_guard item_id="6200" npc_id="35045" max="2"/>
+			<merchant_guard item_id="6201" npc_id="35046" max="2"/>
+			<merchant_guard item_id="6202" npc_id="35047" max="5"/>
+			<merchant_guard item_id="6203" npc_id="35048" max="1"/>
+			<merchant_guard item_id="6204" npc_id="35049" max="1"/>
+			<merchant_guard item_id="6255" npc_id="35050" max="5"/>
+			<merchant_guard item_id="6256" npc_id="35051" max="3"/>
+			<merchant_guard item_id="6257" npc_id="35052" max="10"/>
+			<merchant_guard item_id="6258" npc_id="35053" max="2"/>
+			<merchant_guard item_id="6259" npc_id="35054" max="2"/>
+			<merchant_guard item_id="6260" npc_id="35055" max="5"/>
+			<merchant_guard item_id="6261" npc_id="35056" max="3"/>
+			<merchant_guard item_id="6262" npc_id="35057" max="10"/>
+			<merchant_guard item_id="6263" npc_id="35058" max="2"/>
+			<merchant_guard item_id="6264" npc_id="35059" max="2"/>
+			<merchant_guard item_id="6299" npc_id="35060" max="1"/>
+			<merchant_guard item_id="6300" npc_id="35061" max="1"/>
+			<merchant_guard item_id="3986" npc_id="35010" max="5"/>
+			<merchant_guard item_id="3987" npc_id="35011" max="3"/>
+			<merchant_guard item_id="3988" npc_id="35012" max="10"/>
+			<merchant_guard item_id="3989" npc_id="35013" max="2"/>
+			<merchant_guard item_id="3990" npc_id="35014" max="2"/>
+			<merchant_guard item_id="3991" npc_id="35015" max="5"/>
+			<merchant_guard item_id="3992" npc_id="35016" max="3"/>
+			<merchant_guard item_id="3993" npc_id="35017" max="10"/>
+			<merchant_guard item_id="3994" npc_id="35018" max="2"/>
+			<merchant_guard item_id="3995" npc_id="35019" max="2"/>
+			<merchant_guard item_id="3996" npc_id="35176" max="1"/>
+			<merchant_guard item_id="3997" npc_id="35177" max="1"/>
+			<merchant_guard item_id="3998" npc_id="35178" max="1"/>
+		</merchant_guards>
+	</residence>
+</list>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "appearance_stones.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<config check_armor_type="true"/>
+	<!--Shifting types: NORMAL, BLESSED, FIXED, RESTORE-->
+	<!--Target types: WEAPON, ARMOR, ACCESSORY-->
+	<stone id="94042" target_type="WEAPON" shifting_type="FIXED" extract_id="0" item_type="SWORD,MAGIC_SWORD,DAGGER,BIG_SWORD,HAND_TO_HAND,POLE,BOW,BLUNT_WEAPON,BIG_BLUNT_WEAPON,MAGIC_BLUNT_WEAPON,BIG_MAGIC_BLUNT_WEAPON,DUAL_SWORD,DUAL_DAGGER"/>	<!-- Emerald Weapon Appearance Stone-->
+</list>

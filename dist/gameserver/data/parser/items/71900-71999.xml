@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="71900" name="Limited Sayha's Blessing (1-day)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.g_bm_limited_sayha_01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71901" name="Limited Sayha's Blessing (7-day)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.g_bm_limited_sayha_01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71905" name="Silver Strider Rider Scroll">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_transform_warrior_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71906" name="Black Strider Rider Scroll">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_transform_warrior_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71907" name="Iron Strider Rider Scroll">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_transform_warrior_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<armor id="71927" name="Ninja">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm2018_ninja_i01"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="1000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="71928" name="Cowboy">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm2018_cowboy_i01"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="1000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="71929" name="Steampunk">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchIcon.Icon.g_bm_costume_steampunk"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="1000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="71930" name="Qipao">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="br_L2Icon.qipao_armor_ul_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="71931" name="Traditional Taiwanese Costume (Top)">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys3.icon1.g_co_paiwan_u"/>
+		<set name="type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+	</armor>
+	<armor id="71932" name="Traditional Taiwanese Costume (Bottom)">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys3.icon1.g_co_paiwan_l"/>
+		<set name="type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+	</armor>
+	<armor id="71933" name="Traditional Taiwanese Costume (Gloves)">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys3.icon1.g_co_paiwan_g"/>
+		<set name="type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+	</armor>
+	<armor id="71934" name="Traditional Taiwanese Costume (Boots)">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys3.icon1.g_co_paiwan_b"/>
+		<set name="type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+	</armor>
+	<armor id="71935" name="Traditional Taiwanese Costume (Headgear)">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys3.icon1.g_co_paiwan_hair"/>
+		<set name="type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<etcitem id="71936" name="Spellbook: Ninja">
+		<set name="grind_commission" value="93000"/>
+		<set name="grind_point" value="4650000"/>
+		<set name="icon" value="icon.si_phanteon_book"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="9300000"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71937" name="Spellbook: Cowboy">
+		<set name="grind_commission" value="93000"/>
+		<set name="grind_point" value="4650000"/>
+		<set name="icon" value="icon.si_phanteon_book"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="9300000"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71938" name="Spellbook: Steampunk">
+		<set name="grind_commission" value="93000"/>
+		<set name="grind_point" value="4650000"/>
+		<set name="icon" value="icon.si_phanteon_book"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="9300000"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71939" name="Spellbook: Qipao">
+		<set name="grind_commission" value="93000"/>
+		<set name="grind_point" value="4650000"/>
+		<set name="icon" value="icon.si_phanteon_book"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="9300000"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71940" name="Spellbook: Traditional Taiwanese Costume">
+		<set name="grind_commission" value="93000"/>
+		<set name="grind_point" value="4650000"/>
+		<set name="icon" value="icon.si_phanteon_book"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="9300000"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71941" name="Oren Treasure Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_circlet_upgrade_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90907" min_count="20" max_count="20" chance="20.0" /> <!-- Soulshots Coupon -->
+			<capsuled_item id="49674" min_count="5" max_count="5" chance="20.0" /> <!-- Exp Scroll -->
+			<capsuled_item id="93486" min_count="1" max_count="1" chance="10.0" /> <!-- Scroll of Battle -->
+			<capsuled_item id="91712" min_count="5" max_count="5" chance="10.0" /> <!-- Sayha's Storm Lv. 3 -->
+			<capsuled_item id="90311" min_count="1" max_count="1" chance="5.63" /> <!-- Brooch Lv. 1 -->
+			<capsuled_item id="9589" min_count="1" max_count="1" chance="5.63" /> <!-- Talisman Bracelet Lv. 1 -->
+			<capsuled_item id="93304" min_count="1" max_count="1" chance="5.63" /> <!-- Packaging: Pendant of Einhasad Lv. 1 -->
+			<capsuled_item id="93080" min_count="1" max_count="1" chance="5.641" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="93080" min_count="2" max_count="2" chance="5.63" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="93080" min_count="3" max_count="3" chance="5.63" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="93080" min_count="10" max_count="10" chance="5.63" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="71936" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook - Ninja -->
+			<capsuled_item id="92401" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook - White Guardian -->
+			<capsuled_item id="93103" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook - Holy Beam -->
+			<capsuled_item id="93387" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook - Ultimate Death Knight Form -->
+			<capsuled_item id="93080" min_count="100" max_count="100" chance="0.1" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="93268" min_count="1" max_count="1" chance="0.01" /> <!-- Blessed Scroll: Enchant A-grade Weapon -->
+			<capsuled_item id="93269" min_count="1" max_count="1" chance="0.01" /> <!-- Blessed Scroll: Enchant A-grade Armor -->
+			<capsuled_item id="93270" min_count="1" max_count="1" chance="0.01" /> <!-- Cursed Scroll: Enchant A-grade Weapon -->
+			<capsuled_item id="93271" min_count="1" max_count="1" chance="0.01" /> <!-- Cursed Scroll: Enchant A-grade Armor -->
+			<capsuled_item id="93448" min_count="1" max_count="1" chance="0.01" /> <!-- A-grade Enhanced Weapon Coupon -->
+			<capsuled_item id="93449" min_count="1" max_count="1" chance="0.01" /> <!-- A-grade Enhanced Armor Coupon -->
+			<capsuled_item id="92990" min_count="1" max_count="1" chance="0.001" /> <!-- Boss Weapon Chest -->
+			<capsuled_item id="91163" min_count="1" max_count="1" chance="0.001" /> <!-- Rune Anakim Lv. 1 -->
+			<capsuled_item id="91173" min_count="1" max_count="1" chance="0.001" /> <!-- Rune Lilith Lv. 1 -->
+			<capsuled_item id="6660" min_count="1" max_count="1" chance="0.001" /> <!-- Queen Ant's Ring Lv. 1 -->
+			<capsuled_item id="6661" min_count="1" max_count="1" chance="0.001" /> <!-- Orfen's Earring Lv. 1 -->
+			<capsuled_item id="6662" min_count="1" max_count="1" chance="0.001" /> <!-- Ring of the Core Lv. 1 -->
+			<capsuled_item id="49580" min_count="1" max_count="1" chance="0.001" /> <!-- Baium's Ring Lv. 1 -->
+			<capsuled_item id="49683" min_count="1" max_count="1" chance="0.001" /> <!-- Baium's Talisman -->
+			<capsuled_item id="90763" min_count="1" max_count="1" chance="0.001" /> <!-- Zaken's Earring Lv. 1 -->
+			<capsuled_item id="93094" min_count="1" max_count="1" chance="0.001" /> <!-- Symbol of Greatness -->
+			<capsuled_item id="93120" min_count="1" max_count="1" chance="0.001" /> <!-- Symbol of Majesty Sealed -->
+			<capsuled_item id="93139" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Breastplate -->
+			<capsuled_item id="93140" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Legguards -->
+			<capsuled_item id="93141" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Breastplate Sealed -->
+			<capsuled_item id="93142" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Legguards Sealed -->
+			<capsuled_item id="93315" min_count="1" max_count="1" chance="0.001" /> <!-- Lightning Leather Armor -->
+			<capsuled_item id="93316" min_count="1" max_count="1" chance="0.001" /> <!-- Leather Pants Zippers -->
+			<capsuled_item id="93317" min_count="1" max_count="1" chance="0.001" /> <!-- Lightning Leather Armor Sealed -->
+			<capsuled_item id="93318" min_count="1" max_count="1" chance="0.001" /> <!-- Zipper Leather Pants Sealed -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="71942" name="Oren Treasure Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_circlet_upgrade_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90907" min_count="20" max_count="20" chance="20.0" /> <!-- Soulshots Coupon -->
+			<capsuled_item id="49674" min_count="5" max_count="5" chance="20.0" /> <!-- Exp Scroll -->
+			<capsuled_item id="93486" min_count="1" max_count="1" chance="10.0" /> <!-- Scroll of Battle -->
+			<capsuled_item id="91712" min_count="5" max_count="5" chance="10.0" /> <!-- Sayha's Storm Lv. 3 -->
+			<capsuled_item id="90311" min_count="1" max_count="1" chance="5.63" /> <!-- Brooch Lv. 1 -->
+			<capsuled_item id="9589" min_count="1" max_count="1" chance="5.63" /> <!-- Talisman Bracelet Lv. 1 -->
+			<capsuled_item id="93304" min_count="1" max_count="1" chance="5.63" /> <!-- Packaging: Pendant of Einhasad Lv. 1 -->
+			<capsuled_item id="93080" min_count="1" max_count="1" chance="5.641" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="93080" min_count="2" max_count="2" chance="5.63" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="93080" min_count="3" max_count="3" chance="5.63" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="93080" min_count="10" max_count="10" chance="5.63" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="71936" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook - Ninja -->
+			<capsuled_item id="92401" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook - White Guardian -->
+			<capsuled_item id="93103" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook - Holy Beam -->
+			<capsuled_item id="93387" min_count="1" max_count="1" chance="0.1" /> <!-- Spellbook - Ultimate Death Knight Form -->
+			<capsuled_item id="93080" min_count="100" max_count="100" chance="0.1" /> <!-- Random Casting Charge Stone - 1 Charge -->
+			<capsuled_item id="93268" min_count="1" max_count="1" chance="0.01" /> <!-- Blessed Scroll: Enchant A-grade Weapon -->
+			<capsuled_item id="93269" min_count="1" max_count="1" chance="0.01" /> <!-- Blessed Scroll: Enchant A-grade Armor -->
+			<capsuled_item id="93270" min_count="1" max_count="1" chance="0.01" /> <!-- Cursed Scroll: Enchant A-grade Weapon -->
+			<capsuled_item id="93271" min_count="1" max_count="1" chance="0.01" /> <!-- Cursed Scroll: Enchant A-grade Armor -->
+			<capsuled_item id="93448" min_count="1" max_count="1" chance="0.01" /> <!-- A-grade Enhanced Weapon Coupon -->
+			<capsuled_item id="93449" min_count="1" max_count="1" chance="0.01" /> <!-- A-grade Enhanced Armor Coupon -->
+			<capsuled_item id="92990" min_count="1" max_count="1" chance="0.001" /> <!-- Boss Weapon Chest -->
+			<capsuled_item id="91163" min_count="1" max_count="1" chance="0.001" /> <!-- Rune Anakim Lv. 1 -->
+			<capsuled_item id="91173" min_count="1" max_count="1" chance="0.001" /> <!-- Rune Lilith Lv. 1 -->
+			<capsuled_item id="6660" min_count="1" max_count="1" chance="0.001" /> <!-- Queen Ant's Ring Lv. 1 -->
+			<capsuled_item id="6661" min_count="1" max_count="1" chance="0.001" /> <!-- Orfen's Earring Lv. 1 -->
+			<capsuled_item id="6662" min_count="1" max_count="1" chance="0.001" /> <!-- Ring of the Core Lv. 1 -->
+			<capsuled_item id="49580" min_count="1" max_count="1" chance="0.001" /> <!-- Baium's Ring Lv. 1 -->
+			<capsuled_item id="49683" min_count="1" max_count="1" chance="0.001" /> <!-- Baium's Talisman -->
+			<capsuled_item id="90763" min_count="1" max_count="1" chance="0.001" /> <!-- Zaken's Earring Lv. 1 -->
+			<capsuled_item id="93094" min_count="1" max_count="1" chance="0.001" /> <!-- Symbol of Greatness -->
+			<capsuled_item id="93120" min_count="1" max_count="1" chance="0.001" /> <!-- Symbol of Majesty Sealed -->
+			<capsuled_item id="93139" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Breastplate -->
+			<capsuled_item id="93140" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Legguards -->
+			<capsuled_item id="93141" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Breastplate Sealed -->
+			<capsuled_item id="93142" min_count="1" max_count="1" chance="0.001" /> <!-- Ice Crystal Legguards Sealed -->
+			<capsuled_item id="93315" min_count="1" max_count="1" chance="0.001" /> <!-- Lightning Leather Armor -->
+			<capsuled_item id="93316" min_count="1" max_count="1" chance="0.001" /> <!-- Leather Pants Zippers -->
+			<capsuled_item id="93317" min_count="1" max_count="1" chance="0.001" /> <!-- Lightning Leather Armor Sealed -->
+			<capsuled_item id="93318" min_count="1" max_count="1" chance="0.001" /> <!-- Zipper Leather Pants Sealed -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="71949" name="Dragon's Treasure Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_dragon_present"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71950" name="Dragon Coin">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_11th_token"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+	</etcitem>
+	<etcitem id="71966" name="XP Bonus Rune" add_name="7-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+	</etcitem>
+	<etcitem id="71967" name="XP Bonus Rune Pack (7-day)">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71973" name="+3 ~ +8 Talisman/ Belt Coupon Box">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_gold_lure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93717" count="1" chance="0.01"/><!--+3 Talisman/ Belt Coupon (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="93718" count="1" chance="0.01"/><!--+4 Talisman/ Belt Coupon (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="93719" count="1" chance="0.01"/><!--+5 Talisman/ Belt Coupon (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="93720" count="1" chance="0.01"/><!--+6 Talisman/ Belt Coupon (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="93721" count="1" chance="0.01"/><!--+7 Talisman/ Belt Coupon (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="93722" count="1" chance="0.01"/><!--+8 Talisman/ Belt Coupon (Time-limited)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="71974" name="Mysterious Pack Lv. 1">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_pi_box_joy_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71975" name="Mysterious Pack Lv. 2">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.npoint_earthworm_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71976" name="Mysterious Pack Lv. 3">
+		<set name="icon" value="icon.etc_pi_box_belief_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71977" name="Mysterious Pack Lv. 4">
+		<set name="icon" value="icon.npoint_valakas_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71978" name="Mysterious Pack Lv. 5">
+		<set name="icon" value="icon.npoint_tauti_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="71983" name="Sealed Treasure Chest">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_readybox_gold"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92314" min_count="200" max_count="200" chance="0.5"/> <!-- Giran Seal -->
+			<capsuled_item id="90907" min_count="10" max_count="10" chance="10.0"/> <!-- Soulshot Ticket -->
+			<capsuled_item id="49674" min_count="2" max_count="2" chance="10.0"/> <!-- XP Growth Scroll -->
+			<capsuled_item id="91031" min_count="1" max_count="1" chance="6.147"/> <!-- Water Spirit Evolution Stone -->
+			<capsuled_item id="91032" min_count="1" max_count="1" chance="6.147"/> <!-- Fire Spirit Evolution Stone -->
+			<capsuled_item id="91033" min_count="1" max_count="1" chance="6.147"/> <!-- Wind Spirit Evolution Stone -->
+			<capsuled_item id="91034" min_count="1" max_count="1" chance="6.147"/> <!-- Earth Spirit Evolution Stone -->
+			<capsuled_item id="91076" min_count="1" max_count="1" chance="6.147"/> <!-- Venir's Talisman Fragment -->
+			<capsuled_item id="91641" min_count="2" max_count="2" chance="10.0"/> <!-- Sayha's Blessing -->
+			<capsuled_item id="91712" min_count="2" max_count="2" chance="10.0"/> <!-- Sayha's Storm Lv. 3 -->
+			<capsuled_item id="91780" min_count="2" max_count="2" chance="6.147"/> <!-- Battle Scroll -->
+			<capsuled_item id="93486" min_count="2" max_count="2" chance="6.147"/> <!-- Combat Scroll -->
+			<capsuled_item id="9591" min_count="1" max_count="1" chance="3.0"/> <!-- Talisman Bracelet Lv. 3 -->
+			<capsuled_item id="90890" min_count="1" max_count="1" chance="3.0"/> <!-- Agathion Bracelet Lv. 3 -->
+			<capsuled_item id="90934" min_count="1" max_count="1" chance="3.0"/> <!-- Brooch Lv. 3 -->
+			<capsuled_item id="92020" min_count="1" max_count="1" chance="1.0"/> <!-- Enchant Kit: Talisman of Eva -->
+			<capsuled_item id="93268" min_count="1" max_count="1" chance="1.0"/> <!-- Improved Scroll: Enchant A-grade Weapon -->
+			<capsuled_item id="93269" min_count="1" max_count="1" chance="1.0"/> <!-- Improved Scroll: Enchant A-grade Armor -->
+			<capsuled_item id="93270" min_count="1" max_count="1" chance="1.0"/> <!-- Cursed Scroll: Enchant A-grade Weapon -->
+			<capsuled_item id="93271" min_count="1" max_count="1" chance="1.0"/> <!-- Cursed Scroll: Enchant A-grade Armor -->
+			<capsuled_item id="91864" min_count="1" max_count="1" chance="0.5"/> <!-- Dragon Belt Pack -->
+			<capsuled_item id="92034" min_count="1" max_count="1" chance="0.5"/> <!-- Reinforced Jewelry Box -->
+			<capsuled_item id="93303" min_count="1" max_count="1" chance="0.5"/> <!-- Package: Cloak of Protection -->
+			<capsuled_item id="92401" min_count="1" max_count="1" chance="0.1"/> <!-- Spellbook: White Guardian -->
+			<capsuled_item id="93103" min_count="1" max_count="1" chance="0.1"/> <!-- Spellbook: Divine Beam -->
+			<capsuled_item id="93387" min_count="1" max_count="1" chance="0.1"/> <!-- Spellbook: Ultimate Death Knight Transformation -->
+			<capsuled_item id="93448" min_count="1" max_count="1" chance="0.1"/> <!-- A-grade Weapon Coupon -->
+			<capsuled_item id="93449" min_count="1" max_count="1" chance="0.1"/> <!-- A-grade Armor Coupon -->
+			<capsuled_item id="93930" min_count="1" max_count="1" chance="0.1"/> <!-- Special Armor Coupon -->
+			<capsuled_item id="94156" min_count="1" max_count="1" chance="0.1"/> <!-- Package: Baium Doll Lv. 1 -->
+			<capsuled_item id="94159" min_count="1" max_count="1" chance="0.1"/> <!-- Package: Queen Ant Doll Lv. 1 -->
+			<capsuled_item id="94162" min_count="1" max_count="1" chance="0.1"/> <!-- Package: Orfen Doll Lv. 1 -->
+			<capsuled_item id="6660" min_count="1" max_count="1" chance="0.01"/> <!-- Queen Ant's Ring -->
+			<capsuled_item id="6661" min_count="1" max_count="1" chance="0.01"/> <!-- Orfen's Earring -->
+			<capsuled_item id="6662" min_count="1" max_count="1" chance="0.01"/> <!-- Ring of Core -->
+			<capsuled_item id="49580" min_count="1" max_count="1" chance="0.01"/> <!-- Baium's Ring -->
+			<capsuled_item id="49683" min_count="1" max_count="1" chance="0.01"/> <!-- Talisman of Baium -->
+			<capsuled_item id="90763" min_count="1" max_count="1" chance="0.01"/> <!-- Zaken's Earring -->
+			<capsuled_item id="92404" min_count="1" max_count="1" chance="0.001"/> <!-- Zaken's Blood Sword -->
+			<capsuled_item id="92405" min_count="1" max_count="1" chance="0.001"/> <!-- Core's Plasmic Bow -->
+			<capsuled_item id="92407" min_count="1" max_count="1" chance="0.001"/> <!-- Orfen's Venom Sword -->
+			<capsuled_item id="92408" min_count="1" max_count="1" chance="0.001"/> <!-- Baium's Thunder Breaker -->
+			<capsuled_item id="92421" min_count="1" max_count="1" chance="0.001"/> <!-- Queen Ant's Stone Breaker -->
+			<capsuled_item id="93139" min_count="1" max_count="1" chance="0.001"/> <!-- Ice Crystal Breastplate -->
+			<capsuled_item id="93140" min_count="1" max_count="1" chance="0.001"/> <!-- Ice Crystal Gaiters -->
+			<capsuled_item id="93315" min_count="1" max_count="1" chance="0.001"/> <!-- Leather Armor of Lightning -->
+			<capsuled_item id="93316" min_count="1" max_count="1" chance="0.001"/> <!-- Leather Leggings of Lightning -->
+			<capsuled_item id="93733" min_count="1" max_count="1" chance="0.001"/> <!-- Flaming Tunic -->
+			<capsuled_item id="93734" min_count="1" max_count="1" chance="0.001"/> <!-- Flaming Stockings -->
+		</capsuled_items>
+	</etcitem>
+</list>

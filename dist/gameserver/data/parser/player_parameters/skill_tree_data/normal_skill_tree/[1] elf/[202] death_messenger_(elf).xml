@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="202"><!--Death Messenger-->
+		<skill id="45354" level="8" min_level="40" cost="80000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="8" min_level="40" cost="80000"/><!--Death Sword Mastery-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="61" level="2" min_level="40" cost="80000"/><!--Elven Spirit-->
+		<skill id="45329" level="1" min_level="40" cost="80000"><!--Death Guard-->
+			<required_items>
+				<item id="93388;95508" count="1"/><!--Spellbook: Death Guard-->
+			</required_items>
+		</skill>
+		<skill id="45335" level="1" min_level="40" cost="80000"/><!--Stigma of Death-->
+		<skill id="45359" level="1" min_level="40" cost="80000"><!--Drain Magic Energy-->
+			<required_items>
+				<item id="93633;95511" count="1"/><!--Spellbook: Drain Magic Energy-->
+			</required_items>
+		</skill>
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="102" level="2" min_level="40" cost="80000"/><!--Entangle-->
+		<skill id="45352" level="2" min_level="40"/><!--Death Points-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="45303" level="1" min_level="40" cost="80000"/><!--Wipeout-->
+		<skill id="45350" level="2" min_level="40"/><!--Undying Body-->
+		<skill id="45342" level="1" min_level="40" cost="80000"/><!--Death Blind-->
+		<skill id="45311" level="1" min_level="40" cost="80000"/><!--Deadly Pull-->
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="70" level="10" min_level="40" cost="80000"/><!--Emergency Rescue-->
+		<skill id="70" level="11" min_level="41" cost="80000"/><!--Emergency Rescue-->
+		<skill id="70" level="12" min_level="42" cost="80000"/><!--Emergency Rescue-->
+		<skill id="102" level="3" min_level="43" cost="80000"/><!--Entangle-->
+		<skill id="70" level="13" min_level="43" cost="80000"/><!--Emergency Rescue-->
+		<skill id="45301" level="5" min_level="44" cost="120000"/><!--Punishment-->
+		<skill id="70" level="14" min_level="44" cost="120000"/><!--Emergency Rescue-->
+		<skill id="45354" level="9" min_level="45" cost="120000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="9" min_level="45" cost="120000"/><!--Death Sword Mastery-->
+		<skill id="45342" level="2" min_level="45" cost="120000"/><!--Death Blind-->
+		<skill id="45311" level="2" min_level="45" cost="120000"/><!--Deadly Pull-->
+		<skill id="70" level="15" min_level="45" cost="120000"/><!--Emergency Rescue-->
+		<skill id="102" level="4" min_level="46" cost="120000"/><!--Entangle-->
+		<skill id="70" level="16" min_level="46" cost="120000"/><!--Emergency Rescue-->
+		<skill id="70" level="17" min_level="47" cost="120000"/><!--Emergency Rescue-->
+		<skill id="70" level="18" min_level="48" cost="120000"/><!--Emergency Rescue-->
+		<skill id="102" level="5" min_level="49" cost="200000"/><!--Entangle-->
+		<skill id="70" level="19" min_level="49" cost="200000"/><!--Emergency Rescue-->
+		<skill id="45330" level="1" min_level="50" cost="200000"/><!--Dark Aura-->
+		<skill id="45354" level="10" min_level="50" cost="200000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="10" min_level="50" cost="200000"/><!--Death Sword Mastery-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45301" level="6" min_level="50" cost="200000"/><!--Punishment-->
+		<skill id="45307" level="1" min_level="50" cost="200000"/><!--Fist of Fury-->
+		<skill id="45303" level="2" min_level="50" cost="200000"/><!--Wipeout-->
+		<skill id="45328" level="2" min_level="50" cost="200000"/><!--Roar of Death-->
+		<skill id="45342" level="3" min_level="50" cost="200000"/><!--Death Blind-->
+		<skill id="45311" level="3" min_level="50" cost="200000"/><!--Deadly Pull-->
+		<skill id="230" level="2" min_level="50" cost="200000"/><!--Sprint-->
+		<skill id="70" level="20" min_level="50" cost="200000"/><!--Emergency Rescue-->
+		<skill id="70" level="21" min_level="51" cost="200000"/><!--Emergency Rescue-->
+		<skill id="1405" level="1" min_level="52" cost="200000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="45354" level="11" min_level="52" cost="200000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="11" min_level="52" cost="200000"/><!--Death Sword Mastery-->
+		<skill id="102" level="6" min_level="52" cost="200000"/><!--Entangle-->
+		<skill id="70" level="22" min_level="52" cost="200000"/><!--Emergency Rescue-->
+		<skill id="45307" level="2" min_level="53" cost="400000"/><!--Fist of Fury-->
+		<skill id="70" level="23" min_level="53" cost="400000"/><!--Emergency Rescue-->
+		<skill id="45354" level="12" min_level="54" cost="400000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="12" min_level="54" cost="400000"/><!--Death Sword Mastery-->
+		<skill id="45301" level="7" min_level="54" cost="400000"/><!--Punishment-->
+		<skill id="70" level="24" min_level="54" cost="400000"/><!--Emergency Rescue-->
+		<skill id="45339" level="1" min_level="55" cost="450000"><!--Bone Cage-->
+			<required_items>
+				<item id="93392;95509" count="1"/><!--Spellbook: Bone Cage-->
+			</required_items>
+		</skill>
+		<skill id="102" level="7" min_level="55" cost="450000"/><!--Entangle-->
+		<skill id="45303" level="3" min_level="55" cost="450000"/><!--Wipeout-->
+		<skill id="45342" level="4" min_level="55" cost="450000"/><!--Death Blind-->
+		<skill id="70" level="25" min_level="55" cost="450000"/><!--Emergency Rescue-->
+		<skill id="45354" level="13" min_level="56" cost="500000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="13" min_level="56" cost="500000"/><!--Death Sword Mastery-->
+		<skill id="45307" level="3" min_level="56" cost="500000"/><!--Fist of Fury-->
+		<skill id="70" level="26" min_level="56" cost="500000"/><!--Emergency Rescue-->
+		<skill id="45301" level="8" min_level="57" cost="550000"/><!--Punishment-->
+		<skill id="70" level="27" min_level="57" cost="550000"/><!--Emergency Rescue-->
+		<skill id="45354" level="14" min_level="58" cost="600000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="14" min_level="58" cost="600000"/><!--Death Sword Mastery-->
+		<skill id="102" level="8" min_level="58" cost="600000"/><!--Entangle-->
+		<skill id="70" level="28" min_level="58" cost="600000"/><!--Emergency Rescue-->
+		<skill id="45307" level="4" min_level="59" cost="700000"/><!--Fist of Fury-->
+		<skill id="70" level="29" min_level="59" cost="700000"/><!--Emergency Rescue-->
+		<skill id="45354" level="15" min_level="60" cost="800000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="15" min_level="60" cost="800000"/><!--Death Sword Mastery-->
+		<skill id="45324" level="1" min_level="60" cost="800000"><!--Call of Frost-->
+			<required_items>
+				<item id="90045" count="3"/><!--Magical Tablet-->
+			</required_items>
+		</skill>
+		<skill id="45301" level="9" min_level="60" cost="800000"/><!--Punishment-->
+		<skill id="45339" level="2" min_level="60" cost="800000"/><!--Bone Cage-->
+		<skill id="45335" level="2" min_level="60" cost="800000"/><!--Stigma of Death-->
+		<skill id="45359" level="2" min_level="60" cost="800000"><!--Drain Magic Energy-->
+			<required_items>
+				<item id="93633;95511" count="1"/><!--Spellbook: Drain Magic Energy-->
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="102" level="9" min_level="60" cost="800000"/><!--Entangle-->
+		<skill id="45303" level="4" min_level="60" cost="800000"/><!--Wipeout-->
+		<skill id="45350" level="3" min_level="60"/><!--Undying Body-->
+		<skill id="45342" level="5" min_level="60" cost="800000"/><!--Death Blind-->
+		<skill id="45311" level="4" min_level="60" cost="800000"/><!--Deadly Pull-->
+		<skill id="77" level="3" min_level="60" cost="800000"/><!--Ability to Attack-->
+		<skill id="70" level="30" min_level="60" cost="800000"/><!--Emergency Rescue-->
+		<skill id="1405" level="2" min_level="61" cost="900000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="70" level="31" min_level="61" cost="900000"/><!--Emergency Rescue-->
+		<skill id="45354" level="16" min_level="62" cost="1000000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="16" min_level="62" cost="1000000"/><!--Death Sword Mastery-->
+		<skill id="45307" level="5" min_level="62" cost="1000000"/><!--Fist of Fury-->
+		<skill id="102" level="10" min_level="62" cost="1000000"/><!--Entangle-->
+		<skill id="70" level="32" min_level="62" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="45301" level="10" min_level="63" cost="1100000"/><!--Punishment-->
+		<skill id="70" level="33" min_level="63" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="45354" level="17" min_level="64" cost="1200000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="17" min_level="64" cost="1200000"/><!--Death Sword Mastery-->
+		<skill id="102" level="11" min_level="64" cost="1200000"/><!--Entangle-->
+		<skill id="70" level="34" min_level="64" cost="1200000"/><!--Emergency Rescue-->
+		<skill id="45307" level="6" min_level="65" cost="1300000"/><!--Fist of Fury-->
+		<skill id="45303" level="5" min_level="65" cost="1300000"/><!--Wipeout-->
+		<skill id="45342" level="6" min_level="65" cost="1300000"/><!--Death Blind-->
+		<skill id="45311" level="5" min_level="65" cost="1300000"/><!--Deadly Pull-->
+		<skill id="70" level="35" min_level="65" cost="1300000"/><!--Emergency Rescue-->
+		<skill id="45354" level="18" min_level="66" cost="1400000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="18" min_level="66" cost="1400000"/><!--Death Sword Mastery-->
+		<skill id="45301" level="11" min_level="66" cost="1400000"/><!--Punishment-->
+		<skill id="102" level="12" min_level="66" cost="1400000"/><!--Entangle-->
+		<skill id="70" level="36" min_level="66" cost="1400000"/><!--Emergency Rescue-->
+		<skill id="70" level="37" min_level="67" cost="1500000"/><!--Emergency Rescue-->
+		<skill id="45354" level="19" min_level="68" cost="1600000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="19" min_level="68" cost="1600000"/><!--Death Sword Mastery-->
+		<skill id="45307" level="7" min_level="68" cost="1600000"/><!--Fist of Fury-->
+		<skill id="102" level="13" min_level="68" cost="1600000"/><!--Entangle-->
+		<skill id="70" level="38" min_level="68" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="45301" level="12" min_level="69" cost="1700000"/><!--Punishment-->
+		<skill id="70" level="39" min_level="69" cost="1700000"/><!--Emergency Rescue-->
+		<skill id="45337" level="1" min_level="70" cost="1800000"/><!--Acceleration-->
+		<skill id="45354" level="20" min_level="70" cost="1800000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="20" min_level="70" cost="1800000"/><!--Death Sword Mastery-->
+		<skill id="45339" level="3" min_level="70" cost="1800000"/><!--Bone Cage-->
+		<skill id="45335" level="3" min_level="70" cost="1800000"/><!--Stigma of Death-->
+		<skill id="45359" level="3" min_level="70" cost="1800000"><!--Drain Magic Energy-->
+			<required_items>
+				<item id="93633;95511" count="1"/><!--Spellbook: Drain Magic Energy-->
+				<item id="57" count="30000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="102" level="14" min_level="70" cost="1800000"/><!--Entangle-->
+		<skill id="45333" level="1" min_level="70" cost="1800000"/><!--Flaming Body-->
+		<skill id="45303" level="6" min_level="70" cost="1800000"/><!--Wipeout-->
+		<skill id="45328" level="3" min_level="70" cost="1800000"/><!--Roar of Death-->
+		<skill id="45350" level="4" min_level="70"/><!--Undying Body-->
+		<skill id="45342" level="7" min_level="70" cost="1800000"/><!--Death Blind-->
+		<skill id="45311" level="6" min_level="70" cost="1800000"/><!--Deadly Pull-->
+		<skill id="70" level="40" min_level="70" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="45307" level="8" min_level="71" cost="1900000"/><!--Fist of Fury-->
+		<skill id="70" level="41" min_level="71" cost="1900000"/><!--Emergency Rescue-->
+		<skill id="45354" level="21" min_level="72" cost="2000000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="21" min_level="72" cost="2000000"/><!--Death Sword Mastery-->
+		<skill id="45301" level="13" min_level="72" cost="2000000"/><!--Punishment-->
+		<skill id="102" level="15" min_level="72" cost="2000000"/><!--Entangle-->
+		<skill id="45342" level="8" min_level="72" cost="2000000"/><!--Death Blind-->
+		<skill id="70" level="42" min_level="72" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="70" level="43" min_level="73" cost="2100000"/><!--Emergency Rescue-->
+		<skill id="45354" level="22" min_level="74" cost="2200000"/><!--Death Armor Mastery-->
+		<skill id="45353" level="22" min_level="74" cost="2200000"/><!--Death Sword Mastery-->
+		<skill id="45307" level="9" min_level="74" cost="2200000"/><!--Fist of Fury-->
+		<skill id="102" level="16" min_level="74" cost="2200000"/><!--Entangle-->
+		<skill id="45342" level="9" min_level="74" cost="2200000"/><!--Death Blind-->
+		<skill id="70" level="44" min_level="74" cost="2200000"/><!--Emergency Rescue-->
+		<skill id="45301" level="14" min_level="75" cost="2300000"/><!--Punishment-->
+		<skill id="45339" level="4" min_level="75" cost="2300000"/><!--Bone Cage-->
+		<skill id="45333" level="2" min_level="75" cost="2300000"/><!--Flaming Body-->
+		<skill id="45303" level="7" min_level="75" cost="2300000"/><!--Wipeout-->
+		<skill id="45342" level="10" min_level="75" cost="2300000"/><!--Death Blind-->
+		<skill id="45311" level="7" min_level="75" cost="2300000"/><!--Deadly Pull-->
+		<skill id="70" level="45" min_level="75" cost="2300000"/><!--Emergency Rescue-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45184" level="3" min_level="60"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47284" level="2" min_level="40" cost="80000"/><!--Slowdown-->
+		<skill id="47284" level="3" min_level="60" cost="800000"/><!--Slowdown-->
+	</normal_skill_tree>
+</list>

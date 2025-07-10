@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="1785" name="Soulstone">
+		<set name="grind_commission" value="3"/>
+		<set name="grind_point" value="125"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_crystal_white_i00"/>
+		<set name="price" value="250"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="1786" name="Recipe: Broadsword (100%)">
+		<set name="grind_commission" value="4"/>
+		<set name="grind_point" value="156"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="3125"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1787" name="Recipe: Willow Staff">
+		<set name="grind_commission" value="4"/>
+		<set name="grind_point" value="156"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="3125"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1788" name="Recipe: Bow">
+		<set name="grind_commission" value="4"/>
+		<set name="grind_point" value="156"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="3125"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1789" name="Recipe: Cedar Staff">
+		<set name="grind_commission" value="14"/>
+		<set name="grind_point" value="676"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="13525"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1790" name="Recipe: Dirk">
+		<set name="grind_commission" value="14"/>
+		<set name="grind_point" value="676"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="13525"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1791" name="Recipe: Brandish">
+		<set name="grind_commission" value="14"/>
+		<set name="grind_point" value="676"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="13525"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1792" name="Recipe: Short Spear">
+		<set name="grind_commission" value="34"/>
+		<set name="grind_point" value="1700"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="34000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1793" name="Recipe: Sword of Reflection">
+		<set name="grind_commission" value="34"/>
+		<set name="grind_point" value="1700"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="34000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1794" name="Recipe: Forest Bow">
+		<set name="grind_commission" value="34"/>
+		<set name="grind_point" value="1700"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="34000"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1795" name="Recipe: Leather Shoes">
+		<set name="grind_commission" value="1"/>
+		<set name="grind_point" value="33"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="663"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1796" name="Recipe: Leather Tunic">
+		<set name="grind_commission" value="2"/>
+		<set name="grind_point" value="99"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="1990"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1797" name="Recipe: Leather Stockings">
+		<set name="grind_commission" value="2"/>
+		<set name="grind_point" value="62"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="1243"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1798" name="Recipe: Leather Helmet">
+		<set name="grind_commission" value="3"/>
+		<set name="grind_point" value="127"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="2550"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="1799" name="Recipe: Leather Gloves">
+		<set name="grind_commission" value="2"/>
+		<set name="grind_point" value="84"/>
+		<set name="type" value="RECIPE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_recipe_white_i00"/>
+		<set name="price" value="1693"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+</list>

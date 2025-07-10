@@ -1,0 +1,74 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="211" name="Transcendent Instance Zone 70" maxChannels="100" collapseIfEmpty="1" timelimit="15" dispelBuffs="false">
+		<level min="70" max="79"/>
+		<party min="1" max="1"/>
+		<teleport loc="168280 29128 -3663"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+        <spawns>
+			<spawn mobId="34122" type="point" respawn="0"> <!-- Bunch -->
+				<coords loc="168408 28792 -3625 15747"/>
+			</spawn>
+			<group name="transcendent_70_variant_1_1" spawned="false"/>
+			<group name="transcendent_70_variant_1_2" spawned="false"/>
+			<group name="transcendent_70_variant_1_3" spawned="false"/>
+			<group name="transcendent_70_variant_1_4" spawned="false"/>
+			<group name="transcendent_70_variant_1_5" spawned="false"/>
+			<group name="transcendent_70_variant_1_6" spawned="false"/>
+			<group name="transcendent_70_variant_1_7" spawned="false"/>
+			<group name="transcendent_70_variant_1_8" spawned="false"/>
+			<group name="transcendent_70_variant_1_9" spawned="false"/>
+			<group name="transcendent_70_variant_1_10" spawned="false"/>
+			<group name="transcendent_70_variant_1_11" spawned="false"/>
+			<group name="transcendent_70_variant_1_12" spawned="false"/>
+			<group name="transcendent_70_variant_1_13" spawned="false"/>
+			<group name="transcendent_70_variant_1_14" spawned="false"/>
+			<group name="transcendent_70_variant_1_15" spawned="false"/>
+			<group name="transcendent_70_variant_2_1" spawned="false"/>
+			<group name="transcendent_70_variant_2_2" spawned="false"/>
+			<group name="transcendent_70_variant_2_3" spawned="false"/>
+			<group name="transcendent_70_variant_2_4" spawned="false"/>
+			<group name="transcendent_70_variant_2_5" spawned="false"/>
+			<group name="transcendent_70_variant_2_6" spawned="false"/>
+			<group name="transcendent_70_variant_2_7" spawned="false"/>
+			<group name="transcendent_70_variant_2_8" spawned="false"/>
+			<group name="transcendent_70_variant_2_9" spawned="false"/>
+			<group name="transcendent_70_variant_2_10" spawned="false"/>
+			<group name="transcendent_70_variant_2_11" spawned="false"/>
+			<group name="transcendent_70_variant_2_12" spawned="false"/>
+			<group name="transcendent_70_variant_2_13" spawned="false"/>
+			<group name="transcendent_70_variant_2_14" spawned="false"/>
+			<group name="transcendent_70_variant_2_15" spawned="false"/>
+			<group name="transcendent_70_variant_3_1" spawned="false"/>
+			<group name="transcendent_70_variant_3_2" spawned="false"/>
+			<group name="transcendent_70_variant_3_3" spawned="false"/>
+			<group name="transcendent_70_variant_3_4" spawned="false"/>
+			<group name="transcendent_70_variant_3_5" spawned="false"/>
+			<group name="transcendent_70_variant_3_6" spawned="false"/>
+			<group name="transcendent_70_variant_3_7" spawned="false"/>
+			<group name="transcendent_70_variant_3_8" spawned="false"/>
+			<group name="transcendent_70_variant_3_9" spawned="false"/>
+			<group name="transcendent_70_variant_3_10" spawned="false"/>
+			<group name="transcendent_70_variant_3_11" spawned="false"/>
+			<group name="transcendent_70_variant_3_12" spawned="false"/>
+			<group name="transcendent_70_variant_3_13" spawned="false"/>
+			<group name="transcendent_70_variant_3_14" spawned="false"/>
+			<group name="transcendent_70_variant_3_15" spawned="false"/>
+			<group name="transcendent_70_box_1" spawned="false"/>
+			<group name="transcendent_70_box_2" spawned="false"/>
+			<group name="transcendent_70_box_3" spawned="false"/>
+			<group name="transcendent_70_box_4" spawned="false"/>
+			<group name="transcendent_70_box_5" spawned="false"/>
+			<group name="transcendent_70_box_6" spawned="false"/>
+			<group name="transcendent_70_box_7" spawned="false"/>
+			<group name="transcendent_70_box_8" spawned="false"/>
+			<group name="transcendent_70_box_9" spawned="false"/>
+			<group name="transcendent_70_box_10" spawned="false"/>
+			<group name="transcendent_70_box_11" spawned="false"/>
+			<group name="transcendent_70_box_12" spawned="false"/>
+		</spawns>
+		<zones>
+			<zone name="[transcendent_instance_zone_70]" active="true"/>
+		</zones>
+	</instance>
+</list>

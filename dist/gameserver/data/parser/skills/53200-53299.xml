@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="53201" levels="9" name="Whiplash">
+		<table name="#effectPoint">-770 -810 -820 -830 -840 -850 -850 -850 -850</table>
+		<!--Cannot move due to shock.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="53202" levels="14" name="Cursed Strike">
+		<table name="#effectPoint">-580 -620 -660 -700 -720 -740 -760 -780 -790 -800 -850 -900 -950 -990</table>
+		<!--Cannot move due to shock.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="castRange" value="40"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="53203" levels="9" name="Dark Curse">
+		<table name="#effectPoint">-770 -810 -820 -830 -840 -840 -840 -840 -840</table>
+		<!--Atk. Spd. -23%%\nCasting Spd. -23%%-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1400"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

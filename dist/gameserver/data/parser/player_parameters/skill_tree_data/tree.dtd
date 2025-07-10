@@ -1,0 +1,70 @@
+<!ELEMENT list (general_skill_tree|certification_skill_tree|sub_unit_skill_tree|pledge_skill_tree|normal_skill_tree|fishing_skill_tree|hero_skill_tree|gm_skill_tree|custom_skill_tree)*>
+
+		<!ELEMENT general_skill_tree (skill)*>
+		<!ATTLIST general_skill_tree
+				class_id CDATA #IMPLIED
+				class_level CDATA #IMPLIED
+				race CDATA #IMPLIED>
+
+		<!ELEMENT normal_skill_tree (skill)*>
+		<!ATTLIST normal_skill_tree
+				class_id CDATA #IMPLIED
+				class_level CDATA #IMPLIED
+				race CDATA #IMPLIED>
+
+		<!ELEMENT certification_skill_tree (skill)*>
+
+		<!ELEMENT sub_unit_skill_tree (skill)*>
+
+		<!ELEMENT pledge_skill_tree (skill)*>
+
+		<!ELEMENT fishing_skill_tree (skill)*>
+
+		<!ELEMENT hero_skill_tree (skill)*>
+
+		<!ELEMENT gm_skill_tree (skill)*>
+
+		<!ELEMENT custom_skill_tree (skill)*>
+
+		<!ELEMENT skill (required_items|blocked_skills|player|or|not|and)*>
+		<!ATTLIST skill
+				id CDATA #REQUIRED
+				level CDATA #IMPLIED
+				min_level CDATA #IMPLIED
+				name CDATA #IMPLIED
+				cost CDATA #IMPLIED
+				race CDATA #IMPLIED
+				auto_get CDATA #IMPLIED
+				social_class CDATA #IMPLIED
+				residence_skill CDATA #IMPLIED
+				pledge_type CDATA #IMPLIED
+				social_class CDATA #IMPLIED>
+
+		<!ELEMENT required_items (item)*>
+
+		<!ELEMENT item (#PCDATA)>
+		<!ATTLIST item
+				id CDATA #REQUIRED
+				count CDATA #IMPLIED>
+
+		<!ELEMENT blocked_skills (skill)*>
+
+		<!ELEMENT or (player|or|not|and)*>
+		<!ELEMENT not (player|or|not|and)*>
+		<!ELEMENT and (player|or|not|and)*>
+		<!ELEMENT player (#PCDATA)>
+		<!ATTLIST player
+				residence CDATA #IMPLIED
+				race CDATA #IMPLIED
+				is_clan_leader CDATA #IMPLIED
+				sex CDATA #IMPLIED
+				castle_type CDATA #IMPLIED
+				classId CDATA #IMPLIED
+				minLevel CDATA #IMPLIED
+				max_level CDATA #IMPLIED
+				avail_max_sp CDATA #IMPLIED
+				quest_state CDATA #IMPLIED
+				min_pledge_rank CDATA #IMPLIED
+				class_type CDATA #IMPLIED
+				min_clan_level CDATA #IMPLIED
+				isFlagged CDATA #IMPLIED>

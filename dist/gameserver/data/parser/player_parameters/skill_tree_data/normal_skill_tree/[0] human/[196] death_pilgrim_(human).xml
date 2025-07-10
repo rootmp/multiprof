@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--REWORKED: MORSE-->
+<list>
+	<normal_skill_tree class_id="196"><!--Death Pilgrim-->
+		<skill id="45355" level="1" min_level="1"/><!--Change Armor-->
+		<skill id="45351" level="1" min_level="1"/><!--Appetite for Destruction-->
+		<skill id="45352" level="1" min_level="1"/><!--Death Points-->
+		<skill id="45349" level="1" min_level="1"/><!--Born To Be Dead-->
+		<skill id="45350" level="1" min_level="1"/><!--Undying Body-->
+		<skill id="1040" level="1" min_level="2" cost="5"/><!--Shield-->
+		<skill id="1068" level="1" min_level="3" cost="5"/><!--Might-->
+		<skill id="45354" level="1" min_level="5" cost="15"/><!--Death Armor Mastery-->
+		<skill id="45353" level="1" min_level="5" cost="15"/><!--Death Sword Mastery-->
+		<skill id="91" level="1" min_level="5" cost="15"/><!--Ability to Protect-->
+		<skill id="45354" level="2" min_level="10" cost="100"/><!--Death Armor Mastery-->
+		<skill id="45353" level="2" min_level="10" cost="100"/><!--Death Sword Mastery-->
+		<skill id="77" level="1" min_level="10" cost="100"/><!--Ability to Attack-->
+		<skill id="70" level="1" min_level="10" cost="100"/><!--Emergency Rescue-->
+		<skill id="45354" level="3" min_level="15" cost="500"/><!--Death Armor Mastery-->
+		<skill id="45353" level="3" min_level="15" cost="500"/><!--Death Sword Mastery-->
+		<skill id="70" level="2" min_level="15" cost="500"/><!--Emergency Rescue-->
+	</normal_skill_tree>
+</list>

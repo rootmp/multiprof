@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--REWORKED: MORSE-->
+<list>
+	<normal_skill_tree class_id="47"><!--Orc Monk-->
+		<skill id="210" level="1" min_level="20" cost="1000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="1" min_level="20" cost="1000"/><!--Light Armor Mastery-->
+		<skill id="233" level="2" min_level="20" cost="1000"/><!--Light Armor Mastery-->
+		<skill id="45176" level="1" min_level="20" cost="1000"/><!--HP Recovery-->
+		<skill id="45177" level="1" min_level="20" cost="1000"/><!--MP Recovery-->
+		<skill id="29" level="10" min_level="20" cost="1000"/><!--Iron Punch-->
+		<skill id="29" level="11" min_level="20" cost="1000"/><!--Iron Punch-->
+		<skill id="29" level="12" min_level="20" cost="1000"/><!--Iron Punch-->
+		<skill id="255" level="1" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="2" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="3" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="4" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="5" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="45136" level="1" min_level="20" cost="1000"/><!--Chant of Empower-->
+		<skill id="45124" level="1" min_level="20" cost="1000"/><!--Chant of Wind Walk-->
+		<skill id="45126" level="2" min_level="20" cost="1000"/><!--Chant of Might-->
+		<skill id="45135" level="1" min_level="20" cost="1000"/><!--Chant of Acumen-->
+		<skill id="45123" level="1" min_level="20" cost="1000"/><!--Chant of Haste-->
+		<skill id="45121" level="1" min_level="20" cost="1000"/><!--Chant of Focus-->
+		<skill id="45129" level="1" min_level="20" cost="1000"/><!--Chant of Clarity-->
+		<skill id="45122" level="1" min_level="20" cost="1000"/><!--Chant of Death Whisper-->
+		<skill id="45127" level="2" min_level="20" cost="1000"/><!--Chant of Shield-->
+		<skill id="83" level="1" min_level="20" cost="1000"/><!--Wolf Nature-->
+		<skill id="120" level="1" min_level="20" cost="1000"/><!--Stunning Fist-->
+		<skill id="120" level="2" min_level="20" cost="1000"/><!--Stunning Fist-->
+		<skill id="120" level="3" min_level="20" cost="1000"/><!--Stunning Fist-->
+		<skill id="120" level="4" min_level="20" cost="1000"/><!--Stunning Fist-->
+		<skill id="120" level="5" min_level="20" cost="1000"/><!--Stunning Fist-->
+		<skill id="34" level="1" min_level="20" cost="1000"/><!--Bandage-->
+		<skill id="91" level="2" min_level="20" cost="1000"/><!--Ability to Protect-->
+		<skill id="95" level="1" min_level="20" cost="1000"/><!--Cripple-->
+		<skill id="70" level="3" min_level="20" cost="1000"/><!--Emergency Rescue-->
+		<skill id="255" level="6" min_level="21" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="120" level="6" min_level="21" cost="1000"/><!--Stunning Fist-->
+		<skill id="233" level="3" min_level="22" cost="2800"/><!--Light Armor Mastery-->
+		<skill id="29" level="13" min_level="22" cost="2800"/><!--Iron Punch-->
+		<skill id="54" level="1" min_level="22" cost="2800"/><!--Force Blaster-->
+		<skill id="255" level="7" min_level="22" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="120" level="7" min_level="22" cost="2800"/><!--Stunning Fist-->
+		<skill id="29" level="14" min_level="23" cost="2800"/><!--Iron Punch-->
+		<skill id="54" level="2" min_level="23" cost="2800"/><!--Force Blaster-->
+		<skill id="255" level="8" min_level="23" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="120" level="8" min_level="23" cost="2800"/><!--Stunning Fist-->
+		<skill id="95" level="2" min_level="23" cost="2800"/><!--Cripple-->
+		<skill id="210" level="2" min_level="24" cost="2800"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="4" min_level="24" cost="2800"/><!--Light Armor Mastery-->
+		<skill id="993" level="1" min_level="24" cost="2800"/><!--Force Mastery-->
+		<skill id="29" level="15" min_level="24" cost="2800"/><!--Iron Punch-->
+		<skill id="54" level="3" min_level="24" cost="2800"/><!--Force Blaster-->
+		<skill id="255" level="9" min_level="24" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="120" level="9" min_level="24" cost="2800"/><!--Stunning Fist-->
+		<skill id="50" level="1" min_level="24" cost="2800"/><!--Focus Force-->
+		<skill id="255" level="10" min_level="25" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="76" level="1" min_level="25" cost="2800"/><!--Bear Nature-->
+		<skill id="120" level="10" min_level="25" cost="2800"/><!--Stunning Fist-->
+		<skill id="77" level="2" min_level="25" cost="2800"/><!--Ability to Attack-->
+		<skill id="70" level="4" min_level="25" cost="2800"/><!--Emergency Rescue-->
+		<skill id="210" level="3" min_level="26" cost="5700"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="5" min_level="26" cost="5700"/><!--Light Armor Mastery-->
+		<skill id="29" level="16" min_level="26" cost="5700"/><!--Iron Punch-->
+		<skill id="54" level="4" min_level="26" cost="5700"/><!--Force Blaster-->
+		<skill id="255" level="11" min_level="26" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="120" level="11" min_level="26" cost="5700"/><!--Stunning Fist-->
+		<skill id="95" level="3" min_level="26" cost="5700"/><!--Cripple-->
+		<skill id="29" level="17" min_level="27" cost="5700"/><!--Iron Punch-->
+		<skill id="54" level="5" min_level="27" cost="5700"/><!--Force Blaster-->
+		<skill id="255" level="12" min_level="27" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="120" level="12" min_level="27" cost="5700"/><!--Stunning Fist-->
+		<skill id="210" level="4" min_level="28" cost="5700"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="6" min_level="28" cost="5700"/><!--Light Armor Mastery-->
+		<skill id="29" level="18" min_level="28" cost="5700"/><!--Iron Punch-->
+		<skill id="54" level="6" min_level="28" cost="5700"/><!--Force Blaster-->
+		<skill id="255" level="13" min_level="28" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="120" level="13" min_level="28" cost="5700"/><!--Stunning Fist-->
+		<skill id="95" level="4" min_level="28" cost="5700"/><!--Cripple-->
+		<skill id="255" level="14" min_level="29" cost="11000"/><!--Enhanced Weapon-->
+		<skill id="120" level="14" min_level="29" cost="11000"/><!--Stunning Fist-->
+		<skill id="210" level="5" min_level="30" cost="11000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="7" min_level="30" cost="11000"/><!--Light Armor Mastery-->
+		<skill id="29" level="19" min_level="30" cost="11000"/><!--Iron Punch-->
+		<skill id="54" level="7" min_level="30" cost="11000"/><!--Force Blaster-->
+		<skill id="255" level="15" min_level="30" cost="11000"/><!--Enhanced Weapon-->
+		<skill id="45136" level="2" min_level="30" cost="11000"/><!--Chant of Empower-->
+		<skill id="45137" level="1" min_level="30" cost="11000"/><!--Chant of Wild Magic-->
+		<skill id="45128" level="1" min_level="30" cost="11000"/><!--Chant of Berserker Spirit-->
+		<skill id="45124" level="2" min_level="30" cost="11000"/><!--Chant of Wind Walk-->
+		<skill id="45125" level="1" min_level="30" cost="11000"/><!--Chant of Magic Barrier-->
+		<skill id="45135" level="2" min_level="30" cost="11000"/><!--Chant of Acumen-->
+		<skill id="45121" level="2" min_level="30" cost="11000"/><!--Chant of Focus-->
+		<skill id="45129" level="2" min_level="30" cost="11000"/><!--Chant of Clarity-->
+		<skill id="45122" level="2" min_level="30" cost="11000"/><!--Chant of Death Whisper-->
+		<skill id="120" level="15" min_level="30" cost="11000"/><!--Stunning Fist-->
+		<skill id="95" level="5" min_level="30" cost="11000"/><!--Cripple-->
+		<skill id="70" level="5" min_level="30" cost="11000"/><!--Emergency Rescue-->
+		<skill id="29" level="20" min_level="31" cost="11000"/><!--Iron Punch-->
+		<skill id="54" level="8" min_level="31" cost="11000"/><!--Force Blaster-->
+		<skill id="284" level="1" min_level="31" cost="11000"/><!--Hurricane Assault-->
+		<skill id="210" level="6" min_level="32" cost="11000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="8" min_level="32" cost="11000"/><!--Light Armor Mastery-->
+		<skill id="993" level="2" min_level="32" cost="11000"/><!--Force Mastery-->
+		<skill id="29" level="21" min_level="32" cost="11000"/><!--Iron Punch-->
+		<skill id="54" level="9" min_level="32" cost="11000"/><!--Force Blaster-->
+		<skill id="284" level="2" min_level="32" cost="11000"/><!--Hurricane Assault-->
+		<skill id="50" level="2" min_level="32" cost="11000"/><!--Focus Force-->
+		<skill id="95" level="6" min_level="32" cost="11000"/><!--Cripple-->
+		<skill id="70" level="6" min_level="32" cost="11000"/><!--Emergency Rescue-->
+		<skill id="284" level="3" min_level="33" cost="20000"/><!--Hurricane Assault-->
+		<skill id="210" level="7" min_level="34" cost="20000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="9" min_level="34" cost="20000"/><!--Light Armor Mastery-->
+		<skill id="29" level="22" min_level="34" cost="20000"/><!--Iron Punch-->
+		<skill id="54" level="10" min_level="34" cost="20000"/><!--Force Blaster-->
+		<skill id="284" level="4" min_level="34" cost="20000"/><!--Hurricane Assault-->
+		<skill id="95" level="7" min_level="34" cost="20000"/><!--Cripple-->
+		<skill id="70" level="7" min_level="34" cost="20000"/><!--Emergency Rescue-->
+		<skill id="29" level="23" min_level="35" cost="20000"/><!--Iron Punch-->
+		<skill id="54" level="11" min_level="35" cost="20000"/><!--Force Blaster-->
+		<skill id="284" level="5" min_level="35" cost="20000"/><!--Hurricane Assault-->
+		<skill id="210" level="8" min_level="36" cost="20000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="10" min_level="36" cost="20000"/><!--Light Armor Mastery-->
+		<skill id="29" level="24" min_level="36" cost="20000"/><!--Iron Punch-->
+		<skill id="54" level="12" min_level="36" cost="20000"/><!--Force Blaster-->
+		<skill id="287" level="1" min_level="36" cost="20000"/><!--Lionheart-->
+		<skill id="168" level="1" min_level="36" cost="20000"/><!--Attack Speed Boost-->
+		<skill id="95" level="8" min_level="36" cost="20000"/><!--Cripple-->
+		<skill id="70" level="8" min_level="36" cost="20000"/><!--Emergency Rescue-->
+		<skill id="95" level="9" min_level="38" cost="20000"/><!--Cripple-->
+		<skill id="70" level="9" min_level="38" cost="20000"/><!--Emergency Rescue-->
+	</normal_skill_tree>
+</list>

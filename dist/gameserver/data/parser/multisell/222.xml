@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<list>
+<item>
+		<production id="6378" count="1"/>
+			<ingredient id="57" count="1437900"/>
+			<ingredient id="6679" count="1"/>
+		<ingredient id="49756" count="14"/>
+		</item>
+		<item>
+			<production id="6373" count="1"/>
+			<ingredient id="57" count="3834300"/>
+			<ingredient id="6674" count="1"/>
+			<ingredient id="49756" count="38"/>
+		</item>
+		<item>
+			<production id="6374" count="1"/>
+			<ingredient id="57" count="2396400"/>
+			<ingredient id="6675" count="1"/>
+			<ingredient id="49756" count="24"/>
+		</item>
+		<item>
+			<production id="6375" count="1"/>
+			<ingredient id="57" count="958500"/>
+			<ingredient id="6676" count="1"/>
+			<ingredient id="49756" count="10"/>
+		</item>
+		<item>
+			<production id="6376" count="1"/>
+			<ingredient id="57" count="958500"/>
+			<ingredient id="6677" count="1"/>
+			<ingredient id="49756" count="10"/>
+		</item>
+		<item>
+			<production id="6377" count="1"/>
+			<ingredient id="57" count="1006500"/>
+			<ingredient id="6678" count="1"/>
+			<ingredient id="49756" count="10"/>
+		</item>
+		<item>
+			<production id="6382" count="1"/>
+			<ingredient id="57" count="1437900"/>
+			<ingredient id="6683" count="1"/>
+			<ingredient id="49756" count="14"/>
+		</item>
+		<item>
+			<production id="6379" count="1"/>
+			<ingredient id="57" count="4673100"/>
+			<ingredient id="6680" count="1"/>
+			<ingredient id="49756" count="47"/>
+		</item>
+		<item>
+			<production id="6380" count="1"/>
+			<ingredient id="57" count="958500"/>
+			<ingredient id="6681" count="1"/>
+			<ingredient id="49756" count="10"/>
+		</item>
+		<item>
+			<production id="6381" count="1"/>
+			<ingredient id="57" count="958500"/>
+			<ingredient id="6682" count="1"/>
+			<ingredient id="49756" count="10"/>
+		</item>
+		<item>
+			<production id="6386" count="1"/>
+			<ingredient id="57" count="1437900"/>
+			<ingredient id="6687" count="1"/>
+			<ingredient id="49756" count="14"/>
+		</item>
+		<item>
+			<production id="6383" count="1"/>
+			<ingredient id="57" count="4673100"/>
+			<ingredient id="6684" count="1"/>
+			<ingredient id="49756" count="47"/>
+		</item>
+		<item>
+			<production id="6384" count="1"/>
+			<ingredient id="57" count="958500"/>
+			<ingredient id="6685" count="1"/>
+			<ingredient id="49756" count="10"/>
+		</item>
+		<item>
+			<production id="6385" count="1"/>
+			<ingredient id="57" count="958500"/>
+			<ingredient id="6686" count="1"/>
+			<ingredient id="49756" count="10"/>
+		</item>
+</list>

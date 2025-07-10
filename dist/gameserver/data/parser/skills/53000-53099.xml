@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="53001" levels="3" name="Critical Creation">
+		<table name="#crit_craft_chance">3 5 10</table>
+		<set name="icon" value="icon.skill10701"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="crit_craft_chance" value="#crit_craft_chance"/>
+		</for>
+	</skill>
+	<skill id="53002" levels="3" name="Master of Creation">
+		<table name="#craft_chance">5 10 20</table>
+		<set name="icon" value="icon.skill10312"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="craft_chance" value="#craft_chance"/>
+		</for>
+	</skill>
+	<skill id="53003" levels="3" name="Mass Chain Strike">
+		<table name="#activateRate">40 55 70</table>
+		<table name="#mp_consume">123 127 132</table>
+		<table name="#effectPoint">-4186 -4210 -4232</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="abnormal_time" value="1"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="activateRate" value="#activateRate"/>
+		<set name="nextAction" value="attack"/>
+		<set name="lv_bonus_rate" value="2"/>
+		<set name="target" value="TARGET_AREA"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="affect_range" value="200"/>
+		<set name="trait" value="PULL"/>
+		<set name="provoke" value="true"/>
+		<cond msgId="113">
+			<using kind="Shield"/>
+		</cond>
+		<for>
+			<effect name="ThrowHorizontal">
+				<def name="fly_speed" value="600"/>
+				<def name="fly_delay" value="600"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="53004" levels="5" name="Critical Vulnerability Decrease">
+		<table name="#pCritDamRcpt">0.7 0.65 0.6 0.55 0.5</table>
+		<table name="#deathVuln">20 25 30 35 40</table>
+		<set name="icon" value="icon.skill53004"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="pCritDamRcpt" value="#pCritDamRcpt"/>
+			<sub stat="deathVuln" value="#deathVuln"/>
+		</for>
+	</skill>
+	<skill id="53005" levels="2" name="Detect Darkness">
+		<table name="#effectPoint">-760 -880</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill53005"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="coolTime" value="300"/>
+		<set name="hitTime" value="1200"/>
+		<set name="mp_consume" value="70"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="affect_range" value="300"/>
+		<set name="abnormal_time" value="2"/>
+		<cond msgId="113">
+			<using kind="Bow"/>
+		</cond>
+		<for>
+			<effect name="p_block_buff_slot">
+				<def name="abnormal_types" value="hide"/>
+			</effect>
+			<effect name="i_dispel_by_slot">
+				<def name="abnormal_type" value="hide"/>
+				<def name="max_abnormal_level" value="-1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="53006" levels="5" name="Bind">
+		<table name="#activateRate">40 50 60 70 80</table>
+		<table name="#mp_consume">103 107 111 115 119</table>
+		<table name="#effectPoint">-666 -670 -674 -678 -682</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill6320"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="4000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_effect" value="SILENCE"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="activateRate" value="#activateRate"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="MutePhisycal"/>
+		</for>
+	</skill>
+	<skill id="53007" levels="4" name="Power Stance">
+		<table name="#abnormal_level">1 2 3</table>
+		<table name="#patk">50 100 150</table>
+		<table name="#patkspd">1.1 1.12 1.15</table>
+		<set name="icon" value="icon.skill10244"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="abnormal_time" value="20"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="POWER_STANCE"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pAtk" value="#patk"/>
+				<mul stat="pAtkSpd" value="#patkspd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="53008" levels="1" name="Children of Eva">
+		<set name="icon" value="icon.skill1906"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mAtk" value="10"/>
+			<add stat="mCritRate" value="5"/>
+			<mul stat="regHp" value="1.05"/>
+		</for>
+	</skill>
+	<skill id="53009" levels="3" name="Sharpness">
+		<table name="#chance">1.1 1.15 1.2</table>
+		<set name="icon" value="icon.skill0409"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="blowRate" value="#chance"/>
+		</for>
+	</skill>
+	<skill id="53010" levels="7" name="Knight's Protection">
+		<table name="#abnormal_level">1 2 3 4 5 6 7</table>
+		<table name="#rShld">1.1 1.2 1.3 1.4 1.5</table>
+		<table name="#sDef">120 140 160 180 200 250 300</table>
+		<table name="#mp_consume">50 55 65 70 75 80 85</table>
+		<table name="#maxHp">300 375 450 530 610 900 1500</table>
+		<set name="icon" value="icon.skill3584"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="shield_prob_up"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="rShld" value="#rShld"/>
+				<mul stat="sDef" value="#sDef"/>
+				<add stat="maxHp" value="#maxHp"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="53011" levels="2" name="Knight’s Fortress">
+		<table name="#abnormal_level">1 2</table>
+		<table name="#patk">100 200</table>
+		<set name="icon" value="icon.skill10020"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="KNIGHT_FORTRESS"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pAtk" value="#patk"/>
+			</effect>
+		</for>
+	</skill>
+</list>

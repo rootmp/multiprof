@@ -1,0 +1,1540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48989" y="150950" z="-2896" h="64497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49414" y="151456" z="-2816" h="40850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49432" y="151655" z="-2824" h="23831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49323" y="151616" z="-2848" h="16663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-50031" y="150693" z="-2744" h="38728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49527" y="150776" z="-2760" h="17977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-50272" y="150763" z="-2768" h="34560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49963" y="150938" z="-2760" h="521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49716" y="151437" z="-2776" h="32243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-50419" y="151056" z="-2768" h="51212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49990" y="151303" z="-2776" h="4510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-50166" y="150774" z="-2760" h="22342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-49765" y="150731" z="-2720" h="7639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-49840" y="150793" z="-2736" h="55199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-50159" y="151169" z="-2776" h="35768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-50378" y="150780" z="-2768" h="29213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-50072" y="151301" z="-2776" h="44348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-50037" y="150640" z="-2744" h="31826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-50288" y="150876" z="-2768" h="5672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-50391" y="151234" z="-2768" h="40862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-49444" y="151503" z="-2816" h="39335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47979" y="149774" z="-2960" h="49175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48460" y="149701" z="-2960" h="23335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49308" y="151471" z="-2832" h="36903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47977" y="149955" z="-2952" h="59615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48169" y="149756" z="-2984" h="50293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47956" y="150027" z="-2944" h="60699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48023" y="149353" z="-3008" h="35007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48275" y="149864" z="-2968" h="29941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48559" y="149771" z="-2928" h="48389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48439" y="149355" z="-2968" h="56611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49358" y="151638" z="-2848" h="31982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48695" y="151385" z="-2936" h="52822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48322" y="151608" z="-2952" h="25467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49151" y="151679" z="-2880" h="18442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48589" y="151610" z="-2944" h="13358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48942" y="151425" z="-2904" h="44875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48158" y="151307" z="-2944" h="13027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47863" y="151598" z="-2944" h="23737" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48827" y="151709" z="-2920" h="38834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48641" y="151653" z="-2936" h="36718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48407" y="151702" z="-2952" h="30976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48014" y="151531" z="-2944" h="61375" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47748" y="151352" z="-2936" h="38598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48129" y="151540" z="-2944" h="9158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48152" y="151641" z="-2952" h="35844" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47560" y="150933" z="-2928" h="45928" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47750" y="151593" z="-2944" h="22020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47767" y="151607" z="-2944" h="40508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47457" y="151540" z="-2936" h="64440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48031" y="151663" z="-2952" h="15703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48196" y="151576" z="-2952" h="3183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48219" y="151639" z="-2952" h="30212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48214" y="151708" z="-2960" h="30585" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48997" y="151678" z="-2904" h="10047" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48767" y="151475" z="-2936" h="11185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48645" y="151159" z="-2928" h="31998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48179" y="153127" z="-3048" h="40217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47844" y="152232" z="-3000" h="61668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47216" y="152426" z="-2984" h="4859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47349" y="152120" z="-2960" h="15857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46963" y="152863" z="-2944" h="49173" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47543" y="152949" z="-3000" h="20606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47103" y="152937" z="-2952" h="25557" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47048" y="152959" z="-2952" h="54934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47152" y="152313" z="-2968" h="49761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47074" y="152216" z="-2968" h="55803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47124" y="152942" z="-2960" h="46093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47892" y="152666" z="-3032" h="33658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47482" y="152682" z="-2992" h="22273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48277" y="152998" z="-3040" h="41701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47498" y="153080" z="-3008" h="23510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47629" y="153598" z="-3040" h="33963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48043" y="153115" z="-3048" h="26431" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48110" y="152894" z="-3040" h="60884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47736" y="153023" z="-3016" h="11538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47878" y="153562" z="-3040" h="20703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48020" y="153286" z="-3048" h="49174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48420" y="152866" z="-3032" h="25414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47623" y="153291" z="-3016" h="36308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48058" y="153612" z="-3024" h="55236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47856" y="153484" z="-3040" h="15857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47931" y="153358" z="-3048" h="19363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48248" y="152129" z="-3000" h="9744" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47770" y="152327" z="-3008" h="63369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48259" y="152225" z="-3016" h="52378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47777" y="152414" z="-3008" h="21313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48578" y="152377" z="-3000" h="56099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48237" y="152412" z="-3024" h="104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47833" y="152559" z="-3016" h="25742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48604" y="152448" z="-3008" h="62837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48161" y="152711" z="-3040" h="29566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48537" y="152089" z="-2976" h="23737" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48566" y="151772" z="-2952" h="57932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47926" y="152561" z="-3024" h="39287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47712" y="152103" z="-2992" h="57883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48079" y="151748" z="-2960" h="60638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48310" y="151935" z="-2976" h="54497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46707" y="152885" z="-2936" h="10675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46810" y="152131" z="-2944" h="19367" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46591" y="152253" z="-2944" h="51721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46870" y="152127" z="-2944" h="20077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46706" y="152242" z="-2944" h="54703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47072" y="152262" z="-2968" h="34931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46774" y="152950" z="-2944" h="29658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49412" y="148506" z="-2728" h="58410" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49364" y="148167" z="-2744" h="52089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49183" y="148845" z="-2736" h="65015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49260" y="148611" z="-2736" h="18585" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49434" y="148824" z="-2728" h="49982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49614" y="149614" z="-2736" h="19408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49290" y="148717" z="-2728" h="3995" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-50038" y="149578" z="-2744" h="36290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49714" y="148936" z="-2728" h="24568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49886" y="149635" z="-2736" h="936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49906" y="148995" z="-2736" h="903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-49622" y="148815" z="-2728" h="8162" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-49327" y="149649" z="-2760" h="34397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49175" y="149077" z="-2752" h="63457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49899" y="149601" z="-2736" h="25321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-49185" y="149488" z="-2760" h="57124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49628" y="149431" z="-2736" h="24057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-49615" y="149612" z="-2736" h="23158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49859" y="149655" z="-2736" h="58326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49344" y="149016" z="-2744" h="39807" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49428" y="149345" z="-2736" h="24052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49238" y="149410" z="-2760" h="49674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48119" y="147797" z="-2904" h="21336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48282" y="147932" z="-2848" h="24378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47507" y="148498" z="-2992" h="33376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47308" y="148154" z="-2976" h="52163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47866" y="147930" z="-2952" h="22792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48709" y="148586" z="-2776" h="21032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47550" y="147461" z="-2976" h="40862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47657" y="147327" z="-2960" h="63132" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47843" y="147654" z="-2944" h="17991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47994" y="147686" z="-2928" h="5086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49346" y="148425" z="-2728" h="4568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48929" y="148841" z="-2760" h="30992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48183" y="147708" z="-2880" h="31778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48307" y="147907" z="-2848" h="2745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48001" y="147606" z="-2904" h="45087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48095" y="147580" z="-2904" h="18749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48833" y="147612" z="-2800" h="33189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48340" y="147921" z="-2848" h="62851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48129" y="147792" z="-2880" h="14732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48356" y="147829" z="-2856" h="13737" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48823" y="147660" z="-2800" h="53062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48973" y="148842" z="-2760" h="25664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48498" y="147969" z="-2824" h="38782" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-48110" y="147779" z="-2904" h="63285" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47853" y="147975" z="-2952" h="6853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48248" y="147898" z="-2880" h="65511" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48255" y="147837" z="-2880" h="1726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47929" y="147742" z="-2928" h="18034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47893" y="147861" z="-2928" h="25188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47811" y="147419" z="-2928" h="59175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-49362" y="148129" z="-2744" h="33259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47739" y="149201" z="-3008" h="22510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47745" y="147325" z="-2912" h="44628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47724" y="147821" z="-2968" h="30872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48374" y="149276" z="-2968" h="1113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47433" y="148010" z="-2984" h="2831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48112" y="149692" z="-2976" h="28071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48084" y="149464" z="-3000" h="34446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48346" y="149573" z="-2992" h="33923" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-48821" y="148338" z="-2760" h="31755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48252" y="149434" z="-3000" h="43036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47868" y="149232" z="-3008" h="47203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-49228" y="148165" z="-2744" h="50267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-48869" y="148261" z="-2760" h="65163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-49016" y="148124" z="-2752" h="23347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-49401" y="148768" z="-2728" h="42212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46973" y="147780" z="-2968" h="50709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46601" y="148547" z="-2960" h="25315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46504" y="148233" z="-2968" h="8535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46569" y="148254" z="-2968" h="25337" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46462" y="147634" z="-2944" h="28196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46412" y="147933" z="-2960" h="28454" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46372" y="148101" z="-2968" h="52383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46565" y="147627" z="-2944" h="32364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46220" y="147778" z="-2952" h="3750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46602" y="147607" z="-2944" h="46849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46310" y="148109" z="-2968" h="58112" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46651" y="147732" z="-2960" h="28992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46321" y="147748" z="-2952" h="38495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46254" y="148294" z="-2960" h="50020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46218" y="147783" z="-2952" h="36310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48726" y="147198" z="-2832" h="1154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47699" y="146425" z="-2664" h="1090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47875" y="147058" z="-2896" h="17746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-48260" y="147405" z="-2872" h="34500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47311" y="146034" z="-2688" h="52548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47638" y="146166" z="-2656" h="7029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47473" y="146154" z="-2680" h="3895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47444" y="145977" z="-2680" h="15121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47627" y="145829" z="-2640" h="38352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47223" y="146550" z="-2744" h="52588" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-47744" y="146451" z="-2664" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47291" y="145862" z="-2688" h="20138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47624" y="146521" z="-2664" h="17423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47103" y="146031" z="-2728" h="23127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47590" y="146514" z="-2680" h="19341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-47411" y="146552" z="-2696" h="27884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46870" y="146289" z="-2768" h="64911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47178" y="145993" z="-2712" h="52591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46986" y="146049" z="-2736" h="4123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46180" y="146622" z="-2928" h="46181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45698" y="146155" z="-2952" h="56426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45651" y="146222" z="-2952" h="41414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45859" y="146712" z="-2936" h="44369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45871" y="146319" z="-2936" h="40265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45853" y="146603" z="-2936" h="38367" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46017" y="146325" z="-2928" h="17423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46192" y="146227" z="-2912" h="22926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45782" y="146591" z="-2944" h="27274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46173" y="146804" z="-2928" h="56269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45832" y="146503" z="-2936" h="20896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46360" y="146327" z="-2880" h="53122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46424" y="146751" z="-2912" h="8846" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46115" y="146188" z="-2912" h="13004" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46341" y="146352" z="-2880" h="38859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46055" y="146729" z="-2936" h="46876" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46864" y="144582" z="-2744" h="5185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46779" y="144823" z="-2744" h="63851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46637" y="144962" z="-2744" h="9671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46614" y="144541" z="-2784" h="24566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46082" y="143827" z="-2848" h="4469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45374" y="144334" z="-2984" h="39807" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46071" y="143622" z="-2864" h="29477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45350" y="143820" z="-2976" h="27525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45134" y="143382" z="-3016" h="62691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45935" y="144092" z="-2912" h="16278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45416" y="143997" z="-2976" h="13602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45778" y="144135" z="-2928" h="47999" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45268" y="144227" z="-2992" h="58668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45169" y="144105" z="-3008" h="53199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45584" y="143793" z="-2944" h="59284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45966" y="143871" z="-2904" h="11017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45781" y="144323" z="-2928" h="19717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45322" y="143633" z="-2984" h="4347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45591" y="143974" z="-2944" h="10770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45233" y="143495" z="-3000" h="10973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45672" y="144282" z="-2952" h="53510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44973" y="145288" z="-3008" h="1773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45034" y="144790" z="-3032" h="5504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45727" y="145058" z="-2928" h="42451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44903" y="144799" z="-3032" h="30655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44969" y="144610" z="-3032" h="60932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45000" y="144401" z="-3032" h="8909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44955" y="144543" z="-3032" h="46070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45715" y="144897" z="-2928" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45000" y="144912" z="-3032" h="52169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45563" y="145034" z="-2984" h="57929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45043" y="144490" z="-3032" h="12106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44909" y="144423" z="-3032" h="47407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45030" y="144983" z="-3032" h="16369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44908" y="144453" z="-3032" h="63369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45166" y="144969" z="-3024" h="41846" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46835" y="144731" z="-2752" h="48613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-47164" y="144060" z="-2672" h="37652" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46424" y="144160" z="-2848" h="9670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46867" y="144697" z="-2736" h="36062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46953" y="144388" z="-2752" h="18710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46571" y="144636" z="-2800" h="9182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46855" y="144528" z="-2744" h="1297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46954" y="145026" z="-2720" h="64713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46282" y="144772" z="-2824" h="29635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46605" y="144595" z="-2784" h="42662" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-47046" y="144617" z="-2728" h="52509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46728" y="144511" z="-2792" h="11365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45987" y="143688" z="-2864" h="19954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46514" y="143759" z="-2808" h="33259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45911" y="143976" z="-2904" h="45977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46547" y="144229" z="-2832" h="55286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46076" y="143870" z="-2880" h="34327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46589" y="144074" z="-2816" h="2131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46124" y="144034" z="-2872" h="32874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-46340" y="143977" z="-2832" h="486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45913" y="143615" z="-2872" h="15816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45903" y="143669" z="-2888" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46621" y="143717" z="-2792" h="13699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-46118" y="143974" z="-2856" h="28755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46271" y="143771" z="-2832" h="54009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45957" y="143523" z="-2864" h="26549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46025" y="143592" z="-2864" h="47166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44552" y="144285" z="-3000" h="64980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44869" y="144543" z="-3032" h="18602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45020" y="142151" z="-3008" h="4213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45023" y="143158" z="-3024" h="19040" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44822" y="142374" z="-3008" h="8561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44978" y="143023" z="-3024" h="42454" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44921" y="142833" z="-3016" h="51212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44977" y="143284" z="-3024" h="40850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44940" y="142987" z="-3024" h="11703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44965" y="142644" z="-3000" h="24589" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46237" y="142580" z="-2712" h="690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45730" y="142788" z="-2952" h="40508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45551" y="142622" z="-2976" h="46471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45495" y="142514" z="-2968" h="39705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45774" y="143040" z="-2920" h="34993" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45670" y="142770" z="-2968" h="15016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45538" y="142637" z="-2976" h="19539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45825" y="142607" z="-2928" h="13193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46393" y="142471" z="-2712" h="21001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45601" y="142961" z="-2952" h="64981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45857" y="142441" z="-2888" h="13739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-46387" y="142575" z="-2712" h="45738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45527" y="142418" z="-2960" h="27807" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45512" y="142515" z="-2968" h="34453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-45577" y="143122" z="-2992" h="29596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-46173" y="142470" z="-2752" h="38573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45049" y="142287" z="-3000" h="15754" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44986" y="141871" z="-3000" h="55767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44963" y="141817" z="-2992" h="42441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44931" y="142357" z="-3000" h="2580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44789" y="142371" z="-3024" h="8007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44803" y="141892" z="-3016" h="19614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-45038" y="143118" z="-3024" h="15270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44774" y="143099" z="-3040" h="27474" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44964" y="142489" z="-3000" h="14440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44690" y="141634" z="-3008" h="27942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44809" y="142597" z="-3016" h="49570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-45039" y="143086" z="-3024" h="6711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45012" y="143333" z="-3024" h="55653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44644" y="141674" z="-3016" h="50191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44965" y="142986" z="-3024" h="29742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44837" y="142550" z="-3008" h="19908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44702" y="142895" z="-3032" h="50745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44977" y="143392" z="-3024" h="20682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-42976" y="141356" z="-2928" h="61164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-43386" y="141487" z="-2928" h="4579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-42838" y="141399" z="-2928" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-43272" y="141368" z="-2928" h="416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-43142" y="141390" z="-2928" h="51428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44313" y="142794" z="-3016" h="48046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44517" y="142609" z="-3040" h="8932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44064" y="142342" z="-3016" h="19209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44513" y="142940" z="-3040" h="63171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44331" y="142147" z="-3032" h="15975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44472" y="142832" z="-3040" h="43747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44601" y="142228" z="-3032" h="19430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44645" y="142686" z="-3040" h="12101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44304" y="142020" z="-3024" h="36764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44728" y="141980" z="-3024" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44247" y="142524" z="-3016" h="51498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44117" y="142913" z="-3000" h="30435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44376" y="142586" z="-3032" h="1898" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44561" y="142257" z="-3032" h="53785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44457" y="142185" z="-3032" h="50824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44165" y="142179" z="-3016" h="32811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44772" y="142142" z="-3024" h="2960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44908" y="141920" z="-3016" h="46093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44829" y="141936" z="-3016" h="44996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44986" y="141583" z="-2984" h="2026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44878" y="142169" z="-3008" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-45003" y="141881" z="-3000" h="3884" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44753" y="141253" z="-2976" h="62030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44455" y="141175" z="-2984" h="50987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44713" y="141452" z="-3000" h="19495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44996" y="141099" z="-2920" h="57687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44783" y="141440" z="-3000" h="987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-43556" y="140888" z="-2928" h="36505" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-43364" y="140954" z="-2928" h="936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-43036" y="141095" z="-2928" h="22779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-43581" y="140726" z="-2928" h="49222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-43343" y="141001" z="-2928" h="50273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-43426" y="140776" z="-2920" h="61464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-43508" y="141467" z="-2936" h="35964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-43700" y="140674" z="-2928" h="20969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44494" y="140719" z="-2952" h="29095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44697" y="140790" z="-2928" h="24202" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44527" y="140810" z="-2960" h="11151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44722" y="141076" z="-2960" h="38190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44495" y="140936" z="-2976" h="63037" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20439" /> <!-- Ol Mahum Sergeant -->
+		<point x="-44391" y="141160" z="-2984" h="42479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-44801" y="140985" z="-2928" h="16723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44276" y="140768" z="-2936" h="29785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44284" y="140736" z="-2936" h="13605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20076" /> <!-- Ol Mahum Commander -->
+		<point x="-44405" y="140963" z="-2976" h="34560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-44533" y="141078" z="-2984" h="34801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-42934" y="141110" z="-2928" h="3008" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20438" /> <!-- Ol Mahum General -->
+		<point x="-42886" y="140775" z="-2928" h="61847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20066" /> <!-- Ol Mahum Officer -->
+		<point x="-42886" y="141159" z="-2928" h="38594" />
+	</spawn>
+</list>

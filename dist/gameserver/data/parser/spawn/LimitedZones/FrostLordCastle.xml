@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--Author: nexvill-->
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143400" y="146328" z="-12032" h="41007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143096" y="146408" z="-12032" h="31428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142808" y="146056" z="-12032" h="41640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143304" y="145848" z="-12040" h="62285" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143704" y="145816" z="-12032" h="64656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143448" y="145448" z="-12032" h="42750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142936" y="145464" z="-12032" h="31854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142536" y="145368" z="-12032" h="35201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142232" y="144968" z="-12008" h="42629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142072" y="144584" z="-11968" h="44364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="141992" y="144136" z="-11920" h="46423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142360" y="144200" z="-11936" h="59477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142520" y="144536" z="-11976" h="10843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142776" y="144936" z="-12024" h="10434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143272" y="145048" z="-12032" h="2211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143304" y="144584" z="-12008" h="50665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143432" y="144168" z="-11992" h="53509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143000" y="144072" z="-11952" h="33672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142664" y="143704" z="-11904" h="44573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142120" y="143704" z="-11880" h="32830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142360" y="143224" z="-11856" h="54215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="142968" y="143192" z="-11888" h="64201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143496" y="143448" z="-11928" h="4118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143896" y="143704" z="-11976" h="61771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143864" y="144296" z="-12024" h="18720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="144248" y="143944" z="-12016" h="331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="144264" y="143416" z="-11968" h="49841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143896" y="143096" z="-11896" h="41615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22345" /> <!-- Frosty Knight -->
+		<point x="143256" y="142792" z="-11880" h="33648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143656" y="146088" z="-12032" h="31521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143320" y="146088" z="-12040" h="33052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142904" y="145864" z="-12040" h="38344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142520" y="145688" z="-12032" h="36789" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143208" y="145528" z="-12032" h="62897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143448" y="145176" z="-12032" h="55499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143272" y="144744" z="-12024" h="45664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142808" y="144712" z="-12000" h="33670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142840" y="145240" z="-12032" h="16022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142296" y="145144" z="-12032" h="34434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142168" y="144776" z="-11992" h="42977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="141976" y="144296" z="-11936" h="45139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142440" y="144360" z="-11952" h="1638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142840" y="143880" z="-11928" h="56521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143176" y="144344" z="-12000" h="9702" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143480" y="143816" z="-11968" h="54741" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143880" y="143992" z="-12008" h="4230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="144264" y="143656" z="-11984" h="58186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="144056" y="143288" z="-11920" h="43978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143608" y="142936" z="-11896" h="39779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="143256" y="143304" z="-11896" h="24495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142632" y="143208" z="-11880" h="34248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142232" y="143448" z="-11856" h="27912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142040" y="143944" z="-11896" h="20429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22346" /> <!-- Frosty Mage -->
+		<point x="142584" y="144104" z="-11936" h="8577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142936" y="146264" z="-12032" h="28513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143608" y="145608" z="-12032" h="56444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143240" y="145720" z="-12040" h="28482" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142808" y="145704" z="-12032" h="33188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142520" y="145496" z="-12032" h="39154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142936" y="145352" z="-12032" h="61902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143464" y="145368" z="-12032" h="343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143512" y="146200" z="-12032" h="15182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142536" y="145080" z="-12032" h="57667" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142360" y="144728" z="-11984" h="44497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142248" y="144328" z="-11944" h="46203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142280" y="143880" z="-11904" h="49492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142552" y="143480" z="-11880" h="55290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142744" y="144008" z="-11936" h="11576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="142984" y="144472" z="-11992" h="11902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143080" y="144968" z="-12032" h="13638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143480" y="144824" z="-12024" h="63969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143656" y="144264" z="-12024" h="51598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143144" y="143720" z="-11928" h="43032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143080" y="143048" z="-11880" h="48096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143528" y="143144" z="-11912" h="1731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143832" y="143384" z="-11928" h="6662" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="143656" y="143816" z="-11976" h="20171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22347" /> <!-- Frosty Sniper -->
+		<point x="144248" y="143816" z="-12000" h="64693" />
+	</spawn>
+	<spawn count="1" respawn="1200" respawn_random="0" period_of_day="none">
+		<npc id="22351" /> <!-- Frosty Archer -->
+		<point x="143832" y="143528" z="-11952" h="35817" />
+	</spawn>
+	<spawn count="1" respawn="1200" respawn_random="0" period_of_day="none">
+		<npc id="22351" /> <!-- Frosty Archer -->
+		<point x="143208" y="143944" z="-11960" h="30294" />
+	</spawn>
+	<spawn count="1" respawn="1200" respawn_random="0" period_of_day="none">
+		<npc id="22351" /> <!-- Frosty Archer -->
+		<point x="142712" y="144520" z="-11984" h="24124" />
+	</spawn>
+	<spawn count="1" respawn="1200" respawn_random="0" period_of_day="none">
+		<npc id="22351" /> <!-- Frosty Archer -->
+		<point x="143144" y="145272" z="-12032" h="11247" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="146712" y="144808" z="-12104" h="3740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147112" y="144952" z="-12200" h="3845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147592" y="145272" z="-12224" h="7243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147864" y="145768" z="-12240" h="10583" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147992" y="146248" z="-12280" h="13609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148168" y="146600" z="-12296" h="11788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148552" y="146936" z="-12304" h="7877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149000" y="147080" z="-12336" h="2902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149256" y="146840" z="-12352" h="57571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149320" y="146392" z="-12352" h="50751" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149640" y="146328" z="-12360" h="65220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149816" y="145896" z="-12344" h="53227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149976" y="145368" z="-12304" h="52342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="150104" y="144968" z="-12272" h="52749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149576" y="145000" z="-12272" h="29865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149352" y="145512" z="-12320" h="17310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149112" y="145992" z="-12328" h="21156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148856" y="146440" z="-12328" h="20901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148376" y="146184" z="-12296" h="41066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148200" y="145688" z="-12264" h="45351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147912" y="145240" z="-12232" h="43020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147800" y="144872" z="-12232" h="46438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147320" y="144712" z="-12224" h="36657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147432" y="144264" z="-12224" h="59651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147560" y="143704" z="-12224" h="51424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147496" y="143352" z="-12224" h="47649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147448" y="143016" z="-12224" h="48129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="146920" y="142904" z="-12160" h="36845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147336" y="142632" z="-12224" h="58484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147848" y="142744" z="-12224" h="2536" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148296" y="142728" z="-12224" h="65213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148760" y="142824" z="-12232" h="1664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148504" y="143176" z="-12224" h="23393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148056" y="143096" z="-12224" h="34315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147912" y="143368" z="-12224" h="14614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147880" y="143768" z="-12224" h="14320" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="147816" y="144296" z="-12224" h="17592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148152" y="143800" z="-12224" h="56691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148184" y="143352" z="-12224" h="49841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148520" y="143752" z="-12232" h="14691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148440" y="144168" z="-12240" h="18299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148136" y="144248" z="-12232" h="29591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148104" y="144808" z="-12232" h="15420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148488" y="144568" z="-12248" h="60679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149000" y="144472" z="-12264" h="63439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149304" y="144776" z="-12280" h="6358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="149064" y="145400" z="-12312" h="20695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148872" y="145832" z="-12320" h="20942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148552" y="145736" z="-12296" h="34133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148344" y="145256" z="-12264" h="42757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148616" y="145032" z="-12280" h="57994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22348" /> <!-- Emperor's Knight -->
+		<point x="148952" y="144968" z="-12296" h="63452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147128" y="143032" z="-12208" h="37987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147512" y="142808" z="-12224" h="59783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147848" y="143000" z="-12224" h="5157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148232" y="142904" z="-12224" h="63455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148600" y="143016" z="-12224" h="3760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148328" y="143336" z="-12224" h="22353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147976" y="143512" z="-12224" h="28289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147576" y="143560" z="-12224" h="31967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147512" y="143992" z="-12224" h="20062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147400" y="144472" z="-12224" h="19147" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="146936" y="144536" z="-12160" h="31054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147240" y="144856" z="-12224" h="9839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147656" y="145080" z="-12224" h="4390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147832" y="144584" z="-12232" h="51882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148104" y="144520" z="-12232" h="62870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148408" y="144360" z="-12240" h="60411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148472" y="143976" z="-12240" h="51859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148136" y="143992" z="-12224" h="31200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="147800" y="143992" z="-12224" h="32503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148552" y="143560" z="-12232" h="62063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148664" y="144280" z="-12240" h="14795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="149144" y="144648" z="-12280" h="3556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="149720" y="144776" z="-12248" h="61689" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="149784" y="145256" z="-12296" h="14170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="149608" y="145720" z="-12328" h="19724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="149432" y="146024" z="-12336" h="22351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="149048" y="146296" z="-12336" h="26430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148984" y="146760" z="-12336" h="18359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148584" y="146632" z="-12320" h="36564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148264" y="146360" z="-12296" h="39099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148728" y="146056" z="-12312" h="60075" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148248" y="145912" z="-12280" h="35943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148488" y="145432" z="-12280" h="54225" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148376" y="144952" z="-12256" h="46643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148744" y="144712" z="-12272" h="59264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="148840" y="145224" z="-12296" h="13961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22349" /> <!-- Emperor's Mage -->
+		<point x="149064" y="145672" z="-12320" h="8260" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="146904" y="144744" z="-12152" h="37707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="147416" y="145160" z="-12224" h="7459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="147528" y="144792" z="-12224" h="52055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="147624" y="144344" z="-12224" h="51212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="147688" y="143912" z="-12224" h="51107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="147704" y="143432" z="-12224" h="49724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="147656" y="143000" z="-12224" h="47983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148040" y="142888" z="-12224" h="62011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148344" y="143128" z="-12224" h="6812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148344" y="143656" z="-12232" h="14621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148312" y="144040" z="-12232" h="17186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148248" y="144504" z="-12240" h="17591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148216" y="144904" z="-12240" h="17581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148088" y="145384" z="-12240" h="19013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148040" y="145864" z="-12256" h="17501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148440" y="145752" z="-12288" h="11160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148568" y="146184" z="-12312" h="13160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148744" y="146568" z="-12320" h="11785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148232" y="146888" z="-12304" h="27087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="149000" y="146952" z="-12336" h="6599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="149480" y="146584" z="-12360" h="59870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="149256" y="146104" z="-12344" h="43673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="149240" y="145720" z="-12336" h="48364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="149288" y="145192" z="-12304" h="49881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="149048" y="144904" z="-12296" h="41895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148744" y="144536" z="-12256" h="41390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148744" y="145064" z="-12288" h="8462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22350" /> <!-- Emperor's Sniper -->
+		<point x="148712" y="145512" z="-12304" h="17104" />
+	</spawn>
+	<spawn count="1" respawn="1200" respawn_random="0" period_of_day="none">
+		<npc id="22352" /> <!-- Emperor's Archer -->
+		<point x="147848" y="145080" z="-12232" h="34979" />
+	</spawn>
+	<spawn count="1" respawn="1200" respawn_random="0" period_of_day="none">
+		<npc id="22352" /> <!-- Emperor's Archer -->
+		<point x="147976" y="144280" z="-12224" h="50300" />
+	</spawn>
+	<spawn count="1" respawn="1200" respawn_random="0" period_of_day="none">
+		<npc id="22352" /> <!-- Emperor's Archer -->
+		<point x="148616" y="143256" z="-12224" h="57388" />
+	</spawn>
+	<spawn count="1" respawn="1200" respawn_random="0" period_of_day="none">
+		<npc id="22352" /> <!-- Emperor's Archer -->
+		<point x="149688" y="145448" z="-12312" h="7115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34230" /> <!-- Undercover Agent -->
+		<point x="144184" y="147624" z="-12136" h="62210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34230" /> <!-- Undercover Agent -->
+		<point x="146888" y="147208" z="-12224" h="62210" />
+	</spawn>
+</list>

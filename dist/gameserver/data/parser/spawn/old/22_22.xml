@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="giran_castle_light_side">
+		<point x="83312" y="147907" z="-3400" h="16384"/>
+		<npc id="36611"/><!--Герольд-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="80297" y="145262" z="-3528" h="998"/>
+		<npc id="30020" /><!--Бекинс-->
+	</spawn>
+	<spawn count="1" respawn="60">
+		<point x="78977" y="149036" z="-3592" h="0"/>
+		<npc id="30613"/><!--Дух Алдера-->
+	</spawn>
+	<spawn count="1" respawn="60">
+		<point x="80289" y="145273" z="-3528" h="998"/>
+		<npc id="30021"/><!--Бекинс Деко-->
+	</spawn>
+	<spawn name="Baikal" count="1" respawn="60">
+		<point x="102248" y="155352" z="-3688" h="21344"/>
+		<npc id="30016"/><!--Байкал-->
+	</spawn>
+	<spawn name="ain" count="1" respawn="60">
+		<point x="36392" y="193048" z="-3088" h="47276"/>
+		<npc id="34019"/><!--Агент Острова Дьявола Фетхина-->
+	</spawn>
+</list>

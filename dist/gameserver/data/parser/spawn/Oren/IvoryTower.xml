@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="18501" /> <!--  -->
+    <point x="87849" y="14727" z="-3504" h="0" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="18501" /> <!--  -->
+    <point x="87844" y="17621" z="-3512" h="0" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="18501" /> <!--  -->
+    <point x="82825" y="14726" z="-3504" h="0" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="18501" /> <!--  -->
+    <point x="82810" y="17638" z="-3512" h="0" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30176" /> <!-- Valleria -->
+    <point x="85675" y="15994" z="-2808" h="27000" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30715" /> <!-- Marina -->
+    <point x="84985" y="15991" z="-2808" h="5300" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30716" /> <!-- Cecile -->
+    <point x="85336" y="16194" z="-2800" h="59500" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30722" /> <!-- Merian -->
+    <point x="85336" y="16194" z="-1768" h="59500" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30175" /> <!-- Fairen -->
+    <point x="85675" y="15994" z="-1776" h="27000" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30724" /> <!-- Tavillian -->
+    <point x="85143" y="14911" z="-3512" h="49152" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30723" /> <!-- Roy -->
+    <point x="85518" y="14911" z="-3512" h="49152" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30163" /> <!-- Rex -->
+    <point x="85982" y="16193" z="-4272" h="32768" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30721" /> <!-- Ladd -->
+    <point x="84985" y="15991" z="-1776" h="5300" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30164" /> <!-- Ian -->
+    <point x="85655" y="15638" z="-4272" h="22000" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30174" /> <!-- Arkenias -->
+    <point x="85675" y="15994" z="-2288" h="27000" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30162" /> <!-- Karin -->
+    <point x="84814" y="15886" z="-4288" h="5200" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30727" /> <!-- Verona -->
+    <point x="85336" y="16194" z="-3672" h="49152" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30170" /> <!-- Radic -->
+    <point x="84689" y="16198" z="-4272" h="0" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30718" /> <!-- Joan -->
+    <point x="84985" y="15991" z="-2288" h="5300" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30169" /> <!-- Marty -->
+    <point x="85005" y="15638" z="-4272" h="11000" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30719" /> <!-- Mariell -->
+    <point x="85336" y="16194" z="-2288" h="59500" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30171" /> <!-- Gaius -->
+    <point x="85332" y="16592" z="-2808" h="48500" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30726" /> <!-- Tebose -->
+    <point x="85516" y="17458" z="-3512" h="16384" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30720" /> <!-- Kaiena -->
+    <point x="85332" y="16592" z="-1776" h="48500" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30725" /> <!-- Yening -->
+    <point x="85149" y="17458" z="-3512" h="16384" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30165" /> <!-- Ralford -->
+    <point x="85004" y="16760" z="-4272" h="54000" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30166" /> <!-- Wesley -->
+    <point x="85655" y="16767" z="-4272" h="43500" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30717" /> <!-- Gauen -->
+    <point x="85332" y="16592" z="-2288" h="48500" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34199" /> <!-- Elite Wizard -->
+    <point x="87096" y="15309" z="-3512" h="38645" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34199" /> <!-- Elite Wizard -->
+    <point x="87014" y="15418" z="-3512" h="37605" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34199" /> <!-- Elite Wizard -->
+    <point x="87190" y="15223" z="-3512" h="39238" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34199" /> <!-- Elite Wizard -->
+    <point x="86828" y="15095" z="-3512" h="11547" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34199" /> <!-- Elite Wizard -->
+    <point x="87290" y="15161" z="-3512" h="47430" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34199" /> <!-- Elite Wizard -->
+    <point x="87167" y="14975" z="-3512" h="16973" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34199" /> <!-- Elite Wizard -->
+    <point x="87089" y="15037" z="-3512" h="2645" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34199" /> <!-- Elite Wizard -->
+    <point x="86976" y="15070" z="-3512" h="13945" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34186" /> <!-- Karen -->
+    <point x="87357" y="15004" z="-3512" h="27791" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34198" /> <!-- Elite Wizard -->
+    <point x="87050" y="16930" z="-3512" h="25226" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34198" /> <!-- Elite Wizard -->
+    <point x="86868" y="17283" z="-3512" h="50633" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34198" /> <!-- Elite Wizard -->
+    <point x="87258" y="17156" z="-3512" h="18422" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34198" /> <!-- Elite Wizard -->
+    <point x="87006" y="17293" z="-3512" h="52692" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34198" /> <!-- Elite Wizard -->
+    <point x="87365" y="17247" z="-3512" h="26397" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34198" /> <!-- Elite Wizard -->
+    <point x="87136" y="17034" z="-3512" h="22625" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34198" /> <!-- Elite Wizard -->
+    <point x="87259" y="17381" z="-3512" h="52266" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34198" /> <!-- Elite Wizard -->
+    <point x="87144" y="17337" z="-3512" h="45797" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34187" /> <!-- Berkh -->
+    <point x="87378" y="17361" z="-3512" h="38122" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="30934" /> <!-- Marsha -->
+    <point x="85881" y="14126" z="-5256" h="46752" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34200" /> <!-- Elite Wizard -->
+    <point x="83614" y="15393" z="-3512" h="57661" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34200" /> <!-- Elite Wizard -->
+    <point x="83809" y="15077" z="-3512" h="17936" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34200" /> <!-- Elite Wizard -->
+    <point x="83537" y="15024" z="-3512" h="16880" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34200" /> <!-- Elite Wizard -->
+    <point x="83434" y="14987" z="-3512" h="19739" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34200" /> <!-- Elite Wizard -->
+    <point x="83663" y="15063" z="-3512" h="13027" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34200" /> <!-- Elite Wizard -->
+    <point x="83466" y="15194" z="-3512" h="53122" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34200" /> <!-- Elite Wizard -->
+    <point x="83553" y="15290" z="-3512" h="53989" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34200" /> <!-- Elite Wizard -->
+    <point x="83364" y="15155" z="-3512" h="57077" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34189" /> <!-- Kakhoot -->
+    <point x="83290" y="15000" z="-3512" h="3355" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34197" /> <!-- Elite Wizard -->
+    <point x="83797" y="17287" z="-3512" h="40015" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34197" /> <!-- Elite Wizard -->
+    <point x="83547" y="17339" z="-3512" h="41259" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34197" /> <!-- Elite Wizard -->
+    <point x="83652" y="16923" z="-3512" h="6428" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34197" /> <!-- Elite Wizard -->
+    <point x="83562" y="17044" z="-3512" h="6537" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34197" /> <!-- Elite Wizard -->
+    <point x="83676" y="17299" z="-3512" h="49153" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34197" /> <!-- Elite Wizard -->
+    <point x="83443" y="17168" z="-3512" h="9859" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34197" /> <!-- Elite Wizard -->
+    <point x="83438" y="17377" z="-3512" h="43808" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34197" /> <!-- Elite Wizard -->
+    <point x="83352" y="17229" z="-3512" h="6711" />
+  </spawn>
+  <spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+    <npc id="34188" /> <!-- Ferr -->
+    <point x="83292" y="17351" z="-3512" h="60029" />
+  </spawn>
+</list>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="219"><!--Dragoon-->
+		<skill id="141" level="4" min_level="40" cost="80000"/><!--Weapon Mastery-->
+		<skill id="45127" level="3" min_level="40" cost="80000"/><!--Chant of Shield-->
+		<skill id="45126" level="3" min_level="40" cost="80000"/><!--Chant of Might-->
+		<skill id="45123" level="2" min_level="40" cost="80000"/><!--Chant of Haste-->
+		<skill id="45121" level="3" min_level="40" cost="80000"/><!--Chant of Focus-->
+		<skill id="45129" level="3" min_level="40" cost="80000"/><!--Chant of Clarity-->
+		<skill id="45136" level="3" min_level="40" cost="80000"/><!--Chant of Empower-->
+		<skill id="45135" level="3" min_level="40" cost="80000"/><!--Chant of Acumen-->
+		<skill id="45122" level="3" min_level="40" cost="80000"/><!--Chant of Death Whisper-->
+		<skill id="45137" level="2" min_level="40" cost="80000"/><!--Chant of Wild Magic-->
+		<skill id="45128" level="2" min_level="40" cost="80000"/><!--Chant of Berserker Spirit-->
+		<skill id="45125" level="2" min_level="40" cost="80000"/><!--Chant of Magic Barrier-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47863" level="2" min_level="1" auto_get="true"/><!--Wild Instinct-->
+		<skill id="47801" level="3" min_level="40" cost="80000"/><!--Piercing-->
+		<skill id="47861" level="2" min_level="40" cost="80000"/><!--Wild Weapon Mastery-->
+		<skill id="47862" level="2" min_level="40" cost="80000"/><!--Wild Armor Mastery-->
+		<skill id="47822" level="2" min_level="40" cost="80000"/><!--Wild Rush-->
+		<skill id="47821" level="1" min_level="40" cost="80000"><!--Wild Assault-->
+			<required_items>
+				<item id="97110;97118" count="1"/><!--Spellbook: Wild Assault-->
+			</required_items>
+		</skill>
+		<skill id="47805" level="1" min_level="40" cost="80000"/><!--Wild Scratch-->
+		<skill id="47803" level="1" min_level="40" cost="80000"/><!--Threatening Swing-->
+		<skill id="47803" level="2" min_level="44" cost="120000"/><!--Threatening Swing-->
+		<skill id="34" level="2" min_level="45" cost="120000"/><!--Bandage-->
+		<skill id="1800" level="1" min_level="45" auto_get="true"/><!--Pirate Transformation-->
+		<skill id="47861" level="3" min_level="48" cost="200000"/><!--Wild Weapon Mastery-->
+		<skill id="47862" level="3" min_level="48" cost="200000"/><!--Wild Armor Mastery-->
+		<skill id="47803" level="3" min_level="48" cost="200000"/><!--Threatening Swing-->
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47801" level="4" min_level="50" cost="300000"/><!--Piercing-->
+		<skill id="47805" level="2" min_level="50" cost="300000"/><!--Wild Scratch-->
+		<skill id="47803" level="4" min_level="52" cost="300000"/><!--Threatening Swing-->
+		<skill id="47861" level="4" min_level="54" cost="400000"/><!--Wild Weapon Mastery-->
+		<skill id="47862" level="4" min_level="54" cost="400000"/><!--Wild Armor Mastery-->
+		<skill id="47801" level="5" min_level="55" cost="400000"/><!--Piercing-->
+		<skill id="47803" level="5" min_level="56" cost="500000"/><!--Threatening Swing-->
+		<skill id="77" level="3" min_level="60" cost="700000"/><!--Ability to Attack-->
+		<skill id="34" level="3" min_level="60" cost="700000"/><!--Bandage-->
+		<skill id="1801" level="1" min_level="60" auto_get="true"/><!--Dark Assassin Transformation-->
+		<skill id="45184" level="3" min_level="60"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47801" level="6" min_level="60" cost="700000"/><!--Piercing-->
+		<skill id="47861" level="5" min_level="60" cost="700000"/><!--Wild Weapon Mastery-->
+		<skill id="47862" level="5" min_level="60" cost="700000"/><!--Wild Armor Mastery-->
+		<skill id="47805" level="3" min_level="60" cost="700000"/><!--Wild Scratch-->
+		<skill id="47803" level="6" min_level="60" cost="700000"/><!--Threatening Swing-->
+		<skill id="47803" level="7" min_level="64" cost="1000000"/><!--Threatening Swing-->
+		<skill id="47801" level="7" min_level="65" cost="1000000"/><!--Piercing-->
+		<skill id="47861" level="6" min_level="66" cost="1200000"/><!--Wild Weapon Mastery-->
+		<skill id="47862" level="6" min_level="66" cost="1200000"/><!--Wild Armor Mastery-->
+		<skill id="47803" level="8" min_level="68" cost="1600000"/><!--Threatening Swing-->
+		<skill id="1802" level="1" min_level="70" auto_get="true"/><!--White Assassin Transformation-->
+		<skill id="47801" level="8" min_level="70" cost="2000000"/><!--Piercing-->
+		<skill id="47805" level="4" min_level="70" cost="2000000"/><!--Wild Scratch-->
+		<skill id="47803" level="9" min_level="71" cost="2000000"/><!--Threatening Swing-->
+		<skill id="47861" level="7" min_level="72" cost="2200000"/><!--Wild Weapon Mastery-->
+		<skill id="47862" level="7" min_level="72" cost="2200000"/><!--Wild Armor Mastery-->
+		<skill id="47803" level="10" min_level="74" cost="2200000"/><!--Threatening Swing-->
+		<skill id="47805" level="5" min_level="75" cost="2200000"/><!--Wild Scratch-->
+		<skill id="1405" level="1" min_level="52" cost="300000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="2" min_level="61" cost="700000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+	</normal_skill_tree>
+</list>

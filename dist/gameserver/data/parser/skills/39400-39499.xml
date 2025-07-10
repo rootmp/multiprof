@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="39465" levels="1" name="Anniversary Celebration Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill11540"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="39466" levels="1" name="Anniversary Talisman">
+		<set name="icon" value="icon.ev_L2_soul_ore"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

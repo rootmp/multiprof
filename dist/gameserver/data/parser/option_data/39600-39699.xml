@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="39604">
+		<!--P./ M. Atk. +75-->
+		<for>
+			<add order="0x60" stat="pAtk" value="75"/>
+			<add order="0x60" stat="mAtk" value="75"/>
+		</for>
+	</option_data>
+	<option_data id="39605">
+		<!--P./ M. Atk. +125-->
+		<for>
+			<add order="0x60" stat="pAtk" value="125"/>
+			<add order="0x60" stat="mAtk" value="125"/>
+		</for>
+	</option_data>
+	<option_data id="39606">
+		<!--P./ M. Def. +70-->
+		<for>
+			<add order="0x60" stat="pDef" value="70"/>
+			<add order="0x60" stat="mDef" value="70"/>
+		</for>
+	</option_data>
+	<option_data id="39607">
+		<!--Received damage -1%-->
+		<for>
+			<mul order="0x60" stat="pvpPhysDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvpPhysSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvpMagicSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvePhysDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvePhysSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pveMagicSkillDefenceBonus" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39608">
+		<!--Max CP +75-->
+		<for>
+			<add order="0x60" stat="maxCp" value="75"/>
+		</for>
+	</option_data>
+	<option_data id="39609">
+		<!--Max HP +50-->
+		<for>
+			<add order="0x60" stat="maxHp" value="50"/>
+		</for>
+	</option_data>
+	<option_data id="39610">
+		<!--P. Def. +13-->
+		<for>
+			<add order="0x60" stat="pDef" value="13"/>
+		</for>
+	</option_data>
+	<option_data id="39611">
+		<!--Knockback Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_knockback" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39612">
+		<!--Atk. Spd. +6-->
+		<for>
+			<add order="0x60" stat="pAtkSpd" value="6"/>
+		</for>
+	</option_data>
+	<option_data id="39613">
+		<!--Atk. Spd. +5-->
+		<for>
+			<add order="0x60" stat="pAtkSpd" value="5"/>
+		</for>
+	</option_data>
+	<option_data id="39614">
+		<!--Casting Spd. +6-->
+		<for>
+			<add order="0x60" stat="mAtkSpd" value="6"/>
+		</for>
+	</option_data>
+	<option_data id="39615">
+		<!--Hold Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_hold" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39616">
+		<!--M. Evasion +2-->
+		<for>
+			<add order="0x60" stat="mEvasRate" value="2"/>
+		</for>
+	</option_data>
+	<option_data id="39617">
+		<!--Max MP +25-->
+		<for>
+			<add order="0x60" stat="maxMp" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39618">
+		<!--M. Def. +5-->
+		<for>
+			<add order="0x60" stat="mDef" value="5"/>
+		</for>
+	</option_data>
+	<option_data id="39619">
+		<!--P. Evasion +2-->
+		<for>
+			<add order="0x60" stat="pEvasRate" value="2"/>
+		</for>
+	</option_data>
+	<option_data id="39620">
+		<!--Acquired XP/ SP +1%-->
+		<for>
+			<add order="0x60" stat="exp_rate_multiplier" value="0.01"/>
+			<add order="0x60" stat="sp_rate_multiplier" value="0.01"/>
+		</for>
+	</option_data>
+	<option_data id="39621">
+		<!--Sayha's Grace charging rate +1%-->
+		<for>
+			<mul order="0x60" stat="sayhas_grace_charging_rate_multiplier" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39622">
+		<!--Knockback Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_knockback" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39623">
+		<!--P. Def. +17-->
+		<for>
+			<add order="0x60" stat="pDef" value="17"/>
+		</for>
+	</option_data>
+	<option_data id="39624">
+		<!--Max CP +50-->
+		<for>
+			<add order="0x60" stat="maxCp" value="50"/>
+		</for>
+	</option_data>
+	<option_data id="39625">
+		<!--P. Def. +26-->
+		<for>
+			<add order="0x60" stat="pDef" value="26"/>
+		</for>
+	</option_data>
+	<option_data id="39626">
+		<!--M. Def. +26-->
+		<for>
+			<add order="0x60" stat="mDef" value="26"/>
+		</for>
+	</option_data>
+	<option_data id="39627">
+		<!--P. Def. +8-->
+		<for>
+			<add order="0x60" stat="pDef" value="8"/>
+		</for>
+	</option_data>
+	<option_data id="39628">
+		<!--Max CP +25-->
+		<for>
+			<add order="0x60" stat="maxCp" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39629">
+		<!--Max HP +25-->
+		<for>
+			<add order="0x60" stat="maxHp" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39630">
+		<!--M. Def. +17-->
+		<for>
+			<add order="0x60" stat="mDef" value="17"/>
+		</for>
+	</option_data>
+	<option_data id="39631">
+		<!--Suppression Resistance +1%-->
+	</option_data>
+	<option_data id="39632">
+		<!--Imprisonment Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_deport" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39633">
+		<!--HP/ MP/ CP Recovery Rate +1-->
+		<for>
+			<add order="0x60" stat="regHp" value="1"/>
+			<add order="0x60" stat="regMp" value="1"/>
+			<add order="0x60" stat="regCp" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39634">
+		<!--Suppression Resistance +1%-->
+	</option_data>
+	<option_data id="39635">
+		<!--Pull Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_pull" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39636">
+		<!--M. Def. +13-->
+		<for>
+			<add order="0x60" stat="mDef" value="13"/>
+		</for>
+	</option_data>
+	<option_data id="39637">
+		<!--Imprisonment Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_deport" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39638">
+		<!--Pull Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_pull" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39639">
+		<!--Max HP +75-->
+		<for>
+			<add order="0x60" stat="maxHp" value="75"/>
+		</for>
+	</option_data>
+	<option_data id="39640">
+		<!--P. Def. +18-->
+		<for>
+			<add order="0x60" stat="pDef" value="18"/>
+		</for>
+	</option_data>
+	<option_data id="39641">
+		<!--Hold Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_hold" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39642">
+		<!--Knockback Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_knockback" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39643">
+		<!--P. Def. +5-->
+		<for>
+			<add order="0x60" stat="pDef" value="5"/>
+		</for>
+	</option_data>
+	<option_data id="39644">
+		<!--Casting Spd. +5-->
+		<for>
+			<add order="0x60" stat="mAtkSpd" value="5"/>
+		</for>
+	</option_data>
+	<option_data id="39645">
+		<!--Sayha's Grace Consumption -1%-->
+		<for>
+			<mul order="0x60" stat="sayhas_grace_consume" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39646">
+		<!--Sayha's Grace charging rate +1%-->
+		<for>
+			<mul order="0x60" stat="sayhas_grace_charging_rate_multiplier" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39647">
+		<!--M. Def. +8-->
+		<for>
+			<add order="0x60" stat="mDef" value="8"/>
+		</for>
+	</option_data>
+	<option_data id="39648">
+		<!--Max MP +50-->
+		<for>
+			<add order="0x60" stat="maxMp" value="50"/>
+		</for>
+	</option_data>
+	<option_data id="39649">
+		<!--Hold Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_hold" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39650">
+		<!--Max MP +75-->
+		<for>
+			<add order="0x60" stat="maxMp" value="75"/>
+		</for>
+	</option_data>
+	<option_data id="39651">
+		<!--Sayha's Grace Consumption -1%-->
+		<for>
+			<mul order="0x60" stat="sayhas_grace_consume" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39652">
+		<!--Imprisonment Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_deport" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39653">
+		<!--M. Def. +18-->
+		<for>
+			<add order="0x60" stat="mDef" value="18"/>
+		</for>
+	</option_data>
+	<option_data id="39654">
+		<!--Suppression Resistance +1%-->
+	</option_data>
+	<option_data id="39655">
+		<!--Pull Resistance +1%-->
+		<for>
+			<mul order="0x60" stat="defence_trait_pull" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39656">
+		<!--P. Def. +20.-->
+		<for>
+			<add order="0x60" stat="pDef" value="20"/>
+		</for>
+	</option_data>
+	<option_data id="39657">
+		<!--M. Def. +20-->
+		<for>
+			<add order="0x60" stat="mDef" value="20"/>
+		</for>
+	</option_data>
+	<option_data id="39658">
+		<!--Skill Cooldown -1%, Max HP/ MP/ CP +60-->
+		<for>
+			<mul order="0x60" stat="mReuse" value="0.99"/>
+			<mul order="0x60" stat="pReuse" value="0.99"/>
+			<mul order="0x60" stat="musicReuse" value="0.99"/>
+			<add order="0x60" stat="maxHp" value="60"/>
+			<add order="0x60" stat="maxMp" value="60"/>
+			<add order="0x60" stat="maxCp" value="60"/>
+		</for>
+	</option_data>
+	<option_data id="39659">
+		<!--Debuff/ Anomaly Resistance +2%-->
+	</option_data>
+	<option_data id="39660">
+		<!--Magic Lamp charging rate +2%-->
+		<for>
+			<mul order="0x60" stat="magic_lamp_charging_rate_multiplier" value="1.02"/>
+		</for>
+	</option_data>
+	<option_data id="39661">
+		<!--Debuff/ Anomaly Resistance +1%-->
+	</option_data>
+	<option_data id="39662">
+		<!--CON/ MEN +1-->
+		<for>
+			<add order="0x60" stat="CON" value="1"/>
+			<add order="0x60" stat="MEN" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39663">
+		<!--P./ M. Def. +40-->
+		<for>
+			<add order="0x60" stat="pDef" value="40"/>
+			<add order="0x60" stat="mDef" value="40"/>
+		</for>
+	</option_data>
+	<option_data id="39664">
+		<!--P./ M. Def. +40-->
+		<for>
+			<add order="0x60" stat="pDef" value="40"/>
+			<add order="0x60" stat="mDef" value="40"/>
+		</for>
+	</option_data>
+	<option_data id="39665">
+		<!--P./ M. Atk. +30-->
+		<for>
+			<add order="0x60" stat="pAtk" value="30"/>
+			<add order="0x60" stat="mAtk" value="30"/>
+		</for>
+	</option_data>
+	<option_data id="39666">
+		<!--M. Def. +23-->
+		<for>
+			<add order="0x60" stat="mDef" value="23"/>
+		</for>
+	</option_data>
+	<option_data id="39667">
+		<!--HP Recovery Potions' Effect +5-->
+		<for>
+			<stat_effect name="potion_hp_heal_effect" value="5" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39668">
+		<!--HP Recovery Potions' Effect +5-->
+		<for>
+			<stat_effect name="potion_hp_heal_effect" value="5" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39669">
+		<!--Received P. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="pCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39670">
+		<!--Received M. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39671">
+		<!--Received M. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39672">
+		<!--Received M. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39673">
+		<!--Received P. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39674">
+		<!--Received P. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39675">
+		<!--Received P. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39676">
+		<!--Received M. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39677">
+		<!--P. Def. +23-->
+		<for>
+			<add order="0x60" stat="pDef" value="23"/>
+		</for>
+	</option_data>
+	<option_data id="39678">
+		<!--P./ M. Def. +20-->
+		<for>
+			<add order="0x60" stat="pDef" value="20"/>
+			<add order="0x60" stat="mDef" value="20"/>
+		</for>
+	</option_data>
+	<option_data id="39679">
+		<!--P./ M. Def. +40-->
+		<for>
+			<add order="0x60" stat="pDef" value="40"/>
+			<add order="0x60" stat="mDef" value="40"/>
+		</for>
+	</option_data>
+	<option_data id="39680">
+		<!--P./ M. Atk. +40-->
+		<for>
+			<add order="0x60" stat="pAtk" value="40"/>
+			<add order="0x60" stat="mAtk" value="40"/>
+		</for>
+	</option_data>
+	<option_data id="39681">
+		<!--Acquired XP/ SP +10%, Max HP/ MP/ CP +250, P./ M. Atk. +50, P./ M. Def. +100-->
+	</option_data>
+</list>

@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="61000" levels="1" name="100% P. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61001" levels="1" name="5% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61002" levels="1" name="10% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61003" levels="1" name="15% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61004" levels="1" name="20% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61005" levels="1" name="25% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61006" levels="1" name="30% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61007" levels="1" name="35% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61008" levels="1" name="40% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61009" levels="1" name="45% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61010" levels="1" name="50% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61011" levels="1" name="55% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61012" levels="1" name="60% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61013" levels="1" name="65% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61014" levels="1" name="70% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61015" levels="1" name="75% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61016" levels="1" name="80% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61017" levels="1" name="85% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61018" levels="1" name="90% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61019" levels="1" name="95% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61020" levels="1" name="100% M. Skill Damage in PvE Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61021" levels="1" name="5% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61022" levels="1" name="10% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61023" levels="1" name="15% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61024" levels="1" name="20% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61025" levels="1" name="25% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61026" levels="1" name="30% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61027" levels="1" name="35% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61028" levels="1" name="40% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61029" levels="1" name="45% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61030" levels="1" name="50% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61031" levels="1" name="55% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61032" levels="1" name="60% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61033" levels="1" name="65% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61034" levels="1" name="70% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61035" levels="1" name="75% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61036" levels="1" name="80% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61037" levels="1" name="85% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61038" levels="1" name="90% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61039" levels="1" name="95% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61040" levels="1" name="100% PvP Damage From Basic Attacks Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61041" levels="1" name="5% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61042" levels="1" name="10% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61043" levels="1" name="15% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61044" levels="1" name="20% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61045" levels="1" name="25% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61046" levels="1" name="30% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61047" levels="1" name="35% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61048" levels="1" name="40% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61049" levels="1" name="45% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61050" levels="1" name="50% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61051" levels="1" name="55% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61052" levels="1" name="60% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61053" levels="1" name="65% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61054" levels="1" name="70% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61055" levels="1" name="75% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61056" levels="1" name="80% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61057" levels="1" name="85% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61058" levels="1" name="90% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61059" levels="1" name="95% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61060" levels="1" name="100% P. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61061" levels="1" name="5% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61062" levels="1" name="10% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61063" levels="1" name="15% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61064" levels="1" name="20% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61065" levels="1" name="25% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61066" levels="1" name="30% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61067" levels="1" name="35% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61068" levels="1" name="40% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61069" levels="1" name="45% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61070" levels="1" name="50% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61071" levels="1" name="55% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61072" levels="1" name="60% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61073" levels="1" name="65% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61074" levels="1" name="70% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61075" levels="1" name="75% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61076" levels="1" name="80% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61077" levels="1" name="85% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61078" levels="1" name="90% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61079" levels="1" name="95% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61080" levels="1" name="100% M. Skill Damage in PvP Increase">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61081" levels="1" name="replace a to b">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61082" levels="1" name="replace b to c">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61083" levels="1" name="replace c to d">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61084" levels="1" name="replace d to a">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61085" levels="1" name="replace a to c">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61086" levels="1" name="replace a block">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61091" levels="1" name="Test P. Skill Evasion 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61092" levels="1" name="Test P. Skill Evasion 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61093" levels="1" name="Test P. Skill Evasion 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61094" levels="1" name="Test P. Skill Evasion 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61095" levels="1" name="Test P. Skill Evasion 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61096" levels="1" name="Test P. Skill Evasion 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61097" levels="1" name="Test P. Skill Evasion 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61098" levels="1" name="Test P. Skill Evasion 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61099" levels="1" name="Test P. Skill Evasion 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

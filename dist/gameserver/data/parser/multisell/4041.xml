@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="37705" count="1"/>	<!--Gold Fishing Shot-->
+		<ingredient id="70115" count="4"/>	<!--Fishing Coin-->
+	</item>
+	<item>
+		<production id="49585" count="1"/>	<!--Golden Mermaid's Tears (7 days)-->
+		<ingredient id="70115" count="70"/>	<!--Fishing Coin-->
+	</item>
+	<item>
+		<production id="70116" count="1"/>	<!--Golden Mermaid's Fishing Rod (1 day)-->
+		<ingredient id="70115" count="55"/>	<!--Fishing Coin-->
+	</item>
+	<item>
+		<production id="70118" count="1"/>	<!--Golden Mermaid's Fishing Rod (7 days)-->
+		<ingredient id="70115" count="305"/>	<!--Fishing Coin-->
+	</item>
+	<item>
+		<production id="70120" count="1"/>	<!--Golden Mermaid's Fishing Rod-->
+		<ingredient id="70115" count="3035"/>	<!--Fishing Coin-->
+	</item>
+	<item>
+		<production id="49591" count="1"/>	<!--Queen Ant's Ring Lv. 3 (30 days)-->
+		<ingredient id="70115" count="3830"/>	<!--Fishing Coin-->
+	</item>
+	<item>
+		<production id="49592" count="1"/>	<!--Orfen's Earring Lv. 3 (30 days)-->
+		<ingredient id="70115" count="4176"/>	<!--Fishing Coin-->
+	</item>
+	<item>
+		<production id="49593" count="1"/>	<!--Ring of Core Lv. 3 (30 days)-->
+		<ingredient id="70115" count="3830"/>	<!--Fishing Coin-->
+	</item>
+</list>

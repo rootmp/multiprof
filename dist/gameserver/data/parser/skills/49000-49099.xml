@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="49001" levels="5" name="Pet's Specific Skill: Kookaburra Chick">
+		<set name="icon" value="icon.pet_race_kukaburo"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49002" levels="20" name="Magic Missile">
+		<table name="#effectPoint">-100 -200 -300 -400 -500 -600 -650 -700 -750 -800 -810 -820 -830 -840 -850 -860 -870 -880 -890 -900</table>
+		<table name="#power">50 60 70 80 90 100 115 130 145 160 162 164 168 170 172 174 176 178 180</table>
+		<table name="#mp_consume">6 10 15 19 22 26 27 28 30 32 30 28 27 26 25 24 23 22 21 20</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.pet_magic_missile"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="power" value="#power"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="MDAM"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="49003" levels="20" name="Energy Burst">
+		<table name="#effectPoint">-100 -200 -300 -400 -500 -600 -650 -700 -750 -800 -810 -820 -830 -840 -850 -860 -870 -880 -890 -900</table>
+		<table name="#mp_consume">6 10 15 19 22 26 27 28 30 32 30 28 27 26 25 24 23 22 21 20</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_energy_burster"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="49004" levels="5" name="Entrenching">
+		<table name="#pDef">1.3 1.4 1.5 1.7 2</table>
+		<table name="#mDef">1.15 1.2 1.3 1.5 1.7</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<set name="icon" value="icon.pet_siege_mode"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="ENTRENCHING"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pDef" value="#pDef"/>
+				<mul stat="mDef" value="#mDef"/>
+			</effect>
+			<effect name="p_block_move"/>
+		</for>
+	</skill>
+	<skill id="49005" levels="5" name="Chain Block">
+		<table name="#effectPoint">-760 -780 -800 -820 -850</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill16856"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="50"/>
+		<set name="activateRate" value="80"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_effect" value="ROOT"/>
+		<set name="abnormal_type" value="root_physically"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="p_block_move"/><!-- TODO добавить - нельзя использовать атакующие умения -->
+		</for>
+	</skill>
+	<skill id="49006" levels="5" name="Blocked Target Change">
+		<table name="#effectPoint">-760 -780 -800 -820 -850</table>
+		<table name="#mp_consume">500 400 300 250 200</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.pet_chain_block"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49011" levels="5" name="Pet's Specific Skill: Tiger Cub">
+		<set name="icon" value="icon.pet_race_tiger"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49012" levels="20" name="Breaking Blaster">
+		<table name="#power">128 496 688 1597 3261 5120 6119 7151 8220 9053 9199 9346 9503 9652 9802 9952 10111 10264 10416 10570</table>
+		<table name="#effectPoint">-100 -200 -300 -400 -500 -600 -650 -700 -750 -800 -810 -820 -830 -840 -850 -860 -870 -880 -890 -900</table>
+		<table name="#mp_consume">6 14 22 28 34 39 42 45 48 50 52 54 56 58 60 62 64 66 68 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_tearing_blow"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49013" levels="5" name="Blinking Attack">
+		<table name="#power">890 2350 4000 5500 6000</table>
+		<table name="#effectPoint">-400 -600 -760 -760 -760</table>
+		<table name="#mp_consume">30 40 50 45 40</table>
+		<set name="debuff" value="true"/>
+		<set name="abnormal_time" value="1"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_flicker_attack"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="fly_type" value="DUMMY"/>
+		<set name="fly_radius" value="600"/>
+		<set name="fly_position_degree" value="180"/>
+		<set name="fly_depends_on_heading" value="true"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49014" levels="5" name="Beast Within">
+		<table name="#pAtk">1.2 1.25 1.3 1.4 1.5</table>
+		<table name="#pAtkSpd">1.2 1.25 1.3 1.4 1.5</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<set name="icon" value="icon.pet_natural_beast"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1500"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="BEAST_WITHIN"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="#pAtk"/>
+				<mul stat="pAtkSpd" value="#pAtkSpd"/>
+			</effect>
+			<effect name="p_block_move"/>
+		</for>
+	</skill>
+	<skill id="49015" levels="5" name="Hide">
+		<table name="#abnormal_time">10 15 20 25 30</table>
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill8364"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49016" levels="15" name="Strong Bite">
+		<table name="#power">9300 9449 9600 9754 9910 10069 10230 10394 10560 10729 10901 11075 11252 11432 11615</table>
+		<table name="#effectPoint">-760 -770 -780 -790 -800 -810 -820 -830 -840 -850 -860 -870 -880 -890 -900</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_gigantic_bite"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="50"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49017" levels="15" name="Improved Strong Bite">
+		<table name="#power">12283 12480 12680 12883 13089 13298 13511 13727 13947 14170 14397 14627 14861 15099</table>
+		<table name="#effectPoint">-760 -770 -780 -790 -800 -810 -820 -830 -840 -850 -860 -870 -880 -890 -900</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_gigantic_bite"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="50"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49021" levels="5" name="Pet's Specific Skill: Wolf Cub">
+		<set name="icon" value="icon.pet_race_wolf"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49022" levels="20" name="Dire Claw">
+		<table name="#power">96 372 516 1185 2202 4001 4613 5244 5897 6922 7035 7148 7268 7383 7498 7613 7736 7852 7970 8088</table>
+		<table name="#effectPoint">-100 -250 -400 -500 -600 -700 -750 -800 -850 -900 -100 -250 -400 -500 -600 -700 -750 -800 -850 -900</table>
+		<table name="#mp_consume">6 14 22 28 34 39 42 45 48 50 52 54 56 58 60 62 64 66 68 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_savage_claw"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49023" levels="5" name="Leap Attack">
+		<table name="#power">981 2484 4461 6248 6740</table>
+		<table name="#effectPoint">-400 -600 -760 -760 -760</table>
+		<table name="#mp_consume">30 40 50 45 40</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_leap_attack"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49024" levels="15" name="Last Dire Claw">
+		<table name="#power">7760 7891 8032 8165 8306 8442 8578 8722 8860 8998 9136 9283 9422 9564 9706</table>
+		<table name="#effectPoint">-760 -790 -820 -850 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_last_savage_claw"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="50"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="113" addName="1">
+				<target percentHP="30"/>
+		</cond>
+	</skill>
+	<skill id="49025" levels="1" name="Giant Wolf">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="icon" value="icon.pet_giant_wolf"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49026" levels="3" name="Ferocity">
+		<table name="#icon">icon.skill10542 icon.skill10542_2 icon.skill10542_3</table>
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="icon" value="#icon"/>
+		<set name="reuseDelay" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49031" levels="5" name="Pet's Specific Skill: Buffalo Calf">
+		<set name="icon" value="icon.pet_race_buffalo"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49032" levels="20" name="Horn Thrust">
+		<table name="#power">88 341 473 1098 2242 3520 4207 4916 5651 6224 6324 6426 6533 6636 6739 6842 6951 7057 7161 7267</table>
+		<table name="#effectPoint">-100 -250 -400 -500 -600 -700 -750 -800 -850 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900</table>
+		<table name="#mp_consume">6 14 22 28 34 39 42 45 48 50 52 54 56 58 60 62 64 66 68 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_horn_pierce"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49033" levels="5" name="Rump Stun">
+		<table name="#power">480 1216 1780 2180 2580</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<table name="#effectPoint">-400 -600 -760 -760 -760</table>
+		<table name="#mp_consume">30 40 50 45 40</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_butt_shock"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="debuff" value="true"/>
+		<set name="abnormal_effect" value="STUN"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="fly_type" value="DUMMY"/>
+		<set name="fly_radius" value="600"/>
+		<set name="fly_position_degree" value="1"/>
+		<set name="fly_depends_on_heading" value="true"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="Stun"/>
+			<effect name="KnockBack">
+				<def name="fly_radius" value="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="49034" levels="5" name="Pulling Body">
+		<table name="#mDef">1600 1700 1800 1900 2000</table>
+		<table name="#pDef">2200 2400 2600 2800 3200</table>
+		<table name="#effectPoint">-11400 -11850 -12300 -12750 -13500</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_magnetic_body"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="80"/>
+		<set name="debuff" value="true"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="activateRate" value="70"/>
+		<set name="nextAction" value="attack"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="physical_abnormal_resist"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_AREA"/>
+		<set name="trait" value="PULL"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="ThrowHorizontal">
+				<def name="fly_speed" value="600"/>
+				<def name="fly_delay" value="600"/>
+			</effect>
+			<self_effect>
+				<add stat="mDef" value="#mDef"/>
+				<add stat="pDef" value="#pDef"/>
+			</self_effect>
+		</for>
+	</skill>
+	<skill id="49035" levels="8" name="Breath of Hurricane">
+		<table name="#effectPoint">-6000 -7500 -9000 -10500 -11250 -12000 -12750 -13500</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_furious_breath"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1000"/>
+		<set name="debuff" value="true"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="target_lock"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="p_target_me"/>
+			<effect name="i_get_agro"/>
+		</for>
+	</skill>
+	<skill id="49036" levels="1" name="Pulling Body">
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="effectPoint" value="-400"/>
+		<set name="icon" value="icon.pet_magnetic_body"/>
+		<set name="coolTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49041" levels="5" name="Pet's Specific Skill: Hawk Hatchling">
+		<set name="icon" value="icon.pet_race_hawk"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49042" levels="20" name="Arrow Feather">
+		<table name="#power">115 446 619 1422 2642 4801 5536 6293 7076 8306 8442 8578 8722 8860 8998 9136 9283 9422 9564 9706</table>
+		<table name="#effectPoint">-100 -250 -400 -500 -600 -700 -750 -800 -850 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900</table>
+		<table name="#mp_consume">6 14 22 28 34 39 42 45 48 50 52 54 56 58 60 62 64 66 68 70</table>
+		<set name="debuff" value="true"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_feather_arrow"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49043" levels="5" name="Quick Jump">
+		<table name="#power">800 2500 4500 5500 6500</table>
+		<table name="#effectPoint">-400 -600 -760 -760 -760</table>
+		<table name="#mp_consume">30 40 50 45 40</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_fast_dive"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>		
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="fly_type" value="DUMMY"/>
+		<set name="fly_radius" value="600"/>
+		<set name="fly_position_degree" value="180"/>
+		<set name="fly_depends_on_heading" value="true"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49044" levels="5" name="Scout's Strike">
+		<table name="#power">2500 2600 2750 3000 3300</table>
+		<table name="#effectPoint">-760 -780 -800 -820 -850</table>
+		<table name="#mp_consume">40 45 50 45 40</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill10787"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="abnormal_effect" value="STUN"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="activateRate" value="90"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="Stun"/>
+		</for>
+	</skill>
+	<skill id="49045" levels="15" name="Feather Storm">
+		<table name="#power">3881 3946 4016 4082 4153 4222 4289 4361 4430 4499 4568 4642 4711 4782 4853</table>
+		<table name="#effectPoint">-1520 -1540 -1560 -1580 -1600 -1620 -1640 -1660 -1680 -1700 -1720 -1740 -1760 -1780 -1800</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_feather_trap"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="80"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="speed_down"/>
+		<set name="activateRate" value="90"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<mul order="0x50" stat="runSpd" value="0.5"/>
+		</for>
+	</skill>
+	<skill id="49046" levels="5" name="Exploding Feather">
+		<table name="#chance">30 40 50 80 100</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<table name="#mp_consume">100 90 80 70 60</table>
+		<set name="icon" value="icon.skill19556"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_time" value="120"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="EXPLODING_FEATHER"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<triggers>
+					<trigger id="49047" level="1" type="ON_CAST_SKILL" args="49048" chance="#chance"/>
+					<trigger id="49047" level="1" type="ON_CAST_SKILL" args="49045" chance="#chance"/>
+				</triggers>
+			</effect>
+		</for>
+	</skill>
+	<skill id="49047" levels="1" name="Exploding Feather - Effect">
+		<table name="#power">3881</table>
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.skill30007"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49048" levels="15" name="Feather Storm - Explosion">
+		<table name="#power">3881 3946 4016 4082 4153 4222 4289 4361 4430 4499 4568 4642 4711 4782 4853</table>
+		<table name="#effectPoint">-1520 -1540 -1560 -1580 -1600 -1620 -1640 -1660 -1680 -1700 -1720 -1740 -1760 -1780 -1800</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_feather_trap"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="80"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="speed_down"/>
+		<set name="activateRate" value="90"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<mul order="0x50" stat="runSpd" value="0.5"/>
+		</for>
+	</skill>
+	<skill id="49051" levels="5" name="Pet's Specific Skill: Dragon Hatchling">
+		<set name="icon" value="icon.pet_race_strider"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="49052" levels="20" name="Crippling Bite">
+		<table name="#power">115 446 619 1422 2642 4801 5536 6293 7076 8306 8442 8578 8722 8860 8998 9136 9283 9422 9564 9706</table>
+		<table name="#effectPoint">-100 -250 -400 -500 -600 -700 -750 -800 -850 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900</table>
+		<table name="#mp_consume">6 14 22 28 34 39 42 45 48 50 52 54 56 58 60 62 64 66 68 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_bite_crush"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49053" levels="20" name="Double Crippling Bite">
+		<table name="#power">115 446 619 1422 2642 4801 5536 6293 7076 8306 8442 8578 8722 8860 8998 9136 9283 9422 9564 9706</table>
+		<table name="#effectPoint">-100 -250 -400 -500 -600 -700 -750 -800 -850 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900 -900</table>
+		<table name="#mp_consume">6 14 22 28 34 39 42 45 48 50 52 54 56 58 60 62 64 66 68 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_bite_crush"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="80"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49054" levels="5" name="Rushing Assault">
+		<table name="#spd">30 40 50 55 60</table>
+		<table name="#pAtkSpd">1.15 1.2 1.25 1.3 1.4</table>
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<table name="#mp_consume">40 50 60 65 70</table>
+		<set name="icon" value="icon.skill1373"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_time" value="40"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="RUSHING_ASSAULT"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="runSpd" value="#spd"/>
+				<mul stat="pAtkSpd" value="#pAtkSpd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="49055" levels="5" name="Back Explosion">
+		<table name="#power">4461 4652 4843 5035 5356</table>
+		<table name="#effectPoint">-760 -790 -820 -850 -900</table>
+		<table name="#mp_consume">70 75 80 85 90</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_behind_burster"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1200"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="activateRate" value="70"/>
+		<set name="power" value="#power"/>
+		<set name="abnormal_time" value="1"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="nextAction" value="attack"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="trait" value="PULL"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="ThrowHorizontal">
+				<def name="fly_speed" value="600"/>
+				<def name="fly_delay" value="600"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="49056" levels="3" name="Double Attack">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="5"/>
+		<!--<set name="magicType" value="PHYSIC_TRIGGER"/>-->
+		<set name="icon" value="icon.skill0325"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="49057" levels="5" name="Explosion Stun">
+		<table name="#effectPoint">-760 -790 -820 -850 -900</table>
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="abnormal_time" value="1"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.pet_behind_burster"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="500"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

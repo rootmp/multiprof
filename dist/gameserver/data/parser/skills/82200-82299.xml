@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="82201" levels="20" name="Defense Property - Upper Armor">
+		<table name="#icon">icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04</table>
+		<!--<Effect>\nP./ M. Def. $s1-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="82202" levels="20" name="Defense Property - Lower Armor">
+		<table name="#icon">icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04</table>
+		<!--<Effect>\nP./ M. Def. $s1-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="82203" levels="20" name="Defense Property - Helmet">
+		<table name="#icon">icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04</table>
+		<!--<Effect>\nP./ M. Def. $s1-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="82204" levels="20" name="Defense Property - Gloves">
+		<table name="#icon">icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04</table>
+		<!--<Effect>\nP./ M. Def. $s1-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="82205" levels="20" name="Defense Property - Boots">
+		<table name="#icon">icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04</table>
+		<!--<Effect>\nP./ M. Def. $s1-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="82206" levels="20" name="Defense Property - Upper/ Lower Armor">
+		<table name="#icon">icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i01 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i02 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i03 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04 icon.aden_rune_am_i04</table>
+		<!--<Effect>\nP./ M. Def. $s1-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="48400" levels="25" name="Red's Blessing Lv. 1">
+		<table name="#affect_scope">RANGE FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN FAN</table>
+		<table name="#castRange">900 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1</table>
+		<set name="affect_scope" value="#affect_scope"/>
+		<set name="icon" value="icon.ev_libra_red_buff1"/>
+		<set name="castRange" value="#castRange"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48401" levels="9" name="Red's Blessing Reward Lv. 1">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48402" levels="2" name="Ice Shot">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48403" levels="1" name="Decrease Speed">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill1160"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48404" levels="1" name="Apherus' Annihilation Reward">
+		<set name="icon" value="icon.bm_sayha_rune"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48405" levels="2" name="Stone Attack">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48406" levels="2" name="Stone Stun Attack">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill10554"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="300"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48407" levels="1" name="Apherus' Paralysis">
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48408" levels="1" name="Apherus' Ranged Attack">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48409" levels="2" name="Bomb">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48410" levels="1" name="Apherus' Paralysis">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill1042"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48411" levels="1" name="Combat Support Buff">
+		<set name="icon" value="icon.etc_training_scroll_kalie_i00"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48412" levels="1" name="Cyclone Charge">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1170"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48413" levels="1" name="Cyclone Cutter">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0096"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48414" levels="1" name="Cyclone Destruction">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill10262"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48415" levels="3" name="Aura Burn">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="150"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48416" levels="3" name="Twister">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48417" levels="3" name="Ice Shot">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48418" levels="3" name="Prominence">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48419" levels="4" name="Arrow Multishot">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="10"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48420" levels="3" name="Power Strike">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="6000"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48421" levels="1" name="Dark Knight's Roar">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill19208"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48422" levels="1" name="Suppression">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill133917"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48423" levels="1" name="Dark Knight's Swing">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1896"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="120"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48424" levels="1" name="Dark Knight's Swing">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1896"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="120"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48425" levels="1" name="Banshee's Swamp">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill50003"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48426" levels="1" name="Banshee's Bomb">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill50004"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48427" levels="1" name="Darion's Powers">
+		<set name="icon" value="icon.skill11769"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48428" levels="1" name="Darion's Damage Reflection">
+		<set name="icon" value="icon.skill1232"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48429" levels="1" name="Darion's Roar">
+		<set name="debuff" value="true"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1400"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="5000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48430" levels="1" name="Darion's Stunning Chain Strike">
+		<set name="debuff" value="true"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48431" levels="1" name="Darion's Stunning Chain Strike">
+		<set name="debuff" value="true"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48432" levels="1" name="Darion's Shield Crush">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill10012"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48433" levels="1" name="Darion's Shield Crush">
+		<set name="abnormal_time" value="3"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill10012"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48434" levels="1" name="Darion's Cubic Sword">
+		<set name="icon" value="icon.skill0010"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48435" levels="1" name="Darion's Bleed">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1380"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="700"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48436" levels="1" name="Darion's Seal">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1380"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="700"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48437" levels="1" name="Darion's Hold">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1380"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="700"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48438" levels="1" name="Death Chain">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.rupture"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48439" levels="1" name="Death Summon">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill6320"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48440" levels="1" name="Death Pull">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48441" levels="1" name="Death Pull">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48442" levels="1" name="Big Death Bang">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1285"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48443" levels="1" name="Big Death Bang">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1285"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48444" levels="1" name="Death Thunder">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1469"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48445" levels="1" name="Death Gaze">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill0046"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48446" levels="1" name="Death Prison">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill11050"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48447" levels="1" name="Death Healing">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill1167"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="castRange" value="1200"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48448" levels="1" name="Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48449" levels="1" name="Steel Citadel's 1st Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48450" levels="1" name="Steel Citadel's 2nd Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48451" levels="1" name="Steel Citadel's 3rd Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48452" levels="1" name="Steel Citadel's 4th Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48453" levels="1" name="Steel Citadel's 5th Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48454" levels="1" name="Steel Citadel's 6th Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48455" levels="1" name="Steel Citadel's 7th Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48456" levels="1" name="Steel Citadel's 8th Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48457" levels="1" name="Steel Citadel's 9th Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48458" levels="1" name="Steel Citadel's 10th Floor Capture Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill6319"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48459" levels="1" name="Darion's Power">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0060"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48460" levels="1" name="Tarask's Ranged Attack">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill33915"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48461" levels="1" name="Earth Stone Curse">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill33917"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48462" levels="1" name="Tarask Dragon's Ground Shaker">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill33916"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48463" levels="1" name="Knock back.">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill33917"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48464" levels="1" name="Beleth' Self Heal">
+		<set name="effectPoint" value="10"/>
+		<set name="icon" value="icon.skill1216"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="9"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48465" levels="1" name="Darion's Health Decrease">
+		<set name="debuff" value="true"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="9"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48466" levels="1" name="Golem Mammoth' Mass Chain Strike">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill53003"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48467" levels="1" name="Golem Mammoth' Mass Stun Attack">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48468" levels="10" name="Dazzle Resistance">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48469" levels="1" name="Beoro's Roar">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill4111"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48470" levels="1" name="Beoro's Bite">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48471" levels="1" name="Beoro's Strike">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48472" levels="1" name="Dagger Vulnerability">
+		<set name="icon" value="icon.skill4461"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48473" levels="1" name="Beoro's Fear">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill1092"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48474" levels="1" name="Damage of Limit">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48475" levels="3" name="Cave Control Device Effect">
+		<table name="#icon">icon.skill_exp_sp_up_01 icon.skill_exp_sp_up_02 icon.skill_exp_sp_up_03</table>
+		<table name="#expsp">0.1 0.2 0.3</table>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="#icon"/>
+		<set name="abnormal_time" value="300"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="exp_rate_multiplier" value="#expsp"/>
+				<add stat="sp_rate_multiplier" value="#expsp"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="48476" levels="1" name="Giant's Stun Strike">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill10554"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="300"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48477" levels="2" name="Giant's Arrow">
+		<set name="effectPoint" value="-900"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48478" levels="2" name="Giant's Fatal Blow">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="700"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48479" levels="2" name="Giant's Aura Spike">
+		<set name="effectPoint" value="-115"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1200"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48480" levels="1" name="Giant's Power Shot">
+		<set name="effectPoint" value="-200"/>
+		<set name="icon" value="icon.skill0056"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48481" levels="1" name="Giant's Wave">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="300"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48482" levels="1" name="Giant's Fatal Strike">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="800"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48483" levels="1" name="Zaken's Prophecy">
+		<set name="icon" value="icon.skill50006"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48484" levels="1" name="Cemetery Grounds' Abilities">
+		<set name="icon" value="icon.skilltransform1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48485" levels="1" name="Dream's Vicious Strike">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48486" levels="1" name="Dream's Magic Strike">
+		<set name="effectPoint" value="-900"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="650"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48487" levels="1" name="Dream's Arrow Shot">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48488" levels="1" name="Dream's Ranged Attack">
+		<set name="effectPoint" value="-900"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="800"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48489" levels="1" name="Training Time">
+		<!--Helps you train in the instance zone.\nSustains Sayha's Grace.-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill6024"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48490" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nP. Atk. +1000-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48491" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nM. Atk. +1000-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48492" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nAtk. Spd. +24%%-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48493" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nCasting Spd. +24%%-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48494" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nP. Skill Critical Rate +11%%-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48495" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nM. Skill Critical Rate +21%%-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48496" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nAll Critical Damage +500-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48497" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nSoulshot damage +10%%\nSpiritshot damage +10%%-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48498" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nSkill Power +10%%-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48499" levels="1" name="Mentor's Advice">
+		<!--Your mentor's valuable advice makes you stronger.\n\nAll Critical Damage +15%%-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill30852"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

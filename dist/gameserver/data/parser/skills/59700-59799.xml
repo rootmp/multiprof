@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="59705" levels="1" name="Ride Silver Strider">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1373"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59706" levels="1" name="Ride Black Strider">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1373"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59707" levels="1" name="Ride Iron Strider">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="3600"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill1373"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59708" levels="1" name="Silver Strider Rider Scroll">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59709" levels="1" name="Black Strider Rider Scroll">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59710" levels="1" name="Iron Strider Rider Scroll">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59712" levels="1" name="Spellbook: Ninja">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59713" levels="1" name="Spellbook: Cowboy">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59714" levels="1" name="Spellbook: Steampunk">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59715" levels="1" name="Spellbook: Qipao">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59716" levels="1" name="Spellbook: Traditional Taiwanese Costume">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59717" levels="1" name="Ninja Appearance">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.bm2018_ninja_i01"/>
+		<set name="reuseDelay" value="7200000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="3000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59718" levels="1" name="Cowboy Appearance">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.bm2018_cowboy_i01"/>
+		<set name="reuseDelay" value="7200000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="3000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59719" levels="1" name="Steampunk-styled Appearance">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.g_bm_costume_steampunk"/>
+		<set name="reuseDelay" value="7200000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="3000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59720" levels="1" name="Qipao Appearance">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="br_L2Icon.qipao_armor_ul_i00"/>
+		<set name="reuseDelay" value="7200000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="3000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59721" levels="1" name="Traditional Taiwanese Costume Appearance">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchSys3.icon1.g_co_paiwan_u"/>
+		<set name="reuseDelay" value="7200000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="3000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59731" levels="1" name="XP Bonus Rune">
+		<set name="icon" value="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="59732" levels="1" name="+3 ~ +8 Talisman/ Belt Coupon Box">
+		<set name="icon" value="icon.bm_gold_lure_box"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59733" levels="1" name="New Year Gift">
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1800"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="icon" value="icon.xmas_miracle_i00"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="59734" levels="1" name="Special Kit">
+		<!--none-->
+		<set name="icon" value="icon.sayha2017_box_i03"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="59735" levels="1" name="Adventurer's Ring">
+		<!--P. Atk. $s1\nM. Atk. $s1\nMax HP $s2-->
+		<set name="icon" value="icon.ev_11th_rare_acc_ring"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="59736" levels="1" name="XP Bonus Rune">
+		<!--Acquired XP/ SP while hunting +50%%.-->
+		<set name="icon" value="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<table name="#exp_rate_multiplier">1.5</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="exp_rate_multiplier" value="#exp_rate_multiplier"/>
+				<mul stat="sp_rate_multiplier" value="#exp_rate_multiplier"/>
+			</effect>
+		</for>
+	</skill>
+</list>

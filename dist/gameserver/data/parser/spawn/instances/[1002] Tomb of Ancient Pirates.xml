@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15880" y="-77910" z="-5944" h="26886"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16199" y="-78055" z="-5944" h="11249"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15843" y="-78256" z="-5944" h="62227"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15409" y="-77893" z="-5944" h="29791"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16217" y="-78403" z="-5944" h="395"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15992" y="-77879" z="-5944" h="13133"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15796" y="-78244" z="-5944" h="17358"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16127" y="-77927" z="-5944" h="63454"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16195" y="-78271" z="-5944" h="10028"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14521" y="-79633" z="-5944" h="49153"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14610" y="-77990" z="-5944" h="49285"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14561" y="-79098" z="-5944" h="42441"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15302" y="-78139" z="-5936" h="48078"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15415" y="-76247" z="-5944" h="8284"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15790" y="-77845" z="-5944" h="35892"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16217" y="-76267" z="-5944" h="2"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15143" y="-77870" z="-5944" h="42334"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16146" y="-76150" z="-5944" h="13219"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15981" y="-77511" z="-5944" h="5315"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15586" y="-76160" z="-5944" h="15317"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15350" y="-76323" z="-5944" h="50558"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16317" y="-76245" z="-5944" h="48747"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16144" y="-77460" z="-5944" h="18106"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16220" y="-76323" z="-5944" h="43955"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14550" y="-77359" z="-5944" h="33420"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14555" y="-77496" z="-5944" h="23233"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16236" y="-76218" z="-5944" h="31066"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15524" y="-76863" z="-5944" h="46582"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15965" y="-76830" z="-5944" h="1981"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14709" y="-76941" z="-5944" h="63684"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16291" y="-75415" z="-5944" h="5315"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16129" y="-75453" z="-5944" h="14682"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16405" y="-75441" z="-5936" h="64056"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16235" y="-75861" z="-5944" h="41781"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16271" y="-75382" z="-5944" h="5498"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16186" y="-75624" z="-5944" h="53569"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17439" y="-77957" z="-6264" h="15649"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18037" y="-78332" z="-6264" h="10232"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17526" y="-78443" z="-6264" h="2280"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17913" y="-77755" z="-6256" h="4205"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17589" y="-78282" z="-6256" h="4416"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17127" y="-78280" z="-6264" h="10255"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17679" y="-79637" z="-6104" h="3852"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17952" y="-78496" z="-6264" h="59331"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17999" y="-79703" z="-6104" h="14618"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17917" y="-78454" z="-6264" h="60856"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17610" y="-78383" z="-6256" h="11581"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17304" y="-78152" z="-6264" h="36084"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17682" y="-78255" z="-6264" h="57787"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17206" y="-78099" z="-6264" h="20745"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18039" y="-79482" z="-6104" h="53327"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17907" y="-77788" z="-6256" h="49678"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17854" y="-77911" z="-6264" h="61983"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16495" y="-76920" z="-6080" h="20952"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16894" y="-76829" z="-6224" h="59409"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19671" y="-78281" z="-6264" h="57437"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19528" y="-77830" z="-6264" h="122"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19434" y="-78533" z="-6264" h="59348"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18867" y="-77732" z="-6264" h="57340"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20439" y="-79102" z="-6264" h="64470"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20332" y="-79265" z="-6264" h="2674"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20398" y="-79342" z="-6264" h="59355"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19905" y="-79809" z="-6200" h="43832"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19433" y="-78030" z="-6264" h="43726"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19052" y="-78097" z="-6264" h="3207"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18891" y="-77658" z="-6264" h="46010"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19551" y="-75975" z="-6256" h="3126"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18985" y="-75876" z="-6264" h="23255"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19401" y="-77572" z="-6264" h="50765"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19087" y="-77562" z="-6264" h="59589"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19092" y="-76219" z="-6256" h="7078"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19740" y="-77648" z="-6264" h="28170"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18942" y="-77507" z="-6264" h="14587"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18872" y="-76194" z="-6264" h="57841"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18831" y="-77497" z="-6264" h="12055"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19116" y="-75581" z="-6264" h="3968"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19564" y="-76281" z="-6264" h="28486"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18998" y="-75942" z="-6264" h="22913"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19733" y="-77989" z="-6264" h="49938"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20365" y="-77721" z="-6256" h="2744"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20409" y="-77745" z="-6256" h="37605"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18547" y="-76846" z="-6256" h="15086"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19500" y="-76804" z="-6264" h="44645"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20628" y="-76857" z="-6264" h="9671"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18993" y="-76897" z="-6264" h="23779"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18974" y="-77770" z="-6264" h="50616"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19593" y="-75362" z="-6264" h="54189"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19843" y="-75299" z="-6256" h="8191"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18891" y="-75550" z="-6264" h="7246"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18923" y="-75695" z="-6264" h="32246"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18983" y="-75592" z="-6264" h="50920"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19699" y="-75635" z="-6264" h="40108"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18951" y="-75501" z="-6264" h="57599"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21144" y="-77879" z="-6272" h="2360"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21554" y="-77891" z="-6272" h="17920"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21178" y="-77802" z="-6272" h="62497"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21854" y="-78074" z="-6272" h="880"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22242" y="-77949" z="-6272" h="33513"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21928" y="-78095" z="-6272" h="57437"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21633" y="-78373" z="-6280" h="61031"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22577" y="-77887" z="-6264" h="10564"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20932" y="-77965" z="-6272" h="63478"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22457" y="-79084" z="-6272" h="7907"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21068" y="-78927" z="-6296" h="60349"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20950" y="-79015" z="-6296" h="37929"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22104" y="-78853" z="-6272" h="39708"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21322" y="-79037" z="-6288" h="6809"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21827" y="-79363" z="-6272" h="8381"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21308" y="-79382" z="-6272" h="25896"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20677" y="-76921" z="-6264" h="59585"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21697" y="-75339" z="-6256" h="3829"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21147" y="-74933" z="-6264" h="35398"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21256" y="-75263" z="-6256" h="62381"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20957" y="-75652" z="-6256" h="2629"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21568" y="-75654" z="-6256" h="46250"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21231" y="-75747" z="-6264" h="63605"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20930" y="-75686" z="-6256" h="28863"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20763" y="-75167" z="-6264" h="11948"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21676" y="-75297" z="-6256" h="47076"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20780" y="-74822" z="-6264" h="38523"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21379" y="-75255" z="-6264" h="7925"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21283" y="-75249" z="-6256" h="51773"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21026" y="-75827" z="-6264" h="31653"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="21690" y="-75380" z="-6256" h="16383"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22786" y="-78025" z="-6272" h="33036"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22582" y="-78943" z="-6272" h="33303"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22960" y="-79306" z="-6272" h="12353"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22946" y="-78907" z="-6272" h="18895"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22960" y="-78115" z="-6272" h="7591"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23166" y="-79459" z="-6272" h="53100"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23087" y="-78897" z="-6296" h="6479"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23357" y="-77862" z="-6264" h="5705"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22799" y="-78187" z="-6272" h="50745"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23030" y="-77876" z="-6272" h="35083"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23347" y="-79245" z="-6272" h="13785"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23380" y="-78134" z="-6296" h="54849"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22836" y="-77967" z="-6272" h="59255"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="22967" y="-79287" z="-6272" h="59676"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23198" y="-79501" z="-6264" h="63684"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23306" y="-79285" z="-6272" h="29944"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23018" y="-79308" z="-6272" h="45755"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="23074" y="-77770" z="-6272" h="11249"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18112" y="-81410" z="-6112" h="56134"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18208" y="-80020" z="-6104" h="4329"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17628" y="-79648" z="-6096" h="2062"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17611" y="-80110" z="-6096" h="50920"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17612" y="-80313" z="-6096" h="49692"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17821" y="-79784" z="-6096" h="7876"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17925" y="-79978" z="-6096" h="52141"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17751" y="-81566" z="-6136" h="17863"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18094" y="-81565" z="-6112" h="48167"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17791" y="-79991" z="-6104" h="38291"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17753" y="-79829" z="-6104" h="2718"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18207" y="-79992" z="-6104" h="12985"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18260" y="-79972" z="-6104" h="27528"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17157" y="-82054" z="-6112" h="64927"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18071" y="-81759" z="-6120" h="28767"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18130" y="-80226" z="-6104" h="55462"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17313" y="-80906" z="-6104" h="2674"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17564" y="-80853" z="-6104" h="6632"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17839" y="-80918" z="-6104" h="39861"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18345" y="-81769" z="-6112" h="24209"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18164" y="-81658" z="-6112" h="58436"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20019" y="-81309" z="-6104" h="30341"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19247" y="-79933" z="-6104" h="1329"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20492" y="-80416" z="-6096" h="19781"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20105" y="-80505" z="-6096" h="52212"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20350" y="-80829" z="-6104" h="17543"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20469" y="-80610" z="-6104" h="48453"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20053" y="-81095" z="-6104" h="34066"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18379" y="-80861" z="-6096" h="33636"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18513" y="-80855" z="-6096" h="34194"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19228" y="-80067" z="-6104" h="23018"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19736" y="-79941" z="-6160" h="26941"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19280" y="-80169" z="-6104" h="21373"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20050" y="-81238" z="-6104" h="49139"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20553" y="-80654" z="-6104" h="1052"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20179" y="-81242" z="-6104" h="3"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="19850" y="-81484" z="-6104" h="10875"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20232" y="-80751" z="-6104" h="49288"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20805" y="-81426" z="-6104" h="43864"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20777" y="-81074" z="-6104" h="54893"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="20762" y="-81509" z="-6096" h="58014"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14978" y="-80873" z="-6104" h="31023"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14741" y="-80913" z="-6104" h="62606"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15159" y="-80488" z="-6104" h="13232"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14456" y="-81243" z="-6104" h="7535"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14158" y="-80751" z="-6104" h="7968"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15688" y="-80796" z="-6104" h="45715"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14324" y="-81033" z="-6104" h="37389"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14644" y="-81031" z="-6096" h="37722"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15137" y="-81449" z="-6104" h="29813"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15126" y="-81124" z="-6096" h="13260"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14801" y="-81206" z="-6104" h="10287"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15086" y="-81245" z="-6096" h="49355"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14475" y="-80598" z="-6104" h="16383"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14821" y="-80605" z="-6104" h="13677"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14262" y="-81420" z="-6104" h="53764"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15763" y="-80617" z="-6104" h="54067"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15767" y="-81073" z="-6104" h="11161"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15780" y="-81292" z="-6104" h="16904"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="15726" y="-81148" z="-6104" h="6132"/>
+		<npc id="21939"/><!--Pirate Janitor-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18267" y="-82227" z="-6112" h="17863"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17189" y="-82437" z="-6112" h="53515"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17252" y="-82394" z="-6120" h="8191"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16774" y="-82647" z="-6112" h="48080"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16999" y="-82058" z="-6112" h="20270"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18339" y="-82603" z="-6112" h="44556"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17117" y="-83021" z="-6112" h="11458"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16778" y="-83020" z="-6112" h="38475"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17826" y="-82136" z="-6104" h="10539"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18398" y="-83653" z="-6112" h="20624"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18201" y="-83840" z="-6112" h="55376"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18258" y="-82583" z="-6112" h="58642"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17795" y="-83543" z="-6136" h="52148"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17844" y="-83428" z="-6112" h="3190"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18213" y="-81990" z="-6112" h="17625"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18111" y="-83717" z="-6112" h="56836"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16890" y="-83250" z="-6112" h="24857"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17162" y="-82792" z="-6112" h="4597"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17131" y="-83295" z="-6104" h="40060"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17070" y="-83918" z="-6136" h="43617"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16954" y="-82652" z="-6112" h="50024"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16597" y="-83886" z="-6112" h="28339"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="17198" y="-82157" z="-6112" h="655"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16629" y="-82826" z="-6112" h="57632"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16904" y="-83531" z="-6112" h="3757"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="16649" y="-83064" z="-6112" h="9429"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="18350" y="-81581" z="-6112" h="9512"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12511" y="-78164" z="-5952" h="52156"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12380" y="-79024" z="-5944" h="50517"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12646" y="-79406" z="-5944" h="60584"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12251" y="-78309" z="-5952" h="41329"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12629" y="-79110" z="-5952" h="49328"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13255" y="-78117" z="-5952" h="51116"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12966" y="-77946" z="-5952" h="29268"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12536" y="-78971" z="-5952" h="7152"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12170" y="-77815" z="-5952" h="45882"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13963" y="-78869" z="-5976" h="29537"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13231" y="-78967" z="-5944" h="59811"/>
+		<npc id="21944"/><!--Eric (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12261" y="-78951" z="-5952" h="27689"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13234" y="-79170" z="-5952" h="51937"/>
+		<npc id="21946"/><!--Gunhilde (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12765" y="-79466" z="-5944" h="17250"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12955" y="-78965" z="-5952" h="1701"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14103" y="-78986" z="-5976" h="5613"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13914" y="-79228" z="-5952" h="37279"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13245" y="-79241" z="-5944" h="43447"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12960" y="-78124" z="-5952" h="43355"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13511" y="-78322" z="-5976" h="37449"/>
+		<npc id="21943"/><!--Ryurik (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13868" y="-77888" z="-5952" h="42911"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12858" y="-78066" z="-5952" h="22294"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12687" y="-78207" z="-5952" h="11547"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="13634" y="-77805" z="-5952" h="31878"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="14067" y="-77973" z="-5952" h="54390"/>
+		<npc id="21940"/><!--Pirate Trooper-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12548" y="-79413" z="-5944" h="52212"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12553" y="-78112" z="-5952" h="55435"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12546" y="-78250" z="-5952" h="8063"/>
+		<npc id="21945"/><!--Leif (Ancient Pirate)-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12567" y="-79003" z="-5952" h="2019"/>
+		<npc id="21941"/><!--Pirate Shaman-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="60">
+		<point x="12705" y="-78083" z="-5952" h="34139"/>
+		<npc id="21942"/><!--Pirate Shield-Bearer-->
+	</spawn>
+	<spawn group="1002_ancient_pirates_tomb" count="1" respawn="3600">
+		<point x="17192" y="-77576" z="-6265" h="9917"/>
+		<npc id="18358"/><!---->
+	</spawn>	
+</list>

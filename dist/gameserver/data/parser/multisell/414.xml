@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="49676" count="1"/>	<!--Talisman of Insolence Lv. 1-->
+		<ingredient id="49543" count="40"/>	<!--Elemental Stone-->
+		<ingredient id="49685" count="1"/>	<!--Energy of Insolence-->
+	</item>
+</list>

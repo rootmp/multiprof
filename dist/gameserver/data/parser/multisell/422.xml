@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="5591" count="1"/>	<!--CP Potion-->
+		<ingredient id="57" count="10000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="5592" count="1"/>	<!--Greater CP Potion-->
+		<ingredient id="57" count="50000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="90898" count="1"/>	<!--Agathion's Soul-->
+		<ingredient id="1458" count="6055"/>	<!--Crystal (D-grade)-->
+		<ingredient id="1459" count="1550"/>	<!--Crystal (C-grade)-->
+		<ingredient id="57" count="1000000"/>	<!--Adena-->
+	</item>
+</list>

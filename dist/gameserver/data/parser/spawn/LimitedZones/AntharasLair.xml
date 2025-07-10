@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--Author: nexvill-->
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20406" /> <!-- Banshee -->
+		<point x="152072" y="119288" z="-3800" h="41965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20406" /> <!-- Banshee -->
+		<point x="152552" y="119688" z="-3808" h="11477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20406" /> <!-- Banshee -->
+		<point x="152248" y="120280" z="-3808" h="23825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20406" /> <!-- Banshee -->
+		<point x="151816" y="120728" z="-3792" h="24380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20406" /> <!-- Banshee -->
+		<point x="151944" y="121608" z="-3808" h="14875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20406" /> <!-- Banshee -->
+		<point x="152552" y="121592" z="-3808" h="251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20406" /> <!-- Banshee -->
+		<point x="153160" y="122056" z="-3808" h="27929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20626" /> <!-- Maluk Berserker -->
+		<point x="152376" y="119096" z="-3808" h="49652" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20626" /> <!-- Maluk Berserker -->
+		<point x="152856" y="119544" z="-3808" h="5216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20626" /> <!-- Maluk Berserker -->
+		<point x="151960" y="119768" z="-3800" h="31814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20626" /> <!-- Maluk Berserker -->
+		<point x="152472" y="120472" z="-3808" h="61218" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20626" /> <!-- Maluk Berserker -->
+		<point x="151704" y="121144" z="-3808" h="25086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20626" /> <!-- Maluk Berserker -->
+		<point x="152296" y="121752" z="-3808" h="8392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="150456" y="117048" z="-3704" h="3936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="149976" y="116792" z="-3704" h="37764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="149720" y="116312" z="-3704" h="44065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="149272" y="116104" z="-3704" h="37167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="146392" y="116168" z="-3728" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="145880" y="115704" z="-3728" h="40415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="145144" y="115224" z="-3728" h="41053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="144296" y="114728" z="-3720" h="44713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="143672" y="114568" z="-3728" h="35213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="143176" y="113800" z="-3728" h="44974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="142328" y="113896" z="-3728" h="27866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="141512" y="114360" z="-3728" h="31690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="146952" y="112936" z="-3728" h="21231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="147176" y="112200" z="-3728" h="49106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="148072" y="112584" z="-3728" h="5168" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="148712" y="112264" z="-3728" h="60051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="149016" y="112888" z="-3728" h="12760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="148968" y="113512" z="-3728" h="18227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="149208" y="114104" z="-3728" h="12759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="152888" y="121800" z="-3808" h="39095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="152440" y="121976" z="-3808" h="26480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="152120" y="121224" z="-3792" h="46586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="152232" y="120664" z="-3808" h="57668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="152968" y="119976" z="-3808" h="57300" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21089" /> <!-- Drake Mage -->
+		<point x="152168" y="119496" z="-3800" h="38575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="152472" y="119304" z="-3792" h="63903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="152424" y="119960" z="-3808" h="18767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="151912" y="120344" z="-3808" h="27480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="151640" y="121128" z="-3808" h="22060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="152120" y="121624" z="-3808" h="6492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="152936" y="121560" z="-3808" h="57540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="150216" y="117160" z="-3704" h="23403" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="149992" y="116632" z="-3704" h="45094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="149432" y="116392" z="-3704" h="36992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="149432" y="115688" z="-3704" h="48745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="149080" y="114936" z="-3728" h="19848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="149096" y="114152" z="-3728" h="48329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="149240" y="113496" z="-3728" h="50709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="149048" y="112424" z="-3728" h="49332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="148264" y="112152" z="-3728" h="46476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="147544" y="112472" z="-3728" h="29122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21087" /> <!-- Drake Commander -->
+		<point x="146712" y="112536" z="-3728" h="31762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="146728" y="112872" z="-3728" h="16237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="147256" y="112728" z="-3728" h="63563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="147560" y="112136" z="-3728" h="54216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="148296" y="112488" z="-3704" h="810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="148936" y="111896" z="-3712" h="57989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="148728" y="112728" z="-3728" h="24427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="149144" y="113336" z="-3728" h="12687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="148968" y="113800" z="-3728" h="22492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="149192" y="114328" z="-3728" h="11248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="148984" y="115048" z="-3728" h="19660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="148984" y="115784" z="-3712" h="17219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="149448" y="116056" z="-3704" h="3282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="149736" y="116712" z="-3704" h="12278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="152216" y="119224" z="-3808" h="9650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="153064" y="119688" z="-3808" h="58210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="152600" y="120392" z="-3808" h="20920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="151800" y="121512" z="-3808" h="19358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="152408" y="121496" z="-3808" h="3211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21086" /> <!-- Drake Scout -->
+		<point x="152840" y="122104" z="-3808" h="9414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="152840" y="121848" z="-3808" h="8607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="151944" y="121624" z="-3808" h="36084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="152024" y="120904" z="-3808" h="51501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="152648" y="120056" z="-3808" h="55937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="152264" y="119544" z="-3792" h="47022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="150008" y="116888" z="-3704" h="40177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="148936" y="115480" z="-3728" h="39885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="149416" y="114296" z="-3728" h="58674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="149080" y="113592" z="-3728" h="43668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="149048" y="112504" z="-3728" h="50796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="148136" y="111880" z="-3728" h="42536" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20629" /> <!-- Karik -->
+		<point x="147352" y="112456" z="-3728" h="30838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20405" /> <!-- Knoriks -->
+		<point x="149160" y="115608" z="-3712" h="16063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20405" /> <!-- Knoriks -->
+		<point x="152728" y="119720" z="-3808" h="8178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20405" /> <!-- Knoriks -->
+		<point x="152600" y="121816" z="-3808" h="6439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="149976" y="117000" z="-3704" h="43759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="149704" y="116264" z="-3704" h="44176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="148520" y="116024" z="-3728" h="46683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="147832" y="116120" z="-3728" h="32427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="147080" y="116488" z="-3704" h="27431" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="146280" y="115976" z="-3728" h="40235" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="145464" y="115848" z="-3728" h="34480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="145256" y="114984" z="-3728" h="51151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="144936" y="114408" z="-3728" h="44827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="144392" y="114280" z="-3728" h="37743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="143816" y="114904" z="-3728" h="23860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="143256" y="114424" z="-3728" h="38924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="142824" y="113688" z="-3728" h="41530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="142168" y="114168" z="-3728" h="17870" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="141352" y="114600" z="-3728" h="29814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="141336" y="114264" z="-3728" h="53919" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="142024" y="114376" z="-3728" h="1586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="142280" y="113640" z="-3712" h="52313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="142952" y="113864" z="-3728" h="5780" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="143592" y="114312" z="-3728" h="63529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="144360" y="114280" z="-3728" h="16171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="144392" y="115000" z="-3728" h="20892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="144968" y="115368" z="-3728" h="9191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="145544" y="115640" z="-3728" h="6475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="146264" y="116296" z="-3728" h="7693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="147080" y="116152" z="-3728" h="62331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="147784" y="116456" z="-3704" h="62925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="148248" y="115880" z="-3728" h="52978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="148872" y="115944" z="-3704" h="3249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="149432" y="116344" z="-3704" h="9656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21085" /> <!-- Bloody Sniper -->
+		<point x="149224" y="115816" z="-3704" h="41829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21085" /> <!-- Bloody Sniper -->
+		<point x="149240" y="115240" z="-3728" h="47588" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21085" /> <!-- Bloody Sniper -->
+		<point x="149112" y="114536" z="-3728" h="51244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21085" /> <!-- Bloody Sniper -->
+		<point x="149288" y="113816" z="-3728" h="55111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21085" /> <!-- Bloody Sniper -->
+		<point x="149016" y="113112" z="-3728" h="45131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21085" /> <!-- Bloody Sniper -->
+		<point x="148552" y="112264" z="-3720" h="43812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21085" /> <!-- Bloody Sniper -->
+		<point x="147736" y="112680" z="-3728" h="24916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21085" /> <!-- Bloody Sniper -->
+		<point x="146648" y="112872" z="-3728" h="24941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="146472" y="112472" z="-3728" h="44186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="147240" y="112552" z="-3728" h="657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="148040" y="112312" z="-3728" h="61399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="148856" y="111752" z="-3704" h="58670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="148744" y="112952" z="-3728" h="19297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="149400" y="113704" z="-3728" h="12777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="148968" y="114472" z="-3728" h="36014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="149368" y="115032" z="-3728" h="53785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="149592" y="115992" z="-3704" h="6997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="150264" y="117144" z="-3704" h="7434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="152632" y="119080" z="-3800" h="2986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="153080" y="119848" z="-3808" h="6269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="152040" y="120488" z="-3808" h="27219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="152504" y="121768" z="-3808" h="8875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20628" /> <!-- Limal Karinness -->
+		<point x="151784" y="121208" z="-3808" h="41102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="150504" y="117000" z="-3712" h="56125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="149608" y="116648" z="-3704" h="36763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="149160" y="115544" z="-3712" h="45101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="149448" y="114632" z="-3728" h="64200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="149032" y="113784" z="-3728" h="45035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="148856" y="112552" z="-3728" h="47376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="148152" y="112872" z="-3728" h="26645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="147480" y="112136" z="-3728" h="40716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20627" /> <!-- Maluk Lord -->
+		<point x="146664" y="112696" z="-3728" h="51537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20620" /> <!-- Cave Beast -->
+		<point x="145416" y="115624" z="-3728" h="10857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20620" /> <!-- Cave Beast -->
+		<point x="145784" y="116072" z="-3728" h="10854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20620" /> <!-- Cave Beast -->
+		<point x="146776" y="116200" z="-3728" h="63523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20620" /> <!-- Cave Beast -->
+		<point x="147400" y="116536" z="-3704" h="7932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20620" /> <!-- Cave Beast -->
+		<point x="148056" y="116184" z="-3728" h="60727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20620" /> <!-- Cave Beast -->
+		<point x="148664" y="115736" z="-3728" h="58920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20620" /> <!-- Cave Beast -->
+		<point x="149096" y="116136" z="-3704" h="9442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20620" /> <!-- Cave Beast -->
+		<point x="150216" y="116856" z="-3704" h="6231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20624" /> <!-- Cave Howler -->
+		<point x="149576" y="116264" z="-3704" h="39399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20624" /> <!-- Cave Howler -->
+		<point x="149208" y="115256" z="-3728" h="46345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20624" /> <!-- Cave Howler -->
+		<point x="149416" y="114408" z="-3728" h="60864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20624" /> <!-- Cave Howler -->
+		<point x="149208" y="113752" z="-3728" h="51012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20624" /> <!-- Cave Howler -->
+		<point x="148584" y="112712" z="-3728" h="34956" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20624" /> <!-- Cave Howler -->
+		<point x="148616" y="111880" z="-3712" h="49990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20624" /> <!-- Cave Howler -->
+		<point x="147816" y="112456" z="-3728" h="25698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20624" /> <!-- Cave Howler -->
+		<point x="146920" y="112232" z="-3728" h="37101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20761" /> <!-- Pytan -->
+		<point x="147016" y="112632" z="-3712" h="10733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20761" /> <!-- Pytan -->
+		<point x="149128" y="113352" z="-3728" h="48055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20761" /> <!-- Pytan -->
+		<point x="148456" y="115848" z="-3728" h="21217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20761" /> <!-- Pytan -->
+		<point x="146024" y="115880" z="-3728" h="38628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20761" /> <!-- Pytan -->
+		<point x="144776" y="114664" z="-3720" h="43738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20623" /> <!-- Plando -->
+		<point x="144760" y="115096" z="-3728" h="18915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20623" /> <!-- Plando -->
+		<point x="145768" y="115704" z="-3728" h="6717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20623" /> <!-- Plando -->
+		<point x="146216" y="116296" z="-3728" h="9253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20623" /> <!-- Plando -->
+		<point x="147304" y="116312" z="-3712" h="64915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20623" /> <!-- Plando -->
+		<point x="147768" y="115928" z="-3728" h="57243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20623" /> <!-- Plando -->
+		<point x="148392" y="116024" z="-3728" h="61958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20623" /> <!-- Plando -->
+		<point x="147208" y="116792" z="-3704" h="31016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="149944" y="116472" z="-3704" h="42631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="148360" y="116200" z="-3728" h="28194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="147656" y="116184" z="-3728" h="34064" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="147064" y="116760" z="-3704" h="25204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="146376" y="116168" z="-3728" h="36935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="145704" y="115912" z="-3728" h="36190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="145048" y="115256" z="-3728" h="40484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="144344" y="115096" z="-3728" h="33462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="143816" y="114552" z="-3728" h="41823" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="143128" y="113736" z="-3728" h="48150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="142472" y="113560" z="-3704" h="34017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="142040" y="114456" z="-3728" h="20557" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="141384" y="114456" z="-3728" h="32733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="143640" y="114776" z="-3728" h="9995" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="144552" y="114760" z="-3720" h="2650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="145208" y="115128" z="-3728" h="4402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="145752" y="115672" z="-3728" h="5630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="146344" y="116312" z="-3728" h="7415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="146856" y="116248" z="-3728" h="64513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="147480" y="116296" z="-3712" h="65451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="147704" y="116600" z="-3704" h="20270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="144312" y="114760" z="-3720" h="40062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="143880" y="114280" z="-3728" h="41531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="137208" y="114312" z="-3728" h="64517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="137848" y="114584" z="-3728" h="3421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="138248" y="114328" z="-3728" h="59627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="138808" y="114552" z="-3728" h="4897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="139368" y="114296" z="-3728" h="61269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="139912" y="114216" z="-3728" h="63414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="140552" y="114312" z="-3728" h="3887" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="140632" y="115032" z="-3728" h="15159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20407" /> <!-- Bloody Banshee -->
+		<point x="141128" y="114040" z="-3728" h="51707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="140952" y="114216" z="-3712" h="24674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="140616" y="114616" z="-3728" h="25462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="140104" y="114808" z="-3704" h="28649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="140392" y="113640" z="-3728" h="51551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="139528" y="114408" z="-3728" h="26861" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="138808" y="114264" z="-3728" h="35820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="138312" y="114568" z="-3728" h="26845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="137816" y="114312" z="-3728" h="37843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="21084" /> <!-- Bloody Lady -->
+		<point x="137368" y="114616" z="-3728" h="26012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="141000" y="115032" z="-3728" h="13582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="140408" y="114664" z="-3728" h="37897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="140728" y="114056" z="-3712" h="54533" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="139848" y="114344" z="-3728" h="23852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="139320" y="114408" z="-3728" h="32161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="138680" y="114424" z="-3728" h="32550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="138024" y="114424" z="-3728" h="29943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="137496" y="114424" z="-3728" h="32742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="140936" y="114568" z="-3728" h="24120" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="140424" y="114088" z="-3728" h="38062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="140280" y="115112" z="-3728" h="12235" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="139608" y="114440" z="-3728" h="36504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="138952" y="114312" z="-3728" h="36424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="138360" y="114504" z="-3728" h="28938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20621" /> <!-- Death Wave -->
+		<point x="137704" y="114328" z="-3728" h="35443" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="142760" y="113832" z="-3728" h="36687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="142184" y="113960" z="-3728" h="30490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="141864" y="114600" z="-3728" h="21349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="141128" y="114488" z="-3728" h="33393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="140456" y="114408" z="-3728" h="33793" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="140600" y="113752" z="-3728" h="51036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="140952" y="115176" z="-3728" h="11669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="139720" y="114712" z="-3728" h="27797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="139144" y="114552" z="-3728" h="33577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="138488" y="114264" z="-3728" h="36738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="139992" y="114248" z="-3728" h="64059" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="140872" y="114712" z="-3728" h="6098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20622" /> <!-- Maluk Soldier -->
+		<point x="144664" y="114280" z="-3728" h="59920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="144632" y="114456" z="-3712" h="38298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="145208" y="114664" z="-3728" h="3968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20625" /> <!-- Maluk Knight -->
+		<point x="144184" y="114456" z="-3728" h="53990" />
+	</spawn>
+</list>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<hero_skill_tree>
+		<skill id="53100" level="1"/><!--Чудо Героизма-->
+	</hero_skill_tree>
+</list>

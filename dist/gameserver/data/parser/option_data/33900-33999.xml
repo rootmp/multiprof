@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="33900" />
+	<option_data id="33901" />
+	<option_data id="33902" />
+	<option_data id="33903" />
+	<option_data id="33904" />
+	<option_data id="33905" />
+	<option_data id="33906" />
+	<option_data id="33907" />
+	<option_data id="33908" />
+	<option_data id="33909" />
+	<option_data id="33910" />
+	<option_data id="33911" />
+	<option_data id="33912" />
+	<option_data id="33913" />
+	<option_data id="33914" />
+	<option_data id="33915" />
+	<option_data id="33916" />
+	<option_data id="33917" />
+	<option_data id="33918">
+		<!--Max HP +100\nMax MP +100\nMax CP +100\nP. Def. +1%\nM. Def. +1%\nReceived damage -1%-->
+		<skills>
+			<skill id="50389" level="1"/>	<!-- Hair Accessory: Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33919">
+		<!--Max HP +200\nMax MP +200\nMax CP +200\nP. Def. +2%\nM. Def. +2%\nReceived damage -2%-->
+		<skills>
+			<skill id="50390" level="1"/>	<!-- +1 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33920">
+		<!--Max HP +300\nMax MP +300\nMax CP +300\nP. Def. +3%\nM. Def. +3%\nReceived damage -3%-->
+		<skills>
+			<skill id="50390" level="2"/>	<!-- +2 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33921">
+		<!--Max HP +400\nMax MP +400\nMax CP +400\nP. Def. +4%\nM. Def. +4%\nReceived damage -4%-->
+		<skills>
+			<skill id="50390" level="3"/>	<!-- +3 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33922">
+		<!--Max HP +500\nMax MP +500\nMax CP +500\nP. Def. +5%\nM. Def. +5%\nReceived damage -5%\n\n<Fatal Critical Strike>\nWith a 5% chance, after a standard attack or when using an attack skill, P./ M. Skill Critical Damage +5% for 8 sec.-->
+		<skills>
+			<skill id="50390" level="4"/>	<!-- +4 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33923">
+		<!--Max HP +600\nMax MP +600\nMax CP +600\nP. Def. +6%\nM. Def. +6%\nReceived damage -6%\n\n<Fatal Critical Strike>\nWith a 10% chance, after a standard attack or when using an attack skill, P./ M. Skill Critical Damage +15% for 8 sec.-->
+		<skills>
+			<skill id="50390" level="5"/>	<!-- +5 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33924">
+		<!--Max HP +700\nMax MP +700\nMax CP +700\nP. Def. +7%\nM. Def. +7%\nReceived damage -7%\n\n<Fatal Critical Strike>\nWith a 10% chance, after a standard attack or when using an attack skill, P./ M. Skill Critical Damage +25% for 8 sec.-->
+		<skills>
+			<skill id="50390" level="6"/>	<!-- +6 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33925">
+		<!--Max HP +800\nMax MP +800\nMax CP +800\nP. Def. +8%\nM. Def. +8%\nReceived damage -8%\n\n<Fatal Critical Strike>\nWith a 10% chance, after a standard attack or when using an attack skill, P./ M. Skill Critical Damage +40% for 8 sec.-->
+		<skills>
+			<skill id="50390" level="7"/>	<!-- +7 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33926">
+		<!--Max HP +1000\nMax MP +1000\nMax CP +1000\nP. Def. +10%\nM. Def. +10%\nReceived damage -10%\n\n<Fatal Critical Strike>\nWith a 15% chance, after a standard attack or when using an attack skill, P./ M. Skill Critical Damage +60% for 8 sec.-->
+		<skills>
+			<skill id="50390" level="8"/>	<!-- +8 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33927">
+		<!--Max HP +2000\nMax MP +2000\nMax CP +2000\nP. Def. +12%\nM. Def. +12%\nReceived damage -12%\n\n<Fatal Critical Strike>\nWith a 15% chance, after a standard attack or when using an attack skill, P./ M. Skill Critical Damage +80% for 8 sec.-->
+		<skills>
+			<skill id="50390" level="9"/>	<!-- +9 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33928">
+		<!--Max HP +3000\nMax MP +3000\nMax CP +3000\nP. Def. +15%\nM. Def. +15%\nReceived damage -15%\n\n<Fatal Critical Strike>\nWith a 15% chance, after a standard attack or when using an attack skill, P./ M. Skill Critical Damage +100% for 8 sec.-->
+		<skills>
+			<skill id="50390" level="10"/>	<!-- +10 Circlet of Hero -->
+		</skills>
+	</option_data>
+	<option_data id="33929">
+		<!--Atk. Spd. +5-->
+	</option_data>
+	<option_data id="33930">
+		<!--Atk. Spd. +8-->
+	</option_data>
+	<option_data id="33931">
+		<!--Atk. Spd. +12-->
+	</option_data>
+	<option_data id="33932">
+		<!--Atk. Spd. +15-->
+	</option_data>
+	<option_data id="33933">
+		<!--Atk. Spd. +18-->
+	</option_data>
+	<option_data id="33934">
+		<!--Atk. Spd. +21-->
+	</option_data>
+	<option_data id="33935">
+		<!--Atk. Spd. +24-->
+	</option_data>
+	<option_data id="33936">
+		<!--Atk. Spd. +27-->
+	</option_data>
+	<option_data id="33937">
+		<!--Atk. Spd. +30-->
+	</option_data>
+	<option_data id="33938">
+		<!--Atk. Spd. +33-->
+	</option_data>
+	<option_data id="33939">
+		<!--Atk. Spd. +36-->
+	</option_data>
+	<option_data id="33940">
+		<!--Atk. Spd. +39-->
+	</option_data>
+	<option_data id="33941">
+		<!--Atk. Spd. +42-->
+	</option_data>
+	<option_data id="33942">
+		<!--Atk. Spd. +45-->
+	</option_data>
+	<option_data id="33943">
+		<!--Atk. Spd. +50-->
+	</option_data>
+	<option_data id="33944">
+		<!--Atk. Spd. +55-->
+	</option_data>
+	<option_data id="33945">
+		<!--Atk. Spd. +60-->
+	</option_data>
+	<option_data id="33946">
+		<!--Atk. Spd. +65-->
+	</option_data>
+	<option_data id="33947">
+		<!--Atk. Spd. +70-->
+	</option_data>
+	<option_data id="33948">
+		<!--Atk. Spd. +100-->
+	</option_data>
+	<option_data id="33949">
+		<!--Atk. Spd. +10-->
+	</option_data>
+	<option_data id="33950">
+		<!--Atk. Spd. +15-->
+	</option_data>
+	<option_data id="33951">
+		<!--Atk. Spd. +20-->
+	</option_data>
+	<option_data id="33952">
+		<!--Atk. Spd. +25-->
+	</option_data>
+	<option_data id="33953">
+		<!--Atk. Spd. +30-->
+	</option_data>
+	<option_data id="33954">
+		<!--Atk. Spd. +35-->
+	</option_data>
+	<option_data id="33955">
+		<!--Atk. Spd. +40-->
+	</option_data>
+	<option_data id="33956">
+		<!--Atk. Spd. +45-->
+	</option_data>
+	<option_data id="33957">
+		<!--Atk. Spd. +50-->
+	</option_data>
+	<option_data id="33958">
+		<!--Atk. Spd. +55-->
+	</option_data>
+	<option_data id="33959">
+		<!--Atk. Spd. +60-->
+	</option_data>
+	<option_data id="33960">
+		<!--Atk. Spd. +65-->
+	</option_data>
+	<option_data id="33961">
+		<!--Atk. Spd. +70-->
+	</option_data>
+	<option_data id="33962">
+		<!--Atk. Spd. +75-->
+	</option_data>
+	<option_data id="33963">
+		<!--Atk. Spd. +80-->
+	</option_data>
+	<option_data id="33964">
+		<!--Atk. Spd. +90-->
+	</option_data>
+	<option_data id="33965">
+		<!--Atk. Spd. +100-->
+	</option_data>
+	<option_data id="33966">
+		<!--Atk. Spd. +110-->
+	</option_data>
+	<option_data id="33967">
+		<!--Atk. Spd. +120-->
+	</option_data>
+	<option_data id="33968">
+		<!--Atk. Spd. +150-->
+	</option_data>
+	<option_data id="33969">
+		<!--Casting Spd. +5-->
+	</option_data>
+	<option_data id="33970">
+		<!--Casting Spd. +8-->
+	</option_data>
+	<option_data id="33971">
+		<!--Casting Spd. +12-->
+	</option_data>
+	<option_data id="33972">
+		<!--Casting Spd. +15-->
+	</option_data>
+	<option_data id="33973">
+		<!--Casting Spd. +18-->
+	</option_data>
+	<option_data id="33974">
+		<!--Casting Spd. +21-->
+	</option_data>
+	<option_data id="33975">
+		<!--Casting Spd. +24-->
+	</option_data>
+	<option_data id="33976">
+		<!--Casting Spd. +27-->
+	</option_data>
+	<option_data id="33977">
+		<!--Casting Spd. +30-->
+	</option_data>
+	<option_data id="33978">
+		<!--Casting Spd. +33-->
+	</option_data>
+	<option_data id="33979">
+		<!--Casting Spd. +36-->
+	</option_data>
+	<option_data id="33980">
+		<!--Casting Spd. +39-->
+	</option_data>
+	<option_data id="33981">
+		<!--Casting Spd. +42-->
+	</option_data>
+	<option_data id="33982">
+		<!--Casting Spd. +45-->
+	</option_data>
+	<option_data id="33983">
+		<!--Casting Spd. +50-->
+	</option_data>
+	<option_data id="33984">
+		<!--Casting Spd. +55-->
+	</option_data>
+	<option_data id="33985">
+		<!--Casting Spd. +60-->
+	</option_data>
+	<option_data id="33986">
+		<!--Casting Spd. +65-->
+	</option_data>
+	<option_data id="33987">
+		<!--Casting Spd. +70-->
+	</option_data>
+	<option_data id="33988">
+		<!--Casting Spd. +100-->
+	</option_data>
+	<option_data id="33989">
+		<!--Casting Spd. +10-->
+	</option_data>
+	<option_data id="33990">
+		<!--Casting Spd. +15-->
+	</option_data>
+	<option_data id="33991">
+		<!--Casting Spd. +20-->
+	</option_data>
+	<option_data id="33992">
+		<!--Casting Spd. +25-->
+	</option_data>
+	<option_data id="33993">
+		<!--Casting Spd. +30-->
+	</option_data>
+	<option_data id="33994">
+		<!--Casting Spd. +35-->
+	</option_data>
+	<option_data id="33995">
+		<!--Casting Spd. +40-->
+	</option_data>
+	<option_data id="33996">
+		<!--Casting Spd. +45-->
+	</option_data>
+	<option_data id="33997">
+		<!--Casting Spd. +50-->
+	</option_data>
+	<option_data id="33998">
+		<!--Casting Spd. +55-->
+	</option_data>
+	<option_data id="33999">
+		<!--Casting Spd. +60-->
+	</option_data>
+</list>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="60521" levels="1" name="t_hp_by_hp Test">
+		<set name="effectPoint" value="204"/>
+		<set name="icon" value="icon.skill1229"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="hitTime" value="7000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60522" levels="1" name="p_condition_block_act_item Test">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-210"/>
+		<set name="icon" value="icon.skill0006"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60523" levels="1" name="p_knockdown Test">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-210"/>
+		<set name="icon" value="icon.skill0006"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60532" levels="1" name="i_p_attack_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60533" levels="1" name="i_p_attack_abnormal_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60534" levels="1" name="i_p_attack_by_dist_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60535" levels="1" name="i_p_attack_save_hp_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60536" levels="1" name="i_p_soul_attack_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60537" levels="1" name="i_p_attack_weapon_bonus_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60538" levels="1" name="i_p_percent_attack_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60539" levels="1" name="i_physical_attack_hp_link_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60540" levels="1" name="i_energy_attack_Test">
+		<set name="consume_etc" value="1;0;0"/>
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60541" levels="1" name="i_fatal_blow_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60542" levels="1" name="i_fatal_blow_abnormal_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60543" levels="1" name="i_soul_blow_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60544" levels="1" name="i_backstab_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60545" levels="1" name="i_m_attack_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60546" levels="1" name="i_m_attack_by_abnormal_slot_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60547" levels="1" name="i_m_attack_over_hit_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60548" levels="1" name="i_m_attack_link_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60549" levels="1" name="i_m_attack_by_abnormal_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60550" levels="1" name="i_m_attack_by_dist_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60551" levels="1" name="i_m_attack_by_hp_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60552" levels="1" name="i_m_attack_debuff_dmg_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60553" levels="1" name="i_m_attack_range_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60554" levels="1" name="i_m_attack_over_hit_range_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60555" levels="1" name="i_m_soul_attack_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60556" levels="1" name="i_hp_drain_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60557" levels="1" name="i_hp_drain_link_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.blood_link"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60558" levels="1" name="i_death_link_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60559" levels="1" name="i_m_attack_mp_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60560" levels="1" name="i_death_link_mp_Test">
+		<set name="effectPoint" value="-9999"/>
+		<set name="icon" value="icon.skill0003"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="1000"/>
+		<set name="mp_consume" value="5"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60561" levels="1" name="p_damage_by_attack_pvp_Test_5%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60562" levels="1" name="p_damage_by_attack_pvp_Test_10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60563" levels="1" name="p_damage_by_attack_pvp_Test_15%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60564" levels="1" name="p_damage_by_attack_pvp_Test_20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60565" levels="1" name="p_damage_by_attack_pvp_Test_25%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60566" levels="1" name="p_damage_by_attack_pvp_Test_30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60567" levels="1" name="p_damage_by_attack_pvp_Test_35%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60568" levels="1" name="p_damage_by_attack_pvp_Test_40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60569" levels="1" name="p_damage_by_attack_pvp_Test_45%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60570" levels="1" name="p_damage_by_attack_pvp_Test_50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60571" levels="1" name="p_damage_by_attack_pvp_Test_55%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60572" levels="1" name="p_damage_by_attack_pvp_Test_60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60573" levels="1" name="p_damage_by_attack_pvp_Test_65%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60574" levels="1" name="p_damage_by_attack_pvp_Test_70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60575" levels="1" name="p_damage_by_attack_pvp_Test_75%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60576" levels="1" name="p_damage_by_attack_pvp_Test_80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60577" levels="1" name="p_damage_by_attack_pvp_Test_85%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60578" levels="1" name="p_damage_by_attack_pvp_Test_90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60579" levels="1" name="p_damage_by_attack_pvp_Test_95%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60580" levels="1" name="p_damage_by_attack_pvp_Test_100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60581" levels="1" name="p_damage_by_attack_pve_Test_5%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60582" levels="1" name="p_damage_by_attack_pve_Test_10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60583" levels="1" name="p_damage_by_attack_pve_Test_15%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60584" levels="1" name="p_damage_by_attack_pve_Test_20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60585" levels="1" name="p_damage_by_attack_pve_Test_25%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60586" levels="1" name="p_damage_by_attack_pve_Test_30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60587" levels="1" name="p_damage_by_attack_pve_Test_35%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60588" levels="1" name="p_damage_by_attack_pve_Test_40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60589" levels="1" name="p_damage_by_attack_pve_Test_45%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60590" levels="1" name="p_damage_by_attack_pve_Test_50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60591" levels="1" name="p_damage_by_attack_pve_Test_55%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60592" levels="1" name="p_damage_by_attack_pve_Test_60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60593" levels="1" name="p_damage_by_attack_pve_Test_65%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60594" levels="1" name="p_damage_by_attack_pve_Test_70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60595" levels="1" name="p_damage_by_attack_pve_Test_75%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60596" levels="1" name="p_damage_by_attack_pve_Test_80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60597" levels="1" name="p_damage_by_attack_pve_Test_85%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60598" levels="1" name="p_damage_by_attack_pve_Test_90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="60599" levels="1" name="p_damage_by_attack_pve_Test_95%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

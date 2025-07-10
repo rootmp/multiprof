@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="61100" levels="1" name="Test P. Skill Evasion 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61101" levels="1" name="Test M. Skill Evasion 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61102" levels="1" name="Test M. Skill Evasion 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61103" levels="1" name="Test M. Skill Evasion 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61104" levels="1" name="Test M. Skill Evasion 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61105" levels="1" name="Test M. Skill Evasion 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61106" levels="1" name="Test M. Skill Evasion 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61107" levels="1" name="Test M. Skill Evasion 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61108" levels="1" name="Test M. Skill Evasion 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61109" levels="1" name="Test M. Skill Evasion 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61110" levels="1" name="Test M. Skill Evasion 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61111" levels="1" name="Test P. Skill Counterattack 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61112" levels="1" name="Test P. Skill Counterattack 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61113" levels="1" name="Test P. Skill Counterattack 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61114" levels="1" name="Test P. Skill Counterattack 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61115" levels="1" name="Test P. Skill Counterattack 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61116" levels="1" name="Test P. Skill Counterattack 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61117" levels="1" name="Test P. Skill Counterattack 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61118" levels="1" name="Test P. Skill Counterattack 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61119" levels="1" name="Test P. Skill Counterattack 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61120" levels="1" name="Test P. Skill Counterattack 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61121" levels="1" name="Test M. Skill Counterattack 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61122" levels="1" name="Test M. Skill Counterattack 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61123" levels="1" name="Test M. Skill Counterattack 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61124" levels="1" name="Test M. Skill Counterattack 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61125" levels="1" name="Test M. Skill Counterattack 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61126" levels="1" name="Test M. Skill Counterattack 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61127" levels="1" name="Test M. Skill Counterattack 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61128" levels="1" name="Test M. Skill Counterattack 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61129" levels="1" name="Test M. Skill Counterattack 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61130" levels="1" name="Test M. Skill Counterattack 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61131" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61132" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61133" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61134" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61135" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61136" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61137" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61138" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61139" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61140" levels="1" name="Test P. Skill Evasion/ P. Skill Counterattack 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61141" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61142" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61143" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61144" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61145" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61146" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61147" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61148" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61149" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61150" levels="1" name="Test M. Skill Evasion/ M. Skill Counterattack 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61151" levels="1" name="Test M. Damage Reflection 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61152" levels="1" name="Test M. Damage Reflection 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61153" levels="1" name="Test M. Damage Reflection 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61154" levels="1" name="Test M. Damage Reflection 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61155" levels="1" name="Test M. Damage Reflection 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61156" levels="1" name="Test M. Damage Reflection 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61157" levels="1" name="Test M. Damage Reflection 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61158" levels="1" name="Test M. Damage Reflection 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61159" levels="1" name="Test M. Damage Reflection 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61160" levels="1" name="Test M. Damage Reflection 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61161" levels="1" name="Sword Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61162" levels="1" name="Sword Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61163" levels="1" name="Sword Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61164" levels="1" name="Sword Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61165" levels="1" name="Sword Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61166" levels="1" name="Sword Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61167" levels="1" name="Sword Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61168" levels="1" name="Sword Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61169" levels="1" name="Sword Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61170" levels="1" name="Sword Resistance 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61171" levels="1" name="Ancient Sword Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61172" levels="1" name="Ancient Sword Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61173" levels="1" name="Ancient Sword Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61174" levels="1" name="Ancient Sword Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61175" levels="1" name="Ancient Sword Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61176" levels="1" name="Ancient Sword Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61177" levels="1" name="Ancient Sword Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61178" levels="1" name="Ancient Sword Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61179" levels="1" name="Ancient Sword Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61180" levels="1" name="Ancient Sword Resistance 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61181" levels="1" name="Dagger Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61182" levels="1" name="Dagger Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61183" levels="1" name="Dagger Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61184" levels="1" name="Dagger Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61185" levels="1" name="Dagger Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61186" levels="1" name="Dagger Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61187" levels="1" name="Dagger Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61188" levels="1" name="Dagger Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61189" levels="1" name="Dagger Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61190" levels="1" name="Dagger Resistance 100%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61191" levels="1" name="Rapier Resistance 10%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61192" levels="1" name="Rapier Resistance 20%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61193" levels="1" name="Rapier Resistance 30%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61194" levels="1" name="Rapier Resistance 40%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61195" levels="1" name="Rapier Resistance 50%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61196" levels="1" name="Rapier Resistance 60%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61197" levels="1" name="Rapier Resistance 70%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61198" levels="1" name="Rapier Resistance 80%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="61199" levels="1" name="Rapier Resistance 90%">
+		<set name="icon" value="icon.skill3080"/>
+		<set name="castRange" value="1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+</list>

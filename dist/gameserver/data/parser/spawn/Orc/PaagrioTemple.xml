@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57709" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57649" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57649" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113603" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113668" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113285" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113408" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113538" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113473" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113603" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113538" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113473" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113733" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113285" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58395" y="-113733" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113408" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58330" y="-113668" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57829" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57709" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58009" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57889" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58069" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57649" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57949" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57949" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57769" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58069" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58009" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57889" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57829" y="-113858" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57769" y="-113798" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57889" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58069" y="-113286" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57709" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57769" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57949" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58009" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57829" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58069" y="-113346" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57889" y="-113286" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57769" y="-113286" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-58009" y="-113286" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57709" y="-113286" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57829" y="-113286" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57649" y="-113286" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-57949" y="-113286" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56140" y="-113872" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56140" y="-113358" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56140" y="-113822" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56140" y="-113308" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56090" y="-113308" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55890" y="-113358" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55940" y="-113358" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55940" y="-113308" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56040" y="-113358" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55790" y="-113358" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56090" y="-113358" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55990" y="-113358" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55990" y="-113308" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55840" y="-113358" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55840" y="-113308" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56040" y="-113308" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55790" y="-113308" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55890" y="-113308" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56090" y="-113872" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55940" y="-113872" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55790" y="-113872" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55940" y="-113822" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55990" y="-113872" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55890" y="-113872" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56090" y="-113822" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56040" y="-113872" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55990" y="-113822" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55840" y="-113872" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-56040" y="-113822" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55840" y="-113822" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55890" y="-113822" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22183" /> <!-- Training Dummy -->
+		<point x="-55790" y="-113822" z="-672" h="49374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34335" /> <!-- Sabitus -->
+		<point x="-57469" y="-113605" z="-672" h="31966" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30573" /> <!-- Vulkus -->
+		<point x="-56716" y="-113609" z="-672" h="63148" />
+	</spawn>
+</list>

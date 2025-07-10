@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="47801" levels="8" name="Piercing">
+		<!--<<font color="FF8000">Spear skill</font>>\nAttacks the target with a spear.\n\nDeals physical damage with $s1 power.\n\nIgnores Shield Defense.\nCritical.-->
+		<table name="#effectPoint">-200 -300 -400 -500 -550 -600 -650 -700</table>
+		<table name="#power">419 581 1333 2478 3097 4501 5176 6386</table>
+		<table name="#mp_consume">18 25 33 40 44 48 51 55</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_impale"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="castRange" value="120"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1200"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_attacks" value="2"/>
+		<set name="shieldignore" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47802" levels="8" name="Amazing Piercing">
+		<!--<<font color="FF8000">Spear skill</font>>\nAttacks the target with a spear.\n\nDeals physical damage with $s1 power.\n\nIgnores Shield Defense.\nIgnores $s2 of the target's defense.\nCritical.-->
+		<table name="#effectPoint">-760 -790 -830 -850 -860 -870 -880 -900</table>
+		<table name="#power">7276 7655 8176 8435 8565 8703 8834 9099</table>
+		<table name="#mp_consume">60 62 65 66 67 68 69 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_arc_impale"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="castRange" value="150"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1200"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_attacks" value="2"/>
+		<set name="shieldignore" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<set name="defence_ignore_percent" value="15"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47803" levels="10" name="Threatening Swing">
+		<!--<<font color="FF8000">Spear skill</font>>\nAttacks several of nearby enemies with $s1 power.\n\nIgnores Shield Defense.\nCritical.-->
+		<table name="#effectPoint">-400 -440 -480 -520 -560 -600 -640 -680 -710 -740</table>
+		<table name="#power">1136 1512 1907 2320 2748 3835 4303 4781 5150 5524</table>
+		<table name="#mp_consume">38 41 44 48 51 55 58 61 64 66</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_brandish"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="castRange" value="150"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="5;12"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="affect_range" value="150"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_attacks" value="2"/>
+		<set name="shieldignore" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47804" levels="10" name="Threatening Swing">
+		<!--<<font color="FF8000">Spear skill</font>>\nAttacks several of nearby enemies with $s1 power.\n\nIgnores Shield Defense.\nIgnores $s2 of the target's defense.\nCritical.-->
+		<table name="#effectPoint">-760 -770 -790 -810 -830 -850 -870 -880 -890 -900</table>
+		<table name="#power">6198 6302 6521 6742 6965 7186 7413 7525 7638 7751</table>
+		<table name="#mp_consume">68 69 71 72 74 76 77 78 79 80</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_brandish_wave"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="castRange" value="150"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="5;12"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="affect_range" value="400"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_attacks" value="2"/>
+		<set name="shieldignore" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47805" levels="10" name="Wild Scratch">
+		<!--<<font color="FF8000">Beast skill</font>>\nThe beast attacks the target with its claws.\n\nDeals physical damage with $s1 power.\nIgnores Shield Defense.\nIgnores $s2 of the target's defense.\nCritical.-->
+		<table name="#effectPoint">-400 -500 -600 -700 -750 -780 -820 -860 -880 -900</table>
+		<table name="#power">1432 2661 4835 6337 7126 8087 8637 9199 9488 9773</table>
+		<table name="#mp_consume">33 40 48 55 59 61 64 67 69 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_wild_scratch"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="castRange" value="150"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1200"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_attacks" value="2"/>
+		<set name="criticalRate" value="10"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<set name="shieldignore" value="true"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47806" levels="10" name="Shadow Scratch">
+		<!--<<font color="FF8000">Beast skill</font>>\nThe beast attacks the target with its claws.\n\nDeals physical damage with $s1 power.\n\nWith a 30%% chance, deals an additional blow.\n\nIgnores Shield Defense.\nIgnores $s2 of the target's defense.\nCritical.-->
+		<table name="#effectPoint">-400 -500 -600 -700 -750 -780 -820 -860 -880 -900</table>
+		<table name="#power">1629 3028 5502 7211 8109 9203 9828 10468 10796 11121</table>
+		<table name="#mp_consume">33 40 48 55 59 61 64 67 69 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_shadow_scratch"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="castRange" value="150"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1200"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_attacks" value="2"/>
+		<set name="criticalRate" value="10"/>
+		<set name="shieldignore" value="true"/>
+		<set name="defence_ignore_percent" value="20"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+		<triggers>
+			<trigger id="47805" level="1" type="ATTACK" chance="30">
+				<using kind="Pole"/>
+			</trigger>
+		</triggers>
+	</skill>
+	<skill id="47807" levels="6" name="Wild Charge">
+		<!--<<font color="FF8000">Beast skill</font>>\nThe embodied beast's soul attacks the target.\n\nAttacks the target twice with $s1 power.\nIgnores Shield Defense.\nIgnores $s2 of the target's defense.\nCritical.-->
+		<table name="#effectPoint">-1520 -1600 -1660 -1700 -1760 -1800</table>
+		<table name="#power">3773 4038 4240 4374 4581 4718</table>
+		<table name="#mp_consume">88 93 96 99 102 105</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_wild_charge"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="castRange" value="400"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1200"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="num_attacks" value="2"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="criticalRate" value="10"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<set name="upgradeControllerSkillId" value="47864" />
+		<set name="upgradedSkillId" value="47808" />
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47808" levels="6" name="Spectral Charge">
+		<!--<<font color="FF8000">Beast skill</font>>\nThe embodied beast's soul makes a powerful attack on the target.\n\nAttacks the target thrice with $s1 power.\nIgnores Shield Defense.\nIgnores $s2 of the target's defense.\nCritical.-->
+		<table name="#effectPoint">-1520 -1600 -1660 -1700 -1760 -1800</table>
+		<table name="#power">3773 4038 4240 4374 4581 4718</table>
+		<table name="#mp_consume">88 93 96 99 102 105</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_phantom_charge"/>
+		<set name="coolTime" value="500"/>
+		<set name="power" value="#power"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1200"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="num_attacks" value="3"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="criticalRate" value="10"/>
+		<set name="defence_ignore_percent" value="10"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47809" levels="1" name="Shadow Scratch">
+		<!--The beast's claw attack.-->
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="effectPoint" value="-760"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.s_shadow_scratch"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47811" levels="1" name="Giant's Stomp">
+		<!--<<font color="FF8000">Knockback skill</font>>\n\nHits the ground knocking nearby enemies back and down for $s1-->
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="effectPoint" value="-250"/>
+		<set name="icon" value="icon.skill1896"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1700"/>
+		<set name="mp_consume" value="120"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="magicLevel" value="85"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="affect_range" value="400"/>
+		<set name="operate_type" value="A2"/>
+		<set name="affect_limit" value="5;12"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+		<triggers>
+			<trigger id="47812" level="1" type="ON_FINISH_CAST" chance="100"/>
+		</triggers>
+	</skill>
+	<skill id="47812" levels="1" name="Giant's Stomp">
+		<!--Knocked down by a powerful blow.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1800"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.skill33915"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="operate_type" value="A2" />
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="abnormal_effect" value="KNOCKDOWN"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="knockdown"/>
+		<set name="affect_range" value="400"/>
+		<set name="trait" value="KNOCKDOWN"/>
+		<set name="affect_limit" value="5;12"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+		<for>
+			<effect name="KnockDown">
+				<def name="fly_radius" value="75"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="47813" levels="2" name="Wild Growl">
+		<table name="#effectPoint">-1560 -1740</table>
+		<table name="#mp_consume">90 100</table>
+		<table name="#trigerlv">1 2</table>
+		<set name="debuff" value="true"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.s_wild_roar"/>
+		<set name="reuseDelay" value="45000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1700"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2" />
+		<set name="affect_limit" value="5;12"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+		<triggers>
+			<trigger id="47815" level="#trigerlv" type="ON_FINISH_CAST" chance="100"/>
+		</triggers>
+	</skill>
+	<skill id="47814" levels="1" name="Wild Growl - Hold">
+		<!--Unable to move.-->
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="effectPoint" value="-1800"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.skill10792"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="skillType" value="ROOT"/>
+		<set name="operate_type" value="A2" />
+		<set name="trait" value="HOLD"/>
+		<set name="affect_limit" value="5;12"/>
+		<for>
+			<effect name="p_block_move">
+				<p_defence_trait name="hold" value="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="47815" levels="2" name="Wild Growl - Suppression">
+		<table name="#effectPoint">-1600 -1800</table>
+		<!--Speed -70/-90%%-->
+		<table name="#runSpd">0.30 0.10</table>
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.skill10514"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2" />
+		<set name="affect_limit" value="5;12"/>
+		<triggers>
+			<trigger id="47814" level="1" type="ON_EXIT_EFFECT" chance="100"/>
+		</triggers>
+		<for>
+			<effect>
+				<mul stat="runSpd" value="#runSpd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="47821" levels="1" name="Wild Assault">
+		<set name="itemConsumeCount" value="1"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="coolTime" value="200"/>
+		<set name="castRange" value="-1"/>
+		<set name="effectPoint" value="-400"/>
+		<set name="fan_range" value="0;0;600;60"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="magicLevel" value="40"/>
+		<set name="mp_consume" value="100"/> 
+		<set name="hitTime" value="600"/>
+		<set name="abnormal_effect" value="H_P_FAST_ASSAULT_AVE"/>
+		<set name="operate_type" value="A2"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="removeReuseOnActiveEffect" value="47855"/>
+		<set name="basic_property" value="physical_abnormal_resist"/>
+		<set name="target_type" value="TARGET_GROUND"/>
+		<set name="affect_object" value="POINT_BLANK"/>
+		<set name="affect_Scope" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="overHit" value="true"/>
+		<set name="criticalRate" value="20"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="fly_type" value="CHARGE"/>
+		<set name="fly_radius" value="600"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+		<triggers>
+			<trigger id="99001" level="1" type="ON_FINISH_CAST" chance="100"/>
+		</triggers>
+
+	</skill>
+	<skill id="47822" levels="3" name="Wild Rush">
+		<!--<<font color="FF8000">Charge skill</font>>\nCharges at the target.\nThe skill can be used if the distance to the target is no more than $s1.\n\n<<font color="FF8000">Blazing Beast effect</font>>\nWhile the buff is active, the skill can be used without cooldown.-->
+		<table name="#effectPoint">-200 -400 -760</table>
+		<table name="#castRange">300 400 500</table>
+		<table name="#mp_consume">30 40 50</table>
+		<table name="#min_distance">150 120 100</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill0493"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="removeReuseOnActiveEffect" value="47855"/>
+		<set name="coolTime" value="200"/>
+		<set name="castRange" value="#castRange"/>
+		<set name="hitTime" value="400"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="magicLevel" value="40"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="fly_type" value="CHARGE"/>
+		<set name="fly_radius" value="400"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_charges" value="1"/>
+		<cond msgId="113">
+			<target min_distance="#min_distance"/>
+		</cond>
+	</skill>
+	<skill id="47823" levels="1" name="Wild Assault: Burning">
+		<set name="itemConsumeCount" value="1"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="coolTime" value="200"/>
+		<set name="castRange" value="-1"/>
+		<set name="effectPoint" value="-400"/>
+		<set name="affect_limit" value="5-12"/>
+		<set name="fan_range" value="0;0;600;60"/>
+		<set name="effectRange" value="1100"/>
+		<set name="affect_range" value="400"/>
+		<set name="magicLevel" value="40"/>
+		<set name="mp_consume" value="100"/> 
+		<set name="hitTime" value="600"/>
+		<set name="abnormal_effect" value="H_P_FAST_ASSAULT_AVE"/>
+		<set name="operate_type" value="A2"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="removeReuseOnActiveEffect" value="47855"/>
+		<set name="basic_property" value="physical_abnormal_resist"/>
+		<set name="target_type" value="TARGET_GROUND"/>
+		<set name="affect_object" value="POINT_BLANK"/>
+		<set name="affect_Scope" value="NOT_FRIEND"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="fly_type" value="CHARGE"/>
+		<set name="fly_radius" value="600"/>
+		<set name="power" value="15000"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47824" levels="3" name="Wild Rush: Burning">
+		<!--<<font color="FF8000">Charge skill</font>>\nCharges at the target.\nThe skill can be used if the distance to the target is no more than $s1.\n\n<<font color="FF8000">Blazing Beast effect</font>>\nWhile the buff is active, the skill can be used without cooldown.-->
+		<table name="#effectPoint">-200 -400 -760</table>
+		<table name="#castRange">300 400 500</table>
+		<table name="#mp_consume">30 40 50</table>
+		<table name="#min_distance">150 120 100</table>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.s_wild_rush"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="removeReuseOnActiveEffect" value="47855"/>
+		<set name="coolTime" value="200"/>
+		<set name="castRange" value="#castRange"/>
+		<set name="hitTime" value="400"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="fly_type" value="CHARGE"/>
+		<set name="fly_radius" value="400"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_charges" value="1"/>
+		<cond msgId="113">
+			<target min_distance="#min_distance"/>
+		</cond>
+	</skill>
+	<skill id="47831" levels="3" name="Blazing Fury">
+		<!--Fills your body with fury of flames.\n\nP. Atk. $s1\nP. Def. $s2\nMax HP $s3\nP. Skill Power $s4\n\nWhen learning the Wild Evolution skill:\nThe skill is enhanced to Blazing Fury: Evolution.-->
+		<table name="#TabpAtkpDefmaxHp">1.1 1.15 1.2</table>
+		<table name="#pvpPhysDmgBonus">1.05 1.1 1.15</table>
+		<table name="#abnormal_level">1 2 3</table>
+		<set name="icon" value="icon.skill1434"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="FURY"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="itemConsumeCount" value="10"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="affect_range" value="1000"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="upgradeControllerSkillId" value="47865" />
+		<set name="upgradedSkillId" value="47832" />
+		<for>
+			<effect>
+				<mul stat="pAtk" value="#TabpAtkpDefmaxHp"/>
+				<mul stat="pDef" value="#TabpAtkpDefmaxHp"/>
+				<mul stat="maxHp" value="#TabpAtkpDefmaxHp"/>
+				<mul stat="pvpPhysDmgBonus" value="#pvpPhysDmgBonus"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="47832" levels="3" name="Blazing Fury: Evolution">
+		<!--Fills your body with fury of flames.\n\nP. Atk. $s1\nP. Def. $s2\nMax HP $s3\nP. Skill Power $s4-->
+		<table name="#TabpAtkpDefmaxHp">1.2 1.25 1.3</table>
+		<table name="#pvpPhysDmgBonus">1.1 1.15 1.2</table>
+		<table name="#abnormal_level">1 2 3</table>
+		<set name="icon" value="icon.skill1434"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="FURY"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="itemConsumeCount" value="10"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="affect_range" value="1000"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="#TabpAtkpDefmaxHp"/>
+				<mul stat="pDef" value="#TabpAtkpDefmaxHp"/>
+				<mul stat="maxHp" value="#TabpAtkpDefmaxHp"/>
+				<mul stat="pvpPhysDmgBonus" value="#pvpPhysDmgBonus"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="47833" levels="1" name="Flame of Pa'agrio">
+		<set name="debuff" value="true"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.skill1171"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47834" levels="2" name="Final Secret">
+		<!--Duration: $s1\nP. Skill Power $s2\nBasic PvP Damage $s3\nBow Resistance $s4\nM. Damage Resistance $s4-->
+		<table name="#magicLevel">76 85</table>
+		<table name="#pvpPhysDmgBonus">1.15 1</table>
+		<table name="#p_skill_power">1.1 1.15</table>
+		<table name="#bow">60 60</table>
+		<table name="#bow2">0 60</table>
+		<table name="#magicResist">1.6 1.6</table>
+		<table name="#itemConsumeCount">0 10</table>
+		<table name="#mp_consume">50 60</table>
+		<set name="icon" value="icon.skill10951"/>
+		<set name="magicLevel" value="#magicLevel"/>
+		<set name="reuseDelay" value="150000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="final_secret"/>
+		<set name="itemConsumeId" value="3031"/>
+		<set name="itemConsumeCount" value="#itemConsumeCount"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pvpPhysDmgBonus" value="1.15"/>
+				<mul stat="p_skill_power" value="1.1"/>
+				<p_defence_trait name="bow" value="#bow"/>
+				<p_defence_trait name="Crossbow" value="#bow2"/>
+				<p_defence_trait name="Firearms" value="#bow2"/>
+				<mul stat="magicResist" value="1.6"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="47855" levels="1" name="Blazing Beast">
+		<!--<<font color="FF8000">BP skill</font>>\nAvailable when you have <font color="FF8000">500+</font> BP.\nConsumes <font color="FF8000">100</font> BP.\n\nImbues the beast with Fire God Pa'agrio's power.\n\nReceived PvP damage -10%%\nThe beast deals repeated blows to nearby enemies.\nSummons <font color="FF0000">Flame of Pa'agrio</font>.\n\n<<font color="FF8000">No cooldown for the following skills:</font>>\n- Wild Rush\n- Wild Assault\n\n<font color="FF8000">Note!</font>\nUpon activating the skill, your BP cannot decrease for 3 sec.\nBP is decreased when hit.\nThe skill effect is cancelled when BP reaches 0.-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="bpConsume" value="100"/>
+		<set name="minBpToUse" value="500"/>
+		<set name="abnormal_effect" value="V_OR_BURNING_BEAST_FIRE_AVE_2;V_ORC_IMMOLATION_BODY_AVE" />
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.s_burning_beast"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="hitTime" value="500"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_AURA" />
+		<set name="skillType" value="BUFF" />
+		<set name="operate_type" value="A2" />
+		<for>
+			<self_effect name="BpReduceOnHit">
+				<def name="reduceAmount" value="100"/>
+			</self_effect>
+			<effect name="t_hp" interval="1" value="100"/>
+		</for>
+	</skill>
+	<skill id="47856" levels="1" name="Pa'agrio's Grace">
+		<!--Due to Pa'agrio's power, your BP doesn't decrease even when hit.-->
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="3"/>
+		<!--<set name="magicType" value="PHYSIC_TRIGGER"/>-->
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.skill10328"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47857" levels="1" name="Pa'agrio's Power Veil">
+		<!--When the Pa'agrio's Grace effect expires, activates Pa'agrio's Power Veil.\nBP -100 when hit.-->
+		<set name="affect_scope" value="FAN"/>
+		<!--<set name="magicType" value="PHYSIC_TRIGGER"/>-->
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.skill10326"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47858" levels="1" name="BP Decrease">
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47861" levels="15" name="Wild Weapon Mastery">
+		<!--When using a spear:\nP. Atk. $s1-->
+		<table name="#pAtk">10 30 45 65 85 110 130 145 155 165 175 185 195 205 220</table>
+		<table name="#pCritDamRcpt">1 1 1 1 1 1 1 1 1 1 1 1.1 1.2 1.3 1.5</table>
+		<set name="icon" value="icon.s_wild_weapon_mastery"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="pCritDamRcpt" value="#pCritDamRcpt"/>
+			<add stat="pAtk" value="#pAtk">
+				<using kind="Pole"/>
+			</add>
+		</for>
+	</skill>
+	<skill id="47862" levels="15" name="Wild Armor Mastery">
+		<!--When using heavy armor:\nP. Def. $s1-->
+		<table name="#pDef">15 30 45 60 75 90 105 120 135 150 156 162 168 174 180 186 192 198 204 210 216 222 228 234 240 243 246 249 252 255 258 261 264 267 270</table>
+		<set name="icon" value="icon.s_wild_armor_mastery"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pDef" value="#pDef">
+				<using armor="Heavy"/>
+			</add>
+			<add stat="pDef" value="#pDef">
+				<using armor="Heavy"/>
+			</add>
+		</for>
+	</skill>
+	<skill id="47863" levels="3" name="Wild Instinct">
+		<!--Unleashes beast instincts.\n\nKnockback Resistance $s1\nImprisonment Resistance $s2\nMax HP $s3\nSpeed $s4\n\nMax BP depends on your CON.-->
+		<table name="#maxHp">1.1 1.2 1.3</table>
+		<table name="#runSpd">20 25 30</table>
+		<table name="#defence">20 25 30</table>
+		<table name="#bp">1000 1630 2000</table> <!-- TODO: verify lvl 3 -->
+		<set name="icon" value="icon.s_wild_instinct"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<mul stat="defence_trait_knockback" value="10"/>
+			<mul stat="defence_trait_knockdown" value="10"/>
+			<p_defence_trait name="deport" value="10"/>
+			<mul stat="maxHp" value="#maxHp"/>
+			<add stat="runSpd" value="#runSpd"/>
+			<add stat="maxBp" value="#bp"/>
+			<add stat="regBp" value="5"/>
+		</for>
+	</skill>
+	<skill id="47864" levels="1" name="Darkness Unleashing">
+		<!--The beast unleashes the power of darkness.\nP. Atk. +15%%\n\n<<font color="FF8000">Skill enhancement</font>>\nWild Scratch ? Shadow Scratch\nWith a 30%% chance, deals an additional blow.\n\nWild Charge ? Spectral Charge\nIncreases the number of attacks.-->
+		<set name="icon" value="icon.s_awaken_darkness"/>
+		<set name="skillsToReplace" value="47805;47807"/>
+		<set name="skillsToAdd" value="47806;47808"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<effect>
+				<mul stat="pAtk" value="1.15"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="47865" levels="1" name="Wild Evolution">
+		<!--Pa'agrio's blessing makes the beast unleash its true powers.\n\nMax BP $s1\nMax HP $s2\nP. Atk. $s3\nP. Critical Damage $s4\nP. Skill Critical Damage $s5\nSpeed $s6\n\n<<font color="FF8000">Skill enhancement</font>>\nBlazing Fury ? Blazing Fury: Evolution\nIncreases basic stats.-->
+		<set name="icon" value="icon.s_wild_evolution"/>
+		<set name="skillsToReplace" value="47831"/>
+		<set name="skillsToAdd" value="47832"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<mul stat="maxBp" value="2"/>
+			<mul stat="maxHp" value="1.3"/>
+			<mul stat="pAtk" value="1.3"/>
+			<mul stat="pvpPhysSkillDmgBonus" value="1.3"/>
+			<mul stat="pCritDamRcpt" value="1.3"/>
+			<add stat="runSpd" value="20"/>
+		</for>
+	</skill>
+	<skill id="47866" levels="1" name="Spear Focus Attack">
+		<!--Increases stats when using a spear.\n\nWhen using a spear, P. Atk. $s1\nWhen using a spear, Atk. Spd. $s2\nWhen using a spear, attack range $s3\n<Low HP/ MP absorption, when using a spear>-->
+		<set name="icon" value="icon.skill30932"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47867" levels="1" name="Wild Health">
+		<!--Gets a part of Glorious Steed's powers.\nMax HP $s1-->
+		<set name="icon" value="icon.skill0967"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="maxHp" value="100"/>
+		</for>
+	</skill>
+	<skill id="47868" levels="1" name="Wild Movement">
+		<!--Gets a part of Shining Lady's agility.\nSpeed $s1-->
+		<set name="icon" value="icon.winghound_vehicle"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="runSpd" value="3"/>
+		</for>
+	</skill>
+	<skill id="47871" levels="1" name="Change Armor">
+		<!--Changes the Vanguard Rider's armor appearance.\n\nWhen activated, the default appearance is shown.\nWhen deactivated, the Vanguard Rider's armor appearance is shown.\n\nIf no upper armor is equipped, the Vanguard Rider's armor is not used.-->
+		<set name="abnormal_effect" value="VANGUARD_CHANGE_ARMOR"/>
+		<set name="icon" value="icon.s_orc_armor_change"/>
+		<set name="operate_type" value="T"/>
+		<for>
+			<effect name="ManaDamOverTime" interval="1" value="0">
+			</effect>
+		</for>
+	</skill>
+	<skill id="47881" levels="1" name="Beast Point Absorption">
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47882" levels="1" name="Beast Point Absorption Rate">
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47883" levels="1" name="Beast Point Cancel">
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47885" levels="1" name="Max BP Test_diff">
+		<!--Max BP Test_diff-->
+		<set name="icon" value="icon.skill30932"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47886" levels="1" name="Max BP Test_per">
+		<!--Max BP Test_per-->
+		<set name="icon" value="icon.skill30932"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47887" levels="1" name="BP Recovery Rate Test_diff">
+		<!--BP Recovery Rate Test_diff-->
+		<set name="icon" value="icon.skill30932"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47888" levels="1" name="BP Recovery Rate Test_per">
+		<!--BP Recovery Rate Test_per-->
+		<set name="icon" value="icon.skill30932"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47889" levels="3" name="BP Test - Absorption: 0 - 1000">
+		<!--BP Test - Absorption: 0 - 1000-->
+		<set name="autouse_type" value="BUFF"/>
+		<set name="affect_scope" value="FAN"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.skill0500"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47890" levels="1" name="Beast Point Absorption: -1 Point">
+		<set name="affect_scope" value="FAN"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47891" levels="8" name="Transcendent Piercing">
+		<!--<<font color="FF8000">Spear skill</font>>\nAttacks the target with a spear.\n\nDeals physical damage with $s1 power.\n\nIgnores Shield Defense.\nCritical.\nThe skill can be used only in transcendent instance zones.-->
+		<table name="#effectPoint">-200 -300 -400 -500 -550 -600 -650 -700</table>
+		<table name="#power">419 581 1333 2478 3097 4501 5176 6386</table>
+		<table name="#mp_consume">18 25 33 40 44 48 51 55</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_impale"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="power" value="#power"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="castRange" value="120"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="1200"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="num_attacks" value="2"/>
+		<set name="shieldignore" value="true"/>
+		<set name="criticalRate" value="10"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+	<skill id="47892" levels="8" name="Transcendent Amazing Piercing">
+		<table name="#effectPoint">-760 -790 -830 -850 -860 -870 -880 -900</table>
+		<table name="#mp_consume">60 62 65 66 67 68 69 70</table>
+		<!--<<font color="FF8000">Spear skill</font>>\nAttacks the target with a spear.\n\nDeals physical damage with $s1 power.\n\nIgnores Shield Defense.\nIgnores $s2 of the target's defense.\nCritical.\nThe skill can be used only in transcendent instance zones.-->
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="operate_type" value="A2"/>
+		<set name="icon" value="icon.s_arc_impale"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="150"/>
+		<set name="hitTime" value="1200"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="47893" levels="10" name="Transcendent Spectral Scratch">
+		<!--<<font color="FF8000">Beast skill</font>>\nThe beast attacks the target with its enhanced claws.\n\nDeals physical damage with $s1 power.\nIgnores Shield Defense.\nIgnores $s2 of the target's defense.\nCritical.\nThe skill can be used only in transcendent instance zones.-->
+		<table name="#effectPoint">-400 -500 -600 -700 -750 -780 -820 -860 -880 -900</table>
+		<table name="#power">1629 3028 5502 7211 8109 9203 9828 10468 10796 11121</table>
+		<table name="#mp_consume">33 40 48 55 59 61 64 67 69 70</table>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.s_giant_stamp"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="150"/>
+		<set name="hitTime" value="1200"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="5;12"/>
+		<set name="target" value="TARGET_AREA"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="overHit" value="true"/>
+		<set name="affect_range" value="200"/>
+		<set name="power" value="#power"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="critical_dmg_down"/>
+		<set name="shieldignore" value="true"/>
+		<set name="defence_ignore_percent" value="20"/>
+		<set name="criticalRate" value="10"/>
+		<set name="operate_type" value="A2"/>
+		<cond msgId="113">
+			<using kind="Pole"/>
+		</cond>
+	</skill>
+</list>

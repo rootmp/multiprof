@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="34100">
+		<!--P. Atk. +76-->
+	</option_data>
+	<option_data id="34101">
+		<!--P. Atk. +82-->
+	</option_data>
+	<option_data id="34102">
+		<!--P. Atk. +88-->
+	</option_data>
+	<option_data id="34103">
+		<!--P. Atk. +94-->
+	</option_data>
+	<option_data id="34104">
+		<!--P. Atk. +100-->
+	</option_data>
+	<option_data id="34105">
+		<!--P. Atk. +120-->
+	</option_data>
+	<option_data id="34106">
+		<!--P. Atk. +150-->
+	</option_data>
+	<option_data id="34107">
+		<!--P. Atk. +180-->
+	</option_data>
+	<option_data id="34108">
+		<!--P. Atk. +220-->
+	</option_data>
+	<option_data id="34109">
+		<!--P. Atk. +30-->
+	</option_data>
+	<option_data id="34110">
+		<!--P. Atk. +32-->
+	</option_data>
+	<option_data id="34111">
+		<!--P. Atk. +44-->
+	</option_data>
+	<option_data id="34112">
+		<!--P. Atk. +56-->
+	</option_data>
+	<option_data id="34113">
+		<!--P. Atk. +68-->
+	</option_data>
+	<option_data id="34114">
+		<!--P. Atk. +80-->
+	</option_data>
+	<option_data id="34115">
+		<!--P. Atk. +92-->
+	</option_data>
+	<option_data id="34116">
+		<!--P. Atk. +104-->
+	</option_data>
+	<option_data id="34117">
+		<!--P. Atk. +116-->
+	</option_data>
+	<option_data id="34118">
+		<!--P. Atk. +128-->
+	</option_data>
+	<option_data id="34119">
+		<!--P. Atk. +140-->
+	</option_data>
+	<option_data id="34120">
+		<!--P. Atk. +152-->
+	</option_data>
+	<option_data id="34121">
+		<!--P. Atk. +164-->
+	</option_data>
+	<option_data id="34122">
+		<!--P. Atk. +176-->
+	</option_data>
+	<option_data id="34123">
+		<!--P. Atk. +188-->
+	</option_data>
+	<option_data id="34124">
+		<!--P. Atk. +200-->
+	</option_data>
+	<option_data id="34125">
+		<!--P. Atk. +240-->
+	</option_data>
+	<option_data id="34126">
+		<!--P. Atk. +300-->
+	</option_data>
+	<option_data id="34127">
+		<!--P. Atk. +360-->
+	</option_data>
+	<option_data id="34128">
+		<!--P. Atk. +425-->
+	</option_data>
+	<option_data id="34129">
+		<!--M. Atk. +10.-->
+	</option_data>
+	<option_data id="34130">
+		<!--M. Atk. +16.-->
+	</option_data>
+	<option_data id="34131">
+		<!--M. Atk. +22-->
+	</option_data>
+	<option_data id="34132">
+		<!--M. Atk. +28-->
+	</option_data>
+	<option_data id="34133">
+		<!--M. Atk. +34-->
+	</option_data>
+	<option_data id="34134">
+		<!--M. Atk. +40-->
+	</option_data>
+	<option_data id="34135">
+		<!--M. Atk. +46-->
+	</option_data>
+	<option_data id="34136">
+		<!--M. Atk. +52-->
+	</option_data>
+	<option_data id="34137">
+		<!--M. Atk. +58-->
+	</option_data>
+	<option_data id="34138">
+		<!--M. Atk. +64-->
+	</option_data>
+	<option_data id="34139">
+		<!--M. Atk. +70-->
+	</option_data>
+	<option_data id="34140">
+		<!--M. Atk. +76-->
+	</option_data>
+	<option_data id="34141">
+		<!--M. Atk. +82-->
+	</option_data>
+	<option_data id="34142">
+		<!--M. Atk. +88-->
+	</option_data>
+	<option_data id="34143">
+		<!--M. Atk. +94-->
+	</option_data>
+	<option_data id="34144">
+		<!--M. Atk. +100-->
+	</option_data>
+	<option_data id="34145">
+		<!--M. Atk. +140-->
+	</option_data>
+	<option_data id="34146">
+		<!--M. Atk. +170-->
+	</option_data>
+	<option_data id="34147">
+		<!--M. Atk. +210-->
+	</option_data>
+	<option_data id="34148">
+		<!--M. Atk. +270-->
+	</option_data>
+	<option_data id="34149">
+		<!--M. Atk. +30-->
+	</option_data>
+	<option_data id="34150">
+		<!--M. Atk. +32-->
+	</option_data>
+	<option_data id="34151">
+		<!--M. Atk. +44-->
+	</option_data>
+	<option_data id="34152">
+		<!--M. Atk. +56-->
+	</option_data>
+	<option_data id="34153">
+		<!--M. Atk. +68-->
+	</option_data>
+	<option_data id="34154">
+		<!--M. Atk. +80-->
+	</option_data>
+	<option_data id="34155">
+		<!--M. Atk. +92-->
+	</option_data>
+	<option_data id="34156">
+		<!--M. Atk. +104-->
+	</option_data>
+	<option_data id="34157">
+		<!--M. Atk. +116-->
+	</option_data>
+	<option_data id="34158">
+		<!--M. Atk. +128-->
+	</option_data>
+	<option_data id="34159">
+		<!--M. Atk. +140-->
+	</option_data>
+	<option_data id="34160">
+		<!--M. Atk. +152-->
+	</option_data>
+	<option_data id="34161">
+		<!--M. Atk. +164-->
+	</option_data>
+	<option_data id="34162">
+		<!--M. Atk. +176-->
+	</option_data>
+	<option_data id="34163">
+		<!--M. Atk. +188-->
+	</option_data>
+	<option_data id="34164">
+		<!--M. Atk. +200-->
+	</option_data>
+	<option_data id="34165">
+		<!--M. Atk. +280-->
+	</option_data>
+	<option_data id="34166">
+		<!--M. Atk. +340-->
+	</option_data>
+	<option_data id="34167">
+		<!--M. Atk. +420-->
+	</option_data>
+	<option_data id="34168">
+		<!--M. Atk. +535-->
+	</option_data>
+	<option_data id="34169">
+		<!--P. Critical Rate +10-->
+	</option_data>
+	<option_data id="34170">
+		<!--P. Critical Rate +11-->
+	</option_data>
+	<option_data id="34171">
+		<!--P. Critical Rate +12-->
+	</option_data>
+	<option_data id="34172">
+		<!--P. Critical Rate +13-->
+	</option_data>
+	<option_data id="34173">
+		<!--P. Critical Rate +14-->
+	</option_data>
+	<option_data id="34174">
+		<!--P. Critical Rate +15-->
+	</option_data>
+	<option_data id="34175">
+		<!--P. Critical Rate +17-->
+	</option_data>
+	<option_data id="34176">
+		<!--P. Critical Rate +19-->
+	</option_data>
+	<option_data id="34177">
+		<!--P. Critical Rate +21-->
+	</option_data>
+	<option_data id="34178">
+		<!--P. Critical Rate +23-->
+	</option_data>
+	<option_data id="34179">
+		<!--P. Critical Rate +25-->
+	</option_data>
+	<option_data id="34180">
+		<!--P. Critical Rate +27-->
+	</option_data>
+	<option_data id="34181">
+		<!--P. Critical Rate +29-->
+	</option_data>
+	<option_data id="34182">
+		<!--P. Critical Rate +31-->
+	</option_data>
+	<option_data id="34183">
+		<!--P. Critical Rate +33-->
+	</option_data>
+	<option_data id="34184">
+		<!--P. Critical Rate +35-->
+	</option_data>
+	<option_data id="34185">
+		<!--P. Critical Rate +37-->
+	</option_data>
+	<option_data id="34186">
+		<!--P. Critical Rate +40-->
+	</option_data>
+	<option_data id="34187">
+		<!--P. Critical Rate +45-->
+	</option_data>
+	<option_data id="34188">
+		<!--P. Critical Rate +50-->
+	</option_data>
+	<option_data id="34189">
+		<!--Skill Critical Damage +10-->
+	</option_data>
+	<option_data id="34190">
+		<!--Skill Critical Damage +15-->
+	</option_data>
+	<option_data id="34191">
+		<!--Skill Critical Damage +20-->
+	</option_data>
+	<option_data id="34192">
+		<!--Skill Critical Damage +25-->
+	</option_data>
+	<option_data id="34193">
+		<!--Skill Critical Damage +30-->
+	</option_data>
+	<option_data id="34194">
+		<!--Skill Critical Damage +35-->
+	</option_data>
+	<option_data id="34195">
+		<!--Skill Critical Damage +40-->
+	</option_data>
+	<option_data id="34196">
+		<!--Skill Critical Damage +45-->
+	</option_data>
+	<option_data id="34197">
+		<!--Skill Critical Damage +50-->
+	</option_data>
+	<option_data id="34198">
+		<!--Skill Critical Damage +60-->
+	</option_data>
+	<option_data id="34199">
+		<!--Skill Critical Damage +70-->
+	</option_data>
+</list>

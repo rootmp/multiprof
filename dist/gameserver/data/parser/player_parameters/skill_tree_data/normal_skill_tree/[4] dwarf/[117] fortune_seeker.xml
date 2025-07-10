@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="117"><!--Fortune Seeker-->
+		<skill id="1405" level="3" min_level="76" cost="7200000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8620;96093" count="1"/><!--Buff Expansion Book Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="4" min_level="76" cost="7200000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8621;96094" count="1"/><!--Buff Expansion Book Lv. 4-->
+			</required_items>
+		</skill>
+		<skill id="36" level="41" min_level="76" cost="7200000"/><!--Vortex-->
+		<skill id="141" level="5" min_level="76" cost="7200000"/><!--Weapon Mastery-->
+		<skill id="45188" level="1" min_level="76"><!--Evolution Defense-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="347" level="1" min_level="76" cost="7200000"/><!--Earthquake-->
+		<skill id="302" level="10" min_level="76" cost="7200000"/><!--Spoil Festival-->
+		<skill id="430" level="1" min_level="76" cost="7200000"/><!--Master of Combat-->
+		<skill id="45119" level="4" min_level="76" cost="7200000"><!--Maphr's Might-->
+			<required_items>
+				<item id="94135;95517" count="1"/><!--Master's Book: Might-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="1" min_level="76" cost="7200000"><!--Detection-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="917" level="1" min_level="76" cost="7200000"><!--Final Secret-->
+			<required_items>
+				<item id="90080" count="1"/><!--Scroll: Final Secret Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="1836" level="1" min_level="76" cost="7200000"/><!--Mount Kukuru-->
+		<skill id="254" level="13" min_level="76" cost="7200000"/><!--Spoil-->
+		<skill id="260" level="38" min_level="76" cost="7200000"/><!--Power Break-->
+		<skill id="348" level="1" min_level="76" cost="7200000"><!--Spoil Crush-->
+			<required_items>
+				<item id="90079" count="1"/><!--Scroll: Spoil Crush-->
+			</required_items>
+		</skill>
+		<skill id="994" level="3" min_level="76" cost="7200000"/><!--Rush-->
+		<skill id="190" level="41" min_level="76" cost="7200000"/><!--Fatal Strike-->
+		<skill id="45120" level="4" min_level="76" cost="7200000"><!--Maphr's Shield-->
+			<required_items>
+				<item id="94136;95518" count="1"/><!--Master's Book: Shield-->
+			</required_items>
+		</skill>
+		<skill id="36" level="42" min_level="77" cost="7200000"/><!--Vortex-->
+		<skill id="45248" level="2" min_level="77" cost="7200000"><!--Collecting Mastery-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="347" level="2" min_level="77" cost="7200000"/><!--Earthquake-->
+		<skill id="362" level="1" min_level="77" cost="7200000"><!--Armor Crush-->
+			<required_items>
+				<item id="90078" count="1"/><!--Scroll: Armor Crush-->
+			</required_items>
+		</skill>
+		<skill id="260" level="39" min_level="77" cost="7200000"/><!--Power Break-->
+		<skill id="348" level="2" min_level="77" cost="7200000"/><!--Spoil Crush-->
+		<skill id="45390" level="1" min_level="77" cost="7200000"><!--Buff Thief-->
+			<required_items>
+				<item id="94141;95523" count="1"/><!--Spellbook: Buff Thief-->
+			</required_items>
+		</skill>
+		<skill id="190" level="42" min_level="77" cost="7200000"/><!--Fatal Strike-->
+		<skill id="36" level="43" min_level="78" cost="16700000"/><!--Vortex-->
+		<skill id="347" level="3" min_level="78" cost="16700000"/><!--Earthquake-->
+		<skill id="302" level="11" min_level="78" cost="16700000"/><!--Spoil Festival-->
+		<skill id="254" level="14" min_level="78" cost="16700000"/><!--Spoil-->
+		<skill id="286" level="8" min_level="78" cost="16700000"/><!--Provoke-->
+		<skill id="362" level="2" min_level="78" cost="16700000"/><!--Armor Crush-->
+		<skill id="260" level="40" min_level="78" cost="16700000"/><!--Power Break-->
+		<skill id="1613" level="10" min_level="78" cost="16700000"/><!--Body Crush-->
+		<skill id="348" level="3" min_level="78" cost="16700000"/><!--Spoil Crush-->
+		<skill id="190" level="43" min_level="78" cost="16700000"/><!--Fatal Strike-->
+		<skill id="440" level="1" min_level="78" cost="16700000"/><!--Braveheart-->
+		<skill id="36" level="44" min_level="79" cost="16700000"/><!--Vortex-->
+		<skill id="347" level="4" min_level="79" cost="16700000"/><!--Earthquake-->
+		<skill id="290" level="15" min_level="78" cost="16700000"><!--Final Frenzy-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="362" level="3" min_level="79" cost="16700000"/><!--Armor Crush-->
+		<skill id="348" level="4" min_level="79" cost="16700000"/><!--Spoil Crush-->
+		<skill id="190" level="44" min_level="79" cost="16700000"/><!--Fatal Strike-->
+		<skill id="36" level="45" min_level="80" cost="16700000"/><!--Vortex-->
+		<skill id="347" level="5" min_level="80" cost="16700000"/><!--Earthquake-->
+		<skill id="1617" level="4" min_level="80" cost="16700000"/><!--Tenacity-->
+		<skill id="302" level="12" min_level="80" cost="16700000"/><!--Spoil Festival-->
+		<skill id="430" level="2" min_level="80" cost="16700000"><!--Master of Combat-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45189" level="1" min_level="80"><!--Evolution Power-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="254" level="15" min_level="80" cost="16700000"/><!--Spoil-->
+		<skill id="286" level="9" min_level="80" cost="16700000"/><!--Provoke-->
+		<skill id="362" level="4" min_level="80" cost="16700000"/><!--Armor Crush-->
+		<skill id="260" level="41" min_level="80" cost="16700000"/><!--Power Break-->
+		<skill id="348" level="5" min_level="80" cost="16700000"/><!--Spoil Crush-->
+		<skill id="54102" level="1" min_level="80"><!--White Guardian Transformation-->
+			<required_items>
+				<item id="92401;95502" count="1"/><!--Spellbook: White Guardian-->
+			</required_items>
+		</skill>
+		<skill id="190" level="45" min_level="80" cost="16700000"/><!--Fatal Strike-->
+		<skill id="347" level="6" min_level="81" cost="160000000"/><!--Earthquake-->
+		<skill id="362" level="5" min_level="81" cost="160000000"/><!--Armor Crush-->
+		<skill id="260" level="42" min_level="81" cost="160000000"/><!--Power Break-->
+		<skill id="348" level="6" min_level="81" cost="160000000"/><!--Spoil Crush-->
+		<skill id="190" level="46" min_level="81" cost="160000000"/><!--Fatal Strike-->
+		<skill id="347" level="7" min_level="82" cost="170000000"/><!--Earthquake-->
+		<skill id="302" level="13" min_level="82" cost="170000000"/><!--Spoil Festival-->
+		<skill id="254" level="16" min_level="82" cost="170000000"/><!--Spoil-->
+		<skill id="286" level="10" min_level="82" cost="170000000"/><!--Provoke-->
+		<skill id="362" level="6" min_level="82" cost="170000000"/><!--Armor Crush-->
+		<skill id="260" level="43" min_level="82" cost="170000000"/><!--Power Break-->
+		<skill id="1613" level="11" min_level="82" cost="170000000"/><!--Body Crush-->
+		<skill id="348" level="7" min_level="82" cost="170000000"/><!--Spoil Crush-->
+		<skill id="1615" level="4" min_level="77" cost="7200000"/><!--Weapon Reinforcement-->
+		<skill id="190" level="47" min_level="82" cost="170000000"/><!--Fatal Strike-->
+		<skill id="347" level="8" min_level="83" cost="240000000"/><!--Earthquake-->
+		<skill id="362" level="7" min_level="83" cost="240000000"/><!--Armor Crush-->
+		<skill id="260" level="44" min_level="83" cost="240000000"/><!--Power Break-->
+		<skill id="348" level="8" min_level="83" cost="240000000"/><!--Spoil Crush-->
+		<skill id="190" level="48" min_level="83" cost="240000000"/><!--Fatal Strike-->
+		<skill id="347" level="9" min_level="84" cost="240000000"/><!--Earthquake-->
+		<skill id="302" level="14" min_level="84" cost="240000000"/><!--Spoil Festival-->
+		<skill id="254" level="17" min_level="84" cost="240000000"/><!--Spoil-->
+		<skill id="286" level="11" min_level="84" cost="240000000"/><!--Provoke-->
+		<skill id="362" level="8" min_level="84" cost="240000000"/><!--Armor Crush-->
+		<skill id="260" level="45" min_level="84" cost="240000000"/><!--Power Break-->
+		<skill id="1613" level="12" min_level="84" cost="240000000"/><!--Body Crush-->
+		<skill id="348" level="9" min_level="84" cost="240000000"/><!--Spoil Crush-->
+		<skill id="190" level="49" min_level="84" cost="240000000"/><!--Fatal Strike-->
+		<skill id="348" level="10" min_level="85" cost="840000000"/><!--Spoil Crush-->
+		<skill id="1615" level="5" min_level="82" cost="170000000"/><!--Weapon Reinforcement-->
+		<skill id="190" level="50" min_level="85" cost="840000000"/><!--Fatal Strike-->
+		<skill id="348" level="11" min_level="86" cost="840000000"/><!--Spoil Crush-->
+		<skill id="190" level="51" min_level="86" cost="840000000"/><!--Fatal Strike-->
+		<skill id="348" level="12" min_level="87" cost="840000000"/><!--Spoil Crush-->
+		<skill id="190" level="52" min_level="87" cost="840000000"/><!--Fatal Strike-->
+		<skill id="348" level="13" min_level="88" cost="840000000"/><!--Spoil Crush-->
+		<skill id="190" level="53" min_level="88" cost="840000000"/><!--Fatal Strike-->
+		<skill id="348" level="14" min_level="89" cost="840000000"/><!--Spoil Crush-->
+		<skill id="190" level="54" min_level="89" cost="840000000"/><!--Fatal Strike-->
+		<skill id="348" level="15" min_level="90" cost="840000000"/><!--Spoil Crush-->
+		<skill id="190" level="55" min_level="90" cost="840000000"/><!--Fatal Strike-->
+		<skill id="290" level="16" min_level="82" cost="170000000"><!--Final Frenzy-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="290" level="17" min_level="86" cost="840000000"><!--Final Frenzy-->
+			<required_items>
+				<item id="57" count="7500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="290" level="18" min_level="90" cost="840000000"><!--Final Frenzy-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="362" level="9" min_level="86" cost="840000000"/><!--Armor Crush-->
+		<skill id="362" level="10" min_level="88" cost="840000000"><!--Armor Crush-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="362" level="11" min_level="90" cost="840000000"><!--Armor Crush-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="826" level="2" min_level="80" cost="16700000"><!--Spike-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="828" level="2" min_level="78" cost="16700000"><!--Encase Armor-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1615" level="6" min_level="85" cost="840000000"><!--Weapon Reinforcement-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45114" level="4" min_level="76" cost="7200000"><!--Maphr's Focus-->
+			<required_items>
+				<item id="94363;95535" count="1"/><!--Master's Book: Focus-->
+			</required_items>
+		</skill>
+		<skill id="45115" level="4" min_level="76" cost="7200000"><!--Maphr's Death Whisper-->
+			<required_items>
+				<item id="94364;95536" count="1"/><!--Master's Book: Death Whisper-->
+			</required_items>
+		</skill>
+		<skill id="45116" level="3" min_level="76" cost="7200000"><!--Maphr's Haste-->
+			<required_items>
+				<item id="94369;95538" count="1"/><!--Master's Book: Haste-->
+			</required_items>
+		</skill>
+		<skill id="45117" level="3" min_level="76" cost="7200000"><!--Maphr's Wind Walk-->
+			<required_items>
+				<item id="94365;95537" count="1"/><!--Master's Book: Wind Walk-->
+			</required_items>
+		</skill>
+		<skill id="45118" level="3" min_level="76" cost="7200000"><!--Maphr's Magic Barrier-->
+			<required_items>
+				<item id="94362;95534" count="1"/><!--Master's Book: Magic Barrier-->
+			</required_items>
+		</skill>
+		<skill id="45130" level="4" min_level="76" cost="7200000"><!--Maphr’s Acumen-->
+			<required_items>
+				<item id="94370;95539" count="1"/><!--Master's Book: Acumen-->
+			</required_items>
+		</skill>
+		<skill id="45131" level="4" min_level="76" cost="7200000"><!--Maphr's Empower-->
+			<required_items>
+				<item id="94361;95533" count="1"/><!--Master's Book: Empower-->
+			</required_items>
+		</skill>
+		<skill id="45132" level="3" min_level="76" cost="7200000"><!--Maphr's Wild Magic-->
+			<required_items>
+				<item id="94368;95771" count="1"/><!--Master's Book: Wild Magic-->
+			</required_items>
+		</skill>
+		<skill id="45133" level="3" min_level="76" cost="7200000"><!--Maphr's Berserker Spirit-->
+			<required_items>
+				<item id="94366;95769" count="1"/><!--Master's Book: Berserker Spirit-->
+			</required_items>
+		</skill>
+		<skill id="45134" level="4" min_level="76" cost="7200000"><!--Maphr's Clarity-->
+			<required_items>
+				<item id="94367;95770" count="1"/><!--Master's Book: Clarity-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="2" min_level="85" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45539" level="1" min_level="76" cost="7200000"><!--Rolling Dice-->
+			<required_items>
+				<item id="95347;95566" count="1"/><!--Spellbook: Rolling Dice-->
+			</required_items>
+		</skill>
+		<skill id="47201" level="1" min_level="84" cost="240000000"><!--Fortune Time-->
+			<required_items>
+				<item id="95856;95864" count="1"/><!--Spellbook: Fortune Time-->
+			</required_items>
+		</skill>
+		<skill id="47204" level="1" min_level="79" cost="16700000"><!--Golden Stone-->
+			<required_items>
+				<item id="95857;95865" count="1"/><!--Spellbook: Golden Stone-->
+			</required_items>
+			<blocked_skills>
+				<skill id="260"/><!--Power Break-->
+			</blocked_skills>
+		</skill>
+		<skill id="47204" level="2" min_level="82" cost="170000000"/><!--Golden Stone-->
+		<skill id="47204" level="3" min_level="85" cost="840000000"/><!--Golden Stone-->
+		<skill id="47204" level="4" min_level="88" cost="840000000"><!--Golden Stone-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47204" level="5" min_level="90" cost="840000000"><!--Golden Stone-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47210" level="1" min_level="76" cost="7200000"><!--Life Gain-->
+			<required_items>
+				<item id="95860;95868" count="1"/><!--Spellbook: Life Gain-->
+			</required_items>
+		</skill>
+		<skill id="47216" level="1" min_level="76" cost="7200000"><!--Crushing Leap-->
+			<required_items>
+				<item id="95858;95866" count="1"/><!--Spellbook: Crushing Leap-->
+			</required_items>
+		</skill>
+		<skill id="47216" level="2" min_level="78" cost="16700000"/><!--Crushing Leap-->
+		<skill id="47216" level="3" min_level="80" cost="16700000"/><!--Crushing Leap-->
+		<skill id="47216" level="4" min_level="82" cost="170000000"/><!--Crushing Leap-->
+		<skill id="47216" level="5" min_level="84" cost="240000000"/><!--Crushing Leap-->
+		<skill id="47216" level="6" min_level="86" cost="840000000"><!--Crushing Leap-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47216" level="7" min_level="88" cost="840000000"><!--Crushing Leap-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47216" level="8" min_level="90" cost="840000000"><!--Crushing Leap-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47219" level="1" min_level="81" cost="160000000"><!--Adena Stun-->
+			<required_items>
+				<item id="95859;95867" count="1"/><!--Spellbook: Adena Stun-->
+			</required_items>
+			<blocked_skills>
+				<skill id="1613"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47219" level="2" min_level="83" cost="240000000"/><!--Adena Stun-->
+		<skill id="47219" level="3" min_level="85" cost="840000000"/><!--Adena Stun-->
+		<skill id="47219" level="4" min_level="87" cost="840000000"/><!--Adena Stun-->
+		<skill id="47219" level="5" min_level="89" cost="840000000"><!--Adena Stun-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47219" level="6" min_level="90" cost="840000000"><!--Adena Stun-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47235" level="8" min_level="76" cost="7200000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="9" min_level="79" cost="16700000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="10" min_level="82" cost="170000000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="11" min_level="84" cost="240000000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="12" min_level="86" cost="840000000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="13" min_level="88" cost="840000000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="14" min_level="89" cost="840000000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47235" level="15" min_level="90" cost="840000000"/><!--Dwarven Weapon Mastery-->
+		<skill id="47236" level="8" min_level="76" cost="7200000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="9" min_level="78" cost="16700000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="10" min_level="81" cost="160000000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="11" min_level="83" cost="240000000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="12" min_level="85" cost="840000000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="13" min_level="87" cost="840000000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="14" min_level="89" cost="840000000"/><!--Dwarven Armor Mastery-->
+		<skill id="47236" level="15" min_level="90" cost="840000000"/><!--Dwarven Armor Mastery-->
+		<skill id="47237" level="5" min_level="77" cost="7200000"/><!--Dwarven Recovery Mastery-->
+		<skill id="47237" level="6" min_level="82" cost="170000000"/><!--Dwarven Recovery Mastery-->
+		<skill id="47237" level="7" min_level="84" cost="240000000"/><!--Dwarven Recovery Mastery-->
+		<skill id="47237" level="8" min_level="86" cost="840000000"/><!--Dwarven Recovery Mastery-->
+		<skill id="47237" level="9" min_level="88" cost="840000000"/><!--Dwarven Recovery Mastery-->
+		<skill id="47237" level="10" min_level="90" cost="840000000"/><!--Dwarven Recovery Mastery-->
+		<skill id="54231" level="1" min_level="82"><!--Dragon Slayer Appearance-->
+			<required_items>
+				<item id="96300;96780" count="1"/><!--Spellbook: Dragon Slayer-->
+			</required_items>
+		</skill>
+		<skill id="430" level="3" min_level="88" cost="840000000"><!--Master of Combat-->
+			<required_items>
+				<item id="97104;97112" count="1"/><!--Spellbook: Master of Combat Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="3" min_level="88" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="30000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45269" level="1" min_level="76"><!--Expanded Potential of Dyes-->
+			<required_items>
+				<item id="96613;96614" count="1"/><!--Spellbook: Expanded Potential of Dyes-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="1" min_level="76"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="2" min_level="80"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="40000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="3" min_level="85"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="100000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="4" min_level="90"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="200000000"/><!--Adena-->
+			</required_items>
+		</skill>
+	</normal_skill_tree>
+</list>

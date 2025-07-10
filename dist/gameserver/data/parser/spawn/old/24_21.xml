@@ -1,0 +1,2524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="136982" y="114263" z="-3720" h="46353" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="135453" y="114475" z="-3720" h="37702" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="135540" y="113870" z="-3720" h="29304" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="135444" y="114032" z="-3720" h="5976" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="136433" y="113976" z="-3720" h="53436" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="135279" y="114714" z="-3720" h="44719" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="137129" y="114193" z="-3720" h="53139" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="135402" y="113943" z="-3720" h="34152" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="137031" y="114604" z="-3712" h="3046" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="136512" y="114750" z="-3720" h="6074" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="136417" y="114148" z="-3720" h="45418" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="136933" y="114053" z="-3720" h="4223" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="135625" y="114892" z="-3720" h="52199" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140950" y="112722" z="-3720" h="5492" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140819" y="114183" z="-3704" h="4463" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140774" y="113041" z="-3720" h="23052" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140601" y="114801" z="-3720" h="32834" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140881" y="113916" z="-3712" h="49674" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140826" y="112772" z="-3720" h="2108" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140363" y="113859" z="-3720" h="28352" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140946" y="114705" z="-3720" h="16173" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="139879" y="114691" z="-3720" h="13489" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="139575" y="114118" z="-3720" h="51314" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140839" y="115132" z="-3720" h="19065" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140280" y="114784" z="-3720" h="18891" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140659" y="115036" z="-3720" h="9698" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140572" y="115061" z="-3720" h="27423" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141054" y="113182" z="-3720" h="25638" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140863" y="110860" z="-3944" h="17147" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141676" y="112702" z="-3720" h="23988" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141441" y="112751" z="-3720" h="60814" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141709" y="112648" z="-3720" h="20099" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142748" y="113768" z="-3720" h="24353" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142563" y="113564" z="-3720" h="28659" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142956" y="113805" z="-3720" h="25220" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142741" y="113919" z="-3720" h="27130" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142672" y="113676" z="-3720" h="3799" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142400" y="113504" z="-3704" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142629" y="113736" z="-3720" h="42787" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141161" y="112926" z="-3720" h="43277" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143003" y="116079" z="-3904" h="4162" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142848" y="116238" z="-3912" h="37047" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142635" y="115974" z="-3912" h="13576" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142900" y="116802" z="-3912" h="3137" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142183" y="116416" z="-3912" h="56226" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142380" y="116782" z="-3912" h="2482" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143600" y="116428" z="-3912" h="1110" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143409" y="116445" z="-3912" h="63720" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143103" y="116527" z="-3896" h="22677" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140109" y="117499" z="-3912" h="30078" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141213" y="117562" z="-3896" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140385" y="118541" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140492" y="118183" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="139851" y="118150" z="-3912" h="0" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140863" y="117870" z="-3912" h="0" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141102" y="118186" z="-3912" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140834" y="118473" z="-3912" h="0" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="139863" y="118599" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140589" y="117547" z="-3912" h="14878" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140235" y="117850" z="-3912" h="0" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140107" y="117502" z="-3912" h="0" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143004" y="117588" z="-3912" h="38974" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142516" y="117160" z="-3912" h="26110" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142649" y="117620" z="-3912" h="43835" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142765" y="117143" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142321" y="118635" z="-3896" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142716" y="118602" z="-3912" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143076" y="117520" z="-3912" h="0" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142896" y="117965" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142273" y="117013" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142160" y="117392" z="-3912" h="0" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141872" y="117056" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="139959" y="118863" z="-3912" h="53204" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140960" y="120656" z="-3912" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140688" y="120512" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140380" y="120656" z="-3912" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140240" y="119196" z="-3904" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="139965" y="118947" z="-3912" h="0" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140478" y="119511" z="-3912" h="0" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140759" y="119224" z="-3912" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140608" y="118880" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140055" y="119437" z="-3896" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140992" y="118877" z="-3912" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143160" y="120051" z="-3912" h="40" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143324" y="120312" z="-3912" h="40" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142781" y="120314" z="-3912" h="40" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142635" y="119327" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142191" y="119114" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142290" y="119542" z="-3912" h="0" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142618" y="118915" z="-3912" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141879" y="119361" z="-3912" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141912" y="118818" z="-3888" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141584" y="119132" z="-3912" h="0" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145390" y="115865" z="-3720" h="29861" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145299" y="115732" z="-3720" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145232" y="115376" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144912" y="114659" z="-3720" h="59255" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145234" y="114931" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144775" y="115267" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144519" y="114888" z="-3720" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144187" y="115052" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144074" y="114796" z="-3720" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143637" y="114675" z="-3720" h="2349" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143424" y="114711" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144684" y="118329" z="-3912" h="897" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145189" y="117812" z="-3912" h="20130" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145016" y="117433" z="-3904" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145041" y="117685" z="-3912" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144679" y="117701" z="-3912" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145384" y="118357" z="-3912" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145115" y="118119" z="-3912" h="62392" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144592" y="118640" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143673" y="120455" z="-3912" h="43948" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143497" y="120262" z="-3912" h="17680" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144219" y="120397" z="-3912" h="40" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143951" y="114976" z="-3720" h="21355" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143844" y="114964" z="-3720" h="23329" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144691" y="114952" z="-3720" h="7405" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144984" y="114947" z="-3720" h="23836" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145107" y="117883" z="-3912" h="34732" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140224" y="121546" z="-3896" h="23381" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140368" y="121552" z="-3896" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140624" y="121600" z="-3912" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141248" y="120896" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141264" y="121752" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140240" y="121296" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141140" y="121220" z="-3912" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141264" y="121428" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140936" y="120904" z="-3912" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140512" y="121076" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141572" y="121360" z="-3912" h="63389" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141716" y="121852" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143246" y="121502" z="-3912" h="40" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142966" y="121206" z="-3912" h="40" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142572" y="121125" z="-3896" h="40" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142770" y="121536" z="-3912" h="40" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141880" y="121448" z="-3912" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141524" y="121096" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143763" y="121389" z="-3912" h="1375" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144083" y="121221" z="-3912" h="29866" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144025" y="121637" z="-3912" h="5187" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143549" y="121437" z="-3912" h="52490" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144010" y="120771" z="-3912" h="11099" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145780" y="120093" z="-3912" h="36123" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145876" y="120594" z="-3912" h="17206" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146082" y="120137" z="-3912" h="41901" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147191" y="118904" z="-4168" h="1687" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146816" y="119584" z="-4328" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145968" y="119072" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146052" y="120459" z="-3912" h="31342" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145712" y="119308" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145966" y="119226" z="-3912" h="12669" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145504" y="120768" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145576" y="119920" z="-3912" h="53942" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146048" y="119776" z="-3912" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145980" y="120068" z="-3912" h="11323" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145908" y="120688" z="-3912" h="28843" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149221" y="120497" z="-4864" h="19420" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149146" y="119889" z="-4864" h="10754" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148989" y="120505" z="-4864" h="31756" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149085" y="119468" z="-4864" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149471" y="119675" z="-4864" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148842" y="119721" z="-4864" h="4635" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148508" y="119787" z="-4848" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149335" y="120758" z="-4864" h="48474" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148843" y="120856" z="-4864" h="35354" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148344" y="121295" z="-4816" h="55610" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148586" y="121787" z="-4864" h="11703" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149023" y="121234" z="-4864" h="32152" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149234" y="121262" z="-4864" h="31459" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149745" y="121520" z="-4864" h="62579" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148675" y="121648" z="-4864" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148247" y="121020" z="-4800" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148144" y="121552" z="-4824" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145798" y="117546" z="-3912" h="38597" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146688" y="118064" z="-3928" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146976" y="118432" z="-4024" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146768" y="118544" z="-4032" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145865" y="117903" z="-3872" h="0" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145642" y="117082" z="-3912" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145796" y="117301" z="-3912" h="14373" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145480" y="117923" z="-3912" h="61912" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145770" y="117260" z="-3912" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147155" y="116838" z="-3696" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146986" y="116418" z="-3704" h="32853" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146163" y="115853" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146003" y="116170" z="-3720" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146484" y="116236" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145744" y="115888" z="-3704" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145697" y="115542" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146948" y="116696" z="-3696" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147180" y="116474" z="-3704" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146857" y="116208" z="-3720" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146784" y="116512" z="-3712" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147193" y="116220" z="-3712" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147405" y="116705" z="-3696" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149238" y="115790" z="-3696" h="37495" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149386" y="114810" z="-3720" h="34479" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148918" y="115402" z="-3720" h="45568" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149488" y="116176" z="-3704" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149184" y="114720" z="-3720" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149200" y="116160" z="-3704" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149216" y="115680" z="-3704" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149262" y="115926" z="-3696" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149456" y="115728" z="-3696" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149296" y="115200" z="-3720" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148688" y="115456" z="-3720" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149024" y="115984" z="-3696" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148432" y="115632" z="-3720" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148640" y="114816" z="-5472" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148944" y="115264" z="-5472" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149216" y="115088" z="-5472" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148480" y="114960" z="-5472" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148896" y="114992" z="-5472" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148656" y="115152" z="-5472" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149168" y="114816" z="-5472" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149264" y="115360" z="-5472" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147556" y="116433" z="-3696" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147492" y="116154" z="-3720" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147874" y="117253" z="-3712" h="60482" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148884" y="117008" z="-3712" h="47299" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148232" y="118251" z="-3712" h="19443" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148470" y="118034" z="-3712" h="31716" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148544" y="118160" z="-3712" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148943" y="117501" z="-3712" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148896" y="117936" z="-3696" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148880" y="118448" z="-3712" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149136" y="118208" z="-3712" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149190" y="117814" z="-3712" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148880" y="117088" z="-3712" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147853" y="118301" z="-3712" h="0" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148246" y="117433" z="-3712" h="13851" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148340" y="117038" z="-3712" h="24713" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147884" y="117449" z="-3704" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147583" y="117750" z="-3712" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148889" y="117940" z="-3696" h="1548" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147981" y="118154" z="-3712" h="45538" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149639" y="120814" z="-4864" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150080" y="118912" z="-4848" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150400" y="118864" z="-4840" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149528" y="121280" z="-4864" h="18560" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149760" y="121644" z="-4864" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150074" y="120964" z="-4864" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150152" y="121325" z="-4864" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150976" y="118128" z="-3720" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151152" y="118176" z="-3776" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150880" y="117968" z="-3680" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150736" y="117840" z="-3688" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150656" y="117696" z="-3704" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150192" y="117392" z="-3704" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150544" y="117040" z="-3712" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150368" y="117424" z="-3696" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150352" y="117216" z="-3696" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150336" y="117008" z="-3696" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150176" y="117168" z="-3696" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150192" y="116800" z="-3704" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149952" y="116976" z="-3704" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149936" y="116768" z="-3704" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151536" y="117584" z="-5208" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151296" y="117760" z="-5168" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151088" y="117920" z="-5112" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150840" y="118124" z="-5024" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150168" y="118572" z="-4840" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150476" y="118348" z="-4896" h="30473" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153292" y="117076" z="-5256" h="13401" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151830" y="118708" z="-3880" h="43244" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153427" y="116887" z="-5256" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153513" y="117163" z="-5256" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153095" y="116928" z="-5256" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152240" y="116992" z="-5256" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152192" y="117328" z="-5240" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151888" y="117104" z="-5240" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151872" y="117424" z="-5240" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151839" y="119594" z="-3808" h="5886" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152009" y="119840" z="-3792" h="52188" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153568" y="119152" z="-3808" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152816" y="119104" z="-3792" h="12299" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152720" y="120176" z="-3808" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153440" y="119440" z="-3808" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153344" y="119088" z="-3784" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151904" y="119872" z="-3800" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152480" y="120016" z="-3808" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152256" y="119552" z="-3784" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152768" y="119696" z="-3808" h="7469" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152432" y="120288" z="-3808" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153168" y="119792" z="-3808" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152144" y="119808" z="-3784" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152752" y="119904" z="-3808" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152192" y="120144" z="-3808" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153056" y="119216" z="-3792" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152992" y="120032" z="-3808" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152800" y="119456" z="-3808" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152592" y="119120" z="-3792" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152352" y="119296" z="-3792" h="35281" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152032" y="119616" z="-3792" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152245" y="119254" z="-3800" h="62418" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151986" y="121776" z="-3808" h="19620" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153566" y="121595" z="-3808" h="28992" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152000" y="121648" z="-3808" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152293" y="121472" z="-3800" h="7951" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151728" y="121344" z="-3808" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152032" y="121168" z="-3808" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152240" y="121664" z="-3808" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151760" y="121616" z="-3808" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151968" y="121408" z="-3800" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151632" y="121152" z="-3808" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151840" y="121152" z="-3808" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149869" y="114942" z="-5472" h="43546" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150434" y="114923" z="-5464" h="20071" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151269" y="115007" z="-5472" h="12231" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151323" y="114728" z="-5472" h="45920" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150754" y="115695" z="-5472" h="63661" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150969" y="115113" z="-5464" h="50534" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150746" y="114736" z="-5472" h="57713" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150928" y="114851" z="-5472" h="12823" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150912" y="114848" z="-5472" h="24848" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151327" y="115176" z="-5472" h="56070" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149356" y="114693" z="-5472" h="36599" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149602" y="116695" z="-3704" h="11940" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149999" y="116742" z="-3704" h="60416" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149448" y="116238" z="-3704" h="36819" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150132" y="115361" z="-5472" h="31233" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153442" y="115661" z="-5256" h="6573" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153267" y="116204" z="-5256" h="6716" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153430" y="115356" z="-5256" h="57979" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153431" y="115661" z="-5256" h="3190" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153137" y="114995" z="-5256" h="61519" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153174" y="114985" z="-5256" h="2555" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153554" y="114905" z="-5256" h="62125" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153968" y="114860" z="-5240" h="26637" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153531" y="114770" z="-5256" h="54965" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154440" y="116880" z="-5240" h="18417" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154307" y="116785" z="-5240" h="12986" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154392" y="116020" z="-5224" h="40257" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154831" y="116055" z="-5256" h="34152" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154142" y="116782" z="-5256" h="18907" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154469" y="116745" z="-5256" h="15508" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154608" y="116751" z="-5256" h="15663" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154075" y="116757" z="-5256" h="20785" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154320" y="118368" z="-3808" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154096" y="118544" z="-3808" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153904" y="118352" z="-3808" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153792" y="118560" z="-3808" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154656" y="118656" z="-3808" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154384" y="118640" z="-3808" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153836" y="117151" z="-5256" h="40" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154018" y="119031" z="-3808" h="33620" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154240" y="119184" z="-3808" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154080" y="118976" z="-3808" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154304" y="118896" z="-3808" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153984" y="119280" z="-3808" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150838" y="114514" z="-5464" h="9020" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150294" y="114709" z="-5472" h="30401" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153301" y="113018" z="-5520" h="18122" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153373" y="112821" z="-5520" h="40961" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153082" y="112823" z="-5504" h="33284" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154320" y="112813" z="-5520" h="45795" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154071" y="112972" z="-5520" h="14531" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154169" y="114496" z="-5248" h="12341" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153481" y="114655" z="-5256" h="5001" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153676" y="114679" z="-5248" h="11861" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154685" y="114645" z="-5256" h="26634" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153908" y="114881" z="-5240" h="55104" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154057" y="112904" z="-5520" h="20481" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149360" y="114528" z="-3720" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149008" y="114192" z="-3720" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149108" y="113559" z="-3720" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148852" y="113614" z="-3720" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149136" y="113952" z="-3720" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149348" y="113486" z="-3720" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149056" y="114512" z="-3720" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148960" y="113810" z="-3720" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149228" y="113056" z="-3720" h="0" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149149" y="113286" z="-3720" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148976" y="113088" z="-3720" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148906" y="113376" z="-3720" h="0" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148752" y="113152" z="-3720" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148832" y="112912" z="-3720" h="51603" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148640" y="112688" z="-3720" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149136" y="112784" z="-3720" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147632" y="112656" z="-3720" h="37404" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148864" y="114672" z="-5472" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149136" y="114512" z="-5472" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146802" y="113051" z="-3720" h="22645" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146196" y="112868" z="-3720" h="24496" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146832" y="112912" z="-3720" h="0" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147943" y="112594" z="-3720" h="10110" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148321" y="111991" z="-3720" h="53176" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148112" y="112192" z="-3720" h="0" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148614" y="112247" z="-3720" h="2777" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148470" y="112066" z="-3720" h="15260" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148888" y="112291" z="-3720" h="63978" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148428" y="112527" z="-3704" h="33923" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148379" y="111852" z="-3720" h="37039" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148995" y="112336" z="-3720" h="50307" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147423" y="112264" z="-3720" h="20522" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147689" y="110689" z="-3944" h="28798" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148181" y="110674" z="-3944" h="54278" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150815" y="111391" z="-5520" h="49845" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151160" y="111213" z="-5520" h="719" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150029" y="111091" z="-5496" h="9391" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150126" y="111878" z="-5520" h="31854" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150311" y="112560" z="-5504" h="6681" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150803" y="112477" z="-5520" h="52731" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151217" y="111089" z="-5504" h="10627" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150087" y="111245" z="-5520" h="11936" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150809" y="112293" z="-5520" h="22522" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150692" y="111283" z="-5520" h="42832" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150300" y="112062" z="-5520" h="55286" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150612" y="112530" z="-5520" h="26397" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150431" y="111574" z="-5504" h="45827" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150638" y="110910" z="-5520" h="56720" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150817" y="110760" z="-5520" h="47526" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149829" y="111981" z="-5520" h="19342" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150600" y="112000" z="-5520" h="55856" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150414" y="112077" z="-5520" h="65146" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150165" y="110952" z="-5512" h="40412" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151082" y="111216" z="-5520" h="17946" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150322" y="110999" z="-5520" h="50869" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153228" y="111219" z="-5520" h="5414" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153217" y="112430" z="-5520" h="9757" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153636" y="111319" z="-5520" h="13616" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151940" y="110550" z="-5520" h="40412" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153331" y="111488" z="-5520" h="60122" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153729" y="111514" z="-5512" h="29625" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153924" y="111855" z="-5520" h="65242" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154345" y="112619" z="-5520" h="11495" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154382" y="112173" z="-5520" h="41414" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153720" y="110920" z="-5520" h="19922" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153873" y="112638" z="-5520" h="41574" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154354" y="111781" z="-5520" h="23993" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154268" y="112060" z="-5520" h="61794" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154002" y="112149" z="-5512" h="17542" />
+		<npc id="20624" /><!--Cave Howler-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151033" y="109249" z="-5136" h="43450" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151351" y="109089" z="-5144" h="43589" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150820" y="109128" z="-5152" h="54384" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151086" y="109496" z="-5144" h="4319" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150993" y="109081" z="-5152" h="57934" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151185" y="109291" z="-5136" h="10763" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151682" y="109015" z="-5152" h="9776" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149993" y="109763" z="-5192" h="3151" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149474" y="109331" z="-5208" h="19476" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150045" y="109803" z="-5192" h="38008" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149643" y="110035" z="-5256" h="62222" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149771" y="110121" z="-5280" h="22812" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151950" y="110219" z="-5520" h="30840" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153166" y="108942" z="-5152" h="42672" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153674" y="108505" z="-5152" h="55286" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153089" y="108367" z="-5152" h="49934" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153458" y="109544" z="-5152" h="51098" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153310" y="109203" z="-5144" h="54620" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153235" y="109400" z="-5152" h="20855" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151416" y="109124" z="-5144" h="5753" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="151374" y="109520" z="-5152" h="17423" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152441" y="110283" z="-5520" h="1168" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152338" y="110347" z="-5520" h="43116" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153635" y="109087" z="-5152" h="45055" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154784" y="108776" z="-5152" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154532" y="108748" z="-5152" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154686" y="108386" z="-5152" h="57050" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153411" y="108437" z="-5152" h="46345" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153470" y="108851" z="-5152" h="50278" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153606" y="108936" z="-5152" h="6423" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147838" y="110037" z="-3944" h="2301" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149562" y="109877" z="-5232" h="15930" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147558" y="109156" z="-3944" h="32873" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149321" y="109805" z="-5240" h="43704" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148023" y="110566" z="-3944" h="62263" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149440" y="109248" z="-5192" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149245" y="109701" z="-5224" h="13632" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149329" y="110024" z="-5264" h="19398" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149392" y="110512" z="-5400" h="0" />
+		<npc id="20625" /><!--Maluk Knight-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148426" y="109566" z="-3944" h="26503" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148221" y="110188" z="-3944" h="47707" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148079" y="109802" z="-3928" h="20745" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147865" y="110077" z="-3944" h="19855" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148040" y="109788" z="-3928" h="46755" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147772" y="109868" z="-3944" h="49303" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148224" y="107136" z="-4144" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148128" y="107504" z="-4120" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="148416" y="107552" z="-4192" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="149824" y="108192" z="-4560" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150112" y="108256" z="-4632" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150000" y="107964" z="-4600" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150352" y="107920" z="-4696" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150144" y="107648" z="-4640" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="150528" y="107456" z="-4736" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153236" y="107331" z="-5136" h="35501" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153389" y="108275" z="-5152" h="35970" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153568" y="107248" z="-5152" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152802" y="107712" z="-5144" h="5103" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152928" y="107968" z="-5152" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152784" y="107424" z="-5136" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="152809" y="107948" z="-5144" h="19723" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153408" y="107440" z="-5152" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153232" y="107168" z="-5152" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153584" y="107632" z="-5152" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153094" y="107692" z="-5152" h="7574" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153132" y="108212" z="-5152" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153572" y="108136" z="-5152" h="0" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153914" y="108240" z="-5136" h="50338" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154551" y="108268" z="-5152" h="36305" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154692" y="108532" z="-5152" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153549" y="107103" z="-5152" h="45435" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153827" y="107493" z="-5152" h="50201" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145671" y="108169" z="-3944" h="34349" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145910" y="108144" z="-3944" h="14983" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145554" y="108259" z="-3944" h="51876" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145755" y="108446" z="-3944" h="28893" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145682" y="108201" z="-3944" h="65340" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146202" y="108251" z="-3616" h="49701" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146304" y="108352" z="-3632" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146420" y="108484" z="-3608" h="36822" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146860" y="108190" z="-3752" h="64444" />
+		<npc id="20626" /><!--Maluk Berserker-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146848" y="108272" z="-3720" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147216" y="107328" z="-3968" h="0" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147392" y="107536" z="-4000" h="0" />
+		<npc id="20627" /><!--Maluk Lord-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145622" y="110016" z="-3928" h="18020" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145520" y="109895" z="-3928" h="12415" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146814" y="109924" z="-3944" h="22109" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145976" y="109643" z="-3944" h="54806" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145624" y="109048" z="-3944" h="3035" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147506" y="110013" z="-3944" h="9724" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146876" y="110349" z="-3944" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146933" y="110281" z="-3944" h="47452" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147324" y="109762" z="-3944" h="28873" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145456" y="109158" z="-3944" h="61087" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145715" y="110443" z="-3944" h="52439" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145940" y="110126" z="-3944" h="54611" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145956" y="109438" z="-3944" h="48593" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146074" y="108659" z="-3944" h="0" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145511" y="108196" z="-3944" h="64227" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144989" y="108260" z="-3928" h="26498" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145572" y="108588" z="-3944" h="56321" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145296" y="108622" z="-3944" h="21175" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145482" y="108411" z="-3944" h="8423" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144245" y="107928" z="-3944" h="13973" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144910" y="108185" z="-3928" h="10377" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145381" y="107919" z="-3944" h="14139" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143623" y="109947" z="-3944" h="30745" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143988" y="110279" z="-3920" h="15378" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144880" y="108777" z="-3944" h="18497" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144974" y="108656" z="-3944" h="45079" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143761" y="110339" z="-3944" h="849" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143874" y="110332" z="-3928" h="47056" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145358" y="108921" z="-3944" h="41099" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145642" y="109745" z="-3936" h="29335" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145474" y="110341" z="-3936" h="2456" />
+		<npc id="20623" /><!--Plando-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143925" y="112687" z="-3944" h="24609" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144153" y="112788" z="-3944" h="19429" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143970" y="112824" z="-3944" h="3415" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144474" y="112724" z="-3944" h="15532" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143816" y="112794" z="-3944" h="42485" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144348" y="112654" z="-3944" h="1572" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143470" y="112640" z="-3944" h="21798" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144324" y="112705" z="-3944" h="35291" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146557" y="112569" z="-3720" h="41292" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146599" y="112469" z="-3720" h="28213" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147243" y="112219" z="-3720" h="33855" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146138" y="111361" z="-3568" h="53088" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146098" y="111423" z="-3568" h="57639" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146565" y="110839" z="-3544" h="56026" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="147302" y="112501" z="-3720" h="3285" />
+		<npc id="20629" /><!--Karik-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146633" y="112140" z="-3632" h="59581" />
+		<npc id="20628" /><!--Limal Karinness-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146080" y="112512" z="-3720" h="0" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146408" y="111546" z="-3568" h="27182" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146238" y="110953" z="-3552" h="56871" />
+		<npc id="21088" /><!--Drake Chief-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146630" y="111424" z="-3536" h="6006" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="146258" y="111436" z="-3568" h="26536" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145665" y="110765" z="-3944" h="4992" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144421" y="112701" z="-3944" h="25066" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144018" y="112903" z="-3944" h="28806" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144020" y="114531" z="-3720" h="54265" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144128" y="112647" z="-3944" h="20966" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143614" y="112735" z="-3944" h="45491" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144741" y="114632" z="-3712" h="38324" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144874" y="114448" z="-3720" h="63437" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="145138" y="113956" z="-3720" h="62446" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144847" y="114385" z="-3720" h="49798" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144454" y="114101" z="-3720" h="54076" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143413" y="114658" z="-3720" h="42828" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144003" y="114513" z="-3720" h="31800" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143863" y="114935" z="-3720" h="30810" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143837" y="112847" z="-3944" h="58532" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154196" y="121595" z="-3792" h="22580" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153746" y="121647" z="-3808" h="9680" />
+		<npc id="21089" /><!--Drake Mage-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153746" y="121595" z="-3808" h="31787" />
+		<npc id="21086" /><!--Drake Scout-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154106" y="121855" z="-3808" h="11022" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="153656" y="121907" z="-3808" h="64089" />
+		<npc id="21087" /><!--Drake Commander-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140687" y="108769" z="-3944" h="61555" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140915" y="108839" z="-3936" h="34828" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141155" y="108675" z="-3928" h="37317" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140053" y="110366" z="-3944" h="5753" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141033" y="108498" z="-3944" h="55024" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140630" y="110477" z="-3944" h="25821" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140369" y="110426" z="-3944" h="34097" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140655" y="109272" z="-3944" h="46063" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141124" y="109717" z="-3944" h="31575" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141464" y="109577" z="-3944" h="2404" />
+		<npc id="20761" /><!--Pytan-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140741" y="110393" z="-3944" h="325" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140406" y="108697" z="-3944" h="9083" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140737" y="109692" z="-3944" h="15333" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140626" y="109076" z="-3944" h="58798" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143076" y="110254" z="-3944" h="55865" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143219" y="110001" z="-3944" h="39908" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143342" y="108702" z="-3944" h="49576" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143313" y="108568" z="-3944" h="53230" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143181" y="108531" z="-3944" h="8685" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143319" y="108969" z="-3944" h="13955" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143344" y="108548" z="-3944" h="47009" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142977" y="108345" z="-3944" h="45338" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140680" y="107998" z="-3944" h="1276" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="140424" y="107951" z="-3944" h="41362" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142848" y="108463" z="-3944" h="35466" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143200" y="108493" z="-3944" h="8688" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142111" y="107538" z="-3944" h="50126" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142149" y="107489" z="-3944" h="53896" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143086" y="107320" z="-3944" h="0" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142099" y="107301" z="-3944" h="8935" />
+		<npc id="20621" /><!--Death Wave-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="141930" y="107173" z="-3928" h="32899" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="143197" y="107118" z="-3944" h="32010" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142244" y="106973" z="-3944" h="54979" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142571" y="107590" z="-3944" h="32051" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142479" y="107624" z="-3944" h="29494" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142293" y="107320" z="-3944" h="63" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142924" y="107486" z="-3928" h="22612" />
+		<npc id="21084" /><!--Bloody Lady-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142849" y="107408" z="-3928" h="15408" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="142593" y="107213" z="-3944" h="63304" />
+		<npc id="20620" /><!--Cave Beast-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="144271" y="107718" z="-3944" h="45724" />
+		<npc id="20622" /><!--Maluk Soldier-->
+	</spawn>
+	<spawn count="1" respawn="300" respawn_random="200" period_of_day="none">
+		<point x="154695" y="121097" z="-3744" h="0" />
+		<npc id="13001" /><!--Heart of Warding-->
+	</spawn>
+</list>

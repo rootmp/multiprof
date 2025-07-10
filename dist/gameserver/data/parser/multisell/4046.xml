@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: SanyaDC-->
+<list>
+	<item>
+		<production id="70587" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70588" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70589" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70590" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70591" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70592" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70593" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70594" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70595" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="70596" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="71842" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+	<item>
+		<production id="71843" count="1"/>
+		<ingredient id="71267" count="1"/>
+	</item>
+</list>

@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="49500" name="Blessed Scroll of Escape">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i01"/>
+		<set name="weight" value="120"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="grind_commission" value="1500"/>
+		<set name="grind_point" value="75000"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="price" value="150000"/>
+		<skills>
+			<skill id="2036" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49501" name="Fish Stew - Guild's Gratitude Lv. 1">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ev_invasion_buff_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39076" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49502" name="Scroll of Escape: Giran Harbor">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i05"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="39077" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49503" name="Scroll of Escape: Gludin Harbor">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i05"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="39078" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49504" name="Report about Fish">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="type" value="QUEST"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.mercenary_certification_i00"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49505" name="Sealed Bottle">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="type" value="QUEST"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_hot_spring_glass_bottle_i00"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<weapon id="49506" name="Fishing Rod" add_name="10-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="1"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_fishing_rod_i03"/>
+		<set name="type" value="ROD"/>
+		<set name="weight" value="1000"/>
+		<set name="rnd_dam" value="1"/>
+		<set name="durability" value="14400"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="1"/>
+			<add stat="mAtk" order="0x10" value="1"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<etcitem id="49507" name="Fishing Rod Pack" add_name="10-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_box_of_adventure_1_i00"/>
+		<set name="weight" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>			
+			<capsuled_item id="49506" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="49508" name="Normal Bait" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_huge_lure"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="LURE"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+	</etcitem>
+	<armor id="49509" name="Ring of Core Lv. 1" add_name="15-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_core_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="durability" value="21600"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="3563" level="1"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="47"/>
+			<add stat="maxMp" order="0x60" value="9"/>
+		</for>
+	</armor>
+	<etcitem id="49510" name="Pierre's Letter">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="type" value="QUEST"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_letter_envelope_i00"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49511" name="Sheep Gift" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49512" name="Friend-or-Foe Warrior's Amulet" add_name="14-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="BranchSys3.lcon.g_rune_itemdrop_up"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49513" name="Shining Pendant Polish box">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49470" min_count="1" max_count="1" chance="100"/><!--Shining Pendant Polish-->
+		</capsuled_items>
+	</etcitem>
+	<armor id="49514" name="Agathion Aries - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="0"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="86400"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="17613" level="1"/>
+			<skill id="3267" level="1"/>
+			<skill id="17625" level="1"/>
+			<skill id="39053" level="1"/>
+			<skill id="39054" level="1"/>
+			<skill id="39055" level="1"/>
+			<skill id="39056" level="1"/>
+			<skill id="39094" level="1"/>
+		</skills>
+	</armor>
+	<armor id="49515" name="Agathion Aries - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="0"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="17613" level="1"/>
+			<skill id="3267" level="1"/>
+			<skill id="17625" level="1"/>
+			<skill id="39053" level="1"/>
+			<skill id="39054" level="1"/>
+			<skill id="39055" level="1"/>
+			<skill id="39056" level="1"/>
+			<skill id="39094" level="1"/>
+		</skills>
+	</armor>
+	<armor id="49516" name="Blessed Agathion Aries - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="0"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="17613" level="1"/>
+			<skill id="3267" level="1"/>
+			<skill id="17625" level="1"/>
+			<skill id="39053" level="1"/>
+			<skill id="39054" level="1"/>
+			<skill id="39055" level="1"/>
+			<skill id="39056" level="1"/>
+			<skill id="39094" level="1"/>
+			<skill id="39095" level="1"/>
+		</skills>
+	</armor>
+	<etcitem id="49517" name="Pirate Trophy Chest">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_battle_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49518" min_count="2" max_count="2" chance="100"/><!--Special Pirate Fruit-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="49519" count="1" chance="0.01"/><!--King Pirate's Treasure Chest--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49518" name="Special Pirate Fruit">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_codran_i09"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+        <skills>
+            <skill id="39085" level="1"/>
+        </skills>
+	</etcitem>
+	<etcitem id="49519" name="King Pirate's Treasure Chest">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="49528" count="1" chance="0.01"/><!--Pirate's HP Recovery Potion--><!--TODO: Check chance-->
+			<create_item id="13016" count="1" chance="0.01"/><!--My Teleport Scroll--><!--TODO: Check chance-->
+			<create_item id="49081" count="1" chance="0.01"/><!--XP Growth Scroll--><!--TODO: Check chance-->
+			<create_item id="49526" count="1" chance="0.01"/><!--Improved Scroll of Resurrection--><!--TODO: Check chance-->
+			<create_item id="10649" count="1" chance="0.01"/><!--Feather of Blessing--><!--TODO: Check chance-->
+			<create_item id="49472" count="1" chance="0.01"/><!--Earth Dragon Pendant Pack--><!--TODO: Check chance-->
+			<create_item id="49471" count="1" chance="0.01"/><!--Fire Dragon Pendant Pack--><!--TODO: Check chance-->
+			<create_item id="13015" count="1" chance="0.01"/><!--My Teleport Book--><!--TODO: Check chance-->
+			<create_item id="33806" count="1" chance="0.01"/><!--Improved Scroll: Enchant D-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49481" count="1" chance="0.01"/><!--Stable Scroll: Enchant D-grade Armor--><!--TODO: Check chance-->
+			<create_item id="33812" count="1" chance="0.01"/><!--Improved Scroll: Enchant D-grade Armor--><!--TODO: Check chance-->
+			<create_item id="49482" count="1" chance="0.01"/><!--Stable Scroll: Enchant D-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="33813" count="1" chance="0.01"/><!--Improved Scroll: Enchant C-grade Armor--><!--TODO: Check chance-->
+			<create_item id="49483" count="1" chance="0.01"/><!--Stable Scroll: Enchant C-grade Armor--><!--TODO: Check chance-->
+			<create_item id="33814" count="1" chance="0.01"/><!--Improved Scroll: Enchant B-grade Armor--><!--TODO: Check chance-->
+			<create_item id="33807" count="1" chance="0.01"/><!--Improved Scroll: Enchant C-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49484" count="1" chance="0.01"/><!--Stable Scroll: Enchant C-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49485" count="1" chance="0.01"/><!--Stable Scroll: Enchant B-grade Armor--><!--TODO: Check chance-->
+			<create_item id="33808" count="1" chance="0.01"/><!--Improved Scroll: Enchant B-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49486" count="1" chance="0.01"/><!--Stable Scroll: Enchant B-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49523" count="1" chance="0.01"/><!--Demon's Circlet <STR +1, INT +1>--><!--TODO: Check chance-->
+			<create_item id="49522" count="1" chance="0.01"/><!--Pirate King Hat <STR+1 INT+1>--><!--TODO: Check chance-->
+			<create_item id="49521" count="1" chance="0.01"/><!--Refined Romantic Chapeau <STR+1 INT+1>--><!--TODO: Check chance-->
+			<create_item id="49513" count="1" chance="0.01"/><!--Shining Pendant Polish box--><!--TODO: Check chance-->
+			<create_item id="49515" count="1" chance="0.01"/><!--Agathion Aries - Not Available--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="49516" count="1" chance="0.01"/><!--Blessed Agathion Aries - Not Available--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49520" name="Agation box: Aries" add_name="60 days">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49521" name="Refined Romantic Chapeau &lt;STR+1 INT+1&gt;">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_archer_hat2_i00"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="49522" name="Pirate King Hat &lt;STR+1 INT+1&gt;">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.zaken_hair_accessary"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="49523" name="Demon's Circlet &lt;STR +1, INT +1&gt;">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.Accessary_demon_circlet_i00"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<etcitem id="49524" name="Captain Pirate Hat Box">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49525" name="Rare Accessory Pack Lv. 1" add_name="15-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.ev_10th_present2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		 <set name="handler" value="SkillsReduce"/>        
+        <skills>
+            <skill id="39058" level="1"/>
+        </skills>
+	</etcitem>
+	<etcitem id="49526" name="Improved Scroll of Resurrection">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_resurrection_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49527" name="My Teleport Pack">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="13015" min_count="1" max_count="1" chance="100.0"/>
+			<capsuled_item id="13016" min_count="10" max_count="10" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="49528" name="Pirate's HP Recovery Potion">
+		<set name="autouse_type" value="HEAL"/>
+		<set name="weight" value="1"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_potion_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49529" name="Blue Dynasty - Heavy Armor">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49530" name="Blue Dynasty Circlet">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.Accessary_angel_circlet_i00"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="49531" name="Red Zubei's Heavy Armor">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49532" name="White Assassin Suit" add_name="Not available">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.dark_assassin"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<etcitem id="49533" name="Hero's HP Recovery Potion" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="autouse_type" value="HEAL"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_lesser_potion_red_i00"/>
+		<set name="weight" value="1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49534" name="Hero's Cube" add_name="7-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.special_cube_i00"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49535" name="Returned Hero's Fishing Kit" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_elite_marguene_collection_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49506" min_count="1" max_count="1" chance="100"/><!--Fishing Rod-->
+			<capsuled_item id="49508" min_count="2160" max_count="2160" chance="100"/><!--Normal Bait-->
+			<capsuled_item id="49487" min_count="3" max_count="3" chance="100"/><!--Soulshot Ticket (Tradable within account)-->
+			<capsuled_item id="49495" min_count="1" max_count="1" chance="100"/><!--Hero's Dual Swords-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="49536" name="Box of Scroll of Escape to Base" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49537" min_count="1" max_count="1" chance="100"/><!--Scroll of Escape: Dragon Valley Bridge-->
+			<capsuled_item id="49538" min_count="1" max_count="1" chance="100"/><!--Scroll of Escape: Antharas' Lair-->
+			<capsuled_item id="49539" min_count="1" max_count="1" chance="100"/><!--Scroll of Escape: Entrance to Cruma Tower-->
+			<capsuled_item id="49540" min_count="1" max_count="1" chance="100"/><!--Scroll of Escape: Entrance to Orc Barracks-->
+			<capsuled_item id="49550" min_count="1" max_count="1" chance="100"/><!--Teleport Device - Entrance to Enchanted Valley-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="49537" name="Scroll of Escape: Dragon Valley Bridge">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i05"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49538" name="Scroll of Escape: Antharas' Lair">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i05"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49539" name="Scroll of Escape: Entrance to Cruma Tower">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i05"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49540" name="Scroll of Escape: Entrance to Orc Barracks">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i05"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49541" name="Spellbook Chest - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="3047" count="1" chance="0.01"/><!--Spellbook: Iron Will - Not Available--><!--TODO: Check chance-->
+			<create_item id="3046" count="1" chance="0.01"/><!--Spellbook: Sacrifice - Not Available--><!--TODO: Check chance-->
+			<create_item id="3052" count="1" chance="0.01"/><!--Spellbook: Hamstring - Not Available--><!--TODO: Check chance-->
+			<create_item id="3044" count="1" chance="0.01"/><!--Spellbook: Horror - Not Available--><!--TODO: Check chance-->
+			<create_item id="3051" count="1" chance="0.01"/><!--Spellbook: Spirit Barrier - Not Available--><!--TODO: Check chance-->
+			<create_item id="3045" count="1" chance="0.01"/><!--Spellbook: Summon Life Cubic - Not Available--><!--TODO: Check chance-->
+			<create_item id="8890" count="1" chance="0.01"/><!--Spellbook: Summon Attractive Cubic - Not Available--><!--TODO: Check chance-->
+			<create_item id="3050" count="1" chance="0.01"/><!--Spellbook: Hex - Not Available--><!--TODO: Check chance-->
+			<create_item id="3041" count="1" chance="0.01"/><!--Spellbook: Summon Phantom Cubic - Not Available--><!--TODO: Check chance-->
+			<create_item id="3055" count="1" chance="0.01"/><!--Spellbook: Lightning Strike - Not Available--><!--TODO: Check chance-->
+			<create_item id="3940" count="1" chance="0.01"/><!--Blueprint: Summon Siege Golem - Not Available--><!--TODO: Check chance-->
+			<create_item id="4915" count="1" chance="0.01"/><!--Blueprint: Summon Wild Hog Cannon - Not Available--><!--TODO: Check chance-->
+			<create_item id="3101" count="1" chance="0.01"/><!--Spellbook: Death Whisper - Not Available--><!--TODO: Check chance-->
+			<create_item id="3072" count="1" chance="0.01"/><!--Spellbook: Purify - Not Available--><!--TODO: Check chance-->
+			<create_item id="5815" count="1" chance="0.01"/><!--Spellbook: Wild Magic - Not Available--><!--TODO: Check chance-->
+			<create_item id="6398" count="1" chance="0.01"/><!--Spellbook: Body of Avatar - Not Available--><!--TODO: Check chance-->
+			<create_item id="4912" count="1" chance="0.01"/><!--Spellbook: Benediction - Not Available--><!--TODO: Check chance-->
+			<create_item id="3942" count="1" chance="0.01"/><!--Spellbook: Party Return - Not Available--><!--TODO: Check chance-->
+			<create_item id="8397" count="1" chance="0.01"/><!--Spellbook: Clarity - Not Available--><!--TODO: Check chance-->
+			<create_item id="3099" count="1" chance="0.01"/><!--Spellbook: Haste - Not Available--><!--TODO: Check chance-->
+			<create_item id="8388" count="1" chance="0.01"/><!--Spellbook: Attack Prowess - Not Available--><!--TODO: Check chance-->
+			<create_item id="8389" count="1" chance="0.01"/><!--Spellbook: Defense Prowess - Not Available--><!--TODO: Check chance-->
+			<create_item id="3080" count="1" chance="0.01"/><!--Spellbook: Sleeping Cloud - Not Available--><!--TODO: Check chance-->
+			<create_item id="3079" count="1" chance="0.01"/><!--Spellbook: Cancel - Not Available--><!--TODO: Check chance-->
+			<create_item id="8891" count="1" chance="0.01"/><!--Spellbook: Aura Flash - Not Available--><!--TODO: Check chance-->
+			<create_item id="3063" count="1" chance="0.01"/><!--Spellbook: Anchor - Not Available--><!--TODO: Check chance-->
+			<create_item id="3064" count="1" chance="0.01"/><!--Spellbook: Silence - Not Available--><!--TODO: Check chance-->
+			<create_item id="3066" count="1" chance="0.01"/><!--Spellbook: Curse Death Link - Not Available--><!--TODO: Check chance-->
+			<create_item id="5811" count="1" chance="0.01"/><!--Spellbook: Mass Slow - Not Available--><!--TODO: Check chance-->
+			<create_item id="3089" count="1" chance="0.01"/><!--Spellbook: Tempest - Not Available--><!--TODO: Check chance-->
+			<create_item id="4205" count="1" chance="0.01"/><!--Amulet: Chant of Berserker Spirit - Not Available--><!--TODO: Check chance-->
+			<create_item id="3109" count="1" chance="0.01"/><!--Amulet: Seal of Silence - Not Available--><!--TODO: Check chance-->
+			<create_item id="3111" count="1" chance="0.01"/><!--Amulet: Seal of Suspension - Not Available--><!--TODO: Check chance-->
+			<create_item id="3118" count="1" chance="0.01"/><!--Amulet: Chant of Death Whisper - Not Available--><!--TODO: Check chance-->
+			<create_item id="6397" count="1" chance="0.01"/><!--Amulet: Chant of Vampire - Not Available--><!--TODO: Check chance-->
+			<create_item id="3116" count="1" chance="0.01"/><!--Amulet: Chant of Haste - Not Available--><!--TODO: Check chance-->
+			<create_item id="4922" count="1" chance="0.01"/><!--Spellbook: Summon Binding Cubic - Not Available--><!--TODO: Check chance-->
+			<create_item id="4923" count="1" chance="0.01"/><!--Spellbook: Summon Aqua Cubic - Not Available--><!--TODO: Check chance-->
+			<create_item id="4924" count="1" chance="0.01"/><!--Spellbook: Summon Spark Cubic - Not Available--><!--TODO: Check chance-->
+			<create_item id="49423" count="1" chance="0.01"/><!--Spellbook: Dual Weapon Defense - Not Available--><!--TODO: Check chance-->
+			<create_item id="49424" count="1" chance="0.01"/><!--Spellbook: Fell Swoop - Not Available--><!--TODO: Check chance-->
+			<create_item id="49425" count="1" chance="0.01"/><!--Spellbook: Dynamic Recovery - Not Available--><!--TODO: Check chance-->
+			<create_item id="49426" count="1" chance="0.01"/><!--Spellbook: Break Duress - Not Available--><!--TODO: Check chance-->
+			<create_item id="49427" count="1" chance="0.01"/><!--Spellbook: Shield Deflect Magic - Not Available--><!--TODO: Check chance-->
+			<create_item id="49428" count="1" chance="0.01"/><!--Spellbook: Aegis - Not Available--><!--TODO: Check chance-->
+			<create_item id="49429" count="1" chance="0.01"/><!--Spellbook: Hide - Not Available--><!--TODO: Check chance-->
+			<create_item id="49430" count="1" chance="0.01"/><!--Spellbook: Mystic Immunity - Not Available--><!--TODO: Check chance-->
+			<create_item id="49431" count="1" chance="0.01"/><!--Spellbook: Divine Power - Not Available--><!--TODO: Check chance-->
+			<create_item id="5816" count="1" chance="0.01"/><!--Spellbook: Advanced Block - Not Available--><!--TODO: Check chance-->
+			<create_item id="49432" count="1" chance="0.01"/><!--Spellbook: Stigma of Shillien - Not Available--><!--TODO: Check chance-->
+			<create_item id="6351" count="1" chance="0.01"/><!--Amulet: Ritual of Life - Not Available--><!--TODO: Check chance-->
+			<create_item id="6350" count="1" chance="0.01"/><!--Amulet: Pa'agrio's Honor - Not Available--><!--TODO: Check chance-->
+			<create_item id="49433" count="1" chance="0.01"/><!--Amulet: Chant of Battle - Not Available--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49542" name="Improved Scroll of Resurrection" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_resurrection_i01"/>
+		<set name="weight" value="120"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49543" name="Elemental Stone (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="grind_commission" value="200"/>
+		<set name="grind_point" value="10000"/>
+		<set name="price" value="20000"/>
+		<set name="icon" value="icon.etc_crystal_cave_crystal_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49544" name="Pirate - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49545" name="Dark Assassin - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49546" name="Warrior's Armor3 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="HEAVY"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49547" name="Mage's Armor1 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="MAGIC"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49548" name="Mage's Armor2 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="MAGIC"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49549" name="Mage's Armor3 - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="MAGIC"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<etcitem id="49550" name="Teleport Device - Entrance to Enchanted Valley">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i05"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49551" name="Blue Dynasty - Light Armor">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="type" value="LIGHT"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49552" name="Blue Dynasty - Robe">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="type" value="MAGIC"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49553" name="Red Zubei's Light Armor">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="type" value="LIGHT"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="49554" name="Red Zubei's Robe">
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="type" value="MAGIC"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<etcitem id="49555" name="Mold - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="49556" name="Amora's Receipt - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="49557" name="Armor Trade Contract - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="49558" name="Turek Orc Order - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="49559" name="Rolento's Bag - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="49560" name="Iron Scale Guild Certificate - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="49561" name="Turek Orc Invader Head - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="49562" name="Spellbook: Spirit Sharing - Not Available" add_name="Not Available">
+		<set name="grind_commission" value="500"/>
+		<set name="grind_point" value="25000"/>
+		<set name="sellable" value="false"/>
+		<set name="price" value="50000"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="50000"/>
+	</etcitem>
+	<etcitem id="49563" name="1,000,000,000 Adena" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fairy_adena_joke"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49564" name="10,000,000,000 Adena" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fairy_adena_joke"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49565" name="Misfety's Gift" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_pi_box_joy_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49566" name="Roa's Gift" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ev_draco_gift_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="49487" count="1" chance="0.01"/><!--Soulshot Ticket (Tradable within account)--><!--TODO: Check chance-->
+			<create_item id="49494" count="1" chance="0.01"/><!--Buff Scroll Pack--><!--TODO: Check chance-->
+			<create_item id="49536" count="1" chance="0.01"/><!--Box of Scroll of Escape to Base--><!--TODO: Check chance-->
+			<create_item id="49490" count="1" chance="0.01"/><!--Fishing Kit--><!--TODO: Check chance-->
+			<create_item id="10649" count="1" chance="0.01"/><!--Feather of Blessing--><!--TODO: Check chance-->
+			<create_item id="49541" count="1" chance="0.01"/><!--Spellbook Chest - Not Available--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49567" name="Roa's Lost Item" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.event_july_seven_park_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49568" name="Spellbook: Sonic Move">
+		<set name="grind_commission" value="1000"/>
+		<set name="grind_point" value="50000"/>
+		<set name="sellable" value="false"/>
+		<set name="price" value="100000"/>
+		<set name="icon" value="icon.etc_spell_books_blue_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="100000"/>
+	</etcitem>
+	<etcitem id="49569" name="Spellbook: Sand Bomb">
+		<set name="grind_commission" value="1000"/>
+		<set name="grind_point" value="50000"/>
+		<set name="sellable" value="false"/>
+		<set name="price" value="100000"/>
+		<set name="icon" value="icon.etc_spell_books_blue_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="100000"/>
+	</etcitem>
+	<etcitem id="49570" name="Spellbook: Mass Curse Gloom">
+		<set name="grind_commission" value="1000"/>
+		<set name="grind_point" value="50000"/>
+		<set name="sellable" value="false"/>
+		<set name="price" value="100000"/>
+		<set name="icon" value="icon.etc_spell_books_blue_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="100000"/>
+	</etcitem>
+	<etcitem id="49571" name="Spellbook: Clear Mind">
+		<set name="grind_commission" value="1000"/>
+		<set name="grind_point" value="50000"/>
+		<set name="sellable" value="false"/>
+		<set name="price" value="100000"/>
+		<set name="icon" value="icon.etc_spell_books_blue_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="100000"/>
+	</etcitem>
+	<weapon id="49573" name="Samurai Black Long Sword" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2340"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="155"/>
+			<add stat="mAtk" order="0x10" value="70"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<armor id="49574" name="Queen Ant's Ring Lv. 2">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_queen_ant_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="3562" level="2"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="55"/>
+			<add stat="maxMp" order="0x60" value="15"/>
+		</for>
+	</armor>
+	<armor id="49575" name="Orfen's Earring Lv. 2">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_earring_of_orfen_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<skills>
+			<skill id="3560" level="2"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="81"/>
+			<add stat="maxMp" order="0x60" value="25"/>
+		</for>
+	</armor>
+	<armor id="49576" name="Ring of Core Lv. 2">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_core_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="3563" level="2"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="55"/>
+			<add stat="maxMp" order="0x60" value="15"/>
+		</for>
+	</armor>
+	<armor id="49577" name="Queen Ant's Ring Lv. 3">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_queen_ant_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="3562" level="3"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="63"/>
+			<add stat="maxMp" order="0x60" value="21"/>
+		</for>
+	</armor>
+	<armor id="49578" name="Orfen's Earring Lv. 3">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_earring_of_orfen_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<skills>
+			<skill id="3560" level="3"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="91"/>
+			<add stat="maxMp" order="0x60" value="31"/>
+		</for>
+	</armor>
+	<armor id="49579" name="Ring of Core Lv. 3">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_core_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+            <skill id="3563" level="3"/>
+            <skill id="35016" level="1"/>
+        </skills>
+		<for>
+			<add stat="mDef" order="0x10" value="63"/>
+			<add stat="maxMp" order="0x60" value="21"/>
+		</for>
+	</armor>
+	<armor id="49580" name="Baium's Ring">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_baium_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<enchant_skill id="50446" level="1" enchant="0"/>
+			<enchant_skill id="50446" level="2" enchant="1"/>
+			<enchant_skill id="50446" level="3" enchant="2"/>
+			<enchant_skill id="50446" level="4" enchant="3"/>
+			<enchant_skill id="50446" level="5" enchant="4"/>
+			<enchant_skill id="50446" level="6" enchant="5"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="73"/>
+			<add stat="maxMp" order="0x60" value="0"/>
+		</for>
+	</armor>
+	<armor id="49581" name="Baium's Ring Lv. 2">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_baium_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="50443" level="2"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="67"/>
+			<add stat="maxMp" order="0x60" value="21"/>
+		</for>
+	</armor>
+	<armor id="49582" name="Baium's Ring Lv. 3">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_baium_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="50443" level="3"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="75"/>
+			<add stat="maxMp" order="0x60" value="27"/>
+		</for>
+	</armor>
+	<etcitem id="49583" name="Golden Chest of Mermaid's Fishing Supplies">
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i08"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49589" min_count="180" max_count="180" chance="100.0"/>	<!--Золотая Наживка-->
+			<capsuled_item id="38154" min_count="180" max_count="180" chance="100.0"/>	<!--Поплавок-->
+			<capsuled_item id="49502" min_count="5" max_count="5" chance="100.0"/>	<!--Свиток Телепорта в Гавань Гирана-->
+			<capsuled_item id="49503" min_count="5" max_count="5" chance="100.0"/>	<!--Свиток Телепорта в Гавань Глудина-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="49584" name="Golden Boot">
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_gold_shose"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="49080" count="1" chance="0.01"/><!--Rice Cake of Fighting Spirit--><!--TODO: Check chance-->
+			<create_item id="49081" count="1" chance="0.01"/><!--XP Growth Scroll--><!--TODO: Check chance-->
+			<create_item id="49595" count="1" chance="0.01"/><!--Scroll: 2000 SP--><!--TODO: Check chance-->
+			<create_item id="33806" count="1" chance="0.01"/><!--Improved Scroll: Enchant D-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49481" count="1" chance="0.01"/><!--Stable Scroll: Enchant D-grade Armor--><!--TODO: Check chance-->
+			<create_item id="33812" count="1" chance="0.01"/><!--Improved Scroll: Enchant D-grade Armor--><!--TODO: Check chance-->
+			<create_item id="49482" count="1" chance="0.01"/><!--Stable Scroll: Enchant D-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="33813" count="1" chance="0.01"/><!--Improved Scroll: Enchant C-grade Armor--><!--TODO: Check chance-->
+			<create_item id="49483" count="1" chance="0.01"/><!--Stable Scroll: Enchant C-grade Armor--><!--TODO: Check chance-->
+			<create_item id="49596" count="1" chance="0.01"/><!--Scroll: 10,000 SP--><!--TODO: Check chance-->
+			<create_item id="10649" count="1" chance="0.01"/><!--Feather of Blessing--><!--TODO: Check chance-->
+			<create_item id="49472" count="1" chance="0.01"/><!--Earth Dragon Pendant Pack--><!--TODO: Check chance-->
+			<create_item id="49471" count="1" chance="0.01"/><!--Fire Dragon Pendant Pack--><!--TODO: Check chance-->
+			<create_item id="49527" count="1" chance="0.01"/><!--My Teleport Pack--><!--TODO: Check chance-->
+			<create_item id="33814" count="1" chance="0.01"/><!--Improved Scroll: Enchant B-grade Armor--><!--TODO: Check chance-->
+			<create_item id="33807" count="1" chance="0.01"/><!--Improved Scroll: Enchant C-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49484" count="1" chance="0.01"/><!--Stable Scroll: Enchant C-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49485" count="1" chance="0.01"/><!--Stable Scroll: Enchant B-grade Armor--><!--TODO: Check chance-->
+			<create_item id="33808" count="1" chance="0.01"/><!--Improved Scroll: Enchant B-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49486" count="1" chance="0.01"/><!--Stable Scroll: Enchant B-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="49587" count="1" chance="0.01"/><!--Golden Mermaid's Fishing Rod--><!--TODO: Check chance-->
+			<create_item id="49513" count="1" chance="0.01"/><!--Shining Pendant Polish box--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="94398" count="1" chance="0.01"/><!--Package: +2 Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94393" count="1" chance="0.01"/><!--Package: +2 Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="94388" count="1" chance="0.01"/><!--Package: +2 Queen Ant's Ring--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49585" name="Golden Mermaid's Tears" add_name="7-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.general_fuel_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="39113" level="1"/>
+		</skills>
+	</etcitem>
+	<weapon id="49586" name="Golden Mermaid's Fishing Rod" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="1"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_gold_fishing_pole"/>
+		<set name="type" value="ROD"/>
+		<set name="weight" value="1000"/>
+		<set name="rnd_dam" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="1"/>
+			<add stat="mAtk" order="0x10" value="1"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49587" name="Golden Mermaid's Fishing Rod">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="1"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_gold_fishing_pole"/>
+		<set name="type" value="ROD"/>
+		<set name="weight" value="1000"/>
+		<set name="rnd_dam" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="1"/>
+			<add stat="mAtk" order="0x10" value="1"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<etcitem id="49588" name="Golden Mermaid's Fishing Rod Chest" add_name="30-day">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_lure_box_i00"/>
+		<set name="weight" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49589" name="Golden Bait">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_gold_lure"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="LURE"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+	</etcitem>
+	<etcitem id="49590" name="Rare Accessory Pack Lv. 3" add_name="30-day">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_box_of_adventure_3_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49591" name="Queen Ant's Ring Lv. 3" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_queen_ant_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="3562" level="3"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="63"/>
+			<add stat="maxMp" order="0x60" value="21"/>
+		</for>
+	</armor>
+	<armor id="49592" name="Orfen's Earring Lv. 3" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_earring_of_orfen_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<skills>
+			<skill id="39115" level="3"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="91"/>
+			<add stat="maxMp" order="0x60" value="31"/>
+		</for>
+	</armor>
+	<armor id="49593" name="Ring of Core Lv. 3" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_ring_of_core_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<skills>
+			<skill id="3563" level="3"/>
+            <skill id="35016" level="1"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="63"/>
+			<add stat="maxMp" order="0x60" value="21"/>
+		</for>
+	</armor>
+	<etcitem id="49594" name="Whale" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fish_huge_i15"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="39117" level="1"/>    <!--Whale-->
+		</skills>
+	</etcitem>
+	<etcitem id="49595" name="Scroll: 2000 SP" add_name="Exchangeable">
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_sp_scroll1_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49596" name="Scroll: 10,000 SP" add_name="Exchangeable">
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_sp_scroll2_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49597" name="Golden Boot" add_name="Not available">
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_gold_shose"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49598" name="Blue Talisman - P. Crit." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49599" name="Blue Talisman - P. Atk." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+</list>

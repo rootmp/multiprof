@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "subjugation_fields.dtd">
+<!-- AUTHOR: nexvill -->
+<list>
+	<zone id="1" pointsToKey="1000000" maximumKeys="40" minLevel="65" maxLevel="89">	<!-- Cruma Tower Purge -->
+		<mobs>
+			<mob id="22200"/>	<!-- Porta -->
+			<mob id="22201"/>	<!-- Excuro -->
+			<mob id="22202"/>	<!-- Mordeo -->
+			<mob id="22203"/>	<!-- Ricenseo -->
+			<mob id="22204"/>	<!-- Krator -->
+			<mob id="22205"/>	<!-- Catherok -->
+			<mob id="22206"/>	<!-- Premo -->
+			<mob id="22207"/>	<!-- Validus -->
+			<mob id="22208"/>	<!-- Dicor -->
+			<mob id="22209"/>	<!-- Perum -->
+			<mob id="22210"/>	<!-- Torfe -->
+			<mob id="22211"/>	<!-- Death Lord -->
+		</mobs>
+		<rewards>
+			<reward id="95467" count="1"/>	<!-- Low-grade Supply Box - Cruma Tower Purge -->
+			<reward id="95474" count="1"/>	<!-- High-grade Supply Box - Cruma Tower Purge -->
+			<reward id="95482" count="1"/>	<!-- Recipe: Cruma Tower Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="95432" count="1"/>	<!-- Excuro's Staff -->
+			<reward id="95433" count="1"/>	<!-- Torfe's Claw -->
+		</rewards>
+	</zone>
+	<zone id="2" pointsToKey="1000000" maximumKeys="40" minLevel="70" maxLevel="88">	<!-- Silent Valley Purge -->
+		<mobs>
+			<mob id="20967"/>	<!-- Creature of the Past -->
+			<mob id="20968"/>	<!-- Forgotten Face -->
+			<mob id="20969"/>	<!-- Giant's Shadow -->
+			<mob id="20971"/>	<!-- Warrior of Ancient Times -->
+			<mob id="20972"/>	<!-- Shaman of Ancient Times -->
+			<mob id="20973"/>	<!-- Forgotten Ancient Creature -->
+			<mob id="22106"/>	<!-- Ancient Guardian -->
+		</mobs>
+		<rewards>
+			<reward id="95468" count="1"/>	<!-- Low-grade Supply Box - Silent Valley Purge -->
+			<reward id="95475" count="1"/>	<!-- High-grade Supply Box - Silent Valley Purge -->
+			<reward id="95483" count="1"/>	<!-- Recipe: Silent Valley Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="95434" count="1"/>	<!-- Giants' Club -->
+			<reward id="95435" count="1"/>	<!-- Ancient Rapier -->
+		</rewards>
+	</zone>
+	<zone id="3" pointsToKey="1000000" maximumKeys="40" minLevel="76" maxLevel="93">	<!-- Plains of Lizardmen Purge -->
+		<mobs>
+			<mob id="22151"/>	<!-- Tanta Lizardman -->
+			<mob id="22152"/>	<!-- Tanta Lizardman Warrior -->
+			<mob id="22153"/>	<!-- Tanta Lizardman Berserker -->
+			<mob id="22154"/>	<!-- Tanta Lizardman Archer -->
+			<mob id="22155"/>	<!-- Tanta Lizardman Summoner -->
+			<mob id="22182"/>	<!-- Guard of the Plain -->
+		</mobs>
+		<rewards>
+			<reward id="95470" count="1"/>	<!-- Low-grade Supply Box - Plains of the Lizardmen Purge -->
+			<reward id="95477" count="1"/>	<!-- High-grade Supply Box - Plains of the Lizardmen Purge -->
+			<reward id="95485" count="1"/>	<!-- Recipe: Plains of the Lizardmen Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="95438" count="1"/>	<!-- Lizardman Shaman's Staff -->
+			<reward id="95439" count="1"/>	<!-- Lizard Slayer -->
+		</rewards>
+	</zone>
+	<zone id="4" pointsToKey="1000000" maximumKeys="40" minLevel="78" maxLevel="99">	<!-- Tower of Insolence Purge -->
+		<mobs>
+			<mob id="21989"/>	<!-- Ghost of the Tower -->
+			<mob id="21990"/>	<!-- Tower Watchman -->
+			<mob id="21991"/>	<!-- Ghastly Warrior -->
+			<mob id="21992"/>	<!-- Archer of Despair -->
+			<mob id="21993"/>	<!-- Judge of Despair -->
+			<mob id="21994"/>	<!-- Crendion -->
+			<mob id="21995"/>	<!-- Swordsman of Ordeal -->
+			<mob id="21996"/>	<!-- Hound of Destruction -->
+			<mob id="21997"/>	<!-- Royal Guard of Insolence -->
+			<mob id="21998"/>	<!-- Archer of Insolence -->
+			<mob id="21999"/>	<!-- Haughty Judge -->
+			<mob id="22000"/>	<!-- Corrupted Ghost -->
+			<mob id="22001"/>	<!-- Corrupted Sage -->
+			<mob id="22002"/>	<!-- Corrupted Warrior -->
+			<mob id="22003"/>	<!-- Archer of Abyss -->
+			<mob id="22004"/>	<!-- Hound of Grief -->
+			<mob id="22005"/>	<!-- Hallate's Inspector -->
+			<mob id="22006"/>	<!-- Hallate's Knight -->
+			<mob id="22007"/>	<!-- Hallate's Commander -->
+			<mob id="22008"/>	<!-- Hallate's Maid -->
+			<mob id="22009"/>	<!-- Erin Ediunce -->
+			<mob id="22010"/>	<!-- Platinum Tribe Soldier -->
+			<mob id="22011"/>	<!-- Platinum Tribe Shaman -->
+			<mob id="22012"/>	<!-- Platinum Tribe Guard -->
+			<mob id="22013"/>	<!-- Platinum Tribe Knight -->
+			<mob id="22014"/>	<!-- Platinum Tribe Officer -->
+			<mob id="22015"/>	<!-- Platinum Tribe Warrior -->
+			<mob id="22016"/>	<!-- Platinum Tribe Elite Soldier -->
+			<mob id="22017"/>	<!-- Platinum Tribe Archer -->
+			<mob id="22018"/>	<!-- Platinum Tribe Gladiator -->
+			<mob id="22019"/>	<!-- Platinum Tribe Prefect -->
+			<mob id="22020"/>	<!-- Guardian Angel -->
+			<mob id="22021"/>	<!-- Guardian Archangel -->
+			<mob id="22022"/>	<!-- Guardian Angel Messenger -->
+			<mob id="22023"/>	<!-- Guiding Angel Messenger -->
+			<mob id="22024"/>	<!-- Angel Messenger of Insolence -->
+			<mob id="22025"/>	<!-- Prime Messenger of Insolence -->
+			<mob id="22026"/>	<!-- Wise Messenger of Insolence -->
+			<mob id="22027"/>	<!-- Mighty Messenger of Insolence -->
+			<mob id="22028"/>	<!-- Virtuous Guardian Angel -->
+			<mob id="22029"/>	<!-- Messenger Commander -->
+			<mob id="22030"/>	<!-- Messenger Scout -->
+			<mob id="22031"/>	<!-- Messenger Judge -->
+			<mob id="22032"/>	<!-- Seal Angel -->
+			<mob id="22033"/>	<!-- Seal Guardian Angel -->
+			<mob id="22034"/>	<!-- Seal Archangel -->
+			<mob id="22035"/>	<!-- Tower Guardian Archangel -->
+			<mob id="22036"/>	<!-- Tower Guardian Archer -->
+			<mob id="22037"/>	<!-- Tower Guardian Warrior -->
+			<mob id="22038"/>	<!-- Tower Guardian Shaman -->
+			<mob id="22039"/>	<!-- Tower Guardian Messenger -->
+			<mob id="22041"/>	<!-- Vadin -->
+			<mob id="22042"/>	<!-- Mool -->
+			<mob id="22043"/>	<!-- Etiko -->
+		</mobs>
+		<rewards>
+			<reward id="95469" count="1"/>	<!-- Low-grade Supply Box - Tower of Insolence Purge -->
+			<reward id="95476" count="1"/>	<!-- High-grade Supply Box - Tower of Insolence Purge -->
+			<reward id="95484" count="1"/>	<!-- Recipe: Tower of Insolence Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="95436" count="1"/>	<!-- Guardian Messenger's Spear -->
+			<reward id="95437" count="1"/>	<!-- Sealed Angel's Hammer -->
+		</rewards>
+	</zone>
+	<zone id="5" pointsToKey="1000000" maximumKeys="40" minLevel="78" maxLevel="96">	<!-- Dragon Valley Purge -->
+		<mobs>
+			<mob id="20134"/>	<!-- Cave Maiden -->
+			<mob id="20137"/>	<!-- Drake -->
+			<mob id="20142"/>	<!-- Blood Queen -->
+			<mob id="20146"/>	<!-- Headless Knight -->
+			<mob id="20235"/>	<!-- Convict -->
+			<mob id="20236"/>	<!-- Cave Servant -->
+			<mob id="20237"/>	<!-- Cave Servant Archer -->
+			<mob id="20238"/>	<!-- Cave Servant Warrior -->
+			<mob id="20239"/>	<!-- Cave Servant Captain -->
+			<mob id="20240"/>	<!-- Royal Cave Servant -->
+			<mob id="20241"/>	<!-- Gargoyle Hunter -->
+			<mob id="20242"/>	<!-- Dustwind Gargoyle -->
+			<mob id="20243"/>	<!-- Thunder Wyrm -->
+			<mob id="20244"/>	<!-- Maluk Succubus -->
+			<mob id="20245"/>	<!-- Maluk Succubus Turen -->
+			<mob id="20246"/>	<!-- Cave Keeper -->
+			<mob id="20272"/>	<!-- Cave Servant -->
+			<mob id="20273"/>	<!-- Cave Servant Archer -->
+			<mob id="20274"/>	<!-- Cave Servant Warrior -->
+			<mob id="20275"/>	<!-- Cave Servant Captain -->
+			<mob id="20276"/>	<!-- Royal Cave Servant -->
+			<mob id="20277"/>	<!-- Cave Keeper -->
+			<mob id="20279"/>	<!-- Convict -->
+			<mob id="20280"/>	<!-- Headless Knight -->
+			<mob id="20281"/>	<!-- Dustwind Gargoyle -->
+			<mob id="20282"/>	<!-- Thunder Wyrm -->
+			<mob id="20283"/>	<!-- Maluk Succubus -->
+			<mob id="20284"/>	<!-- Maluk Succubus Turen -->
+			<mob id="20285"/>	<!-- Drake -->
+			<mob id="20286"/>	<!-- Gargoyle Hunter -->
+			<mob id="20287"/>	<!-- Cave Maiden -->
+			<mob id="20412"/>	<!-- Cave Banshee -->
+			<mob id="20758"/>	<!-- Dragon Bearer Captain -->
+			<mob id="20759"/>	<!-- Dragon Bearer Warrior -->
+			<mob id="20760"/>	<!-- Dragon Bearer Archer -->
+			<mob id="21959"/>	<!-- Cave Banshee -->
+			<mob id="21960"/>	<!-- Lord Ishka -->
+		</mobs>
+		<rewards>
+			<reward id="95471" count="1"/>	<!-- Low-grade Supply Box - Dragon Valley Purge -->
+			<reward id="95478" count="1"/>	<!-- High-grade Supply Box - Dragon Valley Purge -->
+			<reward id="95486" count="1"/>	<!-- Recipe: Dragon Valley Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="95440" count="1"/>	<!-- Deadman's Dagger -->
+			<reward id="95441" count="1"/>	<!-- Dragon Bone Blade -->
+		</rewards>
+	</zone>
+	<zone id="6" pointsToKey="1000000" maximumKeys="40" minLevel="85" maxLevel="99">	<!-- Sel Mahum Base Purge -->
+		<mobs>
+			<mob id="22237"/>	<!-- Sel Mahum Sniper -->
+			<mob id="22238"/>	<!-- Sel Mahum Raider -->
+			<mob id="22239"/>	<!-- Sel Mahum Berserker -->
+			<mob id="22240"/>	<!-- Sel Mahum Mage -->
+			<mob id="22241"/>	<!-- Sel Mahum Thief -->
+			<mob id="22242"/>	<!-- Sel Mahum Wizard -->
+			<mob id="22243"/>	<!-- Sel Mahum Knight -->
+			<mob id="22244"/>	<!-- Sel Mahum Footman -->
+			<mob id="22245"/>	<!-- Sel Mahum Bowman -->
+			<mob id="22247"/>	<!-- Sel Mahum Leader -->
+			<mob id="22248"/>	<!-- Sel Mahum Legionary -->
+			<mob id="22249"/>	<!-- Sel Mahum Senior Watchman -->
+			<mob id="22250"/>	<!-- Sel Mahum Warrior -->
+			<mob id="22251"/>	<!-- Sel Mahum Commander -->
+			<mob id="22252"/>	<!-- Sel Mahum Fighter -->
+			<mob id="22253"/>	<!-- Sel Mahum Elder -->
+			<mob id="22254"/>	<!-- Sel Mahum Knight Captain -->
+			<mob id="22255"/>	<!-- Sel Mahum Escort Captain -->
+			<mob id="22256"/>	<!-- Sel Mahum Archer -->
+		</mobs>
+		<rewards>
+			<reward id="95472" count="1"/>	<!-- Low-grade Supply Box - Sel Mahum Base Purge -->
+			<reward id="95479" count="1"/>	<!-- High-grade Supply Box - Sel Mahum Base Purge -->
+			<reward id="95487" count="1"/>	<!-- Recipe: Sel Mahum Base Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="95442" count="1"/>	<!-- Berserker's Sword -->
+			<reward id="95443" count="1"/>	<!-- Sel Mahum Sniper -->
+		</rewards>
+	</zone>
+	<zone id="7" pointsToKey="1000000" maximumKeys="40" minLevel="85" maxLevel="99">	<!-- Orc Barracks Purge -->
+		<mobs>
+			<mob id="22135"/>	<!-- Turek Orc -->
+			<mob id="22136"/>	<!-- Turek Orc Footman -->
+			<mob id="22137"/>	<!-- Turek Orc Marksman -->
+			<mob id="22138"/>	<!-- Turek Orc Warrior -->
+			<mob id="22139"/>	<!-- Turek Orc Shaman -->
+			<mob id="22140"/>	<!-- Kerr -->
+			<mob id="22141"/>	<!-- Turek Orc Elite -->
+			<mob id="22142"/>	<!-- Turek Orc Skirmisher -->
+			<mob id="22143"/>	<!-- Turek Orc Sniper -->
+			<mob id="22144"/>	<!-- Turek Orc Prefect -->
+			<mob id="22145"/>	<!-- Turek Orc Elder -->
+			<mob id="22146"/>	<!-- Turek -->
+		</mobs>
+		<rewards>
+			<reward id="95473" count="1"/>	<!-- Low-grade Supply Box - Orc Barracks Purge -->
+			<reward id="95480" count="1"/>	<!-- High-grade Supply Box - Orc Barracks Purge -->
+			<reward id="95488" count="1"/>	<!-- Recipe: Orc Barracks Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="95444" count="1"/>	<!-- Turek Orc Prefect's Dual Swords -->
+			<reward id="95445" count="1"/>	<!-- Butcher's Long Sword -->
+		</rewards>
+	</zone>
+	<zone id="8" pointsToKey="1000000" maximumKeys="40" minLevel="85" maxLevel="99">	<!-- Giant's Cave Purge -->
+		<mobs>
+			<mob id="22369"/>	<!-- Giant Mercenary -->
+			<mob id="22370"/>	<!-- Mutated Soldier -->
+			<mob id="22371"/>	<!-- Mutated Tracker -->
+			<mob id="22372"/>	<!-- Mutated Archer -->
+			<mob id="22375"/>	<!-- Essence of the Lesser Giant -->
+			<mob id="22376"/>	<!-- Lesser Giant Soldier -->
+			<mob id="22377"/>	<!-- Lesser Giant Bowman -->
+			<mob id="22378"/>	<!-- Lesser Giant Wizard -->
+			<mob id="22379"/>	<!-- Lesser Warrior -->
+			<mob id="22380"/>	<!-- Lesser Bowman -->
+			<mob id="22381"/>	<!-- Lesser Mage -->
+			<mob id="22382"/>	<!-- Lesser Hunter -->
+			<mob id="22383"/>	<!-- Evolved Lesser Giant Mercenary -->
+			<mob id="22384"/>	<!-- Evolved Lesser Giant Commander -->
+			<mob id="22385"/>	<!-- Evolved Lesser Giant Elder -->
+			<mob id="22386"/>	<!-- Evolved Lesser Giant Shooter -->
+			<mob id="22387"/>	<!-- Baron's Warrior -->
+			<mob id="22388"/>	<!-- Baron's Templar -->
+			<mob id="22389"/>	<!-- Baron's Ranger -->
+			<mob id="22390"/>	<!-- Baron's Puncher -->
+			<mob id="22411"/>	<!-- Baron's Overlord -->
+			<mob id="22412"/>	<!-- Evoled Lesser Giant Lord -->
+		</mobs>
+		<rewards>
+			<reward id="96725" count="1"/>	<!-- Low-grade Supply Box - Giant's Cave Purge -->
+			<reward id="96726" count="1"/>	<!-- High-grade Supply Box - Giant's Cave Purge -->
+			<reward id="96727" count="1"/>	<!-- Recipe: Giant's Cave Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="96720" count="1"/>	<!-- Giant's One-handed Axe -->
+			<reward id="96721" count="1"/>	<!-- Giant's Two-handed Staff -->
+		</rewards>
+	</zone>
+	<zone id="9" pointsToKey="1000000" maximumKeys="40" minLevel="85" maxLevel="99">	<!-- Goddard Territory Purge -->
+		<mobs>
+			<mob id="22426"/>	<!-- Tailed Warrior -->
+			<mob id="22427"/>	<!-- Tailed Hunter -->
+			<mob id="22428"/>	<!-- Tailed Berserker -->
+			<mob id="22429"/>	<!-- Tailed Wizard -->
+			<mob id="22431"/>	<!-- Morgos' Hot Springs Hunter -->
+			<mob id="22432"/>	<!-- Morgos' Supplier -->
+			<mob id="22433"/>	<!-- Gorde Grendel -->
+			<mob id="22434"/>	<!-- Gorde Antelope -->
+			<mob id="22435"/>	<!-- Gorde Bandersnatch -->
+			<mob id="22436"/>	<!-- Gorde Buffalo -->
+			<mob id="22437"/>	<!-- Eye of Restrainer -->
+			<mob id="22439"/>	<!-- Gorde Warrior -->
+			<mob id="22440"/>	<!-- Gorde Soldier -->
+			<mob id="22441"/>	<!-- Gorde Hunter -->
+			<mob id="22442"/>	<!-- Gorde Wizard -->
+			<mob id="22443"/>	<!-- Eye of Watchman -->
+			<mob id="22445"/>	<!-- Morgos' Canyon Hunter -->
+			<mob id="22446"/>	<!-- Morgos' Infantryman -->
+			<mob id="22447"/>	<!-- Morgos' Footman -->
+			<mob id="22448"/>	<!-- Morgos' Shield Breaker -->
+			<mob id="22449"/>	<!-- Morgos' Thrower -->
+			<mob id="22450"/>	<!-- Morgos' Shaman -->
+			<mob id="22451"/>	<!-- Morgos' Officer -->
+			<mob id="22452"/>	<!-- Infantry Commander -->
+			<mob id="22453"/>	<!-- Morgos' Guard -->
+			<mob id="22454"/>	<!-- Morgos' Raider -->
+			<mob id="22455"/>	<!-- Morgos' Sniper -->
+			<mob id="22456"/>	<!-- Morgos' Wizard -->
+			<mob id="22457"/>	<!-- Morgos' Commander -->
+			<mob id="22458"/>	<!-- Morgos -->
+			<mob id="22459"/>	<!-- Morgos' Recruit -->
+			<mob id="22460"/>	<!-- Morgos' Sergeant -->
+			<mob id="22461"/>	<!-- Morgos' Training Mentor -->
+			<mob id="22462"/>	<!-- Morgos' Sentry -->
+			<mob id="22463"/>	<!-- Morgos' Elite Guard -->
+			<mob id="22464"/>	<!-- Morgos' Commando -->
+			<mob id="22465"/>	<!-- Bloodhound -->
+			<mob id="22466"/>	<!-- Elite Soldier -->
+			<mob id="22467"/>	<!-- Elite Soldier -->
+			<mob id="22468"/>	<!-- Elite Soldier -->
+			<mob id="22469"/>	<!-- Elite Soldier -->
+			<mob id="22470"/>	<!-- Elite Soldier -->
+			<mob id="22471"/>	<!-- Elite Soldier -->
+			<mob id="22472"/>	<!-- Elite Soldier -->
+			<mob id="22473"/>	<!-- Elite Soldier -->
+			<mob id="22474"/>	<!-- Xilenos Soldier -->
+			<mob id="22475"/>	<!-- Xilenos Warlord -->
+			<mob id="22476"/>	<!-- Xilenos Archer -->
+			<mob id="22477"/>	<!-- Xilenos Wizard -->
+			<mob id="22478"/>	<!-- Xilenos Spy -->
+			<mob id="22479"/>	<!-- Xilenos Warrior -->
+			<mob id="22480"/>	<!-- Xilenos Footman -->
+			<mob id="22481"/>	<!-- Xilenos Shooter -->
+			<mob id="22482"/>	<!-- Xilenos Pikeman -->
+			<mob id="22483"/>	<!-- Xilenos Elder -->
+			<mob id="22484"/>	<!-- Xilenos Summoner -->
+			<mob id="22485"/>	<!-- Xilenos Scout -->
+			<mob id="22486"/>	<!-- Jakal -->
+			<mob id="22487"/>	<!-- Morgos' Messenger -->
+			<mob id="22488"/>	<!-- Jakal's Guard -->
+			<mob id="22489"/>	<!-- Varka -->
+		</mobs>
+		<rewards>
+			<reward id="97226" count="1"/>	<!-- Low-grade Supply Box - Goddard Territory Purge -->
+			<reward id="97227" count="1"/>	<!-- High-grade Supply Box - Goddard Territory Purge -->
+			<reward id="97228" count="1"/>	<!-- Recipe: Goddard Territory Purge Equipment -->
+			<reward id="95481" count="1"/>	<!-- Aden Purge Crystal -->
+			<reward id="97236" count="1"/>	<!-- Spear of Xilenos -->
+			<reward id="97238" count="1"/>	<!-- Shield of Xilenos -->
+		</rewards>
+	</zone>
+</list>

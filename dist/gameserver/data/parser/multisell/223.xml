@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<list>
+	<item>
+		<production id="858" count="1"/>
+		<ingredient id="57" count="981000"/>
+		<ingredient id="6724" count="1"/>
+		<ingredient id="49756" count="10"/>
+	</item>
+	<item>
+		<production id="889" count="1"/>
+		<ingredient id="57" count="654000"/>
+		<ingredient id="6725" count="1"/>
+		<ingredient id="49756" count="7"/>
+	</item>
+	<item>
+		<production id="920" count="1"/>
+		<ingredient id="57" count="1308300"/>
+		<ingredient id="6726" count="1"/>
+		<ingredient id="49756" count="13"/>
+		</item>
+</list>

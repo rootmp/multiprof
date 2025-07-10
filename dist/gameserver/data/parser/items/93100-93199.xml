@@ -1,0 +1,2280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="93100" name="Life Stone Lv. 2 - Shield/ Sigil">
+		<set name="grind_commission" value="15000"/>
+		<set name="grind_point" value="750000"/>
+		<set name="icon" value="icon.r_mineral_rare_i00"/>
+		<set name="weight" value="2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1500000"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93101" name="High-grade Life Stone - Shield/ Sigil">
+		<set name="grind_commission" value="45000"/>
+		<set name="grind_point" value="2250000"/>
+		<set name="icon" value="icon.r_mineral_unique_i00"/>
+		<set name="weight" value="2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="4500000"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93102" name="Top-grade Life Stone - Shield/ Sigil">
+		<set name="grind_commission" value="135000"/>
+		<set name="grind_point" value="6750000"/>
+		<set name="icon" value="icon.renewal_mineral_r"/>
+		<set name="weight" value="2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="13500000"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93103" name="Spellbook: Divine Beam">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93104" name="Scroll: Earth Tremor">
+		<set name="icon" value="icon.etc_magic_book_red_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93105" name="Scroll: Prophecy of Light">
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93106" name="Scroll: Mass Dryad Root">
+		<set name="icon" value="icon.etc_magic_book_red_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93107" name="Scroll: Mass Wind Shackles">
+		<set name="icon" value="icon.etc_magic_book_red_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93108" name="Blueprint: Machine Assistance - Not Available" add_name="Not Available">
+		<set name="grind_commission" value="10000"/>
+		<set name="grind_point" value="500000"/>
+		<set name="icon" value="icon.etc_plan_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1000000"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<armor id="93109" name="Wooden Sigil" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="194"/>
+		<set name="grind_point" value="9675"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.arcana_sigil_i00"/>
+		<set name="price" value="19350"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="920"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="4"/>
+		</for>
+	</armor>
+	<armor id="93110" name="Elven Sigil" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="350"/>
+		<set name="grind_point" value="17500"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_pricklelotus_i01"/>
+		<set name="price" value="35000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1350"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="7"/>
+		</for>
+	</armor>
+	<armor id="93111" name="Chain Sigil" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="3750"/>
+		<set name="grind_point" value="187500"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.belleface_i00"/>
+		<set name="price" value="375000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="10"/>
+		</for>
+	</armor>
+	<armor id="93112" name="Sigil of Demon" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="1560"/>
+		<set name="grind_point" value="78000"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.verper_sigil_i00"/>
+		<set name="price" value="156000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1280"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="17"/>
+		</for>
+	</armor>
+	<armor id="93113" name="Sigil of Blue Wolf" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="5450"/>
+		<set name="grind_point" value="272500"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.airtoil_i00"/>
+		<set name="price" value="545000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1210"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="25"/>
+		</for>
+	</armor>
+	<armor id="93114" name="Avadon Sigil" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="5450"/>
+		<set name="grind_point" value="272500"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.dynasty_sigil_i00"/>
+		<set name="price" value="545000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1210"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="21"/>
+		</for>
+	</armor>
+	<armor id="93115" name="Doom Sigil" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="8450"/>
+		<set name="grind_point" value="422500"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.elos_i00"/>
+		<set name="price" value="845000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1200"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="23"/>
+		</for>
+	</armor>
+	<armor id="93116" name="Zubei's Sigil" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="5450"/>
+		<set name="grind_point" value="272500"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.weapon_dynaksus_i00"/>
+		<set name="price" value="545000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1210"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="21"/>
+		</for>
+	</armor>
+	<armor id="93117" name="Dark Crystal Sigil" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="9350"/>
+		<set name="grind_point" value="467500"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_r110_sigil"/>
+		<set name="price" value="935000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1190"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="24"/>
+		</for>
+	</armor>
+	<armor id="93118" name="Tallum Sigil" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="9350"/>
+		<set name="grind_point" value="467500"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_tysandy_sigil_i01"/>
+		<set name="price" value="935000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1190"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="24"/>
+		</for>
+	</armor>
+	<armor id="93119" name="Sigil of Nightmare" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="14220"/>
+		<set name="grind_point" value="711000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.verper_sigil_i00"/>
+		<set name="price" value="1422000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1180"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="25"/>
+		</for>
+	</armor>
+	<armor id="93120" name="Majestic Sigil" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="14220"/>
+		<set name="grind_point" value="711000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_karyen_i00"/>
+		<set name="price" value="1422000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="weight" value="1180"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="43"/>
+		</for>
+	</armor>
+	<etcitem id="93121" name="Life Stone Lv. 1 - Shield/ Sigil">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="11500"/>
+		<set name="grind_point" value="575000"/>
+		<set name="icon" value="icon.r_mineral_special_i00"/>
+		<set name="weight" value="2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1150000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93122" name="Life Stone Lv. 2 - Shield/ Sigil">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="15000"/>
+		<set name="grind_point" value="750000"/>
+		<set name="icon" value="icon.r_mineral_rare_i00"/>
+		<set name="weight" value="2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1500000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93123" name="High-grade Life Stone - Shield/ Sigil">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="45000"/>
+		<set name="grind_point" value="2250000"/>
+		<set name="icon" value="icon.r_mineral_unique_i00"/>
+		<set name="weight" value="2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="4500000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93124" name="Top-grade Life Stone - Shield/ Sigil">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="grind_commission" value="135000"/>
+		<set name="grind_point" value="6750000"/>
+		<set name="icon" value="icon.renewal_mineral_r"/>
+		<set name="weight" value="2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="13500000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<armor id="93125" name="Circlet of Goddard">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_pledge_cap1_i03"/>
+		<set name="price" value="500000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<etcitem id="93126" name="Secret Strongbox" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_battle_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<armor id="93127" name="Ultimate Death Knight - Red" add_name="Not available">
+		<set name="crystal_type" value="R99"/>
+		<set name="icon" value="BranchSys3.iconArmar.g_co_japan_general_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="93128" name="Agathion Ignis">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="50321" level="1"/><!--Agathion: Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="50321" level="2"/><!--Agathion: +1 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="50321" level="3"/><!--Agathion: +2 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="50321" level="4"/><!--Agathion: +3 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="50321" level="5"/><!--Agathion: +4 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="50321" level="6"/><!--Agathion: +5 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="50321" level="7"/><!--Agathion: +6 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="50321" level="8"/><!--Agathion: +7 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="50321" level="9"/><!--Agathion: +8 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="50321" level="10"/><!--Agathion: +9 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="50321" level="11"/><!--Agathion: +10 Agathion Ignis-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="93129" name="Agathion Nebula">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_water_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="50322" level="1"/><!--Agathion: Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="50322" level="2"/><!--Agathion: +1 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="50322" level="3"/><!--Agathion: +2 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="50322" level="4"/><!--Agathion: +3 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="50322" level="5"/><!--Agathion: +4 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="50322" level="6"/><!--Agathion: +5 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="50322" level="7"/><!--Agathion: +6 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="50322" level="8"/><!--Agathion: +7 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="50322" level="9"/><!--Agathion: +8 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="50322" level="10"/><!--Agathion: +9 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="50322" level="11"/><!--Agathion: +10 Agathion Nebula-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="93130" name="Agathion Procella">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_wind_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="50323" level="1"/><!--Agathion: Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="50323" level="2"/><!--Agathion: +1 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="50323" level="3"/><!--Agathion: +2 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="50323" level="4"/><!--Agathion: +3 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="50323" level="5"/><!--Agathion: +4 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="50323" level="6"/><!--Agathion: +5 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="50323" level="7"/><!--Agathion: +6 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="50323" level="8"/><!--Agathion: +7 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="50323" level="9"/><!--Agathion: +8 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="50323" level="10"/><!--Agathion: +9 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="50323" level="11"/><!--Agathion: +10 Agathion Procella-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="93131" name="Agathion Petram">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_earth_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="50324" level="1"/><!--Agathion: Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="50324" level="2"/><!--Agathion: +1 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="50324" level="3"/><!--Agathion: +2 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="50324" level="4"/><!--Agathion: +3 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="50324" level="5"/><!--Agathion: +4 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="50324" level="6"/><!--Agathion: +5 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="50324" level="7"/><!--Agathion: +6 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="50324" level="8"/><!--Agathion: +7 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="50324" level="9"/><!--Agathion: +8 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="50324" level="10"/><!--Agathion: +9 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="50324" level="11"/><!--Agathion: +10 Agathion Petram-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="93132" name="Agathion Joy" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.pleasure_agathion_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<sub_skills>
+					<skill id="50325" level="1"/><!--Agathion: Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="1">
+				<sub_skills>
+					<skill id="50325" level="2"/><!--Agathion: +1 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="2">
+				<sub_skills>
+					<skill id="50325" level="3"/><!--Agathion: +2 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="3">
+				<sub_skills>
+					<skill id="50325" level="4"/><!--Agathion: +3 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="4">
+				<sub_skills>
+					<skill id="50325" level="5"/><!--Agathion: +4 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="5">
+				<sub_skills>
+					<skill id="50325" level="6"/><!--Agathion: +5 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="6">
+				<sub_skills>
+					<skill id="50325" level="7"/><!--Agathion: +6 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="7">
+				<sub_skills>
+					<skill id="50325" level="8"/><!--Agathion: +7 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="8">
+				<sub_skills>
+					<skill id="50325" level="9"/><!--Agathion: +8 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="9">
+				<sub_skills>
+					<skill id="50325" level="10"/><!--Agathion: +9 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+			<enchant level="10">
+				<sub_skills>
+					<skill id="50325" level="11"/><!--Agathion: +10 Agathion Joy-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<etcitem id="93133" name="Scroll: Enchant Agathion">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.star_scrl_of_ench_ag"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="93134" name="Package: Agathion Ignis">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93128" min_count="1" max_count="1" chance="100"/><!--Agathion Ignis-->
+			<capsuled_item id="93133" min_count="10" max_count="10" chance="100"/><!--Scroll: Enchant Agathion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="93135" name="Package: Agathion Nebula" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.agathion_water_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93129" min_count="1" max_count="1" chance="100"/><!--Agathion Nebula-->
+			<capsuled_item id="93133" min_count="10" max_count="10" chance="100"/><!--Scroll: Enchant Agathion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="93136" name="Package: Agathion Procella" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.agathion_wind_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93130" min_count="1" max_count="1" chance="100"/><!--Agathion Procella-->
+			<capsuled_item id="93133" min_count="10" max_count="10" chance="100"/><!--Scroll: Enchant Agathion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="93137" name="Package: Agathion Petram" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.agathion_earth_1"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93131" min_count="1" max_count="1" chance="100"/><!--Agathion Petram-->
+			<capsuled_item id="93133" min_count="10" max_count="10" chance="100"/><!--Scroll: Enchant Agathion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="93138" name="Package: Agathion Joy" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.pleasure_agathion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93132" min_count="1" max_count="1" chance="100"/><!--Agathion Joy-->
+			<capsuled_item id="93133" min_count="10" max_count="10" chance="100"/><!--Scroll: Enchant Agathion-->
+		</capsuled_items>
+	</etcitem>
+	<armor id="93139" name="Ice Crystal Breastplate">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="grind_commission" value="35620"/>
+		<set name="grind_point" value="1781000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t94_u_i01"/>
+		<set name="price" value="3562000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7700"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50330" level="1"/>	<!-- A-grade: Ice Crystal Breastplate -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110187"/>
+			</level>
+			<level value="1">
+				<option id="110188"/>
+			</level>
+			<level value="2">
+				<option id="110189"/>
+			</level>
+			<level value="3">
+				<option id="110190"/>
+			</level>
+			<level value="4">
+				<option id="110191"/>
+			</level>
+			<level value="5">
+				<option id="110192"/>
+			</level>
+			<level value="6">
+				<option id="110193"/>
+			</level>
+			<level value="7">
+				<option id="110194"/>
+			</level>
+			<level value="8">
+				<option id="110195"/>
+			</level>
+			<level value="9">
+				<option id="110196"/>
+			</level>
+			<level value="10">
+				<option id="110197"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="200"/>
+		</for>
+	</armor>
+	<armor id="93140" name="Ice Crystal Gaiters">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="grind_commission" value="22260"/>
+		<set name="grind_point" value="1113000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t94_l_i01"/>
+		<set name="price" value="2226000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3320"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50333" level="1"/>	<!-- A-grade: Ice Crystal Gaiters -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110198"/>
+			</level>
+			<level value="1">
+				<option id="110199"/>
+			</level>
+			<level value="2">
+				<option id="110200"/>
+			</level>
+			<level value="3">
+				<option id="110201"/>
+			</level>
+			<level value="4">
+				<option id="110202"/>
+			</level>
+			<level value="5">
+				<option id="110203"/>
+			</level>
+			<level value="6">
+				<option id="110204"/>
+			</level>
+			<level value="7">
+				<option id="110205"/>
+			</level>
+			<level value="8">
+				<option id="110206"/>
+			</level>
+			<level value="9">
+				<option id="110207"/>
+			</level>
+			<level value="10">
+				<option id="110208"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="175"/>
+		</for>
+	</armor>
+	<armor id="93141" name="Ice Crystal Breastplate" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="3562000"/>
+		<set name="grind_commission" value="35620"/>
+		<set name="grind_point" value="1781000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t94_u_i01"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7700"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50330" level="1"/>	<!-- A-grade: Ice Crystal Breastplate -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110187"/>
+			</level>
+			<level value="1">
+				<option id="110188"/>
+			</level>
+			<level value="2">
+				<option id="110189"/>
+			</level>
+			<level value="3">
+				<option id="110190"/>
+			</level>
+			<level value="4">
+				<option id="110191"/>
+			</level>
+			<level value="5">
+				<option id="110192"/>
+			</level>
+			<level value="6">
+				<option id="110193"/>
+			</level>
+			<level value="7">
+				<option id="110194"/>
+			</level>
+			<level value="8">
+				<option id="110195"/>
+			</level>
+			<level value="9">
+				<option id="110196"/>
+			</level>
+			<level value="10">
+				<option id="110197"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="200"/>
+		</for>
+	</armor>
+	<armor id="93142" name="Ice Crystal Gaiters" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="2226000"/>
+		<set name="grind_commission" value="22260"/>
+		<set name="grind_point" value="1113000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t94_l_i01"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3320"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50333" level="1"/>	<!-- A-grade: Ice Crystal Gaiters -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110198"/>
+			</level>
+			<level value="1">
+				<option id="110199"/>
+			</level>
+			<level value="2">
+				<option id="110200"/>
+			</level>
+			<level value="3">
+				<option id="110201"/>
+			</level>
+			<level value="4">
+				<option id="110202"/>
+			</level>
+			<level value="5">
+				<option id="110203"/>
+			</level>
+			<level value="6">
+				<option id="110204"/>
+			</level>
+			<level value="7">
+				<option id="110205"/>
+			</level>
+			<level value="8">
+				<option id="110206"/>
+			</level>
+			<level value="9">
+				<option id="110207"/>
+			</level>
+			<level value="10">
+				<option id="110208"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="175"/>
+		</for>
+	</armor>
+	<etcitem id="93143" name="Siege Support Box - Goddard" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="Branchsys2.icon2.g_alegra_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91641" min_count="2" max_count="2" chance="15.4825" /> <!-- Sayha's Blessing -->
+			<capsuled_item id="91641" min_count="5" max_count="5" chance="15.4825" /> <!-- Sayha's Blessing -->
+			<capsuled_item id="91641" min_count="10" max_count="10" chance="15.4825" /> <!-- Sayha's Blessing -->
+			<capsuled_item id="91641" min_count="100" max_count="100" chance="3.0" /> <!-- Sayha's Blessing -->
+			<capsuled_item id="91713" min_count="10" max_count="10" chance="15.4825" /> <!-- Sayha's Storm Lv. 3 (Exchangeable) -->
+		</capsuled_items>
+		<create_items>
+			<create_item id="90890" count="1" chance="5.0" /> <!-- Agathion Bracelet Lv. 3 -->
+			<create_item id="9591" count="1" chance="5.0" /> <!-- Talisman Bracelet Lv. 3 -->
+			<create_item id="90934" count="1" chance="5.0" /> <!-- Brooch Lv. 3 -->
+			<create_item id="91031" count="1" chance="5.0" /> <!-- Water Spirit Evolution Stone -->
+			<create_item id="91032" count="1" chance="5.0" /> <!-- Fire Spirit Evolution Stone -->
+			<create_item id="91033" count="1" chance="5.0" /> <!-- Wind Spirit Evolution Stone -->
+			<create_item id="91034" count="1" chance="5.0" /> <!-- Earth Spirit Evolution Stone -->
+			<create_item id="49683" count="1" chance="0.01" /> <!-- Talisman of Baium -->
+			<create_item id="91864" count="1" chance="0.01" /> <!-- Dragon Belt Pack -->
+			<create_item id="91944" count="1" chance="0.01" /> <!-- Book of Light -->
+			<create_item id="91945" count="1" chance="0.01" /> <!-- Book of Shadows -->
+			<create_item id="92401" count="1" chance="0.01" /> <!-- Spellbook: White Guardian -->
+			<create_item id="93103" count="1" chance="0.01" /> <!-- Spellbook: Divine Beam -->
+			<create_item id="6660" count="1" chance="0.001" /> <!-- Queen Ant's Ring -->
+			<create_item id="6661" count="1" chance="0.001" /> <!-- Orfen's Earring -->
+			<create_item id="6662" count="1" chance="0.001" /> <!-- Ring of Core -->
+			<create_item id="49580" count="1" chance="0.001" /> <!-- Baium's Ring -->
+			<create_item id="90763" count="1" chance="0.001" /> <!-- Zaken's Earring -->
+			<create_item id="92990" count="1" chance="0.001" /> <!-- Boss' Weapon Pack -->
+			<create_item id="91163" count="1" chance="0.001" /> <!-- Anakim's Soul Crystal Lv. 1 Rare -->
+			<create_item id="91173" count="1" chance="0.001" /> <!-- Lilith' Soul Crystal Lv. 1 Rare -->
+			<create_item id="91246" count="1" chance="0.001" /> <!-- Dragon Pendant Lv. 3 -->
+			<create_item id="91247" count="1" chance="0.001" /> <!-- Dragon Pendant Lv. 4 -->
+		</create_items>
+	</etcitem>
+	<etcitem id="93144" name="+4 Dragon Belt Pack" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_readybox_bronze"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="91862" count="1" enchant="4" chance="100" /> <!-- Dragon Belt -->
+		</create_items>
+	</etcitem>
+	<etcitem id="93145" name="Extra Pass: Transcendent Instance Zone" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ticket_red_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="handler" value="SkillsReduce"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="reuse_type" value="EVERY_DAY_AT_6_30"/>
+		<skills>
+			<skill id="40107" level="1" /> <!-- Extra Pass: Transcendent Instance Zone -->
+		</skills>
+	</etcitem>
+	<etcitem id="93146" name="Extra Pass: Transcendent Instance Zone" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ticket_red_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="handler" value="SkillsReduce"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="reuse_type" value="EVERY_DAY_AT_6_30"/>
+		<skills>
+			<skill id="40107" level="1" /> <!-- Extra Pass: Transcendent Instance Zone -->
+		</skills>
+	</etcitem>
+	<etcitem id="93147" name="Random Enhanced Tallum Blade Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_tallum_blade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92966" count="1" chance="16.66"/><!--Tallum Blade--><!--TODO: Check chance-->
+			<create_item id="92966" count="1" chance="16.66" enchant="1"/><!--Tallum Blade--><!--TODO: Check chance-->
+			<create_item id="92966" count="1" chance="16.66" enchant="2"/><!--Tallum Blade--><!--TODO: Check chance-->
+			<create_item id="92966" count="1" chance="16.66" enchant="3"/><!--Tallum Blade--><!--TODO: Check chance-->
+			<create_item id="92966" count="1" chance="16.66" enchant="4"/><!--Tallum Blade--><!--TODO: Check chance-->
+			<create_item id="92966" count="1" chance="16.66" enchant="5"/><!--Tallum Blade--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93148" name="Random Enhanced Dragon Slayer Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dragon_slayer_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92931" count="1" chance="16.66"/><!--Dragon Slayer--><!--TODO: Check chance-->
+			<create_item id="92931" count="1" chance="16.66" enchant="1"/><!--Dragon Slayer--><!--TODO: Check chance-->
+			<create_item id="92931" count="1" chance="16.66" enchant="2"/><!--Dragon Slayer--><!--TODO: Check chance-->
+			<create_item id="92931" count="1" chance="16.66" enchant="3"/><!--Dragon Slayer--><!--TODO: Check chance-->
+			<create_item id="92931" count="1" chance="16.66" enchant="4"/><!--Dragon Slayer--><!--TODO: Check chance-->
+			<create_item id="92931" count="1" chance="16.66" enchant="5"/><!--Dragon Slayer--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93149" name="Random Enhanced Halberd Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_halbard_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92932" count="1" chance="16.66"/><!--Halberd--><!--TODO: Check chance-->
+			<create_item id="92932" count="1" chance="16.66" enchant="1"/><!--Halberd--><!--TODO: Check chance-->
+			<create_item id="92932" count="1" chance="16.66" enchant="2"/><!--Halberd--><!--TODO: Check chance-->
+			<create_item id="92932" count="1" chance="16.66" enchant="3"/><!--Halberd--><!--TODO: Check chance-->
+			<create_item id="92932" count="1" chance="16.66" enchant="4"/><!--Halberd--><!--TODO: Check chance-->
+			<create_item id="92932" count="1" chance="16.66" enchant="5"/><!--Halberd--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93150" name="Random Enhanced Elemental Sword Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_elemental_sword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92933" count="1" chance="16.66"/><!--Elemental Sword--><!--TODO: Check chance-->
+			<create_item id="92933" count="1" chance="16.66" enchant="1"/><!--Elemental Sword--><!--TODO: Check chance-->
+			<create_item id="92933" count="1" chance="16.66" enchant="2"/><!--Elemental Sword--><!--TODO: Check chance-->
+			<create_item id="92933" count="1" chance="16.66" enchant="3"/><!--Elemental Sword--><!--TODO: Check chance-->
+			<create_item id="92933" count="1" chance="16.66" enchant="4"/><!--Elemental Sword--><!--TODO: Check chance-->
+			<create_item id="92933" count="1" chance="16.66" enchant="5"/><!--Elemental Sword--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93151" name="Random Enhanced Sword of Miracles Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_sword_of_miracle_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92934" count="1" chance="16.66"/><!--Sword of Miracles--><!--TODO: Check chance-->
+			<create_item id="92934" count="1" chance="16.66" enchant="1"/><!--Sword of Miracles--><!--TODO: Check chance-->
+			<create_item id="92934" count="1" chance="16.66" enchant="2"/><!--Sword of Miracles--><!--TODO: Check chance-->
+			<create_item id="92934" count="1" chance="16.66" enchant="3"/><!--Sword of Miracles--><!--TODO: Check chance-->
+			<create_item id="92934" count="1" chance="16.66" enchant="4"/><!--Sword of Miracles--><!--TODO: Check chance-->
+			<create_item id="92934" count="1" chance="16.66" enchant="5"/><!--Sword of Miracles--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93152" name="Random Enhanced Elysian Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_elysian_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92935" count="1" chance="16.66"/><!--Elysian--><!--TODO: Check chance-->
+			<create_item id="92935" count="1" chance="16.66" enchant="1"/><!--Elysian--><!--TODO: Check chance-->
+			<create_item id="92935" count="1" chance="16.66" enchant="2"/><!--Elysian--><!--TODO: Check chance-->
+			<create_item id="92935" count="1" chance="16.66" enchant="3"/><!--Elysian--><!--TODO: Check chance-->
+			<create_item id="92935" count="1" chance="16.66" enchant="4"/><!--Elysian--><!--TODO: Check chance-->
+			<create_item id="92935" count="1" chance="16.66" enchant="5"/><!--Elysian--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93153" name="Random Enhanced Dasparion's Staff Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dasparions_staff_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92936" count="1" chance="16.66"/><!--Dasparion's Staff--><!--TODO: Check chance-->
+			<create_item id="92936" count="1" chance="16.66" enchant="1"/><!--Dasparion's Staff--><!--TODO: Check chance-->
+			<create_item id="92936" count="1" chance="16.66" enchant="2"/><!--Dasparion's Staff--><!--TODO: Check chance-->
+			<create_item id="92936" count="1" chance="16.66" enchant="3"/><!--Dasparion's Staff--><!--TODO: Check chance-->
+			<create_item id="92936" count="1" chance="16.66" enchant="4"/><!--Dasparion's Staff--><!--TODO: Check chance-->
+			<create_item id="92936" count="1" chance="16.66" enchant="5"/><!--Dasparion's Staff--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93154" name="Random Enhanced Branch of the Mother Tree Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_worldtrees_branch_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92937" count="1" chance="16.66"/><!--Branch of the Mother Tree--><!--TODO: Check chance-->
+			<create_item id="92937" count="1" chance="16.66" enchant="1"/><!--Branch of the Mother Tree--><!--TODO: Check chance-->
+			<create_item id="92937" count="1" chance="16.66" enchant="2"/><!--Branch of the Mother Tree--><!--TODO: Check chance-->
+			<create_item id="92937" count="1" chance="16.66" enchant="3"/><!--Branch of the Mother Tree--><!--TODO: Check chance-->
+			<create_item id="92937" count="1" chance="16.66" enchant="4"/><!--Branch of the Mother Tree--><!--TODO: Check chance-->
+			<create_item id="92937" count="1" chance="16.66" enchant="5"/><!--Branch of the Mother Tree--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93155" name="Random Enhanced Bloody Orchid Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_bloody_orchid_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92938" count="1" chance="16.66"/><!--Bloody Orchid--><!--TODO: Check chance-->
+			<create_item id="92938" count="1" chance="16.66" enchant="1"/><!--Bloody Orchid--><!--TODO: Check chance-->
+			<create_item id="92938" count="1" chance="16.66" enchant="2"/><!--Bloody Orchid--><!--TODO: Check chance-->
+			<create_item id="92938" count="1" chance="16.66" enchant="3"/><!--Bloody Orchid--><!--TODO: Check chance-->
+			<create_item id="92938" count="1" chance="16.66" enchant="4"/><!--Bloody Orchid--><!--TODO: Check chance-->
+			<create_item id="92938" count="1" chance="16.66" enchant="5"/><!--Bloody Orchid--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93156" name="Random Enhanced Soul Separator Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_soul_separator_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92939" count="1" chance="16.66"/><!--Soul Separator--><!--TODO: Check chance-->
+			<create_item id="92939" count="1" chance="16.66" enchant="1"/><!--Soul Separator--><!--TODO: Check chance-->
+			<create_item id="92939" count="1" chance="16.66" enchant="2"/><!--Soul Separator--><!--TODO: Check chance-->
+			<create_item id="92939" count="1" chance="16.66" enchant="3"/><!--Soul Separator--><!--TODO: Check chance-->
+			<create_item id="92939" count="1" chance="16.66" enchant="4"/><!--Soul Separator--><!--TODO: Check chance-->
+			<create_item id="92939" count="1" chance="16.66" enchant="5"/><!--Soul Separator--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93157" name="Random Enhanced Blood Tornado Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_blood_tornado_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92940" count="1" chance="16.66"/><!--SBlood Tornado--><!--TODO: Check chance-->
+			<create_item id="92940" count="1" chance="16.66" enchant="1"/><!--Blood Tornado--><!--TODO: Check chance-->
+			<create_item id="92940" count="1" chance="16.66" enchant="2"/><!--Blood Tornado--><!--TODO: Check chance-->
+			<create_item id="92940" count="1" chance="16.66" enchant="3"/><!--Blood Tornado--><!--TODO: Check chance-->
+			<create_item id="92940" count="1" chance="16.66" enchant="4"/><!--Blood Tornado--><!--TODO: Check chance-->
+			<create_item id="92940" count="1" chance="16.66" enchant="5"/><!--Blood Tornado--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93158" name="Random Enhanced Dragon Grinder Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dragon_grinder_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92941" count="1" chance="16.66"/><!--Dragon Grinder--><!--TODO: Check chance-->
+			<create_item id="92941" count="1" chance="16.66" enchant="1"/><!--Dragon Grinder--><!--TODO: Check chance-->
+			<create_item id="92941" count="1" chance="16.66" enchant="2"/><!--Dragon Grinder--><!--TODO: Check chance-->
+			<create_item id="92941" count="1" chance="16.66" enchant="3"/><!--Dragon Grinder--><!--TODO: Check chance-->
+			<create_item id="92941" count="1" chance="16.66" enchant="4"/><!--Dragon Grinder--><!--TODO: Check chance-->
+			<create_item id="92941" count="1" chance="16.66" enchant="5"/><!--Dragon Grinder--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93159" name="Random Enhanced Carnage Bow Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_carnium_bow_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92942" count="1" chance="16.66"/><!--Carnage Bow--><!--TODO: Check chance-->
+			<create_item id="92942" count="1" chance="16.66" enchant="1"/><!--Carnage Bow--><!--TODO: Check chance-->
+			<create_item id="92942" count="1" chance="16.66" enchant="2"/><!--Carnage Bow--><!--TODO: Check chance-->
+			<create_item id="92942" count="1" chance="16.66" enchant="3"/><!--Carnage Bow--><!--TODO: Check chance-->
+			<create_item id="92942" count="1" chance="16.66" enchant="4"/><!--Carnage Bow--><!--TODO: Check chance-->
+			<create_item id="92942" count="1" chance="16.66" enchant="5"/><!--Carnage Bow--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93160" name="Random Enhanced Soul Bow Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_soul_bow_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92943" count="1" chance="16.66"/><!--Soul Bow--><!--TODO: Check chance-->
+			<create_item id="92943" count="1" chance="16.66" enchant="1"/><!--Soul Bow--><!--TODO: Check chance-->
+			<create_item id="92943" count="1" chance="16.66" enchant="2"/><!--Soul Bow--><!--TODO: Check chance-->
+			<create_item id="92943" count="1" chance="16.66" enchant="3"/><!--Soul Bow--><!--TODO: Check chance-->
+			<create_item id="92943" count="1" chance="16.66" enchant="4"/><!--Soul Bow--><!--TODO: Check chance-->
+			<create_item id="92943" count="1" chance="16.66" enchant="5"/><!--Soul Bow--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="93161" name="Random Enhanced Tallum Glaive Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_tallum_glaive_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92944" count="1" chance="16.6" /> 
+			<create_item id="92944" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92944" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92944" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92944" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92944" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93162" name="Random Enhanced Dark Legion's Edge Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dark_legions_edge_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92945" count="1" chance="16.6" /> 
+			<create_item id="92945" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92945" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92945" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92945" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92945" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93163" name="Random Enhanced Meteor Shower Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_meteor_shower_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92946" count="1" chance="16.6" /> 
+			<create_item id="92946" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92946" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92946" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92946" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92946" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93164" name="Random Enhanced Keshanberk*Keshanberk Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92947" count="1" chance="16.6" /> 
+			<create_item id="92947" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92947" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92947" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92947" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92947" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93165" name="Random Enhanced Keshanberk*Damascus Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92948" count="1" chance="16.6" /> 
+			<create_item id="92948" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92948" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92948" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92948" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92948" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93166" name="Random Enhanced Damascus*Damascus Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92949" count="1" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93167" name="Random Enhanced Infernal Master Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_inferno_master_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92950" count="1" chance="16.6" /> 
+			<create_item id="92950" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92950" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92950" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92950" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92950" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93168" name="Random Enhanced Spiritual Eye Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_eye_of_soul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92951" count="1" chance="16.6" /> 
+			<create_item id="92951" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92951" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92951" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92951" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92951" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93169" name="Random Enhanced Flaming Dragon Skull Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dragon_flame_head_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92952" count="1" chance="16.6" /> 
+			<create_item id="92952" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92952" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92952" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92952" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92952" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93170" name="Random Enhanced Destroyer Hammer Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_hammer_of_destroyer_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92953" count="1" chance="16.6" /> 
+			<create_item id="92953" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92953" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92953" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92953" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92953" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93171" name="Random Enhanced Doom Crusher Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_doom_crusher_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92954" count="1" chance="16.6" /> 
+			<create_item id="92954" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92954" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92954" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92954" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92954" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93172" name="Random Enhanced Sirra's Blade Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_sirr_blade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92955" count="1" chance="16.6" /> 
+			<create_item id="92955" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92955" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92955" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92955" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92955" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93173" name="Random Enhanced Sword of Ipos Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_sword_of_ipos_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92956" count="1" chance="16.6" /> 
+			<create_item id="92956" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92956" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92956" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92956" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92956" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93174" name="Random Enhanced Barakiel's Axe Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_barakiel_axe_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92957" count="1" chance="16.6" /> 
+			<create_item id="92957" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92957" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92957" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92957" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92957" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93175" name="Random Enhanced Behemoth' Tuning Fork Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_tuning_fork_of_behemoth_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92958" count="1" chance="16.6" /> 
+			<create_item id="92958" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92958" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92958" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92958" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92958" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93176" name="Random Enhanced Naga Storm Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_naga_storm_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92959" count="1" chance="16.6" /> 
+			<create_item id="92959" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92959" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92959" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92959" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92959" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93177" name="Random Enhanced Tiphon's Spear Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_tiphon_spear_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92960" count="1" chance="16.6" /> 
+			<create_item id="92960" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92960" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92960" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92960" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92960" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93178" name="Random Enhanced Shyeed's Bow Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_shyid_bow_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92961" count="1" chance="16.6" /> 
+			<create_item id="92961" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92961" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92961" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92961" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92961" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93179" name="Random Enhanced Sobekk's Hurricane Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_sobekk_hurricane_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92962" count="1" chance="16.6" /> 
+			<create_item id="92962" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92962" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92962" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92962" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92962" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93180" name="Random Enhanced Themis' Tongue Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_tongue_of_themis_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92963" count="1" chance="16.6" /> 
+			<create_item id="92963" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92963" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92963" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92963" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92963" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93181" name="Random Enhanced Cabrio's Hand Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_hand_of_cabrio_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92964" count="1" chance="16.6" /> 
+			<create_item id="92964" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92964" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92964" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92964" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92964" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93182" name="Random Enhanced Daimon Crystal Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_crystal_of_deamon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92965" count="1" chance="16.6" />
+			<create_item id="92965" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92965" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92965" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92965" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92965" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93183" name="Random Enhanced Damascus*Damascus Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92949" count="1" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92949" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93184" name="Random Enhanced Durendal Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_death_bringer_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92967" count="1" chance="16.6" /> 
+			<create_item id="92967" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92967" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92967" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92967" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92967" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93185" name="Random Enhanced Undertaker Crafting" add_name="Sealed">
+		<!-- Double-click to obtain a Sealed Undertaker enchanted from +0 to +5 at random. -->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_death_bringer_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92968" count="1" chance="16.6" /> 
+			<create_item id="92968" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92968" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92968" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92968" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92968" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93186" name="Random Enhanced Divine Pain Crafting" add_name="Sealed">
+		<!-- Double-click to obtain a Sealed Divine Pain enchanted from +0 to +5 at random. -->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_pain_of_godness_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92969" count="1" chance="16.6" /> 
+			<create_item id="92969" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92969" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92969" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92969" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92969" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93187" name="Random Enhanced Éclair Bijou Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_greed_stinger_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92970" count="1" chance="16.6" /> 
+			<create_item id="92970" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92970" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92970" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92970" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92970" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93188" name="Random Enhanced Lacerator Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_greed_stinger_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92971" count="1" chance="16.6" /> 
+			<create_item id="92971" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92971" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92971" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92971" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92971" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93189" name="Random Enhanced White Lightning Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.weapon_lightning_blaze_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92972" count="1" chance="16.6" /> 
+			<create_item id="92972" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92972" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92972" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92972" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92972" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93190" name="Random Enhanced Dark Crystal Breastplate Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t74_u_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92255" count="1" chance="16.6" /> 
+			<create_item id="92255" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92255" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92255" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92255" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92255" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93191" name="Random Enhanced Armor of Nightmare Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t80_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92256" count="1" chance="16.6" /> 
+			<create_item id="92256" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92256" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92256" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92256" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92256" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93192" name="Random Enhanced Dark Crystal Gaiters Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t74_l_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92257" count="1" chance="16.6" /> 
+			<create_item id="92257" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92257" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92257" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92257" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92257" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93193" name="Random Enhanced Dark Crystal Helmet Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92258" count="1" chance="16.6" /> 
+			<create_item id="92258" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92258" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92258" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92258" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92258" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93194" name="Random Enhanced Tallum Helmet Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92259" count="1" chance="16.6" /> 
+			<create_item id="92259" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92259" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92259" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92259" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92259" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93195" name="Random Enhanced Dark Crystal Shield Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.shield_dark_crystal_shield_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92260" count="1" chance="16.6" /> 
+			<create_item id="92260" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92260" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92260" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92260" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92260" count="1" enchant="5" chance="16.6" /> 	
+		</create_items>
+	</etcitem>
+	<etcitem id="93196" name="Random Enhanced Tallum Plate Armor Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t77_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92261" count="1" chance="16.6" /> 
+			<create_item id="92261" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92261" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92261" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92261" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92261" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93197" name="Random Enhanced Majestic Plate Armor Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t83_ul_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92262" count="1" chance="16.6" /> 
+			<create_item id="92262" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92262" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92262" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92262" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92262" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93198" name="Random Enhanced Dark Crystal Leather Armor Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t75_u_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92263" count="1" chance="16.6" /> 
+			<create_item id="92263" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92263" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92263" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92263" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92263" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+	<etcitem id="93199" name="Random Enhanced Dark Crystal Leggings Crafting" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.armor_t75_l_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92264" count="1" chance="16.6" /> 
+			<create_item id="92264" count="1" enchant="1" chance="16.6" /> 
+			<create_item id="92264" count="1" enchant="2" chance="16.6" /> 
+			<create_item id="92264" count="1" enchant="3" chance="16.6" /> 
+			<create_item id="92264" count="1" enchant="4" chance="16.6" /> 
+			<create_item id="92264" count="1" enchant="5" chance="16.6" /> 
+		</create_items>
+	</etcitem>
+</list>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="55300" levels="1" name="Buff for the Hero of Abandoned Camp">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i02"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55301" levels="1" name="Buff for the Hero of Abandoned Camp">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i02"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55302" levels="1" name="Buff for the Hero of Abandoned Camp">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i02"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55303" levels="1" name="Crude Box Acquisition Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i03"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55304" levels="1" name="Crude Box Acquisition Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i03"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55305" levels="1" name="Crude Box Acquisition Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i03"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55306" levels="1" name="Buff for the Hero of 2nd Floor of Cruma Tower">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i04"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55307" levels="1" name="Old Box Acquisition Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i04"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55308" levels="1" name="Old Box Acquisition Effect">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="BranchIcon.Icon.skill_g_field_special_buff_i04"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55309" levels="10" name="Earring of Chronicle Heir">
+		<set name="icon" value="icon.event_classic_ring"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="55310" levels="1" name="Holiday Hat">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.bm_romantic_chaperon_gold"/>
+		<set name="reuseDelay" value="21600000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="5000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55311" levels="1" name="Holiday Hat's Overwhelming Power">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill19226"/>
+		<set name="reuseDelay" value="3600000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55312" levels="1" name="Test Cube">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="82800000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="55313" levels="1" name="Test Cube">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="82800000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

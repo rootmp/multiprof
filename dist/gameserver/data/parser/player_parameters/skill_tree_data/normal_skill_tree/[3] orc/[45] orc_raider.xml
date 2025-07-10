@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="45"><!--Orc Raider-->
+		<skill id="312" level="1" min_level="20" cost="1000"/><!--Vicious Stance-->
+		<skill id="293" level="1" min_level="20" cost="1000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="1" min_level="20" cost="1000"/><!--Polearm Mastery-->
+		<skill id="227" level="1" min_level="20" cost="1000"/><!--Light Armor Mastery-->
+		<skill id="227" level="2" min_level="20" cost="1000"/><!--Light Armor Mastery-->
+		<skill id="257" level="1" min_level="20" cost="1000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="100" level="1" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="100" level="2" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="100" level="3" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="100" level="4" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="100" level="5" min_level="20" cost="1000"/><!--Shock Mastery-->
+		<skill id="231" level="1" min_level="20" cost="1000"/><!--Heavy Armor Mastery-->
+		<skill id="231" level="2" min_level="20" cost="1000"/><!--Heavy Armor Mastery-->
+		<skill id="45176" level="1" min_level="20" cost="1000"/><!--HP Recovery-->
+		<skill id="45177" level="1" min_level="20" cost="1000"/><!--MP Recovery-->
+		<skill id="245" level="1" min_level="20" cost="1000"/><!--Wild Sweep-->
+		<skill id="245" level="2" min_level="20" cost="1000"/><!--Wild Sweep-->
+		<skill id="245" level="3" min_level="20" cost="1000"/><!--Wild Sweep-->
+		<skill id="255" level="1" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="2" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="3" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="4" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="255" level="5" min_level="20" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="3" level="10" min_level="20" cost="1000"/><!--Power Strike-->
+		<skill id="3" level="11" min_level="20" cost="1000"/><!--Power Strike-->
+		<skill id="3" level="12" min_level="20" cost="1000"/><!--Power Strike-->
+		<skill id="45136" level="1" min_level="20" cost="1000"/><!--Chant of Empower-->
+		<skill id="45124" level="1" min_level="20" cost="1000"/><!--Chant of Wind Walk-->
+		<skill id="45126" level="2" min_level="20" cost="1000"/><!--Chant of Might-->
+		<skill id="45135" level="1" min_level="20" cost="1000"/><!--Chant of Acumen-->
+		<skill id="45123" level="1" min_level="20" cost="1000"/><!--Chant of Haste-->
+		<skill id="45121" level="1" min_level="20" cost="1000"/><!--Chant of Focus-->
+		<skill id="45129" level="1" min_level="20" cost="1000"/><!--Chant of Clarity-->
+		<skill id="45122" level="1" min_level="20" cost="1000"/><!--Chant of Death Whisper-->
+		<skill id="45127" level="2" min_level="20" cost="1000"/><!--Chant of Shield-->
+		<skill id="34" level="1" min_level="20" cost="1000"/><!--Bandage-->
+		<skill id="91" level="2" min_level="20" cost="1000"/><!--Ability to Protect-->
+		<skill id="211" level="1" min_level="20" cost="1000"/><!--Boost HP-->
+		<skill id="70" level="3" min_level="20" cost="1000"/><!--Emergency Rescue-->
+		<skill id="100" level="6" min_level="21" cost="1000"/><!--Shock Mastery-->
+		<skill id="255" level="6" min_level="21" cost="1000"/><!--Enhanced Weapon-->
+		<skill id="227" level="3" min_level="22" cost="2800"/><!--Light Armor Mastery-->
+		<skill id="100" level="7" min_level="22" cost="2800"/><!--Shock Mastery-->
+		<skill id="231" level="3" min_level="22" cost="2800"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="4" min_level="22" cost="2800"/><!--Wild Sweep-->
+		<skill id="255" level="7" min_level="22" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="3" level="13" min_level="22" cost="2800"/><!--Power Strike-->
+		<skill id="100" level="8" min_level="23" cost="2800"/><!--Shock Mastery-->
+		<skill id="245" level="5" min_level="23" cost="2800"/><!--Wild Sweep-->
+		<skill id="255" level="8" min_level="23" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="3" level="14" min_level="23" cost="2800"/><!--Power Strike-->
+		<skill id="312" level="2" min_level="24" cost="2800"/><!--Vicious Stance-->
+		<skill id="212" level="1" min_level="24" cost="2800"/><!--Fast HP Recovery-->
+		<skill id="293" level="2" min_level="24" cost="2800"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="2" min_level="24" cost="2800"/><!--Polearm Mastery-->
+		<skill id="227" level="4" min_level="24" cost="2800"/><!--Light Armor Mastery-->
+		<skill id="257" level="2" min_level="24" cost="2800"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="100" level="9" min_level="24" cost="2800"/><!--Shock Mastery-->
+		<skill id="231" level="4" min_level="24" cost="2800"/><!--Heavy Armor Mastery-->
+		<skill id="94" level="1" min_level="24" cost="2800"/><!--Rage-->
+		<skill id="245" level="6" min_level="24" cost="2800"/><!--Wild Sweep-->
+		<skill id="148" level="1" min_level="24" cost="2800"/><!--Vital Force-->
+		<skill id="255" level="9" min_level="24" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="3" level="15" min_level="24" cost="2800"/><!--Power Strike-->
+		<skill id="256" level="1" min_level="24" cost="2800"/><!--Accuracy-->
+		<skill id="100" level="10" min_level="25" cost="2800"/><!--Shock Mastery-->
+		<skill id="255" level="10" min_level="25" cost="2800"/><!--Enhanced Weapon-->
+		<skill id="77" level="2" min_level="25" cost="2800"/><!--Ability to Attack-->
+		<skill id="70" level="4" min_level="25" cost="2800"/><!--Emergency Rescue-->
+		<skill id="216" level="3" min_level="26" cost="5700"/><!--Polearm Mastery-->
+		<skill id="227" level="5" min_level="26" cost="5700"/><!--Light Armor Mastery-->
+		<skill id="257" level="3" min_level="26" cost="5700"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="100" level="11" min_level="26" cost="5700"/><!--Shock Mastery-->
+		<skill id="231" level="5" min_level="26" cost="5700"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="7" min_level="26" cost="5700"/><!--Wild Sweep-->
+		<skill id="255" level="11" min_level="26" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="3" level="16" min_level="26" cost="5700"/><!--Power Strike-->
+		<skill id="227" level="6" min_level="27" cost="5700"/><!--Light Armor Mastery-->
+		<skill id="100" level="12" min_level="27" cost="5700"/><!--Shock Mastery-->
+		<skill id="231" level="6" min_level="27" cost="5700"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="8" min_level="27" cost="5700"/><!--Wild Sweep-->
+		<skill id="255" level="12" min_level="27" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="3" level="17" min_level="27" cost="5700"/><!--Power Strike-->
+		<skill id="312" level="3" min_level="28" cost="5700"/><!--Vicious Stance-->
+		<skill id="121" level="1" min_level="28" cost="5700"/><!--Battle Roar-->
+		<skill id="293" level="3" min_level="28" cost="5700"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="4" min_level="28" cost="5700"/><!--Polearm Mastery-->
+		<skill id="227" level="7" min_level="28" cost="5700"/><!--Light Armor Mastery-->
+		<skill id="257" level="4" min_level="28" cost="5700"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="100" level="13" min_level="28" cost="5700"/><!--Shock Mastery-->
+		<skill id="231" level="7" min_level="28" cost="5700"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="9" min_level="28" cost="5700"/><!--Wild Sweep-->
+		<skill id="255" level="13" min_level="28" cost="5700"/><!--Enhanced Weapon-->
+		<skill id="3" level="18" min_level="28" cost="5700"/><!--Power Strike-->
+		<skill id="211" level="2" min_level="28" cost="5700"/><!--Boost HP-->
+		<skill id="100" level="14" min_level="29" cost="11000"/><!--Shock Mastery-->
+		<skill id="255" level="14" min_level="29" cost="11000"/><!--Enhanced Weapon-->
+		<skill id="216" level="5" min_level="30" cost="11000"/><!--Polearm Mastery-->
+		<skill id="227" level="8" min_level="30" cost="11000"/><!--Light Armor Mastery-->
+		<skill id="257" level="5" min_level="30" cost="11000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="100" level="15" min_level="30" cost="11000"/><!--Shock Mastery-->
+		<skill id="231" level="8" min_level="30" cost="11000"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="10" min_level="30" cost="11000"/><!--Wild Sweep-->
+		<skill id="255" level="15" min_level="30" cost="11000"/><!--Enhanced Weapon-->
+		<skill id="3" level="19" min_level="30" cost="11000"/><!--Power Strike-->
+		<skill id="45136" level="2" min_level="30" cost="11000"/><!--Chant of Empower-->
+		<skill id="45137" level="1" min_level="30" cost="11000"/><!--Chant of Wild Magic-->
+		<skill id="45128" level="1" min_level="30" cost="11000"/><!--Chant of Berserker Spirit-->
+		<skill id="45124" level="2" min_level="30" cost="11000"/><!--Chant of Wind Walk-->
+		<skill id="45125" level="1" min_level="30" cost="11000"/><!--Chant of Magic Barrier-->
+		<skill id="45135" level="2" min_level="30" cost="11000"/><!--Chant of Acumen-->
+		<skill id="45121" level="2" min_level="30" cost="11000"/><!--Chant of Focus-->
+		<skill id="45129" level="2" min_level="30" cost="11000"/><!--Chant of Clarity-->
+		<skill id="45122" level="2" min_level="30" cost="11000"/><!--Chant of Death Whisper-->
+		<skill id="70" level="5" min_level="30" cost="11000"/><!--Emergency Rescue-->
+		<skill id="227" level="9" min_level="31" cost="11000"/><!--Light Armor Mastery-->
+		<skill id="231" level="9" min_level="31" cost="11000"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="11" min_level="31" cost="11000"/><!--Wild Sweep-->
+		<skill id="3" level="20" min_level="31" cost="11000"/><!--Power Strike-->
+		<skill id="176" level="1" min_level="32" cost="11000"/><!--Frenzy-->
+		<skill id="312" level="4" min_level="32" cost="11000"/><!--Vicious Stance-->
+		<skill id="212" level="2" min_level="32" cost="11000"/><!--Fast HP Recovery-->
+		<skill id="293" level="4" min_level="32" cost="11000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="6" min_level="32" cost="11000"/><!--Polearm Mastery-->
+		<skill id="227" level="10" min_level="32" cost="11000"/><!--Light Armor Mastery-->
+		<skill id="257" level="6" min_level="32" cost="11000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="10" min_level="32" cost="11000"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="12" min_level="32" cost="11000"/><!--Wild Sweep-->
+		<skill id="148" level="2" min_level="32" cost="11000"/><!--Vital Force-->
+		<skill id="3" level="21" min_level="32" cost="11000"/><!--Power Strike-->
+		<skill id="70" level="6" min_level="32" cost="11000"/><!--Emergency Rescue-->
+		<skill id="216" level="7" min_level="34" cost="20000"/><!--Polearm Mastery-->
+		<skill id="227" level="11" min_level="34" cost="20000"/><!--Light Armor Mastery-->
+		<skill id="257" level="7" min_level="34" cost="20000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="11" min_level="34" cost="20000"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="13" min_level="34" cost="20000"/><!--Wild Sweep-->
+		<skill id="3" level="22" min_level="34" cost="20000"/><!--Power Strike-->
+		<skill id="70" level="7" min_level="34" cost="20000"/><!--Emergency Rescue-->
+		<skill id="227" level="12" min_level="35" cost="20000"/><!--Light Armor Mastery-->
+		<skill id="231" level="12" min_level="35" cost="20000"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="14" min_level="35" cost="20000"/><!--Wild Sweep-->
+		<skill id="3" level="23" min_level="35" cost="20000"/><!--Power Strike-->
+		<skill id="312" level="5" min_level="36" cost="20000"/><!--Vicious Stance-->
+		<skill id="293" level="5" min_level="36" cost="20000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="8" min_level="36" cost="20000"/><!--Polearm Mastery-->
+		<skill id="227" level="13" min_level="36" cost="20000"/><!--Light Armor Mastery-->
+		<skill id="257" level="8" min_level="36" cost="20000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="13" min_level="36" cost="20000"/><!--Heavy Armor Mastery-->
+		<skill id="245" level="15" min_level="36" cost="20000"/><!--Wild Sweep-->
+		<skill id="287" level="1" min_level="36" cost="20000"/><!--Lionheart-->
+		<skill id="3" level="24" min_level="36" cost="20000"/><!--Power Strike-->
+		<skill id="139" level="1" min_level="36" cost="20000"/><!--Guts-->
+		<skill id="211" level="3" min_level="36" cost="20000"/><!--Boost HP-->
+		<skill id="70" level="8" min_level="36" cost="20000"/><!--Emergency Rescue-->
+		<skill id="70" level="9" min_level="38" cost="20000"/><!--Emergency Rescue-->
+	</normal_skill_tree>
+</list>

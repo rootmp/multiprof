@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="92400" name="Forgotten Primeval Garden's Time Stone" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.timezone_refill_3"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="handler" value="SkillsReduce"/>
+		<set name="reuse_type" value="EVERY_DAY_AT_6_30"/>
+		<skills>
+			<skill id="40060" level="1"/> <!-- Primeval Garden's Time Stone -->
+		</skills>
+	</etcitem>
+	<etcitem id="92401" name="Spellbook: White Guardian">
+		<set name="price" value="9300000"/>
+		<set name="grind_commission" value="93000"/>
+		<set name="grind_point" value="4650000"/>
+		<set name="icon" value="icon.si_phanteon_book"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92402" name="Scroll: Enchant Talisman of Speed" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.tallisman_rapid_scrl"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+		<skills>
+			<skill id="40062" level="1" /> <!-- Scroll: Enchant Talisman of Speed -->
+		</skills>
+	</etcitem>
+	<armor id="92403" name="Talisman of Speed" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.tallisman_rapid"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<enchant_options>
+			<level value="0">
+				<option id="33415"/>
+			</level>
+			<level value="1">
+				<option id="33416"/>
+			</level>
+			<level value="2">
+				<option id="33417"/>
+			</level>
+			<level value="3">
+				<option id="33418"/>
+			</level>
+			<level value="4">
+				<option id="33419"/>
+			</level>
+			<level value="5">
+				<option id="33420"/>
+			</level>
+			<level value="6">
+				<option id="33421"/>
+			</level>
+			<level value="7">
+				<option id="33422"/>
+			</level>
+			<level value="8">
+				<option id="33423"/>
+			</level>
+			<level value="9">
+				<option id="33424"/>
+			</level>
+			<level value="10">
+				<option id="33425"/>
+			</level>
+		</enchant_options>
+	</armor>
+	<weapon id="92404" name="Zaken's Blood Sword">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.special_weapon_onehandsword"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="271"/>
+			<add stat="mAtk" order="0x10" value="145"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+		<enchant_options>
+			<level value="0">
+				<option id="33448"/>
+			</level>
+			<level value="1">
+				<option id="33449"/>
+			</level>
+			<level value="2">
+				<option id="33450"/>
+			</level>
+			<level value="3">
+				<option id="33451"/>
+			</level>
+			<level value="4">
+				<option id="33452"/>
+			</level>
+			<level value="5">
+				<option id="33453"/>
+			</level>
+			<level value="6">
+				<option id="33454"/>
+			</level>
+			<level value="7">
+				<option id="33455"/>
+			</level>
+			<level value="8">
+				<option id="33456"/>
+			</level>
+			<level value="9">
+				<option id="33457"/>
+			</level>
+			<level value="10">
+				<option id="33458"/>
+			</level>
+		</enchant_options>
+	</weapon>
+	<weapon id="92405" name="Core's Plasmic Bow">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="5"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_karupis_i00"/>
+		<set name="type" value="BOW"/>
+		<set name="weight" value="1640"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="2"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="mp_consume" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="610"/>
+			<add stat="mAtk" order="0x10" value="160"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+		<enchant_options>
+			<level value="0">
+				<option id="33470"/>
+			</level>
+			<level value="1">
+				<option id="33471"/>
+			</level>
+			<level value="2">
+				<option id="33472"/>
+			</level>
+			<level value="3">
+				<option id="33473"/>
+			</level>
+			<level value="4">
+				<option id="33474"/>
+			</level>
+			<level value="5">
+				<option id="33475"/>
+			</level>
+			<level value="6">
+				<option id="33476"/>
+			</level>
+			<level value="7">
+				<option id="33477"/>
+			</level>
+			<level value="8">
+				<option id="33478"/>
+			</level>
+			<level value="9">
+				<option id="33479"/>
+			</level>
+			<level value="10">
+				<option id="33480"/>
+			</level>
+		</enchant_options>
+	</weapon>
+	<weapon id="92406" name="Queen Ant's Stone Spear" add_name="Not available">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys3.Icon.g_melisa_stormer_i00"/>
+		<set name="type" value="POLE"/>
+		<set name="weight" value="1820"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="251"/>
+			<add stat="mAtk" order="0x10" value="137"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="92407" name="Orfen's Venom Sword">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="10"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_the_two_handed_sword_of_hero_i01"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1820"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="329"/>
+			<add stat="mAtk" order="0x10" value="145"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+		<enchant_options>
+			<level value="0">
+				<option id="33459"/>
+			</level>
+			<level value="1">
+				<option id="33460"/>
+			</level>
+			<level value="2">
+				<option id="33461"/>
+			</level>
+			<level value="3">
+				<option id="33462"/>
+			</level>
+			<level value="4">
+				<option id="33463"/>
+			</level>
+			<level value="5">
+				<option id="33464"/>
+			</level>
+			<level value="6">
+				<option id="33465"/>
+			</level>
+			<level value="7">
+				<option id="33466"/>
+			</level>
+			<level value="8">
+				<option id="33467"/>
+			</level>
+			<level value="9">
+				<option id="33468"/>
+			</level>
+			<level value="10">
+				<option id="33469"/>
+			</level>
+		</enchant_options>
+	</weapon>
+	<weapon id="92408" name="Baium's Thunder Breaker">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="5"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_terakan_i00"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="930"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="238"/>
+			<add stat="mAtk" order="0x10" value="145"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+		<enchant_options>
+			<level value="0">
+				<option id="33426"/>
+			</level>
+			<level value="1">
+				<option id="33427"/>
+			</level>
+			<level value="2">
+				<option id="33428"/>
+			</level>
+			<level value="3">
+				<option id="33429"/>
+			</level>
+			<level value="4">
+				<option id="33430"/>
+			</level>
+			<level value="5">
+				<option id="33431"/>
+			</level>
+			<level value="6">
+				<option id="33432"/>
+			</level>
+			<level value="7">
+				<option id="33433"/>
+			</level>
+			<level value="8">
+				<option id="33434"/>
+			</level>
+			<level value="9">
+				<option id="33435"/>
+			</level>
+			<level value="10">
+				<option id="33436"/>
+			</level>
+		</enchant_options>
+	</weapon>
+	<etcitem id="92409" name="Special Dragon Fruit Lv. 2">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_dragon_fruit"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<skills>
+			<skill id="39269" level="2" /> <!-- Special Dragon Fruit Lv. 2 -->
+		</skills>
+	</etcitem>
+	<etcitem id="92410" name="Special Dragon's Miracle Potion Lv. 2">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_dragon_posion"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<skills>
+			<skill id="50131" level="2" /> <!-- Special Dragon's Miracle Potion Lv. 2 -->
+		</skills>
+	</etcitem>
+	<etcitem id="92411" name="Sealed Treasure Chest">
+		<set name="icon" value="icon.etc_readybox_gold"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92412" name="Sealed Rune of Power">
+		<set name="icon" value="icon.etc_powder_orange_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92413" name="Mysterious Pack Lv. 1">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_pi_box_joy_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92414" name="Mysterious Pack Lv. 2">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.npoint_earthworm_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92415" name="Mysterious Pack Lv. 3">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_pi_box_belief_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92416" name="Mysterious Pack Lv. 4">
+		<set name="icon" value="icon.npoint_valakas_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92417" name="Mysterious Pack Lv. 5">
+		<set name="icon" value="icon.npoint_tauti_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92418" name="Mysterious Pack Lv. 6">
+		<set name="icon" value="icon.npoint_antaras_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92419" name="Mysterious Pack Lv. 7">
+		<set name="icon" value="icon.etc_pi_box_love_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92420" name="Mysterious Pack Lv. 8">
+		<set name="icon" value="icon.etc_pi_box_wish_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<weapon id="92421" name="Queen Ant's Stone Breaker">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="19"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.special_weapon_onehandblunt"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1550"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="271"/>
+			<add stat="mAtk" order="0x10" value="182"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+		<enchant_options>
+			<level value="0">
+				<option id="33437"/>
+			</level>
+			<level value="1">
+				<option id="33438"/>
+			</level>
+			<level value="2">
+				<option id="33439"/>
+			</level>
+			<level value="3">
+				<option id="33440"/>
+			</level>
+			<level value="4">
+				<option id="33441"/>
+			</level>
+			<level value="5">
+				<option id="33442"/>
+			</level>
+			<level value="6">
+				<option id="33443"/>
+			</level>
+			<level value="7">
+				<option id="33444"/>
+			</level>
+			<level value="8">
+				<option id="33445"/>
+			</level>
+			<level value="9">
+				<option id="33446"/>
+			</level>
+			<level value="10">
+				<option id="33447"/>
+			</level>
+		</enchant_options>
+	</weapon>
+	<etcitem id="92422" name="Tower of Insolence (1st Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92423" name="Tower of Insolence (2nd Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92424" name="Tower of Insolence (3rd Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92425" name="Tower of Insolence (4th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92426" name="Tower of Insolence (5th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92427" name="Tower of Insolence (6th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92428" name="Tower of Insolence (7th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92429" name="Tower of Insolence (8th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92430" name="Tower of Insolence (9th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92431" name="Tower of Insolence (10th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92432" name="Tower of Insolence (11th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92433" name="Tower of Insolence (12th Floor) Stone of Memory">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_ancient_tablet_i00"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+	</etcitem>
+	<etcitem id="92434" name="Mysterious Talisman Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91076" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Fragment -->
+			<capsuled_item id="91767" min_count="1" max_count="1" chance="20" /> <!-- Enchant Kit: Talisman of Aden -->
+			<capsuled_item id="92020" min_count="1" max_count="1" chance="20" /> <!-- Enchant Kit: Talisman of Eva -->
+			<capsuled_item id="92435" min_count="1" max_count="1" chance="20" /> <!-- Mysterious Talisman Pack Lv. 1 -->
+			<capsuled_item id="92459" min_count="1" max_count="1" chance="20" /> <!-- Talisman of Speed Pack -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92435" name="Mysterious Talisman Pack Lv. 1">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92436" min_count="1" max_count="1" chance="20" /> <!-- Mysterious Talisman Pack Lv. 2 -->
+			<capsuled_item id="92443" min_count="1" max_count="1" chance="20" /> <!-- +1 Talisman of Aden Pack -->
+			<capsuled_item id="92451" min_count="1" max_count="1" chance="20" /> <!-- +1 Talisman of Eva Pack -->
+			<capsuled_item id="92460" min_count="1" max_count="1" chance="20" /> <!-- +1 Talisman of Speed Pack -->
+			<capsuled_item id="92468" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Pack Lv. 1 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92436" name="Mysterious Talisman Pack Lv. 2">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92437" min_count="1" max_count="1" chance="20" /> <!-- Mysterious Talisman Pack Lv. 3 -->
+			<capsuled_item id="92444" min_count="1" max_count="1" chance="20" /> <!-- +2 Talisman of Aden Pack -->
+			<capsuled_item id="92452" min_count="1" max_count="1" chance="20" /> <!-- +2 Talisman of Eva Pack -->
+			<capsuled_item id="92461" min_count="1" max_count="1" chance="20" /> <!-- +2 Talisman of Speed Pack -->
+			<capsuled_item id="92469" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Pack Lv. 2 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92437" name="Mysterious Talisman Pack Lv. 3">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92438" min_count="1" max_count="1" chance="20" /> <!-- Mysterious Talisman Pack Lv. 4 -->
+			<capsuled_item id="92445" min_count="1" max_count="1" chance="20" /> <!-- +3 Talisman of Aden Pack -->
+			<capsuled_item id="92453" min_count="1" max_count="1" chance="20" /> <!-- +3 Talisman of Eva Pack -->
+			<capsuled_item id="92462" min_count="1" max_count="1" chance="20" /> <!-- +3 Talisman of Speed Pack -->
+			<capsuled_item id="92470" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Pack Lv. 3 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92438" name="Mysterious Talisman Pack Lv. 4">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92439" min_count="1" max_count="1" chance="20" /> <!-- Mysterious Talisman Pack Lv. 5 -->
+			<capsuled_item id="92446" min_count="1" max_count="1" chance="20" /> <!-- +4 Talisman of Aden Pack -->
+			<capsuled_item id="92454" min_count="1" max_count="1" chance="20" /> <!-- +4 Talisman of Eva Pack -->
+			<capsuled_item id="92463" min_count="1" max_count="1" chance="20" /> <!-- +4 Talisman of Speed Pack -->
+			<capsuled_item id="92471" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Pack Lv. 4 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92439" name="Mysterious Talisman Pack Lv. 5">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92440" min_count="1" max_count="1" chance="20" /> <!-- Mysterious Talisman Pack Lv. 6 -->
+			<capsuled_item id="92447" min_count="1" max_count="1" chance="20" /> <!-- +5 Talisman of Aden Pack -->
+			<capsuled_item id="92455" min_count="1" max_count="1" chance="20" /> <!-- +5 Talisman of Eva Pack -->
+			<capsuled_item id="92464" min_count="1" max_count="1" chance="20" /> <!-- +5 Talisman of Speed Pack -->
+			<capsuled_item id="92472" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Pack Lv. 5 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92440" name="Mysterious Talisman Pack Lv. 6">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.etc_vip_present_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92441" min_count="1" max_count="1" chance="20" /> <!-- Mysterious Talisman Pack Lv. 7 -->
+			<capsuled_item id="92448" min_count="1" max_count="1" chance="20" /> <!-- +6 Talisman of Aden Pack -->
+			<capsuled_item id="92456" min_count="1" max_count="1" chance="20" /> <!-- +6 Talisman of Eva Pack -->
+			<capsuled_item id="92465" min_count="1" max_count="1" chance="20" /> <!-- +6 Talisman of Speed Pack -->
+			<capsuled_item id="92473" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Pack Lv. 6 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92441" name="Mysterious Talisman Pack Lv. 7">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sayha_silver_present"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92442" min_count="1" max_count="1" chance="20" /> <!-- Mysterious Talisman Pack Lv. 8 -->
+			<capsuled_item id="92449" min_count="1" max_count="1" chance="20" /> <!-- +7 Talisman of Aden Pack -->
+			<capsuled_item id="92457" min_count="1" max_count="1" chance="20" /> <!-- +7 Talisman of Eva Pack -->
+			<capsuled_item id="92466" min_count="1" max_count="1" chance="20" /> <!-- +7 Talisman of Speed Pack -->
+			<capsuled_item id="92474" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Pack Lv. 7 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92442" name="Mysterious Talisman Pack Lv. 8">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sayha_gold_present"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49683" min_count="1" max_count="1" chance="20" /> <!-- Talisman of Baium -->
+			<capsuled_item id="92450" min_count="1" max_count="1" chance="20" /> <!-- +8 Talisman of Aden Pack -->
+			<capsuled_item id="92458" min_count="1" max_count="1" chance="20" /> <!-- +8 Talisman of Eva Pack -->
+			<capsuled_item id="92467" min_count="1" max_count="1" chance="20" /> <!-- +8 Talisman of Speed Pack -->
+			<capsuled_item id="92475" min_count="1" max_count="1" chance="20" /> <!-- Venir's Talisman Pack Lv. 8 -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92443" name="+1 Talisman of Aden Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="1"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92444" name="+2 Talisman of Aden Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="2"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92445" name="+3 Talisman of Aden Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="3"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92446" name="+4 Talisman of Aden Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="4"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92447" name="+5 Talisman of Aden Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="5"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92448" name="+6 Talisman of Aden Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="6"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92449" name="+7 Talisman of Aden Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="7"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92450" name="+8 Talisman of Aden Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_sheep_agathion_30d_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91745" min_count="1" max_count="1" chance="100" enchant="8"/><!--Talisman of Aden-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92451" name="+1 Talisman of Eva Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92018" min_count="1" max_count="1" chance="100" enchant="1"/><!--Talisman of Eva-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92452" name="+2 Talisman of Eva Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92018" min_count="1" max_count="1" chance="100" enchant="2"/><!--Talisman of Eva-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92453" name="+3 Talisman of Eva Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92018" min_count="1" max_count="1" chance="100" enchant="3"/><!--Talisman of Eva-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92454" name="+4 Talisman of Eva Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92018" min_count="1" max_count="1" chance="100" enchant="4"/><!--Talisman of Eva-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92455" name="+5 Talisman of Eva Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92018" min_count="1" max_count="1" chance="100" enchant="5"/><!--Talisman of Eva-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92456" name="+6 Talisman of Eva Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92018" min_count="1" max_count="1" chance="100" enchant="6"/><!--Talisman of Eva-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92457" name="+7 Talisman of Eva Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92018" min_count="1" max_count="1" chance="100" enchant="7"/><!--Talisman of Eva-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92458" name="+8 Talisman of Eva Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92018" min_count="1" max_count="1" chance="100" enchant="8"/><!--Talisman of Eva-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92459" name="Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92460" name="+1 Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100" enchant="1"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92461" name="+2 Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100" enchant="2"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92462" name="+3 Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100" enchant="3"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92463" name="+4 Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100" enchant="4"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92464" name="+5 Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100" enchant="5"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92465" name="+6 Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100" enchant="6"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92466" name="+7 Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100" enchant="7"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92467" name="+8 Talisman of Speed Pack">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="icon.bm_pirate_king_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92403" min_count="1" max_count="1" chance="100" enchant="8"/><!--Talisman of Speed-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92468" name="Venir's Talisman Pack Lv. 1">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91077" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 1-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92469" name="Venir's Talisman Pack Lv. 2">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91078" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 2-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92470" name="Venir's Talisman Pack Lv. 3">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91079" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 3-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92471" name="Venir's Talisman Pack Lv. 4">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91080" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 4-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92472" name="Venir's Talisman Pack Lv. 5">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91081" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 5-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92473" name="Venir's Talisman Pack Lv. 6">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91082" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 6-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92474" name="Venir's Talisman Pack Lv. 7">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91083" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 7-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92475" name="Venir's Talisman Pack Lv. 8">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="icon" value="BranchIcon.Icon.bm_special_pendant_abradant_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91084" min_count="1" max_count="1" chance="100"/><!--Venir's Talisman Lv. 8-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="92476" name="Metal Ingot">
+		<set name="grind_commission" value="10"/>
+		<set name="grind_point" value="500"/>
+		<set name="icon" value="icon.etc_lump_gray_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1000"/>
+	</etcitem>
+	<etcitem id="92477" name="Wood">
+		<set name="grind_commission" value="10"/>
+		<set name="grind_point" value="500"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1000"/>
+	</etcitem>
+	<etcitem id="92478" name="Varnish">
+		<set name="grind_commission" value="10"/>
+		<set name="grind_point" value="500"/>
+		<set name="icon" value="icon.etc_pouch_yellow_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1000"/>
+	</etcitem>
+	<etcitem id="92479" name="Metallograph">
+		<set name="grind_commission" value="10"/>
+		<set name="grind_point" value="500"/>
+		<set name="icon" value="icon.etc_suede_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1000"/>
+	</etcitem>
+	<etcitem id="92480" name="Leather">
+		<set name="grind_commission" value="10"/>
+		<set name="grind_point" value="500"/>
+		<set name="icon" value="icon.etc_leather_brown_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1000"/>
+	</etcitem>
+	<etcitem id="92481" name="Cloth">
+		<set name="grind_commission" value="10"/>
+		<set name="grind_point" value="500"/>
+		<set name="icon" value="icon.etc_piece_of_cloth_white_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1000"/>
+	</etcitem>
+	<etcitem id="92482" name="Item Points">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="icon" value="icon.etc_pccafe_point_i00"/>
+		<set name="weight" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+	</etcitem>
+	<etcitem id="92483" name="Necklace of Anguish Chain ">
+		<set name="grind_commission" value="47"/>
+		<set name="grind_point" value="2340"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="4680"/>
+	</etcitem>
+	<etcitem id="92484" name="Necklace of Wisdom Chain">
+		<set name="grind_commission" value="119"/>
+		<set name="grind_point" value="5950"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="11900"/>
+	</etcitem>
+	<etcitem id="92485" name="Blue Diamond Necklace Gem">
+		<set name="grind_commission" value="213"/>
+		<set name="grind_point" value="10650"/>
+		<set name="icon" value="icon.etc_gem_blue_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="21300"/>
+	</etcitem>
+	<etcitem id="92486" name="Necklace of Devotion Chain">
+		<set name="grind_commission" value="120"/>
+		<set name="grind_point" value="5983"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="11967"/>
+	</etcitem>
+	<etcitem id="92487" name="Magic Necklace Chain">
+		<set name="grind_commission" value="190"/>
+		<set name="grind_point" value="9467"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="18934"/>
+	</etcitem>
+	<etcitem id="92488" name="Tiger's Eye Stone">
+		<set name="grind_commission" value="215"/>
+		<set name="grind_point" value="10717"/>
+		<set name="icon" value="icon.etc_jewel_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="21434"/>
+	</etcitem>
+	<etcitem id="92489" name="Elven Earring Beads">
+		<set name="grind_commission" value="312"/>
+		<set name="grind_point" value="15567"/>
+		<set name="icon" value="BranchSys2.icon.etc_elvenearing_beads_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="31134"/>
+	</etcitem>
+	<etcitem id="92490" name="Elven Ring Piece">
+		<set name="grind_commission" value="208"/>
+		<set name="grind_point" value="10383"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="20767"/>
+	</etcitem>
+	<etcitem id="92491" name="Elven Necklace Beads">
+		<set name="grind_commission" value="417"/>
+		<set name="grind_point" value="20833"/>
+		<set name="icon" value="BranchSys2.icon.etc_elvennecklace_beads_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="41667"/>
+	</etcitem>
+	<etcitem id="92492" name="Onyx Beast's Eye Earring Gemstone">
+		<set name="grind_commission" value="404"/>
+		<set name="grind_point" value="20167"/>
+		<set name="icon" value="icon.etc_bead_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="40334"/>
+	</etcitem>
+	<etcitem id="92493" name="Mithril Ring Wire">
+		<set name="grind_commission" value="270"/>
+		<set name="grind_point" value="13467"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="26934"/>
+	</etcitem>
+	<etcitem id="92494" name="Dark Necklace Gem">
+		<set name="grind_commission" value="540"/>
+		<set name="grind_point" value="27000"/>
+		<set name="icon" value="icon.etc_gem_black_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="54000"/>
+	</etcitem>
+	<etcitem id="92495" name="Moonstone Earring Wire">
+		<set name="grind_commission" value="310"/>
+		<set name="grind_point" value="15500"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="31000"/>
+	</etcitem>
+	<etcitem id="92496" name="Aquastone Ring Wire">
+		<set name="grind_commission" value="206"/>
+		<set name="grind_point" value="10300"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="20600"/>
+	</etcitem>
+	<etcitem id="92497" name="Aquastone Necklace Chain">
+		<set name="grind_commission" value="414"/>
+		<set name="grind_point" value="20700"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="41400"/>
+	</etcitem>
+	<etcitem id="92498" name="Earring of Protection Gemstone">
+		<set name="grind_commission" value="392"/>
+		<set name="grind_point" value="19600"/>
+		<set name="icon" value="icon.etc_gem_yellow_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="39200"/>
+	</etcitem>
+	<etcitem id="92499" name="Ring of Protection Gemstone">
+		<set name="grind_commission" value="260"/>
+		<set name="grind_point" value="13000"/>
+		<set name="icon" value="icon.etc_gem_yellow_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="26000"/>
+	</etcitem>
+</list>

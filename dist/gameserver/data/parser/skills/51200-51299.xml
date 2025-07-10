@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="51200" levels="1" name="High Priest Energy">
+		<set name="icon" value="icon.bm2018_healer_i01"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51201" levels="1" name="Blood Noblesse Energy">
+		<set name="icon" value="icon.bm2018_rednoblesse_i01"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51202" levels="1" name="White Noblesse Energy">
+		<set name="icon" value="icon.bm2018_whitenoblesse_i01"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51203" levels="1" name="Berserker Spirit">
+		<set name="effectPoint" value="20"/>
+		<set name="icon" value="icon.bm2018_dragon_i02"/>
+		<set name="reuseDelay" value="290000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51204" levels="1" name="Ninja Assassin - Cancel Target">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51205" levels="1" name="Blue Mustekeer - Stun">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-5"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51206" levels="1" name="Valkyrie - Paralysis">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-5"/>
+		<set name="icon" value="icon.skill1170"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51207" levels="1" name="Wild Wolf - Hex">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-5"/>
+		<set name="icon" value="icon.skill0122"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51208" levels="1" name="Pirate's Blessing">
+		<set name="effectPoint" value="20"/>
+		<set name="icon" value="icon.bm2018_pirate_i02"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51209" levels="1" name="Purple Cowboy - Physical Attack">
+		<set name="effectPoint" value="-5"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51210" levels="1" name="High Priest - Blessing of Eva">
+		<set name="effectPoint" value="20"/>
+		<set name="icon" value="icon.skill1506"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51211" levels="1" name="Blood Noblesse - Magical Attack">
+		<set name="effectPoint" value="-5"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51212" levels="1" name="White Noblesse - Curse Gloom">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-5"/>
+		<set name="icon" value="icon.skill1263"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51213" levels="1" name="Mysterious Transformation Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51214" levels="1" name="Transformation Sealbook: Dragon Berserker">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51215" levels="1" name="Transformation Sealbook: Ninja Assassin">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51216" levels="1" name="Transformation Sealbook: Blue Musketeer">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51217" levels="1" name="Transformation Sealbook: Valkyrie">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51218" levels="1" name="Transformation Sealbook: Wild Wolf">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51219" levels="1" name="Transformation Sealbook: Pirate">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51220" levels="1" name="Transformation Sealbook: Purple Cowboy">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51221" levels="1" name="Transformation Sealbook: High Priest">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51222" levels="1" name="Transformation Sealbook: Blood Noblesse">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51223" levels="1" name="Transformation Sealbook: White Noblesse">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51224" levels="2" name="Fish Stew - Clarity">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51225" levels="3" name="Fish Stew - Agility">
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51226" levels="1" name="Mysterious Transformation Sealbook Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51227" levels="3" name="Spring Energy">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.etc_leaf_green_i00"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51228" levels="1" name="Sayha's Spring Wind">
+		<set name="icon" value="icon.ev_magic_flame_game_wind1"/>
+		<set name="reuseDelay" value="1200000"/>
+		<set name="hitTime" value="500"/>
+		<set name="olympiad_use" value="false"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_time" value="600"/>
+		<set name="abnormal_level" value="2"/>
+		<set name="abnormal_type" value="SAYHAS_STORM"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<for>
+			<effect>
+				<add stat="exp_rate_multiplier" value="1.5"/>
+				<add stat="sp_rate_multiplier" value="1.5"/>
+				<mul stat="sayhas_grace_consume" value="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51229" levels="1" name="Spring's Blessing Chest">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51230" levels="2" name="Grace Regeneration">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51231" levels="2" name="Greater Ruby">
+		<set name="icon" value="icon.bm_jewel_ssdmg_high_lv1_lavianrose"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51232" levels="1" name="Greater Ruby">
+		<set name="icon" value="icon.bm_jewel_ssdmg_high_lv1_lavianrose"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51233" levels="5" name="Greater Ruby">
+		<set name="icon" value="icon.bm_jewel_ssdmg_high_lv1_lavianrose"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51234" levels="2" name="Greater Sapphire">
+		<set name="icon" value="icon.bm_jewel_spsdmg_high_lv1_lavianrose"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51235" levels="1" name="Greater Sapphire">
+		<set name="icon" value="icon.bm_jewel_spsdmg_high_lv1_lavianrose"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51236" levels="5" name="Greater Sapphire">
+		<set name="icon" value="icon.bm_jewel_spsdmg_high_lv1_lavianrose"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51237" levels="10" name="Emerald">
+		<table name="#icon">icon.etc_bm_jewel_emerald_i00 icon.etc_bm_jewel_emerald_i00 icon.etc_bm_jewel_emerald_i00 icon.etc_bm_jewel_emerald_i00 icon.etc_bm_jewel_emerald_i00 icon.bm_jewel_allstat_high_lv1_lavianrose icon.bm_jewel_allstat_high_lv1_lavianrose icon.bm_jewel_allstat_high_lv1_lavianrose icon.bm_jewel_allstat_high_lv1_lavianrose icon.bm_jewel_allstat_high_lv1_lavianrose</table>
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51238" levels="1" name="Radiant Jewelry Box">
+		<set name="icon" value="icon.bm_special_jewelbox_lv5"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51239" levels="3" name="Skilled Fisherman's Rune - Professional">
+		<set name="icon" value="icon.fishing_zone_ticket_1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51240" levels="1" name="Night Goblin's Liquor">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.bm_goblin_buff_herong"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51241" levels="1" name="Manuscript: Disarm">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="91401"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="51247"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="51247"/> <!--Disarm-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="51242" levels="1" name="Manuscript: Armor Break">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="91400"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="51248"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="51248"/> <!--Armor Break-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="51243" levels="1" name="Manuscript: Spell Break">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="91402"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="51249"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="51249"/> <!--Spell Break-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="51244" levels="1" name="Manuscript: Jump">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="91404"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="51250"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="51250"/> <!--Jump-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="51245" levels="1" name="Manuscript: Flash">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="91403"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="51251"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="51251"/> <!--Blaze-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="51246" levels="1" name="Manuscript: Berserker Mode">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="itemConsumeId" value="91405"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<cond msgId="113" addName="1">
+			<player can_learn_skill="51252"/>
+		</cond>
+		<for>
+			<effect name="i_set_skill">
+				<def name="skill" value="51252"/> <!--Berserker Mode-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="51247" levels="1" name="Disarm">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-341"/>
+		<set name="icon" value="icon.skill0485"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="205"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="disarms"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="activateRate" value="60"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="5;12"/>
+		<set name="affect_range" value="200"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="Disarm">
+				<mul stat="pAtk" value="0.7"/>
+				<mul stat="mAtk" value="0.7"/>
+				<sub stat="maxHp" value="1000"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51248" levels="1" name="Armor Break">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-341"/>
+		<set name="icon" value="icon.skill10703"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="205"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="disarms"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="activateRate" value="60"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="5;12"/>
+		<set name="affect_range" value="200"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect  name="ArmorBreaker">
+				<mul stat="pAtk" value="0.7"/>
+				<mul stat="mAtk" value="0.7"/>
+				<mul stat="runSpd" value="0.7"/>
+				<sub stat="maxHp" value="1000"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51249" levels="1" name="Spell Break">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-341"/>
+		<set name="icon" value="icon.skill1412"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="205"/>
+		<set name="abnormal_effect" value="SILENCE"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="disarms"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="activateRate" value="60"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="RANGE"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="affect_limit" value="5;12"/>
+		<set name="affect_range" value="200"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="Mute"/>
+		</for>
+	</skill>
+	<skill id="51250" levels="1" name="Jump">
+		<set name="effectPoint" value="-1"/>
+		<set name="icon" value="icon.skill11057"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="coolTime" value="200"/>
+		<set name="hitTime" value="100"/>
+		<set name="mp_consume" value="77"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="fly_type" value="CHARGE"/>
+		<set name="fly_radius" value="400"/>
+		<set name="fly_position_degree" value="180"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="i_target_cancel" chance="100"/>
+		</for>
+	</skill>
+	<skill id="51251" levels="1" name="Blaze">
+		<set name="effectPoint" value="-1"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill1417"/>
+		<set name="reuseDelay" value="120000"/>
+		<set name="coolTime" value="200"/>
+		<set name="hitTime" value="800"/>
+		<set name="mp_consume" value="77"/>
+		<set name="abnormal_type" value="target_lock"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="target" value="TARGET_AURA"/>
+		<set name="affect_range" value="300"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="activateRate" value="80"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<self_effect name="p_block_target"/>
+		</for>
+	</skill>
+	<skill id="51252" levels="1" name="Berserker Mode">
+		<set name="effectPoint" value="20"/>
+		<set name="icon" value="icon.skill10274"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="200"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_time" value="20"/>
+		<set name="abnormal_level" value="5"/>
+		<set name="abnormal_type" value="berserker"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="mAtk" value="1.5"/>
+				<mul stat="pAtk" value="1.5"/>
+				<mul stat="mAtkSpd" value="1.5"/>
+				<mul stat="pAtkSpd" value="1.5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51253" levels="1" name="Elmoreden XP Scroll">
+		<set name="icon" value="icon.bm_elmoaden_exp_scrl"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51254" levels="1" name="High Quality Elmoreden XP Scroll">
+		<set name="icon" value="icon.bm_elmoaden_exp_scrl"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51255" levels="1" name="Elmoreden Treasure Chest">
+		<set name="icon" value="[icon.bm_elmoaden_box]"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51256" levels="1" name="Elmoreden Relic Pouch">
+		<set name="icon" value="[icon.bm_elmoaden_pocket]"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51257" levels="1" name="Elmoreden Golden Pack">
+		<set name="icon" value="[icon.bm_elmoaden_gold_box]"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51258" levels="1" name="Elmoreden Silver Pack">
+		<set name="icon" value="[icon.bm_elmoaden_silver_box]"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51259" levels="1" name="+10 White Sayha's Cloak Chest">
+		<set name="icon" value="[icon.etc_treasure_box_i00]"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51260" levels="1" name="+10 Black Sayha's Cloak Chest">
+		<set name="icon" value="[icon.etc_treasure_box_i00]"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51261" levels="1" name="+10 Red Sayha's Cloak Chest">
+		<set name="icon" value="[icon.etc_treasure_box_i00]"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51262" levels="1" name="Victory Balls Basket">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="BranchSys2.icon.br_soccer_ball_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51263" levels="1" name="High Grade Stable Scroll: Enchant D-grade Weapon">
+		<set name="icon" value="icon.giant_scrl_of_ench_wp_d"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51264" levels="1" name="High Grade Stable Scroll: Enchant D-grade Armor">
+		<set name="icon" value="icon.giant_scrl_of_ench_am_d"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51265" levels="1" name="High Grade Stable Scroll: Enchant C-grade Weapon">
+		<set name="icon" value="icon.giant_scrl_of_ench_wp_c"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51266" levels="1" name="High Grade Stable Scroll: Enchant C-grade Armor">
+		<set name="icon" value="icon.giant_scrl_of_ench_am_c"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51267" levels="1" name="High Grade Stable Scroll: Enchant B-grade Weapon">
+		<set name="icon" value="icon.giant_scrl_of_ench_wp_b"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51268" levels="1" name="High Grade Stable Scroll: Enchant B-grade Armor">
+		<set name="icon" value="icon.giant_scrl_of_ench_am_b"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51269" levels="1" name="High Grade Stable Scroll: Enchant A-grade Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51270" levels="1" name="High Grade Stable Scroll: Enchant A-grade Armor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51271" levels="5" name="War Paint">
+		<table name="#PVP">1.03 1.06 1.1 1.15 1.25</table>
+		<set name="icon" value="icon.skill50008"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="pvpPhysDmgBonus" value="#PVP"/>
+			<mul stat="pvpPhysSkillDmgBonus" value="#PVP"/>
+			<mul stat="pvpMagicSkillDmgBonus" value="#PVP"/>
+		</for>
+	</skill>
+	<skill id="51272" levels="5" name="Didactic">
+		<table name="#exp_rate_multiplier">0.05 0.1 0.15 0.2 0.25</table>
+		<set name="icon" value="icon.skill51272"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="exp_rate_multiplier" value="#exp_rate_multiplier"/>
+			<add stat="sp_rate_multiplier" value="#exp_rate_multiplier"/>
+		</for>
+	</skill>
+	<skill id="51273" levels="5" name="Courage Mastery">
+		<table name="#maxCp">100 300 600 1200 2000</table>
+		<set name="icon" value="icon.skill11755"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxCp" value="#maxCp"/>
+		</for>
+	</skill>
+	<skill id="51274" levels="5" name="Honor Recovery">
+		<table name="#expLost">0.95 0.9 0.85 0.8 0.75</table>
+		<set name="icon" value="icon.skill19308"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="expLost" value="#expLost"/>
+		</for>
+	</skill>
+	<skill id="51275" levels="5" name="Sword Resistance">
+		<table name="#p_defence_trait_sword">1 3 5 7 10</table>
+		<set name="icon" value="icon.skill4447"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_defence_trait name="sword" value="#p_defence_trait_sword"/>
+		</for>
+	</skill>
+	<skill id="51276" levels="5" name="Blunt Resistance">
+		<table name="#p_defence_trait_blunt">1 3 5 7 10</table>
+		<set name="icon" value="icon.skill4443"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_defence_trait name="blunt" value="#p_defence_trait_blunt"/>
+		</for>
+	</skill>
+	<skill id="51277" levels="5" name="Spear Resist">
+		<table name="#p_defence_trait_pole">1 3 5 7 10</table>
+		<set name="icon" value="icon.skill4445"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_defence_trait name="pole" value="#p_defence_trait_pole"/>
+		</for>
+	</skill>
+	<skill id="51278" levels="5" name="Fist Weapon Resist">
+		<table name="#p_defence_trait_dualfist">1 3 5 7 10</table>
+		<set name="icon" value="icon.skill4442"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_defence_trait name="dualfist" value="#p_defence_trait_dualfist"/>
+		</for>
+	</skill>
+	<skill id="51279" levels="5" name="Dagger Resistance">
+		<table name="#p_defence_trait_dagger">1 3 5 7 10</table>
+		<set name="icon" value="icon.skill4448"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_defence_trait name="dualdagger" value="#p_defence_trait_dagger"/>
+			<p_defence_trait name="dagger" value="#p_defence_trait_dagger"/>
+		</for>
+	</skill>
+	<skill id="51280" levels="5" name="Bow Resist">
+		<table name="#p_defence_trait_bow">1 3 5 7 10</table>
+		<set name="icon" value="icon.skill4444"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_defence_trait name="bow" value="#p_defence_trait_bow"/>
+		</for>
+	</skill>
+	<skill id="51281" levels="5" name="Dual Sword Resist">
+		<table name="#p_defence_trait_dual">1 3 5 7 10</table>
+		<set name="icon" value="icon.skill4446"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_defence_trait name="dual" value="#p_defence_trait_dual"/>
+		</for>
+	</skill>
+	<skill id="51282" levels="1" name="Sealed Agathion Virgo +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51283" levels="1" name="Sealed Agathion Capricorn +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51284" levels="1" name="Sealed Agathion Libra +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51285" levels="1" name="Sealed Agathion Taurus +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51286" levels="1" name="Sealed Agathion Leo +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51287" levels="1" name="Sealed Agathion Gemini +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51288" levels="1" name="Sealed Agathion Scorpio +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51289" levels="1" name="Sealed Agathion Aquarius +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51290" levels="1" name="Sealed Agathion Sagittarius +5">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51291" levels="1" name="Blessed Scroll: Enchant S-grade Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51292" levels="1" name="Blessed Scroll: Enchant S-grade Armor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51293" levels="1" name="Stable Scroll: Enchant S-grade Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51294" levels="1" name="Stable Scroll: Enchant S-grade Armor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51295" levels="1" name="Improved Scroll: Enchant  S-grade Weapon">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51296" levels="1" name="Improved Scroll: Enchant S-grade Armor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51297" levels="5" name="Frintezza Doll's Sorcery">
+		<table name="#icon">icon.bm_doll_frintessa_30d icon.bm_doll_frintessa_30d icon.bm_doll_frintessa_30d icon.bm_doll_frintessa_30d_00 icon.bm_doll_frintessa_30d_01</table>
+		<table name="#CON">0 1 2 2 3</table>
+		<table name="#WIT">0 1 2 3 3</table>
+		<table name="#DEX">0 1 2 3 3</table>
+		<table name="#INT">1 1 2 2 3</table>
+		<table name="#STR">1 1 2 2 3</table>
+		<table name="#MEN">0 1 2 2 3</table>
+		<table name="#pSkillPower">1.01 1.02 1.05 1.06 1.08</table>
+		<table name="#pAtkSpd">20 50 100 110 120</table>
+		<table name="#TabrunSpd">1 2 5 5 5</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="p_skill_power" value="#pSkillPower"/>
+			<mul stat="mSkillPower" value="#pSkillPower"/>
+			<add stat="pAtkSpd" value="#pAtkSpd"/>
+			<add stat="mAtkSpd" value="#pAtkSpd"/>
+			<add stat="runSpd" value="#TabrunSpd"/>
+			<add order="0x10" stat="MEN" value="#MEN"/>
+			<add order="0x10" stat="CON" value="#CON"/>
+			<add order="0x10" stat="WIT" value="#WIT"/>
+			<add order="0x10" stat="DEX" value="#DEX"/>
+			<add order="0x10" stat="INT" value="#INT"/>
+			<add order="0x10" stat="STR" value="#STR"/>
+		</for>
+	</skill>
+	<skill id="51298" levels="1" name="Dimensional Warp">
+		<set name="icon" value="icon.skill11621"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="200"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51299" levels="10" name="Dimensional Guard">
+		<set name="icon" value="icon.skill11876"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="mp_consume" value="100"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

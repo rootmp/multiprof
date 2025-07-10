@@ -1,0 +1,2873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--Author: nexvill-->
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-114792" y="213032" z="-13243" h="55524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-115128" y="213576" z="-13270" h="32940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-115480" y="211464" z="-13090" h="35609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-113752" y="214072" z="-13281" h="12144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-113112" y="213736" z="-13275" h="59902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-114680" y="212232" z="-13169" h="57670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-114376" y="213576" z="-13281" h="54796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-115336" y="212072" z="-13158" h="5216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-115832" y="211816" z="-13127" h="22138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-115880" y="212456" z="-13194" h="26491" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-114984" y="212600" z="-13196" h="44990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-114792" y="214328" z="-13237" h="60084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-114120" y="213192" z="-13263" h="2762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-114152" y="211784" z="-13121" h="58198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-114824" y="211656" z="-13119" h="33893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-112920" y="214424" z="-13274" h="13422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-112376" y="215128" z="-13229" h="9355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-111624" y="215512" z="-13127" h="4234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-111080" y="214920" z="-13181" h="58038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-110552" y="214840" z="-13154" h="64256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-110584" y="214072" z="-13162" h="48739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-111640" y="213864" z="-13227" h="34931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-109752" y="213480" z="-13073" h="61067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-110136" y="212840" z="-13032" h="43817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-115736" y="214424" z="-13230" h="25163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-116136" y="213656" z="-13273" h="49687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-116392" y="214280" z="-13287" h="16183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-117144" y="214600" z="-13254" h="28685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-117240" y="215416" z="-13239" h="17468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-117656" y="215048" z="-13245" h="41563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-117976" y="214104" z="-13249" h="45903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-118376" y="214824" z="-13218" h="23071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-118808" y="215464" z="-13099" h="23362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-119560" y="215000" z="-13105" h="38201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-119096" y="214184" z="-13216" h="54128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-120056" y="213832" z="-13122" h="36524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-119864" y="213176" z="-13155" h="50712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-118968" y="213064" z="-13177" h="63910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-119144" y="212440" z="-13119" h="46769" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-118280" y="212568" z="-13145" h="2740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-117496" y="212104" z="-13119" h="59350" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-116744" y="211320" z="-13088" h="57073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-118376" y="211688" z="-13067" h="49510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-117976" y="210840" z="-13054" h="53781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-118872" y="210760" z="-13068" h="34232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-119736" y="211160" z="-13071" h="27794" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-120712" y="211592" z="-13012" h="28384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-121384" y="211224" z="-12938" h="38641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-120936" y="210040" z="-12960" h="55096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-120232" y="209624" z="-12895" h="58606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-120296" y="210520" z="-13009" h="17838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-119432" y="209864" z="-12939" h="59217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22258" /> <!-- Dire Soldier -->
+		<point x="-118344" y="210040" z="-12975" h="801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-119000" y="209816" z="-12909" h="45882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-119752" y="209464" z="-12872" h="38547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-119832" y="210296" z="-12999" h="17069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-120248" y="211320" z="-13045" h="20500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-120888" y="211304" z="-12992" h="33463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-121464" y="210424" z="-12920" h="47627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-120728" y="210216" z="-12970" h="60265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-120424" y="209208" z="-12872" h="51842" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-119208" y="210616" z="-13050" h="14134" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-118408" y="210424" z="-13032" h="63400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-118248" y="211160" z="-13064" h="16647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-118744" y="211768" z="-13078" h="23370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-118456" y="212152" z="-13085" h="10193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-118968" y="212664" z="-13132" h="24258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-119416" y="213240" z="-13172" h="16662" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-120312" y="213528" z="-13100" h="29604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-119480" y="213864" z="-13180" h="3848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-119368" y="214568" z="-13153" h="15491" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-119176" y="215448" z="-13081" h="14360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-118744" y="214664" z="-13198" h="54383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-118104" y="214520" z="-13243" h="6223" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-118040" y="215400" z="-13188" h="14728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-117160" y="214920" z="-13263" h="61406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-116584" y="214040" z="-13269" h="56315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-115656" y="214056" z="-13272" h="65089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-114648" y="213944" z="-13282" h="65507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-113848" y="213656" z="-13289" h="61221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-113320" y="214216" z="-13282" h="8330" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-112632" y="213880" z="-13265" h="61148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-112760" y="214936" z="-13242" h="19145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-112056" y="215640" z="-13125" h="10765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-111240" y="215704" z="-13074" h="65095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-111160" y="214520" z="-13202" h="49940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-110904" y="213896" z="-13187" h="52872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-110200" y="214584" z="-13132" h="7105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-110152" y="213640" z="-13112" h="50555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-110360" y="213064" z="-13086" h="39150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-114440" y="213016" z="-13248" h="43243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-114936" y="212296" z="-13178" h="42584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-115528" y="212552" z="-13201" h="28357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-115000" y="211560" z="-13105" h="57484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-114280" y="211400" z="-13087" h="59194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-115880" y="211464" z="-13088" h="38142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-116248" y="212152" z="-13165" h="22017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-116920" y="211768" z="-13117" h="37711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22259" /> <!-- Dire Guard -->
+		<point x="-117640" y="212456" z="-13174" h="25238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118152" y="212312" z="-13107" h="33360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118456" y="211832" z="-13070" h="41849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118536" y="211288" z="-13076" h="46448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118040" y="211224" z="-13062" h="1901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118200" y="210600" z="-13039" h="44976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-117880" y="210072" z="-13003" h="55193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118568" y="210168" z="-12978" h="22849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119128" y="210248" z="-12991" h="31185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119352" y="209592" z="-12883" h="45395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119880" y="209848" z="-12929" h="28697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119784" y="210792" z="-13060" h="13689" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-120328" y="211000" z="-13047" h="37750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-120504" y="209960" z="-12961" h="47313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-121384" y="210088" z="-12959" h="33610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-121464" y="210936" z="-12923" h="17948" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-121080" y="211864" z="-12939" h="12651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-120280" y="211592" z="-13066" h="62173" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118920" y="212312" z="-13102" h="21374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119288" y="212808" z="-13149" h="27088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119224" y="213464" z="-13200" h="15364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119896" y="213512" z="-13152" h="32089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-120440" y="214024" z="-13056" h="24818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119608" y="214136" z="-13163" h="2050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119128" y="214568" z="-13170" h="9462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-119336" y="215192" z="-13105" h="18369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118760" y="215096" z="-13156" h="63259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118376" y="215576" z="-13123" h="18315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-117624" y="215416" z="-13230" h="63144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-117896" y="214776" z="-13242" h="46142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-118488" y="214136" z="-13264" h="39587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-117800" y="214248" z="-13245" h="1097" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-117176" y="214424" z="-13249" h="2677" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-116552" y="214552" z="-13282" h="2629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-116088" y="213992" z="-13285" h="56675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-115544" y="213528" z="-13249" h="58089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-115352" y="214024" z="-13270" h="11102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-114696" y="214104" z="-13263" h="1399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-114632" y="213448" z="-13273" h="51094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-113976" y="213416" z="-13277" h="1839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-113528" y="213992" z="-13283" h="10117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-112872" y="213816" z="-13271" h="63204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-112600" y="214488" z="-13272" h="10756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-112152" y="214952" z="-13240" h="1939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-111784" y="215784" z="-13089" h="10400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-111128" y="215384" z="-13121" h="58602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-110488" y="215336" z="-13083" h="64038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-110856" y="214648" z="-13185" h="43680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-111288" y="213880" z="-13210" h="43942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-112056" y="213880" z="-13247" h="33337" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-110664" y="213640" z="-13165" h="64142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-109992" y="214264" z="-13112" h="8070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-109544" y="213816" z="-13044" h="59257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-109736" y="213064" z="-13031" h="46752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-110344" y="212888" z="-13077" h="37887" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-114536" y="212584" z="-13190" h="41937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-115256" y="212776" z="-13231" h="31544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-115080" y="212152" z="-13166" h="55996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-114232" y="212008" z="-13151" h="64310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-114696" y="211496" z="-13091" h="41671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-115448" y="211736" z="-13126" h="28540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-115912" y="212152" z="-13165" h="25067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-116152" y="211640" z="-13109" h="48762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-116472" y="210952" z="-13087" h="45486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-116696" y="211656" z="-13107" h="20190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22260" /> <!-- Dire Archer -->
+		<point x="-117160" y="212232" z="-13161" h="25224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-117304" y="212088" z="-13132" h="41571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-117688" y="212280" z="-13131" h="37089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118024" y="212664" z="-13182" h="23463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118552" y="212376" z="-13104" h="33726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118728" y="212040" z="-13082" h="42015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118504" y="211672" z="-13072" h="54417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118120" y="211384" z="-13064" h="58206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118392" y="210872" z="-13057" h="41352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-117944" y="210568" z="-13035" h="58768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118152" y="210072" z="-12989" h="45507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118824" y="209960" z="-12940" h="35398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118920" y="210440" z="-13033" h="17192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119400" y="210904" z="-13081" h="24751" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119592" y="210392" z="-13015" h="42832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119656" y="209720" z="-12921" h="47395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-120200" y="209288" z="-12869" h="39760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-120264" y="210120" z="-12981" h="15117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-120104" y="211000" z="-13052" h="14615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-121112" y="210312" z="-12964" h="37715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-121224" y="211592" z="-12949" h="16055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-120472" y="211464" z="-13043" h="63292" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119688" y="211432" z="-13098" h="1763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119192" y="212296" z="-13110" h="23048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118840" y="212840" z="-13158" h="48848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119464" y="213480" z="-13189" h="22818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-120088" y="213304" z="-13134" h="35354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-120360" y="213800" z="-13077" h="21410" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119816" y="214120" z="-13144" h="7289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119224" y="214392" z="-13181" h="4702" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119848" y="214840" z="-13079" h="26167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119592" y="215448" z="-13068" h="13901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-119064" y="214872" z="-13152" h="52178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118360" y="214408" z="-13240" h="61719" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-117816" y="214440" z="-13251" h="65471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-118328" y="215256" z="-13177" h="23252" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-117384" y="215192" z="-13254" h="64202" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-116952" y="214632" z="-13264" h="6185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-116808" y="214152" z="-13255" h="49550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-116248" y="214424" z="-13256" h="6979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-115768" y="213768" z="-13270" h="52908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-115480" y="214216" z="-13254" h="12710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-115016" y="213944" z="-13272" h="9798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-114568" y="213608" z="-13283" h="712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-114248" y="214136" z="-13267" h="10550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-113640" y="213784" z="-13284" h="3294" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-113544" y="214168" z="-13279" h="8173" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-113128" y="213992" z="-13286" h="61249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-112488" y="214264" z="-13287" h="4066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-112920" y="214792" z="-13248" h="23334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-112504" y="215256" z="-13224" h="5866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-111944" y="215256" z="-13194" h="65284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-111528" y="215784" z="-13071" h="4982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-111304" y="215176" z="-13168" h="52789" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-110760" y="215128" z="-13138" h="64184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-110168" y="214936" z="-13110" h="62461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-110664" y="214456" z="-13174" h="40276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-111560" y="214088" z="-13238" h="35711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-111032" y="213720" z="-13202" h="52012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-110328" y="213864" z="-13135" h="2715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-109736" y="214040" z="-13073" h="3933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-109560" y="213352" z="-13051" h="53326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-110088" y="213112" z="-13072" h="41921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-114184" y="212936" z="-13240" h="42541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-113672" y="213256" z="-13257" h="5246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-115000" y="213128" z="-13246" h="34413" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-114744" y="212552" z="-13188" h="53049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-114440" y="212008" z="-13150" h="53761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-114520" y="211496" z="-13093" h="46220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-115208" y="211832" z="-13135" h="31014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-115624" y="212376" z="-13189" h="22896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-116280" y="212408" z="-13190" h="32379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-116040" y="211176" z="-13073" h="47237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-116312" y="211816" z="-13126" h="19659" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-116792" y="212232" z="-13173" h="23405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22261" /> <!-- Dire Warrior -->
+		<point x="-116536" y="211224" z="-13084" h="55151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-116632" y="211464" z="-13086" h="17648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-117160" y="211560" z="-13107" h="30627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-117000" y="212072" z="-13152" h="13995" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-117528" y="212248" z="-13135" h="28079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118056" y="212456" z="-13137" h="29712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118488" y="212312" z="-13094" h="35547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118920" y="212104" z="-13090" h="39273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118248" y="211800" z="-13082" h="60818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118392" y="211320" z="-13069" h="45120" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118680" y="210664" z="-13063" h="44237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119432" y="211128" z="-13094" h="24217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-120024" y="211400" z="-13071" h="28521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-120760" y="211816" z="-13014" h="26996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-121064" y="211384" z="-12972" h="46137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-121496" y="210616" z="-12907" h="44699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-120888" y="210360" z="-12973" h="2743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-120280" y="210728" z="-13027" h="7520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119800" y="210456" z="-13022" h="59729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119704" y="209976" z="-12946" h="50630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119960" y="209480" z="-12873" h="44180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119112" y="209912" z="-12936" h="6101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118616" y="210072" z="-12961" h="60154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118056" y="210360" z="-13026" h="4312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118136" y="210760" z="-13045" h="47692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118616" y="212824" z="-13160" h="9679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119272" y="212968" z="-13160" h="30895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119832" y="213352" z="-13159" h="25553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119704" y="213800" z="-13162" h="13658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-120392" y="213688" z="-13079" h="34005" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119480" y="214408" z="-13154" h="8633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119720" y="215048" z="-13087" h="19391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-119304" y="215544" z="-13068" h="10637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118936" y="214632" z="-13183" h="57990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118248" y="214056" z="-13260" h="59332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118216" y="214952" z="-13220" h="16324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-118552" y="215608" z="-13101" h="19877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-117800" y="215608" z="-13183" h="65240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-117496" y="214712" z="-13250" h="55129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-116824" y="214424" z="-13261" h="59468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-116104" y="214248" z="-13262" h="61994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-116328" y="213528" z="-13265" h="46627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-115624" y="213944" z="-13281" h="6850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-115224" y="213416" z="-13255" h="54668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-115144" y="214120" z="-13255" h="15328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-114536" y="213784" z="-13288" h="60349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-113976" y="214152" z="-13280" h="5938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-113320" y="213720" z="-13283" h="60280" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-113080" y="214328" z="-13278" h="12938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-112488" y="214856" z="-13247" h="7124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-112264" y="215528" z="-13160" h="15629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-111640" y="216024" z="-13042" h="13497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-111432" y="215272" z="-13163" h="45862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-110904" y="215592" z="-13079" h="3322" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-110296" y="215368" z="-13063" h="60937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-110808" y="214904" z="-13165" h="37900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-110984" y="214280" z="-13200" h="44428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-111816" y="214072" z="-13252" h="36181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-112360" y="213800" z="-13252" h="62352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-110504" y="213688" z="-13147" h="65094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-110104" y="214152" z="-13127" h="12171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-109656" y="213240" z="-13053" h="49454" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-109960" y="212792" z="-13018" h="49232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-113848" y="213032" z="-13243" h="40396" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-114440" y="213192" z="-13259" h="37899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-114264" y="211576" z="-13099" h="55814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-114728" y="211864" z="-13138" h="27028" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-115240" y="212472" z="-13193" h="24097" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-115544" y="211912" z="-13142" h="44924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-115784" y="211288" z="-13066" h="45875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22262" /> <!-- Dire Spearman -->
+		<point x="-116344" y="212328" z="-13187" h="17696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-116568" y="212024" z="-13148" h="47060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-117352" y="211912" z="-13110" h="27551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-118360" y="212808" z="-13167" h="24553" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-118760" y="212296" z="-13099" h="42644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-118232" y="211368" z="-13064" h="52341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-117816" y="210312" z="-13023" h="51600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-118856" y="210280" z="-13005" h="32413" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-119592" y="209512" z="-12880" h="41968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-120104" y="210296" z="-12999" h="23513" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-120648" y="211272" z="-13023" h="21649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-119560" y="213064" z="-13154" h="22729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-119288" y="213976" z="-13197" h="11738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-119064" y="215256" z="-13115" h="13123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-118072" y="214712" z="-13239" h="60609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-117768" y="215336" z="-13227" h="13233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-116584" y="214424" z="-13282" h="58467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-115208" y="213736" z="-13280" h="3174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-115432" y="212312" z="-13181" h="43194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-114376" y="212776" z="-13214" h="6747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-113400" y="213880" z="-13286" h="7717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-111992" y="215448" z="-13160" h="8126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-110760" y="214184" z="-13177" h="54224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22269" /> <!-- Kalix -->
+		<point x="-109928" y="213144" z="-13066" h="56645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110280" y="211944" z="-12962" h="3688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-109800" y="211880" z="-12958" h="62925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-109256" y="211752" z="-12942" h="64401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-108952" y="211176" z="-12930" h="54784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-108840" y="210600" z="-12928" h="52144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-108760" y="209976" z="-12884" h="51108" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-109272" y="210296" z="-12924" h="26822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-109480" y="210952" z="-12951" h="20363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-109880" y="211272" z="-12977" h="25126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110520" y="211240" z="-13004" h="33813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110120" y="210728" z="-12983" h="59462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-109800" y="210200" z="-12939" h="53557" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-109400" y="209768" z="-12899" h="56433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-109752" y="209144" z="-12888" h="44002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110088" y="209496" z="-12921" h="26957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110344" y="209992" z="-12973" h="21363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110808" y="210568" z="-13035" h="23551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110936" y="209960" z="-13020" h="52383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110456" y="209080" z="-12929" h="54119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110232" y="208408" z="-12899" h="51295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-110712" y="207944" z="-12888" h="41252" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-111176" y="208312" z="-12938" h="26059" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-111096" y="208744" z="-12953" h="14505" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-111192" y="209432" z="-12999" h="17858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-111784" y="208936" z="-13031" h="40278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-111960" y="209592" z="-13057" h="19367" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-111480" y="210056" z="-13050" h="8985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-112072" y="210376" z="-13068" h="28299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-111576" y="210872" z="-13101" h="9003" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-112136" y="211096" z="-13092" h="28405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-112296" y="211752" z="-13121" h="19655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-112792" y="211672" z="-13073" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-111848" y="208200" z="-12943" h="50738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-112408" y="207928" z="-12897" h="32943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-112856" y="208328" z="-12971" h="23653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-113208" y="207688" z="-12894" h="44159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-113704" y="207112" z="-12902" h="41764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-113704" y="207752" z="-12945" h="17339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-113656" y="208280" z="-12985" h="13016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-113304" y="208872" z="-13028" h="11323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-113272" y="209544" z="-13064" h="14644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-113928" y="208728" z="-13012" h="45041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114200" y="208248" z="-12972" h="43832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114344" y="207528" z="-12949" h="47444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114856" y="207080" z="-12928" h="39975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-115496" y="206984" z="-12920" h="35539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-116184" y="207048" z="-12912" h="31236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-116504" y="207528" z="-12930" h="22738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-116888" y="208088" z="-12971" h="24664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-117592" y="207944" z="-12921" h="34810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-118216" y="207752" z="-12902" h="35759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-118728" y="207720" z="-12902" h="11763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-119160" y="208104" z="-12891" h="24013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-119144" y="208728" z="-12898" h="12690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-118760" y="208392" z="-12910" h="56222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-118296" y="208456" z="-12951" h="65324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-117448" y="208440" z="-13017" h="5387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-116968" y="208888" z="-13056" h="9013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-116424" y="209240" z="-13058" h="6052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-115864" y="209656" z="-13058" h="7625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-115400" y="210184" z="-13059" h="14592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114712" y="210344" z="-13064" h="1333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114056" y="210040" z="-13069" h="62238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114264" y="209624" z="-13060" h="39945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114920" y="209624" z="-13059" h="32935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-115496" y="209208" z="-13059" h="39521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-116088" y="208840" z="-13032" h="39186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-116248" y="208200" z="-13003" h="51649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-115560" y="208456" z="-12972" h="6069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114936" y="208856" z="-12982" h="5142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-114776" y="208120" z="-12958" h="42951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-115144" y="207496" z="-12972" h="46937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22263" /> <!-- Kastia's Soldier -->
+		<point x="-115912" y="207656" z="-12959" h="30878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-110392" y="211592" z="-12996" h="61198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-109896" y="211592" z="-12969" h="65475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-109288" y="211480" z="-12945" h="62696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-109144" y="210888" z="-12936" h="51517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-109832" y="210856" z="-12965" h="31446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-110600" y="210872" z="-13026" h="32457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-110200" y="210216" z="-12979" h="54776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-109656" y="210408" z="-12948" h="4503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-108936" y="210264" z="-12912" h="62843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-109256" y="209560" z="-12884" h="44942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-109896" y="209752" z="-12919" h="30116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-110056" y="208920" z="-12900" h="46976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-110664" y="208408" z="-12925" h="40121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-110856" y="209144" z="-12961" h="19097" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-110744" y="209880" z="-12999" h="16039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-111208" y="210376" z="-13056" h="25048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-111784" y="210520" z="-13084" h="28430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-111896" y="211144" z="-13102" h="15832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-112408" y="211512" z="-13077" h="26127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-112312" y="210728" z="-13056" h="48437" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-112200" y="209944" z="-13058" h="50614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-111384" y="209736" z="-13023" h="62058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-111592" y="209048" z="-13016" h="46230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-111480" y="208488" z="-12961" h="49934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-111400" y="207816" z="-12893" h="50171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-112120" y="208104" z="-12928" h="28853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-112808" y="208040" z="-12918" h="34172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-113480" y="208024" z="-12968" h="28346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-113624" y="207400" z="-12913" h="46868" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-114328" y="207032" z="-12917" h="37908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-114712" y="207528" z="-12961" h="23999" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-114264" y="208040" z="-12971" h="9816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-114440" y="208728" z="-12986" h="18805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-113528" y="208584" z="-13006" h="64135" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-113480" y="209256" z="-13060" h="15363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-114200" y="209336" z="-13059" h="30247" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-113784" y="209864" z="-13071" h="8628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-114376" y="210216" z="-13068" h="26895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-114648" y="209640" z="-13059" h="43874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-115064" y="209064" z="-13029" h="42662" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-115224" y="209672" z="-13058" h="19293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-115064" y="210344" z="-13058" h="14397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-115736" y="209448" z="-13059" h="43707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-116264" y="209016" z="-13051" h="39984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-115704" y="208792" z="-13001" h="60835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-115432" y="208120" z="-12966" h="54471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-116136" y="208440" z="-13021" h="27400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-116712" y="208472" z="-13023" h="31790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-116472" y="207912" z="-12960" h="54173" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-116104" y="207352" z="-12947" h="55205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-115432" y="207224" z="-12944" h="60671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-117048" y="207896" z="-12911" h="30563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-117560" y="208200" z="-12975" h="27222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-118072" y="208120" z="-12930" h="34292" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-118616" y="208040" z="-12915" h="34500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-119144" y="207800" z="-12900" h="37103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-119448" y="208376" z="-12889" h="20081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22264" /> <!-- Kastia's Warrior -->
+		<point x="-118904" y="208632" z="-12906" h="4501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-118600" y="208664" z="-12901" h="1179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-119096" y="208376" z="-12899" h="37626" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-119464" y="207976" z="-12878" h="41625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-118776" y="207944" z="-12911" h="63533" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-118328" y="208072" z="-12920" h="7739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-117688" y="208056" z="-12954" h="61520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-117208" y="208136" z="-12950" h="2141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-116904" y="208680" z="-13039" h="9406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-116648" y="209080" z="-13057" h="12894" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-116088" y="209240" z="-13059" h="2381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-115528" y="209768" z="-13059" h="6994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-115032" y="210040" z="-13058" h="5547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-114456" y="209896" z="-13064" h="62856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-114520" y="209416" z="-13059" h="49133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-115176" y="209176" z="-13054" h="36009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-115384" y="208680" z="-12969" h="45230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-114648" y="208680" z="-12971" h="45426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-114040" y="209080" z="-13027" h="4988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-113896" y="209608" z="-13064" h="12335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-113320" y="209784" z="-13070" h="3171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-113160" y="209096" z="-13047" h="51621" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-113064" y="208600" z="-13007" h="51485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-113896" y="208504" z="-12993" h="31925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-114504" y="208072" z="-12976" h="42038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-115048" y="207784" z="-12976" h="38875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-115688" y="207992" z="-12973" h="29939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-116520" y="208136" z="-12990" h="31084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-116328" y="207512" z="-12944" h="52151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-115640" y="207368" z="-12953" h="62227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-114888" y="207256" z="-12942" h="65120" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-114216" y="207272" z="-12924" h="239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-113480" y="207256" z="-12893" h="65421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-113800" y="207976" z="-12956" h="20879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-113240" y="207864" z="-12933" h="63326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-112504" y="208136" z="-12927" h="784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111928" y="207864" z="-12893" h="60992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111928" y="208552" z="-13011" h="16372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-112072" y="209176" z="-13059" h="17799" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111736" y="209560" z="-13034" h="4962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111944" y="210056" z="-13059" h="20269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-112040" y="210680" z="-13080" h="17186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-112200" y="211400" z="-13090" h="15664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-112504" y="211752" z="-13107" h="23836" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111752" y="211192" z="-13127" h="57443" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111496" y="210520" z="-13075" h="53122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110904" y="210936" z="-13052" h="6334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110520" y="211432" z="-13007" h="4831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110136" y="211800" z="-12965" h="4416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109624" y="211800" z="-12956" h="1401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109128" y="211944" z="-12933" h="2456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109080" y="211352" z="-12935" h="48492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109576" y="211240" z="-12959" h="34911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110152" y="210984" z="-12991" h="37264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109464" y="210728" z="-12948" h="59011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-108952" y="210440" z="-12928" h="59833" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109032" y="209848" z="-12888" h="47650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109560" y="210056" z="-12919" h="28816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109960" y="210424" z="-12973" h="25262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110520" y="210408" z="-13006" h="33318" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110152" y="209768" z="-12939" h="42297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-109736" y="209480" z="-12900" h="62441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110216" y="209064" z="-12914" h="40030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110568" y="209448" z="-12956" h="23891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111144" y="209816" z="-13023" h="25622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110600" y="208808" z="-12928" h="51918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110280" y="208232" z="-12894" h="53129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-110792" y="208152" z="-12924" h="34620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111192" y="208568" z="-12947" h="32636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111448" y="209080" z="-12999" h="33071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22265" /> <!-- Kastia's Mystic -->
+		<point x="-111352" y="208104" z="-12929" h="57235" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-113672" y="209688" z="-13068" h="18061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110712" y="211208" z="-13032" h="10178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110456" y="211752" z="-12979" h="11183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110120" y="211416" z="-12995" h="58346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-109608" y="211544" z="-12960" h="2483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-109224" y="211160" z="-12941" h="57582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-109720" y="210680" z="-12958" h="46945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110248" y="210504" z="-12991" h="36163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-111080" y="210728" z="-13061" h="29812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-111608" y="210728" z="-13092" h="32723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-111960" y="210984" z="-13097" h="25177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-112248" y="211624" z="-13112" h="20714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-112232" y="210328" z="-13066" h="49471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-111640" y="210248" z="-13062" h="65475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110840" y="210184" z="-13029" h="925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110424" y="209672" z="-12955" h="51030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-109944" y="210072" z="-12942" h="17447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-109160" y="210040" z="-12900" h="1097" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-109192" y="210568" z="-12936" h="16926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-109496" y="209528" z="-12892" h="54889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110216" y="209256" z="-12921" h="32136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110360" y="208536" z="-12909" h="46305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110552" y="207992" z="-12886" h="45774" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-111176" y="207816" z="-12894" h="35693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-111656" y="208328" z="-12962" h="21296" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-110904" y="208712" z="-12944" h="6426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-111384" y="209336" z="-12995" h="23640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-112312" y="208248" z="-12962" h="36820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-112808" y="207880" z="-12888" h="39280" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-113272" y="208312" z="-12989" h="24380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-113448" y="207608" z="-12912" h="46055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114008" y="207144" z="-12919" h="40161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114056" y="207832" z="-12956" h="16966" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114088" y="208472" z="-12989" h="23980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-113448" y="209064" z="-13047" h="5435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-113720" y="209288" z="-13058" h="18061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114296" y="209976" z="-13068" h="28150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114920" y="210120" z="-13059" h="30190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114696" y="209448" z="-13058" h="53532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114312" y="208968" z="-13008" h="54650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114968" y="208952" z="-13000" h="33451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-115448" y="209496" z="-13059" h="26318" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-115880" y="208856" z="-13018" h="43905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-116520" y="208792" z="-13047" h="33914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-115784" y="208232" z="-12988" h="57408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-116232" y="207720" z="-12948" h="41770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-115816" y="207000" z="-12917" h="53643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-115384" y="207656" z="-12973" h="9564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114712" y="207816" z="-12975" h="5253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-114696" y="206952" z="-12920" h="49665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-116984" y="208216" z="-12988" h="27258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-117768" y="207960" z="-12937" h="34701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-118088" y="208280" z="-12949" h="24723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-118600" y="208264" z="-12913" h="31854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-119144" y="208536" z="-12896" h="28266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-118984" y="207912" z="-12904" h="51894" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22266" /> <!-- Kastia's Captain -->
+		<point x="-118408" y="207688" z="-12896" h="59943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-118440" y="208568" z="-12933" h="17127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-118968" y="208184" z="-12898" h="42110" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-118360" y="207896" z="-12922" h="62032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-117816" y="208120" z="-12954" h="3975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-117288" y="208008" z="-12914" h="62874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-117176" y="208712" z="-13038" h="19459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-116520" y="208888" z="-13054" h="2100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-116040" y="208616" z="-13018" h="60179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-116056" y="208056" z="-12988" h="49144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-115848" y="207320" z="-12949" h="52376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-115320" y="207896" z="-12971" h="7728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-114680" y="207272" z="-12936" h="58818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-115384" y="208488" z="-12960" h="10497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-115720" y="209080" z="-13027" h="21100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-116008" y="209560" z="-13059" h="22448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-115128" y="209416" z="-13057" h="62796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-115224" y="210040" z="-13059" h="18708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-114520" y="210008" z="-13066" h="64011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-114040" y="209576" z="-13061" h="58165" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-114552" y="208952" z="-13004" h="38826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-114536" y="208360" z="-12970" h="48869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-113960" y="208920" z="-13022" h="8610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-113448" y="209496" z="-13064" h="8699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-113176" y="208936" z="-13034" h="53217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-113032" y="208056" z="-12942" h="51190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-113544" y="207800" z="-12947" h="38042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-113976" y="207448" z="-12929" h="41697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-112328" y="208056" z="-12918" h="1943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-111688" y="207992" z="-12910" h="64602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-111000" y="208024" z="-12920" h="285" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-111064" y="208520" z="-12949" h="17597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-111800" y="208808" z="-13020" h="28270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-112040" y="209400" z="-13059" h="20459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-112088" y="210040" z="-13060" h="17976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-112168" y="210616" z="-13074" h="17949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-112280" y="211176" z="-13073" h="18299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-111576" y="210984" z="-13104" h="60620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-111192" y="210552" z="-13062" h="54911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-111272" y="209976" z="-13038" h="49696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-110904" y="209496" z="-12988" h="59061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-111176" y="208984" z="-12974" h="44445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-110520" y="208936" z="-12928" h="65460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-109992" y="208632" z="-12890" h="61498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-109928" y="209320" z="-12905" h="15605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-109704" y="209784" z="-12910" h="11455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-108984" y="209688" z="-12876" h="64043" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-109400" y="210296" z="-12931" h="20191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-108904" y="210840" z="-12928" h="6197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-109464" y="211096" z="-12952" h="28837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-109384" y="211656" z="-12947" h="15604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-109912" y="211736" z="-12964" h="29090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-110328" y="210984" z="-13002" h="42708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-110904" y="211032" z="-13056" h="31385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-110616" y="210296" z="-13015" h="58727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22267" /> <!-- Kastia's Archer -->
+		<point x="-110328" y="209752" z="-12954" h="46900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110824" y="211192" z="-13048" h="14586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110200" y="211688" z="-12973" h="26" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-109464" y="211960" z="-12944" h="122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-109032" y="211528" z="-12930" h="57439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-109048" y="210968" z="-12930" h="48752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-109768" y="211080" z="-12965" h="31752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110392" y="210696" z="-13004" h="42914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110024" y="210248" z="-12965" h="57668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-109432" y="210184" z="-12922" h="64150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-108648" y="210088" z="-12886" h="63962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-109416" y="209288" z="-12875" h="39723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110184" y="209416" z="-12924" h="32812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110600" y="210056" z="-12999" h="22410" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111064" y="210440" z="-13048" h="25691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111640" y="210392" z="-13071" h="33647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111992" y="210840" z="-13093" h="23773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-112312" y="211400" z="-13080" h="20891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111080" y="210008" z="-13032" h="59011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110696" y="209288" z="-12956" h="53872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111256" y="209208" z="-12986" h="35165" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111720" y="209640" z="-13034" h="26589" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111880" y="209032" z="-13046" h="45813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111528" y="208616" z="-12976" h="3998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-111560" y="207944" z="-12906" h="48207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110904" y="208312" z="-12938" h="5783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-110248" y="208632" z="-12905" h="59167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-112216" y="208008" z="-12905" h="35200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-113000" y="208216" z="-12963" h="29327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-113752" y="207576" z="-12933" h="39750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-114328" y="207384" z="-12934" h="36744" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-115080" y="207368" z="-12960" h="33169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-115864" y="207160" z="-12933" h="35642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-116088" y="207784" z="-12951" h="19955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-115528" y="207928" z="-12965" h="3352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-114920" y="208120" z="-12949" h="2770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-113928" y="208136" z="-12968" h="4019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-113208" y="208808" z="-13026" h="7975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-113992" y="208872" z="-13016" h="31345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-113896" y="209928" z="-13071" h="17562" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-114696" y="210168" z="-13062" h="30681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-114792" y="209544" z="-13059" h="47778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-114776" y="208840" z="-12977" h="49003" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-115464" y="208920" z="-12992" h="30584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-115512" y="209944" z="-13059" h="22012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-115960" y="209304" z="-13057" h="43017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-116296" y="208792" z="-13042" h="42803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-117016" y="208808" z="-13047" h="33407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-117224" y="208248" z="-12985" h="45779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-115640" y="208392" z="-12975" h="1488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-116776" y="207592" z="-12901" h="48733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-117928" y="208008" z="-12931" h="36016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-118648" y="207848" z="-12915" h="32459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-119176" y="208216" z="-12893" h="25770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22268" /> <!-- Kastia's Archmage -->
+		<point x="-118664" y="208696" z="-12901" h="9476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-118456" y="208216" z="-12919" h="47473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-117352" y="208152" z="-12960" h="2792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-115944" y="209080" z="-13033" h="5568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-114792" y="209864" z="-13062" h="5762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-113752" y="209064" z="-13038" h="58761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-114392" y="207672" z="-12961" h="42902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-115720" y="206936" z="-12914" h="27157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-112952" y="207960" z="-12914" h="65500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-111672" y="208136" z="-12925" h="2364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-110680" y="208584" z="-12930" h="4127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-109880" y="209208" z="-12897" h="6777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-109128" y="209912" z="-12895" h="7428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-109320" y="211048" z="-12945" h="20241" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-110200" y="211592" z="-12983" h="28307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-110696" y="210488" z="-13023" h="44635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-111704" y="210824" z="-13101" h="29587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22270" /> <!-- Kastia's Elite Captain -->
+		<point x="-111560" y="209320" z="-13012" h="41821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34177" /> <!-- Kiku -->
+		<point x="-114760" y="216328" z="-13218" h="48589" />
+	</spawn>
+</list>

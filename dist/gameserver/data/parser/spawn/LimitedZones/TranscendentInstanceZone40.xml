@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!-- Author: nexvill -->
+<list>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_1">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="45032" y="17240" z="-4397" h="33826" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_2">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44904" y="17496" z="-4398" h="37591" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_3">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44776" y="17688" z="-4400" h="37591" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_4">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44664" y="17848" z="-4399" h="39099" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_5">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44568" y="17992" z="-4399" h="39356" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_6">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44488" y="18152" z="-4395" h="38785" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_7">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44360" y="18296" z="-4395" h="41718" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_8">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="45080" y="17096" z="-4398" h="36429" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_9">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44968" y="17368" z="-4397" h="36017" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_10">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="45112" y="16952" z="-4397" h="33718" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_11">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="43576" y="18472" z="-4400" h="42524" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_12">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="43704" y="18424" z="-4400" h="44988" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_13">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="43864" y="18408" z="-4400" h="44969" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_14">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44024" y="18392" z="-4400" h="43884" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_1_15">
+		<npc id="22107" /> <!-- Rotting Tree -->
+		<point x="44184" y="18360" z="-4394" h="46918" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_1">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="45032" y="17240" z="-4397" h="33826" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_2">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44904" y="17496" z="-4398" h="37591" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_3">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44776" y="17688" z="-4400" h="37591" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_4">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44664" y="17848" z="-4399" h="39099" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_5">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44568" y="17992" z="-4399" h="39356" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_6">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44488" y="18152" z="-4395" h="38785" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_7">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44360" y="18296" z="-4395" h="41718" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_8">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="45080" y="17096" z="-4398" h="36429" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_9">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44968" y="17368" z="-4397" h="36017" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_10">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="45112" y="16952" z="-4397" h="33718" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_11">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="43576" y="18472" z="-4400" h="42524" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_12">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="43704" y="18424" z="-4400" h="44988" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_13">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="43864" y="18408" z="-4400" h="44969" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_14">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44024" y="18392" z="-4400" h="43884" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_2_15">
+		<npc id="22108" /> <!-- Giant Fungus -->
+		<point x="44184" y="18360" z="-4394" h="46918" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_1">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="45032" y="17240" z="-4397" h="33826" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_2">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44904" y="17496" z="-4398" h="37591" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_3">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44776" y="17688" z="-4400" h="37591" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_4">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44664" y="17848" z="-4399" h="39099" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_5">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44568" y="17992" z="-4399" h="39356" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_6">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44488" y="18152" z="-4395" h="38785" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_7">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44360" y="18296" z="-4395" h="41718" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_8">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="45080" y="17096" z="-4398" h="36429" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_9">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44968" y="17368" z="-4397" h="36017" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_10">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="45112" y="16952" z="-4397" h="33718" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_11">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="43576" y="18472" z="-4400" h="42524" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_12">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="43704" y="18424" z="-4400" h="44988" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_13">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="43864" y="18408" z="-4400" h="44969" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_14">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44024" y="18392" z="-4400" h="43884" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_variant_3_15">
+		<npc id="22109" /> <!-- Dire Wyrm -->
+		<point x="44184" y="18360" z="-4394" h="46918" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_1">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44200" y="17480" z="-4395" h="38218" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_2">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44248" y="17368" z="-4395" h="36340" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_3">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44280" y="17272" z="-4398" h="33602" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_4">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44312" y="17160" z="-4398" h="41639" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_5">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44312" y="17400" z="-4398" h="36279" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_6">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44312" y="17544" z="-4395" h="56481" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_7">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44376" y="17304" z="-4399" h="11304" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_8">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44408" y="17192" z="-4398" h="56404" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_9">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44424" y="17608" z="-4400" h="20666" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_10">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44456" y="17432" z="-4400" h="50219" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_11">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44472" y="17336" z="-4399" h="33317" />
+	</spawn>
+	<spawn count="1" respawn="0" respawn_random="0" period_of_day="none" group="transcendent_40_box_12">
+		<npc id="22122" /> <!-- Transcendent Treasure Chest -->
+		<point x="44504" y="17224" z="-4397" h="33849" />
+	</spawn>
+</list>

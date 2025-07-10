@@ -1,0 +1,3232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35028" y="54587" z="-3496" h="59090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35181" y="54912" z="-3528" h="47426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36867" y="54483" z="-3464" h="2590" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35258" y="53979" z="-3488" h="63635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34997" y="54771" z="-3504" h="43944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35344" y="55538" z="-3560" h="58902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="36200" y="56049" z="-3576" h="25827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36448" y="55477" z="-3520" h="23777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35324" y="56613" z="-3632" h="21089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35080" y="56573" z="-3624" h="23361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35788" y="56048" z="-3576" h="59183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36832" y="56856" z="-3696" h="39526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36228" y="56337" z="-3632" h="62169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38267" y="54829" z="-3456" h="48049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="38161" y="54776" z="-3472" h="62530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="37555" y="53258" z="-3480" h="29246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38022" y="53248" z="-3488" h="36863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37014" y="55582" z="-3512" h="16820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38673" y="57007" z="-3616" h="39005" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20336" /> <!-- Green Dryad -->
+		<point x="38792" y="56853" z="-3616" h="46943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38252" y="55492" z="-3512" h="44007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38793" y="56438" z="-3616" h="16734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38582" y="55824" z="-3560" h="58703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38637" y="56352" z="-3616" h="39223" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="38782" y="56286" z="-3608" h="42670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37640" y="55740" z="-3544" h="50312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="38231" y="55709" z="-3552" h="48458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37144" y="56455" z="-3648" h="44130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="38304" y="55407" z="-3488" h="24616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="38994" y="55749" z="-3536" h="12065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37637" y="55962" z="-3592" h="9039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37518" y="55856" z="-3560" h="31301" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="39235" y="54822" z="-3408" h="61051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="40077" y="54849" z="-3448" h="28257" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40111" y="54481" z="-3352" h="372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="39476" y="54110" z="-3384" h="34703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40007" y="55078" z="-3488" h="11841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40371" y="53949" z="-3304" h="4188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40680" y="54440" z="-3360" h="63785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="39489" y="54627" z="-3376" h="5501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="39966" y="54784" z="-3416" h="52591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40684" y="53887" z="-3296" h="521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40261" y="54452" z="-3352" h="53185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40094" y="54627" z="-3376" h="59241" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="39020" y="54633" z="-3424" h="61110" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="39293" y="54757" z="-3400" h="12436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="39818" y="55252" z="-3496" h="57526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="40618" y="55123" z="-3512" h="16393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="40561" y="55281" z="-3520" h="21074" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="40706" y="55118" z="-3512" h="42314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="40260" y="57149" z="-3624" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="39036" y="57015" z="-3608" h="50422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="39732" y="56561" z="-3624" h="43125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="40952" y="57322" z="-3648" h="36309" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="39701" y="56836" z="-3616" h="45548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="40091" y="56591" z="-3632" h="9418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="39963" y="56804" z="-3624" h="56628" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="39083" y="56798" z="-3616" h="20442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="39378" y="55998" z="-3600" h="9427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="39037" y="55605" z="-3520" h="26520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40204" y="55377" z="-3528" h="31661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20336" /> <!-- Green Dryad -->
+		<point x="38989" y="58653" z="-3632" h="62206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="40911" y="57978" z="-3648" h="43376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="40148" y="57585" z="-3616" h="35617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="40680" y="57857" z="-3648" h="29599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="40547" y="57411" z="-3632" h="26819" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="40686" y="57373" z="-3632" h="64791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34050" y="51413" z="-3576" h="17938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34283" y="52134" z="-3584" h="6027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33794" y="51831" z="-3600" h="6369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33516" y="52208" z="-3648" h="35577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="34793" y="52273" z="-3568" h="935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33396" y="51523" z="-3664" h="60696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33177" y="51111" z="-3664" h="8196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33821" y="51772" z="-3600" h="49080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34162" y="51279" z="-3576" h="12011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34290" y="51553" z="-3576" h="63939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33330" y="51803" z="-3680" h="57858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33516" y="53488" z="-3504" h="17131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20469" /> <!-- Kaboo Orc Archer -->
+		<point x="33309" y="54981" z="-3536" h="65071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20509" /> <!-- Spore Fungus -->
+		<point x="33205" y="55297" z="-3544" h="32618" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33578" y="54337" z="-3536" h="3494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34536" y="53584" z="-3624" h="9118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34288" y="55120" z="-3560" h="8542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34720" y="53524" z="-3672" h="9186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33800" y="55072" z="-3552" h="25917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33244" y="54836" z="-3528" h="48648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34541" y="54364" z="-3520" h="22387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33662" y="55451" z="-3568" h="48935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34604" y="56085" z="-3640" h="36129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33664" y="56464" z="-3680" h="5080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33559" y="55904" z="-3600" h="34894" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33147" y="55612" z="-3552" h="42600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36638" y="52991" z="-3480" h="5810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35401" y="52368" z="-3504" h="64414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36054" y="52922" z="-3520" h="55491" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35945" y="51101" z="-3512" h="61561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35004" y="51945" z="-3552" h="20152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36057" y="52838" z="-3504" h="27536" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35280" y="51898" z="-3544" h="23858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36503" y="51939" z="-3520" h="30561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35470" y="52692" z="-3504" h="45322" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38288" y="51505" z="-3488" h="58067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37736" y="51421" z="-3448" h="16757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37896" y="52481" z="-3512" h="60555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38638" y="51270" z="-3488" h="57909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37131" y="52121" z="-3520" h="57753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38388" y="51950" z="-3520" h="34287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38432" y="52629" z="-3480" h="25990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38368" y="53061" z="-3456" h="27262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38717" y="53027" z="-3440" h="48827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="37594" y="53258" z="-3480" h="29387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="38357" y="52944" z="-3456" h="31347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="38721" y="52304" z="-3488" h="23630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33916" y="50096" z="-3584" h="236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34534" y="50769" z="-3536" h="21656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34369" y="50635" z="-3544" h="52974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="33377" y="50566" z="-3632" h="2599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="34963" y="50639" z="-3504" h="19782" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36229" y="50847" z="-3464" h="26223" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35928" y="50247" z="-3456" h="54278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36784" y="50277" z="-3440" h="3248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20509" /> <!-- Spore Fungus -->
+		<point x="35224" y="49506" z="-3448" h="34901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36179" y="50003" z="-3456" h="62288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35406" y="49721" z="-3448" h="61688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35015" y="50218" z="-3456" h="27270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="35358" y="50129" z="-3456" h="42744" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38784" y="49546" z="-3504" h="24242" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37534" y="50756" z="-3416" h="52180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38364" y="49513" z="-3536" h="1112" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37352" y="48971" z="-3520" h="56009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37867" y="50366" z="-3448" h="8961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38403" y="50628" z="-3480" h="27379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37935" y="51072" z="-3440" h="47087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38912" y="49302" z="-3512" h="7653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38477" y="50761" z="-3480" h="38595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38714" y="51109" z="-3480" h="2123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38807" y="49583" z="-3504" h="34024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="36923" y="49999" z="-3456" h="29121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38017" y="49362" z="-3552" h="6748" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38564" y="51137" z="-3480" h="15365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37697" y="50962" z="-3424" h="34533" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20336" /> <!-- Green Dryad -->
+		<point x="37639" y="50497" z="-3432" h="14791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20469" /> <!-- Kaboo Orc Archer -->
+		<point x="37017" y="48888" z="-3520" h="60340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="35589" y="47705" z="-3656" h="64360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38366" y="48555" z="-3536" h="22440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37132" y="48948" z="-3512" h="53186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37885" y="49211" z="-3552" h="16456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38847" y="49050" z="-3528" h="36706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38072" y="48391" z="-3544" h="7735" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38198" y="48725" z="-3536" h="13333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37774" y="48792" z="-3560" h="11966" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38439" y="48353" z="-3536" h="30701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37796" y="49028" z="-3560" h="64036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38488" y="48090" z="-3560" h="29950" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="37656" y="48692" z="-3560" h="13604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="38759" y="48300" z="-3544" h="45936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20469" /> <!-- Kaboo Orc Archer -->
+		<point x="37621" y="47479" z="-3640" h="17875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="36114" y="46816" z="-3712" h="42318" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20509" /> <!-- Spore Fungus -->
+		<point x="34884" y="45764" z="-3600" h="65219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20469" /> <!-- Kaboo Orc Archer -->
+		<point x="36119" y="45172" z="-3600" h="13867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="37804" y="46104" z="-3608" h="41585" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20509" /> <!-- Spore Fungus -->
+		<point x="37599" y="45336" z="-3640" h="54331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20336" /> <!-- Green Dryad -->
+		<point x="37599" y="45080" z="-3632" h="28651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20509" /> <!-- Spore Fungus -->
+		<point x="31831" y="56628" z="-3552" h="24982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20469" /> <!-- Kaboo Orc Archer -->
+		<point x="35960" y="60258" z="-3600" h="36308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="40408" y="59541" z="-3600" h="26351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20509" /> <!-- Spore Fungus -->
+		<point x="39945" y="59780" z="-3600" h="64597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41421" y="57435" z="-3648" h="7308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41825" y="55883" z="-3616" h="36024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41438" y="56287" z="-3624" h="10273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42665" y="56422" z="-3688" h="9075" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41420" y="55566" z="-3560" h="27536" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41232" y="56878" z="-3656" h="49393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41472" y="56932" z="-3640" h="62485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42457" y="55898" z="-3680" h="63788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42959" y="55542" z="-3680" h="18954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41862" y="56592" z="-3640" h="39345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20469" /> <!-- Kaboo Orc Archer -->
+		<point x="42267" y="56904" z="-3664" h="60446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41981" y="58700" z="-3632" h="10391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42693" y="57866" z="-3704" h="10912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41183" y="57573" z="-3648" h="14610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="41190" y="58092" z="-3656" h="14978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42401" y="58521" z="-3656" h="5917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42650" y="59361" z="-3584" h="23118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42961" y="61179" z="-3488" h="33043" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20469" /> <!-- Kaboo Orc Archer -->
+		<point x="42339" y="59664" z="-3520" h="52194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43412" y="56922" z="-3680" h="3603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44533" y="55576" z="-3512" h="9060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43348" y="56746" z="-3680" h="34451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44623" y="56485" z="-3512" h="57521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44198" y="56746" z="-3576" h="63850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43348" y="55963" z="-3624" h="36075" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43348" y="57007" z="-3696" h="54806" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45048" y="56224" z="-3456" h="20322" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43296" y="58163" z="-3696" h="3042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43348" y="58312" z="-3688" h="54694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44198" y="58834" z="-3648" h="49643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43773" y="57790" z="-3704" h="29722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44198" y="57790" z="-3688" h="14130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43773" y="58834" z="-3648" h="49100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45048" y="58312" z="-3592" h="42860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43773" y="58312" z="-3680" h="27477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43894" y="59361" z="-3600" h="56907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44827" y="59361" z="-3608" h="15724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44205" y="59058" z="-3632" h="13915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44205" y="59664" z="-3576" h="62048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43894" y="61179" z="-3552" h="20779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43272" y="60270" z="-3504" h="18774" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43894" y="60876" z="-3552" h="35635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44205" y="61179" z="-3560" h="6644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44827" y="59664" z="-3576" h="510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43583" y="60573" z="-3520" h="16542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43454" y="60630" z="-3512" h="23869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44003" y="60324" z="-3552" h="4656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44369" y="60630" z="-3560" h="63054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44735" y="61089" z="-3560" h="13422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20336" /> <!-- Green Dryad -->
+		<point x="44186" y="60324" z="-3560" h="14763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20469" /> <!-- Kaboo Orc Archer -->
+		<point x="44369" y="60324" z="-3560" h="59535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45473" y="55963" z="-3424" h="53771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45898" y="58312" z="-3552" h="45491" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45473" y="58051" z="-3544" h="17161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45760" y="59058" z="-3600" h="56312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45138" y="59361" z="-3608" h="41498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45449" y="59058" z="-3600" h="48921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="46693" y="59058" z="-3608" h="54272" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="46071" y="60876" z="-3528" h="4396" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="46071" y="60573" z="-3544" h="62682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45138" y="59664" z="-3576" h="48351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45760" y="59967" z="-3576" h="58685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="46071" y="59967" z="-3576" h="62337" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="46071" y="61179" z="-3520" h="48674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45138" y="59967" z="-3560" h="27953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45138" y="60270" z="-3552" h="7532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48842" y="55563" z="-3456" h="14940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="47912" y="55650" z="-3680" h="18907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48647" y="55361" z="-3440" h="48372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48799" y="55723" z="-3472" h="4211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48366" y="55500" z="-3512" h="25066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48432" y="55468" z="-3488" h="26816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48675" y="56310" z="-3536" h="47856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48843" y="57345" z="-3568" h="31556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48778" y="57496" z="-3600" h="9540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48623" y="56602" z="-3552" h="47728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48540" y="55614" z="-3480" h="11841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49158" y="57003" z="-3544" h="64402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48950" y="56519" z="-3536" h="3466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48348" y="57019" z="-3680" h="36005" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48105" y="55358" z="-3568" h="2830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49089" y="57067" z="-3544" h="12057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48774" y="55894" z="-3496" h="21085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48054" y="55689" z="-3624" h="10080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48996" y="56011" z="-3496" h="11577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48378" y="57061" z="-3680" h="38806" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49048" y="56148" z="-3504" h="37692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48651" y="55692" z="-3488" h="57752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48131" y="55381" z="-3560" h="31333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48941" y="56415" z="-3536" h="21571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48738" y="58272" z="-3688" h="21604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="49021" y="59849" z="-3584" h="43825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49021" y="59624" z="-3608" h="50050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49021" y="59399" z="-3624" h="48957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49324" y="56556" z="-3512" h="56663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49124" y="55484" z="-3424" h="37611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49140" y="55927" z="-3472" h="47132" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49391" y="55649" z="-3424" h="11723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="48943" y="57049" z="-3552" h="46822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51111" y="59016" z="-3384" h="15945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="50189" y="58730" z="-3424" h="42764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="50092" y="59008" z="-3424" h="37501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="49854" y="58821" z="-3456" h="60122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="49523" y="58534" z="-3552" h="5354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="50545" y="57924" z="-3480" h="47220" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="49439" y="58370" z="-3552" h="59760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="50324" y="57810" z="-3488" h="2238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="49381" y="58041" z="-3552" h="21841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="50456" y="57580" z="-3504" h="58006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="50277" y="58691" z="-3424" h="58454" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49899" y="58485" z="-3472" h="40061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="49663" y="58127" z="-3520" h="63432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49723" y="57996" z="-3496" h="54568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50113" y="58373" z="-3448" h="31986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50008" y="57680" z="-3504" h="24206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49301" y="58320" z="-3568" h="55117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50070" y="57973" z="-3488" h="29944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49719" y="58508" z="-3496" h="45360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49236" y="58951" z="-3600" h="11728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50293" y="57499" z="-3504" h="47485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50298" y="59126" z="-3416" h="54252" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51450" y="60132" z="-3392" h="2650" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51104" y="59989" z="-3392" h="28863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50566" y="60616" z="-3456" h="53170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="49471" y="60956" z="-3536" h="43595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49306" y="60347" z="-3520" h="19448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="50986" y="60749" z="-3440" h="55586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="50939" y="60884" z="-3464" h="24905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49599" y="59867" z="-3504" h="34498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="49648" y="59939" z="-3496" h="12328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50746" y="61004" z="-3488" h="36947" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50271" y="60113" z="-3456" h="6187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49747" y="60554" z="-3504" h="39982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50260" y="60612" z="-3480" h="35387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49182" y="59630" z="-3576" h="4601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49954" y="60514" z="-3480" h="59645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49204" y="59489" z="-3568" h="12447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50298" y="60261" z="-3456" h="53122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="49337" y="60294" z="-3520" h="49760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="50578" y="59860" z="-3424" h="25046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52569" y="56098" z="-3360" h="26445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20321" /> <!-- Goblin Thief -->
+		<point x="53106" y="56563" z="-3368" h="39069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52577" y="57008" z="-3432" h="16646" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="53213" y="55831" z="-3312" h="62431" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52646" y="55890" z="-3320" h="60476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52165" y="55394" z="-3312" h="7574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51455" y="55349" z="-3304" h="22545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52075" y="56800" z="-3440" h="10724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51719" y="56935" z="-3520" h="63228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20321" /> <!-- Goblin Thief -->
+		<point x="51408" y="55931" z="-3360" h="35822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52024" y="56914" z="-3448" h="49500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52192" y="56342" z="-3400" h="4238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51614" y="56309" z="-3384" h="37783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51649" y="57069" z="-3576" h="9905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52640" y="56027" z="-3336" h="45687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20321" /> <!-- Goblin Thief -->
+		<point x="52828" y="56094" z="-3344" h="31548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52449" y="55735" z="-3320" h="15005" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52969" y="55309" z="-3328" h="34118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52079" y="56346" z="-3400" h="37605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52242" y="55975" z="-3344" h="45015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52690" y="56311" z="-3392" h="16925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51916" y="55837" z="-3336" h="9232" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51947" y="56446" z="-3400" h="3480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52596" y="55716" z="-3320" h="55721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52449" y="56079" z="-3368" h="34273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="53128" y="55335" z="-3344" h="23633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51704" y="56465" z="-3416" h="47673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52593" y="56374" z="-3400" h="65068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52567" y="56223" z="-3384" h="31637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51742" y="56058" z="-3352" h="42187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52039" y="56054" z="-3352" h="50619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52406" y="55802" z="-3320" h="22774" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51881" y="55797" z="-3328" h="18134" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="53068" y="56169" z="-3328" h="21582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52019" y="59416" z="-3352" h="45113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52096" y="59022" z="-3392" h="2555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="52014" y="59296" z="-3352" h="16266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51433" y="59046" z="-3384" h="41388" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52033" y="58941" z="-3408" h="4676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51344" y="58798" z="-3400" h="50522" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52379" y="57575" z="-3600" h="33464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="53232" y="57383" z="-3464" h="63512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20321" /> <!-- Goblin Thief -->
+		<point x="53424" y="58028" z="-3496" h="54222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51705" y="58207" z="-3536" h="40961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51646" y="58749" z="-3424" h="19334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51117" y="58719" z="-3408" h="57279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51885" y="58659" z="-3440" h="55171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51173" y="58010" z="-3520" h="40412" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="51138" y="58609" z="-3424" h="9249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="52506" y="58689" z="-3504" h="4783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51173" y="60660" z="-3424" h="19201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51606" y="60237" z="-3392" h="8739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20468" /> <!-- Kaboo Orc -->
+		<point x="51148" y="59613" z="-3384" h="28655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45617" y="59134" z="-3600" h="60144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="45024" y="59172" z="-3616" h="10732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44024" y="57909" z="-3696" h="37456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="44887" y="58462" z="-3616" h="57654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43525" y="61123" z="-3528" h="65344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="43442" y="55562" z="-3640" h="20635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42182" y="54945" z="-3624" h="2529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="42775" y="54530" z="-3656" h="22236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20325" /> <!-- Goblin Raider -->
+		<point x="40984" y="54347" z="-3392" h="10879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20509" /> <!-- Spore Fungus -->
+		<point x="31451" y="50405" z="-3672" h="56982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="31172" y="51026" z="-3688" h="2592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="29293" y="55338" z="-3288" h="2589" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="28115" y="54073" z="-3288" h="15798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="25206" y="50812" z="-3408" h="53193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="25980" y="50294" z="-3496" h="32464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20013" /> <!-- Dryad -->
+		<point x="24713" y="51633" z="-3352" h="15461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="22760" y="56331" z="-3360" h="4128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="22858" y="57039" z="-3360" h="48652" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="23643" y="55879" z="-3504" h="61428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="24158" y="56587" z="-3472" h="2927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="24758" y="57005" z="-3480" h="27386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20013" /> <!-- Dryad -->
+		<point x="28486" y="57330" z="-3240" h="61329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="21194" y="54050" z="-3552" h="25329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="20651" y="56939" z="-3424" h="35210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="22309" y="56856" z="-3352" h="24732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="21683" y="56051" z="-3448" h="28281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="21770" y="57106" z="-3368" h="64955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="21054" y="56728" z="-3392" h="14373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18934" y="53541" z="-3600" h="61760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="19243" y="53623" z="-3600" h="16011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18637" y="56682" z="-3472" h="25996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18612" y="56995" z="-3480" h="37945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="19107" y="57497" z="-3504" h="12105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="19453" y="56943" z="-3512" h="7669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="18446" y="56341" z="-3464" h="62594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="18511" y="56551" z="-3464" h="45885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16747" y="52584" z="-3608" h="60519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16624" y="51671" z="-3568" h="20390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16464" y="52083" z="-3552" h="39604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17277" y="53178" z="-3616" h="36053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18264" y="56682" z="-3464" h="58206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17030" y="57132" z="-3472" h="19981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16690" y="56799" z="-3472" h="55852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17965" y="57131" z="-3472" h="37046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17517" y="56982" z="-3464" h="11287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16721" y="57181" z="-3480" h="46921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17480" y="56791" z="-3464" h="24251" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18368" y="57456" z="-3488" h="10049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18102" y="57130" z="-3472" h="7958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16969" y="56828" z="-3464" h="21975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18423" y="56638" z="-3464" h="19086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17931" y="56729" z="-3464" h="48199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17123" y="56078" z="-3544" h="35688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="17170" y="57231" z="-3472" h="63159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16996" y="56848" z="-3464" h="42016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16121" y="51880" z="-3536" h="36601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16086" y="52433" z="-3544" h="4586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15085" y="51310" z="-3656" h="8191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15396" y="52014" z="-3496" h="22723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20013" /> <!-- Dryad -->
+		<point x="15613" y="53216" z="-3592" h="44271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16016" y="52919" z="-3608" h="28758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15954" y="52036" z="-3528" h="28592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15131" y="51667" z="-3568" h="16428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15724" y="52157" z="-3512" h="34679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15831" y="52513" z="-3536" h="25062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16362" y="52087" z="-3544" h="37001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15239" y="51669" z="-3560" h="26795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15415" y="52169" z="-3496" h="19996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15457" y="52884" z="-3536" h="33141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="14846" y="51630" z="-3568" h="62434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="14640" y="51433" z="-3632" h="62485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="15459" y="54054" z="-3696" h="28943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="16326" y="56341" z="-3528" h="58049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13970" y="52364" z="-3480" h="6144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20471" /> <!-- Kaboo Orc Warrior -->
+		<point x="13337" y="52640" z="-3560" h="51008" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13658" y="53058" z="-3568" h="42017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13683" y="52098" z="-3536" h="56461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12386" y="53728" z="-3608" h="26960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="13262" y="55103" z="-3496" h="55900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12455" y="53795" z="-3568" h="62275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12071" y="54291" z="-3520" h="42381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12386" y="55358" z="-3472" h="57604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="13791" y="55358" z="-3536" h="2236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12948" y="56010" z="-3480" h="623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12667" y="56010" z="-3464" h="40522" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12948" y="55358" z="-3480" h="21142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12667" y="56336" z="-3432" h="65009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12386" y="56988" z="-3408" h="37764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13229" y="56010" z="-3504" h="41394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20013" /> <!-- Dryad -->
+		<point x="14206" y="57017" z="-3200" h="62726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12386" y="57640" z="-3392" h="18350" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="13676" y="57693" z="-3400" h="29050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13676" y="58538" z="-3312" h="11244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="13146" y="57862" z="-3400" h="40906" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12407" y="59167" z="-3368" h="16463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12677" y="58666" z="-3352" h="4420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12677" y="59167" z="-3368" h="4754" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12542" y="58833" z="-3360" h="38744" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="13487" y="59334" z="-3336" h="22909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="13352" y="58833" z="-3328" h="3135" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16326" y="57524" z="-3448" h="8945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18275" y="57615" z="-3480" h="19510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="18220" y="57909" z="-3464" h="8946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17880" y="57909" z="-3448" h="14412" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17030" y="57576" z="-3456" h="43483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17370" y="58353" z="-3360" h="48580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="16860" y="57687" z="-3440" h="19815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17916" y="57355" z="-3472" h="18488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="17916" y="58200" z="-3416" h="5863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="16856" y="58031" z="-3376" h="3971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="17386" y="57524" z="-3464" h="38682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="17386" y="58707" z="-3288" h="65498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="16856" y="57693" z="-3440" h="52175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11543" y="53402" z="-3672" h="42890" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11543" y="54706" z="-3488" h="20224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11262" y="53402" z="-3672" h="15939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10419" y="55032" z="-3496" h="57080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11262" y="54380" z="-3592" h="32983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11543" y="55032" z="-3472" h="27824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10700" y="54706" z="-3536" h="6740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11824" y="54380" z="-3544" h="62746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10419" y="53728" z="-3624" h="53955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11824" y="54054" z="-3648" h="20562" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11262" y="53728" z="-3656" h="51660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12105" y="54380" z="-3520" h="53482" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11824" y="53728" z="-3664" h="56088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10732" y="54268" z="-3616" h="39346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11782" y="55144" z="-3472" h="41101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10837" y="54998" z="-3480" h="15981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11362" y="54998" z="-3480" h="34647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11543" y="56010" z="-3464" h="22140" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11262" y="56010" z="-3448" h="50385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11262" y="56336" z="-3376" h="53907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10700" y="56336" z="-3416" h="10464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10700" y="56010" z="-3424" h="24468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12105" y="55358" z="-3472" h="46319" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10981" y="56010" z="-3432" h="4676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12105" y="56662" z="-3432" h="31686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12105" y="57314" z="-3384" h="36551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10981" y="55684" z="-3440" h="45127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11824" y="57314" z="-3376" h="60539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10700" y="56988" z="-3384" h="36127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11824" y="55358" z="-3464" h="32144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10981" y="55358" z="-3448" h="29795" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10981" y="56662" z="-3416" h="15066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12105" y="55684" z="-3472" h="4803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11543" y="56662" z="-3440" h="47017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10627" y="55436" z="-3440" h="172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10942" y="56312" z="-3432" h="43276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11543" y="58618" z="-3344" h="17988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12137" y="59167" z="-3376" h="8365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11886" y="61186" z="-3528" h="13618" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12240" y="61411" z="-3560" h="3006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10470" y="61186" z="-3464" h="18337" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11886" y="61411" z="-3544" h="6038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11532" y="60961" z="-3480" h="48706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="11178" y="60961" z="-3456" h="16850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11532" y="61411" z="-3528" h="27906" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10824" y="61186" z="-3464" h="13572" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12002" y="59835" z="-3368" h="35237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11867" y="59668" z="-3392" h="61191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11462" y="60336" z="-3400" h="40288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11597" y="60503" z="-3432" h="39855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11732" y="61004" z="-3488" h="60430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12272" y="59501" z="-3368" h="60973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11867" y="60169" z="-3400" h="33925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11597" y="60169" z="-3392" h="4042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11867" y="59835" z="-3376" h="4541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12677" y="60169" z="-3496" h="46832" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12947" y="60336" z="-3512" h="43867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="13082" y="59501" z="-3376" h="62321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12542" y="59501" z="-3376" h="40270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12677" y="60002" z="-3432" h="35084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13487" y="59668" z="-3408" h="20485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="13622" y="59668" z="-3376" h="6880" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12407" y="61004" z="-3520" h="7069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12947" y="59835" z="-3440" h="32397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12677" y="61004" z="-3536" h="14432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12677" y="59501" z="-3384" h="7088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13352" y="60169" z="-3488" h="32858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12812" y="60503" z="-3520" h="12655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13352" y="60002" z="-3480" h="62885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="13352" y="59835" z="-3448" h="8202" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9857" y="56662" z="-3408" h="62296" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9295" y="55358" z="-3552" h="38195" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9295" y="57314" z="-3424" h="964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9576" y="56988" z="-3432" h="26182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9576" y="55684" z="-3416" h="47661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10138" y="56010" z="-3408" h="35482" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10138" y="56336" z="-3408" h="37727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9014" y="56662" z="-3400" h="43523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8576" y="59030" z="-3552" h="23169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9404" y="59319" z="-3376" h="46657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9014" y="58292" z="-3424" h="60323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9014" y="57640" z="-3440" h="43469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9576" y="57966" z="-3368" h="26986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9576" y="58618" z="-3352" h="20526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9857" y="58292" z="-3344" h="27106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9295" y="58292" z="-3376" h="31701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9295" y="57640" z="-3408" h="42259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10116" y="61411" z="-3496" h="329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9404" y="60764" z="-3488" h="13429" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9404" y="59608" z="-3384" h="1126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9818" y="59897" z="-3368" h="27809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8990" y="59608" z="-3432" h="62519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9818" y="59608" z="-3352" h="22831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9818" y="60186" z="-3408" h="62544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9404" y="59897" z="-3400" h="21635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="8576" y="61053" z="-3536" h="49523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9891" y="63098" z="-3512" h="55937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9933" y="63033" z="-3512" h="44972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9762" y="63436" z="-3536" h="36224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10116" y="62086" z="-3496" h="37253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10116" y="61861" z="-3496" h="39661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9054" y="62311" z="-3536" h="19420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10116" y="63436" z="-3568" h="65431" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9408" y="63436" z="-3520" h="21172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10116" y="61636" z="-3496" h="24386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8346" y="63436" z="-3496" h="14989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9506" y="63008" z="-3504" h="24921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9716" y="63152" z="-3504" h="26451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9226" y="63440" z="-3520" h="6646" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9436" y="63152" z="-3504" h="2074" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9296" y="63224" z="-3504" h="57046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11532" y="62761" z="-3624" h="38134" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="11532" y="61636" z="-3568" h="34253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10824" y="62986" z="-3608" h="38114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10824" y="62086" z="-3544" h="5036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="11178" y="61636" z="-3520" h="56234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="11532" y="63211" z="-3632" h="13329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="10824" y="61861" z="-3520" h="3123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="10470" y="63211" z="-3600" h="60600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10824" y="61636" z="-3496" h="1342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10470" y="62086" z="-3504" h="39778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11178" y="62086" z="-3584" h="44614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="11532" y="62311" z="-3616" h="54065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="12594" y="62086" z="-3616" h="20542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="12594" y="61861" z="-3616" h="13837" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="12947" y="61505" z="-3600" h="61390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8162" y="59319" z="-3616" h="56355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7748" y="58452" z="-3664" h="43733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7334" y="57874" z="-3656" h="46632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7334" y="59319" z="-3664" h="19961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6506" y="57585" z="-3600" h="20930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="7334" y="59030" z="-3664" h="30327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6920" y="58741" z="-3656" h="54336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="7334" y="58452" z="-3664" h="2550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="7748" y="58163" z="-3664" h="24366" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="6506" y="58163" z="-3624" h="34466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8162" y="58452" z="-3640" h="58042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="6920" y="57874" z="-3648" h="33288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6920" y="59030" z="-3664" h="62022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="6419" y="59156" z="-3648" h="18951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6506" y="59897" z="-3664" h="62682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6920" y="60186" z="-3664" h="23503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8162" y="60186" z="-3640" h="56332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7334" y="60186" z="-3664" h="51360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7334" y="61053" z="-3632" h="17276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7334" y="59897" z="-3664" h="56830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6506" y="61342" z="-3632" h="54477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="7334" y="60764" z="-3648" h="12713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8162" y="59897" z="-3640" h="25690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="7334" y="59608" z="-3664" h="39172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="7748" y="60475" z="-3648" h="15476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6713" y="60276" z="-3656" h="60306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6566" y="61076" z="-3640" h="4908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="6419" y="59476" z="-3664" h="44797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6713" y="59636" z="-3664" h="49644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6713" y="59476" z="-3664" h="63117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7992" y="63436" z="-3496" h="36405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7334" y="62209" z="-3576" h="56761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6506" y="62209" z="-3616" h="39051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6506" y="62498" z="-3608" h="59467" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7748" y="61920" z="-3584" h="42414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6506" y="61920" z="-3632" h="46895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6920" y="62209" z="-3576" h="51559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6920" y="61631" z="-3608" h="29651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8006" y="63586" z="-3504" h="39044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6415" y="64620" z="-3632" h="15337" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7199" y="64664" z="-3608" h="62247" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8281" y="64183" z="-3600" h="14906" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8026" y="63408" z="-3496" h="55908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7446" y="63315" z="-3520" h="42940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="6281" y="64873" z="-3656" h="60915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="7776" y="64277" z="-3600" h="39115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="7990" y="64102" z="-3576" h="733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9192" y="64640" z="-3608" h="30901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9948" y="64307" z="-3624" h="24398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8651" y="64576" z="-3600" h="59771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9763" y="65053" z="-3616" h="52157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8249" y="65103" z="-3592" h="63106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8803" y="64712" z="-3600" h="62698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="10289" y="64671" z="-3632" h="51020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9065" y="64503" z="-3608" h="15897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="10424" y="64564" z="-3640" h="8140" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9650" y="65010" z="-3616" h="29787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9759" y="64781" z="-3624" h="21306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="8180" y="64139" z="-3592" h="36851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9583" y="63292" z="-3512" h="53713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9624" y="63392" z="-3528" h="36024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9238" y="63386" z="-3520" h="49104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9111" y="63553" z="-3544" h="11221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9949" y="63338" z="-3528" h="58424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9163" y="63374" z="-3520" h="49587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9309" y="63595" z="-3544" h="3019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9757" y="63529" z="-3560" h="1960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9155" y="63321" z="-3504" h="45339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9485" y="63928" z="-3608" h="10052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9023" y="63808" z="-3584" h="26534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9865" y="63368" z="-3544" h="57882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="10193" y="63572" z="-3584" h="63487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10793" y="63764" z="-3648" h="33328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="10255" y="64909" z="-3616" h="55487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="10667" y="64819" z="-3616" h="50264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="5264" y="60475" z="-3560" h="27777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6092" y="61053" z="-3616" h="50062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="4850" y="59608" z="-3544" h="52213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="5264" y="59608" z="-3584" h="59449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6092" y="60475" z="-3640" h="19575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4850" y="61342" z="-3464" h="24515" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="5264" y="59897" z="-3568" h="28117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4850" y="60764" z="-3488" h="31356" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4850" y="59897" z="-3512" h="10584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="5264" y="61053" z="-3528" h="8648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="5684" y="59796" z="-3624" h="49668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="5684" y="60596" z="-3600" h="55836" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="5390" y="59636" z="-3584" h="60984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="5831" y="60116" z="-3632" h="6597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4709" y="63073" z="-3432" h="42900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4246" y="61726" z="-3464" h="52041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="5105" y="63123" z="-3472" h="29974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="4538" y="63209" z="-3440" h="1849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4342" y="62038" z="-3464" h="19931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="5437" y="61972" z="-3504" h="38022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6218" y="61682" z="-3624" h="4900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="6018" y="62960" z="-3616" h="6401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4773" y="62154" z="-3440" h="32430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4499" y="62491" z="-3456" h="18622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4342" y="62412" z="-3472" h="9444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4742" y="62528" z="-3448" h="25469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="4971" y="65152" z="-3720" h="59105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4042" y="64645" z="-3632" h="44037" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4637" y="63924" z="-3528" h="56992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4225" y="63410" z="-3464" h="47169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="4603" y="64283" z="-3600" h="50749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="5909" y="66952" z="-3592" h="2289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6023" y="66555" z="-3656" h="17910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="5929" y="66085" z="-3704" h="2519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="5915" y="65943" z="-3712" h="48655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="5979" y="65921" z="-3712" h="15147" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="5947" y="66474" z="-3656" h="44153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6433" y="66414" z="-3672" h="5810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="6495" y="66759" z="-3640" h="20125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="7773" y="67132" z="-3664" h="17879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6268" y="66064" z="-3696" h="54159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="7658" y="66616" z="-3672" h="57267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="8086" y="66923" z="-3680" h="20459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="6870" y="66216" z="-3664" h="43642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8239" y="67132" z="-3680" h="60538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9404" y="65782" z="-3648" h="49104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9171" y="65872" z="-3648" h="34978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="8705" y="66862" z="-3688" h="37137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8738" y="66104" z="-3648" h="18206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9870" y="66052" z="-3640" h="29872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8990" y="66435" z="-3672" h="6375" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9359" y="65885" z="-3648" h="40944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="9637" y="65782" z="-3632" h="31690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8685" y="66329" z="-3664" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8566" y="65835" z="-3624" h="5386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9752" y="65975" z="-3640" h="26178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8807" y="65907" z="-3648" h="17184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8847" y="66472" z="-3672" h="61362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8938" y="65962" z="-3632" h="61598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9074" y="66204" z="-3656" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9365" y="65876" z="-3648" h="25641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8662" y="66390" z="-3664" h="48039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8747" y="66131" z="-3648" h="56258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9066" y="66314" z="-3672" h="25761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8867" y="66461" z="-3672" h="40428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9350" y="66133" z="-3656" h="54483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9429" y="66278" z="-3664" h="57156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="8885" y="66371" z="-3664" h="41152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8282" y="65854" z="-3600" h="11393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="9727" y="65883" z="-3640" h="8886" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="9570" y="65818" z="-3648" h="27262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="8921" y="66360" z="-3664" h="61999" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2087" y="63009" z="-3496" h="32274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2894" y="63313" z="-3568" h="48656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4045" y="63156" z="-3496" h="2493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="3418" y="62881" z="-3576" h="18263" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="2331" y="61222" z="-3352" h="49840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3253" y="62171" z="-3576" h="50808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="1957" y="62270" z="-3384" h="5386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="3327" y="62411" z="-3576" h="39109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3263" y="62637" z="-3576" h="31849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2641" y="61787" z="-3456" h="56970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3142" y="63018" z="-3576" h="4171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2786" y="62442" z="-3552" h="29504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2628" y="62316" z="-3528" h="26442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2629" y="62169" z="-3512" h="52157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2897" y="63138" z="-3576" h="4961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2415" y="62503" z="-3504" h="28159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3707" y="63174" z="-3552" h="21262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2382" y="62470" z="-3496" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="3425" y="62093" z="-3576" h="16772" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3605" y="64013" z="-3544" h="353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="4054" y="64864" z="-3648" h="29494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="3402" y="64946" z="-3632" h="17144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3696" y="64578" z="-3608" h="11069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3111" y="64273" z="-3568" h="24959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="1919" y="63712" z="-3504" h="44205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="3888" y="63346" z="-3504" h="49442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3846" y="65883" z="-3688" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="3031" y="67227" z="-3688" h="50679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="2683" y="67169" z="-3704" h="22724" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2537" y="66788" z="-3720" h="21447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="1918" y="66728" z="-3720" h="60510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2468" y="66550" z="-3720" h="55471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="2728" y="67083" z="-3704" h="38293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="1934" y="65906" z="-3680" h="21010" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="1993" y="66893" z="-3720" h="44575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20460" /> <!-- Crimson Spider -->
+		<point x="2010" y="66639" z="-3720" h="35692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="3362" y="66792" z="-3712" h="47667" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="1929" y="67726" z="-3696" h="33107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20466" /> <!-- Pincer Spider -->
+		<point x="1891" y="68355" z="-3696" h="28493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20308" /> <!-- Hook Spider -->
+		<point x="1854" y="67941" z="-3696" h="36399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="27063" /> <!-- Tanukia's Warhound -->
+		<point x="21434" y="57232" z="-3392" h="12219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="27063" /> <!-- Tanukia's Warhound -->
+		<point x="21585" y="57190" z="-3376" h="43177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="27062" /> <!-- Tanukia -->
+		<point x="21396" y="57130" z="-3384" h="10353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31851" /> <!-- Treant -->
+		<point x="36794" y="57883" z="-3688" h="8013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31851" /> <!-- Treant -->
+		<point x="39220" y="57505" z="-3608" h="30834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31033" /> <!-- Sentinel -->
+		<point x="34012" y="56090" z="-3656" h="46787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31851" /> <!-- Treant -->
+		<point x="34759" y="49600" z="-3456" h="62896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31848" /> <!-- Fairy -->
+		<point x="37014" y="50430" z="-3432" h="45771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31848" /> <!-- Fairy -->
+		<point x="33757" y="48083" z="-3632" h="33550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31033" /> <!-- Sentinel -->
+		<point x="37844" y="48991" z="-3560" h="48572" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31851" /> <!-- Treant -->
+		<point x="38518" y="47556" z="-3568" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31848" /> <!-- Fairy -->
+		<point x="36026" y="59610" z="-3616" h="4244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31848" /> <!-- Fairy -->
+		<point x="35560" y="60192" z="-3632" h="11519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31848" /> <!-- Fairy -->
+		<point x="42698" y="59820" z="-3512" h="12226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31851" /> <!-- Treant -->
+		<point x="43753" y="61332" z="-3528" h="10709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31033" /> <!-- Sentinel -->
+		<point x="49756" y="57894" z="-3504" h="19276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31848" /> <!-- Fairy -->
+		<point x="51276" y="57618" z="-3624" h="10594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31033" /> <!-- Sentinel -->
+		<point x="30329" y="54517" z="-3336" h="33882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31033" /> <!-- Sentinel -->
+		<point x="19395" y="54007" z="-3608" h="38595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31033" /> <!-- Sentinel -->
+		<point x="10716" y="55628" z="-3432" h="17600" />
+	</spawn>
+</list>

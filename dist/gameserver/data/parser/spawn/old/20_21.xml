@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<spawn name="dion04_npc2021_04" count="1" respawn="60">
+		<point x="10580" y="118027" z="-3672" h="59000"/>
+		<npc id="30621"/><!--Николя-->
+	</spawn>
+	<spawn name="dion04_npc2021_02" count="1" respawn="60">
+		<point x="16460" y="113488" z="-3576" h="0"/>
+		<npc id="30673"/><!--Лорейн-->
+	</spawn>
+	<spawn name="dion04_npc2021_01" count="1" respawn="60">
+		<point x="23066" y="118944" z="-3704" h="8192"/>
+		<npc id="30637"/><!--Бельтус-->
+	</spawn>
+	<spawn name="dion04_qm2021_00" count="1" respawn="180">
+		<point x="9209" y="127105" z="-3640" h="0"/>
+		<npc id="27139"/><!--Дерево Тайник-->
+	</spawn>
+	<territory name="dion04_2021_19">
+		<add x="13376" y="115047" zmin="-3831" zmax="-3231"/>
+		<add x="15363" y="115113" zmin="-3831" zmax="-3231"/>
+		<add x="15203" y="118033" zmin="-3831" zmax="-3231"/>
+		<add x="13999" y="117572" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_18">
+		<add x="12625" y="111910" zmin="-3831" zmax="-3231"/>
+		<add x="14909" y="110738" zmin="-3831" zmax="-3231"/>
+		<add x="15864" y="113460" zmin="-3831" zmax="-3231"/>
+		<add x="13034" y="113634" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_17">
+		<add x="14940" y="110676" zmin="-3831" zmax="-3231"/>
+		<add x="18097" y="109107" zmin="-3831" zmax="-3231"/>
+		<add x="19441" y="112923" zmin="-3831" zmax="-3231"/>
+		<add x="16973" y="112903" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_16">
+		<add x="18137" y="109054" zmin="-3831" zmax="-3231"/>
+		<add x="22583" y="110168" zmin="-3831" zmax="-3231"/>
+		<add x="22541" y="113269" zmin="-3831" zmax="-3231"/>
+		<add x="18978" y="111334" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_15">
+		<add x="22137" y="105062" zmin="-3831" zmax="-3231"/>
+		<add x="25559" y="107832" zmin="-3831" zmax="-3231"/>
+		<add x="22589" y="110078" zmin="-3831" zmax="-3231"/>
+		<add x="18126" y="108935" zmin="-3831" zmax="-3231"/>
+		<add x="17480" y="106067" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_14">
+		<add x="25748" y="107864" zmin="-3831" zmax="-3231"/>
+		<add x="26253" y="112203" zmin="-3831" zmax="-3231"/>
+		<add x="25122" y="114902" zmin="-3831" zmax="-3231"/>
+		<add x="22598" y="113291" zmin="-3831" zmax="-3231"/>
+		<add x="22622" y="110180" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_13">
+		<add x="22565" y="113505" zmin="-3831" zmax="-3231"/>
+		<add x="25545" y="115492" zmin="-3831" zmax="-3231"/>
+		<add x="21069" y="120568" zmin="-3831" zmax="-3231"/>
+		<add x="18411" y="119435" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_12">
+		<add x="13985" y="117660" zmin="-3831" zmax="-3231"/>
+		<add x="21481" y="120882" zmin="-3831" zmax="-3231"/>
+		<add x="18086" y="121855" zmin="-3831" zmax="-3231"/>
+		<add x="12596" y="120710" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_11">
+		<add x="12531" y="111947" zmin="-3831" zmax="-3231"/>
+		<add x="13878" y="117665" zmin="-3831" zmax="-3231"/>
+		<add x="12429" y="120853" zmin="-3831" zmax="-3231"/>
+		<add x="9364" y="113513" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_10">
+		<add x="17300" y="106034" zmin="-3831" zmax="-3231"/>
+		<add x="18020" y="109017" zmin="-3831" zmax="-3231"/>
+		<add x="9459" y="113372" zmin="-3831" zmax="-3231"/>
+		<add x="12518" y="107510" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_21">
+		<add x="20572" y="112349" zmin="-3831" zmax="-3231"/>
+		<add x="22531" y="113378" zmin="-3831" zmax="-3231"/>
+		<add x="20708" y="115963" zmin="-3831" zmax="-3231"/>
+		<add x="19738" y="115177" zmin="-3831" zmax="-3231"/>
+		<add x="19760" y="113268" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_20">
+		<add x="18832" y="116293" zmin="-3831" zmax="-3231"/>
+		<add x="19473" y="117771" zmin="-3831" zmax="-3231"/>
+		<add x="18282" y="119361" zmin="-3831" zmax="-3231"/>
+		<add x="15243" y="118089" zmin="-3831" zmax="-3231"/>
+		<add x="16178" y="116547" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_09">
+		<add x="22375" y="101192" zmin="-3831" zmax="-3231"/>
+		<add x="22131" y="104854" zmin="-3831" zmax="-3231"/>
+		<add x="17449" y="105773" zmin="-3831" zmax="-3231"/>
+		<add x="15885" y="101594" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_08">
+		<add x="27956" y="106003" zmin="-3831" zmax="-3231"/>
+		<add x="25665" y="107760" zmin="-3831" zmax="-3231"/>
+		<add x="22265" y="104874" zmin="-3831" zmax="-3231"/>
+		<add x="22630" y="100825" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_07">
+		<add x="30747" y="113707" zmin="-3831" zmax="-3231"/>
+		<add x="26385" y="112125" zmin="-3831" zmax="-3231"/>
+		<add x="25907" y="107829" zmin="-3831" zmax="-3231"/>
+		<add x="28587" y="105722" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_06">
+		<add x="27441" y="120344" zmin="-3831" zmax="-3231"/>
+		<add x="24536" y="120568" zmin="-3831" zmax="-3231"/>
+		<add x="26351" y="112226" zmin="-3831" zmax="-3231"/>
+		<add x="30789" y="113867" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_05">
+		<add x="18106" y="126591" zmin="-3831" zmax="-3231"/>
+		<add x="18148" y="121963" zmin="-3831" zmax="-3231"/>
+		<add x="24549" y="120179" zmin="-3831" zmax="-3231"/>
+		<add x="24076" y="123052" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_04">
+		<add x="10218" y="123373" zmin="-3831" zmax="-3231"/>
+		<add x="12571" y="120869" zmin="-3831" zmax="-3231"/>
+		<add x="18009" y="121973" zmin="-3831" zmax="-3231"/>
+		<add x="18018" y="126581" zmin="-3831" zmax="-3231"/>
+		<add x="12722" y="126534" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_03">
+		<add x="4753" y="113545" zmin="-3831" zmax="-3231"/>
+		<add x="9222" y="113571" zmin="-3831" zmax="-3231"/>
+		<add x="12330" y="120913" zmin="-3831" zmax="-3231"/>
+		<add x="10051" y="123286" zmin="-3831" zmax="-3231"/>
+		<add x="5076" y="119035" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_02">
+		<add x="5649" y="108487" zmin="-3831" zmax="-3231"/>
+		<add x="9825" y="104907" zmin="-3831" zmax="-3231"/>
+		<add x="12410" y="107417" zmin="-3831" zmax="-3231"/>
+		<add x="9242" y="113454" zmin="-3831" zmax="-3231"/>
+		<add x="4747" y="113401" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_01">
+		<add x="9868" y="104802" zmin="-3831" zmax="-3231"/>
+		<add x="15668" y="101684" zmin="-3831" zmax="-3231"/>
+		<add x="17258" y="105870" zmin="-3831" zmax="-3231"/>
+		<add x="12527" y="107380" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_23s">
+		<add x="8209" y="106709" zmin="-3831" zmax="-3231"/>
+		<add x="10636" y="107268" zmin="-3831" zmax="-3231"/>
+		<add x="10555" y="110159" zmin="-3831" zmax="-3231"/>
+		<add x="7618" y="112259" zmin="-3831" zmax="-3231"/>
+	</territory>
+	<territory name="dion04_2021_22s">
+		<add x="5831" y="114948" zmin="-3831" zmax="-3231"/>
+		<add x="8701" y="114974" zmin="-3831" zmax="-3231"/>
+		<add x="9127" y="118060" zmin="-3831" zmax="-3231"/>
+		<add x="6670" y="119263" zmin="-3831" zmax="-3231"/>
+	</territory>
+</list>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "buylist.dtd">
+<!--By Bonux-->
+<list>
+	<npc id="31044">	<!--Торговец Долины Гальман-->
+		<buylist id="1" base_markup="50">
+			<item id="91927"/>	<!--Soulshot-->
+			<item id="91930"/>	<!--Blessed Spiritshot-->
+			<item id="6645" />	<!-- Beast Soulshot -->
+			<item id="6646" />	<!-- Beast Spiritshot -->
+			<item id="91912" />	<!-- HP Potion -->
+			<item id="3031" />	<!-- Spirit Ore -->
+			<item id="736" />	<!-- Scroll of Escape -->
+			<item id="1829" />	<!-- Scroll of Escape: Clan Hall -->
+			<item id="1830" />	<!-- Scroll of Escape: Castle -->
+			<item id="93966" />	<!-- Pet Food -->
+			<item id="93967" />	<!-- Pet's HP Recovery Potion -->
+			<item id="96617" />	<!-- STR Dye -->
+			<item id="96618" />	<!-- CON Dye -->
+			<item id="96619" />	<!-- DEX Dye -->
+			<item id="96620" />	<!-- INT Dye -->
+			<item id="96621" />	<!-- MEN Dye -->
+			<item id="96622" />	<!-- WIT Dye -->
+			<item id="93406" />	<!-- Scroll: Enchant B-grade Weapon -->
+			<item id="93407" />	<!-- Scroll: Enchant B-grade Armor -->
+			<item id="93408" />	<!-- Scroll: Enchant C-grade Weapon -->
+			<item id="93409" />	<!-- Scroll: Enchant C-grade Armor -->
+			<item id="93410" />	<!-- Scroll: Enchant D-grade Weapon -->
+			<item id="93411" />	<!-- Scroll: Enchant D-grade Armor -->
+			<item id="17"/>	<!--Wooden Arrow-->
+			<item id="1341"/>	<!--Bone Arrow-->
+			<item id="1342"/>	<!--Steel Arrow-->
+			<item id="1343" />	<!-- Silver Arrow -->
+			<item id="1344" />	<!-- Mithril Arrow -->
+			<item id="94891" />	<!-- No-grade Elemental Orb -->
+			<item id="94892" />	<!-- D-grade Elemental Orb -->
+			<item id="94893" />	<!-- C-grade Elemental Orb -->
+			<item id="94894" />	<!-- B-grade Elemental Orb -->
+			<item id="94895" />	<!-- A-grade Elemental Orb -->
+			<item id="95490" />	<!-- Infinite Wooden Quiver -->
+			<item id="95491" />	<!-- Infinite Bone Quiver -->
+			<item id="95497" />	<!-- Infinite Steel Quiver -->
+			<item id="95493" />	<!-- +7 Bow of Peril -->
+			<item id="95494" />	<!-- Infinite Mithril Quiver -->
+			<item id="92004" />	<!-- Inventory Expansion Ticket Lv. 1 -->
+			<item id="92005" />	<!-- Inventory Expansion Ticket Lv. 2 -->
+			<item id="92006" />	<!-- Inventory Expansion Ticket Lv. 3 -->
+			<item id="95495" />	<!-- Buff Expansion Book Lv. 1 -->
+			<item id="95496" />	<!-- Buff Expansion Book Lv. 2 -->
+			<item id="94185" />	<!-- Dimensional Gift -->
+			<item id="94187" />	<!-- Dimensional Gift -->
+			<item id="93099" />	<!-- Life Stone Lv. 1 - Shield/ Sigil -->
+			<item id="2130" />	<!-- D-grade Gemstone -->
+			<item id="2131" />	<!-- C-grade Gemstone -->
+			<item id="2132" />	<!-- B-grade Gemstone -->
+			<item id="2133" />	<!-- A-grade Gemstone -->
+			<item id="5126" />	<!-- Dual Sword Crafting Stamp -->
+			<item id="1831"/>	<!--Antidote-->
+			<item id="1832"/>	<!--Greater Antidote-->
+			<item id="1833"/>	<!--Bandage-->
+			<item id="1834"/>	<!--Emergency Dressing-->
+			<item id="734"/>	<!--Wind Walk Potion-->
+			<item id="735"/>	<!--Haste Potion-->
+			<item id="6035"/>	<!--Magic Haste Potion-->
+			<item id="6037"/>	<!--Scroll: Cancel Sleep-->
+			<item id="1785"/>	<!--Soulstone-->
+			<item id="5589"/>	<!--Momentum Stone-->
+			<item id="4679"/>	<!--Blessing of Eva-->
+			<item id="8615" />	<!-- Summoning Crystal -->
+			<item id="93662" />	<!-- Facelifting Potion A -->
+			<item id="93663" />	<!-- Facelifting Potion B -->
+			<item id="93664" />	<!-- Facelifting Potion C -->
+			<item id="93665" />	<!-- Dye Potion A -->
+			<item id="93666" />	<!-- Dye Potion B -->
+			<item id="93667" />	<!-- Dye Potion C -->
+			<item id="93668" />	<!-- Dye Potion D -->
+			<item id="93669" />	<!-- Hair Style Change Potion A -->
+			<item id="93670" />	<!-- Hair Style Change Potion B -->
+			<item id="93671" />	<!-- Hair Style Change Potion C -->
+			<item id="93672" />	<!-- Hair Style Change Potion D -->
+			<item id="93673" />	<!-- Hair Style Change Potion E -->
+			<item id="93674" />	<!-- Hair Style Change Potion F -->
+			<item id="93675" />	<!-- Hair Style Change Potion G -->
+			<item id="94041" />	<!-- Scroll: Restore Equipment -->
+		</buylist>
+	</npc>
+</list>

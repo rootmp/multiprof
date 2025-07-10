@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<spawn name="gludio03_npc1821_003" count="1" respawn="60">
+		<point x="-53760" y="110720" z="-3610" h="0"/>
+		<npc id="30409"/><!--Земляная Змея-->
+	</spawn>
+	<territory name="gludio33_1821_02">
+		<add x="-65408" y="105012" zmin="-3788" zmax="-3288"/>
+		<add x="-63384" y="105452" zmin="-3788" zmax="-3288"/>
+		<add x="-62812" y="108976" zmin="-3788" zmax="-3288"/>
+		<add x="-63332" y="111240" zmin="-3788" zmax="-3288"/>
+		<add x="-65492" y="112488" zmin="-3788" zmax="-3288"/>
+	</territory>
+	<territory name="gludio33_1821_01">
+		<add x="-65452" y="98532" zmin="-3956" zmax="-3356"/>
+		<add x="-61120" y="98604" zmin="-3956" zmax="-3356"/>
+		<add x="-61280" y="100596" zmin="-3956" zmax="-3356"/>
+		<add x="-63236" y="105264" zmin="-3956" zmax="-3356"/>
+		<add x="-65420" y="104832" zmin="-3956" zmax="-3356"/>
+	</territory>
+	<spawn name="gludio17_npc1821_002" count="1" respawn="60">
+		<point x="-60672" y="126592" z="-2957" h="0"/>
+		<npc id="30413"/><!--Водяная Ундина-->
+	</spawn>
+	<spawn name="gludio01_qm1821_03" count="3" respawn="180">
+		<territory>
+			<add x="-57976" y="126924" zmin="-3156" zmax="-2956"/>
+			<add x="-57184" y="126960" zmin="-3156" zmax="-2956"/>
+			<add x="-57768" y="128052" zmin="-3156" zmax="-2956"/>
+			<add x="-58180" y="128240" zmin="-3156" zmax="-2956"/>
+			<add x="-58492" y="127792" zmin="-3156" zmax="-2956"/>
+		</territory>
+		<npc id="27095"/><!--Поющий Цветок Фантазий-->
+	</spawn>
+	<spawn name="gludio01_qm1821_02" count="3" respawn="300">
+		<territory>
+			<add x="-55876" y="123656" zmin="-3120" zmax="-2620"/>
+			<add x="-55360" y="123364" zmin="-3120" zmax="-2620"/>
+			<add x="-54196" y="124816" zmin="-3120" zmax="-2620"/>
+			<add x="-54920" y="124880" zmin="-3120" zmax="-2620"/>
+		</territory>
+		<npc id="27030"/><!--Водный Пророк-->
+	</spawn>
+	<spawn name="gludio01_qm1821_01" count="3" respawn="300">
+		<territory>
+			<add x="-59344" y="122568" zmin="-3136" zmax="-2636"/>
+			<add x="-58200" y="122172" zmin="-3136" zmax="-2636"/>
+			<add x="-57508" y="123008" zmin="-3136" zmax="-2636"/>
+			<add x="-58640" y="123392" zmin="-3136" zmax="-2636"/>
+		</territory>
+		<npc id="27030"/><!--Водный Пророк-->
+	</spawn>
+	<territory name="gludio35_1821_02">
+		<add x="-50207" y="129731" zmin="-3156" zmax="-2156"/>
+		<add x="-46686" y="129223" zmin="-3156" zmax="-2156"/>
+		<add x="-46629" y="130873" zmin="-3156" zmax="-2156"/>
+		<add x="-51389" y="130839" zmin="-3156" zmax="-2156"/>
+	</territory>
+	<territory name="gludio35_1821_03">
+		<add x="-51981" y="125242" zmin="-3236" zmax="-2336"/>
+		<add x="-46428" y="127058" zmin="-3236" zmax="-2336"/>
+		<add x="-47528" y="128440" zmin="-3236" zmax="-2336"/>
+		<add x="-50564" y="128838" zmin="-3236" zmax="-2336"/>
+		<add x="-53100" y="127446" zmin="-3236" zmax="-2336"/>
+	</territory>
+	<territory name="gludio35_1821_04">
+		<add x="-51114" y="124296" zmin="-3104" zmax="-2104"/>
+		<add x="-45997" y="124669" zmin="-3104" zmax="-2104"/>
+		<add x="-46436" y="126944" zmin="-3104" zmax="-2104"/>
+		<add x="-51960" y="125142" zmin="-3104" zmax="-2104"/>
+	</territory>
+	<territory name="gludio35_1821_05">
+		<add x="-44626" y="127604" zmin="-2976" zmax="-2476"/>
+		<add x="-41597" y="128634" zmin="-2976" zmax="-2476"/>
+		<add x="-41754" y="130797" zmin="-2976" zmax="-2476"/>
+		<add x="-45371" y="130743" zmin="-2976" zmax="-2476"/>
+	</territory>
+	<territory name="gludio35_1821_01">
+		<add x="-53167" y="127488" zmin="-3192" zmax="-2792"/>
+		<add x="-51752" y="130085" zmin="-3192" zmax="-2792"/>
+		<add x="-52292" y="130760" zmin="-3192" zmax="-2792"/>
+		<add x="-55291" y="130823" zmin="-3192" zmax="-2792"/>
+		<add x="-55688" y="128988" zmin="-3192" zmax="-2792"/>
+	</territory>
+</list>

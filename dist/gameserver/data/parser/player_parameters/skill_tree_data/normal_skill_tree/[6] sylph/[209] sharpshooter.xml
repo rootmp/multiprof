@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="209"><!--Sharpshooter-->
+		<skill id="91" level="2" min_level="20" cost="1000"/><!--Ability to Protect-->
+		<skill id="45176" level="1" min_level="20" cost="1000"/><!--HP Recovery-->
+		<skill id="45177" level="1" min_level="20" cost="1000"/><!--MP Recovery-->
+		<skill id="47002" level="1" min_level="20" cost="1000"/><!--Dual Blow-->
+		<skill id="47021" level="1" min_level="20" cost="1000"/><!--Elemental Focus-->
+		<skill id="47022" level="1" min_level="20" cost="1000"/><!--Elemental Death Whisper-->
+		<skill id="47023" level="1" min_level="20" cost="1000"/><!--Elemental Haste-->
+		<skill id="47024" level="1" min_level="20" cost="1000"/><!--Elemental Wind Walk-->
+		<skill id="47026" level="2" min_level="20" cost="1000"/><!--Elemental Might-->
+		<skill id="47027" level="2" min_level="20" cost="1000"/><!--Elemental Shield-->
+		<skill id="47028" level="1" min_level="20" cost="1000"/><!--Elemental Acumen-->
+		<skill id="47029" level="1" min_level="20" cost="1000"/><!--Elemental Empower-->
+		<skill id="47032" level="1" min_level="20" cost="1000"/><!--Elemental Clarity-->
+		<skill id="47081" level="1" min_level="20" cost="1000"/><!--Firearm Mastery-->
+		<skill id="47082" level="1" min_level="20" cost="1000"/><!--Light Armor Mastery-->
+		<skill id="47002" level="2" min_level="24" cost="2500"/><!--Dual Blow-->
+		<skill id="77" level="2" min_level="25" cost="5500"/><!--Ability to Attack-->
+		<skill id="137" level="1" min_level="27" cost="5500"/><!--Critical Rate-->
+		<skill id="47002" level="3" min_level="28" cost="5500"/><!--Dual Blow-->
+		<skill id="47021" level="2" min_level="30" cost="11000"/><!--Elemental Focus-->
+		<skill id="47022" level="2" min_level="30" cost="11000"/><!--Elemental Death Whisper-->
+		<skill id="47024" level="2" min_level="30" cost="11000"/><!--Elemental Wind Walk-->
+		<skill id="47025" level="1" min_level="30" cost="11000"/><!--Elemental Magic Barrier-->
+		<skill id="47028" level="2" min_level="30" cost="11000"/><!--Elemental Acumen-->
+		<skill id="47029" level="2" min_level="30" cost="11000"/><!--Elemental Empower-->
+		<skill id="47030" level="1" min_level="30" cost="11000"/><!--Elemental Wild Magic-->
+		<skill id="47031" level="1" min_level="30" cost="11000"/><!--Elemental Berserker Spirit-->
+		<skill id="47032" level="2" min_level="30" cost="11000"/><!--Elemental Clarity-->
+		<skill id="47002" level="4" min_level="32" cost="18000"/><!--Dual Blow-->
+		<skill id="47084" level="1" min_level="35" cost="20000"/><!--Long Range Attack-->
+		<skill id="47002" level="5" min_level="36" cost="20000"/><!--Dual Blow-->
+		<skill id="47104" level="2" min_level="20" cost="1000"/><!--Elemental Connection-->
+	</normal_skill_tree>
+</list>

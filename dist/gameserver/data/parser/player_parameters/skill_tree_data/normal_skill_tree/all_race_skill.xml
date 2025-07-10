@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../tree.dtd">
+<!--AUTHOR: Bonux-->
+<!--REWORKER: MORSE-->
+<list>
+	<normal_skill_tree race="HUMAN">
+		<skill id="194" level="1" min_level="1"/><!--Lucky-->
+		<skill id="17192" level="1" min_level="1"/><!--Change Hair Accessory-->
+	</normal_skill_tree>
+	<normal_skill_tree race="ELF">
+		<skill id="194" level="1" min_level="1"/><!--Lucky-->
+		<skill id="17192" level="1" min_level="1"/><!--Change Hair Accessory-->
+	</normal_skill_tree>
+	<normal_skill_tree race="DARKELF">
+		<skill id="194" level="1" min_level="1"/><!--Lucky-->
+		<skill id="17192" level="1" min_level="1"/><!--Change Hair Accessory-->
+	</normal_skill_tree>
+	<normal_skill_tree race="ORC">
+		<skill id="194" level="1" min_level="1"/><!--Lucky-->
+		<skill id="134" level="1" min_level="1"/><!--Toughness-->
+		<skill id="17192" level="1" min_level="1"/><!--Change Hair Accessory-->
+	</normal_skill_tree>
+	<normal_skill_tree race="DWARF">
+		<skill id="194" level="1" min_level="1"/><!--Lucky-->
+		<skill id="1321" level="1" min_level="1"/><!--Dwarven Craft-->
+		<skill id="17192" level="1" min_level="1"/><!--Change Hair Accessory-->
+	</normal_skill_tree>
+	<normal_skill_tree race="KAMAEL">
+		<skill id="194" level="1" min_level="1"/><!--Lucky-->
+		<skill id="17192" level="1" min_level="1"/><!--Change Hair Accessory-->
+	</normal_skill_tree>
+	<normal_skill_tree race="SYLPH">
+		<skill id="194" level="1" min_level="1"/><!--Lucky-->
+		<skill id="17192" level="1" min_level="1"/><!--Change Hair Accessory-->
+	</normal_skill_tree>
+</list>

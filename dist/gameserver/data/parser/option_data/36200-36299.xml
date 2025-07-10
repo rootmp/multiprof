@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="36200">
+		<!--M. Atk. +110-->
+	</option_data>
+	<option_data id="36201">
+		<!--M. Atk. +120-->
+	</option_data>
+	<option_data id="36202">
+		<!--M. Atk. +150-->
+	</option_data>
+	<option_data id="36203">
+		<!--M. Atk. +200-->
+	</option_data>
+	<option_data id="36204">
+		<!--M. Atk. +10.-->
+	</option_data>
+	<option_data id="36205">
+		<!--M. Atk. +16.-->
+	</option_data>
+	<option_data id="36206">
+		<!--M. Atk. +22-->
+	</option_data>
+	<option_data id="36207">
+		<!--M. Atk. +28-->
+	</option_data>
+	<option_data id="36208">
+		<!--M. Atk. +34-->
+	</option_data>
+	<option_data id="36209">
+		<!--M. Atk. +40-->
+	</option_data>
+	<option_data id="36210">
+		<!--M. Atk. +46-->
+	</option_data>
+	<option_data id="36211">
+		<!--M. Atk. +52-->
+	</option_data>
+	<option_data id="36212">
+		<!--M. Atk. +58-->
+	</option_data>
+	<option_data id="36213">
+		<!--M. Atk. +64-->
+	</option_data>
+	<option_data id="36214">
+		<!--M. Atk. +70-->
+	</option_data>
+	<option_data id="36215">
+		<!--M. Atk. +76-->
+	</option_data>
+	<option_data id="36216">
+		<!--M. Atk. +82-->
+	</option_data>
+	<option_data id="36217">
+		<!--M. Atk. +88-->
+	</option_data>
+	<option_data id="36218">
+		<!--M. Atk. +94-->
+	</option_data>
+	<option_data id="36219">
+		<!--M. Atk. +100-->
+	</option_data>
+	<option_data id="36220">
+		<!--M. Atk. +110-->
+	</option_data>
+	<option_data id="36221">
+		<!--M. Atk. +120-->
+	</option_data>
+	<option_data id="36222">
+		<!--M. Atk. +150-->
+	</option_data>
+	<option_data id="36223">
+		<!--M. Atk. +200-->
+	</option_data>
+	<option_data id="36224">
+		<!--M. Atk. +10.-->
+	</option_data>
+	<option_data id="36225">
+		<!--M. Atk. +16.-->
+	</option_data>
+	<option_data id="36226">
+		<!--M. Atk. +22-->
+	</option_data>
+	<option_data id="36227">
+		<!--M. Atk. +28-->
+	</option_data>
+	<option_data id="36228">
+		<!--M. Atk. +34-->
+	</option_data>
+	<option_data id="36229">
+		<!--M. Atk. +40-->
+	</option_data>
+	<option_data id="36230">
+		<!--M. Atk. +46-->
+	</option_data>
+	<option_data id="36231">
+		<!--M. Atk. +52-->
+	</option_data>
+	<option_data id="36232">
+		<!--M. Atk. +58-->
+	</option_data>
+	<option_data id="36233">
+		<!--M. Atk. +64-->
+	</option_data>
+	<option_data id="36234">
+		<!--M. Atk. +70-->
+	</option_data>
+	<option_data id="36235">
+		<!--M. Atk. +76-->
+	</option_data>
+	<option_data id="36236">
+		<!--M. Atk. +82-->
+	</option_data>
+	<option_data id="36237">
+		<!--M. Atk. +88-->
+	</option_data>
+	<option_data id="36238">
+		<!--M. Atk. +94-->
+	</option_data>
+	<option_data id="36239">
+		<!--M. Atk. +100-->
+	</option_data>
+	<option_data id="36240">
+		<!--M. Atk. +110-->
+	</option_data>
+	<option_data id="36241">
+		<!--M. Atk. +120-->
+	</option_data>
+	<option_data id="36242">
+		<!--M. Atk. +150-->
+	</option_data>
+	<option_data id="36243">
+		<!--M. Atk. +200-->
+	</option_data>
+	<option_data id="36244">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36245">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36246">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36247">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36248">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36249">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36250">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36251">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36252">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36253">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36254">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36255">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36256">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36257">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="36258">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="36259">
+		<!--P. Accuracy +1.5-->
+	</option_data>
+	<option_data id="36260">
+		<!--P. Accuracy +1.7-->
+	</option_data>
+	<option_data id="36261">
+		<!--P. Accuracy +1.8-->
+	</option_data>
+	<option_data id="36262">
+		<!--P. Accuracy +2.0-->
+	</option_data>
+	<option_data id="36263">
+		<!--P. Accuracy +3.0-->
+	</option_data>
+	<option_data id="36264">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36265">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36266">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36267">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36268">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36269">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36270">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36271">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36272">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36273">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36274">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36275">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36276">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36277">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="36278">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="36279">
+		<!--P. Accuracy +1.5-->
+	</option_data>
+	<option_data id="36280">
+		<!--P. Accuracy +1.7-->
+	</option_data>
+	<option_data id="36281">
+		<!--P. Accuracy +1.8-->
+	</option_data>
+	<option_data id="36282">
+		<!--P. Accuracy +2.0-->
+	</option_data>
+	<option_data id="36283">
+		<!--P. Accuracy +3.0-->
+	</option_data>
+	<option_data id="36284">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36285">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36286">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36287">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36288">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36289">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36290">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="36291">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36292">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="36293">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36294">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36295">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36296">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="36297">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="36298">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="36299">
+		<!--P. Accuracy +1.5-->
+	</option_data>
+</list>

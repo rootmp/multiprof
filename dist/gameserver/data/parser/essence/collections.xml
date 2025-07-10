@@ -1,0 +1,2167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "collections.dtd">
+<!-- AUTHOR: nexvill -->
+<list>
+	<collection id="1" tab_id="2" option_id="39031">	<!-- Bone Snatcher I -->
+		<item id="25" count="1" slot_id="0"/>
+		<item id="32" count="1" slot_id="1"/>
+		<item id="625" count="1" slot_id="2"/>
+	</collection>
+	<collection id="2" tab_id="2" option_id="39032">	<!-- Bone Snatcher II -->
+		<item id="24" count="1" slot_id="0"/>
+		<item id="310" count="1" slot_id="1"/>
+	</collection>
+	<collection id="3" tab_id="2" option_id="39033">	<!-- Local Belief -->
+		<item id="1102" count="1" slot_id="0"/>
+		<item id="1105" count="1" slot_id="1"/>
+		<item id="100" count="1" slot_id="2"/>
+	</collection>
+	<collection id="4" tab_id="2" option_id="39034">	<!-- Thin Leather -->
+		<item id="50" count="1" slot_id="0"/>
+		<item id="44" count="1" slot_id="1"/>
+	</collection>
+	<collection id="5" tab_id="2" option_id="39035">	<!-- Precious Jewelry -->
+		<item id="909" count="1" slot_id="0"/>
+		<item id="878" count="1" slot_id="1"/>
+		<item id="846" count="1" slot_id="2"/>
+	</collection>
+	<collection id="6" tab_id="2" option_id="39036">	<!-- Wise Cat -->
+		<item id="845" count="1" slot_id="0"/>
+		<item id="908" count="1" slot_id="1"/>
+		<item id="877" count="1" slot_id="2"/>
+	</collection>
+	<collection id="7" tab_id="3" option_id="39037">	<!-- Bronze Age -->
+		<item id="26" count="1" slot_id="0"/>
+		<item id="34" count="1" slot_id="1"/>
+		<item id="102" count="1" slot_id="2"/>
+		<item id="68" count="1" slot_id="3"/>
+	</collection>
+	<collection id="8" tab_id="1" option_id="39038">	<!-- Iron Age -->
+		<item id="15" count="1" slot_id="0"/>
+		<item id="16" count="1" slot_id="1"/>
+		<item id="87" count="1" slot_id="2"/>
+	</collection>
+	<collection id="9" tab_id="3" option_id="39039">	<!-- Agile Archer -->
+		<item id="412" count="1" slot_id="0"/>
+		<item id="390" count="1" slot_id="1"/>
+		<item id="51" count="1" slot_id="2"/>
+		<item id="38" count="1" slot_id="3"/>
+		<item id="273" count="1" slot_id="4"/>
+	</collection>
+	<collection id="10" tab_id="1" option_id="39040">	<!-- Veteran Swordsman -->
+		<item id="2" count="1" slot_id="0"/>
+		<item id="256" count="1" slot_id="1"/>
+		<item id="155" count="1" slot_id="2"/>
+	</collection>
+	<collection id="11" tab_id="3" option_id="39041">	<!-- Ancient Warrior's Power -->
+		<item id="257" count="1" slot_id="0"/>
+		<item id="91891" count="1" slot_id="1"/>
+		<item id="91877" count="1" slot_id="2"/>
+		<item id="5284" count="1" slot_id="3"/>
+	</collection>
+	<collection id="12" tab_id="3" option_id="39042">	<!-- Durable Leather -->
+		<item id="27" count="1" slot_id="0"/>
+		<item id="33" count="1" slot_id="1"/>
+		<item id="1148" count="1" slot_id="2"/>
+	</collection>
+	<collection id="13" tab_id="1" option_id="39043">	<!-- Sharp Knife -->
+		<item id="280" count="1" enchant="7" alternative_id="95028" slot_id="0"/>
+		<item id="223" count="1" enchant="4" alternative_id="94997" slot_id="1"/>
+		<item id="218" count="1" slot_id="2"/>
+		<item id="219" count="1" slot_id="3"/>
+	</collection>
+	<collection id="14" tab_id="1" option_id="39044">	<!-- Power of Faith -->
+		<item id="7885" count="1" enchant="7" alternative_id="95301" slot_id="0"/>
+		<item id="311" count="1" slot_id="1"/>
+		<item id="1101" count="1" slot_id="2"/>
+		<item id="1104" count="1" slot_id="3"/>
+		<item id="39" count="1" slot_id="4"/>
+	</collection>
+	<collection id="15" tab_id="2" option_id="39045">	<!-- Wizard's Apprentice -->
+		<item id="315" count="1" enchant="5" alternative_id="95049" slot_id="0"/>
+		<item id="176" count="1" slot_id="1"/>
+		<item id="177" count="1" slot_id="2"/>
+	</collection>
+	<collection id="16" tab_id="2" option_id="39046">	<!-- Touch of the Woods -->
+		<item id="312" count="1" enchant="5" alternative_id="95046" slot_id="0"/>
+		<item id="272" count="1" slot_id="1"/>
+		<item id="93083" count="1" alternative_id="93109" slot_id="2"/>
+	</collection>
+	<collection id="17" tab_id="3" option_id="39047">	<!-- Source of Mana -->
+		<item id="185" count="1" enchant="4" alternative_id="94973" slot_id="0"/>
+		<item id="238" count="1" enchant="4" alternative_id="95007" slot_id="1"/>
+		<item id="101" count="1" enchant="4" alternative_id="94931" slot_id="2"/>
+		<item id="908" count="1" slot_id="3"/>
+		<item id="877" count="1" slot_id="4"/>
+	</collection>
+	<collection id="18" tab_id="3" option_id="39048">	<!-- Legacy of Giants I -->
+		<item id="7881" count="1" enchant="4" alternative_id="95299" slot_id="0"/>
+		<item id="7896" count="1" enchant="4" alternative_id="95308" slot_id="1"/>
+		<item id="91880" count="1" enchant="4" alternative_id="95314" slot_id="2"/>
+		<item id="91881" count="1" enchant="4" alternative_id="95315" slot_id="3"/>
+		<item id="91877" count="1" slot_id="4"/>
+	</collection>
+	<collection id="19" tab_id="3" option_id="39049">	<!-- Animal World -->
+		<item id="90" count="1" enchant="4" alternative_id="94924" slot_id="0"/>
+		<item id="413" count="1" enchant="4" alternative_id="95085" slot_id="1"/>
+		<item id="1123" count="1" enchant="4" alternative_id="95134" slot_id="2"/>
+		<item id="414" count="1" enchant="4" alternative_id="95086" slot_id="3"/>
+		<item id="257" count="1" slot_id="4"/>
+	</collection>
+	<collection id="20" tab_id="2" option_id="39050">	<!-- Cure-all -->
+		<item id="182" count="1" enchant="7" alternative_id="94970" slot_id="0"/>
+		<item id="7896" count="1" enchant="5" alternative_id="95308" slot_id="1"/>
+		<item id="168" count="1" enchant="4" alternative_id="94961" slot_id="2"/>
+		<item id="87" count="1" slot_id="3"/>
+	</collection>
+	<collection id="21" tab_id="2" option_id="39051">	<!-- Hard Metal -->
+		<item id="58" count="1" enchant="5" alternative_id="94902" slot_id="0"/>
+		<item id="393" count="1" enchant="4" alternative_id="95077" slot_id="1"/>
+		<item id="59" count="1" enchant="4" alternative_id="94903" slot_id="2"/>
+		<item id="378" count="1" enchant="4" alternative_id="95070" slot_id="3"/>
+		<item id="437" count="1" enchant="4" alternative_id="95098" slot_id="4"/>
+	</collection>
+	<collection id="22" tab_id="3" option_id="39052">	<!-- Occult Inclination -->
+		<item id="1660" count="1" enchant="4" alternative_id="95141" slot_id="0"/>
+		<item id="465" count="1" enchant="4" alternative_id="95103" slot_id="1"/>
+		<item id="432" count="1" enchant="4" alternative_id="95093" slot_id="2"/>
+		<item id="100" count="1" slot_id="3"/>
+		<item id="320" count="1" enchant="4" alternative_id="95054" slot_id="4"/>
+	</collection>
+	<collection id="23" tab_id="3" option_id="39053">	<!-- Passion for Fashion -->
+		<item id="434" count="1" enchant="4" alternative_id="95095" slot_id="0"/>
+		<item id="467" count="1" enchant="4" alternative_id="95105" slot_id="1"/>
+		<item id="880" count="1" enchant="4" alternative_id="95383" slot_id="2"/>
+		<item id="847" count="1" enchant="4" alternative_id="95369" slot_id="3"/>
+	</collection>
+	<collection id="24" tab_id="2" option_id="39054">	<!-- Novice Mage -->
+		<item id="7890" count="1" enchant="7" alternative_id="95305" slot_id="0"/>
+		<item id="468" count="1" enchant="4" alternative_id="95106" slot_id="1"/>
+		<item id="910" count="1" alternative_id="95397" slot_id="2"/>
+		<item id="848" count="1" alternative_id="95370" slot_id="3"/>
+	</collection>
+	<collection id="25" tab_id="1" option_id="39055">	<!-- Dreadful Gaze -->
+		<item id="93" count="1" alternative_id="94927" slot_id="0"/>
+		<item id="88" count="1" alternative_id="94922" slot_id="1"/>
+		<item id="849" count="1" alternative_id="95371" slot_id="2"/>
+	</collection>
+	<collection id="26" tab_id="2" option_id="39056">	<!-- Awakening Hero -->
+		<item id="129" count="1" alternative_id="94941" slot_id="0"/>
+		<item id="2447" count="1" alternative_id="95165" slot_id="1"/>
+	</collection>
+	<collection id="27" tab_id="2" option_id="39057">	<!-- Jewelry of Magic -->
+		<item id="911" count="1" alternative_id="95398" slot_id="0"/>
+		<item id="879" count="1" alternative_id="95382" slot_id="1"/>
+	</collection>
+	<collection id="28" tab_id="1" option_id="39058">	<!-- Magic Equipment -->
+		<item id="83" count="1" alternative_id="94919" slot_id="0"/>
+		<item id="314" count="1" alternative_id="95048" slot_id="1"/>
+	</collection>
+	<collection id="29" tab_id="2" option_id="39059">	<!-- In Search of Immortality -->
+		<item id="885" count="1" alternative_id="95388" enchant="5" slot_id="0"/>
+		<item id="917" count="1" alternative_id="95404" enchant="5" slot_id="1"/>
+		<item id="917" count="1" alternative_id="95404" enchant="5" slot_id="2"/>
+		<item id="917" count="1" alternative_id="95404" enchant="5" slot_id="3"/>
+	</collection>
+	<collection id="30" tab_id="1" option_id="39060">	<!-- Primary Weapon Set I -->
+		<item id="70" count="1" enchant="9" alternative_id="94910" slot_id="0"/>
+		<item id="159" count="1" enchant="7" alternative_id="94955" slot_id="1"/>
+		<item id="255" count="1" alternative_id="94999" slot_id="2"/>
+	</collection>
+	<collection id="31" tab_id="1" option_id="39061">	<!-- Primary Weapon Set II -->
+		<item id="187" count="1" enchant="9" alternative_id="94975" slot_id="0"/>
+		<item id="188" count="1" enchant="7" alternative_id="94976" slot_id="1"/>
+		<item id="189" count="1" alternative_id="94977" slot_id="2"/>
+	</collection>
+	<collection id="32" tab_id="1" option_id="39062">	<!-- Primary Weapon Set III -->
+		<item id="262" count="1" enchant="9" alternative_id="95017" slot_id="0"/>
+		<item id="297" count="1" enchant="7" alternative_id="95040" slot_id="1"/>
+		<item id="91892" count="1" alternative_id="95319" slot_id="2"/>
+	</collection>
+	<collection id="33" tab_id="1" option_id="39063">	<!-- Primary Weapon Set IV -->
+		<item id="190" count="1" enchant="9" alternative_id="94978" slot_id="0"/>
+		<item id="322" count="1" enchant="7" alternative_id="95056" slot_id="1"/>
+		<item id="2499" count="1" alternative_id="95185" slot_id="2"/>
+	</collection>
+	<collection id="34" tab_id="2" option_id="39064">	<!-- Watch Your Head -->
+		<item id="2412" count="1" enchant="5" alternative_id="95148" slot_id="0"/>
+		<item id="2411" count="1" enchant="4" alternative_id="95147" slot_id="1"/>
+		<item id="47" count="1" enchant="4" alternative_id="94901" slot_id="2"/>
+		<item id="46" count="1" enchant="4" alternative_id="94900" slot_id="3"/>
+		<item id="45" count="1" enchant="4" alternative_id="94899" slot_id="4"/>
+	</collection>
+	<collection id="35" tab_id="2" option_id="39065">	<!-- Mithril Collector I -->
+		<item id="225" count="1" enchant="5" alternative_id="94999" slot_id="0"/>
+		<item id="437" count="1" enchant="4" alternative_id="95098" slot_id="1"/>
+		<item id="2377" count="1" enchant="4" alternative_id="95142" slot_id="2"/>
+		<item id="58" count="1" enchant="4" alternative_id="94902" slot_id="3"/>
+		<item id="59" count="1" alternative_id="94903" slot_id="4"/>
+		<item id="61" count="1" alternative_id="94905" slot_id="5"/>
+	</collection>
+	<collection id="36" tab_id="2" option_id="39066">	<!-- Protection Basics -->
+		<item id="629" count="1" enchant="7" alternative_id="95127" slot_id="0"/>
+		<item id="348" count="1" enchant="5" alternative_id="95060" slot_id="1"/>
+		<item id="2493" count="1" enchant="5" alternative_id="95180" slot_id="2"/>
+		<item id="630" count="1" enchant="5" alternative_id="95128" slot_id="3"/>
+		<item id="2494" count="1" enchant="5" alternative_id="95181" slot_id="4"/>
+	</collection>
+	<collection id="37" tab_id="3" option_id="39067">	<!-- Celebrated Hero -->
+		<item id="315" count="1" enchant="4" alternative_id="95049" slot_id="0"/>
+		<item id="317" count="1" enchant="4" alternative_id="95051" slot_id="1"/>
+		<item id="316" count="1" enchant="4" alternative_id="95050" slot_id="2"/>
+		<item id="319" count="1" enchant="4" alternative_id="95053" slot_id="3"/>
+		<item id="323" count="1" enchant="4" alternative_id="95057" slot_id="4"/>
+	</collection>
+	<collection id="38" tab_id="3" option_id="39068">	<!-- Excellent Mithril -->
+		<item id="2452" count="1" alternative_id="95170" slot_id="0"/>
+		<item id="2426" count="1" alternative_id="95154" slot_id="1"/>
+	</collection>
+	<collection id="39" tab_id="3" option_id="39069">	<!-- Steel & Mithril -->
+		<item id="608" count="1" alternative_id="95122" slot_id="0"/>
+		<item id="7880" count="1" alternative_id="95298" slot_id="1"/>
+	</collection>
+	<collection id="40" tab_id="3" option_id="39070">	<!-- Eternal Foe -->
+		<item id="631" count="1" alternative_id="95129" slot_id="0"/>
+		<item id="292" count="1" alternative_id="95035" slot_id="1"/>
+	</collection>
+	<collection id="41" tab_id="1" option_id="39071">	<!-- Improper Appearance -->
+		<item id="472" count="1" alternative_id="95109" slot_id="0"/>
+		<item id="354" count="1" alternative_id="95066" slot_id="1"/>
+	</collection>
+	<collection id="42" tab_id="1" option_id="39072">	<!-- Famous Archer -->
+		<item id="281" count="1" alternative_id="95029" slot_id="0"/>
+		<item id="283" count="1" alternative_id="95031" slot_id="1"/>
+	</collection>
+	<collection id="43" tab_id="2" option_id="39073">	<!-- Sage's Ascesis -->
+		<item id="200" count="1" enchant="4" alternative_id="94988" slot_id="0"/>
+		<item id="316" count="1" enchant="4" alternative_id="95050" slot_id="1"/>
+		<item id="2451" count="1" enchant="4" alternative_id="95169" slot_id="2"/>
+		<item id="438" count="1" enchant="4" alternative_id="95099" slot_id="3"/>
+	</collection>
+	<collection id="44" tab_id="2" option_id="39074">	<!-- Energy of Pa'agrio -->
+		<item id="199" count="1" enchant="5" alternative_id="94987" slot_id="0"/>
+		<item id="203" count="1" alternative_id="94991" slot_id="1"/>
+		<item id="1120" count="1" alternative_id="95133" slot_id="2"/>
+		<item id="7882" count="1" alternative_id="95300" slot_id="3"/>
+	</collection>
+	<collection id="45" tab_id="2" option_id="39075">	<!-- My First Bows-->
+		<item id="286" count="1" enchant="9" alternative_id="93051" slot_id="0"/>
+		<item id="283" count="1" enchant="5" alternative_id="95031" slot_id="1"/>
+		<item id="282" count="1" enchant="5" alternative_id="95030" slot_id="2"/>
+		<item id="278" count="1" enchant="5" alternative_id="95026" slot_id="3"/>
+		<item id="274" count="1" alternative_id="95022" slot_id="4"/>
+		<item id="271" count="1" slot_id="5"/>
+	</collection>
+	<collection id="46" tab_id="6" option_id="39076">	<!-- My First Fists -->
+		<item id="263" count="1" enchant="15" alternative_id="95018" slot_id="0"/>
+		<item id="265" count="1" enchant="8" alternative_id="95020" slot_id="1"/>
+		<item id="4233" count="1" enchant="10" alternative_id="95296" slot_id="2"/>
+		<item id="259" count="1" enchant="10" alternative_id="95014" slot_id="3"/>
+		<item id="260" count="1" enchant="10" alternative_id="95015" slot_id="4"/>
+	</collection>
+	<collection id="47" tab_id="6" option_id="39077">	<!-- Horn Collector -->
+		<item id="7898" count="1" enchant="5" alternative_id="95310" slot_id="0"/>
+		<item id="325" count="1" alternative_id="95058" slot_id="1"/>
+		<item id="308" count="1" slot_id="2"/>
+	</collection>
+	<collection id="48" tab_id="2" option_id="39078">	<!-- Complete Check -->
+		<item id="91883" count="1" enchant="5" alternative_id="95316" slot_id="0"/>
+		<item id="91899" count="1" enchant="5" alternative_id="95325" slot_id="1"/>
+		<item id="94882" count="1" enchant="5" alternative_id="95416" slot_id="2"/>
+		<item id="47" count="1" enchant="4" alternative_id="94901" slot_id="3"/>
+		<item id="63" count="1" enchant="4" alternative_id="94907" slot_id="4"/>
+	</collection>
+	<collection id="49" tab_id="2" option_id="39079">	<!-- Hunter's Durable Equipment -->
+		<item id="160" count="1" enchant="5" alternative_id="94956" slot_id="0"/>
+		<item id="162" count="1" alternative_id="94958" slot_id="1"/>
+		<item id="607" count="1" alternative_id="95121" slot_id="2"/>
+		<item id="391" count="1" alternative_id="95075" slot_id="3"/>
+		<item id="392" count="1" alternative_id="95076" slot_id="4"/>
+	</collection>
+	<collection id="50" tab_id="2" option_id="39080">	<!-- Forgotten Mystery -->
+		<item id="7887" count="1" enchant="7" alternative_id="95303" slot_id="0"/>
+		<item id="1127" count="1" enchant="5" alternative_id="95138" slot_id="1"/>
+		<item id="321" count="1" enchant="5" alternative_id="95055" slot_id="2"/>
+		<item id="606" count="1" enchant="5" alternative_id="95120" slot_id="3"/>
+	</collection>
+	<collection id="51" tab_id="2" option_id="39081">	<!-- Sturdy Head Equipment -->
+		<item id="500" count="1" enchant="4" alternative_id="95114" slot_id="0"/>
+		<item id="498" count="1" enchant="4" alternative_id="95112" slot_id="1"/>
+		<item id="2413" count="1" enchant="4" alternative_id="95149" slot_id="2"/>
+		<item id="497" count="1" enchant="4" alternative_id="95111" slot_id="3"/>
+		<item id="46" count="1" enchant="4" alternative_id="94900" slot_id="4"/>
+		<item id="45" count="1" enchant="4" alternative_id="94899" slot_id="5"/>
+	</collection>
+	<collection id="52" tab_id="2" option_id="39082">	<!-- Firm Skin -->
+		<item id="401" count="1" enchant="5" alternative_id="93643" slot_id="0"/>
+		<item id="2437" count="1" enchant="4" alternative_id="93644" slot_id="1"/>
+		<item id="2461" count="1" enchant="4" alternative_id="93645" slot_id="2"/>
+		<item id="395" count="1" enchant="4" alternative_id="95079" slot_id="3"/>
+		<item id="417" count="1" enchant="4" alternative_id="95089" slot_id="4"/>
+	</collection>
+	<collection id="53" tab_id="6" option_id="39083">	<!-- Stunning Crucifixion -->
+		<item id="75" count="1" alternative_id="94915" slot_id="0"/>
+		<item id="76" count="1" alternative_id="94916" slot_id="1"/>
+		<item id="77" count="1" alternative_id="94917" slot_id="2"/>
+		<item id="84" count="1" alternative_id="94920" slot_id="3"/>
+		<item id="318" count="1" alternative_id="95052" slot_id="4"/>
+		<item id="609" count="1" alternative_id="95123" slot_id="5"/>
+	</collection>
+	<collection id="54" tab_id="1" option_id="39084">	<!-- Mid-grade Weapon Set I -->
+		<item id="204" count="1" alternative_id="94992" slot_id="0"/>
+		<item id="205" count="1" alternative_id="94993" slot_id="1"/>
+		<item id="206" count="1" alternative_id="93048" slot_id="2"/>
+		<item id="7888" count="1" alternative_id="95304" slot_id="3"/>
+		<item id="7891" count="1" alternative_id="93049" slot_id="4"/>
+	</collection>
+	<collection id="55" tab_id="1" option_id="39085">	<!-- Mid-grade Weapon Set II -->
+		<item id="135" count="1" enchant="12" alternative_id="93047" slot_id="0"/>
+		<item id="228" count="1" enchant="10" alternative_id="93050" slot_id="1"/>
+		<item id="266" count="1" enchant="10" alternative_id="93056" slot_id="2"/>
+		<item id="286" count="1" enchant="10" alternative_id="93051" slot_id="3"/>
+		<item id="299" count="1" enchant="10" alternative_id="93052" slot_id="4"/>
+		<item id="91896" count="1" enchant="10" alternative_id="93057" slot_id="5"/>
+	</collection>
+	<collection id="56" tab_id="1" option_id="39086">	<!-- Mid-grade Spear Set I -->
+		<item id="301" count="1" enchant="5" alternative_id="95043" slot_id="0"/>
+		<item id="303" count="1" enchant="5" alternative_id="95045" slot_id="1"/>
+		<item id="95" count="1" alternative_id="94929" slot_id="2"/>
+	</collection>
+	<collection id="57" tab_id="1" option_id="39087">	<!-- Mid-grade Spear Set II -->
+		<item id="94" count="1" enchant="9" alternative_id="94928" slot_id="0"/>
+		<item id="96" count="1" enchant="9" alternative_id="94930" slot_id="1"/>
+		<item id="298" count="1" enchant="7" alternative_id="95041" slot_id="2"/>
+	</collection>
+	<collection id="58" tab_id="1" option_id="39088">	<!-- Mid-grade Two-handed Blunt Set I -->
+		<item id="7891" count="1" enchant="12" alternative_id="93049" slot_id="0"/>
+		<item id="174" count="1" enchant="12" alternative_id="94965" slot_id="1"/>
+		<item id="196" count="1" enchant="4" alternative_id="94984" slot_id="2"/>
+		<item id="201" count="1" enchant="4" alternative_id="94989" slot_id="3"/>
+		<item id="202" count="1" alternative_id="94990" slot_id="4"/>
+		<item id="193" count="1" alternative_id="94981" slot_id="5"/>
+	</collection>
+	<collection id="59" tab_id="4" option_id="39089">	<!-- Divine Robe -->
+		<item id="442" count="1" enchant="4" alternative_id="95102" slot_id="0"/>
+		<item id="473" count="1" alternative_id="95110" slot_id="1"/>
+		<item id="2463" count="1" alternative_id="95178" slot_id="2"/>
+		<item id="919" count="1" alternative_id="95406" slot_id="3"/>
+		<item id="857" count="1" alternative_id="95378" slot_id="4"/>
+		<item id="888" count="1" alternative_id="95391" slot_id="5"/>
+	</collection>
+	<collection id="60" tab_id="3" option_id="39090">	<!-- Rind Leather Armor -->
+		<item id="399" count="1" enchant="4" alternative_id="95083" slot_id="0"/>
+		<item id="419" count="1" alternative_id="95091" slot_id="1"/>
+		<item id="2434" count="1" alternative_id="95161" slot_id="2"/>
+		<item id="2458" count="1" alternative_id="95175" slot_id="3"/>
+	</collection>
+	<collection id="61" tab_id="4" option_id="39091">	<!-- Compound Heavy Armor -->
+		<item id="60" count="1" enchant="4" alternative_id="94904" slot_id="0"/>
+		<item id="517" count="1" alternative_id="95115" slot_id="1"/>
+		<item id="64" count="1" alternative_id="94908" slot_id="2"/>
+		<item id="107" count="1" alternative_id="94933" slot_id="3"/>
+	</collection>
+	<collection id="62" tab_id="4" option_id="39092">	<!-- Protection of Light -->
+		<item id="888" count="1" enchant="5" alternative_id="95391" slot_id="0"/>
+		<item id="916" count="1" enchant="4" alternative_id="95403" slot_id="1"/>
+	</collection>
+	<collection id="63" tab_id="3" option_id="39093">	<!-- Demon's Seal -->
+		<item id="2435" count="1" enchant="4" alternative_id="95162" slot_id="0"/>
+		<item id="1126" count="1" enchant="4" alternative_id="95137" slot_id="1"/>
+		<item id="2457" count="1" alternative_id="95174" slot_id="2"/>
+	</collection>
+	<collection id="64" tab_id="2" option_id="39094">	<!-- Dwarven Skills -->
+		<item id="2456" count="1" enchant="6" alternative_id="95173" slot_id="0"/>
+		<item id="2432" count="1" enchant="6" alternative_id="95159" slot_id="1"/>
+	</collection>
+	<collection id="65" tab_id="2" option_id="39095">	<!-- Cowardly Warrior -->
+		<item id="356" count="1" enchant="6" alternative_id="93642" slot_id="0"/>
+		<item id="400" count="1" enchant="5" alternative_id="95084" slot_id="1"/>
+		<item id="439" count="1" enchant="5" alternative_id="93646" slot_id="2"/>
+		<item id="230" count="1" enchant="9" alternative_id="95003" slot_id="3"/>
+		<item id="74" count="1" enchant="9" alternative_id="94914" slot_id="4"/>
+	</collection>
+	<collection id="66" tab_id="4" option_id="39096">	<!-- Force of Seal -->
+		<item id="401" count="1" enchant="6" alternative_id="93643" slot_id="0"/>
+		<item id="2436" count="1" enchant="5" alternative_id="95163" slot_id="1"/>
+		<item id="471" count="1" enchant="5" alternative_id="93647" slot_id="2"/>
+		<item id="119" count="1" enchant="6" alternative_id="95368" slot_id="3"/>
+		<item id="854" count="1" enchant="6" alternative_id="95375" slot_id="4"/>
+		<item id="886" count="1" enchant="6" alternative_id="95389" slot_id="5"/>
+	</collection>
+	<collection id="67" tab_id="4" option_id="39097">	<!-- Hands Full -->
+		<item id="60" count="1" enchant="6" alternative_id="94904" slot_id="0"/>
+		<item id="2460" count="1" enchant="5" alternative_id="95177" slot_id="1"/>
+		<item id="2454" count="1" enchant="5" alternative_id="93649" slot_id="2"/>
+		<item id="2495" count="1" enchant="6" alternative_id="95182" slot_id="3"/>
+		<item id="93085" count="1" enchant="6" alternative_id="93111" slot_id="4"/>
+	</collection>
+	<collection id="68" tab_id="3" option_id="39098">	<!-- Ferocious Slaughterer -->
+		<item id="90" count="1" enchant="4" alternative_id="94924" slot_id="0"/>
+		<item id="224" count="1" enchant="4" alternative_id="94998" slot_id="1"/>
+		<item id="261" count="1" enchant="4" alternative_id="95016" slot_id="2"/>
+		<item id="279" count="1" enchant="4" alternative_id="95027" slot_id="3"/>
+		<item id="399" count="1" alternative_id="95083" slot_id="4"/>
+		<item id="398" count="1" alternative_id="95082" slot_id="5"/>
+	</collection>
+	<collection id="69" tab_id="3" option_id="39099">	<!-- Black Prayer -->
+		<item id="179" count="1" enchant="4" alternative_id="94967" slot_id="0"/>
+		<item id="926" count="1" alternative_id="95408" slot_id="1"/>
+		<item id="864" count="1" alternative_id="95380" slot_id="2"/>
+	</collection>
+	<collection id="70" tab_id="4" option_id="39100">	<!-- Days of Former Glory -->
+		<item id="325" count="1" enchant="4" alternative_id="95058" slot_id="0"/>
+		<item id="267" count="1" alternative_id="95021" slot_id="1"/>
+		<item id="227" count="1" alternative_id="95001" slot_id="2"/>
+	</collection>
+	<collection id="71" tab_id="4" option_id="39101">	<!-- Star Explosion -->
+		<item id="7901" count="1" enchant="4" alternative_id="93433" slot_id="0"/>
+		<item id="142" count="1" alternative_id="94947" slot_id="1"/>
+		<item id="5286" count="1" alternative_id="93055" slot_id="2"/>
+		<item id="91882" count="1" alternative_id="93058" slot_id="3"/>
+	</collection>
+	<collection id="72" tab_id="4" option_id="39102">	<!-- Hell's Frontier -->
+		<item id="91885" count="1" enchant="4" alternative_id="93434" slot_id="0"/>
+		<item id="243" count="1" alternative_id="95012" slot_id="1"/>
+		<item id="918" count="1" alternative_id="95405" slot_id="2"/>
+		<item id="132" count="1" alternative_id="94944" slot_id="3"/>
+		<item id="2502" count="1" alternative_id="95186" slot_id="4"/>
+	</collection>
+	<collection id="73" tab_id="6" option_id="39103">	<!-- Destroyer of Magic -->
+		<item id="91900" count="1" enchant="4" alternative_id="93435" slot_id="0"/>
+		<item id="7892" count="1" alternative_id="95306" slot_id="1"/>
+		<item id="895" count="1" alternative_id="95395" slot_id="2"/>
+		<item id="145" count="1" alternative_id="94950" slot_id="3"/>
+	</collection>
+	<collection id="74" tab_id="6" option_id="39104">	<!-- Dangerous Weapons -->
+		<item id="78" count="1" enchant="4" alternative_id="94918" slot_id="0"/>
+		<item id="91886" count="1" alternative_id="95318" slot_id="1"/>
+		<item id="198" count="1" alternative_id="94986" slot_id="2"/>
+		<item id="173" count="1" alternative_id="94964" slot_id="3"/>
+	</collection>
+	<collection id="75" tab_id="1" option_id="39105">	<!-- Road to Celebration -->
+		<item id="90460" count="1" enchant="4" alternative_id="93549" slot_id="0"/>
+		<item id="5736" count="1" enchant="4" alternative_id="93540" slot_id="1"/>
+		<item id="856" count="1" alternative_id="95377" slot_id="2"/>
+		<item id="887" count="1" alternative_id="95390" slot_id="3"/>
+	</collection>
+	<collection id="76" tab_id="1" option_id="39106">	<!-- Too Hard -->
+		<item id="91" count="1" enchant="4" alternative_id="94925" slot_id="0"/>
+		<item id="91901" count="1" alternative_id="95326" slot_id="1"/>
+		<item id="91897" count="1" enchant="4" alternative_id="95323" slot_id="2"/>
+		<item id="194" count="1" alternative_id="94982" slot_id="3"/>
+	</collection>
+	<collection id="77" tab_id="1" option_id="39107">	<!-- Sharpened Knives -->
+		<item id="148" count="1" enchant="4" alternative_id="94951" slot_id="0"/>
+		<item id="264" count="1" enchant="4" alternative_id="95019" slot_id="1"/>
+		<item id="91896" count="1" enchant="4" alternative_id="93057" slot_id="2"/>
+		<item id="73" count="1" enchant="4" alternative_id="94913" slot_id="3"/>
+		<item id="302" count="1" enchant="4" alternative_id="95044" slot_id="4"/>
+	</collection>
+	<collection id="78" tab_id="1" option_id="39108">	<!-- Beat'n'Cut -->
+		<item id="229" count="1" enchant="4" alternative_id="95002" slot_id="0"/>
+		<item id="5722" count="1" enchant="4" alternative_id="93529" slot_id="1"/>
+		<item id="133" count="1" enchant="4" alternative_id="94945" slot_id="2"/>
+		<item id="91884" count="1" enchant="4" alternative_id="95317" slot_id="3"/>
+	</collection>
+	<collection id="79" tab_id="6" option_id="39109">	<!-- Traces of Evil -->
+		<item id="210" count="1" enchant="7" alternative_id="93426" slot_id="0"/>
+		<item id="134" count="1" enchant="7" alternative_id="94946" slot_id="1"/>
+		<item id="233" count="1" enchant="7" alternative_id="95006" slot_id="2"/>
+		<item id="195" count="1" enchant="7" alternative_id="94983" slot_id="3"/>
+	</collection>
+	<collection id="80" tab_id="6" option_id="39110">	<!-- Eight Swords -->
+		<item id="2626" count="1" enchant="9" alternative_id="93430" slot_id="0"/>
+		<item id="2626" count="1" enchant="7" alternative_id="93430" slot_id="1"/>
+		<item id="2582" count="1" enchant="7" alternative_id="93053" slot_id="2"/>
+		<item id="2582" count="1" enchant="5" alternative_id="93053" slot_id="3"/>
+	</collection>
+	<collection id="81" tab_id="6" option_id="39111">	<!-- Always Apart -->
+		<item id="7901" count="1" enchant="9" alternative_id="93433" slot_id="0"/>
+		<item id="633" count="1" enchant="5" alternative_id="95131" slot_id="1"/>
+	</collection>
+	<collection id="82" tab_id="4" option_id="39112">	<!-- Well Prepared -->
+		<item id="673" count="1" enchant="4" alternative_id="95132" slot_id="0"/>
+		<item id="171" count="1" enchant="4" alternative_id="93424" slot_id="1"/>
+	</collection>
+	<collection id="83" tab_id="1" option_id="39113">	<!-- Lost Equipment -->
+		<item id="5715" count="1" enchant="4" alternative_id="93524" slot_id="0"/>
+		<item id="5731" count="1" enchant="4" alternative_id="93536" slot_id="1"/>
+		<item id="71" count="1" enchant="9" alternative_id="94911" slot_id="2"/>
+		<item id="89" count="1" enchant="9" alternative_id="94923" slot_id="3"/>
+		<item id="230" count="1" enchant="9" alternative_id="95003" slot_id="4"/>
+		<item id="72" count="1" enchant="9" alternative_id="94912" slot_id="5"/>
+	</collection>
+	<collection id="84" tab_id="1" option_id="39114">	<!-- Wolf Fangs -->
+		<item id="5720" count="1" enchant="4" alternative_id="93528" slot_id="0"/>
+		<item id="5734" count="1" enchant="4" alternative_id="93538" slot_id="1"/>
+		<item id="74" count="1" enchant="9" alternative_id="94914" slot_id="2"/>
+		<item id="161" count="1" enchant="9" alternative_id="94957" slot_id="3"/>
+		<item id="232" count="1" enchant="9" alternative_id="95005" slot_id="4"/>
+	</collection>
+	<collection id="85" tab_id="3" option_id="39115">	<!-- Heavy Footsteps -->
+		<item id="5726" count="1" enchant="4" alternative_id="93532" slot_id="0"/>
+		<item id="5728" count="1" enchant="4" alternative_id="93534" slot_id="1"/>
+		<item id="5727" count="1" enchant="4" alternative_id="93533" slot_id="2"/>
+		<item id="191" count="1" enchant="9" alternative_id="94979" slot_id="3"/>
+	</collection>
+	<collection id="86" tab_id="3" option_id="39116">	<!-- Omniscient Mage -->
+		<item id="90455" count="1" enchant="4" alternative_id="93544" slot_id="0"/>
+		<item id="90456" count="1" enchant="4" alternative_id="93545" slot_id="1"/>
+		<item id="90457" count="1" enchant="4" alternative_id="93546" slot_id="2"/>
+		<item id="192" count="1" enchant="5" alternative_id="94980" slot_id="3"/>
+	</collection>
+	<collection id="87" tab_id="4" option_id="39117">	<!-- Berserker -->
+		<item id="300" count="1" enchant="4" alternative_id="95042" slot_id="0"/>
+		<item id="226" count="1" enchant="4" alternative_id="95000" slot_id="1"/>
+		<item id="441" count="1" enchant="4" alternative_id="95101" slot_id="2"/>
+		<item id="2459" count="1" enchant="4" alternative_id="95176" slot_id="3"/>
+	</collection>
+	<collection id="88" tab_id="6" option_id="39118">	<!-- Best Protection -->
+		<item id="633" count="1" enchant="5" alternative_id="95131" slot_id="0"/>
+		<item id="673" count="1" enchant="4" alternative_id="95132" slot_id="1"/>
+		<item id="2497" count="1" enchant="4" alternative_id="95184" slot_id="2"/>
+		<item id="632" count="1" enchant="4" alternative_id="95130" slot_id="3"/>
+		<item id="107" count="1" enchant="4" alternative_id="94933" slot_id="4"/>
+	</collection>
+	<collection id="89" tab_id="1" option_id="39119">	<!-- Enhanced Weapon Set I -->
+		<item id="79" count="1" enchant="12" alternative_id="93422" slot_id="0"/>
+		<item id="97" count="1" enchant="7" alternative_id="93423" slot_id="1"/>
+		<item id="175" count="1" enchant="5" alternative_id="93425" slot_id="2"/>
+		<item id="210" count="1" enchant="5" alternative_id="93426" slot_id="3"/>
+		<item id="234" count="1" alternative_id="93427" slot_id="4"/>
+	</collection>
+	<collection id="90" tab_id="1" option_id="39120">	<!-- Enhanced Weapon Set II -->
+		<item id="268" count="1" enchant="12" alternative_id="93428" slot_id="0"/>
+		<item id="7883" count="1" enchant="7" alternative_id="93431" slot_id="1"/>
+		<item id="7889" count="1" enchant="7" alternative_id="93432" slot_id="2"/>
+		<item id="7893" count="1" enchant="7" alternative_id="95307" slot_id="3"/>
+	</collection>
+	<collection id="91" tab_id="2" option_id="39121">	<!-- Blue Wolf Upper and Lower Armor -->
+		<item id="2391" count="1" enchant="6" alternative_id="93511" slot_id="0"/>
+		<item id="358" count="1" enchant="5" alternative_id="93502" slot_id="1"/>
+		<item id="2398" count="1" enchant="5" alternative_id="93514" slot_id="2"/>
+		<item id="2380" count="1" enchant="5" alternative_id="93506" slot_id="3"/>
+		<item id="2403" count="1" enchant="4" alternative_id="93517" slot_id="4"/>
+	</collection>
+	<collection id="92" tab_id="2" option_id="39122">	<!-- Zubei's Upper and Lower Armor -->
+		<item id="357" count="1" enchant="6" alternative_id="93501" slot_id="0"/>
+		<item id="2384" count="1" enchant="5" alternative_id="93508" slot_id="1"/>
+		<item id="2397" count="1" enchant="5" alternative_id="93513" slot_id="2"/>
+		<item id="383" count="1" enchant="5" alternative_id="93503" slot_id="3"/>
+		<item id="2388" count="1" enchant="5" alternative_id="93509" slot_id="4"/>
+		<item id="2402" count="1" enchant="4" alternative_id="93516" slot_id="5"/>
+	</collection>
+	<collection id="93" tab_id="1" option_id="39123">	<!-- Main Decoration -->
+		<item id="287" count="1" enchant="15" alternative_id="93429" slot_id="0"/>
+		<item id="206" count="1" enchant="10" alternative_id="93048" slot_id="1"/>
+		<item id="5718" count="1" enchant="4" alternative_id="93526" slot_id="2"/>
+		<item id="5719" count="1" enchant="4" alternative_id="93527" slot_id="3"/>
+		<item id="5720" count="1" enchant="4" alternative_id="93528" slot_id="4"/>
+	</collection>
+	<collection id="94" tab_id="3" option_id="39124">	<!-- Avadon Upper and Lower Armor -->
+		<item id="2376" count="1" enchant="6" alternative_id="93504" slot_id="0"/>
+		<item id="2390" count="1" enchant="5" alternative_id="93510" slot_id="1"/>
+		<item id="2406" count="1" enchant="5" alternative_id="93519" slot_id="2"/>
+		<item id="2379" count="1" enchant="5" alternative_id="93505" slot_id="3"/>
+	</collection>
+	<collection id="95" tab_id="3" option_id="39125">	<!-- Enchanting Sealed Equipment -->
+		<item id="2416" count="1" enchant="4" slot_id="0"/>
+		<item id="601" count="1" enchant="4" slot_id="1"/>
+		<item id="503" count="1" enchant="4" slot_id="2"/>
+		<item id="600" count="1" enchant="4" slot_id="3"/>
+	</collection>
+	<collection id="96" tab_id="1" option_id="39126">	<!-- Breaking the Limits -->
+		<item id="94884" count="1" enchant="15" alternative_id="95418" slot_id="0"/>
+		<item id="94882" count="1" enchant="15" alternative_id="95416" slot_id="1"/>
+	</collection>
+	<collection id="97" tab_id="5" option_id="39127">	<!-- Doom Set -->
+		<item id="2399" count="1" enchant="7" alternative_id="93515" slot_id="0"/>
+		<item id="90464" count="1" enchant="7" alternative_id="93553" slot_id="1"/>
+		<item id="5739" count="1" enchant="6" alternative_id="93542" slot_id="2"/>
+		<item id="5724" count="1" enchant="5" alternative_id="93531" slot_id="3"/>
+		<item id="110" count="1" enchant="5" alternative_id="94934" slot_id="4"/>
+	</collection>
+	<collection id="98" tab_id="6" option_id="39128">	<!-- Aden's Adventurer -->
+		<item id="171" count="1" enchant="7" alternative_id="93424" slot_id="0"/>
+		<item id="92" count="1" enchant="7" alternative_id="94926" slot_id="1"/>
+		<item id="90461" count="1" enchant="5" alternative_id="93550" slot_id="2"/>
+		<item id="284" count="1" enchant="7" alternative_id="95032" slot_id="3"/>
+		<item id="918" count="1" enchant="4" alternative_id="95405" slot_id="4"/>
+	</collection>
+	<collection id="99" tab_id="3" option_id="39129">	<!-- Now It's a Luxury -->
+		<item id="862" count="1" enchant="6" alternative_id="95425" slot_id="0"/>
+		<item id="902" count="1" enchant="6" alternative_id="95396" slot_id="1"/>
+		<item id="924" count="1" enchant="6" alternative_id="95429" slot_id="2"/>
+		<item id="933" count="1" enchant="6" alternative_id="95409" slot_id="3"/>
+		<item id="926" count="1" enchant="6" alternative_id="95408" slot_id="4"/>
+	</collection>
+	<collection id="100" tab_id="6" option_id="39130">	<!-- Supporting Accessories I -->
+		<item id="91745" count="1" enchant="4" slot_id="0"/>
+		<item id="90888" count="1" slot_id="1"/>
+		<item id="9589" count="1" slot_id="2"/>
+	</collection>
+	<collection id="101" tab_id="4" option_id="39131">	<!-- Supporting Accessories II -->
+		<item id="91745" count="1" enchant="7" slot_id="0"/>
+		<item id="90890" count="1" slot_id="1"/>
+		<item id="9591" count="1" slot_id="2"/>
+	</collection>
+	<collection id="102" tab_id="1" option_id="39132">	<!-- Faster Than Anyone -->
+		<item id="92403" count="1" enchant="7" slot_id="0"/>
+		<item id="92403" count="1" enchant="5" slot_id="1"/>
+		<item id="92403" count="1" slot_id="2"/>
+	</collection>
+	<collection id="103" tab_id="1" option_id="39133">	<!-- Power of Spirits -->
+		<item id="94682" count="1" enchant="7" slot_id="0"/>
+		<item id="93128" count="1" slot_id="1"/>
+		<item id="93129" count="1" slot_id="2"/>
+		<item id="93130" count="1" slot_id="3"/>
+		<item id="93131" count="1" slot_id="4"/>
+	</collection>
+	<collection id="104" tab_id="5" option_id="39134">	<!-- Queen Ant Doll I -->
+		<item id="94154" count="1" slot_id="0"/>
+		<item id="94154" count="1" slot_id="1"/>
+	</collection>
+	<collection id="105" tab_id="5" option_id="39135">	<!-- Orfen Doll I -->
+		<item id="94155" count="1" slot_id="0"/>
+		<item id="94155" count="1" slot_id="1"/>
+	</collection>
+	<collection id="106" tab_id="3" option_id="39136">	<!-- Baium Doll I -->
+		<item id="94153" count="1" slot_id="0"/>
+		<item id="94153" count="1" slot_id="1"/>
+	</collection>
+	<collection id="107" tab_id="5" option_id="39137">	<!-- Zaken Doll I -->
+		<item id="94645" count="1" slot_id="0"/>
+		<item id="94645" count="1" slot_id="1"/>
+	</collection>
+	<collection id="108" tab_id="5" option_id="39138">	<!-- Core Doll I -->
+		<item id="94648" count="1" slot_id="0"/>
+		<item id="94648" count="1" slot_id="1"/>
+	</collection>
+	<collection id="109" tab_id="5" option_id="39139">	<!-- Frintezza Doll I -->
+		<item id="94509" count="1" slot_id="0"/>
+		<item id="94509" count="1" slot_id="1"/>
+	</collection>
+	<collection id="110" tab_id="2" option_id="39140">	<!-- Powerful Frost Energy -->
+		<item id="93139" count="1" enchant="5" alternative_id="93141" slot_id="0"/>
+		<item id="7900" count="1" enchant="10" alternative_id="95311" slot_id="1"/>
+		<item id="281" count="1" enchant="10" alternative_id="95029" slot_id="2"/>
+	</collection>
+	<collection id="111" tab_id="2" option_id="39141">	<!-- Powerful Light Energy -->
+		<item id="93315" count="1" enchant="5" alternative_id="93317" slot_id="0"/>
+		<item id="1149" count="1" enchant="5" alternative_id="95140" slot_id="1"/>
+		<item id="217" count="1" slot_id="2"/>
+	</collection>
+	<collection id="112" tab_id="4" option_id="39142">	<!-- Powerful Fire Energy -->
+		<item id="93733" count="1" enchant="5" alternative_id="93735" slot_id="0"/>
+		<item id="203" count="1" enchant="7" alternative_id="94991" slot_id="1"/>
+		<item id="242" count="1" alternative_id="95011" slot_id="2"/>
+	</collection>
+	<collection id="113" tab_id="2" option_id="39143">	<!-- Orc Barracks Purge I -->
+		<item id="95444" count="1" alternative_id="95458" slot_id="0"/>
+		<item id="95445" count="1" alternative_id="95459" slot_id="1"/>
+		<item id="91745" count="1" enchant="3" slot_id="2"/>
+	</collection>
+	<collection id="114" tab_id="2" option_id="39144">	<!-- Sel Mahum Base Purge I -->
+		<item id="95442" count="1" alternative_id="95456" slot_id="0"/>
+		<item id="95443" count="1" alternative_id="95457" slot_id="1"/>
+		<item id="91745" count="1" enchant="3" slot_id="2"/>
+	</collection>
+	<collection id="115" tab_id="2" option_id="39145">	<!-- Tower of Insolence Purge I -->
+		<item id="95436" count="1" alternative_id="95450" slot_id="0"/>
+		<item id="95437" count="1" alternative_id="95451" slot_id="1"/>
+		<item id="91745" count="1" enchant="2" slot_id="2"/>
+	</collection>
+	<collection id="116" tab_id="2" option_id="39146">	<!-- Dragon Valley Purge I -->
+		<item id="95440" count="1" alternative_id="95454" slot_id="0"/>
+		<item id="95441" count="1" alternative_id="95455" slot_id="1"/>
+		<item id="91745" count="1" enchant="2" slot_id="2"/>
+	</collection>
+	<collection id="117" tab_id="3" option_id="39147">	<!-- Cruma Tower Purge I -->
+		<item id="95433" count="1" alternative_id="95447" slot_id="0"/>
+		<item id="95432" count="1" alternative_id="95446" slot_id="1"/>
+		<item id="90" count="1" enchant="5" alternative_id="94924" slot_id="2"/>
+	</collection>
+	<collection id="118" tab_id="2" option_id="39148">	<!-- Plains of the Lizardmen Purge I -->
+		<item id="95438" count="1" alternative_id="95452" slot_id="0"/>
+		<item id="95439" count="1" alternative_id="95453" slot_id="1"/>
+		<item id="91" count="1" enchant="5" alternative_id="94925" slot_id="2"/>
+	</collection>
+	<collection id="119" tab_id="2" option_id="39149">	<!-- Silent Valley Purge I -->
+		<item id="95434" count="1" alternative_id="95448" slot_id="0"/>
+		<item id="95435" count="1" alternative_id="95449" slot_id="1"/>
+		<item id="284" count="1" enchant="5" alternative_id="95032" slot_id="2"/>
+	</collection>
+	<collection id="120" tab_id="1" option_id="39150">	<!-- Orc Barracks Purge II -->
+		<item id="95444" count="1" enchant="9" alternative_id="95458" slot_id="0"/>
+		<item id="95445" count="1" enchant="7" alternative_id="95459" slot_id="1"/>
+		<item id="95481" count="5" slot_id="2"/>
+	</collection>
+	<collection id="121" tab_id="1" option_id="39151">	<!-- Sel Mahum Base Purge II -->
+		<item id="95442" count="1" enchant="9" alternative_id="95456" slot_id="0"/>
+		<item id="95443" count="1" enchant="7" alternative_id="95457" slot_id="1"/>
+		<item id="95481" count="5" slot_id="2"/>
+	</collection>
+	<collection id="122" tab_id="1" option_id="39152">	<!-- Tower of Insolence Purge II -->
+		<item id="95436" count="1" enchant="9" alternative_id="95450" slot_id="0"/>
+		<item id="95437" count="1" enchant="7" alternative_id="95451" slot_id="1"/>
+		<item id="95481" count="5" slot_id="2"/>
+		<item id="91952" count="1" enchant="4" alternative_id="95718" slot_id="3"/>
+	</collection>
+	<collection id="123" tab_id="1" option_id="39153">	<!-- Dragon Valley Purge II -->
+		<item id="95440" count="1" enchant="9" alternative_id="95454" slot_id="0"/>
+		<item id="95441" count="1" enchant="7" alternative_id="95455" slot_id="1"/>
+		<item id="95481" count="5" slot_id="2"/>
+		<item id="91953" count="1" enchant="4" alternative_id="95719" slot_id="3"/>
+	</collection>
+	<collection id="124" tab_id="3" option_id="39154">	<!-- Cruma Tower Purge II -->
+		<item id="95433" count="1" enchant="9" alternative_id="95447" slot_id="0"/>
+		<item id="95432" count="1" enchant="7" alternative_id="95446" slot_id="1"/>
+		<item id="95481" count="5" slot_id="2"/>
+	</collection>
+	<collection id="125" tab_id="1" option_id="39155">	<!-- Plains of the Lizardmen Purge II -->
+		<item id="95438" count="1" enchant="9" alternative_id="95452" slot_id="0"/>
+		<item id="95439" count="1" enchant="7" alternative_id="95453" slot_id="1"/>
+		<item id="95481" count="5" slot_id="2"/>
+	</collection>
+	<collection id="126" tab_id="1" option_id="39156">	<!-- Silent Valley Purge II -->
+		<item id="95434" count="1" enchant="9" alternative_id="95448" slot_id="0"/>
+		<item id="95435" count="1" enchant="7" alternative_id="95449" slot_id="1"/>
+		<item id="95481" count="5" slot_id="2"/>
+	</collection>
+	<collection id="127" tab_id="2" option_id="39157">	<!-- Collector of Low-grade Purge Equipment I -->
+		<item id="95436" count="1" enchant="4" alternative_id="95450" slot_id="0"/>
+		<item id="95433" count="1" enchant="4" alternative_id="95447" slot_id="1"/>
+		<item id="95435" count="1" enchant="4" alternative_id="95449" slot_id="2"/>
+		<item id="95434" count="1" enchant="4" alternative_id="95448" slot_id="3"/>
+	</collection>
+	<collection id="128" tab_id="2" option_id="39158">	<!-- Collector of Low-grade Purge Equipment II -->
+		<item id="95445" count="1" enchant="4" alternative_id="95459" slot_id="0"/>
+		<item id="95443" count="1" enchant="4" alternative_id="95457" slot_id="1"/>
+		<item id="95437" count="1" enchant="4" alternative_id="95451" slot_id="2"/>
+		<item id="95440" count="1" enchant="4" alternative_id="95454" slot_id="3"/>
+		<item id="95432" count="1" enchant="4" alternative_id="95446" slot_id="4"/>
+	</collection>
+	<collection id="129" tab_id="2" option_id="39159">	<!-- Collector of Elementary Purge Equipment III -->
+		<item id="95444" count="1" enchant="4" alternative_id="95458" slot_id="0"/>
+		<item id="95442" count="1" enchant="4" alternative_id="95456" slot_id="1"/>
+		<item id="95441" count="1" enchant="4" alternative_id="95455" slot_id="2"/>
+		<item id="95439" count="1" enchant="4" alternative_id="95453" slot_id="3"/>
+		<item id="95438" count="1" enchant="4" alternative_id="95452" slot_id="4"/>
+	</collection>
+	<collection id="130" tab_id="5" option_id="39160">	<!-- Zaken's Crystal -->
+		<item id="93906" count="1" slot_id="0"/>
+		<item id="93906" count="1" slot_id="1"/>
+		<item id="93906" count="1" slot_id="2"/>
+	</collection>
+	<collection id="131" tab_id="5" option_id="39161">	<!-- Orfen's Crystal -->
+		<item id="93907" count="1" slot_id="0"/>
+		<item id="93907" count="1" slot_id="1"/>
+		<item id="93907" count="1" slot_id="2"/>
+	</collection>
+	<collection id="132" tab_id="5" option_id="39162">	<!-- Core's Crystal -->
+		<item id="93908" count="1" slot_id="0"/>
+		<item id="93908" count="1" slot_id="1"/>
+		<item id="93908" count="1" slot_id="2"/>
+	</collection>
+	<collection id="133" tab_id="5" option_id="39163">	<!-- Baium's Crystal -->
+		<item id="93909" count="1" slot_id="0"/>
+		<item id="93909" count="1" slot_id="1"/>
+		<item id="93909" count="1" slot_id="2"/>
+	</collection>
+	<collection id="134" tab_id="5" option_id="39164">	<!-- Queen Ant's Crystal -->
+		<item id="93910" count="1" slot_id="0"/>
+		<item id="93910" count="1" slot_id="1"/>
+		<item id="93910" count="1" slot_id="2"/>
+	</collection>
+	<collection id="135" tab_id="1" option_id="39165">	<!-- Clan Circlet Set -->
+		<item id="95637" count="1" enchant="5" slot_id="0"/>
+		<item id="95637" count="1" enchant="3" slot_id="1"/>
+		<item id="95637" count="1" enchant="2" slot_id="2"/>
+		<item id="95637" count="1" slot_id="3"/>
+	</collection>
+	<collection id="136" tab_id="1" option_id="39166">	<!-- Clan Cloak Set -->
+		<item id="95636" count="1" enchant="5" slot_id="0"/>
+		<item id="95636" count="1" enchant="3" slot_id="1"/>
+		<item id="95636" count="1" enchant="2" slot_id="2"/>
+		<item id="95636" count="1" slot_id="3"/>
+	</collection>
+	<collection id="137" tab_id="2" option_id="39167">	<!-- Courage of New Clan Members -->
+		<item id="95636" count="1" enchant="3" slot_id="0"/>
+		<item id="95637" count="1" enchant="3" slot_id="1"/>
+	</collection>
+	<collection id="138" tab_id="2" option_id="39168">	<!-- Courage of Experienced Clan Members -->
+		<item id="95636" count="1" enchant="5" slot_id="0"/>
+		<item id="95637" count="1" enchant="5" slot_id="1"/>
+	</collection>
+	<collection id="139" tab_id="2" option_id="39169">	<!-- Courage of Clan Veterans -->
+		<item id="95636" count="1" enchant="7" slot_id="0"/>
+		<item id="95637" count="1" enchant="7" slot_id="1"/>
+	</collection>
+	<collection id="140" tab_id="2" option_id="39170">	<!-- Blood Oath -->
+		<item id="95636" count="1" enchant="8" slot_id="0"/>
+		<item id="95637" count="1" enchant="8" slot_id="1"/>
+	</collection>
+	<collection id="145" tab_id="7" option_id="39175">	<!-- Growth Rune Collection I -->
+		<item id="94781" count="1" slot_id="0"/>
+		<item id="94781" count="1" slot_id="1"/>
+		<item id="94781" count="1" slot_id="2"/>
+		<item id="94780" count="5" slot_id="3"/>
+		<item id="94780" count="1" slot_id="4"/>
+	</collection>
+	<collection id="146" tab_id="7" option_id="39176">	<!-- Growth Rune Collection II -->
+		<item id="94788" count="1" slot_id="0"/>
+		<item id="94786" count="1" slot_id="1"/>
+		<item id="94783" count="1" slot_id="2"/>
+		<item id="94782" count="1" slot_id="3"/>
+		<item id="94781" count="1" slot_id="4"/>
+	</collection>
+	<collection id="147" tab_id="1" option_id="39177">	<!-- Attack Master -->
+		<item id="94135" count="1" alternative_id="95517" slot_id="0"/>
+		<item id="94361" count="1" alternative_id="95533" slot_id="1"/>
+	</collection>
+	<collection id="148" tab_id="2" option_id="39178">	<!-- Defense Master -->
+		<item id="94136" count="1" alternative_id="95518" slot_id="0"/>
+		<item id="94362" count="1" alternative_id="95534" slot_id="1"/>
+	</collection>
+	<collection id="149" tab_id="1" option_id="39179">	<!-- Critical Attack Master -->
+		<item id="94363" count="1" alternative_id="95535" slot_id="0"/>
+		<item id="94364" count="1" alternative_id="95536" slot_id="1"/>
+	</collection>
+	<collection id="150" tab_id="1" option_id="39180">	<!-- Speed Master -->
+		<item id="94370" count="1" alternative_id="95539" slot_id="0"/>
+		<item id="94369" count="1" alternative_id="95538" slot_id="1"/>
+		<item id="94365" count="1" alternative_id="95537" slot_id="2"/>
+		<item id="94370" count="1" alternative_id="95539" slot_id="3"/>
+	</collection>
+	<collection id="151" tab_id="1" option_id="39181">	<!-- Expert Archer -->
+		<item id="94138" count="1" alternative_id="95520" slot_id="0"/>
+		<item id="94139" count="1" alternative_id="95521" slot_id="1"/>
+		<item id="94140" count="1" alternative_id="95522" slot_id="2"/>
+	</collection>
+	<collection id="152" tab_id="2" option_id="39182">	<!-- Master of Spear -->
+		<item id="93867" count="1" alternative_id="95512" slot_id="0"/>
+		<item id="94134" count="1" alternative_id="95516" slot_id="1"/>
+	</collection>
+	<collection id="153" tab_id="3" option_id="39183">	<!-- Master Warrior -->
+		<item id="93866" count="1" slot_id="0"/>
+		<item id="93868" count="1" slot_id="1"/>
+	</collection>
+	<collection id="154" tab_id="3" option_id="39184">	<!-- Music Lover I -->
+		<item id="94321" count="1" alternative_id="95526" slot_id="0"/>
+		<item id="94323" count="1" alternative_id="95528" slot_id="1"/>
+	</collection>
+	<collection id="155" tab_id="3" option_id="39185">	<!-- Undying Body -->
+		<item id="93388" count="1" alternative_id="95508" slot_id="0"/>
+		<item id="93633" count="1" alternative_id="95511" slot_id="1"/>
+	</collection>
+	<collection id="156" tab_id="2" option_id="39186">	<!-- Undying Body II -->
+		<item id="93392" count="1" alternative_id="95509" slot_id="0"/>
+		<item id="94137" count="1" alternative_id="95519" slot_id="1"/>
+	</collection>
+	<collection id="157" tab_id="4" option_id="39187">	<!-- Expert Archer -->
+		<item id="94138" count="1" alternative_id="95520" slot_id="0"/>
+		<item id="94139" count="1" alternative_id="95521" slot_id="1"/>
+		<item id="94140" count="1" alternative_id="95522" slot_id="2"/>
+	</collection>
+	<collection id="158" tab_id="3" option_id="39188">	<!-- Master Shaman I -->
+		<item id="94669" count="1" alternative_id="95553" slot_id="0"/>
+		<item id="94676" count="1" alternative_id="95560" slot_id="1"/>
+	</collection>
+	<collection id="159" tab_id="4" option_id="39189">	<!-- Tactical Defense -->
+		<item id="93871" count="1" alternative_id="95515" slot_id="0"/>
+		<item id="94141" count="1" alternative_id="95523" slot_id="1"/>
+	</collection>
+	<collection id="160" tab_id="1" option_id="39190">	<!-- Light and Shadows I -->
+		<item id="91942" count="1" alternative_id="95498" slot_id="0"/>
+		<item id="91943" count="1" alternative_id="95499" slot_id="1"/>
+	</collection>
+	<collection id="161" tab_id="1" option_id="39191">	<!-- Light and Shadows II -->
+		<item id="91944" count="1" alternative_id="95500" slot_id="0"/>
+		<item id="91945" count="1" alternative_id="95501" slot_id="1"/>
+	</collection>
+	<collection id="162" tab_id="2" option_id="39192">	<!-- Shining Whiteness -->
+		<item id="91942" count="1" alternative_id="95498" slot_id="0"/>
+		<item id="91944" count="1" alternative_id="95500" slot_id="1"/>
+	</collection>
+	<collection id="163" tab_id="2" option_id="39193">	<!-- Impenetrable Darkness -->
+		<item id="91943" count="1" alternative_id="95499" slot_id="0"/>
+		<item id="91945" count="1" alternative_id="95501" slot_id="1"/>
+	</collection>
+	<collection id="164" tab_id="2" option_id="39194">	<!-- Master Shaman II -->
+		<item id="94672" count="1" alternative_id="95556" slot_id="0"/>
+		<item id="94675" count="1" alternative_id="95559" slot_id="1"/>
+	</collection>
+	<collection id="165" tab_id="2" option_id="39195">	<!-- Music Lover II -->
+		<item id="94319" count="1" alternative_id="95524" slot_id="0"/>
+		<item id="94320" count="1" alternative_id="95525" slot_id="1"/>
+	</collection>
+	<collection id="166" tab_id="4" option_id="39196">	<!-- Undying Body III -->
+		<item id="93631" count="1" alternative_id="95510" slot_id="0"/>
+		<item id="93384" count="1" alternative_id="95504" slot_id="1"/>
+		<item id="93385" count="1" alternative_id="95505" slot_id="2"/>
+		<item id="93386" count="1" alternative_id="95506" slot_id="3"/>
+	</collection>
+	<collection id="167" tab_id="1" option_id="39269">	<!-- Only One Word -->
+		<item id="94504" count="1" alternative_id="95547" slot_id="0"/>
+		<item id="94502" count="1" alternative_id="95545" slot_id="1"/>
+		<item id="94503" count="1" alternative_id="95546" slot_id="2"/>
+	</collection>
+	<collection id="168" tab_id="1" option_id="39270">	<!-- Magic for Fighting -->
+		<item id="94506" count="1" alternative_id="95549" slot_id="0"/>
+		<item id="94507" count="1" alternative_id="95550" slot_id="1"/>
+	</collection>
+	<collection id="169" tab_id="2" option_id="39271">	<!-- Flaming Blood -->
+		<item id="94497" count="1" alternative_id="95540" slot_id="0"/>
+		<item id="94674" count="1" alternative_id="95558" slot_id="1"/>
+		<item id="94671" count="1" alternative_id="95555" slot_id="2"/>
+	</collection>
+	<collection id="170" tab_id="2" option_id="39272">	<!-- Great Power -->
+		<item id="94501" count="1" alternative_id="95544" slot_id="0"/>
+		<item id="94505" count="1" alternative_id="95548" slot_id="1"/>
+		<item id="94500" count="1" alternative_id="95543" slot_id="2"/>
+	</collection>
+	<collection id="171" tab_id="2" option_id="39273">	<!-- Great Spirit -->
+		<item id="95359" count="1" alternative_id="95360" slot_id="0"/>
+		<item id="95654" count="1" alternative_id="95655" slot_id="1"/>
+		<item id="95363" count="1" alternative_id="95364" slot_id="2"/>
+	</collection>
+	<collection id="172" tab_id="1" option_id="39274">	<!-- Spirit Play -->
+		<item id="93869" count="1" alternative_id="95513" slot_id="0"/>
+		<item id="95357" count="1" alternative_id="95358" slot_id="1"/>
+		<item id="95356" count="1" alternative_id="95640" slot_id="2"/>
+	</collection>
+	<collection id="173" tab_id="1" option_id="39275">	<!-- Ray of Sacred Light -->
+		<item id="93870" count="1" alternative_id="95514" slot_id="0"/>
+		<item id="94806" count="1" alternative_id="95561" slot_id="1"/>
+	</collection>
+	<collection id="174" tab_id="2" option_id="39276">	<!-- Seven Octaves -->
+		<item id="94325" count="1" alternative_id="95530" slot_id="0"/>
+		<item id="94324" count="1" alternative_id="95529" slot_id="1"/>
+	</collection>
+	<collection id="175" tab_id="2" option_id="39277">	<!-- Dark Elven Dances -->
+		<item id="94327" count="1" alternative_id="95532" slot_id="0"/>
+		<item id="94326" count="1" alternative_id="95531" slot_id="1"/>
+		<item id="94322" count="1" alternative_id="95527" slot_id="2"/>
+	</collection>
+	<collection id="176" tab_id="2" option_id="39281">	<!-- Basic Swords -->
+		<item id="120" count="1" slot_id="0"/>
+		<item id="121" count="1" slot_id="1"/>
+		<item id="67" count="1" slot_id="2"/>
+	</collection>
+	<collection id="177" tab_id="2" option_id="39282">	<!-- Simple Equipment -->
+		<item id="31" count="1" slot_id="0"/>
+		<item id="40" count="1" slot_id="1"/>
+		<item id="4" count="1" slot_id="2"/>
+	</collection>
+	<collection id="178" tab_id="1" option_id="39283">	<!-- Fox with a Beautiful Tail -->
+		<item id="255" count="1" slot_id="0"/>
+		<item id="215" count="1" slot_id="1"/>
+		<item id="216" count="1" slot_id="2"/>
+		<item id="946" count="1" slot_id="3"/>
+	</collection>
+	<collection id="179" tab_id="1" option_id="39284">	<!-- Setting Sun -->
+		<item id="754" count="1" slot_id="0"/>
+		<item id="2374" count="1" slot_id="1"/>
+		<item id="981" count="1" slot_id="2"/>
+		<item id="94880" count="1" slot_id="3"/>
+	</collection>
+	<collection id="180" tab_id="3" option_id="39285">	<!-- Hunting by Yourself -->
+		<item id="152" count="1" slot_id="0"/>
+		<item id="1510" count="1" slot_id="1"/>
+		<item id="2371" count="1" slot_id="2"/>
+		<item id="122" count="1" slot_id="3"/>
+	</collection>
+	<collection id="181" tab_id="6" option_id="39286">	<!-- Heavy Weaponry -->
+		<item id="69" count="1" alternative_id="94909" slot_id="0"/>
+		<item id="125" count="1" alternative_id="94937" slot_id="1"/>
+		<item id="127" count="1" alternative_id="94939" slot_id="2"/>
+		<item id="349" count="1" alternative_id="95061" slot_id="3"/>
+		<item id="350" count="1" slot_id="4"/>
+	</collection>
+	<collection id="182" tab_id="6" option_id="39287">	<!-- Short and Long Staffs -->
+		<item id="180" count="1" alternative_id="94968" slot_id="0"/>
+		<item id="181" count="1" alternative_id="94969" slot_id="1"/>
+		<item id="183" count="1" alternative_id="94971" slot_id="2"/>
+		<item id="184" count="1" alternative_id="94972" slot_id="3"/>
+		<item id="31" count="1" slot_id="4"/>
+	</collection>
+	<collection id="183" tab_id="3" option_id="39288">	<!-- Long Step -->
+		<item id="91895" count="1" alternative_id="95322" slot_id="0"/>
+		<item id="553" count="1" alternative_id="95116" slot_id="1"/>
+		<item id="1124" count="1" alternative_id="95135" slot_id="2"/>
+		<item id="2423" count="1" alternative_id="95151" slot_id="3"/>
+		<item id="2425" count="1" alternative_id="95153" slot_id="4"/>
+	</collection>
+	<collection id="184" tab_id="3" option_id="39289">	<!-- Wrong Choice -->
+		<item id="143" count="1" alternative_id="94948" slot_id="0"/>
+		<item id="376" count="1" alternative_id="95068" slot_id="1"/>
+		<item id="396" count="1" alternative_id="95080" slot_id="2"/>
+		<item id="2448" count="1" alternative_id="95166" slot_id="3"/>
+		<item id="2428" count="1" alternative_id="95156" slot_id="4"/>
+	</collection>
+	<collection id="185" tab_id="3" option_id="39290">	<!-- Alluring Mage -->
+		<item id="313" count="1" alternative_id="95047" slot_id="0"/>
+		<item id="436" count="1" alternative_id="95097" slot_id="1"/>
+		<item id="469" count="1" alternative_id="95107" slot_id="2"/>
+		<item id="2423" count="1" alternative_id="95151" slot_id="3"/>
+		<item id="881" count="1" alternative_id="95384" slot_id="4"/>
+	</collection>
+	<collection id="186" tab_id="6" option_id="39291">	<!-- C-grade Weapon Set I -->
+		<item id="4233" count="1" alternative_id="95296" slot_id="0"/>
+		<item id="71" count="1" alternative_id="94911" slot_id="1"/>
+		<item id="72" count="1" alternative_id="94912" slot_id="2"/>
+		<item id="73" count="1" alternative_id="94913" slot_id="3"/>
+		<item id="74" count="1" alternative_id="94914" slot_id="4"/>
+	</collection>
+	<collection id="187" tab_id="6" option_id="39292">	<!-- C-grade Weapon Set II -->
+		<item id="89" count="1" alternative_id="94923" slot_id="0"/>
+		<item id="94" count="1" alternative_id="94928" slot_id="1"/>
+		<item id="134" count="1" alternative_id="94946" slot_id="2"/>
+		<item id="135" count="1" alternative_id="93047" slot_id="3"/>
+		<item id="191" count="1" alternative_id="94979" slot_id="4"/>
+	</collection>
+	<collection id="188" tab_id="3" option_id="39293">	<!-- Missing Gloves -->
+		<item id="1127" count="1" alternative_id="95138" slot_id="0"/>
+		<item id="381" count="1" alternative_id="95073" slot_id="1"/>
+		<item id="2429" count="1" alternative_id="95157" slot_id="2"/>
+	</collection>
+	<collection id="189" tab_id="3" option_id="39294">	<!-- Acceleration -->
+		<item id="228" count="1" alternative_id="93050" slot_id="0"/>
+		<item id="420" count="1" alternative_id="95092" slot_id="1"/>
+		<item id="221" count="1" alternative_id="94995" slot_id="2"/>
+	</collection>
+	<collection id="190" tab_id="3" option_id="39295">	<!-- Agility -->
+		<item id="91898" count="1" alternative_id="95324" slot_id="0"/>
+		<item id="397" count="1" alternative_id="95081" slot_id="1"/>
+		<item id="220" count="1" alternative_id="94994" slot_id="2"/>
+	</collection>
+	<collection id="191" tab_id="6" option_id="39296">	<!-- Daring Dwarves -->
+		<item id="355" count="1" alternative_id="95067" slot_id="0"/>
+		<item id="382" count="1" alternative_id="95074" slot_id="1"/>
+	</collection>
+	<collection id="192" tab_id="6" option_id="39297">	<!-- Spirit Piercing -->
+		<item id="230" count="1" alternative_id="95003" slot_id="0"/>
+		<item id="131" count="1" alternative_id="94943" slot_id="1"/>
+	</collection>
+	<collection id="193" tab_id="1" option_id="39298">	<!-- Heavy Equipment -->
+		<item id="232" count="1" alternative_id="95005" slot_id="0"/>
+		<item id="266" count="1" alternative_id="93056" slot_id="1"/>
+		<item id="299" count="1" alternative_id="93052" slot_id="2"/>
+		<item id="174" count="1" alternative_id="94965" slot_id="3"/>
+		<item id="295" count="1" alternative_id="95038" slot_id="4"/>
+		<item id="2387" count="1" alternative_id="95144" slot_id="5"/>
+	</collection>
+	<collection id="194" tab_id="1" option_id="39299">	<!-- C-grade Weapon Set III -->
+		<item id="197" count="1" alternative_id="94985" slot_id="0"/>
+		<item id="231" count="1" alternative_id="95004" slot_id="1"/>
+		<item id="285" count="1" alternative_id="95033" slot_id="2"/>
+		<item id="2503" count="1" alternative_id="93054" slot_id="3"/>
+		<item id="7897" count="1" alternative_id="95309" slot_id="4"/>
+	</collection>
+	<collection id="195" tab_id="2" option_id="39300">	<!-- Fell Swoop -->
+		<item id="231" count="1" enchant="4" alternative_id="95004" slot_id="0"/>
+		<item id="293" count="1" enchant="4" alternative_id="95036" slot_id="1"/>
+		<item id="2412" count="1" enchant="4" alternative_id="95148" slot_id="2"/>
+		<item id="63" count="1" enchant="4" alternative_id="94907" slot_id="3"/>
+	</collection>
+	<collection id="196" tab_id="2" option_id="39301">	<!-- Glitter of Jewelry -->
+		<item id="1149" count="1" enchant="4" alternative_id="95140" slot_id="0"/>
+		<item id="439" count="1" alternative_id="93646" slot_id="1"/>
+		<item id="2430" count="1" alternative_id="93648" slot_id="2"/>
+		<item id="915" count="1" alternative_id="95402" slot_id="3"/>
+		<item id="852" count="1" slot_id="4"/>
+		<item id="883" count="1" alternative_id="95386" slot_id="5"/>
+	</collection>
+	<collection id="197" tab_id="2" option_id="39302">	<!-- Hand Protection -->
+		<item id="609" count="1" enchant="4" alternative_id="95123" slot_id="0"/>
+		<item id="2457" count="1" alternative_id="95174" slot_id="1"/>
+		<item id="2463" count="1" alternative_id="95178" slot_id="2"/>
+		<item id="2468" count="1" alternative_id="95179" slot_id="3"/>
+	</collection>
+	<collection id="198" tab_id="2" option_id="39303">	<!-- Light Armor and Shield -->
+		<item id="418" count="1" enchant="4" alternative_id="95090" slot_id="0"/>
+		<item id="2431" count="1" alternative_id="95158" slot_id="1"/>
+		<item id="2455" count="1" alternative_id="95172" slot_id="2"/>
+		<item id="2496" count="1" alternative_id="95183" slot_id="3"/>
+	</collection>
+	<collection id="199" tab_id="2" option_id="39304">	<!-- Proper Equipment -->
+		<item id="242" count="1" enchant="4" alternative_id="95011" slot_id="0"/>
+		<item id="94881" count="1" enchant="4" alternative_id="95415" slot_id="1"/>
+		<item id="433" count="1" enchant="4" alternative_id="95094" slot_id="2"/>
+		<item id="435" count="1" enchant="4" alternative_id="95096" slot_id="3"/>
+	</collection>
+	<collection id="200" tab_id="2" option_id="39305">	<!-- Screams of the Dead -->
+		<item id="204" count="1" enchant="5" alternative_id="94992" slot_id="0"/>
+		<item id="134" count="1" alternative_id="94946" slot_id="1"/>
+		<item id="161" count="1" alternative_id="94957" slot_id="2"/>
+		<item id="96" count="1" alternative_id="94930" slot_id="3"/>
+	</collection>
+	<collection id="201" tab_id="2" option_id="39306">	<!-- Weapons in Abundance -->
+		<item id="132" count="1" enchant="9" alternative_id="94944" slot_id="0"/>
+		<item id="162" count="1" enchant="5" alternative_id="94958" slot_id="1"/>
+		<item id="194" count="1" enchant="5" alternative_id="94982" slot_id="2"/>
+		<item id="5285" count="1" enchant="5" alternative_id="95297" slot_id="3"/>
+		<item id="169" count="1" alternative_id="94962" slot_id="4"/>
+		<item id="271" count="1" slot_id="5"/>
+	</collection>
+	<collection id="202" tab_id="1" option_id="39307">	<!-- Attack Bonus -->
+		<item id="2503" count="1" enchant="12" alternative_id="93054" slot_id="0"/>
+		<item id="91882" count="1" enchant="12" alternative_id="93058" slot_id="1"/>
+		<item id="193" count="1" enchant="4" alternative_id="94981" slot_id="2"/>
+		<item id="76" count="1" enchant="4" alternative_id="94916" slot_id="3"/>
+		<item id="263" count="1" alternative_id="95018" slot_id="4"/>
+		<item id="7887" count="1" alternative_id="95303" slot_id="5"/>
+	</collection>
+	<collection id="203" tab_id="6" option_id="39308">	<!-- Slot Expansion -->
+		<item id="142" count="1" enchant="4" alternative_id="94947" slot_id="0"/>
+		<item id="79" count="1" alternative_id="93422" slot_id="1"/>
+		<item id="2502" count="1" alternative_id="95186" slot_id="2"/>
+		<item id="62" count="1" alternative_id="94906" slot_id="3"/>
+	</collection>
+	<collection id="204" tab_id="2" option_id="39309">	<!-- Magic Defense Bonus -->
+		<item id="287" count="1" enchant="4" alternative_id="93429" slot_id="0"/>
+		<item id="268" count="1" alternative_id="93428" slot_id="1"/>
+		<item id="857" count="1" alternative_id="95378" slot_id="2"/>
+		<item id="5286" count="1" alternative_id="93055" slot_id="3"/>
+		<item id="440" count="1" alternative_id="95100" slot_id="4"/>
+	</collection>
+	<collection id="205" tab_id="2" option_id="39310">	<!-- Path of Demons -->
+		<item id="243" count="1" enchant="4" alternative_id="95012" slot_id="0"/>
+		<item id="234" count="1" alternative_id="93427" slot_id="1"/>
+		<item id="919" count="1" alternative_id="95406" slot_id="2"/>
+		<item id="205" count="1" alternative_id="94993" slot_id="3"/>
+	</collection>
+	<collection id="206" tab_id="1" option_id="39311">	<!-- Importance of Magic Attack -->
+		<item id="267" count="1" enchant="4" alternative_id="95021" slot_id="0"/>
+		<item id="7900" count="1" alternative_id="95311" slot_id="1"/>
+		<item id="7883" count="1" alternative_id="93431" slot_id="2"/>
+		<item id="227" count="1" alternative_id="95001" slot_id="3"/>
+		<item id="2453" count="1" alternative_id="95171" slot_id="4"/>
+	</collection>
+	<collection id="207" tab_id="1" option_id="39312">	<!-- Importance of Physical Attack -->
+		<item id="91901" count="1" enchant="4" alternative_id="95326" slot_id="0"/>
+		<item id="94884" count="1" alternative_id="95418" slot_id="1"/>
+		<item id="91898" count="1" enchant="4" alternative_id="95324" slot_id="2"/>
+		<item id="195" count="1" alternative_id="94983" slot_id="3"/>
+	</collection>
+	<collection id="208" tab_id="1" option_id="39313">	<!-- Thousand Legs -->
+		<item id="94154" count="1" slot_id="0"/>
+		<item id="94155" count="1" slot_id="1"/>
+	</collection>
+	<collection id="209" tab_id="1" option_id="39314">	<!-- The Last of Elmoreden -->
+		<item id="94153" count="1" slot_id="0"/>
+		<item id="94648" count="1" slot_id="1"/>
+	</collection>
+	<collection id="210" tab_id="2" option_id="39315">	<!-- Wisdom of the Ancients -->
+		<item id="94509" count="1" slot_id="0"/>
+		<item id="94645" count="1" slot_id="1"/>
+	</collection>
+	<collection id="211" tab_id="1" option_id="39316">	<!-- Basic Doll Set -->
+		<item id="94154" count="1" slot_id="0"/>
+		<item id="94155" count="1" slot_id="1"/>
+		<item id="94645" count="1" slot_id="2"/>
+	</collection>
+	<collection id="212" tab_id="2" option_id="39317">	<!-- Advanced Doll Set -->
+		<item id="94509" count="1" slot_id="0"/>
+		<item id="94153" count="1" slot_id="1"/>
+		<item id="94648" count="1" slot_id="2"/>
+	</collection>
+	<collection id="213" tab_id="4" option_id="39318">	<!-- Sophisticated Official -->
+		<item id="94509" count="1" slot_id="0"/>
+		<item id="94648" count="1" slot_id="1"/>
+		<item id="94645" count="1" slot_id="2"/>
+		<item id="94153" count="1" slot_id="3"/>
+	</collection>
+	<collection id="214" tab_id="5" option_id="39319">	<!-- Five Raids -->
+		<item id="94154" count="1" slot_id="0"/>
+		<item id="94155" count="1" slot_id="1"/>
+		<item id="94648" count="1" slot_id="2"/>
+		<item id="94645" count="1" slot_id="3"/>
+		<item id="94153" count="1" slot_id="4"/>
+	</collection>
+	<collection id="215" tab_id="5" option_id="39320">	<!-- Resistance Set -->
+		<item id="94154" count="1" slot_id="0"/>
+		<item id="94155" count="1" slot_id="1"/>
+		<item id="94648" count="1" slot_id="2"/>
+		<item id="94645" count="1" slot_id="3"/>
+		<item id="94153" count="1" slot_id="4"/>
+		<item id="94509" count="1" slot_id="5"/>
+	</collection>
+	<collection id="216" tab_id="2" option_id="39468">	<!-- Dark Elven Ancestor -->
+		<item id="212" count="1" enchant="4" alternative_id="92936" slot_id="0"/>
+		<item id="5767" count="1" enchant="5" alternative_id="92279" slot_id="1"/>
+		<item id="864" count="1" enchant="5" alternative_id="95380" slot_id="2"/>
+		<item id="895" count="1" enchant="5" alternative_id="95395" slot_id="3"/>
+		<item id="885" count="1" alternative_id="95388" slot_id="4"/>
+		<item id="917" count="1" alternative_id="95404" slot_id="5"/>
+	</collection>
+	<collection id="217" tab_id="2" option_id="39469">	<!-- Taut Bowstring -->
+		<item id="288" count="1" enchant="5" alternative_id="92942" slot_id="0"/>
+		<item id="91886" count="1" enchant="5" alternative_id="95318" slot_id="1"/>
+		<item id="5710" count="1" enchant="4" alternative_id="93520" slot_id="2"/>
+		<item id="5711" count="1" enchant="4" alternative_id="93521" slot_id="3"/>
+	</collection>
+	<collection id="218" tab_id="2" option_id="39470">	<!-- Piercing Gaze -->
+		<item id="7894" count="1" enchant="5" alternative_id="92951" slot_id="0"/>
+		<item id="5735" count="1" enchant="5" alternative_id="93539" slot_id="1"/>
+		<item id="358" count="1" enchant="4" alternative_id="93502" slot_id="2"/>
+		<item id="609" count="1" enchant="4" alternative_id="95123" slot_id="3"/>
+		<item id="603" count="1" alternative_id="95117" slot_id="4"/>
+	</collection>
+	<collection id="219" tab_id="6" option_id="39471">	<!-- All Equipment to +6 I -->
+		<item id="90458" count="1" enchant="6" alternative_id="93547" slot_id="0"/>
+		<item id="603" count="1" enchant="6" alternative_id="95117" slot_id="1"/>
+		<item id="609" count="1" enchant="6" alternative_id="95123" slot_id="2"/>
+		<item id="2435" count="1" enchant="6" alternative_id="95162" slot_id="3"/>
+		<item id="2438" count="1" enchant="6" alternative_id="93640" slot_id="4"/>
+	</collection>
+	<collection id="220" tab_id="3" option_id="39472">	<!-- Watch Your Head II -->
+		<item id="90470" count="1" enchant="4" alternative_id="92304" slot_id="0"/>
+		<item id="90461" count="1" enchant="4" alternative_id="93550" slot_id="1"/>
+		<item id="90458" count="1" enchant="4" alternative_id="93547" slot_id="2"/>
+		<item id="499" count="1" enchant="4" alternative_id="95113" slot_id="3"/>
+	</collection>
+	<collection id="221" tab_id="2" option_id="39473">	<!-- Dances with Wolves -->
+		<item id="5777" count="1" enchant="5" alternative_id="92289" slot_id="0"/>
+		<item id="5778" count="1" enchant="5" alternative_id="92290" slot_id="1"/>
+		<item id="5779" count="1" enchant="5" alternative_id="92291" slot_id="2"/>
+		<item id="2403" count="1" enchant="5" alternative_id="93517" slot_id="3"/>
+		<item id="5736" count="1" alternative_id="93540" slot_id="4"/>
+	</collection>
+	<collection id="222" tab_id="6" option_id="39474">	<!-- Three Zubei's Helmets -->
+		<item id="90460" count="1" enchant="5" alternative_id="93549" slot_id="0"/>
+		<item id="90458" count="1" enchant="4" alternative_id="93547" slot_id="1"/>
+		<item id="90459" count="1" enchant="4" alternative_id="93548" slot_id="2"/>
+	</collection>
+	<collection id="223" tab_id="3" option_id="39475">	<!-- Sturdy Ice Hammer -->
+		<item id="7900" count="1" enchant="7" alternative_id="95311" slot_id="0"/>
+		<item id="110" count="1" enchant="5" alternative_id="94934" slot_id="1"/>
+		<item id="673" count="1" alternative_id="95132" slot_id="2"/>
+		<item id="2497" count="1" alternative_id="95184" slot_id="3"/>
+	</collection>
+	<collection id="224" tab_id="6" option_id="39476">	<!-- Heaven and Hell -->
+		<item id="888" count="1" enchant="4" alternative_id="95391" slot_id="0"/>
+		<item id="2435" count="1" alternative_id="95162" slot_id="1"/>
+		<item id="442" count="1" alternative_id="95102" slot_id="2"/>
+		<item id="2459" count="1" alternative_id="95176" slot_id="3"/>
+		<item id="473" count="1" alternative_id="95110" slot_id="4"/>
+	</collection>
+	<collection id="225" tab_id="3" option_id="39477">	<!-- All Equipment to +6 II -->
+		<item id="1128" count="1" enchant="6" alternative_id="95139" slot_id="0"/>
+		<item id="2414" count="1" enchant="6" alternative_id="93639" slot_id="1"/>
+		<item id="2437" count="1" enchant="6" alternative_id="93644" slot_id="2"/>
+		<item id="2462" count="1" enchant="6" alternative_id="93641" slot_id="3"/>
+	</collection>
+	<collection id="226" tab_id="2" option_id="39478">	<!-- Unknown Victory I -->
+		<item id="91886" count="1" enchant="9" alternative_id="95318" slot_id="0"/>
+		<item id="90462" count="1" enchant="5" alternative_id="93551" slot_id="1"/>
+		<item id="90463" count="1" alternative_id="93552" slot_id="2"/>
+		<item id="5735" count="1" alternative_id="93539" slot_id="3"/>
+		<item id="5716" count="1" alternative_id="93525" slot_id="4"/>
+	</collection>
+	<collection id="227" tab_id="2" option_id="39479">	<!-- B-grade and Tallum Armor -->
+		<item id="5780" count="1" enchant="5" alternative_id="92292" slot_id="0"/>
+		<item id="5768" count="1" enchant="5" alternative_id="92280" slot_id="1"/>
+		<item id="5728" count="1" enchant="5" alternative_id="93534" slot_id="2"/>
+		<item id="2392" count="1" enchant="5" alternative_id="93512" slot_id="3"/>
+		<item id="2381" count="1" alternative_id="93507" slot_id="4"/>
+	</collection>
+	<collection id="228" tab_id="2" option_id="39480">	<!-- Rich and Poor -->
+		<item id="5767" count="1" enchant="5" alternative_id="92279" slot_id="0"/>
+		<item id="5712" count="1" enchant="5" alternative_id="93522" slot_id="1"/>
+		<item id="2463" count="1" enchant="5" alternative_id="95178" slot_id="2"/>
+		<item id="438" count="1" enchant="5" alternative_id="95099" slot_id="3"/>
+		<item id="2451" count="1" enchant="5" alternative_id="95169" slot_id="4"/>
+	</collection>
+	<collection id="229" tab_id="6" option_id="39481">	<!-- Path of the Greatest Thief -->
+		<item id="226" count="1" enchant="7" alternative_id="95000" slot_id="0"/>
+		<item id="2460" count="1" enchant="4" alternative_id="95177" slot_id="1"/>
+		<item id="400" count="1" alternative_id="95084" slot_id="2"/>
+		<item id="420" count="1" alternative_id="95092" slot_id="3"/>
+		<item id="2436" count="1" alternative_id="95163" slot_id="4"/>
+	</collection>
+	<collection id="230" tab_id="2" option_id="39482">	<!-- Mighty Strike -->
+		<item id="5286" count="1" enchant="7" alternative_id="93055" slot_id="0"/>
+		<item id="2414" count="1" alternative_id="93639" slot_id="1"/>
+		<item id="2462" count="1" alternative_id="93641" slot_id="2"/>
+		<item id="356" count="1" alternative_id="93642" slot_id="3"/>
+		<item id="401" count="1" alternative_id="93643" slot_id="4"/>
+	</collection>
+	<collection id="231" tab_id="1" option_id="39483">	<!-- Ghoul's Embrace -->
+		<item id="2406" count="1" enchant="4" alternative_id="93519" slot_id="0"/>
+		<item id="205" count="1" enchant="5" alternative_id="94993" slot_id="1"/>
+		<item id="857" count="1" enchant="6" alternative_id="95378" slot_id="2"/>
+		<item id="857" count="1" enchant="4" alternative_id="95378" slot_id="3"/>
+	</collection>
+	<collection id="232" tab_id="1" option_id="39484">	<!-- Deadman's Embrace -->
+		<item id="91901" count="1" enchant="9" alternative_id="95326" slot_id="0"/>
+		<item id="204" count="1" alternative_id="94992" slot_id="1"/>
+		<item id="119" count="1" alternative_id="95368" slot_id="2"/>
+		<item id="886" count="1" alternative_id="95389" slot_id="3"/>
+	</collection>
+	<collection id="233" tab_id="1" option_id="39485">	<!-- Average Damage Dealer -->
+		<item id="229" count="1" enchant="9" alternative_id="95002" slot_id="0"/>
+		<item id="2404" count="1" enchant="5" alternative_id="93518" slot_id="1"/>
+		<item id="2438" count="1" enchant="4" alternative_id="93640" slot_id="2"/>
+		<item id="919" count="1" enchant="4" alternative_id="95406" slot_id="3"/>
+	</collection>
+	<collection id="234" tab_id="2" option_id="39486">	<!-- Fashion Fanatic I -->
+		<item id="5765" count="1" enchant="5" alternative_id="92277" slot_id="0"/>
+		<item id="2382" count="1" enchant="4" alternative_id="92261" slot_id="1"/>
+		<item id="5732" count="1" enchant="4" alternative_id="93537" slot_id="2"/>
+		<item id="110" count="1" alternative_id="94934" slot_id="3"/>
+	</collection>
+	<collection id="235" tab_id="2" option_id="39487">	<!-- Fashion Fanatic II -->
+		<item id="5780" count="1" enchant="4" alternative_id="92292" slot_id="0"/>
+		<item id="5768" count="1" enchant="4" alternative_id="92280" slot_id="1"/>
+		<item id="90462" count="1" alternative_id="93551" slot_id="2"/>
+		<item id="358" count="1" alternative_id="93502" slot_id="3"/>
+		<item id="2380" count="1" alternative_id="93506" slot_id="4"/>
+	</collection>
+	<collection id="236" tab_id="2" option_id="39488">	<!-- Fashion Fanatic III -->
+		<item id="2382" count="1" enchant="4" alternative_id="92261" slot_id="0"/>
+		<item id="90461" count="1" enchant="4" alternative_id="93550" slot_id="1"/>
+		<item id="5714" count="1" enchant="4" alternative_id="93523" slot_id="2"/>
+		<item id="5730" count="1" enchant="4" alternative_id="93535" slot_id="3"/>
+	</collection>
+	<collection id="237" tab_id="3" option_id="39489">	<!-- Fashion Fanatic IV -->
+		<item id="90470" count="1" enchant="4" alternative_id="92304" slot_id="0"/>
+		<item id="2381" count="1" alternative_id="93507" slot_id="1"/>
+		<item id="5718" count="1" alternative_id="93526" slot_id="2"/>
+		<item id="5740" count="1" alternative_id="93543" slot_id="3"/>
+		<item id="855" count="1" alternative_id="95376" slot_id="4"/>
+	</collection>
+	<collection id="238" tab_id="2" option_id="39490">	<!-- Fashion Fanatic V -->
+		<item id="5766" count="1" enchant="5" alternative_id="92278" slot_id="0"/>
+		<item id="2390" count="1" enchant="4" alternative_id="93510" slot_id="1"/>
+		<item id="5738" count="1" enchant="4" alternative_id="93541" slot_id="2"/>
+		<item id="499" count="1" enchant="4" alternative_id="95113" slot_id="3"/>
+	</collection>
+	<collection id="239" tab_id="6" option_id="39491">	<!-- Fashion Fanatic VI -->
+		<item id="5732" count="1" enchant="4" alternative_id="93537" slot_id="0"/>
+		<item id="2392" count="1" enchant="4" alternative_id="93512" slot_id="1"/>
+		<item id="5719" count="1" enchant="4" alternative_id="93527" slot_id="2"/>
+	</collection>
+	<collection id="240" tab_id="1" option_id="39492">	<!-- +8 Dwarven Hammer -->
+		<item id="7897" count="1" enchant="8" alternative_id="95309" slot_id="0"/>
+		<item id="2468" count="1" enchant="5" alternative_id="95179" slot_id="1"/>
+		<item id="64" count="1" enchant="5" alternative_id="94908" slot_id="2"/>
+		<item id="1127" count="1" enchant="5" alternative_id="95138" slot_id="3"/>
+		<item id="2460" count="1" enchant="4" alternative_id="95177" slot_id="4"/>
+	</collection>
+	<collection id="241" tab_id="2" option_id="39493">	<!-- +9 Ecliptic Sword -->
+		<item id="7888" count="1" enchant="9" alternative_id="95304" slot_id="0"/>
+		<item id="609" count="1" alternative_id="95123" slot_id="1"/>
+		<item id="1128" count="1" alternative_id="95139" slot_id="2"/>
+		<item id="2497" count="1" alternative_id="95184" slot_id="3"/>
+	</collection>
+	<collection id="242" tab_id="3" option_id="39494">	<!-- Piece of Cake -->
+		<item id="94882" count="1" alternative_id="95416" slot_id="0"/>
+		<item id="265" count="1" alternative_id="95020" slot_id="1"/>
+		<item id="93085" count="1" alternative_id="93111" slot_id="2"/>
+	</collection>
+	<collection id="243" tab_id="3" option_id="39495">	<!-- +5 Doom Collection -->
+		<item id="90466" count="1" enchant="5" alternative_id="93555" slot_id="0"/>
+		<item id="90465" count="1" enchant="5" alternative_id="93554" slot_id="1"/>
+		<item id="90464" count="1" enchant="5" alternative_id="93553" slot_id="2"/>
+		<item id="5738" count="1" enchant="5" alternative_id="93541" slot_id="3"/>
+		<item id="5723" count="1" enchant="5" alternative_id="93530" slot_id="4"/>
+		<item id="5739" count="1" enchant="5" alternative_id="93542" slot_id="5"/>
+	</collection>
+	<collection id="244" tab_id="6" option_id="39496">	<!-- Wolf and Doom Helmet Set -->
+		<item id="90461" count="1" alternative_id="93550" slot_id="0"/>
+		<item id="90462" count="1" alternative_id="93551" slot_id="1"/>
+		<item id="90463" count="1" alternative_id="93552" slot_id="2"/>
+		<item id="90464" count="1" alternative_id="93553" slot_id="3"/>
+		<item id="90465" count="1" alternative_id="93554" slot_id="4"/>
+		<item id="90466" count="1" alternative_id="93555" slot_id="5"/>
+	</collection>
+	<collection id="245" tab_id="6" option_id="39497">	<!-- C-grade Equipment -->
+		<item id="609" count="1" alternative_id="95123" slot_id="0"/>
+		<item id="1128" count="1" alternative_id="95139" slot_id="1"/>
+		<item id="2414" count="1" alternative_id="93639" slot_id="2"/>
+		<item id="2437" count="1" alternative_id="93644" slot_id="3"/>
+		<item id="2438" count="1" alternative_id="93640" slot_id="4"/>
+		<item id="2461" count="1" alternative_id="93645" slot_id="5"/>
+	</collection>
+	<collection id="246" tab_id="6" option_id="39498">	<!-- Not Too Difficult -->
+		<item id="5740" count="1" enchant="4" alternative_id="93543" slot_id="0"/>
+		<item id="90459" count="1" enchant="4" alternative_id="93548" slot_id="1"/>
+		<item id="473" count="1" enchant="4" alternative_id="95110" slot_id="2"/>
+		<item id="2435" count="1" alternative_id="95162" slot_id="3"/>
+		<item id="2459" count="1" alternative_id="95176" slot_id="4"/>
+	</collection>
+	<collection id="247" tab_id="3" option_id="39499">	<!-- Unknown Victory II -->
+		<item id="91886" count="1" enchant="9" alternative_id="95318" slot_id="0"/>
+		<item id="1127" count="1" alternative_id="95138" slot_id="1"/>
+		<item id="1149" count="1" alternative_id="95140" slot_id="2"/>
+	</collection>
+	<collection id="248" tab_id="3" option_id="39500">	<!-- Hidden Ring -->
+		<item id="90467" count="1" enchant="4" alternative_id="92301" slot_id="0"/>
+		<item id="888" count="1" enchant="6" alternative_id="95391" slot_id="1"/>
+		<item id="603" count="1" alternative_id="95117" slot_id="2"/>
+	</collection>
+	<collection id="249" tab_id="3" option_id="39501">	<!-- Peculiar Combination -->
+		<item id="5731" count="1" alternative_id="93536" slot_id="0"/>
+		<item id="5723" count="1" alternative_id="93530" slot_id="1"/>
+		<item id="90462" count="1" alternative_id="93551" slot_id="2"/>
+	</collection>
+	<collection id="250" tab_id="3" option_id="39502">	<!-- B-grade Accessory Set I -->
+		<item id="856" count="1" enchant="4" alternative_id="95377" slot_id="0"/>
+		<item id="864" count="1" enchant="4" alternative_id="95380" slot_id="1"/>
+		<item id="887" count="1" enchant="4" alternative_id="95390" slot_id="2"/>
+		<item id="895" count="1" enchant="4" alternative_id="95395" slot_id="3"/>
+		<item id="918" count="1" enchant="4" alternative_id="95405" slot_id="4"/>
+		<item id="926" count="1" enchant="4" alternative_id="95408" slot_id="5"/>
+	</collection>
+	<collection id="251" tab_id="3" option_id="39503">	<!-- B-grade Weapon Set I -->
+		<item id="300" count="1" alternative_id="95042" slot_id="0"/>
+		<item id="264" count="1" alternative_id="95019" slot_id="1"/>
+		<item id="78" count="1" alternative_id="94918" slot_id="2"/>
+		<item id="92" count="1" alternative_id="94926" slot_id="3"/>
+	</collection>
+	<collection id="252" tab_id="3" option_id="39504">	<!-- B-grade Weapon Set II -->
+		<item id="91" count="1" alternative_id="94925" slot_id="0"/>
+		<item id="229" count="1" alternative_id="95002" slot_id="1"/>
+		<item id="148" count="1" alternative_id="94951" slot_id="2"/>
+		<item id="284" count="1" alternative_id="95032" slot_id="3"/>
+	</collection>
+	<collection id="253" tab_id="3" option_id="39505">	<!-- B-grade Weapon Set III -->
+		<item id="2626" count="1" alternative_id="93430" slot_id="0"/>
+		<item id="7883" count="1" alternative_id="93431" slot_id="1"/>
+		<item id="210" count="1" alternative_id="93426" slot_id="2"/>
+		<item id="7901" count="1" alternative_id="93433" slot_id="3"/>
+		<item id="268" count="1" alternative_id="93428" slot_id="4"/>
+	</collection>
+	<collection id="254" tab_id="3" option_id="39506">	<!-- B-grade Weapon Set IV -->
+		<item id="234" count="1" alternative_id="93427" slot_id="0"/>
+		<item id="7893" count="1" alternative_id="95307" slot_id="1"/>
+		<item id="91900" count="1" alternative_id="93435" slot_id="2"/>
+		<item id="97" count="1" alternative_id="93423" slot_id="3"/>
+		<item id="175" count="1" alternative_id="93425" slot_id="4"/>
+	</collection>
+	<collection id="255" tab_id="3" option_id="39507">	<!-- B-grade Weapon Set V -->
+		<item id="79" count="1" alternative_id="93422" slot_id="0"/>
+		<item id="7889" count="1" alternative_id="93432" slot_id="1"/>
+		<item id="287" count="1" alternative_id="93429" slot_id="2"/>
+		<item id="171" count="1" alternative_id="93424" slot_id="3"/>
+		<item id="91885" count="1" alternative_id="93434" slot_id="4"/>
+	</collection>
+	<collection id="256" tab_id="1" option_id="39508">	<!-- A-grade Weapon Set I -->
+		<item id="288" count="1" alternative_id="92942" slot_id="0"/>
+		<item id="94885" count="1" alternative_id="95419" slot_id="1"/>
+		<item id="150" count="1" alternative_id="92933" slot_id="2"/>
+		<item id="2504" count="1" alternative_id="92946" slot_id="3"/>
+		<item id="7884" count="1" alternative_id="92950" slot_id="4"/>
+	</collection>
+	<collection id="257" tab_id="2" option_id="39509">	<!-- A-grade Weapon Set II -->
+		<item id="80" count="1" alternative_id="92930" slot_id="0"/>
+		<item id="7894" count="1" alternative_id="92951" slot_id="1"/>
+		<item id="7899" count="1" alternative_id="92953" slot_id="2"/>
+		<item id="269" count="1" alternative_id="92940" slot_id="3"/>
+		<item id="91904" count="1" alternative_id="92972" slot_id="4"/>
+	</collection>
+	<collection id="258" tab_id="1" option_id="39510">	<!-- A-grade Weapon Set III -->
+		<item id="235" count="1" alternative_id="92938" slot_id="0"/>
+		<item id="91889" count="1" alternative_id="92969" slot_id="1"/>
+		<item id="212" count="1" alternative_id="92936" slot_id="2"/>
+		<item id="5233" count="1" alternative_id="92947" slot_id="3"/>
+		<item id="98" count="1" alternative_id="92932" slot_id="4"/>
+	</collection>
+	<collection id="259" tab_id="1" option_id="39511">	<!-- Not a Fighter -->
+		<item id="2504" count="1" enchant="5" alternative_id="92946" slot_id="0"/>
+		<item id="2405" count="1" enchant="5" alternative_id="92269" slot_id="1"/>
+		<item id="2400" count="1" enchant="5" alternative_id="92268" slot_id="2"/>
+		<item id="5770" count="1" enchant="5" alternative_id="92282" slot_id="3"/>
+		<item id="5782" count="1" enchant="5" alternative_id="92294" slot_id="4"/>
+	</collection>
+	<collection id="260" tab_id="2" option_id="39512">	<!-- Rapier and Gauntlets of Nightmare -->
+		<item id="91904" count="1" enchant="5" alternative_id="92972" slot_id="0"/>
+		<item id="5771" count="1" enchant="5" alternative_id="92283" slot_id="1"/>
+		<item id="5772" count="1" enchant="5" alternative_id="92284" slot_id="2"/>
+		<item id="5773" count="1" enchant="5" alternative_id="92285" slot_id="3"/>
+	</collection>
+	<collection id="261" tab_id="2" option_id="39513">	<!-- Spear and Majestic Gauntlets -->
+		<item id="98" count="1" enchant="5" alternative_id="92932" slot_id="0"/>
+		<item id="5774" count="1" enchant="5" alternative_id="92286" slot_id="1"/>
+		<item id="5775" count="1" enchant="5" alternative_id="92287" slot_id="2"/>
+		<item id="5776" count="1" enchant="5" alternative_id="92288" slot_id="3"/>
+	</collection>
+	<collection id="262" tab_id="2" option_id="39514">	<!-- Two-handed Blunt Weapon and Boots of Nightmare -->
+		<item id="7899" count="1" enchant="5" alternative_id="92953" slot_id="0"/>
+		<item id="5783" count="1" enchant="5" alternative_id="92295" slot_id="1"/>
+		<item id="5784" count="1" enchant="5" alternative_id="92296" slot_id="2"/>
+		<item id="5785" count="1" enchant="5" alternative_id="92297" slot_id="3"/>
+	</collection>
+	<collection id="263" tab_id="1" option_id="39515">	<!-- Bow and Majestic Boots -->
+		<item id="288" count="1" enchant="5" alternative_id="92942" slot_id="0"/>
+		<item id="5786" count="1" enchant="5" alternative_id="92298" slot_id="1"/>
+		<item id="5787" count="1" enchant="5" alternative_id="92299" slot_id="2"/>
+		<item id="5788" count="1" enchant="5" alternative_id="92300" slot_id="3"/>
+	</collection>
+	<collection id="264" tab_id="1" option_id="39516">	<!-- Ancient Sword and Helms of Nightmare -->
+		<item id="91889" count="1" enchant="5" alternative_id="92969" slot_id="0"/>
+		<item id="90473" count="1" enchant="5" alternative_id="92307" slot_id="1"/>
+		<item id="90474" count="1" enchant="5" alternative_id="92308" slot_id="2"/>
+		<item id="90475" count="1" enchant="5" alternative_id="92309" slot_id="3"/>
+	</collection>
+	<collection id="265" tab_id="1" option_id="39517">	<!-- Mace and Majestic Circlets -->
+		<item id="2504" count="1" enchant="5" alternative_id="92946" slot_id="0"/>
+		<item id="90476" count="1" enchant="5" alternative_id="92310" slot_id="1"/>
+		<item id="90477" count="1" enchant="5" alternative_id="92311" slot_id="2"/>
+		<item id="90478" count="1" enchant="5" alternative_id="92312" slot_id="3"/>
+	</collection>
+	<collection id="266" tab_id="2" option_id="39518">	<!-- Top-grade Heavy Armor and Black Accessories -->
+		<item id="2383" count="1" enchant="5" alternative_id="92262" slot_id="0"/>
+		<item id="374" count="1" enchant="5" alternative_id="92256" slot_id="1"/>
+		<item id="864" count="1" enchant="5" alternative_id="95380" slot_id="2"/>
+		<item id="895" count="1" enchant="5" alternative_id="95395" slot_id="3"/>
+		<item id="926" count="1" enchant="5" alternative_id="95408" slot_id="4"/>
+	</collection>
+	<collection id="267" tab_id="2" option_id="39519">	<!-- Top-grade Light Armor and Phoenix Earring -->
+		<item id="2394" count="1" enchant="5" alternative_id="92266" slot_id="0"/>
+		<item id="2395" count="1" enchant="5" alternative_id="92267" slot_id="1"/>
+		<item id="871" count="1" enchant="5" alternative_id="95381" slot_id="2"/>
+	</collection>
+	<collection id="268" tab_id="2" option_id="39520">	<!-- Top-grade Robes and Shields -->
+		<item id="2408" count="1" enchant="5" alternative_id="92271" slot_id="0"/>
+		<item id="2409" count="1" enchant="5" alternative_id="92272" slot_id="1"/>
+		<item id="673" count="1" enchant="5" alternative_id="95132" slot_id="2"/>
+		<item id="110" count="1" enchant="5" alternative_id="94934" slot_id="3"/>
+	</collection>
+	<collection id="269" tab_id="1" option_id="39521">	<!-- Lv. 2 Jewel Set I -->
+		<item id="92037" count="1" slot_id="0"/>
+		<item id="92057" count="1" slot_id="1"/>
+		<item id="92067" count="1" slot_id="2"/>
+		<item id="92087" count="1" slot_id="3"/>
+	</collection>
+	<collection id="270" tab_id="2" option_id="39522">	<!-- Lv. 2 Jewel Set II -->
+		<item id="92047" count="1" slot_id="0"/>
+		<item id="92077" count="1" slot_id="1"/>
+		<item id="92097" count="1" slot_id="2"/>
+	</collection>
+	<collection id="271" tab_id="1" option_id="39523">	<!-- Lv. 3 Jewel Set I -->
+		<item id="92038" count="1" slot_id="0"/>
+		<item id="92058" count="1" slot_id="1"/>
+		<item id="92068" count="1" slot_id="2"/>
+		<item id="92088" count="1" slot_id="3"/>
+	</collection>
+	<collection id="272" tab_id="2" option_id="39524">	<!-- Lv. 3 Jewel Set II -->
+		<item id="92048" count="1" slot_id="0"/>
+		<item id="92078" count="1" slot_id="1"/>
+		<item id="92098" count="1" slot_id="2"/>
+	</collection>
+	<collection id="273" tab_id="1" option_id="39525">	<!-- Lv. 4 Jewel Set I -->
+		<item id="92039" count="1" slot_id="0"/>
+		<item id="92059" count="1" slot_id="1"/>
+		<item id="92069" count="1" slot_id="2"/>
+		<item id="92089" count="1" slot_id="3"/>
+	</collection>
+	<collection id="274" tab_id="2" option_id="39526">	<!-- Lv. 4 Jewel Set II -->
+		<item id="92049" count="1" slot_id="0"/>
+		<item id="92079" count="1" slot_id="1"/>
+		<item id="92099" count="1" slot_id="2"/>
+	</collection>
+	<collection id="275" tab_id="1" option_id="39527">	<!-- Lv. 5 Jewel Set I -->
+		<item id="94520" count="1" slot_id="0"/>
+		<item id="94518" count="1" slot_id="1"/>
+	</collection>
+	<collection id="276" tab_id="2" option_id="39528">	<!-- Lv. 5 Jewel Set II -->
+		<item id="94522" count="1" slot_id="0"/>
+		<item id="94519" count="1" slot_id="1"/>
+	</collection>
+	<collection id="277" tab_id="2" option_id="39529">	<!-- Lv. 5 Jewel Set III -->
+		<item id="94523" count="1" slot_id="0"/>
+		<item id="94521" count="1" slot_id="1"/>
+		<item id="94524" count="1" slot_id="2"/>
+	</collection>
+	<collection id="278" tab_id="3" option_id="39530">	<!-- New Power -->
+		<item id="94367" count="1" alternative_id="95770" slot_id="0"/>
+		<item id="94368" count="1" alternative_id="95771" slot_id="1"/>
+		<item id="94366" count="1" alternative_id="95769" slot_id="2"/>
+	</collection>
+	<collection id="279" tab_id="2" option_id="39531">	<!-- Fortune Power I -->
+		<item id="95862" count="1" alternative_id="95870" slot_id="0"/>
+		<item id="95863" count="1" alternative_id="95871" slot_id="1"/>
+		<item id="95860" count="1" alternative_id="95868" slot_id="2"/>
+	</collection>
+	<collection id="280" tab_id="1" option_id="39532">	<!-- Fortune Power II -->
+		<item id="95856" count="1" alternative_id="95864" slot_id="0"/>
+		<item id="95857" count="1" alternative_id="95865" slot_id="1"/>
+		<item id="95859" count="1" alternative_id="95867" slot_id="2"/>
+		<item id="95858" count="1" alternative_id="95866" slot_id="3"/>
+	</collection>
+	<collection id="281" tab_id="3" option_id="39533">	<!-- Siege Collection I -->
+		<item id="95880" count="1" slot_id="0"/>
+	</collection>
+	<collection id="282" tab_id="3" option_id="39534">	<!-- Siege Collection II -->
+		<item id="95881" count="1" slot_id="0"/>
+	</collection>
+	<collection id="283" tab_id="1" option_id="39604">	<!-- Sword Master -->
+		<item id="8678" count="1" enchant="6" alternative_id="92955" slot_id="0"/>
+		<item id="2500" count="1" enchant="6" alternative_id="92945" slot_id="1"/>
+		<item id="80" count="1" enchant="6" alternative_id="92930" slot_id="2"/>
+		<item id="79" count="1" enchant="9" alternative_id="93422" slot_id="3"/>
+		<item id="142" count="1" enchant="9" alternative_id="94947" slot_id="4"/>
+	</collection>
+	<collection id="284" tab_id="1" option_id="39605">	<!-- Ambidexterity -->
+		<item id="8688" count="1" enchant="6" alternative_id="92965" slot_id="0"/>
+		<item id="81" count="1" enchant="6" alternative_id="92931" slot_id="1"/>
+		<item id="8679" count="1" enchant="6" alternative_id="92956" slot_id="2"/>
+		<item id="7883" count="1" enchant="12" alternative_id="93431" slot_id="3"/>
+		<item id="78" count="1" enchant="12" alternative_id="94918" slot_id="4"/>
+	</collection>
+	<collection id="285" tab_id="2" option_id="39606">	<!-- Flaming Robe Set -->
+		<item id="93733" count="1" enchant="5" alternative_id="93735" slot_id="0"/>
+		<item id="93734" count="1" enchant="5" alternative_id="93736" slot_id="1"/>
+		<item id="93140" count="1" enchant="5" alternative_id="93142" slot_id="2"/>
+		<item id="93316" count="1" enchant="5" alternative_id="93318" slot_id="3"/>
+	</collection>
+	<collection id="286" tab_id="2" option_id="39607">	<!-- Majestic Collection -->
+		<item id="93094" count="1" enchant="6" alternative_id="93120" slot_id="0"/>
+		<item id="2383" count="1" enchant="6" alternative_id="92262" slot_id="1"/>
+		<item id="2395" count="1" enchant="6" alternative_id="92267" slot_id="2"/>
+		<item id="2409" count="1" enchant="6" alternative_id="92272" slot_id="3"/>
+	</collection>
+	<collection id="287" tab_id="3" option_id="39658">	<!-- Inner Strength -->
+		<item id="93298" count="1" slot_id="0"/>
+		<item id="93301" count="1" enchant="7" slot_id="1"/>
+		<item id="94166" count="1" enchant="5" slot_id="2"/>
+	</collection>
+	<collection id="288" tab_id="4" option_id="39659">	<!-- Important Equipment -->
+		<item id="94621" count="1" enchant="4" slot_id="0"/>
+		<item id="91862" count="1" enchant="4" slot_id="1"/>
+		<item id="91303" count="1" slot_id="2"/>
+		<item id="90891" count="1" slot_id="3"/>
+		<item id="49703" count="1" slot_id="4"/>
+	</collection>
+	<collection id="289" tab_id="5" option_id="39662">	<!-- Purification -->
+		<item id="96046" count="1" alternative_id="96060" slot_id="0"/>
+		<item id="96047" count="1" alternative_id="96061" slot_id="1"/>
+		<item id="96048" count="1" alternative_id="96062" slot_id="2"/>
+		<item id="96049" count="1" alternative_id="96064" slot_id="3"/>
+		<item id="96050" count="1" alternative_id="96063" slot_id="4"/>
+	</collection>
+	<collection id="290" tab_id="6" option_id="39660">	<!-- +7 Agathion Collection -->
+		<item id="93128" count="1" enchant="7" slot_id="0"/>
+		<item id="93131" count="1" enchant="7" slot_id="1"/>
+		<item id="93129" count="1" enchant="7" slot_id="2"/>
+		<item id="93130" count="1" enchant="7" slot_id="3"/>
+		<item id="93132" count="1" enchant="7" slot_id="4"/>
+	</collection>
+	<collection id="291" tab_id="4" option_id="39661">	<!-- +5 Agathion Collection -->
+		<item id="93128" count="1" enchant="5" slot_id="0"/>
+		<item id="93131" count="1" enchant="5" slot_id="1"/>
+		<item id="93129" count="1" enchant="5" slot_id="2"/>
+		<item id="93130" count="1" enchant="5" slot_id="3"/>
+		<item id="93132" count="1" enchant="5" slot_id="4"/>
+	</collection>
+	<collection id="292" tab_id="3" option_id="39608">	<!-- Armor and Shield of Nightmare -->
+		<item id="374" count="1" enchant="5" alternative_id="92256" slot_id="0"/>
+		<item id="2394" count="1" enchant="5" alternative_id="92266" slot_id="1"/>
+		<item id="2408" count="1" enchant="5" alternative_id="92271" slot_id="2"/>
+		<item id="2498" count="1" enchant="5" alternative_id="92276" slot_id="3"/>
+	</collection>
+	<collection id="293" tab_id="3" option_id="39609">	<!-- Avadon Shield and Armor -->
+		<item id="673" count="1" enchant="5" alternative_id="95132" slot_id="0"/>
+		<item id="2376" count="1" enchant="5" alternative_id="93504" slot_id="1"/>
+		<item id="2379" count="1" enchant="5" alternative_id="93505" slot_id="2"/>
+		<item id="2390" count="1" enchant="5" alternative_id="93510" slot_id="3"/>
+		<item id="2406" count="1" enchant="5" alternative_id="93519" slot_id="4"/>
+	</collection>
+	<collection id="294" tab_id="2" option_id="39610">	<!-- +0 Pistol Collector -->
+		<item id="94886" count="1" alternative_id="95420" slot_id="0"/>
+		<item id="94885" count="1" alternative_id="95419" slot_id="1"/>
+		<item id="94884" count="1" alternative_id="95418" slot_id="2"/>
+		<item id="94882" count="1" alternative_id="95416" slot_id="3"/>
+		<item id="94881" count="1" alternative_id="95415" slot_id="4"/>
+	</collection>
+	<collection id="295" tab_id="4" option_id="39611">	<!-- +5 Pistols and Cannons -->
+		<item id="94886" count="1" enchant="5" alternative_id="95420" slot_id="0"/>
+		<item id="94885" count="1" enchant="5" alternative_id="95419" slot_id="1"/>
+		<item id="94884" count="1" enchant="5" alternative_id="95418" slot_id="2"/>
+		<item id="94882" count="1" enchant="5" alternative_id="95416" slot_id="3"/>
+		<item id="94881" count="1" enchant="5" alternative_id="95415" slot_id="4"/>
+	</collection>
+	<collection id="296" tab_id="3" option_id="39612">	<!-- Sealed Majestic Accessories -->
+		<item id="6328" count="1" slot_id="0"/>
+		<item id="6328" count="1" slot_id="1"/>
+		<item id="6327" count="1" slot_id="2"/>
+		<item id="6327" count="1" slot_id="3"/>
+		<item id="6326" count="1" slot_id="4"/>
+	</collection>
+	<collection id="297" tab_id="3" option_id="39613">	<!-- Sealed Phoenix Accessories -->
+		<item id="6325" count="1" slot_id="0"/>
+		<item id="6325" count="1" slot_id="1"/>
+		<item id="6324" count="1" slot_id="2"/>
+		<item id="6324" count="1" slot_id="3"/>
+		<item id="6323" count="1" slot_id="4"/>
+	</collection>
+	<collection id="298" tab_id="3" option_id="39614">	<!-- Uncommon in Common -->
+		<item id="890" count="1" enchant="6" alternative_id="95393" slot_id="0"/>
+		<item id="93084" count="1" enchant="6" alternative_id="93110" slot_id="1"/>
+		<item id="628" count="1" enchant="6" alternative_id="95126" slot_id="2"/>
+		<item id="626" count="1" enchant="6" alternative_id="95124" slot_id="3"/>
+	</collection>
+	<collection id="299" tab_id="4" option_id="39615">	<!-- +9 D-grade Weapons -->
+		<item id="258" count="1" enchant="9" alternative_id="95013" slot_id="0"/>
+		<item id="156" count="1" enchant="9" alternative_id="94952" slot_id="1"/>
+		<item id="222" count="1" enchant="9" alternative_id="94996" slot_id="2"/>
+		<item id="86" count="1" enchant="9" alternative_id="94921" slot_id="3"/>
+		<item id="296" count="1" enchant="9" alternative_id="95039" slot_id="4"/>
+	</collection>
+	<collection id="300" tab_id="3" option_id="39616">	<!-- Enchanted Reinforced Leather Armor -->
+		<item id="394" count="1" enchant="5" alternative_id="95078" slot_id="0"/>
+		<item id="416" count="1" enchant="5" alternative_id="95088" slot_id="1"/>
+		<item id="2422" count="1" enchant="5" alternative_id="95150" slot_id="2"/>
+		<item id="2446" count="1" enchant="5" alternative_id="95164" slot_id="3"/>
+	</collection>
+	<collection id="301" tab_id="3" option_id="39617">	<!-- Reinforced Leather Armor -->
+		<item id="394" count="1" alternative_id="95078" slot_id="0"/>
+		<item id="416" count="1" alternative_id="95088" slot_id="1"/>
+		<item id="2422" count="1" alternative_id="95150" slot_id="2"/>
+		<item id="2446" count="1" alternative_id="95164" slot_id="3"/>
+	</collection>
+	<collection id="302" tab_id="2" option_id="39618">	<!-- Very Cheap Accessories -->
+		<item id="853" count="1" enchant="7" alternative_id="95374" slot_id="0"/>
+		<item id="884" count="1" enchant="7" alternative_id="95387" slot_id="1"/>
+		<item id="847" count="1" enchant="7" alternative_id="95369" slot_id="2"/>
+		<item id="880" count="1" enchant="7" alternative_id="95383" slot_id="3"/>
+		<item id="890" count="1" enchant="7" alternative_id="95393" slot_id="4"/>
+	</collection>
+	<collection id="303" tab_id="3" option_id="39619">	<!-- Safe Enchanting -->
+		<item id="882" count="1" enchant="3" alternative_id="95385" slot_id="0"/>
+		<item id="912" count="1" enchant="3" alternative_id="95399" slot_id="1"/>
+		<item id="914" count="1" enchant="3" alternative_id="95401" slot_id="2"/>
+		<item id="851" count="1" enchant="3" alternative_id="95373" slot_id="3"/>
+		<item id="913" count="1" enchant="3" alternative_id="95400" slot_id="4"/>
+		<item id="850" count="1" enchant="3" alternative_id="95372" slot_id="5"/>
+	</collection>
+	<collection id="304" tab_id="6" option_id="39620">	<!-- Cloak and Accessories of Protection -->
+		<item id="93301" count="1" enchant="5" slot_id="0"/>
+		<item id="884" count="1" enchant="5" alternative_id="95387" slot_id="1"/>
+		<item id="853" count="1" enchant="5" alternative_id="95374" slot_id="2"/>
+		<item id="916" count="1" enchant="5" alternative_id="95403" slot_id="3"/>
+	</collection>
+	<collection id="305" tab_id="6" option_id="39621">	<!-- Wizard's Equipment -->
+		<item id="2409" count="1" enchant="5" alternative_id="92272" slot_id="0"/>
+		<item id="2408" count="1" enchant="5" alternative_id="92271" slot_id="1"/>
+		<item id="8687" count="1" alternative_id="92964" slot_id="2"/>
+		<item id="8688" count="1" alternative_id="92965" slot_id="3"/>
+		<item id="8686" count="1" alternative_id="92963" slot_id="4"/>
+	</collection>
+	<collection id="306" tab_id="4" option_id="39622">	<!-- Non-enchanted Bows -->
+		<item id="8684" count="1" alternative_id="92961" slot_id="0"/>
+		<item id="289" count="1" alternative_id="92943" slot_id="1"/>
+		<item id="287" count="1" alternative_id="93429" slot_id="2"/>
+		<item id="286" count="1" alternative_id="93051" slot_id="3"/>
+		<item id="276" count="1" alternative_id="95024" slot_id="4"/>
+		<item id="277" count="1" alternative_id="95025" slot_id="5"/>
+	</collection>
+	<collection id="307" tab_id="2" option_id="39623">	<!-- Dual Swords Expert -->
+		<item id="5706" count="1" alternative_id="92949" slot_id="0"/>
+		<item id="8938" count="1" alternative_id="92966" slot_id="1"/>
+		<item id="79" count="1" alternative_id="93422" slot_id="2"/>
+		<item id="79" count="1" alternative_id="93422" slot_id="3"/>
+		<item id="79" count="1" alternative_id="93422" slot_id="4"/>
+		<item id="80" count="1" alternative_id="92930" slot_id="5"/>
+	</collection>
+	<collection id="308" tab_id="3" option_id="39624">	<!-- Ant Nest's Memento -->
+		<item id="296" count="1" enchant="9" alternative_id="95039" slot_id="0"/>
+		<item id="379" count="1" enchant="5" alternative_id="95071" slot_id="1"/>
+		<item id="352" count="1" enchant="5" alternative_id="95064" slot_id="2"/>
+		<item id="2378" count="1" enchant="5" alternative_id="95143" slot_id="3"/>
+		<item id="2424" count="1" enchant="5" alternative_id="95152" slot_id="4"/>
+	</collection>
+	<collection id="309" tab_id="2" option_id="39625">	<!-- Full Plate Boots' Hassle -->
+		<item id="2438" count="1" enchant="8" alternative_id="93640" slot_id="0"/>
+		<item id="2438" count="1" enchant="7" alternative_id="93640" slot_id="1"/>
+		<item id="2438" count="1" enchant="6" alternative_id="93640" slot_id="2"/>
+		<item id="2438" count="1" enchant="5" alternative_id="93640" slot_id="3"/>
+		<item id="2438" count="1" enchant="4" alternative_id="93640" slot_id="4"/>
+		<item id="2438" count="1" alternative_id="93640" slot_id="5"/>
+	</collection>
+	<collection id="310" tab_id="2" option_id="39626">	<!-- Divine Boots' Hassle -->
+		<item id="603" count="1" enchant="8" alternative_id="95117" slot_id="0"/>
+		<item id="603" count="1" enchant="7" alternative_id="95117" slot_id="1"/>
+		<item id="603" count="1" enchant="6" alternative_id="95117" slot_id="2"/>
+		<item id="603" count="1" enchant="5" alternative_id="95117" slot_id="3"/>
+		<item id="603" count="1" enchant="4" alternative_id="95117" slot_id="4"/>
+		<item id="603" count="1" alternative_id="95117" slot_id="5"/>
+	</collection>
+	<collection id="311" tab_id="2" option_id="39627">	<!-- Elven Equipment -->
+		<item id="276" count="1" enchant="9" alternative_id="95024" slot_id="0"/>
+		<item id="130" count="1" enchant="9" alternative_id="94942" slot_id="1"/>
+		<item id="466" count="1" enchant="5" alternative_id="95104" slot_id="2"/>
+		<item id="2401" count="1" enchant="5" alternative_id="95146" slot_id="3"/>
+		<item id="2450" count="1" enchant="5" alternative_id="95168" slot_id="4"/>
+	</collection>
+	<collection id="312" tab_id="3" option_id="39628">	<!-- Cheap Blunt Weapons -->
+		<item id="153" count="1" slot_id="0"/>
+		<item id="747" count="1" slot_id="1"/>
+		<item id="154" count="1" slot_id="2"/>
+		<item id="2501" count="1" slot_id="3"/>
+		<item id="9" count="1" slot_id="4"/>
+	</collection>
+	<collection id="313" tab_id="3" option_id="39629">	<!-- Cheap Blades -->
+		<item id="989" count="1" slot_id="0"/>
+		<item id="975" count="1" slot_id="1"/>
+		<item id="66" count="1" slot_id="2"/>
+		<item id="1333" count="1" slot_id="3"/>
+		<item id="217" count="1" slot_id="4"/>
+		<item id="309" count="1" slot_id="5"/>
+	</collection>
+	<collection id="314" tab_id="2" option_id="39630">	<!-- High-grade A-grade Weapon Set I -->
+		<item id="8681" count="1" enchant="5" alternative_id="92958" slot_id="0"/>
+		<item id="8683" count="1" enchant="5" alternative_id="92960" slot_id="1"/>
+		<item id="8679" count="1" enchant="5" alternative_id="92956" slot_id="2"/>
+		<item id="8685" count="1" enchant="5" alternative_id="92962" slot_id="3"/>
+	</collection>
+	<collection id="315" tab_id="4" option_id="39631">	<!-- High-grade A-grade Weapon Set II -->
+		<item id="8680" count="1" enchant="5" alternative_id="92957" slot_id="0"/>
+		<item id="8678" count="1" enchant="5" alternative_id="92955" slot_id="1"/>
+		<item id="8682" count="1" enchant="5" alternative_id="92959" slot_id="2"/>
+		<item id="8686" count="1" enchant="5" alternative_id="92963" slot_id="3"/>
+	</collection>
+	<collection id="316" tab_id="4" option_id="39632">	<!-- High-grade A-grade Weapon Set III -->
+		<item id="8687" count="1" enchant="5" alternative_id="92964" slot_id="0"/>
+		<item id="94886" count="1" enchant="5" alternative_id="95420" slot_id="1"/>
+		<item id="8684" count="1" enchant="5" alternative_id="92961" slot_id="2"/>
+		<item id="8688" count="1" enchant="5" alternative_id="92965" slot_id="3"/>
+	</collection>
+	<collection id="317" tab_id="3" option_id="39633">	<!-- Waste Sorting -->
+		<item id="499" count="1" enchant="5" alternative_id="95113" slot_id="0"/>
+		<item id="2468" count="1" enchant="5" alternative_id="95179" slot_id="1"/>
+		<item id="1127" count="1" enchant="5" alternative_id="95138" slot_id="2"/>
+		<item id="2437" count="1" enchant="5" alternative_id="93644" slot_id="3"/>
+		<item id="2435" count="1" enchant="5" alternative_id="95162" slot_id="4"/>
+		<item id="2463" count="1" enchant="5" alternative_id="95178" slot_id="5"/>
+	</collection>
+	<collection id="318" tab_id="4" option_id="39634">	<!-- Sturdy Shields -->
+		<item id="2498" count="1" enchant="5" alternative_id="92276" slot_id="0"/>
+		<item id="641" count="1" enchant="5" alternative_id="92260" slot_id="1"/>
+		<item id="110" count="1" enchant="5" alternative_id="94934" slot_id="2"/>
+		<item id="673" count="1" enchant="5" alternative_id="95132" slot_id="3"/>
+		<item id="633" count="1" enchant="5" alternative_id="95131" slot_id="4"/>
+		<item id="103" count="1" enchant="5" alternative_id="94932" slot_id="5"/>
+	</collection>
+	<collection id="319" tab_id="4" option_id="39635">	<!-- Tatters -->
+		<item id="151" count="1" enchant="5" alternative_id="92934" slot_id="0"/>
+		<item id="439" count="1" enchant="5" alternative_id="93646" slot_id="1"/>
+		<item id="471" count="1" enchant="5" alternative_id="93647" slot_id="2"/>
+		<item id="2454" count="1" enchant="5" alternative_id="93649" slot_id="3"/>
+		<item id="2430" count="1" enchant="5" alternative_id="93648" slot_id="4"/>
+	</collection>
+	<collection id="320" tab_id="2" option_id="39636">	<!-- Equipment of Seal -->
+		<item id="2433" count="1" enchant="7" alternative_id="95160" slot_id="0"/>
+		<item id="440" count="1" enchant="5" alternative_id="95100" slot_id="1"/>
+		<item id="2457" count="1" enchant="5" alternative_id="95174" slot_id="2"/>
+		<item id="854" count="1" enchant="5" alternative_id="95375" slot_id="3"/>
+		<item id="886" count="1" enchant="5" alternative_id="95389" slot_id="4"/>
+		<item id="119" count="1" enchant="5" alternative_id="95368" slot_id="5"/>
+	</collection>
+	<collection id="321" tab_id="4" option_id="39637">	<!-- Dark Soul -->
+		<item id="236" count="1" enchant="4" alternative_id="92939" slot_id="0"/>
+		<item id="2385" count="1" enchant="4" alternative_id="92263" slot_id="1"/>
+		<item id="2389" count="1" enchant="4" alternative_id="92264" slot_id="2"/>
+		<item id="90471" count="1" enchant="4" alternative_id="92305" slot_id="3"/>
+	</collection>
+	<collection id="322" tab_id="4" option_id="39638">	<!-- Dark Dragon -->
+		<item id="270" count="1" enchant="4" alternative_id="92941" slot_id="0"/>
+		<item id="365" count="1" enchant="4" alternative_id="92255" slot_id="1"/>
+		<item id="388" count="1" enchant="4" alternative_id="92257" slot_id="2"/>
+		<item id="90470" count="1" enchant="4" alternative_id="92304" slot_id="3"/>
+	</collection>
+	<collection id="323" tab_id="3" option_id="39639">	<!-- Dark Tree of Life -->
+		<item id="213" count="1" enchant="5" alternative_id="92937" slot_id="0"/>
+		<item id="2407" count="1" enchant="5" alternative_id="92270" slot_id="1"/>
+		<item id="90472" count="1" enchant="5" alternative_id="92306" slot_id="2"/>
+	</collection>
+	<collection id="324" tab_id="2" option_id="39640">	<!-- Tallum Collection I -->
+		<item id="305" count="1" enchant="5" alternative_id="92944" slot_id="0"/>
+		<item id="90468" count="1" enchant="5" alternative_id="92302" slot_id="1"/>
+		<item id="5781" count="1" enchant="5" alternative_id="92293" slot_id="2"/>
+		<item id="2393" count="1" enchant="5" alternative_id="92265" slot_id="3"/>
+		<item id="5769" count="1" enchant="5" alternative_id="92281" slot_id="4"/>
+	</collection>
+	<collection id="325" tab_id="4" option_id="39641">	<!-- Double Strike -->
+		<item id="91887" count="1" enchant="5" alternative_id="92967" slot_id="0"/>
+		<item id="91902" count="1" enchant="5" alternative_id="92970" slot_id="1"/>
+		<item id="2402" count="1" enchant="5" alternative_id="93516" slot_id="2"/>
+		<item id="2397" count="1" enchant="5" alternative_id="93513" slot_id="3"/>
+		<item id="5722" count="1" alternative_id="93529" slot_id="4"/>
+		<item id="5724" count="1" alternative_id="93531" slot_id="5"/>
+	</collection>
+	<collection id="326" tab_id="4" option_id="39642">	<!-- Tallum Collection II -->
+		<item id="8938" count="1" enchant="5" alternative_id="92966" slot_id="0"/>
+		<item id="90468" count="1" alternative_id="92302" slot_id="1"/>
+		<item id="90469" count="1" alternative_id="92303" slot_id="2"/>
+		<item id="90467" count="1" alternative_id="92301" slot_id="3"/>
+	</collection>
+	<collection id="327" tab_id="2" option_id="39643">	<!-- Zubei's Boots and Gauntlets -->
+		<item id="5726" count="1" enchant="5" alternative_id="93532" slot_id="0"/>
+		<item id="5728" count="1" enchant="5" alternative_id="93534" slot_id="1"/>
+		<item id="5727" count="1" enchant="5" alternative_id="93533" slot_id="2"/>
+		<item id="5710" count="1" enchant="3" alternative_id="93520" slot_id="3"/>
+		<item id="5712" count="1" enchant="3" alternative_id="93522" slot_id="4"/>
+		<item id="5711" count="1" enchant="3" alternative_id="93521" slot_id="5"/>
+	</collection>
+	<collection id="328" tab_id="3" option_id="39644">	<!-- Avadon Boots and Gloves -->
+		<item id="5730" count="1" enchant="5" alternative_id="93535" slot_id="0"/>
+		<item id="5732" count="1" enchant="5" alternative_id="93537" slot_id="1"/>
+		<item id="5731" count="1" enchant="5" alternative_id="93536" slot_id="2"/>
+		<item id="5714" count="1" enchant="3" alternative_id="93523" slot_id="3"/>
+		<item id="5716" count="1" enchant="3" alternative_id="93525" slot_id="4"/>
+		<item id="5715" count="1" enchant="3" alternative_id="93524" slot_id="5"/>
+	</collection>
+	<collection id="329" tab_id="6" option_id="39645">	<!-- Chain Mail Equipment -->
+		<item id="2495" count="1" enchant="5" alternative_id="95182" slot_id="0"/>
+		<item id="93085" count="1" enchant="5" alternative_id="93111" slot_id="1"/>
+		<item id="2429" count="1" enchant="5" alternative_id="95157" slot_id="2"/>
+		<item id="354" count="1" enchant="5" alternative_id="95066" slot_id="3"/>
+		<item id="2453" count="1" enchant="5" alternative_id="95171" slot_id="4"/>
+		<item id="381" count="1" enchant="5" alternative_id="95073" slot_id="5"/>
+	</collection>
+	<collection id="330" tab_id="6" option_id="39646">	<!-- Dwarven Chain Mail Equipment -->
+		<item id="2496" count="1" enchant="5" alternative_id="95183" slot_id="0"/>
+		<item id="355" count="1" enchant="5" alternative_id="95067" slot_id="1"/>
+		<item id="382" count="1" enchant="5" alternative_id="95074" slot_id="2"/>
+		<item id="2456" count="1" enchant="5" alternative_id="95173" slot_id="3"/>
+		<item id="2432" count="1" enchant="5" alternative_id="95159" slot_id="4"/>
+	</collection>
+	<collection id="331" tab_id="2" option_id="39647">	<!-- Silver Steel -->
+		<item id="225" count="1" enchant="12" alternative_id="94999" slot_id="0"/>
+		<item id="2452" count="1" enchant="5" alternative_id="95170" slot_id="1"/>
+		<item id="397" count="1" enchant="5" alternative_id="95081" slot_id="2"/>
+		<item id="62" count="1" enchant="5" alternative_id="94906" slot_id="3"/>
+		<item id="2387" count="1" enchant="5" alternative_id="95144" slot_id="4"/>
+	</collection>
+	<collection id="332" tab_id="3" option_id="39648">	<!-- Doom vs Zubei -->
+		<item id="2392" count="1" enchant="5" alternative_id="93512" slot_id="0"/>
+		<item id="5723" count="1" enchant="5" alternative_id="93530" slot_id="1"/>
+		<item id="383" count="1" enchant="5" alternative_id="93503" slot_id="2"/>
+		<item id="2384" count="1" enchant="5" alternative_id="93508" slot_id="3"/>
+		<item id="2388" count="1" enchant="5" alternative_id="93509" slot_id="4"/>
+	</collection>
+	<collection id="333" tab_id="4" option_id="39649">	<!-- Shattered Jewel -->
+		<item id="91885" count="1" enchant="9" alternative_id="93434" slot_id="0"/>
+		<item id="131" count="1" enchant="7" alternative_id="94943" slot_id="1"/>
+		<item id="883" count="1" enchant="5" alternative_id="95386" slot_id="2"/>
+		<item id="915" count="1" enchant="5" alternative_id="95402" slot_id="3"/>
+	</collection>
+	<collection id="334" tab_id="3" option_id="39650">	<!-- Immortal's Gaze -->
+		<item id="148" count="1" enchant="9" alternative_id="94951" slot_id="0"/>
+		<item id="7882" count="1" enchant="7" alternative_id="95300" slot_id="1"/>
+		<item id="281" count="1" enchant="7" alternative_id="95029" slot_id="2"/>
+		<item id="895" count="1" enchant="5" alternative_id="95395" slot_id="3"/>
+		<item id="895" count="1" alternative_id="95395" slot_id="4"/>
+	</collection>
+	<collection id="335" tab_id="6" option_id="39651">	<!-- Black Scorpion -->
+		<item id="95" count="1" enchant="7" alternative_id="94929" slot_id="0"/>
+		<item id="197" count="1" enchant="7" alternative_id="94985" slot_id="1"/>
+		<item id="301" count="1" enchant="7" alternative_id="95043" slot_id="2"/>
+		<item id="864" count="1" enchant="5" alternative_id="95380" slot_id="3"/>
+		<item id="864" count="1" alternative_id="95380" slot_id="4"/>
+	</collection>
+	<collection id="336" tab_id="4" option_id="39652">	<!-- Heavenly Splendor -->
+		<item id="8680" count="1" enchant="5" alternative_id="92957" slot_id="0"/>
+		<item id="164" count="1" enchant="5" alternative_id="92935" slot_id="1"/>
+		<item id="90476" count="1" enchant="5" alternative_id="92310" slot_id="2"/>
+		<item id="5786" count="1" enchant="5" alternative_id="92298" slot_id="3"/>
+		<item id="5774" count="1" enchant="5" alternative_id="92286" slot_id="4"/>
+	</collection>
+	<collection id="337" tab_id="2" option_id="39653">	<!-- Bloody Nightmare -->
+		<item id="235" count="1" enchant="5" alternative_id="92938" slot_id="0"/>
+		<item id="269" count="1" enchant="5" alternative_id="92940" slot_id="1"/>
+		<item id="90474" count="1" enchant="5" alternative_id="92308" slot_id="2"/>
+		<item id="5784" count="1" enchant="5" alternative_id="92296" slot_id="3"/>
+		<item id="5772" count="1" enchant="5" alternative_id="92284" slot_id="4"/>
+	</collection>
+	<collection id="338" tab_id="4" option_id="39654">	<!-- One-handed Swords -->
+		<item id="2500" count="1" enchant="6" alternative_id="92945" slot_id="0"/>
+		<item id="142" count="1" enchant="7" alternative_id="94947" slot_id="1"/>
+		<item id="132" count="1" enchant="7" alternative_id="94944" slot_id="2"/>
+		<item id="77" count="1" enchant="7" alternative_id="94917" slot_id="3"/>
+		<item id="126" count="1" enchant="7" alternative_id="94938" slot_id="4"/>
+		<item id="123" count="1" enchant="7" alternative_id="94935" slot_id="5"/>
+	</collection>
+	<collection id="339" tab_id="4" option_id="39655">	<!-- Daggers -->
+		<item id="8682" count="1" enchant="6" alternative_id="92959" slot_id="0"/>
+		<item id="234" count="1" enchant="7" alternative_id="93427" slot_id="1"/>
+		<item id="231" count="1" enchant="7" alternative_id="95004" slot_id="2"/>
+		<item id="228" count="1" enchant="7" alternative_id="93050" slot_id="3"/>
+		<item id="239" count="1" enchant="7" alternative_id="95008" slot_id="4"/>
+		<item id="241" count="1" enchant="7" alternative_id="95010" slot_id="5"/>
+	</collection>
+	<collection id="340" tab_id="2" option_id="39656">	<!-- Ring of Insolence's Band -->
+		<item id="91952" count="1" enchant="8" alternative_id="95718" slot_id="0"/>
+		<item id="91952" count="1" enchant="6" alternative_id="95718" slot_id="1"/>
+		<item id="91952" count="1" enchant="5" alternative_id="95718" slot_id="2"/>
+		<item id="91952" count="1" enchant="4" alternative_id="95718" slot_id="3"/>
+		<item id="91952" count="1" alternative_id="95718" slot_id="4"/>
+	</collection>
+	<collection id="341" tab_id="2" option_id="39657">	<!-- Dragon Valley's Earring's Band -->
+		<item id="91953" count="1" enchant="8" alternative_id="95719" slot_id="0"/>
+		<item id="91953" count="1" enchant="6" alternative_id="95719" slot_id="1"/>
+		<item id="91953" count="1" enchant="5" alternative_id="95719" slot_id="2"/>
+		<item id="91953" count="1" enchant="4" alternative_id="95719" slot_id="3"/>
+		<item id="91953" count="1" alternative_id="95719" slot_id="4"/>
+	</collection>
+	<collection id="342" tab_id="2" option_id="39663">	<!-- Cardinal -->
+		<item id="96038" count="1" alternative_id="96052" slot_id="0"/>
+		<item id="96037" count="1" alternative_id="96051" slot_id="1"/>
+		<item id="96039" count="1" alternative_id="96053" slot_id="2"/>
+	</collection>
+	<collection id="343" tab_id="2" option_id="39664">	<!-- Eva's Saint -->
+		<item id="96041" count="1" alternative_id="96055" slot_id="0"/>
+		<item id="96040" count="1" alternative_id="96054" slot_id="1"/>
+		<item id="96042" count="1" alternative_id="96056" slot_id="2"/>
+	</collection>
+	<collection id="344" tab_id="1" option_id="39665">	<!-- Shillien Saint -->
+		<item id="96044" count="1" alternative_id="96058" slot_id="0"/>
+		<item id="96043" count="1" alternative_id="96057" slot_id="1"/>
+		<item id="96045" count="1" alternative_id="96059" slot_id="2"/>
+	</collection>
+	<collection id="345" tab_id="2" option_id="39666">	<!-- Collector of Mid-grade Purge Equipment I -->
+		<item id="95436" count="1" enchant="9" alternative_id="95450" slot_id="0"/>
+		<item id="95433" count="1" enchant="9" alternative_id="95447" slot_id="1"/>
+		<item id="95435" count="1" enchant="9" alternative_id="95449" slot_id="2"/>
+		<item id="95434" count="1" enchant="9" alternative_id="95448" slot_id="3"/>
+	</collection>
+	<collection id="346" tab_id="6" option_id="39667">	<!-- Collector of Mid-grade Purge Equipment II -->
+		<item id="95445" count="1" enchant="9" alternative_id="95459" slot_id="0"/>
+		<item id="95443" count="1" enchant="9" alternative_id="95457" slot_id="1"/>
+		<item id="95437" count="1" enchant="9" alternative_id="95451" slot_id="2"/>
+		<item id="95440" count="1" enchant="9" alternative_id="95454" slot_id="3"/>
+		<item id="95432" count="1" enchant="9" alternative_id="95446" slot_id="4"/>
+	</collection>
+	<collection id="347" tab_id="6" option_id="39668">	<!-- Collector of Mid-grade Purge Equipment III -->
+		<item id="95444" count="1" enchant="9" alternative_id="95458" slot_id="0"/>
+		<item id="95442" count="1" enchant="9" alternative_id="95456" slot_id="1"/>
+		<item id="95441" count="1" enchant="9" alternative_id="95455" slot_id="2"/>
+		<item id="95439" count="1" enchant="9" alternative_id="95453" slot_id="3"/>
+		<item id="95438" count="1" enchant="9" alternative_id="95452" slot_id="4"/>
+	</collection>
+	<collection id="348" tab_id="2" option_id="39669">	<!-- Collector of High-grade Purge Equipment I -->
+		<item id="95436" count="1" enchant="12" alternative_id="95450" slot_id="0"/>
+		<item id="95433" count="1" enchant="12" alternative_id="95447" slot_id="1"/>
+		<item id="95435" count="1" enchant="12" alternative_id="95449" slot_id="2"/>
+		<item id="95434" count="1" enchant="12" alternative_id="95448" slot_id="3"/>
+	</collection>
+	<collection id="349" tab_id="2" option_id="39670">	<!-- Collector of High-grade Purge Equipment II -->
+		<item id="95445" count="1" enchant="12" alternative_id="95459" slot_id="0"/>
+		<item id="95443" count="1" enchant="12" alternative_id="95457" slot_id="1"/>
+		<item id="95437" count="1" enchant="12" alternative_id="95451" slot_id="2"/>
+		<item id="95440" count="1" enchant="12" alternative_id="95454" slot_id="3"/>
+		<item id="95432" count="1" enchant="12" alternative_id="95446" slot_id="4"/>
+	</collection>
+	<collection id="350" tab_id="2" option_id="39671">	<!-- Collector of High-grade Purge Equipment III -->
+		<item id="95444" count="1" enchant="12" alternative_id="95458" slot_id="0"/>
+		<item id="95442" count="1" enchant="12" alternative_id="95456" slot_id="1"/>
+		<item id="95441" count="1" enchant="12" alternative_id="95455" slot_id="2"/>
+		<item id="95439" count="1" enchant="12" alternative_id="95453" slot_id="3"/>
+		<item id="95438" count="1" enchant="12" alternative_id="95452" slot_id="4"/>
+	</collection>
+	<collection id="351" tab_id="2" option_id="39672">	<!-- Enhanced Weapons - Cruma Tower -->
+		<item id="95432" count="1" enchant="12" alternative_id="95446" slot_id="0"/>
+		<item id="95433" count="1" enchant="12" alternative_id="95447" slot_id="1"/>
+	</collection>
+	<collection id="352" tab_id="2" option_id="39673">	<!-- Enhanced Weapons - Silent Valley -->
+		<item id="95434" count="1" enchant="12" alternative_id="95448" slot_id="0"/>
+		<item id="95435" count="1" enchant="12" alternative_id="95449" slot_id="1"/>
+	</collection>
+	<collection id="353" tab_id="2" option_id="39674">	<!-- Enhanced Weapons - Plains of the Lizardmen -->
+		<item id="95438" count="1" enchant="12" alternative_id="95452" slot_id="0"/>
+		<item id="95439" count="1" enchant="12" alternative_id="95453" slot_id="1"/>
+	</collection>
+	<collection id="354" tab_id="2" option_id="39675">	<!-- Enhanced Weapons - Tower of Insolence -->
+		<item id="95436" count="1" enchant="12" alternative_id="95450" slot_id="0"/>
+		<item id="95437" count="1" enchant="12" alternative_id="95451" slot_id="1"/>
+	</collection>
+	<collection id="355" tab_id="2" option_id="39676">	<!-- Enhanced Weapons - Dragon Valley -->
+		<item id="95440" count="1" enchant="12" alternative_id="95454" slot_id="0"/>
+		<item id="95441" count="1" enchant="12" alternative_id="95455" slot_id="1"/>
+	</collection>
+	<collection id="356" tab_id="2" option_id="39677">	<!-- At the Origins -->
+		<item id="95438" count="1" enchant="9" alternative_id="95452" slot_id="0"/>
+		<item id="95439" count="1" enchant="9" alternative_id="95453" slot_id="1"/>
+		<item id="95434" count="1" enchant="9" alternative_id="95448" slot_id="2"/>
+		<item id="95435" count="1" enchant="9" alternative_id="95449" slot_id="3"/>
+	</collection>
+	<collection id="357" tab_id="2" option_id="39678">	<!-- +3 Daily Equipment Collection -->
+		<item id="93301" count="1" enchant="3" slot_id="0"/>
+		<item id="92018" count="1" enchant="3" slot_id="1"/>
+		<item id="91862" count="1" enchant="3" slot_id="2"/>
+	</collection>
+	<collection id="358" tab_id="2" option_id="39679">	<!-- +4 Daily Equipment Collection -->
+		<item id="93301" count="1" enchant="4" slot_id="0"/>
+		<item id="92018" count="1" enchant="4" slot_id="1"/>
+		<item id="91862" count="1" enchant="4" slot_id="2"/>
+	</collection>
+	<collection id="359" tab_id="1" option_id="39680">	<!-- +4 Talisman Collection -->
+		<item id="92018" count="1" enchant="4" slot_id="0"/>
+		<item id="91061" count="1" enchant="4" slot_id="1"/>
+		<item id="91745" count="1" enchant="4" slot_id="2"/>
+	</collection>
+	<collection id="360" tab_id="6" option_id="39936">	<!-- Growth Rune Collection III -->
+		<item id="94786" count="1" slot_id="0"/>
+		<item id="94786" count="1" slot_id="1"/>
+	</collection>
+	<collection id="361" tab_id="6" option_id="39937">	<!-- Growth Rune Collection IV -->
+		<item id="94791" count="1" slot_id="0"/>
+		<item id="94791" count="1" slot_id="1"/>
+	</collection>
+	<collection id="362" tab_id="3" option_id="39535">	<!-- Siege Collection III -->
+		<item id="95880" count="1" slot_id="0"/>
+		<item id="95880" count="1" slot_id="1"/>
+	</collection>
+	<collection id="363" tab_id="3" option_id="39536">	<!-- Siege Collection IV -->
+		<item id="95881" count="1" slot_id="0"/>
+		<item id="95881" count="1" slot_id="1"/>
+	</collection>
+	<collection id="364" tab_id="2" option_id="90203">	<!-- Giant's Cave Purge I -->
+		<item id="96720" count="1" alternative_id="96722" slot_id="0"/>
+		<item id="96721" count="1" alternative_id="96723" slot_id="1"/>
+	</collection>
+	<collection id="365" tab_id="4" option_id="90204">	<!-- Giant's Cave Purge II -->
+		<item id="96720" count="1" enchant="9" alternative_id="96722" slot_id="0"/>
+		<item id="96721" count="1" enchant="7" alternative_id="96723" slot_id="1"/>
+		<item id="95481" count="1" slot_id="2"/>
+	</collection>
+	<collection id="368" tab_id="4" option_id="90208">	<!-- Power of Spirits and Guardians -->
+		<item id="94682" count="1" enchant="2" slot_id="0"/>
+		<item id="93298" count="1" slot_id="1"/>
+		<item id="93301" count="1" enchant="6" slot_id="2"/>
+	</collection>
+	<collection id="369" tab_id="4" option_id="90209">	<!-- Power of Spirits and Talismans -->	
+		<item id="94682" count="1" enchant="3" slot_id="0"/>
+		<item id="92018" count="1" enchant="5" slot_id="1"/>
+		<item id="91061" count="1" enchant="5" slot_id="2"/>
+		<item id="92403" count="1" enchant="5" slot_id="3"/>
+	</collection>
+	<collection id="370" tab_id="4" option_id="90210">	<!-- Power of Spirits and Dragons -->
+		<item id="94682" count="1" enchant="4" slot_id="0"/>
+		<item id="94621" count="1" enchant="4" slot_id="1"/>
+		<item id="91862" count="1" enchant="4" slot_id="2"/>
+	</collection>
+	<collection id="371" tab_id="4" option_id="90211">	<!-- Power of Spirits and Agathions -->
+		<item id="94682" count="1" enchant="5" slot_id="0"/>
+		<item id="93128" count="1" enchant="6" slot_id="1"/>
+		<item id="93131" count="1" enchant="6" slot_id="2"/>
+		<item id="93129" count="1" enchant="6" slot_id="3"/>
+		<item id="93130" count="1" enchant="6" slot_id="4"/>
+		<item id="93132" count="1" enchant="6" slot_id="5"/>
+	</collection>
+	<collection id="372" tab_id="1" option_id="90219">	<!-- Goddard Territory Purge I -->
+		<item id="97236" count="1" alternative_id="97237" slot_id="0"/>
+		<item id="97238" count="1" alternative_id="97239" slot_id="1"/>
+	</collection>
+	<collection id="373" tab_id="1" option_id="90220">	<!-- Goddard Territory Purge II -->
+		<item id="97236" count="1" enchant="9" alternative_id="97237" slot_id="0"/>
+		<item id="97238" count="1" enchant="6" alternative_id="97239" slot_id="1"/>
+		<item id="95481" count="5" slot_id="2"/>
+	</collection>
+	<collection id="374" tab_id="1" option_id="90221">	<!-- Half Mask of Glory Collection -->
+		<item id="94755" count="1" slot_id="0"/>
+	</collection>
+</list>

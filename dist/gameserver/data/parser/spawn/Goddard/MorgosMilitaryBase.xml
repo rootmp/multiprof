@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="141639" y="-71721" z="-4208" h="56925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="141850" y="-71768" z="-4200" h="28176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="141870" y="-71657" z="-4200" h="55952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="141694" y="-71704" z="-4208" h="2117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="141790" y="-71475" z="-4200" h="46354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="142968" y="-74788" z="-4144" h="3772" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="142735" y="-75209" z="-4144" h="40961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143466" y="-74921" z="-4144" h="61531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143373" y="-75233" z="-4144" h="18144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143384" y="-74803" z="-4144" h="59171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143081" y="-75440" z="-4144" h="33203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="142974" y="-75233" z="-4144" h="25290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143097" y="-75153" z="-4144" h="59404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143187" y="-75254" z="-4144" h="26401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143267" y="-75262" z="-4144" h="364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143174" y="-75262" z="-4144" h="48666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22451" /> <!-- Morgos' Officer -->
+		<point x="143089" y="-75128" z="-4152" h="49432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="143165" y="-75440" z="-4144" h="3936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="142850" y="-74834" z="-4144" h="57619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="142880" y="-74916" z="-4144" h="3355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="142824" y="-75142" z="-4144" h="18347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="143533" y="-75121" z="-4152" h="44287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="142811" y="-75175" z="-4144" h="27130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143367" y="-75134" z="-4144" h="28745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143471" y="-74978" z="-4144" h="20446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="143540" y="-74993" z="-4152" h="15708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="147569" y="-75061" z="-4312" h="40957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137128" y="-75081" z="-4000" h="57136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137281" y="-75353" z="-4000" h="17260" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136956" y="-75223" z="-4000" h="40124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="137038" y="-75802" z="-4000" h="8245" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="137082" y="-75829" z="-4000" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="136714" y="-75803" z="-4000" h="40869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136827" y="-75789" z="-4000" h="48419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136824" y="-75695" z="-4000" h="16673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136897" y="-75353" z="-4000" h="42354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136872" y="-75536" z="-4000" h="44181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136541" y="-75219" z="-4000" h="38769" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136924" y="-75323" z="-4000" h="47406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136845" y="-75419" z="-4000" h="3081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="136556" y="-75365" z="-4000" h="28484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="137211" y="-75578" z="-4000" h="10791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="137020" y="-75029" z="-4000" h="37605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22451" /> <!-- Morgos' Officer -->
+		<point x="136988" y="-75413" z="-4000" h="16236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="136809" y="-75764" z="-4000" h="34406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="137075" y="-75057" z="-4000" h="31727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="136914" y="-75016" z="-4000" h="8992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="138455" y="-68822" z="-3328" h="12465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="138365" y="-68603" z="-3328" h="15007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="138377" y="-68739" z="-3328" h="60905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="138592" y="-68846" z="-3336" h="22517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="138356" y="-69086" z="-3312" h="43914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="138176" y="-69086" z="-3304" h="61521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="134519" y="-70915" z="-3344" h="1683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="134533" y="-70944" z="-3336" h="10250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="134386" y="-71066" z="-3344" h="50322" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="134353" y="-71491" z="-3312" h="53865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="134702" y="-71096" z="-3320" h="64154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="134672" y="-71381" z="-3304" h="56881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="134613" y="-71203" z="-3328" h="40654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="134392" y="-71371" z="-3336" h="33606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="136712" y="-75673" z="-4000" h="25432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="137638" y="-81016" z="-4640" h="48286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="138017" y="-81398" z="-4656" h="24743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="137705" y="-81385" z="-4656" h="42187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="138115" y="-81426" z="-4672" h="54979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="138144" y="-81289" z="-4656" h="3225" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="138112" y="-81461" z="-4672" h="16492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="137867" y="-81398" z="-4656" h="61088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="137705" y="-81535" z="-4656" h="47498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="139133" y="-78197" z="-4256" h="64154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="139190" y="-78152" z="-4256" h="31268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="138882" y="-78078" z="-4256" h="13518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="138945" y="-77893" z="-4256" h="14093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="138657" y="-78395" z="-4256" h="31044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="139141" y="-78403" z="-4256" h="52784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="138564" y="-78137" z="-4256" h="40086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="139197" y="-78364" z="-4256" h="46730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="135767" y="-82775" z="-4296" h="56732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="135727" y="-82675" z="-4296" h="40089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="135842" y="-82539" z="-4296" h="9729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="135819" y="-82660" z="-4296" h="37908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="135776" y="-82809" z="-4296" h="36095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136115" y="-82229" z="-4296" h="5595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136397" y="-82686" z="-4296" h="48604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136328" y="-82604" z="-4296" h="55556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="135637" y="-82815" z="-4296" h="47604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136099" y="-82227" z="-4296" h="2452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136308" y="-82649" z="-4296" h="54640" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136273" y="-82366" z="-4296" h="62155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136112" y="-82287" z="-4296" h="58642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136264" y="-82637" z="-4296" h="3895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136330" y="-82672" z="-4296" h="9396" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136178" y="-82504" z="-4296" h="26113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136233" y="-82268" z="-4296" h="55286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136245" y="-82988" z="-4296" h="43342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136304" y="-82806" z="-4296" h="61352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136218" y="-82568" z="-4296" h="46951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22451" /> <!-- Morgos' Officer -->
+		<point x="135963" y="-82691" z="-4296" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="138535" y="-84024" z="-4608" h="48989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="138421" y="-83765" z="-4592" h="63511" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="138392" y="-84094" z="-4600" h="17787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="138701" y="-83871" z="-4600" h="13606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="138412" y="-83798" z="-4592" h="8191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="138807" y="-83764" z="-4592" h="33882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="138099" y="-84263" z="-4608" h="30654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="138541" y="-84014" z="-4608" h="35042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="136963" y="-87070" z="-4144" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="136716" y="-86495" z="-4128" h="17974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="137055" y="-87555" z="-4136" h="60311" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="137091" y="-87664" z="-4136" h="51463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="137271" y="-87161" z="-4152" h="55846" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="136936" y="-86833" z="-4152" h="18534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="137246" y="-87171" z="-4136" h="17409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="137130" y="-89881" z="-3728" h="6323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136873" y="-89973" z="-3728" h="8458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136782" y="-90197" z="-3728" h="51529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="137269" y="-89972" z="-3728" h="3574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137224" y="-90185" z="-3728" h="17394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137114" y="-89888" z="-3728" h="33492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="137188" y="-89996" z="-3728" h="46361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136971" y="-90381" z="-3728" h="38598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="136865" y="-90531" z="-3728" h="32827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137037" y="-90295" z="-3728" h="41477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137051" y="-90339" z="-3728" h="53871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137032" y="-90128" z="-3728" h="21216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137103" y="-90716" z="-3728" h="5208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="136865" y="-90331" z="-3728" h="29126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="137475" y="-90459" z="-3728" h="25002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137114" y="-90241" z="-3728" h="31029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="137444" y="-89944" z="-3728" h="60919" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="137713" y="-90331" z="-3728" h="44584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="137523" y="-90609" z="-3728" h="4672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="137648" y="-90300" z="-3728" h="9063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22451" /> <!-- Morgos' Officer -->
+		<point x="137233" y="-90270" z="-3728" h="7937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="148533" y="-88478" z="-4936" h="11644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22461" /> <!-- Morgos' Training Mentor -->
+		<point x="149168" y="-88375" z="-4936" h="11764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="148319" y="-88388" z="-4936" h="11620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="148962" y="-88655" z="-4936" h="11920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="148651" y="-88161" z="-4936" h="59880" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149441" y="-88081" z="-4936" h="46020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149395" y="-88834" z="-4936" h="12532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="148439" y="-88081" z="-4936" h="62680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149178" y="-88746" z="-4936" h="12340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="148771" y="-88575" z="-4936" h="10268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="148582" y="-87727" z="-4936" h="44976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="148798" y="-87817" z="-4936" h="44284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149227" y="-87993" z="-4936" h="45348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149036" y="-87914" z="-4936" h="45456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="149500" y="-85144" z="-5080" h="52716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="149315" y="-85616" z="-5080" h="4564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="149408" y="-85391" z="-5080" h="61524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149732" y="-88611" z="-4936" h="27900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149873" y="-88260" z="-4936" h="44480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149657" y="-88170" z="-4936" h="44812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149610" y="-88923" z="-4936" h="10896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="149517" y="-88520" z="-4936" h="28780" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="150693" y="-85919" z="-5080" h="8582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="150600" y="-86148" z="-5080" h="19596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="150389" y="-86063" z="-5080" h="10672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="151747" y="-83792" z="-5272" h="12312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="150267" y="-85740" z="-5080" h="62300" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="150571" y="-85599" z="-5080" h="10442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="150781" y="-85689" z="-5080" h="8152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="150173" y="-85969" z="-5080" h="4684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22460" /> <!-- Morgos' Sergeant -->
+		<point x="150357" y="-85509" z="-5080" h="53080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22461" /> <!-- Morgos' Training Mentor -->
+		<point x="150483" y="-85828" z="-5080" h="12604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="149740" y="-85800" z="-5080" h="17360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="149712" y="-85243" z="-5080" h="45500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="149837" y="-85560" z="-5080" h="29456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="149519" y="-85704" z="-5080" h="11584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22461" /> <!-- Morgos' Training Mentor -->
+		<point x="149617" y="-85472" z="-5080" h="12480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="149930" y="-85346" z="-5080" h="37172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="150919" y="-83456" z="-5272" h="13326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="151470" y="-83685" z="-5272" h="9109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="151219" y="-83577" z="-5272" h="10990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="150817" y="-82883" z="-5264" h="15447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="150642" y="-83344" z="-5272" h="15784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="151391" y="-83119" z="-5264" h="11340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="150530" y="-82750" z="-5264" h="17897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="150357" y="-83222" z="-5272" h="19601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="151094" y="-82989" z="-5264" h="11856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22461" /> <!-- Morgos' Training Mentor -->
+		<point x="151158" y="-83283" z="-5264" h="12564" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="151919" y="-83327" z="-5264" h="8031" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22459" /> <!-- Morgos' Recruit -->
+		<point x="151633" y="-83221" z="-5264" h="12016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="154730" y="-79845" z="-4688" h="4298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="154780" y="-79834" z="-4688" h="8878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="154201" y="-79481" z="-4688" h="4889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="154846" y="-79707" z="-4688" h="47577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="154689" y="-79501" z="-4688" h="5354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="154459" y="-79693" z="-4688" h="9903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="154701" y="-79447" z="-4688" h="2039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="154401" y="-79461" z="-4688" h="12630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="154709" y="-79660" z="-4688" h="50828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="154838" y="-79433" z="-4688" h="22732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="154403" y="-79139" z="-4680" h="22363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="154953" y="-79826" z="-4688" h="5761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="154557" y="-79229" z="-4688" h="61641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="154672" y="-79129" z="-4688" h="53707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="154911" y="-79636" z="-4688" h="51417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="154878" y="-79414" z="-4688" h="52090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="154931" y="-79384" z="-4688" h="22723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="154126" y="-79834" z="-4688" h="59986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="154473" y="-79147" z="-4680" h="16839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="154895" y="-79479" z="-4688" h="52624" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="154851" y="-79816" z="-4688" h="8007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22451" /> <!-- Morgos' Officer -->
+		<point x="154537" y="-79593" z="-4688" h="26456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="153405" y="-76511" z="-4408" h="44930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="153435" y="-76411" z="-4408" h="16962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="153230" y="-76561" z="-4408" h="25675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="153317" y="-76598" z="-4408" h="10680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="153342" y="-76478" z="-4408" h="14353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="153122" y="-76660" z="-4408" h="22238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="153099" y="-76759" z="-4400" h="30815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="153221" y="-76820" z="-4400" h="8018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="153081" y="-76898" z="-4400" h="35057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="152903" y="-76570" z="-4400" h="11817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="153426" y="-76994" z="-4408" h="39275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="153267" y="-76581" z="-4408" h="20565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="153691" y="-76765" z="-4400" h="8915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22455" /> <!-- Morgos' Sniper -->
+		<point x="153399" y="-76844" z="-4400" h="16996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22455" /> <!-- Morgos' Sniper -->
+		<point x="153643" y="-76291" z="-4400" h="12484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22455" /> <!-- Morgos' Sniper -->
+		<point x="153250" y="-76911" z="-4400" h="6551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22451" /> <!-- Morgos' Officer -->
+		<point x="153340" y="-76508" z="-4408" h="47732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="153064" y="-76687" z="-4400" h="22155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="153208" y="-76047" z="-4400" h="7444" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="153009" y="-76741" z="-4400" h="47791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="153516" y="-76869" z="-4400" h="60230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="153128" y="-76212" z="-4400" h="62692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="153473" y="-76063" z="-4400" h="3355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="153537" y="-76184" z="-4400" h="52343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="153747" y="-76670" z="-4408" h="47284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="153543" y="-76342" z="-4400" h="60092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="153636" y="-76632" z="-4400" h="11206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="148712" y="-77283" z="-4640" h="48909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="148485" y="-76815" z="-4640" h="42570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="149278" y="-77254" z="-4640" h="35847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="148913" y="-77276" z="-4640" h="9829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="149167" y="-76595" z="-4640" h="35049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="149177" y="-76920" z="-4640" h="5785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="148916" y="-76748" z="-4640" h="47183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="148779" y="-76962" z="-4640" h="41165" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="148966" y="-77033" z="-4640" h="3685" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="148747" y="-76863" z="-4640" h="30736" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="148988" y="-76708" z="-4640" h="29488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22450" /> <!-- Morgos' Shaman -->
+		<point x="149334" y="-77037" z="-4640" h="36469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="148599" y="-77090" z="-4640" h="15949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="149342" y="-76853" z="-4640" h="10904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="148958" y="-76579" z="-4640" h="49020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22449" /> <!-- Morgos' Thrower -->
+		<point x="148995" y="-76694" z="-4640" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="148604" y="-76925" z="-4640" h="6371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="148721" y="-76770" z="-4640" h="56099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22447" /> <!-- Morgos' Footman -->
+		<point x="148662" y="-77110" z="-4640" h="52878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22448" /> <!-- Morgos' Shield Bearer -->
+		<point x="148956" y="-76799" z="-4640" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22451" /> <!-- Morgos' Officer -->
+		<point x="148973" y="-76972" z="-4640" h="48700" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="147761" y="-75162" z="-4312" h="3968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="147984" y="-75235" z="-4312" h="16366" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="147933" y="-75310" z="-4312" h="44787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="147587" y="-74921" z="-4312" h="14820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="147523" y="-75090" z="-4312" h="27431" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="147574" y="-75020" z="-4312" h="26330" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="147683" y="-75418" z="-4296" h="42258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="147329" y="-75209" z="-4312" h="34971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="152878" y="-72197" z="-3872" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="152838" y="-72237" z="-3872" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="152928" y="-72797" z="-3872" h="26201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="152808" y="-72197" z="-3872" h="51403" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="152768" y="-72237" z="-3872" h="34141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="152928" y="-72677" z="-3872" h="9399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="152288" y="-72477" z="-3872" h="32858" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="152528" y="-72277" z="-3872" h="17669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22465" /> <!-- Bloodhound -->
+		<point x="144172" y="-78070" z="-4648" h="50045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22464" /> <!-- Morgos' Commando -->
+		<point x="144022" y="-78070" z="-4632" h="23122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="144245" y="-78276" z="-4632" h="42029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="144648" y="-77955" z="-4640" h="65512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22462" /> <!-- Morgos' Sentry -->
+		<point x="144330" y="-78170" z="-4648" h="22535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22463" /> <!-- Morgos' Elite Guard -->
+		<point x="144505" y="-78080" z="-4640" h="45487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="146035" y="-81770" z="-5128" h="22101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22456" /> <!-- Morgos' Wizard -->
+		<point x="145956" y="-81347" z="-5128" h="35730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="145396" y="-81634" z="-5128" h="40401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="146036" y="-81476" z="-5128" h="33085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="146163" y="-81804" z="-5128" h="57626" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22456" /> <!-- Morgos' Wizard -->
+		<point x="145312" y="-81773" z="-5128" h="38485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22456" /> <!-- Morgos' Wizard -->
+		<point x="145707" y="-81206" z="-5128" h="26228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145597" y="-81611" z="-5128" h="19317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145690" y="-81610" z="-5128" h="37190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145609" y="-81569" z="-5128" h="26032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145729" y="-81572" z="-5128" h="37179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145715" y="-81748" z="-5128" h="324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22457" /> <!-- Morgos' Commander -->
+		<point x="145743" y="-81623" z="-5128" h="61116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="145961" y="-81795" z="-5128" h="10747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="146167" y="-81539" z="-5128" h="3456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22456" /> <!-- Morgos' Wizard -->
+		<point x="145372" y="-81724" z="-5128" h="27906" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="145494" y="-81887" z="-5128" h="22342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22456" /> <!-- Morgos' Wizard -->
+		<point x="145635" y="-81876" z="-5128" h="24890" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22456" /> <!-- Morgos' Wizard -->
+		<point x="145590" y="-82027" z="-5128" h="49560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22456" /> <!-- Morgos' Wizard -->
+		<point x="145795" y="-81165" z="-5128" h="17189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="145308" y="-83310" z="-5128" h="59271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22455" /> <!-- Morgos' Sniper -->
+		<point x="145278" y="-83572" z="-5128" h="13313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="146091" y="-83537" z="-5128" h="4125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="145985" y="-83542" z="-5128" h="4410" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22455" /> <!-- Morgos' Sniper -->
+		<point x="145870" y="-83612" z="-5128" h="58184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145432" y="-83339" z="-5128" h="31287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145597" y="-83429" z="-5128" h="20839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145572" y="-83379" z="-5128" h="50518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145851" y="-83392" z="-5128" h="59645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22453" /> <!-- Morgos' Guard -->
+		<point x="145597" y="-83479" z="-5128" h="56958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="145930" y="-83266" z="-5128" h="19739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22455" /> <!-- Morgos' Sniper -->
+		<point x="145306" y="-83723" z="-5128" h="34216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22455" /> <!-- Morgos' Sniper -->
+		<point x="145787" y="-82928" z="-5128" h="65100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22455" /> <!-- Morgos' Sniper -->
+		<point x="145200" y="-83503" z="-5128" h="63418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="145268" y="-83189" z="-5128" h="53563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22457" /> <!-- Morgos' Commander -->
+		<point x="145647" y="-83413" z="-5128" h="19772" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22454" /> <!-- Morgos' Raider -->
+		<point x="145329" y="-81843" z="-5128" h="51554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22456" /> <!-- Morgos' Wizard -->
+		<point x="145975" y="-81921" z="-5128" h="6711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="142937" y="-75245" z="-4144" h="11373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="136882" y="-75598" z="-4000" h="17154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="132235" y="-72276" z="-3512" h="56157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="132240" y="-72275" z="-3512" h="55183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18725" /> <!-- Xilenos Warrior -->
+		<point x="132268" y="-72318" z="-3512" h="23387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="137182" y="-75498" z="-4000" h="43237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="135819" y="-82608" z="-4296" h="13875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18725" /> <!-- Xilenos Warrior -->
+		<point x="140525" y="-88087" z="-4368" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="140425" y="-88187" z="-4368" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="140625" y="-87987" z="-4376" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="137332" y="-90078" z="-3728" h="50294" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="144811" y="-88091" z="-4944" h="5613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="144789" y="-88042" z="-4944" h="60061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18725" /> <!-- Xilenos Warrior -->
+		<point x="144842" y="-88073" z="-4944" h="38383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18725" /> <!-- Xilenos Warrior -->
+		<point x="144650" y="-87994" z="-4936" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="144750" y="-87894" z="-4944" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="144550" y="-88094" z="-4928" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="153070" y="-85786" z="-5200" h="21817" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="152984" y="-85743" z="-5192" h="1731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18725" /> <!-- Xilenos Warrior -->
+		<point x="153039" y="-85733" z="-5192" h="54586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="154559" y="-79513" z="-4688" h="9604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="153230" y="-76586" z="-4408" h="31617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="148966" y="-76923" z="-4640" h="56126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="148891" y="-76923" z="-4640" h="3975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="143007" y="-79424" z="-4624" h="16739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="143036" y="-79393" z="-4624" h="28259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18725" /> <!-- Xilenos Warrior -->
+		<point x="143005" y="-79379" z="-4624" h="49508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="145722" y="-81811" z="-5128" h="14941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="145572" y="-83604" z="-5128" h="22686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="145747" y="-81361" z="-5128" h="62843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18919" /> <!--	-->
+		<point x="145847" y="-83254" z="-5128" h="39188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="149233" y="-81216" z="-5128" h="8271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="149268" y="-81201" z="-5128" h="13289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18726" /> <!-- Morgos' Soldier -->
+		<point x="149251" y="-81183" z="-5128" h="4100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18725" /> <!-- Xilenos Warrior -->
+		<point x="149276" y="-81173" z="-5128" h="36869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34320" /> <!-- Muss -->
+		<point x="146775" y="-69068" z="-3656" h="14018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34327" /> <!-- Yand -->
+		<point x="147425" y="-82642" z="-5152" h="64546" />
+	</spawn>
+</list>

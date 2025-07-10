@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="33400">
+		<!--P. Atk. +50, M. Atk. +57, DEX/ WIT/ CON/ MEN +1, Skill Power +1%, Skill Cooldown -2%-->
+		<skills>
+			<skill id="50191" level="2"/>	<!-- Enchant Effect: +2 Talisman of Baium -->
+		</skills>
+	</option_data>
+	<option_data id="33401">
+		<!--P. Atk. +92, M. Atk. +99, STR/ INT/ DEX/ WIT/ CON/ MEN +1, Skill Power +1%, P./ M. Critical Rate +10, Skill Cooldown -3%-->
+		<skills>
+			<skill id="50191" level="3"/>	<!-- Enchant Effect: +3 Talisman of Baium -->
+		</skills>
+	</option_data>
+	<option_data id="33402">
+		<!--P. Atk. +142, M. Atk. +149, STR/ INT/ DEX/ WIT/ CON/ MEN +1, M. Damage Resistance +2%, Skill Power +2%, P./ M. Critical Rate +20, Skill Cooldown -4%-->
+		<skills>
+			<skill id="50191" level="4"/>	<!-- Enchant Effect: +4 Talisman of Baium -->
+		</skills>
+	</option_data>
+	<option_data id="33403">
+		<!--P. Atk. +201, M. Atk. +208, STR/ INT/ DEX/ WIT/ CON/ MEN +1, M. Damage Resistance +5%, Skill Power +3%, P./ M. Critical Rate +30, Skill Cooldown -7%-->
+		<skills>
+			<skill id="50191" level="5"/>	<!-- Enchant Effect: +5 Talisman of Baium -->
+		</skills>
+	</option_data>
+	<option_data id="33404">
+		<!--M. Def. +20\nMax MP +100-->
+		<skills>
+			<skill id="50193" level="1"/>	<!-- Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33405">
+		<!--M. Def. +30\nMax MP +200\nMP Recovery Rate +3\nAll received Critical Damage -1%-->
+		<skills>
+			<skill id="50193" level="2"/>	<!-- +1 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33406">
+		<!--M. Def. +50\nMax MP +300\nMP Recovery Rate +5\nAll received Critical Damage -2%\nSkill MP Consumption -2%-->
+		<skills>
+			<skill id="50193" level="3"/>	<!-- +2 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33407">
+		<!--M. Def. +80\nMax MP +400\nMP Recovery Rate +8\nAll received Critical Damage -3%\nSkill MP Consumption -4%-->
+		<skills>
+			<skill id="50193" level="4"/>	<!-- +3 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33408">
+		<!--M. Def. +120\nMax MP +500\nMP Recovery Rate +12\nAll received Critical Damage -4%\nSkill MP Consumption -6%-->
+		<skills>
+			<skill id="50193" level="5"/>	<!-- +4 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33409">
+		<!--M. Def. +170\nMax MP +700\nMP Recovery Rate +16\nAll received Critical Damage -5%\nSkill MP Consumption -8%-->
+		<skills>
+			<skill id="50193" level="6"/>	<!-- +5 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33410">
+		<!--M. Def. +230\nMax MP +1000\nMP Recovery Rate +20\nAll received Critical Damage -7%\nSkill MP Consumption -10%-->
+		<skills>
+			<skill id="50193" level="7"/>	<!-- +6 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33411">
+		<!--M. Def. +300\nMax MP +1200\nMP Recovery Rate +25\nAll received Critical Damage -9%\nSkill MP Consumption -12%\nImprisonment Resistance +5%\nKnockdown Resistance +5%-->
+		<skills>
+			<skill id="50193" level="8"/>	<!-- +7 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33412">
+		<!--M. Def. +380\nMax MP +1400\nMP Recovery Rate +30\nAll received Critical Damage -11%\nSkill MP Consumption -14%\nImprisonment Resistance +8%\nKnockdown Resistance +8%-->
+		<skills>
+			<skill id="50193" level="9"/>	<!-- +8 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33413">
+		<!--M. Def. +470\nMax MP +1700\nMP Recovery Rate +35\nAll received Critical Damage -13%\nSkill MP Consumption -17%\nImprisonment Resistance +11%\nKnockdown Resistance +11%-->
+		<skills>
+			<skill id="50193" level="10"/>	<!-- +9 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33414">
+		<!--M. Def. +600\nMax MP +2000\nMP Recovery Rate +40\nAll received Critical Damage -15%\nSkill MP Consumption -20%\nImprisonment Resistance +15%\nKnockdown Resistance +15%-->
+		<skills>
+			<skill id="50193" level="11"/>	<!-- +10 Talisman of Eva -->
+		</skills>
+	</option_data>
+	<option_data id="33415">
+		<!--P. Def. +5\nM. Def. +5\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 5 sec., applies the following effects:\nAtk. Spd. +5\nCasting Spd. +5\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="1"/>	<!-- Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33416">
+		<!--P. Def. +10\nM. Def. +10\nMax HP +50\nSpeed +1\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 5 sec., applies the following effects:\nAtk. Spd. +10\nCasting Spd. +10\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="2"/>	<!-- +1 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33417">
+		<!--P. Def. +20\nM. Def. +20\nMax HP +100\nSpeed +1\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 5 sec., applies the following effects:\nAtk. Spd. +30\nCasting Spd. +30\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="3"/>	<!-- +2 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33418">
+		<!--P. Def. +30\nM. Def. +30\nMax HP +200\nSpeed +1\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 5 sec., applies the following effects:\nAtk. Spd. +50\nCasting Spd. +50\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="4"/>	<!-- +3 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33419">
+		<!--P. Def. +40\nM. Def. +40\nMax HP +300\nSpeed +1\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 5 sec., applies the following effects:\nAtk. Spd. +80\nCasting Spd. +80\nP. Skill Critical Damage +30\nM. Skill Critical Damage +30\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="5"/>	<!-- +4 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33420">
+		<!--P. Def. +50\nM. Def. +50\nMax HP +600\nSpeed +1\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 5 sec., applies the following effects:\nAtk. Spd. +150\nCasting Spd. +150\nP. Skill Critical Damage +60\nM. Skill Critical Damage +60\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="6"/>	<!-- +5 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33421">
+		<!--P. Def. +60\nM. Def. +60\nMax HP +1000\nSpeed +2\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 5 sec., applies the following effects:\nAtk. Spd. +170\nCasting Spd. +170\nP. Skill Critical Damage +100\nM. Skill Critical Damage +100\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="7"/>	<!-- +6 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33422">
+		<!--P. Def. +80\nM. Def. +80\nMax HP +1500\nSpeed +3\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 10 sec., applies the following effects:\nAtk. Spd. +200\nCasting Spd. +200\nP. Skill Critical Damage +300\nM. Skill Critical Damage +300\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="8"/>	<!-- +7 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33423">
+		<!--P. Def. +200\nM. Def. +200\nMax HP +2000\nSpeed +4\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 10 sec., applies the following effects:\nAtk. Spd. +230\nCasting Spd. +230\nP. Skill Critical Damage +600\nM. Skill Critical Damage +600\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="9"/>	<!-- +8 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33424">
+		<!--P. Def. +250\nM. Def. +250\nMax HP +3000\nSpeed +6\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 10 sec., applies the following effects:\nAtk. Spd. +260\nCasting Spd. +260\nP. Skill Critical Damage +1100\nM. Skill Critical Damage +1100\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="10"/>	<!-- +9 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33425">
+		<!--P. Def. +300\nM. Def. +300\nMax HP +5000\nSpeed +8\n\n<When triggered: Energy of Speed>\nWith a 5% chance after a standard attack and a 10% chance after using attacking skills, for 15 sec., applies the following effects:\nAtk. Spd. +300\nCasting Spd. +300\nP. Skill Critical Damage +1500\nM. Skill Critical Damage +1500\n(Cooldown: 10 sec.)-->
+		<skills>
+			<skill id="50293" level="11"/>	<!-- +10 Talisman of Speed -->
+		</skills>
+	</option_data>
+	<option_data id="33426">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 1%)-->
+		<skills>
+			<skill id="50270" level="1"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33427">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 1%)-->
+		<skills>
+			<skill id="50270" level="1"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33428">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 1%)-->
+		<skills>
+			<skill id="50270" level="2"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33429">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 1%)-->
+		<skills>
+			<skill id="50270" level="3"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33430">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 1%)-->
+		<skills>
+			<skill id="50270" level="4"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33431">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 2%)\nBaium's Enhanced Thunder Bolt (probability rate: 1%)\n\n<Stat boost>\nSTR +1\nINT +1-->
+		<skills>
+			<skill id="50270" level="5"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33432">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 4%)\nBaium's Enhanced Thunder Bolt (probability rate: 1%)\n\n<Stat boost>\nSTR +2\nINT +2-->
+		<skills>
+			<skill id="50270" level="6"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33433">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 6%)\nBaium's Enhanced Thunder Bolt (probability rate: 1%)\n\n<Stat boost>\nSTR +3\nINT +3-->
+		<skills>
+			<skill id="50270" level="7"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33434">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 8%)\nBaium's Enhanced Thunder Bolt (probability rate: 2%)\n\n<Stat boost>\nSTR +4\nINT +4-->
+		<skills>
+			<skill id="50270" level="8"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33435">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 10%)\nBaium's Enhanced Thunder Bolt (probability rate: 2%)\n\n<Stat boost>\nSTR +5\nINT +5-->
+		<skills>
+			<skill id="50270" level="9"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33436">
+		<!--Imbued with Baium's Soul.\n\n<When triggered>\nBaium's Thunder Bolt (probability rate: 12%)\nBaium's Enhanced Thunder Bolt (probability rate: 3%)\n\n<Stat boost>\nSTR +6\nINT +6-->
+		<skills>
+			<skill id="50270" level="10"/>	<!-- Баюм -->
+		</skills>
+	</option_data>
+	<option_data id="33437">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 1%)-->
+		<skills>
+			<skill id="50275" level="1"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33438">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 1%)-->
+		<skills>
+			<skill id="50275" level="1"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33439">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 1%)-->
+		<skills>
+			<skill id="50275" level="2"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33440">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 1%)-->
+		<skills>
+			<skill id="50275" level="3"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33441">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 1%)-->
+		<skills>
+			<skill id="50275" level="4"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33442">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 2%)\n\nQueen Ant's Enhanced Rain of Stones (probability rate: 1%)\n<Stat boost>\nDEX +1\nWIT +1-->
+		<skills>
+			<skill id="50275" level="5"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33443">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 4%)\n\nQueen Ant's Enhanced Rain of Stones (probability rate: 1%)\n<Stat boost>\nDEX +2\nWIT +2-->
+		<skills>
+			<skill id="50275" level="6"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33444">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 6%)\n\nQueen Ant's Enhanced Rain of Stones (probability rate: 1%)\n<Stat boost>\nDEX +3\nWIT +3-->
+		<skills>
+			<skill id="50275" level="7"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33445">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 8%)\n\nQueen Ant's Enhanced Rain of Stones (probability rate: 2%)\n<Stat boost>\nDEX +4\nWIT +4-->
+		<skills>
+			<skill id="50275" level="8"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33446">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 10%)\n\nQueen Ant's Enhanced Rain of Stones (probability rate: 2%)\n<Stat boost>\nDEX +5\nWIT +5-->
+		<skills>
+			<skill id="50275" level="9"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33447">
+		<!--Imbued with Queen Ant's Soul.\n\n<When triggered>\nQueen Ant's Rain of Stones (probability rate: 12%)\n\nQueen Ant's Enhanced Rain of Stones (probability rate: 3%)\n<Stat boost>\nDEX +6\nWIT +6-->
+		<skills>
+			<skill id="50275" level="10"/>	<!-- Королева муравьев -->
+		</skills>
+	</option_data>
+	<option_data id="33448">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 1%)-->
+		<skills>
+			<skill id="50280" level="1"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33449">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 1%)-->
+		<skills>
+			<skill id="50280" level="1"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33450">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 1%)-->
+		<skills>
+			<skill id="50280" level="2"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33451">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 1%)-->
+		<skills>
+			<skill id="50280" level="3"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33452">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 1%)-->
+		<skills>
+			<skill id="50280" level="4"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33453">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 2%)\nZaken's Enhanced Blood Prison (probability rate: 1%)\n\n<Stat boost>\nCON +1\nMEN +1-->
+		<skills>
+			<skill id="50280" level="5"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33454">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 4%)\nZaken's Enhanced Blood Prison (probability rate: 1%)\n\n<Stat boost>\nCON +2\nMEN +2-->
+		<skills>
+			<skill id="50280" level="6"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33455">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 6%)\nZaken's Enhanced Blood Prison (probability rate: 1%)\n\n<Stat boost>\nCON +3\nMEN +3-->
+		<skills>
+			<skill id="50280" level="7"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33456">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 8%)\nZaken's Enhanced Blood Prison (probability rate: 2%)\n\n<Stat boost>\nCON +4\nMEN +4-->
+		<skills>
+			<skill id="50280" level="8"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33457">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 10%)\nZaken's Enhanced Blood Prison (probability rate: 2%)\n\n<Stat boost>\nCON +5\nMEN +5-->
+		<skills>
+			<skill id="50280" level="9"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33458">
+		<!--Imbued with Zaken's Soul.\n\n<When triggered>\nZaken's Blood Prison (probability rate: 12%)\nZaken's Enhanced Blood Prison (probability rate: 3%)\n\n<Stat boost>\nCON +6\nMEN +6-->
+		<skills>
+			<skill id="50280" level="10"/>	<!-- Закен -->
+		</skills>
+	</option_data>
+	<option_data id="33459">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 1%)-->
+		<skills>
+			<skill id="50285" level="1"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33460">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 1%)-->
+		<skills>
+			<skill id="50285" level="1"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33461">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 1%)-->
+		<skills>
+			<skill id="50285" level="2"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33462">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 1%)-->
+		<skills>
+			<skill id="50285" level="3"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33463">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 1%)-->
+		<skills>
+			<skill id="50285" level="4"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33464">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 2%)\nOrfen's Enhanced Poison Storm (probability rate: 1%)\n\n<Stat boost>\nDEX +1\nCON +1-->
+		<skills>
+			<skill id="50285" level="5"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33465">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 4%)\nOrfen's Enhanced Poison Storm (probability rate: 1%)\n\n<Stat boost>\nDEX +2\nCON +2-->
+		<skills>
+			<skill id="50285" level="6"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33466">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 6%)\nOrfen's Enhanced Poison Storm (probability rate: 1%)\n\n<Stat boost>\nDEX +3\nCON +3-->
+		<skills>
+			<skill id="50285" level="7"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33467">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 8%)\nOrfen's Enhanced Poison Storm (probability rate: 2%)\n\n<Stat boost>\nDEX +4\nCON +4-->
+		<skills>
+			<skill id="50285" level="8"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33468">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 10%)\nOrfen's Enhanced Poison Storm (probability rate: 2%)\n\n<Stat boost>\nDEX +5\nCON +5-->
+		<skills>
+			<skill id="50285" level="9"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33469">
+		<!--Imbued with Orfen's Soul.\n\n<When triggered>\nOrfen's Poison Storm (probability rate: 12%)\nOrfen's Enhanced Poison Storm (probability rate: 3%)\n\n<Stat boost>\nDEX +6\nCON +6-->
+		<skills>
+			<skill id="50285" level="10"/>	<!-- Орфен -->
+		</skills>
+	</option_data>
+	<option_data id="33470">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 1%)-->
+		<skills>
+			<skill id="50290" level="1"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33471">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 1%)-->
+		<skills>
+			<skill id="50290" level="1"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33472">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 1%)-->
+		<skills>
+			<skill id="50290" level="2"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33473">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 1%)-->
+		<skills>
+			<skill id="50290" level="3"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33474">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 1%)-->
+		<skills>
+			<skill id="50290" level="4"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33475">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate:
+ 2%)\nCore's Enhanced Plasmic Shock (probability rate: 1%)\n\n<Stat boost>\nSTR +1\nDEX +1-->
+ <skills>
+			<skill id="50290" level="5"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33476">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 4%)\nCore's Enhanced Plasmic Shock (probability rate: 1%)\n\n<Stat boost>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50290" level="6"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33477">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 6%)\nCore's Enhanced Plasmic Shock (probability rate: 1%)\n\n<Stat boost>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50290" level="7"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33478">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 8%)\nCore's Enhanced Plasmic Shock (probability rate: 2%)\n\n<Stat boost>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50290" level="8"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33479">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 10%)\nCore's Enhanced Plasmic Shock (probability rate: 2%)\n\n<Stat boost>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50290" level="9"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33480">
+		<!--Imbued with Core's Soul.\n\n<When triggered>\nCore's Plasmic Shock (probability rate: 12%)\nCore's Enhanced Plasmic Shock (probability rate: 3%)\n\n<Stat boost>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50290" level="10"/>	<!-- Плазменный Лук Ядра -->
+		</skills>
+	</option_data>
+	<option_data id="33481">
+		<!--Max HP/ MP +1%.-->
+		<skills>
+			<skill id="50302" level="1"/>	<!-- Adventurer's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33482">
+		<!--Max HP/ MP +2%.-->
+		<skills>
+			<skill id="50303" level="1"/>	<!-- Enhanced Adventurer's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="33483">
+	</option_data>
+	<option_data id="33484">
+	</option_data>
+	<option_data id="33485">
+	</option_data>
+	<option_data id="33486">
+	</option_data>
+	<option_data id="33487">
+	</option_data>
+	<option_data id="33488">
+	</option_data>
+	<option_data id="33489">
+	</option_data>
+	<option_data id="33490">
+	</option_data>
+	<option_data id="33491">
+	</option_data>
+	<option_data id="33492">
+	</option_data>
+	<option_data id="33493">
+	</option_data>
+	<option_data id="33494">
+		<!--P. Def. +5-->
+	</option_data>
+	<option_data id="33495">
+		<!--P. Def. +6-->
+	</option_data>
+	<option_data id="33496">
+		<!--P. Def. +7-->
+	</option_data>
+	<option_data id="33497">
+		<!--P. Def. +8-->
+	</option_data>
+	<option_data id="33498">
+		<!--P. Def. +9-->
+	</option_data>
+	<option_data id="33499">
+		<!--P. Def. +10.-->
+	</option_data>
+</list>

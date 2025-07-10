@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<spawn name="dion10_npc2023_premium01" count="1" respawn="60" group="vitamin_manager">
+		<point x="17740" y="169800" z="-3496" h="20000"/>
+		<npc id="32478"/><!--Менеджер Витаминов-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="dion_castle_light_side">
+		<point x="15800" y="142834" z="-2696" h="15000"/>
+		<npc id="36610"/><!--Герольд-->
+	</spawn>
+	<spawn name="dion_chamberlain_etc" count="1" respawn="60" group="dion_castle_light_side">
+		<point x="22172" y="160923" z="-2666" h="49152"/>
+		<npc id="35142"/><!--Камергер Света-->
+	</spawn>
+	<spawn name="dion_chamberlain_etc" count="1" respawn="60" group="dion_castle_dark_side">
+		<point x="22172" y="160923" z="-2666" h="49152"/>
+		<npc id="36654"/><!--Камергер Тьмы-->
+	</spawn>
+	<spawn name="dion_chamberlain_etc" count="1" respawn="60" group="dion_castle_2">
+		<point x="19132" y="153027" z="-3120" h="49152"/>
+		<npc id="35146"/><!--Гибсон-->
+	</spawn>
+	<spawn name="dion_chamberlain_etc" count="1" respawn="10800" group="dion_castle_2">
+		<point x="22412" y="156489" z="-2944" h="49152"/>
+		<npc id="35138"/><!--Привратник Внешних Владений-->
+	</spawn>
+	<spawn name="dion_chamberlain_etc" count="1" respawn="10800" group="dion_castle_2">
+		<point x="22466" y="156837" z="-2944" h="0"/>
+		<npc id="35138"/><!--Привратник Внешних Владений-->
+	</spawn>
+	<spawn name="dion_chamberlain_etc" count="1" respawn="10800" group="dion_castle_2">
+		<point x="22239" y="159048" z="-2654" h="49152"/>
+		<npc id="35139"/><!--Привратник Внутренних Владений-->
+	</spawn>
+	<spawn name="dion_chamberlain_etc" count="1" respawn="10800" group="dion_castle_2">
+		<point x="22305" y="159403" z="-2694" h="0"/>
+		<npc id="35139"/><!--Привратник Внутренних Владений-->
+	</spawn>
+	<spawn name="dion01_npc2023_06" count="1" respawn="60">
+		<point x="12805" y="189249" z="-3601" h="19000"/>
+		<npc id="30616"/><!--Кепра-->
+	</spawn>
+	<spawn name="dion01_npc2023_07" count="1" respawn="60">
+		<point x="23471" y="188092" z="-3604" h="16384"/>
+		<npc id="30636"/><!--Камониэль-->
+	</spawn>
+	<spawn name="dion12_npc2023_01" count="1" respawn="60">
+		<point x="12882" y="181053" z="-3560" h="49152"/>
+		<npc id="31210"/><!--Хранитель Портала Арены-->
+	</spawn>
+	<spawn name="dion12_npc2023_02" count="1" respawn="60">
+		<point x="13691" y="182627" z="-3561" h="49152"/>
+		<npc id="30995"/><!--Управляющий Арены-->
+	</spawn>
+	<spawn name="dion12_npc2023_02" count="1" respawn="60">
+		<point x="12962" y="181603" z="-3561" h="16384"/>
+		<npc id="30995"/><!--Управляющий Арены-->
+	</spawn>
+	<spawn name="dion10_npc2023_01" count="1" respawn="60">
+		<point x="17836" y="169853" z="-3494" h="20000"/>
+		<npc id="30079"/><!--Бардер-->
+	</spawn>
+	<spawn name="dion10_npc2023_01" count="1" respawn="60">
+		<point x="17788" y="169842" z="-3496" h="20000"/>
+		<npc id="31773"/><!--Сонин-->
+	</spawn>
+	<spawn name="dion10_npc2023_02" count="1" respawn="60">
+		<point x="16970" y="170391" z="-3496" h="61440"/>
+		<npc id="30078"/><!--Пано-->
+	</spawn>
+	<spawn name="dion10_npc2023_09" count="1" respawn="60">
+		<point x="17475" y="169556" z="-3493" h="57344"/>
+		<npc id="30609"/><!--Крета-->
+	</spawn>
+	<spawn name="dion10_npc2023_07" count="1" respawn="60">
+		<point x="20943" y="171358" z="-3548" h="12288"/>
+		<npc id="30291"/><!--Алекс -->
+	</spawn>
+	<spawn name="dion10_npc2023_08" count="1" respawn="60">
+		<point x="13258" y="169790" z="-3705" h="1000"/>
+		<npc id="30633"/><!--Эверт-->
+	</spawn>
+	<spawn name="dion01_qm2023_05" count="1" respawn="180">
+		<territory>
+			<add x="23354" y="187991" zmin="-3721" zmax="-3521"/>
+			<add x="23554" y="187991" zmin="-3721" zmax="-3521"/>
+			<add x="23554" y="188191" zmin="-3721" zmax="-3521"/>
+			<add x="23354" y="188191" zmin="-3721" zmax="-3521"/>
+		</territory>
+		<npc id="27103"/><!--Единорог-->
+	</spawn>
+	<spawn name="dion01_qm2023_01" count="1" respawn="180">
+		<territory>
+			<add x="6284" y="184089" zmin="-3212" zmax="-3012"/>
+			<add x="6834" y="184648" zmin="-3212" zmax="-3012"/>
+			<add x="6439" y="184871" zmin="-3212" zmax="-3012"/>
+			<add x="6157" y="184669" zmin="-3212" zmax="-3012"/>
+			<add x="6043" y="184444" zmin="-3212" zmax="-3012"/>
+		</territory>
+		<npc id="27112"/><!--Горр-->
+	</spawn>
+	<spawn name="dion16_npc2023_02" count="1" respawn="60">
+		<point x="10699" y="171474" z="-3572" h="0"/>
+		<npc id="30728"/><!--Лейрин-->
+	</spawn>
+	<spawn name="dion16_npc2023_08" count="1" respawn="60">
+		<point x="15520" y="174572" z="-3637" h="57344"/>
+		<npc id="30981"/><!--Черный Судья-->
+	</spawn>
+	<spawn name="dion16_npc2023_04" count="1" respawn="60">
+		<point x="15734" y="174805" z="-3636" h="0"/>
+		<npc id="30626"/><!--Хамиль-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="17328" y="170574" z="-3496" h="56099" />
+		<npc id="30767"><!--Управляющий Аукциона-->
+			<set name="town" value="floran"/>
+		</npc>
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="green_barracks_74">
+		<point x="17883" y="170537" z="-3504" h="52191" />
+		<npc id="36740" /><!--Даниф-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="green_barracks_74">
+		<point x="17870" y="170644" z="-3488" h="15086" />
+		<npc id="36739" /><!--Плон-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="black_barracks_73">
+		<point x="17278" y="169747" z="-3480" h="49153" />
+		<npc id="36737" /><!--Гайрин-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none" group="black_barracks_73">
+		<point x="17262" y="169863" z="-3496" h="16857" />
+		<npc id="36738" /><!--Лутина-->
+	</spawn>
+	<!--CLAN ARENA SUPPLIES-->
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12040" y="183320" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12182" y="183320" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12324" y="183320" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12466" y="183320" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12608" y="183320" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12750" y="183320" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12892" y="183320" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="13034" y="183320" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12040" y="183500" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12182" y="183500" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12324" y="183500" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12466" y="183500" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12608" y="183500" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12750" y="183500" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12892" y="183500" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="13034" y="183500" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12040" y="183680" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12182" y="183680" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12324" y="183680" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12466" y="183680" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12608" y="183680" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12750" y="183680" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12892" y="183680" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="13034" y="183680" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12040" y="183860" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12182" y="183860" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12324" y="183860" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12466" y="183860" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12608" y="183860" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12750" y="183860" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12892" y="183860" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="13034" y="183860" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12040" y="184040" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12182" y="184040" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12324" y="184040" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12466" y="184040" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12608" y="184040" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12750" y="184040" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="12892" y="184040" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_suplies" count="1" respawn="0">
+		<point x="13034" y="184040" z="-3712" h="0"/>
+		<npc id="30204"/><!--Припасы-->
+	</spawn>
+	<spawn group="clan_arena_machine" count="1" respawn="0" respawn_random="0" period_of_day="none">
+		<point x="12536" y="183432" z="-3712" h="16000"/>
+		<npc id="30203"/>
+	</spawn>
+	<spawn name="derbytack_leo30202" count="1" respawn="60">
+		<point x="12549" y="182587" z="-3472" h="24575"/>
+		<npc id="30202"/>
+	</spawn>
+</list>

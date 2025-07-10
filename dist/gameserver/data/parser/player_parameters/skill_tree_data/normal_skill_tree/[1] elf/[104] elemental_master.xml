@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="104"><!--Elemental Master-->
+		<skill id="1350" level="1" min_level="76" cost="8100000"/><!--Warrior Bane-->
+		<skill id="1351" level="1" min_level="76" cost="8100000"/><!--Mage Bane-->
+		<skill id="1405" level="3" min_level="76" cost="8100000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8620;96093" count="1"/><!--Buff Expansion Book Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="4" min_level="76" cost="8100000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8621;96094" count="1"/><!--Buff Expansion Book Lv. 4-->
+			</required_items>
+		</skill>
+		<skill id="1175" level="27" min_level="76" cost="8100000"/><!--Aqua Swirl-->
+		<skill id="45188" level="1" min_level="76"><!--Evolution Defense-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1127" level="46" min_level="76" cost="8100000"/><!--Servitor Heal-->
+		<skill id="1068" level="4" min_level="76" cost="8100000"><!--Might-->
+			<required_items>
+				<item id="94135;95517" count="1"/><!--Master's Book: Might-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="1" min_level="76" cost="8100000"><!--Detection-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1206" level="20" min_level="76" cost="8100000"/><!--Wind Shackle-->
+		<skill id="1834" level="1" min_level="76" cost="8100000"/><!--Mount Pegasus-->
+		<skill id="1126" level="35" min_level="76" cost="8100000"/><!--Servitor Recharge-->
+		<skill id="1557" level="1" min_level="76" cost="8100000"><!--Servitor Share-->
+			<required_items>
+				<item id="90131" count="1"/><!--Scroll: Servitor Share-->
+			</required_items>
+		</skill>
+		<skill id="1164" level="20" min_level="76" cost="8100000"/><!--Weakness-->
+		<skill id="45362" level="46" min_level="76" cost="8100000"/><!--Swift Servitor Heal-->
+		<skill id="1040" level="4" min_level="76" cost="8100000"><!--Shield-->
+			<required_items>
+				<item id="94136;95518" count="1"/><!--Master's Book: Shield-->
+			</required_items>
+		</skill>
+		<skill id="45377" level="1" min_level="76" cost="8100000"><!--Ethereal Strike-->
+			<required_items>
+				<item id="93870;95514" count="1"/><!--Spellbook: Ethereal Strike-->
+			</required_items>
+		</skill>
+		<skill id="1127" level="47" min_level="77" cost="8100000"/><!--Servitor Heal-->
+		<skill id="1126" level="36" min_level="77" cost="8100000"/><!--Servitor Recharge-->
+		<skill id="1407" level="1" min_level="77" cost="8100000"/><!--Summon Magnus the Unicorn-->
+		<skill id="1332" level="1" min_level="77" cost="8100000"><!--Summon Seraphim the Unicorn-->
+			<required_items>
+				<item id="91204" count="1"/><!--Scroll: Summon Seraphim the Unicorn-->
+			</required_items>
+		</skill>
+		<skill id="45362" level="47" min_level="77" cost="8100000"/><!--Swift Servitor Heal-->
+		<skill id="45377" level="2" min_level="77" cost="8100000"/><!--Ethereal Strike-->
+		<skill id="1350" level="2" min_level="78" cost="17900000"/><!--Warrior Bane-->
+		<skill id="1351" level="2" min_level="78" cost="17900000"/><!--Mage Bane-->
+		<skill id="1175" level="28" min_level="78" cost="17900000"/><!--Aqua Swirl-->
+		<skill id="1127" level="48" min_level="78" cost="17900000"/><!--Servitor Heal-->
+		<skill id="1206" level="21" min_level="78" cost="17900000"/><!--Wind Shackle-->
+		<skill id="1126" level="37" min_level="78" cost="17900000"/><!--Servitor Recharge-->
+		<skill id="1557" level="2" min_level="78" cost="17900000"/><!--Servitor Share-->
+		<skill id="1164" level="21" min_level="78" cost="17900000"/><!--Weakness-->
+		<skill id="1347" level="1" min_level="78" cost="17900000"><!--Wizard Servitor-->
+			<required_items>
+				<item id="90128" count="1"/><!--Scroll: Wizard Servitor-->
+			</required_items>
+		</skill>
+		<skill id="45362" level="48" min_level="78" cost="17900000"/><!--Swift Servitor Heal-->
+		<skill id="45377" level="3" min_level="78" cost="17900000"/><!--Ethereal Strike-->
+		<skill id="1175" level="29" min_level="79" cost="17900000"/><!--Aqua Swirl-->
+		<skill id="1206" level="22" min_level="79" cost="17900000"/><!--Wind Shackle-->
+		<skill id="1332" level="2" min_level="79" cost="17900000"/><!--Summon Seraphim the Unicorn-->
+		<skill id="45377" level="4" min_level="79" cost="17900000"/><!--Ethereal Strike-->
+		<skill id="1350" level="3" min_level="80" cost="17900000"/><!--Warrior Bane-->
+		<skill id="1351" level="3" min_level="80" cost="17900000"/><!--Mage Bane-->
+		<skill id="1175" level="30" min_level="80" cost="17900000"/><!--Aqua Swirl-->
+		<skill id="1127" level="49" min_level="80" cost="17900000"/><!--Servitor Heal-->
+		<skill id="45189" level="1" min_level="80"><!--Evolution Power-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1206" level="23" min_level="80" cost="17900000"/><!--Wind Shackle-->
+		<skill id="1126" level="38" min_level="80" cost="17900000"/><!--Servitor Recharge-->
+		<skill id="1611" level="5" min_level="80" cost="17900000"/><!--Power Supremacy-->
+		<skill id="1557" level="3" min_level="80" cost="17900000"/><!--Servitor Share-->
+		<skill id="1164" level="22" min_level="80" cost="17900000"/><!--Weakness-->
+		<skill id="54102" level="1" min_level="80"><!--White Guardian Transformation-->
+			<required_items>
+				<item id="92401;95502" count="1"/><!--Spellbook: White Guardian-->
+			</required_items>
+		</skill>
+		<skill id="45362" level="49" min_level="80" cost="17900000"/><!--Swift Servitor Heal-->
+		<skill id="45377" level="5" min_level="80" cost="17900000"/><!--Ethereal Strike-->
+		<skill id="1175" level="31" min_level="81" cost="160000000"/><!--Aqua Swirl-->
+		<skill id="1127" level="50" min_level="81" cost="160000000"/><!--Servitor Heal-->
+		<skill id="1206" level="24" min_level="81" cost="160000000"/><!--Wind Shackle-->
+		<skill id="1126" level="39" min_level="81" cost="160000000"/><!--Servitor Recharge-->
+		<skill id="1407" level="2" min_level="81" cost="160000000"/><!--Summon Magnus the Unicorn-->
+		<skill id="1332" level="3" min_level="81" cost="160000000"/><!--Summon Seraphim the Unicorn-->
+		<skill id="1164" level="23" min_level="81" cost="160000000"/><!--Weakness-->
+		<skill id="45362" level="50" min_level="81" cost="160000000"/><!--Swift Servitor Heal-->
+		<skill id="45377" level="6" min_level="81" cost="160000000"/><!--Ethereal Strike-->
+		<skill id="1350" level="4" min_level="82" cost="170000000"/><!--Warrior Bane-->
+		<skill id="1351" level="4" min_level="82" cost="170000000"/><!--Mage Bane-->
+		<skill id="1175" level="32" min_level="82" cost="170000000"/><!--Aqua Swirl-->
+		<skill id="1127" level="51" min_level="82" cost="170000000"/><!--Servitor Heal-->
+		<skill id="1206" level="25" min_level="82" cost="170000000"/><!--Wind Shackle-->
+		<skill id="1126" level="40" min_level="82" cost="170000000"/><!--Servitor Recharge-->
+		<skill id="1407" level="3" min_level="82" cost="170000000"/><!--Summon Magnus the Unicorn-->
+		<skill id="1557" level="4" min_level="82" cost="170000000"/><!--Servitor Share-->
+		<skill id="1164" level="24" min_level="82" cost="170000000"/><!--Weakness-->
+		<skill id="45362" level="51" min_level="82" cost="170000000"/><!--Swift Servitor Heal-->
+		<skill id="45377" level="7" min_level="82" cost="170000000"/><!--Ethereal Strike-->
+		<skill id="1175" level="33" min_level="83" cost="240000000"/><!--Aqua Swirl-->
+		<skill id="1127" level="52" min_level="83" cost="240000000"/><!--Servitor Heal-->
+		<skill id="1206" level="26" min_level="83" cost="240000000"/><!--Wind Shackle-->
+		<skill id="1126" level="41" min_level="83" cost="240000000"/><!--Servitor Recharge-->
+		<skill id="1407" level="4" min_level="83" cost="240000000"/><!--Summon Magnus the Unicorn-->
+		<skill id="1332" level="4" min_level="83" cost="240000000"/><!--Summon Seraphim the Unicorn-->
+		<skill id="1164" level="25" min_level="83" cost="240000000"/><!--Weakness-->
+		<skill id="45362" level="52" min_level="83" cost="240000000"/><!--Swift Servitor Heal-->
+		<skill id="45377" level="8" min_level="83" cost="240000000"/><!--Ethereal Strike-->
+		<skill id="1350" level="5" min_level="84" cost="240000000"/><!--Warrior Bane-->
+		<skill id="1351" level="5" min_level="84" cost="240000000"/><!--Mage Bane-->
+		<skill id="1175" level="34" min_level="84" cost="240000000"/><!--Aqua Swirl-->
+		<skill id="1127" level="53" min_level="84" cost="240000000"/><!--Servitor Heal-->
+		<skill id="1206" level="27" min_level="84" cost="240000000"/><!--Wind Shackle-->
+		<skill id="1126" level="42" min_level="84" cost="240000000"/><!--Servitor Recharge-->
+		<skill id="1611" level="6" min_level="84" cost="240000000"/><!--Power Supremacy-->
+		<skill id="1407" level="5" min_level="84" cost="240000000"/><!--Summon Magnus the Unicorn-->
+		<skill id="1332" level="5" min_level="84" cost="240000000"/><!--Summon Seraphim the Unicorn-->
+		<skill id="1557" level="5" min_level="84" cost="240000000"/><!--Servitor Share-->
+		<skill id="1164" level="26" min_level="84" cost="240000000"/><!--Weakness-->
+		<skill id="45362" level="53" min_level="84" cost="240000000"/><!--Swift Servitor Heal-->
+		<skill id="45377" level="9" min_level="84" cost="240000000"/><!--Ethereal Strike-->
+		<skill id="1175" level="35" min_level="85" cost="840000000"/><!--Aqua Swirl-->
+		<skill id="1407" level="6" min_level="85" cost="840000000"/><!--Summon Magnus the Unicorn-->
+		<skill id="1332" level="6" min_level="85" cost="840000000"/><!--Summon Seraphim the Unicorn-->
+		<skill id="45377" level="10" min_level="85" cost="840000000"/><!--Ethereal Strike-->
+		<skill id="1175" level="36" min_level="86" cost="840000000"/><!--Aqua Swirl-->
+		<skill id="45377" level="11" min_level="86" cost="840000000"/><!--Ethereal Strike-->
+		<skill id="1175" level="37" min_level="87" cost="840000000"/><!--Aqua Swirl-->
+		<skill id="45377" level="12" min_level="87" cost="840000000"/><!--Ethereal Strike-->
+		<skill id="1175" level="38" min_level="88" cost="840000000"/><!--Aqua Swirl-->
+		<skill id="45377" level="13" min_level="88" cost="840000000"/><!--Ethereal Strike-->
+		<skill id="1175" level="39" min_level="89" cost="840000000"/><!--Aqua Swirl-->
+		<skill id="45377" level="14" min_level="89" cost="840000000"/><!--Ethereal Strike-->
+		<skill id="1175" level="40" min_level="90" cost="840000000"/><!--Aqua Swirl-->
+		<skill id="45377" level="15" min_level="90" cost="840000000"/><!--Ethereal Strike-->
+		<skill id="45104" level="4" min_level="76" cost="8100000"><!--Acumen-->
+			<required_items>
+				<item id="94370;95539" count="1"/><!--Master's Book: Acumen-->
+			</required_items>
+		</skill>
+		<skill id="45108" level="3" min_level="76" cost="8100000"><!--Magic Barrier-->
+			<required_items>
+				<item id="94362;95534" count="1"/><!--Master's Book: Magic Barrier-->
+			</required_items>
+		</skill>
+		<skill id="45105" level="4" min_level="76" cost="8100000"><!--Empower-->
+			<required_items>
+				<item id="94361;95533" count="1"/><!--Master's Book: Empower-->
+			</required_items>
+		</skill>
+		<skill id="45112" level="3" min_level="76" cost="8100000"><!--Berserker Spirit-->
+			<required_items>
+				<item id="94366;95769" count="1"/><!--Master's Book: Berserker Spirit-->
+			</required_items>
+		</skill>
+		<skill id="45109" level="4" min_level="76" cost="8100000"><!--Focus-->
+			<required_items>
+				<item id="94363;95535" count="1"/><!--Master's Book: Focus-->
+			</required_items>
+		</skill>
+		<skill id="45111" level="3" min_level="76" cost="8100000"><!--Haste-->
+			<required_items>
+				<item id="94369;95538" count="1"/><!--Master's Book: Haste-->
+			</required_items>
+		</skill>
+		<skill id="45107" level="3" min_level="76" cost="8100000"><!--Wind Walk-->
+			<required_items>
+				<item id="94365;95537" count="1"/><!--Master's Book: Wind Walk-->
+			</required_items>
+		</skill>
+		<skill id="45110" level="4" min_level="76" cost="8100000"><!--Death Whisper-->
+			<required_items>
+				<item id="94364;95536" count="1"/><!--Master's Book: Death Whisper-->
+			</required_items>
+		</skill>
+		<skill id="45106" level="3" min_level="76" cost="8100000"><!--Wild Magic-->
+			<required_items>
+				<item id="94368;95771" count="1"/><!--Master's Book: Wild Magic-->
+			</required_items>
+		</skill>
+		<skill id="45113" level="4" min_level="76" cost="8100000"><!--Clarity-->
+			<required_items>
+				<item id="94367;95770" count="1"/><!--Master's Book: Clarity-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="2" min_level="85" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="54231" level="1" min_level="82"><!--Dragon Slayer Appearance-->
+			<required_items>
+				<item id="96300;96780" count="1"/><!--Spellbook: Dragon Slayer-->
+			</required_items>
+		</skill>
+		<skill id="1299" level="3" min_level="80" cost="17900000"><!--Servitor Ultimate Defense-->
+			<required_items>
+				<item id="97190;97199" count="1"/><!--Spellbook: Servitor Ultimate Defense Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="1332" level="7" min_level="87" cost="840000000"/><!--Summon Seraphim the Unicorn-->
+		<skill id="1332" level="8" min_level="89" cost="840000000"/><!--Summon Seraphim the Unicorn-->
+		<skill id="1332" level="9" min_level="90" cost="840000000"/><!--Summon Seraphim the Unicorn-->
+		<skill id="1347" level="2" min_level="80" cost="17900000"><!--Wizard Servitor-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1350" level="6" min_level="86" cost="840000000"/><!--Warrior Bane-->
+		<skill id="1350" level="7" min_level="88" cost="840000000"/><!--Warrior Bane-->
+		<skill id="1350" level="8" min_level="90" cost="840000000"/><!--Warrior Bane-->
+		<skill id="1351" level="6" min_level="86" cost="840000000"/><!--Mage Bane-->
+		<skill id="1351" level="7" min_level="88" cost="840000000"/><!--Mage Bane-->
+		<skill id="1351" level="8" min_level="90" cost="840000000"/><!--Mage Bane-->
+		<skill id="1407" level="7" min_level="87" cost="840000000"/><!--Summon Magnus the Unicorn-->
+		<skill id="1407" level="8" min_level="89" cost="840000000"/><!--Summon Magnus the Unicorn-->
+		<skill id="1407" level="9" min_level="90" cost="840000000"/><!--Summon Magnus the Unicorn-->
+		<skill id="45190" level="3" min_level="88" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="30000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45269" level="1" min_level="76"><!--Expanded Potential of Dyes-->
+			<required_items>
+				<item id="96613;96614" count="1"/><!--Spellbook: Expanded Potential of Dyes-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="1" min_level="76"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="2" min_level="80"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="40000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="3" min_level="85"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="100000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="4" min_level="90"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="200000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="47466" level="4" min_level="76" cost="8100000"/><!--Higher Mana Gain-->
+		<skill id="47466" level="5" min_level="80" cost="17900000"/><!--Higher Mana Gain-->
+		<skill id="47466" level="6" min_level="85" cost="840000000"/><!--Higher Mana Gain-->
+		<skill id="47466" level="7" min_level="90" cost="840000000"/><!--Higher Mana Gain-->
+		<skill id="47904" level="1" min_level="76" cost="8100000"><!--Summon Unicorn Guard-->
+			<required_items>
+				<item id="97183;97192" count="1"/><!--Spellbook: Unicorn Guard-->
+			</required_items>
+		</skill>
+		<skill id="47912" level="1" min_level="76" cost="8100000"/><!--Summon Elemental Cubic-->
+		<skill id="47912" level="2" min_level="85" cost="840000000"><!--Summon Elemental Cubic-->
+			<required_items>
+				<item id="97186;97195" count="1"/><!--Spellbook: Elemental Cubic Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="47912" level="3" min_level="88" cost="840000000"/><!--Summon Elemental Cubic-->
+		<skill id="47912" level="4" min_level="91" cost="840000000"/><!--Summon Elemental Cubic-->
+		<skill id="47916" level="1" min_level="86" cost="840000000"><!--Chains of Pain-->
+			<required_items>
+				<item id="97189;97198" count="1"/><!--Spellbook: Chains of Pain-->
+			</required_items>
+			<blocked_skills>
+				<skill id="1262"/><!--Transfer Pain-->
+			</blocked_skills>
+		</skill>
+		<skill id="47916" level="2" min_level="90" cost="840000000"><!--Chains of Pain-->
+			<required_items>
+				<item id="97189;97198" count="1"/><!--Spellbook: Chains of Pain-->
+			</required_items>
+		</skill>
+		<skill id="47917" level="1" min_level="82" cost="170000000"><!--Ray of Light-->
+			<required_items>
+				<item id="97188;97197" count="1"/><!--Spellbook: Ray of Light-->
+			</required_items>
+		</skill>
+		<skill id="47917" level="2" min_level="84" cost="240000000"/><!--Ray of Light-->
+		<skill id="47917" level="3" min_level="86" cost="840000000"/><!--Ray of Light-->
+		<skill id="47917" level="4" min_level="88" cost="840000000"/><!--Ray of Light-->
+		<skill id="47917" level="5" min_level="90" cost="840000000"/><!--Ray of Light-->
+		<skill id="47918" level="5" min_level="76" cost="8100000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="6" min_level="78" cost="17900000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="7" min_level="80" cost="17900000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="8" min_level="82" cost="170000000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="9" min_level="84" cost="240000000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="10" min_level="86" cost="840000000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="11" min_level="88" cost="840000000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="12" min_level="89" cost="840000000"/><!--Summoner's Attack Mastery-->
+		<skill id="47918" level="13" min_level="90" cost="840000000"/><!--Summoner's Attack Mastery-->
+		<skill id="47919" level="5" min_level="76" cost="8100000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="6" min_level="78" cost="17900000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="7" min_level="80" cost="17900000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="8" min_level="82" cost="170000000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="9" min_level="84" cost="240000000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="10" min_level="86" cost="840000000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="11" min_level="88" cost="840000000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="12" min_level="89" cost="840000000"/><!--Summoner's Armor Mastery-->
+		<skill id="47919" level="13" min_level="90" cost="840000000"/><!--Summoner's Armor Mastery-->
+		<skill id="47920" level="5" min_level="76" cost="8100000"/><!--Summoner's Recovery Mastery-->
+		<skill id="47920" level="6" min_level="80" cost="17900000"/><!--Summoner's Recovery Mastery-->
+		<skill id="47920" level="7" min_level="85" cost="840000000"/><!--Summoner's Recovery Mastery-->
+		<skill id="47920" level="8" min_level="90" cost="840000000"/><!--Summoner's Recovery Mastery-->
+	</normal_skill_tree>
+</list>

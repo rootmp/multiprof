@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!-- Author: nexvill -->
+<list>
+	<item>
+		<production id="94084" count="1" />
+		<ingredient id="93930" count="1" />
+	</item>
+	<item>
+		<production id="94086" count="1" />
+		<ingredient id="93930" count="1" />
+	</item>
+	<item>
+		<production id="93141" count="1" />
+		<ingredient id="93930" count="1" />
+	</item>
+	<item>
+		<production id="93142" count="1" />
+		<ingredient id="93930" count="1" />
+	</item>
+	<item>
+		<production id="93317" count="1" />
+		<ingredient id="93930" count="2" />
+	</item>
+	<item>
+		<production id="93318" count="1" />
+		<ingredient id="93930" count="1" />
+	</item>
+	<item>
+		<production id="93735" count="1" />
+		<ingredient id="93930" count="1" />
+	</item>
+	<item>
+		<production id="93736" count="1" />
+		<ingredient id="93930" count="1" />
+	</item>
+</list>

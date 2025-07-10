@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="3300" name="Talisman of Kadesh - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3301" name="Snake Amulet - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3302" name="Mithril Clip - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3303" name="Stakato Chitin - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3304" name="Reinforced Bowstring - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3305" name="Manashen's Horn - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3306" name="Lizardman's Blood - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3307" name="Mark of Witchcraft - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3308" name="Orim's Diagram - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3309" name="Alexandria's Book - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3310" name="Iker's List - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3311" name="Dire Wyrm Fang - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3312" name="Leto Lizardman Amulet - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3313" name="Reinforced Stone Golem Heartstone - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3314" name="Lars' Memo - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3315" name="Nestle's Memo - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3316" name="Leopold's Journal - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3317" name="Aklantoth' Gem - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3318" name="Aklantoth' Gem - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3319" name="Aklantoth' Gem - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3320" name="Aklantoth' Gem - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3321" name="Aklantoth' Gem - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3322" name="Aklantoth' Gem - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3323" name="Brimstone - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3324" name="Orim's Instructions - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3325" name="Orim's Letter - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3326" name="Orim's Letter - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3327" name="Sir Vasper's Letter - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3328" name="Vadin's Crucifix - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3329" name="Tamlin Orc Amulet - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3330" name="Vadin's Sanctions - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3331" name="Iker's Amulet - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3332" name="Bound Crystal - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3333" name="Purgatory Key - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3334" name="Zeruel Bind Crystal - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3335" name="Brimstone - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3336" name="Mark of Summoner - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3337" name="Leto Lizardman Amulet - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3338" name="Red Spore Dust - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3339" name="Karul Bugbear Totem - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3340" name="Manashen Shard - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3341" name="Breka Orc Totem - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3342" name="Crimson Bloodstone - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3343" name="Tyrant's Talons - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3344" name="Noble Ant's Wings - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3345" name="Windsus Tusk - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3346" name="Wyrm's Fangs - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3347" name="Lars' List - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3348" name="Lars' List - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3349" name="Lars' List - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3350" name="Lars' List - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3351" name="Lars' List - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3352" name="Galatea's Letter - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3353" name="Beginner's Arcana - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3354" name="Almors' Arcana - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3355" name="Camoniell's Arcana - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3356" name="Belthus' Arcana - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3357" name="Basillia's Arcana - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3358" name="Celestiel's Arcana - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3359" name="Brynthea's Arcana - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3360" name="Crystal of Starting - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3361" name="Crystal of Progress - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3362" name="Crystal of Foul - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3363" name="Crystal of Defeat - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3364" name="Crystal of Victory - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3365" name="Crystal of Starting - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3366" name="Crystal of Progress - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3367" name="Crystal of Foul - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3368" name="Crystal of Defeat - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3369" name="Crystal of Victory - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3370" name="Crystal of Starting - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3371" name="Crystal of Progress - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3372" name="Crystal of Foul - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3373" name="Crystal of Defeat - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3374" name="Crystal of Victory - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3375" name="Crystal of Starting - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3376" name="Crystal of Progress - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3377" name="Crystal of Foul - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3378" name="Crystal of Defeat - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3379" name="Crystal of Victory - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3380" name="Crystal of Starting - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3381" name="Crystal of Progress - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3382" name="Crystal of Foul - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3383" name="Crystal of Defeat - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3384" name="Crystal of Victory - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3385" name="Crystal of Starting - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3386" name="Crystal of Progress - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3387" name="Crystal of Foul - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3388" name="Crystal of Defeat - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3389" name="Crystal of Victory - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3390" name="Mark of Lord - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3391" name="Ritual Necklace - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3392" name="Varkees's Charm - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3393" name="Tantus' Charm - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3394" name="Hatos' Charm - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3395" name="Takuna's Charm - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3396" name="Chianta's Charm - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3397" name="Manakia's Orders - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3398" name="Breka Orc Fang - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="3399" name="Manakia's Amulet - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+</list>

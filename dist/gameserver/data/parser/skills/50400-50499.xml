@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="50400" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtkSpd" value="30"/>
+			<add stat="mAtkSpd" value="30"/>
+		</for>
+	</skill>
+	<skill id="50401" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50402" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="blowRate" value="1.05"/>
+		</for>
+	</skill>
+	<skill id="50403" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_skill_critical_damage value="50" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="50404" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_skill_critical_damage value="50" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="50405" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtkRange" value="20"/>
+			<add stat="poleTargetCount" value="1"/>
+		</for>
+	</skill>
+	<skill id="50406" levels="1" name="+5 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50407" levels="1" name="+6 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50408" levels="1" name="+7 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50409" levels="1" name="+8 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50410" levels="1" name="+9 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50411" levels="1" name="+10 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50412" levels="1" name="+5 Boss' Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50413" levels="1" name="+6 Boss' Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50414" levels="1" name="+7 Boss' Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50415" levels="1" name="+8 Boss' Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50416" levels="1" name="+9 Boss' Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50417" levels="1" name="+10 Boss' Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50418" levels="1" name="+1 Death Knight's Flame Sword Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50419" levels="1" name="+2 Death Knight's Flame Sword Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50420" levels="1" name="+3 Death Knight's Flame Sword Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50421" levels="1" name="+16 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="200"/>
+			<add stat="mAtk" value="250"/>
+		</for>
+	</skill>
+	<skill id="50422" levels="1" name="+20 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pCritRate" value="10"/>
+			<add stat="mCritRate" value="10"/>
+			<mul stat="p_skill_critical_rate" value="1.1"/>
+		</for>
+	</skill>
+	<skill id="50423" levels="1" name="+25 A-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="p_skill_power" value="1.1"/>
+			<mul stat="mSkillPower" value="1.1" />
+		</for>
+	</skill>
+	<skill id="50424" levels="1" name="+16 S-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="400"/>
+			<add stat="mAtk" value="600"/>
+		</for>
+	</skill>
+	<skill id="50425" levels="1" name="+20 S-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pCritRate" value="15"/>
+			<add stat="mCritRate" value="15"/>
+			<mul stat="p_skill_critical_rate" value="1.15"/>
+		</for>
+	</skill>
+	<skill id="50426" levels="1" name="+25 S-grade Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_enchant"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="p_skill_power" value="1.15"/>
+			<mul stat="mSkillPower" value="1.15" />
+		</for>
+	</skill>
+	<skill id="50427" levels="4" name="Necklace: Frintezza's Necklace">
+		<table name="#icon">icon.accessory_necklace_of_frintessa_i00 icon.accessory_necklace_of_frintessa_i03 icon.accessory_necklace_of_frintessa_i04 icon.accessory_necklace_of_frintessa_i05</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">30 36 50 65</table>
+		<table name="#sleep">10 15 20 30</table>
+		<table name="#pSkillPower">1.05 1.1 1.15 1.2</table>
+		<table name="#mReuse">0.95 0.94 0.92 0.9</table>
+		<table name="#mCritRate">2 3 5 10</table>
+		<table name="#p_critical_damage">20 50 100 200</table>
+		<table name="#reflectDam">0 0 5 10</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<p_defence_trait name="sleep" value="#sleep"/>
+			<p_attack_trait name="sleep" value="#sleep"/>
+			<mul stat="p_skill_power" value="#pSkillPower"/>
+			<mul stat="mSkillPower" value="#pSkillPower"/>
+			<mul stat="mReuse" value="#mReuse"/>
+			<mul stat="pReuse" value="#mReuse"/>
+			<mul stat="musicReuse" value="#mReuse"/>
+			<add stat="mCritRate" value="#mCritRate"/>
+			<add stat="pCritRate" value="#mCritRate"/>
+			<p_critical_damage value="#p_critical_damage" type="DIFF"/>
+			<p_magic_critical_dmg value="#p_critical_damage" type="DIFF"/>
+			<add stat="reflectDam" value="#reflectDam"/>
+			<add stat="reflectBowDam" value="#reflectDam"/>
+			<add stat="reflectPSkillDam" value="#reflectDam"/>
+			<add stat="reflectMSkillDam" value="#reflectDam"/>
+		</for>
+	</skill>
+	<skill id="50428" levels="1" name="A-grade: Stun Gauntlets">
+		<set name="icon" value="icon.armor_t96_g_i03"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="maxNoPenaltyLoad" value="1000"/>
+			<add stat="mDef" value="50"/>
+			<add stat="maxHp" value="200"/>
+			<mul stat="pAtkSpd" value="1.1"/>
+			<mul stat="mAtkSpd" value="1.18"/>
+		</for>
+	</skill>
+	<skill id="50429" levels="1" name="Enchant Effect: Stun Gauntlets">
+		<set name="icon" value="icon.armor_t96_g_i03"/>
+		<table name="#chance">1</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50431" level="1" type="ATTACK" chance="#chance"/>
+			<trigger id="50431" level="1" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance"/>
+			<trigger id="50431" level="1" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance"/>
+		</triggers>
+	</skill>
+	<skill id="50430" levels="10" name="Enchant Effect: Stun Gauntlets">
+		<set name="icon" value="icon.armor_t96_g_i03"/>
+		<table name="#p_critical_damage">0 0 0 0 50 100 200 300 400 500</table>
+		<table name="#crit">1 1 1 1 0.98 0.97 0.96 0.95 0.94 0.92</table>
+		<table name="#chance">1 1 1 1 3 5 7 8 9 10</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50431" level="1" type="ATTACK" chance="#chance"/>
+			<trigger id="50431" level="1" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance"/>
+			<trigger id="50431" level="1" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance"/>
+		</triggers>
+		<for>
+			<p_critical_damage value="#p_critical_damage" type="DIFF"/>
+			<p_magic_critical_dmg value="#p_critical_damage" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="50431" levels="11" name="Swift Fist">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.armor_t96_g_i03"/>
+		<set name="castRange" value="900"/>
+		<table name="#percent">5 7 9 12 15 20 25 30 40 50</table>
+		<table name="#activateRate">1 1 1 1 2 3 4 6 8 10</table>
+		<set name="ride_state" value="NONE"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="nextAction" value="attack"/>
+		<set name="abnormal_effect" value="STUN"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="activateRate" value="#activateRate"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="PercentPatk" value="#percent"/>
+			<effect name="Stun"/>
+		</for>
+	</skill>
+	<skill id="50432" levels="1" name="A-grade: Sigil of Inevitability">
+		<set name="icon" value="icon.elos_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50434" level="1" type="ATTACK" chance="1"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="20"/>
+			<add stat="pAtkSpd" value="5"/>
+			<add stat="mAtkSpd" value="5"/>
+			<add stat="mCritRate" value="1"/>
+			<add stat="pCritRate" value="1"/>
+		</for>
+	</skill>
+	<skill id="50433" levels="10" name="Enchant Effect: Sigil of Inevitability">
+		<set name="icon" value="icon.elos_i00"/>
+		<table name="#pAtkSpd">10 15 25 30 45 60 100 120 160 250</table>
+		<table name="#mCritRate">1 1 1 2 4 5 6 8 9 10</table>
+		<table name="#maxMp">30 40 50 80 150 180 250 300 400 500</table>
+		<table name="#chance">1 1 1 1 2 3 5 7 9 10</table>
+		<table name="#triglvl">1 1 1 2 3 4 5 6 7 8</table>
+		<table name="#chance2">0 0 0 0 1 1 1 2 3 5</table>
+		<table name="#triglvl2">1 1 1 1 1 2 3 4 5 6</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50434" level="#triglvl" type="ATTACK" chance="#chance"/>
+			<trigger id="50435" level="#triglvl2" type="ATTACK" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pAtkSpd" value="#pAtkSpd"/>
+			<add stat="mAtkSpd" value="#pAtkSpd"/>
+			<add stat="mCritRate" value="#mCritRate"/>
+			<add stat="pCritRate" value="#mCritRate"/>
+		</for>
+	</skill>
+	<skill id="50434" levels="8" name="Fatal Power">
+		<set name="icon" value="icon.skill10076"/>
+		<table name="#pSkillPower">1.01 1.02 1.03 1.04 1.05 1.08 1.09 1.1</table>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="10"/>
+		<set name="abnormal_type" value="block_shield_up"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="p_skill_power" value="#pSkillPower"/>
+				<mul stat="mSkillPower" value="#pSkillPower"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50435" levels="6" name="Fatal Impulse">
+		<set name="icon" value="icon.skill10064"/>
+		<table name="#p_critical_damage">50 100 200 300 400 500</table>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="10"/>
+		<set name="abnormal_type" value="block_shield_up"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<p_critical_damage value="#p_critical_damage" type="DIFF"/>
+				<p_magic_critical_dmg value="#p_critical_damage" type="DIFF"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50436" levels="1" name="A-grade: Shield of Vengeance">
+		<set name="icon" value="icon.shield_of_revenge"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50438" level="1" type="RECEIVE_DAMAGE" chance="1"/>
+		</triggers>
+		<for>
+			<add stat="maxHp" value="20"/>
+			<mul stat="pCritChanceRcpt" value="0.99"/>
+			<mul stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</skill>
+	<skill id="50437" levels="10" name="Enchant Effect: Shield of Vengeance">
+		<set name="icon" value="icon.shield_of_revenge"/>
+		<table name="#maxHp">30 40 60 80 200 250 300 400 450 800</table>
+		<table name="#sDef">20 30 60 100 200 400 700 1000 1500 2000</table>
+		<table name="#pCritChanceRcpt">0.98 0.97 0.96 0.95 0.92 0.91 0.9 0.89 0.88 0.85</table>
+		<table name="#chance">1 1 1 1 2 3 6 8 9 10</table>
+		<table name="#triglvl">1 1 2 3 4 5 6 7 8 9</table>
+		<table name="#chance2">0 0 0 0 3 3 3 3 3 3</table>
+		<table name="#triglvl2">1 1 1 1 1 2 3 4 5 6</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50438" level="#triglvl" type="RECEIVE_DAMAGE" chance="#chance"/>
+			<trigger id="50439" level="#triglvl2" type="RECEIVE_DAMAGE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<add stat="maxHp" value="#maxHp"/>
+			<add stat="sDef" value="#sDef"/>
+			<mul stat="pCritChanceRcpt" value="#pCritChanceRcpt"/>
+			<mul stat="mCritChanceRcpt" value="#pCritChanceRcpt"/>
+		</for>
+	</skill>
+	<skill id="50438" levels="11" name="Protective Barrier">
+		<set name="icon" value="icon.skill1515"/>
+		<set name="reuseDelay" value="60000"/>
+		<table name="#rShld">1.05 1.05 1.05 1.1 1.15 1.2 1.3 1.4 1.6 1.8 2</table>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="10"/>
+		<set name="abnormal_type" value="block_shield_up"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="rShld" value="#rShld"/>
+				<mul stat="mDef" value="#rShld"/>
+				<mul stat="pDef" value="#rShld"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50439" levels="6" name="Retribution Defence">
+		<set name="icon" value="icon.skill10021_2"/>
+		<set name="reuseDelay" value="60000"/>
+		<table name="#reflect">5 15 30 60 100 150</table>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="10"/>
+		<set name="abnormal_type" value="block_shield_up"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="reflectDam" value="#reflect"/>
+				<add stat="reflectBowDam" value="#reflect"/>
+				<add stat="reflectPSkillDam" value="#reflect"/>
+				<add stat="reflectMSkillDam" value="#reflect"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50440" levels="15" name="Chocolate Doll">
+		<set name="icon" value="icon.gomdori_chest_change"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50441" levels="4" name="Earring: Antharas' Earring">
+		<table name="#icon">icon.accessory_earring_of_antaras_i00 icon.accessory_earring_of_antaras_i01 icon.accessory_earring_of_antaras_i02 icon.accessory_earring_of_antaras_i04</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">28 34 40 50</table>
+		<table name="#p_heal_effect_per">6 10 15 20</table>
+		<table name="#mpConsum">0.97 0.96 0.94 0.85</table>
+		<table name="#absorbDam">2 3 6 6</table>
+		<table name="#bleed">10 20 30 40</table>
+		<table name="#derangement">5 10 20 30</table>
+		<table name="#resistRelectDam">0 7 15 20</table>
+		<table name="#CON">0 0 1 2</table>
+		<table name="#MEN">0 0 1 2</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="CON" value="#CON"/>
+			<add stat="MEN" value="#MEN"/>
+			<p_heal_effect value="#p_heal_effect_per" type="PER"/>
+			<p_vampiric_attack value="#absorbDam" chance="30"/>
+			<p_defence_trait name="bleed" value="#bleed"/>
+			<p_defence_trait name="derangement" value="#derangement"/>
+			<p_defence_trait name="shock" value="#derangement"/>
+			<p_attack_trait name="bleed" value="#bleed"/>
+			<p_attack_trait name="derangement" value="#derangement"/>
+			<p_attack_trait name="shock" value="#derangement"/>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<mul stat="mpConsumePhysical" value="#mpConsum"/>
+			<mul stat="mpDanceConsume" value="#mpConsum"/>
+			<add stat="resistRelectDam" value="#resistRelectDam"/>
+			<add stat="maxMp" value="#maxMp"/>
+		</for>
+	</skill>
+	<skill id="50442" levels="4" name="Earring: Zaken's Earring">
+		<table name="#icon">icon.accessory_earring_of_zaken_i00 icon.accessory_earring_of_zaken_i02 icon.accessory_earring_of_zaken_i03 icon.accessory_earring_of_zaken_i04</table>
+		<set name="icon" value="#icon"/>
+		<table name="#p_defence_trait_bleed">10 15 20 30</table>
+		<table name="#p_attack_trait_bleed">10 15 20 30</table>
+		<table name="#p_defence_trait_derangement">5 10 15 20</table>
+		<table name="#p_attack_trait_derangement">5 10 15 20</table>
+		<table name="#p_attack_trait_shock">5 10 15 20</table>
+		<table name="#p_defence_trait_shock">5 10 15 20</table>
+		<table name="#p_heal_effect_per">4 6 10 15</table>
+		<table name="#mpconsum">0.98 0.97 0.96 0.9</table>
+		<table name="#regHp">1.1 1.15 1.2 1.2</table>
+		<table name="#maxmp">22 28 34 45</table>
+		<table name="#absorbDam">0 0 8 8</table>
+		<set name="magicLevel" value="75"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_heal_effect value="#p_heal_effect_per" type="PER"/>
+			<p_vampiric_attack value="#absorbDam" chance="80"/>
+			<p_defence_trait name="bleed" value="#p_defence_trait_bleed"/>
+			<p_defence_trait name="derangement" value="#p_defence_trait_derangement"/>
+			<p_defence_trait name="shock" value="#p_defence_trait_shock"/>
+			<p_attack_trait name="bleed" value="#p_attack_trait_bleed"/>
+			<p_attack_trait name="derangement" value="#p_attack_trait_derangement"/>
+			<p_attack_trait name="shock" value="#p_attack_trait_shock"/>
+			<mul stat="mpConsum" value="#mpconsum"/>
+			<mul stat="mpConsumePhysical" value="#mpconsum"/>
+			<mul stat="mpDanceConsume" value="#mpconsum"/>
+			<mul stat="regHp" value="#regHp"/>
+			<add stat="maxMp" value="#maxmp"/>
+		</for>
+	</skill>
+	<skill id="50443" levels="4" name="Ring: Baium's Ring">
+		<table name="#icon">icon.accessory_ring_of_baium_i00 icon.accessory_ring_of_baium_i02 icon.accessory_ring_of_baium_i03 icon.accessory_ring_of_baium_i04</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">15 21 27 35</table>
+		<table name="#mAtkSpd">1.03 1.04 1.05 1.1</table>
+		<table name="#acc">2 3 4 8</table>
+		<table name="#pSkillPower">1.05 1.06 1.1 1.2</table>
+		<table name="#p_attack_trait">5 10 15 20</table>
+		<table name="#p_defence_trait">5 10 15 20</table>
+		<table name="#p_attack_trait2">10 15 20 30</table>
+		<table name="#p_defence_trait2">10 15 20 30</table>
+		<table name="#p_critical_damage">0 0 15 20</table>
+		<table name="#m_critical_damage">0 0 10 20</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pAccCombat" value="#acc"/>
+			<add stat="mAccCombat" value="#acc"/>
+			<mul stat="pAtkSpd" value="#mAtkSpd"/>
+			<mul stat="mAtkSpd" value="#mAtkSpd"/>
+			<mul stat="p_skill_power" value="#pSkillPower"/>
+			<mul stat="mSkillPower" value="#pSkillPower"/>
+			<p_critical_damage value="#p_critical_damage" type="PER"/>
+			<p_magic_critical_dmg value="#m_critical_damage" type="PER"/>
+			<p_attack_trait name="bleed" value="#p_attack_trait"/>
+			<p_defence_trait name="bleed" value="#p_defence_trait"/>
+			<p_attack_trait name="shock" value="#p_attack_trait2"/>
+			<p_defence_trait name="shock" value="#p_defence_trait2"/>
+		</for>
+	</skill>
+	<skill id="50444" levels="6" name="Rare Accessory: Queen Ant's Ring">
+		<table name="#icon">icon.accessory_ring_of_queen_ant_i03 icon.accessory_ring_of_queen_ant_i03 icon.accessory_ring_of_queen_ant_i03 icon.accessory_ring_of_queen_ant_i03 icon.accessory_ring_of_queen_ant_i04 icon.accessory_ring_of_queen_ant_i05</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">9 15 21 30 40 50</table>
+		<table name="#acc">1 2 3 4 6 10</table>
+		<table name="#pAtk">1.04 1.06 1.07 1.09 1.11 1.15</table>
+		<table name="#p_attack_trait">10 15 20 20 20 20</table>
+		<table name="#p_defence_trait">10 15 20 20 20 20</table>
+		<table name="#p_critical_damage">0 0 10 10 15 20</table>
+		<table name="#m_critical_damage">0 0 5 10 15 20</table>
+		<table name="#chance">0 0 0 0 0 5</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50451" level="1" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pAccCombat" value="#acc"/>
+			<add stat="mAccCombat" value="#acc"/>
+			<mul stat="pAtk" value="#pAtk"/>
+			<mul stat="mAtk" value="#pAtk"/>
+			<p_critical_damage value="#p_critical_damage" type="PER"/>
+			<p_magic_critical_dmg value="#m_critical_damage" type="PER"/>
+			<p_attack_trait name="poison" value="#p_attack_trait"/>
+			<p_defence_trait name="poison" value="#p_defence_trait"/>
+		</for>
+	</skill>
+	<skill id="50445" levels="6" name="Rare Accessory: Ring of Core">
+		<table name="#icon">icon.accessory_ring_of_core_i03 icon.accessory_ring_of_core_i03 icon.accessory_ring_of_core_i03 icon.accessory_ring_of_core_i03 icon.accessory_ring_of_core_i04 icon.accessory_ring_of_core_i05</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">9 15 21 30 40 50</table>
+		<table name="#evas">1 2 4 6 8 10</table>
+		<table name="#atk">0 0 0 0 100 200</table>
+		<table name="#def">1.02 1.04 1.06 1.08 1.1 1.15</table>
+		<table name="#receive_p_damage_power">0.98 0.96 0.94 0.92 0.9 0.85</table>
+		<table name="#chance">0 0 0 0 0 5</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50452" level="1" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pEvasRate" value="#evas"/>
+			<add stat="mEvasRate" value="#evas"/>
+			<mul stat="pDef" value="#def"/>
+			<mul stat="mDef" value="#def"/>
+			<add stat="pAtk" value="#atk"/>
+			<add stat="mAtk" value="#atk"/>
+			<mul stat="receive_p_damage_power" value="#receive_p_damage_power"/>
+			<mul stat="receive_m_damage_power" value="#receive_p_damage_power"/>
+			<!--<p_attack_trait name="poison" value="#p_attack_trait"/>
+			<p_defence_trait name="poison" value="#p_defence_trait"/>
+			<p_attack_trait name="shock" value="#p_attack_trait2"/>
+			<p_defence_trait name="shock" value="#p_defence_trait2"/>-->
+		</for>
+	</skill>
+	<skill id="50446" levels="6" name="Rare Accessory: Baium's Ring">
+		<table name="#icon">icon.accessory_ring_of_baium_i03 icon.accessory_ring_of_baium_i03 icon.accessory_ring_of_baium_i03 icon.accessory_ring_of_baium_i03 icon.accessory_ring_of_baium_i04 icon.accessory_ring_of_baium_i05</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">15 21 27 40 55 70</table>
+		<table name="#acc">2 3 4 6 8 10</table>
+		<table name="#mAtkSpd">1.03 1.04 1.05 1.07 1.09 1.12</table>
+		<table name="#pSkillPower">1.03 1.06 1.1 1.12 1.15 1.2</table>
+		<table name="#p_attack_trait">5 10 15 15 15 15</table>
+		<table name="#p_defence_trait">5 10 15 15 15 15</table>
+		<table name="#p_attack_trait2">10 15 20 20 20 20</table>
+		<table name="#p_defence_trait2">10 15 20 20 20 20</table>
+		<table name="#p_critical_damage">0 0 15 15 18 23</table>
+		<table name="#m_critical_damage">0 0 10 15 18 23</table>
+		<table name="#chance">0 0 0 0 0 5</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50453" level="1" type="ATTACK" chance="#chance"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pAccCombat" value="#acc"/>
+			<add stat="mAccCombat" value="#acc"/>
+			<mul stat="pAtkSpd" value="#mAtkSpd"/>
+			<mul stat="mAtkSpd" value="#mAtkSpd"/>
+			<mul stat="p_skill_power" value="#pSkillPower"/>
+			<mul stat="mSkillPower" value="#pSkillPower"/>
+			<p_critical_damage value="#p_critical_damage" type="PER"/>
+			<p_magic_critical_dmg value="#m_critical_damage" type="PER"/>
+			<p_attack_trait name="poison" value="#p_attack_trait"/>
+			<p_defence_trait name="poison" value="#p_defence_trait"/>
+			<p_attack_trait name="shock" value="#p_attack_trait2"/>
+			<p_defence_trait name="shock" value="#p_defence_trait2"/>
+		</for>
+	</skill>
+	<skill id="50447" levels="6" name="Rare Accessory: Orfen's Earring">
+		<table name="#icon">icon.accessory_earring_of_orfen_i03 icon.accessory_earring_of_orfen_i03 icon.accessory_earring_of_orfen_i03 icon.accessory_earring_of_orfen_i03 icon.accessory_earring_of_orfen_i04 icon.accessory_earring_of_orfen_i05</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">19 25 31 40 50 60</table>
+		<table name="#pAtk">0 0 0 50 100 200</table>
+		<table name="#p_heal_effect">2 4 6 8 10 15</table>
+		<table name="#mpConsum">0.98 0.97 0.95 0.94 0.97 0.9</table>
+		<table name="#vamp">0 0 3 3 3 3</table>
+		<table name="#absorbDam">0 0 5 5 5 5</table>
+		<table name="#regMp">0 0 0 2 3 5</table>
+		<table name="#magicResist">1 1 1 1 1.03 1.05</table>
+		<table name="#p_defence_traithold">10 15 20 20 20 20</table>
+		<table name="#p_defence_trait_der">5 10 15 15 15 15</table>
+		<table name="#chance">0 0 0 0 0 5</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50471" level="1" type="ATTACK" chance="#chance"/><!--реген -->
+			<trigger id="50454" level="1" type="ATTACK" chance="#chance"/><!--sleep -->
+		</triggers>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pAtk" value="#pAtk"/>
+			<add stat="mAtk" value="#pAtk"/>
+			<p_heal_effect value="#p_heal_effect" type="PER"/>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<mul stat="mpConsumePhysical" value="#mpConsum"/>
+			<mul stat="mpDanceConsume" value="#mpConsum"/>
+			<p_mp_vampiric_attack value="1" chance="#absorbDam"/>
+			<add stat="regMp" value="#regMp"/>
+			<mul stat="magicResist" value="#magicResist"/>
+			<p_defence_trait name="hold" value="#p_defence_traithold"/>
+			<p_defence_trait name="derangement" value="#p_defence_trait_der"/>
+			<p_attack_trait name="hold" value="#p_defence_traithold"/>
+			<p_attack_trait name="derangement" value="#p_defence_trait_der"/>
+		</for>
+	</skill>
+	<skill id="50448" levels="6" name="Rare Accessory: Zaken's Earring">
+		<table name="#icon">icon.accessory_earring_of_zaken_i03 icon.accessory_earring_of_zaken_i03 icon.accessory_earring_of_zaken_i03 icon.accessory_earring_of_zaken_i03 icon.accessory_earring_of_zaken_i04 icon.accessory_earring_of_zaken_i05</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">22 28 34 45 60 90</table>
+		<table name="#pAtk">0 0 0 0 50 200</table>
+		<table name="#mpConsum">0.98 0.97 0.96 0.95 0.94 0.92</table>
+		<table name="#p_heal_effect">4 6 10 12 15 20</table>
+		<table name="#regHp">1.1 1.15 1.2 1.2 1.2 1.2</table>
+		<table name="#p_vampiric_attack">0 0 8 8 8 8</table>
+		<table name="#potion_hp_heal_effect">0 0 0 50 100 200</table>
+		<table name="#p_attack_traitbleed">10 15 20 20 20 20</table>
+		<table name="#p_defence_traitbleed">10 15 20 20 20 20</table>
+		<table name="#p_attack_trait">5 10 15 15 15 15</table>
+		<table name="#p_defence_trait">5 10 15 15 15 15</table>
+		<table name="#chance">0 0 0 0 0 5</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50455" level="1" type="ATTACK" chance="#chance"/>
+			<trigger id="50472" level="1" type="ATTACK" chance="#chance"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pAtk" value="#pAtk"/>
+			<add stat="mAtk" value="#pAtk"/>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<mul stat="mpConsumePhysical" value="#mpConsum"/>
+			<mul stat="mpDanceConsume" value="#mpConsum"/>
+			<p_heal_effect value="#p_heal_effect" type="PER"/>
+			<mul stat="regHp" value="#regHp"/>
+			<p_vampiric_attack value="#p_vampiric_attack" chance="8"/>
+			<stat_effect name="potion_hp_heal_effect" value="#potion_hp_heal_effect" type="DIFF"/>
+			<p_attack_trait name="bleed" value="#p_attack_traitbleed"/>
+			<p_defence_trait name="bleed" value="#p_defence_traitbleed"/>
+			<p_attack_trait name="shock" value="#p_attack_trait"/>
+			<p_defence_trait name="shock" value="#p_defence_trait"/>
+			<p_attack_trait name="derangement" value="#p_attack_trait"/>
+			<p_defence_trait name="derangement" value="#p_defence_trait"/>
+		</for>
+	</skill>
+	<skill id="50449" levels="6" name="Rare Accessory: Antharas' Earring">
+		<table name="#icon">icon.accessory_earring_of_antaras_i02 icon.accessory_earring_of_antaras_i02 icon.accessory_earring_of_antaras_i02 icon.accessory_earring_of_antaras_i02 icon.accessory_earring_of_antaras_i04 icon.accessory_earring_of_antaras_i05</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">28 34 40 50 70 100</table>
+		<table name="#pAtk">0 0 0 50 150 300</table>
+		<table name="#p_heal_effect_per">6 10 15 17 20 30</table>
+		<table name="#mpConsum">0.97 0.95 0.94 0.93 0.92 0.9</table>
+		<table name="#absorbDam">3 4 6 7 8 10</table>
+		<table name="#bleed">10 20 30 30 30 30</table>
+		<table name="#derangement">5 10 20 20 20 20</table>
+		<table name="#resistRelectDam">0 7 15 20 25 30</table>
+		<table name="#CON">0 0 1 1 2 3</table>
+		<table name="#MEN">0 0 1 1 2 3</table>
+		<table name="#chance">0 0 0 0 0 5</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50456" level="1" type="ATTACK" chance="#chance"/><!-- stun 3 sec -->
+			<trigger id="50473" level="1" type="ATTACK" chance="#chance"/><!-- heal -->
+		</triggers>
+		<for>
+			<add stat="CON" value="#CON"/>
+			<add stat="MEN" value="#MEN"/>
+			<p_heal_effect value="#p_heal_effect_per" type="PER"/>
+			<p_vampiric_attack value="#absorbDam" chance="30"/>
+			<p_defence_trait name="bleed" value="#bleed"/>
+			<p_defence_trait name="derangement" value="#derangement"/>
+			<p_defence_trait name="shock" value="#derangement"/>
+			<p_attack_trait name="bleed" value="#bleed"/>
+			<p_attack_trait name="derangement" value="#derangement"/>
+			<p_attack_trait name="shock" value="#derangement"/>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<mul stat="mpConsumePhysical" value="#mpConsum"/>
+			<mul stat="mpDanceConsume" value="#mpConsum"/>
+			<add stat="resistRelectDam" value="#resistRelectDam"/>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pAtk" value="#pAtk"/>
+			<add stat="mAtk" value="#pAtk"/>
+		</for>
+	</skill>
+	<skill id="50450" levels="6" name="Rare Accessory: Frintezza's Necklace">
+		<table name="#icon">icon.accessory_necklace_of_frintessa_i04 icon.accessory_necklace_of_frintessa_i04 icon.accessory_necklace_of_frintessa_i04 icon.accessory_necklace_of_frintessa_i04 icon.accessory_necklace_of_frintessa_i05 icon.accessory_necklace_of_frintessa_i06</table>
+		<set name="icon" value="#icon"/>
+		<table name="#maxMp">30 36 50 65 90 120</table>
+		<table name="#pSkillPower">1.05 1.1 1.15 1.18 1.23 1.25</table>
+		<table name="#mReuse">0.95 0.94 0.92 0.9 0.88 0.85</table>
+		<table name="#mCritRate">2 3 5 6 7 10</table>
+		<table name="#crit">2 50 100 150 200 300</table>
+		<table name="#p_attack_trait">10 15 20 20 20 20</table>
+		<table name="#p_defence_trait">10 15 20 20 20 20</table>
+		<table name="#reflectDam">0 0 5 6 10 15</table>
+		<table name="#chance">0 0 0 0 0 5</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50457" level="1" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<mul stat="p_skill_power" value="#pSkillPower"/>
+			<mul stat="mSkillPower" value="#pSkillPower"/>
+			<mul stat="mReuse" value="#mReuse"/>
+			<mul stat="pReuse" value="#mReuse"/>
+			<mul stat="musicReuse" value="#mReuse"/>
+			<add stat="mCritRate" value="#mCritRate"/>
+			<add stat="pCritRate" value="#mCritRate"/>
+			<p_critical_damage value="#crit" type="DIFF"/>
+			<p_magic_critical_dmg value="#crit" type="DIFF"/>
+			<add stat="reflectDam" value="#reflectDam"/>
+			<add stat="reflectBowDam" value="#reflectDam"/>
+			<add stat="reflectPSkillDam" value="#reflectDam"/>
+			<add stat="reflectMSkillDam" value="#reflectDam"/>
+			<p_attack_trait name="sleep" value="#p_attack_trait"/>
+			<p_defence_trait name="sleep" value="#p_defence_trait"/>
+		</for>
+	</skill>
+	<skill id="50451" levels="1" name="Queen Ant Power">
+		<set name="icon" value="icon.accessory_ring_of_queen_ant_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="10"/>
+		<set name="abnormal_type" value="block_shield_up"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="p_block_buff_slot">
+				<def name="abnormal_types" value="pa_down,ma_down"/>
+				<mul stat="pDef" value="1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50452" levels="1" name="Core Power">
+		<set name="icon" value="icon.accessory_ring_of_core_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="10"/>
+		<set name="abnormal_type" value="block_shield_up"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="p_block_buff_slot">
+				<def name="abnormal_types" value="pd_down,md_down"/>
+				<mul stat="pDef" value="1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50453" levels="1" name="Baium Power">
+		<set name="icon" value="icon.accessory_ring_of_baium_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="10"/>
+		<set name="abnormal_type" value="block_shield_up"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="1.1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50454" levels="1" name="Orfen Power">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.accessory_earring_of_orfen_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_effect" value="SLEEP"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="sleep"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="SLEEP"/>
+		<for>
+			<effect name="Sleep">
+				<p_defence_trait name="sleep" value="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50455" levels="1" name="Zaken Power">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.accessory_earring_of_zaken_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_effect" value="SILENCE"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="silence"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="activateRate" value="80"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="MUTE"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="Mute"/>
+		</for>
+	</skill>
+	<skill id="50456" levels="1" name="Antharas Power">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.accessory_earring_of_antaras_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="abnormal_effect" value="STUN"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="activateRate" value="90"/>
+		<set name="basic_property" value="physical_abnormal_resist"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="overHit" value="true"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="SHOCK"/>
+		<for>
+			<effect name="Stun"/>
+		</for>
+	</skill>
+	<skill id="50457" levels="1" name="Frintezza Power">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.accessory_necklace_of_frintessa_i06"/>
+		<set name="reuseDelay" value="180000"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_effect" value="TURN_FLEE"/>
+		<set name="abnormal_time" value="3"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="turn_flee"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="lv_bonus_rate" value="20"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="activateRate" value="30"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="Fear"/>
+		</for>
+	</skill>
+	<skill id="50458" levels="1" name="Pirate Earring">
+		<set name="icon" value="icon.accessory_earring_of_zaken_i03"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50459" levels="11" name="Belt: Blessed Dragon Belt">
+		<set name="icon" value="icon.dragon_belt_2"/>
+		<table name="#maxLoad">1000 2000 3000 4000 5000 6000 7000 8000 9000 10000 12000</table>
+		<table name="#inventoryLimit">0 2 4 6 6 6 6 8 8 10 12 12</table>
+		<table name="#maxHp">20 30 40 50 150 200 300 350 500 800 1500</table>
+		<table name="#maxMp">10 20 25 30 100 150 200 250 300 400 800</table>
+		<table name="#maxCp">20 30 40 50 200 300 500 600 800 1200 1500</table>
+		<table name="#potion_hp_heal_effect">0 0 0 0 80 100 120 135 175 250 400</table>
+		<table name="#potion_mp_heal_effect">0 0 0 0 10 20 30 40 65 90 120</table>
+		<table name="#pDef">10 15 20 25 30 40 50 65 90 125 300</table>
+		<table name="#mDef">10 15 20 25 30 40 50 65 90 125 300</table>
+		<table name="#pAtkSpd">0 0 0 0 5 10 20 30 50 100 200</table>
+		<table name="#mAtkSpd">0 0 0 0 10 20 30 40 50 100 200</table>
+		<table name="#baseMCritRate">0 0 0 0 0 10 20 30 40 70</table>
+		<table name="#receive_p_damage_power">1 1 1 1 1 0.98 0.97 0.96 0.93 0.88</table>
+		<table name="#p_heal_effect">0 0 0 0 0 0 5 10 20</table>
+		<table name="#CON">0 1 1 2 3 4 4 4 5 5 6</table>
+		<table name="#WIT">1 1 1 2 3 3 4 4 4 5 6</table>
+		<table name="#DEX">1 1 1 2 3 3 4 4 4 5 6</table>
+		<table name="#INT">0 0 1 2 3 3 3 4 4 4 6</table>
+		<table name="#STR">0 0 1 2 3 3 3 4 4 4 6</table>
+		<table name="#MEN">0 1 1 2 3 4 4 4 5 5 6</table>
+		<table name="#chance">0 0 0 0 1 2 3 3 3 4 4</table>
+		<table name="#triglvl">0 0 0 0 1 2 3 4 5 6 7</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50460" level="1" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<add stat="maxLoad" value="#maxLoad"/>
+			<add stat="inventoryLimit" value="#inventoryLimit"/>
+			<add stat="maxHp" value="#maxHp"/>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="maxCp" value="#maxCp"/>
+			<p_heal_effect value="#p_heal_effect" type="PER"/>
+			<stat_effect name="potion_hp_heal_effect" value="#potion_hp_heal_effect" type="DIFF"/>
+			<stat_effect name="potion_mp_heal_effect" value="#potion_mp_heal_effect" type="DIFF"/>
+			<add stat="pDef" value="#pDef"/>
+			<add stat="mDef" value="#mDef"/>
+			<add stat="pAtkSpd" value="#pAtkSpd"/>
+			<add stat="mAtkSpd" value="#mAtkSpd"/>
+			<add stat="baseMCritRate" value="#baseMCritRate"/>
+			<add stat="basePCritRate" value="#baseMCritRate"/>
+			<mul stat="receive_p_damage_power" value="#receive_p_damage_power"/>
+			<mul stat="receive_m_damage_power" value="#receive_p_damage_power"/>
+			<add order="0x10" stat="MEN" value="#MEN"/>
+			<add order="0x10" stat="CON" value="#CON"/>
+			<add order="0x10" stat="WIT" value="#WIT"/>
+			<add order="0x10" stat="DEX" value="#DEX"/>
+			<add order="0x10" stat="INT" value="#INT"/>
+			<add order="0x10" stat="STR" value="#STR"/>
+		</for>
+	</skill>
+	<skill id="50460" levels="7" name="Dragon's Protection">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.dragon_belt_grace"/>
+		<set name="hitTime" value="500"/>
+		<table name="#reuseDelay">1000</table>
+		<set name="icon" value="BranchIcon.Icon.bm_pendant_pvp"/>
+		<set name="reuseDelay" value="#reuseDelay"/>
+		<table name="#damage">20000 30000 40000 50000 60000 80000 100000</table>
+		<table name="#abnormal_level">1 2 3 4 5 6 7</table>
+		<table name="#abnormal_time">10</table>
+		<set name="coolTime" value="500"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_type" value="barrier"/>
+		<set name="isTrigger" value="true"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="target" value="TARGET_SELF"/>
+		<for>
+			<effect name="DamageBlockCount">
+				<def name="block_count" value="#damage"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50461" levels="1" name="Pet Earring">
+		<!--An earring for a per.\nP. Atk. +1000\nM. Atk. +1000-->
+		<set name="icon" value="BranchSys2.icon.g_accessory_event_earring"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50462" levels="1" name="Pet Ring">
+		<!--A ring for a pet.\nP. Def. +1000\nM. Def. +500\nAcquired XP +50%%-->
+		<set name="icon" value="BranchSys2.icon.g_accessory_event_ring"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50463" levels="5" name="Zaken Doll's Sorcery">
+		<!--A doll imbued with Zaken' power.\n\n<Effect>\nSkill Critical Rate $s1\nSkill Critical Damage $s2\nHP Recovery Potions' Effect $s3\nAbsorbs $s4 of the inflicted damage as HP.-->
+		<table name="#icon">icon.bm_zaken_doll_30d icon.bm_zaken_doll_30d icon.bm_zaken_doll_30d icon.bm_zaken_doll_30d_00 icon.bm_zaken_doll_30d_01</table>
+		<table name="#skillCritRate">10 40 60 70 80</table>
+		<table name="#skillCritDamage">100 200 300 300 300</table>
+		<table name="#potion_hp_heal_effect">20 50 80 110 150</table>
+		<table name="#vampiric">1 2 3 3 3</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="p_skill_critical_rate" value="#skillCritRate"/>
+			<add stat="mCritRate" value="#skillCritRate"/>
+			<p_skill_critical_damage value="#skillCritDamage" type="DIFF"/>
+			<p_magic_critical_dmg value="#skillCritDamage" type="DIFF"/>
+			<stat_effect name="potion_hp_heal_effect" value="#potion_hp_heal_effect" type="DIFF"/>
+			<p_vampiric_attack value="#vampiric" chance="30"/>
+		</for>
+	</skill>
+	<skill id="50464" levels="5" name="Core Doll's Sorcery">
+		<!--A doll imbued with Core's power.\n\n<Effect>\nReceived Skill Critical Damage $s1\nReceived Skill Critical Rate $s2\nShock Resistance $s3\nSleep Resistance $s4\nKnockback Resistance $s5-->
+		<table name="#icon">icon.bm_core_doll_30d icon.bm_core_doll_30d icon.bm_core_doll_30d icon.bm_core_doll_30d_00 icon.bm_core_doll_30d_01</table>
+		<table name="#rcvdSkillCritDmg">0.95 0.9 0.85 0.83 0.8</table>
+		<table name="#rcvdSkillCritRate">0.98 0.95 0.92 0.9 0.88</table>
+		<table name="#shockSleepRes">10 20 30 35 35</table>
+		<table name="#knockbackRes">5 10 20 20 20</table>
+		<table name="#paralyzeRes">0 0 0 10 20</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<mul stat="pSkillCritDamRcpt" value="#rcvdSkillCritDmg"/>
+			<mul stat="mCritDamRcpt" value="#rcvdSkillCritDmg"/>
+			<mul stat="pSkillCritChanceRcpt" value="#rcvdSkillCritRate"/>
+			<mul stat="mCritChanceRcpt" value="#rcvdSkillCritRate"/>
+			<p_defence_trait name="paralyze" value="#paralyzeRes"/>
+			<p_defence_trait name="shock" value="#shockSleepRes"/>
+			<p_defence_trait name="sleep" value="#shockSleepRes"/>
+			<p_defence_trait name="knockback" value="#knockbackRes"/>
+		</for>
+	</skill>
+	<skill id="50465" levels="11" name="Necklace of Spirits">
+		<!--A necklace imbued with the power of spirits.\nP. Atk. +$s1\nM. Atk. +$s2\nP. Def. +$s3\nM. Def. +$s4\nAtk. Spd. +$s5\nCasting Spd. +$s6-->
+		<set name="icon" value="icon.necklace_of_elemental"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50466" levels="10" name="Talisman of Hellbound">
+		<set name="icon" value="icon.hellbound_talisman_i00"/>
+		<table name="#maxHp">100 200 300 400 500 700 1000 2000 3000 5000</table>
+		<table name="#pAtk">50 100 150 200 250 300 350 400 450 500</table>
+		<table name="#pDef">100 200 300 400 500 600 700 800 900 1000</table>
+		<table name="#pAtkSpd">0 0 0 0 35 50 70 100 150 200</table>
+		<table name="#acc">0 1 2 3 4 5 6 7 8 10</table>
+		<table name="#TabrunSpd">0 0 0 0 0 1 2 3 5 7 10</table>
+		<table name="#pvpPhysDefenceBonus">1 1 1 1 1 1 1.03 1.07 1.12 1.2</table>
+		<table name="#resist_abnormal_debuff">0 0 0 0 0 0 0 -2 -5 -10</table>
+		<table name="#level">0 0 0 0 1 2 3 4 5 6</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50467" level="#level" type="ATTACK" chance="5"/>
+			<trigger id="50467" level="#level" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="5"/>
+		</triggers>
+		<for>
+			<add stat="maxHp" value="#maxHp"/>
+			<add stat="pAtk" value="#pAtk"/>
+			<add stat="mAtk" value="#pAtk"/>
+			<add stat="pDef" value="#pDef"/>
+			<add stat="mDef" value="#pDef"/>
+			<add stat="pAtkSpd" value="#pAtkSpd"/>
+			<add stat="mAtkSpd" value="#pAtkSpd"/>
+			<add stat="pAccCombat" value="#acc"/>
+			<add stat="mAccCombat" value="#acc"/>
+			<add stat="runSpd" value="#TabrunSpd"/>
+			<mul stat="pvpPhysDefenceBonus" value="#pvpPhysDefenceBonus"/>
+			<mul stat="pvpPhysSkillDefenceBonus" value="#pvpPhysDefenceBonus"/>
+			<mul stat="pvpMagicSkillDefenceBonus" value="#pvpPhysDefenceBonus"/>
+			<add stat="resist_abnormal_debuff" value="#resist_abnormal_debuff"/>
+		</for>
+	</skill>
+	<skill id="50467" levels="6" name="Hell Lightning">
+		<table name="#power">1000 1500 2000 3000 4000 5000</table>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.hellbound_talisman_i00"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="power" value="#power"/>
+		<set name="static" value="true"/>
+		<set name="operate_type" value="A2"/>
+		<set name="magicType" value="SPECIAL"/>
+	</skill>
+	<skill id="50468" levels="11" name="Hellbound Ring">
+		<!--<Effect>\nParalysis Resistance +$s1-->
+		<set name="icon" value="icon.accessary_ring_of_anguish_i00"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50469" levels="1" name="Half Mask of Glory">
+		<set name="icon" value="icon.accessory_half_face_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_magic_critical_dmg value="100" type="DIFF"/>
+			<p_critical_damage value="100" type="DIFF"/>
+			<p_skill_critical_damage value="100" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="50470" levels="15" name="Growth Rune">
+		<table name="#icon">icon.pc_cafe_rune_01 icon.pc_cafe_rune_01 icon.pc_cafe_rune_01 icon.pc_cafe_rune_01 icon.pc_cafe_rune_01 icon.pc_cafe_rune_02 icon.pc_cafe_rune_02 icon.pc_cafe_rune_02 icon.pc_cafe_rune_02 icon.pc_cafe_rune_02 icon.pc_cafe_rune_03 icon.pc_cafe_rune_03 icon.pc_cafe_rune_03 icon.pc_cafe_rune_03 icon.pc_cafe_rune_03</table>
+		<!--Acquired XP $s1\nAcquired SP $s1-->
+		<set name="icon" value="#icon"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50471" levels="1" name="Orfen Power">
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.accessory_earring_of_orfen_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect instant="true" name="RestoreMP" value="10">
+				<def name="percent" value="true"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50472" levels="1" name="Zaken Power">
+		<set name="icon" value="icon.accessory_earring_of_zaken_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="500"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="HEAL"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect instant="true" name="RestoreHP" value="10">
+				<def name="percent" value="true"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50473" levels="1" name="Antharas Power">
+		<set name="icon" value="icon.accessory_earring_of_antaras_i05"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="hitCancelTime" value="500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="HEAL"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect instant="true" name="RestoreHP" value="30">
+				<def name="percent" value="true"/>
+			</effect>
+			<effect instant="true" name="RestoreMP" value="30">
+				<def name="percent" value="true"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50474" levels="1" name="Swift Fist">
+		<!--Stuns the target and immobilizes it.-->
+		<set name="debuff" value="true"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="operate_type" value="A1"/>
+		<set name="icon" value="icon.armor_t96_g_i03"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50475" levels="1" name="A-grade: Breastplate of Protection">
+		<set name="icon" value="icon.armor_t901_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add order="0x10" stat="CON" value="2"/>
+			<add order="0x10" stat="STR" value="2"/>
+			<add stat="maxLoad" value="1500"/>
+			<p_defence_trait name="shock" value="25"/>
+			<p_defence_trait name="paralyze" value="25"/>
+			<p_defence_trait name="sleep" value="25"/>
+			<p_defence_trait name="hold" value="25"/>
+			<p_defence_trait name="derangement" value="25"/>
+		</for>
+	</skill>
+	<skill id="50476" levels="1" name="Breastplate of Protection">
+		<set name="icon" value="icon.armor_t901_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50481" level="1" type="RECEIVE_DAMAGE" chance="2"/>
+		</triggers>
+		<for>
+			<add stat="sDef" value="100"/>
+		</for>
+	</skill>
+	<skill id="50477" levels="10" name="+1 Breastplate of Protection">
+		<table name="#sDef">150 200 250 300 400 500 600 700 800 1000</table>
+		<table name="#receive_p_damage_power">1 1 1 1 0.95 0.94 0.93 0.92 0.91 0.9</table>
+		<table name="#chance">2 2 2 2 4 6 8 10 10 10</table>
+		<table name="#triglvl">1 1 1 1 1 1 1 1 2 3</table>
+		<set name="icon" value="icon.armor_t901_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50481" level="#triglvl" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<add stat="sDef" value="100"/>
+			<mul stat="receive_p_damage_power" value="#receive_p_damage_power"/>
+			<mul stat="receive_m_damage_power" value="#receive_p_damage_power"/>
+		</for>
+	</skill>
+	<skill id="50478" levels="1" name="A-grade: Gaiters of Protection">
+		<set name="icon" value="icon.armor_t901_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add order="0x10" stat="CON" value="2"/>
+			<add stat="maxLoad" value="1000"/>
+			<p_defence_trait name="shock" value="25"/>
+			<p_defence_trait name="paralyze" value="25"/>
+			<p_defence_trait name="sleep" value="25"/>
+			<p_defence_trait name="hold" value="25"/>
+			<p_defence_trait name="derangement" value="25"/>
+		</for>
+	</skill>
+	<skill id="50479" levels="1" name="Gaiters of Protection">
+		<set name="icon" value="icon.armor_t901_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50482" level="1" type="RECEIVE_DAMAGE" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50480" levels="10" name="+1 Gaiters of Protection">
+		<set name="icon" value="icon.armor_t901_l_i00"/>
+		<table name="#pvpPhysSkillDefenceBonus">1 1 1 1 1.05 1.06 1.07 1.08 1.09 1.1</table>
+		<table name="#level">2 3 4 4 5 6 7 8 9 10 11</table>
+		<table name="#chance">2 2 2 2 4 6 8 10 10 10 10</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50482" level="#level" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<mul stat="pvpPhysSkillDefenceBonus" value="#pvpPhysSkillDefenceBonus"/>
+		</for>
+	</skill>
+	<skill id="50481" levels="3" name="Counter Paralysis">
+		<table name="#abnormal_time">3 4 5</table>
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill1095"/>
+		<set name="abnormal_effect" value="PARALYZE"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="paralyze"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="activateRate" value="90"/>
+		<set name="lv_bonus_rate" value="20"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="POINT_BLANK"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="PARALYZE"/>
+		<for>
+			<effect name="Paralyze"/>
+		</for>
+	</skill>
+	<skill id="50482" levels="11" name="Damage Limit">
+		<table name="#recieveDamageLimit">5000 4800 4600 4400 4200 4000 3600 3200 2800 2400 2000</table>
+		<set name="icon" value="icon.skill10020_2"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="abnormal_effect" value="ULTIMATE_DEFENCE"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pd_up_special"/>
+		<set name="operate_type" value="A2"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<for>
+			<effect>
+				<set order="0x30" stat="recieveDamageLimit" value="#recieveDamageLimit"/>
+				<set order="0x30" stat="recieveDamageLimitPSkill" value="#recieveDamageLimit"/>
+				<set order="0x30" stat="recieveDamageLimitMSkill" value="#recieveDamageLimit"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50483" levels="1" name="A-grade: Leather Armor of Protection">
+		<set name="icon" value="icon.armor_t902_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add order="0x10" stat="DEX" value="2"/>
+			<add order="0x10" stat="STR" value="2"/>
+			<add stat="maxLoad" value="1500"/>
+			<p_defence_trait name="shock" value="25"/>
+			<p_defence_trait name="paralyze" value="25"/>
+			<p_defence_trait name="sleep" value="25"/>
+			<p_defence_trait name="hold" value="25"/>
+			<p_defence_trait name="derangement" value="25"/>
+		</for>
+	</skill>
+	<skill id="50484" levels="1" name="Leather Armor of Protection">
+		<set name="icon" value="icon.armor_t902_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50481" level="1" type="RECEIVE_DAMAGE" chance="2"/>
+		</triggers>
+		<for>
+			<add stat="pEvasRate" value="1"/>
+			<add stat="mEvasRate" value="1"/>
+			<mul stat="mEvasRate" value="1.01"/>
+			<mul stat="pSkillEvasion" value="1.01"/>
+		</for>
+	</skill>
+	<skill id="50485" levels="10" name="+1 Leather Armor of Protection">
+		<set name="icon" value="icon.armor_t902_u_i00"/>
+		<table name="#pEvasRate">2 3 4 5 6 7 9 11 13 15</table>
+		<table name="#mEvasRate">1.02 1.03 1.04 1.05 1.06 1.07 1.09 1.11 1.13 1.15</table>
+		<table name="#level">1 1 1 1 1 1 1 1 2 3</table>
+		<table name="#chance">2 2 2 2 4 6 8 10 10 10</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50481" level="#level" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<add stat="pEvasRate" value="#pEvasRate"/>
+			<add stat="mEvasRate" value="#pEvasRate"/>
+			<mul stat="mEvasRate" value="#mEvasRate"/>
+			<mul stat="pSkillEvasion" value="#mEvasRate"/>
+		</for>
+	</skill>
+	<skill id="50486" levels="1" name="A-grade: Leather Leggings of Protection">
+		<set name="icon" value="icon.armor_t902_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add order="0x10" stat="DEX" value="2"/>
+			<add stat="maxLoad" value="1000"/>
+			<p_defence_trait name="shock" value="25"/>
+			<p_defence_trait name="paralyze" value="25"/>
+			<p_defence_trait name="sleep" value="25"/>
+			<p_defence_trait name="hold" value="25"/>
+			<p_defence_trait name="derangement" value="25"/>
+		</for>
+	</skill>
+	<skill id="50487" levels="1" name="Leather Leggings of Protection">
+		<set name="icon" value="icon.armor_t902_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50489" level="1" type="RECEIVE_DAMAGE" chance="3"/>
+		</triggers>
+	</skill>
+	<skill id="50488" levels="10" name="+1 Leather Leggings of Protection">
+		<set name="icon" value="icon.armor_t902_l_i00"/>
+		<table name="#level">1 2 3 4 5 6 7 8 9 10 11</table>
+		<table name="#chance">2 2 2 2 4 6 8 10 10 10</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50489" level="#level" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+	</skill>
+	<skill id="50489" levels="11" name="Critical Damage Defense">
+		<table name="#pCritDamRcpt">0.9 0.88 0.86 0.84 0.82 0.8 0.75 0.7 0.65 0.6 0.55</table>
+		<set name="icon" value="icon.skill10021_2"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pd_up"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pCritDamRcpt" value="#pCritDamRcpt"/>
+				<mul stat="mCritDamRcpt" value="#pCritDamRcpt"/>
+				<mul stat="pCritChanceRcpt" value="#pCritDamRcpt"/>
+				<mul stat="mCritChanceRcpt" value="#pCritDamRcpt"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50490" levels="1" name="A-grade: Tunic of Protection">
+		<set name="icon" value="icon.armor_t903_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add order="0x10" stat="WIT" value="2"/>
+			<add order="0x10" stat="MEN" value="2"/>
+			<add stat="maxLoad" value="1500"/>
+			<p_defence_trait name="shock" value="25"/>
+			<p_defence_trait name="paralyze" value="25"/>
+			<p_defence_trait name="sleep" value="25"/>
+			<p_defence_trait name="hold" value="25"/>
+			<p_defence_trait name="derangement" value="25"/>
+		</for>
+	</skill>
+	<skill id="50491" levels="1" name="Tunic of Protection">
+		<set name="icon" value="icon.armor_t903_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50481" level="1" type="RECEIVE_DAMAGE" chance="2"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="500"/>
+		</for>
+	</skill>
+	<skill id="50492" levels="10" name="+1 Tunic of Protection">
+		<table name="#maxMp">600 700 800 900 1000 1400 1800 2200 2600 3000</table>
+		<table name="#pvpPhysSkillDefenceBonus">1 1 1 1 1.05 1.06 1.07 1.08 1.09 1.1</table>
+		<table name="#level">1 1 1 1 1 1 1 1 2 3</table>
+		<table name="#chance">2 2 2 2 4 6 8 10 10 10</table>
+		<set name="icon" value="icon.armor_t903_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50481" level="1" type="RECEIVE_DAMAGE" chance="2"/>
+		</triggers>
+		<for>
+			<add stat="maxMp" value="#maxMp"/>
+			<mul stat="pvpPhysSkillDefenceBonus" value="#pvpPhysSkillDefenceBonus"/>
+		</for>
+	</skill>
+	<skill id="50493" levels="1" name="A-grade: Stockings of Protection">
+		<set name="icon" value="icon.armor_t903_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add order="0x10" stat="WIT" value="2"/>
+			<add stat="maxLoad" value="1000"/>
+			<p_defence_trait name="shock" value="25"/>
+			<p_defence_trait name="paralyze" value="25"/>
+			<p_defence_trait name="sleep" value="25"/>
+			<p_defence_trait name="hold" value="25"/>
+			<p_defence_trait name="derangement" value="25"/>
+		</for>
+	</skill>
+	<skill id="50494" levels="1" name="Stockings of Protection">
+		<set name="icon" value="icon.armor_t903_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50496" level="1" type="RECEIVE_DAMAGE" chance="2"/>
+		</triggers>
+	</skill>
+	<skill id="50495" levels="10" name="+1 Stockings of Protection">
+		<table name="#value">2 3 4 5 6 7 8 9 10 11</table>
+		<set name="icon" value="icon.armor_t903_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50496" level="1" type="RECEIVE_DAMAGE" chance="2"/>
+		</triggers>
+	</skill>
+	<skill id="50496" levels="11" name="Arcane Shield Defense">
+		<table name="#value">40 40 40 40 40 40 42 44 46 48 50</table>
+		<set name="icon" value="icon.skill10021_3"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="abnormal_effect" value="MP_SHIELD"/>
+		<set name="abnormal_time" value="5"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="mp_shield"/>
+		<set name="magicLevel" value="83"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="AbsorbDamageToMp">
+				<set order="0x10" stat="p_mp_shield" value="#value"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50497" levels="1" name="Weapon Blessing Effect">
+		<!--P. Skill Critical Damage +50.-->
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="50498" levels="1" name="Aden Pistols">
+		<!--<Level Bonus Effect>\nP./ M. Atk. are increased depending on level.\n\n<Lv. 40-49>\nP. Atk. +33\nM. Atk. +10\n<Lv. 50-59>\nP. Atk. +63\nM. Atk. +19\n<Lv. 60-64>\nP. Atk. +96\nM. Atk. +29\n<Lv. 65-69>\nP. Atk. +129\nM. Atk. +38\n<Lv. 70-74>\nP. Atk. +159\nM. Atk. +47\n<Lv. 75+>\nP. Atk. +192\nM. Atk. +57-->
+		<set name="icon" value="icon.shooter_d"/>
+		<set name="operate_type" value="P" />
+		<for>
+			<add stat="pAtk" value="33">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="63">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="19">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="96">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="29">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="129">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="38">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="159">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="47">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="192">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="57">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50499" levels="1" name="Anakim's Divine Pistols">
+		<!--A weapon empowered by Anakim's soul.\nEnables Anakim's power.\n\n<When triggered>\nAnakim's Holy Blast-->
+		<set name="icon" value="icon.skill1516"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

@@ -1,0 +1,18 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<!--AUTHOR: L2-scripts.com - (sSanyaDC)-->
+<list>
+	<instance id="207" name="Goldberg Room" maxChannels="20" collapseIfEmpty="5" timelimit="20">
+		<level min="78" max="99"/>
+		<party min="2" max="9"/><!--2-9-->
+		<return loc="146600 27144 -2205"/> 
+		<teleport loc="11688 -85192 -10970"/> 
+		<reuse resetReuse="30 6 * * 3" setUponEntry="false" sharedReuseGroup="0"/>
+		<zones>
+			<zone name="[goldberg_room]" active="true"/>
+		</zones>
+		<spawns>
+			<group name="goldberg" spawned="true"/>
+		</spawns>
+	</instance>
+</list>
+

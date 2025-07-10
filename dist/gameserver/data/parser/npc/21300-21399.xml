@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="21396" name="Carrion Scarab" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="22"/>
+		<set name="collision_radius" value="14"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="10209"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1069.76733"/>
+		<set name="basePDef" value="415.87576"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="730.51242"/>
+		<set name="baseMDef" value="276.89477"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="130"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.52"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+			<skill id="4439" level="2"/>	<!--Greater Hold Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="5"/>	<!--NPC High Level-->
+			<skill id="4001" level="9" use_type="DDMagic1"/>	<!--NPC Windstrike-->
+			<skill id="4002" level="9" use_type="DDMagic2"/>	<!--NPC HP Drain-->
+			<skill id="4047" level="9" use_type="DeBuff"/>	<!--Hold-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="864" min="1" max="1" chance="0.005"/>	<!--Black Ore Earring (Черная Серьга)-->
+			<reward item_id="895" min="1" max="1" chance="0.005"/>	<!--Black Ore Ring (Черное Кольцо)-->
+			<reward item_id="926" min="1" max="1" chance="0.0009"/>	<!--Black Ore Necklace (Черное Ожерелье)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92996" min="1" max="1" chance="4.796"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92908" min="1" max="1" chance="4.785"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92753" min="1" max="1" chance="0.05"/>	<!--Black Ore Necklace Beads (Бусина Черного Ожерелья)-->
+			<reward item_id="92752" min="1" max="1" chance="0.05"/>	<!--Black Ore Ring Gemstone (Самоцвет Черного Кольца)-->
+			<reward item_id="92751" min="1" max="1" chance="0.05"/>	<!--Black Ore Earring Piece (Часть Черной Серьги)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21397" name="Carrion Scarab" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="22"/>
+		<set name="collision_radius" value="14"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="20334"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1069.76733"/>
+		<set name="basePDef" value="415.87576"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="730.51242"/>
+		<set name="baseMDef" value="276.89477"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="130"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.52"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+			<skill id="4438" level="2"/>	<!--Greater Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="5"/>	<!--NPC High Level-->
+			<skill id="4032" level="9" use_type="PhysicalSpecial"/>	<!--NPC Strike-->
+		</skills>
+	</npc>
+	<npc id="21398" name="Soldier Scarab" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="22"/>
+		<set name="collision_radius" value="14"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="10209"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1069.76733"/>
+		<set name="basePDef" value="415.87576"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="730.51242"/>
+		<set name="baseMDef" value="276.89477"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="180"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.52"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="5"/>	<!--NPC High Level-->
+			<skill id="4579" level="9" use_type="PhysicalSpecial"/>	<!--Bleed-->
+		</skills>
+		<database_rewardlist>
+			<reward item_id="864" min="1" max="1" chance="0.005"/>	<!--Black Ore Earring (Черная Серьга)-->
+			<reward item_id="895" min="1" max="1" chance="0.005"/>	<!--Black Ore Ring (Черное Кольцо)-->
+			<reward item_id="926" min="1" max="1" chance="0.0009"/>	<!--Black Ore Necklace (Черное Ожерелье)-->
+			<reward item_id="57" min="613" max="1431" chance="70"/>	<!--Adena (Адены)-->
+			<reward item_id="92908" min="1" max="1" chance="4.829"/>	<!--Material: Lump of Wood (Сырье: Кусок Дерева)-->
+			<reward item_id="92996" min="1" max="1" chance="4.793"/>	<!--Old Resources (Старый Ресурс)-->
+			<reward item_id="92997" min="1" max="1" chance="1"/>	<!--Unknown Resources (Неизвестный Ресурс)-->
+			<reward item_id="92909" min="1" max="1" chance="1"/>	<!--Material: Pack of Knickknacks (Сырье: Мешок с Безделушками)-->
+			<reward item_id="92998" min="1" max="1" chance="0.5"/>	<!--Shining Resources (Сияющий Ресурс)-->
+			<reward item_id="92910" min="1" max="1" chance="0.5"/>	<!--Material: Rags (Сырье: Старая Ткань)-->
+			<reward item_id="92911" min="1" max="1" chance="0.5"/>	<!--Material: Leather Scraps (Сырье: Обрывок Кожи)-->
+			<reward item_id="92999" min="1" max="1" chance="0.1"/>	<!--High-grade Resources (Улучшенный Ресурс)-->
+			<reward item_id="92912" min="1" max="1" chance="0.1"/>	<!--Material: Plain Fabric (Сырье: Гладкая Ткань)-->
+			<reward item_id="92914" min="1" max="1" chance="0.05"/>	<!--Material: Sack Shreds (Сырье: Часть Мешочка)-->
+			<reward item_id="92995" min="1" max="1" chance="0.05"/>	<!--Thons (Тонс)-->
+			<reward item_id="92753" min="1" max="1" chance="0.05"/>	<!--Black Ore Necklace Beads (Бусина Черного Ожерелья)-->
+			<reward item_id="92752" min="1" max="1" chance="0.05"/>	<!--Black Ore Ring Gemstone (Самоцвет Черного Кольца)-->
+			<reward item_id="92751" min="1" max="1" chance="0.05"/>	<!--Black Ore Earring Piece (Часть Черной Серьги)-->
+			<reward item_id="92913" min="1" max="1" chance="0.05"/>	<!--Material: Unknown Metal (Сырье: Фрагмент Неизвестного Металла)-->
+			<reward item_id="92915" min="1" max="1" chance="0.01"/>	<!--Material: Bag of Low-grade Stuff (Сырье: Мешочек Материалов Низкого Качества)-->
+			<reward item_id="92919" min="1" max="1" chance="0.0009"/>	<!--Material: Blacksmith's High-grade Power (Сырье: Энергия Кузнеца Высокого Качества)-->
+		</database_rewardlist>
+	</npc>
+	<npc id="21399" name="Soldier Scarab" title="">
+		<set name="type" value="Monster"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="collision_height" value="22"/>
+		<set name="collision_radius" value="14"/>
+		<set name="level" value="84"/>
+		<set name="rewardExp" value="5532"/>
+		<set name="rewardSp" value="20334"/>
+		<set name="baseHpMax" value="43915.74"/>
+		<set name="baseHpRate" value="2"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseMpMax" value="2718"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="1069.76733"/>
+		<set name="basePDef" value="415.87576"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="730.51242"/>
+		<set name="baseMDef" value="276.89477"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="180"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="30"/>
+		<set name="baseAttackType" value="SWORD"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.52"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="300"/>
+		<set name="shots" value="NONE"/>
+		<faction names="tomb_clan" range="300"/>
+		<client_skills>
+			<skill id="4416" level="12"/>	<!--Bugs-->
+			<skill id="4437" level="4"/>	<!--Greater Bleed Resistance-->
+			<skill id="4274" level="1"/>	<!--Blunt Weapon Vulnerability-->
+			<skill id="4438" level="2"/>	<!--Greater Sleep Resistance-->
+		</client_skills>
+		<skills>
+			<skill id="4414" level="2"/>	<!--Standard Type-->
+			<skill id="4415" level="3"/>	<!--One-handed Sword-->
+			<skill id="4071" level="5"/>	<!--Resist Bow/Crossbow Weapons-->
+			<skill id="4789" level="5"/>	<!--NPC High Level-->
+			<skill id="4157" level="9" use_type="W_LongRangeDDMagic"/>	<!--NPC Blaze - Magic-->
+			<skill id="4160" level="9" use_type="W_ShortRangeDDMagic"/>	<!--NPC Aura Burn - Magic-->
+		</skills>
+	</npc>
+</list>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="6"><!--Dark Avenger-->
+		<skill id="28" level="13" min_level="40" cost="62000"/><!--Aggression-->
+		<skill id="28" level="14" min_level="40" cost="62000"/><!--Aggression-->
+		<skill id="28" level="15" min_level="40" cost="62000"/><!--Aggression-->
+		<skill id="984" level="1" min_level="40" cost="62000"/><!--Shield Strike-->
+		<skill id="18" level="1" min_level="40" cost="62000"/><!--Aggression Aura-->
+		<skill id="18" level="2" min_level="40" cost="62000"/><!--Aggression Aura-->
+		<skill id="18" level="3" min_level="40" cost="62000"/><!--Aggression Aura-->
+		<skill id="45" level="10" min_level="40" cost="62000"/><!--Quick Heal-->
+		<skill id="82" level="2" min_level="40" cost="62000"/><!--Majesty-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="141" level="4" min_level="40" cost="62000"/><!--Weapon Mastery-->
+		<skill id="153" level="3" min_level="40" cost="62000"/><!--Shield Mastery-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="196" level="1" min_level="40" cost="62000"/><!--Dignity-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="46" level="1" min_level="40" cost="62000"/><!--Life Scavenge-->
+		<skill id="86" level="1" min_level="40" cost="62000"/><!--Damage Reflection-->
+		<skill id="283" level="1" min_level="40" cost="62000"/><!--Summon Dark Panther-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="45257" level="1" min_level="40" cost="62000"/><!--Dark Strike-->
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="197" level="1" min_level="40" cost="62000"/><!--Honor-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="70" level="10" min_level="40" cost="62000"/><!--Emergency Rescue-->
+		<skill id="28" level="16" min_level="41" cost="72000"/><!--Aggression-->
+		<skill id="18" level="4" min_level="41" cost="72000"/><!--Aggression Aura-->
+		<skill id="70" level="11" min_level="41" cost="72000"/><!--Emergency Rescue-->
+		<skill id="28" level="17" min_level="42" cost="72000"/><!--Aggression-->
+		<skill id="18" level="5" min_level="42" cost="72000"/><!--Aggression Aura-->
+		<skill id="45" level="11" min_level="42" cost="72000"/><!--Quick Heal-->
+		<skill id="70" level="12" min_level="42" cost="72000"/><!--Emergency Rescue-->
+		<skill id="28" level="18" min_level="43" cost="72000"/><!--Aggression-->
+		<skill id="984" level="2" min_level="43" cost="72000"/><!--Shield Strike-->
+		<skill id="18" level="6" min_level="43" cost="72000"/><!--Aggression Aura-->
+		<skill id="46" level="2" min_level="43" cost="72000"/><!--Life Scavenge-->
+		<skill id="127" level="1" min_level="43" cost="72000"/><!--Hamstring-->
+		<skill id="45257" level="2" min_level="43" cost="72000"/><!--Dark Strike-->
+		<skill id="191" level="2" min_level="43" cost="72000"/><!--Focus Mind-->
+		<skill id="70" level="13" min_level="43" cost="72000"/><!--Emergency Rescue-->
+		<skill id="28" level="19" min_level="44" cost="110000"/><!--Aggression-->
+		<skill id="18" level="7" min_level="44" cost="110000"/><!--Aggression Aura-->
+		<skill id="45" level="12" min_level="44" cost="110000"/><!--Quick Heal-->
+		<skill id="70" level="14" min_level="44" cost="110000"/><!--Emergency Rescue-->
+		<skill id="28" level="20" min_level="45" cost="110000"/><!--Aggression-->
+		<skill id="18" level="8" min_level="45" cost="110000"/><!--Aggression Aura-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="70" level="15" min_level="45" cost="110000"/><!--Emergency Rescue-->
+		<skill id="110" level="2" min_level="46" cost="110000"/><!--Ultimate Defense-->
+		<skill id="28" level="21" min_level="46" cost="110000"/><!--Aggression-->
+		<skill id="984" level="3" min_level="46" cost="110000"/><!--Shield Strike-->
+		<skill id="18" level="9" min_level="46" cost="110000"/><!--Aggression Aura-->
+		<skill id="45" level="13" min_level="46" cost="110000"/><!--Quick Heal-->
+		<skill id="46" level="3" min_level="46" cost="110000"/><!--Life Scavenge-->
+		<skill id="86" level="2" min_level="46" cost="110000"/><!--Damage Reflection-->
+		<skill id="103" level="1" min_level="46" cost="110000"/><!--Slaughter-->
+		<skill id="127" level="2" min_level="46" cost="110000"/><!--Hamstring-->
+		<skill id="45257" level="3" min_level="46" cost="110000"/><!--Dark Strike-->
+		<skill id="65" level="1" min_level="46" cost="110000"/><!--Horror-->
+		<skill id="70" level="16" min_level="46" cost="110000"/><!--Emergency Rescue-->
+		<skill id="28" level="22" min_level="47" cost="150000"/><!--Aggression-->
+		<skill id="18" level="10" min_level="47" cost="150000"/><!--Aggression Aura-->
+		<skill id="70" level="17" min_level="47" cost="150000"/><!--Emergency Rescue-->
+		<skill id="28" level="23" min_level="48" cost="150000"/><!--Aggression-->
+		<skill id="18" level="11" min_level="48" cost="150000"/><!--Aggression Aura-->
+		<skill id="45" level="14" min_level="48" cost="150000"/><!--Quick Heal-->
+		<skill id="45257" level="4" min_level="48" cost="150000"/><!--Dark Strike-->
+		<skill id="70" level="18" min_level="48" cost="150000"/><!--Emergency Rescue-->
+		<skill id="28" level="24" min_level="49" cost="150000"/><!--Aggression-->
+		<skill id="984" level="4" min_level="49" cost="150000"/><!--Shield Strike-->
+		<skill id="18" level="12" min_level="49" cost="150000"/><!--Aggression Aura-->
+		<skill id="46" level="4" min_level="49" cost="150000"/><!--Life Scavenge-->
+		<skill id="283" level="2" min_level="49" cost="150000"/><!--Summon Dark Panther-->
+		<skill id="127" level="3" min_level="49" cost="150000"/><!--Hamstring-->
+		<skill id="65" level="2" min_level="49" cost="150000"/><!--Horror-->
+		<skill id="191" level="3" min_level="49" cost="150000"/><!--Focus Mind-->
+		<skill id="70" level="19" min_level="49" cost="150000"/><!--Emergency Rescue-->
+		<skill id="28" level="25" min_level="50" cost="210000"/><!--Aggression-->
+		<skill id="18" level="13" min_level="50" cost="210000"/><!--Aggression Aura-->
+		<skill id="45" level="15" min_level="50" cost="210000"/><!--Quick Heal-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="53010" level="1" min_level="50" cost="210000"/><!--Knight's Protection-->
+		<skill id="45257" level="5" min_level="50" cost="210000"/><!--Dark Strike-->
+		<skill id="70" level="20" min_level="50" cost="210000"/><!--Emergency Rescue-->
+		<skill id="28" level="26" min_level="51" cost="210000"/><!--Aggression-->
+		<skill id="18" level="14" min_level="51" cost="210000"/><!--Aggression Aura-->
+		<skill id="70" level="21" min_level="51" cost="210000"/><!--Emergency Rescue-->
+		<skill id="28" level="27" min_level="52" cost="210000"/><!--Aggression-->
+		<skill id="984" level="5" min_level="52" cost="210000"/><!--Shield Strike-->
+		<skill id="18" level="15" min_level="52" cost="210000"/><!--Aggression Aura-->
+		<skill id="1405" level="1" min_level="52" cost="210000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="153" level="4" min_level="52" cost="210000"/><!--Shield Mastery-->
+		<skill id="46" level="5" min_level="52" cost="210000"/><!--Life Scavenge-->
+		<skill id="86" level="3" min_level="52" cost="210000"/><!--Damage Reflection-->
+		<skill id="291" level="1" min_level="52" cost="210000"/><!--Final Fortress-->
+		<skill id="127" level="4" min_level="52" cost="210000"/><!--Hamstring-->
+		<skill id="45257" level="6" min_level="52" cost="210000"/><!--Dark Strike-->
+		<skill id="65" level="3" min_level="52" cost="210000"/><!--Horror-->
+		<skill id="70" level="22" min_level="52" cost="210000"/><!--Emergency Rescue-->
+		<skill id="28" level="28" min_level="53" cost="300000"/><!--Aggression-->
+		<skill id="18" level="16" min_level="53" cost="300000"/><!--Aggression Aura-->
+		<skill id="70" level="23" min_level="53" cost="300000"/><!--Emergency Rescue-->
+		<skill id="28" level="29" min_level="54" cost="300000"/><!--Aggression-->
+		<skill id="18" level="17" min_level="54" cost="300000"/><!--Aggression Aura-->
+		<skill id="45257" level="7" min_level="54" cost="300000"/><!--Dark Strike-->
+		<skill id="70" level="24" min_level="54" cost="300000"/><!--Emergency Rescue-->
+		<skill id="28" level="30" min_level="55" cost="300000"/><!--Aggression-->
+		<skill id="984" level="6" min_level="55" cost="300000"/><!--Shield Strike-->
+		<skill id="18" level="18" min_level="55" cost="300000"/><!--Aggression Aura-->
+		<skill id="46" level="6" min_level="55" cost="300000"/><!--Life Scavenge-->
+		<skill id="291" level="2" min_level="55" cost="300000"/><!--Final Fortress-->
+		<skill id="127" level="5" min_level="55" cost="300000"/><!--Hamstring-->
+		<skill id="65" level="4" min_level="55" cost="300000"/><!--Horror-->
+		<skill id="191" level="4" min_level="55" cost="300000"/><!--Focus Mind-->
+		<skill id="70" level="25" min_level="55" cost="300000"/><!--Emergency Rescue-->
+		<skill id="28" level="31" min_level="56" cost="410000"/><!--Aggression-->
+		<skill id="18" level="19" min_level="56" cost="410000"/><!--Aggression Aura-->
+		<skill id="45257" level="8" min_level="56" cost="410000"/><!--Dark Strike-->
+		<skill id="70" level="26" min_level="56" cost="410000"/><!--Emergency Rescue-->
+		<skill id="28" level="32" min_level="57" cost="410000"/><!--Aggression-->
+		<skill id="18" level="20" min_level="57" cost="410000"/><!--Aggression Aura-->
+		<skill id="70" level="27" min_level="57" cost="410000"/><!--Emergency Rescue-->
+		<skill id="28" level="33" min_level="58" cost="410000"/><!--Aggression-->
+		<skill id="984" level="7" min_level="58" cost="410000"/><!--Shield Strike-->
+		<skill id="18" level="21" min_level="58" cost="410000"/><!--Aggression Aura-->
+		<skill id="82" level="3" min_level="58" cost="410000"/><!--Majesty-->
+		<skill id="46" level="7" min_level="58" cost="410000"/><!--Life Scavenge-->
+		<skill id="291" level="3" min_level="58" cost="410000"/><!--Final Fortress-->
+		<skill id="283" level="3" min_level="58" cost="410000"/><!--Summon Dark Panther-->
+		<skill id="103" level="2" min_level="58" cost="410000"/><!--Slaughter-->
+		<skill id="127" level="6" min_level="58" cost="410000"/><!--Hamstring-->
+		<skill id="45257" level="9" min_level="58" cost="410000"/><!--Dark Strike-->
+		<skill id="65" level="5" min_level="58" cost="410000"/><!--Horror-->
+		<skill id="70" level="28" min_level="58" cost="410000"/><!--Emergency Rescue-->
+		<skill id="28" level="34" min_level="59" cost="600000"/><!--Aggression-->
+		<skill id="18" level="22" min_level="59" cost="600000"/><!--Aggression Aura-->
+		<skill id="70" level="29" min_level="59" cost="600000"/><!--Emergency Rescue-->
+		<skill id="28" level="35" min_level="60" cost="600000"/><!--Aggression-->
+		<skill id="984" level="8" min_level="60" cost="600000"/><!--Shield Strike-->
+		<skill id="18" level="23" min_level="60" cost="600000"/><!--Aggression Aura-->
+		<skill id="53010" level="2" min_level="60" cost="600000"/><!--Knight's Protection-->
+		<skill id="46" level="8" min_level="60" cost="600000"/><!--Life Scavenge-->
+		<skill id="291" level="4" min_level="60" cost="600000"/><!--Final Fortress-->
+		<skill id="77" level="3" min_level="60" cost="600000"/><!--Ability to Attack-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="127" level="7" min_level="60" cost="600000"/><!--Hamstring-->
+		<skill id="45257" level="10" min_level="60" cost="600000"/><!--Dark Strike-->
+		<skill id="65" level="6" min_level="60" cost="600000"/><!--Horror-->
+		<skill id="916" level="1" min_level="60" cost="600000"/><!--Shield Deflect Magic-->
+		<skill id="70" level="30" min_level="60" cost="600000"/><!--Emergency Rescue-->
+		<skill id="28" level="36" min_level="61" cost="600000"/><!--Aggression-->
+		<skill id="18" level="24" min_level="61" cost="600000"/><!--Aggression Aura-->
+		<skill id="1405" level="2" min_level="61" cost="600000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="45257" level="11" min_level="61" cost="600000"/><!--Dark Strike-->
+		<skill id="70" level="31" min_level="61" cost="600000"/><!--Emergency Rescue-->
+		<skill id="28" level="37" min_level="62" cost="740000"/><!--Aggression-->
+		<skill id="984" level="9" min_level="62" cost="740000"/><!--Shield Strike-->
+		<skill id="18" level="25" min_level="62" cost="740000"/><!--Aggression Aura-->
+		<skill id="46" level="9" min_level="62" cost="740000"/><!--Life Scavenge-->
+		<skill id="291" level="5" min_level="62" cost="740000"/><!--Final Fortress-->
+		<skill id="283" level="4" min_level="62" cost="740000"/><!--Summon Dark Panther-->
+		<skill id="103" level="3" min_level="62" cost="740000"/><!--Slaughter-->
+		<skill id="127" level="8" min_level="62" cost="740000"/><!--Hamstring-->
+		<skill id="45257" level="12" min_level="62" cost="740000"/><!--Dark Strike-->
+		<skill id="65" level="7" min_level="62" cost="740000"/><!--Horror-->
+		<skill id="70" level="32" min_level="62" cost="740000"/><!--Emergency Rescue-->
+		<skill id="28" level="38" min_level="63" cost="740000"/><!--Aggression-->
+		<skill id="18" level="26" min_level="63" cost="740000"/><!--Aggression Aura-->
+		<skill id="45257" level="13" min_level="63" cost="740000"/><!--Dark Strike-->
+		<skill id="70" level="33" min_level="63" cost="740000"/><!--Emergency Rescue-->
+		<skill id="28" level="39" min_level="64" cost="930000"/><!--Aggression-->
+		<skill id="984" level="10" min_level="64" cost="930000"/><!--Shield Strike-->
+		<skill id="18" level="27" min_level="64" cost="930000"/><!--Aggression Aura-->
+		<skill id="46" level="10" min_level="64" cost="930000"/><!--Life Scavenge-->
+		<skill id="291" level="6" min_level="64" cost="930000"/><!--Final Fortress-->
+		<skill id="127" level="9" min_level="64" cost="930000"/><!--Hamstring-->
+		<skill id="45257" level="14" min_level="64" cost="930000"/><!--Dark Strike-->
+		<skill id="65" level="8" min_level="64" cost="930000"/><!--Horror-->
+		<skill id="191" level="5" min_level="64" cost="930000"/><!--Focus Mind-->
+		<skill id="916" level="2" min_level="64" cost="930000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="1" min_level="64" cost="930000"/><!--Ultimate Shield-->
+		<skill id="70" level="34" min_level="64" cost="930000"/><!--Emergency Rescue-->
+		<skill id="28" level="40" min_level="65" cost="930000"/><!--Aggression-->
+		<skill id="18" level="28" min_level="65" cost="930000"/><!--Aggression Aura-->
+		<skill id="53010" level="3" min_level="65" cost="930000"/><!--Knight's Protection-->
+		<skill id="45257" level="15" min_level="65" cost="930000"/><!--Dark Strike-->
+		<skill id="70" level="35" min_level="65" cost="930000"/><!--Emergency Rescue-->
+		<skill id="28" level="41" min_level="66" cost="1000000"/><!--Aggression-->
+		<skill id="984" level="11" min_level="66" cost="1000000"/><!--Shield Strike-->
+		<skill id="18" level="29" min_level="66" cost="1000000"/><!--Aggression Aura-->
+		<skill id="46" level="11" min_level="66" cost="1000000"/><!--Life Scavenge-->
+		<skill id="291" level="7" min_level="66" cost="1000000"/><!--Final Fortress-->
+		<skill id="283" level="5" min_level="66" cost="1000000"/><!--Summon Dark Panther-->
+		<skill id="127" level="10" min_level="66" cost="1000000"/><!--Hamstring-->
+		<skill id="45257" level="16" min_level="66" cost="1000000"/><!--Dark Strike-->
+		<skill id="65" level="9" min_level="66" cost="1000000"/><!--Horror-->
+		<skill id="322" level="2" min_level="66" cost="1000000"/><!--Ultimate Shield-->
+		<skill id="70" level="36" min_level="66" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="28" level="42" min_level="67" cost="1000000"/><!--Aggression-->
+		<skill id="18" level="30" min_level="67" cost="1000000"/><!--Aggression Aura-->
+		<skill id="45257" level="17" min_level="67" cost="1000000"/><!--Dark Strike-->
+		<skill id="70" level="37" min_level="67" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="28" level="43" min_level="68" cost="1400000"/><!--Aggression-->
+		<skill id="984" level="12" min_level="68" cost="1400000"/><!--Shield Strike-->
+		<skill id="18" level="31" min_level="68" cost="1400000"/><!--Aggression Aura-->
+		<skill id="46" level="12" min_level="68" cost="1400000"/><!--Life Scavenge-->
+		<skill id="291" level="8" min_level="68" cost="1400000"/><!--Final Fortress-->
+		<skill id="127" level="11" min_level="68" cost="1400000"/><!--Hamstring-->
+		<skill id="45257" level="18" min_level="68" cost="1400000"/><!--Dark Strike-->
+		<skill id="65" level="10" min_level="68" cost="1400000"/><!--Horror-->
+		<skill id="916" level="3" min_level="68" cost="1400000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="3" min_level="68" cost="1400000"/><!--Ultimate Shield-->
+		<skill id="70" level="38" min_level="68" cost="1400000"/><!--Emergency Rescue-->
+		<skill id="28" level="44" min_level="69" cost="1400000"/><!--Aggression-->
+		<skill id="18" level="32" min_level="69" cost="1400000"/><!--Aggression Aura-->
+		<skill id="45257" level="19" min_level="69" cost="1400000"/><!--Dark Strike-->
+		<skill id="70" level="39" min_level="69" cost="1400000"/><!--Emergency Rescue-->
+		<skill id="28" level="45" min_level="70" cost="1800000"/><!--Aggression-->
+		<skill id="984" level="13" min_level="70" cost="1800000"/><!--Shield Strike-->
+		<skill id="18" level="33" min_level="70" cost="1800000"/><!--Aggression Aura-->
+		<skill id="53010" level="4" min_level="70" cost="1800000"/><!--Knight's Protection-->
+		<skill id="46" level="13" min_level="70" cost="1800000"/><!--Life Scavenge-->
+		<skill id="291" level="9" min_level="70" cost="1800000"/><!--Final Fortress-->
+		<skill id="283" level="6" min_level="70" cost="1800000"/><!--Summon Dark Panther-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="103" level="4" min_level="70" cost="1800000"/><!--Slaughter-->
+		<skill id="127" level="12" min_level="70" cost="1800000"/><!--Hamstring-->
+		<skill id="45257" level="20" min_level="70" cost="1800000"/><!--Dark Strike-->
+		<skill id="65" level="11" min_level="70" cost="1800000"/><!--Horror-->
+		<skill id="322" level="4" min_level="70" cost="1800000"/><!--Ultimate Shield-->
+		<skill id="70" level="40" min_level="70" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="28" level="46" min_level="71" cost="1800000"/><!--Aggression-->
+		<skill id="18" level="34" min_level="71" cost="1800000"/><!--Aggression Aura-->
+		<skill id="45257" level="21" min_level="71" cost="1800000"/><!--Dark Strike-->
+		<skill id="70" level="41" min_level="71" cost="1800000"/><!--Emergency Rescue-->
+		<skill id="28" level="47" min_level="72" cost="2000000"/><!--Aggression-->
+		<skill id="984" level="14" min_level="72" cost="2000000"/><!--Shield Strike-->
+		<skill id="18" level="35" min_level="72" cost="2000000"/><!--Aggression Aura-->
+		<skill id="46" level="14" min_level="72" cost="2000000"/><!--Life Scavenge-->
+		<skill id="291" level="10" min_level="72" cost="2000000"/><!--Final Fortress-->
+		<skill id="127" level="13" min_level="72" cost="2000000"/><!--Hamstring-->
+		<skill id="45257" level="22" min_level="72" cost="2000000"/><!--Dark Strike-->
+		<skill id="65" level="12" min_level="72" cost="2000000"/><!--Horror-->
+		<skill id="191" level="6" min_level="72" cost="2000000"/><!--Focus Mind-->
+		<skill id="916" level="4" min_level="72" cost="2000000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="5" min_level="72" cost="2000000"/><!--Ultimate Shield-->
+		<skill id="70" level="42" min_level="72" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="28" level="48" min_level="73" cost="2000000"/><!--Aggression-->
+		<skill id="18" level="36" min_level="73" cost="2000000"/><!--Aggression Aura-->
+		<skill id="45257" level="23" min_level="73" cost="2000000"/><!--Dark Strike-->
+		<skill id="70" level="43" min_level="73" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="28" level="49" min_level="74" cost="2000000"/><!--Aggression-->
+		<skill id="984" level="15" min_level="74" cost="2000000"/><!--Shield Strike-->
+		<skill id="18" level="37" min_level="74" cost="2000000"/><!--Aggression Aura-->
+		<skill id="46" level="15" min_level="74" cost="2000000"/><!--Life Scavenge-->
+		<skill id="291" level="11" min_level="74" cost="2000000"/><!--Final Fortress-->
+		<skill id="283" level="7" min_level="74" cost="2000000"/><!--Summon Dark Panther-->
+		<skill id="127" level="14" min_level="74" cost="2000000"/><!--Hamstring-->
+		<skill id="45257" level="24" min_level="74" cost="2000000"/><!--Dark Strike-->
+		<skill id="65" level="13" min_level="74" cost="2000000"/><!--Horror-->
+		<skill id="322" level="6" min_level="74" cost="2000000"/><!--Ultimate Shield-->
+		<skill id="70" level="44" min_level="74" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="53010" level="5" min_level="75" cost="2000000"/><!--Knight's Protection-->
+		<skill id="45257" level="25" min_level="75" cost="2000000"/><!--Dark Strike-->
+		<skill id="70" level="45" min_level="75" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="47282" level="2" min_level="60" cost="600000"/><!--Shield Stun-->
+		<skill id="335" level="1" min_level="41" cost="72000"/><!--Fortitude-->
+		<skill id="335" level="2" min_level="65" cost="930000"/><!--Fortitude-->
+		<skill id="47296" level="1" min_level="40" cost="62000"/><!--Knight's Magic Resistance-->
+		<skill id="47296" level="2" min_level="60" cost="600000"/><!--Knight's Magic Resistance-->
+		<skill id="47297" level="1" min_level="40" cost="62000"><!--Knight's Armor Mastery-->
+			<blocked_skills>
+				<skill id="232"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47297" level="2" min_level="50" cost="210000"/><!--Knight's Armor Mastery-->
+		<skill id="47297" level="3" min_level="60" cost="600000"/><!--Knight's Armor Mastery-->
+		<skill id="47297" level="4" min_level="70" cost="1800000"/><!--Knight's Armor Mastery-->
+		<skill id="47298" level="1" min_level="40" cost="62000"><!--Knight's Weapon Mastery-->
+			<blocked_skills>
+				<skill id="217"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47298" level="2" min_level="50" cost="210000"/><!--Knight's Weapon Mastery-->
+		<skill id="47298" level="3" min_level="60" cost="600000"/><!--Knight's Weapon Mastery-->
+		<skill id="47298" level="4" min_level="70" cost="1800000"/><!--Knight's Weapon Mastery-->
+	</normal_skill_tree>
+</list>

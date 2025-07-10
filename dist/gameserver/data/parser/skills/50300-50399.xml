@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="50300" levels="1" name="Queen Ant's Stone Breaker">
+		<set name="icon" value="icon.special_weapon_onehandblunt"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50301" levels="1" name="Adventurer's Belt">
+		<set name="icon" value="icon.belt_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxLoad" value="1000"/>
+			<add stat="inventoryLimit" value="2"/>
+		</for>
+	</skill>
+	<skill id="50302" levels="1" name="Adventurer's Cloak">
+		<set name="icon" value="icon.amor_goodness_cloak"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="maxHp" value="1.01"/>
+			<mul stat="maxMp" value="1.01"/>
+		</for>
+	</skill>
+	<skill id="50303" levels="1" name="Enhanced Adventurer's Cloak">
+		<set name="icon" value="icon.amor_goodness_cloak"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="maxHp" value="1.02"/>
+			<mul stat="maxMp" value="1.02"/>
+		</for>
+	</skill>
+	<skill id="50304" levels="1" name="Hat of Glory">
+		<set name="icon" value="icon.accessory_archer_hat_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="maxHp" value="300"/>
+		</for>
+	</skill>
+	<skill id="50305" levels="1" name="A-grade: Gloves of Silence">
+		<set name="icon" value="icon.armor_t94_g_i01"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="maxHp" value="150"/>
+			<mul stat="pAtkSpd" value="1.08"/>
+			<mul stat="mAtkSpd" value="1.15"/>
+		</for>
+	</skill>
+	<skill id="50306" levels="1" name="Gloves of Silence">
+		<set name="icon" value="icon.armor_t94_g_i01"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50307" levels="10" name="+1 Gloves of Silence">
+		<set name="icon" value="icon.armor_t94_g_i01"/>
+		<table name="#pSkillPower">1 1 1 1 1.02 1.03 1.05 1.07 1.1 1.15</table>
+		<table name="#chance">1 1 1 1 2 3 4 6 8 10</table>
+		<table name="#chance2">1 1 1 1 2 3 4 6 8 10</table>
+		<table name="#triglvl">0 0 0 0 1 2 3 4 5 6</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50431" level="1" type="ATTACK" chance="#chance"/>
+			<trigger id="50431" level="1" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance"/>
+			<trigger id="50431" level="1" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance"/>
+			<trigger id="50431" level="#triglvl" type="ATTACK" chance="#chance2"/>
+			<trigger id="50431" level="#triglvl" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance2"/>
+			<trigger id="50431" level="#triglvl" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance2"/>
+		</triggers>
+		<for>
+			<mul stat="p_skill_power" value="#pSkillPower"/> 
+			<mul stat="mSkillPower" value="#pSkillPower"/>
+		</for>
+	</skill>
+	<skill id="50308" levels="1" name="Force of Silence">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="icon" value="icon.armor_t94_g_i01"/>
+		<set name="castRange" value="900"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_effect" value="SILENCE"/>
+		<set name="abnormal_time" value="4"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="silence"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="activateRate" value="80"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="MUTE"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="DERANGEMENT"/>
+		<for>
+			<effect name="Mute"/>
+		</for>
+	</skill>
+	<skill id="50309" levels="6" name="Gloves of Silence: When triggered">
+		<table name="#power">50 70 90 110 130 165</table>
+		<table name="#dammppercent">1 1 2 2 3 3</table>
+		<set name="effectPoint" value="-300"/>
+		<set name="icon" value="icon.armor_t94_g_i01"/>
+		<set name="castRange" value="900"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_effect" value="DOT_BLEEDING"/>
+		<set name="abnormal_time" value="4"/>
+		<set name="abnormal_level" value="10"/>
+		<set name="abnormal_type" value="dot_attr"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="power" value="#power"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="MDAM"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="MPDamPercent" value="#dammppercent"/>
+		</for>
+	</skill>
+	<skill id="50310" levels="1" name="A-grade: Equipped Shield Effect">
+		<set name="icon" value="icon.shield_shield_of_nightmare_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50311" levels="10" name="Enchant Effect: A-grade Shield">
+		<set name="icon" value="icon.shield_shield_of_nightmare_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50312" levels="1" name="A-grade: Equipped Sigil Effect">
+		<set name="icon" value="icon.dynasty_sigil_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50313" levels="10" name="Enchant Effect: A-grade Sigil">
+		<set name="icon" value="icon.dynasty_sigil_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50321" levels="11" name="Agathion Ignis">
+		<table name="#Atk">1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.09 1.11 1.13 1.15</table>
+		<table name="#resist">0 0 0 0 0 2 5 8 14 22 30</table>
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="#Atk"/>
+				<mul stat="mAtk" value="#Atk"/>
+				<add stat="resist_abnormal_debuff" value="#resist"/>
+				<p_defence_trait name="paralyze" value="#resist"/>
+				<p_defence_trait name="sleep" value="#resist"/>
+				<p_defence_trait name="hold" value="#resist"/>
+			</effect>
+		</for>		
+	</skill>
+	<skill id="50322" levels="11" name="Agathion Nebula">	<!-- Fixed Mystogan -->
+		<table name="#Crit">1.01 1.02 1.03 1.04 1.05 1.07 1.09 1.12 1.15 1.18 1.22</table>
+		<table name="#Reuse">1.0 1.0 1.0 1.0 1.0 0.99 0.98 0.97 0.95 0.93 0.90</table>
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="mCritRate" value="#Crit"/>
+				<mul stat="basePCritRate" value="#Crit"/>
+				<mul stat="mReuse" value="#Reuse"/>
+				<mul stat="pReuse" value="#Reuse"/>
+			</effect>
+		</for>	
+	</skill>
+	<skill id="50323" levels="11" name="Agathion Procella">	<!-- Fixed Mystogan -->
+		<table name="#AtkSpd">2 4 7 10 15 20 30 50 80 110 150</table>
+		<table name="#MpCons">1.0 1.0 1.0 1.0 1.0 0.99 0.98 0.96 0.94 0.92 0.88</table>
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<add stat="mAtkSpd" value="#AtkSpd"/>
+				<add stat="pAtkSpd" value="#AtkSpd"/>
+				<mul stat="mpConsum" value="#MpCons"/>
+			</effect>
+		</for>	
+	</skill>
+	<skill id="50324" levels="11" name="Agathion Petram">
+		<table name="#Def">1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.09 1.11 1.13 1.15</table>
+		<table name="#attack">0 0 0 0 0 2 5 8 14 22 30</table>
+		<table name="#Spd">0 0 0 0 0 0 0 0 2 3 4</table>
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="pDef" value="#Def"/>
+				<mul stat="mDef" value="#Def"/>
+				<p_attack_trait name="bleed" value="#attack"/>
+				<p_attack_trait name="derangement" value="#attack"/>
+				<p_attack_trait name="shock" value="#attack"/>
+				<add stat="runSpd" value="#Spd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50325" levels="11" name="Agathion Joy">	<!-- Fixed Mystogan -->
+		<table name="#Stat">1.0 1.0 1.0 1.0 1.0 1.01 1.02 1.05 1.08 1.11 1.15</table>
+		<table name="#XpSp">0.01 0.02 0.03 0.04 0.06 0.10 0.11 0.15 0.20 0.25 0.36</table>
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul stat="maxHp" value="#Stat"/>
+				<mul stat="maxMp" value="#Stat"/>
+				<mul stat="maxCp" value="#Stat"/>
+				<add stat="exp_rate_multiplier" value="#XpSp"/>
+				<add stat="sp_rate_multiplier" value="#XpSp"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50326" levels="1" name="Summon Agathion Ignis">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50327" levels="1" name="Summon Agathion Nebula">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50328" levels="1" name="Summon Agathion Procella">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50329" levels="1" name="Summon Agathion Petram">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50330" levels="1" name="A-grade: Ice Crystal Breastplate">
+		<set name="icon" value="icon.armor_t94_u_i01"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50331" levels="1" name="Ice Crystal Breastplate">
+		<set name="icon" value="icon.armor_t94_u_i01"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50332" levels="10" name="+1 Ice Crystal Breastplate">
+		<set name="icon" value="icon.armor_t94_u_i01"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50333" levels="1" name="A-grade: Ice Crystal Gaiters">
+		<set name="icon" value="icon.armor_t94_l_i01"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50334" levels="1" name="Ice Crystal Gaiters">
+		<set name="icon" value="icon.armor_t94_l_i01"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50335" levels="10" name="+1 Ice Crystal Gaiters">
+		<set name="icon" value="icon.armor_t94_l_i01"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50336" levels="7" name="Frozen Blessing">
+		<set name="icon" value="icon.skill1480"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50337" levels="7" name="Freezing Affect">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill32644"/>
+		<set name="castRange" value="700"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50338" levels="1" name="Freezing Paralysis">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50339" levels="1" name="Cloak of Protection">
+		<set name="icon" value="icon.bm_2018_sayha_cloak_back_i01"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="maxHp" value="1.03"/>
+			<mul stat="maxMp" value="1.03"/>
+			<p_defence_trait name="bow" value="1"/>
+		</for>
+	</skill>
+	<skill id="50340" levels="10" name="+1 Cloak of Protection">
+		<set name="icon" value="icon.bm_2018_sayha_cloak_back_i01"/>
+		<table name="#maxHp">1.04 1.05 1.06 1.07 1.09 1.11 1.13 1.15 1.18 1.2</table>
+		<table name="#p_defence_trait">1 2 2 3 3 4 6 9 12 15</table>
+		<table name="#exp_rate_multiplier">0 0.03 0.05 0.07 0.1 0.15 0.2 0.25 0.3 0.3</table>
+		<table name="#mDef">1 1 1 1.02 1.04 1.06 1.08 1.1 1.12 1.15</table>
+		<table name="#p_critical_damage">0 0 0 0 0 0 5 7 10 15</table>
+		<table name="#pCritChanceRcpt">1 1 1 1 1 1 1 0.97 0.95 0.9</table>
+		<table name="#pCritDamRcpt">1 1 1 1 1 1 1 0.97 0.95 0.9</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="maxHp" value="#maxHp"/>
+			<mul stat="maxMp" value="#maxHp"/>
+			<p_defence_trait name="bow" value="#p_defence_trait"/>
+			<add stat="exp_rate_multiplier" value="#exp_rate_multiplier"/>
+			<add stat="sp_rate_multiplier" value="#exp_rate_multiplier"/>
+			<add stat="pDef" value="#mDef"/>
+			<p_critical_damage value="#p_critical_damage" type="PER"/>
+			<p_magic_critical_dmg value="#p_critical_damage" type="PER"/>
+			<add stat="mDef" value="#mDef"/>
+			<mul stat="pCritChanceRcpt" value="#pCritChanceRcpt"/>
+			<mul stat="mCritChanceRcpt" value="#pCritChanceRcpt"/>
+			<mul stat="pCritDamRcpt" value="#pCritDamRcpt"/>
+			<mul stat="mCritDamRcpt" value="#pCritDamRcpt"/>
+		</for>
+	</skill>
+	<skill id="50341" levels="5" name="Einhasad's Pendant">
+		<set name="icon" value="BranchIcon.Icon.bm_pendant_pve_white"/>
+		<table name="#mDef">15 20 30 35 45</table>
+		<table name="#exp_rate_multiplier">0 0.2 0.25 0.3 0.35</table>
+		<table name="#receive_p_damage_power">1 0.9 0.85 0.8 0.75</table>
+		<table name="#pAtkSpd">1 1.03 1.04 1.05 1.1</table>
+		<table name="#p_critical_damage">0 0 6 8 10</table>
+		<table name="#pAtk">1 1 1 1.1 1.15</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mDef" value="#mDef"/>
+			<add stat="exp_rate_multiplier" value="#exp_rate_multiplier"/>
+			<add stat="sp_rate_multiplier" value="#exp_rate_multiplier"/>
+			<mul stat="receive_p_damage_power" value="#receive_p_damage_power"/>
+			<mul stat="receive_m_damage_power" value="#receive_p_damage_power"/>
+			<mul stat="pAtkSpd" value="#pAtkSpd"/>
+			<mul stat="mAtkSpd" value="#pAtkSpd"/>
+			<p_critical_damage value="#p_critical_damage" type="PER"/>
+			<p_magic_critical_dmg value="#p_critical_damage" type="PER"/>
+			<mul stat="pAtk" value="#pAtk"/>
+			<mul stat="mAtk" value="#pAtk"/>
+		</for>
+	</skill>
+	<skill id="50342" levels="1" name="Invocation">
+		<set name="effectPoint" value="673"/>
+		<set name="icon" value="icon.skill1430"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="15"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="force_meditation"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="RestoreHP" interval="1" value="100">
+				<add stat="runSpd" value="33"/>
+			</effect>
+			<effect name="RestoreMP" interval="1" value="50"/>
+		</for>
+	</skill>
+	<skill id="50343" levels="1" name="A-grade: Leather Armor of Lightning">
+		<set name="icon" value="icon.armor_t101_u_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mDef" value="15"/>
+			<add order="0x10" stat="DEX" value="1"/>
+			<add order="0x10" stat="STR" value="1"/>
+			<add stat="maxLoad" value="1500"/>
+			<add stat="maxHp" value="80"/>
+			<add stat="maxMp" value="40"/>
+			<p_defence_trait name="shock" value="20"/>
+			<p_defence_trait name="paralyze" value="20"/>
+			<p_defence_trait name="sleep" value="20"/>
+			<p_defence_trait name="hold" value="20"/>
+			<p_defence_trait name="derangement" value="20"/>
+		</for>
+	</skill>
+	<skill id="50344" levels="1" name="Leather Armor of Lightning">
+		<set name="icon" value="icon.armor_t101_u_i00"/>
+		<table name="#triglev">1</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50351" level="#triglev" type="RECEIVE_DAMAGE" chance="1"/>
+			<trigger id="50350" level="#triglev" type="RECEIVE_DAMAGE" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50345" levels="10" name="+1 Leather Armor of Lightning">
+		<set name="icon" value="icon.armor_t101_u_i00"/>
+		<table name="#triglev">1</table>
+		<table name="#chance">1 1 1 1 3 5 7 8 9 10</table>
+		<table name="#mpConsum">1 1 1 1 0.98 0.96 0.94 0.93 0.92 0.9</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50351" level="#triglev" type="RECEIVE_DAMAGE" chance="#chance"/>
+			<trigger id="50350" level="#triglev" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<mul stat="mpConsumePhysical" value="#mpConsum"/>
+			<mul stat="mpDanceConsume" value="#mpConsum"/>
+		</for>
+	</skill>
+	<skill id="50346" levels="1" name="A-grade: Leather Leggings of Lightning">
+		<set name="icon" value="icon.armor_t102_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mDef" value="15"/>
+			<add order="0x10" stat="DEX" value="1"/>
+			<add stat="maxLoad" value="1000"/>
+			<add stat="maxHp" value="80"/>
+			<add stat="maxMp" value="40"/>
+			<p_defence_trait name="shock" value="20"/>
+			<p_defence_trait name="paralyze" value="20"/>
+			<p_defence_trait name="sleep" value="20"/>
+			<p_defence_trait name="hold" value="20"/>
+			<p_defence_trait name="derangement" value="20"/>
+		</for>
+	</skill>
+	<skill id="50347" levels="1" name="Leather Leggings of Lightning">
+		<set name="icon" value="icon.armor_t102_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50349" level="1" type="ATTACK" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50348" levels="10" name="+1 Leather Leggings of Lightning">
+		<table name="#triglev">1 1 1 1 2 3 4 5 6 7</table>
+		<table name="#chance">1 1 1 1 3 5 7 8 9 10</table>
+		<table name="#mpConsum">1 1 1 1 0.98 0.97 0.96 0.94 0.92 0.9</table>
+		<set name="icon" value="icon.armor_t102_l_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50349" level="#triglev" type="ATTACK" chance="#chance"/>
+		</triggers>
+		<for>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<mul stat="mpConsumePhysical" value="#mpConsum"/>
+			<mul stat="mpDanceConsume" value="#mpConsum"/>
+		</for>
+	</skill>
+	<skill id="50349" levels="7" name="Electric Disorder">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill1482"/>
+		<set name="castRange" value="700"/>
+		<table name="#pCritDamRcpt">1.01 1.03 1.05 1.07 1.08 1.09 1.1</table>
+		<table name="#pCritChanceRcpt">1.03 1.06 1.09 1.12 1.13 1.14 1.15</table>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pd_up"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pCritDamRcpt" value="#pCritDamRcpt"/>
+				<mul stat="mCritDamRcpt" value="#pCritDamRcpt"/>
+				<mul stat="pCritChanceRcpt" value="#pCritChanceRcpt"/>
+				<mul stat="mCritChanceRcpt" value="#pCritChanceRcpt"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50350" levels="1" name="Electric Shock">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill1095"/>
+		<set name="abnormal_effect" value="STUN"/>
+		<set name="abnormal_time" value="2"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="stun"/>
+		<set name="lv_bonus_rate" value="30"/>
+		<set name="basic_property" value="physical_abnormal_resist"/>
+		<set name="target_type" value="ENEMY_ONLY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="PDAM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<set name="trait" value="SHOCK"/>
+		<for>
+			<effect name="Stun"/>
+		</for>
+	</skill>
+	<skill id="50351" levels="7" name="Electric Defense">
+		<set name="icon" value="icon.skill0755"/>
+		<set name="reuseDelay" value="600000"/>
+		<table name="#TabpDef">100 350 600 850 1050 1250 1500</table>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pd_up"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pDef" value="#TabpDef"/>
+				<add stat="mDef" value="#TabpDef"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50352" levels="11" name="Talisman of Authority">
+		<set name="icon" value="icon.sayhas_talisman_new"/>
+		<table name="#pDef">10 13 16 19 22 27 32 40 48 56 70</table>
+		<table name="#maxHp">60 100 150 200 300 400 500 1000 1500 2500 4000</table>
+		<table name="#maxMp">30 80 130 180 280 380 480 880 1280 1780 2780</table>
+		<table name="#pAtk">50 80 110 160 210 290 370 470 570 770 1000</table>
+		<table name="#crit">0 0 0 50 100 200 300 400 500 700 1000</table>
+		<table name="#pSkillPower">1 1 1 1 1.02 1.04 1.06 1.08 1.1 1.12 1.15</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pDef" value="#pDef"/>
+			<add stat="mDef" value="#pDef"/>
+			<add stat="maxHp" value="#maxHp"/>
+			<add stat="maxMp" value="#maxMp"/>
+			<add stat="pAtk" value="#pAtk"/>
+			<add stat="mAtk" value="#pAtk"/>
+			<p_magic_critical_dmg value="#crit" type="DIFF"/>
+			<p_skill_critical_damage value="#crit" type="DIFF"/>
+			<mul stat="p_skill_power" value="#pSkillPower"/>
+			<mul stat="mSkillPower" value="#pSkillPower"/>
+		</for>
+	</skill>
+	<skill id="50353" levels="1" name="Valakas' Necklace">
+		<set name="icon" value="icon.accessory_necklace_of_valakas_i00"/>
+		<table name="#atk">1.05</table>
+		<table name="#Reuse">1.05</table>
+		<table name="#paralyze">10</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<effect>
+				<mul order="0x60" stat="pAtk" value="#atk"/>
+				<mul order="0x60" stat="mAtk" value="#atk"/>
+				<mul order="0x60" stat="p_skill_power" value="#atk"/>
+				<mul order="0x60" stat="mSkillPower" value="#atk"/>
+				<mul order="0x60" stat="mReuse" value="#Reuse"/>
+				<mul order="0x60" stat="pReuse" value="#Reuse"/>
+				<p_defence_trait name="paralyze" value="#paralyze"/>
+				<p_attack_trait name="paralyze" value="#paralyze"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50354" levels="1" name="A-grade: Flaming Tunic">
+		<set name="icon" value="icon.armor_t96_u_i03"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mDef" value="15"/>
+			<add order="0x10" stat="MEN" value="1"/>
+			<add order="0x10" stat="WIT" value="1"/>
+			<add stat="maxLoad" value="1500"/>
+			<add stat="maxMp" value="200"/>
+			<p_defence_trait name="shock" value="20"/>
+			<p_defence_trait name="paralyze" value="20"/>
+			<p_defence_trait name="sleep" value="20"/>
+			<p_defence_trait name="hold" value="20"/>
+			<p_defence_trait name="derangement" value="20"/>
+		</for>
+	</skill>
+	<skill id="50355" levels="1" name="Flaming Tunic">
+		<set name="icon" value="icon.armor_t96_u_i03"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50349" level="1" type="ATTACK" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50356" levels="10" name="+1 Flaming Tunic">
+		<set name="icon" value="icon.armor_t96_u_i03"/>
+		<table name="#maxHp">0 0 0 0 60 120 180 240 300 400</table>
+		<table name="#mpConsum">1 1 1 1 0.99 0.98 0.97 0.96 0.95 0.94</table>
+		<table name="#chance">1 1 1 1 3 5 7 8 9 10</table>
+		<table name="#level">1 1 1 1 2 3 4 5 6 7</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50360" level="#level" type="RECEIVE_DAMAGE" chance="#chance"/>
+			<trigger id="50361" level="#level" type="RECEIVE_DAMAGE" chance="#chance"/>
+		</triggers>
+		<for>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<add stat="maxHp" value="#maxHp"/>
+		</for>
+	</skill>
+	<skill id="50357" levels="1" name="A-grade: Flaming Stockings">
+		<set name="icon" value="icon.armor_t96_l_i03"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mDef" value="10"/>
+			<add order="0x10" stat="WIT" value="1"/>
+			<add stat="maxLoad" value="1000"/>
+			<add stat="maxMp" value="100"/>
+			<p_defence_trait name="shock" value="20"/>
+			<p_defence_trait name="paralyze" value="20"/>
+			<p_defence_trait name="sleep" value="20"/>
+			<p_defence_trait name="hold" value="20"/>
+			<p_defence_trait name="derangement" value="20"/>
+		</for>
+	</skill>
+	<skill id="50358" levels="1" name="Flaming Stockings">
+		<set name="icon" value="icon.armor_t96_l_i03"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50362" level="1" type="ATTACK" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50359" levels="10" name="+1 Flaming Stockings">
+		<set name="icon" value="icon.armor_t96_l_i03"/>
+		<table name="#maxHp">0 0 0 0 30 60 90 120 150 200</table>
+		<table name="#mpConsum">1 1 1 1 0.99 0.98 0.97 0.96 0.95 0.94</table>
+		<table name="#chance">1 1 1 1 3 5 7 8 9 10</table>
+		<table name="#level">1 1 1 1 2 3 4 5 6 7</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50362" level="#level" type="ATTACK" chance="#chance"/>
+		</triggers>
+		<for>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<add stat="maxHp" value="#maxHp"/>
+		</for>
+	</skill>
+	<skill id="50360" levels="7" name="Flame Shield">
+		<set name="icon" value="icon.skill0500"/>
+		<set name="reuseDelay" value="60000"/>
+		<table name="#damage">1500 2000 2500 3000 3500 4000 4500</table>
+		<table name="#abnormal_level">1 2 3 4 5 6 7</table>
+		<table name="#abnormal_time">10</table>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_time" value="#abnormal_time"/>
+		<set name="abnormal_type" value="barrier"/>
+		<set name="isTrigger" value="true"/>
+		<set name="magicType" value="ITEM"/>
+		<set name="operate_type" value="A2"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="target" value="TARGET_SELF"/>
+		<for>
+			<effect name="DamageBlockCount">
+				<def name="block_count" value="#damage"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50361" levels="1" name="Flame Bind">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill0834"/>
+		<set name="castRange" value="700"/>
+		<set name="abnormal_effect" value="PARALYZE"/>
+		<set name="abnormal_time" value="2"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="paralyze"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="activateRate" value="90"/>
+		<set name="lv_bonus_rate" value="20"/>
+		<set name="basic_property" value="magic_abnormal_resist"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="POINT_BLANK"/>
+		<set name="affect_object" value="NOT_FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="trait" value="PARALYZE"/>
+		<for>
+			<effect name="Paralyze"/>
+		</for>
+	</skill>
+	<skill id="50362" levels="7" name="Flame Weakness">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.m_mystery_blood"/>
+		<set name="castRange" value="700"/>
+		<table name="#pAtk">0.9 0.88 0.86 0.84 0.82 0.8 0.78</table>
+		<table name="#acc">5 6 7 8 9 10 11</table>
+		<set name="ride_state" value="NONE"/>
+		<set name="abnormal_time" value="10"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="abnormal_type" value="pd_down"/>
+		<set name="activateRate" value="80"/>
+		<set name="target_type" value="ENEMY"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="DEBUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="nextAction" value="attack"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="#pAtk"/>
+				<mul stat="mAtk" value="#pAtk"/>
+				<sub stat="pAccCombat" value="#acc"/>
+				<sub stat="mAccCombat" value="#acc"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50363" levels="1" name="Glorious Circlet">
+		<set name="icon" value="icon.accessory_hero_cap_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50364" levels="1" name="Death Knight's Flame Sword">
+		<set name="icon" value="icon.fire_sword_aden"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50365" levels="10" name="+1 Death Knight's Flame Sword">
+		<set name="icon" value="icon.fire_sword_aden"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="50366" levels="22" name="Flame of Eternity">
+		<set name="effectPoint" value="-1000"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill32100"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50367" levels="22" name="Death Fire">
+		<set name="effectPoint" value="-1000"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill32100"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50368" levels="1" name="Stigma of Death">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1000"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill32100"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50369" levels="10" name="Death Absorption">
+		<set name="effectPoint" value="-1000"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="icon" value="icon.skill32100"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50370" levels="1" name="Aden's Sword">
+		<set name="icon" value="icon.weapon_spinebone_sword_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="17">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="33">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="20">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="51">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="31">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="68">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="84">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="51">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="101">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="61">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50371" levels="1" name="Aden's Dagger">
+		<set name="icon" value="icon.weapon_knife_o'_silenus_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="15">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="30">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="20">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="46">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="31">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="61">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="76">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="51">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="91">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="61">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50372" levels="1" name="Aden's Bow">
+		<set name="icon" value="icon.weapon_gastraphetes_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="33">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="63">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="19">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="96">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="29">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="129">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="38">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="159">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="47">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="192">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="57">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50373" levels="1" name="Aden's Club">
+		<set name="icon" value="icon.weapon_war_pick_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="17">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="33">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="20">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="51">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="31">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="68">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="84">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="51">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="101">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="61">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50374" levels="1" name="Aden's Two-handed Sword">
+		<set name="icon" value="icon.weapon_flamberge_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="21">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="41">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="20">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="62">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="31">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="83">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="103">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="51">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="124">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="61">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50375" levels="1" name="Aden's Two-handed Blunt Weapon">
+		<set name="icon" value="icon.weapon_ghost_staff_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="18">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="14">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="35">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="27">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="53">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="70">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="55">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="87">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="68">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="105">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="82">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50376" levels="1" name="Aden's Spear">
+		<set name="icon" value="icon.weapon_dwarven_trident_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="17">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="33">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="20">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="51">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="31">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="68">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="84">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="51">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="101">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="61">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50377" levels="1" name="Aden's Fists">
+		<set name="icon" value="icon.weapon_baghnakh_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="21">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="41">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="20">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="62">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="31">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="83">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="103">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="51">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="124">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="61">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50378" levels="1" name="Aden's Rapier">
+		<set name="icon" value="icon.weapon_soldat_estoc_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="16">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="14">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="32">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="26">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="49">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="40">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="65">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="54">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="81">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="66">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="97">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="80">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50379" levels="1" name="Aden's Ancient Sword">
+		<set name="icon" value="icon.weapon_schlaeger_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtk" value="20">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="mAtk" value="10">
+				<and>
+					<player minLevel="40" />
+					<player max_level="49" />
+				</and>
+			</add>
+			<add stat="pAtk" value="38">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="mAtk" value="20">
+				<and>
+					<player minLevel="50" />
+					<player max_level="59" />
+				</and>
+			</add>
+			<add stat="pAtk" value="58">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="mAtk" value="31">
+				<and>
+					<player minLevel="60" />
+					<player max_level="64" />
+				</and>
+			</add>
+			<add stat="pAtk" value="77">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="mAtk" value="41">
+				<and>
+					<player minLevel="65" />
+					<player max_level="69" />
+				</and>
+			</add>
+			<add stat="pAtk" value="95">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="mAtk" value="51">
+				<and>
+					<player minLevel="70" />
+					<player max_level="74" />
+				</and>
+			</add>
+			<add stat="pAtk" value="115">
+				<player minLevel="75" />
+			</add>
+			<add stat="mAtk" value="61">
+				<player minLevel="75" />
+			</add>
+		</for>
+	</skill>
+	<skill id="50380" levels="1" name="A-grade: Helmet of Mana">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="maxNoPenaltyLoad" value="1500"/>
+			<add stat="mDef" value="10"/>
+			<mul stat="pAtk" value="1.06"/>
+			<mul stat="mAtk" value="1.08"/>
+			<mul stat="regMp" value="1.08"/>
+			<mul stat="regHp" value="1.08"/>
+		</for>
+	</skill>
+	<skill id="50381" levels="1" name="Enchant Effect: Helmet of Mana">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50383" level="1" type="ATTACK" chance="1"/>
+			<trigger id="50383" level="1" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="1"/>
+			<trigger id="50383" level="1" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50382" levels="10" name="Enchant Effect: Helmet of Mana">
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<table name="#CON">0 0 0 0 1 1 1 2 2 3</table>
+		<table name="#MEN">0 0 0 0 1 1 1 2 2 3</table>
+		<table name="#STR">0 0 0 0 0 0 1 1 1 2</table>
+		<table name="#INT">0 0 0 0 0 0 1 1 1 2</table>
+		<table name="#DEX">0 0 0 0 0 1 1 1 2 3</table>
+		<table name="#WIT">0 0 0 0 0 1 1 1 2 3</table>
+		<table name="#crit">1 1 1 1 0.98 0.97 0.96 0.95 0.94 0.92</table>
+		<table name="#chance">1 1 1 1 3 5 7 8 9 10</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50383" level="1" type="ATTACK" chance="#chance"/>
+			<trigger id="50383" level="1" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance"/>
+			<trigger id="50383" level="1" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="#chance"/>
+		</triggers>
+		<for>
+			<add order="0x10" stat="CON" value="#CON"/>
+			<add order="0x10" stat="MEN" value="#MEN"/>
+			<add order="0x10" stat="INT" value="#INT"/>
+			<add order="0x10" stat="STR" value="#STR"/>
+			<add order="0x10" stat="DEX" value="#DEX"/>
+			<add order="0x10" stat="WIT" value="#WIT"/>
+			<mul stat="pCritChanceRcpt" value="#crit"/>
+			<add stat="mCritChanceRcpt" value="#chance"/>
+		</for>
+	</skill>
+	<skill id="50383" levels="1" name="Benefits of Wisdom">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="ride_state" value="NONE"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect instant="true" name="RestoreMP" value="100"/>
+		</for>
+	</skill>
+	<skill id="50384" levels="1" name="A-grade: Boots of Evasion">
+		<set name="icon" value="icon.armor_t100_b_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="STR" value="1"/>
+			<add stat="INT" value="1"/>
+			<add stat="maxNoPenaltyLoad" value="1000"/>
+			<mul stat="mDef" value="10"/>
+			<add stat="maxHp" value="200"/>
+			<add stat="runSpd" value="8"/>
+		</for>
+	</skill>
+	<skill id="50385" levels="1" name="Enchant Effect: Boots of Evasion">
+		<set name="icon" value="icon.armor_t100_b_i00"/>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50387" level="1" type="RECEIVE_DAMAGE" chance="1"/>
+		</triggers>
+	</skill>
+	<skill id="50386" levels="10" name="Enchant Effect: Boots of Evasion">
+		<set name="icon" value="icon.armor_t100_b_i00"/>
+		<table name="#chance">1 1 1 1 3 5 7 8 9 10</table>
+		<table name="#mpConsum">0.99 0.98 0.97 0.95 0.93 0.9</table>
+		<table name="#maxHp">100 150 200 250 300 300</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50387" level="1" type="RECEIVE_DAMAGE" chance="1"/>
+		</triggers>
+		<for>
+			<mul stat="mpConsum" value="#mpConsum"/>
+			<mul stat="mpConsumePhysical" value="#mpConsum"/>
+			<mul stat="mpDanceConsume" value="#mpConsum"/>
+			<add stat="pDef" value="#maxHp"/>
+			<add stat="mDef" value="#maxHp"/>
+		</for>
+	</skill>
+	<skill id="50387" levels="1" name="Swift Evasion">
+		<set name="icon" value="icon.skill1087"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="30"/>
+		<set name="abnormal_level" value="2"/>
+		<set name="abnormal_type" value="pd_up"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="pEvasRate" value="70"/>
+				<add stat="mEvasRate" value="45"/>
+				<mul stat="pSkillEvasion" value="1.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50388" levels="1" name="Pet Test Weapon">
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="50389" levels="1" name="Circlet of Hero">
+		<set name="icon" value="icon.accessory_barka_karm_i00"/>
+		<table name="#maxHp">100</table>
+		<table name="#pDef">1.01</table>
+		<table name="#receive_p_damage_power">0.99</table>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="maxHp" value="#maxHp"/>
+			<add stat="maxMp" value="#maxHp"/>
+			<add stat="maxCp" value="#maxHp"/>
+			<mul stat="pDef" value="#pDef"/>
+			<mul stat="mDef" value="#pDef"/>
+			<mul stat="receive_p_damage_power" value="#receive_p_damage_power"/>
+			<mul stat="receive_m_damage_power" value="#receive_p_damage_power"/>
+		</for>
+	</skill>
+	<skill id="50390" levels="10" name="Enchant Effect: Circlet of Hero">
+		<set name="icon" value="icon.accessory_barka_karm_i00"/>
+		<table name="#maxHp">200 300 400 500 600 700 800 1000 2000 3000</table>
+		<table name="#pDef">1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.1 1.12 1.15</table>
+		<table name="#receive_p_damage_power">0.98 0.97 0.96 0.95 0.94 0.93 0.92 0.9 0.88 0.85</table>
+		<table name="#level">0 0 0 1 2 3 4 5 6 7</table>
+		<set name="operate_type" value="P"/>
+		<triggers>
+			<trigger id="50391" level="#level" type="ATTACK" chance="5"/>
+			<trigger id="50391" level="#level" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="5"/>
+			<trigger id="50391" level="#level" type="OFFENSIVE_PHYSICAL_SKILL_USE" chance="5"/>
+		</triggers>
+		<for>
+			<add stat="maxHp" value="#maxHp"/>
+			<add stat="maxMp" value="#maxHp"/>
+			<add stat="maxCp" value="#maxHp"/>
+			<mul stat="pDef" value="#pDef"/>
+			<mul stat="mDef" value="#pDef"/>
+			<mul stat="receive_p_damage_power" value="#receive_p_damage_power"/>
+			<mul stat="receive_m_damage_power" value="#receive_p_damage_power"/>
+		</for>
+	</skill>
+	<skill id="50391" levels="7" name="Fatal Critical Strike">
+		<table name="#abnormal_level">1 2 3 4 5 6 7</table>
+		<table name="#percent">5 15 25 40 60 80 100</table>
+		<set name="icon" value="icon.skill11877"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="abnormal_time" value="8"/>
+		<set name="abnormal_level" value="#abnormal_level"/>
+		<set name="abnormal_type" value="hit_up"/>
+		<set name="magicType" value="MAGIC"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="PARTY_PLEDGE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="affect_limit" value="50;50"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<p_critical_damage value="#percent" type="PER"/>
+				<p_magic_critical_dmg value="#percent" type="PER"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="50392" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="p_skill_power" value="1.02"/>
+			<mul stat="mSkillPower" value="1.02"/>
+		</for>
+	</skill>
+	<skill id="50393" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="p_skill_power" value="1.02"/>
+			<mul stat="mSkillPower" value="1.02"/>
+		</for>
+	</skill>
+	<skill id="50394" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="p_skill_power" value="1.02"/>
+			<mul stat="mSkillPower" value="1.02"/>
+		</for>
+	</skill>
+	<skill id="50395" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtkRange" value="20"/>
+		</for>
+	</skill>
+	<skill id="50396" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtkRange" value="20"/>
+		</for>
+	</skill>
+	<skill id="50397" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mCritRate" value="1"/>
+			<mul stat="p_skill_critical_rate" value="1.01"/>
+		</for>
+	</skill>
+	<skill id="50398" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mCritRate" value="1"/>
+			<mul stat="p_skill_critical_rate" value="1.01"/>
+		</for>
+	</skill>
+	<skill id="50399" levels="1" name="Weapon Blessing Effect">
+		<set name="icon" value="icon.bless_effect_base"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pAtkSpd" value="30"/>
+			<add stat="mAtkSpd" value="30"/>
+		</for>
+	</skill>
+</list>

@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="91100" name="Fire Dragon Belt - Venir's Blessing Lv. 3">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_vallakas_belt"/>
+		<set name="type" value="LIGHT"/>
+		<equip>
+			<slot id="BELT"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="14"/>
+		</for>
+	</armor>
+	<etcitem id="91101" name="Golden Fishing Supply Items">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_freya_snowman_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91102" name="Big Fish' Golden Pack">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_gold_lure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91103" name="Big Fish' Silver Pack">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_silver_lure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91104" name="Improved Stone: Enchant A-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.giant_ench_armor_stone_r_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91105" name="Improved Stone: Enchant B-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.giant_ench_armor_stone_r_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91106" name="Wind Cube of Abundance" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.sa_cube"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91107" name="Wind Cube of Abundance" add_name="90-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.sa_cube"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="129600"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91108" name="Amulet of Winds" add_name="90-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.bm_sayha_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="129600"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<etcitem id="91109" name="Blue Dynasty Scroll">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.scroll_of_verification_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<skills>
+			<skill id="51098" level="1" /> <!-- Blue Dynasty Transformation -->
+		</skills>
+	</etcitem>
+	<etcitem id="91110" name="Kat the Cat Scroll">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.scroll_of_verification_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<skills>
+			<skill id="51099" level="1" /> <!-- Transform: Kat the Cat -->
+		</skills>
+	</etcitem>
+	<armor id="91111" name="Agathion Pisces" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.pis_agathion_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<main_skills>
+					<skill id="51030" level="1"/><!--Teleport: Gludio-->
+					<skill id="51031" level="1"/><!--Teleport: Dion-->
+					<skill id="51032" level="1"/><!--Teleport: Giran-->
+					<skill id="51033" level="1"/><!--Teleport: Oren-->
+				</main_skills>
+				<sub_skills>
+					<skill id="51100" level="1"/><!--Fishing Agathion's Blessing-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91112" name="Agathion Cancer" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.can_agathion_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<main_skills>
+					<skill id="51030" level="1"/><!--Teleport: Gludio-->
+					<skill id="51031" level="1"/><!--Teleport: Dion-->
+					<skill id="51032" level="1"/><!--Teleport: Giran-->
+					<skill id="51033" level="1"/><!--Teleport: Oren-->
+				</main_skills>
+				<sub_skills>
+					<skill id="51100" level="1"/><!--Fishing Agathion's Blessing-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<etcitem id="91113" name="Old Inventory Expansion Ticket Lv. 1">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_ticket_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91114" name="Old Inventory Expansion Ticket Lv. 2">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_ticket_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91115" name="Old Inventory Expansion Ticket Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_ticket_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="91116" name="Nebula's Old Necklace Lv. 4">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elemental_necklace_water_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<skills>
+			<skill id="54027" level="4"/>
+			<skill id="54023" level="4"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="96"/>
+			<add stat="maxMp" order="0x60" value="42"/>
+		</for>
+	</armor>
+	<armor id="91117" name="Nebula's Necklace">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elemental_necklace_water_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<skills>
+			<skill id="54027" level="5"/>
+			<skill id="54023" level="5"/>
+			<enchant_skill id="54031" level="1" enchant="0"/>
+			<enchant_skill id="54031" level="2" enchant="1"/>
+			<enchant_skill id="54031" level="3" enchant="2"/>
+			<enchant_skill id="54031" level="4" enchant="3"/>
+			<enchant_skill id="54031" level="5" enchant="4"/>
+			<enchant_skill id="54031" level="6" enchant="5"/>
+			<enchant_skill id="54031" level="7" enchant="6"/>
+			<enchant_skill id="54031" level="8" enchant="7"/>
+			<enchant_skill id="54031" level="9" enchant="8"/>
+			<enchant_skill id="54031" level="10" enchant="9"/>
+			<enchant_skill id="54031" level="11" enchant="10"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="100"/>
+			<add stat="maxMp" order="0x60" value="50"/>
+		</for>
+	</armor>
+	<armor id="91118" name="Ignis' Old Necklace Lv. 4">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elemental_necklace_fire_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<skills>
+			<skill id="54027" level="4"/>
+			<skill id="54024" level="4"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="96"/>
+			<add stat="maxMp" order="0x60" value="42"/>
+		</for>
+	</armor>
+	<armor id="91119" name="Ignis' Necklace">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elemental_necklace_fire_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<skills>
+			<skill id="54027" level="5"/>
+			<skill id="54024" level="5"/>
+			<enchant_skill id="54030" level="1" enchant="0"/>
+			<enchant_skill id="54030" level="2" enchant="1"/>
+			<enchant_skill id="54030" level="3" enchant="2"/>
+			<enchant_skill id="54030" level="4" enchant="3"/>
+			<enchant_skill id="54030" level="5" enchant="4"/>
+			<enchant_skill id="54030" level="6" enchant="5"/>
+			<enchant_skill id="54030" level="7" enchant="6"/>
+			<enchant_skill id="54030" level="8" enchant="7"/>
+			<enchant_skill id="54030" level="9" enchant="8"/>
+			<enchant_skill id="54030" level="10" enchant="9"/>
+			<enchant_skill id="54030" level="11" enchant="10"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="100"/>
+			<add stat="maxMp" order="0x60" value="50"/>
+		</for>
+	</armor>
+	<armor id="91120" name="Procella's Old Necklace Lv. 4">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elemental_necklace_wind_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<skills>
+			<skill id="54027" level="4"/>
+			<skill id="54025" level="4"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="96"/>
+			<add stat="maxMp" order="0x60" value="42"/>
+		</for>
+	</armor>
+	<armor id="91121" name="Procella's Necklace">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elemental_necklace_wind_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<skills>
+			<skill id="54027" level="5"/>
+			<skill id="54025" level="5"/>
+			<enchant_skill id="54032" level="1" enchant="0"/>
+			<enchant_skill id="54032" level="2" enchant="1"/>
+			<enchant_skill id="54032" level="3" enchant="2"/>
+			<enchant_skill id="54032" level="4" enchant="3"/>
+			<enchant_skill id="54032" level="5" enchant="4"/>
+			<enchant_skill id="54032" level="6" enchant="5"/>
+			<enchant_skill id="54032" level="7" enchant="6"/>
+			<enchant_skill id="54032" level="8" enchant="7"/>
+			<enchant_skill id="54032" level="9" enchant="8"/>
+			<enchant_skill id="54032" level="10" enchant="9"/>
+			<enchant_skill id="54032" level="11" enchant="10"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="100"/>
+			<add stat="maxMp" order="0x60" value="50"/>
+		</for>
+	</armor>
+	<armor id="91122" name="Petram's Old Necklace Lv. 4">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elemental_necklace_earth_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<skills>
+			<skill id="54027" level="4"/>
+			<skill id="54026" level="4"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="96"/>
+			<add stat="maxMp" order="0x60" value="42"/>
+		</for>
+	</armor>
+	<armor id="91123" name="Petram's Necklace">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.elemental_necklace_earth_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="100"/>
+			<add stat="maxMp" order="0x60" value="50"/>
+		</for>
+		<skills>
+			<skill id="54027" level="5"/>
+			<skill id="54026" level="5"/>
+			<enchant_skill id="54033" level="1" enchant="0"/>
+			<enchant_skill id="54033" level="2" enchant="1"/>
+			<enchant_skill id="54033" level="3" enchant="2"/>
+			<enchant_skill id="54033" level="4" enchant="3"/>
+			<enchant_skill id="54033" level="5" enchant="4"/>
+			<enchant_skill id="54033" level="6" enchant="5"/>
+			<enchant_skill id="54033" level="7" enchant="6"/>
+			<enchant_skill id="54033" level="8" enchant="7"/>
+			<enchant_skill id="54033" level="9" enchant="8"/>
+			<enchant_skill id="54033" level="10" enchant="9"/>
+			<enchant_skill id="54033" level="11" enchant="10"/>
+		</skills>
+	</armor>
+	<etcitem id="91124" name="Radiant Spirit's Varnish">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_ev_draco_karma_down"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="91125" name="Ignis' Breath" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fire_agathion_breath"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91126" name="Nebula's Breath" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.water_agathion_breath"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91127" name="Procella's Breath" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.wind_agathion_breath"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91128" name="Petram's Breath" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.earth_agathion_breath"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="91129" name="Agathion Ignis">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<main_skills>
+					<skill id="51089" level="1"/><!--Teleport: Forge of Gods-->
+				</main_skills>
+				<sub_skills>
+					<skill id="51093" level="1"/><!--Fire Attack-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91130" name="Agathion Nebula">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_water_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<main_skills>
+					<skill id="51090" level="1"/><!--Teleport to Garden of Eva-->
+				</main_skills>
+				<sub_skills>
+					<skill id="51094" level="1"/><!--Water Attack-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91131" name="Agathion Procella">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_wind_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<main_skills>
+					<skill id="51091" level="1"/><!--Teleport to Land of Winds-->
+				</main_skills>
+				<sub_skills>
+					<skill id="51095" level="1"/><!--Wind Attack-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<armor id="91132" name="Agathion Petram">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.agathion_earth_1"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="50"/>
+		<equip>
+			<slot id="AGATHION_MAIN"/>
+			<slot id="AGATHION_SUB"/>
+		</equip>
+		<agathion_data>
+			<enchant level="0">
+				<main_skills>
+					<skill id="51092" level="1"/><!--Teleport to Wall of Argos-->
+				</main_skills>
+				<sub_skills>
+					<skill id="51096" level="1"/><!--Earth Attack-->
+				</sub_skills>
+			</enchant>
+		</agathion_data>
+	</armor>
+	<etcitem id="91133" name="Improved Master Fisherman's Blessing (2-hour)">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fishing_zone_ticket"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91134" name="Improved Master Fisherman's Blessing (4-hour)">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fishing_zone_ticket"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91135" name="Improved Master Fisherman's Blessing (8-hour)">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fishing_zone_ticket"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91136" name="Dandy's Golden Ball" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="BranchIcon.icon.g_ev_goldenball"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<skills>
+			<skill id="51108" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91137" name="Windstorm Box" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.bm_circlet_upgrade_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="91138" name="Antharas' Earring Lv. 2">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_earring_of_antaras_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<skills>
+			<skill id="50441" level="2"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="109"/>
+			<add stat="maxMp" order="0x60" value="34"/>
+		</for>
+	</armor>
+	<armor id="91139" name="Antharas' Earring Lv. 3">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_earring_of_antaras_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<skills>
+			<skill id="50441" level="3"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="119"/>
+			<add stat="maxMp" order="0x60" value="40"/>
+		</for>
+	</armor>
+	<armor id="91140" name="Venir's Talisman Lv. 19" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.benir_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="18024" level="19"/>	<!-- Venir's Talisman -->
+		</skills>
+	</armor>
+	<armor id="91141" name="Venir's Talisman Lv. 20" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.benir_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="18024" level="20"/>	<!-- Venir's Talisman -->
+		</skills>
+	</armor>
+	<armor id="91142" name="Venir's Talisman Lv. 21" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.benir_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="18024" level="21"/>	<!-- Venir's Talisman -->
+		</skills>
+	</armor>
+	<armor id="91143" name="Venir's Talisman Lv. 22" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.benir_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="18024" level="22"/>	<!-- Venir's Talisman -->
+		</skills>
+	</armor>
+	<armor id="91144" name="Venir's Talisman Lv. 23" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.benir_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="18024" level="23"/>	<!-- Venir's Talisman -->
+		</skills>
+	</armor>
+	<armor id="91145" name="Venir's Talisman Lv. 24" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.benir_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="18024" level="24"/>	<!-- Venir's Talisman -->
+		</skills>
+	</armor>
+	<armor id="91146" name="Earth Dragon Belt - Venir's Blessing Lv. 4">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_antaras_belt"/>
+		<set name="type" value="LIGHT"/>
+		<equip>
+			<slot id="BELT"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="14"/>
+		</for>
+	</armor>
+	<armor id="91147" name="Fire Dragon Belt - Venir's Blessing Lv. 4">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_vallakas_belt"/>
+		<set name="type" value="LIGHT"/>
+		<equip>
+			<slot id="BELT"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="14"/>
+		</for>
+	</armor>
+	<etcitem id="91148" name="Jewel Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_special_jewelbox_lv5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90400" count="1" chance="0.01"/><!--Vital Stone Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90394" count="1" chance="0.01"/><!--Diamond Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90397" count="1" chance="0.01"/><!--Pearl Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90939" count="1" chance="0.01"/><!--Aquamarine Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90391" count="1" chance="0.01"/><!--Sapphire Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90388" count="1" chance="0.01"/><!--Ruby Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90385" count="1" chance="0.01"/><!--Jade Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90382" count="1" chance="0.01"/><!--Garnet Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90379" count="1" chance="0.01"/><!--Topaz Jewelry Box Lv. 5--><!--TODO: Check chance-->
+			<create_item id="90943" count="1" chance="0.01"/><!--Cat's Eye Jewelry Box Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="91149" name="+5 Agathion Pack">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.star_agathion_cube"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91150" name="+10 Agathion Pack">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.star_agathion_cube"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="48048" count="1" chance="0.01" enchant="10"/><!--Agathion Virgo--><!--TODO: Check chance-->
+			<create_item id="48049" count="1" chance="0.01" enchant="10"/><!--Agathion Capricorn--><!--TODO: Check chance-->
+			<create_item id="48050" count="1" chance="0.01" enchant="10"/><!--Agathion Libra--><!--TODO: Check chance-->
+			<create_item id="48052" count="1" chance="0.01" enchant="10"/><!--Agathion Taurus--><!--TODO: Check chance-->
+			<create_item id="48053" count="1" chance="0.01" enchant="10"/><!--Agathion Leo--><!--TODO: Check chance-->
+			<create_item id="48054" count="1" chance="0.01" enchant="10"/><!--Agathion Gemini--><!--TODO: Check chance-->
+			<create_item id="48055" count="1" chance="0.01" enchant="10"/><!--Agathion Scorpio--><!--TODO: Check chance-->
+			<create_item id="48056" count="1" chance="0.01" enchant="10"/><!--Agathion Aquarius--><!--TODO: Check chance-->
+			<create_item id="48058" count="1" chance="0.01" enchant="10"/><!--Agathion Sagittarius--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="91151" name="Attribute Necklace Pack">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i11"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91123" min_count="1" max_count="1" chance="25" />
+			<capsuled_item id="91119" min_count="1" max_count="1" chance="25" />
+			<capsuled_item id="91117" min_count="1" max_count="1" chance="25" />
+			<capsuled_item id="91121" min_count="1" max_count="1" chance="25" />
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="91152" name="Blessed Pendant Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i09"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90969" min_count="1" max_count="1" chance="50" />
+			<capsuled_item id="90970" min_count="1" max_count="1" chance="50" />
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="91153" name="+15 Top-grade A-grade Weapon Pack">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_ensoulbox_PvP"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<weapon id="91154" name="Sibi's Samurai Black Long Sword" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="155"/>
+			<add stat="mAtk" order="0x10" value="70"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<etcitem id="91155" name="Sibi's Weapon Enchant Scroll">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.yogi_scroll_of_enchant_weapon_grade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91156" name="Fisherman's Blessing (24-hour)">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fishing_zone_ticket_1"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91157" name="Maphr Potion" add_name="Event">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_instant_lucky_potion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91158" name="Maphr Potion">
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_instant_lucky_potion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91159" name="Agathion Exchange Coupon">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_challenger_wp_trade_ticket"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91160" name="Agathion Enchant Scroll Pack">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.npoint_antaras_30day_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="51114" level="1"/>
+		</skills>
+	</etcitem>
+	<armor id="91161" name="Agathion Bracelet Lv. 5">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.pi_high_agathion_bracelet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="100"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="50565" level="5"/>	<!--Agathion Bracelet Lv.5-->
+		</skills>
+	</armor>
+	<weapon id="91162" name="Golden Cheer Pompoms" add_name="Event">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.ev_14th_weapon"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="12"/>
+			<add stat="mAtk" order="0x10" value="12"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<etcitem id="91163" name="Anakim's Soul Crystal Lv. 1" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91164" name="Anakim's Soul Crystal Lv. 2" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91165" name="Anakim's Soul Crystal Lv. 3" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91166" name="Anakim's Soul Crystal Lv. 4" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91167" name="Anakim's Soul Crystal Lv. 5" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91168" name="Anakim's Soul Crystal Lv. 6" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91169" name="Anakim's Soul Crystal Lv. 7" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91170" name="Anakim's Soul Crystal Lv. 8" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91171" name="Anakim's Soul Crystal Lv. 9" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91172" name="Anakim's Soul Crystal Lv. 10" add_name="Rare">
+		<set name="icon" value="icon.etc_water_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91173" name="Lilith' Soul Crystal Lv. 1" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91174" name="Lilith' Soul Crystal Lv. 2" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91175" name="Lilith' Soul Crystal Lv. 3" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91176" name="Lilith' Soul Crystal Lv. 4" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91177" name="Lilith' Soul Crystal Lv. 5" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91178" name="Lilith' Soul Crystal Lv. 6" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91179" name="Lilith' Soul Crystal Lv. 7" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91180" name="Lilith' Soul Crystal Lv. 8" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91181" name="Lilith' Soul Crystal Lv. 9" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91182" name="Lilith' Soul Crystal Lv. 10" add_name="Rare">
+		<set name="icon" value="icon.etc_fire_rune_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91183" name="Wind Treasure Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.sayha2017_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="91184" name="MP Replenishing Potion">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_lesser_potion_blue_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="51125" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91185" name="Mid-grade Spirit's Blessing" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.elemental_bless_scrl_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="51126" level="1"/>	<!--Intermediate Spirit's Blessing-->
+		</skills>
+	</etcitem>
+	<etcitem id="91186" name="High-grade Spirit's Blessing" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.elemental_bless_scrl_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="51127" level="1"/>	<!--Advanced Spirit's Blessing-->
+		</skills>
+	</etcitem>
+	<etcitem id="91187" name="Scroll: Enchant Spirit Accessory">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_ev_draco_karma_down"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="91188" name="Blessed Scroll: Enchant Spirit Accessory">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_ev_draco_karma_down"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="91189" name="Fire Attack Potion">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="icon" value="icon.etc_fire_potion_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="51130" level="1"/>
+		</skills>
+		<skills>
+			<skill id="51130" level="1" /> <!-- Fire Attribute Attack Potion -->
+		</skills>
+	</etcitem>
+	<etcitem id="91190" name="Water Attack Potion">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="icon" value="icon.etc_water_potion_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="51131" level="1" /> <!-- Water Attribute Attack Potion -->
+		</skills>
+	</etcitem>
+	<etcitem id="91191" name="Wind Attack Potion">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="icon" value="icon.etc_wind_potion_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="51132" level="1" /> <!-- Wind Attribute Attack Potion -->
+		</skills>
+	</etcitem>
+	<etcitem id="91192" name="Earth Attack Potion">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="icon" value="icon.etc_earth_potion_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="51133" level="1" /> <!-- Earth Attribute Attack Potion -->
+		</skills>
+	</etcitem>
+	<etcitem id="91193" name="Amulet of Winds" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.bm_sayha_rune"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+	</etcitem>
+	<armor id="91194" name="Talisman of Authority Lv. 5" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.sayhas_talisman_new_i05"/>
+		<set name="type" value="NONE"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="91195" name="Talisman Bracelet Lv. 4" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.dimension_bracelet_i03"/>
+		<set name="type" value="NONE"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+	</armor>
+	<armor id="91196" name="Cat's Eye Lv. 5" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_jewel_red_catseye"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+	</armor>
+	<etcitem id="91197" name="Scroll of Escape: Forge of Gods" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="51134" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91198" name="Scroll of Escape: Garden of Eva" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="51135" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="91199" name="Scroll of Escape: Land of Winds" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_return_i04"/>
+		<set name="weight" value="30"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="51136" level="1"/>
+		</skills>
+	</etcitem>
+</list>

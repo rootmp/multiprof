@@ -1,0 +1,2242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="95100" name="Robe of Seal" add_name="Sealed">
+		<!--One-piece upper and lower body armor. Additional lower body armor cannot be worn while wearing this.-->
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t44_ul_i00"/>
+		<set name="price" value="707000"/>
+		<set name="grind_point" value="70700"/>
+		<set name="grind_commission" value="1414"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="2500"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="105"/>
+			<add stat="maxMp" order="0x60" value="413"/>
+		</for>
+	</armor>
+	<armor id="95101" name="Demon's Tunic" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t54_u_i00"/>
+		<set name="price" value="736000"/>
+		<set name="grind_point" value="73600"/>
+		<set name="grind_commission" value="1472"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1990"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+			<add stat="maxMp" order="0x60" value="284"/>
+		</for>
+	</armor>
+	<armor id="95102" name="Divine Tunic" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t57_u_i00"/>
+		<set name="price" value="1070000"/>
+		<set name="grind_point" value="107000"/>
+		<set name="grind_commission" value="2140"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1980"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="74"/>
+			<add stat="maxMp" order="0x60" value="314"/>
+		</for>
+	</armor>
+	<armor id="95103" name="Cursed Stockings" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t14_l_i00"/>
+		<set name="price" value="39100"/>
+		<set name="grind_point" value="3910"/>
+		<set name="grind_commission" value="79"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1020"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="24"/>
+			<add stat="maxMp" order="0x60" value="66"/>
+		</for>
+	</armor>
+	<armor id="95104" name="Elven Stockings" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t11_l_i00"/>
+		<set name="price" value="62500"/>
+		<set name="grind_point" value="6250"/>
+		<set name="grind_commission" value="125"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1010"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+			<add stat="maxMp" order="0x60" value="79"/>
+		</for>
+	</armor>
+	<armor id="95105" name="Dark Stockings" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t16_l_i00"/>
+		<set name="price" value="62500"/>
+		<set name="grind_point" value="6250"/>
+		<set name="grind_commission" value="125"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+			<add stat="maxMp" order="0x60" value="79"/>
+		</for>
+	</armor>
+	<armor id="95106" name="Wizard Stockings" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t17_l_i00"/>
+		<set name="price" value="62500"/>
+		<set name="grind_point" value="6250"/>
+		<set name="grind_commission" value="125"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="990"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+			<add stat="maxMp" order="0x60" value="79"/>
+		</for>
+	</armor>
+	<armor id="95107" name="Stockings of Knowledge" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t41_l_i00"/>
+		<set name="price" value="95200"/>
+		<set name="grind_point" value="9520"/>
+		<set name="grind_commission" value="191"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="30"/>
+			<add stat="maxMp" order="0x60" value="92"/>
+		</for>
+	</armor>
+	<armor id="95108" name="Mithril Stockings" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t51_l_i00"/>
+		<set name="price" value="140000"/>
+		<set name="grind_point" value="14000"/>
+		<set name="grind_commission" value="280"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="980"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="32"/>
+			<add stat="maxMp" order="0x60" value="105"/>
+		</for>
+	</armor>
+	<armor id="95109" name="Demon's Stockings" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t54_l_i00"/>
+		<set name="price" value="460000"/>
+		<set name="grind_point" value="46000"/>
+		<set name="grind_commission" value="920"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="980"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="43"/>
+			<add stat="maxMp" order="0x60" value="177"/>
+		</for>
+	</armor>
+	<armor id="95110" name="Divine Stockings" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t57_l_i00"/>
+		<set name="price" value="671000"/>
+		<set name="grind_point" value="67100"/>
+		<set name="grind_commission" value="1342"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="960"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="46"/>
+			<add stat="maxMp" order="0x60" value="196"/>
+		</for>
+	</armor>
+	<armor id="95111" name="Chain Helmet" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="147000"/>
+		<set name="grind_point" value="14700"/>
+		<set name="grind_commission" value="294"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="620"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="45"/>
+		</for>
+	</armor>
+	<armor id="95112" name="Steel Plate Helmet" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="206000"/>
+		<set name="grind_point" value="20600"/>
+		<set name="grind_commission" value="412"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="610"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="49"/>
+		</for>
+	</armor>
+	<armor id="95113" name="Mithril Helmet" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_circlet_i00"/>
+		<set name="price" value="536000"/>
+		<set name="grind_point" value="53600"/>
+		<set name="grind_commission" value="1072"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="240"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="58"/>
+		</for>
+	</armor>
+	<armor id="95114" name="Great Helmet" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="242000"/>
+		<set name="grind_point" value="24200"/>
+		<set name="grind_commission" value="484"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="610"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="51"/>
+		</for>
+	</armor>
+	<armor id="95115" name="Compound Helmet" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="368000"/>
+		<set name="grind_point" value="36800"/>
+		<set name="grind_commission" value="736"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="610"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="54"/>
+		</for>
+	</armor>
+	<armor id="95116" name="Iron Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t10_b_i00"/>
+		<set name="price" value="50800"/>
+		<set name="grind_point" value="5080"/>
+		<set name="grind_commission" value="102"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1280"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="24"/>
+		</for>
+	</armor>
+	<armor id="95117" name="Divine Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t67_b_i00"/>
+		<set name="price" value="358000"/>
+		<set name="grind_point" value="35800"/>
+		<set name="grind_commission" value="716"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1200"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<armor id="95118" name="Quality Leather Gloves" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t09_g_i00"/>
+		<set name="price" value="20900"/>
+		<set name="grind_point" value="2090"/>
+		<set name="grind_commission" value="42"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="650"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="19"/>
+		</for>
+	</armor>
+	<armor id="95119" name="Leather Gauntlets" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t18_g_i00"/>
+		<set name="price" value="33300"/>
+		<set name="grind_point" value="3330"/>
+		<set name="grind_commission" value="67"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="640"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="22"/>
+		</for>
+	</armor>
+	<armor id="95120" name="Rip Gauntlets " add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t40_g_i00"/>
+		<set name="price" value="74700"/>
+		<set name="grind_point" value="7470"/>
+		<set name="grind_commission" value="150"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="630"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+		</for>
+	</armor>
+	<armor id="95121" name="Ogre Power Gauntlets" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t45_g_i00"/>
+		<set name="price" value="97800"/>
+		<set name="grind_point" value="9780"/>
+		<set name="grind_commission" value="196"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="620"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="29"/>
+		</for>
+	</armor>
+	<armor id="95122" name="Mithril Gauntlets" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t61_g_i00"/>
+		<set name="price" value="245000"/>
+		<set name="grind_point" value="24500"/>
+		<set name="grind_commission" value="490"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="36"/>
+		</for>
+	</armor>
+	<armor id="95123" name="Gauntlets of Ghost" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_gauntlet_i00"/>
+		<set name="price" value="275100"/>
+		<set name="grind_point" value="27510"/>
+		<set name="grind_commission" value="551"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1920"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<weapon id="95124" name="Bronze Shield" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shield_bronze_shield_i00"/>
+		<set name="price" value="21900"/>
+		<set name="grind_point" value="2190"/>
+		<set name="grind_commission" value="44"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1370"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="101"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95125" name="Aspis" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shield_aspis_i00"/>
+		<set name="price" value="35000"/>
+		<set name="grind_point" value="3500"/>
+		<set name="grind_commission" value="70"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1350"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="114"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95126" name="Hoplon" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shield_hoplon_i00"/>
+		<set name="price" value="53300"/>
+		<set name="grind_point" value="5330"/>
+		<set name="grind_commission" value="107"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1340"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="128"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95127" name="Kite Shield" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shield_kite_shield_i00"/>
+		<set name="price" value="78400"/>
+		<set name="grind_point" value="7840"/>
+		<set name="grind_commission" value="157"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1320"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="142"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95128" name="Square Shield" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shield_square_shield_i00"/>
+		<set name="price" value="103000"/>
+		<set name="grind_point" value="10300"/>
+		<set name="grind_commission" value="206"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1310"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="154"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95129" name="Eldarake" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.shield_eldarake_i00"/>
+		<set name="price" value="133000"/>
+		<set name="grind_point" value="13300"/>
+		<set name="grind_commission" value="266"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1290"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="166"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95130" name="Knight's Shield" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.shield_knight_shield_i00"/>
+		<set name="price" value="169000"/>
+		<set name="grind_point" value="16900"/>
+		<set name="grind_commission" value="338"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1260"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="178"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95131" name="Zubei's Shield" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.shield_shrnoens_shield_i00"/>
+		<set name="price" value="545000"/>
+		<set name="grind_point" value="109000"/>
+		<set name="grind_commission" value="2180"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1210"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="216"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95132" name="Avadon Shield" add_name="Sealed">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.shield_avadon_shield_i00"/>
+		<set name="price" value="545000"/>
+		<set name="grind_point" value="109000"/>
+		<set name="grind_commission" value="2180"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1210"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="216"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<armor id="95133" name="Pa'agrio Hand" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_short_leather_gloves_i00"/>
+		<set name="price" value="123900"/>
+		<set name="grind_point" value="12390"/>
+		<set name="grind_commission" value="248"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1600"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="34"/>
+		</for>
+	</armor>
+	<armor id="95134" name="Blue Buckskin Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t18_b_i00"/>
+		<set name="price" value="33300"/>
+		<set name="grind_point" value="3330"/>
+		<set name="grind_commission" value="67"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1300"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="22"/>
+		</for>
+	</armor>
+	<armor id="95135" name="Boots of Strength" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t40_b_i00"/>
+		<set name="price" value="74700"/>
+		<set name="grind_point" value="7470"/>
+		<set name="grind_commission" value="150"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1250"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+		</for>
+	</armor>
+	<armor id="95136" name="Assault Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t44_b_i00"/>
+		<set name="price" value="97800"/>
+		<set name="grind_point" value="9780"/>
+		<set name="grind_commission" value="196"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1240"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="29"/>
+		</for>
+	</armor>
+	<armor id="95137" name="Crimson Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t57_b_i00"/>
+		<set name="price" value="161000"/>
+		<set name="grind_point" value="16100"/>
+		<set name="grind_commission" value="322"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1210"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="34"/>
+		</for>
+	</armor>
+	<armor id="95138" name="Forgotten Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_iron_boots_i00"/>
+		<set name="price" value="245000"/>
+		<set name="grind_point" value="24500"/>
+		<set name="grind_commission" value="490"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="4000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="36"/>
+		</for>
+	</armor>
+	<armor id="95139" name="Adamantite Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_iron_boots_i00"/>
+		<set name="price" value="358000"/>
+		<set name="grind_point" value="35800"/>
+		<set name="grind_commission" value="716"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="4000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<armor id="95140" name="Shining Circlet" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_circlet_i00"/>
+		<set name="price" value="368000"/>
+		<set name="grind_point" value="36800"/>
+		<set name="grind_commission" value="736"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="54"/>
+		</for>
+	</armor>
+	<weapon id="95141" name="Cursed Maingauche" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.t00"/>
+		<set name="price" value="1400000"/>
+		<set name="grind_point" value="140000"/>
+		<set name="grind_commission" value="2800"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="1070"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="5"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<triggers>
+			<trigger id="3005" level="1" type="CRIT" chance="100"/>
+		</triggers>
+		<for>
+			<add stat="pAtk" order="0x10" value="62"/>
+			<add stat="mAtk" order="0x10" value="42"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<armor id="95142" name="Mithril Scale Gaiters" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t40_l_i00"/>
+		<set name="price" value="187000"/>
+		<set name="grind_point" value="18700"/>
+		<set name="grind_commission" value="374"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3870"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="64"/>
+		</for>
+	</armor>
+	<armor id="95143" name="Brigandine Gaiters" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t43_l_i00"/>
+		<set name="price" value="187000"/>
+		<set name="grind_point" value="18700"/>
+		<set name="grind_commission" value="374"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3820"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="64"/>
+		</for>
+	</armor>
+	<armor id="95144" name="Reinforced Mithril Gaiters" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t47_l_i00"/>
+		<set name="price" value="237000"/>
+		<set name="grind_point" value="23700"/>
+		<set name="grind_commission" value="474"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="1530"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="56"/>
+		</for>
+	</armor>
+	<armor id="95145" name="Elven Mithril Tunic" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_elven_tunic_i00"/>
+		<set name="price" value="224000"/>
+		<set name="grind_point" value="22400"/>
+		<set name="grind_commission" value="448"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="720"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="54"/>
+			<add stat="maxMp" order="0x60" value="169"/>
+		</for>
+	</armor>
+	<armor id="95146" name="Elven Mithril Stockings" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_elven_hose_i00"/>
+		<set name="price" value="140000"/>
+		<set name="grind_point" value="14000"/>
+		<set name="grind_commission" value="280"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="2400"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="34"/>
+			<add stat="maxMp" order="0x60" value="105"/>
+		</for>
+	</armor>
+	<armor id="95147" name="Brigandine Helmet" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="112000"/>
+		<set name="grind_point" value="11200"/>
+		<set name="grind_commission" value="224"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="630"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="41"/>
+		</for>
+	</armor>
+	<armor id="95148" name="Plate Helmet" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="147000"/>
+		<set name="grind_point" value="14700"/>
+		<set name="grind_commission" value="294"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="630"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="44"/>
+		</for>
+	</armor>
+	<armor id="95149" name="Chain Hood" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="189000"/>
+		<set name="grind_point" value="18900"/>
+		<set name="grind_commission" value="378"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="620"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="47"/>
+		</for>
+	</armor>
+	<armor id="95150" name="Reinforced Leather Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t13_b_i00"/>
+		<set name="price" value="50800"/>
+		<set name="grind_point" value="5080"/>
+		<set name="grind_commission" value="102"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1280"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="24"/>
+		</for>
+	</armor>
+	<armor id="95151" name="Boots of Knowledge" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t41_b_i00"/>
+		<set name="price" value="50800"/>
+		<set name="grind_point" value="5080"/>
+		<set name="grind_commission" value="102"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1270"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="24"/>
+		</for>
+	</armor>
+	<armor id="95152" name="Manticore Skin Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t42_b_i00"/>
+		<set name="price" value="74700"/>
+		<set name="grind_point" value="7470"/>
+		<set name="grind_commission" value="150"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1260"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+		</for>
+	</armor>
+	<armor id="95153" name="Brigandine Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t43_b_i00"/>
+		<set name="price" value="74700"/>
+		<set name="grind_point" value="7470"/>
+		<set name="grind_commission" value="150"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1250"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+		</for>
+	</armor>
+	<armor id="95154" name="Elven Mithril Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t51_b_i00"/>
+		<set name="price" value="74700"/>
+		<set name="grind_point" value="7470"/>
+		<set name="grind_commission" value="150"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1250"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+		</for>
+	</armor>
+	<armor id="95155" name="Salamander Skin Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t45_b_i00"/>
+		<set name="price" value="97800"/>
+		<set name="grind_point" value="9780"/>
+		<set name="grind_commission" value="196"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1230"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="29"/>
+		</for>
+	</armor>
+	<armor id="95156" name="Plate Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t46_b_i00"/>
+		<set name="price" value="97800"/>
+		<set name="grind_point" value="9780"/>
+		<set name="grind_commission" value="196"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1240"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="29"/>
+		</for>
+	</armor>
+	<armor id="95157" name="Chain Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t48_b_i00"/>
+		<set name="price" value="126000"/>
+		<set name="grind_point" value="12600"/>
+		<set name="grind_commission" value="252"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="32"/>
+		</for>
+	</armor>
+	<armor id="95158" name="Plated Leather Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t47_b_i00"/>
+		<set name="price" value="126000"/>
+		<set name="grind_point" value="12600"/>
+		<set name="grind_commission" value="252"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="32"/>
+		</for>
+	</armor>
+	<armor id="95159" name="Dwarven Chain Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t60_b_i00"/>
+		<set name="price" value="126000"/>
+		<set name="grind_point" value="12600"/>
+		<set name="grind_commission" value="252"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1210"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="32"/>
+		</for>
+	</armor>
+	<armor id="95160" name="Boots of Seal" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t44_b_i00"/>
+		<set name="price" value="126000"/>
+		<set name="grind_point" value="12600"/>
+		<set name="grind_commission" value="252"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="32"/>
+		</for>
+	</armor>
+	<armor id="95161" name="Rind Leather Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t49_b_i00"/>
+		<set name="price" value="161000"/>
+		<set name="grind_point" value="16100"/>
+		<set name="grind_commission" value="322"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="34"/>
+		</for>
+	</armor>
+	<armor id="95162" name="Demon's Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t54_b_i00"/>
+		<set name="price" value="245000"/>
+		<set name="grind_point" value="24500"/>
+		<set name="grind_commission" value="490"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="36"/>
+		</for>
+	</armor>
+	<armor id="95163" name="Theca Leather Boots" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t63_b_i00"/>
+		<set name="price" value="275000"/>
+		<set name="grind_point" value="27500"/>
+		<set name="grind_commission" value="550"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1210"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="37"/>
+		</for>
+	</armor>
+	<armor id="95164" name="Reinforced Leather Gloves" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t13_g_i00"/>
+		<set name="price" value="50800"/>
+		<set name="grind_point" value="5080"/>
+		<set name="grind_commission" value="102"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="640"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="24"/>
+		</for>
+	</armor>
+	<armor id="95165" name="Gloves of Knowledge" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t41_g_i00"/>
+		<set name="price" value="50800"/>
+		<set name="grind_point" value="5080"/>
+		<set name="grind_commission" value="102"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="640"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="24"/>
+		</for>
+	</armor>
+	<armor id="95166" name="Manticore Skin Gloves" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t42_g_i00"/>
+		<set name="price" value="74700"/>
+		<set name="grind_point" value="7470"/>
+		<set name="grind_commission" value="150"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="630"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+		</for>
+	</armor>
+	<armor id="95167" name="Brigandine Gauntlets" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t43_g_i00"/>
+		<set name="price" value="74700"/>
+		<set name="grind_point" value="7470"/>
+		<set name="grind_commission" value="150"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="630"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+		</for>
+	</armor>
+	<armor id="95168" name="Elven Mithril Gloves" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t51_g_i00"/>
+		<set name="price" value="74700"/>
+		<set name="grind_point" value="7470"/>
+		<set name="grind_commission" value="150"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="640"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+		</for>
+	</armor>
+	<armor id="95169" name="Sage's Worn Gloves" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t44_g_i00"/>
+		<set name="price" value="97800"/>
+		<set name="grind_point" value="9780"/>
+		<set name="grind_commission" value="196"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="630"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="29"/>
+		</for>
+	</armor>
+	<armor id="95170" name="Reinforced Mithril Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t47_g_i00"/>
+		<set name="price" value="126000"/>
+		<set name="grind_point" value="12600"/>
+		<set name="grind_commission" value="252"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="620"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="32"/>
+		</for>
+	</armor>
+	<armor id="95171" name="Chain Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t48_g_i00"/>
+		<set name="price" value="126000"/>
+		<set name="grind_point" value="12600"/>
+		<set name="grind_commission" value="252"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="620"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="32"/>
+		</for>
+	</armor>
+	<armor id="95172" name="Plated Leather Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t47_g_i00"/>
+		<set name="price" value="149000"/>
+		<set name="grind_point" value="14900"/>
+		<set name="grind_commission" value="298"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="610"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="33"/>
+		</for>
+	</armor>
+	<armor id="95173" name="Dwarven Chain Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t60_g_i00"/>
+		<set name="price" value="161000"/>
+		<set name="grind_point" value="16100"/>
+		<set name="grind_commission" value="322"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="34"/>
+		</for>
+	</armor>
+	<armor id="95174" name="Gloves of Seal" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t44_g_i00"/>
+		<set name="price" value="161000"/>
+		<set name="grind_point" value="16100"/>
+		<set name="grind_commission" value="322"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="620"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="34"/>
+		</for>
+	</armor>
+	<armor id="95175" name="Rind Leather Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t49_g_i00"/>
+		<set name="price" value="161000"/>
+		<set name="grind_point" value="16100"/>
+		<set name="grind_commission" value="322"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="34"/>
+		</for>
+	</armor>
+	<armor id="95176" name="Demon's Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t54_g_i00"/>
+		<set name="price" value="245000"/>
+		<set name="grind_point" value="24500"/>
+		<set name="grind_commission" value="490"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="610"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="36"/>
+		</for>
+	</armor>
+	<armor id="95177" name="Theca Leather Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t63_g_i00"/>
+		<set name="price" value="275000"/>
+		<set name="grind_point" value="27500"/>
+		<set name="grind_commission" value="550"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="37"/>
+		</for>
+	</armor>
+	<armor id="95178" name="Divine Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t57_g_i00"/>
+		<set name="price" value="358000"/>
+		<set name="grind_point" value="35800"/>
+		<set name="grind_commission" value="716"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="610"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<armor id="95179" name="Blessed Gloves" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t67_g_i00"/>
+		<set name="price" value="358000"/>
+		<set name="grind_point" value="35800"/>
+		<set name="grind_commission" value="716"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<weapon id="95180" name="Brigandine Shield" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shield_brigandine_shield_i00"/>
+		<set name="price" value="78400"/>
+		<set name="grind_point" value="7840"/>
+		<set name="grind_commission" value="157"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1320"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="142"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95181" name="Plate Shield" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shield_plate_shield_i00"/>
+		<set name="price" value="103000"/>
+		<set name="grind_point" value="10300"/>
+		<set name="grind_commission" value="206"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1310"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="154"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95182" name="Chain Shield" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.shield_chain_shield_i00"/>
+		<set name="price" value="133000"/>
+		<set name="grind_point" value="13300"/>
+		<set name="grind_commission" value="266"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1280"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="166"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95183" name="Dwarven Chain Shield" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.shield_dwarven_chain_shield_i00"/>
+		<set name="price" value="156000"/>
+		<set name="grind_point" value="15600"/>
+		<set name="grind_commission" value="312"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1280"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="174"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95184" name="Full Plate Shield" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.shield_full_plate_shield_i00"/>
+		<set name="price" value="375000"/>
+		<set name="grind_point" value="37500"/>
+		<set name="grind_commission" value="750"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1220"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="203"/>
+			<add stat="rShld" order="0x10" value="20"/>
+		</for>
+	</weapon>
+	<weapon id="95185" name="Elven Long Sword" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_elven_long_sword_i00"/>
+		<set name="price" value="1800000"/>
+		<set name="grind_point" value="180000"/>
+		<set name="grind_commission" value="3600"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1440"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="92"/>
+			<add stat="mAtk" order="0x10" value="54"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95186" name="Dwarven War Hammer" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_dwarven_warhammer_i00"/>
+		<set name="price" value="2870000"/>
+		<set name="grind_point" value="287000"/>
+		<set name="grind_commission" value="5740"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1670"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="19"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="122"/>
+			<add stat="mAtk" order="0x10" value="74"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="95187" name="Saber*Saber" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="877000"/>
+		<set name="grind_point" value="87700"/>
+		<set name="grind_commission" value="1754"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="37"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95188" name="Saber*Bastard Sword" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1060000"/>
+		<set name="grind_point" value="106000"/>
+		<set name="grind_commission" value="2120"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="83"/>
+			<add stat="mAtk" order="0x10" value="41"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95189" name="Saber*Spinebone Sword" add_name="Sealed">
+		<!--As with two-handed swords/blunts and fist weapons, dual swords have a greater increase in P. Atk. when enchanted than one-handed swords.-->
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1060000"/>
+		<set name="grind_point" value="106000"/>
+		<set name="grind_commission" value="2120"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="83"/>
+			<add stat="mAtk" order="0x10" value="41"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95190" name="Saber*Artisan's Sword" add_name="Sealed">
+		<!--As with two-handed swords/blunts and fist weapons, dual swords have a greater increase in P. Atk. when enchanted than one-handed swords.-->
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1060000"/>
+		<set name="grind_point" value="106000"/>
+		<set name="grind_commission" value="2120"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="83"/>
+			<add stat="mAtk" order="0x10" value="41"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95191" name="Saber*Knight's Sword" add_name="Sealed">
+		<!--As with two-handed swords/blunts and fist weapons, dual swords have a greater increase in P. Atk. when enchanted than one-handed swords.-->
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1060000"/>
+		<set name="grind_point" value="106000"/>
+		<set name="grind_commission" value="2120"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2510"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="83"/>
+			<add stat="mAtk" order="0x10" value="41"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95192" name="Saber*Crimson Sword" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1400000"/>
+		<set name="grind_point" value="140000"/>
+		<set name="grind_commission" value="2800"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2530"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95193" name="Saber*Elven Sword" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1400000"/>
+		<set name="grind_point" value="140000"/>
+		<set name="grind_commission" value="2800"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2510"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95194" name="Saber*Sword of Revolution" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1960000"/>
+		<set name="grind_point" value="196000"/>
+		<set name="grind_commission" value="3920"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2420"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="118"/>
+			<add stat="mAtk" order="0x10" value="61"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95195" name="Saber*Elven Long Sword" add_name="Sealed">
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="2290000"/>
+		<set name="grind_point" value="229000"/>
+		<set name="grind_commission" value="4580"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2420"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="130"/>
+			<add stat="mAtk" order="0x10" value="67"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95196" name="Bastard Sword*Bastard Sword" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1400000"/>
+		<set name="grind_point" value="140000"/>
+		<set name="grind_commission" value="2800"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95197" name="Bastard Sword*Spinebone Sword" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1400000"/>
+		<set name="grind_point" value="140000"/>
+		<set name="grind_commission" value="2800"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2470"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95198" name="Bastard Sword*Artisan's Sword" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1400000"/>
+		<set name="grind_point" value="140000"/>
+		<set name="grind_commission" value="2800"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2480"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="95199" name="Bastard Sword*Knight's Sword" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="price" value="1400000"/>
+		<set name="grind_point" value="140000"/>
+		<set name="grind_commission" value="2800"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2500"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+</list>

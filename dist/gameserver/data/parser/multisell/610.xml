@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="91119" count="1"/>	<!--Ignis' Necklace-->
+		<ingredient id="91117" count="1"/>	<!--Nebula's Necklace-->
+		<ingredient id="91040" count="800"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91119" count="1"/>	<!--Ignis' Necklace-->
+		<ingredient id="91121" count="1"/>	<!--Procella's Necklace-->
+		<ingredient id="91040" count="800"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91119" count="1"/>	<!--Ignis' Necklace-->
+		<ingredient id="91123" count="1"/>	<!--Petram's Necklace-->
+		<ingredient id="91040" count="800"/>	<!--Fire Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91117" count="1"/>	<!--Nebula's Necklace-->
+		<ingredient id="91119" count="1"/>	<!--Ignis' Necklace-->
+		<ingredient id="91039" count="800"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91117" count="1"/>	<!--Nebula's Necklace-->
+		<ingredient id="91121" count="1"/>	<!--Procella's Necklace-->
+		<ingredient id="91039" count="800"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91117" count="1"/>	<!--Nebula's Necklace-->
+		<ingredient id="91123" count="1"/>	<!--Petram's Necklace-->
+		<ingredient id="91039" count="800"/>	<!--Water Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91121" count="1"/>	<!--Procella's Necklace-->
+		<ingredient id="91119" count="1"/>	<!--Ignis' Necklace-->
+		<ingredient id="91041" count="800"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91121" count="1"/>	<!--Procella's Necklace-->
+		<ingredient id="91117" count="1"/>	<!--Nebula's Necklace-->
+		<ingredient id="91041" count="800"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91121" count="1"/>	<!--Procella's Necklace-->
+		<ingredient id="91123" count="1"/>	<!--Petram's Necklace-->
+		<ingredient id="91041" count="800"/>	<!--Wind Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91123" count="1"/>	<!--Petram's Necklace-->
+		<ingredient id="91119" count="1"/>	<!--Ignis' Necklace-->
+		<ingredient id="91042" count="800"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91123" count="1"/>	<!--Petram's Necklace-->
+		<ingredient id="91117" count="1"/>	<!--Nebula's Necklace-->
+		<ingredient id="91042" count="800"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="91123" count="1"/>	<!--Petram's Necklace-->
+		<ingredient id="91121" count="1"/>	<!--Procella's Necklace-->
+		<ingredient id="91042" count="800"/>	<!--Earth Attribute Fragment-->
+		<ingredient id="57" count="70000000"/>	<!--Adena-->
+	</item>
+</list>

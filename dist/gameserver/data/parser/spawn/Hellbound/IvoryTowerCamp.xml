@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34192" /> <!-- Mastie -->
+		<point x="11608" y="248472" z="-2086" h="24642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34193" /> <!-- Creanir -->
+		<point x="11880" y="249304" z="-2059" h="36333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34201" /> <!-- Warp Gate -->
+		<point x="11608" y="249752" z="-2059" h="44115" />
+	</spawn>
+</list>

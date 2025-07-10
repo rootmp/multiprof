@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="38200">
+		<!--P. Evasion +2.5-->
+	</option_data>
+	<option_data id="38201">
+		<!--P. Evasion +3.0-->
+	</option_data>
+	<option_data id="38202">
+		<!--P. Evasion +3.5-->
+	</option_data>
+	<option_data id="38203">
+		<!--P. Evasion +5.0-->
+	</option_data>
+	<option_data id="38204">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38205">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38206">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38207">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38208">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38209">
+		<!--M. Evasion +1.1-->
+	</option_data>
+	<option_data id="38210">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38211">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38212">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38213">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38214">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38215">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="38216">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="38217">
+		<!--M. Evasion +1.6-->
+	</option_data>
+	<option_data id="38218">
+		<!--M. Evasion +1.8-->
+	</option_data>
+	<option_data id="38219">
+		<!--M. Evasion +2.0-->
+	</option_data>
+	<option_data id="38220">
+		<!--M. Evasion +2.5-->
+	</option_data>
+	<option_data id="38221">
+		<!--M. Evasion +3.0-->
+	</option_data>
+	<option_data id="38222">
+		<!--M. Evasion +3.5-->
+	</option_data>
+	<option_data id="38223">
+		<!--M. Evasion +5.0-->
+	</option_data>
+	<option_data id="38224">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38225">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38226">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38227">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38228">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38229">
+		<!--M. Evasion +1.1-->
+	</option_data>
+	<option_data id="38230">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38231">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38232">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38233">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38234">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38235">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="38236">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="38237">
+		<!--M. Evasion +1.6-->
+	</option_data>
+	<option_data id="38238">
+		<!--M. Evasion +1.8-->
+	</option_data>
+	<option_data id="38239">
+		<!--M. Evasion +2.0-->
+	</option_data>
+	<option_data id="38240">
+		<!--M. Evasion +2.5-->
+	</option_data>
+	<option_data id="38241">
+		<!--M. Evasion +3.0-->
+	</option_data>
+	<option_data id="38242">
+		<!--M. Evasion +3.5-->
+	</option_data>
+	<option_data id="38243">
+		<!--M. Evasion +5.0-->
+	</option_data>
+	<option_data id="38244">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38245">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38246">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38247">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38248">
+		<!--M. Evasion +1.0-->
+	</option_data>
+	<option_data id="38249">
+		<!--M. Evasion +1.1-->
+	</option_data>
+	<option_data id="38250">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38251">
+		<!--M. Evasion +1.2-->
+	</option_data>
+	<option_data id="38252">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38253">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38254">
+		<!--M. Evasion +1.3-->
+	</option_data>
+	<option_data id="38255">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="38256">
+		<!--M. Evasion +1.4-->
+	</option_data>
+	<option_data id="38257">
+		<!--M. Evasion +1.6-->
+	</option_data>
+	<option_data id="38258">
+		<!--M. Evasion +1.8-->
+	</option_data>
+	<option_data id="38259">
+		<!--M. Evasion +2.0-->
+	</option_data>
+	<option_data id="38260">
+		<!--M. Evasion +2.5-->
+	</option_data>
+	<option_data id="38261">
+		<!--M. Evasion +3.0-->
+	</option_data>
+	<option_data id="38262">
+		<!--M. Evasion +3.5-->
+	</option_data>
+	<option_data id="38263">
+		<!--M. Evasion +5.0-->
+	</option_data>
+	<option_data id="38264">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38265">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38266">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38267">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38268">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38269">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38270">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38271">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38272">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38273">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38274">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38275">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38276">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38277">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38278">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38279">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38280">
+		<!--Received damage -3%-->
+	</option_data>
+	<option_data id="38281">
+		<!--Received damage -3%-->
+	</option_data>
+	<option_data id="38282">
+		<!--Received damage -3%-->
+	</option_data>
+	<option_data id="38283">
+		<!--Received damage -5%-->
+	</option_data>
+	<option_data id="38284">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38285">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38286">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38287">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38288">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38289">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38290">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38291">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38292">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38293">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38294">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38295">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38296">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38297">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38298">
+		<!--Received damage -2%-->
+	</option_data>
+	<option_data id="38299">
+		<!--Received damage -2%-->
+	</option_data>
+</list>

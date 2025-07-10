@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="15592" name="Vorpal Breastplate - Not Available" add_name="Not used">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t94_u_i03"/>
+		<set name="price" value="7960"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="7520"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="47"/>
+		</for>
+	</armor>
+	<armor id="15595" name="Vorpal Gaiters - Not Available" add_name="Not used">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t94_l_i03"/>
+		<set name="price" value="12700"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="3170"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="32"/>
+		</for>
+	</armor>
+	<armor id="15598" name="Vorpal Gauntlets - Not Available" add_name="Not used">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="333"/>
+		<set name="grind_point" value="16650"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t94_g_i03"/>
+		<set name="price" value="33300"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="22"/>
+		</for>
+	</armor>
+</list>

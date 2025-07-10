@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="49600" name="Blue Talisman - P. Def." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49601" name="Blue Talisman - P. Skill Evasion" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49602" name="Blue Talisman - M. Skill Critical Rate" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49603" name="Blue Talisman - M. Atk." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49604" name="Blue Talisman - M. Def." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49605" name="Blue Talisman - M. Skill Evasion" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49606" name="Blue Talisman - Max HP" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49607" name="Blue Talisman - Max MP" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49608" name="Grey Talisman - Guard" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49609" name="Grey Talisman - Denial" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49610" name="Grey Talisman - Benefaction" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49611" name="Grey Talisman - Block" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49612" name="Grey Talisman - Gravity" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49613" name="Grey Talisman - Bond" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49614" name="White Talisman - P. Crit." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49615" name="White Talisman - P. Atk." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49616" name="White Talisman - P. Def." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49617" name="White Talisman - P. Skill Evasion" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49618" name="White Talisman - M. Skill Critical Rate" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49619" name="White Talisman - M. Atk." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49620" name="White Talisman - M. Def." add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49621" name="White Talisman - M. Skill Evasion" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49622" name="White Talisman - Max HP" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49623" name="White Talisman - Max MP" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49624" name="Yellow Talisman - Guard" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49625" name="Yellow Talisman - Denial" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49626" name="Yellow Talisman - Benefaction" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49627" name="Yellow Talisman - Block" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49628" name="Yellow Talisman - Gravity" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<armor id="49629" name="Yellow Talisman - Bond" add_name="1-hour">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_talisman_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+	</armor>
+	<etcitem id="49630" name="Blue Talisman Box - P. Crit." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49631" name="Blue Talisman Box - P. Atk." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49632" name="Blue Talisman Box - P. Def." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49633" name="Blue Talisman Pack - P. Skill Evasion" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49634" name="Blue Talisman Pack - M. Skill Critical Rate" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49635" name="Blue Talisman Box - M. Atk." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49636" name="Blue Talisman Box - M. Def." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49637" name="Blue Talisman Pack - M. Skill Evasion" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49638" name="Blue Talisman Box - Max HP" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49639" name="Blue Talisman Box - Max MP" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49640" name="Grey Talisman Box - Guard" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49641" name="Grey Talisman Box - Denial" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49642" name="Grey Talisman Box - Benefaction" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49643" name="Grey Talisman Box - Blocking" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49644" name="Grey Talisman Box - Gravity" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49645" name="Grey Talisman Box - Bond" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49646" name="White Talisman Box - P. Crit." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49647" name="White Talisman Box - P. Atk." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49648" name="White Talisman Box - P. Def." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49649" name="White Talisman Pack - P. Skill Evasion" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49650" name="White Talisman Pack - M. Skill Critical Rate" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49651" name="White Talisman Box - M. Atk." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49652" name="White Talisman Box - M. Def." add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49653" name="White Talisman Pack - M. Skill Evasion" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49654" name="White Talisman Box - Max HP" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49655" name="White Talisman Box - Max MP" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49656" name="Yellow Talisman Box - Guard" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49657" name="Yellow Talisman Box - Denial" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49658" name="Yellow Talisman Box - Benefaction" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49659" name="Yellow Talisman Box - Blocking" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49660" name="Yellow Talisman Box - Gravity" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49661" name="Yellow Talisman Box - Bond" add_name="1-hour">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49662" name="Stylish Color Title" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="weight" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.color_name_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="handler" value="NameColor"/>
+	</etcitem>
+	<etcitem id="49663" name="Special HP Recovery Potion" add_name="Exchangeable">
+		<set name="autouse_type" value="HEAL"/>
+		<set name="sellable" value="false"/>
+		<set name="icon" value="BranchSys.icon.br_vitality_potion_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="51161" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49664" name="B-grade Weapon Pack">
+		<set name="icon" value="icon.etc_equip_item_box_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="handler" value="SkillsReduce"/>        
+        <skills>
+            <skill id="39125" level="1"/>
+        </skills>
+	</etcitem>
+	<etcitem id="49665" name="B-grade Armor Pack">
+		<set name="icon" value="icon.etc_equip_item_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="600" count="1" chance="0.01"/><!--Sealed Avadon Boots--><!--TODO: Check chance-->
+			<create_item id="2376" count="1" chance="0.01"/><!--Avadon Breastplate--><!--TODO: Check chance-->
+			<create_item id="2415" count="1" chance="0.01"/><!--Sealed Avadon Circlet--><!--TODO: Check chance-->
+			<create_item id="2379" count="1" chance="0.01"/><!--Avadon Gaiters--><!--TODO: Check chance-->
+			<create_item id="2464" count="1" chance="0.01"/><!--Sealed Avadon Gloves--><!--TODO: Check chance-->
+			<create_item id="2390" count="1" chance="0.01"/><!--Avadon Leather Armor--><!--TODO: Check chance-->
+			<create_item id="2406" count="1" chance="0.01"/><!--Avadon Robe--><!--TODO: Check chance-->
+			<create_item id="673" count="1" chance="0.01"/><!--Avadon Shield--><!--TODO: Check chance-->
+			<create_item id="2439" count="1" chance="0.01"/><!--Sealed Blue Wolf Boots--><!--TODO: Check chance-->
+			<create_item id="358" count="1" chance="0.01"/><!--Blue Wolf Breastplate--><!--TODO: Check chance-->
+			<create_item id="2380" count="1" chance="0.01"/><!--Blue Wolf Gaiters--><!--TODO: Check chance-->
+			<create_item id="2487" count="1" chance="0.01"/><!--Sealed Blue Wolf Gloves--><!--TODO: Check chance-->
+			<create_item id="2416" count="1" chance="0.01"/><!--Sealed Blue Wolf Helmet--><!--TODO: Check chance-->
+			<create_item id="2403" count="1" chance="0.01"/><!--Blue Wolf Stockings--><!--TODO: Check chance-->
+			<create_item id="2391" count="1" chance="0.01"/><!--Blue Wolf Leather Armor--><!--TODO: Check chance-->
+			<create_item id="2398" count="1" chance="0.01"/><!--Blue Wolf Tunic--><!--TODO: Check chance-->
+			<create_item id="601" count="1" chance="0.01"/><!--Sealed Doom Boots--><!--TODO: Check chance-->
+			<create_item id="2475" count="1" chance="0.01"/><!--Sealed Doom Gloves--><!--TODO: Check chance-->
+			<create_item id="2417" count="1" chance="0.01"/><!--Sealed Doom Helmet--><!--TODO: Check chance-->
+			<create_item id="2381" count="1" chance="0.01"/><!--Doom Plate Armor--><!--TODO: Check chance-->
+			<create_item id="110" count="1" chance="0.01"/><!--Doom Shield--><!--TODO: Check chance-->
+			<create_item id="2404" count="1" chance="0.01"/><!--Doom Stockings--><!--TODO: Check chance-->
+			<create_item id="2402" count="1" chance="0.01"/><!--Zubei's Stockings--><!--TODO: Check chance-->
+			<create_item id="2392" count="1" chance="0.01"/><!--Doom Leather Armor--><!--TODO: Check chance-->
+			<create_item id="554" count="1" chance="0.01"/><!--Sealed Zubei's Boots--><!--TODO: Check chance-->
+			<create_item id="357" count="1" chance="0.01"/><!--Zubei's Breastplate--><!--TODO: Check chance-->
+			<create_item id="383" count="1" chance="0.01"/><!--Zubei's Gaiters--><!--TODO: Check chance-->
+			<create_item id="612" count="1" chance="0.01"/><!--Sealed Zubei's Gauntlets--><!--TODO: Check chance-->
+			<create_item id="503" count="1" chance="0.01"/><!--Sealed Zubei's Helmet--><!--TODO: Check chance-->
+			<create_item id="2388" count="1" chance="0.01"/><!--Zubei's Leather Gaiters--><!--TODO: Check chance-->
+			<create_item id="2384" count="1" chance="0.01"/><!--Zubei's Leather Shirt--><!--TODO: Check chance-->
+			<create_item id="633" count="1" chance="0.01"/><!--Zubei's Shield--><!--TODO: Check chance-->
+			<create_item id="2399" count="1" chance="0.01"/><!--Doom Tunic--><!--TODO: Check chance-->
+			<create_item id="2397" count="1" chance="0.01"/><!--Zubei's Tunic--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49666" name="B-grade Accessory Pack">
+		<set name="icon" value="icon.etc_box_of_adventure_2_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="856" count="1" chance="0.01"/><!--Adamantite Earring--><!--TODO: Check chance-->
+			<create_item id="864" count="1" chance="0.01"/><!--Black Ore Earring--><!--TODO: Check chance-->
+			<create_item id="887" count="1" chance="0.01"/><!--Adamantite Ring--><!--TODO: Check chance-->
+			<create_item id="895" count="1" chance="0.01"/><!--Black Ore Ring--><!--TODO: Check chance-->
+			<create_item id="918" count="1" chance="0.01"/><!--Adamantite Necklace--><!--TODO: Check chance-->
+			<create_item id="926" count="1" chance="0.01"/><!--Black Ore Necklace--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49667" name="C-grade Weapon Pack">
+		<set name="icon" value="icon.etc_equip_item_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="135" count="1" chance="0.01"/><!--Samurai Long Sword--><!--TODO: Check chance-->
+			<create_item id="204" count="1" chance="0.01"/><!--Deadman's Staff--><!--TODO: Check chance-->
+			<create_item id="205" count="1" chance="0.01"/><!--Ghoul's Staff--><!--TODO: Check chance-->
+			<create_item id="206" count="1" chance="0.01"/><!--Demon's Staff--><!--TODO: Check chance-->
+			<create_item id="228" count="1" chance="0.01"/><!--Crystal Dagger--><!--TODO: Check chance-->
+			<create_item id="266" count="1" chance="0.01"/><!--Great Pata--><!--TODO: Check chance-->
+			<create_item id="286" count="1" chance="0.01"/><!--Eminence Bow--><!--TODO: Check chance-->
+			<create_item id="299" count="1" chance="0.01"/><!--Orcish Poleaxe--><!--TODO: Check chance-->
+			<create_item id="2503" count="1" chance="0.01"/><!--Yaksa Mace--><!--TODO: Check chance-->
+			<create_item id="5286" count="1" chance="0.01"/><!--Berserker Blade--><!--TODO: Check chance-->
+			<create_item id="7888" count="1" chance="0.01"/><!--Ecliptic Sword--><!--TODO: Check chance-->
+			<create_item id="7891" count="1" chance="0.01"/><!--Ecliptic Axe--><!--TODO: Check chance-->
+			<create_item id="7897" count="1" chance="0.01"/><!--Dwarven Hammer--><!--TODO: Check chance-->
+			<create_item id="74" count="1" chance="0.01"/><!--Katana--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49668" name="C-grade Armor Pack">
+		<set name="icon" value="icon.etc_equip_item_box_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="400" count="1" chance="0.01"/><!--Theca Leather Armor--><!--TODO: Check chance-->
+			<create_item id="420" count="1" chance="0.01"/><!--Theca Leather Gaiters--><!--TODO: Check chance-->
+			<create_item id="2436" count="1" chance="0.01"/><!--Theca Leather Boots--><!--TODO: Check chance-->
+			<create_item id="2460" count="1" chance="0.01"/><!--Theca Leather Gloves--><!--TODO: Check chance-->
+			<create_item id="356" count="1" chance="0.01"/><!--Full Plate Armor--><!--TODO: Check chance-->
+			<create_item id="401" count="1" chance="0.01"/><!--Drake Leather Armor--><!--TODO: Check chance-->
+			<create_item id="442" count="1" chance="0.01"/><!--Divine Tunic--><!--TODO: Check chance-->
+			<create_item id="473" count="1" chance="0.01"/><!--Divine Stockings--><!--TODO: Check chance-->
+			<create_item id="499" count="1" chance="0.01"/><!--Mithril Helmet--><!--TODO: Check chance-->
+			<create_item id="603" count="1" chance="0.01"/><!--Divine Boots--><!--TODO: Check chance-->
+			<create_item id="609" count="1" chance="0.01"/><!--Gauntlets of Ghost--><!--TODO: Check chance-->
+			<create_item id="1128" count="1" chance="0.01"/><!--Adamantite Boots--><!--TODO: Check chance-->
+			<create_item id="2414" count="1" chance="0.01"/><!--Full Plate Helmet--><!--TODO: Check chance-->
+			<create_item id="2437" count="1" chance="0.01"/><!--Drake Leather Boots--><!--TODO: Check chance-->
+			<create_item id="2438" count="1" chance="0.01"/><!--Full Plate Boots--><!--TODO: Check chance-->
+			<create_item id="2461" count="1" chance="0.01"/><!--Drake Leather Gloves--><!--TODO: Check chance-->
+			<create_item id="2462" count="1" chance="0.01"/><!--Full Plate Gauntlets--><!--TODO: Check chance-->
+			<create_item id="2463" count="1" chance="0.01"/><!--Divine Gloves--><!--TODO: Check chance-->
+			<create_item id="2468" count="1" chance="0.01"/><!--Blessed Gloves--><!--TODO: Check chance-->
+			<create_item id="2497" count="1" chance="0.01"/><!--Full Plate Shield--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49669" name="C-grade Accessory Pack">
+		<set name="icon" value="icon.etc_box_of_adventure_5_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="854" count="1" chance="0.01"/><!--Earring of Seal--><!--TODO: Check chance-->
+			<create_item id="885" count="1" chance="0.01"/><!--Ring of Ages--><!--TODO: Check chance-->
+			<create_item id="917" count="1" chance="0.01"/><!--Necklace of Mermaid--><!--TODO: Check chance-->
+			<create_item id="119" count="1" chance="0.01"/><!--Necklace of Seal--><!--TODO: Check chance-->
+			<create_item id="855" count="1" chance="0.01"/><!--Nassen's Earring--><!--TODO: Check chance-->
+			<create_item id="886" count="1" chance="0.01"/><!--Ring of Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="49670" name="B-grade Weapon Ingredient Pack">
+		<set name="icon" value="icon.etc_treasure_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="39131" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49671" name="B-grade Armor/ Accessory Ingredient Pack">
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="39133" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49672" name="C-grade Weapon Ingredient Pack">
+		<set name="icon" value="icon.etc_treasure_box_i06"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49673" name="C-grade Armor/ Accessory Ingredient Pack">
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49674" name="XP Growth Scroll" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_recall_exp_scroll"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="39134" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49675" name="Hero Cube Box" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49676" name="Talisman of Insolence Lv. 1" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.oman_tallisman_new_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35017" level="1"/>
+		</skills>
+	</armor>
+	<armor id="49677" name="Talisman of Insolence Lv. 2" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.oman_tallisman_new_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35017" level="2"/>
+		</skills>
+	</armor>
+	<armor id="49678" name="Talisman of Insolence Lv. 3" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.oman_tallisman_new_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35017" level="3"/>
+		</skills>
+	</armor>
+	<armor id="49679" name="Talisman of Insolence Lv. 4" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.oman_tallisman_new_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35017" level="4"/>
+		</skills>
+	</armor>
+	<armor id="49680" name="Talisman of Insolence Lv. 5" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.oman_tallisman_new_i02"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35017" level="5"/>
+		</skills>
+	</armor>
+	<armor id="49681" name="Talisman of Insolence Lv. 6">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.oman_tallisman_new_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35017" level="6"/>
+		</skills>
+		<cond msgId="1902">
+			<player minLevel="60"/>
+		</cond>
+	</armor>
+	<etcitem id="49682" name="Baium’s Soul">
+		<set name="icon" value="icon.high_energy_condense_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49683" name="Talisman of Baium">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.baium_talisman_new"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1902">
+			<player minLevel="60"/>
+		</cond>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<skills>
+			<skill id="35017" level="7"/>	<!-- Talisman of Insolence -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="33398"/>
+			</level>
+			<level value="1">
+				<option id="33399"/>
+			</level>
+			<level value="2">
+				<option id="33400"/>
+			</level>
+			<level value="3">
+				<option id="33401"/>
+			</level>
+			<level value="4">
+				<option id="33402"/>
+			</level>
+			<level value="5">
+				<option id="33403"/>
+			</level>
+		</enchant_options>
+	</armor>
+	<etcitem id="49684" name="Talisman Crystal">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.low_energy_condense_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="200000"/>
+	</etcitem>
+	<etcitem id="49685" name="Powerless Energy of Insolence">
+		<set name="price" value="2000000"/>
+		<set name="grind_commission" value="100000"/>
+		<set name="grind_point" value="1000000"/>
+		<set name="icon" value="icon.ensoul_sommon"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="49686" name="Chic Silver Chapeau &lt;Str+1 Int+1&gt;" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon2.pi_silverchaperon"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="49687" name="Chic Silver Chapeau &lt;Str+1 Int+1&gt;">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon2.pi_silverchaperon"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<etcitem id="49688" name="Refined Silver Chapeau Box" add_name="30-day">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49689" name="Chapeau Box">
+		<set name="sellable" value="false"/>
+		<set name="icon" value="icon.etc_treasure_box_i05"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49690" name="Blue Dynasty Transformation Potion" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.general_stone_i01"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49691" name="Red Zubei Transformation Potion" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.general_stone_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<weapon id="49692" name="Samurai Black Long Sword" add_name="15-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2340"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="durability" value="21600"/>
+		<set name="temporal" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="155"/>
+			<add stat="mAtk" order="0x10" value="70"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<etcitem id="49693" name="Magic Potion of Leaping Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_holy_potion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49694" name="Magic Potion of Leaping Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_wind_potion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49695" name="Magic Potion of Leaping Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_water_potion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49696" name="Gift from a Returned Friend" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="BranchSys.icon.br_lucky_bag_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49697" name="Special Pirate Fruit" add_name="Event">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_codran_i09"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="39085" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="49698" name="Class Change Coupon - 2nd Class" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.return_user_item"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="49699" name="Master's Skill Book - 2nd Class" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.q10338_book_of_hades"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+</list>

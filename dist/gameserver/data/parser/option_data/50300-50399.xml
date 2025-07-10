@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="50300">
+		<!--Bleed Resistance/ Atk. Rate +1%.-->
+	</option_data>
+	<option_data id="50301">
+		<!--Bleed Resistance/ Atk. Rate +1%.-->
+	</option_data>
+	<option_data id="50302">
+		<!--Bleed Resistance/ Atk. Rate +1%.-->
+	</option_data>
+	<option_data id="50303">
+		<!--Bleed Resistance/ Atk. Rate +1%.-->
+	</option_data>
+	<option_data id="50304">
+		<!--Bleed Resistance/ Atk. Rate +6%.-->
+	</option_data>
+	<option_data id="50305">
+		<!--Bleed Resistance/ Atk. Rate +8%.-->
+	</option_data>
+	<option_data id="50306">
+		<!--Bleed Resistance/ Atk. Rate +10%.-->
+	</option_data>
+	<option_data id="50307">
+		<!--Bleed Resistance/ Atk. Rate +10%, Stun Resistance/ Atk. Rate +3%.-->
+	</option_data>
+	<option_data id="50308">
+		<!--Bleed Resistance/ Atk. Rate +10%, Stun Resistance/ Atk. Rate +3%, Received Healing +2%.-->
+	</option_data>
+	<option_data id="50309">
+		<!--Bleed Resistance/ Atk. Rate +10%, Stun Resistance/ Atk. Rate +3%, Received Healing +2%, Skill MP Consumption -1%.-->
+	</option_data>
+	<option_data id="50310">
+		<!--Max MP +18, Bleed Resistance/ Atk. Rate +10%, Stun Resistance/ Atk. Rate +3%, Received Healing +2%, Skill MP Consumption -1%.-->
+	</option_data>
+	<option_data id="50311">
+		<!--Bleed Resistance +1%-->
+	</option_data>
+	<option_data id="50312">
+		<!--Bleed Resistance +1%-->
+	</option_data>
+	<option_data id="50313">
+		<!--Bleed Resistance +1%-->
+	</option_data>
+	<option_data id="50314">
+		<!--Bleed Resistance +1%-->
+	</option_data>
+	<option_data id="50315">
+		<!--Bleed Resistance +3%.-->
+	</option_data>
+	<option_data id="50316">
+		<!--Bleed Resistance +4%.-->
+	</option_data>
+	<option_data id="50317">
+		<!--Bleed Resistance +5%.-->
+	</option_data>
+	<option_data id="50318">
+		<!--Bleed Resistance +5%, Stun Resistance +3%-->
+	</option_data>
+	<option_data id="50319">
+		<!--Bleed Resistance +5%, Stun Resistance +4%, P. Accuracy +1, M. Accuracy +1.-->
+	</option_data>
+	<option_data id="50320">
+		<!--Bleed Resistance +5%, Stun Resistance +5%, Atk. Spd./ Casting Spd. +15, P. Accuracy +1, M. Accuracy +1.-->
+	</option_data>
+	<option_data id="50321">
+		<!--Max MP +10, Bleed Resistance +5%, Stun Resistance +5%, Atk. Spd./ Casting Spd. +15, P. Accuracy +1, M. Accuracy +1.-->
+	</option_data>
+	<option_data id="50322">
+		<!--Bleed Resistance +1%.-->
+	</option_data>
+	<option_data id="50323">
+		<!--Bleed Resistance +1%.-->
+	</option_data>
+	<option_data id="50324">
+		<!--Bleed Resistance +1%.-->
+	</option_data>
+	<option_data id="50325">
+		<!--Bleed Resistance +1%.-->
+	</option_data>
+	<option_data id="50326">
+		<!--Bleed Resistance +6%.-->
+	</option_data>
+	<option_data id="50327">
+		<!--Bleed Resistance +8%.-->
+	</option_data>
+	<option_data id="50328">
+		<!--Bleed Resistance +10%.-->
+	</option_data>
+	<option_data id="50329">
+		<!--Bleed Resistance +10%, Stun Resistance +3%.-->
+	</option_data>
+	<option_data id="50330">
+		<!--Bleed Resistance +10%, Stun Resistance +4%, Received Healing +1%.-->
+	</option_data>
+	<option_data id="50331">
+		<!--Bleed Resistance +10%, Stun Resistance +5%, Received Healing +1%, Skill MP Consumption -1%.-->
+	</option_data>
+	<option_data id="50332">
+		<!--Max MP +12, Bleed Resistance +10%, Stun Resistance +5%, Received Healing +1%, HP Recovery Bonus +5%, Skill MP Consumption -1%.-->
+	</option_data>
+	<option_data id="50333">
+		<!--HP +50.-->
+	</option_data>
+	<option_data id="50334">
+		<!--HP +50, P. Atk. +1%-->
+	</option_data>
+	<option_data id="50335">
+		<!--HP +100, P. Atk. +1%-->
+	</option_data>
+	<option_data id="50336">
+		<!--HP +100, P. Atk. +2%-->
+	</option_data>
+	<option_data id="50337">
+		<!--HP +150, P. Atk. +2%.-->
+	</option_data>
+	<option_data id="50338">
+		<!--HP +150, P. Atk. +3%.-->
+	</option_data>
+	<option_data id="50339">
+		<!--HP +200, P. Atk. +3%.-->
+	</option_data>
+	<option_data id="50340">
+		<!--HP +200, P. Atk. +5%.-->
+	</option_data>
+	<option_data id="50341">
+		<!--HP +300, P. Atk. +7%.-->
+	</option_data>
+	<option_data id="50342">
+		<!--HP +300, P. Atk. +10%.-->
+	</option_data>
+	<option_data id="50343">
+		<!--HP +500, P. Atk. +15%.-->
+	</option_data>
+	<option_data id="50344">
+		<!--HP +50.-->
+	</option_data>
+	<option_data id="50345">
+		<!--HP +50, M. Atk. +1%.-->
+	</option_data>
+	<option_data id="50346">
+		<!--HP +100, M. Atk. +1%.-->
+	</option_data>
+	<option_data id="50347">
+		<!--HP +100, M. Atk. +2%.-->
+	</option_data>
+	<option_data id="50348">
+		<!--HP +150, M. Atk. +2%.-->
+	</option_data>
+	<option_data id="50349">
+		<!--HP +150, M. Atk. +3%.-->
+	</option_data>
+	<option_data id="50350">
+		<!--HP +200, M. Atk. +3%.-->
+	</option_data>
+	<option_data id="50351">
+		<!--HP +200, M. Atk. +5%.-->
+	</option_data>
+	<option_data id="50352">
+		<!--HP +300, M. Atk. +7%.-->
+	</option_data>
+	<option_data id="50353">
+		<!--HP +300, M. Atk. +10%.-->
+	</option_data>
+	<option_data id="50354">
+		<!--HP +500, M. Atk. +15%.-->
+	</option_data>
+	<option_data id="50355">
+		<!--HP +50.-->
+	</option_data>
+	<option_data id="50356">
+		<!--HP +50, M. Def. +1%-->
+	</option_data>
+	<option_data id="50357">
+		<!--HP +100, M. Def. +1%.-->
+	</option_data>
+	<option_data id="50358">
+		<!--HP +100, M. Def. +2%.-->
+	</option_data>
+	<option_data id="50359">
+		<!--HP +150, M. Def. +2%.-->
+	</option_data>
+	<option_data id="50360">
+		<!--HP +150, M. Def. +3%.-->
+	</option_data>
+	<option_data id="50361">
+		<!--HP +200, M. Def. +3%.-->
+	</option_data>
+	<option_data id="50362">
+		<!--HP +200, M. Def. +5%.-->
+	</option_data>
+	<option_data id="50363">
+		<!--HP +300, M. Def. +7%.-->
+	</option_data>
+	<option_data id="50364">
+		<!--HP +300, M. Def. +10%.-->
+	</option_data>
+	<option_data id="50365">
+		<!--HP +500, M. Def. +15%.-->
+	</option_data>
+	<option_data id="50366">
+		<!--HP +50.-->
+	</option_data>
+	<option_data id="50367">
+		<!--Max HP +50, P. Def. +1%-->
+	</option_data>
+	<option_data id="50368">
+		<!--HP +100, P. Def. +1%.-->
+	</option_data>
+	<option_data id="50369">
+		<!--HP +100, P. Def. +2%.-->
+	</option_data>
+	<option_data id="50370">
+		<!--HP +150, P. Def. +2%.-->
+	</option_data>
+	<option_data id="50371">
+		<!--HP +150, P. Def. +3%.-->
+	</option_data>
+	<option_data id="50372">
+		<!--HP +200, P. Def. +3%.-->
+	</option_data>
+	<option_data id="50373">
+		<!--HP +200, P. Def. +5%.-->
+	</option_data>
+	<option_data id="50374">
+		<!--HP +300, P. Def. +7%.-->
+	</option_data>
+	<option_data id="50375">
+		<!--HP +300, P. Def. +10%.-->
+	</option_data>
+	<option_data id="50376">
+		<!--HP +500, P. Def. +15%.-->
+	</option_data>
+	<option_data id="50377">
+		<!--Max HP/ MP +3%.-->
+		<skills>
+			<skill id="54038" level="1"/>	<!-- Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50378">
+		<!--Max HP/ MP +4%.-->
+		<skills>
+			<skill id="54039" level="1"/>	<!-- +1 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50379">
+		<!--Max HP/ MP +5%, Acquired XP/ SP +3%.-->
+		<skills>
+			<skill id="54039" level="2"/>	<!-- +2 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50380">
+		<!--Max HP/ MP +6%, Acquired XP/ SP +5%.-->
+		<skills>
+			<skill id="54039" level="3"/>	<!-- +3 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50381">
+		<!--Max HP/ MP +7%, Acquired XP/ SP +7%, P. Def. +2%.-->
+		<skills>
+			<skill id="54039" level="4"/>	<!-- +4 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50382">
+		<!--Max HP/ MP +8%, Acquired XP/ SP +10%, P. Def. +4%.-->
+		<skills>
+			<skill id="54039" level="5"/>	<!-- +5 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50383">
+		<!--Max HP/ MP +9%, Acquired XP/ SP +15%, P. Def. +6%.-->
+		<skills>
+			<skill id="54039" level="6"/>	<!-- +6 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50384">
+		<!--Max HP/ MP +10%, Acquired XP/ SP +20%, P. Def. +8%, P./ M. Critical Damage +5%.-->
+		<skills>
+			<skill id="54039" level="7"/>	<!-- +7 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50385">
+		<!--Max HP/ MP +11%, Acquired XP/ SP +25%, P. Def. +10%, P./ M. Critical Damage +7%, M. Def. +2%.-->
+		<skills>
+			<skill id="54039" level="8"/>	<!-- +8 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50386">
+		<!--Max HP/ MP +12%, Acquired XP/ SP +30%, P. Def. +10%, P./ M. Critical Damage +10%, M. Def. +4%, Received Critical Damage -5%.-->
+		<skills>
+			<skill id="54039" level="9"/>	<!-- +9 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50387">
+		<!--Max HP/ MP +15%, Acquired XP/ SP +30%, P. Def. +10%, P./ M. Critical Damage +15%, M. Def. +6%, Received Critical Damage -10%.-->
+		<skills>
+			<skill id="54039" level="10"/>	<!-- +10 Sayha's Cloak -->
+		</skills>
+	</option_data>
+	<option_data id="50388">
+		<!--Sayha's Blink: Attacks enemies, inflicting Stun and canceling their targets. Teleports you to the back.-->
+	</option_data>
+	<option_data id="50389">
+		<!--Increases M. Def. by 14.-->
+	</option_data>
+	<option_data id="50390">
+		<!--M. Def. +15.-->
+	</option_data>
+	<option_data id="50391">
+		<!--Increases M. Def. by 16.-->
+	</option_data>
+	<option_data id="50392">
+		<!--M. Def. +17.-->
+		<!--Acquired XP/ SP +5%.-->
+	</option_data>
+	<option_data id="50393">
+		<!--M. Def +18, Received Damage -3%-->
+		<!--Acquired XP/ SP +5%.-->
+	</option_data>
+	<option_data id="50394">
+		<!--M. Def +19, Received Damage -5%-->
+		<!--Acquired XP/ SP +10%.-->
+	</option_data>
+	<option_data id="50395">
+		<!--M. Def. +20, Received Damage -10%, Atk. Spd./ Casting Spd. +2%-->
+		<!--Acquired XP/ SP +20%.-->
+	</option_data>
+	<option_data id="50396">
+		<!--M. Def. +21, Received Damage -10%, Atk. Spd./ Casting Spd. +2%-->
+		<!--Acquired XP/ SP +20%.-->
+	</option_data>
+	<option_data id="50397">
+		<!--M. Def. +22, Received Damage -10%, Atk. Spd./ Casting Spd. +2%-->
+		<!--Acquired XP/ SP +20%.-->
+	</option_data>
+	<option_data id="50398">
+		<!--M. Def. +23, Received Damage -10%, Atk. Spd./ Casting Spd. +2%-->
+		<!--Acquired XP/ SP +20%.-->
+	</option_data>
+	<option_data id="50399">
+		<!--M. Def. +24, Received Damage -10%, Atk. Spd./ Casting Spd. +3%-->
+		<!--Acquired XP/ SP +20%.-->
+	</option_data>
+</list>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "buylist.dtd">
+<!-- Author: nexvill -->
+<list>
+	<npc id="34148">	<!-- Logistics Officer -->
+		<buylist id="1" base_markup="15">
+			<item id="91927" /> <!-- Soulshot -->
+			<item id="91930" /> <!-- Blessed Spiritshot -->
+			<item id="3031" /> <!-- Spirit Ore -->
+			<item id="93406" /> <!-- Scroll: Enchant B-grade Weapon -->
+			<item id="93407" /> <!-- Scroll: Enchant B-grade Armor -->
+			<item id="93408" /> <!-- Scroll: Enchant C-grade Weapon -->
+			<item id="93409" /> <!-- Scroll: Enchant C-grade Armor -->
+			<item id="93410" /> <!-- Scroll: Enchant D-grade Weapon -->
+			<item id="93411" /> <!-- Scroll: Enchant D-grade Armor -->
+			<item id="93452" /> <!-- Scroll of Escape: Fortress -->
+		</buylist>
+	</npc>
+</list>

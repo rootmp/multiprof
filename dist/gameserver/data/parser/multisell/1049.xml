@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!-- Author: nexvill -->
+<list>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95572" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Full Plate Helmet -->
+	</item>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95573" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Full Plate Boots -->
+	</item>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95574" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Full Plate Gauntlets -->
+	</item>
+	<item>
+		<ingredient id="95571" count="2" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95575" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Full Plate Armor -->
+	</item>
+	<item>
+		<ingredient id="95571" count="2" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95576" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Drake Leather Armor -->
+	</item>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95577" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Drake Leather Boots -->
+	</item>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95578" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Drake Leather Gloves -->
+	</item>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95579" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Karmian Tunic -->
+	</item>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95580" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Karmian Stockings -->
+	</item>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95581" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Karmian Boots -->
+	</item>
+	<item>
+		<ingredient id="95571" count="1" />	<!-- Enchanted C-grade Armor Coupon -->
+		<production id="95582" count="1" />	<!-- +0 ~ +5 Heavy Armor Pack - Karmian Gloves -->
+	</item>
+</list>

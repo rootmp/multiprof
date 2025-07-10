@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="131"><!--Doombringer-->
+		<skill id="1405" level="3" min_level="76" cost="8000000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8620;96093" count="1"/><!--Buff Expansion Book Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="4" min_level="76" cost="8000000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8621;96094" count="1"/><!--Buff Expansion Book Lv. 4-->
+			</required_items>
+		</skill>
+		<skill id="45365" level="1" min_level="76" cost="8000000"><!--Amazing Soul Smash Mastery-->
+			<required_items>
+				<item id="93868" count="1"/><!--Scroll: Amazing Soul Smash Mastery-->
+			</required_items>
+		</skill>
+		<skill id="45188" level="1" min_level="76"><!--Evolution Defense-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="430" level="1" min_level="76" cost="8000000"/><!--Master of Combat-->
+		<skill id="45144" level="4" min_level="76" cost="8000000"><!--Soul Might-->
+			<required_items>
+				<item id="94135;95517" count="1"/><!--Master's Book: Might-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="1" min_level="76" cost="8000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="917" level="1" min_level="76" cost="8000000"><!--Final Secret-->
+			<required_items>
+				<item id="90080" count="1"/><!--Scroll: Final Secret Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="62002" level="1" min_level="76" cost="8000000"/><!--Mount Griffin-->
+		<skill id="485" level="1" min_level="76" cost="8000000"><!--Disarm-->
+			<required_items>
+				<item id="91921" count="1"/><!--Scroll: Disarm-->
+			</required_items>
+		</skill>
+		<skill id="45151" level="2" min_level="76" cost="8000000"><!--Collect Light Souls-->
+			<required_items>
+				<item id="91942;95498" count="1"/><!--Crystal of Light-->
+			</required_items>
+		</skill>
+		<skill id="45152" level="2" min_level="76" cost="8000000"><!--Collect Shadow Souls-->
+			<required_items>
+				<item id="91943;95499" count="1"/><!--Crystal of Shadows-->
+			</required_items>
+		</skill>
+		<skill id="501" level="1" min_level="76" cost="8000000"><!--Magic Break-->
+			<required_items>
+				<item id="91920" count="1"/><!--Scroll: Magic Break-->
+			</required_items>
+		</skill>
+		<skill id="994" level="3" min_level="76" cost="8000000"/><!--Rush-->
+		<skill id="1432" level="3" min_level="76" cost="8000000"/><!--Increase Power-->
+		<skill id="45251" level="1" min_level="76" cost="8000000"><!--Enhanced Assault-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45145" level="4" min_level="76" cost="8000000"><!--Soul Shield-->
+			<required_items>
+				<item id="94136;95518" count="1"/><!--Master's Book: Shield-->
+			</required_items>
+		</skill>
+		<skill id="626" level="4" min_level="78" cost="12000000"/><!--Critical Sense-->
+		<skill id="1435" level="4" min_level="78" cost="12000000"><!--Death Mark-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="485" level="2" min_level="78" cost="12000000"/><!--Disarm-->
+		<skill id="501" level="2" min_level="78" cost="12000000"/><!--Magic Break-->
+		<skill id="1432" level="4" min_level="78" cost="12000000"/><!--Increase Power-->
+		<skill id="472" level="8" min_level="80" cost="18000000"><!--Ancient Sword Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="465" level="8" min_level="80" cost="18000000"><!--Light Armor Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="399" level="8" min_level="80" cost="18000000"><!--Heavy Armor Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45155" level="6" min_level="80" cost="18000000"><!--Soul Impulse-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="430" level="2" min_level="80" cost="18000000"><!--Master of Combat-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45189" level="1" min_level="80"><!--Evolution Power-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="1514" level="2" min_level="80" cost="18000000"/><!--Soul Barrier-->
+		<skill id="485" level="3" min_level="80" cost="18000000"/><!--Disarm-->
+		<skill id="501" level="3" min_level="80" cost="18000000"/><!--Magic Break-->
+		<skill id="477" level="8" min_level="80" cost="18000000"><!--Soul Smash-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45159" level="3" min_level="80" cost="18000000"/><!--Rush Impact-->
+		<skill id="1432" level="5" min_level="80" cost="18000000"/><!--Increase Power-->
+		<skill id="45157" level="4" min_level="80" cost="18000000"><!--Enuma Elish-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="485" level="4" min_level="82" cost="170000000"/><!--Disarm-->
+		<skill id="501" level="4" min_level="82" cost="170000000"/><!--Magic Break-->
+		<skill id="485" level="5" min_level="84" cost="240000000"/><!--Disarm-->
+		<skill id="501" level="5" min_level="84" cost="240000000"/><!--Magic Break-->
+		<skill id="472" level="9" min_level="85" cost="840000000"><!--Ancient Sword Mastery-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="465" level="9" min_level="85" cost="840000000"><!--Light Armor Mastery-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="399" level="9" min_level="85" cost="840000000"><!--Heavy Armor Mastery-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45155" level="7" min_level="85" cost="840000000"><!--Soul Impulse-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="626" level="5" min_level="85" cost="840000000"/><!--Critical Sense-->
+		<skill id="1435" level="5" min_level="85" cost="840000000"><!--Death Mark-->
+			<required_items>
+				<item id="57" count="2000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="477" level="9" min_level="85" cost="840000000"><!--Soul Smash-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45157" level="5" min_level="85" cost="840000000"><!--Enuma Elish-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="472" level="10" min_level="90" cost="840000000"><!--Ancient Sword Mastery-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="465" level="10" min_level="90" cost="840000000"><!--Light Armor Mastery-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="399" level="10" min_level="90" cost="840000000"><!--Heavy Armor Mastery-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45155" level="8" min_level="90" cost="840000000"><!--Soul Impulse-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="477" level="10" min_level="90" cost="840000000"><!--Soul Smash-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45157" level="6" min_level="90" cost="840000000"><!--Enuma Elish-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45146" level="4" min_level="76" cost="8000000"><!--Soul Acumen-->
+			<required_items>
+				<item id="94370;95539" count="1"/><!--Master's Book: Acumen-->
+			</required_items>
+		</skill>
+		<skill id="45139" level="4" min_level="76" cost="8000000"><!--Soul Focus-->
+			<required_items>
+				<item id="94363;95535" count="1"/><!--Master's Book: Focus-->
+			</required_items>
+		</skill>
+		<skill id="45140" level="4" min_level="76" cost="8000000"><!--Soul Death Whisper-->
+			<required_items>
+				<item id="94364;95536" count="1"/><!--Master's Book: Death Whisper-->
+			</required_items>
+		</skill>
+		<skill id="45141" level="3" min_level="76" cost="8000000"><!--Soul Haste-->
+			<required_items>
+				<item id="94369;95538" count="1"/><!--Master's Book: Haste-->
+			</required_items>
+		</skill>
+		<skill id="45142" level="3" min_level="76" cost="8000000"><!--Soul Wind Walk-->
+			<required_items>
+				<item id="94365;95537" count="1"/><!--Master's Book: Wind Walk-->
+			</required_items>
+		</skill>
+		<skill id="45143" level="3" min_level="76" cost="8000000"><!--Soul Magic Barrier-->
+			<required_items>
+				<item id="94362;95534" count="1"/><!--Master's Book: Magic Barrier-->
+			</required_items>
+		</skill>
+		<skill id="45147" level="4" min_level="76" cost="8000000"><!--Soul Empower-->
+			<required_items>
+				<item id="94361;95533" count="1"/><!--Master's Book: Empower-->
+			</required_items>
+		</skill>
+		<skill id="45148" level="3" min_level="76" cost="8000000"><!--Soul Wild Magic-->
+			<required_items>
+				<item id="94368;95771" count="1"/><!--Master's Book: Wild Magic-->
+			</required_items>
+		</skill>
+		<skill id="45149" level="3" min_level="76" cost="8000000"><!--Soul Berserker Spirit-->
+			<required_items>
+				<item id="94366;95769" count="1"/><!--Master's Book: Berserker Spirit-->
+			</required_items>
+		</skill>
+		<skill id="45150" level="4" min_level="76" cost="8000000"><!--Soul Clarity-->
+			<required_items>
+				<item id="94367;95770" count="1"/><!--Master's Book: Clarity-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="2" min_level="85" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="54231" level="1" min_level="82"><!--Dragon Slayer Appearance-->
+			<required_items>
+				<item id="96300;96780" count="1"/><!--Spellbook: Dragon Slayer-->
+			</required_items>
+		</skill>
+		<skill id="430" level="3" min_level="88" cost="840000000"><!--Master of Combat-->
+			<required_items>
+				<item id="97104;97112" count="1"/><!--Spellbook: Master of Combat Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="3" min_level="88" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="30000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45269" level="1" min_level="76"><!--Expanded Potential of Dyes-->
+			<required_items>
+				<item id="96613;96614" count="1"/><!--Spellbook: Expanded Potential of Dyes-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="1" min_level="76"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="2" min_level="80"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="40000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="3" min_level="85"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="100000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="4" min_level="90"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="200000000"/><!--Adena-->
+			</required_items>
+		</skill>
+	</normal_skill_tree>
+</list>

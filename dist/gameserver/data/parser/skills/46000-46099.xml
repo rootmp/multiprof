@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="46033" levels="1" name="Sylph Level Ranking - 1st Place">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.race_ranking_1"/>
+		<set name="isSelfDispellable" value="false"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<set name="isSaveable" value="false"/>
+		<set name="cancelable" value="false"/>
+		<set name="buff_slot_type" value="-1"/>
+		<set name="operate_type" value="A1"/>
+		<for>
+			<mul stat="soulshot_power" value="1.1"/>
+		</for>
+	</skill>
+</list>

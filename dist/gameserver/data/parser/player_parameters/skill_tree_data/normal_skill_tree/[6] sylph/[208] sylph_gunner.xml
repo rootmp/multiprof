@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="208"><!--Sylph Gunner-->
+		<skill id="141" level="1" min_level="1"/><!--Weapon Mastery-->
+		<skill id="142" level="1" min_level="1"/><!--Armor Mastery-->
+		<skill id="47101" level="1" min_level="1"/><!--Elemental Spirit-->
+		<skill id="47104" level="1" min_level="1"/><!--Elemental Connection-->
+		<skill id="47027" level="1" min_level="2" cost="5"/><!--Elemental Shield-->
+		<skill id="47026" level="1" min_level="3" cost="5"/><!--Elemental Might-->
+		<skill id="91" level="1" min_level="5" cost="15"/><!--Ability to Protect-->
+		<skill id="142" level="2" min_level="8" cost="100"/><!--Armor Mastery-->
+		<skill id="77" level="1" min_level="10" cost="100"/><!--Ability to Attack-->
+		<skill id="141" level="2" min_level="10" cost="100"/><!--Weapon Mastery-->
+		<skill id="142" level="3" min_level="10" cost="100"/><!--Armor Mastery-->
+		<skill id="141" level="3" min_level="15" cost="500"/><!--Weapon Mastery-->
+	</normal_skill_tree>
+</list>

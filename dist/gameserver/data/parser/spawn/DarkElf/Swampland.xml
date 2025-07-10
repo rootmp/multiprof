@@ -1,0 +1,3868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24046" y="41118" z="-3160" h="12068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24663" y="40921" z="-3120" h="28142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23534" y="41834" z="-3352" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-23297" y="41558" z="-3296" h="56618" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22933" y="41863" z="-3400" h="22581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23768" y="41497" z="-3272" h="25949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-23138" y="41736" z="-3360" h="42115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-22849" y="42201" z="-3480" h="4526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-23559" y="42533" z="-3608" h="45248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-22874" y="42325" z="-3552" h="16357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23173" y="41651" z="-3320" h="56399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24117" y="41078" z="-3136" h="19627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24209" y="41373" z="-3208" h="32414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20539" y="38737" z="-3008" h="63139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20741" y="38794" z="-2968" h="22714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-21669" y="40048" z="-3160" h="57222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-21052" y="40124" z="-3312" h="26585" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20668" y="40549" z="-3440" h="19023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21324" y="40023" z="-3240" h="26153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21709" y="39489" z="-3000" h="27461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-21612" y="40423" z="-3248" h="17852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21441" y="40478" z="-3272" h="48921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21609" y="39428" z="-3016" h="55143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20636" y="40746" z="-3464" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20864" y="40570" z="-3424" h="16295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21566" y="39987" z="-3176" h="52566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20853" y="39046" z="-3024" h="62254" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-21403" y="39643" z="-3120" h="59497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-21259" y="39825" z="-3216" h="17440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-21346" y="40158" z="-3264" h="50077" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20699" y="39109" z="-3080" h="10747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21939" y="41679" z="-3440" h="26978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21615" y="41262" z="-3376" h="46345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18837" y="37284" z="-3104" h="64842" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18490" y="38676" z="-3352" h="36170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18528" y="38595" z="-3336" h="35381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20333" y="38260" z="-2952" h="59591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19981" y="38569" z="-3096" h="49327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18696" y="38101" z="-3248" h="3282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19565" y="37708" z="-3064" h="3904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19989" y="38655" z="-3104" h="36125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18669" y="38703" z="-3336" h="35239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19990" y="37941" z="-3008" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20315" y="38462" z="-2992" h="25337" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18400" y="38050" z="-3320" h="5844" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19941" y="38059" z="-3032" h="43695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20162" y="38277" z="-3000" h="34019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20388" y="38343" z="-2960" h="18854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19535" y="38640" z="-3232" h="32931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19778" y="38092" z="-3072" h="65015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18895" y="37208" z="-3072" h="13360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18420" y="37627" z="-3248" h="61821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20148" y="38640" z="-3072" h="52127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18496" y="37391" z="-3192" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19808" y="37957" z="-3048" h="13913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19022" y="37295" z="-3072" h="19574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18504" y="37252" z="-3168" h="42441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19432" y="37516" z="-3056" h="41126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18677" y="37577" z="-3192" h="15164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19469" y="37564" z="-3064" h="24327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19921" y="37917" z="-3016" h="6711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19498" y="37675" z="-3080" h="16367" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19048" y="37190" z="-3048" h="38086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18916" y="37285" z="-3088" h="6711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20441" y="40826" z="-3496" h="62759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18521" y="40614" z="-3656" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18736" y="40856" z="-3760" h="57670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19204" y="40470" z="-3664" h="60803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18929" y="39690" z="-3504" h="14530" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19152" y="39359" z="-3424" h="2390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19850" y="39099" z="-3272" h="12805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19001" y="40746" z="-3752" h="27070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19204" y="40102" z="-3552" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20188" y="39947" z="-3392" h="43695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18328" y="39828" z="-3544" h="694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18857" y="39950" z="-3552" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19297" y="40525" z="-3680" h="58848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18943" y="40067" z="-3576" h="62818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19317" y="38939" z="-3344" h="6711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20338" y="39408" z="-3248" h="18854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19807" y="40542" z="-3592" h="13771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20162" y="40854" z="-3560" h="37291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18858" y="40696" z="-3736" h="45821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19939" y="39711" z="-3384" h="16560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19264" y="39273" z="-3392" h="61821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18554" y="39271" z="-3408" h="13139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20428" y="38874" z="-3072" h="41612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19619" y="38838" z="-3272" h="20418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19820" y="39852" z="-3432" h="6073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20172" y="39271" z="-3240" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19873" y="39476" z="-3352" h="23291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18726" y="40362" z="-3616" h="54907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20311" y="40443" z="-3472" h="64154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19335" y="39109" z="-3352" h="39022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19935" y="40475" z="-3544" h="54821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19797" y="39939" z="-3456" h="17131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20511" y="39950" z="-3360" h="38075" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19458" y="39240" z="-3384" h="62073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20411" y="39575" z="-3272" h="62981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19097" y="42418" z="-3768" h="22955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18484" y="41979" z="-3728" h="13481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19507" y="42999" z="-3776" h="20745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18746" y="42900" z="-3672" h="43339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19418" y="42961" z="-3776" h="48448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-18792" y="42914" z="-3672" h="45464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18910" y="42976" z="-3688" h="39684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18548" y="42647" z="-3664" h="10508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18398" y="42192" z="-3672" h="40424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19879" y="42055" z="-3720" h="22480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20179" y="41633" z="-3664" h="48458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19809" y="42399" z="-3736" h="41612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19636" y="42331" z="-3752" h="17981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20153" y="42550" z="-3712" h="50364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18457" y="42614" z="-3664" h="13002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19912" y="42576" z="-3736" h="5600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18787" y="34808" z="-3192" h="58445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18494" y="36153" z="-3048" h="16287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20417" y="34766" z="-3056" h="53989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19461" y="35590" z="-3032" h="36666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19780" y="34804" z="-3112" h="40838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18892" y="35037" z="-3136" h="49674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19820" y="35135" z="-3064" h="2259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18762" y="36506" z="-3032" h="22230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18370" y="34847" z="-3208" h="2092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18985" y="35150" z="-3112" h="22811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19422" y="34980" z="-3096" h="10185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20370" y="35177" z="-3040" h="12805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16366" y="36785" z="-3464" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16980" y="35694" z="-3416" h="15501" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16367" y="36802" z="-3464" h="63478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17897" y="34796" z="-3280" h="55381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17621" y="35848" z="-3336" h="57102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17673" y="36874" z="-3312" h="36908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17810" y="36307" z="-3216" h="10706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17441" y="36289" z="-3320" h="41457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17882" y="36518" z="-3224" h="13913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17998" y="35232" z="-3192" h="9182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18278" y="35441" z="-3112" h="40961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16351" y="34886" z="-3504" h="10687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16395" y="35376" z="-3456" h="52672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16689" y="35980" z="-3440" h="64612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18157" y="36462" z="-3152" h="8151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17684" y="35987" z="-3304" h="52792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18232" y="34949" z="-3160" h="18284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16997" y="36850" z="-3416" h="21535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16381" y="35958" z="-3480" h="19961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17817" y="37955" z="-3400" h="51702" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17817" y="38311" z="-3448" h="17199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17680" y="37157" z="-3360" h="61788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17263" y="37960" z="-3520" h="51212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17066" y="38388" z="-3648" h="33006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17029" y="37621" z="-3496" h="37246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16371" y="37056" z="-3480" h="9671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17069" y="37180" z="-3440" h="31361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17307" y="36955" z="-3376" h="65073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17033" y="37772" z="-3528" h="28142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17310" y="37016" z="-3392" h="10445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16488" y="37409" z="-3520" h="64154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17399" y="37979" z="-3504" h="63146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16404" y="37041" z="-3472" h="14636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16889" y="37836" z="-3576" h="35239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16674" y="37469" z="-3536" h="16206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17442" y="38348" z="-3544" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17563" y="38674" z="-3528" h="47622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18044" y="37775" z="-3344" h="4680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17205" y="39792" z="-3736" h="4253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16942" y="39792" z="-3760" h="64881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17205" y="40854" z="-3760" h="40793" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-16942" y="40854" z="-3768" h="1368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16679" y="40323" z="-3760" h="14065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17468" y="39792" z="-3672" h="48293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17994" y="40323" z="-3640" h="25148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17201" y="39797" z="-3736" h="58552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17947" y="40357" z="-3640" h="54635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18021" y="40918" z="-3760" h="35597" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17168" y="40393" z="-3760" h="11314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17863" y="39355" z="-3568" h="30384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17755" y="39054" z="-3544" h="44317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17865" y="39388" z="-3568" h="20745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17813" y="38962" z="-3512" h="45633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18083" y="39087" z="-3448" h="59979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18177" y="39002" z="-3416" h="59783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17617" y="40444" z="-3696" h="21781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17696" y="40429" z="-3664" h="33006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17367" y="39391" z="-3712" h="14602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17909" y="40139" z="-3632" h="31302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17560" y="40403" z="-3696" h="1722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16112" y="35683" z="-3504" h="9914" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16080" y="35681" z="-3504" h="924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15853" y="34898" z="-3536" h="21689" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16075" y="35919" z="-3504" h="59166" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15871" y="34853" z="-3536" h="63780" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15513" y="34820" z="-3552" h="8766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15548" y="36008" z="-3568" h="20906" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16099" y="36205" z="-3496" h="61087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16122" y="36527" z="-3480" h="3605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16157" y="36755" z="-3472" h="20745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15232" y="35146" z="-3568" h="54196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-16197" y="36265" z="-3472" h="19406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15764" y="37088" z="-3512" h="47094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-15237" y="38691" z="-3680" h="44838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-15246" y="38382" z="-3664" h="38998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-15774" y="38751" z="-3672" h="56377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14536" y="40954" z="-3712" h="4059" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14781" y="40401" z="-3760" h="42142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15468" y="40701" z="-3760" h="12201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16006" y="40254" z="-3760" h="63026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-14336" y="40370" z="-3760" h="13027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-14979" y="39996" z="-3760" h="9581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-14356" y="40666" z="-3744" h="7710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15728" y="40568" z="-3760" h="24027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16320" y="39460" z="-3760" h="46602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15262" y="40753" z="-3760" h="56422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-14663" y="39028" z="-3768" h="61632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16408" y="39322" z="-3760" h="41457" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-12440" y="36395" z="-3712" h="61197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-12713" y="35744" z="-3664" h="14518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-13259" y="35310" z="-3616" h="64958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13164" y="37974" z="-3704" h="25955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12634" y="37974" z="-3680" h="43960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13164" y="38350" z="-3712" h="60919" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-14224" y="38350" z="-3768" h="6313" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-12634" y="38350" z="-3696" h="49142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-13164" y="38726" z="-3760" h="16488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13164" y="40606" z="-3784" h="19490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-14224" y="39478" z="-3728" h="57420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-13668" y="39362" z="-3744" h="48136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14224" y="40230" z="-3776" h="25151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14224" y="40606" z="-3752" h="48722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12634" y="39854" z="-3752" h="6100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12634" y="40230" z="-3752" h="43829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-14224" y="39102" z="-3768" h="16823" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-14224" y="39854" z="-3728" h="38405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-13694" y="40606" z="-3784" h="12909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12634" y="40606" z="-3776" h="406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-13694" y="39102" z="-3760" h="20053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16682" y="40691" z="-3760" h="52822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12544" y="38075" z="-3680" h="43150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-10978" y="36786" z="-3672" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11975" y="36661" z="-3696" h="32793" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11945" y="36851" z="-3704" h="23448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11972" y="36442" z="-3680" h="3188" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11447" y="36680" z="-3672" h="16030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-12175" y="35362" z="-3568" h="34520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-12147" y="35448" z="-3568" h="64497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11238" y="36338" z="-3648" h="2104" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11088" y="36739" z="-3680" h="42852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-12032" y="35505" z="-3576" h="19411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11912" y="36234" z="-3664" h="5565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-10793" y="36796" z="-3672" h="1835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-10432" y="36214" z="-3656" h="60547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10379" y="38878" z="-3728" h="51424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10506" y="38415" z="-3712" h="27749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11832" y="37943" z="-3680" h="4711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11008" y="37749" z="-3688" h="39567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12420" y="38066" z="-3680" h="21703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11710" y="38242" z="-3680" h="8660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11081" y="37673" z="-3680" h="52486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11671" y="37717" z="-3680" h="8804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11086" y="37900" z="-3688" h="31692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12071" y="37688" z="-3688" h="17563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11401" y="38421" z="-3688" h="42764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10961" y="38463" z="-3696" h="23249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11587" y="38449" z="-3688" h="173" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11550" y="36819" z="-3688" h="51415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11963" y="36966" z="-3704" h="26653" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-11551" y="37010" z="-3688" h="17187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10423" y="40729" z="-3744" h="13676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10991" y="39138" z="-3712" h="54171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10976" y="39940" z="-3760" h="15853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10647" y="39148" z="-3720" h="51212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12106" y="39971" z="-3768" h="24410" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11547" y="39956" z="-3768" h="39487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-11557" y="39035" z="-3704" h="37503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-12207" y="39295" z="-3760" h="26284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12467" y="40426" z="-3768" h="32418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11169" y="39576" z="-3736" h="47434" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12522" y="40734" z="-3784" h="51462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11679" y="39945" z="-3768" h="16206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11392" y="39865" z="-3760" h="37291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-10515" y="39029" z="-3720" h="41600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13607" y="40668" z="-3784" h="37617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14084" y="42071" z="-3760" h="24943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-14197" y="42859" z="-3568" h="12284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13573" y="40960" z="-3776" h="32123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-12968" y="41561" z="-3768" h="37605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-13013" y="41426" z="-3776" h="51745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-13797" y="41304" z="-3720" h="35874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12729" y="42290" z="-3760" h="15466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12374" y="41067" z="-3784" h="24115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12559" y="41969" z="-3760" h="54782" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12666" y="41700" z="-3760" h="19305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14017" y="42573" z="-3664" h="58347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13579" y="41746" z="-3768" h="28798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14055" y="41347" z="-3704" h="48971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12567" y="40917" z="-3784" h="31973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12656" y="41713" z="-3760" h="10299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-13153" y="41357" z="-3776" h="30711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12650" y="42213" z="-3760" h="38003" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-13710" y="41349" z="-3720" h="13027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-13671" y="42035" z="-3768" h="25373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11163" y="41921" z="-3720" h="18761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11211" y="41817" z="-3728" h="60811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12369" y="42337" z="-3776" h="26109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10598" y="41196" z="-3744" h="11538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10720" y="40972" z="-3744" h="56976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11499" y="41863" z="-3728" h="60041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11567" y="40961" z="-3760" h="38071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-8856" y="38394" z="-3752" h="49500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-9567" y="38533" z="-3760" h="51496" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-9469" y="38481" z="-3760" h="65073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9460" y="40608" z="-3736" h="278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-8707" y="41926" z="-3760" h="28749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-9641" y="42371" z="-3728" h="48117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-8418" y="41725" z="-3768" h="60364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-9554" y="42285" z="-3736" h="26602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-9827" y="42262" z="-3736" h="22011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-9025" y="42202" z="-3736" h="43020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10077" y="41487" z="-3760" h="55725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-9949" y="41441" z="-3760" h="20745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14054" y="43599" z="-3544" h="24182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12647" y="43341" z="-3512" h="12479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-12815" y="43502" z="-3496" h="15326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14165" y="42909" z="-3568" h="5233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-13578" y="42957" z="-3560" h="11758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-13743" y="43200" z="-3536" h="12479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-14136" y="43305" z="-3552" h="51749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10357" y="44721" z="-3728" h="29298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11264" y="44844" z="-3776" h="11968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10663" y="43377" z="-3704" h="22753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11517" y="44570" z="-3776" h="12805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10667" y="44573" z="-3696" h="17797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11502" y="44464" z="-3776" h="29132" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10735" y="44049" z="-3696" h="9850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10764" y="43639" z="-3704" h="28589" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10807" y="44020" z="-3696" h="20487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-9118" y="44272" z="-3760" h="50809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-8721" y="43924" z="-3760" h="34492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-8928" y="44057" z="-3760" h="5042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-8534" y="44007" z="-3776" h="42441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10153" y="44647" z="-3712" h="57158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-8256" y="43742" z="-3784" h="2927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9850" y="43896" z="-3736" h="21535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9138" y="43075" z="-3752" h="25448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10059" y="43610" z="-3712" h="5177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9883" y="44337" z="-3728" h="30912" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-8356" y="44242" z="-3744" h="46821" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10582" y="46543" z="-3736" h="12389" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-12194" y="46851" z="-3760" h="10627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-10670" y="45267" z="-3768" h="23493" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11481" y="46975" z="-3760" h="13545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10568" y="46970" z="-3736" h="57102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11486" y="46936" z="-3760" h="694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10215" y="46305" z="-3760" h="56551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11651" y="45229" z="-3760" h="59890" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11555" y="45114" z="-3768" h="23283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10226" y="45831" z="-3760" h="54398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-11497" y="45324" z="-3760" h="9292" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10442" y="44968" z="-3784" h="53289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10049" y="46478" z="-3744" h="728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-8564" y="45232" z="-3696" h="1787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10041" y="46481" z="-3744" h="42708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-10021" y="46732" z="-3736" h="9661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-8872" y="45482" z="-3720" h="21056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9692" y="45893" z="-3760" h="25046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-8598" y="46880" z="-3624" h="34738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-8541" y="45748" z="-3712" h="53989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-9434" y="45777" z="-3760" h="7365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-9914" y="45694" z="-3760" h="47543" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-8605" y="46236" z="-3736" h="43595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-8243" y="45197" z="-3688" h="44565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9343" y="46934" z="-3760" h="43126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-8604" y="46462" z="-3752" h="47341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9585" y="45699" z="-3760" h="42584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9651" y="45415" z="-3760" h="9479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9867" y="46478" z="-3744" h="38902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10175" y="46072" z="-3760" h="56775" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-9969" y="45379" z="-3760" h="41729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13727" y="48577" z="-3760" h="20126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14136" y="49196" z="-3752" h="21344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13841" y="49160" z="-3752" h="14944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14208" y="49281" z="-3752" h="20764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13688" y="48279" z="-3760" h="19508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13740" y="49040" z="-3760" h="45799" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14006" y="48250" z="-3760" h="12805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13797" y="48703" z="-3760" h="17895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12176" y="47307" z="-3760" h="11170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12990" y="49350" z="-3760" h="42694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13213" y="48521" z="-3752" h="13067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10189" y="48542" z="-3752" h="7037" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10752" y="47936" z="-3768" h="19452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-10442" y="48518" z="-3768" h="35381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11581" y="47803" z="-3760" h="43078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11451" y="47942" z="-3752" h="45731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-10997" y="48686" z="-3776" h="6090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-10960" y="48853" z="-3776" h="39358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11730" y="47566" z="-3760" h="39272" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11411" y="49036" z="-3768" h="64191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12035" y="47643" z="-3760" h="52507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-9541" y="48774" z="-3680" h="50614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-8754" y="47854" z="-3744" h="11629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-9591" y="47400" z="-3760" h="43796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-8553" y="48132" z="-3736" h="7037" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15694" y="44709" z="-3760" h="39396" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15720" y="43342" z="-3656" h="62398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15833" y="42938" z="-3760" h="58637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16189" y="42864" z="-3760" h="20913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15424" y="44255" z="-3616" h="54710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-15313" y="44414" z="-3616" h="39776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-15338" y="44680" z="-3688" h="62406" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16256" y="43213" z="-3760" h="47430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15964" y="42887" z="-3760" h="7201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15425" y="44322" z="-3648" h="64382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-15301" y="44298" z="-3616" h="29699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15627" y="46164" z="-3744" h="53309" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16083" y="45800" z="-3768" h="62139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15743" y="45723" z="-3744" h="18404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16023" y="46330" z="-3768" h="54843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15939" y="45867" z="-3760" h="35490" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15081" y="46141" z="-3696" h="5340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-15672" y="46763" z="-3768" h="65073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-14957" y="46283" z="-3680" h="9346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16242" y="46668" z="-3768" h="59546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-15928" y="46366" z="-3768" h="41612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15581" y="46380" z="-3736" h="50978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14465" y="47723" z="-3760" h="26719" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14665" y="49220" z="-3752" h="20015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15894" y="47940" z="-3768" h="5731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14527" y="48196" z="-3760" h="26773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15924" y="48772" z="-3768" h="62508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14346" y="49079" z="-3752" h="69" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14441" y="47632" z="-3760" h="57787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14662" y="49343" z="-3752" h="8505" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14180" y="48672" z="-3752" h="64885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14326" y="49244" z="-3752" h="13524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14858" y="49443" z="-3752" h="15416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15254" y="50232" z="-3760" h="33809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15336" y="49766" z="-3752" h="10250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14757" y="49935" z="-3760" h="43020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16183" y="49531" z="-3768" h="3663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15348" y="51187" z="-3728" h="43506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16037" y="50162" z="-3760" h="26740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16038" y="49758" z="-3760" h="7631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15936" y="49713" z="-3752" h="60211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16229" y="49534" z="-3768" h="39184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15248" y="49969" z="-3760" h="40616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15757" y="50236" z="-3760" h="28165" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15888" y="50806" z="-3768" h="26777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15195" y="49742" z="-3760" h="22250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15510" y="49921" z="-3752" h="33672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15221" y="49986" z="-3760" h="28519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15990" y="49832" z="-3752" h="35144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16089" y="49705" z="-3760" h="36076" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15478" y="49479" z="-3752" h="49521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15120" y="51008" z="-3720" h="34915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16090" y="51323" z="-3760" h="16044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15522" y="50059" z="-3760" h="5484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15367" y="50214" z="-3760" h="3190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14894" y="50473" z="-3720" h="31956" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14256" y="51316" z="-3712" h="17272" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12873" y="50962" z="-3744" h="32250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14351" y="49794" z="-3712" h="63416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12530" y="51162" z="-3752" h="50219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14254" y="50333" z="-3664" h="34818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-12492" y="49477" z="-3752" h="34630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14511" y="49406" z="-3752" h="26489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13677" y="49509" z="-3688" h="22853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13599" y="50686" z="-3696" h="16371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14185" y="50329" z="-3664" h="46813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13534" y="49230" z="-3712" h="27580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13295" y="49289" z="-3712" h="28051" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14288" y="50649" z="-3672" h="56073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13100" y="49224" z="-3744" h="5453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13036" y="49717" z="-3752" h="63236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14100" y="50697" z="-3680" h="33327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12410" y="49643" z="-3752" h="39835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14104" y="49777" z="-3688" h="19950" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13225" y="50159" z="-3712" h="65009" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13025" y="49761" z="-3752" h="44088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-12872" y="49903" z="-3752" h="50372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13159" y="51377" z="-3768" h="15494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13693" y="49783" z="-3664" h="24205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-12750" y="49438" z="-3760" h="25019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13660" y="49735" z="-3664" h="45005" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14217" y="50752" z="-3680" h="45526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-13113" y="51058" z="-3752" h="45152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14057" y="51042" z="-3696" h="27697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13187" y="49933" z="-3712" h="24185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-12925" y="49537" z="-3760" h="31478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-14070" y="49918" z="-3664" h="47716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13632" y="50018" z="-3664" h="65354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-13989" y="49585" z="-3728" h="3847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-12146" y="49593" z="-3760" h="9190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10977" y="49770" z="-3768" h="30668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-12025" y="49454" z="-3752" h="2183" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-12275" y="49977" z="-3760" h="27709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11991" y="49231" z="-3744" h="23204" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11701" y="51195" z="-3752" h="31590" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-10315" y="49665" z="-3688" h="55495" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11901" y="50464" z="-3760" h="56965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11484" y="50013" z="-3760" h="37859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11761" y="50735" z="-3760" h="35879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-10685" y="50002" z="-3736" h="30567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11613" y="50160" z="-3760" h="45193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-12347" y="49682" z="-3752" h="36752" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11073" y="49987" z="-3768" h="3981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-11936" y="49923" z="-3760" h="61950" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-10390" y="49521" z="-3704" h="27398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11621" y="50708" z="-3760" h="48368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-11822" y="50247" z="-3760" h="18558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17729" y="45071" z="-3728" h="14954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16987" y="46431" z="-3768" h="6769" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17652" y="45403" z="-3760" h="59644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17209" y="46621" z="-3760" h="27950" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18170" y="46016" z="-3728" h="42957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16993" y="46392" z="-3768" h="27896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16444" y="46577" z="-3768" h="14699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16786" y="46996" z="-3760" h="3068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18090" y="47205" z="-3664" h="23290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16341" y="45089" z="-3768" h="51531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17498" y="46270" z="-3760" h="3504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16667" y="46623" z="-3768" h="58290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17034" y="45161" z="-3720" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16192" y="45653" z="-3776" h="1491" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16589" y="45480" z="-3784" h="57957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17062" y="46912" z="-3760" h="31244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17267" y="46521" z="-3760" h="1281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16971" y="46065" z="-3768" h="56024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17667" y="47364" z="-3704" h="15783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17074" y="47977" z="-3760" h="5699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17913" y="47108" z="-3688" h="21997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17642" y="48098" z="-3720" h="56196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16867" y="47267" z="-3760" h="40961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-17223" y="47229" z="-3744" h="26829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16983" y="47135" z="-3760" h="31842" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16174" y="48318" z="-3768" h="27058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18083" y="47708" z="-3656" h="33475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17518" y="48137" z="-3744" h="36126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17475" y="48309" z="-3744" h="24823" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17836" y="49223" z="-3704" h="16069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16870" y="49427" z="-3768" h="13746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18144" y="49381" z="-3680" h="20112" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18099" y="49342" z="-3680" h="33552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17659" y="49296" z="-3752" h="10236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16583" y="50320" z="-3720" h="12073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16362" y="49730" z="-3768" h="62115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16163" y="49261" z="-3768" h="3213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16806" y="51364" z="-3688" h="24945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17063" y="49508" z="-3760" h="2850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17128" y="50466" z="-3728" h="36903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17014" y="49676" z="-3768" h="18273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16678" y="49309" z="-3768" h="12547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18238" y="50794" z="-3736" h="57349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17661" y="51312" z="-3664" h="25574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17133" y="51426" z="-3672" h="8873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16245" y="49426" z="-3768" h="62224" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17115" y="51277" z="-3672" h="7583" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17982" y="51283" z="-3680" h="22226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17386" y="51368" z="-3656" h="13280" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17755" y="50217" z="-3744" h="19281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17765" y="50523" z="-3736" h="19019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17422" y="51302" z="-3664" h="4521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17818" y="45344" z="-3760" h="27148" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18338" y="47886" z="-3624" h="46598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18665" y="48896" z="-3640" h="60314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20091" y="47803" z="-3744" h="60690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19957" y="50458" z="-3712" h="36944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20053" y="50588" z="-3720" h="47373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19136" y="50933" z="-3752" h="44874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19490" y="51468" z="-3712" h="12647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18580" y="53102" z="-3776" h="41470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20380" y="52725" z="-3712" h="38581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20380" y="51971" z="-3664" h="45435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19930" y="52725" z="-3736" h="11197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19930" y="51217" z="-3688" h="45012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18580" y="51594" z="-3784" h="19888" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19030" y="51594" z="-3768" h="22931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19930" y="51971" z="-3672" h="11114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20380" y="53102" z="-3760" h="17486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19480" y="52725" z="-3760" h="16215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20358" y="53050" z="-3760" h="30649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20358" y="51980" z="-3664" h="29830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20358" y="51552" z="-3680" h="59330" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20150" y="51338" z="-3680" h="12401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17333" y="52134" z="-3688" h="10814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18130" y="51971" z="-3680" h="1696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18130" y="52725" z="-3680" h="7548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17230" y="52725" z="-3680" h="27985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17680" y="52725" z="-3680" h="39923" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-17680" y="53102" z="-3704" h="2314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16413" y="52904" z="-3688" h="44672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16413" y="51364" z="-3752" h="18203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16873" y="52904" z="-3704" h="41404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17793" y="51364" z="-3672" h="9156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16873" y="52134" z="-3688" h="51144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16873" y="51364" z="-3688" h="54735" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15167" y="51294" z="-3728" h="22777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15167" y="51508" z="-3768" h="116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14959" y="51508" z="-3744" h="27304" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-15051" y="52881" z="-3688" h="60673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15805" y="53225" z="-3688" h="41816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15493" y="52134" z="-3744" h="31411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15953" y="52904" z="-3680" h="59236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15953" y="52519" z="-3688" h="60231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14573" y="52134" z="-3776" h="55813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-15953" y="52134" z="-3736" h="22997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-14573" y="51749" z="-3776" h="2517" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-15953" y="51364" z="-3760" h="37015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-21958" y="49261" z="-3776" h="52820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20849" y="51203" z="-3720" h="31328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21067" y="51242" z="-3736" h="20586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21304" y="51402" z="-3736" h="20308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21150" y="51302" z="-3744" h="18063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20373" y="51307" z="-3696" h="13016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20567" y="51251" z="-3696" h="10047" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21723" y="51489" z="-3744" h="17149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22180" y="51971" z="-3712" h="38042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20830" y="52725" z="-3736" h="13291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21730" y="53102" z="-3616" h="48379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20830" y="53102" z="-3760" h="35068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21730" y="51217" z="-3752" h="61269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21280" y="52725" z="-3768" h="3310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20830" y="51594" z="-3680" h="29952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21280" y="51971" z="-3728" h="23745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22180" y="52348" z="-3648" h="60585" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22180" y="51217" z="-3760" h="28613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21730" y="52348" z="-3752" h="26477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21730" y="51594" z="-3744" h="40392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21190" y="52194" z="-3712" h="28254" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22230" y="52408" z="-3640" h="910" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20774" y="52408" z="-3696" h="10753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21606" y="52836" z="-3696" h="32715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21398" y="51552" z="-3736" h="9479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21606" y="53050" z="-3640" h="1061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21190" y="52408" z="-3720" h="47704" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20982" y="52408" z="-3704" h="50147" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20982" y="52836" z="-3760" h="35167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22230" y="51980" z="-3696" h="30502" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22230" y="52836" z="-3608" h="50541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22022" y="52194" z="-3720" h="17091" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20566" y="51980" z="-3664" h="50961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20830" y="53479" z="-3672" h="1672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21280" y="54233" z="-3736" h="57137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22180" y="54987" z="-3672" h="8408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21730" y="53856" z="-3584" h="6370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22180" y="54233" z="-3592" h="35913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20830" y="54610" z="-3768" h="52156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-20830" y="53856" z="-3624" h="64058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-20830" y="54987" z="-3768" h="35804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-20830" y="54233" z="-3728" h="5309" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22022" y="53478" z="-3584" h="40654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20982" y="54120" z="-3720" h="2248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21398" y="54334" z="-3744" h="40264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21190" y="53906" z="-3640" h="6831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21398" y="54120" z="-3672" h="48766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22438" y="53478" z="-3592" h="5976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20982" y="53264" z="-3712" h="28118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20566" y="53264" z="-3760" h="11649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20982" y="53692" z="-3616" h="41627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21398" y="53906" z="-3608" h="43721" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21606" y="53264" z="-3608" h="57798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21606" y="54120" z="-3608" h="17230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20380" y="53856" z="-3752" h="31678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19480" y="54610" z="-3776" h="48631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19480" y="53856" z="-3760" h="15353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19030" y="53856" z="-3768" h="38790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20380" y="54233" z="-3736" h="1547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19030" y="54233" z="-3768" h="61714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19930" y="53479" z="-3752" h="10763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19030" y="53479" z="-3776" h="98" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18580" y="53856" z="-3768" h="59268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17603" y="54229" z="-3776" h="13673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17192" y="54626" z="-3768" h="39708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17603" y="54626" z="-3784" h="9082" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18014" y="54229" z="-3776" h="50397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16781" y="54229" z="-3776" h="12695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17192" y="53832" z="-3776" h="23617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23080" y="51971" z="-3648" h="9573" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23980" y="51217" z="-3768" h="18361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22630" y="53102" z="-3600" h="13578" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-24430" y="52348" z="-3760" h="40273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22630" y="51217" z="-3784" h="35369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23530" y="53102" z="-3680" h="38504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22630" y="51971" z="-3656" h="55580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23980" y="51594" z="-3744" h="41971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23080" y="51217" z="-3768" h="17471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23080" y="52725" z="-3616" h="14277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-24430" y="52725" z="-3752" h="4702" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23062" y="52194" z="-3640" h="1797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23478" y="52622" z="-3648" h="46504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23530" y="54987" z="-3728" h="40424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23530" y="53856" z="-3696" h="64514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23080" y="54610" z="-3696" h="42147" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23080" y="54987" z="-3736" h="15867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24430" y="53856" z="-3704" h="991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24430" y="53479" z="-3696" h="59668" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22630" y="54987" z="-3696" h="61500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22630" y="54233" z="-3640" h="24841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23530" y="54233" z="-3688" h="48550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-23980" y="53856" z="-3688" h="44670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23980" y="56872" z="-3744" h="28812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23530" y="56495" z="-3768" h="32760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23080" y="56118" z="-3760" h="52812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23080" y="56495" z="-3768" h="44608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23530" y="56118" z="-3760" h="9308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23530" y="55741" z="-3736" h="57293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23530" y="56872" z="-3776" h="627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23980" y="56118" z="-3768" h="46126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-23980" y="55364" z="-3664" h="33065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20830" y="55364" z="-3760" h="4541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20891" y="55817" z="-3752" h="31526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22124" y="56611" z="-3760" h="23526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21713" y="57008" z="-3752" h="44963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20891" y="56611" z="-3768" h="30800" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21713" y="56611" z="-3760" h="8656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21302" y="57008" z="-3752" h="40745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21302" y="56214" z="-3760" h="52963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20891" y="56214" z="-3760" h="9460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-18836" y="55420" z="-3760" h="53397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19658" y="55420" z="-3784" h="35417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19247" y="56214" z="-3744" h="28545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19658" y="57008" z="-3704" h="14176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20069" y="56214" z="-3784" h="22459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20069" y="55817" z="-3784" h="38171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-19247" y="55817" z="-3784" h="38" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19247" y="56611" z="-3704" h="53146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-19658" y="55817" z="-3784" h="2073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18836" y="57008" z="-3728" h="62392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22225" y="51300" z="-3760" h="57510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-24577" y="49261" z="-3768" h="20745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-25205" y="50739" z="-3760" h="25688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24801" y="50467" z="-3768" h="1096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24783" y="51228" z="-3768" h="13828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-25032" y="50793" z="-3768" h="30461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24872" y="49534" z="-3744" h="32869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26735" y="49101" z="-3768" h="33361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-25643" y="49240" z="-3760" h="21707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26272" y="50391" z="-3768" h="42392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26587" y="50599" z="-3768" h="6534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-26414" y="51033" z="-3760" h="33687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26578" y="50166" z="-3768" h="51909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-26568" y="51064" z="-3768" h="4449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-25486" y="49688" z="-3744" h="38707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-25866" y="49701" z="-3768" h="44317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-25811" y="49879" z="-3768" h="19222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-26092" y="50687" z="-3760" h="10539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-26344" y="49796" z="-3768" h="15665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-25330" y="51217" z="-3736" h="25456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-25330" y="52725" z="-3736" h="52728" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24880" y="51594" z="-3752" h="8068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24880" y="53102" z="-3720" h="9246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26069" y="52311" z="-3760" h="49980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26069" y="51887" z="-3736" h="13840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-26346" y="51887" z="-3752" h="46101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-26623" y="51463" z="-3744" h="9767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-26572" y="55034" z="-3760" h="33879" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26572" y="53318" z="-3760" h="18276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24880" y="54233" z="-3736" h="2890" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26285" y="55034" z="-3760" h="45249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-25711" y="54176" z="-3760" h="7865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-25998" y="53747" z="-3760" h="43883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24880" y="54610" z="-3760" h="48934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-25711" y="54605" z="-3768" h="43759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-25330" y="53479" z="-3728" h="37947" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22792" y="50938" z="-3776" h="57510" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24610" y="49442" z="-3744" h="27806" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22921" y="49897" z="-3728" h="12983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-23387" y="49325" z="-3760" h="12358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23233" y="49922" z="-3736" h="32087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23446" y="50874" z="-3776" h="52822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24164" y="50240" z="-3760" h="26334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23908" y="51210" z="-3776" h="37407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24677" y="50531" z="-3768" h="42514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23245" y="49277" z="-3752" h="15281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-23661" y="49179" z="-3760" h="5850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22463" y="50853" z="-3776" h="53639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24730" y="48750" z="-3760" h="55622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-25785" y="47341" z="-3728" h="13473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26694" y="48540" z="-3760" h="25315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-25855" y="48293" z="-3728" h="29153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26048" y="46966" z="-3760" h="4430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-26345" y="48991" z="-3760" h="54988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-26218" y="49066" z="-3760" h="9156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-25540" y="48144" z="-3712" h="34715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-25234" y="47577" z="-3704" h="58642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-26081" y="48826" z="-3760" h="36125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-25876" y="47248" z="-3744" h="18488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-26111" y="47650" z="-3736" h="41687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-25727" y="48519" z="-3760" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-25452" y="47308" z="-3712" h="19627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-26628" y="47282" z="-3736" h="17265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-23413" y="48286" z="-3728" h="28022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23934" y="49020" z="-3752" h="61807" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-22821" y="48217" z="-3776" h="50654" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22768" y="47342" z="-3760" h="51354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23194" y="47153" z="-3768" h="38883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22635" y="47543" z="-3752" h="24187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23472" y="49004" z="-3752" h="55095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24790" y="48169" z="-3696" h="25129" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22882" y="47838" z="-3768" h="14507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-24289" y="47736" z="-3680" h="32460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23469" y="48773" z="-3752" h="65189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24623" y="48433" z="-3736" h="18381" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-23921" y="47921" z="-3704" h="51544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24607" y="47917" z="-3696" h="27615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24206" y="47595" z="-3680" h="36347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-23113" y="48185" z="-3736" h="17265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23590" y="48011" z="-3712" h="1122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23989" y="47278" z="-3728" h="54651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24088" y="49333" z="-3768" h="19293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24148" y="46994" z="-3752" h="6197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23581" y="48574" z="-3728" h="43695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23714" y="49165" z="-3760" h="34550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23236" y="47679" z="-3720" h="60396" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20412" y="47380" z="-3688" h="31775" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21781" y="47289" z="-3720" h="65178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20511" y="48588" z="-3768" h="47770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22432" y="47079" z="-3744" h="4591" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22645" y="48660" z="-3768" h="24945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-22619" y="47915" z="-3784" h="6984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20384" y="48888" z="-3768" h="46391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21032" y="47718" z="-3720" h="16857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-21941" y="48013" z="-3728" h="15229" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22247" y="47669" z="-3736" h="51911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22719" y="47367" z="-3760" h="22545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24833" y="53093" z="-3720" h="38902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23122" y="46986" z="-3768" h="63973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23199" y="46569" z="-3760" h="31694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23786" y="46758" z="-3752" h="12745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22805" y="45891" z="-3768" h="31512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22428" y="46370" z="-3752" h="51834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23248" y="46738" z="-3760" h="19139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-23373" y="46760" z="-3752" h="35470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23640" y="46692" z="-3752" h="36545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23696" y="46127" z="-3728" h="40461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23370" y="46464" z="-3752" h="55241" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23561" y="46413" z="-3752" h="28177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24244" y="45234" z="-3656" h="30297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23563" y="45765" z="-3704" h="39197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-23361" y="46981" z="-3760" h="42285" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-22486" y="45706" z="-3760" h="7014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-23578" y="46729" z="-3752" h="34520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24060" y="47025" z="-3752" h="20514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24022" y="45869" z="-3696" h="52616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24003" y="47115" z="-3752" h="22753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23348" y="46449" z="-3752" h="7866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21709" y="45994" z="-3704" h="36781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20334" y="47326" z="-3672" h="17693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-20750" y="46522" z="-3664" h="30671" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21038" y="46432" z="-3680" h="14694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22558" y="46641" z="-3760" h="21993" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22604" y="46702" z="-3760" h="23633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22748" y="46058" z="-3768" h="35299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21558" y="45493" z="-3752" h="32049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21504" y="46068" z="-3680" h="65274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21472" y="47202" z="-3720" h="14227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22309" y="47102" z="-3728" h="6081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21689" y="46433" z="-3720" h="63763" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21572" y="46551" z="-3712" h="59690" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22389" y="45964" z="-3760" h="49709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21786" y="46281" z="-3720" h="14706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22572" y="46351" z="-3760" h="60824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21043" y="45966" z="-3672" h="47634" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-22121" y="47065" z="-3720" h="54175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21641" y="45922" z="-3712" h="61053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22032" y="45597" z="-3760" h="53376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-21099" y="45378" z="-3736" h="19013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-21685" y="45761" z="-3728" h="61853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20880" y="45910" z="-3664" h="46156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22173" y="47145" z="-3720" h="16737" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-22591" y="45958" z="-3768" h="24390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22267" y="46121" z="-3744" h="50988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-19866" y="46735" z="-3608" h="9717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18603" y="45059" z="-3760" h="7279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-19321" y="46252" z="-3624" h="58145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18323" y="44966" z="-3760" h="59543" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-19303" y="46520" z="-3600" h="7823" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18845" y="46801" z="-3608" h="35324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20243" y="46808" z="-3624" h="32061" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-20109" y="46565" z="-3608" h="24327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-20013" y="46527" z="-3608" h="27187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-24122" y="44235" z="-3600" h="36776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-23873" y="44273" z="-3624" h="48136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-22591" y="42957" z="-3744" h="65363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23743" y="44554" z="-3632" h="48632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23022" y="45130" z="-3760" h="8918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24143" y="44834" z="-3616" h="60777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-23679" y="44138" z="-3664" h="23600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22584" y="44956" z="-3752" h="4449" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-23878" y="44340" z="-3616" h="37246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-24027" y="44305" z="-3608" h="63645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22663" y="44703" z="-3752" h="10185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-22534" y="44243" z="-3760" h="29864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-20642" y="44111" z="-3752" h="36207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-21284" y="44421" z="-3752" h="2555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-21491" y="44610" z="-3760" h="10677" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21095" y="43991" z="-3752" h="22714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-22558" y="44929" z="-3752" h="33684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22196" y="44649" z="-3760" h="6894" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-21905" y="44732" z="-3760" h="11138" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-22246" y="42914" z="-3704" h="45248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-22536" y="43543" z="-3712" h="18370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-22628" y="44778" z="-3752" h="10785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-21445" y="44496" z="-3752" h="21326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18437" y="44442" z="-3704" h="57996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18287" y="44923" z="-3760" h="11337" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18747" y="43352" z="-3696" h="64842" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18302" y="44593" z="-3696" h="58499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17445" y="44966" z="-3720" h="32715" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16730" y="44269" z="-3704" h="12482" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16880" y="45231" z="-3768" h="40596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17278" y="44970" z="-3720" h="36034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-17561" y="43868" z="-3680" h="57574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16762" y="44004" z="-3712" h="64230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20105" /> <!-- Dark Horror -->
+		<point x="-16777" y="43348" z="-3752" h="22664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16725" y="45001" z="-3736" h="40669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-16795" y="43796" z="-3712" h="31244" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16762" y="44679" z="-3720" h="63614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17037" y="44120" z="-3704" h="50063" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16942" y="43281" z="-3736" h="6469" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-18542" y="43336" z="-3696" h="30384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16439" y="42473" z="-3760" h="41066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-16454" y="42551" z="-3760" h="53454" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16966" y="42967" z="-3744" h="58312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16982" y="41833" z="-3712" h="44317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17378" y="42585" z="-3688" h="16119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16353" y="41129" z="-3768" h="28093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16760" y="42835" z="-3760" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17982" y="41991" z="-3672" h="34525" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16644" y="42959" z="-3760" h="36274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17642" y="41822" z="-3704" h="41705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16641" y="41805" z="-3760" h="51927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17415" y="42055" z="-3688" h="11537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17330" y="42304" z="-3688" h="39096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20379" /> <!-- Stone Giant Soldier -->
+		<point x="-16368" y="41150" z="-3768" h="34918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17694" y="42225" z="-3672" h="36170" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17671" y="42437" z="-3672" h="58448" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-16956" y="41345" z="-3736" h="12848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-18576" y="41472" z="-3760" h="37500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20015" /> <!-- Zombie Forest Elf -->
+		<point x="-18246" y="43067" z="-3672" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-17897" y="41670" z="-3704" h="6228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20020" /> <!-- Zombie Forest Elf Researcher -->
+		<point x="-16422" y="42454" z="-3760" h="16146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20025" /> <!-- Lesser Dark Horror -->
+		<point x="-17396" y="42007" z="-3688" h="56397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31850" /> <!-- Blight Treant -->
+		<point x="-24331" y="38994" z="-2856" h="3081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-19590" y="42480" z="-3752" h="64154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-17935" y="39550" z="-3584" h="22759" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-17608" y="39217" z="-3624" h="51797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31034" /> <!-- Sentry -->
+		<point x="-15854" y="38721" z="-3672" h="25762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-10955" y="38415" z="-3696" h="33118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-11780" y="41318" z="-3768" h="11150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-9480" y="37644" z="-3704" h="53560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-9508" y="42344" z="-3736" h="30991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30662" /> <!-- Piper Longbow -->
+		<point x="-13742" y="44298" z="-3592" h="45056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-13118" y="44064" z="-3552" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30661" /> <!-- Mysterious Dark Elf -->
+		<point x="-14158" y="44933" z="-3592" h="45056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-8823" y="43566" z="-3768" h="59659" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-9109" y="45093" z="-3760" h="45838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-12765" y="51014" z="-3744" h="42039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-12846" y="49317" z="-3768" h="22177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-17781" y="51296" z="-3672" h="14811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-19340" y="49185" z="-3672" h="32773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-23666" y="51392" z="-3768" h="11256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-21114" y="47051" z="-3696" h="44260" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-20736" y="47265" z="-3688" h="10540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-22104" y="44238" z="-3752" h="24483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31845" /> <!-- Bloody Pixy -->
+		<point x="-17354" y="43218" z="-3680" h="56539" />
+	</spawn>
+</list>

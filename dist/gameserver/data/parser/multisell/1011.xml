@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: SanyaDC-->
+<list>
+	<config type="CHANCED"/>
+	<item>
+		<production id="94314" count="1"/>	<!--Elixir-->
+		<production id="94314" count="1" chance="5"/>	<!--Elixir-->
+		<production id="94328" count="7" chance="95"/>	<!--Elixir Powder-->
+		<ingredient id="94328" count="10"/>	<!--Elixir Powder-->
+		<ingredient id="57" count="1000000"/>	<!--Adena-->
+	</item>
+</list>

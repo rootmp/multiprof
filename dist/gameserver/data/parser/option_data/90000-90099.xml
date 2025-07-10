@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="90000">
+		<!--M. Def. +120-->
+	</option_data>
+	<option_data id="90001">
+		<!--M. Def. +150-->
+	</option_data>
+	<option_data id="90002">
+		<!--M. Def. +200-->
+	</option_data>
+	<option_data id="90003">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90004">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90005">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90006">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90007">
+		<!--P. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90008">
+		<!--P. Accuracy +1.1-->
+	</option_data>
+	<option_data id="90009">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="90010">
+		<!--P. Accuracy +1.2-->
+	</option_data>
+	<option_data id="90011">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="90012">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="90013">
+		<!--P. Accuracy +1.3-->
+	</option_data>
+	<option_data id="90014">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="90015">
+		<!--P. Accuracy +1.4-->
+	</option_data>
+	<option_data id="90016">
+		<!--P. Accuracy +1.6-->
+	</option_data>
+	<option_data id="90017">
+		<!--P. Accuracy +1.8-->
+	</option_data>
+	<option_data id="90018">
+		<!--P. Accuracy +2.0-->
+	</option_data>
+	<option_data id="90019">
+		<!--P. Accuracy +2.5-->
+	</option_data>
+	<option_data id="90020">
+		<!--P. Accuracy +3.0-->
+	</option_data>
+	<option_data id="90021">
+		<!--P. Accuracy +3.5-->
+	</option_data>
+	<option_data id="90022">
+		<!--P. Accuracy +5.0-->
+	</option_data>
+	<option_data id="90023">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90024">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90025">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90026">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90027">
+		<!--M. Accuracy +1.0-->
+	</option_data>
+	<option_data id="90028">
+		<!--M. Accuracy +1.1-->
+	</option_data>
+	<option_data id="90029">
+		<!--M. Accuracy +1.2-->
+	</option_data>
+	<option_data id="90030">
+		<!--M. Accuracy +1.2-->
+	</option_data>
+	<option_data id="90031">
+		<!--M. Accuracy +1.3-->
+	</option_data>
+	<option_data id="90032">
+		<!--M. Accuracy +1.3-->
+	</option_data>
+	<option_data id="90033">
+		<!--M. Accuracy +1.3-->
+	</option_data>
+	<option_data id="90034">
+		<!--M. Accuracy +1.4-->
+	</option_data>
+	<option_data id="90035">
+		<!--M. Accuracy +1.4-->
+	</option_data>
+	<option_data id="90036">
+		<!--M. Accuracy +1.6-->
+	</option_data>
+	<option_data id="90037">
+		<!--M. Accuracy +1.8-->
+	</option_data>
+	<option_data id="90038">
+		<!--M. Accuracy +2.0-->
+	</option_data>
+	<option_data id="90039">
+		<!--M. Accuracy +2.5-->
+	</option_data>
+	<option_data id="90040">
+		<!--M. Accuracy +3.0-->
+	</option_data>
+	<option_data id="90041">
+		<!--M. Accuracy +3.5-->
+	</option_data>
+	<option_data id="90042">
+		<!--M. Accuracy +5.0-->
+	</option_data>
+	<option_data id="90043">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90044">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90045">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90046">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90047">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90048">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90049">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90050">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90051">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90052">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90053">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90054">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90055">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90056">
+		<!--M. Damage Resistance +2%-->
+	</option_data>
+	<option_data id="90057">
+		<!--M. Damage Resistance +3%-->
+	</option_data>
+	<option_data id="90058">
+		<!--M. Damage Resistance +3%-->
+	</option_data>
+	<option_data id="90059">
+		<!--M. Damage Resistance +4%-->
+	</option_data>
+	<option_data id="90060">
+		<!--M. Damage Resistance +5%-->
+	</option_data>
+	<option_data id="90061">
+		<!--M. Damage Resistance +7%-->
+	</option_data>
+	<option_data id="90062">
+		<!--M. Damage Resistance +10%-->
+	</option_data>
+	<option_data id="90063">
+		<!--Max HP +5-->
+	</option_data>
+	<option_data id="90064">
+		<!--Max HP +8-->
+	</option_data>
+	<option_data id="90065">
+		<!--Max HP +11-->
+	</option_data>
+	<option_data id="90066">
+		<!--Max HP +14-->
+	</option_data>
+	<option_data id="90067">
+		<!--Max HP +17-->
+	</option_data>
+	<option_data id="90068">
+		<!--Max HP +20-->
+	</option_data>
+	<option_data id="90069">
+		<!--Max HP +23-->
+	</option_data>
+	<option_data id="90070">
+		<!--Max HP +26-->
+	</option_data>
+	<option_data id="90071">
+		<!--Max HP +30-->
+	</option_data>
+	<option_data id="90072">
+		<!--Max HP +33-->
+	</option_data>
+	<option_data id="90073">
+		<!--Max HP +36-->
+	</option_data>
+	<option_data id="90074">
+		<!--Max HP +39-->
+	</option_data>
+	<option_data id="90075">
+		<!--Max HP +42-->
+	</option_data>
+	<option_data id="90076">
+		<!--Max HP +45-->
+	</option_data>
+	<option_data id="90077">
+		<!--Max HP +48-->
+	</option_data>
+	<option_data id="90078">
+		<!--Max HP +60-->
+	</option_data>
+	<option_data id="90079">
+		<!--Max HP +70-->
+	</option_data>
+	<option_data id="90080">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="90081">
+		<!--Max HP +80-->
+	</option_data>
+	<option_data id="90082">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="90083">
+		<!--Max MP +5-->
+	</option_data>
+	<option_data id="90084">
+		<!--Max MP +8-->
+	</option_data>
+	<option_data id="90085">
+		<!--Max MP +11-->
+	</option_data>
+	<option_data id="90086">
+		<!--Max MP +14-->
+	</option_data>
+	<option_data id="90087">
+		<!--Max MP +17-->
+	</option_data>
+	<option_data id="90088">
+		<!--Max MP +20-->
+	</option_data>
+	<option_data id="90089">
+		<!--Max MP +23-->
+	</option_data>
+	<option_data id="90090">
+		<!--Max MP +26-->
+	</option_data>
+	<option_data id="90091">
+		<!--Max MP +30-->
+	</option_data>
+	<option_data id="90092">
+		<!--Max MP +33-->
+	</option_data>
+	<option_data id="90093">
+		<!--Max MP +36-->
+	</option_data>
+	<option_data id="90094">
+		<!--Max MP +39-->
+	</option_data>
+	<option_data id="90095">
+		<!--Max MP +42-->
+	</option_data>
+	<option_data id="90096">
+		<!--Max MP +45-->
+	</option_data>
+	<option_data id="90097">
+		<!--Max MP +48-->
+	</option_data>
+	<option_data id="90098">
+		<!--Max MP +60-->
+	</option_data>
+	<option_data id="90099">
+		<!--Max MP +70-->
+	</option_data>
+</list>

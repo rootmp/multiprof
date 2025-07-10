@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-5877" y="-132052" z="-2976" h="44323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-5701" y="-133042" z="-2848" h="53403" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-5531" y="-133019" z="-2832" h="12378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-4843" y="-133101" z="-2784" h="50083" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-5504" y="-131636" z="-2952" h="11034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-5379" y="-131416" z="-2960" h="4410" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-4892" y="-131904" z="-2952" h="58937" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-4910" y="-132916" z="-2800" h="2451" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-4642" y="-132717" z="-2816" h="38612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-3847" y="-131416" z="-3016" h="4354" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-3610" y="-133220" z="-2776" h="40371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-2315" y="-131416" z="-2640" h="65345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-3758" y="-131765" z="-2976" h="43703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-3539" y="-132879" z="-2816" h="62130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-3004" y="-132162" z="-2784" h="19492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-1768" y="-133031" z="-2816" h="3025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-1574" y="-132348" z="-2744" h="42964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-1689" y="-132242" z="-2736" h="29809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-1932" y="-132175" z="-2704" h="45750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2342" y="-134510" z="-2888" h="57599" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-2047" y="-135094" z="-2872" h="58384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-3486" y="-133665" z="-2760" h="41290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-3676" y="-133750" z="-2760" h="29328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-3670" y="-133006" z="-2792" h="41033" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-3656" y="-133674" z="-2760" h="27859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2894" y="-133776" z="-2784" h="38967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-3525" y="-134439" z="-2688" h="51733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-3589" y="-134575" z="-2656" h="8122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-3442" y="-134177" z="-2728" h="35532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2868" y="-134313" z="-2800" h="58698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2171" y="-134826" z="-2896" h="63925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-3493" y="-133696" z="-2760" h="64601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2698" y="-135034" z="-2816" h="48943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2114" y="-134614" z="-2904" h="22799" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-3511" y="-135017" z="-2632" h="24609" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-3493" y="-135104" z="-2624" h="54660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2283" y="-134048" z="-2872" h="13044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2485" y="-134725" z="-2880" h="53453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-3372" y="-134488" z="-2704" h="38595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-2698" y="-133883" z="-2792" h="44320" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-1879" y="-133860" z="-2872" h="13452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="-1166" y="-133693" z="-2968" h="14980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="-619" y="-134187" z="-3040" h="26460" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="1146" y="-133027" z="-3176" h="19675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="1441" y="-131434" z="-3328" h="15344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="1462" y="-132441" z="-3224" h="13423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="824" y="-132791" z="-3168" h="15275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="917" y="-131665" z="-3280" h="21732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="280" y="-131522" z="-3096" h="34045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="1944" y="-132121" z="-3240" h="35400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="1905" y="-132241" z="-3232" h="24766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="337" y="-133158" z="-3112" h="25972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="2024" y="-131820" z="-3312" h="17961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="638" y="-132276" z="-3208" h="64630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="1781" y="-133114" z="-3208" h="6053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="1277" y="-132586" z="-3208" h="32217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="798" y="-132785" z="-3168" h="21805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="1434" y="-132512" z="-3208" h="54717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="2948" y="-133188" z="-2952" h="56357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20333" /> <!-- Greystone Golem -->
+		<point x="2634" y="-133370" z="-3120" h="63927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="2487" y="-132726" z="-3208" h="51614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="2997" y="-132318" z="-3160" h="40777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="2723" y="-132222" z="-3192" h="65466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="2869" y="-132490" z="-3152" h="52439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="3186" y="-132079" z="-3176" h="36029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="3943" y="-132110" z="-3120" h="42814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="3250" y="-130516" z="-3352" h="7865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="3627" y="-129305" z="-3208" h="19046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="3259" y="-129483" z="-3176" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="3607" y="-130614" z="-3344" h="11446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="3352" y="-129789" z="-3240" h="13216" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="3282" y="-129817" z="-3256" h="37726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="2768" y="-130178" z="-3296" h="62437" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="3388" y="-129334" z="-3176" h="32023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="3361" y="-130516" z="-3344" h="43392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="2895" y="-129524" z="-3152" h="17864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="2617" y="-130791" z="-3400" h="13760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="2844" y="-130280" z="-3328" h="40747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="3524" y="-130478" z="-3336" h="45614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="2309" y="-130630" z="-3360" h="64336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="3126" y="-130309" z="-3344" h="5331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="2613" y="-129877" z="-3200" h="49352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="3417" y="-129735" z="-3240" h="58890" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="2596" y="-129327" z="-3072" h="56479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="3678" y="-130516" z="-3336" h="4692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5003" y="-132401" z="-2968" h="38119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5818" y="-131729" z="-3000" h="58762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="4532" y="-132413" z="-3040" h="16314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5335" y="-132409" z="-2936" h="33317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="4054" y="-132362" z="-3080" h="40482" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="3849" y="-132724" z="-3040" h="25016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="4306" y="-132540" z="-3040" h="18772" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4843" y="-132521" z="-2984" h="1049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5274" y="-131697" z="-3096" h="19922" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4943" y="-132452" z="-2992" h="22670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4500" y="-132214" z="-3072" h="45471" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="5045" y="-132561" z="-2952" h="61611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="5425" y="-129423" z="-3152" h="22136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="5136" y="-129486" z="-3192" h="1885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6089" y="-130498" z="-3128" h="22804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="5201" y="-129346" z="-3192" h="18000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="4710" y="-130207" z="-3352" h="60987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="4106" y="-130516" z="-3336" h="27852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5559" y="-130526" z="-3232" h="13770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="4534" y="-129946" z="-3336" h="46462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5589" y="-128824" z="-3064" h="13071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="4534" y="-129756" z="-3232" h="31581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5246" y="-130002" z="-3272" h="21289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6241" y="-130662" z="-3112" h="26386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5606" y="-129984" z="-3168" h="7969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4984" y="-130039" z="-3320" h="28712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4069" y="-130750" z="-3336" h="2083" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="5499" y="-129519" z="-3144" h="23259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4962" y="-129186" z="-3224" h="8438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="5944" y="-129157" z="-3040" h="11692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8145" y="-135142" z="-912" h="27128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6615" y="-135142" z="-656" h="64736" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7078" y="-131859" z="-2960" h="28069" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="7994" y="-131668" z="-2848" h="38405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6994" y="-131923" z="-2960" h="65326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7381" y="-132808" z="-2808" h="21938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6482" y="-132718" z="-2808" h="37219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7750" y="-131577" z="-2928" h="53271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8058" y="-131913" z="-2792" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="7003" y="-131909" z="-2960" h="8056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="7746" y="-131730" z="-2912" h="31047" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6632" y="-132122" z="-2904" h="16850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="8091" y="-131782" z="-2784" h="36357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6897" y="-132715" z="-2824" h="33319" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6133" y="-131993" z="-2936" h="13788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="7035" y="-131668" z="-3008" h="50141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7604" y="-130434" z="-2968" h="63785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7205" y="-130313" z="-2984" h="16463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8291" y="-130704" z="-2768" h="10860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6230" y="-130320" z="-3096" h="11648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="6881" y="-130118" z="-2992" h="4010" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7932" y="-130339" z="-2896" h="57797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7406" y="-130703" z="-3024" h="36521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7126" y="-129381" z="-2960" h="33136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7165" y="-129412" z="-2960" h="44316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7553" y="-129684" z="-2904" h="4094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7177" y="-129272" z="-2944" h="39612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6853" y="-129500" z="-2976" h="4855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6967" y="-129538" z="-2968" h="55053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7027" y="-130603" z="-3032" h="18788" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7449" y="-129316" z="-2920" h="11327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7826" y="-129879" z="-2872" h="42866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6941" y="-129888" z="-2976" h="25079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6886" y="-130515" z="-3032" h="55286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="6970" y="-129280" z="-2968" h="6775" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="7049" y="-130002" z="-2968" h="38531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="5242" y="-128465" z="-3080" h="44549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="5899" y="-128632" z="-3016" h="35190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="4347" y="-129024" z="-3248" h="15458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5340" y="-128539" z="-3072" h="13238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="4138" y="-128517" z="-3224" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="5390" y="-128521" z="-3056" h="20798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="4598" y="-128454" z="-3176" h="57091" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="4707" y="-128151" z="-3128" h="62308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="4082" y="-128587" z="-3216" h="50011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5225" y="-128959" z="-3144" h="5302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="4694" y="-128163" z="-3128" h="13872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5442" y="-128259" z="-3040" h="57615" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6149" y="-129026" z="-3024" h="42327" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4671" y="-128375" z="-3168" h="49747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4269" y="-128592" z="-3216" h="38658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="3898" y="-128484" z="-3200" h="3139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="5355" y="-128279" z="-3056" h="32106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="4284" y="-127820" z="-3144" h="64115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="6200" y="-128212" z="-2968" h="54385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5604" y="-127586" z="-2992" h="17506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="4516" y="-127431" z="-3104" h="29688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5693" y="-127849" z="-2992" h="56986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="5390" y="-127971" z="-3024" h="47422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7783" y="-128866" z="-2824" h="50259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7507" y="-127858" z="-2704" h="37476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7406" y="-128551" z="-2856" h="12267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8149" y="-128727" z="-2712" h="38260" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="8189" y="-128665" z="-2712" h="47090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="7010" y="-128551" z="-2936" h="24100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="7851" y="-127999" z="-2680" h="28022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6678" y="-129001" z="-2976" h="26128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6859" y="-129149" z="-2976" h="49871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="8118" y="-128368" z="-2680" h="15630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="8123" y="-127343" z="-2608" h="41107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="7891" y="-128506" z="-2736" h="46973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6371" y="-128395" z="-2976" h="47209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="7171" y="-127004" z="-2624" h="44696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6371" y="-127735" z="-2920" h="28885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="6834" y="-127072" z="-2672" h="1576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="7423" y="-127221" z="-2640" h="30637" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8369" y="-132561" z="-2656" h="56119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9264" y="-131445" z="-2296" h="33144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="9272" y="-130086" z="-2400" h="11053" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="8712" y="-129231" z="-2624" h="11463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8319" y="-130757" z="-2752" h="44705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="9207" y="-129789" z="-2472" h="1544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="8802" y="-129386" z="-2600" h="13134" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9605" y="-129756" z="-2320" h="54238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="9595" y="-129264" z="-2352" h="30820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="8789" y="-129896" z="-2600" h="21565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="9255" y="-129237" z="-2472" h="33504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10098" y="-130791" z="-2088" h="50042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9201" y="-129453" z="-2488" h="44509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9137" y="-129331" z="-2488" h="33238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9367" y="-130574" z="-2336" h="23696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10069" y="-130428" z="-2128" h="44691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8356" y="-130509" z="-2736" h="46663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9446" y="-129898" z="-2360" h="51001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9280" y="-129512" z="-2464" h="45698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8031" y="-129516" z="-2832" h="49514" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="8553" y="-130790" z="-2616" h="3908" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9685" y="-129576" z="-2304" h="48540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9137" y="-129589" z="-2504" h="45043" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9194" y="-130375" z="-2408" h="51280" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9660" y="-129948" z="-2288" h="3299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9967" y="-129829" z="-2200" h="23329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="8554" y="-130168" z="-2664" h="15669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="8621" y="-129747" z="-2664" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9082" y="-129084" z="-2512" h="22531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10183" y="-128800" z="-2104" h="49649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="10196" y="-129016" z="-2120" h="40757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10035" y="-127433" z="-2024" h="19133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9922" y="-127355" z="-2056" h="16731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="8032" y="-128666" z="-2736" h="26219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="9780" y="-128233" z="-2160" h="19382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="9386" y="-128282" z="-2320" h="57328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9512" y="-129079" z="-2376" h="32189" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="9559" y="-128419" z="-2280" h="25713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9682" y="-128606" z="-2256" h="44961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8681" y="-128657" z="-2608" h="419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9725" y="-128620" z="-2256" h="50181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8983" y="-128890" z="-2512" h="10372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="8085" y="-127955" z="-2664" h="15706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="9131" y="-127788" z="-2376" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9304" y="-128727" z="-2400" h="35641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9544" y="-128011" z="-2232" h="49528" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="8414" y="-128026" z="-2616" h="48279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="9596" y="-129070" z="-2344" h="22245" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="11981" y="-132405" z="-1488" h="40060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="10260" y="-132701" z="-1728" h="31438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11490" y="-131766" z="-1608" h="58225" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="11244" y="-132888" z="-1528" h="42041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="10946" y="-133290" z="-1544" h="14015" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="10664" y="-132471" z="-1720" h="35160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="11153" y="-132808" z="-1568" h="8849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11974" y="-133329" z="-1288" h="17936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10890" y="-132779" z="-1640" h="61058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11085" y="-132516" z="-1664" h="8157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="11828" y="-131863" z="-1520" h="36215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="11907" y="-132411" z="-1504" h="5682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11993" y="-132498" z="-1456" h="64446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12051" y="-131575" z="-1456" h="53955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="10783" y="-132208" z="-1768" h="19836" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11191" y="-132122" z="-1672" h="4714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="12186" y="-129017" z="-1448" h="419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10533" y="-129956" z="-2000" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11295" y="-129742" z="-1712" h="43340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11185" y="-130362" z="-1720" h="44791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11185" y="-130129" z="-1736" h="22246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11414" y="-129391" z="-1648" h="48757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11912" y="-129023" z="-1496" h="49889" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="10658" y="-129861" z="-1944" h="20393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="12119" y="-129799" z="-1432" h="51334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10967" y="-128995" z="-1840" h="16904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11676" y="-130344" z="-1536" h="53571" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="10760" y="-130154" z="-1904" h="49892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11016" y="-130301" z="-1784" h="63673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11610" y="-130182" z="-1568" h="864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11317" y="-130000" z="-1696" h="37826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11169" y="-129726" z="-1760" h="39964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11476" y="-130198" z="-1616" h="19029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11568" y="-129372" z="-1624" h="43967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11519" y="-130154" z="-1608" h="63478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11242" y="-129550" z="-1736" h="37740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="12098" y="-130115" z="-1432" h="25099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="12110" y="-129635" z="-1448" h="46491" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10486" y="-128942" z="-2024" h="29785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="12227" y="-127780" z="-1528" h="15058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20479" /> <!-- Kasha Bear -->
+		<point x="10188" y="-128431" z="-2056" h="18749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11646" y="-128973" z="-1600" h="40038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11359" y="-128197" z="-1696" h="13302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11854" y="-127977" z="-1584" h="53820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11447" y="-127454" z="-1640" h="42283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12036" y="-127884" z="-1544" h="37325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11594" y="-128311" z="-1632" h="22996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11085" y="-128461" z="-1784" h="33882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="12243" y="-128627" z="-1504" h="64057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="10971" y="-128473" z="-1816" h="17105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11384" y="-128448" z="-1696" h="39852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11024" y="-128990" z="-1824" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13212" y="-133075" z="-1184" h="26380" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="12396" y="-132470" z="-1392" h="57036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="13633" y="-131834" z="-1264" h="51172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="13967" y="-131557" z="-1240" h="46459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="12479" y="-132525" z="-1368" h="60797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="13741" y="-131550" z="-1264" h="58835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13168" y="-131960" z="-1344" h="52479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14286" y="-129915" z="-1168" h="43116" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="12469" y="-129795" z="-1336" h="54568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="13231" y="-130230" z="-1224" h="47080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="13491" y="-130743" z="-1240" h="49500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13445" y="-129114" z="-1320" h="28142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12857" y="-129699" z="-1280" h="47144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12561" y="-129849" z="-1312" h="38676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13031" y="-129618" z="-1280" h="63486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="12414" y="-129738" z="-1368" h="11205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="12930" y="-128428" z="-1448" h="14964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14023" y="-127457" z="-1392" h="51479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13619" y="-126855" z="-1264" h="41325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13354" y="-128472" z="-1416" h="43080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="14442" y="-128522" z="-1384" h="63440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13454" y="-127478" z="-1352" h="39364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12210" y="-127804" z="-1528" h="21607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12848" y="-128978" z="-1368" h="9807" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13796" y="-128875" z="-1344" h="17034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14015" y="-127701" z="-1424" h="61705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="12253" y="-128508" z="-1520" h="13302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14532" y="-129227" z="-1256" h="34054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14177" y="-129198" z="-1264" h="41378" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14736" y="-130227" z="-1104" h="24569" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14691" y="-129995" z="-1128" h="33877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="14677" y="-129981" z="-1128" h="1787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="14795" y="-129897" z="-1144" h="871" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="14682" y="-130162" z="-1120" h="65207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14336" y="-128775" z="-1336" h="55939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14471" y="-129023" z="-1304" h="31608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="14528" y="-128100" z="-1432" h="51722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="14485" y="-128612" z="-1384" h="45779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11490" y="-134945" z="-1240" h="56736" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="11963" y="-133496" z="-1264" h="14084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="10324" y="-133814" z="-1528" h="65307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="10694" y="-134888" z="-1344" h="61946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10851" y="-134090" z="-1472" h="28142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11132" y="-133732" z="-1448" h="40401" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="10325" y="-134546" z="-1416" h="3294" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11201" y="-134210" z="-1384" h="6174" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11079" y="-134709" z="-1328" h="17526" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="10797" y="-134319" z="-1448" h="33089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="11173" y="-133883" z="-1424" h="49442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20428" /> <!-- Evil Eye Patrol -->
+		<point x="12980" y="-133266" z="-1168" h="2418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20479" /> <!-- Kasha Bear -->
+		<point x="16471" y="-134908" z="-1208" h="62790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20364" /> <!-- Maraku Werewolf Chieftain -->
+		<point x="11576" y="-126606" z="-1560" h="46453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11971" y="-124820" z="-1424" h="56477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11047" y="-125929" z="-1760" h="16022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="10503" y="-125376" z="-1840" h="60897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11879" y="-125921" z="-1544" h="58800" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11567" y="-125821" z="-1624" h="59455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="10806" y="-125597" z="-1800" h="33140" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="12066" y="-125739" z="-1472" h="8855" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11586" y="-126222" z="-1600" h="29328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11670" y="-125793" z="-1568" h="60445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="11582" y="-125608" z="-1584" h="22447" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="11709" y="-125548" z="-1568" h="42929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12270" y="-125826" z="-1440" h="43265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13300" y="-126759" z="-1280" h="61131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12657" y="-126635" z="-1400" h="55420" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="13218" y="-125426" z="-1200" h="44959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="13869" y="-125537" z="-1168" h="7670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="12836" y="-126385" z="-1328" h="30010" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="13039" y="-125759" z="-1280" h="40565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="13468" y="-126240" z="-1216" h="41453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="13357" y="-126489" z="-1240" h="58425" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="13415" y="-126098" z="-1224" h="13882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="12203" y="-126347" z="-1456" h="1117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="14732" y="-125729" z="-1176" h="20253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="14890" y="-125669" z="-1176" h="39109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20478" /> <!-- Kasha Blade Spider -->
+		<point x="14493" y="-125118" z="-1160" h="62707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20474" /> <!-- Kasha Spider -->
+		<point x="14625" y="-125928" z="-1176" h="20771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31036" /> <!-- Centurion -->
+		<point x="-2935" y="-134439" z="-2808" h="26005" />
+	</spawn>
+</list>

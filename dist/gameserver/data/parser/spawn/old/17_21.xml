@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="-68632" y="122850" z="-3552" h="45323" />
+		<npc id="30940" /><!--Амора-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="-74495" y="121177" z="-3672" h="42496" />
+		<npc id="30941" /><!--Гудз-->
+	</spawn>
+	<spawn name="gludio15_npc1721_004" count="1" respawn="60">
+		<point x="-85700" y="106591" z="-3555" h="16384"/>
+		<npc id="30597"/><!--Пиотур-->
+	</spawn>
+	<spawn name="gludio15_npc1721_002" count="1" respawn="60">
+		<point x="-85002" y="105749" z="-3593" h="20480"/>
+		<npc id="30648"/><!--Сантьяго-->
+	</spawn>
+	<spawn name="gludio33_npc1721_005" count="1" respawn="60">
+		<point x="-69734" y="116264" z="-3536" h="16384"/>
+		<npc id="30591"/><!--Торуку-->
+	</spawn>
+</list>

@@ -1,0 +1,2684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="146903" y="-112665" z="-2200" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="147552" y="-112375" z="-2184" h="56544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="146451" y="-112568" z="-2352" h="19841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="146846" y="-112632" z="-2240" h="60045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="147413" y="-112591" z="-2152" h="12100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="146930" y="-112196" z="-2296" h="60370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="147267" y="-112761" z="-2144" h="62181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="147625" y="-112766" z="-2136" h="63273" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="147625" y="-112565" z="-2144" h="57394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="147135" y="-112313" z="-2232" h="64278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="149181" y="-111094" z="-2224" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="148587" y="-111365" z="-2144" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="148889" y="-111306" z="-2168" h="20159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="148543" y="-111617" z="-2144" h="2565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="148485" y="-111345" z="-2144" h="1154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="148809" y="-111125" z="-2160" h="51563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="148641" y="-111520" z="-2144" h="20808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="148602" y="-111422" z="-2144" h="19254" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="151762" y="-115853" z="-1544" h="2498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="151644" y="-115773" z="-1536" h="51878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="151676" y="-115541" z="-1544" h="27214" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="151687" y="-115854" z="-1544" h="1546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="151594" y="-115435" z="-1552" h="4141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="151579" y="-115408" z="-1552" h="57893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="151591" y="-115879" z="-1536" h="1347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="151225" y="-115930" z="-1504" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="151225" y="-115850" z="-1504" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="150771" y="-115359" z="-1600" h="65520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="150837" y="-115360" z="-1584" h="32750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="151705" y="-115852" z="-1544" h="31287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="151572" y="-115195" z="-1560" h="58384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="151581" y="-116027" z="-1536" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="150593" y="-115360" z="-1608" h="64079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="149828" y="-115815" z="-1368" h="11094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="150449" y="-115692" z="-1456" h="8199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="149954" y="-116030" z="-1352" h="14395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="150391" y="-115821" z="-1424" h="57762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="149955" y="-115257" z="-1600" h="26290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="150399" y="-115934" z="-1400" h="61368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="150104" y="-115509" z="-1496" h="11588" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="150257" y="-115701" z="-1440" h="1341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="149833" y="-115614" z="-1432" h="798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="150301" y="-115370" z="-1592" h="25158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="150285" y="-115513" z="-1504" h="39919" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152618" y="-115420" z="-1560" h="34322" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="151789" y="-116016" z="-1544" h="20559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="151973" y="-115187" z="-1560" h="17863" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152666" y="-115561" z="-1560" h="1679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152666" y="-115400" z="-1560" h="8302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="151759" y="-115583" z="-1552" h="61985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152524" y="-115665" z="-1560" h="15830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152153" y="-115785" z="-1560" h="10854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="151997" y="-115168" z="-1560" h="22555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152469" y="-115000" z="-1576" h="1245" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="152558" y="-115537" z="-1560" h="18128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="151940" y="-115483" z="-1552" h="57382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152142" y="-114994" z="-1568" h="4047" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152826" y="-115206" z="-1568" h="24087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153038" y="-114017" z="-1632" h="8958" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153140" y="-113686" z="-1640" h="32271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152919" y="-114381" z="-1616" h="55818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153003" y="-113823" z="-1640" h="56974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152699" y="-114358" z="-1616" h="1547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152855" y="-114187" z="-1624" h="17308" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152542" y="-114172" z="-1608" h="51317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152577" y="-113652" z="-1624" h="4838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="152651" y="-114336" z="-1616" h="22523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152468" y="-113991" z="-1608" h="50364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152643" y="-114191" z="-1616" h="7017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="152760" y="-114246" z="-1616" h="58730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155159" y="-114932" z="-1560" h="17971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155312" y="-114816" z="-1576" h="59072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155246" y="-115123" z="-1576" h="23246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155353" y="-114969" z="-1576" h="36734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155388" y="-115044" z="-1576" h="45057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155409" y="-114567" z="-1592" h="19363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155323" y="-115105" z="-1584" h="34238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154311" y="-115818" z="-1480" h="7160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154344" y="-115354" z="-1496" h="30115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155679" y="-116956" z="-1536" h="52907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154061" y="-116841" z="-1512" h="55627" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154395" y="-116884" z="-1496" h="60247" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153881" y="-116988" z="-1520" h="36545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153802" y="-116888" z="-1528" h="16452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154479" y="-116741" z="-1496" h="43057" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155446" y="-116773" z="-1520" h="47812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154751" y="-115270" z="-1512" h="21686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154387" y="-115620" z="-1480" h="27782" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155098" y="-116766" z="-1496" h="59178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154174" y="-115077" z="-1528" h="7995" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154123" y="-115346" z="-1504" h="26952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154493" y="-115659" z="-1480" h="57326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153879" y="-115573" z="-1512" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154531" y="-116768" z="-1488" h="56158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154100" y="-116924" z="-1512" h="14864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154198" y="-116798" z="-1504" h="40901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154688" y="-116894" z="-1488" h="26415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153894" y="-116871" z="-1520" h="8442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154297" y="-116800" z="-1496" h="7424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155047" y="-116864" z="-1496" h="40149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154977" y="-116935" z="-1488" h="65484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154921" y="-116820" z="-1488" h="43622" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155286" y="-116886" z="-1512" h="55623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155322" y="-116883" z="-1512" h="28688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154820" y="-116929" z="-1488" h="48747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155053" y="-116816" z="-1496" h="48167" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155409" y="-116841" z="-1520" h="47750" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155048" y="-116936" z="-1496" h="63973" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="154488" y="-115924" z="-1488" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="154488" y="-115844" z="-1488" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154508" y="-115565" z="-1488" h="19101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154453" y="-115614" z="-1480" h="41723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154221" y="-115958" z="-1488" h="26218" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153878" y="-115157" z="-1528" h="55608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154111" y="-116933" z="-1512" h="29873" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155514" y="-114771" z="-1592" h="45159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155369" y="-114220" z="-1624" h="37588" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="154323" y="-114396" z="-1560" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="154323" y="-114316" z="-1560" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153757" y="-114492" z="-1560" h="62346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153553" y="-113865" z="-1632" h="45356" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153635" y="-114240" z="-1600" h="21385" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153559" y="-114539" z="-1576" h="16913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153524" y="-113761" z="-1640" h="41535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153479" y="-114016" z="-1624" h="24649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153619" y="-114042" z="-1616" h="40697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153508" y="-113693" z="-1640" h="15450" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153521" y="-114518" z="-1576" h="39742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153555" y="-113815" z="-1632" h="26124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155039" y="-114116" z="-1624" h="12160" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154820" y="-113931" z="-1616" h="47190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155470" y="-113339" z="-1704" h="49150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="155235" y="-114054" z="-1632" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="155235" y="-113974" z="-1640" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153734" y="-114085" z="-1600" h="52895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="154323" y="-114006" z="-1600" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="154323" y="-113926" z="-1600" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155433" y="-113614" z="-1688" h="62131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154836" y="-113656" z="-1616" h="29864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154911" y="-114103" z="-1616" h="22933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154703" y="-113984" z="-1608" h="16847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155175" y="-113311" z="-1664" h="33602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154638" y="-113324" z="-1608" h="29955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154617" y="-113516" z="-1608" h="6132" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154983" y="-113707" z="-1632" h="30678" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155132" y="-113344" z="-1648" h="29154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153477" y="-114028" z="-1624" h="14022" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156422" y="-114952" z="-1768" h="3476" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156210" y="-114861" z="-1720" h="19666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156281" y="-114995" z="-1720" h="62087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156289" y="-114900" z="-1736" h="44001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156344" y="-114998" z="-1744" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156327" y="-114992" z="-1744" h="37010" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156167" y="-115156" z="-1720" h="11176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155916" y="-114709" z="-1672" h="47357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156402" y="-115124" z="-1776" h="8856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156419" y="-115152" z="-1776" h="39111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155923" y="-114801" z="-1672" h="22942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156358" y="-115167" z="-1768" h="1612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156018" y="-116779" z="-1568" h="62479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156514" y="-116820" z="-1680" h="48084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156544" y="-116799" z="-1696" h="26342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156289" y="-116843" z="-1624" h="30834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156449" y="-116796" z="-1672" h="52785" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156529" y="-116891" z="-1664" h="50798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156121" y="-116791" z="-1608" h="44387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156657" y="-116869" z="-1696" h="55900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156580" y="-116744" z="-1712" h="63504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156652" y="-116960" z="-1672" h="4376" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156436" y="-116942" z="-1640" h="61405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155982" y="-116888" z="-1552" h="29390" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="155652" y="-116375" z="-1576" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="155652" y="-116295" z="-1576" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156612" y="-114273" z="-1728" h="10900" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156067" y="-113696" z="-1728" h="18026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156360" y="-113455" z="-1752" h="41395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155988" y="-114258" z="-1680" h="15094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155987" y="-113799" z="-1704" h="16036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156220" y="-113561" z="-1736" h="46839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="155683" y="-113838" z="-1688" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="155683" y="-113758" z="-1696" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156124" y="-113616" z="-1728" h="1808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156148" y="-113239" z="-1752" h="155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156136" y="-113672" z="-1728" h="56836" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155997" y="-113496" z="-1728" h="22980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155833" y="-113281" z="-1728" h="19393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156174" y="-113653" z="-1736" h="51107" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155787" y="-113664" z="-1720" h="29791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155723" y="-113895" z="-1688" h="25546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156728" y="-114544" z="-1752" h="14207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156371" y="-114748" z="-1736" h="15738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155578" y="-113581" z="-1704" h="8773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156983" y="-114391" z="-1792" h="46035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153254" y="-109230" z="-2776" h="42962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153637" y="-109289" z="-2736" h="40544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153274" y="-109737" z="-2696" h="14287" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153367" y="-109340" z="-2768" h="41626" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154081" y="-108950" z="-2712" h="59178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154172" y="-109522" z="-2696" h="18316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153624" y="-109559" z="-2720" h="55169" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153830" y="-109343" z="-2728" h="2777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154839" y="-108566" z="-2664" h="34243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154657" y="-110435" z="-2680" h="14345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155335" y="-110516" z="-2632" h="17929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155150" y="-110534" z="-2640" h="10177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155297" y="-110476" z="-2632" h="13082" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154799" y="-109895" z="-2656" h="63421" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155135" y="-110578" z="-2648" h="3651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155077" y="-110559" z="-2648" h="23283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155205" y="-109898" z="-2624" h="6977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155143" y="-110506" z="-2640" h="14979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154445" y="-110526" z="-2688" h="27336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154945" y="-110508" z="-2664" h="24371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155302" y="-109827" z="-2616" h="31175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155190" y="-108742" z="-2640" h="48997" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155060" y="-108795" z="-2648" h="29173" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155038" y="-108636" z="-2640" h="34825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155310" y="-109229" z="-2656" h="47443" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155432" y="-109248" z="-2656" h="54529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155109" y="-108582" z="-2640" h="1791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155203" y="-108594" z="-2632" h="33674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155307" y="-109143" z="-2656" h="417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155305" y="-109026" z="-2648" h="34402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154829" y="-109068" z="-2672" h="2574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="155567" y="-109543" z="-2640" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="155567" y="-109463" z="-2640" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154897" y="-109397" z="-2664" h="64644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156262" y="-109267" z="-2656" h="40675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="155798" y="-109673" z="-2640" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155673" y="-109033" z="-2640" h="21901" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="155798" y="-109593" z="-2640" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156499" y="-109121" z="-2656" h="59727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155704" y="-109063" z="-2648" h="37885" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155581" y="-109036" z="-2640" h="51040" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155716" y="-109120" z="-2648" h="61058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155551" y="-109112" z="-2648" h="56364" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156079" y="-108830" z="-2632" h="9579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155604" y="-108942" z="-2640" h="26209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156280" y="-109210" z="-2656" h="792" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155596" y="-110507" z="-2624" h="17776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155822" y="-110535" z="-2616" h="10155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155713" y="-110520" z="-2616" h="26845" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155749" y="-110523" z="-2616" h="12787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156209" y="-110474" z="-2616" h="7987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156446" y="-110554" z="-2608" h="11267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155755" y="-110464" z="-2624" h="14642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156413" y="-110446" z="-2632" h="13828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155821" y="-110526" z="-2616" h="11521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155502" y="-110537" z="-2632" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156054" y="-110548" z="-2616" h="8191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156187" y="-110567" z="-2616" h="13699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155536" y="-108773" z="-2632" h="51867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156455" y="-109448" z="-2664" h="64905" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155986" y="-114142" z="-1688" h="6917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153355" y="-107293" z="-2784" h="11566" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153485" y="-107247" z="-2776" h="15906" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153468" y="-106999" z="-2776" h="59290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153507" y="-107268" z="-2776" h="30582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153402" y="-108572" z="-2784" h="45223" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153585" y="-106885" z="-2768" h="29981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153519" y="-108545" z="-2784" h="54092" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153326" y="-108565" z="-2792" h="52360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153473" y="-108532" z="-2784" h="9346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153497" y="-108648" z="-2784" h="62719" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="153336" y="-108102" z="-2776" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="153336" y="-108022" z="-2776" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153891" y="-106725" z="-2712" h="59197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154192" y="-107422" z="-2696" h="48453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153975" y="-106892" z="-2728" h="62949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154175" y="-106979" z="-2696" h="3757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153726" y="-107529" z="-2768" h="59494" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153706" y="-108558" z="-2768" h="35072" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154017" y="-108551" z="-2736" h="42352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154001" y="-108544" z="-2736" h="26698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153424" y="-107257" z="-2784" h="30565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154155" y="-108579" z="-2712" h="39534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153689" y="-108512" z="-2768" h="38540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153928" y="-108477" z="-2752" h="11703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153783" y="-108610" z="-2760" h="52877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="154146" y="-108344" z="-2712" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="154146" y="-108264" z="-2712" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156483" y="-107848" z="-2624" h="8608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="157755" y="-106618" z="-2696" h="11055" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156650" y="-108208" z="-2632" h="64019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="157743" y="-108097" z="-2712" h="8570" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="157726" y="-107766" z="-2720" h="59274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156689" y="-108580" z="-2640" h="52339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156979" y="-108477" z="-2648" h="10155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156462" y="-108549" z="-2632" h="64760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156901" y="-108416" z="-2640" h="42368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="157834" y="-107105" z="-2704" h="42398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156307" y="-108061" z="-2624" h="15856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156603" y="-108226" z="-2632" h="1541" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156364" y="-108149" z="-2624" h="53458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="157781" y="-106854" z="-2688" h="24544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156727" y="-107032" z="-2656" h="48745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156680" y="-107003" z="-2664" h="13233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156971" y="-107315" z="-2648" h="37605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156465" y="-107225" z="-2640" h="35877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="157738" y="-106764" z="-2688" h="61849" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156612" y="-106922" z="-2664" h="46796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156234" y="-106895" z="-2656" h="61321" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156332" y="-107142" z="-2632" h="3757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156193" y="-106843" z="-2672" h="5208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156260" y="-106707" z="-2696" h="35661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="157860" y="-108366" z="-2688" h="582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="156556" y="-106782" z="-2672" h="39709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="157748" y="-107301" z="-2704" h="62868" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156473" y="-107357" z="-2632" h="9544" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="157769" y="-107300" z="-2704" h="1612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="157778" y="-106958" z="-2688" h="60259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="157757" y="-108371" z="-2680" h="58880" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156778" y="-107621" z="-2632" h="26355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="156219" y="-108608" z="-2624" h="20909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="156707" y="-108518" z="-2640" h="10508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="156207" y="-108486" z="-2624" h="22883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="156908" y="-107609" z="-2640" h="19498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="156893" y="-107558" z="-2640" h="52267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153210" y="-106542" z="-2808" h="24396" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153844" y="-106420" z="-2720" h="39459" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153615" y="-105516" z="-2752" h="17034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153827" y="-105883" z="-2728" h="17078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153552" y="-104834" z="-2808" h="47159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154431" y="-104868" z="-2744" h="17543" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155315" y="-104857" z="-2744" h="35918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153664" y="-105271" z="-2760" h="65362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154755" y="-104439" z="-2776" h="30254" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153859" y="-106367" z="-2704" h="2691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154622" y="-104534" z="-2784" h="36246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153535" y="-105983" z="-2760" h="51512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155157" y="-104707" z="-2744" h="5587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154207" y="-106504" z="-2680" h="43942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="154036" y="-106118" z="-2696" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="154978" y="-104521" z="-2760" h="13569" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="155366" y="-104902" z="-2744" h="5911" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="154581" y="-104858" z="-2736" h="39921" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153509" y="-105984" z="-2760" h="26298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="155090" y="-105040" z="-2744" h="49852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="157544" y="-106551" z="-2680" h="7798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="157388" y="-106364" z="-2696" h="37115" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="157801" y="-106259" z="-2704" h="63193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="157778" y="-106302" z="-2704" h="64196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="157761" y="-106745" z="-2688" h="62137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="157715" y="-106520" z="-2696" h="53146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="157786" y="-106028" z="-2712" h="64896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="157706" y="-106481" z="-2696" h="9325" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="157721" y="-106572" z="-2696" h="65185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="157715" y="-106391" z="-2696" h="61543" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="157945" y="-108042" z="-2720" h="39859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="157975" y="-107687" z="-2744" h="33781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="157999" y="-108480" z="-2680" h="46717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="158148" y="-108447" z="-2688" h="14102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="158101" y="-107970" z="-2736" h="56676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="157949" y="-107953" z="-2728" h="36586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="157939" y="-108151" z="-2720" h="39202" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="157925" y="-107288" z="-2712" h="46507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="158058" y="-107621" z="-2736" h="29941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="157773" y="-108197" z="-2696" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="157760" y="-107450" z="-2712" h="64760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="158045" y="-106704" z="-2704" h="60805" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="157852" y="-106890" z="-2696" h="53761" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="157853" y="-107150" z="-2712" h="50303" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="158132" y="-106943" z="-2712" h="56635" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="157697" y="-107700" z="-2720" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="157697" y="-107620" z="-2720" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153838" y="-105718" z="-2736" h="58397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153368" y="-104763" z="-2832" h="56749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152966" y="-104765" z="-2864" h="54347" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153582" y="-104824" z="-2824" h="13343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152958" y="-104615" z="-2856" h="38893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153649" y="-104664" z="-2840" h="12271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="153117" y="-104640" z="-2864" h="19772" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153209" y="-104594" z="-2864" h="34822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152817" y="-104679" z="-2848" h="49722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="152925" y="-105348" z="-2856" h="17865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152823" y="-105736" z="-2856" h="11228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="152439" y="-105689" z="-2880" h="28153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153038" y="-105845" z="-2832" h="53303" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152798" y="-106304" z="-2848" h="12506" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152653" y="-105825" z="-2864" h="3551" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152721" y="-106562" z="-2832" h="32489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152259" y="-106021" z="-2888" h="51643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="153330" y="-105927" z="-2800" h="55369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152453" y="-106433" z="-2864" h="7458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152595" y="-106069" z="-2864" h="54616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="153094" y="-106505" z="-2808" h="16676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153379" y="-106360" z="-2784" h="47397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="153223" y="-104881" z="-2832" h="60045" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="153280" y="-104914" z="-2832" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="153069" y="-105895" z="-2840" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="153069" y="-105815" z="-2832" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="151947" y="-104780" z="-2824" h="1441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="152139" y="-104950" z="-2848" h="49288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152342" y="-104690" z="-2800" h="20666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152368" y="-105069" z="-2856" h="26538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="151753" y="-104400" z="-2832" h="45882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152459" y="-105129" z="-2864" h="26538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="151842" y="-104568" z="-2832" h="37182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152415" y="-104254" z="-2824" h="61677" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="151898" y="-105200" z="-2864" h="7013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152644" y="-104757" z="-2840" h="20751" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152647" y="-104372" z="-2840" h="32194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="151853" y="-104491" z="-2832" h="39190" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152947" y="-106050" z="-2848" h="59403" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154042" y="-106381" z="-2696" h="58366" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="151804" y="-103391" z="-2752" h="20672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="152191" y="-103335" z="-2808" h="62725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="151950" y="-103289" z="-2776" h="5596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152466" y="-103673" z="-2832" h="29520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="152066" y="-104126" z="-2832" h="46164" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="152384" y="-103667" z="-2824" h="756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="151766" y="-103261" z="-2744" h="19484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152076" y="-103367" z="-2808" h="8023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="152576" y="-103695" z="-2840" h="15344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="151670" y="-103640" z="-2768" h="55445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="152216" y="-104086" z="-2840" h="14639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="151934" y="-104140" z="-2808" h="3952" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155198" y="-104449" z="-2744" h="49105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="154455" y="-104530" z="-2784" h="46485" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="155366" y="-104397" z="-2752" h="63249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="153328" y="-106381" z="-2800" h="48594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="155182" y="-114398" z="-1592" h="11669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="149325" y="-108371" z="-2448" h="19039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="149268" y="-108495" z="-2448" h="5492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="149133" y="-108534" z="-2464" h="13407" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="149114" y="-108376" z="-2456" h="17680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="149182" y="-108464" z="-2464" h="20757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="149197" y="-108823" z="-2512" h="62576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="149460" y="-108503" z="-2440" h="16094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="148885" y="-108473" z="-2512" h="16696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="149048" y="-108468" z="-2488" h="16784" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="144067" y="-111066" z="-3648" h="19423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143979" y="-110761" z="-3608" h="14838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144033" y="-110991" z="-3648" h="2356" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144412" y="-110671" z="-3584" h="6091" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144227" y="-111045" z="-3648" h="38118" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144238" y="-110098" z="-3512" h="25437" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144441" y="-110691" z="-3584" h="41256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143831" y="-110745" z="-3600" h="52047" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143761" y="-110682" z="-3584" h="42964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144319" y="-110616" z="-3592" h="34511" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="144503" y="-110671" z="-3584" h="45755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144272" y="-110688" z="-3592" h="42402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144447" y="-110211" z="-3520" h="2280" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145346" y="-109412" z="-3456" h="41277" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145300" y="-109156" z="-3432" h="23442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145433" y="-109242" z="-3432" h="63695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144958" y="-109488" z="-3496" h="18456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143380" y="-110614" z="-3568" h="31972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143839" y="-109898" z="-3488" h="13282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144117" y="-109191" z="-3504" h="40864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143810" y="-109625" z="-3504" h="53375" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="144552" y="-109437" z="-3496" h="11249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144291" y="-110077" z="-3504" h="31521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144173" y="-109625" z="-3504" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143673" y="-110040" z="-3488" h="14267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143745" y="-109155" z="-3504" h="29369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143706" y="-110050" z="-3488" h="53073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143629" y="-109408" z="-3520" h="13370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145335" y="-109686" z="-3480" h="26538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145038" y="-109946" z="-3512" h="51425" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145605" y="-109746" z="-3400" h="1512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="145444" y="-109478" z="-3456" h="6770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="145278" y="-109739" z="-3496" h="25754" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145333" y="-109595" z="-3480" h="40675" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="143460" y="-109697" z="-3528" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="143460" y="-109617" z="-3528" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="143970" y="-110390" z="-3536" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="143970" y="-110310" z="-3512" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144408" y="-109971" z="-3512" h="31920" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145339" y="-109476" z="-3472" h="21555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144809" y="-109346" z="-3480" h="30198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142880" y="-110960" z="-3512" h="11554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="142959" y="-111081" z="-3512" h="15398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="142690" y="-110638" z="-3568" h="64433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143086" y="-111137" z="-3512" h="58919" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142825" y="-110721" z="-3544" h="1540" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143390" y="-109559" z="-3528" h="1184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143492" y="-109860" z="-3496" h="4882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142568" y="-110703" z="-3584" h="44594" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="142944" y="-110664" z="-3552" h="36878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143453" y="-109684" z="-3528" h="1524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143368" y="-109613" z="-3528" h="46239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143311" y="-109425" z="-3528" h="29791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143494" y="-109455" z="-3528" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143413" y="-110064" z="-3512" h="18442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143462" y="-109583" z="-3528" h="42012" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142785" y="-109653" z="-3536" h="13983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143524" y="-109430" z="-3528" h="6151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143397" y="-109830" z="-3512" h="3484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143320" y="-109275" z="-3520" h="38532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="141757" y="-108351" z="-3568" h="63661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141526" y="-108244" z="-3568" h="42240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="141507" y="-108014" z="-3560" h="8081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="141719" y="-108594" z="-3576" h="21798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141574" y="-108465" z="-3576" h="35647" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141755" y="-106799" z="-3504" h="45945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="141693" y="-107176" z="-3520" h="36243" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141526" y="-106648" z="-3544" h="53981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="141313" y="-107434" z="-3560" h="25945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="141307" y="-106966" z="-3576" h="27126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="141214" y="-107706" z="-3592" h="42108" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="141700" y="-108143" z="-3544" h="42866" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="141714" y="-107549" z="-3512" h="44291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="141225" y="-106996" z="-3576" h="52676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141573" y="-107544" z="-3528" h="40387" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="141516" y="-107422" z="-3544" h="47986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141845" y="-107001" z="-3488" h="20745" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141959" y="-106695" z="-3488" h="20141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141711" y="-108360" z="-3568" h="17537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143485" y="-107533" z="-3432" h="3478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141455" y="-108051" z="-3568" h="56928" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143378" y="-107450" z="-3432" h="7142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="141882" y="-108279" z="-3552" h="4975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141865" y="-108010" z="-3528" h="50629" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143455" y="-107769" z="-3440" h="233" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143381" y="-108223" z="-3448" h="35324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="141926" y="-108112" z="-3536" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="141926" y="-108452" z="-3568" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="141926" y="-108032" z="-3528" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="141926" y="-108372" z="-3560" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145371" y="-106759" z="-3496" h="987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="144554" y="-106847" z="-3512" h="50765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145290" y="-107849" z="-3416" h="50961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="145037" y="-107903" z="-3448" h="63815" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145011" y="-107948" z="-3456" h="56548" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144842" y="-107270" z="-3488" h="3358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145304" y="-106314" z="-3592" h="36214" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="144740" y="-106862" z="-3528" h="21338" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143387" y="-107700" z="-3440" h="5018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143922" y="-108183" z="-3448" h="62606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143450" y="-107601" z="-3432" h="4133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143641" y="-108269" z="-3448" h="18080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143447" y="-108306" z="-3456" h="55896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145469" y="-106770" z="-3496" h="50595" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145483" y="-106309" z="-3592" h="4108" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145075" y="-107427" z="-3472" h="45309" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145490" y="-107572" z="-3408" h="2994" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="145388" y="-106383" z="-3584" h="48505" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144860" y="-106471" z="-3544" h="53990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143518" y="-107567" z="-3432" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143627" y="-107435" z="-3440" h="580" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144855" y="-106887" z="-3528" h="40374" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143795" y="-107607" z="-3440" h="60704" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145541" y="-107750" z="-3384" h="17020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144868" y="-107684" z="-3472" h="40210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="145651" y="-107294" z="-3400" h="48303" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145522" y="-107302" z="-3416" h="64081" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145451" y="-107530" z="-3408" h="61978" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="144650" y="-106537" z="-3536" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145666" y="-107632" z="-3384" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="140541" y="-108176" z="-3688" h="18122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="140898" y="-108482" z="-3624" h="8397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="140247" y="-107767" z="-3680" h="4641" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="140949" y="-108023" z="-3624" h="55648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="140279" y="-107927" z="-3696" h="51019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="140924" y="-108151" z="-3640" h="50765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="140821" y="-108475" z="-3624" h="49852" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="140792" y="-108593" z="-3624" h="1546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="140441" y="-108609" z="-3672" h="61121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="140140" y="-107949" z="-3696" h="58128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="140668" y="-107019" z="-3648" h="17766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="140647" y="-108171" z="-3664" h="34862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141041" y="-107354" z="-3616" h="10369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141161" y="-107833" z="-3600" h="26632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="140231" y="-107819" z="-3688" h="56567" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="140347" y="-107238" z="-3656" h="44276" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="140240" y="-106590" z="-3640" h="2076" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="140835" y="-106632" z="-3624" h="26576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="140161" y="-107226" z="-3664" h="47200" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="140022" y="-106874" z="-3680" h="33078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="140592" y="-106971" z="-3640" h="61117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="140059" y="-106871" z="-3680" h="3122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="140924" y="-107010" z="-3632" h="15344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="140195" y="-106718" z="-3656" h="58388" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="140427" y="-106805" z="-3648" h="8505" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="140959" y="-106739" z="-3608" h="46857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143067" y="-104313" z="-3592" h="18239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142062" y="-104326" z="-3640" h="16105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143027" y="-104384" z="-3600" h="15344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142541" y="-104338" z="-3608" h="16306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143011" y="-104437" z="-3600" h="7246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141653" y="-104292" z="-3680" h="24312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="142520" y="-104355" z="-3608" h="63903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141813" y="-104401" z="-3672" h="12265" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142304" y="-104410" z="-3616" h="5587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="142300" y="-104850" z="-3608" h="60029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143073" y="-105623" z="-3496" h="10266" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142711" y="-104811" z="-3584" h="19246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142787" y="-105488" z="-3512" h="14283" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143116" y="-104971" z="-3552" h="47619" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142892" y="-105200" z="-3544" h="31025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="142509" y="-105502" z="-3528" h="42955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143044" y="-105629" z="-3496" h="58171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142610" y="-105613" z="-3504" h="27201" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143116" y="-105617" z="-3496" h="25419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142848" y="-105111" z="-3544" h="46839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143184" y="-105247" z="-3528" h="20348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="141469" y="-105750" z="-3608" h="53078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="142013" y="-105255" z="-3576" h="13576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142271" y="-105494" z="-3544" h="35713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141774" y="-105208" z="-3608" h="61575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141478" y="-105764" z="-3608" h="50050" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="142154" y="-104953" z="-3616" h="23246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141657" y="-105464" z="-3608" h="15270" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="142141" y="-105009" z="-3592" h="13343" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142153" y="-105079" z="-3592" h="44697" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142148" y="-105299" z="-3568" h="56103" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141919" y="-105785" z="-3560" h="10142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="142263" y="-105118" z="-3576" h="6036" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="141160" y="-105269" z="-3616" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="141193" y="-105211" z="-3624" h="43686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145352" y="-106394" z="-3584" h="37793" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145232" y="-106301" z="-3584" h="45778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143282" y="-104437" z="-3592" h="19605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143129" y="-104335" z="-3600" h="21182" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144894" y="-106289" z="-3568" h="13156" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143885" y="-105470" z="-3560" h="43371" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144737" y="-105868" z="-3616" h="57295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="144000" y="-105233" z="-3584" h="28603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="144013" y="-105864" z="-3544" h="61026" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="144519" y="-105097" z="-3656" h="54709" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="144695" y="-105700" z="-3640" h="11607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144352" y="-105406" z="-3616" h="2180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144445" y="-105742" z="-3608" h="18714" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="144145" y="-105328" z="-3600" h="31463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144245" y="-105722" z="-3584" h="23268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144623" y="-105856" z="-3624" h="36985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="144701" y="-105755" z="-3632" h="47636" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="144650" y="-106457" z="-3544" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143160" y="-103516" z="-3600" h="18523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143387" y="-103386" z="-3592" h="40342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="142125" y="-104239" z="-3624" h="2373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="142294" y="-104162" z="-3616" h="16731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142185" y="-103856" z="-3632" h="51708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="142120" y="-103956" z="-3632" h="38356" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143155" y="-104313" z="-3600" h="36362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141745" y="-103928" z="-3672" h="26856" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="141535" y="-104029" z="-3672" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="141523" y="-104261" z="-3680" h="58124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143127" y="-104245" z="-3600" h="31613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="142649" y="-104379" z="-3600" h="49892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="141706" y="-104023" z="-3672" h="7643" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="142601" y="-104123" z="-3592" h="64112" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143141" y="-104134" z="-3592" h="28679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22431" /> <!-- Morgos' Hot Springs Hunter -->
+		<point x="142217" y="-104432" z="-3616" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22430" /> <!-- Nepenthes -->
+		<point x="142217" y="-104352" z="-3616" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143431" y="-103169" z="-3592" h="5716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143561" y="-103438" z="-3592" h="27324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143925" y="-103159" z="-3560" h="21699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143833" y="-103524" z="-3584" h="46775" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="143821" y="-103333" z="-3576" h="59209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="143678" y="-103672" z="-3592" h="23368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143857" y="-103382" z="-3576" h="62176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143902" y="-103450" z="-3576" h="12331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="143666" y="-102758" z="-3520" h="3181" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="143784" y="-103489" z="-3584" h="33975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="145420" y="-103006" z="-3504" h="51810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="145384" y="-103149" z="-3504" h="56076" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22427" /> <!-- Tailed Hunter -->
+		<point x="145493" y="-103582" z="-3464" h="60278" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145464" y="-102908" z="-3504" h="64064" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145427" y="-103348" z="-3512" h="65357" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145298" y="-103341" z="-3512" h="35418" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22428" /> <!-- Tailed Berserker -->
+		<point x="145484" y="-103579" z="-3464" h="64497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145553" y="-102827" z="-3472" h="987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145482" y="-102847" z="-3496" h="64297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22429" /> <!-- Tailed Wizard -->
+		<point x="145557" y="-103070" z="-3464" h="63249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145457" y="-103086" z="-3496" h="65070" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="22426" /> <!-- Tailed Warrior -->
+		<point x="145410" y="-103619" z="-3464" h="65302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34319" /> <!-- Grill -->
+		<point x="149244" y="-112830" z="-2064" h="0" />
+	</spawn>
+</list>

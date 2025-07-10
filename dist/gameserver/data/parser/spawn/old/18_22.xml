@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<territory name="gludio35_1822_03">
+		<add x="-45264" y="131236" zmin="-3176" zmax="-2576"/>
+		<add x="-41200" y="131212" zmin="-3176" zmax="-2576"/>
+		<add x="-40616" y="132132" zmin="-3176" zmax="-2576"/>
+		<add x="-42260" y="133160" zmin="-3176" zmax="-2576"/>
+		<add x="-44572" y="133324" zmin="-3176" zmax="-2576"/>
+	</territory>
+	<territory name="gludio35_1822_04">
+		<add x="-44596" y="133444" zmin="-3080" zmax="-2480"/>
+		<add x="-42240" y="133300" zmin="-3080" zmax="-2480"/>
+		<add x="-41340" y="135164" zmin="-3080" zmax="-2480"/>
+		<add x="-43664" y="136864" zmin="-3080" zmax="-2480"/>
+		<add x="-44484" y="136800" zmin="-3080" zmax="-2480"/>
+	</territory>
+	<territory name="gludio35_1822_02">
+		<add x="-48648" y="136348" zmin="-2652" zmax="-2152"/>
+		<add x="-45644" y="134908" zmin="-2652" zmax="-2152"/>
+		<add x="-45868" y="138208" zmin="-2652" zmax="-2152"/>
+		<add x="-48080" y="138256" zmin="-2652" zmax="-2152"/>
+	</territory>
+	<spawn name="gludio34_1822_01" count="6" respawn="21">
+		<territory>
+			<add x="-65328" y="160116" zmin="-3920" zmax="-3320"/>
+			<add x="-63200" y="159928" zmin="-3920" zmax="-3320"/>
+			<add x="-62472" y="163448" zmin="-3920" zmax="-3320"/>
+			<add x="-65344" y="163448" zmin="-3920" zmax="-3320"/>
+		</territory>
+		<npc id="20310"/><!--Бурый Медведь-->
+	</spawn>
+	<territory name="gludio39_1822_01">
+		<add x="-35408" y="131492" zmin="-3468" zmax="-2668"/>
+		<add x="-33080" y="131404" zmin="-3468" zmax="-2668"/>
+		<add x="-33040" y="132048" zmin="-3468" zmax="-2668"/>
+		<add x="-36248" y="135296" zmin="-3468" zmax="-2668"/>
+		<add x="-37132" y="135012" zmin="-3468" zmax="-2668"/>
+		<add x="-36648" y="132368" zmin="-3468" zmax="-2668"/>
+	</territory>
+	<territory name="gludio39_1822_02">
+		<add x="-37264" y="135156" zmin="-3536" zmax="-2836"/>
+		<add x="-36252" y="135468" zmin="-3536" zmax="-2836"/>
+		<add x="-35552" y="136748" zmin="-3536" zmax="-2836"/>
+		<add x="-36636" y="138828" zmin="-3536" zmax="-2836"/>
+		<add x="-37908" y="137704" zmin="-3536" zmax="-2836"/>
+	</territory>
+	<territory name="gludio39_1822_05">
+		<add x="-36708" y="138852" zmin="-3640" zmax="-2840"/>
+		<add x="-34552" y="139456" zmin="-3640" zmax="-2840"/>
+		<add x="-34724" y="142524" zmin="-3640" zmax="-2840"/>
+		<add x="-37092" y="143216" zmin="-3640" zmax="-2840"/>
+		<add x="-37660" y="141280" zmin="-3640" zmax="-2840"/>
+	</territory>
+	<territory name="gludio39_1822_03">
+		<add x="-35392" y="135360" zmin="-3968" zmax="-3468"/>
+		<add x="-33044" y="133080" zmin="-3968" zmax="-3468"/>
+		<add x="-33076" y="136260" zmin="-3968" zmax="-3468"/>
+		<add x="-35108" y="136364" zmin="-3968" zmax="-3468"/>
+	</territory>
+	<territory name="gludio39_1822_04">
+		<add x="-35564" y="137000" zmin="-3604" zmax="-3204"/>
+		<add x="-32924" y="136932" zmin="-3604" zmax="-3204"/>
+		<add x="-33032" y="138336" zmin="-3604" zmax="-3204"/>
+		<add x="-34660" y="139348" zmin="-3604" zmax="-3204"/>
+		<add x="-36584" y="138812" zmin="-3604" zmax="-3204"/>
+	</territory>
+</list>

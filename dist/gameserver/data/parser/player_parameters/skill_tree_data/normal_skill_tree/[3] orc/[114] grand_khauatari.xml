@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="114"><!--Grand Khavatari-->
+		<skill id="1405" level="3" min_level="76" cost="6100000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8620;96093" count="1"/><!--Buff Expansion Book Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="1405" level="4" min_level="76" cost="6100000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8621;96094" count="1"/><!--Buff Expansion Book Lv. 4-->
+			</required_items>
+		</skill>
+		<skill id="17" level="35" min_level="76" cost="6100000"/><!--Force Burst-->
+		<skill id="210" level="46" min_level="76" cost="6100000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="48" min_level="76" cost="6100000"/><!--Light Armor Mastery-->
+		<skill id="141" level="5" min_level="76" cost="6100000"/><!--Weapon Mastery-->
+		<skill id="280" level="41" min_level="76" cost="6100000"/><!--Burning Fist-->
+		<skill id="45188" level="1" min_level="76"><!--Evolution Defense-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="54" level="50" min_level="76" cost="6100000"/><!--Force Blaster-->
+		<skill id="281" level="38" min_level="76" cost="6100000"/><!--Iron Fist-->
+		<skill id="430" level="1" min_level="76" cost="6100000"/><!--Master of Combat-->
+		<skill id="45126" level="4" min_level="76" cost="6100000"><!--Chant of Might-->
+			<required_items>
+				<item id="94135;95517" count="1"/><!--Master's Book: Might-->
+			</required_items>
+		</skill>
+		<skill id="45127" level="4" min_level="76" cost="6100000"><!--Chant of Shield-->
+			<required_items>
+				<item id="94136;95518" count="1"/><!--Master's Book: Shield-->
+			</required_items>
+		</skill>
+		<skill id="425" level="1" min_level="76" cost="6100000"><!--Hawk Nature-->
+			<required_items>
+				<item id="91295" count="1"/><!--Scroll: Hawk Nature-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="1" min_level="76" cost="6100000"><!--Detection-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="917" level="1" min_level="76" cost="6100000"><!--Final Secret-->
+			<required_items>
+				<item id="90080" count="1"/><!--Scroll: Final Secret Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="1837" level="1" min_level="76" cost="6100000"/><!--Mount Black Bear-->
+		<skill id="346" level="1" min_level="76" cost="6100000"/><!--Raging Force-->
+		<skill id="35" level="29" min_level="76" cost="6100000"/><!--Force Storm-->
+		<skill id="994" level="3" min_level="76" cost="6100000"/><!--Rush-->
+		<skill id="284" level="46" min_level="76" cost="6100000"/><!--Hurricane Assault-->
+		<skill id="95" level="28" min_level="76" cost="6100000"/><!--Cripple-->
+		<skill id="70" level="46" min_level="76" cost="6100000"/><!--Emergency Rescue-->
+		<skill id="17" level="36" min_level="77" cost="6100000"/><!--Force Burst-->
+		<skill id="210" level="47" min_level="77" cost="6100000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="49" min_level="77" cost="6100000"/><!--Light Armor Mastery-->
+		<skill id="280" level="42" min_level="77" cost="6100000"/><!--Burning Fist-->
+		<skill id="54" level="51" min_level="77" cost="6100000"/><!--Force Blaster-->
+		<skill id="281" level="39" min_level="77" cost="6100000"/><!--Iron Fist-->
+		<skill id="443" level="1" min_level="77" cost="6100000"><!--Force Barrier-->
+			<required_items>
+				<item id="90070" count="1"/><!--Scroll: Force Barrier-->
+			</required_items>
+		</skill>
+		<skill id="35" level="30" min_level="77" cost="6100000"/><!--Force Storm-->
+		<skill id="284" level="47" min_level="77" cost="6100000"/><!--Hurricane Assault-->
+		<skill id="70" level="47" min_level="77" cost="6100000"/><!--Emergency Rescue-->
+		<skill id="17" level="37" min_level="78" cost="14200000"/><!--Force Burst-->
+		<skill id="210" level="48" min_level="78" cost="14200000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="50" min_level="78" cost="14200000"/><!--Light Armor Mastery-->
+		<skill id="280" level="43" min_level="78" cost="14200000"/><!--Burning Fist-->
+		<skill id="54" level="52" min_level="78" cost="14200000"/><!--Force Blaster-->
+		<skill id="281" level="40" min_level="78" cost="14200000"/><!--Iron Fist-->
+		<skill id="346" level="2" min_level="78" cost="14200000"/><!--Raging Force-->
+		<skill id="35" level="31" min_level="78" cost="14200000"/><!--Force Storm-->
+		<skill id="284" level="48" min_level="78" cost="14200000"/><!--Hurricane Assault-->
+		<skill id="440" level="1" min_level="78" cost="14200000"/><!--Braveheart-->
+		<skill id="95" level="29" min_level="78" cost="14200000"/><!--Cripple-->
+		<skill id="70" level="48" min_level="78" cost="14200000"/><!--Emergency Rescue-->
+		<skill id="993" level="8" min_level="79" cost="14200000"/><!--Force Mastery-->
+		<skill id="280" level="44" min_level="79" cost="14200000"/><!--Burning Fist-->
+		<skill id="284" level="49" min_level="79" cost="14200000"/><!--Hurricane Assault-->
+		<skill id="70" level="49" min_level="79" cost="14200000"/><!--Emergency Rescue-->
+		<skill id="210" level="49" min_level="80" cost="14200000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="51" min_level="80" cost="14200000"/><!--Light Armor Mastery-->
+		<skill id="280" level="45" min_level="80" cost="14200000"/><!--Burning Fist-->
+		<skill id="54" level="53" min_level="80" cost="14200000"/><!--Force Blaster-->
+		<skill id="281" level="41" min_level="80" cost="14200000"/><!--Iron Fist-->
+		<skill id="430" level="2" min_level="80" cost="14200000"><!--Master of Combat-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45189" level="1" min_level="80"><!--Evolution Power-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="918" level="1" min_level="80" cost="14200000"><!--Maximum Force Focus-->
+			<required_items>
+				<item id="90072" count="1"/><!--Scroll: Maximum Force Focus-->
+			</required_items>
+		</skill>
+		<skill id="346" level="3" min_level="80" cost="14200000"/><!--Raging Force-->
+		<skill id="54102" level="1" min_level="80"><!--White Guardian Transformation-->
+			<required_items>
+				<item id="92401;95502" count="1"/><!--Spellbook: White Guardian-->
+			</required_items>
+		</skill>
+		<skill id="284" level="50" min_level="80" cost="14200000"/><!--Hurricane Assault-->
+		<skill id="95" level="30" min_level="80" cost="14200000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="50" min_level="80" cost="14200000"/><!--Emergency Rescue-->
+		<skill id="210" level="50" min_level="81" cost="160000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="52" min_level="81" cost="160000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="46" min_level="81" cost="160000000"/><!--Burning Fist-->
+		<skill id="54" level="54" min_level="81" cost="160000000"/><!--Force Blaster-->
+		<skill id="281" level="42" min_level="81" cost="160000000"/><!--Iron Fist-->
+		<skill id="1896" level="1" min_level="81" cost="160000000"><!--Full Knockdown-->
+			<required_items>
+				<item id="91201" count="1"/><!--Scroll: Full Knockdown-->
+			</required_items>
+		</skill>
+		<skill id="284" level="51" min_level="81" cost="160000000"/><!--Hurricane Assault-->
+		<skill id="95" level="31" min_level="81" cost="160000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="51" min_level="81" cost="160000000"/><!--Emergency Rescue-->
+		<skill id="210" level="51" min_level="82" cost="170000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="53" min_level="82" cost="170000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="47" min_level="82" cost="170000000"/><!--Burning Fist-->
+		<skill id="54" level="55" min_level="82" cost="170000000"/><!--Force Blaster-->
+		<skill id="281" level="43" min_level="82" cost="170000000"/><!--Iron Fist-->
+		<skill id="1896" level="2" min_level="82" cost="170000000"/><!--Full Knockdown-->
+		<skill id="346" level="4" min_level="82" cost="170000000"/><!--Raging Force-->
+		<skill id="284" level="52" min_level="82" cost="170000000"/><!--Hurricane Assault-->
+		<skill id="95" level="32" min_level="82" cost="170000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="52" min_level="82" cost="170000000"/><!--Emergency Rescue-->
+		<skill id="210" level="52" min_level="83" cost="240000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="54" min_level="83" cost="240000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="48" min_level="83" cost="240000000"/><!--Burning Fist-->
+		<skill id="54" level="56" min_level="83" cost="240000000"/><!--Force Blaster-->
+		<skill id="281" level="44" min_level="83" cost="240000000"/><!--Iron Fist-->
+		<skill id="1896" level="3" min_level="83" cost="240000000"/><!--Full Knockdown-->
+		<skill id="284" level="53" min_level="83" cost="240000000"/><!--Hurricane Assault-->
+		<skill id="95" level="33" min_level="83" cost="240000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="53" min_level="83" cost="240000000"/><!--Emergency Rescue-->
+		<skill id="210" level="53" min_level="84" cost="240000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="55" min_level="84" cost="240000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="49" min_level="84" cost="240000000"/><!--Burning Fist-->
+		<skill id="54" level="57" min_level="84" cost="240000000"/><!--Force Blaster-->
+		<skill id="281" level="45" min_level="84" cost="240000000"/><!--Iron Fist-->
+		<skill id="1896" level="4" min_level="84" cost="240000000"/><!--Full Knockdown-->
+		<skill id="346" level="5" min_level="84" cost="240000000"/><!--Raging Force-->
+		<skill id="284" level="54" min_level="84" cost="240000000"/><!--Hurricane Assault-->
+		<skill id="95" level="34" min_level="84" cost="240000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="54" min_level="84" cost="240000000"/><!--Emergency Rescue-->
+		<skill id="210" level="54" min_level="85" cost="840000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="56" min_level="85" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="50" min_level="85" cost="840000000"/><!--Burning Fist-->
+		<skill id="284" level="55" min_level="85" cost="840000000"/><!--Hurricane Assault-->
+		<skill id="95" level="35" min_level="85" cost="840000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="55" min_level="85" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="210" level="55" min_level="86" cost="840000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="57" min_level="86" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="51" min_level="86" cost="840000000"/><!--Burning Fist-->
+		<skill id="284" level="56" min_level="86" cost="840000000"/><!--Hurricane Assault-->
+		<skill id="95" level="36" min_level="86" cost="840000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="56" min_level="86" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="210" level="56" min_level="87" cost="840000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="58" min_level="87" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="52" min_level="87" cost="840000000"/><!--Burning Fist-->
+		<skill id="284" level="57" min_level="87" cost="840000000"/><!--Hurricane Assault-->
+		<skill id="95" level="37" min_level="87" cost="840000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="57" min_level="87" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="210" level="57" min_level="88" cost="840000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="59" min_level="88" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="53" min_level="88" cost="840000000"/><!--Burning Fist-->
+		<skill id="284" level="58" min_level="88" cost="840000000"/><!--Hurricane Assault-->
+		<skill id="95" level="38" min_level="88" cost="840000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="58" min_level="88" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="210" level="58" min_level="89" cost="840000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="60" min_level="89" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="54" min_level="89" cost="840000000"/><!--Burning Fist-->
+		<skill id="284" level="59" min_level="89" cost="840000000"/><!--Hurricane Assault-->
+		<skill id="95" level="39" min_level="89" cost="840000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="59" min_level="89" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="210" level="59" min_level="90" cost="840000000"/><!--Fist Weapon Mastery-->
+		<skill id="233" level="61" min_level="90" cost="840000000"/><!--Light Armor Mastery-->
+		<skill id="280" level="55" min_level="90" cost="840000000"/><!--Burning Fist-->
+		<skill id="284" level="60" min_level="90" cost="840000000"/><!--Hurricane Assault-->
+		<skill id="95" level="40" min_level="90" cost="840000000"><!--Cripple-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="70" level="60" min_level="90" cost="840000000"/><!--Emergency Rescue-->
+		<skill id="109" level="2" min_level="76" cost="6100000"><!--Ogre Spirit Totem-->
+			<required_items>
+				<item id="94502;95545" count="1"/><!--Spellbook: Ogre Spirit Totem-->
+			</required_items>
+		</skill>
+		<skill id="282" level="2" min_level="76" cost="6100000"><!--Puma Spirit Totem-->
+			<required_items>
+				<item id="94504;95547" count="1"/><!--Spellbook: Puma Spirit Totem-->
+			</required_items>
+		</skill>
+		<skill id="298" level="2" min_level="76" cost="6100000"><!--Rabbit Spirit Totem-->
+			<required_items>
+				<item id="94503;95546" count="1"/><!--Spellbook: Rabbit Spirit Totem-->
+			</required_items>
+		</skill>
+		<skill id="45135" level="4" min_level="76" cost="6100000"><!--Chant of Acumen-->
+			<required_items>
+				<item id="94370;95539" count="1"/><!--Master's Book: Acumen-->
+			</required_items>
+		</skill>
+		<skill id="45136" level="4" min_level="76" cost="6100000"><!--Chant of Empower-->
+			<required_items>
+				<item id="94361;95533" count="1"/><!--Master's Book: Empower-->
+			</required_items>
+		</skill>
+		<skill id="45123" level="3" min_level="76" cost="6100000"><!--Chant of Haste-->
+			<required_items>
+				<item id="94369;95538" count="1"/><!--Master's Book: Haste-->
+			</required_items>
+		</skill>
+		<skill id="45122" level="4" min_level="76" cost="6100000"><!--Chant of Death Whisper-->
+			<required_items>
+				<item id="94364;95536" count="1"/><!--Master's Book: Death Whisper-->
+			</required_items>
+		</skill>
+		<skill id="45128" level="3" min_level="76" cost="6100000"><!--Chant of Berserker Spirit-->
+			<required_items>
+				<item id="94366;95769" count="1"/><!--Master's Book: Berserker Spirit-->
+			</required_items>
+		</skill>
+		<skill id="45121" level="4" min_level="76" cost="6100000"><!--Chant of Focus-->
+			<required_items>
+				<item id="94363;95535" count="1"/><!--Master's Book: Focus-->
+			</required_items>
+		</skill>
+		<skill id="45137" level="3" min_level="76" cost="6100000"><!--Chant of Wild Magic-->
+			<required_items>
+				<item id="94368;95771" count="1"/><!--Master's Book: Wild Magic-->
+			</required_items>
+		</skill>
+		<skill id="45124" level="3" min_level="76" cost="6100000"><!--Chant of Wind Walk-->
+			<required_items>
+				<item id="94365;95537" count="1"/><!--Master's Book: Wind Walk-->
+			</required_items>
+		</skill>
+		<skill id="45125" level="3" min_level="76" cost="6100000"><!--Chant of Magic Barrier-->
+			<required_items>
+				<item id="94362;95534" count="1"/><!--Master's Book: Magic Barrier-->
+			</required_items>
+		</skill>
+		<skill id="45129" level="4" min_level="76" cost="6100000"><!--Chant of Clarity-->
+			<required_items>
+				<item id="94367;95770" count="1"/><!--Master's Book: Clarity-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="2" min_level="85" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45409" level="1" min_level="80" cost="14200000"><!--Life Force Harmony-->
+			<required_items>
+				<item id="94497;95540" count="1"/><!--Spellbook: Life Force Harmony-->
+			</required_items>
+		</skill>
+		<skill id="45423" level="1" min_level="80" cost="14200000"><!--Burning Strike-->
+			<required_items>
+				<item id="94505;95548" count="1"/><!--Spellbook: Burning Strike-->
+			</required_items>
+			<blocked_skills>
+				<skill id="3"/><!--Power Strike-->
+				<skill id="17"/><!--Force Burst-->
+				<skill id="29"/><!--Iron Punch-->
+				<skill id="81"/><!--Punch of Doom-->
+				<skill id="280"/><!--Burning Fist-->
+			</blocked_skills>
+		</skill>
+		<skill id="45423" level="2" min_level="82" cost="170000000"><!--Burning Strike-->
+			<required_items>
+				<item id="57" count="2500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45423" level="3" min_level="84" cost="240000000"><!--Burning Strike-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45423" level="4" min_level="86" cost="840000000"><!--Burning Strike-->
+			<required_items>
+				<item id="57" count="3500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45423" level="5" min_level="88" cost="840000000"><!--Burning Strike-->
+			<required_items>
+				<item id="57" count="4000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45423" level="6" min_level="90" cost="840000000"><!--Burning Strike-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45424" level="1" min_level="80" cost="14200000"><!--Burning Assault-->
+			<required_items>
+				<item id="94506;95549" count="1"/><!--Spellbook: Burning Assault-->
+			</required_items>
+			<blocked_skills>
+				<skill id="346"/><!--Raging Force-->
+				<skill id="54"/><!--Force Blaster-->
+			</blocked_skills>
+		</skill>
+		<skill id="45424" level="2" min_level="82" cost="170000000"><!--Burning Assault-->
+			<required_items>
+				<item id="57" count="2500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45424" level="3" min_level="85" cost="840000000"><!--Burning Assault-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45424" level="4" min_level="87" cost="840000000"><!--Burning Assault-->
+			<required_items>
+				<item id="57" count="4000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45424" level="5" min_level="90" cost="840000000"><!--Burning Assault-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45425" level="1" min_level="80" cost="14200000"><!--Armor Break-->
+			<required_items>
+				<item id="94507;95550" count="1"/><!--Spellbook: Armor Break-->
+			</required_items>
+			<blocked_skills>
+				<skill id="95"/><!--Cripple-->
+			</blocked_skills>
+		</skill>
+		<skill id="45425" level="2" min_level="83" cost="240000000"><!--Armor Break-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45425" level="3" min_level="86" cost="840000000"><!--Armor Break-->
+			<required_items>
+				<item id="57" count="4000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45425" level="4" min_level="90" cost="840000000"><!--Armor Break-->
+			<required_items>
+				<item id="57" count="5000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45439" level="1" min_level="76" cost="6100000"><!--Cacophony of War-->
+			<required_items>
+				<item id="94508;95551" count="1"/><!--Spellbook: Cacophony of War-->
+			</required_items>
+		</skill>
+		<skill id="54231" level="1" min_level="82"><!--Dragon Slayer Appearance-->
+			<required_items>
+				<item id="96300;96780" count="1"/><!--Spellbook: Dragon Slayer-->
+			</required_items>
+		</skill>
+		<skill id="430" level="3" min_level="88" cost="840000000"><!--Master of Combat-->
+			<required_items>
+				<item id="97104;97112" count="1"/><!--Spellbook: Master of Combat Lv. 3-->
+			</required_items>
+		</skill>
+		<skill id="45190" level="3" min_level="88" cost="840000000"><!--Detection-->
+			<required_items>
+				<item id="57" count="30000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45269" level="1" min_level="76"><!--Expanded Potential of Dyes-->
+			<required_items>
+				<item id="96613;96614" count="1"/><!--Spellbook: Expanded Potential of Dyes-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="1" min_level="76"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="10000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="2" min_level="80"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="40000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="3" min_level="85"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="100000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45408" level="4" min_level="90"><!--Blessed by Sayha-->
+			<required_items>
+				<item id="57" count="200000000"/><!--Adena-->
+			</required_items>
+		</skill>
+	</normal_skill_tree>
+</list>

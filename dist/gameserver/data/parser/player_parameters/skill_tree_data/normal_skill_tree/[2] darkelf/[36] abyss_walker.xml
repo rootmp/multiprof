@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="36"><!--Abyss Walker-->
+		<skill id="221" level="1" min_level="40" cost="65000"/><!--Silent Move-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="141" level="4" min_level="40" cost="65000"/><!--Weapon Mastery-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="193" level="3" min_level="40" cost="65000"/><!--Critical Damage-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="53009" level="1" min_level="40" cost="65000"/><!--Sharpness-->
+		<skill id="27" level="6" min_level="40" cost="65000"/><!--Unlock-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="122" level="1" min_level="40" cost="65000"/><!--Hex-->
+		<skill id="263" level="1" min_level="40" cost="65000"/><!--Deadly Blow-->
+		<skill id="263" level="2" min_level="40" cost="65000"/><!--Deadly Blow-->
+		<skill id="263" level="3" min_level="40" cost="65000"/><!--Deadly Blow-->
+		<skill id="263" level="4" min_level="40" cost="65000"/><!--Deadly Blow-->
+		<skill id="263" level="5" min_level="40" cost="65000"/><!--Deadly Blow-->
+		<skill id="256" level="2" min_level="40" cost="65000"><!--Accuracy-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="263" level="6" min_level="41" cost="76000"/><!--Deadly Blow-->
+		<skill id="263" level="7" min_level="42" cost="76000"/><!--Deadly Blow-->
+		<skill id="225" level="2" min_level="43" cost="76000"/><!--Acrobatic Move-->
+		<skill id="171" level="2" min_level="43" cost="76000"/><!--Esprit-->
+		<skill id="169" level="2" min_level="43" cost="76000"/><!--Quick Step-->
+		<skill id="27" level="7" min_level="43" cost="76000"/><!--Unlock-->
+		<skill id="122" level="2" min_level="43" cost="76000"/><!--Hex-->
+		<skill id="263" level="8" min_level="43" cost="76000"/><!--Deadly Blow-->
+		<skill id="263" level="9" min_level="44" cost="110000"/><!--Deadly Blow-->
+		<skill id="263" level="10" min_level="45" cost="110000"/><!--Deadly Blow-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="171" level="3" min_level="46" cost="110000"/><!--Esprit-->
+		<skill id="4" level="2" min_level="46" cost="110000"/><!--Fast Run-->
+		<skill id="27" level="8" min_level="46" cost="110000"/><!--Unlock-->
+		<skill id="122" level="3" min_level="46" cost="110000"/><!--Hex-->
+		<skill id="263" level="11" min_level="46" cost="110000"/><!--Deadly Blow-->
+		<skill id="198" level="2" min_level="46" cost="110000"/><!--Boost Evasion-->
+		<skill id="263" level="12" min_level="47" cost="160000"/><!--Deadly Blow-->
+		<skill id="263" level="13" min_level="48" cost="160000"/><!--Deadly Blow-->
+		<skill id="171" level="4" min_level="49" cost="160000"/><!--Esprit-->
+		<skill id="96" level="3" min_level="49" cost="160000"/><!--Bleed-->
+		<skill id="122" level="4" min_level="49" cost="160000"/><!--Hex-->
+		<skill id="263" level="14" min_level="49" cost="160000"/><!--Deadly Blow-->
+		<skill id="11" level="1" min_level="49" cost="160000"/><!--Trick-->
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="129" level="3" min_level="50" cost="230000"/><!--Dark Elven Spirit-->
+		<skill id="263" level="15" min_level="50" cost="230000"/><!--Deadly Blow-->
+		<skill id="821" level="1" min_level="50" cost="230000"/><!--Shadow Step-->
+		<skill id="263" level="16" min_level="51" cost="230000"/><!--Deadly Blow-->
+		<skill id="922" level="1" min_level="50" cost="230000"><!--Hide-->
+			<required_items>
+				<item id="90045" count="3"/><!--Magical Tablet-->
+			</required_items>
+		</skill>
+		<skill id="171" level="5" min_level="52" cost="230000"/><!--Esprit-->
+		<skill id="1405" level="1" min_level="52" cost="230000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="193" level="4" min_level="52" cost="230000"/><!--Critical Damage-->
+		<skill id="27" level="9" min_level="52" cost="230000"/><!--Unlock-->
+		<skill id="122" level="5" min_level="52" cost="230000"/><!--Hex-->
+		<skill id="263" level="17" min_level="52" cost="230000"/><!--Deadly Blow-->
+		<skill id="11" level="2" min_level="52" cost="230000"/><!--Trick-->
+		<skill id="263" level="18" min_level="53" cost="320000"/><!--Deadly Blow-->
+		<skill id="263" level="19" min_level="54" cost="320000"/><!--Deadly Blow-->
+		<skill id="821" level="2" min_level="54" cost="320000"/><!--Shadow Step-->
+		<skill id="111" level="2" min_level="55" cost="320000"/><!--Ultimate Evasion-->
+		<skill id="225" level="3" min_level="55" cost="320000"/><!--Acrobatic Move-->
+		<skill id="53009" level="2" min_level="55" cost="320000"/><!--Sharpness-->
+		<skill id="27" level="10" min_level="55" cost="320000"/><!--Unlock-->
+		<skill id="412" level="1" min_level="55" cost="320000"/><!--Sand Bomb-->
+		<skill id="122" level="6" min_level="55" cost="320000"/><!--Hex-->
+		<skill id="263" level="20" min_level="55" cost="320000"/><!--Deadly Blow-->
+		<skill id="11" level="3" min_level="55" cost="320000"/><!--Trick-->
+		<skill id="263" level="21" min_level="56" cost="440000"/><!--Deadly Blow-->
+		<skill id="263" level="22" min_level="57" cost="440000"/><!--Deadly Blow-->
+		<skill id="96" level="4" min_level="58" cost="440000"/><!--Bleed-->
+		<skill id="412" level="2" min_level="58" cost="440000"/><!--Sand Bomb-->
+		<skill id="122" level="7" min_level="58" cost="440000"/><!--Hex-->
+		<skill id="263" level="23" min_level="58" cost="440000"/><!--Deadly Blow-->
+		<skill id="11" level="4" min_level="58" cost="440000"/><!--Trick-->
+		<skill id="198" level="3" min_level="58" cost="440000"/><!--Boost Evasion-->
+		<skill id="821" level="3" min_level="58" cost="440000"/><!--Shadow Step-->
+		<skill id="263" level="24" min_level="59" cost="640000"/><!--Deadly Blow-->
+		<skill id="45184" level="3" min_level="60"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="129" level="4" min_level="60" cost="640000"/><!--Dark Elven Spirit-->
+		<skill id="27" level="11" min_level="60" cost="640000"/><!--Unlock-->
+		<skill id="412" level="3" min_level="60" cost="640000"/><!--Sand Bomb-->
+		<skill id="122" level="8" min_level="60" cost="640000"/><!--Hex-->
+		<skill id="263" level="25" min_level="60" cost="640000"/><!--Deadly Blow-->
+		<skill id="77" level="3" min_level="60" cost="640000"/><!--Ability to Attack-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="11" level="5" min_level="60" cost="640000"/><!--Trick-->
+		<skill id="1405" level="2" min_level="61" cost="640000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="263" level="26" min_level="61" cost="640000"/><!--Deadly Blow-->
+		<skill id="922" level="2" min_level="60" cost="640000"/><!--Hide-->
+		<skill id="171" level="6" min_level="62" cost="790000"/><!--Esprit-->
+		<skill id="412" level="4" min_level="62" cost="790000"/><!--Sand Bomb-->
+		<skill id="122" level="9" min_level="62" cost="790000"/><!--Hex-->
+		<skill id="263" level="27" min_level="62" cost="790000"/><!--Deadly Blow-->
+		<skill id="11" level="6" min_level="62" cost="790000"/><!--Trick-->
+		<skill id="821" level="4" min_level="62" cost="790000"/><!--Shadow Step-->
+		<skill id="263" level="28" min_level="63" cost="790000"/><!--Deadly Blow-->
+		<skill id="193" level="5" min_level="64" cost="990000"/><!--Critical Damage-->
+		<skill id="27" level="12" min_level="64" cost="990000"/><!--Unlock-->
+		<skill id="412" level="5" min_level="64" cost="990000"/><!--Sand Bomb-->
+		<skill id="122" level="10" min_level="64" cost="990000"/><!--Hex-->
+		<skill id="263" level="29" min_level="64" cost="990000"/><!--Deadly Blow-->
+		<skill id="11" level="7" min_level="64" cost="990000"/><!--Trick-->
+		<skill id="263" level="30" min_level="65" cost="990000"/><!--Deadly Blow-->
+		<skill id="96" level="5" min_level="66" cost="1100000"/><!--Bleed-->
+		<skill id="412" level="6" min_level="66" cost="1100000"/><!--Sand Bomb-->
+		<skill id="122" level="11" min_level="66" cost="1100000"/><!--Hex-->
+		<skill id="263" level="31" min_level="66" cost="1100000"/><!--Deadly Blow-->
+		<skill id="11" level="8" min_level="66" cost="1100000"/><!--Trick-->
+		<skill id="821" level="5" min_level="66" cost="1100000"/><!--Shadow Step-->
+		<skill id="263" level="32" min_level="67" cost="1100000"/><!--Deadly Blow-->
+		<skill id="171" level="7" min_level="68" cost="1500000"/><!--Esprit-->
+		<skill id="27" level="13" min_level="68" cost="1500000"/><!--Unlock-->
+		<skill id="412" level="7" min_level="68" cost="1500000"/><!--Sand Bomb-->
+		<skill id="122" level="12" min_level="68" cost="1500000"/><!--Hex-->
+		<skill id="263" level="33" min_level="68" cost="1500000"/><!--Deadly Blow-->
+		<skill id="11" level="9" min_level="68" cost="1500000"/><!--Trick-->
+		<skill id="263" level="34" min_level="69" cost="1500000"/><!--Deadly Blow-->
+		<skill id="129" level="5" min_level="70" cost="1900000"/><!--Dark Elven Spirit-->
+		<skill id="96" level="6" min_level="70" cost="1900000"/><!--Bleed-->
+		<skill id="53009" level="3" min_level="70" cost="1900000"/><!--Sharpness-->
+		<skill id="412" level="8" min_level="70" cost="1900000"/><!--Sand Bomb-->
+		<skill id="122" level="13" min_level="70" cost="1900000"/><!--Hex-->
+		<skill id="263" level="35" min_level="70" cost="1900000"/><!--Deadly Blow-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="11" level="10" min_level="70" cost="1900000"/><!--Trick-->
+		<skill id="821" level="6" min_level="70" cost="1900000"/><!--Shadow Step-->
+		<skill id="263" level="36" min_level="71" cost="1900000"/><!--Deadly Blow-->
+		<skill id="922" level="3" min_level="70" cost="1900000"/><!--Hide-->
+		<skill id="193" level="6" min_level="72" cost="2100000"/><!--Critical Damage-->
+		<skill id="27" level="14" min_level="72" cost="2100000"/><!--Unlock-->
+		<skill id="412" level="9" min_level="72" cost="2100000"/><!--Sand Bomb-->
+		<skill id="122" level="14" min_level="72" cost="2100000"/><!--Hex-->
+		<skill id="263" level="37" min_level="72" cost="2100000"/><!--Deadly Blow-->
+		<skill id="11" level="11" min_level="72" cost="2100000"/><!--Trick-->
+		<skill id="263" level="38" min_level="73" cost="2100000"/><!--Deadly Blow-->
+		<skill id="171" level="8" min_level="74" cost="2100000"/><!--Esprit-->
+		<skill id="193" level="7" min_level="74" cost="2100000"/><!--Critical Damage-->
+		<skill id="412" level="10" min_level="74" cost="2100000"/><!--Sand Bomb-->
+		<skill id="122" level="15" min_level="74" cost="2100000"/><!--Hex-->
+		<skill id="263" level="39" min_level="74" cost="2100000"/><!--Deadly Blow-->
+		<skill id="11" level="12" min_level="74" cost="2100000"/><!--Trick-->
+		<skill id="821" level="7" min_level="74" cost="2100000"/><!--Shadow Step-->
+		<skill id="263" level="40" min_level="75" cost="2100000"/><!--Deadly Blow-->
+		<skill id="137" level="1" min_level="50" cost="230000"/><!--Critical Rate-->
+		<skill id="137" level="2" min_level="60" cost="640000"/><!--Critical Rate-->
+		<skill id="47331" level="1" min_level="40" cost="65000"><!--Rogue's Weapon Mastery-->
+			<blocked_skills>
+				<skill id="209"/><!--Dagger Mastery-->
+				<skill id="208"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47331" level="2" min_level="50" cost="230000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="3" min_level="60" cost="640000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47331" level="4" min_level="70" cost="1900000"/><!--Rogue's Weapon Mastery-->
+		<skill id="47332" level="1" min_level="40" cost="65000"><!--Rogue's Armor Mastery-->
+			<blocked_skills>
+				<skill id="233"/><!--Light Armor Mastery-->
+				<skill id="208"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47332" level="2" min_level="50" cost="230000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="3" min_level="60" cost="640000"/><!--Rogue's Armor Mastery-->
+		<skill id="47332" level="4" min_level="70" cost="1900000"/><!--Rogue's Armor Mastery-->
+		<skill id="47333" level="3" min_level="40" cost="65000"/><!--Acrobatic Body-->
+		<skill id="47333" level="4" min_level="50" cost="230000"/><!--Acrobatic Body-->
+		<skill id="47333" level="5" min_level="60" cost="640000"/><!--Acrobatic Body-->
+		<skill id="47333" level="6" min_level="70" cost="1900000"/><!--Acrobatic Body-->
+		<skill id="47333" level="7" min_level="75" cost="2100000"/><!--Acrobatic Body-->
+		<skill id="96" level="1" min_level="40" cost="65000"/><!--Bleed-->
+		<skill id="96" level="2" min_level="45" cost="110000"/><!--Bleed-->
+		<skill id="47334" level="1" min_level="40" cost="65000"/><!--Backstab-->
+		<skill id="47334" level="2" min_level="50" cost="230000"/><!--Backstab-->
+		<skill id="47334" level="3" min_level="60" cost="640000"/><!--Backstab-->
+		<skill id="47334" level="4" min_level="70" cost="1900000"/><!--Backstab-->
+	</normal_skill_tree>
+</list>

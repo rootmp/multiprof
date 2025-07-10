@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="192"><!--Kamael Soldier-->
+		<skill id="328" level="1" min_level="1"/><!--Kamael's Dignity-->
+		<skill id="329" level="1" min_level="1"/><!--Pride of Kamael-->
+		<skill id="45145" level="1" min_level="2" cost="5"/><!--Soul Shield-->
+		<skill id="45144" level="1" min_level="3" cost="5"/><!--Soul Might-->
+		<skill id="1435" level="1" min_level="15" cost="500"/><!--Death Mark-->
+	</normal_skill_tree>
+</list>

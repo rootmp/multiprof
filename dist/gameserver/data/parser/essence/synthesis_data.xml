@@ -1,0 +1,1751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "synthesis_data.dtd">
+<!-- Author: nexvill -->
+<list>
+	<synthesis item_1_id="90311" item_2_id="90311" chance="25" success_item="90312-1" fail_item="90311-1" commission="0">
+		<!--Brooch Lv. 1 & Brooch Lv. 1 = Brooch Lv. 2 / Brooch Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90313" item_2_id="90313" chance="65" success_item="90314-1" fail_item="90313-1" commission="0">
+		<!--Topaz Lv. 1 & Topaz Lv. 1 = Topaz Lv. 2 / Topaz Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90314" item_2_id="90314" chance="40" success_item="90315-1" fail_item="90314-1" commission="0">
+		<!--Topaz Lv. 2 & Topaz Lv. 2 = Topaz Lv. 3 / Topaz Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90315" item_2_id="90315" chance="20" success_item="90316-1" fail_item="90315-1" commission="0">
+		<!--Topaz Lv. 3 & Topaz Lv. 3 = Topaz Lv. 4 / Topaz Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90316" item_2_id="90316" chance="10" success_item="90317-1" fail_item="90316-1" commission="0">
+		<!--Topaz Lv. 4 & Topaz Lv. 4 = Topaz Lv. 5 / Topaz Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90318" item_2_id="90318" chance="65" success_item="90319-1" fail_item="90318-1" commission="0">
+		<!--Garnet Lv. 1 & Garnet Lv. 1 = Garnet Lv. 2 / Garnet Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90319" item_2_id="90319" chance="40" success_item="90320-1" fail_item="90319-1" commission="0">
+		<!--Garnet Lv. 2 & Garnet Lv. 2 = Garnet Lv. 3 / Garnet Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90320" item_2_id="90320" chance="20" success_item="90321-1" fail_item="90320-1" commission="0">
+		<!--Garnet Lv. 3 & Garnet Lv. 3 = Garnet Lv. 4 / Garnet Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90321" item_2_id="90321" chance="10" success_item="90322-1" fail_item="90321-1" commission="0">
+		<!--Garnet Lv. 4 & Garnet Lv. 4 = Garnet Lv. 5 / Garnet Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90323" item_2_id="90323" chance="65" success_item="90324-1" fail_item="90323-1" commission="0">
+		<!--Jade Lv. 1 & Jade Lv. 1 = Jade Lv. 2 / Jade Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90324" item_2_id="90324" chance="40" success_item="90325-1" fail_item="90324-1" commission="0">
+		<!--Jade Lv. 2 & Jade Lv. 2 = Jade Lv. 3 / Jade Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90325" item_2_id="90325" chance="20" success_item="90326-1" fail_item="90325-1" commission="0">
+		<!--Jade Lv. 3 & Jade Lv. 3 = Jade Lv. 4 / Jade Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90326" item_2_id="90326" chance="10" success_item="90327-1" fail_item="90326-1" commission="0">
+		<!--Jade Lv. 4 & Jade Lv. 4 = Jade Lv. 5 / Jade Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90328" item_2_id="90328" chance="65" success_item="90329-1" fail_item="90328-1" commission="0">
+		<!--Ruby Lv. 1 & Ruby Lv. 1 = Ruby Lv. 2 / Ruby Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90329" item_2_id="90329" chance="40" success_item="90330-1" fail_item="90329-1" commission="0">
+		<!--Ruby Lv. 2 & Ruby Lv. 2 = Ruby Lv. 3 / Ruby Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90330" item_2_id="90330" chance="20" success_item="90331-1" fail_item="90330-1" commission="0">
+		<!--Ruby Lv. 3 & Ruby Lv. 3 = Ruby Lv. 4 / Ruby Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90331" item_2_id="90331" chance="10" success_item="90332-1" fail_item="90331-1" commission="0">
+		<!--Ruby Lv. 4 & Ruby Lv. 4 = Ruby Lv. 5 / Ruby Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90333" item_2_id="90333" chance="65" success_item="90334-1" fail_item="90333-1" commission="0">
+		<!--Sapphire Lv. 1 & Sapphire Lv. 1 = Sapphire Lv. 2 / Sapphire Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90334" item_2_id="90334" chance="40" success_item="90335-1" fail_item="90334-1" commission="0">
+		<!--Sapphire Lv. 2 & Sapphire Lv. 2 = Sapphire Lv. 3 / Sapphire Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90335" item_2_id="90335" chance="20" success_item="90336-1" fail_item="90335-1" commission="0">
+		<!--Sapphire Lv. 3 & Sapphire Lv. 3 = Sapphire Lv. 4 / Sapphire Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90336" item_2_id="90336" chance="10" success_item="90337-1" fail_item="90336-1" commission="0">
+		<!--Sapphire Lv. 4 & Sapphire Lv. 4 = Sapphire Lv. 5 / Sapphire Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90338" item_2_id="90338" chance="65" success_item="90339-1" fail_item="90338-1" commission="0">
+		<!--Diamond Lv. 1 & Diamond Lv. 1 = Diamond Lv. 2 / Diamond Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90339" item_2_id="90339" chance="40" success_item="90340-1" fail_item="90339-1" commission="0">
+		<!--Diamond Lv. 2 & Diamond Lv. 2 = Diamond Lv. 3 / Diamond Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90340" item_2_id="90340" chance="20" success_item="90341-1" fail_item="90340-1" commission="0">
+		<!--Diamond Lv. 3 & Diamond Lv. 3 = Diamond Lv. 4 / Diamond Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90341" item_2_id="90341" chance="10" success_item="90342-1" fail_item="90341-1" commission="0">
+		<!--Diamond Lv. 4 & Diamond Lv. 4 = Diamond Lv. 5 / Diamond Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90343" item_2_id="90343" chance="65" success_item="90344-1" fail_item="90343-1" commission="0">
+		<!--Pearl Lv. 1 & Pearl Lv. 1 = Pearl Lv. 2 / Pearl Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90344" item_2_id="90344" chance="40" success_item="90345-1" fail_item="90344-1" commission="0">
+		<!--Pearl Lv. 2 & Pearl Lv. 2 = Pearl Lv. 3 / Pearl Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90345" item_2_id="90345" chance="20" success_item="90346-1" fail_item="90345-1" commission="0">
+		<!--Pearl Lv. 3 & Pearl Lv. 3 = Pearl Lv. 4 / Pearl Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90346" item_2_id="90346" chance="10" success_item="90347-1" fail_item="90346-1" commission="0">
+		<!--Pearl Lv. 4 & Pearl Lv. 4 = Pearl Lv. 5 / Pearl Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90353" item_2_id="90353" chance="65" success_item="90354-1" fail_item="90353-1" commission="0">
+		<!--Vital Stone Lv. 1 & Vital Stone Lv. 1 = Vital Stone Lv. 2 / Vital Stone Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90354" item_2_id="90354" chance="40" success_item="90355-1" fail_item="90354-1" commission="0">
+		<!--Vital Stone Lv. 2 & Vital Stone Lv. 2 = Vital Stone Lv. 3 / Vital Stone Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90355" item_2_id="90355" chance="20" success_item="90356-1" fail_item="90355-1" commission="0">
+		<!--Vital Stone Lv. 3 & Vital Stone Lv. 3 = Vital Stone Lv. 4 / Vital Stone Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90356" item_2_id="90356" chance="10" success_item="90357-1" fail_item="90356-1" commission="0">
+		<!--Vital Stone Lv. 4 & Vital Stone Lv. 4 = Vital Stone Lv. 5 / Vital Stone Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90534" item_2_id="90534" chance="70" success_item="90535-1" fail_item="90534-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 1 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 2 / Sigel's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90535" item_2_id="90534" chance="70" success_item="90536-1" fail_item="90534-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 2 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 3 / Sigel's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90536" item_2_id="90534" chance="70" success_item="90537-1" fail_item="90534-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 3 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 4 / Sigel's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90537" item_2_id="90534" chance="70" success_item="90538-1" fail_item="90534-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 4 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 5 / Sigel's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90538" item_2_id="90534" chance="50" success_item="90539-1" fail_item="90534-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 5 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 6 / Sigel's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90539" item_2_id="90534" chance="40" success_item="90540-1" fail_item="90539-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 6 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 7 / Sigel's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90540" item_2_id="90534" chance="40" success_item="90541-1" fail_item="90539-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 7 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 8 / Sigel's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90541" item_2_id="90534" chance="40" success_item="90542-1" fail_item="90539-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 8 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 9 / Sigel's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90542" item_2_id="90534" chance="40" success_item="90543-1" fail_item="90539-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 9 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 10 / Sigel's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90543" item_2_id="90534" chance="30" success_item="90544-1" fail_item="90539-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 10 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 11 / Sigel's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90544" item_2_id="90534" chance="30" success_item="90545-1" fail_item="90544-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 11 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 12 / Sigel's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90545" item_2_id="90534" chance="30" success_item="90546-1" fail_item="90544-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 12 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 13 / Sigel's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90546" item_2_id="90534" chance="30" success_item="90547-1" fail_item="90544-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 13 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 14 / Sigel's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90547" item_2_id="90534" chance="30" success_item="90548-1" fail_item="90544-1" commission="0">
+		<!--Sigel's Soul Crystal Lv. 14 & Sigel's Soul Crystal Lv. 1 = Sigel's Soul Crystal Lv. 15 / Sigel's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90554" item_2_id="90554" chance="70" success_item="90555-1" fail_item="90554-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 1 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 2 / Tyrr's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90555" item_2_id="90554" chance="70" success_item="90556-1" fail_item="90554-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 2 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 3 / Tyrr's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90556" item_2_id="90554" chance="70" success_item="90557-1" fail_item="90554-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 3 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 4 / Tyrr's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90557" item_2_id="90554" chance="70" success_item="90558-1" fail_item="90554-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 4 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 5 / Tyrr's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90558" item_2_id="90554" chance="50" success_item="90559-1" fail_item="90554-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 5 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 6 / Tyrr's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90559" item_2_id="90554" chance="40" success_item="90560-1" fail_item="90559-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 6 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 7 / Tyrr's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90560" item_2_id="90554" chance="40" success_item="90561-1" fail_item="90559-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 7 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 8 / Tyrr's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90561" item_2_id="90554" chance="40" success_item="90562-1" fail_item="90559-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 8 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 9 / Tyrr's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90562" item_2_id="90554" chance="40" success_item="90563-1" fail_item="90559-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 9 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 10 / Tyrr's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90563" item_2_id="90554" chance="30" success_item="90564-1" fail_item="90559-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 10 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 11 / Tyrr's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90564" item_2_id="90554" chance="30" success_item="90565-1" fail_item="90564-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 11 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 12 / Tyrr's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90565" item_2_id="90554" chance="30" success_item="90566-1" fail_item="90564-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 12 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 13 / Tyrr's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90566" item_2_id="90554" chance="30" success_item="90567-1" fail_item="90564-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 13 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 14 / Tyrr's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90567" item_2_id="90554" chance="30" success_item="90568-1" fail_item="90564-1" commission="0">
+		<!--Tyrr's Soul Crystal Lv. 14 & Tyrr's Soul Crystal Lv. 1 = Tyrr's Soul Crystal Lv. 15 / Tyrr's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90574" item_2_id="90574" chance="70" success_item="90575-1" fail_item="90574-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 1 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 2 / Othell's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90575" item_2_id="90574" chance="70" success_item="90576-1" fail_item="90574-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 2 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 3 / Othell's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90576" item_2_id="90574" chance="70" success_item="90577-1" fail_item="90574-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 3 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 4 / Othell's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90577" item_2_id="90574" chance="70" success_item="90578-1" fail_item="90574-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 4 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 5 / Othell's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90578" item_2_id="90574" chance="50" success_item="90579-1" fail_item="90574-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 5 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 6 / Othell's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90579" item_2_id="90574" chance="40" success_item="90580-1" fail_item="90579-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 6 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 7 / Othell's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90580" item_2_id="90574" chance="40" success_item="90581-1" fail_item="90579-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 7 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 8 / Othell's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90581" item_2_id="90574" chance="40" success_item="90582-1" fail_item="90579-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 8 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 9 / Othell's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90582" item_2_id="90574" chance="40" success_item="90583-1" fail_item="90579-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 9 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 10 / Othell's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90583" item_2_id="90574" chance="30" success_item="90584-1" fail_item="90579-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 10 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 11 / Othell's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90584" item_2_id="90574" chance="30" success_item="90585-1" fail_item="90584-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 11 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 12 / Othell's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90585" item_2_id="90574" chance="30" success_item="90586-1" fail_item="90584-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 12 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 13 / Othell's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90586" item_2_id="90574" chance="30" success_item="90587-1" fail_item="90584-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 13 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 14 / Othell's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90587" item_2_id="90574" chance="30" success_item="90588-1" fail_item="90584-1" commission="0">
+		<!--Othell's Soul Crystal Lv. 14 & Othell's Soul Crystal Lv. 1 = Othell's Soul Crystal Lv. 15 / Othell's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90594" item_2_id="90594" chance="70" success_item="90595-1" fail_item="90594-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 1 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 2 / Yul's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90595" item_2_id="90594" chance="70" success_item="90596-1" fail_item="90594-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 2 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 3 / Yul's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90596" item_2_id="90594" chance="70" success_item="90597-1" fail_item="90594-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 3 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 4 / Yul's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90597" item_2_id="90594" chance="70" success_item="90598-1" fail_item="90594-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 4 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 5 / Yul's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90598" item_2_id="90594" chance="50" success_item="90599-1" fail_item="90594-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 5 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 6 / Yul's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90599" item_2_id="90594" chance="40" success_item="90600-1" fail_item="90599-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 6 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 7 / Yul's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90600" item_2_id="90594" chance="40" success_item="90601-1" fail_item="90599-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 7 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 8 / Yul's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90601" item_2_id="90594" chance="40" success_item="90602-1" fail_item="90599-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 8 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 9 / Yul's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90602" item_2_id="90594" chance="40" success_item="90603-1" fail_item="90599-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 9 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 10 / Yul's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90603" item_2_id="90594" chance="30" success_item="90604-1" fail_item="90599-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 10 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 11 / Yul's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90604" item_2_id="90594" chance="30" success_item="90605-1" fail_item="90604-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 11 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 12 / Yul's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90605" item_2_id="90594" chance="30" success_item="90606-1" fail_item="90604-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 12 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 13 / Yul's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90606" item_2_id="90594" chance="30" success_item="90607-1" fail_item="90604-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 13 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 14 / Yul's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90607" item_2_id="90594" chance="30" success_item="90608-1" fail_item="90604-1" commission="0">
+		<!--Yul's Soul Crystal Lv. 14 & Yul's Soul Crystal Lv. 1 = Yul's Soul Crystal Lv. 15 / Yul's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90614" item_2_id="90614" chance="70" success_item="90615-1" fail_item="90614-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 1 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 2 / Feoh's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90615" item_2_id="90614" chance="70" success_item="90616-1" fail_item="90614-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 2 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 3 / Feoh's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90616" item_2_id="90614" chance="70" success_item="90617-1" fail_item="90614-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 3 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 4 / Feoh's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90617" item_2_id="90614" chance="70" success_item="90618-1" fail_item="90614-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 4 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 5 / Feoh's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90618" item_2_id="90614" chance="50" success_item="90619-1" fail_item="90614-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 5 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 6 / Feoh's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90619" item_2_id="90614" chance="40" success_item="90620-1" fail_item="90619-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 6 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 7 / Feoh's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90620" item_2_id="90614" chance="40" success_item="90621-1" fail_item="90619-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 7 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 8 / Feoh's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90621" item_2_id="90614" chance="40" success_item="90622-1" fail_item="90619-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 8 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 9 / Feoh's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90622" item_2_id="90614" chance="40" success_item="90623-1" fail_item="90619-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 9 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 10 / Feoh's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90623" item_2_id="90614" chance="30" success_item="90624-1" fail_item="90619-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 10 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 11 / Feoh's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90624" item_2_id="90614" chance="30" success_item="90625-1" fail_item="90624-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 11 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 12 / Feoh's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90625" item_2_id="90614" chance="30" success_item="90626-1" fail_item="90624-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 12 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 13 / Feoh's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90626" item_2_id="90614" chance="30" success_item="90627-1" fail_item="90624-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 13 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 14 / Feoh's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90627" item_2_id="90614" chance="30" success_item="90628-1" fail_item="90624-1" commission="0">
+		<!--Feoh's Soul Crystal Lv. 14 & Feoh's Soul Crystal Lv. 1 = Feoh's Soul Crystal Lv. 15 / Feoh's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90634" item_2_id="90634" chance="70" success_item="90635-1" fail_item="90634-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 1 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 2 / Iss' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90635" item_2_id="90634" chance="70" success_item="90636-1" fail_item="90634-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 2 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 3 / Iss' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90636" item_2_id="90634" chance="70" success_item="90637-1" fail_item="90634-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 3 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 4 / Iss' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90637" item_2_id="90634" chance="70" success_item="90638-1" fail_item="90634-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 4 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 5 / Iss' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90638" item_2_id="90634" chance="50" success_item="90639-1" fail_item="90634-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 5 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 6 / Iss' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90639" item_2_id="90634" chance="40" success_item="90640-1" fail_item="90639-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 6 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 7 / Iss' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90640" item_2_id="90634" chance="40" success_item="90641-1" fail_item="90639-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 7 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 8 / Iss' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90641" item_2_id="90634" chance="40" success_item="90642-1" fail_item="90639-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 8 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 9 / Iss' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90642" item_2_id="90634" chance="40" success_item="90643-1" fail_item="90639-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 9 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 10 / Iss' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90643" item_2_id="90634" chance="30" success_item="90644-1" fail_item="90639-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 10 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 11 / Iss' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90644" item_2_id="90634" chance="30" success_item="90645-1" fail_item="90644-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 11 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 12 / Iss' Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90645" item_2_id="90634" chance="30" success_item="90646-1" fail_item="90644-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 12 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 13 / Iss' Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90646" item_2_id="90634" chance="30" success_item="90647-1" fail_item="90644-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 13 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 14 / Iss' Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90647" item_2_id="90634" chance="30" success_item="90648-1" fail_item="90644-1" commission="0">
+		<!--Iss' Soul Crystal Lv. 14 & Iss' Soul Crystal Lv. 1 = Iss' Soul Crystal Lv. 15 / Iss' Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90654" item_2_id="90654" chance="70" success_item="90655-1" fail_item="90654-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 1 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 2 / Wynn's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90655" item_2_id="90654" chance="70" success_item="90656-1" fail_item="90654-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 2 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 3 / Wynn's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90656" item_2_id="90654" chance="70" success_item="90657-1" fail_item="90654-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 3 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 4 / Wynn's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90657" item_2_id="90654" chance="70" success_item="90658-1" fail_item="90654-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 4 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 5 / Wynn's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90658" item_2_id="90654" chance="50" success_item="90659-1" fail_item="90654-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 5 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 6 / Wynn's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90659" item_2_id="90654" chance="40" success_item="90660-1" fail_item="90659-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 6 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 7 / Wynn's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90660" item_2_id="90654" chance="40" success_item="90661-1" fail_item="90659-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 7 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 8 / Wynn's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90661" item_2_id="90654" chance="40" success_item="90662-1" fail_item="90659-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 8 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 9 / Wynn's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90662" item_2_id="90654" chance="40" success_item="90663-1" fail_item="90659-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 9 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 10 / Wynn's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90663" item_2_id="90654" chance="30" success_item="90664-1" fail_item="90659-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 10 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 11 / Wynn's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90664" item_2_id="90654" chance="30" success_item="90665-1" fail_item="90664-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 11 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 12 / Wynn's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90665" item_2_id="90654" chance="30" success_item="90666-1" fail_item="90664-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 12 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 13 / Wynn's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90666" item_2_id="90654" chance="30" success_item="90667-1" fail_item="90664-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 13 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 14 / Wynn's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90667" item_2_id="90654" chance="30" success_item="90668-1" fail_item="90664-1" commission="0">
+		<!--Wynn's Soul Crystal Lv. 14 & Wynn's Soul Crystal Lv. 1 = Wynn's Soul Crystal Lv. 15 / Wynn's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90674" item_2_id="90674" chance="70" success_item="90675-1" fail_item="90674-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 1 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 2 / Aeore's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90675" item_2_id="90674" chance="70" success_item="90676-1" fail_item="90674-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 2 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 3 / Aeore's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90676" item_2_id="90674" chance="70" success_item="90677-1" fail_item="90674-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 3 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 4 / Aeore's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90677" item_2_id="90674" chance="70" success_item="90678-1" fail_item="90674-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 4 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 5 / Aeore's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90678" item_2_id="90674" chance="50" success_item="90679-1" fail_item="90674-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 5 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 6 / Aeore's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90679" item_2_id="90674" chance="40" success_item="90680-1" fail_item="90679-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 6 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 7 / Aeore's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90680" item_2_id="90674" chance="40" success_item="90681-1" fail_item="90679-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 7 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 8 / Aeore's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90681" item_2_id="90674" chance="40" success_item="90682-1" fail_item="90679-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 8 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 9 / Aeore's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90682" item_2_id="90674" chance="40" success_item="90683-1" fail_item="90679-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 9 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 10 / Aeore's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90683" item_2_id="90674" chance="30" success_item="90684-1" fail_item="90679-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 10 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 11 / Aeore's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="90684" item_2_id="90674" chance="30" success_item="90685-1" fail_item="90684-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 11 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 12 / Aeore's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90685" item_2_id="90674" chance="30" success_item="90686-1" fail_item="90684-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 12 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 13 / Aeore's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90686" item_2_id="90674" chance="30" success_item="90687-1" fail_item="90684-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 13 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 14 / Aeore's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90687" item_2_id="90674" chance="30" success_item="90688-1" fail_item="90684-1" commission="0">
+		<!--Aeore's Soul Crystal Lv. 14 & Aeore's Soul Crystal Lv. 1 = Aeore's Soul Crystal Lv. 15 / Aeore's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="90312" item_2_id="90312" chance="25" success_item="90934-1" fail_item="90312-1" commission="0">
+		<!--Brooch Lv. 2 & Brooch Lv. 2 = Brooch Lv. 3 / Brooch Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90924" item_2_id="90924" chance="65" success_item="90925-1" fail_item="90924-1" commission="0">
+		<!--Aquamarine Lv. 1 & Aquamarine Lv. 1 = Aquamarine Lv. 2 / Aquamarine Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90925" item_2_id="90925" chance="40" success_item="90926-1" fail_item="90925-1" commission="0">
+		<!--Aquamarine Lv. 2 & Aquamarine Lv. 2 = Aquamarine Lv. 3 / Aquamarine Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90926" item_2_id="90926" chance="20" success_item="90927-1" fail_item="90926-1" commission="0">
+		<!--Aquamarine Lv. 3 & Aquamarine Lv. 3 = Aquamarine Lv. 4 / Aquamarine Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90927" item_2_id="90927" chance="10" success_item="90928-1" fail_item="90927-1" commission="0">
+		<!--Aquamarine Lv. 4 & Aquamarine Lv. 4 = Aquamarine Lv. 5 / Aquamarine Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90929" item_2_id="90929" chance="65" success_item="90930-1" fail_item="90929-1" commission="0">
+		<!--Cat's Eye Lv. 1 & Cat's Eye Lv. 1 = Cat's Eye Lv. 2 / Cat's Eye Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90930" item_2_id="90930" chance="40" success_item="90931-1" fail_item="90930-1" commission="0">
+		<!--Cat's Eye Lv. 2 & Cat's Eye Lv. 2 = Cat's Eye Lv. 3 / Cat's Eye Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90931" item_2_id="90931" chance="20" success_item="90932-1" fail_item="90931-1" commission="0">
+		<!--Cat's Eye Lv. 3 & Cat's Eye Lv. 3 = Cat's Eye Lv. 4 / Cat's Eye Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="90932" item_2_id="90932" chance="10" success_item="90933-1" fail_item="90932-1" commission="0">
+		<!--Cat's Eye Lv. 4 & Cat's Eye Lv. 4 = Cat's Eye Lv. 5 / Cat's Eye Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="91077" item_2_id="91076" chance="50" success_item="91078-1" fail_item="91077-1" commission="0">
+		<!--Venir's Talisman Lv. 1 & Venir's Talisman Fragment = Venir's Talisman Lv. 2 / Venir's Talisman Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91078" item_2_id="91076" chance="45" success_item="91079-1" fail_item="91077-1" commission="0">
+		<!--Venir's Talisman Lv. 2 & Venir's Talisman Fragment = Venir's Talisman Lv. 3 / Venir's Talisman Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91079" item_2_id="91076" chance="40" success_item="91080-1" fail_item="91077-1" commission="0">
+		<!--Venir's Talisman Lv. 3 & Venir's Talisman Fragment = Venir's Talisman Lv. 4 / Venir's Talisman Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91080" item_2_id="91076" chance="35" success_item="91081-1" fail_item="91077-1" commission="0">
+		<!--Venir's Talisman Lv. 4 & Venir's Talisman Fragment = Venir's Talisman Lv. 5 / Venir's Talisman Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91081" item_2_id="91076" chance="50" success_item="91082-1" fail_item="91077-1" commission="0">
+		<!--Venir's Talisman Lv. 5 & Venir's Talisman Fragment = Venir's Talisman Lv. 6 / Venir's Talisman Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91082" item_2_id="91076" chance="45" success_item="91083-1" fail_item="91082-1" commission="0">
+		<!--Venir's Talisman Lv. 6 & Venir's Talisman Fragment = Venir's Talisman Lv. 7 / Venir's Talisman Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91083" item_2_id="91076" chance="40" success_item="91084-1" fail_item="91082-1" commission="0">
+		<!--Venir's Talisman Lv. 7 & Venir's Talisman Fragment = Venir's Talisman Lv. 8 / Venir's Talisman Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91084" item_2_id="91076" chance="35" success_item="91085-1" fail_item="91082-1" commission="0">
+		<!--Venir's Talisman Lv. 8 & Venir's Talisman Fragment = Venir's Talisman Lv. 9 / Venir's Talisman Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91085" item_2_id="91076" chance="30" success_item="91086-1" fail_item="91082-1" commission="0">
+		<!--Venir's Talisman Lv. 9 & Venir's Talisman Fragment = Venir's Talisman Lv. 10 / Venir's Talisman Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91086" item_2_id="91076" chance="25" success_item="91087-1" fail_item="91082-1" commission="0">
+		<!--Venir's Talisman Lv. 10 & Venir's Talisman Fragment = Venir's Talisman Lv. 11 / Venir's Talisman Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91087" item_2_id="91076" chance="50" success_item="91088-1" fail_item="91082-1" commission="0">
+		<!--Venir's Talisman Lv. 11 & Venir's Talisman Fragment = Venir's Talisman Lv. 12 / Venir's Talisman Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91088" item_2_id="91076" chance="35" success_item="91089-1" fail_item="91088-1" commission="0">
+		<!--Venir's Talisman Lv. 12 & Venir's Talisman Fragment = Venir's Talisman Lv. 13 / Venir's Talisman Lv. 12-->
+	</synthesis>
+	<synthesis item_1_id="91089" item_2_id="91076" chance="30" success_item="91090-1" fail_item="91088-1" commission="0">
+		<!--Venir's Talisman Lv. 13 & Venir's Talisman Fragment = Venir's Talisman Lv. 14 / Venir's Talisman Lv. 12-->
+	</synthesis>
+	<synthesis item_1_id="91090" item_2_id="91076" chance="25" success_item="91091-1" fail_item="91088-1" commission="0">
+		<!--Venir's Talisman Lv. 14 & Venir's Talisman Fragment = Venir's Talisman Lv. 15 / Venir's Talisman Lv. 12-->
+	</synthesis>
+	<synthesis item_1_id="91091" item_2_id="91076" chance="20" success_item="94174-1" fail_item="91088-1" commission="0">
+		<!--Venir's Talisman Lv. 15 & Venir's Talisman Fragment = Venir's Talisman Lv. 16 / Venir's Talisman Lv. 12-->
+	</synthesis>
+	<synthesis item_1_id="94174" item_2_id="91076" chance="15" success_item="94175-1" fail_item="91088-1" commission="0">
+		<!--Venir's Talisman Lv. 16 & Venir's Talisman Fragment = Venir's Talisman Lv. 17 / Venir's Talisman Lv. 12-->
+	</synthesis>
+	<synthesis item_1_id="94175" item_2_id="91076" chance="50" success_item="94176-1" fail_item="91088-1" commission="0">
+		<!--Venir's Talisman Lv. 17 & Venir's Talisman Fragment = Venir's Talisman Lv. 18 / Venir's Talisman Lv. 12-->
+	</synthesis>
+	<synthesis item_1_id="94176" item_2_id="91076" chance="35" success_item="94177-1" fail_item="94176-1" commission="0">
+		<!--Venir's Talisman Lv. 18 & Venir's Talisman Fragment = Venir's Talisman Lv. 19 / Venir's Talisman Lv. 18-->
+	</synthesis>
+	<synthesis item_1_id="94177" item_2_id="91076" chance="30" success_item="94178-1" fail_item="94176-1" commission="0">
+		<!--Venir's Talisman Lv. 19 & Venir's Talisman Fragment = Venir's Talisman Lv. 20 / Venir's Talisman Lv. 18-->
+	</synthesis>
+	<synthesis item_1_id="94178" item_2_id="91076" chance="25" success_item="94179-1" fail_item="94176-1" commission="0">
+		<!--Venir's Talisman Lv. 20 & Venir's Talisman Fragment = Venir's Talisman Lv. 21 / Venir's Talisman Lv. 18-->
+	</synthesis>
+	<synthesis item_1_id="94179" item_2_id="91076" chance="20" success_item="94180-1" fail_item="94176-1" commission="0">
+		<!--Venir's Talisman Lv. 21 & Venir's Talisman Fragment = Venir's Talisman Lv. 22 / Venir's Talisman Lv. 18-->
+	</synthesis>
+	<synthesis item_1_id="94180" item_2_id="91076" chance="15" success_item="94181-1" fail_item="94176-1" commission="0">
+		<!--Venir's Talisman Lv. 22 & Venir's Talisman Fragment = Venir's Talisman Lv. 23 / Venir's Talisman Lv. 18-->
+	</synthesis>
+	<synthesis item_1_id="94181" item_2_id="91076" chance="50" success_item="94182-1" fail_item="94176-1" commission="0">
+		<!--Venir's Talisman Lv. 23 & Venir's Talisman Fragment = Venir's Talisman Lv. 24 / Venir's Talisman Lv. 18-->
+	</synthesis>
+	<synthesis item_1_id="91163" item_2_id="91163" chance="60" success_item="91164-1" fail_item="91163-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 1 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 2 / Anakim's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91164" item_2_id="91163" chance="55" success_item="91165-1" fail_item="91163-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 2 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 3 / Anakim's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91165" item_2_id="91163" chance="50" success_item="91166-1" fail_item="91163-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 3 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 4 / Anakim's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91166" item_2_id="91163" chance="45" success_item="91167-1" fail_item="91163-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 4 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 5 / Anakim's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91167" item_2_id="91163" chance="45" success_item="91168-1" fail_item="91163-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 5 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 6 / Anakim's Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91168" item_2_id="91163" chance="40" success_item="91169-1" fail_item="91168-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 6 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 7 / Anakim's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91169" item_2_id="91163" chance="35" success_item="91170-1" fail_item="91168-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 7 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 8 / Anakim's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91170" item_2_id="91163" chance="30" success_item="91171-1" fail_item="91168-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 8 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 9 / Anakim's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91171" item_2_id="91163" chance="25" success_item="91172-1" fail_item="91168-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 9 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 10 / Anakim's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91173" item_2_id="91173" chance="60" success_item="91174-1" fail_item="91173-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 1 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 2 / Lilith' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91174" item_2_id="91173" chance="55" success_item="91175-1" fail_item="91173-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 2 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 3 / Lilith' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91175" item_2_id="91173" chance="50" success_item="91176-1" fail_item="91173-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 3 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 4 / Lilith' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91176" item_2_id="91173" chance="45" success_item="91177-1" fail_item="91173-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 4 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 5 / Lilith' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91177" item_2_id="91173" chance="45" success_item="91178-1" fail_item="91173-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 5 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 6 / Lilith' Soul Crystal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91178" item_2_id="91173" chance="40" success_item="91179-1" fail_item="91178-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 6 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 7 / Lilith' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91179" item_2_id="91173" chance="35" success_item="91180-1" fail_item="91178-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 7 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 8 / Lilith' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91180" item_2_id="91173" chance="30" success_item="91181-1" fail_item="91178-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 8 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 9 / Lilith' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91181" item_2_id="91173" chance="25" success_item="91182-1" fail_item="91178-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 9 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 10 / Lilith' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91357" item_2_id="91357" chance="65" success_item="91358-1" fail_item="91357-1" commission="0">
+		<!--Emerald Lv. 1 & Emerald Lv. 1 = Emerald Lv. 2 / Emerald Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91358" item_2_id="91358" chance="40" success_item="91359-1" fail_item="91358-1" commission="0">
+		<!--Emerald Lv. 2 & Emerald Lv. 2 = Emerald Lv. 3 / Emerald Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="91359" item_2_id="91359" chance="20" success_item="91360-1" fail_item="91359-1" commission="0">
+		<!--Emerald Lv. 3 & Emerald Lv. 3 = Emerald Lv. 4 / Emerald Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="91360" item_2_id="91360" chance="10" success_item="91361-1" fail_item="91360-1" commission="0">
+		<!--Emerald Lv. 4 & Emerald Lv. 4 = Emerald Lv. 5 / Emerald Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="91361" item_2_id="91356" chance="50" success_item="91362-1" fail_item="91361-1" commission="0">
+		<!--Emerald Lv. 5 & Jewel Energy = Greater Emerald Lv. 1 / Emerald Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91362" item_2_id="91356" chance="35" success_item="91363-1" fail_item="91362-1" commission="0">
+		<!--Greater Emerald Lv. 1 & Jewel Energy = Greater Emerald Lv. 2 / Greater Emerald Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91363" item_2_id="91356" chance="25" success_item="91364-1" fail_item="91362-1" commission="0">
+		<!--Greater Emerald Lv. 2 & Jewel Energy = Greater Emerald Lv. 3 / Greater Emerald Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91364" item_2_id="91356" chance="15" success_item="91365-1" fail_item="91362-1" commission="0">
+		<!--Greater Emerald Lv. 3 & Jewel Energy = Greater Emerald Lv. 4 / Greater Emerald Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91365" item_2_id="91356" chance="25" success_item="91366-1" fail_item="91362-1" commission="0">
+		<!--Greater Emerald Lv. 4 & Jewel Energy = Greater Emerald Lv. 5 / Greater Emerald Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90317" item_2_id="91356" chance="50" success_item="91305-1" fail_item="90317-1" commission="0">
+		<!--Topaz Lv. 5 & Jewel Energy = Greater Topaz Lv. 1 / Topaz Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91305" item_2_id="91356" chance="35" success_item="91306-1" fail_item="91305-1" commission="0">
+		<!--Greater Topaz Lv. 1 & Jewel Energy = Greater Topaz Lv. 2 / Greater Topaz Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91306" item_2_id="91356" chance="25" success_item="91307-1" fail_item="91305-1" commission="0">
+		<!--Greater Topaz Lv. 2 & Jewel Energy = Greater Topaz Lv. 3 / Greater Topaz Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91307" item_2_id="91356" chance="15" success_item="91308-1" fail_item="91305-1" commission="0">
+		<!--Greater Topaz Lv. 3 & Jewel Energy = Greater Topaz Lv. 4 / Greater Topaz Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91308" item_2_id="91356" chance="25" success_item="91309-1" fail_item="91305-1" commission="0">
+		<!--Greater Topaz Lv. 4 & Jewel Energy = Greater Topaz Lv. 5 / Greater Topaz Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90322" item_2_id="91356" chance="50" success_item="91310-1" fail_item="90322-1" commission="0">
+		<!--Garnet Lv. 5 & Jewel Energy = Greater Garnet Lv. 1 / Garnet Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91310" item_2_id="91356" chance="35" success_item="91311-1" fail_item="91310-1" commission="0">
+		<!--Greater Garnet Lv. 1 & Jewel Energy = Greater Garnet Lv. 2 / Greater Garnet Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91311" item_2_id="91356" chance="25" success_item="91312-1" fail_item="91310-1" commission="0">
+		<!--Greater Garnet Lv. 2 & Jewel Energy = Greater Garnet Lv. 3 / Greater Garnet Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91312" item_2_id="91356" chance="15" success_item="91313-1" fail_item="91310-1" commission="0">
+		<!--Greater Garnet Lv. 3 & Jewel Energy = Greater Garnet Lv. 4 / Greater Garnet Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91313" item_2_id="91356" chance="25" success_item="91314-1" fail_item="91310-1" commission="0">
+		<!--Greater Garnet Lv. 4 & Jewel Energy = Greater Garnet Lv. 5 / Greater Garnet Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90327" item_2_id="91356" chance="50" success_item="91315-1" fail_item="90327-1" commission="0">
+		<!--Jade Lv. 5 & Jewel Energy = Greater Jade Lv. 1 / Jade Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91315" item_2_id="91356" chance="35" success_item="91316-1" fail_item="91315-1" commission="0">
+		<!--Greater Jade Lv. 1 & Jewel Energy = Greater Jade Lv. 2 / Greater Jade Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91316" item_2_id="91356" chance="25" success_item="91317-1" fail_item="91315-1" commission="0">
+		<!--Greater Jade Lv. 2 & Jewel Energy = Greater Jade Lv. 3 / Greater Jade Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91317" item_2_id="91356" chance="15" success_item="91318-1" fail_item="91315-1" commission="0">
+		<!--Greater Jade Lv. 3 & Jewel Energy = Greater Jade Lv. 4 / Greater Jade Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91318" item_2_id="91356" chance="25" success_item="91319-1" fail_item="91315-1" commission="0">
+		<!--Greater Jade Lv. 4 & Jewel Energy = Greater Jade Lv. 5 / Greater Jade Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90332" item_2_id="91356" chance="50" success_item="91320-1" fail_item="90332-1" commission="0">
+		<!--Ruby Lv. 5 & Jewel Energy = Greater Ruby Lv. 1 / Ruby Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91320" item_2_id="91356" chance="35" success_item="91321-1" fail_item="91320-1" commission="0">
+		<!--Greater Ruby Lv. 1 & Jewel Energy = Greater Ruby Lv. 2 / Greater Ruby Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91321" item_2_id="91356" chance="25" success_item="91322-1" fail_item="91320-1" commission="0">
+		<!--Greater Ruby Lv. 2 & Jewel Energy = Greater Ruby Lv. 3 / Greater Ruby Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91322" item_2_id="91356" chance="15" success_item="91323-1" fail_item="91320-1" commission="0">
+		<!--Greater Ruby Lv. 3 & Jewel Energy = Greater Ruby Lv. 4 / Greater Ruby Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91323" item_2_id="91356" chance="25" success_item="91324-1" fail_item="91320-1" commission="0">
+		<!--Greater Ruby Lv. 4 & Jewel Energy = Greater Ruby Lv. 5 / Greater Ruby Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90337" item_2_id="91356" chance="50" success_item="91325-1" fail_item="90337-1" commission="0">
+		<!--Sapphire Lv. 5 & Jewel Energy = Greater Sapphire Lv. 1 / Sapphire Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91325" item_2_id="91356" chance="35" success_item="91326-1" fail_item="91325-1" commission="0">
+		<!--Greater Sapphire Lv. 1 & Jewel Energy = Greater Sapphire Lv. 2 / Greater Sapphire Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91326" item_2_id="91356" chance="25" success_item="91327-1" fail_item="91325-1" commission="0">
+		<!--Greater Sapphire Lv. 2 & Jewel Energy = Greater Sapphire Lv. 3 / Greater Sapphire Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91327" item_2_id="91356" chance="15" success_item="91328-1" fail_item="91325-1" commission="0">
+		<!--Greater Sapphire Lv. 3 & Jewel Energy = Greater Sapphire Lv. 4 / Greater Sapphire Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91328" item_2_id="91356" chance="25" success_item="91329-1" fail_item="91325-1" commission="0">
+		<!--Greater Sapphire Lv. 4 & Jewel Energy = Greater Sapphire Lv. 5 / Greater Sapphire Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90342" item_2_id="91356" chance="50" success_item="91330-1" fail_item="90342-1" commission="0">
+		<!--Diamond Lv. 5 & Jewel Energy = Greater Diamond Lv. 1 / Diamond Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91330" item_2_id="91356" chance="35" success_item="91331-1" fail_item="91330-1" commission="0">
+		<!--Greater Diamond Lv. 1 & Jewel Energy = Greater Diamond Lv. 2 / Greater Diamond Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91331" item_2_id="91356" chance="25" success_item="91332-1" fail_item="91330-1" commission="0">
+		<!--Greater Diamond Lv. 2 & Jewel Energy = Greater Diamond Lv. 3 / Greater Diamond Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91332" item_2_id="91356" chance="15" success_item="91333-1" fail_item="91330-1" commission="0">
+		<!--Greater Diamond Lv. 3 & Jewel Energy = Greater Diamond Lv. 4 / Greater Diamond Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91333" item_2_id="91356" chance="25" success_item="91334-1" fail_item="91330-1" commission="0">
+		<!--Greater Diamond Lv. 4 & Jewel Energy = Greater Diamond Lv. 5 / Greater Diamond Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90347" item_2_id="91356" chance="50" success_item="91335-1" fail_item="90347-1" commission="0">
+		<!--Pearl Lv. 5 & Jewel Energy = Greater Pearl Lv. 1 / Pearl Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91335" item_2_id="91356" chance="35" success_item="91336-1" fail_item="91335-1" commission="0">
+		<!--Greater Pearl Lv. 1 & Jewel Energy = Greater Pearl Lv. 2 / Greater Pearl Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91336" item_2_id="91356" chance="25" success_item="91337-1" fail_item="91335-1" commission="0">
+		<!--Greater Pearl Lv. 2 & Jewel Energy = Greater Pearl Lv. 3 / Greater Pearl Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91337" item_2_id="91356" chance="15" success_item="91338-1" fail_item="91335-1" commission="0">
+		<!--Greater Pearl Lv. 3 & Jewel Energy = Greater Pearl Lv. 4 / Greater Pearl Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91338" item_2_id="91356" chance="25" success_item="91339-1" fail_item="91335-1" commission="0">
+		<!--Greater Pearl Lv. 4 & Jewel Energy = Greater Pearl Lv. 5 / Greater Pearl Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90357" item_2_id="91356" chance="50" success_item="91340-1" fail_item="90357-1" commission="0">
+		<!--Vital Stone Lv. 5 & Jewel Energy = Greater Vital Stone Lv. 1 / Vital Stone Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91340" item_2_id="91356" chance="35" success_item="91341-1" fail_item="91340-1" commission="0">
+		<!--Greater Vital Stone Lv. 1 & Jewel Energy = Greater Vital Stone Lv. 2 / Greater Vital Stone Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91341" item_2_id="91356" chance="25" success_item="91342-1" fail_item="91340-1" commission="0">
+		<!--Greater Vital Stone Lv. 2 & Jewel Energy = Greater Vital Stone Lv. 3 / Greater Vital Stone Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91342" item_2_id="91356" chance="15" success_item="91343-1" fail_item="91340-1" commission="0">
+		<!--Greater Vital Stone Lv. 3 & Jewel Energy = Greater Vital Stone Lv. 4 / Greater Vital Stone Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91343" item_2_id="91356" chance="25" success_item="91344-1" fail_item="91340-1" commission="0">
+		<!--Greater Vital Stone Lv. 4 & Jewel Energy = Greater Vital Stone Lv. 5 / Greater Vital Stone Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90928" item_2_id="91356" chance="50" success_item="91345-1" fail_item="90928-1" commission="0">
+		<!--Aquamarine Lv. 5 & Jewel Energy = Greater Aquamarine Lv. 1 / Aquamarine Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91345" item_2_id="91356" chance="35" success_item="91346-1" fail_item="91345-1" commission="0">
+		<!--Greater Aquamarine Lv. 1 & Jewel Energy = Greater Aquamarine Lv. 2 / Greater Aquamarine Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91346" item_2_id="91356" chance="25" success_item="91347-1" fail_item="91345-1" commission="0">
+		<!--Greater Aquamarine Lv. 2 & Jewel Energy = Greater Aquamarine Lv. 3 / Greater Aquamarine Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91347" item_2_id="91356" chance="15" success_item="91348-1" fail_item="91345-1" commission="0">
+		<!--Greater Aquamarine Lv. 3 & Jewel Energy = Greater Aquamarine Lv. 4 / Greater Aquamarine Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91348" item_2_id="91356" chance="25" success_item="91349-1" fail_item="91345-1" commission="0">
+		<!--Greater Aquamarine Lv. 4 & Jewel Energy = Greater Aquamarine Lv. 5 / Greater Aquamarine Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90933" item_2_id="91356" chance="50" success_item="91350-1" fail_item="90933-1" commission="0">
+		<!--Cat's Eye Lv. 5 & Jewel Energy = Greater Cat's Eye Lv. 1 / Cat's Eye Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91350" item_2_id="91356" chance="35" success_item="91351-1" fail_item="91350-1" commission="0">
+		<!--Greater Cat's Eye Lv. 1 & Jewel Energy = Greater Cat's Eye Lv. 2 / Greater Cat's Eye Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91351" item_2_id="91356" chance="25" success_item="91352-1" fail_item="91350-1" commission="0">
+		<!--Greater Cat's Eye Lv. 2 & Jewel Energy = Greater Cat's Eye Lv. 3 / Greater Cat's Eye Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91352" item_2_id="91356" chance="15" success_item="91353-1" fail_item="91350-1" commission="0">
+		<!--Greater Cat's Eye Lv. 3 & Jewel Energy = Greater Cat's Eye Lv. 4 / Greater Cat's Eye Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91353" item_2_id="91356" chance="25" success_item="91354-1" fail_item="91350-1" commission="0">
+		<!--Greater Cat's Eye Lv. 4 & Jewel Energy = Greater Cat's Eye Lv. 5 / Greater Cat's Eye Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90934" item_2_id="90934" chance="25" success_item="91303-1" fail_item="90934-1" commission="0">
+		<!--Brooch Lv. 3 & Brooch Lv. 3 = Brooch Lv. 4 / Brooch Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="91303" item_2_id="91303" chance="25" success_item="91304-1" fail_item="91303-1" commission="0">
+		<!--Brooch Lv. 4 & Brooch Lv. 4 = Brooch Lv. 5 / Brooch Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="91398" item_2_id="90045" chance="5" success_item="91394-1" fail_item="91399-1" commission="0">
+		<!--Manuscript Fragment - Page 2 & Magical Tablet = Forgotten Manuscript - Page 2 / Manuscript Part - Page 2-->
+	</synthesis>
+	<synthesis item_1_id="94182" item_2_id="91076" chance="35" success_item="94183-1" fail_item="94182-1" commission="0">
+		<!--Venir's Talisman Lv. 24 & Venir's Talisman Fragment = Venir's Talisman Lv. 25 / Venir's Talisman Lv. 24-->
+	</synthesis>
+	<synthesis item_1_id="9589" item_2_id="9589" chance="25" success_item="9590-1" fail_item="9589-1" commission="0">
+		<!--Monsters Only_Shield - Not Available & Monsters Only_Shield - Not Available = Talisman Bracelet Lv. 2 / Monsters Only_Shield - Not Available-->
+	</synthesis>
+	<synthesis item_1_id="9590" item_2_id="9590" chance="25" success_item="9591-1" fail_item="9590-1" commission="0">
+		<!--Talisman Bracelet Lv. 2 & Talisman Bracelet Lv. 2 = Lionel Hunter's Cloak - Not Available / Talisman Bracelet Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="9591" item_2_id="9591" chance="25" success_item="49703-1" fail_item="9591-1" commission="0">
+		<!--Lionel Hunter's Cloak - Not Available & Lionel Hunter's Cloak - Not Available = Talisman Bracelet Lv. 4 / Lionel Hunter's Cloak - Not Available-->
+	</synthesis>
+	<synthesis item_1_id="49703" item_2_id="49703" chance="25" success_item="92031-1" fail_item="49703-1" commission="0">
+		<!--Talisman Bracelet Lv. 4 & Talisman Bracelet Lv. 4 = Talisman Bracelet Lv. 5 / Talisman Bracelet Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="92031" item_2_id="92031" chance="25" success_item="92032-1" fail_item="92031-1" commission="0">
+		<!--Talisman Bracelet Lv. 5 & Talisman Bracelet Lv. 5 = Talisman Bracelet Lv. 6 / Talisman Bracelet Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="92036" item_2_id="92036" chance="65" success_item="92037-1" fail_item="92036-1" commission="0">
+		<!--Amber Lv. 1 & Amber Lv. 1 = Amber Lv. 2 / Amber Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="92037" item_2_id="92037" chance="40" success_item="92038-1" fail_item="92037-1" commission="0">
+		<!--Amber Lv. 2 & Amber Lv. 2 = Amber Lv. 3 / Amber Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="92038" item_2_id="92038" chance="35" success_item="92039-1" fail_item="92038-1" commission="0">
+		<!--Amber Lv. 3 & Amber Lv. 3 = Amber Lv. 4 / Amber Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="92039" item_2_id="92039" chance="30" success_item="94518-1" fail_item="92039-1" commission="0">
+		<!--Amber Lv. 4 & Amber Lv. 4 = Amber Lv. 5 / Amber Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="92040" item_2_id="92040" chance="20" success_item="92041-1" fail_item="92040-1" commission="0">
+		<!--Amber Lv. 6 & Amber Lv. 6 = Amber Lv. 7 / Amber Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="92046" item_2_id="92046" chance="65" success_item="92047-1" fail_item="92046-1" commission="0">
+		<!--Opal Lv. 1 & Opal Lv. 1 = Opal Lv. 2 / Opal Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="92047" item_2_id="92047" chance="40" success_item="92048-1" fail_item="92047-1" commission="0">
+		<!--Opal Lv. 2 & Opal Lv. 2 = Opal Lv. 3 / Opal Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="92048" item_2_id="92048" chance="35" success_item="92049-1" fail_item="92048-1" commission="0">
+		<!--Opal Lv. 3 & Opal Lv. 3 = Opal Lv. 4 / Opal Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="92049" item_2_id="92049" chance="30" success_item="94519-1" fail_item="92049-1" commission="0">
+		<!--Opal Lv. 4 & Opal Lv. 4 = Opal Lv. 5 / Opal Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="92050" item_2_id="92050" chance="20" success_item="92051-1" fail_item="92050-1" commission="0">
+		<!--Opal Lv. 6 & Opal Lv. 6 = Opal Lv. 7 / Opal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="92056" item_2_id="92056" chance="65" success_item="92057-1" fail_item="92056-1" commission="0">
+		<!--Coral Lv. 1 & Coral Lv. 1 = Coral Lv. 2 / Coral Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="92057" item_2_id="92057" chance="40" success_item="92058-1" fail_item="92057-1" commission="0">
+		<!--Coral Lv. 2 & Coral Lv. 2 = Coral Lv. 3 / Coral Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="92058" item_2_id="92058" chance="35" success_item="92059-1" fail_item="92058-1" commission="0">
+		<!--Coral Lv. 3 & Coral Lv. 3 = Coral Lv. 4 / Coral Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="92059" item_2_id="92059" chance="30" success_item="94520-1" fail_item="92059-1" commission="0">
+		<!--Coral Lv. 4 & Coral Lv. 4 = Coral Lv. 5 / Coral Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="92060" item_2_id="92060" chance="20" success_item="92061-1" fail_item="92060-1" commission="0">
+		<!--Coral Lv. 6 & Coral Lv. 6 = Coral Lv. 7 / Coral Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="92066" item_2_id="92066" chance="65" success_item="92067-1" fail_item="92066-1" commission="0">
+		<!--Onyx Lv. 1 & Onyx Lv. 1 = Onyx Lv. 2 / Onyx Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="92067" item_2_id="92067" chance="40" success_item="92068-1" fail_item="92067-1" commission="0">
+		<!--Onyx Lv. 2 & Onyx Lv. 2 = Onyx Lv. 3 / Onyx Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="92068" item_2_id="92068" chance="35" success_item="92069-1" fail_item="92068-1" commission="0">
+		<!--Onyx Lv. 3 & Onyx Lv. 3 = Onyx Lv. 4 / Onyx Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="92069" item_2_id="92069" chance="30" success_item="94521-1" fail_item="92069-1" commission="0">
+		<!--Onyx Lv. 4 & Onyx Lv. 4 = Onyx Lv. 5 / Onyx Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="92070" item_2_id="92070" chance="20" success_item="92071-1" fail_item="92070-1" commission="0">
+		<!--Onyx Lv. 6 & Onyx Lv. 6 = Onyx Lv. 7 / Onyx Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="92076" item_2_id="92076" chance="65" success_item="92077-1" fail_item="92076-1" commission="0">
+		<!--Spinel Lv. 1 & Spinel Lv. 1 = Spinel Lv. 2 / Spinel Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="92077" item_2_id="92077" chance="40" success_item="92078-1" fail_item="92077-1" commission="0">
+		<!--Spinel Lv. 2 & Spinel Lv. 2 = Spinel Lv. 3 / Spinel Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="92078" item_2_id="92078" chance="35" success_item="92079-1" fail_item="92078-1" commission="0">
+		<!--Spinel Lv. 3 & Spinel Lv. 3 = Spinel Lv. 4 / Spinel Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="92079" item_2_id="92079" chance="30" success_item="94522-1" fail_item="92079-1" commission="0">
+		<!--Spinel Lv. 4 & Spinel Lv. 4 = Spinel Lv. 5 / Spinel Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="92080" item_2_id="92080" chance="20" success_item="92081-1" fail_item="92080-1" commission="0">
+		<!--Spinel Lv. 6 & Spinel Lv. 6 = Spinel Lv. 7 / Spinel Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="92086" item_2_id="92086" chance="65" success_item="92087-1" fail_item="92086-1" commission="0">
+		<!--Zircon Lv. 1 & Zircon Lv. 1 = Zircon Lv. 2 / Zircon Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="92087" item_2_id="92087" chance="40" success_item="92088-1" fail_item="92087-1" commission="0">
+		<!--Zircon Lv. 2 & Zircon Lv. 2 = Zircon Lv. 3 / Zircon Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="92088" item_2_id="92088" chance="35" success_item="92089-1" fail_item="92088-1" commission="0">
+		<!--Zircon Lv. 3 & Zircon Lv. 3 = Zircon Lv. 4 / Zircon Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="92089" item_2_id="92089" chance="30" success_item="94523-1" fail_item="92089-1" commission="0">
+		<!--Zircon Lv. 4 & Zircon Lv. 4 = Zircon Lv. 5 / Zircon Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="92090" item_2_id="92090" chance="20" success_item="92091-1" fail_item="92090-1" commission="0">
+		<!--Zircon Lv. 6 & Zircon Lv. 6 = Zircon Lv. 7 / Zircon Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="92096" item_2_id="92096" chance="65" success_item="92097-1" fail_item="92096-1" commission="0">
+		<!--Moonstone Lv. 1 & Moonstone Lv. 1 = Moonstone Lv. 2 / Moonstone Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="92097" item_2_id="92097" chance="40" success_item="92098-1" fail_item="92097-1" commission="0">
+		<!--Moonstone Lv. 2 & Moonstone Lv. 2 = Moonstone Lv. 3 / Moonstone Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="92098" item_2_id="92098" chance="35" success_item="92099-1" fail_item="92098-1" commission="0">
+		<!--Moonstone Lv. 3 & Moonstone Lv. 3 = Moonstone Lv. 4 / Moonstone Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="92099" item_2_id="92099" chance="30" success_item="94524-1" fail_item="92099-1" commission="0">
+		<!--Moonstone Lv. 4 & Moonstone Lv. 4 = Moonstone Lv. 5 / Moonstone Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="92100" item_2_id="92100" chance="20" success_item="92101-1" fail_item="92100-1" commission="0">
+		<!--Moonstone Lv. 6 & Moonstone Lv. 6 = Moonstone Lv. 7 / Moonstone Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="91182" item_2_id="91173" chance="35" success_item="92920-1" fail_item="91178-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 10 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 11 / Lilith' Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="92920" item_2_id="91173" chance="30" success_item="92921-1" fail_item="92920-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 11 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 12 / Lilith' Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="92921" item_2_id="91173" chance="25" success_item="92922-1" fail_item="92920-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 12 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 13 / Lilith' Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="92922" item_2_id="91173" chance="20" success_item="92923-1" fail_item="92920-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 13 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 14 / Lilith' Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="92923" item_2_id="91173" chance="15" success_item="92924-1" fail_item="92920-1" commission="0">
+		<!--Lilith' Soul Crystal Lv. 14 & Lilith' Soul Crystal Lv. 1 = Lilith' Soul Crystal Lv. 15 / Lilith' Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="91172" item_2_id="91163" chance="35" success_item="92925-1" fail_item="91168-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 10 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 11 / Anakim's Soul Crystal Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="92925" item_2_id="91163" chance="30" success_item="92926-1" fail_item="92925-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 11 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 12 / Anakim's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="92926" item_2_id="91163" chance="25" success_item="92927-1" fail_item="92925-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 12 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 13 / Anakim's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="92927" item_2_id="91163" chance="20" success_item="92928-1" fail_item="92925-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 13 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 14 / Anakim's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="92928" item_2_id="91163" chance="15" success_item="92929-1" fail_item="92925-1" commission="0">
+		<!--Anakim's Soul Crystal Lv. 14 & Anakim's Soul Crystal Lv. 1 = Anakim's Soul Crystal Lv. 15 / Anakim's Soul Crystal Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="91936" item_2_id="91936" chance="100" success_item="93065-1" fail_item="93065-1" commission="0">
+		<!--Adventurer's Rough Jewel Lv. 1 & Adventurer's Rough Jewel Lv. 1 = Adventurer's Rough Jewel Lv. 2 / Adventurer's Rough Jewel Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90891" item_2_id="90891" chance="25" success_item="91161-1" fail_item="90891-1" commission="0">
+		<!--Agathion Bracelet Lv. 4 & Agathion Bracelet Lv. 4 = Agathion Bracelet Lv. 5 / Agathion Bracelet Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="90888" item_2_id="90888" chance="25" success_item="90889-1" fail_item="90888-1" commission="0">
+		<!--Agathion Bracelet Lv. 1 & Agathion Bracelet Lv. 1 = Agathion Bracelet Lv. 2 / Agathion Bracelet Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="90889" item_2_id="90889" chance="25" success_item="90890-1" fail_item="90889-1" commission="0">
+		<!--Agathion Bracelet Lv. 2 & Agathion Bracelet Lv. 2 = Agathion Bracelet Lv. 3 / Agathion Bracelet Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="90890" item_2_id="90890" chance="25" success_item="90891-1" fail_item="90890-1" commission="0">
+		<!--Agathion Bracelet Lv. 3 & Agathion Bracelet Lv. 3 = Agathion Bracelet Lv. 4 / Agathion Bracelet Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="93296" item_2_id="93296" chance="20" success_item="93297-1" fail_item="93296-1" commission="0">
+		<!--Einhasad's Pendant Lv. 1 & Einhasad's Pendant Lv. 1 = Einhasad�s Pendant Lv. 2 / Einhasad's Pendant Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="93297" item_2_id="93297" chance="18" success_item="93298-1" fail_item="93297-1" commission="0">
+		<!--Einhasad�s Pendant Lv. 2 & Einhasad�s Pendant Lv. 2 = Einhasad�s Pendant Lv. 3 / Einhasad�s Pendant Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="93298" item_2_id="93298" chance="12" success_item="93299-1" fail_item="93298-1" commission="0">
+		<!--Einhasad�s Pendant Lv. 3 & Einhasad�s Pendant Lv. 3 = Einhasad's Pendant Lv. 4 / Einhasad�s Pendant Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="93299" item_2_id="93299" chance="9" success_item="93300-1" fail_item="93299-1" commission="0">
+		<!--Einhasad's Pendant Lv. 4 & Einhasad's Pendant Lv. 4 = Einhasad's Pendant Lv. 5 / Einhasad's Pendant Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94153" item_2_id="94153" chance="7" success_item="91256-1" fail_item="94153-1" commission="0">
+		<!--Baium Doll Lv. 1 & Baium Doll Lv. 1 = Baium Doll Lv. 2 / Baium Doll Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91256" item_2_id="91256" chance="70" success_item="91423-1" fail_item="91256-1" commission="0">
+		<!--Baium Doll Lv. 2 & Baium Doll Lv. 2 = Baium Doll Lv. 3 / Baium Doll Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="94154" item_2_id="94154" chance="7" success_item="91257-1" fail_item="94154-1" commission="0">
+		<!--Queen Ant Doll Lv. 1 & Queen Ant Doll Lv. 1 = Queen Ant Doll Lv. 2 / Queen Ant Doll Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91257" item_2_id="91257" chance="70" success_item="91422-1" fail_item="91257-1" commission="0">
+		<!--Queen Ant Doll Lv. 2 & Queen Ant Doll Lv. 2 = Queen Ant Doll Lv. 3 / Queen Ant Doll Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="94155" item_2_id="94155" chance="7" success_item="91258-1" fail_item="94155-1" commission="0">
+		<!--Orfen Doll Lv. 1 & Orfen Doll Lv. 1 = Orfen Doll Lv. 2 / Orfen Doll Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91258" item_2_id="91258" chance="70" success_item="91424-1" fail_item="91258-1" commission="0">
+		<!--Orfen Doll Lv. 2 & Orfen Doll Lv. 2 = Orfen Doll Lv. 3 / Orfen Doll Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="94275" item_2_id="94273" chance="65" success_item="94276-1" fail_item="94275-1" commission="0">
+		<!--Chocolate Doll - Lv. 1 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 2 (Time-limited) / Chocolate Doll - Lv. 1 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94276" item_2_id="94273" chance="45" success_item="94277-1" fail_item="94275-1" commission="0">
+		<!--Chocolate Doll - Lv. 2 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 3 (Time-limited) / Chocolate Doll - Lv. 1 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94277" item_2_id="94273" chance="40" success_item="94278-1" fail_item="94275-1" commission="0">
+		<!--Chocolate Doll - Lv. 3 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 4 (Time-limited) / Chocolate Doll - Lv. 1 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94278" item_2_id="94273" chance="35" success_item="94279-1" fail_item="94275-1" commission="0">
+		<!--Chocolate Doll - Lv. 4 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 5 (Time-limited) / Chocolate Doll - Lv. 1 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94279" item_2_id="94273" chance="30" success_item="94280-1" fail_item="94275-1" commission="0">
+		<!--Chocolate Doll - Lv. 5 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 6 (Time-limited) / Chocolate Doll - Lv. 1 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94280" item_2_id="94273" chance="45" success_item="94281-1" fail_item="94280-1" commission="0">
+		<!--Chocolate Doll - Lv. 6 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 7 (Time-limited) / Chocolate Doll - Lv. 6 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94281" item_2_id="94273" chance="38" success_item="94282-1" fail_item="94280-1" commission="0">
+		<!--Chocolate Doll - Lv. 7 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 8 (Time-limited) / Chocolate Doll - Lv. 6 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94282" item_2_id="94273" chance="33" success_item="94283-1" fail_item="94280-1" commission="0">
+		<!--Chocolate Doll - Lv. 8 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 9 (Time-limited) / Chocolate Doll - Lv. 6 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94283" item_2_id="94273" chance="28" success_item="94284-1" fail_item="94280-1" commission="0">
+		<!--Chocolate Doll - Lv. 9 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 10 (Time-limited) / Chocolate Doll - Lv. 6 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94284" item_2_id="94273" chance="20" success_item="94285-1" fail_item="94280-1" commission="0">
+		<!--Chocolate Doll - Lv. 10 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 11 (Time-limited) / Chocolate Doll - Lv. 6 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94285" item_2_id="94273" chance="28" success_item="94286-1" fail_item="94285-1" commission="0">
+		<!--Chocolate Doll - Lv. 11 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 12 (Time-limited) / Chocolate Doll - Lv. 11 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94286" item_2_id="94273" chance="18" success_item="94287-1" fail_item="94285-1" commission="0">
+		<!--Chocolate Doll - Lv. 12 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 13 (Time-limited) / Chocolate Doll - Lv. 11 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94287" item_2_id="94273" chance="12" success_item="94288-1" fail_item="94285-1" commission="0">
+		<!--Chocolate Doll - Lv. 13 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 14 (Time-limited) / Chocolate Doll - Lv. 11 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94288" item_2_id="94273" chance="7" success_item="94289-1" fail_item="94285-1" commission="0">
+		<!--Chocolate Doll - Lv. 14 (Time-limited) & Chocolate (Time-limited) = Chocolate Doll - Lv. 15 (Time-limited) / Chocolate Doll - Lv. 11 (Time-limited)-->
+	</synthesis>
+	<synthesis item_1_id="94292" item_2_id="92039" chance="100" success_item="94518-1" fail_item="94518-1" commission="0">
+		<!--Jewel Essence Lv. 5 - Amber (Time-limited) & Amber Lv. 4 = Amber Lv. 5 / Amber Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94293" item_2_id="92049" chance="100" success_item="94519-1" fail_item="94519-1" commission="0">
+		<!--Jewel Essence Lv. 5 - Opal (Time-limited) & Opal Lv. 4 = Opal Lv. 5 / Opal Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94294" item_2_id="92059" chance="100" success_item="94520-1" fail_item="94520-1" commission="0">
+		<!--Jewel Essence Lv. 5 - Coral (Time-limited) & Coral Lv. 4 = Coral Lv. 5 / Coral Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94295" item_2_id="92069" chance="100" success_item="94521-1" fail_item="94521-1" commission="0">
+		<!--Jewel Essence Lv. 5 - Onyx (Time-limited) & Onyx Lv. 4 = Onyx Lv. 5 / Onyx Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94296" item_2_id="92079" chance="100" success_item="94522-1" fail_item="94522-1" commission="0">
+		<!--Jewel Essence Lv. 5 - Spinel (Time-limited) & Spinel Lv. 4 = Spinel Lv. 5 / Spinel Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94297" item_2_id="92089" chance="100" success_item="94523-1" fail_item="94523-1" commission="0">
+		<!--Jewel Essence Lv. 5 - Zircon (Time-limited) & Zircon Lv. 4 = Zircon Lv. 5 / Zircon Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94298" item_2_id="92099" chance="100" success_item="94524-1" fail_item="94524-1" commission="0">
+		<!--Jewel Essence Lv. 5 - Moonstone (Time-limited) & Moonstone Lv. 4 = Moonstone Lv. 5 / Moonstone Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94307" item_2_id="92038" chance="100" success_item="92039-1" fail_item="92039-1" commission="0">
+		<!--Jewel Essence Lv. 4 - Amber (Time-limited) & Amber Lv. 3 = Amber Lv. 4 / Amber Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94308" item_2_id="92048" chance="100" success_item="92049-1" fail_item="92049-1" commission="0">
+		<!--Jewel Essence Lv. 4 - Opal (Time-limited) & Opal Lv. 3 = Opal Lv. 4 / Opal Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94309" item_2_id="92058" chance="100" success_item="92059-1" fail_item="92059-1" commission="0">
+		<!--Jewel Essence Lv. 4 - Coral (Time-limited) & Coral Lv. 3 = Coral Lv. 4 / Coral Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94310" item_2_id="92068" chance="100" success_item="92069-1" fail_item="92069-1" commission="0">
+		<!--Jewel Essence Lv. 4 - Onyx (Time-limited) & Onyx Lv. 3 = Onyx Lv. 4 / Onyx Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94311" item_2_id="92078" chance="100" success_item="92079-1" fail_item="92079-1" commission="0">
+		<!--Jewel Essence Lv. 4 - Spinel (Time-limited) & Spinel Lv. 3 = Spinel Lv. 4 / Spinel Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94312" item_2_id="92088" chance="100" success_item="92089-1" fail_item="92089-1" commission="0">
+		<!--Jewel Essence Lv. 4 - Zircon (Time-limited) & Zircon Lv. 3 = Zircon Lv. 4 / Zircon Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94313" item_2_id="92098" chance="100" success_item="92099-1" fail_item="92099-1" commission="0">
+		<!--Jewel Essence Lv. 4 - Moonstone (Time-limited) & Moonstone Lv. 3 = Moonstone Lv. 4 / Moonstone Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94509" item_2_id="94509" chance="7" success_item="91604-1" fail_item="94509-1" commission="0">
+		<!--Frintezza Doll Lv. 1 & Frintezza Doll Lv. 1 = Frintezza Doll Lv. 2 / Frintezza Doll Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="91604" item_2_id="91604" chance="70" success_item="91605-1" fail_item="91604-1" commission="0">
+		<!--Frintezza Doll Lv. 2 & Frintezza Doll Lv. 2 = Frintezza Doll Lv. 3 / Frintezza Doll Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="94518" item_2_id="94518" chance="25" success_item="92040-1" fail_item="94518-1" commission="0">
+		<!--Amber Lv. 5 & Amber Lv. 5 = Amber Lv. 6 / Amber Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94519" item_2_id="94519" chance="25" success_item="92050-1" fail_item="94519-1" commission="0">
+		<!--Opal Lv. 5 & Opal Lv. 5 = Opal Lv. 6 / Opal Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94520" item_2_id="94520" chance="25" success_item="92060-1" fail_item="94520-1" commission="0">
+		<!--Coral Lv. 5 & Coral Lv. 5 = Coral Lv. 6 / Coral Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94521" item_2_id="94521" chance="25" success_item="92070-1" fail_item="94521-1" commission="0">
+		<!--Onyx Lv. 5 & Onyx Lv. 5 = Onyx Lv. 6 / Onyx Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94522" item_2_id="94522" chance="25" success_item="92080-1" fail_item="94522-1" commission="0">
+		<!--Spinel Lv. 5 & Spinel Lv. 5 = Spinel Lv. 6 / Spinel Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94523" item_2_id="94523" chance="25" success_item="92090-1" fail_item="94523-1" commission="0">
+		<!--Zircon Lv. 5 & Zircon Lv. 5 = Zircon Lv. 6 / Zircon Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94524" item_2_id="94524" chance="25" success_item="92100-1" fail_item="94524-1" commission="0">
+		<!--Moonstone Lv. 5 & Moonstone Lv. 5 = Moonstone Lv. 6 / Moonstone Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="92041" item_2_id="92041" chance="15" success_item="92042-1" fail_item="92041-1" commission="0">
+		<!--Amber Lv. 7 & Amber Lv. 7 = Amber Lv. 8 / Amber Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="92051" item_2_id="92051" chance="15" success_item="92052-1" fail_item="92051-1" commission="0">
+		<!--Opal Lv. 7 & Opal Lv. 7 = Opal Lv. 8 / Opal Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="92061" item_2_id="92061" chance="15" success_item="92062-1" fail_item="92061-1" commission="0">
+		<!--Coral Lv. 7 & Coral Lv. 7 = Coral Lv. 8 / Coral Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="92071" item_2_id="92071" chance="15" success_item="92072-1" fail_item="92071-1" commission="0">
+		<!--Onyx Lv. 7 & Onyx Lv. 7 = Onyx Lv. 8 / Onyx Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="92081" item_2_id="92081" chance="15" success_item="92082-1" fail_item="92081-1" commission="0">
+		<!--Spinel Lv. 7 & Spinel Lv. 7 = Spinel Lv. 8 / Spinel Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="92091" item_2_id="92091" chance="15" success_item="92092-1" fail_item="92091-1" commission="0">
+		<!--Zircon Lv. 7 & Zircon Lv. 7 = Zircon Lv. 8 / Zircon Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="92101" item_2_id="92101" chance="15" success_item="92102-1" fail_item="92101-1" commission="0">
+		<!--Moonstone Lv. 7 & Moonstone Lv. 7 = Moonstone Lv. 8 / Moonstone Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="94645" item_2_id="94645" chance="7" success_item="94646-1" fail_item="94645-1" commission="0">
+		<!--Zaken Doll Lv. 1 & Zaken Doll Lv. 1 = Zaken Doll Lv. 2 / Zaken Doll Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94646" item_2_id="94646" chance="70" success_item="94647-1" fail_item="94646-1" commission="0">
+		<!--Zaken Doll Lv. 2 & Zaken Doll Lv. 2 = Zaken Doll Lv. 3 / Zaken Doll Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="94648" item_2_id="94648" chance="7" success_item="94649-1" fail_item="94648-1" commission="0">
+		<!--Core Doll Lv. 1 & Core Doll Lv. 1 = Core Doll Lv. 2 / Core Doll Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94649" item_2_id="94649" chance="70" success_item="94650-1" fail_item="94649-1" commission="0">
+		<!--Core Doll Lv. 2 & Core Doll Lv. 2 = Core Doll Lv. 3 / Core Doll Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="94706" item_2_id="94716" chance="60" success_item="94707-1" fail_item="94706-1" commission="0">
+		<!--Talisman of Hellbound Lv. 1 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 2 / Talisman of Hellbound Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94707" item_2_id="94716" chance="50" success_item="94708-1" fail_item="94706-1" commission="0">
+		<!--Talisman of Hellbound Lv. 2 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 3 / Talisman of Hellbound Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94708" item_2_id="94716" chance="50" success_item="94709-1" fail_item="94707-1" commission="0">
+		<!--Talisman of Hellbound Lv. 3 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 4 / Talisman of Hellbound Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="94709" item_2_id="94716" chance="40" success_item="94710-1" fail_item="94708-1" commission="0">
+		<!--Talisman of Hellbound Lv. 4 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 5 / Talisman of Hellbound Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="94710" item_2_id="94716" chance="40" success_item="94711-1" fail_item="94709-1" commission="0">
+		<!--Talisman of Hellbound Lv. 5 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 6 / Talisman of Hellbound Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94711" item_2_id="94716" chance="30" success_item="94712-1" fail_item="94710-1" commission="0">
+		<!--Talisman of Hellbound Lv. 6 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 7 / Talisman of Hellbound Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="94712" item_2_id="94716" chance="30" success_item="94713-1" fail_item="94711-1" commission="0">
+		<!--Talisman of Hellbound Lv. 7 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 8 / Talisman of Hellbound Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="94713" item_2_id="94716" chance="20" success_item="94714-1" fail_item="94712-1" commission="0">
+		<!--Talisman of Hellbound Lv. 8 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 9 / Talisman of Hellbound Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="94714" item_2_id="94716" chance="10" success_item="94715-1" fail_item="94713-1" commission="0">
+		<!--Talisman of Hellbound Lv. 9 & Talisman of Hellbound Fragment = Talisman of Hellbound Lv. 10 / Talisman of Hellbound Lv. 8-->
+	</synthesis>
+	<synthesis item_1_id="94781" item_2_id="94780" chance="70" success_item="94782-1" fail_item="94781-1" commission="0">
+		<!--Growth Rune Lv. 1 & Growth Rune Fragment = Growth Rune Lv. 2 / Growth Rune Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94782" item_2_id="94780" chance="60" success_item="94783-1" fail_item="94781-1" commission="0">
+		<!--Growth Rune Lv. 2 & Growth Rune Fragment = Growth Rune Lv. 3 / Growth Rune Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94783" item_2_id="94780" chance="50" success_item="94784-1" fail_item="94781-1" commission="0">
+		<!--Growth Rune Lv. 3 & Growth Rune Fragment = Growth Rune Lv. 4 / Growth Rune Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94784" item_2_id="94780" chance="40" success_item="94785-1" fail_item="94781-1" commission="0">
+		<!--Growth Rune Lv. 4 & Growth Rune Fragment = Growth Rune Lv. 5 / Growth Rune Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94785" item_2_id="94780" chance="30" success_item="94786-1" fail_item="94781-1" commission="0">
+		<!--Growth Rune Lv. 5 & Growth Rune Fragment = Growth Rune Lv. 6 / Growth Rune Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="94786" item_2_id="94780" chance="50" success_item="94787-1" fail_item="94786-1" commission="0">
+		<!--Growth Rune Lv. 6 & Growth Rune Fragment = Growth Rune Lv. 7 / Growth Rune Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="94787" item_2_id="94780" chance="40" success_item="94788-1" fail_item="94786-1" commission="0">
+		<!--Growth Rune Lv. 7 & Growth Rune Fragment = Growth Rune Lv. 8 / Growth Rune Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="94788" item_2_id="94780" chance="30" success_item="94789-1" fail_item="94786-1" commission="0">
+		<!--Growth Rune Lv. 8 & Growth Rune Fragment = Growth Rune Lv. 9 / Growth Rune Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="94789" item_2_id="94780" chance="20" success_item="94790-1" fail_item="94786-1" commission="0">
+		<!--Growth Rune Lv. 9 & Growth Rune Fragment = Growth Rune Lv. 10 / Growth Rune Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="95783" item_2_id="95783" chance="70" success_item="95784-1" fail_item="95783-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 1 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 2 - Weapon / Aden's Soul Crystal Lv. 1 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95784" item_2_id="95783" chance="60" success_item="95785-1" fail_item="95783-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 2 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 3 - Weapon / Aden's Soul Crystal Lv. 1 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95785" item_2_id="95783" chance="50" success_item="95786-1" fail_item="95783-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 3 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 4 - Weapon / Aden's Soul Crystal Lv. 1 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95786" item_2_id="95783" chance="40" success_item="95787-1" fail_item="95783-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 4 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 5 - Weapon / Aden's Soul Crystal Lv. 1 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95787" item_2_id="95783" chance="60" success_item="95788-1" fail_item="95783-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 5 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 6 - Weapon / Aden's Soul Crystal Lv. 1 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95788" item_2_id="95783" chance="55" success_item="95789-1" fail_item="95788-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 6 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 7 - Weapon / Aden's Soul Crystal Lv. 6 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95789" item_2_id="95783" chance="50" success_item="95790-1" fail_item="95788-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 7 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 8 - Weapon / Aden's Soul Crystal Lv. 6 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95790" item_2_id="95783" chance="45" success_item="95791-1" fail_item="95788-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 8 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 9 - Weapon / Aden's Soul Crystal Lv. 6 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95791" item_2_id="95783" chance="40" success_item="95792-1" fail_item="95788-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 9 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 10 - Weapon / Aden's Soul Crystal Lv. 6 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95792" item_2_id="95783" chance="50" success_item="95793-1" fail_item="95788-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 10 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 11 - Weapon / Aden's Soul Crystal Lv. 6 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95793" item_2_id="95783" chance="45" success_item="95794-1" fail_item="95793-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 11 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 12 - Weapon / Aden's Soul Crystal Lv. 11 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95794" item_2_id="95783" chance="40" success_item="95795-1" fail_item="95793-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 12 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 13 - Weapon / Aden's Soul Crystal Lv. 11 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95795" item_2_id="95783" chance="35" success_item="95796-1" fail_item="95793-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 13 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 14 - Weapon / Aden's Soul Crystal Lv. 11 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95796" item_2_id="95783" chance="30" success_item="95797-1" fail_item="95793-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 14 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 15 - Weapon / Aden's Soul Crystal Lv. 11 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95797" item_2_id="95783" chance="30" success_item="95798-1" fail_item="95793-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 15 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 16 - Weapon / Aden's Soul Crystal Lv. 11 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95798" item_2_id="95783" chance="25" success_item="95799-1" fail_item="95798-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 16 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 17 - Weapon / Aden's Soul Crystal Lv. 16 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95799" item_2_id="95783" chance="20" success_item="95800-1" fail_item="95798-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 17 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 18 - Weapon / Aden's Soul Crystal Lv. 16 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95800" item_2_id="95783" chance="15" success_item="95801-1" fail_item="95798-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 18 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 19 - Weapon / Aden's Soul Crystal Lv. 16 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="95801" item_2_id="95783" chance="10" success_item="95802-1" fail_item="95798-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 19 - Weapon & Aden's Soul Crystal Lv. 1 - Weapon = Aden's Soul Crystal Lv. 20 - Weapon / Aden's Soul Crystal Lv. 16 - Weapon-->
+	</synthesis>
+	<synthesis item_1_id="94183" item_2_id="91076" chance="25" success_item="95883-1" fail_item="94182-1" commission="0">
+		<!--Venir's Talisman Lv. 25 & Venir's Talisman Fragment = Venir's Talisman Lv. 26 / Venir's Talisman Lv. 24-->
+	</synthesis>
+	<synthesis item_1_id="95883" item_2_id="91076" chance="20" success_item="95884-1" fail_item="94182-1" commission="0">
+		<!--Venir's Talisman Lv. 26 & Venir's Talisman Fragment = Venir's Talisman Lv. 27 / Venir's Talisman Lv. 24-->
+	</synthesis>
+	<synthesis item_1_id="95884" item_2_id="91076" chance="15" success_item="95885-1" fail_item="94182-1" commission="0">
+		<!--Venir's Talisman Lv. 27 & Venir's Talisman Fragment = Venir's Talisman Lv. 28 / Venir's Talisman Lv. 24-->
+	</synthesis>
+	<synthesis item_1_id="95885" item_2_id="91076" chance="10" success_item="95886-1" fail_item="94182-1" commission="0">
+		<!--Venir's Talisman Lv. 28 & Venir's Talisman Fragment = Venir's Talisman Lv. 29 / Venir's Talisman Lv. 24-->
+	</synthesis>
+	<synthesis item_1_id="95886" item_2_id="91076" chance="30" success_item="95887-1" fail_item="94182-1" commission="0">
+		<!--Venir's Talisman Lv. 29 & Venir's Talisman Fragment = Venir's Talisman Lv. 30 / Venir's Talisman Lv. 24-->
+	</synthesis>
+	<synthesis item_1_id="94790" item_2_id="94780" chance="20" success_item="94791-1" fail_item="94786-1" commission="0">
+		<!--Growth Rune Lv. 10 & Growth Rune Fragment = Growth Rune Lv. 11 / Growth Rune Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="94791" item_2_id="94780" chance="30" success_item="94792-1" fail_item="94791-1" commission="0">
+		<!--Growth Rune Lv. 11 & Growth Rune Fragment = Growth Rune Lv. 12 / Growth Rune Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="94792" item_2_id="94780" chance="20" success_item="94793-1" fail_item="94791-1" commission="0">
+		<!--Growth Rune Lv. 12 & Growth Rune Fragment = Growth Rune Lv. 13 / Growth Rune Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="94793" item_2_id="94780" chance="15" success_item="94794-1" fail_item="94791-1" commission="0">
+		<!--Growth Rune Lv. 13 & Growth Rune Fragment = Growth Rune Lv. 14 / Growth Rune Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="94794" item_2_id="94780" chance="10" success_item="94795-1" fail_item="94791-1" commission="0">
+		<!--Growth Rune Lv. 14 & Growth Rune Fragment = Growth Rune Lv. 15 / Growth Rune Lv. 11-->
+	</synthesis>
+	<synthesis item_1_id="96601" item_2_id="96601" chance="7" success_item="96602-1" fail_item="96601-1" commission="0">
+		<!--Antharas Doll Lv. 1 & Antharas Doll Lv. 1 = Antharas Doll Lv. 2 / Antharas Doll Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="96602" item_2_id="96602" chance="70" success_item="96603-1" fail_item="96602-1" commission="0">
+		<!--Antharas Doll Lv. 2 & Antharas Doll Lv. 2 = Antharas Doll Lv. 3 / Antharas Doll Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="96617" item_2_id="96623" chance="50" success_item="96355-1" fail_item="96617-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96355" item_2_id="96623" chance="25" success_item="96356-1" fail_item="96355-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96356" item_2_id="96623" chance="20" success_item="96357-1" fail_item="96356-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96357" item_2_id="96623" chance="15" success_item="96358-1" fail_item="96357-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96358" item_2_id="96623" chance="10" success_item="96359-1" fail_item="96358-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96359" item_2_id="96623" chance="8" success_item="96360-1" fail_item="96359-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96360" item_2_id="96623" chance="6" success_item="96361-1" fail_item="96360-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96361" item_2_id="96623" chance="5" success_item="96362-1" fail_item="96361-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96362" item_2_id="96623" chance="5" success_item="96363-1" fail_item="96362-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96363" item_2_id="96623" chance="5" success_item="96364-1" fail_item="96363-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96364" item_2_id="96623" chance="5" success_item="96365-1" fail_item="96364-1" commission="600000">
+		<!--STR Dye & Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96365" item_2_id="96630" chance="10" success_item="96366-1" fail_item="96365-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96366" item_2_id="96630" chance="8" success_item="96367-1" fail_item="96366-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96367" item_2_id="96630" chance="6" success_item="96368-1" fail_item="96367-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96368" item_2_id="96630" chance="5" success_item="96369-1" fail_item="96368-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96369" item_2_id="96630" chance="4" success_item="96370-1" fail_item="96369-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96370" item_2_id="96630" chance="3" success_item="96371-1" fail_item="96370-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96371" item_2_id="96630" chance="2" success_item="96372-1" fail_item="96371-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96372" item_2_id="96630" chance="1.5" success_item="96373-1" fail_item="96372-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96373" item_2_id="96630" chance="0.5" success_item="96374-1" fail_item="96373-1" commission="1000000">
+		<!--STR Dye & Enhanced Dye Powder = STR Dye / STR Dye-->
+	</synthesis>
+	<synthesis item_1_id="96618" item_2_id="96623" chance="50" success_item="96375-1" fail_item="96618-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96375" item_2_id="96623" chance="25" success_item="96376-1" fail_item="96375-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96376" item_2_id="96623" chance="20" success_item="96377-1" fail_item="96376-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96377" item_2_id="96623" chance="15" success_item="96378-1" fail_item="96377-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96378" item_2_id="96623" chance="10" success_item="96379-1" fail_item="96378-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96379" item_2_id="96623" chance="8" success_item="96380-1" fail_item="96379-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96380" item_2_id="96623" chance="6" success_item="96381-1" fail_item="96380-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96381" item_2_id="96623" chance="5" success_item="96382-1" fail_item="96381-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96382" item_2_id="96623" chance="5" success_item="96383-1" fail_item="96382-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96383" item_2_id="96623" chance="5" success_item="96384-1" fail_item="96383-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96384" item_2_id="96623" chance="5" success_item="96385-1" fail_item="96384-1" commission="600000">
+		<!--CON Dye & Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96385" item_2_id="96630" chance="10" success_item="96386-1" fail_item="96385-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96386" item_2_id="96630" chance="8" success_item="96387-1" fail_item="96386-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96387" item_2_id="96630" chance="6" success_item="96388-1" fail_item="96387-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96388" item_2_id="96630" chance="5" success_item="96389-1" fail_item="96388-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96389" item_2_id="96630" chance="4" success_item="96390-1" fail_item="96389-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96390" item_2_id="96630" chance="3" success_item="96391-1" fail_item="96390-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96391" item_2_id="96630" chance="2" success_item="96392-1" fail_item="96391-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96392" item_2_id="96630" chance="1.5" success_item="96393-1" fail_item="96392-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96393" item_2_id="96630" chance="0.5" success_item="96394-1" fail_item="96393-1" commission="1000000">
+		<!--CON Dye & Enhanced Dye Powder = CON Dye / CON Dye-->
+	</synthesis>
+	<synthesis item_1_id="96619" item_2_id="96623" chance="50" success_item="96395-1" fail_item="96619-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96395" item_2_id="96623" chance="25" success_item="96396-1" fail_item="96395-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96396" item_2_id="96623" chance="20" success_item="96397-1" fail_item="96396-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96397" item_2_id="96623" chance="15" success_item="96398-1" fail_item="96397-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96398" item_2_id="96623" chance="10" success_item="96399-1" fail_item="96398-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96399" item_2_id="96623" chance="8" success_item="96400-1" fail_item="96399-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96400" item_2_id="96623" chance="6" success_item="96401-1" fail_item="96400-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96401" item_2_id="96623" chance="5" success_item="96402-1" fail_item="96401-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96402" item_2_id="96623" chance="5" success_item="96403-1" fail_item="96402-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96403" item_2_id="96623" chance="5" success_item="96404-1" fail_item="96403-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96404" item_2_id="96623" chance="5" success_item="96405-1" fail_item="96404-1" commission="600000">
+		<!--DEX Dye & Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96405" item_2_id="96630" chance="10" success_item="96406-1" fail_item="96405-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96406" item_2_id="96630" chance="8" success_item="96407-1" fail_item="96406-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96407" item_2_id="96630" chance="6" success_item="96408-1" fail_item="96407-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96408" item_2_id="96630" chance="5" success_item="96409-1" fail_item="96408-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96409" item_2_id="96630" chance="4" success_item="96410-1" fail_item="96409-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96410" item_2_id="96630" chance="3" success_item="96411-1" fail_item="96410-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96411" item_2_id="96630" chance="2" success_item="96412-1" fail_item="96411-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96412" item_2_id="96630" chance="1.5" success_item="96413-1" fail_item="96412-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96413" item_2_id="96630" chance="0.5" success_item="96414-1" fail_item="96413-1" commission="1000000">
+		<!--DEX Dye & Enhanced Dye Powder = DEX Dye / DEX Dye-->
+	</synthesis>
+	<synthesis item_1_id="96620" item_2_id="96623" chance="50" success_item="96415-1" fail_item="96620-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96415" item_2_id="96623" chance="25" success_item="96416-1" fail_item="96415-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96416" item_2_id="96623" chance="20" success_item="96417-1" fail_item="96416-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96417" item_2_id="96623" chance="15" success_item="96418-1" fail_item="96417-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96418" item_2_id="96623" chance="10" success_item="96419-1" fail_item="96418-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96419" item_2_id="96623" chance="8" success_item="96420-1" fail_item="96419-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96420" item_2_id="96623" chance="6" success_item="96421-1" fail_item="96420-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96421" item_2_id="96623" chance="5" success_item="96422-1" fail_item="96421-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96422" item_2_id="96623" chance="5" success_item="96423-1" fail_item="96422-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96423" item_2_id="96623" chance="5" success_item="96424-1" fail_item="96423-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96424" item_2_id="96623" chance="5" success_item="96425-1" fail_item="96424-1" commission="600000">
+		<!--INT Dye & Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96425" item_2_id="96630" chance="10" success_item="96426-1" fail_item="96425-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96426" item_2_id="96630" chance="8" success_item="96427-1" fail_item="96426-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96427" item_2_id="96630" chance="6" success_item="96428-1" fail_item="96427-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96428" item_2_id="96630" chance="5" success_item="96429-1" fail_item="96428-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96429" item_2_id="96630" chance="4" success_item="96430-1" fail_item="96429-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96430" item_2_id="96630" chance="3" success_item="96431-1" fail_item="96430-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96431" item_2_id="96630" chance="2" success_item="96432-1" fail_item="96431-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96432" item_2_id="96630" chance="1.5" success_item="96433-1" fail_item="96432-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96433" item_2_id="96630" chance="0.5" success_item="96434-1" fail_item="96433-1" commission="1000000">
+		<!--INT Dye & Enhanced Dye Powder = INT Dye / INT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96621" item_2_id="96623" chance="50" success_item="96435-1" fail_item="96621-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96435" item_2_id="96623" chance="25" success_item="96436-1" fail_item="96435-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96436" item_2_id="96623" chance="20" success_item="96437-1" fail_item="96436-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96437" item_2_id="96623" chance="15" success_item="96438-1" fail_item="96437-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96438" item_2_id="96623" chance="10" success_item="96439-1" fail_item="96438-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96439" item_2_id="96623" chance="8" success_item="96440-1" fail_item="96439-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96440" item_2_id="96623" chance="6" success_item="96441-1" fail_item="96440-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96441" item_2_id="96623" chance="5" success_item="96442-1" fail_item="96441-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96442" item_2_id="96623" chance="5" success_item="96443-1" fail_item="96442-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96443" item_2_id="96623" chance="5" success_item="96444-1" fail_item="96443-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96444" item_2_id="96623" chance="5" success_item="96445-1" fail_item="96444-1" commission="600000">
+		<!--MEN Dye & Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96445" item_2_id="96630" chance="10" success_item="96446-1" fail_item="96445-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96446" item_2_id="96630" chance="8" success_item="96447-1" fail_item="96446-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96447" item_2_id="96630" chance="6" success_item="96448-1" fail_item="96447-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96448" item_2_id="96630" chance="5" success_item="96449-1" fail_item="96448-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96449" item_2_id="96630" chance="4" success_item="96450-1" fail_item="96449-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96450" item_2_id="96630" chance="3" success_item="96451-1" fail_item="96450-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96451" item_2_id="96630" chance="2" success_item="96452-1" fail_item="96451-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96452" item_2_id="96630" chance="1.5" success_item="96453-1" fail_item="96452-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96453" item_2_id="96630" chance="0.5" success_item="96454-1" fail_item="96453-1" commission="1000000">
+		<!--MEN Dye & Enhanced Dye Powder = MEN Dye / MEN Dye-->
+	</synthesis>
+	<synthesis item_1_id="96622" item_2_id="96623" chance="50" success_item="96455-1" fail_item="96622-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96455" item_2_id="96623" chance="25" success_item="96456-1" fail_item="96455-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96456" item_2_id="96623" chance="20" success_item="96457-1" fail_item="96456-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96457" item_2_id="96623" chance="15" success_item="96458-1" fail_item="96457-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96458" item_2_id="96623" chance="10" success_item="96459-1" fail_item="96458-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96459" item_2_id="96623" chance="8" success_item="96460-1" fail_item="96459-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96460" item_2_id="96623" chance="6" success_item="96461-1" fail_item="96460-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96461" item_2_id="96623" chance="5" success_item="96462-1" fail_item="96461-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96462" item_2_id="96623" chance="5" success_item="96463-1" fail_item="96462-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96463" item_2_id="96623" chance="5" success_item="96464-1" fail_item="96463-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96464" item_2_id="96623" chance="5" success_item="96465-1" fail_item="96464-1" commission="600000">
+		<!--WIT Dye & Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96465" item_2_id="96630" chance="10" success_item="96466-1" fail_item="96465-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96466" item_2_id="96630" chance="8" success_item="96467-1" fail_item="96466-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96467" item_2_id="96630" chance="6" success_item="96468-1" fail_item="96467-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96468" item_2_id="96630" chance="5" success_item="96469-1" fail_item="96468-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96469" item_2_id="96630" chance="4" success_item="96470-1" fail_item="96469-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96470" item_2_id="96630" chance="3" success_item="96471-1" fail_item="96470-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96471" item_2_id="96630" chance="2" success_item="96472-1" fail_item="96471-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96472" item_2_id="96630" chance="1.5" success_item="96473-1" fail_item="96472-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96473" item_2_id="96630" chance="0.5" success_item="96474-1" fail_item="96473-1" commission="1000000">
+		<!--WIT Dye & Enhanced Dye Powder = WIT Dye / WIT Dye-->
+	</synthesis>
+	<synthesis item_1_id="96603" item_2_id="96603" chance="50" success_item="96637-1" fail_item="96603-1" commission="0">
+		<!--Antharas Doll Lv. 3 & Antharas Doll Lv. 3 = Antharas Doll Lv. 4 / Antharas Doll Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="96637" item_2_id="96637" chance="30" success_item="96644-1" fail_item="96637-1" commission="0">
+		<!--Antharas Doll Lv. 4 & Antharas Doll Lv. 4 = Antharas Doll Lv. 5 / Antharas Doll Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="91422" item_2_id="91422" chance="50" success_item="96631-1" fail_item="91422-1" commission="0">
+		<!--Queen Ant Doll Lv. 3 & Queen Ant Doll Lv. 3 = Queen Ant Doll Lv. 4 / Queen Ant Doll Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="96631" item_2_id="96631" chance="30" success_item="96638-1" fail_item="96631-1" commission="0">
+		<!--Queen Ant Doll Lv. 4 & Queen Ant Doll Lv. 4 = Queen Ant Doll Lv. 5 / Queen Ant Doll Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="91424" item_2_id="91424" chance="50" success_item="96633-1" fail_item="91424-1" commission="0">
+		<!--Orfen Doll Lv. 3 & Orfen Doll Lv. 3 = Orfen Doll Lv. 4 / Orfen Doll Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="96633" item_2_id="96633" chance="30" success_item="96640-1" fail_item="96633-1" commission="0">
+		<!--Orfen Doll Lv. 4 & Orfen Doll Lv. 4 = Orfen Doll Lv. 5 / Orfen Doll Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="91423" item_2_id="91423" chance="50" success_item="96632-1" fail_item="91423-1" commission="0">
+		<!--Baium Doll Lv. 3 & Baium Doll Lv. 3 = Baium Doll Lv. 4 / Baium Doll Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="96632" item_2_id="96632" chance="30" success_item="96639-1" fail_item="96632-1" commission="0">
+		<!--Baium Doll Lv. 4 & Baium Doll Lv. 4 = Baium Doll Lv. 5 / Baium Doll Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94647" item_2_id="94647" chance="50" success_item="96634-1" fail_item="94647-1" commission="0">
+		<!--Zaken Doll Lv. 3 & Zaken Doll Lv. 3 = Zaken Doll Lv. 4 / Zaken Doll Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="96634" item_2_id="96634" chance="30" success_item="96641-1" fail_item="96634-1" commission="0">
+		<!--Zaken Doll Lv. 4 & Zaken Doll Lv. 4 = Zaken Doll Lv. 5 / Zaken Doll Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="94650" item_2_id="94650" chance="50" success_item="96635-1" fail_item="94650-1" commission="0">
+		<!--Core Doll Lv. 3 & Core Doll Lv. 3 = Core Doll Lv. 4 / Core Doll Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="96635" item_2_id="96635" chance="30" success_item="96642-1" fail_item="96635-1" commission="0">
+		<!--Core Doll Lv. 4 & Core Doll Lv. 4 = Core Doll Lv. 5 / Core Doll Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="91605" item_2_id="91605" chance="50" success_item="96636-1" fail_item="91605-1" commission="0">
+		<!--Frintezza Doll Lv. 3 & Frintezza Doll Lv. 3 = Frintezza Doll Lv. 4 / Frintezza Doll Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="96636" item_2_id="96636" chance="30" success_item="96643-1" fail_item="96636-1" commission="0">
+		<!--Frintezza Doll Lv. 4 & Frintezza Doll Lv. 4 = Frintezza Doll Lv. 5 / Frintezza Doll Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="96700" item_2_id="96700" chance="65" success_item="96701-1" fail_item="96700-1" commission="0">
+		<!--Beryl Lv. 1 & Beryl Lv. 1 = Beryl Lv. 2 / Beryl Lv. 1-->
+	</synthesis>
+	<synthesis item_1_id="96701" item_2_id="96701" chance="40" success_item="96702-1" fail_item="96701-1" commission="0">
+		<!--Beryl Lv. 2 & Beryl Lv. 2 = Beryl Lv. 3 / Beryl Lv. 2-->
+	</synthesis>
+	<synthesis item_1_id="96702" item_2_id="96702" chance="35" success_item="96703-1" fail_item="96702-1" commission="0">
+		<!--Beryl Lv. 3 & Beryl Lv. 3 = Beryl Lv. 4 / Beryl Lv. 3-->
+	</synthesis>
+	<synthesis item_1_id="96703" item_2_id="96703" chance="30" success_item="96704-1" fail_item="96703-1" commission="0">
+		<!--Beryl Lv. 4 & Beryl Lv. 4 = Beryl Lv. 5 / Beryl Lv. 4-->
+	</synthesis>
+	<synthesis item_1_id="96704" item_2_id="96704" chance="25" success_item="96705-1" fail_item="96704-1" commission="0">
+		<!--Beryl Lv. 5 & Beryl Lv. 5 = Beryl Lv. 6 / Beryl Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="96705" item_2_id="96705" chance="20" success_item="96706-1" fail_item="96705-1" commission="0">
+		<!--Beryl Lv. 6 & Beryl Lv. 6 = Beryl Lv. 7 / Beryl Lv. 6-->
+	</synthesis>
+	<synthesis item_1_id="96706" item_2_id="96706" chance="15" success_item="96707-1" fail_item="96706-1" commission="0">
+		<!--Beryl Lv. 7 & Beryl Lv. 7 = Beryl Lv. 8 / Beryl Lv. 7-->
+	</synthesis>
+	<synthesis item_1_id="96901" item_2_id="96901" chance="70" success_item="96902-1" fail_item="96901-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 1 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 2 - Armor / Aden's Soul Crystal Lv. 1 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96902" item_2_id="96901" chance="60" success_item="96903-1" fail_item="96901-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 2 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 3 - Armor / Aden's Soul Crystal Lv. 1 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96903" item_2_id="96901" chance="50" success_item="96904-1" fail_item="96901-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 3 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 4 - Armor / Aden's Soul Crystal Lv. 1 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96904" item_2_id="96901" chance="40" success_item="96905-1" fail_item="96901-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 4 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 5 - Armor / Aden's Soul Crystal Lv. 1 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96905" item_2_id="96901" chance="30" success_item="96906-1" fail_item="96901-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 5 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 6 - Armor / Aden's Soul Crystal Lv. 1 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96906" item_2_id="96901" chance="55" success_item="96907-1" fail_item="96906-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 6 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 7 - Armor / Aden's Soul Crystal Lv. 6 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96907" item_2_id="96901" chance="50" success_item="96908-1" fail_item="96906-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 7 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 8 - Armor / Aden's Soul Crystal Lv. 6 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96908" item_2_id="96901" chance="45" success_item="96909-1" fail_item="96906-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 8 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 9 - Armor / Aden's Soul Crystal Lv. 6 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96909" item_2_id="96901" chance="40" success_item="96910-1" fail_item="96906-1" commission="10000">
+		<!--Aden's Soul Crystal Lv. 9 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 10 - Armor / Aden's Soul Crystal Lv. 6 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96910" item_2_id="96901" chance="30" success_item="96911-1" fail_item="96906-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 10 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 11 - Armor / Aden's Soul Crystal Lv. 6 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96911" item_2_id="96901" chance="45" success_item="96912-1" fail_item="96911-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 11 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 12 - Armor / Aden's Soul Crystal Lv. 11 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96912" item_2_id="96901" chance="40" success_item="96913-1" fail_item="96911-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 12 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 13 - Armor / Aden's Soul Crystal Lv. 11 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96913" item_2_id="96901" chance="35" success_item="96914-1" fail_item="96911-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 13 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 14 - Armor / Aden's Soul Crystal Lv. 11 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96914" item_2_id="96901" chance="30" success_item="96915-1" fail_item="96911-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 14 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 15 - Armor / Aden's Soul Crystal Lv. 11 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96915" item_2_id="96901" chance="30" success_item="96916-1" fail_item="96911-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 15 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 16 - Armor / Aden's Soul Crystal Lv. 11 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96916" item_2_id="96901" chance="25" success_item="96917-1" fail_item="96916-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 16 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 17 - Armor / Aden's Soul Crystal Lv. 16 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96917" item_2_id="96901" chance="20" success_item="96918-1" fail_item="96916-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 17 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 18 - Armor / Aden's Soul Crystal Lv. 16 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96918" item_2_id="96901" chance="15" success_item="96919-1" fail_item="96916-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 18 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 19 - Armor / Aden's Soul Crystal Lv. 16 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="96919" item_2_id="96901" chance="10" success_item="96920-1" fail_item="96916-1" commission="20000">
+		<!--Aden's Soul Crystal Lv. 19 - Armor & Aden's Soul Crystal Lv. 1 - Armor = Aden's Soul Crystal Lv. 20 - Armor / Aden's Soul Crystal Lv. 16 - Armor-->
+	</synthesis>
+	<synthesis item_1_id="91304" item_2_id="91304" chance="25" success_item="96960-1" fail_item="91304-1" commission="0">
+		<!--Brooch Lv. 5 & Brooch Lv. 5 = Brooch Lv. 6 / Brooch Lv. 5-->
+	</synthesis>
+	<synthesis item_1_id="91161" item_2_id="91161" chance="25" success_item="96965-1" fail_item="91161-1" commission="0">
+		<!--Agathion Bracelet Lv. 5 & Agathion Bracelet Lv. 5 = Agathion Bracelet Lv. 6 / Agathion Bracelet Lv. 5-->
+	</synthesis>
+</list>

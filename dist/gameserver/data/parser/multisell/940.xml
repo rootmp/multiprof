@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!-- Author: nexvill -->
+<list>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92268" count="1" />	<!-- Tallum Tunic -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92269" count="1" />	<!-- Tallum Stockings -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92303" count="1" />	<!-- Tallum Helmet (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92282" count="1" />	<!-- Tallum Gloves (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92294" count="1" />	<!-- Tallum Boots (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="2" />	<!-- A-grade Armor Coupon -->
+		<production id="92271" count="1" />	<!-- Robe of Nightmare -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92309" count="1" />	<!-- Helm of Nightmare (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92285" count="1" />	<!-- Gauntlets of Nightmare (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92297" count="1" />	<!-- Boots of Nightmare (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="2" />	<!-- A-grade Armor Coupon -->
+		<production id="92270" count="1" />	<!-- Dark Crystal Robe -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92306" count="1" />	<!-- Dark Crystal Helmet (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92279" count="1" />	<!-- Dark Crystal Gloves (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92291" count="1" />	<!-- Dark Crystal Boots (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="2" />	<!-- A-grade Armor Coupon -->
+		<production id="92272" count="1" />	<!-- Majestic Robe -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92312" count="1" />	<!-- Majestic Circlet (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92288" count="1" />	<!-- Majestic Gauntlets (Robe) -->
+	</item>
+	<item>
+		<ingredient id="93449" count="1" />	<!-- A-grade Armor Coupon -->
+		<production id="92300" count="1" />	<!-- Majestic Boots (Robe) -->
+	</item>
+</list>

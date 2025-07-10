@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<spawn name="giran03_npc2321_11" count="1" respawn="60">
+		<point x="129930" y="115184" z="-3800" h="44745"/>
+		<npc id="30938"/><!--Вануту-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130800" y="115110" z="-3712" h="48604"/>
+		<npc id="19133"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130700" y="115160" z="-3712" h="48604"/>
+		<npc id="19136"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130800" y="115210" z="-3696" h="48604"/>
+		<npc id="19137"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130500" y="115210" z="-3720" h="48604"/>
+		<npc id="19137"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130600" y="115110" z="-3720" h="48604"/>
+		<npc id="19133"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130750" y="115210" z="-3696" h="48604"/>
+		<npc id="19137"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130700" y="115210" z="-3696" h="48604"/>
+		<npc id="19137"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130650" y="115210" z="-3704" h="48604"/>
+		<npc id="19137"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130600" y="115210" z="-3704" h="48604"/>
+		<npc id="19137"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130450" y="115210" z="-3720" h="48604"/>
+		<npc id="19137"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130500" y="115160" z="-3736" h="48604"/>
+		<npc id="19136"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130550" y="115210" z="-3720" h="48604"/>
+		<npc id="19137"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130800" y="115160" z="-3712" h="48604"/>
+		<npc id="19136"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130750" y="115160" z="-3712" h="48604"/>
+		<npc id="19136"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130650" y="115160" z="-3720" h="48604"/>
+		<npc id="19136"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130600" y="115160" z="-3720" h="48604"/>
+		<npc id="19136"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130550" y="115160" z="-3736" h="48604"/>
+		<npc id="19136"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130450" y="115160" z="-3736" h="48604"/>
+		<npc id="19136"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130750" y="115110" z="-3712" h="48604"/>
+		<npc id="19133"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130650" y="115110" z="-3720" h="48604"/>
+		<npc id="19133"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130700" y="115110" z="-3712" h="48604"/>
+		<npc id="19133"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130550" y="115110" z="-3736" h="48604"/>
+		<npc id="19133"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130500" y="115110" z="-3736" h="48604"/>
+		<npc id="19133"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130450" y="115110" z="-3736" h="48604"/>
+		<npc id="19133"/><!--Член Экспедиции-->
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<point x="130648" y="115013" z="-3728" h="18066"/>
+		<npc id="31713"/><!--Фело-->
+	</spawn>
+	<spawn name="giran03_npc2321_11" count="1" respawn="60">
+		<point x="122716" y="110720" z="-3720" h="16384"/>
+		<npc id="31045"/><!--Китска-->
+	</spawn>
+	<spawn name="giran03_npc2321_11" count="1" respawn="60">
+		<point x="122904" y="110828" z="-3720" h="24576"/>
+		<npc id="31044"/><!--Гальман-->
+	</spawn>
+	<spawn name="23_21_NPC_031201_04" count="1" respawn="60">
+		<point x="105792" y="114290" z="-3136" h="49000"/>
+		<npc id="30834"/><!--Сема-->
+	</spawn>
+	<spawn name="23_21_NPC_031201_05" count="1" respawn="60">
+		<point x="105888" y="109808" z="-3192" h="45056"/>
+		<npc id="30836"/><!--Минерва-->
+	</spawn>
+	<spawn name="23_21_NPC_031201_02" count="1" respawn="60">
+		<point x="106581" y="113352" z="-3192" h="28672"/>
+		<npc id="30835"/><!--Икар-->
+	</spawn>
+	<spawn name="23_21_NPC_031201_03" count="1" respawn="60">
+		<point x="104870" y="113221" z="-3184" h="4096"/>
+		<npc id="30833"/><!--Каспар-->
+	</spawn>
+	<spawn name="23_21_NPC_031201_01" count="1" respawn="60">
+		<point x="105745" y="114255" z="-3136" h="49152"/>
+		<npc id="30832"/><!--Хардин-->
+	</spawn>
+	<spawn name="23_21_NPC_031201_08" count="1" respawn="60">
+		<point x="112268" y="112761" z="-2773" h="0"/>
+		<npc id="30762"/><!--Труп Рутца-->
+	</spawn>
+	<spawn name="23_21_NPC_031201_09" count="1" respawn="60">
+		<point x="124664" y="110047" z="-3104" h="0"/>
+		<npc id="30763"/><!--Труп Куртца-->
+	</spawn>
+	<spawn name="23_21_NPC_031201_07" count="1" respawn="60">
+		<point x="103898" y="116896" z="-3022" h="0"/>
+		<npc id="30761"/><!--Труп Флитца-->
+	</spawn>
+	<spawn count="1" respawn="60">
+		<point x="104840" y="113260" z="-3184" h="0"/>
+		<npc id="31582"/><!--Мордред-->
+	</spawn>
+	<spawn count="1" respawn="60">
+		<point x="106586" y="113402" z="-3192" h="33871"/>
+		<npc id="31581"/><!--Анастия-->
+	</spawn>
+	<spawn count="1" respawn="60">
+		<point x="106608" y="113296" z="-3192" h="30000"/>
+		<npc id="31580"/><!--Галадрид-->
+	</spawn>
+</list>

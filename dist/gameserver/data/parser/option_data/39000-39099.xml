@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="39000" />
+	<option_data id="39001" />
+	<option_data id="39002" />
+	<option_data id="39003" />
+	<option_data id="39004" />
+	<option_data id="39005" />
+	<option_data id="39006" />
+	<option_data id="39007" />
+	<option_data id="39008" />
+	<option_data id="39009" />
+	<option_data id="39010" />
+	<option_data id="39011" />
+	<option_data id="39012" />
+	<option_data id="39013" />
+	<option_data id="39014" />
+	<option_data id="39015" />
+	<option_data id="39016" />
+	<option_data id="39017" />
+	<option_data id="39018" />
+	<option_data id="39019" />
+	<option_data id="39020" />
+	<option_data id="39021" />
+	<option_data id="39022" />
+	<option_data id="39023" />
+	<option_data id="39024" />
+	<option_data id="39025" />
+	<option_data id="39026" />
+	<option_data id="39027" />
+	<option_data id="39028" />
+	<option_data id="39029" />
+	<option_data id="39030" />
+	<option_data id="39031">
+		<!--P. Def. +8-->
+		<for>
+			<add order="0x60" stat="pDef" value="8"/>
+		</for>
+	</option_data>
+	<option_data id="39032">
+		<!--P. Def. +8-->
+		<for>
+			<add order="0x60" stat="pDef" value="8"/>
+		</for>
+	</option_data>
+	<option_data id="39033">
+		<!--M. Def. +9-->
+		<for>
+			<add order="0x60" stat="mDef" value="9"/>
+		</for>
+	</option_data>
+	<option_data id="39034">
+		<!--P. Def. +8-->
+		<for>
+			<add order="0x60" stat="pDef" value="8"/>
+		</for>
+	</option_data>
+	<option_data id="39035">
+		<!--M. Def. +9-->
+		<for>
+			<add order="0x60" stat="mDef" value="9"/>
+		</for>
+	</option_data>
+	<option_data id="39036">
+		<!--M. Def. +9-->
+		<for>
+			<add order="0x60" stat="mDef" value="9"/>
+		</for>
+	</option_data>
+	<option_data id="39037">
+		<!--Atk. Spd. +12-->
+		<for>
+			<add order="0x60" stat="pAtkSpd" value="12"/>
+		</for>
+	</option_data>
+	<option_data id="39038">
+		<!--P. Atk. +7.-->
+		<for>
+			<add order="0x60" stat="pAtk" value="7"/>
+		</for>
+	</option_data>
+	<option_data id="39039">
+		<!--Atk. Spd. +13-->
+		<for>
+			<add order="0x60" stat="pAtkSpd" value="13"/>
+		</for>
+	</option_data>
+	<option_data id="39040">
+		<!--M. Atk. +8.-->
+		<for>
+			<add order="0x60" stat="mAtk" value="8"/>
+		</for>
+	</option_data>
+	<option_data id="39041">
+		<!--Casting Spd. +13-->
+		<for>
+			<add order="0x60" stat="mAtkSpd" value="13"/>
+		</for>
+	</option_data>
+	<option_data id="39042">
+		<!--Casting Spd. +12-->
+		<for>
+			<add order="0x60" stat="mAtkSpd" value="13"/>
+		</for>
+	</option_data>
+	<option_data id="39043">
+		<!--P. Atk. +23-->
+		<for>
+			<add order="0x60" stat="pAtk" value="23"/>
+		</for>
+	</option_data>
+	<option_data id="39044">
+		<!--M. Atk. +22-->
+		<for>
+			<add order="0x60" stat="mAtk" value="22"/>
+		</for>
+	</option_data>
+	<option_data id="39045">
+		<!--M. Def. +25-->
+		<for>
+			<add order="0x60" stat="mDef" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39046">
+		<!--P. Def. +24-->
+		<for>
+			<add order="0x60" stat="pDef" value="24"/>
+		</for>
+	</option_data>
+	<option_data id="39047">
+		<!--Max MP +55-->
+		<for>
+			<add order="0x60" stat="maxMp" value="55"/>
+		</for>
+	</option_data>
+	<option_data id="39048">
+		<!--Max HP +55-->
+		<for>
+			<add order="0x60" stat="maxHp" value="55"/>
+		</for>
+	</option_data>
+	<option_data id="39049">
+		<!--Max CP +95-->
+		<for>
+			<add order="0x60" stat="maxCp" value="95"/>
+		</for>
+	</option_data>
+	<option_data id="39050">
+		<!--P. Def. +33-->
+		<for>
+			<add order="0x60" stat="pDef" value="33"/>
+		</for>
+	</option_data>
+	<option_data id="39051">
+		<!--M. Def. +26-->
+		<for>
+			<add order="0x60" stat="mDef" value="26"/>
+		</for>
+	</option_data>
+	<option_data id="39052">
+		<!--Atk. Spd. +25-->
+		<for>
+			<add order="0x60" stat="pAtkSpd" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39053">
+		<!--Casting Spd. +25-->
+		<for>
+			<add order="0x60" stat="mAtkSpd" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39054">
+		<!--M. Def. +29-->
+		<for>
+			<add order="0x60" stat="mDef" value="29"/>
+		</for>
+	</option_data>
+	<option_data id="39055">
+		<!--P. Atk. +15.-->
+		<for>
+			<add order="0x60" stat="pAtk" value="15"/>
+		</for>
+	</option_data>
+	<option_data id="39056">
+		<!--P. Def. +17-->
+		<for>
+			<add order="0x60" stat="pDef" value="17"/>
+		</for>
+	</option_data>
+	<option_data id="39057">
+		<!--M. Def. +18-->
+		<for>
+			<add order="0x60" stat="mDef" value="18"/>
+		</for>
+	</option_data>
+	<option_data id="39058">
+		<!--M. Atk. +12-->
+		<for>
+			<add order="0x60" stat="mAtk" value="12"/>
+		</for>
+	</option_data>
+	<option_data id="39059">
+		<!--P. Def. +33-->
+		<for>
+			<add order="0x60" stat="pDef" value="33"/>
+		</for>
+	</option_data>
+	<option_data id="39060">
+		<!--P. Atk. +28-->
+		<for>
+			<add order="0x60" stat="pAtk" value="28"/>
+		</for>
+	</option_data>
+	<option_data id="39061">
+		<!--M. Atk. +25-->
+		<for>
+			<add order="0x60" stat="mAtk" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39062">
+		<!--P. Atk. +31.-->
+		<for>
+			<add order="0x60" stat="pAtk" value="31"/>
+		</for>
+	</option_data>
+	<option_data id="39063">
+		<!--M. Atk. +30-->
+		<for>
+			<add order="0x60" stat="mAtk" value="30"/>
+		</for>
+	</option_data>
+	<option_data id="39064">
+		<!--P. Def. +35-->
+		<for>
+			<add order="0x60" stat="pDef" value="35"/>
+		</for>
+	</option_data>
+	<option_data id="39065">
+		<!--M. Def. +30-->
+		<for>
+			<add order="0x60" stat="mDef" value="30"/>
+		</for>
+	</option_data>
+	<option_data id="39066">
+		<!--Received Skill Critical Rate -3%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.97"/>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.97"/>
+		</for>
+	</option_data>
+	<option_data id="39067">
+		<!--HP/ MP/ CP Recovery Rate +1-->
+		<for>
+			<add order="0x60" stat="regHp" value="1"/>
+			<add order="0x60" stat="regMp" value="1"/>
+			<add order="0x60" stat="regCp" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39068">
+		<!--Max MP +45-->
+		<for>
+			<add order="0x60" stat="maxMp" value="45"/>
+		</for>
+	</option_data>
+	<option_data id="39069">
+		<!--Max HP +45-->
+		<for>
+			<add order="0x60" stat="maxHp" value="45"/>
+		</for>
+	</option_data>
+	<option_data id="39070">
+		<!--Max CP +80-->
+		<for>
+			<add order="0x60" stat="maxCp" value="85"/>
+		</for>
+	</option_data>
+	<option_data id="39071">
+		<!--M. Atk. +20-->
+		<for>
+			<add order="0x60" stat="mAtk" value="20"/>
+		</for>
+	</option_data>
+	<option_data id="39072">
+		<!--P. Atk. +20-->
+		<for>
+			<add order="0x60" stat="pAtk" value="20"/>
+		</for>
+	</option_data>
+	<option_data id="39073">
+		<!--Received M. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39074">
+		<!--Received M. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39075">
+		<!--P. Def. +55-->
+		<for>
+			<add order="0x60" stat="pDef" value="55"/>
+		</for>
+	</option_data>
+	<option_data id="39076">
+		<!--Effect slots +1-->
+		<for>
+			<add order="0x60" stat="buffLimit" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39077">
+		<!--Inventory slots +1-->
+		<for>
+			<add order="0x60" stat="inventoryLimit" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39078">
+		<!--Received P. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39079">
+		<!--Received P. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39080">
+		<!--M. Def. +46-->
+		<for>
+			<add order="0x60" stat="mDef" value="46"/>
+		</for>
+	</option_data>
+	<option_data id="39081">
+		<!--P. Def. +36-->
+		<for>
+			<add order="0x60" stat="pDef" value="36"/>
+		</for>
+	</option_data>
+	<option_data id="39082">
+		<!--M. Def. +37-->
+		<for>
+			<add order="0x60" stat="mDef" value="37"/>
+		</for>
+	</option_data>
+	<option_data id="39083">
+		<!--Weight limit +500-->
+		<for>
+			<add order="0x60" stat="maxLoad" value="500"/>
+		</for>
+	</option_data>
+	<option_data id="39084">
+		<!--M. Atk. +25-->
+		<for>
+			<add order="0x60" stat="mAtk" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39085">
+		<!--P./ M. Atk. +200-->
+		<for>
+			<add order="0x60" stat="pAtk" value="200"/>
+			<add order="0x60" stat="mAtk" value="200"/>
+		</for>
+	</option_data>
+	<option_data id="39086">
+		<!--M. Skill Critical Damage +15-->
+		<for>
+			<p_magic_critical_dmg value="15" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39087">
+		<!--P. Skill Critical Damage +25-->
+		<for>
+			<p_skill_critical_damage value="25" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39088">
+		<!--P. Atk. +70-->
+		<for>
+			<add order="0x60" stat="pAtk" value="70"/>
+		</for>
+	</option_data>
+	<option_data id="39089">
+		<!--Paralysis Resistance +1%-->
+		<for>
+			<p_defence_trait name="paralyze" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39090">
+		<!--HP/ MP/ CP Recovery Rate +1-->
+		<for>
+			<add order="0x60" stat="regHp" value="1"/>
+			<add order="0x60" stat="regMp" value="1"/>
+			<add order="0x60" stat="regCp" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39091">
+		<!--Imprisonment Resistance +1%-->
+		<for>
+			<p_defence_trait name="sleep" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39092">
+		<!--Paralysis Resistance +1%-->
+		<for>
+			<p_defence_trait name="paralyze" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39093">
+		<!--Speed +1-->
+		<for>
+			<add order="0x60" stat="runSpd" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39094">
+		<!--M. Def. +56-->
+		<for>
+			<add order="0x60" stat="mDef" value="56"/>
+		</for>
+	</option_data>
+	<option_data id="39095">
+		<!--P. Def. +80-->
+		<for>
+			<add order="0x60" stat="pDef" value="80"/>
+		</for>
+	</option_data>
+	<option_data id="39096">
+		<!--Imprisonment Resistance +1%-->
+		<for>
+			<p_defence_trait name="sleep" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39097">
+		<!--Pull Resistance +1%-->
+		<for>
+			<p_defence_trait name="pull" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39098">
+		<!--Max HP +65-->
+		<for>
+			<add order="0x60" stat="maxHp" value="65"/>
+		</for>
+	</option_data>
+	<option_data id="39099">
+		<!--Max MP +100-->
+		<for>
+			<add order="0x60" stat="maxMp" value="100"/>
+		</for>
+	</option_data>
+</list>

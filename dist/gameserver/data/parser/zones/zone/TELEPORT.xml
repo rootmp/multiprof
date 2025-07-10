@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "zone.dtd">
+<list>
+	<zone name="[hellbound_portal_1]" type="dummy">
+		<circle loc="82808 14728 150 -3700 -3300"/>
+	</zone>
+	<zone name="[hellbound_portal_2]" type="dummy">
+		<circle loc="87864 14712 150 -3700 -3300"/>
+	</zone>
+	<zone name="[hellbound_portal_3]" type="dummy">
+		<circle loc="87864 17640 150 -3700 -3300"/>
+	</zone>
+	<zone name="[hellbound_portal_4]" type="dummy">
+		<circle loc="82808 17640 150 -3700 -3300"/>
+	</zone>
+</list>

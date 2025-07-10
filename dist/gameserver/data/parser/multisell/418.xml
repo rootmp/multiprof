@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="70930" count="1"/>	<!--Agathion Bracelet Lv. 2-->
+		<ingredient id="70929" count="1"/>	<!--Agathion Bracelet Lv. 1-->
+		<ingredient id="57" count="500000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="70931" count="1"/>	<!--Agathion Bracelet Lv. 3-->
+		<ingredient id="70930" count="1"/>	<!--Agathion Bracelet Lv. 2-->
+		<ingredient id="90898" count="1"/>	<!--Agathion's Soul-->
+		<ingredient id="57" count="1500000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="70932" count="1"/>	<!--Agathion Bracelet Lv. 4-->
+		<ingredient id="70931" count="1"/>	<!--Agathion Bracelet Lv. 3-->
+		<ingredient id="90899" count="1"/>	<!--Blessed Agathion's Soul-->
+		<ingredient id="57" count="5000000"/>	<!--Adena-->
+	</item>
+	<item>
+		<production id="71152" count="1"/>	<!--Agathion Bracelet Lv. 5-->
+		<ingredient id="70932" count="1"/>	<!--Agathion Bracelet Lv. 4-->
+		<ingredient id="90900" count="1"/>	<!--Shining Agathion's Soul-->
+		<ingredient id="57" count="10000000"/>	<!--Adena-->
+	</item>
+</list>

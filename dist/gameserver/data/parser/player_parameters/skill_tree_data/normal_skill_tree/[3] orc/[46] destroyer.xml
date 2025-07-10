@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="46"><!--Destroyer-->
+		<skill id="312" level="6" min_level="40" cost="67000"/><!--Vicious Stance-->
+		<skill id="121" level="2" min_level="40" cost="67000"/><!--Battle Roar-->
+		<skill id="212" level="3" min_level="40" cost="67000"/><!--Fast HP Recovery-->
+		<skill id="36" level="1" min_level="40" cost="67000"/><!--Vortex-->
+		<skill id="36" level="2" min_level="40" cost="67000"/><!--Vortex-->
+		<skill id="36" level="3" min_level="40" cost="67000"/><!--Vortex-->
+		<skill id="293" level="6" min_level="40" cost="67000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="9" min_level="40" cost="67000"/><!--Polearm Mastery-->
+		<skill id="216" level="10" min_level="40" cost="67000"/><!--Polearm Mastery-->
+		<skill id="216" level="11" min_level="40" cost="67000"/><!--Polearm Mastery-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="227" level="14" min_level="40" cost="67000"/><!--Light Armor Mastery-->
+		<skill id="227" level="15" min_level="40" cost="67000"/><!--Light Armor Mastery-->
+		<skill id="227" level="16" min_level="40" cost="67000"/><!--Light Armor Mastery-->
+		<skill id="257" level="9" min_level="40" cost="67000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="257" level="10" min_level="40" cost="67000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="257" level="11" min_level="40" cost="67000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="141" level="4" min_level="40" cost="67000"/><!--Weapon Mastery-->
+		<skill id="231" level="14" min_level="40" cost="67000"/><!--Heavy Armor Mastery-->
+		<skill id="231" level="15" min_level="40" cost="67000"/><!--Heavy Armor Mastery-->
+		<skill id="231" level="16" min_level="40" cost="67000"/><!--Heavy Armor Mastery-->
+		<skill id="148" level="3" min_level="40" cost="67000"/><!--Vital Force-->
+		<skill id="45136" level="3" min_level="40" cost="80000"/><!--Chant of Empower-->
+		<skill id="45137" level="2" min_level="40" cost="80000"/><!--Chant of Wild Magic-->
+		<skill id="45128" level="2" min_level="40" cost="80000"/><!--Chant of Berserker Spirit-->
+		<skill id="45125" level="2" min_level="40" cost="80000"/><!--Chant of Magic Barrier-->
+		<skill id="45126" level="3" min_level="40" cost="80000"/><!--Chant of Might-->
+		<skill id="45135" level="3" min_level="40" cost="80000"/><!--Chant of Acumen-->
+		<skill id="45123" level="2" min_level="40" cost="80000"/><!--Chant of Haste-->
+		<skill id="45121" level="3" min_level="40" cost="80000"/><!--Chant of Focus-->
+		<skill id="45129" level="3" min_level="40" cost="80000"/><!--Chant of Clarity-->
+		<skill id="45122" level="3" min_level="40" cost="80000"/><!--Chant of Death Whisper-->
+		<skill id="45127" level="3" min_level="40" cost="80000"/><!--Chant of Shield-->
+		<skill id="260" level="1" min_level="40" cost="67000"/><!--Power Break-->
+		<skill id="260" level="2" min_level="40" cost="67000"/><!--Power Break-->
+		<skill id="260" level="3" min_level="40" cost="67000"/><!--Power Break-->
+		<skill id="1607" level="1" min_level="40" cost="67000"/><!--Excruciating Strike-->
+		<skill id="1607" level="2" min_level="40" cost="67000"/><!--Excruciating Strike-->
+		<skill id="1607" level="3" min_level="40" cost="67000"/><!--Excruciating Strike-->
+		<skill id="994" level="1" min_level="40" cost="67000"/><!--Rush-->
+		<skill id="256" level="2" min_level="40" cost="67000"><!--Accuracy-->
+			<required_items>
+				<item id="57" count="500000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="190" level="1" min_level="40" cost="67000"/><!--Fatal Strike-->
+		<skill id="190" level="2" min_level="40" cost="67000"/><!--Fatal Strike-->
+		<skill id="190" level="3" min_level="40" cost="67000"/><!--Fatal Strike-->
+		<skill id="190" level="4" min_level="40" cost="67000"/><!--Fatal Strike-->
+		<skill id="190" level="5" min_level="40" cost="67000"/><!--Fatal Strike-->
+		<skill id="70" level="10" min_level="40" cost="67000"/><!--Emergency Rescue-->
+		<skill id="36" level="4" min_level="41" cost="80000"/><!--Vortex-->
+		<skill id="216" level="12" min_level="41" cost="80000"/><!--Polearm Mastery-->
+		<skill id="227" level="17" min_level="41" cost="80000"/><!--Light Armor Mastery-->
+		<skill id="257" level="12" min_level="41" cost="80000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="17" min_level="41" cost="80000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="4" min_level="41" cost="80000"/><!--Power Break-->
+		<skill id="1607" level="4" min_level="41" cost="80000"/><!--Excruciating Strike-->
+		<skill id="190" level="6" min_level="41" cost="80000"/><!--Fatal Strike-->
+		<skill id="70" level="11" min_level="41" cost="80000"/><!--Emergency Rescue-->
+		<skill id="36" level="5" min_level="42" cost="80000"/><!--Vortex-->
+		<skill id="216" level="13" min_level="42" cost="80000"/><!--Polearm Mastery-->
+		<skill id="227" level="18" min_level="42" cost="80000"/><!--Light Armor Mastery-->
+		<skill id="257" level="13" min_level="42" cost="80000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="18" min_level="42" cost="80000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="5" min_level="42" cost="80000"/><!--Power Break-->
+		<skill id="1607" level="5" min_level="42" cost="80000"/><!--Excruciating Strike-->
+		<skill id="190" level="7" min_level="42" cost="80000"/><!--Fatal Strike-->
+		<skill id="70" level="12" min_level="42" cost="80000"/><!--Emergency Rescue-->
+		<skill id="312" level="7" min_level="43" cost="80000"/><!--Vicious Stance-->
+		<skill id="212" level="4" min_level="43" cost="80000"/><!--Fast HP Recovery-->
+		<skill id="36" level="6" min_level="43" cost="80000"/><!--Vortex-->
+		<skill id="293" level="7" min_level="43" cost="80000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="14" min_level="43" cost="80000"/><!--Polearm Mastery-->
+		<skill id="227" level="19" min_level="43" cost="80000"/><!--Light Armor Mastery-->
+		<skill id="257" level="14" min_level="43" cost="80000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="19" min_level="43" cost="80000"/><!--Heavy Armor Mastery-->
+		<skill id="139" level="2" min_level="43" cost="80000"/><!--Guts-->
+		<skill id="260" level="6" min_level="43" cost="80000"/><!--Power Break-->
+		<skill id="1607" level="6" min_level="43" cost="80000"/><!--Excruciating Strike-->
+		<skill id="211" level="4" min_level="43" cost="80000"/><!--Boost HP-->
+		<skill id="190" level="8" min_level="43" cost="80000"/><!--Fatal Strike-->
+		<skill id="70" level="13" min_level="43" cost="80000"/><!--Emergency Rescue-->
+		<skill id="36" level="7" min_level="44" cost="120000"/><!--Vortex-->
+		<skill id="216" level="15" min_level="44" cost="120000"/><!--Polearm Mastery-->
+		<skill id="227" level="20" min_level="44" cost="120000"/><!--Light Armor Mastery-->
+		<skill id="257" level="15" min_level="44" cost="120000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="20" min_level="44" cost="120000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="7" min_level="44" cost="120000"/><!--Power Break-->
+		<skill id="1607" level="7" min_level="44" cost="120000"/><!--Excruciating Strike-->
+		<skill id="190" level="9" min_level="44" cost="120000"/><!--Fatal Strike-->
+		<skill id="70" level="14" min_level="44" cost="120000"/><!--Emergency Rescue-->
+		<skill id="36" level="8" min_level="45" cost="120000"/><!--Vortex-->
+		<skill id="216" level="16" min_level="45" cost="120000"/><!--Polearm Mastery-->
+		<skill id="227" level="21" min_level="45" cost="120000"/><!--Light Armor Mastery-->
+		<skill id="257" level="16" min_level="45" cost="120000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="21" min_level="45" cost="120000"/><!--Heavy Armor Mastery-->
+		<skill id="34" level="2" min_level="45" cost="120000"/><!--Bandage-->
+		<skill id="260" level="8" min_level="45" cost="120000"/><!--Power Break-->
+		<skill id="1607" level="8" min_level="45" cost="120000"/><!--Excruciating Strike-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="190" level="10" min_level="45" cost="120000"/><!--Fatal Strike-->
+		<skill id="70" level="15" min_level="45" cost="120000"/><!--Emergency Rescue-->
+		<skill id="176" level="2" min_level="46" cost="120000"/><!--Frenzy-->
+		<skill id="312" level="8" min_level="46" cost="120000"/><!--Vicious Stance-->
+		<skill id="36" level="9" min_level="46" cost="120000"/><!--Vortex-->
+		<skill id="293" level="8" min_level="46" cost="120000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="17" min_level="46" cost="120000"/><!--Polearm Mastery-->
+		<skill id="227" level="22" min_level="46" cost="120000"/><!--Light Armor Mastery-->
+		<skill id="257" level="17" min_level="46" cost="120000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="22" min_level="46" cost="120000"/><!--Heavy Armor Mastery-->
+		<skill id="148" level="4" min_level="46" cost="120000"/><!--Vital Force-->
+		<skill id="260" level="9" min_level="46" cost="120000"/><!--Power Break-->
+		<skill id="1607" level="9" min_level="46" cost="120000"/><!--Excruciating Strike-->
+		<skill id="190" level="11" min_level="46" cost="120000"/><!--Fatal Strike-->
+		<skill id="1609" level="1" min_level="46" cost="120000"/><!--Sword Expert-->
+		<skill id="70" level="16" min_level="46" cost="120000"/><!--Emergency Rescue-->
+		<skill id="36" level="10" min_level="47" cost="160000"/><!--Vortex-->
+		<skill id="216" level="18" min_level="47" cost="160000"/><!--Polearm Mastery-->
+		<skill id="227" level="23" min_level="47" cost="160000"/><!--Light Armor Mastery-->
+		<skill id="257" level="18" min_level="47" cost="160000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="23" min_level="47" cost="160000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="10" min_level="47" cost="160000"/><!--Power Break-->
+		<skill id="1607" level="10" min_level="47" cost="160000"/><!--Excruciating Strike-->
+		<skill id="190" level="12" min_level="47" cost="160000"/><!--Fatal Strike-->
+		<skill id="70" level="17" min_level="47" cost="160000"/><!--Emergency Rescue-->
+		<skill id="36" level="11" min_level="48" cost="160000"/><!--Vortex-->
+		<skill id="216" level="19" min_level="48" cost="160000"/><!--Polearm Mastery-->
+		<skill id="227" level="24" min_level="48" cost="160000"/><!--Light Armor Mastery-->
+		<skill id="257" level="19" min_level="48" cost="160000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="24" min_level="48" cost="160000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="11" min_level="48" cost="160000"/><!--Power Break-->
+		<skill id="1607" level="11" min_level="48" cost="160000"/><!--Excruciating Strike-->
+		<skill id="190" level="13" min_level="48" cost="160000"/><!--Fatal Strike-->
+		<skill id="70" level="18" min_level="48" cost="160000"/><!--Emergency Rescue-->
+		<skill id="312" level="9" min_level="49" cost="160000"/><!--Vicious Stance-->
+		<skill id="121" level="3" min_level="49" cost="160000"/><!--Battle Roar-->
+		<skill id="36" level="12" min_level="49" cost="160000"/><!--Vortex-->
+		<skill id="293" level="9" min_level="49" cost="160000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="20" min_level="49" cost="160000"/><!--Polearm Mastery-->
+		<skill id="227" level="25" min_level="49" cost="160000"/><!--Light Armor Mastery-->
+		<skill id="257" level="20" min_level="49" cost="160000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="25" min_level="49" cost="160000"/><!--Heavy Armor Mastery-->
+		<skill id="287" level="2" min_level="49" cost="160000"/><!--Lionheart-->
+		<skill id="260" level="12" min_level="49" cost="160000"/><!--Power Break-->
+		<skill id="1607" level="12" min_level="49" cost="160000"/><!--Excruciating Strike-->
+		<skill id="211" level="5" min_level="49" cost="160000"/><!--Boost HP-->
+		<skill id="190" level="14" min_level="49" cost="160000"/><!--Fatal Strike-->
+		<skill id="70" level="19" min_level="49" cost="160000"/><!--Emergency Rescue-->
+		<skill id="36" level="13" min_level="50" cost="240000"/><!--Vortex-->
+		<skill id="216" level="21" min_level="50" cost="240000"/><!--Polearm Mastery-->
+		<skill id="45184" level="2" min_level="50"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="3000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="227" level="26" min_level="50" cost="240000"/><!--Light Armor Mastery-->
+		<skill id="257" level="21" min_level="50" cost="240000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="26" min_level="50" cost="240000"/><!--Heavy Armor Mastery-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="260" level="13" min_level="50" cost="240000"/><!--Power Break-->
+		<skill id="1607" level="13" min_level="50" cost="240000"/><!--Excruciating Strike-->
+		<skill id="190" level="15" min_level="50" cost="240000"/><!--Fatal Strike-->
+		<skill id="70" level="20" min_level="50" cost="240000"/><!--Emergency Rescue-->
+		<skill id="36" level="14" min_level="51" cost="240000"/><!--Vortex-->
+		<skill id="216" level="22" min_level="51" cost="240000"/><!--Polearm Mastery-->
+		<skill id="227" level="27" min_level="51" cost="240000"/><!--Light Armor Mastery-->
+		<skill id="257" level="22" min_level="51" cost="240000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="27" min_level="51" cost="240000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="14" min_level="51" cost="240000"/><!--Power Break-->
+		<skill id="1607" level="14" min_level="51" cost="240000"/><!--Excruciating Strike-->
+		<skill id="190" level="16" min_level="51" cost="240000"/><!--Fatal Strike-->
+		<skill id="70" level="21" min_level="51" cost="240000"/><!--Emergency Rescue-->
+		<skill id="312" level="10" min_level="52" cost="240000"/><!--Vicious Stance-->
+		<skill id="1405" level="1" min_level="52" cost="240000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="212" level="5" min_level="52" cost="240000"/><!--Fast HP Recovery-->
+		<skill id="36" level="15" min_level="52" cost="240000"/><!--Vortex-->
+		<skill id="293" level="10" min_level="52" cost="240000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="23" min_level="52" cost="240000"/><!--Polearm Mastery-->
+		<skill id="227" level="28" min_level="52" cost="240000"/><!--Light Armor Mastery-->
+		<skill id="257" level="23" min_level="52" cost="240000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="28" min_level="52" cost="240000"/><!--Heavy Armor Mastery-->
+		<skill id="148" level="5" min_level="52" cost="240000"/><!--Vital Force-->
+		<skill id="139" level="3" min_level="52" cost="240000"/><!--Guts-->
+		<skill id="260" level="15" min_level="52" cost="240000"/><!--Power Break-->
+		<skill id="1607" level="15" min_level="52" cost="240000"/><!--Excruciating Strike-->
+		<skill id="1608" level="1" min_level="52" cost="240000"/><!--Dynamic Recovery-->
+		<skill id="190" level="17" min_level="52" cost="240000"/><!--Fatal Strike-->
+		<skill id="70" level="22" min_level="52" cost="240000"/><!--Emergency Rescue-->
+		<skill id="36" level="16" min_level="53" cost="330000"/><!--Vortex-->
+		<skill id="216" level="24" min_level="53" cost="330000"/><!--Polearm Mastery-->
+		<skill id="227" level="29" min_level="53" cost="330000"/><!--Light Armor Mastery-->
+		<skill id="257" level="24" min_level="53" cost="330000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="29" min_level="53" cost="330000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="16" min_level="53" cost="330000"/><!--Power Break-->
+		<skill id="1607" level="16" min_level="53" cost="330000"/><!--Excruciating Strike-->
+		<skill id="190" level="18" min_level="53" cost="330000"/><!--Fatal Strike-->
+		<skill id="70" level="23" min_level="53" cost="330000"/><!--Emergency Rescue-->
+		<skill id="36" level="17" min_level="54" cost="330000"/><!--Vortex-->
+		<skill id="216" level="25" min_level="54" cost="330000"/><!--Polearm Mastery-->
+		<skill id="227" level="30" min_level="54" cost="330000"/><!--Light Armor Mastery-->
+		<skill id="257" level="25" min_level="54" cost="330000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="30" min_level="54" cost="330000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="17" min_level="54" cost="330000"/><!--Power Break-->
+		<skill id="1607" level="17" min_level="54" cost="330000"/><!--Excruciating Strike-->
+		<skill id="190" level="19" min_level="54" cost="330000"/><!--Fatal Strike-->
+		<skill id="70" level="24" min_level="54" cost="330000"/><!--Emergency Rescue-->
+		<skill id="176" level="3" min_level="55" cost="330000"/><!--Frenzy-->
+		<skill id="312" level="11" min_level="55" cost="330000"/><!--Vicious Stance-->
+		<skill id="36" level="18" min_level="55" cost="330000"/><!--Vortex-->
+		<skill id="293" level="11" min_level="55" cost="330000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="26" min_level="55" cost="330000"/><!--Polearm Mastery-->
+		<skill id="227" level="31" min_level="55" cost="330000"/><!--Light Armor Mastery-->
+		<skill id="257" level="26" min_level="55" cost="330000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="31" min_level="55" cost="330000"/><!--Heavy Armor Mastery-->
+		<skill id="94" level="2" min_level="55" cost="330000"/><!--Rage-->
+		<skill id="260" level="18" min_level="55" cost="330000"/><!--Power Break-->
+		<skill id="1607" level="18" min_level="55" cost="330000"/><!--Excruciating Strike-->
+		<skill id="211" level="6" min_level="55" cost="330000"/><!--Boost HP-->
+		<skill id="190" level="20" min_level="55" cost="330000"/><!--Fatal Strike-->
+		<skill id="70" level="25" min_level="55" cost="330000"/><!--Emergency Rescue-->
+		<skill id="36" level="19" min_level="56" cost="450000"/><!--Vortex-->
+		<skill id="216" level="27" min_level="56" cost="450000"/><!--Polearm Mastery-->
+		<skill id="227" level="32" min_level="56" cost="450000"/><!--Light Armor Mastery-->
+		<skill id="257" level="27" min_level="56" cost="450000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="32" min_level="56" cost="450000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="19" min_level="56" cost="450000"/><!--Power Break-->
+		<skill id="1607" level="19" min_level="56" cost="450000"/><!--Excruciating Strike-->
+		<skill id="190" level="21" min_level="56" cost="450000"/><!--Fatal Strike-->
+		<skill id="70" level="26" min_level="56" cost="450000"/><!--Emergency Rescue-->
+		<skill id="36" level="20" min_level="57" cost="450000"/><!--Vortex-->
+		<skill id="216" level="28" min_level="57" cost="450000"/><!--Polearm Mastery-->
+		<skill id="227" level="33" min_level="57" cost="450000"/><!--Light Armor Mastery-->
+		<skill id="257" level="28" min_level="57" cost="450000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="33" min_level="57" cost="450000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="20" min_level="57" cost="450000"/><!--Power Break-->
+		<skill id="1607" level="20" min_level="57" cost="450000"/><!--Excruciating Strike-->
+		<skill id="190" level="22" min_level="57" cost="450000"/><!--Fatal Strike-->
+		<skill id="70" level="27" min_level="57" cost="450000"/><!--Emergency Rescue-->
+		<skill id="312" level="12" min_level="58" cost="450000"/><!--Vicious Stance-->
+		<skill id="121" level="4" min_level="58" cost="450000"/><!--Battle Roar-->
+		<skill id="212" level="6" min_level="58" cost="450000"/><!--Fast HP Recovery-->
+		<skill id="36" level="21" min_level="58" cost="450000"/><!--Vortex-->
+		<skill id="293" level="12" min_level="58" cost="450000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="29" min_level="58" cost="450000"/><!--Polearm Mastery-->
+		<skill id="227" level="34" min_level="58" cost="450000"/><!--Light Armor Mastery-->
+		<skill id="257" level="29" min_level="58" cost="450000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="34" min_level="58" cost="450000"/><!--Heavy Armor Mastery-->
+		<skill id="148" level="6" min_level="58" cost="450000"/><!--Vital Force-->
+		<skill id="260" level="21" min_level="58" cost="450000"/><!--Power Break-->
+		<skill id="1607" level="21" min_level="58" cost="450000"/><!--Excruciating Strike-->
+		<skill id="420" level="1" min_level="58" cost="450000"/><!--Zealot-->
+		<skill id="190" level="23" min_level="58" cost="450000"/><!--Fatal Strike-->
+		<skill id="1609" level="2" min_level="58" cost="450000"/><!--Sword Expert-->
+		<skill id="70" level="28" min_level="58" cost="450000"/><!--Emergency Rescue-->
+		<skill id="36" level="22" min_level="59" cost="660000"/><!--Vortex-->
+		<skill id="216" level="30" min_level="59" cost="660000"/><!--Polearm Mastery-->
+		<skill id="227" level="35" min_level="59" cost="660000"/><!--Light Armor Mastery-->
+		<skill id="257" level="30" min_level="59" cost="660000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="35" min_level="59" cost="660000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="22" min_level="59" cost="660000"/><!--Power Break-->
+		<skill id="1607" level="22" min_level="59" cost="660000"/><!--Excruciating Strike-->
+		<skill id="190" level="24" min_level="59" cost="660000"/><!--Fatal Strike-->
+		<skill id="70" level="29" min_level="59" cost="660000"/><!--Emergency Rescue-->
+		<skill id="312" level="13" min_level="60" cost="660000"/><!--Vicious Stance-->
+		<skill id="36" level="23" min_level="60" cost="660000"/><!--Vortex-->
+		<skill id="293" level="13" min_level="60" cost="660000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="31" min_level="60" cost="660000"/><!--Polearm Mastery-->
+		<skill id="45184" level="3" min_level="60"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="6000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="227" level="36" min_level="60" cost="660000"/><!--Light Armor Mastery-->
+		<skill id="257" level="31" min_level="60" cost="660000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="36" min_level="60" cost="660000"/><!--Heavy Armor Mastery-->
+		<skill id="34" level="3" min_level="60" cost="660000"/><!--Bandage-->
+		<skill id="260" level="23" min_level="60" cost="660000"/><!--Power Break-->
+		<skill id="1607" level="23" min_level="60" cost="660000"/><!--Excruciating Strike-->
+		<skill id="77" level="3" min_level="60" cost="660000"/><!--Ability to Attack-->
+		<skill id="994" level="2" min_level="60" cost="660000"/><!--Rush-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="190" level="25" min_level="60" cost="660000"/><!--Fatal Strike-->
+		<skill id="70" level="30" min_level="60" cost="660000"/><!--Emergency Rescue-->
+		<skill id="1405" level="2" min_level="61" cost="660000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="36" level="24" min_level="61" cost="660000"/><!--Vortex-->
+		<skill id="216" level="32" min_level="61" cost="660000"/><!--Polearm Mastery-->
+		<skill id="227" level="37" min_level="61" cost="660000"/><!--Light Armor Mastery-->
+		<skill id="257" level="32" min_level="61" cost="660000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="37" min_level="61" cost="660000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="24" min_level="61" cost="660000"/><!--Power Break-->
+		<skill id="1607" level="24" min_level="61" cost="660000"/><!--Excruciating Strike-->
+		<skill id="190" level="26" min_level="61" cost="660000"/><!--Fatal Strike-->
+		<skill id="70" level="31" min_level="61" cost="660000"/><!--Emergency Rescue-->
+		<skill id="312" level="14" min_level="62" cost="810000"/><!--Vicious Stance-->
+		<skill id="36" level="25" min_level="62" cost="810000"/><!--Vortex-->
+		<skill id="293" level="14" min_level="62" cost="810000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="33" min_level="62" cost="810000"/><!--Polearm Mastery-->
+		<skill id="227" level="38" min_level="62" cost="810000"/><!--Light Armor Mastery-->
+		<skill id="257" level="33" min_level="62" cost="810000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="38" min_level="62" cost="810000"/><!--Heavy Armor Mastery-->
+		<skill id="287" level="3" min_level="62" cost="810000"/><!--Lionheart-->
+		<skill id="260" level="25" min_level="62" cost="810000"/><!--Power Break-->
+		<skill id="1607" level="25" min_level="62" cost="810000"/><!--Excruciating Strike-->
+		<skill id="211" level="7" min_level="62" cost="810000"/><!--Boost HP-->
+		<skill id="190" level="27" min_level="62" cost="810000"/><!--Fatal Strike-->
+		<skill id="70" level="32" min_level="62" cost="810000"/><!--Emergency Rescue-->
+		<skill id="36" level="26" min_level="63" cost="810000"/><!--Vortex-->
+		<skill id="216" level="34" min_level="63" cost="810000"/><!--Polearm Mastery-->
+		<skill id="227" level="39" min_level="63" cost="810000"/><!--Light Armor Mastery-->
+		<skill id="257" level="34" min_level="63" cost="810000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="39" min_level="63" cost="810000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="26" min_level="63" cost="810000"/><!--Power Break-->
+		<skill id="1607" level="26" min_level="63" cost="810000"/><!--Excruciating Strike-->
+		<skill id="190" level="28" min_level="63" cost="810000"/><!--Fatal Strike-->
+		<skill id="70" level="33" min_level="63" cost="810000"/><!--Emergency Rescue-->
+		<skill id="176" level="4" min_level="64" cost="1000000"/><!--Frenzy-->
+		<skill id="312" level="15" min_level="64" cost="1000000"/><!--Vicious Stance-->
+		<skill id="121" level="5" min_level="64" cost="1000000"/><!--Battle Roar-->
+		<skill id="36" level="27" min_level="64" cost="1000000"/><!--Vortex-->
+		<skill id="293" level="15" min_level="64" cost="1000000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="35" min_level="64" cost="1000000"/><!--Polearm Mastery-->
+		<skill id="227" level="40" min_level="64" cost="1000000"/><!--Light Armor Mastery-->
+		<skill id="257" level="35" min_level="64" cost="1000000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="40" min_level="64" cost="1000000"/><!--Heavy Armor Mastery-->
+		<skill id="148" level="7" min_level="64" cost="1000000"/><!--Vital Force-->
+		<skill id="139" level="4" min_level="64" cost="1000000"/><!--Guts-->
+		<skill id="260" level="27" min_level="64" cost="1000000"/><!--Power Break-->
+		<skill id="1607" level="27" min_level="64" cost="1000000"/><!--Excruciating Strike-->
+		<skill id="190" level="29" min_level="64" cost="1000000"/><!--Fatal Strike-->
+		<skill id="70" level="34" min_level="64" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="36" level="28" min_level="65" cost="1000000"/><!--Vortex-->
+		<skill id="216" level="36" min_level="65" cost="1000000"/><!--Polearm Mastery-->
+		<skill id="227" level="41" min_level="65" cost="1000000"/><!--Light Armor Mastery-->
+		<skill id="257" level="36" min_level="65" cost="1000000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="41" min_level="65" cost="1000000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="28" min_level="65" cost="1000000"/><!--Power Break-->
+		<skill id="1607" level="28" min_level="65" cost="1000000"/><!--Excruciating Strike-->
+		<skill id="190" level="30" min_level="65" cost="1000000"/><!--Fatal Strike-->
+		<skill id="70" level="35" min_level="65" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="312" level="16" min_level="66" cost="1200000"/><!--Vicious Stance-->
+		<skill id="36" level="29" min_level="66" cost="1200000"/><!--Vortex-->
+		<skill id="293" level="16" min_level="66" cost="1200000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="37" min_level="66" cost="1200000"/><!--Polearm Mastery-->
+		<skill id="227" level="42" min_level="66" cost="1200000"/><!--Light Armor Mastery-->
+		<skill id="257" level="37" min_level="66" cost="1200000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="42" min_level="66" cost="1200000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="29" min_level="66" cost="1200000"/><!--Power Break-->
+		<skill id="1607" level="29" min_level="66" cost="1200000"/><!--Excruciating Strike-->
+		<skill id="211" level="8" min_level="66" cost="1200000"/><!--Boost HP-->
+		<skill id="420" level="2" min_level="66" cost="1200000"/><!--Zealot-->
+		<skill id="190" level="31" min_level="66" cost="1200000"/><!--Fatal Strike-->
+		<skill id="70" level="36" min_level="66" cost="1200000"/><!--Emergency Rescue-->
+		<skill id="36" level="30" min_level="67" cost="1200000"/><!--Vortex-->
+		<skill id="216" level="38" min_level="67" cost="1200000"/><!--Polearm Mastery-->
+		<skill id="227" level="43" min_level="67" cost="1200000"/><!--Light Armor Mastery-->
+		<skill id="257" level="38" min_level="67" cost="1200000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="43" min_level="67" cost="1200000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="30" min_level="67" cost="1200000"/><!--Power Break-->
+		<skill id="1607" level="30" min_level="67" cost="1200000"/><!--Excruciating Strike-->
+		<skill id="190" level="32" min_level="67" cost="1200000"/><!--Fatal Strike-->
+		<skill id="70" level="37" min_level="67" cost="1200000"/><!--Emergency Rescue-->
+		<skill id="312" level="17" min_level="68" cost="1600000"/><!--Vicious Stance-->
+		<skill id="212" level="7" min_level="68" cost="1600000"/><!--Fast HP Recovery-->
+		<skill id="36" level="31" min_level="68" cost="1600000"/><!--Vortex-->
+		<skill id="293" level="17" min_level="68" cost="1600000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="39" min_level="68" cost="1600000"/><!--Polearm Mastery-->
+		<skill id="227" level="44" min_level="68" cost="1600000"/><!--Light Armor Mastery-->
+		<skill id="257" level="39" min_level="68" cost="1600000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="44" min_level="68" cost="1600000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="31" min_level="68" cost="1600000"/><!--Power Break-->
+		<skill id="1607" level="31" min_level="68" cost="1600000"/><!--Excruciating Strike-->
+		<skill id="190" level="33" min_level="68" cost="1600000"/><!--Fatal Strike-->
+		<skill id="70" level="38" min_level="68" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="36" level="32" min_level="69" cost="1600000"/><!--Vortex-->
+		<skill id="216" level="40" min_level="69" cost="1600000"/><!--Polearm Mastery-->
+		<skill id="227" level="45" min_level="69" cost="1600000"/><!--Light Armor Mastery-->
+		<skill id="257" level="40" min_level="69" cost="1600000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="45" min_level="69" cost="1600000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="32" min_level="69" cost="1600000"/><!--Power Break-->
+		<skill id="1607" level="32" min_level="69" cost="1600000"/><!--Excruciating Strike-->
+		<skill id="190" level="34" min_level="69" cost="1600000"/><!--Fatal Strike-->
+		<skill id="70" level="39" min_level="69" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="312" level="18" min_level="70" cost="2000000"/><!--Vicious Stance-->
+		<skill id="121" level="6" min_level="70" cost="2000000"/><!--Battle Roar-->
+		<skill id="36" level="33" min_level="70" cost="2000000"/><!--Vortex-->
+		<skill id="293" level="18" min_level="70" cost="2000000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="41" min_level="70" cost="2000000"/><!--Polearm Mastery-->
+		<skill id="227" level="46" min_level="70" cost="2000000"/><!--Light Armor Mastery-->
+		<skill id="257" level="41" min_level="70" cost="2000000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="46" min_level="70" cost="2000000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="33" min_level="70" cost="2000000"/><!--Power Break-->
+		<skill id="1607" level="33" min_level="70" cost="2000000"/><!--Excruciating Strike-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="211" level="9" min_level="70" cost="2000000"/><!--Boost HP-->
+		<skill id="190" level="35" min_level="70" cost="2000000"/><!--Fatal Strike-->
+		<skill id="1609" level="3" min_level="70" cost="2000000"/><!--Sword Expert-->
+		<skill id="70" level="40" min_level="70" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="36" level="34" min_level="71" cost="2000000"/><!--Vortex-->
+		<skill id="216" level="42" min_level="71" cost="2000000"/><!--Polearm Mastery-->
+		<skill id="227" level="47" min_level="71" cost="2000000"/><!--Light Armor Mastery-->
+		<skill id="257" level="42" min_level="71" cost="2000000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="47" min_level="71" cost="2000000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="34" min_level="71" cost="2000000"/><!--Power Break-->
+		<skill id="1607" level="34" min_level="71" cost="2000000"/><!--Excruciating Strike-->
+		<skill id="190" level="36" min_level="71" cost="2000000"/><!--Fatal Strike-->
+		<skill id="70" level="41" min_level="71" cost="2000000"/><!--Emergency Rescue-->
+		<skill id="312" level="19" min_level="72" cost="2200000"/><!--Vicious Stance-->
+		<skill id="36" level="35" min_level="72" cost="2200000"/><!--Vortex-->
+		<skill id="293" level="19" min_level="72" cost="2200000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="43" min_level="72" cost="2200000"/><!--Polearm Mastery-->
+		<skill id="227" level="48" min_level="72" cost="2200000"/><!--Light Armor Mastery-->
+		<skill id="257" level="43" min_level="72" cost="2200000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="48" min_level="72" cost="2200000"/><!--Heavy Armor Mastery-->
+		<skill id="148" level="8" min_level="72" cost="2200000"/><!--Vital Force-->
+		<skill id="260" level="35" min_level="72" cost="2200000"/><!--Power Break-->
+		<skill id="1607" level="35" min_level="72" cost="2200000"/><!--Excruciating Strike-->
+		<skill id="190" level="37" min_level="72" cost="2200000"/><!--Fatal Strike-->
+		<skill id="70" level="42" min_level="72" cost="2200000"/><!--Emergency Rescue-->
+		<skill id="36" level="36" min_level="73" cost="2200000"/><!--Vortex-->
+		<skill id="36" level="38" min_level="73" cost="2200000"/><!--Vortex-->
+		<skill id="216" level="44" min_level="73" cost="2200000"/><!--Polearm Mastery-->
+		<skill id="227" level="49" min_level="73" cost="2200000"/><!--Light Armor Mastery-->
+		<skill id="257" level="44" min_level="73" cost="2200000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="49" min_level="73" cost="2200000"/><!--Heavy Armor Mastery-->
+		<skill id="260" level="36" min_level="73" cost="2200000"/><!--Power Break-->
+		<skill id="1607" level="36" min_level="73" cost="2200000"/><!--Excruciating Strike-->
+		<skill id="190" level="38" min_level="73" cost="2200000"/><!--Fatal Strike-->
+		<skill id="70" level="43" min_level="73" cost="2200000"/><!--Emergency Rescue-->
+		<skill id="176" level="5" min_level="74" cost="2200000"/><!--Frenzy-->
+		<skill id="312" level="20" min_level="74" cost="2200000"/><!--Vicious Stance-->
+		<skill id="212" level="8" min_level="74" cost="2200000"/><!--Fast HP Recovery-->
+		<skill id="36" level="37" min_level="74" cost="2200000"/><!--Vortex-->
+		<skill id="36" level="39" min_level="74" cost="2200000"/><!--Vortex-->
+		<skill id="293" level="20" min_level="74" cost="2200000"/><!--Two-handed Weapon Mastery-->
+		<skill id="216" level="45" min_level="74" cost="2200000"/><!--Polearm Mastery-->
+		<skill id="227" level="50" min_level="74" cost="2200000"/><!--Light Armor Mastery-->
+		<skill id="257" level="45" min_level="74" cost="2200000"/><!--Sword / Blunt Weapon Mastery-->
+		<skill id="231" level="50" min_level="74" cost="2200000"/><!--Heavy Armor Mastery-->
+		<skill id="139" level="5" min_level="74" cost="2200000"/><!--Guts-->
+		<skill id="260" level="37" min_level="74" cost="2200000"/><!--Power Break-->
+		<skill id="1607" level="37" min_level="74" cost="2200000"/><!--Excruciating Strike-->
+		<skill id="211" level="10" min_level="74" cost="2200000"/><!--Boost HP-->
+		<skill id="420" level="3" min_level="74" cost="2200000"/><!--Zealot-->
+		<skill id="190" level="39" min_level="74" cost="2200000"/><!--Fatal Strike-->
+		<skill id="70" level="44" min_level="74" cost="2200000"/><!--Emergency Rescue-->
+		<skill id="36" level="40" min_level="75" cost="2200000"/><!--Vortex-->
+		<skill id="190" level="40" min_level="75" cost="2200000"/><!--Fatal Strike-->
+		<skill id="70" level="45" min_level="75" cost="2200000"/><!--Emergency Rescue-->
+	</normal_skill_tree>
+</list>

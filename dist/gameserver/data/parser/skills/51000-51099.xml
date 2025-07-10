@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="51001" levels="1" name="Sayha's Storm Lv. 2 (Event)">
+		<set name="icon" value="icon.bm_sayha_storm"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="olympiad_use" value="false"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="2"/>
+		<set name="abnormal_type" value="SAYHAS_STORM"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<for>
+			<effect>
+				<add stat="exp_rate_multiplier" value="1.5"/>
+				<add stat="sp_rate_multiplier" value="1.5"/>
+				<mul stat="sayhas_grace_consume" value="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51002" levels="1" name="Sayha's Storm Lv. 2">
+		<set name="icon" value="icon.bm_sayha_storm"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="olympiad_use" value="false"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_time" value="1200"/>
+		<set name="abnormal_level" value="2"/>
+		<set name="abnormal_type" value="SAYHAS_STORM"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<for>
+			<effect>
+				<add stat="exp_rate_multiplier" value="1.5"/>
+				<add stat="sp_rate_multiplier" value="1.5"/>
+				<mul stat="sayhas_grace_consume" value="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51003" levels="1" name="Sayha Grace Box">
+		<set name="icon" value="icon.bm_nebit_box"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51004" levels="1" name="Sayha's Golden Treasure">
+		<set name="icon" value="icon.bm_sayha_gold_present"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51005" levels="1" name="Sayha's Silver Treasure">
+		<set name="icon" value="icon.bm_sayha_silver_present"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51006" levels="1" name="Sayha's Grace Potion">
+		<set name="icon" value="icon.bm_freya_potion"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="olympiad_use" value="false"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="abnormal_time" value="600"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<set name="isPreservedOnDeath" value="true"/>
+		<for>
+			<effect>
+				<mul stat="sayhas_grace_consume" value="0"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51007" levels="1" name="Golden Treasure Chest">
+		<set name="icon" value="icon.bm_sayha_rune"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51008" levels="1" name="Lucky Enchant Stone Chest - A-grade">
+		<set name="icon" value="icon.scroll_of_unidentify_am_s"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51009" levels="1" name="Golden Treasure Chest">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51010" levels="1" name="Refined Rare Accessory Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="90524"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="33">
+				<item id="90491" min_count="1" max_count="1"/>
+			</group>
+			<group chance="33">
+				<item id="90483" min_count="1" max_count="1"/>
+			</group>
+			<group chance="34">
+				<item id="90487" min_count="1" max_count="1"/>
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51011" levels="1" name="Rare Accessory Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="90525"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="33">
+				<item id="90486" min_count="1" max_count="1"/>
+			</group>
+			<group chance="33">
+				<item id="90482" min_count="1" max_count="1"/>
+			</group>
+			<group chance="34">
+				<item id="90490" min_count="1" max_count="1"/>
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51012" levels="1" name="Refined Rare Accessory Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51013" levels="1" name="Rare Accessory Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="93254"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="25">
+				<item id="6660" min_count="1" max_count="1"/>
+			</group>
+			<group chance="25">
+				<item id="6661" min_count="1" max_count="1"/>
+			</group>
+			<group chance="25">
+				<item id="6662" min_count="1" max_count="1"/>
+			</group>
+			<group chance="25">
+				<item id="90763" min_count="1" max_count="1"/>
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51014" levels="1" name="Fire Dragon's Blessing Scroll">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.bm_blessing_dragon"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="100"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51015" levels="1" name="Shining Mood Melody">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.bm_magmeld"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51016" levels="1" name="Clan's Bonus - XP Lv. 1">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill19011"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51017" levels="1" name="Clan's Bonus - XP Lv. 2">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill19011"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51018" levels="1" name="Clan's Bonus - XP Lv. 3">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill19011"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51019" levels="1" name="Clan's Bonus - XP Lv. 4">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill19011"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51020" levels="1" name="Clan's Bonus - P. Atk. Lv. 1">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill19011"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51021" levels="1" name="Clan's Bonus - P. Atk. Lv. 2">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill19011"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51022" levels="1" name="Clan's Bonus - P. Atk. Lv. 3">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill19011"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51023" levels="1" name="Clan's Bonus - P. Atk. Lv. 4">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill19011"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51024" levels="1" name="Expand Primary and Secondary Agathion Slots">
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i04"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51025" levels="4" name="Expand Primary and Secondary Agathion Slots">
+		<table name="#icon">icon.agathion_magmeld_teleport icon.bracelet_tersi_agathion icon.high_agathion_bracelet_i01 icon.pi_high_agathion_bracelet_i00</table>
+		<table name="#agathions_limit">2 3 4 5</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="agathions_limit" value="#agathions_limit"/>
+		</for>
+	</skill>
+	<skill id="51026" levels="1" name="Summon Agathion Aries">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51027" levels="1" name="Summon Joy Agathion">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51028" levels="1" name="Summon Agathion Pisces">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51029" levels="1" name="Summon Agathion Cancer">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51030" levels="1" name="Teleport: Gludio">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51031" levels="1" name="Teleport: Dion">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51032" levels="1" name="Teleport: Giran">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51033" levels="1" name="Teleport: Oren">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51034" levels="1" name="Teleport: Hunter's Village">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51035" levels="1" name="Summon Rudolph Agathion">
+		<set name="icon" value="BranchSys2.icon.event_lbracelet_rudolph"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51036" levels="1" name="Rudolph's Blessing">
+		<set name="icon" value="BranchSys2.icon.event_lbracelet_rudolph"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51037" levels="1" name="Release Agathion">
+		<set name="icon" value="icon.etc_unsummon_aga_agit_i01"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51038" levels="1" name="Battle Box Lv. 1">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="70917"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="40">
+				<item id="70024" min_count="1" max_count="1"/>
+			</group>
+			<group chance="20">
+				<item id="1419" min_count="1" max_count="1"/>
+			</group>
+			<group chance="40">
+				<item id="29009" min_count="1" max_count="1"/>
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51039" levels="1" name="Battle Box Lv. 2">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="70918"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="40">
+				<item id="70024" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="1419" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="49758" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="90012" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="29009" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="49671" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="49670" min_count="1" max_count="1"/>
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51040" levels="1" name="Battle Box Lv. 3">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="70919"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="40">
+				<item id="70024" min_count="2" max_count="3"/>
+			</group>
+			<group chance="10">
+				<item id="90012" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="29009" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="29519" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="49763" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="49762" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="90017" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="49664" min_count="1" max_count="1"/>
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51041" levels="1" name="Battle Box Lv. 4">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="70920"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="20">
+				<item id="70024" min_count="2" max_count="5"/>
+			</group>
+			<group chance="20">
+				<item id="90013" min_count="1" max_count="1"/>
+			</group>
+			<group chance="10">
+				<item id="49756" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="90012" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="29519" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="948" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="730" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="729" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="947" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="49761" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="49760" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="49664" min_count="1" max_count="1"/>
+			</group>
+			<group chance="5">
+				<item id="49785" min_count="1" max_count="1"/>
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51042" levels="1" name="Valor Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51043" levels="1" name="XP Scroll: 10M">
+		<set name="icon" value="icon.etc_recall_exp_scroll"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="itemConsumeId" value="90917"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="10000000"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51044" levels="1" name="XP Scroll: 50M">
+		<set name="icon" value="icon.etc_recall_exp_scroll"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="itemConsumeId" value="90918"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="50000000"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51045" levels="1" name="XP Scroll: 100M">
+		<set name="icon" value="icon.etc_recall_exp_scroll"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="itemConsumeId" value="90919"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="isHandler" value="true"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_get_exp">
+				<def name="power" value="100000000"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="51046" levels="1" name="Zodiac Agathion Box">
+		<set name="icon" value="icon.star_agathion_cube"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51047" levels="1" name="Scroll: Enchant Agathion">
+		<set name="icon" value="icon.star_scrl_of_ench_ag"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51048" levels="1" name="Scroll: Enchant High-grade Agathion">
+		<set name="icon" value="icon.star_giantscrl_of_ench_ag"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51049" levels="1" name="Stable Scroll: Enchant Agathion">
+		<set name="icon" value="icon.star_giantscrl_of_ench_ag"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51050" levels="1" name="Raid Lucky Charm">
+		<set name="icon" value="icon.etc_cross_of_einhasad_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51051" levels="1" name="Sealed Doll of Border Box">
+		<set name="icon" value="icon.star_agathion_cube"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51052" levels="1" name="Raid Lucky Charm Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51053" levels="1" name="GM Repi Gift Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51054" levels="1" name="High-grade Shining Pendant Polish Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51055" levels="1" name="Items Seal Scroll">
+		<set name="icon" value="icon.scrl_item_lock"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51056" levels="1" name="Item Unseal Scroll">
+		<set name="icon" value="icon.scrl_item_unlock"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51057" levels="1" name="+8 A-grade Weapon Pack">
+		<set name="icon" value="icon.etc_treasure_box_i07"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51058" levels="1" name="Lucky Cube of Growth (30-day)">
+		<set name="icon" value="icon.sa_cube"/>
+		<set name="reuseDelay" value="-1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51059" levels="1" name="Scroll: Enchant Savior's Earring">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51060" levels="1" name="Savior's Earring Box">
+		<set name="icon" value="icon.etc_treasure_box_i07"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51061" levels="1" name="Burglar's Luck">
+		<set name="effectPoint" value="669"/>
+		<set name="icon" value="icon.Accessary_middle_ages_i00"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51062" levels="1" name="Balthus Knights' Varnish">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51063" levels="1" name="Balthus Knights' Matte Varnish">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51064" levels="1" name="Balthus Knights' Shining Varnish">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51065" levels="1" name="Balthus Knights' Glittering Varnish">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51066" levels="1" name="Rash's Supplies - Antharas">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="90999"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="10">
+				<item id="90993" min_count="1" max_count="1"/>	<!--Поврежденная Серьга Антараса-->
+				<item id="90998" min_count="1" max_count="1"/>	<!--Блестящий Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="20">
+				<item id="90993" min_count="1" max_count="1"/>	<!--Поврежденная Серьга Антараса-->
+				<item id="90997" min_count="1" max_count="1"/>	<!--Глянцевый Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="30">
+				<item id="90993" min_count="1" max_count="1"/>	<!--Поврежденная Серьга Антараса-->
+				<item id="90995" min_count="1" max_count="1"/>	<!--Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="40">
+				<item id="90993" min_count="1" max_count="1"/>	<!--Поврежденная Серьга Антараса-->
+				<item id="3865" min_count="1" max_count="1"/>	<!--portal stone-->
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51067" levels="1" name="Rash's Supplies - Baium">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="91000"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="10">
+				<item id="90994" min_count="1" max_count="1"/>    <!--Поврежденное кольцо Баюма-->
+				<item id="90998" min_count="1" max_count="1"/>	<!--Блестящий Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="20">
+				<item id="90994" min_count="1" max_count="1"/>    <!--Поврежденное кольцо Баюма-->
+				<item id="90997" min_count="1" max_count="1"/>	<!--Глянцевый Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="30">
+				<item id="90994" min_count="1" max_count="1"/>    <!--Поврежденное кольцо Баюма-->
+				<item id="90995" min_count="1" max_count="1"/>	<!--Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="40">
+				<item id="90994" min_count="1" max_count="1"/>    <!--Поврежденное кольцо Баюма-->
+				<item id="3865" min_count="1" max_count="1"/>	<!--portal stone-->
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51068" levels="1" name="Summon Sin Eater Agathion">
+		<set name="icon" value="icon.etc_summon_aga_agit_i00"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51069" levels="1" name="Hour of Penitence">
+		<set name="icon" value="icon.etc_leash_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51070" levels="3" name="Dragon's Miracle Potion">
+		<table name="#icon">icon.bm_dragon_posion_brave_1 icon.bm_dragon_posion_brave_2 icon.bm_dragon_posion_brave_3</table>
+		<set name="icon" value="#icon"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51071" levels="1" name="Dragon's Relic Box">
+		<set name="icon" value="icon.bm_special_pendant_abradant_box"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51072" levels="1" name="Fire Dragon's Relic Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51073" levels="1" name="Earth Dragon's Relic Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51074" levels="1" name="Dragon Dye Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51075" levels="1" name="Top-grade A-grade Weapon Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51076" levels="1" name="Top A-grade Weapon Ingredient/ Recipe Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51077" levels="1" name="Weapon Recipe Box (Best A-grade)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51078" levels="1" name="Rash's Supplies - Zaken">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="itemConsumeId" value="91007"/>
+		<set name="itemConsumeCount" value="1"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RESTORATION"/>
+		<set name="operate_type" value="A2"/>
+		<set name="isHandler" value="true"/>
+		<restoration level="1">
+			<group chance="10">
+				<item id="91006" min_count="1" max_count="1"/>		<!--Поврежденная Серьга Закена -->
+				<item id="90998" min_count="1" max_count="1"/>	<!--Блестящий Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="20">
+				<item id="91006" min_count="1" max_count="1"/>		<!--Поврежденная Серьга Закена -->
+				<item id="90997" min_count="1" max_count="1"/>	<!--Глянцевый Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="30">
+				<item id="91006" min_count="1" max_count="1"/>		<!--Поврежденная Серьга Закена -->
+				<item id="90995" min_count="1" max_count="1"/>	<!--Лак Ордена Рыцарей Балтуса-->
+			</group>
+			<group chance="40">
+				<item id="91006" min_count="1" max_count="1"/>		<!--Поврежденная Серьга Закена -->
+				<item id="3865" min_count="1" max_count="1"/>	<!--portal stone-->
+			</group>
+		</restoration>
+	</skill>
+	<skill id="51079" levels="1" name="Hidden Box">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51080" levels="1" name="Golden Fishing Supply Items">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51081" levels="1" name="Big Fish' Golden Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51082" levels="1" name="Big Fish' Silver Pack">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51083" levels="1" name="High-grade Maliss' HP Recovery Potion">
+		<set name="icon" value="icon.etc_bm_hero_red_potion"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51084" levels="1" name="Improved Stone: Enchant B-grade Armor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51085" levels="1" name="Improved Stone: Enchant A-grade Armor">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51086" levels="1" name="Wind Cube of Abundance - 30 d.">
+		<set name="icon" value="icon.sa_cube"/>
+		<set name="reuseDelay" value="-1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51087" levels="1" name="Wind Cube of Abundance - 90 d.">
+		<set name="icon" value="icon.sa_cube"/>
+		<set name="reuseDelay" value="-1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51088" levels="1" name="Amulet of Winds">
+		<set name="icon" value="icon.bm_sayha_rune"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="51089" levels="1" name="Teleport: Forge of Gods">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="loc" value="169018 -116303 -2427"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RECALL"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51090" levels="1" name="Teleport to Garden of Eva">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="loc" value="82098 252437 -10592"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RECALL"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51091" levels="1" name="Teleport to Land of Winds">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="loc" value="177347 173049 -1920"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RECALL"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51092" levels="1" name="Teleport to Wall of Argos">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="600000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="ride_state" value="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="loc" value="165054 -47861 -3555"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RECALL"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51093" levels="1" name="Fire Attack">
+		<set name="icon" value="icon.agathion_fire_1"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_elemental_attack element="FIRE" value="100" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="51094" levels="1" name="Water Attack">
+		<set name="icon" value="icon.agathion_water_1"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_elemental_attack element="WATER" value="100" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="51095" levels="1" name="Wind Attack">
+		<set name="icon" value="icon.agathion_wind_1"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_elemental_attack element="WIND" value="100" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="51096" levels="1" name="Earth Attack">
+		<set name="icon" value="icon.agathion_earth_1"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<p_elemental_attack element="EARTH" value="100" type="DIFF"/>
+		</for>
+	</skill>
+	<skill id="51097" levels="1" name="Radiant Spirit's Varnish">
+		<set name="icon" value="icon.ev_charge_scroll"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51098" levels="1" name="Blue Dynasty Transformation">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.armor_t91_u_i00"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="51099" levels="1" name="Transform: Kat the Cat">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.cat_the_cat_change_0"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

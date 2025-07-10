@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT list (zone)*>
+
+<!ELEMENT zone (mobs|rewards)*>
+<!ATTLIST zone
+	id CDATA #REQUIRED
+	pointsToKey CDATA #REQUIRED
+	maximumKeys CDATA #REQUIRED
+	minLevel CDATA #REQUIRED
+	maxLevel CDATA #REQUIRED>
+	
+	<!ELEMENT mobs (mob)*>
+		<!ELEMENT mob (#PCDATA)>
+		<!ATTLIST mob
+			id CDATA #REQUIRED>
+
+	<!ELEMENT rewards (reward)*>
+		<!ELEMENT reward (#PCDATA)>
+		<!ATTLIST reward
+			id CDATA #REQUIRED
+			count CDATA #REQUIRED>

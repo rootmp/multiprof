@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="39500">
+		<!--Max HP +55-->
+		<for>
+			<add order="0x60" stat="maxHp" value="55"/>
+		</for>
+	</option_data>
+	<option_data id="39501">
+		<!--HP/ MP/ CP Recovery Rate +1-->
+		<for>
+			<add order="0x60" stat="regHp" value="1"/>
+			<add order="0x60" stat="regMp" value="1"/>
+			<add order="0x60" stat="regCp" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39502">
+		<!--Max CP +55-->
+		<for>
+			<add order="0x60" stat="maxCp" value="55"/>
+		</for>
+	</option_data>
+	<option_data id="39503">
+		<!--Max MP +65-->
+		<for>
+			<add order="0x60" stat="maxMp" value="65"/>
+		</for>
+	</option_data>
+	<option_data id="39504">
+		<!--Max HP +65-->
+		<for>
+			<add order="0x60" stat="maxHp" value="65"/>
+		</for>
+	</option_data>
+	<option_data id="39505">
+		<!--Max CP +80-->
+		<for>
+			<add order="0x60" stat="maxCp" value="80"/>
+		</for>
+	</option_data>
+	<option_data id="39506">
+		<!--Max MP +80-->
+		<for>
+			<add order="0x60" stat="maxMp" value="80"/>
+		</for>
+	</option_data>
+	<option_data id="39507">
+		<!--Max HP +80-->
+		<for>
+			<add order="0x60" stat="maxHp" value="80"/>
+		</for>
+	</option_data>
+	<option_data id="39508">
+		<!--P. Atk. +35-->
+		<for>
+			<add order="0x60" stat="pAtk" value="35"/>
+		</for>
+	</option_data>
+	<option_data id="39509">
+		<!--P. Def. +35-->
+		<for>
+			<add order="0x60" stat="pDef" value="35"/>
+		</for>
+	</option_data>
+	<option_data id="39510">
+		<!--M. Atk. +35-->
+		<for>
+			<add order="0x60" stat="mAtk" value="35"/>
+		</for>
+	</option_data>
+	<option_data id="39511">
+		<!--P. Skill Critical Damage +1%-->
+		<for>
+			<p_skill_critical_damage value="1" type="PER"/>
+		</for>
+	</option_data>
+	<option_data id="39512">
+		<!--Received P. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39513">
+		<!--Received M. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39514">
+		<!--Received P. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39515">
+		<!--M. Skill Critical Rate +1%-->
+		<for>
+			<mul order="0x60" stat="mCritRate" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39516">
+		<!--P. Skill Critical Rate +1%-->
+		<for>
+			<mul order="0x60" stat="p_skill_critical_rate" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39517">
+		<!--M. Skill Critical Damage +1%-->
+		<for>
+			<p_magic_critical_dmg value="1.01" type="PER"/>
+		</for>
+	</option_data>
+	<option_data id="39518">
+		<!--Received P. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39519">
+		<!--Received M. Skill Critical Rate -1%-->
+		<for>
+			<mul order="0x60" stat="mCritChanceRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39520">
+		<!--Received M. Skill Critical Damage -1%-->
+		<for>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39521">
+		<!--P./ M. Atk. +25-->
+		<for>
+			<add order="0x60" stat="pAtk" value="25"/>
+			<add order="0x60" stat="mAtk" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39522">
+		<!--P./ M. Def. +40-->
+		<for>
+			<add order="0x60" stat="pDef" value="40"/>
+			<add order="0x60" stat="mDef" value="40"/>
+		</for>
+	</option_data>
+	<option_data id="39523">
+		<!--P./ M. Atk. +40-->
+		<for>
+			<add order="0x60" stat="pAtk" value="40"/>
+			<add order="0x60" stat="mAtk" value="40"/>
+		</for>
+	</option_data>
+	<option_data id="39524">
+		<!--P./ M. Def. +50-->
+		<for>
+			<add order="0x60" stat="pDef" value="50"/>
+			<add order="0x60" stat="mDef" value="50"/>
+		</for>
+	</option_data>
+	<option_data id="39525">
+		<!--Skill Power +1%-->
+		<for>
+			<mul order="0x60" stat="p_skill_power" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39526">
+		<!--Received damage -1%-->
+		<for>
+			<mul order="0x60" stat="pvpPhysDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvpPhysSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvpMagicSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvePhysDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvePhysSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pveMagicSkillDefenceBonus" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39527">
+		<!--Skill Power +1%, Max MP +50-->
+		<for>
+			<mul order="0x60" stat="p_skill_power" value="1.01"/>
+			<add order="0x60" stat="maxMp" value="50"/>
+		</for>
+	</option_data>
+	<option_data id="39528">
+		<!--Received damage -1%, Max HP +50-->
+		<for>
+			<mul order="0x60" stat="pvpPhysDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvpPhysSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvpMagicSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvePhysDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pvePhysSkillDefenceBonus" value="1.01"/>
+			<mul order="0x60" stat="pveMagicSkillDefenceBonus" value="1.01"/>
+			<add order="0x60" stat="maxHp" value="50"/>
+		</for>
+	</option_data>
+	<option_data id="39529">
+		<!--P./ M. Def. +50, HP Recovery Potions' Effect +50-->
+		<for>
+			<add order="0x60" stat="pDef" value="50"/>
+			<add order="0x60" stat="mDef" value="50"/>
+			<stat_effect name="potion_hp_heal_effect" value="50" type="DIFF"/>
+		</for>
+	</option_data>
+	<option_data id="39530">
+		<!--Skill MP Consumption -1%-->
+		<for>
+			<mul order="0x60" stat="mpConsum" value="0.99"/>
+			<mul order="0x60" stat="mpConsumePhysical" value="0.99"/>
+			<mul order="0x60" stat="mpDanceConsume" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39531">
+		<!--P./ M. Def. +80-->
+		<for>
+			<add order="0x60" stat="pDef" value="80"/>
+			<add order="0x60" stat="mDef" value="80"/>
+		</for>
+	</option_data>
+	<option_data id="39532">
+		<!--P./ M. Atk. +60-->
+		<for>
+			<add order="0x60" stat="pAtk" value="60"/>
+			<add order="0x60" stat="mAtk" value="60"/>
+		</for>
+	</option_data>
+	<option_data id="39533">
+		<!--Received PvP damage -1%, Max CP +1%, Max HP +1%-->
+	</option_data>
+	<option_data id="39534">
+		<!--Received PvP damage -1%, PvP damage +1%, Max CP +1%, Max HP +1%-->
+	</option_data>
+	<option_data id="39535">
+		<!--Received PvP damage -1%, PvP damage +1%, Max CP +1%, Max HP +1%, Skill Power +1%, HP Recovery Potions' Effect +5-->
+	</option_data>
+	<option_data id="39536">
+		<!--Received PvP damage -1%, PvP damage +1%, Max CP +1%, Max HP +1%, Skill Power +1%, HP Recovery Potions' Effect +10-->
+	</option_data>
+	<option_data id="39537">
+		<!--Received PvP damage -1%, PvP damage +1%, Max CP +1%, Max HP +1%, Skill Power +1%, HP Recovery Potions' Effect +20-->
+	</option_data>
+	<option_data id="39539">
+		<!--Acquired XP/ SP +5%, P./ M. Def. +50, Atk. Spd./ Casting Spd. +5, PvE damage +2%, received PvE damage -5%-->
+	</option_data>
+	<option_data id="39540">
+		<!--Acquired XP/ SP +10%, P./ M. Def. +100, Atk. Spd./ Casting Spd. +10, PvP damage +2%, received PvP damage -5%-->
+	</option_data>
+	<option_data id="39541" />
+	<option_data id="39542" />
+	<option_data id="39543" />
+	<option_data id="39544" />
+	<option_data id="39545" />
+	<option_data id="39546" />
+	<option_data id="39547" />
+	<option_data id="39548" />
+	<option_data id="39549" />
+	<option_data id="39550" />
+	<option_data id="39551" />
+	<option_data id="39552" />
+	<option_data id="39553" />
+	<option_data id="39554" />
+	<option_data id="39555" />
+	<option_data id="39556" />
+	<option_data id="39557" />
+	<option_data id="39558" />
+	<option_data id="39559" />
+	<option_data id="39560" />
+	<option_data id="39561" />
+	<option_data id="39562" />
+	<option_data id="39563" />
+	<option_data id="39564" />
+	<option_data id="39565" />
+	<option_data id="39566" />
+	<option_data id="39567" />
+	<option_data id="39568" />
+	<option_data id="39569" />
+	<option_data id="39570" />
+	<option_data id="39571" />
+	<option_data id="39572" />
+	<option_data id="39573" />
+	<option_data id="39574">
+		<!--Acquired XP/ SP +10%, Max HP/ MP/ CP +300, Speed +2, All received Critical Rate -2%, All received Critical Damage -2%-->
+	</option_data>
+	<option_data id="39575">
+		<!--Acquired XP/ SP +3%, Max HP/ MP/ CP +125, Atk. Spd./ Casting Spd. +10, All Critical Rate +1%, All Critical Damage +1%-->
+	</option_data>
+	<option_data id="39576">
+		<!--Acquired XP/ SP +2%, Max HP/ MP/ CP +75, Atk. Spd./ Casting Spd. +5, PvE damage +1%, received PvE damage -1%-->
+	</option_data>
+</list>

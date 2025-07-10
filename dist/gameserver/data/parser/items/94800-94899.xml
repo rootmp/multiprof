@@ -1,0 +1,2755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="94800" name="Kit: Dragon" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.strider_necklace_i00"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94101" min_count="1" max_count="1" chance="100"/><!--Sealed Dragon's Necklace-->
+			<capsuled_item id="94636" min_count="100" max_count="100" chance="100"/><!--Pet's XP Growth Scroll-->
+			<capsuled_item id="94657" min_count="1" max_count="1" chance="100"/><!--Package: Pet Food 2000 pcs.-->
+			<capsuled_item id="6645" min_count="50000" max_count="50000" chance="100"/><!--Beast Soulshot-->
+			<capsuled_item id="6646" min_count="20000" max_count="20000" chance="100"/><!--Beast Spiritshot-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94801" name="Kit: Hawk" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.thunder_bird_necklace_i00"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94102" min_count="1" max_count="1" chance="100"/><!--Sealed Hawk Necklace-->
+			<capsuled_item id="94636" min_count="100" max_count="100" chance="100"/><!--Pet's XP Growth Scroll-->
+			<capsuled_item id="94657" min_count="1" max_count="1" chance="100"/><!--Package: Pet Food 2000 pcs.-->
+			<capsuled_item id="6645" min_count="50000" max_count="50000" chance="100"/><!--Beast Soulshot-->
+			<capsuled_item id="6646" min_count="20000" max_count="20000" chance="100"/><!--Beast Spiritshot-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94802" name="Zaken Doll" add_name="7-day">
+		<!--<Zaken Doll's Sorcery Lv. 2>\nSkill Critical Rate +40\nHP Recovery +50\nSkill Critical Damage +200\nVampiric Rage +2%\n(with a certain chance)\n\nAvailable for 7 d.\nBoosts parameters when in inventory.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_zaken_doll_30d"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="durability" value="10080"/>
+		<set name="temporal" value="true"/>
+		<set name="type" value="RUNE"/>
+		<skills>
+			<skill id="50463" level="2"/>	<!-- Zaken Doll's Sorcery -->
+		</skills>
+	</etcitem>
+	<etcitem id="94803" name="Core Doll" add_name="7-day">
+		<!--<Core Doll's Sorcery Lv. 2>\nReceived Skill Critical Damage -10%\nReceived Skill Critical Rate -5%\nShock Resistance +20%\nSleep Resistance +20%\nKnockback Resistance +10%\nAvailable for 7 d.\nBoosts parameters when in inventory.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_core_doll_30d"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="durability" value="10080"/>
+		<set name="temporal" value="true"/>
+		<set name="type" value="RUNE"/>
+		<skills>
+			<skill id="50464" level="2"/>	<!-- Core Doll's Sorcery -->
+		</skills>
+	</etcitem>
+	<etcitem id="94804" name="Package: Zaken Doll (Time-limited)" add_name="7-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_zaken_doll_30d"/>
+		<!--Double-click to obtain the following items.\n\nZaken Doll (7-day)-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94803" min_count="1" max_count="1" chance="100" /> <!-- Core Doll - 7-day -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94805" name="Package: Core Doll (Time-limited)" add_name="7-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_core_doll_30d"/>
+		<!--Double-click to obtain the following items.\n\nCore Doll (7-day)-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94802" min_count="1" max_count="1" chance="100" /> <!-- Zaken Doll - 7-day -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94806" name="Spellbook: Flying Dagger">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_magic_book_red_i00"/>
+		<!--A spellbook for learning the Flying Dagger skill.\n\n<Classes>\nAdventurer\nWind Rider\nGhost Hunter\n\n<Skill effect>\nThrows a dagger at the target and infects them, decreasing their Atk. Spd./ Casting Spd./ Speed.-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94807" name="Special Giran Seal (Time-limited)">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_royal_seal_of_lord_i00"/>
+		<!--Required for creating the listed items through the Special Craft.\n\n<Items to create>\nBerserker's Scroll (1 pc.)\nSpellbook: Ultimate Death Knight Transformation (5 pcs.)\nSpellbook: Titan Champion (5 pcs.)\nSpellbook: Cacophony of War (5 pcs.)\nSpellbook: Pa'agrio's Touch (5 pcs.)\nSpellbook: Team Building (5 pcs.)-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94808" name="Pack of Seals (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_pendant_pvp_box"/>
+		<!--Double-click to obtain one of the following items and 1 to 1000 Giran Seals.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="94673" count="1" chance="0.01"/><!--Spellbook: Team Building--><!--TODO: Check chance-->
+			<create_item id="93103" count="1" chance="0.01"/><!--Spellbook: Divine Beam--><!--TODO: Check chance-->
+			<create_item id="94326" count="1" chance="0.01"/><!--Spellbook: Dance of Warrior--><!--TODO: Check chance-->
+			<create_item id="94327" count="1" chance="0.01"/><!--Spellbook: Dance of Fire--><!--TODO: Check chance-->
+			<create_item id="94324" count="1" chance="0.01"/><!--Spellbook: Song of Earth--><!--TODO: Check chance-->
+			<create_item id="94325" count="1" chance="0.01"/><!--Spellbook: Song of Hunter--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94513" count="1" chance="0.01"/><!--Package: Frintezza Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94156" count="1" chance="0.01"/><!--Package: Baium Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94651" count="1" chance="0.01"/><!--Package: Zaken Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94159" count="1" chance="0.01"/><!--Package: Queen Ant Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94162" count="1" chance="0.01"/><!--Package: Orfen Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94654" count="1" chance="0.01"/><!--Package: Core Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94728" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94186" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94188" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Armor--><!--TODO: Check chance-->
+			<create_item id="94423" count="1" chance="0.01"/><!--Life Stone - Accessories--><!--TODO: Check chance-->
+			<create_item id="93100" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Shield/ Sigil--><!--TODO: Check chance-->
+			<create_item id="94303" count="1" chance="0.01"/><!--Life Stone - Circlet--><!--TODO: Check chance-->
+			<create_item id="91712" count="5" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="94269" count="5" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="5" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91641" count="10" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="50" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="100" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="93739" count="1" chance="0.01"/><!--Package: Giran Seal (1000 pcs.)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94809" name="Kit: 50 Packs of Seals (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_pendant_pve_box"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94808" min_count="50" max_count="50" chance="100"/><!--Pack of Seals (Time-limited)-->
+			<capsuled_item id="94807" min_count="1" max_count="1" chance="100"/><!--Special Giran Seal (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94810" name="Baium's Lair Pass (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="5"/>
+		<set name="icon" value="icon.ticket_of_zaken"/>
+		<!--Required for entering Baium's Lair.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94811" name="Baium Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_marguene_collection_box_i00"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92408" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="93448" count="1" chance="0.01"/><!--A-grade Weapon Coupon--><!--TODO: Check chance-->
+			<create_item id="93449" count="1" chance="0.01"/><!--A-grade Armor Coupon--><!--TODO: Check chance-->
+			<create_item id="94615" count="1" chance="0.01"/><!--Forgotten Primeval Garden's Time Stone (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94620" count="1" chance="0.01"/><!--Primeval Isle's Time Stone (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94380" count="5" chance="0.01"/><!--Scroll: Boost Attack (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94381" count="5" chance="0.01"/><!--Scroll: Boost Defense (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="93848" count="10" chance="0.01"/><!--Sayha's Cookie (Time-limited)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<armor id="94812" name="Baby Shark Outfit">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="price" value="5000000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="94813" name="White Day Outfit">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="price" value="5000000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<etcitem id="94814" name="Aden Random Transformation Scroll (Time-limited)" add_name="Sealed">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.random_transform_00"/>
+		<!--When used, activates one of the following transformations.\n\n<Available transformations>\n- Dragon Berserker\n- High Priest\n- White Day\n- Teddy Bear\n- Panda\n- Cat\n\nDuration: 20 min.\nCooldown: 10 sec.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<skills>
+			<skill id="40260" level="1" /> <!-- Random Transformation Scroll -->
+		</skills>
+	</etcitem>
+	<etcitem id="94815" name="Kit: Growth Supplies (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_level_up_consume_package"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="91641" min_count="500" max_count="500" chance="100"/><!--Sayha's Blessing-->
+			<capsuled_item id="91712" min_count="300" max_count="300" chance="100"/><!--Sayha's Storm Lv. 3-->
+			<capsuled_item id="49674" min_count="300" max_count="300" chance="100"/><!--XP Growth Scroll-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94816" name="Kit: Buff Scrolls (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_buff_scroll_package"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94269" min_count="300" max_count="300" chance="100"/><!--Scroll: Boost Attack-->
+			<capsuled_item id="94271" min_count="300" max_count="300" chance="100"/><!--Scroll: Boost Defense-->
+			<capsuled_item id="94777" min_count="30" max_count="30" chance="100"/><!--Berserker's Scroll-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94817" name="Kit: Combat Supplies (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_battle_consume_package"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90405" min_count="100" max_count="100" chance="100"/><!--My Teleport Scroll-->
+			<capsuled_item id="91689" min_count="100" max_count="100" chance="100"/><!--Blessed Scroll of Escape-->
+			<capsuled_item id="91690" min_count="3000" max_count="3000" chance="100"/><!--Special HP Recovery Potion-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94818" name="Treasure Chest of Insolence (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_freya_gift_box"/>
+		<!--Double-click to obtain a random item from the list and another one of various items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="93103" count="1" chance="0.01"/><!--Spellbook: Divine Beam--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="95808" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 6--><!--TODO: Check chance-->
+			<create_item id="94513" count="1" chance="0.01"/><!--Package: Frintezza Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94156" count="1" chance="0.01"/><!--Package: Baium Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94651" count="1" chance="0.01"/><!--Package: Zaken Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94159" count="1" chance="0.01"/><!--Package: Queen Ant Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94162" count="1" chance="0.01"/><!--Package: Orfen Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94654" count="1" chance="0.01"/><!--Package: Core Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94728" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94729" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="95803" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+			<create_item id="95783" count="1" chance="0.01"/><!--Aden's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94186" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94188" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Armor--><!--TODO: Check chance-->
+			<create_item id="94423" count="1" chance="0.01"/><!--Life Stone - Accessories--><!--TODO: Check chance-->
+			<create_item id="93100" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Shield/ Sigil--><!--TODO: Check chance-->
+			<create_item id="94303" count="1" chance="0.01"/><!--Life Stone - Circlet--><!--TODO: Check chance-->
+			<create_item id="94819" count="1" chance="0.01"/><!--Big Treasure Chest of Insolence (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="91641" count="5" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="91712" count="2" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="94269" count="2" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="2" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="30" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94819" name="Big Treasure Chest of Insolence (Time-limited)">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_freya_2016_gift_box"/>
+		<!--Double-click to obtain a random item from the list and another one of various items.-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="93103" count="1" chance="0.01"/><!--Spellbook: Divine Beam--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="95808" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 6--><!--TODO: Check chance-->
+			<create_item id="94513" count="1" chance="0.01"/><!--Package: Frintezza Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94156" count="1" chance="0.01"/><!--Package: Baium Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94651" count="1" chance="0.01"/><!--Package: Zaken Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94159" count="1" chance="0.01"/><!--Package: Queen Ant Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94162" count="1" chance="0.01"/><!--Package: Orfen Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94654" count="1" chance="0.01"/><!--Package: Core Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94728" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94729" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="95803" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94820" name="Huge Treasure Chest of Insolence (Time-limited)">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_gold_lure_box"/>
+		<!--Double-click to obtain a random item from the list and another one of various items.-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="93103" count="1" chance="0.01"/><!--Spellbook: Divine Beam--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="95808" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 6--><!--TODO: Check chance-->
+			<create_item id="94513" count="1" chance="0.01"/><!--Package: Frintezza Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94156" count="1" chance="0.01"/><!--Package: Baium Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94651" count="1" chance="0.01"/><!--Package: Zaken Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94159" count="1" chance="0.01"/><!--Package: Queen Ant Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94162" count="1" chance="0.01"/><!--Package: Orfen Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94654" count="1" chance="0.01"/><!--Package: Core Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94728" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="94729" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94821" name="Kit: 100 Treasure Chests of Insolence (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_freya_sirr_box"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94818" min_count="100" max_count="100" chance="100"/><!--Treasure Chest of Insolence (Time-limited)-->
+			<capsuled_item id="94819" min_count="1" max_count="1" chance="100"/><!--Big Treasure Chest of Insolence (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94822" name="Package: +7 Cloak of Protection" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_2018_sayha_cloak_back_i01"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93301" min_count="1" max_count="1" chance="100" enchant="7"/><!--Cloak of Protection-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94823" name="Boss' Weapon Pack" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.zariche_box"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93291" count="1" chance="0.01"/><!--Zaken's Blood Sword--><!--TODO: Check chance-->
+			<create_item id="93292" count="1" chance="0.01"/><!--Core's Plasmic Bow--><!--TODO: Check chance-->
+			<create_item id="93293" count="1" chance="0.01"/><!--Orfen's Venom Sword--><!--TODO: Check chance-->
+			<create_item id="93295" count="1" chance="0.01"/><!--Queen Ant's Stone Breaker--><!--TODO: Check chance-->
+			<create_item id="93294" count="1" chance="0.01"/><!--Baium's Thunder Breaker--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94824" name="Trix' Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_dragon_present"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="96616" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94729" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="93448" count="1" chance="0.01"/><!--A-grade Weapon Coupon--><!--TODO: Check chance-->
+			<create_item id="93449" count="1" chance="0.01"/><!--A-grade Armor Coupon--><!--TODO: Check chance-->
+			<create_item id="93499" count="1" chance="0.01"/><!--Enchanted B-grade Weapon Coupon--><!--TODO: Check chance-->
+			<create_item id="94380" count="5" chance="0.01"/><!--Scroll: Boost Attack (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="94381" count="5" chance="0.01"/><!--Scroll: Boost Defense (Time-limited)--><!--TODO: Check chance-->
+			<create_item id="90907" count="50" chance="0.01"/><!--Soulshot Ticket--><!--TODO: Check chance-->
+			<create_item id="3031" count="500" chance="0.01"/><!--Spirit Ore--><!--TODO: Check chance-->
+			<create_item id="93848" count="10" chance="0.01"/><!--Sayha's Cookie (Time-limited)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94825" name="Trix's Big Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_dragon_shinning_present"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93933" count="1" chance="0.01"/><!--Rare Accessory Pack--><!--TODO: Check chance-->
+			<create_item id="94386" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94384" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="95661" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94264" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94826" name="Olympiad Treasure Chest" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i11"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="93141" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93142" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93317" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93318" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93735" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93736" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="93268" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93269" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="91767" count="3" chance="0.01"/><!--Enchant Kit: Talisman of Aden--><!--TODO: Check chance-->
+			<create_item id="92020" count="3" chance="0.01"/><!--Enchant Kit: Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="93685" count="3" chance="0.01"/><!--Enchant Kit: Talisman of Speed--><!--TODO: Check chance-->
+			<create_item id="93259" count="3" chance="0.01"/><!--Reinforced Jewelry Box--><!--TODO: Check chance-->
+			<create_item id="94269" count="50" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="50" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91690" count="1500" chance="0.01"/><!--Special HP Recovery Potion--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94827" name="Boss' Accessory Crafting Kit (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_dragon_present_4"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92314" min_count="60" max_count="60" chance="100"/><!--Giran Seal-->
+			<capsuled_item id="94219" min_count="1" max_count="1" chance="100"/><!--Boss' Accessory Fragment (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94828" name="Class Change Coupon (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_payback_ticket_01"/>
+		<!--Required for changing your class through Hermin.\n\nNote!\nTalk to Juni in Aden or Giran to teleport to the Additional Services Lab.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="destroyable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94829" name="Scroll: 1,000,000,000 SP" add_name="Sealed">
+		<!--SP +1,000,000,000.-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_sp_scroll3_i00"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="destroyable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="SCROLL"/>
+		<skills>
+			<skill id="40261" level="1" /> <!-- Random Transformation Scroll -->
+		</skills>
+	</etcitem>
+	<armor id="94830" name="Ultimate Behemoth Transformation Costume" add_name="Sealed">
+		<!--NPC only costume-->
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.valkyrie_chest_change_0"/>
+		<set name="type" value="HEAVY"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<etcitem id="94831" name="Aden Mark (Time-limited)">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_ancient_adena_i00"/>
+		<!--Can be exchanged for various items through the Game Assistant.-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94832" name="Special Spellbook Chest">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.sayha2017_box_i01"/>
+		<!--Double-click to obtain one of the following items.-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="93103" count="1" chance="0.01"/><!--Spellbook: Divine Beam--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94833" name="Aden's Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_pirate_battle_box"/>
+		<!--Double-click to obtain 2 Aden Marks, a random item from the list and another one of various items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94831" min_count="2" max_count="2" chance="100"/><!--Aden Mark (Time-limited)-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="93387" count="1" chance="0.01"/><!--Spellbook: Ultimate Death Knight Transformation--><!--TODO: Check chance-->
+			<create_item id="94498" count="1" chance="0.01"/><!--Spellbook: Titan Champion--><!--TODO: Check chance-->
+			<create_item id="94508" count="1" chance="0.01"/><!--Spellbook: Cacophony of War--><!--TODO: Check chance-->
+			<create_item id="94668" count="1" chance="0.01"/><!--Spellbook: Pa'agrio's Touch--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="92990" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="95813" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 11--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="90763" count="1" chance="0.01"/><!--Zaken's Earring--><!--TODO: Check chance-->
+			<create_item id="6660" count="1" chance="0.01"/><!--Queen Ant's Ring--><!--TODO: Check chance-->
+			<create_item id="6661" count="1" chance="0.01"/><!--Orfen's Earring--><!--TODO: Check chance-->
+			<create_item id="6662" count="1" chance="0.01"/><!--Ring of Core--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94083" count="1" chance="0.01"/><!--Helmet of Mana--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93140" count="1" chance="0.01"/><!--Ice Crystal Gaiters--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93316" count="1" chance="0.01"/><!--Leather Leggings of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93734" count="1" chance="0.01"/><!--Flaming Stockings--><!--TODO: Check chance-->
+			<create_item id="94513" count="1" chance="0.01"/><!--Package: Frintezza Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94156" count="1" chance="0.01"/><!--Package: Baium Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94651" count="1" chance="0.01"/><!--Package: Zaken Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94159" count="1" chance="0.01"/><!--Package: Queen Ant Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94162" count="1" chance="0.01"/><!--Package: Orfen Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94654" count="1" chance="0.01"/><!--Package: Core Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94728" count="1" chance="0.01"/><!--Top-grade A-grade Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94729" count="1" chance="0.01"/><!--Master's Book Chest--><!--TODO: Check chance-->
+			<create_item id="94208" count="1" chance="0.01"/><!--Scroll of Blessing--><!--TODO: Check chance-->
+			<create_item id="94328" count="1" chance="0.01"/><!--Elixir Powder--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93256" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="93257" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="93258" count="1" chance="0.01"/><!--Cursed Scroll: Enchant A-grade Armor--><!--TODO: Check chance-->
+			<create_item id="91031" count="1" chance="0.01"/><!--Water Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91032" count="1" chance="0.01"/><!--Fire Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91033" count="1" chance="0.01"/><!--Wind Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="91034" count="1" chance="0.01"/><!--Earth Spirit Evolution Stone--><!--TODO: Check chance-->
+			<create_item id="95803" count="1" chance="0.01"/><!--Hardin's Soul Crystal Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94186" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94188" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Armor--><!--TODO: Check chance-->
+			<create_item id="94423" count="1" chance="0.01"/><!--Life Stone - Accessories--><!--TODO: Check chance-->
+			<create_item id="92314" count="50" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="20" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="10" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="91641" count="5" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="94831" count="2" chance="0.01"/><!--Aden Mark (Time-limited)--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94834" name="Golden Wheel's Coin (Time-limited)">
+		<set name="grind_commission" value="25"/>
+		<set name="grind_point" value="250"/>
+		<set name="price" value="500"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.ev_golden_wheel_token"/>
+		<!--Can be exchanged for various items through the Game Assistant.\n<Items for exchange>\nGolden Wheel's Scroll (5 pcs.)\nGolden Wheel's Transformation Scroll (10 pcs.)\nKit: Golden Wheel's Protection (7 pcs.)\nKit: Golden Wheel's Random Craft (15 pcs.)\nGolden Wheel's Shining Kit (25 pcs.)-->
+		<set name="tradeable" value="true" />
+		<set name="dropable" value="true" />
+		<set name="privatestoreable" value="true" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94835" name="Golden Wheel's Scroll" add_name="Event">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.flower_songpyeon"/>
+		<!--Applies a buff when used.\n\n<Buff effect>\nP. Atk. +100\nM. Atk. +100\nP. Def. +200\nM. Def. +200\nMax HP +300\nMax MP +300\nAcquired XP/ SP +10%\n\nDuration: 60 min.\nCooldown: 1 min.\nThe effect remains after death.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94836" name="Kit: Golden Wheel's Protection (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i10"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93848" min_count="2" max_count="2" chance="100"/><!--Sayha's Cookie (Time-limited)-->
+			<capsuled_item id="94835" min_count="1" max_count="1" chance="100"/><!--Flower Sweets (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94837" name="Kit: Golden Wheel's Random Craft (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i09"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93701" min_count="1" max_count="1" chance="100"/><!--Charging Stone of Random Craft - 1 Charge (Time-limited)-->
+			<capsuled_item id="94835" min_count="1" max_count="1" chance="100"/><!--Flower Sweets (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94838" name="Random Transformation Scroll (Time-limited)" add_name="Sealed">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.random_transform_00"/>
+		<!--When used, activates one of the following transformations.\n\n<Available transformations>\n- Dragon Berserker\n- Wild Wolf\n- White Day\n- Cat\n\nDuration: 20 min.\nCooldown: 10 sec.\nThe effect remains after death.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<skills>
+			<skill id="40263" level="1" /> <!-- Random Transformation Scroll -->
+		</skills>
+	</etcitem>
+	<etcitem id="94839" name="Golden Wheel's Shining Kit (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_treasure_box_i11"/>
+		<!--Double-click to obtain the following items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93848" min_count="4" max_count="4" chance="100"/><!--Sayha's Cookie (Time-limited)-->
+			<capsuled_item id="93701" min_count="2" max_count="2" chance="100"/><!--Charging Stone of Random Craft - 1 Charge (Time-limited)-->
+			<capsuled_item id="94835" min_count="1" max_count="1" chance="100"/><!--Flower Sweets (Time-limited)-->
+		</capsuled_items>
+	</etcitem>
+	<armor id="94840" name="Breastplate of Protection">
+		<!--<Properties>\nSTR +2\nCON +2\nOverweight limit +1500\nParalysis Resistance +25%\nShock Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="277"/>
+		<set name="icon" value="icon.armor_t901_u_i00"/>
+		<set name="price" value="3562000"/>
+		<set name="grind_point" value="1781000"/>
+		<set name="grind_commission" value="35620"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7700"/>
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50475" level="1"/>	<!-- A-grade: Breastplate of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110055"/>
+			</level>
+			<level value="1">
+				<option id="110056"/>
+			</level>
+			<level value="2">
+				<option id="110057"/>
+			</level>
+			<level value="3">
+				<option id="110058"/>
+			</level>
+			<level value="4">
+				<option id="110059"/>
+			</level>
+			<level value="5">
+				<option id="110060"/>
+			</level>
+			<level value="6">
+				<option id="110061"/>
+			</level>
+			<level value="7">
+				<option id="110062"/>
+			</level>
+			<level value="8">
+				<option id="110063"/>
+			</level>
+			<level value="9">
+				<option id="110064"/>
+			</level>
+			<level value="10">
+				<option id="110065"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="240"/>
+		</for>
+	</armor>
+	<armor id="94841" name="Gaiters of Protection">
+		<!--<Properties>\nCON +2\nOverweight limit +1000\nParalysis Resistance +25%\nShock Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t901_l_i00"/>
+		<set name="price" value="2226000"/>
+		<set name="grind_point" value="1113000"/>
+		<set name="grind_commission" value="22260"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3320"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false" />
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50478" level="1"/>	<!-- A-grade: Gaiters of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110066"/>
+			</level>
+			<level value="1">
+				<option id="110067"/>
+			</level>
+			<level value="2">
+				<option id="110068"/>
+			</level>
+			<level value="3">
+				<option id="110069"/>
+			</level>
+			<level value="4">
+				<option id="110070"/>
+			</level>
+			<level value="5">
+				<option id="110071"/>
+			</level>
+			<level value="6">
+				<option id="110072"/>
+			</level>
+			<level value="7">
+				<option id="110073"/>
+			</level>
+			<level value="8">
+				<option id="110074"/>
+			</level>
+			<level value="9">
+				<option id="110075"/>
+			</level>
+			<level value="10">
+				<option id="110076"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="210"/>
+		</for>
+	</armor>
+	<armor id="94842" name="Breastplate of Protection" add_name="Sealed">
+		<!--<Properties>\nSTR +2\nCON +2\nOverweight limit +1500\nParalysis Resistance +25%\nShock Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t901_u_i00"/>
+		<set name="price" value="3562000"/>
+		<set name="grind_point" value="712400"/>
+		<set name="grind_commission" value="14248"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7700"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<set name="commissionable" value="false"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50475" level="1"/>	<!-- A-grade: Breastplate of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110055"/>
+			</level>
+			<level value="1">
+				<option id="110056"/>
+			</level>
+			<level value="2">
+				<option id="110057"/>
+			</level>
+			<level value="3">
+				<option id="110058"/>
+			</level>
+			<level value="4">
+				<option id="110059"/>
+			</level>
+			<level value="5">
+				<option id="110060"/>
+			</level>
+			<level value="6">
+				<option id="110061"/>
+			</level>
+			<level value="7">
+				<option id="110062"/>
+			</level>
+			<level value="8">
+				<option id="110063"/>
+			</level>
+			<level value="9">
+				<option id="110064"/>
+			</level>
+			<level value="10">
+				<option id="110065"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="240"/>
+		</for>
+	</armor>
+	<armor id="94843" name="Gaiters of Protection" add_name="Sealed">
+		<!--<Properties>\nCON +2\nOverweight limit +1000\nParalysis Resistance +25%\nShock Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t901_l_i00"/>
+		<set name="price" value="2226000"/>
+		<set name="grind_point" value="445200"/>
+		<set name="grind_commission" value="8904"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3320"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="commissionable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50478" level="1"/>	<!-- A-grade: Gaiters of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110066"/>
+			</level>
+			<level value="1">
+				<option id="110067"/>
+			</level>
+			<level value="2">
+				<option id="110068"/>
+			</level>
+			<level value="3">
+				<option id="110069"/>
+			</level>
+			<level value="4">
+				<option id="110070"/>
+			</level>
+			<level value="5">
+				<option id="110071"/>
+			</level>
+			<level value="6">
+				<option id="110072"/>
+			</level>
+			<level value="7">
+				<option id="110073"/>
+			</level>
+			<level value="8">
+				<option id="110074"/>
+			</level>
+			<level value="9">
+				<option id="110075"/>
+			</level>
+			<level value="10">
+				<option id="110076"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="210"/>
+		</for>
+	</armor>
+	<armor id="94844" name="Leather Armor of Protection">
+		<!--<Properties>\nSTR +2\nDEX +2\nOverweight limit +1500\nParalysis Resistance +25%\nShock Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t902_u_i00"/>
+		<set name="price" value="3562000"/>
+		<set name="grind_point" value="1781000"/>
+		<set name="grind_commission" value="35620"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4300"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50483" level="1"/>	<!-- A-grade: Leather Armor of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110077"/>
+			</level>
+			<level value="1">
+				<option id="110078"/>
+			</level>
+			<level value="2">
+				<option id="110079"/>
+			</level>
+			<level value="3">
+				<option id="110080"/>
+			</level>
+			<level value="4">
+				<option id="110081"/>
+			</level>
+			<level value="5">
+				<option id="110082"/>
+			</level>
+			<level value="6">
+				<option id="110083"/>
+			</level>
+			<level value="7">
+				<option id="110084"/>
+			</level>
+			<level value="8">
+				<option id="110085"/>
+			</level>
+			<level value="9">
+				<option id="110086"/>
+			</level>
+			<level value="10">
+				<option id="110087"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="201"/>
+		</for>
+	</armor>
+	<armor id="94845" name="Leather Leggings of Protection">
+		<!--<Properties>\nDEX +2\nOverweight limit +1000\nParalysis Resistance +25%\nShock Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t902_l_i00"/>
+		<set name="price" value="2226000"/>
+		<set name="grind_point" value="1113000"/>
+		<set name="grind_commission" value="22260"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="1480"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50486" level="1"/>	<!-- A-grade: Leather Leggings of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110088"/>
+			</level>
+			<level value="1">
+				<option id="110089"/>
+			</level>
+			<level value="2">
+				<option id="110090"/>
+			</level>
+			<level value="3">
+				<option id="110091"/>
+			</level>
+			<level value="4">
+				<option id="110092"/>
+			</level>
+			<level value="5">
+				<option id="110093"/>
+			</level>
+			<level value="6">
+				<option id="110094"/>
+			</level>
+			<level value="7">
+				<option id="110095"/>
+			</level>
+			<level value="8">
+				<option id="110096"/>
+			</level>
+			<level value="9">
+				<option id="110097"/>
+			</level>
+			<level value="10">
+				<option id="110098"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="140"/>
+		</for>
+	</armor>
+	<armor id="94846" name="Leather Armor of Protection" add_name="Sealed">
+		<!--<Properties>\nSTR +2\nDEX +2\nOverweight limit +1500\nParalysis Resistance +25%\nShock Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t902_u_i00"/>
+		<set name="price" value="3562000"/>
+		<set name="grind_point" value="712400"/>
+		<set name="grind_commission" value="14248"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4300"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50483" level="1"/>	<!-- A-grade: Leather Armor of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110077"/>
+			</level>
+			<level value="1">
+				<option id="110078"/>
+			</level>
+			<level value="2">
+				<option id="110079"/>
+			</level>
+			<level value="3">
+				<option id="110080"/>
+			</level>
+			<level value="4">
+				<option id="110081"/>
+			</level>
+			<level value="5">
+				<option id="110082"/>
+			</level>
+			<level value="6">
+				<option id="110083"/>
+			</level>
+			<level value="7">
+				<option id="110084"/>
+			</level>
+			<level value="8">
+				<option id="110085"/>
+			</level>
+			<level value="9">
+				<option id="110086"/>
+			</level>
+			<level value="10">
+				<option id="110087"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="201"/>
+		</for>
+	</armor>
+	<armor id="94847" name="Leather Leggings of Protection" add_name="Sealed">
+		<!--<Properties>\nDEX +2\nOverweight limit +1000\nParalysis Resistance +25%\nShock Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t902_l_i00"/>
+		<set name="price" value="2226000"/>
+		<set name="grind_point" value="445200"/>
+		<set name="grind_commission" value="8904"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="1480"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50486" level="1"/>	<!-- A-grade: Leather Leggings of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110088"/>
+			</level>
+			<level value="1">
+				<option id="110089"/>
+			</level>
+			<level value="2">
+				<option id="110090"/>
+			</level>
+			<level value="3">
+				<option id="110091"/>
+			</level>
+			<level value="4">
+				<option id="110092"/>
+			</level>
+			<level value="5">
+				<option id="110093"/>
+			</level>
+			<level value="6">
+				<option id="110094"/>
+			</level>
+			<level value="7">
+				<option id="110095"/>
+			</level>
+			<level value="8">
+				<option id="110096"/>
+			</level>
+			<level value="9">
+				<option id="110097"/>
+			</level>
+			<level value="10">
+				<option id="110098"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="140"/>
+		</for>
+	</armor>
+	<armor id="94848" name="Tunic of Protection">
+		<!--<Properties>\nWIT +2\nMEN +2\nOverweight limit +1500\nShock Resistance +25%\nParalysis Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t903_u_i00"/>
+		<set name="price" value="3562000"/>
+		<set name="grind_point" value="1781000"/>
+		<set name="grind_commission" value="35620"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1750"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50490" level="1"/>	<!-- A-grade: Tunic of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110099"/>
+			</level>
+			<level value="1">
+				<option id="110100"/>
+			</level>
+			<level value="2">
+				<option id="110101"/>
+			</level>
+			<level value="3">
+				<option id="110102"/>
+			</level>
+			<level value="4">
+				<option id="110103"/>
+			</level>
+			<level value="5">
+				<option id="110104"/>
+			</level>
+			<level value="6">
+				<option id="110105"/>
+			</level>
+			<level value="7">
+				<option id="110106"/>
+			</level>
+			<level value="8">
+				<option id="110107"/>
+			</level>
+			<level value="9">
+				<option id="110108"/>
+			</level>
+			<level value="10">
+				<option id="110109"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="138"/>
+		</for>
+	</armor>
+	<armor id="94849" name="Stockings of Protection">
+		<!--<Properties>\nWIT +2\nOverweight limit +1000\nShock Resistance +25%\nParalysis Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t903_l_i00"/>
+		<set name="price" value="2226000"/>
+		<set name="grind_point" value="1113000"/>
+		<set name="grind_commission" value="22260"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="850"/>
+		<set name="sellable" value="false"/>
+		<set name="commissionable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50493" level="1"/>	<!-- A-grade: Stockings of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110110"/>
+			</level>
+			<level value="1">
+				<option id="110111"/>
+			</level>
+			<level value="2">
+				<option id="110112"/>
+			</level>
+			<level value="3">
+				<option id="110113"/>
+			</level>
+			<level value="4">
+				<option id="110114"/>
+			</level>
+			<level value="5">
+				<option id="110115"/>
+			</level>
+			<level value="6">
+				<option id="110116"/>
+			</level>
+			<level value="7">
+				<option id="110117"/>
+			</level>
+			<level value="8">
+				<option id="110118"/>
+			</level>
+			<level value="9">
+				<option id="110119"/>
+			</level>
+			<level value="10">
+				<option id="110120"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="90"/>
+		</for>
+	</armor>
+	<armor id="94850" name="Tunic of Protection" add_name="Sealed">
+		<!--<Properties>\nWIT +2\nMEN +2\nOverweight limit +1500\nShock Resistance +25%\nParalysis Resistance +25%\nSleep Resistance +25%\nHold Resistance +25%\nSilence Resistance +25%\nFear Resistance +25%-->
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t903_u_i00"/>
+		<set name="price" value="3562000"/>
+		<set name="grind_point" value="712400"/>
+		<set name="grind_commission" value="14248"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1750"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<skills>
+			<skill id="50490" level="1"/>	<!-- A-grade: Tunic of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110099"/>
+			</level>
+			<level value="1">
+				<option id="110100"/>
+			</level>
+			<level value="2">
+				<option id="110101"/>
+			</level>
+			<level value="3">
+				<option id="110102"/>
+			</level>
+			<level value="4">
+				<option id="110103"/>
+			</level>
+			<level value="5">
+				<option id="110104"/>
+			</level>
+			<level value="6">
+				<option id="110105"/>
+			</level>
+			<level value="7">
+				<option id="110106"/>
+			</level>
+			<level value="8">
+				<option id="110107"/>
+			</level>
+			<level value="9">
+				<option id="110108"/>
+			</level>
+			<level value="10">
+				<option id="110109"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="138"/>
+		</for>
+	</armor>
+	<armor id="94851" name="Stockings of Protection" add_name="Sealed">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.armor_t903_l_i00"/>
+		<set name="price" value="2226000"/>
+		<set name="grind_point" value="445200"/>
+		<set name="grind_commission" value="8904"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="850"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<skills>
+			<skill id="50493" level="1"/>	<!-- A-grade: Stockings of Protection -->
+		</skills>
+		<enchant_options>
+			<level value="0">
+				<option id="110110"/>
+			</level>
+			<level value="1">
+				<option id="110111"/>
+			</level>
+			<level value="2">
+				<option id="110112"/>
+			</level>
+			<level value="3">
+				<option id="110113"/>
+			</level>
+			<level value="4">
+				<option id="110114"/>
+			</level>
+			<level value="5">
+				<option id="110115"/>
+			</level>
+			<level value="6">
+				<option id="110116"/>
+			</level>
+			<level value="7">
+				<option id="110117"/>
+			</level>
+			<level value="8">
+				<option id="110118"/>
+			</level>
+			<level value="9">
+				<option id="110119"/>
+			</level>
+			<level value="10">
+				<option id="110120"/>
+			</level>
+		</enchant_options>
+		<for>
+			<add stat="pDef" order="0x10" value="90"/>
+		</for>
+	</armor>
+	<etcitem id="94852" name="Black Coupon (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.ev_black_ticket"/>
+		<!--Required for purchasing <font color=EEAA22>Stable Enchant Scrolls</font>.\n\n<font color=bbaa88><Items to buy></font>\n- Scroll: Enchant Circlet of Hero\n- Scroll: Enchant Dragon Belt\n- Scroll: Enchant Cloak of Protection</font>-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="handler" value="BlackCoupon"/>
+	</etcitem>
+	<etcitem id="94853" name="Legendary Dye &lt;STR +4&gt;" add_name="3rd Class">
+		<set name="grind_commission" value="2400"/>
+		<set name="grind_point" value="120000"/>
+		<set name="price" value="240000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+		<set name="icon" value="BranchSys3.icon1.g_premium_dye_attribute_unholy"/>
+		<!--Required for Legendary STR Symbol. Take it to the Symbol Maker in town to get a symbol that boosts your abilities. Requirements: all 3rd classes.\n\nNote!\nRequires 1 dye for making the symbol.-->
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94854" name="Legendary Dye &lt;CON +4&gt;" add_name="3rd Class">
+		<set name="grind_commission" value="2400"/>
+		<set name="grind_point" value="120000"/>
+		<set name="price" value="240000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+		<set name="icon" value="BranchSys3.icon5.g_premium_dye_attribute_fire"/>
+		<!--Required for Legendary CON Symbol. Take it to the Symbol Maker in town to get a symbol that boosts your abilities. Requirements: all 3rd classes.\n\nNote!\nRequires 1 dye for making the symbol.-->
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94855" name="Legendary Dye &lt;DEX +4&gt;" add_name="3rd Class">
+		<set name="grind_commission" value="2400"/>
+		<set name="grind_point" value="120000"/>
+		<set name="price" value="240000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+		<set name="icon" value="BranchSys3.icon3.g_premium_dye_attribute_holy"/>
+		<!--Required for Legendary DEX Symbol. Take it to the Symbol Maker in town to get a symbol that boosts your abilities. Requirements: all 3rd classes.\n\nNote!\nRequires 1 dye for making the symbol.-->
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94856" name="Legendary Dye &lt;INT +4&gt;" add_name="3rd Class">
+		<set name="grind_commission" value="2400"/>
+		<set name="grind_point" value="120000"/>
+		<set name="price" value="240000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+		<set name="icon" value="BranchSys3.icon2.g_premium_dye_attribute_water"/>
+		<!--Required for Legendary INT Symbol. Take it to the Symbol Maker in town to get a symbol that boosts your abilities. Requirements: all 3rd classes.\n\nNote!\nRequires 1 dye for making the symbol.-->
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94857" name="Legendary Dye &lt;MEN +4&gt;" add_name="3rd Class">
+		<set name="grind_commission" value="2400"/>
+		<set name="grind_point" value="120000"/>
+		<set name="price" value="240000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+		<set name="icon" value="BranchSys3.icon6.g_premium_dye_attribute_wind"/>
+		<!--Required for Legendary MEN Symbol. Take it to the Symbol Maker in town to get a symbol that boosts your abilities. Requirements: all 3rd classes.\n\nNote!\nRequires 1 dye for making the symbol.-->
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94858" name="Legendary Dye &lt;WIT +4&gt;" add_name="3rd Class">
+		<set name="grind_commission" value="2400"/>
+		<set name="grind_point" value="120000"/>
+		<set name="price" value="240000"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="weight" value="150"/>
+		<set name="icon" value="BranchSys3.icon4.g_premium_dye_attribute_earth"/>
+		<!--Required for Legendary WIT Symbol. Take it to the Symbol Maker in town to get a symbol that boosts your abilities. Requirements: all 3rd classes.\n\nNote!\nRequires 1 dye for making the symbol.-->
+		<set name="dropable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94859" name="Protection Treasure Chest (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_dragon_present_3"/>
+		<!--Double-click to obtain Giran Seal, a random item from the list and another one of various items.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92314" min_count="1" max_count="1" chance="100"/><!--Giran Seal-->
+		</capsuled_items>
+		<create_items>
+			<create_item id="94840" count="1" chance="0.01"/><!--Breastplate of Protection--><!--TODO: Check chance-->
+			<create_item id="94841" count="1" chance="0.01"/><!--Gaiters of Protection--><!--TODO: Check chance-->
+			<create_item id="94844" count="1" chance="0.01"/><!--Leather Armor of Protection--><!--TODO: Check chance-->
+			<create_item id="94845" count="1" chance="0.01"/><!--Leather Leggings of Protection--><!--TODO: Check chance-->
+			<create_item id="94848" count="1" chance="0.01"/><!--Tunic of Protection--><!--TODO: Check chance-->
+			<create_item id="94849" count="1" chance="0.01"/><!--Stockings of Protection--><!--TODO: Check chance-->
+			<create_item id="49683" count="1" chance="0.01"/><!--Talisman of Baium--><!--TODO: Check chance-->
+			<create_item id="96616" count="1" chance="0.01"/><!--Boss' Weapon Pack--><!--TODO: Check chance-->
+			<create_item id="94385" count="1" chance="0.01"/><!--Improved Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="94383" count="1" chance="0.01"/><!--Scroll: Enchant Rare Accessories--><!--TODO: Check chance-->
+			<create_item id="91550" count="1" chance="0.01"/><!--Frintezza's Necklace--><!--TODO: Check chance-->
+			<create_item id="49580" count="1" chance="0.01"/><!--Baium's Ring--><!--TODO: Check chance-->
+			<create_item id="94263" count="1" chance="0.01"/><!--Stun Gauntlets--><!--TODO: Check chance-->
+			<create_item id="94301" count="1" chance="0.01"/><!--Shield of Vengeance--><!--TODO: Check chance-->
+			<create_item id="94299" count="1" chance="0.01"/><!--Sigil of Inevitability--><!--TODO: Check chance-->
+			<create_item id="94085" count="1" chance="0.01"/><!--Boots of Evasion--><!--TODO: Check chance-->
+			<create_item id="93139" count="1" chance="0.01"/><!--Ice Crystal Breastplate--><!--TODO: Check chance-->
+			<create_item id="93315" count="1" chance="0.01"/><!--Leather Armor of Lightning--><!--TODO: Check chance-->
+			<create_item id="93733" count="1" chance="0.01"/><!--Flaming Tunic--><!--TODO: Check chance-->
+			<create_item id="93255" count="1" chance="0.01"/><!--Improved Scroll: Enchant A-grade Weapon--><!--TODO: Check chance-->
+			<create_item id="94186" count="1" chance="0.01"/><!--Life Stone Lv. 2 - Weapon--><!--TODO: Check chance-->
+			<create_item id="94168" count="1" chance="0.01"/><!--Enchant Kit: Circlet of Hero--><!--TODO: Check chance-->
+			<create_item id="93304" count="1" chance="0.01"/><!--Package: Einhasad's Pendant Lv. 1--><!--TODO: Check chance-->
+			<create_item id="91641" count="3" chance="0.01"/><!--Sayha's Blessing--><!--TODO: Check chance-->
+			<create_item id="94269" count="2" chance="0.01"/><!--Scroll: Boost Attack--><!--TODO: Check chance-->
+			<create_item id="94271" count="2" chance="0.01"/><!--Scroll: Boost Defense--><!--TODO: Check chance-->
+			<create_item id="91712" count="2" chance="0.01"/><!--Sayha's Storm Lv. 3--><!--TODO: Check chance-->
+			<create_item id="92314" count="5" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="2" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+			<create_item id="92314" count="1" chance="0.01"/><!--Giran Seal--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<weapon id="94860" name="Revolver" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="269684"/>
+		<set name="grind_point" value="13484200"/>
+		<set name="random_damage" value="5"/>
+		<set name="icon" value="icon.weapon_sobekk_hurricane_i00"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="26968400"/>
+		<set name="mp_consume" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1330"/>
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="305"/>
+			<add stat="mAtk" order="0x10" value="137"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<etcitem id="94861" name="Spellbook: Tranquillity">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<!--A spellbook for learning the Tranquillity skill.\n\n<Class>\nCardinal\n\n<Skill effect>\nIncreases party members' max HP.\nContinuously recovers HP for a short period of time.-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94862" name="Spellbook: Exclusion">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<!--A spellbook for learning the Exclusion skill.\n\n<Class>\nEva's Saint\n\n<Skill effect>\nKnocks nearby enemies back.\nGreatly decreases Atk. Spd./ Casting Spd./ Speed.-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94863" name="Spellbook: Dark Disruption">
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_magic_book_white_i00"/>
+		<!--A spellbook for learning the Dark Disruption skill.\n\n<Class>\nShillien Saint\n\n<Skill effect>\nGreatly decreases Recovery Potions' Effect of the target and nearby enemies.-->
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94864" name="Golden Wheel's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<!--Double-click to obtain one of the following items.\n\n- Various supplies (i.e. potions and enchant scrolls)\n- Pet Book/ Accessory\n- Special armor\n- Boss' weapon\n- High-grade A-grade weapon\n- Rare accessories\n- Talisman of Baium\n- Master's Book\n- Rare spellbook-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49674" min_count="50" max_count="50" chance="100" /> <!-- XP Growth Scroll - Sealed -->
+			<capsuled_item id="90907" min_count="500" max_count="500" chance="100" /> <!-- Soulshot Ticket - Sealed -->
+			<capsuled_item id="91690" min_count="250" max_count="250" chance="100" /> <!-- Special HP Recovery Potion - Sealed -->
+			<capsuled_item id="92991" min_count="25" max_count="25" chance="100" /> <!-- Einhasad's Blessing Scroll - Sealed -->
+			<capsuled_item id="94269" min_count="50" max_count="50" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
+			<capsuled_item id="94271" min_count="50" max_count="50" chance="100" /> <!-- Scroll: Boost Defense - Sealed -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94865" name="Golden Wheel's Mysterious Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain one of the following items.\n\n- Various supplies (i.e. potions and enchant scrolls)\n- Pet Book/ Accessory\n- Special armor\n- Boss' weapon\n- High-grade A-grade weapon\n- Rare accessories\n- Talisman of Baium\n- Master's Book\n- Rare spellbook-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94135" min_count="1" max_count="1" chance="11.12" /> <!-- Master's Book: Might -->
+			<capsuled_item id="94136" min_count="1" max_count="1" chance="11.11" /> <!-- Master's Book: Shield -->
+			<capsuled_item id="94361" min_count="1" max_count="1" chance="11.11" /> <!-- Master's Book: Empower -->
+			<capsuled_item id="94362" min_count="1" max_count="1" chance="11.11" /> <!-- Master's Book: Magic Barrier -->
+			<capsuled_item id="94363" min_count="1" max_count="1" chance="11.11" /> <!-- Master's Book: Focus -->
+			<capsuled_item id="94364" min_count="1" max_count="1" chance="11.11" /> <!-- Master's Book: Death Whisper -->
+			<capsuled_item id="94365" min_count="1" max_count="1" chance="11.11" /> <!-- Master's Book: Wind Walk -->
+			<capsuled_item id="94369" min_count="1" max_count="1" chance="11.11" /> <!-- Master's Book: Haste -->
+			<capsuled_item id="94370" min_count="1" max_count="1" chance="11.11" /> <!-- Master's Book: Acumen -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94866" name="Golden Wheel's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<!--Double-click to obtain one of the following items.\n\n- Various supplies (i.e. potions and enchant scrolls)\n- Pet Book/ Accessory\n- Special armor\n- Boss' weapon\n- High-grade A-grade weapon\n- Rare accessories\n- Talisman of Baium\n- Master's Book\n- Rare spellbook-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="94469" min_count="1" max_count="1" chance="11.12" /> <!-- Pet Book: Blocked Target Change -->
+			<capsuled_item id="94471" min_count="1" max_count="1" chance="11.11" /> <!-- Pet Book: Strong Bite -->
+			<capsuled_item id="94472" min_count="1" max_count="1" chance="11.11" /> <!-- Pet Book: Last Dire Claw -->
+			<capsuled_item id="94475" min_count="1" max_count="1" chance="11.11" /> <!-- Pet Book: Exploding Feather -->
+			<capsuled_item id="94476" min_count="1" max_count="1" chance="11.11" /> <!-- Pet Book: Pulling Body -->
+			<capsuled_item id="94477" min_count="1" max_count="1" chance="11.11" /> <!-- Pet Book: Back Explosion -->
+			<capsuled_item id="94478" min_count="1" max_count="1" chance="11.11" /> <!-- Pet Book: Steel Skin -->
+			<capsuled_item id="94642" min_count="1" max_count="1" chance="11.11" /> <!-- Pet Earring -->
+			<capsuled_item id="94643" min_count="1" max_count="1" chance="11.11" /> <!-- Pet Ring -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94867" name="Golden Wheel's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<!--Double-click to obtain one of the following items.\n\n- Various supplies (i.e. potions and enchant scrolls)\n- Pet Book/ Accessory\n- Special armor\n- Boss' weapon\n- High-grade A-grade weapon\n- Rare accessories\n- Talisman of Baium\n- Master's Book\n- Rare spellbook-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="92401" min_count="1" max_count="1" chance="3.61" /> <!-- Spellbook: White Guardian -->
+			<capsuled_item id="93103" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Divine Beam -->
+			<capsuled_item id="93384" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Burning Field -->
+			<capsuled_item id="93385" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Frozen Field -->
+			<capsuled_item id="93386" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Lightning Storm -->
+			<capsuled_item id="93387" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
+			<capsuled_item id="93631" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Hellfire -->
+			<capsuled_item id="93869" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Elemental Burst -->
+			<capsuled_item id="93870" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Ethereal Strike -->
+			<capsuled_item id="94137" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Devour -->
+			<capsuled_item id="94324" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Song of Earth -->
+			<capsuled_item id="94325" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Song of Hunter -->
+			<capsuled_item id="94326" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Dance of Warrior -->
+			<capsuled_item id="94327" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Dance of Fire -->
+			<capsuled_item id="94498" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Titan Champion -->
+			<capsuled_item id="94500" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Titanic Sweep -->
+			<capsuled_item id="94501" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Titanic Break -->
+			<capsuled_item id="94505" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Burning Strike -->
+			<capsuled_item id="94507" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Armor Break -->
+			<capsuled_item id="94508" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Cacophony of War -->
+			<capsuled_item id="94668" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Pa'agrio's Touch -->
+			<capsuled_item id="94670" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Debuff Master -->
+			<capsuled_item id="94671" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Flame Burst -->
+			<capsuled_item id="94673" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Team Building -->
+			<capsuled_item id="94674" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Blood Bond -->
+			<capsuled_item id="94861" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Tranquillity -->
+			<capsuled_item id="94862" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Exclusion -->
+			<capsuled_item id="94863" min_count="1" max_count="1" chance="3.57" /> <!-- Spellbook: Dark Disruption -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94868" name="Golden Wheel's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<!--Double-click to obtain one of the following items.\n\n- Various supplies (i.e. potions and enchant scrolls)\n- Pet Book/ Accessory\n- Special armor\n- Boss' weapon\n- High-grade A-grade weapon\n- Rare accessories\n- Talisman of Baium\n- Master's Book\n- Rare spellbook-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="93075" min_count="1" max_count="1" chance="6.25" /> <!-- Gloves of Silence -->
+			<capsuled_item id="93139" min_count="1" max_count="1" chance="6.25" /> <!-- Ice Crystal Breastplate -->
+			<capsuled_item id="93140" min_count="1" max_count="1" chance="6.25" /> <!-- Ice Crystal Gaiters -->
+			<capsuled_item id="93315" min_count="1" max_count="1" chance="6.25" /> <!-- Leather Armor of Lightning -->
+			<capsuled_item id="93316" min_count="1" max_count="1" chance="6.25" /> <!-- Leather Leggings of Lightning -->
+			<capsuled_item id="93733" min_count="1" max_count="1" chance="6.25" /> <!-- Flaming Tunic -->
+			<capsuled_item id="93734" min_count="1" max_count="1" chance="6.25" /> <!-- Flaming Stockings -->
+			<capsuled_item id="94083" min_count="1" max_count="1" chance="6.25" /> <!-- Helmet of Mana -->
+			<capsuled_item id="94085" min_count="1" max_count="1" chance="6.25" /> <!-- Boots of Evasion -->
+			<capsuled_item id="94263" min_count="1" max_count="1" chance="6.25" /> <!-- Stun Gauntlets -->
+			<capsuled_item id="94840" min_count="1" max_count="1" chance="6.25" /> <!-- Breastplate of Protection -->
+			<capsuled_item id="94841" min_count="1" max_count="1" chance="6.25" /> <!-- Gaiters of Protection -->
+			<capsuled_item id="94844" min_count="1" max_count="1" chance="6.25" /> <!-- Leather Armor of Protection -->
+			<capsuled_item id="94845" min_count="1" max_count="1" chance="6.25" /> <!-- Leather Leggings of Protection -->
+			<capsuled_item id="94848" min_count="1" max_count="1" chance="6.25" /> <!-- Tunic of Protection -->
+			<capsuled_item id="94849" min_count="1" max_count="1" chance="6.25" /> <!-- Stockings of Protection -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94869" name="Golden Wheel's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<!--Double-click to obtain one of the following items.\n\n- Various supplies (i.e. potions and enchant scrolls)\n- Pet Book/ Accessory\n- Special armor\n- Boss' weapon\n- High-grade A-grade weapon\n- Rare accessories\n- Talisman of Baium\n- Master's Book\n- Rare spellbook-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="8678" min_count="1" max_count="1" chance="7.143" /> <!-- Sirra's Blade -->
+			<capsuled_item id="8679" min_count="1" max_count="1" chance="7.139" /> <!-- Sword of Ipos -->
+			<capsuled_item id="8680" min_count="1" max_count="1" chance="7.139" /> <!-- Barakiel's Axe -->
+			<capsuled_item id="8681" min_count="1" max_count="1" chance="7.139" /> <!-- Behemoth' Tuning Fork -->
+			<capsuled_item id="8682" min_count="1" max_count="1" chance="7.139" /> <!-- Naga's Storm -->
+			<capsuled_item id="8683" min_count="1" max_count="1" chance="7.139" /> <!-- Tiphon's Spear -->
+			<capsuled_item id="8684" min_count="1" max_count="1" chance="7.139" /> <!-- Shyeed's Bow -->
+			<capsuled_item id="8685" min_count="1" max_count="1" chance="7.139" /> <!-- Sobekk's Hurricane -->
+			<capsuled_item id="8686" min_count="1" max_count="1" chance="7.139" /> <!-- Themis' Tongue -->
+			<capsuled_item id="8687" min_count="1" max_count="1" chance="7.139" /> <!-- Cabrio's Hand -->
+			<capsuled_item id="8688" min_count="1" max_count="1" chance="7.139" /> <!-- Daimon Crystal -->
+			<capsuled_item id="8938" min_count="1" max_count="1" chance="7.139" /> <!-- Tallum Blade*Damascus Sword -->
+			<capsuled_item id="91887" min_count="1" max_count="1" chance="7.139" /> <!-- Durendal -->
+			<capsuled_item id="91902" min_count="1" max_count="1" chance="7.139" /> <!-- clair Bijou -->
+			<capsuled_item id="92404" min_count="1" max_count="1" chance="0.01" /> <!-- Zaken's Blood Sword -->
+			<capsuled_item id="92405" min_count="1" max_count="1" chance="0.01" /> <!-- Core's Plasmic Bow -->
+			<capsuled_item id="92407" min_count="1" max_count="1" chance="0.01" /> <!-- Orfen's Venom Sword -->
+			<capsuled_item id="92408" min_count="1" max_count="1" chance="0.01" /> <!-- Baium's Thunder Breaker -->
+			<capsuled_item id="92421" min_count="1" max_count="1" chance="0.01" /> <!-- Queen Ant's Stone Breaker -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94870" name="Golden Wheel's Mysterious Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.festival_question_box_i01"/>
+		<!--Double-click to obtain one of the following items.\n\n- Various supplies (i.e. potions and enchant scrolls)\n- Pet Book/ Accessory\n- Special armor\n- Boss' weapon\n- High-grade A-grade weapon\n- Rare accessories\n- Talisman of Baium\n- Master's Book\n- Rare spellbook-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="6660" min_count="1" max_count="1" chance="13.5" /> <!-- Queen Ant's Ring -->
+			<capsuled_item id="6661" min_count="1" max_count="1" chance="13.3" /> <!-- Orfen's Earring -->
+			<capsuled_item id="6662" min_count="1" max_count="1" chance="13.3" /> <!-- Ring of Core -->
+			<capsuled_item id="49580" min_count="1" max_count="1" chance="13.3" /> <!-- Baium's Ring -->
+			<capsuled_item id="49683" min_count="1" max_count="1" chance="20" /> <!-- Talisman of Baium -->
+			<capsuled_item id="90763" min_count="1" max_count="1" chance="13.3" /> <!-- Zaken's Earring -->
+			<capsuled_item id="91550" min_count="1" max_count="1" chance="13.3" /> <!-- Frintezza's Necklace -->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="94871" name="Golden Wheel's Coupon (Time-limited)" add_name="Sealed">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_payback_ticket_01"/>
+		<!--Can be exchanged in the Golden Wheel Guild's secret shop.\n\nApplies a buff when used as a scroll.\n\n<Effect>\nP. Atk. +100\nM. Atk. +100\nP. Def. +200\nM. Def. +200\nMax HP +300\nMax MP +300\nAcquired XP/ SP +10%\n\nDuration: 60 min.\nCooldown: 1 min.\nThe effect remains after death.\n\nCan be transformed to Craft points.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="autouse_type" value="BUFF"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="40287" level="1" /> <!-- Golden Wheel's Scroll -->
+		</skills>
+	</etcitem>
+	<etcitem id="94872" name="Life Control Tower's Scroll of Blessing (Time-limited)" add_name="Sealed">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_aidcharm_cancel_valbreath_i00"/>
+		<!--Applies a buff when used.\n\n<Buff effect>\nMax HP +5%\nMax SP +5%\nAcquired XP +30%\nAcquired SP +30%\nSilence Resistance +15%\nFear Resistance +15%\nParalysis Resistance +15%\n\nDuration: 60 min.\nCooldown: 1 min.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<skills>
+			<skill id="40288" level="1" /> <!-- Life Control Tower's Scroll of Blessing - Event -->
+		</skills>
+	</etcitem>
+	<etcitem id="94873" name="Balthus Knights' Blessed Dragon Belt Pack (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_readybox_silver"/>
+		<!--Double-click to obtain one of the following items.\n\n- +5~+7 Blessed Dragon Belt-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94621" count="1" chance="0.01" enchant="5"/><!--Blessed Dragon Belt--><!--TODO: Check chance-->
+			<create_item id="94621" count="1" chance="0.01" enchant="6"/><!--Blessed Dragon Belt--><!--TODO: Check chance-->
+			<create_item id="94621" count="1" chance="0.01" enchant="7"/><!--Blessed Dragon Belt--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94874" name="Balthus Knights' Greater Jewelry Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_main_i00"/>
+		<!--Double-click to obtain one of the following items.\n\n- Zircon Lv. 4-7\n- Onyx Lv. 4-7\n- Coral Lv. 4-7\n- Spinel Lv. 4-7-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="92059" count="1" chance="0.01"/><!--Coral Lv. 4--><!--TODO: Check chance-->
+			<create_item id="94520" count="1" chance="0.01"/><!--Coral Lv. 5--><!--TODO: Check chance-->
+			<create_item id="92060" count="1" chance="0.01"/><!--Coral Lv. 6--><!--TODO: Check chance-->
+			<create_item id="92061" count="1" chance="0.01"/><!--Coral Lv. 7--><!--TODO: Check chance-->
+			<create_item id="92089" count="1" chance="0.01"/><!--Zircon Lv. 4--><!--TODO: Check chance-->
+			<create_item id="94523" count="1" chance="0.01"/><!--Zircon Lv. 5--><!--TODO: Check chance-->
+			<create_item id="92090" count="1" chance="0.01"/><!--Zircon Lv. 6--><!--TODO: Check chance-->
+			<create_item id="92091" count="1" chance="0.01"/><!--Zircon Lv. 7--><!--TODO: Check chance-->
+			<create_item id="92069" count="1" chance="0.01"/><!--Onyx Lv. 4--><!--TODO: Check chance-->
+			<create_item id="94521" count="1" chance="0.01"/><!--Onyx Lv. 5--><!--TODO: Check chance-->
+			<create_item id="92070" count="1" chance="0.01"/><!--Onyx Lv. 6--><!--TODO: Check chance-->
+			<create_item id="92071" count="1" chance="0.01"/><!--Onyx Lv. 7--><!--TODO: Check chance-->
+			<create_item id="92079" count="1" chance="0.01"/><!--Spinel Lv. 4--><!--TODO: Check chance-->
+			<create_item id="94522" count="1" chance="0.01"/><!--Spinel Lv. 5--><!--TODO: Check chance-->
+			<create_item id="92080" count="1" chance="0.01"/><!--Spinel Lv. 6--><!--TODO: Check chance-->
+			<create_item id="92081" count="1" chance="0.01"/><!--Spinel Lv. 7--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94875" name="Balthus Knights' Enchanted Talisman Pack (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bm_special_pendant_abradant_box"/>
+		<!--Double-click to obtain one of the following items.\n\n- +6~+8 Talisman of Aden\n- +6~+8 Talisman of Eva\n- +6~+8 Talisman of Speed\n- +6~+8 Talisman of Authority-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="91061" count="1" chance="0.01" enchant="6"/><!--Talisman of Authority--><!--TODO: Check chance-->
+			<create_item id="91061" count="1" chance="0.01" enchant="7"/><!--Talisman of Authority--><!--TODO: Check chance-->
+			<create_item id="91061" count="1" chance="0.01" enchant="8"/><!--Talisman of Authority--><!--TODO: Check chance-->
+			<create_item id="91745" count="1" chance="0.01" enchant="6"/><!--Talisman of Aden--><!--TODO: Check chance-->
+			<create_item id="91745" count="1" chance="0.01" enchant="7"/><!--Talisman of Aden--><!--TODO: Check chance-->
+			<create_item id="91745" count="1" chance="0.01" enchant="8"/><!--Talisman of Aden--><!--TODO: Check chance-->
+			<create_item id="92018" count="1" chance="0.01" enchant="6"/><!--Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="92018" count="1" chance="0.01" enchant="7"/><!--Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="92018" count="1" chance="0.01" enchant="8"/><!--Talisman of Eva--><!--TODO: Check chance-->
+			<create_item id="92403" count="1" chance="0.01" enchant="6"/><!--Talisman of Speed--><!--TODO: Check chance-->
+			<create_item id="92403" count="1" chance="0.01" enchant="7"/><!--Talisman of Speed--><!--TODO: Check chance-->
+			<create_item id="92403" count="1" chance="0.01" enchant="8"/><!--Talisman of Speed--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94876" name="Balthus Knights' Boss Doll Box (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.star_agathion_cube"/>
+		<!--Double-click to obtain one of the following items.\n\n- Queen Ant Doll Lv. 1-3\n- Baium Doll Lv. 1-3\n- Orfen Doll Lv. 1-3\n- Frintezza Doll Lv. 1-3\n- Zaken Doll Lv. 1-3\n- Core Doll Lv. 1-3-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="94153" count="1" chance="0.01"/><!--Baium Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="91256" count="1" chance="0.01"/><!--Baium Doll Lv. 2--><!--TODO: Check chance-->
+			<create_item id="91423" count="1" chance="0.01"/><!--Baium Doll Lv. 3--><!--TODO: Check chance-->
+			<create_item id="94154" count="1" chance="0.01"/><!--Queen Ant Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="91257" count="1" chance="0.01"/><!--Queen Ant Doll Lv. 2--><!--TODO: Check chance-->
+			<create_item id="91422" count="1" chance="0.01"/><!--Queen Ant Doll Lv. 3--><!--TODO: Check chance-->
+			<create_item id="94155" count="1" chance="0.01"/><!--Orfen Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="91258" count="1" chance="0.01"/><!--Orfen Doll Lv. 2--><!--TODO: Check chance-->
+			<create_item id="91424" count="1" chance="0.01"/><!--Orfen Doll Lv. 3--><!--TODO: Check chance-->
+			<create_item id="94645" count="1" chance="0.01"/><!--Zaken Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94646" count="1" chance="0.01"/><!--Zaken Doll Lv. 2--><!--TODO: Check chance-->
+			<create_item id="94647" count="1" chance="0.01"/><!--Zaken Doll Lv. 3--><!--TODO: Check chance-->
+			<create_item id="94648" count="1" chance="0.01"/><!--Core Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="94649" count="1" chance="0.01"/><!--Core Doll Lv. 2--><!--TODO: Check chance-->
+			<create_item id="94650" count="1" chance="0.01"/><!--Core Doll Lv. 3--><!--TODO: Check chance-->
+			<create_item id="94509" count="1" chance="0.01"/><!--Frintezza Doll Lv. 1--><!--TODO: Check chance-->
+			<create_item id="91604" count="1" chance="0.01"/><!--Frintezza Doll Lv. 2--><!--TODO: Check chance-->
+			<create_item id="91605" count="1" chance="0.01"/><!--Frintezza Doll Lv. 3--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94877" name="Balthus Knights' Package: Enhanced Einhasad's Pendant (Time-limited)" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="BranchIcon.Icon.bm_pendant_pve_white"/>
+		<!--Double-click to obtain one of the following items.\n\n- Einhasad's Pendant Lv. 3-5-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="93298" count="1" chance="0.01"/><!--Einhasad’s Pendant Lv. 3--><!--TODO: Check chance-->
+			<create_item id="93299" count="1" chance="0.01"/><!--Einhasad's Pendant Lv. 4--><!--TODO: Check chance-->
+			<create_item id="93300" count="1" chance="0.01"/><!--Einhasad's Pendant Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="94878" name="Orb">
+		<set name="grind_commission" value="16"/>
+		<set name="grind_point" value="790"/>
+		<set name="price" value="1580"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="br_cashtex.item.br_cash_quiver_of_bone_arrows_i00"/>
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94879" name="Grace Potion" add_name="Sealed">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="stackable" value="true"/>
+		<set name="icon" value="icon.bless_of_sayha_potion"/>
+		<!--Sayha's Grace points +10,000, Magic Lamp points +50,000, craft points +3250.\n\nNote!\nThe item will be deleted after the scheduled maintenance.-->
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<set name="autouse_type" value="BUFF"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="POTION"/>
+		<cond>
+			<and>
+				<player maximum_sayhas_grace="3490000" />
+				<player maximum_magic_lamp_points="2999950000" />
+				<player maximum_random_craft_points="98996750" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="40289" level="1" /> <!-- Potion of Wardship -->
+		</skills>
+	</etcitem>
+	<weapon id="94880" name="Wooden Pistols">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.shooter_none"/>
+		<set name="price" value="244000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1870"/>
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="64"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94881" name="Brass Pistols">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shooter_d"/>
+		<set name="price" value="1800000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1810"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="191"/>
+			<add stat="mAtk" order="0x10" value="54"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94882" name="Flint Pistols">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="61300"/>
+		<set name="grind_point" value="3065000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.shooter_b_low"/>
+		<set name="price" value="6130000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1720"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="323"/>
+			<add stat="mAtk" order="0x10" value="91"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94883" name="B-Class Firearms (Low-/ Mid-grade)" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.weapon_scallop_jamadhr_i00"/>
+		<set name="price" value="1800000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1520"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="397"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94884" name="Volcano">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="131000"/>
+		<set name="grind_point" value="6550000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.shooter_b_high"/>
+		<set name="price" value="13100000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1700"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="400"/>
+			<add stat="mAtk" order="0x10" value="111"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94885" name="Scofield">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="207410"/>
+		<set name="grind_point" value="10370500"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shooter_a_low"/>
+		<set name="price" value="20741000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1660"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="528"/>
+			<add stat="mAtk" order="0x10" value="142"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94886" name="Zephyrus">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="269684"/>
+		<set name="grind_point" value="13484200"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shooter_a_high"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1640"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="570"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94887" name="Boss' Firearms" add_name="Not Available">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="269684"/>
+		<set name="grind_point" value="13484200"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shooter_boss"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1330"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="610"/>
+			<add stat="mAtk" order="0x10" value="160"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94888" name="Anakim's Divine Pistols">
+		<set name="freightable" value="true"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.shooter_boss_anakim"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1640"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="610"/>
+			<add stat="mAtk" order="0x10" value="160"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+		<enchant_options>
+			<level value="0">
+				<option id="39200"/>
+			</level>
+			<level value="1">
+				<option id="39201"/>
+			</level>
+			<level value="2">
+				<option id="39202"/>
+			</level>
+			<level value="3">
+				<option id="39203"/>
+			</level>
+			<level value="4">
+				<option id="39204"/>
+			</level>
+			<level value="5">
+				<option id="39205"/>
+			</level>
+			<level value="6">
+				<option id="39206"/>
+			</level>
+			<level value="7">
+				<option id="39207"/>
+			</level>
+			<level value="8">
+				<option id="39208"/>
+			</level>
+			<level value="9">
+				<option id="39209"/>
+			</level>
+			<level value="10">
+				<option id="39210"/>
+			</level>
+		</enchant_options>
+	</weapon>
+	<weapon id="94889" name="Monster's Firearms (Low-grade)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="78300"/>
+		<set name="grind_point" value="3915000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.weapon_chakram_i00"/>
+		<set name="price" value="7830000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1440"/>
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="397"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="94890" name="Monster's Firearms (High-grade)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="131000"/>
+		<set name="grind_point" value="6550000"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_count" value="743"/>
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="icon.weapon_bellion_cestus_i00"/>
+		<set name="price" value="13100000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1390"/>
+		<set name="commissionable" value="false" />
+		<set name="variation_group_id" value="1"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="400"/>
+			<add stat="mAtk" order="0x10" value="111"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<etcitem id="94891" name="No-grade Elemental Orb" add_name="Sealed">
+		<!--An orb infused with the elemental spirit power.\n<Required for using No-grade firearms.>-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="100000"/>
+		<set name="icon" value="icon.orb_none"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ORB"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94892" name="D-grade Elemental Orb" add_name="Sealed">
+		<!--An orb infused with the elemental spirit power.\n<Required for using D-grade firearms.>-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="200000"/>
+		<set name="icon" value="icon.orb_d"/>
+		<set name="crystal_type" value="D"/>
+		<set name="type" value="ORB"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94893" name="C-grade Elemental Orb" add_name="Sealed">
+		<!--An orb infused with the elemental spirit power.\n<Required for using C-grade firearms.>-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="300000"/>
+		<set name="icon" value="icon.orb_c"/>
+		<set name="crystal_type" value="C"/>
+		<set name="type" value="ORB"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94894" name="B-grade Elemental Orb" add_name="Sealed">
+		<!--An orb infused with the elemental spirit power.\n<Required for using B-grade firearms.>-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="500000"/>
+		<set name="icon" value="icon.orb_b"/>
+		<set name="crystal_type" value="B"/>
+		<set name="type" value="ORB"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="94895" name="A-grade Elemental Orb" add_name="Sealed">
+		<!--An orb infused with the elemental spirit power.\n<Required for using A-grade firearms.>-->
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="price" value="1000000"/>
+		<set name="icon" value="icon.orb_a"/>
+		<set name="crystal_type" value="A"/>
+		<set name="type" value="ORB"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<armor id="94896" name="Sylphen Ring (Time-limited)" add_name="Sealed">
+		<!--<Properties>\nP. Atk. +100\nM. Atk. +100\nP. Def. +100\nM. Def. +100\nMP Recovery Rate +5\n\n<font color=ff6666><Cannot be enchanted and augmented.></font>\n<font color=ff6666><Effects of two identical rings do not stack.></font>-->
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.ring_of_sylph_01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<for>
+			<add stat="mDef" order="0x10" value="32"/>
+		</for>
+		<skills>
+			<skill id="50503" level="1" /> <!-- Sylphen Ring -->
+		</skills>
+	</armor>
+	<weapon id="94897" name="Aden's Pistols" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="damage_range" value="0;0;10;0"/>
+		<set name="reuse_delay" value="820"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.shooter_d"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="FIREARMS"/>
+		<set name="weight" value="1820"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="50498" level="1" /> <!-- Aden Weapon Skill -->
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="191"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePCritRate" order="0x08" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<armor id="94898" name="Leather Boots" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_t09_b_i00"/>
+		<set name="price" value="20900"/>
+		<set name="grind_point" value="2090"/>
+		<set name="grind_commission" value="42"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1300"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="19"/>
+		</for>
+	</armor>
+	<armor id="94899" name="Bone Helmet" add_name="Sealed">
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="31300"/>
+		<set name="grind_point" value="3130"/>
+		<set name="grind_commission" value="63"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="640"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="29"/>
+		</for>
+	</armor>
+</list>

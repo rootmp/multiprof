@@ -1,0 +1,96 @@
+ATUALIZAÇÕES SEGUEM A ORDEM DE CLASSES DO https://l2central.info/essence/
+HUMAN FIGHT (1-7):
+1-WARRIOR - WARLORD - DREADNOUGHT = 100%
+
+2-WARRIOR - GUADIATOR - DUELIST = 100%
+
+3-KIBIGHT - PALADIN - PHONIXKNIGHT = 80%
+(Skill Ultimate Defence Lv.3 está deixando imovel, esse efeito é aplicavel apenas no level 1 e 2.)
+
+4- KINIGHT - DARK AVENGER - HELL KINIGHT = 100%
+
+5- ROGUE - HAWKEY - SAGITARIUS = 95%
+(Implementar DEXTERIUS BOBY)
+
+6- ROGUE - TRESOURE HUNTER - ADVENTURE = 80%
+(Implementar SKil Reversed Pull )
+(Verificar Skill Tree Shadow Step ID:821)
+
+7- DK BLABE - DK MENSSEGER - DEATH KINIGHT = 90%
+(Precia refazer Burning Field (ID:45313))
+
+HUMAN WIZARD (8-14):
+8- WIZARD - SOCERS+NECRO - ARCHEMAGE+SOULTAKE = 80%
+(Skill Magical Circlet não está implementada)
+(Skill Heavy Sleep(ID:47461) está tirando o efeito quando recebe dano, o normal é não ser removido)
+(Skill Fire Spiral está faltando ser implementada)
+
+9- WIZARD - WALORK - ARCANA LORD = 80%
+(Summon Cubic of Secrets não esta implementada)
+(Summon Cat Emperor não está inplementado)
+(Falta ajustar Janela de ações dos Sumons: https://prnt.sc/A7iuRgtjpKup)
+
+10- CLIRIC - BISHOP - CARDINAL = 100%
+
+11- CLERIC - PROPHET - HEROPHANT = 100%
+
+ELF FIGHT (12-14):
+12- ELVEN KINIGHT - TEMPLER KINIGHT - EVAS KINIGHT = 100%
+
+13- ELVEN KINIGHT - SWORDSINGER - SWORD MUSE = 100%
+
+14- DK BLADE - DK MENSSEREGR - ELF DEATH KINIGHT = 90%
+(Precia refazer Frozen Field (ID:45316))
+
+ELF WIZARD (15-17):
+15- WIZARD - SPELLSINGER - MITSICMUSE = 80%
+(Skill Heavy Sleep(ID:47461) está tirando o efeito quando recebe dano, o normal é não ser removido)
+(Skill Ice Spiral está faltando ser implementada)
+
+16- WIZARD - ELEMENTAL SUMONER - ELEMENTAL MASTER = 70%
+(Summon Cubic of Secrets não esta implementada)
+(Summon Unicord Guardian não está inplementado)
+(Falta ajustar Janela de ações dos Sumons: https://prnt.sc/A7iuRgtjpKup)
+(Anuncio que não deveria existir: https://prnt.sc/9IQJDjF0JcY7)
+
+17- ORACLE - ELVEN ELDER - EVAS SAINTS = 100%
+
+18- PALS KINIGHT - SHULEN KINIGHT - SILEM TEMPLAR = 80%
+(SKILL CONDEMNATION não está implementada)
+
+19- PALS KNIGHT - BLADE DANCE - SPECTRAL DANCE = 100%
+
+20- DARK WIZARD - SPELLHOLER - STORM SCREEN = 95%
+(Skill Wind Spiral não está implementada)
+
+21- DARK WIZARD - PHANTON SUMONER - SPECTRAL SUMONNER = 80%
+(Summon Cubic of Secrets não esta implementada)
+(Summon Cat Emperor não está inplementado)
+(Falta ajustar Janela de ações dos Sumons: https://prnt.sc/A7iuRgtjpKup)
+
+22- DARK CLERIC - SJILLEN ELDER - SHILLIEN SAINTS = 80%
+(Skill Dark Disruption não esta implementada)
+
+23- RAIDER - DESTROYER - TITAN = 100%
+
+24- MONK - TYRANT - GRAND KHAVATARE = 100%
+
+25- ORC MAGIC - OBERLORD - DOMINATOR = 100%
+
+26- ORC MAGIC - WARCRYER - DMBRIGER = 95%
+(Falta implementar a skill Team Biulding)
+
+26-VANGUARD RIDER = 85%
+(Falta implementar a skill Wild Assault)
+(Falta implementar a Dano em area continuo da aurea do cachorro)
+
+26- SCARVENGER - BLOODY HUNTER - FORTUNE STRICK = 85%
+(Não está podendo usar outras armas se não POLE)
+
+26- ARTESAN - WARSMITH - MAESTRO = 80%
+(Mechanical masterpierce esta com efeito do ultimate defença lv3)
+(Falta implementar a transformação Machanical Hero e suas skills)
+(Fazer skill Earth Tremor)
+
+27- SYLPY = 85%
+(Falta Implementar skill Dragon Strick)

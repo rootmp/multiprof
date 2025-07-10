@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="39300">
+		<!--M. Def. +18-->
+		<for>
+			<add order="0x60" stat="mDef" value="18"/>
+		</for>
+	</option_data>
+	<option_data id="39301">
+		<!--P. Def. +18-->
+		<for>
+			<add order="0x60" stat="pDef" value="18"/>
+		</for>
+	</option_data>
+	<option_data id="39302">
+		<!--M. Def. +21-->
+		<for>
+			<add order="0x60" stat="mDef" value="21"/>
+		</for>
+	</option_data>
+	<option_data id="39303">
+		<!--P. Def. +21-->
+		<for>
+			<add order="0x60" stat="pDef" value="21"/>
+		</for>
+	</option_data>
+	<option_data id="39304">
+		<!--M. Def. +23-->
+		<for>
+			<add order="0x60" stat="mDef" value="23"/>
+		</for>
+	</option_data>
+	<option_data id="39305">
+		<!--P. Def. +23-->
+		<for>
+			<add order="0x60" stat="pDef" value="23"/>
+		</for>
+	</option_data>
+	<option_data id="39306">
+		<!--P./ M. Def. +42-->
+		<for>
+			<add order="0x60" stat="pDef" value="42"/>
+			<add order="0x60" stat="mDef" value="42"/>
+		</for>
+	</option_data>
+	<option_data id="39307">
+		<!--P./ M. Atk. +30-->
+		<for>
+			<add order="0x60" stat="pAtk" value="30"/>
+			<add order="0x60" stat="mAtk" value="30"/>
+		</for>
+	</option_data>
+	<option_data id="39308">
+		<!--Inventory slots +1-->
+		<for>
+			<add order="0x60" stat="inventoryLimit" value="1"/>
+		</for>
+	</option_data>
+	<option_data id="39309">
+		<!--M. Def. +34-->
+		<for>
+			<add order="0x60" stat="mDef" value="34"/>
+		</for>
+	</option_data>
+	<option_data id="39310">
+		<!--P. Def. +34-->
+		<for>
+			<add order="0x60" stat="pDef" value="34"/>
+		</for>
+	</option_data>
+	<option_data id="39311">
+		<!--M. Atk. +25-->
+		<for>
+			<add order="0x60" stat="mAtk" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39312">
+		<!--P. Atk. +25-->
+		<for>
+			<add order="0x60" stat="pAtk" value="25"/>
+		</for>
+	</option_data>
+	<option_data id="39313">
+		<!--Soulshot/ Spiritshot damage +1%-->
+		<for>
+			<mul order="0x60" stat="soulshot_power" value="1.01"/>
+			<mul order="0x60" stat="spiritshot_power" value="1.01"/>
+		</for>
+	</option_data>
+	<option_data id="39314">
+		<!--Skill Critical Damage +1%-->
+		<for>
+			<p_skill_critical_damage value="1" type="PER"/>
+			<p_magic_critical_dmg value="1" type="PER"/>
+		</for>
+	</option_data>
+	<option_data id="39315">
+		<!--P./ M. Def. +60-->
+		<for>
+			<add order="0x60" stat="pDef" value="60"/>
+			<add order="0x60" stat="mDef" value="60"/>
+		</for>
+	</option_data>
+	<option_data id="39316">
+		<!--Skill Power +2%-->
+		<for>
+			<mul order="0x60" stat="p_skill_power" value="1.02"/>
+			<mul order="0x60" stat="mSkillPower" value="1.02"/>
+		</for>
+	</option_data>
+	<option_data id="39317">
+		<!--Received Skill Critical Damage -2%-->
+		<for>
+			<mul order="0x60" stat="pSkillCritDamRcpt" value="0.98"/>
+			<mul order="0x60" stat="mCritDamRcpt" value="0.99"/>
+		</for>
+	</option_data>
+	<option_data id="39318">
+		<!--Firearms Resistance +2%-->
+		<for>
+			<p_defence_trait name="firearms" value="2"/>
+		</for>
+	</option_data>
+	<option_data id="39319">
+		<!--STR +1/ INT +1-->
+		<for>
+			<add order="0x60" stat="STR" value="1.0"/>
+			<add order="0x60" stat="INT" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39320">
+		<!--STR +1/ INT +1/ DEX +1/ WIT +1-->
+		<for>
+			<add order="0x60" stat="STR" value="1.0"/>
+			<add order="0x60" stat="INT" value="1.0"/>
+			<add order="0x60" stat="DEX" value="1.0"/>
+			<add order="0x60" stat="WIT" value="1.0"/>
+		</for>
+	</option_data>
+	<option_data id="39321">
+		<!--Acquired XP/ SP +5%, P./ M. Def. +100, Atk. Spd./ Casting Spd. +25-->
+	</option_data>
+	<option_data id="39322">
+		<!--Acquired XP/ SP +15%, P./ M. Atk. +50, PvP damage +2%, received PvP damage -5%, Speed +2-->
+	</option_data>
+	<option_data id="39323">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50525" level="1"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39324">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50525" level="2"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39325">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50525" level="3"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39326">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50525" level="4"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39327">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50525" level="5"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39328">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +2\nCON +2-->
+		<skills>
+			<skill id="50525" level="6"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39329">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +3\nCON +3-->
+		<skills>
+			<skill id="50525" level="7"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39330">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +4\nCON +4-->
+		<skills>
+			<skill id="50525" level="8"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39331">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +5\nCON +5-->
+		<skills>
+			<skill id="50525" level="9"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39332">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +6\nCON +6-->
+		<skills>
+			<skill id="50525" level="10"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39333">
+		<!--A one-handed sword imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +7\nCON +7-->
+		<skills>
+			<skill id="50525" level="11"/>	<!-- Frost Lord's Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39334">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50526" level="1"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39335">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50526" level="2"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39336">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50526" level="3"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39337">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50526" level="4"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39338">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50526" level="5"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39339">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +2\nCON +2-->
+		<skills>
+			<skill id="50526" level="6"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39340">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +3\nCON +3-->
+		<skills>
+			<skill id="50526" level="7"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39341">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +4\nCON +4-->
+		<skills>
+			<skill id="50526" level="8"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39342">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +5\nCON +5-->
+		<skills>
+			<skill id="50526" level="9"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39343">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +6\nCON +6-->
+		<skills>
+			<skill id="50526" level="10"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39344">
+		<!--An axe imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +7\nCON +7-->
+		<skills>
+			<skill id="50526" level="11"/>	<!-- Frost Lord's Axe -->
+		</skills>
+	</option_data>
+	<option_data id="39345">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50527" level="1"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39346">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50527" level="2"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39347">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50527" level="3"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39348">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50527" level="4"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39349">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50527" level="5"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39350">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50527" level="6"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39351">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50527" level="7"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39352">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50527" level="8"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39353">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50527" level="9"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39354">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50527" level="10"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39355">
+		<!--A dagger imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +7\nDEX +7-->
+		<skills>
+			<skill id="50527" level="11"/>	<!-- Frost Lord's Dagger -->
+		</skills>
+	</option_data>
+	<option_data id="39356">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nMEN +1-->
+		<skills>
+			<skill id="50528" level="1"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39357">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nMEN +1-->
+		<skills>
+			<skill id="50528" level="2"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39358">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nMEN +1-->
+		<skills>
+			<skill id="50528" level="3"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39359">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nMEN +1-->
+		<skills>
+			<skill id="50528" level="4"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39360">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +1\nMEN +1-->
+		<skills>
+			<skill id="50528" level="5"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39361">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +2\nMEN +2-->
+		<skills>
+			<skill id="50528" level="6"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39362">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +3\nMEN +3-->
+		<skills>
+			<skill id="50528" level="7"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39363">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +4\nMEN +4-->
+		<skills>
+			<skill id="50528" level="8"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39364">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +5\nMEN +5-->
+		<skills>
+			<skill id="50528" level="9"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39365">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +6\nMEN +6-->
+		<skills>
+			<skill id="50528" level="10"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39366">
+		<!--A rapier imbued with the frost energy.\nThe biting frost slows the target down.\n\nFor 5 sec., inflicts the <Furious Frost> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Furious Frost>\nDecreases Atk. Spd./ Casting Spd.\n\n<Stat bonus>\nSTR +7\nMEN +7-->
+		<skills>
+			<skill id="50528" level="11"/>	<!-- Frost Lord's Rapier -->
+		</skills>
+	</option_data>
+	<option_data id="39367">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nWIT +1-->
+		<skills>
+			<skill id="50529" level="1"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39368">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nWIT +1-->
+		<skills>
+			<skill id="50529" level="2"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39369">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nWIT +1-->
+		<skills>
+			<skill id="50529" level="3"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39370">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nWIT +1-->
+		<skills>
+			<skill id="50529" level="4"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39371">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +1\nWIT +1-->
+		<skills>
+			<skill id="50529" level="5"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39372">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +2\nWIT +2-->
+		<skills>
+			<skill id="50529" level="6"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39373">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +3\nWIT +3-->
+		<skills>
+			<skill id="50529" level="7"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39374">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +4\nWIT +4-->
+		<skills>
+			<skill id="50529" level="8"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39375">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +5\nWIT +5-->
+		<skills>
+			<skill id="50529" level="9"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39376">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +6\nWIT +6-->
+		<skills>
+			<skill id="50529" level="10"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39377">
+		<!--A magic blunt weapon imbued with the frost energy.\nThe biting frost prevents the target from teleportation.\n\nFor 5 sec., inflicts the <Stay Frozen> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Stay Frozen>\nPrevents the target from teleportation.\n\n<Stat bonus>\nINT +7\nWIT +7-->
+		<skills>
+			<skill id="50529" level="11"/>	<!-- Frost Lord's Magic Blunt Weapon -->
+		</skills>
+	</option_data>
+	<option_data id="39378">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50530" level="1"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39379">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50530" level="2"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39380">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50530" level="3"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39381">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50530" level="4"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39382">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nCON +1-->
+		<skills>
+			<skill id="50530" level="5"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39383">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +2\nCON +2-->
+		<skills>
+			<skill id="50530" level="6"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39384">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +3\nCON +3-->
+		<skills>
+			<skill id="50530" level="7"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39385">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +4\nCON +4-->
+		<skills>
+			<skill id="50530" level="8"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39386">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +5\nCON +5-->
+		<skills>
+			<skill id="50530" level="9"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39387">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +6\nCON +6-->
+		<skills>
+			<skill id="50530" level="10"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39388">
+		<!--A spear imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +7\nCON +7-->
+		<skills>
+			<skill id="50530" level="11"/>	<!-- Frost Lord's Spear -->
+		</skills>
+	</option_data>
+	<option_data id="39389">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50531" level="1"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39390">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50531" level="2"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39391">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50531" level="3"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39392">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50531" level="4"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39393">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n1% after a basic attack, 1% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +1\nDEX +1-->
+		<skills>
+			<skill id="50531" level="5"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39394">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n2% after a basic attack, 5% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +2\nDEX +2-->
+		<skills>
+			<skill id="50531" level="6"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39395">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n5% after a basic attack, 10% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +3\nDEX +3-->
+		<skills>
+			<skill id="50531" level="7"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39396">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n7% after a basic attack, 15% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +4\nDEX +4-->
+		<skills>
+			<skill id="50531" level="8"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39397">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n9% after a basic attack, 20% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +5\nDEX +5-->
+		<skills>
+			<skill id="50531" level="9"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39398">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n12% after a basic attack, 25% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +6\nDEX +6-->
+		<skills>
+			<skill id="50531" level="10"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+	<option_data id="39399">
+		<!--An ancient sword imbued with the frost energy.\nThe biting frost hinders the target's movements.\n\nFor 5 sec., inflicts the <Absolute Zero> effect after an attack with a certain chance:\n15% after a basic attack, 30% after a skill use\n\n<Absolute Zero>\nIn PvE, immobilizes the target.\nIn PvP, freezes the target.\n\n<Stat bonus>\nSTR +7\nDEX +7-->
+		<skills>
+			<skill id="50531" level="11"/>	<!-- Frost Lord's Ancient Sword -->
+		</skills>
+	</option_data>
+</list>

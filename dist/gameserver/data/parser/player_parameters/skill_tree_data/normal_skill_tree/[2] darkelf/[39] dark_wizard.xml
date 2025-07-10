@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="39"><!--Dark Wizard-->
+		<skill id="164" level="1" min_level="20" cost="600"/><!--Quick Recovery-->
+		<skill id="234" level="1" min_level="20" cost="600"/><!--Robe Mastery-->
+		<skill id="234" level="2" min_level="20" cost="600"/><!--Robe Mastery-->
+		<skill id="249" level="3" min_level="20" cost="600"/><!--Weapon Mastery-->
+		<skill id="45105" level="1" min_level="20" cost="600"/><!--Empower-->
+		<skill id="45176" level="1" min_level="20" cost="600"/><!--HP Recovery-->
+		<skill id="45177" level="1" min_level="20" cost="600"/><!--MP Recovery-->
+		<skill id="1078" level="1" min_level="20" cost="600"/><!--Concentration-->
+		<skill id="45107" level="1" min_level="20" cost="600"/><!--Wind Walk-->
+		<skill id="1184" level="6" min_level="20" cost="600"/><!--Ice Bolt-->
+		<skill id="1184" level="7" min_level="20" cost="600"/><!--Ice Bolt-->
+		<skill id="1068" level="2" min_level="20" cost="600"/><!--Might-->
+		<skill id="1147" level="4" min_level="20" cost="600"/><!--Fireball-->
+		<skill id="1206" level="2" min_level="20" cost="600"/><!--Wind Shackle-->
+		<skill id="45104" level="1" min_level="20" cost="600"/><!--Acumen-->
+		<skill id="1178" level="1" min_level="20" cost="600"/><!--Twister-->
+		<skill id="1178" level="2" min_level="20" cost="600"/><!--Twister-->
+		<skill id="213" level="1" min_level="20" cost="600"/><!--Mana Boost-->
+		<skill id="1073" level="1" min_level="20" cost="600"/><!--Increased Power of Magic-->
+		<skill id="45111" level="1" min_level="20" cost="600"/><!--Haste-->
+		<skill id="45109" level="1" min_level="20" cost="600"/><!--Focus-->
+		<skill id="45113" level="1" min_level="20" cost="600"/><!--Clarity-->
+		<skill id="45110" level="1" min_level="20" cost="600"/><!--Death Whisper-->
+		<skill id="1040" level="2" min_level="20" cost="600"/><!--Shield-->
+		<skill id="234" level="3" min_level="23" cost="2300"/><!--Robe Mastery-->
+		<skill id="249" level="4" min_level="23" cost="2300"/><!--Weapon Mastery-->
+		<skill id="1178" level="3" min_level="23" cost="2300"/><!--Twister-->
+		<skill id="229" level="1" min_level="25" cost="2300"/><!--Fast Mana Recovery-->
+		<skill id="228" level="1" min_level="25" cost="2300"/><!--Fast Spell Casting-->
+		<skill id="234" level="4" min_level="25" cost="2300"/><!--Robe Mastery-->
+		<skill id="249" level="5" min_level="25" cost="2300"/><!--Weapon Mastery-->
+		<skill id="1184" level="8" min_level="25" cost="2300"/><!--Ice Bolt-->
+		<skill id="1147" level="5" min_level="25" cost="2300"/><!--Fireball-->
+		<skill id="1206" level="3" min_level="25" cost="2300"/><!--Wind Shackle-->
+		<skill id="1224" level="1" min_level="25" cost="2300"/><!--Infection Resilience-->
+		<skill id="1157" level="1" min_level="25" cost="2300"/><!--Body to Mind-->
+		<skill id="1178" level="4" min_level="25" cost="2300"/><!--Twister-->
+		<skill id="234" level="5" min_level="28" cost="5700"/><!--Robe Mastery-->
+		<skill id="249" level="6" min_level="28" cost="5700"/><!--Weapon Mastery-->
+		<skill id="1178" level="5" min_level="28" cost="5700"/><!--Twister-->
+		<skill id="164" level="2" min_level="30" cost="5700"/><!--Quick Recovery-->
+		<skill id="234" level="6" min_level="30" cost="5700"/><!--Robe Mastery-->
+		<skill id="249" level="7" min_level="30" cost="5700"/><!--Weapon Mastery-->
+		<skill id="45105" level="2" min_level="30" cost="5700"/><!--Empower-->
+		<skill id="45106" level="1" min_level="30" cost="5700"/><!--Wild Magic-->
+		<skill id="45112" level="1" min_level="30" cost="5700"/><!--Berserker Spirit-->
+		<skill id="1078" level="2" min_level="30" cost="5700"/><!--Concentration-->
+		<skill id="45107" level="2" min_level="30" cost="5700"/><!--Wind Walk-->
+		<skill id="1184" level="9" min_level="30" cost="5700"/><!--Ice Bolt-->
+		<skill id="45108" level="1" min_level="30" cost="5700"/><!--Magic Barrier-->
+		<skill id="1147" level="6" min_level="30" cost="5700"/><!--Fireball-->
+		<skill id="1206" level="4" min_level="30" cost="5700"/><!--Wind Shackle-->
+		<skill id="1224" level="2" min_level="30" cost="5700"/><!--Infection Resilience-->
+		<skill id="45104" level="2" min_level="30" cost="5700"/><!--Acumen-->
+		<skill id="1178" level="6" min_level="30" cost="5700"/><!--Twister-->
+		<skill id="213" level="2" min_level="30" cost="5700"/><!--Mana Boost-->
+		<skill id="45109" level="2" min_level="30" cost="5700"/><!--Focus-->
+		<skill id="45113" level="2" min_level="30" cost="5700"/><!--Clarity-->
+		<skill id="45110" level="2" min_level="30" cost="5700"/><!--Death Whisper-->
+		<skill id="234" level="7" min_level="33" cost="13000"/><!--Robe Mastery-->
+		<skill id="249" level="8" min_level="33" cost="13000"/><!--Weapon Mastery-->
+		<skill id="1178" level="7" min_level="33" cost="13000"/><!--Twister-->
+		<skill id="212" level="1" min_level="35" cost="13000"/><!--Fast HP Recovery-->
+		<skill id="229" level="2" min_level="35" cost="13000"/><!--Fast Mana Recovery-->
+		<skill id="234" level="8" min_level="35" cost="13000"/><!--Robe Mastery-->
+		<skill id="249" level="9" min_level="35" cost="13000"/><!--Weapon Mastery-->
+		<skill id="1184" level="10" min_level="35" cost="13000"/><!--Ice Bolt-->
+		<skill id="1206" level="5" min_level="35" cost="13000"/><!--Wind Shackle-->
+		<skill id="1224" level="3" min_level="35" cost="13000"/><!--Infection Resilience-->
+		<skill id="1178" level="8" min_level="35" cost="13000"/><!--Twister-->
+		<skill id="47270" level="1" min_level="21" cost="600"/><!--Anti Magic-->
+		<skill id="47466" level="1" min_level="20" cost="600"/><!--Higher Mana Gain-->
+	</normal_skill_tree>
+</list>

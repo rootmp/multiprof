@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="13648" levels="4" name="Equip Brooch Lv. 5">
+
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i06"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="13649" levels="4" name="Unequip Brooch Lv. 5">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="13650" levels="1" name="Equip Brooch Lv. 4">
+
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i05"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="13651" levels="1" name="Unequip Brooch Lv. 4">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="13652" levels="1" name="Equip Brooch Lv. 3">
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i03"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="13653" levels="1" name="Unequip Brooch Lv. 3">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="13654" levels="1" name="Equip Brooch Lv. 2">
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i01"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="13655" levels="1" name="Unequip Brooch Lv. 2">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="13656" levels="1" name="Brooch Lv. 1">
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i00"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<set stat="jewels_limit" value="4"/>
+		</for>
+	</skill>
+	<skill id="13657" levels="1" name="Brooch Lv. 2">
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i01"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<set stat="jewels_limit" value="4"/>
+		</for>
+	</skill>
+	<skill id="13658" levels="1" name="Brooch Lv. 3">
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i03"/>
+		<set name="abnormal_effect" value="AVE_BROOCH"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<set stat="jewels_limit" value="4"/>
+		</for>
+	</skill>
+	<skill id="13659" levels="1" name="Brooch Lv. 4">
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i05"/>
+		<set name="abnormal_effect" value="AVE_BROOCH"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<set stat="jewels_limit" value="5"/>
+			<add stat="pDef" value="100"/>
+			<add stat="mDef" value="100"/>
+		</for>
+	</skill>
+	<skill id="13660" levels="4" name="Brooch Lv. 5">
+		<table name="#m_pDef">200 300 500 700</table>
+		<table name="#maxHpMp">0 0 500 1000</table>
+		<set name="abnormal_effect" value="AVE_BROOCH_B"/>
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i06"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<set stat="jewels_limit" value="6"/>
+			<add stat="pDef" value="#m_pDef"/>
+			<add stat="mDef" value="#m_pDef"/>
+			<add stat="maxHp" value="#maxHpMp"/>
+			<add stat="maxMp" value="#maxHpMp"/>
+		</for>
+	</skill>
+	<skill id="13661" levels="8" name="Brooch: Additional Inventory Slots">
+		<table name="#icon">icon.etc_bm_brooch_lavianrose_i00 icon.etc_bm_brooch_lavianrose_i01 icon.etc_bm_brooch_lavianrose_i03 icon.etc_bm_brooch_lavianrose_i05 icon.etc_bm_brooch_lavianrose_i06 icon.etc_bm_brooch_lavianrose_i06 icon.etc_bm_brooch_lavianrose_i06 icon.etc_bm_brooch_lavianrose_i06</table>
+		<table name="#inventoryLimit">5 9 12 12 15 18 20 25</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="inventoryLimit" value="#inventoryLimit"/>
+		</for>
+	</skill>
+</list>

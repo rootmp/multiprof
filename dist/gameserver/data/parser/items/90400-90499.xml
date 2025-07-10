@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="90400" name="Vital Stone Jewelry Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_vital_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90357" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90401" name="Melodys Luck Cube" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_dkbrown_crystal_cube_pc_i00"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="90402" name="+6 Fire Dragon Pendant" add_name="15-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_pendant_pve"/>
+		<set name="type" value="NONE"/>
+		<equip>
+			<slot id="PENDANT"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="40"/>
+		</for>
+	</armor>
+	<etcitem id="90403" name="Melodys Teleport Pouch" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.bookmark_scroll_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90404" min_count="1" max_count="1" chance="100"/><!--My Teleport Book-->
+			<capsuled_item id="90405" min_count="10" max_count="10" chance="100"/><!--My Teleport Scroll-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90404" name="My Teleport Book" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.bookmark_book_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90405" name="My Teleport Scroll" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.bookmark_scroll_i00"/>
+		<set name="weight" value="0"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90406" name="Melodys Fish Stew Pouch" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fish_stew_residence_cha"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90407" min_count="1" max_count="1" chance="100"/><!--Chef's Fish Stew - Victory-->
+			<capsuled_item id="90408" min_count="1" max_count="1" chance="100"/><!--Chef's Fish Stew - Fire-->
+			<capsuled_item id="90409" min_count="1" max_count="1" chance="100"/><!--Chef's Fish Stew - Water-->
+			<capsuled_item id="90410" min_count="1" max_count="1" chance="100"/><!--Chef's Fish Stew - Wind-->
+			<capsuled_item id="49697" min_count="2" max_count="2" chance="100"/><!--Special Pirate Fruit-->
+			<capsuled_item id="49772" min_count="2" max_count="2" chance="100"/><!--Scroll of Mood Melody-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90407" name="Chef's Fish Stew - Victory" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fish_stew_residence_cha"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90408" name="Chef's Fish Stew - Fire" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fish_stew_residence_cha"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90409" name="Chef's Fish Stew - Water" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fish_stew_residence_cha"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90410" name="Chef's Fish Stew - Wind" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fish_stew_residence_cha"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90411" name="Melodys Scroll Pouch" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_scroll_of_resurrection_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49500" min_count="3" max_count="3" chance="100"/><!--Blessed Scroll of Escape-->
+			<capsuled_item id="49542" min_count="1" max_count="1" chance="100"/><!--Improved Scroll of Resurrection-->
+			<capsuled_item id="49772" min_count="2" max_count="2" chance="100"/><!--Scroll of Mood Melody-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90412" name="Melodys Enhance Pouch" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_mineral_general_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49416" min_count="2" max_count="2" chance="100"/><!--Blade Spirit (Time-limited)-->
+			<capsuled_item id="94209" min_count="1" max_count="1" chance="100"/><!--Life Stone Lv. 1 - Weapon-->
+			<capsuled_item id="49772" min_count="2" max_count="2" chance="100"/><!--Scroll of Mood Melody-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90413" name="Melodys Rice Cake Pouch" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.bm_rice_cake_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49086" min_count="2" max_count="2" chance="100"/><!--Rice Cake of Fighting Spirit-->
+			<capsuled_item id="35669" min_count="1" max_count="1" chance="100"/><!--Angel Cat's Blessing-->
+			<capsuled_item id="49772" min_count="2" max_count="2" chance="100"/><!--Scroll of Mood Melody-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90414" name="Melodys Potion Pouch" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.five_vairy_potion"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49488" min_count="30" max_count="30" chance="100"/><!--Hero's Top-grade HP Replenishing Potion-->
+			<capsuled_item id="90415" min_count="30" max_count="30" chance="100"/><!--Hero's MP Recovery Potion-->
+			<capsuled_item id="49772" min_count="2" max_count="2" chance="100"/><!--Scroll of Mood Melody-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90415" name="Hero's MP Recovery Potion" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_lesser_potion_blue_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>		
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="POTION"/>
+	</etcitem>
+	<etcitem id="90416" name="Melodys Growth Pouch" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.ev_charge_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="49495" min_count="1" max_count="1" chance="100"/><!--Hero's Dual Swords-->
+			<capsuled_item id="49507" min_count="1" max_count="1" chance="100"/><!--Fishing Rod Pack-->
+			<capsuled_item id="49508" min_count="2160" max_count="2160" chance="100"/><!--Normal Bait-->
+			<capsuled_item id="38154" min_count="2160" max_count="2160" chance="100"/><!--Fishing Shot-->
+			<capsuled_item id="49502" min_count="3" max_count="3" chance="100"/><!--Scroll of Escape: Giran Harbor-->
+			<capsuled_item id="49487" min_count="20" max_count="20" chance="100"/><!--Soulshot Ticket (Tradable within account)-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90417" name="Melodys Fishing Pouch" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.fishing_zone_ticket"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90139" min_count="2160" max_count="2160" chance="100"/><!--Silver Bait-->
+			<capsuled_item id="49585" min_count="1" max_count="1" chance="100"/><!--Golden Mermaid's Tears-->
+			<capsuled_item id="90418" min_count="1" max_count="1" chance="100"/><!--Savior's XP Box-->
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90418" name="Savior's XP Box" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ev_kalie_treasure_box"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="49777" count="1" chance="0.01"/><!--XP Scroll: 1K--><!--TODO: Check chance-->
+			<create_item id="49778" count="1" chance="0.01"/><!--XP Scroll: 10K--><!--TODO: Check chance-->
+			<create_item id="49779" count="1" chance="0.01"/><!--XP Scroll: 100K--><!--TODO: Check chance-->
+			<create_item id="49780" count="1" chance="0.01"/><!--XP Scroll: 500K--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<weapon id="90419" name="Hero's Shining Dual Sword" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="2330"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="200"/>
+			<add stat="mAtk" order="0x10" value="102"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="90420" name="Hero's Shining Staff" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="19"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_sages_staff_i01"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="weight" value="1000"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="160"/>
+			<add stat="mAtk" order="0x10" value="138"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="90421" name="Hero's Shining Bow" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_akat_long_bow_i01"/>
+		<set name="type" value="BOW"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="mp_consume" value="3"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="348"/>
+			<add stat="mAtk" order="0x10" value="108"/>
+			<set stat="basePAtkSpd" order="0x08" value="293"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="90422" name="Hero's Shining Dagger" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_grace_dagger_i01"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="1020"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="142"/>
+			<add stat="mAtk" order="0x10" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="90423" name="Hero's Shining Spear" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="random_damage" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.weapon_poleaxe_i01"/>
+		<set name="type" value="POLE"/>
+		<set name="weight" value="2010"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="159"/>
+			<add stat="mAtk" order="0x10" value="100"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<armor id="90424" name="Hero's Shining Helmet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="58"/>
+		</for>
+	</armor>
+	<armor id="90425" name="Hero's Shining Armor" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t62_ul_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="10480"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="239"/>
+		</for>
+	</armor>
+	<armor id="90426" name="Hero's Shining Gauntlets" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t62_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<armor id="90427" name="Hero's Shining Boots" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t62_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1200"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<armor id="90428" name="Hero's Shining Helmet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="620"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="47"/>
+		</for>
+	</armor>
+	<armor id="90429" name="Hero's Shining Rags" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t45_ul_i00"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="5800"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="179"/>
+		</for>
+	</armor>
+	<armor id="90430" name="Hero's Shining Gloves" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t45_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<armor id="90431" name="Hero's Shining Shoes" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t45_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1210"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<armor id="90432" name="Hero's Shining Circlet" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_circlet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="600"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="54"/>
+		</for>
+	</armor>
+	<armor id="90433" name="Hero's Shining Tunic" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t57_u_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1980"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="74"/>
+			<add stat="maxMp" order="0x60" value="314"/>
+		</for>
+	</armor>
+	<armor id="90434" name="Hero's Shining Stockings" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t57_l_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="960"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="46"/>
+			<add stat="maxMp" order="0x60" value="196"/>
+		</for>
+	</armor>
+	<armor id="90435" name="Hero's Shining Gloves" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t57_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="610"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="39"/>
+		</for>
+	</armor>
+	<armor id="90436" name="Hero's Shining Shoes" add_name="30-day">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="C"/>
+		<set name="icon" value="icon.armor_t57_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1210"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="34"/>
+		</for>
+	</armor>
+	<armor id="90437" name="Aden Hero Hat" add_name="60 days">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_romantic_chaperon_yellow"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<etcitem id="90438" name="Fish Stew - Might Lv. 2">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39047" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90439" name="Fish Stew - Might Lv. 3">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39047" level="3"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90440" name="Fish Stew - Shield Lv. 2">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39048" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90441" name="Fish Stew - Shield Lv. 3">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39048" level="3"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90442" name="Fish Stew - Empower Lv. 2">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39051" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90443" name="Fish Stew - Empower Lv. 3">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39051" level="3"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90444" name="Fish Stew - Magic Barrier Lv. 2">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39049" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90445" name="Fish Stew - Vampiric Rage Lv. 2">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39050" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90446" name="Fish Stew - Vampiric Rage Lv. 3">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39050" level="3"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90447" name="Fish Stew - Greater Might Lv. 1">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39261" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90448" name="Fish Stew - Greater Shield Lv. 1">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39262" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90449" name="Fish Stew - Wild Magic Lv. 1">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39263" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90450" name="Fish Stew - Berserker Spirit Lv. 1">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39264" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90451" name="Fish Stew - Berserker Spirit Lv. 2">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39264" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90452" name="Fish Stew - Decrease Weight Lv. 1">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39265" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90453" name="Fish Stew - Decrease Weight Lv. 2">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39265" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="90454" name="Fish Stew - Decrease Weight Lv. 3">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.fish_stew_buff"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39265" level="3"/>
+		</skills>
+	</etcitem>
+	<armor id="90455" name="Avadon Circlet (Heavy)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="7780"/>
+		<set name="grind_point" value="389000"/>
+		<set name="crystal_count" value="103"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="778000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="590"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="62"/>
+		</for>
+	</armor>
+	<armor id="90456" name="Avadon Circlet (Light)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="7780"/>
+		<set name="grind_point" value="389000"/>
+		<set name="crystal_count" value="103"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="778000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="590"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="62"/>
+		</for>
+	</armor>
+	<armor id="90457" name="Avadon Circlet (Robe)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="7780"/>
+		<set name="grind_point" value="389000"/>
+		<set name="crystal_count" value="103"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="778000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="590"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="62"/>
+		</for>
+	</armor>
+	<armor id="90458" name="Zubei's Helmet (Heavy)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="7780"/>
+		<set name="grind_point" value="389000"/>
+		<set name="crystal_count" value="103"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="778000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="590"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="62"/>
+		</for>
+	</armor>
+	<armor id="90459" name="Zubei's Helmet (Light)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="7780"/>
+		<set name="grind_point" value="389000"/>
+		<set name="crystal_count" value="103"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="778000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="590"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="62"/>
+		</for>
+	</armor>
+	<armor id="90460" name="Zubei's Helmet (Robe)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="7780"/>
+		<set name="grind_point" value="389000"/>
+		<set name="crystal_count" value="103"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="778000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="590"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="62"/>
+		</for>
+	</armor>
+	<armor id="90461" name="Blue Wolf Helmet (Heavy)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="12100"/>
+		<set name="grind_point" value="605000"/>
+		<set name="crystal_count" value="161"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="1210000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="580"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="66"/>
+		</for>
+	</armor>
+	<armor id="90462" name="Blue Wolf Helmet (Light)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="12100"/>
+		<set name="grind_point" value="605000"/>
+		<set name="crystal_count" value="161"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="1210000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="580"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="66"/>
+		</for>
+	</armor>
+	<armor id="90463" name="Blue Wolf Helmet (Robe)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="12100"/>
+		<set name="grind_point" value="605000"/>
+		<set name="crystal_count" value="161"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="1210000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="580"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="66"/>
+		</for>
+	</armor>
+	<armor id="90464" name="Doom Helmet (Heavy)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="12100"/>
+		<set name="grind_point" value="605000"/>
+		<set name="crystal_count" value="161"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="1210000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="580"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="66"/>
+		</for>
+	</armor>
+	<armor id="90465" name="Doom Helmet (Light)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="12100"/>
+		<set name="grind_point" value="605000"/>
+		<set name="crystal_count" value="161"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="1210000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="580"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="66"/>
+		</for>
+	</armor>
+	<armor id="90466" name="Doom Helmet (Robe)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="12100"/>
+		<set name="grind_point" value="605000"/>
+		<set name="crystal_count" value="161"/>
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="1210000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="580"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="66"/>
+		</for>
+	</armor>
+	<armor id="90467" name="Tallum Helmet (Heavy)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="13360"/>
+		<set name="grind_point" value="668000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="107"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="1336000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="570"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50218" level="1"/>	<!-- A-grade: Tallum Helmet (Heavy) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+		</for>
+	</armor>
+	<armor id="90468" name="Tallum Helmet (Light)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="13360"/>
+		<set name="grind_point" value="668000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="107"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="1336000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="570"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50220" level="1"/>	<!-- A-grade: Tallum Helmet (Light) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+		</for>
+	</armor>
+	<armor id="90469" name="Tallum Helmet (Robe)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="13360"/>
+		<set name="grind_point" value="668000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="107"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="1336000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="570"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50219" level="1"/>	<!-- A-grade: Tallum Helmet (Robe) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+		</for>
+	</armor>
+	<armor id="90470" name="Dark Crystal Helmet (Heavy)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="13360"/>
+		<set name="grind_point" value="668000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="107"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="1336000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="570"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50209" level="1"/>	<!-- A-grade: Dark Crystal Helmet (Heavy) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+		</for>
+	</armor>
+	<armor id="90471" name="Dark Crystal Helmet (Light)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="13360"/>
+		<set name="grind_point" value="668000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="107"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="1336000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="570"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50211" level="1"/>	<!-- A-grade: Dark Crystal Helmet (Light) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+		</for>
+	</armor>
+	<armor id="90472" name="Dark Crystal Helmet (Robe)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="13360"/>
+		<set name="grind_point" value="668000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="107"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="1336000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="570"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50210" level="1"/>	<!-- A-grade: Dark Crystal Helmet (Robe) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="69"/>
+		</for>
+	</armor>
+	<armor id="90473" name="Helm of Nightmare (Heavy)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="20320"/>
+		<set name="grind_point" value="1016000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="163"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="2032000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="560"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50215" level="1"/>	<!-- A-grade: Helm of Nightmare (Heavy) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="73"/>
+		</for>
+	</armor>
+	<armor id="90474" name="Helm of Nightmare (Light)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="20320"/>
+		<set name="grind_point" value="1016000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="163"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="2032000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="560"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50217" level="1"/>	<!-- A-grade: Helm of Nightmare (Light) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="73"/>
+		</for>
+	</armor>
+	<armor id="90475" name="Helm of Nightmare (Robe)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="20320"/>
+		<set name="grind_point" value="1016000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="163"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="2032000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="560"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50216" level="1"/>	<!-- A-grade: Helm of Nightmare (Robe) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="73"/>
+		</for>
+	</armor>
+	<armor id="90476" name="Majestic Circlet (Heavy)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="20320"/>
+		<set name="grind_point" value="1016000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="163"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="2032000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="550"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50212" level="1"/>	<!-- A-grade: Majestic Circlet (Heavy) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="73"/>
+		</for>
+	</armor>
+	<armor id="90477" name="Majestic Circlet (Light)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="20320"/>
+		<set name="grind_point" value="1016000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="163"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="2032000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="550"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50214" level="1"/>	<!-- A-grade: Majestic Circlet (Light) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="73"/>
+		</for>
+	</armor>
+	<armor id="90478" name="Majestic Circlet (Robe)">
+		<set name="freightable" value="true"/>
+		<set name="grind_commission" value="20320"/>
+		<set name="grind_point" value="1016000"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="163"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="2032000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="550"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<skills>
+			<skill id="50213" level="1"/>	<!-- A-grade: Majestic Circlet (Robe) -->
+			<enchant_skill id="50267" level="5" enchant="5"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="6" enchant="6"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="7" enchant="7"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="8" enchant="8"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="9" enchant="9"/>	<!-- Enchant Effect: A-grade Helmet -->
+			<enchant_skill id="50267" level="10" enchant="10"/>	<!-- Enchant Effect: A-grade Helmet -->
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="73"/>
+		</for>
+	</armor>
+	<etcitem id="90479" name="Shiny Jewelry Box" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_main_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90353" count="1" chance="0.01"/><!--Vital Stone Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90343" count="1" chance="0.01"/><!--Pearl Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90338" count="1" chance="0.01"/><!--Diamond Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90333" count="1" chance="0.01"/><!--Sapphire Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90328" count="1" chance="0.01"/><!--Ruby Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90323" count="1" chance="0.01"/><!--Jade Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90318" count="1" chance="0.01"/><!--Garnet Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90313" count="1" chance="0.01"/><!--Topaz Lv. 1--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90480" name="Stone: Save D-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90481" name="Stone: Save C-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90482" name="Stone: Save B-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90483" name="Stone: Save A-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90484" name="Stone: Enchant A-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90485" name="Stone: Enchant B-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90486" name="Stone: Enchant C-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90487" name="Stone: Enchant D-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90488" name="Stone: Protect A-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90489" name="Stone: Protect B-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90490" name="Stone: Protect C-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90491" name="Stone: Protect D-grade Armor">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.ench_am_stone_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90492" name="Giant's A-grade Enchant Stone - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.giant_ench_armor_stone_r_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90493" name="Blessed A-grade Enchant Stone - Not Available" add_name="Not Available">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.giant_ench_armor_stone_r_i02"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="ARMOR_ENCHANT_STONE"/>
+	</etcitem>
+	<etcitem id="90494" name="Eva's Scroll: Enchant Hair Accessory">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.scroll_of_unidentify_am_d"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL_ENCHANT_ARMOR"/>
+	</etcitem>
+	<etcitem id="90495" name="Scroll of Mood Melody">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_magmeld"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="90496" name="Earth Dragon Belt">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_antaras_belt"/>
+		<set name="type" value="LIGHT"/>
+		<equip>
+			<slot id="BELT"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="14"/>
+		</for>
+	</armor>
+	<armor id="90497" name="Fire Dragon Belt">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.bm_vallakas_belt"/>
+		<set name="type" value="LIGHT"/>
+		<equip>
+			<slot id="BELT"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="14"/>
+		</for>
+	</armor>
+	<etcitem id="90498" name="Mysterious Jewelry Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_special_jewelbox_lv5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="39268" level="1"/>	<!--Mysterious Jewelry Box-->
+		</skills>
+	</etcitem>
+	<etcitem id="90499" name="Special Dragon Fruit Lv. 1">
+		<set name="autouse_type" value="BUFF"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.bm_dragon_fruit"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="SCROLL"/>
+		<set name="handler" value="SkillsReduce"/>
+		<skills>
+			<skill id="39269" level="1"/>
+		</skills>
+	</etcitem>
+</list>

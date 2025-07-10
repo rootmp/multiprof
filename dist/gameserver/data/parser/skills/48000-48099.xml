@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="48001" levels="9" name="Piggy's Good Luck - Lv. 1">
+		<table name="#affect_scope">RANGE FAN FAN FAN FAN FAN FAN FAN FAN</table>
+		<table name="#castRange">900 -1 -1 -1 -1 -1 -1 -1 -1</table>
+		<set name="affect_scope" value="#affect_scope"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.skill_piggy_bless"/>
+		<set name="castRange" value="#castRange"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48002" levels="1" name="Piggy's Good Luck - Reward">
+		<set name="icon" value="icon.skill_piggy_bless"/>
+		<set name="reuseDelay" value="-1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48011" levels="1" name="You make bow as a sign of respect">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.ev_greeting1"/>
+		<set name="hitTime" value="5000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48012" levels="1" name="Mark of Wild Orc.">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1"/>
+		<set name="icon" value="icon.skill4107"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="10000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48013" levels="1" name="Mark of Wild Orc.">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1"/>
+		<set name="icon" value="icon.skill4107"/>
+		<set name="coolTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48014" levels="1" name="Typhoon of Wild Orc">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1"/>
+		<set name="icon" value="icon.skill3080"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="10000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48015" levels="1" name="Typhoon of Wild Orc">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-1"/>
+		<set name="icon" value="icon.skill3080"/>
+		<set name="coolTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48016" levels="1" name="Dance Time">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill5008_psycho"/>
+		<set name="hitTime" value="5000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48017" levels="1" name="Dance Time">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill5008_psycho"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48018" levels="2" name="Sayha's Grace Regeneration">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48019" levels="2" name="Raid Reward - Shield">
+		<set name="icon" value="icon.skill1040"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48020" levels="2" name="Raid Reward - Magic Barrier">
+		<set name="icon" value="icon.skill1036"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48021" levels="2" name="Raid Reward - Decrease Weight">
+		<set name="icon" value="icon.skill1257"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48022" levels="2" name="Raid Reward - Clarity">
+		<set name="icon" value="icon.skill1397"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48023" levels="2" name="Raid Reward - Berserker Spirit">
+		<set name="icon" value="icon.skill1062"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48024" levels="2" name="Raid Reward - Wind Walk">
+		<set name="icon" value="icon.skill1204"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48025" levels="2" name="Raid Reward - Might">
+		<set name="icon" value="icon.skill1068"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48026" levels="2" name="Raid Reward - Focus">
+		<set name="icon" value="icon.skill1077"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48027" levels="2" name="Raid Reward - Haste">
+		<set name="icon" value="icon.skill1086"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48028" levels="2" name="Raid Reward -Death Whisper">
+		<set name="icon" value="icon.skill1242"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48029" levels="2" name="Raid Reward - Empower">
+		<set name="icon" value="icon.skill1059"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48030" levels="2" name="Raid Reward - Wild Magic">
+		<set name="icon" value="icon.skill1303"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48031" levels="2" name="Raid Reward - Acumen">
+		<set name="icon" value="icon.skill1085"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48032" levels="2" name="Raid Reward - Concentration">
+		<set name="icon" value="icon.skill1078"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48033" levels="2" name="Raid Reward - Victory">
+		<set name="icon" value="icon.skill5074"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48034" levels="2" name="Raid Reward - HP Recovery">
+		<set name="icon" value="icon.skill0211"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48035" levels="2" name="Raid Reward - MP Recovery">
+		<set name="icon" value="icon.skill0213"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48036" levels="1" name="Einhasad's Protection">
+		<set name="icon" value="icon.etc_dragons_blood_i03"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48037" levels="1" name="Lightning Strike">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-4140"/>
+		<set name="icon" value="icon.skill0279"/>
+		<set name="reuseDelay" value="20000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="64"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48038" levels="1" name="Buff of Seeker - Short Distance">
+		<set name="icon" value="icon.skill5076_b"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48039" levels="1" name="Buff of Seeker - Long Distance">
+		<set name="icon" value="icon.skill5076_c"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48040" levels="1" name="Heavenly Rift Seeker">
+		<set name="icon" value="icon.skill19222"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48041" levels="1" name="Cancel Blessing of Protection">
+		<set name="effectPoint" value="709"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48042" levels="1" name="Buff of Seeker">
+		<set name="icon" value="icon.skill5076_a"/>
+		<set name="hitTime" value="2500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48043" levels="1" name="Fatal Strike">
+		<set name="effectPoint" value="-390"/>
+		<set name="icon" value="icon.skill0190"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="720"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1080"/>
+		<set name="mp_consume" value="58"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48044" levels="1" name="Monster of Fire Element">
+		<set name="icon" value="icon.elemental_fire"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48045" levels="1" name="Monster of Water Element">
+		<set name="icon" value="icon.elemental_water"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48046" levels="1" name="Monster of Wind Element">
+		<set name="icon" value="icon.elemental_wind"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48047" levels="1" name="Monster of Earth Element">
+		<set name="icon" value="icon.elemental_earth"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48048" levels="5" name="Sublime Self-Sacrifice">
+		<table name="#hpConsume">3000 5000 10000 20000 30000</table>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="100"/>
+		<set name="hpConsume" value="#hpConsume"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48049" levels="5" name="Raid Blessing Lv. 1">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="castRange" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48050" levels="1" name="Battle Aura">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="T"/>
+	</skill>
+	<skill id="48051" levels="1" name="Battle Zone">
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.battlebuff"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48052" levels="12" name="Craft Points +100">
+		<table name="#SkillLevel">100 500 1000 3000 5000 10000 30000 50000 100000 300000 500000 1000000</table>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="1500"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect name="i_add_random_craft_points" value="#SkillLevel" />
+		</for>
+	</skill>
+	<skill id="48053" levels="1" name="PA Battle Buff">
+		<set name="icon" value="icon.soul_spirit2"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48054" levels="2" name="Burning">
+		<set name="icon" value="icon.skill3238"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48055" levels="5" name="Yogi’s Energy">
+		<set name="icon" value="icon.skill10526"/>
+		<set name="castRange" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48056" levels="1" name="Golden Pig’s Teleport">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48057" levels="1" name="Ultimate Death Knight Experience">
+		<set name="abnormal_effect" value="DEATH_KNIGHT_FLAME"/>
+		<set name="abnormal_time" value="15"/>
+		<set name="abnormal_level" value="1"/>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.death_knight_transform"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<mul stat="pAtk" value="1.4"/>
+				<p_critical_damage value="40" type="PER"/>
+				<p_skill_critical_damage value="40" type="PER"/>
+				<mul stat="pAtkSpd" value="1.5"/>
+				<add stat="runSpd" value="5"/>
+				<p_heal_effect value="8" type="DIFF"/>
+				<add stat="defenceHoly" value="50"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="48058" levels="4" name="Good Luck Buff Lv. 1">
+		<table name="#castRange">900 -1 -1 -1</table>
+		<set name="effectPoint" value="1"/>
+		<set name="icon" value="icon.etc_charm_of_luck_i00"/>
+		<set name="castRange" value="#castRange"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48059" levels="3" name="Good Luck Buff - Reward Lv. 1">
+		<set name="icon" value="icon.etc_charm_of_luck_i00"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48060" levels="1" name="Burning Fist">
+		<set name="effectPoint" value="-194"/>
+		<set name="icon" value="icon.skill0280"/>
+		<set name="reuseDelay" value="4000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1900"/>
+		<set name="mp_consume" value="87"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48061" levels="1" name="Double Shot">
+		<set name="effectPoint" value="-333"/>
+		<set name="icon" value="icon.skill0019"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="2000"/>
+		<set name="mp_consume" value="158"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48062" levels="1" name="Jeras’ Fire Show">
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill1285"/>
+		<set name="reuseDelay" value="2000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48063" levels="1" name="Fortress Battle - Meteor">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="800"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48064" levels="1" name="Fortress Battle - Flame">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1101"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="800"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48065" levels="1" name="Fortress Battle - Bleed">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0096"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="800"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48066" levels="1" name="Fortress Battle - Sword Storm">
+		<set name="effectPoint" value="-1500"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="coolTime" value="800"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48067" levels="1" name="Fortress Battle - Theor's Range Attack Type 1">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48068" levels="1" name="Fortress Battle - Theor's Range Attack Type 2">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48069" levels="1" name="Fortress Battle - Theor's Range Attack Type 3">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48070" levels="1" name="Master's Blessing">
+		<set name="icon" value="icon.macrownd_icon08"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48071" levels="1" name="Master’s Protection">
+		<set name="icon" value="icon.ev_L2_soul_ore"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48072" levels="1" name="HP Recovery Block">
+		<set name="icon" value="icon.skill19186"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48073" levels="10" name="Prominence">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48074" levels="10" name="Twister">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48075" levels="10" name="Burning">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48076" levels="10" name="Aura Burn">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="150"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48077" levels="10" name="Blaze">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="150"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48078" levels="1" name="Clan Stronghold Effect">
+		<set name="icon" value="icon.skill_exp_sp_up"/>
+		<set name="castRange" value="900"/>
+		<set name="abnormal_time" value="300"/>
+		<set name="target_type" value="TARGET"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_ONE"/>
+		<set name="skillType" value="BUFF"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<effect>
+				<add stat="exp_rate_multiplier" value="0.5"/>
+				<add stat="sp_rate_multiplier" value="0.5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="48079" levels="1" name="Triple Slash">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-390"/>
+		<set name="icon" value="icon.skill0001"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1500"/>
+		<set name="mp_consume" value="58"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48080" levels="1" name="Karim's Range Attack">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48081" levels="1" name="Beast's Range Attack">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48082" levels="1" name="Beast's Range Fear">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="700"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48083" levels="1" name="Antharas' Resistance">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48084" levels="3" name="Weakness">
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill4037"/>
+		<set name="reuseDelay" value="10000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48085" levels="1" name="Speed Boost">
+		<set name="icon" value="icon.skill0169"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48086" levels="1" name="Dimensional Door A">
+		<set name="icon" value="Icon.skill1050"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48087" levels="1" name="Dimensional Door B">
+		<set name="icon" value="Icon.skill1050"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="hitTime" value="4000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48088" levels="1" name="Earth Shaker">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="2500"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48089" levels="1" name="Lightning">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="4000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="6000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48090" levels="1" name="Baium's Gift">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="1000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48091" levels="2" name="Slow Evasion">
+		<set name="icon" value="icon.skill0078"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48092" levels="6" name="Damage of Limit">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48093" levels="1" name="Raid Boss (Lv. 82)">
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48094" levels="1" name="Raid Boss (Lv. 82)">
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48095" levels="1" name="Raid Boss (Lv. 82)">
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48096" levels="1" name="Raid Boss (Lv. 82)">
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="48097" levels="1" name="Small Rat Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48098" levels="1" name="Mid Rat Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="48099" levels="1" name="Big Rat Transformation">
+		<set name="icon" value="icon.skill30530"/>
+		<set name="castRange" value="400"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

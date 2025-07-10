@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="36413" name="Single Mesh Armor" add_name="Sealed">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="1000"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="mailable" value="false"/>
+		<equip>
+			<slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+</list>

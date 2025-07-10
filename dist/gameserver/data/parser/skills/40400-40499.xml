@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="40400" levels="1" name="Special Equipment Challenge Point Efficiency Boost - 2 Charges">
+		<!--none-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40401" levels="1" name="Special Equipment Challenge Points' Enhanced Charge">
+		<!--none-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40402" levels="1" name="Special Equipment Challenge Points' Charge Protection">
+		<!--none-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40403" levels="1" name="Special Equipment Challenge Points' Charge Decrease">
+		<!--none-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40404" levels="1" name="Special Equipment Challenge Points' Charge Stabilization">
+		<!--none-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40405" levels="1" name="Five-colored Sweets - Reward">
+		<!--none-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40406" levels="1" name="Test_Appearance Stone: Emerald Weapon (Time-limited)">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40407" levels="1" name="Anniversary Сomplimentary Buff">
+		<!--Max HP $s1\nMax MP $s1\nSuccess rate with weapon/ armor enchant scrolls $s2\nAcquired XP/ SP $s3-->
+
+		<set name="icon" value="icon.ev_18th_anniversary_i00"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40408" levels="2" name="Anniversary Cake">
+		<table name="#reuseDelay">10000 0</table>
+		<!--P. Atk. $s1\nM. Atk. $s1\nP. Def. $s1\nM. Def. $s1\nHP Recovery Rate $s2\nMP Recovery Rate $s2\n\nThe buff is renewed every hour.\nAnniversary Box is given upon the buff renewal.\n\nNote!\nYou cannot get the buff and the gift if you are dead.\nYou cannot get the buff and the gift while teleporting.\nYou cannot get the gift if your inventory is full.-->
+		<set name="icon" value="BranchSys.icon.br_birthday_cake_i00"/>
+		<set name="reuseDelay" value="#reuseDelay"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40409" levels="1" name="Anniversary Cake - Reward">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40410" levels="1" name="Comic Buff">
+		<!--P. Atk. $s1\nM. Atk. $s1\nP. Def. $s1\nM. Def. $s1\nHP Recovery Rate $s2\nMP Recovery Rate $s2-->
+
+		<set name="icon" value="icon.s_bufftoon_buff"/>
+		<set name="castRange" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40411" levels="1" name="Spellbook: Mount Red Wyvern">
+		<!--Double-click to learn how to ride Red Wyvern.-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40412" levels="1" name="Scroll of Escape: Guardian Tanai">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="loc" value="-45079 -113511 -208"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RECALL"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40413" levels="1" name="Scroll of Escape: Gantaki Zu Urutu">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="magicLevel" value="1"/>
+		<set name="magicType" value="SPECIAL"/>
+		<set name="loc" value="-44686 -111870 -240"/>
+		<set name="target_type" value="SELF"/>
+		<set name="affect_scope" value="SINGLE"/>
+		<set name="affect_object" value="FRIEND"/>
+		<set name="target" value="TARGET_SELF"/>
+		<set name="skillType" value="RECALL"/>
+		<set name="operate_type" value="A1"/>
+	</skill>
+	<skill id="40414" levels="1" name="Rare Accessory Challenge Points +50">
+		<!--none-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40415" levels="1" name="Talisman Challenge Points +50">
+		<!--none-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40416" levels="1" name="Special Equipment Challenge Points">
+		<!--none-->
+
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="coolTime" value="500"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="40417" levels="1" name="Scroll: Enchant Ignore Decrease Mask">
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

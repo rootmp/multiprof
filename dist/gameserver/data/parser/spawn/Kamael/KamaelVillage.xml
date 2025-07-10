@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="32478" /> <!-- Game Assistant -->
+		<point x="-116951" y="45028" z="360" h="14867" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34110" /> <!-- Newbie Guide -->
+		<point x="-118075" y="45059" z="368" h="17358" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34117" /> <!-- Draphier -->
+		<point x="-117342" y="45146" z="368" h="14186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34111" /> <!-- Reahen -->
+		<point x="-116626" y="44969" z="376" h="12990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34112" /> <!-- Erina -->
+		<point x="-116679" y="46623" z="384" h="46657" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34116" /> <!-- Pugin -->
+		<point x="-119757" y="47783" z="384" h="51883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34115" /> <!-- Carver -->
+		<point x="-119337" y="47776" z="384" h="47673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34114" /> <!-- Bixon -->
+		<point x="-121265" y="43527" z="648" h="11149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="34113" /> <!-- Maddy -->
+		<point x="-121407" y="43825" z="640" h="6428" />
+	</spawn>
+</list>

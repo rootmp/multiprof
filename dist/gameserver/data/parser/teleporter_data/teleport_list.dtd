@@ -1,0 +1,14 @@
+<!ELEMENT list (teleport)*>
+
+<!ELEMENT teleport (coords)*>
+<!ATTLIST teleport
+	id CDATA #REQUIRED
+	itemId CDATA #REQUIRED
+	price CDATA #REQUIRED>
+	
+	<!ELEMENT coords (coord)*>
+		<!ELEMENT coord (#PCDATA)>
+		<!ATTLIST coord
+			x CDATA #REQUIRED
+			y CDATA #REQUIRED
+			z CDATA #REQUIRED>

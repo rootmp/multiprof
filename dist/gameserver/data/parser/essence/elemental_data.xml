@@ -1,0 +1,1212 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "elemental_data.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<configs enabled="true">
+		<reset_points_cost item_id="57" item_count="50000"/>	<!--Адена-->
+	</configs>
+	<elemental element="FIRE">
+		<absorb_items>
+			<absorb_item id="91036" power="9300"/>	<!--Руда Духа Огня-->
+		</absorb_items>
+		<evolution level="0">
+			<datas>
+				<data level="1"/>
+			</datas>
+		</evolution>
+		<evolution level="1">
+			<limits max_attack_points="5" max_defence_points="5" max_crit_rate_points="5" max_crit_attack_points="5"/>
+			<rise_level_cost>
+				<cost_item id="91032" count="1"/><!--Камень Эволюции Духа Огня-->
+				<cost_item id="57" count="100000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="10" defence="10" crit_rate="1" crit_attack="1" exp="57713">
+					<extract item_id="91040" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="13" defence="15" crit_rate="2" crit_attack="2" exp="135313">
+					<extract item_id="91040" item_count="3"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="16" defence="20" crit_rate="3" crit_attack="3" exp="238082">
+					<extract item_id="91040" item_count="6"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="19" defence="25" crit_rate="4" crit_attack="4" exp="371775">
+					<extract item_id="91040" item_count="10"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="22" defence="30" crit_rate="5" crit_attack="5" exp="542993">
+					<extract item_id="91040" item_count="14"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="25" defence="35" crit_rate="6" crit_attack="6" exp="759244">
+					<extract item_id="91040" item_count="18"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="28" defence="40" crit_rate="7" crit_attack="7" exp="1029008">
+					<extract item_id="91040" item_count="22"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="31" defence="45" crit_rate="8" crit_attack="8" exp="1361808">
+					<extract item_id="91040" item_count="26"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="34" defence="50" crit_rate="9" crit_attack="9" exp="1768273">
+					<extract item_id="91040" item_count="30"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="37" defence="55" crit_rate="10" crit_attack="10" exp="2260211">
+					<extract item_id="91040" item_count="34"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="2">
+			<limits max_attack_points="10" max_defence_points="10" max_crit_rate_points="10" max_crit_attack_points="10"/>
+			<rise_level_cost>
+				<cost_item id="91032" count="3"/><!--Камень Эволюции Духа Огня-->
+				<cost_item id="57" count="3000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="41" defence="61" crit_rate="11" crit_attack="11" exp="596369">
+					<extract item_id="91040" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="45" defence="67" crit_rate="12" crit_attack="12" exp="1313872">
+					<extract item_id="91040" item_count="42"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="49" defence="73" crit_rate="13" crit_attack="13" exp="2171115">
+					<extract item_id="91040" item_count="46"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="53" defence="79" crit_rate="14" crit_attack="14" exp="3188751">
+					<extract item_id="91040" item_count="50"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="57" defence="85" crit_rate="15" crit_attack="15" exp="4389633">
+					<extract item_id="91040" item_count="54"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="61" defence="91" crit_rate="16" crit_attack="16" exp="5798968">
+					<extract item_id="91040" item_count="58"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="65" defence="97" crit_rate="17" crit_attack="17" exp="7444481">
+					<extract item_id="91040" item_count="63"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="69" defence="103" crit_rate="18" crit_attack="18" exp="9356589">
+					<extract item_id="91040" item_count="68"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="73" defence="109" crit_rate="19" crit_attack="19" exp="11568579">
+					<extract item_id="91040" item_count="73"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="77" defence="115" crit_rate="20" crit_attack="20" exp="14116796">
+					<extract item_id="91040" item_count="78"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="3">
+			<limits max_attack_points="15" max_defence_points="15" max_crit_rate_points="15" max_crit_attack_points="15"/>
+			<rise_level_cost>
+				<cost_item id="91032" count="5"/><!--Камень Эволюции Духа Огня-->
+				<cost_item id="57" count="5000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="82" defence="122" crit_rate="21" crit_attack="21" exp="2924039">
+					<extract item_id="91040" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="87" defence="129" crit_rate="22" crit_attack="22" exp="6266952">
+					<extract item_id="91040" item_count="88"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="92" defence="136" crit_rate="23" crit_attack="23" exp="10075460">
+					<extract item_id="91040" item_count="93"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="97" defence="143" crit_rate="24" crit_attack="24" exp="14400173">
+					<extract item_id="91040" item_count="98"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="102" defence="150" crit_rate="25" crit_attack="25" exp="19295819">
+					<extract item_id="91040" item_count="103"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="107" defence="157" crit_rate="26" crit_attack="26" exp="24821487">
+					<extract item_id="91040" item_count="108"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="112" defence="164" crit_rate="27" crit_attack="27" exp="31040875">
+					<extract item_id="91040" item_count="113"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="117" defence="171" crit_rate="28" crit_attack="28" exp="38022549">
+					<extract item_id="91040" item_count="118"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="122" defence="178" crit_rate="29" crit_attack="29" exp="45840213">
+					<extract item_id="91040" item_count="123"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="127" defence="185" crit_rate="30" crit_attack="30" exp="54572992">
+					<extract item_id="91040" item_count="128"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="4">
+			<limits max_attack_points="20" max_defence_points="20" max_crit_rate_points="20" max_crit_attack_points="20"/>
+			<rise_level_cost>
+				<cost_item id="91032" count="10"/><!--Камень Эволюции Духа Огня-->
+				<cost_item id="57" count="7000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="133" defence="193" crit_rate="31" crit_attack="31" exp="11478124">
+					<extract item_id="91040" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="139" defence="201" crit_rate="32" crit_attack="32" exp="31192283">
+					<extract item_id="91040" item_count="138"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="145" defence="209" crit_rate="33" crit_attack="33" exp="75614547">
+					<extract item_id="91040" item_count="143"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="151" defence="217" crit_rate="34" crit_attack="34" exp="144744916">
+					<extract item_id="91040" item_count="148"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="157" defence="225" crit_rate="35" crit_attack="35" exp="238583390">
+					<extract item_id="91040" item_count="153"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="163" defence="233" crit_rate="36" crit_attack="36" exp="357129969">
+					<extract item_id="91040" item_count="158"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="169" defence="241" crit_rate="37" crit_attack="37" exp="488030601">
+					<extract item_id="91040" item_count="163"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="175" defence="249" crit_rate="38" crit_attack="38" exp="625108258">
+					<extract item_id="91040" item_count="168"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="181" defence="257" crit_rate="39" crit_attack="39" exp="765274429">
+					<extract item_id="91040" item_count="173"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="187" defence="265" crit_rate="40" crit_attack="40" exp="906984857">
+					<extract item_id="91040" item_count="178"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="5">
+			<limits max_attack_points="30" max_defence_points="30" max_crit_rate_points="30" max_crit_attack_points="30"/>
+			<datas>
+				<data level="1" attack="193" defence="274" crit_rate="41" crit_attack="41" exp="146343197">
+					<extract item_id="91040" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="199" defence="283" crit_rate="42" crit_attack="42" exp="306584703">
+					<extract item_id="91040" item_count="188"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="205" defence="292" crit_rate="43" crit_attack="43" exp="501571982">
+					<extract item_id="91040" item_count="193"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="211" defence="301" crit_rate="44" crit_attack="44" exp="731305034">
+					<extract item_id="91040" item_count="198"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="217" defence="310" crit_rate="45" crit_attack="45" exp="995783858">
+					<extract item_id="91040" item_count="203"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="223" defence="320" crit_rate="47" crit_attack="47" exp="1295008455">
+					<extract item_id="91040" item_count="208"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="229" defence="330" crit_rate="49" crit_attack="49" exp="1611605938">
+					<extract item_id="91040" item_count="213"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="235" defence="340" crit_rate="51" crit_attack="51" exp="1936889864">
+					<extract item_id="91040" item_count="218"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="241" defence="350" crit_rate="53" crit_attack="53" exp="2266517012">
+					<extract item_id="91040" item_count="223"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="247" defence="360" crit_rate="55" crit_attack="55" exp="2598315771">
+					<extract item_id="91040" item_count="228"><!--TODO: проверить количество--><!--Фрагмент Стихии Огня-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+	</elemental>
+	<elemental element="WATER">
+		<absorb_items>
+			<absorb_item id="91035" power="9300"/><!--Ore of Water Spirit-->
+		</absorb_items>
+		<evolution level="0">
+			<datas>
+				<data level="1"/>
+			</datas>
+		</evolution>
+		<evolution level="1">
+			<limits max_attack_points="5" max_defence_points="5" max_crit_rate_points="5" max_crit_attack_points="5"/>
+			<rise_level_cost>
+				<cost_item id="91031" count="1"/><!--Stone of Evolution of the Water Spirit-->
+				<cost_item id="57" count="100000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="10" defence="10" crit_rate="1" crit_attack="1" exp="57713">
+					<extract item_id="91039" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="13" defence="15" crit_rate="2" crit_attack="2" exp="135313">
+					<extract item_id="91039" item_count="3"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="16" defence="20" crit_rate="3" crit_attack="3" exp="238082">
+					<extract item_id="91039" item_count="6"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="19" defence="25" crit_rate="4" crit_attack="4" exp="371775">
+					<extract item_id="91039" item_count="10"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="22" defence="30" crit_rate="5" crit_attack="5" exp="542993">
+					<extract item_id="91039" item_count="14"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="25" defence="35" crit_rate="6" crit_attack="6" exp="759244">
+					<extract item_id="91039" item_count="18"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="28" defence="40" crit_rate="7" crit_attack="7" exp="1029008">
+					<extract item_id="91039" item_count="22"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="31" defence="45" crit_rate="8" crit_attack="8" exp="1361808">
+					<extract item_id="91039" item_count="26"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="34" defence="50" crit_rate="9" crit_attack="9" exp="1768273">
+					<extract item_id="91039" item_count="30"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="37" defence="55" crit_rate="10" crit_attack="10" exp="2260211">
+					<extract item_id="91039" item_count="34"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="2">
+			<limits max_attack_points="10" max_defence_points="10" max_crit_rate_points="10" max_crit_attack_points="10"/>
+			<rise_level_cost>
+				<cost_item id="91031" count="3"/><!--Stone of Evolution of the Water Spirit-->
+				<cost_item id="57" count="3000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="41" defence="61" crit_rate="11" crit_attack="11" exp="596369">
+					<extract item_id="91039" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="45" defence="67" crit_rate="12" crit_attack="12" exp="1313872">
+					<extract item_id="91039" item_count="42"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="49" defence="73" crit_rate="13" crit_attack="13" exp="2171115">
+					<extract item_id="91039" item_count="46"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="53" defence="79" crit_rate="14" crit_attack="14" exp="3188751">
+					<extract item_id="91039" item_count="50"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="57" defence="85" crit_rate="15" crit_attack="15" exp="4389633">
+					<extract item_id="91039" item_count="54"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="61" defence="91" crit_rate="16" crit_attack="16" exp="5798968">
+					<extract item_id="91039" item_count="58"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="65" defence="97" crit_rate="17" crit_attack="17" exp="7444481">
+					<extract item_id="91039" item_count="63"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="69" defence="103" crit_rate="18" crit_attack="18" exp="9356589">
+					<extract item_id="91039" item_count="68"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="73" defence="109" crit_rate="19" crit_attack="19" exp="11568579">
+					<extract item_id="91039" item_count="73"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="77" defence="115" crit_rate="20" crit_attack="20" exp="14116796">
+					<extract item_id="91039" item_count="78"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="3">
+			<limits max_attack_points="15" max_defence_points="15" max_crit_rate_points="15" max_crit_attack_points="15"/>
+			<rise_level_cost>
+				<cost_item id="91031" count="5"/><!--Stone of Evolution of the Water Spirit-->
+				<cost_item id="57" count="5000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="82" defence="122" crit_rate="21" crit_attack="21" exp="2924039">
+					<extract item_id="91039" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="87" defence="129" crit_rate="22" crit_attack="22" exp="6266952">
+					<extract item_id="91039" item_count="88"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="92" defence="136" crit_rate="23" crit_attack="23" exp="10075460">
+					<extract item_id="91039" item_count="93"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="97" defence="143" crit_rate="24" crit_attack="24" exp="14400173">
+					<extract item_id="91039" item_count="98"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="102" defence="150" crit_rate="25" crit_attack="25" exp="19295819">
+					<extract item_id="91039" item_count="103"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="107" defence="157" crit_rate="26" crit_attack="26" exp="24821487">
+					<extract item_id="91039" item_count="108"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="112" defence="164" crit_rate="27" crit_attack="27" exp="31040875">
+					<extract item_id="91039" item_count="113"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="117" defence="171" crit_rate="28" crit_attack="28" exp="38022549">
+					<extract item_id="91039" item_count="118"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="122" defence="178" crit_rate="29" crit_attack="29" exp="45840213">
+					<extract item_id="91039" item_count="123"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="127" defence="185" crit_rate="30" crit_attack="30" exp="54572992">
+					<extract item_id="91039" item_count="128"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="4">
+			<limits max_attack_points="20" max_defence_points="20" max_crit_rate_points="20" max_crit_attack_points="20"/>
+			<rise_level_cost>
+				<cost_item id="91031" count="10"/><!--Stone of Evolution of the Water Spirit-->
+				<cost_item id="57" count="7000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="133" defence="193" crit_rate="31" crit_attack="31" exp="11478124">
+					<extract item_id="91039" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="139" defence="201" crit_rate="32" crit_attack="32" exp="31192283">
+					<extract item_id="91039" item_count="138"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="145" defence="209" crit_rate="33" crit_attack="33" exp="75614547">
+					<extract item_id="91039" item_count="143"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="151" defence="217" crit_rate="34" crit_attack="34" exp="144744916">
+					<extract item_id="91039" item_count="148"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="157" defence="225" crit_rate="35" crit_attack="35" exp="238583390">
+					<extract item_id="91039" item_count="153"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="163" defence="233" crit_rate="36" crit_attack="36" exp="357129969">
+					<extract item_id="91039" item_count="158"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="169" defence="241" crit_rate="37" crit_attack="37" exp="488030601">
+					<extract item_id="91039" item_count="163"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="175" defence="249" crit_rate="38" crit_attack="38" exp="625108258">
+					<extract item_id="91039" item_count="168"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="181" defence="257" crit_rate="39" crit_attack="39" exp="765274429">
+					<extract item_id="91039" item_count="173"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="187" defence="265" crit_rate="40" crit_attack="40" exp="906984857">
+					<extract item_id="91039" item_count="178"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="5">
+			<limits max_attack_points="30" max_defence_points="30" max_crit_rate_points="30" max_crit_attack_points="30"/>
+			<datas>
+				<data level="1" attack="193" defence="274" crit_rate="41" crit_attack="41" exp="146343197">
+					<extract item_id="91039" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="199" defence="283" crit_rate="42" crit_attack="42" exp="306584703">
+					<extract item_id="91039" item_count="188"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="205" defence="292" crit_rate="43" crit_attack="43" exp="501571982">
+					<extract item_id="91039" item_count="193"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="211" defence="301" crit_rate="44" crit_attack="44" exp="731305034">
+					<extract item_id="91039" item_count="198"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="217" defence="310" crit_rate="45" crit_attack="45" exp="995783858">
+					<extract item_id="91039" item_count="203"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="223" defence="320" crit_rate="47" crit_attack="47" exp="1295008455">
+					<extract item_id="91039" item_count="208"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="229" defence="330" crit_rate="49" crit_attack="49" exp="1611605938">
+					<extract item_id="91039" item_count="213"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="235" defence="340" crit_rate="51" crit_attack="51" exp="1936889864">
+					<extract item_id="91039" item_count="218"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="241" defence="350" crit_rate="53" crit_attack="53" exp="2266517012">
+					<extract item_id="91039" item_count="223"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="247" defence="360" crit_rate="55" crit_attack="55" exp="2598315771">
+					<extract item_id="91039" item_count="228"><!--TODO: проверить количество--><!--Фрагмент Стихии Воды-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+	</elemental>
+	<elemental element="WIND">
+		<absorb_items>
+			<absorb_item id="91037" power="9300"/><!--Руда Духа Ветра-->
+		</absorb_items>
+		<evolution level="0">
+			<datas>
+				<data level="1"/>
+			</datas>
+		</evolution>
+		<evolution level="1">
+			<limits max_attack_points="5" max_defence_points="5" max_crit_rate_points="5" max_crit_attack_points="5"/>
+			<rise_level_cost>
+				<cost_item id="91033" count="1"/><!--Spirit Wind Evolution Stone-->
+				<cost_item id="57" count="100000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="10" defence="10" crit_rate="1" crit_attack="1" exp="57713">
+					<extract item_id="91041" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="13" defence="15" crit_rate="2" crit_attack="2" exp="135313">
+					<extract item_id="91041" item_count="3"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="16" defence="20" crit_rate="3" crit_attack="3" exp="238082">
+					<extract item_id="91041" item_count="6"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="19" defence="25" crit_rate="4" crit_attack="4" exp="371775">
+					<extract item_id="91041" item_count="10"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="22" defence="30" crit_rate="5" crit_attack="5" exp="542993">
+					<extract item_id="91041" item_count="14"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="25" defence="35" crit_rate="6" crit_attack="6" exp="759244">
+					<extract item_id="91041" item_count="18"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="28" defence="40" crit_rate="7" crit_attack="7" exp="1029008">
+					<extract item_id="91041" item_count="22"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="31" defence="45" crit_rate="8" crit_attack="8" exp="1361808">
+					<extract item_id="91041" item_count="26"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="34" defence="50" crit_rate="9" crit_attack="9" exp="1768273">
+					<extract item_id="91041" item_count="30"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="37" defence="55" crit_rate="10" crit_attack="10" exp="2260211">
+					<extract item_id="91041" item_count="34"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="2">
+			<limits max_attack_points="10" max_defence_points="10" max_crit_rate_points="10" max_crit_attack_points="10"/>
+			<rise_level_cost>
+				<cost_item id="91033" count="3"/><!--Spirit Wind Evolution Stone-->
+				<cost_item id="57" count="3000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="41" defence="61" crit_rate="11" crit_attack="11" exp="596369">
+					<extract item_id="91041" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="45" defence="67" crit_rate="12" crit_attack="12" exp="1313872">
+					<extract item_id="91041" item_count="42"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="49" defence="73" crit_rate="13" crit_attack="13" exp="2171115">
+					<extract item_id="91041" item_count="46"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="53" defence="79" crit_rate="14" crit_attack="14" exp="3188751">
+					<extract item_id="91041" item_count="50"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="57" defence="85" crit_rate="15" crit_attack="15" exp="4389633">
+					<extract item_id="91041" item_count="54"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="61" defence="91" crit_rate="16" crit_attack="16" exp="5798968">
+					<extract item_id="91041" item_count="58"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="65" defence="97" crit_rate="17" crit_attack="17" exp="7444481">
+					<extract item_id="91041" item_count="63"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="69" defence="103" crit_rate="18" crit_attack="18" exp="9356589">
+					<extract item_id="91041" item_count="68"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="73" defence="109" crit_rate="19" crit_attack="19" exp="11568579">
+					<extract item_id="91041" item_count="73"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="77" defence="115" crit_rate="20" crit_attack="20" exp="14116796">
+					<extract item_id="91041" item_count="78"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="3">
+			<limits max_attack_points="15" max_defence_points="15" max_crit_rate_points="15" max_crit_attack_points="15"/>
+			<rise_level_cost>
+				<cost_item id="91033" count="5"/><!--Spirit Wind Evolution Stone-->
+				<cost_item id="57" count="5000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="82" defence="122" crit_rate="21" crit_attack="21" exp="2924039">
+					<extract item_id="91041" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="87" defence="129" crit_rate="22" crit_attack="22" exp="6266952">
+					<extract item_id="91041" item_count="88"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="92" defence="136" crit_rate="23" crit_attack="23" exp="10075460">
+					<extract item_id="91041" item_count="93"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="97" defence="143" crit_rate="24" crit_attack="24" exp="14400173">
+					<extract item_id="91041" item_count="98"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="102" defence="150" crit_rate="25" crit_attack="25" exp="19295819">
+					<extract item_id="91041" item_count="103"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="107" defence="157" crit_rate="26" crit_attack="26" exp="24821487">
+					<extract item_id="91041" item_count="108"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="112" defence="164" crit_rate="27" crit_attack="27" exp="31040875">
+					<extract item_id="91041" item_count="113"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="117" defence="171" crit_rate="28" crit_attack="28" exp="38022549">
+					<extract item_id="91041" item_count="118"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="122" defence="178" crit_rate="29" crit_attack="29" exp="45840213">
+					<extract item_id="91041" item_count="123"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="127" defence="185" crit_rate="30" crit_attack="30" exp="54572992">
+					<extract item_id="91041" item_count="128"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="4">
+			<limits max_attack_points="20" max_defence_points="20" max_crit_rate_points="20" max_crit_attack_points="20"/>
+			<rise_level_cost>
+				<cost_item id="91033" count="10"/><!--Spirit Wind Evolution Stone-->
+				<cost_item id="57" count="7000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="133" defence="193" crit_rate="31" crit_attack="31" exp="11478124">
+					<extract item_id="91041" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="139" defence="201" crit_rate="32" crit_attack="32" exp="31192283">
+					<extract item_id="91041" item_count="138"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="145" defence="209" crit_rate="33" crit_attack="33" exp="75614547">
+					<extract item_id="91041" item_count="143"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="151" defence="217" crit_rate="34" crit_attack="34" exp="144744916">
+					<extract item_id="91041" item_count="148"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="157" defence="225" crit_rate="35" crit_attack="35" exp="238583390">
+					<extract item_id="91041" item_count="153"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="163" defence="233" crit_rate="36" crit_attack="36" exp="357129969">
+					<extract item_id="91041" item_count="158"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="169" defence="241" crit_rate="37" crit_attack="37" exp="488030601">
+					<extract item_id="91041" item_count="163"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="175" defence="249" crit_rate="38" crit_attack="38" exp="625108258">
+					<extract item_id="91041" item_count="168"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="181" defence="257" crit_rate="39" crit_attack="39" exp="765274429">
+					<extract item_id="91041" item_count="173"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="187" defence="265" crit_rate="40" crit_attack="40" exp="906984857">
+					<extract item_id="91041" item_count="178"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="5">
+			<limits max_attack_points="30" max_defence_points="30" max_crit_rate_points="30" max_crit_attack_points="30"/>
+			<datas>
+				<data level="1" attack="193" defence="274" crit_rate="41" crit_attack="41" exp="146343197">
+					<extract item_id="91041" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="199" defence="283" crit_rate="42" crit_attack="42" exp="306584703">
+					<extract item_id="91041" item_count="188"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="205" defence="292" crit_rate="43" crit_attack="43" exp="501571982">
+					<extract item_id="91041" item_count="193"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="211" defence="301" crit_rate="44" crit_attack="44" exp="731305034">
+					<extract item_id="91041" item_count="198"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="217" defence="310" crit_rate="45" crit_attack="45" exp="995783858">
+					<extract item_id="91041" item_count="203"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="223" defence="320" crit_rate="47" crit_attack="47" exp="1295008455">
+					<extract item_id="91041" item_count="208"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="229" defence="330" crit_rate="49" crit_attack="49" exp="1611605938">
+					<extract item_id="91041" item_count="213"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="235" defence="340" crit_rate="51" crit_attack="51" exp="1936889864">
+					<extract item_id="91041" item_count="218"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="241" defence="350" crit_rate="53" crit_attack="53" exp="2266517012">
+					<extract item_id="91041" item_count="223"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="247" defence="360" crit_rate="55" crit_attack="55" exp="2598315771">
+					<extract item_id="91041" item_count="228"><!--TODO: проверить количество--><!--Фрагмент Стихии Ветра-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+	</elemental>
+	<elemental element="EARTH">
+		<absorb_items>
+			<absorb_item id="91038" power="9300"/><!--Руда Духа Земли-->
+		</absorb_items>
+		<evolution level="0">
+			<datas>
+				<data level="1"/>
+			</datas>
+		</evolution>
+		<evolution level="1">
+			<limits max_attack_points="5" max_defence_points="5" max_crit_rate_points="5" max_crit_attack_points="5"/>
+			<rise_level_cost>
+				<cost_item id="91034" count="1"/><!--Stone of the Evolution of the Spirit of the Earth-->
+				<cost_item id="57" count="100000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="10" defence="10" crit_rate="1" crit_attack="1" exp="57713">
+					<extract item_id="91042" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="13" defence="15" crit_rate="2" crit_attack="2" exp="135313">
+					<extract item_id="91042" item_count="3"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="16" defence="20" crit_rate="3" crit_attack="3" exp="238082">
+					<extract item_id="91042" item_count="6"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="19" defence="25" crit_rate="4" crit_attack="4" exp="371775">
+					<extract item_id="91042" item_count="10"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="22" defence="30" crit_rate="5" crit_attack="5" exp="542993">
+					<extract item_id="91042" item_count="14"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="25" defence="35" crit_rate="6" crit_attack="6" exp="759244">
+					<extract item_id="91042" item_count="18"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="28" defence="40" crit_rate="7" crit_attack="7" exp="1029008">
+					<extract item_id="91042" item_count="22"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="31" defence="45" crit_rate="8" crit_attack="8" exp="1361808">
+					<extract item_id="91042" item_count="26"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="34" defence="50" crit_rate="9" crit_attack="9" exp="1768273">
+					<extract item_id="91042" item_count="30"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="37" defence="55" crit_rate="10" crit_attack="10" exp="2260211">
+					<extract item_id="91042" item_count="34"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="2">
+			<limits max_attack_points="10" max_defence_points="10" max_crit_rate_points="10" max_crit_attack_points="10"/>
+			<rise_level_cost>
+				<cost_item id="91034" count="3"/><!--Stone of the Evolution of the Spirit of the Earth-->
+				<cost_item id="57" count="3000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="41" defence="61" crit_rate="11" crit_attack="11" exp="596369">
+					<extract item_id="91042" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="45" defence="67" crit_rate="12" crit_attack="12" exp="1313872">
+					<extract item_id="91042" item_count="42"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="49" defence="73" crit_rate="13" crit_attack="13" exp="2171115">
+					<extract item_id="91042" item_count="46"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="53" defence="79" crit_rate="14" crit_attack="14" exp="3188751">
+					<extract item_id="91042" item_count="50"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="57" defence="85" crit_rate="15" crit_attack="15" exp="4389633">
+					<extract item_id="91042" item_count="54"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="61" defence="91" crit_rate="16" crit_attack="16" exp="5798968">
+					<extract item_id="91042" item_count="58"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="65" defence="97" crit_rate="17" crit_attack="17" exp="7444481">
+					<extract item_id="91042" item_count="63"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="69" defence="103" crit_rate="18" crit_attack="18" exp="9356589">
+					<extract item_id="91042" item_count="68"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="73" defence="109" crit_rate="19" crit_attack="19" exp="11568579">
+					<extract item_id="91042" item_count="73"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="77" defence="115" crit_rate="20" crit_attack="20" exp="14116796">
+					<extract item_id="91042" item_count="78"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="3">
+			<limits max_attack_points="15" max_defence_points="15" max_crit_rate_points="15" max_crit_attack_points="15"/>
+			<rise_level_cost>
+				<cost_item id="91034" count="5"/><!--Stone of the Evolution of the Spirit of the Earth-->
+				<cost_item id="57" count="5000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="82" defence="122" crit_rate="21" crit_attack="21" exp="2924039">
+					<extract item_id="91042" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="87" defence="129" crit_rate="22" crit_attack="22" exp="6266952">
+					<extract item_id="91042" item_count="88"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="92" defence="136" crit_rate="23" crit_attack="23" exp="10075460">
+					<extract item_id="91042" item_count="93"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="97" defence="143" crit_rate="24" crit_attack="24" exp="14400173">
+					<extract item_id="91042" item_count="98"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="102" defence="150" crit_rate="25" crit_attack="25" exp="19295819">
+					<extract item_id="91042" item_count="103"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="107" defence="157" crit_rate="26" crit_attack="26" exp="24821487">
+					<extract item_id="91042" item_count="108"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="112" defence="164" crit_rate="27" crit_attack="27" exp="31040875">
+					<extract item_id="91042" item_count="113"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="117" defence="171" crit_rate="28" crit_attack="28" exp="38022549">
+					<extract item_id="91042" item_count="118"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="122" defence="178" crit_rate="29" crit_attack="29" exp="45840213">
+					<extract item_id="91042" item_count="123"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="127" defence="185" crit_rate="30" crit_attack="30" exp="54572992">
+					<extract item_id="91042" item_count="128"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="4">
+			<limits max_attack_points="20" max_defence_points="20" max_crit_rate_points="20" max_crit_attack_points="20"/>
+			<rise_level_cost>
+				<cost_item id="91034" count="10"/><!--Stone of the Evolution of the Spirit of the Earth-->
+				<cost_item id="57" count="7000000"/><!--Адена-->
+			</rise_level_cost>
+			<datas>
+				<data level="1" attack="133" defence="193" crit_rate="31" crit_attack="31" exp="11478124">
+					<extract item_id="91042" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="139" defence="201" crit_rate="32" crit_attack="32" exp="31192283">
+					<extract item_id="91042" item_count="138"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="145" defence="209" crit_rate="33" crit_attack="33" exp="75614547">
+					<extract item_id="91042" item_count="143"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="151" defence="217" crit_rate="34" crit_attack="34" exp="144744916">
+					<extract item_id="91042" item_count="148"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="157" defence="225" crit_rate="35" crit_attack="35" exp="238583390">
+					<extract item_id="91042" item_count="153"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="163" defence="233" crit_rate="36" crit_attack="36" exp="357129969">
+					<extract item_id="91042" item_count="158"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="169" defence="241" crit_rate="37" crit_attack="37" exp="488030601">
+					<extract item_id="91042" item_count="163"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="175" defence="249" crit_rate="38" crit_attack="38" exp="625108258">
+					<extract item_id="91042" item_count="168"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="181" defence="257" crit_rate="39" crit_attack="39" exp="765274429">
+					<extract item_id="91042" item_count="173"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="187" defence="265" crit_rate="40" crit_attack="40" exp="906984857">
+					<extract item_id="91042" item_count="178"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+		<evolution level="5">
+			<limits max_attack_points="30" max_defence_points="30" max_crit_rate_points="30" max_crit_attack_points="30"/>
+			<datas>
+				<data level="1" attack="193" defence="274" crit_rate="41" crit_attack="41" exp="146343197">
+					<extract item_id="91042" item_count="0"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="2" attack="199" defence="283" crit_rate="42" crit_attack="42" exp="306584703">
+					<extract item_id="91042" item_count="188"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="3" attack="205" defence="292" crit_rate="43" crit_attack="43" exp="501571982">
+					<extract item_id="91042" item_count="193"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="4" attack="211" defence="301" crit_rate="44" crit_attack="44" exp="731305034">
+					<extract item_id="91042" item_count="198"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="5" attack="217" defence="310" crit_rate="45" crit_attack="45" exp="995783858">
+					<extract item_id="91042" item_count="203"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="6" attack="223" defence="320" crit_rate="47" crit_attack="47" exp="1295008455">
+					<extract item_id="91042" item_count="208"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="7" attack="229" defence="330" crit_rate="49" crit_attack="49" exp="1611605938">
+					<extract item_id="91042" item_count="213"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="8" attack="235" defence="340" crit_rate="51" crit_attack="51" exp="1936889864">
+					<extract item_id="91042" item_count="218"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="9" attack="241" defence="350" crit_rate="53" crit_attack="53" exp="2266517012">
+					<extract item_id="91042" item_count="223"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+				<data level="10" attack="247" defence="360" crit_rate="55" crit_attack="55" exp="2598315771">
+					<extract item_id="91042" item_count="228"><!--TODO: проверить количество--><!--Фрагмент Стихии Земли-->
+						<cost_item id="57" count="100000"/><!--Адена-->
+					</extract>
+				</data>
+			</datas>
+		</evolution>
+	</elemental>
+</list>

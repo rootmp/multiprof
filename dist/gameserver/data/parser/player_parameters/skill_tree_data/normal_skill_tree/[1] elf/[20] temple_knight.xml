@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "../../tree.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<normal_skill_tree class_id="20"><!--Temple Knight-->
+		<skill id="28" level="13" min_level="40" cost="67000"/><!--Aggression-->
+		<skill id="28" level="14" min_level="40" cost="67000"/><!--Aggression-->
+		<skill id="28" level="15" min_level="40" cost="67000"/><!--Aggression-->
+		<skill id="18" level="1" min_level="40" cost="67000"/><!--Aggression Aura-->
+		<skill id="18" level="2" min_level="40" cost="67000"/><!--Aggression Aura-->
+		<skill id="18" level="3" min_level="40" cost="67000"/><!--Aggression Aura-->
+		<skill id="82" level="2" min_level="40" cost="67000"/><!--Majesty-->
+		<skill id="45184" level="1" min_level="40"><!--Potion Mastery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="141" level="4" min_level="40" cost="67000"/><!--Weapon Mastery-->
+		<skill id="153" level="3" min_level="40" cost="67000"/><!--Shield Mastery-->
+		<skill id="45105" level="3" min_level="40" cost="80000"/><!--Empower-->
+		<skill id="21" level="2" min_level="40" cost="67000"/><!--Recovery-->
+		<skill id="45106" level="2" min_level="40" cost="80000"/><!--Wild Magic-->
+		<skill id="196" level="1" min_level="40" cost="67000"/><!--Dignity-->
+		<skill id="45112" level="2" min_level="40" cost="80000"/><!--Berserker Spirit-->
+		<skill id="61" level="2" min_level="40" cost="67000"/><!--Elven Spirit-->
+		<skill id="45108" level="2" min_level="40" cost="80000"/><!--Magic Barrier-->
+		<skill id="1068" level="3" min_level="40" cost="80000"/><!--Might-->
+		<skill id="288" level="1" min_level="40" cost="67000"/><!--Guard Stance-->
+		<skill id="102" level="2" min_level="40" cost="67000"/><!--Entangle-->
+		<skill id="45104" level="3" min_level="40" cost="80000"/><!--Acumen-->
+		<skill id="123" level="1" min_level="40" cost="67000"/><!--Spirit Barrier-->
+		<skill id="400" level="1" min_level="40" cost="67000"><!--Tribunal-->
+			<blocked_skills>
+				<skill id="3"/><!--???-->
+				<skill id="56"/><!--???-->
+				<skill id="16"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="45111" level="2" min_level="40" cost="80000"/><!--Haste-->
+		<skill id="45109" level="3" min_level="40" cost="80000"/><!--Focus-->
+		<skill id="197" level="1" min_level="40" cost="67000"/><!--Honor-->
+		<skill id="45113" level="3" min_level="40" cost="80000"/><!--Clarity-->
+		<skill id="45110" level="3" min_level="40" cost="80000"/><!--Death Whisper-->
+		<skill id="1040" level="3" min_level="40" cost="80000"/><!--Shield-->
+		<skill id="70" level="10" min_level="40" cost="67000"/><!--Emergency Rescue-->
+		<skill id="28" level="16" min_level="41" cost="78000"/><!--Aggression-->
+		<skill id="18" level="4" min_level="41" cost="78000"/><!--Aggression Aura-->
+		<skill id="70" level="11" min_level="41" cost="78000"/><!--Emergency Rescue-->
+		<skill id="28" level="17" min_level="42" cost="78000"/><!--Aggression-->
+		<skill id="18" level="5" min_level="42" cost="78000"/><!--Aggression Aura-->
+		<skill id="70" level="12" min_level="42" cost="78000"/><!--Emergency Rescue-->
+		<skill id="28" level="18" min_level="43" cost="78000"/><!--Aggression-->
+		<skill id="18" level="6" min_level="43" cost="78000"/><!--Aggression Aura-->
+		<skill id="102" level="3" min_level="43" cost="78000"/><!--Entangle-->
+		<skill id="400" level="2" min_level="43" cost="78000"/><!--Tribunal-->
+		<skill id="191" level="2" min_level="43" cost="78000"/><!--Focus Mind-->
+		<skill id="70" level="13" min_level="43" cost="78000"/><!--Emergency Rescue-->
+		<skill id="28" level="19" min_level="44" cost="120000"/><!--Aggression-->
+		<skill id="18" level="7" min_level="44" cost="120000"/><!--Aggression Aura-->
+		<skill id="70" level="14" min_level="44" cost="120000"/><!--Emergency Rescue-->
+		<skill id="28" level="20" min_level="45" cost="120000"/><!--Aggression-->
+		<skill id="18" level="8" min_level="45" cost="120000"/><!--Aggression Aura-->
+		<skill id="123" level="2" min_level="45" cost="120000"/><!--Spirit Barrier-->
+		<skill id="1800" level="1" min_level="45"/><!--Pirate Transformation-->
+		<skill id="70" level="15" min_level="45" cost="120000"/><!--Emergency Rescue-->
+		<skill id="110" level="2" min_level="46" cost="120000"/><!--Ultimate Defense-->
+		<skill id="28" level="21" min_level="46" cost="120000"/><!--Aggression-->
+		<skill id="18" level="9" min_level="46" cost="120000"/><!--Aggression Aura-->
+		<skill id="102" level="4" min_level="46" cost="120000"/><!--Entangle-->
+		<skill id="400" level="3" min_level="46" cost="120000"/><!--Tribunal-->
+		<skill id="70" level="16" min_level="46" cost="120000"/><!--Emergency Rescue-->
+		<skill id="28" level="22" min_level="47" cost="160000"/><!--Aggression-->
+		<skill id="18" level="10" min_level="47" cost="160000"/><!--Aggression Aura-->
+		<skill id="70" level="17" min_level="47" cost="160000"/><!--Emergency Rescue-->
+		<skill id="28" level="23" min_level="48" cost="160000"/><!--Aggression-->
+		<skill id="18" level="11" min_level="48" cost="160000"/><!--Aggression Aura-->
+		<skill id="70" level="18" min_level="48" cost="160000"/><!--Emergency Rescue-->
+		<skill id="28" level="24" min_level="49" cost="160000"/><!--Aggression-->
+		<skill id="18" level="12" min_level="49" cost="160000"/><!--Aggression Aura-->
+		<skill id="102" level="5" min_level="49" cost="160000"/><!--Entangle-->
+		<skill id="400" level="4" min_level="49" cost="160000"/><!--Tribunal-->
+		<skill id="191" level="3" min_level="49" cost="160000"/><!--Focus Mind-->
+		<skill id="70" level="19" min_level="49" cost="160000"/><!--Emergency Rescue-->
+		<skill id="28" level="25" min_level="50" cost="230000"/><!--Aggression-->
+		<skill id="18" level="13" min_level="50" cost="230000"/><!--Aggression Aura-->
+		<skill id="45176" level="2" min_level="50" cost="300000"><!--HP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="45177" level="2" min_level="50" cost="300000"><!--MP Recovery-->
+			<required_items>
+				<item id="57" count="1000000"/><!--Adena-->
+			</required_items>
+		</skill>
+		<skill id="53010" level="1" min_level="50" cost="230000"/><!--Knight's Protection-->
+		<skill id="402" level="1" min_level="50" cost="230000"/><!--Shackle-->
+		<skill id="288" level="2" min_level="50" cost="230000"/><!--Guard Stance-->
+		<skill id="230" level="2" min_level="50" cost="230000"/><!--Sprint-->
+		<skill id="70" level="20" min_level="50" cost="230000"/><!--Emergency Rescue-->
+		<skill id="28" level="26" min_level="51" cost="230000"/><!--Aggression-->
+		<skill id="18" level="14" min_level="51" cost="230000"/><!--Aggression Aura-->
+		<skill id="70" level="21" min_level="51" cost="230000"/><!--Emergency Rescue-->
+		<skill id="28" level="27" min_level="52" cost="230000"/><!--Aggression-->
+		<skill id="18" level="15" min_level="52" cost="230000"/><!--Aggression Aura-->
+		<skill id="1405" level="1" min_level="52" cost="230000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8618;95495" count="1"/><!--Buff Expansion Book Lv. 1-->
+			</required_items>
+		</skill>
+		<skill id="153" level="4" min_level="52" cost="230000"/><!--Shield Mastery-->
+		<skill id="102" level="6" min_level="52" cost="230000"/><!--Entangle-->
+		<skill id="291" level="1" min_level="52" cost="230000"/><!--Final Fortress-->
+		<skill id="400" level="5" min_level="52" cost="230000"/><!--Tribunal-->
+		<skill id="316" level="1" min_level="52" cost="230000"/><!--Aegis-->
+		<skill id="70" level="22" min_level="52" cost="230000"/><!--Emergency Rescue-->
+		<skill id="28" level="28" min_level="53" cost="320000"/><!--Aggression-->
+		<skill id="18" level="16" min_level="53" cost="320000"/><!--Aggression Aura-->
+		<skill id="70" level="23" min_level="53" cost="320000"/><!--Emergency Rescue-->
+		<skill id="28" level="29" min_level="54" cost="320000"/><!--Aggression-->
+		<skill id="18" level="17" min_level="54" cost="320000"/><!--Aggression Aura-->
+		<skill id="70" level="24" min_level="54" cost="320000"/><!--Emergency Rescue-->
+		<skill id="28" level="30" min_level="55" cost="320000"/><!--Aggression-->
+		<skill id="18" level="18" min_level="55" cost="320000"/><!--Aggression Aura-->
+		<skill id="402" level="2" min_level="55" cost="320000"/><!--Shackle-->
+		<skill id="404" level="1" min_level="55" cost="320000"/><!--Mass Shackling-->
+		<skill id="102" level="7" min_level="55" cost="320000"/><!--Entangle-->
+		<skill id="291" level="2" min_level="55" cost="320000"/><!--Final Fortress-->
+		<skill id="107" level="1" min_level="55" cost="320000"/><!--Holy Aura-->
+		<skill id="123" level="3" min_level="55" cost="320000"/><!--Spirit Barrier-->
+		<skill id="400" level="6" min_level="55" cost="320000"/><!--Tribunal-->
+		<skill id="191" level="4" min_level="55" cost="320000"/><!--Focus Mind-->
+		<skill id="70" level="25" min_level="55" cost="320000"/><!--Emergency Rescue-->
+		<skill id="28" level="31" min_level="56" cost="450000"/><!--Aggression-->
+		<skill id="18" level="19" min_level="56" cost="450000"/><!--Aggression Aura-->
+		<skill id="70" level="26" min_level="56" cost="450000"/><!--Emergency Rescue-->
+		<skill id="28" level="32" min_level="57" cost="450000"/><!--Aggression-->
+		<skill id="18" level="20" min_level="57" cost="450000"/><!--Aggression Aura-->
+		<skill id="70" level="27" min_level="57" cost="450000"/><!--Emergency Rescue-->
+		<skill id="28" level="33" min_level="58" cost="450000"/><!--Aggression-->
+		<skill id="18" level="21" min_level="58" cost="450000"/><!--Aggression Aura-->
+		<skill id="82" level="3" min_level="58" cost="450000"/><!--Majesty-->
+		<skill id="102" level="8" min_level="58" cost="450000"/><!--Entangle-->
+		<skill id="291" level="3" min_level="58" cost="450000"/><!--Final Fortress-->
+		<skill id="400" level="7" min_level="58" cost="450000"/><!--Tribunal-->
+		<skill id="70" level="28" min_level="58" cost="450000"/><!--Emergency Rescue-->
+		<skill id="28" level="34" min_level="59" cost="650000"/><!--Aggression-->
+		<skill id="18" level="22" min_level="59" cost="650000"/><!--Aggression Aura-->
+		<skill id="70" level="29" min_level="59" cost="650000"/><!--Emergency Rescue-->
+		<skill id="28" level="35" min_level="60" cost="650000"/><!--Aggression-->
+		<skill id="18" level="23" min_level="60" cost="650000"/><!--Aggression Aura-->
+		<skill id="21" level="3" min_level="60" cost="650000"/><!--Recovery-->
+		<skill id="61" level="3" min_level="60" cost="650000"/><!--Elven Spirit-->
+		<skill id="53010" level="2" min_level="60" cost="650000"/><!--Knight's Protection-->
+		<skill id="402" level="3" min_level="60" cost="650000"/><!--Shackle-->
+		<skill id="404" level="2" min_level="60" cost="650000"/><!--Mass Shackling-->
+		<skill id="288" level="3" min_level="60" cost="650000"/><!--Guard Stance-->
+		<skill id="102" level="9" min_level="60" cost="650000"/><!--Entangle-->
+		<skill id="291" level="4" min_level="60" cost="650000"/><!--Final Fortress-->
+		<skill id="107" level="2" min_level="60" cost="650000"/><!--Holy Aura-->
+		<skill id="77" level="3" min_level="60" cost="650000"/><!--Ability to Attack-->
+		<skill id="1801" level="1" min_level="60"/><!--Dark Assassin Transformation-->
+		<skill id="400" level="8" min_level="60" cost="650000"/><!--Tribunal-->
+		<skill id="916" level="1" min_level="60" cost="650000"/><!--Shield Deflect Magic-->
+		<skill id="70" level="30" min_level="60" cost="650000"/><!--Emergency Rescue-->
+		<skill id="28" level="36" min_level="61" cost="650000"/><!--Aggression-->
+		<skill id="18" level="24" min_level="61" cost="650000"/><!--Aggression Aura-->
+		<skill id="1405" level="2" min_level="61" cost="650000"><!--Divine Inspiration-->
+			<required_items>
+				<item id="8619;95496" count="1"/><!--Buff Expansion Book Lv. 2-->
+			</required_items>
+		</skill>
+		<skill id="70" level="31" min_level="61" cost="650000"/><!--Emergency Rescue-->
+		<skill id="28" level="37" min_level="62" cost="810000"/><!--Aggression-->
+		<skill id="18" level="25" min_level="62" cost="810000"/><!--Aggression Aura-->
+		<skill id="402" level="4" min_level="62" cost="810000"/><!--Shackle-->
+		<skill id="102" level="10" min_level="62" cost="810000"/><!--Entangle-->
+		<skill id="291" level="5" min_level="62" cost="810000"/><!--Final Fortress-->
+		<skill id="107" level="3" min_level="62" cost="810000"/><!--Holy Aura-->
+		<skill id="400" level="9" min_level="62" cost="810000"/><!--Tribunal-->
+		<skill id="70" level="32" min_level="62" cost="810000"/><!--Emergency Rescue-->
+		<skill id="28" level="38" min_level="63" cost="810000"/><!--Aggression-->
+		<skill id="18" level="26" min_level="63" cost="810000"/><!--Aggression Aura-->
+		<skill id="70" level="33" min_level="63" cost="810000"/><!--Emergency Rescue-->
+		<skill id="28" level="39" min_level="64" cost="1000000"/><!--Aggression-->
+		<skill id="18" level="27" min_level="64" cost="1000000"/><!--Aggression Aura-->
+		<skill id="402" level="5" min_level="64" cost="1000000"/><!--Shackle-->
+		<skill id="102" level="11" min_level="64" cost="1000000"/><!--Entangle-->
+		<skill id="291" level="6" min_level="64" cost="1000000"/><!--Final Fortress-->
+		<skill id="107" level="4" min_level="64" cost="1000000"/><!--Holy Aura-->
+		<skill id="400" level="10" min_level="64" cost="1000000"/><!--Tribunal-->
+		<skill id="191" level="5" min_level="64" cost="1000000"/><!--Focus Mind-->
+		<skill id="916" level="2" min_level="64" cost="1000000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="1" min_level="64" cost="1000000"/><!--Ultimate Shield-->
+		<skill id="70" level="34" min_level="64" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="28" level="40" min_level="65" cost="1000000"/><!--Aggression-->
+		<skill id="18" level="28" min_level="65" cost="1000000"/><!--Aggression Aura-->
+		<skill id="53010" level="3" min_level="65" cost="1000000"/><!--Knight's Protection-->
+		<skill id="404" level="3" min_level="65" cost="1000000"/><!--Mass Shackling-->
+		<skill id="70" level="35" min_level="65" cost="1000000"/><!--Emergency Rescue-->
+		<skill id="28" level="41" min_level="66" cost="1100000"/><!--Aggression-->
+		<skill id="18" level="29" min_level="66" cost="1100000"/><!--Aggression Aura-->
+		<skill id="402" level="6" min_level="66" cost="1100000"/><!--Shackle-->
+		<skill id="102" level="12" min_level="66" cost="1100000"/><!--Entangle-->
+		<skill id="291" level="7" min_level="66" cost="1100000"/><!--Final Fortress-->
+		<skill id="107" level="5" min_level="66" cost="1100000"/><!--Holy Aura-->
+		<skill id="400" level="11" min_level="66" cost="1100000"/><!--Tribunal-->
+		<skill id="352" level="1" min_level="66" cost="1100000"/><!--Shield Bash-->
+		<skill id="322" level="2" min_level="66" cost="1100000"/><!--Ultimate Shield-->
+		<skill id="70" level="36" min_level="66" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="28" level="42" min_level="67" cost="1100000"/><!--Aggression-->
+		<skill id="18" level="30" min_level="67" cost="1100000"/><!--Aggression Aura-->
+		<skill id="70" level="37" min_level="67" cost="1100000"/><!--Emergency Rescue-->
+		<skill id="28" level="43" min_level="68" cost="1600000"/><!--Aggression-->
+		<skill id="18" level="31" min_level="68" cost="1600000"/><!--Aggression Aura-->
+		<skill id="402" level="7" min_level="68" cost="1600000"/><!--Shackle-->
+		<skill id="102" level="13" min_level="68" cost="1600000"/><!--Entangle-->
+		<skill id="291" level="8" min_level="68" cost="1600000"/><!--Final Fortress-->
+		<skill id="107" level="6" min_level="68" cost="1600000"/><!--Holy Aura-->
+		<skill id="400" level="12" min_level="68" cost="1600000"/><!--Tribunal-->
+		<skill id="352" level="2" min_level="68" cost="1600000"/><!--Shield Bash-->
+		<skill id="916" level="3" min_level="68" cost="1600000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="3" min_level="68" cost="1600000"/><!--Ultimate Shield-->
+		<skill id="70" level="38" min_level="68" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="28" level="44" min_level="69" cost="1600000"/><!--Aggression-->
+		<skill id="18" level="32" min_level="69" cost="1600000"/><!--Aggression Aura-->
+		<skill id="70" level="39" min_level="69" cost="1600000"/><!--Emergency Rescue-->
+		<skill id="28" level="45" min_level="70" cost="1900000"/><!--Aggression-->
+		<skill id="18" level="33" min_level="70" cost="1900000"/><!--Aggression Aura-->
+		<skill id="53010" level="4" min_level="70" cost="1900000"/><!--Knight's Protection-->
+		<skill id="402" level="8" min_level="70" cost="1900000"/><!--Shackle-->
+		<skill id="404" level="4" min_level="70" cost="1900000"/><!--Mass Shackling-->
+		<skill id="288" level="4" min_level="70" cost="1900000"/><!--Guard Stance-->
+		<skill id="102" level="14" min_level="70" cost="1900000"/><!--Entangle-->
+		<skill id="291" level="9" min_level="70" cost="1900000"/><!--Final Fortress-->
+		<skill id="107" level="7" min_level="70" cost="1900000"/><!--Holy Aura-->
+		<skill id="1802" level="1" min_level="70"/><!--White Assassin Transformation-->
+		<skill id="400" level="13" min_level="70" cost="1900000"/><!--Tribunal-->
+		<skill id="352" level="3" min_level="70" cost="1900000"/><!--Shield Bash-->
+		<skill id="322" level="4" min_level="70" cost="1900000"/><!--Ultimate Shield-->
+		<skill id="70" level="40" min_level="70" cost="1900000"/><!--Emergency Rescue-->
+		<skill id="28" level="46" min_level="71" cost="1900000"/><!--Aggression-->
+		<skill id="18" level="34" min_level="71" cost="1900000"/><!--Aggression Aura-->
+		<skill id="70" level="41" min_level="71" cost="1900000"/><!--Emergency Rescue-->
+		<skill id="28" level="47" min_level="72" cost="2200000"/><!--Aggression-->
+		<skill id="18" level="35" min_level="72" cost="2200000"/><!--Aggression Aura-->
+		<skill id="402" level="9" min_level="72" cost="2200000"/><!--Shackle-->
+		<skill id="102" level="15" min_level="72" cost="2200000"/><!--Entangle-->
+		<skill id="291" level="10" min_level="72" cost="2200000"/><!--Final Fortress-->
+		<skill id="107" level="8" min_level="72" cost="2200000"/><!--Holy Aura-->
+		<skill id="400" level="14" min_level="72" cost="2200000"/><!--Tribunal-->
+		<skill id="352" level="4" min_level="72" cost="2200000"/><!--Shield Bash-->
+		<skill id="191" level="6" min_level="72" cost="2200000"/><!--Focus Mind-->
+		<skill id="916" level="4" min_level="72" cost="2200000"/><!--Shield Deflect Magic-->
+		<skill id="322" level="5" min_level="72" cost="2200000"/><!--Ultimate Shield-->
+		<skill id="70" level="42" min_level="72" cost="2200000"/><!--Emergency Rescue-->
+		<skill id="28" level="48" min_level="73" cost="2200000"/><!--Aggression-->
+		<skill id="18" level="36" min_level="73" cost="2200000"/><!--Aggression Aura-->
+		<skill id="404" level="5" min_level="73" cost="2200000"/><!--Mass Shackling-->
+		<skill id="70" level="43" min_level="73" cost="2200000"/><!--Emergency Rescue-->
+		<skill id="28" level="49" min_level="74" cost="2200000"/><!--Aggression-->
+		<skill id="18" level="37" min_level="74" cost="2200000"/><!--Aggression Aura-->
+		<skill id="402" level="10" min_level="74" cost="2200000"/><!--Shackle-->
+		<skill id="102" level="16" min_level="74" cost="2200000"/><!--Entangle-->
+		<skill id="291" level="11" min_level="74" cost="2200000"/><!--Final Fortress-->
+		<skill id="107" level="9" min_level="74" cost="2200000"/><!--Holy Aura-->
+		<skill id="400" level="15" min_level="74" cost="2200000"/><!--Tribunal-->
+		<skill id="352" level="5" min_level="74" cost="2200000"/><!--Shield Bash-->
+		<skill id="322" level="6" min_level="74" cost="2200000"/><!--Ultimate Shield-->
+		<skill id="70" level="44" min_level="74" cost="2200000"/><!--Emergency Rescue-->
+		<skill id="53010" level="5" min_level="75" cost="2200000"/><!--Knight's Protection-->
+		<skill id="70" level="45" min_level="75" cost="2200000"/><!--Emergency Rescue-->
+		<skill id="335" level="1" min_level="41" cost="78000"/><!--Fortitude-->
+		<skill id="335" level="2" min_level="65" cost="1000000"/><!--Fortitude-->
+		<skill id="47292" level="1" min_level="42" cost="78000"/><!--Life's Return-->
+		<skill id="47296" level="1" min_level="40" cost="67000"/><!--Knight's Magic Resistance-->
+		<skill id="47296" level="2" min_level="60" cost="650000"/><!--Knight's Magic Resistance-->
+		<skill id="47297" level="1" min_level="40" cost="67000"><!--Knight's Armor Mastery-->
+			<blocked_skills>
+				<skill id="232"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47297" level="2" min_level="50" cost="230000"/><!--Knight's Armor Mastery-->
+		<skill id="47297" level="3" min_level="60" cost="650000"/><!--Knight's Armor Mastery-->
+		<skill id="47297" level="4" min_level="70" cost="1900000"/><!--Knight's Armor Mastery-->
+		<skill id="47298" level="1" min_level="40" cost="67000"><!--Knight's Weapon Mastery-->
+			<blocked_skills>
+				<skill id="217"/><!--???-->
+			</blocked_skills>
+		</skill>
+		<skill id="47298" level="2" min_level="50" cost="230000"/><!--Knight's Weapon Mastery-->
+		<skill id="47298" level="3" min_level="60" cost="650000"/><!--Knight's Weapon Mastery-->
+		<skill id="47298" level="4" min_level="70" cost="1900000"/><!--Knight's Weapon Mastery-->
+		<skill id="47284" level="2" min_level="40" cost="67000"/><!--Slowdown-->
+		<skill id="47284" level="3" min_level="60" cost="650000"/><!--Slowdown-->
+	</normal_skill_tree>
+</list>

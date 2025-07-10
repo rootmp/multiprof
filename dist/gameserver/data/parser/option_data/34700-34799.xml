@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "option_data.dtd">
+<list>
+	<option_data id="34700">
+		<!--Debuff/ Anomaly Resistance +2%-->
+	</option_data>
+	<option_data id="34701">
+		<!--Debuff/ Anomaly Resistance +3%-->
+	</option_data>
+	<option_data id="34702">
+		<!--Debuff/ Anomaly Resistance +4%-->
+	</option_data>
+	<option_data id="34703">
+		<!--Debuff/ Anomaly Resistance +5%-->
+	</option_data>
+	<option_data id="34704">
+		<!--Debuff/ Anomaly Resistance +6%-->
+	</option_data>
+	<option_data id="34705">
+		<!--Debuff/ Anomaly Resistance +7%-->
+	</option_data>
+	<option_data id="34706">
+		<!--Debuff/ Anomaly Resistance +8%-->
+	</option_data>
+	<option_data id="34707">
+		<!--Debuff/ Anomaly Resistance +9%-->
+	</option_data>
+	<option_data id="34708">
+		<!--Debuff/ Anomaly Resistance +10%-->
+	</option_data>
+	<option_data id="34709">
+		<!--P./ M. Evasion +1-->
+	</option_data>
+	<option_data id="34710">
+		<!--P./ M. Evasion +1-->
+	</option_data>
+	<option_data id="34711">
+		<!--P./ M. Evasion +1-->
+	</option_data>
+	<option_data id="34712">
+		<!--P./ M. Evasion +1-->
+	</option_data>
+	<option_data id="34713">
+		<!--P./ M. Evasion +1-->
+	</option_data>
+	<option_data id="34714">
+		<!--P./ M. Evasion +1-->
+	</option_data>
+	<option_data id="34715">
+		<!--P./ M. Evasion +1-->
+	</option_data>
+	<option_data id="34716">
+		<!--P./ M. Evasion +1-->
+	</option_data>
+	<option_data id="34717">
+		<!--P./ M. Evasion +2-->
+	</option_data>
+	<option_data id="34718">
+		<!--P./ M. Evasion +2-->
+	</option_data>
+	<option_data id="34719">
+		<!--P./ M. Evasion +2-->
+	</option_data>
+	<option_data id="34720">
+		<!--P./ M. Evasion +2-->
+	</option_data>
+	<option_data id="34721">
+		<!--P./ M. Evasion +2-->
+	</option_data>
+	<option_data id="34722">
+		<!--P./ M. Evasion +2-->
+	</option_data>
+	<option_data id="34723">
+		<!--P./ M. Evasion +2-->
+	</option_data>
+	<option_data id="34724">
+		<!--P./ M. Evasion +3-->
+	</option_data>
+	<option_data id="34725">
+		<!--P./ M. Evasion +3-->
+	</option_data>
+	<option_data id="34726">
+		<!--P./ M. Evasion +3-->
+	</option_data>
+	<option_data id="34727">
+		<!--P./ M. Evasion +4-->
+	</option_data>
+	<option_data id="34728">
+		<!--P./ M. Evasion +5-->
+	</option_data>
+	<option_data id="34729">
+		<!--Skill Critical Damage +15-->
+	</option_data>
+	<option_data id="34730">
+		<!--Skill Critical Damage +21-->
+	</option_data>
+	<option_data id="34731">
+		<!--Skill Critical Damage +27-->
+	</option_data>
+	<option_data id="34732">
+		<!--Skill Critical Damage +33-->
+	</option_data>
+	<option_data id="34733">
+		<!--Skill Critical Damage +40-->
+	</option_data>
+	<option_data id="34734">
+		<!--Skill Critical Damage +47-->
+	</option_data>
+	<option_data id="34735">
+		<!--Skill Critical Damage +54-->
+	</option_data>
+	<option_data id="34736">
+		<!--Skill Critical Damage +61-->
+	</option_data>
+	<option_data id="34737">
+		<!--Skill Critical Damage +69-->
+	</option_data>
+	<option_data id="34738">
+		<!--Skill Critical Damage +77-->
+	</option_data>
+	<option_data id="34739">
+		<!--Skill Critical Damage +85-->
+	</option_data>
+	<option_data id="34740">
+		<!--Skill Critical Damage +94-->
+	</option_data>
+	<option_data id="34741">
+		<!--Skill Critical Damage +103-->
+	</option_data>
+	<option_data id="34742">
+		<!--Skill Critical Damage +112-->
+	</option_data>
+	<option_data id="34743">
+		<!--Skill Critical Damage +122-->
+	</option_data>
+	<option_data id="34744">
+		<!--Skill Critical Damage +149-->
+	</option_data>
+	<option_data id="34745">
+		<!--Skill Critical Damage +203-->
+	</option_data>
+	<option_data id="34746">
+		<!--Skill Critical Damage +233-->
+	</option_data>
+	<option_data id="34747">
+		<!--Skill Critical Damage +250-->
+	</option_data>
+	<option_data id="34748">
+		<!--Skill Critical Damage +300-->
+	</option_data>
+	<option_data id="34749" />
+	<option_data id="34750" />
+	<option_data id="34751" />
+	<option_data id="34752" />
+	<option_data id="34753" />
+	<option_data id="34754" />
+	<option_data id="34755" />
+	<option_data id="34756" />
+	<option_data id="34757" />
+	<option_data id="34758" />
+	<option_data id="34759" />
+	<option_data id="34760" />
+	<option_data id="34761" />
+	<option_data id="34762" />
+	<option_data id="34763" />
+	<option_data id="34764" />
+	<option_data id="34765" />
+	<option_data id="34766" />
+	<option_data id="34767" />
+	<option_data id="34768" />
+	<option_data id="34769" />
+	<option_data id="34770" />
+	<option_data id="34771" />
+	<option_data id="34772" />
+	<option_data id="34773" />
+	<option_data id="34774" />
+	<option_data id="34775" />
+	<option_data id="34776" />
+	<option_data id="34777" />
+	<option_data id="34778" />
+	<option_data id="34779" />
+	<option_data id="34780" />
+	<option_data id="34781" />
+	<option_data id="34782">
+		<!--Max HP +10-->
+	</option_data>
+	<option_data id="34783">
+		<!--Max HP +15-->
+	</option_data>
+	<option_data id="34784">
+		<!--Max HP +20-->
+	</option_data>
+	<option_data id="34785">
+		<!--Max HP +25-->
+	</option_data>
+	<option_data id="34786">
+		<!--Max HP +30-->
+	</option_data>
+	<option_data id="34787">
+		<!--Max HP +35-->
+	</option_data>
+	<option_data id="34788">
+		<!--Max HP +40-->
+	</option_data>
+	<option_data id="34789">
+		<!--Max HP +45-->
+	</option_data>
+	<option_data id="34790">
+		<!--Max HP +50-->
+	</option_data>
+	<option_data id="34791">
+		<!--Max HP +55-->
+	</option_data>
+	<option_data id="34792">
+		<!--Max HP +60-->
+	</option_data>
+	<option_data id="34793">
+		<!--Max HP +65-->
+	</option_data>
+	<option_data id="34794">
+		<!--Max HP +70-->
+	</option_data>
+	<option_data id="34795">
+		<!--Max HP +75-->
+	</option_data>
+	<option_data id="34796">
+		<!--Max HP +80-->
+	</option_data>
+	<option_data id="34797">
+		<!--Max HP +100-->
+	</option_data>
+	<option_data id="34798">
+		<!--Max HP +110-->
+	</option_data>
+	<option_data id="34799">
+		<!--Max HP +120-->
+	</option_data>
+</list>

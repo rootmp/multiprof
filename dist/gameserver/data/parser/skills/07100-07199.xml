@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="7122" levels="1" name="Raid Boss (Lv. 80)">
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="7123" levels="1" name="Raid Boss (Lv. 80)">
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="7124" levels="1" name="Raid Boss (Lv. 80)">
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="7125" levels="1" name="Raid Boss (Lv. 80)">
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="P"/>
+	</skill>
+	<skill id="7126" levels="3" name="Master's Blessing - Holy Weapon">
+		<set name="effectPoint" value="243"/>
+		<set name="icon" value="icon.skill1043"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="7127" levels="3" name="Master's Blessing - Shock Resistance">
+		<set name="effectPoint" value="646"/>
+		<set name="icon" value="icon.skill1259"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="7129" levels="4" name="Triple Sonic Slash">
+		<table name="#mp_consume">159 165 168 170</table>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1800"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="7130" levels="4" name="Sonic Blaster">
+		<table name="#mp_consume">80 83 84 85</table>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="15000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1900"/>
+		<set name="mp_consume" value="#mp_consume"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+</list>

@@ -1,0 +1,1652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93763" y="238961" z="-3432" h="15616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92085" y="239075" z="-3648" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-93558" y="241249" z="-3424" h="20812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92305" y="240050" z="-3416" h="25352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92864" y="241168" z="-3432" h="26349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93461" y="239957" z="-3392" h="22753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92383" y="241370" z="-3448" h="37931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92270" y="241718" z="-3488" h="10968" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94357" y="240093" z="-3312" h="2058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93801" y="241393" z="-3416" h="60749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93753" y="239725" z="-3392" h="59680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93032" y="241028" z="-3424" h="10672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93056" y="240171" z="-3408" h="36992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93075" y="241780" z="-3432" h="34742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92696" y="240642" z="-3416" h="53320" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94104" y="239980" z="-3344" h="57193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92862" y="240920" z="-3424" h="17665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92205" y="241211" z="-3448" h="12333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93589" y="240878" z="-3384" h="31565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93015" y="241149" z="-3424" h="59936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92539" y="241395" z="-3440" h="20797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93172" y="239619" z="-3432" h="20292" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93996" y="240001" z="-3352" h="16970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93028" y="241035" z="-3424" h="48394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92561" y="241816" z="-3448" h="5611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92666" y="241161" z="-3432" h="31470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93157" y="241593" z="-3432" h="19705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93185" y="241639" z="-3432" h="54361" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92264" y="240434" z="-3416" h="29964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92829" y="241619" z="-3432" h="36749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92600" y="241901" z="-3448" h="25521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93709" y="242993" z="-3488" h="50307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92481" y="242332" z="-3520" h="42809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93600" y="242757" z="-3472" h="24472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-93993" y="243225" z="-3528" h="60331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-92840" y="242645" z="-3512" h="17034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93633" y="243934" z="-3576" h="20433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93608" y="242483" z="-3456" h="31443" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93690" y="242153" z="-3456" h="36332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93902" y="242782" z="-3496" h="34372" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92594" y="242861" z="-3536" h="50875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93210" y="243030" z="-3496" h="25352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-91791" y="239275" z="-3584" h="65161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91829" y="239380" z="-3544" h="4318" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92093" y="239588" z="-3480" h="46442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-90338" y="237394" z="-3680" h="55496" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-90126" y="237883" z="-3640" h="40113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-90436" y="237538" z="-3656" h="49587" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-90306" y="237879" z="-3624" h="20018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90327" y="238064" z="-3624" h="52827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90378" y="237959" z="-3616" h="55605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90144" y="238016" z="-3632" h="15796" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-91010" y="237536" z="-3608" h="56427" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90094" y="240812" z="-3544" h="45018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90679" y="240419" z="-3496" h="26209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90353" y="241275" z="-3528" h="49379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90868" y="240922" z="-3496" h="65102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90892" y="240043" z="-3480" h="43342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-90728" y="241561" z="-3536" h="2747" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90757" y="240584" z="-3480" h="5136" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92248" y="240552" z="-3416" h="48323" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91581" y="239846" z="-3456" h="32620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91768" y="239554" z="-3480" h="34499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90671" y="240355" z="-3496" h="6049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92033" y="241576" z="-3480" h="42085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-91179" y="239870" z="-3488" h="43093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91344" y="239533" z="-3544" h="34723" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-90358" y="241733" z="-3552" h="48700" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91056" y="241500" z="-3520" h="20108" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90742" y="242378" z="-3544" h="57041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-91313" y="241978" z="-3536" h="16269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90626" y="241822" z="-3552" h="25661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90746" y="242207" z="-3552" h="48023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-91465" y="242278" z="-3544" h="46084" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90438" y="243261" z="-3520" h="50786" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91422" y="242641" z="-3544" h="30236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92096" y="242815" z="-3552" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-92001" y="243651" z="-3464" h="12499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-91227" y="243117" z="-3496" h="16230" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-91624" y="243519" z="-3472" h="44062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-91792" y="243131" z="-3520" h="49945" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91652" y="243294" z="-3496" h="37310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91429" y="242993" z="-3512" h="40394" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91974" y="242904" z="-3544" h="37256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91762" y="243728" z="-3464" h="14324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89013" y="237472" z="-3664" h="59642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89613" y="238283" z="-3648" h="41415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-88802" y="237565" z="-3656" h="40961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88922" y="237696" z="-3672" h="54473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-88834" y="238154" z="-3632" h="13812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89720" y="237702" z="-3680" h="8018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89488" y="237922" z="-3664" h="20604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88857" y="238056" z="-3640" h="58803" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-88670" y="238343" z="-3608" h="11158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90180" y="237953" z="-3632" h="18981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88469" y="238144" z="-3624" h="29894" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-88745" y="237540" z="-3656" h="45487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89692" y="237522" z="-3688" h="43020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-90189" y="237928" z="-3640" h="35217" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89705" y="237501" z="-3688" h="51778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89061" y="238032" z="-3648" h="58290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89741" y="237480" z="-3688" h="38293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89169" y="238281" z="-3632" h="23630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-88776" y="237553" z="-3656" h="50875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-90249" y="237551" z="-3664" h="60989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89213" y="237499" z="-3672" h="56964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89600" y="237878" z="-3664" h="18940" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89281" y="238172" z="-3640" h="13027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88739" y="237618" z="-3664" h="58954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88603" y="237727" z="-3664" h="34228" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89787" y="237466" z="-3688" h="20128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89527" y="238125" z="-3648" h="18442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89444" y="237892" z="-3664" h="34512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88883" y="237979" z="-3640" h="32000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89031" y="237551" z="-3664" h="46755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-89442" y="241321" z="-3552" h="23600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89406" y="240359" z="-3592" h="57557" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89227" y="240978" z="-3552" h="16932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-89906" y="240640" z="-3552" h="8672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89435" y="241205" z="-3552" h="3424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89913" y="240644" z="-3552" h="42080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-89705" y="240932" z="-3552" h="38212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89112" y="240682" z="-3560" h="57345" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89579" y="240169" z="-3600" h="17078" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89707" y="240443" z="-3568" h="41777" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89481" y="239925" z="-3616" h="8829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88917" y="240070" z="-3592" h="39028" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-89360" y="241227" z="-3552" h="52842" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89081" y="240874" z="-3552" h="453" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89578" y="240920" z="-3552" h="10314" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89777" y="240103" z="-3592" h="31613" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88539" y="239803" z="-3600" h="27353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88035" y="240761" z="-3584" h="2814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-88825" y="241534" z="-3560" h="7014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88290" y="241152" z="-3568" h="108" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88289" y="240565" z="-3592" h="18938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88614" y="240266" z="-3608" h="29411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-89675" y="239856" z="-3640" h="29484" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88738" y="239818" z="-3608" h="22753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88019" y="240328" z="-3592" h="1722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89047" y="240168" z="-3600" h="61087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-88986" y="240512" z="-3584" h="113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88478" y="240159" z="-3608" h="53080" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88657" y="239897" z="-3600" h="39568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89346" y="240170" z="-3600" h="35982" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-88836" y="240040" z="-3592" h="754" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88830" y="240596" z="-3584" h="20909" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88508" y="240260" z="-3616" h="4835" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88798" y="239985" z="-3600" h="21088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88735" y="240425" z="-3608" h="6970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88559" y="240210" z="-3608" h="43864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-88689" y="239928" z="-3600" h="53331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89816" y="240245" z="-3584" h="3809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-89323" y="240102" z="-3600" h="6101" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-89227" y="240487" z="-3592" h="29705" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89001" y="240196" z="-3600" h="63741" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88079" y="240782" z="-3584" h="54289" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88025" y="240605" z="-3592" h="63903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88589" y="240386" z="-3600" h="31559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88619" y="241075" z="-3544" h="23439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-87952" y="240938" z="-3584" h="13966" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-89266" y="239831" z="-3624" h="64632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88363" y="241995" z="-3560" h="11933" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88515" y="242218" z="-3560" h="11888" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-89667" y="242259" z="-3552" h="14324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89902" y="242133" z="-3568" h="5414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88503" y="241576" z="-3576" h="4691" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88738" y="241973" z="-3560" h="61899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89044" y="242005" z="-3576" h="43993" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88453" y="242297" z="-3560" h="50450" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-88455" y="242461" z="-3568" h="14052" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88660" y="241996" z="-3560" h="2500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88331" y="242229" z="-3560" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-88702" y="242464" z="-3568" h="63521" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96179" y="240693" z="-3288" h="34492" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96051" y="240613" z="-3272" h="37310" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95777" y="240465" z="-3264" h="651" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95934" y="241118" z="-3304" h="33213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96231" y="240949" z="-3304" h="13722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-95060" y="240209" z="-3264" h="8191" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94602" y="240865" z="-3280" h="21416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96068" y="240672" z="-3280" h="37362" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95643" y="241406" z="-3312" h="11840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94550" y="242909" z="-3544" h="29365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-95977" y="242780" z="-3488" h="46603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94234" y="243432" z="-3544" h="12198" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94640" y="242120" z="-3528" h="45478" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-95152" y="243779" z="-3544" h="10121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96304" y="242825" z="-3480" h="37279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94525" y="242092" z="-3536" h="11888" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95949" y="243025" z="-3520" h="29894" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95115" y="242776" z="-3544" h="20125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96009" y="241833" z="-3368" h="11305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95911" y="243754" z="-3544" h="24498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95771" y="241844" z="-3360" h="14965" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95577" y="242831" z="-3528" h="17680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96318" y="243066" z="-3496" h="48523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94955" y="243482" z="-3544" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-94545" y="242230" z="-3544" h="46196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94211" y="242481" z="-3528" h="31117" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94929" y="242364" z="-3544" h="19151" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95063" y="242550" z="-3544" h="6334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94829" y="241736" z="-3448" h="11351" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94323" y="241765" z="-3464" h="21592" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94591" y="243015" z="-3544" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94131" y="242071" z="-3504" h="23953" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94247" y="242472" z="-3528" h="64382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94870" y="244049" z="-3544" h="20535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20131" /> <!-- Orc Soldier -->
+		<point x="-95924" y="244263" z="-3568" h="22862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95987" y="243744" z="-3544" h="13237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-95646" y="244487" z="-3600" h="64612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95007" y="243772" z="-3544" h="51917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95379" y="244605" z="-3600" h="17925" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94831" y="244983" z="-3608" h="34742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95264" y="244577" z="-3600" h="1403" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94883" y="244969" z="-3600" h="23124" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95249" y="244421" z="-3592" h="17586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94596" y="243838" z="-3544" h="50734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92551" y="244627" z="-3504" h="60749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92627" y="244378" z="-3480" h="28062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93574" y="243732" z="-3576" h="29307" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-92336" y="244610" z="-3504" h="63304" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92611" y="244121" z="-3472" h="63603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-94344" y="243870" z="-3552" h="37787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94025" y="244211" z="-3592" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-93949" y="244985" z="-3560" h="7623" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-92992" y="244647" z="-3512" h="52366" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93018" y="244613" z="-3512" h="57349" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-92966" y="244463" z="-3496" h="12205" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93334" y="244845" z="-3544" h="19739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-93304" y="245101" z="-3560" h="47035" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-92485" y="244575" z="-3488" h="41602" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-93070" y="244768" z="-3528" h="20698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93189" y="244484" z="-3520" h="29149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92297" y="244870" z="-3544" h="63903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92895" y="244577" z="-3496" h="52644" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-93229" y="244852" z="-3536" h="57029" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-93067" y="244609" z="-3520" h="45477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-93743" y="244568" z="-3568" h="27512" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-94243" y="244088" z="-3568" h="43020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93873" y="245170" z="-3560" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-91670" y="244606" z="-3512" h="27779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91893" y="244656" z="-3504" h="43141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91762" y="244161" z="-3472" h="47430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-91198" y="243750" z="-3480" h="22706" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91176" y="244566" z="-3528" h="30105" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91920" y="244053" z="-3464" h="51708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91451" y="244301" z="-3488" h="48142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91325" y="244769" z="-3560" h="14753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91366" y="244647" z="-3528" h="46519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90838" y="243746" z="-3504" h="64669" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-92276" y="244374" z="-3472" h="19666" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91165" y="243943" z="-3480" h="9498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-91973" y="244819" z="-3520" h="2996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90909" y="243778" z="-3488" h="7246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90768" y="244323" z="-3552" h="56226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90884" y="243976" z="-3504" h="12658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90744" y="244286" z="-3576" h="7783" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90833" y="244015" z="-3520" h="41282" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-91043" y="243821" z="-3480" h="37808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90748" y="243998" z="-3536" h="19971" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91296" y="243865" z="-3472" h="22210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91592" y="243768" z="-3464" h="39157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-90638" y="243826" z="-3520" h="6825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96995" y="239823" z="-3360" h="23630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97547" y="240312" z="-3504" h="21088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97528" y="239936" z="-3456" h="23489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97626" y="240721" z="-3512" h="63139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97815" y="239922" z="-3528" h="8732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97023" y="240015" z="-3368" h="6011" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97931" y="240270" z="-3584" h="55605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97602" y="240738" z="-3512" h="61087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97321" y="240198" z="-3440" h="20568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97968" y="240164" z="-3576" h="38630" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96434" y="240043" z="-3304" h="13302" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97003" y="239926" z="-3360" h="31470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96378" y="240023" z="-3288" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97948" y="240278" z="-3584" h="62929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96502" y="241441" z="-3360" h="22210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96680" y="242264" z="-3440" h="38872" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97252" y="241803" z="-3496" h="47306" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96589" y="242906" z="-3480" h="53603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-98074" y="241761" z="-3592" h="34066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-96901" y="243331" z="-3560" h="7700" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96781" y="243427" z="-3560" h="17679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96608" y="242172" z="-3416" h="15498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-98083" y="242255" z="-3616" h="18806" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97943" y="242723" z="-3624" h="35746" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97197" y="242793" z="-3528" h="32620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96401" y="242825" z="-3480" h="48935" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96901" y="243742" z="-3576" h="21122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97355" y="242861" z="-3544" h="2397" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97881" y="241428" z="-3552" h="57957" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-98125" y="241973" z="-3600" h="20108" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97382" y="242783" z="-3544" h="57851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96819" y="241994" z="-3456" h="38902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-98148" y="242099" z="-3608" h="19739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-98175" y="243111" z="-3624" h="20021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96279" y="244780" z="-3568" h="35582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97008" y="244255" z="-3552" h="6102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97262" y="244168" z="-3552" h="19186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97765" y="243900" z="-3560" h="36125" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97340" y="243801" z="-3560" h="54085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96991" y="243739" z="-3576" h="20833" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97892" y="239479" z="-3496" h="54899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96847" y="239073" z="-3296" h="25352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97235" y="238792" z="-3352" h="29025" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96395" y="238532" z="-3288" h="46755" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20131" /> <!-- Orc Soldier -->
+		<point x="-97763" y="238589" z="-3440" h="36511" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-97492" y="239124" z="-3408" h="17269" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-97539" y="238734" z="-3408" h="24098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96874" y="238947" z="-3296" h="50235" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96414" y="239351" z="-3256" h="43579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-96819" y="239639" z="-3328" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-95972" y="239183" z="-3264" h="53603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95634" y="238989" z="-3288" h="58110" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-95383" y="239523" z="-3272" h="32416" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-96353" y="239182" z="-3256" h="6799" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-95116" y="237434" z="-3400" h="50543" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20131" /> <!-- Orc Soldier -->
+		<point x="-95595" y="237541" z="-3400" h="43954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94723" y="238524" z="-3432" h="4771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-95192" y="238766" z="-3384" h="43342" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93646" y="235707" z="-3688" h="56391" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92785" y="236214" z="-3704" h="8707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93507" y="235657" z="-3696" h="43927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92587" y="236247" z="-3704" h="27882" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20130" /> <!-- Orc	-->
+		<point x="-93775" y="235518" z="-3672" h="38810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93172" y="235691" z="-3688" h="43864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92978" y="236025" z="-3688" h="12577" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92260" y="236348" z="-3704" h="43020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93539" y="235449" z="-3688" h="20924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-92809" y="235917" z="-3688" h="32328" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93158" y="235488" z="-3688" h="29411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93377" y="235827" z="-3688" h="9137" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93141" y="236055" z="-3688" h="36992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93130" y="235789" z="-3688" h="31907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20093" /> <!-- Orc Warrior -->
+		<point x="-96212" y="235213" z="-3632" h="56895" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20326" /> <!-- Goblin Scout -->
+		<point x="-96527" y="233391" z="-3616" h="20298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20006" /> <!-- Orc Archer -->
+		<point x="-96173" y="234782" z="-3648" h="38098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93795" y="235231" z="-3672" h="22210" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93804" y="235058" z="-3672" h="40552" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-93826" y="235373" z="-3664" h="17586" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-94054" y="235308" z="-3664" h="30558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93256" y="235286" z="-3688" h="1439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93925" y="235002" z="-3672" h="36435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-93607" y="235198" z="-3680" h="59974" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-91671" y="236158" z="-3704" h="39095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-90868" y="236702" z="-3672" h="59046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-92022" y="236744" z="-3664" h="25661" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-91680" y="237171" z="-3616" h="28717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90962" y="237469" z="-3616" h="52193" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-91867" y="237070" z="-3616" h="29503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91313" y="236927" z="-3648" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-91905" y="236288" z="-3712" h="58415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-91066" y="236658" z="-3680" h="31470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89457" y="237332" z="-3680" h="24731" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89336" y="237411" z="-3672" h="22020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89425" y="237292" z="-3672" h="11158" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-89900" y="237148" z="-3680" h="45184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-89969" y="237262" z="-3688" h="23798" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90155" y="237075" z="-3688" h="54692" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-90105" y="237602" z="-3672" h="13259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-86400" y="239056" z="-3664" h="31891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-86218" y="239137" z="-3680" h="51211" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-86079" y="238969" z="-3672" h="20433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-86375" y="239496" z="-3672" h="14860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-86782" y="238842" z="-3640" h="2942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-87291" y="238787" z="-3616" h="9930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-86376" y="238413" z="-3648" h="39829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-87178" y="238783" z="-3616" h="27111" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-87356" y="238758" z="-3608" h="45614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-86321" y="238369" z="-3648" h="22942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-86186" y="238164" z="-3648" h="60346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-86958" y="238023" z="-3624" h="42267" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-87407" y="238328" z="-3616" h="46435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-87848" y="238016" z="-3616" h="32109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-87390" y="238181" z="-3616" h="6192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-86400" y="238198" z="-3648" h="23095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-86642" y="238393" z="-3640" h="55535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-87718" y="238324" z="-3616" h="12959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20442" /> <!-- Elder Wolf -->
+		<point x="-87487" y="237947" z="-3616" h="33356" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-87921" y="241348" z="-3608" h="38776" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-87819" y="240367" z="-3592" h="30239" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-85877" y="240227" z="-3720" h="18593" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-87854" y="241249" z="-3600" h="19529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88003" y="240366" z="-3592" h="4128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-87362" y="240657" z="-3592" h="32309" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-87960" y="240085" z="-3592" h="5161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-87010" y="241431" z="-3672" h="16154" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-88113" y="240768" z="-3584" h="33001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-87107" y="241027" z="-3624" h="33990" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88248" y="240454" z="-3600" h="46598" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-86241" y="239588" z="-3680" h="47949" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88029" y="240177" z="-3592" h="5611" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20120" /> <!-- Wolf -->
+		<point x="-88061" y="240738" z="-3584" h="14468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-88141" y="240542" z="-3592" h="39986" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-86800" y="241190" z="-3664" h="53584" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-87309" y="240614" z="-3600" h="62818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-87815" y="240595" z="-3592" h="44062" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-87226" y="241406" z="-3624" h="44452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-87545" y="241079" z="-3608" h="9717" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-87955" y="241380" z="-3600" h="41712" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-87879" y="240460" z="-3600" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-87299" y="240549" z="-3600" h="679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20481" /> <!-- Bearded Keltir -->
+		<point x="-88109" y="240679" z="-3584" h="63610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20544" /> <!-- Elder Keltir -->
+		<point x="-87741" y="240308" z="-3600" h="48023" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-97822" y="241032" z="-3560" h="33677" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-96526" y="245093" z="-3584" h="30040" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30311" /> <!-- Sir Collin Windawood -->
+		<point x="-100332" y="238019" z="-3568" h="36864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30733" /> <!-- Guard -->
+		<point x="-99843" y="237523" z="-3568" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-93254" y="234382" z="-3736" h="5395" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31032" /> <!-- Guard -->
+		<point x="-93088" y="234504" z="-3736" h="35753" />
+	</spawn>
+</list>

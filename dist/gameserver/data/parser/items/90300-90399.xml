@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="90300" name="Hunter Tarantula's Venom - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="type" value="QUEST"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90301" name="Plunder Tarantula's Kidney Stone - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="type" value="QUEST"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90302" name="New Cleaning Tool's Supply List - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90303" name="Bat Bristle - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="type" value="QUEST"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90304" name="Trimden Web - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="type" value="QUEST"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90305" name="Kerope Werewolf's Twig Charm - Not Available" add_name="Not Available">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="private_warehouseable" value="false"/>
+		<set name="type" value="QUEST"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<armor id="90306" name="Warrior's Armor" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t33_u_i00"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="8970"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="45"/>
+		</for>
+	</armor>
+	<armor id="90307" name="Warrior's Gaiters" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t33_l_i00"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4020"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="29"/>
+		</for>
+	</armor>
+	<armor id="90308" name="Medium's Tunic" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t58_u_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="2080"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="27"/>
+			<add stat="maxMp" order="0x60" value="60"/>
+		</for>
+	</armor>
+	<armor id="90309" name="Medium's Stockings" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.armor_t58_l_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1030"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="17"/>
+			<add stat="maxMp" order="0x60" value="38"/>
+		</for>
+	</armor>
+	<etcitem id="90310" name="Newbie MP Replenishing Potion" add_name="Sealed">
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="icon" value="icon.etc_lesser_potion_blue_i00"/>
+		<set name="weight" value="5"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="is_olympiad_can_use" value="false"/>
+		<set name="type" value="POTION"/>
+		<skills>
+			<skill id="39257" level="1"/>
+		</skills>
+	</etcitem>
+	<armor id="90311" name="Brooch Lv. 1">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="BROOCH"/>
+		</equip>
+		<skills>
+			<skill id="13656" level="1"/>	<!--Lv. 1 Brooch-->
+			<skill id="13661" level="1"/>	<!--Lv. 1 Brooch - Additional Effect-->
+		</skills>
+	</armor>
+	<armor id="90312" name="Brooch Lv. 2">
+		<set name="freightable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_brooch_lavianrose_i01"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="BROOCH"/>
+		</equip>
+		<skills>
+			<skill id="13657" level="1"/>	<!--Lv. 2 Brooch-->
+			<skill id="13661" level="2"/>	<!--Lv. 2 Brooch - Additional Effect-->
+		</skills>
+	</armor>
+	<armor id="90313" name="Topaz Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17701" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90314" name="Topaz Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17701" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90315" name="Topaz Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17701" level="3"/>
+		</skills>
+	</armor>
+	<armor id="90316" name="Topaz Lv. 4" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17701" level="4"/>
+		</skills>
+	</armor>
+	<armor id="90317" name="Topaz Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_topaz_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17701" level="5"/>
+		</skills>
+	</armor>
+	<armor id="90318" name="Garnet Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_garnet"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="18566" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90319" name="Garnet Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_garnet"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="18566" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90320" name="Garnet Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_garnet"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="18566" level="3"/>
+		</skills>
+	</armor>
+	<armor id="90321" name="Garnet Lv. 4" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_garnet"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="18566" level="4"/>
+			<skill id="18567" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90322" name="Garnet Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_garnet"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="18566" level="5"/>
+			<skill id="18567" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90323" name="Jade Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_jade_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17707" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90324" name="Jade Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_jade_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17707" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90325" name="Jade Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_jade_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17707" level="3"/>
+		</skills>
+	</armor>
+	<armor id="90326" name="Jade Lv. 4" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_jade_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17707" level="4"/>
+		</skills>
+	</armor>
+	<armor id="90327" name="Jade Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_jade_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17707" level="5"/>
+		</skills>
+	</armor>
+	<armor id="90328" name="Ruby Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_ruby_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17817" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90329" name="Ruby Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_ruby_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17817" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90330" name="Ruby Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_ruby_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17817" level="3"/>
+		</skills>
+	</armor>
+	<armor id="90331" name="Ruby Lv. 4" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_ruby_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17817" level="4"/>
+		</skills>
+	</armor>
+	<armor id="90332" name="Ruby Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_ruby_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17817" level="5"/>
+		</skills>
+	</armor>
+	<armor id="90333" name="Sapphire Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_sapphire_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17821" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90334" name="Sapphire Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_sapphire_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17821" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90335" name="Sapphire Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_sapphire_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17821" level="3"/>
+		</skills>
+	</armor>
+	<armor id="90336" name="Sapphire Lv. 4" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_sapphire_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17821" level="4"/>
+		</skills>
+	</armor>
+	<armor id="90337" name="Sapphire Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_sapphire_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17821" level="5"/>
+		</skills>
+	</armor>
+	<armor id="90338" name="Diamond Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_diamond_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17708" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90339" name="Diamond Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_diamond_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17708" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90340" name="Diamond Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_diamond_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17708" level="3"/>
+		</skills>
+	</armor>
+	<armor id="90341" name="Diamond Lv. 4" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_diamond_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17708" level="4"/>
+		</skills>
+	</armor>
+	<armor id="90342" name="Diamond Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_diamond_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17708" level="5"/>
+		</skills>
+	</armor>
+	<armor id="90343" name="Pearl Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_pearl_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17709" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90344" name="Pearl Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_pearl_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17709" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90345" name="Pearl Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_pearl_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17709" level="3"/>
+		</skills>
+	</armor>
+	<armor id="90346" name="Pearl Lv. 4" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_pearl_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17709" level="4"/>
+		</skills>
+	</armor>
+	<armor id="90347" name="Pearl Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_pearl_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17709" level="5"/>
+		</skills>
+	</armor>
+	<armor id="90353" name="Vital Stone Lv. 1" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_vital"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17706" level="1"/>
+		</skills>
+	</armor>
+	<armor id="90354" name="Vital Stone Lv. 2" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_vital"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17706" level="2"/>
+		</skills>
+	</armor>
+	<armor id="90355" name="Vital Stone Lv. 3" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_vital"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17706" level="3"/>
+		</skills>
+	</armor>
+	<armor id="90356" name="Vital Stone Lv. 4" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_vital"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17706" level="4"/>
+		</skills>
+	</armor>
+	<armor id="90357" name="Vital Stone Lv. 5" add_name="Sealed">
+		<set name="freightable" value="true"/>
+		<set name="mailable" value="false"/>
+		<set name="clan_warehouseable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_bm_jewel_vital"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="5"/>
+		<equip>
+			<slot id="JEWEL"/>
+		</equip>
+		<skills>
+			<skill id="17706" level="5"/>
+		</skills>
+	</armor>
+	<etcitem id="90358" name="Shining Ore">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewel_piece"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+	</etcitem>
+	<etcitem id="90359" name="Fortune Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_shhadai"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90367" count="1" chance="0.01"/><!--Vital Stone Fortune Box--><!--TODO: Check chance-->
+			<create_item id="90366" count="1" chance="0.01"/><!--Pearl Fortune Box--><!--TODO: Check chance-->
+			<create_item id="90365" count="1" chance="0.01"/><!--Diamond Fortune Box--><!--TODO: Check chance-->
+			<create_item id="90364" count="1" chance="0.01"/><!--Sapphire Fortune Box--><!--TODO: Check chance-->
+			<create_item id="90363" count="1" chance="0.01"/><!--Ruby Fortune Box--><!--TODO: Check chance-->
+			<create_item id="90362" count="1" chance="0.01"/><!--Jade Fortune Box--><!--TODO: Check chance-->
+			<create_item id="90361" count="1" chance="0.01"/><!--Garnet Fortune Box--><!--TODO: Check chance-->
+			<create_item id="90360" count="1" chance="0.01"/><!--Topaz Fortune Box--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90360" name="Topaz Fortune Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_topaz_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90313" count="1" chance="0.01"/><!--Topaz Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90314" count="1" chance="0.01"/><!--Topaz Lv. 2--><!--TODO: Check chance-->
+			<create_item id="90315" count="1" chance="0.01"/><!--Topaz Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90316" count="1" chance="0.01"/><!--Topaz Lv. 4--><!--TODO: Check chance-->
+			<create_item id="90317" count="1" chance="0.01"/><!--Topaz Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90361" name="Garnet Fortune Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_garnet_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90318" count="1" chance="0.01"/><!--Garnet Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90319" count="1" chance="0.01"/><!--Garnet Lv. 2--><!--TODO: Check chance-->
+			<create_item id="90320" count="1" chance="0.01"/><!--Garnet Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90321" count="1" chance="0.01"/><!--Garnet Lv. 4--><!--TODO: Check chance-->
+			<create_item id="90322" count="1" chance="0.01"/><!--Garnet Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90362" name="Jade Fortune Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_jade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90323" count="1" chance="0.01"/><!--Jade Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90324" count="1" chance="0.01"/><!--Jade Lv. 2--><!--TODO: Check chance-->
+			<create_item id="90325" count="1" chance="0.01"/><!--Jade Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90326" count="1" chance="0.01"/><!--Jade Lv. 4--><!--TODO: Check chance-->
+			<create_item id="90327" count="1" chance="0.01"/><!--Jade Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90363" name="Ruby Fortune Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_ruby_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90328" count="1" chance="0.01"/><!--Ruby Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90329" count="1" chance="0.01"/><!--Ruby Lv. 2--><!--TODO: Check chance-->
+			<create_item id="90330" count="1" chance="0.01"/><!--Ruby Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90331" count="1" chance="0.01"/><!--Ruby Lv. 4--><!--TODO: Check chance-->
+			<create_item id="90332" count="1" chance="0.01"/><!--Ruby Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90364" name="Sapphire Fortune Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_sapphire_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90333" count="1" chance="0.01"/><!--Sapphire Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90334" count="1" chance="0.01"/><!--Sapphire Lv. 2--><!--TODO: Check chance-->
+			<create_item id="90335" count="1" chance="0.01"/><!--Sapphire Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90336" count="1" chance="0.01"/><!--Sapphire Lv. 4--><!--TODO: Check chance-->
+			<create_item id="90337" count="1" chance="0.01"/><!--Sapphire Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90365" name="Diamond Fortune Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_diamond_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90338" count="1" chance="0.01"/><!--Diamond Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90339" count="1" chance="0.01"/><!--Diamond Lv. 2--><!--TODO: Check chance-->
+			<create_item id="90340" count="1" chance="0.01"/><!--Diamond Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90341" count="1" chance="0.01"/><!--Diamond Lv. 4--><!--TODO: Check chance-->
+			<create_item id="90342" count="1" chance="0.01"/><!--Diamond Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90366" name="Pearl Fortune Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_pearl_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90343" count="1" chance="0.01"/><!--Pearl Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90344" count="1" chance="0.01"/><!--Pearl Lv. 2--><!--TODO: Check chance-->
+			<create_item id="90345" count="1" chance="0.01"/><!--Pearl Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90346" count="1" chance="0.01"/><!--Pearl Lv. 4--><!--TODO: Check chance-->
+			<create_item id="90347" count="1" chance="0.01"/><!--Pearl Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90367" name="Vital Stone Fortune Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_vital_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90353" count="1" chance="0.01"/><!--Vital Stone Lv. 1--><!--TODO: Check chance-->
+			<create_item id="90354" count="1" chance="0.01"/><!--Vital Stone Lv. 2--><!--TODO: Check chance-->
+			<create_item id="90355" count="1" chance="0.01"/><!--Vital Stone Lv. 3--><!--TODO: Check chance-->
+			<create_item id="90356" count="1" chance="0.01"/><!--Vital Stone Lv. 4--><!--TODO: Check chance-->
+			<create_item id="90357" count="1" chance="0.01"/><!--Vital Stone Lv. 5--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90368" name="Shiny Jewelry Box">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_main_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<create_items>
+			<create_item id="90376" count="1" chance="0.01"/><!--Vital Stone Chest--><!--TODO: Check chance-->
+			<create_item id="90375" count="1" chance="0.01"/><!--Pearl Chest--><!--TODO: Check chance-->
+			<create_item id="90374" count="1" chance="0.01"/><!--Diamond Chest--><!--TODO: Check chance-->
+			<create_item id="90373" count="1" chance="0.01"/><!--Sapphire Chest--><!--TODO: Check chance-->
+			<create_item id="90372" count="1" chance="0.01"/><!--Ruby Chest--><!--TODO: Check chance-->
+			<create_item id="90371" count="1" chance="0.01"/><!--Jade Chest--><!--TODO: Check chance-->
+			<create_item id="90370" count="1" chance="0.01"/><!--Garnet Chest--><!--TODO: Check chance-->
+			<create_item id="90369" count="1" chance="0.01"/><!--Topaz Chest--><!--TODO: Check chance-->
+		</create_items>
+	</etcitem>
+	<etcitem id="90369" name="Topaz Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_topaz_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90313" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90370" name="Garnet Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_garnet_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90318" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90371" name="Jade Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_jade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90323" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90372" name="Ruby Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_ruby_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90328" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90373" name="Sapphire Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_sapphire_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90333" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90374" name="Diamond Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_diamond_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90338" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90375" name="Pearl Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_pearl_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90343" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90376" name="Vital Stone Chest">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_vital_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90353" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90377" name="Topaz Jewelry Box Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_topaz_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90315" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90378" name="Topaz Jewelry Box Lv. 4">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_topaz_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90316" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90379" name="Topaz Jewelry Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_topaz_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90317" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90380" name="Garnet Jewelry Box Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_garnet_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90320" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90381" name="Garnet Jewelry Box Lv. 4">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_garnet_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90321" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90382" name="Garnet Jewelry Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_garnet_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90322" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90383" name="Jade Jewelry Box Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_jade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90325" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90384" name="Jade Jewelry Box Lv. 4">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_jade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90326" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90385" name="Jade Jewelry Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_jade_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90327" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90386" name="Ruby Jewelry Box Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_ruby_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90330" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90387" name="Ruby Jewelry Box Lv. 4">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_ruby_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90331" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90388" name="Ruby Jewelry Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_ruby_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90332" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90389" name="Sapphire Jewelry Box Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_sapphire_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90335" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90390" name="Sapphire Jewelry Box Lv. 4">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_sapphire_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90336" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90391" name="Sapphire Jewelry Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_sapphire_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90337" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90392" name="Diamond Jewelry Box Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_diamond_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90340" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90393" name="Diamond Jewelry Box Lv. 4">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_diamond_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90341" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90394" name="Diamond Jewelry Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_diamond_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90342" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90395" name="Pearl Jewelry Box Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_pearl_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90345" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90396" name="Pearl Jewelry Box Lv. 4">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_pearl_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90346" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90397" name="Pearl Jewelry Box Lv. 5">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_pearl_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90347" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90398" name="Vital Stone Jewelry Box Lv. 3">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_vital_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90355" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+	<etcitem id="90399" name="Vital Stone Jewelry Box Lv. 4">
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_bm_jewelbox_vital_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="EXTRACTABLE"/>
+		<capsuled_items>
+			<capsuled_item id="90356" min_count="1" max_count="1" chance="100.0"/>
+		</capsuled_items>
+	</etcitem>
+</list>

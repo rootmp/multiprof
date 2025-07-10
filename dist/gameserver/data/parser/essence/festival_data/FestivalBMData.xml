@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "FestivalBMData.dtd">
+<!-- AUTHOR: nexvill -->
+<list>
+	<!-- You must place not more than 3 items for locationId = 1 -->
+	<item id="93013" count="10" locationId="1" /> <!-- Queen's Ant Doll - Lv. 1 - 7 days -->
+	<item id="95300" count="10" locationId="1" /> <!-- Pa'agrian Sword - Imprint -->
+	<item id="95636" count="10" locationId="1" /> <!-- Clan Cloak -->
+	
+	<!-- For location id 2 and 3 you can place a lot of items, as you want -->
+	<item id="3031" count="1000" locationId="2" />
+	<item id="92479" count="10000" locationId="2" />
+	
+	<item id="92480" count="1000" locationId="3" />
+	<item id="92481" count="1000" locationId="3" />
+</list>

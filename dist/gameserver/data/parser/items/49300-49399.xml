@@ -1,0 +1,2402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="49300" name="Steel Sword - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="49"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49301" name="Steel Sword - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="49"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49302" name="Lesser Giant's Sword - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2020"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49303" name="Lesser Giant's Sword - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2020"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49304" name="Lesser Giant's Sword - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="2020"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="96"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49305" name="Dagger of Mana - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49306" name="Dagger of Mana - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49307" name="Dagger of Mana - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49308" name="Mystic Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="760"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49309" name="Mystic Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="760"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49310" name="Mystic Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="760"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49311" name="Conjurer's Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49312" name="Conjurer's Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49313" name="Conjurer's Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49314" name="Shillien Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49315" name="Shillien Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49316" name="Shillien Knife - Not Available" add_name="Not Available">
+		<set name="random_damage" value="5"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="DAGGER"/>
+		<set name="weight" value="750"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="45"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="433"/>
+			<set stat="basePCritRate" order="0x08" value="120"/>
+			<add stat="pAccCombat" order="0x10" value="-3.75"/>
+		</for>
+	</weapon>
+	<weapon id="49317" name="Sword of Magic - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="970"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49318" name="Sword of Magic - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="970"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49319" name="Sword of Magic - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="970"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49320" name="Scroll of Wisdom - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="610"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49321" name="Scroll of Wisdom - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="610"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49322" name="Scroll of Wisdom - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="610"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49323" name="Sword of Mystic - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="980"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49324" name="Sword of Mystic - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="980"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49325" name="Sword of Mystic - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="980"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49326" name="Sword of Occult - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="970"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49327" name="Sword of Occult - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="970"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49328" name="Sword of Occult - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="7160"/>
+		<set name="grind_point" value="358000"/>
+		<set name="price" value="716000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="970"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="43"/>
+			<add stat="mAtk" order="0x10" value="45"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49329" name="Branch of Life - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="620"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49330" name="Branch of Life - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="620"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49331" name="Branch of Life - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="620"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49332" name="Temptation of Abyss - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="610"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49333" name="Temptation of Abyss - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="610"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49334" name="Temptation of Abyss - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="610"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49335" name="Proof of Revenge - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49336" name="Proof of Revenge - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49337" name="Proof of Revenge - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49338" name="Divine Rod - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="570"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49339" name="Divine Rod - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="570"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49340" name="Divine Rod - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="570"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49341" name="Sage's Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="580"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49342" name="Sage's Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="580"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49343" name="Sage's Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="580"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49344" name="Tome of Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="570"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49345" name="Tome of Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="570"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49346" name="Tome of Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="9670"/>
+		<set name="grind_point" value="483500"/>
+		<set name="price" value="967000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="570"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="51"/>
+			<add stat="mAtk" order="0x10" value="52"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49347" name="Crucifix of Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="540"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49348" name="Crucifix of Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="540"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49349" name="Crucifix of Blood - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="540"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49350" name="Eye of Infinity - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49351" name="Eye of Infinity - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49352" name="Eye of Infinity - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49353" name="Blue Crystal Skull - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="15200"/>
+		<set name="grind_point" value="760000"/>
+		<set name="price" value="1520000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="67"/>
+			<add stat="mAtk" order="0x10" value="66"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49354" name="Blue Crystal Skull - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="15200"/>
+		<set name="grind_point" value="760000"/>
+		<set name="price" value="1520000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="67"/>
+			<add stat="mAtk" order="0x10" value="66"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49355" name="Blue Crystal Skull - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="15200"/>
+		<set name="grind_point" value="760000"/>
+		<set name="price" value="1520000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="67"/>
+			<add stat="mAtk" order="0x10" value="66"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49356" name="Demon's Fangs - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="15200"/>
+		<set name="grind_point" value="760000"/>
+		<set name="price" value="1520000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="67"/>
+			<add stat="mAtk" order="0x10" value="66"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49357" name="Demon's Fangs - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="15200"/>
+		<set name="grind_point" value="760000"/>
+		<set name="price" value="1520000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="67"/>
+			<add stat="mAtk" order="0x10" value="66"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49358" name="Demon's Fangs - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="15200"/>
+		<set name="grind_point" value="760000"/>
+		<set name="price" value="1520000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="67"/>
+			<add stat="mAtk" order="0x10" value="66"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49359" name="Vajra Wand - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49360" name="Vajra Wand - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49361" name="Vajra Wand - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49362" name="Ancient Reagent - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49363" name="Ancient Reagent - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49364" name="Ancient Reagent - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1600"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49365" name="Priest Sword - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49366" name="Priest Sword - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49367" name="Priest Sword - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="32"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49368" name="Sword of Magic Fog - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1450"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49369" name="Sword of Magic Fog - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1450"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49370" name="Sword of Magic Fog - Not Available" add_name="Not Available">
+		<set name="random_damage" value="10"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1450"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="49371" name="Mace of Prayer - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49372" name="Mace of Prayer - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49373" name="Mace of Prayer - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1300"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49374" name="Mace of Judgment - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1280"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49375" name="Mace of Judgment - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1280"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49376" name="Mace of Judgment - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1280"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49377" name="Mace of Miracle - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1250"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49378" name="Mace of Miracle - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1250"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49379" name="Mace of Miracle - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1250"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49380" name="Doom Hammer - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1200"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49381" name="Doom Hammer - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1200"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49382" name="Doom Hammer - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1200"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<set name="is_magic_weapon" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="41"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49383" name="Staff of Life - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1180"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49384" name="Staff of Life - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1180"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49385" name="Staff of Life - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="18000"/>
+		<set name="grind_point" value="900000"/>
+		<set name="price" value="1800000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1180"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="74"/>
+			<add stat="mAtk" order="0x10" value="72"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49386" name="Priest Mace - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49387" name="Priest Mace - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49388" name="Priest Mace - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1720"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="63"/>
+			<add stat="mAtk" order="0x10" value="63"/>
+			<set stat="basePAtkSpd" order="0x08" value="379"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49389" name="Goat Head Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1000"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="77"/>
+			<add stat="mAtk" order="0x10" value="69"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49390" name="Goat Head Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1000"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="77"/>
+			<add stat="mAtk" order="0x10" value="69"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49391" name="Goat Head Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="14000"/>
+		<set name="grind_point" value="700000"/>
+		<set name="price" value="1400000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1000"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="77"/>
+			<add stat="mAtk" order="0x10" value="69"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49392" name="Bone Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1060"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="39"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49393" name="Bone Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1060"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="39"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49394" name="Bone Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="4090"/>
+		<set name="grind_point" value="204500"/>
+		<set name="price" value="409000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1060"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="39"/>
+			<add stat="mAtk" order="0x10" value="39"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49395" name="Mystic Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1040"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="50"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49396" name="Mystic Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1040"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="50"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49397" name="Mystic Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1040"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="50"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49398" name="Conjuror's Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1030"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="50"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+	<weapon id="49399" name="Conjuror's Staff - Not Available" add_name="Not Available">
+		<set name="random_damage" value="19"/>
+		<set name="grind_commission" value="6440"/>
+		<set name="grind_point" value="322000"/>
+		<set name="price" value="644000"/>
+		<set name="variation_group_id" value="1"/>
+		<set name="crystal_type" value="D"/>
+		<set name="icon" value="icon.etc_ertheia2"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1030"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="19"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="50"/>
+			<add stat="mAtk" order="0x10" value="47"/>
+			<set stat="basePAtkSpd" order="0x08" value="325"/>
+			<set stat="basePCritRate" order="0x08" value="60"/>
+			<add stat="pAccCombat" order="0x10" value="8"/>
+		</for>
+	</weapon>
+</list>

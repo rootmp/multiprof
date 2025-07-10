@@ -1,0 +1,3152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182184" y="48892" z="-5872" h="57423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="181679" y="49206" z="-5856" h="53904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182865" y="48088" z="-5912" h="47699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="183069" y="48445" z="-5920" h="16507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="183987" y="47160" z="-5920" h="21067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183120" y="48955" z="-5928" h="64186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184140" y="47313" z="-5920" h="15959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182937" y="48882" z="-5920" h="52175" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183109" y="48633" z="-5920" h="26386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183773" y="47923" z="-5920" h="63677" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184134" y="48498" z="-5928" h="48979" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184179" y="48381" z="-5920" h="64056" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="184094" y="48591" z="-5944" h="3130" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="184120" y="48429" z="-5928" h="53989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183786" y="48886" z="-5960" h="28680" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183579" y="47772" z="-5920" h="30133" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182590" y="47627" z="-5848" h="3355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182737" y="47358" z="-5872" h="20804" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183249" y="47756" z="-5912" h="55865" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183160" y="47416" z="-5888" h="2365" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182606" y="47313" z="-5816" h="43014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185877" y="46593" z="-5920" h="36178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185299" y="47105" z="-5920" h="52127" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="185597" y="46789" z="-5920" h="48179" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186016" y="47054" z="-5928" h="13733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185857" y="48023" z="-5992" h="8442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184867" y="48910" z="-6024" h="53787" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185118" y="47116" z="-5920" h="47579" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186043" y="47259" z="-5944" h="49144" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="185339" y="48793" z="-6032" h="9330" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184810" y="47707" z="-5920" h="49128" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185653" y="47717" z="-5976" h="20645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186367" y="47972" z="-5976" h="38999" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="184889" y="48689" z="-6008" h="23656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186027" y="48412" z="-6000" h="16560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185662" y="48798" z="-6016" h="51337" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="186127" y="48823" z="-5960" h="45186" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185259" y="48018" z="-5984" h="29411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185151" y="47088" z="-5920" h="35672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185157" y="47180" z="-5920" h="2058" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183783" y="47925" z="-5920" h="19163" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185071" y="48400" z="-6000" h="55664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185801" y="46942" z="-5928" h="32711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183222" y="48088" z="-5920" h="35539" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="185959" y="48074" z="-5992" h="39658" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182508" y="48343" z="-5872" h="38359" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185428" y="48706" z="-6024" h="60231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184257" y="50171" z="-6008" h="13014" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182325" y="50044" z="-5920" h="44649" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="183962" y="50717" z="-5976" h="23286" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182100" y="50538" z="-5928" h="9550" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="183024" y="49952" z="-5960" h="10655" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="184002" y="51089" z="-5960" h="56696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184191" y="49225" z="-6008" h="32543" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184215" y="49537" z="-6032" h="44930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183396" y="49421" z="-5976" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182784" y="49437" z="-5944" h="1369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183861" y="49339" z="-5992" h="46556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183024" y="49618" z="-5952" h="27489" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="183209" y="49469" z="-5960" h="881" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183711" y="49112" z="-5976" h="34250" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="183067" y="50655" z="-6024" h="16146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="183415" y="50816" z="-6032" h="56929" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182629" y="50915" z="-6016" h="34684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182992" y="51014" z="-6040" h="16455" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182143" y="51188" z="-6000" h="39547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182834" y="50412" z="-5984" h="47955" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185816" y="49749" z="-5936" h="27694" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184673" y="50688" z="-5920" h="5631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185616" y="51084" z="-5920" h="10903" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186236" y="51029" z="-5904" h="7764" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186059" y="49978" z="-5920" h="55331" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="186228" y="50676" z="-5920" h="62334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185489" y="51096" z="-5920" h="29915" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="184763" y="50550" z="-5936" h="30977" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185807" y="50848" z="-5920" h="969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184667" y="50544" z="-5952" h="51811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185190" y="49567" z="-5984" h="18234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184686" y="50778" z="-5920" h="38877" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="186326" y="49851" z="-5920" h="4209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184384" y="50603" z="-5960" h="60944" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186279" y="49874" z="-5920" h="65472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184702" y="49141" z="-6032" h="40716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="186047" y="49293" z="-5952" h="29222" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185149" y="49633" z="-5984" h="12904" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186060" y="49723" z="-5928" h="8172" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185528" y="49278" z="-5984" h="51021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185012" y="49400" z="-6024" h="25071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="184992" y="49358" z="-6024" h="5582" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184281" y="49348" z="-6024" h="23458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187229" y="46192" z="-5848" h="10839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187076" y="46702" z="-5872" h="54826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186923" y="45733" z="-5784" h="36794" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187586" y="46141" z="-5856" h="17141" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187017" y="46210" z="-5856" h="2132" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="186933" y="46092" z="-5864" h="62474" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187073" y="46673" z="-5872" h="43686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186890" y="46148" z="-5864" h="51079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187010" y="46637" z="-5872" h="52414" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="188197" y="46775" z="-5912" h="61295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="188092" y="47104" z="-5920" h="33463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187085" y="47921" z="-5928" h="5279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="186413" y="47197" z="-5936" h="32461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186821" y="47869" z="-5944" h="55019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="188256" y="47347" z="-5920" h="33291" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187085" y="47615" z="-5936" h="36603" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186835" y="48967" z="-5920" h="64176" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187881" y="49060" z="-5856" h="6131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186752" y="47335" z="-5936" h="2902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186945" y="47123" z="-5912" h="63094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187145" y="47401" z="-5936" h="2612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="188498" y="47041" z="-5904" h="39547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187072" y="47358" z="-5928" h="15384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187492" y="47898" z="-5920" h="45184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="188000" y="47236" z="-5920" h="24698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187755" y="47817" z="-5920" h="4756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="188505" y="47713" z="-5904" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187946" y="48313" z="-5896" h="13828" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="188224" y="47953" z="-5904" h="55834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187719" y="47671" z="-5920" h="25810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="188131" y="48214" z="-5904" h="33463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="188150" y="48347" z="-5888" h="42064" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="188393" y="49515" z="-5824" h="20100" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="188341" y="50056" z="-5792" h="15441" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187845" y="50441" z="-5832" h="46827" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="188229" y="50180" z="-5792" h="60771" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186997" y="49312" z="-5920" h="39739" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="186942" y="50208" z="-5880" h="19085" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187877" y="50083" z="-5832" h="43996" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="188078" y="51193" z="-5800" h="11106" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187656" y="49820" z="-5856" h="63862" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186927" y="50138" z="-5880" h="62368" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187037" y="50531" z="-5872" h="16024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187205" y="50474" z="-5856" h="9846" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186918" y="49221" z="-5920" h="17432" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="186938" y="51206" z="-5848" h="11546" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187253" y="51084" z="-5816" h="17001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186471" y="49398" z="-5920" h="32767" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187232" y="49264" z="-5912" h="62682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186970" y="51189" z="-5848" h="45797" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187293" y="49025" z="-5912" h="36992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187820" y="49079" z="-5856" h="50192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187397" y="51159" z="-5816" h="20483" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183900" y="50936" z="-5984" h="12139" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186024" y="51033" z="-5912" h="9596" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185801" y="47044" z="-5928" h="36688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="187493" y="48482" z="-5920" h="20032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="185067" y="47371" z="-5920" h="41419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183936" y="47823" z="-5920" h="35002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="188393" y="49617" z="-5816" h="23099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184663" y="48145" z="-5944" h="59563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186279" y="50676" z="-5920" h="27988" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="183426" y="48700" z="-5928" h="40275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182286" y="49249" z="-5912" h="55890" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="188277" y="49705" z="-5824" h="18985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185026" y="49245" z="-6032" h="60790" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182559" y="48802" z="-5912" h="4713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185903" y="46891" z="-5920" h="13456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186891" y="50514" z="-5880" h="11703" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184395" y="47670" z="-5920" h="62529" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185918" y="49800" z="-5928" h="5426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187637" y="46651" z="-5880" h="51730" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184155" y="50732" z="-5968" h="36936" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187539" y="46993" z="-5912" h="42742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185020" y="48910" z="-6032" h="32839" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185179" y="49449" z="-6000" h="64018" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183273" y="48394" z="-5920" h="563" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185922" y="50880" z="-5920" h="16171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="188139" y="50252" z="-5808" h="35743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187025" y="46141" z="-5856" h="16970" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182306" y="52035" z="-6032" h="51960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182355" y="52287" z="-6000" h="2470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182237" y="52612" z="-5976" h="31384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184347" y="53443" z="-5776" h="39531" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182187" y="52615" z="-5976" h="12450" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182081" y="51644" z="-6048" h="34152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184011" y="52899" z="-5832" h="15001" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184287" y="52797" z="-5816" h="3875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="184251" y="52387" z="-5800" h="34044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183837" y="52501" z="-5856" h="45851" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183432" y="51364" z="-6000" h="13027" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182449" y="51565" z="-6056" h="35576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183018" y="51912" z="-5992" h="47756" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182999" y="51765" z="-6008" h="44917" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182534" y="51402" z="-6048" h="65522" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182714" y="52704" z="-5928" h="31625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182753" y="52329" z="-5968" h="31180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183027" y="52758" z="-5888" h="16737" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182113" y="53033" z="-5952" h="30297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184162" y="51648" z="-5920" h="59344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183740" y="51848" z="-5928" h="49616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183706" y="52026" z="-5912" h="37006" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="183699" y="52003" z="-5912" h="62897" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="183851" y="51633" z="-5936" h="26620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182970" y="52844" z="-5888" h="3150" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182645" y="52440" z="-5960" h="49631" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185928" y="51827" z="-5872" h="51256" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185137" y="51360" z="-5920" h="20975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185967" y="51512" z="-5888" h="37679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186132" y="52082" z="-5848" h="63520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185673" y="52031" z="-5856" h="8665" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185673" y="52490" z="-5792" h="8468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184213" y="53359" z="-5784" h="37503" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184718" y="51719" z="-5920" h="58405" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="185012" y="51880" z="-5904" h="63066" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="184525" y="51921" z="-5920" h="51393" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185383" y="52495" z="-5808" h="28013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185336" y="52530" z="-5808" h="11547" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184730" y="52957" z="-5736" h="46830" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="184640" y="52912" z="-5752" h="38838" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184786" y="53122" z="-5736" h="2215" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184172" y="52991" z="-5808" h="27309" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186489" y="52031" z="-5848" h="21698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186387" y="52082" z="-5848" h="33317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="186370" y="52336" z="-5840" h="24810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187002" y="51882" z="-5848" h="27275" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187976" y="51601" z="-5792" h="14554" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187246" y="51751" z="-5840" h="27542" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="187619" y="51499" z="-5816" h="58439" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187821" y="51439" z="-5800" h="54689" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="187360" y="52694" z="-5712" h="258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187153" y="52203" z="-5824" h="62981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187823" y="51601" z="-5800" h="43408" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187515" y="52082" z="-5816" h="43850" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187149" y="52272" z="-5808" h="13017" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187496" y="52092" z="-5816" h="43836" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187499" y="51947" z="-5824" h="38377" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187919" y="51406" z="-5784" h="41446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187874" y="51550" z="-5800" h="33608" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="188347" y="51852" z="-5736" h="29411" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="187958" y="52082" z="-5752" h="15708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186892" y="51290" z="-5848" h="63194" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="188124" y="51646" z="-5784" h="50535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="184395" y="47313" z="-5912" h="8249" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="186081" y="52082" z="-5848" h="10109" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="188226" y="49909" z="-5816" h="27254" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="185699" y="47503" z="-5960" h="59687" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186075" y="50778" z="-5920" h="14498" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="184882" y="51972" z="-5912" h="43462" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183492" y="50528" z="-6024" h="24981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="184516" y="49602" z="-6032" h="143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186122" y="50514" z="-5920" h="29907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="187493" y="47819" z="-5920" h="34206" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="185332" y="49806" z="-5960" h="50674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182916" y="48343" z="-5920" h="44" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="187513" y="51725" z="-5832" h="55504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185183" y="50688" z="-5920" h="63373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="185271" y="47626" z="-5944" h="31264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186183" y="52133" z="-5832" h="35891" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="188226" y="50521" z="-5784" h="7171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182565" y="49493" z="-5928" h="20814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="187767" y="50521" z="-5840" h="40660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="186081" y="51980" z="-5848" h="53472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186850" y="51980" z="-5848" h="63177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186107" y="47452" z="-5968" h="32155" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="184002" y="50732" z="-5976" h="43161" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="188175" y="49960" z="-5808" h="56924" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185616" y="50880" z="-5920" h="5456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185959" y="48482" z="-6000" h="27569" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184933" y="51207" z="-5920" h="3122" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="186336" y="51725" z="-5856" h="59098" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185275" y="48604" z="-6016" h="21967" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185230" y="49347" z="-6008" h="21918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="187095" y="50157" z="-5880" h="6535" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="187462" y="51776" z="-5832" h="2464" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184344" y="47211" z="-5912" h="42983" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183381" y="49136" z="-5944" h="6424" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181251" y="49120" z="-5768" h="35400" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="180639" y="49936" z="-5840" h="57960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181815" y="50656" z="-5928" h="62559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180531" y="50088" z="-5824" h="9466" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180644" y="50517" z="-5904" h="10363" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180939" y="51204" z="-5952" h="44143" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182158" y="49451" z="-5920" h="26213" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182151" y="50650" z="-5936" h="15465" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182046" y="49486" z="-5912" h="44930" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180743" y="50431" z="-5904" h="12348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182082" y="49453" z="-5912" h="33729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="181073" y="50665" z="-5928" h="25809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="180403" y="50200" z="-5848" h="7515" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181811" y="49302" z="-5888" h="1032" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180950" y="51287" z="-5952" h="57470" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180480" y="49884" z="-5776" h="58386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180817" y="49608" z="-5856" h="5442" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180588" y="50089" z="-5840" h="21822" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180843" y="49171" z="-5768" h="56383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181081" y="49210" z="-5808" h="47770" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180639" y="50038" z="-5848" h="46237" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180520" y="49911" z="-5792" h="12298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180588" y="49936" z="-5824" h="5561" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180503" y="49953" z="-5792" h="38208" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182328" y="51287" z="-6032" h="42207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181684" y="51136" z="-5992" h="39861" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="180682" y="52767" z="-6008" h="13149" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181333" y="52251" z="-6032" h="64620" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182039" y="52290" z="-6016" h="33456" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180631" y="52716" z="-6000" h="35031" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180473" y="51687" z="-5920" h="3021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180983" y="51228" z="-5952" h="5606" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180561" y="52826" z="-6000" h="32419" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181569" y="51352" z="-6008" h="19574" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181200" y="51008" z="-5952" h="21926" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182223" y="50656" z="-5936" h="10452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="181345" y="52818" z="-6008" h="45446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186336" y="52694" z="-5736" h="27452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185173" y="48655" z="-6016" h="34720" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186071" y="49902" z="-5920" h="28951" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185616" y="50676" z="-5920" h="22119" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181827" y="49045" z="-5856" h="30942" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183579" y="47262" z="-5912" h="33913" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181813" y="52366" z="-6024" h="46268" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185188" y="51717" z="-5904" h="7065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185188" y="51309" z="-5920" h="23145" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186081" y="51725" z="-5872" h="28538" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186260" y="47452" z="-5968" h="31740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182667" y="49391" z="-5936" h="7214" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183069" y="48394" z="-5920" h="27336" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185673" y="51776" z="-5880" h="63985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183528" y="47823" z="-5920" h="53878" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="186279" y="50727" z="-5920" h="36468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181345" y="51951" z="-6032" h="43428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="186183" y="52235" z="-5816" h="48625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="185485" y="49143" z="-6000" h="43295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182031" y="49453" z="-5912" h="32034" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="180316" y="51075" z="-5920" h="4695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185224" y="48247" z="-5992" h="28558" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182769" y="49238" z="-5928" h="38987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182763" y="48394" z="-5912" h="32238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="185622" y="51878" z="-5864" h="13187" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="181639" y="55527" z="-5840" h="8688" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182237" y="55189" z="-5856" h="25209" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180532" y="55087" z="-5912" h="51749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="181224" y="55405" z="-5856" h="28829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181268" y="55153" z="-5864" h="14346" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181838" y="54581" z="-5872" h="63696" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="181927" y="54731" z="-5864" h="6899" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181052" y="53787" z="-5944" h="30295" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180633" y="53574" z="-6008" h="28415" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181607" y="54567" z="-5888" h="23749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="181686" y="54567" z="-5880" h="62634" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180446" y="54159" z="-5984" h="14632" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180812" y="54068" z="-5960" h="64123" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180761" y="54048" z="-5960" h="15417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="180590" y="54728" z="-5928" h="58488" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180747" y="54715" z="-5928" h="37762" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="181287" y="53582" z="-5960" h="24818" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="181295" y="53545" z="-5960" h="3355" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181006" y="53527" z="-5984" h="59638" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181589" y="53427" z="-5952" h="58094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181776" y="53412" z="-5936" h="36989" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182095" y="53043" z="-5952" h="32820" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183517" y="54110" z="-5792" h="8360" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183997" y="53694" z="-5824" h="32683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="183829" y="53668" z="-5840" h="3356" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183976" y="54212" z="-5672" h="1681" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="184040" y="54205" z="-5680" h="32711" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="184009" y="54156" z="-5712" h="31811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183037" y="54758" z="-5840" h="40033" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182702" y="54548" z="-5832" h="19238" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183189" y="55138" z="-5792" h="61740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182602" y="54668" z="-5840" h="43780" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182304" y="54250" z="-5840" h="46438" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182180" y="53146" z="-5936" h="1231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182743" y="53295" z="-5864" h="26298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="183074" y="53996" z="-5832" h="25729" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183178" y="53532" z="-5848" h="14426" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="183320" y="53763" z="-5840" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182723" y="53341" z="-5864" h="58825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182553" y="54742" z="-5840" h="63670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="183496" y="51812" z="-5952" h="24284" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180480" y="50088" z="-5816" h="14892" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="185616" y="51543" z="-5904" h="64864" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181458" y="49942" z="-5920" h="57300" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="184822" y="50010" z="-5976" h="8246" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="185188" y="51972" z="-5888" h="54843" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="186030" y="51878" z="-5864" h="48954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="181340" y="51789" z="-6016" h="50093" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179894" y="51259" z="-5920" h="581" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179670" y="50899" z="-5880" h="31560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="179423" y="51137" z="-5912" h="31727" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="178815" y="52054" z="-5912" h="18236" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179347" y="51534" z="-5912" h="27963" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179760" y="52563" z="-5944" h="63020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179236" y="52530" z="-5928" h="146" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179644" y="52660" z="-5944" h="44683" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180214" y="51687" z="-5920" h="41197" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="179996" y="52406" z="-5944" h="29461" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179099" y="52205" z="-5920" h="12883" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180140" y="51212" z="-5920" h="15726" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="178896" y="53210" z="-5952" h="59607" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180015" y="52767" z="-5976" h="39479" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179632" y="51489" z="-5920" h="46816" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178197" y="51995" z="-5920" h="281" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178894" y="51800" z="-5880" h="16560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="178335" y="52391" z="-5920" h="16002" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178971" y="51750" z="-5896" h="4625" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="178876" y="51724" z="-5880" h="60701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179092" y="51629" z="-5888" h="59987" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179108" y="51556" z="-5896" h="40961" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="178713" y="51493" z="-5768" h="32962" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179019" y="53351" z="-5968" h="58171" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179613" y="53355" z="-5992" h="26010" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="179571" y="53265" z="-5984" h="37605" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179718" y="55021" z="-5944" h="29043" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179377" y="53806" z="-6008" h="48808" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180078" y="55232" z="-5920" h="40964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178427" y="53202" z="-5936" h="20445" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="178101" y="53903" z="-6016" h="23260" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="178736" y="55027" z="-5936" h="21370" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178962" y="53979" z="-5992" h="59840" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="178918" y="54068" z="-5992" h="27931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179008" y="54323" z="-5976" h="48102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179874" y="54430" z="-5976" h="25610" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="179494" y="54110" z="-6000" h="18938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178711" y="54411" z="-5968" h="45088" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179685" y="55245" z="-5936" h="52097" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179539" y="53276" z="-5984" h="22853" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180035" y="53450" z="-6024" h="26954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179657" y="54591" z="-5968" h="33463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179976" y="54685" z="-5952" h="63614" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179842" y="54881" z="-5944" h="36068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178832" y="54556" z="-5960" h="58825" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="178322" y="55061" z="-5928" h="21064" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="178556" y="54842" z="-5936" h="63452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178420" y="55188" z="-5928" h="43399" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="178965" y="53900" z="-5992" h="45847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180270" y="52716" z="-5976" h="22475" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182667" y="49340" z="-5936" h="11826" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181859" y="51082" z="-5992" h="23422" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179185" y="53346" z="-5976" h="51992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="183772" y="54008" z="-5776" h="8753" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178401" y="52250" z="-5920" h="42673" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181966" y="52519" z="-6000" h="37340" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180117" y="52614" z="-5968" h="54386" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179959" y="51024" z="-5920" h="24334" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183691" y="49697" z="-6016" h="16811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180117" y="52818" z="-5984" h="55765" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179806" y="51840" z="-5920" h="17433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182975" y="54742" z="-5840" h="49315" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180733" y="52767" z="-6008" h="1984" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182325" y="49891" z="-5920" h="18196" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180219" y="52155" z="-5928" h="59834" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184231" y="54110" z="-5760" h="57860" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180163" y="50922" z="-5920" h="36353" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179032" y="52581" z="-5920" h="18663" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179454" y="52257" z="-5920" h="25916" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="184210" y="51812" z="-5912" h="37556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180626" y="51075" z="-5928" h="51898" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179115" y="55714" z="-5936" h="22652" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179984" y="56367" z="-5856" h="58030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178434" y="56357" z="-5792" h="42028" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179301" y="56153" z="-5896" h="7477" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179255" y="56978" z="-5824" h="42258" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179199" y="55592" z="-5936" h="27131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="178949" y="56978" z="-5792" h="58928" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178893" y="55745" z="-5936" h="25998" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178337" y="57131" z="-5800" h="52054" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="179839" y="56780" z="-5848" h="45633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180122" y="57290" z="-5752" h="1722" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180102" y="57267" z="-5760" h="39686" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180092" y="56859" z="-5840" h="62981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179440" y="56574" z="-5864" h="1021" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180251" y="56415" z="-5848" h="56732" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179945" y="56213" z="-5864" h="48993" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179985" y="56379" z="-5856" h="22086" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180156" y="55423" z="-5912" h="2612" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178221" y="55789" z="-5920" h="50524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181425" y="56884" z="-5800" h="55341" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181566" y="56262" z="-5840" h="16576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181578" y="56323" z="-5840" h="13734" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="181733" y="56204" z="-5840" h="57102" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181830" y="56798" z="-5736" h="43738" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="181528" y="56617" z="-5824" h="16481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="181935" y="56884" z="-5672" h="43404" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="181494" y="56783" z="-5816" h="61042" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="181607" y="55664" z="-5840" h="13049" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="181909" y="55477" z="-5840" h="59656" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180498" y="56877" z="-5816" h="4301" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180138" y="56364" z="-5856" h="21624" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="181518" y="55769" z="-5840" h="45810" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180987" y="55838" z="-5840" h="24090" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180942" y="55528" z="-5864" h="29436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="180940" y="56205" z="-5840" h="6044" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180856" y="56136" z="-5832" h="23095" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180682" y="56708" z="-5816" h="30725" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180478" y="56554" z="-5840" h="35672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180702" y="57030" z="-5784" h="5048" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180521" y="56836" z="-5816" h="49384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="180396" y="56979" z="-5816" h="34099" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180293" y="57151" z="-5800" h="9812" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180124" y="55188" z="-5920" h="29960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182895" y="56078" z="-5696" h="41468" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182685" y="55743" z="-5800" h="46305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="183195" y="55692" z="-5704" h="51192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="182379" y="55488" z="-5864" h="32829" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182532" y="56202" z="-5776" h="27907" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182634" y="55488" z="-5848" h="17430" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182838" y="55489" z="-5816" h="42975" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="182787" y="55488" z="-5824" h="21693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179398" y="51585" z="-5912" h="34157" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179403" y="52665" z="-5936" h="51140" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="182736" y="55386" z="-5840" h="51874" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179709" y="52614" z="-5944" h="15757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="182369" y="51286" z="-6040" h="34743" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="183976" y="53396" z="-5816" h="62303" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="177687" y="52302" z="-5912" h="1969" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177993" y="51689" z="-5832" h="9676" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177432" y="52403" z="-5888" h="53068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="178146" y="51893" z="-5912" h="7887" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="178146" y="52454" z="-5920" h="53240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="177532" y="53095" z="-5936" h="41677" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178033" y="52408" z="-5920" h="62981" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="177600" y="52840" z="-5920" h="56848" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177521" y="52840" z="-5928" h="14954" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="177464" y="53082" z="-5936" h="25071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176058" y="53165" z="-5920" h="779" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176393" y="53122" z="-5920" h="53435" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176807" y="53057" z="-5912" h="12972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177073" y="52510" z="-5864" h="3348" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176326" y="52986" z="-5904" h="16507" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176856" y="52699" z="-5864" h="45184" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="177128" y="52539" z="-5864" h="16560" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="176383" y="52518" z="-5872" h="16716" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176617" y="53068" z="-5912" h="17519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176841" y="54318" z="-6008" h="44801" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175936" y="54951" z="-5992" h="61931" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176983" y="53553" z="-5944" h="60245" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176418" y="54254" z="-6008" h="54382" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="177077" y="55259" z="-5976" h="33964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177897" y="53288" z="-5944" h="26131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176526" y="55220" z="-5968" h="30932" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="176821" y="54619" z="-6008" h="16617" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="177123" y="53707" z="-5960" h="29094" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="177455" y="54623" z="-6008" h="11648" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176437" y="53479" z="-5944" h="40718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177970" y="55156" z="-5936" h="38773" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176562" y="55042" z="-5976" h="45033" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="178103" y="54674" z="-5968" h="17618" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="177821" y="54042" z="-6016" h="62698" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="177633" y="53937" z="-6016" h="7695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176422" y="54658" z="-6000" h="59067" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177847" y="54134" z="-6016" h="33923" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="177594" y="53610" z="-5984" h="41180" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="177522" y="55384" z="-5960" h="28087" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177931" y="54904" z="-5952" h="41446" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176805" y="57162" z="-5864" h="24534" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177930" y="56855" z="-5848" h="2718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="176974" y="56916" z="-5880" h="25226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176958" y="57162" z="-5864" h="12003" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176295" y="56805" z="-5888" h="25126" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176448" y="56652" z="-5904" h="20262" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176639" y="57118" z="-5856" h="44324" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176772" y="56866" z="-5880" h="35565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176657" y="56735" z="-5896" h="48458" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="177121" y="55899" z="-5944" h="2555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176550" y="56381" z="-5920" h="51212" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176963" y="56103" z="-5936" h="41203" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176315" y="55893" z="-5944" h="7520" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177151" y="56044" z="-5944" h="49670" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="177694" y="57206" z="-5848" h="49185" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177693" y="56837" z="-5856" h="58499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177874" y="56947" z="-5848" h="6292" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="177534" y="56102" z="-5928" h="33008" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="177689" y="55574" z="-5944" h="56618" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="177798" y="57212" z="-5848" h="8440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177712" y="57159" z="-5848" h="38523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177415" y="55576" z="-5960" h="11557" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="177583" y="55651" z="-5952" h="47536" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178689" y="56255" z="-5880" h="43290" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="178458" y="52207" z="-5920" h="24373" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="180321" y="52563" z="-5968" h="52950" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="177942" y="52454" z="-5920" h="50292" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179709" y="52359" z="-5928" h="37369" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="182017" y="52876" z="-5968" h="10231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179199" y="55847" z="-5928" h="17639" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="179347" y="51687" z="-5912" h="55031" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="180168" y="52563" z="-5960" h="64841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179019" y="51850" z="-5912" h="55600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="180427" y="52665" z="-5984" h="31760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="181456" y="51907" z="-6040" h="36000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="180321" y="52461" z="-5960" h="31699" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="179831" y="56214" z="-5872" h="55600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="178675" y="52938" z="-5928" h="55695" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179602" y="51330" z="-5912" h="65000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178044" y="51638" z="-5832" h="13264" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="178197" y="52148" z="-5920" h="61207" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179760" y="52359" z="-5928" h="64132" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="174196" y="52856" z="-5896" h="30985" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175165" y="52907" z="-5904" h="28463" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="174655" y="52856" z="-5888" h="20781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="174785" y="53015" z="-5912" h="16383" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="174989" y="53147" z="-5920" h="65299" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175004" y="52650" z="-5856" h="29549" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="175585" y="52911" z="-5912" h="25226" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="175960" y="53066" z="-5912" h="11231" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176124" y="53053" z="-5912" h="21948" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176135" y="52853" z="-5888" h="35672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="175553" y="52876" z="-5912" h="1781" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176142" y="53208" z="-5920" h="33980" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175069" y="53382" z="-5936" h="50096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="174480" y="54962" z="-6016" h="30505" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="175063" y="53570" z="-5944" h="58950" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="174256" y="54147" z="-5992" h="6600" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="174629" y="53994" z="-5976" h="62682" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="174918" y="53892" z="-5984" h="54707" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="174961" y="54411" z="-6024" h="44019" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="175825" y="54337" z="-6032" h="30934" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="175561" y="54253" z="-6032" h="24575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="175322" y="54098" z="-6024" h="1016" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175816" y="54300" z="-6032" h="1020" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175666" y="54470" z="-6032" h="18159" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="175882" y="55299" z="-5976" h="50875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="174599" y="54861" z="-6016" h="61245" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176050" y="55157" z="-5976" h="22710" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175944" y="53328" z="-5936" h="17089" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="174296" y="54717" z="-6024" h="10352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="174505" y="54436" z="-6024" h="21219" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175601" y="57126" z="-5904" h="38227" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="174922" y="55286" z="-6008" h="46504" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="174500" y="57025" z="-5920" h="34604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="174493" y="55364" z="-5992" h="11532" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175479" y="56324" z="-5952" h="29039" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="175861" y="55999" z="-5944" h="41559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="175717" y="55735" z="-5968" h="5701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="175799" y="55564" z="-5968" h="2854" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175759" y="55116" z="-5992" h="44317" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="174389" y="56338" z="-5944" h="28713" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175526" y="55902" z="-5984" h="55791" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="174821" y="56563" z="-5944" h="11626" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176143" y="55831" z="-5944" h="52616" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="174960" y="56425" z="-5952" h="20352" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="174805" y="56129" z="-5968" h="30388" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="174858" y="55685" z="-5984" h="46556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="174319" y="57400" z="-5904" h="64841" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="174306" y="57121" z="-5920" h="35487" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="174533" y="57007" z="-5920" h="45523" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="174090" y="53366" z="-5920" h="60964" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179811" y="51951" z="-5920" h="34814" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="179505" y="52206" z="-5920" h="12645" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="175114" y="53519" z="-5944" h="34740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179199" y="56306" z="-5880" h="60301" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="179908" y="51330" z="-5920" h="13875" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="179121" y="52207" z="-5920" h="61033" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="178299" y="51740" z="-5880" h="5499" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="179223" y="52258" z="-5920" h="33893" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175866" y="56897" z="-5880" h="18749" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="179474" y="56061" z="-5888" h="55261" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="177432" y="52046" z="-5856" h="12271" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="178842" y="56153" z="-5896" h="7693" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173427" y="52856" z="-5856" h="14423" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="173631" y="53111" z="-5912" h="30433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="172610" y="53027" z="-5880" h="62664" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172944" y="52935" z="-5888" h="61735" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="172613" y="53341" z="-5912" h="24943" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="172501" y="53092" z="-5896" h="63409" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="172661" y="52988" z="-5888" h="37114" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172877" y="53071" z="-5904" h="45634" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="172835" y="52907" z="-5880" h="40234" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173478" y="53468" z="-5920" h="39927" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173678" y="53902" z="-5944" h="37433" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173235" y="53285" z="-5920" h="27516" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173127" y="53835" z="-5920" h="48824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="172369" y="53736" z="-5912" h="25221" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173176" y="54345" z="-5936" h="61556" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172572" y="53755" z="-5920" h="59869" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="173749" y="53858" z="-5944" h="5684" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="172260" y="53733" z="-5912" h="44041" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173615" y="53189" z="-5920" h="45508" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="173931" y="53943" z="-5952" h="33417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173203" y="54316" z="-5936" h="64938" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173447" y="55322" z="-5992" h="34379" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="172203" y="54871" z="-5920" h="2555" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="173703" y="55406" z="-6000" h="26113" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="172441" y="55161" z="-5928" h="50509" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172265" y="55495" z="-5920" h="1760" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="172469" y="55322" z="-5928" h="21064" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="172469" y="55648" z="-5928" h="49305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173696" y="55608" z="-5976" h="32073" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="173149" y="57233" z="-5912" h="4333" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173632" y="55616" z="-5976" h="13481" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173069" y="57326" z="-5912" h="36992" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173366" y="56994" z="-5912" h="29472" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="173687" y="55441" z="-5992" h="44297" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="173189" y="57247" z="-5912" h="9038" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173571" y="56465" z="-5928" h="30708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172588" y="55922" z="-5920" h="53859" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="172467" y="55851" z="-5920" h="40718" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173567" y="56013" z="-5944" h="6428" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="173708" y="55748" z="-5960" h="62316" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173355" y="56273" z="-5928" h="30436" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="173259" y="56066" z="-5936" h="8305" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="172597" y="56596" z="-5816" h="32046" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="172183" y="56029" z="-5920" h="33809" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="172298" y="56230" z="-5904" h="5248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="172922" y="53046" z="-5904" h="28312" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173784" y="52703" z="-5872" h="1545" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="172413" y="53886" z="-5920" h="27674" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="173427" y="53417" z="-5920" h="46518" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177483" y="51791" z="-5824" h="23813" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173431" y="54192" z="-5944" h="31225" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="177738" y="52403" z="-5912" h="26259" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="175815" y="57152" z="-5856" h="54565" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="175815" y="57203" z="-5856" h="8" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="174039" y="53570" z="-5944" h="21939" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="173274" y="53213" z="-5896" h="28279" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="172265" y="55597" z="-5920" h="52568" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172718" y="53250" z="-5912" h="35003" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173662" y="58828" z="-5856" h="33079" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173491" y="58310" z="-5888" h="57261" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="173159" y="58005" z="-5896" h="47960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173213" y="57459" z="-5912" h="49153" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="173039" y="58967" z="-5848" h="13976" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173078" y="58192" z="-5904" h="49500" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173139" y="58480" z="-5896" h="18995" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="173104" y="58918" z="-5864" h="30708" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172994" y="58592" z="-5888" h="63142" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="175815" y="58420" z="-5840" h="13946" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="175866" y="57560" z="-5848" h="42339" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="174731" y="58879" z="-5856" h="39293" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175055" y="58048" z="-5888" h="11274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="175106" y="57793" z="-5904" h="51576" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="175208" y="58711" z="-5832" h="54559" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175282" y="57898" z="-5896" h="23253" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="174224" y="57978" z="-5856" h="58824" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="174820" y="58467" z="-5848" h="30178" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="174307" y="57962" z="-5856" h="34604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="174765" y="57900" z="-5880" h="4131" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="174150" y="58100" z="-5856" h="24452" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="174693" y="57166" z="-5920" h="37758" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176021" y="59188" z="-5456" h="15679" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176013" y="59248" z="-5424" h="49497" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176021" y="59239" z="-5424" h="52642" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176021" y="59290" z="-5408" h="5065" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="176021" y="59341" z="-5376" h="49537" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="177066" y="58312" z="-5640" h="7896" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176403" y="57802" z="-5840" h="29524" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176862" y="58414" z="-5672" h="51007" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176964" y="58618" z="-5528" h="44766" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176913" y="58516" z="-5592" h="46274" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="177066" y="58465" z="-5584" h="50601" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177999" y="57778" z="-5768" h="11177" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177569" y="57918" z="-5808" h="37778" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="178089" y="57178" z="-5824" h="473" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="177981" y="57338" z="-5832" h="2902" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176545" y="58830" z="-5464" h="30486" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176420" y="59036" z="-5368" h="54252" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="176588" y="58939" z="-5400" h="45633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176657" y="58946" z="-5392" h="30742" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176387" y="59091" z="-5368" h="16030" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176233" y="59182" z="-5368" h="43417" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176543" y="58984" z="-5384" h="10013" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176427" y="58784" z="-5480" h="37991" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173482" y="53886" z="-5936" h="39918" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="176607" y="58312" z="-5792" h="11757" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="177015" y="58210" z="-5672" h="63740" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="174221" y="59236" z="-5832" h="57733" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175254" y="56795" z="-5928" h="8660" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175611" y="57560" z="-5872" h="17701" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="177015" y="58516" z="-5576" h="21392" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="176760" y="58618" z="-5552" h="7857" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173227" y="53988" z="-5928" h="8398" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="175407" y="57560" z="-5904" h="37071" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="172418" y="55546" z="-5928" h="31575" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="175820" y="58048" z="-5840" h="62335" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="172311" y="53682" z="-5912" h="53831" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172718" y="53352" z="-5912" h="22906" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="173228" y="53301" z="-5920" h="48060" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="176760" y="58261" z="-5760" h="30811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="175917" y="57050" z="-5864" h="21040" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173172" y="53366" z="-5920" h="21199" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="176403" y="57904" z="-5840" h="41941" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="173223" y="53570" z="-5920" h="56121" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173478" y="53519" z="-5928" h="34811" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="173890" y="53784" z="-5952" h="37847" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20971" /> <!-- Warrior of Ancient Times -->
+		<point x="175560" y="57203" z="-5904" h="20604" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="173482" y="53733" z="-5936" h="53298" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20973" /> <!-- Forgotten Ancient Creature -->
+		<point x="172718" y="53454" z="-5920" h="46332" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175922" y="58558" z="-5840" h="28326" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20969" /> <!-- Giant's Shadow -->
+		<point x="172571" y="55648" z="-5928" h="31240" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="174323" y="59134" z="-5848" h="59633" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="175764" y="57560" z="-5848" h="8511" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="172922" y="53760" z="-5920" h="7024" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20972" /> <!-- Shaman of Ancient Times -->
+		<point x="173635" y="53682" z="-5936" h="4402" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="174782" y="59134" z="-5848" h="43959" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="20968" /> <!-- Forgotten Face -->
+		<point x="172367" y="55087" z="-5928" h="59068" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18550" /> <!--	-->
+		<point x="180686" y="52460" z="-5992" h="61329" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="18551" /> <!-- Keber's Seal Stone -->
+		<point x="180840" y="52351" z="-6000" h="521" />
+	</spawn>
+</list>

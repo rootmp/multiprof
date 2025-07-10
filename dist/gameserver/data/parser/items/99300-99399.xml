@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="99357" name="Emerald Weapon: Rapier">
+		<set name="crystal_type" value="B"/>
+		<set name="icon" value="BranchSys3.Icon.g_beam_sword"/>
+		<set name="type" value="RAPIER"/>
+		<set name="weight" value="144"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="random_damage" value="10"/>
+		<set name="privatestoreable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="freightable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+	</weapon>
+</list>

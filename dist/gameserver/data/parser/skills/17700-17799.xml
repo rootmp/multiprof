@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="17701" levels="10" name="Topaz">
+		<table name="#icon">icon.etc_bm_jewel_topaz_i00 icon.etc_bm_jewel_topaz_i00 icon.etc_bm_jewel_topaz_i00 icon.etc_bm_jewel_topaz_i00 icon.etc_bm_jewel_topaz_i00 icon.bm_jewel_absdmg_high_lv1_lavianrose icon.bm_jewel_absdmg_high_lv1_lavianrose icon.bm_jewel_absdmg_high_lv1_lavianrose icon.bm_jewel_absdmg_high_lv1_lavianrose icon.bm_jewel_absdmg_high_lv1_lavianrose</table>
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="#icon"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE"/>
+		<set name="skillType" value="NOTUSED"/>
+		<set name="operate_type" value="A2"/>
+	</skill>
+	<skill id="17702" levels="1" name="Greater Topaz - Special Ability">
+		<table name="#power">0.03 0.04 0.06 0.08 0.15</table>
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.bm_jewel_absdmg_high_lv1_lavianrose"/>
+		<set name="reuseDelay" value="300000"/>
+		<set name="coolTime" value="500"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="operate_type" value="A2"/>
+		<for>
+			<add stat="exp_rate_multiplier" value="#power"/>
+			<add stat="sp_rate_multiplier" value="#power"/>
+		</for>
+	</skill>
+	<skill id="17706" levels="10" name="Vital Stone">
+		<table name="#icon">icon.etc_bm_jewel_vital icon.etc_bm_jewel_vital icon.etc_bm_jewel_vital icon.etc_bm_jewel_vital icon.etc_bm_jewel_vital icon.bm_jewel_vital_high_lv1_lavianrose icon.bm_jewel_vital_high_lv1_lavianrose icon.bm_jewel_vital_high_lv1_lavianrose icon.bm_jewel_vital_high_lv1_lavianrose icon.bm_jewel_vital_high_lv1_lavianrose</table>
+		<table name="#power">0.03 0.04 0.06 0.08 0.15 0.17 0.19 0.21 0.23 0.3</table>
+		<table name="#exp">0 0 0 0 0 0 0 0 0 50</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="exp_rate_multiplier" value="#power"/>
+			<add stat="sp_rate_multiplier" value="#power"/>
+			<add stat="elemental_exp_rate_multiplier" value="#exp"/>
+		</for>
+	</skill>
+	<skill id="17707" levels="10" name="Jade">
+		<table name="#icon">icon.etc_bm_jewel_jade_i00 icon.etc_bm_jewel_jade_i00 icon.etc_bm_jewel_jade_i00 icon.etc_bm_jewel_jade_i00 icon.etc_bm_jewel_jade_i00 icon.bm_jewel_speedup_lv1_high icon.bm_jewel_speedup_lv1_high icon.bm_jewel_speedup_lv1_high icon.bm_jewel_speedup_lv1_high icon.bm_jewel_speedup_lv1_high</table>
+		<table name="#atkspeed">1.01 1.02 1.04 1.07 1.14 1.15 1.16 1.17 1.18 1.2</table>
+		<table name="#runspd">1 1 1 1 1 1.01 1.02 1.03 1.05 1.07</table>
+		<table name="#trait">0 0 0 0 0 0 0 0 0 10</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<mul stat="pAtkSpd" value="#atkspeed"/>
+			<mul stat="mAtkSpd" value="#atkspeed"/>
+			<mul stat="runSpd" value="#runspd"/>
+			<p_defence_trait name="bow" value="#trait"/>
+			<p_defence_trait name="sword" value="#trait"/>
+			<p_defence_trait name="dual" value="#trait"/>
+			<p_defence_trait name="blunt" value="#trait"/>
+			<p_defence_trait name="dagger" value="#trait"/>
+			<p_defence_trait name="dualdagger" value="#trait"/>
+			<p_defence_trait name="pole" value="#trait"/>
+			<p_defence_trait name="fist" value="#trait"/>
+			<p_defence_trait name="bow" value="#trait"/>
+			<p_defence_trait name="crossbow" value="#trait"/>
+		</for>
+	</skill>
+	<skill id="17708" levels="10" name="Diamond">
+		<table name="#icon">icon.etc_bm_jewel_diamond_i00 icon.etc_bm_jewel_diamond_i00 icon.etc_bm_jewel_diamond_i00 icon.etc_bm_jewel_diamond_i00 icon.etc_bm_jewel_diamond_i00 icon.bm_jewel_phydef_high_lv1_lavianrose icon.bm_jewel_phydef_high_lv1_lavianrose icon.bm_jewel_phydef_high_lv1_lavianrose icon.bm_jewel_phydef_high_lv1_lavianrose icon.bm_jewel_phydef_high_lv1_lavianrose</table>
+		<table name="#pdef">11 25 50 81 130 150 180 220 280 400</table>
+		<table name="#crit">1 1 1 0.96 0.9 0.89 0.88 0.86 0.84 0.9</table>
+		<table name="#critchance">1 1 1 1 1 1 1 1 1 0.8</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="pDef" value="#pdef"/>
+			<mul stat="pCritDamRcpt" value="#crit"/>
+			<mul stat="pCritChanceRcpt" value="#critchance"/>
+		</for>
+	</skill>
+	<skill id="17709" levels="10" name="Pearl">
+		<table name="#icon">icon.etc_bm_jewel_pearl_i00 icon.etc_bm_jewel_pearl_i00 icon.etc_bm_jewel_pearl_i00 icon.etc_bm_jewel_pearl_i00 icon.etc_bm_jewel_pearl_i00 icon.bm_jewel_magdef_high_lv1_lavianrose icon.bm_jewel_magdef_high_lv1_lavianrose icon.bm_jewel_magdef_high_lv1_lavianrose icon.bm_jewel_magdef_high_lv1_lavianrose icon.bm_jewel_magdef_high_lv1_lavianrose</table>
+		<table name="#mdef">7 14 28 46 74 85 100 125 160 250</table>
+		<table name="#crit">1 1 1 0.96 0.9 0.89 0.88 0.86 0.84 0.9</table>
+		<table name="#critchance">1 1 1 1 1 1 1 1 1 0.8</table>
+		<set name="icon" value="#icon"/>
+		<set name="operate_type" value="P"/>
+		<for>
+			<add stat="mDef" value="#mdef"/>
+			<mul stat="mCritDamRcpt" value="#crit"/>
+			<mul stat="mCritChanceRcpt" value="#critchance"/>
+		</for>
+	</skill>
+</list>

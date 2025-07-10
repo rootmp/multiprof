@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="92600" name="Dwarven Trident Edge">
+		<set name="grind_commission" value="2147"/>
+		<set name="grind_point" value="107333"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="214667"/>
+	</etcitem>
+	<etcitem id="92601" name="Two-handed Sword Blade">
+		<set name="grind_commission" value="3224"/>
+		<set name="grind_point" value="161167"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="322334"/>
+	</etcitem>
+	<etcitem id="92602" name="Spiked Club Head">
+		<set name="grind_commission" value="3224"/>
+		<set name="grind_point" value="161167"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="322334"/>
+	</etcitem>
+	<etcitem id="92603" name="Shillien Knife Edge">
+		<set name="grind_commission" value="3224"/>
+		<set name="grind_point" value="161167"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="322334"/>
+	</etcitem>
+	<etcitem id="92604" name="Gastraphetes Shaft">
+		<set name="grind_commission" value="3224"/>
+		<set name="grind_point" value="161167"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="322334"/>
+	</etcitem>
+	<etcitem id="92605" name="Tome of Blood Page">
+		<set name="grind_commission" value="3224"/>
+		<set name="grind_point" value="161167"/>
+		<set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="322334"/>
+	</etcitem>
+	<etcitem id="92606" name="Morning Star Head">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92607" name="Goat Head Staff Head">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92608" name="Winged Spear Blade">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92609" name="Sword of Revolution Blade">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92610" name="Tarbar Head">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92611" name="Skull Breaker Head">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92612" name="Heavy Bone Club Head">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92613" name="Maingauche Edge">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92614" name="Bich'Hwa Edge">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92615" name="Reinforced Longbow Shaft">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92616" name="War Pick Head">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92617" name="Crucifix of Blood Piece">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92618" name="Eye of Infinity Stone">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_crystal_ball_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92619" name="Cursed Maingauche Edge">
+		<set name="grind_commission" value="4667"/>
+		<set name="grind_point" value="233333"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="466667"/>
+	</etcitem>
+	<etcitem id="92620" name="Blue Crystal Skull Part">
+		<set name="grind_commission" value="5067"/>
+		<set name="grind_point" value="253333"/>
+		<set name="icon" value="icon.etc_skull_red_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="506667"/>
+	</etcitem>
+	<etcitem id="92621" name="Demon's Fangs Fragment">
+		<set name="grind_commission" value="5067"/>
+		<set name="grind_point" value="253333"/>
+		<set name="icon" value="icon.etc_horn_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="506667"/>
+	</etcitem>
+	<etcitem id="92622" name="Claymore Blade">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92623" name="Bonebreaker Head">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92624" name="Atuba Hammer Head">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92625" name="Ghost Staff Head">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92626" name="Staff of Life Shaft">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92627" name="Mithril Dagger Blade">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92628" name="Scallop Jamadhr Edge">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92629" name="Light Bow Shaft">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92630" name="Glaive Edge">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92631" name="Vajra Wand Frame">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_mold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92632" name="Ancient Reagent Remnant">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_potion_clear_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92633" name="Atuba Mace Head">
+		<set name="grind_commission" value="6000"/>
+		<set name="grind_point" value="300000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="600000"/>
+	</etcitem>
+	<etcitem id="92634" name="Flamberge Blade">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92635" name="Stormbringer Blade">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92636" name="Big Hammer Head">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92637" name="Scythe Edge">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92638" name="Battle Axe Head">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92639" name="Silver Axe Head">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92640" name="Skull Graver Head">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92641" name="Heavy Doom Hammer Head">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92642" name="Crystal Staff Head">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92643" name="Stick of Faith Shaft">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92644" name="Heavy Doom Axe Blade">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92645" name="Cursed Dagger Blade">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92646" name="Needle Wolverine Edge">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92647" name="Dark Elven Dagger Edge">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92648" name="Chakram Edge">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92649" name="Crystallized Ice Bow Shaft">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92650" name="Orcish Glaive Blade">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92651" name="Body Slasher Blade">
+		<set name="grind_commission" value="4580"/>
+		<set name="grind_point" value="229000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="458000"/>
+	</etcitem>
+	<etcitem id="92652" name="Shamshir Blade">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92653" name="Katana Blade">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92654" name="Bec de Corbin Blade">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92655" name="Spirit Sword Blade">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92656" name="Raid Sword Blade">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92657" name="Cursed Staff Head">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92658" name="Stiletto Edge">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92659" name="Soulfire Dirk Blade">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92660" name="Elemental Bow Shaft">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92661" name="Noble Elven Bow Shaft">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92662" name="Horn of Glory Fragment">
+		<set name="grind_commission" value="5740"/>
+		<set name="grind_point" value="287000"/>
+		<set name="icon" value="icon.etc_claw_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="574000"/>
+	</etcitem>
+	<etcitem id="92663" name="Caliburs Edge">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92664" name="Delusional Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92665" name="Tsurugi Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92666" name="Homunkulus' Sword Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92667" name="Poleaxe Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92668" name="Ultimate Sword Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92669" name="Sword of Nightmare Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92670" name="Sword of Whispering Death Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92671" name="War Axe Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92672" name="Nirvana Axe Blade">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92673" name="Stick of Eternity Shaft">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92674" name="Paradia Staff Head">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92675" name="Inferno Staff Head">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92676" name="Pa'agrio Hammer Head">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92677" name="Sage's Staff Head">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92678" name="Club of Nature Head">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92679" name="Mace of Underworld Head">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92680" name="Grace Dagger Edge">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92681" name="Dark Screamer Edge">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92682" name="Fisted Blade Piece">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92683" name="Akat Longbow Shaft">
+		<set name="grind_commission" value="8600"/>
+		<set name="grind_point" value="430000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="860000"/>
+	</etcitem>
+	<etcitem id="92684" name="Pa'agrio Axe Blade">
+		<set name="grind_commission" value="9560"/>
+		<set name="grind_point" value="478000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="956000"/>
+	</etcitem>
+	<etcitem id="92685" name="Scorpion Blade">
+		<set name="grind_commission" value="9560"/>
+		<set name="grind_point" value="478000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="956000"/>
+	</etcitem>
+	<etcitem id="92686" name="Widowmaker Head">
+		<set name="grind_commission" value="9560"/>
+		<set name="grind_point" value="478000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="956000"/>
+	</etcitem>
+	<etcitem id="92687" name="Samurai Long Sword Blade">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92688" name="Deadman's Staff Head">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92689" name="Ghoul's Staff Head">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92690" name="Demon's Staff Head">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_squares_gray_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92691" name="Crystal Dagger Blade">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92692" name="Great Pata Blade">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92693" name="Eminence Bow Shaft">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92694" name="Orcish Poleaxe Blade">
+		<set name="grind_commission" value="12260"/>
+		<set name="grind_point" value="613000"/>
+		<set name="icon" value="icon.etc_sword_body_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="1226000"/>
+	</etcitem>
+	<etcitem id="92695" name="Ring of Seal Gemstone">
+		<set name="grind_commission" value="564"/>
+		<set name="grind_point" value="28200"/>
+		<set name="icon" value="icon.etc_bead_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="56400"/>
+	</etcitem>
+	<etcitem id="92696" name="Mithril Scale Gaiter Material">
+		<set name="grind_commission" value="624"/>
+		<set name="grind_point" value="31167"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="62334"/>
+	</etcitem>
+	<etcitem id="92697" name="Brigandine Gaiter Material">
+		<set name="grind_commission" value="624"/>
+		<set name="grind_point" value="31167"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="62334"/>
+	</etcitem>
+	<etcitem id="92698" name="Elven Mithril Tunic Pattern">
+		<set name="grind_commission" value="747"/>
+		<set name="grind_point" value="37333"/>
+		<set name="icon" value="icon.etc_piece_of_cloth_white_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="74667"/>
+	</etcitem>
+	<etcitem id="92699" name="Elven Mithril Stocking Pattern">
+		<set name="grind_commission" value="467"/>
+		<set name="grind_point" value="23333"/>
+		<set name="icon" value="icon.etc_piece_of_cloth_white_i00"/>
+		<set name="weight" value="60"/>
+		<set name="stackable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="price" value="46667"/>
+	</etcitem>
+</list>

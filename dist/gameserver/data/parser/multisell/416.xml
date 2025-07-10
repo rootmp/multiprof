@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "multisell.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<item>
+		<production id="49683" count="1"/>	<!--Talisman of Baium-->
+		<ingredient id="49681" count="1"/>	<!--Talisman of Insolence Lv. 6-->
+		<ingredient id="49682" count="1"/>	<!--Baium’s Soul-->
+	</item>
+</list>

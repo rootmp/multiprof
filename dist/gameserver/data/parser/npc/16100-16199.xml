@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="16100" name="Red Hawk" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="45"/>
+		<set name="collision_radius" value="15.6"/>
+		<set name="level" value="40"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="baseRunSpd" value="94"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="4"/>	<!--Animals-->
+		</client_skills>
+	</npc>
+	<npc id="16101" name="Blue Hawk" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="45"/>
+		<set name="collision_radius" value="15.6"/>
+		<set name="level" value="40"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="baseRunSpd" value="94"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="4"/>	<!--Animals-->
+		</client_skills>
+	</npc>
+	<npc id="16102" name="Red Combat Hawk" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="45"/>
+		<set name="collision_radius" value="16.38"/>
+		<set name="level" value="76"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="baseRunSpd" value="94"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="4"/>	<!--Animals-->
+		</client_skills>
+	</npc>
+	<npc id="16103" name="Blue Combat Hawk" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="45"/>
+		<set name="collision_radius" value="16.38"/>
+		<set name="level" value="76"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="baseRunSpd" value="94"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="4"/>	<!--Animals-->
+		</client_skills>
+	</npc>
+	<npc id="16104" name="Wolf Cub" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="9"/>
+		<set name="collision_radius" value="8"/>
+		<set name="level" value="1"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="25"/>
+		<set name="baseRunSpd" value="113"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="4"/>	<!--Animals-->
+		</client_skills>
+	</npc>
+	<npc id="16105" name="Black Wolf" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="14.52"/>
+		<set name="collision_radius" value="18.25"/>
+		<set name="level" value="40"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="113"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="3"/>	<!--Beasts-->
+		</client_skills>
+	</npc>
+	<npc id="16106" name="While Wolf" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="14.52"/>
+		<set name="collision_radius" value="18.25"/>
+		<set name="level" value="40"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="113"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="3"/>	<!--Beasts-->
+		</client_skills>
+	</npc>
+	<npc id="16107" name="Black Steel Wolf" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="15.72"/>
+		<set name="collision_radius" value="19.5"/>
+		<set name="level" value="76"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="113"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="3"/>	<!--Beasts-->
+		</client_skills>
+	</npc>
+	<npc id="16108" name="White Steel Wolf" title="">
+		<set name="type" value="Npc"/>
+		<set name="ai_type" value="NpcAI"/>
+		<set name="collision_height" value="15.72"/>
+		<set name="collision_radius" value="19.5"/>
+		<set name="level" value="76"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="baseHpMax" value="1673.05473"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="6.5"/>
+		<set name="baseMpMax" value="889.8"/>
+		<set name="baseMpReg" value="2.4"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseDEX" value="25"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMEN" value="25"/>
+		<set name="baseWIT" value="20"/>
+		<set name="basePCritRate" value="40"/>
+		<set name="baseMCritRate" value="50"/>
+		<set name="basePAtk" value="388.11142"/>
+		<set name="basePDef" value="223.6362"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="baseMAtk" value="265.02979"/>
+		<set name="baseMDef" value="163.64727"/>
+		<set name="baseWalkSpd" value="45"/>
+		<set name="baseRunSpd" value="113"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseRandDam" value="10"/>
+		<set name="baseAttackType" value="FIST"/>
+		<set name="basePHitModify" value="4.75"/>
+		<set name="basePAvoidModify" value="0"/>
+		<set name="baseHitTimeFactor" value="0.6"/>
+		<set name="baseReuseDelay" value="0"/>
+		<set name="baseSafeHeight" value="100"/>
+		<set name="aggroRange" value="0"/>
+		<set name="shots" value="NONE"/>
+		<client_skills>
+			<skill id="4416" level="3"/>	<!--Beasts-->
+		</client_skills>
+	</npc>
+</list>

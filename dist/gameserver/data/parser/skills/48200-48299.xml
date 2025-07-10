@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "skill.dtd">
+<list>
+	<skill id="48200" levels="1" name="Ant Prophecy">
+		<!--PvE damage $s1\nAll Critical Rate $s2\nAll Critical Damage $s3\nSayha's Grace Consumption $s4-->
+		<set name="icon" value="icon.skill3630"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48201" levels="1" name="Raid Boss (Lv. 85)">
+		<!--A rift that appeared after an earthquake had weakened Maphr's Seal. It shifted to the material world and brought chaos and pain with it.-->
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48202" levels="1" name="Katuba's Strike">
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="500"/>
+		<set name="castRange" value="100"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48203" levels="1" name="Katuba's Stun">
+		<!--Immobilizes and stuns target.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48204" levels="1" name="Katuba's Knock Down">
+		<!--Temporarily immobilizes and knocks down.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1896"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="castRange" value="100"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48205" levels="10" name="Blood Spear">
+		<!--Attacks the target with an arrow of darkness.-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="150"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48206" levels="10" name="Dark Bomb">
+		<!--Attacks the enemy with Darkness Bombs.-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48207" levels="10" name="Dark Strike">
+		<!--Powerful P. Atk. on enemy.-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="6000"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48208" levels="10" name="Drain">
+		<!--Decreases HP/ MP of the target and restores player's HP.-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48209" levels="10" name="Spirit Wind">
+		<!--The power of mighty spirit increases Atk. Spd. and Casting Spd.-->
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill1062"/>
+		<set name="reuseDelay" value="30000"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48210" levels="3" name="See Creature">
+		<!--Attacks target and increases Speed.-->
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.skill1204"/>
+		<set name="reuseDelay" value="60000"/>
+		<set name="hitTime" value="500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48211" levels="10" name="Red Sphere">
+		<!--Attacks the enemy with an exploding fire sphere.-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48212" levels="10" name="Rush">
+		<!--Rush toward target, inflicts damage.-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="100"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48213" levels="12" name="Fear">
+		<!--Enemy is afflicted with Fear and moving against own will.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill1092"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48214" levels="12" name="Paralysis">
+		<table name="#effectPoint">-230 -250 -270 -290 -310 -330 -350 -370 -390 -410 -430 -450</table>
+		<!--Paralyzed and unable to move temporarily.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="#effectPoint"/>
+		<set name="icon" value="icon.skill1613"/>
+		<set name="reuseDelay" value="3000"/>
+		<set name="castRange" value="40"/>
+		<set name="hitTime" value="1000"/>
+		<set name="autouse_type" value="ATTACK"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48215" levels="1" name="Raid Boss (Lv. 85)">
+		<!--Deiman has always been a Beleth's henchman and he came to Hellbound with him. When Beleth made the deal with demons, Deiman gained their power, too. Now he's a half-demon and, while waiting for his master to restore his powers, he sends him pure magic energy using Beleth's Magic Circles.-->
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48216" levels="1" name="Deiman's Attack">
+		<!--Inflicts great damage on the enemies near the target.-->
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0036"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48217" levels="1" name="Deiman's Long Range Knockback">
+		<!--Decreases HP/ MP of the target and restores player's HP.-->
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48218" levels="1" name="Boss Mass Blood Siphon">
+		<!--Decreases HP/ MP of the target and restores player's HP.-->
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0289"/>
+		<set name="reuseDelay" value="5000"/>
+		<set name="hitTime" value="5000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48219" levels="1" name="Stun">
+		<!--Immobilizes and stuns target.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48220" levels="1" name="Hold">
+		<!--Holds the target.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill4047"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48221" levels="1" name="Fear">
+		<!--Enemy is afflicted with Fear and moving against own will.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill1092"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48222" levels="1" name="Raid Boss (Lv. 85)">
+		<!--Vampire Queen Satina came to Hellbound after forming an alliance with Beleth. She conducts experiments with the magic that permeates this place in order to help the fallen wizard restore his powers quicker. At the same time, however, the queen is planning to secretely bestow new powers onto her subjects. The experiments take place in Satina's Laboratory where Beleth's followers are imbued with demonic power and Hellbound magic is being transfered to vampires.-->
+		<set name="icon" value="icon.skillraid"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48223" levels="1" name="Satina's Attack">
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48224" levels="1" name="Satina's Range Attack">
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0289"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48225" levels="1" name="Sleep">
+		<!--Immobilizes and puts a target into sleep.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill4046"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48226" levels="1" name="Silence">
+		<!--Physical and magic skills are all blocked.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill1064"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48227" levels="1" name="Paralysis">
+		<!--Paralyzed and unable to move temporarily.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill1170"/>
+		<set name="castRange" value="600"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48228" levels="10" name="Blood Siphon Resistance">
+		<!--Resistant to Blood Siphon.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48229" levels="10" name="Drain Resistance">
+		<!--Resistant to HP Drain.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48230" levels="10" name="Critical Damage Resistance">
+		<!--Resistant to Critical Damage.-->
+		<set name="icon" value="icon.skill0000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48231" levels="1" name="Beleth's Curse">
+		<!--A powerful curse cast by Beleth.\n\nTemporary effect.\nAtk. Spd. -50%%\nCasting Spd. -50%%\nConstantly drains HP.\nBasic attacks can't be used.\nSkills can't be used.-->
+		<set name="debuff" value="true"/>
+		<set name="icon" value="icon.skill0046"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48232" levels="1" name="Orfen's Rage">
+		<!--Orfen's rage makes the enemy's soul leave their body.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0100"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48233" levels="1" name="Orfen's Prophecy">
+		<!--PvE damage $s1\nSkill MP Consumption $s2\nP. Def. $s3\nM. Def. $s4\nSayha's Grace Consumption $s5-->
+		<set name="icon" value="icon.skill6435"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48234" levels="1" name="Core Plasma">
+		<!--Core plasma makes the enemy's soul leave their body.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill10324"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="hitTime" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48235" levels="1" name="Core Prophecy">
+		<!--PvE damage $s1\nReceived PvE damage $s2\nP. Def. $s3\nM. Def. $s4\nHP Recovery Potions' Effect $s5\nSayha's Grace Consumption $s6\n\n-->
+		<set name="icon" value="icon.skill32633"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48236" levels="1" name="Baium's Prophecy">
+		<!--PvE damage $s1\nP. Skill Power $s1\nM. Skill Power $s1\nAtk. Spd. $s2\nCasting Spd. $s2\nSayha's Grace Consumption $s3\n\n-->
+		<set name="icon" value="icon.skill10318"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48237" levels="1" name="Core Plasma">
+		<!--Core plasma makes the enemy's soul leave their body.-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill10324"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48238" levels="1" name="Baium Attack">
+		<!--none-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="1000"/>
+		<set name="castRange" value="100"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48239" levels="1" name="Baium's Wind Of Force">
+		<!--none-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="1700"/>
+		<set name="hitTime" value="2300"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48240" levels="1" name="Baium's Gift">
+		<!--none-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="castRange" value="1000"/>
+		<set name="hitTime" value="2000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48241" levels="1" name="Baium's Earth Shaker">
+		<!--none-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="2500"/>
+		<set name="hitTime" value="1500"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48242" levels="1" name="Baium's Lightning">
+		<!--none-->
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill0000"/>
+		<set name="coolTime" value="4000"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="6000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48243" levels="1" name="Baium's Paralysis">
+		<!--Paralyzed and unable to move temporarily.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-100"/>
+		<set name="icon" value="icon.skill1170"/>
+		<set name="coolTime" value="1400"/>
+		<set name="castRange" value="900"/>
+		<set name="hitTime" value="3600"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48244" levels="1" name="Knock Down">
+		<!--Temporarily immobilizes and knocks down.-->
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0518"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48245" levels="1" name="Paralysis">
+		<!--Paralyzed and unable to move temporarily.-->
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill0523"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48246" levels="1" name="Fear">
+		<!--Afflicted with Fear and moving against own will.-->
+		<set name="effectPoint" value="-700"/>
+		<set name="icon" value="icon.skill1092"/>
+		<set name="reuseDelay" value="8000"/>
+		<set name="hitTime" value="3000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48247" levels="1" name="Trix' Random Transformation Effect">
+		<set name="icon" value="icon.random_transform_00"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48248" levels="1" name="Freezing Paralysis">
+		<!--Freezes the target and immobilizes it.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill6274"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48249" levels="1" name="Electric Shock">
+		<!--Hits the target with electricity and immobilizes it.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill1095"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48250" levels="1" name="Flame Bind">
+		<!--Surrounds the target with flames and immobilizes it.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-500"/>
+		<set name="icon" value="icon.skill0834"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48251" levels="1" name="Swift Fist">
+		<!--Stuns for $s1-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="icon" value="icon.armor_t96_g_i03"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48252" levels="1" name="Force of Silence">
+		<!--Skills are unusable for $s1.-->
+		<set name="debuff" value="true"/>
+		<set name="effectPoint" value="-300"/>
+		<set name="icon" value="icon.armor_t94_g_i01"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48253" levels="1" name="Hell Lightning">
+		<!--Deals $s1 fixed damage.-->
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.hellbound_talisman_i00"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48254" levels="1" name="Queen Ant's Rain of Stones">
+		<!--Deals $s1 fixed damage.-->
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.skill4282_new"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48255" levels="1" name="Baium’s Thunder Bolt">
+		<!--Deals $s1 fixed damage.-->
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.skill1469"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48256" levels="1" name="Zaken's Blood Prison">
+		<!--Deals $s1 fixed damage.-->
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.skill32100"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48257" levels="1" name="Orfen's Poison Storm">
+		<!--Deals $s1 fixed damage.-->
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.skill6435"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48258" levels="1" name="Core's Plasmic Shock">
+		<!--Deals $s1 fixed damage.-->
+		<set name="effectPoint" value="-1000"/>
+		<set name="icon" value="icon.skill32633"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="castRange" value="900"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+	<skill id="48259" levels="1" name="Dragon's Protection">
+		<!--The barrier's HP: $s1\nCan be activated up to $s2 time(s).\n\nThe barrier disappears when its HP is 0 or after all trigger attempts.-->
+		<set name="effectPoint" value="100"/>
+		<set name="icon" value="icon.dragon_belt_grace"/>
+		<set name="reuseDelay" value="1000"/>
+		<set name="target" value="TARGET_NONE" />
+		<set name="skillType" value="NOTUSED" />
+		<set name="operate_type" value="A2" />
+	</skill>
+</list>

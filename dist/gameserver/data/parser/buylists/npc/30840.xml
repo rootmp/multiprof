@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "buylist.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<npc id="30840">	<!--Lorenzo (Magic Books Trader)-->
+		<buylist id="1" base_markup="10">
+			<item id="1378"/>	<!--Spellbook: Divine Heal-->
+			<item id="1384"/>	<!--Spellbook: Sprint-->
+			<item id="1380"/>	<!--Spellbook: Entangle-->
+			<item id="1382"/>	<!--Spellbook - Demolished Power-->
+			<item id="1381"/>	<!--Spellbook: Freezing Strike-->
+			<item id="3038"/>	<!--Blueprint: Summon Mechanic Golem-->
+			<item id="1399"/>	<!--Spellbook: Concentration-->
+			<item id="1394"/>	<!--Spellbook: Sleep-->
+			<item id="1517"/>	<!--Spellbook: Body To Mind-->
+			<item id="1409"/>	<!--Spellbook: Slow-->
+			<item id="1416"/>	<!--Spellbook: Curse Chaos-->
+			<item id="1514"/>	<!--Spellbook: Resurrection-->
+			<item id="1415"/>	<!--Spellbook: Dryad Root-->
+			<item id="1398"/>	<!--Spellbook: Focus-->
+			<item id="1392"/>	<!--Spellbook: Berserker Spirit-->
+			<item id="1401"/>	<!--Spellbook: Acumen-->
+			<item id="3944"/>	<!--Spellbook: Light-->
+			<item id="1385"/>	<!--Spellbook: Recharge-->
+			<item id="1388"/>	<!--Spellbook: Mental Shield-->
+			<item id="1523"/>	<!--Amulet: Chant of Shielding-->
+			<item id="1521"/>	<!--Amulet: Chant of Fire-->
+			<item id="1536"/>	<!--Amulet: Seal of Binding-->
+			<item id="1519"/>	<!--Amulet: Pa'agrio's Gift-->
+			<item id="1518"/>	<!--Amulet: Chant of Flame-->
+			<item id="1530"/>	<!--Amulet: Seal of Slow-->
+			<item id="1391"/>	<!--Spellbook: Empower-->
+			<item id="1097"/>	<!--Spellbook: Drain HP-->
+		</buylist>
+	</npc>
+</list>

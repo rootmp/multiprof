@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "spawn.dtd">
+<list>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30334" /> <!-- Babenco -->
+		<point x="-16621" y="124330" z="-3128" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30333" /> <!-- Praga -->
+		<point x="-16623" y="124028" z="-3128" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31690" /> <!-- Monument of Heroes -->
+		<point x="-15104" y="122040" z="-3056" h="3000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30332" /> <!-- Bathis -->
+		<point x="-14368" y="121225" z="-2984" h="8413" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30331" /> <!-- Toma -->
+		<point x="-14773" y="120978" z="-3000" h="13519" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31688" /> <!-- Saige -->
+		<point x="-15120" y="122096" z="-3072" h="3000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30729" /> <!-- Borys -->
+		<point x="-15443" y="124913" z="-3120" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="31047" /> <!-- Kell -->
+		<point x="-14708" y="124160" z="-3112" h="15972" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30012" /> <!-- Fishing Guildsman -->
+		<point x="-14768" y="124704" z="-3112" h="49000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="33359" /> <!-- Kerry -->
+		<point x="-14764" y="122994" z="-3112" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30294" /> <!-- Varan -->
+		<point x="-14933" y="124540" z="-3112" h="4096" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30254" /> <!-- Harmony -->
+		<point x="-14934" y="124468" z="-3112" h="61440" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="35384" /> <!-- Black -->
+		<point x="-16159" y="123728" z="-3096" h="53248" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30504" /> <!-- Mendio -->
+		<point x="-15190" y="124756" z="-3112" h="48152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30767"> <!-- Auctioneer -->
+			<set name="town" value="gludio"/>
+		</npc>
+		<point x="-14767" y="122955" z="-3112" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30256" /> <!-- Bella -->
+		<point x="-14531" y="124060" z="-3104" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30321" /> <!-- Sydnia -->
+		<point x="-15238" y="123282" z="-3104" h="20480" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30253" /> <!-- Simplon -->
+		<point x="-15132" y="123282" z="-3104" h="12288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30298" /> <!-- Pinter -->
+		<point x="-15349" y="124763" z="-3112" h="57344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="35385" /> <!-- Renny -->
+		<point x="-15882" y="123788" z="-3112" h="13288" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="35386" /> <!-- Boyer -->
+		<point x="-14852" y="125413" z="-3128" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30434" /> <!-- Samed -->
+		<point x="-14977" y="126035" z="-3136" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="35387" /> <!-- Baback -->
+		<point x="-14731" y="125630" z="-3136" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30344" /> <!-- Rohmer -->
+		<point x="-13269" y="121540" z="-2968" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30030" /> <!-- Vivyan -->
+		<point x="-13269" y="121884" z="-2968" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30293" /> <!-- Manuel -->
+		<point x="-13487" y="121541" z="-2968" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30345" /> <!-- Ramoniell -->
+		<point x="-13487" y="121884" z="-2968" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30328" /> <!-- Reisa -->
+		<point x="-13693" y="122583" z="-3104" h="8192" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30289" /> <!-- Raymond -->
+		<point x="-12784" y="121709" z="-2936" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30327" /> <!-- Sorius -->
+		<point x="-13440" y="122643" z="-3104" h="28672" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="32478" /> <!-- Game Assistant -->
+		<point x="-13283" y="124612" z="-3120" h="49000" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30322" /> <!-- Ballin -->
+		<point x="-13049" y="124737" z="-3112" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30506" /> <!-- Buka -->
+		<point x="-12788" y="124764" z="-3120" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30505" /> <!-- Drikus -->
+		<point x="-12823" y="124887" z="-3126" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30326" /> <!-- Leona -->
+		<point x="-13691" y="123068" z="-3104" h="57344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30325" /> <!-- Audiberti -->
+		<point x="-13419" y="123068" z="-3104" h="40960" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30297" /> <!-- Tobias -->
+		<point x="-12892" y="123143" z="-3096" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30416" /> <!-- Triskel -->
+		<point x="-12506" y="123405" z="-3112" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30329" /> <!-- Virgil -->
+		<point x="-12791" y="123259" z="-3096" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30288" /> <!-- Rains -->
+		<point x="-13579" y="123017" z="-3104" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30330" /> <!-- Sidra -->
+		<point x="-12503" y="123054" z="-3096" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="35390" /> <!-- Dillon -->
+		<point x="-12866" y="124166" z="-3096" h="57344" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="35391" /> <!-- Latif -->
+		<point x="-12693" y="123815" z="-3112" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30255" /> <!-- Haprock -->
+		<point x="-13132" y="124988" z="-3112" h="49152" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30336" /> <!-- Curtis -->
+		<point x="-14005" y="126542" z="-3144" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30335" /> <!-- Brynn -->
+		<point x="-14336" y="126546" z="-3144" h="16384" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30503" /> <!-- Rikadio -->
+		<point x="-13323" y="124989" z="-3112" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30507" /> <!-- Racoy -->
+		<point x="-12788" y="124976" z="-3117" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="35388" /> <!-- Tim -->
+		<point x="-13745" y="125573" z="-3128" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="35389" /> <!-- Loring -->
+		<point x="-14145" y="125551" z="-3136" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30342" /> <!-- Varsak -->
+		<point x="-12188" y="122899" z="-3104" h="32768" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30338" /> <!-- Melville -->
+		<point x="-11950" y="123473" z="-3088" h="0" />
+	</spawn>
+	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
+		<npc id="30337" /> <!-- Moretti -->
+		<point x="-11940" y="123789" z="-3088" h="0" />
+	</spawn>
+</list>

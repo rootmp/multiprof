@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="97000" name="Artisan Black's Weapon Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97001" name="Artisan Black's Armor Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97002" name="Artisan Black's Weapon Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97003" name="Artisan Black's Armor Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97004" name="Artisan Black's Weapon Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97005" name="Artisan Black's Armor Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97006" name="Artisan Black's Weapon Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97007" name="Artisan Black's Armor Pack - A-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97008" name="Artisan Black's Weapon Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97009" name="Artisan Black's Armor Pack - B-grade" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97010" name="Mysterious Pack Lv. 1 (Time-limited)" add_name="Sealed">
+		<!--Double-click to obtain one of various items.\nCan be used to create Mysterious Chest Lv. 2 with a certain chance through the Special Craft.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97011" name="Kit: Mysterious Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97012" name="Talisman Challenge Point Efficiency Boost - 1 Charge" add_name="Sealed">
+		<!--Test_Double-click to improve efficiency of talisman challenge points by 1.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97013" name="Talisman Challenge Point Efficiency Boost - 2 Charges" add_name="Sealed">
+		<!--Test_Double-click to improve efficiency of talisman challenge points by 2.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97014" name="Talisman Challenge Points' Enhanced Charge" add_name="Sealed">
+		<!--Test_Double-click to obtain a talisman challenge points' enhanced charge.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97015" name="Talisman Challenge Points' Charge Protection" add_name="Sealed">
+		<!--Test_Double-click to obtain talisman challenge points' charge protection.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97016" name="Talisman Challenge Points' Charge Decrease" add_name="Sealed">
+		<!--Test_Double-click to obtain talisman challenge points' charge decrease.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97017" name="Talisman Challenge Points' Charge Stabilization" add_name="Sealed">
+		<!--Test_Double-click to obtain talisman challenge points' charge stabilization.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97018" name="Special Equipment Challenge Point Efficiency Boost - 1 Charge" add_name="Sealed">
+		<!--Test_Double-click to improve efficiency of special equipment challenge points by 1.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97019" name="Special Equipment Challenge Point Efficiency Boost - 2 Charges" add_name="Sealed">
+		<!--Test_Double-click to improve efficiency of special equipment challenge points by 2.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97020" name="Special Equipment Challenge Points' Enhanced Charge" add_name="Sealed">
+		<!--Test_Double-click to obtain a special equipment challenge points' enhanced charge.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97021" name="Special Equipment Challenge Points' Charge Protection" add_name="Sealed">
+		<!--Test_Double-click to obtain special equipment challenge points' charge protection.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97022" name="Special Equipment Challenge Points' Charge Decrease" add_name="Sealed">
+		<!--Test_Double-click to obtain special equipment challenge points' charge decrease.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97023" name="Special Equipment Challenge Points' Charge Stabilization" add_name="Sealed">
+		<!--Test_Double-click to obtain special equipment challenge points' charge stabilization.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97024" name="For Monsters - Divine Pain - Not Available" add_name="Not used">
+		<!--Monster weapon.-->
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97025" name="Test_Appearance Stone: Emerald Weapon (Time-limited)">
+		<!--Test Item-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97026" name="Harvest Festival's Rainbow Rice Cake (Time-limited)" add_name="Sealed">
+		<!--A rice cake to celebrate the Harvest Day.\n\n<How to use>\nAdd to a collection to boost your stats.\nCan be exchanged for various items through the Special Craft.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97027" name="Harvest Festival's Special Cube (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97028" name="Bright Firecracker Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97029" name="Enchant Package: Necklace of Spirits" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97030" name="Spirits' Treasure Chest (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97031" name="Kit: Spirits' Treasure Chest (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97032" name="Harvest Festival's Special Pack (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97033" name="Rare Collection Armor Pack" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97034" name="Agathion Pack/ Diamond Box of Blue Lantern (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97035" name="Talisman Pack of Red Lantern (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97036" name="Scroll: Enchant Necklace of Spirits" add_name="Sealed">
+		<!--Required for enchanting Necklace of Spirits.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97037" name="Spellbook: Faery Shield">
+		<!--A book that is required to learn Faery Shield skill.\n\n<Classes>\nArchmage\nMystic Muse\nStorm Screamer\n\n<Skill effect>\nCreates a magic shield to protect the caster.\nWhile active, absorbs a part of received damage.\nFor the remainder of received damage MP is consumed instead of HP.\nThe effect is cancelled when MP reaches 0.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97038" name="Spellbook: Soul Guardian">
+		<!--A book that is required to learn Soul Guardian skill.\n\n<Classes>\nSoultaker\n\n<Skill effect>\nInstantly increases servitor's defensive skills.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97039" name="Spellbook: Spiral">
+		<!--A book that is required to learn Spiral skill.\n\n<Classes>\nFire Spiral - Archmage\nDark Spiral - Soultaker\nIce Spiral - Mystic Muse\nWind Spiral - Storm Screamer\n\n<Skill effect>\nAttacks enemies in the front.\nDecreases enemy stats, the effect depends on the class.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97040" name="Spellbook: Magic Circle">
+		<!--A spellbook for learning Magic Circle skill.\n\n<Classes>\nArchmage\nSoultaker\nMystic Muse\nStorm Screamer\n\n<Skill effect>\nIncreases M. Atk.\nWhen magic skills are used, a magic circle is created step by step.\nMagic Circle Lv. 4 provides an additional attack.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97041" name="Spellbook: Heavy Sleep">
+		<!--A spellbook for learning Heavy Sleep skill.\n\n<Classes>\nArchmage\nSoultaker\nMystic Muse\nStorm Screamer\n\n<Skill effect>\nInflicts Sleep on the target for a certain period of time.\nEven if the target is hit Sleep doesn't disappear.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97042" name="Spellbook: Faery Shield" add_name="Sealed">
+		<!--A book that is required to learn Faery Shield skill.\n\n<Classes>\nArchmage\nMystic Muse\nStorm Screamer\n\n<Skill effect>\nCreates a magic shield to protect the caster.\nWhile active, absorbs a part of received damage.\nFor the remainder of received damage MP is consumed instead of HP.\nThe effect is cancelled when MP reaches 0.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97043" name="Spellbook: Soul Guardian" add_name="Sealed">
+		<!--A book that is required to learn Soul Guardian skill.\n\n<Classes>\nSoultaker\n\n<Skill effect>\nInstantly increases servitor's defensive skills.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97044" name="Spellbook: Spiral" add_name="Sealed">
+		<!--A book that is required to learn Spiral skill.\n\n<Classes>\nFire Spiral - Archmage\nDark Spiral - Soultaker\nIce Spiral - Mystic Muse\nWind Spiral - Storm Screamer\n\n<Skill effect>\nAttacks enemies in the front.\nDecreases enemy stats, the effect depends on the class.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97045" name="Spellbook: Magic Circle" add_name="Sealed">
+		<!--A spellbook for learning Magic Circle skill.\n\n<Classes>\nArchmage\nSoultaker\nMystic Muse\nStorm Screamer\n\n<Skill effect>\nIncreases M. Atk.\nWhen magic skills are used, a magic circle is created step by step.\nMagic Circle Lv. 4 provides an additional attack.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97046" name="Spellbook: Heavy Sleep" add_name="Sealed">
+		<!--A spellbook for learning Heavy Sleep skill.\n\n<Classes>\nArchmage\nSoultaker\nMystic Muse\nStorm Screamer\n\n<Skill effect>\nInflicts Sleep on the target for a certain period of time.\nEven if the target is hit Sleep doesn't disappear.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97047" name="Harvest Festival's Gift Pack I (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97048" name="Harvest Festival's Gift Pack II (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97049" name="Harvest Festival's Gift Pack III (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97050" name="Antharas' Breastplate" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97051" name="Antharas' Gaiters" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97052" name="Antharas' Gauntlets" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97053" name="Antharas' Boots" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97054" name="Valakas' Leather Armor" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97055" name="Valakas' Leather Leggings" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97056" name="Valakas' Gauntlets" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97057" name="Valakas' Boots" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97058" name="Fafurion's Tunic" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97059" name="Fafurion's Stockings" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97060" name="Fafurion's Gauntlets" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97061" name="Fafurion's Boots" add_name="Test">
+		<set name="freightable" value="true" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97062" name="Pack of Seals (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97063" name="Kit: Pack of Seals (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97064" name="Key Fragment (Time-limited)" add_name="Sealed">
+		<!--A material for making Black Box Key.\n\n<How to use>\nSpecial Craft - Black Box.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97065" name="Black Box Key (Time-limited)" add_name="Sealed">
+		<!--A key to open a Black Box.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97066" name="Supply Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97067" name="Top-grade Black Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97068" name="High-grade Black Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97069" name="Common Black Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97070" name="Mysterious Black Box (Time-limited)" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97071" name="Spellbook Coupon - 2 Stars (Time-limited)">
+		<!--Can be exchanged for Spellbook - 2 Stars.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97072" name="Spellbook Coupon - 1 Star (Time-limited)">
+		<!--Can be exchanged for Spellbook - 1 Star.\n\n<How to use>\nGame Assistant - Event.-->
+		<set name="freightable" value="true" />
+		<set name="sellable" value="false" />
+	</etcitem>
+	<etcitem id="97074" name="Beleth' Ring" add_name="Sealed">
+		<!--Max enchant value: +5.\n(Requires Scroll: Enchant Rare Accessories.)\nBoosts the item's parameters after enchanting.\nEffects of two identical rings do not stack.\nSafe enchanting to +1\n<font color=ff6666>Transformation is unavailable</font>-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97075" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97076" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97077" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97078" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97079" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97080" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97081" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97082" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97083" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97084" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97085" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97086" name="Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97087" name="Lord Balok's Treasure Chest" add_name="Sealed">
+		<!--Double-click to get more information about the contents.-->
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97088" name="Demon King's Sword" add_name="In development">
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="97089" name="Demon King's Dual Swords" add_name="In development">
+		<!--As with two-handed swords/blunts and fist weapons, dual swords have a greater increase in P. Atk. when enchanted than one-handed swords.-->
+		<set name="freightable" value="true" />
+	</etcitem>
+	<etcitem id="97090" name="Wolf Master's Common Armor" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97091" name="Wolf Master's Helmet" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97092" name="Worthy Wolf Master's Armor" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97093" name="Worthy Wolf Master's Helmet" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97094" name="Wolf Master - Leo" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97095" name="Wolf Master - Wolf 1" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97096" name="Wolf Master - Wolf 2" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97097" name="Wolf Master - Wolf 3" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97098" name="Wolf Master's Common Accessory" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+	<etcitem id="97099" name="Worthy Wolf Master's Accessory" add_name="In development">
+		<set name="tradeable" value="false" />
+		<set name="mailable" value="false" />
+		<set name="clan_warehouseable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="privatestoreable" value="false" />
+		<set name="sellable" value="false" />
+		<set name="commissionable" value="false" />
+	</etcitem>
+</list>
