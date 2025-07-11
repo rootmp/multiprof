@@ -1,13 +1,10 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import l2s.commons.math.SafeMath;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.NpcInstance;
@@ -16,6 +13,7 @@ import l2s.gameserver.model.items.PcInventory;
 import l2s.gameserver.model.items.Warehouse;
 import l2s.gameserver.model.items.Warehouse.WarehouseType;
 import l2s.gameserver.model.pledge.Clan;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.utils.Log;
 
@@ -31,7 +29,7 @@ public class SendWareHouseWithDrawList implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_count = packet.readD();
-		if (_count * 12 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		if (_count * 12 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;

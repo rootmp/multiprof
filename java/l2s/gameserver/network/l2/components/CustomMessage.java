@@ -11,7 +11,7 @@ import l2s.gameserver.data.string.ItemNameHolder;
 import l2s.gameserver.data.string.SkillNameHolder;
 import l2s.gameserver.data.string.StringsHolder;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.skills.SkillInfo;
 import l2s.gameserver.utils.Language;
@@ -205,7 +205,7 @@ public class CustomMessage implements IBroadcastPacket
 	}
 
 	@Override
-	public L2GameServerPacket packet(Player player)
+	public IClientOutgoingPacket packet(Player player)
 	{
 		return new SystemMessage(SystemMsg.S1).addString(toString(player));
 	}

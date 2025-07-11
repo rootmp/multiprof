@@ -2,7 +2,7 @@ package l2s.gameserver.network.l2.components;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.ExShowUsmPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * @author Bonux
@@ -41,7 +41,7 @@ public enum UsmVideo implements IBroadcastPacket
 	HEROES(148);
 
 	private final int _id;
-	private final L2GameServerPacket _static;
+	private final IClientOutgoingPacket _static;
 
 	UsmVideo(int id)
 	{
@@ -55,7 +55,7 @@ public enum UsmVideo implements IBroadcastPacket
 	}
 
 	@Override
-	public L2GameServerPacket packet(Player player)
+	public IClientOutgoingPacket packet(Player player)
 	{
 		return _static;
 	}

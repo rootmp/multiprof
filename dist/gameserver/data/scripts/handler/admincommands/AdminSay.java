@@ -6,7 +6,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.network.l2.components.ChatType;
 import l2s.gameserver.network.l2.components.NpcString;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.NSPacket;
 import l2s.gameserver.network.l2.s2c.SayPacket2;
 
@@ -43,7 +43,7 @@ public class AdminSay extends ScriptAdminCommand
 			arg[0] = wordList[2];
 		}
 
-		L2GameServerPacket packet = null;
+		IClientOutgoingPacket packet = null;
 		if (target.isNpc())
 			packet = new NSPacket((NpcInstance) target, type, npcString, arg);
 		else

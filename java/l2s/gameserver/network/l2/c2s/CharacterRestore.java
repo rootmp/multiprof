@@ -1,10 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.GameClient;
-
-
-import l2s.gameserver.network.l2.GameClient;
-import l2s.gameserver.network.l2.s2c.CharacterSelectionInfo;
+import l2s.gameserver.network.l2.s2c.CharacterSelectionInfoPacket;
 
 public class CharacterRestore implements IClientIncomingPacket
 {
@@ -21,7 +18,6 @@ public class CharacterRestore implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		GameClient client = getClient();
 		try
 		{
 			client.markRestoredChar(_charSlot);
@@ -29,8 +25,8 @@ public class CharacterRestore implements IClientIncomingPacket
 		catch (Exception e)
 		{
 		}
-		CharacterSelectionInfo cl = new CharacterSelectionInfo(client);
-		sendPacket(cl);
+		CharacterSelectionInfoPacket cl = new CharacterSelectionInfoPacket(client);
+		client.sendPacket(cl);
 		client.setCharSelection(cl.getCharInfo());
 	}
 }

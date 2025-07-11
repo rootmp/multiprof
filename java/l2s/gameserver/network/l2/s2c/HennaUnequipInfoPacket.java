@@ -2,45 +2,51 @@ package l2s.gameserver.network.l2.s2c;
 
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.templates.henna.HennaTemplate;
+import l2s.gameserver.model.base.BaseStats;
+import l2s.gameserver.templates.item.henna.Henna;
 
+/**
+ * @author Zoey76
+ */
 public class HennaUnequipInfoPacket implements IClientOutgoingPacket
 {
-	private final HennaTemplate _hennaTemplate;
 	private final Player _player;
+	private final Henna _henna;
 
-	public HennaUnequipInfoPacket(HennaTemplate hennaTemplate, Player player)
+	public HennaUnequipInfoPacket(Henna henna, Player player)
 	{
-		_hennaTemplate = hennaTemplate;
+		_henna = henna;
 		_player = player;
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		packetWriter.writeD(_hennaTemplate.getSymbolId()); // symbol Id
-		packetWriter.writeD(_hennaTemplate.getDyeId()); // item id of dye
-		packetWriter.writeQ(_hennaTemplate.getRemoveCount());
-		packetWriter.writeQ(_hennaTemplate.getRemovePrice());
-		packetWriter.writeD(_hennaTemplate.isForThisClass(_player)); // able to draw or not 0 is false and 1 is true
-		packetWriter.writeQ(_player.getAdena());
+		packetWriter.writeD(_henna.getDyeId()); // symbol Id
+		packetWriter.writeD(_henna.getDyeItemId()); // item id of dye
+		packetWriter.writeQ(_henna.getCancelCount()); // total amount of dye require
+
+		packetWriter.writeD(0);
+		packetWriter.writeD(_henna.isAllowedClass(_player) ? 1 : 0); // able to remove or not
+		packetWriter.writeD((int) _player.getAdena());
+
 		packetWriter.writeD(_player.getINT()); // current INT
-		packetWriter.writeH(_player.getINT() - _hennaTemplate.getStatINT()); // equip INT
+		packetWriter.writeH(_player.getINT() - _henna.getBaseStats(BaseStats.INT)); // equip INT
 		packetWriter.writeD(_player.getSTR()); // current STR
-		packetWriter.writeH(_player.getSTR() - _hennaTemplate.getStatSTR()); // equip STR
+		packetWriter.writeH(_player.getSTR() - _henna.getBaseStats(BaseStats.STR)); // equip STR
 		packetWriter.writeD(_player.getCON()); // current CON
-		packetWriter.writeH(_player.getCON() - _hennaTemplate.getStatCON()); // equip CON
-		packetWriter.writeD(_player.getMEN()); // current MEM
-		packetWriter.writeH(_player.getMEN() - _hennaTemplate.getStatMEN()); // equip MEM
+		packetWriter.writeH(_player.getCON() - _henna.getBaseStats(BaseStats.CON)); // equip CON
+		packetWriter.writeD(_player.getMEN()); // current MEN
+		packetWriter.writeH(_player.getMEN() - _henna.getBaseStats(BaseStats.MEN)); // equip MEN
 		packetWriter.writeD(_player.getDEX()); // current DEX
-		packetWriter.writeH(_player.getDEX() - _hennaTemplate.getStatDEX()); // equip DEX
+		packetWriter.writeH(_player.getDEX() - _henna.getBaseStats(BaseStats.DEX)); // equip DEX
 		packetWriter.writeD(_player.getWIT()); // current WIT
-		packetWriter.writeH(_player.getWIT() - _hennaTemplate.getStatWIT()); // equip WIT
-		packetWriter.writeD(0x00); // current LUC
-		packetWriter.writeH(0x00); // equip LUC
-		packetWriter.writeD(0x00); // current CHA
-		packetWriter.writeH(0x00); // equip CHA
-		packetWriter.writeD(0x00); // Period
+		packetWriter.writeH(_player.getWIT() - _henna.getBaseStats(BaseStats.WIT)); // equip WIT
+		packetWriter.writeD(0); // current LUC
+		packetWriter.writeH(0); // equip LUC
+		packetWriter.writeD(0); // current CHA
+		packetWriter.writeH(0); // equip CHA
+		packetWriter.writeD(0);
 		return true;
 	}
 }

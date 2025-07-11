@@ -21,7 +21,7 @@ import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.HtmlMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.npc.NpcTemplate;
@@ -74,7 +74,7 @@ public abstract class ResidenceManager extends MerchantInstance
 
 	protected abstract Residence getResidence();
 
-	protected abstract L2GameServerPacket decoPacket();
+	protected abstract IClientOutgoingPacket decoPacket();
 
 	protected abstract int getPrivUseFunctions();
 
@@ -86,7 +86,7 @@ public abstract class ResidenceManager extends MerchantInstance
 
 	public void broadcastDecoInfo()
 	{
-		L2GameServerPacket decoPacket = decoPacket();
+		IClientOutgoingPacket decoPacket = decoPacket();
 		if (decoPacket == null)
 			return;
 		for (Player player : World.getAroundObservers(this))
@@ -593,10 +593,10 @@ public abstract class ResidenceManager extends MerchantInstance
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		List<L2GameServerPacket> list = super.addPacketList(forPlayer, dropper);
-		L2GameServerPacket p = decoPacket();
+		List<IClientOutgoingPacket> list = super.addPacketList(forPlayer, dropper);
+		IClientOutgoingPacket p = decoPacket();
 		if (p != null)
 			list.add(p);
 		return list;

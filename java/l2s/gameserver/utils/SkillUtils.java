@@ -13,6 +13,11 @@ import l2s.gameserver.skills.enums.SkillEntryType;
  **/
 public final class SkillUtils
 {
+	public static int getSkillLevelMask(final int skillLevel, final int subSkillLevel) 
+	{
+		return skillLevel | subSkillLevel << 16;
+	}
+	
 	public static int getSkillPTSHash(int skillId, int skillLevelMask)
 	{
 		return skillLevelMask | (skillId << 16);

@@ -7,8 +7,8 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExCuriousHouseObserveMode implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket ENTER = new ExCuriousHouseObserveMode(false);
-	public static final L2GameServerPacket LEAVE = new ExCuriousHouseObserveMode(true);
+	public static final IClientOutgoingPacket ENTER = new ExCuriousHouseObserveMode(false);
+	public static final IClientOutgoingPacket LEAVE = new ExCuriousHouseObserveMode(true);
 
 	private final boolean _leave;
 

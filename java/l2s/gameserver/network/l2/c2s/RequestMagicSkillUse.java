@@ -1,13 +1,11 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.model.items.attachment.FlagItemAttachment;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
@@ -26,8 +24,8 @@ public class RequestMagicSkillUse implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_magicId = packet.readD();
-		_ctrlPressed = readD() != 0;
-		_shiftPressed = readC() != 0;
+		_ctrlPressed = packet.readD() != 0;
+		_shiftPressed = packet.readC() != 0;
 		return true;
 	}
 

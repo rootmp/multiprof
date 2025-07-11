@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Playable;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 
@@ -36,7 +36,7 @@ public class StatusUpdate implements IBroadcastPacket
 	}
 
 	@Override
-	public L2GameServerPacket packet(Player player)
+	public IClientOutgoingPacket packet(Player player)
 	{
 		StatusUpdatePacket su = new StatusUpdatePacket(_updateType, _creature, _caster);
 		for (int field : _fields)

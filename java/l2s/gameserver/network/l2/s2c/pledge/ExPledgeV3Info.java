@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c.pledge;
 
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.commons.network.PacketWriter;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * @author Eden
@@ -24,7 +25,7 @@ public class ExPledgeV3Info implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(points);
 		packetWriter.writeD(rank);
-		packetWriter.writeString(announce);
+		packetWriter.writeSizedString(announce == null? "":announce);
 		packetWriter.writeC(isShowOnEnter);
 		return true;
 	}

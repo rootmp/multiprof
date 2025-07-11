@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ExNotifyPremiumItem implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExNotifyPremiumItem();
+	public static final IClientOutgoingPacket STATIC = new ExNotifyPremiumItem();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

@@ -13,4 +13,6 @@ public interface SkillInfo
 	int getDisplayLevel();
 
 	Skill getTemplate();
+
+	int getSubLevel();
 }

@@ -2,7 +2,9 @@ package l2s.gameserver.network.l2.c2s.pledge;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.s2c.pledge.ExPledgeEnemyInfoList;
 import l2s.gameserver.tables.ClanTable;
 

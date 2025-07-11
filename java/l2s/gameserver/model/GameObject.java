@@ -26,7 +26,7 @@ import l2s.gameserver.model.entity.Reflection;
 import l2s.gameserver.model.entity.events.Event;
 import l2s.gameserver.model.entity.events.EventOwner;
 import l2s.gameserver.network.l2.s2c.DeleteObjectPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.utils.Log;
 import l2s.gameserver.utils.Util;
 
@@ -738,14 +738,14 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 		return Util.dumpObject(this, simpleTypes, true, true);
 	}
 
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		return Collections.emptyList();
 	}
 
-	public List<L2GameServerPacket> deletePacketList(Player forPlayer)
+	public List<IClientOutgoingPacket> deletePacketList(Player forPlayer)
 	{
-		return Collections.<L2GameServerPacket>singletonList(new DeleteObjectPacket(this));
+		return Collections.<IClientOutgoingPacket>singletonList(new DeleteObjectPacket(this));
 	}
 
 	@Override

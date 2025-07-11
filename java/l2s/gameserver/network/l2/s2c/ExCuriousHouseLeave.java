@@ -6,7 +6,7 @@ import l2s.commons.network.PacketWriter;
 //связан с пакетом RequestLeaveCuriousHouse
 public class ExCuriousHouseLeave implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExCuriousHouseLeave();
+	public static final IClientOutgoingPacket STATIC = new ExCuriousHouseLeave();
 
 	private ExCuriousHouseLeave()
 	{

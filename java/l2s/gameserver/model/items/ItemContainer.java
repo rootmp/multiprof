@@ -45,6 +45,19 @@ public abstract class ItemContainer
 		}
 	}
 
+	public List<ItemInstance> getItemsList()
+	{
+		readLock();
+		try
+		{
+			return new ArrayList<>(_items);
+		}
+		finally
+		{
+			readUnlock();
+		}
+	}
+	
 	public boolean containsItem(ItemInstance item)
 	{
 		readLock();

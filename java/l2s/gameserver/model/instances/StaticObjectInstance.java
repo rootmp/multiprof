@@ -13,7 +13,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
 import l2s.gameserver.model.reference.L2Reference;
 import l2s.gameserver.network.l2.components.HtmlMessage;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.ShowTownMapPacket;
 import l2s.gameserver.network.l2.s2c.StaticObjectPacket;
 import l2s.gameserver.templates.StaticObjectTemplate;
@@ -83,9 +83,9 @@ public class StaticObjectInstance extends GameObject
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		return Collections.<L2GameServerPacket>singletonList(new StaticObjectPacket(this));
+		return Collections.<IClientOutgoingPacket>singletonList(new StaticObjectPacket(this));
 	}
 
 	@Override

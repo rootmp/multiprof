@@ -1,8 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
@@ -10,6 +7,7 @@ import l2s.gameserver.model.Request;
 import l2s.gameserver.model.Request.L2RequestType;
 import l2s.gameserver.model.World;
 import l2s.gameserver.model.entity.events.impl.PvPEvent;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.AskJoinPartyPacket;
@@ -23,7 +21,7 @@ public class RequestJoinParty implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_name = readS(Config.CNAME_MAXLEN);
+		_name = packet.readS(Config.CNAME_MAXLEN);
 		_itemDistribution = packet.readD();
 		return true;
 	}

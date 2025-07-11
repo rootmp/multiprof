@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExShowEnsoulWindow implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExShowEnsoulWindow();
+	public static final IClientOutgoingPacket STATIC = new ExShowEnsoulWindow();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

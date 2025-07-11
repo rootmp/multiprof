@@ -43,7 +43,7 @@ import l2s.gameserver.model.enums.ItemLocation;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.model.items.attachment.ItemAttachment;
 import l2s.gameserver.network.l2.s2c.DropItemPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SpawnItemPacket;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.stats.Env;
@@ -1298,11 +1298,11 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		// FIXME кажись дроппер у нас есть в итеме как переменная, ток проверить время?
 		// [VISTALL]
-		L2GameServerPacket packet = null;
+		IClientOutgoingPacket packet = null;
 		if (dropper != null)
 		{
 			packet = new DropItemPacket(this, dropper.getObjectId());
@@ -2173,5 +2173,15 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	public PetParam getPetParam()
 	{
 		return _petParam;
+	}
+	
+	public boolean isDamaged()
+	{
+		return false;
+	}
+
+	public void setDamaged(boolean b)
+	{
+  
 	}
 }

@@ -16,7 +16,7 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.components.HtmlMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.DeleteObjectPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.MonRaceInfoPacket;
 import l2s.gameserver.network.l2.s2c.PlaySoundPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
@@ -186,7 +186,7 @@ public class RaceManagerInstance extends NpcInstance
 		}
 	}
 
-	protected void broadcast(L2GameServerPacket pkt)
+	protected void broadcast(IClientOutgoingPacket pkt)
 	{
 		for (RaceManagerInstance manager : managers)
 			if (!manager.isDead())

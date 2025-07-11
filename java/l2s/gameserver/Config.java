@@ -99,6 +99,41 @@ public class Config
 	// Community Board Folder
 	public static final String BBS_FILE_GENERAL = "config/community/bbs.properties";
 
+	public static final String PHANTOM_PLAYERS_AKK = "rebellion";
+
+	public static Map<Integer,Integer> CLAN_POINTS_FOR_KILL_RB;
+	static 
+	{
+    CLAN_POINTS_FOR_KILL_RB = new HashMap<>();
+    
+    // 1 очко за убийство РБ
+    CLAN_POINTS_FOR_KILL_RB.put(25742, 1); // Жрец Ядра Дакар
+    CLAN_POINTS_FOR_KILL_RB.put(25738, 1); // Трутень-Жрец Королевы Муравьев
+    CLAN_POINTS_FOR_KILL_RB.put(25743, 1); // Жрец Орфен Лорд Ипос
+    CLAN_POINTS_FOR_KILL_RB.put(25739, 1); // Ангел-Жрец Баюма
+    
+    // 2 очка за убийство РБ
+    CLAN_POINTS_FOR_KILL_RB.put(29001, 2); // Королева Муравьев
+    CLAN_POINTS_FOR_KILL_RB.put(29014, 2); // Орфен
+    CLAN_POINTS_FOR_KILL_RB.put(29006, 2); // Ядро
+    CLAN_POINTS_FOR_KILL_RB.put(29022, 2); // Закен
+    CLAN_POINTS_FOR_KILL_RB.put(29020, 2); // Баюм
+    CLAN_POINTS_FOR_KILL_RB.put(25286, 2); // Анаким
+    CLAN_POINTS_FOR_KILL_RB.put(25283, 2); // Лилит
+    
+    // 3 очка за убийство РБ
+    CLAN_POINTS_FOR_KILL_RB.put(29176, 3); // Бессмертный Баюм
+    CLAN_POINTS_FOR_KILL_RB.put(29151, 3); // Антарас (1)
+    CLAN_POINTS_FOR_KILL_RB.put(29152, 3); // Антарас (2)
+    CLAN_POINTS_FOR_KILL_RB.put(29153, 3); // Антарас (3)
+    CLAN_POINTS_FOR_KILL_RB.put(25912, 3); // Чудовище
+    CLAN_POINTS_FOR_KILL_RB.put(25935, 3); // Совершенное Чудовище
+    CLAN_POINTS_FOR_KILL_RB.put(29172, 3); // Хаотическая Королева Муравьёв
+    CLAN_POINTS_FOR_KILL_RB.put(29171, 3); // Хаотическая Орфен
+    CLAN_POINTS_FOR_KILL_RB.put(29173, 3); // Хаотический Закен
+    CLAN_POINTS_FOR_KILL_RB.put(29170, 3); // Хаотическое Ядро
+	}
+
 	// Services Engine
 	public static boolean ENABLE_BUFF_PARTY_SERVICES;
 	public static int BUFF_ID1;

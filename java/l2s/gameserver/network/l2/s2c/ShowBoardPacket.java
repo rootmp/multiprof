@@ -11,7 +11,7 @@ import l2s.gameserver.utils.BypassStorage.BypassType;
 
 public class ShowBoardPacket implements IClientOutgoingPacket
 {
-	public static L2GameServerPacket CLOSE = new ShowBoardPacket();
+	public static IClientOutgoingPacket CLOSE = new ShowBoardPacket();
 
 	private static final String[] DIRECT_BYPASS = new String[]
 	{

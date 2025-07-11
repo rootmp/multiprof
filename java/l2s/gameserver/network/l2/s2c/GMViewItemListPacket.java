@@ -41,7 +41,7 @@ public class GMViewItemListPacket implements IClientOutgoingPacket
 			{
 				if (!temp.getTemplate().isQuest())
 				{
-					writeItemInfo(_player, temp);
+					writeItemInfo(packetWriter, _player, temp);
 				}
 			}
 		}

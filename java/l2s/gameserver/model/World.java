@@ -19,7 +19,7 @@ import l2s.gameserver.model.entity.Reflection;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.s2c.EventTriggerPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.utils.MapUtils;
 
 /**
@@ -1223,7 +1223,7 @@ public class World
 	 */
 	public static void removeObjectFromPlayers(GameObject object)
 	{
-		List<L2GameServerPacket> d = null;
+		List<IClientOutgoingPacket> d = null;
 		for (Player p : World.getAroundObservers(object))
 			p.sendPacket(p.removeVisibleObject(object, d == null ? d = object.deletePacketList(p) : d));
 	}

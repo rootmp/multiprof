@@ -52,7 +52,7 @@ public class PetInventoryUpdatePacket implements IClientOutgoingPacket
 		for (ItemInfo temp : _items)
 		{
 			packetWriter.writeH(temp.getLastChange());
-			writeItemInfo(temp);
+			writeItemInfo(packetWriter, temp);
 		}
 		return true;
 	}

@@ -1,12 +1,14 @@
 package l2s.gameserver.network.l2.c2s.blessing;
 
 import l2s.commons.dao.JdbcEntityState;
+import l2s.commons.network.PacketReader;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.PcInventory;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.InventoryUpdatePacket;
 import l2s.gameserver.network.l2.s2c.MagicSkillUse;

@@ -1,8 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2s.gameserver.data.xml.holder.SkillHolder;
 import l2s.gameserver.model.Player;
@@ -10,6 +7,7 @@ import l2s.gameserver.model.SkillLearn;
 import l2s.gameserver.model.base.AcquireType;
 import l2s.gameserver.model.base.ClassId;
 import l2s.gameserver.model.instances.NpcInstance;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.AcquireSkillInfoPacket;
 import l2s.gameserver.network.l2.s2c.ExAcquireSkillInfo;
 
@@ -27,7 +25,7 @@ public class RequestAcquireSkillInfo implements IClientIncomingPacket
 	{
 		_id = packet.readD();
 		_level = packet.readD();
-		_type = AcquireType.getById(readD());
+		_type = AcquireType.getById(packet.readD());
 		return true;
 	}
 
@@ -75,11 +73,11 @@ public class RequestAcquireSkillInfo implements IClientIncomingPacket
 
 		if (_type == AcquireType.NORMAL)
 		{
-			sendPacket(new ExAcquireSkillInfo(player, _type, skillLearn));
+			client.sendPacket(new ExAcquireSkillInfo(player, _type, skillLearn));
 		}
 		else
 		{
-			sendPacket(new AcquireSkillInfoPacket(_type, skillLearn));
+			client.sendPacket(new AcquireSkillInfoPacket(_type, skillLearn));
 		}
 	}
 }

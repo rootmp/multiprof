@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExMultiSellResult implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket SUCCESS = new ExMultiSellResult();
+	public static final IClientOutgoingPacket SUCCESS = new ExMultiSellResult();
 
 	private final boolean _success;
 	private final int _unk1;

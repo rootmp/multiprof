@@ -1,9 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
-import l2s.gameserver.Config;
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
-import l2s.gameserver.instancemanager.ServerVariables;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
@@ -12,14 +10,14 @@ import l2s.gameserver.network.l2.components.NpcString;
 import l2s.gameserver.network.l2.components.SysString;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.tables.ClanTable;
-import l2s.gameserver.templates.item.ItemTemplate;
 
 public class SayPacket2 extends NpcStringContainer
 {
 	// Flags
 	private static final int IS_FRIEND = 1 << 0;
 	private static final int IS_CLAN_MEMBER = 1 << 1;
-	// private static final int IS_MENTEE_OR_MENTOR = 1 << 2;
+	@SuppressWarnings("unused")
+	private static final int IS_MENTEE_OR_MENTOR = 1 << 2;
 	private static final int IS_ALLIANCE_MEMBER = 1 << 3;
 	private static final int IS_GM = 1 << 4;
 
@@ -57,12 +55,21 @@ public class SayPacket2 extends NpcStringContainer
 		_isLocSharing = isLocSharing;
 		_charName = charName;
 		_text = params.length > 0 ? params[0] : null;
-
 		Clan clan = ClanTable.getInstance().getClanByCharId(objectId);
-		if (clan != null)
+		if(clan != null)
 		{
 			castleId = clan.getCastle();
 		}
+	}
+
+	public SayPacket2(int objectId, ChatType type, String charName, String text)
+	{
+		this(objectId, type, 0, charName, NpcString.NONE, text);
+	}
+
+	public SayPacket2(int objectId, ChatType type, String charName, NpcString npcString, String... params)
+	{
+		this(objectId, type, 0, charName, NpcString.NONE, params);
 	}
 
 	public void setCharName(String name)
@@ -74,17 +81,17 @@ public class SayPacket2 extends NpcStringContainer
 	{
 		_charLevel = sender.getLevel();
 
-		if (receiver.getFriendList().contains(sender.getObjectId()))
+		if(receiver.getFriendList().contains(sender.getObjectId()))
 			_mask |= IS_FRIEND;
 
-		if (receiver.getClanId() > 0 && receiver.getClanId() == sender.getClanId())
+		if(receiver.getClanId() > 0 && receiver.getClanId() == sender.getClanId())
 			_mask |= IS_CLAN_MEMBER;
 
-		if (receiver.getAllyId() > 0 && receiver.getAllyId() == sender.getAllyId())
+		if(receiver.getAllyId() > 0 && receiver.getAllyId() == sender.getAllyId())
 			_mask |= IS_ALLIANCE_MEMBER;
 
 		// Does not shows level
-		if (sender.isGM())
+		if(sender.isGM())
 			_mask |= IS_GM;
 	}
 
@@ -93,7 +100,7 @@ public class SayPacket2 extends NpcStringContainer
 	{
 		packetWriter.writeD(_objectId);
 		packetWriter.writeD(_type.ordinal());
-		switch (_type)
+		switch(_type)
 		{
 			case SYSTEM_MESSAGE:
 				packetWriter.writeD(_sysString.getId());
@@ -101,84 +108,42 @@ public class SayPacket2 extends NpcStringContainer
 				break;
 			case TELL:
 				packetWriter.writeS(_charName);
-				writeElements();
+				writeElements(packetWriter);
 				packetWriter.writeC(_mask);
-				if ((_mask & IS_GM) == 0)
-					packetWriter.writeH(_charLevel);
+				if((_mask & IS_GM) == 0)
+					packetWriter.writeC(_charLevel);
 				break;
 			case CLAN:
 			case ALLIANCE:
 				packetWriter.writeS(_charName);
-				writeElements();
+				writeElements(packetWriter);
 				packetWriter.writeC(0x00); // TODO[UNDERGROUND]: UNK
 				break;
 			default:
 				packetWriter.writeS(_charName);
-				writeElements();
+				writeElements(packetWriter);
 				break;
 		}
-
-		int rank = RankManager.getInstance().getPlayerGlobalRank(_objectId);
-		if (rank == 1)
-		{
-			rank = 1;
-		}
-		else if (rank <= 30)
-		{
-			rank = 2;
-		}
-		else if (rank <= 100)
-		{
-			rank = 3;
-		}
-
-		packetWriter.writeC(rank); // Char global rank
-		packetWriter.writeC(castleId); // Castle ID
 		Player player = GameObjectsStorage.getPlayer(_objectId);
-		if (_isLocSharing == 1)
-		{
-			int previousRank = player.getPreviousPvpRank();
-			if ((previousRank > 0) && (previousRank < 4))
-			{
-				manageTeleport(player, true);
-			}
-			else
-			{
-				manageTeleport(player, false);
-			}
-		}
+		
+		packetWriter.writeC(RankManager.getInstance().getPlayerGlobalRankByChat(player)); // Char global rank
+		packetWriter.writeC(castleId); // Castle ID
 
-		if (_text != null)
+		//реализовать менеджер if(_isLocSharing == 1 && player != null)
+			//packetWriter.writeD(SharedTeleportManager.getInstance().nextId(player));
+		//else
+		packetWriter.writeD(0);
+		
+		packetWriter.writeC(0);
+		if(player!=null && player.isUseChatBg())
+			packetWriter.writeD(player.getChatBg());
+		else
+			packetWriter.writeD(0);
+		if(_text != null)
 		{
-			if (player != null)
+			if(player != null)
 				player.getListeners().onChatMessageReceive(_type, _charName, _text);
 		}
 		return true;
-	}
-
-	private void manageTeleport(Player player, boolean free)
-	{
-		if (player.getAntiFlood().canLocationShare() && player.getInventory().destroyItemByItemId(ItemTemplate.ITEM_ID_MONEY_L, Config.SHARE_POSITION_COST))
-		{
-			int tpId = ServerVariables.getInt("last_tp_id", 0) + 1;
-			ServerVariables.set("last_tp_id", tpId);
-			ServerVariables.set("tpId_" + tpId + "_name", player.getName());
-			ServerVariables.set("tpId_" + tpId + "_x", player.getX());
-			ServerVariables.set("tpId_" + tpId + "_y", player.getY());
-			ServerVariables.set("tpId_" + tpId + "_z", player.getZ());
-			packetWriter.writeC(1);
-			packetWriter.writeH(tpId);
-
-			if (!free)
-			{
-				player.sendPacket(SystemMessagePacket.removeItems(ItemTemplate.ITEM_ID_MONEY_L, Config.SHARE_POSITION_COST));
-			}
-		}
-		else
-		{
-			int tpId = ServerVariables.getInt("last_tp_id", 0);
-			packetWriter.writeC(1);
-			packetWriter.writeH(tpId);
-		}
 	}
 }

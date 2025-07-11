@@ -5,7 +5,7 @@ import java.util.List;
 
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.templates.item.WeaponTemplate;
 import l2s.gameserver.utils.Log;
 
@@ -89,7 +89,7 @@ public class ObservePoint extends Creature
 	}
 
 	@Override
-	public List<L2GameServerPacket> deletePacketList(Player forPlayer)
+	public List<IClientOutgoingPacket> deletePacketList(Player forPlayer)
 	{
 		return Collections.emptyList();
 	}

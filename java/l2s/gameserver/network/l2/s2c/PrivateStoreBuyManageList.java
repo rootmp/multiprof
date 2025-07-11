@@ -54,7 +54,7 @@ public class PrivateStoreBuyManageList implements IClientOutgoingPacket
 			packetWriter.writeD(_buyList0.size());// count for any items already added for sell
 			for (TradeItem bi : _buyList0)
 			{
-				writeItemInfo(bi);
+				writeItemInfo(packetWriter, bi);
 				packetWriter.writeQ(bi.getOwnersPrice());
 				packetWriter.writeQ(bi.getStorePrice());
 				packetWriter.writeQ(bi.getCount());
@@ -67,7 +67,7 @@ public class PrivateStoreBuyManageList implements IClientOutgoingPacket
 			packetWriter.writeD(_buyList.size());// for potential sells
 			for (TradeItem bi : _buyList)
 			{
-				writeItemInfo(bi);
+				writeItemInfo(packetWriter, bi);
 				packetWriter.writeQ(bi.getStorePrice());
 			}
 		}

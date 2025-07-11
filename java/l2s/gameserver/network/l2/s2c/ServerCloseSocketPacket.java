@@ -3,7 +3,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ServerCloseSocketPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ServerCloseSocketPacket();
+	public static final IClientOutgoingPacket STATIC = new ServerCloseSocketPacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

@@ -1,13 +1,11 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.PetInstance;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.PcInventory;
 import l2s.gameserver.model.items.PetInventory;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
 public class RequestGiveItemToPet implements IClientIncomingPacket

@@ -1,17 +1,15 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Request;
 import l2s.gameserver.model.Request.L2RequestType;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.ClanWar;
 import l2s.gameserver.model.pledge.ClanWar.ClanWarPeriod;
+import l2s.gameserver.network.l2.GameClient;
 
 /**
  * @author GodWorld & reworked by Bonux

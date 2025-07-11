@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  */
 public class ExDissmissMpccRoom implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExDissmissMpccRoom();
+	public static final IClientOutgoingPacket STATIC = new ExDissmissMpccRoom();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

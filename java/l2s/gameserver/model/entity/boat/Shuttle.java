@@ -12,7 +12,7 @@ import l2s.gameserver.network.l2.s2c.ExSuttleGetOffPacket;
 import l2s.gameserver.network.l2.s2c.ExSuttleGetOnPacket;
 import l2s.gameserver.network.l2.s2c.ExSuttleMovePacket;
 import l2s.gameserver.network.l2.s2c.ExValidateLocationInShuttlePacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.templates.ShuttleTemplate;
 
 import gnu.trove.map.hash.TIntObjectHashMap;
@@ -79,61 +79,61 @@ public class Shuttle extends Boat
 	}
 
 	@Override
-	public L2GameServerPacket infoPacket()
+	public IClientOutgoingPacket infoPacket()
 	{
 		return new ExShuttleInfoPacket(this);
 	}
 
 	@Override
-	public L2GameServerPacket movePacket()
+	public IClientOutgoingPacket movePacket()
 	{
 		return new ExSuttleMovePacket(this);
 	}
 
 	@Override
-	public L2GameServerPacket inMovePacket(Player player, Location src, Location desc)
+	public IClientOutgoingPacket inMovePacket(Player player, Location src, Location desc)
 	{
 		return new ExMTLInSuttlePacket(player, this, src, desc);
 	}
 
 	@Override
-	public L2GameServerPacket stopMovePacket()
+	public IClientOutgoingPacket stopMovePacket()
 	{
 		return null;
 	}
 
 	@Override
-	public L2GameServerPacket inStopMovePacket(Player player)
+	public IClientOutgoingPacket inStopMovePacket(Player player)
 	{
 		return new ExStopMoveInShuttlePacket(player);
 	}
 
 	@Override
-	public L2GameServerPacket startPacket()
+	public IClientOutgoingPacket startPacket()
 	{
 		return null;
 	}
 
 	@Override
-	public L2GameServerPacket checkLocationPacket()
+	public IClientOutgoingPacket checkLocationPacket()
 	{
 		return null;
 	}
 
 	@Override
-	public L2GameServerPacket validateLocationPacket(Player player)
+	public IClientOutgoingPacket validateLocationPacket(Player player)
 	{
 		return new ExValidateLocationInShuttlePacket(player);
 	}
 
 	@Override
-	public L2GameServerPacket getOnPacket(Playable playable, Location location)
+	public IClientOutgoingPacket getOnPacket(Playable playable, Location location)
 	{
 		return new ExSuttleGetOnPacket(playable, this, location);
 	}
 
 	@Override
-	public L2GameServerPacket getOffPacket(Playable playable, Location location)
+	public IClientOutgoingPacket getOffPacket(Playable playable, Location location)
 	{
 		return new ExSuttleGetOffPacket(playable, this, location);
 	}

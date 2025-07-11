@@ -4,12 +4,12 @@ import l2s.commons.network.PacketWriter;
 
 public class CharacterCreateFailPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket REASON_CREATION_FAILED = new CharacterCreateFailPacket(0x00); // "Your
+	public static final IClientOutgoingPacket REASON_CREATION_FAILED = new CharacterCreateFailPacket(0x00); // "Your
 																											// character
 																											// creation
 																											// has
 																											// failed."
-	public static final L2GameServerPacket REASON_TOO_MANY_CHARACTERS = new CharacterCreateFailPacket(0x01); // "You
+	public static final IClientOutgoingPacket REASON_TOO_MANY_CHARACTERS = new CharacterCreateFailPacket(0x01); // "You
 																												// cannot
 																												// create
 																												// another
@@ -31,25 +31,25 @@ public class CharacterCreateFailPacket implements IClientOutgoingPacket
 																												// (race,
 																												// class,
 																												// etc).
-	public static final L2GameServerPacket REASON_NAME_ALREADY_EXISTS = new CharacterCreateFailPacket(0x02); // "This
+	public static final IClientOutgoingPacket REASON_NAME_ALREADY_EXISTS = new CharacterCreateFailPacket(0x02); // "This
 																												// name
 																												// already
 																												// exists."
-	public static final L2GameServerPacket REASON_16_ENG_CHARS = new CharacterCreateFailPacket(0x03); // "Your title
+	public static final IClientOutgoingPacket REASON_16_ENG_CHARS = new CharacterCreateFailPacket(0x03); // "Your title
 																										// cannot exceed
 																										// 16 characters
 																										// in length.
 																										// Please try
 																										// again."
-	public static final L2GameServerPacket REASON_INCORRECT_NAME = new CharacterCreateFailPacket(0x04); // "Incorrect
+	public static final IClientOutgoingPacket REASON_INCORRECT_NAME = new CharacterCreateFailPacket(0x04); // "Incorrect
 																										// name. Please
 																										// try again."
-	public static final L2GameServerPacket REASON_CREATE_NOT_ALLOWED = new CharacterCreateFailPacket(0x05); // "Characters
+	public static final IClientOutgoingPacket REASON_CREATE_NOT_ALLOWED = new CharacterCreateFailPacket(0x05); // "Characters
 																											// cannot be
 																											// created
 																											// from this
 																											// server."
-	public static final L2GameServerPacket REASON_CHOOSE_ANOTHER_SVR = new CharacterCreateFailPacket(0x06); // "Unable
+	public static final IClientOutgoingPacket REASON_CHOOSE_ANOTHER_SVR = new CharacterCreateFailPacket(0x06); // "Unable
 																											// to create
 																											// character.
 																											// You are

@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Playable;
 import l2s.gameserver.model.Player;
 
@@ -22,36 +22,48 @@ public class RelationChangedPacket implements IClientOutgoingPacket
 		INSIDE_BATTLEFIELD,
 		IN_PVP,
 		CHAOTIC,
-		IN_PARTY,
+		IN_PARTY(32),
 		PARTY_LEADER,
 		SAME_PARTY,
 		IN_PLEDGE,
 		UNK,
-		PLEDGE_LEADER,
+		PLEDGE_LEADER(16),
 		SAME_PLEDGE,
 		SIEGE_PARTICIPANT,
 		SIEGE_ATTACKER,
 		UNK2,
-		KILLED_BY_DEATH_KNIGHT,
 		SIEGE_ALLY,
 		SIEGE_ENEMY,
 		SIEGE_DEFENDER,
-		CLAN_WAR_ATTACKER, // mutual war
-		CLAN_WAR_ATTACKED, // mutual war
+		CLAN_WAR_ATTACKED(8192),
+		CLAN_WAR_ATTACKER(24576), // mutual war
 		IN_ALLIANCE,
 		ALLIANCE_LEADER,
 		SAME_ALLIANCE,
 		UNK3, // blue sword
-		SURVEILLANCE;
+		SURVEILLANCE,
+		KILLED_BY_DEATH_KNIGHT(0x20000000);
 
-		public boolean isClanWarState()
+		private int _id;
+
+		RelationChangedType(int id)
 		{
-			return this == CLAN_WAR_ATTACKED || this == CLAN_WAR_ATTACKER;
+			_id = id;
+		}
+
+		RelationChangedType()
+		{
+
 		}
 
 		public long getRelationState()
 		{
-			return (long) Math.pow(2, ordinal()) * (isClanWarState() ? 10000_0000L : KILLED_BY_DEATH_KNIGHT == this ? 10000_0000L : SURVEILLANCE == this ? 10000_0000L : 1L);
+			return getId() > 0 ? getId() :(long) Math.pow(2, ordinal()) * (SURVEILLANCE == this ? 10000_0000L : 1L);
+		}
+
+		public int getId()
+		{
+			return _id;
 		}
 	}
 
@@ -85,31 +97,47 @@ public class RelationChangedPacket implements IClientOutgoingPacket
 
 		_datas.add(data);
 
+		if(_datas.size() > 1)
+			_mask |= SEND_MULTI;
+		else if(_datas.size() == 1)
+			_mask |= SEND_ONE;
+	}
+
+	public void setTestRelation(int objectId, RelationChangedType relationType, boolean isAutoAttackable, int karma, int pvpFlag)
+	{
+		RelationChangedData data = new RelationChangedData();
+		data.objectId = objectId;
+		data.karma = karma;
+		data.pvpFlag = pvpFlag;
+		data.isAutoAttackable = isAutoAttackable;
+		data.relation |=  relationType.getRelationState();
+
+		_datas.add(data);
+
 		if (_datas.size() > 1)
 			_mask |= SEND_MULTI;
 		else if (_datas.size() == 1)
 			_mask |= SEND_ONE;
 	}
-
+	
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_mask);
-		if ((_mask & SEND_MULTI) == SEND_MULTI)
+		if((_mask & SEND_MULTI) == SEND_MULTI)
 		{
 			packetWriter.writeH(_datas.size());
-			for (RelationChangedData data : _datas)
-				writeRelation(data);
+			for(RelationChangedData data : _datas)
+				writeRelation(packetWriter, data);
 		}
-		else if ((_mask & SEND_ONE) == SEND_ONE)
-			writeRelation(_datas.get(0));
-		else if ((_mask & SEND_DEFAULT) == SEND_DEFAULT)
+		else if((_mask & SEND_ONE) == SEND_ONE)
+			writeRelation(packetWriter, _datas.get(0));
+		else if((_mask & SEND_DEFAULT) == SEND_DEFAULT)
 			packetWriter.writeD(_datas.get(0).objectId);
-		
 		return true;
 	}
 
-	private void writeRelation(RelationChangedData data)
+	private void writeRelation(PacketWriter packetWriter, RelationChangedData data)
 	{
 		packetWriter.writeD(data.objectId);
 		packetWriter.writeQ(data.relation);

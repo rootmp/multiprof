@@ -46,7 +46,7 @@ import l2s.gameserver.network.l2.s2c.ExMagicAttackInfo;
 import l2s.gameserver.network.l2.s2c.ExPartyPetWindowAdd;
 import l2s.gameserver.network.l2.s2c.ExPartyPetWindowDelete;
 import l2s.gameserver.network.l2.s2c.ExPartyPetWindowUpdate;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.MyPetSummonInfoPacket;
 import l2s.gameserver.network.l2.s2c.NpcInfo;
 import l2s.gameserver.network.l2.s2c.NpcInfo.PetInfoPacket;
@@ -911,9 +911,9 @@ public abstract class Servitor extends Playable
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		List<L2GameServerPacket> list = new ArrayList<L2GameServerPacket>();
+		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
 		Player owner = getPlayer();
 
 		if (owner == forPlayer)
@@ -1281,7 +1281,7 @@ public abstract class Servitor extends Playable
 	}
 
 	@Override
-	protected L2GameServerPacket changeMovePacket()
+	protected IClientOutgoingPacket changeMovePacket()
 	{
 		return new NpcInfoState(this);
 	}

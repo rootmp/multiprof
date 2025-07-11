@@ -1,8 +1,6 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.network.l2.s2c.QuestListPacket;
 
 public class RequestQuestList implements IClientIncomingPacket
@@ -16,6 +14,6 @@ public class RequestQuestList implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		sendPacket(new QuestListPacket(client.getActiveChar()));
+		client.sendPacket(new QuestListPacket(client.getActiveChar()));
 	}
 }

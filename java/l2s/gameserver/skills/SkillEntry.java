@@ -180,4 +180,10 @@ public class SkillEntry implements SkillInfo
 	{
 		return makeSkillEntry(entryType, SkillHolder.getInstance().getSkill(skillId, skillLevel));
 	}
+
+	@Override
+	public int getSubLevel()
+	{
+		return 0;  
+	}
 }

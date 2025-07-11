@@ -76,7 +76,7 @@ import l2s.gameserver.model.quest.Quest;
 import l2s.gameserver.model.quest.QuestEventType;
 import l2s.gameserver.model.quest.QuestState;
 import l2s.gameserver.model.reward.RewardList;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.c2s.RequestItemEnsoul;
 import l2s.gameserver.network.l2.c2s.RequestRefine;
 import l2s.gameserver.network.l2.c2s.RequestRefineCancel;
@@ -94,7 +94,7 @@ import l2s.gameserver.network.l2.s2c.ExShowBaseAttributeCancelWindow;
 import l2s.gameserver.network.l2.s2c.ExShowEnsoulWindow;
 import l2s.gameserver.network.l2.s2c.ExShowVariationCancelWindow;
 import l2s.gameserver.network.l2.s2c.ExShowVariationMakeWindow;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.MoveToPawnPacket;
 import l2s.gameserver.network.l2.s2c.NpcInfo;
 import l2s.gameserver.network.l2.s2c.NpcInfoState;
@@ -2241,12 +2241,12 @@ public class NpcInstance extends Creature
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		if (isInvisible(forPlayer))
 			return Collections.emptyList();
 
-		List<L2GameServerPacket> list = new ArrayList<L2GameServerPacket>(3);
+		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>(3);
 		list.add(new NpcInfo(this, forPlayer).init());
 
 		if (isInCombat())
@@ -2462,7 +2462,7 @@ public class NpcInstance extends Creature
 		return getLeader() != null ? getLeader().isFearImmune() : !isMonster() || super.isFearImmune();
 	}
 
-	public boolean canPassPacket(Player player, Class<? extends L2GameClientPacket> packet, Object... arg)
+	public boolean canPassPacket(Player player, Class<? extends IClientIncomingPacket> packet, Object... arg)
 	{
 		return packet == RequestItemEnsoul.class || packet == RequestTryEnSoulExtraction.class || packet == RequestRefine.class || packet == RequestRefineCancel.class;
 	}
@@ -2499,7 +2499,7 @@ public class NpcInstance extends Creature
 	}
 
 	@Override
-	protected L2GameServerPacket changeMovePacket()
+	protected IClientOutgoingPacket changeMovePacket()
 	{
 		return new NpcInfoState(this);
 	}

@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -72,6 +73,7 @@ import l2s.gameserver.dao.AccountVariablesDAO;
 import l2s.gameserver.dao.CharacterCollectionFavoritesDAO;
 import l2s.gameserver.dao.CharacterDAO;
 import l2s.gameserver.dao.CharacterGroupReuseDAO;
+import l2s.gameserver.dao.CharacterHennaDAO;
 import l2s.gameserver.dao.CharacterPostFriendDAO;
 import l2s.gameserver.dao.CharacterPrivateStoreDAO;
 import l2s.gameserver.dao.CharacterRandomCraftDAO;
@@ -90,6 +92,7 @@ import l2s.gameserver.data.QuestHolder;
 import l2s.gameserver.data.xml.holder.DroppedItemsHolder;
 import l2s.gameserver.data.xml.holder.EventHolder;
 import l2s.gameserver.data.xml.holder.FakePlayersHolder;
+import l2s.gameserver.data.xml.holder.HennaPatternPotentialDataHolder;
 import l2s.gameserver.data.xml.holder.InstantZoneHolder;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.data.xml.holder.LevelUpRewardHolder;
@@ -144,6 +147,7 @@ import l2s.gameserver.model.actor.CreatureSkillCast;
 import l2s.gameserver.model.actor.basestats.PlayerBaseStats;
 import l2s.gameserver.model.actor.flags.PlayerFlags;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
+import l2s.gameserver.model.actor.instances.player.AdenLab;
 import l2s.gameserver.model.actor.instances.player.Agathion;
 import l2s.gameserver.model.actor.instances.player.AntiFlood;
 import l2s.gameserver.model.actor.instances.player.AttendanceRewards;
@@ -160,7 +164,6 @@ import l2s.gameserver.model.actor.instances.player.ElementalList;
 import l2s.gameserver.model.actor.instances.player.EnchantBrokenItemList;
 import l2s.gameserver.model.actor.instances.player.Fishing;
 import l2s.gameserver.model.actor.instances.player.FriendList;
-import l2s.gameserver.model.actor.instances.player.HennaList;
 import l2s.gameserver.model.actor.instances.player.Macro;
 import l2s.gameserver.model.actor.instances.player.MacroList;
 import l2s.gameserver.model.actor.instances.player.MissionLevelReward;
@@ -183,6 +186,7 @@ import l2s.gameserver.model.actor.recorder.PlayerStatsChangeRecorder;
 import l2s.gameserver.model.actor.stat.PlayerStat;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.model.base.AcquireType;
+import l2s.gameserver.model.base.BaseStats;
 import l2s.gameserver.model.base.ClassId;
 import l2s.gameserver.model.base.ClassLevel;
 import l2s.gameserver.model.base.ClassType;
@@ -236,6 +240,7 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.ManufactureItem;
 import l2s.gameserver.model.items.PcFreight;
 import l2s.gameserver.model.items.PcInventory;
+import l2s.gameserver.model.items.PcPenalty;
 import l2s.gameserver.model.items.PcRefund;
 import l2s.gameserver.model.items.PcWarehouse;
 import l2s.gameserver.model.items.TradeItem;
@@ -309,7 +314,7 @@ import l2s.gameserver.network.l2.s2c.ExWorldChatCnt;
 import l2s.gameserver.network.l2.s2c.GetItemPacket;
 import l2s.gameserver.network.l2.s2c.InventoryUpdatePacket;
 import l2s.gameserver.network.l2.s2c.ItemListPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.LogOutOkPacket;
 import l2s.gameserver.network.l2.s2c.MagicSkillUse;
 import l2s.gameserver.network.l2.s2c.MyTargetSelectedPacket;
@@ -342,6 +347,7 @@ import l2s.gameserver.network.l2.s2c.SocialActionPacket;
 import l2s.gameserver.network.l2.s2c.SpecialCameraPacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
+import l2s.gameserver.network.l2.s2c.ability.ExAcquireAPSkillList;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.network.l2.s2c.TargetSelectedPacket;
@@ -351,7 +357,9 @@ import l2s.gameserver.network.l2.s2c.TradeDonePacket;
 import l2s.gameserver.network.l2.s2c.UserInfo;
 import l2s.gameserver.network.l2.s2c.ValidateLocationPacket;
 import l2s.gameserver.network.l2.s2c.itemrestore.ExPenaltyItemDrop;
+import l2s.gameserver.network.l2.s2c.itemrestore.ExPenaltyItemInfo;
 import l2s.gameserver.network.l2.s2c.magiclamp.ExMagicLampExpInfo;
+import l2s.gameserver.network.l2.s2c.newhenna.NewHennaList;
 import l2s.gameserver.network.l2.s2c.pledge.ExPledgeCoinInfo;
 import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpBookShareRevengeNewRevengeInfo;
 import l2s.gameserver.network.l2.s2c.randomcraft.ExCraftInfo;
@@ -398,11 +406,14 @@ import l2s.gameserver.templates.item.RecipeTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2s.gameserver.templates.item.data.ItemData;
+import l2s.gameserver.templates.item.henna.Henna;
+import l2s.gameserver.templates.item.henna.HennaPoten;
 import l2s.gameserver.templates.item.support.Ensoul;
 import l2s.gameserver.templates.npc.NpcTemplate;
 import l2s.gameserver.templates.pet.PetData;
 import l2s.gameserver.templates.player.PlayerTemplate;
 import l2s.gameserver.templates.player.transform.TransformTemplate;
+import l2s.gameserver.templates.ranking.PVPRankingRankInfo;
 import l2s.gameserver.templates.skill.EffectTemplate;
 import l2s.gameserver.utils.AbnormalsComparator;
 import l2s.gameserver.utils.AdminFunctions;
@@ -541,6 +552,7 @@ public final class Player extends Playable implements PlayerGroup
 	private final Warehouse _warehouse = new PcWarehouse(this);
 	private final ItemContainer _refund = new PcRefund(this);
 	private final PcFreight _freight = new PcFreight(this);
+	private final PcPenalty _penalty = new PcPenalty(this);
 
 	private final BookMarkList _bookmarks = new BookMarkList(this, 0);
 	public Location bookmarkLocation = null;
@@ -870,7 +882,9 @@ public final class Player extends Playable implements PlayerGroup
 	private TIntSet _collectionFavorites = new TIntHashSet();
 
 	private int _killedMobs = 0;
-
+	
+	private final AdenLab _adenLab;
+	
 	private final EnchantBrokenItemList enchantBrokenItemList = new EnchantBrokenItemList(this);
 
 	public final String selectEvolvedPets = "SELECT * FROM petsEvolved WHERE hashId=?";
@@ -899,6 +913,7 @@ public final class Player extends Playable implements PlayerGroup
 	{
 		super(objectId, template);
 		this.hwidHolder = hwidHolder;
+		_adenLab = new AdenLab(this);
 		_baseTemplate = template;
 		_login = accountName;
 		_lastNotAfkTime = 0L;
@@ -3149,6 +3164,11 @@ public final class Player extends Playable implements PlayerGroup
 		return _refund;
 	}
 
+	public PcPenalty getPenalty()
+	{
+		return _penalty;
+	}
+	
 	public long getAdena()
 	{
 		return getInventory().getAdena();
@@ -4404,91 +4424,61 @@ public final class Player extends Playable implements PlayerGroup
 			}
 		}
 
-		final List<ItemInstance> drop = new LazyArrayList<ItemInstance>(), dropItem = new LazyArrayList<ItemInstance>(),
-				itemToRestore = new LazyArrayList<ItemInstance>();
+		final List<ItemInstance> 
+		drop = new LazyArrayList<ItemInstance>(), 
+		dropItem = new LazyArrayList<ItemInstance>();
 		getInventory().writeLock();
+		getPenalty().writeLock();
 		try
 		{
 			for (final ItemInstance item : getInventory().getItems())
 			{
 				if (!item.canBeDropped(this, true) || Config.KARMA_LIST_NONDROPPABLE_ITEMS.contains(item.getItemId()))
-				{
 					continue;
-				}
-
+		
 				if (item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON || item.getTemplate().getType2() == ItemTemplate.TYPE2_SHIELD_ARMOR || item.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY)
-				{
 					dropItem.add(item);
-				}
 			}
-
+		
 			checkAddItemToDrop(drop, dropItem, dropCount);
-
+		
 			// Dropping items, if present
 			if (drop.isEmpty())
 				return;
-
+		
 			_droppedItemsInfo.clear();
 			final int i = 1;
-
+		
+		
 			for (ItemInstance item : drop)
 			{
-				item = getInventory().removeItem(item);
-				Log.LogItem(this, isPvP ? Log.PvPPlayerDieDrop : Log.PvEPlayerDieDrop, item);
-
+				ItemInstance remove_item = getInventory().removeItemByObjectId(item.getObjectId(), item.getCount());
+				remove_item.setLostDate((int) (System.currentTimeMillis() / 1000));
+				
+				getPenalty().addItem(remove_item);
+				
 				_droppedItemsInfo.put(i, new DroppedItemsHolder(item.getItemId(), item.getEnchantLevel(), (int) item.getCount()));
-
+		
 				if (item.getEnchantLevel() > 0)
-				{
 					sendPacket(new SystemMessage(SystemMessage.DROPPED__S1_S2).addNumber(item.getEnchantLevel()).addItemName(item.getItemId()));
-				}
 				else
-				{
 					sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_DROPPED_S1).addItemName(item.getItemId()));
-				}
-
-				item.setLostDate((int) (System.currentTimeMillis() / 1000));
+		
+				
 				broadcastPacket(new ExPenaltyItemDrop(Location.findAroundPosition(this, Config.KARMA_RANDOM_DROP_LOCATION_LIMIT), item.getItemId()));
-				if (itemToRestore.size() < 50)
-				{
-					itemToRestore.add(item);
-				}
-				else
-				{
-					final ItemInstance itm = itemToRestore.get(0);
-					ItemsEnsoulDAO.getInstance().delete(itm.getObjectId(), true);
-					ItemsToRestoreDAO.getInstance().delete(itm);
-					itemToRestore.remove(0);
-					itemToRestore.add(item);
-				}
 			}
-
-			for (final ItemInstance item : itemToRestore)
-			{
-				ItemsToRestoreDAO.getInstance().save(item);
-				final Ensoul[] normalEnsouls = item.getNormalEnsouls();
-				final Ensoul[] specialEnsouls = item.getSpecialEnsouls();
-				if (normalEnsouls.length > 0 || specialEnsouls.length > 0)
-				{
-					for (int id = 1; id <= normalEnsouls.length; id++)
-					{
-						final Ensoul ensoul = normalEnsouls[id - 1];
-						ItemsEnsoulDAO.getInstance().insert(item.getObjectId(), 1, id, ensoul.getId(), true);
-					}
-					for (int id = 1; id <= specialEnsouls.length; id++)
-					{
-						final Ensoul ensoul = specialEnsouls[id - 1];
-						ItemsEnsoulDAO.getInstance().insert(item.getObjectId(), 2, id, ensoul.getId(), true);
-					}
-				}
-				item.delete();
-			}
+		
+			if(getPenalty().getItems().length>0)
+				sendPacket(new ExPenaltyItemInfo(this));
 		}
 		finally
 		{
 			getInventory().writeUnlock();
+			getPenalty().writeUnlock();
 		}
+		sendChanges();
 	}
+
 
 	public Map<Integer, DroppedItemsHolder> getDroppedItemsInfo()
 	{
@@ -4741,7 +4731,7 @@ public final class Player extends Playable implements PlayerGroup
 		return isProcessingRequest() && getRequest().isTypeOf(L2RequestType.TRADE);
 	}
 
-	public List<L2GameServerPacket> addVisibleObject(GameObject object, Creature dropper)
+	public List<IClientOutgoingPacket> addVisibleObject(GameObject object, Creature dropper)
 	{
 		if (isLogoutStarted() || object == null || object.getObjectId() == getObjectId() || !object.isVisible() || object.isObservePoint())
 			return Collections.emptyList();
@@ -4750,12 +4740,12 @@ public final class Player extends Playable implements PlayerGroup
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		if ((isInvisible(forPlayer) && forPlayer.getObjectId() != getObjectId()) || (isInStoreMode() && forPlayer.getVarBoolean(NO_TRADERS_VAR)))
 			return Collections.emptyList();
 
-		final List<L2GameServerPacket> list = new ArrayList<L2GameServerPacket>();
+		final List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
 		if (forPlayer.getObjectId() != getObjectId())
 		{
 			list.add(isPolymorphed() ? new NpcInfoPoly(this, forPlayer) : new ExCharInfo(this, forPlayer));
@@ -4826,14 +4816,14 @@ public final class Player extends Playable implements PlayerGroup
 		return list;
 	}
 
-	public List<L2GameServerPacket> removeVisibleObject(GameObject object, List<L2GameServerPacket> list)
+	public List<IClientOutgoingPacket> removeVisibleObject(GameObject object, List<IClientOutgoingPacket> list)
 	{
 		if (isLogoutStarted() || object == null || object.getObjectId() == getObjectId() || object.isObservePoint()) // FIXME
 																														// ||
 																														// isTeleporting()
 			return Collections.emptyList();
 
-		final List<L2GameServerPacket> result = list == null ? object.deletePacketList(this) : list;
+		final List<IClientOutgoingPacket> result = list == null ? object.deletePacketList(this) : list;
 
 		if (getParty() != null && object instanceof Creature)
 		{
@@ -5173,6 +5163,7 @@ public final class Player extends Playable implements PlayerGroup
 
 		_inventory.clear();
 		_warehouse.clear();
+		_penalty.clear();
 		_summon = null;
 		_pet = null;
 		_arrowItem = null;
@@ -5298,7 +5289,7 @@ public final class Player extends Playable implements PlayerGroup
 		return _privatestore;
 	}
 
-	public L2GameServerPacket getPrivateStoreMsgPacket(Player forPlayer)
+	public IClientOutgoingPacket getPrivateStoreMsgPacket(Player forPlayer)
 	{
 		switch (getPrivateStoreType())
 		{
@@ -5770,7 +5761,7 @@ public final class Player extends Playable implements PlayerGroup
 			statement = con.prepareStatement("INSERT INTO character_variables (obj_id, name, value, expire_time) VALUES (?,?,?,?)");
 			statement.setInt(1, player.getObjectId());
 			statement.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_rank");
-			statement.setInt(3, RankManager.getInstance().getPlayerGlobalRank(player.getObjectId()));
+			statement.setInt(3, RankManager.getInstance().getPlayerGlobalRank(player));
 			statement.setInt(4, -1);
 			statement.executeUpdate();
 			statement.close();
@@ -11967,7 +11958,7 @@ public final class Player extends Playable implements PlayerGroup
 		{
 			if (e.isOffensive() && !e.getSkill().isNewbie() && e.isCancelable() && !e.getSkill().isPreservedOnDeath() && !isSpecialAbnormal(e.getSkill()))
 			{
-				sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(e.getSkill().getId(), e.getSkill().getLevel()));
+				sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(e.getSkill().getId(), e.getSkill().getLevel(), e.getSkill().getSubLevel()));
 				e.exit();
 			}
 		}
@@ -14438,54 +14429,43 @@ public final class Player extends Playable implements PlayerGroup
 		}
 	}
 
-	public int getPreviousPvpRank()
+	public int getPreviousPvpRank() 
 	{
-		final Map<Integer, StatsSet> players = RankManager.getInstance().getOldPvpRankList();
-		for (final int id : players.keySet())
-		{
-			final StatsSet player = players.get(id);
-			if (player.getInteger("charId") == getObjectId())
-				return id;
-		}
-
-		return 0;
+		return RankManager.getInstance().getOldPvpRankList().entrySet().stream()
+				.filter(entry -> entry.getValue().nCharId == getObjectId())
+				.map(Map.Entry::getKey)
+				.findFirst()
+				.orElse(0);
 	}
 
-	private int getPvpRankPoints()
+
+	private int getPvpRankPoints() 
 	{
-		final Map<Integer, StatsSet> players = RankManager.getInstance().getPvpRankList();
-		for (final int id : players.keySet())
-		{
-			final StatsSet player = players.get(id);
-			if (player.getInteger("charId") == getObjectId())
-				return player.getInteger("points", 0);
-		}
-		return 0;
+		return RankManager.getInstance().getPvpRankList().values().stream()
+				.filter(player -> player.nCharId == getObjectId())
+				.mapToInt(player -> (int) player.nPVPPoint)
+				.findFirst()
+				.orElse(0);
 	}
 
-	private int getPvpRankKills()
+	private int getPvpRankKills() 
 	{
-		final Map<Integer, StatsSet> players = RankManager.getInstance().getPvpRankList();
-		for (final int id : players.keySet())
-		{
-			final StatsSet player = players.get(id);
-			if (player.getInteger("charId") == getObjectId())
-				return player.getInteger("kills", 0);
-		}
-		return 0;
+		return RankManager.getInstance().getPvpRankList().values().stream()
+				.filter(player -> player.nCharId == getObjectId())
+				.mapToInt(player -> player.nKillCount)
+				.findFirst()
+				.orElse(0);
 	}
 
-	private int getPvpRankDeaths()
+	private int getPvpRankDeaths() 
 	{
-		final Map<Integer, StatsSet> players = RankManager.getInstance().getPvpRankList();
-		for (final int id : players.keySet())
-		{
-			final StatsSet player = players.get(id);
-			if (player.getInteger("charId") == getObjectId())
-				return player.getInteger("deaths", 0);
-		}
-		return 0;
+		return RankManager.getInstance().getPvpRankList().values().stream()
+				.filter(player -> player.nCharId == getObjectId())
+				.mapToInt(player -> player.nDieCount)
+				.findFirst()
+				.orElse(0);
 	}
+
 
 	private void updatePvpRanking(Player killer)
 	{
@@ -14499,36 +14479,36 @@ public final class Player extends Playable implements PlayerGroup
 		final int points = getPvpRankPoints();
 		final int levelDiff = killer.getLevel() - getLevel();
 		killerPoints++; // first, added 1 points to killer
-		if (levelDiff <= -15)
+		if(levelDiff <= -15)
 		{
 			killerPoints += 10; // if killed equal or higher than 15 lvls - additional 10 points
 		}
 
-		final Map<Integer, StatsSet> players = RankManager.getInstance().getPvpRankList();
+		final Map<Integer, PVPRankingRankInfo> players = RankManager.getInstance().getPvpRankList();
 		final int killerId = killer.getObjectId();
-		for (final int id : players.keySet())
+		for(final int id : players.keySet())
 		{
-			final StatsSet player = players.get(id);
-			if (player.getInteger("charId") == getObjectId())
+			final PVPRankingRankInfo player = players.get(id);
+			if(player.nCharId == getObjectId())
 			{
 				foundSelf = true;
-				if (id <= 100)
+				if(id <= 100)
 				{
 					killerPoints += 10; // if killed are in top 100 - additional 10 points
 				}
 				PvpRankingDAO.getInstance().update(getObjectId(), kills, deaths + 1, points);
 			}
-			else if (player.getInteger("charId") == killerId)
+			else if(player.nCharId == killerId)
 			{
 				foundKiller = true;
 				PvpRankingDAO.getInstance().update(killerId, killerKills + 1, killerDeaths, killerPoints);
 			}
 		}
-		if (!foundKiller)
+		if(!foundKiller)
 		{
 			PvpRankingDAO.getInstance().insert(killerId, 1, 0, killerPoints);
 		}
-		if (!foundSelf)
+		if(!foundSelf)
 		{
 			PvpRankingDAO.getInstance().insert(getObjectId(), 0, 1, 0);
 		}
@@ -14536,97 +14516,52 @@ public final class Player extends Playable implements PlayerGroup
 
 	private void resetRankHistory()
 	{
+		unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_8_day");
+		unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_8_rank");
+		unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_8_exp");
+
+		for(int i = 7; i > 0; i--)
+		{
+			final int j = i + 1;
+			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day",0);
+			unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day");
+			setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_day", old_value);
+		}
+
+		for(int i = 7; i > 0; i--)
+		{
+			final int j = i + 1;
+			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_rank",0);
+			unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_rank");
+			setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_rank", old_value);
+		}
+
+		for(int i = 7; i > 0; i--)
+		{
+			final int j = i + 1;				
+			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_exp",0);
+			unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_exp");
+			setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_exp", old_value);
+		}
+
 		Connection con = null;
 		PreparedStatement statement = null;
-		PreparedStatement statement2 = null;
 		ResultSet rset = null;
-
 		try
 		{
 			con = DatabaseFactory.getInstance().getConnection();
-			statement = con.prepareStatement("DELETE FROM character_variables WHERE name=? AND obj_id=?");
-			statement.setString(1, PlayerVariables.RANKING_HISTORY_DAY + "_8_day");
-			statement.setInt(2, getObjectId());
-			statement.execute();
-			statement.close();
-			statement = con.prepareStatement("DELETE FROM character_variables WHERE name=? AND obj_id=?");
-			statement.setString(1, PlayerVariables.RANKING_HISTORY_DAY + "_8_rank");
-			statement.setInt(2, getObjectId());
-			statement.execute();
-			statement.close();
-			statement = con.prepareStatement("DELETE FROM character_variables WHERE name=? AND obj_id=?");
-			statement.setString(1, PlayerVariables.RANKING_HISTORY_DAY + "_8_exp");
-			statement.setInt(2, getObjectId());
-			statement.execute();
-			statement.close();
-
-			for (int i = 7; i > 0; i--)
-			{
-				statement = con.prepareStatement("UPDATE character_variables SET name=? WHERE name=? AND obj_id=?");
-				final int j = i + 1;
-				statement.setString(1, PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_day");
-				statement.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day");
-				statement.setInt(3, getObjectId());
-				statement.execute();
-				statement.close();
-			}
-
-			for (int i = 7; i > 0; i--)
-			{
-				statement = con.prepareStatement("UPDATE character_variables SET name=? WHERE name=? AND obj_id=?");
-				final int j = i + 1;
-				statement.setString(1, PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_rank");
-				statement.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_rank");
-				statement.setInt(3, getObjectId());
-				statement.execute();
-				statement.close();
-			}
-
-			for (int i = 7; i > 0; i--)
-			{
-				statement = con.prepareStatement("UPDATE character_variables SET name=? WHERE name=? AND obj_id=?");
-				final int j = i + 1;
-				statement.setString(1, PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_exp");
-				statement.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_exp");
-				statement.setInt(3, getObjectId());
-				statement.execute();
-				statement.close();
-			}
-
 			statement = con.prepareStatement("SELECT exp FROM character_subclasses WHERE char_obj_id=?");
 			statement.setInt(1, getObjectId());
 			rset = statement.executeQuery();
 
-			if (rset.next())
+			if(rset.next())
 			{
-				final long exp = rset.getLong("exp");
-
-				statement2 = con.prepareStatement("INSERT INTO character_variables (obj_id,name,value,expire_time) VALUES (?,?,?,?)");
-				statement2.setInt(1, getObjectId());
-				statement2.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_day");
-				statement2.setInt(3, (int) ((System.currentTimeMillis() / 1000) - 86400));
-				statement2.setInt(4, -1);
-				statement2.execute();
-				statement2.close();
-
-				statement2 = con.prepareStatement("INSERT INTO character_variables (obj_id,name,value,expire_time) VALUES (?,?,?,?)");
-				statement2.setInt(1, getObjectId());
-				statement2.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_rank");
-				statement2.setInt(3, RankManager.getInstance().getPlayerGlobalRank(getObjectId()));
-				statement2.setInt(4, -1);
-				statement2.execute();
-				statement2.close();
-
-				statement2 = con.prepareStatement("INSERT INTO character_variables (obj_id,name,value,expire_time) VALUES (?,?,?,?)");
-				statement2.setInt(1, getObjectId());
-				statement2.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_exp");
-				statement2.setLong(3, exp);
-				statement2.setInt(4, -1);
-				statement2.execute();
-				statement2.close();
+				setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_day", (int) ((System.currentTimeMillis() / 1000) - 86400));
+				setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_rank", RankManager.getInstance().getPlayerGlobalRank(this));
+				setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_exp", rset.getLong("exp"));
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.warn("Could not reset ranking history data: ", e);
 		}
@@ -14635,7 +14570,7 @@ public final class Player extends Playable implements PlayerGroup
 			DbUtils.closeQuietly(con, statement, rset);
 		}
 	}
-
+	
 	public void setCraftPoints(int craftPoints, String log)
 	{
 		craftPoints = Math.min(Config.LIM_CRAFT_POINTS, craftPoints);
@@ -15434,5 +15369,260 @@ public final class Player extends Playable implements PlayerGroup
 	public String getLastHwid()
 	{
 		return getVar("last_hwid","");
+	}
+
+	public boolean isUseChatBg()
+	{
+		return false;
+	}
+
+	public int getChatBg()
+	{
+		return 0;   
+	}
+	
+	public AdenLab getAdenLab()
+	{
+		return _adenLab;
+	}
+
+	public void sendAbilitiesInfo()
+	{
+		sendPacket(new ExAcquireAPSkillList(this, 2));
+	}
+
+
+	/** Hennas */
+	private HennaPoten[] _hennaPoten = new HennaPoten[4];
+	private final Map<BaseStats, Integer> _hennaBaseStats = new ConcurrentHashMap<>();
+
+	private void restoreHenna()
+	{
+		_hennaPoten = CharacterHennaDAO.getInstance().restoreHenna(this);
+		for(HennaPoten henna : _hennaPoten)
+		{
+			if(henna.getHenna() != null)
+				for(Skill skill : henna.getHenna().getSkills())// Reward henna skills
+				{
+					if(skill.getLevel() > getSkillLevel(skill.getId()))
+						addSkill(skill.getEntry(), false);
+				}
+		}
+		// Calculate henna modifiers of this player.
+		recalcHennaStats();
+		applyDyePotenSkills();
+		sendPacket(new NewHennaList(this, 0));
+	}
+
+	public boolean removeHenna(int slot)
+	{
+		if((slot < 1) || (slot > _hennaPoten.length))
+			return false;
+
+		final Henna henna = _hennaPoten[slot - 1].getHenna();
+		if(henna == null)
+			return false;
+
+		_hennaPoten[slot - 1].setHenna(null);
+
+		CharacterHennaDAO.getInstance().removeHenna(this, slot);
+
+		recalcHennaStats();
+		sendPacket(new UserInfo(this, false).addComponentType(UserInfoType.BASE_STATS, UserInfoType.ADDITIONAL_STATS, UserInfoType.STATS_INCREASE, UserInfoType.MAX_HPCPMP, UserInfoType.STATS, UserInfoType.SPEED));
+
+		// Remove henna skills
+		for(Skill skill : henna.getSkills())
+			removeSkill(skill, false);
+
+		for(HennaPoten h : _hennaPoten)
+		{
+			if(h.getHenna() != null)
+				for(Skill skill : h.getHenna().getSkills())// Reward henna skills
+				{
+					if(skill.getLevel() > getSkillLevel(skill.getId()))
+						addSkill(skill.getEntry(), false);
+				}
+		}
+		sendSkillList();
+		broadcastCharInfo();
+		return true;
+	}
+
+	public boolean addHenna(int slotId, Henna henna, boolean enchant)
+	{
+		if(slotId > getAvailableHennaSlots())
+			return false;
+
+		if(_hennaPoten[slotId - 1].getHenna() == null)
+		{
+			_hennaPoten[slotId - 1].setHenna(henna);
+			recalcHennaStats();
+
+			CharacterHennaDAO.getInstance().addHenna(this, henna, slotId);
+
+			// Reward henna skills
+			for(Skill skill : henna.getSkills())
+				if(skill.getLevel() > getSkillLevel(skill.getId()))
+					addSkill(skill.getEntry(), false);
+
+			sendPacket(new UserInfo(this, false).addComponentType(UserInfoType.BASE_STATS, UserInfoType.ADDITIONAL_STATS, UserInfoType.STATS_INCREASE, UserInfoType.MAX_HPCPMP, UserInfoType.STATS, UserInfoType.SPEED));
+
+			broadcastCharInfo();
+			return true;
+		}
+		return false;
+	}
+
+	public int getHennaEmptySlots()
+	{
+		int totalSlots = 0;
+		if(getClassId().level() == 1)
+		{
+			totalSlots = 2;
+		}
+		else if(getClassId().level() > 1)
+		{
+			totalSlots = getAvailableHennaSlots();
+		}
+
+		for(int i = 0; i < _hennaPoten.length; i++)
+		{
+			if(_hennaPoten[i].getHenna() != null)
+				totalSlots--;
+		}
+
+		if(totalSlots <= 0)
+			return 0;
+
+		return totalSlots;
+	}
+
+	private void recalcHennaStats()
+	{
+		_hennaBaseStats.clear();
+		for(HennaPoten hennaPoten : _hennaPoten)
+		{
+			final Henna henna = hennaPoten.getHenna();
+			if(henna == null)
+				continue;
+
+			for(Entry<BaseStats, Integer> entry : henna.getBaseStats().entrySet())
+				_hennaBaseStats.merge(entry.getKey(), entry.getValue(), Integer::sum);
+		}
+	}
+
+	public void applyDyePotenSkills()
+	{
+		for(int i = 1; i <= _hennaPoten.length; i++)
+		{
+			final HennaPoten hennaPoten = _hennaPoten[i - 1];
+
+			for(int skillId : HennaPatternPotentialDataHolder.getInstance().getSkillIdsBySlotId(i))
+				removeSkill(skillId, true);
+
+			if(hennaPoten.getPotenId() > 0 && hennaPoten.isPotentialAvailable() && (hennaPoten.getActiveStep() > 0))
+			{
+				Skill hennaSkill = null;
+
+				if(hennaPoten.getEnchantLevel() == 30 && hennaPoten.getEnchantExp() == 2500)
+					hennaSkill = HennaPatternPotentialDataHolder.getInstance().getPotentialSkill(hennaPoten.getPotenId(), i, hennaPoten.getActiveStep() + 1);
+				else
+					hennaSkill = HennaPatternPotentialDataHolder.getInstance().getPotentialSkill(hennaPoten.getPotenId(), i, hennaPoten.getActiveStep());
+
+				if(hennaSkill != null)
+				{
+					if(hennaSkill.getLevel() > getSkillLevel(hennaSkill.getId()))
+						addSkill(hennaSkill.getEntry(), false);
+				}
+				else
+					_log.error("applyDyePotenSkills: PotenId " + hennaPoten.getPotenId() + " ActiveStep " + hennaPoten.getActiveStep());
+			}
+		}
+	}
+
+	public HennaPoten getHennaPoten(int slot)
+	{
+		if((slot < 1) || (slot > _hennaPoten.length))
+			return null;
+
+		return _hennaPoten[slot - 1];
+	}
+
+	public Henna getHenna(int slot)
+	{
+		if((slot < 1) || (slot > getAvailableHennaSlots()))
+			return null;
+
+		return _hennaPoten[slot - 1].getHenna();
+	}
+
+	public boolean hasHennas()
+	{
+		for(HennaPoten hennaPoten : _hennaPoten)
+		{
+			final Henna henna = hennaPoten.getHenna();
+			if(henna != null)
+				return true;
+		}
+		return false;
+	}
+
+	public HennaPoten[] getHennaPotenList()
+	{
+		return _hennaPoten;
+	}
+
+	public int getHennaValue(BaseStats stat)
+	{
+		return _hennaBaseStats.getOrDefault(stat, 0);
+	}
+
+	public void resetHennaPotenDaily()
+	{
+		setDyePotentialDailyStep(1);
+		setDyePotentialDailyCount(20);
+	}
+
+	public int getAvailableHennaSlots()
+	{
+		return (int) getStat().calc(Stats.HENNA_SLOTS_AVAILABLE, 3);
+	}
+
+	public void setDyePotentialDailyStep(int dailyStep)
+	{
+		setVar(PlayerVariables.DYE_POTENTIAL_DAILY_STEP, dailyStep);
+	}
+
+	public void setDyePotentialDailyCount(int dailyCount)
+	{
+		setVar(PlayerVariables.DYE_POTENTIAL_DAILY_COUNT, dailyCount);
+	}
+
+	public int getDyePotentialDailyStep()
+	{
+		return getVarInt(PlayerVariables.DYE_POTENTIAL_DAILY_STEP, 1);
+	}
+
+	public int getDyePotentialDailyCount()
+	{
+		return getVarInt(PlayerVariables.DYE_POTENTIAL_DAILY_COUNT, 20);
+	}
+
+	public int getDyePotentialDailyResetCount()
+	{
+		return getVarInt(PlayerVariables.DYE_POTENTIAL_DAILY_RESET_COUNT, 0);
+	}
+
+	public void setDyePotentialDailyResetCount(int dailyResetCount)
+	{
+		setVar(PlayerVariables.DYE_POTENTIAL_DAILY_RESET_COUNT, dailyResetCount);
+	}
+
+	/**
+	 * @return map of all henna base stats bonus
+	 */
+	public Map<BaseStats, Integer> getHennaBaseStats()
+	{
+		return _hennaBaseStats;
 	}
 }

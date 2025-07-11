@@ -1,15 +1,13 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.dao.CharacterDAO;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.SubUnit;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.CharacterSelectedPacket;
 import l2s.gameserver.network.l2.s2c.ExNeedToChangeName;
 import l2s.gameserver.tables.ClanTable;
@@ -46,29 +44,29 @@ public class RequestExChangeName implements IClientIncomingPacket
 			if (changedOldName == null || StringUtils.isEmpty(changedOldName))
 			{
 				activeChar.unsetVar(Player.CHANGED_OLD_NAME);
-				sendPacket(new CharacterSelectedPacket(activeChar, client.getSessionKey().playOkID1));
+				client.sendPacket(new CharacterSelectedPacket(activeChar, client.getSessionKey().playOkID1));
 				return;
 			}
 			if (_newName == null || _newName.isEmpty())
 			{
-				sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
+				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
 			}
 			if (!Util.isMatchingRegexp(_newName, Config.CNAME_TEMPLATE))
 			{
-				sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
+				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
 			}
 			if (!activeChar.getName().equalsIgnoreCase(_newName) && CharacterDAO.getInstance().getObjectIdByName(_newName) > 0)
 			{
-				sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
+				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
 			}
 
 			activeChar.setName(_newName);
 			activeChar.saveNameToDB();
 			activeChar.unsetVar(Player.CHANGED_OLD_NAME);
-			sendPacket(new CharacterSelectedPacket(activeChar, client.getSessionKey().playOkID1));
+			client.sendPacket(new CharacterSelectedPacket(activeChar, client.getSessionKey().playOkID1));
 		}
 		else if (_type == ExNeedToChangeName.TYPE_PLEDGE)
 		{
@@ -104,7 +102,7 @@ public class RequestExChangeName implements IClientIncomingPacket
 
 			if (!Util.isMatchingRegexp(_newName, Config.CLAN_NAME_TEMPLATE))
 			{
-				sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
+				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
 			}
 
@@ -112,14 +110,14 @@ public class RequestExChangeName implements IClientIncomingPacket
 			{
 				if (s.getName().equalsIgnoreCase(_newName))
 				{
-					sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
+					client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 					return;
 				}
 			}
 
 			if (!subUnit.getName().equalsIgnoreCase(_newName) && ClanTable.getInstance().getClanByName(_newName) != null)
 			{
-				sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
+				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
 			}
 

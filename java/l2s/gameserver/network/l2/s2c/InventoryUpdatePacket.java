@@ -55,8 +55,8 @@ public class InventoryUpdatePacket implements IClientOutgoingPacket
 		for (ItemInfo item : _items)
 		{
 			packetWriter.writeH(item.getLastChange()); // Update type : 01-add, 02-modify, 03-remove
-			writeItemInfo(item);
+			writeItemInfo(packetWriter, item);
 		}
-		return true
+		return true;
 	}
 }

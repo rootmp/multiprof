@@ -1,11 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.ai.CtrlIntention;
@@ -28,6 +25,7 @@ import l2s.gameserver.model.instances.PetInstance;
 import l2s.gameserver.model.instances.SummonInstance;
 import l2s.gameserver.model.instances.residences.SiegeFlagInstance;
 import l2s.gameserver.model.quest.QuestState;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
@@ -325,8 +323,8 @@ public class RequestActionUse implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_actionId = packet.readD();
-		_ctrlPressed = readD() == 1;
-		_shiftPressed = readC() == 1;
+		_ctrlPressed = packet.readD() == 1;
+		_shiftPressed = packet.readC() == 1;
 		return true;
 	}
 

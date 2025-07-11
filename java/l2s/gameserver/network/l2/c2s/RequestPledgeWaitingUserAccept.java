@@ -1,12 +1,10 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
 import l2s.gameserver.model.pledge.Clan;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
@@ -23,7 +21,7 @@ public class RequestPledgeWaitingUserAccept implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_invite = readD() == 1;
+		_invite = packet.readD() == 1;
 		_objectId = packet.readD();
 		_pledgeType = packet.readD();
 		return true;

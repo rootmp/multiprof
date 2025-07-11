@@ -3,8 +3,8 @@ import l2s.commons.network.PacketWriter;
 
 public class TradeDonePacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket SUCCESS = new TradeDonePacket(1);
-	public static final L2GameServerPacket FAIL = new TradeDonePacket(0);
+	public static final IClientOutgoingPacket SUCCESS = new TradeDonePacket(1);
+	public static final IClientOutgoingPacket FAIL = new TradeDonePacket(0);
 
 	private int _response;
 

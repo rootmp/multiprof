@@ -45,7 +45,7 @@ public class ExGMViewQuestItemListPacket implements IClientOutgoingPacket
 			{
 				if (temp.getTemplate().isQuest())
 				{
-					writeItemInfo(temp);
+					writeItemInfo(packetWriter, temp);
 				}
 			}
 		}

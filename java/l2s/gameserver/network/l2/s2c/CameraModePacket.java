@@ -4,8 +4,8 @@ import l2s.commons.network.PacketWriter;
 
 public class CameraModePacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket EXIT = new CameraModePacket(0);
-	public static final L2GameServerPacket ENTER = new CameraModePacket(1);
+	public static final IClientOutgoingPacket EXIT = new CameraModePacket(0);
+	public static final IClientOutgoingPacket ENTER = new CameraModePacket(1);
 
 	private final int mode;
 

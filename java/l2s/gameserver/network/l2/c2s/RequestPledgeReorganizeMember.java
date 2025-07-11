@@ -1,12 +1,10 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.SubUnit;
 import l2s.gameserver.model.pledge.UnitMember;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.PledgeShowMemberListUpdatePacket;
@@ -24,7 +22,7 @@ public class RequestPledgeReorganizeMember implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_replace = packet.readD();
-		_subjectName = readS(16);
+		_subjectName = packet.readS(16);
 		_targetUnit = packet.readD();
 		if (_replace > 0)
 			_replaceName = packet.readS();

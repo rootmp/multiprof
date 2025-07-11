@@ -1,9 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 
 public class RequestExActivateAutoShortcut implements IClientIncomingPacket
 {
@@ -13,8 +11,8 @@ public class RequestExActivateAutoShortcut implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_slot = readH();
-		_activate = readC() > 0;
+		_slot = packet.readH();
+		_activate = packet.readC() > 0;
 		return true;
 	}
 

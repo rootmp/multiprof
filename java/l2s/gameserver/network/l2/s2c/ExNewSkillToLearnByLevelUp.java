@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ExNewSkillToLearnByLevelUp implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExNewSkillToLearnByLevelUp();
+	public static final IClientOutgoingPacket STATIC = new ExNewSkillToLearnByLevelUp();
 
 	public ExNewSkillToLearnByLevelUp()
 	{

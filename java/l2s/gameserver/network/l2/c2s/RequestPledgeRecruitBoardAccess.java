@@ -1,13 +1,11 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.clansearch.ClanSearchClan;
 import l2s.gameserver.model.clansearch.base.ClanSearchListType;
 import l2s.gameserver.model.pledge.Clan;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
@@ -25,7 +23,7 @@ public class RequestPledgeRecruitBoardAccess implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_pledgeAccess = packet.readD();
-		_searchType = ClanSearchListType.getType(readD());
+		_searchType = ClanSearchListType.getType(packet.readD());
 		packet.readS(); // Title (deprecated)
 		_desc = packet.readS();
 		_application = packet.readD(); // Application

@@ -9,8 +9,8 @@ import l2s.gameserver.network.l2.c2s.RequestExSendPost;
  */
 public class ExReplyWritePost implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC_TRUE = new ExReplyWritePost(1);
-	public static final L2GameServerPacket STATIC_FALSE = new ExReplyWritePost(0);
+	public static final IClientOutgoingPacket STATIC_TRUE = new ExReplyWritePost(1);
+	public static final IClientOutgoingPacket STATIC_FALSE = new ExReplyWritePost(0);
 
 	private int _reply;
 

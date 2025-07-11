@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public final class ExEnchantTwoRemoveFail implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExEnchantTwoRemoveFail();
+	public static final IClientOutgoingPacket STATIC = new ExEnchantTwoRemoveFail();
 
 	public ExEnchantTwoRemoveFail()
 	{

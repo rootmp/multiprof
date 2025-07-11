@@ -325,4 +325,10 @@ public class Castle extends Residence
 	{
 		Announcements.announceToAll(new ExCastleState(this));
 	}
+
+	public int getSellTaxPercent()
+	{
+		return 0;
+		    
+	}
 }

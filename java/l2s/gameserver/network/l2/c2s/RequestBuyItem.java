@@ -1,8 +1,4 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import l2s.commons.math.SafeMath;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.BuyListHolder;
 import l2s.gameserver.model.Player;
@@ -17,6 +14,7 @@ import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.model.items.Inventory;
 import l2s.gameserver.model.items.TradeItem;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExBuySellListPacket;
 import l2s.gameserver.templates.npc.BuyListTemplate;
@@ -233,7 +231,7 @@ public class RequestBuyItem implements IClientIncomingPacket
 			activeChar.getRefund().writeUnlock();
 		}
 
-		sendPacket(new ExBuySellListPacket.SellRefundList(activeChar, true, taxRate));
+		client.sendPacket(new ExBuySellListPacket.SellRefundList(activeChar, true, taxRate));
 		activeChar.sendChanges();
 	}
 }

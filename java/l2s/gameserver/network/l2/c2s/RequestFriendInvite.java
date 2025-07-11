@@ -1,12 +1,10 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
@@ -17,7 +15,7 @@ public class RequestFriendInvite implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_name = readS(16);
+		_name = packet.readS(16);
 		return true;
 	}
 

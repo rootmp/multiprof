@@ -13,7 +13,7 @@ import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.network.l2.components.CustomMessage;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.NpcInfo;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillTargetType;
@@ -218,13 +218,13 @@ public final class TrapInstance extends NpcInstance
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		// если не обезврежена и не овнер, ниче не показываем
 		if (!isDetected() && getOwner() != forPlayer)
 			return Collections.emptyList();
 
-		List<L2GameServerPacket> list = new ArrayList<L2GameServerPacket>();
+		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
 		list.add(new NpcInfo(this, forPlayer).init());
 
 		return list;

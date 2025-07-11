@@ -7,8 +7,8 @@ import l2s.commons.network.PacketWriter;
  */
 public class ExLightingCandleEvent implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket ENABLED = new ExLightingCandleEvent(1);
-	public static final L2GameServerPacket DISABLED = new ExLightingCandleEvent(0);
+	public static final IClientOutgoingPacket ENABLED = new ExLightingCandleEvent(1);
+	public static final IClientOutgoingPacket DISABLED = new ExLightingCandleEvent(0);
 
 	private final int _value;
 

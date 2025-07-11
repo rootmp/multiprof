@@ -1,9 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.RecipeBookItemListPacket;
 
 public class RequestRecipeBookOpen implements IClientIncomingPacket
@@ -14,7 +12,7 @@ public class RequestRecipeBookOpen implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		if (_buf.hasRemaining())
-			isDwarvenCraft = readD() == 0;
+			isDwarvenCraft = packet.readD() == 0;
 		return true;
 	}
 
@@ -25,6 +23,6 @@ public class RequestRecipeBookOpen implements IClientIncomingPacket
 		if (activeChar == null)
 			return;
 
-		sendPacket(new RecipeBookItemListPacket(activeChar, isDwarvenCraft));
+		client.sendPacket(new RecipeBookItemListPacket(activeChar, isDwarvenCraft));
 	}
 }

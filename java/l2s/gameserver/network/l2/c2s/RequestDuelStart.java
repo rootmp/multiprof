@@ -1,14 +1,12 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.EventHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
 import l2s.gameserver.model.entity.events.EventType;
 import l2s.gameserver.model.entity.events.impl.DuelEvent;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
@@ -20,7 +18,7 @@ public class RequestDuelStart implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_name = readS(Config.CNAME_MAXLEN);
+		_name = packet.readS(Config.CNAME_MAXLEN);
 		_duelType = packet.readD();
 		return true;
 	}

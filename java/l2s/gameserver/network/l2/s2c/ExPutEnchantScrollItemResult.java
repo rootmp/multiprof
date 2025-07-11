@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExPutEnchantScrollItemResult implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket FAIL = new ExPutEnchantScrollItemResult(0x00);
+	public static final IClientOutgoingPacket FAIL = new ExPutEnchantScrollItemResult(0x00);
 
 	private int _result;
 

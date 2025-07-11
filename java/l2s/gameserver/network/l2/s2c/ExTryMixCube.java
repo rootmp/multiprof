@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExTryMixCube implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket FAIL = new ExTryMixCube(6);
+	public static final IClientOutgoingPacket FAIL = new ExTryMixCube(6);
 
 	private final int _result;
 	private final int _itemId;

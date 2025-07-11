@@ -8,7 +8,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExPledgeWaitingListAlarm implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExPledgeWaitingListAlarm();
+	public static final IClientOutgoingPacket STATIC = new ExPledgeWaitingListAlarm();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

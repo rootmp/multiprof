@@ -226,4 +226,10 @@ public final class SkillLearn implements SkillInfo, Comparable<SkillLearn>
 			return getId() - o.getId();
 		}
 	}
+
+	@Override
+	public int getSubLevel()
+	{
+		return 0;    
+	}
 }

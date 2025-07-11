@@ -1,11 +1,9 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Macro;
 import l2s.gameserver.model.actor.instances.player.Macro.L2MacroCmd;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
 /**
@@ -21,9 +19,9 @@ public class RequestMakeMacro implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		int _id = packet.readD();
-		String _name = readS(32);
-		String _desc = readS(64);
-		String _acronym = readS(4);
+		String _name = packet.readS(32);
+		String _desc = packet.readS(64);
+		String _acronym = packet.readS(4);
 		int _icon = packet.readD();
 		int _count = packet.readC();
 		if (_count > 12)
@@ -35,7 +33,7 @@ public class RequestMakeMacro implements IClientIncomingPacket
 			int type = packet.readC(); // 1 = skill, 3 = action, 4 = shortcut
 			int d1 = packet.readD(); // skill or page number for shortcuts
 			int d2 = packet.readC();
-			String command = readS().replace(";", "").replace(",", "");
+			String command = packet.readS().replace(";", "").replace(",", "");
 			commands[i] = new L2MacroCmd(entry, type, d1, d2, command);
 		}
 		_macro = new Macro(_id, _icon, _name, _desc, _acronym, commands);

@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExPledgeBonusMarkReset implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExPledgeBonusMarkReset();
+	public static final IClientOutgoingPacket STATIC = new ExPledgeBonusMarkReset();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

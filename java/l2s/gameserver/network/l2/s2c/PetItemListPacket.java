@@ -19,7 +19,7 @@ public class PetItemListPacket implements IClientOutgoingPacket
 		packetWriter.writeH(items.length);
 
 		for (ItemInstance item : items)
-			writeItemInfo(item);
+			writeItemInfo(packetWriter, item);
 		
 		return true;
 	}

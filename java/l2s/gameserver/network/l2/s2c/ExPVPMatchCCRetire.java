@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ExPVPMatchCCRetire implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExPVPMatchCCRetire();
+	public static final IClientOutgoingPacket STATIC = new ExPVPMatchCCRetire();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

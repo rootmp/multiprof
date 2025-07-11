@@ -13,9 +13,11 @@ import l2s.gameserver.network.authcomm.AuthServerCommunication;
 import l2s.gameserver.network.authcomm.ReceivablePacket;
 import l2s.gameserver.network.authcomm.SessionKey;
 import l2s.gameserver.network.authcomm.gs2as.PlayerInGame;
+import l2s.gameserver.network.l2.ConnectionState;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.CharacterSelectionInfo;
+import l2s.gameserver.network.l2.s2c.CharacterSelectionInfoPacket;
+import l2s.gameserver.network.l2.s2c.ExBRVersion;
 import l2s.gameserver.network.l2.s2c.LoginResultPacket;
 import l2s.gameserver.network.l2.s2c.ServerCloseSocketPacket;
 import l2s.gameserver.network.l2.s2c.TutorialCloseHtmlPacket;
@@ -162,9 +164,10 @@ public class PlayerAuthResponse extends ReceivablePacket
 				client.sendPacket(TutorialCloseHtmlPacket.STATIC);
 
 			client.setAuthed(true);
-			client.setState(GameClient.GameClientState.AUTHED);
+			client.setConnectionState(ConnectionState.AUTHENTICATED);
 			client.sendPacket(LoginResultPacket.SUCCESS);
-
+			client.sendPacket(new ExBRVersion());
+			
 			if (Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
 			{
 				int[] bonuses = PremiumAccountDAO.getInstance().select(account);
@@ -196,7 +199,7 @@ public class PlayerAuthResponse extends ReceivablePacket
 
 			sendPacket(new PlayerInGame(client.getLogin()));
 
-			CharacterSelectionInfo csi = new CharacterSelectionInfo(client);
+			CharacterSelectionInfoPacket csi = new CharacterSelectionInfoPacket(client);
 			client.sendPacket(csi);
 			client.setCharSelection(csi.getCharInfo());
 			client.setPhoneNumber(phoneNumber);

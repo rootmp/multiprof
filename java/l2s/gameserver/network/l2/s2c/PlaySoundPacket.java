@@ -5,10 +5,10 @@ import l2s.gameserver.geometry.Location;
 
 public class PlaySoundPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket SIEGE_VICTORY = new PlaySoundPacket("Siege_Victory");
-	public static final L2GameServerPacket B04_S01 = new PlaySoundPacket("B04_S01");
-	public static final L2GameServerPacket HB01 = new PlaySoundPacket(PlaySoundPacket.Type.MUSIC, "HB01", 0, 0, 0, 0, 0);
-	public static final L2GameServerPacket BROKEN_KEY = new PlaySoundPacket("ItemSound2.broken_key");
+	public static final IClientOutgoingPacket SIEGE_VICTORY = new PlaySoundPacket("Siege_Victory");
+	public static final IClientOutgoingPacket B04_S01 = new PlaySoundPacket("B04_S01");
+	public static final IClientOutgoingPacket HB01 = new PlaySoundPacket(PlaySoundPacket.Type.MUSIC, "HB01", 0, 0, 0, 0, 0);
+	public static final IClientOutgoingPacket BROKEN_KEY = new PlaySoundPacket("ItemSound2.broken_key");
 
 	public enum Type
 	{

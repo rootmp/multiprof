@@ -1,12 +1,10 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Request;
 import l2s.gameserver.model.Request.L2RequestType;
 import l2s.gameserver.model.pledge.Alliance;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
 /**
@@ -19,7 +17,7 @@ public class RequestAnswerJoinAlly implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_response = _buf.remaining() >= 4 ? readD() : 0;
+		_response = packet.getReadableBytes() >= 4 ? packet.readD() : 0;
 		return true;
 	}
 

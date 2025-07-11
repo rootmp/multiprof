@@ -26,7 +26,7 @@ public class TradeOwnAddPacket implements IClientOutgoingPacket
 			packetWriter.writeH(1); // Count
 			packetWriter.writeC(0x00); // UNK 140
 			packetWriter.writeC(0x00); // UNK 140
-			writeItemInfo(_item, _amount);
+			writeItemInfo(packetWriter, _item, _amount);
 		}
 		return true;
 	}

@@ -5,7 +5,7 @@ import l2s.gameserver.model.Playable;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.GetOffVehiclePacket;
 import l2s.gameserver.network.l2.s2c.GetOnVehiclePacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.MoveToLocationInVehiclePacket;
 import l2s.gameserver.network.l2.s2c.StopMoveInVehiclePacket;
 import l2s.gameserver.network.l2.s2c.StopMovePacket;
@@ -28,55 +28,55 @@ public class Vehicle extends Boat
 	}
 
 	@Override
-	public L2GameServerPacket startPacket()
+	public IClientOutgoingPacket startPacket()
 	{
 		return new VehicleStartPacket(this);
 	}
 
 	@Override
-	public L2GameServerPacket validateLocationPacket(Player player)
+	public IClientOutgoingPacket validateLocationPacket(Player player)
 	{
 		return new ValidateLocationInVehiclePacket(player);
 	}
 
 	@Override
-	public L2GameServerPacket checkLocationPacket()
+	public IClientOutgoingPacket checkLocationPacket()
 	{
 		return new VehicleCheckLocationPacket(this);
 	}
 
 	@Override
-	public L2GameServerPacket infoPacket()
+	public IClientOutgoingPacket infoPacket()
 	{
 		return new VehicleInfoPacket(this);
 	}
 
 	@Override
-	public L2GameServerPacket movePacket()
+	public IClientOutgoingPacket movePacket()
 	{
 		return new VehicleDeparturePacket(this);
 	}
 
 	@Override
-	public L2GameServerPacket inMovePacket(Player player, Location src, Location desc)
+	public IClientOutgoingPacket inMovePacket(Player player, Location src, Location desc)
 	{
 		return new MoveToLocationInVehiclePacket(player, this, src, desc);
 	}
 
 	@Override
-	public L2GameServerPacket stopMovePacket()
+	public IClientOutgoingPacket stopMovePacket()
 	{
 		return new StopMovePacket(this);
 	}
 
 	@Override
-	public L2GameServerPacket inStopMovePacket(Player player)
+	public IClientOutgoingPacket inStopMovePacket(Player player)
 	{
 		return new StopMoveInVehiclePacket(player);
 	}
 
 	@Override
-	public L2GameServerPacket getOnPacket(Playable playable, Location location)
+	public IClientOutgoingPacket getOnPacket(Playable playable, Location location)
 	{
 		if (!playable.isPlayer())
 			return null;
@@ -85,7 +85,7 @@ public class Vehicle extends Boat
 	}
 
 	@Override
-	public L2GameServerPacket getOffPacket(Playable playable, Location location)
+	public IClientOutgoingPacket getOffPacket(Playable playable, Location location)
 	{
 		if (!playable.isPlayer())
 			return null;

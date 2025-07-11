@@ -720,4 +720,9 @@ public class PcInventory extends Inventory
 	{
 		return questItemsSize;
 	}
+
+	public int getPaperdollVariation3Id(int pAPERDOLL_ID)
+	{
+		return 0;  
+	}
 }

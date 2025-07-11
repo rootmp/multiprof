@@ -97,7 +97,7 @@ public class PrivateStoreManageList implements IClientOutgoingPacket
 			// Список вещей уже поставленых на продажу
 			for (TradeItem si : _sellList0.values())
 			{
-				writeItemInfo(si);
+				writeItemInfo(packetWriter, si);
 				packetWriter.writeQ(si.getOwnersPrice());
 				packetWriter.writeQ(si.getStorePrice());
 			}
@@ -110,7 +110,7 @@ public class PrivateStoreManageList implements IClientOutgoingPacket
 			packetWriter.writeD(_sellList.size());
 			for (TradeItem si : _sellList)
 			{
-				writeItemInfo(si);
+				writeItemInfo(packetWriter, si);
 				packetWriter.writeQ(si.getStorePrice());
 			}
 		}

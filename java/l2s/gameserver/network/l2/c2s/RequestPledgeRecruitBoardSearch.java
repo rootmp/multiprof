@@ -1,14 +1,12 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.clansearch.ClanSearchParams;
 import l2s.gameserver.model.clansearch.base.ClanSearchClanSortType;
 import l2s.gameserver.model.clansearch.base.ClanSearchListType;
 import l2s.gameserver.model.clansearch.base.ClanSearchSortOrder;
 import l2s.gameserver.model.clansearch.base.ClanSearchTargetType;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ExPledgeRecruitBoardSearch;
 
 /**
@@ -22,7 +20,7 @@ public class RequestPledgeRecruitBoardSearch implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_params = new ClanSearchParams(readD(), ClanSearchListType.getType(readD()), ClanSearchTargetType.valueOf(readD()), readS(), ClanSearchClanSortType.valueOf(readD()), ClanSearchSortOrder.valueOf(readD()), readD(), readD());
+		_params = new ClanSearchParams(packet.readD(), ClanSearchListType.getType(packet.readD()), ClanSearchTargetType.valueOf(packet.readD()), packet.readS(), ClanSearchClanSortType.valueOf(packet.readD()), ClanSearchSortOrder.valueOf(packet.readD()), packet.readD(), packet.readD());
 		return true;
 	}
 

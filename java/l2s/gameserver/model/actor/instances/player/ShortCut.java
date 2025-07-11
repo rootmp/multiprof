@@ -5,12 +5,14 @@ public class ShortCut
 	public enum ShortCutType
 	{
 		/* 0 */NONE,
-		/* 1 */ITEM,
-		/* 2 */SKILL,
-		/* 3 */ACTION,
-		/* 4 */MACRO,
-		/* 5 */RECIPE,
-		/* 6 */TPBOOKMARK;
+		/* 1 */ITEM,// ddddddddd
+		/* 2 */SKILL,// dddcd
+		/* 3 */ACTION,// dd
+		/* 4 */MACRO,// dd
+		/* 5 */RECIPE,// dd
+		/* 6 */TPBOOKMARK,// dd
+		/* 7 */ATTRIBUTE,
+		/* 8 */DELETED_ITEM;// ddddddddd
 
 		public static final ShortCutType[] VALUES = values();
 	}
@@ -111,5 +113,10 @@ public class ShortCut
 	public String toString()
 	{
 		return "ShortCut: " + _slot + "/" + _page + " ( " + _type + "," + _id + "," + _level + "," + _characterType + ")";
+	}
+
+	public int getSubLevel()
+	{
+		return 0;
 	}
 }

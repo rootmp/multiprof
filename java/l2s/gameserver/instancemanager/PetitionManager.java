@@ -17,7 +17,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
 import l2s.gameserver.network.l2.components.ChatType;
 import l2s.gameserver.network.l2.components.HtmlMessage;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SayPacket2;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.tables.GmListTable;
@@ -169,7 +169,7 @@ public final class PetitionManager implements IPetitionHandler
 			return _type.toString().replace("_", " ");
 		}
 
-		public void sendPetitionerPacket(L2GameServerPacket responsePacket)
+		public void sendPetitionerPacket(IClientOutgoingPacket responsePacket)
 		{
 			if (getPetitioner() == null || !getPetitioner().isOnline())
 				// endPetitionConsultation(PetitionState.Petitioner_Missing);
@@ -178,7 +178,7 @@ public final class PetitionManager implements IPetitionHandler
 			getPetitioner().sendPacket(responsePacket);
 		}
 
-		public void sendResponderPacket(L2GameServerPacket responsePacket)
+		public void sendResponderPacket(IClientOutgoingPacket responsePacket)
 		{
 			if (getResponder() == null || !getResponder().isOnline())
 			{

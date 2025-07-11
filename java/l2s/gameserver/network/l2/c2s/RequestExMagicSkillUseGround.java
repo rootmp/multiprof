@@ -1,11 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.SkillHolder;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
@@ -13,6 +10,7 @@ import l2s.gameserver.model.GameObject;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.model.World;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ExMagicSkillUseGround;
 import l2s.gameserver.network.l2.s2c.MagicSkillLaunchedPacket;
 import l2s.gameserver.network.l2.s2c.ValidateLocationPacket;
@@ -46,8 +44,8 @@ public class RequestExMagicSkillUseGround implements IClientIncomingPacket
 		_loc.y = packet.readD();
 		_loc.z = packet.readD();
 		_skillId = packet.readD();
-		_ctrlPressed = readD() != 0;
-		_shiftPressed = readC() != 0;
+		_ctrlPressed = packet.readD() != 0;
+		_shiftPressed = packet.readC() != 0;
 		return true;
 	}
 

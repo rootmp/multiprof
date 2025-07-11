@@ -29,5 +29,6 @@ public enum ItemLocation
 	CLANWH,
 	FREIGHT, // Dimension Manager
 	LEASE,
-	MAIL
+	MAIL,
+	PENALTY_INVENTORY,
 }

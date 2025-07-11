@@ -2,7 +2,8 @@ package l2s.gameserver.network.l2.s2c.itemrestore;
 
 import java.util.List;
 
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.commons.network.PacketWriter;
 
 public class ExItemRestoreList implements IClientOutgoingPacket
 {

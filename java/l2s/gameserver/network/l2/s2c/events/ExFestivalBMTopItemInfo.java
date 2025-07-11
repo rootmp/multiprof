@@ -5,7 +5,8 @@ import java.util.Map;
 
 import l2s.gameserver.data.xml.holder.FestivalBMHolder;
 import l2s.gameserver.instancemanager.ServerVariables;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.FestivalBMTemplate;
 
 /**

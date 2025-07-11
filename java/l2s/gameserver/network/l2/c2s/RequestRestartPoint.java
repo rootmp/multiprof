@@ -1,11 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.napile.primitive.pair.IntObjectPair;
 
 import l2s.commons.lang.ArrayUtils;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.listener.actor.player.OnAnswerListener;
 import l2s.gameserver.listener.actor.player.impl.ReviveAnswerListener;
@@ -19,6 +16,7 @@ import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.entity.residence.ClanHall;
 import l2s.gameserver.model.entity.residence.ResidenceFunction;
 import l2s.gameserver.model.pledge.Clan;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
 import l2s.gameserver.network.l2.s2c.DiePacket;
@@ -34,7 +32,7 @@ public class RequestRestartPoint implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_restartType = ArrayUtils.valid(RestartType.VALUES, readD());
+		_restartType = ArrayUtils.valid(RestartType.VALUES, packet.readD());
 		return true;
 	}
 

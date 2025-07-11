@@ -12,7 +12,7 @@ import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.ai.CtrlEvent;
 import l2s.gameserver.ai.CtrlIntention;
 import l2s.gameserver.model.instances.NpcInstance;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * Переработанный класс региона мира
@@ -169,7 +169,7 @@ public final class WorldRegion implements Iterable<GameObject>
 		int rid = object.getReflectionId();
 
 		Player p;
-		List<L2GameServerPacket> d = null;
+		List<IClientOutgoingPacket> d = null;
 
 		for (GameObject obj : this)
 		{
@@ -213,7 +213,7 @@ public final class WorldRegion implements Iterable<GameObject>
 		int rid = object.getReflectionId();
 
 		Player p;
-		List<L2GameServerPacket> d = null;
+		List<IClientOutgoingPacket> d = null;
 
 		for (GameObject obj : this)
 		{

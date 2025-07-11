@@ -5,7 +5,9 @@ import l2s.gameserver.instancemanager.ReflectionManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Pvpbook;
 import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
@@ -24,8 +26,8 @@ public class RequestExPvpBookShareRevengeTeleportToKiller implements IClientInco
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		killedName = readString();
-		killerName = readString();
+		killedName = packet.readString();
+		killerName = packet.readString();
 		return true;
 	}
 

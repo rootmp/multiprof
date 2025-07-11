@@ -1,10 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.geodata.GeoEngine;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ValidateLocationPacket;
 import l2s.gameserver.utils.PositionUtils;
 
@@ -33,7 +31,7 @@ public class ValidatePosition implements IClientIncomingPacket
 		_clientZ = packet.readD(); // Current client Z
 		_clientHeading = packet.readD(); // Heading
 		_vehicle = packet.readD(); // Vehicle OID
-		_stopMove = readC() == 1;
+		_stopMove = packet.readC() == 1;
 		return true;
 	}
 

@@ -3,7 +3,9 @@ package l2s.gameserver.network.l2.c2s.itemrestore;
 import l2s.gameserver.dao.ItemsToRestoreDAO;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.network.l2.s2c.itemrestore.ExPenaltyItemInfo;
@@ -20,7 +22,7 @@ public class RequestExPenaltyItemRestore implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		itemObjId = packet.readD();
-		isAdena = readC() == 1 ? true : false;
+		isAdena = packet.readC() == 1 ? true : false;
 		return true;
 	}
 

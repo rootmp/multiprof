@@ -1,8 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.commons.util.Rnd;
 import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.model.GameObject;
@@ -10,6 +7,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Request;
 import l2s.gameserver.model.Request.L2RequestType;
 import l2s.gameserver.model.pledge.Clan;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.AskJoinPledgePacket;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;

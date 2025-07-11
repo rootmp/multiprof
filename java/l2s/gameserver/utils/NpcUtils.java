@@ -10,7 +10,7 @@ import l2s.gameserver.model.SimpleSpawner;
 import l2s.gameserver.model.Spawner;
 import l2s.gameserver.model.entity.Reflection;
 import l2s.gameserver.model.instances.NpcInstance;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.NpcString;
 import l2s.gameserver.templates.npc.NpcTemplate;
 import l2s.gameserver.templates.npc.WalkerRoute;
@@ -33,7 +33,7 @@ public class NpcUtils
 		return (T) template.getNewInstance();
 	}
 
-	public static NpcInstance canPassPacket(Player player, L2GameClientPacket packet, Object... arg)
+	public static NpcInstance canPassPacket(Player player, IClientIncomingPacket packet, Object... arg)
 	{
 		final NpcInstance npcInstance = player.getLastNpc();
 		return (npcInstance != null && player.checkInteractionDistance(npcInstance) && npcInstance.canPassPacket(player, packet.getClass(), arg)) ? npcInstance : null;

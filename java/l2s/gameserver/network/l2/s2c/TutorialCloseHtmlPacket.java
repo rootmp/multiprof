@@ -3,7 +3,7 @@ import l2s.commons.network.PacketWriter;
 
 public class TutorialCloseHtmlPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new TutorialCloseHtmlPacket();
+	public static final IClientOutgoingPacket STATIC = new TutorialCloseHtmlPacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

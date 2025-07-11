@@ -1,14 +1,12 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.LuckyGameHolder;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ExStartLuckyGame;
 import l2s.gameserver.templates.luckygame.LuckyGameData;
 import l2s.gameserver.templates.luckygame.LuckyGameType;

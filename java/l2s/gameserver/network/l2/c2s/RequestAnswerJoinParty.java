@@ -1,12 +1,11 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Request;
 import l2s.gameserver.model.Request.L2RequestType;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
@@ -19,7 +18,7 @@ public class RequestAnswerJoinParty implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		if (_buf.hasRemaining())
+		if(packet.hasRemaining())
 			_response = packet.readD();
 		else
 			_response = 0;
@@ -30,21 +29,21 @@ public class RequestAnswerJoinParty implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Request request = activeChar.getRequest();
-		if (request == null || !request.isTypeOf(L2RequestType.PARTY))
+		if(request == null || !request.isTypeOf(L2RequestType.PARTY))
 			return;
 
-		if (!request.isInProgress())
+		if(!request.isInProgress())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -52,7 +51,7 @@ public class RequestAnswerJoinParty implements IClientIncomingPacket
 		}
 
 		Player requestor = request.getRequestor();
-		if (requestor == null)
+		if(requestor == null)
 		{
 			request.cancel();
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -60,7 +59,7 @@ public class RequestAnswerJoinParty implements IClientIncomingPacket
 			return;
 		}
 
-		if (requestor.getRequest() != request)
+		if(requestor.getRequest() != request)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -68,14 +67,14 @@ public class RequestAnswerJoinParty implements IClientIncomingPacket
 		}
 
 		// отказ(0) или автоматический отказ(-1)
-		if (_response <= 0)
+		if(_response <= 0)
 		{
 			request.cancel();
 			requestor.sendPacket(JoinPartyPacket.FAIL);
 			return;
 		}
 
-		if (activeChar.isInOlympiadMode())
+		if(activeChar.isInOlympiadMode())
 		{
 			request.cancel();
 			activeChar.sendPacket(SystemMsg.A_PARTY_CANNOT_BE_FORMED_IN_THIS_AREA);
@@ -83,7 +82,7 @@ public class RequestAnswerJoinParty implements IClientIncomingPacket
 			return;
 		}
 
-		if (requestor.isInOlympiadMode())
+		if(requestor.isInOlympiadMode())
 		{
 			request.cancel();
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_INVITE_A_FRIEND_OR_PARTY_WHILE_PARTICIPATING_IN_THE_CEREMONY_OF_CHAOS);
@@ -93,7 +92,7 @@ public class RequestAnswerJoinParty implements IClientIncomingPacket
 
 		Party party = requestor.getParty();
 
-		if (party != null && party.getMemberCount() >= Party.MAX_SIZE)
+		if(party != null && party.getMemberCount() >= Party.MAX_SIZE)
 		{
 			request.cancel();
 			activeChar.sendPacket(SystemMsg.THE_PARTY_IS_FULL);
@@ -103,15 +102,14 @@ public class RequestAnswerJoinParty implements IClientIncomingPacket
 		}
 
 		IBroadcastPacket problem = activeChar.canJoinParty(requestor);
-		if (problem != null)
+		if(problem != null)
 		{
 			request.cancel();
 			activeChar.sendPacket(problem, ActionFailPacket.STATIC);
 			requestor.sendPacket(JoinPartyPacket.FAIL);
 			return;
 		}
-
-		if (party == null)
+		if(party == null)
 		{
 			int itemDistribution = request.getInteger("itemDistribution");
 			requestor.setParty(party = new Party(requestor, itemDistribution));

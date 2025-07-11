@@ -8,7 +8,7 @@ import l2s.commons.network.PacketWriter;
  */
 public class ExGoodsInventoryChangedNotify implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExGoodsInventoryChangedNotify();
+	public static final IClientOutgoingPacket STATIC = new ExGoodsInventoryChangedNotify();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

@@ -3,7 +3,8 @@ package l2s.gameserver.network.l2.s2c.collection;
 import l2s.gameserver.data.xml.holder.CollectionsHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.CollectionTemplate;
 import l2s.gameserver.templates.item.data.CollectionItemData;
 
@@ -47,7 +48,7 @@ public class ExCollectionRegister implements IClientOutgoingPacket
 
 		if (!success)
 		{
-			return;
+			return true;
 		}
 
 		packetWriter.writeH(_collectionId); // collection id

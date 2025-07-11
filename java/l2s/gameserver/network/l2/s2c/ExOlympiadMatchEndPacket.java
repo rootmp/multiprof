@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ExOlympiadMatchEndPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExOlympiadMatchEndPacket();
+	public static final IClientOutgoingPacket STATIC = new ExOlympiadMatchEndPacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

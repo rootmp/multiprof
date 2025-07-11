@@ -4,7 +4,8 @@ import java.util.List;
 
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.items.TradeItem;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.commons.network.PacketWriter;
 
 public class ExPrivateStoreSearchItem implements IClientOutgoingPacket
 {
@@ -72,7 +73,7 @@ public class ExPrivateStoreSearchItem implements IClientOutgoingPacket
 			packetWriter.writeD(item.getLoc().getY());
 			packetWriter.writeD(item.getLoc().getZ());
 			// itemAssemble
-			writeItemInfo(item.getTradeItem(), true, 4);
+			writeItemInfo(packetWriter, item.getTradeItem(), true, 4);
 			packetWriter.writeD(item.getTradeItem().getObjectId());
 		}
 		return true;

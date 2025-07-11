@@ -1,10 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.utils.ChatUtils;
 import l2s.gameserver.utils.HtmlUtils;
 
@@ -17,7 +15,7 @@ public class UseItem implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_objectId = packet.readD();
-		_ctrlPressed = readD() == 1;
+		_ctrlPressed = packet.readD() == 1;
 		return true;
 	}
 

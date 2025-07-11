@@ -1,15 +1,13 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.Set;
 
 import l2s.commons.math.SafeMath;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.dao.MailDAO;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.mail.Mail;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExReplySentPost;
 import l2s.gameserver.network.l2.s2c.ExShowSentPostList;

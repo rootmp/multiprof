@@ -1,8 +1,4 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,6 +15,7 @@ import com.graphbuilder.math.VarMap;
 
 import l2s.commons.ban.BanBindType;
 import l2s.commons.ban.BanInfo;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.cache.ItemInfoCache;
 import l2s.gameserver.dao.HidenItemsDAO;
@@ -34,6 +31,7 @@ import l2s.gameserver.model.World;
 import l2s.gameserver.model.entity.olympiad.OlympiadGame;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.matching.MatchingRoom;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.ChatType;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
@@ -67,10 +65,10 @@ public class Say2C implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_text = readS(Config.CHAT_MESSAGE_MAX_LEN);
-		_type = l2s.commons.lang.ArrayUtils.valid(ChatType.VALUES, readD());
+		_text = packet.readS(Config.CHAT_MESSAGE_MAX_LEN);
+		_type = l2s.commons.lang.ArrayUtils.valid(ChatType.VALUES, packet.readD());
 		_isLocSharing = packet.readC();
-		_target = _type == ChatType.TELL ? readS(Config.CNAME_MAXLEN) : null;
+		_target = _type == ChatType.TELL ? packet.readS(Config.CNAME_MAXLEN) : null;
 		return true;
 	}
 

@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  */
 public class AcquireSkillDonePacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new AcquireSkillDonePacket();
+	public static final IClientOutgoingPacket STATIC = new AcquireSkillDonePacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

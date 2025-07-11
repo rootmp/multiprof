@@ -354,6 +354,8 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	private final SkillAutoUseType autoUseType;
 
+	private SkillEntry _entry;
+	
 	/**
 	 * Ð’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ!!! Ð£ Ð½Ð°Ñ�Ð»ÐµÐ´Ð½Ð¸ÐºÐ¾Ð² Ð²Ñ€ÑƒÑ‡Ð½ÑƒÑŽ Ð½Ð°Ð´Ð¾
 	 * Ð¿Ð¾Ð¼ÐµÐ½Ñ�Ñ‚ÑŒ Ñ‚Ð¸Ð¿ Ð½Ð° public
@@ -3758,5 +3760,18 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	public SkillAutoUseType getAutoUseType()
 	{
 		return autoUseType;
+	}
+
+	@Override
+	public int getSubLevel()
+	{
+		return 0;   
+	}
+
+	public SkillEntry getEntry()
+	{
+		if(_entry == null)
+			_entry = SkillHolder.getInstance().getSkillEntry(getId(), getLevel());
+		return _entry;
 	}
 }

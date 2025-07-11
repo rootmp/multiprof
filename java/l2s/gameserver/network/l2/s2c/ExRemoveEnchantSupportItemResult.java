@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ExRemoveEnchantSupportItemResult implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExRemoveEnchantSupportItemResult();
+	public static final IClientOutgoingPacket STATIC = new ExRemoveEnchantSupportItemResult();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

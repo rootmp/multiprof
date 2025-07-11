@@ -43,7 +43,7 @@ public class ExReplyPostItemList implements IClientOutgoingPacket
 			packetWriter.writeD(_itemsList.size());
 			for (ItemInfo item : _itemsList)
 			{
-				writeItemInfo(item);
+				writeItemInfo(packetWriter, item);
 			}
 		}
 		return true;

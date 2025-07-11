@@ -1,12 +1,10 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.BlockListPacket;
 
@@ -30,7 +28,7 @@ public class RequestBlock implements IClientIncomingPacket
 		_type = packet.readD(); // 0x00 - block, 0x01 - unblock, 0x03 - allblock, 0x04 - allunblock
 
 		if (_type == BLOCK || _type == UNBLOCK)
-			targetName = readS(16);
+			targetName = packet.readS(16);
 		return true;
 	}
 

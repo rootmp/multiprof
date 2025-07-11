@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public final class ExEnchantTwoOK implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExEnchantTwoOK();
+	public static final IClientOutgoingPacket STATIC = new ExEnchantTwoOK();
 
 	public ExEnchantTwoOK()
 	{

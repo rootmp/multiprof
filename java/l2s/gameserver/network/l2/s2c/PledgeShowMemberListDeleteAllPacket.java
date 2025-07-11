@@ -3,7 +3,7 @@ import l2s.commons.network.PacketWriter;
 
 public class PledgeShowMemberListDeleteAllPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new PledgeShowMemberListDeleteAllPacket();
+	public static final IClientOutgoingPacket STATIC = new PledgeShowMemberListDeleteAllPacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

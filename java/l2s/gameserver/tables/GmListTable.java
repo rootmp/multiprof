@@ -7,7 +7,7 @@ import l2s.gameserver.Config;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
 public class GmListTable
@@ -46,7 +46,7 @@ public class GmListTable
 			player.sendPacket(new SystemMessagePacket(SystemMsg.GM__C1).addName(gm));
 	}
 
-	public static void broadcastToGMs(L2GameServerPacket packet)
+	public static void broadcastToGMs(IClientOutgoingPacket packet)
 	{
 		for (Player gm : getAllGMs())
 			gm.sendPacket(packet);

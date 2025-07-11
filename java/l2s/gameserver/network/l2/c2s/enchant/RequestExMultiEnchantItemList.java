@@ -12,7 +12,9 @@ import l2s.gameserver.data.xml.holder.EnchantItemHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.PcInventory;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExItemAnnounce;
 import l2s.gameserver.network.l2.s2c.InventoryUpdatePacket;
@@ -39,7 +41,7 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 {
 	private static final int ENCHANT_DELAY = 1000;
 
-	private static final Logger _log = LoggerFactory.getLogger(RequestEnchantItem.class);
+	private static final Logger _log = LoggerFactory.getLogger(RequestExMultiEnchantItemList.class);
 
 	private static final int SUCCESS_VISUAL_EFF_ID = 5965;
 	private static final int FAIL_VISUAL_EFF_ID = 5949;
@@ -57,9 +59,9 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 	{
 		_useLateAnnounce = packet.readC();
 		_slotId = packet.readD();
-		for (int i = 1; getAvaliableBytes() != 0; i++)
+		for (int i = 1; packet.getReadableBytes() != 0; i++)
 		{
-			_itemObjectId.put(i, readD());
+			_itemObjectId.put(i, packet.readD());
 		}
 		return true;
 	}

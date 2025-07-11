@@ -1,14 +1,15 @@
 package l2s.gameserver.network.l2.s2c.pledge;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.utils.PledgeBonusUtils;
 
 /**
  * @author Bonux
- **/
+**/
 public class ExPledgeBonusOpen implements IClientOutgoingPacket
 {
 	private int _attendanceProgress = 0;
@@ -22,11 +23,11 @@ public class ExPledgeBonusOpen implements IClientOutgoingPacket
 
 	public ExPledgeBonusOpen(Player player)
 	{
-		if (!Config.EX_USE_PLEDGE_BONUS)
+		if(!Config.EX_USE_PLEDGE_BONUS)
 			return;
 
 		Clan clan = player.getClan();
-		if (clan == null)
+		if(clan == null)
 			return;
 
 		_attendanceProgress = clan.getAttendanceProgress();
@@ -42,19 +43,19 @@ public class ExPledgeBonusOpen implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		// ddcdccddcdcc
-		packetWriter.writeD(PledgeBonusUtils.MAX_ATTENDANCE_PROGRESS); // Attendance requirement (max)
-		packetWriter.writeD(_attendanceProgress); // Current amount
-		packetWriter.writeC(2); // Reward Type (0 - Skill, 1 - Item)
-		packetWriter.writeD(_yesterdayAttendanceRewardId); // Yesterday's reward
-		packetWriter.writeC(_yesterdayAttendanceReward); // Reward level
-		packetWriter.writeC(_attendanceRewardReceivable); // Receivable
-		packetWriter.writeD(PledgeBonusUtils.MAX_HUNTING_PROGRESS); // Hunting requirement (max)
-		packetWriter.writeD(_huntingProgress); // Current amount
-		packetWriter.writeC(2); // Reward Type (0 - Skill, 1 - Item)
-		packetWriter.writeD(_yesterdayHuntingRewardId); // Yesterday's reward
-		packetWriter.writeC(_yesterdayHuntingReward); // Reward level
-		packetWriter.writeC(_huntingRewardReceivable); // Receivable
+		//ddcdccddcdcc
+		packetWriter.writeD(PledgeBonusUtils.MAX_ATTENDANCE_PROGRESS);    // Attendance requirement (max)
+		packetWriter.writeD(_attendanceProgress);    // Current amount
+		packetWriter.writeC(2);	// Reward Type (0 - Skill, 1 - Item)
+		packetWriter.writeD(_yesterdayAttendanceRewardId);    // Yesterday's reward
+		packetWriter.writeC(_yesterdayAttendanceReward);    // Reward level
+		packetWriter.writeC(_attendanceRewardReceivable);    // Receivable
+		packetWriter.writeD(PledgeBonusUtils.MAX_HUNTING_PROGRESS);    // Hunting requirement (max)
+		packetWriter.writeD(_huntingProgress);    // Current amount
+		packetWriter.writeC(2);	// Reward Type (0 - Skill, 1 - Item)
+		packetWriter.writeD(_yesterdayHuntingRewardId);    // Yesterday's reward
+		packetWriter.writeC(_yesterdayHuntingReward);    // Reward level
+		packetWriter.writeC(_huntingRewardReceivable);    // Receivable
 		return true;
 	}
 }

@@ -32,7 +32,7 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	VERSION(ProtocolVersion::new, ConnectionState.CONNECTED),
 	MOVE_TO_LOCATION(MoveBackwardToLocation::new, ConnectionState.IN_GAME),
 	NOT_USE_34(null, ConnectionState.IN_GAME),
-	ENTER_WORLD(EnterWorld::new, ConnectionState.JOINING_GAME),
+	ENTER_WORLD(RequestEnterWorld::new, ConnectionState.JOINING_GAME),
 	CHARACTER_SELECT(CharacterSelected::new, ConnectionState.AUTHENTICATED),//RENAME
 	NEW_CHARACTER(NewCharacter::new, ConnectionState.AUTHENTICATED),
 	ITEMLIST(RequestItemList::new, ConnectionState.IN_GAME),

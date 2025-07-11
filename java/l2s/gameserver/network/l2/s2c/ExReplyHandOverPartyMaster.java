@@ -8,8 +8,8 @@ import l2s.commons.network.PacketWriter;
  */
 public class ExReplyHandOverPartyMaster implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket TRUE = new ExReplyHandOverPartyMaster(true);
-	public static final L2GameServerPacket FALSE = new ExReplyHandOverPartyMaster(false);
+	public static final IClientOutgoingPacket TRUE = new ExReplyHandOverPartyMaster(true);
+	public static final IClientOutgoingPacket FALSE = new ExReplyHandOverPartyMaster(false);
 
 	private boolean _isLeader;
 

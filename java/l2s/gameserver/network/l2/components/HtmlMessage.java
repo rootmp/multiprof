@@ -17,7 +17,7 @@ import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
 import l2s.gameserver.network.l2.s2c.ExNpcQuestHtmlMessage;
 import l2s.gameserver.network.l2.s2c.ExPremiumManagerShowHTML;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.NpcHtmlMessagePacket;
 import l2s.gameserver.utils.BypassStorage.BypassType;
 import l2s.gameserver.utils.ChatUtils;
@@ -135,7 +135,7 @@ public class HtmlMessage implements IBroadcastPacket
 	}
 
 	@Override
-	public L2GameServerPacket packet(Player player)
+	public IClientOutgoingPacket packet(Player player)
 	{
 		CharSequence content = null;
 

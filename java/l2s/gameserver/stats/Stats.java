@@ -464,7 +464,9 @@ public enum Stats
 	BLESSED_BY_SAYHA("blessedBySayha"),
 	VITAL_RATE("vital_rate", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	VITAL_ADD("vital_add", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
-	VITAL_SUB("vital_sub", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY);
+	VITAL_SUB("vital_sub", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
+	// Henna
+	HENNA_SLOTS_AVAILABLE("hennaSlots");
 
 	public static final Stats[] VALUES = values();
 	public static final int NUM_STATS = VALUES.length;

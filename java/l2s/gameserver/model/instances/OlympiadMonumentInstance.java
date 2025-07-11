@@ -6,7 +6,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.ClassLevel;
 import l2s.gameserver.model.entity.Hero;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.c2s.RequestBypassToServer;
 import l2s.gameserver.network.l2.s2c.ExHeroListPacket;
 import l2s.gameserver.templates.item.ItemTemplate;
@@ -357,7 +357,7 @@ public class OlympiadMonumentInstance extends NpcInstance
 	}
 
 	@Override
-	public boolean canPassPacket(Player player, Class<? extends L2GameClientPacket> packet, Object... arg)
+	public boolean canPassPacket(Player player, Class<? extends IClientIncomingPacket> packet, Object... arg)
 	{
 		return packet == RequestBypassToServer.class && arg.length == 1 && (arg[0].equals("_heroes"));
 	}

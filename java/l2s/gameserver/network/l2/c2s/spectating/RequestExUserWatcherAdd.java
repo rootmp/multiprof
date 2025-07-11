@@ -5,7 +5,9 @@ import l2s.gameserver.dao.CharacterSpectatingListDAO;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Spectating;
 import l2s.gameserver.model.actor.instances.player.SpectatingList;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
 import gnu.trove.map.TIntObjectMap;
@@ -20,7 +22,7 @@ public class RequestExUserWatcherAdd implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_name = readString();
+		_name = packet.readString();
 		packet.readD(); // 0
 		return true;
 	}

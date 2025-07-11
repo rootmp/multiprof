@@ -2,18 +2,17 @@ package l2s.gameserver.network.l2.s2c.pledge;
 
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.gameserver.templates.ranking.PkPledgeRanking;
 
-/**
- * @author nexvill
- */
 public class ExPledgeRankingMyInfo implements IClientOutgoingPacket
 {
 	private Player _player;
-	private final Map<Integer, Integer> _clanList;
-	private final Map<Integer, Integer> _previousClanList;
+	private final Map<Integer, PkPledgeRanking> _clanList;
+	private final Map<Integer, PkPledgeRanking> _previousClanList;
 
 	public ExPledgeRankingMyInfo(Player player)
 	{
@@ -25,7 +24,7 @@ public class ExPledgeRankingMyInfo implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if (_player.getClan() == null)
+		if(_player.getClan() == null)
 		{
 			packetWriter.writeD(0); // rank
 			packetWriter.writeD(0); // previous day rank
@@ -37,25 +36,26 @@ public class ExPledgeRankingMyInfo implements IClientOutgoingPacket
 			int clanRank = 0;
 			int clanPreviousRank = 0;
 			int points = 0;
-			if (_clanList.size() > 0)
+			if(_clanList.size() > 0)
 			{
 				int i = 1;
-				for (int id : _clanList.keySet())
+				for(int id : _clanList.keySet())
 				{
-					if (id == clanId)
+					if(id == clanId)
 					{
 						clanRank = i;
-						points = _clanList.get(id);
+						PkPledgeRanking ranking = _clanList.get(id);
+						points = ranking.nPledgeExp;
 						break;
 					}
 					i++;
 				}
-				if (_previousClanList.size() > 0)
+				if(_previousClanList.size() > 0)
 				{
 					i = 1;
-					for (int id : _previousClanList.keySet())
+					for(int id : _previousClanList.keySet())
 					{
-						if (id == clanId)
+						if(id == clanId)
 						{
 							clanPreviousRank = i;
 							break;

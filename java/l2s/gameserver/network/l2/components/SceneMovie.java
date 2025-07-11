@@ -2,7 +2,7 @@ package l2s.gameserver.network.l2.components;
 
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.ExStartScenePlayer;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * @author VISTALL
@@ -133,7 +133,7 @@ public enum SceneMovie implements IBroadcastPacket
 	private final int _id;
 	private final int _duration;
 	private final boolean _cancellable;
-	private final L2GameServerPacket _static;
+	private final IClientOutgoingPacket _static;
 
 	SceneMovie(int id, int duration, boolean cancellable)
 	{
@@ -159,7 +159,7 @@ public enum SceneMovie implements IBroadcastPacket
 	}
 
 	@Override
-	public L2GameServerPacket packet(Player player)
+	public IClientOutgoingPacket packet(Player player)
 	{
 		return _static;
 	}

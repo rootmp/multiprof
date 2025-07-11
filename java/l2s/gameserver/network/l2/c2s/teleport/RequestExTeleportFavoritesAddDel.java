@@ -1,7 +1,9 @@
 package l2s.gameserver.network.l2.c2s.teleport;
 
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 
 /**
  * @author nexvill
@@ -14,7 +16,7 @@ public class RequestExTeleportFavoritesAddDel implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_type = readC() == 1 ? true : false;
+		_type = packet.readC() == 1 ? true : false;
 		_teleportId = packet.readD();
 		return true;
 	}

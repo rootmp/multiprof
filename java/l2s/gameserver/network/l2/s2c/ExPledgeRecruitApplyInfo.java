@@ -8,11 +8,11 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExPledgeRecruitApplyInfo implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket DEFAULT = new ExPledgeRecruitApplyInfo(0);
-	public static final L2GameServerPacket ORDER_LIST = new ExPledgeRecruitApplyInfo(1);
-	public static final L2GameServerPacket CLAN_REG = new ExPledgeRecruitApplyInfo(2);
-	public static final L2GameServerPacket UNKNOWN = new ExPledgeRecruitApplyInfo(3);
-	public static final L2GameServerPacket WAITING = new ExPledgeRecruitApplyInfo(4);
+	public static final IClientOutgoingPacket DEFAULT = new ExPledgeRecruitApplyInfo(0);
+	public static final IClientOutgoingPacket ORDER_LIST = new ExPledgeRecruitApplyInfo(1);
+	public static final IClientOutgoingPacket CLAN_REG = new ExPledgeRecruitApplyInfo(2);
+	public static final IClientOutgoingPacket UNKNOWN = new ExPledgeRecruitApplyInfo(3);
+	public static final IClientOutgoingPacket WAITING = new ExPledgeRecruitApplyInfo(4);
 
 	private final int _state;
 

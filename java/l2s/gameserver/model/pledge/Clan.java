@@ -55,7 +55,7 @@ import l2s.gameserver.network.l2.s2c.ExPledgeBonusMarkReset;
 import l2s.gameserver.network.l2.s2c.ExPledgeBonusUpdate;
 import l2s.gameserver.network.l2.s2c.ExPledgeCount;
 import l2s.gameserver.network.l2.s2c.JoinPledgePacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.PledgeReceiveSubPledgeCreated;
 import l2s.gameserver.network.l2.s2c.PledgeShowInfoUpdatePacket;
 import l2s.gameserver.network.l2.s2c.PledgeShowMemberListAddPacket;
@@ -1827,7 +1827,7 @@ public class Clan implements Iterable<UnitMember>
 
 			int sponsor = player.getSponsor();
 			int apprentice = player.getApprentice();
-			L2GameServerPacket msg = new SystemMessagePacket(SystemMsg.CLAN_MEMBER_S1_HAS_LOGGED_INTO_GAME).addName(player);
+			IClientOutgoingPacket msg = new SystemMessagePacket(SystemMsg.CLAN_MEMBER_S1_HAS_LOGGED_INTO_GAME).addName(player);
 			PledgeShowMemberListUpdatePacket memberUpdate = new PledgeShowMemberListUpdatePacket(player);
 			for (Player clanMember : getOnlineMembers(player.getObjectId()))
 			{

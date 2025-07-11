@@ -14,7 +14,7 @@ import l2s.gameserver.model.entity.events.Event;
 import l2s.gameserver.model.entity.events.EventType;
 import l2s.gameserver.model.entity.events.objects.BoatPoint;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.utils.MapUtils;
 
 /**
@@ -72,7 +72,7 @@ public class BoatWayEvent extends Event
 	@Override
 	public void startEvent()
 	{
-		L2GameServerPacket startPacket = _boat.startPacket();
+		IClientOutgoingPacket startPacket = _boat.startPacket();
 		for (Player player : _boat.getPlayers())
 		{
 			if (_ticketId > 0)

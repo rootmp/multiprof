@@ -1,13 +1,11 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.clansearch.ClanSearchWaiterParams;
 import l2s.gameserver.model.clansearch.base.ClanSearchPlayerRoleType;
 import l2s.gameserver.model.clansearch.base.ClanSearchPlayerSortType;
 import l2s.gameserver.model.clansearch.base.ClanSearchSortOrder;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ExPledgeDraftListSearch;
 
 /**
@@ -26,17 +24,17 @@ public class RequestPledgeDraftListSearch implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_minLevel = Math.max(0, Math.min(readD(), 99));
-		_maxLevel = Math.max(0, Math.min(readD(), 99));
-		_role = ClanSearchPlayerRoleType.valueOf(readD());
+		_minLevel = Math.max(0, Math.min(packet.readD(), 99));
+		_maxLevel = Math.max(0, Math.min(packet.readD(), 99));
+		_role = ClanSearchPlayerRoleType.valueOf(packet.readD());
 
-		_charName = readS().trim().toLowerCase();
+		_charName = packet.readS().trim().toLowerCase();
 
 		if (_charName.length() > 255)
 			_charName = _charName.substring(0, 255);
 
-		_sortType = ClanSearchPlayerSortType.valueOf(readD());
-		_sortOrder = ClanSearchSortOrder.valueOf(readD());
+		_sortType = ClanSearchPlayerSortType.valueOf(packet.readD());
+		_sortOrder = ClanSearchSortOrder.valueOf(packet.readD());
 		return true;
 	}
 

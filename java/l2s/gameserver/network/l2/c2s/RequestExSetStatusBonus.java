@@ -1,9 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 
 /**
  * @author nexvill
@@ -16,12 +14,12 @@ public class RequestExSetStatusBonus implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		packet.readD(); // total bytes
-		_str = readH();
-		_dex = readH();
-		_con = readH();
-		_int = readH();
-		_wit = readH();
-		_men = readH();
+		_str = packet.readH();
+		_dex = packet.readH();
+		_con = packet.readH();
+		_int = packet.readH();
+		_wit = packet.readH();
+		_men = packet.readH();
 		return true;
 	}
 

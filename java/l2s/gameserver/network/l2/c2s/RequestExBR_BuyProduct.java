@@ -1,16 +1,14 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.List;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.data.xml.holder.ProductDataHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.ProductHistoryItem;
 import l2s.gameserver.model.items.ItemInstance;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ExBR_BuyProductPacket;
 import l2s.gameserver.network.l2.s2c.ExBR_NewIConCashBtnWnd;
 import l2s.gameserver.network.l2.s2c.ReciveVipInfo;

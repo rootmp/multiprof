@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  */
 public class ExCloseMPCCPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExCloseMPCCPacket();
+	public static final IClientOutgoingPacket STATIC = new ExCloseMPCCPacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

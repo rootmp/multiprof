@@ -22,7 +22,7 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
 import l2s.gameserver.network.l2.s2c.AutoAttackStartPacket;
 import l2s.gameserver.network.l2.s2c.ExCharInfo;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.MagicSkillUse;
 import l2s.gameserver.network.l2.s2c.updatetype.IUpdateTypeComponent;
 import l2s.gameserver.skills.SkillEntry;
@@ -193,14 +193,14 @@ public class FakePlayer extends Playable
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		if (isInvisible(forPlayer) && (forPlayer.getObjectId() != getObjectId()))
 		{
 			return Collections.emptyList();
 		}
 
-		List<L2GameServerPacket> list = new ArrayList<L2GameServerPacket>();
+		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
 		list.add(new ExCharInfo(this, forPlayer));
 
 		CreatureSkillCast skillCast = getSkillCast(SkillCastingType.NORMAL);

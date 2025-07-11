@@ -3,7 +3,7 @@ import l2s.commons.network.PacketWriter;
 
 public class TradePressOtherOkPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new TradePressOtherOkPacket();
+	public static final IClientOutgoingPacket STATIC = new TradePressOtherOkPacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

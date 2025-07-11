@@ -5,7 +5,7 @@ import l2s.commons.network.PacketWriter;
 //пир отправке этого пакета на экране появляется иконка получения письма
 public class ExCuriousHouseEnter implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExCuriousHouseEnter();
+	public static final IClientOutgoingPacket STATIC = new ExCuriousHouseEnter();
 
 	public void ExCuriousHouseEnter()
 	{

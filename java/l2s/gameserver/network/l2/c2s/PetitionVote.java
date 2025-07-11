@@ -16,7 +16,7 @@ public class PetitionVote implements IClientIncomingPacket
 	{
 		_type = packet.readD();
 		_unk1 = packet.readD(); // possible always zero
-		_petitionText = readS(4096);
+		_petitionText = packet.readS(4096);
 		// not done
 		return true;
 	}

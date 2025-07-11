@@ -2,7 +2,8 @@ package l2s.gameserver.network.l2.s2c.magiclamp;
 
 import l2s.commons.util.Rnd;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -25,14 +26,14 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 		if (_gameType == 0)
 		{
 			_player.setMagicLampPoints(_player.getMagicLampPoints() - (10000000 * _gamesCount));
-			giveRewards(_player, false);
+			giveRewards(packetWriter , _player, false);
 		}
 		else
 		{
 			_player.setMagicLampPoints(_player.getMagicLampPoints() - (100000000 * _gamesCount));
 			if (!_player.getInventory().destroyItemByItemId(91641, _gamesCount * 5))
 				return false;
-			giveRewards(_player, true);
+			giveRewards(packetWriter, _player, true);
 		}
 
 		_player.sendPacket(new ExMagicLampGameInfo(_gameType, _player, _gamesCount));
@@ -40,7 +41,7 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 		return true;
 	}
 
-	private void giveRewards(Player player, boolean isSpecialGame)
+	private void giveRewards(PacketWriter packetWriter, Player player, boolean isSpecialGame)
 	{
 		int slot1wins = 0;
 		int slot2wins = 0;

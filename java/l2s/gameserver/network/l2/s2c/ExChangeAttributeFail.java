@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  */
 public class ExChangeAttributeFail implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExChangeAttributeFail();
+	public static final IClientOutgoingPacket STATIC = new ExChangeAttributeFail();
 
 	public ExChangeAttributeFail()
 	{

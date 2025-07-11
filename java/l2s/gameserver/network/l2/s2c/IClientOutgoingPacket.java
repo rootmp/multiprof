@@ -104,12 +104,12 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 	{
 		if(value >= Short.MAX_VALUE)
 		{
-			packetWriter.packetWriter.writeH(Short.MAX_VALUE);
-			packetWriter.packetWriter.writeD(value);
+			packetWriter.writeH(Short.MAX_VALUE);
+			packetWriter.writeD(value);
 		}
 		else
 		{
-			packetWriter.packetWriter.writeH(value);
+			packetWriter.writeH(value);
 		}
 	}
 
@@ -121,86 +121,86 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 	default void writeItemInfo(PacketWriter packetWriter, ItemInfo item, long count)
 	{
 		int flags = calculateMask(packetWriter, item);
-		packetWriter.packetWriter.writeH(flags);
+		packetWriter.writeH(flags);
 		//Dd  
-		packetWriter.packetWriter.writeD(item.getObjectId());
-		packetWriter.packetWriter.writeD(item.getItemId());
+		packetWriter.writeD(item.getObjectId());
+		packetWriter.writeD(item.getItemId());
 		//cqcc
-		packetWriter.packetWriter.writeC(item.isEquipped() ? -1 : item.getEquipSlot());
-		packetWriter.packetWriter.writeQ(count);
-		packetWriter.packetWriter.writeC(item.getItem().getType2());
-		packetWriter.packetWriter.writeC(item.getCustomType1());
+		packetWriter.writeC(item.isEquipped() ? -1 : item.getEquipSlot());
+		packetWriter.writeQ(count);
+		packetWriter.writeC(item.getItem().getType2());
+		packetWriter.writeC(item.getCustomType1());
 		//hq 
-		packetWriter.packetWriter.writeH(item.isEquipped() ? 1 : 0);
-		packetWriter.packetWriter.writeQ(item.getItem().getBodyPart());
+		packetWriter.writeH(item.isEquipped() ? 1 : 0);
+		packetWriter.writeQ(item.getItem().getBodyPart());
 		//hc
-		packetWriter.packetWriter.writeH(item.getEnchantLevel());
-		packetWriter.packetWriter.writeC(0);
+		packetWriter.writeH(item.getEnchantLevel());
+		packetWriter.writeC(0);
 		//ddch
-		packetWriter.packetWriter.writeD(item.getShadowLifeTime());
-		packetWriter.packetWriter.writeD(item.getTemporalLifeTime());
-		packetWriter.packetWriter.writeC(!item.isBlocked());
-		packetWriter.packetWriter.writeH(item.isLocked()); // 140 PROTOCOL
+		packetWriter.writeD(item.getShadowLifeTime());
+		packetWriter.writeD(item.getTemporalLifeTime());
+		packetWriter.writeC(!item.isBlocked());
+		packetWriter.writeH(item.isLocked()); // 140 PROTOCOL
 
 		if(containsMask(flags, ItemListType.IS_AUGMENTED))
 		{
-			packetWriter.packetWriter.writeD(item.getVariation1Id());
-			packetWriter.packetWriter.writeD(item.getVariation2Id());
-			packetWriter.packetWriter.writeD(item.getVariation3Id());
+			packetWriter.writeD(item.getVariation1Id());
+			packetWriter.writeD(item.getVariation2Id());
+			packetWriter.writeD(item.getVariation3Id());
 		}
 
 		if(containsMask(flags, ItemListType.IS_ELEMENTED))
 		{
-			packetWriter.packetWriter.writeH(item.getAttackElement());
-			packetWriter.packetWriter.writeH(item.getAttackElementValue());
-			packetWriter.packetWriter.writeH(item.getDefenceFire());
-			packetWriter.packetWriter.writeH(item.getDefenceWater());
-			packetWriter.packetWriter.writeH(item.getDefenceWind());
-			packetWriter.packetWriter.writeH(item.getDefenceEarth());
-			packetWriter.packetWriter.writeH(item.getDefenceHoly());
-			packetWriter.packetWriter.writeH(item.getDefenceUnholy());
+			packetWriter.writeH(item.getAttackElement());
+			packetWriter.writeH(item.getAttackElementValue());
+			packetWriter.writeH(item.getDefenceFire());
+			packetWriter.writeH(item.getDefenceWater());
+			packetWriter.writeH(item.getDefenceWind());
+			packetWriter.writeH(item.getDefenceEarth());
+			packetWriter.writeH(item.getDefenceHoly());
+			packetWriter.writeH(item.getDefenceUnholy());
 		}
 
 		/*	if (containsMask(flags, ItemListType.HAVE_ENCHANT_OPTIONS))
 		{
-			packetWriter.packetWriter.writeD(item.getEnchantOptions()[0]);
-			packetWriter.packetWriter.writeD(item.getEnchantOptions()[1]);
-			packetWriter.packetWriter.writeD(item.getEnchantOptions()[2]);
+			packetWriter.writeD(item.getEnchantOptions()[0]);
+			packetWriter.writeD(item.getEnchantOptions()[1]);
+			packetWriter.writeD(item.getEnchantOptions()[2]);
 		}*/
 		if(containsMask(flags, ItemListType.VISUAL_CHANGED))
-			packetWriter.packetWriter.writeD(item.getVisualId());
+			packetWriter.writeD(item.getVisualId());
 
 		if(containsMask(flags, ItemListType.HAVE_ENSOUL))
 		{
-			packetWriter.packetWriter.writeC(item.getNormalEnsouls().size());
+			packetWriter.writeC(item.getNormalEnsouls().size());
 			for(Ensoul ensoul : item.getNormalEnsouls())
-				packetWriter.packetWriter.writeD(ensoul.getId());
+				packetWriter.writeD(ensoul.getId());
 
-			packetWriter.packetWriter.writeC(item.getSpecialEnsouls().size());
+			packetWriter.writeC(item.getSpecialEnsouls().size());
 			for(Ensoul ensoul : item.getSpecialEnsouls())
-				packetWriter.packetWriter.writeD(ensoul.getId());
+				packetWriter.writeD(ensoul.getId());
 		}
 
 		if(containsMask(flags, ItemListType.USED_COUNT))
-			packetWriter.packetWriter.writeH(item.getUsedCount());
+			packetWriter.writeH(item.getUsedCount());
 
 		if(containsMask(flags, ItemListType.REUSE_DELAY))
-			packetWriter.packetWriter.writeD(item.getReuseTime());
+			packetWriter.writeD(item.getReuseTime());
 
 		if(containsMask(flags, ItemListType.EVOLVE))
 		{
-			packetWriter.packetWriter.writeD(item.getPetParam().getEvolveLevel()); // petEvolve step
-			packetWriter.packetWriter.writeD(item.getPetParam().getRandomName());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPassiveSkill());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPassiveSkillLevel());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPetIndex()); // pet id
-			packetWriter.packetWriter.writeQ(item.getPetParam().getExp());// pet exp*/
+			packetWriter.writeD(item.getPetParam().getEvolveLevel()); // petEvolve step
+			packetWriter.writeD(item.getPetParam().getRandomName());
+			packetWriter.writeD(item.getPetParam().getPassiveSkill());
+			packetWriter.writeD(item.getPetParam().getPassiveSkillLevel());
+			packetWriter.writeD(item.getPetParam().getPetIndex()); // pet id
+			packetWriter.writeQ(item.getPetParam().getExp());// pet exp*/
 		}
 		if(containsMask(flags, ItemListType.IS_BLESSED))
-			packetWriter.packetWriter.writeC(1);
+			packetWriter.writeC(1);
 		
 		if(containsMask(flags, ItemListType.IS_ILLUSORY))
-			packetWriter.packetWriter.writeC(1);
+			packetWriter.writeC(1);
 	}
 
 	default int calculateMask(PacketWriter packetWriter, ItemInfo item)
@@ -314,170 +314,170 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 		int flags = calculateMask(packetWriter, item);
 
 		if (writeSize)
-			packetWriter.packetWriter.writeD(size);
+			packetWriter.writeD(size);
 
-		packetWriter.packetWriter.writeH(flags);
-		packetWriter.packetWriter.writeD(item.getObjectId());
-		packetWriter.packetWriter.writeD(item.getItemId());
-		packetWriter.packetWriter.writeC(item.isEquipped() ? -1 : item.getEquipSlot());
-		packetWriter.packetWriter.writeQ(count);
-		packetWriter.packetWriter.writeC(item.getItem().getType2());
-		packetWriter.packetWriter.writeC(item.getCustomType1());
-		packetWriter.packetWriter.writeH(item.isEquipped() ? 1 : 0);
-		packetWriter.packetWriter.writeQ(item.getItem().getBodyPart());
-		packetWriter.packetWriter.writeH(item.getEnchantLevel());
-		packetWriter.packetWriter.writeC(item.getCustomType2());
-		packetWriter.packetWriter.writeD(item.getShadowLifeTime());
-		packetWriter.packetWriter.writeD(item.getTemporalLifeTime());
-		packetWriter.packetWriter.writeC(!item.isBlocked());
-		packetWriter.packetWriter.writeH(item.isLocked()); // 140 PROTOCOL
+		packetWriter.writeH(flags);
+		packetWriter.writeD(item.getObjectId());
+		packetWriter.writeD(item.getItemId());
+		packetWriter.writeC(item.isEquipped() ? -1 : item.getEquipSlot());
+		packetWriter.writeQ(count);
+		packetWriter.writeC(item.getItem().getType2());
+		packetWriter.writeC(item.getCustomType1());
+		packetWriter.writeH(item.isEquipped() ? 1 : 0);
+		packetWriter.writeQ(item.getItem().getBodyPart());
+		packetWriter.writeH(item.getEnchantLevel());
+		packetWriter.writeC(item.getCustomType2());
+		packetWriter.writeD(item.getShadowLifeTime());
+		packetWriter.writeD(item.getTemporalLifeTime());
+		packetWriter.writeC(!item.isBlocked());
+		packetWriter.writeH(item.isLocked()); // 140 PROTOCOL
 
 		if (containsMask(flags, ItemListType.IS_AUGMENTED))
 		{
-			packetWriter.packetWriter.writeD(item.getVariation1Id());
-			packetWriter.packetWriter.writeD(item.getVariation2Id());
-			packetWriter.packetWriter.writeD(item.getVariation3Id());
+			packetWriter.writeD(item.getVariation1Id());
+			packetWriter.writeD(item.getVariation2Id());
+			packetWriter.writeD(item.getVariation3Id());
 		}
 
 		if (containsMask(flags, ItemListType.IS_ELEMENTED))
 		{
-			packetWriter.packetWriter.writeH(item.getAttackElement());
-			packetWriter.packetWriter.writeH(item.getAttackElementValue());
-			packetWriter.packetWriter.writeH(item.getDefenceFire());
-			packetWriter.packetWriter.writeH(item.getDefenceWater());
-			packetWriter.packetWriter.writeH(item.getDefenceWind());
-			packetWriter.packetWriter.writeH(item.getDefenceEarth());
-			packetWriter.packetWriter.writeH(item.getDefenceHoly());
-			packetWriter.packetWriter.writeH(item.getDefenceUnholy());
+			packetWriter.writeH(item.getAttackElement());
+			packetWriter.writeH(item.getAttackElementValue());
+			packetWriter.writeH(item.getDefenceFire());
+			packetWriter.writeH(item.getDefenceWater());
+			packetWriter.writeH(item.getDefenceWind());
+			packetWriter.writeH(item.getDefenceEarth());
+			packetWriter.writeH(item.getDefenceHoly());
+			packetWriter.writeH(item.getDefenceUnholy());
 		}
 
 		if (containsMask(flags, ItemListType.VISUAL_CHANGED))
-			packetWriter.packetWriter.writeD(item.getVisualId());
+			packetWriter.writeD(item.getVisualId());
 
 		if (containsMask(flags, ItemListType.HAVE_ENSOUL))
 		{
-			packetWriter.packetWriter.writeC(item.getNormalEnsouls().size());
+			packetWriter.writeC(item.getNormalEnsouls().size());
 			for(Ensoul ensoul : item.getNormalEnsouls())
-				packetWriter.packetWriter.writeD(ensoul.getId());
+				packetWriter.writeD(ensoul.getId());
 
-			packetWriter.packetWriter.writeC(item.getSpecialEnsouls().size());
+			packetWriter.writeC(item.getSpecialEnsouls().size());
 			for(Ensoul ensoul : item.getSpecialEnsouls())
-				packetWriter.packetWriter.writeD(ensoul.getId());
+				packetWriter.writeD(ensoul.getId());
 		}
 		
 		if (containsMask(flags, ItemListType. USED_COUNT))
-			packetWriter.packetWriter.writeH(item.getUsedCount());
+			packetWriter.writeH(item.getUsedCount());
 		
 		if (containsMask(flags, ItemListType.REUSE_DELAY))
-			packetWriter.packetWriter.writeD(item.getReuseTime());
+			packetWriter.writeD(item.getReuseTime());
 
 		if (containsMask(flags, ItemListType.EVOLVE))
 		{
-			packetWriter.packetWriter.writeD(item.getPetParam().getEvolveLevel()); // petEvolve step
-			packetWriter.packetWriter.writeD(item.getPetParam().getRandomName());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPassiveSkill());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPassiveSkillLevel());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPetIndex()); // pet id
-			packetWriter.packetWriter.writeQ(item.getPetParam().getExp());// pet exp*/
+			packetWriter.writeD(item.getPetParam().getEvolveLevel()); // petEvolve step
+			packetWriter.writeD(item.getPetParam().getRandomName());
+			packetWriter.writeD(item.getPetParam().getPassiveSkill());
+			packetWriter.writeD(item.getPetParam().getPassiveSkillLevel());
+			packetWriter.writeD(item.getPetParam().getPetIndex()); // pet id
+			packetWriter.writeQ(item.getPetParam().getExp());// pet exp*/
 		}
 		
 		if (containsMask(flags, ItemListType.IS_BLESSED))
-			packetWriter.packetWriter.writeC(1);
+			packetWriter.writeC(1);
 		
 		if(containsMask(flags, ItemListType.IS_ILLUSORY))
-			packetWriter.packetWriter.writeC(1);
+			packetWriter.writeC(1);
 	}
 	
 	default void writeItemInfo(PacketWriter packetWriter, Player player, ItemInstance item, long count)
 	{
 		int flags = calculateMask(packetWriter, player, item);
-		packetWriter.packetWriter.writeH(flags);
+		packetWriter.writeH(flags);
 		//Dd  
-		packetWriter.packetWriter.writeD(item.getObjectId());
-		packetWriter.packetWriter.writeD(item.getItemId());
+		packetWriter.writeD(item.getObjectId());
+		packetWriter.writeD(item.getItemId());
 		//cqcc
-		packetWriter.packetWriter.writeC(item.isEquipped() ? -1 : item.getEquipSlot());
-		packetWriter.packetWriter.writeQ(count);
-		packetWriter.packetWriter.writeC(item.getTemplate().getType2());
-		packetWriter.packetWriter.writeC(item.getCustomType1());
+		packetWriter.writeC(item.isEquipped() ? -1 : item.getEquipSlot());
+		packetWriter.writeQ(count);
+		packetWriter.writeC(item.getTemplate().getType2());
+		packetWriter.writeC(item.getCustomType1());
 		//hq 
-		packetWriter.packetWriter.writeH(item.isEquipped() ? 1 : 0);
-		packetWriter.packetWriter.writeQ(item.getTemplate().getBodyPart());
+		packetWriter.writeH(item.isEquipped() ? 1 : 0);
+		packetWriter.writeQ(item.getTemplate().getBodyPart());
 		//hc
-		packetWriter.packetWriter.writeH(item.getFixedEnchantLevel(player));
-		packetWriter.packetWriter.writeC(0);
+		packetWriter.writeH(item.getFixedEnchantLevel(player));
+		packetWriter.writeC(0);
 		//ddch
-		packetWriter.packetWriter.writeD(item.getShadowLifeTime());
-		packetWriter.packetWriter.writeD(item.getTemporalLifeTime());
+		packetWriter.writeD(item.getShadowLifeTime());
+		packetWriter.writeD(item.getTemporalLifeTime());
 
 		if(player != null)
-			packetWriter.packetWriter.writeC(!item.getTemplate().isBlocked(player, item));
+			packetWriter.writeC(!item.getTemplate().isBlocked(player, item));
 		else
-			packetWriter.packetWriter.writeC(0x01);
+			packetWriter.writeC(0x01);
 
-		packetWriter.packetWriter.writeH(item.isLocked()); // 140 PROTOCOL
+		packetWriter.writeH(item.isLocked()); // 140 PROTOCOL
 
 		if(containsMask(flags, ItemListType.IS_AUGMENTED))
 		{
-			packetWriter.packetWriter.writeD(item.getVariation1Id());
-			packetWriter.packetWriter.writeD(item.getVariation2Id());
-			packetWriter.packetWriter.writeD(item.getVariation3Id());
+			packetWriter.writeD(item.getVariation1Id());
+			packetWriter.writeD(item.getVariation2Id());
+			packetWriter.writeD(item.getVariation3Id());
 		}
 
 		if(containsMask(flags, ItemListType.IS_ELEMENTED))
 		{
-			packetWriter.packetWriter.writeH(item.getAttackElement().getId());
-			packetWriter.packetWriter.writeH(item.getAttributeElementValue());
-			packetWriter.packetWriter.writeH(item.getDefenceFire());
-			packetWriter.packetWriter.writeH(item.getDefenceWater());
-			packetWriter.packetWriter.writeH(item.getDefenceWind());
-			packetWriter.packetWriter.writeH(item.getDefenceEarth());
-			packetWriter.packetWriter.writeH(item.getDefenceHoly());
-			packetWriter.packetWriter.writeH(item.getDefenceUnholy());
+			packetWriter.writeH(item.getAttackElement().getId());
+			packetWriter.writeH(item.getAttributeElementValue());
+			packetWriter.writeH(item.getDefenceFire());
+			packetWriter.writeH(item.getDefenceWater());
+			packetWriter.writeH(item.getDefenceWind());
+			packetWriter.writeH(item.getDefenceEarth());
+			packetWriter.writeH(item.getDefenceHoly());
+			packetWriter.writeH(item.getDefenceUnholy());
 		}
 
 		/*	if (containsMask(flags, ItemListType.HAVE_ENCHANT_OPTIONS))
 		{
-			packetWriter.packetWriter.writeD(item.getEnchantOptions()[0]);
-			packetWriter.packetWriter.writeD(item.getEnchantOptions()[1]);
-			packetWriter.packetWriter.writeD(item.getEnchantOptions()[2]);
+			packetWriter.writeD(item.getEnchantOptions()[0]);
+			packetWriter.writeD(item.getEnchantOptions()[1]);
+			packetWriter.writeD(item.getEnchantOptions()[2]);
 		}*/
 
 		if(containsMask(flags, ItemListType.VISUAL_CHANGED))
-			packetWriter.packetWriter.writeD(item.getVisualId());
+			packetWriter.writeD(item.getVisualId());
 
 		if(containsMask(flags, ItemListType.HAVE_ENSOUL))
 		{
-			packetWriter.packetWriter.writeC(item.getNormalEnsouls().size());
+			packetWriter.writeC(item.getNormalEnsouls().size());
 			for(Ensoul ensoul : item.getNormalEnsouls())
-				packetWriter.packetWriter.writeD(ensoul.getId());
+				packetWriter.writeD(ensoul.getId());
 
-			packetWriter.packetWriter.writeC(item.getSpecialEnsouls().size());
+			packetWriter.writeC(item.getSpecialEnsouls().size());
 			for(Ensoul ensoul : item.getSpecialEnsouls())
-				packetWriter.packetWriter.writeD(ensoul.getId());
+				packetWriter.writeD(ensoul.getId());
 		}
 
 		if(containsMask(flags, ItemListType.USED_COUNT))
-			packetWriter.packetWriter.writeH(item.getUseCount());
+			packetWriter.writeH(item.getUseCount());
 
 		if(containsMask(flags, ItemListType.REUSE_DELAY))
-			packetWriter.packetWriter.writeD(player==null? 0 : (int) player.getSharedGroupReuse(item.getTemplate().getReuseGroup()).getReuseCurrent());
+			packetWriter.writeD(player==null? 0 : (int) player.getSharedGroupReuse(item.getTemplate().getReuseGroup()).getReuseCurrent());
 
 		if(containsMask(flags, ItemListType.EVOLVE))
 		{
-			packetWriter.packetWriter.writeD(item.getPetParam().getEvolveLevel()); // petEvolve step
-			packetWriter.packetWriter.writeD(item.getPetParam().getRandomName());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPassiveSkill());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPassiveSkillLevel());
-			packetWriter.packetWriter.writeD(item.getPetParam().getPetIndex()); // pet id
-			packetWriter.packetWriter.writeQ(item.getPetParam().getExp());// pet exp*/
+			packetWriter.writeD(item.getPetParam().getEvolveLevel()); // petEvolve step
+			packetWriter.writeD(item.getPetParam().getRandomName());
+			packetWriter.writeD(item.getPetParam().getPassiveSkill());
+			packetWriter.writeD(item.getPetParam().getPassiveSkillLevel());
+			packetWriter.writeD(item.getPetParam().getPetIndex()); // pet id
+			packetWriter.writeQ(item.getPetParam().getExp());// pet exp*/
 		}
 
 		if(containsMask(flags, ItemListType.IS_BLESSED))
-			packetWriter.packetWriter.writeC(1);
+			packetWriter.writeC(1);
 		
 		if(containsMask(flags, ItemListType.IS_ILLUSORY))
-			packetWriter.packetWriter.writeC(1);
+			packetWriter.writeC(1);
 	}
 
 	default int calculateMask(PacketWriter packetWriter, Player player, ItemInstance item)
@@ -538,14 +538,14 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 	
 	default void writeItemElements(PacketWriter packetWriter)
 	{
-		packetWriter.packetWriter.writeH(-1); // attack element (-1 - none)
-		packetWriter.packetWriter.writeH(0x00); // attack element value
-		packetWriter.packetWriter.writeH(0x00); // водная стихия (fire pdef)
-		packetWriter.packetWriter.writeH(0x00); // огненная стихия (water pdef)
-		packetWriter.packetWriter.writeH(0x00); // земляная стихия (wind pdef)
-		packetWriter.packetWriter.writeH(0x00); // воздушная стихия (earth pdef)
-		packetWriter.packetWriter.writeH(0x00); // темная стихия (holy pdef)
-		packetWriter.packetWriter.writeH(0x00); // светлая стихия (dark pdef)
+		packetWriter.writeH(-1); // attack element (-1 - none)
+		packetWriter.writeH(0x00); // attack element value
+		packetWriter.writeH(0x00); // водная стихия (fire pdef)
+		packetWriter.writeH(0x00); // огненная стихия (water pdef)
+		packetWriter.writeH(0x00); // земляная стихия (wind pdef)
+		packetWriter.writeH(0x00); // воздушная стихия (earth pdef)
+		packetWriter.writeH(0x00); // темная стихия (holy pdef)
+		packetWriter.writeH(0x00); // светлая стихия (dark pdef)
 	}
 
 	default void writeItemElements(PacketWriter packetWriter, MultiSellIngredient item)
@@ -561,21 +561,21 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			if(i.isWeapon())
 			{
 				Element e = item.getItemAttributes().getElement();
-				packetWriter.packetWriter.writeH(e.getId()); // attack element (-1 - none)
-				packetWriter.packetWriter.writeH(item.getItemAttributes().getValue(e) + i.getBaseAttributeValue(e)); // attack element value
-				packetWriter.packetWriter.writeH(0); // водная стихия (fire pdef)
-				packetWriter.packetWriter.writeH(0); // огненная стихия (water pdef)
-				packetWriter.packetWriter.writeH(0); // земляная стихия (wind pdef)
-				packetWriter.packetWriter.writeH(0); // воздушная стихия (earth pdef)
-				packetWriter.packetWriter.writeH(0); // темная стихия (holy pdef)
-				packetWriter.packetWriter.writeH(0); // светлая стихия (dark pdef)
+				packetWriter.writeH(e.getId()); // attack element (-1 - none)
+				packetWriter.writeH(item.getItemAttributes().getValue(e) + i.getBaseAttributeValue(e)); // attack element value
+				packetWriter.writeH(0); // водная стихия (fire pdef)
+				packetWriter.writeH(0); // огненная стихия (water pdef)
+				packetWriter.writeH(0); // земляная стихия (wind pdef)
+				packetWriter.writeH(0); // воздушная стихия (earth pdef)
+				packetWriter.writeH(0); // темная стихия (holy pdef)
+				packetWriter.writeH(0); // светлая стихия (dark pdef)
 			}
 			else if(i.isArmor())
 			{
-				packetWriter.packetWriter.writeH(-1); // attack element (-1 - none)
-				packetWriter.packetWriter.writeH(0); // attack element value
+				packetWriter.writeH(-1); // attack element (-1 - none)
+				packetWriter.writeH(0); // attack element value
 				for(Element e : Element.VALUES)
-					packetWriter.packetWriter.writeH(item.getItemAttributes().getValue(e) + i.getBaseAttributeValue(e));
+					packetWriter.writeH(item.getItemAttributes().getValue(e) + i.getBaseAttributeValue(e));
 			}
 			else
 				writeItemElements(packetWriter);

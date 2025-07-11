@@ -7,8 +7,8 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExPut_Shape_Shifting_Extraction_Item_Result implements IClientOutgoingPacket
 {
-	public static L2GameServerPacket FAIL = new ExPut_Shape_Shifting_Extraction_Item_Result(0x00);
-	public static L2GameServerPacket SUCCESS = new ExPut_Shape_Shifting_Extraction_Item_Result(0x01);
+	public static IClientOutgoingPacket FAIL = new ExPut_Shape_Shifting_Extraction_Item_Result(0x00);
+	public static IClientOutgoingPacket SUCCESS = new ExPut_Shape_Shifting_Extraction_Item_Result(0x01);
 
 	private final int _result;
 

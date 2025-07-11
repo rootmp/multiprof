@@ -4,8 +4,8 @@ import l2s.commons.network.PacketWriter;
 
 public class ExWaitWaitingSubStituteInfo implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket OPEN = new ExWaitWaitingSubStituteInfo(true);
-	public static final L2GameServerPacket CLOSE = new ExWaitWaitingSubStituteInfo(false);
+	public static final IClientOutgoingPacket OPEN = new ExWaitWaitingSubStituteInfo(true);
+	public static final IClientOutgoingPacket CLOSE = new ExWaitWaitingSubStituteInfo(false);
 
 	private boolean _open;
 

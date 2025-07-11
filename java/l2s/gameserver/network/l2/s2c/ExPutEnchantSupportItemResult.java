@@ -4,8 +4,8 @@ import l2s.commons.network.PacketWriter;
 
 public class ExPutEnchantSupportItemResult implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket FAIL = new ExPutEnchantSupportItemResult(0x01);
-	public static final L2GameServerPacket SUCCESS = new ExPutEnchantSupportItemResult(0x01);
+	public static final IClientOutgoingPacket FAIL = new ExPutEnchantSupportItemResult(0x01);
+	public static final IClientOutgoingPacket SUCCESS = new ExPutEnchantSupportItemResult(0x01);
 
 	private int _result;
 

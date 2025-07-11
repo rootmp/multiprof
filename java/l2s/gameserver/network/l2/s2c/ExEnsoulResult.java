@@ -8,7 +8,7 @@ import l2s.gameserver.templates.item.support.Ensoul;
  **/
 public class ExEnsoulResult implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket FAIL = new ExEnsoulResult();
+	public static final IClientOutgoingPacket FAIL = new ExEnsoulResult();
 
 	private final boolean _success;
 	private final Ensoul[] _normalEnsouls;

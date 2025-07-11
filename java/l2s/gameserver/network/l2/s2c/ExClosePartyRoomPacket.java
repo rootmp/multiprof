@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ExClosePartyRoomPacket implements IClientOutgoingPacket
 {
-	public static L2GameServerPacket STATIC = new ExClosePartyRoomPacket();
+	public static IClientOutgoingPacket STATIC = new ExClosePartyRoomPacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

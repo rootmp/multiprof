@@ -1,10 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.cache.ItemInfoCache;
 import l2s.gameserver.model.items.ItemInfo;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
 import l2s.gameserver.network.l2.s2c.ExRpItemLink;
 
@@ -25,11 +23,11 @@ public class RequestExRqItemLink implements IClientIncomingPacket
 		ItemInfo item;
 		if ((item = ItemInfoCache.getInstance().get(_objectId)) == null)
 		{
-			sendPacket(ActionFailPacket.STATIC);
+			client.sendPacket(ActionFailPacket.STATIC);
 		}
 		else
 		{
-			sendPacket(new ExRpItemLink(item));
+			client.sendPacket(new ExRpItemLink(item));
 			client.getActiveChar().getListeners().onQuestionMarkClicked(_objectId);
 		}
 	}

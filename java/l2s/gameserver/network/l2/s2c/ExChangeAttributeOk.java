@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  */
 public class ExChangeAttributeOk implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExChangeAttributeOk();
+	public static final IClientOutgoingPacket STATIC = new ExChangeAttributeOk();
 
 	public ExChangeAttributeOk()
 	{

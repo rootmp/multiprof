@@ -1,11 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.dao.SiegeClanDAO;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
@@ -21,6 +18,7 @@ import l2s.gameserver.model.entity.residence.ResidenceType;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.Privilege;
 import l2s.gameserver.model.pledge.UnitMember;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.CastleSiegeAttackerListPacket;
 import l2s.gameserver.network.l2.s2c.ExMercenaryCastlewarCastleSiegeAttackerList;
@@ -39,8 +37,8 @@ public class RequestJoinCastleSiege implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_id = packet.readD();
-		_isAttacker = readD() == 1;
-		_isJoining = readD() == 1;
+		_isAttacker = packet.readD() == 1;
+		_isJoining = packet.readD() == 1;
 		return true;
 	}
 

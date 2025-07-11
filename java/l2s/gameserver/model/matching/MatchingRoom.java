@@ -12,7 +12,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.PlayerGroup;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
 /**
@@ -103,7 +103,7 @@ public abstract class MatchingRoom implements PlayerGroup
 		return addMember0(player, new SystemMessagePacket(enterMessage()).addName(player), false);
 	}
 
-	private boolean addMember0(Player player, L2GameServerPacket p, boolean sendInfo)
+	private boolean addMember0(Player player, IClientOutgoingPacket p, boolean sendInfo)
 	{
 		if (!_members.isEmpty())
 			player.addListener(_listener);
@@ -137,9 +137,9 @@ public abstract class MatchingRoom implements PlayerGroup
 			disband();
 		else
 		{
-			L2GameServerPacket infoPacket = infoRoomPacket();
+			IClientOutgoingPacket infoPacket = infoRoomPacket();
 			SystemMsg exitMessage0 = exitMessage(true, oust);
-			L2GameServerPacket exitMessage = exitMessage0 != null ? new SystemMessagePacket(exitMessage0).addName(member) : null;
+			IClientOutgoingPacket exitMessage = exitMessage0 != null ? new SystemMessagePacket(exitMessage0).addName(member) : null;
 			for (Player player : this)
 				if (player.isMatchingRoomWindowOpened())
 					player.sendPacket(infoPacket, removeMemberPacket(player, member), exitMessage);
@@ -211,17 +211,17 @@ public abstract class MatchingRoom implements PlayerGroup
 
 	public abstract SystemMsg changeLeaderMessage();
 
-	public abstract L2GameServerPacket closeRoomPacket();
+	public abstract IClientOutgoingPacket closeRoomPacket();
 
-	public abstract L2GameServerPacket infoRoomPacket();
+	public abstract IClientOutgoingPacket infoRoomPacket();
 
-	public abstract L2GameServerPacket addMemberPacket(Player $member, Player active);
+	public abstract IClientOutgoingPacket addMemberPacket(Player $member, Player active);
 
-	public abstract L2GameServerPacket removeMemberPacket(Player $member, Player active);
+	public abstract IClientOutgoingPacket removeMemberPacket(Player $member, Player active);
 
-	public abstract L2GameServerPacket updateMemberPacket(Player $member, Player active);
+	public abstract IClientOutgoingPacket updateMemberPacket(Player $member, Player active);
 
-	public abstract L2GameServerPacket membersPacket(Player active);
+	public abstract IClientOutgoingPacket membersPacket(Player active);
 
 	public abstract int getType();
 

@@ -1,18 +1,16 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import l2s.commons.math.SafeMath;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.Race;
 import l2s.gameserver.model.items.TradeItem;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.PrivateStoreBuyManageList;
 import l2s.gameserver.templates.item.ItemTemplate;
@@ -34,7 +32,7 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		final int count = packet.readD();
-		if (count * 40 > _buf.remaining() || count > Short.MAX_VALUE || count < 1)
+		if (count * 40 > packet.getReadableBytes() || count > Short.MAX_VALUE || count < 1)
 			return false;
 
 		_items = new ArrayList<BuyItemInfo>();
@@ -53,14 +51,14 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 			packet.readD(); // Variation 1
 			packet.readD(); // Variation 2
 
-			readH(); // Attack element
-			readH(); // Attack element power
-			readH(); // Fire defense
-			readH(); // Water defense
-			readH(); // Wind defense
-			readH(); // Earth defense
-			readH(); // Holy defense
-			readH(); // Dark defense
+			packet.readH(); // Attack element
+			packet.readH(); // Attack element power
+			packet.readH(); // Fire defense
+			packet.readH(); // Water defense
+			packet.readH(); // Wind defense
+			packet.readH(); // Earth defense
+			packet.readH(); // Holy defense
+			packet.readH(); // Dark defense
 			packet.readD(); // Visible ID
 
 			int saCount = packet.readC();

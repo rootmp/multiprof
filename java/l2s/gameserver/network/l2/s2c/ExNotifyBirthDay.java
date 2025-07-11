@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ExNotifyBirthDay implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExNotifyBirthDay();
+	public static final IClientOutgoingPacket STATIC = new ExNotifyBirthDay();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

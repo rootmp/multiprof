@@ -2,23 +2,53 @@ package l2s.gameserver.network.l2.s2c;
 
 import java.util.List;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import l2s.commons.network.PacketWriter;
+import l2s.gameserver.GameServer;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.ServerPacketOpcodes;
+import l2s.gameserver.network.l2.ServerPacketOpcodes507;
 
 /**
- * Format: (chd) ddd[dS]d[dS] d: unknown d: always -1 d: blue players number [
- * d: player object id S: player name ] d: blue players number [ d: player
- * object id S: player name ]
+ * Format: (chd) ddd[dS]d[dS]
+ * d: unknown
+ * d: always -1
+ * d: blue players number
+ * [
+ * 		d: player object id
+ * 		S: player name
+ * ]
+ * d: blue players number
+ * [
+ * 		d: player object id
+ * 		S: player name
+ * ]
  */
 public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 {
 	@Override
-	protected ServerPacketOpcodes getOpcodes()
+	public ByteBuf getOpcodes()
 	{
-		return ServerPacketOpcodes.ExBlockUpSetList;
+		try
+		{
+			ServerPacketOpcodes spo = ServerPacketOpcodes507.ExBlockUpSetList;
+			ByteBuf opcodes = Unpooled.buffer();
+			opcodes.writeByte(spo.getId());
+			int exOpcode = spo.getExId();
+			if(exOpcode >= 0)
+				opcodes.writeShortLE(exOpcode);
+			return opcodes.retain();
+		}
+		catch (IllegalArgumentException e) 
+		{}
+		catch(Exception e)
+		{
+			LOGGER.error("Cannot find serverpacket opcode: " + getClass().getSimpleName() + "!");
+		}
+		return Unpooled.EMPTY_BUFFER;
 	}
-
+	
 	public static class TeamList extends ExBlockUpSetList
 	{
 		private final List<Player> _bluePlayers;
@@ -41,13 +71,13 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 			packetWriter.writeD(0xffffffff);
 
 			packetWriter.writeD(_bluePlayers.size());
-			for (Player player : _bluePlayers)
+			for(Player player : _bluePlayers)
 			{
 				packetWriter.writeD(player.getObjectId());
 				packetWriter.writeS(player.getName());
 			}
 			packetWriter.writeD(_redPlayers.size());
-			for (Player player : _redPlayers)
+			for(Player player : _redPlayers)
 			{
 				packetWriter.writeD(player.getObjectId());
 				packetWriter.writeS(player.getName());

@@ -40,9 +40,8 @@ public enum Race
 	UNK27,
 	UNK28,
 	UNK29,
-	SYLPH; // offlike this
-			// race has id =
-			// 30
+	SYLPH,
+	/*31*/ highelf;
 
 	public static final Race[] VALUES = values();
 
@@ -50,4 +49,10 @@ public enum Race
 	{
 		return new CustomMessage("l2s.gameserver.model.base.Race.name." + ordinal()).toString(player);
 	}
+
+	public int getId()
+	{
+		return ordinal();
+	}
+	
 }

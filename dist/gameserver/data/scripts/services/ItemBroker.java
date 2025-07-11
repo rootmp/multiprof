@@ -27,7 +27,7 @@ import l2s.gameserver.model.items.ManufactureItem;
 import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.network.l2.s2c.ExCharInfo;
 import l2s.gameserver.network.l2.s2c.ExShowTracePacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.RadarControlPacket;
 import l2s.gameserver.templates.item.ExItemType;
 import l2s.gameserver.templates.item.ItemTemplate;
@@ -1024,7 +1024,7 @@ public class ItemBroker extends ListenerHook implements OnInitScriptListener
 		{
 			player.sendPacket(new ExCharInfo(trader, player));
 
-			L2GameServerPacket packet = trader.getPrivateStoreMsgPacket(player);
+			IClientOutgoingPacket packet = trader.getPrivateStoreMsgPacket(player);
 			if (packet != null)
 				player.sendPacket(packet);
 

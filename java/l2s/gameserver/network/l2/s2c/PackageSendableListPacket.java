@@ -51,7 +51,7 @@ public class PackageSendableListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(_itemList.size());
 			for (ItemInfo item : _itemList)
 			{
-				writeItemInfo(item);
+				writeItemInfo(packetWriter, item);
 				packetWriter.writeD(item.getObjectId());
 			}
 		}

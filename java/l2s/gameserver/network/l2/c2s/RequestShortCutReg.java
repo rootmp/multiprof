@@ -1,10 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.ShortCut;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.s2c.ShortCutRegisterPacket;
 
@@ -18,7 +16,7 @@ public class RequestShortCutReg implements IClientIncomingPacket
 	{
 		try
 		{
-			_type = ShortCut.ShortCutType.VALUES[readD()];
+			_type = ShortCut.ShortCutType.VALUES[packet.readD()];
 		}
 		catch (Exception e)
 		{

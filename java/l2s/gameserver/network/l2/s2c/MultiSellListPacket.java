@@ -62,7 +62,7 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(0x00); // инкрустация
 			packetWriter.writeD(0x00); // инкрустация
 
-			writeItemElements();
+			writeItemElements(packetWriter);
 
 			int saCount = 0;
 			packetWriter.writeC(0x00); // SA 1 count
@@ -98,7 +98,7 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 				packetWriter.writeD(prod.getChance());
 				packetWriter.writeD(0x00); // augment id 1
 				packetWriter.writeD(0x00); // augment id 2
-				writeItemElements(prod);
+				writeItemElements(packetWriter, prod);
 
 				packetWriter.writeC(0x00); // SA 1 count
 				for (int i = 0; i < saCount; i++)
@@ -129,7 +129,7 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 				packetWriter.writeH(i.getItemEnchant()); // Enchant Level
 				packetWriter.writeD(0x00); // инкрустация
 				packetWriter.writeD(0x00); // инкрустация
-				writeItemElements(i);
+				writeItemElements(packetWriter, i);
 
 				packetWriter.writeC(0x00); // SA 1 count
 				for (int s = 0; s < saCount; s++)

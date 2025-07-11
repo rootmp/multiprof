@@ -383,6 +383,11 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 		return hwidHolder.asString();
 	}
 
+	public String getHWID()
+	{
+		return hwidHolder.asString();
+	}
+	
 	/**
 	 * @return Returns the sessionId.
 	 */

@@ -1,13 +1,11 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.Calendar;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.MissionLevelRewardsHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.MissionLevelReward;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExMissionLevelRewardList;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
@@ -49,7 +47,7 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 
 		if (currentLvl < _level)
 		{
-			sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
+			client.sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
 			return;
 		}
 
@@ -63,7 +61,7 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 			{
 				if (lastTakenBasic >= _level)
 				{
-					sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
+					client.sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
 					return;
 				}
 				else
@@ -77,14 +75,14 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 			{
 				if (lastTakenAdditional >= _level)
 				{
-					sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
+					client.sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
 					return;
 				}
 				else
 				{
 					if ((data.getAdditionalReward().getId() == 0) || (data.getAdditionalReward().getCount() == 0))
 					{
-						sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
+						client.sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
 						return;
 					}
 					else
@@ -100,7 +98,7 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 				boolean canTake = _level >= template.getMaxRewardLvl() ? true : false;
 				if (takenFinal || !canTake)
 				{
-					sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
+					client.sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
 					return;
 				}
 				else
@@ -114,7 +112,7 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 			{
 				if (lastTakenBonus >= _level)
 				{
-					sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
+					client.sendPacket(new SystemMessagePacket(SystemMsg.SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN));
 					return;
 				}
 				else
@@ -126,6 +124,6 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 			}
 		}
 
-		sendPacket(new ExMissionLevelRewardList(player));
+		client.sendPacket(new ExMissionLevelRewardList(player));
 	}
 }

@@ -8,7 +8,7 @@ import l2s.commons.network.PacketWriter;
  */
 public class ExDominionWarEnd implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExDominionWarEnd();
+	public static final IClientOutgoingPacket STATIC = new ExDominionWarEnd();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

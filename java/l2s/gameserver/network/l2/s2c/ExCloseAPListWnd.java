@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
  **/
 public class ExCloseAPListWnd implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExCloseAPListWnd();
+	public static final IClientOutgoingPacket STATIC = new ExCloseAPListWnd();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

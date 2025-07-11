@@ -1,22 +1,18 @@
 package l2s.gameserver.network.l2.s2c.pledge;
 
 import java.util.Map;
-
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.pledge.Clan;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
-import l2s.gameserver.tables.ClanTable;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.gameserver.templates.ranking.PkPledgeRanking;
 
-/**
- * @author nexvill
- */
 public class ExPledgeRankingList implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _tabId;
-	private Map<Integer, Integer> _clanList;
-	private Map<Integer, Integer> _previousClanList;
+	private Map<Integer, PkPledgeRanking> _clanList;
+	private Map<Integer, PkPledgeRanking> _previousClanList;
 
 	public ExPledgeRankingList(Player player, int tabId)
 	{
@@ -32,9 +28,9 @@ public class ExPledgeRankingList implements IClientOutgoingPacket
 		int count = 0;
 		packetWriter.writeC(_tabId); // top 150 or my clan rating
 
-		if (_clanList.size() > 0)
+		if(_clanList.size() > 0)
 		{
-			switch (_tabId)
+			switch(_tabId)
 			{
 				case 0: // all
 				{
@@ -42,40 +38,23 @@ public class ExPledgeRankingList implements IClientOutgoingPacket
 					packetWriter.writeD(count); // clans size
 
 					int i = 1;
-					for (int id : _clanList.keySet())
+					for(int id : _clanList.keySet())
 					{
-						int clanId = id;
-						int previousRank = 0;
-						int j = 1;
+						PkPledgeRanking ranking = _clanList.get(id);
+						PkPledgeRanking previousRanking = _previousClanList.get(id);
 
-						for (int id2 : _previousClanList.keySet())
-						{
-							if (id == id2)
-							{
-								previousRank = j;
-								break;
-							}
-							j++;
-						}
-						Clan clan = ClanTable.getInstance().getClan(clanId);
+						int previousRank = previousRanking != null ? previousRanking.nRank : 0;
 
-						String clanName = clan.getName();
-						int clanLevel = clan.getLevel();
-						String leaderName = clan.getLeaderName();
-						int leaderLevel = clan.getLeader().getLevel();
-						int clanMembers = clan.getAllMembers().size();
-						int points = clan.getPoints();
-
-						packetWriter.writeD(i); // rank
+						packetWriter.writeD(ranking.nRank); // rank
 						packetWriter.writeD(previousRank);
-						packetWriter.writeString(clanName);
-						packetWriter.writeD(clanLevel);
-						packetWriter.writeString(leaderName);
-						packetWriter.writeD(leaderLevel);
-						packetWriter.writeD(clanMembers);
-						packetWriter.writeD(points);
+						packetWriter.writeSizedString(ranking.sPledgeName);
+						packetWriter.writeD(ranking.nPledgeLevel);
+						packetWriter.writeSizedString(ranking.sPledgeMasterName);
+						packetWriter.writeD(ranking.nPledgeMasterLevel);
+						packetWriter.writeD(ranking.nPledgeMemberCount);
+						packetWriter.writeD(ranking.nPledgeExp);
 
-						if (i >= 150)
+						if(i >= 150)
 							break;
 						else
 							i++;
@@ -84,7 +63,7 @@ public class ExPledgeRankingList implements IClientOutgoingPacket
 				}
 				case 1:
 				{
-					if (_player.getClan() == null)
+					if(_player.getClan() == null)
 					{
 						packetWriter.writeD(0);
 						break;
@@ -92,70 +71,56 @@ public class ExPledgeRankingList implements IClientOutgoingPacket
 
 					boolean found = false;
 					int rank = 1;
-					for (int id : _clanList.keySet())
+					for(int id : _clanList.keySet())
 					{
-						if (_player.getClan().getClanId() == id)
+						if(_player.getClan().getClanId() == id)
 						{
 							found = true;
 							int first = rank > 10 ? (rank - 9) : 1;
 							int last = _clanList.size() >= (rank + 10) ? rank + 10 : rank + (_clanList.size() - rank);
 
-							if (first == 1)
+							if(first == 1)
 								packetWriter.writeD(last - (first - 1));
 							else
 								packetWriter.writeD(last - first);
 
 							int i = 1;
-							for (int id2 : _clanList.keySet())
+							for(int id2 : _clanList.keySet())
 							{
-								if ((i >= first) && (i <= last))
+								if((i >= first) && (i <= last))
 								{
-									int clanId = id2;
-									int previousRank = 0;
-									int j = 1;
+									PkPledgeRanking ranking = _clanList.get(id2);
+									PkPledgeRanking previousRanking = _previousClanList.get(id2);
 
-									for (int id3 : _previousClanList.keySet())
-									{
-										if (id2 == id3)
-										{
-											previousRank = j;
-											break;
-										}
-										j++;
-									}
+									int previousRank = previousRanking != null ? previousRanking.nRank : 0;
 
-									Clan clan = ClanTable.getInstance().getClan(clanId);
-									String clanName = clan.getName();
-									int clanLevel = clan.getLevel();
-									String leaderName = clan.getLeaderName();
-									int leaderLevel = clan.getLeader().getLevel();
-									int clanMembers = clan.getAllMembers().size();
-									int points = clan.getPoints();
-
-									packetWriter.writeD(i); // rank
+									packetWriter.writeD(ranking.nRank); // rank
 									packetWriter.writeD(previousRank);
-									packetWriter.writeString(clanName);
-									packetWriter.writeD(clanLevel);
-									packetWriter.writeString(leaderName);
-									packetWriter.writeD(leaderLevel);
-									packetWriter.writeD(clanMembers);
-									packetWriter.writeD(points);
+									packetWriter.writeSizedString(ranking.sPledgeName);
+									packetWriter.writeD(ranking.nPledgeLevel);
+									packetWriter.writeSizedString(ranking.sPledgeMasterName);
+									packetWriter.writeD(ranking.nPledgeMasterLevel);
+									packetWriter.writeD(ranking.nPledgeMemberCount);
+									packetWriter.writeD(ranking.nPledgeExp);
 								}
 								i++;
 							}
 						}
 						rank++;
 					}
-					if (!found)
+					if(!found)
 						packetWriter.writeD(0);
 					break;
 				}
+				default:
+					break;
 			}
 		}
 		else
 		{
 			packetWriter.writeD(count); // clans size
 		}
+
 		return true;
 	}
 }

@@ -5,7 +5,7 @@ import l2s.gameserver.GameTimeController;
 
 public class ClientSetTimePacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ClientSetTimePacket();
+	public static final IClientOutgoingPacket STATIC = new ClientSetTimePacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

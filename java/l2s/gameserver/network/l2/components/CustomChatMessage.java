@@ -1,7 +1,7 @@
 package l2s.gameserver.network.l2.components;
 
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SayPacket2;
 
 public class CustomChatMessage extends CustomMessage
@@ -15,7 +15,7 @@ public class CustomChatMessage extends CustomMessage
 	}
 
 	@Override
-	public L2GameServerPacket packet(Player player)
+	public IClientOutgoingPacket packet(Player player)
 	{
 		return new SayPacket2(0, _type, 0, "", toString(player));
 	}

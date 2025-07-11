@@ -22,65 +22,54 @@ public class AdminForgePacket implements IClientOutgoingPacket
 		}
 	}
 
-	public AdminForgePacket()
-	{
-		//
-	}
-
-	@Override
-	protected boolean writeOpcodes()
-	{
-		return true;
-	}
-
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		for (Part p : _parts)
+		for(Part p : _parts)
 		{
-			generate(p.b, p.str);
+			generate(packetWriter, p.b, p.str);
 		}
 		return true;
 	}
 
-	public boolean generate(byte b, String string)
+	public boolean generate(PacketWriter packetWriter, byte b, String string)
 	{
-		if ((b == 'C') || (b == 'c'))
+		if((b == 'C') || (b == 'c'))
 		{
 			packetWriter.writeC(Integer.decode(string));
 			return true;
 		}
-		else if ((b == 'D') || (b == 'd'))
+		else if((b == 'D') || (b == 'd'))
 		{
 			packetWriter.writeD(Integer.decode(string));
 			return true;
 		}
-		else if ((b == 'H') || (b == 'h'))
+		else if((b == 'H') || (b == 'h'))
 		{
 			packetWriter.writeH(Integer.decode(string));
 			return true;
 		}
-		else if ((b == 'F') || (b == 'f'))
+		else if((b == 'F') || (b == 'f'))
 		{
 			packetWriter.writeF(Double.parseDouble(string));
 			return true;
 		}
-		else if ((b == 'S') || (b == 's'))
+		else if((b == 'S') || (b == 's'))
 		{
 			packetWriter.writeS(string);
 			return true;
 		}
-		else if ((b == 'T') || (b == 't'))
+		else if((b == 'T') || (b == 't'))
 		{
-			packetWriter.writeString(string);
+			packetWriter.writeSizedString(string);
 			return true;
 		}
-		else if ((b == 'B') || (b == 'b') || (b == 'X') || (b == 'x'))
+		else if((b == 'B') || (b == 'b') || (b == 'X') || (b == 'x'))
 		{
-			writeB(new BigInteger(string).toByteArray());
+			packetWriter.writeB(new BigInteger(string).toByteArray());
 			return true;
 		}
-		else if ((b == 'Q') || (b == 'q'))
+		else if((b == 'Q') || (b == 'q'))
 		{
 			packetWriter.writeQ(Long.decode(string));
 			return true;

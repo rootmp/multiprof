@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class ExShowVariationCancelWindow implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExShowVariationCancelWindow();
+	public static final IClientOutgoingPacket STATIC = new ExShowVariationCancelWindow();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

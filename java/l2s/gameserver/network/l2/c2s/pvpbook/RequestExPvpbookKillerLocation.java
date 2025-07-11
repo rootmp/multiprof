@@ -3,7 +3,9 @@ package l2s.gameserver.network.l2.c2s.pvpbook;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Pvpbook;
 import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpBookList;
 import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpbookKillerLocation;
@@ -15,7 +17,7 @@ public class RequestExPvpbookKillerLocation implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		killerName = readString();
+		killerName = packet.readString();
 		return true;
 	}
 

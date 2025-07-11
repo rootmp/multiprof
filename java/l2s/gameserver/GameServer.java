@@ -5,8 +5,6 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map.Entry;
 
 import org.apache.commons.lang3.StringUtils;
@@ -20,7 +18,6 @@ import l2s.commons.listener.Listener;
 import l2s.commons.listener.ListenerList;
 import l2s.commons.net.HostInfo;
 import l2s.commons.net.nio.impl.SelectorStats;
-import l2s.commons.net.nio.impl.SelectorThread;
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.cache.ImagesCache;
 import l2s.gameserver.config.FloodProtectorConfigs;
@@ -70,8 +67,7 @@ import l2s.gameserver.model.entity.Hero;
 import l2s.gameserver.model.entity.events.fightclubmanager.FightClubEventManager;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
 import l2s.gameserver.network.authcomm.AuthServerCommunication;
-import l2s.gameserver.network.l2.GameClient;
-import l2s.gameserver.network.l2.GamePacketHandler;
+import l2s.gameserver.network.l2.ClientNetworkManager;
 import l2s.gameserver.scripts.Scripts;
 import l2s.gameserver.security.HWIDBan;
 import l2s.gameserver.tables.ClanTable;
@@ -88,7 +84,6 @@ public class GameServer
 	private static final Logger _log = LoggerFactory.getLogger(GameServer.class);
 
 	public static GameServer _instance;
-	private final List<SelectorThread<GameClient>> _selectorThreads = new ArrayList<SelectorThread<GameClient>>();
 	private final SelectorStats _selectorStats = new SelectorStats();
 	private final GameServerListenerList _listeners;
 	private long _serverStartTimeMillis;
@@ -491,24 +486,17 @@ public class GameServer
 
 	private void registerSelectorThreads(TIntSet ports)
 	{
-		final GamePacketHandler gph = new GamePacketHandler();
-
-		for (int port : ports.toArray())
-		{
-			registerSelectorThread(gph, null, port);
-		}
+		for(int port : ports.toArray())
+			registerSelectorThread(null, port);
 	}
 
-	private void registerSelectorThread(GamePacketHandler gph, String ip, int port)
+	private void registerSelectorThread(String ip, int port)
 	{
 		try
 		{
-			SelectorThread<GameClient> selectorThread = new SelectorThread<GameClient>(Config.SELECTOR_CONFIG, _selectorStats, gph, gph, gph, null);
-			selectorThread.openServerSocket(ip == null ? null : InetAddress.getByName(ip), port);
-			selectorThread.start();
-			_selectorThreads.add(selectorThread);
+			ClientNetworkManager.getInstance().start(ip == null ? null : InetAddress.getByName(ip), port);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			//
 		}
@@ -517,11 +505,6 @@ public class GameServer
 	public static void main(String[] args) throws Exception
 	{
 		new GameServer();
-	}
-
-	public List<SelectorThread<GameClient>> getSelectorThreads()
-	{
-		return _selectorThreads;
 	}
 
 	public SelectorStats getSelectorStats()

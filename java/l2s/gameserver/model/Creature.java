@@ -91,7 +91,7 @@ import l2s.gameserver.network.l2.s2c.ExShowChannelingEffectPacket;
 import l2s.gameserver.network.l2.s2c.ExTeleportToLocationActivate;
 import l2s.gameserver.network.l2.s2c.FlyToLocationPacket;
 import l2s.gameserver.network.l2.s2c.FlyToLocationPacket.FlyType;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.MTLPacket;
 import l2s.gameserver.network.l2.s2c.MagicSkillCanceled;
 import l2s.gameserver.network.l2.s2c.MagicSkillLaunchedPacket;
@@ -2388,12 +2388,12 @@ public abstract class Creature extends GameObject
 		return waterZ;
 	}
 
-	protected L2GameServerPacket stopMovePacket()
+	protected IClientOutgoingPacket stopMovePacket()
 	{
 		return new StopMovePacket(this);
 	}
 
-	public L2GameServerPacket movePacket()
+	public IClientOutgoingPacket movePacket()
 	{
 		if (getMovement().isFollow() && !getMovement().isPathfindMoving())
 		{
@@ -3715,7 +3715,7 @@ public abstract class Creature extends GameObject
 		}
 	}
 
-	protected L2GameServerPacket changeMovePacket()
+	protected IClientOutgoingPacket changeMovePacket()
 	{
 		return new ChangeMoveTypePacket(this);
 	}

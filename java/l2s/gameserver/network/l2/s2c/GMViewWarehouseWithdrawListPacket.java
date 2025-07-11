@@ -35,7 +35,7 @@ public class GMViewWarehouseWithdrawListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(_items.length);
 			for (ItemInstance temp : _items)
 			{
-				writeItemInfo(temp);
+				writeItemInfo(packetWriter, temp);
 				packetWriter.writeD(temp.getObjectId());
 			}
 		}

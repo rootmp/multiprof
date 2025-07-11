@@ -18,7 +18,7 @@ public class ExRpItemLink implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		writeItemInfo(_item);
+		writeItemInfo(packetWriter, _item);
 		return true;
 	}
 }

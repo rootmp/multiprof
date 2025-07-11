@@ -1,14 +1,11 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.HashMap;
 import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.dao.CharacterDAO;
 import l2s.gameserver.data.xml.holder.InitialShortCutsHolder;
@@ -20,9 +17,10 @@ import l2s.gameserver.model.actor.instances.player.ShortCut;
 import l2s.gameserver.model.base.ClassId;
 import l2s.gameserver.model.base.ClassLevel;
 import l2s.gameserver.model.items.ItemInstance;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.CharacterCreateFailPacket;
 import l2s.gameserver.network.l2.s2c.CharacterCreateSuccessPacket;
-import l2s.gameserver.network.l2.s2c.CharacterSelectionInfo;
+import l2s.gameserver.network.l2.s2c.CharacterSelectionInfoPacket;
 import l2s.gameserver.templates.item.StartItem;
 import l2s.gameserver.templates.player.PlayerTemplate;
 import l2s.gameserver.utils.ItemFunctions;
@@ -77,45 +75,46 @@ public class CharacterCreate implements IClientIncomingPacket
 
 		if (_face > 2 || _face < 0)
 		{
-			_log.warn("Character Creation Failure: Character face " + _face + " is invalid. Possible client hack. " + getClient());
+			_log.warn("Character Creation Failure: Character face " + _face + " is invalid. Possible client hack. " + client);
 			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
 		if (_hairStyle < 0 || (_sex == 0 && _hairStyle > 4) || (_sex != 0 && _hairStyle > 6))
 		{
-			_log.warn("Character Creation Failure: Character hair style " + _hairStyle + " is invalid. Possible client hack. " + getClient());
+			_log.warn("Character Creation Failure: Character hair style " + _hairStyle + " is invalid. Possible client hack. " + client);
 			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
 		if (_hairColor > 3 || _hairColor < 0)
 		{
-			_log.warn("Character Creation Failure: Character hair color " + _hairColor + " is invalid. Possible client hack. " + getClient());
+			_log.warn("Character Creation Failure: Character hair color " + _hairColor + " is invalid. Possible client hack. " + client);
 			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
-		Player newChar = Player.create(_classId, _sex, client.getLogin(), _name, _hairStyle, _hairColor, _face);
+		Player newChar = Player.create(client.getHwidHolder(), _classId, _sex, client.getLogin(), _name, _hairStyle, _hairColor, _face);
 		if (newChar == null)
 		{
-			_log.warn("Character Creation Failure: Player.create returned null. Possible client hack. " + getClient());
-			sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
+			_log.warn("Character Creation Failure: Player.create returned null. Possible client hack. " + client);
+			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
 		if (!initNewChar(newChar))
 		{
-			_log.warn("Character Creation Failure: Could not init new char. Possible client hack. " + getClient());
-			sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
+			_log.warn("Character Creation Failure: Could not init new char. Possible client hack. " + client);
+			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
-		newChar.storeLastIpAndHWID(client.getIpAddr(), client.getHWID());
+		if(client.getHwidHolder() != null)
+			newChar.storeLastIpAndHWID(client.getIpAddr(), client.getHwidString());
 
-		sendPacket(CharacterCreateSuccessPacket.STATIC);
+		client.sendPacket(CharacterCreateSuccessPacket.STATIC);
 
-		client.setCharSelection(CharacterSelectionInfo.loadCharacterSelectInfo(client.getLogin()));
+		client.setCharSelection(CharacterSelectionInfoPacket.loadCharacterSelectInfo(client.getLogin()));
 	}
 
 	public static boolean initNewChar(Player newChar)

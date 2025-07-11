@@ -5,7 +5,9 @@ import l2s.gameserver.instancemanager.ServerVariables;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.model.items.ItemInstance;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
@@ -19,7 +21,7 @@ public class RequestExSharedPositionTeleport implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_allow = packet.readC();
-		_tpId = readH();
+		_tpId = packet.readH();
 		packet.readC(); // ?
 		return true;
 	}

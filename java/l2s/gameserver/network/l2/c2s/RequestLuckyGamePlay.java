@@ -1,17 +1,18 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
+import gnu.trove.iterator.TIntLongIterator;
+import gnu.trove.map.TIntLongMap;
+import gnu.trove.map.hash.TIntLongHashMap;
+import l2s.commons.network.PacketReader;
 import l2s.commons.time.cron.SchedulingPattern;
 import l2s.gameserver.Announcements;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.LuckyGameHolder;
 import l2s.gameserver.instancemanager.ServerVariables;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExBettingLuckyGameResult;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
@@ -19,10 +20,6 @@ import l2s.gameserver.templates.luckygame.LuckyGameData;
 import l2s.gameserver.templates.luckygame.LuckyGameItem;
 import l2s.gameserver.templates.luckygame.LuckyGameType;
 import l2s.gameserver.utils.ItemFunctions;
-
-import gnu.trove.iterator.TIntLongIterator;
-import gnu.trove.map.TIntLongMap;
-import gnu.trove.map.hash.TIntLongHashMap;
 
 /**
  * @author Bonux
@@ -36,7 +33,7 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_typeId = packet.readD();
-		_gamesCount = Math.min(readD(), 50);
+		_gamesCount = Math.min(packet.readD(), 50);
 		return true;
 	}
 

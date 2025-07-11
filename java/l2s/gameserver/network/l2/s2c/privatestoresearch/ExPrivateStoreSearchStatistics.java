@@ -5,7 +5,8 @@ import java.util.List;
 
 import l2s.gameserver.instancemanager.PrivateStoreHistoryManager;
 import l2s.gameserver.model.items.PrivateStoreHistoryItem;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.commons.network.PacketWriter;
 
 public class ExPrivateStoreSearchStatistics implements IClientOutgoingPacket
 {
@@ -25,14 +26,14 @@ public class ExPrivateStoreSearchStatistics implements IClientOutgoingPacket
 		for (PrivateStoreHistoryItem item : mostItems)
 		{
 			packetWriter.writeD(item.getTradesCount());
-			writeItemInfo(item, true, 4);
+			writeItemInfo(packetWriter, item, true, 4);
 			packetWriter.writeD(item.getObjectId());
 		}
 		packetWriter.writeD(highestItems.size());
 		for (PrivateStoreHistoryItem item : highestItems)
 		{
 			packetWriter.writeQ(item.getPrice());
-			writeItemInfo(item, true, 4);
+			writeItemInfo(packetWriter, item, true, 4);
 			packetWriter.writeD(item.getObjectId());
 		}
 		return true;

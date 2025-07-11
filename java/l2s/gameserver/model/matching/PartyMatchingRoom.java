@@ -4,7 +4,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExClosePartyRoomPacket;
 import l2s.gameserver.network.l2.s2c.ExPartyRoomMemberPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.PartyRoomInfoPacket;
 
 /**
@@ -54,37 +54,37 @@ public class PartyMatchingRoom extends MatchingRoom
 	}
 
 	@Override
-	public L2GameServerPacket closeRoomPacket()
+	public IClientOutgoingPacket closeRoomPacket()
 	{
 		return ExClosePartyRoomPacket.STATIC;
 	}
 
 	@Override
-	public L2GameServerPacket infoRoomPacket()
+	public IClientOutgoingPacket infoRoomPacket()
 	{
 		return new PartyRoomInfoPacket(this);
 	}
 
 	@Override
-	public L2GameServerPacket addMemberPacket(Player $member, Player active)
+	public IClientOutgoingPacket addMemberPacket(Player $member, Player active)
 	{
 		return membersPacket($member);
 	}
 
 	@Override
-	public L2GameServerPacket removeMemberPacket(Player $member, Player active)
+	public IClientOutgoingPacket removeMemberPacket(Player $member, Player active)
 	{
 		return membersPacket($member);
 	}
 
 	@Override
-	public L2GameServerPacket updateMemberPacket(Player $member, Player active)
+	public IClientOutgoingPacket updateMemberPacket(Player $member, Player active)
 	{
 		return membersPacket($member);
 	}
 
 	@Override
-	public L2GameServerPacket membersPacket(Player active)
+	public IClientOutgoingPacket membersPacket(Player active)
 	{
 		return new ExPartyRoomMemberPacket(this, active);
 	}

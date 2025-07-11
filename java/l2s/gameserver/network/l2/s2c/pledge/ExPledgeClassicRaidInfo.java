@@ -1,43 +1,30 @@
 package l2s.gameserver.network.l2.s2c.pledge;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import l2s.gameserver.data.xml.holder.SkillHolder;
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.Skill;
 import l2s.gameserver.model.pledge.Clan;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
-/**
- * @author Bonux
- **/
 public class ExPledgeClassicRaidInfo implements IClientOutgoingPacket
 {
 	private final int _lastRaidPhase;
-	private final List<Skill> _skills;
+	private static final int[][] SKILLS = {{1867, 1},{1867, 2},{1867, 3},{1867, 4},{1867, 5},{1867, 6},{1867, 7}};
 
 	public ExPledgeClassicRaidInfo(Player player)
 	{
 		Clan clan = player.getClan();
 		_lastRaidPhase = clan == null ? 0 : clan.getArenaStage();
-		_skills = new ArrayList<Skill>(5);
-		_skills.add(SkillHolder.getInstance().getSkill(1867, 1));
-		_skills.add(SkillHolder.getInstance().getSkill(1867, 2));
-		_skills.add(SkillHolder.getInstance().getSkill(1867, 3));
-		_skills.add(SkillHolder.getInstance().getSkill(1867, 4));
-		_skills.add(SkillHolder.getInstance().getSkill(1867, 5));
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_lastRaidPhase);
-		packetWriter.writeD(_skills.size());
-		for (Skill skill : _skills)
+		packetWriter.writeD(SKILLS.length);
+		for (int[] skill : SKILLS)
 		{
-			packetWriter.writeD(skill.getId());
-			packetWriter.writeD(skill.getLevel());
+			packetWriter.writeD(skill[0]); // Skill ID
+			packetWriter.writeD(skill[1]); // Skill Level
 		}
 		return true;
 	}

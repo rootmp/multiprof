@@ -19,7 +19,7 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.templates.CreatureTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate;
 import l2s.gameserver.utils.PositionUtils;
@@ -150,7 +150,7 @@ public abstract class Boat extends Creature
 		_runState = 0;
 		_fromHome = _fromHome == 1 ? 0 : 1;
 
-		L2GameServerPacket checkLocation = checkLocationPacket();
+		IClientOutgoingPacket checkLocation = checkLocationPacket();
 		if (checkLocation != null)
 			broadcastPacket(infoPacket(), checkLocation);
 
@@ -216,23 +216,23 @@ public abstract class Boat extends Creature
 	}
 
 	// =========================================================================================================
-	public abstract L2GameServerPacket infoPacket();
+	public abstract IClientOutgoingPacket infoPacket();
 
-	public abstract L2GameServerPacket inMovePacket(Player player, Location src, Location desc);
+	public abstract IClientOutgoingPacket inMovePacket(Player player, Location src, Location desc);
 
-	public abstract L2GameServerPacket stopMovePacket();
+	public abstract IClientOutgoingPacket stopMovePacket();
 
-	public abstract L2GameServerPacket inStopMovePacket(Player player);
+	public abstract IClientOutgoingPacket inStopMovePacket(Player player);
 
-	public abstract L2GameServerPacket startPacket();
+	public abstract IClientOutgoingPacket startPacket();
 
-	public abstract L2GameServerPacket validateLocationPacket(Player player);
+	public abstract IClientOutgoingPacket validateLocationPacket(Player player);
 
-	public abstract L2GameServerPacket checkLocationPacket();
+	public abstract IClientOutgoingPacket checkLocationPacket();
 
-	public abstract L2GameServerPacket getOnPacket(Playable playable, Location location);
+	public abstract IClientOutgoingPacket getOnPacket(Playable playable, Location location);
 
-	public abstract L2GameServerPacket getOffPacket(Playable playable, Location location);
+	public abstract IClientOutgoingPacket getOffPacket(Playable playable, Location location);
 
 	public abstract void oustPlayers();
 
@@ -370,7 +370,7 @@ public abstract class Boat extends Creature
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		if (!getMovement().isMoving())
 		{
@@ -378,7 +378,7 @@ public abstract class Boat extends Creature
 		}
 		else
 		{
-			List<L2GameServerPacket> list = new ArrayList<L2GameServerPacket>(2);
+			List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>(2);
 			list.add(infoPacket());
 			list.add(movePacket());
 			return list;

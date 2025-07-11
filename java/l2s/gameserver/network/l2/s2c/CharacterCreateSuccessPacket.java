@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public class CharacterCreateSuccessPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new CharacterCreateSuccessPacket();
+	public static final IClientOutgoingPacket STATIC = new CharacterCreateSuccessPacket();
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

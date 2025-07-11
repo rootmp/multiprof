@@ -4,7 +4,7 @@ import l2s.commons.collections.MultiValueSet;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.residence.Residence;
 import l2s.gameserver.model.pledge.Clan;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.templates.npc.NpcTemplate;
 
 import npc.model.residences.ResidenceManager;
@@ -47,7 +47,7 @@ public class ManagerInstance extends ResidenceManager
 	}
 
 	@Override
-	public L2GameServerPacket decoPacket()
+	public IClientOutgoingPacket decoPacket()
 	{
 		return null;
 	}

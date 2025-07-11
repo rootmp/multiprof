@@ -1,9 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.cache.CrestCache;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.AllianceCrestPacket;
 
 /**
@@ -35,7 +33,7 @@ public class RequestAllyCrest implements IClientIncomingPacket
 		if (data != null)
 		{
 			AllianceCrestPacket ac = new AllianceCrestPacket(_crestId, _clanId, data);
-			sendPacket(ac);
+			client.sendPacket(ac);
 		}
 	}
 }

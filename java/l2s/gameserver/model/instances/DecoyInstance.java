@@ -17,7 +17,7 @@ import l2s.gameserver.model.Skill;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.network.l2.s2c.AutoAttackStartPacket;
 import l2s.gameserver.network.l2.s2c.ExCharInfo;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.StatsSet;
@@ -172,13 +172,13 @@ public class DecoyInstance extends MonsterInstance
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		if (!isInCombat())
-			return Collections.<L2GameServerPacket>singletonList(new ExCharInfo(this, forPlayer));
+			return Collections.<IClientOutgoingPacket>singletonList(new ExCharInfo(this, forPlayer));
 		else
 		{
-			List<L2GameServerPacket> list = new ArrayList<L2GameServerPacket>(2);
+			List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>(2);
 			list.add(new ExCharInfo(this, forPlayer));
 			list.add(new AutoAttackStartPacket(objectId));
 			return list;

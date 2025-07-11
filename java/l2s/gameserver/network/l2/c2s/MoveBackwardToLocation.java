@@ -1,12 +1,10 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.Config;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.ObservePoint;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
 
@@ -30,8 +28,8 @@ public class MoveBackwardToLocation implements IClientIncomingPacket
 		_originLoc.x = packet.readD();
 		_originLoc.y = packet.readD();
 		_originLoc.z = packet.readD();
-		if (_buf.hasRemaining())
-			_keyboardMovement = readD() == 0;
+		if (packet.hasRemaining())
+			_keyboardMovement = packet.readD() == 0;
 		return true;
 	}
 

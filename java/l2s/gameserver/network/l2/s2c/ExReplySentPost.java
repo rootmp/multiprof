@@ -56,7 +56,7 @@ public class ExReplySentPost implements IClientOutgoingPacket
 		packetWriter.writeD(mail.getAttachments().size()); // количество приложенных вещей
 		for (ItemInstance item : mail.getAttachments())
 		{
-			writeItemInfo(item);
+			writeItemInfo(packetWriter, item);
 			packetWriter.writeD(item.getObjectId());
 		}
 

@@ -1,18 +1,15 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.database.MySqlDataInsert;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.CharacterDeleteFailPacket;
 import l2s.gameserver.network.l2.s2c.CharacterDeleteSuccessPacket;
-import l2s.gameserver.network.l2.s2c.CharacterSelectionInfo;
+import l2s.gameserver.network.l2.s2c.CharacterSelectionInfoPacket;
 
 public class CharacterDelete implements IClientIncomingPacket
 {
@@ -31,20 +28,19 @@ public class CharacterDelete implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		int clan = clanStatus();
-		int online = onlineStatus();
-		GameClient client = getClient();
+		int clan = clanStatus(client);
+		int online = onlineStatus(client);
 		if (clan > 0 || online > 0)
 		{
 			if (clan == 2)
-				sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_CLAN_LEADERS_MAY_NOT_BE_DELETED));
+				client.sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_CLAN_LEADERS_MAY_NOT_BE_DELETED));
 			else if (clan == 1)
-				sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_YOU_MAY_NOT_DELETE_CLAN_MEMBER));
+				client.sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_YOU_MAY_NOT_DELETE_CLAN_MEMBER));
 			else if (online > 0)
-				sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_DELETION_FAILED));
+				client.sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_DELETION_FAILED));
 
-			CharacterSelectionInfo cl = new CharacterSelectionInfo(client);
-			sendPacket(cl);
+			CharacterSelectionInfoPacket cl = new CharacterSelectionInfoPacket(client);
+			client.sendPacket(cl);
 			client.setCharSelection(cl.getCharInfo());
 			return;
 		}
@@ -61,14 +57,14 @@ public class CharacterDelete implements IClientIncomingPacket
 			_log.error("Error:", e);
 		}
 
-		sendPacket(new CharacterDeleteSuccessPacket());
+		client.sendPacket(new CharacterDeleteSuccessPacket());
 
-		CharacterSelectionInfo cl = new CharacterSelectionInfo(client);
-		sendPacket(cl);
+		CharacterSelectionInfoPacket cl = new CharacterSelectionInfoPacket(client);
+		client.sendPacket(cl);
 		client.setCharSelection(cl.getCharInfo());
 	}
 
-	private int clanStatus()
+	private int clanStatus(GameClient client)
 	{
 		int obj = client.getObjectIdForSlot(_charSlot);
 		if (obj == -1)
@@ -82,7 +78,7 @@ public class CharacterDelete implements IClientIncomingPacket
 		return 0;
 	}
 
-	private int onlineStatus()
+	private int onlineStatus(GameClient client)
 	{
 		int obj = client.getObjectIdForSlot(_charSlot);
 		if (obj == -1)

@@ -39,7 +39,7 @@ public class ExQuestItemListPacket implements IClientOutgoingPacket
 				{
 					continue;
 				}
-				writeItemInfo(temp);
+				writeItemInfo(packetWriter, temp);
 			}
 		}
 		return true;

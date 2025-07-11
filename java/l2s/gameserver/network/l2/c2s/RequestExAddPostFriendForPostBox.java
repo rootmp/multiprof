@@ -1,14 +1,12 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.napile.primitive.maps.IntObjectMap;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.dao.CharacterDAO;
 import l2s.gameserver.dao.CharacterPostFriendDAO;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExConfirmAddingPostFriend;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
@@ -24,7 +22,7 @@ public class RequestExAddPostFriendForPostBox implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_name = readS(Config.CNAME_MAXLEN);
+		_name = packet.readS(Config.CNAME_MAXLEN);
 		return true;
 	}
 

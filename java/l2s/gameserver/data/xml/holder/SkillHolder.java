@@ -12,6 +12,8 @@ import org.napile.primitive.maps.impl.HashIntObjectMap;
 
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.model.Skill;
+import l2s.gameserver.skills.SkillEntry;
+import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.utils.SkillUtils;
 
 /**
@@ -33,6 +35,19 @@ public final class SkillHolder extends AbstractHolder
 		return _instance;
 	}
 
+	public SkillEntry getSkillEntry(int id, int level)
+	{
+		return getSkillEntry(id, level, 0);
+	}
+	
+	public SkillEntry getSkillEntry(int id, int level, int subLevel)
+	{
+		Skill skill = getSkill(id, level, subLevel);
+		if(skill == null)
+			return null;
+		return SkillEntry.makeSkillEntry(SkillEntryType.NONE, getSkill(id, level, subLevel));
+	}
+	
 	public int getHashCode(int skillId, int skillLevel)
 	{
 		IntIntMap hashCodes = _cachedHashCodes.get(skillId);
@@ -81,6 +96,11 @@ public final class SkillHolder extends AbstractHolder
 		return getSkill(getHashCode(id, level));
 	}
 
+	public Skill getSkill(int id, int level, int sub)
+	{
+		return getSkill(getHashCode(id, level));
+	}
+	
 	public List<Skill> getSkills(int id)
 	{
 		return _skillsById.get(id);

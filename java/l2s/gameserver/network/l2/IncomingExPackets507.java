@@ -8,23 +8,14 @@ import l2s.commons.network.IConnectionState;
 import l2s.commons.network.IIncomingPacket;
 import l2s.commons.network.IIncomingPackets;
 import l2s.gameserver.network.l2.c2s.*;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritAbsorb;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritAbsorbInfo;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritEvolution;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritEvolutionInfo;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritExtract;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritExtractInfo;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritInfo;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritInitTalent;
-import l2s.gameserver.network.l2.c2s.ElementalSpirits.RequestExElementalSpiritSetTalent;
-import l2s.gameserver.network.l2.c2s.RaidAuction.*;
-import l2s.gameserver.network.l2.c2s.ability.RequestAbilityWndClose;
-import l2s.gameserver.network.l2.c2s.ability.RequestAbilityWndOpen;
 import l2s.gameserver.network.l2.c2s.ability.RequestExAcquirePotentialSkill;
 import l2s.gameserver.network.l2.c2s.ability.RequestExChangeAbilityPreset;
 import l2s.gameserver.network.l2.c2s.ability.RequestExChangePotentialPoint;
 import l2s.gameserver.network.l2.c2s.ability.RequestExRequestPotentialSkillList;
 import l2s.gameserver.network.l2.c2s.ability.RequestExResetPotentialSkill;
+import l2s.gameserver.network.l2.c2s.adenadistribution.RequestDivideAdena;
+import l2s.gameserver.network.l2.c2s.adenadistribution.RequestDivideAdenaCancel;
+import l2s.gameserver.network.l2.c2s.adenadistribution.RequestDivideAdenaStart;
 import l2s.gameserver.network.l2.c2s.adenlab.*;
 import l2s.gameserver.network.l2.c2s.blessing.RequestExBlessOptionCancel;
 import l2s.gameserver.network.l2.c2s.blessing.RequestExBlessOptionEnchant;
@@ -33,70 +24,35 @@ import l2s.gameserver.network.l2.c2s.collection.RequestExCollectionCloseUI;
 import l2s.gameserver.network.l2.c2s.collection.RequestExCollectionFavoriteList;
 import l2s.gameserver.network.l2.c2s.collection.RequestExCollectionList;
 import l2s.gameserver.network.l2.c2s.collection.RequestExCollectionOpenUI;
-import l2s.gameserver.network.l2.c2s.collection.RequestExCollectionReceiveReward;
 import l2s.gameserver.network.l2.c2s.collection.RequestExCollectionRegister;
 import l2s.gameserver.network.l2.c2s.collection.RequestExCollectionSummary;
 import l2s.gameserver.network.l2.c2s.collection.RequestExCollectionUpdateFavorite;
-import l2s.gameserver.network.l2.c2s.custom.RequestCustomCycleSkillCastToogle;
-import l2s.gameserver.network.l2.c2s.custom.RequestCustomExReqMultiEnchantItemList;
-import l2s.gameserver.network.l2.c2s.custom.RequestCustomMultiEnchantStorageList;
-import l2s.gameserver.network.l2.c2s.custom.RequestCustomMultiEnchantStorageTake;
-import l2s.gameserver.network.l2.c2s.custom.RequestExGuarantedShopLcoinSelect;
-import l2s.gameserver.network.l2.c2s.custom.RequestExPledgeRbPointsRankingList;
-import l2s.gameserver.network.l2.c2s.custom.RequestExPledgeRbPointsRankingMyInfo;
-import l2s.gameserver.network.l2.c2s.custom.RequestExReNameItem;
-import l2s.gameserver.network.l2.c2s.custom.RequestExShowDropList;
-import l2s.gameserver.network.l2.c2s.custom.RequestExWorldExchangeSettings;
-import l2s.gameserver.network.l2.c2s.custom.RequestExWorldTradeMasterAction;
-import l2s.gameserver.network.l2.c2s.custom.RequestRankingScoreInfo;
-import l2s.gameserver.network.l2.c2s.custom.RequestRankingScoreRankers;
-import l2s.gameserver.network.l2.c2s.dyee.*;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExAddEnchantScrollItem;
+import l2s.gameserver.network.l2.c2s.enchant.RequestExCancelEnchantItem;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExEnchantFailRewardInfo;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExFinishMultiEnchantScroll;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExMultiEnchantItemList;
-import l2s.gameserver.network.l2.c2s.enchant.RequestExResetEnchantChallengePoint;
-import l2s.gameserver.network.l2.c2s.enchant.RequestExSetEnchantChallengePoint;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExSetMultiEnchantItemList;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExStartMultiEnchantScroll;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExTryToPutEnchantSupportItem;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExTryToPutEnchantTargetItem;
-import l2s.gameserver.network.l2.c2s.enchant.RequestExTryToPutShapeShiftingEnchantSupportItem;
-import l2s.gameserver.network.l2.c2s.enchant.RequestExTryToPutShapeShiftingTargetItem;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExViewEnchantResult;
 import l2s.gameserver.network.l2.c2s.enchant.RequestExViewMultiEnchantResult;
 import l2s.gameserver.network.l2.c2s.events.RequestExBalthusToken;
 import l2s.gameserver.network.l2.c2s.events.RequestExFestivalBMGame;
 import l2s.gameserver.network.l2.c2s.events.RequestExFestivalBMInfo;
-import l2s.gameserver.network.l2.c2s.huntpass.HuntpassSayhasToggle;
-import l2s.gameserver.network.l2.c2s.huntpass.RequestHuntPassBuyPremium;
-import l2s.gameserver.network.l2.c2s.huntpass.RequestHuntPassInfo;
-import l2s.gameserver.network.l2.c2s.huntpass.RequestHuntPassReward;
-import l2s.gameserver.network.l2.c2s.huntpass.RequestHuntPassRewardAll;
 import l2s.gameserver.network.l2.c2s.items.autopeel.RequestExItemAutoPeel;
 import l2s.gameserver.network.l2.c2s.items.autopeel.RequestExReadyItemAutoPeel;
 import l2s.gameserver.network.l2.c2s.items.autopeel.RequestExStopItemAutoPeel;
-import l2s.gameserver.network.l2.c2s.limitshop.RequestExOpenHtml;
-import l2s.gameserver.network.l2.c2s.limitshop.RequestExPurchaseLimitShopItemBuy;
-import l2s.gameserver.network.l2.c2s.limitshop.RequestExPurchaseLimitShopItemList;
-import l2s.gameserver.network.l2.c2s.locked.RequestExLockedItemCancel;
-import l2s.gameserver.network.l2.c2s.locked.RequestExRequestLockedItem;
-import l2s.gameserver.network.l2.c2s.locked.RequestExRequestUnlockedItem;
-import l2s.gameserver.network.l2.c2s.locked.RequestExUnlockedItemCancel;
 import l2s.gameserver.network.l2.c2s.magiclamp.RequestExMagicLampGameInfo;
 import l2s.gameserver.network.l2.c2s.magiclamp.RequestExMagicLampGameStart;
-import l2s.gameserver.network.l2.c2s.newhenna.RequestExHennaUnEquipInfo;
 import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaCompose;
 import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaEquip;
 import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaList;
 import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaPotenEnchant;
 import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaPotenEnchantReset;
-import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaPotenOpenslot;
-import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaPotenOpenslotProbInfo;
 import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaPotenSelect;
 import l2s.gameserver.network.l2.c2s.newhenna.RequestExNewHennaUnequip;
-import l2s.gameserver.network.l2.c2s.penalty.RequestExPenaltyItemList;
-import l2s.gameserver.network.l2.c2s.penalty.RequestExPenaltyItemRestore;
 import l2s.gameserver.network.l2.c2s.pledge.RequestExPledgeContributionList;
 import l2s.gameserver.network.l2.c2s.pledge.RequestExPledgeDonationInfo;
 import l2s.gameserver.network.l2.c2s.pledge.RequestExPledgeDonationRequest;
@@ -112,38 +68,14 @@ import l2s.gameserver.network.l2.c2s.privatestoresearch.RequestExPrivateStoreSea
 import l2s.gameserver.network.l2.c2s.prot_507.*;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookKillerLocation;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookList;
-import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeKillerLocation;
-import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeList;
-import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeReqShareRevengeInfo;
-import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeSharedTeleportToKiller;
-import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeTeleportToKiller;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookTeleportToKiller;
-import l2s.gameserver.network.l2.c2s.quest.RequestExQuestAccept;
-import l2s.gameserver.network.l2.c2s.quest.RequestExQuestAcceptableList;
-import l2s.gameserver.network.l2.c2s.quest.RequestExQuestCancel;
-import l2s.gameserver.network.l2.c2s.quest.RequestExQuestComplete;
-import l2s.gameserver.network.l2.c2s.quest.RequestExQuestNotificationAll;
-import l2s.gameserver.network.l2.c2s.quest.RequestExQuestTeleport;
-import l2s.gameserver.network.l2.c2s.quest.RequestExQuestUi;
 import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftExtract;
 import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftRandomInfo;
 import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftRandomLockSlot;
 import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftRandomMake;
 import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftRandomRefresh;
-import l2s.gameserver.network.l2.c2s.randomcraft_ex.RequestExCraftExExtract;
-import l2s.gameserver.network.l2.c2s.randomcraft_ex.RequestExCraftRandomExInfo;
-import l2s.gameserver.network.l2.c2s.randomcraft_ex.RequestExCraftRandomExLockSlot;
-import l2s.gameserver.network.l2.c2s.randomcraft_ex.RequestExCraftRandomExMake;
-import l2s.gameserver.network.l2.c2s.randomcraft_ex.RequestExCraftRandomExRefresh;
 import l2s.gameserver.network.l2.c2s.relics.*;
-import l2s.gameserver.network.l2.c2s.skill_enchant.RequestEnchantSkillInfo;
-import l2s.gameserver.network.l2.c2s.skill_enchant.RequestExExtractSkillEnchant;
-import l2s.gameserver.network.l2.c2s.skill_enchant.RequestExSkillEnchantCharge;
-import l2s.gameserver.network.l2.c2s.skill_enchant.RequestExSkillEnchantConfirm;
-import l2s.gameserver.network.l2.c2s.skill_enchant.RequestExSkillEnchantInfo;
-import l2s.gameserver.network.l2.c2s.skill_enchant.RequestReqEnchantSkill;
-import l2s.gameserver.network.l2.c2s.spExtract.RequestExSpExtractInfo;
-import l2s.gameserver.network.l2.c2s.spExtract.RequestExSpExtractItem;
+import l2s.gameserver.network.l2.c2s.skill_enchant.*;
 import l2s.gameserver.network.l2.c2s.spectating.RequestExUserWatcherAdd;
 import l2s.gameserver.network.l2.c2s.spectating.RequestExUserWatcherDelete;
 import l2s.gameserver.network.l2.c2s.spectating.RequestExUserWatcherTargetList;
@@ -164,14 +96,6 @@ import l2s.gameserver.network.l2.c2s.teleport.RequestExTeleportFavoritesList;
 import l2s.gameserver.network.l2.c2s.teleport.RequestExTeleportFavoritesUIToggle;
 import l2s.gameserver.network.l2.c2s.timerestrictfield.RequestExTimeRestrictFieldList;
 import l2s.gameserver.network.l2.c2s.timerestrictfield.RequestExTimeRestrictFieldUserEnter;
-import l2s.gameserver.network.l2.c2s.timerestrictfield.RequestExTimeRestrictFieldUserLeave;
-import l2s.gameserver.network.l2.c2s.worldexchange.RequestExWorldExchangeAveragePrice;
-import l2s.gameserver.network.l2.c2s.worldexchange.RequestExWorldExchangeBuyItem;
-import l2s.gameserver.network.l2.c2s.worldexchange.RequestExWorldExchangeItemList;
-import l2s.gameserver.network.l2.c2s.worldexchange.RequestExWorldExchangeRegiItem;
-import l2s.gameserver.network.l2.c2s.worldexchange.RequestExWorldExchangeSettleList;
-import l2s.gameserver.network.l2.c2s.worldexchange.RequestExWorldExchangeSettleRecvResult;
-import l2s.gameserver.network.l2.c2s.worldexchange.RequestExWorldExchangeTotalList;
 
 public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 {
@@ -911,30 +835,6 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	
 	
 	EX_MAX(null, ConnectionState.IN_GAME), //901;
-	
-	
-	EX_GUARANTED_SHOP_LCOIN_SELECT(401, 1, RequestExGuarantedShopLcoinSelect::new, ConnectionState.IN_GAME),
-	EX_SHOW_DROP_LIST(401, 2, RequestExShowDropList::new, ConnectionState.IN_GAME),
-	
-	EX_CRAFT_EX_EXTRACT(401, 3, RequestExCraftExExtract::new, ConnectionState.IN_GAME),
-	EX_CRAFT_RANDOM_EX_INFO(401, 4, RequestExCraftRandomExInfo::new, ConnectionState.IN_GAME),
-	EX_CRAFT_RANDOM_EX_LOCK_SLOT(401, 5, RequestExCraftRandomExLockSlot::new, ConnectionState.IN_GAME),
-	EX_CRAFT_RANDOM_EX_REFRESH(401, 6, RequestExCraftRandomExRefresh::new, ConnectionState.IN_GAME),
-	EX_CRAFT_RANDOM_EX_MAKE(401, 7, RequestExCraftRandomExMake::new, ConnectionState.IN_GAME),
-	EX_RQ_WORLD_EXCHANGE_SETTINGS(401, 8, RequestExWorldExchangeSettings::new, ConnectionState.IN_GAME),
-	EX_RQ_WORLD_TRADE_MASTER_ACTION(401, 9, RequestExWorldTradeMasterAction::new, ConnectionState.IN_GAME),
-	EX_RENAME_ITEM(401, 10, RequestExReNameItem::new, ConnectionState.IN_GAME),
-	
-	EX_RANKING_SCORE_RANKERS(401, 12, RequestRankingScoreRankers::new, ConnectionState.IN_GAME),
-	EX_RANKING_SCORE_INFO(401, 13, RequestRankingScoreInfo::new, ConnectionState.IN_GAME),
-	
-	CUSTOM_MULTI_ENCHANT_STORAGE_LIST(401, 14, RequestCustomMultiEnchantStorageList::new, ConnectionState.IN_GAME),
-	CUSTOM_MULTI_ENCHANT_STORAGE_TAKE(401, 15, RequestCustomMultiEnchantStorageTake::new, ConnectionState.IN_GAME),
-	CUSTOM_EX_REQ_MULTI_ENCHANT_ITEM_LIST(401, 16, RequestCustomExReqMultiEnchantItemList::new, ConnectionState.IN_GAME),
-	CUSTOM_CYCLE_SKILL_CAST_TOGGLE(401, 17, RequestCustomCycleSkillCastToogle::new, ConnectionState.IN_GAME, ConnectionState.JOINING_GAME),
-	
-	EX_PLEDGE_RANKING_RB_POINTS_MY_INFO(401, 18, RequestExPledgeRbPointsRankingMyInfo::new, ConnectionState.IN_GAME),
-	EX_PLEDGE_RANKING_RB_POINTS_LIST(401, 19, RequestExPledgeRbPointsRankingList::new, ConnectionState.IN_GAME),
 	
 	EX_BOOK_MARK_SLOT_INFO(78, 0, RequestBookMarkSlotInfo::new, ConnectionState.IN_GAME),
 	EX_SAVE_BOOK_MARK_SLOT(78, 1, RequestSaveBookMarkSlot::new, ConnectionState.IN_GAME),

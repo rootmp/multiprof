@@ -1,17 +1,15 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.apache.commons.lang3.ArrayUtils;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.Race;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.TradeItem;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.PrivateStoreManageList;
 import l2s.gameserver.templates.item.ItemTemplate;
@@ -32,10 +30,10 @@ public class SetPrivateStoreSellList implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_package = readD() == 1;
+		_package = packet.readD() == 1;
 		_count = packet.readD();
 		// Иначе нехватит памяти при создании массива.
-		if (_count * 20 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		if (_count * 20 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;

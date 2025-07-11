@@ -22,7 +22,7 @@ import l2s.gameserver.model.entity.events.impl.SiegeEvent;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.s2c.DoorStatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.EventTriggerPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.StaticObjectPacket;
 import l2s.gameserver.templates.DoorTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate;
@@ -462,9 +462,9 @@ public final class DoorInstance extends Creature
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		List<L2GameServerPacket> list = new ArrayList<L2GameServerPacket>();
+		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
 		/*
 		 * TODO: if(getEmitter() > 0) { list.add(new EventTriggerPacket(getEmitter(),
 		 * getTemplate().isReversed() ? !isOpen() : isOpen())); }

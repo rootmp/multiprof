@@ -74,7 +74,7 @@ public class PrivateStoreBuyList implements IClientOutgoingPacket
 		packetWriter.writeD(_sellList.size());
 		for (TradeItem si : _sellList)
 		{
-			writeItemInfo(si, si.getCurrentValue());
+			writeItemInfo(packetWriter, si, si.getCurrentValue());
 			packetWriter.writeD(si.getObjectId());
 			packetWriter.writeQ(si.getOwnersPrice());
 			packetWriter.writeQ(si.getStorePrice());

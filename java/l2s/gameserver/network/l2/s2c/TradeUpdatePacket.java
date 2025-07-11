@@ -27,7 +27,7 @@ public class TradeUpdatePacket implements IClientOutgoingPacket
 			packetWriter.writeC(0x00); // UNK 140
 			packetWriter.writeC(0x00); // UNK 140
 			packetWriter.writeH(_amount > 0 && _item.getItem().isStackable() ? 3 : 2);
-			writeItemInfo(_item, _amount);
+			writeItemInfo(packetWriter, _item, _amount);
 		}
 		return true;
 	}

@@ -1,10 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Elemental;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ExElementalSpiritSetTalent;
 
 /**
@@ -19,13 +17,13 @@ public class RequestExElementalSpiritSetTalent implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_elementId = packet.readC();
-		_talents = new int[readC()][];
+		_talents = new int[packet.readC()][];
 		for (int i = 0; i < _talents.length; i++)
 		{
 			_talents[i] = new int[]
 			{
-				readC(),
-				readC()
+				packet.readC(),
+				packet.readC()
 			};
 		}
 		return true;

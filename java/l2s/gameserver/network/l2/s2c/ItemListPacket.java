@@ -52,7 +52,7 @@ public class ItemListPacket implements IClientOutgoingPacket
 				{
 					continue;
 				}
-				writeItemInfo(_player, temp);
+				writeItemInfo(packetWriter, _player, temp);
 			}
 		}
 		else

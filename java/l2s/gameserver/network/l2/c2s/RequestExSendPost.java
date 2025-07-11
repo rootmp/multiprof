@@ -1,8 +1,4 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -11,6 +7,7 @@ import java.util.Map;
 import org.apache.commons.lang3.ArrayUtils;
 
 import l2s.commons.dao.JdbcEntityState;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.dao.CharacterDAO;
 import l2s.gameserver.database.MySqlDataInsert;
@@ -20,6 +17,7 @@ import l2s.gameserver.model.World;
 import l2s.gameserver.model.enums.ItemLocation;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.mail.Mail;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExNoticePostArrived;
@@ -52,10 +50,10 @@ public class RequestExSendPost implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_recieverName = readS(35); // имя адресата
+		_recieverName = packet.readS(35); // имя адресата
 		_messageType = packet.readD(); // тип письма, 0 простое 1 с запросом оплаты
-		_topic = readS(Byte.MAX_VALUE); // topic
-		_body = readS(Short.MAX_VALUE); // body
+		_topic = packet.readS(Byte.MAX_VALUE); // topic
+		_body = packet.readS(Short.MAX_VALUE); // body
 
 		_count = packet.readD(); // число прикрепленных вещей
 		if ((((_count * 12) + 4) > _buf.remaining()) || (_count > Short.MAX_VALUE) || (_count < 1)) // TODO [G1ta0]

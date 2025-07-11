@@ -1,8 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.SkillLearn;
@@ -13,6 +10,7 @@ import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.model.instances.VillageMasterPledgeBypasses;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.SubUnit;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.skills.SkillEntry;
@@ -31,7 +29,7 @@ public class RequestAcquireSkill implements IClientIncomingPacket
 	{
 		_id = packet.readD();
 		_level = packet.readD();
-		_type = AcquireType.getById(readD());
+		_type = AcquireType.getById(packet.readD());
 		if (_type == AcquireType.SUB_UNIT)
 		{
 			_subUnit = packet.readD();
@@ -179,7 +177,7 @@ public class RequestAcquireSkill implements IClientIncomingPacket
 			player.getInventory().writeUnlock();
 		}
 
-		player.sendPacket(new SystemMessagePacket(SystemMsg.YOU_HAVE_EARNED_S1_SKILL).addSkillName(skillEntry.getId(), skillEntry.getLevel()));
+		player.sendPacket(new SystemMessagePacket(SystemMsg.YOU_HAVE_EARNED_S1_SKILL).addSkillName(skillEntry.getId(), skillEntry.getLevel(), skillEntry.getSubLevel()));
 
 		// if skill replaces one another skill - updating skill list
 		if ((skillEntry.getTemplate().getSkillsToReplace().size() > 0) && (skillEntry.getTemplate().getSkillsToAdd().size() > 0))

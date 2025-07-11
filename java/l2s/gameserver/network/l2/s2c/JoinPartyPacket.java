@@ -7,8 +7,8 @@ import l2s.commons.network.PacketWriter;
  */
 public class JoinPartyPacket implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket SUCCESS = new JoinPartyPacket(1);
-	public static final L2GameServerPacket FAIL = new JoinPartyPacket(0);
+	public static final IClientOutgoingPacket SUCCESS = new JoinPartyPacket(1);
+	public static final IClientOutgoingPacket FAIL = new JoinPartyPacket(0);
 
 	private int _response;
 

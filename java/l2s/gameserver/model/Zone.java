@@ -23,7 +23,7 @@ import l2s.gameserver.model.base.Race;
 import l2s.gameserver.model.entity.Reflection;
 import l2s.gameserver.model.entity.events.EventOwner;
 import l2s.gameserver.model.instances.NpcInstance;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.stats.Stats;
 import l2s.gameserver.stats.funcs.Func;
@@ -867,7 +867,7 @@ public class Zone extends EventOwner
 		return "[Zone " + getType() + " name: " + getName() + "]";
 	}
 
-	public void broadcastPacket(L2GameServerPacket packet, boolean toAliveOnly)
+	public void broadcastPacket(IClientOutgoingPacket packet, boolean toAliveOnly)
 	{
 		List<Player> insideZoners = getInsidePlayers();
 

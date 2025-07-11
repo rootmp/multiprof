@@ -15,7 +15,7 @@ import l2s.gameserver.instancemanager.MapRegionManager;
 import l2s.gameserver.instancemanager.ReflectionManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.residence.Castle;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.c2s.RequestBuyItem;
 import l2s.gameserver.network.l2.c2s.RequestExRefundItem;
 import l2s.gameserver.network.l2.c2s.RequestPreviewItem;
@@ -157,7 +157,7 @@ public class MerchantInstance extends NpcInstance
 	}
 
 	@Override
-	public boolean canPassPacket(Player player, Class<? extends L2GameClientPacket> packet, Object... arg)
+	public boolean canPassPacket(Player player, Class<? extends IClientIncomingPacket> packet, Object... arg)
 	{
 		return packet == RequestBuyItem.class || packet == RequestSellItem.class || packet == RequestExRefundItem.class || packet == RequestPreviewItem.class || super.canPassPacket(player, packet, arg);
 	}

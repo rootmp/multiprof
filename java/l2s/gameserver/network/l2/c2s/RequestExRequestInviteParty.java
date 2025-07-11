@@ -1,8 +1,4 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.function.Predicate;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -11,12 +7,14 @@ import org.slf4j.LoggerFactory;
 
 import l2s.commons.ban.BanBindType;
 import l2s.commons.ban.BanInfo;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.instancemanager.GameBanManager;
 import l2s.gameserver.model.CommandChannel;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.ChatType;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
@@ -35,7 +33,7 @@ public class RequestExRequestInviteParty implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		cReqType = packet.readC(); // 0 - Party, 1 - CC
-		cSayType = l2s.commons.lang.ArrayUtils.valid(ChatType.VALUES, readC());
+		cSayType = l2s.commons.lang.ArrayUtils.valid(ChatType.VALUES, packet.readC());
 		return true;
 	}
 

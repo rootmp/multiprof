@@ -6,7 +6,7 @@ import l2s.gameserver.ai.DefaultAI;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.network.l2.s2c.EarthQuakePacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * AI каменной статуи Байума.<br>
@@ -38,7 +38,7 @@ public class BaiumNpc extends DefaultAI
 		if (_wait_timeout < System.currentTimeMillis())
 		{
 			_wait_timeout = System.currentTimeMillis() + BAIUM_EARTHQUAKE_TIMEOUT;
-			L2GameServerPacket eq = new EarthQuakePacket(actor.getLoc(), 40, 10);
+			IClientOutgoingPacket eq = new EarthQuakePacket(actor.getLoc(), 40, 10);
 			List<Creature> chars = actor.getAroundCharacters(5000, 10000);
 			for (Creature character : chars)
 				if (character.isPlayer())

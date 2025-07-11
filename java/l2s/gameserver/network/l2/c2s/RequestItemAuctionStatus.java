@@ -1,8 +1,6 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.network.l2.s2c.ExItemAuctionStatus;
 
 /**
@@ -19,6 +17,6 @@ public class RequestItemAuctionStatus implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		sendPacket(new ExItemAuctionStatus());
+		client.sendPacket(new ExItemAuctionStatus());
 	}
 }

@@ -1,64 +1,70 @@
 package l2s.gameserver.network.l2.c2s.newhenna;
 
+import l2s.commons.network.PacketReader;
+import l2s.dataparser.data.common.ItemRequiredId;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.actor.instances.player.Henna;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
-import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.newhenna.ExNewHennaUnequip;
-import l2s.gameserver.templates.henna.HennaTemplate;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.s2c.ActionFailPacket;
+import l2s.gameserver.network.l2.s2c.SystemMessage;
+import l2s.gameserver.network.l2.s2c.newhenna.NewHennaUnequip;
+import l2s.gameserver.templates.item.henna.Henna;
 import l2s.gameserver.utils.ItemFunctions;
 
 public class RequestExNewHennaUnequip implements IClientIncomingPacket
 {
-	private int cSlotID;
-
+	private int _slotId;
+	private int _nCostItemId;
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		cSlotID = packet.readC();
+		_slotId = packet.readC();
+		_nCostItemId = packet.readD();
 		return true;
 	}
 
 	@Override
-	public void run(GameClient client)
+	public void run(GameClient client) throws Exception
 	{
-		Player player = client.getActiveChar();
+		final Player player = client.getActiveChar();
 		if (player == null)
 			return;
 
-		Henna henna = player.getHennaList().get(cSlotID);
-		if (henna == null)
+		Henna henna;
+		if ((_slotId == 1) || (_slotId == 2) || (_slotId == 3) || (_slotId == 4))
 		{
-			player.sendPacket(new ExNewHennaUnequip(cSlotID, false));
-			return;
-		}
+			henna = player.getHenna(_slotId);
 
-		HennaTemplate template = henna.getTemplate();
-		if (template == null)
+			ItemRequiredId _cancelFee = henna.getCancelFee(_nCostItemId);
+
+			if (_cancelFee!=null && ItemFunctions.haveItem(player, _cancelFee.itemName, _cancelFee.count))//добавить возможность бесплатного снятия?
+			{
+				player.removeHenna(_slotId);
+				ItemFunctions.deleteItem(player, _cancelFee.itemName, _cancelFee.count, "removeHenna");
+
+				if (henna.getCancelCount() > 0)
+					ItemFunctions.addItem(player, henna.getDyeItemId(), henna.getCancelCount(), "removeHenna");
+
+				player.sendPacket(new SystemMessage(SystemMessage.THE_SYMBOL_HAS_BEEN_DELETED));
+
+
+				player.sendPacket(new NewHennaUnequip(_slotId, 1));
+				player.applyDyePotenSkills();
+			}
+			else
+			{
+				player.sendPacket(new SystemMessage(SystemMessage.YOU_DO_NOT_HAVE_ENOUGH_ADENA));
+				player.sendPacket(ActionFailPacket.STATIC);
+				player.sendPacket(new NewHennaUnequip(_slotId, 0));
+				player.updateStatBonus();
+			}
+		}
+		else
 		{
-			player.sendPacket(new ExNewHennaUnequip(cSlotID, false));
-			return;
+			player.sendPacket(ActionFailPacket.STATIC);
+			player.sendPacket(new NewHennaUnequip(_slotId, 0));
 		}
-
-		long removePrice = template.getRemovePrice();
-		if (removePrice > 0 && !player.reduceAdena(removePrice))
-		{
-			player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
-			player.sendPacket(new ExNewHennaUnequip(cSlotID, false));
-			return;
-		}
-
-		henna.setTemplate(null);
-		henna.updated(true);
-
-		long removeCount = template.getRemoveCount();
-		if (removeCount > 0)
-		{
-			ItemFunctions.addItem(player, template.getDyeId(), removeCount, true);
-		}
-
-		player.getHennaList().refreshStats(true);
-		player.sendSkillList();
-		player.sendPacket(new ExNewHennaUnequip(cSlotID, true));
 	}
+
+
 }

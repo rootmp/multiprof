@@ -1,10 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.AutoFarm;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ExAutoplaySetting;
 
 public class RequestExAutoplaySetting implements IClientIncomingPacket
@@ -17,22 +15,22 @@ public class RequestExAutoplaySetting implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		// cchcdch
-		int size = readH(); // 16 UNK
-		_farmActivate = readC() > 0; // Auto Farm Enabled
-		_autoPickUpItems = readC() > 0; // Auto Pick Up items
+		int size = packet.readH(); // 16 UNK
+		_farmActivate = packet.readC() > 0; // Auto Farm Enabled
+		_autoPickUpItems = packet.readC() > 0; // Auto Pick Up items
 		try
 		{
-			_targetType = AutoFarm.TargetType.values()[readH()]; // Target type: 0 - Any target, 1 - Monster, 2 - PC, 3
+			_targetType = AutoFarm.TargetType.values()[packet.readH()]; // Target type: 0 - Any target, 1 - Monster, 2 - PC, 3
 																	// - NPC
 		}
 		catch (Exception e)
 		{
 			return false;
 		}
-		_meleeAttackMode = readC() > 0;
+		_meleeAttackMode = packet.readC() > 0;
 		_healPercent = packet.readD(); // Auto Heal Percent
 		_petHealPercent = packet.readD();
-		_politeFarm = readC() > 0;
+		_politeFarm = packet.readC() > 0;
 		return true;
 	}
 

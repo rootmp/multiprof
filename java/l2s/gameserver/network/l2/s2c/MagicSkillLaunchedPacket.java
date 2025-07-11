@@ -75,7 +75,7 @@ public class MagicSkillLaunchedPacket implements IClientOutgoingPacket
 	}
 
 	@Override
-	public L2GameServerPacket packet(Player player)
+	public IClientOutgoingPacket packet(Player player)
 	{
 		if (player != null)
 		{

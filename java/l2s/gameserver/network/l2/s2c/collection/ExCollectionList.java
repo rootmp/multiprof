@@ -6,7 +6,8 @@ import java.util.Map;
 
 import l2s.gameserver.data.xml.holder.CollectionsHolder;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.CollectionTemplate;
 
 /**

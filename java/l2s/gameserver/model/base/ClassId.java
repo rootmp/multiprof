@@ -622,7 +622,12 @@ public enum ClassId
 	{
 		return _parent;
 	}
-
+	
+	public final ClassId getParent()
+	{
+		return _parent;
+	}
+	
 	public final ClassId getFirstParent(int sex)
 	{
 		return _firstParent;

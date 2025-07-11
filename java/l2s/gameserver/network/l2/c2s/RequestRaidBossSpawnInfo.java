@@ -1,11 +1,9 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import org.napile.primitive.sets.IntSet;
 import org.napile.primitive.sets.impl.HashIntSet;
 
+import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.ExRaidBossSpawnInfo;
 
 /**
@@ -22,7 +20,7 @@ public class RequestRaidBossSpawnInfo implements IClientIncomingPacket
 		_count = packet.readD();
 		for (int i = 0; i < _count; i++)
 		{
-			_ids.add(readD());
+			_ids.add(packet.readD());
 		}
 		return true;
 	}
@@ -30,6 +28,6 @@ public class RequestRaidBossSpawnInfo implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		sendPacket(new ExRaidBossSpawnInfo(_count, _ids));
+		client.sendPacket(new ExRaidBossSpawnInfo(_count, _ids));
 	}
 }

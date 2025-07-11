@@ -1,20 +1,18 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
+import l2s.commons.network.PacketReader;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.data.xml.holder.UpgradeSystemHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExUpgradeSystemNormalResult;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;

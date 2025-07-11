@@ -17,7 +17,7 @@ import l2s.gameserver.model.base.FenceState;
 import l2s.gameserver.model.reference.L2Reference;
 import l2s.gameserver.network.l2.s2c.DeleteObjectPacket;
 import l2s.gameserver.network.l2.s2c.ExColosseumFenceInfoPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * @author HoridoJoho / FBIagent
@@ -80,9 +80,9 @@ public class FenceInstance extends GameObject
 	}
 
 	@Override
-	public List<L2GameServerPacket> addPacketList(Player forPlayer, Creature dropper)
+	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		List<L2GameServerPacket> packets = new ArrayList<L2GameServerPacket>();
+		List<IClientOutgoingPacket> packets = new ArrayList<IClientOutgoingPacket>();
 
 		packets.add(new ExColosseumFenceInfoPacket(this));
 
@@ -93,9 +93,9 @@ public class FenceInstance extends GameObject
 	}
 
 	@Override
-	public List<L2GameServerPacket> deletePacketList(Player forPlayer)
+	public List<IClientOutgoingPacket> deletePacketList(Player forPlayer)
 	{
-		List<L2GameServerPacket> packets = new ArrayList<L2GameServerPacket>();
+		List<IClientOutgoingPacket> packets = new ArrayList<IClientOutgoingPacket>();
 
 		packets.add(new DeleteObjectPacket(this));
 
@@ -125,7 +125,7 @@ public class FenceInstance extends GameObject
 
 	public void broadcastInfo()
 	{
-		List<L2GameServerPacket> packets = new ArrayList<L2GameServerPacket>();
+		List<IClientOutgoingPacket> packets = new ArrayList<IClientOutgoingPacket>();
 
 		packets.add(new ExColosseumFenceInfoPacket(this));
 

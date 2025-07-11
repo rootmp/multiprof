@@ -9,7 +9,7 @@ import l2s.gameserver.network.l2.components.ChatType;
 import l2s.gameserver.network.l2.components.NpcString;
 import l2s.gameserver.network.l2.components.SysString;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SayPacket2;
 
 /**
@@ -60,7 +60,7 @@ public class SayAction implements EventAction
 		if (player == null)
 			return;
 
-		L2GameServerPacket packet = null;
+		IClientOutgoingPacket packet = null;
 		if (_sysString != null)
 			packet = new SayPacket2(0, _chatType, _sysString, _systemMsg);
 		else

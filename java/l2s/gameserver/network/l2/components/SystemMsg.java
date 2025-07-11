@@ -3,7 +3,7 @@ package l2s.gameserver.network.l2.components;
 import java.util.NoSuchElementException;
 
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
 /**
@@ -3561,7 +3561,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: System error. Please refresh and try again.
 	SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN(13686);
 
-	private final L2GameServerPacket _message;
+	private final IClientOutgoingPacket _message;
 	private final int _id;
 	private final byte _size;
 
@@ -3616,7 +3616,7 @@ public enum SystemMsg implements IBroadcastPacket
 	}
 
 	@Override
-	public L2GameServerPacket packet(Player player)
+	public IClientOutgoingPacket packet(Player player)
 	{
 		if (_message == null)
 			throw new NoSuchElementException("Running SystemMsg.packet(Player), but message require arguments: " + name());

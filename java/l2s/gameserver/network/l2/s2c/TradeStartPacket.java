@@ -65,7 +65,7 @@ public class TradeStartPacket implements IClientOutgoingPacket
 			packetWriter.writeC(0x00); // UNK 140
 			packetWriter.writeC(0x00); // UNK 140
 			for (ItemInfo item : _tradelist)
-				writeItemInfo(item);
+				writeItemInfo(packetWriter, item);
 		}
 		return true;
 	}

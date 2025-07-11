@@ -4,22 +4,48 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
+import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.network.l2.ServerPacketOpcodes;
+import l2s.gameserver.network.l2.ServerPacketOpcodes507;
 import l2s.gameserver.templates.npc.BuyListTemplate;
 
 public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 {
-	@Override
-	protected ServerPacketOpcodes getOpcodes()
-	{
-		return ServerPacketOpcodes.ExBuySellListPacket;
-	}
+	private static final int[] CASTLES = {
+			3, // Giran
+			7, // Goddart
+	};
 
+	@Override
+	public ByteBuf getOpcodes()
+	{
+		try
+		{
+			ServerPacketOpcodes spo = ServerPacketOpcodes507.ExBuySellListPacket;
+			ByteBuf opcodes = Unpooled.buffer();
+			opcodes.writeByte(spo.getId());
+			int exOpcode = spo.getExId();
+			if(exOpcode >= 0)
+				opcodes.writeShortLE(exOpcode);
+			return opcodes.retain();
+		}
+		catch (IllegalArgumentException e) 
+		{}
+		catch(Exception e)
+		{
+			LOGGER.error("Cannot find serverpacket opcode: " + getClass().getSimpleName() + "!");
+		}
+		return Unpooled.EMPTY_BUFFER;
+	}
+	
 	public static class BuyList extends ExBuySellListPacket
 	{
 		private final int _listId;
@@ -34,7 +60,7 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 			_taxRate = taxRate;
 			_inventoryUsedSlots = activeChar.getInventory().getSize();
 
-			if (buyList != null)
+			if(buyList != null)
 			{
 				_listId = buyList.getListId();
 				_buyList = buyList.getItems();
@@ -54,13 +80,15 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(0x00); // BUY LIST TYPE
 			packetWriter.writeQ(_adena); // current money
 			packetWriter.writeD(_listId);
-			packetWriter.writeD(_inventoryUsedSlots); // TODO [Bonux] Awakening
+			packetWriter.writeD(_inventoryUsedSlots); //TODO [Bonux] Awakening
 			packetWriter.writeH(_buyList.size());
-			for (TradeItem item : _buyList)
+			for(TradeItem item : _buyList)
 			{
-				writeItemInfo(item, item.getCurrentValue());
+				writeItemInfo(packetWriter, item, item.getCurrentValue());
 				packetWriter.writeQ((long) (item.getOwnersPrice() * (1. + _taxRate)));
+
 			}
+			return true;
 		}
 	}
 
@@ -77,7 +105,7 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 			_done = done ? 1 : 0;
 			_taxRate = taxRate;
 			_inventoryUsedSlots = activeChar.getInventory().getSize();
-			if (done)
+			if(done)
 			{
 				_refundList = Collections.emptyList();
 				_sellList = Collections.emptyList();
@@ -85,28 +113,20 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 			else
 			{
 				ItemInstance[] items = activeChar.getRefund().getItems();
-				if (Config.ALLOW_ITEMS_REFUND)
+				if(Config.ALLOW_ITEMS_REFUND)
 				{
 					_refundList = new ArrayList<TradeItem>(items.length);
-					for (ItemInstance item : items)
-					{
+					for(ItemInstance item : items)
 						_refundList.add(new TradeItem(item));
-					}
 				}
 				else
-				{
 					_refundList = new ArrayList<TradeItem>(0);
-				}
 
 				items = activeChar.getInventory().getItems();
 				_sellList = new ArrayList<TradeItem>(items.length);
-				for (ItemInstance item : items)
-				{
-					if (item.canBeSold(activeChar))
-					{
+				for(ItemInstance item : items)
+					if(item.canBeSold(activeChar))
 						_sellList.add(new TradeItem(item, item.getTemplate().isBlocked(activeChar, item)));
-					}
-				}
 			}
 		}
 
@@ -114,35 +134,50 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 		public boolean write(PacketWriter packetWriter)
 		{
 			packetWriter.writeD(0x01); // SELL/REFUND LIST TYPE
-			packetWriter.writeD(_inventoryUsedSlots); // TODO [Bonux] Awakening
+			packetWriter.writeD(_inventoryUsedSlots); //TODO [Bonux] Awakening
 			packetWriter.writeH(_sellList.size());
-			for (TradeItem item : _sellList)
+			for(TradeItem item : _sellList)
 			{
-				writeItemInfo(item);
-				if (Config.ALT_SELL_ITEM_ONE_ADENA)
-				{
-					packetWriter.writeQ(1);
-				}
+				writeItemInfo(packetWriter, item);
+				if(Config.ALT_SELL_ITEM_ONE_ADENA)
+					packetWriter.writeQ(0);
 				else
-				{
-					packetWriter.writeQ(item.getReferencePrice() / 2);
-				}
+					packetWriter.writeQ((long) ((item.getReferencePrice() / 2) * (1. - _taxRate)));
 			}
 			packetWriter.writeH(_refundList.size());
-			for (TradeItem item : _refundList)
+			for(TradeItem item : _refundList)
 			{
-				writeItemInfo(item);
+				writeItemInfo(packetWriter, item);
 				packetWriter.writeD(item.getObjectId());
-				if (Config.ALT_SELL_ITEM_ONE_ADENA)
-				{
+				if(Config.ALT_SELL_ITEM_ONE_ADENA)
 					packetWriter.writeQ(item.getCount());
-				}
 				else
-				{
-					packetWriter.writeQ((long) (((item.getCount() * item.getReferencePrice()) / 2) * (1. - _taxRate)));
-				}
+					packetWriter.writeQ((long) ((item.getCount() * item.getReferencePrice() / 2) * (1. - _taxRate)));
 			}
 			packetWriter.writeC(_done);
+			return true;
+		}
+	}
+
+	public static class CurrentTax extends ExBuySellListPacket
+	{
+		@Override
+		public boolean write(PacketWriter packetWriter)
+		{
+			packetWriter.writeD(3); // BUY LIST TYPE
+			packetWriter.writeD(CASTLES.length);
+			for(int id : CASTLES)
+			{
+				packetWriter.writeD(id); // residence id
+				try
+				{
+					packetWriter.writeD(((Castle) ResidenceHolder.getInstance().getResidence(id)).getSellTaxPercent());// residence tax
+				}
+				catch(NullPointerException ignored)
+				{
+					packetWriter.writeD(0);
+				}
+			}
 			return true;
 		}
 	}

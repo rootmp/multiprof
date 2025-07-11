@@ -1,11 +1,9 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.residence.Castle;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
 public class RequestExPledgeMercenaryMemberJoin implements IClientIncomingPacket
@@ -19,7 +17,7 @@ public class RequestExPledgeMercenaryMemberJoin implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		charObjectId = packet.readD();
-		join = readD() > 0;
+		join = packet.readD() > 0;
 		castleId = packet.readD();
 		clanId = packet.readD();
 		return true;

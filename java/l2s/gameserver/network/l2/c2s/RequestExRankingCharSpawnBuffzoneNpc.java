@@ -1,11 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.data.xml.holder.NpcHolder;
 import l2s.gameserver.idfactory.IdFactory;
@@ -15,6 +12,7 @@ import l2s.gameserver.model.FakePlayer;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.NpcInstance;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExRankingCharBuffzoneNpcInfo;
 import l2s.gameserver.network.l2.s2c.ExRankingCharBuffzoneNpcPosition;

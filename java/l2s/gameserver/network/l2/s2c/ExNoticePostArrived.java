@@ -9,8 +9,8 @@ import l2s.gameserver.network.l2.c2s.RequestExRequestReceivedPostList;
  */
 public class ExNoticePostArrived implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC_TRUE = new ExNoticePostArrived(1);
-	public static final L2GameServerPacket STATIC_FALSE = new ExNoticePostArrived(0);
+	public static final IClientOutgoingPacket STATIC_TRUE = new ExNoticePostArrived(1);
+	public static final IClientOutgoingPacket STATIC_FALSE = new ExNoticePostArrived(0);
 
 	private int _anim;
 

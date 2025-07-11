@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 public final class ExNotifyFlyMoveStart implements IClientOutgoingPacket
 {
-	public static final L2GameServerPacket STATIC = new ExNotifyFlyMoveStart();
+	public static final IClientOutgoingPacket STATIC = new ExNotifyFlyMoveStart();
 
 	public ExNotifyFlyMoveStart()
 	{

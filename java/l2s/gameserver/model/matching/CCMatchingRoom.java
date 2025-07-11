@@ -8,7 +8,7 @@ import l2s.gameserver.network.l2.s2c.ExDissmissMpccRoom;
 import l2s.gameserver.network.l2.s2c.ExManageMpccRoomMember;
 import l2s.gameserver.network.l2.s2c.ExMpccRoomInfo;
 import l2s.gameserver.network.l2.s2c.ExMpccRoomMember;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * @author VISTALL
@@ -57,37 +57,37 @@ public class CCMatchingRoom extends MatchingRoom
 	}
 
 	@Override
-	public L2GameServerPacket closeRoomPacket()
+	public IClientOutgoingPacket closeRoomPacket()
 	{
 		return ExDissmissMpccRoom.STATIC;
 	}
 
 	@Override
-	public L2GameServerPacket infoRoomPacket()
+	public IClientOutgoingPacket infoRoomPacket()
 	{
 		return new ExMpccRoomInfo(this);
 	}
 
 	@Override
-	public L2GameServerPacket addMemberPacket(Player $member, Player active)
+	public IClientOutgoingPacket addMemberPacket(Player $member, Player active)
 	{
 		return new ExManageMpccRoomMember(ExManageMpccRoomMember.ADD_MEMBER, this, active);
 	}
 
 	@Override
-	public L2GameServerPacket removeMemberPacket(Player $member, Player active)
+	public IClientOutgoingPacket removeMemberPacket(Player $member, Player active)
 	{
 		return new ExManageMpccRoomMember(ExManageMpccRoomMember.REMOVE_MEMBER, this, active);
 	}
 
 	@Override
-	public L2GameServerPacket updateMemberPacket(Player $member, Player active)
+	public IClientOutgoingPacket updateMemberPacket(Player $member, Player active)
 	{
 		return new ExManageMpccRoomMember(ExManageMpccRoomMember.UPDATE_MEMBER, this, active);
 	}
 
 	@Override
-	public L2GameServerPacket membersPacket(Player active)
+	public IClientOutgoingPacket membersPacket(Player active)
 	{
 		return new ExMpccRoomMember(this, active);
 	}

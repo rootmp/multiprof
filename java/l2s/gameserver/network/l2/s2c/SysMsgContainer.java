@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.GameObject;
@@ -28,20 +28,20 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 {
 	public static enum Types
 	{
-		TEXT, // 0
-		NUMBER, // 1
-		NPC_NAME, // 2
-		ITEM_NAME, // 3
-		SKILL_NAME, // 4
-		RESIDENCE_NAME, // 5
-		LONG, // 6
-		ZONE_NAME, // 7
-		ITEM_NAME_WITH_AUGMENTATION, // 8
-		ELEMENT_NAME, // 9
-		INSTANCE_NAME, // 10 d
-		STATIC_OBJECT_NAME, // 11
-		PLAYER_NAME, // 12 S
-		SYSTEM_STRING, // 13 d
+		TEXT, //0
+		NUMBER, //1
+		NPC_NAME, //2
+		ITEM_NAME, //3
+		SKILL_NAME, //4
+		RESIDENCE_NAME, //5
+		LONG, //6
+		ZONE_NAME, //7
+		ITEM_NAME_WITH_AUGMENTATION, //8
+		ELEMENT_NAME, //9
+		INSTANCE_NAME, //10  d
+		STATIC_OBJECT_NAME, //11
+		PLAYER_NAME, //12 S
+		SYSTEM_STRING, //13 d
 		NPCSTRING, // 14
 		CLASS_NAME, // 15
 		HP_CHANGE, // 16
@@ -58,7 +58,7 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 	protected SystemMsg _message;
 	protected List<IArgument> _arguments;
 
-	// @Deprecated
+	//@Deprecated
 	protected SysMsgContainer(int messageId)
 	{
 		this(SystemMsg.valueOf(messageId));
@@ -66,19 +66,19 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 
 	protected SysMsgContainer(SystemMsg message)
 	{
-		if (message == null)
+		if(message == null)
 			throw new IllegalArgumentException("SystemMsg is null");
 
 		_message = message;
 		_arguments = new ArrayList<IArgument>(_message.size());
 	}
 
-	protected void writeElements()
+	protected void writeElements(PacketWriter packetWriter)
 	{
-		if (_message.size() > _arguments.size())
+		if(_message.size() > _arguments.size())
 			throw new IllegalArgumentException("Wrong count of arguments: " + _message);
 
-		if (this instanceof ConfirmDlgPacket)
+		if(this instanceof ConfirmDlgPacket)
 		{
 			packetWriter.writeD(_message.getId());
 			packetWriter.writeD(_arguments.size());
@@ -88,37 +88,47 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 			packetWriter.writeH(_message.getId());
 			packetWriter.writeC(_arguments.size());
 		}
-		for (IArgument argument : _arguments)
-			argument.write(this);
+		for(IArgument argument : _arguments)
+			argument.write(this, packetWriter);
 	}
 
-	// ==================================================================================================
-	public T addName(GameObject object)
+	//==================================================================================================
+	
+	//TODO @Deprecated
+	public T addName(GameObject object) 
 	{
-		if (object == null)
+		return addName(object, null);
+	}
+	
+	public T addName(GameObject object, Player receiver)
+	{
+		if(object == null)
 			return add(new StringArgument(null));
 
-		if (object.isNpc())
+		if(object.isNpc())
 		{
 			NpcInstance npc = (NpcInstance) object;
-			if (npc.getTemplate().displayId != 0 || !npc.getName().equals(npc.getTemplate().name))
-				return add(new StringArgument(npc.getName()));
+			if((npc.getTemplate().displayId != 0 && npc.getTemplate().displayId != npc.getNpcId()))
+			{
+				//return add(new StringArgument(npc.getName()));
+				return add(new NpcNameArgument(npc.getTemplate().displayId + 1000000));
+			}
 			return add(new NpcNameArgument(npc.getNpcId() + 1000000));
 		}
-		else if (object.isServitor())
+		else if(object.isServitor())
 		{
 			Servitor servitor = (Servitor) object;
-			if (!servitor.getName().equals(servitor.getTemplate().name))
+			if(!servitor.getName().equals(servitor.getTemplate().name))
 				return add(new StringArgument(servitor.getName()));
 			return add(new NpcNameArgument(servitor.getNpcId() + 1000000));
 		}
-		else if (object.isItem())
+		else if(object.isItem())
 			return add(new ItemNameArgument(((ItemInstance) object).getItemId()));
-		else if (object.isPlayer())
-			return add(new PlayerNameArgument((Player) object));
-		else if (object.isDoor())
+		else if(object.isPlayer())
+			return add(new PlayerNameArgument((Player) object, receiver));
+		else if(object.isDoor())
 			return add(new StaticObjectNameArgument(((DoorInstance) object).getDoorId()));
-		else if (object instanceof StaticObjectInstance)
+		else if(object instanceof StaticObjectInstance)
 			return add(new StaticObjectNameArgument(((StaticObjectInstance) object).getUId()));
 
 		return add(new StringArgument(object.getName()));
@@ -136,12 +146,12 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 
 	public T addSkillName(SkillInfo skillInfo)
 	{
-		return addSkillName(skillInfo.getDisplayId(), skillInfo.getDisplayLevel());
+		return addSkillName(skillInfo.getDisplayId(), skillInfo.getDisplayLevel(), skillInfo.getSubLevel());
 	}
 
-	public T addSkillName(int id, int level)
+	public T addSkillName(int id, int level, int subLevel)
 	{
-		return add(new SkillArgument(id, level));
+		return add(new SkillArgument(id, level, subLevel));
 	}
 
 	public T addItemName(int item_id)
@@ -242,25 +252,25 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		return (T) this;
 	}
 
-	// ==================================================================================================
+	//==================================================================================================
 	// Суппорт классы, собственна реализация (не L2jFree)
-	// ==================================================================================================
+	//==================================================================================================
 
 	public static abstract class IArgument
 	{
-		void write(SysMsgContainer<?> m)
+		void write(SysMsgContainer<?> m, PacketWriter packetWriter)
 		{
-			if (m instanceof ConfirmDlgPacket)
-				m.packetWriter.writeD(getType().ordinal());
+			if(m instanceof ConfirmDlgPacket)
+				packetWriter.writeD(getType().ordinal());
 			else
-				m.packetWriter.writeC(getType().ordinal());
+				packetWriter.writeC(getType().ordinal());
 
-			writeData(m);
+			writeData(m, packetWriter);
 		}
 
 		abstract Types getType();
 
-		abstract void writeData(SysMsgContainer<?> message);
+		abstract void writeData(SysMsgContainer<?> message, PacketWriter packetWriter);
 	}
 
 	public static class IntegerArgument extends IArgument
@@ -273,9 +283,9 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		public void writeData(SysMsgContainer<?> message)
+		public void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeD(_data);
+			packetWriter.writeD(_data);
 		}
 
 		@Override
@@ -331,10 +341,10 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeD(_itemId);
-			message.packetWriter.writeC(_augmented);
+			packetWriter.writeD(_itemId);
+			packetWriter.writeC(_augmented);
 		}
 	}
 
@@ -404,9 +414,9 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeQ(_data);
+			packetWriter.writeQ(_data);
 		}
 
 		@Override
@@ -426,9 +436,9 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeC(_data);
+			packetWriter.writeC(_data);
 		}
 
 		@Override
@@ -448,9 +458,9 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeH(_data);
+			packetWriter.writeH(_data);
 		}
 
 		@Override
@@ -470,9 +480,9 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeS(_data);
+			packetWriter.writeS(_data);
 		}
 
 		@Override
@@ -486,18 +496,21 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 	{
 		private final int _skillId;
 		private final int _skillLevel;
+		private final int _skillSubLevel;
 
-		public SkillArgument(int t1, int t2)
+		public SkillArgument(int t1, int t2, int t3)
 		{
 			_skillId = t1;
 			_skillLevel = t2;
+			_skillSubLevel = t3;
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeD(_skillId);
-			message.packetWriter.writeH(_skillLevel);
+			packetWriter.writeD(_skillId);
+			packetWriter.writeH(_skillLevel);
+			packetWriter.writeH(_skillSubLevel);
 		}
 
 		@Override
@@ -521,11 +534,11 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeD(_x);
-			message.packetWriter.writeD(_y);
-			message.packetWriter.writeD(_z);
+			packetWriter.writeD(_x);
+			packetWriter.writeD(_y);
+			packetWriter.writeD(_z);
 		}
 
 		@Override
@@ -566,16 +579,18 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 	public static class PlayerNameArgument extends IArgument
 	{
 		private final Player _player;
+		private final Player receiver;
 
-		public PlayerNameArgument(Player player)
+		public PlayerNameArgument(Player player, Player receiver)
 		{
 			_player = player;
+			this.receiver = receiver;
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeS(_player.getVisibleName(message.getClient().getActiveChar()));
+			packetWriter.writeS(_player.getVisibleName(receiver));
 		}
 
 		@Override
@@ -613,11 +628,11 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeD(_targetId);
-			message.packetWriter.writeD(_attackerId);
-			message.packetWriter.writeD(_hp);
+			packetWriter.writeD(_targetId);
+			packetWriter.writeD(_attackerId);
+			packetWriter.writeD(_hp);
 		}
 
 		@Override
@@ -639,11 +654,11 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 		}
 
 		@Override
-		void writeData(SysMsgContainer<?> message)
+		void writeData(SysMsgContainer<?> message, PacketWriter packetWriter)
 		{
-			message.packetWriter.writeD(_npcString.getId());
-			for (String st : _parameters)
-				message.packetWriter.writeS(st);
+			packetWriter.writeD(_npcString.getId());
+			for(String st : _parameters)
+				packetWriter.writeS(st);
 		}
 
 		@Override

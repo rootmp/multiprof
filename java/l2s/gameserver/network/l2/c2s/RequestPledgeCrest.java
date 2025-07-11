@@ -1,10 +1,8 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.PledgeCrestPacket;
 
 /**
@@ -37,7 +35,7 @@ public class RequestPledgeCrest implements IClientIncomingPacket
 		if (data != null)
 		{
 			PledgeCrestPacket pc = new PledgeCrestPacket(_pledgeId, _crestId, data);
-			sendPacket(pc);
+			client.sendPacket(pc);
 		}
 	}
 }

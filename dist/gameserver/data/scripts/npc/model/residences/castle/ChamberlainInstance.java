@@ -22,7 +22,7 @@ import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.HtmlMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.CastleSiegeInfoPacket;
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.npc.NpcTemplate;
 import l2s.gameserver.utils.ItemFunctions;
@@ -628,7 +628,7 @@ public class ChamberlainInstance extends ResidenceManager
 	}
 
 	@Override
-	public L2GameServerPacket decoPacket()
+	public IClientOutgoingPacket decoPacket()
 	{
 		return null;
 	}

@@ -1,14 +1,12 @@
 package l2s.gameserver.network.l2.c2s;
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.GameClient.GameClientState;
+import l2s.gameserver.network.l2.ConnectionState;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ActionFailPacket;
-import l2s.gameserver.network.l2.s2c.CharacterSelectionInfo;
+import l2s.gameserver.network.l2.s2c.CharacterSelectionInfoPacket;
 import l2s.gameserver.network.l2.s2c.RestartResponsePacket;
 
 public class RequestRestart implements IClientIncomingPacket
@@ -65,13 +63,13 @@ public class RequestRestart implements IClientIncomingPacket
 			return;
 		}
 
-		if (getClient() != null)
-			client.setState(GameClientState.AUTHED);
+		client.setConnectionState(ConnectionState.AUTHENTICATED);
 
 		activeChar.restart();
 		// send char list
-		CharacterSelectionInfo cl = new CharacterSelectionInfo(getClient());
-		sendPacket(RestartResponsePacket.OK, cl);
+		CharacterSelectionInfoPacket cl = new CharacterSelectionInfoPacket(client);
+		client.sendPacket(RestartResponsePacket.OK);
+		client.sendPacket(new CharacterSelectionInfoPacket(client));
 		client.setCharSelection(cl.getCharInfo());
 	}
 }

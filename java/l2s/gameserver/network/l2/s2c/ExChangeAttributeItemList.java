@@ -24,7 +24,7 @@ public class ExChangeAttributeItemList implements IClientOutgoingPacket
 		packetWriter.writeD(_itemsList.length); // size
 		for (ItemInfo item : _itemsList)
 		{
-			writeItemInfo(item);
+			writeItemInfo(packetWriter, item);
 		}
 		return true;
 	}

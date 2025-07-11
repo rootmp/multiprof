@@ -1,8 +1,4 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,9 +7,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import l2s.commons.math.SafeMath;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.TradeItem;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExPrivateStoreBuyingResult;
 import l2s.gameserver.utils.Log;
@@ -51,8 +49,8 @@ public class RequestPrivateStoreBuySellList implements IClientIncomingPacket
 		{
 			_items[i] = packet.readD();
 			packet.readD(); // itemId
-			readH(); // Enchant Level
-			readH(); // Have Name
+			packet.readH(); // Enchant Level
+			packet.readH(); // Have Name
 			_itemQ[i] = packet.readQ(); // Count
 			_itemP[i] = packet.readQ(); // Price
 

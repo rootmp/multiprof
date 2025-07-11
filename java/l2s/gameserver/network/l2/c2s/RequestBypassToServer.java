@@ -1,8 +1,4 @@
 package l2s.gameserver.network.l2.c2s;
-import l2s.commons.network.PacketReader;
-import l2s.gameserver.network.l2.GameClient;
-
-
 import java.lang.reflect.Method;
 import java.util.StringTokenizer;
 
@@ -11,6 +7,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.EventHolder;
 import l2s.gameserver.data.xml.holder.MultiSellHolder;
@@ -29,6 +26,7 @@ import l2s.gameserver.model.entity.events.EventType;
 import l2s.gameserver.model.entity.events.impl.PvPEvent;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.model.quest.Quest;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExShowVariationCancelWindow;
 import l2s.gameserver.network.l2.s2c.ExShowVariationMakeWindow;

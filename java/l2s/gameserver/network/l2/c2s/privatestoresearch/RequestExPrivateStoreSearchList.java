@@ -17,7 +17,9 @@ import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.PrivateStoreHistoryItem;
 import l2s.gameserver.model.items.TradeItem;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.s2c.privatestoresearch.ExPrivateStoreSearchHistory;
 import l2s.gameserver.network.l2.s2c.privatestoresearch.ExPrivateStoreSearchItem;
 import l2s.gameserver.templates.item.EtcItemTemplate;
@@ -36,11 +38,11 @@ public class RequestExPrivateStoreSearchList implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		sSearchWord = readString();
+		sSearchWord = packet.readString();
 		cStoreType = packet.readC(); // 0 - sell, 1 - buy, 3 - all
 		cItemType = packet.readC(); // 0 - equip, 2 - gain, 4 - grocery, 255 - collection
 		cItemSubtype = packet.readC();
-		bSearchCollection = readC() > 0;
+		bSearchCollection = packet.readC() > 0;
 		return true;
 	}
 

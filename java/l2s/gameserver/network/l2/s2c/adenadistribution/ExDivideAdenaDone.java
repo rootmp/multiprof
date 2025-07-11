@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c.adenadistribution;
 
-import l2s.gameserver.network.l2.s2c.L2GameServerPacket;
+import l2s.commons.network.PacketWriter;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * @author Erlandys
