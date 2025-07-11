@@ -1,42 +1,47 @@
 package l2s.gameserver.network.l2.s2c;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.actor.instances.player.Henna;
-import l2s.gameserver.model.actor.instances.player.HennaList;
+import l2s.gameserver.model.base.BaseStats;
+import l2s.gameserver.templates.item.henna.HennaPoten;
 
 public class GMHennaInfoPacket implements IClientOutgoingPacket
 {
 	private final Player _player;
-	private final HennaList _hennaList;
+	private final List<HennaPoten> _hennas = new ArrayList<>();
 
 	public GMHennaInfoPacket(Player player)
 	{
 		_player = player;
-		_hennaList = player.getHennaList();
+		for(HennaPoten henna : _player.getHennaPotenList())
+			if(henna != null)
+				_hennas.add(henna);
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		packetWriter.writeH(_hennaList.getINT()); // equip INT
-		packetWriter.writeH(_hennaList.getSTR()); // equip STR
-		packetWriter.writeH(_hennaList.getCON()); // equip CON
-		packetWriter.writeH(_hennaList.getMEN()); // equip MEN
-		packetWriter.writeH(_hennaList.getDEX()); // equip DEX
-		packetWriter.writeH(_hennaList.getWIT()); // equip WIT
-		packetWriter.writeH(0x00); // LUC
-		packetWriter.writeH(0x00); // CHA
-		packetWriter.writeD(HennaList.MAX_SIZE); // interlude, slots?
-		packetWriter.writeD(_hennaList.size());
-		for (Henna henna : _hennaList.values())
+		packetWriter.writeH(_player.getHennaValue(BaseStats.INT)); // equip INT
+		packetWriter.writeH(_player.getHennaValue(BaseStats.STR)); // equip STR
+		packetWriter.writeH(_player.getHennaValue(BaseStats.CON)); // equip CON
+		packetWriter.writeH(_player.getHennaValue(BaseStats.MEN)); // equip MEN
+		packetWriter.writeH(_player.getHennaValue(BaseStats.DEX)); // equip DEX
+		packetWriter.writeH(_player.getHennaValue(BaseStats.WIT)); // equip WIT
+		packetWriter.writeH(0); // equip LUC
+		packetWriter.writeH(0); // equip CHA
+		packetWriter.writeD(3); // Slots
+		packetWriter.writeD(_hennas.size()); // Size
+		for(HennaPoten henna : _hennas)
 		{
-			packetWriter.writeD(henna.getTemplate().getSymbolId());
-			packetWriter.writeD(_hennaList.isActive(henna));
+			packetWriter.writeD(henna.getPotenId());
+			packetWriter.writeD(1);
 		}
-		packetWriter.writeD(0x00); // Premium symbol ID
-		packetWriter.writeD(0x00); // Premium symbol active
-		packetWriter.writeD(0x00); // Premium symbol left time
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
+		packetWriter.writeD(0);
 		return true;
 	}
 }

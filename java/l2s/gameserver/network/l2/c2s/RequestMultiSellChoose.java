@@ -9,6 +9,7 @@ import l2s.commons.math.SafeMath;
 import l2s.commons.network.PacketReader;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.Config;
+import l2s.gameserver.data.xml.holder.EnsoulHolder;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.data.xml.holder.MultiSellHolder;
 import l2s.gameserver.model.MultiSellListContainer;
@@ -404,8 +405,9 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 			int visualId = 0;
 			boolean blessed = false;
 			int appearanceStoneId = 0;
-			Ensoul[] normalEnsouls = ItemInstance.EMPTY_ENSOULS_ARRAY;
-			Ensoul[] specialEnsouls = ItemInstance.EMPTY_ENSOULS_ARRAY;
+			int[] normalEnsouls = null;
+			int[] specialEnsouls = null;
+			
 			for (ItemData id : items)
 			{
 				long count = id.getCount();
@@ -445,8 +447,11 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 								}
 								if (id.getItem().canBeBlessed())
 									blessed = id.getItem().isBlessed();
-								normalEnsouls = id.getItem().getNormalEnsouls();
-								specialEnsouls = id.getItem().getSpecialEnsouls();
+								
+								if(!id.getItem().getNormalEnsouls().isEmpty())
+									normalEnsouls = id.getItem().getEnsoulOptionsArray();
+								if(!id.getItem().getSpecialEnsouls().isEmpty())
+									specialEnsouls  = id.getItem().getEnsoulSpecialOptionsArray();
 							}
 							else if (!Config.RETAIL_MULTISELL_ENCHANT_TRANSFER && id.getItem().canBeEnchanted())
 							{
@@ -464,10 +469,11 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 									appearanceStoneId = id.getItem().getAppearanceStoneId();
 								if (id.getItem().isBlessed())
 									blessed = true;
-								if (id.getItem().getNormalEnsouls().length > 0)
-									normalEnsouls = id.getItem().getNormalEnsouls();
-								if (id.getItem().getSpecialEnsouls().length > 0)
-									specialEnsouls = id.getItem().getSpecialEnsouls();
+								
+								if(!id.getItem().getNormalEnsouls().isEmpty())
+									normalEnsouls = id.getItem().getEnsoulOptionsArray();
+								if(!id.getItem().getSpecialEnsouls().isEmpty())
+									specialEnsouls  = id.getItem().getEnsoulSpecialOptionsArray();
 							}
 
 							if (id.getItem().isWeapon() || id.getItem().isArmor() || id.getItem().isAccessory())
@@ -618,18 +624,30 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 						// базе еще не существует
 						if (keepenchant)
 						{
-							for (int id = 1; id <= normalEnsouls.length; id++)
+							if(normalEnsouls!=null)
 							{
-								Ensoul ensoul = normalEnsouls[id - 1];
-								product.addEnsoul(1, id, ensoul, true);
+								if(normalEnsouls[0]>0)
+								{
+									Ensoul ensoul = EnsoulHolder.getInstance().getEnsoul(normalEnsouls[0]);
+									if(ensoul!=null)
+										product.addSpecialAbility(ensoul, 0, 1, true);
+								}
+								if(normalEnsouls[1]>0)
+								{
+									Ensoul ensoul = EnsoulHolder.getInstance().getEnsoul(normalEnsouls[1]);
+									if(ensoul!=null)
+										product.addSpecialAbility(ensoul, 1, 1, true);
+								}
 							}
-							for (int id = 1; id <= specialEnsouls.length; id++)
+
+							if(specialEnsouls!=null &&  specialEnsouls[0]>0)
 							{
-								Ensoul ensoul = specialEnsouls[id - 1];
-								product.addEnsoul(2, id, ensoul, true);
+								Ensoul ensoul = EnsoulHolder.getInstance().getEnsoul(specialEnsouls[0]);
+								if(ensoul!=null)
+								{
+									product.addSpecialAbility(ensoul, 0, 2, true);
+								}
 							}
-							normalEnsouls = ItemInstance.EMPTY_ENSOULS_ARRAY;
-							specialEnsouls = ItemInstance.EMPTY_ENSOULS_ARRAY;
 						}
 
 						Log.LogMultisell("Character " + activeChar.getName() + " bought 1 of " + product.getItemId() + " igridients: Id: " + in.getItemId() + " count: " + in.getItemCount() + "");

@@ -1,36 +1,35 @@
 package l2s.gameserver.network.l2.s2c;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Friend;
-import l2s.gameserver.templates.StatsSet;
+import l2s.gameserver.templates.ranking.PVPRankingRankInfo;
 
-/**
- * @author nexvill
- */
 public class ExPvpRankingList implements IClientOutgoingPacket
 {
 	private final Player _player;
-	private final int _race;
-	private final int _season;
-	private final int _group;
-	private final int _scope;
-	private final Map<Integer, StatsSet> _playerList;
-	private final Map<Integer, StatsSet> _snapshotList;
+	private final int nRace;
+	private final int bCurrentSeason;
+	private final int cRankingGroup;
+	private final int cRankingScope;
+	private final Map<Integer, PVPRankingRankInfo> _playerList;
+	private final Map<Integer, PVPRankingRankInfo> _snapshotList;
 
 	public ExPvpRankingList(Player player, int season, int group, int scope, int race)
 	{
 		_player = player;
 
-		_season = season;
-		_group = group;
-		_scope = scope;
-		_race = race;
+		bCurrentSeason = season;
+		cRankingGroup = group;
+		cRankingScope = scope;
+		nRace = race;
 
 		_playerList = RankManager.getInstance().getPvpRankList();
 		_snapshotList = RankManager.getInstance().getOldPvpRankList();
@@ -39,285 +38,210 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		packetWriter.writeC(_season);
-		packetWriter.writeC(_group);
-		packetWriter.writeC(_scope);
-		packetWriter.writeD(_race);
+		packetWriter.writeC(bCurrentSeason);
+		packetWriter.writeC(cRankingGroup);
+		packetWriter.writeC(cRankingScope);
+		packetWriter.writeD(nRace);
 
-		Map<Integer, StatsSet> plrList;
-		if (_season == 1)
+		Map<Integer, PVPRankingRankInfo> plrList = (bCurrentSeason == 1) ? _playerList : _snapshotList;
+
+		if(plrList.size() > 0)
 		{
-			plrList = _playerList;
+			switch(cRankingGroup)
+			{
+				case 0: // all
+					handleRankingAll(packetWriter, plrList);
+					break;
+				case 1: // race
+					handleRankingRace(packetWriter, plrList);
+					break;
+				case 2: // clan
+					handleRankingClan(packetWriter, plrList);
+					break;
+				case 3: // friend
+					handleRankingFriend(packetWriter, plrList);
+					break;
+				default:
+					packetWriter.writeD(0);
+					break;
+			}
+		}
+		else
+			packetWriter.writeD(0);
+
+		return true;
+	}
+
+	private void handleRankingAll(PacketWriter packetWriter, Map<Integer, PVPRankingRankInfo> plrList)
+	{
+		if(cRankingScope == 0)
+		{ // all
+			int count = Math.min(plrList.size(), 150);
+			packetWriter.writeD(count);
+
+			plrList.values().stream().limit(150).forEach(player -> {
+				packetWriter.writeSizedString(player.sCharName);
+				packetWriter.writeSizedString(player.sPledgeName);
+				packetWriter.writeD(player.nLevel);
+				packetWriter.writeD(player.nRace);
+				packetWriter.writeD(player.nClass);
+				packetWriter.writeQ(player.nPVPPoint); // nPVPPoint
+				packetWriter.writeD(player.nRank); // server rank
+				packetWriter.writeD(0); // nPrevRank, idk why 0
+				packetWriter.writeD(player.nKillCount); // nKillCount
+				packetWriter.writeD(player.nDieCount); // nDieCount
+			});
 		}
 		else
 		{
-			plrList = _snapshotList;
-		}
-
-		if (plrList.size() > 0)
-		{
-			switch (_group)
+			PVPRankingRankInfo player = plrList.values().stream().filter(p -> p.nCharId == _player.getObjectId()).findFirst().orElse(null);
+			if(player != null)
 			{
-				case 0: // all
-				{
-					if (_scope == 0) // all
-					{
-						final int count = plrList.size() > 150 ? 150 : plrList.size();
+				packetWriter.writeSizedString(player.sCharName);
+				packetWriter.writeSizedString(player.sPledgeName);
+				packetWriter.writeD(player.nLevel);
+				packetWriter.writeD(player.nRace);
+				packetWriter.writeD(player.nClass);
+				packetWriter.writeQ(player.nPVPPoint);
+				packetWriter.writeD(player.nRank); // server rank
+				packetWriter.writeD(0); // nPrevRank, idk why 0
+				packetWriter.writeD(player.nKillCount);
+				packetWriter.writeD(player.nDieCount);
+			}
+			else
+				packetWriter.writeD(0);
+		}
+	}
 
-						packetWriter.writeD(count);
+	private void handleRankingRace(PacketWriter packetWriter, Map<Integer, PVPRankingRankInfo> plrList)
+	{
+		if(cRankingScope == 0)
+		{ // all
+			List<PVPRankingRankInfo> racePlayers = plrList.values().stream().filter(player -> player.nRace
+					== nRace).limit(100).collect(Collectors.toList());
 
-						for (int id : plrList.keySet())
-						{
-							final StatsSet player = plrList.get(id);
+			packetWriter.writeD(racePlayers.size());
 
-							packetWriter.writeString(player.getString("name"));
-							packetWriter.writeString(player.getString("clanName"));
-							packetWriter.writeD(player.getInteger("level"));
-							packetWriter.writeD(player.getInteger("race"));
-							packetWriter.writeD(player.getInteger("classId"));
-							packetWriter.writeD(player.getInteger("points"));
-							packetWriter.writeD(0); // unk
-							packetWriter.writeD(id); // server rank
-							packetWriter.writeD(0); // previous server rank, idk why 0
-							packetWriter.writeD(player.getInteger("kills"));
-							packetWriter.writeD(player.getInteger("deaths"));
-						}
-					}
-					else
-					{
-						boolean found = false;
-						for (int id : plrList.keySet())
-						{
-							final StatsSet player = plrList.get(id);
-
-							if (player.getInteger("charId") == _player.getObjectId())
-							{
-								found = true;
-								packetWriter.writeString(player.getString("name"));
-								packetWriter.writeString(player.getString("clanName"));
-								packetWriter.writeD(player.getInteger("level"));
-								packetWriter.writeD(player.getInteger("race"));
-								packetWriter.writeD(player.getInteger("classId"));
-								packetWriter.writeD(player.getInteger("points"));
-								packetWriter.writeD(0); // unk
-								packetWriter.writeD(id); // server rank
-								packetWriter.writeD(0); // previous server rank, idk why 0
-								packetWriter.writeD(player.getInteger("kills"));
-								packetWriter.writeD(player.getInteger("deaths"));
-							}
-						}
-						if (!found)
-						{
-							packetWriter.writeD(0);
-						}
-					}
-					break;
-				}
-				case 1: // race
-				{
-					if (_scope == 0) // all
-					{
-						int count = 0;
-
-						for (int i = 1; i <= plrList.size(); i++)
-						{
-							final StatsSet player = plrList.get(i);
-							if (_race == player.getInteger("race"))
-							{
-								count++;
-							}
-						}
-						packetWriter.writeD(count > 100 ? 100 : count);
-
-						int i = 1;
-						for (int id : plrList.keySet())
-						{
-							final StatsSet player = plrList.get(id);
-
-							if (_race == player.getInteger("race"))
-							{
-								packetWriter.writeString(player.getString("name"));
-								packetWriter.writeString(player.getString("clanName"));
-								packetWriter.writeD(player.getInteger("level"));
-								packetWriter.writeD(player.getInteger("race"));
-								packetWriter.writeD(player.getInteger("classId"));
-								packetWriter.writeD(player.getInteger("points"));
-								packetWriter.writeD(0); // unk
-								packetWriter.writeD(i); // server rank
-								packetWriter.writeD(0); // previous server rank, idk why 0
-								packetWriter.writeD(player.getInteger("kills"));
-								packetWriter.writeD(player.getInteger("deaths"));
-								i++;
-							}
-						}
-					}
-					else
-					{
-						boolean found = false;
-
-						final Map<Integer, StatsSet> raceList = new ConcurrentHashMap<>();
-						int i = 1;
-						for (int id : plrList.keySet())
-						{
-							final StatsSet set = plrList.get(id);
-
-							if (_player.getRace().ordinal() == set.getInteger("race"))
-							{
-								raceList.put(i, plrList.get(id));
-								i++;
-							}
-						}
-
-						for (int id : raceList.keySet())
-						{
-							final StatsSet player = raceList.get(id);
-
-							if (player.getInteger("charId") == _player.getObjectId())
-							{
-								found = true;
-								packetWriter.writeString(player.getString("name"));
-								packetWriter.writeString(player.getString("clanName"));
-								packetWriter.writeD(player.getInteger("level"));
-								packetWriter.writeD(player.getInteger("race"));
-								packetWriter.writeD(player.getInteger("classId"));
-								packetWriter.writeD(player.getInteger("points"));
-								packetWriter.writeD(0); // unk
-								packetWriter.writeD(id); // server rank
-								packetWriter.writeD(0); // previous server rank, idk why 0
-								packetWriter.writeD(player.getInteger("kills"));
-								packetWriter.writeD(player.getInteger("deaths"));
-							}
-						}
-						if (!found)
-						{
-							packetWriter.writeD(0);
-						}
-					}
-					break;
-				}
-				case 2: // clan
-				{
-					if (_player.getClan() != null)
-					{
-						final Map<Integer, StatsSet> clanList = new ConcurrentHashMap<>();
-						int i = 1;
-						for (int id : plrList.keySet())
-						{
-							final StatsSet set = plrList.get(id);
-
-							if (_player.getClan().getName() == set.getString("clanName"))
-							{
-								clanList.put(i, plrList.get(id));
-								i++;
-							}
-						}
-
-						packetWriter.writeD(clanList.size());
-
-						for (int id : clanList.keySet())
-						{
-							final StatsSet player = clanList.get(id);
-
-							packetWriter.writeString(player.getString("name"));
-							packetWriter.writeString(player.getString("clanName"));
-							packetWriter.writeD(player.getInteger("level"));
-							packetWriter.writeD(player.getInteger("race"));
-							packetWriter.writeD(player.getInteger("classId"));
-							packetWriter.writeD(player.getInteger("points"));
-							packetWriter.writeD(0); // unk
-							packetWriter.writeD(id); // server rank
-							packetWriter.writeD(0); // previous server rank, idk why 0
-							packetWriter.writeD(player.getInteger("kills"));
-							packetWriter.writeD(player.getInteger("deaths"));
-						}
-					}
-					else
-					{
-						packetWriter.writeD(0);
-					}
-
-					break;
-				}
-				case 3: // friend
-				{
-					if (_player.getFriendList().size() > 0)
-					{
-						final Set<Integer> friendList = ConcurrentHashMap.newKeySet();
-						int count = 1;
-						for (Friend friend : _player.getFriendList().values())
-						{
-							for (Integer id2 : plrList.keySet())
-							{
-								final StatsSet temp = plrList.get(id2);
-								if (temp.getInteger("charId") == friend.getObjectId())
-								{
-									friendList.add(temp.getInteger("charId"));
-									count++;
-								}
-							}
-						}
-						friendList.add(_player.getObjectId());
-
-						packetWriter.writeD(count);
-
-						for (int id : plrList.keySet())
-						{
-							final StatsSet player = plrList.get(id);
-							int i = 1;
-							if (friendList.contains(player.getInteger("charId")))
-							{
-								packetWriter.writeString(player.getString("name"));
-								packetWriter.writeString(player.getString("clanName"));
-								packetWriter.writeD(player.getInteger("level"));
-								packetWriter.writeD(player.getInteger("race"));
-								packetWriter.writeD(player.getInteger("classId"));
-								packetWriter.writeD(player.getInteger("points"));
-								packetWriter.writeD(0); // unk
-								packetWriter.writeD(i); // server rank
-								packetWriter.writeD(0); // previous server rank, idk why 0
-								packetWriter.writeD(player.getInteger("kills"));
-								packetWriter.writeD(player.getInteger("deaths"));
-								i++;
-							}
-						}
-					}
-					else
-					{
-						if (plrList.size() > 0)
-						{
-							for (int id : plrList.keySet())
-							{
-								final StatsSet player = plrList.get(id);
-								if (_player.getObjectId() == player.getInteger("charId"))
-								{
-									packetWriter.writeD(1);
-									packetWriter.writeString(player.getString("name"));
-									packetWriter.writeString(player.getString("clanName"));
-									packetWriter.writeD(player.getInteger("level"));
-									packetWriter.writeD(player.getInteger("race"));
-									packetWriter.writeD(player.getInteger("classId"));
-									packetWriter.writeD(player.getInteger("points"));
-									packetWriter.writeD(0); // unk
-									packetWriter.writeD(1); // server rank
-									packetWriter.writeD(0); // previous server rank, idk why 0
-									packetWriter.writeD(player.getInteger("kills"));
-									packetWriter.writeD(player.getInteger("deaths"));
-								}
-							}
-						}
-						else
-						{
-							packetWriter.writeD(0);
-						}
-					}
-					break;
-				}
+			for(int i = 0; i < racePlayers.size(); i++)
+			{
+				PVPRankingRankInfo player = racePlayers.get(i);
+				packetWriter.writeSizedString(player.sCharName);
+				packetWriter.writeSizedString(player.sPledgeName);
+				packetWriter.writeD(player.nLevel);
+				packetWriter.writeD(player.nRace);
+				packetWriter.writeD(player.nClass);
+				packetWriter.writeQ(player.nPVPPoint);
+				packetWriter.writeD(i + 1); // server rank
+				packetWriter.writeD(0); // nPrevRank, idk why 0
+				packetWriter.writeD(player.nKillCount);
+				packetWriter.writeD(player.nDieCount);
 			}
 		}
 		else
 		{
-			packetWriter.writeD(0);
+			Map<Integer, PVPRankingRankInfo> raceList = new ConcurrentHashMap<>();
+			int i = 1;
+			for(PVPRankingRankInfo set : plrList.values())
+			{
+				if(_player.getRace().ordinal() == set.nRace)
+				{
+					raceList.put(i, set);
+					i++;
+				}
+			}
+
+			PVPRankingRankInfo player = raceList.values().stream().filter(p -> p.nCharId == _player.getObjectId()).findFirst().orElse(null);
+			if(player != null)
+			{
+				packetWriter.writeSizedString(player.sCharName);
+				packetWriter.writeSizedString(player.sPledgeName);
+				packetWriter.writeD(player.nLevel);
+				packetWriter.writeD(player.nRace);
+				packetWriter.writeD(player.nClass);
+				packetWriter.writeQ(player.nPVPPoint);
+				packetWriter.writeD(player.nRank); // server rank
+				packetWriter.writeD(0); // nPrevRank, idk why 0
+				packetWriter.writeD(player.nKillCount);
+				packetWriter.writeD(player.nDieCount);
+			}
+			else
+				packetWriter.writeD(0);
 		}
-		return true;
+	}
+
+	private void handleRankingClan(PacketWriter packetWriter, Map<Integer, PVPRankingRankInfo> plrList)
+	{
+		if(_player.getClan() != null)
+		{
+			List<PVPRankingRankInfo> clanList = plrList.values().stream().filter(player -> _player.getClan().getName().equals(player.sPledgeName)).collect(Collectors.toList());
+
+			packetWriter.writeD(clanList.size());
+
+			for(int i = 0; i < clanList.size(); i++)
+			{
+				PVPRankingRankInfo player = clanList.get(i);
+				packetWriter.writeSizedString(player.sCharName);
+				packetWriter.writeSizedString(player.sPledgeName);
+				packetWriter.writeD(player.nLevel);
+				packetWriter.writeD(player.nRace);
+				packetWriter.writeD(player.nClass);
+				packetWriter.writeQ(player.nPVPPoint);
+				packetWriter.writeD(i + 1); // server rank
+				packetWriter.writeD(0); // nPrevRank, idk why 0
+				packetWriter.writeD(player.nKillCount);
+				packetWriter.writeD(player.nDieCount);
+			}
+		}
+		else
+			packetWriter.writeD(0);
+	}
+
+	private void handleRankingFriend(PacketWriter packetWriter, Map<Integer, PVPRankingRankInfo> plrList)
+	{
+		if(_player.getFriendList().size() > 0)
+		{
+			Set<Integer> friendList = ConcurrentHashMap.newKeySet();
+
+			for(Friend friend : _player.getFriendList().values())
+			{
+				plrList.values().stream().filter(player -> player.nCharId == friend.getObjectId()).forEach(player -> friendList.add(player.nCharId));
+			}
+			friendList.add(_player.getObjectId());
+
+			packetWriter.writeD(friendList.size());
+
+			plrList.values().stream().filter(player -> friendList.contains(player.nCharId)).forEach(player -> {
+				packetWriter.writeSizedString(player.sCharName);
+				packetWriter.writeSizedString(player.sPledgeName);
+				packetWriter.writeD(player.nLevel);
+				packetWriter.writeD(player.nRace);
+				packetWriter.writeD(player.nClass);
+				packetWriter.writeQ(player.nPVPPoint);
+				packetWriter.writeD(player.nRank); // server rank
+				packetWriter.writeD(0); // nPrevRank, idk why 0
+				packetWriter.writeD(player.nKillCount);
+				packetWriter.writeD(player.nDieCount);
+			});
+		}
+		else
+		{
+			PVPRankingRankInfo player = plrList.values().stream().filter(p -> p.nCharId == _player.getObjectId()).findFirst().orElse(null);
+			if(player != null)
+			{
+				packetWriter.writeD(1);
+				packetWriter.writeSizedString(player.sCharName);
+				packetWriter.writeSizedString(player.sPledgeName);
+				packetWriter.writeD(player.nLevel);
+				packetWriter.writeD(player.nRace);
+				packetWriter.writeD(player.nClass);
+				packetWriter.writeQ(player.nPVPPoint);
+				packetWriter.writeD(1); // server rank
+				packetWriter.writeD(0); // nPrevRank, idk why 0
+				packetWriter.writeD(player.nKillCount);
+				packetWriter.writeD(player.nDieCount);
+			}
+			else
+				packetWriter.writeD(0);
+		}
 	}
 }

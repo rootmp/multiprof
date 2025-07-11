@@ -3558,6 +3558,61 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_VE_RECEIVED_THE_REWARD(13672),
 	// Message: You've got $s1 quest point(s).
 	YOU_VE_GOT_S1_QUEST_POINTS(13673),
+	// Message: You do not have enough L2 Coins. Add more L2 Coins and try again.
+	YOU_DO_NOT_HAVE_ENOUGH_L2_COINS_ADD_MORE_L2_COINS_AND_TRY_AGAIN(6800),
+	// Message: You may not alter your recipe book while engaged in manufacturing.
+	YOU_MAY_NOT_ALTER_YOUR_RECIPE_BOOK_WHILE_ENGAGED_IN_MANUFACTURING(853),
+	// Message: Item creation is not possible while engaged in a trade.
+	ITEM_CREATION_IS_NOT_POSSIBLE_WHILE_ENGAGED_IN_A_TRADE(1125),
+	S1_13747(13747),
+	S_13749(13749),	
+	PURCHASE_S1(13404),
+	TRYING_ON_STATE_LASTS_FOR_ONLY_5_SECONDS_WHEN_A_CHARACTERS_STATE_CHANGES_IT_CAN_BE_CANCELLED(1157),
+	S_19020(19020),
+	S_13090(13090),
+	S_13844(13844),
+	S1_19021(19021), 
+	S1_19022(19022),
+	FAILED_TO_DISABLE_ATTACK_TARGET(563),
+	FAILED_TO_CHANGE_ATTACK_TARGET(564),
+	THIS_ACTION_IS_NOT_AVAILABLE_IN_THE_WORLDWIDE_ZONE(4047),
+	THIS_FEATURE_IS_NOT_AVAILABLE_IN_THE_CURRENT_LOCATION(13910),
+	FAILED_TO_CAUSE_CONFUSION(566),
+	S_13182(13182),
+	S_13353(13353),
+	S_7175(7175),
+	S_4172(4172),
+	S_13432(13432),
+	S_13581(13581),
+	S_18994(18994),
+	S_18995(18995),
+	
+	// Message: You need a(n) $s1.
+	YOU_NEED_AN_S1(2960),
+	
+	// Message: ROUND $s1
+	ROUND_S1(5184),
+	// Message: +hidden msg+ Start Olympiad
+	HIDDEN_MSG_START_OLYMPIAD(5185),
+	// Message: +hidden msg+ Olympiad Victory
+	HIDDEN_MSG_OLYMPIAD_VICTORY(5186),
+	// Message: +hidden msg+ Olympiad Defeat
+	HIDDEN_MSG_OLYMPIAD_DEFEAT(5187),
+	// Message: +hidden msg+ Olympiad Tie
+	HIDDEN_MSG_OLYMPIAD_TIE(5188),
+	// Message: +hidden msg+ Olympiad Time Over
+	HIDDEN_MSG_OLYMPIAD_TIME_OVER(5189),
+	// Message: +hidden msg+ Olympiad Knock Down
+	HIDDEN_MSG_OLYMPIAD_KNOCK_DOWN(5190),
+	// Message: +hidden msg+ Olympiad Round 1
+	HIDDEN_MSG_OLYMPIAD_ROUND_1(5191),
+	// Message: +hidden msg+ Olympiad Round 2
+	HIDDEN_MSG_OLYMPIAD_ROUND_2(5192),
+	// Message: +hidden msg+ Olympiad Round 3
+	HIDDEN_MSG_OLYMPIAD_ROUND_3(5193),
+	NAME_BACKGROUND_SETTINGS_HAVE_BEEN_CHANGED(13967),
+	A_ABILITIES_ARE_IN_USE(13850),
+	B_ABILITIES_ARE_IN_USE(13851),
 	// Message: System error. Please refresh and try again.
 	SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN(13686);
 

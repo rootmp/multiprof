@@ -859,4 +859,14 @@ public enum ClassId
 	{
 		return getClassLevel().ordinal() + 1;
 	}
+	
+	/**
+	 * @return the child level of this Class (0=root, 1=child leve 1...)
+	 */
+	public int level()
+	{
+		if (_parent == null)
+			return 0;
+		return 1 + _parent.level();
+	}
 }

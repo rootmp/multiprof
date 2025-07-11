@@ -2,16 +2,9 @@ package l2s.gameserver.network.l2.s2c;
 
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.ServerPacketOpcodes;
 
 public abstract class ExBlockUpSetState implements IClientOutgoingPacket
 {
-	@Override
-	protected ServerPacketOpcodes getOpcodes()
-	{
-		return ServerPacketOpcodes.ExBlockUpSetState;
-	}
-
 	public static class ChangePoints extends ExBlockUpSetState
 	{
 		private final int _timeLeft;

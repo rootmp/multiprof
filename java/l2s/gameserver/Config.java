@@ -3175,6 +3175,40 @@ public class Config
 		BUFF_STORE_MAX_PRICE = buffStoreConfig.getProperty("BuffStoreMaxPrice", Long.MAX_VALUE);
 	}
 
+	public static int PVPBOOK_EXPIRATION_DELAY;
+	public static int PVPBOOK_TELEPORT_HELP_PRICE;
+	public static Map<Integer, Integer> PVPBOOK_ADENA_LOCATION_SHOW = new HashMap<>();
+	public static Map<Integer, Integer> PVPBOOK_LCOIN_TELEPORT_COUNT = new HashMap<>();
+	
+	public static final String PVPBOOK_CONFIG_FILE = "config/Pvpbook.properties";
+	
+	public static void loadPvpbookSettings()
+	{
+		ExProperties Pvpbookconfig = load(PVPBOOK_CONFIG_FILE);
+		PVPBOOK_EXPIRATION_DELAY = Pvpbookconfig.getProperty("PvpbookExpirationDelay", 24);
+		PVPBOOK_TELEPORT_HELP_PRICE = Pvpbookconfig.getProperty("TeleportHelpPrice", 100);
+		
+		Pattern pattern = Pattern.compile("\\{(\\d+);(\\d+)\\}");
+		Matcher matcher = pattern.matcher(Pvpbookconfig.getProperty("AdenaLocationShow", "{1;50000};{2;100000};{3;200000}"));
+
+		while (matcher.find()) 
+		{
+			int views = Integer.parseInt(matcher.group(1));
+			int price = Integer.parseInt(matcher.group(2));
+			PVPBOOK_ADENA_LOCATION_SHOW.put(views, price);
+		}
+
+		matcher = pattern.matcher(Pvpbookconfig.getProperty("LcoinTeleportCount", "{0;1};{2;50};{2;100};{3;100};{4;200}"));
+
+		while (matcher.find()) 
+		{
+			int views = Integer.parseInt(matcher.group(1));
+			int price = Integer.parseInt(matcher.group(2));
+			PVPBOOK_LCOIN_TELEPORT_COUNT.put(views, price);
+		}
+
+	}
+	
 	public static void loadGMAccess()
 	{
 		gmlist.clear();
@@ -3351,7 +3385,8 @@ public class Config
 		loadBBSSettings();
 		loadSchemeBuffer();
 		loadBuffStoreConfig();
-
+		loadPvpbookSettings();
+		
 		abuseLoad();
 		loadGMAccess();
 		pvpManagerSettings();

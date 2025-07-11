@@ -344,7 +344,7 @@ public class StatFunctions
 		{
 			Player pc = (Player) env.character;
 			if (pc != null)
-				env.value = Math.max(1, env.value + pc.getHennaList().getSTR());
+				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.STR));
 		}
 	}
 
@@ -362,7 +362,7 @@ public class StatFunctions
 		{
 			Player pc = (Player) env.character;
 			if (pc != null)
-				env.value = Math.max(1, env.value + pc.getHennaList().getDEX());
+				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.DEX));
 		}
 	}
 
@@ -380,7 +380,7 @@ public class StatFunctions
 		{
 			Player pc = (Player) env.character;
 			if (pc != null)
-				env.value = Math.max(1, env.value + pc.getHennaList().getINT());
+				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.INT));
 		}
 	}
 
@@ -398,7 +398,7 @@ public class StatFunctions
 		{
 			Player pc = (Player) env.character;
 			if (pc != null)
-				env.value = Math.max(1, env.value + pc.getHennaList().getMEN());
+				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.MEN));
 		}
 	}
 
@@ -416,7 +416,7 @@ public class StatFunctions
 		{
 			Player pc = (Player) env.character;
 			if (pc != null)
-				env.value = Math.max(1, env.value + pc.getHennaList().getCON());
+				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.CON));
 		}
 	}
 
@@ -434,7 +434,7 @@ public class StatFunctions
 		{
 			Player pc = (Player) env.character;
 			if (pc != null)
-				env.value = Math.max(1, env.value + pc.getHennaList().getWIT());
+				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.WIT));
 		}
 	}
 

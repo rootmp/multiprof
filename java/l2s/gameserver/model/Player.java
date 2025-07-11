@@ -173,6 +173,7 @@ import l2s.gameserver.model.actor.instances.player.PremiumItemList;
 import l2s.gameserver.model.actor.instances.player.ProductHistoryList;
 import l2s.gameserver.model.actor.instances.player.Pvpbook;
 import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
+import l2s.gameserver.model.actor.instances.player.RelicList;
 import l2s.gameserver.model.actor.instances.player.ShortCut;
 import l2s.gameserver.model.actor.instances.player.ShortCutList;
 import l2s.gameserver.model.actor.instances.player.SpectatingList;
@@ -703,7 +704,6 @@ public final class Player extends Playable implements PlayerGroup
 	private final SpectatingList _spectatingList = new SpectatingList(this);
 	private final PremiumItemList _premiumItemList = new PremiumItemList(this);
 	private final ProductHistoryList _productHistoryList = new ProductHistoryList(this);
-	private final HennaList _hennaList = new HennaList(this);
 	private final MissionLevelReward _missionLevelReward = new MissionLevelReward(this);
 	private final AttendanceRewards _attendanceRewards = new AttendanceRewards(this);
 	private final DailyMissionList _dailiyMissionList = new DailyMissionList(this);
@@ -2294,8 +2294,6 @@ public final class Player extends Playable implements PlayerGroup
 
 				getInventory().refreshEquip();
 				getInventory().validateItems();
-
-				getHennaList().refreshStats(true);
 
 				sendSkillList();
 
@@ -6284,7 +6282,6 @@ public final class Player extends Playable implements PlayerGroup
 			{
 				EffectsDAO.getInstance().insert(this);
 				CharacterGroupReuseDAO.getInstance().insert(this);
-				getHennaList().store();
 				storeDisableSkills();
 			}
 
@@ -8918,7 +8915,6 @@ public final class Player extends Playable implements PlayerGroup
 			final SubClass oldActiveSub = getActiveSubClass();
 			if (oldActiveSub != null)
 			{
-				getHennaList().store();
 				storeDisableSkills();
 				if (store)
 				{
@@ -8958,7 +8954,6 @@ public final class Player extends Playable implements PlayerGroup
 		getInventory().refreshEquip();
 		getInventory().validateItems();
 
-		getHennaList().restore();
 		getDailyMissionList().restore();
 		getMissionLevelReward().restore();
 		getElementalList().restore();
@@ -8966,6 +8961,8 @@ public final class Player extends Playable implements PlayerGroup
 		EffectsDAO.getInstance().restoreEffects(this);
 		restoreDisableSkills();
 
+		getRelics().restore();
+		
 		setCurrentCp(newActiveSub.getCp(), false);
 		setCurrentMp(newActiveSub.getMp(), false);
 		setCurrentHp(newActiveSub.getHp(), false);
@@ -11518,11 +11515,6 @@ public final class Player extends Playable implements PlayerGroup
 	public ProductHistoryList getProductHistoryList()
 	{
 		return _productHistoryList;
-	}
-
-	public HennaList getHennaList()
-	{
-		return _hennaList;
 	}
 
 	public MissionLevelReward getMissionLevelReward()
@@ -15624,5 +15616,12 @@ public final class Player extends Playable implements PlayerGroup
 	public Map<BaseStats, Integer> getHennaBaseStats()
 	{
 		return _hennaBaseStats;
+	}
+
+	private final RelicList _relics = new RelicList(this);
+	
+	public RelicList getRelics()
+	{
+		return _relics;
 	}
 }
